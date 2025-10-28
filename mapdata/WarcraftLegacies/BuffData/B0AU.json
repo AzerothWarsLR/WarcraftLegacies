@@ -1,0 +1,34 @@
+{
+  "OldId": 1986086978,
+  "NewId": 1430335554,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is in a Battle Trance; it has increased hit points, attack damage, armor, and is immune to spells."
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Battle Trance"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": " (Warsong - Grom, Saurfang)"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellscreamBerserk.blp"
+    }
+  ]
+}

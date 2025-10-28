@@ -1,0 +1,223 @@
+{
+  "OldId": 1718832961,
+  "NewId": 1095976257,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "hEAE"
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "hEAE"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "hEAE"
+    },
+    {
+      "Level": 4,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "hEAE"
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSummonAirElemental.BLP"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(elemental-Ertan)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Greater Air Elemental"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSummonAirElemental.BLP"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Summon Greater Air Elemental - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons Greater Air Elementals to attack the hero\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Greater Air Elementals|n|cffffcc00Level 2|r - Summons 3 Greater Air Elementals|n|cffffcc00Level 3|r - Summons 4 Greater Air Elementals"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 2 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 3 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 4 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 5 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

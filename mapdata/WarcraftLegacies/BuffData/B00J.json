@@ -1,0 +1,39 @@
+{
+  "OldId": 1969313090,
+  "NewId": 1244672066,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShip.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Naval Aura"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has increased movement and attack speed."
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": " (Theramore Variant)"
+    }
+  ]
+}

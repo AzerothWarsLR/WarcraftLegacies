@@ -1,0 +1,109 @@
+{
+  "OldId": 1969313089,
+  "NewId": 1378955585,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 2500
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0B5"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846553429,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,player,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829776213,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASANA_HealingButterfliesFixed.BLP"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(sentinel power)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Unspoiled Wilderness"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unspoiled Wilderness"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives nearby Sentinel units \u003CA11R,DataA1,%\u003E% movement speed increase."
+    }
+  ]
+}

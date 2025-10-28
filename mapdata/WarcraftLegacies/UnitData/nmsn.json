@@ -1,0 +1,25 @@
+{
+  "OldId": 1853058414,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1836083317,
+      "Value": 575
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium ranged amphibious unit with Abolish Magic and Slow. "
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "OldId": 1667384129,
+  "NewId": 1395929153,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895902286,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "Xbof"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Creep - Ragnaros)"
+    }
+  ]
+}

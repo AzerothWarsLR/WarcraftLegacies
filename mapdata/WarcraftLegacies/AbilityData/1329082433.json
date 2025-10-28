@@ -1,0 +1,280 @@
+{
+  "OldId": 1919045185,
+  "NewId": 1329082433,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B01C"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B01C"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B01C"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1685221217,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPeriapt.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dark Green - Galen)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Instant Revitalization"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPeriapt.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Instant Revitalization - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.|n|n|cffffcc00Level 1|r - 100 second cooldown.|n|cffffcc00Level 2|r - 85 second cooldown.|n|cffffcc00Level 3|r - 60 second cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Instant Revitalization - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Instant Revitalization - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Instant Revitalization - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.                                                    |cff99b4d1100 second cooldown|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.                                                      |cff99b4d185 second cooldown|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.                                                      |cff99b4d160 second cooldown|r"
+    }
+  ]
+}

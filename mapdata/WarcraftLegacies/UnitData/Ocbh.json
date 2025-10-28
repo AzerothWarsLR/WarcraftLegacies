@@ -1,0 +1,131 @@
+{
+  "OldId": 1751278415,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AOr3,AInv"
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 40
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "Aamk,A01R,A0WM,A0YX,AOae"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1953393013,
+      "Value": 16
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1920234357,
+      "Value": 32
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 3.8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R05I"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Cairne"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Chieftain of the Bloodhoof"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Cairne"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Cairne"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at absorbing damage and melee combat."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    }
+  ]
+}

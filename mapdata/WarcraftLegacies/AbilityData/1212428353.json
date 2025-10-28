@@ -1,0 +1,90 @@
+{
+  "OldId": 1852130113,
+  "NewId": 1212428353,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B031,B030"
+    },
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "Ruwb"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWeb.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Crypt Fiend) (Not Auto)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Web\\Webmissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Web"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Web"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CAweb,Dur1\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
+    }
+  ]
+}

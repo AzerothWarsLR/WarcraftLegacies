@@ -1,0 +1,47 @@
+{
+  "OldId": 1650944622,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0AJ,ACce"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 7
+    },
+    {
+      "Id": 1647403381,
+      "Value": 80
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1200
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can Slam opponents. "
+    }
+  ]
+}

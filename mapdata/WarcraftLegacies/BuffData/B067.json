@@ -1,0 +1,39 @@
+{
+  "OldId": 1869640514,
+  "NewId": 926298178,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Bleeding"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is bleeding"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Teal Raider) (Non-stacking)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

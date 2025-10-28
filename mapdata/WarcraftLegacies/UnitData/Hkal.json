@@ -1,0 +1,157 @@
+{
+  "OldId": 1818323784,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1949458805,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "Aamk,A04H,A0FD,A0WH,A0FA"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 2050122101,
+      "Value": 900
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1915904373,
+      "Value": 600
+    },
+    {
+      "Id": 846559093,
+      "Value": 0
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1852137845,
+      "Value": 3
+    },
+    {
+      "Id": 1735553909,
+      "Value": 0
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1920234357,
+      "Value": 26
+    },
+    {
+      "Id": 1953393013,
+      "Value": 29
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A12Q,AInv,Asph"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SerpentWardMissile\\SerpentWardMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Kael\u0027thas Sunstrider"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Kael\u0027thas Sunstrider"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical hero, adept at dealing magical damage."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    }
+  ]
+}

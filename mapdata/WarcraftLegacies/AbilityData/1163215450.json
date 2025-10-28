@@ -1,0 +1,355 @@
+{
+  "OldId": 1818447425,
+  "NewId": 1163215450,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 19
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 19
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 19
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "blizzard"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "blizzard"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "blizzard"
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "blizzard"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 19
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEmpower.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Unstable Evolution"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEmpower.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Unstable Evolution - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Greatly increases the attack damage and attack speed of all player-controlled, non-hero, non-summoned units near the target location, then kills them after 30 seconds. |n|n|cffffcc00Level 1|r - Increases damage by 100% and attack speed by 100%.|n|cffffcc00Level 2|r - Increases damage by 150% and attack speed by 100%.|n|cffffcc00Level 3|r - Increases damage by 200% and attack speed by 100%."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unstable Evolution - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unstable Evolution - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unstable Evolution - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all player-controlled, non-hero, non-summoned units near the target location by increasing their damage and attack speed by 100%, then kills them after 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all player-controlled, non-hero, non-summoned units near the target location by increasing their damage by 150% and attack speed by 100%, then kills them after 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all player-controlled non-hero and non-summoned units near the target location by increasing their damage by 200% and attack speed by 100%, then kills them after 30 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a powerful Tentacle with 4000 hit points and 50 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 60 seconds."
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unstable Evolution - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

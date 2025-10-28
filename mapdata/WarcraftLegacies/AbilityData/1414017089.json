@@ -1,0 +1,154 @@
+{
+  "OldId": 1767993921,
+  "NewId": 1414017089,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828989778,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828989778,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845766994,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o05N"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862544210,
+      "Type": 3,
+      "Value": "o05N"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "allies,dead,friend"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druid - Talon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Cycle of Rebirth"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Raise Dead - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Raises \u003CArai,DataA2\u003E skeletons from a corpse for \u003CArai,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Cycle of Rebirth"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\Heal Green.mdx"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCHealingPlants.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCHealingPlants.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a Healing Bulb from a nearby friendly corpse that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hitpoints each."
+    }
+  ]
+}

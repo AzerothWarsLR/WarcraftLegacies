@@ -1,0 +1,252 @@
+{
+  "OldId": 1802726977,
+  "NewId": 1194471489,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1802726497,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Moam)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hardened"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Hardened - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Reduces the damage of all incoming attacks. Attacks cannot be reduced below \u003CA02G,DataB1\u003E damage. |n|n|cffffcc00Level 1|r - Blocks \u003CA02G,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA02G,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA02G,DataC3\u003E damage. |n|cffffcc00Level 4|r - Blocks \u003CA02G,DataC4\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC2\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB2\u003E damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC3\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB3\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC4\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB4\u003E damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC1\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB1\u003E damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

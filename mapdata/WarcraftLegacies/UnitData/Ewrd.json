@@ -1,0 +1,122 @@
+{
+  "OldId": 1685223237,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0DW,S003,AInv,Ault"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 25
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "Aamk,A063,A0FK,AEfk,A017"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 250
+    },
+    {
+      "Id": 1769107573,
+      "Value": 17
+    },
+    {
+      "Id": 1937141109,
+      "Value": 260
+    },
+    {
+      "Id": 1920234357,
+      "Value": 20
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R002"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R06M"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Leader of the Watchers "
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Maiev Shadowsong"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, adept at melee combat and slipping in and out of fights."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Maiev"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNmaievhd.blp"
+    }
+  ]
+}

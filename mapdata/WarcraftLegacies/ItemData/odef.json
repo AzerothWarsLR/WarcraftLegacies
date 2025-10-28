@@ -1,0 +1,56 @@
+{
+  "OldId": 1717920879,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 7500
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 1818588009,
+      "Value": 0
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1852993641,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Living Shadow"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nAdds \u003CAIdf,DataA1\u003E bonus damage to the attack of a Hero when carried. The Hero\u0027s attack also becomes ranged when attacking air and will create a Dark Minion when it is the killing blow on an enemy unit. The Dark Minion lasts \u003CANbs,DataC1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadA dark crystal found on the body of a dead orc warlock."
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp"
+    }
+  ]
+}

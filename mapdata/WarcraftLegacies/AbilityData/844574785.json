@@ -1,0 +1,83 @@
+{
+  "OldId": 1869827649,
+  "NewId": 844574785,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829387598,
+      "Type": 2,
+      "Value": 7.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879719246,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896496462,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge-Necromancer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Soul Burn"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Wreaths an enemy unit in magical flames which cause 7.5 damage per second, prevent the casting of spells, reduce movement speed by 75% and reduce attack damage and attack speed by 50%.|nLasts 45(3) seconds."
+    }
+  ]
+}

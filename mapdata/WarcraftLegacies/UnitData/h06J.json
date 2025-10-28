@@ -1,0 +1,135 @@
+{
+  "OldId": 1718186600,
+  "NewId": 1245065320,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aens,Aihn"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 20
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 4
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "h07O"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R08B,Rhar,Rguv,Rhme"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 29
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1836083317,
+      "Value": 625
+    },
+    {
+      "Id": 1915838837,
+      "Value": 550
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KulTirasRifleman.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Navy Sniper"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Short range powerful sharpshooter."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Navy Sniper"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoldenArcherB.blp"
+    }
+  ]
+}

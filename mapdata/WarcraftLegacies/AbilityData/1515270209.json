@@ -1,0 +1,51 @@
+{
+  "OldId": 1869640513,
+  "NewId": 1515270209,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829386835,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846164051,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862941267,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,organic"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dark Green - SI:7 Agent, Sentinels - Priestess)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A poison attack that deals 5 damage per second, and slows the target enemy\u0027s movement by 50% and attack by 30% for 5 seconds. Lasts 1 second on heroes."
+    }
+  ]
+}

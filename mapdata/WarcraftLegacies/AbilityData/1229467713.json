@@ -1,0 +1,39 @@
+{
+  "OldId": 1969321025,
+  "NewId": 1229467713,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionHorn.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow - Thane)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The closest \u003CA0HI,DataA1\u003E enemies are forced to attack this unit. "
+    },
+    {
+      "Id": 2036495713,
+      "Value": 2
+    }
+  ]
+}

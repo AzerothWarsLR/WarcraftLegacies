@@ -1,0 +1,82 @@
+{
+  "OldId": 1852859246,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A041,Arlm,ANha,Arep,A08C"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "n0AP,o02V,u00Q,o032,o02Y,o02W,o031,o02X,ocbw,o033,o034"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 7
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Ropg,Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic laborer of the Fel Horde machine."
+    }
+  ]
+}

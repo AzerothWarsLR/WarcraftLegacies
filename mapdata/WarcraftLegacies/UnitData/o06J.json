@@ -1,0 +1,79 @@
+{
+  "OldId": 829453167,
+  "NewId": 1245065327,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0ZB,A0ZE"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1250
+    },
+    {
+      "Id": 828601461,
+      "Value": 0
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1852137845,
+      "Value": 0
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcCaptureFlag.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)(Level 3)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Battle Standard.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warsong Battle Standard"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.55
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "OldId": 1634693697,
+  "NewId": 1129197633,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04Y"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04Y"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04Y"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 70
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 99999
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,self"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,self"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,self"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,self"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04Y"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfProtection.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Renault)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Word of Fortitude"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfProtection.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Word of Fortitude  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Hero empowers nearby allies, increasing their armor to 99999.|n|cffffcc00Level 1|r - 400 area of effect, 45 seconds cooldown, 2 seconds duration|n|cffffcc00Level 2|r - 600 area of effect, 40 seconds cooldown, 3 seconds duration|n|cffffcc00Level 3|r - 800 area of effect, 35 seconds cooldown, 4 seconds duration|n|cffffcc00Level 4|r - 1000 area of effect, 30 seconds cooldown, 5 seconds duration"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 2 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 3 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 4 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 5 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "war3mapImported\\WhiteChakraExplosion.mdx"
+    }
+  ]
+}

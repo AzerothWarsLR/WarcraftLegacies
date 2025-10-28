@@ -1,0 +1,172 @@
+{
+  "OldId": 846349121,
+  "NewId": 1213411393,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Brej"
+    },
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829056338,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829056338,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862610770,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R05D"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0B7"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845833554,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(scarlet - Monk"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enchanced Rejuvenation"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for 800 mana over 40 seconds. Has a 70 seconds cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA09E,DataA2\u003E hit points over \u003CA09E,Dur2\u003E seconds."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spiritual Guidance"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spiritual Guidance"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

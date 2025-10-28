@@ -1,0 +1,94 @@
+{
+  "OldId": 1651001409,
+  "NewId": 827732033,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,allies,ground,invulnerable,nonancient,notself,organic,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828532808,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNReplenish.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(thornspeaker)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Healing Surge"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "|cff7777aaHoly Light|r |cff7777aa[E]|r"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\RitualDagger\\RitualDaggerTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Healing Surge"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a friendly living unit for \u003CA0H0,DataA1\u003E."
+    }
+  ]
+}

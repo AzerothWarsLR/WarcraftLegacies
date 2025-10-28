@@ -1,0 +1,119 @@
+{
+  "OldId": 1735222382,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1634559605,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 30
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1768975733,
+      "Value": 20
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 60
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04B"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "n0DO,n04U,n04O"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 20
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A126"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion Siege)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Demon Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Advanced troop production building."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DemonGateV2.01.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    }
+  ]
+}

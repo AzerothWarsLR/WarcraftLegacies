@@ -1,0 +1,38 @@
+{
+  "OldId": 1819240293,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aenc,Slo2,Adri,Aegm"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\10x10Simple.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

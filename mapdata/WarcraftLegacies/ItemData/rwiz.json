@@ -1,0 +1,31 @@
+{
+  "OldId": 2053732210,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 50
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Increases the Hero\u0027s rate of mana regeneration by 50% when worn."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

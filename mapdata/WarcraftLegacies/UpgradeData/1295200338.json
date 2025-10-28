@@ -1,0 +1,103 @@
+{
+  "OldId": 1701079122,
+  "NewId": 1295200338,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 0.325
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "A0D1"
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "A0D2"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": 845571431,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": "rmnr"
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651078247,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "h036"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDispelMagic.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Dalaran) (Karazhan)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Methods of Negation"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Methods of Negation"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Arcanists\u0027 Dispel Magic by increasing its area of effect to \u003CA0D2,Area2\u003E. |n|nIncreases Arcanists\u0027 mana regeneration rate."
+    }
+  ]
+}

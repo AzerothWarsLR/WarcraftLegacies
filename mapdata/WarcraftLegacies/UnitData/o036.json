@@ -1,0 +1,38 @@
+{
+  "OldId": 1953461359,
+  "NewId": 909324399,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aeth"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Stun Mine"
+    }
+  ]
+}

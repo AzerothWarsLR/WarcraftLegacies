@@ -1,0 +1,56 @@
+{
+  "OldId": 1633829697,
+  "NewId": 1262694465,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08W"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828531016,
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(troll hostile)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Zul\u0027Drak Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Zul\u0027Drak Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the mana regeneration by 0.8 to units and structures in 5000 radius."
+    }
+  ]
+}

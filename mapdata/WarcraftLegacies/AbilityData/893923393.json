@@ -1,0 +1,67 @@
+{
+  "OldId": 1685547073,
+  "NewId": 893923393,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o06O"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(stormwind)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an immovable ward that resurrects 1 unit every \u003CA12Z,Cool1\u003E seconds. |nLasts \u003CA0H5,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Rallying Banner"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rallying Banner"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanCaptureFlag.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}

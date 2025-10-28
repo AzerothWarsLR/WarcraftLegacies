@@ -1,0 +1,38 @@
+{
+  "OldId": 1768967745,
+  "NewId": 876687425,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829253957,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "nonancient,notself,structure"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(500 range)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Anti Portal Blocking"
+    }
+  ]
+}

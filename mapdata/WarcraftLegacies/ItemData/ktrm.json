@@ -1,0 +1,50 @@
+{
+  "OldId": 1836217451,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "AIm1,AIrm,AIlz,AI2m"
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": 1684628329,
+      "Type": 3,
+      "Value": "A0U8"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 1634956649,
+      "Value": 1
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases hit points by 50, mana by 200 and mana regeneration by 1. Can be used to cast Mana Regain, restoring 125 mana.|n|cffffcc00Lore|r|n|cffffdeadThis magical urn was specifically made to contain the ashes of the Kings of Lordaeron. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Urn of Kings"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases hit points by 50, mana by 200 and mana regeneration by 1. Can be used to cast Mana Regain, restoring 125 mana.|n|cffffcc00Lore|r|n|cffffdeadThis magical urn was specifically made to contain the ashes of the Kings of Lordaeron. "
+    }
+  ]
+}

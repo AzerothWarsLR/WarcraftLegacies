@@ -1,0 +1,215 @@
+{
+  "OldId": 1869571688,
+  "NewId": 1312108648,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AEpa,A070,Aihn"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 950
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "AEpa"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": 1717920885,
+      "Value": 1
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 28
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 12
+    },
+    {
+      "Id": 1836083317,
+      "Value": 650
+    },
+    {
+      "Id": 1836084597,
+      "Value": 200
+    },
+    {
+      "Id": 2050056565,
+      "Value": 800
+    },
+    {
+      "Id": 1769107573,
+      "Value": 5
+    },
+    {
+      "Id": 1915838837,
+      "Value": 700
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 240
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R01N,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": 1647468917,
+      "Value": 81
+    },
+    {
+      "Id": 1681023349,
+      "Value": 1
+    },
+    {
+      "Id": 1932681589,
+      "Value": 5
+    },
+    {
+      "Id": 1915904373,
+      "Value": 300
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRanger.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "MaleElfRanger.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.24
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Marksman"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Marksman"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "One of the few Elves to return from Outland, ready again to defend Azeroth."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "BloodElfSorceror"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    }
+  ]
+}

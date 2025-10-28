@@ -1,0 +1,198 @@
+{
+  "OldId": 1668440421,
+  "NewId": 909127781,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "S003,A07H,A0ED,ANwk,Adsm,A0CX,Aien,Ault,Aegr"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0ED"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 11
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.53
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 18
+    },
+    {
+      "Id": 1919903605,
+      "Value": 17
+    },
+    {
+      "Id": 1836083317,
+      "Value": 350
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1836084597,
+      "Value": 200
+    },
+    {
+      "Id": 828927349,
+      "Value": 1
+    },
+    {
+      "Id": 1769107573,
+      "Value": 12
+    },
+    {
+      "Id": 1915838837,
+      "Value": 600
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 240
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R002,R03J,Rhme,Rhar,R026,R00S,Reuv,Rguv"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfRunner.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "war3mapImported\\UPGPriestessMastery.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Dispel Magic,- Heal|n- Dispel Magic- Light Burst"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\Runner\\Runner.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PriestMissile\\PriestMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Priestess"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Priestess"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Divine priestess of Elune."
+    }
+  ]
+}

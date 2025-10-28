@@ -1,0 +1,21 @@
+{
+  "OldId": 1651994478,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 26
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit. "
+    }
+  ]
+}

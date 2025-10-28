@@ -1,0 +1,170 @@
+{
+  "OldId": 846229109,
+  "NewId": 1397978995,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 50
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 70
+    },
+    {
+      "Id": 1634559605,
+      "Value": 30
+    },
+    {
+      "Id": 1819240309,
+      "Value": 135
+    },
+    {
+      "Id": 1919903605,
+      "Value": 50
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\16x16Simple.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 829781877,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 12
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall,undead"
+    },
+    {
+      "Id": 1885693045,
+      "Type": 3,
+      "Value": "u02L"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 5000
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1919447925,
+      "Value": 0
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge T3)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Sulfuron Spire"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Demon_BulwarkBastionCitadel.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonHallsOfTheDead.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    }
+  ]
+}

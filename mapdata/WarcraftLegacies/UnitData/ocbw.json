@@ -1,0 +1,131 @@
+{
+  "OldId": 2002936687,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0CF,Aspi,Abun,Sbtl,Astd,Arbr,Aorb"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 35
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 1647403381,
+      "Value": 32
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 16
+    },
+    {
+      "Id": 1836083317,
+      "Value": 900
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 6
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rosp,Rorb,Rgfo"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrcBurrow.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel Farm)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BurrowFelOrcV1.01.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Fel Orc Burrow"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Defensive hovel for peons to defend the territory."
+    }
+  ]
+}

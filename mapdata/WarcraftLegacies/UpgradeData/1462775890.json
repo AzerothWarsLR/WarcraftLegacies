@@ -1,0 +1,111 @@
+{
+  "OldId": 1702062162,
+  "NewId": 1462775890,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "ACmo"
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "Aast"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "AChx"
+    },
+    {
+      "Id": 879715175,
+      "Type": 3,
+      "Value": "Awar"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 60
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "ofor,ofrt"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonCarapace.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 0
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Toughened Hides"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Toughened Hides"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Causes Taurens, Spirit Walkers and Tauren Gladiators to take less damage from attacks."
+    }
+  ]
+}

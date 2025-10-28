@@ -1,0 +1,142 @@
+{
+  "OldId": 1953720174,
+  "NewId": 1145122926,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0B1,A0BE,A0BC,A0PV,ACtb"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 8
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 46
+    },
+    {
+      "Id": 1647468917,
+      "Value": 58
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 28
+    },
+    {
+      "Id": 1919903605,
+      "Value": 35
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1625
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 845704565,
+      "Value": 1
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1915904373,
+      "Value": 550
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1836348021,
+      "Value": 150
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R045,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran) (Hard Crystal Constructs)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CrystalGolem.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 180
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncientProtectorMissile\\AncientProtectorMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Crystal Golem"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Crystal Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Robust summon made from living crystal."
+    }
+  ]
+}

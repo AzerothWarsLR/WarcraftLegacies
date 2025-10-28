@@ -1,0 +1,161 @@
+{
+  "OldId": 1852793461,
+  "NewId": 1211183221,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0YA,A0RU"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1919903605,
+      "Value": 17
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 16
+    },
+    {
+      "Id": 1918988405,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "u021"
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "ZBRI,ZB12,ZB14,RTL3"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "u013,h01N,o02N"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunPyramid.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun Specialist)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunBarracks.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ancient Catacombs"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Ancient Catacombs"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Creature production building."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    }
+  ]
+}

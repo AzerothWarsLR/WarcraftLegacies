@@ -1,0 +1,283 @@
+{
+  "OldId": 1818644033,
+  "NewId": 858804310,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 14
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Hero)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Touch of Death (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls forth a cone of death to damage enemies. |n|n|cffffcc00Level 1|r - \u003CVP03,DataA1\u003E damage per unit, up to \u003CVP03,DataB1\u003E units. |n|cffffcc00Level 2|r - \u003CVP03,DataA2\u003E damage per unit, up to \u003CVP03,DataB2\u003E units. |n|cffffcc00Level 3|r - \u003CVP03l,DataA3\u003E damage per unit, up to \u003CVP03,DataB3\u003E units. |n|cffffcc00Level 4|r - \u003CVP03,DataA4\u003E damage per unit, up to \u003CVP03,DataB4\u003E units."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Touch of Death (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Touch of Death (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Touch of Death (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Touch of Death (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of death on a target enemy unit in melee range, hitting up to \u003CVP03,DataB1\u003E enemy units for \u003CVP03,DataA1\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of death on a target enemy unit in melee range, hitting up to \u003CVP03,DataB2\u003E enemy units for \u003CVP03,DataA2\u003E damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of death on a target enemy unit in melee range, hitting up to \u003CVP03,DataB3\u003E enemy units for \u003CVP03,DataA3\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of death on a target enemy unit in melee range, hitting up to \u003CVP03,DataB4\u003E enemy units for \u003CVP03,DataA4\u003E damage."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Touch of Death"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\DemonBoltImpact\\DemonBoltImpact.mdl"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "AFOD"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCorpseExplode.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCorpseExplode.blp"
+    }
+  ]
+}

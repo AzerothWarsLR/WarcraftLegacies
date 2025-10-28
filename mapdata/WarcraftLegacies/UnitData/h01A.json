@@ -1,0 +1,125 @@
+{
+  "OldId": 1953656936,
+  "NewId": 1093742696,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Awrp,Avul"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "Awrp"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 15000
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\StoneWall1Path.tga"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1684632437,
+      "Value": 800
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "Mechanical,neutral,standon"
+    },
+    {
+      "Id": 1734632053,
+      "Value": 1
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Portal)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Tornado\\TornadoElemental.mdl"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Maelstrom Pass"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1735156597,
+      "Value": 50
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Waygate"
+    }
+  ]
+}

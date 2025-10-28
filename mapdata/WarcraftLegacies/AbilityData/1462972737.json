@@ -1,0 +1,193 @@
+{
+  "OldId": 1869640513,
+  "NewId": 1462972737,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bspo,Bssd"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829386835,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829386835,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846164051,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846164051,
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862941267,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846164051,
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862941267,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829386835,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bspo,Bssd"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879718483,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879718483,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862941267,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Dryad, Deepseer)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A poison attack that deals \u003CA13W,DataA1\u003E damage per second, and slows the target enemy\u0027s movement by \u003CA13W,DataB1,%\u003E% and attack by \u003CA13W,DataC1,%\u003E% for \u003CA13W,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A poison attack that deals \u003CA13W,DataA2\u003E damage per second, and slows the target enemy\u0027s movement by \u003CA13W,DataB2,%\u003E% and attack by \u003CA13W,DataC2,%\u003E% for \u003CA13W,Dur2\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slow Poison - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slow Poison - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A poison attack that deals \u003CA13W,DataA3\u003E damage per second, and slows the target enemy\u0027s movement by \u003CA13W,DataB3,%\u003E% and attack by \u003CA13W,DataC3,%\u003E% for \u003CA13W,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slow Poison - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

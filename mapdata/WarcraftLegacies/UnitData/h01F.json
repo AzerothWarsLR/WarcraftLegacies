@@ -1,0 +1,92 @@
+{
+  "OldId": 1953259880,
+  "NewId": 1177628776,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A04E"
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1819240309,
+      "Value": 106
+    },
+    {
+      "Id": 1919903605,
+      "Value": 30
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2000
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rosp,R064,Renb,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\NorthrendCrypt\\NorthrendCrypt.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Duskwood Graveyard"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Revives Slain Heroes"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind Other)"
+    }
+  ]
+}

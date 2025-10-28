@@ -1,0 +1,43 @@
+{
+  "OldId": 1651664494,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0CR,ACff"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1647403381,
+      "Value": 40
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that casts Faerie Fire. "
+    }
+  ]
+}

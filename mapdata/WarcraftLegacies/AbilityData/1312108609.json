@@ -1,0 +1,121 @@
+{
+  "OldId": 1936215617,
+  "NewId": 1312108609,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829645646,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200078,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879977294,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913533006,
+      "Value": 4
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Healing Spire)"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\Sonic Missile.mdx"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Healing Blessing"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Sprays waves of healing mist that heal friendly units in a target area. |n|n|cffffcc00Level 1|r - \u003CA0KN,DataF1\u003E waves at \u003CA0KN,DataA1\u003E hit points healed each. |n|cffffcc00Level 2|r - \u003CA0KN,DataF2\u003E waves at \u003CA0KN,DataA2\u003E hit points healed each. |n|cffffcc00Level 3|r - \u003CA0KN,DataF3\u003E waves at \u003CA0KN,DataA3\u003E hit points healed each."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Healing Blessing"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sprays 4 waves of healing mist; each wave heals 40 damage to all friendly units in an area."
+    }
+  ]
+}

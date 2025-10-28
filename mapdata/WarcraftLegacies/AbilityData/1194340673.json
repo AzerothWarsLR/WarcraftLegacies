@@ -1,0 +1,56 @@
+{
+  "OldId": 1936016193,
+  "NewId": 1194340673,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit\u0027s attacks instantly kill units with fewer hit points than 400% of this units damage, and heroes with fewer hit points than 150% of its damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Execute"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Execute"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASOrcishAxe.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    }
+  ]
+}

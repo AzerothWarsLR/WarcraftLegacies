@@ -1,0 +1,28 @@
+{
+  "OldId": 1937140033,
+  "NewId": 944910401,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Invisibility (Dark Green - Conjurer)"
+    }
+  ]
+}

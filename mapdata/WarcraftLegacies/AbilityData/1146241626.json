@@ -1,0 +1,192 @@
+{
+  "OldId": 1767993921,
+  "NewId": 1146241626,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828989778,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862544210,
+      "Type": 3,
+      "Value": "zBIE"
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o012"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "ZBMA"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862544210,
+      "Type": 3,
+      "Value": "zBIE"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845766994,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "ZBMA"
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o012"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Vile Corruptor)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Raises an Immature Egg from a nearby corpse. After 3 minutes, the egg matures. Mature eggs can be hatched into permanent Soldiers, and will automatically hatch if they are destroyed."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCHatchingEgg.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCHatchingEgg.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Incubate"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Incubate - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Incubate - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Raises an Immature Egg from a nearby corpse. After 45 seconds the egg matures. Mature eggs can be hatched into permanent Soldiers, and will automatically hatch if they are destroyed."
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting."
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting."
+    }
+  ]
+}

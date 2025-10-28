@@ -1,0 +1,169 @@
+{
+  "OldId": 1718830401,
+  "NewId": 925904961,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828797765,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828797765,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845574981,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845574981,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862352197,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862352197,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Lorthemar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wrath of the Blood Elves - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wrath of the Blood Elves - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wrath of the Blood Elves - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA2\u003E damage. |nLasts for \u003CA007,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA3\u003E damage. |nLasts for \u003CA007,Dur3\u003E seconds."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down waves of falling starst that damage nearby enemy units.|nLasts 30 seconds. |n|n|cffffcc00Level 1|r - Each wave deals \u003CAEsf,DataA1\u003E damage.|n|cffffcc00Level 2|r - Each wave deals \u003CAEsf,DataA2\u003E damage.|n|cffffcc00Level 3|r - Each wave deals \u003CAEsf,DataA3\u003E damage.|n|nLasts for \u003CAEsf,Dur1\u003E seconds.|n"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of falling stars that damage nearby enemy units. Each wave deals \u003CA007,DataA1\u003E damage. |nLasts for \u003CA007,Dur1\u003E seconds."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": 1818588275,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1869767785,
+      "Value": 0
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1818588009,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Teleports the Hero. Has a 2 minute cooldown."
+    }
+  ]
+}

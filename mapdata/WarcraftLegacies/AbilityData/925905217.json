@@ -1,0 +1,77 @@
+{
+  "OldId": 1986085697,
+  "NewId": 925905217,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828662088,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845439304,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,notself,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "AOP1"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the armor of nearby friendly units by 50% of their base armor, not including any upgrades."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Protection Aura"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNProtection1.blp"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\KingstrideAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Protection Aura"
+    }
+  ]
+}

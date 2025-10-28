@@ -1,0 +1,73 @@
+{
+  "OldId": 1802728257,
+  "NewId": 910504001,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R00W"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASDragonCarapace.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pink - Spirit Walker, Tauren)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Toughened Hides"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Toughened Hides"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces damage taken from attacks by \u003CA0E6,DataC1\u003E."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASDragonCarapace.blp"
+    }
+  ]
+}

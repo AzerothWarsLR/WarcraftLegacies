@@ -1,0 +1,79 @@
+{
+  "OldId": 1702316097,
+  "NewId": 1162626369,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 95
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h01K"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 2
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RELO"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tidal Lord)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Water Elementals"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Water Elementals"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 2 Water Elementals to attack the caster\u0027s enemies. They have 975 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

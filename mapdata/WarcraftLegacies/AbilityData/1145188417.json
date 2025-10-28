@@ -1,0 +1,265 @@
+{
+  "OldId": 1684297025,
+  "NewId": 1145188417,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 475
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B024"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B024"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B024"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 220
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 325
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828662869,
+      "Type": 2,
+      "Value": 0.03
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828662869,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845440085,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845440085,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X006"
+    },
+    {
+      "Level": 2,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X006"
+    },
+    {
+      "Level": 3,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X006"
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure,ward"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure,ward"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure,ward"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallCaster.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Moving Earth"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Moving Earth - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero calls forth the earth itself to strike from beneath the feet of his enemies damaging them by a percentage of their base hit points per second. Also destroys trees.|n|cffffcc00Level 1|r - Damages for 3% hit points and lasts for 30 seconds.|n|cffffcc00Level 2|r - Damages for 4% hit points and lasts for 30 seconds.|n|cffffcc00Level 3|r - Damages for 5% hit points and lasts for 30 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moving Earth - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moving Earth - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moving Earth - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages enemy units in its area of effect by 3% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages enemy units in its area of effect by 4% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages enemy units in its area of effect by 5% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
+    }
+  ]
+}

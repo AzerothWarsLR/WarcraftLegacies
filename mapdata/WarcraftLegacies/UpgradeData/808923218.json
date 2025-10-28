@@ -1,0 +1,133 @@
+{
+  "OldId": 1952736594,
+  "NewId": 808923218,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1835887719,
+      "Value": 0
+    },
+    {
+      "Id": 846163303,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 862940519,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 879717735,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "o03Z"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 45
+    },
+    {
+      "Id": 1835627623,
+      "Value": 60
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1835820903,
+      "Value": 25
+    },
+    {
+      "Id": 879125863,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631143,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(troll)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Haruspex Advanced Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Haruspex\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability Dispel Magic."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Haruspex\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Mana Burn."
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Haruspex Adept Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Haruspex Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Haruspex Master Training"
+    }
+  ]
+}

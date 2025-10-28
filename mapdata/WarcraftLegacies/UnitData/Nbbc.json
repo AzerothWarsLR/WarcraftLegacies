@@ -1,0 +1,165 @@
+{
+  "OldId": 1667392078,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0MM,A0GK,A0KV,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 27
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 5
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "Aamk,AOww,AOmi,AOr2,A0AI"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1953393013,
+      "Value": 18
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1937141109,
+      "Value": 260
+    },
+    {
+      "Id": 1920234357,
+      "Value": 26
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": 1868788853,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R011"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R03C"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\RendBlackhand_Hero.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warchief of the Blackrock Clan"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Dal\u0027rend Blackhand"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-blademaster.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, specialised in dealing damage and disrupting enemies."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Rend"
+    }
+  ]
+}

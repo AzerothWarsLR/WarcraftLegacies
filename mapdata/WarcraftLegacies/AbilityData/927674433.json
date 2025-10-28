@@ -1,0 +1,70 @@
+{
+  "OldId": 1919828801,
+  "NewId": 927674433,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04E"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579599,
+      "Type": 2,
+      "Value": 0.02
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R02S"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dark Green - Northshire Abbey, Cathedral of Light)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Invigoration of the Light"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Invigoration of The Light"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores nearby unit\u0027s health by 1% per second."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    }
+  ]
+}

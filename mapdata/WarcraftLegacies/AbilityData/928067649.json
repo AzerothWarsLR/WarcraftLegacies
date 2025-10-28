@@ -1,0 +1,107 @@
+{
+  "OldId": 1936083009,
+  "NewId": 928067649,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Zuluhed)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Flame Strike (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 270 damage over 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 315 damage over 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 360 damage over 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 405 damage over 3 seconds, followed by major damage for 6 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Strike"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 270 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take minor damage. |n|nLasts 5 seconds.|n15 second cooldown."
+    }
+  ]
+}

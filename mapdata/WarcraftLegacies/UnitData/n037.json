@@ -1,0 +1,61 @@
+{
+  "OldId": 1952937838,
+  "NewId": 926101614,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Avul,A0A2,Awrp"
+    },
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 100000
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Demon Portal"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

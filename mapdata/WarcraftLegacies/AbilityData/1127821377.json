@@ -1,0 +1,68 @@
+{
+  "OldId": 1869827649,
+  "NewId": 1127821377,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04A"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829387598,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOverload.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow - Gryphon Rider)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Shock"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shock"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Shocks the enemy with lightning which causes 7 damage per second, prevents the casting of spells, and reduces attack damage by 50%.|nLasts 14 seconds on units and 3 seconds on heroes                          12 Second cooldown."
+    }
+  ]
+}

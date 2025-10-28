@@ -1,0 +1,26 @@
+{
+  "OldId": 1868852327,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 50
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Adds 6 bonus fire damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and do splash damage to nearby enemy units."
+    }
+  ]
+}

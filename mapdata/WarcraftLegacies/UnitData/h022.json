@@ -1,0 +1,103 @@
+{
+  "OldId": 1634037864,
+  "NewId": 842149992,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A041,Arlm,Ahar,Ahrp"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "h0BM,h0BP,h0A3,h09X,h0AG,h0BE,h0BL,n035,h0BI,n0D8,h0BQ,n0AO,h065,h063,h067,h076,h069,h078,h044,h036,hvlt,h02N"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 7
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran, Worker)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Peasants who support the war effort in exchange for protection."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Farmer"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\PeasantBanditV1.02.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Farmer"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVillagerMan1.blp"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

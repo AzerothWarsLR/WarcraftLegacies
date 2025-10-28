@@ -1,0 +1,173 @@
+{
+  "OldId": 1935762280,
+  "NewId": 858796136,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Argl,Adts"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": 1717920885,
+      "Value": 20
+    },
+    {
+      "Id": 1886741621,
+      "Value": 5
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 50
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 30
+    },
+    {
+      "Id": 1819240309,
+      "Value": 106
+    },
+    {
+      "Id": 1919903605,
+      "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 7000
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 828927349,
+      "Value": 1
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\10x10Simple.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 20
+    },
+    {
+      "Id": 1915838837,
+      "Value": 800
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R00G"
+    },
+    {
+      "Id": 1986359925,
+      "Value": 1
+    },
+    {
+      "Id": 828535413,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": 1932616053,
+      "Value": 6
+    },
+    {
+      "Id": 828601461,
+      "Value": 1
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "n00A,nbee"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Quelthalas Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\MageTower\\MageTower.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Silvermoon Palace"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

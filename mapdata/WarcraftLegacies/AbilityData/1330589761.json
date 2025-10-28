@@ -1,0 +1,117 @@
+{
+  "OldId": 1986348353,
+  "NewId": 1330589761,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(twilight)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Burning Vengeance"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Burning Vengeance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "If Ignacious would die, he instead regains some health for 30 seconds. If he attacks 5 times in this form, he revives instantly. Otherwise, he dies. |n|n|cffffcc00Level 1|r - Restores 1200 health and increases attack damage by 40.|n|cffffcc00Level 2|r - Restores 1500 health and increases attack damage by 60. |n|cffffcc00Level 3|r - Restores 1800 health and increases attack damage by 80."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Burning Vengeance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Burning Vengeance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Burning Vengeance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "If Ignacious would die, he instead regains 1200 health and stays alive for 30 seconds, increasing his attack damage by 40. If he attacks 5 times in this form, he revives instantly. Otherwise, he dies."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "If Ignacious would die, he instead regains 1500 health and stays alive for 30 seconds, increasing his attack damage by 60. If he attacks 5 times in this form, he revives instantly. Otherwise, he dies."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "If Ignacious would die, he instead regains 1800 health and stays alive for 30 seconds, increasing his attack damage by 80. If he attacks 5 times in this form, he revives instantly. Otherwise, he dies."
+    }
+  ]
+}

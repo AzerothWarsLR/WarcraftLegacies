@@ -1,0 +1,29 @@
+{
+  "OldId": 1667321666,
+  "NewId": 1479749698,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Offensive Formation"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is part of an offensive formation; its attack damage has been increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

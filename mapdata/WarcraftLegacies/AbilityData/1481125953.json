@@ -1,0 +1,34 @@
+{
+  "OldId": 862221121,
+  "NewId": 1481125953,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845243460,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Clockwerk Goblin-Level 4)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 180 damage in a small area."
+    }
+  ]
+}

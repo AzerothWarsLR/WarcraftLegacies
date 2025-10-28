@@ -1,0 +1,29 @@
+{
+  "OldId": 1819308610,
+  "NewId": 1194405954,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStrongDrink.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Alcohol"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is affected by alcohol; some of its hit points have been restored."
+    }
+  ]
+}

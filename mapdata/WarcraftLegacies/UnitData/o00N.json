@@ -1,0 +1,126 @@
+{
+  "OldId": 1953654383,
+  "NewId": 1311780975,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0CK,Argl"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 15
+    },
+    {
+      "Id": 1819240309,
+      "Value": 150
+    },
+    {
+      "Id": 1919903605,
+      "Value": 30
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\12x12Simple.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1769107573,
+      "Value": 1
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1986359925,
+      "Value": 1
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "o04A"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 105
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 85
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gundrak"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

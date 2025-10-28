@@ -1,0 +1,153 @@
+{
+  "OldId": 1999796078,
+  "NewId": 1161310318,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A12J,A09E,Anh1,Aion,ANtr"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "Anh1"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1935827829,
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": 1953522549,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 18
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 21
+    },
+    {
+      "Id": 1836083317,
+      "Value": 350
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1836084597,
+      "Value": 200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 10
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rotr,Ropm,Rhme,Rhar,R03Q,Rguv"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R00K"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Spiritual Guidance,- Heal|n- Spiritual Guidance|n- Windfury"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\ForestTrollShadowPriest\\ForestTrollShadowPriest.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowpriest"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shadowpriest"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Shadowy voodoo Troll."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "WitchDoctor"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

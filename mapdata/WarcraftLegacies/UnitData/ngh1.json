@@ -1,0 +1,30 @@
+{
+  "OldId": 828925806,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 600
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit that can cast Possession. "
+    }
+  ]
+}

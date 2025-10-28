@@ -1,0 +1,104 @@
+{
+  "OldId": 846029121,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bam2,Bams"
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863202625,
+      "Value": 675
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863202625,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,self,vulnerable"
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge) - Banshee)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Improved Anti-magic Shell"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a barrier that stops 800 points of spell damage from affecting a target unit. |nLasts \u003CAam2,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a barrier that stops 675 points of spell, summon, or magic damage from affecting a target unit. |nLasts \u003CAam2,Dur1\u003E seconds."
+    }
+  ]
+}

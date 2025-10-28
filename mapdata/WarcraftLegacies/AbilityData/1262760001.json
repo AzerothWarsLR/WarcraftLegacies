@@ -1,0 +1,211 @@
+{
+  "OldId": 1936286785,
+  "NewId": 1262760001,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 70
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846029889,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 70
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 70
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846029889,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846029889,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846029889,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sally)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Dispel magic"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0DK,DataB1\u003E damage to summoned units.|r"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0DK,DataB1\u003E damage to summoned units.|r|r |n|n|cffffcc00Level 1|r - 14 seconds cooldown.|n|cffffcc00Level 2|r - 10 seconds cooldown. |n|cffffcc00Level 3|r - 6 seconds cooldown.|n|cffffcc00Level 3|r - 2 seconds cooldown."
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Dispel Magic - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDispelMagic.blp"
+    }
+  ]
+}

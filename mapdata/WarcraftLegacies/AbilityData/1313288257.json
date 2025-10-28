@@ -1,0 +1,94 @@
+{
+  "OldId": 1936479553,
+  "NewId": 1313288257,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863202389,
+      "Value": 8
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "u01L"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "e00L"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue - Main Buildings)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ancestral Spirits"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Locust Swarm - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Crypt Lord when they return. Effectiveness increased with level."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ancestral Spirits"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons Ancestral Spirits which steal health from enemy units and give it back to the building. Lasts 30 seconds."
+    }
+  ]
+}

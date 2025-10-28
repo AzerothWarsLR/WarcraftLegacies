@@ -1,0 +1,28 @@
+{
+  "OldId": 1635141953,
+  "NewId": 1179928129,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RFTF"
+    },
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(CthunReward-Real)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vampiric Attack"
+    }
+  ]
+}

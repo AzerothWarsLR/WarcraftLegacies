@@ -1,0 +1,234 @@
+{
+  "OldId": 1801864513,
+  "NewId": 877080641,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 145
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 2500
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 3500
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Green - Lorthermar)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "LEAS"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Flame Burst"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameBurst.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Flame Burst - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Hero releases a wave of fire that damages nearby enemy units.|n|n|cffffcc00Level 1|r - 150 damage per target. |n|cffffcc00Level 2|r - 200 damage per target. |n|cffffcc00Level 3|r - 250 damage per target.|n|cffffcc00Level 4|r - 300 damage per target."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Burst - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Burst - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Burst - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Burst - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 150 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 200 damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 250 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 300 damage."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameBurst.blp"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "OldId": 1685547073,
+  "NewId": 1229402177,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R000"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o019"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Tidesage)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an immovable whirlpool that slows enemy units, reducing their attack speed by 15% and movement speed by 10%. |nLasts \u003CA0GI,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Whirlpool"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Whirlpool"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
+    }
+  ]
+}

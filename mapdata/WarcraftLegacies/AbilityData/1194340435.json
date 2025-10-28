@@ -1,0 +1,30 @@
+{
+  "OldId": 828466003,
+  "NewId": 1194340435,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R09O"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o06R"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Grey - Blademaster)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "OldId": 1650942830,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": 1647403381,
+      "Value": 21
+    },
+    {
+      "Id": 1836083317,
+      "Value": 450
+    },
+    {
+      "Id": 1769107573,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(level 1)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Poorly engineered mechanical goblin melee warrior.  Detonates after a certain period of time."
+    }
+  ]
+}

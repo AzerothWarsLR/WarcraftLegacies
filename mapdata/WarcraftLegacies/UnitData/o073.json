@@ -1,0 +1,119 @@
+{
+  "OldId": 1970431855,
+  "NewId": 859254895,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0XM,A0DS,A0DX,Sca1,A0ES,A020,A0BG,Aion"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0XM"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 28
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 19
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "TP17,Rguv,Robs,Rhar,Rhme"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Pride unshaken, battle-forged, and bound by the blood and fury of the Warsong."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mok\u0027Nathal Warrior"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported/WarsongGruntV2.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNBlackrockGrunt.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mok\u0027Nathal Warrior"
+    }
+  ]
+}

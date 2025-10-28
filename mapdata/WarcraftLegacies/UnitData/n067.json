@@ -1,0 +1,94 @@
+{
+  "OldId": 1919972206,
+  "NewId": 926298222,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhme"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aloc,ACvs"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 5
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "summoned,undead"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mini Spiders"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.3
+    },
+    {
+      "Id": 1919705973,
+      "Value": 55
+    },
+    {
+      "Id": 1735156597,
+      "Value": 88
+    },
+    {
+      "Id": 1651270517,
+      "Value": 55
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 11
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 11
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 25
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 25
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit. "
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "OldId": 1853188207,
+  "NewId": 1278554223,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aion,A05H"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1885693045,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1647403381,
+      "Value": 24
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1836083317,
+      "Value": 550
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhar,Rotr,Ropm,Rhme,Rguv"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o068"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1852137845,
+      "Value": 3
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1731354997,
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 845312629,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": 1915904373,
+      "Value": 800
+    },
+    {
+      "Id": 2050122101,
+      "Value": 1200
+    },
+    {
+      "Id": 1932681589,
+      "Value": 5
+    },
+    {
+      "Id": 1681023349,
+      "Value": 2
+    },
+    {
+      "Id": 1647468917,
+      "Value": 31
+    },
+    {
+      "Id": 1949458805,
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": 846422645,
+      "Type": 2,
+      "Value": 0.86
+    },
+    {
+      "Id": 846226549,
+      "Type": 2,
+      "Value": 0.31
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Specialized marksman, has a particularly strong attack against air."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpearmanWC1v2.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dragon Hunter"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Dragon Hunter"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\SpearmanWC1v2.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\SpearmanMissile.mdl"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "war3mapImported\\SpearmanMissile.mdl"
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.15
+    }
+  ]
+}

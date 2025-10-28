@@ -1,0 +1,286 @@
+{
+  "OldId": 1802723905,
+  "NewId": 1179922497,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829125474,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Garrosh)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Blood and Thunder"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blood and Thunder - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderBurst.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CA0TF,DataB1,%\u003E% faster. Blocking all physical damage whilst absorbing spell damage, converting it into an equal proportion of HP.|nLasts \u003CA0TF,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blood and Thunder - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blood and Thunder - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blood and Thunder - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CA0TF,DataB2,%\u003E% faster. Blocking all physical damage whilst absorbing spell damage, converting it into an equal proportion of HP.|nLasts \u003CA0TF,Dur1\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CA0TF,DataB3,%\u003E% faster. Blocking all physical damage whilst absorbing spell damage, converting it into an equal proportion of HP.|nLasts \u003CA0TF,Dur1\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CA0TF,DataB4,%\u003E% faster. Blocking all physical damage whilst absorbing spell damage, converting it into an equal proportion of HP.|nLasts \u003CA0TF,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderBurst.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Causes this unit to attack fasterand block all physical damage whilst absorbing spell damage, converting it into an equal proportion of HP.|nLasts \u003CA0TF,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - 50% attack speed increase. |n|cffffcc00Level 2|r - 60% attack speed increase. |n|cffffcc00Level 3|r - 70% attack speed increase..|n|cffffcc00Level 4|r - 80% attack speed increase."
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Blood and Thunder - [|cffffcc00Level %d|r]"
+    }
+  ]
+}

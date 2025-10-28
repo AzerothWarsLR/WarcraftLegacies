@@ -1,0 +1,93 @@
+{
+  "OldId": 1836475717,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 75
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "ZBL6,A0YW,AEvi,ZBPA,Aamk"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LW,A07D,AInv"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 600
+    },
+    {
+      "Id": 1768382837,
+      "Value": 35
+    },
+    {
+      "Id": 1953393013,
+      "Value": 18
+    },
+    {
+      "Id": 1920234357,
+      "Value": 24
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Morphed - Level 1 - Illidari)"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Illidan Stormrage"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Illidan"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Illidan"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Deadly Hero, adept at wading into the fray and cutting down key targets. "
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "OldId": 1986216769,
+  "NewId": 1482043457,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 130
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 2350
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 2600
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 2950
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879977301,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879977301,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879977301,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShockWave.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(1,2)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Shockwave"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShockWave.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Shockwave - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "A wave of force that ripples out from the Hero, causing damage to units in a line. |n|n|cffffcc00Level 1|r - 150 damage. Max 2000 damage.|n|cffffcc00Level 2|r - 225 damage. Max 2350 damage.|n|cffffcc00Level 3|r - 300 damage. Max 2600 damage.|n|cffffcc00Level 4|r - 350 damage. Max 2950 damage."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shockwave - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shockwave - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shockwave - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shockwave - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 150 damage to enemy units in a line, up to 2000 max damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 225 damage to enemy units in a line, up to 2350 max damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 300 damage to enemy unit in a line, up to 2600 max damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 350 damage to enemy unit in a line, up to 2950 max damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

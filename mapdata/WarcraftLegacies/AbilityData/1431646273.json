@@ -1,0 +1,149 @@
+{
+  "OldId": 1918990145,
+  "NewId": 1431646273,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Archangel)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\Judgment of Light.mdx"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "war3mapImported\\Judgment of Light.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Righteous Fury"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 60 damage to nearby units in a large area."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 100 damage to nearby units."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Righteous Fury"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyHammerOn.blp"
+    }
+  ]
+}

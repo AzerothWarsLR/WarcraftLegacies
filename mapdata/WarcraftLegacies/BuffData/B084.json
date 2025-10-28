@@ -1,0 +1,24 @@
+{
+  "OldId": 1702454594,
+  "NewId": 876097602,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneEye.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Watcher\u0027s Eye"
+    }
+  ]
+}

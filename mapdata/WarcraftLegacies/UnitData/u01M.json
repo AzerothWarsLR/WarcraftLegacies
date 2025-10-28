@@ -1,0 +1,184 @@
+{
+  "OldId": 1685021045,
+  "NewId": 1295069301,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1634559605,
+      "Value": 10
+    },
+    {
+      "Id": 1819240309,
+      "Value": 18
+    },
+    {
+      "Id": 1919903605,
+      "Value": 40
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1719037301,
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Id": 1752591733,
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1918988405,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1986359925,
+      "Value": 0
+    },
+    {
+      "Id": 1868788853,
+      "Value": 3
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "hpea,uaco"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall,undead"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKeep.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 100
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge Other)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\human\\TownHall\\TownHall.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Caer Darrow Keep"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Trains the spellcasters of the Legions Forces. Trains Shadow Priests and Warlocks. Contains upgrades for all three casters as well as a caster health research."
+    }
+  ]
+}

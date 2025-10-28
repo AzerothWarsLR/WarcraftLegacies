@@ -1,0 +1,68 @@
+{
+  "OldId": 1936543297,
+  "NewId": 860041281,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran-Battlemage-Kirin Tor)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mana Shield"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates a shield that absorbs damage by using the Caster\u0027s mana. |n|n|cffffcc00Level 1|r - 1 damage per point of mana. |n|cffffcc00Level 2|r - 1.5 damage per point of mana. |n|cffffcc00Level 3|r - 2 damage per point of mana. |n|cffffcc00Level 4|r - 2.5 damage per point of mana. |n|cffffcc00Level 5|r - 3 damage per point of mana."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activates a shield that absorbs \u003CA0C3,DataA1\u003E damage per point of mana."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activates a shield that absorbs \u003CA0C3,DataA2\u003E damage per point of mana."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

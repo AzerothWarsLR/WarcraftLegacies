@@ -1,0 +1,116 @@
+{
+  "OldId": 1918984815,
+  "NewId": 1144205423,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aspi"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 20
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "o05K,o05L,o01H,n087,o04K"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForsakenMausoleum.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Creep Barracks)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BarracksOrcUndeadV2.00.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cult Gathering"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Cult Gathering"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary troop production building. "
+    }
+  ]
+}

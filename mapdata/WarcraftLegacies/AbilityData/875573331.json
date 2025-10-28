@@ -1,0 +1,106 @@
+{
+  "OldId": 1718121811,
+  "NewId": 875573331,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BUhf"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828794965,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845572181,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R024"
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Necrolyte)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the attack rate of a target unit by 75%, but drains 4 hit points per second. |nLasts 45 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the attack rate of a target unit by 75%, but drains 1 hit points per second. |nLasts 45 seconds."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "OldId": 1868718453,
+  "NewId": 925905013,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A06N,A07B,A136,A08P,Aiun,VP08,ACca,TPY7"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 15
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 35
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 75
+    },
+    {
+      "Id": 1919903605,
+      "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1375
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 350
+    },
+    {
+      "Id": 1836084597,
+      "Value": 350
+    },
+    {
+      "Id": 1769107573,
+      "Value": 14
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 60
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "u00N"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 230
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1735553909,
+      "Value": 0
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R054,R04B,R04G,R054,R01Y,Rupm,Rhme,Rhar"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLordB.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion-Elite)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dreadlord"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Dreadlord"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite Nathrezim, handpicked by Tichondrius himself."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Varimathras"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "OldId": 1651536705,
+  "NewId": 810889281,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0UP"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0UP,A0UR"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0UP,A0UR,A0U3"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0UP,A0UR,A0U3,A0UA"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845312115,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 4
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1702127969,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown Cenarius)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Master of Nature"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Master of Nature - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|cffffcc00Level 1|r - Unlocks Forest Spiders.|n|cffffcc00Level 2|r - Unlocks Feral Wolves.|n|cffffcc00Level 3|r - Unlocks Furbolg Elder Shamans.|n|cffffcc00Level 4|r - Unlocks Ysondre."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Master of Nature - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Master of Nature - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Master of Nature - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Master of Nature - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shaman"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shaman|n- Summon Ysonder|r"
+    }
+  ]
+}

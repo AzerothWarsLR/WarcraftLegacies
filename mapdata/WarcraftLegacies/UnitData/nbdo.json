@@ -1,0 +1,43 @@
+{
+  "OldId": 1868849774,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACev,Arsk,ACav,ACbf"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 60
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1400
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dragonspawn Overseer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Breath of Frost, Devotion Aura, and Evasion. "
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "OldId": 1801864513,
+  "NewId": 1196240961,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845899333,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862676549,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862676549,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862676549,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862676549,
+      "Value": 10
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Id": 1886612833,
+      "Value": 500
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Naisha)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Has a 8 seconds cooldown. |n|n|cffffcc00Level 1|r - 50 damage per target. 5 targets |n|cffffcc00Level 2|r - 75 damage per target. 6 targets |n|cffffcc00Level 3|r - 100 damage per target. 7 targets"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fan of Knives - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Each knife does 100 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does \u003CAEfk,DataA4\u003E damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Each knife does 50 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Each knife does 75 damage."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Quick Knives"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Quick Knives - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Quick Knives - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Quick Knives - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Quick Knives - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdx"
+    }
+  ]
+}

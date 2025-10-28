@@ -1,0 +1,38 @@
+{
+  "OldId": 1751610222,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 22
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1000
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee amphibious unit with Ensnare, and Pulverize. "
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "OldId": 1702316097,
+  "NewId": 959590465,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R00E"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h00U"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran-Hydromancer)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Water Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a Water Elemental, which has \u003Ch00U,realHP\u003E hit points, deals \u003Ch00U,mindmg1\u003E - \u003Ch00U,maxdmg1\u003E damage, and can learn the Freezing Shot ability. |nLasts \u003CA029,Dur1\u003E seconds. Water Elementals are affected by the Power Infusion and Hydromancer Training researches.|n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

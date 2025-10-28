@@ -1,0 +1,127 @@
+{
+  "OldId": 1752393326,
+  "NewId": 842477678,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACev,AChx"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1701606261,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 40
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1919903605,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1150
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 1000
+    },
+    {
+      "Id": 1836084597,
+      "Value": 1000
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1000
+    },
+    {
+      "Id": 1915838837,
+      "Value": 800
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1836348021,
+      "Value": 1
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1735156597,
+      "Value": 135
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Vile Priestess Hexx"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 190
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shandris"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "High Priest of healing magic. Hurls fiery missiles. Can cast Abolish Magic and Inner Fire. "
+    }
+  ]
+}

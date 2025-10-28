@@ -1,0 +1,30 @@
+{
+  "OldId": 1802726977,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R033"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Khaz Modan-Unused?)"
+    }
+  ]
+}

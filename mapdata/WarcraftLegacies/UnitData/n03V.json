@@ -1,0 +1,57 @@
+{
+  "OldId": 1818587758,
+  "NewId": 1446195310,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1836083317,
+      "Value": 630
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R001,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 22
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras - Tidesage)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Sea Elemental"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Sea Elemental"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit. "
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "OldId": 1802728257,
+  "NewId": 1496461377,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "allies,enemies"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTenebriousArmor.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stormwind - Knights, Lordaeron - Knights)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "War Plating"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "War Plating - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "War Plating - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "War Plating - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA1\u003E% to have their damage reduced by \u003CA02Y,DataC1\u003E. Attacks cannot be reduced below \u003CA02Y,DataB1\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA2\u003E% to have their damage reduced by \u003CA02Y,DataC2\u003E. Attacks cannot be reduced below \u003CA02Y,DataB2\u003E damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA3\u003E% to have their damage reduced by \u003CA02Y,DataC3\u003E. Attacks cannot be reduced below \u003CA02Y,DataB3\u003E damage."
+    }
+  ]
+}

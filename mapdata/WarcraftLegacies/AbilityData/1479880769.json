@@ -1,0 +1,119 @@
+{
+  "OldId": 1937003841,
+  "NewId": 1479880769,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B096"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B096"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829650005,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829650005,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863204437,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863204437,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNThorns.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids - Treant)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Thorns"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - \u003CAUts,DataA1,%\u003E% damage returned, \u003CAUts,DataC1\u003E bonus armor. |n|cffffcc00Level 2|r -  \u003CAUts,DataA2,%\u003E% damage returned, \u003CAUts,DataC2\u003E bonus armor. |n|cffffcc00Level 3|r -  \u003CAUts,DataA3,%\u003E% damage returned, \u003CAUts,DataC3\u003E bonus armor.  |n|cffffcc00Level 4|r -  \u003CAUts,DataA4,%\u003E% damage returned, \u003CAUts,DataC4\u003E bonus armor.  |n|cffffcc00Level 5|r -  \u003CAUts,DataA5,%\u003E% damage returned, \u003CAUts,DataC5\u003E bonus armor.  "
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thorns - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thorns - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to return \u003CA05X,DataA1,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to return \u003CA05X,DataA2,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 0
+    }
+  ]
+}

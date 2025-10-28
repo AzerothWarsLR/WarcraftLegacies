@@ -1,0 +1,117 @@
+{
+  "OldId": 1919970664,
+  "NewId": 1261973608,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0SH,Ahea,A0R4,Aihn"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 12
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1932616053,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,R05D,Rhme,Rhar"
+    },
+    {
+      "Id": 1717920885,
+      "Value": -3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ScarletCleric.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Monk"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Monk"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Peaceful followers of the Light."
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Spiritual Guidance,- Heal|n- Spiritual Guidance|n- Resurrection"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScarletCleric.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

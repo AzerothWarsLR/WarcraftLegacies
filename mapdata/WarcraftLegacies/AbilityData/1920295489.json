@@ -1,0 +1,38 @@
+{
+  "OldId": 1920295489,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 0
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge-Crypt Fiend)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Resurface"
+    }
+  ]
+}

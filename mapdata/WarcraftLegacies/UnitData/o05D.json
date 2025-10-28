@@ -1,0 +1,161 @@
+{
+  "OldId": 1668244591,
+  "NewId": 1144336495,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0TL,A0FB,Aion,A10W"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 6
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 33
+    },
+    {
+      "Id": 1919903605,
+      "Value": 15
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 300
+    },
+    {
+      "Id": 1769107573,
+      "Value": 11
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R078,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 630
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 1647403381,
+      "Value": 24
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0FB"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 130
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Shaman contected to the spirits of Nature."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Elementalist"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Elementalist"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\VillagerDraenei.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiBattlemaster_by67chrome.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shaman"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-shaman.blp"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Frost Bolt,- Frost Bolt|n- Summon Earth Elemental,- Frost Bolt|n- Summon Earth Elemental|n- Frost Armor"
+    }
+  ]
+}

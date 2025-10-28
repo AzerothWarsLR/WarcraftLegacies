@@ -1,0 +1,201 @@
+{
+  "OldId": 1953787240,
+  "NewId": 1463038056,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0GH"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1918985077,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1647403381,
+      "Value": 140
+    },
+    {
+      "Id": 1647468917,
+      "Value": 35
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 50
+    },
+    {
+      "Id": 1919903605,
+      "Value": 50
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1500
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2050056565,
+      "Value": 2600
+    },
+    {
+      "Id": 2050122101,
+      "Value": 900
+    },
+    {
+      "Id": 1769107573,
+      "Value": 8
+    },
+    {
+      "Id": 1915838837,
+      "Value": 950
+    },
+    {
+      "Id": 1915904373,
+      "Value": 400
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R00L"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 10
+    },
+    {
+      "Id": 1932681589,
+      "Value": 5
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R01U,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 3
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Aroc"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSeigeEngineWithMissles.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "SiegeEngineKulTirasV1.01.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 1
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Siege Tank"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Steam Tank"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavily armored vehicle, adept at shooting down air units."
+    }
+  ]
+}

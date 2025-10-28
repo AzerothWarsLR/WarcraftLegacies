@@ -1,0 +1,78 @@
+{
+  "OldId": 1852143169,
+  "NewId": 861483073,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845770576,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862547792,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNPoisonSting.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun Silithid Collosus)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Envenomed Darts"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Envenomed Darts"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals \u003CA0Y3,DataA1\u003E poison damage per second, slows movement speed and attack speed by \u003CA0Y3,DataC1,%\u003E%. The poison damage stacks. |nLasts \u003CA0Y3,Dur1\u003E seconds (0.1 on heroes)."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "OldId": 845243219,
+  "NewId": 909127763,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R08A"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h0CQ"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Purple - Huntsman to Arbalest)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

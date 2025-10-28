@@ -1,0 +1,24 @@
+{
+  "OldId": 1937003842,
+  "NewId": 859058242,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Spiked Carapace"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Fire Tanks)"
+    }
+  ]
+}

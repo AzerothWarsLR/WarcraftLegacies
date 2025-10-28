@@ -1,0 +1,31 @@
+{
+  "OldId": 1819634547,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 5
+    },
+    {
+      "Id": 1635021673,
+      "Value": 3
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "(|cffcece00D|r) Purchase Sacrificial Skull"
+    }
+  ]
+}

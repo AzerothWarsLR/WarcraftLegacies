@@ -1,0 +1,26 @@
+{
+  "OldId": 1937010546,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "AIwm"
+    },
+    {
+      "Id": 1819240297,
+      "Value": 60
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cff87ceebUnique Consumable|r|nSummons 4 Murlocs to fight for you.|nContains \u003Crots,uses\u003E charges."
+    }
+  ]
+}

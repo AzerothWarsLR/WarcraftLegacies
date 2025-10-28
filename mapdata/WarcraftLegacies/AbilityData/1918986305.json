@@ -1,0 +1,195 @@
+{
+  "OldId": 1918986305,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 116
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356808,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863134024,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829579592,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "alive,dead"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579592,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863134024,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846356808,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 116
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "alive,dead"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863134024,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579592,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "alive,dead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow/Red/DG/Purple/Orange/Pink/Grey/Blue Workers)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Gather"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Harvest Gold from gold mines"
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Return Resources"
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Return the carried gold."
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Gather"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Harvest Gold from gold mines"
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Return Resources"
+    },
+    {
+      "Level": 3,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Return the carried gold."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Harvest Gold from gold mines"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Return the carried gold."
+    }
+  ]
+}

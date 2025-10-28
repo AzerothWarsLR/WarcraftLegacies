@@ -1,0 +1,214 @@
+{
+  "OldId": 1886549093,
+  "NewId": 1496395877,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 25
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 1886741621,
+      "Value": 5
+    },
+    {
+      "Id": 1647403381,
+      "Value": 54
+    },
+    {
+      "Id": 1647468917,
+      "Value": 54
+    },
+    {
+      "Id": 1819240309,
+      "Value": 23
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 700
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1937141109,
+      "Value": 0
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "e000"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "e010"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1731354997,
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
+    },
+    {
+      "Id": 1882349941,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1915904373,
+      "Value": 600
+    },
+    {
+      "Id": 1915838837,
+      "Value": 900
+    },
+    {
+      "Id": 2050122101,
+      "Value": 750
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1734632053,
+      "Value": 0
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0ZK,A0E2"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 2050056565,
+      "Value": 770
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Ancient Protector"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Defensive Ancient of the Kaldorei forests who hurls boulders at his foes"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Control Point Defender"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    }
+  ]
+}

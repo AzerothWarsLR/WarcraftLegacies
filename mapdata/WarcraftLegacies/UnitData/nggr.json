@@ -1,0 +1,105 @@
+{
+  "OldId": 1919379310,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACrk,Adtg,ACmi,ACtb"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 15
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 50
+    },
+    {
+      "Id": 1919903605,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1600
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 1
+    },
+    {
+      "Id": 1937141109,
+      "Value": 200
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Granite Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Extraordinarily powerful construct built and infused with magic."
+    }
+  ]
+}

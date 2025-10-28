@@ -1,0 +1,99 @@
+{
+  "OldId": 1919184494,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A07C"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 80
+    },
+    {
+      "Id": 1919903605,
+      "Value": 90
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1600
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 8
+    },
+    {
+      "Id": 1932681589,
+      "Value": 8
+    },
+    {
+      "Id": 1735553909,
+      "Value": 140
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged flying unit. Has Spell Resistance."
+    }
+  ]
+}

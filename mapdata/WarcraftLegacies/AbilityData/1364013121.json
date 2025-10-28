@@ -1,0 +1,109 @@
+{
+  "OldId": 1918990145,
+  "NewId": 1364013121,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Alexandros)"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0MQ,DataA2\u003E% chance that an attack will deal \u003CA0MQ,DataB2\u003E damage to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0MQ,DataA3\u003E% chance that an attack will deal \u003CA0MQ,DataB3\u003E damage to nearby units."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
+    }
+  ]
+}

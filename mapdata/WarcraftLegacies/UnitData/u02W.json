@@ -1,0 +1,177 @@
+{
+  "OldId": 1935830901,
+  "NewId": 1462906997,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aabs,A12P"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A12P"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 15
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1885693045,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1647403381,
+      "Value": 26
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 36
+    },
+    {
+      "Id": 1919903605,
+      "Value": 60
+    },
+    {
+      "Id": 1836083317,
+      "Value": 975
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1900
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 800
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 1768975733,
+      "Value": 1000
+    },
+    {
+      "Id": 1836084597,
+      "Value": 3000
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfSupplyWagon.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\other\\BloodElfWagon\\BloodElfWagon.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Energy Wagon"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Energy Wagon"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Forged in the Tempest-Forges, these mana batteries keep the Sunfury addiction to magic at bay."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    }
+  ]
+}

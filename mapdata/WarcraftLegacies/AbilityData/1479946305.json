@@ -1,0 +1,411 @@
+{
+  "OldId": 1936083009,
+  "NewId": 1479946305,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00V"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00V"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00V"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00V"
+    },
+    {
+      "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 2,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 3,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 4,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X003"
+    },
+    {
+      "Level": 2,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X003"
+    },
+    {
+      "Level": 3,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X003"
+    },
+    {
+      "Level": 4,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X003"
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_BlackPlague.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Blue - Archimonde)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Nether Strike"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_BlackPlague.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Archimonde creates a column of darkness which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 180 damage over 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 270 damage over 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 360 damage over 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 450 damage over 3 seconds, followed by major damage for 6 seconds."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Units\\NightElf\\Wisp\\WispExplode.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde creates a column of darkness that damages ground units for 180 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde creates a column of darkness that damages ground units for 270 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde creates a column of darkness that damages ground units for 360 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde creates a column of darkness that damages ground units for 450 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
+    }
+  ]
+}

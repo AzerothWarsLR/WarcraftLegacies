@@ -1,0 +1,137 @@
+{
+  "OldId": 1935830901,
+  "NewId": 1244672117,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "MD12,A054"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "MD12"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 15
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1885693045,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1647403381,
+      "Value": 26
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 36
+    },
+    {
+      "Id": 1919903605,
+      "Value": 60
+    },
+    {
+      "Id": 1836083317,
+      "Value": 875
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1900
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "n0A2"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,R008,Rhar,Rguv"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfSupplyWagon.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\other\\BloodElfWagon\\BloodElfWagon.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Arcane Wagon"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Arcane Wagon"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Forged with the Mana infused steel, bleeding excess into the air."
+    }
+  ]
+}

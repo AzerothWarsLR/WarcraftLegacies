@@ -1,0 +1,30 @@
+{
+  "OldId": 1953788499,
+  "NewId": 1127231571,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R045"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "n0AD"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Earth Golem-Crystal Golem)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

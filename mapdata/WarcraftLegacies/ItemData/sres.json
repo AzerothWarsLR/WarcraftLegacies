@@ -1,0 +1,34 @@
+{
+  "OldId": 1936028275,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "AIdb"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1819240297,
+      "Value": 50
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1635021673,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Restores 125 hit points and 50 mana of friendly non-mechanical units in an area around your Hero."
+    }
+  ]
+}

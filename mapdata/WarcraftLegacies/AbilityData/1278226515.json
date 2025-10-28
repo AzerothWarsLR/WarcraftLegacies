@@ -1,0 +1,20 @@
+{
+  "OldId": 845701971,
+  "NewId": 1278226515,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579587,
+      "Value": 6
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Plague Titan)"
+    }
+  ]
+}

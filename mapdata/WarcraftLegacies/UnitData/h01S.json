@@ -1,0 +1,142 @@
+{
+  "OldId": 1970235496,
+  "NewId": 1395732584,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A09J"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A09J"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 25
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1634559605,
+      "Value": 16
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 10
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1000
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 30
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhac,Rgfo,R00N"
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1836084597,
+      "Value": 200
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarvenTavern.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ironforge Farm)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenTavern.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Tavern"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Tavern"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 16 food, which increases the maximum number of units that can be trained and can heal nearby friendly units."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    }
+  ]
+}

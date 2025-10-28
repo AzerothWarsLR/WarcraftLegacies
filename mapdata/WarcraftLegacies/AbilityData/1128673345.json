@@ -1,0 +1,214 @@
+{
+  "OldId": 1919239489,
+  "NewId": 1128673345,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829580613,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829580613,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829580613,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2.75
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 4.25
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Naisha)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Barbed Net"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Barbed Net - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing, disarming and damaging that target  temporarily. |n|n|cffffcc00Level 1|r - \u003CAEer,DataA1\u003E damage per second for \u003CAEer,Dur1\u003E seconds. Lasts 2.5 seconds on heroes.|n|cffffcc00Level 2|r - \u003CAEer,DataA2\u003E damage per second for \u003CAEer,Dur2\u003E seconds. Lasts 3 seconds on heroes.|n|cffffcc00Level 3|r - \u003CAEer,DataA3\u003E damage per second for \u003CAEer,Dur3\u003E seconds. Lasts 3.5 seconds on heroes.|n|cffffcc00Level 4|r - \u003CAEer,DataA4\u003E damage per second for \u003CAEer,Dur4\u003E seconds. Lasts 4 seconds on heroes."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Barbed Net - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Barbed Net - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Barbed Net - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Barbed Net - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing and disarming a target enemy unit for \u003CAEer,Dur1\u003E seconds, and dealing \u003CAEer,DataA1\u003E damage per second. Lasts 2.5 seconds on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing and disarming a target enemy unit for \u003CAEer,Dur2\u003E seconds, and dealing \u003CAEer,DataA2\u003E damage per second. Lasts 3 seconds on heroes."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing and disarming a target enemy unit for \u003CAEer,Dur3\u003E seconds, and dealing \u003CAEer,DataA3\u003E damage per second. Lasts 3.5 seconds on heroes."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing and disarming a target enemy unit for \u003CAEer,Dur4\u003E seconds, and dealing \u003CAEer,DataA4\u003E damage per second. Lasts 4 seconds on heroes."
+    }
+  ]
+}

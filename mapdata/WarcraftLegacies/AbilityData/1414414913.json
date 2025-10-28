@@ -1,0 +1,278 @@
+{
+  "OldId": 1702316097,
+  "NewId": 1414414913,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(black empire)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Void Toxin"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Void Toxin - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 500, dealing instant damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage. |n|n|cffffcc00Level 1|r - 120 instant damage. |n|cffffcc00Level 2|r - 140 instant damage. |n|cffffcc00Level 3|r - 160 instant damage. |n|cffffcc00Level 4|r - 180 instant damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 500, dealing 120 damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 500, dealing 160 damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 500, dealing 200 damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 500, dealing 310 damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "OldId": 1769358657,
+  "NewId": 927215681,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895839557,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "E021"
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828730693,
+      "Type": 3,
+      "Value": "U026"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04B"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Metamorphosis - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Transforms Illidan into a powerful Demon with a ranged attack. |n|n|cffffcc00Level 1|r - 400 hit points, lasts 60 seconds. Got 180 seconds cooldown. |n|cffffcc00Level 2|r - 800 hit points, lasts 70 seconds. Got 160 seconds cooldown. |n|cffffcc00Level 3|r - 1200 hit points, lasts 80 seconds. Got 140 seconds cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms Meredith into a powerful Wraith with a ranged attack. Has 1000 bonus hit points, 60 bonus damage, 10 hp regeneration per second and 40 armor. Lasts for 15 seconds."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Meredith)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Wraith Form"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wraith Form"
+    }
+  ]
+}

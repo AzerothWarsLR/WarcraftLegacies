@@ -1,0 +1,138 @@
+{
+  "OldId": 1953787502,
+  "NewId": 892678254,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 50
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 135
+    },
+    {
+      "Id": 1919903605,
+      "Value": 35
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 60
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "ZBSI"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "h0AC,nnrg,nmpe"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "nnad"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": 1634559605,
+      "Value": 35
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari T3)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Betrayer\u0027s Citadel"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure."
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,third"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIllidariBlackTemple3.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BlackTempleIllidari4TierV1.01.mdl"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowBlackCitidel"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Betrayer\u0027s Citadel"
+    }
+  ]
+}

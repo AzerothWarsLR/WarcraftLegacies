@@ -1,0 +1,39 @@
+{
+  "OldId": 1835615554,
+  "NewId": 1160982594,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Flame Shield"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is being burned it will take damage over time."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Flame Shield (Ragnaros)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

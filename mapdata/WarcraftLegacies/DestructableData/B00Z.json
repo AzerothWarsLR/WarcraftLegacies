@@ -1,0 +1,44 @@
+{
+  "OldId": 909333593,
+  "NewId": 1513107522,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1936746594,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1718973282,
+      "Type": 3,
+      "Value": "(Vertical Stormwind)"
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1685352546,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1719170146,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\Cliff\\Cliff1.tga"
+    },
+    {
+      "Id": 1920493154,
+      "Type": 2,
+      "Value": -1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": 895964228,
+  "NewId": 1093742658,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1936746594,
+      "Type": 2,
+      "Value": 9001
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Greymane\u0027s Gate"
+    }
+  ]
+}

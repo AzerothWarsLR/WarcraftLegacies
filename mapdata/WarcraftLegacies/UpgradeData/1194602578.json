@@ -1,0 +1,165 @@
+{
+  "OldId": 1702062162,
+  "NewId": 1194602578,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "h00H"
+    },
+    {
+      "Id": 879715175,
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 150
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 35
+    },
+    {
+      "Id": 1819700327,
+      "Value": 2
+    },
+    {
+      "Id": 1835627623,
+      "Value": 25
+    },
+    {
+      "Id": 1835820903,
+      "Value": 150
+    },
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 829386087,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "ACca"
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "R042"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionSwarm.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Improved Carrion Swarm"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Improved Carrion Swarm"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to \u003CACca,DataA2\u003E and max damage to \u003CACca,DataB2\u003E, and reducing its cooldown to \u003CACca,Cool2\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionSwarm.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Superior Carrion Swarm"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Superior Carrion Swarm"
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to \u003CACca,DataA3\u003E and max damage to \u003CACca,DataB3\u003E, and reducing its cooldown to \u003CACca,Cool3\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Legion)"
+    }
+  ]
+}

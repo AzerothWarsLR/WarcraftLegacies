@@ -1,0 +1,31 @@
+{
+  "OldId": 1852138350,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A020"
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.45
+    },
+    {
+      "Id": 1647403381,
+      "Value": 32
+    },
+    {
+      "Id": 1836083317,
+      "Value": 925
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee attacker wielding a large axe. "
+    }
+  ]
+}

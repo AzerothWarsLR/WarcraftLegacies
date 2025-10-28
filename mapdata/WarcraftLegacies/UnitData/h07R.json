@@ -1,0 +1,93 @@
+{
+  "OldId": 2004121448,
+  "NewId": 1379348584,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 15
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 4
+    },
+    {
+      "Id": 1919903605,
+      "Value": 3
+    },
+    {
+      "Id": 1836083317,
+      "Value": 750
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "h07U,h07S"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (KulTiras Tower)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KultirasTowerV1.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.925
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic observation tower. Has no attack. "
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKultirasTowerScout.blp"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "OldId": 1936016193,
+  "NewId": 1380794970,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "ZBML"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Obsidian Eradicator)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes 35% of Magic and Spell damage dealt to friendly units within a radius of 500 to be redirected to this unit. The damage is affected by the resistances of both the damaged unit and this unit."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Conduction"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spell Conduction"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASAbsorb.blp"
+    }
+  ]
+}

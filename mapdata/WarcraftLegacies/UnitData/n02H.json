@@ -1,0 +1,48 @@
+{
+  "OldId": 1802659694,
+  "NewId": 1211248750,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 16
+    },
+    {
+      "Id": 1836083317,
+      "Value": 450
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Small Crystalline Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that can Slow opponents. Immune to spells. "
+    }
+  ]
+}

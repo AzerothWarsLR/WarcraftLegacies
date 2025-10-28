@@ -1,0 +1,35 @@
+{
+  "OldId": 1685222510,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACdv,ANt2"
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee amphibious unit with Devour and Spiked Shell. Can cast Crushing Wave. "
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ACc2,ANt2"
+    }
+  ]
+}

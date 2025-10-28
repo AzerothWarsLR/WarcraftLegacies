@@ -1,0 +1,32 @@
+{
+  "OldId": 1852143215,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 50
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and poison enemy units for \u003CApo2,Dur1\u003E seconds."
+    }
+  ]
+}

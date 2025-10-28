@@ -1,0 +1,131 @@
+{
+  "OldId": 1952937838,
+  "NewId": 1479880814,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0L2,Argl"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 1717920885,
+      "Value": 20
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 30
+    },
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 7000
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986359925,
+      "Value": 1
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "n0E7,n0E2"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,neutral"
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Dimensional fortress."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Tempest Keep"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Quelthalas Other)"
+    }
+  ]
+}

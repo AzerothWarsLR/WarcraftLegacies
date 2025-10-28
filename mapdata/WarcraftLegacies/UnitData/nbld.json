@@ -1,0 +1,44 @@
+{
+  "OldId": 1684824686,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Id": 1647403381,
+      "Value": 50
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1350
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Shadowmeld and Devotion Aura. Can cast Divine Shield. "
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "OldId": 829710958,
+  "NewId": 910307438,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 25
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 65
+    },
+    {
+      "Id": 1819240309,
+      "Value": 40
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1932616053,
+      "Value": 8
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "ofrt"
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": 1915838837,
+      "Value": 900
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0ZK"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Boulder Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fires massive boulders upon its foes."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Control Point Defender"
+    }
+  ]
+}

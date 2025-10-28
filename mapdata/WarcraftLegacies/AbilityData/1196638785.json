@@ -1,0 +1,174 @@
+{
+  "OldId": 1869378369,
+  "NewId": 1196638785,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bslo"
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829385811,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829385811,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846163027,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846163027,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 9999
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy"
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1886612833,
+      "Value": 10000
+    },
+    {
+      "Id": 1869114721,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BBEP"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RBEP"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(greater paralysing Fear)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enhanced Slow"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy unit\u0027s attack speed by \u003CABSG,DataB1,%\u003E% and movement speed by \u003CABSG,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CABSG,Dur1\u003E (\u003CABSG,HeroDur1\u003E for Heros) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy unit\u0027s attack speed by \u003CAslo,DataB2,%\u003E% and movement speed by \u003CAslo,DataA2,%\u003E%. |n|cffffcc00Lasts \u003CAslo,Dur2\u003E(\u003CAslo,HeroDur2\u003E for Heros) seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl"
+    }
+  ]
+}

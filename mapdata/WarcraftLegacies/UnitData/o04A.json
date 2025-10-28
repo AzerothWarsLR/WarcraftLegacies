@@ -1,0 +1,90 @@
+{
+  "OldId": 1868918895,
+  "NewId": 1093939311,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Arlm,Ahar,Arep"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "o04X,o03R,o040,o041,o042,o046,o045,o044,o043,o049,o047"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 7
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Creep, Zandalari, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.64
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Hard working, back breaking laborer."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gatherer"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TrollGathererAlternateV2.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceTrollWitchDoctor.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "IceTroll"
+    }
+  ]
+}

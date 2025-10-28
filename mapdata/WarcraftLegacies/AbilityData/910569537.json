@@ -1,0 +1,26 @@
+{
+  "OldId": 912869697,
+  "NewId": 910569537,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 1953392969,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 1684629577,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(\u002B9 Intelligence)"
+    }
+  ]
+}

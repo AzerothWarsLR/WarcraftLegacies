@@ -1,0 +1,170 @@
+{
+  "OldId": 1953523794,
+  "NewId": 1227960402,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1752066407,
+      "Value": 0
+    },
+    {
+      "Id": 846163303,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 879717735,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "h068"
+    },
+    {
+      "Id": 1835627623,
+      "Value": 30
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1835887719,
+      "Value": 0
+    },
+    {
+      "Id": 1819700327,
+      "Value": 3
+    },
+    {
+      "Id": 1835820903,
+      "Value": 25
+    },
+    {
+      "Id": 879125863,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 862940519,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfNegation.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfSanctuary.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Arcanist Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Arcanist Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Arcanist Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Arcanist Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Arcanists\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Dispel Magic."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Arcanists\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Flame Shield."
+    },
+    {
+      "Level": 3,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfSanctuary.blp"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Arcanist Grandmaster Training"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Arcanist Grandmaster Training"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Arcanists\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spell Steal."
+    }
+  ]
+}

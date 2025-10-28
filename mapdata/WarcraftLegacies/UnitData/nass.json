@@ -1,0 +1,39 @@
+{
+  "OldId": 1936941422,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": 1647403381,
+      "Value": 23
+    },
+    {
+      "Id": 1836083317,
+      "Value": 700
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium ranged unit that fires envenomed bolts and can Shadowmeld. "
+    }
+  ]
+}

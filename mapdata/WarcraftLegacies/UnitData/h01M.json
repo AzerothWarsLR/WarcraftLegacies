@@ -1,0 +1,204 @@
+{
+  "OldId": 1768844136,
+  "NewId": 1295069288,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A02O,ACsk,A05Z,A05Y,AInv"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1949458805,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 60
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1634034805,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 44
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1300
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 300
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 17
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1932616053,
+      "Value": 6
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "giant"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlamebeard.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge Demi)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Thane_BoneHorn.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Baelgun Flamebeard"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Baelgun Flamebeard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Second in command of Muradin\u0027s expedition force, Baelgun is a stout scout of bristling fire and wily leadership."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Muradin"
+    }
+  ]
+}

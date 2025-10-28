@@ -1,0 +1,258 @@
+{
+  "OldId": 1953195119,
+  "NewId": 1479553135,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A020,A0SS,A0UU,Aion,ACsk"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0EH"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 61
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 90
+    },
+    {
+      "Id": 1919903605,
+      "Value": 25
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2475
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 0
+    },
+    {
+      "Id": 1836084597,
+      "Value": 0
+    },
+    {
+      "Id": 828927349,
+      "Value": 0
+    },
+    {
+      "Id": 2050056565,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 15
+    },
+    {
+      "Id": 1915838837,
+      "Value": 160
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1836348021,
+      "Value": 4
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 250
+    },
+    {
+      "Id": 1937141109,
+      "Value": 250
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 250
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1836212597,
+      "Type": 3,
+      "Value": "Metal"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArchangel.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "None"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Arch Angel Mikael.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Archangel"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Archangel"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Strongest Warriors of the Light."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 255
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": 1650816833,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R00Q"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Crypt Fiend)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts \u003CAweb,Dur1\u003E seconds."
+    }
+  ]
+}

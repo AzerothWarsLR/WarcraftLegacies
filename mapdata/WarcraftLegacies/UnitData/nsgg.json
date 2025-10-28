@@ -1,0 +1,44 @@
+{
+  "OldId": 1734833006,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 50
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2400
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Titan Construct"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit. Immune to spells. "
+    }
+  ]
+}

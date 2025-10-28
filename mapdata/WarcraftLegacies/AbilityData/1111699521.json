@@ -1,0 +1,70 @@
+{
+  "OldId": 1635074881,
+  "NewId": 1111699521,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829776213,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846553429,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0AW"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Halls of the Dead)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Blight Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blight Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the hit point regeneration of friendly units within a range of \u003CA0CB,Area1\u003E by \u003CA0CB,DataB1\u003E."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBlightHorn.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    }
+  ]
+}

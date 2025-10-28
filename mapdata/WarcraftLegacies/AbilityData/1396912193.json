@@ -1,0 +1,62 @@
+{
+  "OldId": 1953318977,
+  "NewId": 1396912193,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": 1684562785,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829713736,
+      "Value": 96
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846490952,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1702127969,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "invulnerable,nonsapper,structure,vulnerable"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vassal Scroll Tele"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": 1684172097,
+  "NewId": 1329147969,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828534085,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(trol\u0027akar)"
+    }
+  ]
+}

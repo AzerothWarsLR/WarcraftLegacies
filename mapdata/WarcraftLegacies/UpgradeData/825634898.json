@@ -1,0 +1,107 @@
+{
+  "OldId": 1702062162,
+  "NewId": 825634898,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "A00I"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "h00H"
+    },
+    {
+      "Id": 879715175,
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 100
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651078247,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "h068"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMonsoon.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Improved Forked Lightning"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Improved Forked Lightning"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Kirin Tors\u0027 Forked Lightning by increasing its damage to \u003CA00I,DataA2\u003E."
+    }
+  ]
+}

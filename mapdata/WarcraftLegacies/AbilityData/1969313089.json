@@ -1,0 +1,112 @@
+{
+  "OldId": 1969313089,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B04E"
+    },
+    {
+      "Id": 1684562785,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829776213,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846553429,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,air,organic,vuln,invu,friend,neutral"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLight.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stormwind Cathedral DUMMY)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Invigoration"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - \u003CAUau,DataA1,%\u003E% movement, 0.80 HP regeneration bonus. |n|cffffcc00Level 2|r - \u003CAUau,DataA2,%\u003E% movement, 1.30 HP regeneration bonus. |n|cffffcc00Level 3|r - \u003CAUau,DataA3,%\u003E% movement, 1.80 HP regeneration bonus. |n|cffffcc00Level 4|r - \u003CAUau,DataA4,%\u003E% movement, 2.30 HP regeneration bonus."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Invigoration"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores nearby unit\u0027s health by 1% per second."
+    }
+  ]
+}

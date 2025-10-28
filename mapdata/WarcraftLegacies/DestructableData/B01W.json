@@ -1,0 +1,43 @@
+{
+  "OldId": 1935823948,
+  "NewId": 1462841410,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1918989410,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1702061922,
+      "Value": 0
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "buildings\\orc\\WatchTower\\WatchTower.mdl"
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Building - Watchtower"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684566882,
+      "Type": 3,
+      "Value": "BuildingShadowSmall"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "OldId": 2004116328,
+  "NewId": 1229074536,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 25
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 65
+    },
+    {
+      "Id": 1647468917,
+      "Value": 91
+    },
+    {
+      "Id": 1819240309,
+      "Value": 40
+    },
+    {
+      "Id": 1919903605,
+      "Value": 30
+    },
+    {
+      "Id": 1836083317,
+      "Value": 900
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1932616053,
+      "Value": 8
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,ground,nonancient,notself,structure,tree,wall"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,tree,wall,ward"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "h0BJ"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,R03A,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1400
+    },
+    {
+      "Id": 828927349,
+      "Value": 1
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet Tower)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\AlteracTower.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy defensive structure, effective against clusters of ground units. "
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNAlteracCannonTower.blp"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Bombard Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Bombard Tower"
+    }
+  ]
+}

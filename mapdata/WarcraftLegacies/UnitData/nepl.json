@@ -1,0 +1,47 @@
+{
+  "OldId": 1819305326,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACce,Aenr,Aap3"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 8
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 61
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2000
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit that diseases opponents. Can cast Entangling Roots. "
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "OldId": 1853121601,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829322308,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829322308,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846099524,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846099524,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,ward,invu,vuln,tree"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue/Brown - Wisps)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Destroys the caster, dispelling all magical buffs and draining \u003CAdtn,DataA2\u003E mana from each unit in an area around the caster. |n|cffffcc00Deals \u003CAdtn,DataB2\u003E damage to summoned units.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Destroys the caster, dispelling all magical buffs and draining \u003CAdtn,DataA1\u003E mana from each unit in an area around the caster. |n|cffffcc00Deals \u003CAdtn,DataB1\u003E damage to summoned units.|r"
+    }
+  ]
+}

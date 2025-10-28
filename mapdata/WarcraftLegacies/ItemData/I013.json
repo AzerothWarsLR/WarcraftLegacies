@@ -1,0 +1,73 @@
+{
+  "OldId": 1936092777,
+  "NewId": 858861641,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "A0PM"
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": 1819240297,
+      "Value": 80
+    },
+    {
+      "Id": 1702065513,
+      "Value": 3
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1953723241,
+      "Value": 720
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Summons an Acolyte."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Summon Acolyte"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Summon Workers"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Summon acolytes."
+    }
+  ]
+}

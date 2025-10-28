@@ -1,0 +1,393 @@
+{
+  "OldId": 1936083009,
+  "NewId": 1465135169,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06L"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06L"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06L"
+    },
+    {
+      "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": -30
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": -50
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846423624,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846423624,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846423624,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": -10
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": -15
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896755272,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X00F"
+    },
+    {
+      "Level": 2,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X00F"
+    },
+    {
+      "Level": 3,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X00F"
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,ground,neutral,self"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,ground,neutral,self"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,ground,neutral,self"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Kargath)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Field of Blood"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Field of Blood - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HeroBloodElfBlood.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|nHeals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|nHeals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|cffffcc00|n|rHeals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds."
+    }
+  ]
+}

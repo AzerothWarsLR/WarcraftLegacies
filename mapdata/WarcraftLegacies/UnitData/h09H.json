@@ -1,0 +1,284 @@
+{
+  "OldId": 1953787240,
+  "NewId": 1211707496,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A13I,A0OA,A0JX,A0YG,A0MN"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": 1684824693,
+      "Value": 12
+    },
+    {
+      "Id": 1918985077,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1717920885,
+      "Value": 1
+    },
+    {
+      "Id": 1647403381,
+      "Value": 66
+    },
+    {
+      "Id": 1647468917,
+      "Value": 35
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 42
+    },
+    {
+      "Id": 1919903605,
+      "Value": 50
+    },
+    {
+      "Id": 1836083317,
+      "Value": 820
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2050056565,
+      "Value": 2600
+    },
+    {
+      "Id": 2050122101,
+      "Value": 900
+    },
+    {
+      "Id": 1769107573,
+      "Value": 8
+    },
+    {
+      "Id": 1915838837,
+      "Value": 1000
+    },
+    {
+      "Id": 1915904373,
+      "Value": 400
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o03N"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1932681589,
+      "Value": 5
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1836084597,
+      "Value": 2500
+    },
+    {
+      "Id": 1768975733,
+      "Value": 500
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1714512245,
+      "Value": 50
+    },
+    {
+      "Id": 1748066677,
+      "Value": 100
+    },
+    {
+      "Id": 1899061621,
+      "Value": 150
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 828927349,
+      "Value": 1
+    },
+    {
+      "Id": 1937141109,
+      "Value": 190
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Aroc"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblin Assault Tank \u0027Gazlowe\u00272.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinSeigeWalker_Final.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Walker"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Walker"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long range siege vehicle, adept at shooting down air units."
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\TripleBullet.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "IronGolem"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    }
+  ]
+}

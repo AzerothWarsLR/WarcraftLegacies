@@ -1,0 +1,32 @@
+{
+  "OldId": 1886614337,
+  "NewId": 1481257025,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845442899,
+      "Type": 3,
+      "Value": "h08Y"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828665683,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Goblin Shredder"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Gunner Pilot"
+    }
+  ]
+}

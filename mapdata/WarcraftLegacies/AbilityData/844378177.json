@@ -1,0 +1,59 @@
+{
+  "OldId": 1919378753,
+  "NewId": 844378177,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828794180,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895903044,
+      "Type": 2,
+      "Value": 0.55
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "commoner"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellResistance.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(spellbreakers - Dark Minion)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spell Resistance"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Resistance"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 45%."
+    }
+  ]
+}

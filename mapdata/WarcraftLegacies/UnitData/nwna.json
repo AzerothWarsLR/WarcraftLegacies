@@ -1,0 +1,30 @@
+{
+  "OldId": 1634629486,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACbh,ACrn"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1400
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Bash, War Stomp, and Reincarnation. "
+    }
+  ]
+}

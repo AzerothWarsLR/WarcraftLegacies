@@ -1,0 +1,23 @@
+{
+  "OldId": 2020886849,
+  "NewId": 1261982803,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1702127969,
+      "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Tess damage"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tess Greymane - Vanish Dummy)"
+    }
+  ]
+}

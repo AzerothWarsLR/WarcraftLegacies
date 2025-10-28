@@ -1,0 +1,68 @@
+{
+  "OldId": 2003067246,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,R00N,Rhme,Rhar"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 980
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LI,A0LS,Afrc,A07C"
+    },
+    {
+      "Id": 1647468917,
+      "Value": 30
+    },
+    {
+      "Id": 1647403381,
+      "Value": 45
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Tiny ranged flying unit that deals cold damage and slows enemy units. "
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    }
+  ]
+}

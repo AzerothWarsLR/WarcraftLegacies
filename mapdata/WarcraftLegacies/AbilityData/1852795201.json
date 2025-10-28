@@ -1,0 +1,24 @@
+{
+  "OldId": 1852795201,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846622313,
+      "Value": 0
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Orc - Teal, Pink, Grey)"
+    }
+  ]
+}

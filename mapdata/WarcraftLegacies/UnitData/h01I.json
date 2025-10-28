@@ -1,0 +1,147 @@
+{
+  "OldId": 1919906664,
+  "NewId": 1227960424,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A139,A0D1,A0D2,Aihn,A0VE"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A139"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 28
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1836083317,
+      "Value": 340
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 11
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 325
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,R03M,R00J,R01I,Rhme,Rhar,Rhpm"
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Flame Shield,- Magic Missile|n- Dispel Magic|n- Flame Shield|n- Spell Steal"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Arcanist"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Arcanist"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Well-versed sorceress in the arcane arts."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HeroArcanist.mdl"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master, Grandmaster"
+    }
+  ]
+}

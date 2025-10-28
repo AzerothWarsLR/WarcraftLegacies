@@ -1,0 +1,49 @@
+{
+  "OldId": 2053261400,
+  "NewId": 1311780952,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Borrowed Time (Unsummon)"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl"
+    },
+    {
+      "Id": 1936090470,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818649958,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

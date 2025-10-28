@@ -1,0 +1,151 @@
+{
+  "OldId": 1919906664,
+  "NewId": 1195585640,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0X0,A12Q,A0SL,Aihn,A12E"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 16
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1836083317,
+      "Value": 150
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 400
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 11
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 325
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,R09G,Rhme,Rhar,Rhpm"
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": 1836084597,
+      "Value": 400
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Cremate,- Cremate|n- Crimson Renewal,- Cremate|n- Crimson Renewal|n- Flame Shield"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Flamekeeper"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Flamekeeper"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Well-versed wizard in the fire arts."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\WatcherBloodElfV1.02.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNBloodhuntress.blp"
+    }
+  ]
+}

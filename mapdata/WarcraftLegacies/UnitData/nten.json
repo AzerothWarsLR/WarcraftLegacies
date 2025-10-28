@@ -1,0 +1,23 @@
+{
+  "OldId": 1852142702,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

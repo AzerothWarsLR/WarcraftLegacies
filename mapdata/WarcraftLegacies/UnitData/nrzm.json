@@ -1,0 +1,33 @@
+{
+  "OldId": 1836741230,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 31
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 700
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit that can cast Healing Ward and Feral Spirit. "
+    }
+  ]
+}

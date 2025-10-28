@@ -1,0 +1,173 @@
+{
+  "OldId": 1818321509,
+  "NewId": 942682213,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 12
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 60
+    },
+    {
+      "Id": 1714577781,
+      "Value": 0
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 25
+    },
+    {
+      "Id": 1919903605,
+      "Value": 130
+    },
+    {
+      "Id": 1748132213,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 450
+    },
+    {
+      "Id": 1899127157,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 1050
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "h03S"
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 846361461,
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "debris,ground,organic,tree,wall"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,wall,ward"
+    },
+    {
+      "Id": 1731354997,
+      "Type": 3,
+      "Value": "debris,item,structure,wall,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R01R,Rhme,Rhar"
+    },
+    {
+      "Id": 1918985077,
+      "Value": 1
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 3.8
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBallista.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BEGlaiveThrower_Fixed.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\BEGlaiveMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ballista"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1650684789,
+      "Value": 0
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ballista"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long-range percision siege weaponry."
+    }
+  ]
+}

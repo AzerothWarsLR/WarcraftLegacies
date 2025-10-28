@@ -1,0 +1,20 @@
+{
+  "OldId": 1886798657,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829841749,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Neutral Hostile. Teal?)"
+    }
+  ]
+}

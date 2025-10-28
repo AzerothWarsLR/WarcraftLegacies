@@ -1,0 +1,43 @@
+{
+  "OldId": 1651733604,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "A0AD,AImv"
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1819240297,
+      "Value": 50
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1818588009,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nGrants the ability to portal to your home town and increases the Hero\u0027s mana by \u003CAImv,DataA1\u003E while equipped.|n|cffffcc00Lore|r|n|cffffdeadDrek\u0027Thar\u0027s old spellbook is filled with pages stolen from Kirin Tor mages that were slain in battle.|r"
+    }
+  ]
+}

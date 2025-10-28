@@ -1,0 +1,63 @@
+{
+  "OldId": 1919381614,
+  "NewId": 1160786030,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0RB,A0SR,A0KY,A01Y"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 30
+    },
+    {
+      "Id": 1836083317,
+      "Value": 5000
+    },
+    {
+      "Id": 1836348021,
+      "Value": 30
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1919447925,
+      "Value": 0
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ArcaneTower"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dimensional Generator"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    }
+  ]
+}

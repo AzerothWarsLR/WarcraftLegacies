@@ -1,0 +1,409 @@
+{
+  "OldId": 1634750017,
+  "NewId": 892358742,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNpa,BNpm"
+    },
+    {
+      "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879325008,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 895578190,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,organic,neutral,nonhero"
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 4,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 895578190,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 895578190,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879325008,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879325008,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,organic,neutral,nonhero"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,organic,neutral,nonhero"
+    },
+    {
+      "Level": 3,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNpa,BNpm"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNpa,BNpm"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 60
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Hero)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasite"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA2\u003E damage per second for \u003CANpa,Dur2\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a zombie will spawn from its corpse. \u003CVP05,Cool2\u003E second cooldown."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasite"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasite"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA1\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a zombie will rise from its corpse. \u003CVP05,Cool1\u003E second cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA3\u003E damage per second for \u003CANpa,Dur3\u003E seconds. If the afflicted unit dies while under the effect of Parasite, 2 zombies will spawn from its corpse. \u003CVP05,Cool3\u003E second cooldown."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA4\u003E damage per second for \u003CANpa,Dur4\u003E seconds. If the afflicted unit dies while under the effect of Parasite, 2 zombie will spawn from its corpse. \u003CVP05,Cool4\u003E second cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNParasiteOn.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Parasite - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals damage whilst inside. If the afflicted unit dies while under the effect of Parasite, zombies will rise from its corpse. |n|n|cffffcc00Level 1|r - Deals \u003CVP05,DataA1\u003E per second for \u003CVP05,Dur1\u003E seconds, raises 1 zombie. \u003CVP05,Cool1\u003E second cooldown. |n|cffffcc00Level 2|r - Deals \u003CVP05,DataA2\u003E per second for \u003CVP05,Dur2\u003E seconds, raises 1 zombie. \u003CVP05,Cool2\u003E second cooldown. |n|cffffcc00Level 3|r - Deals \u003CVP05,DataA3\u003E per second for \u003CVP05,Dur3\u003E seconds, raises 2 zombies. \u003CVP05,Cool3\u003E second cooldown. |n|cffffcc00Level 4|r - Deals \u003CVP05,DataA4\u003E per second for \u003CVP05,Dur4\u003E seconds, raises 2 zombies. \u003CVP05,Cool4\u003E second cooldown."
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

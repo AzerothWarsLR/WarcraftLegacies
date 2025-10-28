@@ -1,0 +1,29 @@
+{
+  "OldId": 1918988098,
+  "NewId": 960049218,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Moon Beam Aura"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "Increases mana regeneration."
+    }
+  ]
+}

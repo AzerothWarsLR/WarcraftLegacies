@@ -1,0 +1,39 @@
+{
+  "OldId": 1752384834,
+  "NewId": 1345531970,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDaggerOfEscape.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Cruel Barb"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit was hit by Cruel Barb; it will take damage over time and move more slowly."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HumanBloodPriest.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "OldId": 1970235496,
+  "NewId": 960573544,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 20
+    },
+    {
+      "Id": 1634559605,
+      "Value": 8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 8
+    },
+    {
+      "Id": 1919903605,
+      "Value": 5
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 30
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 950
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "o06P,o02J,n06L"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasFarm.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gilneas Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GilneasManor.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 5
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Manor"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

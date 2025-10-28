@@ -1,0 +1,491 @@
+{
+  "OldId": 1935962945,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828466244,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845243460,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 5,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 6,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 7,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 8,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 9,
+      "Pointer": 3,
+      "Id": 862020676,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 325
+    },
+    {
+      "Level": 5,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 6,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 375
+    },
+    {
+      "Level": 7,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 8,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 425
+    },
+    {
+      "Level": 9,
+      "Pointer": 4,
+      "Id": 878797892,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 5,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 6,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 7,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 8,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 9,
+      "Pointer": 5,
+      "Id": 829645907,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 9,
+      "Pointer": 6,
+      "Id": 913531987,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 5,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 6,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 7,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 8,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 9,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 5,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 6,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 7,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 8,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 9,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 5,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 6,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 7,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 8,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 9,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Goblin Sapper level 1-9)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 8|r]"
+    },
+    {
+      "Level": 9,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 9|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 250 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 275 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 300 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 325 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 350 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 375 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 7,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 400 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 8,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 425 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 9,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 450 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

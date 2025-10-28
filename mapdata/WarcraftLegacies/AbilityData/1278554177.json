@@ -1,0 +1,59 @@
+{
+  "OldId": 1936016193,
+  "NewId": 1278554177,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Persistent Soul"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Persistent Soul"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this unit dies, it reanimates the highest level nearby corpse for 40 seconds."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge - Revenant)"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASSoulBinding.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this unit dies, it reanimates the two highest level nearby corpses for 40 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Persistent Soul - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    }
+  ]
+}

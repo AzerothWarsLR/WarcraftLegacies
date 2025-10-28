@@ -1,0 +1,81 @@
+{
+  "OldId": 1717727058,
+  "NewId": 943272018,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": 1651271527,
+      "Value": 150
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "o030"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 35
+    },
+    {
+      "Id": 1835627623,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSkeletalOrcGrunt.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Fel Infused Skeleton"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Fel Infused Skeleton"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds."
+    }
+  ]
+}

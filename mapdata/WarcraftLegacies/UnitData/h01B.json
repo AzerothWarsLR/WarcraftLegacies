@@ -1,0 +1,124 @@
+{
+  "OldId": 1768844136,
+  "NewId": 1110519912,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LQ,S00T,A020,A0IQ,Aihn"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 25
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1836083317,
+      "Value": 825
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 8
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "h06F"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R01N,Rhme,Rhar,Rhan,Rguv"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBanditLord.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KnightWC1.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Outrider"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Outrider"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Melee horseman of the Southern lands. "
+    }
+  ]
+}

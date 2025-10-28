@@ -1,0 +1,119 @@
+{
+  "OldId": 2020624449,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 300
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h04D"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h04Y"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Anasterian-Kael\u0027thas)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ashes of Al\u0027ar"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Ashes of Al\u0027ar - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons a powerful Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. Has Spell Immunity, Resistant Skin and Sun Ray. When a Phoenix dies, it creates an egg that will hatch into a Phoenix.|n|nEach level adds 250 health, 10 damage, and shortens the cooldown by 30 seconds.|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ashes of Al\u0027ar - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ashes of Al\u0027ar - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ashes of Al\u0027ar - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons the powerful Phoenix Al\u0027ar. The Phoenix burns with such intensity that it damages itself and nearby enemy units. |nHas Spell Immunity, Sun Ray, and Resistant Skin. When he dies, he creates an egg that will hatch him reborn.|n|n|cffffcc00180 second cooldown.|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons the powerful Phoenix Al\u0027ar. The Phoenix burns with such intensity that it damages itself and nearby enemy units. |nHas Spell Immunity, Sun Ray, and Resistant Skin. When he dies, he creates an egg that will hatch him reborn.|n|n|cffffcc00150 second cooldown.|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons the powerful Phoenix Al\u0027ar. The Phoenix burns with such intensity that it damages itself and nearby enemy units. |nHas Spell Immunity, Sun Ray, and Resistant Skin. When he dies, he creates an egg that will hatch him reborn.|n|n|cffffcc00120 second cooldown.|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

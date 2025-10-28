@@ -1,0 +1,41 @@
+{
+  "OldId": 1735357038,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A02D,ACct,Ashm"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A02D"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": 1647403381,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 700
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit with Shadowmeld. "
+    }
+  ]
+}

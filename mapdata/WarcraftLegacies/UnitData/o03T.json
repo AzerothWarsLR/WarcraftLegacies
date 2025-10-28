@@ -1,0 +1,143 @@
+{
+  "OldId": 1651668079,
+  "NewId": 1412640879,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0CF,Aspi,Abun,Abtl,Astd,Arbr"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 20
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 1647403381,
+      "Value": 32
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 5
+    },
+    {
+      "Id": 1836083317,
+      "Value": 900
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 30
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rosp,Rorb,Rgfo"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o03L"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Creep Farm)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 10 food, which increases the maximum number of units that can be trained. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BunkerGoblinV1.01.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Bunker"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinBurrow.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Bunker"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "OldId": 1735289699,
+  "NewId": 825307209,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "A0BF,A0A1"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1634956649,
+      "Value": 1
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNeverMeltingCrown.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Increases Strength, Agility and Intelligence and can cast Crown Heal."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Crown of the Triumvirate"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength, Agility and Intelligence by \u003CA0A1,DataA1\u003E. Can be used to cast Greater Crown Heal, healing all nearby friendly units by \u003CA0BF,DataB1\u003E, restoring their mana by \u003CA0BF,DataC1\u003E, and increasing their armor by \u003CA0BF,DataA1\u003E for \u003CA0BF,Dur1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadForged from the 3 crystals of the Triumvirate"
+    }
+  ]
+}

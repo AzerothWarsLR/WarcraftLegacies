@@ -1,0 +1,37 @@
+{
+  "OldId": 1702391912,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1836083317,
+      "Value": 150
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhar"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "Quel\u0027Thalas-Anasterian)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Al\u0027ar\u0027s vulnerable egg."
+    }
+  ]
+}

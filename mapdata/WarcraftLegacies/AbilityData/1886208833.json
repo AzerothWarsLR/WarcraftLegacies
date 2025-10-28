@@ -1,0 +1,61 @@
+{
+  "OldId": 1886208833,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829253973,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879585621,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Silithis Collossus)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slams the ground, sending a wave of force out in a straight line, dealing 50 damage and hurling enemy ground units into the air in their wake, stunning them for 2 (0.5 on heroes) seconds."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "OldId": 1769366853,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LW,A07D,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 35
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 15
+    },
+    {
+      "Id": 1714512245,
+      "Value": 35
+    },
+    {
+      "Id": 1748066677,
+      "Value": 85
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "ZBL6,A0YW,AEvi,ZBPA,Aamk"
+    },
+    {
+      "Id": 828663925,
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": 1836083317,
+      "Value": 600
+    },
+    {
+      "Id": 1953393013,
+      "Value": 18
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1769107573,
+      "Value": 20
+    },
+    {
+      "Id": 1899061621,
+      "Value": 135
+    },
+    {
+      "Id": 828666229,
+      "Type": 2,
+      "Value": 0.23
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 260
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "enemies,ground,vulnerable"
+    },
+    {
+      "Id": 1920234357,
+      "Value": 24
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1600
+    },
+    {
+      "Id": 1915904373,
+      "Value": 0
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1681023349,
+      "Value": 0
+    },
+    {
+      "Id": 1932681589,
+      "Value": 0
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Illidari - Hybrid - Illidan)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Illidan Stormrage"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Deadly Hero, adept at wading into the fray and cutting down key targets. "
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNillidanhd.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Illidan"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Illidan"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Illidan"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

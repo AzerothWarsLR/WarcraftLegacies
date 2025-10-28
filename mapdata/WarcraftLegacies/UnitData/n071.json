@@ -1,0 +1,161 @@
+{
+  "OldId": 1835429486,
+  "NewId": 825700462,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0YA,A0RU"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 35
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1634559605,
+      "Value": 10
+    },
+    {
+      "Id": 1819240309,
+      "Value": 12
+    },
+    {
+      "Id": 1919903605,
+      "Value": 12
+    },
+    {
+      "Id": 1836083317,
+      "Value": 975
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunTower.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1819501173,
+      "Type": 3,
+      "Value": "UndeadBuildingConstructionLoop"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun Pillars)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunZigguratTower.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Pillar of C\u0027thun"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Pillar of C\u0027thun"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

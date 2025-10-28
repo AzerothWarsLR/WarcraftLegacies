@@ -1,0 +1,47 @@
+{
+  "OldId": 1734636609,
+  "NewId": 1412510017,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground"
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845636692,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828859476,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862413908,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(toxic cloud 1)"
+    }
+  ]
+}

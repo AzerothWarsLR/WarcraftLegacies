@@ -1,0 +1,49 @@
+{
+  "OldId": 1936016193,
+  "NewId": 1448554561,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "o02A"
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall dummy)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0NN,DataA1,%\u003E% percent chance to avoid an attack."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}

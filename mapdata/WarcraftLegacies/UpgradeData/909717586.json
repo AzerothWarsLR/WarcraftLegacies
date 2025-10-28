@@ -1,0 +1,90 @@
+{
+  "OldId": 1701079122,
+  "NewId": 909717586,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": 1752066407,
+      "Value": 0
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651078247,
+      "Value": 20
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNachievement_raid_argusraid.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Rematerialization"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Rematerialization"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Grants your non-Resistant units a 20% chance to rematerialize in Argus upon death."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    }
+  ]
+}

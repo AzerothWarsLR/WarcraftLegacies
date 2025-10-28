@@ -1,0 +1,39 @@
+{
+  "OldId": 1685550958,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 850
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit with Critical Strike. Can cast Roar. "
+    }
+  ]
+}

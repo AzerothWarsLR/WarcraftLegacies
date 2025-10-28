@@ -1,0 +1,17 @@
+{
+  "OldId": 1987210606,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 38
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee amphibious unit with Command Aura. "
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "OldId": 1835615041,
+  "NewId": 1446326337,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08B,BEia"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829253957,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846031173,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862808389,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Fel Horde - Demon Gate)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Toggle Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to allow this Demon Gate to spawn Demons when it reaches maximum mana."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 0
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Deactivate Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Deactivate to prevent this Demon Gate from spawning Demons when it reaches maximum mana."
+    }
+  ]
+}

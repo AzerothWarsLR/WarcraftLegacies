@@ -1,0 +1,199 @@
+{
+  "OldId": 1634034773,
+  "NewId": 1093677141,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A10S,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 18
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 10
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A09Y,A07R,ST52,AUdc,Aamk"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1953393013,
+      "Value": 19
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1769107573,
+      "Value": 15
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": 846295669,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 829518453,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1668379253,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R01H"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1920234357,
+      "Value": 27
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBaronRivendare.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Scourge Commander"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 222
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Rivendare.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 222
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scourge Commander"
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Baron Rivendare"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 222
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Scourge Commander"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Baron Rivendare"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at summoning and supporting troops."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

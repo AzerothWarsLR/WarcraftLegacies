@@ -1,0 +1,153 @@
+{
+  "OldId": 1801545281,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829120870,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829120870,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879452518,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879452518,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896229734,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896229734,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845898086,
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862675302,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Destroyer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Orb of Annihilation - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Orb of Annihilation - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CAfak,DataA1\u003E bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CAfak,DataA2\u003E bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

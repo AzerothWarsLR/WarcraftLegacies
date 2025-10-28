@@ -1,0 +1,96 @@
+{
+  "OldId": 1702062162,
+  "NewId": 875573330,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "A02Y"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 250
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 846163303,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1651078247,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelvenWarrior.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Sunfury Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Sunfury Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Replace Swordsman with Sunfury Warrior, which have Combat Experience, Feedback, Magic Resistance and improved stats."
+    }
+  ]
+}

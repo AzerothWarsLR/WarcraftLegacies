@@ -1,0 +1,117 @@
+{
+  "OldId": 2004121448,
+  "NewId": 843264104,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Adts"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 15
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2000
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rosp,Renb,R064,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "n00A,n04P,ninc"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Windrunner Spire"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ElvenTowerV1.01.mdl"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,third"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
+    }
+  ]
+}

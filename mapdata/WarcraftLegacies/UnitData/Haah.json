@@ -1,0 +1,272 @@
+{
+  "OldId": 1751212360,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0GK,ACbn,AInv"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1768382837,
+      "Value": 14
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.49
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1935827829,
+      "Type": 2,
+      "Value": 0.51
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1836344437,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 10
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0BS,A0BR,A0BQ,A0UK,Aamk"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 300
+    },
+    {
+      "Id": 1953393013,
+      "Value": 39
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 4.3
+    },
+    {
+      "Id": 2050056565,
+      "Value": 550
+    },
+    {
+      "Id": 1769107317,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 20
+    },
+    {
+      "Id": 1915838837,
+      "Value": 700
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04K"
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 200
+    },
+    {
+      "Id": 1937141109,
+      "Value": 250
+    },
+    {
+      "Id": 1920234357,
+      "Value": 24
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 1.95
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 200
+    },
+    {
+      "Id": 829518453,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 846295669,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1735553909,
+      "Value": 0
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1668379253,
+      "Value": 0
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNmedivhhd.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive The Fallen Guardian"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Medivh\\Medivh.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\SpiritDragonMissile(Azure).mdl"
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Fallen Guardian"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Medivh"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive The Fallen Guardian"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Medivh"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at dealing magic damage through attacks."
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    }
+  ]
+}

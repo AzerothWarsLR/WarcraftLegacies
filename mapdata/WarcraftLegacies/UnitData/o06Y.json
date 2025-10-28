@@ -1,0 +1,185 @@
+{
+  "OldId": 1634493007,
+  "NewId": 1496723567,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACce,A0EH"
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.65
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "AUan"
+    },
+    {
+      "Id": 1936681077,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1150
+    },
+    {
+      "Id": 1634889845,
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 16
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": 829518453,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 846295669,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1937141109,
+      "Value": 240
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalMediumChop"
+    },
+    {
+      "Id": 1768975733,
+      "Value": 450
+    },
+    {
+      "Id": 1836084597,
+      "Value": 450
+    },
+    {
+      "Id": 1647403381,
+      "Value": 35
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Witch Doctor"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep-Zul\u0027Farrak)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\DarkTroll\\DarkTroll.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1935763573,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ukorz"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Ukorz Sandscalp"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Witch Doctor"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ForestTroll"
+    }
+  ]
+}

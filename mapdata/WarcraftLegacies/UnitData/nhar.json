@@ -1,0 +1,25 @@
+{
+  "OldId": 1918986350,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 16
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 400
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light flying ranged unit that hurls pin-feathers. "
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "OldId": 846029122,
+  "NewId": 1094135874,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Holy Protection"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Holy Protection; damage spells must destroy the shell to affect the unit."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Holy Protection"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

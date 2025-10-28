@@ -1,0 +1,75 @@
+{
+  "OldId": 1919378753,
+  "NewId": 1331245121,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828794180,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895903044,
+      "Type": 2,
+      "Value": 0.85
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 912680260,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,invulnerable,neutral,structure,vulnerable,ward"
+    },
+    {
+      "Level": 1,
+      "Pointer": 7,
+      "Id": 929457476,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASRondache2.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lordaeron-Veteran Footman)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Perfect Defend"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Perfect Defend"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit has a 30% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. Magic and Spell damage is reduced by 15%."
+    }
+  ]
+}

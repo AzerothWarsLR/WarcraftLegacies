@@ -1,0 +1,213 @@
+{
+  "OldId": 1920231022,
+  "NewId": 926429294,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aslo"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "Aslo"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1953522549,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": 1836344437,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1717920885,
+      "Value": 1
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 41
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.17
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 25
+    },
+    {
+      "Id": 1836083317,
+      "Value": 700
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 210
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 2050056565,
+      "Value": 800
+    },
+    {
+      "Id": 1915838837,
+      "Value": 450
+    },
+    {
+      "Id": 1768975733,
+      "Value": 30
+    },
+    {
+      "Id": 1836084597,
+      "Value": 30
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o03J"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSoldier.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TwilightCultist.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\ArcaneMissile_Fixed.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Phase Grenadier"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Phase Grenadier"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Desperate Cultist Mage."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Draenei"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1735156597,
+      "Value": 255
+    },
+    {
+      "Id": 1651270517,
+      "Value": 255
+    }
+  ]
+}

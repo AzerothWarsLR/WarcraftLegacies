@@ -1,0 +1,56 @@
+{
+  "OldId": 1936016193,
+  "NewId": 1633895756,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\commandButtons\\PASBTNSlaughter.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(DUMMY)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Capital"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Capital"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This building is one of your Capitals. When your team controls no Capitals and fewer than 6 Control Points, you lose the game."
+    }
+  ]
+}

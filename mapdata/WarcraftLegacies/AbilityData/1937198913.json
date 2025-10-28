@@ -1,0 +1,104 @@
+{
+  "OldId": 1937198913,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 325
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829649495,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "UNUSED"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAOws,DataA1\u003E damage, \u003CAOws,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CAOws,DataA2\u003E damage, \u003CAOws,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CAOws,DataA3\u003E damage, \u003CAOws,Dur3\u003E second stun.|n|cffffcc00Level 4|r - \u003CAOws,DataA4\u003E damage, \u003CAOws,Dur4\u003E second stun."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "War S|cffffcc00t|romp - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slams the ground, dealing \u003CAOws,DataA4\u003E damage to nearby enemy land units and stunning them for \u003CAOws,Dur4\u003E seconds."
+    }
+  ]
+}

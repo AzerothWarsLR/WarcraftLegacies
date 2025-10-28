@@ -1,0 +1,29 @@
+{
+  "OldId": 1684297048,
+  "NewId": 909127768,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Moving Earth (Effect)"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\Earth NovaTarget.mdx"
+    }
+  ]
+}

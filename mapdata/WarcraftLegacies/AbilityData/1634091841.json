@@ -1,0 +1,37 @@
+{
+  "OldId": 1634091841,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845243989,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(neutral, Elementalist)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds 6 armor and slows melee units that attack it for \u003CACfa,Dur1\u003E seconds. |nLasts \u003CACfa,DataA1\u003E seconds."
+    }
+  ]
+}

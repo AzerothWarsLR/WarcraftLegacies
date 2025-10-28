@@ -1,0 +1,111 @@
+{
+  "OldId": 1953787502,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 50
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 38
+    },
+    {
+      "Id": 1919903605,
+      "Value": 35
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 60
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "ZBSI"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "h0AC,nnrg,nmpe"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "n04T"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari T1)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Betrayer\u0027s Reservoir"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure. "
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIllidariBlackTemple.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BlackTempleIllidari4TierV1.01.mdl"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowSacrificialPit"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Betrayer\u0027s Reservoir"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    }
+  ]
+}

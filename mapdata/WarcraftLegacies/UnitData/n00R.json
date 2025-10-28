@@ -1,0 +1,43 @@
+{
+  "OldId": 1734963310,
+  "NewId": 1378889838,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Avul"
+    },
+    {
+      "Id": 1869571701,
+      "Value": 10
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Nazbrock the Crazy Dwarf"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\human\\HeroMountainKing\\HeroMountainKing.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Patrons reward)"
+    }
+  ]
+}

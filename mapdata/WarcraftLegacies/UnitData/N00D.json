@@ -1,0 +1,199 @@
+{
+  "OldId": 1919510094,
+  "NewId": 1144008782,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A01Y,ACrk,Apig,Amim,A0I2,A04S,A0HW"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": 1768382837,
+      "Value": 45
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.45
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 1680957813,
+      "Value": 10
+    },
+    {
+      "Id": 1647403381,
+      "Value": 40
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "ANav"
+    },
+    {
+      "Id": 1936681077,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 9000
+    },
+    {
+      "Id": 1953393013,
+      "Value": 32
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1768975733,
+      "Value": 5000
+    },
+    {
+      "Id": 1836084597,
+      "Value": 5000
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634889845,
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "demon"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 1200
+    },
+    {
+      "Id": 1915904373,
+      "Value": 1200
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1932616053,
+      "Value": 10
+    },
+    {
+      "Id": 1937141109,
+      "Value": 0
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,debris,ground,notself,structure"
+    },
+    {
+      "Id": 1920234357,
+      "Value": 22
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 828601461,
+      "Value": 6
+    },
+    {
+      "Id": 1868788853,
+      "Value": 5
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Primary Firelord"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Ragnaros"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Ragnaros.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at disrupting spells and dealing large amounts of fire damage.  Can learn Soul Burn, Summon Lava Spawn, Incinerate and Volcano."
+    }
+  ]
+}

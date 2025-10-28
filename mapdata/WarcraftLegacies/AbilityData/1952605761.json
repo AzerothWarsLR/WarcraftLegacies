@@ -1,0 +1,469 @@
+{
+  "OldId": 1952605761,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 5,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 6,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 7,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 8,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 9,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 5,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 6,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 7,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 8,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 9,
+      "Pointer": 2,
+      "Id": 845898342,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 5,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 6,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 7,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 8,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 9,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 5,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 6,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 7,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 8,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 9,
+      "Pointer": 4,
+      "Id": 879452774,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 5,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 6,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 7,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 8,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 9,
+      "Pointer": 5,
+      "Id": 896229990,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": 1986358369,
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 5,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 6,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 7,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 8,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 9,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 8|r]"
+    },
+    {
+      "Level": 9,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 9|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 10 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 15 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 20 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 25 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 30 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 35 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 7,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 40 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 8,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 45 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 9,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 50 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    }
+  ]
+}

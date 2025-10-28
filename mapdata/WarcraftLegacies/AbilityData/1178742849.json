@@ -1,0 +1,55 @@
+{
+  "OldId": 1650739521,
+  "NewId": 1178742849,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B01H"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 1717920841,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846227529,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (with Life \u0026 Mana Healing) (CROWN MERGED)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Item Greater Crown Heal"
+    }
+  ]
+}

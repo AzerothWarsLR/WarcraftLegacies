@@ -1,0 +1,156 @@
+{
+  "OldId": 1818321518,
+  "NewId": 1328820334,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "VP08,ACrk,Aiun,A0B3,ACpv,A0B2,A079,A0AW"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 40
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 6
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 60
+    },
+    {
+      "Id": 1647468917,
+      "Value": 60
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 60
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1750
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 13
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04B"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 12
+    },
+    {
+      "Id": 1937141109,
+      "Value": 260
+    },
+    {
+      "Id": 1634562933,
+      "Value": 2
+    },
+    {
+      "Id": 1735553909,
+      "Value": 85
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Doom Lord"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Doom Lord"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite defender charged with guarding the Greater Demons."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HeroDoomLord.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKazzakIon.blp"
+    }
+  ]
+}

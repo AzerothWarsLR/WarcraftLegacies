@@ -1,0 +1,149 @@
+{
+  "OldId": 1970499182,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0W7,Aien,ACmo,A0M1"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 16
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1647403381,
+      "Value": 19
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 48
+    },
+    {
+      "Id": 1836083317,
+      "Value": 955
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1836084597,
+      "Value": 400
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1.14
+    },
+    {
+      "Id": 1932616053,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 240
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 400
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1300
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "ZB9L"
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Coilfang Summoner"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Proud powerful witches of the Illidari."
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GargoyleMissile\\GargoyleMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Coilfang Summoner"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "OldId": 829453167,
+  "NewId": 1144074351,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "S00B"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "S00B"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Zuluhed-Level 4)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\orc\\StasisTotem\\StasisTotem.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Bloodlust Totem"
+    }
+  ]
+}

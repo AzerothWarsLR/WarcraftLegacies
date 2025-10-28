@@ -1,0 +1,30 @@
+{
+  "OldId": 1718185074,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 150
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 1920234345,
+      "Value": 300
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase (|cffcece00S|r) Ring of Regeneration"
+    }
+  ]
+}

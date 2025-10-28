@@ -1,0 +1,104 @@
+{
+  "OldId": 1886615397,
+  "NewId": 892367724,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "n05Q,eLFA,h03I,n08A,n07N,n08B,sELF,n078,n08L,n07J,h07X"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 6
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 190
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Reuv"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Ahrp,Adtn,A0O4"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Builders of the elemental."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shaper"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shaper"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_Shaper.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShaper.blp"
+    }
+  ]
+}

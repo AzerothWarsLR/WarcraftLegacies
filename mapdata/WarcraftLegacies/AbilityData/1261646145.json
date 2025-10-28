@@ -1,0 +1,182 @@
+{
+  "OldId": 1717920833,
+  "NewId": 1261646145,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08G"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08G"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08G"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828794180,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828794180,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845571396,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845571396,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862348612,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862348612,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895903044,
+      "Type": 2,
+      "Value": 0.85
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 895903044,
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 895903044,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 912680260,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 912680260,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 8,
+      "Id": 946234692,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 8,
+      "Id": 946234692,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pikeman)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to have a \u003CAdef,DataF1\u003E% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced 30% and Magic damage taken is reduced by 15%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to have a \u003CAdef,DataF2\u003E% chance to reflect Piercing attacks upon the source, and to take only 50% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced by 30% and Magic damage taken is reduced by 20%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to have a \u003CAdef,DataF3\u003E% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced by 30% and Magic damage taken is reduced by 40%."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Deactivate to move at normal speed, but take regular damage from Piercing attacks and Magic damage."
+    }
+  ]
+}

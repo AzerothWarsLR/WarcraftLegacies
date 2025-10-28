@@ -1,0 +1,174 @@
+{
+  "OldId": 1752462664,
+  "NewId": 1378889800,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A11P,A0W3,A0GK,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 32
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 10
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A12C,A0W4,Aamk,A01R,A0FK"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 125
+    },
+    {
+      "Id": 1953393013,
+      "Value": 15
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1634889845,
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 19
+    },
+    {
+      "Id": 1915838837,
+      "Value": 120
+    },
+    {
+      "Id": 1932616053,
+      "Value": 12
+    },
+    {
+      "Id": 1937141109,
+      "Value": 260
+    },
+    {
+      "Id": 1920234357,
+      "Value": 29
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R02S"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroVarianWrynn.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Varian Wrynn"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\King Varian Wrynn.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "King of Stormwind"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "King Varian Wrynn"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Varian Wrynn"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "war3mapImported\\SSHHeroVarianWrynn.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at melee combat and bolstering nearby troops."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Varian Wrynn"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    }
+  ]
+}

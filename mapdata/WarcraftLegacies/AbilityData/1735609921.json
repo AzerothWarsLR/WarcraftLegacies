@@ -1,0 +1,205 @@
+{
+  "OldId": 1735609921,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nAT1"
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nAT2"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "nAt3"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNto"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNto"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNto"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Tornado"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Tornado - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons a controllable Tornado that slows enemy units and randomly throws them into the air while dealing damage to enemy buildings.|n|cffffcc00Level 1|r - Lasts \u003CANsg,Dur1\u003E seconds and deals \u003CA02S,DataA1\u003E damage per second to buildings.|n|cffffcc00Level 2|r - Lasts \u003CANsg,Dur2\u003E seconds and deals \u003CA0H9,DataA1\u003E damage per second to buildings.|n|cffffcc00Level 3|r - Lasts \u003CANsg,Dur3\u003E seconds and deals \u003CA0H9,DataA1\u003E damage per second to buildings."
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTornado.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTornado.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Al\u0027Akir)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Tornado - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Tornado - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Tornado - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and deals up to \u003CA02S,DataA1\u003E damage per second to enemy buildings. |nLasts \u003CANsg,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and deals up to \u003CA0H8,DataA1\u003E damage per second to enemy buildings. |nLasts \u003CANsg,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and deals up to \u003CA0H9,DataA1\u003E damage per second to enemy buildings. |nLasts \u003CANsg,Dur3\u003E seconds."
+    }
+  ]
+}

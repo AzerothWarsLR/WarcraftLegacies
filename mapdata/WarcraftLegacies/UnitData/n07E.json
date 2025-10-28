@@ -1,0 +1,75 @@
+{
+  "OldId": 1952937838,
+  "NewId": 1161244782,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0A4,Awrp,Avul"
+    },
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1768975733,
+      "Value": 1000
+    },
+    {
+      "Id": 1836084597,
+      "Value": 1000
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPortal.blp"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas - Nazjatar)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Portal"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

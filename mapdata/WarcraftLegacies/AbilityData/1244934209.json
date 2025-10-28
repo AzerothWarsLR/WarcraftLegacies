@@ -1,0 +1,314 @@
+{
+  "OldId": 2053261377,
+  "NewId": 1244934209,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 170
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 115
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863658568,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863658568,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X007"
+    },
+    {
+      "Level": 2,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X007"
+    },
+    {
+      "Level": 3,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X007"
+    },
+    {
+      "Level": 4,
+      "Id": 1717986657,
+      "Type": 3,
+      "Value": "X007"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(high elves anasterian)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Arcane Burst"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Arcane Burst - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero Blasts and area with Arcane Energy dealing damage to units caught in the area of effect. |n|n|cffffcc00Level 1|r - 90 damage Dealt per Unit.|n|cffffcc00Level 2|r - 140 damage Dealt per Unit.|n|cffffcc00Level 3|r - 190 damage Dealt per Unit.|n|cffffcc00Level 4|r - 240 damage Dealt per Unit."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Burst - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Burst - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Burst - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Burst - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero blasts and area with Arcane Energy dealing 90 damage to units caught in the area of effect"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero blasts and area with Arcane Energy dealing 140 damage to units caught in the area of effect"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero blasts and area with Arcane Energy dealing 190 damage to units caught in the area of effect"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero blasts and area with Arcane Energy dealing 240 damage to units caught in the area of effect"
+    }
+  ]
+}

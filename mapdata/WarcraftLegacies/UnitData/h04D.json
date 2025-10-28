@@ -1,0 +1,64 @@
+{
+  "OldId": 2020110440,
+  "NewId": 1144270952,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0IM,Aphx,ACmi,ACrk,Apxf"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 80
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2000
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R00T,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 180
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas-Anasterian-Level 2)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 180
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Al\u0027ar"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 180
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Loyal phoenix of the Sunstrider Dynasty."
+    }
+  ]
+}

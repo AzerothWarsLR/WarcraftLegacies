@@ -1,0 +1,50 @@
+{
+  "OldId": 1936081729,
+  "NewId": 1395732801,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "3"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R07M"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Alchemist)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Napalm"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Napalm"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 15 damage a second for 2 seconds. As the pillar of flame subsides, units within the fire continue to take minor damage."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "OldId": 1836475457,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896366180,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Destroyer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CAdvm,DataA1\u003E hit points and \u003CAdvm,DataB1\u003E mana. |n|cffffcc00Deals \u003CAdvm,DataE1\u003E damage to summoned units.|r"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

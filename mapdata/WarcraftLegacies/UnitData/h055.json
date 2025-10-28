@@ -1,0 +1,122 @@
+{
+  "OldId": 1918984808,
+  "NewId": 892678248,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 300
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": 1919903605,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1836348021,
+      "Value": 1000
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1918989429,
+      "Type": 3,
+      "Value": "ancient,structure"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "h05J"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 0
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind - Champion\u0027s Hall)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_BaseRuin\\CityBuildingSmall135_0_BaseRuin.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Construction Site"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 7
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": "HSMA"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HumanLumberMill"
+    }
+  ]
+}

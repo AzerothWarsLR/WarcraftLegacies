@@ -1,0 +1,94 @@
+{
+  "OldId": 1650943598,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0ER,A0GZ,A070,A020"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 5
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 34
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 15
+    },
+    {
+      "Id": 1836083317,
+      "Value": 925
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1634562933,
+      "Value": 2
+    },
+    {
+      "Id": 1735553909,
+      "Value": 20
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel Horde-Portal)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "B"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Wrathguard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Wrathguard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite warrior of the Burning Crusade\u0027s armies."
+    }
+  ]
+}

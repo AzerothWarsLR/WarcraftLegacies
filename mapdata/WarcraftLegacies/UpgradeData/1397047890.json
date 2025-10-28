@@ -1,0 +1,116 @@
+{
+  "OldId": 1702062162,
+  "NewId": 1397047890,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "ALZ1"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "h00H"
+    },
+    {
+      "Id": 879715175,
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651078247,
+      "Value": 25
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 190
+    },
+    {
+      "Id": 845571431,
+      "Type": 3,
+      "Value": "renw"
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "n0AT"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulHarvesterScythe.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Black Empire Reaper)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Unworldly Scythe"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Unworldly Scythe"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves the Reapers by increasing their damage by 20 and change their damage type to Chaos."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    }
+  ]
+}

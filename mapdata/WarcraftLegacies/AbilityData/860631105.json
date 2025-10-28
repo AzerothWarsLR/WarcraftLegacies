@@ -1,0 +1,102 @@
+{
+  "OldId": 1851872577,
+  "NewId": 860631105,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 4000
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829317461,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 7000
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R04V"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(The Frozen Throne)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Animate Dead - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Raises dead units in an area to fight for Arthas. Animated units inherit their previous upgrades and are vulnerable. |n|n|cffffcc00Level 1|r - Raises 6 units lasting 40 seconds. |n|cffffcc00Level 2|r - Raises 12 units lasting 60 seconds. |n|cffffcc00Level 3|r -  Raises 18 units lasting 80 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Raises 15 units in an area to fight for Ner\u0027zhul for 40 seconds. Animated units retain upgrades and are vulnerable."
+    }
+  ]
+}

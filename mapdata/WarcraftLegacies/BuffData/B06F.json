@@ -1,0 +1,39 @@
+{
+  "OldId": 1668565058,
+  "NewId": 1177956418,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "commoner"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrushingWave.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Termal Erruption"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been hit by Termal Erruption; its movement speed and attack rate are reduced."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WaterElementalMissile\\WaterElementalMissile.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

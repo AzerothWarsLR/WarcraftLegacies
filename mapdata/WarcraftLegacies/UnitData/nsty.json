@@ -1,0 +1,86 @@
+{
+  "OldId": 2037674862,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aiun,A020,Afbk"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 27
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1836083317,
+      "Value": 740
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Satyr Warrior"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Satyr Warrior"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit, has the Evasion and Feedback abilities. "
+    }
+  ]
+}

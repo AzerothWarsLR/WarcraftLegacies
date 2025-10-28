@@ -1,0 +1,26 @@
+{
+  "OldId": 1685549943,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 60
+    },
+    {
+      "Id": 1702065513,
+      "Value": 3
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase (|cffcece00W|r) Sentry Wards"
+    }
+  ]
+}

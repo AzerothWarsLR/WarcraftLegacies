@@ -1,0 +1,216 @@
+{
+  "OldId": 1702316097,
+  "NewId": 1329737793,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grom)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from  ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 10 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Martial Spirit - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal. |n|n|cffffcc00Level 1|r - 10 second duration. |n|cffffcc00Level 2|r - 15 second duration.|n|cffffcc00Level 3|r - 25 second duration.|n"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 15 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 25 seconds."
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
+    }
+  ]
+}

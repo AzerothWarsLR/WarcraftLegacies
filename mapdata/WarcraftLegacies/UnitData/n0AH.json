@@ -1,0 +1,226 @@
+{
+  "OldId": 1919184494,
+  "NewId": 1212231790,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ABEV,A0SB,A0SQ,A07C"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 16
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 56
+    },
+    {
+      "Id": 1714512245,
+      "Value": 25
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 50
+    },
+    {
+      "Id": 1919903605,
+      "Value": 500
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1555
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R09X,n0AT"
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 500
+    },
+    {
+      "Id": 1932616053,
+      "Value": 8
+    },
+    {
+      "Id": 1932681589,
+      "Value": 8
+    },
+    {
+      "Id": 1937141109,
+      "Value": 280
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "enemies,ground"
+    },
+    {
+      "Id": 1735553909,
+      "Value": 140
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "RBEV,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 500
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.56
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.94
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1915838837,
+      "Value": 600
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1748066677,
+      "Value": 30
+    },
+    {
+      "Id": 1899061621,
+      "Value": 90
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Deformed Chimera"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Twisted Creature from Ny\u0027alotha."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Deformed Chimera"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ObscureDragon.mdl"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNObscure Dragon.blp"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\ShadowOrbMissile v1.2.mdl"
+    }
+  ]
+}

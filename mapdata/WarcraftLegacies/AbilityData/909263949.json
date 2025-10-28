@@ -1,0 +1,97 @@
+{
+  "OldId": 2003324481,
+  "NewId": 909263949,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 230
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 320
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 410
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    }
+  ]
+}

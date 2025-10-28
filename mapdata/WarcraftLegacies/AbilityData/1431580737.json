@@ -1,0 +1,43 @@
+{
+  "OldId": 1986356289,
+  "NewId": 1431580737,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842756,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,nonancient,nonhero,neutral,organic"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Black Drake)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Consumes an enemy unit, killing it instantly. Heals the caster for 50% of its hit points."
+    }
+  ]
+}

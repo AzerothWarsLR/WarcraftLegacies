@@ -1,0 +1,22 @@
+{
+  "OldId": 1885759598,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit. "
+    }
+  ]
+}

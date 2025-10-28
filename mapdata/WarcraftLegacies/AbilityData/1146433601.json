@@ -1,0 +1,212 @@
+{
+  "OldId": 1651536705,
+  "NewId": 1146433601,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0KC"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0KC,A0MQ"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0KC,A0MQ,A0DL"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0KC,A0MQ,A0DL,A01I"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845312115,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 4
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1702127969,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Mograine)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Weapon Empowerement"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Weapon Empowerement - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Every level unlocks a new abilities for the Ashbringer. |n|n|cffffcc00Level 1|r - Unlocks Incinerate. |n|cffffcc00Level 2|r - Unlocks Pulverize. |n|cffffcc00Level 3|r - Unlocks Communion. |n|cffffcc00Level 4|r - Unlocks Crusade Aura."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 1|r - Unlocks Incinerate."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 2|r - Unlocks Incinerate and Pulverize."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 3|r - Unlocks Incinerate, Pulverize and Communion."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 4|r - Unlocks Incinerate, Pulverize, Crusader Aura and Communion."
+    }
+  ]
+}

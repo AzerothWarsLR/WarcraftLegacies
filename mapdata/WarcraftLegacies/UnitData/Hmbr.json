@@ -1,0 +1,116 @@
+{
+  "OldId": 1919053128,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768382837,
+      "Value": 20
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 20
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "Aamk,A0K3,ANdh,A0I9,MD07"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 500
+    },
+    {
+      "Id": 1953393013,
+      "Value": 18
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1920234357,
+      "Value": 26
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Mountain Prince"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Thane of the Bronzebeards"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Mountain Prince"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at offensive combat and disrupting enemy troops."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Muradin"
+    }
+  ]
+}

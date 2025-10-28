@@ -1,0 +1,60 @@
+{
+  "OldId": 1634693697,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids-Druid of the claw)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 15% bonus to damage and 3 armor.|n|cffffcc00Lasts 30 seconds."
+    }
+  ]
+}

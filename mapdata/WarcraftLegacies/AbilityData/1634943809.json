@@ -1,0 +1,44 @@
+{
+  "OldId": 1634943809,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 2
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Neutral hostile - Priestess of the Moon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 3
+    },
+    {
+      "Id": 2036495713,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "F"
+    }
+  ]
+}

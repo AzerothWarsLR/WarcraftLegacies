@@ -1,0 +1,262 @@
+{
+  "OldId": 1802728257,
+  "NewId": 1261711425,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 43
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 47
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 38
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 56
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 74
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1802726497,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarplating.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Orange - Daelin, Purple - Garithos)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mighty Guard"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeThree.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mighty Guard - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The defensive prowess of this hero give it a percent chance to block damage.|n|n|cffffcc00Level 1|r - 35% chance to block, ignores 20 damage.|n|cffffcc00Level 2|r - 40% chance to block, ignores 38 damage.|n|cffffcc00Level 3|r - 43% chance to block, ignores 56 damage.|n|cffffcc00Level 4|r - 47% chance to block, ignores 74 damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mighty Guard - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mighty Guard - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mighty Guard - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mighty Guard - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 35% chance for 20 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 39% chance for 38 damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 43% chance for 56 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 47% chance for 74 damage."
+    }
+  ]
+}

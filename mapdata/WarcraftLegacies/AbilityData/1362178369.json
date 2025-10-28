@@ -1,0 +1,71 @@
+{
+  "OldId": 1986085697,
+  "NewId": 1362178369,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0B4"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828662088,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,mechanical,organic,self,structure,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(dalaran)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Citadel Shield Aura"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Citadel Shield Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 4 bonus armor to friendly units and structures within a radius of 600."
+    }
+  ]
+}

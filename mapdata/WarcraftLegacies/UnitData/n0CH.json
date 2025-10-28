@@ -1,0 +1,177 @@
+{
+  "OldId": 1836673134,
+  "NewId": 1212362862,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0WZ,A0X0,A0X1,Aihn"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0X0"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 19
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 22
+    },
+    {
+      "Id": 1836083317,
+      "Value": 350
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 13
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1937141109,
+      "Value": 235
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R00V,Rguv,R00K"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "h07G"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 3
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": 1768975733,
+      "Value": 400
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodstoneMage.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGheavenlydemolisher.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Rune of Wrath,- Rune of Wrath|n- Healing Shield,- Rune of Wrath|n- Healing Shield|n- Rune of Shielding"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodStoneMage.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Flame Keeper"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Flame Keeper"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Wielder of destructive elemental magic. "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    }
+  ]
+}

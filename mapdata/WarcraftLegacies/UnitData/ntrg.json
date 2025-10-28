@@ -1,0 +1,33 @@
+{
+  "OldId": 1735554158,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1647403381,
+      "Value": 45
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1350
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee amphibious unit whose spiked shell harms enemy melee attackers. "
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": 1919239490,
+  "NewId": 1496789058,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPossession.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Paralyzing Gaze"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been hit by Paralyzing Gaze; it cannot move and takes damage over time."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\HowlOfTerror\\HowlTarget.mdl"
+    }
+  ]
+}

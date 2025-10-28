@@ -1,0 +1,102 @@
+{
+  "OldId": 1752462190,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aiun,ACua"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 5
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 28
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 27
+    },
+    {
+      "Id": 1919903605,
+      "Value": 35
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1735553909,
+      "Value": 200
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train [|cffffcc00E|r] Satyr Hellcaller"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Unholy Aura. Can also Animate Dead."
+    }
+  ]
+}

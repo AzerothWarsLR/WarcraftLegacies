@@ -1,0 +1,69 @@
+{
+  "OldId": 828918081,
+  "NewId": 1497968705,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1702127969,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAutoRepairBots.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Gunship)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\ToonBoom\\ToonBoom.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CA0IY,DataA1\u003E hitpoints."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Emergency Repairs"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Emergency Repairs"
+    }
+  ]
+}

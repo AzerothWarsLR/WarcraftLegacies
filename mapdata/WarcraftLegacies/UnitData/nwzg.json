@@ -1,0 +1,36 @@
+{
+  "OldId": 1736079214,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium ranged unit that can cast Purge and Lightning Shield. "
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

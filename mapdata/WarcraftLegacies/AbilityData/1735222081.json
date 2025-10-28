@@ -1,0 +1,25 @@
+{
+  "OldId": 1735222081,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845638979,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Spell Breaker)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

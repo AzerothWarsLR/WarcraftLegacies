@@ -1,0 +1,66 @@
+{
+  "OldId": 2002993985,
+  "NewId": 1211314241,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828465992,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845243208,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862020424,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Ranger)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The freezing attacks are  imbued with arcane magic,  slowing the target\u0027s movement by 50% and attack speed by 40% for 3 seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

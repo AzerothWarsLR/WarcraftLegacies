@@ -1,0 +1,63 @@
+{
+  "OldId": 1937141586,
+  "NewId": 1144008786,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651271527,
+      "Value": 150
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "R00O,o02S"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\btnmassbloodlust.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Mass Bloodlust"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Mass Bloodlust"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Gives Kodo Beasts the Mass Bloodlust ability, which increases the attack rate and movement speed of friendly units in a targeted area."
+    }
+  ]
+}

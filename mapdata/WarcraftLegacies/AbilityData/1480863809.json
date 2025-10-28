@@ -1,0 +1,44 @@
+{
+  "OldId": 1952662337,
+  "NewId": 1480863809,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Martial Spirit)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance to deal double damage on their attacks."
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
+    }
+  ]
+}

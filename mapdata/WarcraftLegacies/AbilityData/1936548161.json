@@ -1,0 +1,47 @@
+{
+  "OldId": 1936548161,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "Rnsw"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863202625,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Twilight, Illidari, Nzoth)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a barrier that stops 600 points of spell damage from affecting a target unit. |nLasts 90 seconds."
+    }
+  ]
+}

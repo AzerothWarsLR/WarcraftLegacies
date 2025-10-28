@@ -1,0 +1,126 @@
+{
+  "OldId": 1937003841,
+  "NewId": 1178808385,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829650005,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829650005,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829650005,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863204437,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863204437,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863204437,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "Rosp"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNSpikedBarricades.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Horde)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spiked Barricades"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - \u003CAUts,DataA1,%\u003E% damage returned, \u003CAUts,DataC1\u003E bonus armor. |n|cffffcc00Level 2|r -  \u003CAUts,DataA2,%\u003E% damage returned, \u003CAUts,DataC2\u003E bonus armor. |n|cffffcc00Level 3|r -  \u003CAUts,DataA3,%\u003E% damage returned, \u003CAUts,DataC3\u003E bonus armor.  |n|cffffcc00Level 4|r -  \u003CAUts,DataA4,%\u003E% damage returned, \u003CAUts,DataC4\u003E bonus armor.  |n|cffffcc00Level 5|r -  \u003CAUts,DataA5,%\u003E% damage returned, \u003CAUts,DataC5\u003E bonus armor.  "
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spiked Barricades - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spiked Barricades - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spiked Barricades - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances the structures defenses with spikes and barricades. Gives 3 bonus armor and returning 20% of melee attack damage to enemies."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances the structures defenses with spikes and barricades. Gives 3 bonus armor and returning 20% of melee attack damage to enemies."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances the structures defenses with spikes and barricades. Gives 6 bonus armor and returning 40% of melee attack damage to enemies."
+    }
+  ]
+}

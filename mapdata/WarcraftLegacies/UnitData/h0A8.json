@@ -1,0 +1,189 @@
+{
+  "OldId": 1869571688,
+  "NewId": 943796328,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A02O,ACrk,A0KQ,A064,A0HI,A06I,Aihn"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 38
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 90
+    },
+    {
+      "Id": 1919903605,
+      "Value": 24
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1125
+    },
+    {
+      "Id": 1768975733,
+      "Value": 300
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 1769107573,
+      "Value": 15
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1836348021,
+      "Value": 4
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1937141109,
+      "Value": 240
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhar,Rguv,Rhme,R00F"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKingRagnar.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 230
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KingBloodstoneRagnar.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 230
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Chieftain"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 230
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Chieftain"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Aspiring commander under General Angerforge."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    }
+  ]
+}

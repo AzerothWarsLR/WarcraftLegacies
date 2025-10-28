@@ -1,0 +1,30 @@
+{
+  "OldId": 1667318593,
+  "NewId": 1228484673,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pink - Thunder Bluff)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 10% extra damage to the attacks of nearby friendly units."
+    }
+  ]
+}

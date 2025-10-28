@@ -1,0 +1,173 @@
+{
+  "OldId": 1935762280,
+  "NewId": 1094004840,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Avul,A0RG,A0RE,A0RC"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 10
+    },
+    {
+      "Id": 1819240309,
+      "Value": 50
+    },
+    {
+      "Id": 1919903605,
+      "Value": 40
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R022"
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R03T,R03U,R03V,R03W,R03X"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,townhall"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1836084597,
+      "Value": 90
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanWatchTower.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "BuildingShadowSmall"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Building_StormwindMageTower.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Wizard\u0027s Sanctum"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.9
+    },
+    {
+      "Id": 1650684789,
+      "Value": 0
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Wizard\u0027s Sanctum"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "- Has the |cffcece00Mana Siphon|r ability, which allows the Wizard\u0027s Sanctum to grant 250 Mana to any unit within 2000 range with a 90 second cooldown."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ArcaneObservatory"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    }
+  ]
+}

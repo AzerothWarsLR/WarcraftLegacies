@@ -1,0 +1,66 @@
+{
+  "OldId": 1851933505,
+  "NewId": 1363554369,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829317704,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "YB01"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Keeper of the Grove)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns a non-mechanical unit ethereal and slows its movement speed by \u003CACbn,DataA1,%\u003E% for 12 seconds. Lasts 2 second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
+    }
+  ]
+}

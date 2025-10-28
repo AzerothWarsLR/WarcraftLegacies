@@ -1,0 +1,218 @@
+{
+  "OldId": 1819568981,
+  "NewId": 1261580373,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0JF,A08N,Aamk,A0WF,vSW2"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 300
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1937141109,
+      "Value": 230
+    },
+    {
+      "Id": 1920234357,
+      "Value": 31
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 2050056565,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 10
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 300
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "ground,structure,debris,item,ward"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": 1836212597,
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": 1953393013,
+      "Value": 24
+    },
+    {
+      "Id": 1768382837,
+      "Value": 19
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868788853,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "RSW2"
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": 1634889845,
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lord of the Firelands"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Supremely deadly Warrior Hero, Excels at killing enemy Heroes. "
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Ragnaros"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Ragnaros.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Ragnaros"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Ragnaros"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Ragnaros"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroFireLord"
+    }
+  ]
+}

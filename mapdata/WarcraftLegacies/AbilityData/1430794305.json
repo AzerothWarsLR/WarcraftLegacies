@@ -1,0 +1,80 @@
+{
+  "OldId": 1751404097,
+  "NewId": 1430794305,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B03F"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireBolt.blp"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Fire Attacks"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fire Attacks (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fire Attacks (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The fire element\u0027s attacks cause its enemies to go on fire, causing their movement speed to be reduced by \u003CANdh,DataC1,%\u003E%, and have a \u003CANdh,DataB1,%\u003E% chance to miss on attacks. When units with Fire Attacks cast on them are hit by Breath of Fire, they will ignite and take even more burn damage. |nLasts \u003CANdh,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The fire element\u0027s attacks cause its enemies to go on fire, causing their movement speed to be reduced by \u003CANdh,DataC2,%\u003E%, and have a \u003CANdh,DataB2,%\u003E% chance to miss on attacks. When units with Fire Attacks cast on them are hit by Breath of Fire, they will ignite and take even more burn damage. |nLasts \u003CANdh,Dur2\u003E seconds."
+    }
+  ]
+}

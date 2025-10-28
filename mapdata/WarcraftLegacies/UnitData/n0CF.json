@@ -1,0 +1,225 @@
+{
+  "OldId": 2004120430,
+  "NewId": 1178808430,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 20
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 47
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1937141109,
+      "Value": 250
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "RELD,Rhme,Rhar"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A089"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 400
+    },
+    {
+      "Id": 1918985077,
+      "Value": 1
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1647403381,
+      "Value": 85
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 846422645,
+      "Type": 2,
+      "Value": 0.56
+    },
+    {
+      "Id": 846226549,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1882349941,
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Id": 1949458805,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": 1647468917,
+      "Value": 105
+    },
+    {
+      "Id": 845441141,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 845443445,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": 1681023349,
+      "Value": 1
+    },
+    {
+      "Id": 1932681589,
+      "Value": 10
+    },
+    {
+      "Id": 2050122101,
+      "Value": 1500
+    },
+    {
+      "Id": 1915904373,
+      "Value": 600
+    },
+    {
+      "Id": 845312629,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": 1731354997,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1714512245,
+      "Value": 0
+    },
+    {
+      "Id": 1748066677,
+      "Value": 0
+    },
+    {
+      "Id": 1899061621,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mighty wyrm from the Firelands.  "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fire Wyrm"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Fire Wyrm"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireDragonElemental.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FireElemental.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

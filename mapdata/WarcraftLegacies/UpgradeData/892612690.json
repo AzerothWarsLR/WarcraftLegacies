@@ -1,0 +1,63 @@
+{
+  "OldId": 1751347026,
+  "NewId": 892612690,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1651469415,
+      "Value": 0
+    },
+    {
+      "Id": 829386087,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumArmor.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Dalaran) (Quest)"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Hard Crystal Constructs"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Hard Crystal Constructs"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 and attack damage by 20."
+    }
+  ]
+}

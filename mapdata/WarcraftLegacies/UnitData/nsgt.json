@@ -1,0 +1,143 @@
+{
+  "OldId": 1952936814,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0GX,A0DH,ACvs"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0GX"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 22
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 20
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 950
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1735553909,
+      "Value": 75
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R02R"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlack.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit that poisons opponents. Can cast Frenzy. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Blackwald Spider"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Blackwald Spider"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\SpiderBlack\\SpiderBlack.mdl"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 111
+    },
+    {
+      "Id": 1919705973,
+      "Value": 111
+    },
+    {
+      "Id": 1651270517,
+      "Value": 111
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    }
+  ]
+}

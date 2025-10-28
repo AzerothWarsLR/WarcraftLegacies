@@ -1,0 +1,34 @@
+{
+  "OldId": 1869640514,
+  "NewId": 1395863618,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTrample.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Trample"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is being trampled by an Outrider; its movement speed is reduced."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

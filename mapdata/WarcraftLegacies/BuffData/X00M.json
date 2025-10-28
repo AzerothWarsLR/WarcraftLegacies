@@ -1,0 +1,19 @@
+{
+  "OldId": 2053261400,
+  "NewId": 1295003736,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Arcane Artillery (Effect)"
+    },
+    {
+      "Id": 1818649958,
+      "Type": 3,
+      "Value": "AcolyteUnsummonLoop"
+    }
+  ]
+}

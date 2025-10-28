@@ -1,0 +1,82 @@
+{
+  "OldId": 1802331474,
+  "NewId": 942687314,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651271527,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "o051"
+    },
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Restore Mana"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Allows Astral Sanctums to use Restore Mana, which restores 240 mana to a target unit anywhere on the map."
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Restore Mana"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 2
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "OldId": 828534856,
+  "NewId": 843133000,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 235
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0NC,Aamk,A05E,A06S,A0XO"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": 1768382837,
+      "Value": 15
+    },
+    {
+      "Id": 1953393013,
+      "Value": 12
+    },
+    {
+      "Id": 1920234357,
+      "Value": 21
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scarlet Commander"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Renault Mograine"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\RenaultMograine.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at melee combat and vengeance."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Renault"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinRenault.blp"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinRenault.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.97
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    }
+  ]
+}

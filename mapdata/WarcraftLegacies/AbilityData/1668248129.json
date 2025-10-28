@@ -1,0 +1,39 @@
+{
+  "OldId": 1668248129,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829122117,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Khaz Modan-Steam Tank)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Fires powerful rockets at nearby enemy air units, dealing \u003CAroc,DataA1\u003E damage per target, up to a maximum of 9 targets."
+    }
+  ]
+}

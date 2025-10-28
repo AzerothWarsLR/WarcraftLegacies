@@ -1,0 +1,194 @@
+{
+  "OldId": 1853059950,
+  "NewId": 1161179246,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Ault,ACss,ANbl,ACev,Aien"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 15
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 31
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 50
+    },
+    {
+      "Id": 1919903605,
+      "Value": 24
+    },
+    {
+      "Id": 1836083317,
+      "Value": 875
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 300
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 15
+    },
+    {
+      "Id": 1915838837,
+      "Value": 600
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1836348021,
+      "Value": 5
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1920363893,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R002,Reib,Rhme,Rhar,Remk,Reuv,Rguv"
+    },
+    {
+      "Id": 1634034805,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShandris.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels-Elite)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\Shandris\\Shandris.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 78
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\HarpyMissile\\HarpyMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowleaf"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shadowleaf"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Exceptional archer trained by Shandris Feathermoon."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroWarden"
+    }
+  ]
+}

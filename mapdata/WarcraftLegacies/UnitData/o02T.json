@@ -1,0 +1,104 @@
+{
+  "OldId": 2036888431,
+  "NewId": 1412575343,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 20
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R06G"
+    },
+    {
+      "Id": 1969582965,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "obot,h0AS,h0AP,h0B2,h0AY,h0B5,h0BC,h0AO"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Warsong Shipyard)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shipyard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Shipyard"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Boat construction facility."
+    }
+  ]
+}

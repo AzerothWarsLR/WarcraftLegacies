@@ -1,0 +1,60 @@
+{
+  "OldId": 1635074881,
+  "NewId": 1161048129,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 7000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B05H"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829776213,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Duskwood Graveyard)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Graveyard\u0027s Blessing"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Graveyard\u0027s Blessing"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases your units movement speed on the subcontinent by 5% and life regeneration rate by 0.5"
+    }
+  ]
+}

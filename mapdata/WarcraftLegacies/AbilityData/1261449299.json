@@ -1,0 +1,60 @@
+{
+  "OldId": 1700873043,
+  "NewId": 1261449299,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,ground,invulnerable,mechanical,self,structure,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845504847,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0B0"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Well Oiled Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Well Oiled Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby mechanical units\u0027 movement speed by 10% and attack rate by 20%."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(warsong)"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASOil.blp"
+    }
+  ]
+}

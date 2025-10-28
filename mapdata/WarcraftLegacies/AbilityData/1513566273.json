@@ -1,0 +1,371 @@
+{
+  "OldId": 1634693697,
+  "NewId": 1513566273,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 55
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 13
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Purple - Uther)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Resilient Strength"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Resilient Strength - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases this units damage, armor, and hitpoint regeneration for a limited duration.|n|cffffcc00|nLevel 1|r - Grants \u003CA07Z,DataA1,%\u003E% damage, \u003CA07Z,DataB1\u003E armor, and \u003CA07Z,DataC1\u003E hit point regeneration for \u003CA07Z,HeroDur1\u003E seconds.|n|cffffcc00Level 2|r - Grants \u003CA07Z,DataA2,%\u003E% damage, \u003CA07Z,DataB2\u003E armor, and \u003CA07Z,DataC2\u003E hit point regeneration for \u003CA07Z,HeroDur2\u003E seconds.|n|cffffcc00Level 3|r - Grants \u003CA07Z,DataA3,%\u003E% damage, \u003CA07Z,DataB3\u003E armor, and \u003CA07Z,DataC3\u003E hit point regeneration for \u003CA07Z,HeroDur3\u003E seconds.|n|cffffcc00Level 4|r - Grants \u003CA07Z,DataA4,%\u003E% damage, \u003CA07Z,DataB4\u003E armor, and \u003CA07Z,DataC4\u003E hit point regeneration for \u003CA07Z,HeroDur4\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resilient Strength - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resilient Strength - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resilient Strength - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resilient Strength - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this units damage by \u003CA07Z,DataA1,%\u003E%, armor by \u003CA07Z,DataB1\u003E and hit point regeneration by \u003CA07Z,DataC1\u003E for \u003CA07Z,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this units damage by \u003CA07Z,DataA2,%\u003E%, armor by \u003CA07Z,DataB2\u003E and hit point regeneration by \u003CA07Z,DataC2\u003E for \u003CA07Z,HeroDur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this units damage by \u003CA07Z,DataA3,%\u003E%, armor by \u003CA07Z,DataB3\u003E and hit point regeneration by \u003CA07Z,DataC3\u003E for \u003CA07Z,HeroDur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this units damage by \u003CA07Z,DataA4,%\u003E%, armor by \u003CA07Z,DataB4\u003E and hit point regeneration by \u003CA07Z,DataC4\u003E for \u003CA07Z,HeroDur4\u003E seconds."
+    }
+  ]
+}

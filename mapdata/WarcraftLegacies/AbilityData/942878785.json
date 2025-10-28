@@ -1,0 +1,227 @@
+{
+  "OldId": 1886614081,
+  "NewId": 942878785,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829715278,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829715278,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846492494,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846492494,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846492494,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863269710,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863269710,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863269710,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 880046926,
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnight.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Purple - Garithos)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "units\\human\\Knight\\Knight.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Cavalry Onslaught"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnight.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Cavalry Onslaught - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls upon waves of brave knights to charge into enemy ranks. |n|n|cffffcc00Level 1|r -  Each charging Knight deals 40 damage. |n|cffffcc00Level 2|r -  Each charging Knight deals 70 damage. |n|cffffcc00Level 3|r -  Each charging Knight deals 100 damage. |n|nLasts 30 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Cavalry Onslaught - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Cavalry Onslaught - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Cavalry Onslaught - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls on waves of charging knights. Each Knight deals 40 damage. |nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls on waves of charging knights. Each Knight deals 70 damage. |nLasts 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls on waves of charging knights. Each Knight deals 100 damage. |nLasts 30 seconds."
+    }
+  ]
+}

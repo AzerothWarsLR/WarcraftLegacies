@@ -1,0 +1,35 @@
+{
+  "OldId": 1953788499,
+  "NewId": 1362112595,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R09P"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o00G"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(revert bloodpact - Blademaster)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

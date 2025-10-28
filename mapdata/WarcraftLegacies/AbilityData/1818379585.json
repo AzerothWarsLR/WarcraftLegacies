@@ -1,0 +1,118 @@
+{
+  "OldId": 1818379585,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186629,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186629,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186629,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829186629,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lor\u0027themar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Short distance teleportation that allows the Hero to move in and out of combat. |n|n|cffffcc00Level 1|r - \u003CAEbl,Cool1\u003E second cooldown, \u003CAEbl,Cost1\u003E mana. |n|cffffcc00Level 2|r - \u003CAEbl,Cool2\u003E second cooldown, \u003CAEbl,Cost2\u003E mana. |n|cffffcc00Level 3|r - \u003CAEbl,Cool3\u003E second cooldown, \u003CAEbl,Cost3\u003E mana.  |n|cffffcc00Level 4|r - \u003CAEbl,Cool4\u003E second cooldown, \u003CAEbl,Cost4\u003E mana."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blink - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports the hero a short distance, allowing him to move in and out of combat."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports the hero a short distance, allowing him to move in and out of combat."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports the hero a short distance, allowing him to move in and out of combat."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports the hero a short distance, allowing him to move in and out of combat."
+    }
+  ]
+}

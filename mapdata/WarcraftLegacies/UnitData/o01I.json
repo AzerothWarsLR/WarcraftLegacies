@@ -1,0 +1,129 @@
+{
+  "OldId": 1970431855,
+  "NewId": 1227960431,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AELP,A13J,A0E2,Aion"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0XM"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": 1647403381,
+      "Value": 36
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 210
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "RELP,Rhar,Rhme"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 850
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Armor inhabited by an elemental."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Animated Armor"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Animated Armor"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\NightElfMoonProtectorV2.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "RockGolem"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "OldId": 1886876787,
+  "NewId": 1110519881,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "AIi4,A00M"
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Permanent"
+    },
+    {
+      "Id": 1684628329,
+      "Type": 3,
+      "Value": "AIsp"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1819240297,
+      "Value": 1250
+    },
+    {
+      "Id": 1886677097,
+      "Value": 250000
+    },
+    {
+      "Id": 1986358377,
+      "Value": 6
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1919250537,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1869902697,
+      "Value": 1
+    },
+    {
+      "Id": 1920234345,
+      "Value": 3600
+    },
+    {
+      "Id": 1702065513,
+      "Value": 0
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Staff of Teleportation"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Staff of |cffffcc00T|releportation"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
+    }
+  ]
+}

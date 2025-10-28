@@ -1,0 +1,115 @@
+{
+  "OldId": 1953457253,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Arav,A13E,Aien,A0HT,Ault,A05C"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 18
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 14
+    },
+    {
+      "Id": 1836083317,
+      "Value": 390
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 9
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,R002,Redt,Rhme,Rhar,Reuv,Repm"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0HT"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Cycle of Rebirth,- Cycle of Rebirth|n- Dispel Magic,- Cycle of Rebirth|n- Dispel Magic|n- Invoke Spiders"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Supporting spellcaster."
+    }
+  ]
+}

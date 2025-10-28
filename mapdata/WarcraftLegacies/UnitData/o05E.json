@@ -1,0 +1,136 @@
+{
+  "OldId": 1835561839,
+  "NewId": 1161113711,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AELL,Aslo,A0NN,AESC,Aion"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": 1647403381,
+      "Value": 22
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 10
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "RELL,Rhar,Rhme"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "Aslo"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Thunder elemental from the Pinnacle."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNStormElementalIcon.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\StormElemental.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Lurking Tempest"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lurking Tempest"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ObsidianStatue"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

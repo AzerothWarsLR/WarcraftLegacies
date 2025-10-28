@@ -1,0 +1,123 @@
+{
+  "OldId": 1718511982,
+  "NewId": 1480798318,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 4.2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 39
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 40
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1900
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1634562933,
+      "Value": 2
+    },
+    {
+      "Id": 1735553909,
+      "Value": 60
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A103,ACmi,ACrk"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lightforged Warframe"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.25
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Lightforged Warframe"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDivineGolem.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DivineGolem.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit cloaked in demonic flames that damage nearby enemy ground units. Immune to magic. "
+    }
+  ]
+}

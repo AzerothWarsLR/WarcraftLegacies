@@ -1,0 +1,34 @@
+{
+  "OldId": 1835887723,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1818588009,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases the attack damage of the Hero by \u003CAItx,DataA1\u003E when carried. Also causes the Hero\u0027s attacks to steal life.|n|cffffcc00Lore|r|n|cffffdeadWhen Dethorin found his lady, Allurana, in the arms of another, he went to the Barrens and cried out. An axe burst forth from the sands as if in answer. Dethorin slew Allurana and her lover, then hurled the axe with all his might into the deep dark sea.|r"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "OldId": 1918990149,
+  "NewId": 909193285,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 829518453,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 846295669,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A01Q,A07N,AOcr,A10Y,Aamk"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0KV,AInv"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1600
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1937141109,
+      "Value": 275
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1668379253,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R06T"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Lucille Waycrest"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ruler of House Waycrest"
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HumanAssassine.mdl"
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Lucille"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Lucille"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Lucille"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, exceptional at assasination and disruption."
+    }
+  ]
+}

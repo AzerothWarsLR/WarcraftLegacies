@@ -1,0 +1,99 @@
+{
+  "OldId": 1919110977,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lucille)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Gives a chance to do double damage on their attacks. |n|n|cffffcc00Level 1|r - \u003CAOcr,DataA1\u003E% chance. |n|cffffcc00Level 2|r - \u003CAOcr,DataA2\u003E% chance. |n|cffffcc00Level 3|r - \u003CAOcr,DataA3\u003E% chance.|n|cffffcc00Level 4|r - \u003CAOcr,DataA4\u003E% chance."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Critical Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CAOcr,DataA1\u003E% chance to deal double damage on their attacks."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CAOcr,DataA2\u003E% chance to deal double damage on their attacks."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CAOcr,DataA3\u003E% chance to deal double damage on their attacks."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CAOcr,DataA4\u003E% chance to deal double damage on their attacks."
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "OldId": 1935762280,
+  "NewId": 808530024,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0JV,Argl"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 45
+    },
+    {
+      "Id": 1819240309,
+      "Value": 106
+    },
+    {
+      "Id": 1919903605,
+      "Value": 40
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 500
+    },
+    {
+      "Id": 1836084597,
+      "Value": 500
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1986359925,
+      "Value": 1
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "h09C,n0A1,h022,n007"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,third"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 240
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowGuardTower"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\human\\HumanTower\\HumanTower.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 180
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Jaina\u0027s Sanctum"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 180
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ArcaneTower"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "OldId": 1970235496,
+  "NewId": 1278226536,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0NZ"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1634034805,
+      "Value": 0
+    },
+    {
+      "Id": 1634559605,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 50
+    },
+    {
+      "Id": 1919903605,
+      "Value": 25
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\Gate1PathDeath.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 30
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rosp,Renb,R064,R013,Rhac"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,sapper"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 8
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gate - Open)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Terrain\\Gate\\Gate.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Horizontal Wooden Gate"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Horizontal Wooden Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": " "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
+    }
+  ]
+}

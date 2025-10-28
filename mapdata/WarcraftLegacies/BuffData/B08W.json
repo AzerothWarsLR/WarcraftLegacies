@@ -1,0 +1,29 @@
+{
+  "OldId": 1650542658,
+  "NewId": 1463300162,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Zul\u0027Drak Aura"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of Zul\u0027Drak Aura; it has an increased 0.8 mana regeneration."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

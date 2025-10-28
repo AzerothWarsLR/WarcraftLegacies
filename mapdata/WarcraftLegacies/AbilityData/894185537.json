@@ -1,0 +1,350 @@
+{
+  "OldId": 1936215617,
+  "NewId": 894185537,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829645646,
+      "Type": 2,
+      "Value": -18
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200078,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879977294,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913533006,
+      "Value": 6
+    },
+    {
+      "Id": 1886612833,
+      "Value": 2500
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200078,
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200078,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863200078,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913533006,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913533006,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": 913533006,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829645646,
+      "Type": 2,
+      "Value": -24
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829645646,
+      "Type": 2,
+      "Value": -32
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829645646,
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879977294,
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879977294,
+      "Type": 2,
+      "Value": 4000
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879977294,
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 1300
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\Golden Light.mdx"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Light\u0027s Edict"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Light\u0027s Edict  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "war3mapImported\\Golden Light.mdx"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Golden Light.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls upon 6 waves of light bursts. Each wave deals 18 damage to all units in an area."
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls upon 8 waves of light bursts. Each wave deals 24 damage to all units in an area."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls upon 10 waves of light bursts. Each wave deals 32 damage to all units in an area."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls upon 12 waves of light bursts. Each wave deals 40 damage to all units in an area."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down holy beams of light that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CANhs,DataF1\u003E waves at \u003CANhs,DataA1\u003E damage per wave.|n|cffffcc00Level 2|r - \u003CANhs,DataF2\u003E waves at \u003CANhs,DataA2\u003E damage per wave. |n|cffffcc00Level 3|r - \u003CANhs,DataF3\u003E waves at \u003CANhs,DataA3\u003E damage per wave."
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 1
+    }
+  ]
+}

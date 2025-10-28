@@ -1,0 +1,79 @@
+{
+  "OldId": 1986085697,
+  "NewId": 960704577,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B092"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828662088,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,self,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASWarlockAura.BLP"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Any main building) (General)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Fortified Defenses"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fortified Defenses"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This base is in a strong fortified location. Gives nearby structures 6 bonus armor in 2000 area of effect."
+    }
+  ]
+}

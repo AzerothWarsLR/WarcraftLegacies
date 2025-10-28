@@ -1,0 +1,52 @@
+{
+  "OldId": 1936543297,
+  "NewId": 1479815233,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Towers) "
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Mana Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activates a shield that absorbs 2 damage per point of mana."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 0
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

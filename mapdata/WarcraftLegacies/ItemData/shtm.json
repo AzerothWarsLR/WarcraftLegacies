@@ -1,0 +1,27 @@
+{
+  "OldId": 1836345459,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "AIi3,AIps"
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "This powerful Orc artifact channels Shamanic powers through its user, allowing them to cast Purge and gives them \u002B3 intelligence."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": 1919174721,
+  "NewId": 1329999937,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896689230,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R029"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Green - High Elven Magus)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Transfers mana between the Blood Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Blood Mage\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts \u003CAHdr,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - \u003CAHdr,DataB1\u003E mana drained per second. |n|cffffcc00Level 2|r - \u003CAHdr,DataB2\u003E mana drained per second. |n|cffffcc00Level 3|r - \u003CAHdr,DataB3\u003E mana drained per second. |n|cffffcc00Level 4|r - \u003CAHdr,DataB4\u003E mana drained per second. |n|cffffcc00Level 5|r - \u003CAHdr,DataB5\u003E mana drained per second."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphon Mana"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transfers Chaotic Energy between The Magus and a target. Drains 15 mana per second from an enemy, or transfers 10 mana per second to an ally.|n|nSiphon Mana can push the Magus\u0027 mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+    }
+  ]
+}

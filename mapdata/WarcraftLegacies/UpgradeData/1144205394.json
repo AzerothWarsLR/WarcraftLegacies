@@ -1,0 +1,136 @@
+{
+  "OldId": 1701079122,
+  "NewId": 1144205394,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "h03K"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "A0BG"
+    },
+    {
+      "Id": 879715175,
+      "Type": 3,
+      "Value": "A0BI"
+    },
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "rtma"
+    },
+    {
+      "Id": 845571431,
+      "Type": 3,
+      "Value": "rtma"
+    },
+    {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 879125863,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 50
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 829386087,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862940519,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 879717735,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1651078247,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Arathor-T1)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Veteran Guard"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Veteran Guard"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Emphasis during training is placed on defensive capabilities, granting the following improvements:|n|n- Marshal health increased by 200.|n- Enables the |cffcece00On Guard |rability for Marshals, which gives friendly nearby units 100 additional armor for 2 seconds.|n- Enables the |cffcece00Defensive Formation |rability for Marshals, which decreases nearby enemy units attack damage by 10%.|n- |cffcece00Steel Plating |rblocks an additional 3 damage.|n|cffcece00- Combat Experience |rgains an additional 5% evasion."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    }
+  ]
+}

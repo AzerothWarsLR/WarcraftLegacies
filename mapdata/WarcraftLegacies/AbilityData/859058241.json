@@ -1,0 +1,91 @@
+{
+  "OldId": 1651001409,
+  "NewId": 859058241,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828532808,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonancient,notself,organic,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonancient,notself,organic,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Paladin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "|cff7777aaHoly Light|r |cff7777aa[E]|r"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Holy Light"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A holy light that can heal a friendly living unit for 200 or deal half damage to an enemy Undead unit."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A holy light that can heal a friendly living unit for 300 or deal half damage to an enemy Undead unit."
+    }
+  ]
+}

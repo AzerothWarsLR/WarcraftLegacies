@@ -1,0 +1,169 @@
+{
+  "OldId": 1836475717,
+  "NewId": 825372741,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0D7,Alit,AInv,Ault"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 8
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 60
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A003,ANms,A0X6,A0LP,Aamk"
+    },
+    {
+      "Id": 1953393013,
+      "Value": 33
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 250
+    },
+    {
+      "Id": 1920234357,
+      "Value": 16
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1717920885,
+      "Value": 40
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Banshee form)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Meredith"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Matriarch of the Waycrest Familiy"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\MeredithWaycrestUndeadV1.02.mdl"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1886151029,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Banshee"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, adept at maneuvering through battles. Can learn Immolation, Evasion, Mana Burn, and Metamorphosis. "
+    }
+  ]
+}

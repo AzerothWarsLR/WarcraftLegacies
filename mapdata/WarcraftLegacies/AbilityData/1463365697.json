@@ -1,0 +1,37 @@
+{
+  "OldId": 1734963265,
+  "NewId": 1463365697,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829253957,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Charred Ancient)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Burns nearby enemy units for 20 points of damage per second."
+    }
+  ]
+}

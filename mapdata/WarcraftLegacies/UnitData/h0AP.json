@@ -1,0 +1,162 @@
+{
+  "OldId": 1936024680,
+  "NewId": 1346449512,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 5
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 35
+    },
+    {
+      "Id": 1919903605,
+      "Value": 25
+    },
+    {
+      "Id": 1836083317,
+      "Value": 775
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1937141109,
+      "Value": 300
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R00C,Rguv,R006"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 71
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1200
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 1852404597,
+      "Value": 800
+    },
+    {
+      "Id": 1684632437,
+      "Value": 1200
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Horde)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Frigate"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.8
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Frigate"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Standard medium ship."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrigateShip3.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_OrcFrigate.mdl"
+    }
+  ]
+}

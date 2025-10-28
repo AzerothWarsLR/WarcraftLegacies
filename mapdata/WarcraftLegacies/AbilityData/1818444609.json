@@ -1,0 +1,127 @@
+{
+  "OldId": 1818444609,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral,organic"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Frostwolf-Far Seer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Chain Lightning - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Chain Lightning - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hurls a bolt of lightning that bounces up to \u003CACcl,DataB2\u003E times, dealing \u003CACcl,DataA2\u003E damage to the primary target. Each jump deals less damage."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    }
+  ]
+}

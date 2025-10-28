@@ -1,0 +1,133 @@
+{
+  "OldId": 1952933486,
+  "NewId": 1345859694,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aloc,Avul"
+    },
+    {
+      "Id": 1818850421,
+      "Type": 3,
+      "Value": "I,*"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1800
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 47
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 450
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1752591733,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_Ny\u0027alothaTentacle.mdl"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 135
+    },
+    {
+      "Id": 1735156597,
+      "Value": 135
+    },
+    {
+      "Id": 1651270517,
+      "Value": 135
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ny\u0027alothan Tentacle"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A gnarly tentacle from the depths. "
+    }
+  ]
+}

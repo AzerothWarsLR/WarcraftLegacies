@@ -1,0 +1,52 @@
+{
+  "OldId": 1953785454,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACev,ACen"
+    },
+    {
+      "Id": 1701606261,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 30
+    },
+    {
+      "Id": 1836083317,
+      "Value": 650
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium ranged unit that can Ensnare opponents. "
+    }
+  ]
+}

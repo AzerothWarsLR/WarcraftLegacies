@@ -1,0 +1,138 @@
+{
+  "OldId": 1734692417,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828859726,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862414158,
+      "Type": 3,
+      "Value": "ANsy,A0PT"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862414158,
+      "Type": 3,
+      "Value": "A0PT,A0RL"
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862414158,
+      "Type": 3,
+      "Value": "A0RL,A0RN"
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862414158,
+      "Type": 3,
+      "Value": "A0RN,A0RM"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879191374,
+      "Type": 3,
+      "Value": "ANcs,A0RP"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879191374,
+      "Type": 3,
+      "Value": "A0RP,A0RQ"
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879191374,
+      "Type": 3,
+      "Value": "A0RQ,A0RS"
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879191374,
+      "Type": 3,
+      "Value": "A0RS,A0RV"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895968590,
+      "Type": 3,
+      "Value": "ANrg,A0RW"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 895968590,
+      "Type": 3,
+      "Value": "A0RW,A0UO"
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 895968590,
+      "Type": 3,
+      "Value": "A0UO,A0WO"
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 895968590,
+      "Type": 3,
+      "Value": "A0WO,A0Z6"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Enhances the other Gazlowee abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|nAlso gives bonus damage and increases the Tinker\u0027s movement speed.|n|n|cffffcc00Level 1|r - \u002B\u003CANeg,DataB1\u003E damage, \u002B\u003CANeg,DataA1,%\u003E% movement.|n|cffffcc00Level 2|r - \u002B\u003CANeg,DataB2\u003E damage, \u002B\u003CANeg,DataA2,%\u003E% movement.|n|cffffcc00Level 3|r - \u002B\u003CANeg,DataB3\u003E damage, \u002B\u003CANeg,DataA3,%\u003E% movement.|n|cffffcc00Level 4|r - \u002B9 damage, \u002B40% movement."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Engineering Upgrade - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB4\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA4,%\u003E%."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB1\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA1,%\u003E%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB2\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA2,%\u003E%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB3\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA3,%\u003E%."
+    }
+  ]
+}

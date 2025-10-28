@@ -1,0 +1,87 @@
+{
+  "OldId": 846349121,
+  "NewId": 1246905665,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829056338,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845833554,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Djinn)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CAERJ,DataA1\u003E hit points and \u003CAERJ,DataB1\u003E mana over \u003CAERJ,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Innervate"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Innervate"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
+    }
+  ]
+}

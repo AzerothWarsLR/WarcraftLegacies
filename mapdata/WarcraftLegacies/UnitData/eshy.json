@@ -1,0 +1,98 @@
+{
+  "OldId": 2036888421,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 20
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1969582965,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "etrs,h0AU,h0AV,h0B1,h057,h0B4,h0BA,h0B8"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Renb,R064,Rgfo"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Kaldorei Docks"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Kaldorei Docks"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Boat construction facility."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Druids / Sentinel Shipyard)"
+    }
+  ]
+}

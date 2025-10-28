@@ -1,0 +1,39 @@
+{
+  "OldId": 1785033282,
+  "NewId": 1395798082,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShadowPact.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Mind Affliction"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has had its mind Afflicted with a curse"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

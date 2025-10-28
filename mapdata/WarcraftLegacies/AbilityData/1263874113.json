@@ -1,0 +1,289 @@
+{
+  "OldId": 1835619649,
+  "NewId": 1263874113,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06K"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06K"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06K"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829253973,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829253973,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829253973,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846031189,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846031189,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846031189,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862808405,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862808405,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862808405,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879585621,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879585621,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879585621,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1869114721,
+      "Value": 1
+    },
+    {
+      "Id": 1886612833,
+      "Value": 1000
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran - Medivh)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\ManaBurn\\ManaBurnTarget.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Fel Rift"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Fel Rift - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Sends forth a wave of fel energy, damaging and stunning units in a straight line. |n|n|cffffcc00Level 1|r - \u003CA0UK,DataC1\u003E damage, \u003CA0UK,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CA0UK,DataC2\u003E damage, \u003CA0UK,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CA0UK,DataC3\u003E damage, \u003CA0UK,Dur3\u003E second stun."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\DarkConversion\\ZombifyTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fell Rift - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fell Rift - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fell Rift - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends forth a wave of fel energy in a line, dealing \u003CA0UK,DataC1\u003E damage and hurling enemy ground units into the air. Stuns units for \u003CA0UK,Dur1\u003E seconds and heroes for \u003CA0UK,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends forth a wave of fel energy in a line, dealing \u003CA0UK,DataC2\u003E damage and hurling enemy ground units into the air. Stuns units for \u003CA0UK,Dur2\u003E seconds and heroes for \u003CA0UK,HeroDur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends forth a wave of fel energy in a line, dealing \u003CA0UK,DataC3\u003E damage and hurling enemy ground units into the air. Stuns units for \u003CA0UK,Dur3\u003E seconds and heroes for \u003CA0UK,HeroDur3\u003E seconds."
+    }
+  ]
+}

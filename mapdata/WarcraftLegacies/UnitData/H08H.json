@@ -1,0 +1,145 @@
+{
+  "OldId": 1953390920,
+  "NewId": 1211641928,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "Z9X3,A0DK,A078,ANhw,Aamk"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 235
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1668379253,
+      "Value": 0
+    },
+    {
+      "Id": 829518453,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 846295669,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Z3X2,AInv"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R026"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Inquisitor"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Sally Whitemane"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at healing and supporting magic."
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive High Inquisitor"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive High Inquisitor"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Sally Whitemane.mdl"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Sally"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhitemane.blp"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhitemane.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Sylvanus"
+    }
+  ]
+}

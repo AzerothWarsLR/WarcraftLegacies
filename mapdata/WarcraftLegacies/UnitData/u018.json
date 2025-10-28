@@ -1,0 +1,135 @@
+{
+  "OldId": 1684566901,
+  "NewId": 942747765,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1836344437,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1752591733,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1500
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 335
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEyeOfKilrogg.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 50
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\VoidWalker\\VoidWalker.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Eye of Grillok"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 50
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Eye of Grillok"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Bleeding Hallow Clan\u0027s contribution to the war, used to scout the lands of its enemies."
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "OldId": 1919110977,
+  "NewId": 1347175745,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RELP"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Animated Armor)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB1\u003E targets, dealing damage to each of them. |n|n|cffffcc00Level 1|r - Deals \u003CA024,DataA1\u003E damage. |n|cffffcc00Level 2|r - Deals \u003CA024,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA024,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA024,DataA4\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this unit attacks, it has a 20% chance to cast Purge on the target, dispelling and slowing their movement speed. Summoned units will take 200 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB2\u003E targets, dealing \u003CA024,DataA2\u003E damage to each of them."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB3\u003E targets, dealing \u003CA024,DataA3\u003E damage to each of them."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB4\u003E targets, dealing \u003CA024,DataA4\u003E damage to each of them."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Shocking Blades"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Thunder Fists - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASPhaseBlade.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNZeusStrike.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shocking Blades"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    }
+  ]
+}

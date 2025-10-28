@@ -1,0 +1,33 @@
+{
+  "OldId": 1953066049,
+  "NewId": 1244737857,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829712716,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846489932,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Medivh)"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "FORK"
+    }
+  ]
+}

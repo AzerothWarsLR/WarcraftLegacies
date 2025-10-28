@@ -1,0 +1,163 @@
+{
+  "OldId": 1953456750,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1819240309,
+      "Value": 34
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1100
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R006"
+    },
+    {
+      "Id": 1953723253,
+      "Value": 1200
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1647403381,
+      "Value": 54
+    },
+    {
+      "Id": 1680957813,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 15
+    },
+    {
+      "Id": 828601461,
+      "Value": 1
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1200
+    },
+    {
+      "Id": 1915838837,
+      "Value": 450
+    },
+    {
+      "Id": 828535413,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0ZF,Sch5,Slo3,Sdro"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Goblin Privateer"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinSteamboat_FinalV3.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShipHull.blp"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Goblin Privateers. Can transport units as well as defend itself. It has a 2 gold per minute upkeep."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Hire Goblin Privateer"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Neutral Goblin)"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": 2038064706,
+  "NewId": 1244803138,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFuryV2.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Animal Fury"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Animal Fury; its attack rate and movement speed are increased."
+    }
+  ]
+}

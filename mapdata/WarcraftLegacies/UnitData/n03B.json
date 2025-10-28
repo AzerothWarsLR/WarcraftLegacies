@@ -1,0 +1,104 @@
+{
+  "OldId": 1952937838,
+  "NewId": 1110650990,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A126,Awrp,Avul"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1919903605,
+      "Value": 40
+    },
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,neutral,standon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhac"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 160
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Teleports units to the other Deeprun Tram."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\human\\WarWagon\\WarWagon_V1.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 120
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Deeprun Tram"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 120
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

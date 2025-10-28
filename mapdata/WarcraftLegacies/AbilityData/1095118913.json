@@ -1,0 +1,300 @@
+{
+  "OldId": 1818447425,
+  "NewId": 1095118913,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "forceofnature"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "forceofnature"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "forceofnature"
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "channel"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEssenceDrain4.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Kael\u0027thas)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Siphoning Ritual"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEssenceDrain4.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Siphoning Ritual - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Drains hit points and mana each second from up to 24 units in the target area for \u003CA0FA,DataA2\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it.|n|n|cffffcc00Level 1|r - Drains 40 hit points and 20 mana per second. |n|cffffcc00Level 2|r - Drains 50 hit points and 25 mana per second. |n|cffffcc00Level 3|r - Drains 60 hit points and 30 mana per second."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphoning Ritual - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphoning Ritual - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphoning Ritual - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drains 40 hit points and 20 mana per second from up to 24 units in the target area for \u003CA0FA,DataA1\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drains 50 hit points and 25 mana per second from up to 24 units in the target area for \u003CA0FA,DataA2\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drains 60 hit points and 30 mana per second from up to 24 units in the target area for \u003CA0FA,DataA3\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
+    }
+  ]
+}

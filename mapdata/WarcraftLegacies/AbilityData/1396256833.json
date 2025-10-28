@@ -1,0 +1,89 @@
+{
+  "OldId": 1701990209,
+  "NewId": 1396256833,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08N"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828731983,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1802726497,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 8
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R01Q"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanRein.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lordaeron - Paladin)"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAnkh.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Reincarnation - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When killed, the Hero will come back to life. |n|n|cffffcc00Level 1|r - \u003CA022,Cool1\u003E cooldown. |n|cffffcc00Level 2|r - \u003CA022,Cool2\u003E cooldown. |n|cffffcc00Level 3|r - \u003CA022,Cool3\u003E cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When killed, the Paladin will come back to life in 6 seconds. Reincarnation has a \u003CA09S,Cool1\u003E second cooldown."
+    }
+  ]
+}

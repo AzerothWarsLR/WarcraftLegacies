@@ -1,0 +1,385 @@
+{
+  "OldId": 1918990145,
+  "NewId": 1463038017,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 5,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 6,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 7,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 8,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 5,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 6,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 7,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 8,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 5,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 6,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 7,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 8,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 5,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 6,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 7,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 8,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": 1986358369,
+      "Value": 8
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 5,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 6,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 7,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 8,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNConsecretedStrikes.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Purple - Silverhand Paladin)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Consecrated Strikes"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 8|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 35 damage to nearby units."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 40 damage to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 45 damage to nearby units."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 50 damage to nearby units."
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 55 damage to nearby units."
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 60 damage to nearby units."
+    },
+    {
+      "Level": 7,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 65 damage to nearby units."
+    },
+    {
+      "Level": 8,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 70 damage to nearby units."
+    }
+  ]
+}

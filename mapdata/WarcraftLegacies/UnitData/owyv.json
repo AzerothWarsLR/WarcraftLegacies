@@ -1,0 +1,92 @@
+{
+  "OldId": 1987671919,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0A5,A069,Adtg,Aven"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 10
+    },
+    {
+      "Id": 1918985077,
+      "Value": 3
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": 1680957813,
+      "Value": 1
+    },
+    {
+      "Id": 1647403381,
+      "Value": 38
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 27
+    },
+    {
+      "Id": 1836083317,
+      "Value": 865
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1937141109,
+      "Value": 300
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rovs,Rguv"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R09X"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 650
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Warsong)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Highly mobile flying creature. Excellent at scouting."
+    }
+  ]
+}

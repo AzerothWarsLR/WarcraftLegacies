@@ -1,0 +1,127 @@
+{
+  "OldId": 1735618158,
+  "NewId": 1312239726,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unamph,unwalkable"
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "RELO,RELW,RELL"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "n08Z,o05E,oETL"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "n05W"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPavilion.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall Magic)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DarkIronBarracks2.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Pavilion"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Pavilion"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Spellcaster production building. "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "AltarOfDepths"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "BuildingShadowLarge"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    }
+  ]
+}

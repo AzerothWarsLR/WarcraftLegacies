@@ -1,0 +1,407 @@
+{
+  "OldId": 1635021633,
+  "NewId": 961760321,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BLSN"
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828470355,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845247571,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862024787,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 878802003,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,neutral,enemy"
+    },
+    {
+      "Level": 2,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "tlS0"
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828470355,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828470355,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845247571,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845247571,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845247571,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 895579219,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 895579219,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 895579219,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862024787,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862024787,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862024787,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 878802003,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 878802003,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895579219,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,neutral,enemy"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,neutral,enemy"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BLSN"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BLSN"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "tlS0"
+    },
+    {
+      "Level": 3,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "tlS0"
+    },
+    {
+      "Level": 4,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "tlS0"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BLSN"
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 878802003,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828470355,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(skeram)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD1\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA1\u003E second activation delay."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD2\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA2\u003E second activation delay."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ice Trap"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ice Trap - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other Ice Traps in its area of effect. |nThe trap lasts forever.|n|n|cffffcc00Level 1|r - Stuns for \u003CALS9,DataD1\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). \u003CALS9,DataA1\u003E seconds activation delay.|n|cffffcc00Level 2|r - Stuns for \u003CALS9,DataD2\u003E seconds (\u003CALS9,HeroDur2,.\u003E for heroes). \u003CALS9,DataA2\u003E seconds activation delay.|n|cffffcc00Level 3|r - Stuns for \u003CALS9,DataD3\u003E seconds (\u003CALS9,HeroDur3,.\u003E for heroes). \u003CALS9,DataA3\u003E seconds activation delay.|n|cffffcc00Level 4|r - Stuns for \u003CALS9,DataD4\u003E seconds (\u003CALS9,HeroDur4,.\u003E for heroes). \u003CALS9,DataA4\u003E seconds activation delay."
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Ice Trap  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ice Trap - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ice Trap - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ice Trap - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD3\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA3\u003E second activation delay."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD4\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA4\u003E second activation delay."
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
+    }
+  ]
+}

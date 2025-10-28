@@ -1,0 +1,59 @@
+{
+  "OldId": 1667318593,
+  "NewId": 1177563457,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828596547,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0AZ"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,invulnerable,organic,player,self,vulnerable"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(War Gryphon)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 25% extra damage to the attacks of nearby gryphon units."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "War Rider Aura"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "War Rider Aura"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\TrrRuneAura_NoTC.mdx"
+    }
+  ]
+}

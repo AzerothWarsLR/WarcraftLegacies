@@ -1,0 +1,28 @@
+{
+  "OldId": 1718436673,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

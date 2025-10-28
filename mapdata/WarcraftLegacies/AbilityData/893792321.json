@@ -1,0 +1,99 @@
+{
+  "OldId": 1802723905,
+  "NewId": 893792321,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B02M"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829125474,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R00T"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ironforge - Steam Tank)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Overclock"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Overclock"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CA0F5,DataB1,%\u003E% faster, but take \u003CA0F5,DataC1,%\u003E% more damage for \u003CA0F5,Dur1\u003E seconds.|n\u003CA0F5,Cool1\u003E second cooldown."
+    }
+  ]
+}

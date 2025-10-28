@@ -1,0 +1,139 @@
+{
+  "OldId": 2037540712,
+  "NewId": 1513304168,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A10J,A10F"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 16
+    },
+    {
+      "Id": 1918985077,
+      "Value": 3
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 53
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R01C"
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R02K,R014,Rhar,Rhme,Rhan,Rguv"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 350
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1440
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 43
+    },
+    {
+      "Id": 1915838837,
+      "Value": 500
+    },
+    {
+      "Id": 1915904373,
+      "Value": 500
+    },
+    {
+      "Id": 1932616053,
+      "Value": 7
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Majestic gryphon ridden by a powerful Thane. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Stormrider"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Stormrider"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGriffonKnight.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\WarGryphon.mdl"
+    }
+  ]
+}

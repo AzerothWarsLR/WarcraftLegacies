@@ -1,0 +1,241 @@
+{
+  "OldId": 1987068737,
+  "NewId": 925913174,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Hero)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CVP07,DataA1\u003E% chance that an attack will deal \u003CVP07,DataB1\u003E damage to nearby enemies."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HumanBloodPeasant.mdl"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HumanBloodPeasant.mdl"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPulverise.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CVP07,DataA2\u003E% chance that an attack will deal \u003CVP07,DataB2\u003E damage to nearby enemies."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CVP07,DataA3\u003E% chance that an attack will deal \u003CVP07,DataB3\u003E damage to nearby enemies."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CVP07,DataA4\u003E% chance that an attack will deal \u003CVP07,DataB4\u003E damage to nearby enemies."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Gives a chance to deal damage to nearby enemies. |n|n|cffffcc00Level 1|r - \u003CVP07,DataA1\u003E% chance, \u003CVP07,DataB1\u003E damage. |n|cffffcc00Level 2|r - \u003CVP07,DataA2\u003E% chance, \u003CVP07,DataB2\u003E damage. |n|cffffcc00Level 3|r - \u003CVP07,DataA3\u003E% chance, \u003CVP07,DataB3\u003E damage. |n|cffffcc00Level 4|r - \u003CVP07,DataA4\u003E% chance, \u003CVP07,DataB4\u003E damage."
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Pulverize - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

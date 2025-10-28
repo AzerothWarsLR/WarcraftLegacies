@@ -1,0 +1,38 @@
+{
+  "OldId": 1919842158,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1852404597,
+      "Value": 200
+    },
+    {
+      "Id": 1684632437,
+      "Value": 400
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can Bash opponents. "
+    }
+  ]
+}

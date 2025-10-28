@@ -1,0 +1,34 @@
+{
+  "OldId": 1685547074,
+  "NewId": 1228025922,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "units\\Orc\\HealingWard\\Rune2.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Corrosive Rune"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This rune reduces the armor of nearby enemy units."
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Ward)"
+    }
+  ]
+}

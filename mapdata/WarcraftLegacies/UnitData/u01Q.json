@@ -1,0 +1,166 @@
+{
+  "OldId": 828865141,
+  "NewId": 1362178165,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": 1647403381,
+      "Value": 52
+    },
+    {
+      "Id": 1634559605,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 40
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1075
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1918988405,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rgfo"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o053"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure."
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.4
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowTrollBurrow"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei Tower 2)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DraeneiTower.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Crystal Protector"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Crystal Protector"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiSpiritTower.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ArcaneObservatory"
+    },
+    {
+      "Id": 1819501173,
+      "Type": 3,
+      "Value": "OrcBuildingConstructionLoop"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,third"
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    }
+  ]
+}

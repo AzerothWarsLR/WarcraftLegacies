@@ -1,0 +1,53 @@
+{
+  "OldId": 1651730497,
+  "NewId": 859910209,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845312840,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862090056,
+      "Value": 2
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASRiflemanBurningShot.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(lordaeron)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Armor Piercing Bolts"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases damage dealt to enemy targets with Heavy armor by \u003CA0F4,DataB1,%\u003E%."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Armor Piercing Bolts"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    }
+  ]
+}

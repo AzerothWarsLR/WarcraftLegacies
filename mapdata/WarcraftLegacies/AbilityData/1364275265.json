@@ -1,0 +1,131 @@
+{
+  "OldId": 1650869057,
+  "NewId": 1364275265,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BPSE"
+    },
+    {
+      "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828535880,
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 1802726497,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,neutral,organic"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "attack"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Guild Ranger)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Aimed Shot"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals 150 damage, stunning the target for 4 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 2|r - Deals 225 damage, stunning the target for 5 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 3|r - Deals 300 damage, stunning the target for 6 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 4|r - Deals 375 damage, stunning the target for 7 seconds. Lasts 2 seconds on heroes."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Aimed Shot"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Fires an enchanted arrow at an enemy target, dealing \u003CA0QQ,DataA1\u003E damage and stunning the target for \u003CA0QQ,Dur1\u003E(\u003CA0QQ,HeroDur1,.\u003E) seconds. |nHas a \u003CA0QQ,Cast1\u003E second cast time."
+    }
+  ]
+}

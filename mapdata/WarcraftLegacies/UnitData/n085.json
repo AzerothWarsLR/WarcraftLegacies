@@ -1,0 +1,182 @@
+{
+  "OldId": 1685545582,
+  "NewId": 892874862,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Arlm,A0GN"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 120
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1634559605,
+      "Value": 30
+    },
+    {
+      "Id": 1819240309,
+      "Value": 90
+    },
+    {
+      "Id": 1919903605,
+      "Value": 40
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 1
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 828601461,
+      "Value": 0
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "h04L,e00N,ewsp"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "townhall"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Renb,R064,Rgfo"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 250
+    },
+    {
+      "Id": 1819501173,
+      "Type": 3,
+      "Value": "NightElfGrowingLoop"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels Other)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 120
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1768320117,
+      "Value": 512
+    },
+    {
+      "Id": 1868983413,
+      "Value": 512
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Athenaeum"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "|cffffcc00(Z)|r - Upgrade to Sentinel Enclave"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure, used to train Wisps."
+    }
+  ]
+}

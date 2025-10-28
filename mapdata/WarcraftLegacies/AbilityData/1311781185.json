@@ -1,0 +1,282 @@
+{
+  "OldId": 1818447425,
+  "NewId": 1311781185,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 220
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 270
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 320
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186894,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845964110,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896295758,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "creepthunderbolt"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "creepthunderbolt"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913072974,
+      "Type": 3,
+      "Value": "creepthunderbolt"
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "attack,slam"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHarvest.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Death Knight Arthas)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Apocalypse"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHarvest.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Apocalypse - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated as Zombies lasting \u003CA0YD,Cast1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals 100 damage instantly.|n|cffffcc00Level 2|r - Deals 150 damage instantly. |n|cffffcc00Level 3|r - Deals 200 damage instantly."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Apocalypse - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Apocalypse - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Apocalypse - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 100 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 150 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 200 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
+    }
+  ]
+}

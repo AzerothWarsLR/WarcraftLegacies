@@ -1,0 +1,111 @@
+{
+  "OldId": 2004121448,
+  "NewId": 1110716520,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": 1717920885,
+      "Value": 7
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": 1886741621,
+      "Value": 2
+    },
+    {
+      "Id": 1819240309,
+      "Value": 0
+    },
+    {
+      "Id": 1919903605,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": -15
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 10
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "summoned"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 400
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGolemThunderclap.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Dalaran Geomancer Rock)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Terrain\\LoardaeronRockChunks\\LoardaeronRockChunks3.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Rock"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

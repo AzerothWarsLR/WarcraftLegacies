@@ -1,0 +1,113 @@
+{
+  "OldId": 1818321509,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 8
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 21
+    },
+    {
+      "Id": 1919903605,
+      "Value": 21
+    },
+    {
+      "Id": 1836083317,
+      "Value": 400
+    },
+    {
+      "Id": 1915838837,
+      "Value": 1050
+    },
+    {
+      "Id": 1937141109,
+      "Value": 230
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "debris,ground,structure,tree,wall"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,wall,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme,Reuv,Repb"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "aline"
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": "aline"
+    },
+    {
+      "Id": 1918985077,
+      "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elegant Sentinel siege weapon."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": 1651536705,
+  "NewId": 1397184833,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "A0T7,AVYG,AGYN"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845312115,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862089331,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 878866547,
+      "Value": 4
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Val\u0027anyr Spellbook"
+    }
+  ]
+}

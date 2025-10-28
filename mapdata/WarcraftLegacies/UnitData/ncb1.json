@@ -1,0 +1,59 @@
+{
+  "OldId": 828531566,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1634559605,
+      "Value": 5
+    },
+    {
+      "Id": 1919903605,
+      "Value": 5
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 30
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R013,Rhac,Rgfo"
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

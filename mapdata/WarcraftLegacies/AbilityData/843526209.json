@@ -1,0 +1,78 @@
+{
+  "OldId": 1702316097,
+  "NewId": 843526209,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "n03V"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R000"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSeaElemental.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Tidesage)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Sea Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Sea Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a sea elemental to attack the caster\u0027s enemies. Has \u003Cn03V,realHP\u003E hit points and deals \u003Cn03V,mindmg1\u003E - \u003Cn03V,maxdmg1\u003E damage. |nLasts \u003CA0G2,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

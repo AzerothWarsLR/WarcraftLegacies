@@ -1,0 +1,95 @@
+{
+  "OldId": 1701866862,
+  "NewId": 893530222,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "st5K,ushp,h06U,n0B2,h09E,n0AV,n0AW,n0B3,n0AX,n0AU,n0AR"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 7
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "peon,sapper"
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A041,ANha,Arep"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Nzoth, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessMadness.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ScavangerCreeper.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scavenger"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Scavenger"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shade"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker unit. Can harvest gold, build structures, and Repair. "
+    }
+  ]
+}

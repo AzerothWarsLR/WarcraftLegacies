@@ -1,0 +1,38 @@
+{
+  "OldId": 1802396526,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "SCae"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 50
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1000
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Endurance Aura. Has the abilities War Stomp and Reincarnation. "
+    }
+  ]
+}

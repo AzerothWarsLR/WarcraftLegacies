@@ -1,0 +1,34 @@
+{
+  "OldId": 1634693698,
+  "NewId": 1279340610,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTreasure Chest.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Promise of Fortune"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Gallywix)"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Promise of Fortune; its attack damage and armor have been increased."
+    }
+  ]
+}

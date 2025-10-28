@@ -1,0 +1,115 @@
+{
+  "OldId": 1953456751,
+  "NewId": 1194733679,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 1
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1919903605,
+      "Value": 17
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R04R,Rguv,R006"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0PJ,A0MU,Sch5,Sdro,S000"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R097"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUndeadTransport.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HumanOilTanker.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Oil Rig Constructor"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Oil Rig Constructor"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A sturdy ship that can construct Oil Rigs."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

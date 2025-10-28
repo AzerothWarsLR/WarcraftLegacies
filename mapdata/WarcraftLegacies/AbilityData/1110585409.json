@@ -1,0 +1,217 @@
+{
+  "OldId": 1668435521,
+  "NewId": 1110585409,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828600910,
+      "Type": 3,
+      "Value": "A02N"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828600910,
+      "Type": 3,
+      "Value": "A0FF"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828600910,
+      "Type": 3,
+      "Value": "A0LG"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845378126,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845378126,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845378126,
+      "Value": 25
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong - Jergosh) (Kil\u0027jaden)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Rain of Meteors"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Rain of Meteors"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down meteors from the sky within a target radius of \u003CA02B,Area1\u003E, dealing damage to enemy units and stunning them for \u003CA02N,DataB1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CA02B,DataB1\u003E meteors dealing \u003CA02N,DataA1\u003E damage each. |n|cffffcc00Level 2|r - \u003CA02B,DataB2\u003E meteors dealing \u003CA0FF,DataA1\u003E damage each. |n|cffffcc00Level 3|r - \u003CA02B,DataB3\u003E meteors dealing \u003CA0LG,DataA1\u003E damage each."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Meteors - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Meteors - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Meteors - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CA02B,DataB1\u003E meteors from the sky that deal \u003CA02N,DataA1\u003E damage and stun for \u003CA02N,DataB1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CA02B,DataB2\u003E meteors from the sky that deal \u003CA0FF,DataA1\u003E damage and stun for \u003CA0FF,DataB1\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CA02B,DataB3\u003E meteors from the sky that deal \u003CA0LG,DataA1\u003E damage and stun for \u003CA0LG,DataB1\u003E seconds."
+    }
+  ]
+}

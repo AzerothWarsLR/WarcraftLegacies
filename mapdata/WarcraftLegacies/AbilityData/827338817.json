@@ -1,0 +1,148 @@
+{
+  "OldId": 2020098881,
+  "NewId": 827338817,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BOhx"
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 17
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 830041168,
+      "Value": 99
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846818384,
+      "Type": 3,
+      "Value": "npig,nsea,ncrb,nhmc,nrat"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863595600,
+      "Type": 3,
+      "Value": "nalb,nvul,nsno"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 880372816,
+      "Type": 3,
+      "Value": "nsha,npng"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 897150032,
+      "Type": 3,
+      "Value": "nshw,npnw"
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,organic,neutral"
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 175
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R071"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(troll - Zandalar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur1\u003E seconds. Lasts \u003CAChx,HeroDur1\u003E second on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur2\u003E seconds. Lasts 2 seconds on heroes."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "OldId": 1651074386,
+  "NewId": 1378955346,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "A060"
+    },
+    {
+      "Id": 845571431,
+      "Type": 3,
+      "Value": "rats"
+    },
+    {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 100
+    },
+    {
+      "Id": 829386087,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "h02Y"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 48
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImprovedHighElvenBows.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Enchanted Bowstrings"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Enchanted Bowstrings"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Rangers, Farstriders, Ballistas, and Sylvanas by increasing their attack range by 150 and attack speed by 5%."
+    }
+  ]
+}

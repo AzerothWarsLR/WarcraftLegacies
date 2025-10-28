@@ -1,0 +1,65 @@
+{
+  "OldId": 1651204417,
+  "NewId": 1514418241,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B094"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828533569,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 845310785,
+      "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASGruntWarcry.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Warsong Offensive"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Warsong Offensive"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the damage of friendly units within a range of \u003CA0DZ,Area1\u003E by \u003CA0DZ,DataA1,%\u003E%."
+    }
+  ]
+}

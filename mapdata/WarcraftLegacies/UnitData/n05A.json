@@ -1,0 +1,158 @@
+{
+  "OldId": 1953787502,
+  "NewId": 1094004846,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 65
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 20
+    },
+    {
+      "Id": 1886741621,
+      "Value": 5
+    },
+    {
+      "Id": 1819240309,
+      "Value": 65
+    },
+    {
+      "Id": 1919903605,
+      "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 7000
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1200
+    },
+    {
+      "Id": 1836348021,
+      "Value": 120
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1986359925,
+      "Value": 1
+    },
+    {
+      "Id": 1684632437,
+      "Value": 1800
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "o000,u019"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhac,Rosp"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "LEca,Argl"
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8Default.tga"
+    },
+    {
+      "Id": 1634559605,
+      "Value": 150
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Cthun Other)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Temple of Ahn\u0027Qiraj"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 6
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Temple of Ahn\u0027Qiraj"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    }
+  ]
+}

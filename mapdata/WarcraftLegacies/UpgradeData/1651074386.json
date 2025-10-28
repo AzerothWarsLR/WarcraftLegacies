@@ -1,0 +1,96 @@
+{
+  "OldId": 1651074386,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1651271527,
+      "Value": 75
+    },
+    {
+      "Id": 1835820903,
+      "Value": 50
+    },
+    {
+      "Id": 829386087,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "n06O"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 30
+    },
+    {
+      "Id": 1835627623,
+      "Value": 10
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Light Blue Research)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Improved Bows - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Improved Bows - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by 100."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by an additional 100."
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Improved Bows"
+    }
+  ]
+}

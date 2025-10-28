@@ -1,0 +1,72 @@
+{
+  "OldId": 1918990145,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 270
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 370
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tauren)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
+    }
+  ]
+}

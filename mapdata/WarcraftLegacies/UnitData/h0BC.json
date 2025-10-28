@@ -1,0 +1,176 @@
+{
+  "OldId": 1752392296,
+  "NewId": 1128411240,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 10
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": 1714512245,
+      "Value": 50
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1919903605,
+      "Value": 50
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1915838837,
+      "Value": 800
+    },
+    {
+      "Id": 1937141109,
+      "Value": 250
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "debris,ground,item,mechanical,nonancient,structure,ward"
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1735553909,
+      "Value": 90
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,mechanical,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R00C,R006"
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": 1852662133,
+      "Value": 300
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1250
+    },
+    {
+      "Id": 1684632437,
+      "Value": 1000
+    },
+    {
+      "Id": 1852404597,
+      "Value": 900
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Horde)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Juggernaut"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Juggernaut"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Dominating heavy ship."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Units\\Critters\\OrcJuggernaught\\OrcJuggernaught.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNJuggernaut.blp"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\Chain Grenade Orange.mdl"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    }
+  ]
+}

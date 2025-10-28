@@ -1,0 +1,34 @@
+{
+  "OldId": 1969313090,
+  "NewId": 892612674,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Living Armour"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "The Warhammer golem passively regenerates hit points."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

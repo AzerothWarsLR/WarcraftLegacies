@@ -1,0 +1,50 @@
+{
+  "OldId": 1919378753,
+  "NewId": 1479749953,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828794180,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895903044,
+      "Type": 2,
+      "Value": 0.555
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Control Point Tower)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Magic Resistance"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Control Point Resistance"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the Control Point to take 100% damage from Magic attacks regardless of armor type."
+    }
+  ]
+}

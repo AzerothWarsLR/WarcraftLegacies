@@ -1,0 +1,35 @@
+{
+  "OldId": 1852796781,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 35
+    },
+    {
+      "Id": 1635021673,
+      "Value": 3
+    },
+    {
+      "Id": 1702065513,
+      "Value": 0
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "(|cffcece00Q|r) Purchase Moonstone"
+    }
+  ]
+}

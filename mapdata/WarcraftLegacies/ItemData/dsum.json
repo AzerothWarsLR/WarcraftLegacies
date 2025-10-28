@@ -1,0 +1,43 @@
+{
+  "OldId": 1836413796,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": 1819240297,
+      "Value": 45
+    },
+    {
+      "Id": 1702065513,
+      "Value": 3
+    },
+    {
+      "Id": 1953723241,
+      "Value": 600
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Teleports \u003CAUds,DataA1\u003E of the player\u0027s non-hero units within the targeted area to the location of the Hero when used."
+    }
+  ]
+}

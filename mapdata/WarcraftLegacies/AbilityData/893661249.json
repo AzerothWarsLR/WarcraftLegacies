@@ -1,0 +1,53 @@
+{
+  "OldId": 1667318593,
+  "NewId": 893661249,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828596547,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,self,vulnerable"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Keep Commander Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Keep Commander Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 5% extra damage to the attacks of nearby friendly units."
+    }
+  ]
+}

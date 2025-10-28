@@ -1,0 +1,151 @@
+{
+  "OldId": 1885430638,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1949458805,
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 60
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 845964405,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1717920885,
+      "Value": 1
+    },
+    {
+      "Id": 1886741621,
+      "Value": 2
+    },
+    {
+      "Id": 1681023349,
+      "Value": 1
+    },
+    {
+      "Id": 1647403381,
+      "Value": 35
+    },
+    {
+      "Id": 1647468917,
+      "Value": 54
+    },
+    {
+      "Id": 1714577781,
+      "Value": 25
+    },
+    {
+      "Id": 1819240309,
+      "Value": 14
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 845441141,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1852662133,
+      "Value": 0
+    },
+    {
+      "Id": 845704565,
+      "Value": 1
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1932681589,
+      "Value": 10
+    },
+    {
+      "Id": 1937141109,
+      "Value": 80
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "e00Q"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Renb,Rgfo,Renb"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Create [|cffffcc00W|r] Corrupted Ancient Protector"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Defensive Ancient. When rooted in the ground, can hurl enormous rocks at nearby enemy units. "
+    }
+  ]
+}

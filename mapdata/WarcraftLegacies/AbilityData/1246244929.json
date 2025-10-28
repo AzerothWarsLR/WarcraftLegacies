@@ -1,0 +1,40 @@
+{
+  "OldId": 1818717505,
+  "NewId": 1246244929,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue - Towers)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Bounce Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Bounce Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives the Hunter Tower the ability to strike additional units with its bouncing attacks."
+    }
+  ]
+}

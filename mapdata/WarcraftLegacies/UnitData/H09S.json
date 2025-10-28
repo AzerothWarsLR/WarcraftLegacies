@@ -1,0 +1,156 @@
+{
+  "OldId": 1752462664,
+  "NewId": 1396256840,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 15
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 30
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "AEim,A12Y,AHtb,AHad,Aamk"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1953393013,
+      "Value": 28
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1932616053,
+      "Value": 7
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1920234357,
+      "Value": 28
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R082"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Hammer of the Light"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Vindicator Maraad"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional frontline support."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Maraad"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Maraad"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Maraad"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Vindicator Maraad.mdl"
+    }
+  ]
+}

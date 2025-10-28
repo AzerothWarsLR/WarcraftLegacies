@@ -1,0 +1,139 @@
+{
+  "OldId": 1650677057,
+  "NewId": 1160982849,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 895640405,
+      "Value": 12
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862544210,
+      "Type": 3,
+      "Value": "n067"
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895640405,
+      "Value": 99
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "Redt"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druid Talon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Crypt Lord progenerates Carrion Beetle from a target corpse to attack the Crypt Lord\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns a level 3 Dire Carrion Beetle. Max 12 Beetles."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Carrion Beetles - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Druid summons 2 spiders from nearby. The spiders are untargetable and uncontrollable and will attack enemies in proximity."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Crypt Lord progenerates Carrion Beetle from a target corpse to attack the Crypt Lord\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -7 and Burrow."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Crypt Lord progenerates Carrion Beetle from a target corpse to attack the Crypt Lord\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Crypt Lord progenerates Carrion Beetle from a target corpse to attack the Crypt Lord\u0027s enemies. Beetles are permanent. |n|nSpawns a level 3 Dire Carrion Beetle. Max 12 Beetles. |n|nGot Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Invoke Spiders"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Invoke Spiders"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
+    }
+  ]
+}

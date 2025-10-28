@@ -1,0 +1,43 @@
+{
+  "OldId": 1852273518,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ANth,ACrk,ACpv"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 25
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee amphibious unit with Pulverize. "
+    }
+  ]
+}

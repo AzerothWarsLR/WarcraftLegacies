@@ -1,0 +1,93 @@
+{
+  "OldId": 1684097089,
+  "NewId": 1160786241,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828662088,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "hero,player,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B0AY"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(warsong)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by 1.5. |n|cffffcc00Level 2|r - Increases base armor by 3. |n|cffffcc00Level 3|r - Increases base armor by 4.5. |n|cffffcc00Level 4|r - Increases base armor by 6."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blood Brothers"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 35 additional armor to your nearby heroes."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Blood Brothers"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PAS_BloodCurseV2.blp"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

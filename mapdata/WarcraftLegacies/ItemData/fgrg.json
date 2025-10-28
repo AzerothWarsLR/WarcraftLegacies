@@ -1,0 +1,57 @@
+{
+  "OldId": 1735550822,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1869767785,
+      "Value": 0
+    },
+    {
+      "Id": 1819240297,
+      "Value": 30
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1818588009,
+      "Value": 0
+    },
+    {
+      "Id": 1635021673,
+      "Value": 3
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Summons a Granite Golem."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Granite Token"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Granite Token"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Summons a Granite Golem to fight for you. Has True Sight and Hurl Boulder. |nLasts \u003CAIfr,Dur1\u003E seconds."
+    }
+  ]
+}

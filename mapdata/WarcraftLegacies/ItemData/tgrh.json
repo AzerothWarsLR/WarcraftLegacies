@@ -1,0 +1,26 @@
+{
+  "OldId": 1752328052,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1869767785,
+      "Value": 0
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTownHall.blp"
+    }
+  ]
+}

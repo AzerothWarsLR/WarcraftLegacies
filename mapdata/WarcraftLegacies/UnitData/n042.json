@@ -1,0 +1,98 @@
+{
+  "OldId": 1718511982,
+  "NewId": 842281070,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACmi,A06W,ACrk"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1647403381,
+      "Value": 65
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 40
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1400
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1634562933,
+      "Value": 2
+    },
+    {
+      "Id": 1735553909,
+      "Value": 60
+    },
+    {
+      "Id": 1953723253,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion-Archimond-Level 3)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit cloaked in demonic flames that damage nearby enemy ground units. Immune to magic. "
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "OldId": 2037599809,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846820174,
+      "Type": 3,
+      "Value": "ncg3"
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846820174,
+      "Type": 3,
+      "Value": "ncg2"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "n02C"
+    },
+    {
+      "Level": 4,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "n04M"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does 30 damage.|n|cffffcc00Level 2|r - Explosion does 60 damage.|n|cffffcc00Level 3|r - Explosion does 80 damage. |n|cffffcc00Level 4|r - Explosion does 100 damage.|nFactory lasts 40 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pocket Factory - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 450 hit points, deal 22 - 24 damage, and explode upon death, causing up to 45 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 650 hit points, deal 27 - 29 damage, and explode upon death, causing up to 90 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 850 hit points, deal 32 - 34 damage, and explode upon death, causing up to 135 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 1050 hit points, deal 37 - 39 damage, and explode upon death, causing up to 180 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "OldId": 1886615397,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "e011,edos,e00R,e010,e00L,e00T,eden,n06M,eaom,e00V,h03M,n06J,etol,emow,eshy,eate,eaow,eaoe,edob,etrp,e019"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 6
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 190
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Reuv"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0O4,Adtn,Aren,Ault"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids, Sentinels, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ancient spirit builder of the Kaldorei."
+    }
+  ]
+}

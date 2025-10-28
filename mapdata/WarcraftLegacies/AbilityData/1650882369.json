@@ -1,0 +1,43 @@
+{
+  "OldId": 1650882369,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828535880,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grey - Ogre Magi)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hurls a fiery bolt that stuns a target enemy unit for 3 seconds. deals 60 damage. Stuns Heroes for 0.5 seconds."
+    }
+  ]
+}

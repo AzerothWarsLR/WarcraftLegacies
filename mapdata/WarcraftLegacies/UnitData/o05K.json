@@ -1,0 +1,125 @@
+{
+  "OldId": 1970431855,
+  "NewId": 1261777007,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LQ,A020,Aion"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0XM"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 5
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 3.15
+    },
+    {
+      "Id": 1647403381,
+      "Value": 42
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 24
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 3
+    },
+    {
+      "Id": 1932616053,
+      "Value": 7
+    },
+    {
+      "Id": 1836083317,
+      "Value": 925
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "horse"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Savage Orc Mounted Warrior."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Pillager"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BlackrockRaiderV2.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Pillager"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ChaosGrunt"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBonechewerGrunt.blp"
+    }
+  ]
+}

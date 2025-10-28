@@ -1,0 +1,115 @@
+{
+  "OldId": 1986090305,
+  "NewId": 1111765057,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829841749,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829841749,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829841749,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829841749,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal- Kargath)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain hit points when they hit enemy units. |n|n|cffffcc00Level 1|r - Gains 10% of attack damage. |n|cffffcc00Level 2|r - Gains 15% of attack damage. |n|cffffcc00Level 3|r - Gains 20% of attack damage. |n|cffffcc00Level 4|r - Gains 25% of attack damage."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vampiric Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain 10% of their attack damage when they hit enemy units."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain 15% of their attack damage when they hit enemy units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain 20% of their attack damage when they hit enemy units."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain 25% of their attack damage when they hit enemy units."
+    }
+  ]
+}

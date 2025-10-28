@@ -1,0 +1,47 @@
+{
+  "OldId": 1952937838,
+  "NewId": 1395863662,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Water Passageway"
+    },
+    {
+      "Id": 2003137397,
+      "Value": 1
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

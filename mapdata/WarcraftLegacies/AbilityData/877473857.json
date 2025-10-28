@@ -1,0 +1,36 @@
+{
+  "OldId": 1819566657,
+  "NewId": 877473857,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R004"
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o00E"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pink/Grey - Orc Burrow, Bloodpact)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Battle Stations (|cffffcc00Q|r)"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "OldId": 1685547073,
+  "NewId": 1381445697,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1969452622,
+      "Type": 3,
+      "Value": "o02A"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an enchanted ward that empowers nearby allies, increasing the movement speed of one friendly unit by 10% and their attack speed by 20% every 1.5 seconds. While the ward exists, all Elemental Lords gain 40% evasion.The ward itself has 30% evasion.|nLasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Wind Blast.mdx"
+    }
+  ]
+}

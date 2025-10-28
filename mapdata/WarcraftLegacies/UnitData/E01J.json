@@ -1,0 +1,150 @@
+{
+  "OldId": 1920296517,
+  "NewId": 1244737605,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 23
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "AHab,A0BD,A0MH,Aamk,A0DD"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1953393013,
+      "Value": 23
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "horse"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 19
+    },
+    {
+      "Id": 1920234357,
+      "Value": 20
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": 1647403381,
+      "Value": 10
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 280
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 280
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R099"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Nobundo"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Shaman"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Farseer Nobundo"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Nobundo"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at healing allies and disrupting the enemies."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Nobundo"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Akama02.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    }
+  ]
+}

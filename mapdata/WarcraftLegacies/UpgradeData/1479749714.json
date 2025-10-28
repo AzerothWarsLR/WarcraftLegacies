@@ -1,0 +1,86 @@
+{
+  "OldId": 1702062162,
+  "NewId": 1479749714,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "A0E4"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "Ahea"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 200
+    },
+    {
+      "Id": 1752066407,
+      "Value": 1
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651078247,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnarFlamebeard.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Arathor-T3)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Conjurers"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Conjurers"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Enables the training of |cffcece00Conjurers|r, limited to 6, with the following abilities:|n|n|cffcece00Firestorm|r - Calls down a storm of fire to strike enemy units for 30 damage in a large area. Lasts 15 seconds.|n|n|cffcece00Summon Scorpions |r- Summons 4 scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal 28 -37 damage. Lasts 45 seconds.|n|n|cffcece00Invisibility|r - Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible. Lasts 120 seconds. |n|n|cffffff00Summon Reef Elemental|r|r|r - Summons 2 Reef Elementals that have the Crushing Wave Ability. Lasts 90 seconds."
+    }
+  ]
+}

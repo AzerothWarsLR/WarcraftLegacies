@@ -1,0 +1,54 @@
+{
+  "OldId": 1751347026,
+  "NewId": 1127624786,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "Asds"
+    },
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": 1651469415,
+      "Value": 0
+    },
+    {
+      "Id": 1819700327,
+      "Value": 8
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Kaboom level up"
+    }
+  ]
+}

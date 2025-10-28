@@ -1,0 +1,169 @@
+{
+  "OldId": 1919110977,
+  "NewId": 1127362881,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846357327,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829580111,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(varian)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to make all units in a small area invulnerable. |n|cffffcc00Level 1|r - 1 second duration. 200 AOE |n|cffffcc00Level 2|r - 1.5 second duration. 400 AOE |n|cffffcc00Level 3|r - 2 second duration. 600 AOE"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to make units in a 200 area of effect invulnerable for 1 second."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to make units in a 400 area of effect invulnerable for 1.5 second."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to make units in a 600 area of effect invulnerable for 3 second."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB4\u003E targets, dealing \u003CA024,DataA4\u003E damage to each of them."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Legendary Warrior"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Legendary Warrior - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/PassiveButtons/PASHolyStrikeRemake(Fix3).blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyStrikeRemake(Fix3).blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Legendary Warrior - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Legendary Warrior - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Legendary Warrior - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    }
+  ]
+}

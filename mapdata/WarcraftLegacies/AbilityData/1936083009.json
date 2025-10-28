@@ -1,0 +1,270 @@
+{
+  "OldId": 1936083009,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 33
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829646408,
+      "Type": 2,
+      "Value": 39
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 17
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863200840,
+      "Type": 2,
+      "Value": 23
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": 913532488,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 66 damage over 3 seconds, followed by 90 damage over 6 seconds. |n|cffffcc00Level 2|r - 84 damage over 3 seconds, followed by 102 damage over 6 seconds. |n|cffffcc00Level 3|r - 99 damage over 3 seconds, followed by 120 damage over 6 seconds. |n|cffffcc00Level 4|r - 117 damage over 3 seconds, followed by 138 damage over 6 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 66 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 90 damage over 6 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 84 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 102 damage over 6 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 99 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 120 damage over 6 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 117 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 138 damage over 6 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    }
+  ]
+}

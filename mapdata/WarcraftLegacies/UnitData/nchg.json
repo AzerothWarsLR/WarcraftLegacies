@@ -1,0 +1,121 @@
+{
+  "OldId": 1734894446,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0B9,A0I8,A0ES,A0EH,A020,Aion"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0EH"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 19
+    },
+    {
+      "Id": 1919903605,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 875
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 210
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R03O,Robf,R00Y,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 20
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fel Grunt"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Fel Grunt"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Brutish warrior of infused with the blood of demons."
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "NONE"
+    }
+  ]
+}

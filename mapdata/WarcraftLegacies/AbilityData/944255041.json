@@ -1,0 +1,54 @@
+{
+  "OldId": 1734636609,
+  "NewId": 944255041,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828859476,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845636692,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862413908,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879191124,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895968340,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Tornado)(Level 2)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Tornado Unit Damage"
+    }
+  ]
+}

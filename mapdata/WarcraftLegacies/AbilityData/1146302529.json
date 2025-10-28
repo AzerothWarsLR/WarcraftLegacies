@@ -1,0 +1,102 @@
+{
+  "OldId": 1751271489,
+  "NewId": 1146302529,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B062"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828924488,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862478920,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896033352,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASA08_Hammer.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(draenei)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Consecrated Slam"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\HolyAwakening_Fixed.mdx"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consecrated Slam"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit has a 100% chance to bash his target for 0.1 second and deal an additional 10 damage."
+    }
+  ]
+}

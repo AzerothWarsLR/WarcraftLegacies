@@ -1,0 +1,144 @@
+{
+  "OldId": 1919970664,
+  "NewId": 1144139880,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A02R,A0K6,A0FW,Aihn,A0ZU"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A02R"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 3
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1836083317,
+      "Value": 375
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 10
+    },
+    {
+      "Id": 1836348021,
+      "Value": 3
+    },
+    {
+      "Id": 1932616053,
+      "Value": 3
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R00J,R01V,Rhme,Rhar,Rhpm,Rguv"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "h066"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 25
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Raise Earth,- Raise Earth|n- Summon Mud Golem,- Raise Earth|n- Summon Mud Golem|n- Healing Shield,- Raise Earth|n- Summon Mud Golem|n- Healing Shield|n- Stone Armor"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\MageDalaranV1.01.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Geomancer"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Geomancer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mage adept in the means of earthbending."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master, Grandmaster"
+    }
+  ]
+}

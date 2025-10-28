@@ -1,0 +1,120 @@
+{
+  "OldId": 1701737810,
+  "NewId": 926036050,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 846163303,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 879717735,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "u00N"
+    },
+    {
+      "Id": 1651078247,
+      "Value": 20
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1835887719,
+      "Value": 0
+    },
+    {
+      "Id": 1835820903,
+      "Value": 25
+    },
+    {
+      "Id": 879125863,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 862940519,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Eredar Summoner Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Eredar Summoner Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Eredar Summoner Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Eredar Summoner Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Eredar Summoners\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Flame Shield."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Eredar Summoners\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Summon Minion."
+    }
+  ]
+}

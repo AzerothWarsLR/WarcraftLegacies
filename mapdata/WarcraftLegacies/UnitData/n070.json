@@ -1,0 +1,169 @@
+{
+  "OldId": 1801740910,
+  "NewId": 808923246,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A07C"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 6
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 24
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 300
+    },
+    {
+      "Id": 1836084597,
+      "Value": 300
+    },
+    {
+      "Id": 1769107573,
+      "Value": 6
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1853190773,
+      "Type": 1,
+      "Value": 510
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R011,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1818326901,
+      "Type": 1,
+      "Value": 510
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 975
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1936681077,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 40
+    },
+    {
+      "Id": 1915838837,
+      "Value": 600
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherDragon.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Portal)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\NetherDragon\\NetherDragon.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Nether Drake"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Nether Drake"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Swift nether drake summoned from the void."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "NetherDragon"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "OldId": 1702062162,
+  "NewId": 1280131674,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 829383527,
+      "Type": 3,
+      "Value": "ALZ1"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "h00H"
+    },
+    {
+      "Id": 879715175,
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 100
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1651078247,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "u021"
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbsorb.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(C\u0027thun)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Spell Conduction"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Spell Conduction"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Allows Obsidian Eradicators to use Spell Conduction, which causes 35% of Magic and Spell damage dealt to friendly units within a radius of 500 to be redirected to them. The damage is affected by the resistances of both the damaged unit and the Obsidian Eradicator. Also grants 100 extra Hit Points |n|n|cffc864c8Can\u0027t be researched with Shaped Obsidian.|r"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "OldId": 2053261377,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 105
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 830104136,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846881352,
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863658568,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863658568,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863658568,
+      "Value": 11
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": 913990216,
+      "Type": 2,
+      "Value": 1600
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran-Jaina)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down waves of freezing ice shards that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CAHbz,DataA1\u003E waves at \u003CAHbz,DataB1\u003E damage each. |n|cffffcc00Level 2|r - \u003CAHbz,DataA2\u003E waves at \u003CAHbz,DataB2\u003E damage each. |n|cffffcc00Level 3|r - \u003CAHbz,DataA3\u003E waves at \u003CAHbz,DataB3\u003E damage each. |n|cffffcc00Level 4|r - \u003CAHbz,DataA4\u003E waves at \u003CAHbz,DataB4\u003E damage each."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blizzard - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CAHbz,DataA4\u003E freezing ice shard waves; each wave deals \u003CAHbz,DataB4\u003E damage to units in an area."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "OldId": 1735222382,
+  "NewId": 825765998,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ARal"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 60
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1634559605,
+      "Value": 10
+    },
+    {
+      "Id": 1836083317,
+      "Value": 3000
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1920363893,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "n05F,n000"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 0
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel T0 Red)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Unfocused Demon Gate"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Demon Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Unattuned gateway, ready to summon forth the Burning Crusade."
+    }
+  ]
+}

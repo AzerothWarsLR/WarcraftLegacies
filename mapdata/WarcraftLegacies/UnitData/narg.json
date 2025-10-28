@@ -1,0 +1,38 @@
+{
+  "OldId": 1735549294,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 21
+    },
+    {
+      "Id": 1836083317,
+      "Value": 655
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit. Immune to spells. "
+    }
+  ]
+}

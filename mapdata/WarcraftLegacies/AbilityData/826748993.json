@@ -1,0 +1,42 @@
+{
+  "OldId": 1918990145,
+  "NewId": 826748993,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNSeaGiantPulverize.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Sea Giant)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0G1,DataA1\u003E% chance that an attack will deal \u003CA0G1,DataB1\u003E damage to nearby units."
+    }
+  ]
+}

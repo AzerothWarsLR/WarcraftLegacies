@@ -1,0 +1,220 @@
+{
+  "OldId": 1752458088,
+  "NewId": 1278488680,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "S003,A0QZ,A119,AEst,A09Q,A111,Aien,A08P"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 950
+    },
+    {
+      "Id": 1836212597,
+      "Type": 3,
+      "Value": "Flesh"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "ACsa"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 2
+    },
+    {
+      "Id": 1647403381,
+      "Value": 38
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 75
+    },
+    {
+      "Id": 1919903605,
+      "Value": 17
+    },
+    {
+      "Id": 1836083317,
+      "Value": 750
+    },
+    {
+      "Id": 1768975733,
+      "Value": 375
+    },
+    {
+      "Id": 1836084597,
+      "Value": 375
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1200
+    },
+    {
+      "Id": 1769107573,
+      "Value": 15
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 650
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Reib,R002,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "n06P"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNtyrandehd.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels-Elite)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SearingArrow\\SearingArrowMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Priestess of the Moon"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Priestess of the Moon"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior priestess of Elune."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroMoonPriestess"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\HeroMoonPriestess\\HeroMoonPriestess.mdl"
+    }
+  ]
+}

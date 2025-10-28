@@ -1,0 +1,136 @@
+{
+  "OldId": 1633832513,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828465742,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828465742,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828465742,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828465742,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845242958,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845242958,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845242958,
+      "Value": 4
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ebon Blade Salli)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn |cffffcc00W|r Black Arrow - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Adds extra damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons. |n|n|cffffcc00Level 1|r - \u003CANba,DataA1\u003E bonus damage. |n|cffffcc00Level 2|r - \u003CANba,DataA2\u003E bonus damage. |n|cffffcc00Level 3|r - \u003CANba,DataA3\u003E bonus damage. |n|cffffcc00Level 4|r - \u003CANba,DataA4\u003E bonus damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "|cffffcc00W|r Black Arrow - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "|cffffcc00W|r Black Arrow - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "|cffffcc00W|r Black Arrow - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "|cffffcc00W|r Black Arrow - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CANba,DataA1\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CANba,DataA2\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CANba,DataA3\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CANba,DataA4\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons."
+    }
+  ]
+}

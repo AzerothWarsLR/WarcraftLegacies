@@ -1,0 +1,24 @@
+{
+  "OldId": 1702316098,
+  "NewId": 1429483586,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosGrunt.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Fel Orc Grunt"
+    }
+  ]
+}

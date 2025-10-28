@@ -1,0 +1,168 @@
+{
+  "OldId": 846754926,
+  "NewId": 876163182,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Adts,ACm3,A09N"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1836344437,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1717920885,
+      "Value": 10
+    },
+    {
+      "Id": 1886741621,
+      "Value": 3
+    },
+    {
+      "Id": 1680957813,
+      "Value": 3
+    },
+    {
+      "Id": 1647403381,
+      "Value": 35
+    },
+    {
+      "Id": 1714512245,
+      "Value": 50
+    },
+    {
+      "Id": 1634559605,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 40
+    },
+    {
+      "Id": 1748066677,
+      "Value": 75
+    },
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1899061621,
+      "Value": 100
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 900
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 50
+    },
+    {
+      "Id": 1932616053,
+      "Value": 10
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,sapper,undead"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 0
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "doodads\\cinematic\\IcecrownObelisk\\IcecrownObelisk.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Icecrown Obelisk"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fires bolts of death. Excellent at destroying everything. Immune to magic. "
+    }
+  ]
+}

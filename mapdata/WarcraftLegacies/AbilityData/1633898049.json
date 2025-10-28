@@ -1,0 +1,117 @@
+{
+  "OldId": 1633898049,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828466030,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828466030,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828466030,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828466030,
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(true Horde Varok)"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Hero strikes with such force that he damages multiple enemies with his attack. |n|n|cffffcc00Level 1|r - 10% damage is splash. |n|cffffcc00Level 2|r - 20% damage is splash. |n|cffffcc00Level 3|r - 30% damage is splash. |n|cffffcc00Level 4|r - 40% damage is splash."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Cleaving Attack - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero strikes with such force that 15% of his damage strikes through to enemies near the primary attacked unit."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero strikes with such force that 25% of his damage strikes through to enemies near the primary attacked unit."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero strikes with such force that 35% of his damage strikes through to enemies near the primary attacked unit."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero strikes with such force that 45% of his damage strikes through to enemies near the primary attacked unit."
+    }
+  ]
+}

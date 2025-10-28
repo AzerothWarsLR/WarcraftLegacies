@@ -1,0 +1,27 @@
+{
+  "OldId": 1919906926,
+  "NewId": 863256942,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Avul,A0H9,Atsp,Aasl"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 340
+    },
+    {
+      "Id": 1936289141,
+      "Value": 200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Al\u0027akir - Level 3)"
+    }
+  ]
+}

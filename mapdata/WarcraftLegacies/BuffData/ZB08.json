@@ -1,0 +1,39 @@
+{
+  "OldId": 1634750018,
+  "NewId": 942686810,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Apocalypse"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been struck with Apocalypse; it will take damage over time will become a Zombie when it dies."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire2.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHarvest.blp"
+    }
+  ]
+}

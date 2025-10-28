@@ -1,0 +1,61 @@
+{
+  "OldId": 1668246645,
+  "NewId": 1110519925,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 30
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "enemies,ground,nonancient"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind - Flagship)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\human\\Gyrocopter\\Gyrocopter_V1.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gyrocopter"
+    },
+    {
+      "Id": 1650684789,
+      "Value": 0
+    }
+  ]
+}

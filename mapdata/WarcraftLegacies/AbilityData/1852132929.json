@@ -1,0 +1,30 @@
+{
+  "OldId": 1852132929,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Naga)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ensnare (|cffffcc00Q|r)"
+    }
+  ]
+}

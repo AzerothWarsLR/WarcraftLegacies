@@ -1,0 +1,116 @@
+{
+  "OldId": 1634954862,
+  "NewId": 1261794419,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 18
+    },
+    {
+      "Id": 1919903605,
+      "Value": 18
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 60
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "RBFC"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "u02F,shz5"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "n0AS"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth Specialist)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Pit of Torment"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "War-beast production building."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\VortexOfSacrifice.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNVortexOfSacrifice.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Pit of Torment"
+    }
+  ]
+}

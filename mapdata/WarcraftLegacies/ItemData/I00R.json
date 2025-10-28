@@ -1,0 +1,65 @@
+{
+  "OldId": 1735289699,
+  "NewId": 1378889801,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055145,
+      "Type": 3,
+      "Value": "A028,A0F6"
+    },
+    {
+      "Id": 1684628329,
+      "Type": 3,
+      "Value": "A028"
+    },
+    {
+      "Id": 1886545001,
+      "Value": 1
+    },
+    {
+      "Id": 1886677097,
+      "Value": 500000
+    },
+    {
+      "Id": 2002874473,
+      "Value": 0
+    },
+    {
+      "Id": 1634956649,
+      "Value": 1
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScytheOfElune.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Increases Intelligence and can restore mana to friendly units."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scythe of Elune"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by \u003CA0F6,DataB1\u003E. Can be used to call down a beam of moonlight a location, increasing nearby friendly units mana regeneration by \u003CA0AK,DataA1\u003E for \u003CA028,Dur1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadCreated from the merging of the Staff of Elune and Goldrinn\u0027s fang, the Scythe serves as both an embodiment of power and a caution against unbridled rage."
+    }
+  ]
+}

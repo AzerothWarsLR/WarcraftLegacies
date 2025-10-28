@@ -1,0 +1,236 @@
+{
+  "OldId": 1717718593,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00X"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00X"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00X"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B00X"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 110
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 105
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 155
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 205
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829645653,
+      "Type": 2,
+      "Value": 255
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846422869,
+      "Type": 2,
+      "Value": 2600
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 895902286,
+      "Type": 2,
+      "Value": 27
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFire.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Blast of Fire"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFire.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Blast of Fire (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Blasts a cone of fire at enemy units which deals large damage and leaves enemies on fire. |nLasts \u003CANbf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 105 damage.|n|cffffcc00Level 2|r - 155 damage.|n|cffffcc00Level 3|r - 205 damage.|n|cffffcc00Level 4|r - 255 damage.|n|cffffcc00Level 5|r - 305 damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blast of Fire - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blast of Fire - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blast of Fire - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blast of Fire - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a cone of fire at enemy units, dealing 105 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a cone of fire at enemy units, dealing 155 damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a cone of fire at enemy units, dealing 205 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a cone of fire at enemy units, dealing 255 damage."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Twilight)"
+    }
+  ]
+}

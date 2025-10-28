@@ -1,0 +1,235 @@
+{
+  "OldId": 846229109,
+  "NewId": 808464501,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Adtg,ACm2,A0C9,A0W8,A0L3,A001"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1952604533,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1836344437,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1634034805,
+      "Value": 0
+    },
+    {
+      "Id": 1717920885,
+      "Value": 24
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "divine"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 10
+    },
+    {
+      "Id": 1647403381,
+      "Value": 90
+    },
+    {
+      "Id": 1634559605,
+      "Value": 30
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1919903605,
+      "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 8840
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 1000
+    },
+    {
+      "Id": 1836084597,
+      "Value": 1000
+    },
+    {
+      "Id": 2050056565,
+      "Value": 250
+    },
+    {
+      "Id": 1852404597,
+      "Value": 1800
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1915838837,
+      "Value": 1500
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R06I"
+    },
+    {
+      "Id": 1986359925,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 11
+    },
+    {
+      "Id": 1684632437,
+      "Value": 1800
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "uaco,h00H"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,undead"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1852137845,
+      "Value": 0
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostArmor.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge Main)"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FrostWyrmMissile\\FrostWyrmMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Frozen Throne"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A fortress of ice and shadow, the Frozen Throne serves as the frigid prison of the Lich King, Ner\u0027zhul."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FrozenThrone.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "The Frozen Throne"
+    }
+  ]
+}

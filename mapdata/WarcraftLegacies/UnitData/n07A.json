@@ -1,0 +1,128 @@
+{
+  "OldId": 1869049710,
+  "NewId": 1094135918,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0DS,A0DX,Aion,ACbh"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 21
+    },
+    {
+      "Id": 1919903605,
+      "Value": 25
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1320
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": 1836348021,
+      "Value": 5
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1937141109,
+      "Value": 210
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Robs,Ropm,Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": 1835098997,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R012"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ogre Warrior"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ogre Warrior"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful frontline soldier."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Ogre\\Ogre.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOgre.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    }
+  ]
+}

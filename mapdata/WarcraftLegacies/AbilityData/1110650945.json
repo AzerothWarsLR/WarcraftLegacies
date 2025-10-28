@@ -1,0 +1,223 @@
+{
+  "OldId": 1700876097,
+  "NewId": 1110650945,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828727631,
+      "Type": 2,
+      "Value": -0.03
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828727631,
+      "Type": 2,
+      "Value": -0.06
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828727631,
+      "Type": 2,
+      "Value": -0.09
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828727631,
+      "Type": 2,
+      "Value": -0.12
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845504847,
+      "Type": 2,
+      "Value": -0.05
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845504847,
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845504847,
+      "Type": 2,
+      "Value": -0.15
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845504847,
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASCenariusHand.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids - Cenarius)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Nature Aura"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCenariusHand.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Nature Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed and attack rate.|n|n|cffffcc00Level 1|r - Decreases enemy movement speed by \u003CA03B,DataA1,%\u003E% and attack rate by \u003CA03B,DataB1,%\u003E%.|n|cffffcc00Level 2|r - Decreases enemy movement speed by \u003CA03B,DataA2,%\u003E% and attack rate by \u003CA03B,DataB2,%\u003E%.|n|cffffcc00Level 3|r - Decreases enemy movement speed by \u003CA03B,DataA3,%\u003E% and attack rate by \u003CA03B,DataB3,%\u003E%.|n|cffffcc00Level 4|r - Decreases enemy movement speed by \u003CA03B,DataA4,%\u003E% and attack rate by \u003CA03B,DataB4,%\u003E%."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA1,%\u003E% and attack rate by \u003CA03B,DataB1,%\u003E%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA2,%\u003E% and attack rate by \u003CA03B,DataB2,%\u003E%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA3,%\u003E% and attack rate by \u003CA03B,DataB3,%\u003E%."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA4,%\u003E% and attack rate by \u003CA03B,DataB4,%\u003E%."
+    }
+  ]
+}

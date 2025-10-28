@@ -1,0 +1,237 @@
+{
+  "OldId": 1836081480,
+  "NewId": 1244737608,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A06D,A0K9,MD06,A0GK,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 28
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": 1717920885,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 15
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0K3,MD01,A0UD,A122,Aamk"
+    },
+    {
+      "Id": 1953393013,
+      "Value": 23
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1768975733,
+      "Value": 275
+    },
+    {
+      "Id": 828927349,
+      "Value": 1
+    },
+    {
+      "Id": 845704565,
+      "Value": 1
+    },
+    {
+      "Id": 2050056565,
+      "Value": 10000
+    },
+    {
+      "Id": 2050122101,
+      "Value": 10000
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1915904373,
+      "Value": 100
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R06P"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 7
+    },
+    {
+      "Id": 1932681589,
+      "Value": 7
+    },
+    {
+      "Id": 1937141109,
+      "Value": 240
+    },
+    {
+      "Id": 1882349941,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1920234357,
+      "Value": 25
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1731354997,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": 846422901,
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1735553909,
+      "Value": 0
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Ashbringer"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Morgraine.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Ashbringer"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Highlord Alexandros Mograine"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Ashbringer"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnight.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Alexandros Mograine"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Holy warrior Hero, adept at dealing high damage in melee combat."
+    }
+  ]
+}

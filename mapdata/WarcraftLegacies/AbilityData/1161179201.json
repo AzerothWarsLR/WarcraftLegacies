@@ -1,0 +1,186 @@
+{
+  "OldId": 1986088513,
+  "NewId": 1161179201,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1684562785,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829841736,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829841736,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846618952,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846618952,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846618952,
+      "Type": 2,
+      "Value": 1800
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 863396168,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863396168,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863396168,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Id": 1802726497,
+      "Value": 5
+    },
+    {
+      "Id": 1986818657,
+      "Value": 10
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids - Ursoc)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": "BattleRoar"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When Avatar is activated, Ursoc gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 60 seconds.|n|n|cffffcc00Level 1|r - 5 bonus armor, 600 bonus hit points, 15 bonus damage.|n|cffffcc00Level 2|r - 10 bonus armor, 1200 bonus hit points, 30 bonus damage.|n|cffffcc00Level 3|r - 15 bonus armor, 1800 bonus hit points, 45 bonus damage."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avatar - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avatar - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give Ursoc \u003CA06E,DataA1\u003E bonus armor, \u003CA06E,DataB1\u003E bonus hit points, \u003CA06E,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA06E,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give Ursoc \u003CA06E,DataA2\u003E bonus armor, \u003CA06E,DataB2\u003E bonus hit points, \u003CA06E,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CA06E,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give Ursoc \u003CA06E,DataA3\u003E bonus armor, \u003CA06E,DataB3\u003E bonus hit points, \u003CA06E,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CA06E,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avatar - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

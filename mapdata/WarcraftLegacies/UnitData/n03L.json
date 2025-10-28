@@ -1,0 +1,271 @@
+{
+  "OldId": 1885698670,
+  "NewId": 1278423150,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240309,
+      "Value": 55
+    },
+    {
+      "Id": 1919903605,
+      "Value": 100
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1953723253,
+      "Value": 300
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1150
+    },
+    {
+      "Id": 1752591733,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A05G,A05D"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 170
+    },
+    {
+      "Id": 1735553909,
+      "Value": 300
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,sapper,undead"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1647403381,
+      "Value": 54
+    },
+    {
+      "Id": 1680957813,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 5
+    },
+    {
+      "Id": 2050056565,
+      "Value": 1000
+    },
+    {
+      "Id": 1915838837,
+      "Value": 500
+    },
+    {
+      "Id": 828535413,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 846422645,
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": 846226549,
+      "Type": 2,
+      "Value": 0.633
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.97
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.03
+    },
+    {
+      "Id": 1852137845,
+      "Value": 3
+    },
+    {
+      "Id": 1949458805,
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": 1664246133,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1647468917,
+      "Value": 54
+    },
+    {
+      "Id": 2050122101,
+      "Value": 900
+    },
+    {
+      "Id": 1915904373,
+      "Value": 300
+    },
+    {
+      "Id": 845312629,
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Id": 1731354997,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1681023349,
+      "Value": 1
+    },
+    {
+      "Id": 1932681589,
+      "Value": 5
+    },
+    {
+      "Id": 1999790453,
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R09X"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Sky Barge"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Sky Barge"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\UndeadAirBarge\\UndeadAirBarge.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "InfernalMachine"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Flying attack gunship."
+    }
+  ]
+}

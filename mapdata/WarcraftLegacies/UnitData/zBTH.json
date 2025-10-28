@@ -1,0 +1,65 @@
+{
+  "OldId": 1952933486,
+  "NewId": 1213481594,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 3
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1647403381,
+      "Value": 20
+    },
+    {
+      "Id": 1836083317,
+      "Value": 600
+    },
+    {
+      "Id": 1915838837,
+      "Value": 250
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTentacle.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A gnarly tentacle from the depths. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Spawn Tentacle - C\u0027thun)"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    }
+  ]
+}

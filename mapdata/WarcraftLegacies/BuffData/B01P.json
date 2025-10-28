@@ -1,0 +1,34 @@
+{
+  "OldId": 1685475138,
+  "NewId": 1345400898,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyAura.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "The Dark Lady\u0027s Regeneration"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of The Dark Lady\u0027s Regeneration; its hit point regeneration rate is increased by 200%."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

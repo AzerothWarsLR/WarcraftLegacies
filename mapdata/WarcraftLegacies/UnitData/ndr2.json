@@ -1,0 +1,55 @@
+{
+  "OldId": 846357614,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1836083317,
+      "Value": 690
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R008,Rusl,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0T2,A07F"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 44
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge- Death Knight)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\SkeletonBerserker.mdl"
+    }
+  ]
+}

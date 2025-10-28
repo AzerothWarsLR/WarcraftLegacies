@@ -1,0 +1,154 @@
+{
+  "OldId": 1801614447,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "S00Z,A0DS,A0DX,ANtr,Aion"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1717920885,
+      "Value": 1
+    },
+    {
+      "Id": 1647403381,
+      "Value": 24
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 17
+    },
+    {
+      "Id": 1919903605,
+      "Value": 16
+    },
+    {
+      "Id": 1836083317,
+      "Value": 635
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1915838837,
+      "Value": 500
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Robk,Rhme,Rhar,Rotr,Ropm,Rguv"
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o009"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\ForestTroll\\ForestTroll.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful yet agile troll hunters. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Axe Thrower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Axe Thrower"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Axe\\AxeMissile.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTroll.blp"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919967861,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1886151029,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

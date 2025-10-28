@@ -1,0 +1,90 @@
+{
+  "OldId": 1919903343,
+  "NewId": 1244868719,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 14
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 15
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R04R,R00C,R006,Rosp,Rhme,Rhar"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aspi,Arlm"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIronHordeForge.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Creep Research)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ForgeUndeadV1.00.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Voidforge"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Voidforge"
+    }
+  ]
+}

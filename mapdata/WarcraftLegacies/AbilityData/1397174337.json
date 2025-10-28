@@ -1,0 +1,84 @@
+{
+  "OldId": 1802723905,
+  "NewId": 1397174337,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B014"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus Elite)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Dragon Fury"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Fury"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonTalismanBlue.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CA0GS,DataB1,%\u003E% faster,move \u003CA0GS,DataA1,%\u003E% faster. Blocks all physical damage whilst absorbing and converting spell damage into an equal proportion of HP.|nLasts 8 seconds."
+    }
+  ]
+}

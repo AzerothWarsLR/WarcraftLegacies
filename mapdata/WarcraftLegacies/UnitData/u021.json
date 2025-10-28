@@ -1,0 +1,180 @@
+{
+  "OldId": 829451893,
+  "NewId": 825372789,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0RU,A0YA,Argl"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 50
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 50
+    },
+    {
+      "Id": 1634559605,
+      "Value": 25
+    },
+    {
+      "Id": 1819240309,
+      "Value": 70
+    },
+    {
+      "Id": 1919903605,
+      "Value": 35
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 90
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "RDBD,R003"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 8
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "o000,u019"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rgfo,Rhme"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1835098997,
+      "Value": 1
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,townhall"
+    },
+    {
+      "Id": 1953527157,
+      "Type": 3,
+      "Value": "u022"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 19
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ancient Temple of the Qiraji."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ruined Temple"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Ruined Temple"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun T2)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1735156597,
+      "Value": 220
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratMissile\\ZigguratMissile.mdl"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    }
+  ]
+}

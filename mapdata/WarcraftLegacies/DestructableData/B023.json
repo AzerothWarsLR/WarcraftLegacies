@@ -1,0 +1,54 @@
+{
+  "OldId": 1719096385,
+  "NewId": 858927170,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1952539490,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1936746594,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1918989410,
+      "Type": 3,
+      "Value": "decoration"
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "war3mapImported\\Ubershield Arcane.mdl"
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Draenei Shield"
+    },
+    {
+      "Id": 1668507490,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1818588002,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1684566882,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

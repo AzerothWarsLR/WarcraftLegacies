@@ -1,0 +1,51 @@
+{
+  "OldId": 1634943809,
+  "NewId": 1380921409,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828466760,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": 1886612833,
+      "Value": 1000
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(witch hunter)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds 30 bonus fire damage to an attack against enemies, but drains mana with each attack."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": 1919050050,
+  "NewId": 1362636866,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASPurify.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Communion"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effect of Communion; it has a bonus to hit point regeneration."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Alexandros)"
+    }
+  ]
+}

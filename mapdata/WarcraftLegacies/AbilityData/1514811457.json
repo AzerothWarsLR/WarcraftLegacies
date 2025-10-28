@@ -1,0 +1,38 @@
+{
+  "OldId": 1801610817,
+  "NewId": 1514811457,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829121126,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862675558,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit\u0027s attacks combust 10(30 for Heroes) mana per hit dealing damage to the attacked unit equal to the mana destroyed."
+    }
+  ]
+}

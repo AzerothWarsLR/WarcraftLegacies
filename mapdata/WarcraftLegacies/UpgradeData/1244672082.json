@@ -1,0 +1,133 @@
+{
+  "OldId": 1953523794,
+  "NewId": 1244672082,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 878797415,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 879717735,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651338343,
+      "Value": 0
+    },
+    {
+      "Id": 1835887719,
+      "Value": 0
+    },
+    {
+      "Id": 1835820903,
+      "Value": 25
+    },
+    {
+      "Id": 879125863,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 862940519,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "R012"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingSpray.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Ogre Magi Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Ogre Magri Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Ogre Magri Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Ogre Magri Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Ogre Magis\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Rejuvenation."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Ogre Magis\u0027  mana capacity, mana regeneration rate, hit points and gives them the ability to cast Healing Spray."
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    }
+  ]
+}

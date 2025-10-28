@@ -1,0 +1,213 @@
+{
+  "OldId": 1768844136,
+  "NewId": 1211117672,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0YL,ACdc,A0OM,Unho,A0W9,ACsk,Aiun"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "ACbk"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": 1634034805,
+      "Value": 2
+    },
+    {
+      "Id": 1717920885,
+      "Value": 4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 36
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 75
+    },
+    {
+      "Id": 1919903605,
+      "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1550
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 400
+    },
+    {
+      "Id": 1836084597,
+      "Value": 400
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 13
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "unp2,ZB24"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 6
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rupm,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge-Elite)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\HeroDeathKnight\\HeroDeathKnight.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1768320117,
+      "Value": 0
+    },
+    {
+      "Id": 1868983413,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Death Knight"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Death Knight"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "The loyal knights of Ner\u0027zhul."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroDeathKnight"
+    }
+  ]
+}

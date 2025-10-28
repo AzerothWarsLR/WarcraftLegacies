@@ -1,0 +1,52 @@
+{
+  "OldId": 1734963310,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": 1869571701,
+      "Value": 10
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": 1752591733,
+      "Type": 2,
+      "Value": -80
+    },
+    {
+      "Id": 1719037301,
+      "Type": 2,
+      "Value": -80
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Patrons Tier 3 1"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodelfWizard.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroPaladin"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "OldId": 829844590,
+  "NewId": 1296248942,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1717920885,
+      "Value": 3
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 6
+    },
+    {
+      "Id": 1647403381,
+      "Value": 28
+    },
+    {
+      "Id": 1836083317,
+      "Value": 825
+    },
+    {
+      "Id": 1768975733,
+      "Value": 400
+    },
+    {
+      "Id": 1836084597,
+      "Value": 400
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1919970677,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": 1932616053,
+      "Value": 4
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R01K,R033,R034,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowspawn"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SludgeMonster"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\SludgeMonster\\SludgeMonster.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSludgeCreature.blp"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\ShadowStrikeMissile.mdl"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "OldId": 1920562245,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A053,AInv,Ault,S003"
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0DP,Aamk,A01D,AEar,AEsf"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 200
+    },
+    {
+      "Id": 1953393013,
+      "Value": 27
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": 1634889845,
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1915838837,
+      "Value": 750
+    },
+    {
+      "Id": 1937141109,
+      "Value": 270
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R002,R007"
+    },
+    {
+      "Id": 1868788853,
+      "Value": 2
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2.15
+    },
+    {
+      "Id": 1920234357,
+      "Value": 22
+    },
+    {
+      "Id": 1768382837,
+      "Value": 25
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R03N"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive High Priestess"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Priestess of Elune "
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Tyrande Whisperwind"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive High Priestess"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at empowering your backline and dealing magic damage over time."
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TyrandeWhisperwind.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Tyrande"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    }
+  ]
+}

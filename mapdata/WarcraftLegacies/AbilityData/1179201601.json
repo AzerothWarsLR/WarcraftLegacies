@@ -1,0 +1,104 @@
+{
+  "OldId": 1769161537,
+  "NewId": 1179201601,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828994382,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879326030,
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862548814,
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Id": 1685221217,
+      "Type": 3,
+      "Value": "slow"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bslo"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows target enemy unit\u0027s attack speed by 40% and movement speed by 30%. |n|cffffcc00Lasts \u003CA0IF,Dur1\u003E(\u003CA0IF,HeroDur1\u003E for Heros) seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Slow"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassSlow.blp"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Slow"
+    }
+  ]
+}

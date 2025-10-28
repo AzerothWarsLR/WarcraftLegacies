@@ -1,0 +1,204 @@
+{
+  "OldId": 1852535375,
+  "NewId": 1295396943,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0GK,AInv"
+    },
+    {
+      "Id": 1768382837,
+      "Value": 34
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": 1647403381,
+      "Value": 10
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0DV,AOr2,A02G,AOww,Aamk"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 550
+    },
+    {
+      "Id": 1953393013,
+      "Value": 21
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": 1769107573,
+      "Value": 20
+    },
+    {
+      "Id": 1915838837,
+      "Value": 150
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1920234357,
+      "Value": 25
+    },
+    {
+      "Id": 1886679925,
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": 2050056565,
+      "Value": 0
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1836212597,
+      "Type": 3,
+      "Value": "Metal"
+    },
+    {
+      "Id": 1819240309,
+      "Value": 100
+    },
+    {
+      "Id": 1885823349,
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": 1717920885,
+      "Value": 2
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosBerserk.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Fire Ascendant"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\EliteTwilighAscendant2.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ascendant Councillor of Flame"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Ignacious"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Fire Ascendant"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosBerserk.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Fire Ascendant"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fighter Hero, Adept frontline damage. "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroFireLord"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    }
+  ]
+}

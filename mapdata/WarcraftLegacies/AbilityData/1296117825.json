@@ -1,0 +1,33 @@
+{
+  "OldId": 1701004097,
+  "NewId": 1296117825,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(25%)(Stormwind Champion"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit strikes with such force that 25% of their damage strikes through to enemies near the primary attacked unit."
+    }
+  ]
+}

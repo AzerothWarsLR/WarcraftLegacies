@@ -1,0 +1,168 @@
+{
+  "OldId": 1767991880,
+  "NewId": 1261711432,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.49
+    },
+    {
+      "Id": 1684824693,
+      "Value": 13
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": 1647403381,
+      "Value": 20
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": 1819240309,
+      "Value": 5
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "A0DV,Aamk,A04N,ANms"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 350
+    },
+    {
+      "Id": 1886284149,
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 18
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R04J,R05N,R051"
+    },
+    {
+      "Id": 1937141109,
+      "Value": 235
+    },
+    {
+      "Id": 1634562933,
+      "Value": 1
+    },
+    {
+      "Id": 1735553909,
+      "Value": 5
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnarFlamebeard.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran Vassal)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Rhonin.mdl"
+    },
+    {
+      "Id": 1935763573,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Dragonheart"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Rhonin"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnarFlamebeard.blp"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Choose Vassal: Rhonin"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff0000You will lose your current faction and join Dalaran as a new small 1 hero faction|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "BloodElfSorceror"
+    }
+  ]
+}

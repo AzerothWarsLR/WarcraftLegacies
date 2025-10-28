@@ -1,0 +1,168 @@
+{
+  "OldId": 1769164353,
+  "NewId": 859320385,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Sylvanas, Legion- Malganis))"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Stops all enemies in a target area from casting spells. |n|n|cffffcc00Level 1|r - Small area, lasts \u003CA083,Dur1\u003E (\u003CA083,HeroDur1\u003E  for Heroes) seconds. |n|cffffcc00Level 2|r - Medium area, lasts \u003CA083,Dur2\u003E (\u003CA083,HeroDur2\u003E for Heroes) seconds. |n|cffffcc00Level 3|r - Medium area, lasts \u003CA083,Dur3\u003E (\u003CA083,HeroDur3\u003E for Heroes) seconds. |n|cffffcc00Level 4|r - Large area, lasts \u003CA083,Dur4\u003E (\u003CA083,HeroDur4\u003E for Heroes) seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Silence - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur1\u003E seconds. \u003CA083,HeroDur1\u003E seconds for Heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur2\u003E seconds. \u003CA083,HeroDur2\u003E seconds for Heroes."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur3\u003E seconds. \u003CA083,HeroDur3\u003E seconds for Heroes."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur4\u003E seconds. \u003CA083,HeroDur4\u003E seconds for Heroes."
+    }
+  ]
+}

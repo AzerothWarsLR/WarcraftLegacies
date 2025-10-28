@@ -1,0 +1,65 @@
+{
+  "OldId": 1936084801,
+  "NewId": 945041473,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(ember cleric)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Revelation"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Reveals the area of the map that it is cast upon. Also reveals invisible units. |n|n|cffffcc00Level 1|r - Reveals a small area for \u003CAOfs,Cost1\u003E mana. |n|cffffcc00Level 2|r - Reveals a large area for \u003CAOfs,Cost2\u003E mana. |n|cffffcc00Level 3|r - Reveals a very large area for \u003CAOfs,Cost3\u003E mana.|n|cffffcc00Level 4|r - Reveals a huge area for \u003CAOfs,Cost4\u003E mana.|n|cffffcc00Level 5|r - Reveals a massive area for \u003CAOfs,Cost5\u003E mana."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Revelation"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reveals the area of the map that it is cast upon for 8 seconds. Also reveals invisible units."
+    }
+  ]
+}
