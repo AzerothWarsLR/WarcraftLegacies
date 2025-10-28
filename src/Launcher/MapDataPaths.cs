@@ -18,9 +18,6 @@ public static class MapDataPaths
   public const string DestructableDataDirectoryPath = "DestructableData";
   public const string BuffDataDirectoryPath = "BuffData";
 
-  public const string SkinDataDirectorySubPath = "Skin";
-  public const string CoreDataDirectorySubPath = "Core";
-
   public const string SoundsDirectoryPath = "Sounds";
   public const string RegionsDirectoryPath = "Regions";
   public const string UnitsDirectoryPath = "Units";
