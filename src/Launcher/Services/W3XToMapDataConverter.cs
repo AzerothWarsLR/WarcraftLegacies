@@ -110,72 +110,37 @@ public sealed class W3XToMapDataConverter
 
     if (map.UnitObjectData != null)
     {
-      SerializeAndWriteUnitData(map.UnitObjectData, objectDataMapper, false, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.UnitSkinObjectData != null)
-    {
-      SerializeAndWriteUnitData(map.UnitSkinObjectData, objectDataMapper, true, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteUnitData(map.UnitObjectData, objectDataMapper, false, outputFolderPath, UnitDataDirectoryPath);
     }
 
     if (map.AbilityObjectData != null)
     {
-      SerializeAndWriteAbilityData(map.AbilityObjectData, objectDataMapper, false, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.AbilitySkinObjectData != null)
-    {
-      SerializeAndWriteAbilityData(map.AbilitySkinObjectData, objectDataMapper, true, outputFolderPath, AbilityDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteAbilityData(map.AbilityObjectData, objectDataMapper, false, outputFolderPath, AbilityDataDirectoryPath);
     }
 
     if (map.ItemObjectData != null)
     {
-      SerializeAndWriteItemData(map.ItemObjectData, objectDataMapper, false, outputFolderPath, ItemDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.ItemSkinObjectData != null)
-    {
-      SerializeAndWriteItemData(map.ItemSkinObjectData, objectDataMapper, true, outputFolderPath, ItemDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteItemData(map.ItemObjectData, objectDataMapper, false, outputFolderPath, ItemDataDirectoryPath);
     }
 
     if (map.DestructableObjectData != null)
     {
-      SerializeAndWriteDestructableData(map.DestructableObjectData, objectDataMapper, false, outputFolderPath, DestructableDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.DestructableSkinObjectData != null)
-    {
-      SerializeAndWriteDestructableData(map.DestructableSkinObjectData, objectDataMapper, true, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteDestructableData(map.DestructableObjectData, objectDataMapper, false, outputFolderPath, DestructableDataDirectoryPath);
     }
 
     if (map.DoodadObjectData != null)
     {
-      SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.DoodadSkinObjectData != null)
-    {
-      SerializeAndWriteDoodadData(map.DoodadSkinObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath);
     }
 
     if (map.BuffObjectData != null)
     {
-      SerializeAndWriteBuffData(map.BuffObjectData, objectDataMapper, false, outputFolderPath, BuffDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.BuffSkinObjectData != null)
-    {
-      SerializeAndWriteBuffData(map.BuffSkinObjectData, objectDataMapper, true, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteBuffData(map.BuffObjectData, objectDataMapper, false, outputFolderPath, BuffDataDirectoryPath);
     }
 
     if (map.UpgradeObjectData != null)
     {
-      SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
-    }
-
-    if (map.UpgradeSkinObjectData != null)
-    {
-      SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath);
     }
   }
 

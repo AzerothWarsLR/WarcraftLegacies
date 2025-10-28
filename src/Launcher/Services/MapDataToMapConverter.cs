@@ -83,21 +83,21 @@ public sealed class MapDataToMapConverter
       Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),
       Triggers = GenerateEmptyMapTriggers(),
 
-      AbilityObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath, CoreDataDirectorySubPath)),
-      BuffObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath, CoreDataDirectorySubPath)),
-      DestructableObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath, CoreDataDirectorySubPath)),
-      DoodadObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath, CoreDataDirectorySubPath)),
-      ItemObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath, CoreDataDirectorySubPath)),
-      UnitObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath, CoreDataDirectorySubPath)),
-      UpgradeObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, CoreDataDirectorySubPath)),
+      AbilityObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath)),
+      BuffObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath)),
+      DestructableObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath)),
+      DoodadObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath)),
+      ItemObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath)),
+      UnitObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath)),
+      UpgradeObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath)),
 
-      AbilitySkinObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath, SkinDataDirectorySubPath)),
-      BuffSkinObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath, SkinDataDirectorySubPath)),
-      DestructableSkinObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath, SkinDataDirectorySubPath)),
-      DoodadSkinObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath, SkinDataDirectorySubPath)),
-      ItemSkinObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath, SkinDataDirectorySubPath)),
-      UnitSkinObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath, SkinDataDirectorySubPath)),
-      UpgradeSkinObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, SkinDataDirectorySubPath))
+      AbilitySkinObjectData = new AbilityObjectData(ObjectDataFormatVersion.v3),
+      BuffSkinObjectData = new BuffObjectData(ObjectDataFormatVersion.v3),
+      DestructableSkinObjectData = new DestructableObjectData(ObjectDataFormatVersion.v3),
+      DoodadSkinObjectData = new DoodadObjectData(ObjectDataFormatVersion.v3),
+      ItemSkinObjectData = new ItemObjectData(ObjectDataFormatVersion.v3),
+      UnitSkinObjectData = new UnitObjectData(ObjectDataFormatVersion.v3),
+      UpgradeSkinObjectData = new UpgradeObjectData(ObjectDataFormatVersion.v3)
     };
     return map;
   }
