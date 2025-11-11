@@ -2,9 +2,9 @@
 
 namespace Launcher.DataTransferObjects;
 
-public class UnitObjectDataDto
+public sealed class UnitObjectDataDto
 {
-  public int FormatVersion { get; set; }
-  public SimpleObjectModification[] BaseUnits { get; set; }
-  public SimpleObjectModification[] NewUnits { get; set; }
+  public int FormatVersion { get; init; }
+
+  public SimpleObjectModification[] Units { get; init; }
 }

@@ -28,32 +28,32 @@ public static class MapExtensions
     var objectDatabase = new ObjectDatabase();
     if (map.AbilityObjectData != null)
     {
-      objectDatabase.AddObjects(map.AbilityObjectData, map.AbilitySkinObjectData);
+      objectDatabase.AddObjects(map.AbilityObjectData, new AbilityObjectData(ObjectDataFormatVersion.v3));
     }
 
     if (map.BuffObjectData != null)
     {
-      objectDatabase.AddObjects(map.BuffObjectData, map.BuffSkinObjectData);
+      objectDatabase.AddObjects(map.BuffObjectData, new BuffObjectData(ObjectDataFormatVersion.v3));
     }
     //if (map.DestructableObjectData != null) objectDatabase.AddObjects(map.DestructableObjectData);
     if (map.DoodadObjectData != null)
     {
-      objectDatabase.AddObjects(map.DoodadObjectData, map.DoodadSkinObjectData);
+      objectDatabase.AddObjects(map.DoodadObjectData, new DoodadObjectData(ObjectDataFormatVersion.v3));
     }
 
     if (map.ItemObjectData != null)
     {
-      objectDatabase.AddObjects(map.ItemObjectData, map.ItemSkinObjectData);
+      objectDatabase.AddObjects(map.ItemObjectData, new ItemObjectData(ObjectDataFormatVersion.v3));
     }
 
     if (map.UnitObjectData != null)
     {
-      objectDatabase.AddObjects(map.UnitObjectData, map.UnitSkinObjectData);
+      objectDatabase.AddObjects(map.UnitObjectData, new UnitObjectData(ObjectDataFormatVersion.v3));
     }
 
     if (map.UpgradeObjectData != null)
     {
-      objectDatabase.AddObjects(map.UpgradeObjectData, map.UpgradeSkinObjectData);
+      objectDatabase.AddObjects(map.UpgradeObjectData, new UpgradeObjectData(ObjectDataFormatVersion.v3));
     }
 
     return objectDatabase;

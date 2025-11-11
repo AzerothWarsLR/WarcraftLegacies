@@ -9,124 +9,184 @@ namespace Launcher.DTOMappers;
 /// <summary>
 /// Responsible for converting ObjectData files to their Data Transfer Object equivalents.
 /// </summary>
-public sealed class ObjectDataMapper
+public sealed class ObjectDataMapper(TriggerStringDictionary triggerStrings)
 {
-  private readonly TriggerStringDictionary _triggerStrings;
-
-  public ObjectDataMapper(TriggerStringDictionary triggerStrings) => _triggerStrings = triggerStrings;
-
   /// <summary>
   /// Converts a <see cref="UnitObjectData"/> object to its <see cref="UnitObjectDataDto"/> equivalent.
   /// </summary>
-  /// <param name="objectData">The objects to convert.</param>
-  /// <param name="substituteTriggerStrings">If supplied, unit data values that point to trigger string keys will instead be
-  /// replaced with the value of those keys.</param>
-  public UnitObjectDataDto MapToDto(UnitObjectData objectData, bool substituteTriggerStrings)
+  /// <remarks>Unit data values that point to trigger string keys will instead be
+  /// replaced with the value of those keys.</remarks>
+  /// <param name="objectData">Core data to include.</param>
+  /// <param name="skinData">Skin data to include.</param>
+  public UnitObjectDataDto MapToDto(UnitObjectData objectData, UnitObjectData? skinData)
   {
+    var coreUnits = objectData.BaseUnits.Concat(objectData.NewUnits).ToArray();
+    if (skinData != null)
+    {
+      var skinUnits = skinData.BaseUnits.Concat(skinData.NewUnits).ToDictionary(x => x.GetId());
+      foreach (var coreUnit in coreUnits)
+      {
+        if (skinUnits.TryGetValue(coreUnit.GetId(), out var skinUnit))
+        {
+          coreUnit.Modifications.AddRange(skinUnit.Modifications);
+        }
+      }
+    }
+
     var dto = new UnitObjectDataDto
     {
       FormatVersion = 0,
-      BaseUnits = objectData.BaseUnits
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewUnits = objectData.NewUnits
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Units = coreUnits.Select(MapSimpleModificationToDto).ToArray()
     };
     return dto;
   }
 
-  public MapBuffObjectDataDto MapToDto(BuffObjectData objectData, bool substituteTriggerStrings)
+  public MapBuffObjectDataDto MapToDto(BuffObjectData objectData, BuffObjectData? skinData)
   {
+    var coreBuffs = objectData.BaseBuffs.Concat(objectData.NewBuffs).ToArray();
+    if (skinData != null)
+    {
+      var skinBuffs = skinData.BaseBuffs.Concat(skinData.NewBuffs).ToDictionary(x => x.GetId());
+
+      foreach (var coreBuff in coreBuffs)
+      {
+        if (skinBuffs.TryGetValue(coreBuff.GetId(), out var skinBuff))
+        {
+          coreBuff.Modifications.AddRange(skinBuff.Modifications);
+        }
+      }
+    }
+
     var dto = new MapBuffObjectDataDto
     {
       FormatVersion = 0,
-      BaseBuffs = objectData.BaseBuffs
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewBuffs = objectData.NewBuffs
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Buffs = coreBuffs.Select(MapSimpleModificationToDto).ToArray()
     };
     return dto;
   }
 
-  public MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, bool substituteTriggerStrings)
+
+  public MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, DoodadObjectData? skinData)
   {
+    var coreDoodads = objectData.BaseDoodads.Concat(objectData.NewDoodads).ToArray();
+    if (skinData != null)
+    {
+      var skinDoodads = skinData.BaseDoodads.Concat(skinData.NewDoodads).ToDictionary(x => x.GetId());
+
+      foreach (var coreDoodad in coreDoodads)
+      {
+        if (skinDoodads.TryGetValue(coreDoodad.GetId(), out var skinDoodad))
+        {
+          coreDoodad.Modifications.AddRange(skinDoodad.Modifications);
+        }
+      }
+    }
+
     var dto = new MapDoodadObjectDataDto
     {
       FormatVersion = 0,
-      BaseDoodads = objectData.BaseDoodads
-        .Select(x => MapVariationModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewDoodads = objectData.NewDoodads
-        .Select(x => MapVariationModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Doodads = coreDoodads.Select(MapVariationModificationToDto).ToArray()
     };
     return dto;
   }
 
-  public MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData, bool substituteTriggerStrings)
+  public MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData, DestructableObjectData? skinData)
   {
+    var coreDestructables = objectData.BaseDestructables.Concat(objectData.NewDestructables).ToArray();
+    if (skinData != null)
+    {
+      var skinDestructables = skinData.BaseDestructables.Concat(skinData.NewDestructables).ToDictionary(x => x.GetId());
+
+      foreach (var coreDestructable in coreDestructables)
+      {
+        if (skinDestructables.TryGetValue(coreDestructable.GetId(), out var skinDestructable))
+        {
+          coreDestructable.Modifications.AddRange(skinDestructable.Modifications);
+        }
+      }
+    }
+
     var dto = new MapDestructableObjectDataDto
     {
       FormatVersion = 0,
-      BaseDestructables = objectData.BaseDestructables
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewDestructables = objectData.NewDestructables
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Destructables = coreDestructables.Select(MapSimpleModificationToDto).ToArray()
     };
     return dto;
   }
 
-  public MapItemObjectDataDto MapToDto(ItemObjectData objectData, bool substituteTriggerStrings)
+  public MapItemObjectDataDto MapToDto(ItemObjectData objectData, ItemObjectData? skinData)
   {
+    var coreItems = objectData.BaseItems.Concat(objectData.NewItems).ToArray();
+    if (skinData != null)
+    {
+      var skinItems = skinData.BaseItems.Concat(skinData.NewItems).ToDictionary(x => x.GetId());
+
+      foreach (var coreItem in coreItems)
+      {
+        if (skinItems.TryGetValue(coreItem.GetId(), out var skinItem))
+        {
+          coreItem.Modifications.AddRange(skinItem.Modifications);
+        }
+      }
+    }
+
     var dto = new MapItemObjectDataDto
     {
       FormatVersion = 0,
-      BaseItems = objectData.BaseItems
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewItems = objectData.NewItems
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Items = coreItems.Select(MapSimpleModificationToDto).ToArray()
     };
     return dto;
   }
 
-  public MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData, bool substituteTriggerStrings)
+  public MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData, AbilityObjectData? skinData)
   {
+    var coreAbilities = objectData.BaseAbilities.Concat(objectData.NewAbilities).ToArray();
+    if (skinData != null)
+    {
+      var skinAbilities = skinData.BaseAbilities.Concat(skinData.NewAbilities).ToDictionary(x => x.GetId());
+
+      foreach (var coreAbility in coreAbilities)
+      {
+        if (skinAbilities.TryGetValue(coreAbility.GetId(), out var skinAbility))
+        {
+          coreAbility.Modifications.AddRange(skinAbility.Modifications);
+        }
+      }
+    }
+
     var dto = new MapAbilityObjectDataDto
     {
       FormatVersion = 0,
-      BaseAbilities = objectData.BaseAbilities
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewAbilities = objectData.NewAbilities
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Abilities = coreAbilities.Select(MapLevelModificationToDto).ToArray()
     };
     return dto;
   }
 
-  public MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData, bool substituteTriggerStrings)
+  public MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData, UpgradeObjectData? skinData)
   {
+    var coreUpgrades = objectData.BaseUpgrades.Concat(objectData.NewUpgrades).ToArray();
+    if (skinData != null)
+    {
+      var skinUpgrades = skinData.BaseUpgrades.Concat(skinData.NewUpgrades).ToDictionary(x => x.GetId());
+
+      foreach (var coreUpgrade in coreUpgrades)
+      {
+        if (skinUpgrades.TryGetValue(coreUpgrade.GetId(), out var skinUpgrade))
+        {
+          coreUpgrade.Modifications.AddRange(skinUpgrade.Modifications);
+        }
+      }
+    }
+
     var dto = new MapUpgradeObjectDataDto
     {
       FormatVersion = 0,
-      BaseUpgrades = objectData.BaseUpgrades
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
-        .ToArray(),
-      NewUpgrades = objectData.NewUpgrades
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
-        .ToArray()
+      Upgrades = coreUpgrades.Select(MapLevelModificationToDto).ToArray()
     };
     return dto;
   }
 
-  private SimpleObjectModification MapSimpleModificationToDto(SimpleObjectModification simpleObjectModification, bool substituteTriggerStrings)
+  private SimpleObjectModification MapSimpleModificationToDto(SimpleObjectModification simpleObjectModification)
   {
     var ignoredDataModifications = new List<int>
     {
@@ -147,14 +207,14 @@ public sealed class ObjectDataMapper
         0
       },
       Modifications = simpleObjectModification.Modifications
-        .Select(x => MapObjectDataModificationToDto(x, substituteTriggerStrings))
+        .Select(MapObjectDataModificationToDto)
         .Where(x => !ignoredDataModifications.Contains(x.Id))
         .ToList()
     };
     return dto;
   }
 
-  private LevelObjectModification MapLevelModificationToDto(LevelObjectModification objectModification, bool substituteTriggerStrings)
+  private LevelObjectModification MapLevelModificationToDto(LevelObjectModification objectModification)
   {
     var dto = new LevelObjectModification
     {
@@ -165,13 +225,13 @@ public sealed class ObjectDataMapper
         0
       },
       Modifications = objectModification.Modifications
-        .Select(x => MapLevelObjectDataModificationToDto(x, substituteTriggerStrings))
+        .Select(MapLevelObjectDataModificationToDto)
         .ToList()
     };
     return dto;
   }
 
-  private VariationObjectModification MapVariationModificationToDto(VariationObjectModification objectModification, bool substituteTriggerStrings)
+  private VariationObjectModification MapVariationModificationToDto(VariationObjectModification objectModification)
   {
     var dto = new VariationObjectModification
     {
@@ -182,17 +242,17 @@ public sealed class ObjectDataMapper
         0
       },
       Modifications = objectModification.Modifications
-        .Select(x => MapVariationObjectDataModificationToDto(x, substituteTriggerStrings))
+        .Select(MapVariationObjectDataModificationToDto)
         .ToList()
     };
     return dto;
   }
 
   private SimpleObjectDataModification MapObjectDataModificationToDto(
-    SimpleObjectDataModification objectDataModification, bool substituteTriggerStrings)
+    SimpleObjectDataModification objectDataModification)
   {
-    var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
-      ? _triggerStrings[objectDataModification.Value as string]
+    var value = TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
+      ? triggerStrings[objectDataModification.Value as string]
       : objectDataModification.Value;
 
     return new SimpleObjectDataModification
@@ -204,10 +264,10 @@ public sealed class ObjectDataMapper
   }
 
   private LevelObjectDataModification MapLevelObjectDataModificationToDto(
-    LevelObjectDataModification objectDataModification, bool substituteTriggerStrings)
+    LevelObjectDataModification objectDataModification)
   {
-    var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
-      ? _triggerStrings[objectDataModification.Value as string]
+    var value = TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
+      ? triggerStrings[objectDataModification.Value as string]
       : objectDataModification.Value;
 
     return new LevelObjectDataModification
@@ -221,10 +281,10 @@ public sealed class ObjectDataMapper
   }
 
   private VariationObjectDataModification MapVariationObjectDataModificationToDto(
-    VariationObjectDataModification objectDataModification, bool substituteTriggerStrings)
+    VariationObjectDataModification objectDataModification)
   {
-    var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
-      ? _triggerStrings[objectDataModification.Value as string]
+    var value = TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
+      ? triggerStrings[objectDataModification.Value as string]
       : objectDataModification.Value;
 
     return new VariationObjectDataModification
