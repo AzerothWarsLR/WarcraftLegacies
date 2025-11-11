@@ -5,6 +5,6 @@ namespace Launcher.DataTransferObjects;
 public class MapDestructableObjectDataDto
 {
   public int FormatVersion { get; set; }
-  public SimpleObjectModification[] BaseDestructables { get; set; }
-  public SimpleObjectModification[] NewDestructables { get; set; }
+
+  public SimpleObjectModification[] Destructables { get; set; }
 }

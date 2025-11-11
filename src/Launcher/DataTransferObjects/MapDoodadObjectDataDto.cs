@@ -5,6 +5,6 @@ namespace Launcher.DataTransferObjects;
 public class MapDoodadObjectDataDto
 {
   public int FormatVersion { get; set; }
-  public VariationObjectModification[] BaseDoodads { get; set; }
-  public VariationObjectModification[] NewDoodads { get; set; }
+
+  public VariationObjectModification[] Doodads { get; set; }
 }

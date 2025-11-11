@@ -37,11 +37,11 @@ public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFi
 
   private static IEnumerable<string> GetModelsUsedInMap(Map map)
   {
-    return GetModelsUsedByUnits(map.UnitSkinObjectData)
-      .Concat(GetModelsUsedByAbilities(map.AbilitySkinObjectData))
+    return GetModelsUsedByUnits(map.UnitObjectData)
+      .Concat(GetModelsUsedByAbilities(map.AbilityObjectData))
       .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
-      .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData))
-      .Concat(GetModelsUsedByDestructables(map.DestructableSkinObjectData))
+      .Concat(GetModelsUsedByBuffs(map.BuffObjectData))
+      .Concat(GetModelsUsedByDestructables(map.DestructableObjectData))
       .Concat(GetModelsUsedByScript(map.Script))
       .Select(x => x.NormalizeModelPath());
   }
