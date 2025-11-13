@@ -103,6 +103,66 @@
     {
       "Id": 1932616053,
       "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Core Hound"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Core Hound"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Two-headed rock chewer from the Firelands."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CoreHoundOptimized.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCoreHoundIcon.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 280
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 280
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 120
     }
   ]
 }

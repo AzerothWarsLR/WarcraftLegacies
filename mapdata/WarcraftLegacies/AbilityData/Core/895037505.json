@@ -117,6 +117,53 @@
     {
       "Id": 1986358369,
       "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Elemental Lord)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0KC,DataA2\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0KC,DataB2\u003E damage to all nearby hostile units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0KC,DataA3\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0KC,DataB3\u003E damage to all nearby hostile units."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0Y5,DataB1\u003E damage to all nearby hostile units."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Incinerate"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

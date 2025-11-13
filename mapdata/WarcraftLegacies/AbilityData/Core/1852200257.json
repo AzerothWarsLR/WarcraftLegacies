@@ -107,6 +107,38 @@
     {
       "Id": 1986358369,
       "Value": 4
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Lich Kel\u0027Thuzad)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate for 6 seconds. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 125 target damage, 150 nova damage. |n|cffffcc00Level 3|r - 150 target damage, 200 nova damage. |n|cffffcc00Level 4|r - 175 target damage, 250 nova damage."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Frost Nova - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of frost that deals \u003CAUfn,DataB4\u003E damage to the target, and \u003CAUfn,DataA4\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CAUfn,Dur4\u003E seconds."
     }
   ]
 }

@@ -3,5 +3,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dragonspawn Warrior"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Evasion. "
+    }
+  ]
 }

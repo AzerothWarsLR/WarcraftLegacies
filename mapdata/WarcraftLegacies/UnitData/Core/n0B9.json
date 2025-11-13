@@ -187,6 +187,60 @@
       "Id": 1819239285,
       "Type": 2,
       "Value": 8
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Trading Zeppelin"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Flying Lumber Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will collect Lumber over time. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gallywix Personal Transport"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GRA-1.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpaceOrc_AttackHelicopter_Condor.blp"
     }
   ]
 }

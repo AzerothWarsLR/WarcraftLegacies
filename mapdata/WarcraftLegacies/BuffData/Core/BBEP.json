@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Paralysing Fear"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\Bondage Purple SD.mdx"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is paralysed; its movement speed and attack rate are drastically reduced."
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_Faceless_OLDGODS.blp"
+    }
+  ]
 }

@@ -115,6 +115,58 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R01N,R00B,Rhar,Rhme,Rhpm,Rguv"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Lordaeron-Demi)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 188
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Captain Falric"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 188
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Captain Falric"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Loyal Captain of Arthas, and his acting right hand. Falric has been with the prince since his youth, and is a strong follower. Him and his friend, Marwyn, are the closest to Arthas."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFalric.blp"
     }
   ]
 }

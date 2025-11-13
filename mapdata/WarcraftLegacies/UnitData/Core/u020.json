@@ -68,6 +68,74 @@
     {
       "Id": 1634559605,
       "Value": 15
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Monument"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Monument"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun T1)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 220
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3.5
     }
   ]
 }

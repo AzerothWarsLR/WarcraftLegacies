@@ -29,6 +29,21 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Buff Applicator)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Energy Wave"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
     }
   ]
 }

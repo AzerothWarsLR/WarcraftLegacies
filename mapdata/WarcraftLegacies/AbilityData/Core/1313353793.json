@@ -49,6 +49,61 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,mechanical,self,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASNavalAura.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Boralus Keep, Auberdine)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Naval Aura"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Naval Aura."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances friendly ships within a radius of \u003CA0HN,Area1\u003E by increasing their movement speed by \u003CA0HN,DataA1,%\u003E and hit point regeneration per second by \u003CA0HN,DataB1\u003E."
     }
   ]
 }

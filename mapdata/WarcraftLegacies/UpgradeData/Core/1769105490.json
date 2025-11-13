@@ -17,6 +17,30 @@
       "Id": 1902473831,
       "Type": 3,
       "Value": "h07G"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Long Rifles"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the range of Riflemen and Engineers attacks by 200."
     }
   ]
 }

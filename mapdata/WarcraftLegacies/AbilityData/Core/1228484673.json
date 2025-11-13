@@ -10,6 +10,21 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 1000
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pink - Thunder Bluff)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 10% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

@@ -131,6 +131,99 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "u01G"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArchnathidDK.blp"
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun Silithid Reaver)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported/Scorpion.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BristleBackMissile\\BristleBackMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Crematogaster"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Crematogaster"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Hunting soldier of the Qiraji."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "CryptFiend"
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
     }
   ]
 }

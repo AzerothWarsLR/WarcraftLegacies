@@ -7,6 +7,24 @@
     {
       "Id": 1819240297,
       "Value": 40
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Animates the dead to fight for you, for a mere 9 seconds. These summoned by this scroll shall enjoy an invulnerable, if brief, second life."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
     }
   ]
 }

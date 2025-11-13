@@ -185,6 +185,100 @@
       "Id": 1949393269,
       "Type": 3,
       "Value": "magic"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathSeer.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DeathSeerV1.03.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 76
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Orcish Death Knight"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.85
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 200
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 200
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Orcish Death Knight"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "The Old Death Knights from the second war. "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroLich"
     }
   ]
 }

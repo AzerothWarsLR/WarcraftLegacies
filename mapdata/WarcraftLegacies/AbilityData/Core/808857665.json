@@ -108,6 +108,38 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Farstrider)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Splintering Arrows"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Splintering Arrows"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Farstriders shoot their arrows with great force and precision, causes the Farstriders attacks to do area of effect damage. |n|nDeals half damage in a radius of 50 and slightly less beyond that."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

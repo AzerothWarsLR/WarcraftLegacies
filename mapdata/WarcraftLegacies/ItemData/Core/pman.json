@@ -20,6 +20,16 @@
     {
       "Id": 1869902697,
       "Value": 3
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Restores 175 mana when used."
     }
   ]
 }

@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "war3mapImported\\HolyTornado.mdx"
+    }
+  ]
 }

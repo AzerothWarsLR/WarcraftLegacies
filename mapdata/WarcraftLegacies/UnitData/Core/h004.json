@@ -52,6 +52,46 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rgfo,Rosp"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarketplace.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\ForestTrollHut0\\ForestTrollHut0.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Troll Hut"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Frostwolf Farm)"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Troll Hut"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

@@ -40,6 +40,41 @@
       "Id": 1664180597,
       "Type": 2,
       "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Earth Elemental"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\EarthElemental.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncientProtectorMissile\\AncientProtectorMissile.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "RockGolem"
     }
   ]
 }

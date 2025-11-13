@@ -82,6 +82,46 @@
     {
       "Id": 1836083317,
       "Value": 1100
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fel Guard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Fel Guard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mainstay soldier of the Legion."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelGuardBlue.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\demon\\FelgaurdBlue\\FelgaurdBlue.mdl"
     }
   ]
 }

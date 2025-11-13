@@ -168,6 +168,103 @@
     {
       "Id": 1932616053,
       "Value": 8
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1886151029,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1919967861,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "NONE"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Portal)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\EvilIllidan\\IllidanEvil.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 120
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\DemonHunterMissile\\DemonHunterMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Terrorguard"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Terrorguard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Winged demon-cousin of the Doomguard, and bringer of shadow and misery."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
     }
   ]
 }

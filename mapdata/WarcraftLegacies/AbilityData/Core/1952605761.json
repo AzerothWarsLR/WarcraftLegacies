@@ -356,6 +356,114 @@
       "Id": 829121126,
       "Type": 2,
       "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 8|r]"
+    },
+    {
+      "Level": 9,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feedback- [|cffffcc00Level 9|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 10 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 15 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 20 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 25 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 30 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 35 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 7,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 40 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 8,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 45 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
+    },
+    {
+      "Level": 9,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower\u0027s attacks combust 24 mana per hit against any unit, causing bonus damage equal to the mana destroyed. 12 mana burned on heroes.|n|nAdditionally, attacks made by this tower cause 50 bonus damage against summoned units. |n|n|cffe8e800Benefits from damage upgrades.|r"
     }
   ]
 }

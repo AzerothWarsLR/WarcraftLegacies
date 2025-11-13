@@ -23,6 +23,26 @@
       "Id": 1819239285,
       "Type": 2,
       "Value": 8
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Zuluhed-Level 1)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\orc\\StasisTotem\\StasisTotem.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Bloodlust Totem"
     }
   ]
 }

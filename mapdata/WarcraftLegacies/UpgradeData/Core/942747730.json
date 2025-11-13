@@ -66,6 +66,50 @@
       "Id": 829386087,
       "Type": 2,
       "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMonsoon.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Improved Lightning Barrage"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Improved Lightning Barrage"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the attack speed bonus of Lightning Barrage from 150% to 250%."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
     }
   ]
 }

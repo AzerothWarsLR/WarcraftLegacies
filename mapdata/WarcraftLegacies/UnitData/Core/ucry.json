@@ -92,6 +92,26 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R008,ugrv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Nerubian husk raised for the Scourge."
     }
   ]
 }

@@ -100,6 +100,34 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 525
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Explorer,Longbowmen,Hunt,Raider)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ensnare - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ensnare - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CAens,Dur2\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
     }
   ]
 }

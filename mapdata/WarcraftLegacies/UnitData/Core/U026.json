@@ -100,6 +100,85 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Meredith"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\MeredithWaycrestV1.01.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Matriarch of House Waycrest"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Meredith"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, frail with extremely potent offensive and disruptive abilities."
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Meredith Waycrest"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Sorceress"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Meredith"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
     }
   ]
 }

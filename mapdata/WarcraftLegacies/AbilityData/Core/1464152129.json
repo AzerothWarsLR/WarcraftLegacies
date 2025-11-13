@@ -37,6 +37,16 @@
       "Id": 862413908,
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran Shield)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Damage Aura level 3"
     }
   ]
 }

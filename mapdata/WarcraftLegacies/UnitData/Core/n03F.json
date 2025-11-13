@@ -133,6 +133,55 @@
     {
       "Id": 1919903349,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlack hand.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong-Elite)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\OrcHero.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Kor\u0027kron Elite"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite Guards of the Warsong Clan."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Kor\u0027kron Elite"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ChaosWarlord"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
     }
   ]
 }

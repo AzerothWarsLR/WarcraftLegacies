@@ -65,6 +65,102 @@
       "Id": 862940519,
       "Type": 2,
       "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSummonWaterElemental.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFreeze.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Hydromancer Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Hydromancer Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Hydromancer Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Hydromancer Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Hydromancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Summon Water Elemental."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Hydromancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Storm Cloud."
+    },
+    {
+      "Level": 3,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFreeze.blp"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Hydromancer Grandmaster Training"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Hydromancer Grandmaster Training"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Hydromancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability Freezing Shots."
     }
   ]
 }

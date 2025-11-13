@@ -25,6 +25,33 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R098"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Fel Grunt)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the Fel Grunt to transform into a Skeletal Grunt upon death, allowing it to continue fighting for 40 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Fel Infused Skeleton"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fel Infused Skeleton"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASSkeletalOrcGrunt.blp"
     }
   ]
 }

@@ -93,6 +93,46 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Brown Elekk"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\WildElekkBrown.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElephant.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Brown Elekk"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit."
     }
   ]
 }

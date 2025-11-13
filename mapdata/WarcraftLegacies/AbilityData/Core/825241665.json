@@ -49,6 +49,32 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R04V"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(The Frozen Throne)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Frost Nova"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of frost that deals \u003CA001,DataB1\u003E damage to the target, and \u003CA001,DataA1\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CA001,Dur1\u003E seconds."
     }
   ]
 }

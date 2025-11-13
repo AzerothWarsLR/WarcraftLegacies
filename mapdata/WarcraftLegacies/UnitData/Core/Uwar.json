@@ -134,6 +134,41 @@
     {
       "Id": 1768382837,
       "Value": 27
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Defiler"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Defiler"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Defiler"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Archimonde.mdl"
     }
   ]
 }

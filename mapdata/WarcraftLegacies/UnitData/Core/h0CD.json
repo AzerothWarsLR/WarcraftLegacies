@@ -53,6 +53,46 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R03A,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_TowerScout.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Sunfury Tower)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BE_Tower.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic observation tower. Has no attack. "
     }
   ]
 }

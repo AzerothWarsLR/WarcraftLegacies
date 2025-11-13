@@ -202,6 +202,90 @@
       "Id": 1920363893,
       "Type": 2,
       "Value": 0.1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei Spaceship)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Tree of Life"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure, used to train workers and gather resources."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Exodar Regalis"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_Exodar.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ChimaeraRoost"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratMissile\\ZigguratMissile.mdl"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowNecropolis"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
     }
   ]
 }

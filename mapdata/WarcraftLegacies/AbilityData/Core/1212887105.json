@@ -38,6 +38,42 @@
     {
       "Id": 1702127969,
       "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(level 3) (anubarack beetels"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Acid Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Acid Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Spits acid on the enemy, reducing armor by 8"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp"
     }
   ]
 }

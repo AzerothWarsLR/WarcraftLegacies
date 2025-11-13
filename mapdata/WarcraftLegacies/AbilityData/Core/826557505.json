@@ -14,6 +14,32 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "RD01"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei attachement)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Defender Shield Visual"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defender Shield Visual"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Runestone Shield.mdx"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "hand,right"
     }
   ]
 }

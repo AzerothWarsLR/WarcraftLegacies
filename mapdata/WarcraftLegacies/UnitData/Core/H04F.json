@@ -66,6 +66,84 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElfRogue.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodElvenMagister.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Archmage"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Grand Magister Rommath"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElfRogue.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HighElfSwordsman"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Rommath"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Archmage"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Archmage"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BloodElfMissile\\BloodElfMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at supporting magic."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
     }
   ]
 }

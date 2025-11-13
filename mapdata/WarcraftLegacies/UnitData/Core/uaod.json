@@ -53,6 +53,35 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Summons Heroes and Demi-heroes. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge Altar)"
     }
   ]
 }

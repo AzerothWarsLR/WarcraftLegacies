@@ -24,6 +24,11 @@
     {
       "Id": 1635021673,
       "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Restores 125 hit points and 50 mana of friendly non-mechanical units in an area around your Hero."
     }
   ]
 }

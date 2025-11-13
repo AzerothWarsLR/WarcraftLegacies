@@ -99,6 +99,210 @@
     {
       "Id": 1835820903,
       "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Universal Upgrade)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Copper Forged Weaponry"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Bronze Forged Weaponry"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Iron Forged Weaponry"
+    },
+    {
+      "Level": 4,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Steel Forged Weaponry"
+    },
+    {
+      "Level": 5,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Mithril Forged Weaponry"
+    },
+    {
+      "Level": 6,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Thorium Forged Weaponry"
+    },
+    {
+      "Level": 7,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Elementium Forged Weaponry"
+    },
+    {
+      "Level": 8,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Adamantium Forged Weaponry"
+    },
+    {
+      "Level": 9,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Titanium Forged Weaponry"
+    },
+    {
+      "Level": 10,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Pyrite Forged Weaponry"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Copper Forged Weaponry"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Bronze Forged Weaponry"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Iron Forged Weaponry"
+    },
+    {
+      "Level": 4,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Steel Forged Weaponry"
+    },
+    {
+      "Level": 5,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Mithril Forged Weaponry"
+    },
+    {
+      "Level": 6,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Thorium Forged Weaponry"
+    },
+    {
+      "Level": 7,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Elementium Forged Weaponry"
+    },
+    {
+      "Level": 8,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Adamantium Forged Weaponry"
+    },
+    {
+      "Level": 9,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Titanium Forged Weaponry"
+    },
+    {
+      "Level": 10,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Pyrite Forged Weaponry"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the attack damage of most units."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Further increases the attack damage of most units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Further increases the attack damage of most units."
+    },
+    {
+      "Level": 4,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 5,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 6,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 7,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 8,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 9,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 10,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

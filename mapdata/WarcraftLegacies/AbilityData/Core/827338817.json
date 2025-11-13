@@ -117,6 +117,32 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R071"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(troll - Zandalar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur1\u003E seconds. Lasts \u003CAChx,HeroDur1\u003E second on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur2\u003E seconds. Lasts 2 seconds on heroes."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }

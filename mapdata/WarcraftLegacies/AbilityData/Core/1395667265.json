@@ -60,6 +60,70 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Baron Rivendare)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Ramstein"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Summon Ramstein - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Baron Rivendare calls Ramstein the Gorger, a mighty Abomination, to crush his enemies. |n|n|cffffcc00Level 1|r - Have Bash and Frenzy|n|cffffcc00Level 2|r - Have Bash, Frenzy and Warstomp|n|cffffcc00Level 3|r - Have Bash, Frenzy, Cleave and Du Hast!"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Ramstein"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons Ramstein the Gorger, a mighty abomination.|nHas Frenzy, Cleaving Attack, Aura of Dread, and Bash.|nLasts 60 seconds."
     }
   ]
 }

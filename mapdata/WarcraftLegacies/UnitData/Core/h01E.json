@@ -40,6 +40,41 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "sapper,peon"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras, Worker)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "PeasantKulTirasV1.02.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Deckhand"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker unit."
     }
   ]
 }

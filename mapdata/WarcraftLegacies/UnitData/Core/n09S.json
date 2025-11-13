@@ -117,6 +117,56 @@
       "Id": 1919970677,
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelvenWarrior.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Centurion"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Centurion"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior of the Sunfury."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

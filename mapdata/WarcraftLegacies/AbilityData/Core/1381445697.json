@@ -60,6 +60,47 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 25
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an enchanted ward that empowers nearby allies, increasing the movement speed of one friendly unit by 10% and their attack speed by 20% every 1.5 seconds. While the ward exists, all Elemental Lords gain 40% evasion.The ward itself has 30% evasion.|nLasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Wind Blast.mdx"
     }
   ]
 }

@@ -55,6 +55,46 @@
     {
       "Id": 1986358369,
       "Value": 5
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(All Heroes)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Attribute Bonus - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Gives a permanent bonus to Agility, Intelligence, and Strength. Each level adds 3 points to all stats."
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Attribute Bonus - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a total of \u003CAamk,DataA5\u003E points to Agility, Intelligence, and Strength"
     }
   ]
 }

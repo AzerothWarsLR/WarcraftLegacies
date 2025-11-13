@@ -67,6 +67,60 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Forge.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury Research)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BE_Forge.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Forge"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Forge"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building. "
     }
   ]
 }

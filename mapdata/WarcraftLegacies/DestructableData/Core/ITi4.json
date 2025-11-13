@@ -3,5 +3,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": "PathTextures\\CityBridgeSmall45.tga"
+    }
+  ]
 }

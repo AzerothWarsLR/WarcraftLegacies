@@ -32,6 +32,41 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASGolemCarapace.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Orange - Earth Golem)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Living Fragments"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Living Fragments"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit splits into two Mud Golems upon death."
     }
   ]
 }

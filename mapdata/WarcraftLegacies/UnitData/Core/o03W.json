@@ -92,6 +92,69 @@
       "Id": 828535413,
       "Type": 2,
       "Value": 900
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep Tower 2)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Rocket Tower"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Rocket Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure.  "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CannonTowerGoblinV1.02.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCannonTower.blp"
     }
   ]
 }

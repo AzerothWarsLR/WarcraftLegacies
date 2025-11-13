@@ -28,6 +28,16 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dragonspawn Overseer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Breath of Frost, Devotion Aura, and Evasion. "
     }
   ]
 }

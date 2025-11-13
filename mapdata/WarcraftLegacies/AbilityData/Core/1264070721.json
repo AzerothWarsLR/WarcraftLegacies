@@ -42,6 +42,32 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Assasins)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Poison Spears"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Poison Spears"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 10 poison damage per second and slows attack speed by 40% and mouvement speed by 30%. |nLasts 10 seconds. 3 seconds on heroes"
     }
   ]
 }

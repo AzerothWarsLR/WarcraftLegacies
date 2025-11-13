@@ -58,6 +58,48 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R03Q"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(warsong)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the attack rate of the target unit by 40%.|nLasts 20 seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Windfury"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCWindfury.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCWindfury.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Windfury"
     }
   ]
 }

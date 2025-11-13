@@ -115,6 +115,65 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroVarianWrynn.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Varian Wrynn"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\King Varian Wrynn.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "King of Stormwind"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "King Varian Wrynn"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Varian Wrynn"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "war3mapImported\\SSHHeroVarianWrynn.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at melee combat and bolstering nearby troops."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Varian Wrynn"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

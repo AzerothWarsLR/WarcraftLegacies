@@ -81,6 +81,30 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R09X"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Anti-caster flying unit. "
     }
   ]
 }

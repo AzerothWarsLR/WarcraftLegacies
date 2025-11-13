@@ -89,6 +89,64 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "A12M"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Fountainhead 242.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Well of Eternity"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build the Infinity Fountain"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Supreme spellcaster production building. "
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 6
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
     }
   ]
 }

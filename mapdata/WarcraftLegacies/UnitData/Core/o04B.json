@@ -45,6 +45,46 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R021,Ropg,Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep Hammer, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Maddened followers of the Old Gods."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cultist"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Flagellant.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEbonBladePeasant.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Cultist"
     }
   ]
 }

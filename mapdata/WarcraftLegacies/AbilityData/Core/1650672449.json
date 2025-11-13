@@ -34,6 +34,33 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 800
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Green Royal Guard)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Greater Frost Bolt"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical shard of ice at a target enemy unit, 70 damage and stunning the target for 4 seconds. (1 seconds for heroes)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Greater Frost Bolt"
     }
   ]
 }

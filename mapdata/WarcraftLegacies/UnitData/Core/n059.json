@@ -93,6 +93,40 @@
     {
       "Id": 1647403381,
       "Value": 19
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Portal)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fel Hound"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Fel Hound"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Arcane thirsting hound of the Fel."
     }
   ]
 }

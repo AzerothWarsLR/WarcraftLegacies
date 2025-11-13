@@ -50,6 +50,31 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep Shop)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Goblin Sapper"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Hire Goblin Sapper"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Explosive team of goblin sappers. Particularly effective against buildings. "
     }
   ]
 }

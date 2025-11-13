@@ -32,6 +32,31 @@
     {
       "Id": 1836083317,
       "Value": 600
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Morphed - Level 2 - Illidari)"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Illidan Stormrage"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive The Betrayer"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon The Betrayer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Deadly Hero, adept at wading into the fray and cutting down key targets. "
     }
   ]
 }

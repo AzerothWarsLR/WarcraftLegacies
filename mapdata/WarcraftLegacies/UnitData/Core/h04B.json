@@ -81,6 +81,31 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGolemThunderclap.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Dalaran Geomancer Rock)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Terrain\\LoardaeronRockChunks\\LoardaeronRockChunks3.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Rock"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

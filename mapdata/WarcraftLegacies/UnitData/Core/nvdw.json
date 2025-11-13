@@ -113,6 +113,44 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Voidweaver"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Voidweaver"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit with Phase Shift and Frost Attack. Can learn Voidic Lash."
     }
   ]
 }

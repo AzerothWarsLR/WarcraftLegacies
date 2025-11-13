@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Elemental Lord)"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "MFPB"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Incinerate\\IncinerateBuff.mdl"
+    }
+  ]
 }

@@ -9,6 +9,31 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Healing Shield"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has a Healing Shield; nearby friendly units will be healed if they stand near this unit."
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl"
     }
   ]
 }

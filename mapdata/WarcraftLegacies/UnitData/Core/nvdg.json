@@ -72,6 +72,34 @@
     {
       "Id": 1701868405,
       "Value": 1
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Eye of Sargeras)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "G"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit that casts Chain Lightning and Frost Armor. "
     }
   ]
 }

@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Inferno Strike"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is in an Inferno Strike, and is taking damage over time."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

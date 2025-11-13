@@ -104,6 +104,64 @@
     {
       "Id": 1886612833,
       "Value": 10000
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Genesis Attack REAL)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Improved Parasite"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CANpa,DataA2\u003E damage per second for \u003CANpa,Dur2\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CABEG,DataA1\u003E damage per second for \u003CABEG,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Genesis Attack, a Flying Horror will spawn from its corpse. |nLasts \u003CABEG,Cast1\u003E seconds."
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

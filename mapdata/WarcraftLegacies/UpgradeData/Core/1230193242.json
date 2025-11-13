@@ -22,6 +22,46 @@
       "Id": 1902473831,
       "Type": 3,
       "Value": "n055"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Illidari)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Sea Witches"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Sea Witches"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNagaSeaWitch.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Allows Sea Witches to be trained from the Betrayer\u0027s Reservoir, Betrayer\u0027s Spire, and Betrayer\u0027s Citadel."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
     }
   ]
 }

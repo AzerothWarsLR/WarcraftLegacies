@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShadowDance.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Shadow Aura"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the fear aura, it has reduced damage."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

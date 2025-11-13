@@ -38,6 +38,21 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids - Cenarius Summon)"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit that hurls bolts of lightning. Can cast Rejuvenation and Lightning Shield. "
     }
   ]
 }

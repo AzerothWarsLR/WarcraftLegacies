@@ -74,6 +74,41 @@
     {
       "Id": 1986818657,
       "Value": 10
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun Colossus)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Locust Swarm - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Crypt Lord when they return.|n|n|cffffcc00Level 1|r - 20 locusts. 20 damage return.|n|cffffcc00Level 2|r - 30 locusts. 30 damage return.|n|cffffcc00Level 3|r - 40 locusts. 40 damage return.|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a swarm of \u003CA0Y2,DataA1\u003E angry locusts that bite enemy units within a radius of \u003CA0Y2,Area1\u003E. As they chew the enemy flesh, they convert it into a substance that restores hit points to this unit when they return. Lasts \u003CA0Y2,Dur1\u003E seconds."
     }
   ]
 }

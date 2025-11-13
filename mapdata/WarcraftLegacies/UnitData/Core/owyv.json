@@ -72,6 +72,21 @@
     {
       "Id": 1915838837,
       "Value": 650
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Warsong)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Highly mobile flying creature. Excellent at scouting."
     }
   ]
 }

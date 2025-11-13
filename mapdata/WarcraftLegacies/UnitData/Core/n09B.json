@@ -185,6 +185,75 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0OR"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrderHunterIcon.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\OrderHunter.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Witch Hunter"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Witch Hunter"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Rangers of the Order of Embers."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Bandit"
     }
   ]
 }

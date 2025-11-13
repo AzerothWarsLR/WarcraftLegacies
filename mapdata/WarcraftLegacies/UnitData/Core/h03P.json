@@ -56,6 +56,34 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\human\\Workshop\\Workshop.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gnome Dwelling"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ironforge Other)"
     }
   ]
 }

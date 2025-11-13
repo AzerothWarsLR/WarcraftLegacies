@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMetalPlatingLevel3.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Dwarven Masonry Aura"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This structure is under the effects of Fortified Defense Aura; it has increased armor."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

@@ -25,6 +25,31 @@
     {
       "Id": 1634956649,
       "Value": 1
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Increases Intelligence. Can cast Crown Heal."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scepter of the Queen"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by 8. Can cast Crown Heal, healing all nearby friendly units by \u003CAIdb,DataB1\u003E, restoring their mana by \u003CAIdb,DataC1\u003E, and increasing their armor by \u003CAIdb,DataA1\u003E for \u003CAIdb,Dur1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadFavored item of choice by Azshara herself, this specially infused trinket was a gift from Sargeras to ensure the admiration of the Queen.|r"
     }
   ]
 }

@@ -172,6 +172,92 @@
     {
       "Id": 1717920885,
       "Value": 3
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "None"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Portal)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\demon\\Mannoroth\\Mannoroth.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Pit Fiend"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Pit Fiend"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Servants for the Pit Lords of the Legion, they aspire to rise and conquer for favor."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Mannoroth"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

@@ -56,6 +56,64 @@
     {
       "Id": 1852137845,
       "Value": 1
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury Farm)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 100 food, which increases the maximum number of units that can be trained. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ElvenGarden.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAboretum.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Arboretum"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Arboretum"
     }
   ]
 }

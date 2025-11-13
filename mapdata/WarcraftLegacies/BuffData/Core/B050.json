@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Command Point 15 gold per minute"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is a 15 gold per minute CP. It increases your income by 15 gold."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Command Point 15 gold per minute"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

@@ -54,6 +54,61 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFrostAura.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red Death knight)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chilling Aura"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Presence of the Unspeakable - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Decreases the movement speed and attack rate of nearby enemy units. |n|n|cffffcc00Level 1|r - \u003CAOae,DataA1,%\u003E% movement, \u003CAOae,DataB1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAOae,DataA2,%\u003E% movement, \u003CAOae,DataB2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAOae,DataA3,%\u003E% movement, \u003CAOae,DataB3,%\u003E% attack.|n|cffffcc00Level 4|r - \u003CAOae,DataA4,%\u003E% movement, \u003CAOae,DataB4,%\u003E% attack."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Chilling Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 20%."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\MistAura.mdx"
     }
   ]
 }

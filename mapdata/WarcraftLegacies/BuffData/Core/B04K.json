@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Stagger"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is staggered; its attack rate are reduced."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
 }

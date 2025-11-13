@@ -131,6 +131,42 @@
       "Id": 862547279,
       "Type": 2,
       "Value": 1.5
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skeram)"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates images of the caster to fight enemies and dispels all magic from the caster.|n|n|cffffcc00Level 1|r - Creates \u003CSKMI,DataA1\u003E images which deal  \u003CSKMI,DataB1,%\u003E% damage and take \u003CSKMI,DataC1,%\u003E% damage. |n|cffffcc00Level 2|r - Creates \u003CSKMI,DataA2\u003E images which deal  \u003CSKMI,DataB2,%\u003E% damage and take \u003CSKMI,DataC2,%\u003E% damage. |n|cffffcc00Level 3|r - Creates \u003CSKMI,DataA3\u003E images which deal  \u003CSKMI,DataB3,%\u003E% damage and take \u003CSKMI,DataC3,%\u003E% damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates \u003CSKMI,DataA2\u003E images of the caster, each of which deals \u003CSKMI,DataB2,%\u003E% damage and receives \u003CSKMI,DataC2,%\u003E% damage. Dispels all magic from the caster. |nLasts \u003CSKMI,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates \u003CSKMI,DataA3\u003E images of the caster, each of which deals \u003CSKMI,DataB3,%\u003E% damage and receives \u003CSKMI,DataC3,%\u003E% damage. Dispels all magic from the caster. |nLasts \u003CSKMI,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates \u003CSKMI,DataA1\u003E images of the caster, each of which deals \u003CSKMI,DataB1,%\u003E% damage and receives \u003CSKMI,DataC1,%\u003E% damage. Dispels all magic from the caster. |nLasts \u003CSKMI,Dur1\u003E seconds."
     }
   ]
 }

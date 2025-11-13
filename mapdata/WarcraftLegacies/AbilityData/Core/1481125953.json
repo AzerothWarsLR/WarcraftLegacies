@@ -18,6 +18,17 @@
       "Id": 878797892,
       "Type": 2,
       "Value": 50
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Clockwerk Goblin-Level 4)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals 180 damage in a small area."
     }
   ]
 }

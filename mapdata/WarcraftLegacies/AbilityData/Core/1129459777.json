@@ -48,6 +48,56 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 99999
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Dark Green - Wizard\u0027s Sanctum)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Electric Strike"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Electric Strike"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Purges all units in a target area and stuns them for 2(1) seconds.|n|cffffcc00Deals 600 damage to summoned units.|r"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElectricStrike.blp"
     }
   ]
 }

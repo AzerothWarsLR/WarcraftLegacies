@@ -29,6 +29,27 @@
     {
       "Id": 1986358369,
       "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlink.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Deep Fiend)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports the unitl a short distance, allowing her to move in and out of combat. |n12 second cooldown.                             "
     }
   ]
 }

@@ -9,6 +9,21 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "creeps"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Zandalar Aura"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of Zandalar Aura; it has 10% increased attack rate."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

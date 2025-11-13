@@ -25,6 +25,24 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Crystalline Golem"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that hurls boulders at opponents. Immune to spells. "
     }
   ]
 }

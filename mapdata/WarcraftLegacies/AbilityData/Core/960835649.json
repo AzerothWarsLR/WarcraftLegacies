@@ -101,6 +101,57 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Initiate Mage)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slow - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slow - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy air unit\u0027s attack rate by \u003CA0E9,DataB1,%\u003E% and movement speed by \u003CA0E9,DataA1,%\u003E%. |nLasts \u003CA0E9,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy unit\u0027s attack rate by \u003CA0E9,DataB2,%\u003E% and movement speed by \u003CA0E9,DataA2,%\u003E%. |nLasts \u003CA0E9,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
     }
   ]
 }

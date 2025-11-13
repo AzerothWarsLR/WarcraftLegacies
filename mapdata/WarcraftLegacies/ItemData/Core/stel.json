@@ -19,6 +19,19 @@
     {
       "Id": 1818588009,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Teleports the Hero. Has a 2 minute cooldown."
     }
   ]
 }

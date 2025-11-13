@@ -67,6 +67,21 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R01K,R033,R034,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dargan summon level 3)"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fire Elemental"
     }
   ]
 }

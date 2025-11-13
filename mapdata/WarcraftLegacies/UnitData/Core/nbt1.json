@@ -77,6 +77,30 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "ofrt"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Boulder Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fires massive boulders upon its foes."
     }
   ]
 }

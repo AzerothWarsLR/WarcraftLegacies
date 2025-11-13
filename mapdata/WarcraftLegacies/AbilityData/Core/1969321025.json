@@ -15,6 +15,22 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 20
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - Mountain Giant)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The closest \u003CAtau,DataA1\u003E enemies are forced to attack this unit."
     }
   ]
 }

@@ -33,6 +33,22 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 45
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Item - cthun gong)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Emits a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CvAQ1,DataA1,%\u003E% and armor by \u003CvAQ1,DataB1\u003E for \u003CvAQ1,Dur1\u003E seconds."
     }
   ]
 }

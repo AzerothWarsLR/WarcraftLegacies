@@ -80,6 +80,34 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids - Tortolla)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Call Sea Turtle"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee amphibious unit whose spiked shell harms enemy melee attackers. "
     }
   ]
 }

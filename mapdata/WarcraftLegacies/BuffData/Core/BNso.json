@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Tranquility\\TranquilityTarget.mdl"
+    }
+  ]
 }

@@ -51,6 +51,43 @@
       "Id": 1919969397,
       "Type": 2,
       "Value": 0.3
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids - Summoned)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Treant"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic Wooden warrior "
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1651270517,
+      "Value": 100
     }
   ]
 }

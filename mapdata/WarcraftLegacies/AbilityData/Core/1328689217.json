@@ -35,6 +35,37 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R00F"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLancelot_Plate.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dwarven Warrior, Thane)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mithril Plated Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mithril Plated Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit has a \u003CA02O,DataA1\u003E% chance to reduce incoming damage by \u003CA02O,DataC1\u003E."
     }
   ]
 }

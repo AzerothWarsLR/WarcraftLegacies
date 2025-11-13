@@ -3,5 +3,17 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Sapphiron, Frost Wyrm)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacking buildings temporarily stops all building activities for \u003CAfrz,Dur1\u003E seconds."
+    }
+  ]
 }

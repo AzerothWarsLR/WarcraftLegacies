@@ -91,6 +91,55 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Spanish_Horsegunner.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fusillier"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long Range Mounted Shooter."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Fusillier"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Knight"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNConquistador.blp"
     }
   ]
 }

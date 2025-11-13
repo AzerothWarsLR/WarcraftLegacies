@@ -89,6 +89,53 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhac,R013,Renb,R064,Rosp,Rgfo"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 75
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shrine of Zul\u0027Gurub"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Fortress to enable the production of additional types of structures and units."
     }
   ]
 }

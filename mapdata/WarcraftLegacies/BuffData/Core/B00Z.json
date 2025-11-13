@@ -9,6 +9,26 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "nightelf"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Maiming Strike"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been hit by Maiming Strike. It has reduced attack and move speed and is taking damage."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

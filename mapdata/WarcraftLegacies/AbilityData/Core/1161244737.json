@@ -34,6 +34,32 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Blue - Overlord)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Roar "
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives nearby friendly units a 50% bonus to damage. |nLasts 15 seconds."
     }
   ]
 }

@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Guarding Light"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDivineIntervention.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of Guarding Light, and is invulnerable."
+    }
+  ]
 }

@@ -122,6 +122,34 @@
     {
       "Id": 1836083317,
       "Value": 1200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Storm Giant"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Massive melee unit that can disrupt enemy attackers and take incredible amounts of punishment. Has the Taunt and War Club abilities. Can learn Hardened Skin, and Resistant Skin. "
     }
   ]
 }

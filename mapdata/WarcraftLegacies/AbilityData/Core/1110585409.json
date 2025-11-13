@@ -143,6 +143,75 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 140
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong - Jergosh) (Kil\u0027jaden)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Rain of Meteors"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Rain of Meteors"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down meteors from the sky within a target radius of \u003CA02B,Area1\u003E, dealing damage to enemy units and stunning them for \u003CA02N,DataB1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CA02B,DataB1\u003E meteors dealing \u003CA02N,DataA1\u003E damage each. |n|cffffcc00Level 2|r - \u003CA02B,DataB2\u003E meteors dealing \u003CA0FF,DataA1\u003E damage each. |n|cffffcc00Level 3|r - \u003CA02B,DataB3\u003E meteors dealing \u003CA0LG,DataA1\u003E damage each."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Meteors - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Meteors - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Meteors - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CA02B,DataB1\u003E meteors from the sky that deal \u003CA02N,DataA1\u003E damage and stun for \u003CA02N,DataB1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CA02B,DataB2\u003E meteors from the sky that deal \u003CA0FF,DataA1\u003E damage and stun for \u003CA0FF,DataB1\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down \u003CA02B,DataB3\u003E meteors from the sky that deal \u003CA0LG,DataA1\u003E damage and stun for \u003CA0LG,DataB1\u003E seconds."
     }
   ]
 }

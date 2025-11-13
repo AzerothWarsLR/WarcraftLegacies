@@ -50,6 +50,76 @@
       "Id": 1969581381,
       "Type": 3,
       "Value": "h01W"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnload.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Silvermoon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "A Close"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Close Gate"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Closes the gate."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLoad.blp"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 0
+    },
+    {
+      "Id": 2036495713,
+      "Value": 0
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Open Gate"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Opens the gate."
     }
   ]
 }

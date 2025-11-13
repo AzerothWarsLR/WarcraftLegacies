@@ -48,6 +48,49 @@
       "Id": 1634493289,
       "Type": 3,
       "Value": "Charged"
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Gives bonus experience points."
+    },
+    {
+      "Id": 1818846825,
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tomeBrown\\tomeBrown.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Book of Experience"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Book of |cffffcc00E|rxperience"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Increases the level of the Hero by \u003CAIlm,DataA1\u003E when used."
     }
   ]
 }

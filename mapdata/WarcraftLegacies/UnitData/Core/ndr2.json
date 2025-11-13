@@ -40,6 +40,16 @@
       "Id": 1902338421,
       "Type": 2,
       "Value": 1200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge- Death Knight)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\SkeletonBerserker.mdl"
     }
   ]
 }

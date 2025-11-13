@@ -60,6 +60,25 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ferocious amphibious reptile."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari)"
     }
   ]
 }

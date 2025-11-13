@@ -3,5 +3,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Hypothermic Breath"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit was hit by Hypothermic Breath; it will take damage over time."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

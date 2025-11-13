@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLoathe.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Ooze"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is oozed; its movement speed and attack rate are reduced."
+    }
+  ]
 }

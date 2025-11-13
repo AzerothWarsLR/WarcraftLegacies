@@ -41,6 +41,51 @@
     {
       "Id": 1937141109,
       "Value": 230
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lord Admiral of Kul Tiras"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Daelin Proudmoore"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Daelin Proudmoore"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Daelin Proudmoore"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Daelin"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, tough hero that excels at damaging enemy units."
     }
   ]
 }

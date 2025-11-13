@@ -136,6 +136,69 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHunterTower.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels Siege)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Towered_Hunters_Hall_v3.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Watcher\u0027s Bastion"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Watcher\u0027s Bastion"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\Towered_Hunters_Hall_Missile.mdl"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Advanced troop production building."
     }
   ]
 }

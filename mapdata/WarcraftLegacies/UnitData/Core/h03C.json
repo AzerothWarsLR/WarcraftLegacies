@@ -187,6 +187,68 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1651270517,
+      "Value": 155
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Neutral Hostile)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 125
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SentinelMissile\\SentinelMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Black Rook Hold"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Black Rook Hold"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "The gloomy fortress of the Elf-wardens of old."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneObservatory.blp"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FoundryIronHordeV1.01.mdl"
     }
   ]
 }

@@ -112,6 +112,55 @@
       "Id": 1902338421,
       "Type": 2,
       "Value": 800
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\Enchanted Knife.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Initiate Mage"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Initiate Mage"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageInitiate.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\MageInitiateV1.00.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Priest"
     }
   ]
 }

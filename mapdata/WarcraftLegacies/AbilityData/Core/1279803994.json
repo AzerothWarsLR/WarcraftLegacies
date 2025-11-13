@@ -21,6 +21,32 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Obsidian Eradicator)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hardened"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CZBHL,DataC1\u003E damage. Attacks cannot be reduced below \u003CZBHL,DataB1\u003E damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     }
   ]
 }

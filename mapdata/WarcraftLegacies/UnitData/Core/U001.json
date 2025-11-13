@@ -67,6 +67,70 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKelThuzad.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Necromancer"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge-Necromancer)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\Kelthuzad\\Kelthuzad.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\NecromancerMissile\\NecromancerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Master of the Cult of the Damned"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Necromancer"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, exceptional at area of effect magic and summoning."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Kel\u0027thuzad"
     }
   ]
 }

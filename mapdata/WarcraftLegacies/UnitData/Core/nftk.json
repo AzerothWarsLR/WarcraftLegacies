@@ -95,6 +95,61 @@
     {
       "Id": 1836083317,
       "Value": 950
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\IceTroll\\IceTroll.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warlord"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Warlord"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Deadly leader of the Drakkari tribe."
     }
   ]
 }

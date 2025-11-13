@@ -4,5 +4,36 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASRefurbish.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Durability Aura"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": " (Foreman Glibbs)"
+    },
+    {
+      "Id": 1818649958,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "Heals mechanical units over time."
+    }
+  ]
 }

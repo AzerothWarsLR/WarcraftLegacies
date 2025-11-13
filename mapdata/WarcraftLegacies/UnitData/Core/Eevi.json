@@ -150,6 +150,51 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Illidari - Hybrid - Illidan)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Illidan Stormrage"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Deadly Hero, adept at wading into the fray and cutting down key targets. "
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNillidanhd.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Illidan"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Illidan"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Illidan"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

@@ -4,5 +4,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Earth\u0027s Grace (Effect)"
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\ResourceItems\\ResourceEffectTarget.mdl"
+    }
+  ]
 }

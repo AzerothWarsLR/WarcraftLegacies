@@ -29,6 +29,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "self"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Blue - Dreadlord ICON)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vampiric Attack"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vampiric Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit gains 50% of damage done as health."
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }

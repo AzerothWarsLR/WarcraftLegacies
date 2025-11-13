@@ -10,6 +10,21 @@
       "Id": 828596547,
       "Type": 2,
       "Value": 0.05
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grey - Darkspear Warlord)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 5% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

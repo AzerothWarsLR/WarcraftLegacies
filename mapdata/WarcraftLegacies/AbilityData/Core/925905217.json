@@ -40,6 +40,38 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "AOP1"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the armor of nearby friendly units by 50% of their base armor, not including any upgrades."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Protection Aura"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNProtection1.blp"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\KingstrideAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Protection Aura"
     }
   ]
 }

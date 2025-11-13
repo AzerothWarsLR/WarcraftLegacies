@@ -4,5 +4,36 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTimberWolf.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is benefiting from Lo\u0027gosh\u0027s Fury.  It is moving and attacking more quickly."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\BattleRoar\\RoarTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
 }

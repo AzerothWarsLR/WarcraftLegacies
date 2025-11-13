@@ -62,6 +62,53 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "B040"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNHell Imp.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion - Warlock)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Minion"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Summon Misha (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Minion"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an Imp. Has \u003Cn04J,realHP\u003E hit points and deals \u003Cn04J,mindmg1\u003E - \u003Cn04J,maxdmg1\u003E damage. |nLasts \u003CA0AT,Dur1\u003E seconds.|n|n|cfff5962dAbilities:|R Mana Burn, Feedback, Spell Resistance |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

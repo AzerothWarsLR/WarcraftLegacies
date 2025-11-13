@@ -81,6 +81,65 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAllianceSiegeTower.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\AllianceSiegeTower.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "abilities\\weapons\\catapult\\catapultmissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Siege Tower"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Siege Tower"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Boulder tossing siege weaponry."
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 200
     }
   ]
 }

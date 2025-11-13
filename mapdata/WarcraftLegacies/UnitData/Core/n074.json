@@ -51,6 +51,29 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1735156597,
+      "Value": 135
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Queen Nezar\u0027Azret"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Unholy Aura. Casts Raise Dead and Carrion Swarm. "
     }
   ]
 }

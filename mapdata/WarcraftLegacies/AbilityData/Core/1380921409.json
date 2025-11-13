@@ -25,6 +25,27 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "nightelf"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(witch hunter)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds 30 bonus fire damage to an attack against enemies, but drains mana with each attack."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

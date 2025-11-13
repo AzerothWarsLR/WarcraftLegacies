@@ -50,6 +50,41 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASVR.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Orange - Kirin Tor, Grey - Ogre Lord)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Counterspell"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Counterspell"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blocks a negative spell that an enemy casts on this unit once every 15 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
     }
   ]
 }

@@ -105,6 +105,141 @@
       "Id": 1969581381,
       "Type": 3,
       "Value": "O027"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationREDTarget.mdl,Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Zuluhed)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ascendance"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Ascendance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 150/250/300. |n|nHas Incinerate, Immolation, Flame Strike, Meteor, and Chain Explosion.|n|n|cffcece00Level 1|r - Lasts 30 seconds|n|cffcece00Level 2|r - Lasts 45 seconds|n|cffcece00Level 3|r - Lasts 60 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 150. |n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 250. |n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 45 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 300.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 60 seconds."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 3
+    },
+    {
+      "Id": 2036495713,
+      "Value": 2
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 45 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 60 seconds."
     }
   ]
 }

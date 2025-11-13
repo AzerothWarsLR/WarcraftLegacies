@@ -200,6 +200,66 @@
     {
       "Id": 1886612833,
       "Value": 2000
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lor\u0027themar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile.mdl"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Incinerate - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB1\u003E damage to all nearby hostile units."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB2\u003E damage to all nearby hostile units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB3\u003E damage to all nearby hostile units."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB4\u003E damage to all nearby hostile units."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - \u003CA0XN,DataB1\u003E incineration damage.|n|cffffcc00Level 2|r - \u003CA0XN,DataB2\u003E incineration damage.|n|cffffcc00Level 3|r - \u003CA0XN,DataB3\u003E incineration damage.|n|cffffcc00Level 4|r - \u003CA0XN,DataB4\u003E incineration damage."
     }
   ]
 }

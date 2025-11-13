@@ -4,5 +4,12 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Quest Completed: The Fortified City"
+    }
+  ]
 }

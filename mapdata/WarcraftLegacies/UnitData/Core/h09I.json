@@ -167,6 +167,65 @@
     {
       "Id": 1836084597,
       "Value": 1300
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Small personal tank. |r"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Personal Tank"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Personal Tank"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "GoblinSapper"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinTank.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNGoblinAssaultTank.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
     }
   ]
 }

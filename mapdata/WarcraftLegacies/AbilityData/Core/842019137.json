@@ -79,6 +79,32 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Flash of Light"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flash of Light"
     }
   ]
 }

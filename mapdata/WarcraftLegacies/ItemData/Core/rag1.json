@@ -22,6 +22,35 @@
       "Id": 1684628329,
       "Type": 3,
       "Value": "AIa4"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Boosts Agility by 4."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Slippers of Agility \u002B4"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Slippers of Agility \u002B4"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Increases the Agility of the Hero by 4 when worn."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

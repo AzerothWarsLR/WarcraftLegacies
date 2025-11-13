@@ -107,6 +107,70 @@
     {
       "Id": 1836084597,
       "Value": 100
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElf4.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodElfSwordsmanV2.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Sunfury Mastermind"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Pathaleon the Calculator"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": " Revive Paladin"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElf4.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SpellBreaker"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Pathaleon"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at disrupting enemies and offensive magic."
     }
   ]
 }

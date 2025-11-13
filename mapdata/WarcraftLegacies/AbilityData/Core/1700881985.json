@@ -32,6 +32,27 @@
       "Id": 1969514593,
       "Type": 2,
       "Value": 10
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - Druid of the Talon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Faerie Fire (|cffffcc00Q|r)"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

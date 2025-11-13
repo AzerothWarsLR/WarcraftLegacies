@@ -159,6 +159,41 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Primary Firelord"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Ragnaros"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Ragnaros.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at disrupting spells and dealing large amounts of fire damage.  Can learn Soul Burn, Summon Lava Spawn, Incinerate and Volcano."
     }
   ]
 }

@@ -10,6 +10,30 @@
       "Pointer": 1,
       "Id": 1717920841,
       "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Attachment)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Voljin Weapon"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
     }
   ]
 }

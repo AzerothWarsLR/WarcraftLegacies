@@ -56,6 +56,30 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "Rowd,Rowt,Rost"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf Magic)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Spellcaster production building. "
     }
   ]
 }

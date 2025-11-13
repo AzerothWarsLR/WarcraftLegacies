@@ -43,6 +43,48 @@
     {
       "Id": 1835627623,
       "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Light Blue Research)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade [|cffffcc00A|r] - Moon Armor"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade [|cffffcc00A|r] - Improved Moon Armor"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade [|cffffcc00A|r] - Advanced Moon Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the armor of Archers, Huntresses, Glaive Throwers, Nightblades, Hippogryph Riders, Shadowleaf Sentinels, Naisha, and Maiev\u0027s Avatars."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Further increases the armor of Archers, Huntresses, Glaive Throwers, Nightblades, Hippogryph Riders, Shadowleaf Sentinels, Naisha, and Maiev\u0027s Avatars."
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Further increases the armor of Archers, Huntresses, Glaive Throwers, Nightblades, Hippogryph Riders, Shadowleaf Sentinels, Naisha, and Maiev\u0027s Avatars."
     }
   ]
 }

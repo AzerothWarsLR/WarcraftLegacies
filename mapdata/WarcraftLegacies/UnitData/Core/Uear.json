@@ -95,6 +95,45 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Champion of the Scourge"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Arthas Menethil"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Arthas Menethil"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at supporting armies and inflicting magical damage."
     }
   ]
 }

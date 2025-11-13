@@ -35,6 +35,46 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 900
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(defender ancient protector rock)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Multishot"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncientProtectorMissile\\AncientProtectorMissile.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Multishot"
     }
   ]
 }

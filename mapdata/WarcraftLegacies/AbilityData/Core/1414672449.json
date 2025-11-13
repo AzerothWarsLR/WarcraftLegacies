@@ -68,6 +68,53 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 650
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskinOn.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tunneler)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Stone Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Stone Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases a target friendly unit\u0027s armor by 7 points. |n|cffffcc00Lasts 45 seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskinOn.blp"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

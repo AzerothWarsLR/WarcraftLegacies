@@ -73,6 +73,60 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhme,Rhac"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_TowerMagic.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BE_Tower.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Sky-Fury Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Sky-Fury Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury tower)"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,third"
     }
   ]
 }

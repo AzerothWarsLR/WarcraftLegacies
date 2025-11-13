@@ -42,6 +42,21 @@
       "Id": 828733256,
       "Type": 3,
       "Value": "n05E"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Creep - Ragnaros)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spawn Fire Element"
     }
   ]
 }

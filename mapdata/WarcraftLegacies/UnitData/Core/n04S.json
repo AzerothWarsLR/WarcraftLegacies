@@ -53,6 +53,21 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Taerar"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged flying unit that deals cold damage and slows enemy units. Can Devour opponents and is immune to magic. "
     }
   ]
 }

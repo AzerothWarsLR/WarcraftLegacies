@@ -8,6 +8,27 @@
       "Level": 1,
       "Id": 1935895905,
       "Value": 20
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grey - Draz\u0027zilb)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "(|cffe8e800W|r) - Abolish Magic"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

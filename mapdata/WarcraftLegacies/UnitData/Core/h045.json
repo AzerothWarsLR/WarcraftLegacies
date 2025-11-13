@@ -122,6 +122,59 @@
     {
       "Id": 1836084597,
       "Value": 350
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroWarden.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\herowarden\\herowarden.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warden"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Warden"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Sentinel Elite Warrior, specialises in disruption. "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroWarden"
     }
   ]
 }

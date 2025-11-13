@@ -88,6 +88,69 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Arcane_Annihilator.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CrystalArtillery_Fixed.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\CrystalArtilleryMissile_Fixed.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Crystal Artillery"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Crystal Artillery"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Magical siege weapon."
     }
   ]
 }

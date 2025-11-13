@@ -65,6 +65,56 @@
       "Id": 1886284149,
       "Type": 2,
       "Value": 3.1
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Warchief"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warchief of the Horde"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Warchief"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, exceptional at empowering allies and dealing magic damage."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Warchief"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Thrall.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThrallhd.blp"
     }
   ]
 }

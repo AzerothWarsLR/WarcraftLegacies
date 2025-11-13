@@ -63,6 +63,76 @@
       "Id": 862020199,
       "Type": 2,
       "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNFlameStorm.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\btnmassbloodlust.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Eredar Occultist Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Eredar Occultist Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Eredar Occultist Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Eredar Occultist Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Eredar Occultists\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Firestorm."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Eredar Occultists\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Mass Bloodlust."
     }
   ]
 }

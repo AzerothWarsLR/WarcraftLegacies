@@ -71,6 +71,16 @@
     {
       "Id": 1953723253,
       "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "High Priest of healing magic. Hurls fiery missiles. Can cast Sleep. "
     }
   ]
 }

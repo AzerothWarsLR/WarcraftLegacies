@@ -88,6 +88,35 @@
     {
       "Id": 1836083317,
       "Value": 825
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite warrior trained to destroy spellcasters."
     }
   ]
 }

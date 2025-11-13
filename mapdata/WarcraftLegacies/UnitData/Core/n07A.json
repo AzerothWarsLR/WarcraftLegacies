@@ -79,6 +79,50 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R012"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ogre Warrior"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ogre Warrior"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful frontline soldier."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Ogre\\Ogre.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOgre.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
     }
   ]
 }

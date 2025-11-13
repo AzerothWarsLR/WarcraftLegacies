@@ -141,6 +141,79 @@
       "Id": 1999724917,
       "Type": 3,
       "Value": "missile"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep Special)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Kezan Trading Center"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Kezan Trading Center"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Boat construction facility for the Horde."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIronHordeMerchant.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Building_WarsongShop.mdl"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 400
     }
   ]
 }

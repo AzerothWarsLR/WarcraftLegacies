@@ -15,6 +15,11 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "friend,invulnerable,vulnerable"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

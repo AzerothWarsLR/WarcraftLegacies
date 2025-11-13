@@ -135,6 +135,55 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Ashenvale\\Structures\\Worldtree\\Worldtree.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shaladrassil"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Waygate"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": "ULAR"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Tree of Eternity to enable the production of additional types of structures and units. "
     }
   ]
 }

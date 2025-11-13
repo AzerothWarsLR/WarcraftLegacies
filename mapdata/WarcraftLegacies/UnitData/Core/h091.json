@@ -179,6 +179,75 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "War Zeppelin"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train War Zeppelin"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fine Goblin engineering with a deadshot pilot."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinWarZeppelin.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinWarZeppelin.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "GoblinZeppelin"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": -60
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
     }
   ]
 }

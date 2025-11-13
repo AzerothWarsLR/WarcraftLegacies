@@ -18,6 +18,18 @@
     {
       "Id": 1651469415,
       "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Quest Completed: Into the Realm Eternal"
     }
   ]
 }

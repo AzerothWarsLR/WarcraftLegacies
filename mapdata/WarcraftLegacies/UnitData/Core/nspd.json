@@ -24,6 +24,11 @@
     {
       "Id": 1836083317,
       "Value": 390
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit. "
     }
   ]
 }

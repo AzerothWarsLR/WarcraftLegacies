@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElements.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Surge of Power"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has a Surge of Power, it\u0027s attack speed is dramatically increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl,Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    }
+  ]
 }

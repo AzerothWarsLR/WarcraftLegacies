@@ -18,6 +18,25 @@
       "Id": 846356823,
       "Type": 2,
       "Value": 100
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Zakajz)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 50 damage to nearby units."
     }
   ]
 }

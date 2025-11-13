@@ -89,6 +89,72 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeartOfSearinox.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Fortresses)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Fel Energy"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScrollOfHealing.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mass Rejuvenation - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Antonidas channels positive arcane energy healing the wounds of Allies in a large radius. |n|n|cffffcc00Level 1|r - Heals 50 Hitpoints to nearby friendly units. |n|cffffcc00Level 2|r - Heals 125 Hitpoints to nearby friendly units. |n|cffffcc00Level 3|r - Heals 200 Hitpoints to nearby friendly units. |n|cffffcc00Level 4|r - Heals 275 Hitpoints to nearby friendly units.|n|cffffcc00Level 5|r - Heals 350 Hitpoints to nearby friendly units. "
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fel Energy"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals allied units in a large radius for 200 hitpoints."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals allied units in a large radius for 300 hitpoints and 100 mana points."
     }
   ]
 }

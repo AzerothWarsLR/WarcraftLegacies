@@ -152,6 +152,56 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVrykulWarMammoth.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\VrykulmammothRider6Lumber3.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mammoth Rider"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mammoth Rider"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Animal trainer of the Vrykul."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Mammoth"
     }
   ]
 }

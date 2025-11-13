@@ -11,6 +11,17 @@
       "Id": 828531016,
       "Type": 2,
       "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(arcane ward)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives additional mana regeneration to nearby friendly units of 3 mana per second."
     }
   ]
 }

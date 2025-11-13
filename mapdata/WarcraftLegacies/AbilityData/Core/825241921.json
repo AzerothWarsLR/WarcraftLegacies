@@ -157,6 +157,71 @@
       "Id": 1920296033,
       "Type": 2,
       "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Army of Light Golem summon"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Inferno - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls an Infernal down from the sky, dealing \u003CAUin,DataA1\u003E damage and stunning enemy land units for \u003CAUin,Dur1\u003E seconds in an area. The Infernal lasts \u003CAUin,DataB1\u003E seconds.|n|cffffcc00Level 1|r - \u003CAUin,DataA1\u003E damage, lasts \u003CAUin,DataB1\u003E seconds.|n|cffffcc00Level 2|r - \u003CAUin,DataA2\u003E damage, lasts \u003CAUin,DataB2\u003E seconds.|n|cffffcc00Level 3|r - \u003CAUin,DataA3\u003E damage, lasts \u003CAUin,DataB3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Inferno - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Inferno - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Inferno - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls an Infernal down from the sky, dealing \u003CAUin,DataA2\u003E damage and stunning enemy land units for \u003CAUin,Dur2\u003E seconds in an area. The Infernal lasts \u003CAUin,DataB2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls an Infernal down from the sky, dealing \u003CAUin,DataA3\u003E damage and stunning enemy land units for \u003CAUin,Dur3\u003E seconds in an area. The Infernal lasts \u003CAUin,DataB3\u003E seconds."
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
     }
   ]
 }

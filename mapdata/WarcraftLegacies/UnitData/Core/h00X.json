@@ -151,6 +151,46 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormwindCastle.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\StormwindTownhall.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Stormwind Keep"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Castle to enable the production of additional types of structures and units."
     }
   ]
 }

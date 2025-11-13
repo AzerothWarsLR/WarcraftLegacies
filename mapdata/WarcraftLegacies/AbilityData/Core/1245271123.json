@@ -196,6 +196,116 @@
     {
       "Id": 1802726497,
       "Value": 5
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(tess)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vanish"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNAbility_Vanish.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Vanish - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E bonus damage. The invisibility will not dissipate even if the hero attacks or casts spells.|n|n|cffffcc00Level 1|r - Lasts 10 seconds.|n|cffffcc00Level 2|r - Lasts 15 seconds.|n|cffffcc00Level 3|r - Lasts 20 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vanish - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vanish - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vanish - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vanish - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 10 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 15 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 20 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives friendly nearby units invulnerable. Lasts 4 seconds."
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "stand,channel"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNAbility_Vanish.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": 1667326817,
+      "Value": 1
     }
   ]
 }

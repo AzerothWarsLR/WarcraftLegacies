@@ -30,6 +30,33 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\pasNecromancy.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(All skeletons)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Skeletal Frame"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Skeletal Frame"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces the damage taken from Piercing attacks by 20%."
     }
   ]
 }

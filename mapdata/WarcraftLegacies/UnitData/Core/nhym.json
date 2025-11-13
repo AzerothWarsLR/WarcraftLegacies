@@ -72,6 +72,74 @@
       "Id": 1664180597,
       "Type": 2,
       "Value": 1.5
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrushingWave.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate,Adept,Master,Grandmaster"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Storm Cloud,- Purge|n- Summon Water Elemental|n- Storm Cloudl|n- Freezing Shots"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Adept mage of the frost arcanum."
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 45
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 45
+    },
+    {
+      "Id": 1735156597,
+      "Value": 180
+    },
+    {
+      "Id": 1919705973,
+      "Value": 180
     }
   ]
 }

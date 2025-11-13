@@ -235,6 +235,102 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDragonDevour.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(gilneas)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Goldrinn\u0027s Howl"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDragonDevour.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Goldrinn\u0027s Howl - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Goldrinn lets lose a ferocious howl increasing his allies damage and health regeneration for 25 seconds.|n|n|cffffcc00Level 1|r - 15% damage, 180% regen|n|cffffcc00Level 2|r - 20% damage, 260% regen|n|cffffcc00Level 3|r - 25% damage, 340% regen|n|cffffcc00Level 4|r - 30% damage, 420% regen"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Goldrinn\u0027s Howl - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Goldrinn\u0027s Howl - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Goldrinn\u0027s Howl - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Goldrinn\u0027s Howl - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 15% bonus to damage, and 180% increased life regeneration. Lasts 25 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 20% bonus to damage, and 260% increased life regeneration. Lasts 25 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 25% bonus to damage, and 340% increased life regeneration. Lasts 25 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 30% bonus to damage, and 420% increased life regeneration. Lasts 25 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
     }
   ]
 }

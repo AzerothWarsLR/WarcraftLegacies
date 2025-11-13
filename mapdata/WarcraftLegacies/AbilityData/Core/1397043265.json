@@ -22,6 +22,19 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,structure"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Fel Horde/FW/Warso- Bonebreaker, Grunts, Raiders)"
     }
   ]
 }

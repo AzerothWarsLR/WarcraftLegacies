@@ -18,6 +18,31 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "Aeth"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ice Trap"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Crystal Beartrap SD.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }

@@ -49,6 +49,55 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep Altar)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Summons Heroes and Demi-heroes. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GobAltar.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Altar of Industry"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Altar of Industry"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinAltar.blp"
     }
   ]
 }

@@ -4,5 +4,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlareOff.blp"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Elunes Gaze"
+    }
+  ]
 }

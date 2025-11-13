@@ -73,6 +73,36 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Robs,Ropm,R015,Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Stonemaul Bruiser"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Stonemaul Bruiser"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful warrior of Rexxar\u0027s clan."
     }
   ]
 }

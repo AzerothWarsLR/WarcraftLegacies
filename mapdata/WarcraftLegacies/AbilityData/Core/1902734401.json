@@ -22,6 +22,17 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong-Batrider)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Flings a volatile liquid that causes buildings to take an extra 5 damage per second. Buildings that are currently taking damage from Liquid Fire cannot be repaired, and have their attack rate reduced by \u003CAliq,DataC1,%\u003E%."
     }
   ]
 }

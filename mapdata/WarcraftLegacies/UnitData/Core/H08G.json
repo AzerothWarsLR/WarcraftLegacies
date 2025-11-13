@@ -53,6 +53,61 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Grand Crusader"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Saiden Dathrohan"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\saidandathrohan.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at bolstering troops around him."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Saiden"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.97
     }
   ]
 }

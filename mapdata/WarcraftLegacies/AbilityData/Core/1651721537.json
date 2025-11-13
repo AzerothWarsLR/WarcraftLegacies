@@ -66,6 +66,37 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Khaz Modan-Aerie Peak)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Skyfall"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Skyfall"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of Hinterland magic that damages nearby enemy units for \u003CAEsb,DataA1\u003E damage per wave. |n|cffffcc00Lasts for \u003CAEsb,Dur1\u003E seconds."
     }
   ]
 }

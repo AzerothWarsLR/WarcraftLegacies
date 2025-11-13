@@ -3,5 +3,20 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Neutral Hostile) (Medivh)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
 }

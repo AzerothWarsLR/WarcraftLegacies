@@ -52,6 +52,27 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,friend,self,vuln,invu,organic"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Endowment of Grim Batol"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The old magics used at Grim Batol grant the ability for your units to steal life from enemies whenever you are close to cursed fortress.|n|n|cffe8e80010% Lifesteal.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The old magics used at Grim Batol grant the ability for your units to steal life from enemies whenever you are close to cursed fortress.|n|n|cffe8e80020% Lifesteal.|r"
     }
   ]
 }

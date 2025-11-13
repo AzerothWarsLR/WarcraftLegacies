@@ -74,6 +74,45 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "Afbt"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Arcane Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to (|cffffcc00Z|r) Improved Arcane Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved magical defensive structure."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Lordaeron Tower)"
     }
   ]
 }

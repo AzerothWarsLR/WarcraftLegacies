@@ -62,6 +62,72 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSElf_Destruct.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(shared)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Self Destruct"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Self Destruct"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Instantly kills this unit."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
     }
   ]
 }

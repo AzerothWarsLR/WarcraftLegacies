@@ -62,6 +62,36 @@
       "Id": 1634824801,
       "Type": 3,
       "Value": "2"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(scarlet cleric)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\ResourceItems\\ResourceEffectTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Brings back to life the corpse of 1 of your units."
     }
   ]
 }

@@ -26,6 +26,32 @@
       "Pointer": 5,
       "Id": 895643730,
       "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge - Obsidian Statue)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores  mana to nearby friendly non-mechanical units."
     }
   ]
 }

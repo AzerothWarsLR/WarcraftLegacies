@@ -56,6 +56,31 @@
     {
       "Id": 1684562785,
       "Value": 0
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(stormwind champion single)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Brings back to life the corpse of 1 friendly nearby unit."
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

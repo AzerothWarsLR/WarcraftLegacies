@@ -77,6 +77,21 @@
       "Id": 862741327,
       "Type": 2,
       "Value": 0.1
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
     }
   ]
 }

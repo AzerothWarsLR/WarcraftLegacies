@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_ShadowWordPain.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Defilement"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has defilement casted on it; it has lowered defense and will take damage over time."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    }
+  ]
 }

@@ -15,6 +15,16 @@
     {
       "Id": 1920234345,
       "Value": 300
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase (|cffcece00S|r) Ring of Regeneration"
     }
   ]
 }

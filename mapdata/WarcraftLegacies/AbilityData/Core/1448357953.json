@@ -4,5 +4,25 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Green Akama)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Akama attacks destroy \u003CAfbt,DataA1\u003E mana per hit against any unit, causing bonus damage equal to the mana destroyed.|n|nAdditionally, attacks made by Akama cause \u003CAfbt,DataE1\u003E bonus damage against summoned units."
+    }
+  ]
 }

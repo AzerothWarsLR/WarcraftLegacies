@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Grim Batol"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "Restores hit points equal to 10% of damage dealt to enemy units."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

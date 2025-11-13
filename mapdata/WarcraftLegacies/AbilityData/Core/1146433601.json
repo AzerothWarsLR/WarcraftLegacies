@@ -114,6 +114,106 @@
       "Id": 895643763,
       "Type": 3,
       "Value": "spellbook"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Mograine)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Weapon Empowerement"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Weapon Empowerement - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Every level unlocks a new abilities for the Ashbringer. |n|n|cffffcc00Level 1|r - Unlocks Incinerate. |n|cffffcc00Level 2|r - Unlocks Pulverize. |n|cffffcc00Level 3|r - Unlocks Communion. |n|cffffcc00Level 4|r - Unlocks Crusade Aura."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Weapon Empowerement - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 1|r - Unlocks Incinerate."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 2|r - Unlocks Incinerate and Pulverize."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 3|r - Unlocks Incinerate, Pulverize and Communion."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Every level unlocks a new ability for the Ashbringer. |n|n|cffffcc00Level 4|r - Unlocks Incinerate, Pulverize, Crusader Aura and Communion."
     }
   ]
 }

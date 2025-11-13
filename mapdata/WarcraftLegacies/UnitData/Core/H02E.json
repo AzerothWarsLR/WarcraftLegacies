@@ -171,6 +171,95 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLorthemarv1.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Lor\u0027themar Theron"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas Vassal)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Lorthemar.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Regent of Quel\u0027Thalas"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Lor\u0027themar Theron"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Lor\u0027themar Theron"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLorthemarv1.blp"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Lor\u0027themar"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, adept at area of effect damage."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SpellBreaker"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
     }
   ]
 }

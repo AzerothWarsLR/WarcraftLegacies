@@ -123,6 +123,96 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ageless One"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, exceptional at light magic and aiding allies. "
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Velen"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Prophet Velen"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Velen"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Velen"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Prophet_Velen.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 180
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 180
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 66
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 66
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
     }
   ]
 }

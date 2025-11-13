@@ -22,6 +22,53 @@
     {
       "Id": 1702061922,
       "Value": 0
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Ny\u0027alothan Stairs"
+    },
+    {
+      "Id": 1919120994,
+      "Value": 60
+    },
+    {
+      "Id": 1734571618,
+      "Value": 50
+    },
+    {
+      "Id": 1650685538,
+      "Value": 70
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0.mdl"
+    },
+    {
+      "Id": 1836083042,
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0.mdl"
+    },
+    {
+      "Id": 1684566882,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

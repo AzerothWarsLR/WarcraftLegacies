@@ -86,6 +86,45 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Grand Marshal"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Grand Marshal"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Othmar Garithos"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Othmar Garithos"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior hero, adept at supporting armies."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
     }
   ]
 }

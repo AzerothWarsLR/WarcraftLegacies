@@ -87,6 +87,56 @@
     {
       "Id": 1932616053,
       "Value": 6
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Versatile marksmen and a true believer of the Horde."
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1886151029,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1919967861,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp"
     }
   ]
 }

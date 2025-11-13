@@ -33,6 +33,16 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(scarlet - Inquisitor)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

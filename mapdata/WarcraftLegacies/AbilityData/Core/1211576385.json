@@ -19,6 +19,30 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "nightelf"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sentinels-Priestess)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Priestess Weapon"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Moonstaffv2.mdx"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
     }
   ]
 }

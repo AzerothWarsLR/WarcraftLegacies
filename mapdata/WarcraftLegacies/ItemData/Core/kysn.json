@@ -11,6 +11,31 @@
     {
       "Id": 1886677097,
       "Value": 9999
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Trading Gold"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Trading Gold"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Trading Gold"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Gold from trading offshore"
     }
   ]
 }

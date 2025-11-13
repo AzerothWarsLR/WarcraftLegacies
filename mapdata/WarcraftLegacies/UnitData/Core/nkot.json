@@ -11,6 +11,11 @@
     {
       "Id": 1836083317,
       "Value": 625
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that can Bash opponents. "
     }
   ]
 }

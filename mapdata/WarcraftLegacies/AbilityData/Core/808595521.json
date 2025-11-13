@@ -89,6 +89,50 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbility_Warrior_Charge.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Several units)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Charge!"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Charge!"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this unit\u0027s movement speed by \u003CA020,DataA2,%\u003E% and attack speed by \u003CA020,DataB2,%\u003E% for \u003CA020,Dur2\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this unit\u0027s movement speed by \u003CA020,DataA1,%\u003E% and attack speed by \u003CA020,DataB1,%\u003E% for \u003CA020,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Greater Charge!"
     }
   ]
 }

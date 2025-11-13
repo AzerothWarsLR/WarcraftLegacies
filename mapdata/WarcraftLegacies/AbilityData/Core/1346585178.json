@@ -59,6 +59,46 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Teleporters)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Closes all active portals, enabling a new one to be formed. The Alterac portal, however, takes significantly longer to seal.\r\n"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Close Portals"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Close Portals"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPortalBlue.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     }
   ]
 }

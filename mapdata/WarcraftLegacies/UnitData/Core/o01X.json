@@ -45,6 +45,36 @@
     {
       "Id": 1852137845,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfCaptureFlag.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Light Blue - Shandris)(Level 4)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\NightElfCaptureFlag\\NightElfCaptureFlag.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Sentinel Standard"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.55
     }
   ]
 }

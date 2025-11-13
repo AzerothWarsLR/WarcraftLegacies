@@ -188,6 +188,144 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRoyalGuardGolem.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HeroErtan.mdl"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Grand Vizier"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Ertan"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRoyalGuardGolem.blp"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Nerubian"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Grand Vizier Ertan"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at disruption and ranged combat."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.6
     }
   ]
 }

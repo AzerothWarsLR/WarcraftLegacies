@@ -41,6 +41,33 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "_"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASStoneShield.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Orange - Earth Golem)(Icon)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Stone Skin"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Stone Skin"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Golem has a 25% chance to reduce incoming damage by 40."
     }
   ]
 }

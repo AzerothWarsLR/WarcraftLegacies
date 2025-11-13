@@ -273,6 +273,122 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "Attack,two"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids - Ursoc, Jarod, Zaela)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": "WoodHeavyBashFlesh"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Maiming Strike"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Maiming Strike - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals damage over time and reduces the targetted enemies\u0027 move and attack speed as well as reducing his armor. Last 5 seconds.|n|n|cffffcc00Level 1|r - 250 damage over time, reduces attack speed by 20% and move speed by 10%, armor by 3.|n|cffffcc00Level 2|r - 300 damage, reduces attack speed by 30% and move speed by 15%, armor by 4.|n|cffffcc00Level 3|r - 350 damage, reduces attack speed by 40% and move speed by 20%, armor by 5.|n|cffffcc00Level 4|r - 400 damage, reduces attack speed by 50% and move speed by 25%, armor by 6. "
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 250 damage over time, reduces armor by \u003CA07N,DataC1\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 20%"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 300 damage over time, reduces armor by \u003CA07N,DataC2\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 30%"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 350 damage over time, reduces armor by \u003CA07N,DataC3\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 40%"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": ".Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 400 damage over time, reduces armor by \u003CA07N,DataC4\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 50%"
     }
   ]
 }

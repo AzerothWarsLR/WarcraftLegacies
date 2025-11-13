@@ -68,6 +68,36 @@
     {
       "Id": 1836017781,
       "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\LOSBlocker\\IntentionallyLeftBlank.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ice Block"
+    },
+    {
+      "Id": 1969779573,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dispellable Dummy)"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

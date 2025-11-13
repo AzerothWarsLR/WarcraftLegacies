@@ -21,6 +21,15 @@
     {
       "Id": 1886677097,
       "Value": 500000
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Increases armor by 6 and attack rate by 25% when worn. Doesn\u0027t stack."
     }
   ]
 }

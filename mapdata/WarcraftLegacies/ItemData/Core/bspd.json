@@ -12,6 +12,16 @@
       "Id": 1634493289,
       "Type": 3,
       "Value": "Purchasable"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Increases the movement speed of the Hero by \u003CAIms,DataA1\u003E when worn."
     }
   ]
 }

@@ -114,6 +114,102 @@
       "Id": 828797775,
       "Type": 3,
       "Value": "nadw"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueDragonRoost.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(malygos)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueDragonRoost.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Malygos summons his blue dragon kin to fight his enemies, summoning Blue Dragon Whelp to help him. |nThe dragons last 60 seconds. |n|n|cffffcc00Level 1|r - 4 Drakes.|n|cffffcc00Level 2|r - 5 Drakes.|n|cffffcc00Level 3|r - 6 Drakes.|n|cffffcc00Level 4|r - 7 Drakes."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malygos summons 4 Blue Dragon Whelps."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malygos summons 5 Blue Dragon Whelps."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malygos summons 6 Blue Dragon Whelps."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malygos summons 7 Blue Dragon Whelps."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Dragon Kin"
     }
   ]
 }

@@ -81,6 +81,51 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HydromancerKulTirasV1.06.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ember Cleric"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ember Cleric"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "True and strong believer in the holy Light."
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
     }
   ]
 }

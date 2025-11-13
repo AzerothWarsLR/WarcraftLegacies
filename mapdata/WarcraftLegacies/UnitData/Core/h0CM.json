@@ -74,6 +74,46 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "Afbb"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Runestone Guardian "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "ArmoredGhost.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SpellBreaker"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp"
     }
   ]
 }

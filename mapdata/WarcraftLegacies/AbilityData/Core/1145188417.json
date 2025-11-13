@@ -179,6 +179,87 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,structure,ward"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallCaster.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Moving Earth"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Moving Earth - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero calls forth the earth itself to strike from beneath the feet of his enemies damaging them by a percentage of their base hit points per second. Also destroys trees.|n|cffffcc00Level 1|r - Damages for 3% hit points and lasts for 30 seconds.|n|cffffcc00Level 2|r - Damages for 4% hit points and lasts for 30 seconds.|n|cffffcc00Level 3|r - Damages for 5% hit points and lasts for 30 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moving Earth - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moving Earth - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moving Earth - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages enemy units in its area of effect by 3% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages enemy units in its area of effect by 4% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages enemy units in its area of effect by 5% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
     }
   ]
 }

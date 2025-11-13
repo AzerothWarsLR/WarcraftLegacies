@@ -114,6 +114,50 @@
       "Id": 829645685,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ranged supportive spellcaster. "
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Roar,- Roar|n- Rejuvenation,- Roar|n- Rejuvenation|n- Summon Bear"
     }
   ]
 }

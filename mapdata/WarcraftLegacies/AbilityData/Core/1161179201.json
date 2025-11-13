@@ -109,6 +109,78 @@
     {
       "Id": 1986818657,
       "Value": 10
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids - Ursoc)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": "BattleRoar"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When Avatar is activated, Ursoc gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 60 seconds.|n|n|cffffcc00Level 1|r - 5 bonus armor, 600 bonus hit points, 15 bonus damage.|n|cffffcc00Level 2|r - 10 bonus armor, 1200 bonus hit points, 30 bonus damage.|n|cffffcc00Level 3|r - 15 bonus armor, 1800 bonus hit points, 45 bonus damage."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avatar - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avatar - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give Ursoc \u003CA06E,DataA1\u003E bonus armor, \u003CA06E,DataB1\u003E bonus hit points, \u003CA06E,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA06E,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give Ursoc \u003CA06E,DataA2\u003E bonus armor, \u003CA06E,DataB2\u003E bonus hit points, \u003CA06E,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CA06E,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give Ursoc \u003CA06E,DataA3\u003E bonus armor, \u003CA06E,DataB3\u003E bonus hit points, \u003CA06E,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CA06E,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avatar - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

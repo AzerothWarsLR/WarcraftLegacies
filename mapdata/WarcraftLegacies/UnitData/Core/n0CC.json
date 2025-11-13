@@ -114,6 +114,68 @@
     {
       "Id": 1868788853,
       "Value": 5
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ACrk"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shadowforge Titan"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "The unstoppable golem colossus of the Dark-iron Kingdom."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowforge Titan"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_DwarfGolem.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronGolem.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 55
+    },
+    {
+      "Id": 1735156597,
+      "Value": 55
+    },
+    {
+      "Id": 1919705973,
+      "Value": 55
     }
   ]
 }

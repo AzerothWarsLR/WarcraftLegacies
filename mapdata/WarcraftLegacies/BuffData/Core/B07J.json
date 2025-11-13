@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyWave.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Divine Judgment"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been hit by Divine Judgment; it is in the air for a short duration."
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\StaffOfPurification\\PurificationTarget.mdx"
+    }
+  ]
 }

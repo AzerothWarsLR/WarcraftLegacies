@@ -33,6 +33,33 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow - Baelgun)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Explorer\u0027s Flare"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Explorer\u0027s Flare (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Baelgun launches a flare above a target point, which reveals that area for 22 seconds. |nReveals invisible units."
     }
   ]
 }

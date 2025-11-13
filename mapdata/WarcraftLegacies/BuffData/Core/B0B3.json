@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Black Hole"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is caught within a Black Hole; its movement speed has been reduced temporarily."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\VioletPulse.mdx"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    }
+  ]
 }

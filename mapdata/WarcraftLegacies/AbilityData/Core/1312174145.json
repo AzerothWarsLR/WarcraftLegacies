@@ -23,6 +23,21 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Blue - Dread Lord)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks combust \u003CA06N,DataA1\u003E(\u003CA06N,DataC1\u003E for Heros) mana per hit, dealing damage equal to the amount combusted."
     }
   ]
 }

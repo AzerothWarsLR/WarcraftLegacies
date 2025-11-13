@@ -9,6 +9,63 @@
       "Id": 1936746594,
       "Type": 2,
       "Value": 1
+    },
+    {
+      "Id": 1650685538,
+      "Value": 100
+    },
+    {
+      "Id": 1734571618,
+      "Value": 100
+    },
+    {
+      "Id": 1919120994,
+      "Value": 100
+    },
+    {
+      "Id": 1718973282,
+      "Type": 3,
+      "Value": "(Horizontal Stormwind)"
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CityBridgeLarge45\\CityBridgeLarge45.mdl"
+    },
+    {
+      "Id": 1920493154,
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Dark Iron Bridge"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1685352546,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1719170146,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\Cliff\\Cliff1.tga"
     }
   ]
 }

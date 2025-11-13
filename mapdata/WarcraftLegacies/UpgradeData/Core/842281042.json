@@ -77,6 +77,76 @@
       "Id": 862020199,
       "Type": 2,
       "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBansheeAdept.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBansheeMaster.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Nathrezim Warlock Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Nathrezim Warlock Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Nathrezim Warlock Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Nathrezim Warlock Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Nathrezim Warlock\u0027s mana capacity, hit points and gives them the ability to cast Sight of Sargeras."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Nathrezim Warlock\u0027s mana capacity, hit points and gives them the ability to cast Energy Wave."
     }
   ]
 }

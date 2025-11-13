@@ -74,6 +74,50 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhme"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,fourth"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Dalaran Tower)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Building_DalaranWatchtower.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Arcane Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to (|cffffcc00Z|r) Improved Arcane Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved magical defensive structure."
     }
   ]
 }

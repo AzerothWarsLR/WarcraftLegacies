@@ -49,6 +49,47 @@
       "Id": 1634824801,
       "Type": 3,
       "Value": "2"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFarSight.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(harvestWitch)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Far Sight"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Far Sight"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reveals an area of the map. |nDetects invisible units. |nLasts 12 seconds."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

@@ -80,6 +80,26 @@
       "Id": 1970498645,
       "Type": 3,
       "Value": "u01B"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Stormwind)"
+    },
+    {
+      "Id": 1818649953,
+      "Type": 3,
+      "Value": "RainOfFireLoop"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Bombing Run"
     }
   ]
 }

@@ -63,6 +63,31 @@
       "Id": 1953918325,
       "Type": 3,
       "Value": "foot"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful warrior of the depths."
     }
   ]
 }

@@ -277,6 +277,74 @@
       "Id": 1935762273,
       "Type": 2,
       "Value": 0.75
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ragnaros)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down 2 quick waves of fire that damage units in an area. Each wave deals initial damage and then burns enemies for \u003CvSW2,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CvSW2,DataB1\u003E wave damage, \u003CvSW2f,DataE1\u003E damage per second. |n|cffffcc00Level 2|r - \u003CvSW2,DataB2\u003E wave damage, \u003CvSW2,DataE2\u003E damage per second. |n|cffffcc00Level 3|r - \u003CvSW2,DataB3\u003E wave damage, \u003CvSW2,DataE3\u003E damage per second."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rain of Fire - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals \u003CANrf,DataB4\u003E initial damage and \u003CANrf,DataE4\u003E damage per second for \u003CANrf,Dur4\u003E seconds. |nLasts for \u003CANrf,DataA4\u003E waves."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals \u003CvSW2,DataB1\u003E initial damage and \u003CvSW2,DataE1\u003E damage per second for \u003CvSW2,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals \u003CvSW2,DataB2\u003E initial damage and \u003CvSW2,DataE2\u003E damage per second for \u003CvSW2,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals \u003CvSW2,DataB3\u003E initial damage and \u003CvSW2,DataE3\u003E damage per second for \u003CvSW2,Dur3\u003E seconds."
     }
   ]
 }

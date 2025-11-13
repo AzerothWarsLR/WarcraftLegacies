@@ -130,6 +130,53 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pikeman)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to have a \u003CAdef,DataF1\u003E% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced 30% and Magic damage taken is reduced by 15%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to have a \u003CAdef,DataF2\u003E% chance to reflect Piercing attacks upon the source, and to take only 50% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced by 30% and Magic damage taken is reduced by 20%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate to have a \u003CAdef,DataF3\u003E% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced by 30% and Magic damage taken is reduced by 40%."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Deactivate to move at normal speed, but take regular damage from Piercing attacks and Magic damage."
     }
   ]
 }

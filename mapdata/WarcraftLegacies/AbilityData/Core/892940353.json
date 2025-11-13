@@ -33,6 +33,38 @@
       "Id": 828797775,
       "Type": 3,
       "Value": "nfel"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Doom Guard)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Fel Stalker"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Fel Stalker"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a Fel Stalker. |n|cffffcc00Lasts 120 seconds.|R |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

@@ -56,6 +56,45 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhac"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas Barracks)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cantonment"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Cantonment"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary troop production building. "
     }
   ]
 }

@@ -33,6 +33,38 @@
       "Id": 828797775,
       "Type": 3,
       "Value": "ngz4"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grey - Rexxar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Summon Misha (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Misha"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons Misha, a powerful \u003Cngz4,realHP\u003E hit point bear. |nLasts forever."
     }
   ]
 }

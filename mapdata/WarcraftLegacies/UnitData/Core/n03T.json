@@ -120,6 +120,50 @@
       "Id": 1949393269,
       "Type": 3,
       "Value": "hero"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\VoidWalker\\VoidWalker.mdl"
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Murmur"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 10
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can cast Frost Nova. Immune to spells. "
     }
   ]
 }

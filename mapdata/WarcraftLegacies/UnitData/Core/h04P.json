@@ -77,6 +77,44 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rosp,Renb,R064,Rhac,Rgfo"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Ruins\\Props\\DalaranVioletCitadelRuin\\DalaranVioletCitadelRuin.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Nexus"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3.2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic observation tower. Has no attack, but can be upgraded into a Guard Tower, an Arcane Tower, or a Cannon Tower. Can learn the Magic Sentry ability."
     }
   ]
 }

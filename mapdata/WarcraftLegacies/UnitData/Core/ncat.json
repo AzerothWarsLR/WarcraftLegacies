@@ -16,6 +16,11 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long-range siege weaponry. Effective against buildings but slow and vulnerable. Can learn the Burning Oil ability. "
     }
   ]
 }

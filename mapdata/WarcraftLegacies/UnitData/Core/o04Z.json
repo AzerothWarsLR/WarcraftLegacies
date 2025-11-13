@@ -87,6 +87,70 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R09X"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long Range flying Horrors."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Flying Horror"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Flying Horror"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlyer.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\NightFlyerPurpleSmall.mdl"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "FacelessOne"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.4
     }
   ]
 }

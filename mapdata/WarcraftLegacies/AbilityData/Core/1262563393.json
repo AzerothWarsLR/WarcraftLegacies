@@ -23,6 +23,16 @@
       "Pointer": 2,
       "Id": 846033473,
       "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Moon Beam) (Scythe of Elune)"
     }
   ]
 }

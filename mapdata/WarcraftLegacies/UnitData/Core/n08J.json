@@ -76,6 +76,31 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids - Cenarius Summon)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\SpiderGreen\\SpiderGreen.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Black Widow"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Black Widow"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that poisons opponents and carries its young into battle. Can cast Web."
     }
   ]
 }

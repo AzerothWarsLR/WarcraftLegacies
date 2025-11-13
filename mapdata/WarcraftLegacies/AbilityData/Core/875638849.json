@@ -48,6 +48,37 @@
       "Id": 846881352,
       "Type": 2,
       "Value": 30
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(lordaeron Mage)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down 3 freezing ice shard waves; each wave deals \u003CACbz,DataB1\u003E damage to units in a small area."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ice Fall"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ice Fall"
     }
   ]
 }

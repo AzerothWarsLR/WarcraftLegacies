@@ -9,6 +9,21 @@
       "Id": 1667330677,
       "Type": 3,
       "Value": "orc"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ancestral Spirits"
     }
   ]
 }

@@ -29,6 +29,30 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "none"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hero Glow Origin"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "HeroGlow.mdx"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
     }
   ]
 }

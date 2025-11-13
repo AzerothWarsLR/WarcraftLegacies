@@ -92,6 +92,58 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 50
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat1.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 50
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 3.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Black Temple"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 50
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari/Fel Horde)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Fortress to enable the production of additional types of structures and units."
     }
   ]
 }

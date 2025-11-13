@@ -9,6 +9,28 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit spawns 2 Flying Horrors upon dying"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spawn Flying Horror"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Flying Horror"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFlyer.blp"
     }
   ]
 }

@@ -35,6 +35,33 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHeadshot.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Orange Kul tiras Marine)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Headshot"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Headshot"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 5% chance that an attack will stun the target for 0.5 (0.1 heroes) seconds."
     }
   ]
 }

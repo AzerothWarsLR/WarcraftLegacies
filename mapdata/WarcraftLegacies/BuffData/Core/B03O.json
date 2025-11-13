@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Earth\u0027s Grace"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is being healed by Earth\u0027s Grace."
+    }
+  ]
 }

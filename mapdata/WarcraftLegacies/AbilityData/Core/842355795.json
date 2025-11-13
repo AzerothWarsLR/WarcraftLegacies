@@ -41,6 +41,84 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(scourge)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Causes the hero to summon Dark Minions every time it casts a spell. The minions last 45 seconds.|n|n|cffffcc00Level 1|r - Summons 1 minion.|n|cffffcc00Level 2|r - Summons 2 minions.|n|cffffcc00Level 3|r - Summons 3 minions.|n|cffffcc00Level 4|r - Summons 4 minions."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNWC1RaiseDeadRemastered.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWC1RaiseDeadRemastered.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Army of the Dead - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the hero to summon 1 Dark Minion every time it casts a spell. The minion lasts 45 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the hero to summon 2 Dark Minions every time it casts a spell. The minions last 45 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the hero to summon 3 Dark Minions every time it casts a spell. The minions last 45 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Army of the Dead"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the hero to summon 4 Dark Minions every time it casts a spell. The minions last 45 seconds."
     }
   ]
 }

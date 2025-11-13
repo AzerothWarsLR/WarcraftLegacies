@@ -26,6 +26,16 @@
     {
       "Id": 1836083317,
       "Value": 700
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit with Shadowmeld. "
     }
   ]
 }

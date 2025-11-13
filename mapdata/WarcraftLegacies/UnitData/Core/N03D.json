@@ -119,6 +119,76 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrc_Warlord.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Fel Warchief"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FelOrcWarlord.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warchief of the Fel Horde"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Kargath Bladefist"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Fel Warchief"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at bolstering troups and melee combat."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shaman"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Kargath"
     }
   ]
 }

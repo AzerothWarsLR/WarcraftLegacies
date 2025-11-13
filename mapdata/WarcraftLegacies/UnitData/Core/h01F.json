@@ -62,6 +62,31 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\NorthrendCrypt\\NorthrendCrypt.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Duskwood Graveyard"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Revives Slain Heroes"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind Other)"
     }
   ]
 }

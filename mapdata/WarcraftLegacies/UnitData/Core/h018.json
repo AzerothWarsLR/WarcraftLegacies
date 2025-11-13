@@ -81,6 +81,51 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "h048"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarvenWarrior.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenWarrior.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.87
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warrior"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Warrior"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Stout defender of Dun Morogh."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroMountainKing"
     }
   ]
 }

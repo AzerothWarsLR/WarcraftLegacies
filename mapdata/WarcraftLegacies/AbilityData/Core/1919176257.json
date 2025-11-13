@@ -46,6 +46,47 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 375
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Voidwalker)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Nullify"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Absorbs the life essence of a target enemy unit by taking hit points from it every second and giving them to the Hero. |nLasts \u003CANdr,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CANdr,DataA1\u003E hit point drain per second. |n|cffffcc00Level 2|r - \u003CANdr,DataA2\u003E hit point drain per second. |n|cffffcc00Level 3|r - \u003CANdr,DataA3\u003E hit point drain per second. |n|cffffcc00Level 4|r - \u003CANdr,DataA4\u003E hit point drain per second.|n|cffffcc00Level 5|r - \u003CANdr,DataA5\u003E hit point drain per second."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nullify - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Absorbs the essence of a target enemy unit by taking \u003CANdr,DataA1\u003E hit points per second and 10  mana points per second from it and giving them to the Voidwalker. |nLasts \u003CANdr,Dur1\u003E seconds."
     }
   ]
 }

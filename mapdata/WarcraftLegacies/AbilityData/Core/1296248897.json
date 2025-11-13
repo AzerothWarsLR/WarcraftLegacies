@@ -36,6 +36,33 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(troll hostile)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Jintha\u0027Alor Aura"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Jintha\u0027Alor Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases life regeneration rate by 1 health per second to friendly units and structures in a 5000 radius."
     }
   ]
 }

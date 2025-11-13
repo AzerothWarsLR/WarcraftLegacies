@@ -28,6 +28,23 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,friend,self,vuln,invu"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Voone, Wanderer)"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Improved Trueshot Aura"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "An aura that gives nearby friendly units a 15% bonus damage to their ranged attacks."
     }
   ]
 }

@@ -4,5 +4,17 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Phoenix) (Icon)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Phoenix spreads enchanted flames to nearby enemies, dealing \u003CA0EL,DataA1\u003E damage on impact and burning them for \u003CA0EL,DataB1\u003E per second over \u003CA0EL,Dur1\u003E seconds. Its flames burn with such intensity that the Phoenix damages itself as well."
+    }
+  ]
 }

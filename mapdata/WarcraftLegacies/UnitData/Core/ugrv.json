@@ -53,6 +53,35 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "R09X,R006,R00C,R04R,Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge Research)"
     }
   ]
 }

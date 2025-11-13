@@ -96,6 +96,35 @@
     {
       "Id": 1768975733,
       "Value": 400
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Seer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Supporting spellcaster, adept at area denial and healing."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Seer"
     }
   ]
 }

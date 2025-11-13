@@ -60,6 +60,39 @@
     {
       "Id": 1702065513,
       "Value": 0
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Staff of Teleportation"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Staff of |cffffcc00T|releportation"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
     }
   ]
 }

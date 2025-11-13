@@ -18,6 +18,27 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lordaeron - Paladin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells.|n|cffffcc00Lasts \u003CACds,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

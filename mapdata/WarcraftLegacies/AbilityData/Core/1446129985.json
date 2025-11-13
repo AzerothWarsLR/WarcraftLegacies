@@ -301,6 +301,100 @@
     {
       "Id": 1986358369,
       "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNHolyMaul.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Blessed Ground"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Field of Blood - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blessed Ground"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a Blessed Circle which Heals allied ground units in a target area. |n|nHeals each unit for 150 hitpoints, then 10 hitpoints a second for 35 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|nHeals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|cffffcc00|n|rHeals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds."
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\Consecrate.mdx"
     }
   ]
 }

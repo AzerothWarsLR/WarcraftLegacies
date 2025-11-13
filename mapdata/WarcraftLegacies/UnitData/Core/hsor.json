@@ -72,6 +72,35 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhst,Rhar,Rhme,Rhpm,Rguv"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Slow,- Slow|n- Summon Fire Elemental,- Slow|n- Summon Fire Elemental|n- Soul Burn"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Versatile Thalassian spellcaster."
     }
   ]
 }

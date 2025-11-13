@@ -11,6 +11,11 @@
     {
       "Id": 1920234345,
       "Value": 400
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Grants the ability to sacrifice a friendly non-Hero unit to restore hit points and a small amount of mana. Also increases the Hero\u0027s mana by 50 while equipped."
     }
   ]
 }

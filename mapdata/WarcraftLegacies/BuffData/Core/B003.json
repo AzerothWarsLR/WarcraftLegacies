@@ -4,5 +4,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Thunder"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
+    }
+  ]
 }

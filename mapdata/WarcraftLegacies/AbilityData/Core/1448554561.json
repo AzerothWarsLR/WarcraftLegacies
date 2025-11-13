@@ -25,6 +25,25 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "o02A"
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall dummy)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0NN,DataA1,%\u003E% percent chance to avoid an attack."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
     }
   ]
 }

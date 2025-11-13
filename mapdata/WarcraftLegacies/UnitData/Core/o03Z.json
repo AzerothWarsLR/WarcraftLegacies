@@ -77,6 +77,53 @@
       "Id": 1885693045,
       "Type": 3,
       "Value": "o00V"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep T3)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GreatHallGurubashiV1.04.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRuinsFortress.blp"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
     }
   ]
 }

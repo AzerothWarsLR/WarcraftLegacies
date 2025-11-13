@@ -83,6 +83,41 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "hcas"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Lordaeron Tower)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy defensive structure, effective against clusters of ground units. "
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Abds,Afsh"
     }
   ]
 }

@@ -68,6 +68,59 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCatapultWC1.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CatapultWC1.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 1
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Skull Catapult"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Skull Catapult"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Barbaric boulder tossing siege weaponry."
     }
   ]
 }

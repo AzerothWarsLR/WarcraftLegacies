@@ -82,6 +82,41 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "War Machine"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build War Machine"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long-range siege weaponry. Effective against buildings but slow and vulnerable."
     }
   ]
 }

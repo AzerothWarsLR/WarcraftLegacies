@@ -93,6 +93,65 @@
       "Id": 1919970677,
       "Type": 2,
       "Value": 0.72
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "war3mapImported\\UPGClericMastery.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Frost Bolt,- Frost Bolt|n- Dispel,- Frost Bolt|n- Dispel|n- Ice Fall"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\LordaeronMagician.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mage"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mage"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSorceress.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Sorceress"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Damage dealing spellcaster."
     }
   ]
 }

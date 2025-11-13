@@ -46,6 +46,31 @@
       "Id": 879977294,
       "Type": 2,
       "Value": 500
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ogre Magi)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Healing Spray"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sprays \u003CA092,DataF1\u003E waves of healing mist; each wave heals \u003CA092,DataA1\u003E damage to all friendly units in an area."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }

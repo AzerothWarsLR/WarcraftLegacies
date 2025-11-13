@@ -20,6 +20,16 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee amphibious unit with Devour and Spiked Shell. Can cast Crushing Wave. "
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ACc2,ANt2"
     }
   ]
 }

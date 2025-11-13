@@ -34,6 +34,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASSatanicAura.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Burning Legion)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Curse Aura"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\VampiricAura\\VampiricAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Curse Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Curses enemy units within a radius of 1500, reducing their armor by 6."
     }
   ]
 }

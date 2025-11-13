@@ -97,6 +97,79 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNHigh Elf Spell Breaker.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Sunking"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\human\\BloodElfSpellThief\\BloodElfSpellThief.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BloodElfSpellThiefMISSILE\\BloodElfSpellThiefMISSILE.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "King of Quel\u0060Thalas"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Anasterian Sunstrider"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Sunking"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNHigh Elf Spell Breaker.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at absording damage and returning it."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Priest"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Anasterian"
     }
   ]
 }

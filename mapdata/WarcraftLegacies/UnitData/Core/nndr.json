@@ -81,6 +81,19 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged flying unit. Has Spell Resistance."
     }
   ]
 }

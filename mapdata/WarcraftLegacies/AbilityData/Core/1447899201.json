@@ -124,6 +124,63 @@
       "Id": 828466504,
       "Type": 2,
       "Value": 20
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(gilneas)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Heal - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Heal - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Heal - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA2\u003E hit points."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA3\u003E hit points."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA4\u003E hit points."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly non-mechanical wounded unit for 20 hit points."
     }
   ]
 }

@@ -86,6 +86,51 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0ED"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Master of magics from Ny\u0027alotha."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessSorcerer.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOne_Sorcerer.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Fateweaver"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fateweaver"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "KelThuzadNecro"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Anti-magic Shell,- Heal|n- Anti-magic Shell|n- Suppression"
     }
   ]
 }

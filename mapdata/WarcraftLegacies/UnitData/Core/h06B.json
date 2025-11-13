@@ -120,6 +120,73 @@
     {
       "Id": 1647403381,
       "Value": 38
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly Paladin.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGHolyMaul.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Judgment.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1768320117,
+      "Value": 0
+    },
+    {
+      "Id": 1868983413,
+      "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Templar"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Templar"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Righteous warrior of the Scarlet Crusade."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroPaladin"
     }
   ]
 }

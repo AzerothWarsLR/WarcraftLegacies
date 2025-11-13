@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is bound in Universal Shackles; it cannot move or attack and will take damage over time."
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Universal Shackles"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
+    }
+  ]
 }

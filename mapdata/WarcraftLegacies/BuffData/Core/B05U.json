@@ -9,6 +9,31 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "orc"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Impaling Strike"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been affected by Impaling Strike. It is taking damage over time and has reduced movement speed."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Impaling Strike"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

@@ -179,6 +179,80 @@
     {
       "Id": 1684824693,
       "Value": 15
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNRedLioness3.blp"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "None"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Seraphim.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Seraphim"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Seraphim"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerul Warriors of the Light."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroFemaleDemonHunter"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 255
     }
   ]
 }

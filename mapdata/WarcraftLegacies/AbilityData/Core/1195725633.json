@@ -57,6 +57,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,neutral,nonsapper"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonOrb.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sentinels Real)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Elune\u0027s Gaze"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Elune\u0027s Gaze"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns every allied unit in a 350 area of effect invisible. If an invisible unit attacks, uses an ability or casts a spell, it will become visible. |nLasts 60 seconds."
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\UnholyFrenzyAOE\\UnholyFrenzyAOETarget.mdl"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     }
   ]
 }

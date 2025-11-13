@@ -123,6 +123,70 @@
       "Id": 1667330677,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Arcane_Annihilator.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "None"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Quelthalas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Bloodelf_Arcane_Annihilator_V2.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Arcane Annihilator"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Arcane Annihilator"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Siege unit that can transform into an immobile ranged turret."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Ballista"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
     }
   ]
 }

@@ -23,6 +23,61 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/PassiveButtons/PASweapon_sword.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(King Arthas)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "King of Lordaeron sword"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostMourne.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "T"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn |cffffcc00T|rhe Power of Frostmourne - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Frostmourne gives the power for Arthas to hit multiple enemies with one swing of his sword .|n|n|cffffcc00Level 1|r - 25% of damage is splash. |n|cffffcc00Level 2|r - 40% of damage is splash. |n|cffffcc00Level 3|r - 55% of damage is splash."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "King of Lordaeron sword"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A specially forged sword by his father gives Arthas the power to do 40% of his damage to enemies near the primary attacked unit."
     }
   ]
 }

@@ -34,6 +34,11 @@
       "Id": 1819239285,
       "Type": 2,
       "Value": 8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit that hurls bolts of lightning. Can cast Silence and Animate Dead. "
     }
   ]
 }

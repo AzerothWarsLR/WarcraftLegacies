@@ -39,6 +39,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNFlakCannons.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow - Gnomeregan)"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Gnomeregan Defense System"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Gnomeregan Defense System"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Fires a volley of chemical rockets, lighting nearby enemies on fire. Deals 20 initial damage and 5 damage per second for 10 seconds to any units hit."
     }
   ]
 }

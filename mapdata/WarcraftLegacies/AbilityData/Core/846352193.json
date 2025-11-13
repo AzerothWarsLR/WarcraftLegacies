@@ -59,6 +59,40 @@
       "Id": 845504847,
       "Type": 2,
       "Value": 0.16
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Rend) (Nazgrim)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases the movement speed and attack rate of nearby friendly units. |n|n|cffffcc00Level 1|r - 4% movement, 4% attack. |n|cffffcc00Level 2|r - 8% movement, 8% attack. |n|cffffcc00Level 3|r - 12% movement, 12% attack. |n|cffffcc00Level 4|r - 16% movement, 16% attack."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 4% and attack rate by 4%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 8% and attack rate by 8%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 12% and attack rate by 12%."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 16% and attack rate by 16%."
     }
   ]
 }

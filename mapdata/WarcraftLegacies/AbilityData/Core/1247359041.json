@@ -23,6 +23,27 @@
       "Id": 879128137,
       "Type": 2,
       "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases a target friendly unit\u0027s damage by 20 %, armor by 5 and hp regen by 1. |nLasts \u003CAinf,Dur1\u003E seconds."
     }
   ]
 }

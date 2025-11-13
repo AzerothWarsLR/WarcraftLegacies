@@ -30,6 +30,41 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "RD10"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(vindicator)"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Naaru\u0027s Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Naaru\u0027s Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces the damage taken from Piercing attacks to \u003CA12W:Aegr,DataG1,%\u003E%"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/PASDivineClarity.blp"
     }
   ]
 }

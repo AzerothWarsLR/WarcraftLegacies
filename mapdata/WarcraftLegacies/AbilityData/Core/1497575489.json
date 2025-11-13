@@ -78,6 +78,51 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "friend,self,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCExplosiveShot.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ironforge) (inner fire)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Powered Up Ammunition"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Powered Up Ammunition"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases a nearby friendly tower\u0027s damage by 40% for 60 seconds. 4 seconds cooldown."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCExplosiveShot.blp"
+    },
+    {
+      "Id": 2036495713,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }

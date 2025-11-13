@@ -85,6 +85,21 @@
     {
       "Id": 1835098997,
       "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fire Elemental"
     }
   ]
 }

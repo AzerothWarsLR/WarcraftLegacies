@@ -135,6 +135,75 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThaurissan.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Emperor of Blackrock"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Thaurissan.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Emperor of Blackrock"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Emperor Dagran Thaurissan"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Emperor of Blackrock"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Dagran Thaurissan"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Oppressive mystical Hero, adept at dealing magical damage."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Tichondrius"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
     }
   ]
 }

@@ -76,6 +76,30 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Granite Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Extraordinarily powerful construct built and infused with magic."
     }
   ]
 }

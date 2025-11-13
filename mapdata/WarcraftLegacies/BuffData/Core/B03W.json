@@ -9,6 +9,40 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbility_Warrior_Charge.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "To Victory!"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effect of To Victory!; its movement speed is increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": 828470374,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1667331174,
+      "Value": 1
     }
   ]
 }

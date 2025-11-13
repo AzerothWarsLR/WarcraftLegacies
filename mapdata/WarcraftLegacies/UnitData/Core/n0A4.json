@@ -83,6 +83,45 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Blue Dragonspawn"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Blue Dragonspawn"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueDragonSpawn.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Monstrous melee unit."
     }
   ]
 }

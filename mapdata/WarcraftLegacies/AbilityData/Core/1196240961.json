@@ -164,6 +164,97 @@
     {
       "Id": 1886612833,
       "Value": 500
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Naisha)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Has a 8 seconds cooldown. |n|n|cffffcc00Level 1|r - 50 damage per target. 5 targets |n|cffffcc00Level 2|r - 75 damage per target. 6 targets |n|cffffcc00Level 3|r - 100 damage per target. 7 targets"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Fan of Knives - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Each knife does 100 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does \u003CAEfk,DataA4\u003E damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Each knife does 50 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Each knife does 75 damage."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Quick Knives"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Quick Knives - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Quick Knives - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Quick Knives - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Quick Knives - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdx"
     }
   ]
 }

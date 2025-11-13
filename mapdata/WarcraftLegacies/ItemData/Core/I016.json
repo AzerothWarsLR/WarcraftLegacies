@@ -43,6 +43,31 @@
     {
       "Id": 1634956649,
       "Value": 1
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHSZin\u0027Rokhv1.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Zin\u0027rokh, Destroyer of Worlds"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Zin\u0027rokh, Destroyer of Worlds"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nGrants \u002B15 to all stats, \u002B80 damage as well as 30% increased attack and movement speed. "
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

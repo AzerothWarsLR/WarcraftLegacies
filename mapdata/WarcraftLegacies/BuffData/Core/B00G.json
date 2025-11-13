@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Mana Shield"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Magi) "
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\MagicShield_Blue.mdx"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
 }

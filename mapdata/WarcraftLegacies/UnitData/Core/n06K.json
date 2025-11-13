@@ -81,6 +81,90 @@
     {
       "Id": 1647403381,
       "Value": 10
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnarFlamebeard.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-priest.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gilneas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DruidoftheTalonGilneasV1.06.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Druid of the Scythe"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Druid of the Scythe"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Offensive Casters."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Entangling Root,- Entangling Root|n- Dispel Magic,- Entangling Root|n- Dispel Magic|n- Invoke Spider"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
     }
   ]
 }

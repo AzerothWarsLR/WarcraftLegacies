@@ -125,6 +125,40 @@
     {
       "Id": 1915838837,
       "Value": 600
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LavaSpawnMissile\\LavaSpawnMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Obsidian Drake"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Obsidian Drake"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Child of Sabellian, enslaved by the Fel Dragonmaw."
     }
   ]
 }

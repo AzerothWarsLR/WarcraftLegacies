@@ -4,5 +4,40 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderBurst.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Blood and Thunder"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Spells\\Orc\\Bloodlust\\BloodlustSpecial.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": 828470374,
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": 1685091174,
+      "Value": 1
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is berserk;it will deal more damage absorb spell damage and block other damage."
+    }
+  ]
 }

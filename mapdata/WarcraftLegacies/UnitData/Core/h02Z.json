@@ -76,6 +76,41 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\GoldMine\\GoldMine.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Oshu\u0027gun"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 8
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

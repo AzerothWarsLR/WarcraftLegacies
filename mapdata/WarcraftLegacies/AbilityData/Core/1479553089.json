@@ -232,6 +232,112 @@
     {
       "Id": 1986358369,
       "Value": 4
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_ShadowWordPain.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Blue - Archimonde)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Defilement"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_ShadowWordPain.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Defilement - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |nDecreases armor; slows movement speed and deals high damage over time to the targets. |nLasts 20 seconds.|n|n|cffffcc00Level 1|r - 10 max damage per second, reduces armor by 4. 5% Movement speed reduction.|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 5. 10% Movement speed reduction.|n|cffffcc00Level 3|r - 30 max damage per second, reduces armor by 6. 15% Movement speed reduction.|n|cffffcc00Level 4|r - 40 max damage per second, reduces armor by 7. 20% Movement speed reduction."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defilement - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defilement - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defilement - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defilement - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |n|nDecreases armor by 4; deals 15 damage per second to the primary target; deals slightly less damage to nearby targets. Also Reduces enemy Movement speed by 5%.|nLasts 15 seconds on units and 10 seconds on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |n|nDecreases armor by 5; deals 25 damage per second to the primary target; deals slightly less damage to nearby targets. Also Reduces enemy Movement speed by 10%.|nLasts 15 seconds on units and 10 seconds on heroes."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |n|nDecreases armor by 6; deals 35 damage per second to the primary target; deals slightly less damage to nearby targets. Also Reduces enemy Movement speed by 15%.|nLasts 15 seconds on units and 10 seconds on heroes."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |n|nDecreases armor by 7; deals 45 damage per second to the primary target; deals slightly less damage to nearby targets. Also Reduces enemy Movement speed by 20%.|nLasts 15 seconds on units and 10 seconds on heroes."
     }
   ]
 }

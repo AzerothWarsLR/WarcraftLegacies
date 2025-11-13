@@ -15,6 +15,16 @@
     {
       "Id": 1836083317,
       "Value": 1000
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ACcs"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit that can cast Curse and Possession. "
     }
   ]
 }

@@ -98,6 +98,56 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R00K"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Spiritual Guidance,- Heal|n- Spiritual Guidance|n- Windfury"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\ForestTrollShadowPriest\\ForestTrollShadowPriest.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowpriest"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shadowpriest"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Shadowy voodoo Troll."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "WitchDoctor"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

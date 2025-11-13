@@ -102,6 +102,70 @@
     {
       "Id": 1932616053,
       "Value": 5
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-witchdoctor.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Firestorm,- Firestorm|n- Stasis Trap,- Firestorm|n- Stasis Trap|n- Mass Bloodlust"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\demon\\EredarWarlock\\EredarWarlock.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Eredar Occultist"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Eredar Occultist"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful Eredar Warlock in service of Magtheridon."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "PitLord"
     }
   ]
 }

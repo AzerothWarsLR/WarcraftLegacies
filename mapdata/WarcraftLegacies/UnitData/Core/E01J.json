@@ -91,6 +91,65 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R099"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Nobundo"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Shaman"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Farseer Nobundo"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Nobundo"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at healing allies and disrupting the enemies."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Nobundo"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Akama02.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
     }
   ]
 }

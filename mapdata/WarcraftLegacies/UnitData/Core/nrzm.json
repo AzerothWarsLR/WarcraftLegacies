@@ -23,6 +23,11 @@
     {
       "Id": 1717920885,
       "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit that can cast Healing Ward and Feral Spirit. "
     }
   ]
 }

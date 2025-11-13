@@ -62,6 +62,36 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scarlet/Lordaeron)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Building_ScarletMonastery.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scarlet Monastery"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Trains Priests, Sorceresses, and Spellbreakers. "
     }
   ]
 }

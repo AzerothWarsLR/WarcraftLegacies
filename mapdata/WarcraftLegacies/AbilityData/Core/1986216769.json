@@ -29,6 +29,36 @@
       "Id": 863200085,
       "Type": 2,
       "Value": 700
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Green Royal Guard)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crushing Wave"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 100 damage to each enemy land unit in a line, up to 1000 max damage."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
     }
   ]
 }

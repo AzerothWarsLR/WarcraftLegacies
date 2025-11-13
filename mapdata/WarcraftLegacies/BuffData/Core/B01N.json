@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurnedAncient.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been choosen. It shall soon perish and be reborn."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Seed of Burning Hatred"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_BurningConversion.mdx,Abilities\\Spells\\Other\\Doom\\DoomTarget.mdl"
+    }
+  ]
 }

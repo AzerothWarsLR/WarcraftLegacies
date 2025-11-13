@@ -31,6 +31,19 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit that hurls bolts of lightning. Can cast Purge. "
     }
   ]
 }

@@ -138,6 +138,121 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,structure,enemy,neutral"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCVerdantSpheres.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Kael\u0027thas)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Verdant Spheres"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVerdantSpheres.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Verdant Spheres - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Adds bonus damage to the caster\u0027s attack.|n |n|cffffcc00Level 1|r - 25 damage. |n|cffffcc00Level 2|r - 40 damage. |n|cffffcc00Level 3|r - 55 damage. |n|cffffcc00Level 4|r - 70 damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA1\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA2\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA3\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA4\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCVerdantSpheres.blp"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

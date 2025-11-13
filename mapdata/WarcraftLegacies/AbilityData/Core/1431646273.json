@@ -75,6 +75,75 @@
       "Id": 879911255,
       "Type": 2,
       "Value": 600
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Archangel)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\Judgment of Light.mdx"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "war3mapImported\\Judgment of Light.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Righteous Fury"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 60 damage to nearby units in a large area."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 100 damage to nearby units."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Righteous Fury"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyHammerOn.blp"
     }
   ]
 }

@@ -61,6 +61,42 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbsorbMagic.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Orange - Kirin Tor)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Arcane Combustion"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Combustion"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Wreaks an enemy unit in arcane energy which cause 60 damage per second, prevents the casting of spells, and reduces attack damage by 50%.|n|nLasts 20 seconds on units, 6 on heroes."
     }
   ]
 }

@@ -49,6 +49,24 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Nether Dragon |cffffcc00H|ratchling"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Tiny ranged flying unit. "
     }
   ]
 }

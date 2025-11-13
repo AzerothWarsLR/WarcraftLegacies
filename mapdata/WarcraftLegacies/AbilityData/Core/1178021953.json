@@ -18,6 +18,21 @@
       "Id": 846357327,
       "Type": 2,
       "Value": 1.5
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dark Green - Si7 Agent, Dalaran- Bucc)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance to do 1.5 times normal damage on an attack."
     }
   ]
 }

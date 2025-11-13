@@ -52,6 +52,33 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dagran\u0027s Fire Elementals)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Incinerate"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0JG,DataB1\u003E damage to all nearby hostile units."
     }
   ]
 }

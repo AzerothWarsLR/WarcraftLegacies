@@ -123,6 +123,60 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "A12Q"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sunfury)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\BEGlaiveMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Bloodwarder"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Bloodwarder"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "The strongest lieutenants of Kael. Powerful versus magic users."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\EliteBloodElfSpellThief.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Guard.blp"
     }
   ]
 }

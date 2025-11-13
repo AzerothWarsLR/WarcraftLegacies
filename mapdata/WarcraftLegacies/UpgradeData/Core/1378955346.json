@@ -62,6 +62,50 @@
     {
       "Id": 1651338343,
       "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImprovedHighElvenBows.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Enchanted Bowstrings"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Enchanted Bowstrings"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Rangers, Farstriders, Ballistas, and Sylvanas by increasing their attack range by 150 and attack speed by 5%."
     }
   ]
 }

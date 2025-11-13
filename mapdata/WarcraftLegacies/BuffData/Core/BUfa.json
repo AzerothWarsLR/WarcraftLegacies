@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Frost Armor; it has increased armor; and melee units that attack it will have their movement speed and attack rate reduced for a short duration."
+    }
+  ]
 }

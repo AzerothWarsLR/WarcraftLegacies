@@ -96,6 +96,70 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\RendBlackhand_Hero.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Warchief of the Blackrock Clan"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Dal\u0027rend Blackhand"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-blademaster.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, specialised in dealing damage and disrupting enemies."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Rend"
     }
   ]
 }

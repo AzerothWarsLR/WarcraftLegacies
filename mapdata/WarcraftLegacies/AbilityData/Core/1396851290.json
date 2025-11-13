@@ -59,6 +59,38 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "naga"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Incubate)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hatches the Mature Egg, destroying it and creating a permanent Soldier."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hatch"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHatchingEgg.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hatch"
     }
   ]
 }

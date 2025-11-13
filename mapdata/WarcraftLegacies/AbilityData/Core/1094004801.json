@@ -35,6 +35,37 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "Bmlc,B009"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Captain Falric, Jailor Kassan)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Universal Shackles"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Universal Shackles"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA05A,DataA1\u003E damage per second. |nLasts \u003CA05A,Dur1\u003E seconds against units and \u003CA05A,HeroDur1\u003E seconds against heroes."
     }
   ]
 }

@@ -17,6 +17,20 @@
       "Id": 1634493289,
       "Type": 3,
       "Value": "Purchasable"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, dispel magic and slow the movement speed of the enemy for \u003CAIlp,Dur1\u003E seconds. |n|cffffcc00Deals \u003CAIlp,DataC1\u003E bonus damage to summoned units."
     }
   ]
 }

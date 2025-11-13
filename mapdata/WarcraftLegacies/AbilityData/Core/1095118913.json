@@ -182,6 +182,119 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 800
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "channel"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEssenceDrain4.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Kael\u0027thas)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Siphoning Ritual"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEssenceDrain4.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Siphoning Ritual - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Drains hit points and mana each second from up to 24 units in the target area for \u003CA0FA,DataA2\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it.|n|n|cffffcc00Level 1|r - Drains 40 hit points and 20 mana per second. |n|cffffcc00Level 2|r - Drains 50 hit points and 25 mana per second. |n|cffffcc00Level 3|r - Drains 60 hit points and 30 mana per second."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphoning Ritual - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphoning Ritual - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Siphoning Ritual - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drains 40 hit points and 20 mana per second from up to 24 units in the target area for \u003CA0FA,DataA1\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drains 50 hit points and 25 mana per second from up to 24 units in the target area for \u003CA0FA,DataA2\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drains 60 hit points and 30 mana per second from up to 24 units in the target area for \u003CA0FA,DataA3\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
     }
   ]
 }

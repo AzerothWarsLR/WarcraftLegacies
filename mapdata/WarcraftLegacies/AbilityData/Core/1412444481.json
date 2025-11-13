@@ -191,6 +191,124 @@
       "Id": 862023506,
       "Type": 2,
       "Value": 99999
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTimeEclipse3.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(dalaran)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Reborn through Time"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTimeEclipse3.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Reborn through Time - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|n|cffffcc00Level 1|r - 100 second cooldown.|n|cffffcc00Level 2|r - 85 second cooldown.|n|cffffcc00Level 3|r - 60 second cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Reborn through Time - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Reborn through Time - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Reborn through Time - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d1100 second cooldown|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d285 second cooldown|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d360 second cooldown|r"
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": 1667326817,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "war3mapImported\\ClockRune.mdx"
+    },
+    {
+      "Id": 1634034017,
+      "Type": 3,
+      "Value": "war3mapImported\\ManaAspect_v1.0.mdx"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\ManaAspect_v1.0.mdx"
+    },
+    {
+      "Id": 828466017,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "war3mapImported\\ManaAspect_v1.0.mdx"
+    },
+    {
+      "Id": 1953526625,
+      "Type": 3,
+      "Value": "origin"
     }
   ]
 }

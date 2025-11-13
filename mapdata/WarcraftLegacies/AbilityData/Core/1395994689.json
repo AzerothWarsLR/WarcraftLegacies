@@ -26,6 +26,46 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "orc"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritBear.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong - Rexxar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Menagerie"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Menagerie"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Rexxar summons beasts to aid him in combat.|n|n|cffffcc00- Summon Misha|n- Summon Hawk|n- Summon Quilboar|r"
     }
   ]
 }

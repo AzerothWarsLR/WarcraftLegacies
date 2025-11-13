@@ -182,6 +182,52 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 120
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dreadlord, Queen Nezar\u0027Azret)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Carrion Swarm - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Carrion Swarm - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a horde of bats to deal \u003CACca,DataA1\u003E damage to each enemy unit in a line, up to a total of \u003CACca,DataB1\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a horde of bats to deal \u003CACca,DataA2\u003E damage to each enemy unit in a line, up to a total of \u003CACca,DataB2\u003E damage."
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Carrion Swarm - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a horde of bats to deal \u003CACca,DataA3\u003E damage to each enemy unit in a line, up to a total of \u003CACca,DataB3\u003E damage."
     }
   ]
 }

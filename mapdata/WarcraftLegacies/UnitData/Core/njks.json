@@ -83,6 +83,48 @@
       "Id": 829645685,
       "Type": 3,
       "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 100
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran-Demi)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive - Jailor Kassan"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful anti-magic melee unit."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_JailorKassan.mdl"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
     }
   ]
 }

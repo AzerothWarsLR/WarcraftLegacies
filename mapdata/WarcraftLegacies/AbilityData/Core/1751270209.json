@@ -16,6 +16,17 @@
       "Id": 1969514593,
       "Type": 2,
       "Value": 0.2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grey - Stonemaul Soldier ) (Fel Reaver)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance that an attack will do 60 bonus damage and stun an opponent for 2 seconds. (0.2 for heroes)"
     }
   ]
 }

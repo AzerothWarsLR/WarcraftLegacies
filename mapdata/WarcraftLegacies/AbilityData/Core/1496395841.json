@@ -34,6 +34,16 @@
       "Pointer": 5,
       "Id": 896953961,
       "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(ARTIFACT)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Inventory (Dummy Drop)"
     }
   ]
 }

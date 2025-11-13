@@ -20,6 +20,31 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "h02W"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Martial Spirit)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance to deal double damage on their attacks."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Critical Strike"
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
     }
   ]
 }

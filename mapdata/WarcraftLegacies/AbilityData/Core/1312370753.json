@@ -10,6 +10,16 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "B08J"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueImmolationOff.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge - Icecrown Obelisk)"
     }
   ]
 }

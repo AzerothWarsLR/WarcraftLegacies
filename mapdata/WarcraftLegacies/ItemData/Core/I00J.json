@@ -43,6 +43,26 @@
     {
       "Id": 1634956649,
       "Value": 1
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNobleDagger.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Felo\u0027melorn"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Felo\u0027melorn"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by 4, hit points by 150 and adds 20 bonus damage to the attack of a Hero when carried.  Can cast Firebolt, dealing \u003CA02X,DataA1\u003E damage and stunning the target unit for \u003CA02X,Dur1\u003E(2) seconds."
     }
   ]
 }

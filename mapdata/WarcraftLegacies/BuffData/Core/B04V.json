@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDaggerOfEscape.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Dirk of the Beast"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit was hit by a Dirk of the Beast; if it dies"
+    }
+  ]
 }

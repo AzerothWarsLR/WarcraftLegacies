@@ -31,6 +31,61 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "B037"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue - Feathermoon)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Feathermoon Aura"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "In the pressence of Feathermoon Stronghold nearby friendly units have their attack increased by \u003CAEar,DataA1,%\u003E%."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feathermoon Aura"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFeatherMoonAura.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the attack damage of friendly ranged units within a radius of \u003CA0HL,Area1\u003E by \u003CA0HL,DataA1,%\u003E%."
     }
   ]
 }

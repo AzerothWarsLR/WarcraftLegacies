@@ -41,6 +41,84 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Anasterian)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 30 damage|n|cffffcc00Level 2|r - 45 damage|n|cffffcc00Level 3|r - 60 damage|n|cffffcc00Level 4|r - 75 damage"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defensive Orbs -[|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASOrbOfTheSun.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfTheSun.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Defensive Orbs - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defensive Orbs - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defensive Orbs - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defensive Orbs - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Defense Orbs deal 30 damage per orb to each unit it collides with."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Defense Orbs deal 40 damage per orb to each unit it collides with."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Defense Orbs deal 50 damage per orb to each unit it collides with."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Defensive Orbs"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Defense Orbs deal 60 damage per orb to each unit it collides with."
     }
   ]
 }

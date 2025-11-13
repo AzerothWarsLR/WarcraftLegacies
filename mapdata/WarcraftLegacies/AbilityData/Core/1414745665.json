@@ -152,6 +152,72 @@
       "Level": 3,
       "Id": 1935895905,
       "Value": 120
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Spawn Tentacle - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons Tentacles at the target location. Lasts 60 seconds. |n|n|cffffcc00Level 1|r - 3 Tentacles.|n|cffffcc00Level 2|r - 6 Tentacles.|n|cffffcc00Level 3|r - 9 Tentacles."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes 3 mighty tentacles upon the enemy."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes 6 mighty tentacles upon the enemy."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes 9 mighty tentacles upon the enemy."
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
     }
   ]
 }

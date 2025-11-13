@@ -69,6 +69,67 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "o030"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel T2 Terror Guard)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Terrorguard Demon Gate"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Terrorguard Demon Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Gateway attuned to the Terrorguards of the Burning Crusade, summoning 1 every 90 seconds."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

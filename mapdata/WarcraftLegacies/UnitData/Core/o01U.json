@@ -58,6 +58,31 @@
     {
       "Id": 1868788853,
       "Value": 3
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGuldan.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\orc\\OrcWarlockGuldan\\OrcWarlockGuldan.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gul\u0027dan\u0027s Remains"
+    },
+    {
+      "Id": 1969779573,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

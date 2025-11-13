@@ -42,6 +42,27 @@
       "Id": 1969514593,
       "Type": 2,
       "Value": 40
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Frostwolf-Shaman)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases a friendly unit\u0027s attack rate by 30% and movement speed by 20%. |nLasts \u003CAblo,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

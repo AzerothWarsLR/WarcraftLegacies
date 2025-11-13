@@ -9,6 +9,28 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "RBEV"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This unit has a 10% chance on attack to give every ground unit in a 200 area of effect an Anti-Magic Shell."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Shadow Veil"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shadow Veil"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASShadowVoid.blp"
     }
   ]
 }

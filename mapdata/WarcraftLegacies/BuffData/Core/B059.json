@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Frenzied Strikes. It\u0027s attack speed is increased."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Frenzied Strikes"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Bonethirst)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

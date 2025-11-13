@@ -73,6 +73,63 @@
       "Id": 1819239285,
       "Type": 2,
       "Value": 8
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEyeOfKilrogg.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 50
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\VoidWalker\\VoidWalker.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Eye of Grillok"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 50
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Eye of Grillok"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Bleeding Hallow Clan\u0027s contribution to the war, used to scout the lands of its enemies."
     }
   ]
 }

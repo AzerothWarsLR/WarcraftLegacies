@@ -69,6 +69,69 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Illidari Tower)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Tidal Watcher"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Tidal Watcher"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIllidariTidalGuardian.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TowerIllidariV1.03.mdl"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,fourth"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowCannonTower"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure. "
     }
   ]
 }

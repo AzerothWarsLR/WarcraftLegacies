@@ -31,6 +31,31 @@
     {
       "Id": 2002874473,
       "Value": 0
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "A book shrouded in mystery."
+    },
+    {
+      "Id": 1818846825,
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tome\\tome.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Book of Eagle"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A book shrouded in mystery."
     }
   ]
 }

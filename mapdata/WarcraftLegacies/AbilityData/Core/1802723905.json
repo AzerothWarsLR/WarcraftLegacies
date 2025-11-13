@@ -22,6 +22,22 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Universal Ability)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to attack \u003CAbsk,DataB1,%\u003E% faster, but take \u003CAbsk,DataC1,%\u003E% more damage. |nLasts 12 seconds."
     }
   ]
 }

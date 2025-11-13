@@ -198,6 +198,84 @@
     {
       "Id": 1835098997,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHero HighbornePriestess.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\NightElfFanMage.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 66
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GargoyleMissile\\GargoyleMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Redeemed Highborne"
+    },
+    {
+      "Id": 1650684789,
+      "Value": 0
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Redeemed Highborne"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ranged caster unit."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Sorceress"
     }
   ]
 }

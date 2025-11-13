@@ -97,6 +97,94 @@
     {
       "Id": 1919248481,
       "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLeadershipAura.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scarlet Seraphim)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Conveyance Aura"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLeadershipAura.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Conveyance Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The unit is an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 5% increased movement speed."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Conveyance Aura"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Conveyance Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Conveyance Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Conveyance Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 5%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 10%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 15%."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 20%."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNLeadershipAura.blp"
     }
   ]
 }

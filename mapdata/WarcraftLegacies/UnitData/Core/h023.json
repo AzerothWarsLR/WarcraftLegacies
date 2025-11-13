@@ -182,6 +182,55 @@
       "Id": 1634890869,
       "Type": 3,
       "Value": "hpea,o01V"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasKeep.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gilneas T2)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GilneasTownHall.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4.3
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure. "
     }
   ]
 }

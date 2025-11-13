@@ -55,6 +55,20 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 1768320117,
+      "Value": 14
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit with Shadowmeld. Can cast Curse. "
     }
   ]
 }

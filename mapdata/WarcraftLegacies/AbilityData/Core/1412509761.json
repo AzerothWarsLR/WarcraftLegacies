@@ -109,6 +109,60 @@
       "Id": 829645653,
       "Type": 2,
       "Value": 90
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShockWave.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warsong-Ogre Lord)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Shockwave"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shockwave - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shockwave - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals \u003CA01T,DataA1\u003E damage to each enemy land unit in a line, up to \u003CA01T,DataB1\u003E max damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals \u003CA01T,DataA2\u003E damage to each enemy land unit in a line, up to \u003CA01T,DataB2\u003E max damage."
     }
   ]
 }

@@ -58,6 +58,39 @@
       "Id": 1969518440,
       "Type": 3,
       "Value": "o037"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scythe of Elune)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Moon Beam"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "o037"
     }
   ]
 }

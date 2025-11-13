@@ -76,6 +76,65 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R04O,Rhme,Rhar"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMilitia.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Greater Heal,- Greater Heal|n- Renewal,- Greater Heal|n- Renewal|n- Resurrection"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gilneas)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GilneasMage.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cleric"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Cleric"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Healing caster."
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGWaterBurst.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
     }
   ]
 }

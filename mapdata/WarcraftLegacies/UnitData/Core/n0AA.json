@@ -111,6 +111,70 @@
       "Id": 1902338421,
       "Type": 2,
       "Value": 900
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonPillar.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TowerFelOrcV2.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 222
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Control Point Defender"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Flame Pillar"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fires massive boulders upon its foes."
     }
   ]
 }

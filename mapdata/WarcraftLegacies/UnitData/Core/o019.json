@@ -14,6 +14,51 @@
       "Id": 1667330677,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Tidesage - Kul\u0027tiras)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Whirlpool.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.2
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Whirlpool"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
     }
   ]
 }

@@ -105,6 +105,28 @@
       "Level": 1,
       "Id": 1935895905,
       "Value": 70
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Frostwolf-Far Seer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur1\u003E seconds. Lasts 1 second on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur2\u003E seconds. Lasts 2 seconds on heroes."
     }
   ]
 }

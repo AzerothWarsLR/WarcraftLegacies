@@ -62,6 +62,40 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Goliathon"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (1)"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNCrystalGenerator.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DragonboneGolem.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit can cast Dispel Magic, War Stomp, Cripple and Rain of Fire. "
     }
   ]
 }

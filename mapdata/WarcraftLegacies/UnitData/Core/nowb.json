@@ -11,6 +11,11 @@
     {
       "Id": 1836083317,
       "Value": 800
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit. "
     }
   ]
 }

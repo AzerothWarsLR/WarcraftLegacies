@@ -37,6 +37,39 @@
     {
       "Id": 1953723241,
       "Value": 800
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImmolationOn.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Increases all stats. Provides Permanent Immolation ability."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fandral\u0027s Flamescythe"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Fandral\u0027s Flamescythe"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength by 6, Agility by 5, and Intelligence by 2. Also provides Permanent Immolation, which deals \u003CApig,DataA1\u003E damage per second to surrounding enemy units.|n|cffffcc00Lore|r|n|cffffdeadCrafted using the close ties to the Earth and Sky, born from ember touched branches of a Great Tree, this staff burns with an everlasting fire that wielder does not feel."
     }
   ]
 }

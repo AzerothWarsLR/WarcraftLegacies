@@ -22,6 +22,26 @@
     {
       "Id": 1684632437,
       "Value": 1800
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneEye.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf - Witch Doctor)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\orc\\WatcherWard\\WatcherWard.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Watcher\u0027s Eye"
     }
   ]
 }

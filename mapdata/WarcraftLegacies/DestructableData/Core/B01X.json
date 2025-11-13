@@ -22,6 +22,58 @@
     {
       "Id": 1818326882,
       "Value": 1
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Bridge Wide"
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "war3mapImported\\Bridge_Wide.mdl"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1836083042,
+      "Type": 3,
+      "Value": "war3mapImported\\Bridge_Wide.mdl"
+    },
+    {
+      "Id": 1684566882,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1734571618,
+      "Value": 135
+    },
+    {
+      "Id": 1919120994,
+      "Value": 110
+    },
+    {
+      "Id": 1650685538,
+      "Value": 125
+    },
+    {
+      "Id": 1718973282,
+      "Type": 3,
+      "Value": "(Dark)"
     }
   ]
 }

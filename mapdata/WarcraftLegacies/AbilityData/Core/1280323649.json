@@ -34,6 +34,57 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,alive,allies,friend,ground,hero,invulnerable,nonhero,organic,player,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASNaturesBlessing2.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Creep - Seradane Great Tree)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Blessing of Seradane"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases movement speed by 5% and attack speed by 3% for nearby friendly units"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Blessing of Seradane"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers friendly units in a radius of \u003CA0PL,Area1\u003E, increasing their movement speed by \u003CA0PL,DataA1,%\u003E% and attack rate by \u003CA0PL,DataB1,%\u003E%."
     }
   ]
 }

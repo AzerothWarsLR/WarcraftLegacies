@@ -3,5 +3,17 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Thelsamar)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks destroy \u003CAfbb,DataA1\u003E mana per hit. The mana combusts, dealing damage to the attacked unit."
+    }
+  ]
 }

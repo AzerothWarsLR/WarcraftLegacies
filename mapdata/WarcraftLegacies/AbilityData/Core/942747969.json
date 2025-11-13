@@ -197,6 +197,76 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "ground,air,structure,enemy,neutral"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Overseer Idra)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Tidal Wave"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Tidal Wave - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals damage to each enemy land unit in a line in a 2000 range.|n|n|cffffcc00Level 1|r - 500 damage, 5000 max damage. |n|cffffcc00Level 2|r - 700 damage, 6000 max damage. |n|cffffcc00Level 3|r - 750 damage, 7000 max damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Tidal Wave  - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Tidal Wave  - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Tidal Wave  - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals \u003CA118,DataA1\u003E damage to each enemy land unit in a line, up to \u003CA118,DataB1\u003E max damage."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 3
+    },
+    {
+      "Id": 2036495713,
+      "Value": 2
     }
   ]
 }

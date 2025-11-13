@@ -19,6 +19,48 @@
       "Id": 1918989410,
       "Type": 3,
       "Value": "decoration"
+    },
+    {
+      "Id": 1650685538,
+      "Value": 150
+    },
+    {
+      "Id": 1734571618,
+      "Value": 0
+    },
+    {
+      "Id": 1919120994,
+      "Value": 150
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIta\\CrystalBallCaster.mdl"
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Netherstorm Dome"
+    },
+    {
+      "Id": 1668507490,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1818588002,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": 1684566882,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

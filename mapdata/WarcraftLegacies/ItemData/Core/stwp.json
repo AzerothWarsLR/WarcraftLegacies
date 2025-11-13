@@ -25,6 +25,44 @@
     {
       "Id": 1953723241,
       "Value": 900
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Transports troops to a owned unit or structure."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Town Portal Scroll"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Town Portal Scroll"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Teleports the Hero and any of its nearby troops to a target owned structure.|n|n|cffe8e800Has a \u003CA002,DataB1\u003E second cast time.|r"
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingScrollVariation.blp"
     }
   ]
 }

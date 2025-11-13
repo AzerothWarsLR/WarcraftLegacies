@@ -75,6 +75,54 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R064,Rgfo"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRockTower.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 80
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels Other)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 125
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cenarion Hold"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Important Night Elf base in Southern Kalimdor, keeps a watchful eye over Ahn\u0027Qiraj. Can train Wisps and revive heroes."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "WarMill"
     }
   ]
 }

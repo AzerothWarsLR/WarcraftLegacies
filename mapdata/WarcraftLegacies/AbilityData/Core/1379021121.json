@@ -216,6 +216,98 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "friend,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pathaleon)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Wise Council"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScrollOfProtection.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScrollOfProtection.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Wise Council - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero regenerates the mana of every ally in a large radious around him. |n|n|cffffcc00Level 1|r - 250 mana healed. |n|cffffcc00Level 2|r - 325 mana healed. |n|cffffcc00Level 3|r - 400 mana healed. |n|cffffcc00Level 4|r - 475 mana healed."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores 250 mana to friendly units in a large radius."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores 325 mana to friendly units in a large radius."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores 400 mana to friendly units in a large radius."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores 475 mana to friendly units in a large radius."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

@@ -106,6 +106,66 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "nightelf"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sunfury - Void Reaver)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts \u003CANht,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 25% attack damage reduction. |n|cffffcc00Level 2|r - 40% attack damage reduction. |n|cffffcc00Level 3|r - 55% attack damage reduction. |n|cffffcc00Level 4|r - 70% attack damage reduction."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of Terror - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 40% for \u003CANht,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 55% for \u003CANht,Dur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Hero lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 70% for \u003CANht,Dur4\u003E seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of Terror"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The caster lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CA13H,DataA1,%\u003E% for \u003CA13H,Dur1\u003E seconds."
     }
   ]
 }

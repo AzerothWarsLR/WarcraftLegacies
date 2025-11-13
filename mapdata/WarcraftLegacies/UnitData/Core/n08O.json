@@ -132,6 +132,65 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R012"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ogre Magi"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Ogre Mage.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Purge,- Purgel|n- Rejuvenation|n,- Purgel|n- Rejuvenation|n- Healing Spray"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Strong support spellcaster of the Horde."
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\DemonHunterMissile\\DemonHunterMissile.mdl"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

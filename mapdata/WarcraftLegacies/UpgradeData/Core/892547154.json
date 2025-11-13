@@ -52,6 +52,50 @@
       "Id": 1902473831,
       "Type": 3,
       "Value": "o030"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireBolt.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(fel horde)"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Improved Firebolt"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Improved Firebolt"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improve Warlocks\u0027 Firebolt by increasing its range by 100 and damage by 15."
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
     }
   ]
 }

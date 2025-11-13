@@ -105,6 +105,61 @@
       "Id": 2037671029,
       "Type": 3,
       "Value": "hero"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFootmanWC2.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Guardsman.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Throne Guard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Throne Guard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Strongest Soldiers of Lordaeron, Protectors of Kings."
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Akama"
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

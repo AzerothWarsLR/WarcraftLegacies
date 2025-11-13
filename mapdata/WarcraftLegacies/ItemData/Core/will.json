@@ -20,6 +20,25 @@
       "Id": 1634493289,
       "Type": 3,
       "Value": "Purchasable"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Creates a phantom double of a unit."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Create an illusory double of the targeted unit when used. The illusory double deals no damage to enemy units, takes \u003CAIil,DataB1\u003E times the damage from enemy attacks, and will disappear after \u003CAIil,Dur1\u003E seconds or when its hit points reach zero.  |nIllusion lasts 60 seconds."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

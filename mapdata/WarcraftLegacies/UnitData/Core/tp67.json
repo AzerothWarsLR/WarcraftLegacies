@@ -14,6 +14,16 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "Adt1,Aeth"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Units\\NightElf\\Owl\\Owl.mdl"
     }
   ]
 }

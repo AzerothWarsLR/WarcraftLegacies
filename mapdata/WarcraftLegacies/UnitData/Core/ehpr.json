@@ -77,6 +77,31 @@
       "Id": 1902338421,
       "Type": 2,
       "Value": 650
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Hippogryph Rider"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Airborne archer of the Sentinels who strikes multiple foes."
     }
   ]
 }

@@ -116,6 +116,25 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable."
     }
   ]
 }

@@ -101,6 +101,69 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive High Priestess"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Priestess of Elune "
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Tyrande Whisperwind"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive High Priestess"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at empowering your backline and dealing magic damage over time."
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TyrandeWhisperwind.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Tyrande"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

@@ -24,6 +24,22 @@
       "Id": 845504847,
       "Type": 2,
       "Value": 0.1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Zuluhed Totem)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Bloodlust Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed 15% and attack rate by 10%."
     }
   ]
 }

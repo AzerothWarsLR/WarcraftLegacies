@@ -82,6 +82,51 @@
       "Id": 829645685,
       "Type": 3,
       "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanFootman.BLP"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Stormwind Knight"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Stormwind Knight "
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Strong melee Knight of Arathor."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KnightWC2v2_CaptainShield.mdl"
     }
   ]
 }

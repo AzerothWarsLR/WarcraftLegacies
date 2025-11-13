@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is sleeping; it is invulnerable and it cannot move attack or cast spells."
+    }
+  ]
 }

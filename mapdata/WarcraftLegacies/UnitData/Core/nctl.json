@@ -93,6 +93,16 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rgfo,Renb"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure, used to train Wisps and entangle gold mines. Can be upgraded to Corrupted Tree of Ages and then Corrupted Tree of Eternity to enable the production of additional types of structures and units."
     }
   ]
 }

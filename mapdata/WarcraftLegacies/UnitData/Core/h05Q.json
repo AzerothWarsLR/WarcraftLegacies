@@ -30,6 +30,63 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran Other 2)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dalaran Building"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 230
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3.8
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
     }
   ]
 }

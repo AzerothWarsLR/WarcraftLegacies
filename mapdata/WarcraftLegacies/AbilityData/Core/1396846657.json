@@ -114,6 +114,102 @@
       "Id": 828797775,
       "Type": 3,
       "Value": "e00C"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRavenForm.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Medivh)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Murder of Crows"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRavenForm.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Murder of Crows - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Murder of Crows - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Murder of Crows - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Murder of Crows - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Murder of Crows - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons \u003CA0BS,DataB2\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg2\u003E - \u003Ce00C,maxdmg2\u003E damage. |nLasts \u003CA0BS,Dur2\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons \u003CA0BS,DataB3\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg3\u003E - \u003Ce00C,maxdmg3\u003E damage. |nLasts \u003CA0BS,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons \u003CA0BS,DataB4\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg4\u003E - \u003Ce00C,maxdmg4\u003E damage. |nLasts \u003CA0BS,Dur4\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons \u003CA0BS,DataB1\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg1\u003E - \u003Ce00C,maxdmg1\u003E damage. |nLasts \u003CA0BS,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons a swarm of Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg1\u003E - \u003Ce00C,maxdmg1\u003E damage. |nLasts \u003CA0BS,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Summons \u003CA0BS,DataB1\u003E Crows. |n|cffffcc00Level 2|r - Summons \u003CA0BS,DataB2\u003E Crows. |n|cffffcc00Level 3|r - Summons \u003CA0BS,DataB3\u003E Crows.|n|cffffcc00Level 4|r - Summons \u003CA0BS,DataB4\u003E Crows."
     }
   ]
 }

@@ -45,6 +45,92 @@
     {
       "Id": 1919248481,
       "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFhtagn2.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Infinite Influence"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacles.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "[|cffffcc00E|r] Learn Hideous Appendages - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "N\u0027zoth has numerous Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth. |n|n|cffffcc00Level 1|r - 5 Tentacles. |n|cffffcc00Level 2|r - 6 Tentacles. |n|cffffcc00Level 3|r - 7 Tentacles. |n|cffffcc00Level 3|r - 8 Tentacles."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Infinite Influence"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hideous Appendages - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hideous Appendages - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hideous Appendages - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This hero can cast its abilities anywhere within 800 units of a hero you control."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "N\u0027zoth has 6 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "N\u0027zoth has 7 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "N\u0027zoth has 8 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     }
   ]
 }

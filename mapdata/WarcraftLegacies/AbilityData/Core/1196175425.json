@@ -40,6 +40,11 @@
       "Id": 879651157,
       "Type": 3,
       "Value": "uloc"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Rain of Meteors(damage spell level 3)"
     }
   ]
 }

@@ -40,6 +40,62 @@
     {
       "Id": 1651338343,
       "Value": 0
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(fel horde - Drakes)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Reaserch Enhanced Breath"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Improved Bows - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the attack range of Obsidian Drakes by 200."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the attack range of Archers and Hippogryph Rider by an additional 100."
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Enhanced Breath"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonFire.blp"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
     }
   ]
 }

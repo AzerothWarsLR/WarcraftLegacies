@@ -122,6 +122,95 @@
       "Id": 828733256,
       "Type": 3,
       "Value": "h02W"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Grom)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from  ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 10 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Martial Spirit - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal. |n|n|cffffcc00Level 1|r - 10 second duration. |n|cffffcc00Level 2|r - 15 second duration.|n|cffffcc00Level 3|r - 25 second duration.|n"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 15 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 25 seconds."
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
     }
   ]
 }

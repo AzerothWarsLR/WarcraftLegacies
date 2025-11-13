@@ -23,6 +23,41 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "commoner"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellResistance.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(ranged primary elites and others)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spell Resistance"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Resistance"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 30%."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }

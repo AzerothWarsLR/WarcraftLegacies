@@ -81,6 +81,73 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R039"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpTwo.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(stormwind)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdx"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Artillery Bombardment"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Healing Spray (|cffffcc00Q|r)  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Rexxar sprays waves of mists into his allies healing them. |n|n|cffffcc00Level 1|r - 3 waves at 60 hit points healed each. |n|cffffcc00Level 2|r - 4 waves at 65 hit points healed each. |n|cffffcc00Level 3|r - 5 waves at 75 hit points healed each.|n|cffffcc00Level 4|r - 6 waves at 85 hit points healed each.|n|cffffcc00Level 5|r - 7 waves at 100 hit points healed each."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdx"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Artillery Bombardment"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Innacurate bombardment of an area with 30 waves of one cannonball. Each ball deals 15 damage to all units in an area."
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 0
     }
   ]
 }

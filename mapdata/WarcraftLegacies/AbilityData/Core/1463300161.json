@@ -53,6 +53,27 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran - Blue Dragon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CA08W,DataA1\u003E bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

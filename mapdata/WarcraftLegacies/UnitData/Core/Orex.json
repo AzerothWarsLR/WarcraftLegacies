@@ -73,6 +73,35 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R05R"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, adept at summoning beasts and rallying his allies."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Rexxar"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNrexxarhd.blp"
     }
   ]
 }

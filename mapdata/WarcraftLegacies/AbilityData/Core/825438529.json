@@ -17,6 +17,24 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "MD16"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Mask of Death worgen)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Worgen Bite"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }

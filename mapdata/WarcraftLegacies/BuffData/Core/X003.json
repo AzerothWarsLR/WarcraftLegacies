@@ -9,6 +9,16 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "creeps"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Nether Strike (Effect)"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayTarget.mdl"
     }
   ]
 }

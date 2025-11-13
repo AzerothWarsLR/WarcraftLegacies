@@ -22,6 +22,16 @@
       "Pointer": 1,
       "Id": 1936746569,
       "Value": 2500
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Vial of the Sunwell)"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoTN_Sanctity_Potion.blp"
     }
   ]
 }

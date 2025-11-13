@@ -17,6 +17,33 @@
       "Id": 828596547,
       "Type": 2,
       "Value": 0.3
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNEvasion.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(level 4)(Light Blue - Shandris Standard)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Sentinel Standard Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Sentinel Standard Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives 30% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

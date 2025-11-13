@@ -44,6 +44,30 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R021,Ropg,Rguv"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf, Warsong, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker unit."
     }
   ]
 }

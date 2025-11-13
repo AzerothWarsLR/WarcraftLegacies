@@ -33,6 +33,16 @@
     {
       "Id": 1634956649,
       "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Keg of Thunderwater"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nCan be used to restore 500 health and 200 mana. Also increases hit point regeneration by 5 and mana regeneration by 1."
     }
   ]
 }

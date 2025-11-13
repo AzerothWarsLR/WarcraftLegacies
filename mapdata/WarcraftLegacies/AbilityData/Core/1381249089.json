@@ -76,6 +76,59 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 280
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(zandalar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Soul Voodoo"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Big Bad Voodoo - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Big Bad Voodoo - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLifeBurn.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Soul Voodoo"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns all friendly units invulnerable in an area around the Bone Seer. |nThe Boner Seer does not turn invulnerable. |nLasts 3 seconds."
     }
   ]
 }

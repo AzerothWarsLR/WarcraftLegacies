@@ -112,6 +112,81 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "alive,dead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Drone)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Gather"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Harvests lumber from trees."
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Return Resources"
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Returns carried lumber."
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Gather"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Harvests lumber from trees."
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Return Resources"
+    },
+    {
+      "Level": 3,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Returns carried lumber."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Harvests gold from gold mines."
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Returns carried gold."
     }
   ]
 }

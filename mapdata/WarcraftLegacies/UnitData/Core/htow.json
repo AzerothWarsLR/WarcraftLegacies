@@ -70,6 +70,46 @@
       "Id": 1634890869,
       "Type": 3,
       "Value": "hpea,h00F"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4.25
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Lordaeron T1)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\LordaeronPalace.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLordaeronTownCenter.blp"
     }
   ]
 }

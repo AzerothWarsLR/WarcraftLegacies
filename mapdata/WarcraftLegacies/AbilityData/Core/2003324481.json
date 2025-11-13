@@ -91,6 +91,55 @@
       "Id": 862741327,
       "Type": 2,
       "Value": 0.1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Pink - Vol\u0027Jin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals \u003CANhw,DataA1\u003E damage, jumps \u003CANhw,DataB1\u003E times, 25% less healing per jump.|n|cffffcc00Level 2|r - Heals \u003CANhw,DataA2\u003E damage, jumps \u003CANhw,DataB2\u003E times, 20% less healing per jump.|n|cffffcc00Level 3|r - Heals \u003CANhw,DataA3\u003E damage, jumps \u003CANhw,DataB3\u003E times, 15% less healing per jump.|n|cffffcc00Level 4|r - Heals \u003CANhw,DataA4\u003E damage, jumps \u003CANhw,DataB4\u003E times, 10% less healing per jump."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB1\u003E times, healing \u003CANhw,DataA1\u003E damage on the primary target. Each jump heals 25% less."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB2\u003E times, healing \u003CANhw,DataA2\u003E damage on the primary target. Each jump heals 20% less."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB3\u003E times, healing \u003CANhw,DataA3\u003E damage on the primary target. Each jump heals 15% less."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB4\u003E times, healing \u003CANhw,DataA4\u003E damage on the primary target. Each jump heals 10% less."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
     }
   ]
 }

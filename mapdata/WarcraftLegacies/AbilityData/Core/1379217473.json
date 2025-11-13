@@ -60,6 +60,38 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "friend,ground,neutral"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ironforge - Rune Priest)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Healing Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Healing Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Forms a shield of healing energies around a target unit, healing 15 damage per second to all units around it. Lasts 20 seconds."
     }
   ]
 }

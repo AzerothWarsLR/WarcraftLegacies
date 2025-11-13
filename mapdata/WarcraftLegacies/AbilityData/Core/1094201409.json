@@ -132,6 +132,32 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R04B"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a more powerful Infernal from the sky, causing \u003CA08A,DataA2\u003E damage to enemy units near the impact point. The Infernal lasts 50 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an Infernal from the sky, causing \u003CA08A,DataA1\u003E damage to enemy units near the impact point. The Infernal lasts 50 seconds."
     }
   ]
 }

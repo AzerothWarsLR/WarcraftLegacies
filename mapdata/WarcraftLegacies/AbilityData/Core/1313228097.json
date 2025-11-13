@@ -53,6 +53,22 @@
       "Id": 896427605,
       "Type": 2,
       "Value": 600
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tidal lord)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of frost that deals \u003CAEFN,DataB1\u003E damage to the target, and \u003CAEFN,DataA1\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CAEFN,Dur1\u003E seconds."
     }
   ]
 }

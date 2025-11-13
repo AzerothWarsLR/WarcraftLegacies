@@ -84,6 +84,51 @@
       "Id": 846427221,
       "Type": 2,
       "Value": 0.7
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge - Anub\u0027Arak)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Hero forms barbed layers of chitinous armor that increases its armor, causes it to take reduced damage from all sources and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - \u003CAUts,DataC1\u003E bonus armor, \u003CAUts,DataA1,%\u003E% damage returned. |n|cffffcc00Level 2|r - \u003CAUts,DataC2\u003E bonus armor, hero takes \u003CAUts,DataB2,%\u003E% damage from all sources, \u003CAUts,DataA2,%\u003E% damage returned. |n|cffffcc00Level 3|r - \u003CAUts,DataC3\u003E bonus armor, hero takes \u003CAUts,DataB3,%\u003E% damage from all sources, \u003CAUts,DataA3,%\u003E% damage returned.  |n|cffffcc00Level 4|r - \u003CAUts,DataC4\u003E bonus armor, hero takes \u003CAUts,DataB4,%\u003E% damage from all sources, \u003CAUts,DataA4,%\u003E% damage returned."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spiked Carapace - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances Hero\u0027s chitinous armor with organic barbs, giving him \u003CAUts,DataC1\u003E bonus armor and returning \u003CAUts,DataA1,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances Hero\u0027s chitinous armor with organic barbs, giving him \u003CAUts,DataC2\u003E bonus armor, taking \u003CAUts,DataB2,%\u003E% damage from all sources and returning \u003CAUts,DataA2,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances Hero\u0027s chitinous armor with organic barbs, giving him \u003CAUts,DataC3\u003E bonus armor, taking \u003CAUts,DataB3,%\u003E% damage from all sources and returning \u003CAUts,DataA3,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Enhances Hero\u0027s chitinous armor with organic barbs, giving him \u003CAUts,DataC4\u003E bonus armor, taking \u003CAUts,DataB4,%\u003E% damage from all sources and returning \u003CAUts,DataA4,%\u003E% of melee attack damage to enemies."
     }
   ]
 }

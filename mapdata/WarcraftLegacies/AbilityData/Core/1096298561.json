@@ -87,6 +87,66 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,self"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Self Cast - Yellow, Core Hound)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Enrage"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enrage"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enrage - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0XA,DataA1,%\u003E% and movement speed by \u003CA0XA,DataB1,%\u003E% for \u003CA0XA,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0XA,DataA2,%\u003E% and movement speed by \u003CA0XA,DataB2,%\u003E% for \u003CA0XA,Dur2\u003E seconds."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 2036495713,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "D"
     }
   ]
 }

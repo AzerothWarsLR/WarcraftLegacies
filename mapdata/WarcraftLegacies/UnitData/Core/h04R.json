@@ -84,6 +84,61 @@
       "Id": 2037671029,
       "Type": 3,
       "Value": "normal"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gate - Open)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Gate_45_RightAlternate.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Diagonal Wooden Gate"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Diagonal Wooden Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": " "
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
     }
   ]
 }

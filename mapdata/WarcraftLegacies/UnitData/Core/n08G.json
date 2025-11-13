@@ -82,6 +82,57 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rguv,R01X,Rhar,Rhme"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDalaranMutant.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 100
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\other\\DalaranMutant\\DalaranMutant.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Plagueling"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 100
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Spawn Plagueling"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Zombie thrumming with disease, ready to burst at any moment."
     }
   ]
 }

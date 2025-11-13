@@ -62,6 +62,75 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep hammer)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Priestess"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Azil"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at healing allies and disrupting enemy units."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNJainaWhite.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ArchmageDraeneiV1.01.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Azil"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Demoness"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Azil"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Azil"
     }
   ]
 }

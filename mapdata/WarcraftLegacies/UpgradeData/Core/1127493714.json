@@ -18,6 +18,76 @@
     {
       "Id": 1835887719,
       "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRune.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfNegation.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Lordaeron-Silver Hand)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Minister Initiate Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Minister Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Minister Initiate Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Minister Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Silver Hand Ministers\u0027 mana capacity, mana regeneration rate, hit points, damage, and gives them the ability to cast Blinding Light."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Silver Hand Ministers\u0027 mana capacity, mana regeneration rate, hit points, damage, and gives them the ability to cast Healing Wave."
     }
   ]
 }

@@ -143,6 +143,80 @@
       "Id": 1920296033,
       "Type": 2,
       "Value": 0.5
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarth Light Beam.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarth Light Beam.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Army of Light - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls down multiple Lightforged Warframe from the void.|n|n|cffffcc00Level 1|r - Calls down 6 Lightforged Warframe . |n|cffffcc00Level 2|r - Calls down 10 Lightforged Warframe. |n|cffffcc00Level 3|r - Calls down 14 Lightforged Warframes."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Light - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Light - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Light - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down 6 Lightforged Warframe from the void."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down 10 Lightforged Warframe from the void."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls down 14 Lightforged Warframe from the void."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Army of Light"
     }
   ]
 }

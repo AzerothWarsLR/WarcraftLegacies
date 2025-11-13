@@ -148,6 +148,113 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCannonIcon.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 30
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\SiegeCannon.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60.4
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cannon"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 160
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 160
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Cannon"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful portable cannon."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Ballista"
     }
   ]
 }

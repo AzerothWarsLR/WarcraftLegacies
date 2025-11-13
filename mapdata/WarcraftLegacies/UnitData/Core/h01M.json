@@ -128,6 +128,77 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlamebeard.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge Demi)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Thane_BoneHorn.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Baelgun Flamebeard"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Baelgun Flamebeard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Second in command of Muradin\u0027s expedition force, Baelgun is a stout scout of bristling fire and wily leadership."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Muradin"
     }
   ]
 }

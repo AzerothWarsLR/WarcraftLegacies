@@ -48,6 +48,30 @@
       "Id": 1634824801,
       "Type": 3,
       "Value": "2"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CA0FB,DataB1\u003E armor and slows melee units that attack it for \u003CA0FB,Dur1\u003E seconds. |nLasts \u003CA0FB,DataA1\u003E seconds."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
     }
   ]
 }

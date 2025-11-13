@@ -22,6 +22,41 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,structure,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStoneArchitecture.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(troll hostile)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Zul\u0027Aman Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Zul\u0027Aman Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Strong Voodoo radiates from the shrine. Gives nearby structures and units 3 bonus armor in 5000 area of effect."
     }
   ]
 }

@@ -44,6 +44,26 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R01O"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Sea Giant)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals \u003CA0G0,DataA1\u003E damage to each enemy land unit in a line, up to \u003CA0G0,DataB1\u003E max damage."
     }
   ]
 }

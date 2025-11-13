@@ -32,6 +32,33 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 275
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Obsidian Statue)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Essence of Blight (|cffffcc00Q|r)"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CArpl,DataA1\u003E hit points to a large number of nearby friendly units."
     }
   ]
 }

@@ -75,6 +75,64 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R037"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Rokhan"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at destructive and disrupting magic."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\RokhanMaskV2.mdl"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNshadowhunterhd.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Darkspear Champion"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Darkspear Champion"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Darkspear Champion"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

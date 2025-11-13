@@ -81,6 +81,66 @@
     {
       "Id": 1852137845,
       "Value": 1
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonPillar.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TowerFelOrcV2.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 222
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Flame Pillar"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Flame Pillar"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy defensive structure, effective against clusters of ground units. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Fel Tower 2)"
     }
   ]
 }

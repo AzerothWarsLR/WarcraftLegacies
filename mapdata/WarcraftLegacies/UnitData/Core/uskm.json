@@ -70,6 +70,35 @@
     {
       "Id": 1647403381,
       "Value": 15
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge - Black Citadel)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "G"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Skeletal Ma|cffffcc00g|re"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Weak ranged skeleton warrior."
     }
   ]
 }

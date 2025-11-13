@@ -28,6 +28,38 @@
       "Id": 828928844,
       "Type": 2,
       "Value": 35
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameWall.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Creep - Ragnaros, Teal Elder warlock)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Flame Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Forms a shield of fire around a target unit, dealing 35 damage per second to units around it. |nLasts 20 seconds."
     }
   ]
 }

@@ -152,6 +152,115 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R09A"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,slam"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarpPortalRed.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Portal to Argus"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarpPortal.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Slipstream - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - \u003CA00D,Rng1\u003E range. |n|cffffcc00Level 2|r - \u003CA00D,Rng2\u003E range. |n|cffffcc00Level 3|r - \u003CA00D,Rng3\u003E range."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Portal to Argus"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slipstream - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Slipstream - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Opens a two-way portal to Argus. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Opens a two-way portal to the target location within a range of \u003CA00D,Rng2\u003E. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Opens a two-way portal to the target location within a range of \u003CA00D,Rng3\u003E. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling."
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }

@@ -119,6 +119,65 @@
     {
       "Id": 2050056565,
       "Value": 900
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Efreet"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Offensive Spellcaster."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Efreet"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEfreetIcon.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Efreet.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shade"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SorceressMissile\\SorceressMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

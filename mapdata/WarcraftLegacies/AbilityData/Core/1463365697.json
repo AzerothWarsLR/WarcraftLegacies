@@ -17,6 +17,21 @@
       "Id": 829253957,
       "Type": 2,
       "Value": 20
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Charred Ancient)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Burns nearby enemy units for 20 points of damage per second."
     }
   ]
 }

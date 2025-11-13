@@ -104,6 +104,56 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1651270517,
+      "Value": 65
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Demi)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 65
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Kazzak the Supreme"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 155
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Kazzak"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee anti-magic demi-hero."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
     }
   ]
 }

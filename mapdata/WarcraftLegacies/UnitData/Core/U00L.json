@@ -115,6 +115,70 @@
       "Id": 1935827829,
       "Type": 2,
       "Value": 0.53
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.01
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Envoy of Archimonde"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Anetheron"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning hero, adept at dealing magic damage and supporting armies."
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Envoy of Archimonde"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Envoy of Archimonde"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Anetheron"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
     }
   ]
 }

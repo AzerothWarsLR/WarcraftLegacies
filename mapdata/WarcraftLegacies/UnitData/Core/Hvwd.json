@@ -93,6 +93,51 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSylvanas_by67chrome.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Ranger-General"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ranger-General of Silvermoon"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Ranger-General"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Sylvanas"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cuning Hero, adept at supporting armies and assasinating heroes."
     }
   ]
 }

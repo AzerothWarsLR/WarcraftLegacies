@@ -74,6 +74,46 @@
       "Id": 1949393269,
       "Type": 3,
       "Value": "chaos"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Pride of the Warsong Clan, warrior of Honor."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Chaos Warsong Grunt"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\demon\\ChaosGrunt\\ChaosGrunt.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosGrunt.blp"
     }
   ]
 }

@@ -51,6 +51,49 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "debris,enemies,ground,organic,structure,tree,wall"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFacelessOneWidow.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Icon Stygian Hulk)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Genesis Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Stygian Hulk attack afflicts a target enemy unit with a deadly parasite that deals \u003CABEG,DataA1\u003E damage per second for \u003CABEG,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Genesis Attack, a Flying Horror will spawn from its corpse. |nLasts \u003CABEG,Cast1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Seed of Madness"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drops a medium tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Genesis Attack"
     }
   ]
 }

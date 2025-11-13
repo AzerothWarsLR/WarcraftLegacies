@@ -162,6 +162,55 @@
       "Id": 1969514593,
       "Type": 2,
       "Value": 1.5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion-Mal\u0027Ganis)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Inferno - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls an Infernal down from the sky, dealing damage and stunning enemy land units in an area. The Infernal lasts 180 seconds.  |n|n|cffffcc00Level 1|r - 90 damage to units within a radius of 250. The impact stuns enemy units for 2 seconds.|n|cffffcc00Level 2|r - 180 damage to units within a radius of 300. The impact stuns enemy units for 2.5 seconds. |n|cffffcc00Level 3|r - 270 damage to units within a radius of 350. The impact stuns enemy units for 3 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls an Infernal down from the sky, dealing \u003CSNin,DataA2\u003E damage and stunning enemy land units for \u003CSNin,Dur2\u003E seconds in an area. The Infernal lasts \u003CSNin,DataB2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls an Infernal down from the sky, dealing \u003CSNin,DataA3\u003E damage and stunning enemy land units for \u003CSNin,Dur3\u003E seconds in an area. The Infernal lasts \u003CSNin,DataB3\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Inferno"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Inferno"
     }
   ]
 }

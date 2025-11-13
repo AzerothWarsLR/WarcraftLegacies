@@ -39,6 +39,37 @@
       "Id": 1969518440,
       "Type": 3,
       "Value": "nfgt"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASForbidden Ritual.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spawn Tentacle"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Instead of doing damage, the Forgotten One spawns a tentacle when attacking.|nThe tentacle has 40-45 damage and lasts \u003CA0SP,Dur1\u003E seconds."
     }
   ]
 }

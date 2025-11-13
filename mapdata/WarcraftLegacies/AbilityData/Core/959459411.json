@@ -20,6 +20,16 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dalaran - Kirin Tor)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chaos"
     }
   ]
 }

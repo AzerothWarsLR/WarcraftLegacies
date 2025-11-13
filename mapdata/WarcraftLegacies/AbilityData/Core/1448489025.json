@@ -38,6 +38,26 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 500
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stormwind - Zeppelin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Cast on enemy buildings with ranged attacks to stop the buildings from attacking. |nLasts \u003CA0VV,Dur1\u003E seconds."
     }
   ]
 }

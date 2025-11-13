@@ -81,6 +81,35 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0HT"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Cycle of Rebirth,- Cycle of Rebirth|n- Dispel Magic,- Cycle of Rebirth|n- Dispel Magic|n- Invoke Spiders"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Supporting spellcaster."
     }
   ]
 }

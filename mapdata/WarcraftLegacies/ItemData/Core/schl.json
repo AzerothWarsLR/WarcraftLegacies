@@ -24,6 +24,11 @@
     {
       "Id": 1818588009,
       "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Grants the ability to heal a friendly unit. Also grants the Hero and friendly nearby units 2 hit point regeneration per second."
     }
   ]
 }

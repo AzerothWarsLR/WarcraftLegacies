@@ -94,6 +94,67 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 80
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Jaina)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mass Teleport - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Teleports units, including the caster, to a friendly building or unit. |n|cffffcc00Level 1|r - Teleports 60 units.|n|cffffcc00Level 2|r - Teleports 72 units.|n|cffffcc00Level 3|r - Teleports 84 units."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Teleport - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Teleport - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Teleport - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports 60 of the player\u0027s nearby units, including Jaina, to a friendly ground unit or structure."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports 72 of the player\u0027s nearby units, including Jaina, to a friendly ground unit or structure."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports 84 of the player\u0027s nearby units, including Jaina, to a friendly ground unit or structure."
     }
   ]
 }

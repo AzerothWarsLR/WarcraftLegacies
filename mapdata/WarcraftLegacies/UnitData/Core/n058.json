@@ -104,6 +104,85 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrcCrossbow.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FelOrc_Crossbowman.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PoisonArrow\\PoisonArrowMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fel Crossbowman"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Fel Crossbowman"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Skilled shooter amongst the Orcs of Outland."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ChaosGrunt"
     }
   ]
 }

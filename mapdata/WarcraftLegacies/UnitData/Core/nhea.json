@@ -106,6 +106,40 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "h02Y"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ranger"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ranger"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic long-ranged attacker."
     }
   ]
 }

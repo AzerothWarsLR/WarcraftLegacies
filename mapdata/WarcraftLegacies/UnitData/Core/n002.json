@@ -87,6 +87,36 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhac,R013,Rgfo,Renb,R064"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Ashenvale\\Structures\\Worldtree\\Worldtree.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Nordrassil"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Nordrassil"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids Other)"
     }
   ]
 }

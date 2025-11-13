@@ -14,6 +14,33 @@
       "Id": 1918989410,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1650685538,
+      "Value": 25
+    },
+    {
+      "Id": 1734571618,
+      "Value": 5
+    },
+    {
+      "Id": 1919120994,
+      "Value": 25
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding1.mdl"
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "// Destructibles: B003 (Karazhan), Name (Name)\r\nKarazhan"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": "PathTextures\\8x8Unflyable.tga"
     }
   ]
 }

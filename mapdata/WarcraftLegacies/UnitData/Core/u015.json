@@ -87,6 +87,73 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R055"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonTombOfRelics.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 185
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion Shop)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Building_DemonTombOfRelics.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 185
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Unholy Reliquary"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 185
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Unholy Reliquary"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

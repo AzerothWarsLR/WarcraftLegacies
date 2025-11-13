@@ -9,6 +9,31 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCommand.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Impale"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is Impaled"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Outrider)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

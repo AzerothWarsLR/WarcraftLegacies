@@ -24,6 +24,11 @@
     {
       "Id": 1818588009,
       "Value": 0
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nGrants the ability to fire bolts of pain that deal \u003CAIfz,DataC1\u003E damage. Also increases the Hero\u0027s hit points by \u003CAIlf,DataA1\u003E and mana by \u003CAImz,DataA1\u003E when worn.|n|cffffcc00Lore|r|n|cffffdeadThe Deathlords are rumored to have been mighty Paladins once. One of their order turned from the light when he slaughtered his own family, believing they were impure.|r"
     }
   ]
 }

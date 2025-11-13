@@ -9,6 +9,21 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R07Z"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(25%) (Shredders)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit strikes with such force that \u003CACce,DataA1,%\u003E% of their damage strikes through to enemies near the primary attacked unit."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }

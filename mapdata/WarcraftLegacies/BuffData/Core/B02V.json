@@ -9,6 +9,31 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "nightelf"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAvengingWatcher.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Spirit of Vengeance"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been empowered with Vengeance. It has an increased attack rate and when it dies a Spirit of Vengence will spawn."
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Buff)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
     }
   ]
 }

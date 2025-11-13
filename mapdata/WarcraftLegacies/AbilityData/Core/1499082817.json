@@ -141,6 +141,82 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,debris,enemies,ground,ward"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Black Rook)"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SentinelMissile\\SentinelMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Multi Shot"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTripleShot.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Multi Shot - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The hero\u0027s bow expertise allows them to shoot multiple arrows at once. |n|n|cffffcc00Level 1|r - Enables the release of 2 arrows at once.|n|cffffcc00Level 2|r - Enables the release of 3 arrows at once.|n|cffffcc00Level 3|r - Enables the release of 4 arrows at once."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Multi Shot"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Multi Shot - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Multi Shot - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The building fires multiple glaives at targets. A total of 4 glaives are shot."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero fires multiple arrows at targets. A total of \u003CA047,DataC2\u003E arrows are shot."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero fires multiple arrows at targets. A total of \u003CA047,DataC3\u003E arrows are shot."
     }
   ]
 }

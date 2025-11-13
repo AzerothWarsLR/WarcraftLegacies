@@ -4,5 +4,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Awaken C\u0027thun"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UndeadDissipate\\UndeadDissipate.mdl"
+    }
+  ]
 }

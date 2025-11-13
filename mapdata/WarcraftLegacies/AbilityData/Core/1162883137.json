@@ -61,6 +61,37 @@
     {
       "Id": 1986818657,
       "Value": 9
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Burning Bladelord, Grey- Blademaster)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates images of Rend Blackhand to fight enemies and dispels all magic from Rend.|n|n|cffffcc00Level 1|r - Creates 2 images which deal 50% the damage of Rend and take 250% the damage. |n|cffffcc00Level 2|r - Creates 4 images which deal 50% the damage of Rend and take 225% the damage. |n|cffffcc00Level 3|r - Creates 6 images which deal 50% the damage of Rend and take 200% the damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mirror Image"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates an image which deals 35% the damage of the Blademaster and take 120% the damage. Dispels all magic from the Blademaster. |nLasts 20 seconds."
     }
   ]
 }

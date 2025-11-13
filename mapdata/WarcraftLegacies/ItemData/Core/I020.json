@@ -26,6 +26,31 @@
     {
       "Id": 1836412009,
       "Value": 1000
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpy.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Starts repairs on the Thandol Span bridge."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Thandol Span Repairs"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Repair the Thandol Span bridge"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Workers will start repairing the Thandol Span bridge. It will take them 60 seconds to finish repairing the bridge and making it safe so that it can\u0027t be destroyed in the future."
     }
   ]
 }

@@ -74,6 +74,44 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids Farm)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Moon Well"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

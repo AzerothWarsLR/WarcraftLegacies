@@ -64,6 +64,51 @@
     {
       "Id": 1986358369,
       "Value": 4
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Death Knight Arthas) (chogall)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - 4% movement, 0.80 HP regeneration bonus. |n|cffffcc00Level 2|r - \u003CAUau,DataA2,%\u003E% movement, 1.30 HP regeneration bonus. |n|cffffcc00Level 3|r - \u003CAUau,DataA3,%\u003E% movement, 1.80 HP regeneration bonus. |n|cffffcc00Level 4|r - \u003CAUau,DataA4,%\u003E% movement, 2.30 HP regeneration bonus."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unholy Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 4% and life regeneration rate 0.80."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by \u003CAUau,DataA2,%\u003E% and life regeneration rate 1.30."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by \u003CAUau,DataA3,%\u003E% and life regeneration rate 1.80."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by \u003CAUau,DataA4,%\u003E% and life regeneration rate 2.30."
     }
   ]
 }

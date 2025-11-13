@@ -9,6 +9,31 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWeb.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Web"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is webbed; it is stuck to the ground and cannot move."
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": " (Ground)(Real)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Web\\WebTarget.mdl"
     }
   ]
 }

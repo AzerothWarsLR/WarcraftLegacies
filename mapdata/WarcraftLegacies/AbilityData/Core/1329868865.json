@@ -99,6 +99,54 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,neutral,organic"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSearingArrows.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Purple - Cleric. Dark Green - Chaplain)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Smite"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Smite"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Fires a bolt of holy energy at a target enemy unit, dealing 55 damage and stunning the target for 3 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Fires a bolt of holy energy at a target enemy unit, dealing 75 damage and stunning the target for 5 seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSearingArrows.blp"
     }
   ]
 }

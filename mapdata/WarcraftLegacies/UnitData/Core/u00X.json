@@ -82,6 +82,26 @@
       "Id": 1919969397,
       "Type": 2,
       "Value": 0.5
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\LOSBlocker\\IntentionallyLeftBlank.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dummy Caster"
+    },
+    {
+      "Id": 1969779573,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A permanently invisible spirit that can see other invisible units, but cannot attack."
     }
   ]
 }

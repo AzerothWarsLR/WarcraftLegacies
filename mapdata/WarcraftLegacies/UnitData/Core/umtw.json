@@ -84,6 +84,35 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Meat Wagon"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Repurposed cart used to haul and launch corpses."
     }
   ]
 }

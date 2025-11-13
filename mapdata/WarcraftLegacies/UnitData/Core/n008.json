@@ -79,6 +79,64 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "h01R"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTradeHouse.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gilneas Shop)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GilneasTradeHouse.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3.5
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Creates a shop with purchasable items."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Trade-house"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Trade-house"
     }
   ]
 }

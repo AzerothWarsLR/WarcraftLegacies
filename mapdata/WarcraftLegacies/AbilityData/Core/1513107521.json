@@ -28,6 +28,42 @@
     {
       "Id": 1702127969,
       "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancerAdept.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lich King spellbook)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Power of the Lich King"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Power of the Lich King"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Lich King\u0027s immense power provides access to additional abilities."
     }
   ]
 }

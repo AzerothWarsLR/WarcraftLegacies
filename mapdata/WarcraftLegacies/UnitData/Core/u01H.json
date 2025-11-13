@@ -77,6 +77,85 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunPyramid.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun Specialist)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunBarracks.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ancient Catacombs"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Ancient Catacombs"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Creature production building."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
     }
   ]
 }

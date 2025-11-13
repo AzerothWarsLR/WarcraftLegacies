@@ -43,6 +43,65 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "B011"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(dummy)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases the movement speed and attack rate of nearby friendly units. |n|n|cffffcc00Level 1|r - \u003CAOae,DataA1,%\u003E% movement, \u003CAOae,DataB1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAOae,DataA2,%\u003E% movement, \u003CAOae,DataB2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAOae,DataA3,%\u003E% movement, \u003CAOae,DataB3,%\u003E% attack.|n|cffffcc00Level 4|r - \u003CAOae,DataA4,%\u003E% movement, \u003CAOae,DataB4,%\u003E% attack."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 60% and attack rate by 30%."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Spells\\Orc\\Bloodlust\\BloodlustSpecial.mdl"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 2
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": 828470369,
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Martial Spirit"
     }
   ]
 }

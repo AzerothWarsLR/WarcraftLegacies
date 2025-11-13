@@ -209,6 +209,99 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 650
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal - Magtheridon)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Explosion"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Explosion (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Blasts enemy units around a target enemy unit with a large explosion. |n|n|cffffcc00Level 1|r - 190 target damage. 40 splash damage.|n|cffffcc00Level 2|r - 280 target damage. 80 splash damage.|n|cffffcc00Level 3|r - 370 target damage. 120 splash damage.|n|cffffcc00Level 4|r - 460 target damage. 160 splash damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Explosion (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Explosion (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Explosion (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Explosion (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemies with a large explosion dealing 190 damage with 40 splash damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemies with a large explosion dealing 280 damage with 80 splash damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemies with a large explosion dealing 370 damage with 120 splash damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts enemies with a large explosion dealing 460 damage with 160 splash damage."
     }
   ]
 }

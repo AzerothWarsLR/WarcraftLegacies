@@ -39,6 +39,16 @@
       "Id": 895968340,
       "Type": 2,
       "Value": 5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Tornado)(Level 1)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Tornado Unit Damage"
     }
   ]
 }

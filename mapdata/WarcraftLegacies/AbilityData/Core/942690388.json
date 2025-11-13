@@ -33,6 +33,22 @@
       "Id": 1920296033,
       "Type": 2,
       "Value": 15
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dummy)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target enemy unit. |nLasts 60 seconds. Lasts 10 seconds on Heroes."
     }
   ]
 }

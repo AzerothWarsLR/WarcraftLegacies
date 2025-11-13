@@ -57,6 +57,41 @@
       "Id": 1819239285,
       "Type": 2,
       "Value": 8
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge Worker)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DwarfShoveler.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mason"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mason"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Skilled craftsman and designer of dwarven wonders."
     }
   ]
 }

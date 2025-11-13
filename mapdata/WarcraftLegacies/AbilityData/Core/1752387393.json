@@ -95,6 +95,47 @@
     {
       "Id": 1986358369,
       "Value": 6
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "A wave of force that ripples out from the Hero, causing damage to land units in a line. |n|n|cffffcc00Level 1|r - \u003CAOsh,DataA1\u003E damage. |n|cffffcc00Level 2|r - \u003CAOsh,DataA2\u003E damage. |n|cffffcc00Level 3|r - \u003CAOsh,DataA3\u003E damage.|n|cffffcc00Level 4|r - \u003CAOsh,DataA4\u003E damage.|n|cffffcc00Level 5|r - \u003CAOsh,DataA5\u003E damage.|n|cffffcc00Level 6|r - \u003CAOsh,DataA6\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shock|cffffcc00w|rave - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shock|cffffcc00w|rave - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shock|cffffcc00w|rave - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A wave of force that ripples outward, causing \u003CAOsh,DataA4\u003E damage to land units in a line."
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A wave of force that ripples outward, causing \u003CAOsh,DataA5\u003E damage to land units in a line."
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A wave of force that ripples outward, causing \u003CAOsh,DataA6\u003E damage to land units in a line."
     }
   ]
 }

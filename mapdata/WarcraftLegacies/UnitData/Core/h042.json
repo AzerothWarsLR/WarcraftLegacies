@@ -63,6 +63,60 @@
       "Id": 1634890869,
       "Type": 3,
       "Value": "h037,n00C,n0CH,h0AB"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarvenMysticHall.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge Magic)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenMysticHall.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Pinnacle"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Pinnacle"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "PocketFactory"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Spellcaster production building. "
     }
   ]
 }

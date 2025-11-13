@@ -135,6 +135,89 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASCenariusHand.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids - Cenarius)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Nature Aura"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCenariusHand.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Nature Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed and attack rate.|n|n|cffffcc00Level 1|r - Decreases enemy movement speed by \u003CA03B,DataA1,%\u003E% and attack rate by \u003CA03B,DataB1,%\u003E%.|n|cffffcc00Level 2|r - Decreases enemy movement speed by \u003CA03B,DataA2,%\u003E% and attack rate by \u003CA03B,DataB2,%\u003E%.|n|cffffcc00Level 3|r - Decreases enemy movement speed by \u003CA03B,DataA3,%\u003E% and attack rate by \u003CA03B,DataB3,%\u003E%.|n|cffffcc00Level 4|r - Decreases enemy movement speed by \u003CA03B,DataA4,%\u003E% and attack rate by \u003CA03B,DataB4,%\u003E%."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nature Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA1,%\u003E% and attack rate by \u003CA03B,DataB1,%\u003E%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA2,%\u003E% and attack rate by \u003CA03B,DataB2,%\u003E%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA3,%\u003E% and attack rate by \u003CA03B,DataB3,%\u003E%."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA4,%\u003E% and attack rate by \u003CA03B,DataB4,%\u003E%."
     }
   ]
 }

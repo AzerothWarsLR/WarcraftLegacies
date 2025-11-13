@@ -67,6 +67,65 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "R04R"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Dimensional fortress."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Tempest Keep"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Quelthalas Other)"
     }
   ]
 }

@@ -62,6 +62,27 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 450
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue - Priestess, Black Empire)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly non-mechanical wounded unit for 25 hit points."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

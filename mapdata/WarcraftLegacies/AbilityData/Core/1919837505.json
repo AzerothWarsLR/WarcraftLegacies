@@ -21,6 +21,28 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - The Chosen One)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Entangling Roots - |cffffcc00(Q)|r"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes roots to burst from the ground, immobilizing a target enemy unit for 10 seconds (3 for heroes), and dealing 50 damage per second."
     }
   ]
 }

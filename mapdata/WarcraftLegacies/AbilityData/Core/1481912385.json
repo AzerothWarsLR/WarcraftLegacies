@@ -55,6 +55,22 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 300
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Musketeer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0TX,DataA1\u003E hit points over \u003CA0TX,Dur1\u003E seconds."
     }
   ]
 }

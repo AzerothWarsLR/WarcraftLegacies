@@ -18,6 +18,46 @@
       "Id": 828797775,
       "Type": 3,
       "Value": "nwwf"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Drek\u0027Thar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons \u003CAOsf,DataB1\u003E Spirit Wolves to fight the Far Seer\u0027s enemies. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003Cosw1,realHP\u003E hit points, \u003Cosw1,mindmg1\u003E - \u003Cosw1,maxdmg1\u003E damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 2|r - \u003Cosw2,realHP\u003E hit points, \u003Cosw2,mindmg1\u003E - \u003Cosw2,maxdmg1\u003E damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 3|r - \u003Cosw3,realHP\u003E hit points, \u003Cosw3,mindmg1\u003E - \u003Cosw3,maxdmg1\u003E damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 4|r - \u003Cosw3,realHP\u003E hit points, \u003Cosw3,mindmg1\u003E - \u003Cosw3,maxdmg1\u003E damage, and Critical Strike. 4 wolves summoned.|n|cffffcc00Level 5|r - \u003Cosw3,realHP\u003E hit points, \u003Cosw3,mindmg1\u003E - \u003Cosw3,maxdmg1\u003E damage and Critical Strike. 6 wolves summoned.|n"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Feral Spirit"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons \u003CA0LT,DataB1\u003E Frost Wolf companions. Each wolf has \u003Cnwwf,realHP\u003E hit points and deals moderate damage. |nLasts \u003CA0LT,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

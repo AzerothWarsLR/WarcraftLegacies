@@ -67,6 +67,51 @@
     {
       "Id": 1717920885,
       "Value": -3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ScarletCleric.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Monk"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Monk"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Peaceful followers of the Light."
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Spiritual Guidance,- Heal|n- Spiritual Guidance|n- Resurrection"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScarletCleric.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

@@ -28,6 +28,26 @@
     {
       "Id": 1647403381,
       "Value": 33
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTentacle.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A gnarly tentacle from the depths. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Hideous Appendages - C\u0027thun)"
     }
   ]
 }

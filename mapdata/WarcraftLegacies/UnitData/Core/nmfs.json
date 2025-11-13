@@ -3,5 +3,20 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1919252085,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\MurlocFlesheater\\MurlocFlesheater.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that can Cannibalize corpses. "
+    }
+  ]
 }

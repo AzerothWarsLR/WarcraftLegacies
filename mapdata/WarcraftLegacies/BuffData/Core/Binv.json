@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is invisible; enemy units cannot see it. If it attacks or casts a spell it will become visible."
+    }
+  ]
 }

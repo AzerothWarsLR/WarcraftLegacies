@@ -127,6 +127,32 @@
       "Id": 879651157,
       "Type": 3,
       "Value": "n041"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Teal)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an Infernal from the sky, causing \u003CA077,DataA1\u003E damage to enemy units near the impact point. The Infernal lasts \u003CA077,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a more powerful Infernal from the sky, causing \u003CA077,DataA2\u003E damage to enemy units near the impact point. The Infernal lasts \u003CA077,Dur2\u003E seconds."
     }
   ]
 }

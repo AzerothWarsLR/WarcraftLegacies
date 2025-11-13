@@ -21,6 +21,33 @@
       "Id": 1969514593,
       "Type": 2,
       "Value": 2.5
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - Faerie Dragon. Blue - Voidwalker)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Phase Shift (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this unit to shift out of existence whenever it takes damage, temporarily avoiding any further damage. |nLasts \u003CApsh,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

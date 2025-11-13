@@ -41,6 +41,51 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Yellow, Shadowcaster)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Shadowspawn"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Shadowspawn"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a twisted Shadowspawn, a resilient and deadly creature. As a Shadowspawn deals damage, it consumes the flesh of its target, thereby fueling its essence and eventually splitting into two Spawns.|n|nHas \u003Cnlv1,realHP\u003E hit points and deals \u003Cnlv1,mindmg1\u003E - \u003Cnlv1,maxdmg1\u003E damage.|nLasts \u003CANlm,Dur1\u003E seconds.|n|n|cffffcc00Attacks ground and air units.|r"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "n0CM"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSludgeCreature.blp"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }

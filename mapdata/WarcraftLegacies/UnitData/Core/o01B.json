@@ -94,6 +94,50 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A new home for the Frostwolves. Used to train workers and gather resources."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Orgrimmar"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Orgrimmar"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Building_Orgrimmar.mdl"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,third"
     }
   ]
 }

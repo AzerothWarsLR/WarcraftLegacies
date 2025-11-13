@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionHorn.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Horn of Stormwind"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has heard the Horn of Stormwind; its attack damage and defense have been increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

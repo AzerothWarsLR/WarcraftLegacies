@@ -82,6 +82,39 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel-Portal-Eye of Sargeras)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Maiden of Dominance"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Maiden of Dominance"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Dominatrix of the night sisters."
     }
   ]
 }

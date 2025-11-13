@@ -95,6 +95,69 @@
     {
       "Id": 1634559605,
       "Value": 150
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Cthun Other)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Temple of Ahn\u0027Qiraj"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 6
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Temple of Ahn\u0027Qiraj"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure, used to train Mur\u0027gul Slaves, Mur\u0027gul Reavers and receive gathered resources. Also contains the Naga weapon and armor upgrades, and the Submerge upgrade."
     }
   ]
 }

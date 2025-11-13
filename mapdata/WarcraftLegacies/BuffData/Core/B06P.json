@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Fear of the Goddess"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is afraid of Elune; it deals less damage for a duration."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
 }

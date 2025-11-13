@@ -9,6 +9,21 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "nightelf"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Emerald Flames (Effect)"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeDamageTarget.mdl"
+    },
+    {
+      "Id": 1818649958,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

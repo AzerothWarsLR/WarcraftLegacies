@@ -16,6 +16,20 @@
       "Id": 1919969397,
       "Type": 2,
       "Value": 1.8
+    },
+    {
+      "Id": 1919252085,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Murloc\\Murloc.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit. "
     }
   ]
 }

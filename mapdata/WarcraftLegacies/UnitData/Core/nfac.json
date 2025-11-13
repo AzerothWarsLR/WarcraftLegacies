@@ -22,6 +22,41 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "_"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPortal.blp"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Void Portal"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Open Void Portal"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Portal for summoning Voidwalkers"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SacrificialPit"
     }
   ]
 }

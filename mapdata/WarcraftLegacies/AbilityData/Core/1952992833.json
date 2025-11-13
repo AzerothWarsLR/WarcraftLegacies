@@ -85,6 +85,47 @@
     {
       "Id": 1986358369,
       "Value": 6
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Pit Lord lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts \u003CANht,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CANht,DataA1,%\u003E% attack damage reduction. |n|cffffcc00Level 2|r - \u003CANht,DataA2,%\u003E% attack damage reduction. |n|cffffcc00Level 3|r - \u003CANht,DataA3,%\u003E% attack damage reduction. |n|cffffcc00Level 4|r - \u003CANht,DataA4,%\u003E% attack damage reduction. |n|cffffcc00Level 5|r - \u003CANht,DataA5,%\u003E% attack damage reduction. |n|cffffcc00Level 6|r - \u003CANht,DataA6,%\u003E% attack damage reduction."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of |cffffcc00T|rerror - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of |cffffcc00T|rerror - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of |cffffcc00T|rerror - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CANht,DataA4,%\u003E% for \u003CANht,Dur4\u003E seconds."
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CANht,DataA5,%\u003E% for \u003CANht,Dur5\u003E seconds."
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CANht,DataA6,%\u003E% for \u003CANht,Dur6\u003E seconds."
     }
   ]
 }

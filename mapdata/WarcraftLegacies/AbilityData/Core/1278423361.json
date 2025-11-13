@@ -66,6 +66,61 @@
     {
       "Id": 1986358369,
       "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Veteran Footman -Lordaeron)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Veteran\u0027s Insight"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Veteran\u0027s Insight"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Combat Experience"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Combat Experience"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance to dodge an attack and a 15% chance to deal 1.5x normal damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance to dodge an attack and a 10% chance to deal 1.5x normal damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 10% chance to dodge an attack and a 15% chance to deal 1.5x normal damage."
     }
   ]
 }

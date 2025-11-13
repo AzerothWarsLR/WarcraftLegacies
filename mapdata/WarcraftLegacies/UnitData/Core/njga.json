@@ -25,6 +25,11 @@
     {
       "Id": 1836083317,
       "Value": 1200
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit. "
     }
   ]
 }

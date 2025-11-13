@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhoulFrenzy.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Crippled"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is crippled; its movement speed and attack rate are reduced."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

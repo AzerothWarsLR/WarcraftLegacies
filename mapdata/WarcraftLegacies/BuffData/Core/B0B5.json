@@ -9,6 +9,26 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNANA_HealingButterfliesFixed.BLP"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Unspoiled Wilderness"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of Unspoiled Wilderness; it has an increased movement speed."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

@@ -63,6 +63,50 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "Aspi"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackDragonRoost.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Creep Specialist)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DragonRoostNetherIllidariV1.02.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Air production building."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dragon Hatchery"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Dragon Hatchery"
     }
   ]
 }

@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathPact.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Strength of the Gurubashi"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is using Strength of the Gurubashi; it has greatly increased attack and move speed."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl"
+    }
+  ]
 }

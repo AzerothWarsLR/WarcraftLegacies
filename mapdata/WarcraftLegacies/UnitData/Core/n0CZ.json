@@ -234,6 +234,80 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dreadnaught"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Dreadnaught"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mechanical heavy melee unit with a powerful ranged anti-air attack."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DwarfDreadNaughtRocket.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ".mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SteamTank"
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDreadnaughtDwarf.blp"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": -80
     }
   ]
 }

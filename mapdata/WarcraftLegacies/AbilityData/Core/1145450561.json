@@ -233,6 +233,131 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellConcentratedSigils.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Kael\u0027thas)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Banish"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellConcentratedSigils.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mass Banish - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA1,%\u003E%. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - Lasts \u003CA0FE,Dur1\u003E seconds on units and \u003CA0FE,HeroDur1\u003E seconds on heroes.|n|cffffcc00Level 2|r - Lasts \u003CA0FE,Dur2\u003E seconds on units and \u003CA0FE,HeroDur2\u003E seconds on heroes.|n|cffffcc00Level 3|r - Lasts \u003CA0FE,Dur3\u003E seconds on units and \u003CA0FE,HeroDur3\u003E seconds on heroes.|n|cffffcc00Level 4|r - Lasts \u003CA0FE,Dur4\u003E seconds on units and \u003CA0FE,HeroDur4\u003E seconds on heroes."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Banish - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Banish - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Banish - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Banish - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA1,%\u003E% for \u003CA0FE,Dur1\u003E seconds. Lasts \u003CA0FE,HeroDur1\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA2,%\u003E% for \u003CA0FE,Dur2\u003E seconds. Lasts \u003CA0FE,HeroDur2\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA3,%\u003E% for \u003CA0FE,Dur3\u003E seconds. Lasts \u003CA0FE,HeroDur3\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA4,%\u003E% for \u003CA0FE,Dur4\u003E seconds. Lasts \u003CA0FE,HeroDur4\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
     }
   ]
 }

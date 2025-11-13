@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Blue - Fel Stalkers)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Acute Senses"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Acute Senses"
+    }
+  ]
 }

@@ -27,6 +27,21 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 180
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable owl ward that provides vision in an area. |nCan see invisible units. |nLasts \u003CAeye,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     }
   ]
 }

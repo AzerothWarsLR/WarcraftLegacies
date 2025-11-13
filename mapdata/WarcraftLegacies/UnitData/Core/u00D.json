@@ -111,6 +111,61 @@
       "Id": 829645685,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelorcCultist.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion, Worker)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_FelorcCultist.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\DemonHunterMissile\\DemonHunterMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Legion Herald"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Legion Herald"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker. Can summon and restore structures."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "PitLord"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

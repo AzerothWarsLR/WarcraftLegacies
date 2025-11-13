@@ -12,6 +12,11 @@
       "Id": 1768055145,
       "Type": 3,
       "Value": "AIp6"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Regenerates \u003CAIp6,DataA1\u003E hit points and \u003CAIp6,DataB1\u003E mana of the Hero over \u003CAIp6,Dur1\u003E seconds. |nContains \u003Cenvl,uses\u003E charges."
     }
   ]
 }

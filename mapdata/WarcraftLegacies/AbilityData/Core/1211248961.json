@@ -18,6 +18,21 @@
       "Id": 829121126,
       "Type": 2,
       "Value": 30
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Bloodwarder)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks destroy 60 mana per hit (35 on heroes). The mana combusts, dealing damage to the attacked unit."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
     }
   ]
 }

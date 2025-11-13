@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Smoke Bomb"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is affected by Smoke Bomb - It has a reduced chance to hit."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Smoke Cloud"
+    }
+  ]
 }

@@ -34,6 +34,31 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "R09X,R00C,R006,R04R,Rhme,Rhar,Rosp,Rorb"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf Research)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building. "
     }
   ]
 }

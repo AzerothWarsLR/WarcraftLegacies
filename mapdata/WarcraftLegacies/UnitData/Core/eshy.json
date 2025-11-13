@@ -49,6 +49,50 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R04R"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Kaldorei Docks"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Kaldorei Docks"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Boat construction facility."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Druids / Sentinel Shipyard)"
     }
   ]
 }

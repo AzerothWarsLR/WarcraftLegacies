@@ -75,6 +75,58 @@
       "Id": 829645685,
       "Type": 3,
       "Value": "MetalMediumChop"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBandit.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 210
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind Garrison)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Bandit\\Bandit.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 210
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Brigadier"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 180
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Brigadier"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Westfall Brigade\u0027s finest volunteer, ready to protect his king and country. "
     }
   ]
 }

@@ -98,6 +98,41 @@
     {
       "Id": 1986358369,
       "Value": 4
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Enhances the other Gazlowee abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|nAlso gives bonus damage and increases the Tinker\u0027s movement speed.|n|n|cffffcc00Level 1|r - \u002B\u003CANeg,DataB1\u003E damage, \u002B\u003CANeg,DataA1,%\u003E% movement.|n|cffffcc00Level 2|r - \u002B\u003CANeg,DataB2\u003E damage, \u002B\u003CANeg,DataA2,%\u003E% movement.|n|cffffcc00Level 3|r - \u002B\u003CANeg,DataB3\u003E damage, \u002B\u003CANeg,DataA3,%\u003E% movement.|n|cffffcc00Level 4|r - \u002B9 damage, \u002B40% movement."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Engineering Upgrade - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB4\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA4,%\u003E%."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB1\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA1,%\u003E%."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB2\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA2,%\u003E%."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Improves other Gazlowee abilities, gives \u003CANeg,DataB3\u003E attack damage and increases Gazlowee movement speed by \u003CANeg,DataA3,%\u003E%."
     }
   ]
 }

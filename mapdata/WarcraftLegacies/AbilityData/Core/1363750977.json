@@ -94,6 +94,43 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "ground,organic"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTrample.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stormwind - Outrider)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Trample"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Trample"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This units attacks reduce the target\u0027s movement speed by \u003CA0IQ,DataB1,%\u003E%  for \u003CA0IQ,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "This units attacks reduce the target\u0027s movement speed by \u003CA0IQ,DataB2,%\u003E%  for \u003CA0IQ,Dur2\u003E seconds."
     }
   ]
 }

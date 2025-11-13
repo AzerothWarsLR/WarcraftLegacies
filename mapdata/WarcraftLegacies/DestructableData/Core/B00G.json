@@ -17,6 +17,36 @@
     {
       "Id": 1818326882,
       "Value": 1
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_HighlandsHome.mdl"
+    },
+    {
+      "Id": 1836083042,
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_HighlandsHome.mdl"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Twilight Highlands Home"
     }
   ]
 }

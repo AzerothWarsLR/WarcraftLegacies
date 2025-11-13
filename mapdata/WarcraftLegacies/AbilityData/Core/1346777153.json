@@ -57,6 +57,48 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 800
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCDruidSpeed.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - Keeper of the Grove)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Haste"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Haste"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases a friendly unit\u0027s attack speed by 20% and movement speed by 20%. |nLasts 60 seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCDruidSpeed.blp"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

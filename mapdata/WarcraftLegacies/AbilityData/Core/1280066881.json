@@ -45,6 +45,22 @@
       "Id": 828928844,
       "Type": 2,
       "Value": 30
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(lurking tempest)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Forms a shield of electricity around a target unit, dealing \u003CAELL,DataA1\u003E damage per second to units around it. |nLasts \u003CAELL,Dur1\u003E seconds."
     }
   ]
 }

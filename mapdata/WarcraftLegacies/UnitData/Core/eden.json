@@ -215,6 +215,61 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoldMine.blp"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowHuntersHall"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels Shop)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DenOfWonders.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Den of Wonders"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Den of Wonders"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

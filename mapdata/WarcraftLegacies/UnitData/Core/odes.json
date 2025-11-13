@@ -158,6 +158,56 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcishTransport.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong-Frostwolf-Fel Horde)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Frigate"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Frigate"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mainstay of the Horde Navy and conquerer of the ocean."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

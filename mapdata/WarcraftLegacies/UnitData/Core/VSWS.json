@@ -132,6 +132,98 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVarokSaurfang.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Saurfang"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Varok Saurfang.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "High Overlord of the Kor\u0027kron"
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Varok Saurfang"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Overlord"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVarokSaurfang.blp"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Varok"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Warrior Hero, specialised in enduring and buffing troops."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Grom"
     }
   ]
 }

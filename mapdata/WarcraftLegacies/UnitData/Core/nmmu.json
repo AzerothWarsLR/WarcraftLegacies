@@ -16,6 +16,25 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.8
+    },
+    {
+      "Id": 1919252085,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\MurlocMutant\\MurlocMutant.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit that can Cripple opponents. "
     }
   ]
 }

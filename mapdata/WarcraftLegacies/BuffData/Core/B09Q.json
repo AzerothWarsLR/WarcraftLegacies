@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacredStrike.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "United for the Crusade"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of United for the Crusade; it has increased attack damage."
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "6"
+    }
+  ]
 }

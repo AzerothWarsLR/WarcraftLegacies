@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindfury.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Windfury"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Windfury; its attack rate is increased."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Windfury"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

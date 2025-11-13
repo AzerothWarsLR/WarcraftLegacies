@@ -40,6 +40,22 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lordaeron - Huntsman)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CA0F3,Dur1\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
     }
   ]
 }

@@ -45,6 +45,33 @@
       "Id": 828733256,
       "Type": 3,
       "Value": "nlv1"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLavaSpawn.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Sorceress)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Fire Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Fire Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a fire elemental to attack the Sorceress enemies. |nLasts 60 seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

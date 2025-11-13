@@ -45,6 +45,16 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "A138"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran-Hydromancer Summon)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }

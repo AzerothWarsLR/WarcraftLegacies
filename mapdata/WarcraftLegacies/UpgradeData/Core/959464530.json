@@ -37,6 +37,50 @@
     {
       "Id": 1651078247,
       "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Endless Energy"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaBreathe.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Arcane Wells\u2019 mana regeneration by 100%."
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Endless Energy"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 0
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
     }
   ]
 }

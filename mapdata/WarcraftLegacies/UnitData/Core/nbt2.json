@@ -81,6 +81,31 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "R04R"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Boulder Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Boulder Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Launch even larger boulders."
     }
   ]
 }

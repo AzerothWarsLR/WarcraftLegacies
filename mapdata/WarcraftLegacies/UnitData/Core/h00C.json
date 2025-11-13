@@ -142,6 +142,64 @@
       "Id": 829645685,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrc.blp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf-Demi)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DrektharV2.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Drek\u0027Thar"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Revive Drek\u0027Thar"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elder shaman and seer of the Frostwolf clan, adept at dealing area of effect damage and summoning units."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "DrekThar"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

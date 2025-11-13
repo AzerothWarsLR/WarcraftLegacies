@@ -29,6 +29,20 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Small Crystalline Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that can Slow opponents. Immune to spells. "
     }
   ]
 }

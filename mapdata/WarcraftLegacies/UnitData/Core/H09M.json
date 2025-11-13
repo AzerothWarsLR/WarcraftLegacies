@@ -128,6 +128,94 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagicalCrystal.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive A\u0027dal"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Naaru.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\BeamMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Naaru"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "A\u0027dal"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive A\u0027dal"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagicalCrystal.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon A\u0027dal"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cosmic hero, expert at team fight support."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Wisp"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1735156597,
+      "Value": 222
     }
   ]
 }

@@ -103,6 +103,31 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran-Living Fragments)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CrystalGolem.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.45
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shard Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A Crystal Golem split in two. Immune to spells. "
     }
   ]
 }

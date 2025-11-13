@@ -4,5 +4,28 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1650685538,
+      "Value": 150
+    },
+    {
+      "Id": 1734571618,
+      "Value": 150
+    },
+    {
+      "Id": 1919120994,
+      "Value": 150
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Silithus Egg Sack"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

@@ -36,6 +36,26 @@
       "Id": 1953654901,
       "Type": 3,
       "Value": "always"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Demon Portal"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

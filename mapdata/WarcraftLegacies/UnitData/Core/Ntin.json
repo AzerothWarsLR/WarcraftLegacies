@@ -127,6 +127,64 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Gazlowe"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Chief Engineer"
+    },
+    {
+      "Id": 1970434165,
+      "Value": 0
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Gazlowe"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Gazlowe"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Gazlowe"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Versatile warrior Hero, adept at disrupting enemy armies."
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
     }
   ]
 }

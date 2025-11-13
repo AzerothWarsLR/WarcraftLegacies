@@ -65,6 +65,16 @@
     {
       "Id": 1768975733,
       "Value": 300
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Spellcasting warrior of the Ogre Legion. Can cast Bloodlust. "
     }
   ]
 }

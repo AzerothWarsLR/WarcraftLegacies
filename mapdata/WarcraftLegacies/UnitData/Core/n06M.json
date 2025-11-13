@@ -64,6 +64,73 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R064,Rgfo"
+    },
+    {
+      "Id": 1819501173,
+      "Type": 3,
+      "Value": "NightElfGrowingLoop"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels Farm)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1768320117,
+      "Value": 512
+    },
+    {
+      "Id": 1868983413,
+      "Value": 512
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Residence"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Residence"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "MoonWell"
     }
   ]
 }

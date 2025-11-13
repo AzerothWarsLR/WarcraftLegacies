@@ -114,6 +114,63 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ACrk"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train War Golem"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy magic-resistant melee unit."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_DwarfGolem.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarfGolem.blp"
     }
   ]
 }

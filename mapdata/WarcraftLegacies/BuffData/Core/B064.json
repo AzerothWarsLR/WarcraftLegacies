@@ -4,5 +4,36 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Holy Fire Blessing"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has the Holy Fire Blessing"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Purple)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "hand,left"
+    }
+  ]
 }

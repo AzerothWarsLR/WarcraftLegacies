@@ -4,5 +4,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is rallied by Uther. It has increased attack damage"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Cry of the Lightbringer"
+    }
+  ]
 }

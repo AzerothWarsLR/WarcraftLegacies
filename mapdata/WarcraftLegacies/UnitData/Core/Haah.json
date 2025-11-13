@@ -155,6 +155,118 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNmedivhhd.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive The Fallen Guardian"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Medivh\\Medivh.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\SpiritDragonMissile(Azure).mdl"
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Fallen Guardian"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Medivh"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive The Fallen Guardian"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Medivh"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at dealing magic damage through attacks."
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
     }
   ]
 }

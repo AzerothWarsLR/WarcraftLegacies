@@ -61,6 +61,36 @@
     {
       "Id": 1937141109,
       "Value": 250
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fire Elemental"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Tamed elemental of the Firelands."
     }
   ]
 }

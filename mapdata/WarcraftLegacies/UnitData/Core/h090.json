@@ -77,6 +77,55 @@
       "Id": 1667330677,
       "Type": 3,
       "Value": "orc"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Trade Prince Guard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Trade Prince Guard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite Guardrian of the Lordaeron Royal Family."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "GoblinSapper"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HeroGoblinPrinceGuard01.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinAlch.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
     }
   ]
 }

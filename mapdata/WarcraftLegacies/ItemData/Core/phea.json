@@ -16,6 +16,16 @@
     {
       "Id": 1635021673,
       "Value": 5
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heals 400 hit points when used."
     }
   ]
 }

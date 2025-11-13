@@ -90,6 +90,90 @@
     {
       "Id": 1932616053,
       "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 80
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 80
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mad Scientist of the Goblins."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Alchemist"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Alchemist"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Goblin_Alchemist.mdl"
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinSlasher.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroGoblinAlchemist"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Explosive Potion,- Explosive Potion|n- Dispel Magic,- Explosive Potion|n- Dispel Magic|n- Acid Bomb,- Explosive Potion|n- Dispel Magic|n- Acid Bomb|n- Napalm"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master, Grandmaster"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\StrongDrink\\BrewmasterMissile.mdl"
     }
   ]
 }

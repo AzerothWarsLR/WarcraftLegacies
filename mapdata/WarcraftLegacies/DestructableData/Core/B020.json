@@ -13,6 +13,36 @@
     {
       "Id": 1702061922,
       "Value": 0
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "buildings\\other\\MurlocHut1\\MurlocHut1.mdl"
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "Building - Troll Hut"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684566882,
+      "Type": 3,
+      "Value": "BuildingShadowSmall"
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.8
     }
   ]
 }

@@ -62,6 +62,41 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R04V"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(The Frozen Throne)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Animate Dead - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Raises dead units in an area to fight for Arthas. Animated units inherit their previous upgrades and are vulnerable. |n|n|cffffcc00Level 1|r - Raises 6 units lasting 40 seconds. |n|cffffcc00Level 2|r - Raises 12 units lasting 60 seconds. |n|cffffcc00Level 3|r -  Raises 18 units lasting 80 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Raises 15 units in an area to fight for Ner\u0027zhul for 40 seconds. Animated units retain upgrades and are vulnerable."
     }
   ]
 }

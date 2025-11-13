@@ -14,6 +14,21 @@
     {
       "Id": 1702127969,
       "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Good Arthas Sword Glow"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "weapon"
     }
   ]
 }

@@ -35,6 +35,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "friend,ground,invulnerable,mechanical,self,structure,vulnerable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASRefurbish.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Orange Foreman Glibbs)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Aura of Durability"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Aura of Durability"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases nearby friendly Mechanical units\u0027 hit point regeneration by 6 per second."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
     }
   ]
 }

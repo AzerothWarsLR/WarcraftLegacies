@@ -57,6 +57,76 @@
       "Id": 879125863,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLightningShield.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShockStorm3.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Lurking Tempest Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Lurking Tempest Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Lurking Tempest Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Lurking Tempest Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Lurking Tempest\u0027s mana capacity, mana regeneration rate, hit points and gives the ability Lightning Shield."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Lurking Tempest\u0027s mana capacity, mana regeneration rate, hit points and gives the ability Storm Cloud."
     }
   ]
 }

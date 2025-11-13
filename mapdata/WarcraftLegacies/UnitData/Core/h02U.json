@@ -84,6 +84,77 @@
       "Id": 2037671029,
       "Type": 3,
       "Value": "normal"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 140
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gate - Closed)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Cinematic\\SargerasGate\\SargerasGate.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Gates of Ahn\u0027Qiraj"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 125
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Horizontal Wooden Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Repairs the broken gate."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1886940533,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1920494965,
+      "Type": 1,
+      "Value": 0
     }
   ]
 }

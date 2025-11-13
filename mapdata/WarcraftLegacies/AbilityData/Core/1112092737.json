@@ -51,6 +51,33 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Abolish Magic"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals 400 damage to summoned units.|r"
     }
   ]
 }

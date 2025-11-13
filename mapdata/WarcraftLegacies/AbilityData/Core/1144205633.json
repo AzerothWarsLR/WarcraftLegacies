@@ -57,6 +57,83 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCTongueOfFlame.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Silver Hand Squire)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Flaming Sword"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flaming Sword"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Phase Blade - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds 20 bonus damage to an attack against enemies."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Adds \u003CA057,DataA2\u003E bonus damage to an attack against enemies, but drains mana with each attack made."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCTongueOfFlame.blp"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

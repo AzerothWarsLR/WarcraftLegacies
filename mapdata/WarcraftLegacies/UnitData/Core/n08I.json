@@ -30,6 +30,34 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lord Falconrest"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\human\\Knight\\Knight.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 190
+    },
+    {
+      "Id": 1651270517,
+      "Value": 170
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Shadowmeld and Devotion Aura. Can cast Divine Shield. "
     }
   ]
 }

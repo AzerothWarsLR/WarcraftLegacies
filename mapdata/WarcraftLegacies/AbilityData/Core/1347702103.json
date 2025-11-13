@@ -80,6 +80,62 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "RELG"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Curses a target enemy unit, causing it to have a \u003CAcrs,DataA2,%\u003E% chance to miss on an attack. |nLasts \u003CAcrs,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Warped Malediction"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCWarped Malediction.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCWarped Malediction.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Warped Malediction"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Inflicts a random debuff upon a target enemy unit. Lasts 30 seconds."
     }
   ]
 }

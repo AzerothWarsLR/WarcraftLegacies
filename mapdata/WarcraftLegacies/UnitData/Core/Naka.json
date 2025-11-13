@@ -92,6 +92,40 @@
     {
       "Id": 1647403381,
       "Value": 15
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Illidari)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, adept at infiltration and assasinating key targets."
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Akama"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
     }
   ]
 }

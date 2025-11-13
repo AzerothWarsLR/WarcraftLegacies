@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNGenericSpellImmunity.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Moonfire"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of moonfire"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Moonfire (Target)"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
+    }
+  ]
 }

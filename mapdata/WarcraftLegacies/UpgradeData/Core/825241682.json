@@ -58,6 +58,46 @@
       "Id": 1902473831,
       "Type": 3,
       "Value": "h06I"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWaterElemental.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Sea Elemental)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Rising Tides"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Rising Tides"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Sea Elementals by increasing their hit points by 200 and attack speed by 35%."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
     }
   ]
 }

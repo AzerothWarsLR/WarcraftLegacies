@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Burning Arrow"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire1.mdl"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFlameArrowShower.blp"
+    }
+  ]
 }

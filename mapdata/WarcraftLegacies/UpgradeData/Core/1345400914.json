@@ -43,6 +43,28 @@
       "Id": 1902473831,
       "Type": 3,
       "Value": "hcas"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Allows Huntsmen to use Ensnare, which causes a target enemy unit to be bound to the ground so that it cannot move for \u003CA0F3,Dur1\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
     }
   ]
 }

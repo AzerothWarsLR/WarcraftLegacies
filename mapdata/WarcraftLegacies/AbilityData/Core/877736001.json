@@ -137,6 +137,113 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Galen)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Earth Bind"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Earth Bind - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Causes the ground to burst, immobilizing and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - 25 damage per second for 5 seconds (1 seconds for Heroes). |n|cffffcc00Level 2|r - 30 damage per second for 6 seconds (1.75 seconds for Heroes). |n|cffffcc00Level 3|r - 40 damage per second for 8 seconds (2.50 seconds for Heroes). |n|cffffcc00Level 4|r - 50 damage per second for 10 seconds (3.25 seconds for Heroes)."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Earth Bind - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Earth Bind - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Earth Bind - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Earth Bind - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the ground to burst, immobilizing a target enemy unit for 5 seconds (1 seconds for Heroes), and dealing 25 damage per second."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the ground to burst, immobilizing a target enemy unit for 6 seconds (1.75 seconds for Heroes), and dealing 30 damage per second."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the ground to burst, immobilizing a target enemy unit for 8 seconds (2.5 seconds for Heroes), and dealing 40 damage per second."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the ground to burst, immobilizing a target enemy unit for 10 seconds (3.25 seconds for Heroes), and dealing 50 damage per second."
     }
   ]
 }

@@ -96,6 +96,56 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "R03L,Rhme,Rhar,R024,R023,Rguv,Ropm"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcWarlock.blp"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Unholy Frenzy,- Heal|n- Unholy Frenzy|n- Unholy Armor"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\OrcWarlock\\OrcWarlock.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Necrolyte"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Necrolyte"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Necromancer of orcish past, and veteran of many wars."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ShamanX"
     }
   ]
 }

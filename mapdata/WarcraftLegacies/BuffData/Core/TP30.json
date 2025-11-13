@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Frenzy"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbility_Warrior_Rampage.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is in a Frenzy; its attack rate and movement speed are increased."
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Frenzy"
+    }
+  ]
 }

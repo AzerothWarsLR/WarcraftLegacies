@@ -35,6 +35,41 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "R09X,R00C,R006,R04R,Rhme,Rhar,Rosp,Rorb"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Warsong Research)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ForgeHumanV1.00.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Refinery"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Refinery"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building. "
     }
   ]
 }

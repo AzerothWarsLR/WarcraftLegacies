@@ -29,6 +29,46 @@
     {
       "Id": 1702127969,
       "Value": 0
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue - Tyrande)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Nightfall"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Nightfall"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The priestess of the moon channels her extremely powerful spells, casting an illusion of night over the sky for 30 seconds. Has a 90 Second cooldown."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "D"
     }
   ]
 }

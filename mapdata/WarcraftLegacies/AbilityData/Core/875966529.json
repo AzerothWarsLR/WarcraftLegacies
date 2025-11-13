@@ -29,6 +29,17 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Thane, Ogre Lord, Tauren Gladiator)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will do 50 bonus damage and stun an opponent for 2 seconds. (1 for heroes)"
     }
   ]
 }

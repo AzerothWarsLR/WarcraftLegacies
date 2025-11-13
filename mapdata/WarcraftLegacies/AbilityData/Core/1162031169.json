@@ -284,6 +284,107 @@
       "Id": 1970893646,
       "Type": 3,
       "Value": "n039"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcorn.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - Malfurion)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Just Grow a Tree"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcorn.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Just Grow a Tree - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Malfurion grows a tree at a target location which spawns Treants every 1.5 seconds until it expires or is destroyed. |n|n|cffffcc00Level 1|r - Lasts 5 seconds. |n|cffffcc00Level 2|r - Lasts 8 seconds. |n|cffffcc00Level 3|r - Lasts 11 seconds. |n|cffffcc00Level 4|r - Lasts 14 seconds. |n|nTreants last 45 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Just Grow a Tree - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Just Grow a Tree - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Just Grow a Tree - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Just Grow a Tree - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malfurion grows a tree at a target location which spawns Treants every 1.5 seconds until it expires or is destroyed. Lasts 5 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malfurion grows a tree at a target location which spawns Treants every 1.5 seconds until it expires or is destroyed. Lasts 8 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malfurion grows a tree at a target location which spawns Treants every 1.5 seconds until it expires or is destroyed. Lasts 11 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Malfurion grows a tree at a target location which spawns Treants every 1.5 seconds until it expires or is destroyed. Lasts 14 seconds."
     }
   ]
 }

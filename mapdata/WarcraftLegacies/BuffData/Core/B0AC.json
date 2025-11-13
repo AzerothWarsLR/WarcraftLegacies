@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953526630,
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationTarget.mdl"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": " (Zelemar Effect)"
+    }
+  ]
 }

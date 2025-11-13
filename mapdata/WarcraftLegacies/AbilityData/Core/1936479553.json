@@ -119,6 +119,67 @@
       "Pointer": 1,
       "Id": 829647957,
       "Value": 25
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red - Anub\u0027Arak)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Locust Swarm - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the hero when they return.|n|n|cffffcc00Level 1|r - \u003CAUls,DataA1\u003E locusts.|n|cffffcc00Level 2|r - \u003CAUls,DataA2\u003E locusts.|n|cffffcc00Level 3|r - \u003CAUls,DataA3\u003E locusts.|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Locust Swarm - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Locust Swarm - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Locust Swarm - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the hero when they return.|n|nSpawns \u003CAUls,DataA1\u003E locusts. |n|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the hero when they return.|n|nSpawns \u003CAUls,DataA2\u003E locusts.|n|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to thehero when they return.|n|nSpawns \u003CAUls,DataA3\u003E locusts.|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
     }
   ]
 }

@@ -23,6 +23,43 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "mechanical,neutral,sapper"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ragnaros Summoning Pedestal"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\SacrificialAltar\\SacrificialAltar.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Neutral)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1651270517,
+      "Value": 100
     }
   ]
 }

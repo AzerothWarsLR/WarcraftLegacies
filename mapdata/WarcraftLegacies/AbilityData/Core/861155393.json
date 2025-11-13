@@ -21,6 +21,42 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Titanforges the Artifact currently held within the Forgeworks, permanently granting it an additional ability. Each Artifact can be Titanforged only once."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDER_Weapon_Forge.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
     }
   ]
 }

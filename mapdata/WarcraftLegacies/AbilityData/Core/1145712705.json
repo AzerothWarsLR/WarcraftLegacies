@@ -43,6 +43,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlash.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow - Dwarven Engineer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "EMP"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "EMP"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area.  |n|cffffcc00Deals 400 damage to summoned units.|r"
     }
   ]
 }

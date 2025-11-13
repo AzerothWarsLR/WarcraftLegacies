@@ -61,6 +61,31 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRifleman.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratMissile\\ZigguratMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "C\u0027thun Building Defense"
     }
   ]
 }

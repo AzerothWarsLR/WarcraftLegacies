@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Void Toxin"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit was hit by Void Toxin; it will take damage over time and move more slowly."
+    }
+  ]
 }

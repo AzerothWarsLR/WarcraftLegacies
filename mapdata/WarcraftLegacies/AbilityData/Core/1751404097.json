@@ -100,6 +100,56 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Khaz Modan-Muradin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(5 for Heros) seconds. |n|n|cffffcc00Level 1|r - 40% movement speed reduction, 30% miss chance. |n|cffffcc00Level 2|r - 45% movement speed reduction, 40% miss chance. |n|cffffcc00Level 3|r - 50% movement speed reduction, 50% miss chance. |n|cffffcc00Level 4|r - 55% movement speed reduction, 60% miss chance."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Drunken Haze - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 40%, and have a 30% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(5 for Heros) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 45%, and have a 40% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur2\u003E(5 for Heros) seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 50%, and have a 50% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur3\u003E(5 for Heros) seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 55%, and have a 60% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur4\u003E(5 for Heros) seconds."
     }
   ]
 }

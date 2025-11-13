@@ -28,6 +28,22 @@
       "Id": 828534085,
       "Type": 2,
       "Value": 25
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "Fel Stalker, Inquisitor, Magus"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Sends a bolt of negative energy that burns 25 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned."
     }
   ]
 }

@@ -78,6 +78,16 @@
       "Id": 1664180597,
       "Type": 2,
       "Value": 2.7
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that can Slow opponents. Immune to spells. "
     }
   ]
 }

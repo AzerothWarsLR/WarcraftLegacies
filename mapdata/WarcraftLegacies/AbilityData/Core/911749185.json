@@ -93,6 +93,64 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 775
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Lady Naz\u0027jar, Naga)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - \u003CA0X6,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CA0X6,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CA0X6,DataA3\u003E damage per unit. |n|cffffcc00Level 4|r - \u003CA0X6,DataA4\u003E damage per unit."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to \u003CA0X6,DataB1\u003E enemy units for \u003CA0X6,DataA1\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to \u003CA0X6,DataB2\u003E enemy units for \u003CA0X6,DataA2\u003E damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to \u003CA0X6,DataB3\u003E enemy units for \u003CA0X6,DataA3\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to \u003CA0X6,DataB4\u003E enemy units for \u003CA0X6,DataA4\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Forked Lightning - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
     }
   ]
 }

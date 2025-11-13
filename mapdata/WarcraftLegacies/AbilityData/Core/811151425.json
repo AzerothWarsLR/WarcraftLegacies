@@ -51,6 +51,38 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 99999
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(real)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Water Prison"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack has a 40% chance on enemies to imprison the unit for 20/3 seconds, dealing 30 damage per second.|nEach unit can only trigger once within 8 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Water Prison"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSphereOfWater.blp"
     }
   ]
 }

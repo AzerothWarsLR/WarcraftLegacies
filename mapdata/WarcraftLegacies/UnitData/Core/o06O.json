@@ -33,6 +33,31 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "summoned"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Rallying Banner"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanCaptureFlag.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\StormwindBanner.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
     }
   ]
 }

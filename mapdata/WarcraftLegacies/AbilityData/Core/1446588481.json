@@ -66,6 +66,32 @@
       "Id": 1634824801,
       "Type": 3,
       "Value": "2"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Sorceress)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Soul Burn"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Wreaths an enemy unit in magical flames which cause 7.5 damage per second, prevent the casting of spells, reduce movement speed by 75% and reduce attack damage and attack speed by 50%.|nLasts 45(3) seconds."
     }
   ]
 }

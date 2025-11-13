@@ -115,6 +115,26 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "VP10"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite fighters of the Legion."
     }
   ]
 }

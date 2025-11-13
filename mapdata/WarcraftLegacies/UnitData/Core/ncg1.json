@@ -25,6 +25,28 @@
     {
       "Id": 1769107573,
       "Value": 2
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(level 2)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Poorly engineered mechanical goblin melee warrior.  Detonates after a certain period of time."
     }
   ]
 }

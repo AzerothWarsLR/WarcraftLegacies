@@ -16,6 +16,24 @@
     {
       "Id": 1635021673,
       "Value": 1
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Increases the mana regeneration rate of the Hero by 25% when worn. Can be consumed for 175 mana."
     }
   ]
 }

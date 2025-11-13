@@ -91,6 +91,31 @@
       "Id": 1919969397,
       "Type": 2,
       "Value": 2.5
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Fast and ferocious wolf rider with high health regeneration."
     }
   ]
 }

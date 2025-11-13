@@ -79,6 +79,46 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ScarletKnight.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cavalier"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Cavalier"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Crusader Knight for the Scarlet Cause."
     }
   ]
 }

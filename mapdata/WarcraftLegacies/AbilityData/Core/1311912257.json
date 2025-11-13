@@ -121,6 +121,82 @@
       "Id": 1969581381,
       "Type": 3,
       "Value": "E00F"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Consumed by the Void- [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Transforms the the hero into a powerful Voidlord with a ranged attack.  |n|n|cffffcc00Level 1|r - 175 bonus hit points, lasts 40 seconds. 140 cooldown.|n|cffffcc00Level 2|r - 350 bonus hit points, lasts 60 seconds. 120 cooldown.|n|cffffcc00Level 3|r - 525 bonus hit points, lasts 80 seconds. 100 cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consumed by the Void - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consumed by the Void - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Consumed by the Void - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the hero into a powerful Voidlord with a ranged attack. Gives 175 bonus hit points and lasts 40 seconds. Has a 140 second cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the hero into a powerful Voidlord with a ranged attack. Gives 300 bonus hit points and lasts 60 seconds. Has a 120 second cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the hero into a powerful Voidlord with a ranged attack. Gives 525 bonus hit points and lasts 80 seconds. Has a 100 second cooldown."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(solarian)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Consumed by the Void"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
     }
   ]
 }

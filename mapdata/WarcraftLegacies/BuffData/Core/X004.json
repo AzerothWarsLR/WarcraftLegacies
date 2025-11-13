@@ -9,6 +9,16 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Divine Sacrifice (Effect)"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
     }
   ]
 }

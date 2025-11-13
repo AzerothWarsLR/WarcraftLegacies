@@ -34,6 +34,31 @@
     {
       "Id": 1986358369,
       "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlink.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Light Blue - Wardens)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Teleports the unitl a short distance, allowing her to move in and out of combat. |n12 second cooldown.                             "
     }
   ]
 }

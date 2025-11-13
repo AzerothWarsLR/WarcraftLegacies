@@ -56,6 +56,21 @@
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0CR"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Gilneas)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit with Critical Strike. "
     }
   ]
 }

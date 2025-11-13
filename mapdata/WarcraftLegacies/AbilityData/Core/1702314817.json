@@ -38,6 +38,38 @@
       "Id": 828733256,
       "Type": 3,
       "Value": "n05M"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArachnathidGreen.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Stormwind Conjurer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Scorpions"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Scorpions"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a group of \u003CACwe,DataA1\u003E Scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal \u003Cnsel,mindmg1\u003E - \u003Cnsel,maxdmg1\u003E damage. |n|cffffcc00Lasts \u003CACwe,Dur1\u003E seconds."
     }
   ]
 }

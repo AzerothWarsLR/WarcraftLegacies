@@ -93,6 +93,39 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,enemy"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Sorceress, Warsong- Hexbinder)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enhanced Slow"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy unit\u0027s attack speed by \u003CAslo,DataB1,%\u003E% and movement speed by \u003CAslo,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CAslo,Dur1\u003E(\u003CAslo,HeroDur1\u003E for Heros) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy unit\u0027s attack speed by \u003CAslo,DataB2,%\u003E% and movement speed by \u003CAslo,DataA2,%\u003E%. |n|cffffcc00Lasts \u003CAslo,Dur2\u003E(\u003CAslo,HeroDur2\u003E for Heros) seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

@@ -23,6 +23,48 @@
     {
       "Id": 1835887719,
       "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Yellow/Purple/Orange/Green/Dark Green Research)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases the armor and hit points of buildings."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Further increases the armor and hit points of buildings."
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Further increases the armor and hit points of buildings."
     }
   ]
 }

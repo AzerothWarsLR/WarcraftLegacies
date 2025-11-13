@@ -28,6 +28,16 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Vaelastrasz"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged flying unit that can Devour opponents and is immune to magic. "
     }
   ]
 }

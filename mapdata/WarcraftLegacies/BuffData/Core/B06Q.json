@@ -4,5 +4,16 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Blood Fury"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is Berserk; it receives no damage and moves and attack faster."
+    }
+  ]
 }

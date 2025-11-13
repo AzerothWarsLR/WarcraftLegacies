@@ -4,5 +4,21 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Genesis Attack"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNFacelessOneWidow.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has been inflicted with Genesis Attack; it will take damage over time and if it dies while still afflicted; a Flying Horror will spawn from its corpse."
+    }
+  ]
 }

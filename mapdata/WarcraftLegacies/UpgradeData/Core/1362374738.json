@@ -23,6 +23,24 @@
       "Id": 829386087,
       "Type": 2,
       "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumArmor.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas)"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Quest Completed: The Blood Elves"
     }
   ]
 }

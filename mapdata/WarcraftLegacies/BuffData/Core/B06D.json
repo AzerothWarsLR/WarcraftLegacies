@@ -4,5 +4,31 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBigBadVoodooSpell.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Psychicly Decimated"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Psychic Decimation"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+    }
+  ]
 }

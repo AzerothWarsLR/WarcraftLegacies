@@ -58,6 +58,36 @@
       "Id": 1953527157,
       "Type": 3,
       "Value": "o03M"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep T1)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GreatHallGoblinV1.01.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinGreatHallT1.blp"
     }
   ]
 }

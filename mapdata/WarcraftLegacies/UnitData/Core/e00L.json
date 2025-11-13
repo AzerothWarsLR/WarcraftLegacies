@@ -115,6 +115,72 @@
     {
       "Id": 1852137845,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowHuntersHall"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels Barracks)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\BarrowDens\\BarrowDens.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "War Academy"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 225
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build War Academy"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary troop production building. "
     }
   ]
 }

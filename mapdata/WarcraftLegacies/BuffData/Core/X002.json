@@ -4,5 +4,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Light Burst (Effect)"
+    },
+    {
+      "Id": 1952540006,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
+    },
+    {
+      "Id": 1936090470,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818649958,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
 }

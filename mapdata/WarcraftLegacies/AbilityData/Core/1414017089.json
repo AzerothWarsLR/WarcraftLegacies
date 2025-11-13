@@ -90,6 +90,65 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "allies,dead,friend"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druid - Talon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Cycle of Rebirth"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Raise Dead - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Raises \u003CArai,DataA2\u003E skeletons from a corpse for \u003CArai,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Cycle of Rebirth"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\Heal Green.mdx"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCHealingPlants.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCHealingPlants.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates a Healing Bulb from a nearby friendly corpse that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hitpoints each."
     }
   ]
 }

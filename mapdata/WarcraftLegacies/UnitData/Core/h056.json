@@ -136,6 +136,65 @@
       "Id": 1999724917,
       "Type": 3,
       "Value": "missile"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImbuedMasonry.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ironforge Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenTower.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Khaz Modan Tower"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Keep Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy defensive structure. Particularly effective against clusters of troops. Grants a 5% Command Aura. Requires Riflemen manning it in order to attack. Can learn the Magic Sentry ability. "
     }
   ]
 }

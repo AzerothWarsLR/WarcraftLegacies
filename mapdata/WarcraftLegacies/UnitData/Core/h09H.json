@@ -186,6 +186,99 @@
     {
       "Id": 1937141109,
       "Value": 190
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Aroc"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblin Assault Tank \u0027Gazlowe\u00272.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinSeigeWalker_Final.mdl"
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Walker"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Walker"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long range siege vehicle, adept at shooting down air units."
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\TripleBullet.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "IronGolem"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1819503989,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
     }
   ]
 }

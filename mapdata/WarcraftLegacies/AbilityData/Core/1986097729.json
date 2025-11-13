@@ -13,6 +13,51 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R09V"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Brown - Druid of the Talon)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 2
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the Druid into a Storm Crow, giving him the ability to fly. Can cast Cycle of Rebirth. |n|n|cffffcc00Attacks air units.|r"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Druid of the Talon Form"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Transforms the Druid back into a natural form."
     }
   ]
 }

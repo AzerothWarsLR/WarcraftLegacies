@@ -3,5 +3,41 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Lordaeron/Stormwind Town Hall)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Call all nearby Peasants to the this building to be converted to Militia. |n|cffffcc00Lasts \u003CAmil,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "Call all nearby Militia to the this building to be converted to Peasants."
+    }
+  ]
 }

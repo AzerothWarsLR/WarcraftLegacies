@@ -249,6 +249,117 @@
       "Id": 1969514593,
       "Type": 2,
       "Value": 6
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceFissure.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Scourge - Lich)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ice Block"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCosmicFlame.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ice Block"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Freezes ALL units within the target area in a block of ice for \u003CZBrp,Dur1\u003E seconds, preventing them from moving or taking actions but turning them invulnerable. The ice can be dispelled, freeing the units within."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA2\u003E damage a second for \u003CA0F9,HeroDur2\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur2\u003E seconds, during which units within continue to take \u003CA0F9,DataC2\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA3\u003E damage a second for \u003CA0F9,HeroDur3\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur3\u003E seconds, during which units within continue to take \u003CA0F9,DataC3\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA4\u003E damage a second for \u003CA0F9,HeroDur4\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur4\u003E seconds, during which units within continue to take \u003CA0F9,DataC4\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     }
   ]
 }

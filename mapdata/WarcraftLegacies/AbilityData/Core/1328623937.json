@@ -115,6 +115,97 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 900
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(khadgar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second. |n|n|cffffcc00Level 1|r - 240 cooldown. 6 seconds duration. |n|cffffcc00Level 2|r - 160 cooldown. 9 seconds duration. |n|cffffcc00Level 3|r - 120 cooldown. 12 seconds duration."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Black Hole - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Black Hole - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Black Hole"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Black Hole"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Black Hole - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\2BlackHole.mdx"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "war3mapImported\\2BlackHole.mdx"
+    },
+    {
+      "Id": 1634034017,
+      "Type": 3,
+      "Value": "war3mapImported\\2BlackHole.mdx"
     }
   ]
 }

@@ -69,6 +69,63 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "o030"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 125
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel T2 Hounds Pack)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 125
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Fel Hound Pack Demon Gate"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Fel Hound Pack Demon Gate"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Gateway attuned to the packs of numerous Fel Hounds of the Burning Crusade, summoning 3 every 30 seconds."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

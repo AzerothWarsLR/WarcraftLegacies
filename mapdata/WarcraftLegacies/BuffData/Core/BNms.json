@@ -3,5 +3,20 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1685091174,
+      "Value": 1
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\MagicShield_Blue.mdx"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
 }

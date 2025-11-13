@@ -53,6 +53,26 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "A0O4,Adtn,Aren,Ault"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids, Sentinels, Worker)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ancient spirit builder of the Kaldorei."
     }
   ]
 }

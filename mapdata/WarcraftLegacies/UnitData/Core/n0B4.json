@@ -166,6 +166,65 @@
       "Id": 1999724917,
       "Type": 3,
       "Value": "normal"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Reaper"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Reaper"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Strongest N\u0027raqi Warriors."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TheSaboteur.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessSaboteur.blp"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Mannoroth"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

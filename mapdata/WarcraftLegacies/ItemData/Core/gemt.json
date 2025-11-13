@@ -7,6 +7,16 @@
     {
       "Id": 1920234345,
       "Value": 400
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase (|cffcece00A|r) Gem of True Seeing"
     }
   ]
 }

@@ -93,6 +93,46 @@
     {
       "Id": 1915838837,
       "Value": 600
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Versatile marksmen and a true believer of the Horde."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scout"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Scout"
     }
   ]
 }

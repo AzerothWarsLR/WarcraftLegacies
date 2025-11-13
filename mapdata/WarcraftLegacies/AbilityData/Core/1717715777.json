@@ -3,5 +3,20 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(crystal lord"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    }
+  ]
 }

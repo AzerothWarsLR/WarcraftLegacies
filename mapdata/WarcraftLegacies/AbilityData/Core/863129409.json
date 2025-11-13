@@ -32,6 +32,31 @@
     {
       "Id": 1986818657,
       "Value": 10
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When killed, the Hero will come back to life. |n|n|cffffcc00Level 1|r - \u003CAOr3,Cool1\u003E second cooldown. |n|cffffcc00Level 2|r - \u003CAOr3,Cool2\u003E second cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Reincarnation"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "When killed, this unit will come back to life. Reincarnation has a \u003CAOr3,Cool1\u003E second cooldown."
     }
   ]
 }

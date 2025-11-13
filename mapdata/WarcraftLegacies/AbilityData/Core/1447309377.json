@@ -180,6 +180,80 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 900
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(rhonin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Flame Inferno"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Flame Inferno - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 66 damage over 3 seconds, followed by 90 damage over 6 seconds. |n|cffffcc00Level 2|r - 84 damage over 3 seconds, followed by 102 damage over 6 seconds. |n|cffffcc00Level 3|r - 99 damage over 3 seconds, followed by 120 damage over 6 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Inferno - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Inferno - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Flame Inferno - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 66 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 90 damage over 6 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 84 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 102 damage over 6 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 99 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 120 damage over 6 seconds."
     }
   ]
 }

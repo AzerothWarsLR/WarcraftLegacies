@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
 }

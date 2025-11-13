@@ -86,6 +86,31 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "etoe"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Druids)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Massive melee unit that can take incredible amounts of punishment."
     }
   ]
 }

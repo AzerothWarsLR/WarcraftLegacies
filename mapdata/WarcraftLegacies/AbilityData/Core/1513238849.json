@@ -70,6 +70,61 @@
       "Id": 1852072801,
       "Type": 2,
       "Value": 10
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(stormwind dummy)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Rallying Banner"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rallying Banner"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Resurrect a nearby fallen ally to fight again every \u003CA12Z,Cool1\u003E seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2019718497,
+      "Value": 0
     }
   ]
 }

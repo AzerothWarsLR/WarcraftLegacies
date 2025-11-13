@@ -8,6 +8,26 @@
       "Id": 1936746594,
       "Type": 2,
       "Value": 1
+    },
+    {
+      "Id": 1818846818,
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CityBridgeLarge0\\CityBridgeLarge0.mdl"
+    },
+    {
+      "Id": 1935764834,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289122,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1719170146,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\Cliff\\Cliff1.tga"
     }
   ]
 }

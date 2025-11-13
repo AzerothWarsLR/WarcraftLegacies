@@ -233,6 +233,127 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCosmicFlame.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Kael\u0027thas)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCosmicFlame.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Resurgent Flame Strike - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,HeroDur1\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur1\u003E seconds, during which units within continue to take a lesser amount of damage per second. The first two times the pillar subsides, it resurges again for the same duration. |n|n|cffffcc00Level 1|r - \u003CA0F9,DataA1\u003E damage per second initially, then \u003CA0F9,DataC1\u003E per second while subsiding.|n|cffffcc00Level 2|r - \u003CA0F9,DataA2\u003E damage per second initially, then \u003CA0F9,DataC2\u003E per second while subsiding.|n|cffffcc00Level 3|r - \u003CA0F9,DataA3\u003E damage per second initially, then \u003CA0F9,DataC3\u003E per second while subsiding.|n|cffffcc00Level 4|r - \u003CA0F9,DataA4\u003E damage per second initially, then \u003CA0F9,DataC4\u003E per second while subsiding."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Resurgent Flame Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA1\u003E damage a second for \u003CA0F9,HeroDur1\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur1\u003E seconds, during which units within continue to take \u003CA0F9,DataC1\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA2\u003E damage a second for \u003CA0F9,HeroDur2\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur2\u003E seconds, during which units within continue to take \u003CA0F9,DataC2\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA3\u003E damage a second for \u003CA0F9,HeroDur3\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur3\u003E seconds, during which units within continue to take \u003CA0F9,DataC3\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA4\u003E damage a second for \u003CA0F9,HeroDur4\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur4\u003E seconds, during which units within continue to take \u003CA0F9,DataC4\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
     }
   ]
 }

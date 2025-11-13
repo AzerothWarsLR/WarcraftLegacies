@@ -73,6 +73,55 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhme,Rhac"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\ElvenGuardMagicTower\\ElvenGuardMagicTower.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Sun Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Sun Tower"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Quelthalas Tower)"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
     }
   ]
 }

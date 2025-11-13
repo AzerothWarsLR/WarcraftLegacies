@@ -56,6 +56,51 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun - Silithid Warrior)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Swarm Beetle"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1969779573,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 0
     }
   ]
 }

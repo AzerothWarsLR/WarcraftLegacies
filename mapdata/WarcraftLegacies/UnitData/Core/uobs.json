@@ -82,6 +82,31 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "unp2"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Obsidian Statue"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Construct of ancient design."
     }
   ]
 }

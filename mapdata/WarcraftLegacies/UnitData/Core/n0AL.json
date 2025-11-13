@@ -148,6 +148,71 @@
       "Id": 1768055157,
       "Type": 3,
       "Value": "Aspi"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcTower.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\WatchTowerHumanV1.03.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 845245813,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "abilities\\weapons\\wyvernspear\\wyvernspearmissile.mdl"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Improved Iron Keep"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Iron Keep"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Warsong Tower 2)"
     }
   ]
 }

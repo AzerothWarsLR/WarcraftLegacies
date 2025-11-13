@@ -78,6 +78,46 @@
     {
       "Id": 1835098997,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ogre Mercenary"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Ogre Mercenary"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful mercenary hired by the goblin cartel."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\Ogre\\Ogre.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOgre.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
     }
   ]
 }

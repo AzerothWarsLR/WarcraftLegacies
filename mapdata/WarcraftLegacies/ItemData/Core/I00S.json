@@ -23,6 +23,36 @@
       "Id": 1634493289,
       "Type": 3,
       "Value": "Purchasable"
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Attacks also do holy damage."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Orb of Light"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Orb of Light"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Adds 6 bonus holy damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and has 15% chance to stun his target for 2 seconds."
     }
   ]
 }

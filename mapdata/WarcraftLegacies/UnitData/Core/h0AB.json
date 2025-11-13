@@ -131,6 +131,80 @@
     {
       "Id": 1680957813,
       "Value": 4
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronCaster.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGMechanism.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_DarkIronCaster.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\Firebrand Shot Orange.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowcaster"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shadowcaster"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Dark Iron practitioner of shadow magic."
     }
   ]
 }

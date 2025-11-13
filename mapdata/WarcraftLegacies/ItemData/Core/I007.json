@@ -25,6 +25,46 @@
     {
       "Id": 1869767785,
       "Value": 0
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Increases Intelligence. Can be used to cast Doom."
+    },
+    {
+      "Id": 1818846825,
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\CrystalShard\\CrystalShard.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Skull of Gul\u0027dan"
+    },
+    {
+      "Id": 1633907561,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1668510569,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by 15. Can be used to cast Doom.|n|cffffcc00Lore|r|n|cffffdeadOnce belonging to the grand warlock Gul\u0027dan, his skull has been infused immensely by the Twisting Nether and is now teeming with fel energy."
     }
   ]
 }

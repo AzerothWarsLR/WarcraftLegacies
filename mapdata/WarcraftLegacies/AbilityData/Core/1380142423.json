@@ -76,6 +76,27 @@
       "Id": 1920296033,
       "Type": 2,
       "Value": 30
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warped Malediction)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Curses a target enemy unit, causing it to have a \u003CAcrs,DataA2,%\u003E% chance to miss on an attack. |nLasts \u003CAcrs,Dur2\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

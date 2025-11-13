@@ -62,6 +62,42 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,mechanical,neutral,structure"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWrench.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Khaz Modan-Engineer"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mech Kit"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mech Kit"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly structure or mechanical unit for \u003CA0IL,DataA1\u003E hit points over \u003CA0IL,Dur1\u003E seconds."
     }
   ]
 }

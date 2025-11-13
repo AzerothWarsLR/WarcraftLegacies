@@ -23,6 +23,21 @@
       "Id": 1885433973,
       "Type": 3,
       "Value": "unwalkable"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A cluster of roots that allows wisps to mine gold from goldmines."
     }
   ]
 }

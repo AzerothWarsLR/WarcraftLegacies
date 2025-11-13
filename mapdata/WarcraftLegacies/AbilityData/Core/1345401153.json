@@ -21,6 +21,37 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASPlated Gauntlet2.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Varian)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Heavy Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Heavy Armor"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on this unit by \u003CA01X,DataC1\u003E damage."
     }
   ]
 }

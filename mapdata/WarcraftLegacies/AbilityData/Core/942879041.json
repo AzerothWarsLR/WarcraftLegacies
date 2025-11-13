@@ -61,6 +61,51 @@
       "Level": 1,
       "Id": 1935895905,
       "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Hydromancer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The freezing shots, imbued with arcane magic, slow the target\u0027s attack speed by 80% for 3 seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Freezing Shots"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Freezing Shots"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2019718497,
+      "Value": 3
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl"
     }
   ]
 }

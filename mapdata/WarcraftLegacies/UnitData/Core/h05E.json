@@ -75,6 +75,36 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Stormwind Other)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\AlteracBarracks.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Nethergarde Barracks"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "The outermost outpost of the Kingdom of Arathor."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
     }
   ]
 }

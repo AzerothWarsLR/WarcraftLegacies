@@ -26,6 +26,33 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(sunfury)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an immovable ward that restores 3 mana to friendly units per second. |nLasts 10 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Arcane Ward"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Ward"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaWard.blp"
     }
   ]
 }

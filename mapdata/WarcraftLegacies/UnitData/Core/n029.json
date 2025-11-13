@@ -87,6 +87,30 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Sea Giant"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Slow melee unit capable of devastating area of effect attacks."
     }
   ]
 }

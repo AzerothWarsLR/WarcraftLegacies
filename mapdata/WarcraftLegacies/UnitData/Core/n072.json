@@ -95,6 +95,33 @@
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1735156597,
+      "Value": 135
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Vile Priestess Hexx"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 190
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shandris"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "High Priest of healing magic. Hurls fiery missiles. Can cast Abolish Magic and Inner Fire. "
     }
   ]
 }

@@ -30,6 +30,33 @@
       "Id": 828924488,
       "Type": 2,
       "Value": 100
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Boarding Vessel)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 100% chance that an attack will stun an opponent for 0.4 seconds and deal 5 damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Boarding"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Boarding"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBridgeDown.blp"
     }
   ]
 }

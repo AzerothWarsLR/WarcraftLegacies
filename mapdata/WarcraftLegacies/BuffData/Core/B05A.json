@@ -9,6 +9,15 @@
       "Id": 1667330662,
       "Type": 3,
       "Value": "other"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Thunder Clap debuff"
+    },
+    {
+      "Id": 1667331174,
+      "Value": 1
     }
   ]
 }

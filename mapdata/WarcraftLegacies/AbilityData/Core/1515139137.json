@@ -34,6 +34,22 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(troll - Zandalar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area and deals \u003CAdis,DataB1\u003E damage to summoned units.|r"
     }
   ]
 }

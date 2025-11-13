@@ -68,6 +68,81 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "ZBEH"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Cthun Altar)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Altar of the Old Ones"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Altar of the Old Ones"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Summons Heroes and Demi-heroes. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\AltarOfTheSpiders.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunAltar.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3.5
     }
   ]
 }

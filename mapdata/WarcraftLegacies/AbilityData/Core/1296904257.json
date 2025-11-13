@@ -16,6 +16,21 @@
       "Id": 1667330657,
       "Type": 3,
       "Value": "orc"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Rend Blackhand, Blademaster)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0MM,DataA1\u003E% chance to do \u003CA0MM,DataB1\u003E times total damage on an attack."
     }
   ]
 }

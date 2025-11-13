@@ -84,6 +84,56 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "undead"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Skeletal Grunt"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "NONE"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSkeletalOrcGrunt.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\SkeletonOrc\\SkeletonOrc.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Skeleton"
     }
   ]
 }

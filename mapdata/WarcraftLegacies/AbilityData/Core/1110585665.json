@@ -64,6 +64,61 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "ground,self"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCFuryV2.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(legion - Felguard)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hound Companion"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hound Companion"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summon a Fel Stalker to fight for 60 seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCFuryV2.blp"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
     }
   ]
 }

@@ -17,6 +17,20 @@
       "Id": 1634493289,
       "Type": 3,
       "Value": "Miscellaneous"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Teleports a target unit to your highest level town hall, stunning the unit and regenerating \u003CANsa,DataE1\u003E hit points per second. Has a 2 second cast time and 90 second cooldown. Lasts until the unit is fully healed."
     }
   ]
 }

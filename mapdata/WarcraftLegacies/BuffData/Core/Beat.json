@@ -3,5 +3,26 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEatTree.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Eat Tree"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "Restoring hit points over time."
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl"
+    }
+  ]
 }

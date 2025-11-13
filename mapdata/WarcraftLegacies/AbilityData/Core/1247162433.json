@@ -31,6 +31,28 @@
     {
       "Id": 1702127969,
       "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(\u002B3 All Stats)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Titanforged"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Titanforged"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Additionally increases Strength, Agility, and Intelligence by 3."
     }
   ]
 }

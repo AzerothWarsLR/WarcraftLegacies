@@ -136,6 +136,80 @@
     {
       "Id": 1932616053,
       "Value": 3
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnbroken2.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfSilence.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Magic Missile,- Magic Missile|n- Devour Magic,- Magic Missile|n- Devour Magic|n - Arcane Barrage"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mindlasher"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Dark Arcanist from Ny\u0027alotha."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mindlasher"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOneSorcerer.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Necromancer"
     }
   ]
 }

@@ -21,6 +21,11 @@
     {
       "Id": 1634956649,
       "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Allows for unlimited Town Portal Usages."
     }
   ]
 }

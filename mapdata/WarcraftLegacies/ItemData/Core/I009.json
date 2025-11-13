@@ -43,6 +43,44 @@
     {
       "Id": 1953723241,
       "Value": 720
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceTrollWitchDoctor.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Summons Gatherer"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Summon Gatherer"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Purchase Summon Gatherer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Summons Gatherer"
     }
   ]
 }

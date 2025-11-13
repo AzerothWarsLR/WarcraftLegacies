@@ -152,6 +152,65 @@
     {
       "Id": 1932616053,
       "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Forgotten One"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Evil Abomination of the Old Gods."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Forgotten One"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForgottenOne.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Units\\Creeps\\ForgottenOne\\ForgottenOne.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "KotoBeast"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
     }
   ]
 }
