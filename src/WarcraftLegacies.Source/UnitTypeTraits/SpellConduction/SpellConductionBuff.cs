@@ -20,11 +20,6 @@ public sealed class SpellConductionBuff : PassiveBuff
   /// </summary>
   public required attacktype[] RedirectableAttackTypes { get; init; }
 
-  /// <summary>
-  /// The ability ID to check for Spell Conduction.
-  /// </summary>
-  private const int SpellConductionAbilityId = 1380794970;
-
   /// <inheritdoc />
   public SpellConductionBuff(unit caster, unit target) : base(caster, target)
   {
@@ -74,5 +69,5 @@ public sealed class SpellConductionBuff : PassiveBuff
   private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
 
   private static bool HasSpellConduction(unit unit) =>
-    BlzGetUnitAbility(unit, SpellConductionAbilityId) != null;
+    BuffSystem.GetBuffsOnUnit(unit).OfType<SpellConductionBuff>().Any();
 }
