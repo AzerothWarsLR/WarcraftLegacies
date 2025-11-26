@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 828465767,
-      "Type": 2,
-      "Value": 100
-    },
-    {
       "Id": 845242983,
       "Type": 2,
       "Value": 20
@@ -62,11 +57,6 @@
       "Id": 1667330663,
       "Type": 3,
       "Value": "undead"
-    },
-    {
-      "Id": 828794215,
-      "Type": 3,
-      "Value": "rhpx"
     },
     {
       "Level": 1,
