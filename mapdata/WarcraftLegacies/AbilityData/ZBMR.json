@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes 40% of Magic and Spell damage dealt to friendly units within a radius of 500 to be redirected to this unit. Damage from other Spell Conduction units is not redirected. The damage is affected by the resistances of both the damaged unit and this unit."
+      "Value": "Causes 40% of Magic and Spell damage dealt to friendly units within a radius of 500 to be redirected to this unit. The damage is affected by the resistances of both the damaged unit and this unit."
     },
     {
       "Level": 1,
