@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.UnitTypeTraits;
 using WCSharp.Buffs;
 using WCSharp.Events;
 
@@ -44,14 +45,13 @@ public sealed class SpellConductionBuff : PassiveBuff
       return;
     }
 
-    var attackType = @event.AttackType;
-    if (!IsRedirectableAttackType(attackType))
+    if (UnitTypeTraitRegistry.UnitHasTrait(Target, typeof(SpellConductionTrait)))
     {
       return;
     }
 
-    var damageSource = @event.DamageSource;
-    if (damageSource != null && HasSpellConduction(damageSource))
+    var attackType = @event.AttackType;
+    if (!IsRedirectableAttackType(attackType))
     {
       return;
     }
@@ -67,7 +67,4 @@ public sealed class SpellConductionBuff : PassiveBuff
       @event.DamageType, @event.WeaponType);
 
   private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
-
-  private static bool HasSpellConduction(unit unit) =>
-    BuffSystem.GetBuffsOnUnit(unit).OfType<SpellConductionBuff>().Any();
 }
