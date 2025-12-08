@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.UnitTypeTraits;
 using WCSharp.Buffs;
 using WCSharp.Events;
 
@@ -44,6 +45,11 @@ public sealed class SpellConductionBuff : PassiveBuff
       return;
     }
 
+    if (UnitTypeTraitRegistry.UnitHasTrait(Target, typeof(SpellConductionTrait)))
+    {
+      return;
+    }
+
     var attackType = @event.AttackType;
     if (!IsRedirectableAttackType(attackType))
     {
@@ -57,8 +63,8 @@ public sealed class SpellConductionBuff : PassiveBuff
   }
 
   private void DamageCaster(unit damager, float eventDamage) =>
-    Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, attacktype.Chaos,
-      damagetype.Universal, @event.WeaponType);
+    Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, @event.AttackType,
+      @event.DamageType, @event.WeaponType);
 
   private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
 }

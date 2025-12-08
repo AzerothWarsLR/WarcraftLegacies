@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Utils;
 using WCSharp.Events;
 
@@ -77,6 +78,24 @@ public static class UnitTypeTraitRegistry
     }
 
     unitTypeTraits.Add(unitTypeTrait);
+  }
+
+  public static bool UnitHasTrait(unit whichUnit, Type unitTypeTraitType)
+  {
+    if (!_unitTypeTraitsByUnitTypeId.TryGetValue(whichUnit.UnitType, out var unitTypeTraits))
+    {
+      return false;
+    }
+
+    foreach (var trait in unitTypeTraits)
+    {
+      if (trait.GetType() == unitTypeTraitType)
+      {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   private static void RegisterEvent(UnitTypeTrait unitTypeTrait, int unitTypeId)

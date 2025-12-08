@@ -123,7 +123,7 @@ public sealed class Ahnqiraj : Faction
 
     UnitTypeTraitRegistry.Register(new SpellConductionTrait
     {
-      RedirectionPercentage = 0.35f,
+      RedirectionPercentage = 0.40f,
       RedirectableAttackTypes = new attacktype[]
       {
         attacktype.Normal,

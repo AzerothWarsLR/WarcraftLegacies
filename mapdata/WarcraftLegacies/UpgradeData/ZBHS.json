@@ -6,39 +6,19 @@
   ],
   "Modifications": [
     {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
       "Id": 828465767,
-      "Type": 2,
-      "Value": 2
-    },
-    {
-      "Id": 845242983,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Id": 862020199,
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 878797415,
-      "Type": 2,
-      "Value": 1
-    },
-    {
       "Id": 829383527,
       "Type": 3,
-      "Value": "ALZ1"
-    },
-    {
-      "Id": 862937959,
-      "Type": 3,
       "Value": "h00H"
-    },
-    {
-      "Id": 879715175,
-      "Type": 3,
-      "Value": "A058"
     },
     {
       "Id": 1651271527,
@@ -62,11 +42,6 @@
       "Id": 1667330663,
       "Type": 3,
       "Value": "undead"
-    },
-    {
-      "Id": 828794215,
-      "Type": 3,
-      "Value": "rart"
     },
     {
       "Level": 1,
@@ -102,7 +77,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Changes Obsidian Eradicators\u0027 armor type to Heavy and replaces their Spell Resistance with Hardened, which causes them to take \u003CZBHL,DataC1\u003E reduced damage from attacks.|n|n|cffc864c8Can\u0027t be researched with Spell Conduction.|r"
+      "Value": "Increases Obsidian Eradicators' maximum hit points by 200 and replaces their Spell Resistance with Hardened, which causes them to take \u003CZBHL,DataC1\u003E reduced damage from attacks.|n|n|cffc864c8Can\u0027t be researched with Spell Conduction.|r"
     },
     {
       "Id": 2037408359,
