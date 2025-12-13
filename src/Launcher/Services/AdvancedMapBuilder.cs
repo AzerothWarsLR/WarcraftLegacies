@@ -98,7 +98,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 
     if (options.OutputType is MapOutputType.Test or MapOutputType.Publish)
     {
-      AddCSharpCode(map, options.MapName);
+      AddCSharpCode(map);
     }
   }
 
@@ -151,9 +151,9 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     }
   }
 
-  public void AddCSharpCode(Map map, string projectName)
+  public void AddCSharpCode(Map map)
   {
-    var csproj = Path.Combine(options.RootPath, PathConventions.Src, $"{projectName}.Source", $"{projectName}.Source.csproj");
+    var csproj = Path.Combine(options.RootPath, PathConventions.Src, $"{options.MapName}.Source", $"{options.MapName}.Source.csproj");
     var artifactsPath = Path.Combine(options.RootPath, PathConventions.Artifacts);
     var compiler = new Compiler(csproj, artifactsPath, string.Empty, null!,
       "War3Api.*;WCSharp.*;MacroTools.*;MacroTools.Shared.*;WarcraftLegacies.Shared.*", "", null!, false, null,

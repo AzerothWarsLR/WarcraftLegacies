@@ -33,11 +33,11 @@ public sealed class MapTestFixture
     ObjectDatabase = Map.GetObjectDatabaseFromMap();
     var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
     {
-      MapName = "WarcraftLegaciesIntegrityCheck",
+      MapName = "WarcraftLegacies",
       OutputType = MapOutputType.Test,
       RootPath = appSettings.CompilerSettings.RootPath
     });
-    advancedMapBuilder.AddCSharpCode(Map, "WarcraftLegacies");
+    advancedMapBuilder.AddCSharpCode(Map);
 
     var scriptBuilder = new StringBuilder();
 

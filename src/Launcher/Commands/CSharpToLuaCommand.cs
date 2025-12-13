@@ -34,6 +34,6 @@ internal static class CSharpToLuaCommand
       RootPath = appSettings.CompilerSettings.RootPath,
       Version = appSettings.MapSettings.Version
     });
-    advancedMapBuilder.AddCSharpCode(Map.Open(artifactPath), mapName);
+    advancedMapBuilder.AddCSharpCode(Map.Open(artifactPath));
   }
 }
