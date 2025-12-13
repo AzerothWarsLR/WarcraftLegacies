@@ -31,12 +31,12 @@ public static class W3XToJsonCommand
     var mapper = new Mapper(autoMapperConfig);
     var appSettings = AppSettings.Load();
 
-    var baseMapPath = Path.Combine(appSettings.CompilerSettings.RootPath, "maps", $"{mapName}.w3x");
-    var outputDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, "mapdata", mapName);
+    var baseMapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x");
+    var outputDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
 
     new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
-    var constantsOutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, "src", "WarcraftLegacies.Shared");
-    var regionsOutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, "src", "WarcraftLegacies.Source");
+    var constantsOutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, "WarcraftLegacies.Shared");
+    var regionsOutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, "WarcraftLegacies.Source");
 
     GenerateConstants(baseMapPath, constantsOutputPath, regionsOutputPath);
   }

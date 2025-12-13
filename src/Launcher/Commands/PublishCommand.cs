@@ -37,7 +37,7 @@ public static class PublishCommand
       Version = appSettings.MapSettings.Version
     });
 
-    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, "mapdata", mapName);
+    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
 
     var (mapFile, additionalFiles) = conversionService.ConvertToMapAndAdditionalFileDirectories(mapDataDirectory);
     advancedMapBuilder.SaveMapFile(mapFile, additionalFiles);

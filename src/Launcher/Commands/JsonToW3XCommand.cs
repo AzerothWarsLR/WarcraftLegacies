@@ -36,7 +36,7 @@ public static class JsonToW3XCommand
       RootPath = appSettings.CompilerSettings.RootPath
     });
 
-    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, "mapdata", mapName);
+    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
 
     var (mapFolder, additionalFileDirectories) = conversionService.ConvertToMapAndAdditionalFiles(mapDataDirectory);
     advancedMapBuilder.SaveMapDirectory(mapFolder, additionalFileDirectories);

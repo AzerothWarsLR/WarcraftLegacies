@@ -23,12 +23,6 @@ namespace Launcher.Services;
 public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 {
   private const string GraphicsApi = "Direct3D9";
-  private const string SharedImportsPath = "shared_imports";
-  private const string MapsPath = "maps";
-  private const string BackupsPath = "backups";
-  private const string ArtifactsPath = "artifacts";
-  private const string SrcPath = "src";
-  private const string PublishedPath = "published";
 
   /// <summary>
   /// Builds a Warcraft 3 map based on the provided inputs and saves it as a file.
@@ -39,7 +33,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     SupplementMap(map);
 
     var mapBuilder = new MapBuilder(map);
-    var sharedAssetsPath = Path.Combine(options.RootPath, SharedImportsPath);
+    var sharedAssetsPath = Path.Combine(options.RootPath, PathConventions.SharedImports);
     if (Directory.Exists(sharedAssetsPath))
     {
       mapBuilder.AddFiles(sharedAssetsPath);
@@ -75,7 +69,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     var mapFilePath = GetMapFullFilePath();
     SupplementMap(map);
 
-    BackupFiles(Path.Combine(options.RootPath, MapsPath, BackupsPath), mapFilePath);
+    BackupFiles(Path.Combine(options.RootPath, PathConventions.Backups), mapFilePath);
 
     if (Directory.Exists(mapFilePath))
     {
@@ -159,8 +153,8 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 
   public void AddCSharpCode(Map map, string projectName)
   {
-    var csproj = Path.Combine(options.RootPath, SrcPath, $"{projectName}.Source", $"{projectName}.Source.csproj");
-    var artifactsPath = Path.Combine(options.RootPath, ArtifactsPath);
+    var csproj = Path.Combine(options.RootPath, PathConventions.Src, $"{projectName}.Source", $"{projectName}.Source.csproj");
+    var artifactsPath = Path.Combine(options.RootPath, PathConventions.Artifacts);
     var compiler = new Compiler(csproj, artifactsPath, string.Empty, null!,
       "War3Api.*;WCSharp.*;MacroTools.*;MacroTools.Shared.*;WarcraftLegacies.Shared.*", "", null!, false, null,
       string.Empty)
@@ -193,9 +187,9 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
   {
     return options.OutputType switch
     {
-      MapOutputType.Publish => $"{Path.Combine(options.RootPath, MapsPath, PublishedPath, $"{options.MapName}")}{options.Version}.w3x",
-      MapOutputType.Test => $"{Path.Combine(options.RootPath, ArtifactsPath, $"{options.MapName}")}{options.Version}.w3x",
-      MapOutputType.Folder => $"{Path.Combine(options.RootPath, MapsPath, options.MapName)}.w3x",
+      MapOutputType.Publish => $"{Path.Combine(options.RootPath, PathConventions.Published, $"{options.MapName}")}{options.Version}.w3x",
+      MapOutputType.Test => $"{Path.Combine(options.RootPath, PathConventions.Artifacts, $"{options.MapName}")}{options.Version}.w3x",
+      MapOutputType.Folder => $"{Path.Combine(options.RootPath, PathConventions.Maps, options.MapName)}.w3x",
       _ => throw new ArgumentOutOfRangeException(nameof(options.OutputType))
     };
   }

@@ -26,7 +26,7 @@ internal static class CSharpToLuaCommand
   {
     var appSettings = AppSettings.Load();
 
-    var artifactPath = Path.Combine(appSettings.CompilerSettings.RootPath, "artifacts", $"{mapName}.w3x");
+    var artifactPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Artifacts, $"{mapName}.w3x");
     var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
     {
       MapName = mapName,
