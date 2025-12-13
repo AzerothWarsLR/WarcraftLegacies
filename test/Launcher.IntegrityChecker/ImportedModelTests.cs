@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using FluentAssertions;
 using Launcher.IntegrityChecker.TestSupport;
+using Launcher.Settings;
 using War3Net.Build;
 using War3Net.Build.Object;
 
@@ -13,7 +14,7 @@ public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFi
   {
     var excludedModels = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "war3mapimported\\orbofwind.mdx", };
 
-    var (_, additionalFiles) = MapDataProvider.GetMapData();
+    var (_, additionalFiles) = MapDataProvider.GetMapData(AppSettings.Load());
 
     var importedModels = additionalFiles
       .Where(f => f.RelativePath.IsModelPath())

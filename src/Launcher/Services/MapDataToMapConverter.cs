@@ -57,7 +57,7 @@ public sealed class MapDataToMapConverter
 
   /// <summary>
   ///   Converts the provided JSON data into a <see cref="Map" /> and a set of directories containing any additional
-  ///   files that should be includedin the output, such as imported textures.
+  ///   files that should be included in the output, such as imported textures.
   /// </summary>
   public (Map Map, IEnumerable<DirectoryEnumerationOptions> AdditionalFiles) ConvertToMapAndAdditionalFileDirectories(
     string mapDataRootDirectory)

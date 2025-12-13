@@ -28,14 +28,23 @@ public sealed class MapTestFixture
 
   public MapTestFixture()
   {
-    (Map, _) = MapDataProvider.GetMapData();
+    var appSettings = AppSettings.Load();
+    (Map, _) = MapDataProvider.GetMapData(appSettings);
     ObjectDatabase = Map.GetObjectDatabaseFromMap();
-    AdvancedMapBuilder.AddCSharpCode(Map, "../../../../../src/WarcraftLegacies.Source/", new CompilerSettings());
+    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
+    {
+      MapName = "WarcraftLegacies",
+      OutputType = MapOutputType.Test,
+      RootPath = appSettings.CompilerSettings.RootPath
+    });
+    advancedMapBuilder.AddCSharpCode(Map);
 
     var scriptBuilder = new StringBuilder();
-    var allScriptFiles = Directory.EnumerateFiles("../../../../../src/WarcraftLegacies.Source/", "*.cs",
-      SearchOption.AllDirectories).ToList();
-    allScriptFiles.Remove("../../../../../src/WarcraftLegacies.Source/Constants.cs");
+
+    var srcPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src,
+      "WarcraftLegacies.Source");
+    var allScriptFiles = Directory.EnumerateFiles(srcPath, "*.cs", SearchOption.AllDirectories).ToList();
+    allScriptFiles.Remove(Path.Combine(srcPath, "Constants.cs"));
     foreach (var fileName in allScriptFiles)
     {
       scriptBuilder.Append(File.ReadAllText(fileName));

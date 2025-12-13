@@ -19,26 +19,20 @@ internal static class CSharpToLuaCommand
       description: "The name of the map folder inside the output directory (without extension). Transpiled code will be written into this folder.");
     command.AddArgument(mapNameArgument);
 
-    var outputDirectoryArgument = new Argument<string>(
-      name: "outputDirectory",
-      description: "The directory containing map folders. The specified map folder will be resolved as a subdirectory of this path.");
-    command.AddArgument(outputDirectoryArgument);
-
-    var sourceCodeFolderArgument = new Argument<string>(
-      name: "sourcecodepath",
-      description: "The directory in which the C# source code is stored. This code will be transpiled into Lua and written into the map folder.");
-    command.AddArgument(sourceCodeFolderArgument);
-
-    command.SetHandler(Run, mapNameArgument, outputDirectoryArgument, sourceCodeFolderArgument);
+    command.SetHandler(Run, mapNameArgument);
   }
 
-  private static void Run(string mapName, string outputDirectory, string sourceCodeFolderPath)
+  private static void Run(string mapName)
   {
-    var compilerSettings = new CompilerSettings
-    {
-      ArtifactsPath = $"{Path.Combine(outputDirectory, mapName)}.w3x"
-    };
+    var appSettings = AppSettings.Load();
 
-    AdvancedMapBuilder.AddCSharpCode(Map.Open(compilerSettings.ArtifactsPath), sourceCodeFolderPath, compilerSettings);
+    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
+    {
+      MapName = mapName,
+      OutputType = MapOutputType.None,
+      RootPath = appSettings.CompilerSettings.RootPath,
+      Version = appSettings.MapSettings.Version
+    });
+    advancedMapBuilder.AddCSharpCode(Map.Open(Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x")));
   }
 }

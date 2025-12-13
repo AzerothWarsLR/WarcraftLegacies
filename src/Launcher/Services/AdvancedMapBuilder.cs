@@ -8,7 +8,6 @@ using System.Text;
 using CSharpLua;
 using Launcher.Extensions;
 using Launcher.MapMigrations;
-using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using War3Net.Build;
 using War3Net.Build.Extensions;
@@ -21,32 +20,23 @@ namespace Launcher.Services;
 /// <summary>
 /// Builds a Warcraft 3 map based on inputs.
 /// </summary>
-public sealed class AdvancedMapBuilder
+public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 {
-  private readonly CompilerSettings _compilerSettings;
-  private readonly MapSettings _mapSettings;
-  private const string War3MapLua = MapDataPaths.ScriptPath;
-
   private const string GraphicsApi = "Direct3D9";
-
-  public AdvancedMapBuilder(CompilerSettings compilerSettings, MapSettings mapSettings)
-  {
-    _compilerSettings = compilerSettings;
-    _mapSettings = mapSettings;
-  }
 
   /// <summary>
   /// Builds a Warcraft 3 map based on the provided inputs and saves it as a file.
   /// </summary>
-  public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories, AdvancedMapBuilderOptions options)
+  public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories)
   {
-    var mapFilePath = GetMapFullFilePath(options);
-    SupplementMap(map, options);
+    var mapFilePath = GetMapFullFilePath();
+    SupplementMap(map);
 
     var mapBuilder = new MapBuilder(map);
-    if (Directory.Exists(_compilerSettings.SharedAssetsPath))
+    var sharedAssetsPath = Path.Combine(options.RootPath, PathConventions.SharedImports);
+    if (Directory.Exists(sharedAssetsPath))
     {
-      mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
+      mapBuilder.AddFiles(sharedAssetsPath);
     }
 
     foreach (var additionalFileDirectory in additionalFileDirectories)
@@ -63,25 +53,23 @@ public sealed class AdvancedMapBuilder
 
     mapBuilder.Build(mapFilePath, archiveCreateOptions);
     Console.WriteLine($"Exported map to {Path.GetFullPath(mapFilePath)}.");
-    if (options.Launch)
+    if (options.OutputType == MapOutputType.Test && options.Warcraft3ExecutablePath != null)
     {
       Console.WriteLine("Launching map in Warcraft 3...");
-      LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+      LaunchGame(options.Warcraft3ExecutablePath, mapFilePath);
     }
   }
 
   /// <summary>
   /// Builds a Warcraft 3 map based on the provided inputs and saves it as a directory.
+  /// <para>If doing so would cause an existing map to be overwritten, the destination is moved to the backups folder first.</para>
   /// </summary>
-  public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+  public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles)
   {
-    var mapFilePath = GetMapFullFilePath(options);
-    SupplementMap(map, options);
+    var mapFilePath = GetMapFullFilePath();
+    SupplementMap(map);
 
-    if (options.BackupDirectory != null)
-    {
-      BackupFiles(options.BackupDirectory, mapFilePath);
-    }
+    BackupFiles(Path.Combine(options.RootPath, PathConventions.Backups), mapFilePath);
 
     if (Directory.Exists(mapFilePath))
     {
@@ -91,22 +79,25 @@ public sealed class AdvancedMapBuilder
     map.BuildDirectory(mapFilePath, additionalFiles);
   }
 
-  private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
+  /// <summary>
+  /// Conditionally adds C# code, a map title, and/or a testing player slot depending on options setup.
+  /// </summary>
+  private void SupplementMap(Map map)
   {
-    if (options.SetMapTitles)
+    if (options.OutputType == MapOutputType.Publish && options.Version != null)
     {
-      SetMapTitles(map, _mapSettings.Version);
+      SetMapTitles(map, options.Version);
     }
 
-    if (options.Launch)
+    if (options.OutputType == MapOutputType.Test)
     {
-      SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
+      SetTestPlayerSlot(map, options.TestingPlayerSlot);
     }
 
-    if (options.SourceCodeProjectFolderPath != null)
+    if (options.OutputType is MapOutputType.Test or MapOutputType.Publish)
     {
       ApplyMigrations(map);
-      AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
+      AddCSharpCode(map);
     }
   }
 
@@ -159,11 +150,11 @@ public sealed class AdvancedMapBuilder
     }
   }
 
-  public static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
+  public void AddCSharpCode(Map map)
   {
-    //Set debug options if necessary, configure compiler
-    var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-    var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
+    var csproj = Path.Combine(options.RootPath, PathConventions.Src, $"{options.MapName}.Source", $"{options.MapName}.Source.csproj");
+    var artifactsPath = Path.Combine(options.RootPath, PathConventions.Artifacts);
+    var compiler = new Compiler(csproj, artifactsPath, string.Empty, null!,
       "War3Api.*;WCSharp.*;MacroTools.*;MacroTools.Shared.*;WarcraftLegacies.Shared.*", "", null!, false, null,
       string.Empty)
     {
@@ -191,18 +182,19 @@ public sealed class AdvancedMapBuilder
     }
 
     // Update war3map.lua so you can inspect the generated Lua code easily
-    if (compilerSettings.ArtifactsPath != null)
-    {
-      Directory.CreateDirectory(compilerSettings.ArtifactsPath);
-      File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
-    }
+    Directory.CreateDirectory(artifactsPath);
+    File.WriteAllText(Path.Combine(artifactsPath, MapDataPaths.ScriptPath), map.Script);
   }
 
-  private string GetMapFullFilePath(AdvancedMapBuilderOptions options)
+  private string GetMapFullFilePath()
   {
-    return options.SetMapTitles
-      ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
-      : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
+    return options.OutputType switch
+    {
+      MapOutputType.Publish => $"{Path.Combine(options.RootPath, PathConventions.Published, $"{options.MapName}")}{options.Version}.w3x",
+      MapOutputType.Test => $"{Path.Combine(options.RootPath, PathConventions.Artifacts, $"{options.MapName}")}{options.Version}.w3x",
+      MapOutputType.Folder => $"{Path.Combine(options.RootPath, PathConventions.Maps, options.MapName)}.w3x",
+      _ => throw new ArgumentOutOfRangeException(nameof(options.OutputType))
+    };
   }
 
   private static void BackupFiles(string backupDirectory, string mapPath)
