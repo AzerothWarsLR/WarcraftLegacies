@@ -52,12 +52,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     };
 
     mapBuilder.Build(mapFilePath, archiveCreateOptions);
-    Console.WriteLine($"Exported map to {Path.GetFullPath(mapFilePath)}.");
-    if (options.OutputType == MapOutputType.Test && options.Warcraft3ExecutablePath != null)
-    {
-      Console.WriteLine("Launching map in Warcraft 3...");
-      LaunchGame(options.Warcraft3ExecutablePath, mapFilePath);
-    }
+    Console.WriteLine($"Published map archive to {Path.GetFullPath(mapFilePath)}.");
   }
 
   /// <summary>
@@ -69,14 +64,19 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     var mapFilePath = GetMapFullFilePath();
     SupplementMap(map);
 
-    BackupFiles(Path.Combine(options.RootPath, PathConventions.Backups), mapFilePath);
-
-    if (Directory.Exists(mapFilePath))
+    if (options.OutputType != MapOutputType.Test && Directory.Exists(mapFilePath))
     {
-      Directory.Delete(mapFilePath, true);
+      BackupFiles(Path.Combine(options.RootPath, PathConventions.Backups), mapFilePath);
     }
+    Directory.Delete(mapFilePath, true);
 
     map.BuildDirectory(mapFilePath, additionalFiles);
+
+    Console.WriteLine($"Exported map folder to {Path.GetFullPath(mapFilePath)}.");
+    if (options is { OutputType: MapOutputType.Test, Warcraft3ExecutablePath: not null })
+    {
+      LaunchGame(options.Warcraft3ExecutablePath, mapFilePath);
+    }
   }
 
   /// <summary>
@@ -218,6 +218,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
   {
     if (File.Exists(warcraft3ExecutablePath))
     {
+      Console.WriteLine("Launching map in Warcraft 3...");
       var commandLineArgs = new StringBuilder();
       var fileVersion = FileVersionInfo.GetVersionInfo(warcraft3ExecutablePath).FileVersion;
       var isReforged = fileVersion != null && Version.Parse(fileVersion) >= new Version(1, 32);
@@ -232,7 +233,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     }
     else
     {
-      throw new Exception(
+      throw new InvalidOperationException(
         "Please set Warcraft3ExecutablePath in Launcher/appsettings.json to the path of your Warcraft III executable.");
     }
   }
