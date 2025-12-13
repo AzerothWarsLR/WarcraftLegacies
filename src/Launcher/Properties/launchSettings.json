@@ -2,23 +2,23 @@
   "profiles": {
     "WarcraftLegacies: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"../../../../../mapdata/WarcraftLegacies\" \"../../../../../artifacts\" --sourcecodepath \"../../../../WarcraftLegacies.Source\" --set-map-titles True"
+      "commandLineArgs": "test WarcraftLegacies"
     },
     "WarcraftLegacies: Publish": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"../../../../../mapdata/WarcraftLegacies\" \"../../../../../maps/published\" --sourcecodepath \"../../../../WarcraftLegacies.Source\" --set-map-titles True"
+      "commandLineArgs": "publish WarcraftLegacies"
     },
     "WarcraftLegacies: Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-mapdata \"../../../../../maps/WarcraftLegacies.w3x\" \"../../../../../mapdata/WarcraftLegacies\" --constantsOutputPath \"../../../../WarcraftLegacies.Shared\" --regionsOutputPath \"../../../../WarcraftLegacies.Source\""
+      "commandLineArgs": "w3x-to-json WarcraftLegacies"
     },
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"../../../../../mapdata/WarcraftLegacies\" \"../../../../../maps\" --backup-directory \"../../../../../maps/backups\" --output-type Folder"
+      "commandLineArgs": "json-to-w3x false"
     },
     "WarcraftLegacies: Transpile C# to Lua": {
       "commandName": "Project",
-      "commandLineArgs": "csharp-to-lua WarcraftLegacies \"../../../../../maps\" \"../../../../WarcraftLegacies.Source\""
+      "commandLineArgs": "csharp-to-lua WarcraftLegacies"
     }
   }
 }

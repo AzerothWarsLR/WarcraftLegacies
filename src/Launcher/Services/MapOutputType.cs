@@ -2,6 +2,8 @@
 
 public enum MapOutputType
 {
-  File,
+  None,
+  Publish,
+  Test,
   Folder
 }

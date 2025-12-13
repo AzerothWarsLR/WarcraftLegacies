@@ -16,12 +16,7 @@ public sealed class CompilerSettings
   public string Warcraft3ExecutablePath { get; init; }
 
   /// <summary>
-  /// The folder where artifacts created during launches are stored.
+  /// Where the root of the Warcraft III project exists in relation to this Launcher executable.
   /// </summary>
-  public string ArtifactsPath { get; init; }
-
-  /// <summary>
-  /// All files in this folder will be added to the published map.
-  /// </summary>
-  public string SharedAssetsPath { get; init; }
+  public string RootPath { get; init; }
 }
