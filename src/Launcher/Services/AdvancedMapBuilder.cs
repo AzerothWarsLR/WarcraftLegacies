@@ -33,11 +33,6 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     SupplementMap(map);
 
     var mapBuilder = new MapBuilder(map);
-    var sharedAssetsPath = Path.Combine(options.RootPath, PathConventions.SharedImports);
-    if (Directory.Exists(sharedAssetsPath))
-    {
-      mapBuilder.AddFiles(sharedAssetsPath);
-    }
 
     foreach (var additionalFileDirectory in additionalFileDirectories)
     {

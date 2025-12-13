@@ -4,8 +4,6 @@ namespace Launcher;
 
 public static class PathConventions
 {
-  public const string SharedImports = "shared_imports";
-
   public const string Maps = "maps";
 
   public const string MapData = "mapdata";
