@@ -14,8 +14,7 @@ internal static class Program
     rootCommand.RegisterJsonToW3XCommand();
     rootCommand.RegisterW3XToJsonCommand();
     rootCommand.RegisterCSharpToLuaCommand();
-    rootCommand.RegisterPublishCommand();
-    rootCommand.RegisterTestCommand();
+    rootCommand.RegisterJsonToW3XFileCommands();
     return rootCommand.Invoke(args);
   }
 }

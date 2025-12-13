@@ -7,16 +7,16 @@ using Launcher.Settings;
 
 namespace Launcher.Commands;
 
-public static class TestCommand
+public static class JsonToW3XFolderCommand
 {
-  public static void RegisterTestCommand(this RootCommand rootCommand)
+  public static void RegisterJsonToW3XCommand(this RootCommand rootCommand)
   {
-    var command = new Command("test", "Compiles a .w3x file into the artifacts folder, then launches it.");
+    var command = new Command("json-to-w3x", "Converts raw map data into a Warcraft 3 map.");
     rootCommand.Add(command);
 
     var mapNameArgument = new Argument<string>(
       name: "mapname",
-      description: "The name of the project.");
+      description: "The directory in which the source map data is stored.");
     command.AddArgument(mapNameArgument);
 
     command.SetHandler(Run, mapNameArgument);
@@ -32,16 +32,13 @@ public static class TestCommand
     var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
     {
       MapName = mapName,
-      OutputType = MapOutputType.Test,
-      RootPath = appSettings.CompilerSettings.RootPath,
-      Warcraft3ExecutablePath = appSettings.CompilerSettings.Warcraft3ExecutablePath,
-      Version = appSettings.MapSettings.Version,
-      TestingPlayerSlot = appSettings.CompilerSettings.TestingPlayerSlot
+      OutputType = MapOutputType.Folder,
+      RootPath = appSettings.CompilerSettings.RootPath
     });
 
     var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
 
-    var (mapFile, additionalFiles) = conversionService.ConvertToMapAndAdditionalFileDirectories(mapDataDirectory);
-    advancedMapBuilder.SaveMapFile(mapFile, additionalFiles);
+    var (mapFolder, additionalFileDirectories) = conversionService.ConvertToMapAndAdditionalFiles(mapDataDirectory);
+    advancedMapBuilder.SaveMapDirectory(mapFolder, additionalFileDirectories);
   }
 }

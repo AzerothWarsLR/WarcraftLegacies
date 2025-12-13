@@ -7,22 +7,26 @@ using Launcher.Settings;
 
 namespace Launcher.Commands;
 
-public static class PublishCommand
+public static class JsonToW3XFileCommands
 {
-  public static void RegisterPublishCommand(this RootCommand rootCommand)
+  public static void RegisterJsonToW3XFileCommands(this RootCommand rootCommand)
   {
-    var command = new Command("publish", "Publishes a release-ready w3x file.");
-    rootCommand.Add(command);
-
     var mapNameArgument = new Argument<string>(
       name: "mapname",
       description: "The name of the project.");
-    command.AddArgument(mapNameArgument);
 
-    command.SetHandler(Run, mapNameArgument);
+    var publishCommand = new Command("publish", "Publishes a release-ready w3x file.");
+    rootCommand.Add(publishCommand);
+    publishCommand.AddArgument(mapNameArgument);
+    publishCommand.SetHandler(name => Run(name, MapOutputType.Publish), mapNameArgument);
+
+    var testCommand = new Command("test", "Compiles a .w3x file into the artifacts folder, then launches it.");
+    rootCommand.Add(testCommand);
+    testCommand.AddArgument(mapNameArgument);
+    testCommand.SetHandler(name => Run(name, MapOutputType.Test), mapNameArgument);
   }
 
-  private static void Run(string mapName)
+  private static void Run(string mapName, MapOutputType outputType)
   {
     var appSettings = AppSettings.Load();
     var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
@@ -32,9 +36,11 @@ public static class PublishCommand
     var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
     {
       MapName = mapName,
-      OutputType = MapOutputType.Publish,
+      OutputType = outputType,
       RootPath = appSettings.CompilerSettings.RootPath,
-      Version = appSettings.MapSettings.Version
+      Warcraft3ExecutablePath = appSettings.CompilerSettings.Warcraft3ExecutablePath,
+      Version = appSettings.MapSettings.Version,
+      TestingPlayerSlot = appSettings.CompilerSettings.TestingPlayerSlot
     });
 
     var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
