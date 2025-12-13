@@ -11,10 +11,10 @@ internal static class Program
   private static int Main(string[] args)
   {
     var rootCommand = new RootCommand();
-    rootCommand.RegisterJsonToW3XCommand();
+    rootCommand.RegisterJsonToW3XCommands();
     rootCommand.RegisterW3XToJsonCommand();
     rootCommand.RegisterCSharpToLuaCommand();
-    rootCommand.RegisterJsonToW3XFileCommands();
+    rootCommand.RegisterPublishCommand();
     return rootCommand.Invoke(args);
   }
 }
