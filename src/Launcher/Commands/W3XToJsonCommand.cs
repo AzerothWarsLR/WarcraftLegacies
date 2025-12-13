@@ -35,36 +35,41 @@ public static class W3XToJsonCommand
     var outputDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
 
     new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
-    var constantsOutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, "WarcraftLegacies.Shared");
-    var regionsOutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, "WarcraftLegacies.Source");
 
-    GenerateConstants(baseMapPath, constantsOutputPath, regionsOutputPath);
+    GenerateConstants(appSettings, mapName);
   }
 
   private static readonly string[] _constantsHeader = ["﻿#pragma warning disable"];
 
-  private static void GenerateConstants(string baseMapPath, string constantsOutputPath, string? regionsOutputPath)
+  private static void GenerateConstants(AppSettings appSettings, string mapName)
   {
-    try
-    {
-      Console.WriteLine("Generating Constants.cs and Regions.cs files...");
-      ConstantGenerator.Run(baseMapPath, constantsOutputPath, new ConstantGeneratorOptions
-      {
-        IncludeCode = true
-      });
-      // ConstantGenerator always outputs order ids, which we already have in MacroTools.Shared.
-      // We remove lines starting with 'public const int ORDER_' to avoid duplication.
-      File.WriteAllLines($"{constantsOutputPath}/Constants.cs", _constantsHeader
-        .Concat(File.ReadLines($"{constantsOutputPath}/Constants.cs").Where(l => !l.AsSpan().TrimStart().StartsWith("public const int ORDER_")))
-        .ToArray());
-
-      File.WriteAllLines($"{constantsOutputPath}/Regions.cs", _constantsHeader.Concat(File.ReadAllLines($"{constantsOutputPath}/Regions.cs")).ToArray());
-      File.Move($"{constantsOutputPath}/Regions.cs", $"{regionsOutputPath}/Regions.cs", true);
-
-    }
-    catch (FileNotFoundException)
+    var triggerStringsPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName, "war3map.wts");
+    if (!File.Exists(triggerStringsPath))
     {
       Console.WriteLine("Could not find TriggerStrings file. Skipping Constants generation step.");
+      return;
     }
+
+    var mapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x");
+
+    var sharedProjectPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, $"{mapName}.Shared");
+    var constantsPath = Path.Combine(sharedProjectPath, "Constants.cs");
+
+    var sourceProjectPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, $"{mapName}.Source");
+    var regionsPath = Path.Combine(sourceProjectPath, "Regions.cs");
+
+    Console.WriteLine("Generating Constants.cs and Regions.cs files...");
+    ConstantGenerator.Run(mapPath, sharedProjectPath, new ConstantGeneratorOptions
+    {
+      IncludeCode = true
+    });
+    // ConstantGenerator always outputs order ids, which we already have in MacroTools.Shared.
+    // We remove lines starting with 'public const int ORDER_' to avoid duplication.
+    File.WriteAllLines(constantsPath, _constantsHeader
+      .Concat(File.ReadLines(constantsPath).Where(l => !l.AsSpan().TrimStart().StartsWith("public const int ORDER_")))
+      .ToArray());
+
+    File.WriteAllLines(regionsPath, _constantsHeader.Concat(File.ReadAllLines(regionsPath)).ToArray());
+    File.Move(Path.Combine(sharedProjectPath, "Regions.cs"), regionsPath, true);
   }
 }
