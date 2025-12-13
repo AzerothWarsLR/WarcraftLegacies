@@ -94,10 +94,9 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
       SetTestPlayerSlot(map, options.TestingPlayerSlot);
     }
 
-    ApplyMigrations(map);
-
     if (options.OutputType is MapOutputType.Test or MapOutputType.Publish)
     {
+      ApplyMigrations(map);
       AddCSharpCode(map);
     }
   }
