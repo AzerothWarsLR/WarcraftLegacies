@@ -14,7 +14,7 @@
     },
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "json-to-w3x false"
+      "commandLineArgs": "json-to-w3x WarcraftLegacies"
     },
     "WarcraftLegacies: Transpile C# to Lua": {
       "commandName": "Project",
