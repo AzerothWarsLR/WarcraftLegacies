@@ -26,7 +26,6 @@ internal static class CSharpToLuaCommand
   {
     var appSettings = AppSettings.Load();
 
-    var artifactPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Artifacts, $"{mapName}.w3x");
     var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
     {
       MapName = mapName,
@@ -34,6 +33,6 @@ internal static class CSharpToLuaCommand
       RootPath = appSettings.CompilerSettings.RootPath,
       Version = appSettings.MapSettings.Version
     });
-    advancedMapBuilder.AddCSharpCode(Map.Open(artifactPath));
+    advancedMapBuilder.AddCSharpCode(Map.Open(Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x")));
   }
 }

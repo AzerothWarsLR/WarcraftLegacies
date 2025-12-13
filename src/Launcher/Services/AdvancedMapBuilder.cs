@@ -181,6 +181,10 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     {
       throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
     }
+
+    // Update war3map.lua so you can inspect the generated Lua code easily
+    Directory.CreateDirectory(artifactsPath);
+    File.WriteAllText(Path.Combine(artifactsPath, MapDataPaths.ScriptPath), map.Script);
   }
 
   private string GetMapFullFilePath()
