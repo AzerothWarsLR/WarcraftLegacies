@@ -55,12 +55,6 @@
     },
     {
       "Level": 1,
-      "Id": 1918989409,
-      "Type": 3,
-      "Value": "air,ground,friend,neutral,self"
-    },
-    {
-      "Level": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 800
