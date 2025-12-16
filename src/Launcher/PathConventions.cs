@@ -1,18 +1,18 @@
-﻿using System.IO;
-
-namespace Launcher;
+﻿namespace Launcher;
 
 public static class PathConventions
 {
-  public const string Maps = "maps";
+  public const string MapsPath = "maps";
 
-  public const string MapData = "mapdata";
+  public const string MapDataPath = "mapdata";
 
-  public static string Backups => Path.Combine(Maps, "backups");
+  public const string BackupsPath = $"{MapsPath}/backups";
 
-  public const string Artifacts = "artifacts";
+  public const string ArtifactsPath = "artifacts";
 
-  public const string Src = "src";
+  public const string SrcPath = "src";
 
-  public static string Published => Path.Combine(Maps, "published");
+  public const string PublishedPath = $"{MapsPath}/published";
+
+  public const string SourceProjectSuffix = ".Source";
 }

@@ -5,16 +5,26 @@ namespace Launcher;
 
 internal static class Program
 {
-  /// <summary>
-  ///   Entry point for the program.
-  /// </summary>
   private static int Main(string[] args)
   {
-    var rootCommand = new RootCommand();
-    rootCommand.RegisterJsonToW3XCommands();
-    rootCommand.RegisterW3XToJsonCommand();
-    rootCommand.RegisterCSharpToLuaCommand();
-    rootCommand.RegisterPublishCommand();
-    return rootCommand.Invoke(args);
+    return Create().Parse(args).Invoke();
+  }
+
+  private static RootCommand Create()
+  {
+    return
+    [
+      new Command("json-to-w3x")
+      {
+        MapCommandBuilder.Build(),
+        MapCommandBuilder.Test(),
+        MapCommandBuilder.Publish()
+      },
+
+      new Command("w3x-to-json")
+      {
+        MapCommandBuilder.Serialize()
+      }
+    ];
   }
 }

@@ -28,20 +28,15 @@ public sealed class MapTestFixture
 
   public MapTestFixture()
   {
-    var appSettings = AppSettings.Load();
-    (Map, _) = MapDataProvider.GetMapData(appSettings);
+    var appSettings = AppSettings.Current;
+    (Map, _) = MapDataProvider.GetMapData();
     ObjectDatabase = Map.GetObjectDatabaseFromMap();
-    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
-    {
-      MapName = "WarcraftLegacies",
-      OutputType = MapOutputType.Test,
-      RootPath = appSettings.CompilerSettings.RootPath
-    });
+    var advancedMapBuilder = new AdvancedMapBuilder(AdvancedMapBuilderOptions.Create("WarcraftLegacies"));
     advancedMapBuilder.AddCSharpCode(Map);
 
     var scriptBuilder = new StringBuilder();
 
-    var srcPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src,
+    var srcPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.SrcPath,
       "WarcraftLegacies.Source");
     var allScriptFiles = Directory.EnumerateFiles(srcPath, "*.cs", SearchOption.AllDirectories).ToList();
     allScriptFiles.Remove(Path.Combine(srcPath, "Constants.cs"));
