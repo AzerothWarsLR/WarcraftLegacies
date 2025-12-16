@@ -31,8 +31,8 @@ public static class W3XToJsonCommand
     var mapper = new Mapper(autoMapperConfig);
     var appSettings = AppSettings.Load();
 
-    var baseMapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x");
-    var outputDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
+    var baseMapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapsPath, $"{mapName}.w3x");
+    var outputDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName);
 
     new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
 
@@ -43,19 +43,19 @@ public static class W3XToJsonCommand
 
   private static void GenerateConstants(AppSettings appSettings, string mapName)
   {
-    var triggerStringsPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName, "war3map.wts");
+    var triggerStringsPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName, "war3map.wts");
     if (!File.Exists(triggerStringsPath))
     {
       Console.WriteLine("Could not find TriggerStrings file. Skipping Constants generation step.");
       return;
     }
 
-    var mapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x");
+    var mapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapsPath, $"{mapName}.w3x");
 
-    var sharedProjectPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, $"{mapName}.Shared");
+    var sharedProjectPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.SrcPath, $"{mapName}.Shared");
     var constantsPath = Path.Combine(sharedProjectPath, "Constants.cs");
 
-    var sourceProjectPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Src, $"{mapName}.Source");
+    var sourceProjectPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.SrcPath, $"{mapName}.Source");
     var regionsPath = Path.Combine(sourceProjectPath, "Regions.cs");
 
     Console.WriteLine("Generating Constants.cs and Regions.cs files...");

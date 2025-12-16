@@ -17,7 +17,7 @@ public static class MapDataProvider
         return _mapData.Value;
       }
 
-      var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, "WarcraftLegacies");
+      var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, "WarcraftLegacies");
       var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToMapConverter(mapper);

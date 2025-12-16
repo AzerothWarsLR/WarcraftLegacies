@@ -4,15 +4,17 @@ namespace Launcher;
 
 public static class PathConventions
 {
-  public const string Maps = "maps";
+  public const string MapsPath = "maps";
 
-  public const string MapData = "mapdata";
+  public const string MapDataPath = "mapdata";
 
-  public static string Backups => Path.Combine(Maps, "backups");
+  public static string BackupsPath => Path.Combine(MapsPath, "backups");
 
-  public const string Artifacts = "artifacts";
+  public const string ArtifactsPath = "artifacts";
 
-  public const string Src = "src";
+  public const string SrcPath = "src";
 
-  public static string Published => Path.Combine(Maps, "published");
+  public static string PublishedPath => Path.Combine(MapsPath, "published");
+
+  public const string SourceProjectSuffix = ".Source";
 }

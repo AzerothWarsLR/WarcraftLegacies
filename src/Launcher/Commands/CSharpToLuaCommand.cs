@@ -25,14 +25,11 @@ internal static class CSharpToLuaCommand
   private static void Run(string mapName)
   {
     var appSettings = AppSettings.Load();
-
-    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
+    var mapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapsPath, $"{mapName}.w3x");
+    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, mapName)
     {
-      MapName = mapName,
-      OutputType = MapOutputType.None,
-      RootPath = appSettings.CompilerSettings.RootPath,
-      Version = appSettings.MapSettings.Version
+      ScriptArtifactPath = mapPath
     });
-    advancedMapBuilder.AddCSharpCode(Map.Open(Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.Maps, $"{mapName}.w3x")));
+    advancedMapBuilder.AddCSharpCode(Map.Open(mapPath));
   }
 }

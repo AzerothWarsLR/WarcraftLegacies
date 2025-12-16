@@ -28,16 +28,15 @@ public static class PublishCommand
     var mapper = new Mapper(autoMapperConfig);
     var conversionService = new MapDataToMapConverter(mapper);
 
-    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions
+    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, mapName)
     {
-      MapName = mapName,
-      OutputType = MapOutputType.Publish,
-      RootPath = appSettings.CompilerSettings.RootPath,
-      Warcraft3ExecutablePath = appSettings.CompilerSettings.Warcraft3ExecutablePath,
-      Version = appSettings.MapSettings.Version
+      Version = appSettings.MapSettings.Version,
+      ShouldMigrate = true,
+      ShouldTranspile = true,
+      OutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.PublishedPath, $"{mapName}{appSettings.MapSettings.Version}.w3x"),
     });
 
-    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapData, mapName);
+    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName);
 
     var (mapFile, additionalFiles) = conversionService.ConvertToMapAndAdditionalFileDirectories(mapDataDirectory);
     advancedMapBuilder.SaveMapFile(mapFile, additionalFiles);
