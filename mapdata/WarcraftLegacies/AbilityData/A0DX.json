@@ -37,12 +37,6 @@
       "Value": "Gives a 15% chance to deal double damage on their attacks."
     },
     {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Critical Strike"
-    },
-    {
       "Id": 2037408353,
       "Value": -11
     }

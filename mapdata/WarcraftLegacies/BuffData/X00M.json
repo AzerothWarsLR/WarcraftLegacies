@@ -11,11 +11,6 @@
       "Value": "Arcane Artillery (Effect)"
     },
     {
-      "Id": 1952540006,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Human\\Blizzard\\BlizzardTarget.mdl"
-    },
-    {
       "Id": 1818649958,
       "Type": 3,
       "Value": "AcolyteUnsummonLoop"

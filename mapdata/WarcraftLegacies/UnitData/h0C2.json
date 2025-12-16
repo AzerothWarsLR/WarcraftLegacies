@@ -112,11 +112,6 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Basic observation tower. Has no attack, but can be upgraded into a Guard Tower, an Arcane Tower, or a Cannon Tower. Can learn the Magic Sentry ability."
     }
   ]
 }
