@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -65,11 +64,11 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE, 1);
 
     //Upgrades
-    yield return new(UPGRADE_RUBA_BANSHEE_GRANDMASTER_TRAINING_SCOURGE_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RUBA_BANSHEE_ADEPT_TRAINING_SCOURGE_RESEARCH, Unlimited);
     yield return new(UPGRADE_RUEX_EXHUME_CORPSES_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUFB_FREEZING_BREATH_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUGF_GHOUL_FRENZY_SCOURGE, Unlimited);
-    yield return new(UPGRADE_RUNE_NECROMANCER_GRANDMASTER_TRAINING_SCOURGE, Unlimited);
+    yield return new(UPGRADE_RUNE_NECROMANCER_ADEPT_TRAINING_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUWB_WEB_RED_RESEARCH, Unlimited);
     yield return new(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, Unlimited);
     yield return new(UPGRADE_R01X_EPIDEMIC_SCOURGE, Unlimited);

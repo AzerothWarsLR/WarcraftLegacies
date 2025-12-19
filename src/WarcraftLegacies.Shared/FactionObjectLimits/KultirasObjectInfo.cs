@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -10,7 +9,7 @@ public static class KultirasObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H062_TOWN_HALL_KULTIRAS_T1, Unlimited);
-    yield return new(UNIT_H064_KEEP_KULTIRAS_T2, Unlimited);
+    yield return new(UNIT_H064_KULTIRAS_T2, Unlimited);
     yield return new(UNIT_H06I_CASTLE_KULTIRAS_T3, Unlimited);
     yield return new(UNIT_H07N_HOMESTEAD_KULTIRAS_FARM, Unlimited);
     yield return new(UNIT_H07M_ALTAR_OF_ADMIRALS_KULTIRAS_ALTAR, Unlimited);
@@ -24,7 +23,7 @@ public static class KultirasObjectInfo
     yield return new(UNIT_N07H_TRADE_HOUSE_KULTIRAS_SHOP, Unlimited);
     yield return new(UNIT_H07W_SHIPYARD_KULTIRAS_SHIPYARD, Unlimited, UnitCategory.Shipyard);
     yield return new(UNIT_H06R_GARRISON_KULTIRAS_BARRACKS, Unlimited);
-    yield return new(UNIT_H07P_WORKSHOP_KULTIRAS_SPECIALIST, Unlimited);
+    yield return new(UNIT_H07P_KULTIRAS_SPECIALIST, Unlimited);
     yield return new(UNIT_H093_ORDER_CHAPTER_HOUSE_KULTIRAS_SIEGE, Unlimited);
     yield return new(UNIT_H01E_DECKHAND_KULTIRAS_WORKER, Unlimited);
     yield return new(UNIT_E007_THORNSPEAKER_KULTIRAS, Unlimited);
@@ -50,12 +49,12 @@ public static class KultirasObjectInfo
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
     yield return new(UPGRADE_R001_RISING_TIDES_KUL_TIRAS_SEA_ELEMENTAL, Unlimited);
-    yield return new(UPGRADE_R000_TIDESAGE_MASTER_TRAINING_KUL_TIRAS, Unlimited);
+    yield return new(UPGRADE_R000_TIDESAGE_ADEPT_TRAINING_KUL_TIRAS, Unlimited);
     yield return new(UPGRADE_R01O_CRUSHING_WAVE_KUL_TIRAS_SEA_GIANT, Unlimited);
     yield return new(UPGRADE_R01T_CLUSTER_ROCKETS_KUL_TIRAS_BOMBER, Unlimited);
     yield return new(UPGRADE_R01U_PILLAGE_STONEMAUL, Unlimited);
-    yield return new(UPGRADE_R05G_THORNSPEAKER_MASTER_TRAINING_KULTIRAS, Unlimited);
-    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_R05G_THORNSPEAKER_ADEPT_TRAINING_KULTIRAS, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
     yield return new(UPGRADE_R08B_LONG_RIFLES_KUL_TIRAS, Unlimited);
     yield return new(UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KULTIRAS, 1);
     yield return new(UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KULTIRAS, 1);

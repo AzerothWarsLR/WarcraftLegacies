@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -61,11 +60,11 @@ public static class DalaranObjectInfo
     yield return new(UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN, 1);
     yield return new(UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, 1);
     yield return new(UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
-    yield return new(UPGRADE_R01I_ARCANIST_GRANDMASTER_TRAINING_DALARAN, Unlimited);
-    yield return new(UPGRADE_R01V_GEOMANCER_GRANDMASTER_TRAINING_DALARAN, Unlimited);
-    yield return new(UPGRADE_R00E_HYDROMANCER_GRANDMASTER_TRAINING_DALARAN, Unlimited);
+    yield return new(UPGRADE_R01I_ARCANIST_ADEPT_TRAINING_DALARAN, Unlimited);
+    yield return new(UPGRADE_R01V_GEOMANCER_ADEPT_TRAINING_DALARAN, Unlimited);
+    yield return new(UPGRADE_R00E_HYDROMANCER_ADEPT_TRAINING_DALARAN, Unlimited);
     yield return new(
-      UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
+      UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
       Unlimited);
     yield return new(UPGRADE_R06J_IMPROVED_SLOW_DALARAN, Unlimited);
     yield return new(UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, Unlimited);

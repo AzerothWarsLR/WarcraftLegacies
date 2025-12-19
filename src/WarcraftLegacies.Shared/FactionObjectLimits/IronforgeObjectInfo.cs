@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -18,7 +17,7 @@ public static class IronforgeObjectInfo
     yield return new(1751938413, Unlimited); // Lumber Mill
     yield return new(UNIT_H048_FORGEWORKS_IRONFORGE_RESEARCH, Unlimited);
     yield return new(UNIT_H042_PINNACLE_IRONFORGE_MAGIC, Unlimited);
-    yield return new(UNIT_HARM_WORKSHOP_IRONFORGE_SPECIALIST, Unlimited);
+    yield return new(UNIT_HARM_IRONFORGE_SPECIALIST, Unlimited);
     yield return new(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SIEGE, Unlimited);
     yield return new(UNIT_H07H_SCOUT_TOWER_IRONFORGE_TOWER, Unlimited);
     yield return new(UNIT_H07J_CANNON_TOWER_IRONFORGE_TOWER, Unlimited);
@@ -52,18 +51,18 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
-    yield return new(UPGRADE_R03H_ENGINEERING_GUILDMASTER_TRAINING_KHAZ_MODAN, Unlimited);
+    yield return new(UPGRADE_R03H_ENGINEERING_ADEPT_TRAINING_KHAZ_MODAN, Unlimited);
     yield return new(UPGRADE_R00F_MITHRIL_PLATED_ARMOR_IRONFORGE, Unlimited);
     yield return new(UPGRADE_RHFL_FLARE_IRONFORGE, Unlimited);
     yield return new(UPGRADE_RHFS_FRAGMENTATION_SHARDS_YELLOW_RESEARCH, Unlimited);
-    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
     yield return new(UPGRADE_RHRI_LONG_RIFLES_IRONFORGE, Unlimited);
     yield return new(UPGRADE_RHHB_STORM_HAMMERS_KHAZ_MODAN, Unlimited);
     yield return new(UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL, Unlimited);
     yield return new(UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN, Unlimited);
-    yield return new(UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
-    yield return new(UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
-    yield return new(UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_RHME_COPPER_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
+    yield return new(UPGRADE_RHAR_COPPER_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
+    yield return new(UPGRADE_R00V_RUNE_PRIEST_ADEPT_TRAINING_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R00Z_ARMOR_PENETRATION_ROUNDS_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, Unlimited);

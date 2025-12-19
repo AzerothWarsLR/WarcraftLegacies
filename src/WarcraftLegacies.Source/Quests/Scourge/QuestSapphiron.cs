@@ -25,7 +25,7 @@ public sealed class QuestSapphiron : QuestData
     _unitIsDeadObjective = new ObjectiveUnitIsDead(sapphiron);
     AddObjective(_unitIsDeadObjective);
     AddObjective(new ObjectiveControlLegend(kelthuzad, false));
-    AddObjective(new ObjectiveResearch(UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH));
+    AddObjective(new ObjectiveResearch(UPGRADE_R09X_FLIGHT_UNIVERSAL_UPGRADE, UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH));
     ResearchId = UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
   }
 

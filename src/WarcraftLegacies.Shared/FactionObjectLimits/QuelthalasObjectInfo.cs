@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -55,13 +54,13 @@ public static class QuelthalasObjectInfo
     yield return new(UPGRADE_R01S_RAPID_SHOTS_QUEL_THALAS, Unlimited);
     yield return new(UPGRADE_R00G_FEINT_QUEL_THALAS, Unlimited);
     yield return new(UPGRADE_R01R_ENCHANTED_BOWSTRINGS_QUEL_THALAS, Unlimited);
-    yield return new(UPGRADE_R029_MAGUS_MASTER_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R029_MAGUS_ADEPT_TRAINING_QUEL_THALAS, Unlimited);
     yield return new(UPGRADE_RHCD_CLOUD_QUEL_THALAS, Unlimited);
     yield return new(UPGRADE_RHSS_CONTROL_MAGIC_QUEL_THALAS, Unlimited);
-    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
     yield return new(UPGRADE_RHSE_MAGIC_SENTRY, Unlimited);
-    yield return new(UPGRADE_RHPT_PRIEST_ADEPT_TRAINING_PRIEST_MASTER_TRAINING_QUEL_THALAS, Unlimited);
-    yield return new(UPGRADE_RHST_SORCERESS_ADEPT_TRAINING_SORCERESS_MASTER_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_RHPT_PRIEST_ADEPT_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_RHST_SORCERESS_ADEPT_TRAINING_QUEL_THALAS, Unlimited);
     yield return new(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, Unlimited);
     yield return new(UPGRADE_R02Y_IMPROVED_GLAIVES_QUEL_THALAS, Unlimited);
   }

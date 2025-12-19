@@ -105,7 +105,7 @@ public sealed class BlackEmpire : Faction
       ProcChance = 1.0f
     }, UNIT_U029_STYGIAN_HULK_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new NoTargetSpellOnAttack(ABILITY_ABEV_SHADOW_VEIL)
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnAttack(ABILITY_ABEV_SHADOW_VEIL_ICON)
     {
       DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
       DummyOrderId = ORDER_HOWL_OF_TERROR,
@@ -113,14 +113,14 @@ public sealed class BlackEmpire : Faction
       RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
     }, UNIT_N0AH_DEFORMED_CHIMERA_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABPF_PARALYSING_FEAR)
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABPF_PARALYSING_FEAR_ICON)
     {
       DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
       DummyOrderId = ORDER_SLOW,
       ProcChance = 0.2f
     }, UNIT_O01G_BRUTE_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABGP_GREATER_PARALYSING_FEAR)
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABGP_GREATER_PARALYSING_FEAR_ICON)
     {
       DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,
       DummyOrderId = ORDER_SLOW,

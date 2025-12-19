@@ -19,7 +19,7 @@ public sealed class VeteranFootmen : Research
   public override void OnResearch(player researchingPlayer)
   {
     var faction = researchingPlayer.GetPlayerData().Faction;
-    faction?.ModObjectLimit(UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.Unlimited);
+    faction?.ModObjectLimit(UNIT_HFOO_LORDAERON, -Faction.Unlimited);
     faction?.ModObjectLimit(UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.Unlimited);
   }
 }

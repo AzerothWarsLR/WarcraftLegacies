@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -54,14 +53,14 @@ public static class WarsongObjectInfo
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1); //Rokhan
     yield return new(UNIT_N0CN_FOREMAN_GLIBBS_WARSONG_DEMI, 1);
     yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1);
-    yield return new(UPGRADE_R00J_OGRE_MAGRI_MASTER_TRAINING_WARSONG, Unlimited);
+    yield return new(UPGRADE_R00J_OGRE_MAGI_ADEPT_TRAINING_WARSONG, Unlimited);
     yield return new(UPGRADE_ROBS_BRUTE_STRENGTH_WARSONG, Unlimited);
     yield return new(1383036018, Unlimited); // Troll Regeneration
     yield return new(UPGRADE_R01J_IMPROVED_ENSNARE_WARSONG, Unlimited);
-    yield return new(UPGRADE_R02I_WARLOCK_MASTER_TRAINING_WARSONG, Unlimited);
-    yield return new(UPGRADE_R03Q_SHADOWPRIEST_MASTER_TRAINING_WARSONG, Unlimited);
+    yield return new(UPGRADE_R02I_WARLOCK_ADEPT_TRAINING_WARSONG, Unlimited);
+    yield return new(UPGRADE_R03Q_SHADOWPRIEST_ADEPT_TRAINING_WARSONG, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
-    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_IMPROVED_SPIKED_BARRICADES_ADVANCED_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
     yield return new(UPGRADE_R016_QUEST_COMPLETED_KEEPER_OF_THE_ETERNAL_WATCH_STORMWIND, Unlimited);
     yield return new(UPGRADE_R019_IMPROVED_SHOCKWAVE_WARSONG, Unlimited);
     yield return new(UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, Unlimited);

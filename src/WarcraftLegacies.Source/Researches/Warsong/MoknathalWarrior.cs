@@ -21,7 +21,7 @@ public sealed class MoknathalWarrior : Research
     var faction = researchingPlayer.GetPlayerData().Faction;
     if (faction != null)
     {
-      faction.ModObjectLimit(UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.Unlimited);
+      faction.ModObjectLimit(UNIT_HFOO_LORDAERON, -Faction.Unlimited);
       faction.ModObjectLimit(UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.Unlimited);
     }
   }

@@ -37,7 +37,7 @@ public static class LordaeronSpellSetup
     };
     SpellRegistry.Register(solarJudgement);
 
-    var exactJustice = new ExactJusticeSpell(ABILITY_A097_EXACT_JUSTICE_PURPLE_UTHER)
+    var exactJustice = new ExactJusticeSpell(ABILITY_A097_EXACT_JUSTICE_UTHER)
     {
       DamageBase = 0,
       DamageLevel = 200,

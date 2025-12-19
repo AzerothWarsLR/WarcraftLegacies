@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -57,10 +56,10 @@ public static class FelHordeObjectInfo
     yield return new(UPGRADE_R066_BURNING_OIL_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
-    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_IMPROVED_SPIKED_BARRICADES_ADVANCED_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
-    yield return new(UPGRADE_R024_NECROLYTE_MASTER_TRAINING_FEL_HORDE, Unlimited);
-    yield return new(UPGRADE_R00M_FEL_WARLOCK_GRANDMASTER_TRAINING_FEL_HORDE, Unlimited);
-    yield return new(UPGRADE_R03I_EREDAR_OCCULTIST_MASTER_TRAINING_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_R024_NECROLYTE_ADEPT_TRAINING_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R00M_FEL_WARLOCK_ADEPT_TRAINING_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R03I_EREDAR_OCCULTIST_ADEPT_TRAINING_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00Y_IMPROVED_FRENZY_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R03L_IMPROVED_HEAL_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R036_INCINERATE_FEL_HORDE, Unlimited);
@@ -70,7 +69,7 @@ public static class FelHordeObjectInfo
     yield return new(UPGRADE_R035_IMPROVED_FIREBOLT_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
     yield return new(UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, Unlimited);
-    yield return new(UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, Unlimited);
+    yield return new(UPGRADE_R09W_FELSTEEL_REFINING_FEL_HORDE, Unlimited);
     yield return new(UNIT_N05R_FELGUARD_DEMON_GATE_FEL_T2_BLOODFIEND, Unlimited);
     yield return new(UNIT_N06H_PIT_FIEND_DEMON_GATE_FEL_T2_PITFIEND, Unlimited);
     yield return new(UNIT_N07O_TERRORGUARD_DEMON_GATE_FEL_T2_TERROR_GUARD, Unlimited);

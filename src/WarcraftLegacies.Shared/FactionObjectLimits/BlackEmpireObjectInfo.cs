@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -50,9 +49,9 @@ public static class BlackEmpireObjectInfo
     yield return new(UNIT_U00P_LIEUTENANT_OF_N_ZOTH_NZOTH, 1);
     yield return new(UNIT_U02B_N_RAQI_ABERRATION_NZOTH, 1);
     yield return new(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH, 1);
-    yield return new(UPGRADE_RBEF_FATEWEAVER_MASTER_TRAINING_BLACKEMPIRE, Unlimited);
-    yield return new(UPGRADE_RBEM_MINDLASHER_MASTER_TRAINING_BLACKEMPIRE, Unlimited);
-    yield return new(UPGRADE_RBEH_HERALD_MASTER_TRAINING_BLACKEMPIRE, Unlimited);
+    yield return new(UPGRADE_RBEF_FATEWEAVER_ADEPT_TRAINING_BLACKEMPIRE, Unlimited);
+    yield return new(UPGRADE_RBEM_MINDLASHER_ADEPT_TRAINING_BLACKEMPIRE, Unlimited);
+    yield return new(UPGRADE_RBEH_HERALD_ADEPT_TRAINING_BLACKEMPIRE, Unlimited);
     yield return new(UPGRADE_RBEP_PARALYSING_FEAR_BLACK_EMPIRE, Unlimited);
     yield return new(UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE, Unlimited);
     yield return new(UPGRADE_RBEA_ACCELERATED_CYCLE_BLACK_EMPIRE_STYGIAN_HULK, Unlimited);

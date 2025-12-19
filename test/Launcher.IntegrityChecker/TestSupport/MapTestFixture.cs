@@ -14,7 +14,7 @@ public sealed class MapTestFixture
 {
   private static readonly int[] _utilityUnitIds =
   [
-      Constants.UNIT_U00X_DUMMY_CASTER
+      Units.UNIT_U00X_DUMMY_CASTER
   ];
 
   public Map Map { get; }

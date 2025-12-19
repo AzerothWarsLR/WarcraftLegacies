@@ -45,7 +45,7 @@ public sealed class QuestStormwindCity : QuestData
   protected override string RewardDescription =>
     "Gain control of all units in Stormwind, " +
     $"learn to train Varian from the {GetObjectName(UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR)}, " +
-    $"learn to cast {GetObjectName(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND)} from {GetObjectName(UNIT_H06M_KEEP_STORMWIND_T2)}s and {GetObjectName(UNIT_H06N_CASTLE_STORMWIND_T3)}s, " +
+    $"learn to cast {GetObjectName(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND)} from {GetObjectName(UNIT_H06M_STORMWIND_T2)}s and {GetObjectName(UNIT_H06N_CASTLE_STORMWIND_T3)}s, " +
     $"and acquire the {RewardPowerName} Power";
 
   /// <inheritdoc />

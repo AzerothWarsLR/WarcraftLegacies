@@ -42,7 +42,7 @@ public static class FrostwolfSpellSetup
     };
     SpellRegistry.Register(cripplingShout);
 
-    ParentChildResearchSystem.Register(UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
+    ParentChildResearchSystem.Register(UPGRADE_RHME_COPPER_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
       UPGRADE_R06C_KABOOM_LEVEL_UP);
 
     SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)

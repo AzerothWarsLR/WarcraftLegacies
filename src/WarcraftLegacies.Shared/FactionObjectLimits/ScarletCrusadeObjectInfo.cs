@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -10,7 +9,7 @@ public static class ScarletCrusadeObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H0BM_TOWN_HALL_SCARLET_T1, Unlimited);
-    yield return new(UNIT_H0BN_KEEP_SCARLET_T2, Unlimited);
+    yield return new(UNIT_H0BN_SCARLET_T2, Unlimited);
     yield return new(UNIT_H0BO_CASTLE_SCARLET_T3, Unlimited);
     yield return new(UNIT_H0BP_FARMSTEAD_SCARLET_FARM, Unlimited);
     yield return new(UNIT_H0A3_BLACKSMITH_SCARLET_RESEARCH, Unlimited);
@@ -48,11 +47,11 @@ public static class ScarletCrusadeObjectInfo
     yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
-    yield return new(UPGRADE_R05D_MONK_MASTER_TRAINING_SCARLET, Unlimited);
-    yield return new(UPGRADE_R04F_INQUISITOR_MASTER_TRAINING_SCARLET_CRUSADE, Unlimited);
+    yield return new(UPGRADE_R05D_MONK_ADEPT_TRAINING_SCARLET, Unlimited);
+    yield return new(UPGRADE_R04F_INQUISITOR_INITIATE_TRAINING_SCARLET_CRUSADE, Unlimited);
     yield return new(UPGRADE_RHSE_MAGIC_SENTRY, Unlimited);
     yield return new(
-      UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
+      UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
       Unlimited);
   }
 }

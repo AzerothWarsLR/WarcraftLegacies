@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -23,7 +22,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NMRB_STEAMVAULT_ILLIDARI_SHOP, Unlimited);
     yield return new(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SIEGE, Unlimited);
     yield return new(UNIT_E020_ANCIENT_SHIPYARD_ILLIDARI_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_WORKER, Unlimited, UnitCategory.Worker);
+    yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, UnitCategory.Worker);
     yield return new(UNIT_NMYR_NAGA_MYRMIDON_ILLIDARI, Unlimited);
     yield return new(UNIT_NSNP_SNAP_DRAGON_ILLIDARI, Unlimited);
     yield return new(UNIT_NNSW_SIREN_ILLIDARI, Unlimited);
@@ -48,7 +47,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1);
     yield return new(UNIT_NAKA_ELDER_SAGE_ILLIDARI, 1);
     yield return new(UPGRADE_RNSW_SIREN_ADEPT_TRAINING, Unlimited);
-    yield return new(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, Unlimited);
+    yield return new(UPGRADE_R02V_SHADOWCASTER_ADEPT_TRAINING, Unlimited);
     yield return new(UPGRADE_ZBSI_SEA_WITCHES_ILLIDARI, Unlimited);
     yield return new(UPGRADE_ZB9L_COILFANG_SUMMONERS_ILLIDARI, Unlimited);
 
