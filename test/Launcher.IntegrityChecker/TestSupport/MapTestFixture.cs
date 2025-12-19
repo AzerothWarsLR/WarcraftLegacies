@@ -1,7 +1,6 @@
 ﻿using System.Text;
 using Launcher.Extensions;
 using Launcher.Services;
-using Launcher.Settings;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.CodeAnalysis.Jass.Extensions;
@@ -28,18 +27,19 @@ public sealed class MapTestFixture
 
   public MapTestFixture()
   {
-    var appSettings = AppSettings.Current;
     (Map, _) = MapDataProvider.GetMapData();
     ObjectDatabase = Map.GetObjectDatabaseFromMap();
-    var advancedMapBuilder = new AdvancedMapBuilder(AdvancedMapBuilderOptions.Create("WarcraftLegacies"));
+    var sharedPathOptions = SharedPathOptions.Create("WarcraftLegacies");
+    var advancedMapBuilder = new AdvancedMapBuilder(AdvancedMapBuilderOptions.Create(sharedPathOptions));
     advancedMapBuilder.AddCSharpCode(Map);
 
     var scriptBuilder = new StringBuilder();
 
-    var srcPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.SrcPath,
-      "WarcraftLegacies.Source");
-    var allScriptFiles = Directory.EnumerateFiles(srcPath, "*.cs", SearchOption.AllDirectories).ToList();
-    allScriptFiles.Remove(Path.Combine(srcPath, "Constants.cs"));
+    var allScriptFiles = Directory
+      .EnumerateFiles(sharedPathOptions.SourceProjectPath, "*.cs", SearchOption.AllDirectories)
+      .Where(f => !f.EndsWith(".g.cs", StringComparison.OrdinalIgnoreCase))
+      .ToList();
+
     foreach (var fileName in allScriptFiles)
     {
       scriptBuilder.Append(File.ReadAllText(fileName));

@@ -1,6 +1,7 @@
 ﻿using System.CommandLine;
 using System.IO;
 using MapBuildCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapBuildContext>;
+using MapGenerateCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapGenerateContext>;
 using MapSerializeCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapSerializationContext>;
 
 namespace Launcher.Commands;
@@ -51,5 +52,10 @@ internal static class MapCommandBuilder
   public static Command Serialize()
   {
     return new MapSerializeCommand("serialize", "Converts a Warcraft 3 map file into raw map data.");
+  }
+
+  public static Command Generate()
+  {
+    return new MapGenerateCommand("constants", "Produces Constants and Regions C# files for Object Editor objects and Regions in map data.");
   }
 }

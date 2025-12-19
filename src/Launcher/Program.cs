@@ -24,6 +24,11 @@ internal static class Program
       new Command("w3x-to-json")
       {
         MapCommandBuilder.Serialize()
+      },
+
+      new Command("generate")
+      {
+        MapCommandBuilder.Generate()
       }
     ];
   }

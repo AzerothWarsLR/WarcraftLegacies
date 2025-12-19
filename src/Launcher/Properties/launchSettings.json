@@ -15,6 +15,10 @@
     "Convert MapData to W3X": {
       "commandName": "Project",
       "commandLineArgs": "Launcher json-to-w3x build WarcraftLegacies"
+    },
+    "Generate Constants": {
+      "commandName": "Project",
+      "commandLineArgs": "Launcher generate constants WarcraftLegacies"
     }
   }
 }

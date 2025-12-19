@@ -15,4 +15,6 @@ public static class PathConventions
   public const string PublishedPath = $"{MapsPath}/published";
 
   public const string SourceProjectSuffix = ".Source";
+
+  public const string SharedProjectSuffix = ".Shared";
 }
