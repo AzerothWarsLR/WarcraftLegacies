@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -49,9 +48,9 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_ETYR_HIGH_PRIESTESS_OF_ELUNE_SENTINELS, 1);
     yield return new(UNIT_E002_GENERAL_OF_THE_SENTINEL_ARMY_SENTINELS, 1);
     yield return new(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS, 1);
-    yield return new(UPGRADE_R00S_PRIESTESS_MASTER_TRAINING_SENTINELS, Unlimited);
+    yield return new(UPGRADE_R00S_PRIESTESS_ADEPT_TRAINING_SENTINELS, Unlimited);
     yield return new(UPGRADE_R064_SENTINEL_FORTIFICATIONS_SENTINELS, Unlimited);
-    yield return new(UPGRADE_R01W_MOONHUNTER_MASTER_TRAINING_SENTINELS, Unlimited);
+    yield return new(UPGRADE_R01W_MOONHUNTER_ADEPT_TRAINING_SENTINELS, Unlimited);
     yield return new(UPGRADE_REIB_IMPROVED_BOWS_LIGHT_BLUE_RESEARCH, Unlimited);
     yield return new(UPGRADE_REUV_ULTRAVISION_LIGHT_BLUE_RESEARCH_BROWN_RESEARCH, Unlimited);
     yield return new(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH, Unlimited);

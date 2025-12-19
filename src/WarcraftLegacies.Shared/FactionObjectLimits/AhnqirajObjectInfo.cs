@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -33,9 +32,9 @@ public static class AhnqirajObjectInfo
     yield return new(UNIT_U02S_ANCIENT_SAND_WORM, 1);
     yield return new(UNIT_E005_THE_PROPHET, 1);
     yield return new(UNIT_U00Z_OBSIDIAN_DESTROYER, 1);
-    yield return new(UPGRADE_RS01_TUNNELER_MASTER_TRAINING_CTHUN, Unlimited);
-    yield return new(UPGRADE_RZ02_SHADOW_WEAVER_MASTER_TRAINING_CTHUN, Unlimited);
-    yield return new(UPGRADE_RL11_TOL_VIR_STATUE_MASTER_TRAINING_CTHUN, Unlimited);
+    yield return new(UPGRADE_RS01_TUNNELER_ADEPT_TRAINING_CTHUN, Unlimited);
+    yield return new(UPGRADE_RZ02_SHADOW_WEAVER_ADEPT_TRAINING_CTHUN, Unlimited);
+    yield return new(UPGRADE_RL11_TOL_VIR_STATUE_ADEPT_TRAINING_CTHUN, Unlimited);
     yield return new(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, Unlimited);
     yield return new(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, Unlimited);
     yield return new(UPGRADE_RHL9_WEB_CTHUN, Unlimited);

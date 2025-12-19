@@ -62,14 +62,14 @@ public sealed class QuestShoresOfNorthrend : QuestData
       CreateStructureForced(completingFaction.Player, UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, 800, 15776, 4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HCAS_CASTLE_LORDAERON_T3, -512, 15744, 4.712389f * MathEx.DegToRad, 512);
       CreateStructureForced(completingFaction.Player, UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH, 672, 16928, 4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(completingFaction.Player, UNIT_HFOO_FOOTMAN_LORDAERON, 771, 16064, 0.6401012f * MathEx.DegToRad, 256);
+      CreateStructureForced(completingFaction.Player, UNIT_HFOO_LORDAERON, 771, 16064, 0.6401012f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HGTW_GUARD_TOWER_LORDAERON_TOWER, -448, 16128, 4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HWTW_SCOUT_TOWER_LORDAERON_TOWER, 704, 17152, 4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HHOU_FARM_LORDAERON_FARM, -1088, 16576, 4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_H035_ARCANE_STUDY_LORDAERON_MAGIC, -928, 16736, 4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(completingFaction.Player, UNIT_HFOO_FOOTMAN_LORDAERON, -174, 16631, 3.987584f * MathEx.DegToRad, 256);
-      CreateStructureForced(completingFaction.Player, UNIT_HFOO_FOOTMAN_LORDAERON, -388, 16871, 4.113693f * MathEx.DegToRad, 256);
-      CreateStructureForced(completingFaction.Player, UNIT_HFOO_FOOTMAN_LORDAERON, -561, 16521, 6.02386f * MathEx.DegToRad, 256);
+      CreateStructureForced(completingFaction.Player, UNIT_HFOO_LORDAERON, -174, 16631, 3.987584f * MathEx.DegToRad, 256);
+      CreateStructureForced(completingFaction.Player, UNIT_HFOO_LORDAERON, -388, 16871, 4.113693f * MathEx.DegToRad, 256);
+      CreateStructureForced(completingFaction.Player, UNIT_HFOO_LORDAERON, -561, 16521, 6.02386f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_H0B0_GALLEY_ALLIANCE, 251, 15569, 5.33097f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH, 800, 16288, 4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HGTW_GUARD_TOWER_LORDAERON_TOWER, 1472, 16384, 4.712389f * MathEx.DegToRad, 256);

@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -10,7 +9,7 @@ public static class LordaeronObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Unlimited);
-    yield return new(UNIT_HKEE_KEEP_LORDAERON_T2, Unlimited);
+    yield return new(UNIT_HKEE_LORDAERON_T2, Unlimited);
     yield return new(UNIT_HCAS_CASTLE_LORDAERON_T3, Unlimited);
     yield return new(UNIT_HHOU_FARM_LORDAERON_FARM, Unlimited);
     yield return new(UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR, Unlimited);
@@ -27,7 +26,7 @@ public static class LordaeronObjectInfo
     yield return new(UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST, Unlimited);
     yield return new(UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE, Unlimited);
     yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited);
-    yield return new(UNIT_HFOO_FOOTMAN_LORDAERON, Unlimited);
+    yield return new(UNIT_HFOO_LORDAERON, Unlimited);
     yield return new(UNIT_HKNI_KNIGHT_LORDAERON, Unlimited);
     yield return new(UNIT_NCHP_MAGE_LORDAERON, Unlimited);
     yield return new(UNIT_H00F_PALADIN_LORDAERON, 6);
@@ -53,11 +52,11 @@ public static class LordaeronObjectInfo
     yield return new(UNIT_H01J_THE_ASHBRINGER_LORDAERON, 1);
     yield return new(UNIT_HLGR_GRAND_MARSHAL_SCARLET, 1);
     yield return new(UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING, 1);
-    yield return new(UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, Unlimited);
-    yield return new(UPGRADE_R00I_MAGE_MASTER_TRAINING_LORDAERON, Unlimited);
+    yield return new(UPGRADE_R02E_LIGHT_S_PRAISE_ADEPT_TRAINING_ARATHOR_LORDAERON, Unlimited);
+    yield return new(UPGRADE_R00I_MAGE_ADEPT_TRAINING_LORDAERON, Unlimited);
     yield return new(UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, Unlimited);
     yield return new(
-      UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
+      UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
       Unlimited);
     yield return new(UPGRADE_R04D_SEAL_OF_RIGHTEOUSNESS_LORDAERON, Unlimited);
     yield return new(UPGRADE_R01P_ENSNARE_LORDAERON, Unlimited);

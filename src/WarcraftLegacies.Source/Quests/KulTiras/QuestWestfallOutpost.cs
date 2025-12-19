@@ -17,7 +17,7 @@ public sealed class QuestWestfallOutpost : QuestData
     AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", UNIT_H06R_GARRISON_KULTIRAS_BARRACKS, 2));
     AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", UNIT_H07Q_SCHOOL_OF_THE_TIDES_KULTIRAS_MAGIC));
     AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", UNIT_H062_TOWN_HALL_KULTIRAS_T1));
-    AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", UNIT_H07P_WORKSHOP_KULTIRAS_SPECIALIST));
+    AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", UNIT_H07P_KULTIRAS_SPECIALIST));
     ResearchId = UPGRADE_R06T_QUEST_COMPLETED_CONTINENTAL_OUTPOST;
   }
 

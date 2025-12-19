@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -10,7 +9,7 @@ public static class StormwindObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H06K_TOWN_HALL_STORMWIND_T1, Unlimited);
-    yield return new(UNIT_H06M_KEEP_STORMWIND_T2, Unlimited);
+    yield return new(UNIT_H06M_STORMWIND_T2, Unlimited);
     yield return new(UNIT_H06N_CASTLE_STORMWIND_T3, Unlimited);
     yield return new(UNIT_H072_HOMESTEAD_STORMWIND_FARM, Unlimited);
     yield return new(UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR, Unlimited);
@@ -55,11 +54,11 @@ public static class StormwindObjectInfo
     yield return new(UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_STORMWIND, 1);
     yield return new(UNIT_H05Y_LORD_WIZARD_STORMWIND, 1);
     yield return new(UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND, 1);
-    yield return new(UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, Unlimited);
-    yield return new(UPGRADE_R005_CLERGYMAN_MASTER_TRAINING_ARATHOR, Unlimited);
+    yield return new(UPGRADE_R02E_LIGHT_S_PRAISE_ADEPT_TRAINING_ARATHOR_LORDAERON, Unlimited);
+    yield return new(UPGRADE_R005_CLERGYMAN_ADEPT_TRAINING_ARATHOR, Unlimited);
     yield return new(UPGRADE_R02B_CHAINMAIL_LAYERING_ARATHOR, Unlimited);
     yield return new(UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, Unlimited);
-    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
     yield return new(UPGRADE_RHSE_MAGIC_SENTRY, Unlimited);
     yield return new(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
     yield return new(UPGRADE_R02Z_REFLECTIVE_PLATING_ARATHOR_T2, Unlimited);

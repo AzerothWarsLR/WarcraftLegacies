@@ -17,7 +17,7 @@ public sealed class FlightMigration : IMapMigration
   {
     var units = objectDatabase.GetUnits().ToList();
     var flight =
-      objectDatabase.TryGetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
+      objectDatabase.TryGetUpgrade(UPGRADE_R09X_FLIGHT_UNIVERSAL_UPGRADE.InvertEndianness());
 
     if (flight == null)
     {

@@ -14,7 +14,7 @@ public sealed class QuestEyeofSargeras : QuestData
   private readonly LegendaryHero _illidan;
   private const int PermanentMetamorphosisId = ABILITY_ZBPA_METAMORPHOSIS_PERMANENT_ILLIDAN;
   private const int ActiveMetamorphosisId = ABILITY_AEVI_METAMORPHOSIS_ILLIDAN;
-  private const int MetamorphosisBuff = BUFF_BEME_ILLIDAN;
+  private const int MetamorphosisBuff = BUFF_BEME_METAMORPHOSIS_ILLIDAN;
 
   public QuestEyeofSargeras(Artifact eyeOfSargeras, LegendaryHero illidan) : base("The Eye of Sargeras",
     "Illidan has long thirsted for power, and no artifact can match the destructive energies of the Dark Titan's eye. Though far too powerful to be consumed in its entirety, merely possessing the artifact will unleash Illidan's true demonic potential.",

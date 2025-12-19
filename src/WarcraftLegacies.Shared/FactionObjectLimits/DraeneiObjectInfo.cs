@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -48,8 +47,8 @@ public static class DraeneiObjectInfo
     yield return new(UNIT_E01I_AGELESS_ONE_DRUIDS, 1);
     yield return new(UNIT_E01J_HIGH_SHAMAN_DRUIDS, 1);
     yield return new(UNIT_H09M_THE_NAARU_DRAENEI, 1);
-    yield return new(UPGRADE_R078_ELEMENTALIST_MASTER_TRAINING_DRAENEI, Unlimited);
-    yield return new(UPGRADE_R07C_LUMINARCH_MASTER_TRAINING_DRAENEI, Unlimited);
+    yield return new(UPGRADE_R078_ELEMENTALIST_ADEPT_TRAINING_DRAENEI, Unlimited);
+    yield return new(UPGRADE_R07C_LUMINARCH_ADEPT_TRAINING_DRAENEI, Unlimited);
 
     yield return new(UPGRADE_RD01_CRYSTAL_SHIELDS_DRAENEI, Unlimited);
     yield return new(UPGRADE_RD02_KALIMDOR_WILDS_ACCLIMATIZATION_DRAENEI, Unlimited);

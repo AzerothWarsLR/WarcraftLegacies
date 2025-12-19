@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -47,12 +46,12 @@ public static class DruidsObjectInfo
     yield return new(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1);
     yield return new(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1);
     yield return new(UNIT_H04U_DEMIGOD_DRUIDS, 1);
-    yield return new(UPGRADE_REDT_DRUID_OF_THE_TALON_ADVANCED_TRAINING_DRUIDS, Unlimited);
+    yield return new(UPGRADE_REDT_DRUID_OF_THE_TALON_ADEPT_TRAINING_DRUIDS, Unlimited);
     yield return new(UPGRADE_RENB_NATURE_S_BLESSING_BROWN_RESEARCH, Unlimited);
     yield return new(UPGRADE_RERS_RESISTANT_SKIN_MOUNTAIN_GIANT, Unlimited);
     yield return new(UPGRADE_REUV_ULTRAVISION_LIGHT_BLUE_RESEARCH_BROWN_RESEARCH, Unlimited);
     yield return new(UPGRADE_REWS_WELL_SPRING, Unlimited);
-    yield return new(UPGRADE_REDC_DRUID_OF_THE_CLAW_ADEPT_TRAINING_DRUID_OF_THE_CLAW_MASTER_TRAINING_DRUIDS, Unlimited);
+    yield return new(UPGRADE_REDC_DRUID_OF_THE_CLAW_ADEPT_TRAINING_DRUIDS, Unlimited);
     yield return new(UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Unlimited);
     yield return new(UPGRADE_R02G_EMERALD_FLAMES_DRUIDS, Unlimited);
     yield return new(UPGRADE_R05X_BLESSING_OF_URSOL_DRUIDS, Unlimited);

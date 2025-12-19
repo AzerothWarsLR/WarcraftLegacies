@@ -1,5 +1,4 @@
 ﻿using MacroTools.Shared;
-using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -10,7 +9,7 @@ public static class GilneasObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H01R_TOWN_HALL_GILNEAS_T1, Unlimited, UnitCategory.TownHall); //Townhall
-    yield return new(UNIT_H023_KEEP_GILNEAS_T2, Unlimited); //Keep
+    yield return new(UNIT_H023_GILNEAS_T2, Unlimited); //Keep
     yield return new(UNIT_H02C_CASTLE_GILNEAS_T3, Unlimited); //Castle
     yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, UnitCategory.GilneasManor); //Greymane Manor
     yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, UnitCategory.LightHouse); // Lighthouse
@@ -61,11 +60,11 @@ public static class GilneasObjectInfo
     yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
-    yield return new(UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, Unlimited);
-    yield return new(UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, Unlimited);
+    yield return new(UPGRADE_R04O_CLERIC_ADEPT_TRAINING_GILNEAS, Unlimited);
+    yield return new(UPGRADE_R04P_DRUID_OF_THE_SCYTHE_ADEPT_TRAINING_GILNEAS, Unlimited);
     yield return new(
-      UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
+      UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH,
       Unlimited);
-    yield return new(UPGRADE_R09M_HARVEST_WITCH_MASTER_TRAINING_GILNEAS, Unlimited);
+    yield return new(UPGRADE_R09M_HARVEST_WITCH_ADEPT_TRAINING_GILNEAS, Unlimited);
   }
 }
