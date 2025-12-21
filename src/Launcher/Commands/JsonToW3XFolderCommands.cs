@@ -3,7 +3,6 @@ using System.CommandLine;
 using System.IO;
 using AutoMapper;
 using Launcher.Services;
-using Launcher.Settings;
 
 namespace Launcher.Commands;
 
@@ -27,40 +26,32 @@ public static class JsonToW3XFolderCommands
 
   private static void Run(string mapName, OptionsFactory optionsFactory)
   {
-    var appSettings = AppSettings.Load();
+    var sharedOptionsPath = SharedPathOptions.Create(mapName);
+    var advancedMapBuilder = new AdvancedMapBuilder(optionsFactory(sharedOptionsPath, mapName));
+
     var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
     var mapper = new Mapper(autoMapperConfig);
     var conversionService = new MapDataToMapConverter(mapper);
-
-    var advancedMapBuilder = new AdvancedMapBuilder(optionsFactory(mapName, appSettings));
-    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName);
-
-    var (mapFolder, additionalFileDirectories) = conversionService.ConvertToMapAndAdditionalFiles(mapDataDirectory);
+    var (mapFolder, additionalFileDirectories) = conversionService.ConvertToMapAndAdditionalFiles(sharedOptionsPath.MapDataPath);
     advancedMapBuilder.SaveMapDirectory(mapFolder, additionalFileDirectories);
   }
 
-  private static AdvancedMapBuilderOptions BuildFolderOutputOptions(string mapName, AppSettings appSettings)
+  private static AdvancedMapBuilderOptions BuildFolderOutputOptions(SharedPathOptions sharedPathOptions, string mapName)
   {
-    return new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, mapName)
-    {
-      Version = appSettings.MapSettings.Version,
-      OutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapsPath, $"{mapName}.w3x"),
-      ShouldBackup = true
-    };
+    var options = AdvancedMapBuilderOptions.Create(sharedPathOptions);
+    options.ShouldBackup = true;
+    return options;
   }
 
-  private static AdvancedMapBuilderOptions BuildTestOutputOptions(string mapName, AppSettings appSettings)
+  private static AdvancedMapBuilderOptions BuildTestOutputOptions(SharedPathOptions sharedPathOptions, string mapName)
   {
-    return new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, mapName)
-    {
-      TestingPlayerSlot = appSettings.CompilerSettings.TestingPlayerSlot,
-      Warcraft3ExecutablePath = appSettings.CompilerSettings.Warcraft3ExecutablePath,
-      ShouldTranspile = true,
-      ShouldMigrate = true,
-      Version = appSettings.MapSettings.Version,
-      OutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.ArtifactsPath, $"{mapName}{appSettings.MapSettings.Version}.w3x"),
-    };
+    var options = AdvancedMapBuilderOptions.Create(sharedPathOptions);
+    options.ShouldLaunch = true;
+    options.ShouldTranspile = true;
+    options.ShouldMigrate = true;
+    options.OutputPath = Path.Combine(options.ScriptArtifactPath, $"{mapName}.w3x");
+    return options;
   }
 
-  private delegate AdvancedMapBuilderOptions OptionsFactory(string rootName, AppSettings appSettings);
+  private delegate AdvancedMapBuilderOptions OptionsFactory(SharedPathOptions sharedPathOptions, string mapName);
 }

@@ -69,7 +69,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     map.BuildDirectory(options.OutputPath, additionalFiles);
 
     Console.WriteLine($"Exported map folder to {Path.GetFullPath(options.OutputPath)}.");
-    if (options.Warcraft3ExecutablePath != null)
+    if (options.ShouldLaunch)
     {
       LaunchGame(options.Warcraft3ExecutablePath, options.OutputPath);
     }
@@ -80,12 +80,12 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
   /// </summary>
   private void SupplementMap(Map map)
   {
-    if (options.Version != null)
+    if (options.ShouldSetVersion)
     {
       SetMapTitles(map, options.Version);
     }
 
-    if (options.TestingPlayerSlot != 0)
+    if (options.ShouldLaunch && options.TestingPlayerSlot != 0)
     {
       SetTestPlayerSlot(map, options.TestingPlayerSlot);
     }

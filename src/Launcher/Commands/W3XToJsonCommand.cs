@@ -29,12 +29,10 @@ public static class W3XToJsonCommand
   {
     var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
     var mapper = new Mapper(autoMapperConfig);
-    var appSettings = AppSettings.Load();
+    var appSettings = AppSettings.Current;
 
-    var baseMapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapsPath, $"{mapName}.w3x");
-    var outputDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName);
-
-    new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
+    var sharedPathOptions = SharedPathOptions.Create(mapName);
+    new W3XToMapDataConverter(mapper).Convert(sharedPathOptions.OutputPath, sharedPathOptions.MapDataPath);
 
     GenerateConstants(appSettings, mapName);
   }

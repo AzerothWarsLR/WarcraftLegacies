@@ -28,10 +28,10 @@ public sealed class MapTestFixture
 
   public MapTestFixture()
   {
-    var appSettings = AppSettings.Load();
+    var appSettings = AppSettings.Current;
     (Map, _) = MapDataProvider.GetMapData(appSettings);
     ObjectDatabase = Map.GetObjectDatabaseFromMap();
-    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, "WarcraftLegacies"));
+    var advancedMapBuilder = new AdvancedMapBuilder(AdvancedMapBuilderOptions.Create("WarcraftLegacies"));
     advancedMapBuilder.AddCSharpCode(Map);
 
     var scriptBuilder = new StringBuilder();

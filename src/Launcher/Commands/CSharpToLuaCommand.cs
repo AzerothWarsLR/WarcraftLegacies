@@ -1,8 +1,6 @@
 ﻿#nullable enable
 using System.CommandLine;
-using System.IO;
 using Launcher.Services;
-using Launcher.Settings;
 using War3Net.Build;
 
 namespace Launcher.Commands;
@@ -24,12 +22,10 @@ internal static class CSharpToLuaCommand
 
   private static void Run(string mapName)
   {
-    var appSettings = AppSettings.Load();
-    var mapPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapsPath, $"{mapName}.w3x");
-    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, mapName)
-    {
-      ScriptArtifactPath = mapPath
-    });
-    advancedMapBuilder.AddCSharpCode(Map.Open(mapPath));
+    var sharedPathOptions = SharedPathOptions.Create(mapName);
+    var advancedMapBuilderOptions = AdvancedMapBuilderOptions.Create(sharedPathOptions);
+    advancedMapBuilderOptions.ScriptArtifactPath = advancedMapBuilderOptions.OutputPath;
+    var advancedMapBuilder = new AdvancedMapBuilder(advancedMapBuilderOptions);
+    advancedMapBuilder.AddCSharpCode(Map.Open(sharedPathOptions.OutputPath));
   }
 }

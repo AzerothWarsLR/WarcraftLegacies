@@ -1,9 +1,7 @@
 ﻿#nullable enable
 using System.CommandLine;
-using System.IO;
 using AutoMapper;
 using Launcher.Services;
-using Launcher.Settings;
 
 namespace Launcher.Commands;
 
@@ -23,22 +21,18 @@ public static class PublishCommand
 
   private static void Run(string mapName)
   {
-    var appSettings = AppSettings.Load();
+    var sharedPathOptions = SharedPathOptions.Create(mapName, true);
+
+    var advancedMapBuilderOptions = AdvancedMapBuilderOptions.Create(sharedPathOptions);
+    advancedMapBuilderOptions.ShouldMigrate = true;
+    advancedMapBuilderOptions.ShouldSetVersion = true;
+    advancedMapBuilderOptions.ShouldTranspile = true;
+    var advancedMapBuilder = new AdvancedMapBuilder(advancedMapBuilderOptions);
+
     var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
     var mapper = new Mapper(autoMapperConfig);
     var conversionService = new MapDataToMapConverter(mapper);
-
-    var advancedMapBuilder = new AdvancedMapBuilder(new AdvancedMapBuilderOptions(appSettings.CompilerSettings.RootPath, mapName)
-    {
-      Version = appSettings.MapSettings.Version,
-      ShouldMigrate = true,
-      ShouldTranspile = true,
-      OutputPath = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.PublishedPath, $"{mapName}{appSettings.MapSettings.Version}.w3x"),
-    });
-
-    var mapDataDirectory = Path.Combine(appSettings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName);
-
-    var (mapFile, additionalFiles) = conversionService.ConvertToMapAndAdditionalFileDirectories(mapDataDirectory);
+    var (mapFile, additionalFiles) = conversionService.ConvertToMapAndAdditionalFileDirectories(sharedPathOptions.MapDataPath);
     advancedMapBuilder.SaveMapFile(mapFile, additionalFiles);
   }
 }

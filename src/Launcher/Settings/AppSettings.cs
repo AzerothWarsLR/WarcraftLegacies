@@ -13,6 +13,11 @@ namespace Launcher.Settings;
 public sealed class AppSettings
 {
   /// <summary>
+  /// Provides a singleton representing the currently loaded application settings.
+  /// </summary>
+  public static AppSettings Current { get; } = Load();
+
+  /// <summary>
   /// Gets or sets compiler-related settings.
   /// </summary>
   public CompilerSettings CompilerSettings { get; init; }
