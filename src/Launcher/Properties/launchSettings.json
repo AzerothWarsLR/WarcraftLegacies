@@ -2,23 +2,23 @@
   "profiles": {
     "Test": {
       "commandName": "Project",
-      "commandLineArgs": "test WarcraftLegacies"
+      "commandLineArgs": "json-to-w3x test WarcraftLegacies"
     },
     "Publish": {
       "commandName": "Project",
-      "commandLineArgs": "publish WarcraftLegacies"
+      "commandLineArgs": "json-to-w3x publish WarcraftLegacies"
     },
     "Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-json WarcraftLegacies"
+      "commandLineArgs": "json-to-w3x build WarcraftLegacies"
     },
     "Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "json-to-w3x WarcraftLegacies"
+      "commandLineArgs": "w3x-to-json serialize WarcraftLegacies"
     },
     "Transpile C# to Lua": {
       "commandName": "Project",
-      "commandLineArgs": "csharp-to-lua WarcraftLegacies"
+      "commandLineArgs": "json-to-w3x test WarcraftLegacies --incremental"
     }
   }
 }
