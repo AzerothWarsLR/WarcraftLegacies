@@ -32,12 +32,6 @@ public static class MapDataPaths
   public const string GameInterfacePath = "war3mapSkin.txt";
 
   /// <summary>
-  /// Some positional data is seperated into different files based on position on the map.
-  /// Chunk size determines how large those square chunks should be.
-  /// </summary>
-  public const int ChunkSize = 512;
-
-  /// <summary>
   /// Gets the paths to all files that need to be included in a map but which can't be serialized, such as plain text
   /// files or images.
   /// </summary>

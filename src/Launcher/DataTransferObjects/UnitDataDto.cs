@@ -3,7 +3,7 @@ using War3Net.Build.Widget;
 
 namespace Launcher.DataTransferObjects;
 
-public class UnitDataDto
+public sealed class UnitDataDto
 {
   public int Flags { get; set; }
   public int OwnerId { get; set; }
