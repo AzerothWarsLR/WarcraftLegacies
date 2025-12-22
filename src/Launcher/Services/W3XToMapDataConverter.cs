@@ -1,4 +1,6 @@
 ﻿#nullable enable
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -243,20 +245,7 @@ public sealed class W3XToMapDataConverter
       Directory.CreateDirectory(path);
     }
 
-    var positionallyChunkedUnitCollection = new PositionallyChunkedUnitSet(ChunkSize);
-
-    foreach (var unit in units.Units)
-    {
-      var asDto = _mapper.Map<UnitDataDto>(unit);
-      positionallyChunkedUnitCollection.Add(asDto);
-    }
-
-    foreach (var (chunk, unitSet) in positionallyChunkedUnitCollection.GetAll())
-    {
-      var fullPath = Path.Combine(path, $"{chunk.Item1}_{chunk.Item2}.json");
-      var asJson = JsonSerializer.Serialize(unitSet, _jsonSerializerOptions);
-      File.WriteAllText(fullPath, asJson);
-    }
+    SerializeAndWriteInChunks(units.Units, path, widgets => _mapper.Map<UnitDataDto[]>(widgets));
   }
 
   private void SerializeAndWriteDoodads(MapDoodads doodads, string path)
@@ -266,20 +255,7 @@ public sealed class W3XToMapDataConverter
       Directory.CreateDirectory(path);
     }
 
-    var positionallyChunkedUnitCollection = new PositionallyChunkedDoodadSet(ChunkSize);
-
-    foreach (var doodad in doodads.Doodads)
-    {
-      var asDto = _mapper.Map<DoodadDataDto>(doodad);
-      positionallyChunkedUnitCollection.Add(asDto);
-    }
-
-    foreach (var (chunk, doodadSet) in positionallyChunkedUnitCollection.GetAll())
-    {
-      var fullPath = Path.Combine(path, $"{chunk.Item1}_{chunk.Item2}.json");
-      var asJson = JsonSerializer.Serialize(doodadSet, _jsonSerializerOptions);
-      File.WriteAllText(fullPath, asJson);
-    }
+    SerializeAndWriteInChunks(doodads.Doodads, path, widgets => _mapper.Map<DoodadDataDto[]>(widgets));
   }
 
   private void SerializeAndWriteSounds(MapSounds sounds, string path)
@@ -412,5 +388,17 @@ public sealed class W3XToMapDataConverter
     var asJson = JsonSerializer.Serialize(levelObjectModification, _jsonSerializerOptions);
     var fullPath = Path.Combine(outputDirectoryPath, $"{id.ToRawcode()}.json");
     File.WriteAllText(fullPath, asJson);
+  }
+
+  private void SerializeAndWriteInChunks<T>(IEnumerable<T> widgets, string path, Func<IEnumerable<T>, object>? mapper = null)
+    where T : WidgetData
+  {
+    var chunkedWidgets = new ChunkedWidgetSet<T>(widgets);
+
+    foreach (var (chunkCoords, widgetsInChunk) in chunkedWidgets)
+    {
+      var serializedChunk = JsonSerializer.Serialize(mapper?.Invoke(widgetsInChunk) ?? widgetsInChunk, _jsonSerializerOptions);
+      File.WriteAllText(Path.Combine(path, $"{chunkCoords.X}_{chunkCoords.Y}.json"), serializedChunk);
+    }
   }
 }
