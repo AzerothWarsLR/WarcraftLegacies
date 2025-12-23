@@ -1,6 +1,6 @@
 ﻿using Launcher.Paths;
 
-namespace Launcher.Commands;
+namespace Launcher.CLI.Contexts;
 
 internal abstract class MapCommandContext(string mapName)
 {

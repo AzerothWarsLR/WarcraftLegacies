@@ -1,5 +1,5 @@
 ﻿using System.CommandLine;
-using Launcher.Commands;
+using Launcher.CLI;
 
 namespace Launcher;
 

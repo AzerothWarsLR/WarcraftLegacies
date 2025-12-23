@@ -1,11 +1,12 @@
 ﻿using System.CommandLine;
 using System.IO;
+using Launcher.CLI.Contexts;
 using Launcher.Settings;
-using MapBuildCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapBuildContext>;
-using MapGenerateCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapGenerateContext>;
-using MapSerializeCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapSerializationContext>;
+using MapBuildCommand = Launcher.CLI.Commands.MapCommand<Launcher.CLI.Contexts.MapBuildContext>;
+using MapGenerateCommand = Launcher.CLI.Commands.MapCommand<Launcher.CLI.Contexts.MapGenerateContext>;
+using MapSerializeCommand = Launcher.CLI.Commands.MapCommand<Launcher.CLI.Contexts.MapSerializationContext>;
 
-namespace Launcher.Commands;
+namespace Launcher.CLI;
 
 internal static class MapCommandBuilder
 {
