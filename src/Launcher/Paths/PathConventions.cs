@@ -26,20 +26,20 @@ public static class PathConventions
     public const string Info = "Info.json";
     public const string Environment = "Environment.json";
 
-    public const string UnitData = "UnitData";
-    public const string DoodadData = "DoodadData";
-    public const string AbilityData = "AbilityData";
-    public const string UpgradeData = "UpgradeData";
-    public const string ItemData = "ItemData";
-    public const string DestructableData = "DestructableData";
-    public const string BuffData = "BuffData";
+    public const string UnitData = "UnitData/";
+    public const string DoodadData = "DoodadData/";
+    public const string AbilityData = "AbilityData/";
+    public const string UpgradeData = "UpgradeData/";
+    public const string ItemData = "ItemData/";
+    public const string DestructableData = "DestructableData/";
+    public const string BuffData = "BuffData/";
 
-    public const string Sounds = "Sounds";
-    public const string Regions = "Regions";
-    public const string Units = "Units";
-    public const string Doodads = "Doodads";
+    public const string Sounds = "Sounds/";
+    public const string Regions = "Regions/";
+    public const string Units = "Units/";
+    public const string Doodads = "Doodads/";
 
-    public const string Imports = "Imports";
+    public const string Imports = "Imports/";
 
     public const string Script = "war3map.lua";
     public const string Minimap = "war3mapMap.blp";

@@ -10,6 +10,7 @@ using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
 using Launcher.Extensions;
 using Launcher.JsonConverters;
+using Launcher.Paths;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -17,7 +18,6 @@ using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Widget;
 using War3Net.Common.Extensions;
-using static Launcher.MapDataPaths;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Launcher.Services;
@@ -29,6 +29,57 @@ public sealed class W3XToMapDataConverter
 {
   private readonly IMapper _mapper;
   private readonly W3XToMapDataConverterOptions _options;
+
+  /// <summary>
+  /// Provides mapping from our domain-specific <see cref="IncludeFiles"/> to War3Net's <see cref="MapFiles"/>.
+  /// </summary>
+  private static readonly Dictionary<IncludeFiles, MapFiles[]> _includeToMapFiles = new()
+  {
+    [IncludeFiles.Sounds] =
+    [
+      MapFiles.Sounds
+    ],
+
+    [IncludeFiles.Terrain] =
+    [
+      MapFiles.Environment,
+      MapFiles.PathingMap,
+      MapFiles.PreviewIcons,
+      MapFiles.ShadowMap
+    ],
+
+    [IncludeFiles.Regions] =
+    [
+      MapFiles.Regions
+    ],
+
+    [IncludeFiles.ObjectData] =
+    [
+      MapFiles.AbilityObjectData,
+      MapFiles.BuffObjectData,
+      MapFiles.DestructableObjectData,
+      MapFiles.DoodadObjectData,
+      MapFiles.ItemObjectData,
+      MapFiles.UnitObjectData,
+      MapFiles.UpgradeObjectData
+    ],
+
+    [IncludeFiles.Objects] =
+    [
+      MapFiles.Doodads,
+      MapFiles.Units
+    ],
+
+    [IncludeFiles.Info] =
+    [
+      MapFiles.Info
+    ],
+
+    [IncludeFiles.Imports] =
+    [
+      MapFiles.ImportedFiles
+    ]
+  };
 
   private readonly JsonSerializerOptions _jsonSerializerOptions = new()
   {
@@ -49,7 +100,7 @@ public sealed class W3XToMapDataConverter
   /// </summary>
   public void Convert(string baseMapPath)
   {
-    var map = Map.Open(baseMapPath);
+    var map = Map.Open(baseMapPath, GetUsedMapFiles());
     var triggerStrings = map.TriggerStrings.ToDictionary();
     SerializeAndWriteMapData(map, triggerStrings);
 
@@ -59,6 +110,24 @@ public sealed class W3XToMapDataConverter
 
   private void SerializeAndWriteMapData(Map map, TriggerStringDictionary triggerStrings)
   {
+    foreach (var directory in GetUsedMapFilePaths())
+    {
+      if (Path.EndsInDirectorySeparator(directory))
+      {
+        if (Directory.Exists(directory))
+        {
+          Directory.Delete(directory, true);
+        }
+      }
+      else
+      {
+        if (File.Exists(directory))
+        {
+          File.Delete(directory);
+        }
+      }
+    }
+
     var objectDataMapper = new ObjectDataMapper(triggerStrings);
 
     if (map.Doodads != null)
@@ -376,6 +445,112 @@ public sealed class W3XToMapDataConverter
     {
       var serializedChunk = JsonSerializer.Serialize(mapper?.Invoke(widgetsInChunk) ?? widgetsInChunk, _jsonSerializerOptions);
       File.WriteAllText(Path.Combine(path, $"{chunkCoords.X}_{chunkCoords.Y}.json"), serializedChunk);
+    }
+  }
+
+  /// <summary>
+  /// Gets the paths to all files that need to be included in a map but which can't be serialized, such as plain text
+  /// files or images.
+  /// </summary>
+  private IEnumerable<string> GetUnserializableFilePaths()
+  {
+    if (_options.Include.HasFlag(IncludeFiles.Terrain))
+    {
+      yield return PathConventions.MapData.Minimap;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Info))
+    {
+      yield return PathConventions.MapData.GameplayConstants;
+      yield return PathConventions.MapData.GameInterface;
+    }
+  }
+
+  /// <summary>
+  /// Returns all <see cref="MapFiles"/> that should be included in the conversion.
+  /// </summary>
+  private MapFiles GetUsedMapFiles()
+  {
+    if (_options.Include.HasFlag(IncludeFiles.All))
+    {
+      return MapFiles.All;
+    }
+
+    var result = default(MapFiles);
+
+    foreach (var (includeFlag, mapFlags) in W3XToMapDataConverter._includeToMapFiles)
+    {
+      if (!_options.Include.HasFlag(includeFlag))
+      {
+        continue;
+      }
+
+      foreach (var mapFlag in mapFlags)
+      {
+        result |= mapFlag;
+      }
+    }
+
+    return result;
+  }
+
+  /// <summary>
+  /// Returns all map file paths that match any of the flags specified in <see cref="IncludeFiles"/>.
+  /// </summary>
+  private IEnumerable<string> GetUsedMapFilePaths()
+  {
+    if (_options.Include.HasFlag(IncludeFiles.All))
+    {
+      yield return _options.MapDataPathOptions.RootPath;
+      yield break;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Sounds))
+    {
+      yield return _options.MapDataPathOptions.SoundsPath;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Terrain))
+    {
+      yield return _options.MapDataPathOptions.EnvironmentPath;
+      yield return _options.MapDataPathOptions.PathingMapPath;
+      yield return _options.MapDataPathOptions.PreviewIconsPath;
+      yield return _options.MapDataPathOptions.ShadowMapPath;
+      yield return _options.MapDataPathOptions.MinimapPath;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Regions))
+    {
+      yield return _options.MapDataPathOptions.RegionsPath;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Imports))
+    {
+      yield return _options.MapDataPathOptions.ImportsPath;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Info))
+    {
+      yield return _options.MapDataPathOptions.InfoPath;
+      yield return _options.MapDataPathOptions.GameInterfacePath;
+      yield return _options.MapDataPathOptions.SkinPath;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.ObjectData))
+    {
+      yield return _options.MapDataPathOptions.AbilityDataPath;
+      yield return _options.MapDataPathOptions.BuffDataPath;
+      yield return _options.MapDataPathOptions.DestructableDataPath;
+      yield return _options.MapDataPathOptions.DoodadDataPath;
+      yield return _options.MapDataPathOptions.ItemDataPath;
+      yield return _options.MapDataPathOptions.UnitDataPath;
+      yield return _options.MapDataPathOptions.UpgradeDataPath;
+    }
+
+    if (_options.Include.HasFlag(IncludeFiles.Objects))
+    {
+      yield return _options.MapDataPathOptions.DoodadsPath;
+      yield return _options.MapDataPathOptions.UnitsPath;
     }
   }
 }

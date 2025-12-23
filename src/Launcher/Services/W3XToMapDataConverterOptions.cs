@@ -8,6 +8,7 @@ public sealed class W3XToMapDataConverterOptions
   {
     return new W3XToMapDataConverterOptions
     {
+      Include = IncludeFiles.All,
       MapDataPathOptions = new MapDataPathOptions
       {
         RootPath = sharedPathOptions.MapDataPathOptions.RootPath,
@@ -34,6 +35,11 @@ public sealed class W3XToMapDataConverterOptions
       }
     };
   }
+
+  /// <summary>
+  /// Map files that should be included in the map data export.
+  /// </summary>
+  public required IncludeFiles Include { get; set; }
 
   public required MapDataPathOptions MapDataPathOptions { get; init; }
 }
