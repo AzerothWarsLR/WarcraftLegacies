@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using Launcher.Extensions;
+using Launcher.Paths;
 using Launcher.Services;
 using War3Api.Object;
 using War3Net.Build;

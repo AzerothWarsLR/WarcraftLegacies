@@ -8,6 +8,7 @@ using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.JsonConverters;
+using Launcher.Paths;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -15,43 +16,35 @@ using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
-using static Launcher.MapDataPaths;
+using static Launcher.Paths.PathConventions;
 
 namespace Launcher.Services;
 
 /// <summary>
 ///   Converts collections of loose files into a <see cref="Map" />.
 /// </summary>
-public sealed class MapDataToMapConverter
+public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, IMapper mapper)
 {
-  private readonly IMapper _mapper;
-
-  private readonly JsonSerializerOptions _jsonSerializerOptions;
-
-  public MapDataToMapConverter(IMapper mapper)
+  private readonly JsonSerializerOptions _jsonSerializerOptions = new()
   {
-    _mapper = mapper;
-    _jsonSerializerOptions = new JsonSerializerOptions
+    IgnoreReadOnlyProperties = true,
+    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
+    WriteIndented = true,
+    TypeInfoResolver = new DefaultJsonTypeInfoResolver
     {
-      IgnoreReadOnlyProperties = true,
-      DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
-      WriteIndented = true,
-      TypeInfoResolver = new DefaultJsonTypeInfoResolver
-      {
-        Modifiers = { JsonModifierProvider.CastModificationSets }
-      },
-      Converters = { new ColorJsonConverter() }
-    };
-  }
+      Modifiers = { JsonModifierProvider.CastModificationSets }
+    },
+    Converters = { new ColorJsonConverter() }
+  };
 
   /// <summary>
   ///   Converts the provided JSON data into a <see cref="Map" /> and a set of additional files that should be included
   ///   in the output, such as imported textures.
   /// </summary>
-  public (Map Map, IEnumerable<PathData> AdditionalFiles) ConvertToMapAndAdditionalFiles(string mapDataRootDirectory)
+  public (Map Map, IEnumerable<PathData> AdditionalFiles) ConvertToMapAndAdditionalFiles()
   {
-    var map = ConvertToMap(mapDataRootDirectory);
-    var additionalFiles = GetAdditionalFiles(mapDataRootDirectory);
+    var map = ConvertToMap();
+    var additionalFiles = GetAdditionalFiles();
     return (map, additionalFiles);
   }
 
@@ -59,44 +52,43 @@ public sealed class MapDataToMapConverter
   ///   Converts the provided JSON data into a <see cref="Map" /> and a set of directories containing any additional
   ///   files that should be included in the output, such as imported textures.
   /// </summary>
-  public (Map Map, IEnumerable<DirectoryEnumerationOptions> AdditionalFiles) ConvertToMapAndAdditionalFileDirectories(
-    string mapDataRootDirectory)
+  public (Map Map, IEnumerable<DirectoryEnumerationOptions> AdditionalFiles) ConvertToMapAndAdditionalFileDirectories()
   {
-    var map = ConvertToMap(mapDataRootDirectory);
-    var additionalFiles = GetAdditionalFileDirectories(mapDataRootDirectory);
+    var map = ConvertToMap();
+    var additionalFiles = GetAdditionalFileDirectories();
     return (map, additionalFiles);
   }
 
-  private Map ConvertToMap(string mapDataRootDirectory)
+  private Map ConvertToMap()
   {
     var map = new Map
     {
-      Sounds = DeserializeSoundsFromDirectory(Path.Combine(mapDataRootDirectory, SoundsDirectoryPath)),
-      Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootDirectory, EnvironmentPath)),
-      PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootDirectory, PathingMapPath)),
-      PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootDirectory, PreviewIconsPath)),
-      Regions = DeserializeRegionsFromDirectory(Path.Combine(mapDataRootDirectory, RegionsDirectoryPath)),
-      ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
-      Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
-      Doodads = DeserializeDoodadsFromDirectory(Path.Combine(mapDataRootDirectory, DoodadsDirectoryPath)),
-      Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),
+      Sounds = DeserializeSounds(),
+      Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(options.MapDataPaths.EnvironmentPath),
+      PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(options.MapDataPaths.PathingMapPath),
+      PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(options.MapDataPaths.PreviewIconsPath),
+      Regions = DeserializeRegions(),
+      ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath),
+      Info = DeserializeFromFile<MapInfo, MapInfoDto>(options.MapDataPaths.InfoPath),
+      Doodads = DeserializeDoodads(),
+      Units = DeserializeUnits(),
       Triggers = GenerateEmptyMapTriggers(),
 
-      AbilityObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath)),
-      BuffObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath)),
-      DestructableObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath)),
-      DoodadObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath)),
-      ItemObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath)),
-      UnitObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath)),
-      UpgradeObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath))
+      AbilityObjectData = DeserializeAbilityData(),
+      BuffObjectData = DeserializeBuffData(),
+      DestructableObjectData = DeserializeDestructableData(),
+      DoodadObjectData = DeserializeDoodadData(),
+      ItemObjectData = DeserializeItemData(),
+      UnitObjectData = DeserializeUnitData(),
+      UpgradeObjectData = DeserializeUpgradeData()
     };
     return map;
   }
 
-  private MapDoodads DeserializeDoodadsFromDirectory(string directory)
+  private MapDoodads DeserializeDoodads()
   {
     var mapDoodads = new MapDoodads(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+    var files = Directory.EnumerateFiles(options.MapDataPaths.DoodadsPath, "*", SearchOption.AllDirectories);
     foreach (var file in files)
     {
       var fileContents = File.ReadAllText(file);
@@ -109,17 +101,17 @@ public sealed class MapDataToMapConverter
 
       foreach (var doodadDto in doodadDtoSet)
       {
-        var doodad = _mapper.Map<DoodadData>(doodadDto);
+        var doodad = mapper.Map<DoodadData>(doodadDto);
         mapDoodads.Doodads.Add(doodad);
       }
     }
     return mapDoodads;
   }
 
-  private MapUnits DeserializeUnitsFromDirectory(string directory)
+  private MapUnits DeserializeUnits()
   {
     var mapUnits = new MapUnits(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+    var files = Directory.EnumerateFiles(options.MapDataPaths.UnitsPath, "*", SearchOption.AllDirectories);
     foreach (var file in files)
     {
       var fileContents = File.ReadAllText(file);
@@ -132,15 +124,16 @@ public sealed class MapDataToMapConverter
 
       foreach (var unitDto in unitDtoSet)
       {
-        var unit = _mapper.Map<UnitData>(unitDto);
+        var unit = mapper.Map<UnitData>(unitDto);
         mapUnits.Units.Add(unit);
       }
     }
     return mapUnits;
   }
 
-  private MapRegions? DeserializeRegionsFromDirectory(string directory)
+  private MapRegions? DeserializeRegions()
   {
+    var directory = options.MapDataPaths.RegionsPath;
     if (!Directory.Exists(directory))
     {
       return null;
@@ -152,14 +145,15 @@ public sealed class MapDataToMapConverter
     {
       var fileContents = File.ReadAllText(file);
       var dataTransferObject = JsonSerializer.Deserialize<RegionDto>(fileContents, _jsonSerializerOptions);
-      var region = _mapper.Map<Region>(dataTransferObject);
+      var region = mapper.Map<Region>(dataTransferObject);
       regions.Regions.Add(region);
     }
     return regions;
   }
 
-  private MapSounds? DeserializeSoundsFromDirectory(string directory)
+  private MapSounds? DeserializeSounds()
   {
+    var directory = options.MapDataPaths.SoundsPath;
     if (!Directory.Exists(directory))
     {
       return null;
@@ -171,16 +165,16 @@ public sealed class MapDataToMapConverter
     {
       var fileContents = File.ReadAllText(file);
       var dataTransferObject = JsonSerializer.Deserialize<SoundDto>(fileContents, _jsonSerializerOptions);
-      var sound = _mapper.Map<Sound>(dataTransferObject);
+      var sound = mapper.Map<Sound>(dataTransferObject);
       sounds.Sounds.Add(sound);
     }
     return sounds;
   }
 
-  private UpgradeObjectData DeserializeUpgradeDataFromDirectory(string directory)
+  private UpgradeObjectData DeserializeUpgradeData()
   {
     var objectData = new UpgradeObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+    var files = Directory.EnumerateFiles(options.MapDataPaths.UpgradeDataPath, "*", SearchOption.AllDirectories);
     foreach (var file in files)
     {
       var fileContents = File.ReadAllText(file);
@@ -204,8 +198,9 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private ItemObjectData? DeserializeItemDataFromDirectory(string directory)
+  private ItemObjectData? DeserializeItemData()
   {
+    var directory = options.MapDataPaths.ItemDataPath;
     if (!Directory.Exists(directory))
     {
       return null;
@@ -236,8 +231,9 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private DoodadObjectData? DeserializeDoodadDataFromDirectory(string directory)
+  private DoodadObjectData? DeserializeDoodadData()
   {
+    var directory = options.MapDataPaths.DoodadDataPath;
     if (!Directory.Exists(directory))
     {
       return null;
@@ -252,7 +248,7 @@ public sealed class MapDataToMapConverter
 
       if (objectModification == null)
       {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        throw new JsonException($"File {file} could not be serialized to {nameof(VariationObjectModification)}.");
       }
 
       if (objectModification.NewId == 0)
@@ -268,8 +264,9 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private DestructableObjectData? DeserializeDestructableDataFromDirectory(string directory)
+  private DestructableObjectData? DeserializeDestructableData()
   {
+    var directory = options.MapDataPaths.DestructableDataPath;
     if (!Directory.Exists(directory))
     {
       return null;
@@ -300,8 +297,9 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private BuffObjectData? DeserializeBuffDataFromDirectory(string directory)
+  private BuffObjectData? DeserializeBuffData()
   {
+    var directory = options.MapDataPaths.BuffDataPath;
     if (!Directory.Exists(directory))
     {
       return null;
@@ -332,10 +330,10 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private AbilityObjectData DeserializeAbilityDataFromDirectory(string directory)
+  private AbilityObjectData DeserializeAbilityData()
   {
     var objectData = new AbilityObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+    var files = Directory.EnumerateFiles(options.MapDataPaths.AbilityDataPath, "*", SearchOption.AllDirectories);
     foreach (var file in files)
     {
       var fileContents = File.ReadAllText(file);
@@ -343,7 +341,7 @@ public sealed class MapDataToMapConverter
 
       if (objectModification == null)
       {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        throw new JsonException($"File {file} could not be serialized to {nameof(LevelObjectModification)}.");
       }
 
       if (objectModification.NewId == 0)
@@ -359,10 +357,10 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private UnitObjectData DeserializeUnitDataFromDirectory(string directory)
+  private UnitObjectData DeserializeUnitData()
   {
     var objectData = new UnitObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+    var files = Directory.EnumerateFiles(options.MapDataPaths.UnitDataPath, "*", SearchOption.AllDirectories);
     foreach (var file in files)
     {
       var fileContents = File.ReadAllText(file);
@@ -386,9 +384,9 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private static IEnumerable<PathData> GetAdditionalFiles(string mapDataRootDirectory)
+  private List<PathData> GetAdditionalFiles()
   {
-    var importsDirectory = Path.Combine(mapDataRootDirectory, ImportsPath);
+    var importsDirectory = options.MapDataPaths.ImportsPath;
 
     var additionalFiles = Directory.Exists(importsDirectory)
       ? Directory.EnumerateFiles(importsDirectory, "*", SearchOption.AllDirectories).Select(x => new PathData
@@ -396,29 +394,23 @@ public sealed class MapDataToMapConverter
         AbsolutePath = x,
         RelativePath = Path.GetRelativePath(importsDirectory, x)
       }).ToList()
-      : new List<PathData>();
+      : [];
 
     foreach (var filePath in GetUnserializableFilePaths())
     {
       additionalFiles.Add(new PathData
       {
-        AbsolutePath = Path.Combine(mapDataRootDirectory, filePath),
+        AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, filePath),
         RelativePath = filePath
       });
     }
 
-    additionalFiles.Add(new PathData()
-    {
-      AbsolutePath = Path.Combine(mapDataRootDirectory, GameInterfacePath),
-      RelativePath = GameInterfacePath
-    });
-
     return additionalFiles;
   }
 
-  private static IEnumerable<DirectoryEnumerationOptions> GetAdditionalFileDirectories(string mapDataRootDirectory)
+  private List<DirectoryEnumerationOptions> GetAdditionalFileDirectories()
   {
-    var importsDirectory = Path.Combine(mapDataRootDirectory, ImportsPath);
+    var importsDirectory = options.MapDataPaths.ImportsPath;
 
     var fileDirectories = Directory.Exists(importsDirectory)
       ? new List<DirectoryEnumerationOptions>
@@ -435,15 +427,15 @@ public sealed class MapDataToMapConverter
     {
       fileDirectories.Add(new DirectoryEnumerationOptions
       {
-        Path = mapDataRootDirectory,
+        Path = options.MapDataPaths.RootPath,
         SearchPattern = filePath
       });
     }
 
     fileDirectories.Add(new DirectoryEnumerationOptions
     {
-      Path = mapDataRootDirectory,
-      SearchPattern = GameInterfacePath
+      Path = options.MapDataPaths.RootPath,
+      SearchPattern = MapData.GameInterface
     });
 
     return fileDirectories;
@@ -457,7 +449,7 @@ public sealed class MapDataToMapConverter
     }
 
     var dto = JsonSerializer.Deserialize<TDataTransferObject>(File.ReadAllText(filePath), _jsonSerializerOptions);
-    return _mapper.Map<TReturn>(dto);
+    return mapper.Map<TReturn>(dto);
   }
 
   private static MapTriggers GenerateEmptyMapTriggers()
@@ -465,8 +457,8 @@ public sealed class MapDataToMapConverter
     return new MapTriggers(MapTriggersFormatVersion.v7, MapTriggersSubVersion.v4)
     {
       GameVersion = 2,
-      Variables = new List<VariableDefinition>(),
-      TriggerItems = new List<TriggerItem>(),
+      Variables = [],
+      TriggerItems = [],
       TriggerItemCounts = new Dictionary<TriggerItemType, int>()
     };
   }

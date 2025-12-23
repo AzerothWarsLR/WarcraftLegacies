@@ -20,14 +20,14 @@ using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using War3Net.Common.Extensions;
-using static Launcher.MapDataPaths;
+using static Launcher.Paths.PathConventions;
 
 namespace Launcher.Services;
 
 /// <summary>
 /// Converts a Warcraft 3 map into a collection of loose files so that they can be stored in version control.
 /// </summary>
-public sealed class W3XToMapDataConverter(IMapper mapper)
+public sealed class W3XToMapDataConverter(IMapper mapper, W3XToMapDataConverterOptions options)
 {
   private readonly JsonSerializerOptions _jsonSerializerOptions = new()
   {
@@ -40,106 +40,101 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
   /// <summary>
   /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
   /// </summary>
-  public void Convert(string baseMapPath, string outputFolderPath)
+  public void Convert(string baseMapPath)
   {
     var map = Map.Open(baseMapPath);
     map.MergeObjectData();
-    SerializeAndWriteMapData(map, outputFolderPath);
+    SerializeAndWriteMapData(map);
 
-    CopyImportedFiles(baseMapPath, outputFolderPath);
-    CopyUnserializableFiles(baseMapPath, outputFolderPath);
-    CopyGameInterface(baseMapPath, outputFolderPath, map.TriggerStrings);
+    CopyImportedFiles(baseMapPath);
+    CopyUnserializableFiles(baseMapPath);
+    CopyGameInterface(baseMapPath, map.TriggerStrings);
   }
 
-  private void SerializeAndWriteMapData(Map map, string outputFolderPath)
+  private void SerializeAndWriteMapData(Map map)
   {
-    if (Directory.Exists(outputFolderPath))
-    {
-      Directory.Delete(outputFolderPath, true);
-    }
-
     if (map.Doodads != null)
     {
-      SerializeAndWriteDoodads(map.Doodads, Path.Combine(outputFolderPath, DoodadsDirectoryPath));
+      SerializeAndWriteDoodads(map.Doodads, options.MapDataPaths.DoodadsPath);
     }
 
     if (map.Environment != null)
     {
-      SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
+      SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, options.MapDataPaths.EnvironmentPath);
     }
 
     if (map.Info != null)
     {
-      SerializeAndWriteMapInfo(map.Info, new MapInfoMapper(map.TriggerStrings), Path.Combine(outputFolderPath, InfoPath));
+      SerializeAndWriteMapInfo(map.Info, new MapInfoMapper(map.TriggerStrings));
     }
 
     if (map.Regions != null)
     {
-      SerializeAndWriteRegions(map.Regions, Path.Combine(outputFolderPath, RegionsDirectoryPath));
+      SerializeAndWriteRegions(map.Regions);
     }
 
     if (map.Units != null)
     {
-      SerializeAndWriteUnits(map.Units, Path.Combine(outputFolderPath, UnitsDirectoryPath));
+      SerializeAndWriteUnits(map.Units, options.MapDataPaths.UnitsPath);
     }
 
     if (map.PathingMap != null)
     {
-      SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, outputFolderPath, PathingMapPath);
+      SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, options.MapDataPaths.PathingMapPath);
     }
 
     if (map.PreviewIcons != null)
     {
-      SerializeAndWritePreviewIcons(map.PreviewIcons, Path.Combine(outputFolderPath, PreviewIconsPath));
+      SerializeAndWritePreviewIcons(map.PreviewIcons, options.MapDataPaths.PreviewIconsPath);
     }
 
     if (map.ShadowMap != null)
     {
-      SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
+      SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, options.MapDataPaths.ShadowMapPath);
     }
 
     if (map.Sounds != null)
     {
-      SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
+      SerializeAndWriteSounds(map.Sounds);
     }
 
     if (map.UnitObjectData != null)
     {
-      SerializeAndWriteUnitData(Path.Combine(outputFolderPath, UnitDataDirectoryPath), map.UnitObjectData);
+      SerializeAndWriteUnitData(map.UnitObjectData);
     }
 
     if (map.AbilityObjectData != null)
     {
-      SerializeAndWriteAbilityData(Path.Combine(outputFolderPath, AbilityDataDirectoryPath), map.AbilityObjectData);
+      SerializeAndWriteAbilityData(map.AbilityObjectData);
     }
 
     if (map.ItemObjectData != null)
     {
-      SerializeAndWriteItemData(Path.Combine(outputFolderPath, ItemDataDirectoryPath), map.ItemObjectData);
+      SerializeAndWriteItemData(map.ItemObjectData);
     }
 
     if (map.DestructableObjectData != null)
     {
-      SerializeAndWriteDestructableData(Path.Combine(outputFolderPath, DestructableDataDirectoryPath), map.DestructableObjectData);
+      SerializeAndWriteDestructableData(map.DestructableObjectData);
     }
 
     if (map.DoodadObjectData != null)
     {
-      SerializeAndWriteDoodadData(Path.Combine(outputFolderPath, DoodadDataDirectoryPath), map.DoodadObjectData);
+      SerializeAndWriteDoodadData(map.DoodadObjectData);
     }
 
     if (map.BuffObjectData != null)
     {
-      SerializeAndWriteBuffData(Path.Combine(outputFolderPath, BuffDataDirectoryPath), map.BuffObjectData);
+      SerializeAndWriteBuffData(map.BuffObjectData);
     }
 
     if (map.UpgradeObjectData != null)
     {
-      SerializeAndWriteUpgradeData(Path.Combine(outputFolderPath, UpgradeDataDirectoryPath), map.UpgradeObjectData);
+      SerializeAndWriteUpgradeData(map.UpgradeObjectData);
     }
   }
 
-  private static void CopyImportedFiles(string baseMapPath, string outputFolderPath)
+  private void CopyImportedFiles(string baseMapPath)
   {
     var importFileExtensions = new[] { ".blp", ".mdx", ".mdl", ".toc", ".fdf", ".mp3", ".webp", ".slk" };
     var files = Directory
@@ -156,13 +151,13 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
         continue;
       }
 
-      var destinationFileName = Path.Combine(outputFolderPath, ImportsPath, relativePath);
+      var destinationFileName = Path.Combine(options.MapDataPaths.ImportsPath, relativePath);
       Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
       File.Copy(file, destinationFileName, true);
     }
   }
 
-  private static void CopyUnserializableFiles(string baseMapPath, string outputFolderPath)
+  private void CopyUnserializableFiles(string baseMapPath)
   {
     foreach (var filePath in GetUnserializableFilePaths())
     {
@@ -172,14 +167,14 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
         continue;
       }
 
-      var fullOutputFilePath = Path.Combine(outputFolderPath, filePath);
+      var fullOutputFilePath = Path.Combine(options.MapDataPaths.RootPath, filePath);
       File.Copy(fullSourceFilePath, fullOutputFilePath, true);
     }
   }
 
-  private static void CopyGameInterface(string baseMapPath, string outputFolderPath, TriggerStrings? triggerStrings)
+  private void CopyGameInterface(string baseMapPath, TriggerStrings? triggerStrings)
   {
-    var gameInterfacePath = Path.Combine(baseMapPath, GameInterfacePath);
+    var gameInterfacePath = Path.Combine(baseMapPath, MapData.GameInterface);
     if (!File.Exists(gameInterfacePath))
     {
       return;
@@ -190,23 +185,23 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
       @"TRIGSTR_\d+",
       match => $"\"{match.Value.Localize(triggerStrings)}\"");
 
-    File.WriteAllText(Path.Combine(outputFolderPath, GameInterfacePath), localizedContent);
+    File.WriteAllText(options.MapDataPaths.GameInterfacePath, localizedContent);
   }
 
   /// <summary>
   /// Converts the provided input into a Data Transfer Object, then serializes it, then writes it.
   /// </summary>
-  private void SerializeAndWrite<TInput, TDataTransferObject>(TInput inputValue, string outputDirectoryPath, string fileName)
+  private void SerializeAndWrite<TInput, TDataTransferObject>(TInput inputValue, string filePath)
   {
-    if (!Directory.Exists(outputDirectoryPath))
+    var directory = Path.GetDirectoryName(filePath)!;
+    if (!Directory.Exists(directory))
     {
-      Directory.CreateDirectory(outputDirectoryPath);
+      Directory.CreateDirectory(directory);
     }
 
     var dataTransferObject = mapper.Map<TInput, TDataTransferObject>(inputValue);
     var asJson = JsonSerializer.Serialize(dataTransferObject, _jsonSerializerOptions);
-    var fullPath = Path.Combine(outputDirectoryPath, fileName);
-    File.WriteAllText(fullPath, asJson);
+    File.WriteAllText(filePath, asJson);
   }
 
   private void SerializeAndWritePreviewIcons(MapPreviewIcons mapPreviewIcons, string path)
@@ -221,11 +216,11 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
     File.WriteAllText(path, asJson);
   }
 
-  private void SerializeAndWriteMapInfo(MapInfo mapInfo, MapInfoMapper mapInfoMapper, string path)
+  private void SerializeAndWriteMapInfo(MapInfo mapInfo, MapInfoMapper mapInfoMapper)
   {
     var dto = mapInfoMapper.MapToDto(mapInfo);
     var asJson = JsonSerializer.Serialize(dto, _jsonSerializerOptions);
-    File.WriteAllText(path, asJson);
+    File.WriteAllText(options.MapDataPaths.InfoPath, asJson);
   }
 
   private void SerializeAndWriteUnits(MapUnits units, string path)
@@ -248,60 +243,67 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
     SerializeAndWriteInChunks(doodads.Doodads, path, mapper.Map<DoodadDataDto[]>);
   }
 
-  private void SerializeAndWriteSounds(MapSounds sounds, string path)
+  private void SerializeAndWriteSounds(MapSounds sounds)
   {
     foreach (var sound in sounds.Sounds)
     {
-      SerializeAndWrite<Sound, SoundDto>(sound, path, $"{sound.Name.Remove(0, 7)}.json");
+      SerializeAndWrite<Sound, SoundDto>(sound, Path.Combine(options.MapDataPaths.SoundsPath, $"{sound.Name.Remove(0, 7)}.json"));
     }
   }
 
-  private void SerializeAndWriteRegions(MapRegions regions, string path)
+  private void SerializeAndWriteRegions(MapRegions regions)
   {
     foreach (var region in regions.Regions)
     {
-      SerializeAndWrite<Region, RegionDto>(region, path, $"{region.Name}.json");
+      SerializeAndWrite<Region, RegionDto>(region, Path.Combine(options.MapDataPaths.RegionsPath, $"{region.Name}.json"));
     }
   }
 
-  private void SerializeAndWriteUnitData(string path, UnitObjectData objectData)
+  private void SerializeAndWriteUnitData(UnitObjectData objectData)
   {
+    var path = options.MapDataPaths.UnitDataPath;
     SerializeAndWriteModifications(path, objectData.BaseUnits);
     SerializeAndWriteModifications(path, objectData.NewUnits);
   }
 
-  private void SerializeAndWriteBuffData(string path, BuffObjectData objectData)
+  private void SerializeAndWriteBuffData(BuffObjectData objectData)
   {
+    var path = options.MapDataPaths.BuffDataPath;
     SerializeAndWriteModifications(path, objectData.BaseBuffs);
     SerializeAndWriteModifications(path, objectData.NewBuffs);
   }
 
-  private void SerializeAndWriteDoodadData(string path, DoodadObjectData objectData)
+  private void SerializeAndWriteDoodadData(DoodadObjectData objectData)
   {
+    var path = options.MapDataPaths.DoodadDataPath;
     SerializeAndWriteModifications(path, objectData.BaseDoodads);
     SerializeAndWriteModifications(path, objectData.NewDoodads);
   }
 
-  private void SerializeAndWriteDestructableData(string path, DestructableObjectData objectData)
+  private void SerializeAndWriteDestructableData(DestructableObjectData objectData)
   {
+    var path = options.MapDataPaths.DestructableDataPath;
     SerializeAndWriteModifications(path, objectData.BaseDestructables);
     SerializeAndWriteModifications(path, objectData.NewDestructables);
   }
 
-  private void SerializeAndWriteItemData(string path, ItemObjectData objectData)
+  private void SerializeAndWriteItemData(ItemObjectData objectData)
   {
+    var path = options.MapDataPaths.ItemDataPath;
     SerializeAndWriteModifications(path, objectData.BaseItems);
     SerializeAndWriteModifications(path, objectData.NewItems);
   }
 
-  private void SerializeAndWriteAbilityData(string path, AbilityObjectData objectData)
+  private void SerializeAndWriteAbilityData(AbilityObjectData objectData)
   {
+    var path = options.MapDataPaths.AbilityDataPath;
     SerializeAndWriteModifications(path, objectData.BaseAbilities);
     SerializeAndWriteModifications(path, objectData.NewAbilities);
   }
 
-  private void SerializeAndWriteUpgradeData(string path, UpgradeObjectData objectData)
+  private void SerializeAndWriteUpgradeData(UpgradeObjectData objectData)
   {
+    var path = options.MapDataPaths.UpgradeDataPath;
     SerializeAndWriteModifications(path, objectData.BaseUpgrades);
     SerializeAndWriteModifications(path, objectData.NewUpgrades);
   }

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Launcher.Services;
+using Launcher.Paths;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Audio;

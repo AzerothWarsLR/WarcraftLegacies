@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Launcher.Paths;
 using Launcher.Services;
 using War3Net.Build;
 
@@ -18,9 +19,9 @@ public static class MapDataProvider
 
       var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      var conversionService = new MapDataToMapConverter(mapper);
       var sharedPathOptions = SharedPathOptions.Create("WarcraftLegacies");
-      _mapData = conversionService.ConvertToMapAndAdditionalFiles(sharedPathOptions.MapDataPath);
+      var conversionService = new MapDataToMapConverter(MapDataToMapConverterOptions.Create(sharedPathOptions), mapper);
+      _mapData = conversionService.ConvertToMapAndAdditionalFiles();
 
       return _mapData.Value;
     }
