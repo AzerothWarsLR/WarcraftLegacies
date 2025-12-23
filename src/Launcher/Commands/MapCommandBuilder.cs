@@ -1,5 +1,6 @@
 ﻿using System.CommandLine;
 using System.IO;
+using Launcher.Settings;
 using MapBuildCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapBuildContext>;
 using MapGenerateCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapGenerateContext>;
 using MapSerializeCommand = Launcher.Commands.MapCommand<Launcher.Commands.MapSerializationContext>;
@@ -31,6 +32,7 @@ internal static class MapCommandBuilder
         ctx.Builder.ShouldTranspile = true;
         ctx.Builder.ShouldMigrate = true;
         ctx.Builder.W3XFolderPath = Path.Combine(ctx.Paths.ScriptArtifactPath, $"{ctx.MapName}.w3x");
+        ctx.Builder.TestingPlayerSlot = AppSettings.Current.CompilerSettings.TestingPlayerSlot;
       }
     };
   }
