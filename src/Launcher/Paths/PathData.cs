@@ -1,4 +1,4 @@
-﻿namespace Launcher.Services;
+﻿namespace Launcher.Paths;
 
 public sealed class PathData
 {

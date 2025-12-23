@@ -1,4 +1,4 @@
-﻿using Launcher.Services;
+﻿using Launcher.Paths;
 
 namespace Launcher.CLI.Contexts;
 

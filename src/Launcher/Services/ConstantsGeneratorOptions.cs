@@ -1,4 +1,6 @@
-﻿namespace Launcher.Services;
+﻿using Launcher.Paths;
+
+namespace Launcher.Services;
 
 public sealed class ConstantsGeneratorOptions
 {

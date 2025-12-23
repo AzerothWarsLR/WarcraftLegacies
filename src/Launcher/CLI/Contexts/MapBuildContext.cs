@@ -17,21 +17,21 @@ internal sealed class MapBuildContext : MapCommandContext
 
   public override void Execute()
   {
-    var converter = new MapDataToMapConverter(new Mapper(AutoMapperConfigurationProvider.GetConfiguration()));
+    var converter = new MapDataToMapConverter(MapDataToMapConverterOptions.Create(Paths), new Mapper(AutoMapperConfigurationProvider.GetConfiguration()));
     var builder = new AdvancedMapBuilder(Builder);
 
     switch (OutputKind)
     {
       case MapOutputKind.Directory:
         {
-          var (map, directories) = converter.ConvertToMapAndAdditionalFiles(Paths.MapDataPath);
+          var (map, directories) = converter.ConvertToMapAndAdditionalFiles();
           builder.SaveMapDirectory(map, directories);
           break;
         }
 
       case MapOutputKind.File:
         {
-          var (map, directories) = converter.ConvertToMapAndAdditionalFileDirectories(Paths.MapDataPath);
+          var (map, directories) = converter.ConvertToMapAndAdditionalFileDirectories();
           builder.PublishMapArchive(map, directories);
           break;
         }
