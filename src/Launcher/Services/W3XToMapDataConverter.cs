@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
+using Launcher.Extensions;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -42,6 +43,7 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
   public void Convert(string baseMapPath, string outputFolderPath)
   {
     var map = Map.Open(baseMapPath);
+    map.MergeObjectData();
     SerializeAndWriteMapData(map, outputFolderPath);
 
     CopyImportedFiles(baseMapPath, outputFolderPath);
@@ -101,81 +103,39 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
       SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
     }
 
-    if (map.UnitObjectData is { } unitObjectData)
+    if (map.UnitObjectData != null)
     {
-      if (map.UnitSkinObjectData is { } skinData)
-      {
-        Merge(unitObjectData.BaseUnits, skinData.BaseUnits, map.TriggerStrings);
-        Merge(unitObjectData.NewUnits, skinData.NewUnits, map.TriggerStrings);
-      }
-
-      SerializeAndWriteUnitData(Path.Combine(outputFolderPath, UnitDataDirectoryPath), unitObjectData);
+      SerializeAndWriteUnitData(Path.Combine(outputFolderPath, UnitDataDirectoryPath), map.UnitObjectData);
     }
 
-    if (map.AbilityObjectData is { } abilityObjectData)
+    if (map.AbilityObjectData != null)
     {
-      if (map.AbilitySkinObjectData is { } skinData)
-      {
-        Merge(abilityObjectData.BaseAbilities, skinData.BaseAbilities, map.TriggerStrings);
-        Merge(abilityObjectData.NewAbilities, skinData.NewAbilities, map.TriggerStrings);
-      }
-
-      SerializeAndWriteAbilityData(Path.Combine(outputFolderPath, AbilityDataDirectoryPath), abilityObjectData);
+      SerializeAndWriteAbilityData(Path.Combine(outputFolderPath, AbilityDataDirectoryPath), map.AbilityObjectData);
     }
 
-    if (map.ItemObjectData is { } itemObjectData)
+    if (map.ItemObjectData != null)
     {
-      if (map.ItemSkinObjectData is { } skinData)
-      {
-        Merge(itemObjectData.BaseItems, skinData.BaseItems, map.TriggerStrings);
-        Merge(itemObjectData.NewItems, skinData.NewItems, map.TriggerStrings);
-      }
-
-      SerializeAndWriteItemData(Path.Combine(outputFolderPath, ItemDataDirectoryPath), itemObjectData);
+      SerializeAndWriteItemData(Path.Combine(outputFolderPath, ItemDataDirectoryPath), map.ItemObjectData);
     }
 
-    if (map.DestructableObjectData is { } destructableObjectData)
+    if (map.DestructableObjectData != null)
     {
-      if (map.DestructableSkinObjectData is { } skinData)
-      {
-        Merge(destructableObjectData.BaseDestructables, skinData.BaseDestructables, map.TriggerStrings);
-        Merge(destructableObjectData.NewDestructables, skinData.NewDestructables, map.TriggerStrings);
-      }
-
-      SerializeAndWriteDestructableData(Path.Combine(outputFolderPath, DestructableDataDirectoryPath), destructableObjectData);
+      SerializeAndWriteDestructableData(Path.Combine(outputFolderPath, DestructableDataDirectoryPath), map.DestructableObjectData);
     }
 
-    if (map.DoodadObjectData is { } doodadObjectData)
+    if (map.DoodadObjectData != null)
     {
-      if (map.DoodadSkinObjectData is { } skinData)
-      {
-        Merge(doodadObjectData.BaseDoodads, skinData.BaseDoodads, map.TriggerStrings);
-        Merge(doodadObjectData.NewDoodads, skinData.NewDoodads, map.TriggerStrings);
-      }
-
-      SerializeAndWriteDoodadData(Path.Combine(outputFolderPath, DoodadDataDirectoryPath), doodadObjectData);
+      SerializeAndWriteDoodadData(Path.Combine(outputFolderPath, DoodadDataDirectoryPath), map.DoodadObjectData);
     }
 
-    if (map.BuffObjectData is { } buffObjectData)
+    if (map.BuffObjectData != null)
     {
-      if (map.BuffSkinObjectData is { } skinData)
-      {
-        Merge(buffObjectData.BaseBuffs, skinData.BaseBuffs, map.TriggerStrings);
-        Merge(buffObjectData.NewBuffs, skinData.NewBuffs, map.TriggerStrings);
-      }
-
-      SerializeAndWriteBuffData(Path.Combine(outputFolderPath, BuffDataDirectoryPath), buffObjectData);
+      SerializeAndWriteBuffData(Path.Combine(outputFolderPath, BuffDataDirectoryPath), map.BuffObjectData);
     }
 
-    if (map.UpgradeObjectData is { } upgradeObjectData)
+    if (map.UpgradeObjectData != null)
     {
-      if (map.UpgradeSkinObjectData is { } skinData)
-      {
-        Merge(upgradeObjectData.BaseUpgrades, skinData.BaseUpgrades, map.TriggerStrings);
-        Merge(upgradeObjectData.NewUpgrades, skinData.NewUpgrades, map.TriggerStrings);
-      }
-
-      SerializeAndWriteUpgradeData(Path.Combine(outputFolderPath, UpgradeDataDirectoryPath), upgradeObjectData);
+      SerializeAndWriteUpgradeData(Path.Combine(outputFolderPath, UpgradeDataDirectoryPath), map.UpgradeObjectData);
     }
   }
 
@@ -408,96 +368,5 @@ public sealed class W3XToMapDataConverter(IMapper mapper)
   private void SerializeAndWrite(string path, object value)
   {
     File.WriteAllText(path, JsonSerializer.Serialize(value, _jsonSerializerOptions));
-  }
-
-  private static void Merge(
-    List<LevelObjectModification> target,
-    List<LevelObjectModification> source,
-    TriggerStrings? triggerStrings)
-  {
-    Merge(
-      target,
-      source,
-      modification => modification.ToString(),
-      modification => modification.Modifications,
-      triggerStrings);
-  }
-
-  private static void Merge(
-    List<SimpleObjectModification> target,
-    List<SimpleObjectModification> source,
-    TriggerStrings? triggerStrings)
-  {
-    Merge(
-      target,
-      source,
-      modification => modification.ToString(),
-      modification => modification.Modifications,
-      triggerStrings);
-  }
-
-  private static void Merge(
-    List<VariationObjectModification> target,
-    List<VariationObjectModification> source,
-    TriggerStrings? triggerStrings)
-  {
-    Merge(
-      target,
-      source,
-      modification => modification.ToString(),
-      modification => modification.Modifications,
-      triggerStrings);
-  }
-
-  private static void Merge<T, TT>(
-    List<T> target,
-    List<T> source,
-    Func<T, string> keySelector,
-    Func<T, List<TT>> modSelector,
-    TriggerStrings? triggerStrings = null)
-  where TT : ObjectDataModification
-  {
-    if (target.Count == 0 || source.Count == 0)
-    {
-      return;
-    }
-
-    var sourceObjects = new Dictionary<string, T>(source.Count, StringComparer.Ordinal);
-
-    foreach (var sourceObject in source)
-    {
-      sourceObjects[keySelector(sourceObject)] = sourceObject;
-    }
-
-    foreach (var targetObject in target)
-    {
-      if (!sourceObjects.TryGetValue(keySelector(targetObject), out var sourceObject))
-      {
-        continue;
-      }
-
-      var targetMods = modSelector(targetObject);
-      var sourceMods = modSelector(sourceObject);
-
-      if (triggerStrings != null)
-      {
-        LocalizeModifications(targetMods, triggerStrings);
-        LocalizeModifications(sourceMods, triggerStrings);
-      }
-
-      targetMods.AddRange(sourceMods);
-    }
-  }
-
-  private static void LocalizeModifications<T>(IEnumerable<T> modifications, TriggerStrings triggerStrings)
-    where T : ObjectDataModification
-  {
-    foreach (var modification in modifications)
-    {
-      if (modification.Type == ObjectDataType.String)
-      {
-        modification.Value = modification.ValueAsString.Localize(triggerStrings);
-      }
-    }
   }
 }
