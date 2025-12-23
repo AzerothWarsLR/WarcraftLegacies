@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Launcher.Settings;
 
-namespace Launcher.Services;
+namespace Launcher.Paths;
 
 public sealed class SharedPathOptions
 {
@@ -12,6 +12,7 @@ public sealed class SharedPathOptions
   {
     var settings = AppSettings.Current;
     var rootPath = settings.CompilerSettings.RootPath;
+    var mapDataRootPath = Path.Combine(rootPath, PathConventions.MapDataPath, mapName);
     var options = new SharedPathOptions
     {
       W3XFolderPath = Path.Combine(rootPath, PathConventions.MapsPath, $"{mapName}.w3x"),
@@ -20,9 +21,32 @@ public sealed class SharedPathOptions
       BackupPath = Path.Combine(rootPath, PathConventions.BackupsPath),
       ScriptArtifactPath = Path.Combine(rootPath, PathConventions.ArtifactsPath),
       Warcraft3ExecutablePath = settings.CompilerSettings.Warcraft3ExecutablePath,
-      MapDataPath = Path.Combine(settings.CompilerSettings.RootPath, PathConventions.MapDataPath, mapName),
       SourceProjectPath = Path.Combine(rootPath, PathConventions.SrcPath, $"{mapName}{PathConventions.SourceProjectSuffix}"),
-      SharedProjectPath = Path.Combine(rootPath, PathConventions.SrcPath, $"{mapName}{PathConventions.SharedProjectSuffix}")
+      SharedProjectPath = Path.Combine(rootPath, PathConventions.SrcPath, $"{mapName}{PathConventions.SharedProjectSuffix}"),
+      MapDataPathOptions = new MapDataPathOptions
+      {
+        RootPath = mapDataRootPath,
+        AbilityDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.AbilityData),
+        BuffDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.BuffData),
+        DestructableDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.DestructableData),
+        DoodadDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.DoodadData),
+        DoodadsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Doodads),
+        ImportsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Imports),
+        ItemDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.ItemData),
+        RegionsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Regions),
+        SoundsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Sounds),
+        UnitDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.UnitData),
+        UnitsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Units),
+        UpgradeDataPath = Path.Combine(mapDataRootPath, PathConventions.MapData.UpgradeData),
+        EnvironmentPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Environment),
+        InfoPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Info),
+        PathingMapPath = Path.Combine(mapDataRootPath, PathConventions.MapData.PathingMap),
+        PreviewIconsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.PreviewIcons),
+        ShadowMapPath = Path.Combine(mapDataRootPath, PathConventions.MapData.ShadowMap),
+        MinimapPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Minimap),
+        GameInterfacePath = Path.Combine(mapDataRootPath, PathConventions.MapData.GameplayConstants),
+        SkinPath = Path.Combine(mapDataRootPath, PathConventions.MapData.GameInterface)
+      }
     };
     return options;
   }
@@ -53,11 +77,6 @@ public sealed class SharedPathOptions
   public required string ScriptArtifactPath { get; init; }
 
   /// <summary>
-  /// Path to the folder where this project's Json data is stored.
-  /// </summary>
-  public required string MapDataPath { get; init; }
-
-  /// <summary>
   /// Path to the Warcraft III executable.
   /// </summary>
   public required string Warcraft3ExecutablePath { get; init; }
@@ -71,4 +90,6 @@ public sealed class SharedPathOptions
   ///  Folder path in which the map's shared C# files are stored.
   /// </summary>
   public required string SharedProjectPath { get; init; }
+
+  public required MapDataPathOptions MapDataPathOptions { get; init; }
 }

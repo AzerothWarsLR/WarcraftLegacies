@@ -8,6 +8,7 @@ using System.Text;
 using CSharpLua;
 using Launcher.Extensions;
 using Launcher.MapMigrations;
+using Launcher.Paths;
 using Microsoft.CodeAnalysis;
 using War3Net.Build;
 using War3Net.Build.Extensions;
@@ -181,7 +182,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 
     // Update war3map.lua so you can inspect the generated Lua code easily
     Directory.CreateDirectory(options.ScriptArtifactPath);
-    File.WriteAllText(Path.Combine(options.ScriptArtifactPath, MapDataPaths.ScriptPath), map.Script);
+    File.WriteAllText(Path.Combine(options.ScriptArtifactPath, PathConventions.MapData.Script), map.Script);
   }
 
   private static void BackupFiles(string backupDirectory, string mapPath)

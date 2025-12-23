@@ -8,6 +8,7 @@ using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.JsonConverters;
+using Launcher.Paths;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -24,12 +25,14 @@ namespace Launcher.Services;
 /// </summary>
 public sealed class MapDataToMapConverter
 {
+  private readonly SharedPathOptions _sharedPathOptions;
   private readonly IMapper _mapper;
 
   private readonly JsonSerializerOptions _jsonSerializerOptions;
 
-  public MapDataToMapConverter(IMapper mapper)
+  public MapDataToMapConverter(SharedPathOptions sharedPathOptions, IMapper mapper)
   {
+    _sharedPathOptions = sharedPathOptions;
     _mapper = mapper;
     _jsonSerializerOptions = new JsonSerializerOptions
     {
@@ -48,10 +51,10 @@ public sealed class MapDataToMapConverter
   ///   Converts the provided JSON data into a <see cref="Map" /> and a set of additional files that should be included
   ///   in the output, such as imported textures.
   /// </summary>
-  public (Map Map, IEnumerable<PathData> AdditionalFiles) ConvertToMapAndAdditionalFiles(string mapDataRootDirectory)
+  public (Map Map, IEnumerable<PathData> AdditionalFiles) ConvertToMapAndAdditionalFiles()
   {
-    var map = ConvertToMap(mapDataRootDirectory);
-    var additionalFiles = GetAdditionalFiles(mapDataRootDirectory);
+    var map = ConvertToMap();
+    var additionalFiles = GetAdditionalFiles();
     return (map, additionalFiles);
   }
 
@@ -62,54 +65,35 @@ public sealed class MapDataToMapConverter
   public (Map Map, IEnumerable<DirectoryEnumerationOptions> AdditionalFiles) ConvertToMapAndAdditionalFileDirectories(
     string mapDataRootDirectory)
   {
-    var map = ConvertToMap(mapDataRootDirectory);
+    var map = ConvertToMap();
     var additionalFiles = GetAdditionalFileDirectories(mapDataRootDirectory);
     return (map, additionalFiles);
   }
 
-  private Map ConvertToMap(string mapDataRootDirectory)
+  private Map ConvertToMap()
   {
     var map = new Map
     {
-      Sounds = DeserializeSoundsFromDirectory(Path.Combine(mapDataRootDirectory, SoundsDirectoryPath)),
-      Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootDirectory, EnvironmentPath)),
-      PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootDirectory, PathingMapPath)),
-      PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootDirectory, PreviewIconsPath)),
-      Regions = DeserializeRegionsFromDirectory(Path.Combine(mapDataRootDirectory, RegionsDirectoryPath)),
-      ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
-      Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
-      TriggerStrings = DeserializeTriggerStringsFromDirectory(Path.Combine(mapDataRootDirectory, TriggerStringsDirectoryPath)),
-      Doodads = DeserializeDoodadsFromDirectory(Path.Combine(mapDataRootDirectory, DoodadsDirectoryPath)),
-      Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),
+      Sounds = DeserializeSoundsFromDirectory(_sharedPathOptions.MapDataPathOptions.SoundsPath),
+      Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(_sharedPathOptions.MapDataPathOptions.EnvironmentPath),
+      PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(_sharedPathOptions.MapDataPathOptions.PathingMapPath),
+      PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(_sharedPathOptions.MapDataPathOptions.PreviewIconsPath),
+      Regions = DeserializeRegionsFromDirectory(_sharedPathOptions.MapDataPathOptions.RegionsPath),
+      ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(_sharedPathOptions.MapDataPathOptions.ShadowMapPath),
+      Info = DeserializeFromFile<MapInfo, MapInfoDto>(_sharedPathOptions.MapDataPathOptions.InfoPath),
+      Doodads = DeserializeDoodadsFromDirectory(_sharedPathOptions.MapDataPathOptions.DoodadsPath),
+      Units = DeserializeUnitsFromDirectory(_sharedPathOptions.MapDataPathOptions.UnitsPath),
       Triggers = GenerateEmptyMapTriggers(),
 
-      AbilityObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath)),
-      BuffObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath)),
-      DestructableObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath)),
-      DoodadObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath)),
-      ItemObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath)),
-      UnitObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath)),
-      UpgradeObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath))
+      AbilityObjectData = DeserializeAbilityDataFromDirectory(_sharedPathOptions.MapDataPathOptions.AbilityDataPath),
+      BuffObjectData = DeserializeBuffDataFromDirectory(_sharedPathOptions.MapDataPathOptions.BuffDataPath),
+      DestructableObjectData = DeserializeDestructableDataFromDirectory(_sharedPathOptions.MapDataPathOptions.DestructableDataPath),
+      DoodadObjectData = DeserializeDoodadDataFromDirectory(_sharedPathOptions.MapDataPathOptions.DoodadDataPath),
+      ItemObjectData = DeserializeItemDataFromDirectory(_sharedPathOptions.MapDataPathOptions.ItemDataPath),
+      UnitObjectData = DeserializeUnitDataFromDirectory(_sharedPathOptions.MapDataPathOptions.UnitDataPath),
+      UpgradeObjectData = DeserializeUpgradeDataFromDirectory(_sharedPathOptions.MapDataPathOptions.UpgradeDataPath)
     };
     return map;
-  }
-
-  private TriggerStrings? DeserializeTriggerStringsFromDirectory(string directory)
-  {
-    if (!Directory.Exists(directory))
-    {
-      return null;
-    }
-
-    var triggerStrings = new TriggerStrings();
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
-    {
-      var fileContents = File.ReadAllText(file);
-      var triggerString = JsonSerializer.Deserialize<TriggerString>(fileContents, _jsonSerializerOptions);
-      triggerStrings.Strings.Add(triggerString);
-    }
-    return triggerStrings;
   }
 
   private MapDoodads DeserializeDoodadsFromDirectory(string directory)
@@ -405,9 +389,9 @@ public sealed class MapDataToMapConverter
     return objectData;
   }
 
-  private static IEnumerable<PathData> GetAdditionalFiles(string mapDataRootDirectory)
+  private List<PathData> GetAdditionalFiles()
   {
-    var importsDirectory = Path.Combine(mapDataRootDirectory, ImportsPath);
+    var importsDirectory = _sharedPathOptions.MapDataPathOptions.ImportsPath;
 
     var additionalFiles = Directory.Exists(importsDirectory)
       ? Directory.EnumerateFiles(importsDirectory, "*", SearchOption.AllDirectories).Select(x => new PathData
@@ -415,29 +399,23 @@ public sealed class MapDataToMapConverter
         AbsolutePath = x,
         RelativePath = Path.GetRelativePath(importsDirectory, x)
       }).ToList()
-      : new List<PathData>();
+      : [];
 
     foreach (var filePath in GetUnserializableFilePaths())
     {
       additionalFiles.Add(new PathData
       {
-        AbsolutePath = Path.Combine(mapDataRootDirectory, filePath),
+        AbsolutePath = Path.Combine(_sharedPathOptions.MapDataPathOptions.RootPath, filePath),
         RelativePath = filePath
       });
     }
 
-    additionalFiles.Add(new PathData()
-    {
-      AbsolutePath = Path.Combine(mapDataRootDirectory, GameInterfacePath),
-      RelativePath = GameInterfacePath
-    });
-
     return additionalFiles;
   }
 
-  private static IEnumerable<DirectoryEnumerationOptions> GetAdditionalFileDirectories(string mapDataRootDirectory)
+  private List<DirectoryEnumerationOptions> GetAdditionalFileDirectories(string mapDataRootDirectory)
   {
-    var importsDirectory = Path.Combine(mapDataRootDirectory, ImportsPath);
+    var importsDirectory = _sharedPathOptions.MapDataPathOptions.ImportsPath;
 
     var fileDirectories = Directory.Exists(importsDirectory)
       ? new List<DirectoryEnumerationOptions>
@@ -454,16 +432,10 @@ public sealed class MapDataToMapConverter
     {
       fileDirectories.Add(new DirectoryEnumerationOptions
       {
-        Path = mapDataRootDirectory,
+        Path = _sharedPathOptions.MapDataPathOptions.RootPath,
         SearchPattern = filePath
       });
     }
-
-    fileDirectories.Add(new DirectoryEnumerationOptions
-    {
-      Path = mapDataRootDirectory,
-      SearchPattern = GameInterfacePath
-    });
 
     return fileDirectories;
   }

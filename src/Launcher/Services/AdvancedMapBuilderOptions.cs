@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using Launcher.Paths;
 using Launcher.Settings;
 
 namespace Launcher.Services;

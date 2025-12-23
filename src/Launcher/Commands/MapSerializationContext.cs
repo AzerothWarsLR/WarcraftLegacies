@@ -7,7 +7,8 @@ internal sealed class MapSerializationContext(string mapName) : MapCommandContex
 {
   public override void Execute()
   {
-    var converter = new W3XToMapDataConverter(new Mapper(AutoMapperConfigurationProvider.GetConfiguration()));
-    converter.Convert(Paths.W3XFolderPath, Paths.MapDataPath);
+    var converter = new W3XToMapDataConverter(new Mapper(AutoMapperConfigurationProvider.GetConfiguration()),
+      W3XToMapDataConverterOptions.Create(Paths));
+    converter.Convert(Paths.W3XFolderPath);
   }
 }
