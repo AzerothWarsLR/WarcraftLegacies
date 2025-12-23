@@ -7,7 +7,6 @@ using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
 using War3Net.Build.Info;
-using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using Region = War3Net.Build.Environment.Region;
@@ -20,22 +19,15 @@ public sealed class AutoMapperConfigurationProvider
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
-      cfg.CreateMap<MapAbilityObjectDataDto, AbilityObjectData>().ReverseMap();
-      cfg.CreateMap<MapBuffObjectDataDto, BuffObjectData>().ReverseMap();
-      cfg.CreateMap<MapDestructableObjectDataDto, DestructableObjectData>().ReverseMap();
-      cfg.CreateMap<MapDoodadObjectDataDto, DoodadObjectData>().ReverseMap();
       cfg.CreateMap<MapEnvironmentDto, MapEnvironment>()
         .ForMember(dest => dest.TerrainTiles,
           opt => opt.MapFrom<TerrainTileResolver>())
         .ReverseMap();
-      cfg.CreateMap<MapItemObjectDataDto, ItemObjectData>().ReverseMap();
       cfg.CreateMap<MapInfoDto, MapInfo>().ReverseMap();
       cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();
       cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();
       cfg.CreateMap<QuadrilateralDto, Quadrilateral>().ReverseMap();
       cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
-      cfg.CreateMap<UnitObjectDataDto, UnitObjectData>().ReverseMap();
-      cfg.CreateMap<MapUpgradeObjectDataDto, UpgradeObjectData>().ReverseMap();
       cfg.CreateMap<MapTriggersDto, MapTriggers>()
         .ForMember(dest => dest.TriggerItems, opt
           => opt.MapFrom<TriggerItemValueResolver>())

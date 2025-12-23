@@ -148,11 +148,6 @@ public static class MapExtensions
       Write(destinationRootDirectory, MapCustomTextTriggers.FileName, map.CustomTextTriggers);
     }
 
-    if (map.TriggerStrings != null)
-    {
-      Write(destinationRootDirectory, TriggerStrings.MapFileName, map.TriggerStrings);
-    }
-
     if (map.Doodads != null)
     {
       Write(destinationRootDirectory, MapDoodads.FileName, map.Doodads);
@@ -219,14 +214,6 @@ public static class MapExtensions
       Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));
       File.Copy(file.AbsolutePath, destinationPath, true);
     }
-  }
-
-  private static void Write(string rootFolderPath, string subFolderPath, TriggerStrings triggerStrings)
-  {
-    var path = Path.Combine(rootFolderPath, subFolderPath);
-    using var stream = File.Open(path, FileMode.Create);
-    using var writer = new StreamWriter(stream, Encoding.UTF8, leaveOpen: false);
-    writer.WriteTriggerStrings(triggerStrings);
   }
 
   private static void Write(string rootFolderPath, string subFolderPath, string rawText)
