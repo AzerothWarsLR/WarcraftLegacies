@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
-using Launcher.Extensions;
 using War3Net.Build.Object;
 
 namespace Launcher.Services;
@@ -29,7 +30,7 @@ public sealed class JsonModifierProvider
           {
             foreach (var modification in modificationSet)
             {
-              modification.Value = modification.GetCastedValue();
+              modification.Value = GetCastedValue(modification);
             }
           }
 
@@ -37,7 +38,7 @@ public sealed class JsonModifierProvider
           {
             foreach (var modification in levelObjectDataModificationSet)
             {
-              modification.Value = modification.GetCastedValue();
+              modification.Value = GetCastedValue(modification);
             }
           }
 
@@ -45,7 +46,7 @@ public sealed class JsonModifierProvider
           {
             foreach (var modification in simpleObjectDataModificationSet)
             {
-              modification.Value = modification.GetCastedValue();
+              modification.Value = GetCastedValue(modification);
             }
           }
 
@@ -53,13 +54,35 @@ public sealed class JsonModifierProvider
           {
             foreach (var modification in variationObjectDataModificationSet)
             {
-              modification.Value = modification.GetCastedValue();
+              modification.Value = GetCastedValue(modification);
             }
           }
 
           setProperty(obj, value);
         };
       }
+    }
+  }
+
+  private static object GetCastedValue(ObjectDataModification modification)
+  {
+    if (modification.Value is not JsonElement jsonElement)
+    {
+      throw new InvalidOperationException();
+    }
+
+    switch (modification.Type)
+    {
+      case ObjectDataType.Int:
+        return jsonElement.GetInt32();
+      case ObjectDataType.Real:
+        return jsonElement.GetSingle();
+      case ObjectDataType.Unreal:
+        return jsonElement.GetSingle();
+      case ObjectDataType.String:
+        return jsonElement.GetString();
+      default:
+        throw new ArgumentOutOfRangeException(nameof(modification));
     }
   }
 }
