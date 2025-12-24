@@ -1,7 +1,8 @@
 ﻿using System;
 using System.CommandLine;
+using Launcher.CLI.Contexts;
 
-namespace Launcher.Commands;
+namespace Launcher.CLI.Commands;
 
 internal sealed class MapCommand<T> : Command where T : MapCommandContext
 {

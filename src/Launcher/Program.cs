@@ -1,5 +1,5 @@
 ﻿using System.CommandLine;
-using Launcher.Commands;
+using Launcher.CLI.Commands;
 
 namespace Launcher;
 
@@ -16,19 +16,19 @@ internal static class Program
     [
       new Command("json-to-w3x")
       {
-        MapCommandBuilder.Build(),
-        MapCommandBuilder.Test(),
-        MapCommandBuilder.Publish()
+        MapCommandFactory.Build(),
+        MapCommandFactory.Test(),
+        MapCommandFactory.Publish()
       },
 
       new Command("w3x-to-json")
       {
-        MapCommandBuilder.Serialize()
+        MapCommandFactory.Serialize()
       },
 
       new Command("generate")
       {
-        MapCommandBuilder.Generate()
+        MapCommandFactory.Generate()
       }
     ];
   }

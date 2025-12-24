@@ -2,7 +2,7 @@
 using AutoMapper;
 using Launcher.Services;
 
-namespace Launcher.Commands;
+namespace Launcher.CLI.Contexts;
 
 internal sealed class MapBuildContext : MapCommandContext
 {
@@ -40,4 +40,10 @@ internal sealed class MapBuildContext : MapCommandContext
         throw new ArgumentOutOfRangeException($"Unsupported output kind: {OutputKind}");
     }
   }
+}
+
+internal enum MapOutputKind
+{
+  Directory,
+  File
 }
