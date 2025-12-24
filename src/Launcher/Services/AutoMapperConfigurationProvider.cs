@@ -7,7 +7,6 @@ using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
 using War3Net.Build.Info;
-using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using Region = War3Net.Build.Environment.Region;
 
@@ -28,10 +27,6 @@ public sealed class AutoMapperConfigurationProvider
       cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();
       cfg.CreateMap<QuadrilateralDto, Quadrilateral>().ReverseMap();
       cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
-      cfg.CreateMap<MapTriggersDto, MapTriggers>()
-        .ForMember(dest => dest.TriggerItems, opt
-          => opt.MapFrom<TriggerItemValueResolver>())
-        .ReverseMap();
 
       cfg.CreateMap<SoundDto, Sound>().ReverseMap();
       cfg.CreateMap<PlayerDataDto, PlayerData>().ReverseMap();
@@ -48,7 +43,6 @@ public sealed class AutoMapperConfigurationProvider
         .ForMember(dest => dest.Color, opt
         => opt.MapFrom<ColorValueResolver>())
         .ReverseMap();
-      cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
       cfg.CreateMap<ForceDataDto, ForceData>().ReverseMap();
       cfg.CreateMap<UpgradeDataDto, UpgradeData>().ReverseMap();
       cfg.CreateMap<TechDataDto, TechData>().ReverseMap();
