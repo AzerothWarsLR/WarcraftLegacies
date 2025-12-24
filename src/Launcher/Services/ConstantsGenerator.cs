@@ -76,10 +76,10 @@ public sealed class ConstantsGenerator(ConstantsGeneratorOptions options)
 
     foreach (var region in regions)
     {
-      var fieldName = Sanitize(region.Name.Replace(" ", "_"));
-      var fieldValue = string.Create(System.Globalization.CultureInfo.InvariantCulture,
+      var propertyName = Sanitize(region.Name.Replace(" ", "_"));
+      var propertyValue = string.Create(System.Globalization.CultureInfo.InvariantCulture,
         $"new Rectangle({region.Left}f, {region.Bottom}f, {region.Right}f, {region.Top}f)");
-      writer.WriteLine($"  public static readonly Rectangle {fieldName} = {fieldValue};");
+      writer.WriteLine($"  public static Rectangle {propertyName} {{ get; set; }} = {propertyValue};");
     }
 
     writer.WriteLine("}");
