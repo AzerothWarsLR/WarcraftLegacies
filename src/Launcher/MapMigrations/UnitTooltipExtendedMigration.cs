@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Launcher.Extensions;
 using War3Api.Object;
+using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.CodeAnalysis.Jass.Extensions;
 using WarcraftLegacies.Shared;
@@ -81,9 +83,9 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
 
     var innateAbilities = unit.AbilitiesNormal
-      .Where(x => x.HasVisibleIcon())
+      .Where(HasVisibleIcon)
       .Where(x => !x.TechtreeRequirements.Any())
-      .OrderBy(AbilityExtensions.GetPriority)
+      .OrderBy(GetPriority)
       .Select((x) => x.TextName)
       .ToArray();
     if (innateAbilities.Length != 0)
@@ -101,7 +103,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
     var learnableAbilities = unit.AbilitiesNormal
       .Where(x => x.TechtreeRequirements.Any())
-      .OrderBy(AbilityExtensions.GetPriority)
+      .OrderBy(GetPriority)
       .Select(x => x.TextName)
       .ToArray();
     if (learnableAbilities.Length != 0)
@@ -118,7 +120,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
 
     var heroAbilities = unit.AbilitiesHero
-      .OrderBy(AbilityExtensions.GetPriority)
+      .OrderBy(GetPriority)
       .Select((x) => x.TextName)
       .ToArray();
 
@@ -136,7 +138,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
 
     var unitsSold = unit.TechtreeUnitsSold
-      .OrderBy(x => x.GetPriority())
+      .OrderBy(GetPriority)
       .Select(x => x.TextName)
       .ToArray();
 
@@ -149,8 +151,8 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
   {
     var unitsTrained = unit.TechtreeUnitsTrained
-      .Where(x => !x.TechtreeRequirements.Any(x1 => x1.IsUpgrade()))
-      .OrderBy(x => x.GetPriority())
+      .Where(x => !x.TechtreeRequirements.Any(IsUpgrade))
+      .OrderBy(GetPriority)
       .Select(GetBestName)
       .ToArray();
 
@@ -163,8 +165,8 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   private static void AppendUnlockableUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
   {
     var unitsTrained = unit.TechtreeUnitsTrained
-      .Where(x => x.TechtreeRequirements.Any(x1 => x1.IsUpgrade()))
-      .OrderBy(x => x.GetPriority())
+      .Where(x => x.TechtreeRequirements.Any(IsUpgrade))
+      .OrderBy(GetPriority)
       .Select(GetBestName)
       .ToArray();
 
@@ -177,8 +179,8 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
   {
     var researchesAvailable = unit.TechtreeResearchesAvailable
-      .OrderBy(x => x.GetPriority())
-      .Select(x => x.GetTextName())
+      .OrderBy(GetPriority)
+      .Select(GetTextName)
       .ToArray();
 
     if (researchesAvailable.Length != 0)
@@ -190,7 +192,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   private static void AppendUpgradesTo(StringBuilder tooltipBuilder, Unit unit)
   {
     var upgradesTo = unit.TechtreeUpgradesTo
-      .OrderBy(x => x.GetPriority())
+      .OrderBy(GetPriority)
       .Select(x => x.TextName)
       .ToArray();
 
@@ -202,8 +204,8 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
   private static void AppendSoldItems(StringBuilder tooltipBuilder, Unit unit)
   {
-    var soldItems = unit.GetTechtreeItemsSoldAndMade()
-      .OrderBy(x => x.GetPriority())
+    var soldItems = GetTechtreeItemsSoldAndMade(unit)
+      .OrderBy(GetPriority)
       .Select(x => x.TextName)
       .ToArray();
 
@@ -241,7 +243,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
   private static void AppendTargetsAllowed(StringBuilder tooltipBuilder, Unit unit)
   {
-    var targetsAllowed = unit.GetAllTargetsAllowed();
+    var targetsAllowed = GetAllTargetsAllowed(unit);
 
     if (targetsAllowed.Count == 0)
     {
@@ -250,9 +252,9 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
     tooltipBuilder.Append(LineSeparator + LineSeparator);
 
-    if (targetsAllowed.CanTargetGround())
+    if (CanTargetGround(targetsAllowed))
     {
-      tooltipBuilder.Append(targetsAllowed.CanTargetAir()
+      tooltipBuilder.Append(CanTargetAir(targetsAllowed)
         ? "|cffffcc00Attacks land and air units.|r"
         : "|cffffcc00Attacks land units.|r");
     }
@@ -275,5 +277,153 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       //do nothing
     }
     return unit.TextName;
+  }
+
+  private static bool HasVisibleIcon(Ability ability)
+  {
+    if (ability.ArtButtonPositionNormalY == -11)
+    {
+      return false;
+    }
+
+    return ability is not (InventoryPackMule or Inventory2SlotUnitHuman or Inventory2SlotUnitOrc or Inventory2SlotUnitUndead
+      or Inventory2SlotUnitNightElf or Invulnerable or DefenseBonus1 or Ultravision or SellItem or AlliedBuilding or
+      PurchaseItem or LightningAttack or Inventory or AttributeModifierSkill or OrbOfCorruption or ReinforcedBurrows
+      or SpikedBarricades or BlightDispelSmall or BlightDispelLarge or CargoHoldBurrow or CargoHoldDeath
+      or CargoHoldDevour or CargoHoldShip or CargoHoldTank or CargoHoldTransport or CargoHoldGoldMine
+      or CargoHoldMeatWagon or AuraRegenerationStatue or TreeOfLifeForAttachingArt or ChaosGrom or ChaosGrunt
+      or ChaosPeon or ChaosKodo or ChaosRaider or ChaosShaman or ChaosCargoLoad or ReturnLumber);
+  }
+
+  /// <summary>
+  /// Determines the order that abilities appear in tooltips.
+  /// </summary>
+  private static int GetPriority(Ability ability)
+  {
+    var (x, y) = (ability.ArtButtonPositionNormalX, ability.ArtButtonPositionNormalY);
+    return x - y * 10;
+  }
+
+  private static int GetPriority(Item item)
+  {
+    try
+    {
+      var (x, y) = (item.ArtButtonPositionX, item.ArtButtonPositionY);
+      return x - y * 10;
+    }
+    catch
+    {
+      return 0;
+    }
+  }
+
+  private static bool CanTargetGround(List<Target> targets)
+  {
+    if (targets.Contains(Target.Ground))
+    {
+      return true;
+    }
+
+    return !targets.Contains(Target.Air);
+  }
+
+  private static bool CanTargetAir(List<Target> targets)
+  {
+    if (targets.Contains(Target.Air))
+    {
+      return true;
+    }
+
+    return !targets.Contains(Target.Ground);
+  }
+
+  private static bool IsUpgrade(Tech tech)
+  {
+    try
+    {
+      _ = tech.AsUpgrade;
+      return true;
+    }
+    catch
+    {
+      return false;
+    }
+  }
+
+  private static string GetTextName(Upgrade upgrade)
+  {
+    try
+    {
+      return upgrade.TextName[0];
+    }
+    catch
+    {
+      try
+      {
+        return upgrade.TextName[1];
+      }
+      catch
+      {
+        return "";
+      }
+    }
+  }
+
+  private static int GetPriority(Upgrade upgrade)
+  {
+    try
+    {
+      var (x, y) = (upgrade.ArtButtonPositionX, upgrade.ArtButtonPositionY);
+      return x - y * 10;
+    }
+    catch
+    {
+      return 0;
+    }
+  }
+
+  private static List<Target> GetAllTargetsAllowed(Unit unit)
+  {
+    List<Target> targetsAllowed = new();
+    if (unit.CombatAttacksEnabledRaw is 1 or 3)
+    {
+      try
+      {
+        targetsAllowed.AddRange(unit.CombatAttack1TargetsAllowed);
+      }
+      catch
+      {
+        //do nothing
+      }
+    }
+    if (unit.CombatAttacksEnabledRaw is 2 or 3)
+    {
+      try
+      {
+        targetsAllowed.AddRange(unit.CombatAttack2TargetsAllowed);
+      }
+      catch
+      {
+        //do nothing
+      }
+    }
+
+    return targetsAllowed;
+  }
+
+  private static IEnumerable<Item> GetTechtreeItemsSoldAndMade(Unit unit)
+  {
+    var itemsSold = new List<Item>();
+    itemsSold.AddRange(unit.TechtreeItemsSold);
+
+    itemsSold.AddRange(unit.TechtreeItemsMade);
+
+    return itemsSold;
+  }
+
+  private static int GetPriority(Unit unit)
+  {
+    var (x, y) = (unit.ArtButtonPositionX, unit.ArtButtonPositionY);
+    return x + y * 10;
   }
 }
