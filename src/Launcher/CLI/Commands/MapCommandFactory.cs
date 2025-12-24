@@ -1,6 +1,7 @@
 ﻿using System.CommandLine;
 using System.IO;
 using Launcher.CLI.Contexts;
+using Launcher.Settings;
 using MapBuildCommand = Launcher.CLI.Commands.MapCommand<Launcher.CLI.Contexts.MapBuildContext>;
 using MapGenerateCommand = Launcher.CLI.Commands.MapCommand<Launcher.CLI.Contexts.MapGenerateContext>;
 using MapSerializeCommand = Launcher.CLI.Commands.MapCommand<Launcher.CLI.Contexts.MapSerializationContext>;
