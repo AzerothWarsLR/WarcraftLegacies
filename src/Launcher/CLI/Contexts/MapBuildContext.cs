@@ -1,5 +1,4 @@
 ﻿using System;
-using AutoMapper;
 using Launcher.Services;
 
 namespace Launcher.CLI.Contexts;
@@ -17,7 +16,7 @@ internal sealed class MapBuildContext : MapCommandContext
 
   public override void Execute()
   {
-    var converter = new MapDataToMapConverter(MapDataToMapConverterOptions.Create(Paths), new Mapper(AutoMapperConfigurationProvider.GetConfiguration()));
+    var converter = new MapDataToMapConverter(MapDataToMapConverterOptions.Create(Paths));
     var builder = new AdvancedMapBuilder(Builder);
 
     switch (OutputKind)
