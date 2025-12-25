@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Text.Json.Serialization.Metadata;
-using AutoMapper;
 using Launcher.DataTransferObjects;
-using Launcher.JsonConverters;
+using Launcher.Infrastructure;
 using Launcher.Paths;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -23,20 +19,8 @@ namespace Launcher.Services;
 /// <summary>
 ///   Converts collections of loose files into a <see cref="Map" />.
 /// </summary>
-public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, IMapper mapper)
+public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
 {
-  private readonly JsonSerializerOptions _jsonSerializerOptions = new()
-  {
-    IgnoreReadOnlyProperties = true,
-    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
-    WriteIndented = true,
-    TypeInfoResolver = new DefaultJsonTypeInfoResolver
-    {
-      Modifiers = { JsonModifierProvider.CastModificationSets }
-    },
-    Converters = { new ColorJsonConverter() }
-  };
-
   /// <summary>
   ///   Converts the provided JSON data into a <see cref="Map" /> and a set of additional files that should be included
   ///   in the output, such as imported textures.
@@ -64,12 +48,12 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     var map = new Map
     {
       Sounds = DeserializeSounds(),
-      Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(options.MapDataPaths.EnvironmentPath),
-      PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(options.MapDataPaths.PathingMapPath),
-      PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(options.MapDataPaths.PreviewIconsPath),
+      Environment = JsonHelper.DeserializeIfExist<MapEnvironment, MapEnvironmentDto>(options.MapDataPaths.EnvironmentPath),
+      PathingMap = JsonHelper.DeserializeIfExist<MapPathingMap, MapPathingMapDto>(options.MapDataPaths.PathingMapPath),
+      PreviewIcons = JsonHelper.DeserializeIfExist<MapPreviewIcons, MapPreviewIconsDto>(options.MapDataPaths.PreviewIconsPath),
       Regions = DeserializeRegions(),
-      ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath),
-      Info = DeserializeFromFile<MapInfo, MapInfoDto>(options.MapDataPaths.InfoPath),
+      ShadowMap = JsonHelper.DeserializeIfExist<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath),
+      Info = JsonHelper.DeserializeIfExist<MapInfo, MapInfoDto>(options.MapDataPaths.InfoPath),
       Doodads = DeserializeDoodads(),
       Units = DeserializeUnits(),
       Triggers = GenerateEmptyMapTriggers(),
@@ -88,22 +72,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
   private MapDoodads DeserializeDoodads()
   {
     var mapDoodads = new MapDoodads(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
-    var files = Directory.EnumerateFiles(options.MapDataPaths.DoodadsPath, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.DoodadsPath))
     {
-      var fileContents = File.ReadAllText(file);
-      var doodadDtoSet = JsonSerializer.Deserialize<HashSet<DoodadDataDto>>(fileContents, _jsonSerializerOptions);
-
-      if (doodadDtoSet == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(HashSet<DoodadDataDto>)}.");
-      }
-
-      foreach (var doodadDto in doodadDtoSet)
-      {
-        var doodad = mapper.Map<DoodadData>(doodadDto);
-        mapDoodads.Doodads.Add(doodad);
-      }
+      mapDoodads.Doodads.AddRange(JsonHelper.Deserialize<DoodadData[], DoodadDataDto[]>(file));
     }
     return mapDoodads;
   }
@@ -111,22 +82,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
   private MapUnits DeserializeUnits()
   {
     var mapUnits = new MapUnits(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
-    var files = Directory.EnumerateFiles(options.MapDataPaths.UnitsPath, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UnitsPath))
     {
-      var fileContents = File.ReadAllText(file);
-      var unitDtoSet = JsonSerializer.Deserialize<HashSet<UnitDataDto>>(fileContents, _jsonSerializerOptions);
-
-      if (unitDtoSet == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(HashSet<UnitDataDto>)}.");
-      }
-
-      foreach (var unitDto in unitDtoSet)
-      {
-        var unit = mapper.Map<UnitData>(unitDto);
-        mapUnits.Units.Add(unit);
-      }
+      mapUnits.Units.AddRange(JsonHelper.Deserialize<UnitData[], UnitDataDto[]>(file));
     }
     return mapUnits;
   }
@@ -140,13 +98,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     }
 
     var regions = new MapRegions(MapRegionsFormatVersion.v5);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(directory))
     {
-      var fileContents = File.ReadAllText(file);
-      var dataTransferObject = JsonSerializer.Deserialize<RegionDto>(fileContents, _jsonSerializerOptions);
-      var region = mapper.Map<Region>(dataTransferObject);
-      regions.Regions.Add(region);
+      regions.Regions.Add(JsonHelper.Deserialize<Region, RegionDto>(file));
     }
     return regions;
   }
@@ -160,13 +114,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     }
 
     var sounds = new MapSounds(MapSoundsFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(directory))
     {
-      var fileContents = File.ReadAllText(file);
-      var dataTransferObject = JsonSerializer.Deserialize<SoundDto>(fileContents, _jsonSerializerOptions);
-      var sound = mapper.Map<Sound>(dataTransferObject);
-      sounds.Sounds.Add(sound);
+      sounds.Sounds.AddRange(JsonHelper.Deserialize<Sound, SoundDto>(file));
     }
     return sounds;
   }
@@ -174,17 +124,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
   private UpgradeObjectData DeserializeUpgradeData()
   {
     var objectData = new UpgradeObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(options.MapDataPaths.UpgradeDataPath, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UpgradeDataPath))
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<LevelObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<LevelObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseUpgrades.Add(objectModification);
@@ -207,17 +149,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     }
 
     var objectData = new ItemObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(directory))
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<SimpleObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseItems.Add(objectModification);
@@ -243,14 +177,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
     foreach (var file in files)
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<VariationObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(VariationObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<VariationObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseDoodads.Add(objectModification);
@@ -273,17 +200,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     }
 
     var objectData = new DestructableObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(directory))
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<SimpleObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseDestructables.Add(objectModification);
@@ -306,17 +225,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     }
 
     var objectData = new BuffObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(directory))
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<SimpleObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseBuffs.Add(objectModification);
@@ -333,17 +244,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
   private AbilityObjectData DeserializeAbilityData()
   {
     var objectData = new AbilityObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(options.MapDataPaths.AbilityDataPath, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.AbilityDataPath))
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<LevelObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(LevelObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<LevelObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseAbilities.Add(objectModification);
@@ -360,17 +263,9 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
   private UnitObjectData DeserializeUnitData()
   {
     var objectData = new UnitObjectData(ObjectDataFormatVersion.v3);
-    var files = Directory.EnumerateFiles(options.MapDataPaths.UnitDataPath, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
+    foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UnitDataPath))
     {
-      var fileContents = File.ReadAllText(file);
-      var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
-
-      if (objectModification == null)
-      {
-        throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
-      }
-
+      var objectModification = JsonHelper.Deserialize<SimpleObjectModification>(file);
       if (objectModification.NewId == 0)
       {
         objectData.BaseUnits.Add(objectModification);
@@ -439,17 +334,6 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options, 
     });
 
     return fileDirectories;
-  }
-
-  private TReturn? DeserializeFromFile<TReturn, TDataTransferObject>(string filePath)
-  {
-    if (!File.Exists(filePath))
-    {
-      return default;
-    }
-
-    var dto = JsonSerializer.Deserialize<TDataTransferObject>(File.ReadAllText(filePath), _jsonSerializerOptions);
-    return mapper.Map<TReturn>(dto);
   }
 
   private static MapTriggers GenerateEmptyMapTriggers()
