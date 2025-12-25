@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Launcher.Services;
+﻿using Launcher.Services;
 
 namespace Launcher.CLI.Contexts;
 
@@ -18,9 +17,7 @@ internal sealed class MapGenerateContext : MapCommandContext
   /// <inheritdoc />
   public override void Execute()
   {
-    var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
-    var mapper = new Mapper(autoMapperConfig);
-    var conversionService = new MapDataToMapConverter(SerializerOptions, mapper);
+    var conversionService = new MapDataToMapConverter(SerializerOptions);
     var (map, _) = conversionService.ConvertToMapAndAdditionalFiles();
 
     var constantsGenerator = new ConstantsGenerator(GeneratorOptions);

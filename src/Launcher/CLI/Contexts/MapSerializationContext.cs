@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Launcher.Services;
+﻿using Launcher.Services;
 
 namespace Launcher.CLI.Contexts;
 
@@ -14,8 +13,7 @@ internal sealed class MapSerializationContext : MapCommandContext
 
   public override void Execute()
   {
-    var converter = new W3XToMapDataConverter(new Mapper(AutoMapperConfigurationProvider.GetConfiguration()),
-      W3XToMapDataConverterOptions.Create(Paths));
+    var converter = new W3XToMapDataConverter(W3XToMapDataConverterOptions.Create(Paths));
     converter.Convert(Paths.W3XFolderPath);
   }
 }
