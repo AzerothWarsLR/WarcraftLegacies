@@ -16,13 +16,11 @@ public sealed class AutoMapperConfigurationProvider
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
-      cfg.CreateMap<MapEnvironmentDto, MapEnvironment>().ReverseMap();
       cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();
       cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();
       cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
 
       cfg.CreateMap<SoundDto, Sound>().ReverseMap();
-      cfg.CreateMap<TerrainTileDto, TerrainTile>().ReverseMap();
       cfg.CreateMap<UnitData, UnitDataDto>().ForMember(dest => dest.Position, opt
         => opt.MapFrom<UnitDataDtoZPositionValueResolver>());
       cfg.CreateMap<UnitDataDto, UnitData>().ForMember(dest => dest.Position, opt

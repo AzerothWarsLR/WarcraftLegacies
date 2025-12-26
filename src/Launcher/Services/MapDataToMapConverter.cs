@@ -48,7 +48,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     var map = new Map
     {
       Sounds = DeserializeSounds(),
-      Environment = JsonHelper.DeserializeIfExist<MapEnvironment, MapEnvironmentDto>(options.MapDataPaths.EnvironmentPath),
+      Environment = JsonHelper.DeserializeIfExist<MapEnvironment>(options.MapDataPaths.EnvironmentPath),
       PathingMap = JsonHelper.DeserializeIfExist<MapPathingMap, MapPathingMapDto>(options.MapDataPaths.PathingMapPath),
       PreviewIcons = JsonHelper.DeserializeIfExist<MapPreviewIcons, MapPreviewIconsDto>(options.MapDataPaths.PreviewIconsPath),
       Regions = DeserializeRegions(),
