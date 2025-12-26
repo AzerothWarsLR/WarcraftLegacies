@@ -2,7 +2,7 @@
   "FormatVersion": 33,
   "MapVersion": 100,
   "EditorVersion": 6116,
-  "GameVersion": "2.0.3.23175",
+  "GameVersion": "2.0.3.22978",
   "MapName": "Warcraft Legacies",
   "MapAuthor": "Lordsebas, HerrDave, YakaryBovine",
   "MapDescription": "Support the team! https://www.patreon.com/lordsebas\r\n\r\nCheck out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69",
@@ -267,32 +267,32 @@
   ],
   "Forces": [
     {
-      "Flags": 11,
+      "Flags": 7,
       "Players": -4561880,
       "Name": "Scourge, Legion"
     },
     {
-      "Flags": 11,
+      "Flags": 7,
       "Players": 644,
       "Name": "Quelthalas, Dalaran, Lordaeron"
     },
     {
-      "Flags": 11,
+      "Flags": 7,
       "Players": 264193,
       "Name": "Frostwolf, Druids, Sentinels"
     },
     {
-      "Flags": 11,
+      "Flags": 7,
       "Players": 4194322,
       "Name": "Stormwind, Ironforge, Kultiras"
     },
     {
-      "Flags": 11,
+      "Flags": 7,
       "Players": 69888,
       "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
     },
     {
-      "Flags": 11,
+      "Flags": 7,
       "Players": 32832,
       "Name": "Fel Horde, Illidari"
     }

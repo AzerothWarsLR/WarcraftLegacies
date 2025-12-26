@@ -12,8 +12,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1651795566,
     "Position": {
-      "X": 20963.56,
-      "Y": 12114.214
+      "X": 20963.562,
+      "Y": 12114.215
     },
     "Rotation": 1.2638088464736938,
     "Scale": {
@@ -40,7 +40,7 @@
     "TypeId": 1953785454,
     "Position": {
       "X": 20864.555,
-      "Y": 12149.444
+      "Y": 12149.445
     },
     "Rotation": 1.562933325767517,
     "Scale": {
@@ -66,8 +66,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1651795566,
     "Position": {
-      "X": 20850.502,
-      "Y": 12540.526
+      "X": 20850.5,
+      "Y": 12540.527
     },
     "Rotation": 3.270223379135132,
     "Scale": {
