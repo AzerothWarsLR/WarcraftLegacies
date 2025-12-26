@@ -14,7 +14,6 @@ public sealed class AutoMapperConfigurationProvider
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
-      cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();
       cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
 
       cfg.CreateMap<SoundDto, Sound>().ReverseMap();

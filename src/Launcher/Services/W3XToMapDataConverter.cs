@@ -69,7 +69,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
     if (map.PathingMap != null)
     {
-      FileHelper.SerializeAndWrite<MapPathingMap, MapPathingMapDto>(options.MapDataPaths.PathingMapPath, map.PathingMap);
+      FileHelper.SerializeAndWrite(options.MapDataPaths.PathingMapPath, map.PathingMap);
     }
 
     if (map.PreviewIcons != null)
