@@ -52,7 +52,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
       PathingMap = JsonHelper.DeserializeIfExist<MapPathingMap>(options.MapDataPaths.PathingMapPath),
       PreviewIcons = JsonHelper.DeserializeIfExist<MapPreviewIcons>(options.MapDataPaths.PreviewIconsPath),
       Regions = DeserializeRegions(),
-      ShadowMap = JsonHelper.DeserializeIfExist<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath),
+      ShadowMap = JsonHelper.DeserializeIfExist<MapShadowMap>(options.MapDataPaths.ShadowMapPath),
       Info = JsonHelper.DeserializeIfExist<MapInfo>(options.MapDataPaths.InfoPath),
       Doodads = DeserializeDoodads(),
       Units = DeserializeUnits(),

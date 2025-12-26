@@ -79,7 +79,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
     if (map.ShadowMap != null)
     {
-      FileHelper.SerializeAndWrite<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath, map.ShadowMap);
+      FileHelper.SerializeAndWrite(options.MapDataPaths.ShadowMapPath, map.ShadowMap);
     }
 
     if (map.Sounds != null)
