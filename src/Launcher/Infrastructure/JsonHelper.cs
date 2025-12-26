@@ -75,6 +75,18 @@ internal static class JsonHelper
   }
 
   /// <summary>
+  /// Deserializes the JSON file at the specified path into a target type, if the file exists.
+  /// </summary>
+  /// <remarks>Returns the <see langword="default"/> value of <typeparamref name="T"/> if the file does not exist.</remarks>
+  /// <typeparam name="T">The target type.</typeparam>
+  /// <param name="path">The path to the JSON file.</param>
+  /// <exception cref="JsonException">Thrown when the JSON is invalid or deserialization fails.</exception>
+  public static T? DeserializeIfExist<T>(string path)
+  {
+    return File.Exists(path) ? Deserialize<T>(path) : default;
+  }
+
+  /// <summary>
   /// Deserializes the JSON file at the specified path into a source type and maps it to the target type,
   /// if the file exists.
   /// </summary>

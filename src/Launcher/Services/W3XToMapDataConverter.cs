@@ -5,14 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Launcher.DataTransferObjects;
-using Launcher.DTOMappers;
 using Launcher.Extensions;
 using Launcher.Infrastructure;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
 using War3Net.Build.Extensions;
-using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
@@ -54,7 +52,9 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
     if (map.Info != null)
     {
-      SerializeAndWriteMapInfo(map.Info, new MapInfoMapper(map.TriggerStrings));
+      map.LocalizeInfo();
+      map.Info.MapVersion = 100;
+      FileHelper.SerializeAndWrite(options.MapDataPaths.InfoPath, map.Info);
     }
 
     if (map.Regions != null)
@@ -187,11 +187,6 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
         .ThenByDescending(x => x.Y)
         .ToList()
     });
-  }
-
-  private void SerializeAndWriteMapInfo(MapInfo mapInfo, MapInfoMapper mapInfoMapper)
-  {
-    FileHelper.SerializeAndWrite(options.MapDataPaths.InfoPath, mapInfoMapper.MapToDto(mapInfo));
   }
 
   private static void SerializeAndWriteUnits(MapUnits units, string path)

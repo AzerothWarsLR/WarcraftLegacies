@@ -53,7 +53,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
       PreviewIcons = JsonHelper.DeserializeIfExist<MapPreviewIcons, MapPreviewIconsDto>(options.MapDataPaths.PreviewIconsPath),
       Regions = DeserializeRegions(),
       ShadowMap = JsonHelper.DeserializeIfExist<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath),
-      Info = JsonHelper.DeserializeIfExist<MapInfo, MapInfoDto>(options.MapDataPaths.InfoPath),
+      Info = JsonHelper.DeserializeIfExist<MapInfo>(options.MapDataPaths.InfoPath),
       Doodads = DeserializeDoodads(),
       Units = DeserializeUnits(),
       Triggers = GenerateEmptyMapTriggers(),
