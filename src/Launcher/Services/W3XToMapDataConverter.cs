@@ -47,7 +47,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
     if (map.Environment != null)
     {
-      FileHelper.SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(options.MapDataPaths.EnvironmentPath, map.Environment);
+      FileHelper.SerializeAndWrite(options.MapDataPaths.EnvironmentPath, map.Environment);
     }
 
     if (map.Info != null)
