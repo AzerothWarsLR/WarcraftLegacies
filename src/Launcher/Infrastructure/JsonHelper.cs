@@ -24,7 +24,11 @@ internal static class JsonHelper
     {
       Modifiers = { JsonModifierProvider.CastModificationSets }
     },
-    Converters = { new ColorJsonConverter() }
+    Converters =
+    {
+      new ColorJsonConverter(),
+      new JsonRegionConverter()
+    }
   };
 
   private static readonly Mapper _mapper = new(AutoMapperConfigurationProvider.GetConfiguration());
