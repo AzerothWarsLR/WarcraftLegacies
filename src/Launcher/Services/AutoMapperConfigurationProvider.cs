@@ -1,7 +1,4 @@
-﻿using System.Numerics;
-using AutoMapper;
-using Launcher.DataTransferObjects;
-using War3Net.Build.Widget;
+﻿using AutoMapper;
 
 namespace Launcher.Services;
 
@@ -11,8 +8,6 @@ public sealed class AutoMapperConfigurationProvider
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
-      cfg.CreateMap<DoodadDataDto, DoodadData>().ReverseMap();
-      cfg.CreateMap<Vector3Dto, Vector3>().ReverseMap();
     });
     return autoMapperConfig;
   }
