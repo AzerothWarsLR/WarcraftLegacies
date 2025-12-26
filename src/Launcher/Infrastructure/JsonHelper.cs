@@ -26,7 +26,8 @@ internal static class JsonHelper
     },
     Converters =
     {
-      new JsonRegionConverter()
+      new JsonRegionConverter(),
+      new JsonSoundConverter()
     }
   };
 
