@@ -45,6 +45,22 @@ public static class FileHelper
   }
 
   /// <summary>
+  /// Serializes the specified widgets into multiple JSON files,
+  /// grouped into position-based chunks, and writes them to the specified directory.
+  /// </summary>
+  /// <typeparam name="T">The source type, derived from <see cref="WidgetData"/>.</typeparam>
+  /// <param name="widgets">The widgets to map and serialize.</param>
+  /// <param name="path">The destination directory for the generated chunk files.</param>
+  public static void SerializeAndWriteInChunks<T>(IEnumerable<T> widgets, string path)
+    where T : WidgetData
+  {
+    foreach (var ((x, y), widgetsInChunk) in new ChunkedWidgetSet<T>(widgets))
+    {
+      SerializeAndWrite(Path.Combine(path, $"{x}_{y}.json"), widgetsInChunk);
+    }
+  }
+
+  /// <summary>
   /// Maps and serializes the specified widgets into multiple JSON files,
   /// grouped into position-based chunks, and writes them to the specified directory.
   /// </summary>

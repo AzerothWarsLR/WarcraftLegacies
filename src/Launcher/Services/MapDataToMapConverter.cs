@@ -84,7 +84,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     var mapUnits = new MapUnits(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UnitsPath))
     {
-      mapUnits.Units.AddRange(JsonHelper.Deserialize<UnitData[], UnitDataDto[]>(file));
+      mapUnits.Units.AddRange(JsonHelper.Deserialize<UnitData[]>(file));
     }
     return mapUnits;
   }
