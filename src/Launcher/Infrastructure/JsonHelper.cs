@@ -26,7 +26,6 @@ internal static class JsonHelper
     },
     Converters =
     {
-      new ColorJsonConverter(),
       new JsonRegionConverter()
     }
   };

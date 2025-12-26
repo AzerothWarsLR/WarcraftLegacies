@@ -179,7 +179,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
   private static void SerializeAndWritePreviewIcons(MapPreviewIcons mapPreviewIcons, string path)
   {
-    FileHelper.SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(path, new MapPreviewIcons(mapPreviewIcons.FormatVersion)
+    FileHelper.SerializeAndWrite(path, new MapPreviewIcons(mapPreviewIcons.FormatVersion)
     {
       Icons = mapPreviewIcons.Icons
         .OrderByDescending(x => x.IconType)
