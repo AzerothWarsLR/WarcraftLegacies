@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Launcher.DataTransferObjects;
 using Launcher.Extensions;
 using Launcher.Infrastructure;
 using War3Net.Build;
@@ -196,7 +195,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
   private static void SerializeAndWriteDoodads(MapDoodads doodads, string path)
   {
-    FileHelper.SerializeAndWriteInChunks<DoodadData, DoodadDataDto>(doodads.Doodads, path);
+    FileHelper.SerializeAndWriteInChunks(doodads.Doodads, path);
   }
 
   private void SerializeAndWriteSounds(MapSounds sounds)

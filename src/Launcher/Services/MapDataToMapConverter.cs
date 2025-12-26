@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Launcher.DataTransferObjects;
 using Launcher.Infrastructure;
 using Launcher.Paths;
 using War3Net.Build;
@@ -74,7 +73,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     var mapDoodads = new MapDoodads(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.DoodadsPath))
     {
-      mapDoodads.Doodads.AddRange(JsonHelper.Deserialize<DoodadData[], DoodadDataDto[]>(file));
+      mapDoodads.Doodads.AddRange(JsonHelper.Deserialize<DoodadData[]>(file));
     }
     return mapDoodads;
   }
