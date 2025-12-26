@@ -191,7 +191,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
   private static void SerializeAndWriteUnits(MapUnits units, string path)
   {
-    FileHelper.SerializeAndWriteInChunks<UnitData, UnitDataDto>(units.Units, path);
+    FileHelper.SerializeAndWriteInChunks(units.Units, path);
   }
 
   private static void SerializeAndWriteDoodads(MapDoodads doodads, string path)
