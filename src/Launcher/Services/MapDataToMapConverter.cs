@@ -91,18 +91,17 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
 
   private MapRegions? DeserializeRegions()
   {
-    var directory = options.MapDataPaths.RegionsPath;
-    if (!Directory.Exists(directory))
+    if (!Directory.Exists(options.MapDataPaths.RegionsPath))
     {
       return null;
     }
 
-    var regions = new MapRegions(MapRegionsFormatVersion.v5);
-    foreach (var file in Directory.EnumerateFiles(directory))
+    var mapRegions = new MapRegions(MapRegionsFormatVersion.v5);
+    foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.RegionsPath))
     {
-      regions.Regions.Add(JsonHelper.Deserialize<Region, RegionDto>(file));
+      mapRegions.Regions.Add(JsonHelper.Deserialize<Region>(file));
     }
-    return regions;
+    return mapRegions;
   }
 
   private MapSounds? DeserializeSounds()

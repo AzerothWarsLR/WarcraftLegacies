@@ -211,7 +211,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
   {
     foreach (var region in regions.Regions)
     {
-      FileHelper.SerializeAndWrite<Region, RegionDto>(Path.Combine(options.MapDataPaths.RegionsPath, $"{region.Name}.json"), region);
+      FileHelper.SerializeAndWrite(Path.Combine(options.MapDataPaths.RegionsPath, $"{region.Name}.json"), region);
     }
   }
 

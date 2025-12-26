@@ -1,12 +1,10 @@
-﻿using System.Drawing;
-using System.Numerics;
+﻿using System.Numerics;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.ValueResolvers;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
 using War3Net.Build.Widget;
-using Region = War3Net.Build.Environment.Region;
 
 namespace Launcher.Services;
 
@@ -28,11 +26,6 @@ public sealed class AutoMapperConfigurationProvider
       cfg.CreateMap<DoodadDataDto, DoodadData>().ReverseMap();
       cfg.CreateMap<Vector3Dto, Vector3>().ReverseMap();
       cfg.CreateMap<Vector2Dto, Vector2>().ReverseMap();
-      cfg.CreateMap<ColorDto, Color>().ReverseMap();
-      cfg.CreateMap<RegionDto, Region>()
-        .ForMember(dest => dest.Color, opt
-        => opt.MapFrom<ColorValueResolver>())
-        .ReverseMap();
     });
     return autoMapperConfig;
   }
