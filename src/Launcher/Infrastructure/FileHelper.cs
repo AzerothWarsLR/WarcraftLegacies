@@ -28,23 +28,6 @@ public static class FileHelper
   }
 
   /// <summary>
-  /// Maps the specified value to a target type, serializes it to JSON,
-  /// and writes it to the specified file path.
-  /// </summary>
-  /// <typeparam name="T">The source type.</typeparam>
-  /// <typeparam name="TT">The target type.</typeparam>
-  /// <param name="path">The destination file path.</param>
-  /// <param name="value">The value to map and serialize.</param>
-  /// <param name="createDestination">
-  /// <see langword="true"/> to create the destination directory if it does not exist.
-  /// </param>
-  public static void SerializeAndWrite<T, TT>(string path, T value, bool createDestination = true)
-    where T : class
-  {
-    SerializeAndWrite(path, JsonHelper.Serialize<T, TT>(value), createDestination);
-  }
-
-  /// <summary>
   /// Serializes the specified widgets into multiple JSON files,
   /// grouped into position-based chunks, and writes them to the specified directory.
   /// </summary>
@@ -57,23 +40,6 @@ public static class FileHelper
     foreach (var ((x, y), widgetsInChunk) in new ChunkedWidgetSet<T>(widgets))
     {
       SerializeAndWrite(Path.Combine(path, $"{x}_{y}.json"), widgetsInChunk);
-    }
-  }
-
-  /// <summary>
-  /// Maps and serializes the specified widgets into multiple JSON files,
-  /// grouped into position-based chunks, and writes them to the specified directory.
-  /// </summary>
-  /// <typeparam name="T">The source type, derived from <see cref="WidgetData"/>.</typeparam>
-  /// <typeparam name="TT">The target type.</typeparam>
-  /// <param name="widgets">The widgets to map and serialize.</param>
-  /// <param name="path">The destination directory for the generated chunk files.</param>
-  public static void SerializeAndWriteInChunks<T, TT>(IEnumerable<T> widgets, string path)
-    where T : WidgetData
-  {
-    foreach (var ((x, y), widgetsInChunk) in new ChunkedWidgetSet<T>(widgets))
-    {
-      SerializeAndWrite<IEnumerable<T>, IEnumerable<TT>>(Path.Combine(path, $"{x}_{y}.json"), widgetsInChunk);
     }
   }
 
