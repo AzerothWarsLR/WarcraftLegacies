@@ -2,7 +2,6 @@
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.ValueResolvers;
-using War3Net.Build.Audio;
 using War3Net.Build.Widget;
 
 namespace Launcher.Services;
@@ -13,7 +12,6 @@ public sealed class AutoMapperConfigurationProvider
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
-      cfg.CreateMap<SoundDto, Sound>().ReverseMap();
       cfg.CreateMap<UnitData, UnitDataDto>().ForMember(dest => dest.Position, opt
         => opt.MapFrom<UnitDataDtoZPositionValueResolver>());
       cfg.CreateMap<UnitDataDto, UnitData>().ForMember(dest => dest.Position, opt

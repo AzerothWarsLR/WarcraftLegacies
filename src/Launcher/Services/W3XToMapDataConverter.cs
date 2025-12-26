@@ -203,7 +203,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
   {
     foreach (var sound in sounds.Sounds)
     {
-      FileHelper.SerializeAndWrite<Sound, SoundDto>(Path.Combine(options.MapDataPaths.SoundsPath, $"{sound.Name.Remove(0, 7)}.json"), sound);
+      FileHelper.SerializeAndWrite(Path.Combine(options.MapDataPaths.SoundsPath, $"{sound.Name.Remove(0, 7)}.json"), sound);
     }
   }
 

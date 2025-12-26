@@ -115,7 +115,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     var sounds = new MapSounds(MapSoundsFormatVersion.v3);
     foreach (var file in Directory.EnumerateFiles(directory))
     {
-      sounds.Sounds.AddRange(JsonHelper.Deserialize<Sound, SoundDto>(file));
+      sounds.Sounds.AddRange(JsonHelper.Deserialize<Sound>(file));
     }
     return sounds;
   }
