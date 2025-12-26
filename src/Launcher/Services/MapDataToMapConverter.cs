@@ -50,7 +50,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
       Sounds = DeserializeSounds(),
       Environment = JsonHelper.DeserializeIfExist<MapEnvironment>(options.MapDataPaths.EnvironmentPath),
       PathingMap = JsonHelper.DeserializeIfExist<MapPathingMap, MapPathingMapDto>(options.MapDataPaths.PathingMapPath),
-      PreviewIcons = JsonHelper.DeserializeIfExist<MapPreviewIcons, MapPreviewIconsDto>(options.MapDataPaths.PreviewIconsPath),
+      PreviewIcons = JsonHelper.DeserializeIfExist<MapPreviewIcons>(options.MapDataPaths.PreviewIconsPath),
       Regions = DeserializeRegions(),
       ShadowMap = JsonHelper.DeserializeIfExist<MapShadowMap, MapShadowMapDto>(options.MapDataPaths.ShadowMapPath),
       Info = JsonHelper.DeserializeIfExist<MapInfo>(options.MapDataPaths.InfoPath),
