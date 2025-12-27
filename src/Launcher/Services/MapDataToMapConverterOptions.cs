@@ -29,8 +29,8 @@ public sealed class MapDataToMapConverterOptions
         PreviewIconsPath = sharedPathOptions.MapDataPathOptions.PreviewIconsPath,
         ShadowMapPath = sharedPathOptions.MapDataPathOptions.ShadowMapPath,
         MinimapPath = sharedPathOptions.MapDataPathOptions.MinimapPath,
-        GameInterfacePath = sharedPathOptions.MapDataPathOptions.GameInterfacePath,
-        SkinPath = sharedPathOptions.MapDataPathOptions.SkinPath
+        GameplayConstantsPath = sharedPathOptions.MapDataPathOptions.GameplayConstantsPath,
+        GameInterfacePath = sharedPathOptions.MapDataPathOptions.GameInterfacePath
       }
     };
   }

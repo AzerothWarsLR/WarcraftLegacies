@@ -8,7 +8,7 @@ internal sealed class MapGenerateContext : MapCommandContext
 
   public MapDataToMapConverterOptions SerializerOptions { get; }
 
-  public MapGenerateContext(string mapName) : base(mapName)
+  public MapGenerateContext(string mapName, IncludeFromMap include, bool deleteDestination) : base(mapName, include, deleteDestination)
   {
     GeneratorOptions = ConstantsGeneratorOptions.Create(Paths);
     SerializerOptions = MapDataToMapConverterOptions.Create(Paths);

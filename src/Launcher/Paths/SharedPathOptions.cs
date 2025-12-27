@@ -44,8 +44,8 @@ public sealed class SharedPathOptions
         PreviewIconsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.PreviewIcons),
         ShadowMapPath = Path.Combine(mapDataRootPath, PathConventions.MapData.ShadowMap),
         MinimapPath = Path.Combine(mapDataRootPath, PathConventions.MapData.Minimap),
-        GameInterfacePath = Path.Combine(mapDataRootPath, PathConventions.MapData.GameplayConstants),
-        SkinPath = Path.Combine(mapDataRootPath, PathConventions.MapData.GameInterface)
+        GameplayConstantsPath = Path.Combine(mapDataRootPath, PathConventions.MapData.GameplayConstants),
+        GameInterfacePath = Path.Combine(mapDataRootPath, PathConventions.MapData.GameInterface)
       }
     };
     return options;

@@ -1,4 +1,8 @@
-﻿namespace Launcher.Paths;
+﻿using System;
+using System.Collections.Generic;
+using Launcher.Services;
+
+namespace Launcher.Paths;
 
 public sealed class MapDataPathOptions
 {
@@ -40,7 +44,60 @@ public sealed class MapDataPathOptions
 
   public required string MinimapPath { get; init; }
 
+  public required string GameplayConstantsPath { get; init; }
+
   public required string GameInterfacePath { get; init; }
 
-  public required string SkinPath { get; init; }
+  /// <summary>
+  /// Returns all map file paths that match any of the flags specified in <see cref="IncludeFromMap"/>.
+  /// </summary>
+  public IEnumerable<string> GetPathsFromIncludedFiles(IncludeFromMap include)
+  {
+    if (include.HasFlag(IncludeFromMap.All))
+    {
+      yield return RootPath;
+      yield break;
+    }
+
+    foreach (var flag in Enum.GetValues<IncludeFromMap>())
+    {
+      if (flag == IncludeFromMap.All || !include.HasFlag(flag))
+      {
+        continue;
+      }
+
+      var path = flag switch
+      {
+        IncludeFromMap.Sounds => SoundsPath,
+        IncludeFromMap.Environment => EnvironmentPath,
+        IncludeFromMap.PathingMap => PathingMapPath,
+        IncludeFromMap.PreviewIcons => PreviewIconsPath,
+        IncludeFromMap.ShadowMap => ShadowMapPath,
+        IncludeFromMap.Minimap => MinimapPath,
+        IncludeFromMap.Regions => RegionsPath,
+        IncludeFromMap.Imports => ImportsPath,
+        IncludeFromMap.Info => InfoPath,
+        IncludeFromMap.GameplayConstants => GameplayConstantsPath,
+        IncludeFromMap.GameInterface => GameInterfacePath,
+
+        IncludeFromMap.AbilityData => AbilityDataPath,
+        IncludeFromMap.BuffData => BuffDataPath,
+        IncludeFromMap.DestructableData => DestructableDataPath,
+        IncludeFromMap.DoodadData => DoodadDataPath,
+        IncludeFromMap.ItemData => ItemDataPath,
+        IncludeFromMap.UnitData => UnitDataPath,
+        IncludeFromMap.UpgradeData => UpgradeDataPath,
+
+        IncludeFromMap.Doodads => DoodadsPath,
+        IncludeFromMap.Units => UnitsPath,
+
+        _ => null
+      };
+
+      if (path is not null)
+      {
+        yield return path;
+      }
+    }
+  }
 }

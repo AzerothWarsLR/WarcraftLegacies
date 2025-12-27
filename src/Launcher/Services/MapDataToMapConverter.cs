@@ -298,6 +298,12 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
       });
     }
 
+    additionalFiles.Add(new PathData
+    {
+      AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, MapData.GameInterface),
+      RelativePath = MapData.GameInterface
+    });
+
     return additionalFiles;
   }
 

@@ -9,7 +9,7 @@ internal sealed class MapBuildContext : MapCommandContext
 
   public MapOutputKind OutputKind { get; set; }
 
-  public MapBuildContext(string mapName) : base(mapName)
+  public MapBuildContext(string mapName, IncludeFromMap include, bool deleteDestination) : base(mapName, include, deleteDestination)
   {
     Builder = AdvancedMapBuilderOptions.Create(Paths);
   }
