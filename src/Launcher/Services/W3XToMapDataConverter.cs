@@ -28,7 +28,7 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
   /// </summary>
   public void Convert(string baseMapPath)
   {
-    var map = Map.Open(baseMapPath);
+    var map = Map.Open(baseMapPath, options.IncludeFromMap.ToWar3NetMapFiles());
     map.MergeObjectData();
     SerializeAndWriteMapData(map);
 
@@ -39,6 +39,11 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
 
   private void SerializeAndWriteMapData(Map map)
   {
+    if (options.DeleteDestinations)
+    {
+      DeleteDestinationData();
+    }
+
     if (map.Doodads != null)
     {
       SerializeAndWriteDoodads(map.Doodads, options.MapDataPaths.DoodadsPath);
@@ -119,6 +124,24 @@ public sealed class W3XToMapDataConverter(W3XToMapDataConverterOptions options)
     if (map.UpgradeObjectData != null)
     {
       SerializeAndWriteUpgradeData(map.UpgradeObjectData);
+    }
+  }
+
+  private void DeleteDestinationData()
+  {
+    foreach (var path in options.MapDataPaths.GetPathsFromIncludedFiles(options.IncludeFromMap))
+    {
+      if (Directory.Exists(path))
+      {
+        Directory.Delete(path, true);
+      }
+      else
+      {
+        if (File.Exists(path))
+        {
+          File.Delete(path);
+        }
+      }
     }
   }
 

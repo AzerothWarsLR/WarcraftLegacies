@@ -29,11 +29,22 @@ public sealed class W3XToMapDataConverterOptions
         PreviewIconsPath = sharedPathOptions.MapDataPathOptions.PreviewIconsPath,
         ShadowMapPath = sharedPathOptions.MapDataPathOptions.ShadowMapPath,
         MinimapPath = sharedPathOptions.MapDataPathOptions.MinimapPath,
-        GameInterfacePath = sharedPathOptions.MapDataPathOptions.GameInterfacePath,
-        SkinPath = sharedPathOptions.MapDataPathOptions.SkinPath
-      }
+        GameplayConstantsPath = sharedPathOptions.MapDataPathOptions.GameplayConstantsPath,
+        GameInterfacePath = sharedPathOptions.MapDataPathOptions.GameInterfacePath
+      },
+      IncludeFromMap = IncludeFromMap.All
     };
   }
 
   public required MapDataPathOptions MapDataPaths { get; init; }
+
+  /// <summary>
+  /// Flags indicating which files and folders should be retrieved from the input map and included in the MapData result.
+  /// </summary>
+  public required IncludeFromMap IncludeFromMap { get; set; }
+
+  /// <summary>
+  /// If true, MapData destination folders will be deleted prior to conversion.
+  /// </summary>
+  public bool DeleteDestinations { get; set; }
 }
