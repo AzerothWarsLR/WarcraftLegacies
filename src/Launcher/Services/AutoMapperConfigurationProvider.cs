@@ -18,10 +18,7 @@ public sealed class AutoMapperConfigurationProvider
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {
-      cfg.CreateMap<MapEnvironmentDto, MapEnvironment>()
-        .ForMember(dest => dest.TerrainTiles,
-          opt => opt.MapFrom<TerrainTileResolver>())
-        .ReverseMap();
+      cfg.CreateMap<MapEnvironmentDto, MapEnvironment>().ReverseMap();
       cfg.CreateMap<MapInfoDto, MapInfo>().ReverseMap();
       cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();
       cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();
