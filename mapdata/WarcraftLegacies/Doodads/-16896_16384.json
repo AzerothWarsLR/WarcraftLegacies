@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1936872003,
+    "Variation": 0,
     "Position": {
       "X": -17344,
       "Y": 16384,
@@ -15,14 +14,15 @@
       "Z": 2.3999987
     },
     "SkinId": 1936872003,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 10317
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1936215873,
+    "Variation": 0,
     "Position": {
       "X": -17284.572,
       "Y": 16301.004,
@@ -35,14 +35,15 @@
       "Z": 8.85
     },
     "SkinId": 1936215873,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 13479
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": -16896,
       "Y": 16384,
@@ -55,14 +56,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 34233
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": -17216,
       "Y": 16192,
@@ -75,14 +77,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 34207
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": -17344,
       "Y": 16192,
@@ -95,14 +98,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 34206
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1936215873,
+    "Variation": 0,
     "Position": {
       "X": -17114.291,
       "Y": 16174.855,
@@ -115,6 +119,8 @@
       "Z": 8.85
     },
     "SkinId": 1936215873,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 13478

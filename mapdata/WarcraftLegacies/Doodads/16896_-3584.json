@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1479946308,
+    "Variation": 0,
     "Position": {
       "X": 16960,
       "Y": -3904,
@@ -15,14 +14,15 @@
       "Z": 1.086427
     },
     "SkinId": 1479946308,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 7462
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": 16640,
       "Y": -3712,
@@ -35,14 +35,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 11491
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": 16640,
       "Y": -3840,
@@ -55,14 +56,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 11490
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": 16640,
       "Y": -3968,
@@ -75,14 +77,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 10531
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 842477636,
+    "Variation": 0,
     "Position": {
       "X": 16960,
       "Y": -3712,
@@ -95,14 +98,15 @@
       "Z": 0.99999994
     },
     "SkinId": 842477636,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 673
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1651659593,
+    "Variation": 0,
     "Position": {
       "X": 16861.602,
       "Y": -3654.1387,
@@ -115,6 +119,8 @@
       "Z": 0.99999994
     },
     "SkinId": 1651659593,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 22767

@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1752387674,
+    "Variation": 0,
     "Position": {
       "X": 14336.789,
       "Y": -18561.398,
@@ -15,13 +14,13 @@
       "Z": 0.9096286
     },
     "SkinId": 1752387674,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 21051
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1936543834,
     "Variation": 2,
     "Position": {
@@ -36,14 +35,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1936543834,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 21048
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1094135876,
+    "Variation": 0,
     "Position": {
       "X": 14432,
       "Y": -18528,
@@ -56,14 +56,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1094135876,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 20612
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1094135876,
+    "Variation": 0,
     "Position": {
       "X": 14176,
       "Y": -18528,
@@ -76,14 +77,15 @@
       "Z": 0.89698017
     },
     "SkinId": 1094135876,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 12550
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1094135876,
+    "Variation": 0,
     "Position": {
       "X": 14304,
       "Y": -18528,
@@ -96,14 +98,15 @@
       "Z": 0.65522474
     },
     "SkinId": 1094135876,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5077
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1094135876,
+    "Variation": 0,
     "Position": {
       "X": 14432,
       "Y": -18912,
@@ -116,6 +119,8 @@
       "Z": 0.94688404
     },
     "SkinId": 1094135876,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 20614

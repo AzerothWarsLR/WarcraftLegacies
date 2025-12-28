@@ -5,11 +5,12 @@
   "Top": -17600,
   "Name": "STV Ships",
   "CreationNumber": 105,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
     "G": 128,
-    "B": 255
+    "B": 255,
+    "A": 255
   }
 }

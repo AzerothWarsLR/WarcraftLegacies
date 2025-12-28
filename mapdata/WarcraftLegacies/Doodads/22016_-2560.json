@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 842477636,
+    "Variation": 0,
     "Position": {
       "X": 21824,
       "Y": -2688,
@@ -15,14 +14,15 @@
       "Z": 1.3499997
     },
     "SkinId": 842477636,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5913
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1160982596,
+    "Variation": 0,
     "Position": {
       "X": 21896.992,
       "Y": -2629.0098,
@@ -35,14 +35,15 @@
       "Z": 1.3499997
     },
     "SkinId": 1160982596,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15886
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1918979916,
+    "Variation": 0,
     "Position": {
       "X": 22266.215,
       "Y": -2829.002,
@@ -55,14 +56,15 @@
       "Z": 0.5999999
     },
     "SkinId": 1918979916,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15998
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1918979916,
+    "Variation": 0,
     "Position": {
       "X": 22213.938,
       "Y": -2732.836,
@@ -75,14 +77,15 @@
       "Z": 0.5999999
     },
     "SkinId": 1918979916,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15999
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1918979916,
+    "Variation": 0,
     "Position": {
       "X": 22138.336,
       "Y": -2760.2031,
@@ -95,13 +98,13 @@
       "Z": 0.5999999
     },
     "SkinId": 1918979916,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 16010
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1667583833,
     "Variation": 2,
     "Position": {
@@ -116,6 +119,8 @@
       "Z": 0.94248486
     },
     "SkinId": 1667583833,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 36121

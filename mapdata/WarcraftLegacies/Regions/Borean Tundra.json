@@ -5,10 +5,12 @@
   "Top": 19040,
   "Name": "Borean Tundra",
   "CreationNumber": 9,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
-    "G": 128
+    "G": 128,
+    "B": 0,
+    "A": 255
   }
 }

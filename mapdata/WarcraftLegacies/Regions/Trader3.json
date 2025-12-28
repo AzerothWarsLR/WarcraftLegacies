@@ -5,11 +5,12 @@
   "Top": -22432,
   "Name": "Trader3",
   "CreationNumber": 421,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
     "G": 128,
-    "B": 255
+    "B": 255,
+    "A": 255
   }
 }

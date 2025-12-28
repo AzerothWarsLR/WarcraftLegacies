@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1479946308,
+    "Variation": 0,
     "Position": {
       "X": -18176,
       "Y": 4416,
@@ -15,14 +14,15 @@
       "Z": 0.8963653
     },
     "SkinId": 1479946308,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 7239
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1479946308,
+    "Variation": 0,
     "Position": {
       "X": -18304,
       "Y": 4480,
@@ -35,6 +35,8 @@
       "Z": 1.0496781
     },
     "SkinId": 1479946308,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 7223

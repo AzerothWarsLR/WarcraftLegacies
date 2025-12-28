@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": -10560,
       "Y": 17984,
@@ -15,14 +14,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 8323
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": -10560,
       "Y": 17856,
@@ -35,14 +35,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 8312
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": -10560,
       "Y": 17728,
@@ -55,14 +56,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 8286
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": -10496,
       "Y": 18112,
@@ -75,14 +77,15 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 8342
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1446391876,
+    "Variation": 0,
     "Position": {
       "X": -10304,
       "Y": 17856,
@@ -95,14 +98,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1446391876,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 11145
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1446391876,
+    "Variation": 0,
     "Position": {
       "X": -10240,
       "Y": 17664,
@@ -115,6 +119,8 @@
       "Z": 0.99999994
     },
     "SkinId": 1446391876,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 11152

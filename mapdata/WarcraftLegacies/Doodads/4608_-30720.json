@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 2054442828,
+    "Variation": 0,
     "Position": {
       "X": 4552.0625,
       "Y": -31077.902,
@@ -15,13 +14,13 @@
       "Z": 0.99999994
     },
     "SkinId": 2054442828,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 29946
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1379217476,
     "Variation": 2,
     "Position": {
@@ -36,14 +35,15 @@
       "Z": 0.8
     },
     "SkinId": 1379217476,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 22573
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1651461967,
+    "Variation": 0,
     "Position": {
       "X": 4423.3516,
       "Y": -30919.848,
@@ -56,14 +56,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1651461967,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 29937
   },
   {
-    "State": 6,
-    "Life": 100,
     "TypeId": 1885951055,
+    "Variation": 0,
     "Position": {
       "X": 4352,
       "Y": -31104,
@@ -76,14 +77,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1885951055,
+    "State": 6,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6912
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": 4352,
       "Y": -30976,
@@ -96,14 +98,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6915
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1885951055,
+    "Variation": 0,
     "Position": {
       "X": 4480,
       "Y": -31104,
@@ -116,6 +119,8 @@
       "Z": 0.99999994
     },
     "SkinId": 1885951055,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 22250

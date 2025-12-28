@@ -4,9 +4,13 @@
   "Right": 7808,
   "Top": 10592,
   "Name": "Solliden Farmstead",
+  "CreationNumber": 0,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
-    "R": 255
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
   }
 }

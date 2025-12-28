@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1496723524,
+    "Variation": 0,
     "Position": {
       "X": 3200,
       "Y": -5888,
@@ -15,14 +14,15 @@
       "Z": 1
     },
     "SkinId": 1496723524,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 7329
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1935757142,
+    "Variation": 0,
     "Position": {
       "X": 2938.9844,
       "Y": -6078.2812,
@@ -35,14 +35,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1935757142,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 38780
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 959459396,
+    "Variation": 0,
     "Position": {
       "X": 3200,
       "Y": -6016,
@@ -55,14 +56,15 @@
       "Z": 0.9113377
     },
     "SkinId": 959459396,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 38453
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1479946308,
+    "Variation": 0,
     "Position": {
       "X": 2944,
       "Y": -5952,
@@ -75,14 +77,15 @@
       "Z": 1
     },
     "SkinId": 1479946308,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 38620
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1479946308,
+    "Variation": 0,
     "Position": {
       "X": 3264,
       "Y": -5760,
@@ -95,14 +98,15 @@
       "Z": 1
     },
     "SkinId": 1479946308,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 38639
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1919963969,
+    "Variation": 0,
     "Position": {
       "X": 3081.9863,
       "Y": -6121.5977,
@@ -115,6 +119,8 @@
       "Z": 0.96000016
     },
     "SkinId": 1919963969,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 38454

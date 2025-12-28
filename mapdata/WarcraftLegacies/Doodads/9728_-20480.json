@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1345335364,
+    "Variation": 0,
     "Position": {
       "X": 9711.836,
       "Y": -20625.31,
@@ -15,14 +14,15 @@
       "Z": 0.9139195
     },
     "SkinId": 1345335364,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 200
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1633832794,
+    "Variation": 0,
     "Position": {
       "X": 9920,
       "Y": -20480,
@@ -35,14 +35,15 @@
       "Z": 0.8092289
     },
     "SkinId": 1633832794,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 203
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1953648474,
+    "Variation": 0,
     "Position": {
       "X": 9575.945,
       "Y": -20501.916,
@@ -55,14 +56,15 @@
       "Z": 1.1878048
     },
     "SkinId": 1953648474,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 191
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1378889796,
+    "Variation": 0,
     "Position": {
       "X": 9630.898,
       "Y": -20943.111,
@@ -75,13 +77,13 @@
       "Z": 0.9429823
     },
     "SkinId": 1378889796,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 190
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1684165210,
     "Variation": 2,
     "Position": {
@@ -96,14 +98,15 @@
       "Z": 0.8977081
     },
     "SkinId": 1684165210,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 208
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1650545498,
+    "Variation": 0,
     "Position": {
       "X": 9976.816,
       "Y": -20825.943,
@@ -116,6 +119,8 @@
       "Z": 0.8999999
     },
     "SkinId": 1650545498,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 199

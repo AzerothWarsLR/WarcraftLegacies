@@ -1,7 +1,5 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1802654298,
     "Variation": 7,
     "Position": {
@@ -16,13 +14,13 @@
       "Z": 0.9
     },
     "SkinId": 1802654298,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 19058
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1802654298,
     "Variation": 9,
     "Position": {
@@ -37,33 +35,36 @@
       "Z": 0.9
     },
     "SkinId": 1802654298,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 19066
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 863458137,
+    "Variation": 0,
     "Position": {
       "X": -19904,
       "Y": -8896,
       "Z": 152.4375
     },
+    "Rotation": 0,
     "Scale": {
       "X": 0.99999994,
       "Y": 0.99999994,
       "Z": 0.99999994
     },
     "SkinId": 863458137,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5608
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1819038553,
+    "Variation": 0,
     "Position": {
       "X": -19843.807,
       "Y": -8822.508,
@@ -76,14 +77,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1819038553,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 9431
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 829903705,
+    "Variation": 0,
     "Position": {
       "X": -19890.879,
       "Y": -8712.936,
@@ -96,13 +98,13 @@
       "Z": 0.99999994
     },
     "SkinId": 829903705,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 9434
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1379217476,
     "Variation": 2,
     "Position": {
@@ -117,6 +119,8 @@
       "Z": 1.0999999
     },
     "SkinId": 1379217476,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 21502

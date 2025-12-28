@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 909127748,
+    "Variation": 0,
     "Position": {
       "X": 14908.789,
       "Y": -3997.1426,
@@ -15,13 +14,13 @@
       "Z": 1.4000006
     },
     "SkinId": 909127748,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24130
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 942682180,
     "Variation": 8,
     "Position": {
@@ -36,14 +35,15 @@
       "Z": 2.1620007
     },
     "SkinId": 942682180,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24131
   },
   {
-    "State": 6,
-    "Life": 100,
     "TypeId": 1194340418,
+    "Variation": 0,
     "Position": {
       "X": 14817.3125,
       "Y": -3987.2422,
@@ -56,14 +56,15 @@
       "Z": 0.39048737
     },
     "SkinId": 1194340418,
+    "State": 6,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24129
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1194340418,
+    "Variation": 0,
     "Position": {
       "X": 14977.566,
       "Y": -3963.8652,
@@ -76,14 +77,15 @@
       "Z": 0.44048738
     },
     "SkinId": 1194340418,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24127
   },
   {
-    "State": 6,
-    "Life": 100,
     "TypeId": 1194340418,
+    "Variation": 0,
     "Position": {
       "X": 14936.121,
       "Y": -4050.7812,
@@ -96,14 +98,15 @@
       "Z": 0.39048737
     },
     "SkinId": 1194340418,
+    "State": 6,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24128
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668052057,
+    "Variation": 0,
     "Position": {
       "X": 14592,
       "Y": -3776,
@@ -116,6 +119,8 @@
       "Z": 1
     },
     "SkinId": 1668052057,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 29754

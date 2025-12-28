@@ -1,7 +1,5 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 892416068,
     "Variation": 1,
     "Position": {
@@ -9,19 +7,20 @@
       "Y": -896,
       "Z": 76.625
     },
+    "Rotation": 0,
     "Scale": {
       "X": 0.85,
       "Y": 0.85,
       "Z": 0.85
     },
     "SkinId": 892416068,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 28443
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1936543811,
     "Variation": 3,
     "Position": {
@@ -36,14 +35,15 @@
       "Z": 0.75
     },
     "SkinId": 1936543811,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 28091
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1886605132,
+    "Variation": 0,
     "Position": {
       "X": 11044.754,
       "Y": -514.78125,
@@ -56,13 +56,13 @@
       "Z": 0.6
     },
     "SkinId": 1886605132,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 1231
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1802654284,
     "Variation": 1,
     "Position": {
@@ -77,14 +77,15 @@
       "Z": 0.75
     },
     "SkinId": 1802654284,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 27160
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1633834060,
+    "Variation": 0,
     "Position": {
       "X": 11392,
       "Y": -512,
@@ -97,14 +98,15 @@
       "Z": 0.7
     },
     "SkinId": 1633834060,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 27154
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1633834060,
+    "Variation": 0,
     "Position": {
       "X": 11264,
       "Y": -640,
@@ -117,6 +119,8 @@
       "Z": 0.7
     },
     "SkinId": 1633834060,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 27153

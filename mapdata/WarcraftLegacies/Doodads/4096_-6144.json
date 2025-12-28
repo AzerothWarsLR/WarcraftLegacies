@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1667583833,
+    "Variation": 0,
     "Position": {
       "X": 4331.086,
       "Y": -6504.5586,
@@ -15,14 +14,15 @@
       "Z": 0.5999999
     },
     "SkinId": 1667583833,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 23315
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1919963969,
+    "Variation": 0,
     "Position": {
       "X": 4248.324,
       "Y": -6210.8125,
@@ -35,14 +35,15 @@
       "Z": 0.59999985
     },
     "SkinId": 1919963969,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 23298
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1919963969,
+    "Variation": 0,
     "Position": {
       "X": 4269.0117,
       "Y": -6392.9863,
@@ -55,13 +56,13 @@
       "Z": 0.010000002
     },
     "SkinId": 1919963969,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 9064
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1379217476,
     "Variation": 5,
     "Position": {
@@ -76,14 +77,15 @@
       "Z": 1
     },
     "SkinId": 1379217476,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 21554
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1818316630,
+    "Variation": 0,
     "Position": {
       "X": 4330.1406,
       "Y": -6284.6445,
@@ -96,14 +98,15 @@
       "Z": 0.9000002
     },
     "SkinId": 1818316630,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 9206
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1818316630,
+    "Variation": 0,
     "Position": {
       "X": 4334.414,
       "Y": -6556.535,
@@ -116,6 +119,8 @@
       "Z": 0.9000002
     },
     "SkinId": 1818316630,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 9399

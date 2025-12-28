@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1228222532,
+    "Variation": 0,
     "Position": {
       "X": -26170.549,
       "Y": -4163.912,
@@ -15,14 +14,15 @@
       "Z": 2.0000012
     },
     "SkinId": 1228222532,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 32892
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1228222532,
+    "Variation": 0,
     "Position": {
       "X": -26397.42,
       "Y": -4163.912,
@@ -35,63 +35,71 @@
       "Z": 2.0000012
     },
     "SkinId": 1228222532,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 32893
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1261776964,
+    "Variation": 0,
     "Position": {
       "X": -26285.373,
       "Y": -4170.59,
       "Z": 746.1708
     },
+    "Rotation": 0,
     "Scale": {
       "X": 1.2500005,
       "Y": 1.2500005,
       "Z": 1.700001
     },
     "SkinId": 1261776964,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 32895
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1261776964,
+    "Variation": 0,
     "Position": {
       "X": -26516.75,
       "Y": -4167.6836,
       "Z": 746.1708
     },
+    "Rotation": 0,
     "Scale": {
       "X": 1.2500005,
       "Y": 1.2500005,
       "Z": 1.700001
     },
     "SkinId": 1261776964,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 32914
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1261776964,
+    "Variation": 0,
     "Position": {
       "X": -26502.658,
       "Y": -4538.5625,
       "Z": 638.49927
     },
+    "Rotation": 0,
     "Scale": {
       "X": 1.2500005,
       "Y": 1.2500005,
       "Z": 1.700001
     },
     "SkinId": 1261776964,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 33354

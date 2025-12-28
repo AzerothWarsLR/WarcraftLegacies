@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1987203906,
+    "Variation": 0,
     "Position": {
       "X": 1625.5195,
       "Y": -29030.018,
@@ -15,14 +14,15 @@
       "Z": 1.6999993
     },
     "SkinId": 1987203906,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15473
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 892416068,
+    "Variation": 0,
     "Position": {
       "X": 1728,
       "Y": -28928,
@@ -35,14 +35,15 @@
       "Z": 1.1499999
     },
     "SkinId": 892416068,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15472
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 2003981122,
+    "Variation": 0,
     "Position": {
       "X": 1290.8809,
       "Y": -28713.604,
@@ -55,14 +56,15 @@
       "Z": 1.7999992
     },
     "SkinId": 2003981122,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 10303
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 892416068,
+    "Variation": 0,
     "Position": {
       "X": 1664,
       "Y": -28800,
@@ -75,14 +77,15 @@
       "Z": 1.4999995
     },
     "SkinId": 892416068,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 10383
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1295396932,
+    "Variation": 0,
     "Position": {
       "X": 1568,
       "Y": -28832,
@@ -95,13 +98,13 @@
       "Z": 0.99999994
     },
     "SkinId": 1295396932,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 10405
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1802654273,
     "Variation": 1,
     "Position": {
@@ -116,6 +119,8 @@
       "Z": 0.99999994
     },
     "SkinId": 1802654273,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 11488

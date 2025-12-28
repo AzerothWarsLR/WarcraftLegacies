@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 925970498,
+    "Variation": 0,
     "Position": {
       "X": 13419.18,
       "Y": 285.39258,
@@ -15,14 +14,15 @@
       "Z": 0.45
     },
     "SkinId": 925970498,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 8051
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1852198745,
+    "Variation": 0,
     "Position": {
       "X": 13441.734,
       "Y": 765.71484,
@@ -35,14 +35,15 @@
       "Z": 0.52287674
     },
     "SkinId": 1852198745,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 12214
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1886408793,
+    "Variation": 0,
     "Position": {
       "X": 13365.453,
       "Y": 420.89062,
@@ -55,13 +56,13 @@
       "Z": 0.9497
     },
     "SkinId": 1886408793,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 16185
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 2004112462,
     "Variation": 1,
     "Position": {
@@ -76,14 +77,15 @@
       "Z": 1.1678213
     },
     "SkinId": 2004112462,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 16171
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 842477636,
+    "Variation": 0,
     "Position": {
       "X": 13312,
       "Y": 384,
@@ -96,14 +98,15 @@
       "Z": 1.1678213
     },
     "SkinId": 842477636,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 16170
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1886670660,
+    "Variation": 0,
     "Position": {
       "X": 13065.539,
       "Y": 715.4492,
@@ -116,14 +119,15 @@
       "Z": 0.9470999
     },
     "SkinId": 1886670660,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 16136
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1936085081,
+    "Variation": 0,
     "Position": {
       "X": 13073.32,
       "Y": 615.58203,
@@ -136,14 +140,15 @@
       "Z": 0.9816999
     },
     "SkinId": 1936085081,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 13518
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1936085081,
+    "Variation": 0,
     "Position": {
       "X": 13261.441,
       "Y": 397.67773,
@@ -156,14 +161,15 @@
       "Z": 0.9816999
     },
     "SkinId": 1936085081,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 12839
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": 13120,
       "Y": 320,
@@ -176,14 +182,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 13327
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1261842500,
+    "Variation": 0,
     "Position": {
       "X": 13085.43,
       "Y": 289.8457,
@@ -196,14 +203,15 @@
       "Z": 0.9579486
     },
     "SkinId": 1261842500,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6338
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1244737604,
+    "Variation": 0,
     "Position": {
       "X": 13191.004,
       "Y": 269.97852,
@@ -216,13 +224,13 @@
       "Z": 1.45
     },
     "SkinId": 1244737604,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 934
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 1802654284,
     "Variation": 8,
     "Position": {
@@ -237,6 +245,8 @@
       "Z": 0.78
     },
     "SkinId": 1802654284,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 2032

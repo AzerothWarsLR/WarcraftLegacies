@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1717849923,
+    "Variation": 0,
     "Position": {
       "X": 18597.023,
       "Y": 1995.9258,
@@ -15,14 +14,15 @@
       "Z": 1
     },
     "SkinId": 1717849923,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24180
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1818644300,
+    "Variation": 0,
     "Position": {
       "X": 18580.383,
       "Y": 2084.543,
@@ -35,14 +35,15 @@
       "Z": 1
     },
     "SkinId": 1818644300,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24181
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1717849923,
+    "Variation": 0,
     "Position": {
       "X": 18591.617,
       "Y": 2079.4062,
@@ -55,14 +56,15 @@
       "Z": 1
     },
     "SkinId": 1717849923,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24179
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1952862030,
+    "Variation": 0,
     "Position": {
       "X": 18284.71,
       "Y": 2163.668,
@@ -75,14 +77,15 @@
       "Z": 0.74999994
     },
     "SkinId": 1952862030,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15583
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1717849923,
+    "Variation": 0,
     "Position": {
       "X": 18553.781,
       "Y": 2094.5547,
@@ -95,14 +98,15 @@
       "Z": 1
     },
     "SkinId": 1717849923,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 24178
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1717849923,
+    "Variation": 0,
     "Position": {
       "X": 18592.438,
       "Y": 2128.3398,
@@ -115,6 +119,8 @@
       "Z": 1
     },
     "SkinId": 1717849923,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 15584

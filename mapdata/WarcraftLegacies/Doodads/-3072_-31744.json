@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1919373130,
+    "Variation": 0,
     "Position": {
       "X": -3176.5293,
       "Y": -31907.574,
@@ -15,13 +14,13 @@
       "Z": 0.6999999
     },
     "SkinId": 1919373130,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 30752
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1919176523,
     "Variation": 2,
     "Position": {
@@ -36,14 +35,15 @@
       "Z": 0.39999986
     },
     "SkinId": 1919176523,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 30753
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1295265860,
+    "Variation": 0,
     "Position": {
       "X": -3395.838,
       "Y": -32159.133,
@@ -56,14 +56,15 @@
       "Z": 3.8499994
     },
     "SkinId": 1295265860,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 12261
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1818316623,
+    "Variation": 0,
     "Position": {
       "X": -3145.0977,
       "Y": -31875.291,
@@ -76,14 +77,15 @@
       "Z": 0.99999994
     },
     "SkinId": 1818316623,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 30535
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1953713993,
+    "Variation": 0,
     "Position": {
       "X": -3092.3125,
       "Y": -31821.383,
@@ -96,14 +98,15 @@
       "Z": 0.65
     },
     "SkinId": 1953713993,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 30713
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1953713993,
+    "Variation": 0,
     "Position": {
       "X": -3163.8594,
       "Y": -31924.242,
@@ -116,6 +119,8 @@
       "Z": 0.65
     },
     "SkinId": 1953713993,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 30715

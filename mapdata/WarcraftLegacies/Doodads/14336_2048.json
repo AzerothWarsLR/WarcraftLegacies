@@ -1,19 +1,21 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1127362628,
+    "Variation": 0,
     "Position": {
       "X": 14366.102,
       "Y": 1993.3789,
       "Z": 118.989426
     },
+    "Rotation": 0,
     "Scale": {
       "X": 1.1499999,
       "Y": 1.1499999,
       "Z": 1.01
     },
     "SkinId": 1127362628,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 28168

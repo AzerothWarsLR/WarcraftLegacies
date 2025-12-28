@@ -26,7 +26,9 @@
     }
   },
   "CameraBoundsComplements": {
+    "Left": 0,
     "Right": 6,
+    "Bottom": 0,
     "Top": 2
   },
   "PlayableMapAreaWidth": 410,
@@ -43,17 +45,34 @@
   "PrologueScreenText": "\uFFFD",
   "PrologueScreenTitle": "",
   "PrologueScreenSubtitle": "",
+  "FogStyle": 0,
   "FogStartZ": 30000,
   "FogEndZ": 30000,
   "FogDensity": 2,
-  "FogColor": "#8080ff",
+  "FogColor": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  },
+  "GlobalWeather": 0,
   "SoundEnvironment": "",
-  "WaterTintingColor": "#000080",
+  "LightEnvironment": 0,
+  "WaterTintingColor": {
+    "R": 0,
+    "G": 0,
+    "B": 128,
+    "A": 255
+  },
   "ScriptLanguage": 1,
   "SupportedModes": 1,
   "GameDataVersion": 1,
+  "ForceDefaultCameraZoom": 0,
+  "ForceMaxCameraZoom": 0,
+  "ForceMinCameraZoom": 0,
   "Players": [
     {
+      "Id": 0,
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
@@ -77,7 +96,10 @@
         "X": 7104,
         "Y": -15616
       },
-      "AllyLowPriorityFlags": 8650752
+      "AllyLowPriorityFlags": 8650752,
+      "AllyHighPriorityFlags": 0,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 2,
@@ -91,7 +113,8 @@
       },
       "AllyLowPriorityFlags": 8388693,
       "AllyHighPriorityFlags": 262669,
-      "EnemyLowPriorityFlags": 8388608
+      "EnemyLowPriorityFlags": 8388608,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 3,
@@ -120,7 +143,8 @@
       },
       "AllyLowPriorityFlags": 4456456,
       "AllyHighPriorityFlags": 8650752,
-      "EnemyLowPriorityFlags": 262144
+      "EnemyLowPriorityFlags": 262144,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 6,
@@ -148,7 +172,9 @@
         "Y": 3648
       },
       "AllyLowPriorityFlags": 262144,
-      "AllyHighPriorityFlags": 262664
+      "AllyHighPriorityFlags": 262664,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 8,
@@ -161,7 +187,9 @@
         "Y": -19712
       },
       "AllyLowPriorityFlags": 1,
-      "AllyHighPriorityFlags": 32768
+      "AllyHighPriorityFlags": 32768,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 9,
@@ -173,7 +201,10 @@
         "X": 12928,
         "Y": 8448
       },
-      "AllyHighPriorityFlags": 132
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 132,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 11,
@@ -200,7 +231,10 @@
         "X": -28032,
         "Y": -9216
       },
-      "AllyHighPriorityFlags": 32768
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 32768,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 15,
@@ -213,7 +247,9 @@
         "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 334081
+      "AllyHighPriorityFlags": 334081,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 16,
@@ -224,7 +260,11 @@
       "StartPosition": {
         "X": -23232,
         "Y": -19584
-      }
+      },
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 0,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 18,
@@ -251,7 +291,10 @@
         "X": 3904,
         "Y": -13440
       },
-      "AllyHighPriorityFlags": 16
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 16,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 23,
@@ -262,7 +305,11 @@
       "StartPosition": {
         "X": 18816,
         "Y": -30784
-      }
+      },
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 0,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     }
   ],
   "Forces": [
@@ -300,1282 +347,1689 @@
   "UpgradeData": [
     {
       "Players": 1966079,
-      "Id": 1937207122
+      "Id": 1937207122,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1685548882,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1718382418
-    },
-    {
-      "Players": 1966079,
-      "Id": 1953984338
+      "Id": 1718382418,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1953984338,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1801613138
+      "Id": 1953984338,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1801613138,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1651009618
+      "Id": 1651009618,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1650944082
-    },
-    {
-      "Players": 1966079,
-      "Id": 1953523794
+      "Id": 1650944082,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1953523794,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1953720402
+      "Id": 1953523794,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1953720402,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1769105490
+      "Id": 1953720402,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1818650706
+      "Id": 1769105490,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1936943186
+      "Id": 1818650706,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1667655762
+      "Id": 1936943186,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1936091218
+      "Id": 1667655762,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1684236370
+      "Id": 1936091218,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 808464466
+      "Id": 1684236370,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 808464466,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 842018898
+      "Id": 842018898,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 842018898,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 842018898,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 842018898,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 8,
       "Id": 842018898,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 858796114
+      "Id": 858796114,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 858796114,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 858796114,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 858796114,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 2056,
       "Id": 858796114,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 15999,
-      "Id": 875573330
+      "Id": 875573330,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 8,
       "Id": 942682194,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 959459410
+      "Id": 959459410,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1093677138
+      "Id": 1093677138,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1194340434
+      "Id": 1194340434,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1177563218
-    },
-    {
-      "Players": 1966079,
-      "Id": 1227894866
+      "Id": 1177563218,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1227894866,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1227894866,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1081343,
-      "Id": 1261449298
+      "Id": 1261449298,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1146879,
       "Id": 1261449298,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1081343,
       "Id": 1261449298,
-      "Level": 1
-    },
-    {
-      "Players": 1966079,
-      "Id": 1160786002
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1160786002,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1144008786
+      "Id": 1160786002,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1144008786,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1144008786,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1110454354
+      "Id": 1110454354,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1702062162
+      "Id": 1702062162,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1851877458
-    },
-    {
-      "Players": 1966079,
-      "Id": 1634887762
-    },
-    {
-      "Players": 1966079,
-      "Id": 1634887762,
-      "Level": 7
-    },
-    {
-      "Players": 1966079,
-      "Id": 1634887762,
-      "Level": 6
+      "Id": 1851877458,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634887762,
-      "Level": 5
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634887762,
-      "Level": 4
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634887762,
-      "Level": 3
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634887762,
-      "Level": 2
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634887762,
-      "Level": 1
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1634494546
+      "Id": 1634887762,
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1634494546,
-      "Level": 7
+      "Id": 1634887762,
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1634494546,
-      "Level": 6
-    },
-    {
-      "Players": 1966079,
-      "Id": 1634494546,
-      "Level": 5
-    },
-    {
-      "Players": 1966079,
-      "Id": 1634494546,
-      "Level": 4
+      "Id": 1634887762,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634494546,
-      "Level": 3
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634494546,
-      "Level": 2
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634494546,
-      "Level": 1
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1953654866
+      "Id": 1634494546,
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1937141586
+      "Id": 1634494546,
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1717727058
+      "Id": 1634494546,
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1735421778
+      "Id": 1634494546,
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1835300690
+      "Id": 1634494546,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1953654866,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1937141586,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1717727058,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1735421778,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1835300690,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1160851538
+      "Id": 1160851538,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 892416082
+      "Id": 892416082,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 909193298
+      "Id": 909193298,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 925970514
+      "Id": 925970514,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 825307218
+      "Id": 825307218,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 808530002
+      "Id": 808530002,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1496330322
+      "Id": 1496330322,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 909127762,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 909127762,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1127231570,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1127231570,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1378889810
-    },
-    {
-      "Players": 1966079,
-      "Id": 892350546
+      "Id": 1378889810,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 892350546,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1227960402
+      "Id": 892350546,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1227960402,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1244737618
+      "Id": 1227960402,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1244737618,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1244737618,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1261514834
+      "Id": 1261514834,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 4063,
       "Id": 1261514834,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 4063,
       "Id": 1261514834,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1278292050
+      "Id": 1278292050,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1462775890
+      "Id": 1462775890,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1479553106
+      "Id": 1479553106,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1395732562
+      "Id": 1395732562,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1446064210
+      "Id": 1446064210,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1429286994
+      "Id": 1429286994,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1211117650
+      "Id": 1211117650,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16375,
-      "Id": 1177628754
+      "Id": 1177628754,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1127297106
+      "Id": 1127297106,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1093742674
+      "Id": 1093742674,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 858861650
+      "Id": 858861650,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131055,
-      "Id": 842084434
+      "Id": 842084434,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1513107538
+      "Id": 1513107538,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1412444242
+      "Id": 1412444242,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1311780946
+      "Id": 1311780946,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1278226514
+      "Id": 1278226514,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1244672082
+      "Id": 1244672082,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1110519890
+      "Id": 1110519890,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1362178130
+      "Id": 1362178130,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16375,
-      "Id": 1194405970
+      "Id": 1194405970,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1462841426
+      "Id": 1462841426,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 512,
       "Id": 1952736594,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1378955346
+      "Id": 1378955346,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1362112594
+      "Id": 1362112594,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1345335378
+      "Id": 1345335378,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1328558162
+      "Id": 1328558162,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1479618642
+      "Id": 1479618642,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1311846482
+      "Id": 1311846482,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1345400914
+      "Id": 1345400914,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1445998674
+      "Id": 1445998674,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1429221458
+      "Id": 1429221458,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1395667026
+      "Id": 1395667026,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 875638866
+      "Id": 875638866,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 942747730
+      "Id": 942747730,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 959524946
+      "Id": 959524946,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1211183186
+      "Id": 1211183186,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 925904978
+      "Id": 925904978,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1295069266
+      "Id": 1295069266,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2057,
       "Id": 1496395858,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 2057,
       "Id": 1496395858,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 2057,
       "Id": 1496395858,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1412509778
+      "Id": 1412509778,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2304,
       "Id": 1412509778,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2304,
       "Id": 1412509778,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 2304,
       "Id": 1412509778,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 2304,
       "Id": 1412509778,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1328623698
+      "Id": 1328623698,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 808595538
+      "Id": 808595538,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 842018898,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 842018898,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 842018898,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 858796114,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 858796114,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 858796114,
-      "Level": 5
-    },
-    {
-      "Players": 16646143,
-      "Id": 1634559314
-    },
-    {
-      "Players": 16646143,
-      "Id": 1634559314,
-      "Level": 7
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634559314,
-      "Level": 6
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634559314,
-      "Level": 5
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634559314,
-      "Level": 4
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634559314,
-      "Level": 3
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634559314,
-      "Level": 2
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634559314,
-      "Level": 1
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1836279122
+      "Id": 1634559314,
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1836279122,
-      "Level": 7
-    },
-    {
-      "Players": 16646143,
-      "Id": 1836279122,
-      "Level": 6
-    },
-    {
-      "Players": 16646143,
-      "Id": 1836279122,
-      "Level": 5
+      "Id": 1634559314,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1836279122,
-      "Level": 4
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1836279122,
-      "Level": 3
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1836279122,
-      "Level": 2
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1836279122,
-      "Level": 1
+      "Level": 5,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1836279122,
+      "Level": 4,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1836279122,
+      "Level": 3,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1836279122,
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1836279122,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 2004051282,
-      "Level": 1
-    },
-    {
-      "Players": 16646143,
-      "Id": 1752327506
-    },
-    {
-      "Players": 16646143,
-      "Id": 1752327506,
-      "Level": 7
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1752327506,
-      "Level": 6
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1752327506,
-      "Level": 5
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1752327506,
-      "Level": 4
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1752327506,
-      "Level": 3
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1752327506,
-      "Level": 2
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1752327506,
-      "Level": 1
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1667523922
+      "Id": 1752327506,
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1752327506,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1667523922,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1769170258
+      "Id": 1667523922,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1952998738
+      "Id": 1769170258,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1836086610
+      "Id": 1952998738,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 2019915090
+      "Id": 1836086610,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 2019915090,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1634889554,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1886613330
+      "Id": 1886613330,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16343,
       "Id": 1886613330,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1886613330,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1701672274,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1701672274,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1701672274,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1701672274,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1634891090,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1634891090,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1634891090,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1634891090,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1919120722,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1919120722,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1919120722,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1919120722,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 942682194
+      "Id": 942682194,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 942682194,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 942682194,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 942682194,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1886614866
-    },
-    {
-      "Players": 1966079,
-      "Id": 959590482
+      "Id": 1886614866,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 959590482,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
-      "Players": 16646143,
-      "Id": 942813266
+      "Players": 1966079,
+      "Id": 959590482,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 942813266,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 926036050
+      "Id": 942813266,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 926036050,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1701672274
-    },
-    {
-      "Players": 16646143,
-      "Id": 1701672274,
-      "Level": 3
-    },
-    {
-      "Players": 16646143,
-      "Id": 1701672274,
-      "Level": 2
+      "Id": 926036050,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1701672274,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1634891090
+      "Id": 1701672274,
+      "Level": 3,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1701672274,
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1701672274,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1634891090,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1634891090,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634891090,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1634891090,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1918989650,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1919120722
+      "Id": 1919120722,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 2,
       "Id": 1919120722,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1919120722,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1919120722,
-      "Level": 1
-    },
-    {
-      "Players": 1966079,
-      "Id": 1701670738
-    },
-    {
-      "Players": 1966079,
-      "Id": 1701670738,
-      "Level": 7
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1701670738,
-      "Level": 6
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1701670738,
-      "Level": 5
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1701670738,
-      "Level": 4
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1701670738,
-      "Level": 3
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1701670738,
-      "Level": 2
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1701670738,
-      "Level": 1
+      "Level": 3,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1701670738,
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1701670738,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1918988114,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1110585426
-    },
-    {
-      "Players": 1966079,
-      "Id": 1953722194
+      "Id": 1110585426,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1953722194,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 875704402
+      "Id": 1953722194,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 875704402,
-      "Level": 1
-    },
-    {
-      "Players": 131071,
-      "Id": 1177694290
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1261580370
+      "Id": 875704402,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 131071,
+      "Id": 1177694290,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1261580370,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1112,
       "Id": 1261580370,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1295134802
+      "Id": 1295134802,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1112,
       "Id": 1295134802,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 112,
       "Id": 1244803154,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1211248722
+      "Id": 1211248722,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16383,
       "Id": 959459410,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 4090,
       "Id": 825241682,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 4090,
       "Id": 825241682,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 825372754
+      "Id": 825372754,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 4095,
       "Id": 1278357586,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1311912018
+      "Id": 1311912018,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 4095,
       "Id": 1311912018,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1328689234
-    },
-    {
-      "Players": 1966079,
-      "Id": 1345466450
-    },
-    {
-      "Players": 131071,
-      "Id": 1362243666
-    },
-    {
-      "Players": 12288,
-      "Id": 892481618
-    },
-    {
-      "Players": 1966079,
-      "Id": 1295003730,
-      "Level": 1
-    },
-    {
-      "Players": 1966079,
-      "Id": 1295003730
-    },
-    {
-      "Players": 131071,
-      "Id": 1278357586
-    },
-    {
-      "Players": 1966079,
-      "Id": 1852141394
+      "Id": 1328689234,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1345466450,
-      "Level": 1
-    },
-    {
-      "Players": 1966079,
-      "Id": 1920233298
-    },
-    {
-      "Players": 16646143,
-      "Id": 1412575314
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1379020882
+      "Id": 1362243666,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 12288,
+      "Id": 892481618,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1429352530
+      "Id": 1295003730,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1295003730,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 131071,
+      "Id": 1278357586,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1852141394,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1345466450,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1920233298,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1412575314,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 131071,
+      "Id": 1379020882,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1429352530,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1064,
       "Id": 1852141394,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16375,
       "Id": 1852141394,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16,
@@ -1585,1168 +2039,1604 @@
     },
     {
       "Players": 1966079,
-      "Id": 1127428178
+      "Id": 1127428178,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1144205394
+      "Id": 1144205394,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1160982610
+      "Id": 1160982610,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1177759826
+      "Id": 1177759826,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1110650962
+      "Id": 1110650962,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1093873746
+      "Id": 1093873746,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1024,
       "Id": 942878802,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 942878802
+      "Id": 942878802,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 926101586
+      "Id": 926101586,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 909324370
+      "Id": 909324370,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 892547154
+      "Id": 892547154,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 875769938
+      "Id": 875769938,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 842215506
+      "Id": 842215506,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 858992722
+      "Id": 858992722,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 825438290
+      "Id": 825438290,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 808661074
+      "Id": 808661074,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1961983,
-      "Id": 1345531986
+      "Id": 1345531986,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1244868690
+      "Id": 1244868690,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1496395858,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1496395858,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1496395858,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1496395858,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1513173074
+      "Id": 1513173074,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 7
+      "Level": 7,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 6
+      "Level": 6,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 5
+      "Level": 5,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 4
+      "Level": 4,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1,
       "Id": 1513173074,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1969386834
-    },
-    {
-      "Players": 1966079,
-      "Id": 1362309202
+      "Id": 1969386834,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1362309202,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1228091474
+      "Id": 1362309202,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1228091474,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1211314258
+      "Id": 1228091474,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1211314258,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1211314258,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 2048,
       "Id": 1379020882,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1937204562
+      "Id": 1937204562,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 859058258
+      "Id": 859058258,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 384,
       "Id": 1429352530,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1144270930
-    },
-    {
-      "Players": 16646143,
-      "Id": 1093808210
-    },
-    {
-      "Players": 16646143,
-      "Id": 1093808210,
-      "Level": 2
+      "Id": 1144270930,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1093808210,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1819506002
+      "Id": 1093808210,
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1836283218
+      "Id": 1093808210,
+      "Level": 1,
+      "Availability": 0
     },
     {
-      "Players": 131071,
-      "Id": 1667328082
+      "Players": 16646143,
+      "Id": 1819506002,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1836283218,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1667328082,
-      "Level": 2
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1667328082,
-      "Level": 1
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 131071,
+      "Id": 1667328082,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1161048146
+      "Id": 1161048146,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 384,
       "Id": 1717727058,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1479684178
+      "Id": 1479684178,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1513238610
+      "Id": 1513238610,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1961983,
-      "Id": 1261645906
+      "Id": 1261645906,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1194537042
+      "Id": 1194537042,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1379086418
+      "Id": 1379086418,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1446195282
+      "Id": 1446195282,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1462972498
+      "Id": 1462972498,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1479749714
+      "Id": 1479749714,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1496526930
-    },
-    {
-      "Players": 1966079,
-      "Id": 1160917074
+      "Id": 1496526930,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1160917074,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1160917074,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1446064210,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1395798098
+      "Id": 1395798098,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1446129746
+      "Id": 1446129746,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1462906962
+      "Id": 1462906962,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1496461394
+      "Id": 1496461394,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1412640850
+      "Id": 1412640850,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1429418066
+      "Id": 1429418066,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 959656018
+      "Id": 959656018,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 842149970
+      "Id": 842149970,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1311977554
+      "Id": 1311977554,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 875835474
+      "Id": 875835474,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 892481618,
-      "Level": 1
-    },
-    {
-      "Players": 1966079,
-      "Id": 1228025938
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1228025938,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1278423122
+      "Id": 1228025938,
+      "Level": 1,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 1278423122,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 875638866,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16343,
       "Id": 1328558162,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1295200338
+      "Id": 1295200338,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1651732050
+      "Id": 1651732050,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1345466450,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1144139858
+      "Id": 1144139858,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 926167122
+      "Id": 926167122,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16777199,
       "Id": 1918986322,
-      "Level": 8
+      "Level": 8,
+      "Availability": 0
     },
     {
       "Players": 16777199,
       "Id": 1918986322,
-      "Level": 9
-    },
-    {
-      "Players": 1966079,
-      "Id": 1127493714
+      "Level": 9,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1127493714,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1177825362
+      "Id": 1127493714,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 1177825362,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
-      "Players": 16646143,
-      "Id": 909258834
+      "Players": 1966079,
+      "Id": 1177825362,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 909258834,
-      "Level": 2
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 909258834,
-      "Level": 1
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 909258834,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1211183186,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1211183186,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1194537042,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 959721554
+      "Id": 959721554,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 909389906
+      "Id": 909389906,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 808726610
+      "Id": 808726610,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1513304146
+      "Id": 1513304146,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1395863634
+      "Id": 1395863634,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1328754770
+      "Id": 1328754770,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1918989650
+      "Id": 1918989650,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1667331410
+      "Id": 1667331410,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1718056274
+      "Id": 1718056274,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1651995986
+      "Id": 1651995986,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1718842706
-    },
-    {
-      "Players": 16646143,
-      "Id": 1701737810
+      "Id": 1718842706,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1701737810,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1633842514
+      "Id": 1701737810,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1633842514,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1650881874
+      "Id": 1633842514,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1668314450
+      "Id": 1650881874,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1194602578
+      "Id": 1668314450,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1194602578,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1634889554
+      "Id": 1634889554,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1918988114
+      "Id": 1918988114,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1935830866
+      "Id": 1935830866,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1685548882
+      "Id": 1685548882,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1651666770
+      "Id": 1651666770,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1836085074
-    },
-    {
-      "Players": 1966079,
-      "Id": 858927186
+      "Id": 1836085074,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 858927186,
-      "Level": 2
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
       "Id": 858927186,
-      "Level": 1
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 1966079,
+      "Id": 858927186,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1194537042,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 12288,
-      "Id": 1110716498
+      "Id": 1110716498,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1701079122
-    },
-    {
-      "Players": 131071,
-      "Id": 1751935058
+      "Id": 1701079122,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1751935058,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 131071,
+      "Id": 1751935058,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1836083282
+      "Id": 1836083282,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 942944338
+      "Id": 942944338,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 2004051282
+      "Id": 2004051282,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1987405138
-    },
-    {
-      "Players": 16646143,
-      "Id": 1651402066
+      "Id": 1987405138,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1651402066,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1668506962
+      "Id": 1651402066,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1735222610
+      "Id": 1668506962,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1651074386
+      "Id": 1735222610,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1651074386,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1802331474
+      "Id": 1651074386,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1952736594
+      "Id": 1802331474,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1952736594,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1650681170
+      "Id": 1952736594,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1651533138
+      "Id": 1650681170,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1936876882
+      "Id": 1651533138,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1936221522
+      "Id": 1936876882,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1650812242
+      "Id": 1936221522,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1667589458
+      "Id": 1650812242,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1836082514
+      "Id": 1667589458,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16646143,
+      "Id": 1836082514,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1395667026,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1194471506
+      "Id": 1194471506,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1194471506,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
       "Id": 1462841426,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1852141138
-    },
-    {
-      "Players": 131071,
-      "Id": 2004053586
+      "Id": 1852141138,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 2004053586,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1769172562
+      "Id": 2004053586,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1952542290
+      "Id": 1769172562,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1952542290,
-      "Level": 2
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1952542290,
-      "Level": 1
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1835101778
+      "Id": 1952542290,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1835101778,
-      "Level": 2
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 1835101778,
-      "Level": 1
+      "Level": 2,
+      "Availability": 0
+    },
+    {
+      "Players": 131071,
+      "Id": 1835101778,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 892612690
+      "Id": 892612690,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
       "Id": 892612690,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1966079,
-      "Id": 1651730514
+      "Id": 1651730514,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1496395858
+      "Id": 1496395858,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1345597522
+      "Id": 1345597522,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 131071,
-      "Id": 1177890898
+      "Id": 1177890898,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16777199,
       "Id": 1701668946,
-      "Level": 8
+      "Level": 8,
+      "Availability": 0
     },
     {
       "Players": 16777199,
       "Id": 1701668946,
-      "Level": 9
+      "Level": 9,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1328820306
-    },
-    {
-      "Players": 118783,
-      "Id": 1868982098
+      "Id": 1328820306,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 118783,
       "Id": 1868982098,
-      "Level": 2
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 118783,
       "Id": 1868982098,
-      "Level": 1
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 118783,
-      "Id": 1328885842
+      "Id": 1868982098,
+      "Level": 1,
+      "Availability": 0
     },
     {
-      "Players": 1953791,
-      "Id": 1345663058
+      "Players": 118783,
+      "Id": 1328885842,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
       "Id": 1345663058,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1953791,
+      "Id": 1345663058,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16646143,
-      "Id": 1479880786
+      "Id": 1479880786,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 15069183,
-      "Id": 859189330
+      "Id": 859189330,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16642047,
-      "Id": 825634898
+      "Id": 825634898,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 15069183,
-      "Id": 842412114
-    },
-    {
-      "Players": 16629759,
-      "Id": 875966546
+      "Id": 842412114,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16629759,
       "Id": 875966546,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16629759,
+      "Id": 875966546,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 892743762
+      "Id": 892743762,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 909520978
+      "Id": 909520978,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 118783,
-      "Id": 825503826
+      "Id": 825503826,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 118783,
-      "Id": 943009874
+      "Id": 943009874,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 959787090
+      "Id": 959787090,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16642047,
-      "Id": 1144074322
+      "Id": 1144074322,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 4095,
-      "Id": 842281042
+      "Id": 842281042,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1093939282
+      "Id": 1093939282,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 118783,
-      "Id": 1429483602
+      "Id": 1429483602,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1957887,
-      "Id": 1177956434
+      "Id": 1177956434,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16777183,
-      "Id": 1194733650
+      "Id": 1194733650,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16642047,
-      "Id": 1228288082
+      "Id": 1228288082,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1245065298
+      "Id": 1245065298,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1957887,
-      "Id": 1261842514
+      "Id": 1261842514,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16642047,
-      "Id": 1312174162
+      "Id": 1312174162,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1295396946
+      "Id": 1295396946,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16642047,
-      "Id": 1278619730
+      "Id": 1278619730,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16642047,
-      "Id": 1446260818
+      "Id": 1446260818,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
-      "Id": 1328951378
-    },
-    {
-      "Players": 1953791,
-      "Id": 1362505810
+      "Id": 1328951378,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1953791,
       "Id": 1362505810,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 1953791,
+      "Id": 1362505810,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1953791,
       "Id": 1445998674,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 118783,
       "Id": 1295003730,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1953791,
       "Id": 858927186,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 118783,
       "Id": 1194537042,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 1211314258,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1048576,
       "Id": 1261449298,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 1345597522,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 1328820306,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1937407,
-      "Id": 825241682
+      "Id": 825241682,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 808464466,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 909127762,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 1127231570,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16625663,
       "Id": 1194602578,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16625663,
       "Id": 1093808210,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 1328754770,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 1937407,
       "Id": 1328754770,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16625663,
       "Id": 1651402066,
-      "Level": 2
+      "Level": 2,
+      "Availability": 0
     },
     {
       "Players": 16625663,
       "Id": 1211183186,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16625663,
       "Id": 909258834,
-      "Level": 3
+      "Level": 3,
+      "Availability": 0
     },
     {
       "Players": 16711679,
       "Id": 1094070354,
+      "Level": 0,
       "Availability": 2
     },
     {
       "Players": 16777215,
-      "Id": 943140946
+      "Id": 943140946,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 16777215,
       "Id": 943140946,
-      "Level": 1
-    },
-    {
-      "Players": 16777215,
-      "Id": 1127690322
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 16777215,
       "Id": 1127690322,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 1127690322,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 1200640,
-      "Id": 1261973586
+      "Id": 1261973586,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 943272018
+      "Id": 943272018,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 926494802
+      "Id": 926494802,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 809054290
+      "Id": 809054290,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1396191314
+      "Id": 1396191314,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1379414098
-    },
-    {
-      "Players": 14986751,
-      "Id": 1329016914
+      "Id": 1379414098,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1329016914,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 14986751,
+      "Id": 1329016914,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1312239698,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1312239698
+      "Id": 1312239698,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1295462482,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1295462482
+      "Id": 1295462482,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1278685266,
-      "Level": 1
-    },
-    {
-      "Players": 14986751,
-      "Id": 825700434
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 825700434,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 808923218
+      "Id": 825700434,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 808923218,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1513500754
+      "Id": 808923218,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1513500754,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1479946322
+      "Id": 1513500754,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1479946322,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 909717586
+      "Id": 1479946322,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1412968530
+      "Id": 909717586,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1211641938
+      "Id": 1412968530,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1446457426
+      "Id": 1211641938,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1480011858
+      "Id": 1446457426,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 14986751,
+      "Id": 1480011858,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1245130834,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1245130834
-    },
-    {
-      "Players": 14986751,
-      "Id": 1228353618
+      "Id": 1245130834,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1228353618,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 1127559250
+      "Id": 1228353618,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 1127559250,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 825569362
+      "Id": 1127559250,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 14986751,
       "Id": 825569362,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 14986751,
-      "Id": 808792146
+      "Id": 825569362,
+      "Level": 1,
+      "Availability": 0
     },
     {
-      "Players": 15056895,
-      "Id": 1194668114
+      "Players": 14986751,
+      "Id": 808792146,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 15056895,
       "Id": 1194668114,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 15056895,
+      "Id": 1194668114,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 524288,
       "Id": 1701668946,
+      "Level": 0,
       "Availability": 2
     },
     {
@@ -2764,6 +3654,7 @@
     {
       "Players": 524288,
       "Id": 1918986322,
+      "Level": 0,
       "Availability": 2
     },
     {
@@ -2781,11 +3672,13 @@
     {
       "Players": 589824,
       "Id": 1379151954,
+      "Level": 0,
       "Availability": 2
     },
     {
       "Players": 589824,
       "Id": 1261449298,
+      "Level": 0,
       "Availability": 2
     },
     {
@@ -2797,110 +3690,158 @@
     {
       "Players": 12950495,
       "Id": 1735222610,
-      "Level": 1
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1095517522
+      "Id": 1095517522,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1112294738
+      "Id": 1112294738,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1145849170
+      "Id": 1145849170,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1196180818
-    },
-    {
-      "Players": 12950495,
-      "Id": 1280066898
+      "Id": 1196180818,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
       "Id": 1280066898,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1330398546
+      "Id": 1280066898,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 12950495,
       "Id": 1330398546,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1347175762
+      "Id": 1330398546,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1397507410
+      "Id": 1347175762,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1414284626
+      "Id": 1397507410,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1446588498
+      "Id": 1414284626,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1464616274
+      "Id": 1446588498,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
       "Id": 1464616274,
-      "Level": 1
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 1464812882
+      "Id": 1464616274,
+      "Level": 1,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 808535122
+      "Id": 1464812882,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 825246802
+      "Id": 808535122,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 842024018
+      "Id": 825246802,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 875578450
+      "Id": 842024018,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 892355666
+      "Id": 875578450,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 894915410
+      "Id": 892355666,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 909132882
+      "Id": 894915410,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 925910098
+      "Id": 909132882,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 942687314
+      "Id": 925910098,
+      "Level": 0,
+      "Availability": 0
     },
     {
       "Players": 12950495,
-      "Id": 959464530
+      "Id": 942687314,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 12950495,
+      "Id": 959464530,
+      "Level": 0,
+      "Availability": 0
     }
   ],
   "TechData": [
@@ -7556,6 +8497,7 @@
   "RandomUnitTables": [],
   "RandomItemTables": [
     {
+      "Index": 0,
       "Name": "Cenarius",
       "ItemSets": [
         {

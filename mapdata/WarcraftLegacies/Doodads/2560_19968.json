@@ -1,8 +1,7 @@
 [
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1802719052,
+    "Variation": 0,
     "Position": {
       "X": 2513.496,
       "Y": 20158.992,
@@ -15,6 +14,8 @@
       "Z": 1.0876675
     },
     "SkinId": 1802719052,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6487
