@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
@@ -28,25 +27,21 @@ public sealed class AvengersShieldProjectile : BasicMissile
     CollisionRadius = 100f;
     CasterZ = 60;
     TargetImpactZ = 60;
-    Console.WriteLine($"Missile created from {GetUnitName(source)} to {GetUnitName(target)}");
   }
 
   public override void OnCollision(unit target)
   {
     if (IsReturn)
     {
-      Console.WriteLine($"Return missile collided with {GetUnitName(target)}");
       Dispose();
       return;
     }
 
     if (!IsValidTarget(target))
     {
-      Console.WriteLine($"Invalid target: {GetUnitName(target)}");
       return;
     }
 
-    Console.WriteLine($"Missile hit {GetUnitName(target)}");
     Caster.DealDamage(
       target,
       Damage,
@@ -72,7 +67,6 @@ public sealed class AvengersShieldProjectile : BasicMissile
       var nextTarget = FindNextTarget(target);
       if (nextTarget != null)
       {
-        Console.WriteLine($"Bouncing to {GetUnitName(nextTarget)}");
         var source = target;
         timer.Create().Start(BounceDelay, false, () =>
         {
@@ -96,13 +90,11 @@ public sealed class AvengersShieldProjectile : BasicMissile
       }
       else
       {
-        Console.WriteLine("No next target, returning to caster");
         ReturnToCaster(target);
       }
     }
     else
     {
-      Console.WriteLine("No remaining bounces, returning to caster");
       ReturnToCaster(target);
     }
 
@@ -111,14 +103,14 @@ public sealed class AvengersShieldProjectile : BasicMissile
 
   private void ReturnToCaster(unit from)
   {
-    Console.WriteLine($"Creating return missile from {GetUnitName(from)} to caster {GetUnitName(Caster)}");
     timer.Create().Start(BounceDelay, false, () =>
     {
       var returnMissile = new AvengersShieldProjectile(from, Caster)
       {
         IsReturn = true,
         Speed = Speed,
-        EffectString = EffectString
+        EffectString = EffectString,
+        CollisionRadius = 150f
       };
 
       MissileSystem.Add(returnMissile);

@@ -8,12 +8,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Avenger\u0027s Shield"
+      "Value": "|c00FF0000Avenger\u0027s Shield|r"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit has been silenced."
+      "Value": "This unit has been temporarily silenced."
     },
     {
       "Id": 1835101798,
@@ -33,7 +33,7 @@
     {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAvengersShield.blp"
     }
   ]
 }

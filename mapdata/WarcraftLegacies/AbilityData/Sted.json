@@ -16,7 +16,7 @@
       "Level": 1,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "pben"
+      "Value": "Pben"
     },
     {
       "Level": 1,
@@ -43,7 +43,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAvengersShield.blp"
     }
   ]
 }

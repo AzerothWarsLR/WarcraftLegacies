@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Avengers Shield"
-    },
-    {
       "Level": 4,
       "Id": 1920296033,
       "Type": 2,
@@ -85,6 +80,107 @@
     {
       "Id": 1886612833,
       "Value": 700
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828535880,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828535880,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828535880,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828535880,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Avengers Shield"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical shield at a target enemy unit, dealing damage 75 and silencing the target for 3 seconds. The shield bounces to up to 3 additional nearby enemies, dealing less damage with each bounce."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical shield at a target enemy unit, dealing damage 100 and silencing the target for 3 seconds. The shield bounces to up to 3 additional nearby enemies, dealing less damage with each bounce."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical shield at a target enemy unit, dealing damage 125 and silencing the target for 3 seconds. The shield bounces to up to 3 additional nearby enemies, dealing less damage with each bounce."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical shield at a target enemy unit, dealing damage 150 and silencing the target for 3 seconds. The shield bounces to up to 3 additional nearby enemies, dealing less damage with each bounce."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avengers Shield - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avengers Shield - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avengers Shield - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Avengers Shield - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAvengersShield.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }
