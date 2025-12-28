@@ -25,6 +25,7 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Unlimited, UnitCategory.Specialist);
     yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
     yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
+    yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.SpecailFarm1);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.SpecailFarm2);
     yield return new(UNIT_OGRU_GRUNT_FROSTWOLF, Unlimited, UnitCategory.MeleeBasic);
     yield return new(UNIT_OTAU_TAUREN_FROSTWOLF, Unlimited, UnitCategory.MeleeAdvanced);
