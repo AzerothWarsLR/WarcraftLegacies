@@ -1,0 +1,20 @@
+﻿using Warcraft.Cartographer.Migrations;
+
+namespace WarcraftLegacies.CLI.Migrations;
+
+public static class MapMigrationProvider
+{
+  public static IMapMigration[] GetMapMigrations()
+  {
+    return new IMapMigration[]
+    {
+      new ControlPointMapMigration(),
+      new CreepLevelMapMigration(),
+      new GoldBountyMapMigration(),
+      new FlightMigration(),
+      new UnitTooltipExtendedMigration(),
+      new UnitTooltipBasicMigration(),
+      new PortraitModelFileMapMigration()
+    };
+  }
+}

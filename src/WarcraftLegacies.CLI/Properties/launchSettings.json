@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "Test": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x test WarcraftLegacies"
+    },
+    "Publish": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x publish WarcraftLegacies"
+    },
+    "Convert W3X to MapData": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies"
+    },
+    "Convert MapData to W3X": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies"
+    },
+    "Generate Constants": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI generate constants WarcraftLegacies"
+    }
+  }
+}

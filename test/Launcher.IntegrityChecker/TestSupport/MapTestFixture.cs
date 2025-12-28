@@ -1,10 +1,10 @@
 ﻿using System.Text;
-using Launcher.Extensions;
-using Launcher.Paths;
-using Launcher.Services;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.CodeAnalysis.Jass.Extensions;
+using Warcraft.Cartographer.Deserialization;
+using Warcraft.Cartographer.Extensions;
+using WarcraftLegacies.CLI.Settings;
 
 namespace Launcher.IntegrityChecker.TestSupport;
 
@@ -30,8 +30,8 @@ public sealed class MapTestFixture
   {
     (Map, _) = MapDataProvider.GetMapData();
     ObjectDatabase = Map.GetObjectDatabaseFromMap();
-    var sharedPathOptions = SharedPathOptions.Create("WarcraftLegacies");
-    var advancedMapBuilder = new AdvancedMapBuilder(AdvancedMapBuilderOptions.Create(sharedPathOptions));
+    var sharedPathOptions = DefaultOptionsFactory.CreateSharedPathOptions("WarcraftLegacies");
+    var advancedMapBuilder = new AdvancedMapBuilder(DefaultOptionsFactory.CreateAdvancedMapBuilderOptions(sharedPathOptions));
     advancedMapBuilder.AddCSharpCode(Map);
 
     var scriptBuilder = new StringBuilder();

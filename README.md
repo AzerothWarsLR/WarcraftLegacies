@@ -8,14 +8,23 @@ We accept public contributions to the code-base in the form of Pull Requests. Fe
 
 ## Projects
 
-### Launcher
-Compiles source code and source .w3x files into playable .w3x maps.
-
 ### MacroTools
-A library intended to be usable by any map in the Warcraft 3 Macro-Map genre. Currently only used by Warcraft: Legacies and the test map.
+Library containing tools intended for consumption by Warcraft 3 maps in the Macro Strategy genre.
+
+### MacroTools.Shared
+Library code intended to be consumed by both Warcraft.Cartographer-based CLIs and Warcraft 3 Macro maps, to support data accessible at both map generation time and runtime.
+
+### War3Api.Object
+"Fork" of [War3Api.Object](https://github.com/Drake53/War3Api) modified for internal consumption.
+
+### Warcraft.Cartographer
+Library built on [War3Net](https://github.com/Drake53/War3Net) providing advanced tools for serializing, deserializing, compiling, and postprocessing Warcraft 3 maps.
+
+### WarcraftLegacies.CLI
+Command line executable that leverages Warcraft.Cartographer to support the editing, testing, and publishing of Warcraft Legacies.
+
+### WarcraftLegacies.Shared
+Game code shared between WarcraftLegacies.CLI and WarcraftLegacies.Source, to support data accessible at both map generation time and runtime.
 
 ### WarcraftLegacies.Source
 Code specific to Warcraft: Legacies, which gets compiled into Lua before being executed during the map's runtime.
-
-### TestMap.Source
-Code to be inserted into a simple test map which demonstrates features from the MacroTools project.
