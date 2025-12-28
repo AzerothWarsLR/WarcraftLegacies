@@ -14,20 +14,31 @@ public sealed class AvengersShieldProjectile : BasicMissile
   public int RemainingBounces { get; set; }
   public float BounceRadius { get; init; }
   public float SilenceDuration { get; init; }
+  public float BounceDelay { get; init; }
+  public float DamageFalloff { get; init; }
+  public bool IsReturn { get; init; }
   public string ImpactEffect { get; init; }
 
   private readonly List<unit> _hitUnits = new();
 
   public AvengersShieldProjectile(unit source, unit target)
     : base(source, target.X, target.Y)
+
   {
     CollisionRadius = 100f;
     CasterZ = 60;
     TargetImpactZ = 60;
   }
 
+
   public override void OnCollision(unit target)
   {
+    if (IsReturn)
+    {
+      Dispose();
+      return;
+    }
+
     if (!IsValidTarget(target))
     {
       return;
@@ -58,24 +69,56 @@ public sealed class AvengersShieldProjectile : BasicMissile
       var nextTarget = FindNextTarget(target);
       if (nextTarget != null)
       {
-        var bounceMissile = new AvengersShieldProjectile(target, nextTarget)
+        var source = target;
+        timer.Create().Start(BounceDelay, false, () =>
         {
-          Damage = Damage,
-          RemainingBounces = RemainingBounces,
-          BounceRadius = BounceRadius,
-          SilenceDuration = SilenceDuration,
-          Speed = Speed,
-          EffectString = EffectString,
-          ImpactEffect = ImpactEffect
-        };
+          var bounceMissile = new AvengersShieldProjectile(source, nextTarget)
+          {
+            Damage = Damage * DamageFalloff,
+            RemainingBounces = RemainingBounces,
+            BounceRadius = BounceRadius,
+            SilenceDuration = SilenceDuration,
+            BounceDelay = BounceDelay,
+            DamageFalloff = DamageFalloff,
+            Speed = Speed,
+            EffectString = EffectString,
+            ImpactEffect = ImpactEffect
+          };
 
-        bounceMissile._hitUnits.AddRange(_hitUnits);
-        MissileSystem.Add(bounceMissile);
+          bounceMissile._hitUnits.AddRange(_hitUnits);
+          MissileSystem.Add(bounceMissile);
+          @event.ExpiredTimer.Dispose();
+        });
       }
+      else
+      {
+        ReturnToCaster(target);
+      }
+    }
+    else
+    {
+      ReturnToCaster(target);
     }
 
     Dispose();
   }
+
+  private void ReturnToCaster(unit from)
+  {
+    timer.Create().Start(BounceDelay, false, () =>
+    {
+      var returnMissile = new AvengersShieldProjectile(from, Caster)
+      {
+        IsReturn = true,
+        Speed = Speed,
+        EffectString = EffectString
+      };
+
+      MissileSystem.Add(returnMissile);
+      @event.ExpiredTimer.Dispose();
+    });
+  }
+
 
   private unit FindNextTarget(unit from)
   {

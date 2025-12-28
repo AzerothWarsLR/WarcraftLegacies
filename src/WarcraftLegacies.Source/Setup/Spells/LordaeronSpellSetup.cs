@@ -40,12 +40,12 @@ public static class LordaeronSpellSetup
 
     var avengersShield = new AvengersShieldSpell(ABILITY_OCSQ_AVENGERS_SHIELD)
     {
-      DamageBase = 75,
+      DamageBase = 20,
       DamageLevel = 25,
       MaxBounces = 3,
       BounceRadius = 600,
       SilenceDuration = 3,
-      ProjectileSpeed = 900,
+      ProjectileSpeed = 400,
       ProjectileEffect = @"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl",
       ImpactEffect = @"Abilities\Spells\Human\Defend\DefendCaster.mdl"
     };

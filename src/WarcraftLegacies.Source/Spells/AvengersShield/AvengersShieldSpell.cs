@@ -34,6 +34,8 @@ public sealed class AvengersShieldSpell : Spell
       RemainingBounces = MaxBounces,
       BounceRadius = BounceRadius,
       SilenceDuration = SilenceDuration,
+      BounceDelay = 0.08f,
+      DamageFalloff = 0.85f,
       Speed = ProjectileSpeed,
       EffectString = ProjectileEffect,
       ImpactEffect = ImpactEffect
