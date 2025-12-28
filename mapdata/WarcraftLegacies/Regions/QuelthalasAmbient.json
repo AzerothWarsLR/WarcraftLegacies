@@ -5,10 +5,12 @@
   "Top": 17440,
   "Name": "QuelthalasAmbient",
   "CreationNumber": 275,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 255,
-    "B": 255
+    "G": 0,
+    "B": 255,
+    "A": 255
   }
 }

@@ -1,8 +1,7 @@
 [
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 2002931524,
+    "Variation": 0,
     "Position": {
       "X": 8952.93,
       "Y": -30649.387,
@@ -15,14 +14,15 @@
       "Z": 2.309999
     },
     "SkinId": 2002931524,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 25791
   },
   {
-    "State": 2,
-    "Life": 20,
     "TypeId": 825372738,
+    "Variation": 0,
     "Position": {
       "X": 8704,
       "Y": -30208,
@@ -35,14 +35,15 @@
       "Z": 0.70000005
     },
     "SkinId": 825372738,
+    "State": 2,
+    "Life": 20,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 4989
   },
   {
-    "State": 2,
-    "Life": 20,
     "TypeId": 825372738,
+    "Variation": 0,
     "Position": {
       "X": 8704,
       "Y": -30336,
@@ -55,14 +56,15 @@
       "Z": 0.70000005
     },
     "SkinId": 825372738,
+    "State": 2,
+    "Life": 20,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 4994
   },
   {
-    "State": 2,
-    "Life": 20,
     "TypeId": 825372738,
+    "Variation": 0,
     "Position": {
       "X": 8704,
       "Y": -30464,
@@ -75,14 +77,15 @@
       "Z": 0.70000005
     },
     "SkinId": 825372738,
+    "State": 2,
+    "Life": 20,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 4997
   },
   {
-    "State": 2,
-    "Life": 20,
     "TypeId": 825372738,
+    "Variation": 0,
     "Position": {
       "X": 8704,
       "Y": -30592,
@@ -95,14 +98,15 @@
       "Z": 0.70000005
     },
     "SkinId": 825372738,
+    "State": 2,
+    "Life": 20,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 4998
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": 8832,
       "Y": -30528,
@@ -115,14 +119,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5049
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": 8832,
       "Y": -30400,
@@ -135,14 +140,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5050
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1668306009,
+    "Variation": 0,
     "Position": {
       "X": 8832,
       "Y": -30272,
@@ -155,14 +161,15 @@
       "Z": 1
     },
     "SkinId": 1668306009,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5052
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1651528793,
+    "Variation": 0,
     "Position": {
       "X": 8864,
       "Y": -30624,
@@ -175,14 +182,15 @@
       "Z": 1
     },
     "SkinId": 1651528793,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5903
   },
   {
-    "State": 2,
-    "Life": 100,
     "TypeId": 1651528793,
+    "Variation": 0,
     "Position": {
       "X": 8800,
       "Y": -30624,
@@ -195,14 +203,15 @@
       "Z": 1
     },
     "SkinId": 1651528793,
+    "State": 2,
+    "Life": 100,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 5905
   },
   {
-    "State": 2,
-    "Life": 255,
     "TypeId": 1379020868,
+    "Variation": 0,
     "Position": {
       "X": 8705.227,
       "Y": -30679.938,
@@ -215,14 +224,15 @@
       "Z": 0.71
     },
     "SkinId": 1379020868,
+    "State": 2,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6149
   },
   {
-    "State": 6,
-    "Life": 255,
     "TypeId": 2002931524,
+    "Variation": 0,
     "Position": {
       "X": 8797.895,
       "Y": -30649.9,
@@ -235,6 +245,8 @@
       "Z": 2.309999
     },
     "SkinId": 2002931524,
+    "State": 6,
+    "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 25792

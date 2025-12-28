@@ -5,9 +5,12 @@
   "Top": -3392,
   "Name": "Ratchet Unlock 1",
   "CreationNumber": 187,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
-    "R": 255
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
   }
 }

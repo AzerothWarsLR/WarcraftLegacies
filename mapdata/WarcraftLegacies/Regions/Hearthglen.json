@@ -5,9 +5,12 @@
   "Top": 11744,
   "Name": "Hearthglen",
   "CreationNumber": 51,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
-    "R": 255
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
   }
 }

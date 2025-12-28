@@ -5,11 +5,12 @@
   "Top": 8128,
   "Name": "Fenris ships",
   "CreationNumber": 42,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
     "G": 128,
-    "B": 255
+    "B": 255,
+    "A": 255
   }
 }

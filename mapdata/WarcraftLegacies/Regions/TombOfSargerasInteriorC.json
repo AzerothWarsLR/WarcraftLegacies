@@ -1,13 +1,16 @@
 {
   "Left": -1536,
   "Bottom": 8960,
+  "Right": 0,
   "Top": 9184,
   "Name": "TombOfSargerasInteriorC",
   "CreationNumber": 29,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 255,
-    "B": 255
+    "G": 0,
+    "B": 255,
+    "A": 255
   }
 }

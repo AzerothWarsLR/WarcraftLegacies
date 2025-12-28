@@ -5,9 +5,12 @@
   "Top": 17376,
   "Name": "Dreadscar 2",
   "CreationNumber": 185,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
-    "R": 255
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
   }
 }

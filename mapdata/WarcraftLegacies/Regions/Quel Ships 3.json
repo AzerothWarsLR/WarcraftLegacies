@@ -5,11 +5,12 @@
   "Top": 15584,
   "Name": "Quel Ships 3",
   "CreationNumber": 85,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
     "G": 128,
-    "B": 255
+    "B": 255,
+    "A": 255
   }
 }

@@ -5,9 +5,12 @@
   "Top": -28384,
   "Name": "Tuurem",
   "CreationNumber": 511,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
-    "B": 255
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
   }
 }

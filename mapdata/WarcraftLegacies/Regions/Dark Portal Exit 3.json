@@ -5,10 +5,12 @@
   "Top": -25888,
   "Name": "Dark Portal Exit 3",
   "CreationNumber": 171,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 255,
-    "B": 255
+    "G": 0,
+    "B": 255,
+    "A": 255
   }
 }

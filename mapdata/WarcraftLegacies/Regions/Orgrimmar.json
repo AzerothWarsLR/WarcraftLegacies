@@ -5,11 +5,12 @@
   "Top": 1248,
   "Name": "Orgrimmar",
   "CreationNumber": 75,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 255,
     "G": 128,
-    "B": 128
+    "B": 128,
+    "A": 255
   }
 }

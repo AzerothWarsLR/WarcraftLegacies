@@ -5,11 +5,12 @@
   "Top": 5120,
   "Name": "Invasion4",
   "CreationNumber": 157,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 212,
     "G": 94,
-    "B": 25
+    "B": 25,
+    "A": 255
   }
 }

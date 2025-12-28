@@ -5,10 +5,12 @@
   "Top": -2048,
   "Name": "Grim Batol",
   "CreationNumber": 47,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 255,
-    "G": 255
+    "G": 255,
+    "B": 0,
+    "A": 255
   }
 }

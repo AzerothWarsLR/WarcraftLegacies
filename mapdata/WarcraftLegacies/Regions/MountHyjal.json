@@ -5,10 +5,12 @@
   "Top": 11264,
   "Name": "MountHyjal",
   "CreationNumber": 189,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
-    "B": 128
+    "G": 0,
+    "B": 128,
+    "A": 255
   }
 }

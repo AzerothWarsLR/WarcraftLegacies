@@ -5,11 +5,12 @@
   "Top": 11712,
   "Name": "StratholmeShipyard",
   "CreationNumber": 102,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
     "R": 128,
     "G": 128,
-    "B": 128
+    "B": 128,
+    "A": 255
   }
 }

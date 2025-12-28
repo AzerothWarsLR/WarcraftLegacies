@@ -5,9 +5,12 @@
   "Top": 2880,
   "Name": "Gilneas",
   "CreationNumber": 44,
+  "WeatherType": 0,
   "AmbientSound": "",
   "Color": {
-    "A": 255,
-    "R": 255
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
   }
 }
