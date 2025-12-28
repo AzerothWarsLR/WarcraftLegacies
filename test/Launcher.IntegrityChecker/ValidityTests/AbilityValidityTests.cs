@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
-using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 using War3Net.Common.Extensions;
+using Warcraft.Cartographer.Extensions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker.ValidityTests;

@@ -1,6 +1,7 @@
-﻿using Launcher.Paths;
-using Launcher.Services;
-using War3Net.Build;
+﻿using War3Net.Build;
+using Warcraft.Cartographer.Deserialization;
+using Warcraft.Cartographer.Paths;
+using WarcraftLegacies.CLI.Settings;
 
 namespace Launcher.IntegrityChecker.TestSupport;
 
@@ -16,8 +17,8 @@ public static class MapDataProvider
         return _mapData.Value;
       }
 
-      var sharedPathOptions = SharedPathOptions.Create("WarcraftLegacies");
-      var conversionService = new MapDataToMapConverter(MapDataToMapConverterOptions.Create(sharedPathOptions));
+      var sharedPathOptions = DefaultOptionsFactory.CreateSharedPathOptions("WarcraftLegacies");
+      var conversionService = new MapDataToMapConverter(DefaultOptionsFactory.CreateMapDataToMapConverterOptions((SharedPathOptions)sharedPathOptions));
       _mapData = conversionService.ConvertToMapAndAdditionalFiles();
 
       return _mapData.Value;

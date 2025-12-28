@@ -1,6 +1,6 @@
 ﻿using System.Text;
-using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
+using Warcraft.Cartographer.Extensions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker.RulesTests;

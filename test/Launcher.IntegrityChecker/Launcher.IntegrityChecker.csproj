@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Launcher\Launcher.csproj" />
+      <ProjectReference Include="..\..\src\WarcraftLegacies.CLI\WarcraftLegacies.CLI.csproj" />
     </ItemGroup>
 
     <ItemGroup>

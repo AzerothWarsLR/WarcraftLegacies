@@ -1,7 +1,7 @@
-﻿using Launcher.Extensions;
-using Launcher.IntegrityChecker.Exceptions;
+﻿using Launcher.IntegrityChecker.Exceptions;
 using War3Api.Object;
 using War3Api.Object.Abilities;
+using Warcraft.Cartographer.Extensions;
 
 namespace Launcher.IntegrityChecker.TestSupport;
 
