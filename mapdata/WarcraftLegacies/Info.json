@@ -267,32 +267,32 @@
   ],
   "Forces": [
     {
-      "Flags": 7,
+      "Flags": 3,
       "Players": -4561880,
       "Name": "Scourge, Legion"
     },
     {
-      "Flags": 7,
+      "Flags": 3,
       "Players": 644,
       "Name": "Quelthalas, Dalaran, Lordaeron"
     },
     {
-      "Flags": 7,
+      "Flags": 3,
       "Players": 264193,
       "Name": "Frostwolf, Druids, Sentinels"
     },
     {
-      "Flags": 7,
+      "Flags": 3,
       "Players": 4194322,
       "Name": "Stormwind, Ironforge, Kultiras"
     },
     {
-      "Flags": 7,
+      "Flags": 3,
       "Players": 69888,
       "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
     },
     {
-      "Flags": 7,
+      "Flags": 3,
       "Players": 32832,
       "Name": "Fel Horde, Illidari"
     }

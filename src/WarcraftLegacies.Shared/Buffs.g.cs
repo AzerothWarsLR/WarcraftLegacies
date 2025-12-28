@@ -446,6 +446,7 @@ public static class Buffs
   public const int BUFF_MD16_WORGEN_BITE = 1296314678;
   public const int BUFF_MD17_ROAR_OF_THE_WORGEN = 1296314679;
   public const int BUFF_MD18_WHITE_WOLF_S_FURY = 1296314680;
+  public const int BUFF_PBEN_AVENGER_S_SHIELD = 1348625774;
   public const int BUFF_S060_BURNING_ARROW = 1395668528;
   public const int BUFF_TP01_ENERGY_GRID = 1414541361;
   public const int BUFF_TP23_THORNED_VINES_SLOW_AURA = 1414541875;

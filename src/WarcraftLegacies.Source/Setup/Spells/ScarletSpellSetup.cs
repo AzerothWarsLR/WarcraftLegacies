@@ -2,6 +2,7 @@
 using MacroTools.Spells;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.AvengersShield;
 using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup.Spells;
@@ -36,6 +37,20 @@ public static class ScarletSpellSetup
       SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx"
     };
     SpellRegistry.Register(crusaderShout);
+
+    var avengersShield = new AvengersShieldSpell(ABILITY_OCSQ_AVENGERS_SHIELD)
+    {
+      DamageBase = 75,
+      DamageLevel = 25,
+      MaxBounces = 3,
+      BounceRadius = 600,
+      SilenceDuration = 3,
+      ProjectileSpeed = 900,
+      ProjectileEffect = @"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl",
+      ImpactEffect = @"Abilities\Spells\Human\Defend\DefendCaster.mdl"
+    };
+
+    SpellRegistry.Register(avengersShield);
 
     UnitTypeTraitRegistry.Register(new SummonUnitOnDeath
     {

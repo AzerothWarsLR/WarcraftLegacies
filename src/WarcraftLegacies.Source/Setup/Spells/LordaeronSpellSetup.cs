@@ -1,6 +1,7 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.AvengersShield;
 using WarcraftLegacies.Source.Spells.ExactJustice;
 using WarcraftLegacies.Source.UnitTypeTraits;
 
@@ -36,6 +37,20 @@ public static class LordaeronSpellSetup
       EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     };
     SpellRegistry.Register(solarJudgement);
+
+    var avengersShield = new AvengersShieldSpell(ABILITY_OCSQ_AVENGERS_SHIELD)
+    {
+      DamageBase = 75,
+      DamageLevel = 25,
+      MaxBounces = 3,
+      BounceRadius = 600,
+      SilenceDuration = 3,
+      ProjectileSpeed = 900,
+      ProjectileEffect = @"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl",
+      ImpactEffect = @"Abilities\Spells\Human\Defend\DefendCaster.mdl"
+    };
+
+    SpellRegistry.Register(avengersShield);
 
     var exactJustice = new ExactJusticeSpell(ABILITY_A097_EXACT_JUSTICE_UTHER)
     {
