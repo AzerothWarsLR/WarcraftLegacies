@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MacroTools.Shared/MacroTools.Shared.csproj" />
+    <Project Path="src/MacroTools/MacroTools.csproj" />
+    <Project Path="src/War3Api.Object/War3Api.Object.csproj" />
+    <Project Path="src/Warcraft.Cartographer/Warcraft.Cartographer.csproj" />
+    <Project Path="src/WarcraftLegacies.CLI/WarcraftLegacies.CLI.csproj" />
+    <Project Path="src/WarcraftLegacies.Shared/WarcraftLegacies.Shared.csproj" />
+    <Project Path="src/WarcraftLegacies.Source/WarcraftLegacies.Source.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Launcher.IntegrityChecker/Launcher.IntegrityChecker.csproj" />
+  </Folder>
+</Solution>
