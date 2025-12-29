@@ -25,7 +25,7 @@ jobs:
             -   name: Inspect code
                 uses: muno92/resharper_inspectcode@1.11.14
                 with:
-                    solutionPath: ./WarcraftLegacies.sln
+                    solutionPath: ./WarcraftLegacies.slnx
                     minimumSeverity: error
                     failOnIssue: 1
                     include: |
