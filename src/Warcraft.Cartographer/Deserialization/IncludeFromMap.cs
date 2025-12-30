@@ -33,6 +33,8 @@ public enum IncludeFromMap
   Doodads = 1 << 19,
   Units = 1 << 20,
 
+  TriggerStrings = 1 << 21,
+
   ObjectData =
     AbilityData |
     BuffData |
@@ -40,7 +42,8 @@ public enum IncludeFromMap
     DoodadData |
     ItemData |
     UnitData |
-    UpgradeData,
+    UpgradeData |
+    TriggerStrings,
 
   Terrain =
     Environment |
@@ -61,7 +64,7 @@ public enum IncludeFromMap
     GameplayConstants |
     GameInterface |
     Script |
-    Units,
+    Units
 }
 
 public static class IncludeFromMapExtensions
@@ -150,11 +153,6 @@ public static class IncludeFromMapExtensions
       result |= MapFiles.UpgradeObjectData;
     }
 
-    if (include.HasFlag(IncludeFromMap.GameplayConstants))
-    {
-      result |= MapFiles.CustomTextTriggers;
-    }
-
     if (include.HasFlag(IncludeFromMap.Script))
     {
       result |= MapFiles.Script;
@@ -168,6 +166,11 @@ public static class IncludeFromMapExtensions
     if (include.HasFlag(IncludeFromMap.Units))
     {
       result |= MapFiles.Units;
+    }
+
+    if (include.HasFlag(IncludeFromMap.TriggerStrings))
+    {
+      result |= MapFiles.TriggerStrings;
     }
 
     return result;
