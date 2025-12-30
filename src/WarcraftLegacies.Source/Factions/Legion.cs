@@ -5,8 +5,8 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Legion;
@@ -18,16 +18,14 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Legion : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
 
   /// <inheritdoc />
 
-  public Legion(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Legion",
+  public Legion(AllLegendSetup allLegendSetup) : base("Legion",
     playercolor.Peanut, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;
     StartingGold = 200;
@@ -41,7 +39,7 @@ public sealed class Legion : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 19331f, -30663)
     };
     Nicknames = new List<string>
     {
@@ -70,7 +68,7 @@ public sealed class Legion : Faction
 
   private void RegisterQuests()
   {
-    var newQuest = AddQuest(new QuestArgusControl(_preplacedUnitSystem));
+    var newQuest = AddQuest(new QuestArgusControl());
     StartingQuest = newQuest;
     AddQuest(new QuestControlMonastery(_allLegendSetup.Lordaeron.Monastery));
     AddQuest(new QuestControlSpire(_allLegendSetup.Quelthalas.Spire));
@@ -79,7 +77,7 @@ public sealed class Legion : Faction
     AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace,
       _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
     AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-      _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_LEGION), _allLegendSetup.Legion.Anetheron, _preplacedUnitSystem)); ;
+      PreplacedWidgets.Units.Get(UNIT_N03C_DEMON_PORTAL_LEGION), _allLegendSetup.Legion.Anetheron)); ;
   }
 
   private static void RegisterResearches()

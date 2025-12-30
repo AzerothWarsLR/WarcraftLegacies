@@ -1,6 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
-using WCSharp.Shared.Data;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -15,7 +14,7 @@ public sealed class LegendStormwind
   public Capital ConstructionSiteMartial { get; }
   public Capital ConstructionSiteMagic { get; }
 
-  public LegendStormwind(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendStormwind()
   {
     Varian = new LegendaryHero("Varian Wrynn")
     {
@@ -51,27 +50,27 @@ public sealed class LegendStormwind
 
     StormwindKeep = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
       DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!",
       Essential = true
     };
-    StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(9530, -10941)));
-    StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(10177, -10952)));
+    StormwindKeep.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, 9530, -10941));
+    StormwindKeep.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, 10177, -10952));
 
     Darkshire = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H03Y_DARKSHIRE_STORMWIND_OTHER)
+      Unit = PreplacedWidgets.Units.Get(UNIT_H03Y_DARKSHIRE_STORMWIND_OTHER)
     };
 
     ConstructionSiteMagic = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM)
+      Unit = PreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM)
     };
     ConstructionSiteMagic.AddProtector(StormwindKeep.Unit);
 
     ConstructionSiteMartial = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
+      Unit = PreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
     };
     ConstructionSiteMartial.AddProtector(StormwindKeep.Unit);
   }

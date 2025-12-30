@@ -1,8 +1,7 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Researches;
 
@@ -19,16 +18,14 @@ public sealed class FlightPath : Research
   private static bool _researched;
 
   /// <inheritdoc />
-  public FlightPath(Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem)
+  public FlightPath(Faction frostwolf, int researchTypeId, int goldCost)
     : base(researchTypeId, goldCost)
   {
     _frostwolf = frostwolf;
-    var orgrimmarLocation = new Point(-9704, -858);
-    var thunderbluffLocation = new Point(-14445, -4042);
-    _flightToOrgrimmar = preplacedUnitSystem.GetUnit(
-      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
-    _flightToThunderBluff = preplacedUnitSystem.GetUnit(
-      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
+    _flightToOrgrimmar = PreplacedWidgets.Units.GetClosest(
+      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, -14445, -4042);
+    _flightToThunderBluff = PreplacedWidgets.Units.GetClosest(
+      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, -9704, -858);
   }
 
   /// <inheritdoc />

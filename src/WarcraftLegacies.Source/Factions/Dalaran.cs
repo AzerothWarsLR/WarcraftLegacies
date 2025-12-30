@@ -9,13 +9,12 @@ using MacroTools.Mechanics;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
@@ -26,7 +25,7 @@ public sealed class Dalaran : Faction
   private readonly List<unit> _dalaranProtectors;
 
   /// <inheritdoc />
-  public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+  public Dalaran(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     : base("Dalaran", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
@@ -34,9 +33,9 @@ public sealed class Dalaran : Faction
     _allLegendSetup = allLegendSetup;
     _dalaranProtectors = new List<unit>
     {
-      preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9084, 4979)),
-      preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9008, 4092)),
-      preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9864, 4086))
+      PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9084, 4979),
+      PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9008, 4092),
+      PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9864, 4086)
     };
     UndefeatedResearch = UPGRADE_R05N_DALARAN_EXISTS;
     StartingGold = 200;
@@ -49,7 +48,7 @@ public sealed class Dalaran : Faction
 
     GoldMines = new List<unit>
     {
-      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
     };
     Nicknames = new List<string>
     {

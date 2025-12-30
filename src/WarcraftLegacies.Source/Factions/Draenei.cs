@@ -2,28 +2,25 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Draenei : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Draenei(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     StartingGold = 200;
@@ -35,7 +32,7 @@ public sealed class Draenei : Faction
 
     GoldMines = new List<unit>
     {
-      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -21000, 8600)
     };
     Nicknames = new List<string>
     {
@@ -70,8 +67,8 @@ public sealed class Draenei : Faction
     AddQuest(questRepairHull);
     AddQuest(new QuestRebuildCivilisation(Regions.Darkshore));
     AddQuest(new QuestShipArgus(
-      _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
-      _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
       _allLegendSetup.Draenei.Velen
     ));
     var crystalProtectors = GlobalGroup

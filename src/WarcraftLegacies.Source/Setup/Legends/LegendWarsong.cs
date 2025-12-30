@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -14,7 +14,7 @@ public sealed class LegendWarsong
   public Capital StonemaulKeep { get; }
   public Capital Orgrimmar { get; }
 
-  public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendWarsong()
   {
     GromHellscream = new LegendaryHero("Grom Hellscream")
     {
@@ -59,14 +59,14 @@ public sealed class LegendWarsong
 
     StonemaulKeep = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_O004_STONEMAUL_KEEP),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O004_STONEMAUL_KEEP),
       DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
       Essential = true
     };
 
     Orgrimmar = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_O01B_ORGRIMMAR_WARSONG),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
       DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
       Essential = true
     };

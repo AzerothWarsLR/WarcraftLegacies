@@ -1,5 +1,4 @@
-﻿using MacroTools.Systems;
-using WCSharp.Shared.Data;
+﻿using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -8,9 +7,9 @@ namespace WarcraftLegacies.Source.Setup;
 /// </summary>
 public static class DestructibleSetup
 {
-  public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+  public static void Setup()
   {
-    var thandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
+    var thandolSpan = PreplacedWidgets.Destructables.GetClosest(FourCC("LT08"), 15695, 457);
     thandolSpan.IsInvulnerable = true;
     //thandolSpan.Kill();
   }

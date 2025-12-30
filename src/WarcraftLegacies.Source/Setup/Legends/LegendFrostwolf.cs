@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
 using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -14,7 +14,7 @@ public sealed class LegendFrostwolf
   public Capital ThunderBluff { get; }
   public Capital DarkspearHold { get; }
 
-  public LegendFrostwolf(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendFrostwolf()
   {
     Cairne = new LegendaryHero("Cairne Bloodhoof")
     {
@@ -40,7 +40,7 @@ public sealed class LegendFrostwolf
 
     ThunderBluff = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o00J")),
       Capturable = true,
       DeathMessage =
         "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
@@ -49,7 +49,7 @@ public sealed class LegendFrostwolf
 
     DarkspearHold = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o02D")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o02D")),
       Essential = true
     };
 

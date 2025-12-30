@@ -3,8 +3,8 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
-using MacroTools.Systems;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using WCSharp.Shared.Extensions;
 
@@ -19,12 +19,12 @@ public sealed class QuestGrom : QuestData
   private readonly LegendaryHero _gargok;
 
 
-  public QuestGrom(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero gromHellscreamLegend, LegendaryHero gargok)
+  public QuestGrom(LegendaryHero gromHellscreamLegend, LegendaryHero gargok)
     : base("Breaking Bad Blood",
         "Tricked by Mannoroth into drinking from the corrupted fountain, Grom Hellscream has fallen into demonic fury, locked in battle with the Sentinels. To free him from this enslaving curse, you must defeat Mannoroth the Destroyer himself.",
         @"ReplaceableTextures\CommandButtons\BTNChaosGrom.blp")
   {
-    AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT)));
+    AddObjective(new ObjectiveUnitIsDead(PreplacedWidgets.Units.Get(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT)));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R013_QUEST_COMPLETED_BREAKING_BAD_BLOOD;
     _gromHellscream = gromHellscreamLegend;

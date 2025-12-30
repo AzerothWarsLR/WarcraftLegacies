@@ -6,32 +6,29 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Lordaeron : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Lordaeron(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+  public Lordaeron(AllLegendSetup allLegendSetup,
     ArtifactSetup artifactSetup) : base("Lordaeron", playercolor.LightBlue,
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     StartingGold = 200;
@@ -45,9 +42,9 @@ public sealed class Lordaeron : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(13617, 8741)),
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7716, 11657)),
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17198, 8222))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 13617, 8741),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 7716, 11657),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17198, 8222)
     };
     Nicknames = new List<string>
     {
@@ -90,7 +87,7 @@ public sealed class Lordaeron : Faction
     AddQuest(questStratholme);
     StartingQuest = questStratholme;
     AddQuest(questStrahnbrad);
-    AddQuest(new QuestCapitalCity(_preplacedUnitSystem, Regions.Terenas, _allLegendSetup.Lordaeron.Terenas.Unit,
+    AddQuest(new QuestCapitalCity(Regions.Terenas, _allLegendSetup.Lordaeron.Terenas.Unit,
       _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Neutral.Caerdarrow, _allLegendSetup.Lordaeron.CapitalPalace,
       new QuestData[]
       {
@@ -166,8 +163,8 @@ public sealed class Lordaeron : Faction
         }, new Objective[]
         {
           new ObjectiveLegendInRect(_allLegendSetup.Lordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
-          new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
-            new Point(11066, 6291)))
+          new ObjectiveUnitAlive(PreplacedWidgets.Units.GetClosest(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
+            11066, 6291))
         }));
 
     TriggeredDialogueManager.Add(

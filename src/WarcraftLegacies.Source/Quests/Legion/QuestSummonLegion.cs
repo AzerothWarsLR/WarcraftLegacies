@@ -4,8 +4,8 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
-using MacroTools.Systems;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
@@ -21,7 +21,7 @@ public sealed class QuestSummonLegion : QuestData
   private readonly unit _legionTeleporter1;
   private readonly unit _legionTeleporter2;
 
-  public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron, PreplacedUnitSystem preplacedUnitSystem) : base("Under the Burning Sky",
+  public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron) : base("Under the Burning Sky",
     "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
     @"ReplaceableTextures\CommandButtons\BTNArchimonde.blp")
   {
@@ -32,8 +32,8 @@ public sealed class QuestSummonLegion : QuestData
     Global = true;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     _anetheron = anetheron;
-    _legionTeleporter1 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
-    _legionTeleporter2 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
+    _legionTeleporter1 = PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 22939, -29345);
+    _legionTeleporter2 = PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
   }
 
   /// <inheritdoc />

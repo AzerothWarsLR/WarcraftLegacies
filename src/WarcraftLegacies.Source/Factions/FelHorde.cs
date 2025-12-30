@@ -1,28 +1,25 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class FelHorde : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public FelHorde(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("Fel Horde", playercolor.Green, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R05L");
@@ -37,7 +34,7 @@ public sealed class FelHorde : Faction
     FoodMaximum = 250;
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-2735, -30242))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -2735, -30242)
     };
     Nicknames = new List<string>
     {
@@ -52,7 +49,7 @@ public sealed class FelHorde : Faction
   {
     RegisterObjectLevels();
     RegisterQuests();
-    JuggernautDeath.Setup(_preplacedUnitSystem);
+    JuggernautDeath.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
@@ -70,12 +67,12 @@ public sealed class FelHorde : Faction
     AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
     AddQuest(new QuestGuldansLegacy());
     AddQuest(new QuestDarkPortal(
-      _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
-      _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
-      _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
-      _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
-      _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
-      _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
+      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
+      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
     AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
   }
 }

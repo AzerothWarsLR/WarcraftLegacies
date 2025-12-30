@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -17,7 +17,7 @@ public sealed class LegendScarlet
   /// <summary>
   /// Sets up all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public LegendScarlet(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendScarlet()
   {
 
     Saiden = new LegendaryHero("Saiden Dethrotan")
@@ -46,7 +46,7 @@ public sealed class LegendScarlet
 
     CrimsonCathedral = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H09L_CRIMSON_CATHEDRAL_SCARLET),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H09L_CRIMSON_CATHEDRAL_SCARLET),
       DeathMessage = "The Crimson Cathedral has been destroyed",
     };
 

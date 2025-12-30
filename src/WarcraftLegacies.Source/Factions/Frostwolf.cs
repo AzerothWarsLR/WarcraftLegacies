@@ -3,14 +3,13 @@ using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
@@ -18,14 +17,12 @@ public sealed class Frostwolf : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
   /// <inheritdoc />
-  public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+  public Frostwolf(AllLegendSetup allLegendSetup,
     ArtifactSetup artifactSetup) : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
@@ -38,7 +35,7 @@ public sealed class Frostwolf : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9729, 2426)),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
     };
     Nicknames = new List<string>
     {
@@ -190,7 +187,6 @@ public sealed class Frostwolf : Faction
     ResearchManager.Register(new FlightPath(
       this,
       UPGRADE_R09N_FLIGHT_PATH_WARSONG,
-      70,
-      _preplacedUnitSystem));
+      70));
   }
 }

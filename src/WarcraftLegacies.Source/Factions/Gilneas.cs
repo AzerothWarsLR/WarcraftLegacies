@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
@@ -19,7 +18,7 @@ public sealed class Gilneas : Faction
   private readonly AllLegendSetup _allLegendSetup;
 
   /// <inheritdoc />
-  public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+  public Gilneas(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     : base("Gilneas", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
@@ -34,7 +33,7 @@ public sealed class Gilneas : Faction
 
     GoldMines = new List<unit>
     {
-      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
     };
     Nicknames = new List<string>
     {

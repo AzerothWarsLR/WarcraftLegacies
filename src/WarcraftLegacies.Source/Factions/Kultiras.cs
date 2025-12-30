@@ -2,12 +2,11 @@
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
@@ -19,13 +18,13 @@ public sealed class Kultiras : Faction
 
   /// <inheritdoc />
 
-  public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Kultiras(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("Kul'tiras", playercolor.Emerald, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
-    _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
+    _proudmooreCapitalShip = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
     IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
@@ -34,7 +33,7 @@ public sealed class Kultiras : Faction
 
     GoldMines = new List<unit>
     {
-      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 4585, -13038)
     };
     Nicknames = new List<string>
     {

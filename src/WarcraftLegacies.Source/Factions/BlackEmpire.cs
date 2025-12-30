@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.Spells;
-using MacroTools.Systems;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
@@ -15,14 +14,12 @@ public sealed class BlackEmpire : Faction
 {
 
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
   /// <inheritdoc />
-  public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Black Empire",
+  public BlackEmpire(AllLegendSetup allLegendSetup) : base("Black Empire",
     playercolor.Maroon, @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
     _allLegendSetup = allLegendSetup;
-    _preplacedUnitSystem = preplacedUnitSystem;
     ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_NZOTH_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
     StartingGold = 200;
@@ -59,7 +56,7 @@ public sealed class BlackEmpire : Faction
 
     AddQuest(new QuestWakingCity(questGorma, _allLegendSetup, Regions.Nyalotha));
     AddQuest(new QuestGiftofFlesh());
-    AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul, _preplacedUnitSystem));
+    AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul));
     AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
     AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
     AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));

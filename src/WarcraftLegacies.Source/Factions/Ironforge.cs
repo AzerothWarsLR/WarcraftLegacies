@@ -1,29 +1,26 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Ironforge : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Ironforge(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("Ironforge", playercolor.Yellow, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R05T");
@@ -36,7 +33,7 @@ public sealed class Ironforge : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 12079, -2768)
     };
     Nicknames = new List<string>
     {
@@ -89,7 +86,6 @@ public sealed class Ironforge : Faction
 
   private void RegisterStormwindResearches(Stormwind stormwind)
   {
-    ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70,
-      _preplacedUnitSystem));
+    ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70));
   }
 }

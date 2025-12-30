@@ -1,6 +1,5 @@
-﻿using MacroTools.Systems;
+﻿using MacroTools.PreplacedWidgetsSystem;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 
@@ -12,14 +11,14 @@ internal static class JuggernautDeath
   /// <summary>
   /// Sets up <see cref="JuggernautDeath"/>.
   /// </summary>
-  public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+  public static void Setup()
   {
-    var powerGenerator1 = preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_FEL, new Point(5511.9f, -29688.2f));
-    var powerGenerator2 = preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_FEL, new Point(5513.1f, -30467.4f));
-    var inferJuggernaut1 = preplacedUnitSystem.GetUnit(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, new Point(4356.6f, -29397.8f));
-    var inferJuggernaut2 = preplacedUnitSystem.GetUnit(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, new Point(4245.3f, -29863.1f));
-    var inferJuggernaut3 = preplacedUnitSystem.GetUnit(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, new Point(4537.8f, -30988.1f));
-    var inferJuggernaut4 = preplacedUnitSystem.GetUnit(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, new Point(4631.4f, -31433.0f));
+    var powerGenerator1 = PreplacedWidgets.Units.GetClosest(UNIT_NPGR_POWER_GENERATOR_FEL, 5511.9f, -29688.2f);
+    var powerGenerator2 = PreplacedWidgets.Units.GetClosest(UNIT_NPGR_POWER_GENERATOR_FEL, 5513.1f, -30467.4f);
+    var inferJuggernaut1 = PreplacedWidgets.Units.GetClosest(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, 4356.6f, -29397.8f);
+    var inferJuggernaut2 = PreplacedWidgets.Units.GetClosest(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, 4245.3f, -29863.1f);
+    var inferJuggernaut3 = PreplacedWidgets.Units.GetClosest(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, 4537.8f, -30988.1f);
+    var inferJuggernaut4 = PreplacedWidgets.Units.GetClosest(UNIT_N066_INFERNAL_JUGGERNAUT_FEL_TOWER, 4631.4f, -31433.0f);
 
     SetupPowerGenerators(powerGenerator1, inferJuggernaut1, inferJuggernaut2);
     SetupPowerGenerators(powerGenerator2, inferJuggernaut3, inferJuggernaut4);

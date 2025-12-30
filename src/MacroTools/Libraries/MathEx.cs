@@ -21,6 +21,14 @@ public static class MathEx
     return SquareRoot(dx * dx + dy * dy);
   }
 
+  public static float GetDistanceBetween(float x, float y, widget widget)
+  {
+    var dx = GetWidgetX(widget) - x;
+    var dy = GetWidgetY(widget) - y;
+
+    return SquareRoot(dx * dx + dy * dy);
+  }
+
   public static float GetAngleBetweenPoints(float xa, float ya, float xb, float yb) => RadToDeg * Atan2(yb - ya, xb - xa);
 
   public static float GetPolarOffsetX(float x, float dist, float angle) => x + dist * Cos(angle * DegToRad);

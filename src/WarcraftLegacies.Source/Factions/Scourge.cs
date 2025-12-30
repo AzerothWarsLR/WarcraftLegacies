@@ -6,8 +6,8 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
@@ -21,17 +21,15 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Scourge : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Scourge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Scourge(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("Scourge", playercolor.Purple, @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R05K_SCOURGE_EXISTS;
@@ -47,7 +45,7 @@ public sealed class Scourge : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -4939, 18803)
     };
     Nicknames = new List<string>
     {
@@ -74,7 +72,7 @@ public sealed class Scourge : Faction
     RegisterDialogue();
     RegisterResearches();
     BlightSystem.Setup(this);
-    BlightSetup.Setup(_preplacedUnitSystem);
+    BlightSetup.Setup();
     SacrificeAcolyte.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Scourge.Arthas);
@@ -112,11 +110,11 @@ public sealed class Scourge : Faction
     QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
     QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
 
-    QuestSapphiron questSapphiron = new(_preplacedUnitSystem.GetUnit(UNIT_UBDR_SAPPHIRON_CREEP),
+    QuestSapphiron questSapphiron = new(PreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP),
       _allLegendSetup.Scourge.Kelthuzad);
 
     QuestLichKingArthas questLichKingArthas =
-      new(_preplacedUnitSystem.GetUnit(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
+      new(PreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
         _artifactSetup.HelmOfDomination,
         _allLegendSetup.Scourge.Arthas,
         _allLegendSetup.Scourge.TheFrozenThrone);

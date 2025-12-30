@@ -1,5 +1,4 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -104,36 +103,36 @@ public sealed class AllLegendSetup
   /// <summary>
   /// Initializes a new instance of the <see cref="AllLegendSetup"/> class.
   /// </summary>
-  public AllLegendSetup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+  public AllLegendSetup(ArtifactSetup artifactSetup)
   {
-    Dalaran = new LegendDalaran(preplacedUnitSystem);
-    Draenei = new LegendDraenei(preplacedUnitSystem);
-    Druids = new LegendDruids(preplacedUnitSystem);
-    FelHorde = new LegendFelHorde(preplacedUnitSystem);
-    Frostwolf = new LegendFrostwolf(preplacedUnitSystem);
-    Ironforge = new LegendIronforge(preplacedUnitSystem);
-    Kultiras = new LegendKultiras(preplacedUnitSystem);
-    Legion = new LegendLegion(preplacedUnitSystem);
-    Lordaeron = new LegendLordaeron(preplacedUnitSystem, artifactSetup);
+    Dalaran = new LegendDalaran();
+    Draenei = new LegendDraenei();
+    Druids = new LegendDruids();
+    FelHorde = new LegendFelHorde();
+    Frostwolf = new LegendFrostwolf();
+    Ironforge = new LegendIronforge();
+    Kultiras = new LegendKultiras();
+    Legion = new LegendLegion();
+    Lordaeron = new LegendLordaeron(artifactSetup);
     Naga = new LegendIllidan();
-    Quelthalas = new LegendQuelthalas(preplacedUnitSystem);
-    Scourge = new LegendScourge(preplacedUnitSystem);
-    Sentinels = new LegendSentinels(preplacedUnitSystem);
-    Stormwind = new LegendStormwind(preplacedUnitSystem);
-    Warsong = new LegendWarsong(preplacedUnitSystem);
-    Neutral = new LegendNeutral(preplacedUnitSystem);
-    Gilneas = new LegendGilneas(preplacedUnitSystem);
-    Ahnqiraj = new LegendAhnqiraj(preplacedUnitSystem);
-    BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
-    Skywall = new LegendSkywall(preplacedUnitSystem);
-    Scarlet = new LegendScarlet(preplacedUnitSystem);
-    Sunfury = new LegendSunfury(preplacedUnitSystem);
+    Quelthalas = new LegendQuelthalas();
+    Scourge = new LegendScourge();
+    Sentinels = new LegendSentinels();
+    Stormwind = new LegendStormwind();
+    Warsong = new LegendWarsong();
+    Neutral = new LegendNeutral();
+    Gilneas = new LegendGilneas();
+    Ahnqiraj = new LegendAhnqiraj();
+    BlackEmpire = new LegendBlackEmpire();
+    Skywall = new LegendSkywall();
+    Scarlet = new LegendScarlet();
+    Sunfury = new LegendSunfury();
   }
 
   /// <summary>
   /// Registers all <see cref="Legend"/>s managed by the <see cref="AllLegendSetup"/>.
   /// </summary>
-  public void RegisterLegends(PreplacedUnitSystem preplacedUnitSystem)
+  public void RegisterLegends()
   {
     Dalaran.RegisterLegends();
     Draenei.RegisterLegends();
@@ -146,7 +145,7 @@ public sealed class AllLegendSetup
     Lordaeron.RegisterLegends();
     Naga.RegisterLegends();
     Quelthalas.RegisterLegends();
-    Scourge.RegisterLegends(preplacedUnitSystem);
+    Scourge.RegisterLegends();
     Sentinels.RegisterLegends();
     Stormwind.RegisterLegends();
     Warsong.RegisterLegends();

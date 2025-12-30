@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -11,14 +11,14 @@ public static class CapturableUnitSetup
   /// <summary>
   /// Sets up <see cref="CapturableUnitSetup"/>.
   /// </summary>
-  public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+  public static void Setup()
   {
-    foreach (var fountainOfHealth in preplacedUnitSystem.GetUnits(FourCC("nfoh")))
+    foreach (var fountainOfHealth in PreplacedWidgets.Units.GetAll(FourCC("nfoh")))
     {
       fountainOfHealth.MakeCapturable();
     }
 
-    foreach (var tradingPost in preplacedUnitSystem.GetUnits(FourCC("h014")))
+    foreach (var tradingPost in PreplacedWidgets.Units.GetAll(FourCC("h014")))
     {
       tradingPost.MakeCapturable();
     }

@@ -1,6 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
-using WCSharp.Shared.Data;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -13,7 +12,7 @@ public sealed class LegendIronforge
   public Capital Thelsamar { get; }
   public Capital MenethilHarbor { get; }
 
-  public LegendIronforge(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendIronforge()
   {
     Dagran = new LegendaryHero("Dagran Thaurissan")
     {
@@ -36,21 +35,21 @@ public sealed class LegendIronforge
 
     GreatForge = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("h001")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("h001")),
       DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
       Essential = true
     };
-    GreatForge.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10509, -5976)));
-    GreatForge.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10710, -5974)));
+    GreatForge.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, 10509, -5976));
+    GreatForge.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, 10710, -5974));
 
     Thelsamar = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("h05H"))
+      Unit = PreplacedWidgets.Units.Get(FourCC("h05H"))
     };
 
     MenethilHarbor = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("h0AK"))
+      Unit = PreplacedWidgets.Units.Get(FourCC("h0AK"))
     };
   }
 

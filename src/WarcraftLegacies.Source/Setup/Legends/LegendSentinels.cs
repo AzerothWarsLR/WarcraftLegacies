@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -16,7 +16,7 @@ public sealed class LegendSentinels
   public Capital Feathermoon { get; }
   public Capital VaultOfTheWardens { get; }
 
-  public LegendSentinels(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendSentinels()
   {
     Maiev = new LegendaryHero("Maiev Shadowsong")
     {
@@ -26,13 +26,13 @@ public sealed class LegendSentinels
 
     Auberdine = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("e00J")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("e00J")),
       Essential = true
     };
 
     Feathermoon = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINELS_OTHER),
+      Unit = PreplacedWidgets.Units.Get(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINELS_OTHER),
       Essential = true
     };
 
@@ -57,7 +57,7 @@ public sealed class LegendSentinels
 
     VaultOfTheWardens = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
+      Unit = PreplacedWidgets.Units.Get(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
     };
   }
 

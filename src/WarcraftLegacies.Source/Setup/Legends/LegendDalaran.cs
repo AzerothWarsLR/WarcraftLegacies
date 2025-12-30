@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -19,7 +19,7 @@ public sealed class LegendDalaran
   /// <summary>
   /// Sets up all Dalaran <see cref="Legend"/>s.
   /// </summary>
-  public LegendDalaran(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendDalaran()
   {
     Jaina = new LegendaryHero("Jaina Proudmoore")
     {
@@ -46,7 +46,7 @@ public sealed class LegendDalaran
 
     Dalaran = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER),
       DeathMessage =
         "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.",
       Essential = true
@@ -62,7 +62,7 @@ public sealed class LegendDalaran
 
     Shadowfang = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
       Capturable = true
     };
   }
