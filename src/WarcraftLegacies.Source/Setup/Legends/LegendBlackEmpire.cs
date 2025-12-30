@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -10,11 +10,11 @@ public sealed class LegendBlackEmpire
   public LegendaryHero Zaqul { get; }
   public LegendaryHero Yorsahj { get; }
 
-  public LegendBlackEmpire(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendBlackEmpire()
   {
     Nzoth = new LegendaryHero("N'zoth")
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_U01Z_OLD_GOD_NZOTH),
+      Unit = PreplacedWidgets.Units.Get(UNIT_U01Z_OLD_GOD_NZOTH),
       PermaDies = true,
       StartingXp = 41800,
       Essential = true

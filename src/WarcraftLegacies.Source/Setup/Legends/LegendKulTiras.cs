@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -12,7 +12,7 @@ public sealed class LegendKultiras
   public Capital LegendBoralus { get; }
   public LegendaryHero Flagship { get; }
 
-  public LegendKultiras(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendKultiras()
   {
     LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
     {
@@ -39,14 +39,14 @@ public sealed class LegendKultiras
 
     LegendBoralus = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H046_BORALUS_KEEP_KULTIRAS),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H046_BORALUS_KEEP_KULTIRAS),
       DeathMessage = "Boralus Keep has fallen", //Todo: pointless flavour
       Essential = true
     };
 
     Flagship = new LegendaryHero("Flagship")
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS)
+      Unit = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS)
     };
     Flagship.Unit.IsInvulnerable = true;
     Flagship.Unit.SetPausedEx(true);

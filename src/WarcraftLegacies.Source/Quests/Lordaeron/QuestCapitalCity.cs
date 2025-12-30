@@ -7,8 +7,8 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
-using MacroTools.Systems;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -29,13 +29,13 @@ public sealed class QuestCapitalCity : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestCapitalCity"/> class.
   /// </summary>
-  public QuestCapitalCity(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect, unit terenas, LegendaryHero uther,
+  public QuestCapitalCity(Rectangle rescueRect, unit terenas, LegendaryHero uther,
     LegendaryHero arthas, Capital caerDarrow, Capital capitalPalace, IEnumerable<QuestData> prequisites) :
     base("Hearthlands",
       "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
       @"ReplaceableTextures\CommandButtons\BTNCastle.blp")
   {
-    AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(UNIT_N0AG_LORD_BAROV)));
+    AddObjective(new ObjectiveUnitIsDead(PreplacedWidgets.Units.Get(UNIT_N0AG_LORD_BAROV)));
     foreach (var prequisite in prequisites)
     {
       AddObjective(new ObjectiveQuestComplete(prequisite));

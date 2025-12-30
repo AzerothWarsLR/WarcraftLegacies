@@ -5,7 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests;
@@ -21,7 +21,7 @@ public sealed class Sentinels : Faction
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+  public Sentinels(AllLegendSetup allLegendSetup,
     ArtifactSetup artifactSetup) : base("Sentinels", playercolor.Mint,
     @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
   {
@@ -39,7 +39,7 @@ public sealed class Sentinels : Faction
 
     GoldMines = new List<unit>
     {
-      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-20780, 7860))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -20780, 7860)
     };
     Nicknames = new List<string>
     {

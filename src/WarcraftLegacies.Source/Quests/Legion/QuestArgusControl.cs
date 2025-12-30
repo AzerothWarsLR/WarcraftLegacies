@@ -3,9 +3,8 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
-using MacroTools.Systems;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Legion;
 
@@ -14,7 +13,7 @@ public sealed class QuestArgusControl : QuestData
   private readonly unit _legionTeleporter1;
   private readonly unit _legionTeleporter2;
 
-  public QuestArgusControl(PreplacedUnitSystem preplacedUnitSystem) : base("Argus",
+  public QuestArgusControl() : base("Argus",
     "The planet of Argus is not yet fully under the control of the Legion.",
     @"ReplaceableTextures\CommandButtons\BTNMastersLodge.blp")
   {
@@ -28,9 +27,9 @@ public sealed class QuestArgusControl : QuestData
 
 
     _legionTeleporter1 =
-      preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
+      PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 22939, -29345);
     _legionTeleporter2 =
-      preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
+      PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
   }
 
   /// <inheritdoc/>

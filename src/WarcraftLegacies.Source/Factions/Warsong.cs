@@ -6,33 +6,30 @@ using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Warsong : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+  public Warsong(AllLegendSetup allLegendSetup,
     ArtifactSetup artifactSetup) : base("Warsong", playercolor.Red,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R05W");
@@ -46,7 +43,7 @@ public sealed class Warsong : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9729, 2426)),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
     };
     Nicknames = new List<string>
     {
@@ -68,10 +65,10 @@ public sealed class Warsong : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.BarrenAmbient2.CleanupHostileUnits();
     Regions.AshenvaleCreeps.CleanupHostileUnits();
-    var thunderBluffUnit = _preplacedUnitSystem.GetUnit(UNIT_N03M_THUNDERBLUFF);
+    var thunderBluffUnit = PreplacedWidgets.Units.Get(UNIT_N03M_THUNDERBLUFF);
     var whichPlayer = player.NeutralAggressive;
     thunderBluffUnit.SetOwner(whichPlayer);
-    var echoIslesUnit = _preplacedUnitSystem.GetUnit(UNIT_N02V_ECHO_ISLES);
+    var echoIslesUnit = PreplacedWidgets.Units.Get(UNIT_N02V_ECHO_ISLES);
     var whichPlayer1 = player.NeutralAggressive;
     echoIslesUnit.SetOwner(whichPlayer1);
   }
@@ -84,10 +81,10 @@ public sealed class Warsong : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestGrom(_preplacedUnitSystem, _allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
+    StartingQuest = AddQuest(new QuestGrom(_allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
     AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
-    AddQuest(new QuestRokhan(_preplacedUnitSystem.GetUnit(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
+    AddQuest(new QuestRokhan(PreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
     // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));
@@ -170,7 +167,6 @@ public sealed class Warsong : Faction
     ResearchManager.Register(new FlightPath(
       this,
       UPGRADE_R09N_FLIGHT_PATH_WARSONG,
-      70,
-      _preplacedUnitSystem));
+      70));
   }
 }

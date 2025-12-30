@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -11,7 +11,7 @@ public sealed class LegendSkywall
   public LegendaryHero Neptulon { get; }
   public Capital Vortex { get; }
 
-  public LegendSkywall(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendSkywall()
   {
     Ertan = new LegendaryHero("Ertan")
     {
@@ -39,7 +39,7 @@ public sealed class LegendSkywall
 
     Vortex = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("nELC")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("nELC")),
       Capturable = true,
       Essential = true
     };

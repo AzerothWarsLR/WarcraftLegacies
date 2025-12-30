@@ -1,8 +1,8 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
-using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury;
 
@@ -10,12 +10,12 @@ public sealed class QuestWellOfEternity : QuestData
 {
   private readonly unit _well;
 
-  public QuestWellOfEternity(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero kiljaeden) : base(
+  public QuestWellOfEternity(LegendaryHero kiljaeden) : base(
     "The Well of Eternity",
     "The Maelstrom still hides the shattered Well of Eternity. With his immense power, Kil'jaeden can summon a new well that will bring forth the destruction of the world.",
     @"ReplaceableTextures\CommandButtons\BTNFountainOfLife.blp")
   {
-    _well = preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER);
+    _well = PreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER);
     _well.IsVisible = false;
     AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "The Maelstrom", kiljaeden, 420, 90, Title));
     Global = true;

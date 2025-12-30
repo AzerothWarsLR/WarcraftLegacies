@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
 using MacroTools.LegendSystem;
-using MacroTools.Systems;
-using WCSharp.Shared.Data;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -21,8 +20,7 @@ public sealed class LegendScourge
   /// <summary>
   /// Sets up <see cref="LegendScourge"/>.
   /// </summary>
-  /// <param name="preplacedUnitSystem">A system for finding preplaced units on the map.</param>
-  public LegendScourge(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendScourge()
   {
     Kelthuzad = new LegendaryHero("Kel'thuzad")
     {
@@ -55,29 +53,29 @@ public sealed class LegendScourge
 
     Utgarde = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("h00O")),
       Capturable = true
     };
 
     TheFrozenThrone = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
+      Unit = PreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
       Essential = true,
       Capturable = true
     };
   }
 
-  public void RegisterLegends(PreplacedUnitSystem preplacedUnitSystem)
+  public void RegisterLegends()
   {
     LegendaryHeroManager.Register(Kelthuzad);
     LegendaryHeroManager.Register(Anubarak);
     LegendaryHeroManager.Register(Rivendare);
     LegendaryHeroManager.Register(Arthas);
     CapitalManager.Register(TheFrozenThrone);
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(-3655, 20220)));
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(-3015, 20762)));
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(2165, 20583)));
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(-3638, 23374)));
+    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3655, 20220));
+    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3015, 20762));
+    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, 2165, 20583));
+    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3638, 23374));
     CapitalManager.Register(Utgarde);
   }
 }

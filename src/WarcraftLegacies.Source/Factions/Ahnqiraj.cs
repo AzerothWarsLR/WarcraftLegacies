@@ -2,9 +2,9 @@
 
 using MacroTools.Data;
 using MacroTools.FactionSystem;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
-using MacroTools.Systems;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Cthun;
@@ -26,11 +26,11 @@ public sealed class Ahnqiraj : Faction
   private readonly unit _gateAhnQiraj;
 
   /// <inheritdoc />
-  public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj",
+  public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj",
     playercolor.Wheat, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
     _allLegendSetup = allLegendSetup;
-    _gateAhnQiraj = preplacedUnitSystem.GetUnit(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
+    _gateAhnQiraj = PreplacedWidgets.Units.Get(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
     ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
     StartingGold = 200;

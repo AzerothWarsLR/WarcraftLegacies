@@ -1,6 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
-using WCSharp.Shared.Data;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -17,7 +16,7 @@ public sealed class LegendFelHorde
   public Capital KilsorrowFortress { get; }
 
 
-  public LegendFelHorde(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendFelHorde()
   {
     Magtheridon = new LegendaryHero("Magtheridon")
     {
@@ -46,28 +45,28 @@ public sealed class LegendFelHorde
 
     BlackrockSpire = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o013")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o013")),
       DeathMessage = "Blackrock Spire has been razed."
     };
 
     KilsorrowFortress = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o017")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o017")),
       DeathMessage = "Kilsorrow Fortress has been razed.",
       Essential = true
     };
 
     BlackTemple = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o00F")),
       Essential = true
     };
-    BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_FEL, new Point(5511.9f, -29688.2f)));
-    BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_FEL, new Point(5513.1f, -30467.4f)));
+    BlackTemple.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_NPGR_POWER_GENERATOR_FEL, 5511.9f, -29688.2f));
+    BlackTemple.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_NPGR_POWER_GENERATOR_FEL, 5513.1f, -30467.4f));
 
     HellfireCitadel = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o008")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o008")),
       Essential = true
     };
   }

@@ -32,22 +32,21 @@ public static class GameSetup
     DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
-    var preplacedUnitSystem = new PreplacedUnitSystem();
     SoundLibrary.Setup();
-    var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
-    var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
-    allLegendSetup.RegisterLegends(preplacedUnitSystem);
+    var artifactSetup = new ArtifactSetup();
+    var allLegendSetup = new AllLegendSetup(artifactSetup);
+    allLegendSetup.RegisterLegends();
     ShoreSetup.Setup();
     ControlPointSetup.Setup();
-    InstanceSetup.Setup(preplacedUnitSystem);
+    InstanceSetup.Setup();
     NeutralHostileSetup.Setup();
     var commandManager = new CommandManager();
     CommandSetup.Setup(commandManager);
     CheatSetup.Setup(commandManager, artifactSetup);
     TeamSetup.Setup();
-    new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
-    FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-    SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+    new PlayerSetup(allLegendSetup, artifactSetup).Setup();
+    FactionChoiceDialogSetup.Setup(artifactSetup, allLegendSetup);
+    SharedQuestSetup.Setup(artifactSetup, allLegendSetup);
     SpellsSetup.Setup();
     FactionMultiboard.Setup();
     BookSetup.Setup();
@@ -57,8 +56,8 @@ public static class GameSetup
 
     MapFlagSetup.Setup();
     InfoQuests.Setup();
-    DestructibleSetup.Setup(preplacedUnitSystem);
-    PatronSystem.Setup(preplacedUnitSystem);
+    DestructibleSetup.Setup();
+    PatronSystem.Setup();
     var gameModeManager = new GameModeManager(new IGameMode[]
     {
       new ClosedAlliance(),
@@ -90,10 +89,10 @@ public static class GameSetup
     SummonRallyPoints.Setup();
     RemoveUnusedAreas.Run();
     EyeOfSargerasCooldowns.Setup();
-    CapturableUnitSetup.Setup(preplacedUnitSystem);
+    CapturableUnitSetup.Setup();
     EyeOfSargerasPickup.Setup();
     RuntimeIntegrityChecker.Setup();
-    DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
+    DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
   }
 

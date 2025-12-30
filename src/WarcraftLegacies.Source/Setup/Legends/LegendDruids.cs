@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -16,7 +16,7 @@ public sealed class LegendDruids
 
   public static int UnittypeCenariusGhost => UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST;
 
-  public LegendDruids(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendDruids()
   {
     Cenarius = new LegendaryHero("Cenarius")
     {
@@ -45,7 +45,7 @@ public sealed class LegendDruids
 
     Nordrassil = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("n002")),
       Capturable = true,
       Essential = true
     };
@@ -60,12 +60,12 @@ public sealed class LegendDruids
     {
       Capturable = true,
       Essential = true,
-      Unit = preplacedUnitSystem.GetUnit(UNIT_N06D_CENARION_HOLD_SENTINELS_OTHER)
+      Unit = PreplacedWidgets.Units.Get(UNIT_N06D_CENARION_HOLD_SENTINELS_OTHER)
     };
 
     TempleOfTheMoon = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(FourCC("o029")),
+      Unit = PreplacedWidgets.Units.Get(FourCC("o029")),
     };
 
     Tortolla = new LegendaryHero("Tortolla")

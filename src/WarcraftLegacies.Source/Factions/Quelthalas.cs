@@ -3,28 +3,25 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Quelthalas : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
 
   /// <inheritdoc />
-  public Quelthalas(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Quel'thalas",
+  public Quelthalas(AllLegendSetup allLegendSetup) : base("Quel'thalas",
     playercolor.Cyan, @"ReplaceableTextures\CommandButtons\BTNSylvanusWindrunner.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R05U_QUEL_THALAS_EXISTS;
     StartingGold = 200;
@@ -37,7 +34,7 @@ public sealed class Quelthalas : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17716, 13000)
     };
     Nicknames = new List<string>
     {
@@ -88,7 +85,7 @@ public sealed class Quelthalas : Faction
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
-      _preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, new Point(20477, 17447)), _allLegendSetup.Quelthalas.Silvermoon, _allLegendSetup.Quelthalas.Sunwell));
+      PreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20477, 17447), _allLegendSetup.Quelthalas.Silvermoon, _allLegendSetup.Quelthalas.Sunwell));
     StartingQuest = newQuest;
     AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, _allLegendSetup.Quelthalas.Sylvanas));
     AddQuest(new QuestTheBloodElves(_allLegendSetup.Neutral.DraktharonKeep));

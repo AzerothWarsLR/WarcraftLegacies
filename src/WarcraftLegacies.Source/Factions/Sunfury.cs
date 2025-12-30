@@ -1,28 +1,25 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Sunfury : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Sunfury(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Sunfury(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("Sunfury", playercolor.Violet, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     StartingGold = 200;
@@ -36,9 +33,9 @@ public sealed class Sunfury : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(3295, -22670)),
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2529, -19141)),
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), Regions.Area52Unlock.Center)
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 3295, -22670),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 2529, -19141),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), Regions.Area52Unlock.Center)
     };
     Nicknames = new List<string>
     {
@@ -63,7 +60,7 @@ public sealed class Sunfury : Faction
     Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
     Regions.TempestKeep.CleanupNeutralPassiveUnits();
     Regions.SunfuryStartingPosition.CleanupNeutralPassiveUnits();
-    _preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
+    PreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
     base.OnNotPicked();
   }
 
@@ -79,7 +76,7 @@ public sealed class Sunfury : Faction
     AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan,
       _allLegendSetup.Sunfury.Kael));
     AddQuest(new QuestForgottenKnowledge());
-    AddQuest(new QuestWellOfEternity(_preplacedUnitSystem, _allLegendSetup.Sunfury.Kiljaeden));
+    AddQuest(new QuestWellOfEternity(_allLegendSetup.Sunfury.Kiljaeden));
     AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
   }
 }

@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -14,7 +14,7 @@ public sealed class LegendDraenei
   public Capital Shattrah { get; }
   public Capital Halaar { get; }
 
-  public LegendDraenei(PreplacedUnitSystem preplacedUnitSystem)
+  public LegendDraenei()
   {
     LegendNobundo = new LegendaryHero("Nobundo")
     {
@@ -24,13 +24,13 @@ public sealed class LegendDraenei
 
     LegendExodar = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP),
+      Unit = PreplacedWidgets.Units.Get(UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP),
       Essential = true
     };
 
     LegendExodarGenerator = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)
+      Unit = PreplacedWidgets.Units.Get(UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)
     };
 
     Maraad = new LegendaryHero("Maraad")
@@ -53,12 +53,12 @@ public sealed class LegendDraenei
 
     Shattrah = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
+      Unit = PreplacedWidgets.Units.Get(UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
     };
 
     Halaar = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H0AE_HALAAR_DRAENEI_OTHER)
+      Unit = PreplacedWidgets.Units.Get(UNIT_H0AE_HALAAR_DRAENEI_OTHER)
     };
   }
 

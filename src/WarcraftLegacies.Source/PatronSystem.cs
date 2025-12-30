@@ -1,6 +1,5 @@
 ﻿using System;
-using MacroTools.Systems;
-using WCSharp.Shared.Data;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source;
 
@@ -24,19 +23,19 @@ public static class PatronSystem
     throw new ArgumentOutOfRangeException(nameof(tier), tier, null);
   }
 
-  private static void SetupPatron(string name, PatronTier tier, Point position, PreplacedUnitSystem preplacedUnitSystem)
+  private static void SetupPatron(string name, PatronTier tier, int x, int y)
   {
-    var unit = preplacedUnitSystem.GetUnit(TierToUnitType(tier), position);
+    var unit = PreplacedWidgets.Units.GetClosest(TierToUnitType(tier), x, y);
     unit.Name = $"{name} - Tier {(int)tier} Patron";
   }
 
   /// <summary>
   /// Renames some units on the map to be named after Patreon Patrons.
   /// </summary>
-  public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+  public static void Setup()
   {
-    SetupPatron("bredbrodak", PatronTier.Two, new Point(16925, 14799), preplacedUnitSystem);
-    SetupPatron("Dromoka", PatronTier.Two, new Point(13245, 5359), preplacedUnitSystem);
-    SetupPatron("Eagleman", PatronTier.Two, new Point(15276, 2550), preplacedUnitSystem);
+    SetupPatron("bredbrodak", PatronTier.Two, 16925, 14799);
+    SetupPatron("Dromoka", PatronTier.Two, 13245, 5359);
+    SetupPatron("Eagleman", PatronTier.Two, 15276, 2550);
   }
 }

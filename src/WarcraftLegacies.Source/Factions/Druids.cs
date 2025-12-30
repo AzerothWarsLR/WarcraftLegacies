@@ -5,30 +5,27 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Druids;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Druids : Faction
 {
-  private readonly PreplacedUnitSystem _preplacedUnitSystem;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
+  public Druids(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _preplacedUnitSystem = preplacedUnitSystem;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R06E");
@@ -43,8 +40,8 @@ public sealed class Druids : Faction
 
     GoldMines = new List<unit>
     {
-      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)),
-       _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-17545, 15856))
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9200, 10742),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -17545, 15856)
     };
     Nicknames = new List<string>
     {
@@ -96,7 +93,7 @@ public sealed class Druids : Faction
       new[] { this },
       new Objective[]
       {
-        new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
+        new ObjectiveUnitAlive(PreplacedWidgets.Units.GetClosest(UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
         new ObjectiveLegendInRect(_allLegendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
       }));
 

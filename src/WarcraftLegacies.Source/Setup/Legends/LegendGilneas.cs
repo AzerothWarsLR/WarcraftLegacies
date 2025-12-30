@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.Systems;
+using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -20,8 +20,8 @@ public sealed class LegendGilneas
   /// <summary>
   /// Sets up <see cref="LegendGilneas"/>.
   /// </summary>
-  /// 
-  public LegendGilneas(PreplacedUnitSystem preplacedUnitSystem)
+  ///
+  public LegendGilneas()
   {
     Tess = new LegendaryHero("Tess Greymane")
     {
@@ -52,7 +52,7 @@ public sealed class LegendGilneas
 
     GilneasCastle = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
       Essential = true
     };
   }
