@@ -43,7 +43,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Neutral Hostile, Red - Skeletal Marksman)"
+      "Value": "(Sea Witch)"
     },
     {
       "Id": 2037082209,
@@ -51,16 +51,15 @@
       "Value": "W"
     },
     {
-      "Level": 1,
-      "Id": 829453409,
+      "Id": 1936090465,
       "Type": 3,
-      "Value": "(|cffffcc00W|r) Cold Arrows"
+      "Value": ""
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The freezing arrows, imbued with arcane magics, fire forth, causing 6 additional damage and slowing the target\u0027s movement and attack speed by 30% and 25%, respectively."
+      "Value": "Adds a cold effect to each attack, slowing a target enemy unit\u0027s attacks by \u003CACcw,DataB1,%\u003E% and movement by \u003CACcw,DataC1,%\u003E% for \u003CACcw,Dur1\u003E seconds."
     },
     {
       "Id": 2019718497,
