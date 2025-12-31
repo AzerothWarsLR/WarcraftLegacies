@@ -5,4 +5,6 @@ namespace Warcraft.Cartographer.Deserialization;
 public sealed class MapDataToMapConverterOptions
 {
   public required MapDataPathOptions MapDataPaths { get; init; }
+
+  public required IncludeFromMap IncludeFromMap { get; set; }
 }

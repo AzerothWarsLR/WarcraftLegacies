@@ -19,6 +19,10 @@
     "Generate Constants": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI generate constants WarcraftLegacies"
+    },
+    "Convert C# to Lua": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies -i Script -d false"
     }
   }
 }

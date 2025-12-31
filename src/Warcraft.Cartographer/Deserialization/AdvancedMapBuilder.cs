@@ -53,13 +53,9 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
   {
     SupplementMap(map);
 
-    if (options.ShouldBackup && Directory.Exists(options.W3XFolderPath))
+    if (options.DeleteDestination)
     {
-      if (options.ShouldBackup)
-      {
-        BackupFiles(options.BackupPath, options.W3XFolderPath);
-      }
-      Directory.Delete(options.W3XFolderPath, true);
+      DeleteOutputDirectory();
     }
 
     map.BuildDirectory(options.W3XFolderPath, additionalFiles);
@@ -178,6 +174,16 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     // Update war3map.lua so you can inspect the generated Lua code easily
     Directory.CreateDirectory(options.ScriptArtifactPath);
     File.WriteAllText(Path.Combine(options.ScriptArtifactPath, PathConventions.MapData.Script), map.Script);
+  }
+
+  private void DeleteOutputDirectory()
+  {
+    if (options.ShouldBackup && Directory.Exists(options.W3XFolderPath))
+    {
+      BackupFiles(options.BackupPath, options.W3XFolderPath);
+    }
+
+    Directory.Delete(options.W3XFolderPath, true);
   }
 
   private static void BackupFiles(string backupDirectory, string mapPath)

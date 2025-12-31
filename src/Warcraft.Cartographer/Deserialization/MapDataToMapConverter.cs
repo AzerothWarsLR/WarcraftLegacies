@@ -64,8 +64,13 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     return map;
   }
 
-  private MapDoodads DeserializeDoodads()
+  private MapDoodads? DeserializeDoodads()
   {
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.Doodads))
+    {
+      return null;
+    }
+
     var mapDoodads = new MapDoodads(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.DoodadsPath))
     {
@@ -74,8 +79,13 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     return mapDoodads;
   }
 
-  private MapUnits DeserializeUnits()
+  private MapUnits? DeserializeUnits()
   {
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.Units))
+    {
+      return null;
+    }
+
     var mapUnits = new MapUnits(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UnitsPath))
     {
@@ -86,7 +96,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
 
   private MapRegions? DeserializeRegions()
   {
-    if (!Directory.Exists(options.MapDataPaths.RegionsPath))
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.Regions) || !Directory.Exists(options.MapDataPaths.RegionsPath))
     {
       return null;
     }
@@ -102,7 +112,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
   private MapSounds? DeserializeSounds()
   {
     var directory = options.MapDataPaths.SoundsPath;
-    if (!Directory.Exists(directory))
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.Sounds) || !Directory.Exists(directory))
     {
       return null;
     }
@@ -115,8 +125,13 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     return sounds;
   }
 
-  private UpgradeObjectData DeserializeUpgradeData()
+  private UpgradeObjectData? DeserializeUpgradeData()
   {
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.UpgradeData))
+    {
+      return null;
+    }
+
     var objectData = new UpgradeObjectData(ObjectDataFormatVersion.v3);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UpgradeDataPath))
     {
@@ -137,7 +152,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
   private ItemObjectData? DeserializeItemData()
   {
     var directory = options.MapDataPaths.ItemDataPath;
-    if (!Directory.Exists(directory))
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.ItemData) || !Directory.Exists(directory))
     {
       return null;
     }
@@ -162,7 +177,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
   private DoodadObjectData? DeserializeDoodadData()
   {
     var directory = options.MapDataPaths.DoodadDataPath;
-    if (!Directory.Exists(directory))
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.DoodadData) || !Directory.Exists(directory))
     {
       return null;
     }
@@ -188,7 +203,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
   private DestructableObjectData? DeserializeDestructableData()
   {
     var directory = options.MapDataPaths.DestructableDataPath;
-    if (!Directory.Exists(directory))
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.DestructableData) || !Directory.Exists(directory))
     {
       return null;
     }
@@ -213,7 +228,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
   private BuffObjectData? DeserializeBuffData()
   {
     var directory = options.MapDataPaths.BuffDataPath;
-    if (!Directory.Exists(directory))
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.BuffData) || !Directory.Exists(directory))
     {
       return null;
     }
@@ -235,8 +250,13 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     return objectData;
   }
 
-  private AbilityObjectData DeserializeAbilityData()
+  private AbilityObjectData? DeserializeAbilityData()
   {
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.AbilityData))
+    {
+      return null;
+    }
+
     var objectData = new AbilityObjectData(ObjectDataFormatVersion.v3);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.AbilityDataPath))
     {
@@ -254,8 +274,13 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
     return objectData;
   }
 
-  private UnitObjectData DeserializeUnitData()
+  private UnitObjectData? DeserializeUnitData()
   {
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.UnitData))
+    {
+      return null;
+    }
+
     var objectData = new UnitObjectData(ObjectDataFormatVersion.v3);
     foreach (var file in Directory.EnumerateFiles(options.MapDataPaths.UnitDataPath))
     {
@@ -275,63 +300,92 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
 
   private List<PathData> GetAdditionalFiles()
   {
-    var importsDirectory = options.MapDataPaths.ImportsPath;
+    var additionalFiles = new List<PathData>();
 
-    var additionalFiles = Directory.Exists(importsDirectory)
-      ? Directory.EnumerateFiles(importsDirectory, "*", SearchOption.AllDirectories).Select(x => new PathData
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.Imports))
+    {
+      var importsDirectory = options.MapDataPaths.ImportsPath;
+
+      additionalFiles.AddRange(Directory.EnumerateFiles(importsDirectory, "*", SearchOption.AllDirectories).Select(x => new PathData
       {
         AbsolutePath = x,
         RelativePath = Path.GetRelativePath(importsDirectory, x)
-      }).ToList()
-      : [];
+      }).ToList());
+    }
 
-    foreach (var filePath in GetUnserializableFilePaths())
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.Minimap))
     {
       additionalFiles.Add(new PathData
       {
-        AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, filePath),
-        RelativePath = filePath
+        AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, MapData.Minimap),
+        RelativePath = MapData.Minimap
       });
     }
 
-    additionalFiles.Add(new PathData
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.GameplayConstants))
     {
-      AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, MapData.GameInterface),
-      RelativePath = MapData.GameInterface
-    });
+      additionalFiles.Add(new PathData
+      {
+        AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, MapData.GameplayConstants),
+        RelativePath = MapData.GameplayConstants
+      });
+    }
+
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.GameInterface))
+    {
+      additionalFiles.Add(new PathData
+      {
+        AbsolutePath = Path.Combine(options.MapDataPaths.RootPath, MapData.GameInterface),
+        RelativePath = MapData.GameInterface
+      });
+    }
 
     return additionalFiles;
   }
 
   private List<DirectoryEnumerationOptions> GetAdditionalFileDirectories()
   {
-    var importsDirectory = options.MapDataPaths.ImportsPath;
+    List<DirectoryEnumerationOptions> fileDirectories = [];
 
-    var fileDirectories = Directory.Exists(importsDirectory)
-      ? new List<DirectoryEnumerationOptions>
+    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.Imports))
+    {
+      var importsDirectory = options.MapDataPaths.ImportsPath;
+      fileDirectories.AddRange(new List<DirectoryEnumerationOptions>
       {
         new()
         {
           Path = importsDirectory,
           SearchPattern = "*"
         }
-      }
-      : new List<DirectoryEnumerationOptions>();
+      });
+    }
 
-    foreach (var filePath in GetUnserializableFilePaths())
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.Minimap))
     {
       fileDirectories.Add(new DirectoryEnumerationOptions
       {
         Path = options.MapDataPaths.RootPath,
-        SearchPattern = filePath
+        SearchPattern = MapData.Minimap
       });
     }
 
-    fileDirectories.Add(new DirectoryEnumerationOptions
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.GameplayConstants))
     {
-      Path = options.MapDataPaths.RootPath,
-      SearchPattern = MapData.GameInterface
-    });
+      fileDirectories.Add(new DirectoryEnumerationOptions
+      {
+        Path = options.MapDataPaths.RootPath,
+        SearchPattern = MapData.GameplayConstants
+      });
+    }
+
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.GameInterface))
+    {
+      fileDirectories.Add(new DirectoryEnumerationOptions
+      {
+        Path = options.MapDataPaths.RootPath,
+        SearchPattern = MapData.GameInterface
+      });
+    }
 
     return fileDirectories;
   }

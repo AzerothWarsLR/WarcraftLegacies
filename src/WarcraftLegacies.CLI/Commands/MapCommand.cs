@@ -20,7 +20,7 @@ internal sealed class MapCommand<T> : Command where T : MapCommandContext
     {
       Aliases = { "-i" },
       Description = "A list of flags to indicate what should be included in map conversion.",
-      DefaultValueFactory = _ => IncludeFromMap.All
+      DefaultValueFactory = _ => IncludeFromMap.AllExceptScript
     };
 
     Option<bool> deleteDestinationOption = new("--delete-destination")

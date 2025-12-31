@@ -108,7 +108,8 @@ public static class DefaultOptionsFactory
         MinimapPath = sharedPathOptions.MapDataPathOptions.MinimapPath,
         GameplayConstantsPath = sharedPathOptions.MapDataPathOptions.GameplayConstantsPath,
         GameInterfacePath = sharedPathOptions.MapDataPathOptions.GameInterfacePath
-      }
+      },
+      IncludeFromMap = IncludeFromMap.All
     };
   }
 }
