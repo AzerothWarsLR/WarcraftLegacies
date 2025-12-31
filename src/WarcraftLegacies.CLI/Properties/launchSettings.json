@@ -12,6 +12,10 @@
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies"
     },
+    "Convert W3X to MapData (Object Data)": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies --include ObjectData"
+    },
     "Convert MapData to W3X": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies"
