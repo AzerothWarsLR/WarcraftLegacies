@@ -17,7 +17,7 @@ internal static class MapCommandFactory
       Configure = ctx =>
       {
         ctx.OutputKind = MapOutputKind.Directory;
-        ctx.Builder.ShouldBackup = true;
+        ctx.AdvancedMapBuilderOptions.ShouldBackup = true;
       }
     };
   }
@@ -29,11 +29,11 @@ internal static class MapCommandFactory
       Configure = ctx =>
       {
         ctx.OutputKind = MapOutputKind.Directory;
-        ctx.Builder.ShouldLaunch = true;
-        ctx.Builder.ShouldTranspile = true;
-        ctx.Builder.ShouldMigrate = true;
-        ctx.Builder.W3XFolderPath = Path.Combine(ctx.Paths.ScriptArtifactPath, $"{ctx.MapName}.w3x");
-        ctx.Builder.TestingPlayerSlot = AppSettings.Current.CompilerSettings.TestingPlayerSlot;
+        ctx.AdvancedMapBuilderOptions.ShouldLaunch = true;
+        ctx.AdvancedMapBuilderOptions.ShouldTranspile = true;
+        ctx.AdvancedMapBuilderOptions.ShouldMigrate = true;
+        ctx.AdvancedMapBuilderOptions.W3XFolderPath = Path.Combine(ctx.Paths.ScriptArtifactPath, $"{ctx.MapName}.w3x");
+        ctx.AdvancedMapBuilderOptions.TestingPlayerSlot = AppSettings.Current.CompilerSettings.TestingPlayerSlot;
       }
     };
   }
@@ -45,9 +45,9 @@ internal static class MapCommandFactory
       Configure = ctx =>
       {
         ctx.OutputKind = MapOutputKind.File;
-        ctx.Builder.ShouldMigrate = true;
-        ctx.Builder.ShouldSetVersion = true;
-        ctx.Builder.ShouldTranspile = true;
+        ctx.AdvancedMapBuilderOptions.ShouldMigrate = true;
+        ctx.AdvancedMapBuilderOptions.ShouldSetVersion = true;
+        ctx.AdvancedMapBuilderOptions.ShouldTranspile = true;
       }
     };
   }

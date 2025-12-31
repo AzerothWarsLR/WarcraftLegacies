@@ -64,6 +64,19 @@ public enum IncludeFromMap
     GameplayConstants |
     GameInterface |
     Script |
+    Units,
+
+  AllExceptScript =
+    Sounds |
+    Terrain |
+    Regions |
+    ShadowMap |
+    Minimap |
+    Imports |
+    Info |
+    ObjectData |
+    GameplayConstants |
+    GameInterface |
     Units
 }
 

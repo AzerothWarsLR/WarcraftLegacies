@@ -75,4 +75,9 @@ public sealed class AdvancedMapBuilderOptions
   /// If <see cref="ShouldMigrate"/> is true, these migrations are applied to the map during build.
   /// </summary>
   public IEnumerable<IMapMigration> MapMigrations { get; set; } = [];
+
+  /// <summary>
+  /// If true, relevant destination folders will be deleted before exporting W3X folders.
+  /// </summary>
+  public bool DeleteDestination { get; set; }
 }
