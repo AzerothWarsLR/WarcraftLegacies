@@ -34,6 +34,11 @@
       "Value": 600
     },
     {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LW,A07D,AInv"
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Morphed - Level 2 - Illidari)"
@@ -57,11 +62,6 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Deadly Hero, adept at wading into the fray and cutting down key targets. "
-    },
-    {
-      "Id": 1768055157,
-      "Type": 3,
-      "Value": "A0LW,A07D,AInv"
     }
   ]
 }

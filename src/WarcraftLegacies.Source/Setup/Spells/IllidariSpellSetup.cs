@@ -69,6 +69,18 @@ public static class IllidariSpellSetup
     {
       AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA
     });
+
+    SpellRegistry.Register(new ChainManaBurn(ABILITY_AYGF_CHAIN_MANA_BURN_ILLIDAN)
+    {
+      ManaBurned = new LeveledAbilityField<int>
+      {
+        Base = 75,
+        PerLevel = 75
+      },
+      MaximumBounces = 5,
+      BurnReductionPerBounce = 0.15f,
+      MaximumBounceRadius = 500
+    });
   }
 }
 
