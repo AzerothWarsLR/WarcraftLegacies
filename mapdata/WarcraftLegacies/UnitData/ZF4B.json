@@ -46,17 +46,22 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "Revive The Betrayer"
+      "Value": "Revive Illidan"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon The Betrayer"
+      "Value": "Summon Illidan"
     },
     {
       "Id": 1651864693,
       "Type": 3,
       "Value": "Deadly Hero, adept at wading into the fray and cutting down key targets. "
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0LW,A07D,AInv"
     }
   ]
 }
