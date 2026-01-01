@@ -6,88 +6,33 @@
 /// </summary>
 public enum UnitCategory
 {
+  //Buildings
   TownHall,
-
-  Worker,
-
   GilneasManor,
-
   Shipyard,
-
   LightHouse,
-
   Farm,
-
   Altar,
-
   Specialist,
-
   Waygate,
-
-  Siege,
-
+  SiegeWorkshop,
   Barracks,
-
   Research,
-
   Magic,
-
   Tower,
-
-  Tower2,
-
-  Tower3,
-
-  Tower4,
-
-  Tower5,
-
-  Tower6,
-
   Shop,
-
   Teleport,
+  FlyingBuilding,
 
-  SpecailFarm1,
-
-  SpecailFarm2,
-
-  SpecailFarm3,
-
-  SpecailFarm4,
-
+  //Units
+  Worker,
   Elite,
-
-  CasterSupport,
-
-  CasterBasic,
-
-  Caster3,
-
-  CasterAdvanced,
-
-  CasterAdvanced2,
-
-  RangedBasic,
-
-  MeleeBasic,
-
-  RangedAdvanced,
-
-  MeleeAdvanced,
-
-  RangedSpecial,
-
-  MeleeSpecial,
-
-  FlyingBasic,
-
-  FlyingAdvanced,
-
-  SiegeBasic,
-
-  SiegeAdvanced,
-
-  SiegeSpecial,
-
+  Support,
+  Marksman,
+  Fighter,
+  Flyer,
+  Siege,
+  Destroyer,
+  Tank,
+  Assassin
 }
