@@ -31,7 +31,7 @@ public abstract class Faction
   private readonly List<unit> _goldMines = new();
   private readonly Dictionary<int, int> _objectLevels = new();
   private readonly Dictionary<int, int> _objectLimits = new();
-  private readonly Dictionary<UnitCategory, int> _objectsByCategory = new();
+  private readonly Dictionary<UnitCategory, List<int>> _objectsByFirstCategory = new();
   private readonly List<Power> _powers = new();
   private readonly Dictionary<string, QuestData> _questsByName = new();
   private readonly int _undefeatedResearch;
@@ -274,10 +274,10 @@ public abstract class Faction
   }
 
   /// <summary>
-  /// Provides the unit type belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
+  /// Provides the unit types belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
   /// </summary>
-  public bool TryGetObjectByCategory(UnitCategory category, out int objectTypeId) =>
-    _objectsByCategory.TryGetValue(category, out objectTypeId);
+  public bool TryGetObjectByCategory(UnitCategory category, [NotNullWhen(true)] out List<int>? objects) =>
+    _objectsByFirstCategory.TryGetValue(category, out objects);
 
   /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
   public void AddPower(Power power)
@@ -508,17 +508,34 @@ public abstract class Faction
   }
 
   /// <summary>
-  /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>/
+  /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>.
   /// </summary>
   protected void ProcessObjectInfo(IEnumerable<ObjectInfo> objectInfos)
   {
-    foreach (var (objectTypeId, objectInfo) in objectInfos)
+    try
     {
-      ModObjectLimit(objectTypeId, objectInfo.Limit);
-      if (objectInfo.Category != UnitCategory.None)
+      foreach (var (objectTypeId, objectInfo) in objectInfos)
       {
-        _objectsByCategory[objectInfo.Category] = objectTypeId;
+        ModObjectLimit(objectTypeId, objectInfo.Limit);
+        if (objectInfo.Categories.Count == 0)
+        {
+          continue;
+        }
+
+        var firstCategory = objectInfo.Categories[0];
+        if (_objectsByFirstCategory.TryGetValue(firstCategory, out var categories))
+        {
+          categories.Add(objectTypeId);
+        }
+        else
+        {
+          _objectsByFirstCategory[firstCategory] = new List<int> { objectTypeId };
+        }
       }
+    }
+    catch (Exception ex)
+    {
+      Logger.LogError($"Failed to process object information for {Name}: {ex}");
     }
   }
 
