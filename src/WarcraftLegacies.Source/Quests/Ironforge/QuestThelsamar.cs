@@ -17,6 +17,8 @@ public sealed class QuestThelsamar : QuestData
     "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
     @"ReplaceableTextures\CommandButtons\BTNMurlocNightCrawler.blp")
   {
+    Knowledge = 5;
+
     AddObjective(new ObjectiveHostilesInAreaAreDead(new Rectangle[]
     {
       Regions.LochModanMurlocCreepCamp

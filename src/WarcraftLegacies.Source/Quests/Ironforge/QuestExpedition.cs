@@ -31,5 +31,4 @@ public sealed class QuestExpedition : QuestData
     var rewardArtifact = new Artifact(rewardItem);
     ArtifactManager.Register(rewardArtifact);
   }
-
 }

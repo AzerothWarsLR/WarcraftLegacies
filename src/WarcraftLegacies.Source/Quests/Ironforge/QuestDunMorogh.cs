@@ -16,6 +16,8 @@ public sealed class QuestDunMorogh : QuestData
     "A small troll skirmish is attacking Dun Morogh. Push them back!",
     @"ReplaceableTextures\CommandButtons\BTNIceTrollShadowPriest.blp")
   {
+    Knowledge = 5;
+
     AddObjective(new ObjectiveControlPoint(UNIT_N014_DUN_MOROGH));
     AddObjective(new ObjectiveExpire(660, Title));
     AddObjective(new ObjectiveSelfExists());

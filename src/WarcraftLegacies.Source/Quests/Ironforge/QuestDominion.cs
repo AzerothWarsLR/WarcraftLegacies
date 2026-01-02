@@ -19,6 +19,8 @@ public sealed class QuestDominion : QuestData
     "The Dwarven Dominion must be established before Ironforge can join the war.",
     @"ReplaceableTextures\CommandButtons\BTNDwarvenFortress.blp")
   {
+    Knowledge = 5;
+
     foreach (var prerequisite in prerequisites)
     {
       AddObjective(new ObjectiveQuestComplete(prerequisite));
