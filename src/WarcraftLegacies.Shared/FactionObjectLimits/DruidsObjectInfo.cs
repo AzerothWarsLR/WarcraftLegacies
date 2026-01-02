@@ -1,4 +1,5 @@
 ﻿using MacroTools.Shared;
+using static MacroTools.Shared.UnitCategory;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -8,30 +9,31 @@ public static class DruidsObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
-    yield return new(UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1, Unlimited);
-    yield return new(UNIT_ETOA_TREE_OF_AGES_DRUIDS_T2, Unlimited);
-    yield return new(UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS_T3, Unlimited);
-    yield return new(UNIT_EMOW_MOON_WELL_DRUIDS_FARM, Unlimited);
-    yield return new(UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS_ALTAR, Unlimited);
-    yield return new(UNIT_EAOE_ANCIENT_OF_LORE_DRUIDS_MAGIC, Unlimited);
-    yield return new(UNIT_EAOW_ANCIENT_OF_WIND_DRUIDS_SPECIALIST, Unlimited);
-    yield return new(UNIT_EAOM_ANCIENT_OF_WAR_DRUIDS_BARRACKS, Unlimited);
-    yield return new(UNIT_ETRP_ANCIENT_PROTECTOR_DRUIDS_TOWER, Unlimited);
-    yield return new(UNIT_E010_ANCIENT_OF_CREATION_DRUIDS_RESEARCH, Unlimited);
-    yield return new(UNIT_E019_ANCIENT_OF_WONDERS_DRUIDS_SHOP, Unlimited);
-    yield return new(UNIT_ESHY_KALDOREI_DOCKS_DRUIDS_SENTINEL_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new(UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS_TOWER, Unlimited);
-    yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, UnitCategory.Worker);
-    yield return new(UNIT_EDRY_DRYAD_DRUIDS, Unlimited);
-    yield return new(UNIT_EDOT_DRUID_OF_THE_TALON_DRUIDS, Unlimited);
-    yield return new(UNIT_EMTG_MOUNTAIN_GIANT_DRUIDS, 12);
-    yield return new(UNIT_EFDR_FAERIE_DRAGON_DRUIDS, 6);
-    yield return new(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS, Unlimited);
-    yield return new(UNIT_EDCM_BEAR_BEAR_FORM, Unlimited);
-    yield return new(UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE, 6);
-    yield return new(UNIT_N05H_SAPLING_DRUIDS, Unlimited);
-    yield return new(UNIT_N065_GREEN_DRAGON_DRUIDS, 6);
-    yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6);
+    yield return new(UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1, Unlimited, TownHall);
+    yield return new(UNIT_ETOA_TREE_OF_AGES_DRUIDS_T2, Unlimited, TownHall);
+    yield return new(UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS_T3, Unlimited, TownHall);
+    yield return new(UNIT_EMOW_MOON_WELL_DRUIDS_FARM, Unlimited, Farm);
+    yield return new(UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS_ALTAR, Unlimited, Altar);
+    yield return new(UNIT_EAOE_ANCIENT_OF_LORE_DRUIDS_MAGIC, Unlimited, Magic);
+    yield return new(UNIT_EAOW_ANCIENT_OF_WIND_DRUIDS_SPECIALIST, Unlimited, Flyer);
+    yield return new(UNIT_EAOM_ANCIENT_OF_WAR_DRUIDS_BARRACKS, Unlimited, Barracks);
+    yield return new(UNIT_ETRP_ANCIENT_PROTECTOR_DRUIDS_TOWER, Unlimited, Tower);
+    yield return new(UNIT_E010_ANCIENT_OF_CREATION_DRUIDS_RESEARCH, Unlimited, Research);
+    yield return new(UNIT_E019_ANCIENT_OF_WONDERS_DRUIDS_SHOP, Unlimited, Shop);
+    yield return new(UNIT_ESHY_KALDOREI_DOCKS_DRUIDS_SENTINEL_SHIPYARD, Unlimited, Shipyard);
+    yield return new(UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS_TOWER, Unlimited, Tower);
+    yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, Worker);
+    yield return new(UNIT_EDRY_DRYAD_DRUIDS, Unlimited, Marksman);
+    yield return new(UNIT_EDOT_DRUID_OF_THE_TALON_DRUIDS, Unlimited, new List<UnitCategory> { Support, Flyer });
+    yield return new(UNIT_EMTG_MOUNTAIN_GIANT_DRUIDS, 12, Tank);
+    yield return new(UNIT_EFDR_FAERIE_DRAGON_DRUIDS, 6, new List<UnitCategory> { Support, Flyer });
+    yield return new(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS, Unlimited, Support);
+    yield return new(UNIT_EDCM_BEAR_BEAR_FORM, Unlimited, Fighter);
+    yield return new(UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE, 6, new List<UnitCategory> { Elite, Support, Destroyer });
+    yield return new(UNIT_N05H_SAPLING_DRUIDS, Unlimited, Tank);
+    yield return new(UNIT_N065_GREEN_DRAGON_DRUIDS, 6, Flyer);
+    yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6, Siege);
+
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
     yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHTELVES, Unlimited);
     yield return new(UNIT_H0AV_FRIGATE_NIGHTELVES, Unlimited);
@@ -40,12 +42,14 @@ public static class DruidsObjectInfo
     yield return new(UNIT_H0B4_BOARDING_VESSEL_NIGHTELVES, Unlimited);
     yield return new(UNIT_H0BA_JUGGERNAUT_NIGHTELVES, Unlimited);
     yield return new(UNIT_H0B8_BOMBARD_NIGHTELVES, 6);
-    yield return new(UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS, 1);
-    yield return new(UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST, 1);
-    yield return new(UNIT_EFUR_ARCHDRUID_DRUIDS, 1);
-    yield return new(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1);
-    yield return new(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1);
-    yield return new(UNIT_H04U_DEMIGOD_DRUIDS, 1);
+
+    yield return new(UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS, 1, new List<UnitCategory> { Support, Destroyer });
+    yield return new(UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST, 1, new List<UnitCategory> { Support, Destroyer });
+    yield return new(UNIT_EFUR_ARCHDRUID_DRUIDS, 1, Support);
+    yield return new(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1, new List<UnitCategory> { Fighter, Tank, Support });
+    yield return new(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1, new List<UnitCategory> { Support, Destroyer });
+    yield return new(UNIT_H04U_DEMIGOD_DRUIDS, 1, new List<UnitCategory> { Destroyer, Tank });
+
     yield return new(UPGRADE_REDT_DRUID_OF_THE_TALON_ADEPT_TRAINING_DRUIDS, Unlimited);
     yield return new(UPGRADE_RENB_NATURE_S_BLESSING_BROWN_RESEARCH, Unlimited);
     yield return new(UPGRADE_RERS_RESISTANT_SKIN_MOUNTAIN_GIANT, Unlimited);
