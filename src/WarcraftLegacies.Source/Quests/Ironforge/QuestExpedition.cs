@@ -20,6 +20,7 @@ public sealed class QuestExpedition : QuestData
     "Uldum was once a vast jungle, until the Forge of Origination stationed there wiped the slate clean. Now, buried under the sands lies a veritable trove of ancient relics.",
     @"ReplaceableTextures\CommandButtons\BTNGatherGold.blp")
   {
+    Knowledge = 5;
     _rewardArtifactItemTypeId = rewardArtifactItemTypeId;
     AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 5));
   }
