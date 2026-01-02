@@ -34,7 +34,8 @@ public enum UnitCategory
   Siege,
   Destroyer,
   Tank,
-  Assassin
+  Assassin,
+  Summoner
 }
 
 public static class UnitCategoryExtensions
@@ -95,6 +96,8 @@ public static class UnitCategoryExtensions
         return "Tank";
       case UnitCategory.Assassin:
         return "Assassin";
+      case UnitCategory.Summoner:
+        return "Summoner";
     }
 
     return category.ToString();
