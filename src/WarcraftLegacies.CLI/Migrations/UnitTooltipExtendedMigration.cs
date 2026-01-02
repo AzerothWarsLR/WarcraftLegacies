@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MacroTools.Shared;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 using War3Api.Object.Enums;
@@ -27,6 +28,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   private const string UpgradesTo = "|cfff5962dUpgrades to:|r ";
   private const string ItemsSold = "|cfff5962dSells items:|r ";
   private const string UnitsSold = "|cfff5962dSells units:|r ";
+  private const string RolePrefix = "|cff2fc6ba";
 
   private readonly ObjectInfoRepository _objectInfoRepository = new();
 
@@ -56,7 +58,18 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   {
     var tooltipBuilder = new StringBuilder();
 
-    tooltipBuilder.Append(unit.TextTooltipExtended);
+    var unitId = (unit.NewId != 0 ? unit.NewId : unit.OldId).InvertEndianness();
+    var hasObjectInfo = _objectInfoRepository.TryGetObjectInfo(unitId, out var objectInfo);
+
+    if (hasObjectInfo && objectInfo.Categories.Count != 0)
+    {
+      AppendRoles(tooltipBuilder, unit, objectInfo);
+    }
+    else
+    {
+      AppendObjectEditorTooltip(tooltipBuilder, unit);
+    }
+
     AppendInnateUnitsTrained(tooltipBuilder, unit);
     AppendUnlockableUnitsTrained(tooltipBuilder, unit);
     AppendResearchesAvailable(tooltipBuilder, unit);
@@ -66,7 +79,12 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     AppendHeroAbilities(tooltipBuilder, unit);
     AppendSoldItems(tooltipBuilder, unit);
     AppendUnitsSold(tooltipBuilder, unit);
-    AppendObjectLimit(tooltipBuilder, unit);
+
+    if (hasObjectInfo)
+    {
+      AppendObjectLimit(tooltipBuilder, unit, objectInfo);
+    }
+
     AppendTargetsAllowed(tooltipBuilder, unit);
 
     var extendedTooltip = tooltipBuilder.ToString();
@@ -74,6 +92,34 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     {
       unit.TextTooltipExtended = extendedTooltip;
     }
+  }
+
+  private static void AppendRoles(StringBuilder tooltipBuilder, Unit unit, ObjectInfo objectInfo)
+  {
+    string suffix;
+    if (unit.AbilitiesHero.Any())
+    {
+      suffix = " Hero";
+    }
+    else if (unit.StatsIsABuilding)
+    {
+      suffix = "";
+    }
+    else if (objectInfo.Categories.Contains(UnitCategory.Elite))
+    {
+      suffix = " Elite";
+    }
+    else
+    {
+      suffix = " Unit";
+    }
+
+    tooltipBuilder.AppendLine($"{RolePrefix}{objectInfo.Categories.ToFriendlyString()}{suffix}|r");
+  }
+
+  private static void AppendObjectEditorTooltip(StringBuilder tooltipBuilder, Unit unit)
+  {
+    tooltipBuilder.AppendLine(unit.TextTooltipExtended);
   }
 
   private static void AppendInnateAbilities(StringBuilder tooltipBuilder, Unit unit)
@@ -216,15 +262,9 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
   }
 
-  private void AppendObjectLimit(StringBuilder tooltipBuilder, Unit unit)
+  private void AppendObjectLimit(StringBuilder tooltipBuilder, Unit unit, ObjectInfo objectLimit)
   {
     if (unit.IsAbilitiesHeroModified && unit.AbilitiesHero.Any())
-    {
-      return;
-    }
-
-    var unitId = (unit.NewId != 0 ? unit.NewId : unit.OldId).InvertEndianness();
-    if (!_objectInfoRepository.TryGetObjectInfo(unitId, out var objectLimit))
     {
       return;
     }
