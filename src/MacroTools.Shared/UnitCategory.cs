@@ -36,3 +36,83 @@ public enum UnitCategory
   Tank,
   Assassin
 }
+
+public static class UnitCategoryExtensions
+{
+  public static string ToFriendlyString(this UnitCategory category)
+  {
+    switch (category)
+    {
+      case UnitCategory.TownHall:
+        return "Town Hall";
+      case UnitCategory.GilneasManor:
+        return "Gilneas Manor";
+      case UnitCategory.Shipyard:
+        return "Shipyard";
+      case UnitCategory.LightHouse:
+        return "Lighthouse";
+      case UnitCategory.Farm:
+        return "Farm";
+      case UnitCategory.Altar:
+        return "Altar";
+      case UnitCategory.Specialist:
+        return "Specialist Production";
+      case UnitCategory.Waygate:
+        return "Waygate";
+      case UnitCategory.SiegeWorkshop:
+        return "Siege Production";
+      case UnitCategory.Barracks:
+        return "Troop Production";
+      case UnitCategory.Research:
+        return "Research";
+      case UnitCategory.Magic:
+        return "Caster Production";
+      case UnitCategory.Tower:
+        return "Defensive Tower";
+      case UnitCategory.Shop:
+        return "Shop";
+      case UnitCategory.Teleport:
+        return "Teleport";
+      case UnitCategory.FlyingBuilding:
+        return "Flyer Production";
+      case UnitCategory.Worker:
+        return "Worker";
+      case UnitCategory.Elite:
+        return string.Empty;
+      case UnitCategory.Support:
+        return "Support";
+      case UnitCategory.Marksman:
+        return "Marksman";
+      case UnitCategory.Fighter:
+        return "Fighter";
+      case UnitCategory.Flyer:
+        return "Flying";
+      case UnitCategory.Siege:
+        return "Siege";
+      case UnitCategory.Destroyer:
+        return "Destroyer";
+      case UnitCategory.Tank:
+        return "Tank";
+      case UnitCategory.Assassin:
+        return "Assassin";
+    }
+
+    return category.ToString();
+  }
+
+  public static string ToFriendlyString(this List<UnitCategory> categories)
+  {
+    var parts = new List<string>(categories.Count);
+
+    foreach (var category in categories)
+    {
+      var categoryName = category.ToFriendlyString();
+      if (!string.IsNullOrEmpty(categoryName))
+      {
+        parts.Add(categoryName);
+      }
+    }
+
+    return string.Join("/", parts);
+  }
+}
