@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.Shared;
 using MacroTools.Systems;
 
 namespace MacroTools.FactionSystem;
@@ -28,16 +28,18 @@ public static class UnitExtensions
       throw new InvalidOperationException($"{whichUnit.Name} doesn't have a registered {nameof(UnitType)}.");
     }
 
-    if (unitType.Category == UnitCategory.None)
+    if (unitType.Categories.Count == 0)
     {
-      throw new InvalidOperationException($"{whichUnit.Name} doesn't have a category.");
+      throw new InvalidOperationException($"{whichUnit.Name} doesn't have any categories.");
     }
 
-    if (!newFaction.TryGetObjectByCategory(unitType.Category, out var newUnitType))
+    var firstCategory = unitType.Categories.First();
+    if (!newFaction.TryGetObjectByCategory(firstCategory, out var newUnitTypes))
     {
-      throw new InvalidOperationException($"{whichUnit.Name} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {unitType.Category}.");
+      throw new InvalidOperationException($"{whichUnit.Name} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {firstCategory}.");
     }
 
+    var newUnitType = newUnitTypes.First();
     if (whichUnit.UnitType == newUnitType)
     {
       return whichUnit;

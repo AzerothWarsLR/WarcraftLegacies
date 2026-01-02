@@ -6,8 +6,6 @@
 /// </summary>
 public enum UnitCategory
 {
-  None,
-
   TownHall,
 
   Worker,

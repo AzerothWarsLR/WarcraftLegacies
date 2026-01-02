@@ -18,7 +18,7 @@ public static class ShipyardBanZones
   {
     foreach (var unitType in UnitType.GetAll())
     {
-      if (unitType.Category == UnitCategory.Shipyard)
+      if (unitType.Categories.Contains(UnitCategory.Shipyard))
       {
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, () =>
         {

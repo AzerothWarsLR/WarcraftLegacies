@@ -33,9 +33,9 @@ public sealed class UnitType
   public bool NeverDelete { internal get; init; }
 
   /// <summary>
-  /// An arbitrary category, like "Shipyard" or "Shop".
+  /// Arbitrary categories, like "Shipyard" or "Shop".
   /// </summary>
-  public UnitCategory Category { get; init; } = UnitCategory.None;
+  public List<UnitCategory> Categories { get; init; } = new();
 
   /// <summary>
   /// Gets the <see cref="UnitType"/> of the provided unit.

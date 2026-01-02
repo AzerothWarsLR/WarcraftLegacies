@@ -10,18 +10,34 @@ public sealed class ObjectInfo
   public int Limit { get; }
 
   /// <summary>
-  /// The arbitrary category the object is assigned to, if any.
+  /// The arbitrary categories the object is assigned to, if any.
   /// </summary>
-  public UnitCategory Category { get; }
+  public List<UnitCategory> Categories { get; }
 
   /// <summary>
   /// If set, indicates to the player how the object's limit can be changed in-game.
   /// </summary>
   public string? LimitIncreaseHint { get; }
 
-  public ObjectInfo(int objectTypeId, int limit, UnitCategory category = UnitCategory.None, string? limitIncreaseHint = null)
+  public ObjectInfo(int objectTypeId, int limit, List<UnitCategory> categories, string? limitIncreaseHint = null)
   {
-    Category = category;
+    Categories = categories;
+    ObjectTypeId = objectTypeId;
+    Limit = limit;
+    LimitIncreaseHint = limitIncreaseHint;
+  }
+
+  public ObjectInfo(int objectTypeId, int limit, UnitCategory category, string? limitIncreaseHint = null)
+  {
+    Categories = new List<UnitCategory> { category };
+    ObjectTypeId = objectTypeId;
+    Limit = limit;
+    LimitIncreaseHint = limitIncreaseHint;
+  }
+
+  public ObjectInfo(int objectTypeId, int limit, string? limitIncreaseHint = null)
+  {
+    Categories = new List<UnitCategory>();
     ObjectTypeId = objectTypeId;
     Limit = limit;
     LimitIncreaseHint = limitIncreaseHint;

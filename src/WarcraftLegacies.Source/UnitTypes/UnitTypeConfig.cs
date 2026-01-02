@@ -22,7 +22,7 @@ public static class UnitTypeConfig
     {
       UnitType.Register(new UnitType(objectInfo.ObjectTypeId)
       {
-        Category = objectInfo.Category
+        Categories = objectInfo.Categories
       });
     }
   }
