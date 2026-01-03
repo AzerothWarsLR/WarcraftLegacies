@@ -35,7 +35,10 @@ public enum UnitCategory
   Destroyer,
   Tank,
   Assassin,
-  Summoner
+  Summoner,
+  AntiMage,
+  AntiAir,
+  Unique
 }
 
 public static class UnitCategoryExtensions
@@ -98,6 +101,12 @@ public static class UnitCategoryExtensions
         return "Assassin";
       case UnitCategory.Summoner:
         return "Summoner";
+      case UnitCategory.AntiMage:
+        return "Anti-mage";
+      case UnitCategory.AntiAir:
+        return "Anti-air";
+      case UnitCategory.Unique:
+        return "Unique";
     }
 
     return category.ToString();
