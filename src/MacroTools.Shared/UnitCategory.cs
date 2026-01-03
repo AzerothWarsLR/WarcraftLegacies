@@ -10,7 +10,7 @@ public enum UnitCategory
   TownHall,
   GilneasManor,
   Shipyard,
-  LightHouse,
+  Lighthouse,
   Farm,
   Altar,
   Specialist,
@@ -54,7 +54,7 @@ public static class UnitCategoryExtensions
         return "Gilneas Manor";
       case UnitCategory.Shipyard:
         return "Shipyard";
-      case UnitCategory.LightHouse:
+      case UnitCategory.Lighthouse:
         return "Lighthouse";
       case UnitCategory.Farm:
         return "Farm";

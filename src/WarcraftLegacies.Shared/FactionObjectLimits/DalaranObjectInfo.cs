@@ -13,7 +13,7 @@ public static class DalaranObjectInfo
     yield return new(UNIT_H066_CONCLAVE_DALARAN_T2, Unlimited, TownHall);
     yield return new(UNIT_H068_OBSERVATORY_DALARAN_T3, Unlimited, TownHall);
     yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, GilneasManor);
-    yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, LightHouse);
+    yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, Lighthouse);
     yield return new(UNIT_H063_ARCANE_WELL_DALARAN_FARM, Unlimited, Farm);
     yield return new(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Unlimited, Farm);
     yield return new(UNIT_H05P_DALARAN_BUILDING_DALARAN_OTHER_1, Unlimited, Farm);
