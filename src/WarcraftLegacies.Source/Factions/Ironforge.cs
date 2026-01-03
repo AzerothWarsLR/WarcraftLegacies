@@ -137,7 +137,7 @@ public sealed class Ironforge : Faction
   var questExpedition = new QuestExpedition(
     missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
 
-  questExpedition.AddObjective(new ObjectiveTime( 2 * 60)
+  questExpedition.AddObjective(new ObjectiveTime( 15 * 60)
   {
     Progress = QuestProgress.Undiscovered,
     ShowsInQuestLog = false,
