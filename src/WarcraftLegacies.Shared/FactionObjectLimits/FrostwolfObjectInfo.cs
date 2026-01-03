@@ -63,8 +63,8 @@ public static class FrostwolfObjectInfo
     yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
 
-    yield return new(UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI, 1, new List<UnitCategory> { Destroyer, Support });
-    yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF, 1, Destroyer);
+    yield return new(UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI, 1, new List<UnitCategory> { Destroyer, Support, Summoner });
+    yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF, 1, new List<UnitCategory> { Destroyer, Summoner });
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF, 1, new List<UnitCategory> { Tank, Support });
     yield return new(UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF, 1, new List<UnitCategory> { Support });
     yield return new(UNIT_OREX_BEASTMASTER_FROSTWOLF, 1, Tank);
