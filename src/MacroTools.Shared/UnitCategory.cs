@@ -38,7 +38,8 @@ public enum UnitCategory
   Summoner,
   AntiMage,
   AntiAir,
-  Unique
+  Unique,
+  Scout
 }
 
 public static class UnitCategoryExtensions
@@ -107,6 +108,8 @@ public static class UnitCategoryExtensions
         return "Anti-air";
       case UnitCategory.Unique:
         return "Unique";
+      case UnitCategory.Scout:
+        return "Scout";
     }
 
     return category.ToString();
