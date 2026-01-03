@@ -178,7 +178,12 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 
   private void DeleteOutputDirectory()
   {
-    if (options.ShouldBackup && Directory.Exists(options.W3XFolderPath))
+    if (!Directory.Exists(options.W3XFolderPath))
+    {
+      return;
+    }
+
+    if (options.ShouldBackup)
     {
       BackupFiles(options.BackupPath, options.W3XFolderPath);
     }
