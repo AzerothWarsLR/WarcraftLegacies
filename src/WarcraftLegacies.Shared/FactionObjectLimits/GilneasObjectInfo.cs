@@ -13,7 +13,7 @@ public static class GilneasObjectInfo
     yield return new(UNIT_H023_GILNEAS_T2, Unlimited, TownHall);
     yield return new(UNIT_H02C_CASTLE_GILNEAS_T3, Unlimited, TownHall);
     yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, GilneasManor);
-    yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, LightHouse);
+    yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, Lighthouse);
     yield return new(UNIT_H02F_HOUSEHOLD_GILNEAS_FARM, Unlimited, Farm);
     yield return new(UNIT_H01T_INN_LORDAERON_OTHER, Unlimited, Farm);
     yield return new(UNIT_H05P_DALARAN_BUILDING_DALARAN_OTHER_1, Unlimited, Farm);
