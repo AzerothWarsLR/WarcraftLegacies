@@ -24,6 +24,8 @@ public sealed class QuestGnomeregan : QuestData
     "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
     @"ReplaceableTextures\CommandButtons\BTNFlyingMachine.blp")
   {
+    Knowledge = 5;
+
     AddObjective(new ObjectiveHostilesInAreaAreDead(new[] { Regions.Gnomergan }, "near Gnomeregan"));
     AddObjective(new ObjectiveExpire(480, Title));
     AddObjective(new ObjectiveSelfExists());

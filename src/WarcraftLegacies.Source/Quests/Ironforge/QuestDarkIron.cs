@@ -23,9 +23,10 @@ public sealed class QuestDarkIron : QuestData
     "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.",
     @"ReplaceableTextures\CommandButtons\BTNRPGDarkIron.blp")
   {
+    Knowledge = 25;
+
     AddObjective(new ObjectiveCapitalDead(blackTemple));
-    AddObjective(new ObjectiveLegendInRect(magni, shadowforgeCity,
-      "Shadowforge City"));
+    AddObjective(new ObjectiveLegendInRect(magni, shadowforgeCity, "Shadowforge City"));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
     _rescueUnits = shadowforgeCity.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

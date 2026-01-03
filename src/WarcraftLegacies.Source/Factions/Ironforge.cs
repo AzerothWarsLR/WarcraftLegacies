@@ -1,6 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
@@ -16,7 +20,6 @@ public sealed class Ironforge : Faction
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-
   public Ironforge(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     : base("Ironforge", playercolor.Yellow, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
@@ -65,14 +68,62 @@ public sealed class Ironforge : Faction
 
   private void RegisterQuests()
   {
-    var questThelsamar = AddQuest(new QuestThelsamar(Regions.ThelUnlock));
+    var questThelsamar = new QuestThelsamar(Regions.ThelUnlock);
     StartingQuest = questThelsamar;
-    var questDunMorogh = AddQuest(new QuestDunMorogh());
-    AddQuest(new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh));
-    AddQuest(new QuestGnomeregan(Regions.Gnomergan));
-    AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
-    AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(questThelsamar);
+
+    var questDunMorogh = new QuestDunMorogh();
+    questDunMorogh.AddObjective(new ObjectiveQuestComplete(questThelsamar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questDunMorogh);
+
+    var questDominion = new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh);
+    questDominion.AddObjective(new ObjectiveQuestComplete(questThelsamar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questDominion);
+
+    var questGnomeregan = new QuestGnomeregan(Regions.Gnomergan);
+    questGnomeregan.AddObjective(new ObjectiveQuestComplete(questDunMorogh)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questGnomeregan);
+
+    var questWildhammer = new QuestWildhammer(_allLegendSetup.Ironforge.Magni)
+    {
+      Progress = QuestProgress.Undiscovered
+    };
+    AddQuest(questWildhammer);
+
+    questWildhammer.AddObjective(new ObjectiveControlLegend(_allLegendSetup.Ironforge.Magni, false)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+
+    var questDarkIron = new QuestDarkIron(
+      Regions.Shadowforge_City,
+      _allLegendSetup.FelHorde.BlackTemple,
+      _allLegendSetup.Ironforge.Magni);
+
+    questDarkIron.AddObjective(new ObjectiveQuestComplete(questDominion)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questDarkIron);
 
     var missingArtifacts = new int[]
     {
@@ -81,8 +132,23 @@ public sealed class Ironforge : Faction
       ITEM_I00Z_THUNDERFURY,
       ITEM_I01T_FANDRAL_S_FLAMESCYTHE
     };
-    AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
+
+    var questExpedition = new QuestExpedition(
+      missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
+
+    questExpedition.AddObjective(new ObjectiveTime(15 * 60)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questExpedition);
+
+    AddQuest(new QuestExtractSunwellVial(
+      _allLegendSetup.Quelthalas.Sunwell,
+      _artifactSetup.SunwellVial));
   }
+
 
   private void RegisterStormwindResearches(Stormwind stormwind)
   {

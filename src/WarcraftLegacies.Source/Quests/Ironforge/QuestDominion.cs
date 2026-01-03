@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
@@ -19,13 +18,13 @@ public sealed class QuestDominion : QuestData
     "The Dwarven Dominion must be established before Ironforge can join the war.",
     @"ReplaceableTextures\CommandButtons\BTNDwarvenFortress.blp")
   {
+    Knowledge = 10;
+
     foreach (var prerequisite in prerequisites)
     {
       AddObjective(new ObjectiveQuestComplete(prerequisite));
     }
 
-    AddObjective(new ObjectiveControlPoint(UNIT_N017_DUN_MODR));
-    AddObjective(new ObjectiveControlPoint(UNIT_N014_DUN_MOROGH));
     AddObjective(new ObjectiveUpgrade(UNIT_H07G_GREAT_HOLD_IRONFORGE_T3,
       UNIT_H07E_MINING_COLONY_IRONFORGE_T1));
     AddObjective(new ObjectiveExpire(1462, Title));

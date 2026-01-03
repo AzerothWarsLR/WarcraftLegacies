@@ -22,6 +22,8 @@ public sealed class QuestWildhammer : QuestData
     "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.",
     @"ReplaceableTextures\CommandButtons\BTNHeroGriffonWarrior.blp")
   {
+    Knowledge = 20;
+
     AddObjective(new ObjectiveLegendInRect(magni, Regions.Aerie_Peak, "Aerie Peak"));
     AddObjective(new ObjectiveTime(900));
     ResearchId = UPGRADE_R01C_QUEST_COMPLETED_WILDHAMMER_ALLIANCE;
