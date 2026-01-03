@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
@@ -66,79 +67,88 @@ public sealed class Ironforge : Faction
   }
 
   private void RegisterQuests()
+{
+  var questThelsamar = new QuestThelsamar(Regions.ThelUnlock);
+  StartingQuest = questThelsamar;
+  AddQuest(questThelsamar);
+
+  var questDunMorogh = new QuestDunMorogh();
+  questDunMorogh.AddObjective(new ObjectiveQuestComplete(questThelsamar)
   {
-    var questThelsamar = new QuestThelsamar(Regions.ThelUnlock);
-    StartingQuest = questThelsamar;
-    AddQuest(questThelsamar);
+    Progress = QuestProgress.Undiscovered,
+    ShowsInQuestLog = false,
+    ShowsInPopups = false
+  });
+  AddQuest(questDunMorogh);
 
-    var questDunMorogh = new QuestDunMorogh();
-    questDunMorogh.AddObjective(new ObjectiveQuestComplete(questThelsamar)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInQuestLog = false,
-      ShowsInPopups = false
-    });
-    AddQuest(questDunMorogh);
+  var questDominion = new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh);
 
-    var questDominion = new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh);
-    questDominion.AddObjective(new ObjectiveQuestComplete(questThelsamar)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInQuestLog = false,
-      ShowsInPopups = false
-    });
-    AddQuest(questDominion);
+  questDominion.AddObjective(new ObjectiveQuestComplete(questThelsamar)
+  {
+    Progress = QuestProgress.Undiscovered,
+    ShowsInQuestLog = false,
+    ShowsInPopups = false
+  });
+  AddQuest(questDominion);
 
-    var questGnomeregan = new QuestGnomeregan(Regions.Gnomergan);
-    questGnomeregan.AddObjective(new ObjectiveQuestComplete(questDunMorogh)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInQuestLog = false,
-      ShowsInPopups = false
-    });
-    AddQuest(questGnomeregan);
+  var questGnomeregan = new QuestGnomeregan(Regions.Gnomergan);
+  questGnomeregan.AddObjective(new ObjectiveQuestComplete(questDunMorogh)
+  {
+    Progress = QuestProgress.Undiscovered,
+    ShowsInQuestLog = false,
+    ShowsInPopups = false
+  });
+  AddQuest(questGnomeregan);
 
-    var questWildhammer = new QuestWildhammer(_allLegendSetup.Ironforge.Magni)
-    {
-      Progress = QuestProgress.Undiscovered
-    };
-    AddQuest(questWildhammer);
+  var questWildhammer = new QuestWildhammer(_allLegendSetup.Ironforge.Magni)
+  {
+    Progress = QuestProgress.Undiscovered
+  };
+  AddQuest(questWildhammer);
 
+  questWildhammer.AddObjective(new ObjectiveControlLegend(_allLegendSetup.Ironforge.Magni, false)
+  {
+    Progress = QuestProgress.Undiscovered,
+    ShowsInQuestLog = false,
+    ShowsInPopups = false
+  });
 
-    questWildhammer.AddObjective(new ObjectiveControlLegend(_allLegendSetup.Ironforge.Magni, false)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInQuestLog = false,
-      ShowsInPopups = false
-    });
+  var questDarkIron = new QuestDarkIron(
+    Regions.Shadowforge_City,
+    _allLegendSetup.FelHorde.BlackTemple,
+    _allLegendSetup.Ironforge.Magni);
 
-    var questDarkIron = new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni);
-    questDarkIron.AddObjective(new ObjectiveCapitalDead(_allLegendSetup.FelHorde.BlackTemple)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInQuestLog = false,
-      ShowsInPopups = false
-    });
-    AddQuest(questDarkIron);
+  questDarkIron.AddObjective(new ObjectiveQuestComplete(questDominion)
+  {
+    Progress = QuestProgress.Undiscovered,
+    ShowsInQuestLog = false,
+    ShowsInPopups = false
+  });
+  AddQuest(questDarkIron);
 
-    var missingArtifacts = new int[]
-    {
-      ITEM_I01A_DEMON_SOUL,
-      ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
-      ITEM_I00Z_THUNDERFURY,
-      ITEM_I01T_FANDRAL_S_FLAMESCYTHE
-    };
-    var questExpedition = new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
-    questExpedition.AddObjective(new ObjectiveQuestComplete(questDominion)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInQuestLog = false,
-      ShowsInPopups = false
-    });
-    AddQuest(questExpedition);
+  var missingArtifacts = new int[]
+  {
+    ITEM_I01A_DEMON_SOUL,
+    ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
+    ITEM_I00Z_THUNDERFURY,
+    ITEM_I01T_FANDRAL_S_FLAMESCYTHE
+  };
 
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
-  }
+  var questExpedition = new QuestExpedition(
+    missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
+
+  questExpedition.AddObjective(new ObjectiveTime( 2 * 60)
+  {
+    Progress = QuestProgress.Undiscovered,
+    ShowsInQuestLog = false,
+    ShowsInPopups = false
+  });
+  AddQuest(questExpedition);
+
+  AddQuest(new QuestExtractSunwellVial(
+    _allLegendSetup.Quelthalas.Sunwell,
+    _artifactSetup.SunwellVial));
+}
 
   private void RegisterStormwindResearches(Stormwind stormwind)
   {
