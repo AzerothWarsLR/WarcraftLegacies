@@ -69,5 +69,17 @@ public static class QuelthalasSpellSetup
         ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
       }
     }, UNIT_H00Q_KING_OF_QUEL_THALAS_QUELTHALAS);
+
+    SpellRegistry.Register(new ChainManaBurn(ABILITY_ZBCM_CHAIN_MANA_BURN_ROMMATH)
+    {
+      ManaBurned = new LeveledAbilityField<int>
+      {
+        Base = 100,
+        PerLevel = 100
+      },
+      MaximumBounces = 7,
+      BurnReductionPerBounce = 0.1f,
+      MaximumBounceRadius = 500
+    });
   }
 }
