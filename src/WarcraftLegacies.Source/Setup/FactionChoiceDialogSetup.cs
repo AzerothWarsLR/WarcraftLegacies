@@ -5,19 +5,17 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class FactionChoiceDialogSetup
 {
-  public static void Setup(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+  public static void Setup(AllLegendSetup allLegendSetup)
   {
     var illidari = new FactionChoice
     {
-      Faction = new Illidari(allLegendSetup,
-        artifactSetup),
+      Faction = new Illidari(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Basic,
       StartingArea = Regions.IllidanStartingPosition
     };
     var sunfury = new FactionChoice
     {
-      Faction = new Sunfury(allLegendSetup,
-        artifactSetup),
+      Faction = new Sunfury(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Advanced,
       StartingArea = Regions.SunfuryStartingPosition
     };
@@ -25,15 +23,13 @@ public static class FactionChoiceDialogSetup
 
     var dalaran = new FactionChoice
     {
-      Faction = new Dalaran(artifactSetup,
-        allLegendSetup),
+      Faction = new Dalaran(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Basic,
       StartingArea = Regions.DalaStartPos
     };
     var gilneas = new FactionChoice
     {
-      Faction = new Gilneas(artifactSetup,
-        allLegendSetup),
+      Faction = new Gilneas(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Advanced,
       StartingArea = Regions.DalaStartPos,
       RequiresCheats = false
@@ -42,16 +38,14 @@ public static class FactionChoiceDialogSetup
 
     var sentinels = new FactionChoice
     {
-      Faction = new Sentinels(allLegendSetup,
-        artifactSetup),
+      Faction = new Sentinels(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Basic,
       StartingArea = Regions.SentDraeSharedStartPos
     };
     var draenei = new FactionChoice
 
     {
-      Faction = new Draenei(allLegendSetup,
-        artifactSetup),
+      Faction = new Draenei(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Advanced,
       StartingArea = Regions.SentDraeSharedStartPos,
       RequiresCheats = false
@@ -59,16 +53,14 @@ public static class FactionChoiceDialogSetup
     new FactionChoiceDialogPresenter(sentinels, draenei).Run(player.Create(18));
     var frostwolf = new FactionChoice
     {
-      Faction = new Frostwolf(allLegendSetup,
-        artifactSetup),
+      Faction = new Frostwolf(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Basic,
       StartingArea = Regions.FrostwolfStartPos
     };
     var warsong = new FactionChoice
 
     {
-      Faction = new Warsong(allLegendSetup,
-        artifactSetup),
+      Faction = new Warsong(allLegendSetup),
       Difficulty = FactionLearningDifficulty.Advanced,
       StartingArea = Regions.FrostwolfStartPos,
       RequiresCheats = false

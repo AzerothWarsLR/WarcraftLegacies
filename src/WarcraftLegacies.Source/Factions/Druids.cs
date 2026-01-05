@@ -18,16 +18,14 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Druids : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Druids(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
+  public Druids(AllLegendSetup allLegendSetup) :
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R06E");
     StartingGold = 200;
     CinematicMusic = "DarkAgents";
@@ -65,7 +63,7 @@ public sealed class Druids : Faction
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
-      _allLegendSetup.Druids.Nordrassil.Unit, _artifactSetup.HornOfCenarius,
+      _allLegendSetup.Druids.Nordrassil.Unit, Artifacts.HornOfCenarius,
       _allLegendSetup.Druids.Malfurion));
     StartingQuest = newQuest;
     AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
@@ -75,7 +73,7 @@ public sealed class Druids : Faction
     AddQuest(new QuestDruidsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
     AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
     AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()

@@ -20,16 +20,14 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Dalaran : Faction
 {
-  private readonly ArtifactSetup _artifactSetup;
   private readonly AllLegendSetup _allLegendSetup;
   private readonly List<unit> _dalaranProtectors;
 
   /// <inheritdoc />
-  public Dalaran(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+  public Dalaran(AllLegendSetup allLegendSetup)
     : base("Dalaran", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _artifactSetup = artifactSetup;
     _allLegendSetup = allLegendSetup;
     _dalaranProtectors = new List<unit>
     {
@@ -99,7 +97,7 @@ public sealed class Dalaran : Faction
     AddQuest(new QuestDalaran(Regions.Dalaran));
     AddQuest(new QuestGilneas(Regions.Gilneas));
 
-    QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
+    QuestNewGuardian newGuardian = new(Artifacts.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
       _allLegendSetup.Dalaran.Dalaran);
     QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
     QuestTheNexus theNexus = new(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Dalaran, _allLegendSetup.Neutral.TheNexus);
@@ -127,7 +125,7 @@ public sealed class Dalaran : Faction
   private void RegisterBookOfMedivhQuest(Legion legion)
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
-      new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), _artifactSetup.BookOfMedivh,
+      new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), Artifacts.BookOfMedivh,
       faction == legion, faction == this));
   }
 

@@ -17,15 +17,13 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Ironforge : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Ironforge(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Ironforge(AllLegendSetup allLegendSetup)
     : base("Ironforge", playercolor.Yellow, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R05T");
     StartingGold = 200;
     CinematicMusic = "PursuitTheme";
@@ -146,7 +144,7 @@ public sealed class Ironforge : Faction
 
     AddQuest(new QuestExtractSunwellVial(
       _allLegendSetup.Quelthalas.Sunwell,
-      _artifactSetup.SunwellVial));
+      Artifacts.SunwellVial));
   }
 
 

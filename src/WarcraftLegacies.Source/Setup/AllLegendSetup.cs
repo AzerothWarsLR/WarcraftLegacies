@@ -103,7 +103,7 @@ public sealed class AllLegendSetup
   /// <summary>
   /// Initializes a new instance of the <see cref="AllLegendSetup"/> class.
   /// </summary>
-  public AllLegendSetup(ArtifactSetup artifactSetup)
+  public AllLegendSetup()
   {
     Dalaran = new LegendDalaran();
     Draenei = new LegendDraenei();
@@ -113,7 +113,7 @@ public sealed class AllLegendSetup
     Ironforge = new LegendIronforge();
     Kultiras = new LegendKultiras();
     Legion = new LegendLegion();
-    Lordaeron = new LegendLordaeron(artifactSetup);
+    Lordaeron = new LegendLordaeron();
     Naga = new LegendIllidan();
     Quelthalas = new LegendQuelthalas();
     Scourge = new LegendScourge();

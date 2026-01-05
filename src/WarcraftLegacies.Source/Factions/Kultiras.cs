@@ -14,16 +14,14 @@ public sealed class Kultiras : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
   private readonly unit _proudmooreCapitalShip;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Kultiras(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Kultiras(AllLegendSetup allLegendSetup)
     : base("Kul'tiras", playercolor.Emerald, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     _proudmooreCapitalShip = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
@@ -64,7 +62,7 @@ public sealed class Kultiras : Faction
     AddQuest(new QuestHighBank(Regions.HighbankUnlock, _allLegendSetup.Kultiras.LegendKatherine));
     AddQuest(new QuestBeyondPortal(_allLegendSetup.FelHorde.HellfireCitadel,
       _allLegendSetup.FelHorde.KilsorrowFortress));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue(Frostwolf frostwolf)

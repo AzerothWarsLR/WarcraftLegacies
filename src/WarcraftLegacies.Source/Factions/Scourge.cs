@@ -22,16 +22,14 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Scourge : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Scourge(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Scourge(AllLegendSetup allLegendSetup)
     : base("Scourge", playercolor.Purple, @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R05K_SCOURGE_EXISTS;
     StartingGold = 200;
     FoodMaximum = 250;
@@ -115,7 +113,7 @@ public sealed class Scourge : Faction
 
     QuestLichKingArthas questLichKingArthas =
       new(PreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
-        _artifactSetup.HelmOfDomination,
+        Artifacts.HelmOfDomination,
         _allLegendSetup.Scourge.Arthas,
         _allLegendSetup.Scourge.TheFrozenThrone);
     QuestSlumberingKing questSlumberingKing = new();
@@ -374,7 +372,7 @@ public sealed class Scourge : Faction
   private void RegisterQuelthalasRelatedQuests(Quelthalas quelthalas)
   {
     var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell,
-      _allLegendSetup.Scourge.Kelthuzad, quelthalas, _artifactSetup.SunwellVial));
+      _allLegendSetup.Scourge.Kelthuzad, quelthalas, Artifacts.SunwellVial));
     AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
   }
 

@@ -24,7 +24,7 @@ public sealed class LegendLordaeron
   /// <summary>
   /// Sets up all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public LegendLordaeron(ArtifactSetup artifactSetup)
+  public LegendLordaeron()
   {
     Terenas = new LegendaryHero("Terenas Menethil")
     {
@@ -34,9 +34,9 @@ public sealed class LegendLordaeron
     deathTrigger.RegisterUnitEvent(Terenas.Unit, unitevent.Death);
     deathTrigger.AddAction(() =>
     {
-      if (artifactSetup.CrownOfLordaeron.OwningUnit == Terenas.Unit)
+      if (Artifacts.CrownOfLordaeron.OwningUnit == Terenas.Unit)
       {
-        artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
+        Artifacts.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
       }
     });
 

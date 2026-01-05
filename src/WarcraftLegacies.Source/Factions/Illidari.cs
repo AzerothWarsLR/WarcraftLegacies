@@ -19,15 +19,13 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Illidari : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", playercolor.Violet,
+  public Illidari(AllLegendSetup allLegendSetup) : base("Illidan", playercolor.Violet,
     @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
     StartingGold = 200;
     FoodMaximum = 250;
@@ -97,8 +95,8 @@ public sealed class Illidari : Faction
     AddQuest(questLostOnes);
 
     AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
-    AddQuest(new QuestEyeofSargeras(_artifactSetup.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestEyeofSargeras(Artifacts.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()

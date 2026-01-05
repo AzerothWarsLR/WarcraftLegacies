@@ -4,9 +4,9 @@ using MacroTools.PreplacedWidgetsSystem;
 namespace WarcraftLegacies.Source.Setup;
 
 /// <summary>
-/// Responsible for setting up and storing all <see cref="Artifact"/>s.
+/// Initializes and maintains references to all <see cref="Artifact"/>s.
 /// </summary>
-public sealed class ArtifactSetup
+public static class Artifacts
 {
   private const float DummyX = 20195;
   private const float DummyY = 24177;
@@ -14,80 +14,76 @@ public sealed class ArtifactSetup
   /// <summary>
   /// The Crown of Stormwind.
   /// </summary>
-  public Artifact CrownOfStormwind { get; }
+  public static Artifact CrownOfStormwind { get; }
 
   /// <summary>
   /// The Scarab Gong.
   /// </summary>
-  public Artifact ScarabGong { get; }
+  public static Artifact ScarabGong { get; }
 
   /// <summary>
   /// The Crown of Lordaeron.
   /// </summary>
-  public Artifact CrownOfLordaeron { get; }
+  public static Artifact CrownOfLordaeron { get; }
 
   /// <summary>
   /// The Helm of Domination worn by the Lich King.
   /// </summary>
-  public Artifact HelmOfDomination { get; }
+  public static Artifact HelmOfDomination { get; }
 
   /// <summary>
   /// Azshara's Scepter.
   /// </summary>
-  public Artifact ScepterOfTheQueen { get; }
+  public static Artifact ScepterOfTheQueen { get; }
 
   /// <summary>
   /// Powerful tome left behind by the Guardian Medivh.
   /// </summary>
-  public Artifact BookOfMedivh { get; }
+  public static Artifact BookOfMedivh { get; }
 
   /// <summary>
   /// Essence of a powerful voidlord.
   /// </summary>
-  public Artifact EssenceofMurmur { get; }
+  public static Artifact EssenceofMurmur { get; }
 
   /// <summary>
   /// Horn that can be used to call a bunch of wisps.
   /// </summary>
-  public Artifact HornOfCenarius { get; }
+  public static Artifact HornOfCenarius { get; }
 
   /// <summary>
   /// A remnant of the Titan Sargeras.
   /// </summary>
-  public Artifact EyeOfSargeras { get; }
+  public static Artifact EyeOfSargeras { get; }
 
   /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
-  public Artifact AzureFragment { get; }
+  public static Artifact AzureFragment { get; }
 
   /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
-  public Artifact EmeraldFragment { get; }
+  public static Artifact EmeraldFragment { get; }
 
   /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
-  public Artifact RubyFragment { get; }
+  public static Artifact RubyFragment { get; }
 
   /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
-  public Artifact ObsidianFragment { get; }
+  public static Artifact ObsidianFragment { get; }
 
   /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
-  public Artifact BronzeFragment { get; }
+  public static Artifact BronzeFragment { get; }
 
-  public Artifact SunwellVial { get; set; }
+  public static Artifact SunwellVial { get; }
 
-
-  /// <summary>
-  /// Sets up <see cref="ArtifactSetup"/>.
-  /// </summary>
-  public ArtifactSetup()
+  static Artifacts()
   {
     CrownOfStormwind = new Artifact(item.Create(FourCC("I002"), DummyX, DummyY));
     PreplacedWidgets.Units.Get(UNIT_N021_HOGGER).AddItem(CrownOfStormwind.Item);
@@ -178,5 +174,10 @@ public sealed class ArtifactSetup
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(SunwellVial.Item);
     ArtifactManager.Register(SunwellVial);
+  }
+
+  public static void Setup()
+  {
+    // No-op used to force execution of the static constructor.
   }
 }
