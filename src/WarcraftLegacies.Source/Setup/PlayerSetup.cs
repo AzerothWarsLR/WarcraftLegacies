@@ -5,33 +5,26 @@ using WarcraftLegacies.Source.Factions;
 
 namespace WarcraftLegacies.Source.Setup;
 
-public sealed class PlayerSetup
+public static class PlayerSetup
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
-  public PlayerSetup(AllLegendSetup allLegendSetup)
+  public static void Setup()
   {
-    _allLegendSetup = allLegendSetup;
-  }
-
-  public void Setup()
-  {
-    SetupPlayer(player.Create(1), new Stormwind(_allLegendSetup));
-    SetupPlayer(player.Create(2), new Quelthalas(_allLegendSetup));
-    SetupPlayer(player.Create(3), new Scourge(_allLegendSetup));
-    SetupPlayer(player.Create(4), new Ironforge(_allLegendSetup));
-    SetupPlayer(player.Create(6), new FelHorde(_allLegendSetup));
+    SetupPlayer(player.Create(1), new Stormwind());
+    SetupPlayer(player.Create(2), new Quelthalas());
+    SetupPlayer(player.Create(3), new Scourge());
+    SetupPlayer(player.Create(4), new Ironforge());
+    SetupPlayer(player.Create(6), new FelHorde());
     player.Create(7).GetPlayerData().SetTeam(TeamSetup.NorthAlliance);
     player.Create(0).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
-    SetupPlayer(player.Create(8), new Skywall(_allLegendSetup));
-    SetupPlayer(player.Create(9), new Lordaeron(_allLegendSetup));
-    SetupPlayer(player.Create(11), new Druids(_allLegendSetup));
-    SetupPlayer(player.Create(12), new BlackEmpire(_allLegendSetup));
-    SetupPlayer(player.Create(16), new Ahnqiraj(_allLegendSetup));
+    SetupPlayer(player.Create(8), new Skywall());
+    SetupPlayer(player.Create(9), new Lordaeron());
+    SetupPlayer(player.Create(11), new Druids());
+    SetupPlayer(player.Create(12), new BlackEmpire());
+    SetupPlayer(player.Create(16), new Ahnqiraj());
     player.Create(18).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
     player.Create(15).GetPlayerData().SetTeam(TeamSetup.Outland);
-    SetupPlayer(player.Create(22), new Kultiras(_allLegendSetup));
-    SetupPlayer(player.Create(23), new Legion(_allLegendSetup));
+    SetupPlayer(player.Create(22), new Kultiras());
+    SetupPlayer(player.Create(23), new Legion());
   }
 
 

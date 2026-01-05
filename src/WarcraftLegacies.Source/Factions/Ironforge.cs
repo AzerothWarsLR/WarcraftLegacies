@@ -16,14 +16,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Ironforge : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public Ironforge(AllLegendSetup allLegendSetup)
+  public Ironforge()
     : base("Ironforge", playercolor.Yellow, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = FourCC("R05T");
     StartingGold = 200;
     CinematicMusic = "PursuitTheme";
@@ -97,13 +94,13 @@ public sealed class Ironforge : Faction
     });
     AddQuest(questGnomeregan);
 
-    var questWildhammer = new QuestWildhammer(_allLegendSetup.Ironforge.Magni)
+    var questWildhammer = new QuestWildhammer(AllLegends.Ironforge.Magni)
     {
       Progress = QuestProgress.Undiscovered
     };
     AddQuest(questWildhammer);
 
-    questWildhammer.AddObjective(new ObjectiveControlLegend(_allLegendSetup.Ironforge.Magni, false)
+    questWildhammer.AddObjective(new ObjectiveControlLegend(AllLegends.Ironforge.Magni, false)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,
@@ -112,8 +109,8 @@ public sealed class Ironforge : Faction
 
     var questDarkIron = new QuestDarkIron(
       Regions.Shadowforge_City,
-      _allLegendSetup.FelHorde.BlackTemple,
-      _allLegendSetup.Ironforge.Magni);
+      AllLegends.FelHorde.BlackTemple,
+      AllLegends.Ironforge.Magni);
 
     questDarkIron.AddObjective(new ObjectiveQuestComplete(questDominion)
     {
@@ -143,7 +140,7 @@ public sealed class Ironforge : Faction
     AddQuest(questExpedition);
 
     AddQuest(new QuestExtractSunwellVial(
-      _allLegendSetup.Quelthalas.Sunwell,
+      AllLegends.Quelthalas.Sunwell,
       Artifacts.SunwellVial));
   }
 

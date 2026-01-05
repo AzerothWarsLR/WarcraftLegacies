@@ -11,15 +11,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class FelHorde : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public FelHorde(AllLegendSetup allLegendSetup)
+  public FelHorde()
     : base("Fel Horde", playercolor.Green, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = FourCC("R05L");
     StartingGold = 200;
     CinematicMusic = "Doom";
@@ -61,8 +57,8 @@ public sealed class FelHorde : Faction
     var questHellfireCitadel = AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
     AddQuest(new QuestRuinsofShadowmoon(Regions.ShadowmoonBaseUnlock));
     AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
-    AddQuest(new QuestFelHordeKillIronforge(_allLegendSetup.Ironforge.GreatForge));
-    AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
+    AddQuest(new QuestFelHordeKillIronforge(AllLegends.Ironforge.GreatForge));
+    AddQuest(new QuestFelHordeKillStormwind(AllLegends.Stormwind.StormwindKeep));
     AddQuest(new QuestGuldansLegacy());
     AddQuest(new QuestDarkPortal(
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
@@ -71,6 +67,6 @@ public sealed class FelHorde : Faction
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 }

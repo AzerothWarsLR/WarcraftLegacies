@@ -12,16 +12,13 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Kultiras : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
   private readonly unit _proudmooreCapitalShip;
 
   /// <inheritdoc />
-
-  public Kultiras(AllLegendSetup allLegendSetup)
+  public Kultiras()
     : base("Kul'tiras", playercolor.Emerald, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    _allLegendSetup = allLegendSetup;
     _proudmooreCapitalShip = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
@@ -53,16 +50,16 @@ public sealed class Kultiras : Faction
 
   private void RegisterQuests()
   {
-    var questBoralus = new QuestBoralus(Regions.Kultiras, _allLegendSetup.Kultiras.LegendKatherine);
+    var questBoralus = new QuestBoralus(Regions.Kultiras, AllLegends.Kultiras.LegendKatherine);
     StartingQuest = AddQuest(questBoralus);
-    AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, _allLegendSetup.Kultiras.LegendAdmiral,
+    AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, AllLegends.Kultiras.LegendAdmiral,
       questBoralus));
-    AddQuest(new QuestOldHatreds(_allLegendSetup.Kultiras.LegendAdmiral));
+    AddQuest(new QuestOldHatreds(AllLegends.Kultiras.LegendAdmiral));
     AddQuest(new QuestWestfallOutpost(Regions.StranglethornBaseBuild));
-    AddQuest(new QuestHighBank(Regions.HighbankUnlock, _allLegendSetup.Kultiras.LegendKatherine));
-    AddQuest(new QuestBeyondPortal(_allLegendSetup.FelHorde.HellfireCitadel,
-      _allLegendSetup.FelHorde.KilsorrowFortress));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestHighBank(Regions.HighbankUnlock, AllLegends.Kultiras.LegendKatherine));
+    AddQuest(new QuestBeyondPortal(AllLegends.FelHorde.HellfireCitadel,
+      AllLegends.FelHorde.KilsorrowFortress));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue(Frostwolf frostwolf)
@@ -86,7 +83,7 @@ public sealed class Kultiras : Faction
           frostwolf
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Kultiras.LegendAdmiral, _allLegendSetup.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Kultiras.LegendAdmiral, AllLegends.Frostwolf.Thrall)
         }));
   }
 }

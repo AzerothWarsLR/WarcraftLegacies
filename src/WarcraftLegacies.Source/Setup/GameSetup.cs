@@ -34,8 +34,7 @@ public static class GameSetup
     SetupControlPointManager();
     SoundLibrary.Setup();
     Artifacts.Setup();
-    var allLegendSetup = new AllLegendSetup();
-    allLegendSetup.RegisterLegends();
+    AllLegends.Setup();
     ShoreSetup.Setup();
     ControlPointSetup.Setup();
     InstanceSetup.Setup();
@@ -44,9 +43,9 @@ public static class GameSetup
     CommandSetup.Setup(commandManager);
     CheatSetup.Setup(commandManager);
     TeamSetup.Setup();
-    new PlayerSetup(allLegendSetup).Setup();
-    FactionChoiceDialogSetup.Setup(allLegendSetup);
-    SharedQuestSetup.Setup(allLegendSetup);
+    PlayerSetup.Setup();
+    FactionChoiceDialogSetup.Setup();
+    SharedQuestSetup.Setup();
     SpellsSetup.Setup();
     FactionMultiboard.Setup();
     BookSetup.Setup();

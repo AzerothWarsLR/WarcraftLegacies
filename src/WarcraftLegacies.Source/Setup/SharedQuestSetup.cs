@@ -16,11 +16,11 @@ public static class SharedQuestSetup
   /// <summary>
   /// Sets up all shared <see cref="QuestData"/>s.
   /// </summary>
-  public static void Setup(AllLegendSetup allLegendSetup)
+  public static void Setup()
   {
     SharedQuestRepository.RegisterQuest(CreateTombOfSargerasQuest());
-    SharedQuestRepository.RegisterQuest(CreateRagnarosQuest(allLegendSetup));
-    SharedQuestRepository.RegisterQuest(CreateYoggSaronQuest(allLegendSetup));
+    SharedQuestRepository.RegisterQuest(CreateRagnarosQuest());
+    SharedQuestRepository.RegisterQuest(CreateYoggSaronQuest());
     SharedQuestRepository.RegisterQuest(CreateDragonsOfNightmareQuest());
     SharedQuestRepository.RegisterQuestFactory(_ => new QuestZinrokhAssembly(new List<Artifact>
     {
@@ -45,15 +45,15 @@ public static class SharedQuestSetup
     return new QuestDragonsOfNightmare(dragonKalimdor, dragonEk, "Feralas", "Ashenvale", waygateOne, waygateTwo, Regions.AshenvaleEmeraldPortal, Regions.FeralasEmeraldPortal, "BTNWarpPortalGreen");
   }
 
-  private static QuestRagnaros CreateRagnarosQuest(AllLegendSetup allLegendSetup)
+  private static QuestRagnaros CreateRagnarosQuest()
   {
-    return new QuestRagnaros(allLegendSetup.Neutral.Ragnaros,
+    return new QuestRagnaros(AllLegends.Neutral.Ragnaros,
       PreplacedWidgets.Units.Get(UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_NEUTRAL));
   }
 
-  private static QuestYoggSaron CreateYoggSaronQuest(AllLegendSetup allLegendSetup)
+  private static QuestYoggSaron CreateYoggSaronQuest()
   {
-    return new QuestYoggSaron(allLegendSetup.Neutral.YoggSaron,
+    return new QuestYoggSaron(AllLegends.Neutral.YoggSaron,
       PreplacedWidgets.Units.Get(UNIT_YLL4_YOGG_SARON_S_PRISON_CREEP));
   }
 

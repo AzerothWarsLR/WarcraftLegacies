@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire;
 /// </summary>
 public sealed class QuestWakingCity : QuestData
 {
-  private readonly AllLegendSetup _allLegendSetup;
   private readonly List<unit> _rescueUnits;
 
   /// <summary>
@@ -26,8 +25,7 @@ public sealed class QuestWakingCity : QuestData
   /// </summary>
   /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
   /// <param name= "prerequisite">What quest is required to complete this.</param>
-  /// <param name= "allLegendSetup"> required to grab the hero.</param>
-  public QuestWakingCity(QuestData prerequisite, AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("The Waking City",
+  public QuestWakingCity(QuestData prerequisite, Rectangle rescueRect) : base("The Waking City",
     "Adventurers from Azeroth are threatening me, your god. Annihilate them.",
     @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
@@ -39,8 +37,6 @@ public sealed class QuestWakingCity : QuestData
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
       filterUnit => filterUnit.UnitType != FourCC("ngol"));
     ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_THE_WAKING_CITY;
-    _allLegendSetup = allLegendSetup;
-
   }
 
   /// <inheritdoc />
@@ -62,7 +58,7 @@ public sealed class QuestWakingCity : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.Player.RescueGroup(_rescueUnits);
-    var nzoth = _allLegendSetup.BlackEmpire.Nzoth.Unit;
+    var nzoth = AllLegends.BlackEmpire.Nzoth.Unit;
     if (nzoth != null)
     {
       UnitTypeTraitRegistry.ForceOnCreated(nzoth);

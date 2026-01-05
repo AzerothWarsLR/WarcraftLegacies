@@ -19,15 +19,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Lordaeron : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public Lordaeron(AllLegendSetup allLegendSetup) : base("Lordaeron", playercolor.LightBlue,
+  public Lordaeron() : base("Lordaeron", playercolor.LightBlue,
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _allLegendSetup = allLegendSetup;
     StartingGold = 200;
     UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;
     CinematicMusic = "Comradeship";
@@ -78,14 +74,14 @@ public sealed class Lordaeron : Faction
   private void RegisterQuests()
   {
     var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
-    var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Stratholme);
-    var questTyrHand = new QuestTyrHand(_allLegendSetup.Lordaeron.Stratholme, Regions.TyrUnlock);
+    var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, AllLegends.Lordaeron.Arthas, AllLegends.Lordaeron.Uther, AllLegends.Lordaeron.Stratholme);
+    var questTyrHand = new QuestTyrHand(AllLegends.Lordaeron.Stratholme, Regions.TyrUnlock);
     AddQuest(new QuestHearthglen(Regions.Hearthglen));
     AddQuest(questStratholme);
     StartingQuest = questStratholme;
     AddQuest(questStrahnbrad);
-    AddQuest(new QuestCapitalCity(Regions.Terenas, _allLegendSetup.Lordaeron.Terenas.Unit,
-      _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Neutral.Caerdarrow, _allLegendSetup.Lordaeron.CapitalPalace,
+    AddQuest(new QuestCapitalCity(Regions.Terenas, AllLegends.Lordaeron.Terenas.Unit,
+      AllLegends.Lordaeron.Uther, AllLegends.Lordaeron.Arthas, AllLegends.Neutral.Caerdarrow, AllLegends.Lordaeron.CapitalPalace,
       new QuestData[]
       {
         questStrahnbrad,
@@ -93,14 +89,14 @@ public sealed class Lordaeron : Faction
       }));
     AddQuest(questTyrHand);
     AddQuest(new QuestMograine());
-    AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, _allLegendSetup.Lordaeron.TyrsHand, _allLegendSetup.Scarlet.Saiden, questTyrHand, _allLegendSetup));
-    AddQuest(new QuestShoresOfNorthrend(_allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Neutral.Caerdarrow));
-    AddQuest(new QuestThunderEagle(_allLegendSetup.Neutral.DraktharonKeep));
-    AddQuest(new QuestChampionoftheLight(_allLegendSetup.Lordaeron.Uther));
-    AddQuest(new QuestKingArthas(_allLegendSetup.Lordaeron.Terenas.Unit,
-      Artifacts.CrownOfLordaeron, _allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Arthas));
+    AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, AllLegends.Lordaeron.TyrsHand, AllLegends.Scarlet.Saiden, questTyrHand));
+    AddQuest(new QuestShoresOfNorthrend(AllLegends.Lordaeron.Arthas, AllLegends.Neutral.Caerdarrow));
+    AddQuest(new QuestThunderEagle(AllLegends.Neutral.DraktharonKeep));
+    AddQuest(new QuestChampionoftheLight(AllLegends.Lordaeron.Uther));
+    AddQuest(new QuestKingArthas(AllLegends.Lordaeron.Terenas.Unit,
+      Artifacts.CrownOfLordaeron, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Arthas));
     AddQuest(new QuestKingdomOfManLordaeron(Artifacts.CrownOfLordaeron,
-      Artifacts.CrownOfStormwind, _allLegendSetup.Lordaeron.Arthas));
+      Artifacts.CrownOfStormwind, AllLegends.Lordaeron.Arthas));
   }
 
   private static void RegisterResearches()
@@ -139,7 +135,7 @@ public sealed class Lordaeron : Faction
           this
         }, new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Lordaeron.Uther)
+          new ObjectiveLegendMeetsLegend(AllLegends.Lordaeron.Arthas, AllLegends.Lordaeron.Uther)
         }));
 
     TriggeredDialogueManager.Add(
@@ -159,7 +155,7 @@ public sealed class Lordaeron : Faction
           this
         }, new Objective[]
         {
-          new ObjectiveLegendInRect(_allLegendSetup.Lordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
+          new ObjectiveLegendInRect(AllLegends.Lordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
           new ObjectiveUnitAlive(PreplacedWidgets.Units.GetClosest(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
             11066, 6291))
         }));
@@ -187,7 +183,7 @@ public sealed class Lordaeron : Faction
         this
       }, new Objective[]
       {
-        new ObjectiveLegendReachRect(_allLegendSetup.Lordaeron.Arthas, Regions.Central_Northrend, "central Northrend")
+        new ObjectiveLegendReachRect(AllLegends.Lordaeron.Arthas, Regions.Central_Northrend, "central Northrend")
       }));
 
     TriggeredDialogueManager.Add(
@@ -203,7 +199,7 @@ public sealed class Lordaeron : Faction
           this
         }, new Objective[]
         {
-          new ObjectiveLegendInRect(_allLegendSetup.Lordaeron.Arthas, Regions.FountainOfHealthAlterac,
+          new ObjectiveLegendInRect(AllLegends.Lordaeron.Arthas, Regions.FountainOfHealthAlterac,
             "Fountain of Health in Alterac")
         }));
   }
@@ -236,7 +232,7 @@ public sealed class Lordaeron : Faction
           legion
         }, new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Legion.Malganis)
+          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Legion.Malganis)
         }));
 
     TriggeredDialogueManager.Add(
@@ -251,7 +247,7 @@ public sealed class Lordaeron : Faction
           legion
         }, new Objective[]
         {
-          new ObjectiveLegendInRect(_allLegendSetup.Lordaeron.Arthas, Regions.DrakUnlock, ""),
+          new ObjectiveLegendInRect(AllLegends.Lordaeron.Arthas, Regions.DrakUnlock, ""),
         }));
 
     TriggeredDialogueManager.Add(
@@ -266,10 +262,10 @@ public sealed class Lordaeron : Faction
           legion
         }, new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Legion.Malganis, _allLegendSetup.Lordaeron.Arthas),
-          new ObjectiveLegendInRect(_allLegendSetup.Lordaeron.Arthas, Regions.Central_Northrend,
+          new ObjectiveLegendMeetsLegend(AllLegends.Legion.Malganis, AllLegends.Lordaeron.Arthas),
+          new ObjectiveLegendInRect(AllLegends.Lordaeron.Arthas, Regions.Central_Northrend,
             ""), //Todo: make this work in any region of Northrend
-          new ObjectiveLegendInRect(_allLegendSetup.Legion.Malganis, Regions.Central_Northrend, "")
+          new ObjectiveLegendInRect(AllLegends.Legion.Malganis, Regions.Central_Northrend, "")
         }));
   }
 
@@ -287,7 +283,7 @@ public sealed class Lordaeron : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Uther, _allLegendSetup.Scourge.Arthas)
+        new ObjectiveLegendMeetsLegend(AllLegends.Lordaeron.Uther, AllLegends.Scourge.Arthas)
       }
     ));
 
@@ -303,7 +299,7 @@ public sealed class Lordaeron : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Mograine, _allLegendSetup.Scourge.Arthas)
+        new ObjectiveLegendMeetsLegend(AllLegends.Lordaeron.Mograine, AllLegends.Scourge.Arthas)
       }
     ));
   }
@@ -331,7 +327,7 @@ public sealed class Lordaeron : Faction
           this
         }, new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Dalaran.Jaina)
+          new ObjectiveLegendMeetsLegend(AllLegends.Lordaeron.Arthas, AllLegends.Dalaran.Jaina)
         }));
   }
 
@@ -358,7 +354,7 @@ public sealed class Lordaeron : Faction
           {
             EligibleFactions = new List<Faction> { this }
           },
-          new ObjectiveControlLegend(_allLegendSetup.Lordaeron.Arthas, false)
+          new ObjectiveControlLegend(AllLegends.Lordaeron.Arthas, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -368,7 +364,7 @@ public sealed class Lordaeron : Faction
   private void RegisterCrownOfLordaeronDrop()
   {
     var ownerChangeTrigger = trigger.Create();
-    ownerChangeTrigger.RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, unitevent.ChangeOwner);
+    ownerChangeTrigger.RegisterUnitEvent(AllLegends.Lordaeron.CapitalPalace.Unit, unitevent.ChangeOwner);
     ownerChangeTrigger.AddAction(() =>
     {
       var lordaeronPlayer = Player;
@@ -377,9 +373,9 @@ public sealed class Lordaeron : Faction
         return;
       }
 
-      if (_allLegendSetup.Lordaeron.Terenas.Unit != null)
+      if (AllLegends.Lordaeron.Terenas.Unit != null)
       {
-        _allLegendSetup.Lordaeron.Terenas.Unit.Kill();
+        AllLegends.Lordaeron.Terenas.Unit.Kill();
       }
 
       SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,

@@ -3,107 +3,101 @@ using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup;
 
-/// <summary>
-/// Initializes and maintains references to all <see cref="Legend"/>s.
-/// </summary>
-public sealed class AllLegendSetup
+public static class AllLegends
 {
   /// <summary>
   /// Contains references to all Dalaran <see cref="Legend"/>s.
   /// </summary>
-  public LegendDalaran Dalaran { get; }
+  public static LegendDalaran Dalaran { get; }
 
   /// <summary>
   /// Contains references to all Draenei <see cref="Legend"/>s.
   /// </summary>
-  public LegendDraenei Draenei { get; }
+  public static LegendDraenei Draenei { get; }
 
   /// <summary>
   /// Contains references to all Druid <see cref="Legend"/>s.
   /// </summary>
-  public LegendDruids Druids { get; }
+  public static LegendDruids Druids { get; }
 
   /// <summary>
   /// Contains references to all Fel Horde <see cref="Legend"/>s.
   /// </summary>
-  public LegendFelHorde FelHorde { get; }
+  public static LegendFelHorde FelHorde { get; }
 
   /// <summary>
   /// Contains references to all Frostwolf <see cref="Legend"/>s.
   /// </summary>
-  public LegendFrostwolf Frostwolf { get; }
+  public static LegendFrostwolf Frostwolf { get; }
 
   /// <summary>
   /// Contains references to all Ironforge <see cref="Legend"/>s.
   /// </summary>
-  public LegendIronforge Ironforge { get; }
+  public static LegendIronforge Ironforge { get; }
 
   /// <summary>
   /// Contains references to all Kul Tiras <see cref="Legend"/>s.
   /// </summary>
-  public LegendKultiras Kultiras { get; }
+  public static LegendKultiras Kultiras { get; }
 
   /// <summary>
   /// Contains references to all Legion <see cref="Legend"/>s.
   /// </summary>
-  public LegendLegion Legion { get; }
+  public static LegendLegion Legion { get; }
 
   /// <summary>
   /// Contains references to all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public LegendLordaeron Lordaeron { get; }
+  public static LegendLordaeron Lordaeron { get; }
 
   /// <summary>
   /// Contains references to all Naga <see cref="Legend"/>s.
   /// </summary>
-  public LegendIllidan Naga { get; }
+  public static LegendIllidan Naga { get; }
 
   /// <summary>
   /// Contains references to all Quel'thalas <see cref="Legend"/>s.
   /// </summary>
-  public LegendQuelthalas Quelthalas { get; }
+  public static LegendQuelthalas Quelthalas { get; }
 
   /// <summary>
   /// Contains references to all Scourge <see cref="Legend"/>s.
   /// </summary>
-  public LegendScourge Scourge { get; }
+  public static LegendScourge Scourge { get; }
 
   /// <summary>
   /// Contains references to all Sentinel <see cref="Legend"/>s.
   /// </summary>
-  public LegendSentinels Sentinels { get; }
+  public static LegendSentinels Sentinels { get; }
 
   /// <summary>
   /// Contains references to all Stormwind <see cref="Legend"/>s.
   /// </summary>
-  public LegendStormwind Stormwind { get; }
+  public static LegendStormwind Stormwind { get; }
 
   /// <summary>
   /// Contains references to all Warsong <see cref="Legend"/>s.
   /// </summary>
-  public LegendWarsong Warsong { get; }
+  public static LegendWarsong Warsong { get; }
 
-  public LegendAhnqiraj Ahnqiraj { get; }
+  public static LegendAhnqiraj Ahnqiraj { get; }
 
-  public LegendBlackEmpire BlackEmpire { get; }
+  public static LegendBlackEmpire BlackEmpire { get; }
 
-  public LegendSkywall Skywall { get; }
+  public static LegendSkywall Skywall { get; }
 
-  public LegendGilneas Gilneas { get; }
+  public static LegendGilneas Gilneas { get; }
 
-  public LegendScarlet Scarlet { get; }
+  public static LegendScarlet Scarlet { get; }
 
-  public LegendSunfury Sunfury { get; }
+  public static LegendSunfury Sunfury { get; }
 
   /// <summary>
   /// Contains references to all Neutral <see cref="Legend"/>s.
   /// </summary>
-  public LegendNeutral Neutral { get; }
+  public static LegendNeutral Neutral { get; }
 
-  /// <summary>
-  /// Initializes a new instance of the <see cref="AllLegendSetup"/> class.
-  /// </summary>
-  public AllLegendSetup()
+  static AllLegends()
   {
     Dalaran = new LegendDalaran();
     Draenei = new LegendDraenei();
@@ -130,9 +124,9 @@ public sealed class AllLegendSetup
   }
 
   /// <summary>
-  /// Registers all <see cref="Legend"/>s managed by the <see cref="AllLegendSetup"/>.
+  /// Registers all <see cref="Legend"/>s managed by the <see cref="AllLegends"/>.
   /// </summary>
-  public void RegisterLegends()
+  public static void Setup()
   {
     Dalaran.RegisterLegends();
     Draenei.RegisterLegends();
