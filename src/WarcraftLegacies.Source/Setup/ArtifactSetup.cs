@@ -101,31 +101,36 @@ public sealed class ArtifactSetup
     ArtifactManager.Register(EyeOfSargeras);
 
     HelmOfDomination = new Artifact(item.Create(FourCC("I01Y"), DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN).AddItem(HelmOfDomination.Item);
+    var tempUnit = PreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(HelmOfDomination.Item);
     ArtifactManager.Register(HelmOfDomination);
 
     CrownOfLordaeron = new Artifact(item.Create(FourCC("I001"), DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON).AddItem(CrownOfLordaeron.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(CrownOfLordaeron.Item);
     ArtifactManager.Register(CrownOfLordaeron);
 
     var tempArtifact = new Artifact(item.Create(FourCC("klmm"), DummyX, DummyY)); //Killmaim
-    PreplacedWidgets.Units.Get(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE).AddItem(tempArtifact.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
     ScepterOfTheQueen = new Artifact(item.Create(FourCC("I00I"), DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_N085_THE_ATHENAEUM_SENTINELS_OTHER).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_N085_THE_ATHENAEUM_SENTINELS_OTHER).AddItem(ScepterOfTheQueen.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_N085_THE_ATHENAEUM_SENTINELS_OTHER);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(ScepterOfTheQueen.Item);
     ArtifactManager.Register(ScepterOfTheQueen);
 
     BookOfMedivh = new Artifact(item.Create(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
     ArtifactManager.Register(BookOfMedivh);
 
     BronzeFragment = new Artifact(item.Create(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK).AddItem(BronzeFragment.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(BronzeFragment.Item);
     ArtifactManager.Register(BronzeFragment);
 
     ObsidianFragment = new Artifact(item.Create(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
@@ -133,13 +138,15 @@ public sealed class ArtifactSetup
     ArtifactManager.Register(ObsidianFragment);
 
     RubyFragment = new Artifact(item.Create(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB).AddAbility(Artifact.ArtifactHolderAbilId); //Jin)do
-    PreplacedWidgets.Units.Get(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB).AddItem(RubyFragment.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId); //Jin)do
+    tempUnit.AddItem(RubyFragment.Item);
     ArtifactManager.Register(RubyFragment);
 
     AzureFragment = new Artifact(item.Create(ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK).AddItem(AzureFragment.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(AzureFragment.Item);
     ArtifactManager.Register(AzureFragment);
 
     EssenceofMurmur = new Artifact(item.Create(FourCC("I00K"), DummyX, DummyY));
@@ -151,13 +158,15 @@ public sealed class ArtifactSetup
     ArtifactManager.Register(EmeraldFragment);
 
     tempArtifact = new Artifact(item.Create(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
-    PreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS).AddItem(tempArtifact.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
     HornOfCenarius = new Artifact(item.Create(FourCC("cnhn"), DummyX, DummyY));
-    PreplacedWidgets.Units.Get(UNIT_NHCN_HORN_OF_CENARIUS_PEDESTAL_CREEP).AddAbility(Artifact.ArtifactHolderAbilId);
-    PreplacedWidgets.Units.Get(UNIT_NHCN_HORN_OF_CENARIUS_PEDESTAL_CREEP).AddItem(HornOfCenarius.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_NHCN_HORN_OF_CENARIUS_PEDESTAL_CREEP);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(HornOfCenarius.Item);
     ArtifactManager.Register(HornOfCenarius);
 
     tempArtifact = new Artifact(item.Create(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
@@ -165,9 +174,9 @@ public sealed class ArtifactSetup
     ArtifactManager.Register(tempArtifact);
 
     SunwellVial = new Artifact(item.Create(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
-    var sunwell = PreplacedWidgets.Units.Get(UNIT_N001_THE_SUNWELL_QUELTHALAS_OTHER);
-    sunwell.AddAbility(Artifact.ArtifactHolderAbilId);
-    sunwell.AddItem(SunwellVial.Item);
+    tempUnit = PreplacedWidgets.Units.Get(UNIT_N001_THE_SUNWELL_QUELTHALAS_OTHER);
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
+    tempUnit.AddItem(SunwellVial.Item);
     ArtifactManager.Register(SunwellVial);
   }
 }
