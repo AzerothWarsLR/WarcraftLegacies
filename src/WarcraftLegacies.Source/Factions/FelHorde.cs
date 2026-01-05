@@ -16,7 +16,7 @@ public sealed class FelHorde : Faction
     : base("Fel Horde", playercolor.Green, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    UndefeatedResearch = FourCC("R05L");
+    UndefeatedResearch = UPGRADE_R05L_FEL_HORDE_EXISTS;
     StartingGold = 200;
     CinematicMusic = "Doom";
     ControlPointDefenderUnitTypeId = UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL;

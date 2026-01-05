@@ -16,26 +16,26 @@ public sealed class LegendIronforge
   {
     Dagran = new LegendaryHero("Dagran Thaurissan")
     {
-      UnitType = FourCC("H03G"),
+      UnitType = UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS,
       StartingXp = 7000
     };
 
     Falstad = new LegendaryHero("Falstad Wildhammer")
     {
-      UnitType = FourCC("H028"),
+      UnitType = UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE,
       StartingXp = 5400
     };
 
     Magni = new LegendaryHero("Magni Bronzebeard")
     {
-      UnitType = FourCC("H00S"),
+      UnitType = UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE,
       DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
       StartingXp = 1000
     };
 
     GreatForge = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("h001")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H001_THE_GREAT_FORGE_IRONFORGE_OTHER),
       DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
       Essential = true
     };
@@ -44,12 +44,12 @@ public sealed class LegendIronforge
 
     Thelsamar = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("h05H"))
+      Unit = PreplacedWidgets.Units.Get(UNIT_H05H_THELSAMAR_IRONFORGE_OTHER)
     };
 
     MenethilHarbor = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("h0AK"))
+      Unit = PreplacedWidgets.Units.Get(UNIT_H0AK_MENETHIL_HARBOR_IRONFORGE_OTHER)
     };
   }
 

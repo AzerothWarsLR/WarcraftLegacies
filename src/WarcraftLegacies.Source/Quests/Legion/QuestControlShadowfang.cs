@@ -23,6 +23,6 @@ public sealed class QuestControlShadowfang : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
   {
-    whichFaction.ModObjectLimit(FourCC("n04Q"), 4); //Nether Pit
+    whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 4);
   }
 }

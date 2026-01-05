@@ -35,7 +35,7 @@ public sealed class QuestNewGuardian : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     var whichUnit = _jaina.Unit;
-    whichUnit.RemoveAbility(FourCC("A0RB"));
+    whichUnit.RemoveAbility(ABILITY_A0RB_PORTAL_TO_ARGUS_DRAENEI);
     effect.Create("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
     whichUnit.Name = "Guardian of Tirisfal";
     whichUnit.AddAbility(ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);

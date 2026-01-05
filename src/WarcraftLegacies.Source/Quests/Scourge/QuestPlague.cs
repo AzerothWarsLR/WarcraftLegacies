@@ -47,7 +47,7 @@ public sealed class QuestPlague : QuestData
     _plagueParameters = plagueParameters;
     _secondaryPlagueFaction = secondaryPlagueFaction;
     AddObjective(new ObjectiveEitherOf(
-      new ObjectiveResearch(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
+      new ObjectiveResearch(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
       new ObjectiveTime(660)));
     AddObjective(new ObjectiveTime(480));
     _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
@@ -134,11 +134,11 @@ public sealed class QuestPlague : QuestData
   {
     var villagerUnitTypeIds = new List<int>
     {
-      FourCC("nvlw"),
-      FourCC("nvl2"),
-      FourCC("nvil"),
-      FourCC("nvlk"),
-      FourCC("nvk2")
+      UNIT_NVLW_VILLAGER_FEMALE,
+      UNIT_NVL2_VILLAGER_MALE_2,
+      UNIT_NVIL_VILLAGER_MALE,
+      UNIT_NVLK_CHILD,
+      UNIT_NVK2_CHILD_2
     };
 
     var villagers = GlobalGroup

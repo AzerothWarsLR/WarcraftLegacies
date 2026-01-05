@@ -24,7 +24,7 @@ public sealed class LegendScourge
   {
     Kelthuzad = new LegendaryHero("Kel'thuzad")
     {
-      UnitType = FourCC("U001"),
+      UnitType = UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER,
       PermaDies = true,
       DeathSfx = @"Abilities\Spells\Undead\DeathCoil\DeathCoilSpecialArt.mdl",
       StartingXp = 2800
@@ -32,12 +32,12 @@ public sealed class LegendScourge
 
     Anubarak = new LegendaryHero("Anub'arak")
     {
-      UnitType = FourCC("Uanb")
+      UnitType = UNIT_UANB_KING_OF_AZJOL_NERUB_SCOURGE
     };
 
     Rivendare = new LegendaryHero("Baron Rivendare")
     {
-      UnitType = FourCC("U00A"),
+      UnitType = UNIT_U00A_SCOURGE_COMMANDER_SCOURGE,
       StartingXp = 2800
     };
 
@@ -53,7 +53,7 @@ public sealed class LegendScourge
 
     Utgarde = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("h00O")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
       Capturable = true
     };
 

@@ -31,7 +31,7 @@ public sealed class QuestVortexPinnacle : QuestData
     AddObjective(new ObjectiveUpgrade(UNIT_N06R_GREAT_ALCAZAR_SKYWALL_T3, UNIT_N05Q_HOLDFAST_SKYWALL_T1));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => filterUnit.UnitType != FourCC("ngme"));
+      filterUnit => filterUnit.UnitType != UNIT_NGME_GOBLIN_MERCHANT);
     ResearchId = UPGRADE_RSW1_QUEST_COMPLETED_THE_VORTEX_PINNACLE;
 
   }

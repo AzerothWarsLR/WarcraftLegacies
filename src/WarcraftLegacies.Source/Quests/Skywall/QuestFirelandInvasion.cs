@@ -42,7 +42,7 @@ public sealed class QuestFirelandInvasion : QuestData
     _invasionParameters = invasionParameters;
     _secondaryInvasionFaction = secondaryInvasionFaction;
     AddObjective(new ObjectiveEitherOf(
-      new ObjectiveResearch(UPGRADE_RSW5_FIRELAND_INVASION_SKYWALL, FourCC("nELC")),
+      new ObjectiveResearch(UPGRADE_RSW5_FIRELAND_INVASION_SKYWALL, UNIT_NELC_VORTEX_PINNACLE_SKYWALL_T3),
       new ObjectiveTime(600)));
     AddObjective(new ObjectiveTime(500));
     _sulfuronUnits = sulfuron.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

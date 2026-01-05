@@ -39,7 +39,7 @@ public sealed class LegendSkywall
 
     Vortex = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("nELC")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_NELC_VORTEX_PINNACLE_SKYWALL_T3),
       Capturable = true,
       Essential = true
     };

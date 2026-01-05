@@ -15,7 +15,7 @@ public static class IronforgeSpellSetup
   {
     SpellRegistry.Register(new TitanForgeArtifact(ABILITY_A0T3_TITANFORGE_ARTIFACT_IRONFORGE)
     {
-      DefaultTitanforgedAbility = FourCC("A0VJ"),
+      DefaultTitanforgedAbility = ABILITY_A0VJ_TITANFORGED_3_ALL_STATS,
       UniqueTitanforgedAbilitiesByItemTypeId = new Dictionary<int, int>
       {
         { ITEM_I016_ZIN_ROKH_DESTROYER_OF_WORLDS, ABILITY_A0VM_TITANFORGED_9_STRENGTH },

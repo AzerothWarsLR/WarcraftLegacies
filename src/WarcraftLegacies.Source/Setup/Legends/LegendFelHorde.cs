@@ -27,38 +27,38 @@ public sealed class LegendFelHorde
 
     Rend = new LegendaryHero("Rend Blackhand")
     {
-      UnitType = FourCC("Nbbc"),
+      UnitType = UNIT_NBBC_WARCHIEF_OF_THE_BLACKROCK_CLAN_FEL,
       StartingXp = 2800
     };
 
     Kargath = new LegendaryHero("Kargath Bladefist")
     {
-      UnitType = FourCC("N03D"),
+      UnitType = UNIT_N03D_WARCHIEF_OF_THE_FEL_HORDE_FEL,
     };
 
     Teron = new LegendaryHero("Teron Gorefiend")
     {
-      UnitType = FourCC("U02D"),
+      UnitType = UNIT_U02D_DEATH_KNIGHT_LORD_FEL_HORDE,
       StartingXp = 5400,
       PlayerColor = playercolor.Maroon
     };
 
     BlackrockSpire = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o013")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O013_BLACKROCK_SPIRE_FEL),
       DeathMessage = "Blackrock Spire has been razed."
     };
 
     KilsorrowFortress = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o017")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O017_KIL_SORROW_FORTRESS),
       DeathMessage = "Kilsorrow Fortress has been razed.",
       Essential = true
     };
 
     BlackTemple = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o00F")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O00F_BLACK_TEMPLE_ILLIDARI_FEL_HORDE),
       Essential = true
     };
     BlackTemple.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_NPGR_POWER_GENERATOR_FEL, 5511.9f, -29688.2f));
@@ -66,7 +66,7 @@ public sealed class LegendFelHorde
 
     HellfireCitadel = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o008")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O008_HELLFIRE_CITADEL_FEL),
       Essential = true
     };
   }

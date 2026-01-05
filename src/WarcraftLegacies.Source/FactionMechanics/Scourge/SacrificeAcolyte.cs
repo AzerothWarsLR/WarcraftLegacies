@@ -5,8 +5,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge;
 
 public static class SacrificeAcolyte
 {
-  private static readonly int _acolyteId = FourCC("uaco");
-
   private static void OnSell()
   {
     var triggerUnit = @event.Unit;
@@ -17,5 +15,5 @@ public static class SacrificeAcolyte
     soldUnit.Owner.Select(soldUnit);
   }
 
-  public static void Setup() => PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, _acolyteId);
+  public static void Setup() => PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, UNIT_UACO_ACOLYTE_SCOURGE_WORKER);
 }

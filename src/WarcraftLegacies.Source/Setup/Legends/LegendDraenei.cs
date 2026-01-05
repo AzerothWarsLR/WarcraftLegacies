@@ -35,20 +35,20 @@ public sealed class LegendDraenei
 
     Maraad = new LegendaryHero("Maraad")
     {
-      UnitType = FourCC("H09S"),
+      UnitType = UNIT_H09S_HAMMER_OF_THE_LIGHT_DRAENEI,
       StartingXp = 1800
     };
 
     Adal = new LegendaryHero("A'dal")
     {
-      UnitType = FourCC("H09M"),
+      UnitType = UNIT_H09M_THE_NAARU_DRAENEI,
       PlayerColor = playercolor.Blue,
       StartingXp = 10800
     };
 
     Velen = new LegendaryHero("Velen")
     {
-      UnitType = FourCC("E01I")
+      UnitType = UNIT_E01I_AGELESS_ONE_DRUIDS
     };
 
     Shattrah = new Capital
