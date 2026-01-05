@@ -20,17 +20,14 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Lordaeron : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Lordaeron(AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Lordaeron", playercolor.LightBlue,
+  public Lordaeron(AllLegendSetup allLegendSetup) : base("Lordaeron", playercolor.LightBlue,
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     StartingGold = 200;
     UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;
     CinematicMusic = "Comradeship";
@@ -101,9 +98,9 @@ public sealed class Lordaeron : Faction
     AddQuest(new QuestThunderEagle(_allLegendSetup.Neutral.DraktharonKeep));
     AddQuest(new QuestChampionoftheLight(_allLegendSetup.Lordaeron.Uther));
     AddQuest(new QuestKingArthas(_allLegendSetup.Lordaeron.Terenas.Unit,
-      _artifactSetup.CrownOfLordaeron, _allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Arthas));
-    AddQuest(new QuestKingdomOfManLordaeron(_artifactSetup.CrownOfLordaeron,
-      _artifactSetup.CrownOfStormwind, _allLegendSetup.Lordaeron.Arthas));
+      Artifacts.CrownOfLordaeron, _allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Arthas));
+    AddQuest(new QuestKingdomOfManLordaeron(Artifacts.CrownOfLordaeron,
+      Artifacts.CrownOfStormwind, _allLegendSetup.Lordaeron.Arthas));
   }
 
   private static void RegisterResearches()

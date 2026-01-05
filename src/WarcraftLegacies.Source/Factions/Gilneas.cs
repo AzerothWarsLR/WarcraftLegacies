@@ -14,15 +14,13 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Gilneas : Faction
 {
-  private readonly ArtifactSetup _artifactSetup;
   private readonly AllLegendSetup _allLegendSetup;
 
   /// <inheritdoc />
-  public Gilneas(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+  public Gilneas(AllLegendSetup allLegendSetup)
     : base("Gilneas", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _artifactSetup = artifactSetup;
     _allLegendSetup = allLegendSetup;
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
@@ -65,7 +63,7 @@ public sealed class Gilneas : Faction
     AddQuest(new QuestGilneasCity(Regions.Gilneas));
     AddQuest(new QuestDalarangilneas(Regions.Dalaran));
     AddQuest(new QuestCrowley());
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
   private void RegisterObjectLevels()
   {
@@ -93,7 +91,7 @@ public sealed class Gilneas : Faction
   private void RegisterBookOfMedivhQuest(Legion legion)
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Gilneas.GilneasCastle,
-      new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), _artifactSetup.BookOfMedivh,
+      new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), Artifacts.BookOfMedivh,
       faction == legion, faction == this));
   }
 

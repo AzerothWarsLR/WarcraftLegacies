@@ -14,15 +14,13 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Draenei : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Draenei(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public Draenei(AllLegendSetup allLegendSetup)
     : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
     IntroText = $"You are playing as the exiled {PrefixCol}Draenei|r.\n\n" +
@@ -79,6 +77,6 @@ public sealed class Draenei : Faction
     AddQuest(new QuestTriumvirate(_allLegendSetup.Draenei.Velen));
     var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, _allLegendSetup.Draenei.LegendExodarGenerator);
     AddQuest(questDimensionalShip);
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 }

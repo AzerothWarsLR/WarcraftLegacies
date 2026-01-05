@@ -21,17 +21,14 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Warsong : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Warsong(AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Warsong", playercolor.Red,
+  public Warsong(AllLegendSetup allLegendSetup) : base("Warsong", playercolor.Red,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R05W");
     StartingGold = 200;
     CinematicMusic = "DarkAgents";
@@ -91,7 +88,7 @@ public sealed class Warsong : Faction
     AddQuest(new QuestWarsongKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
     AddQuest(new QuestKillOldGods(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
     AddQuest(new QuestWarsongHold());
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
     AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));

@@ -18,16 +18,13 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Sentinels : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Sentinels(AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Sentinels", playercolor.Mint,
+  public Sentinels(AllLegendSetup allLegendSetup) : base("Sentinels", playercolor.Mint,
     @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R05Y_SENTINELS_EXISTS;
     StartingGold = 200;
     CinematicMusic = "Comradeship";
@@ -85,9 +82,9 @@ public sealed class Sentinels : Faction
 
     AddQuest(new QuestSentinelsKillBlackEmpire(_allLegendSetup.BlackEmpire.Nzoth));
     AddQuest(new QuestSentinelsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
-    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen));
+    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, Artifacts.ScepterOfTheQueen));
     AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()

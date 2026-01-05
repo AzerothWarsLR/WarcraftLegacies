@@ -12,16 +12,14 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class FelHorde : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public FelHorde(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+  public FelHorde(AllLegendSetup allLegendSetup)
     : base("Fel Horde", playercolor.Green, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = FourCC("R05L");
     StartingGold = 200;
     CinematicMusic = "Doom";
@@ -73,6 +71,6 @@ public sealed class FelHorde : Faction
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
       PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 }

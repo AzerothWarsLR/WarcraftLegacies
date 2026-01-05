@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class CheatSetup
 {
-  public static void Setup(CommandManager commandManager, ArtifactSetup artifactSetup)
+  public static void Setup(CommandManager commandManager)
   {
     commandManager.Register(new CheatAddSpell());
     commandManager.Register(new CheatResearchLevel());
@@ -50,11 +50,11 @@ public static class CheatSetup
     commandManager.Register(new CheatGetUnitCurrentOrder());
     commandManager.Register(new AssembleZinrokh(new List<Artifact>
     {
-      artifactSetup.AzureFragment,
-      artifactSetup.BronzeFragment,
-      artifactSetup.EmeraldFragment,
-      artifactSetup.RubyFragment,
-      artifactSetup.ObsidianFragment
+      Artifacts.AzureFragment,
+      Artifacts.BronzeFragment,
+      Artifacts.EmeraldFragment,
+      Artifacts.RubyFragment,
+      Artifacts.ObsidianFragment
     }));
     commandManager.Register(new CheatPingGoldMines());
     commandManager.Register(new CheatGetWaygateDestination());

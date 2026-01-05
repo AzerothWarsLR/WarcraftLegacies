@@ -16,15 +16,12 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Frostwolf : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Frostwolf(AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
+  public Frostwolf(AllLegendSetup allLegendSetup) : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
     StartingGold = 200;
     CinematicMusic = "SadMystery";
@@ -85,7 +82,7 @@ public sealed class Frostwolf : Faction
     AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Skywall.Vortex, _allLegendSetup.Frostwolf.Thrall));
     AddQuest(new QuestFreeNerzhul(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Frostwolf.Thrall));
     AddQuest(new QuestWorldShaman(_allLegendSetup.Frostwolf.Thrall));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   public override void OnNotPicked()

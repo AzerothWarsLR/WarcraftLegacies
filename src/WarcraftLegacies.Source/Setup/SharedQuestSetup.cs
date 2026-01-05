@@ -16,7 +16,7 @@ public static class SharedQuestSetup
   /// <summary>
   /// Sets up all shared <see cref="QuestData"/>s.
   /// </summary>
-  public static void Setup(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+  public static void Setup(AllLegendSetup allLegendSetup)
   {
     SharedQuestRepository.RegisterQuest(CreateTombOfSargerasQuest());
     SharedQuestRepository.RegisterQuest(CreateRagnarosQuest(allLegendSetup));
@@ -24,11 +24,11 @@ public static class SharedQuestSetup
     SharedQuestRepository.RegisterQuest(CreateDragonsOfNightmareQuest());
     SharedQuestRepository.RegisterQuestFactory(_ => new QuestZinrokhAssembly(new List<Artifact>
     {
-      artifactSetup.AzureFragment,
-      artifactSetup.BronzeFragment,
-      artifactSetup.EmeraldFragment,
-      artifactSetup.ObsidianFragment,
-      artifactSetup.RubyFragment
+      Artifacts.AzureFragment,
+      Artifacts.BronzeFragment,
+      Artifacts.EmeraldFragment,
+      Artifacts.ObsidianFragment,
+      Artifacts.RubyFragment
     }));
   }
 

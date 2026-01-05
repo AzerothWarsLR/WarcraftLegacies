@@ -33,8 +33,8 @@ public static class GameSetup
     CinematicMode.Setup(59);
     SetupControlPointManager();
     SoundLibrary.Setup();
-    var artifactSetup = new ArtifactSetup();
-    var allLegendSetup = new AllLegendSetup(artifactSetup);
+    Artifacts.Setup();
+    var allLegendSetup = new AllLegendSetup();
     allLegendSetup.RegisterLegends();
     ShoreSetup.Setup();
     ControlPointSetup.Setup();
@@ -42,11 +42,11 @@ public static class GameSetup
     NeutralHostileSetup.Setup();
     var commandManager = new CommandManager();
     CommandSetup.Setup(commandManager);
-    CheatSetup.Setup(commandManager, artifactSetup);
+    CheatSetup.Setup(commandManager);
     TeamSetup.Setup();
-    new PlayerSetup(allLegendSetup, artifactSetup).Setup();
-    FactionChoiceDialogSetup.Setup(artifactSetup, allLegendSetup);
-    SharedQuestSetup.Setup(artifactSetup, allLegendSetup);
+    new PlayerSetup(allLegendSetup).Setup();
+    FactionChoiceDialogSetup.Setup(allLegendSetup);
+    SharedQuestSetup.Setup(allLegendSetup);
     SpellsSetup.Setup();
     FactionMultiboard.Setup();
     BookSetup.Setup();

@@ -12,17 +12,14 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Stormwind : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
 
-  public Stormwind(AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Stormwind", playercolor.Blue,
+  public Stormwind(AllLegendSetup allLegendSetup) : base("Stormwind", playercolor.Blue,
     @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _allLegendSetup = allLegendSetup;
-    _artifactSetup = artifactSetup;
     UndefeatedResearch = UPGRADE_R060_STORMWIND_EXISTS;
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND;
@@ -73,9 +70,9 @@ public sealed class Stormwind : Faction
       PreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
       PreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
     }));
-    AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
+    AddQuest(new QuestKingdomOfManStormwind(Artifacts.CrownOfLordaeron, Artifacts.CrownOfStormwind,
       _allLegendSetup.Stormwind.Varian));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private static void RegisterResearches()
