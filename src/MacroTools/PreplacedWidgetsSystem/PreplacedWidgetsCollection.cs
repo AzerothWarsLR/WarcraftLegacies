@@ -72,9 +72,16 @@ public abstract class PreplacedWidgetCollection<T> where T : widget
   public T GetClosest(int typeId, float x, float y)
   {
     var widgets = GetAll(typeId);
-    if (widgets.Count == 0)
+    var widgetsCount = widgets.Count;
+
+    if (widgetsCount == 0)
     {
       throw new InvalidOperationException("Cannot select closest widget from an empty collection.");
+    }
+
+    if (widgetsCount == 1)
+    {
+      return widgets[0];
     }
 
     var closest = widgets[0];
