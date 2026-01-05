@@ -11,15 +11,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Stormwind : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public Stormwind(AllLegendSetup allLegendSetup) : base("Stormwind", playercolor.Blue,
+  public Stormwind() : base("Stormwind", playercolor.Blue,
     @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R060_STORMWIND_EXISTS;
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND;
@@ -60,19 +56,19 @@ public sealed class Stormwind : Faction
     var questLakeshire = AddQuest(new QuestLakeshire(Regions.LakeshireUnlock));
     var questGoldshire = AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient));
     AddQuest(new QuestStormwindCity(Regions.StormwindUnlock, questDarkshire, questLakeshire, questGoldshire));
-    AddQuest(new QuestNethergarde(_allLegendSetup.Stormwind.Varian));
+    AddQuest(new QuestNethergarde(AllLegends.Stormwind.Varian));
     AddQuest(new QuestStromgarde(Regions.Stromgarde));
-    AddQuest(new QuestHonorHold(Regions.HonorHold, _allLegendSetup.FelHorde.HellfireCitadel));
-    AddQuest(new QuestKhadgar(_allLegendSetup.FelHorde.BlackTemple));
-    AddQuest(new QuestClosePortal(_allLegendSetup.Stormwind.Khadgar));
+    AddQuest(new QuestHonorHold(Regions.HonorHold, AllLegends.FelHorde.HellfireCitadel));
+    AddQuest(new QuestKhadgar(AllLegends.FelHorde.BlackTemple));
+    AddQuest(new QuestClosePortal(AllLegends.Stormwind.Khadgar));
     AddQuest(new QuestConstructionSites(new[]
     {
       PreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
       PreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
     }));
     AddQuest(new QuestKingdomOfManStormwind(Artifacts.CrownOfLordaeron, Artifacts.CrownOfStormwind,
-      _allLegendSetup.Stormwind.Varian));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+      AllLegends.Stormwind.Varian));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private static void RegisterResearches()

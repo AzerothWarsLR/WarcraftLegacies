@@ -21,15 +21,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Scourge : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public Scourge(AllLegendSetup allLegendSetup)
+  public Scourge()
     : base("Scourge", playercolor.Purple, @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R05K_SCOURGE_EXISTS;
     StartingGold = 200;
     FoodMaximum = 250;
@@ -73,7 +69,7 @@ public sealed class Scourge : Faction
     BlightSetup.Setup();
     SacrificeAcolyte.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Scourge.Arthas);
+    TheFrozenThrone.Setup(this, AllLegends.Scourge.TheFrozenThrone, AllLegends.Scourge.Arthas);
   }
 
   private void RegisterResearches()
@@ -106,16 +102,16 @@ public sealed class Scourge : Faction
   {
     QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown);
     QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
-    QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
+    QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, AllLegends.Scourge.Kelthuzad);
 
     QuestSapphiron questSapphiron = new(PreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP),
-      _allLegendSetup.Scourge.Kelthuzad);
+      AllLegends.Scourge.Kelthuzad);
 
     QuestLichKingArthas questLichKingArthas =
       new(PreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
         Artifacts.HelmOfDomination,
-        _allLegendSetup.Scourge.Arthas,
-        _allLegendSetup.Scourge.TheFrozenThrone);
+        AllLegends.Scourge.Arthas,
+        AllLegends.Scourge.TheFrozenThrone);
     QuestSlumberingKing questSlumberingKing = new();
 
     AddQuest(questSpiderWar);
@@ -176,7 +172,7 @@ public sealed class Scourge : Faction
         new[]
         {
           new ObjectiveStartSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
-            _allLegendSetup.Scourge.Kelthuzad)
+            AllLegends.Scourge.Kelthuzad)
         }));
   }
 
@@ -208,8 +204,8 @@ public sealed class Scourge : Faction
         dalaran
       }, new List<Objective>
       {
-        new ObjectiveLegendInRect(_allLegendSetup.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
-        new ObjectiveLegendInRect(_allLegendSetup.Scourge.Arthas, Regions.Dalaran, "Dalaran")
+        new ObjectiveLegendInRect(AllLegends.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
+        new ObjectiveLegendInRect(AllLegends.Scourge.Arthas, Regions.Dalaran, "Dalaran")
       }
     ));
   }
@@ -227,7 +223,7 @@ public sealed class Scourge : Faction
         lordaeron,
       }, new[]
       {
-        new ObjectiveLegendDead(_allLegendSetup.Scourge.Kelthuzad)
+        new ObjectiveLegendDead(AllLegends.Scourge.Kelthuzad)
       }));
   }
 
@@ -260,8 +256,8 @@ public sealed class Scourge : Faction
         },
         new Objective[]
         {
-          new ObjectiveLegendInRect(_allLegendSetup.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
-          new ObjectiveLegendInRect(_allLegendSetup.Scourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
+          new ObjectiveLegendInRect(AllLegends.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
+          new ObjectiveLegendInRect(AllLegends.Scourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
           new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>())
           {
             EligibleFactions = new List<Faction> { this }
@@ -288,7 +284,7 @@ public sealed class Scourge : Faction
         },
         new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Quelthalas.Sylvanas)
+          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Quelthalas.Sylvanas)
         }));
 
     TriggeredDialogueManager.Add(
@@ -333,7 +329,7 @@ public sealed class Scourge : Faction
         new[] { this },
         new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.Kelthuzad),
+          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Scourge.Kelthuzad),
           new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>())
           {
             EligibleFactions = new List<Faction> { this }
@@ -365,26 +361,26 @@ public sealed class Scourge : Faction
         },
         new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Legion.Tichondrius)
+          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Legion.Tichondrius)
         }));
   }
 
   private void RegisterQuelthalasRelatedQuests(Quelthalas quelthalas)
   {
-    var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell,
-      _allLegendSetup.Scourge.Kelthuzad, quelthalas, Artifacts.SunwellVial));
-    AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
+    var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(AllLegends.Quelthalas.Sunwell,
+      AllLegends.Scourge.Kelthuzad, quelthalas, Artifacts.SunwellVial));
+    AddQuest(new QuestKelthuzadDies(questKelthuzadLich, AllLegends.Scourge.Kelthuzad));
   }
 
   private void RegisterLordaeronRelatedQuests(Faction lordaeron)
   {
-    var stratholme = _allLegendSetup.Lordaeron.Stratholme;
-    var arthas = _allLegendSetup.Lordaeron.Arthas;
+    var stratholme = AllLegends.Lordaeron.Stratholme;
+    var arthas = AllLegends.Lordaeron.Arthas;
 
     QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, arthas);
     AddQuest(questDestroyStratholme);
 
-    AddQuest(new QuestCultoftheDamned(lordaeron, _allLegendSetup.Scourge.Rivendare));
+    AddQuest(new QuestCultoftheDamned(lordaeron, AllLegends.Scourge.Rivendare));
   }
 
   private void RegisterLordaeronLegionRelatedQuests(Lordaeron lordaeron, Legion legion)

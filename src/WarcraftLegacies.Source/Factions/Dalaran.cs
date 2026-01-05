@@ -20,15 +20,13 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Dalaran : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
   private readonly List<unit> _dalaranProtectors;
 
   /// <inheritdoc />
-  public Dalaran(AllLegendSetup allLegendSetup)
+  public Dalaran()
     : base("Dalaran", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _allLegendSetup = allLegendSetup;
     _dalaranProtectors = new List<unit>
     {
       PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9084, 4979),
@@ -97,12 +95,12 @@ public sealed class Dalaran : Faction
     AddQuest(new QuestDalaran(Regions.Dalaran));
     AddQuest(new QuestGilneas(Regions.Gilneas));
 
-    QuestNewGuardian newGuardian = new(Artifacts.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
-      _allLegendSetup.Dalaran.Dalaran);
-    QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
-    QuestTheNexus theNexus = new(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Dalaran, _allLegendSetup.Neutral.TheNexus);
-    QuestCrystalGolem crystalGolem = new(_allLegendSetup.Neutral.DraktharonKeep);
-    QuestFallenGuardian fallenGuardian = new(_allLegendSetup.Neutral.Karazhan);
+    QuestNewGuardian newGuardian = new(Artifacts.BookOfMedivh, AllLegends.Dalaran.Jaina,
+      AllLegends.Dalaran.Dalaran);
+    QuestAegwynn aegwynn = new(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Antonidas);
+    QuestTheNexus theNexus = new(AllLegends.Scourge.TheFrozenThrone, AllLegends.Dalaran, AllLegends.Neutral.TheNexus);
+    QuestCrystalGolem crystalGolem = new(AllLegends.Neutral.DraktharonKeep);
+    QuestFallenGuardian fallenGuardian = new(AllLegends.Neutral.Karazhan);
 
     newGuardian.AddObjective(new ObjectiveQuestNotComplete(theNexus));
     crystalGolem.AddObjective(new ObjectiveQuestNotComplete(theNexus));
@@ -110,10 +108,10 @@ public sealed class Dalaran : Faction
 
     theNexus.AddObjective(new ObjectiveQuestNotComplete(newGuardian));
 
-    AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
-    AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
-    AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-    AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran, Regions.Theramore));
+    AddQuest(new QuestJainaSoulGem(AllLegends.Dalaran.Jaina, AllLegends.Neutral.Caerdarrow));
+    AddQuest(new QuestBlueDragons(AllLegends.Neutral.TheNexus));
+    AddQuest(new QuestKarazhan(AllLegends.Neutral.Karazhan));
+    AddQuest(new QuestTheramore(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Dalaran, Regions.Theramore));
 
     AddQuest(crystalGolem);
     AddQuest(fallenGuardian);
@@ -124,7 +122,7 @@ public sealed class Dalaran : Faction
 
   private void RegisterBookOfMedivhQuest(Legion legion)
   {
-    SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
+    SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Dalaran.Dalaran,
       new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), Artifacts.BookOfMedivh,
       faction == legion, faction == this));
   }
@@ -141,7 +139,7 @@ public sealed class Dalaran : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(_allLegendSetup.Dalaran.Medivh, false)
+          new ObjectiveControlLegend(AllLegends.Dalaran.Medivh, false)
           {
             EligibleFactions = new List<Faction>
             {
@@ -160,7 +158,7 @@ public sealed class Dalaran : Faction
         this
       }, new[]
       {
-        new ObjectiveLegendInRect(_allLegendSetup.Dalaran.Jaina, Regions.Hearthglen, "Hearthglen")
+        new ObjectiveLegendInRect(AllLegends.Dalaran.Jaina, Regions.Hearthglen, "Hearthglen")
       }));
   }
 
@@ -180,9 +178,9 @@ public sealed class Dalaran : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveLegendDead(_allLegendSetup.Dalaran.Antonidas)
+        new ObjectiveLegendDead(AllLegends.Dalaran.Antonidas)
         {
-          DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(_allLegendSetup.Scourge.Arthas.Unit.GetPosition(),
+          DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(AllLegends.Scourge.Arthas.Unit.GetPosition(),
             dyingLegend.Unit.GetPosition()) < 500
         }
       }
@@ -193,7 +191,7 @@ public sealed class Dalaran : Faction
   {
     foreach (var unit in _dalaranProtectors)
     {
-      _allLegendSetup.Dalaran.Dalaran.AddProtector(unit);
+      AllLegends.Dalaran.Dalaran.AddProtector(unit);
     }
   }
 }

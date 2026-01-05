@@ -17,15 +17,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Druids : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public Druids(AllLegendSetup allLegendSetup) :
+  public Druids() :
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = FourCC("R06E");
     StartingGold = 200;
     CinematicMusic = "DarkAgents";
@@ -56,24 +52,24 @@ public sealed class Druids : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterPowers();
-    CenariusGhost.Setup(_allLegendSetup.Druids.Cenarius, this);
+    CenariusGhost.Setup(AllLegends.Druids.Cenarius, this);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
-      _allLegendSetup.Druids.Nordrassil.Unit, Artifacts.HornOfCenarius,
-      _allLegendSetup.Druids.Malfurion));
+      AllLegends.Druids.Nordrassil.Unit, Artifacts.HornOfCenarius,
+      AllLegends.Druids.Malfurion));
     StartingQuest = newQuest;
     AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
     AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
     AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-    AddQuest(new QuestDruidsKillElemental(_allLegendSetup.Skywall.Vortex));
-    AddQuest(new QuestDruidsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
-    AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
-    AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestDruidsKillElemental(AllLegends.Skywall.Vortex));
+    AddQuest(new QuestDruidsKillCthun(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestShaladrassil(AllLegends.Neutral.Shaladrassil));
+    AddQuest(new QuestTortolla(AllLegends.Druids.Tortolla));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()
@@ -92,7 +88,7 @@ public sealed class Druids : Faction
       new Objective[]
       {
         new ObjectiveUnitAlive(PreplacedWidgets.Units.GetClosest(UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
-        new ObjectiveLegendInRect(_allLegendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
+        new ObjectiveLegendInRect(AllLegends.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
       }));
 
     TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -103,7 +99,7 @@ public sealed class Druids : Faction
       new[] { this },
       new Objective[]
       {
-        new ObjectiveControlLegend(_allLegendSetup.Druids.Malfurion, false)
+        new ObjectiveControlLegend(AllLegends.Druids.Malfurion, false)
         {
           EligibleFactions = new List<Faction>
           {
@@ -117,9 +113,9 @@ public sealed class Druids : Faction
   {
     var worldTrees = new List<Capital>
     {
-      _allLegendSetup.Druids.Nordrassil,
-      _allLegendSetup.Neutral.Shaladrassil,
-      _allLegendSetup.Druids.Vordrassil
+      AllLegends.Druids.Nordrassil,
+      AllLegends.Neutral.Shaladrassil,
+      AllLegends.Druids.Vordrassil
     };
     AddPower(new Immortality(20, 40, worldTrees)
     {
@@ -147,7 +143,7 @@ public sealed class Druids : Faction
           "Malfurion Stormrage")
       ),
       new Faction[] { this, sentinels },
-      new[] { new ObjectiveLegendMeetsLegend(_allLegendSetup.Druids.Malfurion, _allLegendSetup.Sentinels.Tyrande) }));
+      new[] { new ObjectiveLegendMeetsLegend(AllLegends.Druids.Malfurion, AllLegends.Sentinels.Tyrande) }));
 
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new Dialogue(
@@ -159,7 +155,7 @@ public sealed class Druids : Faction
         this
       }, new[]
       {
-        new ObjectiveControlLegend(_allLegendSetup.Druids.Cenarius, false)
+        new ObjectiveControlLegend(AllLegends.Druids.Cenarius, false)
         {
           EligibleFactions = new List<Faction>
           {
@@ -171,6 +167,6 @@ public sealed class Druids : Faction
 
   private void RegisterScourgeQuests(Scourge scourge)
   {
-    AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc, scourge));
+    AddQuest(new QuestAndrassil(AllLegends.Druids.Vordrassil, AllLegends.Druids.Ursoc, scourge));
   }
 }

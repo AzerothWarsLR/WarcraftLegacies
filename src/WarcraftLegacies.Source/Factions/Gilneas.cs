@@ -14,14 +14,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Gilneas : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public Gilneas(AllLegendSetup allLegendSetup)
+  public Gilneas()
     : base("Gilneas", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    _allLegendSetup = allLegendSetup;
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
     IntroText = $"You are playing as the accursed {PrefixCol}Kingdom of Gilneas|r.\n\n" +
@@ -63,7 +60,7 @@ public sealed class Gilneas : Faction
     AddQuest(new QuestGilneasCity(Regions.Gilneas));
     AddQuest(new QuestDalarangilneas(Regions.Dalaran));
     AddQuest(new QuestCrowley());
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
   private void RegisterObjectLevels()
   {
@@ -90,13 +87,13 @@ public sealed class Gilneas : Faction
 
   private void RegisterBookOfMedivhQuest(Legion legion)
   {
-    SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Gilneas.GilneasCastle,
+    SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Gilneas.GilneasCastle,
       new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), Artifacts.BookOfMedivh,
       faction == legion, faction == this));
   }
 
   private void RegisterDruidsQuests(Druids druids)
   {
-    AddQuest(new QuestGoldrinn(_allLegendSetup.Gilneas.Tess, _allLegendSetup.Gilneas.Goldrinn, druids));
+    AddQuest(new QuestGoldrinn(AllLegends.Gilneas.Tess, AllLegends.Gilneas.Goldrinn, druids));
   }
 }

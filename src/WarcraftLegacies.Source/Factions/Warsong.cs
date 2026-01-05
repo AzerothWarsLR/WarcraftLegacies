@@ -20,15 +20,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Warsong : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public Warsong(AllLegendSetup allLegendSetup) : base("Warsong", playercolor.Red,
+  public Warsong() : base("Warsong", playercolor.Red,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = FourCC("R05W");
     StartingGold = 200;
     CinematicMusic = "DarkAgents";
@@ -78,20 +74,20 @@ public sealed class Warsong : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestGrom(_allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
+    StartingQuest = AddQuest(new QuestGrom(AllLegends.Warsong.GromHellscream, AllLegends.Warsong.Gargok));
     AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
     AddQuest(new QuestRokhan(PreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
-    // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
-    // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
-    AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));
-    AddQuest(new QuestWarsongKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
-    AddQuest(new QuestKillOldGods(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
+    // AddQuest(new QuestFountainOfBlood(AllLegendSetup.Neutral.FountainOfBlood, AllLegendSetup.Warsong.GromHellscream));
+    // AddQuest(new QuestBloodpact(AllLegendSetup.Warsong.Mannoroth, AllLegendSetup.Warsong.GromHellscream));
+    AddQuest(new QuestGarrosh(AllLegends.BlackEmpire.Nzoth));
+    AddQuest(new QuestWarsongKillCthun(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestKillOldGods(AllLegends.Ahnqiraj.Cthun, AllLegends.BlackEmpire.Nzoth));
     AddQuest(new QuestWarsongHold());
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
-    AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
-    AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
-    AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
+    AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
+    AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
 
 
   }
@@ -125,14 +121,14 @@ public sealed class Warsong : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveControlLegend(_allLegendSetup.Warsong.GromHellscream, false)
+        new ObjectiveControlLegend(AllLegends.Warsong.GromHellscream, false)
         {
           EligibleFactions = new List<Faction>
           {
             this
           }
         },
-        new ObjectiveControlCapital(_allLegendSetup.Neutral.FountainOfBlood, false)
+        new ObjectiveControlCapital(AllLegends.Neutral.FountainOfBlood, false)
         {
           EligibleFactions = new List<Faction>
           {
@@ -151,7 +147,7 @@ public sealed class Warsong : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(_allLegendSetup.Warsong.GromHellscream, false)
+          new ObjectiveControlLegend(AllLegends.Warsong.GromHellscream, false)
           {
             EligibleFactions = new List<Faction>{this}
           }

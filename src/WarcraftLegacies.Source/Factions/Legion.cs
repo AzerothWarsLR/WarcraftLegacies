@@ -18,15 +18,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Legion : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-
-  public Legion(AllLegendSetup allLegendSetup) : base("Legion",
+  public Legion() : base("Legion",
     playercolor.Peanut, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;
     StartingGold = 200;
     FoodMaximum = 250;
@@ -70,14 +66,14 @@ public sealed class Legion : Faction
   {
     var newQuest = AddQuest(new QuestArgusControl());
     StartingQuest = newQuest;
-    AddQuest(new QuestControlMonastery(_allLegendSetup.Lordaeron.Monastery));
-    AddQuest(new QuestControlSpire(_allLegendSetup.Quelthalas.Spire));
-    AddQuest(new QuestControlShadowfang(_allLegendSetup.Dalaran.Shadowfang));
-    AddQuest(new QuestLegionCaptureSunwell(_allLegendSetup.Quelthalas.Sunwell));
-    AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace,
-      _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
+    AddQuest(new QuestControlMonastery(AllLegends.Lordaeron.Monastery));
+    AddQuest(new QuestControlSpire(AllLegends.Quelthalas.Spire));
+    AddQuest(new QuestControlShadowfang(AllLegends.Dalaran.Shadowfang));
+    AddQuest(new QuestLegionCaptureSunwell(AllLegends.Quelthalas.Sunwell));
+    AddQuest(new QuestLegionKillLordaeron(AllLegends.Lordaeron.CapitalPalace,
+      AllLegends.Lordaeron.Stratholme, AllLegends.Legion.Tichondrius));
     AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-      PreplacedWidgets.Units.Get(UNIT_N03C_DEMON_PORTAL_LEGION), _allLegendSetup.Legion.Anetheron)); ;
+      PreplacedWidgets.Units.Get(UNIT_N03C_DEMON_PORTAL_LEGION), AllLegends.Legion.Anetheron)); ;
   }
 
   private static void RegisterResearches()
@@ -127,7 +123,7 @@ public sealed class Legion : Faction
         dalaran
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Legion.Archimonde, _allLegendSetup.Dalaran.Jaina)
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Dalaran.Jaina)
       }
     ));
   }
@@ -152,7 +148,7 @@ public sealed class Legion : Faction
         illidari
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Legion.Tichondrius, _allLegendSetup.Naga.Illidan)
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Tichondrius, AllLegends.Naga.Illidan)
       }
     ));
   }
@@ -174,7 +170,7 @@ public sealed class Legion : Faction
         frostwolf
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Legion.Archimonde, _allLegendSetup.Frostwolf.Thrall)
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Frostwolf.Thrall)
       }
     ));
   }
@@ -195,19 +191,19 @@ public sealed class Legion : Faction
         scourge
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Legion.Archimonde, _allLegendSetup.Scourge.Kelthuzad)
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Scourge.Kelthuzad)
       }
     ));
   }
 
   private void RegisterScourgeQuests(Scourge scourge)
   {
-    AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge, _allLegendSetup.Legion.Malganis));
+    AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge, AllLegends.Legion.Malganis));
   }
 
   private void RegisterDruidsRelatedQuestsAndDialogue(Druids druids)
   {
-    var questConsumeTree = AddQuest(new QuestConsumeTree(_allLegendSetup.Legion.Archimonde, druids));
+    var questConsumeTree = AddQuest(new QuestConsumeTree(AllLegends.Legion.Archimonde, druids));
 
     TriggeredDialogueManager.Add(new TriggeredDialogue(
       new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",

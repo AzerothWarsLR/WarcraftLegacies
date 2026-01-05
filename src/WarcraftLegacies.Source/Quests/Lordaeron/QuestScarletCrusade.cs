@@ -10,7 +10,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions;
-using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron;
@@ -23,15 +22,13 @@ public sealed class QuestScarletCrusade : QuestData
   private readonly unit _tyrsHand;
   private readonly LegendaryHero _saiden;
   private readonly List<unit> _rescueUnits;
-  private readonly AllLegendSetup _allLegendSetup;
   private const int StartingGold = 300;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
   /// </summary>
-  public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, QuestData fortifiedCity,
-    AllLegendSetup allLegendSetup) :
-    base("The Scarlet Crusade",
+  public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, QuestData fortifiedCity)
+    : base("The Scarlet Crusade",
       "Lordaeron is destined to fall to the Scourge. Should such an event come to pass, the Silver Hand will be transformed beyond recognition, abandoning ideals of justice in favour of those of vengeance.",
       @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
   {
@@ -46,7 +43,6 @@ public sealed class QuestScarletCrusade : QuestData
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     _tyrsHand = tyrsHand.Unit;
     _saiden = saiden;
-    _allLegendSetup = allLegendSetup;
     Global = true;
   }
 
@@ -77,7 +73,7 @@ public sealed class QuestScarletCrusade : QuestData
 
   private void AssignScarletCrusadeFaction(Faction completingFaction)
   {
-    var scarletCrusade = new ScarletCrusade(_allLegendSetup);
+    var scarletCrusade = new ScarletCrusade();
     FactionManager.Register(scarletCrusade);
     scarletCrusade.CopyObjectLevelsFrom(completingFaction);
     if (completingFaction.Player != null)

@@ -18,14 +18,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Illidari : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public Illidari(AllLegendSetup allLegendSetup) : base("Illidan", playercolor.Violet,
+  public Illidari() : base("Illidan", playercolor.Violet,
     @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
     StartingGold = 200;
     FoodMaximum = 250;
@@ -69,14 +66,14 @@ public sealed class Illidari : Faction
 
   private void RegisterQuests()
   {
-    var flameAndSorrow = new QuestBrokenIsles(_allLegendSetup.Naga.Illidan);
+    var flameAndSorrow = new QuestBrokenIsles(AllLegends.Naga.Illidan);
     StartingQuest = flameAndSorrow;
     AddQuest(flameAndSorrow);
 
-    var questBlackTemple = new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan);
+    var questBlackTemple = new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, AllLegends.Naga.Illidan);
     AddQuest(questBlackTemple);
 
-    var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj);
+    var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, AllLegends.Naga.Vashj);
     questZangarmarsh.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
     {
       ShowsInPopups = false,
@@ -94,9 +91,9 @@ public sealed class Illidari : Faction
     });
     AddQuest(questLostOnes);
 
-    AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
-    AddQuest(new QuestEyeofSargeras(Artifacts.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, AllLegends.Naga.Vashj));
+    AddQuest(new QuestEyeofSargeras(Artifacts.EyeOfSargeras, AllLegends.Naga.Illidan));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()
@@ -110,7 +107,7 @@ public sealed class Illidari : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveLegendReachRect(_allLegendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
+        new ObjectiveLegendReachRect(AllLegends.Naga.Illidan, Regions.Sargeras_Entrance,
           "the Tomb of Sargeras' entrance")
       }
     ));
@@ -143,7 +140,7 @@ public sealed class Illidari : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveControlLegend(_allLegendSetup.Naga.Vashj, false)
+        new ObjectiveControlLegend(AllLegends.Naga.Vashj, false)
         {
           EligibleFactions = new List<Faction>
           {
@@ -187,7 +184,7 @@ public sealed class Illidari : Faction
           sentinels
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Vashj, _allLegendSetup.Sentinels.Maiev)
+          new ObjectiveLegendMeetsLegend(AllLegends.Naga.Vashj, AllLegends.Sentinels.Maiev)
         }));
 
     TriggeredDialogueManager.Add(
@@ -205,7 +202,7 @@ public sealed class Illidari : Faction
           sentinels
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Sentinels.Maiev)
+          new ObjectiveLegendMeetsLegend(AllLegends.Naga.Illidan, AllLegends.Sentinels.Maiev)
         }));
 
     TriggeredDialogueManager.Add(
@@ -222,7 +219,7 @@ public sealed class Illidari : Faction
           sentinels
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Sentinels.Tyrande)
+          new ObjectiveLegendMeetsLegend(AllLegends.Naga.Illidan, AllLegends.Sentinels.Tyrande)
         }));
   }
 
@@ -244,7 +241,7 @@ public sealed class Illidari : Faction
           druids
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Druids.Malfurion)
+          new ObjectiveLegendMeetsLegend(AllLegends.Naga.Illidan, AllLegends.Druids.Malfurion)
         }));
   }
 
@@ -260,7 +257,7 @@ public sealed class Illidari : Faction
         scourge
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Scourge.Anubarak)
+        new ObjectiveLegendMeetsLegend(AllLegends.Naga.Illidan, AllLegends.Scourge.Anubarak)
       }
     ));
 
@@ -279,7 +276,7 @@ public sealed class Illidari : Faction
           scourge
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Scourge.Arthas)
+          new ObjectiveLegendMeetsLegend(AllLegends.Naga.Illidan, AllLegends.Scourge.Arthas)
         }));
   }
 
@@ -325,8 +322,8 @@ public sealed class Illidari : Faction
   {
     var questBurningCrusade = new QuestBurningCrusade(new[]
     {
-      _allLegendSetup.Stormwind.StormwindKeep,
-      _allLegendSetup.Ironforge.GreatForge
+      AllLegends.Stormwind.StormwindKeep,
+      AllLegends.Ironforge.GreatForge
     });
     questBurningCrusade.AddObjective(new ObjectiveFactionQuestComplete(felHorde.GetQuestByType<QuestDarkPortal>(), felHorde)
     {
@@ -339,7 +336,7 @@ public sealed class Illidari : Faction
 
   private void RegisterScourgeDruidsAhnqirajQuests(Scourge scourge, Druids druids, Ahnqiraj ahnqiraj)
   {
-    AddQuest(new QuestKiljaedensCommand(scourge, druids, ahnqiraj, _allLegendSetup.Ahnqiraj.Cthun,
-      _allLegendSetup.Druids.Nordrassil, _allLegendSetup.Naga.Illidan));
+    AddQuest(new QuestKiljaedensCommand(scourge, druids, ahnqiraj, AllLegends.Ahnqiraj.Cthun,
+      AllLegends.Druids.Nordrassil, AllLegends.Naga.Illidan));
   }
 }

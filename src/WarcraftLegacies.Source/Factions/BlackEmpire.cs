@@ -12,14 +12,10 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class BlackEmpire : Faction
 {
-
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public BlackEmpire(AllLegendSetup allLegendSetup) : base("Black Empire",
+  public BlackEmpire() : base("Black Empire",
     playercolor.Maroon, @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
-    _allLegendSetup = allLegendSetup;
     ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_NZOTH_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
     StartingGold = 200;
@@ -54,17 +50,17 @@ public sealed class BlackEmpire : Faction
     var questGorma = AddQuest(new QuestTwilightlanding(Regions.BlackEmpireOutpost1));
     StartingQuest = questGorma;
 
-    AddQuest(new QuestWakingCity(questGorma, _allLegendSetup, Regions.Nyalotha));
+    AddQuest(new QuestWakingCity(questGorma, Regions.Nyalotha));
     AddQuest(new QuestGiftofFlesh());
-    AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul));
-    AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
-    AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
+    AddQuest(new QuestWakingDream(AllLegends.BlackEmpire.Zaqul));
+    AddQuest(new QuestMawofShuma(AllLegends.BlackEmpire.Yorsahj));
+    AddQuest(new QuestMawofGorath(AllLegends.BlackEmpire.Zonozz));
     AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));
     AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
-    AddQuest(new QuestDestruction(_allLegendSetup.BlackEmpire.Nzoth));
-    AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Warsong.Orgrimmar));
-    AddQuest(new QuestAscension(_allLegendSetup.BlackEmpire.Nzoth));
-    AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
+    AddQuest(new QuestDestruction(AllLegends.BlackEmpire.Nzoth));
+    AddQuest(new QuestWorldStone(AllLegends.BlackEmpire.Nzoth, AllLegends.Warsong.Orgrimmar));
+    AddQuest(new QuestAscension(AllLegends.BlackEmpire.Nzoth));
+    AddQuest(new QuestAlignement(AllLegends.BlackEmpire.Nzoth));
   }
 
   private static void RegisterUnitTypeTraits()

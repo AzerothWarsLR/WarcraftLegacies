@@ -17,16 +17,13 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Skywall : Faction
-
 {
-  private readonly AllLegendSetup _allLegendSetup;
   /// <inheritdoc />
-  public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", playercolor.LightGray,
+  public Skywall() : base("Skywall", playercolor.LightGray,
     @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
   {
     ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
-    _allLegendSetup = allLegendSetup;
     StartingGold = 200;
     IntroText = $"You are playing as the {PrefixCol}Elementals of Skywall|r.\n\n" +
                 "At the start, clear Uldum and take control of Tanaris.\n\n" +
@@ -66,7 +63,7 @@ public sealed class Skywall : Faction
     AddQuest(new QuestThroneWind(Regions.ThroneoftheFourWind));
     AddQuest(new QuestShimmering(Regions.SkywallShimmering_Unlock));
     AddQuest(new QuestSubduing());
-    AddQuest(new QuestKillDruids(_allLegendSetup.Druids.Nordrassil));
+    AddQuest(new QuestKillDruids(AllLegends.Druids.Nordrassil));
   }
 
   private void RegisterInvasionRelatedQuests(Druids druids, Ahnqiraj ahnqiraj)

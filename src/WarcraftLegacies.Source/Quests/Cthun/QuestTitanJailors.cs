@@ -15,14 +15,13 @@ namespace WarcraftLegacies.Source.Quests.Cthun;
 
 public sealed class QuestTitanJailors : QuestData
 {
-  private readonly AllLegendSetup _allLegendSetup;
   private readonly List<unit> _rescueUnits;
   private readonly List<RockGroup> _rockGroups;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
   /// </summary>
-  public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect)
+  public QuestTitanJailors(Rectangle rescueRect)
       : base("Titan Jailors",
             "C'thun is currently watched by a Titan Construct. We must rid the temple of hostiles and destroy the Titan to free our god.",
             @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
@@ -32,7 +31,6 @@ public sealed class QuestTitanJailors : QuestData
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveUpgrade(UNIT_U022_NEXUS_CTHUN_T3, UNIT_U020_MONUMENT_CTHUN_T1));
     _rockGroups = new List<RockGroup>();
-    _allLegendSetup = allLegendSetup;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     RegisterRockGroups();
   }
@@ -71,7 +69,7 @@ public sealed class QuestTitanJailors : QuestData
   {
     CleanupRocks();
     completingFaction.Player.RescueGroup(_rescueUnits);
-    var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
+    var cthun = AllLegends.Ahnqiraj.Cthun.Unit;
     if (cthun != null)
     {
       UnitTypeTraitRegistry.ForceOnCreated(cthun);

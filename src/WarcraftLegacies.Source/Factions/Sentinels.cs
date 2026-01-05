@@ -17,14 +17,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Sentinels : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public Sentinels(AllLegendSetup allLegendSetup) : base("Sentinels", playercolor.Mint,
+  public Sentinels() : base("Sentinels", playercolor.Mint,
     @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R05Y_SENTINELS_EXISTS;
     StartingGold = 200;
     CinematicMusic = "Comradeship";
@@ -78,13 +75,13 @@ public sealed class Sentinels : Faction
     StartingQuest = questAstranaar;
 
     // Register the updated QuestFeathermoon
-    var questFeathermoon = AddQuest(new QuestFeathermoon(_allLegendSetup.Sentinels.Feathermoon, Regions.FeathermoonUnlock));
+    var questFeathermoon = AddQuest(new QuestFeathermoon(AllLegends.Sentinels.Feathermoon, Regions.FeathermoonUnlock));
 
-    AddQuest(new QuestSentinelsKillBlackEmpire(_allLegendSetup.BlackEmpire.Nzoth));
-    AddQuest(new QuestSentinelsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
+    AddQuest(new QuestSentinelsKillBlackEmpire(AllLegends.BlackEmpire.Nzoth));
+    AddQuest(new QuestSentinelsKillCthun(AllLegends.Ahnqiraj.Cthun));
     AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, Artifacts.ScepterOfTheQueen));
-    AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()
@@ -109,7 +106,7 @@ public sealed class Sentinels : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveLegendReachRect(_allLegendSetup.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
+        new ObjectiveLegendReachRect(AllLegends.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
       }
     ));
 
@@ -122,7 +119,7 @@ public sealed class Sentinels : Faction
         this
       }, new[]
       {
-        new ObjectiveLegendInRect(_allLegendSetup.Sentinels.Naisha, Regions.TombOfSargerasInteriorB, "the Tomb of Sargeras")
+        new ObjectiveLegendInRect(AllLegends.Sentinels.Naisha, Regions.TombOfSargerasInteriorB, "the Tomb of Sargeras")
       }));
 
     TriggeredDialogueManager.Add(
@@ -134,7 +131,7 @@ public sealed class Sentinels : Faction
         this
       }, new[]
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.Tyrande)
+        new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.Tyrande)
       }));
   }
 
@@ -146,9 +143,9 @@ public sealed class Sentinels : Faction
 
     var worldTrees = new List<Capital>
     {
-      _allLegendSetup.Druids.Nordrassil,
-      _allLegendSetup.Neutral.Shaladrassil,
-      _allLegendSetup.Druids.Vordrassil
+      AllLegends.Druids.Nordrassil,
+      AllLegends.Neutral.Shaladrassil,
+      AllLegends.Druids.Vordrassil
     };
     AddPower(new Immortality(25, 45, worldTrees)
     {
@@ -171,13 +168,13 @@ public sealed class Sentinels : Faction
         druids
       }, new[]
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Druids.Malfurion)
+        new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Maiev, AllLegends.Druids.Malfurion)
       }));
   }
 
   private void RegisterIllidariQuestsAndDialogue(Illidari illidari)
   {
-    AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, _allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
+    AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new Dialogue(
         @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev37",
@@ -188,7 +185,7 @@ public sealed class Sentinels : Faction
         illidari
       }, new[]
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Naga.Illidan)
+        new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Maiev, AllLegends.Naga.Illidan)
       }));
   }
 
@@ -209,7 +206,7 @@ public sealed class Sentinels : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Tyrande, _allLegendSetup.Legion.Archimonde)
+        new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Tyrande, AllLegends.Legion.Archimonde)
       }
     ));
   }

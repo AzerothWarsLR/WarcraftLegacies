@@ -12,14 +12,11 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Sunfury : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public Sunfury(AllLegendSetup allLegendSetup)
+  public Sunfury()
     : base("Sunfury", playercolor.Violet, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    _allLegendSetup = allLegendSetup;
     StartingGold = 200;
     CinematicMusic = "BloodElfTheme";
     FoodMaximum = 250;
@@ -71,10 +68,10 @@ public sealed class Sunfury : Faction
     AddQuest(new QuestArea52(Regions.Area52Unlock));
     AddQuest(new QuestUpperNetherstorm(Regions.UpperNetherstorm));
     AddQuest(new QuestSolarian(Artifacts.EssenceofMurmur));
-    AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan,
-      _allLegendSetup.Sunfury.Kael));
+    AddQuest(new QuestSummonKil(AllLegends.Stormwind.StormwindKeep, AllLegends.Neutral.Karazhan,
+      AllLegends.Sunfury.Kael));
     AddQuest(new QuestForgottenKnowledge());
-    AddQuest(new QuestWellOfEternity(_allLegendSetup.Sunfury.Kiljaeden));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestWellOfEternity(AllLegends.Sunfury.Kiljaeden));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 }

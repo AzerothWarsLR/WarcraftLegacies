@@ -8,13 +8,10 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class ScarletCrusade : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", playercolor.LightBlue,
+  public ScarletCrusade() : base("Scarlet Crusade", playercolor.LightBlue,
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
-    _allLegendSetup = allLegendSetup;
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;
 
@@ -36,18 +33,18 @@ public sealed class ScarletCrusade : Faction
 
   private void RegisterQuests()
   {
-    var questStratholme = new QuestRebuildStratholme(Regions.StratholmeUnlock, _allLegendSetup.Scarlet.Saiden);
+    var questStratholme = new QuestRebuildStratholme(Regions.StratholmeUnlock, AllLegends.Scarlet.Saiden);
     AddQuest(questStratholme);
 
-    var questCapital = new QuestReconquerCapital(Regions.Terenas, _allLegendSetup.Lordaeron.CapitalPalace,
-      _allLegendSetup.Scarlet.Saiden, _allLegendSetup.Scarlet.Renault, _allLegendSetup.Scarlet.Sally,
-      _allLegendSetup.Scarlet.Brigitte);
+    var questCapital = new QuestReconquerCapital(Regions.Terenas, AllLegends.Lordaeron.CapitalPalace,
+      AllLegends.Scarlet.Saiden, AllLegends.Scarlet.Renault, AllLegends.Scarlet.Sally,
+      AllLegends.Scarlet.Brigitte);
     AddQuest(questCapital);
 
-    var questHearthglen = new QuestRebuildHearthglen(Regions.Hearthglen, _allLegendSetup.Lordaeron.Monastery);
+    var questHearthglen = new QuestRebuildHearthglen(Regions.Hearthglen, AllLegends.Lordaeron.Monastery);
     AddQuest(questHearthglen);
 
-    var questBrill = new QuestRebuildBrill(Regions.Brill, _allLegendSetup.Scarlet.Renault);
+    var questBrill = new QuestRebuildBrill(Regions.Brill, AllLegends.Scarlet.Renault);
     AddQuest(questBrill);
 
     var questAndorhal = new QuestRebuildAndorhal(Regions.Andorhal);
@@ -61,6 +58,6 @@ public sealed class ScarletCrusade : Faction
     var questOnslaught = new QuestOnslaught(Regions.Central_Northrend);
     AddQuest(questOnslaught);
 
-    AddQuest(new QuestCrimsonCathedral(questOnslaught, _allLegendSetup.Scarlet.CrimsonCathedral));
+    AddQuest(new QuestCrimsonCathedral(questOnslaught, AllLegends.Scarlet.CrimsonCathedral));
   }
 }

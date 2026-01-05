@@ -22,14 +22,12 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Ahnqiraj : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
   private readonly unit _gateAhnQiraj;
 
   /// <inheritdoc />
-  public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj",
+  public Ahnqiraj() : base("Ahn'qiraj",
     playercolor.Wheat, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
-    _allLegendSetup = allLegendSetup;
     _gateAhnQiraj = PreplacedWidgets.Units.Get(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
     ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
@@ -62,7 +60,7 @@ public sealed class Ahnqiraj : Faction
 
   private void RegisterQuests()
   {
-    var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock));
+    var newQuest = AddQuest(new QuestTitanJailors(Regions.QirajInsideUnlock));
     StartingQuest = newQuest;
     AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock, _gateAhnQiraj));
     AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
@@ -70,11 +68,11 @@ public sealed class Ahnqiraj : Faction
     AddQuest(new QuestFeralas(Regions.AQFeralasUnlock));
     AddQuest(new QuestEmperorConstruct());
     AddQuest(new QuestMockeryOfLife());
-    AddQuest(new QuestDesolation(_allLegendSetup.Ahnqiraj.Cthun));
-    AddQuest(new QuestFreshMeat(_allLegendSetup.Ahnqiraj.Cthun));
-    AddQuest(new QuestAwakening(_allLegendSetup.Ahnqiraj.Cthun));
-    AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.Druids.Nordrassil));
-    AddQuest(new QuestFiendThousandFaces(_allLegendSetup.Neutral.YoggSaron));
+    AddQuest(new QuestDesolation(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestFreshMeat(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestAwakening(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestWarOfTheShiftingSand(AllLegends.Ahnqiraj.Cthun, AllLegends.Druids.Nordrassil));
+    AddQuest(new QuestFiendThousandFaces(AllLegends.Neutral.YoggSaron));
   }
 
   private static void RegisterResearches()

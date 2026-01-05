@@ -15,13 +15,10 @@ namespace WarcraftLegacies.Source.Factions;
 
 public sealed class Frostwolf : Faction
 {
-  private readonly AllLegendSetup _allLegendSetup;
-
   /// <inheritdoc />
-  public Frostwolf(AllLegendSetup allLegendSetup) : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
+  public Frostwolf() : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    _allLegendSetup = allLegendSetup;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
     StartingGold = 200;
     CinematicMusic = "SadMystery";
@@ -76,13 +73,13 @@ public sealed class Frostwolf : Faction
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-    AddQuest(new QuestRagetotem(_allLegendSetup.Frostwolf.Cairne));
-    AddQuest(new QuestHighmountain(_allLegendSetup.Frostwolf.Cairne, Regions.Highmountain_Unlock));
-    AddQuest(new QuestMammoth(_allLegendSetup.Frostwolf.Rexxar));
-    AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Skywall.Vortex, _allLegendSetup.Frostwolf.Thrall));
-    AddQuest(new QuestFreeNerzhul(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Frostwolf.Thrall));
-    AddQuest(new QuestWorldShaman(_allLegendSetup.Frostwolf.Thrall));
-    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
+    AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
+    AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
+    AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Frostwolf.Thrall));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
+    AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
 
   public override void OnNotPicked()
@@ -112,7 +109,7 @@ public sealed class Frostwolf : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(_allLegendSetup.Frostwolf.Rexxar, false)
+          new ObjectiveControlLegend(AllLegends.Frostwolf.Rexxar, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -132,7 +129,7 @@ public sealed class Frostwolf : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Frostwolf.Thrall, _allLegendSetup.Frostwolf.Rexxar)
+          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Thrall, AllLegends.Frostwolf.Rexxar)
         }));
 
     TriggeredDialogueManager.Add(
@@ -153,7 +150,7 @@ public sealed class Frostwolf : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(_allLegendSetup.Frostwolf.Thrall, false)
+          new ObjectiveControlLegend(AllLegends.Frostwolf.Thrall, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -173,7 +170,7 @@ public sealed class Frostwolf : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(_allLegendSetup.Frostwolf.Cairne, _allLegendSetup.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Frostwolf.Thrall)
         }));
   }
 
