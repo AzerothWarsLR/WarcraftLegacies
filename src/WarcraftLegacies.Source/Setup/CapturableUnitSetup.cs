@@ -13,12 +13,12 @@ public static class CapturableUnitSetup
   /// </summary>
   public static void Setup()
   {
-    foreach (var fountainOfHealth in PreplacedWidgets.Units.GetAll(FourCC("nfoh")))
+    foreach (var fountainOfHealth in PreplacedWidgets.Units.GetAll(UNIT_NFOH_FOUNTAIN_OF_HEALTH))
     {
       fountainOfHealth.MakeCapturable();
     }
 
-    foreach (var tradingPost in PreplacedWidgets.Units.GetAll(FourCC("h014")))
+    foreach (var tradingPost in PreplacedWidgets.Units.GetAll(UNIT_H014_TRADING_POST_SEA))
     {
       tradingPost.MakeCapturable();
     }

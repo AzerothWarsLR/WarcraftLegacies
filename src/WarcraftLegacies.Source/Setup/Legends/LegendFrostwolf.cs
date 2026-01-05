@@ -18,7 +18,7 @@ public sealed class LegendFrostwolf
   {
     Cairne = new LegendaryHero("Cairne Bloodhoof")
     {
-      UnitType = FourCC("Ocbh"),
+      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF,
 
       DeathMessage =
         "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
@@ -40,7 +40,7 @@ public sealed class LegendFrostwolf
 
     ThunderBluff = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o00J")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_FROSTWOLF_OTHER),
       Capturable = true,
       DeathMessage =
         "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
@@ -49,13 +49,13 @@ public sealed class LegendFrostwolf
 
     DarkspearHold = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o02D")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O02D_DARKSPEAR_HOLD_FROSTWOLF_OTHER),
       Essential = true
     };
 
     Rexxar = new LegendaryHero("Rexxar")
     {
-      UnitType = FourCC("Orex"),
+      UnitType = UNIT_OREX_BEASTMASTER_FROSTWOLF,
       StartingXp = 1800
     };
 

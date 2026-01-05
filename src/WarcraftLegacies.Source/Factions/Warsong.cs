@@ -25,7 +25,7 @@ public sealed class Warsong : Faction
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    UndefeatedResearch = FourCC("R05W");
+    UndefeatedResearch = UPGRADE_R05W_WARSONG_EXISTS;
     StartingGold = 200;
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;

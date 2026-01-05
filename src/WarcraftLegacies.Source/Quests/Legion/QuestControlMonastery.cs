@@ -23,6 +23,6 @@ public sealed class QuestControlMonastery : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
   {
-    whichFaction.ModObjectLimit(FourCC("u006"), 4); //Summoning Circle
+    whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 4);
   }
 }

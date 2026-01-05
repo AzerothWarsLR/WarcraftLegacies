@@ -15,19 +15,19 @@ public sealed class LegendIllidan
 
   public LegendaryHero Vashj { get; } = new("Lady Vashj")
   {
-    UnitType = FourCC("Hvsh"),
+    UnitType = UNIT_HVSH_SEA_WITCH_ILLIDARI,
     StartingXp = 1000
   };
 
   public LegendaryHero Najentus { get; } = new("Warlord Najentus")
   {
-    UnitType = FourCC("U00S"),
+    UnitType = UNIT_U00S_HIGH_WARLORD_ILLIDARI,
     StartingXp = 5400
   };
 
   public LegendaryHero Akama { get; } = new("Akama")
   {
-    UnitType = FourCC("Naka"),
+    UnitType = UNIT_NAKA_ELDER_SAGE_ILLIDARI,
     StartingXp = 4000
   };
 

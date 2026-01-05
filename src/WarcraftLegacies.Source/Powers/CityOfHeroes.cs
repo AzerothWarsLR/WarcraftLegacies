@@ -61,7 +61,7 @@ public sealed class CityOfHeroes : Power
     whichUnit.MultiplyBaseDamage(_statMultiplier, 1);
     whichUnit.MultiplyMaxHitpoints(_statMultiplier);
     whichUnit.MultiplyMaxMana(_statMultiplier);
-    whichUnit.RemoveAbility(FourCC("Aihn"));
+    whichUnit.RemoveAbility(ABILITY_AIHN_UNIT_INVENTORY_HUMAN_YELLOW_ORANGE_PURPLE_GREEN_DG);
     whichUnit.AddAbility(HeroGlowAbilityTypeId);
     whichUnit.AddAbility(FourCC("AInv"));
     whichUnit.DefenseType = DefenseType.Hero;

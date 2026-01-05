@@ -16,7 +16,7 @@ public sealed class LegendLegion
   {
     Archimonde = new LegendaryHero("Archimonde")
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("Uwar")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_UWAR_THE_DEFILER_LEGION),
       PermaDies = true,
       DeathMessage =
         "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.",
@@ -25,21 +25,21 @@ public sealed class LegendLegion
 
     Anetheron = new LegendaryHero("Anetheron")
     {
-      UnitType = FourCC("U00L"),
+      UnitType = UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION,
       PlayerColor = playercolor.Orange,
       StartingXp = 400
     };
 
     Tichondrius = new LegendaryHero("Tichondrius")
     {
-      UnitType = FourCC("Utic"),
+      UnitType = UNIT_UTIC_THE_DARKENER_LEGION,
       PlayerColor = playercolor.Red,
       StartingXp = 1000
     };
 
     Malganis = new LegendaryHero("Mal'ganis")
     {
-      UnitType = FourCC("Umal"),
+      UnitType = UNIT_UMAL_THE_CUNNING_LEGION,
       PlayerColor = playercolor.Green
     };
 

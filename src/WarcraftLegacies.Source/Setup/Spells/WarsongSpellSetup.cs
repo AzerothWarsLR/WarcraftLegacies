@@ -40,9 +40,9 @@ public static class WarsongSpellSetup
 
     var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
     {
-      UnitType1 = FourCC("npn4"),
-      UnitType2 = FourCC("npn5"),
-      UnitType3 = FourCC("npn6"),
+      UnitType1 = UNIT_NPN4_FIRE_CHEN,
+      UnitType2 = UNIT_NPN5_STORM_CHEN,
+      UnitType3 = UNIT_NPN6_EARTH_CHEN,
       Duration = 60.0F,
       EffectTarget = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
       EffectScaleTarget = 1.0F,

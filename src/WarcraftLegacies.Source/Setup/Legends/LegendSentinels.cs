@@ -20,13 +20,13 @@ public sealed class LegendSentinels
   {
     Maiev = new LegendaryHero("Maiev Shadowsong")
     {
-      UnitType = FourCC("Ewrd"),
+      UnitType = UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
       StartingXp = 2800
     };
 
     Auberdine = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("e00J")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_E00J_AUBERDINE_SENTINELS_OTHER),
       Essential = true
     };
 
@@ -38,21 +38,21 @@ public sealed class LegendSentinels
 
     Tyrande = new LegendaryHero("Tyrande Whisperwind")
     {
-      UnitType = FourCC("Etyr"),
+      UnitType = UNIT_ETYR_HIGH_PRIESTESS_OF_ELUNE_SENTINELS,
       PlayerColor = playercolor.Cyan,
       StartingXp = 1000
     };
 
     Naisha = new LegendaryHero("Naisha")
     {
-      UnitType = FourCC("E025"),
+      UnitType = UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS,
       PlayerColor = playercolor.Pink,
       StartingXp = 1800
     };
 
     Shandris = new LegendaryHero("Shandris Feathermoon")
     {
-      UnitType = FourCC("E002"),
+      UnitType = UNIT_E002_GENERAL_OF_THE_SENTINEL_ARMY_SENTINELS,
     };
 
     VaultOfTheWardens = new Capital

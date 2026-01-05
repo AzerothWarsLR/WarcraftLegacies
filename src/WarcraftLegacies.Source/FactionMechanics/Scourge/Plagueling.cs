@@ -4,7 +4,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge;
 
 public static class Plagueling
 {
-  private static readonly int _plaguelingId = FourCC("n08G");
   private const float Duration = 15;
 
   private static void OnSell()
@@ -15,6 +14,6 @@ public static class Plagueling
 
   public static void Setup()
   {
-    PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, _plaguelingId);
+    PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, UNIT_N08G_PLAGUELING_SCOURGE);
   }
 }

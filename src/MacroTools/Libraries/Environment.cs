@@ -1,4 +1,5 @@
-﻿using WCSharp.Shared.Data;
+﻿using MacroTools.DummyCasters;
+using WCSharp.Shared.Data;
 
 namespace MacroTools.Libraries;
 
@@ -18,5 +19,5 @@ public static class Environment
   }
 
   static Environment() =>
-    _posUnit = unit.Create(player.NeutralPassive, FourCC("u00X"), 0, 0, 0);
+    _posUnit = unit.Create(player.NeutralPassive, DummyCasterManager.UnitTypeId, 0, 0, 0);
 }

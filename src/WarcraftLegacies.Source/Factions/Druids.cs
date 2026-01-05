@@ -22,7 +22,7 @@ public sealed class Druids : Faction
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    UndefeatedResearch = FourCC("R06E");
+    UndefeatedResearch = UPGRADE_R06E_DRUIDS_EXISTS;
     StartingGold = 200;
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;

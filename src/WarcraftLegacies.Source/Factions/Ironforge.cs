@@ -21,7 +21,7 @@ public sealed class Ironforge : Faction
     : base("Ironforge", playercolor.Yellow, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    UndefeatedResearch = FourCC("R05T");
+    UndefeatedResearch = UPGRADE_R05T_IRONFORGE_EXISTS;
     StartingGold = 200;
     CinematicMusic = "PursuitTheme";
     ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;

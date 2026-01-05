@@ -16,6 +16,6 @@ public static class TierReflectivePlating
 
   public static void Setup()
   {
-    PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, FourCC("R02Z"));
+    PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, UPGRADE_R02Z_REFLECTIVE_PLATING_ARATHOR_T2);
   }
 }

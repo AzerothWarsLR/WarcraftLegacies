@@ -20,7 +20,7 @@ public sealed class LegendDruids
   {
     Cenarius = new LegendaryHero("Cenarius")
     {
-      UnitType = FourCC("Ecen"),
+      UnitType = UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS,
       PermaDies = true,
       DeathMessage =
         "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
@@ -30,7 +30,7 @@ public sealed class LegendDruids
 
     Malfurion = new LegendaryHero("Malfurion")
     {
-      UnitType = FourCC("Efur"),
+      UnitType = UNIT_EFUR_ARCHDRUID_DRUIDS,
       StartingArtifacts = new()
       {
         new(item.Create(ITEM_I00C_G_HANIR_THE_MOTHER_TREE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
@@ -39,13 +39,13 @@ public sealed class LegendDruids
 
     Ursoc = new LegendaryHero("Ursoc")
     {
-      UnitType = FourCC("E00A"),
+      UnitType = UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS,
       StartingXp = 7000
     };
 
     Nordrassil = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("n002")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_N002_NORDRASSIL_DRUIDS_OTHER),
       Capturable = true,
       Essential = true
     };
@@ -65,12 +65,12 @@ public sealed class LegendDruids
 
     TempleOfTheMoon = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("o029")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_O029_TEMPLE_OF_THE_MOON_SENTINELS_OTHER),
     };
 
     Tortolla = new LegendaryHero("Tortolla")
     {
-      UnitType = FourCC("H04U"),
+      UnitType = UNIT_H04U_DEMIGOD_DRUIDS,
       StartingXp = 4000
     };
   }

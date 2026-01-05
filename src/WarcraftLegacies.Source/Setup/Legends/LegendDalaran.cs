@@ -28,19 +28,19 @@ public sealed class LegendDalaran
 
     Medivh = new LegendaryHero("Medivh")
     {
-      UnitType = FourCC("Haah"),
+      UnitType = UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN,
       StartingXp = 2800
     };
 
     Kalecgos = new LegendaryHero("Kalecgos")
     {
-      UnitType = FourCC("U027"),
+      UnitType = UNIT_U027_STEWARD_OF_MAGIC_NEXUS,
       StartingXp = 5400
     };
 
     Aegwynn = new LegendaryHero("Aegwynn")
     {
-      UnitType = FourCC("H09N"),
+      UnitType = UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN,
       StartingXp = 5400
     };
 
@@ -54,7 +54,7 @@ public sealed class LegendDalaran
 
     Antonidas = new LegendaryHero("Antonidas")
     {
-      UnitType = FourCC("Hant"),
+      UnitType = UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN,
       StartingXp = 2800,
       DeathMessage =
         "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."

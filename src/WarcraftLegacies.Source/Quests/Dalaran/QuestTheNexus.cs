@@ -39,18 +39,18 @@ public sealed class QuestTheNexus : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    completingFaction.ModObjectLimit(FourCC("h069"), -Faction.Unlimited); //Military Quarters
-    completingFaction.ModObjectLimit(FourCC("h067"), -Faction.Unlimited); //Laboratory
-    completingFaction.ModObjectLimit(FourCC("n096"), -Faction.Unlimited); //Golem
-    completingFaction.ModObjectLimit(FourCC("o02U"), -Faction.Unlimited); //Crystal artillery
-    completingFaction.ModObjectLimit(FourCC("n0AD"), -Faction.Unlimited); //Crystal Golem
-    completingFaction.ModObjectLimit(FourCC("h032"), -Faction.Unlimited); //Battlemage
-    completingFaction.ModObjectLimit(FourCC("n007"), -Faction.Unlimited); //Kirintor
-    completingFaction.ModObjectLimit(FourCC("h022"), -Faction.Unlimited); //Peasant
-    completingFaction.ModObjectLimit(FourCC("R06O"), -Faction.Unlimited); //Phase Blade
-    completingFaction.ModObjectLimit(FourCC("R061"), -Faction.Unlimited); //Forked Lightning
+    completingFaction.ModObjectLimit(UNIT_H069_MILITARY_QUARTER_DALARAN_BARRACKS, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_H067_MANAFORGE_DALARAN_SPECIALIST, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_N096_EARTH_GOLEM_DALARAN, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_O02U_CRYSTAL_ARTILLERY_DALARAN, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_N0AD_CRYSTAL_GOLEM_DALARAN_HARD_CRYSTAL_CONSTRUCTS, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_H032_BATTLEMAGE_DALARAN, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_N007_KIRIN_TOR_DALARAN_ELITE, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UNIT_H022_FARMER_DALARAN_WORKER, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UPGRADE_R06O_IMPROVED_PHASE_BLADE_DALARAN, -Faction.Unlimited);
+    completingFaction.ModObjectLimit(UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, -Faction.Unlimited);
 
-    completingFaction.ModObjectLimit(FourCC("U027"), 1); //Kalecgos
+    completingFaction.ModObjectLimit(UNIT_U027_STEWARD_OF_MAGIC_NEXUS, 1);
     completingFaction.ModObjectLimit(UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS, 1);
     completingFaction.ModObjectLimit(UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, -1);
 
@@ -58,7 +58,7 @@ public sealed class QuestTheNexus : QuestData
     completingFaction.ModObjectLimit(UNIT_H09C_WHELP_DALARAN, Faction.Unlimited);
     completingFaction.ModObjectLimit(UNIT_H099_ZEALOT_NEXUS, Faction.Unlimited);
     completingFaction.ModObjectLimit(UNIT_N0A4_BLUE_DRAGONSPAWN_NEXUS, Faction.Unlimited);
-    completingFaction.ModObjectLimit(FourCC("u025"), 12); //Elementalist
+    completingFaction.ModObjectLimit(UNIT_U025_ELEMENTALIST_NEXUS, 12);
     completingFaction.ModObjectLimit(UNIT_N09T_JUDICATOR_NEXUS, 6);
     completingFaction.ModObjectLimit(UNIT_H09A_DRACONIC_SPIRE_DALARAN_BARRACKS_ALTERNATE, Faction.Unlimited);
     completingFaction.ModObjectLimit(UNIT_H09B_BLUE_DRAGON_ROOST_DALARAN_SIEGE, Faction.Unlimited);

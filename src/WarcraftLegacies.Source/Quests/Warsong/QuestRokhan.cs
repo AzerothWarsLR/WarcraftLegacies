@@ -10,7 +10,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong;
 /// </summary>
 public sealed class QuestRokhan : QuestData
 {
-  private readonly int _rokhanResearch = FourCC("R037");
   private readonly unit _rokhan;
 
   public QuestRokhan(unit rokhan) : base("The Darkspear Champion",
@@ -36,13 +35,13 @@ public sealed class QuestRokhan : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     _rokhan.Dispose();
-    completingFaction.Player.SetTechResearched(_rokhanResearch, 1);
+    completingFaction.Player.SetTechResearched(UPGRADE_R037_QUEST_COMPLETED_THE_DARKSPEAR_CHAMPION_WARSONG, 1);
   }
 
   /// <inheritdoc/>
   protected override void OnAdd(Faction whichFaction)
   {
-    whichFaction.ModObjectLimit(_rokhanResearch, Faction.Unlimited);
+    whichFaction.ModObjectLimit(UPGRADE_R037_QUEST_COMPLETED_THE_DARKSPEAR_CHAMPION_WARSONG, Faction.Unlimited);
     _rokhan.IsInvulnerable = true;
   }
 }

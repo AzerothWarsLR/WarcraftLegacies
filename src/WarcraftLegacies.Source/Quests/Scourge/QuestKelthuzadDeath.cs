@@ -42,7 +42,7 @@ public sealed class QuestKelthuzadDies : QuestData
 
     if (_objectiveEitherOf.ObjectiveA.Progress == QuestProgress.Complete)
     {
-      _kelthuzad.UnitType = FourCC("U00M");
+      _kelthuzad.UnitType = UNIT_U00M_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_GHOST;
       _kelthuzad.PermaDies = false;
       _kelthuzad.ForceCreate(whichFaction.Player, Regions.FTSummon.Center,
         270);

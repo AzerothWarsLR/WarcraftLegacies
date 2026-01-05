@@ -17,7 +17,7 @@ public sealed class LegendQuelthalas
   {
     Silvermoon = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(FourCC("h003")),
+      Unit = PreplacedWidgets.Units.Get(UNIT_H003_SILVERMOON_PALACE_QUELTHALAS_OTHER),
       DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
       Essential = true
     };

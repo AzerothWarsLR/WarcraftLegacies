@@ -28,7 +28,7 @@ public sealed class QuestArea52 : QuestData
     AddObjective(new ObjectiveExpire(600, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => filterUnit.UnitType != FourCC("ngme"));
+      filterUnit => filterUnit.UnitType != UNIT_NGME_GOBLIN_MERCHANT);
   }
 
   /// <inheritdoc/>

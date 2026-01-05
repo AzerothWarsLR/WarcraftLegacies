@@ -85,36 +85,36 @@ public static class Artifacts
 
   static Artifacts()
   {
-    CrownOfStormwind = new Artifact(item.Create(FourCC("I002"), DummyX, DummyY));
+    CrownOfStormwind = new Artifact(item.Create(ITEM_I002_CROWN_OF_STORMWIND, DummyX, DummyY));
     PreplacedWidgets.Units.Get(UNIT_N021_HOGGER).AddItem(CrownOfStormwind.Item);
     ArtifactManager.Register(CrownOfStormwind);
 
-    ScarabGong = new Artifact(item.Create(FourCC("ISGC"), DummyX, DummyY));
+    ScarabGong = new Artifact(item.Create(ITEM_ISGC_THE_SCARAB_GONG, DummyX, DummyY));
     PreplacedWidgets.Units.Get(UNIT_NJTR_JONATHAN_THE_REVELATOR).AddItem(ScarabGong.Item);
     ArtifactManager.Register(ScarabGong);
 
     EyeOfSargeras = new Artifact(item.Create(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
     ArtifactManager.Register(EyeOfSargeras);
 
-    HelmOfDomination = new Artifact(item.Create(FourCC("I01Y"), DummyX, DummyY));
+    HelmOfDomination = new Artifact(item.Create(ITEM_I01Y_HELM_OF_DOMINATION, DummyX, DummyY));
     var tempUnit = PreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN);
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(HelmOfDomination.Item);
     ArtifactManager.Register(HelmOfDomination);
 
-    CrownOfLordaeron = new Artifact(item.Create(FourCC("I001"), DummyX, DummyY));
+    CrownOfLordaeron = new Artifact(item.Create(ITEM_I001_CROWN_OF_LORDAERON, DummyX, DummyY));
     tempUnit = PreplacedWidgets.Units.Get(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON);
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(CrownOfLordaeron.Item);
     ArtifactManager.Register(CrownOfLordaeron);
 
-    var tempArtifact = new Artifact(item.Create(FourCC("klmm"), DummyX, DummyY)); //Killmaim
+    var tempArtifact = new Artifact(item.Create(ITEM_KLMM_KILLMAIM, DummyX, DummyY));
     tempUnit = PreplacedWidgets.Units.Get(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE);
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
-    ScepterOfTheQueen = new Artifact(item.Create(FourCC("I00I"), DummyX, DummyY));
+    ScepterOfTheQueen = new Artifact(item.Create(ITEM_I00I_SCEPTER_OF_THE_QUEEN, DummyX, DummyY));
     tempUnit = PreplacedWidgets.Units.Get(UNIT_N085_THE_ATHENAEUM_SENTINELS_OTHER);
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(ScepterOfTheQueen.Item);
@@ -135,7 +135,7 @@ public static class Artifacts
 
     RubyFragment = new Artifact(item.Create(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
     tempUnit = PreplacedWidgets.Units.Get(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB);
-    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId); //Jin)do
+    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(RubyFragment.Item);
     ArtifactManager.Register(RubyFragment);
 
@@ -145,7 +145,7 @@ public static class Artifacts
     tempUnit.AddItem(AzureFragment.Item);
     ArtifactManager.Register(AzureFragment);
 
-    EssenceofMurmur = new Artifact(item.Create(FourCC("I00K"), DummyX, DummyY));
+    EssenceofMurmur = new Artifact(item.Create(ITEM_I00K_ESSENCE_OF_MURMUR, DummyX, DummyY));
     PreplacedWidgets.Units.Get(UNIT_N03T_MURMUR_CREEP).AddItem(EssenceofMurmur.Item);
     ArtifactManager.Register(EssenceofMurmur);
 
@@ -153,19 +153,19 @@ public static class Artifacts
     PreplacedWidgets.Units.Get(UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN).AddItem(EmeraldFragment.Item);
     ArtifactManager.Register(EmeraldFragment);
 
-    tempArtifact = new Artifact(item.Create(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
+    tempArtifact = new Artifact(item.Create(ITEM_ARSH_SHROUD_OF_NOZDORMU, DummyX, DummyY));
     tempUnit = PreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS);
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
-    HornOfCenarius = new Artifact(item.Create(FourCC("cnhn"), DummyX, DummyY));
+    HornOfCenarius = new Artifact(item.Create(ITEM_CNHN_HORN_OF_CENARIUS, DummyX, DummyY));
     tempUnit = PreplacedWidgets.Units.Get(UNIT_NHCN_HORN_OF_CENARIUS_PEDESTAL_CREEP);
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(HornOfCenarius.Item);
     ArtifactManager.Register(HornOfCenarius);
 
-    tempArtifact = new Artifact(item.Create(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
+    tempArtifact = new Artifact(item.Create(ITEM_KGAL_KEG_OF_THUNDERWATER, DummyX, DummyY));
     PreplacedWidgets.Units.GetClosest(UNIT_HMTM_MORTAR_TEAM_IRONFORGE, 15109, -895).AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
