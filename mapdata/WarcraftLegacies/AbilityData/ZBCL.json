@@ -1,0 +1,97 @@
+{
+  "OldId": 1818447681,
+  "NewId": 1279476314,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemies. Each jump deals less damage. |n|n|cffffcc00Level 1|r - \u003CAOcl,DataA1\u003E damage, jumps \u003CAOcl,DataB1\u003E times. |n|cffffcc00Level 2|r - \u003CAOcl,DataA2\u003E damage, jumps \u003CAOcl,DataB2\u003E times. |n|cffffcc00Level 3|r - \u003CAOcl,DataA3\u003E damage, jumps \u003CAOcl,DataB3\u003E times.  |n|cffffcc00Level 4|r - \u003CAOcl,DataA4\u003E damage, jumps \u003CAOcl,DataB4\u003E times."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Chain Lightning - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a bolt of lightning that bounces up to \u003CZBCL,DataB4\u003E times, dealing \u003CZBCL,DataA4\u003E damage on the primary target. Each jump deals less damage."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Thrall)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a bolt of lightning that bounces up to \u003CZBCL,DataB1\u003E times, dealing \u003CZBCL,DataA1\u003E damage on the primary target. Each jump deals less damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a bolt of lightning that bounces up to \u003CZBCL,DataB2\u003E times, dealing \u003CZBCL,DataA2\u003E damage on the primary target. Each jump deals less damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a bolt of lightning that bounces up to \u003CZBCL,DataB3\u003E times, dealing \u003CZBCL,DataA3\u003E damage on the primary target. Each jump deals less damage."
+    }
+  ]
+}
