@@ -347,7 +347,7 @@ public sealed class MapDataToMapConverter(MapDataToMapConverterOptions options)
   {
     List<DirectoryEnumerationOptions> fileDirectories = [];
 
-    if (!options.IncludeFromMap.HasFlag(IncludeFromMap.Imports))
+    if (options.IncludeFromMap.HasFlag(IncludeFromMap.Imports))
     {
       var importsDirectory = options.MapDataPaths.ImportsPath;
       fileDirectories.AddRange(new List<DirectoryEnumerationOptions>
