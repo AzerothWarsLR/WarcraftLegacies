@@ -6,3 +6,4 @@
 public abstract class UnitTypeTrait
 {
 }
+

@@ -28,6 +28,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   private const string UpgradesTo = "|cfff5962dUpgrades to:|r ";
   private const string ItemsSold = "|cfff5962dSells items:|r ";
   private const string UnitsSold = "|cfff5962dSells units:|r ";
+  private const string FoodProduced = "|cfff5962dFood produced:|r ";
   private const string RolePrefix = "|cff2fc6ba";
 
   private readonly ObjectInfoRepository _objectInfoRepository = new();
@@ -79,6 +80,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     AppendHeroAbilities(tooltipBuilder, unit);
     AppendSoldItems(tooltipBuilder, unit);
     AppendUnitsSold(tooltipBuilder, unit);
+    AppendFoodProduced(tooltipBuilder, unit);
 
     if (hasObjectInfo)
     {
@@ -299,6 +301,16 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
         ? "|cffffcc00Attacks land and air units.|r"
         : "|cffffcc00Attacks land units.|r");
     }
+  }
+
+  private static void AppendFoodProduced(StringBuilder tooltipBuilder, Unit unit)
+  {
+    if (unit.StatsFoodProduced == 0)
+    {
+      return;
+    }
+
+    tooltipBuilder.Append($"{LineSeparator}{FoodProduced}{unit.StatsFoodProduced}");
   }
 
   /// <summary>
