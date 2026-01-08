@@ -25,7 +25,7 @@ public sealed class QuestHellfireCitadel : QuestData
     "The clans holding Hellfire Citadel do not respect Kargath's authority yet, Magtheridon is being kept alive by Illidan, if we break him, he could serve us well.",
     @"ReplaceableTextures\CommandButtons\BTNFelOrcFortress.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N01J_ZANGARMARSH));
+    AddObjective(new ObjectiveControlPoint(UNIT_MD01_WEST_ZANGARMARSH));
     AddObjective(new ObjectiveControlPoint(UNIT_N00B_NAGRAND));
     AddObjective(new ObjectiveControlPoint(UNIT_N0CV_HALAAR));
     AddObjective(new ObjectiveUpgrade(UNIT_O030_FORTRESS_FEL_T3, UNIT_O02Y_GREAT_HALL_FEL_T1));

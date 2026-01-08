@@ -1,19 +1,19 @@
 [
   {
-    "TypeId": 1244737646,
+    "TypeId": 825255021,
     "Variation": 0,
     "Position": {
       "X": -4032,
       "Y": -25152,
       "Z": 416.89062
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1244737646,
+    "SkinId": 825255021,
     "Flags": 2,
     "OwnerId": 24,
     "Unk1": 0,
@@ -30,7 +30,11 @@
     "HeroIntelligence": 0,
     "InventoryData": [],
     "AbilityData": [],
-    "RandomDataMode": -1,
+    "RandomDataMode": 0,
+    "RandomData": {
+      "Level": 1,
+      "Class": 0
+    },
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
     "CreationNumber": 711

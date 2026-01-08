@@ -1,47 +1,11 @@
 [
   {
-    "TypeId": 1919381614,
+    "TypeId": 1735618158,
     "Variation": 0,
     "Position": {
-      "X": 5504,
-      "Y": -29696,
-      "Z": 532.5
-    },
-    "Rotation": 4.7123895,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1919381614,
-    "Flags": 2,
-    "OwnerId": 15,
-    "Unk1": 0,
-    "Unk2": 0,
-    "HP": -1,
-    "MP": -1,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "GoldAmount": 0,
-    "TargetAcquisition": -1,
-    "HeroLevel": 1,
-    "HeroStrength": 0,
-    "HeroAgility": 0,
-    "HeroIntelligence": 0,
-    "InventoryData": [],
-    "AbilityData": [],
-    "RandomDataMode": -1,
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
-    "CreationNumber": 558
-  },
-  {
-    "TypeId": 1227894894,
-    "Variation": 0,
-    "Position": {
-      "X": 5376,
-      "Y": -30080,
-      "Z": 484
+      "X": 5536,
+      "Y": -31456,
+      "Z": 484.66678
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -49,7 +13,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1227894894,
+    "SkinId": 1735618158,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -69,6 +33,42 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 55
+    "CreationNumber": 1851
+  },
+  {
+    "TypeId": 1396060264,
+    "Variation": 0,
+    "Position": {
+      "X": 5856,
+      "Y": -31264,
+      "Z": 503.35004
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1396060264,
+    "Flags": 2,
+    "OwnerId": 27,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": -1,
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 978
   }
 ]
