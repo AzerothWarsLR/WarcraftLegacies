@@ -69,7 +69,8 @@ public static class EliteNames
       "Elowen Frostflare",
       "Leios Sunward"
 
-    };NamePool[UNIT_O01V_GREYGUARD_GILNEAS] = new List<string>
+    };
+    NamePool[UNIT_O01V_GREYGUARD_GILNEAS] = new List<string>
     {
       "Fenric the Howler",
       "Ravok Nightfang",
@@ -137,7 +138,8 @@ public static class EliteNames
       "Drakthar Gorehand",
       "Horgath Bloodmaw",
       "Vorrak the Ravager"
-    };NamePool[UNIT_NNRG_ROYAL_GUARD_ILLIDARI] = new List<string>
+    };
+    NamePool[UNIT_NNRG_ROYAL_GUARD_ILLIDARI] = new List<string>
     {
       "Zytheris the Vigilant",
       "Malirion Tideblade",

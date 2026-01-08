@@ -14,7 +14,7 @@ public static class EliteNameSystem
     private static readonly Dictionary<int, HashSet<string>> NamesInUse = new();
 
     /// <summary>
-    /// Sets up the system to automatically apply elite names when elite units are created or die.
+    /// Sets up the system to automatically apply unique names when elite units are created or die.
     /// Only registers events for unit types that have names defined.
     /// </summary>
     public static void Setup()
@@ -68,7 +68,6 @@ public static class EliteNameSystem
         }
 
         var availableNames = new List<string>();
-
         foreach (var name in EliteNames.NamePool[unit.UnitType])
         {
             if (!NamesInUse[unit.UnitType].Contains(name))
