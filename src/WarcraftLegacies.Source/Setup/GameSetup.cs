@@ -11,6 +11,7 @@ using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
+using WarcraftLegacies.Source.UniqueUnitNames;
 using WarcraftLegacies.Source.UnitTypes;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -93,6 +94,7 @@ public static class GameSetup
     RuntimeIntegrityChecker.Setup();
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
+    EliteNameSystem.Setup();
   }
 
   private static void SetupControlPointManager()
