@@ -11,17 +11,21 @@ namespace WarcraftLegacies.Source.UniqueUnitNames;
 public static class EliteNameSystem
 {
     private static readonly Random Random = new Random();
-    private static readonly Dictionary<int, HashSet<string>> NamesInUse = new Dictionary<int, HashSet<string>>();
+    private static readonly Dictionary<int, HashSet<string>> NamesInUse = new();
 
     /// <summary>
-    /// Sets up the system to automatically apply elite names when units are created or die.
+    /// Sets up the system to automatically apply elite names when elite units are created or die.
+    /// Only registers events for unit types that have names defined.
     /// </summary>
     public static void Setup()
     {
         EliteNames.Init();
 
-        PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated);
-        PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath);
+        foreach (var unitType in EliteNames.NamePool.Keys)
+        {
+            PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, unitType);
+            PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, unitType);
+        }
     }
 
     private static void OnUnitCreated()
@@ -39,11 +43,6 @@ public static class EliteNameSystem
     {
         var unit = @event.Unit;
         if (unit == null)
-        {
-            return;
-        }
-
-        if (!EliteNames.NamePool.ContainsKey(unit.UnitType))
         {
             return;
         }
@@ -69,6 +68,7 @@ public static class EliteNameSystem
         }
 
         var availableNames = new List<string>();
+
         foreach (var name in EliteNames.NamePool[unit.UnitType])
         {
             if (!NamesInUse[unit.UnitType].Contains(name))
