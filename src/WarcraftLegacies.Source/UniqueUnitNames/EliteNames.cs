@@ -32,7 +32,6 @@ public static class EliteNames
       "Malak the Avenger",
       "Manadar the Healer",
       "Morlune the Mighty",
-      "Uther Lightbringer",
       "Zann the Defender"
     };
 
@@ -183,8 +182,8 @@ public static class EliteNames
       "Kelen the Destroyer",
       "Lorn Bloodseeker",
       "Marakanis Starfury",
-      "Sylvos Windrunner",
       "Tanin Hawkwing",
+      "Tenris Mirkblood",
       "Tenris Mirkblood",
       "Tyoril Sunchaser",
       "Vandrel Flamewarden",
