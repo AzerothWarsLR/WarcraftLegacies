@@ -57,7 +57,7 @@ public static class UnitCategoryExtensions
       case UnitCategory.Lighthouse:
         return "Lighthouse";
       case UnitCategory.Farm:
-        return "Farm";
+        return "Food";
       case UnitCategory.Altar:
         return "Altar";
       case UnitCategory.Specialist:
