@@ -70,7 +70,7 @@ public sealed class Illidari : Faction
     StartingQuest = flameAndSorrow;
     AddQuest(flameAndSorrow);
 
-    var questBlackTemple = new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, AllLegends.Naga.Illidan);
+    var questBlackTemple = new QuestBlackTemple(flameAndSorrow);
     AddQuest(questBlackTemple);
 
     var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, AllLegends.Naga.Vashj);
