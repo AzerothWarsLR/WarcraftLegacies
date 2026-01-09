@@ -23,7 +23,7 @@ public static class IllidariSpellSetup
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
       OpeningDelay = 20,
       ClosingDelay = 15,
-      TargetLocation = new Point(5030, -30000),
+      TargetLocation = new Point(6930, -30177),
       Color = new Color(255, 255, 250, 255)
     });
 
