@@ -287,7 +287,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
@@ -356,10 +356,6 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA4\u003E damage a second for \u003CA0F9,HeroDur4\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur4\u003E seconds, during which units within continue to take \u003CA0F9,DataC4\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
     }
   ]
 }
