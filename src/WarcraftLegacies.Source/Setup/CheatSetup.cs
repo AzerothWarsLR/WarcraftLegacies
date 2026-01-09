@@ -60,6 +60,7 @@ public static class CheatSetup
     commandManager.Register(new CheatGetWaygateDestination());
     commandManager.Register(new CheatPause());
     commandManager.Register(new CheatRemovePower());
+    commandManager.Register(new CheatLimit());
     TestMode.Setup(commandManager);
     CheatSkipCinematic.Init();
   }
