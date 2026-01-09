@@ -15,7 +15,7 @@ public static class EliteNameSystem
   {
     EliteNames.Init();
 
-    foreach (var unitType in EliteNames._namePool.Keys)
+    foreach (var unitType in EliteNames.NamePool.Keys)
     {
       PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, unitType);
       PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, unitType);
@@ -49,7 +49,7 @@ public static class EliteNameSystem
 
   private static void AssignName(unit unit)
   {
-    if (!EliteNames._namePool.TryGetValue(unit.UnitType, out var pool))
+    if (!EliteNames.NamePool.TryGetValue(unit.UnitType, out var pool))
     {
       return;
     }
