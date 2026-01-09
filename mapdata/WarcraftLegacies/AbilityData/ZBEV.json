@@ -1,0 +1,81 @@
+{
+  "OldId": 1986348353,
+  "NewId": 1447379546,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.21
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.28
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.14
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Illidan)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - \u003CZBEV,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CZBEV,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CZBEV,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CZBEV,DataA4,%\u003E% chance that an opponent misses."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Evasion - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CZBEV,DataA4,%\u003E% chance to avoid an attack."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CZBEV,DataA1,%\u003E% chance to avoid an attack."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CZBEV,DataA2,%\u003E% chance to avoid an attack."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CZBEV,DataA3,%\u003E% chance to avoid an attack."
+    }
+  ]
+}
