@@ -83,7 +83,7 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": "R00Q"
+      "Value": "ZB24,R00Q,ZB74"
     },
     {
       "Id": 1986359925,
@@ -96,7 +96,7 @@
     {
       "Id": 1634890869,
       "Type": 3,
-      "Value": "h00H,uaco"
+      "Value": "zbli,h00H,uaco"
     },
     {
       "Id": 1887007861,
@@ -176,12 +176,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Forsaken)"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Upgrade to Black Citadel to enable the production of additional types of structures and units. "
+      "Value": ""
     }
   ]
 }
