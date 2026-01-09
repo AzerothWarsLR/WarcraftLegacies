@@ -1,13 +1,13 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// Causes the unit to instantly kill enemies who drop below a certain threshold.
 /// </summary>
-public sealed class Execute : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class Execute : UnitTrait, IAppliesEffectOnDamage
 {
   private const string Effect = "Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl";
 

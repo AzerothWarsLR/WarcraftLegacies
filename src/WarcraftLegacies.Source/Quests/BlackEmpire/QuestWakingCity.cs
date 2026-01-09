@@ -7,7 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 

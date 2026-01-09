@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits;
 

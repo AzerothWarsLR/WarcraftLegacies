@@ -1,11 +1,11 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// Causes the unit to summon a unit upon death.
 /// </summary>
-public sealed class CreateCorpseOnDeath : UnitTypeTrait, IEffectOnDeath
+public sealed class CreateCorpseOnDeath : UnitTrait, IEffectOnDeath
 {
 
   /// <summary>

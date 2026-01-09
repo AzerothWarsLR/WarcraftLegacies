@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup;

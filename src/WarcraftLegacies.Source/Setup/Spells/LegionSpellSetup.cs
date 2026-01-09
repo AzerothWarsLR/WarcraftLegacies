@@ -1,6 +1,6 @@
 ﻿using MacroTools.Data;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.HealingWavePlus;
 using WarcraftLegacies.Source.Spells.Slipstream;

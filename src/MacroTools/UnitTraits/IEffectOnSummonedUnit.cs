@@ -1,4 +1,4 @@
-﻿namespace MacroTools.UnitTypeTraits;
+﻿namespace MacroTools.UnitTraits;
 
 /// <summary>
 /// Provides methods for responding to a unit summoning another unit.

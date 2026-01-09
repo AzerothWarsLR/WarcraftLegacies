@@ -1,6 +1,6 @@
 ﻿using MacroTools.Data;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WarcraftLegacies.Source.UnitTypeTraits;
@@ -9,12 +9,12 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Setup.Spells;
 
 /// <summary>
-/// Responsible for setting up all Illidari <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
+/// Responsible for setting up all Illidari <see cref="Spell"/>s and <see cref="UnitTrait"/>s.
 /// </summary>
 public static class IllidariSpellSetup
 {
   /// <summary>
-  /// Sets up all Illidari <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
+  /// Sets up all Illidari <see cref="Spell"/>s and <see cref="UnitTrait"/>s.
   /// </summary>
   public static void Setup()
   {

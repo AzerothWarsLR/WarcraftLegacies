@@ -1,12 +1,12 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// Applies a damage multiplier to attacks based on ability level (only affects attack damage).
 /// </summary>
-public sealed class DamageMultiplierOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class DamageMultiplierOnAttack : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

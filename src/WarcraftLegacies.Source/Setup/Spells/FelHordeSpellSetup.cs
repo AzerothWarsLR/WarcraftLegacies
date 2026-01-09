@@ -1,5 +1,5 @@
 ﻿using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.HealingWavePlus;
 using WarcraftLegacies.Source.UnitTypeTraits;
@@ -8,7 +8,7 @@ using WarcraftLegacies.Source.UnitTypeTraits;
 namespace WarcraftLegacies.Source.Setup.Spells;
 
 /// <summary>
-/// Responsible for setting up all Fel Horde <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
+/// Responsible for setting up all Fel Horde <see cref="Spell"/>s and <see cref="UnitTrait"/>s.
 /// </summary>
 public static class FelHordeSpellSetup
 {

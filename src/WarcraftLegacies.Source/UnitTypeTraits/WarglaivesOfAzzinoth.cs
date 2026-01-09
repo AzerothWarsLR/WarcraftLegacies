@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using MacroTools.Utils;
 using WCSharp.Effects;
 
@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// When the unit attacks, it deals extra damage in a radius around the attacked unit. Deals extra damage to demons.
 /// </summary>
-public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class WarglaivesOfAzzinoth : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

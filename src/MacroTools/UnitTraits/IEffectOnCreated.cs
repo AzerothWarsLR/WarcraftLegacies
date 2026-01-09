@@ -1,4 +1,4 @@
-﻿namespace MacroTools.UnitTypeTraits;
+﻿namespace MacroTools.UnitTraits;
 
 /// <summary>
 /// Called when a unit of the specified type is created or revived.

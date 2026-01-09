@@ -1,12 +1,12 @@
 ﻿using MacroTools.Systems;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// Gates are buildings that can open and close.
 /// </summary>
-public sealed class Gate : UnitTypeTrait, IEffectOnUpgrade, IEffectOnDeath, IEffectOnSpellFinish, IEffectOnCancelUpgrade, IEffectOnCreated
+public sealed class Gate : UnitTrait, IEffectOnUpgrade, IEffectOnDeath, IEffectOnSpellFinish, IEffectOnCancelUpgrade, IEffectOnCreated
 {
   /// <summary>Gates will gain this many hit points, as a percentage of their maximum, per turn.</summary>
   public const float HitPointPercentagePerTurn = 0.05f;

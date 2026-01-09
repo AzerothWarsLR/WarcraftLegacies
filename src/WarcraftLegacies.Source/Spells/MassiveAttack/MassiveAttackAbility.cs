@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Spells.MassiveAttack;
@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack;
 /// When the unit deals damage, it casts Shockwave on the target.
 /// The Shockwave deals damage based on the caster's average attack damage.
 /// </summary>
-public sealed class MassiveAttackAbility : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class MassiveAttackAbility : UnitTrait, IAppliesEffectOnDamage
 {
   /// <summary>
   /// Damage is equal to this percentage of the caster's attack damage.
