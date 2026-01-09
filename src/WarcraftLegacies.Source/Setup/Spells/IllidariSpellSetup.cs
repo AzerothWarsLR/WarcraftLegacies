@@ -27,23 +27,6 @@ public static class IllidariSpellSetup
       Color = new Color(255, 255, 250, 255)
     });
 
-    UnitTypeTraitRegistry.Register(new WarglaivesOfAzzinoth(ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_ILLIDAN)
-    {
-      Radius = 150,
-      DamageBase = 4,
-      DamageLevel = 14,
-      DamageMultiplierAgainstDemons = 1.2f,
-      Effect = @"war3mapImported\Culling Cleave.mdx",
-      EffectScale = 1.2f,
-      DamageType = damagetype.Magic
-    }, new[]
-    {
-      UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN,
-      UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
-      UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
-      UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
-    });
-
     var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
     {
       BaseDamage = 150,
