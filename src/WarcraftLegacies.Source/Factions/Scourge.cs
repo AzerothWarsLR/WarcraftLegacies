@@ -80,14 +80,17 @@ public sealed class Scourge : Faction
         ResearchFunc = researchingPlayer =>
         {
           var faction = researchingPlayer.GetPlayerData().Faction;
-          faction?.ModObjectLimit(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, -Unlimited);
-          faction?.ModObjectLimit(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, -Unlimited);
+          faction?.ModObjectLimit(UNIT_ZBLI_LICH_SCOURGE_ELITE, 6);
         }
       },
-      new ChangeObjectLimitResearch(UPGRADE_ZB24_DEATH_KNIGHTS_SCOURGE, 0)
+      new CustomResearch(UPGRADE_ZB24_DEATH_KNIGHTS_SCOURGE, 0)
       {
-        ObjectId = UNIT_ZBLI_LICH_SCOURGE_ELITE,
-        LimitChange = -Unlimited
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, 6);
+          faction?.ModObjectLimit(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, 1);
+        }
       });
   }
 
