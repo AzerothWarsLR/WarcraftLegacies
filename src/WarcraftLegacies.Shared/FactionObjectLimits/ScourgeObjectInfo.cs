@@ -40,8 +40,14 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_UNEC_NECROMANCER_SCOURGE, Unlimited, new List<UnitCategory> { Support, Summoner });
     yield return new(UNIT_UOBS_OBSIDIAN_STATUE_SCOURGE, 4, Support);
     yield return new(UNIT_UFRO_FROST_WYRM_SCOURGE, 4, new List<UnitCategory> { Flyer, Destroyer });
-    yield return new(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, 6, new List<UnitCategory> { Elite, Tank, Summoner });
-    yield return new(UNIT_ZBLI_LICH_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Destroyer, Support });
+    yield return new(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Tank, Summoner })
+    {
+      LimitTooltipOverride = 6
+    };
+    yield return new(UNIT_ZBLI_LICH_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Destroyer, Support, Summoner })
+    {
+      LimitTooltipOverride = 6
+    };
     yield return new(UNIT_UBSP_OBSIDIAN_DESTROYER_SCOURGE, 6, new List<UnitCategory> { Flyer, Destroyer, AntiMage });
     yield return new(UNIT_NFGL_PLAGUE_TITAN_SCOURGE, 2, new List<UnitCategory> { Tank, Summoner });
 
@@ -71,7 +77,7 @@ public static class ScourgeObjectInfo
     yield return new(UPGRADE_RUGF_GHOUL_FRENZY_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUNE_NECROMANCER_ADEPT_TRAINING_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUWB_WEB_RED_RESEARCH, Unlimited);
-    yield return new(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, Unlimited);
+    yield return new(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, 0);
     yield return new(UPGRADE_R01X_EPIDEMIC_SCOURGE, Unlimited);
     yield return new(UPGRADE_R01D_HOWL_OF_TERROR_SCOURGE, Unlimited);
     yield return new(UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, Unlimited);
