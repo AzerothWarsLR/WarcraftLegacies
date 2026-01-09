@@ -41,7 +41,7 @@ public static class Regions
   public static Rectangle Biodome3 { get; set; } = new Rectangle(864f, -20512f, 1408f, -20000f);
   public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-25600f, -10496f, -22880f, -7520f);
   public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
-  public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
+  public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2656f, -31904f, 8672f, -28448f);
   public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
   public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
   public static Rectangle BloodPactBattle { get; set; } = new Rectangle(-12192f, 2752f, -11776f, 3072f);
@@ -152,7 +152,7 @@ public static class Regions
   public static Rectangle HonorHold { get; set; } = new Rectangle(2208f, -27360f, 3936f, -26016f);
   public static Rectangle Ice_Crown { get; set; } = new Rectangle(-4480f, 19616f, -2272f, 24256f);
   public static Rectangle IcecrownShipyard { get; set; } = new Rectangle(-6976f, 22304f, -1248f, 24992f);
-  public static Rectangle IllidanBlackTempleUnlock { get; set; } = new Rectangle(3680f, -31680f, 6720f, -28480f);
+  public static Rectangle IllidanBlackTempleUnlock { get; set; } = new Rectangle(3392f, -32256f, 8640f, -27872f);
   public static Rectangle IllidanBoat2 { get; set; } = new Rectangle(3616f, 7456f, 3744f, 7616f);
   public static Rectangle IllidanBoat3 { get; set; } = new Rectangle(4416f, 7072f, 4480f, 7136f);
   public static Rectangle IllidanBoat4 { get; set; } = new Rectangle(-5280f, 3168f, -5248f, 3200f);
@@ -160,7 +160,7 @@ public static class Regions
   public static Rectangle IllidanLast { get; set; } = new Rectangle(-18720f, 3712f, -18688f, 3744f);
   public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-640f, 5152f, 1536f, 6720f);
   public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
-  public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
+  public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 8608f, -18208f);
   public static Rectangle Invasion1 { get; set; } = new Rectangle(-13248f, 3776f, -10656f, 4896f);
   public static Rectangle Invasion2 { get; set; } = new Rectangle(-14624f, 5184f, -13664f, 8992f);
   public static Rectangle Invasion3 { get; set; } = new Rectangle(-17856f, 5792f, -15680f, 9120f);
@@ -221,7 +221,7 @@ public static class Regions
   public static Rectangle Nyalotha { get; set; } = new Rectangle(-28672f, -11936f, -22016f, -3360f);
   public static Rectangle Orgrimmar { get; set; } = new Rectangle(-9824f, -2080f, -5824f, 1248f);
   public static Rectangle OrgrimmarFlight { get; set; } = new Rectangle(-9728f, -800f, -9568f, -640f);
-  public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
+  public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32224f, 6432f, -18208f);
   public static Rectangle OutlandToArgus { get; set; } = new Rectangle(22848f, -28224f, 23360f, -27808f);
   public static Rectangle Plague_1 { get; set; } = new Rectangle(6688f, 7360f, 7872f, 10144f);
   public static Rectangle Plague_2 { get; set; } = new Rectangle(9920f, 9024f, 13824f, 10144f);

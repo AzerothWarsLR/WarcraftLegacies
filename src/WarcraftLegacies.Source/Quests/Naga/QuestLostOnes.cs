@@ -18,7 +18,7 @@ public sealed class QuestLostOnes : QuestData
     "The native Draenei of Outland, led by Elder Sage Akama, aided Illidan in his assault on the Black Temple, but abandoned him when he let Magtheridon live. With invaders on Outland's doorstep, the Draenei must be forced back into the fold.",
     @"ReplaceableTextures\CommandButtons\BTNDranaiAkama.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N01J_ZANGARMARSH));
+    AddObjective(new ObjectiveControlPoint(UNIT_MD02_EAST_ZANGARMARSH));
     AddObjective(new ObjectiveControlPoint(UNIT_N02N_BLADE_S_EDGE_MOUNTAINS));
     AddObjective(new ObjectiveControlPoint(UNIT_N00B_NAGRAND));
     AddObjective(new ObjectiveControlPoint(UNIT_N0CW_FARAHLON));
