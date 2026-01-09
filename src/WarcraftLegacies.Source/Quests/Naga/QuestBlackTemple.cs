@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Naga;
 
@@ -22,7 +23,7 @@ public sealed class QuestBlackTemple : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
   /// </summary>
-  public QuestBlackTemple(QuestData prerequisite, Rectangle rescueRect, LegendaryHero illidan) : base("Return to Outland",
+  public QuestBlackTemple(QuestData prerequisite) : base("Return to Outland",
     "Illidan's servants in Outland have been left to their own devices for too long; he must return swiftly if he is to prepare them for the coming war.",
     @"ReplaceableTextures\CommandButtons\BTNWarpPortal.blp")
   {
@@ -34,11 +35,11 @@ public sealed class QuestBlackTemple : QuestData
     };
 
     AddObjective(questCompleteObjective);
-    AddObjective(new ObjectiveLegendInRect(illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
+    AddObjective(new ObjectiveLegendInRect(AllLegends.Naga.Illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
     AddObjective(new ObjectiveExpire(660, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_RETURN_TO_OUTLAND;
-    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _rescueUnits = Regions.IllidanBlackTempleUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     Knowledge = 5;
   }
 
@@ -46,7 +47,26 @@ public sealed class QuestBlackTemple : QuestData
   public override string RewardFlavour => "Illidan returns triumphant to Black Temple, the seat of his power. The orcs and demons of Outland hail his coming.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "Gain control of the Black Temple and learn to train Lady Vashj from the Altar of the Betrayer";
+  protected override string RewardDescription => "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, and abandon your base in the Broken Isles";
+
+  /// <inheritdoc />
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player.RescueGroup(_rescueUnits);
+
+    if (completingFaction.Player == null)
+    {
+      return;
+    }
+
+    completingFaction.Player.PlayMusicThematic("IllidansTheme");
+    AbandonBrokenIsles(completingFaction.Player);
+    var illidan = AllLegends.Naga.Illidan.Unit;
+    if (illidan != null)
+    {
+      completingFaction.Player.RepositionCamera(illidan.X, illidan.Y);
+    }
+  }
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
@@ -58,10 +78,34 @@ public sealed class QuestBlackTemple : QuestData
     rescuer.RescueGroup(_rescueUnits);
   }
 
-  /// <inheritdoc />
-  protected override void OnComplete(Faction completingFaction)
+  private static void AbandonBrokenIsles(player completingPlayer)
   {
-    completingFaction.Player.RescueGroup(_rescueUnits);
-    completingFaction.Player?.PlayMusicThematic("IllidansTheme");
+    foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(completingPlayer))
+    {
+      if (unit.UnitType == UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR)
+      {
+        unit.Kill();
+      }
+
+      if (Regions.IllidanBlackTempleUnlock.Contains(unit.X, unit.Y))
+      {
+        continue;
+      }
+
+      if (unit.IsABuilding)
+      {
+        completingPlayer.Gold += unit.GoldCostOf(unit.UnitType);
+        unit.Dispose();
+        continue;
+      }
+
+      if (unit.IsControlPoint())
+      {
+        unit.SetOwner(player.NeutralAggressive);
+        continue;
+      }
+
+      unit.SetPosition(Regions.IllidanBlackTempleUnlock.Center.X, Regions.IllidanBlackTempleUnlock.Center.Y);
+    }
   }
 }
