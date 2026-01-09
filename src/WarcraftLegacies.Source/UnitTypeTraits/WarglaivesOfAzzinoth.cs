@@ -52,8 +52,10 @@ public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
   /// <summary>
   /// Initializes a new instance of the <see cref="WarglaivesOfAzzinoth"/> class.
   /// </summary>
-  /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public WarglaivesOfAzzinoth(int abilityTypeId) => _abilityTypeId = abilityTypeId;
+  /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.
+  /// <remarks>If not set, the trait will be usable without a corresponding ability.</remarks>
+  /// </param>
+  public WarglaivesOfAzzinoth(int abilityTypeId = 0) => _abilityTypeId = abilityTypeId;
 
   /// <inheritdoc />
   public void OnDealsDamage()
@@ -61,7 +63,7 @@ public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
     try
     {
       var caster = @event.DamageSource;
-      if (!@event.IsAttack || caster.GetAbilityLevel(_abilityTypeId) == 0)
+      if (!@event.IsAttack || caster.GetAbilityLevel(_abilityTypeId) == 0 && _abilityTypeId != 0)
       {
         return;
       }

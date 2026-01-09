@@ -81,6 +81,17 @@ public static class IllidariSpellSetup
       BurnReductionPerBounce = 0.15f,
       MaximumBounceRadius = 500
     });
+
+    ItemTypeTraitRegistry.Register(new WarglaivesOfAzzinoth
+    {
+      Radius = 150,
+      DamageBase = 35,
+      DamageLevel = 0,
+      DamageMultiplierAgainstDemons = 1.2f,
+      Effect = @"war3mapImported\Culling Cleave.mdx",
+      EffectScale = 1.2f,
+      DamageType = damagetype.Magic
+    }, ITEM_I0WG_WARGLAIVES_OF_AZZINOTH);
   }
 }
 
