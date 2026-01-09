@@ -10,6 +10,13 @@ public sealed class ObjectInfo
   public int Limit { get; }
 
   /// <summary>
+  /// If set, this will be used to determine the unit's limit tooltip rather than <see cref="Limit"/>.
+  /// <remarks>You might use this when a unit icon should only be available after completing a research. The unit's limit
+  /// will thus be 0 at game start, but any time the player could possibly see it, it will be something else.</remarks>
+  /// </summary>
+  public int? LimitTooltipOverride { get; init; }
+
+  /// <summary>
   /// The arbitrary categories the object is assigned to, if any.
   /// </summary>
   public List<UnitCategory> Categories { get; }

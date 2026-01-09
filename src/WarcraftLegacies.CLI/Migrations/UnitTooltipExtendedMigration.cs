@@ -264,7 +264,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
   }
 
-  private void AppendObjectLimit(StringBuilder tooltipBuilder, Unit unit, ObjectInfo objectLimit)
+  private void AppendObjectLimit(StringBuilder tooltipBuilder, Unit unit, ObjectInfo objectInfo)
   {
     if (unit.IsAbilitiesHeroModified && unit.AbilitiesHero.Any())
     {
@@ -274,12 +274,14 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     var isABuilding = unit.StatsIsABuilding;
     var trainType = isABuilding ? "build" : "train";
 
-    if (objectLimit.Limit is > 0 and < 200)
+    var limit = objectInfo.LimitTooltipOverride ?? objectInfo.Limit;
+
+    if (limit is > 0 and < 200)
     {
-      tooltipBuilder.Append($"{LineSeparator}|cff99b4d1Can only {trainType} {objectLimit.Limit}.|r");
-      if (objectLimit.LimitIncreaseHint != null)
+      tooltipBuilder.Append($"{LineSeparator}|cff99b4d1Can only {trainType} {limit}.|r");
+      if (objectInfo.LimitIncreaseHint != null)
       {
-        tooltipBuilder.Append($"|cff99b4d1 This limit can be increased by {objectLimit.LimitIncreaseHint}.|r");
+        tooltipBuilder.Append($"|cff99b4d1 This limit can be increased by {objectInfo.LimitIncreaseHint}.|r");
       }
     }
   }
