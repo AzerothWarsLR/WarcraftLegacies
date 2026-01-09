@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Data;
 using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// The unit with this ability gains health based on each target it deals damage to.
 /// </summary>
-public sealed class RestoreHealthFromEachTargetDamaged : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class RestoreHealthFromEachTargetDamaged : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

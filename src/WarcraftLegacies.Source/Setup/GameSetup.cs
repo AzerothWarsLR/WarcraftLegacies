@@ -5,7 +5,7 @@ using MacroTools.GameModes;
 using MacroTools.Save;
 using MacroTools.Sound;
 using MacroTools.Systems;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;

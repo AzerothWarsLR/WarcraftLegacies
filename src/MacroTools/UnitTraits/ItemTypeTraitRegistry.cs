@@ -1,22 +1,22 @@
 ﻿using WCSharp.Events;
 
-namespace MacroTools.UnitTypeTraits;
+namespace MacroTools.UnitTraits;
 
 public static class ItemTypeTraitRegistry
 {
   /// <summary>
-  /// Registers a <see cref="UnitTypeTrait"/> to a single item type, activating its functionality when a unit carrying
+  /// Registers a <see cref="UnitTrait"/> to a single item type, activating its functionality when a unit carrying
   /// that item experiences relevant events.
   /// </summary>
   /// <param name="trait">The trait to register.</param>
   /// <param name="itemTypeId">The item type ID to associate with the trait.</param>
-  public static void Register(UnitTypeTrait trait, int itemTypeId)
+  public static void Register(UnitTrait trait, int itemTypeId)
   {
     RegisterPickupEvent(trait, itemTypeId);
     RegisterDropEvent(trait, itemTypeId);
   }
 
-  private static void RegisterPickupEvent(UnitTypeTrait trait, int itemTypeId)
+  private static void RegisterPickupEvent(UnitTrait trait, int itemTypeId)
   {
     PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, () =>
     {
@@ -54,7 +54,7 @@ public static class ItemTypeTraitRegistry
     }, itemTypeId);
   }
 
-  private static void RegisterDropEvent(UnitTypeTrait trait, int itemTypeId)
+  private static void RegisterDropEvent(UnitTrait trait, int itemTypeId)
   {
     PlayerUnitEvents.Register(ItemTypeEvent.IsDropped, () =>
     {

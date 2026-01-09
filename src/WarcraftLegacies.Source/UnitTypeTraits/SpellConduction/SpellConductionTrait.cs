@@ -1,9 +1,9 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits.SpellConduction;
 
-public sealed class SpellConductionTrait : UnitTypeTrait, IEffectOnCreated
+public sealed class SpellConductionTrait : UnitTrait, IEffectOnCreated
 {
   /// <summary>
   /// The research required for this ability to work.

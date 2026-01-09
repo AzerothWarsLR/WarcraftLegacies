@@ -1,13 +1,13 @@
 ﻿using MacroTools.Data;
 using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// Causes the holder's summoned units to get stronger.
 /// </summary>
-public sealed class SummoningMastery : UnitTypeTrait, IEffectOnSummonedUnit
+public sealed class SummoningMastery : UnitTrait, IEffectOnSummonedUnit
 {
   private readonly int _abilityTypeId;
 

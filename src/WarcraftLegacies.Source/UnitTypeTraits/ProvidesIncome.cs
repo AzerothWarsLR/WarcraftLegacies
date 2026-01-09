@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// Any unit with this effect increases its owner's income.
 /// </summary>
-public sealed class ProvidesIncome : UnitTypeTrait, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
+public sealed class ProvidesIncome : UnitTrait, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
 {
   private readonly int _income;
 

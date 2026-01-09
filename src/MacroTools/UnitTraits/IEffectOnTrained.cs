@@ -1,4 +1,4 @@
-﻿namespace MacroTools.UnitTypeTraits;
+﻿namespace MacroTools.UnitTraits;
 
 /// <summary>
 /// Called when the unit itself finishes being trained.

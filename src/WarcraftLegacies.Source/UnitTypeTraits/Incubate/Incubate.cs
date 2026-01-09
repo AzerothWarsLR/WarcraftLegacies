@@ -1,5 +1,5 @@
 ﻿using MacroTools.Data;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits.Incubate;
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.Incubate;
 /// <summary>
 /// Causes summoned units mature after some time, allowing it to hatch.
 /// </summary>
-public sealed class Incubate : UnitTypeTrait, IEffectOnSummonedUnit
+public sealed class Incubate : UnitTrait, IEffectOnSummonedUnit
 {
   private readonly int _abilityTypeId;
 

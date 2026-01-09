@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 using WCSharp.Events;
 

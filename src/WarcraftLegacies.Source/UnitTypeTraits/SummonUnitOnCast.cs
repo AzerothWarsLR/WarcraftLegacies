@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
 using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// Causes the unit to summon a number of units whenever they cast a spell.
 /// </summary>
-public sealed class SummonUnitOnCast : UnitTypeTrait, IEffectOnSpellEffect
+public sealed class SummonUnitOnCast : UnitTrait, IEffectOnSpellEffect
 {
   private readonly int _abilityTypeId;
 

@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
 namespace MacroTools.Mechanics.DemonGates;
@@ -6,7 +6,7 @@ namespace MacroTools.Mechanics.DemonGates;
 /// <summary>
 /// Causes the unit type to periodically spawn units.
 /// </summary>
-public sealed class DemonGateType : UnitTypeTrait, IEffectOnUpgrade, IEffectOnCreated
+public sealed class DemonGate : UnitTrait, IEffectOnUpgrade, IEffectOnCreated
 {
   private readonly int _demonUnitTypeId;
   private readonly float _spawnInterval;
@@ -14,13 +14,13 @@ public sealed class DemonGateType : UnitTypeTrait, IEffectOnUpgrade, IEffectOnCr
   private readonly int _spawnLimit;
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="DemonGateType"/> class.
+  /// Initializes a new instance of the <see cref="DemonGate"/> class.
   /// </summary>
   /// <param name="demonUnitTypeId">The unit to spawn.</param>
   /// <param name="spawnInterval">How often to spawn the unit.</param>
   /// <param name="spawnCount">How many of the unit to spawn each time.</param>
   /// <param name="spawnLimit">The maximum number of units that will be spawned per gate.</param>
-  public DemonGateType(int demonUnitTypeId, float spawnInterval, int spawnCount, int spawnLimit)
+  public DemonGate(int demonUnitTypeId, float spawnInterval, int spawnCount, int spawnLimit)
   {
     _demonUnitTypeId = demonUnitTypeId;
     _spawnInterval = spawnInterval;
