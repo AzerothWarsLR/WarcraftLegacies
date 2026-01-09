@@ -4,12 +4,12 @@ namespace WarcraftLegacies.Source.UniqueUnitNames;
 
 public static class EliteNames
 {
-  public static readonly Dictionary<int, List<string>> NamePool = new();
+  public static readonly Dictionary<int, List<string>> _namePool = new();
 
   public static void Init()
   {
 
-    NamePool[UNIT_H00F_PALADIN_LORDAERON] = new List<string>
+    _namePool[UNIT_H00F_PALADIN_LORDAERON] = new List<string>
     {
       "Agamand the True",
       "Arius the Seeker",
@@ -35,7 +35,7 @@ public static class EliteNames
       "Zann the Defender"
     };
 
-    NamePool[UNIT_N00A_FARSTRIDER_QUELTHALAS_ELITE] = new List<string>
+    _namePool[UNIT_N00A_FARSTRIDER_QUELTHALAS_ELITE] = new List<string>
     {
       "Amora Eagleye",
       "Anthis Sunbow",
@@ -53,7 +53,7 @@ public static class EliteNames
       "Vaelith Dawntracker"
     };
 
-    NamePool[UNIT_N007_KIRIN_TOR_DALARAN_ELITE] = new List<string>
+    _namePool[UNIT_N007_KIRIN_TOR_DALARAN_ELITE] = new List<string>
     {
       "Aran Spellweaver",
       "Nikil Dawnseeker",
@@ -70,7 +70,7 @@ public static class EliteNames
       "Leios Sunward"
 
     };
-    NamePool[UNIT_O01V_GREYGUARD_GILNEAS] = new List<string>
+    _namePool[UNIT_O01V_GREYGUARD_GILNEAS] = new List<string>
     {
       "Fenric the Howler",
       "Ravok Nightfang",
@@ -84,7 +84,7 @@ public static class EliteNames
       "Mordran Bloodhowl"
     };
 
-    NamePool[UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE] = new List<string>
+    _namePool[UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE] = new List<string>
     {
       "Baron Bloodbane",
       "Baron Felblade",
@@ -103,7 +103,7 @@ public static class EliteNames
       "Lord Soulrender"
     };
 
-    NamePool[UNIT_U007_DREADLORD_LEGION_ELITE] = new List<string>
+    _namePool[UNIT_U007_DREADLORD_LEGION_ELITE] = new List<string>
     {
       "Algammon",
       "Banehallow",
@@ -121,7 +121,7 @@ public static class EliteNames
       "Zilfallon"
     };
 
-    NamePool[UNIT_O01L_EXECUTIONER_FEL_ELITE] = new List<string>
+    _namePool[UNIT_O01L_EXECUTIONER_FEL_ELITE] = new List<string>
     {
       "Gorrak Bloodcleaver",
       "Thragor Doomblade",
@@ -139,7 +139,7 @@ public static class EliteNames
       "Horgath Bloodmaw",
       "Vorrak the Ravager"
     };
-    NamePool[UNIT_NNRG_ROYAL_GUARD_ILLIDARI] = new List<string>
+    _namePool[UNIT_NNRG_ROYAL_GUARD_ILLIDARI] = new List<string>
     {
       "Zytheris the Vigilant",
       "Malirion Tideblade",
@@ -158,7 +158,7 @@ public static class EliteNames
       "Valyssia Stormsentinel"
     };
 
-    NamePool[UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE] = new List<string>
+    _namePool[UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE] = new List<string>
     {
       "Anna Kondra",
       "Asprah Serpus",
@@ -172,7 +172,7 @@ public static class EliteNames
       "Thalassa Darkwave"
     };
 
-    NamePool[UNIT_N0E7_BLOODWARDER_SUNFURY] = new List<string>
+    _namePool[UNIT_N0E7_BLOODWARDER_SUNFURY] = new List<string>
     {
       "Aldos Firestar",
       "Eldin Sunstrider",
@@ -195,7 +195,7 @@ public static class EliteNames
       "Orendis Starflare"
     };
 
-    NamePool[UNIT_ZBLI_LICH_SCOURGE_ELITE] = new List<string>
+    _namePool[UNIT_ZBLI_LICH_SCOURGE_ELITE] = new List<string>
     {
       "Alandil Lieng",
       "Araj the Summoner",
@@ -210,7 +210,7 @@ public static class EliteNames
       "Rak Coldskull",
       "Ras Frostwhisper"
     };
-    NamePool[UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE] = new List<string>
+    _namePool[UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE] = new List<string>
     {
       "Bale Bleakstare",
       "Doomroar",
@@ -225,7 +225,7 @@ public static class EliteNames
       "Negel Fireye",
       "Warmaul"
     };
-    NamePool[UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE] = new List<string>
+    _namePool[UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE] = new List<string>
     {
       "Arashicage",
       "Bloodgrin",
@@ -241,7 +241,7 @@ public static class EliteNames
       "Samuro",
       "Tojara",
     };
-    NamePool[UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] = new List<string>
+    _namePool[UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] = new List<string>
     {
       "Anubris",
       "Bandalar",
@@ -255,7 +255,7 @@ public static class EliteNames
       "Nuada",
       "Oghma"
     };
-    NamePool[UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE] = new List<string>
+    _namePool[UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE] = new List<string>
     {
       "Adora Nightshade",
       "Anara Chillwind",
@@ -271,7 +271,7 @@ public static class EliteNames
       "Theta Saberfang",
       "Tygra Snowscar"
     };
-    NamePool[UNIT_H09R_VINDICATOR_DRAENEI] = new List<string>
+    _namePool[UNIT_H09R_VINDICATOR_DRAENEI] = new List<string>
     {
       "Aeloras Lightwarden",
       "Ardalis Starshield",
@@ -287,7 +287,7 @@ public static class EliteNames
       "Oranil Sunshield",
       "Seloras Lightwarden"
     };
-    NamePool[UNIT_N08S_ELEMENTAL_LORD_SKYWALL] = new List<string>
+    _namePool[UNIT_N08S_ELEMENTAL_LORD_SKYWALL] = new List<string>
     {
       "Pyros Stormheart",
       "Terrak Emberforge",
@@ -303,7 +303,7 @@ public static class EliteNames
       "Rockmaw",
       "Tempesthorn"
     };
-    NamePool[UNIT_O000_ROYALTY_CTHUN_ELITES] = new List<string>
+    _namePool[UNIT_O000_ROYALTY_CTHUN_ELITES] = new List<string>
     {
       "Zarqith the Carapaced",
       "Thalrix the Impaler",
@@ -318,7 +318,7 @@ public static class EliteNames
       "Thryxis the Shellbreaker",
       "Zyphor the Pincered"
     };
-    NamePool[UNIT_N0B4_REAPER_NZOTH] = new List<string>
+    _namePool[UNIT_N0B4_REAPER_NZOTH] = new List<string>
     {
       "Skarath the Venomous",
       "Zyrix the Spinner",
@@ -333,7 +333,7 @@ public static class EliteNames
       "Pharax the Lurker",
       "Sythrak the Poisoned"
     };
-    NamePool[UNIT_H01L_THANE_IRONFORGE_ELITE] = new List<string>
+    _namePool[UNIT_H01L_THANE_IRONFORGE_ELITE] = new List<string>
     {
       "Aggronor the Mighty",
       "Bandis Forgefire",
@@ -350,7 +350,7 @@ public static class EliteNames
       "Thorgas Broadaxe",
       "Thurin Stormbreaker"
     };
-    NamePool[UNIT_N07G_MUSKETEER_KULTIRAS] = new List<string>
+    _namePool[UNIT_N07G_MUSKETEER_KULTIRAS] = new List<string>
     {
       "Barnaby Flintlock",
       "Gideon Seawatch",
@@ -368,7 +368,7 @@ public static class EliteNames
       "Malcolm Ironbarrel",
       "Tobias Stormlock"
     };
-    NamePool[UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE] = new List<string>
+    _namePool[UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE] = new List<string>
     {
       "Sir Alaric Dawnshield",
       "Sir Roland Brightblade",
@@ -386,7 +386,7 @@ public static class EliteNames
       "Sir Marcus Shieldheart",
       "Sir Victor Lightmane"
     };
-    NamePool[UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER] = new List<string>
+    _namePool[UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER] = new List<string>
     {
       "Krag Deathshroud",
       "Morthus Blackfell",

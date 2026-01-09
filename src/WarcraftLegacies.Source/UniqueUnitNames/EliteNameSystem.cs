@@ -1,89 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.UniqueUnitNames;
 
-/// <summary>
-/// Handles assigning unique names to elite units when they are created,
-/// and returning the name to the pool when the unit dies.
-/// </summary>
 public static class EliteNameSystem
 {
-  private static readonly Random Random = new Random();
-  private static readonly Dictionary<int, HashSet<string>> NamesInUse = new();
+    private static readonly Dictionary<int, HashSet<string>> _namesInUse = new Dictionary<int, HashSet<string>>();
 
-  /// <summary>
-  /// Sets up the system to automatically apply unique names when elite units are created or die.
-  /// Only registers events for unit types that have names defined.
-  /// </summary>
-  public static void Setup()
-  {
-    EliteNames.Init();
-
-    foreach (var unitType in EliteNames.NamePool.Keys)
+    /// <summary>
+    /// Sets up the system to automatically apply elite names when elite units are created or die.
+    /// Only registers events for unit types that have names defined.
+    /// </summary>
+    public static void Setup()
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, unitType);
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, unitType);
-    }
-  }
+        EliteNames.Init();
 
-  private static void OnUnitCreated()
-  {
-    var unit = @event.Unit;
-    if (unit == null)
-    {
-      return;
+        foreach (var unitType in EliteNames._namePool.Keys)
+        {
+            PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, unitType);
+            PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, unitType);
+        }
     }
 
-    AssignName(unit);
-  }
-
-  private static void OnUnitDeath()
-  {
-    var unit = @event.Unit;
-    if (unit == null)
+    private static void OnUnitCreated()
     {
-      return;
+        var unit = @event.Unit;
+        if (unit == null)
+        {
+            return;
+        }
+
+        AssignName(unit);
     }
 
-    if (!NamesInUse.ContainsKey(unit.UnitType))
+    private static void OnUnitDeath()
     {
-      return;
+        var unit = @event.Unit;
+        if (unit == null)
+        {
+            return;
+        }
+
+        if (_namesInUse.TryGetValue(unit.UnitType, out var names))
+        {
+            names.Remove(unit.Name);
+        }
     }
 
-    NamesInUse[unit.UnitType].Remove(unit.Name);
-  }
-
-  private static void AssignName(unit unit)
-  {
-    if (!EliteNames.NamePool.ContainsKey(unit.UnitType))
+    private static void AssignName(unit unit)
     {
-      return;
-    }
+        if (!EliteNames._namePool.TryGetValue(unit.UnitType, out var pool))
+        {
+            return;
+        }
 
-    if (!NamesInUse.ContainsKey(unit.UnitType))
-    {
-      NamesInUse[unit.UnitType] = new HashSet<string>();
-    }
+        if (!_namesInUse.TryGetValue(unit.UnitType, out var used))
+        {
+            used = new HashSet<string>();
+            _namesInUse[unit.UnitType] = used;
+        }
 
-    var availableNames = new List<string>();
-    foreach (var name in EliteNames.NamePool[unit.UnitType])
-    {
-      if (!NamesInUse[unit.UnitType].Contains(name))
-      {
-        availableNames.Add(name);
-      }
-    }
+        var available = new List<string>();
 
-    if (availableNames.Count == 0)
-    {
-      unit.Name = "";
-      return;
-    }
+        foreach (var name in pool)
+        {
+            if (!used.Contains(name))
+            {
+                available.Add(name);
+            }
+        }
 
-    var chosenName = availableNames[Random.Next(availableNames.Count)];
-    unit.Name = chosenName;
-    NamesInUse[unit.UnitType].Add(chosenName);
-  }
+        if (available.Count == 0)
+        {
+            unit.Name = "";
+            return;
+        }
+
+        var index = GetRandomInt(0, available.Count - 1);
+        var chosenName = available[index];
+        unit.Name = chosenName;
+        used.Add(chosenName);
+    }
 }
