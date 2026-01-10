@@ -94,7 +94,7 @@ public static class GameSetup
     RuntimeIntegrityChecker.Setup();
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
-    EliteNameSystem.Setup();
+    UnitNameManager.Setup();
   }
 
   private static void SetupControlPointManager()
