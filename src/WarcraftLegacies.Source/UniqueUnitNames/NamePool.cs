@@ -34,8 +34,8 @@ public class NamePool
       return false;
     }
 
-    int index = GetRandomInt(0, available.Count - 1);
-    string chosen = available[index];
+    var index = GetRandomInt(0, available.Count - 1);
+    var chosen = available[index];
     unit.Name = chosen;
     _used.Add(chosen);
     return true;
