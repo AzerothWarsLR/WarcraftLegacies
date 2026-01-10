@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -36,12 +35,6 @@ public sealed class QuestKiljaedensCommand : QuestData
     _cthun = cthun;
     _nordrassil = nordrassil;
     _illidan = illidan;
-    AddObjective(new ObjectiveTime(1200)
-    {
-      Progress = QuestProgress.Undiscovered,
-      ShowsInPopups = false,
-      ShowsInQuestLog = false
-    });
     AddObjective(new ObjectiveExpire(3600, "Kil'jaeden's Command"));
     Knowledge = 15;
   }
@@ -92,34 +85,13 @@ public sealed class QuestKiljaedensCommand : QuestData
     RemoveKiljaeden();
   }
 
-  /// <inheritdoc />
-  protected override void OnDiscovered(Faction whichFaction)
-  {
-    _kiljaeden = unit.Create(player.NeutralPassive, UNIT_U004_THE_DECEIVER_LEGION, 5827, -30923, 185);
-    _kiljaeden.HeroLevel = 20;
-    _kiljaeden.IsInvulnerable = true;
-    var darkPortalEffect = effect.Create(@"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl", _kiljaeden.X, _kiljaeden.Y);
-    darkPortalEffect.Dispose();
-  }
-
   protected override void OnAdd(Faction whichFaction)
   {
-    var targetTimer = timer.Create();
-    targetTimer.Start(5, false, () =>
-    {
-      try
-      {
-        CalculateQuestTarget();
-        @event.ExpiredTimer.Dispose();
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine($"Failed to add dynamic objective to {nameof(QuestKiljaedensCommand)}: {ex}");
-      }
-    });
+    SpawnKiljaeden();
+    SetQuestTarget(CalculateQuestTarget());
   }
 
-  private void CalculateQuestTarget()
+  private Faction CalculateQuestTarget()
   {
     var eligibleFactions = new List<Faction>();
 
@@ -141,7 +113,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     var factionTarget = eligibleFactions
       .OrderByDescending(f => f.Player?.GetPlayerData().ControlPoints.Count)
       .First();
-    SetQuestTarget(factionTarget);
+    return factionTarget;
   }
 
   private void SetQuestTarget(Faction faction)
@@ -165,6 +137,15 @@ public sealed class QuestKiljaedensCommand : QuestData
       AddObjective(new ObjectiveLegendDead(_cthun));
       AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ));
     }
+  }
+
+  private void SpawnKiljaeden()
+  {
+    _kiljaeden = unit.Create(player.NeutralPassive, UNIT_U004_THE_DECEIVER_LEGION, 5827, -30923, 185);
+    _kiljaeden.HeroLevel = 20;
+    _kiljaeden.IsInvulnerable = true;
+    var darkPortalEffect = effect.Create(@"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl", _kiljaeden.X, _kiljaeden.Y);
+    darkPortalEffect.Dispose();
   }
 
   private void RemoveKiljaeden()
