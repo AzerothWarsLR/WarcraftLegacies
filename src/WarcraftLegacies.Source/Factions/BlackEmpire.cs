@@ -135,15 +135,5 @@ public sealed class BlackEmpire : Faction
       SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
     };
     SpellRegistry.Register(poisonYor);
-
-    var shadowVeilSpell = new MassAnySpell(ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL)
-    {
-      DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
-      DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
-      Radius = 200,
-      CastFilter = CastFilters.IsTargetOrganicAndAlive,
-      TargetType = SpellTargetType.None
-    };
-    SpellRegistry.Register(shadowVeilSpell);
   }
 }
