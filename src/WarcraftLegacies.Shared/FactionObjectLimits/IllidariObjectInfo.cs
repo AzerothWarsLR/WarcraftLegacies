@@ -16,7 +16,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NNSG_SPAWNERY_ILLIDARI_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_H06S_STEAMWORKS_ILLIDARI_RESEARCH, Unlimited, Research);
     yield return new(UNIT_N0A3_ARCHIVE_ILLIDARI_MAGIC, Unlimited, Magic);
-    yield return new(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST, Unlimited, Flyer);
+    yield return new(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST, Unlimited, FlyingBuilding);
     yield return new(UNIT_NNFM_INCUBATION_POOL_ILLIDARI_FARM, Unlimited, Farm);
     yield return new(UNIT_NNTG_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited, Tower);
     yield return new(UNIT_N005_IMPROVED_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited, Tower);
