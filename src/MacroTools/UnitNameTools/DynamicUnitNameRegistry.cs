@@ -1,17 +1,15 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.UniqueUnitNames;
+namespace MacroTools.UnitNameTools;
 
-public static class UnitNameManager
+public static class DynamicUnitNameRegistry
 {
   private static readonly Dictionary<int, NamePool> _pools = new();
 
-  public static void Setup()
+  public static void Setup(Dictionary<int, List<string>> nameData)
   {
-    UniqueNames.Init();
-
-    foreach (var kvp in UniqueNames.Names)
+    foreach (var kvp in nameData)
     {
       _pools[kvp.Key] = new NamePool(kvp.Value);
       PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, kvp.Key);
