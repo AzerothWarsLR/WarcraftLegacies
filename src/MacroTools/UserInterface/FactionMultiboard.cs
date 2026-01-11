@@ -61,7 +61,7 @@ public sealed class FactionMultiboard
     FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
     FactionManager.FactionRegistered += (_, faction) => { RegisterFaction(faction); };
 
-    foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
+    foreach (var player in Util.EnumeratePlayers())
     {
       var playerData = player.GetPlayerData();
       playerData.IncomeChanged += OnPlayerIncomeChanged;
