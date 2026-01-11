@@ -93,7 +93,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Enable the Howl of Terror ability for the Deformed Chimera."
+      "Value": "Enables Deformed Chimera to use Howl of Terror, which reduces the attack damage of nearby enemy units by \u003CMD19,DataA1,%\u003E% for \u003CMD19,Dur1\u003E seconds."
     }
   ]
 }
