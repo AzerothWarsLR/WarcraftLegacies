@@ -1,0 +1,92 @@
+{
+  "OldId": 1734692417,
+  "NewId": 1430602330,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828859726,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845636942,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": 912745806,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 895968590,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879191374,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862414158,
+      "Type": 3,
+      "Value": "AEvi,ZBPA"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Enhances the other Gazlowee abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|nAlso gives bonus damage and increases the Tinker\u0027s movement speed.|n|n|cffffcc00Level 1|r - \u002B\u003CANeg,DataB1\u003E damage, \u002B\u003CANeg,DataA1,%\u003E% movement.|n|cffffcc00Level 2|r - \u002B\u003CANeg,DataB2\u003E damage, \u002B\u003CANeg,DataA2,%\u003E% movement.|n|cffffcc00Level 3|r - \u002B\u003CANeg,DataB3\u003E damage, \u002B\u003CANeg,DataA3,%\u003E% movement.|n|cffffcc00Level 4|r - \u002B9 damage, \u002B40% movement."
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Illidan)"
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}
