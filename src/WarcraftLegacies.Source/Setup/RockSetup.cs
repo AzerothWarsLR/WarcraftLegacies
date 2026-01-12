@@ -8,8 +8,6 @@ namespace WarcraftLegacies.Source.Setup;
 public static class RockSetup
 {
   private static readonly int _rockChunkId = FourCC("LTrc");
-  private static readonly int _islandChunkId = FourCC("B013");
-  private static readonly int _forceWallChunk = FourCC("B005");
 
   public static void Setup()
   {
