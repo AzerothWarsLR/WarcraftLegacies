@@ -42,6 +42,7 @@ public sealed class BlackEmpire : Faction
   {
     RegisterQuests();
     RegisterSpells();
+    RegisterUnitTypeTraits();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
