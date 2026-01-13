@@ -21,7 +21,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NNTG_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited, Tower);
     yield return new(UNIT_N005_IMPROVED_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited, Tower);
     yield return new(UNIT_NMRB_STEAMVAULT_ILLIDARI_SHOP, Unlimited, Shop);
-    yield return new(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SIEGE, Unlimited, Specialist);
+    yield return new(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_E020_ANCIENT_SHIPYARD_ILLIDARI_SHIPYARD, Unlimited, Shipyard);
 
     yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, Worker);
@@ -35,7 +35,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NWGS_COUATL_NZOTH_ILLIDARI, 8, Flyer);
     yield return new(UNIT_E00Y_SCYLLA_ILLIDARI, 4, Flyer);
     yield return new(UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE, 6, new List<UnitCategory> { Marksman, Destroyer, Elite });
-    yield return new(UNIT_NDRN_DEATHSWORN_ILLIDARI, Unlimited, Fighter);
+    yield return new(UNIT_NDRN_DEATHSWORN_ILLIDARI, 12, Assassin);
     yield return new(UNIT_NDRS_SEER_ILLIDARI, 6, Support);
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
     yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHTELVES, Unlimited);
@@ -50,6 +50,7 @@ public static class IllidariObjectInfo
     yield return new(UPGRADE_R02V_SHADOWCASTER_ADEPT_TRAINING, Unlimited);
     yield return new(UPGRADE_ZBSI_SEA_WITCHES_ILLIDARI, Unlimited);
     yield return new(UPGRADE_ZB9L_COILFANG_SUMMONERS_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_YBPH_KINGSLAYER_ILLIDARI, Unlimited);
 
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, Tank);

@@ -39,6 +39,12 @@ public static class IllidariSpellSetup
     };
     SpellRegistry.Register(shadowAssault);
 
+    SpellRegistry.Register(new ShadowAssaultSpell(ABILITY_YBBS_BLINK_STRIKE_DEATHSWORN)
+    {
+      BaseDamage = 25,
+      BlinkEffectPath = @"Abilities\Spells\NightElf\Blink\BlinkCaster.mdl"
+    });
+
     UnitTypeTraitRegistry.Register(new DamageMultiplierOnAttack(ABILITY_A0YV_CRIPPLING_STRIKE_AKAMA)
     {
       BaseUnitMultiplier = 1.4f,
@@ -75,6 +81,12 @@ public static class IllidariSpellSetup
       EffectScale = 1.2f,
       DamageType = damagetype.Magic
     }, ITEM_I0WG_WARGLAIVES_OF_AZZINOTH);
+
+    UnitTypeTraitRegistry.Register(new Kingslayer
+    {
+      RequiredResearch = UPGRADE_YBPH_KINGSLAYER_ILLIDARI,
+      DamageBonus = 0.6f
+    }, UNIT_NDRN_DEATHSWORN_ILLIDARI);
   }
 }
 
