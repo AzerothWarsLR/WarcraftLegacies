@@ -33,6 +33,8 @@ public sealed class ShadowAssaultSpell : Spell
     {
       caster.SetAbilityCooldownRemaining(Id, caster.GetAbilityCooldown(Id, spellLevel - 1));
     }
+
+    caster.QueueOrder(ORDER_ATTACK, target);
   }
 
   private void TeleportToTarget(unit caster, unit target)
