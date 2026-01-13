@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace MacroTools.UnitNameTools;
 
@@ -7,7 +6,6 @@ public class NamePool
 {
   private readonly List<string> _allNames;
   private readonly HashSet<string> _used = new();
-  private static readonly Random _random = new();
 
   public NamePool(IEnumerable<string> names)
   {
@@ -36,7 +34,7 @@ public class NamePool
       return false;
     }
 
-    var index = _random.Next(0, available.Count);
+    var index = GetRandomInt(0, available.Count - 1);
     var chosen = available[index];
     unit.Name = chosen;
     _used.Add(chosen);
