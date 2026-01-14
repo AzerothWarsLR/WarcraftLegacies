@@ -1,8 +1,6 @@
 ﻿using MacroTools.Spells;
-using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Setup.Spells;
 using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -63,18 +61,6 @@ public static class SpellsSetup
       TargetType = SpellTargetType.Point
     };
     SpellRegistry.Register(seismicShard);
-
-    UnitTypeTraitRegistry.Register(new VengeanceTrait(ABILITY_A0OO_BURNING_VENGEANCE_TWILIGHT)
-    {
-      AlternateFormId = UNIT_E01A_BURNING_VENGEANCE_CREEP,
-      HitsReviveThreshold = 5,
-      HealBase = 900,
-      HealLevel = 300,
-      BonusDamageBase = 20,
-      BonusDamageLevel = 20,
-      Duration = 20,
-      ReviveEffect = "Heal Blue.mdx"
-    }, UNIT_O04H_CHAMPION_OF_THE_TWILIGHT_S_HAMMER_CREEP);
 
     var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
     SpellRegistry.Register(demonSoulCooldown);

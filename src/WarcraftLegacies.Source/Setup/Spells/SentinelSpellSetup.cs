@@ -4,7 +4,6 @@ using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits;
-using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 
 namespace WarcraftLegacies.Source.Setup.Spells;
 
@@ -26,18 +25,6 @@ public static class SentinelSpellSetup
         ABILITY_A0MG_QUICK_KNIVES_NAISHA,
       }
     }, UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS);
-
-    UnitTypeTraitRegistry.Register(new VengeanceTrait(ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
-    {
-      AlternateFormId = UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,
-      HitsReviveThreshold = 9,
-      HealBase = 900,
-      HealLevel = 300,
-      BonusDamageBase = 20,
-      BonusDamageLevel = 20,
-      Duration = 20,
-      ReviveEffect = "Heal Blue.mdx"
-    }, UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS);
 
     var elunesGaze = new MassAnySpell(ABILITY_ASEG_ELUNE_S_GAZE_SENTINELS_REAL)
     {

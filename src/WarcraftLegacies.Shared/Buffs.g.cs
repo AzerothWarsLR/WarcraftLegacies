@@ -140,7 +140,7 @@ public static class Buffs
   public const int BUFF_B02K_PLAGUE_EXPLOSION = 1110454859;
   public const int BUFF_B02L_FIRE_BOMB = 1110454860;
   public const int BUFF_B02M_OVERCLOCK = 1110454861;
-  public const int BUFF_B02N_AVATAR_OF_VENGENCE = 1110454862;
+  public const int BUFF_B02N_UNHOLY_FRENZY = 1110454862;
   public const int BUFF_B02O_INITIATE_MAGE = 1110454863;
   public const int BUFF_B02P_UNHOLY_ARMOR = 1110454864;
   public const int BUFF_B02Q_C00FF0000FEAR_AURA_R = 1110454865;

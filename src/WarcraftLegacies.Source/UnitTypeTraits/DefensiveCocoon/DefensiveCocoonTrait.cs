@@ -1,5 +1,4 @@
 ﻿using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
@@ -39,7 +38,7 @@ public sealed class DefensiveCocoonTrait : UnitTrait, IEffectOnDamaged
   public required string ReviveEffect { private get; init; }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="VengeanceTrait"/> class.
+  /// Initializes a new instance of the <see cref="DefensiveCocoonTrait"/> class.
   /// </summary>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
   public DefensiveCocoonTrait(int abilityTypeId)
