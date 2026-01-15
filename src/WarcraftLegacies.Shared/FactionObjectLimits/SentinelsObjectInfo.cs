@@ -50,7 +50,7 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS, 1, new List<UnitCategory> { Tank, Support });
     yield return new(UNIT_ETYR_HIGH_PRIESTESS_OF_ELUNE_SENTINELS, 1, new List<UnitCategory> { Support });
     yield return new(UNIT_E002_GENERAL_OF_THE_SENTINEL_ARMY_SENTINELS, 1, new List<UnitCategory> { Marksman, Support });
-    yield return new(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS, 1, Fighter);
+    yield return new(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS, 1, Assassin);
 
     yield return new(UPGRADE_R00S_PRIESTESS_ADEPT_TRAINING_SENTINELS, Unlimited);
     yield return new(UPGRADE_R064_SENTINEL_FORTIFICATIONS_SENTINELS, Unlimited);
