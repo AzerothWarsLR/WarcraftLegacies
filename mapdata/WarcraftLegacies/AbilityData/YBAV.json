@@ -1,0 +1,207 @@
+{
+  "OldId": 1802723905,
+  "NewId": 1447117401,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829125474,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Maiev) (Custom)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms Maiev into an Avatar of Vengeance for 30 seconds, increasing her attack damage by 40 and summoning 11 Spirits of Vengeance, each with 500 hit points and 20 base attack damage. If Maiev would die as an Avatar and at least one Spirit is still alive, the Spirit dies instead and Maiev heals for 10% of its maximum hit points."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vengeance"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Vengeance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vengeance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vengeance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vengeance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Transforms Maiev into an Avatar of Vengeance for 30 seconds, increasing her attack damage by 40 and summoning 11 Spirits of Vengeance. If Maiev would die as an Avatar and at least one Spirit is still alive, the Spirit dies instead and Maiev heals for 10% of its maximum hit points.|n|cffffcc00Level 1|r - 40 bonus attack damage. Spirits have 500 hit points and 30 base damage.|n|cffffcc00Level 2|r - 40 bonus attack damage. Spirits have 600 hit points and 30 base damage.|n|cffffcc00Level 3|r - 60 bonus attack damage. Spirits have 700 hit points and 40 base damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms Maiev into an Avatar of Vengeance for 30 seconds, increasing her attack damage by 60 and summoning 11 Spirits of Vengeance, each with 600 hit points and 30 base attack damage. If Maiev would die as an Avatar and at least one Spirit is still alive, the Spirit dies instead and Maiev heals for 10% of its maximum hit points."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms Maiev into an Avatar of Vengeance for 30 seconds, increasing her attack damage by 80 and summoning 11 Spirits of Vengeance, each with 700 hit points and 40 base attack damage. If Maiev would die as an Avatar and at least one Spirit is still alive, the Spirit dies instead and Maiev heals for 10% of its maximum hit points."
+    }
+  ]
+}
