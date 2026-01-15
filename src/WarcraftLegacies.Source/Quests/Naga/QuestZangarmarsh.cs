@@ -32,7 +32,7 @@ public sealed class QuestZangarmarsh : QuestData
   public override string RewardFlavour => "With the swamps of Zangarmarsh secured, Lady Vashj and her Naga begin the work of rebuilding their clutcheries.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain control of the Zangarmarsh Outpost and learn to build {GetObjectName(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)}s";
+  protected override string RewardDescription => $"Gain control of the Zangarmarsh outpost, learn to build {GetObjectName(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)}s, and learn to train Warlord Naj'entus from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
