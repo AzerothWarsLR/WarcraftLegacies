@@ -1,0 +1,160 @@
+{
+  "OldId": 1752384833,
+  "NewId": 1397965401,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Shadow Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CYBSS,DataE1\u003E initial damage, and \u003CYBSS,DataA1\u003E damage every \u003CYBSS,Cast1\u003E seconds for \u003CYBSS,Dur1\u003E seconds. The poison slows the movement speed of the targeted unit by 75% for it\u0027s duration."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CYBSS,DataE2\u003E initial damage, and \u003CYBSS,DataA2\u003E damage every \u003CYBSS,Cast2\u003E seconds for \u003CYBSS,Dur2\u003E seconds. The poison slows the movement speed of the targeted unit by 75% for it\u0027s duration."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CYBSS,DataE3\u003E initial damage, and \u003CYBSS,DataA3\u003E damage every \u003CYBSS,Cast3\u003E seconds for \u003CYBSS,Dur3\u003E seconds. The poison slows the movement speed of the targeted unit by 75% for it\u0027s duration."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CYBSS,DataE4\u003E initial damage, and \u003CYBSS,DataA4\u003E damage every \u003CYBSS,Cast4\u003E seconds for \u003CYBSS,Dur4\u003E seconds. The poison slows the movement speed of the targeted unit by 75% for it\u0027s duration."
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Maiev)"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over \u003CYBSS,Dur1\u003E seconds. The poisoned unit has its movement speed slowed for a short duration. |n|n|cffffcc00Level 1|r - \u003CYBSS,DataE1\u003E strike damage, \u003CYBSS,DataA1\u003E duration damage. |n|cffffcc00Level 2|r - \u003CYBSS,DataE2\u003E strike damage, \u003CYBSS,DataA2\u003E duration damage. |n|cffffcc00Level 3|r - \u003CYBSS,DataE3\u003E strike damage, \u003CYBSS,DataA3\u003E duration damage. |n|cffffcc00Level 4|r - \u003CYBSS,DataE4\u003E strike damage, \u003CYBSS,DataA4\u003E duration damage."
+    }
+  ]
+}
