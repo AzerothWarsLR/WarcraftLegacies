@@ -53,7 +53,7 @@ public static class IllidariObjectInfo
     yield return new(UPGRADE_YBPH_KINGSLAYER_ILLIDARI, Unlimited);
 
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1, new List<UnitCategory> { Support, Destroyer });
-    yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, Tank);
+    yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, new List<UnitCategory> { Support, Summoner });
     yield return new(UNIT_NAKA_ELDER_SAGE_ILLIDARI, 1, Assassin);
     yield return new(UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN, 1, Fighter);
     yield return new(UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI, 1, Fighter);
