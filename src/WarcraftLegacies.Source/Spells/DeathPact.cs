@@ -44,7 +44,7 @@ public sealed class DeathPact : Spell
 
     var unitsInRange = GlobalGroup
       .EnumUnitsInRange(casterPosition, Radius)
-      .Where(x => x != null && x.Alive && IsValidTarget(x, casterPlayer))
+      .Where(x => IsValidTarget(x, casterPlayer))
       .ToList();
 
     if (unitsInRange.Count == 0)
@@ -60,16 +60,12 @@ public sealed class DeathPact : Spell
       .FirstOrDefault();
 
 
-    if (targetUnit == null || !targetUnit.Alive)
+    if (targetUnit == null)
     {
       return;
     }
 
     var targetHealth = targetUnit.Life;
-    if (targetHealth <= 0)
-    {
-      return;
-    }
 
     targetUnit.Kill();
 
@@ -95,11 +91,6 @@ public sealed class DeathPact : Spell
 
   private static bool IsValidTarget(unit target, player casterPlayer)
   {
-    if (target == null)
-    {
-      return false;
-    }
-
     return target.Alive &&
            target.Owner == casterPlayer &&
            !target.IsResistant() &&
