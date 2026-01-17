@@ -49,6 +49,7 @@ public sealed class DeathPact : Spell
 
     if (unitsInRange.Count == 0)
     {
+      Refund(caster);
       return;
     }
 
@@ -59,9 +60,9 @@ public sealed class DeathPact : Spell
       .ThenBy(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), casterPosition))
       .FirstOrDefault();
 
-
     if (targetUnit == null)
     {
+      Refund(caster);
       return;
     }
 
@@ -87,6 +88,17 @@ public sealed class DeathPact : Spell
     });
 
     EffectSystem.Add(effect.Create(KillEffect, targetUnit.X, targetUnit.Y));
+  }
+
+  private void Refund(unit caster)
+  {
+    //Delay to avoid mana overcap.
+    Delay.Add(() =>
+    {
+      var ability = caster.GetAbility(Id);
+      caster.Mana += ability.GetManaCost_amcs(caster.GetAbilityLevel(Id) - 1);
+      caster.SetAbilityCooldownRemaining(Id, 0);
+    });
   }
 
   private static bool IsValidTarget(unit target, player casterPlayer)
