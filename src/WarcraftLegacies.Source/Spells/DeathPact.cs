@@ -5,6 +5,7 @@ using MacroTools.Libraries;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Effects;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
@@ -81,11 +82,13 @@ public sealed class DeathPact : Spell
       EffectSystem.Add(casterEffect);
     }
 
-    var manaToRestore = targetHealth * ManaRestorePercent;
-    var maxMana = caster.MaxMana;
-    var currentMana = caster.Mana;
-
-    caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
+    Delay.Add(() =>
+    {
+      var manaToRestore = targetHealth * ManaRestorePercent;
+      var maxMana = caster.MaxMana;
+      var currentMana = caster.Mana;
+      caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
+    });
 
     EffectSystem.Add(effect.Create(KillEffect, targetUnit.X, targetUnit.Y));
   }
