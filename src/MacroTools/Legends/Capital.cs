@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Factions;
 
 namespace MacroTools.Legends;
 
@@ -132,11 +131,6 @@ public sealed class Capital : Legend
     if (string.IsNullOrEmpty(DeathMessage))
     {
       return;
-    }
-
-    if (Hivemind && OwningPlayer != null)
-    {
-      PlayerDistributor.DistributePlayer(OwningPlayer);
     }
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
