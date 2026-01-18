@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -9,8 +10,6 @@ namespace WarcraftLegacies.Source.Objectives.LegendBased;
 /// </summary>
 public sealed class ObjectiveLegendDead : Objective
 {
-  private readonly Legend _target;
-
   /// <summary>
   /// An optional filter that is applied against the <see cref="LegendaryHero"/> when it dies. The <see cref="Objective"/>
   /// will only be completed if the filter passes.
@@ -23,15 +22,15 @@ public sealed class ObjectiveLegendDead : Objective
   /// <param name="target">The <see cref="Legend"/> that has to die for this objective to be completed.</param>
   public ObjectiveLegendDead(LegendaryHero target)
   {
-    _target = target;
     TargetWidget = target.Unit;
-    Description = target.Unit.IsUnitType(unittype.Structure)
-      ? $"{target.Name} is destroyed"
-      : $"{target.Name} is dead";
-    DisplaysPosition = _target.Unit.IsUnitType(unittype.Structure) ||
-                       _target.Unit.Owner == player.NeutralAggressive;
+    Description = $"{target.Name} is dead";
     target.PermanentlyDied += OnDeath;
-    Position = new(_target.Unit.X, _target.Unit.Y);
+
+    if (target.Unit.Owner != null && target.Unit.Owner == player.NeutralAggressive)
+    {
+      DisplaysPosition = true;
+      Position = new Point(target.Unit.X, target.Unit.Y);
+    }
   }
 
   private void OnDeath(object? sender, Legend legend) =>
