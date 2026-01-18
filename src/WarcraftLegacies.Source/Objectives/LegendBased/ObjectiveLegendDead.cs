@@ -17,13 +17,18 @@ public sealed class ObjectiveLegendDead : Objective
   public Func<Legend, bool> DeathFilter { get; init; } = _ => true;
 
   /// <summary>
+  /// If set, the objective will only be completed if the target permanently dies.
+  /// </summary>
+  public bool PermanentOnly { get; init; } = true;
+
+  /// <summary>
   /// Initializes a new instance of the <see cref="ObjectiveLegendDead"/> class.
   /// </summary>
   /// <param name="target">The <see cref="Legend"/> that has to die for this objective to be completed.</param>
   public ObjectiveLegendDead(LegendaryHero target)
   {
     TargetWidget = target.Unit;
-    Description = $"{target.Name} is dead";
+    Description = PermanentOnly ? $"{target.Name} is permanently dead" : $"{target.Name} is dead";
     target.Died += OnDeath;
 
     if (target.Unit.Owner != null && target.Unit.Owner == player.NeutralAggressive)
@@ -35,7 +40,7 @@ public sealed class ObjectiveLegendDead : Objective
 
   private void OnDeath(object? sender, LegendDiedEventArgs eventArgs)
   {
-    if (!eventArgs.Permanent)
+    if (PermanentOnly && !eventArgs.Permanent)
     {
       return;
     }
