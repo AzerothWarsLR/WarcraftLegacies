@@ -61,7 +61,7 @@ public sealed class InspireMadness : Spell
     target.SetOwner(caster.Owner);
     target.ApplyTimedLife(FourCC("Bpos"), Duration);
     target.SetExploded(true);
-    target.RemoveType(UNIT_TYPE_SUMMONED);
+    target.RemoveType(unittype.Summoned);
 
     var tempEffect = effect.Create(EffectTarget, target.X, target.Y);
     tempEffect.Scale = EffectScaleTarget;

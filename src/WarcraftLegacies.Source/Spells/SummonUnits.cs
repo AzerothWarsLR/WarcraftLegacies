@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Spells;
 
 public sealed class SummonUnits : Spell
 {
-  public int SummonUnitTypeId { get; init; } = FourCC("hfoo");
+  public required int SummonUnitTypeId { get; init; }
   public int SummonCount { get; init; } = 1;
   public float Duration { get; init; } = 60;
   public float Radius { get; init; } = 150;

@@ -57,7 +57,7 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
     illidan.AddAnimationProperty("alternate");
     if (LearnEffectPath != null)
     {
-      AddSpecialEffect(LearnEffectPath, illidan.X, illidan.Y).Dispose();
+      effect.Create(LearnEffectPath, illidan.X, illidan.Y).Dispose();
     }
 
     illidan.SelectHeroSkill(Id);

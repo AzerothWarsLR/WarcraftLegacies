@@ -295,7 +295,7 @@ public sealed class ControlPointManager
     var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
 
     controlPoint.Unit.MaxLife = maxHitPoints;
-    BlzSetUnitIntegerField(controlPoint.Unit, UNIT_IF_LEVEL, flooredLevel);
+    controlPoint.Unit.Level = flooredLevel;
     controlPoint.Unit.Armor = ControlLevelSettings.ArmorPerControlLevel * flooredLevel;
     controlPoint.Unit
       .ShowAttackUi(false);

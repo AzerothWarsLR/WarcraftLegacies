@@ -93,7 +93,7 @@ public sealed class ChainManaBurn : Spell
   {
     amount = Math.Min(amount, target.Mana);
     target.Mana -= amount;
-    target.Damage(caster, amount, ATTACK_TYPE_NORMAL);
+    target.Damage(caster, amount, attacktype.Normal);
   }
 
   private static bool IsValidTarget(unit caster, unit target)
@@ -102,7 +102,7 @@ public sealed class ChainManaBurn : Spell
            (target.IsEnemyTo(caster.Owner) || target.Owner == player.NeutralPassive) &&
            target.Alive &&
            !target.IsInvulnerable &&
-           !target.IsUnitType(UNIT_TYPE_MECHANICAL) &&
+           !target.IsUnitType(unittype.Mechanical) &&
            !target.IsABuilding;
   }
 }
