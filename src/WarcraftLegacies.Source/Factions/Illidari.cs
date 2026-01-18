@@ -42,6 +42,7 @@ public sealed class Illidari : Faction
     RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
     RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
     RegisterFactionDependentInitializer<Scourge, Druids, Ahnqiraj>(RegisterScourgeDruidsAhnqirajQuests);
+    RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     GoldMines = new List<unit>
     {
@@ -366,6 +367,10 @@ public sealed class Illidari : Faction
     AddQuest(theWaywardWell);
   }
 
+  private void RegisterSentinelsQuests(Sentinels sentinels)
+  {
+    AddQuest(new QuestKillMaiev());
+  }
 
   private void RegisterScourgeDruidsAhnqirajQuests(Scourge scourge, Druids druids, Ahnqiraj ahnqiraj)
   {
