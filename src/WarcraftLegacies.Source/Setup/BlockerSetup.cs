@@ -31,9 +31,10 @@ public static class BlockerSetup
     {
       foreach (var pathingBlocker in pathingBlockers)
       {
-        if (GetEnumDestructable().Type == pathingBlocker)
+        var destructable = GetEnumDestructable();
+        if (destructable.Type == pathingBlocker)
         {
-          GetEnumDestructable().SetVisibility(false);
+          destructable.SetVisibility(false);
         }
       }
     });

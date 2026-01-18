@@ -16,7 +16,7 @@ public sealed class HideousAppendagesBuff : PassiveBuff
   {
   }
 
-  public int TentacleUnitTypeId { get; init; } = FourCC("hfoo");
+  public required int TentacleUnitTypeId { get; init; }
   public int TentacleCount { get; init; } = 6;
 
   /// <summary>

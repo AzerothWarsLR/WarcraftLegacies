@@ -16,8 +16,9 @@ public static class GeneralHelpers
 
   private static bool EnumDestructablesInCircleFilter()
   {
+    var destructable = GetFilterDestructable();
     return MathEx.GetDistanceBetweenPoints(
-      new Point(GetFilterDestructable().X, GetFilterDestructable().Y),
+      new Point(destructable.X, destructable.Y),
       _enumDestructableCenter!) <= _enumDestructableRadius;
   }
 
@@ -40,7 +41,7 @@ public static class GeneralHelpers
     _enumDestructableCenter = center;
     _enumDestructableRadius = radius;
     var circleAsRectangle = GetRectFromCircle(center, radius);
-    circleAsRectangle.Rect.EnumerateDestructables(Condition(EnumDestructablesInCircleFilter), actionFunc);
+    circleAsRectangle.Rect.EnumerateDestructables(conditionfunc.Create(EnumDestructablesInCircleFilter), actionFunc);
   }
 
   /// <summary>

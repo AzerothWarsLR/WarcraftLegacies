@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Extensions;
 using WCSharp.Api.Enums;
 
 namespace WarcraftLegacies.Source.KeyboardManager;
@@ -140,10 +141,7 @@ public class HeroHotkeyManager
 
       if (wasAlreadySelected)
       {
-        if (whichPlayer == player.LocalPlayer)
-        {
-          SetCameraPosition(fourthHero.X, fourthHero.Y);
-        }
+        whichPlayer.RepositionCamera(fourthHero.X, fourthHero.Y);
       }
       else
       {

@@ -58,7 +58,7 @@ public sealed class UnstableEvolution : Spell
     target.SetTimedLife(Duration);
     target.SetExploded(true);
     target.SetScale(1.1f, 1.1f, 1.1f);
-    target.RemoveType(UNIT_TYPE_SUMMONED);
+    target.RemoveType(unittype.Summoned);
 
     if (target.UnitType == UNIT_U013_SUPER_MAJOR_CTHUN)
     {

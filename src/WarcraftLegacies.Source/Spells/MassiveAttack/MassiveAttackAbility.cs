@@ -49,7 +49,7 @@ public sealed class MassiveAttackAbility : UnitTrait, IAppliesEffectOnDamage
     var missile = new MassiveAttackProjectile(caster, targetX, targetY)
     {
       Damage = caster.GetAverageDamage(0) * AttackDamagePercentage,
-      AttackType = ConvertAttackType((int)caster.AttackAttackType1),
+      AttackType = attacktype.Convert(caster.AttackAttackType1),
       DamageType = @event.DamageType
     };
     if (IgnoreAttackTarget)

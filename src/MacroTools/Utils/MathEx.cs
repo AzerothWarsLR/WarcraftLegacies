@@ -23,8 +23,8 @@ public static class MathEx
 
   public static float GetDistanceBetween(float x, float y, widget widget)
   {
-    var dx = GetWidgetX(widget) - x;
-    var dy = GetWidgetY(widget) - y;
+    var dx = widget.X - x;
+    var dy = widget.Y - y;
 
     return SquareRoot(dx * dx + dy * dy);
   }
