@@ -27,7 +27,7 @@ public sealed class ObjectiveControlLegend : Objective
 
     DisplaysPosition = target.Unit.Owner == player.NeutralAggressive;
     target.ChangedOwner += OnTargetChangeOwner;
-    target.PermanentlyDied += OnTargetPermaDeath;
+    target.Died += OnTargetPermaDeath;
     Position = new(_target.Unit.X, _target.Unit.Y);
   }
 
@@ -51,9 +51,9 @@ public sealed class ObjectiveControlLegend : Objective
     }
   }
 
-  private void OnTargetPermaDeath(object? sender, Legend legend)
+  private void OnTargetPermaDeath(object? sender, LegendDiedEventArgs eventArgs)
   {
-    if (_canFail)
+    if (_canFail && eventArgs.Permanent)
     {
       Progress = QuestProgress.Failed;
     }

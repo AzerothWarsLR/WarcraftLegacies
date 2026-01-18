@@ -24,7 +24,7 @@ public sealed class ObjectiveLegendDead : Objective
   {
     TargetWidget = target.Unit;
     Description = $"{target.Name} is dead";
-    target.PermanentlyDied += OnDeath;
+    target.Died += OnDeath;
 
     if (target.Unit.Owner != null && target.Unit.Owner == player.NeutralAggressive)
     {
@@ -33,6 +33,16 @@ public sealed class ObjectiveLegendDead : Objective
     }
   }
 
-  private void OnDeath(object? sender, Legend legend) =>
-    Progress = DeathFilter(legend) ? QuestProgress.Complete : QuestProgress.Failed;
+  private void OnDeath(object? sender, LegendDiedEventArgs eventArgs)
+  {
+    if (!eventArgs.Permanent)
+    {
+      return;
+    }
+
+    if (DeathFilter(eventArgs.LegendaryHero))
+    {
+      Progress = QuestProgress.Complete;
+    }
+  }
 }

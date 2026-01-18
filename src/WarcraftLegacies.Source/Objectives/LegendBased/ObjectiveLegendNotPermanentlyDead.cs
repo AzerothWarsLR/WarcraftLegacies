@@ -23,13 +23,16 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
       ? $"{target.Name} is intact"
       : $"{target.Name} is alive";
 
-    target.PermanentlyDied += OnAnyUnitDeath;
+    target.Died += OnTargetDied;
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnAnyUnitTrain);
   }
 
-  private void OnAnyUnitDeath(object? sender, Legend legend)
+  private void OnTargetDied(object? sender, LegendDiedEventArgs eventArgs)
   {
-    Progress = QuestProgress.Failed;
+    if (eventArgs.Permanent)
+    {
+      Progress = QuestProgress.Failed;
+    }
   }
 
   private void OnAnyUnitTrain()
