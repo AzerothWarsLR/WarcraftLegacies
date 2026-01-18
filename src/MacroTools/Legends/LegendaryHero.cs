@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
-using MacroTools.Factions;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -172,11 +171,6 @@ public sealed class LegendaryHero : Legend
   /// <summary>Permanently kills the <see cref="LegendaryHero"/>, preventing it from ever being revived.</summary>
   public void PermanentlyKill()
   {
-    if (Hivemind && OwningPlayer != null)
-    {
-      PlayerDistributor.DistributePlayer(OwningPlayer);
-    }
-
     OnPermaDeath();
     Died?.Invoke(this, new LegendDiedEventArgs
     {

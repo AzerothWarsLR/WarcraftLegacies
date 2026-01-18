@@ -85,11 +85,6 @@ public abstract class Legend
   protected virtual void OnChangeUnit() { }
 
   /// <summary>
-  ///   If true, when the Legend dies, its parent faction is defeated.
-  /// </summary>
-  public bool Hivemind { get; set; }
-
-  /// <summary>
   ///   The current unit type of the Legend. Can be changed at any time, even if the Legend is already in the game world.
   ///   This will be automatically updated if unit is changed.
   /// </summary>
