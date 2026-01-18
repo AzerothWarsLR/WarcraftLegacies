@@ -7,12 +7,14 @@ namespace WarcraftLegacies.Source.FactionMechanics.Druids;
 
 public static class CenariusGhost
 {
-  private static void Dies(Legend legend, Faction druids)
+  private static void Dies(LegendDiedEventArgs args, Faction druids)
   {
-    if (legend is not LegendaryHero cenarius)
+    if (args.Permanent)
     {
       return;
     }
+
+    var cenarius = args.LegendaryHero;
 
     cenarius.UnitType = LegendDruids.UnittypeCenariusGhost;
     cenarius.PermaDies = false;
@@ -24,7 +26,7 @@ public static class CenariusGhost
 
   public static void Setup(LegendaryHero cenarius, Faction druids)
   {
-    cenarius.PermanentlyDied += (sender, hero) => Dies(hero, druids);
+    cenarius.Died += (sender, hero) => Dies(hero, druids);
     cenarius.DeathMessage =
       "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
   }

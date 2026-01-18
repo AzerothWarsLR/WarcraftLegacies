@@ -35,7 +35,7 @@ public static class TheFrozenThrone
     ownerChangeTrigger.RegisterUnitEvent(frozenThrone.Unit!, unitevent.ChangeOwner);
     ownerChangeTrigger.AddAction(OnFrozenThroneChangeOwner);
 
-    lichKing.PermanentlyDied += OnLichKingDied;
+    lichKing.Died += OnLichKingDied;
 
     scourge.ScoreStatusChanged += OnScourgeScoreStatusChanged;
   }
@@ -157,9 +157,9 @@ public static class TheFrozenThrone
     Fracture();
   }
 
-  private static void OnLichKingDied(object? sender, LegendaryHero e)
+  private static void OnLichKingDied(object? sender, LegendDiedEventArgs eventArgs)
   {
-    if (e.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE)
+    if (eventArgs.Permanent && eventArgs.LegendaryHero.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE)
     {
       RemoveDomination();
     }

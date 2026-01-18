@@ -33,7 +33,7 @@ public sealed class LegendaryHero : Legend
   /// <summary>
   ///   Fired when the <see cref="Legend" /> permanently dies.
   /// </summary>
-  public event EventHandler<LegendaryHero>? PermanentlyDied;
+  public event EventHandler<LegendDiedEventArgs>? Died;
 
   /// <summary>
   /// Invoked when the <see cref="LegendaryHero"/> deals damage.
@@ -178,17 +178,28 @@ public sealed class LegendaryHero : Legend
     }
 
     OnPermaDeath();
-    PermanentlyDied?.Invoke(this, this);
+    Died?.Invoke(this, new LegendDiedEventArgs
+    {
+      LegendaryHero = this,
+      Permanent = true
+    });
+  }
+
+  private void OnBecomesUnrevivable()
+  {
+    if (_permaDies || AllDependenciesAreMissing())
+    {
+      PermanentlyKill();
+    }
   }
 
   private void OnDeath()
   {
-    if (!_permaDies && !AllDependenciesAreMissing())
+    Died?.Invoke(this, new LegendDiedEventArgs
     {
-      return;
-    }
-
-    PermanentlyKill();
+      LegendaryHero = this,
+      Permanent = false
+    });
   }
 
   private bool AllDependenciesAreMissing()
@@ -221,6 +232,8 @@ public sealed class LegendaryHero : Legend
       _ownerTrig.Dispose();
     }
 
+    PlayerUnitEvents.Unregister(UnitEvent.Dies, OnDeath, Unit);
+
     if (Unit == null)
     {
       return;
@@ -228,7 +241,10 @@ public sealed class LegendaryHero : Legend
 
     _becomesRevivableTrig = trigger.Create();
     _becomesRevivableTrig.RegisterUnitEvent(Unit, unitevent.HeroRevivable);
-    _becomesRevivableTrig.AddAction(OnDeath);
+    _becomesRevivableTrig.AddAction(OnBecomesUnrevivable);
+
+    PlayerUnitEvents.Register(UnitEvent.Dies, OnDeath, Unit);
+
     _castTrig = trigger.Create();
     _castTrig.RegisterUnitEvent(Unit, unitevent.SpellFinish);
     _castTrig.AddAction(OnCast);

@@ -25,7 +25,7 @@ public sealed class ObjectiveSpendSkillPoints : Objective
   public override void OnAdd(Faction faction)
   {
     PlayerUnitEvents.Register(HeroTypeEvent.LearnsSpell, OnSkillPointSpent, _hero.UnitType);
-    _hero.PermanentlyDied += OnHeroPermanentlyDied;
+    _hero.Died += OnHeroDied;
   }
 
   private void OnSkillPointSpent()
@@ -37,5 +37,11 @@ public sealed class ObjectiveSpendSkillPoints : Objective
     }
   }
 
-  private void OnHeroPermanentlyDied(object? sender, LegendaryHero hero) => Progress = QuestProgress.Failed;
+  private void OnHeroDied(object? sender, LegendDiedEventArgs eventArgs)
+  {
+    if (eventArgs.Permanent)
+    {
+      Progress = QuestProgress.Failed;
+    }
+  }
 }
