@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DummyCasters;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// When the unit casts a spell, it has a chance to cast a dummy spell without a target.
 /// </summary>
-public sealed class NoTargetSpellOnCast : UnitTypeTrait, IEffectOnSpellEffect
+public sealed class NoTargetSpellOnCast : UnitTrait, IEffectOnSpellEffect
 {
   private readonly int _abilityTypeId;
 

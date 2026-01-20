@@ -10,8 +10,8 @@ public sealed class ShadowAssaultSpell : Spell
   public float DamagePerLevel { get; init; }
 
   public required string BlinkEffectPath { get; init; }
-  public required string ExecuteEffectPath { get; init; }
-  public required string DamageEffectPath { get; init; }
+  public string? ExecuteEffectPath { get; init; }
+  public string? DamageEffectPath { get; init; }
 
   public float BaseExecuteThreshold { get; init; } = 0.15f;
   public float ExecuteThresholdPerLevel { get; init; } = 0.05f;
@@ -33,6 +33,8 @@ public sealed class ShadowAssaultSpell : Spell
     {
       caster.SetAbilityCooldownRemaining(Id, caster.GetAbilityCooldown(Id, spellLevel - 1));
     }
+
+    caster.QueueOrder(ORDER_ATTACK, target);
   }
 
   private void TeleportToTarget(unit caster, unit target)
@@ -47,7 +49,10 @@ public sealed class ShadowAssaultSpell : Spell
   {
     var damage = BaseDamage + DamagePerLevel * spellLevel;
     caster.DealDamage(target, damage, true, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
-    effect.Create(DamageEffectPath, caster.X, caster.Y).Dispose();
+    if (DamageEffectPath != null)
+    {
+      effect.Create(DamageEffectPath, caster.X, caster.Y).Dispose();
+    }
   }
 
   private bool CanExecute(unit target, int level)
@@ -64,8 +69,10 @@ public sealed class ShadowAssaultSpell : Spell
     var currentHp = target.Life;
     caster.DealDamage(target, currentHp + 500, true, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
 
-    var executeEffect = effect.Create(ExecuteEffectPath, target.X, target.Y);
-    executeEffect.Dispose();
+    if (ExecuteEffectPath != null)
+    {
+      effect.Create(ExecuteEffectPath, target.X, target.Y).Dispose();
+    }
 
     caster.SetAbilityCooldownRemaining(Id, 0);
   }

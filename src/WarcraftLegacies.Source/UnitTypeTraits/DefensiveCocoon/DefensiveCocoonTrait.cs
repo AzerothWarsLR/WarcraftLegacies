@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 using WCSharp.Buffs;
 
@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class DefensiveCocoonTrait : UnitTypeTrait, IEffectOnDamaged
+public sealed class DefensiveCocoonTrait : UnitTrait, IEffectOnDamaged
 {
   private readonly int _abilityTypeId;
 

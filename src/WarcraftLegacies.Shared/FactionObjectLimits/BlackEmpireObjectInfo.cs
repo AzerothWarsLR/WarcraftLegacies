@@ -58,7 +58,7 @@ public static class BlackEmpireObjectInfo
     yield return new(UPGRADE_RBEM_MINDLASHER_ADEPT_TRAINING_BLACKEMPIRE, Unlimited);
     yield return new(UPGRADE_RBEH_HERALD_ADEPT_TRAINING_BLACKEMPIRE, Unlimited);
     yield return new(UPGRADE_RBEP_PARALYSING_FEAR_BLACK_EMPIRE, Unlimited);
-    yield return new(UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE, Unlimited);
+    yield return new(UPGRADE_RBEV_HOWL_OF_TERROR_BLACK_EMPIRE, Unlimited);
     yield return new(UPGRADE_RBEA_ACCELERATED_CYCLE_BLACK_EMPIRE_STYGIAN_HULK, Unlimited);
     yield return new(UPGRADE_RBFC_CURSED_FLESH_BLACK_EMPIRE_AQIR_AND_FORGOTTEN_ONE, Unlimited);
     yield return new(UPGRADE_RBES_UNWORLDLY_SCYTHE_BLACK_EMPIRE_REAPER, Unlimited);

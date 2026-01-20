@@ -63,7 +63,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNShadowVoid.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
     },
     {
       "Level": 1,
@@ -81,19 +81,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Shadow Veil"
+      "Value": "Howl of Terror"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Shadow Veil"
+      "Value": "Research Howl of Terror"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Enable the Shadow Veil ability for the Deformed Chimera."
+      "Value": "Enables Deformed Chimera to use Howl of Terror, which reduces the attack damage of nearby enemy units by \u003CMD19,DataA1,%\u003E% for \u003CMD19,Dur1\u003E seconds."
     }
   ]
 }

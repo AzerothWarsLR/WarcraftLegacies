@@ -33,14 +33,7 @@ public sealed class QuestEyeofSargeras : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     RegisterMetamorphosis();
-    completingFaction.ModAbilityAvailability(PermanentMetamorphosisId, 1);
-    completingFaction.ModAbilityAvailability(ActiveMetamorphosisId, -1);
     ReplaceMetamorphosisOnIllidan();
-  }
-
-  protected override void OnAdd(Faction faction)
-  {
-    faction.ModAbilityAvailability(PermanentMetamorphosisId, -1);
   }
 
   private static void RegisterMetamorphosis()
@@ -63,6 +56,12 @@ public sealed class QuestEyeofSargeras : QuestData
     SpellRegistry.Register(permanentMetamorphosis);
   }
 
+  /// <summary>
+  /// Replaces Illidan's existing active Metamorphosis with the passive version.
+  /// <para>First, Illidan gains Engineering Upgrade, turning the active Metamorphosis into the passive one.</para>
+  /// <para>If he has already learned Metamorphosis, he is forced to unlearn it, then learn the passive one, so that the OnLearn effect of it can trigger.</para>
+  /// <para>After being replaced, he is then forced to re-learn all levels he had in Metamorphosis.</para>
+  /// </summary>
   private void ReplaceMetamorphosisOnIllidan()
   {
     if (_illidan.Unit == null)
@@ -72,6 +71,15 @@ public sealed class QuestEyeofSargeras : QuestData
 
     _illidan.Unit.RemoveAbility(MetamorphosisBuff);
     var activeMetamorphosisLevel = _illidan.Unit.GetAbilityLevel(ActiveMetamorphosisId);
+
+    if (activeMetamorphosisLevel > 0)
+    {
+      _illidan.Unit.RemoveAbility(ActiveMetamorphosisId);
+      _illidan.Unit.SkillPoints += activeMetamorphosisLevel;
+    }
+
+    _illidan.Unit.AddAbility(ABILITY_ZBEU_ENGINEERING_UPGRADE_ILLIDAN);
+
     for (var i = 0; i < activeMetamorphosisLevel; i++)
     {
       _illidan.Unit.SelectHeroSkill(PermanentMetamorphosisId);

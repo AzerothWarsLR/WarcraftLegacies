@@ -46,7 +46,7 @@ public static class DefaultOptionsFactory
     var options = new SharedPathOptions
     {
       W3XFolderPath = Path.Combine(rootPath, PathConventions.MapsPath, $"{mapName}.w3x"),
-      PublishPath = Path.Combine(rootPath, PathConventions.PublishedPath, $"{mapName}.w3x"),
+      PublishPath = Path.Combine(rootPath, PathConventions.PublishedPath, $"{mapName}{settings.MapSettings.Version}.w3x"),
       CsProjPath = Path.Combine(rootPath, PathConventions.SrcPath, $"{mapName}{PathConventions.SourceProjectSuffix}", $"{mapName}{PathConventions.SourceProjectSuffix}.csproj"),
       BackupPath = Path.Combine(rootPath, PathConventions.BackupsPath),
       ScriptArtifactPath = Path.Combine(rootPath, PathConventions.ArtifactsPath),

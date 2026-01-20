@@ -25,21 +25,7 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
   {
     if (learner.UnitType != UnitTypeId)
     {
-      var legend = LegendaryHeroManager.GetFromUnit(learner);
-      if (legend?.Unit != null)
-      {
-        legend.UnitType = UnitTypeId;
-      }
-
-      var illidan = legend!.Unit!;
-      illidan.AddAnimationProperty("alternate");
-      if (LearnEffectPath != null)
-      {
-        var learnEffect = AddSpecialEffect(LearnEffectPath, illidan.X, illidan.Y);
-        learnEffect.Dispose();
-      }
-
-      illidan.SelectHeroSkill(Id);
+      TransformHero(learner);
       return;
     }
 
@@ -54,5 +40,27 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
       learner.AttackBaseDamage1 += DamageBonus.PerLevel;
       learner.MaxLife += HitPointBonus.PerLevel;
     }
+  }
+
+  /// <summary>
+  /// Transforms the hero into their alternate form.
+  /// <remarks>Only happens once, when the ability is first learned.</remarks>
+  /// </summary>
+  private void TransformHero(unit learner)
+  {
+    var legend = LegendaryHeroManager.GetFromUnit(learner);
+    if (legend?.Unit != null)
+    {
+      legend.UnitType = UnitTypeId;
+    }
+
+    var illidan = legend!.Unit!;
+    illidan.AddAnimationProperty("alternate");
+    if (LearnEffectPath != null)
+    {
+      AddSpecialEffect(LearnEffectPath, illidan.X, illidan.Y).Dispose();
+    }
+
+    illidan.SelectHeroSkill(Id);
   }
 }

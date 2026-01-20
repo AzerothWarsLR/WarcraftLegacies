@@ -1,4 +1,4 @@
-﻿namespace MacroTools.UnitTypeTraits;
+﻿namespace MacroTools.UnitTraits;
 
 /// <summary>
 /// Provides methods for responding to damage events with some kind of effect.

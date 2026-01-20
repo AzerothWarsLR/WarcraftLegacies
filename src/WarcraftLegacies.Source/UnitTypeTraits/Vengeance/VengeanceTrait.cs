@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class VengeanceTrait : UnitTypeTrait, IEffectOnDamaged
+public sealed class VengeanceTrait : UnitTrait, IEffectOnDamaged
 {
   private readonly int _abilityTypeId;
 

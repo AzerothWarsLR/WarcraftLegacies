@@ -2,7 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Skywall;

@@ -1,10 +1,10 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
-public sealed class SpellResistanceAura : UnitTypeTrait, IEffectOnCreated
+public sealed class SpellResistanceAura : UnitTrait, IEffectOnCreated
 {
   public void OnCreated(unit createdUnit)
   {

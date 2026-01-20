@@ -5,6 +5,7 @@ using MacroTools.Libraries;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Effects;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
@@ -43,11 +44,12 @@ public sealed class DeathPact : Spell
 
     var unitsInRange = GlobalGroup
       .EnumUnitsInRange(casterPosition, Radius)
-      .Where(x => x != null && x.Alive && IsValidTarget(x, casterPlayer))
+      .Where(x => IsValidTarget(x, casterPlayer))
       .ToList();
 
     if (unitsInRange.Count == 0)
     {
+      Refund(caster);
       return;
     }
 
@@ -58,17 +60,13 @@ public sealed class DeathPact : Spell
       .ThenBy(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), casterPosition))
       .FirstOrDefault();
 
-
-    if (targetUnit == null || !targetUnit.Alive)
+    if (targetUnit == null)
     {
+      Refund(caster);
       return;
     }
 
     var targetHealth = targetUnit.Life;
-    if (targetHealth <= 0)
-    {
-      return;
-    }
 
     targetUnit.Kill();
 
@@ -81,22 +79,30 @@ public sealed class DeathPact : Spell
       EffectSystem.Add(casterEffect);
     }
 
-    var manaToRestore = targetHealth * ManaRestorePercent;
-    var maxMana = caster.MaxMana;
-    var currentMana = caster.Mana;
-
-    caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
+    Delay.Add(() =>
+    {
+      var manaToRestore = targetHealth * ManaRestorePercent;
+      var maxMana = caster.MaxMana;
+      var currentMana = caster.Mana;
+      caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
+    });
 
     EffectSystem.Add(effect.Create(KillEffect, targetUnit.X, targetUnit.Y));
   }
 
+  private void Refund(unit caster)
+  {
+    //Delay to avoid mana overcap.
+    Delay.Add(() =>
+    {
+      var ability = caster.GetAbility(Id);
+      caster.Mana += ability.GetManaCost_amcs(caster.GetAbilityLevel(Id) - 1);
+      caster.SetAbilityCooldownRemaining(Id, 0);
+    });
+  }
+
   private static bool IsValidTarget(unit target, player casterPlayer)
   {
-    if (target == null)
-    {
-      return false;
-    }
-
     return target.Alive &&
            target.Owner == casterPlayer &&
            !target.IsResistant() &&

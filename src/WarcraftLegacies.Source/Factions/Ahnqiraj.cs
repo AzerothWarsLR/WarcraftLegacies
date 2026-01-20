@@ -5,7 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Cthun;
 using WarcraftLegacies.Source.Researches;

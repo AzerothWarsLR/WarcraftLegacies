@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using MacroTools.Utils;
 using WCSharp.Effects;
 
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Spells;
 /// <summary>
 /// When a unit with this ability deals physical/normal damage, it heals allies in a radius around itself.
 /// </summary>
-public sealed class ResoluteHeart : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class ResoluteHeart : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

@@ -1,5 +1,5 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 
@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// When the unit deals damage, it has a chance to cast a dummy spell against that target.
 /// </summary>
-public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class SpellOnAttack : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

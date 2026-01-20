@@ -1,6 +1,6 @@
 ﻿using MacroTools.Data;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WarcraftLegacies.Source.UnitTypeTraits;
@@ -9,12 +9,12 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Setup.Spells;
 
 /// <summary>
-/// Responsible for setting up all Illidari <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
+/// Responsible for setting up all Illidari <see cref="Spell"/>s and <see cref="UnitTrait"/>s.
 /// </summary>
 public static class IllidariSpellSetup
 {
   /// <summary>
-  /// Sets up all Illidari <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
+  /// Sets up all Illidari <see cref="Spell"/>s and <see cref="UnitTrait"/>s.
   /// </summary>
   public static void Setup()
   {
@@ -25,23 +25,6 @@ public static class IllidariSpellSetup
       ClosingDelay = 15,
       TargetLocation = new Point(6930, -30177),
       Color = new Color(255, 255, 250, 255)
-    });
-
-    UnitTypeTraitRegistry.Register(new WarglaivesOfAzzinoth(ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_ILLIDAN)
-    {
-      Radius = 150,
-      DamageBase = 4,
-      DamageLevel = 14,
-      DamageMultiplierAgainstDemons = 1.2f,
-      Effect = @"war3mapImported\Culling Cleave.mdx",
-      EffectScale = 1.2f,
-      DamageType = damagetype.Magic
-    }, new[]
-    {
-      UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN,
-      UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
-      UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
-      UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
     });
 
     var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
@@ -55,6 +38,12 @@ public static class IllidariSpellSetup
       ExecuteThresholdPerLevel = 0f
     };
     SpellRegistry.Register(shadowAssault);
+
+    SpellRegistry.Register(new ShadowAssaultSpell(ABILITY_YBBS_BLINK_STRIKE_DEATHSWORN)
+    {
+      BaseDamage = 25,
+      BlinkEffectPath = @"Abilities\Spells\NightElf\Blink\BlinkCaster.mdl"
+    });
 
     UnitTypeTraitRegistry.Register(new DamageMultiplierOnAttack(ABILITY_A0YV_CRIPPLING_STRIKE_AKAMA)
     {
@@ -81,6 +70,23 @@ public static class IllidariSpellSetup
       BurnReductionPerBounce = 0.15f,
       MaximumBounceRadius = 500
     });
+
+    ItemTypeTraitRegistry.Register(new WarglaivesOfAzzinoth
+    {
+      Radius = 150,
+      DamageBase = 35,
+      DamageLevel = 0,
+      DamageMultiplierAgainstDemons = 1.2f,
+      Effect = @"war3mapImported\Culling Cleave.mdx",
+      EffectScale = 1.2f,
+      DamageType = damagetype.Magic
+    }, ITEM_I0WG_WARGLAIVES_OF_AZZINOTH);
+
+    UnitTypeTraitRegistry.Register(new Kingslayer
+    {
+      RequiredResearch = UPGRADE_YBPH_KINGSLAYER_ILLIDARI,
+      DamageBonus = 0.6f
+    }, UNIT_NDRN_DEATHSWORN_ILLIDARI);
   }
 }
 

@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using MacroTools.Utils;
 using WCSharp.Effects;
 
@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// When the unit dies, it reanimates nearby friendly units.
 /// </summary>
-public sealed class PersistentSoul : UnitTypeTrait, IEffectOnDeath
+public sealed class PersistentSoul : UnitTrait, IEffectOnDeath
 {
   private readonly int _abilityTypeId;
 

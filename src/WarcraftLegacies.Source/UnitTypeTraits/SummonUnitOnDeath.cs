@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// Causes the unit to summon a unit upon death.
 /// </summary>
-public sealed class SummonUnitOnDeath : UnitTypeTrait, IEffectOnDeath
+public sealed class SummonUnitOnDeath : UnitTrait, IEffectOnDeath
 {
   /// <summary>
   /// How long the summoned unit should last.

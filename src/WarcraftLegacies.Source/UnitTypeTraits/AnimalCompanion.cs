@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 ///   The ability holder summons a unit whenever it attacks, up to one unit alive at a time.
 /// </summary>
-public sealed class AnimalCompanion : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class AnimalCompanion : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _summonUnitTypeId;
 

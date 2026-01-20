@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 ///   Prevents the unit from casting abilities that aren't within range of a player-controlled hero.
 /// </summary>
-public sealed class InfiniteInfluence : UnitTypeTrait, IEffectOnSpellCast
+public sealed class InfiniteInfluence : UnitTrait, IEffectOnSpellCast
 {
   /// <summary>
   /// How near a player-controlled hero the caster has to be.

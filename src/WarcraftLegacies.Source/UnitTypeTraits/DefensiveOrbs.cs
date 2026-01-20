@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Missiles;
 using WCSharp.Missiles;
 
@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// The hero gains arcane orbs when casting abilities, which then collide with enemy units to deal damage.
 /// </summary>
-public sealed class DefensiveOrbs : UnitTypeTrait, IEffectOnSpellEffect
+public sealed class DefensiveOrbs : UnitTrait, IEffectOnSpellEffect
 {
   private readonly int _abilityTypeId;
 

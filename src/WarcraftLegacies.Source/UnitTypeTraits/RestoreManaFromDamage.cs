@@ -1,5 +1,5 @@
 ﻿using MacroTools.Data;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 /// The unit with this ability gains mana based on the damage they deal.
 /// </summary>
-public sealed class RestoreManaFromDamage : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class RestoreManaFromDamage : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

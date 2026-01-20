@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
 namespace MacroTools.Mechanics.DemonGates;
@@ -6,7 +6,7 @@ namespace MacroTools.Mechanics.DemonGates;
 /// <summary>
 /// Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.
 /// </summary>
-public sealed class FocalDemonGate : UnitTypeTrait, IEffectOnConstruction
+public sealed class FocalDemonGate : UnitTrait, IEffectOnConstruction
 {
   /// <inheritdoc />
   public void OnConstruction()

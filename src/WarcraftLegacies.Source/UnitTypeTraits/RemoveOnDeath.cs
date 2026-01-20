@@ -1,10 +1,10 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>Causes the unit to be removed when it dies, instead of leaving a corpse.</summary>
-public sealed class RemoveOnDeath : UnitTypeTrait, IEffectOnDeath
+public sealed class RemoveOnDeath : UnitTrait, IEffectOnDeath
 {
   /// <summary>An effect that appears when the unit dies.</summary>
   public string? DeathEffectPath { get; init; }

@@ -1,12 +1,12 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// When the unit deals damage, it has a chance to cast a dummy spell without a target.
 /// </summary>
-public sealed class NoTargetSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
+public sealed class NoTargetSpellOnAttack : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

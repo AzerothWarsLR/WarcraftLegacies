@@ -1,4 +1,4 @@
-﻿using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// <summary>
 ///   Causes the specified unit type to always have a squad of tentacles surrounding them.
 /// </summary>
-public sealed class HideousAppendages : UnitTypeTrait, IEffectOnCreated
+public sealed class HideousAppendages : UnitTrait, IEffectOnCreated
 {
   public required int TentacleUnitTypeId { get; init; }
 

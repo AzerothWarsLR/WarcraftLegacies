@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.Spells;
-using MacroTools.UnitTypeTraits;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
@@ -42,6 +42,7 @@ public sealed class BlackEmpire : Faction
   {
     RegisterQuests();
     RegisterSpells();
+    RegisterUnitTypeTraits();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
@@ -98,14 +99,6 @@ public sealed class BlackEmpire : Faction
       ProcChance = 1.0f
     }, UNIT_U029_STYGIAN_HULK_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new NoTargetSpellOnAttack(ABILITY_ABEV_SHADOW_VEIL_ICON)
-    {
-      DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
-      DummyOrderId = ORDER_HOWL_OF_TERROR,
-      ProcChance = 0.10f,
-      RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
-    }, UNIT_N0AH_DEFORMED_CHIMERA_NZOTH);
-
     UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABPF_PARALYSING_FEAR_ICON)
     {
       DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
@@ -135,15 +128,5 @@ public sealed class BlackEmpire : Faction
       SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
     };
     SpellRegistry.Register(poisonYor);
-
-    var shadowVeilSpell = new MassAnySpell(ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL)
-    {
-      DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
-      DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
-      Radius = 200,
-      CastFilter = CastFilters.IsTargetOrganicAndAlive,
-      TargetType = SpellTargetType.None
-    };
-    SpellRegistry.Register(shadowVeilSpell);
   }
 }
