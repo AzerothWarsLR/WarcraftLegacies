@@ -2,7 +2,7 @@
 
 namespace MacroTools.UnitNameTools;
 
-public class NamePool
+public sealed class NamePool
 {
   private readonly List<string> _allNames;
   private readonly HashSet<string> _used = new();
@@ -14,7 +14,7 @@ public class NamePool
 
   public bool TryAssign(unit unit)
   {
-    if (unit == null || _allNames.Count == 0)
+    if (_allNames.Count == 0)
     {
       return false;
     }
@@ -43,7 +43,7 @@ public class NamePool
 
   public bool TryRelease(unit unit)
   {
-    if (unit == null)
+    if (_allNames.Count == 0)
     {
       return false;
     }

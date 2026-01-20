@@ -9,7 +9,7 @@ public static class UniqueEliteNames
     return new Dictionary<int, List<string>>
     {
       [UNIT_H00F_PALADIN_LORDAERON] =
-        new List<string>
+        new()
         {
           "Agamand the True",
           "Arius the Seeker",
@@ -35,7 +35,7 @@ public static class UniqueEliteNames
           "Zann the Defender"
         },
       [UNIT_N00A_FARSTRIDER_QUELTHALAS_ELITE] =
-        new List<string>
+        new ()
         {
           "Amora Eagleye",
           "Anthis Sunbow",
@@ -53,7 +53,7 @@ public static class UniqueEliteNames
           "Vaelith Dawntracker"
         },
       [UNIT_N007_KIRIN_TOR_DALARAN_ELITE] =
-        new List<string>
+        new ()
         {
           "Aran Spellweaver",
           "Nikil Dawnseeker",
@@ -70,7 +70,7 @@ public static class UniqueEliteNames
           "Leios Sunward"
         },
       [UNIT_O01V_GREYGUARD_GILNEAS] =
-        new List<string>
+        new ()
         {
           "Fenric the Howler",
           "Ravok Nightfang",
@@ -84,7 +84,7 @@ public static class UniqueEliteNames
           "Mordran Bloodhowl"
         },
       [UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE] =
-        new List<string>
+        new ()
         {
           "Baron Bloodbane",
           "Baron Felblade",
@@ -102,7 +102,8 @@ public static class UniqueEliteNames
           "Lord Nightsorrow",
           "Lord Soulrender"
         },
-      [UNIT_U007_DREADLORD_LEGION_ELITE] = new List<string>
+      [UNIT_U007_DREADLORD_LEGION_ELITE] =
+        new ()
       {
         "Algammon",
         "Banehallow",
@@ -120,7 +121,7 @@ public static class UniqueEliteNames
         "Zilfallon"
       },
       [UNIT_O01L_EXECUTIONER_FEL_ELITE] =
-        new List<string>
+        new ()
         {
           "Gorrak Bloodcleaver",
           "Thragor Doomblade",
@@ -139,7 +140,7 @@ public static class UniqueEliteNames
           "Vorrak the Ravager"
         },
       [UNIT_NNRG_ROYAL_GUARD_ILLIDARI] =
-        new List<string>
+        new ()
         {
           "Zytheris the Vigilant",
           "Malirion Tideblade",
@@ -158,7 +159,7 @@ public static class UniqueEliteNames
           "Valyssia Stormsentinel"
         },
       [UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE] =
-        new List<string>
+        new ()
         {
           "Anna Kondra",
           "Asprah Serpus",
@@ -172,7 +173,7 @@ public static class UniqueEliteNames
           "Thalassa Darkwave"
         },
       [UNIT_N0E7_BLOODWARDER_SUNFURY] =
-        new List<string>
+        new ()
         {
           "Aldos Firestar",
           "Eldin Sunstrider",
@@ -195,7 +196,7 @@ public static class UniqueEliteNames
           "Orendis Starflare"
         },
       [UNIT_ZBLI_LICH_SCOURGE_ELITE] =
-        new List<string>
+        new ()
         {
           "Alandil Lieng",
           "Araj the Summoner",
@@ -211,7 +212,7 @@ public static class UniqueEliteNames
           "Ras Frostwhisper"
         },
       [UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE] =
-        new List<string>
+        new ()
         {
           "Bale Bleakstare",
           "Doomroar",
@@ -227,7 +228,7 @@ public static class UniqueEliteNames
           "Warmaul"
         },
       [UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE] =
-        new List<string>
+        new ()
         {
           "Arashicage",
           "Bloodgrin",
@@ -243,7 +244,8 @@ public static class UniqueEliteNames
           "Samuro",
           "Tojara"
         },
-      [UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] = new List<string>
+      [UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] =
+        new ()
       {
         "Anubris",
         "Bandalar",
@@ -258,7 +260,7 @@ public static class UniqueEliteNames
         "Oghma"
       },
       [UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE] =
-        new List<string>
+        new ()
         {
           "Adora Nightshade",
           "Anara Chillwind",
@@ -275,7 +277,7 @@ public static class UniqueEliteNames
           "Tygra Snowscar"
         },
       [UNIT_H09R_VINDICATOR_DRAENEI] =
-        new List<string>
+        new ()
         {
           "Aeloras Lightwarden",
           "Ardalis Starshield",
@@ -292,7 +294,7 @@ public static class UniqueEliteNames
           "Seloras Lightwarden"
         },
       [UNIT_N08S_ELEMENTAL_LORD_SKYWALL] =
-        new List<string>
+        new ()
         {
           "Pyros Stormheart",
           "Terrak Emberforge",
@@ -309,7 +311,7 @@ public static class UniqueEliteNames
           "Tempesthorn"
         },
       [UNIT_O000_ROYALTY_CTHUN_ELITES] =
-        new List<string>
+        new ()
         {
           "Zarqith the Carapaced",
           "Thalrix the Impaler",
@@ -325,7 +327,7 @@ public static class UniqueEliteNames
           "Zyphor the Pincered"
         },
       [UNIT_N0B4_REAPER_NZOTH] =
-        new List<string>
+        new ()
         {
           "Skarath the Venomous",
           "Zyrix the Spinner",
@@ -341,7 +343,7 @@ public static class UniqueEliteNames
           "Sythrak the Poisoned"
         },
       [UNIT_H01L_THANE_IRONFORGE_ELITE] =
-        new List<string>
+        new ()
         {
           "Aggronor the Mighty",
           "Bandis Forgefire",
@@ -359,7 +361,7 @@ public static class UniqueEliteNames
           "Thurin Stormbreaker"
         },
       [UNIT_N07G_MUSKETEER_KULTIRAS] =
-        new List<string>
+        new ()
         {
           "Barnaby Flintlock",
           "Gideon Seawatch",
@@ -378,7 +380,7 @@ public static class UniqueEliteNames
           "Tobias Stormlock"
         },
       [UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE] =
-        new List<string>
+        new ()
         {
           "Sir Alaric Dawnshield",
           "Sir Roland Brightblade",
@@ -396,7 +398,8 @@ public static class UniqueEliteNames
           "Sir Marcus Shieldheart",
           "Sir Victor Lightmane"
         },
-      [UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER] = new List<string>
+      [UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER] =
+        new ()
       {
         "Krag Deathshroud",
         "Morthus Blackfell",
