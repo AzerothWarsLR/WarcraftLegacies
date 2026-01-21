@@ -5,13 +5,13 @@ using MacroTools.GameModes;
 using MacroTools.Save;
 using MacroTools.Sound;
 using MacroTools.Systems;
+using MacroTools.UnitNameTools;
 using MacroTools.UnitTraits;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
-using WarcraftLegacies.Source.UniqueUnitNames;
 using WarcraftLegacies.Source.UnitTypes;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -94,7 +94,7 @@ public static class GameSetup
     RuntimeIntegrityChecker.Setup();
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
-    EliteNameSystem.Setup();
+    DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
   }
 
   private static void SetupControlPointManager()
