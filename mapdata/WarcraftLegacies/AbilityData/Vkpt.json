@@ -7,13 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 2,
-      "Id": 846357582,
-      "Type": 2,
-      "Value": 10
-    },
-    {
-      "Level": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 30
@@ -22,6 +15,11 @@
       "Id": 1902473825,
       "Type": 3,
       "Value": "R017"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
     },
     {
       "Id": 1718840929,
