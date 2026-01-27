@@ -1,0 +1,57 @@
+{
+  "OldId": 1936089966,
+  "NewId": 858992750,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Xehc"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 520
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Parasite)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee amphibious unit. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Watery Youngling"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    }
+  ]
+}

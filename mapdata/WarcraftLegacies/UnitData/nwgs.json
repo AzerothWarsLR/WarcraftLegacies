@@ -136,6 +136,16 @@
       "Value": "R09X"
     },
     {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": " (Illidari)"
@@ -154,16 +164,6 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Agile flying creature of the Illidari."
-    },
-    {
-      "Id": 1949393269,
-      "Type": 3,
-      "Value": "magic"
-    },
-    {
-      "Id": 1664180597,
-      "Type": 2,
-      "Value": 2
     },
     {
       "Id": 1935827317,

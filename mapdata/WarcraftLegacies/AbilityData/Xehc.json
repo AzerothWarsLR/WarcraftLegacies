@@ -96,14 +96,10 @@
       "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Level": 1,
+      "Id": 1970106473,
       "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1634824801,
-      "Type": 3,
-      "Value": ""
+      "Value": "n033"
     },
     {
       "Id": 1835101793,
@@ -154,6 +150,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CXehc,DataA1\u003E damage per second for \u003CXehc,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "n033"
     }
   ]
 }

@@ -105,6 +105,12 @@
       "Value": "2"
     },
     {
+      "Level": 1,
+      "Id": 1970106473,
+      "Type": 3,
+      "Value": "n01J"
+    },
+    {
       "Id": 2020631137,
       "Value": 2
     },
@@ -150,6 +156,17 @@
       "Id": 829781345,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "n01J"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CANpa,DataA1\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse, capable of spreading a lesser infection."
     }
   ]
 }
