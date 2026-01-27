@@ -78,6 +78,7 @@ public sealed class Illidari : Faction
     var questBlackTemple = new QuestBlackTemple(flameAndSorrow);
     AddQuest(questBlackTemple);
 
+
     var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, AllLegends.Naga.Vashj);
     questZangarmarsh.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
     {
@@ -96,9 +97,16 @@ public sealed class Illidari : Faction
     });
     AddQuest(questLostOnes);
 
+    var questAzsharasVein = new QuestAzsharasVein(questZangarmarsh);
+    AddQuest(questAzsharasVein);
+
     AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, AllLegends.Naga.Vashj));
     AddQuest(new QuestEyeofSargeras(Artifacts.EyeOfSargeras, AllLegends.Naga.Illidan));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+
+    var questBrokenIsles = GetQuestByType<QuestBrokenIsles>();
+    var questVestigesOfPower = new QuestVestigesOfPower(questBrokenIsles);
+    AddQuest(questVestigesOfPower);
   }
 
   private void RegisterDialogue()
@@ -132,6 +140,20 @@ public sealed class Illidari : Faction
           {
             this
           }
+        }
+      }
+    ));
+
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human02x\A02LadyVashj17.flac",
+        "Good, let's get to it then.",
+        "Lady Vashj"),
+      new[] { this },
+      new List<Objective>
+      {
+        new ObjectiveQuestComplete(GetQuestByType<QuestAzsharasVein>())
+        {
+          EligibleFactions = new List<Faction> { this }
         }
       }
     ));
