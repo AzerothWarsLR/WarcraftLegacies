@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
@@ -43,6 +44,12 @@ public sealed class Illidari : Faction
     RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
     RegisterFactionDependentInitializer<Scourge, Druids, Ahnqiraj>(RegisterScourgeDruidsAhnqirajQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
+    GoldMines = new List<unit>
+    {
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5467, -31440),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5805, -31258),
+      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 767, 6244),
+    };
   }
 
   /// <inheritdoc />
@@ -52,7 +59,6 @@ public sealed class Illidari : Faction
     RegisterDialogue();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
-
   /// <inheritdoc />
   public override void OnNotPicked()
   {
@@ -63,7 +69,6 @@ public sealed class Illidari : Faction
     Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
     base.OnNotPicked();
   }
-
   private void RegisterQuests()
   {
     var flameAndSorrow = new QuestBrokenIsles(AllLegends.Naga.Illidan);
