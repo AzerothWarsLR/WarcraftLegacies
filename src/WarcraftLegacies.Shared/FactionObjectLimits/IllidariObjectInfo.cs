@@ -32,8 +32,8 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NNSU_COILFANG_SUMMONER_ILLIDARI, 6, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_NNRG_ROYAL_GUARD_ILLIDARI, 6, new List<UnitCategory> { Tank, Destroyer, Elite });
     yield return new(UNIT_NHYC_DRAGON_TURTLE_ILLIDARI, 8, new List<UnitCategory> { Siege, Tank });
-    yield return new(UNIT_NWGS_COUATL_NZOTH_ILLIDARI, 8, Flyer);
-    yield return new(UNIT_E00Y_SCYLLA_ILLIDARI, 4, Flyer);
+    yield return new(UNIT_NWGS_COUATL_ILLIDARI, 8, new List<UnitCategory> { Flyer, AntiMage });
+    yield return new(UNIT_E00Y_SCYLLA_ILLIDARI, 4, new List<UnitCategory> { Flyer, AntiMage });
     yield return new(UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE, 6, new List<UnitCategory> { Marksman, Destroyer, Elite });
     yield return new(UNIT_NDRN_DEATHSWORN_ILLIDARI, 12, Assassin);
     yield return new(UNIT_NDRS_SEER_ILLIDARI, 6, Support);
@@ -51,6 +51,8 @@ public static class IllidariObjectInfo
     yield return new(UPGRADE_ZBSI_SEA_WITCHES_ILLIDARI, Unlimited);
     yield return new(UPGRADE_ZB9L_COILFANG_SUMMONERS_ILLIDARI, Unlimited);
     yield return new(UPGRADE_YBPH_KINGSLAYER_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_R017_ARCANE_THIRST_ILLIDARI,Unlimited);
+    yield return new(UPGRADE_R00H_MANA_LASH_ILLIDARI,Unlimited);
 
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, new List<UnitCategory> { Support, Summoner });

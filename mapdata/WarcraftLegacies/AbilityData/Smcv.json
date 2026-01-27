@@ -20,6 +20,10 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Attacks destroy \u003CSmcv,DataA1\u003E mana per hit. The mana combusts, dealing damage to the attacked unit."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
     }
   ]
 }
