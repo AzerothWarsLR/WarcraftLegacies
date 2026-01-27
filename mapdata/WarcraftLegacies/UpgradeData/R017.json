@@ -1,0 +1,77 @@
+{
+  "OldId": 1802331474,
+  "NewId": 925970514,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651338343,
+      "Value": 5
+    },
+    {
+      "Id": 1651271527,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Arcane Thirst"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaDrain.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Gives Scylla the Siphon Mana ability. "
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Arcane Thirst"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Illidari)"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 2
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    }
+  ]
+}

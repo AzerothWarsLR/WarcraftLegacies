@@ -19,6 +19,11 @@
       "Value": 30
     },
     {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R017"
+    },
+    {
       "Id": 1718840929,
       "Type": 3,
       "Value": " (Scylla)"
@@ -28,6 +33,15 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Absorbs the magical energies of a target enemy unit by taking \u003CVkpt,DataB1\u003E mana per second from it and giving it to this unit. |nLasts \u003CACsm,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
     }
   ]
 }
