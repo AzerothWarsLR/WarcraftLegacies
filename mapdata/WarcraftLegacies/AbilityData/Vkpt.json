@@ -1,0 +1,20 @@
+{
+  "OldId": 1836270401,
+  "NewId": 1953524566,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Scylla)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Absorbs the magical energies of a target enemy unit by taking \u003CVkpt,DataB1\u003E mana per second from it and giving it to this unit. |nLasts \u003CACsm,Dur1\u003E seconds."
+    }
+  ]
+}
