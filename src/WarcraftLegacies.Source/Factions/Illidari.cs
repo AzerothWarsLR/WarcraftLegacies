@@ -105,7 +105,7 @@ public sealed class Illidari : Faction
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
 
     var questBrokenIsles = GetQuestByType<QuestBrokenIsles>();
-    var questVestigesOfPower = new QuestVestigesOfPower(questBrokenIsles);
+    var questVestigesOfPower = new QuestVestigesOfPower(questBlackTemple);
     AddQuest(questVestigesOfPower);
   }
 
