@@ -58,7 +58,7 @@ public sealed class QuestVestigesOfPower : QuestData
 
       if (_chosenArtifact == Artifacts.ScepterOfTheQueen)
       {
-        return "Illidan wields the Scepter of the Queen, channeling the ancient Highborne power to strengthen his command.";
+        return "Azshara's contains extraordinary energies, even so long after her death. Illidan relishes in recovering these once-lost Highborne secrets.";
       }
 
       return "Illidan claims the fragment of Zin’rokh, harnessing its titan energy to bolster the Illidari's might.";
