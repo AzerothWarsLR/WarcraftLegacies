@@ -11,7 +11,7 @@ public sealed class QuestThirstOfTheBetrayer : QuestData
 {
   public QuestThirstOfTheBetrayer(Capital sunwell, LegendaryHero illidan, Faction scourge, QuestData burningCrusade)
     : base(
-      "Thirst of the Betrayer",
+      "The Wayward Well",
       "Illidan seeks to seize the Sunwell and claim its arcane power for the Illidari.",
       @"ReplaceableTextures\CommandButtons\BTNPoTN_Sanctity_Potion.blp")
   {
