@@ -61,7 +61,7 @@ public sealed class QuestVestigesOfPower : QuestData
         return "Azshara's contains extraordinary energies, even so long after her death. Illidan relishes in recovering these once-lost Highborne secrets.";
       }
 
-      return "Illidan claims the fragment of Zin’rokh, harnessing its titan energy to bolster the Illidari's might.";
+      return "The Soulflayer's blade, though shattered and spread to the corners of Azeroth, still hold immense power. Even Illidan cannot decipher the sword's origin - but he can relish its power.";
     }
   }
 }
