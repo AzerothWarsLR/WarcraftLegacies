@@ -117,8 +117,8 @@ public sealed class Illidari : Faction
       burningCrusadeQuest
     );
 
-  AddQuest(theWaywardWell);
-}
+    AddQuest(theWaywardWell);
+  }
 
   private void RegisterDialogue()
   {
