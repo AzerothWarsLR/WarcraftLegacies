@@ -43,6 +43,7 @@ public sealed class Illidari : Faction
     RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
     RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
     RegisterFactionDependentInitializer<Scourge, Druids, Ahnqiraj>(RegisterScourgeDruidsAhnqirajQuests);
+    RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     GoldMines = new List<unit>
     {
@@ -67,6 +68,7 @@ public sealed class Illidari : Faction
     Regions.TelredorUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
     Regions.IllidariUnlockSA.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
     Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
+
     base.OnNotPicked();
   }
   private void RegisterQuests()
@@ -360,6 +362,20 @@ public sealed class Illidari : Faction
     });
     AddQuest(questBurningCrusade);
   }
+  private void RegisterScourgeQuests(Scourge scourge)
+  {
+    var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
+
+    var thirstOfTheBetrayer = new QuestThirstOfTheBetrayer(
+      AllLegends.Quelthalas.Sunwell,
+      AllLegends.Naga.Illidan,
+      scourge,
+      burningCrusadeQuest
+    );
+
+    AddQuest(thirstOfTheBetrayer);
+  }
+
 
   private void RegisterScourgeDruidsAhnqirajQuests(Scourge scourge, Druids druids, Ahnqiraj ahnqiraj)
   {
