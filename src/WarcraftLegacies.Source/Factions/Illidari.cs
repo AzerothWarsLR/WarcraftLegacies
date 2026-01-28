@@ -370,6 +370,15 @@ public sealed class Illidari : Faction
       Progress = QuestProgress.Undiscovered
     });
     AddQuest(questBurningCrusade);
+
+    var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
+    var theWaywardWell = new QuestTheWaywardWell(
+      AllLegends.Quelthalas.Sunwell,
+      AllLegends.Naga.Illidan,
+      burningCrusadeQuest
+    );
+
+    AddQuest(theWaywardWell);
   }
 
 

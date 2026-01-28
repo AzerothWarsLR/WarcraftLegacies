@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Naga;
 public sealed class QuestAzsharasVein : QuestData
 {
   public QuestAzsharasVein(QuestData prerequisite) : base("Azshara's Vein",
-    "Beneath Eldarath and the coast of Azshara lies a convergence of ancient ley lines, once mapped and manipulated by the Highborne. Illidan believes the remnants of their arcane workings can still be studied to uncover knowledge thought to be long-lost.",
+    "Beneath Eldarath and the coast of Azshara lies a convergence of ancient ley lines, once mapped and manipulated by the Highborne. Lady Vashj believes the remnants of their arcane workings can still be studied to uncover knowledge thought to be long-lost.",
     @"ReplaceableTextures\CommandButtons\BTNSeaWitch.blp")
   {
     AddObjective(new ObjectiveQuestComplete(prerequisite)
