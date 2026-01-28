@@ -43,7 +43,6 @@ public sealed class Illidari : Faction
     RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
     RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
     RegisterFactionDependentInitializer<Scourge, Druids, Ahnqiraj>(RegisterScourgeDruidsAhnqirajQuests);
-    RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     GoldMines = new List<unit>
     {
@@ -109,7 +108,17 @@ public sealed class Illidari : Faction
     var questBrokenIsles = GetQuestByType<QuestBrokenIsles>();
     var questVestigesOfPower = new QuestVestigesOfPower(questBlackTemple);
     AddQuest(questVestigesOfPower);
-  }
+
+    var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
+
+    var thirstOfTheBetrayer = new QuestThirstOfTheBetrayer(
+      AllLegends.Quelthalas.Sunwell,
+      AllLegends.Naga.Illidan,
+      burningCrusadeQuest
+    );
+
+  AddQuest(thirstOfTheBetrayer);
+}
 
   private void RegisterDialogue()
   {
@@ -361,19 +370,6 @@ public sealed class Illidari : Faction
       Progress = QuestProgress.Undiscovered
     });
     AddQuest(questBurningCrusade);
-  }
-  private void RegisterScourgeQuests(Scourge scourge)
-  {
-    var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
-
-    var thirstOfTheBetrayer = new QuestThirstOfTheBetrayer(
-      AllLegends.Quelthalas.Sunwell,
-      AllLegends.Naga.Illidan,
-      scourge,
-      burningCrusadeQuest
-    );
-
-    AddQuest(thirstOfTheBetrayer);
   }
 
 
