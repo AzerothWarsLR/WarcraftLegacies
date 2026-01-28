@@ -38,5 +38,5 @@ public sealed class QuestThirstOfTheBetrayer : QuestData
   }
 
   public override string RewardFlavour =>
-    "Illidan has seized control of the Sunwell, reclaiming its waters to fuel the Illidari cause.";
+    "The missing vial of Eternity, it seems, was used to create yet another Well of arcane energy that has since become the center of High Elven civilization.";
 }
