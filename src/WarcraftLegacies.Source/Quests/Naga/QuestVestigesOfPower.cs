@@ -53,7 +53,7 @@ public sealed class QuestVestigesOfPower : QuestData
     {
       if (_chosenArtifact == Artifacts.BookOfMedivh)
       {
-        return "Illidan studies the tome of Medivh, unlocking arcane secrets that enhance his mastery over magic.";
+        return "Illidan pores over the prophet's tome, unveiling arcane secrets that enhance his already prodigious mastery over magic.";
       }
 
       if (_chosenArtifact == Artifacts.ScepterOfTheQueen)
