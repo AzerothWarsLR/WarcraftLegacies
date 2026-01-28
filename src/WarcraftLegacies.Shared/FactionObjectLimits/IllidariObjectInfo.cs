@@ -51,8 +51,8 @@ public static class IllidariObjectInfo
     yield return new(UPGRADE_ZBSI_SEA_WITCHES_ILLIDARI, Unlimited);
     yield return new(UPGRADE_ZB9L_COILFANG_SUMMONERS_ILLIDARI, Unlimited);
     yield return new(UPGRADE_YBPH_KINGSLAYER_ILLIDARI, Unlimited);
-    yield return new(UPGRADE_R017_ARCANE_THIRST_ILLIDARI,Unlimited);
-    yield return new(UPGRADE_R00H_MANA_LASH_ILLIDARI,Unlimited);
+    yield return new(UPGRADE_R017_ARCANE_THIRST_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_R00H_MANA_LASH_ILLIDARI, Unlimited);
 
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, new List<UnitCategory> { Support, Summoner });

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Naga;
