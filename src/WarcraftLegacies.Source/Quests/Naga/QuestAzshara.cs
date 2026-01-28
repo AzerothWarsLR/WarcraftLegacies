@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Naga;
 public sealed class QuestAzsharasVein : QuestData
 {
   public QuestAzsharasVein(QuestData prerequisite) : base("Azshara's Vein",
-    "Eldarath and Azshara stand atop a nexus of ley lines. Lady Vashj moves to seize the area and seize the ancient magic for the Naga.",
+    "Beneath Eldarath and the coast of Azshara lies a convergence of ancient ley lines, once mapped and manipulated by the Highborne. Illidan believes the remnants of their arcane workings can still be studied to uncover knowledge thought to be long-lost.",
     @"ReplaceableTextures\CommandButtons\BTNSeaWitch.blp")
   {
     AddObjective(new ObjectiveQuestComplete(prerequisite)
@@ -27,5 +27,5 @@ public sealed class QuestAzsharasVein : QuestData
   }
 
   public override string RewardFlavour =>
-    "Eldarath and Azshara stand atop a nexus of ley lines. Lady Vashj moves to seize the area and seize the ancient magic for the Naga.";
+    "By examining the ley line nexus and the remnants of Highborne arcane structures, the Illidari recover forgotten principles of the arcane, expanding their understanding of Azeroth’s ancient magic.";
 }

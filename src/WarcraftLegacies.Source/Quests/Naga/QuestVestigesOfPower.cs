@@ -30,20 +30,30 @@ public sealed class QuestVestigesOfPower : QuestData
 
   protected override void OnAdd(Faction whichFaction)
   {
-    var possibleArtifacts = new List<Artifact>
+
+    var roll = GetRandomInt(1, 100);
+
+    if (roll <= 40)
     {
-      Artifacts.BookOfMedivh,
-      Artifacts.ScepterOfTheQueen,
+      _chosenArtifact = Artifacts.BookOfMedivh;
+    }
+    else if (roll <= 80)
+    {
+      _chosenArtifact = Artifacts.ScepterOfTheQueen;
+    }
+    else
+    {
+      var fragments = new List<Artifact>
+    {
       Artifacts.AzureFragment,
       Artifacts.EmeraldFragment,
       Artifacts.RubyFragment,
       Artifacts.ObsidianFragment,
       Artifacts.BronzeFragment
     };
-
-    var randIndex = (int)GetRandomReal(0, possibleArtifacts.Count - 0.01f);
-    _chosenArtifact = possibleArtifacts[randIndex];
-
+      var randIndex = GetRandomInt(0, fragments.Count - 1);
+      _chosenArtifact = fragments[randIndex];
+    }
     AddObjective(new ObjectiveAcquireArtifact(_chosenArtifact));
   }
 

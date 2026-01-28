@@ -6,15 +6,15 @@ using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Naga;
 
-public sealed class QuestThirstOfTheBetrayer : QuestData
+public sealed class QuestTheWaywardWell : QuestData
 {
-  public QuestThirstOfTheBetrayer(Capital sunwell, LegendaryHero illidan, QuestData burningCrusade)
+  public QuestTheWaywardWell(Capital sunwell, LegendaryHero illidan, QuestData burningCrusade)
     : base(
       "The Wayward Well",
-      "Illidan seeks to seize the Sunwell and claim its arcane power for the Illidari.",
+      "Illidan stole three vials from the Well of Eternity. He used one to create a new Well beneath Nordrassil, and kept the other two hidden - but one went missing.",
       @"ReplaceableTextures\CommandButtons\BTNPoTN_Sanctity_Potion.blp")
   {
-    Knowledge = 25;
+    Knowledge = 15;
     Progress = QuestProgress.Undiscovered;
 
     AddObjective(new ObjectiveQuestComplete(burningCrusade)

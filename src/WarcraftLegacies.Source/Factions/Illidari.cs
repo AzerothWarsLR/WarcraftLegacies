@@ -111,13 +111,13 @@ public sealed class Illidari : Faction
 
     var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
 
-    var thirstOfTheBetrayer = new QuestThirstOfTheBetrayer(
+    var theWaywardWell = new QuestTheWaywardWell(
       AllLegends.Quelthalas.Sunwell,
       AllLegends.Naga.Illidan,
       burningCrusadeQuest
     );
 
-  AddQuest(thirstOfTheBetrayer);
+  AddQuest(theWaywardWell);
 }
 
   private void RegisterDialogue()
