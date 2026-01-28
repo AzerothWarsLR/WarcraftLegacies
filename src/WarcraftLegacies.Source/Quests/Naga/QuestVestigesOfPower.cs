@@ -14,7 +14,7 @@ public sealed class QuestVestigesOfPower : QuestData
 
   public QuestVestigesOfPower(QuestData prerequisite) : base(
     "Vestiges of Power",
-    "Illidan pursues a relic of prodigious power. He will wield it, and all challengers will fall.",
+    "Illidan maintains an unquenchable thirst for power. The Skull of Gul'dan, the Warglaives of Azzinoth - these artifacts are not enough. He demands more.",
     @"ReplaceableTextures\CommandButtons\BTNPhilosophersStone.blp")
   {
     Knowledge = 15;
