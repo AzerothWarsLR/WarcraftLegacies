@@ -1,0 +1,29 @@
+{
+  "OldId": 1650615873,
+  "NewId": 1986227539,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R00H"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Couatl)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Attacks destroy \u003CSmcv,DataA1\u003E mana per hit. The mana combusts, dealing damage to the attacked unit."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}
