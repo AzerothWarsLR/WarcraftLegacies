@@ -1,5 +1,6 @@
 {
   "OldId": 1634750017,
+  "NewId": 1667786072,
   "Unk": [
     0
   ],
@@ -38,7 +39,7 @@
       "Pointer": 1,
       "Id": 828993360,
       "Type": 2,
-      "Value": 15
+      "Value": 8
     },
     {
       "Level": 2,
@@ -92,31 +93,23 @@
     {
       "Level": 1,
       "Id": 1935895905,
-      "Value": 25
+      "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Level": 1,
+      "Id": 1970106473,
       "Type": 3,
-      "Value": "Rnsw"
-    },
-    {
-      "Id": 1634824801,
-      "Type": 3,
-      "Value": "2"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 2
+      "Value": "n033"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Naga Siren)"
+      "Value": "(Minion)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "Q"
     },
     {
       "Level": 2,
@@ -131,13 +124,9 @@
       "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CANpa,DataA2\u003E damage per second for \u003CANpa,Dur2\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
     },
     {
-      "Id": 2019718497,
-      "Value": 2
-    },
-    {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "E"
+      "Value": "Q"
     },
     {
       "Level": 2,
@@ -155,7 +144,12 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CANpa,DataA1\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse, capable of spreading a lesser infection."
+      "Value": "Afflicts a target enemy unit with a deadly parasite that deals \u003CXehc,DataA1\u003E damage per second for \u003CXehc,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "n033"
     }
   ]
 }

@@ -7,12 +7,12 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Aatp"
+      "Value": "Smcv"
     },
     {
       "Id": 1949458805,
       "Type": 3,
-      "Value": "pierce"
+      "Value": "unknown"
     },
     {
       "Id": 1633772661,
@@ -56,7 +56,7 @@
     },
     {
       "Id": 1836083317,
-      "Value": 1375
+      "Value": 1275
     },
     {
       "Id": 1836412021,
@@ -86,7 +86,7 @@
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "debris,ground,item,nonancient,structure,ward"
+      "Value": "air,debris,ground,item,structure,ward,nonancient"
     },
     {
       "Id": 1731354997,
@@ -110,7 +110,7 @@
     {
       "Id": 829645685,
       "Type": 3,
-      "Value": ""
+      "Value": "MetalMediumSlice"
     },
     {
       "Id": 1915904373,
@@ -136,9 +136,27 @@
       "Value": "R09X"
     },
     {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": 1768975733,
+      "Value": 0
+    },
+    {
+      "Id": 1836084597,
+      "Value": 0
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Nzoth, Illidari)"
+      "Value": " (Illidari)"
     },
     {
       "Id": 1953458293,
@@ -154,6 +172,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Agile flying creature of the Illidari."
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }
