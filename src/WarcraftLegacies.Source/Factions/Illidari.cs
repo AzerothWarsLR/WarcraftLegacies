@@ -108,16 +108,6 @@ public sealed class Illidari : Faction
     var questBrokenIsles = GetQuestByType<QuestBrokenIsles>();
     var questVestigesOfPower = new QuestVestigesOfPower(questBlackTemple);
     AddQuest(questVestigesOfPower);
-
-    var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
-
-    var theWaywardWell = new QuestTheWaywardWell(
-      AllLegends.Quelthalas.Sunwell,
-      AllLegends.Naga.Illidan,
-      burningCrusadeQuest
-    );
-
-    AddQuest(theWaywardWell);
   }
 
   private void RegisterDialogue()
@@ -371,13 +361,11 @@ public sealed class Illidari : Faction
     });
     AddQuest(questBurningCrusade);
 
-    var burningCrusadeQuest = GetQuestByType<QuestBurningCrusade>();
     var theWaywardWell = new QuestTheWaywardWell(
       AllLegends.Quelthalas.Sunwell,
       AllLegends.Naga.Illidan,
-      burningCrusadeQuest
+      questBurningCrusade
     );
-
     AddQuest(theWaywardWell);
   }
 
