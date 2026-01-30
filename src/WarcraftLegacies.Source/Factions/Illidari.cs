@@ -104,8 +104,6 @@ public sealed class Illidari : Faction
     AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, AllLegends.Naga.Vashj));
     AddQuest(new QuestEyeofSargeras(Artifacts.EyeOfSargeras, AllLegends.Naga.Illidan));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
-
-    var questBrokenIsles = GetQuestByType<QuestBrokenIsles>();
     var questVestigesOfPower = new QuestVestigesOfPower(questBlackTemple);
     AddQuest(questVestigesOfPower);
   }
