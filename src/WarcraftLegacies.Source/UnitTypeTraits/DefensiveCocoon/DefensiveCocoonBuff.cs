@@ -29,6 +29,7 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
 
     _egg = unit.Create(Target.Owner, EggId, Target.X, Target.Y, 0);
     _egg.SetTimedLife(Duration + 1);
+    _egg.RemoveType(unittype.Summoned);
     _egg.MaxLife = MaximumHitPoints;
     _egg.SetLifePercent(100);
     _egg.Armor = Target.Armor;
