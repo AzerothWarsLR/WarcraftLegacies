@@ -92,16 +92,16 @@ public sealed class QuestBlackTemple : QuestData
         continue;
       }
 
+      if (unit.IsControlPoint())
+      {
+        unit.SetOwner(player.NeutralAggressive);
+        continue;
+      }
+
       if (unit.IsABuilding)
       {
         completingPlayer.Gold += unit.GoldCostOf(unit.UnitType);
         unit.Dispose();
-        continue;
-      }
-
-      if (unit.IsControlPoint())
-      {
-        unit.SetOwner(player.NeutralAggressive);
         continue;
       }
 
