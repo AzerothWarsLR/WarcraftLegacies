@@ -1,9 +1,9 @@
 ﻿using MacroTools.Systems;
 using WarcraftLegacies.Shared;
 
-namespace WarcraftLegacies.Source.UnitTypes;
+namespace WarcraftLegacies.Source.Setup;
 
-public static class UnitTypeConfig
+public static class UnitTypeSetup
 {
   public static void Setup()
   {
