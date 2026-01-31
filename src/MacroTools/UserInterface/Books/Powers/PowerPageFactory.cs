@@ -1,7 +1,7 @@
-﻿using MacroTools.BookSystem.Core;
-using MacroTools.Frames;
+﻿using MacroTools.UserInterface.Books.Core;
+using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.Powers;
+namespace MacroTools.UserInterface.Books.Powers;
 
 public sealed class PowerPageFactory : IPageFactory<PowerPage>
 {

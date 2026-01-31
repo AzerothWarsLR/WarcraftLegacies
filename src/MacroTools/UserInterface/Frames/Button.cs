@@ -1,6 +1,6 @@
 ﻿using MacroTools.Wrappers;
 
-namespace MacroTools.Frames;
+namespace MacroTools.UserInterface.Frames;
 
 public delegate void OnClickAction(player triggerPlayer);
 

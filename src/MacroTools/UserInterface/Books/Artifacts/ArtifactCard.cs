@@ -1,12 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using MacroTools.Artifacts;
-using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Frames;
+using MacroTools.UserInterface.Books.Core;
+using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.ArtifactSystem;
+namespace MacroTools.UserInterface.Books.Artifacts;
 
 /// <summary>
 ///   Represents a single Artifact in a black rectangle.

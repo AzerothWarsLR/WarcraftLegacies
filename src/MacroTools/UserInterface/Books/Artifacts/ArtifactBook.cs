@@ -1,9 +1,9 @@
 ﻿using MacroTools.Artifacts;
-using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
+using MacroTools.UserInterface.Books.Core;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.BookSystem.ArtifactSystem;
+namespace MacroTools.UserInterface.Books.Artifacts;
 
 /// <summary>
 ///   Displays all Artifacts in the game.

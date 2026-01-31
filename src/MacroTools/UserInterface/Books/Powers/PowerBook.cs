@@ -1,9 +1,9 @@
-﻿using MacroTools.BookSystem.Core;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.UserInterface.Books.Core;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.BookSystem.Powers;
+namespace MacroTools.UserInterface.Books.Powers;
 
 /// <summary>
 /// Shows all the <see cref="Power"/>s a particular player has.

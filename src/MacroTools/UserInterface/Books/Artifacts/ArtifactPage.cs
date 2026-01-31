@@ -1,7 +1,7 @@
 ﻿using MacroTools.Artifacts;
-using MacroTools.BookSystem.Core;
+using MacroTools.UserInterface.Books.Core;
 
-namespace MacroTools.BookSystem.ArtifactSystem;
+namespace MacroTools.UserInterface.Books.Artifacts;
 
 /// <summary>
 ///   Represents a limited number of Artifacts in a rectangular grid.

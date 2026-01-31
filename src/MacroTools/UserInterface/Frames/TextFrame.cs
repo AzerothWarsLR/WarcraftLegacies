@@ -1,4 +1,4 @@
-﻿namespace MacroTools.Frames;
+﻿namespace MacroTools.UserInterface.Frames;
 
 public sealed class TextFrame : Frame
 {

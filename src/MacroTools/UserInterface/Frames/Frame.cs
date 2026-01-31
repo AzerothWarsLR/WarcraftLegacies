@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MacroTools.Frames;
+namespace MacroTools.UserInterface.Frames;
 
 public class Frame
 {

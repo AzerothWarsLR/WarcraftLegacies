@@ -1,8 +1,8 @@
-﻿using MacroTools.BookSystem.Core;
-using MacroTools.Factions;
-using MacroTools.Frames;
+﻿using MacroTools.Factions;
+using MacroTools.UserInterface.Books.Core;
+using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.Powers;
+namespace MacroTools.UserInterface.Books.Powers;
 
 public sealed class PowerCard : Card<Power>
 {

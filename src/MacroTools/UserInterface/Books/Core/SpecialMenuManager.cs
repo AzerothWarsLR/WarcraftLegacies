@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Frames;
+using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.Core;
+namespace MacroTools.UserInterface.Books.Core;
 
 /// <summary>
 /// Responsible for managing all <see cref="ISpecialMenu"/>s.

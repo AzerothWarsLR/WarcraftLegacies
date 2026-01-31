@@ -1,7 +1,7 @@
-﻿using MacroTools.BookSystem.Core;
-using MacroTools.Factions;
+﻿using MacroTools.Factions;
+using MacroTools.UserInterface.Books.Core;
 
-namespace MacroTools.BookSystem.Powers;
+namespace MacroTools.UserInterface.Books.Powers;
 
 public sealed class PowerPage : Page<Power, PowerCard, PowerCardFactory>
 {

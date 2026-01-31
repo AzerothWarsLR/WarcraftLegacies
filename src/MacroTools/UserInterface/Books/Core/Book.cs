@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.Frames;
+using MacroTools.UserInterface.Frames;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.BookSystem.Core;
+namespace MacroTools.UserInterface.Books.Core;
 
 /// <summary>
 /// A collection of Pages that players can flip through to read information.

@@ -1,6 +1,6 @@
-﻿using MacroTools.Frames;
+﻿using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.Core;
+namespace MacroTools.UserInterface.Books.Core;
 
 public interface ISpecialMenu
 {

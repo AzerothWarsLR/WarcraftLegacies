@@ -1,7 +1,7 @@
-﻿using MacroTools.BookSystem.Core;
-using MacroTools.Frames;
+﻿using MacroTools.UserInterface.Books.Core;
+using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.ArtifactSystem;
+namespace MacroTools.UserInterface.Books.Artifacts;
 
 public sealed class ArtifactCardFactory : ICardFactory<ArtifactCard>
 {

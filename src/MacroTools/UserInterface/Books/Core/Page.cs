@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Frames;
+using MacroTools.UserInterface.Frames;
 
-namespace MacroTools.BookSystem.Core;
+namespace MacroTools.UserInterface.Books.Core;
 
 public abstract class Page<TItem, TCard, TCardFactory> : Frame
   where TCard : Card<TItem>
