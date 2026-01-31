@@ -4,7 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
-using Environment = MacroTools.Libraries.Environment;
+using Environment = MacroTools.Utils.Environment;
 
 namespace MacroTools.Quests;
 

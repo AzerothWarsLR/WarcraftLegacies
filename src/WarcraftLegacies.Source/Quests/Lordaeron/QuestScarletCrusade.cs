@@ -4,7 +4,6 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.Libraries;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions;

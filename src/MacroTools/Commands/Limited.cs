@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 

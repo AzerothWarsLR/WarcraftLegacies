@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.Hazards;
-using MacroTools.Libraries;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;

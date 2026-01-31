@@ -1,7 +1,7 @@
 ﻿using System;
-using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using Environment = MacroTools.Libraries.Environment;
+using Environment = MacroTools.Utils.Environment;
 
 namespace WarcraftLegacies.Source.Objectives;
 

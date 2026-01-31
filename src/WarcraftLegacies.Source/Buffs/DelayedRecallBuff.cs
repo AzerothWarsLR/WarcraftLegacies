@@ -2,7 +2,7 @@
 using System.Linq;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using Environment = MacroTools.Libraries.Environment;
+using Environment = MacroTools.Utils.Environment;
 
 namespace WarcraftLegacies.Source.Buffs;
 

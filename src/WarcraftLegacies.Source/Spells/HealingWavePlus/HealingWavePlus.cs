@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.Libraries;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Buffs;

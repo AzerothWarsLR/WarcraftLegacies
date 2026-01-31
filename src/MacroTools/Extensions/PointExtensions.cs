@@ -1,5 +1,5 @@
 ﻿using WCSharp.Shared.Data;
-using static MacroTools.Libraries.GeneralHelpers;
+using static MacroTools.Utils.GeneralHelpers;
 
 namespace MacroTools.Extensions;
 

@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace MacroTools.Libraries;
+namespace MacroTools.Utils;
 
 public static class MathEx
 {

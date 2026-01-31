@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Channels;
 using MacroTools.Extensions;
-using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Lightnings;
 
 namespace WarcraftLegacies.Source.Channels;

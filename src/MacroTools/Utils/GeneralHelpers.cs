@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Libraries;
+namespace MacroTools.Utils;
 
 /// <summary>
 /// Provides a useful set of methods for interacting with the Warcraft 3 engine.
