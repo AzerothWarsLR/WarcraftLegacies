@@ -1,5 +1,5 @@
 ﻿using MacroTools.Commands;
-using MacroTools.CommandSystem;
+using WarcraftLegacies.Source.Commands;
 
 namespace WarcraftLegacies.Source.Setup;
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ArtifactSystem;
-using MacroTools.CommandSystem;
+using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Utils;
 

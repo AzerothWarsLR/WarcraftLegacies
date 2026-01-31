@@ -1,4 +1,4 @@
-﻿using MacroTools.Cheats;
+﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared;

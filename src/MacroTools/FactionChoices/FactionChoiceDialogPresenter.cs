@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using MacroTools.Cheats;
+using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Systems;

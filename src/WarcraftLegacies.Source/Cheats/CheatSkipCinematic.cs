@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.Cheats;
+using MacroTools.Commands;
 using MacroTools.Systems;
 using WCSharp.Shared;
 

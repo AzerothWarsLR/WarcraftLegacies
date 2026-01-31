@@ -1,4 +1,4 @@
-﻿using MacroTools.CommandSystem;
+﻿using MacroTools.Commands;
 using MacroTools.ControlPoints;
 using MacroTools.FactionSystem;
 using MacroTools.GameModes;

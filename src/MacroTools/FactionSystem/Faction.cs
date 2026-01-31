@@ -57,7 +57,7 @@ public abstract class Faction
   /// <summary>A unique numerical identifier.</summary>
   public int Id { get; }
 
-  protected internal IReadOnlyList<unit> GoldMines
+  public IReadOnlyList<unit> GoldMines
   {
     get => _goldMines;
     protected init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();

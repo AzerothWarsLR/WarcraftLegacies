@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
-using MacroTools.Cheats;
-using MacroTools.CommandSystem;
+using MacroTools.Commands;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Cheats;
 

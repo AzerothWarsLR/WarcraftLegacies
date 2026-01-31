@@ -118,6 +118,6 @@ public static class PlayerExtensions
   /// <summary>
   /// Returns cross-game settings set by the player.
   /// </summary>
-  internal static PlayerSettings GetPlayerSettings(this player whichPlayer) =>
+  public static PlayerSettings GetPlayerSettings(this player whichPlayer) =>
     PlayerData.ByHandle(whichPlayer).PlayerSettings;
 }
