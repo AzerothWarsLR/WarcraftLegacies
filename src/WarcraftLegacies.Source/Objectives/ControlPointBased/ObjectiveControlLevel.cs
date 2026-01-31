@@ -1,4 +1,5 @@
 ﻿using MacroTools.ControlPoints;
+using MacroTools.Factions;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -25,7 +26,7 @@ public sealed class ObjectiveControlLevel : Objective
     Position = new(_target.Unit.X, _target.Unit.Y);
   }
 
-  public override void OnAdd(MacroTools.FactionSystem.Faction whichFaction)
+  public override void OnAdd(Faction whichFaction)
   {
     RefreshDescription();
     RefreshProgress();

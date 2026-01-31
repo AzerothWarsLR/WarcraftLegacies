@@ -1,5 +1,5 @@
 ﻿using MacroTools.BookSystem.Core;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Frames;
 
 namespace MacroTools.BookSystem.Powers;

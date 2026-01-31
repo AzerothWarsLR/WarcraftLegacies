@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.Commands;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 
 namespace WarcraftLegacies.Source.Cheats;
 

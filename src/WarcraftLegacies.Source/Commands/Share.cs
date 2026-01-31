@@ -1,6 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 
 namespace WarcraftLegacies.Source.Commands;
 

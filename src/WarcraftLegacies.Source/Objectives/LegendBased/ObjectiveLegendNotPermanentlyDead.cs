@@ -1,4 +1,5 @@
-﻿using MacroTools.Legends;
+﻿using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using WCSharp.Events;
 
@@ -39,7 +40,7 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
     }
   }
 
-  public override void OnAdd(MacroTools.FactionSystem.Faction whichFaction)
+  public override void OnAdd(Faction whichFaction)
   {
     if (_target.Unit.Alive)
     {

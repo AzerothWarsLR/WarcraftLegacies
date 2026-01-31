@@ -8,7 +8,7 @@ using MacroTools.Researches;
 using MacroTools.Utils;
 using WCSharp.Events;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 ///   Responsible for the management of all <see cref="Faction" />s and <see cref="Team" />s in the game.

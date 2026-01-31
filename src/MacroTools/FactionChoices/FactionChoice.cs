@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Factions;
 using MacroTools.UserInterface;
 using WCSharp.Shared.Data;
 

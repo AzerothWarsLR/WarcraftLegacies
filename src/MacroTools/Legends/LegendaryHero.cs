@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

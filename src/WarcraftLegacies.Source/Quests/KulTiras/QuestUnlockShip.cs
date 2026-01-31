@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.KulTiras;

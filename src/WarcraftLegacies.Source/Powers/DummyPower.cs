@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Factions;
 
 namespace WarcraftLegacies.Source.Powers;
 

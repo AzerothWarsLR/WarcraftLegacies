@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 
 namespace MacroTools.FactionChoices;
 

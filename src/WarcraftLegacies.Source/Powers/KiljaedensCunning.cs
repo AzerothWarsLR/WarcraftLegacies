@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Factions;
 using MacroTools.Setup;
 using WCSharp.Events;
 using WCSharp.Lightnings;

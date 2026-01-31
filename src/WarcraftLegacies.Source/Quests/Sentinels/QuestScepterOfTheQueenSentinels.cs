@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;

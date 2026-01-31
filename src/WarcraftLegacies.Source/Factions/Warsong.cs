@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;
 using MacroTools.Researches;

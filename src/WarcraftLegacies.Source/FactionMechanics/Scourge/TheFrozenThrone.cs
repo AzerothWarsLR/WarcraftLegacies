@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared;

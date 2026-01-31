@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;

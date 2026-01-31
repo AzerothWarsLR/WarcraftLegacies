@@ -1,4 +1,4 @@
-﻿namespace MacroTools.FactionSystem;
+﻿namespace MacroTools.Factions;
 
 public enum AllianceState
 {

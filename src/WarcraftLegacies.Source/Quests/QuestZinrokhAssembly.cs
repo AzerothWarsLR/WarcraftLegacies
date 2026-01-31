@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
 

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;

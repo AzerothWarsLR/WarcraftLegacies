@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.ControlPoints;
 using MacroTools.DialogueSystem;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Save;
 
 namespace MacroTools.Extensions;

@@ -10,7 +10,7 @@ using MacroTools.Shared;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.

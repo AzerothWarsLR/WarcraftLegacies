@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 public static class ColorManager
 {

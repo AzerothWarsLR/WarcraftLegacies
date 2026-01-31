@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -67,7 +68,7 @@ public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
 
   private bool IsValidUnitInRect() => GlobalGroup.EnumUnitsInRect(_targetRect).Any(IsUnitValid);
 
-  public override void OnAdd(MacroTools.FactionSystem.Faction whichFaction)
+  public override void OnAdd(Faction whichFaction)
   {
     Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
   }

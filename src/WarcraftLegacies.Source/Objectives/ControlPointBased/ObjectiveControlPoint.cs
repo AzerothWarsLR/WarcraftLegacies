@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 

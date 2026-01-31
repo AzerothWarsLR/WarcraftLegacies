@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 
 namespace MacroTools.Legends;
 

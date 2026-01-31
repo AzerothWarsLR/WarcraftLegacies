@@ -5,7 +5,7 @@ using MacroTools.Legends;
 using MacroTools.Systems;
 using MacroTools.Utils;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 /// Used to distribute player's resources to their allies.

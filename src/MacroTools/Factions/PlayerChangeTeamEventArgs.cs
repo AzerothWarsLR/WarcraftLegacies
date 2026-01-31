@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 public sealed class PlayerChangeTeamEventArgs : EventArgs
 {

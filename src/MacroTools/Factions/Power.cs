@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 ///   An ability that can be bestowed on a Faction.

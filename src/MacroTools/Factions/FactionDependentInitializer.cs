@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 /// A <see cref="Faction"/> initializer that is dependent on the registration of another <see cref="Faction"/> type

@@ -3,7 +3,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Systems;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 /// Extension methods for native Warcraft III units that relate to the Faction system.

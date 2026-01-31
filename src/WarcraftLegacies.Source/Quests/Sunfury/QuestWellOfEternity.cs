@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;

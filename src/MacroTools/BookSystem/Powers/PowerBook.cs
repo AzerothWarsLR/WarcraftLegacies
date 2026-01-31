@@ -1,6 +1,6 @@
 ﻿using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.BookSystem.Powers;

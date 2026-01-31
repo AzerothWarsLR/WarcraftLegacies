@@ -1,4 +1,4 @@
-﻿namespace MacroTools.FactionSystem;
+﻿namespace MacroTools.Factions;
 
 /// <summary>
 /// Describes how members of a <see cref="Team"/> share vision with eachother.

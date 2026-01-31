@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 
 namespace WarcraftLegacies.Source.Powers;
 

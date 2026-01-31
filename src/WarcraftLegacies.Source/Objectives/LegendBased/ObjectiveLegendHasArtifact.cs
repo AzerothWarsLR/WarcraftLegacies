@@ -1,4 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 
@@ -27,7 +28,7 @@ public sealed class ObjectiveLegendHasArtifact : Objective
     _progressOnArtifactLoss = failOnArtifactLoss ? QuestProgress.Failed : QuestProgress.Incomplete;
   }
 
-  public override void OnAdd(MacroTools.FactionSystem.Faction whichFaction)
+  public override void OnAdd(Faction whichFaction)
   {
     if (_targetArtifact.OwningUnit != null && _targetArtifact.OwningUnit == _targetLegend.Unit)
     {

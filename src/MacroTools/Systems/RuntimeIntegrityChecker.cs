@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.ControlPoints;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Utils;
 
 namespace MacroTools.Systems;

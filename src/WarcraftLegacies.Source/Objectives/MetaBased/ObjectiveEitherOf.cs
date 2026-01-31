@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Factions;
+using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.MetaBased;
 
@@ -18,7 +19,7 @@ public sealed class ObjectiveEitherOf : Objective
     Position = ObjectiveA.Position;
   }
 
-  public override void OnAdd(MacroTools.FactionSystem.Faction whichFaction)
+  public override void OnAdd(Faction whichFaction)
   {
     ObjectiveA.OnAdd(whichFaction);
     ObjectiveB.OnAdd(whichFaction);

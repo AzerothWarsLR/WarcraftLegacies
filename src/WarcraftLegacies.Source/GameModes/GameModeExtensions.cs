@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.GameModes;
 using MacroTools.HintSystem;
 using WarcraftLegacies.Source.Commands;

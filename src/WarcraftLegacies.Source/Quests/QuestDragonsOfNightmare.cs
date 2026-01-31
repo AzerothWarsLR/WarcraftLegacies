@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Sound;
 using WarcraftLegacies.Source.Objectives.TimeBased;

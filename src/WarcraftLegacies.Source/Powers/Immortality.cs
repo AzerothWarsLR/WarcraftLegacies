@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Setup;

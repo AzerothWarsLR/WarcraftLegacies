@@ -1,6 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.ControlPoints;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.GameModes;
 using MacroTools.Save;
 using MacroTools.Sound;

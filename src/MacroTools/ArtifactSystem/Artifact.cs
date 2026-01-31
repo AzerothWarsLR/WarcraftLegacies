@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using WCSharp.Events;
 
 namespace MacroTools.ArtifactSystem;

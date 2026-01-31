@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;

@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Factions;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Researches;
 using WCSharp.Events;

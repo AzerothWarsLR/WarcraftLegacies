@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;

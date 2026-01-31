@@ -4,7 +4,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Legends;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 /// <summary>
 /// A collection of players who are all allied to each other.

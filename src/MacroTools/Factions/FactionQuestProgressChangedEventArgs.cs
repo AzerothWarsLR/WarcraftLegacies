@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Quests;
 
-namespace MacroTools.FactionSystem;
+namespace MacroTools.Factions;
 
 public sealed class FactionQuestProgressChangedEventArgs : EventArgs
 {

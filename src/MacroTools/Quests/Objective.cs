@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Utils.Environment;
 

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.FactionSystem;
+using MacroTools.Factions;
 using MacroTools.Researches;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
