@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
-using MacroTools.ArtifactSystem;
+using MacroTools.Artifacts;
 using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
 using MacroTools.Factions;

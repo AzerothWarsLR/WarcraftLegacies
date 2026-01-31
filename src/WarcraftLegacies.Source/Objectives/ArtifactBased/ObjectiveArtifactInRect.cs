@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Artifacts;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -10,10 +11,10 @@ public sealed class ObjectiveArtifactInRect : Objective
   private readonly TriggerWrapper _entersRect = new();
   private readonly TriggerWrapper _exitsRect = new();
 
-  private readonly MacroTools.ArtifactSystem.Artifact _targetArtifact;
+  private readonly Artifact _targetArtifact;
   private readonly Rectangle _targetRect;
 
-  public ObjectiveArtifactInRect(MacroTools.ArtifactSystem.Artifact targetArtifact, Rectangle targetRect, string rectName)
+  public ObjectiveArtifactInRect(Artifact targetArtifact, Rectangle targetRect, string rectName)
   {
     _targetArtifact = targetArtifact;
     _targetRect = targetRect;

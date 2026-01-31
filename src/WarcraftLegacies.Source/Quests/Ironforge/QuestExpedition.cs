@@ -1,4 +1,4 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using MacroTools.Artifacts;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;

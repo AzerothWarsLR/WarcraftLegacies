@@ -1,4 +1,4 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using MacroTools.Artifacts;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
 

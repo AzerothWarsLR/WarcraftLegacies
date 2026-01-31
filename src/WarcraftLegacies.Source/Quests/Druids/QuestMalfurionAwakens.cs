@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ArtifactSystem;
+using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;

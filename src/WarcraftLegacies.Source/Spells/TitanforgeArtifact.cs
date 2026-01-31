@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.ArtifactSystem;
+using MacroTools.Artifacts;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 

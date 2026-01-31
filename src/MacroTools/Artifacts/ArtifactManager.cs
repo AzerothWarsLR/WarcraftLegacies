@@ -6,7 +6,7 @@ using MacroTools.Extensions;
 using MacroTools.Shores;
 using WCSharp.Events;
 
-namespace MacroTools.ArtifactSystem;
+namespace MacroTools.Artifacts;
 
 /// <summary>
 /// Manages all <see cref="Artifact"/>s by maintaining a list of registered <see cref="Artifact"/>s indexed by item type,

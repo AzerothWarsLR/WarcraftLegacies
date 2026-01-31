@@ -1,4 +1,4 @@
-﻿namespace MacroTools.ArtifactSystem;
+﻿namespace MacroTools.Artifacts;
 
 /// <summary>
 /// Describes the kind of location that an <see cref="Artifact"/> is in.

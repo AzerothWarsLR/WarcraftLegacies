@@ -3,7 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using WCSharp.Events;
 
-namespace MacroTools.ArtifactSystem;
+namespace MacroTools.Artifacts;
 
 /// <summary>
 ///   Represents a unique item with some significance to the game's lore.

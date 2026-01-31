@@ -1,4 +1,4 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using MacroTools.Artifacts;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;

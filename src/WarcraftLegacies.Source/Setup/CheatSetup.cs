@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ArtifactSystem;
+using MacroTools.Artifacts;
 using MacroTools.Commands;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Cheats;

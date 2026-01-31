@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ArtifactSystem;
+using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using WCSharp.Events;

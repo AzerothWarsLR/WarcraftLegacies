@@ -1,4 +1,4 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using MacroTools.Artifacts;
 using MacroTools.Commands;
 
 namespace WarcraftLegacies.Source.Cheats;
