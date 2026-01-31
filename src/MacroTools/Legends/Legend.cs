@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using WCSharp.Events;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 ///   A Legend is a wrapper for unique heroes. A Legend can continue to exist even if the unit it describes does not.

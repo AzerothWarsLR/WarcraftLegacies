@@ -1,5 +1,5 @@
 ﻿using MacroTools.HintSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup;

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;

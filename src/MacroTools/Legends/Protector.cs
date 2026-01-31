@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Wrappers;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 /// A unit bestowing invulnerability on a <see cref="Legend"/>.

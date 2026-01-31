@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using MacroTools.Systems;
 using WCSharp.Events;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 /// Responsible for managing all <see cref="Capital"/>s.

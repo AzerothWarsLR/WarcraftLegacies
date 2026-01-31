@@ -7,7 +7,7 @@ using MacroTools.FactionSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 /// An important hero, such as Arthas or Illidan.

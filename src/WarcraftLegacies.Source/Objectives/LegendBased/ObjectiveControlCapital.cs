@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;

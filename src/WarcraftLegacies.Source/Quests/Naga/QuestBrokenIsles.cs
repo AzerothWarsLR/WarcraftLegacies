@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;

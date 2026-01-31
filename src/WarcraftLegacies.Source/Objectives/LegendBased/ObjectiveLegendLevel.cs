@@ -1,4 +1,4 @@
-﻿using MacroTools.LegendSystem;
+﻿using MacroTools.Legends;
 using MacroTools.Quests;
 using WCSharp.Events;
 

@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Setup;
 using WarcraftLegacies.Source.Objectives.LegendBased;

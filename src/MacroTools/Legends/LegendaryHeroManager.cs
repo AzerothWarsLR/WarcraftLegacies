@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 /// Responsible for managing all <see cref="LegendaryHero"/>s.

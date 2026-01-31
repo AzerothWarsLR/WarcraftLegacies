@@ -1,5 +1,5 @@
 ﻿using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.Sound;
 
 namespace MacroTools.Extensions;

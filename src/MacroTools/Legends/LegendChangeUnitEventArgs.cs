@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 /// Event arguments for when a <see cref="Legend"/> changes unit.

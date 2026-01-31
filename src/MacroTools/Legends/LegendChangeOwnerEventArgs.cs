@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 public sealed class LegendChangeOwnerEventArgs : EventArgs
 {

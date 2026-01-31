@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.PreplacedWidgetsSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends;

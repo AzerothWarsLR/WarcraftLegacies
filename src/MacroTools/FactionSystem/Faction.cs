@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Shared;
 using MacroTools.Utils;

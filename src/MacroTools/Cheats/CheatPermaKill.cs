@@ -1,5 +1,5 @@
 ﻿using MacroTools.CommandSystem;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using MacroTools.Utils;
 
 namespace MacroTools.Cheats;

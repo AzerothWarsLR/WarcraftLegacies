@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.LegendSystem;
+using MacroTools.Legends;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.GameLogic;

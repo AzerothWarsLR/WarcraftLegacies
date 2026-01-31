@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.FactionSystem;
 
-namespace MacroTools.LegendSystem;
+namespace MacroTools.Legends;
 
 /// <summary>
 /// An important structure, such as the Black Temple or the Capital Palace.
