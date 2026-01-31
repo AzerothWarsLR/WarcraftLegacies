@@ -1,9 +1,10 @@
 ﻿using System;
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Utils;
 
-namespace MacroTools.Systems;
+namespace WarcraftLegacies.Source.Testing;
 
 /// <summary>
 /// Performs basic checks during runtime to ensure that the map is configured correctly.
@@ -15,7 +16,7 @@ public static class RuntimeIntegrityChecker
   /// </summary>
   public static void Setup()
   {
-    GameTime.GameStarted += RunGameStartChecks;
+    GameTimeManager.GameStarted += RunGameStartChecks;
     CheckUndefeatedResearchNames();
     CheckQuestResearchNames();
   }
@@ -26,7 +27,7 @@ public static class RuntimeIntegrityChecker
   private static void RunGameStartChecks(object? sender, EventArgs eventArgs)
   {
     NoNeutralPassiveVulnerableControlPoints();
-    GameTime.GameStarted -= RunGameStartChecks;
+    GameTimeManager.GameStarted -= RunGameStartChecks;
   }
 
   private static void NoNeutralPassiveVulnerableControlPoints()

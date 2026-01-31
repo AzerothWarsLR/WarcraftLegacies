@@ -1,4 +1,4 @@
-﻿using MacroTools.Systems;
+﻿using MacroTools.TurnBasedHitPoints;
 using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;

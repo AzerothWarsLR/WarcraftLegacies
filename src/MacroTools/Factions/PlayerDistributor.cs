@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Legends;
-using MacroTools.Systems;
+using MacroTools.UnitTypes;
 using MacroTools.Utils;
 
 namespace MacroTools.Factions;

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Commands;
-using MacroTools.Systems;
+using MacroTools.GameTime;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -25,7 +25,7 @@ public sealed class CheatSkipTurns : Command
       return "You must specify a whole number as the first parameter.";
     }
 
-    GameTime.SkipTurns(turnSkip);
+    GameTimeManager.SkipTurns(turnSkip);
     return $"Skipping forward {turnSkip} turns.";
   }
 }

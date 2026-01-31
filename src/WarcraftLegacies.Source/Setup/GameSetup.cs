@@ -1,10 +1,11 @@
-﻿using MacroTools.Commands;
+﻿using MacroTools.Cinematics;
+using MacroTools.Commands;
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
+using MacroTools.GameTime;
 using MacroTools.Save;
 using MacroTools.Sounds;
-using MacroTools.Systems;
 using MacroTools.UnitNames;
 using MacroTools.UnitTraits;
 using MacroTools.UserInterface;
@@ -12,6 +13,7 @@ using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
+using WarcraftLegacies.Source.Testing;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -51,7 +53,7 @@ public static class GameSetup
     BookSetup.Setup();
     HintConfig.Setup();
     QuestMenuSetup.Setup();
-    GameTime.Start();
+    GameTimeManager.Start();
 
     MapFlagSetup.Setup();
     InfoQuests.Setup();

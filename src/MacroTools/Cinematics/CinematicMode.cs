@@ -4,7 +4,7 @@ using MacroTools.Utils;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Systems;
+namespace MacroTools.Cinematics;
 
 /// <summary>
 /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound

@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using MacroTools.Shared;
 
-namespace MacroTools.Systems;
+namespace MacroTools.UnitTypes;
 
 /// <summary>
 /// Contains extra Warcraft Legacies-specific information about Warcraft 3 unit types.

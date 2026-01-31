@@ -1,5 +1,5 @@
-﻿using MacroTools.Quests;
-using MacroTools.Systems;
+﻿using MacroTools.GameTime;
+using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.TimeBased;
 
@@ -15,7 +15,7 @@ public sealed class ObjectiveTime : Objective
 
   public ObjectiveTime(int duration)
   {
-    var turn = GameTime.ConvertGameTimeToTurn(duration);
+    var turn = GameTimeManager.ConvertGameTimeToTurn(duration);
     Description = $"Turn {turn} has started";
     _timer = timer.Create();
     _timer.Start(duration, false, OnExpire);

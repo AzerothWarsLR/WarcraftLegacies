@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
-using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Objectives.TimeBased;
 
@@ -19,7 +19,7 @@ public sealed class ObjectiveExpire : Objective
   /// <param name="questName">The name of the quest this objective belongs to.</param>
   public ObjectiveExpire(int duration, string questName)
   {
-    var turn = GameTime.ConvertGameTimeToTurn(duration);
+    var turn = GameTimeManager.ConvertGameTimeToTurn(duration);
     Description = $"Turn {turn} hasn't started";
     _expirationTimer = timer.Create();
     _warningTimer = timer.Create();

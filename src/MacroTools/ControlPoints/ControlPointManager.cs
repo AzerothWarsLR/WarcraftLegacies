@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
-using MacroTools.Systems;
+using MacroTools.GameTime;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
@@ -17,7 +17,7 @@ public sealed class ControlPointManager
 {
   static ControlPointManager()
   {
-    GameTime.GameStarted += (_, _) =>
+    GameTimeManager.GameStarted += (_, _) =>
     {
       timer.Create().Start(Period, true, () =>
       {
@@ -271,7 +271,7 @@ public sealed class ControlPointManager
 
   private void RegisterControlLevelGrowthOverTime(ControlPoint controlPoint)
   {
-    GameTime.TurnEnded += (_, _) =>
+    GameTimeManager.TurnEnded += (_, _) =>
     {
       if (controlPoint.Owner == player.NeutralAggressive ||
           controlPoint.Owner == player.NeutralPassive ||

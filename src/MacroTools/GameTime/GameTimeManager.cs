@@ -2,10 +2,10 @@
 using MacroTools.Extensions;
 using WCSharp.Shared;
 
-namespace MacroTools.Systems;
+namespace MacroTools.GameTime;
 
 /// <summary>Counts the elapsed game time, displayed in number of turns passed.</summary>
-public static class GameTime
+public static class GameTimeManager
 {
   public const float TurnDuration = 60;
 

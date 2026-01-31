@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using MacroTools.Systems;
+using MacroTools.TurnBasedHitPoints;
 using WCSharp.Events;
 
 namespace MacroTools.Legends;

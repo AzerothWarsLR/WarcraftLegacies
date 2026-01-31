@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.GameTime;
 
-namespace MacroTools.Systems;
+namespace MacroTools.TurnBasedHitPoints;
 
 /// <summary>A tool for giving units additional hit points per turn.</summary>
 public static class TurnBasedHitpointsManager
@@ -30,7 +31,7 @@ public static class TurnBasedHitpointsManager
       return;
     }
 
-    GameTime.TurnEnded += OnTurnEnded;
+    GameTimeManager.TurnEnded += OnTurnEnded;
     _intialized = true;
   }
 
@@ -44,7 +45,7 @@ public static class TurnBasedHitpointsManager
 
   private static void OnTurnEnded(object? sender, EventArgs eventArgs)
   {
-    var turn = GameTime.GetTurn();
+    var turn = GameTimeManager.GetTurn();
     foreach (var (unit, turnBasedHitpointData) in _unitData)
     {
       var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
@@ -59,7 +60,7 @@ public static class TurnBasedHitpointsManager
 
     if (turn >= TurnLimit)
     {
-      GameTime.TurnEnded -= OnTurnEnded;
+      GameTimeManager.TurnEnded -= OnTurnEnded;
     }
   }
 

@@ -1,6 +1,7 @@
 ﻿using System;
+using MacroTools.Cinematics;
 using MacroTools.Commands;
-using MacroTools.Systems;
+using MacroTools.GameTime;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -25,7 +26,7 @@ public static class CheatSkipCinematic
     try
     {
       CinematicMode.EndEarly();
-      GameTime.SkipTurns(1);
+      GameTimeManager.SkipTurns(1);
     }
     catch (Exception ex)
     {
@@ -47,7 +48,7 @@ public static class CheatSkipCinematic
 
     _skipTrigger.AddAction(Actions);
 
-    GameTime.GameStarted += (_, _) =>
+    GameTimeManager.GameStarted += (_, _) =>
     {
       if (_skipTrigger != null)
       {
