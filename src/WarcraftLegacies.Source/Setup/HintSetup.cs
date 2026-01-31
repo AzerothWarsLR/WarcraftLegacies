@@ -1,4 +1,4 @@
-﻿using MacroTools.HintSystem;
+﻿using MacroTools.Hints;
 using MacroTools.Legends;
 using WarcraftLegacies.Source.UnitTypeTraits;
 

@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 
-namespace MacroTools.HintSystem;
+namespace MacroTools.Hints;
 
 public sealed class Hint
 {

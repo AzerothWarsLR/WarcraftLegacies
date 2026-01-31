@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameModes;
-using MacroTools.HintSystem;
+using MacroTools.Hints;
 using WarcraftLegacies.Source.Commands;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
