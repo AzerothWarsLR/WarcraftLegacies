@@ -30,7 +30,8 @@ public static class ShipyardBanZones
               continue;
             }
 
-            constructedStructure.Owner.Gold += unitType.GoldCost;
+            // TODO: Replace with unit.GoldCost once upgraded to WCSharp 3.3.0+
+            constructedStructure.Owner.Gold += unit.GoldCostOf(unitType.Id);
             constructedStructure.Kill();
           }
         }, unitType.Id);

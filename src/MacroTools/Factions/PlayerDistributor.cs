@@ -2,7 +2,6 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Legends;
-using MacroTools.UnitTypes;
 using MacroTools.Utils;
 
 namespace MacroTools.Factions;
@@ -107,7 +106,6 @@ public static class PlayerDistributor
     var refund = new UnitsRefund();
     foreach (var unit in playerUnits)
     {
-      var loopUnitType = UnitType.GetFromHandle(unit);
       if (unit.IsUnitType(unittype.Summoned))
       {
         unit.Kill();
@@ -134,7 +132,8 @@ public static class PlayerDistributor
       {
         if (!unit.IsUnitType(unittype.Structure))
         {
-          refund.Gold += loopUnitType.GoldCost * RefundMultiplier;
+          // TODO: Replace with unit.GoldCost once upgraded to WCSharp 3.3.0+
+          refund.Gold += unit.GoldCostOf(unit.UnitType) * RefundMultiplier;
         }
 
         unit.DropAllItems();

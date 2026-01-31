@@ -23,11 +23,6 @@ public sealed class UnitType
   public static IEnumerable<UnitType> GetAll() => _all.AsReadOnly();
 
   /// <summary>
-  /// How much gold the UnitType costs to train or build.
-  /// </summary>
-  public int GoldCost => unit.GoldCostOf(Id);
-
-  /// <summary>
   /// If true, this unit should never be deleted.
   /// </summary>
   public bool NeverDelete { internal get; init; }
