@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -45,7 +45,7 @@ public sealed class LegendDruids
 
     Nordrassil = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_N002_NORDRASSIL_DRUIDS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_N002_NORDRASSIL_DRUIDS_OTHER),
       Capturable = true,
       Essential = true
     };
@@ -60,12 +60,12 @@ public sealed class LegendDruids
     {
       Capturable = true,
       Essential = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_N06D_CENARION_HOLD_SENTINELS_OTHER)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_N06D_CENARION_HOLD_SENTINELS_OTHER)
     };
 
     TempleOfTheMoon = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_O029_TEMPLE_OF_THE_MOON_SENTINELS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O029_TEMPLE_OF_THE_MOON_SENTINELS_OTHER),
     };
 
     Tortolla = new LegendaryHero("Tortolla")

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -52,7 +52,7 @@ public sealed class LegendGilneas
 
     GilneasCastle = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
       Essential = true
     };
   }

@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -31,7 +31,7 @@ public sealed class Quelthalas : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17716, 13000)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17716, 13000)
     };
     Nicknames = new List<string>
     {
@@ -82,7 +82,7 @@ public sealed class Quelthalas : Faction
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
-      PreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20477, 17447), AllLegends.Quelthalas.Silvermoon, AllLegends.Quelthalas.Sunwell));
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20477, 17447), AllLegends.Quelthalas.Silvermoon, AllLegends.Quelthalas.Sunwell));
     StartingQuest = newQuest;
     AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, AllLegends.Quelthalas.Sylvanas));
     AddQuest(new QuestTheBloodElves(AllLegends.Neutral.DraktharonKeep));

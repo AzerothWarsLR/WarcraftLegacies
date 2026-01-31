@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -17,16 +17,16 @@ public sealed class LegendQuelthalas
   {
     Silvermoon = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H003_SILVERMOON_PALACE_QUELTHALAS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H003_SILVERMOON_PALACE_QUELTHALAS_OTHER),
       DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
       Essential = true
     };
-    Silvermoon.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20479, 17477));
-    Silvermoon.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 17415, 13196));
+    Silvermoon.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20479, 17477));
+    Silvermoon.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 17415, 13196));
 
     Sunwell = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_N001_THE_SUNWELL_QUELTHALAS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_N001_THE_SUNWELL_QUELTHALAS_OTHER),
       Capturable = true,
       Essential = true,
       DeathMessage = "The Sunwell, once a source of great magical energy, is no more. Its corruption has ended, and the land is free from its dark influence."
@@ -68,7 +68,7 @@ public sealed class LegendQuelthalas
 
     Spire = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H0C2_WINDRUNNER_SPIRE_QUELTHALAS),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H0C2_WINDRUNNER_SPIRE_QUELTHALAS),
       Capturable = true
     };
   }

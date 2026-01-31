@@ -1,4 +1,4 @@
-﻿using MacroTools.PreplacedWidgetsSystem;
+﻿using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
 
@@ -14,7 +14,7 @@ public static class BlightSetup
   private static void SetupA()
   {
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Regions.Andorhal.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Regions.Andorhal.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -23,7 +23,7 @@ public static class BlightSetup
         RandomBlightRectangle = Regions.Andorhal
       });
 
-    BlightSystem.Register(PreplacedWidgets.Units.Get(UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
+    BlightSystem.Register(AllPreplacedWidgets.Units.Get(UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -33,7 +33,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H01T_INN_LORDAERON_OTHER, Regions.Darrowshire.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H01T_INN_LORDAERON_OTHER, Regions.Darrowshire.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -43,7 +43,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, Regions.Terrordale.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, Regions.Terrordale.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -53,7 +53,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H01V_BARN_LORDAERON_OTHER, Regions.Corins_Crossing.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H01V_BARN_LORDAERON_OTHER, Regions.Corins_Crossing.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -62,7 +62,7 @@ public static class BlightSetup
         RandomBlightRectangle = Regions.Corins_Crossing
       });
 
-    BlightSystem.Register(PreplacedWidgets.Units.GetClosest(UNIT_H01T_INN_LORDAERON_OTHER, Regions.Brill.Center),
+    BlightSystem.Register(AllPreplacedWidgets.Units.GetClosest(UNIT_H01T_INN_LORDAERON_OTHER, Regions.Brill.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -75,7 +75,7 @@ public static class BlightSetup
   private static void SetupB()
   {
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Regions.Vandermar_Village.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Regions.Vandermar_Village.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -85,7 +85,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H01T_INN_LORDAERON_OTHER, Regions.Solliden_Farmstead.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H01T_INN_LORDAERON_OTHER, Regions.Solliden_Farmstead.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 512,
@@ -95,41 +95,41 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11323, 9032),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11323, 9032),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11323, 9032),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11323, 9032),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11911, 9620),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11911, 9620),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H00I_WINDMILL_LORDAERON_OTHER, 7536, 11626),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H00I_WINDMILL_LORDAERON_OTHER, 7536, 11626),
       new BlightParameters
       {
         PrimaryBlightRadius = 300
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 10417, 10194),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 10417, 10194),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
-    BlightSystem.Register(PreplacedWidgets.Units.Get(UNIT_H000_CAPITAL_PALACE_LORDAERON),
+    BlightSystem.Register(AllPreplacedWidgets.Units.Get(UNIT_H000_CAPITAL_PALACE_LORDAERON),
       new BlightParameters
       {
         PrimaryBlightRadius = 400
@@ -139,41 +139,41 @@ public static class BlightSetup
   private static void SetupC()
   {
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11307, 9735),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 11307, 9735),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H016_GRANARY_LORDAERON_OTHER, 13385, 9152),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H016_GRANARY_LORDAERON_OTHER, 13385, 9152),
       new BlightParameters
       {
         PrimaryBlightRadius = 300
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 15485, 9804),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 15485, 9804),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H016_GRANARY_LORDAERON_OTHER, 17474, 8825),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H016_GRANARY_LORDAERON_OTHER, 17474, 8825),
       new BlightParameters
       {
         PrimaryBlightRadius = 300
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 17188, 10583),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_HHOU_FARM_LORDAERON_FARM, 17188, 10583),
       new BlightParameters
       {
         PrimaryBlightRadius = 250
       });
 
-    BlightSystem.Register(PreplacedWidgets.Units.GetClosest(UNIT_NEGT_SUN_TOWER, Regions.Dreadscar_1.Center),
+    BlightSystem.Register(AllPreplacedWidgets.Units.GetClosest(UNIT_NEGT_SUN_TOWER, Regions.Dreadscar_1.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 200,
@@ -183,7 +183,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_N003_IMPROVED_SUN_TOWER_QUELTHALAS_TOWER, 20679, 17143),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N003_IMPROVED_SUN_TOWER_QUELTHALAS_TOWER, 20679, 17143),
       new BlightParameters
       {
         PrimaryBlightRadius = 200,
@@ -193,7 +193,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      PreplacedWidgets.Units.GetClosest(UNIT_H074_ARCANE_TOWER_QUELTHALAS_TOWER, Regions.Dreadscar_3.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H074_ARCANE_TOWER_QUELTHALAS_TOWER, Regions.Dreadscar_3.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 200,

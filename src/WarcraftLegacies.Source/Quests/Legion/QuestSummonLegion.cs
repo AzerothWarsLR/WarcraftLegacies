@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared;
@@ -32,8 +32,8 @@ public sealed class QuestSummonLegion : QuestData
     Global = true;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     _anetheron = anetheron;
-    _legionTeleporter1 = PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 22939, -29345);
-    _legionTeleporter2 = PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
+    _legionTeleporter1 = AllPreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 22939, -29345);
+    _legionTeleporter2 = AllPreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
   }
 
   /// <inheritdoc />

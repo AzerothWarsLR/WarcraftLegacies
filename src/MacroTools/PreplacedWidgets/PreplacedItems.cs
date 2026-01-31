@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace MacroTools.PreplacedWidgetsSystem;
+namespace MacroTools.PreplacedWidgets;
 
 internal sealed class PreplacedItems : PreplacedWidgetCollection<item>
 {

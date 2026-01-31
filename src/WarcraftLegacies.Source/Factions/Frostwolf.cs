@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -29,7 +29,7 @@ public sealed class Frostwolf : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
     };
     Nicknames = new List<string>
     {

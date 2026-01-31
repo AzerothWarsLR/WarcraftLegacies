@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -46,7 +46,7 @@ public sealed class LegendScarlet
 
     CrimsonCathedral = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H09L_CRIMSON_CATHEDRAL_SCARLET),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H09L_CRIMSON_CATHEDRAL_SCARLET),
       DeathMessage = "The Crimson Cathedral has been destroyed",
     };
 

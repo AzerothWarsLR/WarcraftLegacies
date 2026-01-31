@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -12,7 +12,7 @@ public sealed class QuestWakingDream : QuestData
     "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again.",
     @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
   {
-    AddObjective(new ObjectiveKillUnit(PreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
+    AddObjective(new ObjectiveKillUnit(AllPreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
     ResearchId = UPGRADE_RBWD_QUEST_COMPLETED_WAKING_DREAM;
 
   }

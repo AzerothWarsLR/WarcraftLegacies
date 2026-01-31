@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -14,7 +14,7 @@ public static class DarkPortalControlNexusSetup
   /// </summary>
   public static void Setup()
   {
-    foreach (var controlNexus in PreplacedWidgets.Units.GetAll(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS))
+    foreach (var controlNexus in AllPreplacedWidgets.Units.GetAll(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS))
     {
       controlNexus.MakeCapturable();
     }
@@ -23,18 +23,18 @@ public static class DarkPortalControlNexusSetup
     PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
     {
       var newOwner = @event.Unit.Owner;
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center).SetOwner(newOwner);
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center).SetOwner(newOwner);
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center).SetOwner(newOwner);
-    }, PreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 3707, -26029));
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center).SetOwner(newOwner);
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center).SetOwner(newOwner);
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center).SetOwner(newOwner);
+    }, AllPreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 3707, -26029));
 
     //Control Nexus outside Outland
     PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
     {
       var newOwner = @event.Unit.Owner;
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center).SetOwner(newOwner);
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center).SetOwner(newOwner);
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center).SetOwner(newOwner);
-    }, PreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 17411, -17902));
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center).SetOwner(newOwner);
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center).SetOwner(newOwner);
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center).SetOwner(newOwner);
+    }, AllPreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 17411, -17902));
   }
 }

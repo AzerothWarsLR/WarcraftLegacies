@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Stormwind;
@@ -63,8 +63,8 @@ public sealed class Stormwind : Faction
     AddQuest(new QuestClosePortal(AllLegends.Stormwind.Khadgar));
     AddQuest(new QuestConstructionSites(new[]
     {
-      PreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
-      PreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
+      AllPreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
+      AllPreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
     }));
     AddQuest(new QuestKingdomOfManStormwind(Artifacts.CrownOfLordaeron, Artifacts.CrownOfStormwind,
       AllLegends.Stormwind.Varian));

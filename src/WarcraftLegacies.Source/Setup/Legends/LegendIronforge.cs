@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -35,21 +35,21 @@ public sealed class LegendIronforge
 
     GreatForge = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H001_THE_GREAT_FORGE_IRONFORGE_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H001_THE_GREAT_FORGE_IRONFORGE_OTHER),
       DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
       Essential = true
     };
-    GreatForge.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, 10509, -5976));
-    GreatForge.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, 10710, -5974));
+    GreatForge.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, 10509, -5976));
+    GreatForge.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, 10710, -5974));
 
     Thelsamar = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H05H_THELSAMAR_IRONFORGE_OTHER)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H05H_THELSAMAR_IRONFORGE_OTHER)
     };
 
     MenethilHarbor = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H0AK_MENETHIL_HARBOR_IRONFORGE_OTHER)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H0AK_MENETHIL_HARBOR_IRONFORGE_OTHER)
     };
   }
 

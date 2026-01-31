@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests;
@@ -19,7 +19,7 @@ public sealed class Kultiras : Faction
     : base("Kul'tiras", playercolor.Emerald, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    _proudmooreCapitalShip = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
+    _proudmooreCapitalShip = AllPreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
     IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
@@ -28,7 +28,7 @@ public sealed class Kultiras : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 4585, -13038)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 4585, -13038)
     };
     Nicknames = new List<string>
     {

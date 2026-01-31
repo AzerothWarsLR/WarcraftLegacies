@@ -1,5 +1,5 @@
 ﻿using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WCSharp.Events;
 
@@ -23,8 +23,8 @@ public sealed class DeeprunTram : Research
   {
     _ironforge = ironforge;
     _stormwind = stormwind;
-    _tramToIronforge = PreplacedWidgets.Units.GetClosest(UNIT_N03B_DEEPRUN_TRAM, 11126, -9970);
-    _tramToStormwind = PreplacedWidgets.Units.GetClosest(UNIT_N03B_DEEPRUN_TRAM, 9761, -5723);
+    _tramToIronforge = AllPreplacedWidgets.Units.GetClosest(UNIT_N03B_DEEPRUN_TRAM, 11126, -9970);
+    _tramToStormwind = AllPreplacedWidgets.Units.GetClosest(UNIT_N03B_DEEPRUN_TRAM, 9761, -5723);
   }
 
   /// <inheritdoc />

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -15,7 +15,7 @@ public sealed class LegendSunfury
   {
     WellOfEternity = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER),
       Essential = true,
       DeathMessage = "The destruction of the original Well of Eternity tore apart the Azerothean supercontinent. The rupturing of its second successor reaches no such heights, but its absence is felt by Elves and arcanists the world over."
     };

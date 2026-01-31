@@ -4,7 +4,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -36,7 +36,7 @@ public sealed class Warsong : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
     };
     Nicknames = new List<string>
     {
@@ -58,10 +58,10 @@ public sealed class Warsong : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.BarrenAmbient2.CleanupHostileUnits();
     Regions.AshenvaleCreeps.CleanupHostileUnits();
-    var thunderBluffUnit = PreplacedWidgets.Units.Get(UNIT_N03M_THUNDERBLUFF);
+    var thunderBluffUnit = AllPreplacedWidgets.Units.Get(UNIT_N03M_THUNDERBLUFF);
     var whichPlayer = player.NeutralAggressive;
     thunderBluffUnit.SetOwner(whichPlayer);
-    var echoIslesUnit = PreplacedWidgets.Units.Get(UNIT_N02V_ECHO_ISLES);
+    var echoIslesUnit = AllPreplacedWidgets.Units.Get(UNIT_N02V_ECHO_ISLES);
     var whichPlayer1 = player.NeutralAggressive;
     echoIslesUnit.SetOwner(whichPlayer1);
   }
@@ -77,7 +77,7 @@ public sealed class Warsong : Faction
     StartingQuest = AddQuest(new QuestGrom(AllLegends.Warsong.GromHellscream, AllLegends.Warsong.Gargok));
     AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
-    AddQuest(new QuestRokhan(PreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
+    AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     // AddQuest(new QuestFountainOfBlood(AllLegendSetup.Neutral.FountainOfBlood, AllLegendSetup.Warsong.GromHellscream));
     // AddQuest(new QuestBloodpact(AllLegendSetup.Warsong.Mannoroth, AllLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestGarrosh(AllLegends.BlackEmpire.Nzoth));

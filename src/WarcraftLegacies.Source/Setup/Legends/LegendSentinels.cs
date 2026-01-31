@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -26,13 +26,13 @@ public sealed class LegendSentinels
 
     Auberdine = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_E00J_AUBERDINE_SENTINELS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_E00J_AUBERDINE_SENTINELS_OTHER),
       Essential = true
     };
 
     Feathermoon = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINELS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINELS_OTHER),
       Essential = true
     };
 
@@ -57,7 +57,7 @@ public sealed class LegendSentinels
 
     VaultOfTheWardens = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
     };
   }
 

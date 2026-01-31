@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -24,7 +24,7 @@ public sealed class QuestGrom : QuestData
         "Tricked by Mannoroth into drinking from the corrupted fountain, Grom Hellscream has fallen into demonic fury, locked in battle with the Sentinels. To free him from this enslaving curse, you must defeat Mannoroth the Destroyer himself.",
         @"ReplaceableTextures\CommandButtons\BTNChaosGrom.blp")
   {
-    AddObjective(new ObjectiveUnitIsDead(PreplacedWidgets.Units.Get(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT)));
+    AddObjective(new ObjectiveUnitIsDead(AllPreplacedWidgets.Units.Get(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT)));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R013_QUEST_COMPLETED_BREAKING_BAD_BLOOD;
     _gromHellscream = gromHellscreamLegend;

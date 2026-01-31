@@ -3,7 +3,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -33,7 +33,7 @@ public sealed class Sentinels : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -20780, 7860)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -20780, 7860)
     };
     Nicknames = new List<string>
     {

@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
@@ -34,8 +34,8 @@ public sealed class Druids : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9200, 10742),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -17545, 15856)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9200, 10742),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -17545, 15856)
     };
     Nicknames = new List<string>
     {
@@ -87,7 +87,7 @@ public sealed class Druids : Faction
       new[] { this },
       new Objective[]
       {
-        new ObjectiveUnitAlive(PreplacedWidgets.Units.GetClosest(UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
+        new ObjectiveUnitAlive(AllPreplacedWidgets.Units.GetClosest(UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
         new ObjectiveLegendInRect(AllLegends.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
       }));
 

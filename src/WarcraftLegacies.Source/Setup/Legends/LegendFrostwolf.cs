@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Artifacts;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -40,7 +40,7 @@ public sealed class LegendFrostwolf
 
     ThunderBluff = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_FROSTWOLF_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_FROSTWOLF_OTHER),
       Capturable = true,
       DeathMessage =
         "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
@@ -49,7 +49,7 @@ public sealed class LegendFrostwolf
 
     DarkspearHold = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_O02D_DARKSPEAR_HOLD_FROSTWOLF_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O02D_DARKSPEAR_HOLD_FROSTWOLF_OTHER),
       Essential = true
     };
 

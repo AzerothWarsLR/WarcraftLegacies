@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
@@ -27,7 +27,7 @@ public sealed class Gilneas : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
     };
     Nicknames = new List<string>
     {

@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -39,7 +39,7 @@ public sealed class Scourge : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -4939, 18803)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -4939, 18803)
     };
     Nicknames = new List<string>
     {
@@ -107,11 +107,11 @@ public sealed class Scourge : Faction
     QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
     QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, AllLegends.Scourge.Kelthuzad);
 
-    QuestSapphiron questSapphiron = new(PreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP),
+    QuestSapphiron questSapphiron = new(AllPreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP),
       AllLegends.Scourge.Kelthuzad);
 
     QuestLichKingArthas questLichKingArthas =
-      new(PreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
+      new(AllPreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
         Artifacts.HelmOfDomination,
         AllLegends.Scourge.Arthas,
         AllLegends.Scourge.TheFrozenThrone);

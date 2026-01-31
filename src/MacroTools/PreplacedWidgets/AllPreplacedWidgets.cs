@@ -1,9 +1,9 @@
-﻿namespace MacroTools.PreplacedWidgetsSystem;
+﻿namespace MacroTools.PreplacedWidgets;
 
 /// <summary>
 /// Provides access to preplaced <see cref="widget"/>s in the map.
 /// </summary>
-public static class PreplacedWidgets
+public static class AllPreplacedWidgets
 {
   /// <summary>
   /// The maximum distance used when searching for the closest widget.

@@ -1,4 +1,4 @@
-﻿using MacroTools.PreplacedWidgetsSystem;
+﻿using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -9,7 +9,7 @@ public static class DestructibleSetup
 {
   public static void Setup()
   {
-    var thandolSpan = PreplacedWidgets.Destructables.GetClosest(FourCC("LT08"), 15695, 457);
+    var thandolSpan = AllPreplacedWidgets.Destructables.GetClosest(FourCC("LT08"), 15695, 457);
     thandolSpan.IsInvulnerable = true;
     //thandolSpan.Kill();
   }

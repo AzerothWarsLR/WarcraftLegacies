@@ -4,7 +4,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -29,9 +29,9 @@ public sealed class Dalaran : Faction
     TraditionalTeam = TeamSetup.NorthAlliance;
     _dalaranProtectors = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9084, 4979),
-      PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9008, 4092),
-      PreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9864, 4086)
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9084, 4979),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9008, 4092),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9864, 4086)
     };
     UndefeatedResearch = UPGRADE_R05N_DALARAN_EXISTS;
     StartingGold = 200;
@@ -44,7 +44,7 @@ public sealed class Dalaran : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
     };
     Nicknames = new List<string>
     {

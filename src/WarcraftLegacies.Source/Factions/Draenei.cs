@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
@@ -27,7 +27,7 @@ public sealed class Draenei : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), -21000, 8600)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -21000, 8600)
     };
     Nicknames = new List<string>
     {
@@ -62,8 +62,8 @@ public sealed class Draenei : Faction
     AddQuest(questRepairHull);
     AddQuest(new QuestRebuildCivilisation(Regions.Darkshore));
     AddQuest(new QuestShipArgus(
-      PreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
-      PreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
       AllLegends.Draenei.Velen
     ));
     var crystalProtectors = GlobalGroup

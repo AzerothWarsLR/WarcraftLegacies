@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -31,7 +31,7 @@ public sealed class Ironforge : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 12079, -2768)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 12079, -2768)
     };
     Nicknames = new List<string>
     {

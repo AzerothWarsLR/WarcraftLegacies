@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -14,7 +14,7 @@ public sealed class LegendAhnqiraj
   {
     Cthun = new LegendaryHero("C'thun")
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_U00R_OLD_GOD_CTHUN),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_U00R_OLD_GOD_CTHUN),
       PermaDies = true,
       StartingXp = 41800,
       Essential = true

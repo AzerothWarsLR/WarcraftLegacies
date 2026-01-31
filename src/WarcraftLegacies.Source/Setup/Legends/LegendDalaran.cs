@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -46,7 +46,7 @@ public sealed class LegendDalaran
 
     Dalaran = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER),
       DeathMessage =
         "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.",
       Essential = true
@@ -62,7 +62,7 @@ public sealed class LegendDalaran
 
     Shadowfang = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
       Capturable = true
     };
   }

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
@@ -26,7 +26,7 @@ public sealed class Ahnqiraj : Faction
   public Ahnqiraj() : base("Ahn'qiraj",
     playercolor.Wheat, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
-    _gateAhnQiraj = PreplacedWidgets.Units.Get(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
+    _gateAhnQiraj = AllPreplacedWidgets.Units.Get(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
     ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
     StartingGold = 200;

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WCSharp.Events;
 
@@ -22,9 +22,9 @@ public sealed class FlightPath : Research
     : base(researchTypeId, goldCost)
   {
     _frostwolf = frostwolf;
-    _flightToOrgrimmar = PreplacedWidgets.Units.GetClosest(
+    _flightToOrgrimmar = AllPreplacedWidgets.Units.GetClosest(
       UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, -14445, -4042);
-    _flightToThunderBluff = PreplacedWidgets.Units.GetClosest(
+    _flightToThunderBluff = AllPreplacedWidgets.Units.GetClosest(
       UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, -9704, -858);
   }
 

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -56,120 +56,120 @@ public sealed class LegendNeutral
     Auchindoun = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_H026_AUCHINDOUN_CREEP)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H026_AUCHINDOUN_CREEP)
     };
 
     DraktharonKeep = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O016_DRAK_THARON_KEEP)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O016_DRAK_THARON_KEEP)
     };
 
     Oshugun = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_H02Z_OSHU_GUN_CREEP)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H02Z_OSHU_GUN_CREEP)
     };
 
     Jinthaalor = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O02G_JINTHA_ALOR)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O02G_JINTHA_ALOR)
     };
 
     ShrineOfUlatek = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O00Q_SHRINE_OF_ULA_TEK_CREEP_ALTAR)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00Q_SHRINE_OF_ULA_TEK_CREEP_ALTAR)
     };
 
     Seradane = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_E014_SERADANE_GREAT_TREE_CREEP)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_E014_SERADANE_GREAT_TREE_CREEP)
     };
 
     Zulgurub = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O018_SHRINE_OF_ZUL_GURUB)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O018_SHRINE_OF_ZUL_GURUB)
     };
 
     Dazaralor = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O00V_DAZAR_ALOR_CREEP),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00V_DAZAR_ALOR_CREEP),
       Essential = true
     };
 
     Gundrak = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O00N_GUNDRAK)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00N_GUNDRAK)
     };
 
     DuskwoodGraveyard = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_H01F_DUSKWOOD_GRAVEYARD_STORMWIND_OTHER)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H01F_DUSKWOOD_GRAVEYARD_STORMWIND_OTHER)
     };
 
     GrimBatol = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_H01Z_GRIM_BATOL_CREEP_TWILIGHT)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H01Z_GRIM_BATOL_CREEP_TWILIGHT)
     };
 
     Ethelrethor = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_H05I_ETHEL_RETHOR_CREEP)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H05I_ETHEL_RETHOR_CREEP)
     };
 
     TheNexus = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H04P_THE_NEXUS),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H04P_THE_NEXUS),
       Capturable = true
     };
 
     Karazhan = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H00G_KARAZHAN_CREEP),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H00G_KARAZHAN_CREEP),
       Capturable = true
     };
 
     Zulfarrak = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_O00K_GRAND_PYRAMID_OF_ZUL_FARRAK)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00K_GRAND_PYRAMID_OF_ZUL_FARRAK)
     };
 
     FountainOfBlood = new Capital
     {
       Capturable = true,
-      Unit = PreplacedWidgets.Units.Get(UNIT_NBFL_FOUNTAIN_OF_BLOOD_WARSONG)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_NBFL_FOUNTAIN_OF_BLOOD_WARSONG)
     };
 
     Vaelastrasz = new LegendaryHero("Vaelastrasz")
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_NRWM_VAELASTRASZ)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_NRWM_VAELASTRASZ)
     };
 
     Caerdarrow = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_U01M_CAER_DARROW_KEEP_SCOURGE_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_U01M_CAER_DARROW_KEEP_SCOURGE_OTHER),
       Capturable = true
     };
 
     Shaladrassil = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_E01W_SHALADRASSIL_DRUIDS_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_E01W_SHALADRASSIL_DRUIDS_OTHER),
       Capturable = true
     };
 
     BlackrookHold = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE),
       Capturable = true
     };
     BlackrookHold.Unit.Life = 500;

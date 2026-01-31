@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source;
 
@@ -25,7 +25,7 @@ public static class PatronSystem
 
   private static void SetupPatron(string name, PatronTier tier, int x, int y)
   {
-    var unit = PreplacedWidgets.Units.GetClosest(TierToUnitType(tier), x, y);
+    var unit = AllPreplacedWidgets.Units.GetClosest(TierToUnitType(tier), x, y);
     unit.Name = $"{name} - Tier {(int)tier} Patron";
   }
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Quelthalas;
@@ -28,9 +28,9 @@ public sealed class Sunfury : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 3295, -22670),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 2529, -19141),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), Regions.Area52Unlock.Center)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 3295, -22670),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 2529, -19141),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), Regions.Area52Unlock.Center)
     };
     Nicknames = new List<string>
     {
@@ -55,7 +55,7 @@ public sealed class Sunfury : Faction
     Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
     Regions.TempestKeep.CleanupNeutralPassiveUnits();
     Regions.SunfuryStartingPosition.CleanupNeutralPassiveUnits();
-    PreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
+    AllPreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
     base.OnNotPicked();
   }
 

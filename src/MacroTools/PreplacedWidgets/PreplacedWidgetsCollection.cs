@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.PreplacedWidgetsSystem;
+namespace MacroTools.PreplacedWidgets;
 
 /// <summary>
 /// Represents a collection of preplaced <see cref="widget"/> instances of a specific type.
@@ -96,9 +96,9 @@ public abstract class PreplacedWidgetCollection<T> where T : widget
       }
     }
 
-    if (closestDistance > PreplacedWidgets.MaximumDistanceToFind)
+    if (closestDistance > AllPreplacedWidgets.MaximumDistanceToFind)
     {
-      Logger.LogWarning($"No preplaced widgets with id {FourCc.GetString(typeId)} found within {PreplacedWidgets.MaximumDistanceToFind} of {x}, {y}.");
+      Logger.LogWarning($"No preplaced widgets with id {FourCc.GetString(typeId)} found within {AllPreplacedWidgets.MaximumDistanceToFind} of {x}, {y}.");
     }
 
     return closest;

@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -34,9 +34,9 @@ public sealed class Lordaeron : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 13617, 8741),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 7716, 11657),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17198, 8222)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 13617, 8741),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 7716, 11657),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17198, 8222)
     };
     Nicknames = new List<string>
     {
@@ -155,7 +155,7 @@ public sealed class Lordaeron : Faction
         }, new Objective[]
         {
           new ObjectiveLegendInRect(AllLegends.Lordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
-          new ObjectiveUnitAlive(PreplacedWidgets.Units.GetClosest(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
+          new ObjectiveUnitAlive(AllPreplacedWidgets.Units.GetClosest(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
             11066, 6291))
         }));
 

@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -35,7 +35,7 @@ public sealed class Legion : Faction
 
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 19331f, -30663)
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 19331f, -30663)
     };
     Nicknames = new List<string>
     {
@@ -73,7 +73,7 @@ public sealed class Legion : Faction
     AddQuest(new QuestLegionKillLordaeron(AllLegends.Lordaeron.CapitalPalace,
       AllLegends.Lordaeron.Stratholme, AllLegends.Legion.Tichondrius));
     AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-      PreplacedWidgets.Units.Get(UNIT_N03C_DEMON_PORTAL_LEGION), AllLegends.Legion.Anetheron)); ;
+      AllPreplacedWidgets.Units.Get(UNIT_N03C_DEMON_PORTAL_LEGION), AllLegends.Legion.Anetheron)); ;
   }
 
   private static void RegisterResearches()

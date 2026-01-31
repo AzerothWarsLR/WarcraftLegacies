@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -59,14 +59,14 @@ public sealed class LegendWarsong
 
     StonemaulKeep = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_O004_STONEMAUL_KEEP),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O004_STONEMAUL_KEEP),
       DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
       Essential = true
     };
 
     Orgrimmar = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
       DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
       Essential = true
     };

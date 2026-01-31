@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -50,27 +50,27 @@ public sealed class LegendStormwind
 
     StormwindKeep = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
       DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!",
       Essential = true
     };
-    StormwindKeep.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, 9530, -10941));
-    StormwindKeep.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, 10177, -10952));
+    StormwindKeep.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, 9530, -10941));
+    StormwindKeep.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, 10177, -10952));
 
     Darkshire = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H03Y_DARKSHIRE_STORMWIND_OTHER)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H03Y_DARKSHIRE_STORMWIND_OTHER)
     };
 
     ConstructionSiteMagic = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM)
     };
     ConstructionSiteMagic.AddProtector(StormwindKeep.Unit);
 
     ConstructionSiteMartial = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
     };
     ConstructionSiteMartial.AddProtector(StormwindKeep.Unit);
   }

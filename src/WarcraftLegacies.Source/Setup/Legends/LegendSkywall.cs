@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -39,7 +39,7 @@ public sealed class LegendSkywall
 
     Vortex = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_NELC_VORTEX_PINNACLE_SKYWALL_T3),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_NELC_VORTEX_PINNACLE_SKYWALL_T3),
       Capturable = true,
       Essential = true
     };

@@ -2,7 +2,7 @@
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -28,7 +28,7 @@ public sealed class LegendLordaeron
   {
     Terenas = new LegendaryHero("Terenas Menethil")
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
     };
     var deathTrigger = trigger.Create();
     deathTrigger.RegisterUnitEvent(Terenas.Unit, unitevent.Death);
@@ -58,41 +58,41 @@ public sealed class LegendLordaeron
 
     CapitalPalace = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H000_CAPITAL_PALACE_LORDAERON),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H000_CAPITAL_PALACE_LORDAERON),
       Capturable = true,
       Essential = true
     };
-    CapitalPalace.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER,
+    CapitalPalace.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER,
       8686, 8862));
-    CapitalPalace.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER,
+    CapitalPalace.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER,
       9476, 8843));
-    CapitalPalace.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
+    CapitalPalace.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
       8638, 9342));
-    CapitalPalace.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
+    CapitalPalace.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
       9545, 9372));
 
     Stratholme = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
       DeathMessage = "The majestic city of Stratholme has been destroyed.",
       Essential = true
     };
-    Stratholme.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
+    Stratholme.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
       14587, 14172));
-    Stratholme.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER,
+    Stratholme.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER,
       15800, 13242));
 
     TyrsHand = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
       DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen.",
       Essential = true
     };
-    TyrsHand.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER,
+    TyrsHand.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER,
       20652, 8057));
-    TyrsHand.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
+    TyrsHand.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
       20024, 8123));
-    TyrsHand.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
+    TyrsHand.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
       20042, 7420));
 
     Uther = new LegendaryHero("Uther the Lightbringer")
@@ -112,7 +112,7 @@ public sealed class LegendLordaeron
 
     Monastery = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H00T_SCARLET_MONASTERY_SCARLET_LORDAERON),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H00T_SCARLET_MONASTERY_SCARLET_LORDAERON),
       Capturable = true
     };
   }

@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -35,7 +35,7 @@ public sealed class QuestCapitalCity : QuestData
       "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
       @"ReplaceableTextures\CommandButtons\BTNCastle.blp")
   {
-    AddObjective(new ObjectiveUnitIsDead(PreplacedWidgets.Units.Get(UNIT_N0AG_LORD_BAROV)));
+    AddObjective(new ObjectiveUnitIsDead(AllPreplacedWidgets.Units.Get(UNIT_N0AG_LORD_BAROV)));
     foreach (var prequisite in prequisites)
     {
       AddObjective(new ObjectiveQuestComplete(prequisite));

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Artifacts;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
@@ -34,27 +34,27 @@ public static class SharedQuestSetup
 
   private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuest()
   {
-    var waygateOne = PreplacedWidgets.Units.GetClosest(UNIT_N07F_EMERALD_PORTAL_PORTAL, Regions.FeralasEmeraldPortal.Center);
+    var waygateOne = AllPreplacedWidgets.Units.GetClosest(UNIT_N07F_EMERALD_PORTAL_PORTAL, Regions.FeralasEmeraldPortal.Center);
     waygateOne.IsVisible = false;
 
-    var waygateTwo = PreplacedWidgets.Units.GetClosest(UNIT_N07F_EMERALD_PORTAL_PORTAL, Regions.AshenvaleEmeraldPortal.Center);
+    var waygateTwo = AllPreplacedWidgets.Units.GetClosest(UNIT_N07F_EMERALD_PORTAL_PORTAL, Regions.AshenvaleEmeraldPortal.Center);
     waygateTwo.IsVisible = false;
 
-    var dragonEk = PreplacedWidgets.Units.Get(UNIT_N04X_YSONDRE);
-    var dragonKalimdor = PreplacedWidgets.Units.Get(UNIT_N04S_TAERAR);
+    var dragonEk = AllPreplacedWidgets.Units.Get(UNIT_N04X_YSONDRE);
+    var dragonKalimdor = AllPreplacedWidgets.Units.Get(UNIT_N04S_TAERAR);
     return new QuestDragonsOfNightmare(dragonKalimdor, dragonEk, "Feralas", "Ashenvale", waygateOne, waygateTwo, Regions.AshenvaleEmeraldPortal, Regions.FeralasEmeraldPortal, "BTNWarpPortalGreen");
   }
 
   private static QuestRagnaros CreateRagnarosQuest()
   {
     return new QuestRagnaros(AllLegends.Neutral.Ragnaros,
-      PreplacedWidgets.Units.Get(UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_NEUTRAL));
+      AllPreplacedWidgets.Units.Get(UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_NEUTRAL));
   }
 
   private static QuestYoggSaron CreateYoggSaronQuest()
   {
     return new QuestYoggSaron(AllLegends.Neutral.YoggSaron,
-      PreplacedWidgets.Units.Get(UNIT_YLL4_YOGG_SARON_S_PRISON_CREEP));
+      AllPreplacedWidgets.Units.Get(UNIT_YLL4_YOGG_SARON_S_PRISON_CREEP));
   }
 
   private static QuestTombOfSargeras CreateTombOfSargerasQuest()
@@ -70,7 +70,7 @@ public static class SharedQuestSetup
           Regions.TombOfSargerasInteriorF,
           Regions.TombOfSargerasInteriorG,
           Regions.TombOfSargerasInteriorH
-        }, Regions.Sargeras_Entrance, PreplacedWidgets.Units.GetClosest(UNIT_H00K_HORIZONTAL_WOODEN_GATE_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
-        , PreplacedWidgets.Units.Get(UNIT_O01U_GUL_DAN_S_REMAINS));
+        }, Regions.Sargeras_Entrance, AllPreplacedWidgets.Units.GetClosest(UNIT_H00K_HORIZONTAL_WOODEN_GATE_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
+        , AllPreplacedWidgets.Units.Get(UNIT_O01U_GUL_DAN_S_REMAINS));
   }
 }

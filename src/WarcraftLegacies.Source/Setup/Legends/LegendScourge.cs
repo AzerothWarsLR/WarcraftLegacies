@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Artifacts;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -53,13 +53,13 @@ public sealed class LegendScourge
 
     Utgarde = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
       Capturable = true
     };
 
     TheFrozenThrone = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
       Essential = true,
       Capturable = true
     };
@@ -72,10 +72,10 @@ public sealed class LegendScourge
     LegendaryHeroManager.Register(Rivendare);
     LegendaryHeroManager.Register(Arthas);
     CapitalManager.Register(TheFrozenThrone);
-    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3655, 20220));
-    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3015, 20762));
-    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, 2165, 20583));
-    TheFrozenThrone.AddProtector(PreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3638, 23374));
+    TheFrozenThrone.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3655, 20220));
+    TheFrozenThrone.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3015, 20762));
+    TheFrozenThrone.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, 2165, 20583));
+    TheFrozenThrone.AddProtector(AllPreplacedWidgets.Units.GetClosest(UNIT_N094_ICECROWN_OBELISK_SCOURGE, -3638, 23374));
     CapitalManager.Register(Utgarde);
   }
 }

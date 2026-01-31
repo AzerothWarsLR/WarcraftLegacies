@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -22,16 +22,16 @@ public sealed class QuestClosePortal : QuestData
     _unitsToRemove = new List<unit>
     {
       //Outside the portal
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 15579, -19546),
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 16549, -19145),
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 17447, -19214),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 15579, -19546),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 16549, -19145),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 17447, -19214),
       //Inside the portal
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 4576, -24718),
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 4701, -25361),
-      PreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 5212, -25743),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 4576, -24718),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 4701, -25361),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, 5212, -25743),
       //Control Nexi
-      PreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 17420, -17900),
-      PreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 3703, -26045)
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 17420, -17900),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, 3703, -26045)
     };
   }
 

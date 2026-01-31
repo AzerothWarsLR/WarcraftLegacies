@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -27,9 +27,9 @@ public sealed class QuestArgusControl : QuestData
 
 
     _legionTeleporter1 =
-      PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 22939, -29345);
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 22939, -29345);
     _legionTeleporter2 =
-      PreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
   }
 
   /// <inheritdoc/>

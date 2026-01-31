@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -16,7 +16,7 @@ public sealed class LegendLegion
   {
     Archimonde = new LegendaryHero("Archimonde")
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_UWAR_THE_DEFILER_LEGION),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_UWAR_THE_DEFILER_LEGION),
       PermaDies = true,
       DeathMessage =
         "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.",
@@ -45,7 +45,7 @@ public sealed class LegendLegion
 
     LegionStronghold = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_U00G_LEGION_STRONGHOLD_LEGION_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_U00G_LEGION_STRONGHOLD_LEGION_OTHER),
       DeathMessage =
         "The great Stronghold of the Legian has fallen",
       Essential = true

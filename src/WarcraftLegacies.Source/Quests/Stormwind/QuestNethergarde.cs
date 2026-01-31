@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -23,7 +23,7 @@ public sealed class QuestNethergarde : QuestData
     AddObjective(new ObjectiveExpire(600, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-    _gate = PreplacedWidgets.Units.GetClosest(UNIT_H00L_HORIZONTAL_WOODEN_GATE_GATE_OPEN, 17140, -18000);
+    _gate = AllPreplacedWidgets.Units.GetClosest(UNIT_H00L_HORIZONTAL_WOODEN_GATE_GATE_OPEN, 17140, -18000);
   }
 
   /// <inheritdoc />

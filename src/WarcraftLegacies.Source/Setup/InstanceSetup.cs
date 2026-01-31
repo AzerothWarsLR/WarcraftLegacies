@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Instances;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -22,10 +22,10 @@ public static class InstanceSetup
       new Instance(Regions.InstanceOutland)
     );
 
-    var proudmooreFlagshipUnit = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
+    var proudmooreFlagshipUnit = AllPreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     var proudmooreFlagshipInterior = new Instance(Regions.ShipAmbient);
     proudmooreFlagshipInterior.AddDependency(proudmooreFlagshipUnit);
-    proudmooreFlagshipInterior.AddDependency(PreplacedWidgets.Units.Get(UNIT_H09D_FLEETMASTER_S_TABLE_KULTIRAS_OTHER));
+    proudmooreFlagshipInterior.AddDependency(AllPreplacedWidgets.Units.Get(UNIT_H09D_FLEETMASTER_S_TABLE_KULTIRAS_OTHER));
     proudmooreFlagshipInterior.AddGate(new Gate(
       () => Regions.ShipInside.Center,
       () => proudmooreFlagshipUnit.GetPosition()));

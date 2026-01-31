@@ -1,5 +1,5 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Setup.Legends;
 
@@ -39,14 +39,14 @@ public sealed class LegendKultiras
 
     LegendBoralus = new Capital
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H046_BORALUS_KEEP_KULTIRAS),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H046_BORALUS_KEEP_KULTIRAS),
       DeathMessage = "Boralus Keep has fallen", //Todo: pointless flavour
       Essential = true
     };
 
     Flagship = new LegendaryHero("Flagship")
     {
-      Unit = PreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS)
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS)
     };
     Flagship.Unit.IsInvulnerable = true;
     Flagship.Unit.SetPausedEx(true);

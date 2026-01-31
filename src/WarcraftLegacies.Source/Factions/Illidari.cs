@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -45,9 +45,9 @@ public sealed class Illidari : Faction
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     GoldMines = new List<unit>
     {
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5467, -31440),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5805, -31258),
-      PreplacedWidgets.Units.GetClosest(FourCC("ngol"), 767, 6244),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5467, -31440),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5805, -31258),
+      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 767, 6244),
     };
   }
 
