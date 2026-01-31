@@ -5,11 +5,11 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Libraries;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions;
+using WarcraftLegacies.Source.Objectives.QuestBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron;

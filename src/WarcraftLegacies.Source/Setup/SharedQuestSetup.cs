@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
 using MacroTools.PreplacedWidgetsSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WCSharp.Shared.Data;

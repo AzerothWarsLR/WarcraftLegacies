@@ -1,6 +1,6 @@
-﻿using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.QuestSystem;
+﻿using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.FactionBased;
 
 namespace WarcraftLegacies.Source.Quests.Skywall;
 

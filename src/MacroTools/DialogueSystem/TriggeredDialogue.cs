@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 
 namespace MacroTools.DialogueSystem;
 

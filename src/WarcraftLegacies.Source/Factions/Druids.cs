@@ -2,12 +2,12 @@
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.PreplacedWidgetsSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Druids;

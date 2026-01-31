@@ -3,12 +3,12 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.Objectives;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.TimeBased;
 using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Naga;

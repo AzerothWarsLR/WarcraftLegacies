@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.PreplacedWidgetsSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
+using WarcraftLegacies.Source.Objectives.TimeBased;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Researches.Ironforge;

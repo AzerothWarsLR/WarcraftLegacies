@@ -2,9 +2,9 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran;
 

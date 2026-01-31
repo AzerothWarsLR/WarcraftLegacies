@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 
 namespace MacroTools.FactionSystem;
 

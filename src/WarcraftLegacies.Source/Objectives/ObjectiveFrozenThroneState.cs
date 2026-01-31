@@ -1,6 +1,5 @@
 ﻿using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 
 namespace WarcraftLegacies.Source.Objectives;

@@ -2,8 +2,8 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge;
 

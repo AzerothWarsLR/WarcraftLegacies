@@ -2,10 +2,10 @@
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Researches;

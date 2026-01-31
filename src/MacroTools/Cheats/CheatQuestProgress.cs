@@ -1,7 +1,7 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 
 namespace MacroTools.Cheats;
 

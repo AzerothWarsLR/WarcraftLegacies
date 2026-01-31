@@ -2,10 +2,10 @@
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;

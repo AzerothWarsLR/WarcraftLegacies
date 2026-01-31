@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;

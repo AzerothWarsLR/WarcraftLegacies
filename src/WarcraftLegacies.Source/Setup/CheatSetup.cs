@@ -2,7 +2,7 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.Cheats;
 using MacroTools.CommandSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Cheats;
 
 namespace WarcraftLegacies.Source.Setup;

@@ -3,10 +3,10 @@ using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Scourge;

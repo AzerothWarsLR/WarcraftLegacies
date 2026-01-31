@@ -1,9 +1,9 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.MetaBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.MetaBased;
+using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde;
 

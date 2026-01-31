@@ -1,6 +1,6 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.ArtifactBased;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury;
 

@@ -1,11 +1,11 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.PreplacedWidgetsSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
+using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Quests.Warsong;

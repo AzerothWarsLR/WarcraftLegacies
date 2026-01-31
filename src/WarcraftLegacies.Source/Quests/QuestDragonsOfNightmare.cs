@@ -1,9 +1,9 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using MacroTools.Sound;
+using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 

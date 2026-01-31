@@ -1,0 +1,26 @@
+﻿using MacroTools.Quests;
+using MacroTools.Setup;
+using WCSharp.Events;
+
+namespace WarcraftLegacies.Source.Objectives.UnitBased;
+
+/// <summary>
+/// An <see cref="Objective"/> that is completed when the holder deals any damage to any unit of a particular <see cref="player"/>.
+/// </summary>
+public sealed class ObjectiveDamagePlayer : Objective
+{
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ObjectiveDamagePlayer"/> class.
+  /// </summary>
+  /// <param name="playerToDamage"></param>
+  public ObjectiveDamagePlayer(player playerToDamage)
+  {
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, () =>
+    {
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(@event.DamageSource.Owner))
+      {
+        Progress = QuestProgress.Complete;
+      }
+    }, playerToDamage.Id);
+  }
+}

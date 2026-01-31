@@ -1,6 +1,6 @@
 ﻿using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests;
 

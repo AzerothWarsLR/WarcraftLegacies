@@ -2,11 +2,12 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem;
-using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives;
+using WarcraftLegacies.Source.Objectives.ArtifactBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests;
 
@@ -84,5 +85,18 @@ public sealed class QuestBookOfMedivh : QuestData
     {
       _bookOfMedivhPedestal.Kill();
     }
+  }
+}
+
+public sealed class NamedRectangle
+{
+  public string Name { get; }
+
+  public Rectangle Rectangle { get; }
+
+  public NamedRectangle(string name, Rectangle rectangle)
+  {
+    Name = name;
+    Rectangle = rectangle;
   }
 }

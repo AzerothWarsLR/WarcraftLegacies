@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;

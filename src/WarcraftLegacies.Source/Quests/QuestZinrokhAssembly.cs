@@ -3,8 +3,8 @@ using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.ArtifactBased;
 
 namespace WarcraftLegacies.Source.Quests;
 

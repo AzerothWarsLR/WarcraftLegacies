@@ -1,7 +1,7 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.PreplacedWidgetsSystem;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.BlackEmpire;
 

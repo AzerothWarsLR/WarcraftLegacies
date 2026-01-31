@@ -2,9 +2,9 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.QuestSystem;
+using MacroTools.Quests;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind;
