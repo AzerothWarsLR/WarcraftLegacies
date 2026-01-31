@@ -1,7 +1,7 @@
-﻿namespace MacroTools.Systems;
+﻿namespace MacroTools.Researches;
 
 /// <summary>
-/// A research that is automatically granted to all players when a particular turn has passed.
+/// Research that is automatically granted to all players when a particular turn has passed.
 /// </summary>
 public sealed class TurnResearch
 {
@@ -24,8 +24,8 @@ public sealed class TurnResearch
   /// </summary>
   public static void Register(TurnResearch turnResearch)
   {
-    timer timer = timer.Create();
-    timer.Start((turnResearch._turn + 1) * 60, false, () =>
+    var turnTimer = timer.Create();
+    turnTimer.Start((turnResearch._turn + 1) * 60, false, () =>
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
