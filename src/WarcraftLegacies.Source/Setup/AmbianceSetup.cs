@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using static WarcraftLegacies.Source.AmbianceLibrary;
+using static WarcraftLegacies.Source.Sounds.AmbianceLibrary;
 using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup;

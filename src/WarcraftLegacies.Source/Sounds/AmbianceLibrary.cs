@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.Source;
+﻿namespace WarcraftLegacies.Source.Sounds;
 
 /// <summary>
 /// Provides ambiance sounds with predefined settings.
