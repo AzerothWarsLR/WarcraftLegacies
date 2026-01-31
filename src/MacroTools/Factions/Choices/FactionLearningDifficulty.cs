@@ -1,7 +1,6 @@
 ﻿using System;
-using MacroTools.Factions;
 
-namespace MacroTools.FactionChoices;
+namespace MacroTools.Factions.Choices;
 
 /// <summary>
 /// Indicates how difficult it is to learn the basic mechanics of a particular <see cref="Faction"/>.

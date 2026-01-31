@@ -2,13 +2,12 @@
 using System.Linq;
 using MacroTools.Commands;
 using MacroTools.Extensions;
-using MacroTools.Factions;
 using MacroTools.Systems;
 using MacroTools.UserInterface;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.FactionChoices;
+namespace MacroTools.Factions.Choices;
 
 /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
 public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<FactionChoice>

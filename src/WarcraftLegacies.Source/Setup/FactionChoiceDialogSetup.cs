@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionChoices;
+﻿using MacroTools.Factions.Choices;
 using WarcraftLegacies.Source.Factions;
 
 namespace WarcraftLegacies.Source.Setup;

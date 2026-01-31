@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.FactionChoices;
 using MacroTools.Factions;
+using MacroTools.Factions.Choices;
 using MacroTools.PreplacedWidgetsSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;

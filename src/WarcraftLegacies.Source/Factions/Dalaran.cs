@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.Factions;
+using MacroTools.Factions.Choices;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;
 using MacroTools.Utils;

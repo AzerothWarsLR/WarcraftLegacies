@@ -1,8 +1,7 @@
-﻿using MacroTools.Factions;
-using MacroTools.UserInterface;
+﻿using MacroTools.UserInterface;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.FactionChoices;
+namespace MacroTools.Factions.Choices;
 
 public sealed class FactionChoice : IChoice
 {
