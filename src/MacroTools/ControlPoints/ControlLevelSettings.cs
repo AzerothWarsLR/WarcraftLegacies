@@ -1,4 +1,4 @@
-﻿namespace MacroTools.ControlPointSystem;
+﻿namespace MacroTools.ControlPoints;
 
 /// <summary>
 /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.

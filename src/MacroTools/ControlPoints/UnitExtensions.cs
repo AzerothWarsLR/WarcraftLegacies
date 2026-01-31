@@ -1,4 +1,4 @@
-﻿namespace MacroTools.ControlPointSystem;
+﻿namespace MacroTools.ControlPoints;
 
 /// <summary>
 /// A set of extension methods to bridge the gap between units and <see cref="ControlPoint"/>s.

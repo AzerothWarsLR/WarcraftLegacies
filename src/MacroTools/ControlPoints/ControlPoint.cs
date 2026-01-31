@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.FactionSystem;
 
-namespace MacroTools.ControlPointSystem;
+namespace MacroTools.ControlPoints;
 
 /// <summary>
 ///   An immobile and permanent unit on the map.

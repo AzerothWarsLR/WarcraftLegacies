@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using MacroTools.ControlPointSystem;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared;

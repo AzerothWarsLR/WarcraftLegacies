@@ -1,5 +1,5 @@
 ﻿using MacroTools.CommandSystem;
-using MacroTools.ControlPointSystem;
+using MacroTools.ControlPoints;
 using MacroTools.FactionSystem;
 using MacroTools.GameModes;
 using MacroTools.Save;

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
+using MacroTools.ControlPoints;
 using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using MacroTools.Systems;

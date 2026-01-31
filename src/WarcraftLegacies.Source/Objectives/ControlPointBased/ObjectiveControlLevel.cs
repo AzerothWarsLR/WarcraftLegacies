@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPoints;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.ControlPointBased;

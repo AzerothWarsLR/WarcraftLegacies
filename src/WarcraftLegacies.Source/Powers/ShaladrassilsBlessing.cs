@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;

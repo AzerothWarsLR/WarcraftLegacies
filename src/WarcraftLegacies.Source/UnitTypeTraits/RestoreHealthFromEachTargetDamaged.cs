@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;

@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.ControlPointSystem;
+using MacroTools.ControlPoints;
 using MacroTools.FactionSystem;
 using MacroTools.Utils;
 

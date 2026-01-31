@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
+using MacroTools.ControlPoints;
 using MacroTools.DialogueSystem;
 using MacroTools.Save;
 using MacroTools.Utils;

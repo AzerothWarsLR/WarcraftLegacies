@@ -8,7 +8,7 @@ using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
 
-namespace MacroTools.ControlPointSystem;
+namespace MacroTools.ControlPoints;
 
 /// <summary>
 /// Manages lifetimes and storage of all <see cref="ControlPoint"/>s.
