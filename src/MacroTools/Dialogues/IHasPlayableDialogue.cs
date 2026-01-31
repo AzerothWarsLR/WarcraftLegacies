@@ -1,4 +1,4 @@
-﻿namespace MacroTools.DialogueSystem;
+﻿namespace MacroTools.Dialogues;
 
 /// <summary>Provides methods to play one or more pieces of dialogue.</summary>
 public interface IHasPlayableDialogue

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace MacroTools.DialogueSystem;
+namespace MacroTools.Dialogues;
 
 /// <summary>A sequence of <see cref="Dialogue"/>s that can be made to play in order.</summary>
 public sealed class DialogueSequence : IHasPlayableDialogue

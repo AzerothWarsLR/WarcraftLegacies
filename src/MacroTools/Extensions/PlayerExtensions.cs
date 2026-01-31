@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ControlPoints;
-using MacroTools.DialogueSystem;
+using MacroTools.Dialogues;
 using MacroTools.Save;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;

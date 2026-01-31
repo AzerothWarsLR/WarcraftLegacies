@@ -5,7 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 
-namespace MacroTools.DialogueSystem;
+namespace MacroTools.Dialogues;
 
 /// <summary>
 /// Plays a particular <see cref="IHasPlayableDialogue"/> when conditions are met.

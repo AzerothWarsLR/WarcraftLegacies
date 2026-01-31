@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.DialogueSystem;
+using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.PreplacedWidgetsSystem;

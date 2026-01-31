@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Sound;
 
-namespace MacroTools.DialogueSystem;
+namespace MacroTools.Dialogues;
 
 /// <summary>
 /// Can play a piece of dialogue from the Warcraft 3 campaign.

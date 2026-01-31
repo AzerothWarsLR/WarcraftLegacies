@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.ControlPoints;
-using MacroTools.DialogueSystem;
+using MacroTools.Dialogues;
 using MacroTools.Factions;
 using MacroTools.Save;
 
