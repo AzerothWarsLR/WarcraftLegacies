@@ -1,6 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Researches;

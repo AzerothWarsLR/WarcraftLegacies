@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 
-namespace MacroTools.ResearchSystems;
+namespace MacroTools.Researches;
 
 /// <summary>
 /// Provides a wrapper for vanilla WC3 researches that can be used to give them additional effects.

@@ -2,7 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;

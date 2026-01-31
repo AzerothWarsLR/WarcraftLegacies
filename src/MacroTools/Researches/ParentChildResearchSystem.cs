@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Events;
 
-namespace MacroTools.ResearchSystems;
+namespace MacroTools.Researches;
 
 /// <summary>
 /// Provides an easy way to force a research's level to always be equal to that of another.

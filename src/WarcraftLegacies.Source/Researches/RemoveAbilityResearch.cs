@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 
 namespace WarcraftLegacies.Source.Researches;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MacroTools.ResearchSystems;
+namespace MacroTools.Researches;
 
 /// <summary>
 /// Responsible for registering <see cref="Research"/>es.

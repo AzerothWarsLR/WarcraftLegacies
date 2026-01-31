@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using MacroTools.Utils;
 using WCSharp.Events;
 

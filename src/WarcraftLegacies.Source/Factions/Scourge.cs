@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;

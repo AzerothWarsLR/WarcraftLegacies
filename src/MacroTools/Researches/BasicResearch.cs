@@ -1,4 +1,4 @@
-﻿namespace MacroTools.ResearchSystems;
+﻿namespace MacroTools.Researches;
 
 /// <summary>
 /// A <see cref="Research"/> that does nothing when researched.

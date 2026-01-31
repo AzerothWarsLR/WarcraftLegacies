@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 
 namespace WarcraftLegacies.Source.Researches.Warsong;
 

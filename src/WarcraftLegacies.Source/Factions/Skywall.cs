@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;

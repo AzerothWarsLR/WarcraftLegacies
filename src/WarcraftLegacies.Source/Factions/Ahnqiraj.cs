@@ -3,7 +3,7 @@
 using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;

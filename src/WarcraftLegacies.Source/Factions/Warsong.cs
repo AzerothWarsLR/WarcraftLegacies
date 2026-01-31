@@ -6,7 +6,7 @@ using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Quests;
-using MacroTools.ResearchSystems;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using WarcraftLegacies.Source.Objectives.LegendBased;
