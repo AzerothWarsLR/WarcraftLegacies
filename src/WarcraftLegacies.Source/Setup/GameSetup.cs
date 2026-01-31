@@ -13,6 +13,7 @@ using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
+using WarcraftLegacies.Source.Patrons;
 using WarcraftLegacies.Source.Testing;
 
 namespace WarcraftLegacies.Source.Setup;

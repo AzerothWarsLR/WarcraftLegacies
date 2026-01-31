@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.PreplacedWidgets;
 
-namespace WarcraftLegacies.Source;
+namespace WarcraftLegacies.Source.Patrons;
 
 /// <summary>
 /// Responsible for renaming units on the map to their appropriate Patreon Patron.
