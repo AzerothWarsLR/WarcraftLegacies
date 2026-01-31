@@ -3,7 +3,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
 using MacroTools.Save;
-using MacroTools.Sound;
+using MacroTools.Sounds;
 using MacroTools.Systems;
 using MacroTools.UnitNames;
 using MacroTools.UnitTraits;

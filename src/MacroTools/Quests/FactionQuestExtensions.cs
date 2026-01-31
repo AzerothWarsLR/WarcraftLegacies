@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Sound;
+using MacroTools.Sounds;
 using WCSharp.Shared;
 
 namespace MacroTools.Quests;

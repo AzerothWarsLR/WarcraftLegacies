@@ -1,6 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.Sound;
+using MacroTools.Sounds;
 
 namespace MacroTools.Extensions;
 

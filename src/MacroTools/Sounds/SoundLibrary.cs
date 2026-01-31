@@ -1,4 +1,4 @@
-﻿namespace MacroTools.Sound;
+﻿namespace MacroTools.Sounds;
 
 public static class SoundLibrary
 {

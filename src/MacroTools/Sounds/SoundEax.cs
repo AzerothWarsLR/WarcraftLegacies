@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools.Sound;
+namespace MacroTools.Sounds;
 
 /// <summary>
 /// Environmental audio extensions.

@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Sound;
+using MacroTools.Sounds;
 
 namespace MacroTools.Dialogues;
 
