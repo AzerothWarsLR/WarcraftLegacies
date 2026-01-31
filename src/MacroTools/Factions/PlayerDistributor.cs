@@ -100,6 +100,8 @@ public static class PlayerDistributor
   {
     var playerUnits = GlobalGroup.EnumUnitsOfPlayer(playerToDistribute);
     var playerData = playerToDistribute.GetPlayerData();
+    var playerCount = playersToDistributeTo.Count;
+    var playerNeutralVictim = player.NeutralVictim;
 
     var isInTeam = playerData.Team?.Size > 1;
 
@@ -143,8 +145,8 @@ public static class PlayerDistributor
       }
 
       var newOwner = isInTeam
-        ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-        : player.NeutralVictim;
+        ? playersToDistributeTo[GetRandomInt(0, playerCount - 1)]
+        : playerNeutralVictim;
 
       unit.SetOwner(newOwner);
     }
