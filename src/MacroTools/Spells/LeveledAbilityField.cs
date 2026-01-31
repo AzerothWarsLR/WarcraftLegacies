@@ -1,4 +1,4 @@
-﻿namespace MacroTools.Data;
+﻿namespace MacroTools.Spells;
 
 /// <summary>
 /// Represents the value of a leveled ability field, such as damage or duration.

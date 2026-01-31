@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Spells;
 using MacroTools.Utils;

@@ -1,5 +1,4 @@
-﻿using MacroTools.Data;
-using MacroTools.Spells;
+﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;

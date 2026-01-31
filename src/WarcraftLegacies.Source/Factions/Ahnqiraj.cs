@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-
-using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.PreplacedWidgetsSystem;
 using MacroTools.Researches;

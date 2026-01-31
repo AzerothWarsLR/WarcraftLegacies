@@ -1,5 +1,4 @@
-﻿using MacroTools.Data;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.Spells;
 
 namespace WarcraftLegacies.Source.Spells;

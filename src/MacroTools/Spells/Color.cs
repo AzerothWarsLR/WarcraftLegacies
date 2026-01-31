@@ -1,4 +1,4 @@
-﻿namespace MacroTools.Data;
+﻿namespace MacroTools.Spells;
 
 /// <summary>
 /// Represents an RGB color.

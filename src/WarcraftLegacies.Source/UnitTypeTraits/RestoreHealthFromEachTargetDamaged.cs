@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
-using MacroTools.Data;
 using MacroTools.Extensions;
+using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WCSharp.Effects;
 

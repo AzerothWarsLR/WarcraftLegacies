@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Spells;

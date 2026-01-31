@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Data;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Events;

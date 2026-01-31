@@ -1,5 +1,4 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Quests;

@@ -1,5 +1,4 @@
-﻿using MacroTools.Data;
-using MacroTools.Researches;
+﻿using MacroTools.Researches;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;

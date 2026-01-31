@@ -1,5 +1,5 @@
-﻿using MacroTools.Data;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
+using MacroTools.Spells;
 using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Spells;
 using WCSharp.Effects;

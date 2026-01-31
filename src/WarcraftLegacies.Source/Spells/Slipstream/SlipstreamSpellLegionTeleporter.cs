@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Channels;
-using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;

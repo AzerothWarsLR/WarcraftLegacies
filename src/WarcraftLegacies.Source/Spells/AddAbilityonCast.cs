@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Data;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;

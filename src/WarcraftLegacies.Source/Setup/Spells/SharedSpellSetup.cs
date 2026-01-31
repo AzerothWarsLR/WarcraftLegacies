@@ -1,4 +1,4 @@
-﻿using MacroTools.Data;
+﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.UnitTypeTraits;
 
