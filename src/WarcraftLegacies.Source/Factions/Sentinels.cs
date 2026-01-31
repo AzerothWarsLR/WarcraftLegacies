@@ -44,7 +44,7 @@ public sealed class Sentinels : Faction
       "elves"
     };
     RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
-    RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
+    RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuests);
     RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
     ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
   }
@@ -172,21 +172,9 @@ public sealed class Sentinels : Faction
       }));
   }
 
-  private void RegisterIllidariQuestsAndDialogue(Illidari illidari)
+  private void RegisterIllidariQuests(Illidari illidari)
   {
     AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
-    TriggeredDialogueManager.Add(
-      new TriggeredDialogue(new Dialogue(
-        @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev37",
-        "I am the hand of justice, Illidan. Long ago, I swore an oath to keep you chained, and by all the gods, I shall.",
-        "Maiev Shadowsong"), new Faction[]
-      {
-        this,
-        illidari
-      }, new[]
-      {
-        new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Maiev, AllLegends.Naga.Illidan)
-      }));
   }
 
   private void RegisterLegionDialogue(Legion legion)
