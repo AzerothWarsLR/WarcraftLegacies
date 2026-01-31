@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Wrappers;
 
-namespace MacroTools.Mechanics;
+namespace WarcraftLegacies.Source.FactionMechanics.Dalaran;
 
 public sealed class Waygate
 {

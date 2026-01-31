@@ -3,7 +3,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Mechanics.DemonGates;
+namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 
 /// <summary>
 /// Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.

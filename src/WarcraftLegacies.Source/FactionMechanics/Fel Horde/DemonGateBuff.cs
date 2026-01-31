@@ -5,7 +5,7 @@ using WCSharp.Effects;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Mechanics.DemonGates;
+namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 
 /// <summary>
 /// Units with this buff will periodically spawn units from themselves.

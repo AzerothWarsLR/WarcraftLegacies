@@ -1,7 +1,7 @@
 ﻿using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
-namespace MacroTools.Mechanics.DemonGates;
+namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 
 /// <summary>
 /// Causes the unit type to periodically spawn units.

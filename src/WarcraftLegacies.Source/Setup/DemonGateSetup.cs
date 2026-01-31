@@ -1,5 +1,5 @@
-﻿using MacroTools.Mechanics.DemonGates;
-using MacroTools.UnitTraits;
+﻿using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 
 namespace WarcraftLegacies.Source.Setup;
 

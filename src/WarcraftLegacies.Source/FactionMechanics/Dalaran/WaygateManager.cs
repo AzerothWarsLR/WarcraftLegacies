@@ -1,7 +1,7 @@
 ﻿using System;
 using WCSharp.Events;
 
-namespace MacroTools.Mechanics;
+namespace WarcraftLegacies.Source.FactionMechanics.Dalaran;
 
 /// <summary>
 ///   Notices when a Waygate structure is built and registers it a new <see cref="Waygate" />.
