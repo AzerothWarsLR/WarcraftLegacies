@@ -103,9 +103,6 @@ public static class PlayerDistributor
     var playerData = playerToDistribute.GetPlayerData();
 
     var isInTeam = playerData.Team?.Size > 1;
-    var newOwner = isInTeam
-        ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-        : player.NeutralVictim;
 
     var refund = new UnitsRefund();
     foreach (var unit in playerUnits)
@@ -142,6 +139,10 @@ public static class PlayerDistributor
         unit.Dispose();
         continue;
       }
+
+      var newOwner = isInTeam
+        ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
+        : player.NeutralVictim;
 
       unit.SetOwner(newOwner);
     }
