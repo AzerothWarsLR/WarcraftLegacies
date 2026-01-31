@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Events;
 
-namespace MacroTools.UnitNameTools;
+namespace MacroTools.UnitNames;
 
 public static class DynamicUnitNameRegistry
 {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MacroTools.UnitNameTools;
+namespace MacroTools.UnitNames;
 
 public sealed class NamePool
 {
