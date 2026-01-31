@@ -4,7 +4,7 @@ using MacroTools.Instances;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.ShoreSystem;
+namespace MacroTools.Shores;
 
 /// <summary>
 /// Responsible for recording and providing searching for all <see cref="Shore"/>s in the game.

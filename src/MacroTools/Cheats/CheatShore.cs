@@ -1,5 +1,5 @@
 ﻿using MacroTools.CommandSystem;
-using MacroTools.ShoreSystem;
+using MacroTools.Shores;
 using MacroTools.Utils;
 
 namespace MacroTools.Cheats;

@@ -1,4 +1,4 @@
-﻿using MacroTools.ShoreSystem;
+﻿using MacroTools.Shores;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup;

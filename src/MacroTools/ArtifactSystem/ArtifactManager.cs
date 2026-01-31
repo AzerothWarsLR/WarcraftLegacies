@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.ShoreSystem;
+using MacroTools.Shores;
 using WCSharp.Events;
 
 namespace MacroTools.ArtifactSystem;

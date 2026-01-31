@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace MacroTools.ShoreSystem;
+namespace MacroTools.Shores;
 
 /// <summary>
 /// A position where the beach meets the shore.

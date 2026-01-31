@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.ShoreSystem;
+using MacroTools.Shores;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Extensions;
