@@ -110,7 +110,8 @@ public static class PlayerDistributor
       var loopUnitType = UnitType.GetFromHandle(unit);
       if (unit.IsUnitType(unittype.Summoned))
       {
-        unit.SafelyRemove();
+        unit.Kill();
+        unit.Dispose();
         continue;
       }
 
@@ -123,7 +124,9 @@ public static class PlayerDistributor
           refund.Experience -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
         }
 
-        unit.SafelyRemove();
+        unit.DropAllItems();
+        unit.Kill();
+        unit.Dispose();
         continue;
       }
 
