@@ -72,12 +72,19 @@
       "Level": 1,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,enemies,structure,ground"
+      "Value": "allies,ward"
     },
     {
       "Id": 1685221217,
       "Type": 3,
       "Value": "volcano"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845440085,
+      "Type": 2,
+      "Value": 0
     },
     {
       "Id": 1768841569,
