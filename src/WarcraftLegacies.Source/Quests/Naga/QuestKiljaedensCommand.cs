@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -87,12 +88,24 @@ public sealed class QuestKiljaedensCommand : QuestData
 
   protected override void OnAdd(Faction whichFaction)
   {
-    SpawnKiljaeden();
-    SetQuestTarget(CalculateQuestTarget());
+    try
+    {
+      SpawnKiljaeden();
+      SetQuestTarget(CalculateQuestTarget(whichFaction));
+    }
+    catch (Exception ex)
+    {
+      Console.WriteLine(ex);
+    }
   }
 
-  private Faction CalculateQuestTarget()
+  private Faction CalculateQuestTarget(Faction questHolder)
   {
+    if (questHolder.Player == null)
+    {
+      return _scourge;
+    }
+
     var eligibleFactions = new List<Faction>();
 
     if (TheFrozenThrone.State == FrozenThroneState.Alive)
@@ -111,8 +124,15 @@ public sealed class QuestKiljaedensCommand : QuestData
     }
 
     var factionTarget = eligibleFactions
+      .Where(x => x.Player?.GetPlayerData().Team?.Contains(questHolder.Player) == false)
       .OrderByDescending(f => f.Player?.GetPlayerData().ControlPoints.Count)
-      .First();
+      .FirstOrDefault();
+
+    if (factionTarget == null)
+    {
+      return _scourge;
+    }
+
     return factionTarget;
   }
 
@@ -135,7 +155,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     if (faction == _ahnQiraj)
     {
       AddObjective(new ObjectiveLegendDead(_cthun));
-      AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ));
+      AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 0));
     }
   }
 
