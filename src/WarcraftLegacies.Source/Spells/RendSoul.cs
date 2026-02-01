@@ -1,26 +1,27 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.Spells;
+using MacroTools.Utils;
 using WCSharp.Effects;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>
-/// Kill the target unit to restore hit points and mana based on its maximum hit points, and create a summoned unit at
-/// its position.
+/// Automatically kills an allied unit to restore hit points and mana based on its current hit points,
+/// prioritizing summoned units, and summons a temporary unit at the victim's position.
 /// </summary>
+
 public sealed class RendSoul : Spell
 {
-  public float HitPointsPerTargetMaximumHitPoints { get; init; }
-
-  public float ManaPointsPerTargetMaximumHitPoints { get; init; }
-
+  public float HealthRestorePercent { get; init; }
+  public float ManaRestorePercent { get; init; }
+  public float Radius { get; init; }
   public int UnitTypeSummoned { get; init; }
-
-  public string EffectTarget { get; init; } = "";
-
-  public string EffectCaster { get; init; } = "";
-
+  public string KillEffect { get; init; } = string.Empty;
+  public string HealEffect { get; init; } = string.Empty;
   public int Duration { get; init; }
 
   /// <inheritdoc />
@@ -31,20 +32,76 @@ public sealed class RendSoul : Spell
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var targetMaximumHitPoints = target.MaxLife;
-    var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
-    var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
+    var casterPlayer = caster.Owner;
+    var casterPosition = caster.GetPosition();
 
-    EffectSystem.Add(effect.Create(EffectCaster, caster.X, caster.Y));
-    EffectSystem.Add(effect.Create(EffectTarget, target.X, target.Y));
+    var unitsInRange = GlobalGroup
+      .EnumUnitsInRange(casterPosition, Radius)
+      .Where(x => IsValidTarget(x, casterPlayer))
+      .ToList();
 
-    target.Kill();
+    if (unitsInRange.Count == 0)
+    {
+      Refund(caster);
+      return;
+    }
+    var targetUnit = unitsInRange
+      .OrderByDescending(x => x.IsUnitType(unittype.Summoned))
+      .ThenByDescending(x => x.IsUnitType(unittype.Summoned) ? x.Level : 0)
+      .ThenBy(x => x.Level)
+      .ThenBy(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), casterPosition))
+      .FirstOrDefault();
+    if (targetUnit == null)
+    {
+      Refund(caster);
+      return;
+    }
+    var targetHealth = targetUnit.Life;
+    var targetX = targetUnit.X;
+    var targetY = targetUnit.Y;
 
-    caster.Life += healthGained;
-    caster.Mana += manaGained;
+    targetUnit.Kill();
 
-    var summonedUnit = unit.Create(caster.Owner, UnitTypeSummoned, target.X, target.Y, caster.Facing);
+    caster.Life += targetHealth * HealthRestorePercent;
+
+    if (!string.IsNullOrEmpty(HealEffect))
+    {
+      EffectSystem.Add(effect.Create(HealEffect, caster, "origin"));
+    }
+    Delay.Add(() =>
+    {
+      var manaToRestore = targetHealth * ManaRestorePercent;
+      caster.Mana = Math.Min(caster.Mana + manaToRestore, caster.MaxMana);
+    });
+
+    if (!string.IsNullOrEmpty(KillEffect))
+    {
+      EffectSystem.Add(effect.Create(KillEffect, targetX, targetY));
+    }
+
+    var summonedUnit = unit.Create(caster.Owner, UnitTypeSummoned, targetX, targetY, caster.Facing);
     summonedUnit.SetTimedLife(Duration);
     summonedUnit.AddType(unittype.Summoned);
+  }
+
+  private static bool IsValidTarget(unit target, player casterPlayer)
+  {
+    return target.Alive &&
+           target.Owner == casterPlayer &&
+           !target.IsResistant() &&
+           !target.IsUnitType(unittype.Structure) &&
+           !target.IsUnitType(unittype.Ancient) &&
+           !target.IsUnitType(unittype.Mechanical) &&
+           !target.IsUnitType(unittype.MagicImmune);
+  }
+  private void Refund(unit caster)
+  {
+    //Delay to avoid mana overcap.
+    Delay.Add(() =>
+    {
+      var ability = caster.GetAbility(Id);
+      caster.Mana += ability.GetManaCost_amcs(caster.GetAbilityLevel(Id) - 1);
+      caster.SetAbilityCooldownRemaining(Id, 0);
+    });
   }
 }

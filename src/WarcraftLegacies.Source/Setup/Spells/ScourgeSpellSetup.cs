@@ -50,14 +50,16 @@ public static class ScourgeSpellSetup
     };
     SpellRegistry.Register(massFrostArmor);
 
-    var rendSoul = new RendSoul(ABILITY_ZB01_REND_SOUL_KEL_THUZAD_LICH)
+    var rendSoul = new RendSoul(ABILITY_A00F_REND_SOUL_ICON)
     {
-      HitPointsPerTargetMaximumHitPoints = 0.25f,
-      ManaPointsPerTargetMaximumHitPoints = 0.35f,
+      HealthRestorePercent = 0.25f,
+      ManaRestorePercent = 0.35f,
+      Radius = 600f,
       UnitTypeSummoned = UNIT_N009_REVENANT_SCOURGE,
-      EffectTarget = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
-      EffectCaster = @"Abilities\Spells\Undead\DarkRitual\DarkRitualCaster.mdl",
-      Duration = 45
+      Duration = 45,
+      KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
+      HealEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualCaster.mdl"
+
     };
     SpellRegistry.Register(rendSoul);
 
@@ -87,7 +89,7 @@ public static class ScourgeSpellSetup
       KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
       HealEffect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl",
       HealthRestorePercent = 0.25f,
-      ManaRestorePercent = 0.36f
+      ManaRestorePercent = 0.35f
     });
 
     UnitTypeTraitRegistry.Register(new SummonUnitOnCast(ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
