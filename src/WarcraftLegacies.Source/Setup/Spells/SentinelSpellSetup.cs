@@ -38,7 +38,7 @@ public static class SentinelSpellSetup
       ReviveEffect = "Heal Blue.mdx"
     }, UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS);
 
-    var elunesGaze = new MassAnySpell(ABILITY_ASEG_ELUNE_S_GAZE_SENTINELS_REAL)
+    var elunesGaze = new MassAnySpell(ABILITY_A00E_ELUNE_S_GAZE_SENTINELS)
     {
       DummyAbilityId = ABILITY_A0VY_INVISIBILITY_LB,
       DummyAbilityOrderId = ORDER_INVISIBILITY,
