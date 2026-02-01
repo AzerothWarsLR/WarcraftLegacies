@@ -18,7 +18,7 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR, Unlimited, Altar);
     yield return new(UNIT_USEP_CRYPT_SCOURGE_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH, Unlimited, Research);
-    yield return new(UNIT_USLH_SLAUGHTERHOUSE_SCOURGE_SPECIALIST, Unlimited, Specialist);
+    yield return new(UNIT_USLH_SLAUGHTERHOUSE_SCOURGE_SPECIALIST, Unlimited, SiegeWorkshop);
     yield return new(UNIT_UTOD_TEMPLE_OF_THE_DAMNED_SCOURGE_MAGIC, Unlimited, Magic);
     yield return new(UNIT_UBON_BONEYARD_SCOURGE_SIEGE, Unlimited, FlyingBuilding);
     yield return new(UNIT_UTOM_TOMB_OF_RELICS_SCOURGE_SHOP, Unlimited, Shop);
