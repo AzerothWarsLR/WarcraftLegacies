@@ -28,11 +28,9 @@ public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFi
       .Where(model => !activeModels.Contains(model))
       .ToList();
 
-    unusedModels.Should().BeEmpty(
-      "every imported model should be used by an ability, doodad, buff, destructable, or script.{0}",
-      unusedModels.Count != 0
-        ? $" Unused models: {string.Join(", ", unusedModels)}"
-        : string.Empty);
+    unusedModels
+      .Should()
+      .BeEmpty("every imported model should be used by an ability, doodad, buff, destructable, or script. Found {0}", unusedModels.Count);
   }
 
   private static IEnumerable<string> GetModelsUsedInMap(Map map)
