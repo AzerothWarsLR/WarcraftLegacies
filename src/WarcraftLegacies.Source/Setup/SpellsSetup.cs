@@ -1,4 +1,5 @@
-﻿using MacroTools.Spells;
+﻿using System.Collections.Generic;
+using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Setup.Spells;
 using WarcraftLegacies.Source.Spells;
@@ -10,7 +11,6 @@ public static class SpellsSetup
 {
   public static void Setup()
   {
-
     var thunderClap = new Stomp(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
     {
       Radius = 300,
@@ -53,7 +53,6 @@ public static class SpellsSetup
     };
     SpellRegistry.Register(massEnrage);
 
-
     var seismicShard = new MassAnySpell(ABILITY_A0OD_SEISMIC_SHARD_AZIL)
     {
       DummyAbilityId = ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
@@ -79,6 +78,13 @@ public static class SpellsSetup
     var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
     SpellRegistry.Register(demonSoulCooldown);
 
+    SpellRegistry.Register(new TomeOfRetrainingEx(ABILITY_ARET_TOME_OF_RETRAINING)
+    {
+      UnrefundableAbilityTypeIds = new List<int>
+      {
+        ABILITY_ZBPA_METAMORPHOSIS_PERMANENT_ILLIDAN
+      }
+    });
     SpellRegistry.Register(new MakeCasterVulnerable(ABILITY_A00M_SCROLL_TELE));
     SpellRegistry.Register(new MakeCasterVulnerable(ABILITY_A0CS_VASSAL_SCROLL_TELE));
     SpellRegistry.Register(new MakeCasterVulnerable(ABILITY_A002_SCROLL_TELE_TOWN));
