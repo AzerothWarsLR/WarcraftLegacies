@@ -20,7 +20,7 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH, Unlimited, Research);
     yield return new(UNIT_USLH_SLAUGHTERHOUSE_SCOURGE_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_UTOD_TEMPLE_OF_THE_DAMNED_SCOURGE_MAGIC, Unlimited, Magic);
-    yield return new(UNIT_UBON_BONEYARD_SCOURGE_SIEGE, Unlimited, SiegeWorkshop);
+    yield return new(UNIT_UBON_BONEYARD_SCOURGE_SIEGE, Unlimited, FlyingBuilding);
     yield return new(UNIT_UTOM_TOMB_OF_RELICS_SCOURGE_SHOP, Unlimited, Shop);
     yield return new(UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_U002_IMPROVED_SPIRIT_TOWER_SCOURGE_TOWER, Unlimited, new List<UnitCategory> { Farm, Tower });
