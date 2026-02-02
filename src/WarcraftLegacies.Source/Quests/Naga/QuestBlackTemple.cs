@@ -98,7 +98,7 @@ public sealed class QuestBlackTemple : QuestData
         continue;
       }
 
-      if (unit.IsABuilding)
+      if (unit.IsABuilding || unit.IsUnitBoat())
       {
         completingPlayer.Gold += unit.GoldCostOf(unit.UnitType);
         unit.Dispose();
