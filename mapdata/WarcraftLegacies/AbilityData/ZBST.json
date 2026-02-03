@@ -219,7 +219,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons a powerful Tentacle at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds. |n|n|cffffcc00Level 1|r - The Tentacle has 750 hit points and 40 base damage.|n|cffffcc00Level 2|r - The Tentacle has 1000 hit points and 60 base damage.|n|cffffcc00Level 3|r - The Tentacle has 1250 hit points and 80 base damage."
+      "Value": "Summons a powerful Tentacle at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds. |n|n|cffffcc00Level 1|r - The Tentacle has 600 hit points and 40 base damage.|n|cffffcc00Level 2|r - The Tentacle has 700 hit points and 60 base damage.|n|cffffcc00Level 3|r - The Tentacle has 800 hit points and 80 base damage."
     },
     {
       "Id": 1952543841,
@@ -254,19 +254,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a powerful Tentacle with 750 hit points and 40 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
+      "Value": "Summons a powerful Tentacle with 600 hit points and 40 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a powerful Tentacle with 1000 hit points and 60 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
+      "Value": "Summons a powerful Tentacle with 700 hit points and 60 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a powerful Tentacle with 1250 hit points and 80 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
+      "Value": "Summons a powerful Tentacle with 800 hit points and 80 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
     },
     {
       "Id": 2020631137,
