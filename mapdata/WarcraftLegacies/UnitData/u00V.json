@@ -98,6 +98,10 @@
       "Value": "R03L,Rhme,Rhar,R024,R023,Rguv,Ropm"
     },
     {
+      "Id": 1836083317,
+      "Value": 400
+    },
+    {
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcWarlock.blp"

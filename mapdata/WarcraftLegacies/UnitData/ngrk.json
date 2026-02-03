@@ -7,7 +7,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "ACmi,ACrk,ACsw"
+      "Value": "ACrk,ACsw"
     },
     {
       "Id": 1684824693,
@@ -72,6 +72,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Light melee unit that can Slow opponents. Immune to spells. "
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ACsw"
     }
   ]
 }
