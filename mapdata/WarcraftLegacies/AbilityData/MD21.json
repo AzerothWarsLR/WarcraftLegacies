@@ -14,6 +14,16 @@
       "Id": 1718840929,
       "Type": 3,
       "Value": "(Kul\u0027Tiras - Sea Giant)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces the duration of negative spells and renders the Sea Giant immune to certain spells."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }
