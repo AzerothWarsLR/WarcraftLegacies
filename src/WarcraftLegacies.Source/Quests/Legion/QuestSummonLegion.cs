@@ -66,7 +66,6 @@ public sealed class QuestSummonLegion : QuestData
 
     whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
     whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
-    whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
     foreach (var player in Util.EnumeratePlayers())
     {
       player.SetAbilityAvailable(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
