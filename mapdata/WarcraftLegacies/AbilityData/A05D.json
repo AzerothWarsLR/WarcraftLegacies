@@ -64,7 +64,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires powerful rockets at nearby enemy ground units, dealing \u003Chrtt,mindmg2\u003E - \u003Chrtt,maxdmg2\u003E damage per hit."
+      "Value": "Fires powerful rockets at nearby enemy ground units, dealing 15 damage per hit."
     }
   ]
 }
