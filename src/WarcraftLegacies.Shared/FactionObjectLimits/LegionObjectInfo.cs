@@ -31,7 +31,7 @@ public static class LegionObjectInfo
     yield return new(UNIT_N04O_DOOM_LORD_LEGION, 6); // Doom Lord
     yield return new(UNIT_N04L_INFERNAL_JUGGERNAUT_LEGION, 6); // Infernal Juggernaut
     yield return new(UNIT_O04P_NATHREZIM_WARLOCK_LEGION, 6); // Nathrezim Warlock
-    yield return new(UNIT_NINF_INFERNAL_LEGION, 6); // Infernal
+    yield return new(UNIT_NINF_INFERNAL_LEGION, 12); // Infernal
     yield return new(UNIT_N04H_FEL_GUARD_LEGION, Unlimited); //Fel Guard
     yield return new(UNIT_N04U_NETHER_DRAGON_LEGION, 4); // Nether Dragon
     yield return new(UNIT_N03L_SKY_BARGE_LEGION, 4); // Sky Barge
