@@ -30,6 +30,12 @@
       "Value": "enemies,ground"
     },
     {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862676549,
+      "Value": 6
+    },
+    {
       "Id": 2020631137,
       "Value": 3
     },

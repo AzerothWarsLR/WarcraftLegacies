@@ -20,13 +20,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 2,
-      "Id": 845833554,
-      "Type": 2,
-      "Value": -500
-    },
-    {
-      "Level": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 10
@@ -65,6 +58,13 @@
       "Value": "air,enemies,ground,invulnerable,neutral,organic,vulnerable"
     },
     {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845833554,
+      "Type": 2,
+      "Value": -100
+    },
+    {
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMind Crush.blp"
@@ -93,7 +93,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Inflicts a curse upon the target unit, causing it to lose 25 hit points and 50 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."
+      "Value": "Inflicts a curse upon the target unit, causing it to lose 25 hit points and 10 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."
     }
   ]
 }
