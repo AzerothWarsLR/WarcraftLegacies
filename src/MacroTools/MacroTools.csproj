@@ -8,13 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="WCSharp.Buffs" Version="3.3.0" />
-        <PackageReference Include="WCSharp.Effects" Version="3.3.0" />
-        <PackageReference Include="WCSharp.Events" Version="3.3.0" />
-        <PackageReference Include="WCSharp.Json" Version="3.3.0" />
-        <PackageReference Include="WCSharp.Lightnings" Version="3.3.0" />
-        <PackageReference Include="WCSharp.Missiles" Version="3.3.0" />
-        <PackageReference Include="WCSharp.SaveLoad" Version="3.3.0" />
+        <PackageReference Include="WCSharp.Buffs" Version="3.3.2" />
+        <PackageReference Include="WCSharp.Effects" Version="3.3.2" />
+        <PackageReference Include="WCSharp.Events" Version="3.3.2" />
+        <PackageReference Include="WCSharp.Json" Version="3.3.2" />
+        <PackageReference Include="WCSharp.Lightnings" Version="3.3.2" />
+        <PackageReference Include="WCSharp.Missiles" Version="3.3.2" />
+        <PackageReference Include="WCSharp.SaveLoad" Version="3.3.2" />
     </ItemGroup>
 
     <ItemGroup>
