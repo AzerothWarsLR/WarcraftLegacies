@@ -26,8 +26,6 @@ public sealed class QuestWorldShaman : QuestData
     var controlPoints = new List<ControlPoint>
     {
       ControlPointManager.Instance.GetFromUnitType(UNIT_N028_DROWNED_REACHES),
-      ControlPointManager.Instance.GetFromUnitType(UNIT_N02P_MAK_ARA),
-      ControlPointManager.Instance.GetFromUnitType(UNIT_N04B_GISHAN_CAVERNS),
       ControlPointManager.Instance.GetFromUnitType(UNIT_N05Y_AZSUNA),
       ControlPointManager.Instance.GetFromUnitType(UNIT_N032_SURAMAR),
       ControlPointManager.Instance.GetFromUnitType(UNIT_N053_VAL_SHARAH),
