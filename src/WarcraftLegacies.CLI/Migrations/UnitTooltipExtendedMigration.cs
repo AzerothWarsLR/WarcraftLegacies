@@ -151,6 +151,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
 
     var learnableAbilities = unit.AbilitiesNormal
+      .Where(HasVisibleIcon).Where(HasVisibleIcon)
       .Where(x => x.TechtreeRequirements.Any())
       .OrderBy(GetPriority)
       .Select(x => x.TextName)
