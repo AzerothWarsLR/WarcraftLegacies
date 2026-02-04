@@ -41,7 +41,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Adtg,Aien,Aspo,Asb3"
+      "Value": "Adtg,Aien,Aspo"
     },
     {
       "Id": 1902473845,
@@ -79,6 +79,11 @@
       "Id": 1718840949,
       "Type": 3,
       "Value": " (Illidari)"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Aspo"
     }
   ]
 }

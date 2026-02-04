@@ -7,7 +7,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Aens,A10B,A0CH,Asb1,Aihn"
+      "Value": "Aens,A10B,A0CH,Aihn"
     },
     {
       "Id": 1717920885,
@@ -88,6 +88,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Powerful warrior of the depths."
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "ANen"
     }
   ]
 }
