@@ -18,9 +18,8 @@ public sealed class QuestSubduing : QuestData
     @"ReplaceableTextures\CommandButtons\BTNTidelord.blp")
   {
     AddObjective(new ObjectiveControlLevel(UNIT_N00P_THE_ABYSS, 5));
-    AddObjective(new ObjectiveControlLevel(UNIT_N02P_MAK_ARA, 5));
-    AddObjective(new ObjectiveControlLevel(UNIT_N04B_GISHAN_CAVERNS, 5));
     AddObjective(new ObjectiveControlLevel(UNIT_N028_DROWNED_REACHES, 5));
+    AddObjective(new ObjectiveControlLevel(UNIT_N04Y_NAZJATAR, 5));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON;
   }
