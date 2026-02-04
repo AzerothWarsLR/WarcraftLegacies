@@ -235,7 +235,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 50 damage per second, 20 seconds duration.|n|cffffcc00Level 2|r - 75 damage per second, 35 seconds duration.|n|cffffcc00Level 3|r - 100 damage per second, 50 seconds duration."
+      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 25 damage per second, 10 seconds duration.|n|cffffcc00Level 2|r - 50 damage per second, 15 seconds duration.|n|cffffcc00Level 3|r - 75 damage per second, 20 seconds duration."
     },
     {
       "Level": 4,
@@ -247,19 +247,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 10 damage a second. Lasts 20 seconds."
+      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 25 damage a second. Lasts 10 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 15 damage a second. Lasts 35 seconds."
+      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 50 damage a second. Lasts 15 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 25 damage a second. Lasts 50 seconds."
+      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 75 damage a second. Lasts 20 seconds."
     },
     {
       "Level": 4,
