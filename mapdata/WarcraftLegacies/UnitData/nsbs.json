@@ -1,0 +1,23 @@
+{
+  "OldId": 1935831918,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Rnam,Rnat"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}
