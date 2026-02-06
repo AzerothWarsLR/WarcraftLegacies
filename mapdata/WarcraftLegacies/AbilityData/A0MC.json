@@ -1,0 +1,35 @@
+{
+  "OldId": 1717848385,
+  "NewId": 1129132097,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1969385289,
+      "Type": 3,
+      "Value": "AIbx"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.blp"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ProcMissile\\ProcMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Item Attack Bash"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs1.mdl"
+    }
+  ]
+}
