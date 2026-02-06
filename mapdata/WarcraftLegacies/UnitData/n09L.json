@@ -1,0 +1,72 @@
+{
+  "OldId": 846621806,
+  "NewId": 1278816366,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1647403381,
+      "Value": 13
+    },
+    {
+      "Id": 1836083317,
+      "Value": 600
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 3
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1986358389,
+      "Value": 3
+    },
+    {
+      "Id": 1633837685,
+      "Value": 7
+    },
+    {
+      "Id": 1768186485,
+      "Value": 4
+    },
+    {
+      "Id": 1769169525,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel Horde-Zuluhed)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1919905909,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

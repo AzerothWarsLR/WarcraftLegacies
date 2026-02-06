@@ -1,0 +1,104 @@
+{
+  "OldId": 1836086127,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Acpf,A0H0,Adcn,Aast,Aion,ACrk"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 4
+    },
+    {
+      "Id": 1701602933,
+      "Value": 1
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 20
+    },
+    {
+      "Id": 1919903605,
+      "Value": 19
+    },
+    {
+      "Id": 1836083317,
+      "Value": 425
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1768975733,
+      "Value": 300
+    },
+    {
+      "Id": 1769107573,
+      "Value": 12
+    },
+    {
+      "Id": 1836348021,
+      "Value": 4
+    },
+    {
+      "Id": 1937141109,
+      "Value": 220
+    },
+    {
+      "Id": 1701868405,
+      "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "o00J"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Frostwolf-Ethereal)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Tauren shaman of the Bloodhoof Tribe in ethereal form."
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Ethereal Form|n- Healing Surge,- Ethereal Form|n- Healing Surge|n- Disenchant,- Ethereal Form|n- Healing Surge|n- Disenchant|n- Ancestral Spirit"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}
