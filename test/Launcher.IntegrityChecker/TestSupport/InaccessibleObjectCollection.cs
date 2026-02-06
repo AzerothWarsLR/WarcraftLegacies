@@ -1,7 +1,6 @@
 ﻿using Launcher.IntegrityChecker.Exceptions;
 using War3Api.Object;
 using War3Api.Object.Abilities;
-using Warcraft.Cartographer.Extensions;
 
 namespace Launcher.IntegrityChecker.TestSupport;
 
@@ -25,6 +24,8 @@ public sealed class InaccessibleObjectCollection(
 
   public List<Doodad> Doodads { get; } = doodads;
 
+  public List<Exception> Exceptions { get; } = [];
+
   public void RemoveWithChildren(BaseObject baseObject)
   {
     switch (baseObject)
@@ -38,14 +39,15 @@ public sealed class InaccessibleObjectCollection(
       case Upgrade upgrade:
         RemoveWithChildren(upgrade);
         break;
-      case Ability upgrade:
-        RemoveWithChildren(upgrade);
+      case Ability ability:
+        RemoveWithChildren(ability);
         break;
       case Doodad doodad:
         RemoveWithChildren(doodad);
         break;
     }
   }
+
 
   public void RemoveWithChildren(Unit unit)
   {
@@ -63,18 +65,15 @@ public sealed class InaccessibleObjectCollection(
         RemoveWithChildren(trainedUnit);
       }
 
-
       foreach (var builtStructure in unit.TechtreeStructuresBuilt)
       {
         RemoveWithChildren(builtStructure);
       }
 
-
       foreach (var upgradesTo in unit.TechtreeUpgradesTo)
       {
         RemoveWithChildren(upgradesTo);
       }
-
 
       foreach (var research in unit.TechtreeResearchesAvailable)
       {
@@ -108,7 +107,7 @@ public sealed class InaccessibleObjectCollection(
     }
     catch (Exception ex)
     {
-      throw new UnremovedObjectException($"Could not remove unit {unit.GetReadableId()} - {unit.GetId()}", ex);
+      Exceptions.Add(new ObjectRemovalException(unit, ex));
     }
   }
 
@@ -668,19 +667,23 @@ public sealed class InaccessibleObjectCollection(
             {
               RemoveWithChildren(morphAir);
             }
+
             foreach (var morphAir in hexCreep.DataMorphUnitsAmphibious[i])
             {
               RemoveWithChildren(morphAir);
             }
+
             foreach (var morphAir in hexCreep.DataMorphUnitsGround[i])
             {
               RemoveWithChildren(morphAir);
             }
+
             foreach (var morphAir in hexCreep.DataMorphUnitsWater[i])
             {
               RemoveWithChildren(morphAir);
             }
           }
+
           break;
         case IllidanMetamorphosis illidanMetamorphosis:
           {
@@ -760,14 +763,17 @@ public sealed class InaccessibleObjectCollection(
               {
                 RemoveWithChildren(morphAir);
               }
+
               foreach (var morphAir in polymorph.DataMorphUnitsAmphibious[i])
               {
                 RemoveWithChildren(morphAir);
               }
+
               foreach (var morphAir in polymorph.DataMorphUnitsGround[i])
               {
                 RemoveWithChildren(morphAir);
               }
+
               foreach (var morphAir in polymorph.DataMorphUnitsWater[i])
               {
                 RemoveWithChildren(morphAir);
@@ -784,14 +790,17 @@ public sealed class InaccessibleObjectCollection(
               {
                 RemoveWithChildren(morphAir);
               }
+
               foreach (var morphAir in polymorphCreep.DataMorphUnitsAmphibious[i])
               {
                 RemoveWithChildren(morphAir);
               }
+
               foreach (var morphAir in polymorphCreep.DataMorphUnitsGround[i])
               {
                 RemoveWithChildren(morphAir);
               }
+
               foreach (var morphAir in polymorphCreep.DataMorphUnitsWater[i])
               {
                 RemoveWithChildren(morphAir);
@@ -817,6 +826,7 @@ public sealed class InaccessibleObjectCollection(
               {
                 RemoveWithChildren(raiseDead.DataUnitTypeOne[i]);
               }
+
               if (raiseDead.IsDataUnitTypeTwoModified[i])
               {
                 RemoveWithChildren(raiseDead.DataUnitTypeTwo[i]);
@@ -833,6 +843,7 @@ public sealed class InaccessibleObjectCollection(
               {
                 RemoveWithChildren(raiseDeadCreep.DataUnitTypeOne[i]);
               }
+
               if (raiseDeadCreep.IsDataUnitTypeTwoModified[i])
               {
                 RemoveWithChildren(raiseDeadCreep.DataUnitTypeTwo[i]);
@@ -849,6 +860,7 @@ public sealed class InaccessibleObjectCollection(
               {
                 RemoveWithChildren(raiseDeadItem.DataUnitTypeOne[i]);
               }
+
               if (raiseDeadItem.IsDataUnitTypeTwoModified[i])
               {
                 RemoveWithChildren(raiseDeadItem.DataUnitTypeTwo[i]);
@@ -1156,6 +1168,7 @@ public sealed class InaccessibleObjectCollection(
             {
               RemoveWithChildren(wateryMinion.DataSummonedUnitType[i]);
             }
+
             break;
           }
         case SpellBook spellBook:
@@ -1166,7 +1179,6 @@ public sealed class InaccessibleObjectCollection(
               {
                 RemoveWithChildren(spell);
               }
-
             }
 
             break;
@@ -1175,7 +1187,7 @@ public sealed class InaccessibleObjectCollection(
           {
             for (var i = 1; i <= carrionScarabs.StatsLevels; i++)
             {
-                RemoveWithChildren(carrionScarabs.DataUnitTypeOne[i]);
+              RemoveWithChildren(carrionScarabs.DataUnitTypeOne[i]);
             }
 
             break;
@@ -1186,44 +1198,67 @@ public sealed class InaccessibleObjectCollection(
     }
     catch (Exception ex)
     {
-      throw new UnremovedObjectException($"Could not remove ability {ability.GetReadableId()} - {ability.GetId()}", ex);
+      Exceptions.Add(new ObjectRemovalException(ability, ex));
     }
   }
 
+
   private void RemoveWithChildren(Upgrade upgrade)
   {
-    if (!Upgrades.Contains(upgrade))
+    try
     {
-      return;
-    }
+      if (!Upgrades.Contains(upgrade))
+      {
+        return;
+      }
 
-    Upgrades.Remove(upgrade);
+      Upgrades.Remove(upgrade);
+    }
+    catch (Exception ex)
+    {
+      Exceptions.Add(new ObjectRemovalException(upgrade, ex));
+    }
   }
 
   private void RemoveWithChildren(Item item)
   {
-    if (!Items.Contains(item))
+    try
     {
-      return;
+      if (!Items.Contains(item))
+      {
+        return;
+      }
+
+      Items.Remove(item);
+
+      foreach (var ability in item.AbilitiesAbilities)
+      {
+        RemoveWithChildren(ability);
+      }
     }
-
-    Items.Remove(item);
-
-    foreach (var ability in item.AbilitiesAbilities)
+    catch (Exception ex)
     {
-      RemoveWithChildren(ability);
+      Exceptions.Add(new ObjectRemovalException(item, ex));
     }
   }
 
   private void RemoveWithChildren(Doodad doodad)
   {
-    if (!Doodads.Contains(doodad))
+    try
     {
-      return;
-    }
+      if (!Doodads.Contains(doodad))
+      {
+        return;
+      }
 
-    Doodads.Remove(doodad);
+      Doodads.Remove(doodad);
+    }
+    catch (Exception ex)
+    {
+      Exceptions.Add(new ObjectRemovalException(doodad, ex));
+    }
   }
+
 
   /// <summary>
   /// Returns all <see cref="BaseObject"/>s in the collection.

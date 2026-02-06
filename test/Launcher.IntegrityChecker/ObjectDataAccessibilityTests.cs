@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using FluentAssertions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using War3Net.Common.Extensions;
@@ -8,6 +9,12 @@ namespace Launcher.IntegrityChecker;
 
 public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
+  [Fact]
+  public void InaccessibleObjectCollection_HasNoExceptions()
+  {
+    mapTestFixture.InaccessibleObjects.Exceptions.Should().BeEmpty();
+  }
+
   [Fact]
   public void AllResearches_CanBeAccessed()
   {
