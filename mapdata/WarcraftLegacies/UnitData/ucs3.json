@@ -1,0 +1,76 @@
+{
+  "OldId": 863200117,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0GY,A0KI,A0KH"
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1647403381,
+      "Value": 22
+    },
+    {
+      "Id": 1714512245,
+      "Value": 40
+    },
+    {
+      "Id": 1748066677,
+      "Value": 60
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1150
+    },
+    {
+      "Id": 1899061621,
+      "Value": 75
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "R008,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 100
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Red - Anub\u0027Arak)(Level 3)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 100
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Dire Carrion Beetle"
+    }
+  ]
+}

@@ -85,11 +85,6 @@
       "Value": "D"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Summon Ramstein"
-    },
-    {
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp"
@@ -124,6 +119,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons Ramstein the Gorger, a mighty abomination.|nHas Frenzy, Cleaving Attack, Aura of Dread, and Bash.|nLasts 60 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Ramstein"
     }
   ]
 }
