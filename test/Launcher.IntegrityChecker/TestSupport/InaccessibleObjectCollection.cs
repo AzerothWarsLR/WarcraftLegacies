@@ -91,10 +91,19 @@ public sealed class InaccessibleObjectCollection(
         RemoveWithChildren(ability);
       }
 
-
       foreach (var ability in unit.AbilitiesHero)
       {
         RemoveWithChildren(ability);
+      }
+
+      foreach (var item in unit.TechtreeItemsSold)
+      {
+        RemoveWithChildren(item);
+      }
+
+      foreach (var item in unit.TechtreeItemsMade)
+      {
+        RemoveWithChildren(item);
       }
     }
     catch (Exception ex)
