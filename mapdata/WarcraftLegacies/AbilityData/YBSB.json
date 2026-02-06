@@ -1,0 +1,86 @@
+{
+  "OldId": 1718832961,
+  "NewId": 1112752729,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "ngz2"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "Redc"
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Bear"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Bear"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a bear with Bash to fight the druid\u0027s enemies.|nLasts \u003CYBSB,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druid of the Claw)"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,slam"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGrizzlyBear.blp"
+    }
+  ]
+}
