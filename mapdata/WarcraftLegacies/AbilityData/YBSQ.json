@@ -1,0 +1,51 @@
+{
+  "OldId": 1903382081,
+  "NewId": 1364410969,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 828733256,
+      "Type": 3,
+      "Value": "nqb4"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Rexxar)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Quilbeast"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a \u003Cnqb4,realHP\u003E hit point quilbeast to fling spines at the caster\u0027s enemies. |nLasts \u003CYBSQ,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}
