@@ -1,0 +1,101 @@
+{
+  "OldId": 1718832961,
+  "NewId": 1381188185,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "u00T"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 1
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Ramstein"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Ramstein"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons Ramstein the Gorger, a mighty abomination.|nHas Frenzy, Cleaving Attack, Aura of Dread, and Bash.|nLasts 60 seconds."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,slam"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Baron Rivendare)"
+    }
+  ]
+}
