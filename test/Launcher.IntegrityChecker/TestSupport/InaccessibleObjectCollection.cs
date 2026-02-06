@@ -1035,6 +1035,15 @@ public sealed class InaccessibleObjectCollection(
 
             break;
           }
+        case Inferno inferno:
+          {
+            for (var i = 1; i <= inferno.StatsLevels; i++)
+            {
+              RemoveWithChildren(inferno.DataSummonedUnit[i]);
+            }
+
+            break;
+          }
         case TichondriusInferno tichondriusInferno:
           {
             for (var i = 1; i <= tichondriusInferno.StatsLevels; i++)
@@ -1156,6 +1165,15 @@ public sealed class InaccessibleObjectCollection(
                 RemoveWithChildren(spell);
               }
 
+            }
+
+            break;
+          }
+        case CryptLordCarrionScarabs carrionScarabs:
+          {
+            for (var i = 1; i <= carrionScarabs.StatsLevels; i++)
+            {
+                RemoveWithChildren(carrionScarabs.DataUnitTypeOne[i]);
             }
 
             break;
