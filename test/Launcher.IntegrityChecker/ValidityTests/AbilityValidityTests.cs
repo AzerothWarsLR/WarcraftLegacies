@@ -68,6 +68,10 @@ public sealed class AbilityValidityTests(MapTestFixture mapTestFixture) : IClass
       RokhanVoodooSpirits => false,
       SummonLobstrokPrawns => false,
       WateryMinionItem => false,
+      RexxarSummonBear => false,
+      RexxarSummonQuilbeast => false,
+      FeralSpiritSpiritBeast => false,
+      FeralSpiritAkama => false,
       _ => true
     };
   }
