@@ -447,10 +447,7 @@ public sealed class InaccessibleObjectCollection(
           {
             for (var i = 1; i <= farseerSpiritWolf.StatsLevels; i++)
             {
-              if (farseerSpiritWolf.IsDataSummonedUnitModified[i])
-              {
-                RemoveWithChildren(farseerSpiritWolf.DataSummonedUnit[i]);
-              }
+              RemoveWithChildren(farseerSpiritWolf.DataSummonedUnit[i]);
             }
 
             break;
