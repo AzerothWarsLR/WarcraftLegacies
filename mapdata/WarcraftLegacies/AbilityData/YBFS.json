@@ -1,33 +1,19 @@
 {
-  "OldId": 930300737,
-  "NewId": 1213018177,
+  "OldId": 1718832961,
+  "NewId": 1397113433,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 30
+      "Id": 1986358369,
+      "Value": 4
     },
     {
       "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 30
-    },
-    {
-      "Level": 3,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 30
-    },
-    {
-      "Level": 4,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 30
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 3
     },
     {
       "Level": 3,
@@ -42,10 +28,6 @@
       "Value": 5
     },
     {
-      "Id": 1986358369,
-      "Value": 4
-    },
-    {
       "Level": 1,
       "Id": 828797775,
       "Type": 3,
@@ -58,23 +40,56 @@
       "Value": "osw3"
     },
     {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
       "Level": 2,
-      "Pointer": 2,
-      "Id": 845574991,
-      "Value": 3
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Thrall)"
+      "Value": "(Thrall/Nobundo)"
     },
     {
-      "Id": 2037082209,
+      "Id": 1802007137,
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1802007137,
+      "Id": 2037082209,
       "Type": 3,
       "Value": "W"
     },
@@ -111,25 +126,33 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 2 Shadow wolves."
+      "Value": "Summons \u003CYBFS,DataB1\u003E Shadow wolves."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 3 Shadow wolves."
+      "Value": "Summons \u003CYBFS,DataB2\u003E Shadow wolves."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 4 Shadow wolves."
+      "Value": "Summons \u003CYBFS,DataB3\u003E Shadow wolves."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 5 Shadow wolves."
+      "Value": "Summons \u003CYBFS,DataB4\u003E Shadow wolves."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
     }
   ]
 }
