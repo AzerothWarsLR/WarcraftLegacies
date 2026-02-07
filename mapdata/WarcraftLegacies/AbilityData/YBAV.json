@@ -1,57 +1,18 @@
 {
-  "OldId": 930300737,
-  "NewId": 859189313,
+  "OldId": 1718832961,
+  "NewId": 1447117401,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1718968929,
+      "Id": 1667330657,
       "Type": 3,
-      "Value": "B02N"
+      "Value": "nightelf"
     },
     {
-      "Level": 2,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B02N"
-    },
-    {
-      "Level": 3,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B02N"
-    },
-    {
-      "Level": 4,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B02N"
-    },
-    {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 3,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 4,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
+      "Id": 1986358369,
+      "Value": 4
     },
     {
       "Level": 2,
@@ -72,15 +33,6 @@
       "Value": 5
     },
     {
-      "Id": 1986358369,
-      "Value": 4
-    },
-    {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "nightelf"
-    },
-    {
       "Level": 1,
       "Id": 828797775,
       "Type": 3,
@@ -105,19 +57,67 @@
       "Value": "espv"
     },
     {
-      "Id": 1953653089,
+      "Level": 1,
+      "Id": 1718968929,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+      "Value": "B02N"
     },
     {
-      "Id": 1718840929,
+      "Level": 2,
+      "Id": 1718968929,
       "Type": 3,
-      "Value": "(Light Blue - Maiev)"
+      "Value": "B02N"
     },
     {
-      "Id": 2037082209,
+      "Level": 3,
+      "Id": 1718968929,
       "Type": 3,
-      "Value": "W"
+      "Value": "B02N"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B02N"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 100
     },
     {
       "Id": 1835101793,
@@ -125,14 +125,37 @@
       "Value": "Avatar of Vengeance"
     },
     {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
     },
     {
-      "Id": 1802007137,
+      "Id": 1718840929,
       "Type": 3,
-      "Value": "W"
+      "Value": "(Maiev)"
     },
     {
       "Id": 1952805473,
@@ -148,49 +171,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 1|r]"
+      "Value": "Avatar of Vengeance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 2|r]"
+      "Value": "Avatar of Vengeance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 3|r]"
+      "Value": "Avatar of Vengeance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 4|r]"
+      "Value": "Avatar of Vengeance - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 2 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CYBAV,DataB1\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 3 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CYBAV,DataB2\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 4 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CYBAV,DataB3\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 5 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CYBAV,DataB4\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }
