@@ -1,5 +1,6 @@
 {
   "OldId": 862287726,
+  "NewId": 1244737646,
   "Unk": [
     0
   ],
@@ -36,12 +37,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Level 3)(Frostwolf-Warsong)"
+      "Value": "(Level 3)(Rexxar)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Hawk"
+      "Value": "Spirit"
     }
   ]
 }
