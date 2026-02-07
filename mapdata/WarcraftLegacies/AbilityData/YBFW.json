@@ -1,20 +1,28 @@
 {
-  "OldId": 1903391297,
-  "NewId": 1381314625,
+  "OldId": 1903382081,
+  "NewId": 1464222297,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 35
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1935895905,
-      "Value": 125
+      "Id": 828733256,
+      "Type": 3,
+      "Value": "n08K"
     },
     {
       "Level": 1,
@@ -24,13 +32,15 @@
     },
     {
       "Level": 1,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 60
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
     },
     {
-      "Id": 1919248481,
-      "Value": 0
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
     },
     {
       "Level": 1,
@@ -39,44 +49,25 @@
       "Value": 60
     },
     {
-      "Id": 1986358369,
-      "Value": 1
-    },
-    {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "nightelf"
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 60
     },
     {
       "Level": 1,
-      "Id": 828733256,
-      "Type": 3,
-      "Value": "n08K"
-    },
-    {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDireWolf.blp"
+      "Id": 1935895905,
+      "Value": 125
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Brown Cenarius)"
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "W"
+      "Value": "(Cenarius)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
       "Value": "Call of the Feral Wolves"
-    },
-    {
-      "Id": 1802007137,
-      "Type": 3,
-      "Value": "W"
     },
     {
       "Level": 1,
@@ -89,6 +80,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDireWolf.blp"
     }
   ]
 }
