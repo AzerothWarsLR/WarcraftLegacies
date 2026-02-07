@@ -1,0 +1,107 @@
+{
+  "OldId": 1718832961,
+  "NewId": 1296908889,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "n04J"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B040"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 220
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R027"
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 1
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Minion"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Minion"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Eredar Summoner)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an Imp. Has \u003Cn04J,realHP\u003E hit points and deals \u003Cn04J,mindmg1\u003E - \u003Cn04J,maxdmg1\u003E damage. |nLasts \u003CA0AT,Dur1\u003E seconds.|n|n|cfff5962dAbilities:|R Mana Burn, Feedback, Spell Resistance |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNHell Imp.blp"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,slam"
+    }
+  ]
+}
