@@ -333,12 +333,8 @@ public sealed class InaccessibleObjectCollection(
           {
             for (var i = 1; i <= corporealForm.StatsLevels; i++)
             {
-              if (!corporealForm.IsDataAlternateFormUnitModified[i])
-              {
-                continue;
-              }
-
               RemoveWithChildren(corporealForm.DataAlternateFormUnit[i]);
+              RemoveWithChildren(corporealForm.DataNormalFormUnit[i]);
             }
 
             break;
