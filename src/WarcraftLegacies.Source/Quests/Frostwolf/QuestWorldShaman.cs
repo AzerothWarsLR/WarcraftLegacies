@@ -25,7 +25,7 @@ public sealed class QuestWorldShaman : QuestData
     _thrall = thrall;
     var controlPoints = new List<ControlPoint>
     {
-      ControlPointManager.Instance.GetFromUnitType(UNIT_N028_DROWNED_REACHES),
+      ControlPointManager.Instance.GetFromUnitType(UNIT_N028_MAELSTROM),
       ControlPointManager.Instance.GetFromUnitType(UNIT_N05Y_AZSUNA),
       ControlPointManager.Instance.GetFromUnitType(UNIT_N032_SURAMAR),
       ControlPointManager.Instance.GetFromUnitType(UNIT_N053_VAL_SHARAH),
