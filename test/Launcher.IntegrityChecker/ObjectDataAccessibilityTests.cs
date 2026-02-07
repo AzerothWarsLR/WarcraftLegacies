@@ -23,6 +23,11 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
       return;
     }
 
+    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    {
+      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
+    }
+
     var exceptions = new HashSet<string>
     {
       "Robk"
@@ -57,6 +62,11 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
       return;
     }
 
+    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    {
+      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
+    }
+
     var unitsToCheck = mapTestFixture.InaccessibleObjects.Units.ToList();
 
     if (unitsToCheck.Count <= 0)
@@ -82,6 +92,11 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
     if (mapTestFixture.InaccessibleObjects.Abilities.Count <= 0)
     {
       return;
+    }
+
+    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    {
+      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
     }
 
     var abilitiesToCheck = mapTestFixture.InaccessibleObjects.Abilities.ToList();
@@ -111,6 +126,11 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
     if (unplacedDoodads.Count <= 0)
     {
       return;
+    }
+
+    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    {
+      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
     }
 
     var exceptionMessageBuilder = new StringBuilder();
