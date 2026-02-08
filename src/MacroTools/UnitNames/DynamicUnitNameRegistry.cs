@@ -43,25 +43,18 @@ public static class DynamicUnitNameRegistry
     foreach (var kvp in _pools)
     {
       var unitType = kvp.Key;
-      NamePool pool = kvp.Value;
+      var pool = kvp.Value;
 
-      List<unit> preplacedUnits;
+
       try
       {
-        preplacedUnits = AllPreplacedWidgets.Units.GetAll(unitType);
-      }
-      catch (KeyNotFoundException)
-      {
-        continue;
-      }
-
-      foreach (var unit in preplacedUnits)
-      {
-        if (true)
+        var preplacedUnits = AllPreplacedWidgets.Units.GetAll(unitType);
+        foreach (var preplacedUnit in preplacedUnits)
         {
-          pool.TryAssign(unit);
+          pool.TryAssign(preplacedUnit);
         }
       }
+      catch (KeyNotFoundException) { }
     }
   }
 }
