@@ -29,29 +29,29 @@ public sealed class Forfeit : Command
     {
       return "You are not on a team.";
     }
-
+    ///gets total votes for the team.
     if (!_ffVotesByTeam.TryGetValue(team, out var votes))
     {
       votes = new HashSet<player>();
       _ffVotesByTeam[team] = votes;
     }
-
+    ///checks if the user has already voted
     if (!votes.Add(commandUser))
     {
       return "You have already voted to forfeit.";
     }
     int currentVotes = votes.Count;
-
+    ///Displays who voted to ff and how many votes there are.
     team.DisplayText(
         $"{commandUser.Name} voted to forfeit ({currentVotes}/{VotesRequired})."
     );
-
+    ///Ends the game if the required amount of votes is reached.
     if (currentVotes >= VotesRequired)
     {
       team.DisplayText("Forfeit vote passed.");
       EndGame(true);
     }
-
+    ///just confirms the vote was registered.
     return "Forfeit vote registered.";
   }
 }
