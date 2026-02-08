@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using WCSharp.Events;
 using MacroTools.PreplacedWidgets;
 
@@ -19,24 +18,6 @@ public static class DynamicUnitNameRegistry
         }
 
         AssignNamesToPreplacedUnits();
-
-        foreach (var kvp in _pools)
-        {
-            int unitType = kvp.Key;
-            try
-            {
-                var units = AllPreplacedWidgets.Units.GetAll(unitType);
-                Console.WriteLine($"DEBUG: Found {units.Count} preplaced units of type {unitType}");
-                foreach (var u in units)
-                {
-                    Console.WriteLine($"DEBUG: Preplaced unit name='{u.Name}', type={u.UnitType}");
-                }
-            }
-            catch (KeyNotFoundException)
-            {
-                Console.WriteLine($"DEBUG: No preplaced units for type {unitType}");
-            }
-        }
     }
 
     private static void OnUnitCreated()
