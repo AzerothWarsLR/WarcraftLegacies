@@ -19,6 +19,7 @@ public static class CommandSetup
     commandManager.Register(new GiveGold("givegold"));
     commandManager.Register(new GiveGold("gold"));
     commandManager.Register(new GiveGold("g"));
+    commandManager.Register(new Forfeit());
     commandManager.Register(new Observer());
     commandManager.CreateInfoQuest();
   }
