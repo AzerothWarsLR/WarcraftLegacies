@@ -1,5 +1,4 @@
 ﻿using MacroTools.Cinematics;
-using MacroTools.Commands;
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
@@ -42,9 +41,8 @@ public static class GameSetup
     ControlPointSetup.Setup();
     InstanceSetup.Setup();
     NeutralHostileSetup.Setup();
-    var commandManager = new CommandManager();
-    CommandSetup.Setup(commandManager);
-    CheatSetup.Setup(commandManager);
+    CommandSetup.Setup();
+    CheatSetup.Setup();
     TeamSetup.Setup();
     PlayerSetup.Setup();
     FactionChoiceDialogSetup.Setup();

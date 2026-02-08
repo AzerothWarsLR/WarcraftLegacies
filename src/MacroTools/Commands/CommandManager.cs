@@ -9,10 +9,10 @@ namespace MacroTools.Commands;
 /// <summary>
 /// Responsible for managing all <see cref="Command"/>s in the game.
 /// </summary>
-public sealed class CommandManager
+public static class CommandManager
 {
   private const string CommandColor = "cffD27575";
-  private readonly List<Command> _registeredCommands = new();
+  private static readonly List<Command> _registeredCommands = new();
 
   /// <summary>
   /// All <see cref="Command"/>s must be prefixed with this when entered into the chat.
@@ -22,12 +22,12 @@ public sealed class CommandManager
   /// <summary>
   /// Returns all registered <see cref="Command"/>s.
   /// </summary>
-  public ReadOnlyCollection<Command> GetAllCommands() => _registeredCommands.AsReadOnly();
+  public static ReadOnlyCollection<Command> GetAllCommands() => _registeredCommands.AsReadOnly();
 
   /// <summary>
   /// Registers a <see cref="Command"/>, allowing it to be fired when a player executes its command in the chat.
   /// </summary>
-  public void Register(Command command)
+  public static void Register(Command command)
   {
     _registeredCommands.Add(command);
     command.OnRegister();
@@ -67,7 +67,7 @@ public sealed class CommandManager
   }
 
   /// <summary>Creates a dummy quest that players can read to see the available commands.</summary>
-  public void CreateInfoQuest()
+  public static void CreateInfoQuest()
   {
     var commandQuest = quest.Create();
     commandQuest.SetTitle("Commands");
