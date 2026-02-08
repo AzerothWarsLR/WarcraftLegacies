@@ -6,7 +6,7 @@ using MacroTools.Factions;
 namespace WarcraftLegacies.Source.Commands;
 
 /// <summary>
-/// A <see cref="Command"/> that sets the player's camera to a specific height.
+/// A <see cref="Command"/> that allows a player to vote to forfeit a game.
 /// </summary>
 /// 
 public sealed class Forfeit : Command
