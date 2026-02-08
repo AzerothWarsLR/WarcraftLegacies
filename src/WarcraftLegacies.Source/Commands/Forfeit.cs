@@ -23,35 +23,28 @@ public sealed class Forfeit : Command
   public override string Execute(player commandUser, params string[] parameters)
   {
     var team = commandUser.GetPlayerData().Team;
-
-    ///this should be impossible i guess but u never know!
     if (team == null)
     {
       return "You are not on a team.";
     }
-    ///gets total votes for the team.
     if (!_ffVotesByTeam.TryGetValue(team, out var votes))
     {
       votes = new HashSet<player>();
       _ffVotesByTeam[team] = votes;
     }
-    ///checks if the user has already voted
     if (!votes.Add(commandUser))
     {
       return "You have already voted to forfeit.";
     }
     var currentVotes = votes.Count;
-    ///Displays who voted to ff and how many votes there are.
     team.DisplayText(
         $"{commandUser.Name} voted to forfeit ({currentVotes}/{VotesRequired})."
     );
-    ///Ends the game if the required amount of votes is reached.
     if (currentVotes >= VotesRequired)
     {
       team.DisplayText("Forfeit vote passed.");
       EndGame(true);
     }
-    ///just confirms the vote was registered.
     return "Forfeit vote registered.";
   }
 }
