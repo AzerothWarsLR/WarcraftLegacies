@@ -1,0 +1,107 @@
+{
+  "OldId": 1701079122,
+  "NewId": 1413765458,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 0
+    },
+    {
+      "Id": 1651338343,
+      "Value": 5
+    },
+    {
+      "Id": 1651078247,
+      "Value": 20
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 828794215,
+      "Type": 3,
+      "Value": "ratr"
+    },
+    {
+      "Id": 828465767,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": 845571431,
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Level": 1,
+      "Id": 1902473831,
+      "Type": 3,
+      "Value": "n055"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNObsidianBoulder.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Illidari)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Heavy Boulders"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Heavy Boulders"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Dragon Turtles by increasing their attack range by 200 and attack damage by 15."
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    }
+  ]
+}

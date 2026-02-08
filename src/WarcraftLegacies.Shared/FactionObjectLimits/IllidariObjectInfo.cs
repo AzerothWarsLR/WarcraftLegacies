@@ -13,7 +13,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_N04T_BETRAYER_S_SPIRE_ILLIDARI_T2, Unlimited, TownHall);
     yield return new(UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3, Unlimited, TownHall);
     yield return new(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR, Unlimited, Altar);
-    yield return new(UNIT_NNSG_SPAWNERY_ILLIDARI_BARRACKS, Unlimited, Barracks);
+    yield return new(UNIT_NNSG_SPAWNING_GROUNDS_ILLIDARI_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_H06S_STEAMWORKS_ILLIDARI_RESEARCH, Unlimited, Research);
     yield return new(UNIT_N0A3_ARCHIVE_ILLIDARI_MAGIC, Unlimited, Magic);
     yield return new(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST, Unlimited, FlyingBuilding);
@@ -25,7 +25,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_E020_ANCIENT_SHIPYARD_ILLIDARI_SHIPYARD, Unlimited, Shipyard);
 
     yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, Worker);
-    yield return new(UNIT_NMYR_NAGA_MYRMIDON_ILLIDARI, Unlimited, Fighter);
+    yield return new(UNIT_NMYR_MYRMIDON_ILLIDARI, Unlimited, Fighter);
     yield return new(UNIT_NSNP_SNAP_DRAGON_ILLIDARI, Unlimited, Marksman);
     yield return new(UNIT_NNSW_SIREN_ILLIDARI, Unlimited, Support);
     yield return new(UNIT_NMSC_SHADOWCASTER_ILLIDARI, Unlimited, Support);
@@ -53,6 +53,9 @@ public static class IllidariObjectInfo
     yield return new(UPGRADE_YBPH_KINGSLAYER_ILLIDARI, Unlimited);
     yield return new(UPGRADE_R017_SIPHON_MANA_ILLIDARI, Unlimited);
     yield return new(UPGRADE_R00H_FEEDBACK_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_RYEN_ENSNARE_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_RYDT_HEAVY_BOULDERS_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_RYSP_IMPROVED_SLOW_POISON_ILLIDARI, Unlimited);
 
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, new List<UnitCategory> { Support, Summoner });

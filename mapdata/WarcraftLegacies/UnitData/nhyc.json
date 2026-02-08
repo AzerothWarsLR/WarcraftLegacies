@@ -102,7 +102,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "R043,Rhme,Rhar"
+      "Value": "RYDT,Rhme,Rhar"
     },
     {
       "Id": 1852137845,
@@ -195,11 +195,6 @@
       "Id": 1668510581,
       "Type": 1,
       "Value": 3
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Large turtle of old, exceptional damage buildings.  "
     },
     {
       "Id": 845245813,
