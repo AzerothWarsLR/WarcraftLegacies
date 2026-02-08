@@ -7,7 +7,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Aens,A10B,A0CH,Aihn"
+      "Value": "YBEN,A10B,A0CH,Aihn"
     },
     {
       "Id": 1717920885,
@@ -41,7 +41,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rguv,Rhme,Rhar"
+      "Value": "Rguv,Rhme,Rhar,RYEN"
     },
     {
       "Id": 1836412021,
@@ -85,14 +85,9 @@
       "Value": 0.85
     },
     {
-      "Id": 1651864693,
+      "Id": 1835101813,
       "Type": 3,
-      "Value": "Powerful warrior of the depths."
-    },
-    {
-      "Id": 1935827317,
-      "Type": 3,
-      "Value": "ANen"
+      "Value": "Myrmidon"
     }
   ]
 }
