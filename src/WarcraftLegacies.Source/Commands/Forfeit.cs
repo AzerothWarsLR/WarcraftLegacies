@@ -40,7 +40,7 @@ public sealed class Forfeit : Command
     {
       return "You have already voted to forfeit.";
     }
-    int currentVotes = votes.Count;
+    var currentVotes = votes.Count;
     ///Displays who voted to ff and how many votes there are.
     team.DisplayText(
         $"{commandUser.Name} voted to forfeit ({currentVotes}/{VotesRequired})."
