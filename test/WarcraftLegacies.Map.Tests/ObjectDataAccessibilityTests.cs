@@ -10,22 +10,22 @@ namespace WarcraftLegacies.Map.Tests;
 public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
   [Fact]
-  public void InaccessibleObjectCollection_HasNoExceptions()
+  public void UnreachableObjectCollection_HasNoExceptions()
   {
-    mapTestFixture.InaccessibleObjects.Exceptions.Should().BeEmpty();
+    mapTestFixture.UnreachableObjects.Exceptions.Should().BeEmpty();
   }
 
   [Fact]
   public void AllResearches_CanBeAccessed()
   {
-    if (mapTestFixture.InaccessibleObjects.Upgrades.Count <= 0)
+    if (mapTestFixture.UnreachableObjects.Upgrades.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
     var exceptions = new HashSet<string>
@@ -33,7 +33,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
       "Robk"
     };
 
-    var upgradesToCheck = mapTestFixture.InaccessibleObjects.Upgrades
+    var upgradesToCheck = mapTestFixture.UnreachableObjects.Upgrades
       .Where(upgrade => !exceptions.Contains(GetReadableId(upgrade)))
       .ToList();
 
@@ -57,17 +57,17 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllUnits_CanBeTrained()
   {
-    if (mapTestFixture.InaccessibleObjects.Units.Count <= 0)
+    if (mapTestFixture.UnreachableObjects.Units.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
-    var unitsToCheck = mapTestFixture.InaccessibleObjects.Units.ToList();
+    var unitsToCheck = mapTestFixture.UnreachableObjects.Units.ToList();
 
     if (unitsToCheck.Count <= 0)
     {
@@ -89,17 +89,17 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllAbilities_CanBeCast()
   {
-    if (mapTestFixture.InaccessibleObjects.Abilities.Count <= 0)
+    if (mapTestFixture.UnreachableObjects.Abilities.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
-    var abilitiesToCheck = mapTestFixture.InaccessibleObjects.Abilities.ToList();
+    var abilitiesToCheck = mapTestFixture.UnreachableObjects.Abilities.ToList();
 
     if (abilitiesToCheck.Count <= 0)
     {
@@ -121,16 +121,16 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllDoodads_ArePlaced()
   {
-    var unplacedDoodads = mapTestFixture.InaccessibleObjects.Doodads;
+    var unplacedDoodads = mapTestFixture.UnreachableObjects.Doodads;
 
     if (unplacedDoodads.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.InaccessibleObjects.Exceptions.Count != 0)
+    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the InaccessibleObjectCollection.");
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
     var exceptionMessageBuilder = new StringBuilder();

@@ -19,6 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\src\Warcraft.Integrity\Warcraft.Integrity.csproj" />
       <ProjectReference Include="..\..\src\WarcraftLegacies.CLI\WarcraftLegacies.CLI.csproj" />
     </ItemGroup>
 

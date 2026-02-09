@@ -20,6 +20,9 @@ Library code intended to be consumed by both Warcraft.Cartographer-based CLIs an
 ### Warcraft.Cartographer
 Library built on [War3Net](https://github.com/Drake53/War3Net) providing advanced tools for serializing, deserializing, compiling, and postprocessing Warcraft 3 maps.
 
+### Warcraft.Integrity
+Library built on [War3Api.Object](https://github.com/Drake53/War3Api/tree/master/src/War3Api.Object) providing tools for assessing the data integrity of Warcraft 3 maps.
+
 ### WarcraftLegacies.CLI
 Command line executable that leverages Warcraft.Cartographer to support the editing, testing, and publishing of Warcraft Legacies.
 
