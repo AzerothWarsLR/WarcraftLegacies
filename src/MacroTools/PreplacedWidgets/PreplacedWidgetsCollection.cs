@@ -32,6 +32,11 @@ public abstract class PreplacedWidgetCollection<T> where T : widget
       : throw new InvalidOperationException($"There are multiple preplaced widgets with id {FourCc.GetString(typeId)}.");
   }
 
+  public bool TryGetAll(int typeId, out List<T> widgets)
+  {
+    return _widgetsByTypeId.TryGetValue(typeId, out widgets);
+  }
+
   /// <summary>
   /// Gets all preplaced <see cref="widget"/> instances with the specified type id.
   /// </summary>

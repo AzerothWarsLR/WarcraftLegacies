@@ -12,12 +12,14 @@ public static class DynamicUnitNameRegistry
   {
     foreach (var kvp in nameData)
     {
-      _pools[kvp.Key] = new NamePool(kvp.Value);
+      var pool = new NamePool(kvp.Value);
+      _pools[kvp.Key] = pool;
+
       PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, kvp.Key);
       PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, kvp.Key);
-    }
 
-    AssignNamesToPreplacedUnits();
+      AssignNamesToPreplacedUnits(kvp.Key, pool);
+    }
   }
 
   private static void OnUnitCreated()
@@ -38,22 +40,17 @@ public static class DynamicUnitNameRegistry
     }
   }
 
-  private static void AssignNamesToPreplacedUnits()
+  private static void AssignNamesToPreplacedUnits(int unitType, NamePool pool)
   {
-    foreach (var (unitType, pool) in _pools)
+
+    if (!AllPreplacedWidgets.Units.TryGetAll(unitType, out var preplacedUnits))
     {
-      try
-      {
-        var preplacedUnits = AllPreplacedWidgets.Units.GetAll(unitType);
-        foreach (var preplacedUnit in preplacedUnits)
-        {
-          pool.TryAssign(preplacedUnit);
-        }
-      }
-      catch (KeyNotFoundException)
-      {
-      }
+      return;
     }
+
+    foreach (var preplacedUnit in preplacedUnits) {
+          pool.TryAssign(preplacedUnit); }
   }
+
 }
 
