@@ -9,6 +9,6 @@
     <Project Path="src/WarcraftLegacies.Source/WarcraftLegacies.Source.csproj" />
   </Folder>
   <Folder Name="/test/">
-    <Project Path="test/Launcher.IntegrityChecker/Launcher.IntegrityChecker.csproj" />
+    <Project Path="test\WarcraftLegacies.Map.Tests\WarcraftLegacies.Map.Tests.csproj" />
   </Folder>
 </Solution>

@@ -28,3 +28,6 @@ Game code shared between WarcraftLegacies.CLI and WarcraftLegacies.Source, to su
 
 ### WarcraftLegacies.Source
 Code specific to Warcraft: Legacies, which gets compiled into Lua before being executed during the map's runtime.
+
+### WarcraftLegacies.Map.Tests
+Tests that ensure the Warcraft Legacies map contains valid data, and that it is in accordance with our game principles.

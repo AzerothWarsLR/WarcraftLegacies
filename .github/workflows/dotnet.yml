@@ -30,12 +30,13 @@ jobs:
                     failOnIssue: 1
                     include: |
                         ./src/MacroTools/**
+                        ./src/Warcraft.Cartographer/**
+                        ./src/WarcraftLegacies.CLI/**
                         ./src/WarcraftLegacies.Source/**
-                        ./src/Launcher/**
-                        ./src/TestMap/**
+                        ./src/WarcraftLegacies.Map.Tests/**
                     solutionWideAnalysis: false
                     
-    Integrity-Check:
+    Test:
         runs-on: windows-latest
         steps:
             -   uses: actions/checkout@v6

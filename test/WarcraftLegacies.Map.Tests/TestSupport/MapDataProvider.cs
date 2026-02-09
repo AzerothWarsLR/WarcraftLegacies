@@ -1,15 +1,14 @@
-﻿using War3Net.Build;
-using Warcraft.Cartographer.Deserialization;
+﻿using Warcraft.Cartographer.Deserialization;
 using Warcraft.Cartographer.Paths;
 using WarcraftLegacies.CLI.Settings;
 
-namespace Launcher.IntegrityChecker.TestSupport;
+namespace WarcraftLegacies.Map.Tests.TestSupport;
 
 public static class MapDataProvider
 {
-  private static (Map, IEnumerable<PathData>)? _mapData;
+  private static (War3Net.Build.Map, IEnumerable<PathData>)? _mapData;
 
-  public static (Map Map, IEnumerable<PathData> AdditionalFiles) GetMapData()
+  public static (War3Net.Build.Map Map, IEnumerable<PathData> AdditionalFiles) GetMapData()
   {
     {
       if (_mapData != null)

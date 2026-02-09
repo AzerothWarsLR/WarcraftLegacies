@@ -1,11 +1,11 @@
 ﻿using System.Text;
 using FluentAssertions;
-using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using War3Net.Common.Extensions;
+using WarcraftLegacies.Map.Tests.TestSupport;
 using Xunit.Sdk;
 
-namespace Launcher.IntegrityChecker;
+namespace WarcraftLegacies.Map.Tests;
 
 public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {

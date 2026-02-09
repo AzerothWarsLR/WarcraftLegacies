@@ -1,8 +1,8 @@
-﻿using Launcher.IntegrityChecker.Exceptions;
-using War3Api.Object;
+﻿using War3Api.Object;
 using War3Api.Object.Abilities;
+using WarcraftLegacies.Map.Tests.Exceptions;
 
-namespace Launcher.IntegrityChecker.TestSupport;
+namespace WarcraftLegacies.Map.Tests.TestSupport;
 
 /// <summary>
 /// Contains <see cref="BaseObject"/>s that are inaccessible to the game.
