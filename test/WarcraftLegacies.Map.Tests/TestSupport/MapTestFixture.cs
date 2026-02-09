@@ -1,12 +1,11 @@
 ﻿using System.Text;
 using War3Api.Object;
-using War3Net.Build;
 using War3Net.CodeAnalysis.Jass.Extensions;
 using Warcraft.Cartographer.Deserialization;
 using Warcraft.Cartographer.Extensions;
 using WarcraftLegacies.CLI.Settings;
 
-namespace Launcher.IntegrityChecker.TestSupport;
+namespace WarcraftLegacies.Map.Tests.TestSupport;
 
 /// <summary>
 /// Provides a fully constructed Warcraft Legacies map.
@@ -18,7 +17,7 @@ public sealed class MapTestFixture
       Units.UNIT_U00X_DUMMY_CASTER
   ];
 
-  public Map Map { get; }
+  public War3Net.Build.Map Map { get; }
 
   public ObjectDatabase ObjectDatabase { get; }
 

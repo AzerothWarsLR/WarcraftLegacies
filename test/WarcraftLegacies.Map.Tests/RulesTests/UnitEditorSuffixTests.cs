@@ -1,9 +1,9 @@
 ﻿using System.Text;
-using Launcher.IntegrityChecker.TestSupport;
 using Warcraft.Cartographer.Extensions;
+using WarcraftLegacies.Map.Tests.TestSupport;
 using Xunit.Sdk;
 
-namespace Launcher.IntegrityChecker.RulesTests;
+namespace WarcraftLegacies.Map.Tests.RulesTests;
 
 public sealed class UnitEditorSuffixTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
