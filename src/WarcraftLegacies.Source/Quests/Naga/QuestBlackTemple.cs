@@ -47,7 +47,7 @@ public sealed class QuestBlackTemple : QuestData
   public override string RewardFlavour => "Illidan returns triumphant to Black Temple, the seat of his power. The orcs and demons of Outland hail his coming.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, and abandon your base in the Broken Isles";
+  protected override string RewardDescription => "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, abandon your base in the Broken Isles, and Illidan learns to cast Portal to Black Temple";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
