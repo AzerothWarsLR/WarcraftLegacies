@@ -3,6 +3,7 @@ using War3Api.Object;
 using War3Net.CodeAnalysis.Jass.Extensions;
 using Warcraft.Cartographer.Deserialization;
 using Warcraft.Cartographer.Extensions;
+using Warcraft.Integrity;
 using WarcraftLegacies.CLI.Settings;
 
 namespace WarcraftLegacies.Map.Tests.TestSupport;
@@ -23,7 +24,7 @@ public sealed class MapTestFixture
 
   public string UncompiledScript { get; }
 
-  public InaccessibleObjectCollection InaccessibleObjects { get; }
+  public UnreachableObjectCollection UnreachableObjects { get; }
 
   public MapTestFixture()
   {
@@ -47,57 +48,57 @@ public sealed class MapTestFixture
 
     UncompiledScript = scriptBuilder.ToString();
 
-    InaccessibleObjects = GetInaccessibleObjects();
+    UnreachableObjects = GetUnreachableObjects();
   }
 
-  private InaccessibleObjectCollection GetInaccessibleObjects()
+  private UnreachableObjectCollection GetUnreachableObjects()
   {
-    var inaccessibleObjects = new InaccessibleObjectCollection(
+    var unreachableObjects = new UnreachableObjectCollection(
       ObjectDatabase.GetUnits().Where(u => !IsUtilityUnit(u)).ToList(),
       ObjectDatabase.GetUpgrades().ToList(),
       ObjectDatabase.GetAbilities().ToList(),
       ObjectDatabase.GetItems().ToList(),
       ObjectDatabase.GetDoodads().ToList());
 
-    RemovePreplacedUnits(inaccessibleObjects);
-    RemovePreplacedDoodads(inaccessibleObjects);
+    RemovePreplacedUnits(unreachableObjects);
+    RemovePreplacedDoodads(unreachableObjects);
 
-    var objectsInScript = inaccessibleObjects
+    var objectsInScript = unreachableObjects
       .GetAllObjects()
       .Where(x => UncompiledScript.Contains(x.GetReadableId(), StringComparison.InvariantCultureIgnoreCase))
       .ToList();
 
     foreach (var objectInScript in objectsInScript)
     {
-      inaccessibleObjects.RemoveWithChildren(objectInScript);
+      unreachableObjects.RemoveWithChildren(objectInScript);
     }
 
-    return inaccessibleObjects;
+    return unreachableObjects;
   }
 
   /// <summary>
-  /// Identifies preplaced units on the map and removes them, and their children, from the <see cref="InaccessibleObjectCollection"/>.
+  /// Identifies preplaced units on the map and removes them, and their children, from the <see cref="UnreachableObjectCollection"/>.
   /// </summary>
-  private void RemovePreplacedUnits(InaccessibleObjectCollection inaccessibleObjects)
+  private void RemovePreplacedUnits(UnreachableObjectCollection unreachableObjects)
   {
     var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
     var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.GetId())).ToList();
     foreach (var preplacedUnit in preplacedUnitTypes)
     {
-      inaccessibleObjects.RemoveWithChildren(preplacedUnit);
+      unreachableObjects.RemoveWithChildren(preplacedUnit);
     }
   }
 
   /// <summary>
-  /// Identifies preplaced doodads on the map and removes them, and their children, from the <see cref="InaccessibleObjectCollection"/>.
+  /// Identifies preplaced doodads on the map and removes them, and their children, from the <see cref="UnreachableObjectCollection"/>.
   /// </summary>
-  private void RemovePreplacedDoodads(InaccessibleObjectCollection inaccessibleObjects)
+  private void RemovePreplacedDoodads(UnreachableObjectCollection unreachableObjects)
   {
     var preplacedDoodadIds = Map.Doodads!.Doodads.Select(x => x.TypeId).ToHashSet();
     var preplacedDoodadTypeIds = ObjectDatabase.GetDoodads().Where(x => preplacedDoodadIds.Contains(x.GetId())).ToList();
     foreach (var preplacedDoodadTypeId in preplacedDoodadTypeIds)
     {
-      inaccessibleObjects.RemoveWithChildren(preplacedDoodadTypeId);
+      unreachableObjects.RemoveWithChildren(preplacedDoodadTypeId);
     }
   }
 

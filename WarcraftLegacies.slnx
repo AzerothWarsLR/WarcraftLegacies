@@ -7,6 +7,7 @@
     <Project Path="src/WarcraftLegacies.CLI/WarcraftLegacies.CLI.csproj" />
     <Project Path="src/WarcraftLegacies.Shared/WarcraftLegacies.Shared.csproj" />
     <Project Path="src/WarcraftLegacies.Source/WarcraftLegacies.Source.csproj" />
+    <Project Path="src/Warcraft.Integrity/Warcraft.Integrity.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="test\WarcraftLegacies.Map.Tests\WarcraftLegacies.Map.Tests.csproj" />
