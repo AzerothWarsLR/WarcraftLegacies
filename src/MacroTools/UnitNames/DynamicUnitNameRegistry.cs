@@ -48,8 +48,10 @@ public static class DynamicUnitNameRegistry
       return;
     }
 
-    foreach (var preplacedUnit in preplacedUnits) {
-          pool.TryAssign(preplacedUnit); }
+    foreach (var preplacedUnit in preplacedUnits)
+    {
+      pool.TryAssign(preplacedUnit);
+    }
   }
 
 }
