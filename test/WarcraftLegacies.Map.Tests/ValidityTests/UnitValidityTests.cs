@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
-using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using Warcraft.Cartographer.Extensions;
+using WarcraftLegacies.Map.Tests.TestSupport;
 using Xunit.Sdk;
 
-namespace Launcher.IntegrityChecker.ValidityTests;
+namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
 public sealed class UnitValidityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {

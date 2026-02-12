@@ -7,7 +7,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rguv,Rhme,Rhar"
+      "Value": "RYSP,Rguv,Rhme,Rhar"
     },
     {
       "Id": 1836412021,
@@ -41,7 +41,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Adtg,Aien,Aspo"
+      "Value": "Adtg,Aien,YBSP"
     },
     {
       "Id": 1902473845,
@@ -65,6 +65,10 @@
       "Id": 1885693045,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1915838837,
+      "Value": 600
     },
     {
       "Id": 1953458293,

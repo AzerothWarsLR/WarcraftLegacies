@@ -1,0 +1,82 @@
+{
+  "OldId": 1701079122,
+  "NewId": 1313167698,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 845242983,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": 862020199,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 846160743,
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": 862937959,
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": 1651271527,
+      "Value": 0
+    },
+    {
+      "Id": 1651338343,
+      "Value": 5
+    },
+    {
+      "Id": 1651078247,
+      "Value": 20
+    },
+    {
+      "Id": 1667330663,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Illidari)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Ensnare"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Ensnare"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Allows Myrmidons to use Ensnare, which causes a target enemy unit to be bound to the ground."
+    }
+  ]
+}

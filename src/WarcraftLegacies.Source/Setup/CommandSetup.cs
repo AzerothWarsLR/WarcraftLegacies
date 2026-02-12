@@ -5,21 +5,21 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class CommandSetup
 {
-  public static void Setup(CommandManager commandManager)
+  public static void Setup()
   {
-    commandManager.Register(new Limited());
-    commandManager.Register(new Clear("clear"));
-    commandManager.Register(new Clear("c"));
-    commandManager.Register(new Cam());
-    commandManager.Register(new Captions());
-    commandManager.Register(new QuestText());
-    commandManager.Register(new Dialogue());
-    commandManager.Register(new Settings());
-    commandManager.Register(new Share());
-    commandManager.Register(new GiveGold("givegold"));
-    commandManager.Register(new GiveGold("gold"));
-    commandManager.Register(new GiveGold("g"));
-    commandManager.Register(new Observer());
-    commandManager.CreateInfoQuest();
+    CommandManager.Register(new Limited());
+    CommandManager.Register(new Clear("clear"));
+    CommandManager.Register(new Clear("c"));
+    CommandManager.Register(new Cam());
+    CommandManager.Register(new Captions());
+    CommandManager.Register(new QuestText());
+    CommandManager.Register(new Dialogue());
+    CommandManager.Register(new Settings());
+    CommandManager.Register(new Share());
+    CommandManager.Register(new GiveGold("givegold"));
+    CommandManager.Register(new GiveGold("gold"));
+    CommandManager.Register(new GiveGold("g"));
+    CommandManager.Register(new Observer());
+    CommandManager.CreateInfoQuest();
   }
 }

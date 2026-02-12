@@ -1,31 +1,54 @@
-﻿using Launcher.IntegrityChecker.Exceptions;
-using War3Api.Object;
+﻿using War3Api.Object;
 using War3Api.Object.Abilities;
 
-namespace Launcher.IntegrityChecker.TestSupport;
+namespace Warcraft.Integrity;
 
 /// <summary>
 /// Contains <see cref="BaseObject"/>s that are inaccessible to the game.
+/// <remarks>This should initially be populated with every object in the map file.</remarks>
 /// </summary>
-public sealed class InaccessibleObjectCollection(
+public sealed class UnreachableObjectCollection(
   List<Unit> units,
   List<Upgrade> upgrades,
   List<Ability> abilities,
   List<Item> items,
   List<Doodad> doodads)
 {
+  /// <summary>
+  /// Units which have not yet been marked as reachable.
+  /// </summary>
   public List<Unit> Units { get; } = units;
 
+  /// <summary>
+  /// Upgrades which have not yet been marked as reachable.
+  /// </summary>
   public List<Upgrade> Upgrades { get; } = upgrades;
 
+  /// <summary>
+  /// Abilities which have not yet been marked as reachable.
+  /// </summary>
   public List<Ability> Abilities { get; } = abilities;
 
+  /// <summary>
+  /// Items which have not yet been marked as reachable.
+  /// </summary>
   public List<Item> Items { get; } = items;
 
+  /// <summary>
+  /// Doodads which have not yet been marked as reachable.
+  /// </summary>
   public List<Doodad> Doodads { get; } = doodads;
 
+  /// <summary>
+  /// All exceptions which have accumulated over the course of removing objects from the collection.
+  /// </summary>
   public List<Exception> Exceptions { get; } = [];
 
+  /// <summary>
+  /// Remove an object, which is known to be unreachable, from the collection, along with all of its children.
+  /// <remarks>Public consumers should remove any object which is certain to be reachable based on information known
+  /// about the map, e.g. removing all unit types of preplaced units or all item types found in item drop tables.</remarks>
+  /// </summary>
   public void RemoveWithChildren(BaseObject baseObject)
   {
     switch (baseObject)
@@ -48,7 +71,11 @@ public sealed class InaccessibleObjectCollection(
     }
   }
 
-
+  /// <summary>
+  /// Remove an object, which is known to be unreachable, from the collection, along with all of its children.
+  /// <remarks>Public consumers should remove any object which is certain to be reachable based on information known
+  /// about the map, e.g. removing all unit types of preplaced units.</remarks>
+  /// </summary>
   public void RemoveWithChildren(Unit unit)
   {
     try
@@ -1258,7 +1285,6 @@ public sealed class InaccessibleObjectCollection(
       Exceptions.Add(new ObjectRemovalException(doodad, ex));
     }
   }
-
 
   /// <summary>
   /// Returns all <see cref="BaseObject"/>s in the collection.

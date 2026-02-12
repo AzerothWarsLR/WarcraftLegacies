@@ -22,11 +22,11 @@ public static class TestMode
     return name is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" or "Vampirika#2506" or "zbovo2#1599" or "Madsen#21847" || AreCheatsActive;
   }
 
-  private static void CreateInfoQuests(CommandManager commandManager)
+  private static void CreateInfoQuests()
   {
     var newQuest = quest.Create();
     newQuest.SetTitle("Cheats");
-    var description = commandManager.GetAllCommands().Aggregate("",
+    var description = CommandManager.GetAllCommands().Aggregate("",
       (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
     newQuest.SetDescription(description);
     newQuest.IsDiscovered = true;
@@ -38,14 +38,14 @@ public static class TestMode
   /// <summary>
   /// Sets up <see cref="TestMode"/>.
   /// </summary>
-  public static void Setup(CommandManager commandManager)
+  public static void Setup()
   {
     AreCheatsActive = Util.EnumeratePlayers().Count(player =>
       player.SlotState == playerslotstate.Playing && player.Controller == mapcontrol.User) < 2;
 
     if (AreCheatsActive)
     {
-      CreateInfoQuests(commandManager);
+      CreateInfoQuests();
     }
   }
 }

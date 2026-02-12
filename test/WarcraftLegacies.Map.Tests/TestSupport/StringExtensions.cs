@@ -1,4 +1,4 @@
-﻿namespace Launcher.IntegrityChecker.TestSupport;
+﻿namespace WarcraftLegacies.Map.Tests.TestSupport;
 
 public static class StringExtensions
 {

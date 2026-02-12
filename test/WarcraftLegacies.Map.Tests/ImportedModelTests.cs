@@ -1,10 +1,9 @@
 ﻿using System.Text.RegularExpressions;
 using FluentAssertions;
-using Launcher.IntegrityChecker.TestSupport;
-using War3Net.Build;
 using War3Net.Build.Object;
+using WarcraftLegacies.Map.Tests.TestSupport;
 
-namespace Launcher.IntegrityChecker;
+namespace WarcraftLegacies.Map.Tests;
 
 public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
@@ -33,7 +32,7 @@ public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFi
       .BeEmpty("every imported model should be used by an ability, doodad, buff, destructable, or script. Found {0}", unusedModels.Count);
   }
 
-  private static IEnumerable<string> GetModelsUsedInMap(Map map)
+  private static IEnumerable<string> GetModelsUsedInMap(War3Net.Build.Map map)
   {
     return GetModelsUsedByUnits(map.UnitObjectData)
       .Concat(GetModelsUsedByAbilities(map.AbilityObjectData))
