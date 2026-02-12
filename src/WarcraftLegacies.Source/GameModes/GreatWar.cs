@@ -12,8 +12,7 @@ public sealed class GreatWar : IGameMode
   /// <inheritdoc />
   public void OnChoose()
   {
-    var commandManager = new CommandManager();
-    commandManager.Register(new Forfeit());
+    CommandManager.Register(new Forfeit());
     this.SetupGreatWarTeams()
       .SetupAllianceCommands();
   }
