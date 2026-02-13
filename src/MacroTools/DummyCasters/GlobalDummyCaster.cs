@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
@@ -13,7 +12,7 @@ public sealed class GlobalDummyCaster
   internal GlobalDummyCaster(unit unit) => _unit = unit;
 
   /// <summary>
-  /// Causes the specified ability to be cast from the specified object at the specified target.
+  /// Casts specified ability from the specified object at the specified target.
   /// </summary>
   public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
   {
@@ -33,6 +32,9 @@ public sealed class GlobalDummyCaster
     _unit.RemoveAbility(abilId);
   }
 
+  /// <summary>
+  /// Casts the specified spell at the caster's position with no target.
+  /// </summary>
   public void CastNoTarget(unit caster, int abilId, int orderId, int level)
   {
     var owningPlayer = caster.Owner;
@@ -46,21 +48,7 @@ public sealed class GlobalDummyCaster
   }
 
   /// <summary>
-  /// Causes the specified spell to be cast on a particular point.
-  /// </summary>
-  public void CastNoTargetOnUnit(unit caster, int abilId, int orderId, int level, unit target)
-  {
-    var owningPlayer = caster.Owner;
-    _unit.SetOwner(owningPlayer);
-    _unit.SetPosition(target.X, target.Y);
-    _unit.AddAbility(abilId);
-    _unit.SetAbilityLevel(abilId, level);
-    _unit.IssueOrder(orderId);
-    _unit.RemoveAbility(abilId);
-  }
-
-  /// <summary>
-  /// Causes the specified spell to be cast at a particular point.
+  /// Casts the specified spell from the specified point.
   /// </summary>
   public void CastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
   {
@@ -73,7 +61,7 @@ public sealed class GlobalDummyCaster
   }
 
   /// <summary>
-  /// Causes the specified spell to be cast on all units in a circle.
+  /// Casts the specified spell on all units in a circle.
   /// </summary>
   public void CastOnUnitsInCircle(unit caster, int abilId, int orderId, int level, Point center,
     float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
@@ -81,18 +69,6 @@ public sealed class GlobalDummyCaster
     foreach (var target in GlobalGroup
                .EnumUnitsInRange(center, radius)
                .FindAll(unit => castFilter(caster, unit)))
-    {
-      CastUnit(caster, abilId, orderId, level, target, originType);
-    }
-  }
-
-  /// <summary>
-  /// Causes the specified spell to be cast on all units in a group.
-  /// </summary>
-  public void CastOnTargets(unit caster, int abilId, int orderId, int level, IEnumerable<unit> targets,
-    DummyCastOriginType originType)
-  {
-    foreach (var target in targets)
     {
       CastUnit(caster, abilId, orderId, level, target, originType);
     }
