@@ -1,0 +1,66 @@
+{
+  "OldId": 1818641217,
+  "NewId": 1380336217,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 5
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,organic"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sea Witch)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to \u003CYBFR,DataB1\u003E enemy units for \u003CYBFR,DataA1\u003E damage."
+    }
+  ]
+}
