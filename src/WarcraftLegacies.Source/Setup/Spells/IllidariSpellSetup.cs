@@ -86,6 +86,13 @@ public static class IllidariSpellSetup
       RequiredResearch = UPGRADE_YBPH_KINGSLAYER_ILLIDARI,
       DamageBonus = 0.6f
     }, UNIT_NDRN_DEATHSWORN_ILLIDARI);
+
+    SpellRegistry.Register(new SplitHealingWave(ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER)
+    {
+      DummyAbilityId = ABILITY_YBWW_HEALING_WAVE_SPLIT_WAVE_DUMMY_CASTER,
+      DummyAbilityOrderId = ORDER_HEALING_WAVE,
+      Radius = 350f
+    });
   }
 }
 

@@ -1,5 +1,6 @@
 {
   "OldId": 1986544449,
+  "NewId": 1465074265,
   "Unk": [
     0
   ],
@@ -32,12 +33,18 @@
     {
       "Id": 1667330657,
       "Type": 3,
-      "Value": "orc"
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu,organic"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Far Seer, Bishop)"
+      "Value": "(Seer)"
     },
     {
       "Id": 2037082209,
@@ -48,6 +55,12 @@
       "Id": 1952543841,
       "Type": 3,
       "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CYBSW,DataB1\u003E times, healing \u003CYBSW,DataA1\u003E damage on the primary target. Each jump heals less damage."
     }
   ]
 }

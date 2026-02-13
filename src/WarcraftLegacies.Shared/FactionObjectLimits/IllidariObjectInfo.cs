@@ -56,6 +56,7 @@ public static class IllidariObjectInfo
     yield return new(UPGRADE_RYEN_ENSNARE_ILLIDARI, Unlimited);
     yield return new(UPGRADE_RYDT_HEAVY_BOULDERS_ILLIDARI, Unlimited);
     yield return new(UPGRADE_RYSP_IMPROVED_SLOW_POISON_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_YBAA_SPLIT_HEALING_WAVE_ILLIDARI, Unlimited);
 
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1, new List<UnitCategory> { Support, Summoner });

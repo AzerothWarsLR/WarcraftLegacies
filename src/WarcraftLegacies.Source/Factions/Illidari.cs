@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.MetaBased;
@@ -12,6 +13,7 @@ using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Naga;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions;
@@ -57,7 +59,9 @@ public sealed class Illidari : Faction
   {
     RegisterQuests();
     RegisterDialogue();
+    RegisterResearches();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    ModAbilityAvailability(ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER, -1);
   }
   /// <inheritdoc />
   public override void OnNotPicked()
@@ -106,6 +110,15 @@ public sealed class Illidari : Faction
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
     var questVestigesOfPower = new QuestVestigesOfPower(questBlackTemple);
     AddQuest(questVestigesOfPower);
+  }
+
+  private void RegisterResearches()
+  {
+    ResearchManager.Register(new ReplaceAbilityResearch(UPGRADE_YBAA_SPLIT_HEALING_WAVE_ILLIDARI, 0)
+    {
+      OldResearchTypeId = ABILITY_YBSW_HEALING_WAVE_SEER,
+      NewAbilityTypeId = ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER
+    });
   }
 
   private void RegisterDialogue()
