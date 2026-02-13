@@ -83,6 +83,11 @@
       "Value": 0
     },
     {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBanditWarrior.blp"
+    },
+    {
       "Id": 1953980789,
       "Type": 3,
       "Value": "Revive Crown Prince of Stromgarde"
@@ -95,6 +100,11 @@
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Stormwind)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Danath.mdl"
     },
     {
       "Id": 1953458293,
@@ -122,6 +132,11 @@
       "Value": "Revive Crown Prince of Stromgarde"
     },
     {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "war3mapImported\\SSHHeroFootmanHero.blp"
+    },
+    {
       "Id": 1885959285,
       "Type": 3,
       "Value": "Summon Galen Trollbane"
@@ -135,21 +150,6 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "HeroPaladin"
-    },
-    {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDanathRed.blp"
-    },
-    {
-      "Id": 1769173877,
-      "Type": 3,
-      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-arthas.blp"
-    },
-    {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "GalenTrollbaneCWV2.04.mdl"
     }
   ]
 }

@@ -106,12 +106,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "LordearonKnight.mdl"
-    },
-    {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnightReClassic.blp"
+      "Value": "war3mapImported\\KnightCV2.mdl"
     }
   ]
 }

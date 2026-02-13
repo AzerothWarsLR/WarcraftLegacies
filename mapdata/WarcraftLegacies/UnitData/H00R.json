@@ -127,6 +127,11 @@
       "Value": "(Stormwind)"
     },
     {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\King Varian Wrynn.mdl"
+    },
+    {
       "Id": 1953458293,
       "Type": 3,
       "Value": "W"
@@ -164,21 +169,6 @@
     {
       "Id": 2020631157,
       "Value": 1
-    },
-    {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "King Varian Wrynn.mdl"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 1.25
-    },
-    {
-      "Id": 1668510581,
-      "Type": 1,
-      "Value": 1.2
     }
   ]
 }

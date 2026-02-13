@@ -99,6 +99,11 @@
       "Value": "(Stormwind)"
     },
     {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KhadgarOld.mdl"
+    },
+    {
       "Id": 1935763573,
       "Type": 3,
       "Value": ""
@@ -153,19 +158,14 @@
       "Value": 3
     },
     {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "Hero_Khadgar.mdl"
-    },
-    {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroKhadgar.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKhadgarW.blp"
     },
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-archmage.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKhadgarW.blp"
     }
   ]
 }

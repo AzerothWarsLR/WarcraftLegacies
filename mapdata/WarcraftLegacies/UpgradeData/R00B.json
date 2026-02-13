@@ -59,6 +59,12 @@
       "Value": "hcas"
     },
     {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFootman Lordaeron_HD.blp"
+    },
+    {
       "Id": 2020631143,
       "Value": 0
     },
@@ -91,12 +97,6 @@
       "Id": 828536167,
       "Type": 3,
       "Value": "Replace Footmen with Veteran Footmen, which have Perfect Defend and improved stats."
-    },
-    {
-      "Level": 1,
-      "Id": 829579623,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Royal_Footman_2.blp"
     }
   ]
 }
