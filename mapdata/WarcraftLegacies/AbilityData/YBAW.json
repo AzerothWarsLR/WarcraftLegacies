@@ -1,0 +1,87 @@
+{
+  "OldId": 1986544449,
+  "NewId": 1463894617,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 155
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu,organic"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "YBAA"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Seer)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth two wave of healing energy that bounce up to \u003CYBAW,DataB1\u003E times each. The first heals \u003CYBAW,DataA1\u003E on the primary target, and the second heals \u003CYBWW,DataA1\u003E. Each jump heals \u003CYBAW,DataC1,%\u003E less damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Split Healing Wave"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Split Healing Wave"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFieryWave.blp"
+    }
+  ]
+}
