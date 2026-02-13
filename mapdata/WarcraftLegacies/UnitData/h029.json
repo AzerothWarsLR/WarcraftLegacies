@@ -61,11 +61,6 @@
       "Value": "R01N,Rhde,Rhme,Rhar,Rhpm,Rguv"
     },
     {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFootman Lordaeron_HD.blp"
-    },
-    {
       "Id": 1651270517,
       "Value": 200
     },
@@ -73,11 +68,6 @@
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Lordaeron)"
-    },
-    {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "war3mapImported\\Unit_VeteranFootman.mdl"
     },
     {
       "Id": 1735156597,
@@ -111,6 +101,16 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.9
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "LordearonGuardsman.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Royal_Footman_2.blp"
     }
   ]
 }
