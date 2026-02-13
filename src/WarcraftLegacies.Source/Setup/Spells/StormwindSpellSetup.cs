@@ -1,4 +1,5 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools.DummyCasters;
+using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits;
@@ -24,10 +25,12 @@ public static class StormwindSpellSetup
       DurationLevel = (int)0.5
     }, UNIT_H00R_KING_OF_STORMWIND_STORMWIND);
 
-    SpellRegistry.Register(new AnySpellOnTarget(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
+    SpellRegistry.Register(new CastDummySpell(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
     {
       DummyAbilityId = ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
       DummyAbilityOrderId = ORDER_RESURRECTION,
+      TargetType = SpellTargetType.None,
+      OriginType = DummyCastOriginType.Caster
     });
 
     var electricStrike = new ElectricStrike(ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
