@@ -281,6 +281,16 @@
       "Id": 1953854049,
       "Type": 3,
       "Value": "Calls a storm of lightning bolts to strike enemy units.|nLasts 20 seconds. |n|n|cffffcc00Level 1|r - 40 Damage per Second|n|cffffcc00Level 2|r - 70 Damage per Second |n|cffffcc00Level 3|r - 100 Damage per Second"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderStorm.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderStorm.blp"
     }
   ]
 }
