@@ -10,18 +10,18 @@ public static class ScarletSpellSetup
 {
   public static void Setup()
   {
-    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
+    UnitTypeTraitRegistry.Register(new SpellOnCast(ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
     {
       DummyAbilityId = ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
-      ProcChance = 1.0f,
       AbilityWhitelist = new List<int>
       {
         ABILITY_ANHW_HEALING_WAVE_PINK_VOL_JIN,
         ABILITY_Z9X3_SWIFT_HOLY_LIGHT_SALLY,
         ABILITY_A078_SPIRITUAL_GUIDANCE_SALLY,
         ABILITY_A0DK_DISPEL_MAGIC_SALLY,
-      }
+      },
+      TargetType = SpellTargetType.None
     }, UNIT_H08H_HIGH_INQUISITOR_SCARLET);
 
     var crusaderShout = new Stomp(ABILITY_A0KB_CRUSADER_S_SHOUT_SAIDEN)
