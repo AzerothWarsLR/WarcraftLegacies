@@ -51,6 +51,8 @@ public sealed class Stomp : Spell
   /// </summary>
   public string SpecialEffect { get; init; } = "";
 
+  public CastFilterDelegate CastFilter { get; init; } = CastFilters.IsTargetEnemyAndAlive;
+
   private void DamageUnit(unit caster, widget target)
   {
     caster.DealDamage(target, DamageBase + DamageLevel * GetAbilityLevel(caster), false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
@@ -77,7 +79,7 @@ public sealed class Stomp : Spell
 
     foreach (var enumUnit in GlobalGroup.EnumUnitsInRange(casterX, casterY, Radius))
     {
-      if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
+      if (!CastFilter(caster, enumUnit))
       {
         continue;
       }
@@ -92,4 +94,6 @@ public sealed class Stomp : Spell
   {
 
   }
+
+  public delegate bool CastFilterDelegate(unit caster, unit target);
 }
