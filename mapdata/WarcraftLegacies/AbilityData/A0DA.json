@@ -102,6 +102,30 @@
       "Value": "nmtw"
     },
     {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMurgulTideWarrior.blp"
@@ -113,7 +137,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Overseer idra)"
+      "Value": "(Warlord Naj\u0027entus)"
     },
     {
       "Id": 2037082209,
@@ -147,7 +171,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons Mur\u0027gul Tidewarriors to attack the heroe\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 4 Mur\u0027gul Tidewarriors |n|cffffcc00Level 2|r - Summons 6 Mur\u0027gul Tidewarriors .|n|cffffcc00Level 3|r - Summons 8 Mur\u0027gul Tidewarriors .|n|cffffcc00Level 4|r - Summons 10 Mur\u0027gul Tidewarriors"
+      "Value": "Summons Mur\u0027gul Tidewarriors to aid the hero in battle for \u003CA0DA,Dur1\u003E seconds.|r |n|n|cffffcc00Level 1|r - Summons \u003CA0DA,DataB1\u003E Mur\u0027gul Tidewarriors.|n|cffffcc00Level 2|r - Summons \u003CA0DA,Datab2\u003E Mur\u0027gul Tidewarriors.|n|cffffcc00Level 3|r - Summons \u003CA0DA,DataB3\u003E Mur\u0027gul Tidewarriors. |n|cffffcc00Level 4|r - Summons \u003CA0DA,DataB4\u003E Mur\u0027gul Tidewarriors."
     },
     {
       "Level": 1,
@@ -177,25 +201,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a legion of 4 Mur\u0027gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CA0DA,DataB1\u003E Mur\u0027gul Tidewarriors to aid the hero in battle for \u003CA0DA,Dur1\u003E seconds.|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a legion of 6 Mur\u0027gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CA0DA,DataB2\u003E Mur\u0027gul Tidewarriors to aid the hero in battle for \u003CA0DA,Dur2\u003E seconds.|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a legion of 8 Mur\u0027gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CA0DA,DataB3\u003E Mur\u0027gul Tidewarriors to aid the hero in battle for \u003CA0DA,Dur3\u003E seconds.|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a legion of 10 Mur\u0027gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CA0DA,DataB4\u003E Mur\u0027gul Tidewarriors to aid the hero in battle for \u003CA0DA,Dur4\u003E seconds.|n|cffffcc00Attacks land units.|r"
     }
   ]
 }
