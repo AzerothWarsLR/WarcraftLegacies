@@ -46,11 +46,6 @@
       "Value": 0.65
     },
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNShieldHumanLionMark.BLP"
-    },
-    {
       "Id": 2020631137,
       "Value": 1
     },
@@ -106,6 +101,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate to take only \u003CA0J6,DataA1,%\u003E% damage from incoming spells, Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by \u003CA0J6,DataC1,%\u003E%."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionShield.blp"
     }
   ]
 }

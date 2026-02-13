@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A020,A0J6,A0H5,A0AM,A0YE,A01X,ACrk,Aihn"
+      "Value": "A020,A0J6,A0H5,A0AM,A0YE,A01X,ACrk,Aihn,A0GK"
     },
     {
       "Id": 1949393269,
@@ -93,10 +93,6 @@
       "Value": 6
     },
     {
-      "Id": 1937141109,
-      "Value": 280
-    },
-    {
       "Id": 1919381621,
       "Type": 3,
       "Value": "R01N,Rhar,Rhme,Rhan,Rguv"
@@ -104,7 +100,7 @@
     {
       "Id": 829645685,
       "Type": 3,
-      "Value": "MetalHeavyChop"
+      "Value": "MetalHeavySlice"
     },
     {
       "Id": 1768975733,
@@ -120,9 +116,8 @@
       "Value": 1
     },
     {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanKnight.BLP"
+      "Id": 1937141109,
+      "Value": 280
     },
     {
       "Id": 2020631157,
@@ -134,11 +129,6 @@
       "Value": "(Stormwind - Elite)"
     },
     {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "GeneralV2.06.mdl"
-    },
-    {
       "Id": 1953458293,
       "Type": 3,
       "Value": "W"
@@ -146,7 +136,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": 1.1
     },
     {
       "Id": 1835101813,
@@ -162,6 +152,16 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Elite melee champion of the Stormwind Army."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "TheCaptainV1.1.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnightIcon.blp"
     }
   ]
 }

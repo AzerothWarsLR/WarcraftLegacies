@@ -134,6 +134,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Warrior Hero, adept at supporting armies and inflicting magical damage."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroEvilArthas.blp"
     }
   ]
 }
