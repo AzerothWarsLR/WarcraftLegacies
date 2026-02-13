@@ -46,7 +46,8 @@ public sealed class KiljaedensCunning : Power
 
     LightningSystem.Add(new Lightning("AFOD", @event.DamageSource, target)
     {
-      Duration = 1f
+      Duration = 1f,
+      FadeDuration = 0.25f
     });
   }
 }

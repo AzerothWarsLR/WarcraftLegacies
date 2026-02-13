@@ -62,7 +62,8 @@ public sealed class ChainManaBurn : Spell
     possibleTargets.Remove(target);
     LightningSystem.Add(new Lightning("MBUR", origin, target)
     {
-      Duration = 0.75f
+      Duration = 0.75f,
+      FadeDuration = 0.25f
     });
 
     BurnMana(caster, target, amount);

@@ -45,7 +45,8 @@ public sealed class SiphoningRitualChannel : Channel
   {
     _lightning = new Lightning("DRAB", Caster, _target)
     {
-      Duration = float.MaxValue
+      Duration = float.MaxValue,
+      FadeDuration = 0.25f
     };
     LightningSystem.Add(_lightning);
   }
