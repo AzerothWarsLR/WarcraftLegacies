@@ -13,17 +13,22 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Shadow Aura"
+      "Value": "|c00FF0000Shadow Aura|r"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit is under the fear aura, it has reduced damage."
+      "Value": "This unit is under the effects of Shadow Aura; it has reduced attack damage."
     },
     {
       "Id": 1952543846,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Shadow Aura"
     }
   ]
 }
