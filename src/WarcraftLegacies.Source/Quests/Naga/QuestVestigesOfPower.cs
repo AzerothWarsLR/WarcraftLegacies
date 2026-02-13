@@ -17,7 +17,7 @@ public sealed class QuestVestigesOfPower : QuestData
     "Illidan maintains an unquenchable thirst for power. The Skull of Gul'dan, the Warglaives of Azzinoth - these artifacts are not enough. He demands more.",
     @"ReplaceableTextures\CommandButtons\BTNPhilosophersStone.blp")
   {
-    Knowledge = 15;
+    Knowledge = 10;
 
     var questCompleteObjective = new ObjectiveQuestComplete(prerequisite)
     {

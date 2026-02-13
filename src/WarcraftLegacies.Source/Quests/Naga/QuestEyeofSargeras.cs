@@ -21,7 +21,7 @@ public sealed class QuestEyeofSargeras : QuestData
   {
     _illidan = illidan;
     AddObjective(new ObjectiveLegendHasArtifact(illidan, eyeOfSargeras));
-    Knowledge = 20;
+    Knowledge = 10;
   }
 
   public override string RewardFlavour =>

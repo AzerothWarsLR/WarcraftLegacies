@@ -37,7 +37,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     _nordrassil = nordrassil;
     _illidan = illidan;
     AddObjective(new ObjectiveExpire(3600, "Kil'jaeden's Command"));
-    Knowledge = 15;
+    Knowledge = 10;
   }
 
   protected override string RewardDescription =>
