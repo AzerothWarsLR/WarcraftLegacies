@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -19,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Naga;
 public sealed class QuestBlackTemple : QuestData
 {
   private readonly List<unit> _rescueUnits;
+  private List<UnitPlacement>? _originalBrokenIslesUnitPlacements;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
@@ -66,6 +68,10 @@ public sealed class QuestBlackTemple : QuestData
     {
       completingFaction.Player.RepositionCamera(illidan.X, illidan.Y);
     }
+
+    RespawnBrokenIslesCreeps();
+    _originalBrokenIslesUnitPlacements?.Clear();
+    _originalBrokenIslesUnitPlacements = null;
   }
 
   /// <inheritdoc />
@@ -76,6 +82,38 @@ public sealed class QuestBlackTemple : QuestData
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
+
+    _originalBrokenIslesUnitPlacements?.Clear();
+    _originalBrokenIslesUnitPlacements = null;
+  }
+
+  /// <inheritdoc />
+  protected override void OnAdd(Faction whichFaction)
+  {
+    SaveBrokenIslesCreeps();
+  }
+
+  private void SaveBrokenIslesCreeps()
+  {
+    if (_originalBrokenIslesUnitPlacements is not null)
+    {
+      return;
+    }
+
+    var originalCreeps = GlobalGroup.EnumUnitsInRect(Regions.BrokenIslesA);
+    originalCreeps.AddRange(GlobalGroup.EnumUnitsInRect(Regions.BrokenIslesB));
+
+    _originalBrokenIslesUnitPlacements = new List<UnitPlacement>();
+    foreach (var unit in originalCreeps.Where(x => x.Owner == player.NeutralAggressive && !x.IsControlPoint()))
+    {
+      _originalBrokenIslesUnitPlacements.Add(new UnitPlacement
+      {
+        UnitType = unit.UnitType,
+        X = unit.X,
+        Y = unit.Y,
+        Facing = unit.Facing
+      });
+    }
   }
 
   private static void AbandonBrokenIsles(player completingPlayer)
@@ -107,5 +145,29 @@ public sealed class QuestBlackTemple : QuestData
 
       unit.SetPosition(Regions.IllidanBlackTempleUnlock.Center.X, Regions.IllidanBlackTempleUnlock.Center.Y);
     }
+  }
+
+  private void RespawnBrokenIslesCreeps()
+  {
+    if (_originalBrokenIslesUnitPlacements is null)
+    {
+      return;
+    }
+
+    foreach (var unitPlacement in _originalBrokenIslesUnitPlacements)
+    {
+      unit.Create(player.NeutralAggressive, unitPlacement.UnitType, unitPlacement.X, unitPlacement.Y, unitPlacement.Facing);
+    }
+  }
+
+  private sealed class UnitPlacement
+  {
+    public required int UnitType { get; init; }
+
+    public required float X { get; init; }
+
+    public required float Y { get; init; }
+
+    public required float Facing { get; init; }
   }
 }
