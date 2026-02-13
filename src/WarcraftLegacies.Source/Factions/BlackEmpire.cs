@@ -78,18 +78,18 @@ public sealed class BlackEmpire : Faction
       Radius = 800
     }, UNIT_U01Z_OLD_GOD_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+    UnitTypeTraitRegistry.Register(new SpellOnCast(ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
     {
       DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
-      ProcChance = 1.0f,
       AbilityWhitelist = new List<int>
       {
         ABILITY_A032_ARCANE_BOMBARDMENT_ORANGE_ANTONIDAS_MEDIVH,
         ABILITY_ABEH_HEALING_WAVE_BLACK_EMPIRE,
         ABILITY_A10U_MANA_BURN_DALARAN_YOGG,
         ABILITY_A11O_BLACK_HOLE_KHADGAR,
-      }
+      },
+      TargetType = SpellTargetType.None
     }, UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH);
 
     UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
