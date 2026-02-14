@@ -2,7 +2,6 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
@@ -48,8 +47,8 @@ public sealed class QuestPlague : QuestData
     _secondaryPlagueFaction = secondaryPlagueFaction;
     AddObjective(new ObjectiveEitherOf(
       new ObjectiveResearch(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
-      new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(660))));
-    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(480)));
+      new ObjectiveTurn(11)));
+    AddObjective(new ObjectiveTurn(8));
     _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

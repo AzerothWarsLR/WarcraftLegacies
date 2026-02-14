@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -22,7 +21,7 @@ public sealed class QuestHearthglen : QuestData
     @"ReplaceableTextures\CommandButtons\BTNutherAlt.blp")
   {
     AddObjective(new ObjectiveHostilesInAreaAreDead(new[] { hearthglenArea }, "in Hearthglen"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = hearthglenArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 

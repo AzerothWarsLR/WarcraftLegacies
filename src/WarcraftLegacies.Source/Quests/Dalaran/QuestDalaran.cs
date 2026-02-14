@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -24,7 +23,7 @@ public sealed class QuestDalaran : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N018_DURNHOLDE));
     AddObjective(new ObjectiveUpgrade(UNIT_H068_OBSERVATORY_DALARAN_T3, UNIT_H065_REFUGE_DALARAN_T1));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

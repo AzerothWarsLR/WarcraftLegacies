@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -19,7 +18,7 @@ public sealed class QuestRiseBase : QuestData
     @"ReplaceableTextures\CommandButtons\BTNTreeOfAges.blp")
   {
     AddObjective(new ObjectiveControlLevel(UNIT_N0A0_ASCENDANT_S_RISE, 2));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(480), Title));
+    AddObjective(new ObjectiveExpire(8, Title));
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

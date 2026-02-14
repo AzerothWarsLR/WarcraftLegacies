@@ -1,5 +1,4 @@
 ﻿using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives;
@@ -31,7 +30,7 @@ public sealed class QuestDimensionalShip : QuestData
     _dimensionalGenerator = dimensionalGenerator.Unit;
 
     AddObjective(new ObjectiveQuestComplete(prerequisite));
-    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(1200)));
+    AddObjective(new ObjectiveTurn(20));
     AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
     AddObjective(new ObjectiveControlLevel(UNIT_N0BL_EXODAR_REGALIS, 20));
     _objectivePowerSource = new ObjectivePowerSource(_dimensionalGenerator, new[]

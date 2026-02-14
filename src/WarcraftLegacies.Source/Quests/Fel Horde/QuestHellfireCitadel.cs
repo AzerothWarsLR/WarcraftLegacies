@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -30,7 +29,7 @@ public sealed class QuestHellfireCitadel : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N00B_NAGRAND));
     AddObjective(new ObjectiveControlPoint(UNIT_N0CV_HALAAR));
     AddObjective(new ObjectiveUpgrade(UNIT_O030_FORTRESS_FEL_T3, UNIT_O02Y_GREAT_HALL_FEL_T1));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(600), Title));
+    AddObjective(new ObjectiveExpire(10, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);

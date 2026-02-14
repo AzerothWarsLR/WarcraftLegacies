@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
@@ -28,7 +27,7 @@ public sealed class QuestDominion : QuestData
 
     AddObjective(new ObjectiveUpgrade(UNIT_H07G_GREAT_HOLD_IRONFORGE_T3,
       UNIT_H07E_MINING_COLONY_IRONFORGE_T1));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(1462), Title));
+    AddObjective(new ObjectiveExpire(24, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R043_QUEST_COMPLETED_DWARVEN_DOMINION;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);

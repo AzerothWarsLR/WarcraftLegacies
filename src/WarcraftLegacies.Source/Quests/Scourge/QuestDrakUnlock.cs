@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -28,7 +27,7 @@ public sealed class QuestDrakUnlock : QuestData
     @"ReplaceableTextures\CommandButtons\BTNUndeadShipyard.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N030_DRAK_THARON_KEEP));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

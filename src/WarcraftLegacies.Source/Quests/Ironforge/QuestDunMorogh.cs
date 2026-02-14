@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -20,7 +19,7 @@ public sealed class QuestDunMorogh : QuestData
     Knowledge = 5;
 
     AddObjective(new ObjectiveControlPoint(UNIT_N014_DUN_MOROGH));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = Regions.DunmoroghAmbient2.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
   }

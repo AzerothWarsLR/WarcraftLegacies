@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -39,7 +38,7 @@ public sealed class QuestBlackTemple : QuestData
 
     AddObjective(questCompleteObjective);
     AddObjective(new ObjectiveLegendInRect(AllLegends.Naga.Illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_RETURN_TO_OUTLAND;
     _rescueUnits = Regions.IllidanBlackTempleUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

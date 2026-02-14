@@ -1,5 +1,4 @@
 ﻿using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -17,7 +16,7 @@ public sealed class QuestTortolla : QuestData
     "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
     @"ReplaceableTextures\CommandButtons\BTNSeaTurtleGreen.blp")
   {
-    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(480)));
+    AddObjective(new ObjectiveTurn(8));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
 

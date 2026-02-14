@@ -1,5 +1,4 @@
-﻿using MacroTools.GameTime;
-using MacroTools.Quests;
+﻿using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas;
@@ -18,7 +17,7 @@ public sealed class QuestCrowley : QuestData
     "Darius Crowley has been imprisoned since the Northgate rebellion. If Gilneas were to fall into grave peril, an early release might be necessary.",
     @"ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp")
   {
-    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(900)));
+    AddObjective(new ObjectiveTurn(15));
     ResearchId = UPGRADE_MD05_QUEST_COMPLETED_THE_REBEL;
 
   }

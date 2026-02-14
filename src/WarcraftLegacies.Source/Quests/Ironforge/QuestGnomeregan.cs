@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -28,7 +27,7 @@ public sealed class QuestGnomeregan : QuestData
     Knowledge = 5;
 
     AddObjective(new ObjectiveHostilesInAreaAreDead(new[] { Regions.Gnomergan }, "near Gnomeregan"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(480), Title));
+    AddObjective(new ObjectiveExpire(8, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R05Q_QUEST_COMPLETED_THE_CITY_OF_INVENTION_IRONFORGE;

@@ -2,7 +2,6 @@
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
@@ -42,7 +41,7 @@ public sealed class QuestMalfurionAwakens : QuestData
     AddObjective(new ObjectiveAcquireArtifact(hornofCenarius));
     AddObjective(new ObjectiveArtifactInRect(hornofCenarius, Regions.Moonglade,
       "The Barrow Den"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(480), Title));
+    AddObjective(new ObjectiveExpire(8, Title));
     AddObjective(new ObjectiveUpgrade(UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS_T3, UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1));
     AddObjective(new ObjectiveSelfExists());
     _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

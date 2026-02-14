@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
@@ -43,7 +42,7 @@ public sealed class QuestCapitalCity : QuestData
     }
 
     AddObjective(new ObjectiveControlLegend(arthas, false));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
     _terenas = terenas;
