@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -20,7 +21,7 @@ public sealed class QuestShrineBase : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N0BI_SHRINE_TO_MALORNE, 0));
     AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.ShrineBaseUnlock }, "in Hyjal"));
-    AddObjective(new ObjectiveExpire(480, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(480), Title));
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

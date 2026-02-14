@@ -2,10 +2,11 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.MetaBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 //using MacroTools.UserInterface;
@@ -43,8 +44,8 @@ public sealed class QuestFirelandInvasion : QuestData
     _secondaryInvasionFaction = secondaryInvasionFaction;
     AddObjective(new ObjectiveEitherOf(
       new ObjectiveResearch(UPGRADE_RSW5_FIRELAND_INVASION_SKYWALL, UNIT_NELC_VORTEX_PINNACLE_SKYWALL_T3),
-      new ObjectiveTime(600)));
-    AddObjective(new ObjectiveTime(500));
+      new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(600))));
+    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(500)));
     _sulfuronUnits = sulfuron.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     Global = true;
     //ResearchId = UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;

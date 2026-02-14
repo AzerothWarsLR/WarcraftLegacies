@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
@@ -35,7 +36,7 @@ public sealed class QuestBoralus : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N0BX_TIRAGARDE_SOUND));
     AddObjective(new ObjectiveControlPoint(UNIT_N0BW_STORMSONG_VALLEY, 1000));
     AddObjective(new ObjectiveControlPoint(UNIT_N0BV_DRUSTVAR));
-    AddObjective(new ObjectiveExpire(480, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(480), Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R00L_QUEST_COMPLETED_THE_ADMIRALTY_OF_KUL_TIRAS_KUL_TIRAS;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

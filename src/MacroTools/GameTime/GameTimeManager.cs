@@ -49,7 +49,7 @@ public static class GameTimeManager
   public static int ConvertGameTimeToTurn(float gameTime) => (int)Math.Floor(gameTime / TurnDuration);
 
   /// <summary>What turn it is right now.</summary>
-  public static int GetTurn() => ConvertGameTimeToTurn(_currentTime);
+  public static int GetTurn() => _turnCount;
 
   /// <returns>The number of seconds that have elapsed since the start of the game</returns>
   public static float GetGameTime() => _currentTime;

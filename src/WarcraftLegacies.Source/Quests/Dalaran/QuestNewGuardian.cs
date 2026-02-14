@@ -1,10 +1,11 @@
 ﻿using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran;
 
@@ -19,7 +20,7 @@ public sealed class QuestNewGuardian : QuestData
     _jaina = jaina;
     AddObjective(new ObjectiveControlCapital(violetCitadel, true));
     AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
-    AddObjective(new ObjectiveTime(1500));
+    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(1500)));
     ResearchId = UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;
   }
 

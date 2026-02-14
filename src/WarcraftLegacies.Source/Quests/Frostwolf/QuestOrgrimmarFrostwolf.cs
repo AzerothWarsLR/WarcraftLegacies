@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
@@ -21,7 +22,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
     AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_FROSTWOLF_T3));
-    AddObjective(new ObjectiveExpire(800, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(800), Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
     _rockGroups = new List<RockGroup>();

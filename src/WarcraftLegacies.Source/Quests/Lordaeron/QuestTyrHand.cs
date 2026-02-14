@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.MetaBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron;
@@ -28,7 +29,7 @@ public sealed class QuestTyrHand : QuestData
     @"ReplaceableTextures\CommandButtons\BTNHumanBarracks.blp")
   {
     AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(stratholme),
-      new ObjectiveTime(840)));
+      new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(840))));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R023_QUEST_COMPLETED_THE_FORTIFIED_CITY;

@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -36,7 +37,7 @@ public sealed class QuestStratholme : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N019_ALTERAC_MOUNTAINS));
     AddObjective(new ObjectiveUpgrade(UNIT_HCAS_CASTLE_LORDAERON_T3, UNIT_HTOW_TOWN_HALL_LORDAERON_T1));
     AddObjective(new ObjectiveControlLegend(arthas, false));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

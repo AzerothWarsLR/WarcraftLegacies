@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
@@ -30,7 +31,7 @@ public sealed class QuestGilneasCity : QuestData
 
     AddObjective(new ObjectiveControlPoint(UNIT_N018_DURNHOLDE));
     AddObjective(new ObjectiveUpgrade(UNIT_H02C_CASTLE_GILNEAS_T3, UNIT_H01R_TOWN_HALL_GILNEAS_T1));
-    AddObjective(new ObjectiveExpire(660, "Liberation of Gilneas"));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), "Liberation of Gilneas"));
     AddObjective(new ObjectiveSelfExists());
 
     ResearchId = UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS;
