@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -132,7 +131,7 @@ public sealed class Ironforge : Faction
     var questExpedition = new QuestExpedition(
       missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
 
-    questExpedition.AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(15 * 60))
+    questExpedition.AddObjective(new ObjectiveTurn(15)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

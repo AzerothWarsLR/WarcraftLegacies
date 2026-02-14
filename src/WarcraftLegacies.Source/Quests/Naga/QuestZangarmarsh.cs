@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -22,7 +21,7 @@ public sealed class QuestZangarmarsh : QuestData
     @"ReplaceableTextures\CommandButtons\BTNIllidariDemonGate.blp")
   {
     AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R03B_QUEST_COMPLETED_COILFANG_RESERVOIR;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

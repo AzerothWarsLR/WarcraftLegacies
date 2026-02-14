@@ -1,5 +1,4 @@
-﻿using MacroTools.GameTime;
-using MacroTools.Quests;
+﻿using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron;
@@ -18,7 +17,7 @@ public sealed class QuestMograine : QuestData
     "Mograine has been gone for a long time, if Lordaeron would be in great peril, he would surely come back to defend it!",
     @"ReplaceableTextures\CommandButtons\BTNAlexandros.blp")
   {
-    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(900)));
+    AddObjective(new ObjectiveTurn(15));
     ResearchId = UPGRADE_R06P_QUEST_COMPLETED_THE_EXILE_LORDAERON;
   }
 

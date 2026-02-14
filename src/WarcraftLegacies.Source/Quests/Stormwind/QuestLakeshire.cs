@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -20,7 +19,7 @@ public sealed class QuestLakeshire : QuestData
     @"ReplaceableTextures\CommandButtons\BTNOgreLord.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N011_REDRIDGE_MOUNTAINS));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
     {

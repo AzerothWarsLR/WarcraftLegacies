@@ -1,5 +1,4 @@
 ﻿using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -25,7 +24,7 @@ public sealed class QuestRebuildAhnqiraj : QuestData
   {
     _gateAhnQiraj = gateAhnQiraj;
     AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 3));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
   }
 
   /// <inheritdoc/>

@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -23,7 +22,7 @@ public sealed class QuestLostOnes : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N02N_BLADE_S_EDGE_MOUNTAINS));
     AddObjective(new ObjectiveControlPoint(UNIT_N00B_NAGRAND));
     AddObjective(new ObjectiveControlPoint(UNIT_N0CW_FARAHLON));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(1450), Title));
+    AddObjective(new ObjectiveExpire(24, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05H_QUEST_COMPLETED_THE_DRAENEI;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);

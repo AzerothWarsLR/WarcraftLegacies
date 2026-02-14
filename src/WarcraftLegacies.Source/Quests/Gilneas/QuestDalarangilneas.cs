@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -26,7 +25,7 @@ public sealed class QuestDalarangilneas : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N01A_HINTERLANDS));
     AddObjective(new ObjectiveControlPoint(UNIT_N0EB_JINTHA_ALOR));
     AddObjective(new ObjectiveControlPoint(UNIT_N01Z_ARATHI_HIGHLANDS));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), "Dalaran"));
+    AddObjective(new ObjectiveExpire(11, "Dalaran"));
     AddObjective(new ObjectiveSelfExists());
   }
 

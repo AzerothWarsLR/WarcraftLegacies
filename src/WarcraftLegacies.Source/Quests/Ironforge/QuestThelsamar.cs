@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -24,7 +23,7 @@ public sealed class QuestThelsamar : QuestData
     {
       Regions.LochModanMurlocCreepCamp
     }, "north of Thelsamar"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(600), Title));
+    AddObjective(new ObjectiveExpire(10, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
 

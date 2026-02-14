@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -19,7 +18,7 @@ public sealed class QuestCultoftheDamned : QuestData
   {
     _lordaeron = lordaeron;
     _rivendare = rivendare;
-    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(420)));
+    AddObjective(new ObjectiveTurn(7));
     ResearchId = UPGRADE_R01H_QUEST_COMPLETED_THE_CULT_OF_THE_DAMNED;
   }
 

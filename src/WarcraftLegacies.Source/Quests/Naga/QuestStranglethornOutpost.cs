@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -26,7 +25,7 @@ public sealed class QuestStranglethornOutpost : QuestData
       ShowsInQuestLog = false
     });
     AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "the Cape of Stranglethorn"));
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(660), Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
   }

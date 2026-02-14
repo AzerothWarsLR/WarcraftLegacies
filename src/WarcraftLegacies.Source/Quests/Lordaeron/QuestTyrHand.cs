@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -29,7 +28,7 @@ public sealed class QuestTyrHand : QuestData
     @"ReplaceableTextures\CommandButtons\BTNHumanBarracks.blp")
   {
     AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(stratholme),
-      new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(840))));
+      new ObjectiveTurn(14)));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R023_QUEST_COMPLETED_THE_FORTIFIED_CITY;

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
@@ -37,7 +36,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     _cthun = cthun;
     _nordrassil = nordrassil;
     _illidan = illidan;
-    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(3600), "Kil'jaeden's Command"));
+    AddObjective(new ObjectiveExpire(60, "Kil'jaeden's Command"));
     Knowledge = 10;
   }
 
