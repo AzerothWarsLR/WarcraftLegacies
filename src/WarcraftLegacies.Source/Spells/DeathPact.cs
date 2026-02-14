@@ -105,6 +105,7 @@ public sealed class DeathPact : Spell
     return target.Alive &&
            target.Owner == casterPlayer &&
            !target.IsResistant() &&
+           !target.IsInvulnerable &&
            !target.IsUnitType(unittype.Structure) &&
            !target.IsUnitType(unittype.Ancient) &&
            !target.IsUnitType(unittype.Mechanical) &&
