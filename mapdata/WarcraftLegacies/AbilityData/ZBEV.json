@@ -45,7 +45,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - \u003CZBEV,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CZBEV,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CZBEV,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CZBEV,DataA4,%\u003E% chance that an opponent misses."
+      "Value": "Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - \u003CZBEV,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CZBEV,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CZBEV,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 4|r - \u003CZBEV,DataA4,%\u003E% chance that an opponent misses."
     },
     {
       "Level": 4,
