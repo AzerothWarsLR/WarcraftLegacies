@@ -31,4 +31,22 @@ public static class CastFilters
            (target.IsEnemyTo(casterPlayer) || target.Owner == player.NeutralPassive) &&
            target.Alive && target.IsInvulnerable == false;
   }
+  
+// Used for spells where you only want them to affect enemy ground units. Flying units and structures are not affected
+  public static bool IsTargetEnemyAliveAndGroundUnits(unit caster, unit target)
+  {
+    var casterPlayer = caster.Owner;
+    return caster != target &&
+           (target.IsEnemyTo(casterPlayer) || target.Owner == player.NeutralPassive) &&
+           target.Alive && target.IsInvulnerable == false && !target.IsUnitType(unittype.Structure) && !target.IsUnitType(unittype.Flying);
+  }
+
+// Used for spells where you only want them to affect all enemy units (including flying units). Structures are not affected.
+  public static bool IsTargetEnemyAndAliveUnits(unit caster, unit target)
+  {
+    var casterPlayer = caster.Owner;
+    return caster != target &&
+           (target.IsEnemyTo(casterPlayer) || target.Owner == player.NeutralPassive) &&
+           target.Alive && target.IsInvulnerable == false && !target.IsUnitType(unittype.Structure);
+  }
 }

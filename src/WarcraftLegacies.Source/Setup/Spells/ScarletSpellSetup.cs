@@ -33,7 +33,8 @@ public static class ScarletSpellSetup
       DurationLevel = 1,
       StunAbilityId = ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
       StunOrderId = ORDER_SOUL_BURN,
-      SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx"
+      SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx",
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
     };
     SpellRegistry.Register(crusaderShout);
 

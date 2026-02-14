@@ -37,7 +37,8 @@ public static class FrostwolfSpellSetup
       DurationBase = 15,
       StunAbilityId = ABILITY_TP08_CRIPPLE_DUMMY,
       StunOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx"
+      SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx",
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
     };
     SpellRegistry.Register(cripplingShout);
 

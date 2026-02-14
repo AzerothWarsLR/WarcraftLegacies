@@ -39,7 +39,8 @@ public static class KulTirasSpellSetup
       DurationLevel = 2,
       StunAbilityId = ABILITY_A0L0_SLEEP_DUMMY,
       StunOrderId = ORDER_SLEEP,
-      SpecialEffect = @"Abilities\Spells\Other\HowlOfTerror\HowlCaster.mdl"
+      SpecialEffect = @"Abilities\Spells\Other\HowlOfTerror\HowlCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
     };
     SpellRegistry.Register(warStompMeredith);
 

@@ -62,7 +62,8 @@ public static class DraeneiSpellSetup
       DurationLevel = 3,
       StunAbilityId = ABILITY_A106_CURSE_DRAENEI,
       StunOrderId = ORDER_CURSE,
-      SpecialEffect = @"war3mapImported\FrostNova.mdx"
+      SpecialEffect = @"war3mapImported\FrostNova.mdx",
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
     };
     SpellRegistry.Register(warStompAdal);
 
