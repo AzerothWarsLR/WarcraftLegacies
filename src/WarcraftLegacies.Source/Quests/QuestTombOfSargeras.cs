@@ -2,9 +2,10 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -37,7 +38,7 @@ public sealed class QuestTombOfSargeras : QuestData
     _entrance = entrance;
     guldanRemains.SetAnimation("death");
     guldanRemains.IsInvulnerable = true;
-    AddObjective(new ObjectiveTime(900));
+    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(900)));
     _enterTombOfSargerasRegion =
       new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
     AddObjective(_enterTombOfSargerasRegion);

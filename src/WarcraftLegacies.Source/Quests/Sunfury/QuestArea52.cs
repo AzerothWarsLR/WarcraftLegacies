@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury;
@@ -25,7 +26,7 @@ public sealed class QuestArea52 : QuestData
     @"ReplaceableTextures\CommandButtons\BTNLordaeronPalace.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N07Q_AREA_52));
-    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(600), Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
       filterUnit => filterUnit.UnitType != UNIT_NGME_GOBLIN_MERCHANT);

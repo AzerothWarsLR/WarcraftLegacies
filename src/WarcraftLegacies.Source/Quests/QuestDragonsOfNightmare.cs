@@ -1,8 +1,9 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Sounds;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
@@ -55,7 +56,7 @@ public sealed class QuestDragonsOfNightmare : QuestData
     _portalTwoLocation = portalTwoLocation;
     AddObjective(new ObjectiveKillUnit(nightmareDragonKalimdor));
     AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
-    AddObjective(new ObjectiveTime(360));
+    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(360)));
     _timer = timer.Create();
     _timer.Start(360, false, OnTimeElapsed);
     IsFactionQuest = false;

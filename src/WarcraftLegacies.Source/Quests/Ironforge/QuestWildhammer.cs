@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge;
 
@@ -25,7 +26,7 @@ public sealed class QuestWildhammer : QuestData
     Knowledge = 20;
 
     AddObjective(new ObjectiveLegendInRect(magni, Regions.Aerie_Peak, "Aerie Peak"));
-    AddObjective(new ObjectiveTime(900));
+    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(900)));
     ResearchId = UPGRADE_R01C_QUEST_COMPLETED_WILDHAMMER_ALLIANCE;
     _rescueUnits = Regions.Aerie_Peak.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
   }

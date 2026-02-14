@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 
@@ -24,7 +25,7 @@ public sealed class QuestThunderBluff : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N02A_SOUTHERN_BARRENS));
     AddObjective(new ObjectiveControlPoint(UNIT_N09G_MULGORE));
-    AddObjective(new ObjectiveExpire(720, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(720), Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

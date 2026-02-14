@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -30,7 +31,7 @@ public sealed class QuestAstranaar : QuestData
     AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.Invasion3 }, "in Darkshore"));
     AddObjective(new ObjectiveUpgrade(UNIT_N06P_SENTINEL_ENCLAVE_SENTINELS_T3,
       UNIT_N06J_SENTINEL_OUTPOST_SENTINELS_T1));
-    AddObjective(new ObjectiveExpire(480, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(480), Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R03N_QUEST_COMPLETED_DAUGHTERS_OF_THE_MOON;
 

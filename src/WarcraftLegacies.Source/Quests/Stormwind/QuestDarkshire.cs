@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind;
 
@@ -17,7 +18,7 @@ public sealed class QuestDarkshire : QuestData
     @"ReplaceableTextures\CommandButtons\BTNGnollArcher.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N00V_DUSKWOOD));
-    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(600), Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = Regions.DarkshireUnlock.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
   }

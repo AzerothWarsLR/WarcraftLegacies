@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Druids;
@@ -26,7 +27,7 @@ public sealed class QuestAshenvale : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N07C_FELWOOD));
     AddObjective(new ObjectiveControlPoint(UNIT_N01Q_NORTHERN_ASHENVALE));
-    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(600), Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R06R_QUEST_COMPLETED_THE_SPIRITS_OF_ASHENVALE;
     _rescueUnits = ashenvaleRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -31,8 +32,8 @@ public sealed class QuestBlackrock : QuestData
     }
 
     AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, UNIT_O008_HELLFIRE_CITADEL_FEL));
-    AddObjective(new ObjectiveTime(540));
-    AddObjective(new ObjectiveExpire(900, Title));
+    AddObjective(new ObjectiveTurn(GameTimeManager.ConvertGameTimeToTurn(540)));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(900), Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
     _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

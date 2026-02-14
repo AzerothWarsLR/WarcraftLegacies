@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind;
@@ -19,7 +20,7 @@ public sealed class QuestGoldshire : QuestData
     @"ReplaceableTextures\CommandButtons\BTNGnoll.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N00Z_ELWYNN_FOREST));
-    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveExpire(GameTimeManager.ConvertGameTimeToTurn(600), Title));
     AddObjective(new ObjectiveSelfExists());
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
     {
