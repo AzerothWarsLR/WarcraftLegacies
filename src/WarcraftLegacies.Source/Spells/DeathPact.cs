@@ -96,7 +96,7 @@ public sealed class DeathPact : Spell
     {
       var ability = caster.GetAbility(Id);
       caster.Mana += ability.GetManaCost_amcs(caster.GetAbilityLevel(Id) - 1);
-      caster.SetAbilityCooldownRemaining(Id, 0);
+      caster.EndAbilityCooldown(Id);
     });
   }
 
