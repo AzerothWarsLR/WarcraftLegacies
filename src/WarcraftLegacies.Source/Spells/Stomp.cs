@@ -50,7 +50,7 @@ public sealed class Stomp : Spell
   /// The special effect to create at the caster's position.
   /// </summary>
   public string SpecialEffect { get; init; } = "";
-    
+  
   /// <summary> 
   /// The filter for which units should be affected by the stomp. By default, it affects all enemy ground units (building exlcuded).
   /// </summary>
