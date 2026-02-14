@@ -63,7 +63,7 @@ public sealed class WaygateOpen : Spell
     _exteriorWaygate.SetWaygateDestination(interiorWaygatePosition);
 
     _interiorWaygate = unit.Create(player.NeutralPassive, InteriorWaygateUnitTypeId, interiorWaygatePosition.X, interiorWaygatePosition.Y, 0);
-    _exteriorWaygate.SetWaygateDestination(exteriorWaygatePosition);
+    _interiorWaygate.SetWaygateDestination(exteriorWaygatePosition);
   }
 
   /// <inheritdoc />
