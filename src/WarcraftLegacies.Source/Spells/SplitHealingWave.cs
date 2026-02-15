@@ -38,7 +38,7 @@ public sealed class SplitHealingWave : Spell
 
     var secondaryTarget = GlobalGroup.EnumUnitsInRange(primaryTarget.X, primaryTarget.Y, Radius)
       .Where(x => IsValidTarget(casterOwner, x) && x != primaryTarget)
-      .OrderBy(x => x.MaxLife - x.Life)
+      .OrderByDescending(x => x.MaxLife - x.Life)
       .FirstOrDefault();
 
     if (secondaryTarget == null)
