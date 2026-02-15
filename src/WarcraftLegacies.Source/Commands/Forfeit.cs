@@ -2,6 +2,7 @@
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -40,10 +41,20 @@ public sealed class Forfeit : Command
     team.DisplayText(
         $"{commandUser.Name} voted to forfeit ({currentVotes}/{VotesRequired})."
     );
+
     if (currentVotes >= VotesRequired)
     {
       team.DisplayText("Forfeit vote passed.");
-      EndGame(true);
+      foreach (var player in Util.EnumeratePlayers())
+      {
+        player.DisplayTextTo($"{team.Name} has forfeited the game. The game will end in 10 seconds.");
+      }
+      WCSharp.Events.PeriodicEvents.AddPeriodicEvent(() =>
+      {
+        EndGame(true);
+        return false;
+      }, 10f);
+
     }
     return "Forfeit vote registered.";
   }
