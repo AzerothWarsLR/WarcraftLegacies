@@ -53,7 +53,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Allows Farstriders and Vareesa to use Feint ability, which turns them invisible for 5 seconds and increases their movement speed by 50%."
+      "Value": "Allows Farstriders to use Feint, which turns them invisible for \u003CA02I,Dur1\u003E seconds and increases their movement speed by \u003CA02I,DataB1,%\u003E%."
     }
   ]
 }
