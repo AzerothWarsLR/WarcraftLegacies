@@ -8,11 +8,32 @@ public static class GameTimeManagerTest
   private const string Namespace = $"{nameof(MacroTools)}.{nameof(MacroTools.GameTime)}";
   private const string Type = nameof(MacroTools.GameTime.GameTimeManager);
 
+  [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_gameStarted")]
+  private static extern ref bool GameStartedField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
+
+  [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_currentTime")]
+  private static extern ref float GameTimeField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
+
   [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_turnCount")]
   private static extern ref int TurnCountField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
 
+  [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "GameStarted")]
+  private static extern ref EventHandler? GameStartedHandler([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
+
   [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "TurnEnded")]
-  private static extern ref EventHandler? TurnEndedField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
+  private static extern ref EventHandler? TurnEndedHandler([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
+
+  public static bool GameStarted
+  {
+    get => GameStartedField();
+    set => GameStartedField() = value;
+  }
+
+  public static float GameTime
+  {
+    get => GameTimeField();
+    set => GameTimeField() = value;
+  }
 
   public static int TurnCount
   {
@@ -20,14 +41,22 @@ public static class GameTimeManagerTest
     set => TurnCountField() = value;
   }
 
+  public static void RaiseGameStarted()
+  {
+    GameStartedHandler()?.Invoke(null, EventArgs.Empty);
+  }
+
   public static void RaiseTurnEnded()
   {
-    TurnEndedField()?.Invoke(null, EventArgs.Empty);
+    TurnEndedHandler()?.Invoke(null, EventArgs.Empty);
   }
 
   public static void Reset()
   {
+    GameStarted = false;
+    GameTime = 0;
     TurnCount = 0;
-    TurnEndedField() = null;
+    TurnEndedHandler() = null;
+    GameStartedHandler() = null;
   }
 }

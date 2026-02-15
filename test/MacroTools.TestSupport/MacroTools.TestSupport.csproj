@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="xunit.core" Version="2.9.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\..\src\MacroTools\MacroTools.csproj" />
     </ItemGroup>
 

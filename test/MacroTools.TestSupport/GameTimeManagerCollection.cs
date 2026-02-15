@@ -1,4 +1,6 @@
-﻿namespace WarcraftLegacies.Source.Tests;
+﻿using Xunit;
+
+namespace MacroTools.TestSupport;
 
 [CollectionDefinition(nameof(GameTimeManagerCollection), DisableParallelization = true)]
 public class GameTimeManagerCollection;

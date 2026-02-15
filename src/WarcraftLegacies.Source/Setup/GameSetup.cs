@@ -80,6 +80,7 @@ public static class GameSetup
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
     CleanupUnoccupiedPlayerSlots.Setup();
+    PlayerElimination.Setup();
     PlayerLeaves.Setup();
     FloatingTextSetup.Setup(60, 10);
     AmbianceSetup.Setup();
