@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
