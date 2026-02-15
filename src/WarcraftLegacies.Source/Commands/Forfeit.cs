@@ -47,7 +47,7 @@ public sealed class Forfeit : Command
       team.DisplayText("Forfeit vote passed.");
       foreach (var player in Util.EnumeratePlayers())
       {
-        player.DisplayTextTo($"{team.Name} has forfeited the game. The game will end in 10 seconds");
+        player.DisplayTextTo($"{team.Name} has forfeited the game. The game will end in 10 seconds.");
       }
       WCSharp.Events.PeriodicEvents.AddPeriodicEvent(() =>
       {
