@@ -42,6 +42,7 @@ public sealed class QuestBrokenIsles : QuestData
     const float portalX = 223f;
     const float portalY = 6173f;
     var portal = unit.Create(completingFaction.Player, UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR, 223f, 6173f);
+    portal.RemoveAbility(ABILITY_A012_ANTI_PORTAL_BLOCKING_SPLIPSTREAM);
     portal.WaygateActive = true;
     portal.SetWaygateDestination(5724, -30098);
     portal.IsInvulnerable = true;
