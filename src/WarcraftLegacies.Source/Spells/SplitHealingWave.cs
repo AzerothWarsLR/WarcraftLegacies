@@ -54,7 +54,7 @@ public sealed class SplitHealingWave : Spell
   private static bool IsValidTarget(player casterOwner, unit target)
   {
     return target.Alive &&
-           target.Owner == casterOwner &&
+           casterOwner.IsAlly(target.Owner) &&
            !target.IsUnitType(unittype.Structure) &&
            !target.IsUnitType(unittype.Ancient) &&
            !target.IsUnitType(unittype.Mechanical) &&
