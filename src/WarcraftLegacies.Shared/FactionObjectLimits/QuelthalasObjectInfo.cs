@@ -10,8 +10,8 @@ public static class QuelthalasObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H033_STEADING_QUELTHALAS_T1, Unlimited, TownHall);
-    yield return new(UNIT_H03S_MANSION_QUELTHALAS_T2, Unlimited, TownHall);
-    yield return new(UNIT_H03T_PALACE_QUELTHALAS_T3, Unlimited, TownHall);
+    yield return new(UNIT_H03S_MANSION_QUELTHALAS_T2, Unlimited, Keep);
+    yield return new(UNIT_H03T_PALACE_QUELTHALAS_T3, Unlimited, Castle);
     yield return new(UNIT_H01H_ALTAR_OF_PROWESS_QUELTHALAS_ALTAR, Unlimited, Altar);
     yield return new(UNIT_H02Y_ARTISAN_S_HALL_QUELTHALAS_RESEARCH, Unlimited, Research);
     yield return new(UNIT_H034_ARCANE_SANCTUM_QUELTHALAS_MAGIC, Unlimited, Magic);

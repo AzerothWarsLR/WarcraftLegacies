@@ -10,8 +10,8 @@ public static class KultirasObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H062_TOWN_HALL_KULTIRAS_T1, Unlimited, TownHall);
-    yield return new(UNIT_H064_KULTIRAS_T2, Unlimited, TownHall);
-    yield return new(UNIT_H06I_CASTLE_KULTIRAS_T3, Unlimited, TownHall);
+    yield return new(UNIT_H064_KULTIRAS_T2, Unlimited, Keep);
+    yield return new(UNIT_H06I_CASTLE_KULTIRAS_T3, Unlimited, Castle);
     yield return new(UNIT_H07N_HOMESTEAD_KULTIRAS_FARM, Unlimited, Farm);
     yield return new(UNIT_H07M_ALTAR_OF_ADMIRALS_KULTIRAS_ALTAR, Unlimited, Altar);
     yield return new(UNIT_H07R_SCOUT_TOWER_KULTIRAS_TOWER, Unlimited, Tower);

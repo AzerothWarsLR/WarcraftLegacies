@@ -10,8 +10,8 @@ public static class DalaranObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H065_REFUGE_DALARAN_T1, Unlimited, TownHall);
-    yield return new(UNIT_H066_CONCLAVE_DALARAN_T2, Unlimited, TownHall);
-    yield return new(UNIT_H068_OBSERVATORY_DALARAN_T3, Unlimited, TownHall);
+    yield return new(UNIT_H066_CONCLAVE_DALARAN_T2, Unlimited, Keep);
+    yield return new(UNIT_H068_OBSERVATORY_DALARAN_T3, Unlimited, Castle);
     yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, GilneasManor);
     yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, Lighthouse);
     yield return new(UNIT_H063_ARCANE_WELL_DALARAN_FARM, Unlimited, Farm);

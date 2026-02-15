@@ -10,8 +10,8 @@ public static class DraeneiObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1, Unlimited, TownHall);
-    yield return new(UNIT_O050_METROPOLIS_DRAENEI_T2, Unlimited, TownHall);
-    yield return new(UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Unlimited, TownHall);
+    yield return new(UNIT_O050_METROPOLIS_DRAENEI_T2, Unlimited, Keep);
+    yield return new(UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Unlimited, Castle);
     yield return new(UNIT_O058_ALTAR_OF_LIGHT_DRAENEI_ALTAR, Unlimited, Altar);
     yield return new(UNIT_O052_CEREMONIAL_ALTAR_DRAENEI_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_O053_LIGHTFORGE_DRAENEI_RESEARCH, Unlimited, Research);

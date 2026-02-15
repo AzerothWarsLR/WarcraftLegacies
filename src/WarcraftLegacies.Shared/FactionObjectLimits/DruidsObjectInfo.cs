@@ -10,8 +10,8 @@ public static class DruidsObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1, Unlimited, TownHall);
-    yield return new(UNIT_ETOA_TREE_OF_AGES_DRUIDS_T2, Unlimited, TownHall);
-    yield return new(UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS_T3, Unlimited, TownHall);
+    yield return new(UNIT_ETOA_TREE_OF_AGES_DRUIDS_T2, Unlimited, Keep);
+    yield return new(UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS_T3, Unlimited, Castle);
     yield return new(UNIT_EMOW_MOON_WELL_DRUIDS_FARM, Unlimited, Farm);
     yield return new(UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS_ALTAR, Unlimited, Altar);
     yield return new(UNIT_EAOE_ANCIENT_OF_LORE_DRUIDS_MAGIC, Unlimited, Magic);

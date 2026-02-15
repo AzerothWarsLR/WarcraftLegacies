@@ -8,6 +8,8 @@ public enum UnitCategory
 {
   //Buildings
   TownHall,
+  Keep,
+  Castle,
   GilneasManor,
   Shipyard,
   Lighthouse,
@@ -50,6 +52,10 @@ public static class UnitCategoryExtensions
     {
       case UnitCategory.TownHall:
         return "Town Hall";
+      case UnitCategory.Keep:
+        return "Keep";
+      case UnitCategory.Castle:
+        return "Castle";
       case UnitCategory.GilneasManor:
         return "Gilneas Manor";
       case UnitCategory.Shipyard:

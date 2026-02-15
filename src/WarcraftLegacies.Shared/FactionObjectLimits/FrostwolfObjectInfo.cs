@@ -10,8 +10,8 @@ public static class FrostwolfObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, Unlimited, TownHall);
-    yield return new(UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, Unlimited, TownHall);
-    yield return new(UNIT_OFRT_FORTRESS_FROSTWOLF_T3, Unlimited, TownHall);
+    yield return new(UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, Unlimited, Keep);
+    yield return new(UNIT_OFRT_FORTRESS_FROSTWOLF_T3, Unlimited, Castle);
     yield return new(UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, Unlimited, Altar);
     yield return new(UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Unlimited, Research);

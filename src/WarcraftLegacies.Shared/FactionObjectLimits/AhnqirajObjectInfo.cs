@@ -10,8 +10,8 @@ public static class AhnqirajObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectInfos()
   {
     yield return new(UNIT_U020_MONUMENT_CTHUN_T1, Unlimited, TownHall);
-    yield return new(UNIT_U021_RUINED_TEMPLE_CTHUN_T2, Unlimited, TownHall);
-    yield return new(UNIT_U022_NEXUS_CTHUN_T3, Unlimited, TownHall);
+    yield return new(UNIT_U021_RUINED_TEMPLE_CTHUN_T2, Unlimited, Keep);
+    yield return new(UNIT_U022_NEXUS_CTHUN_T3, Unlimited, Castle);
     yield return new(UNIT_N071_PILLAR_OF_C_THUN_CTHUN_PILLARS, Unlimited, new List<UnitCategory> { Tower, Farm });
     yield return new(UNIT_U01G_SPIRIT_HALL_CTHUN_RESEARCH, Unlimited, Research);
     yield return new(UNIT_O00R_HATCHERY_CTHUN_BARRACK, Unlimited, Barracks);

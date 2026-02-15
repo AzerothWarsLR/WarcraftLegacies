@@ -10,8 +10,8 @@ public static class ScarletCrusadeObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H0BM_TOWN_HALL_SCARLET_T1, Unlimited, TownHall);
-    yield return new(UNIT_H0BN_SCARLET_T2, Unlimited, TownHall);
-    yield return new(UNIT_H0BO_CASTLE_SCARLET_T3, Unlimited, TownHall);
+    yield return new(UNIT_H0BN_SCARLET_T2, Unlimited, Keep);
+    yield return new(UNIT_H0BO_CASTLE_SCARLET_T3, Unlimited, Castle);
     yield return new(UNIT_H0BP_FARMSTEAD_SCARLET_FARM, Unlimited, Farm);
     yield return new(UNIT_H0A3_BLACKSMITH_SCARLET_RESEARCH, Unlimited, Research);
     yield return new(UNIT_H09X_SHIPYARD_SCARLET_SHIPYARD, Unlimited, Shipyard);

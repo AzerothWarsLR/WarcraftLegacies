@@ -9,8 +9,8 @@ public static class WarsongObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_O00C_GREAT_HALL_WARSONG_T1, Unlimited, UnitCategory.TownHall);
-    yield return new(UNIT_O02R_STRONGHOLD_WARSONG_T2, Unlimited, UnitCategory.TownHall);
-    yield return new(UNIT_O02S_FORTRESS_WARSONG_T3, Unlimited, UnitCategory.TownHall);
+    yield return new(UNIT_O02R_STRONGHOLD_WARSONG_T2, Unlimited, UnitCategory.Keep);
+    yield return new(UNIT_O02S_FORTRESS_WARSONG_T3, Unlimited, UnitCategory.Castle);
     yield return new(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR, Unlimited, UnitCategory.Altar);
     yield return new(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, Unlimited, UnitCategory.Barracks);
     yield return new(UNIT_O009_REFINERY_WARSONG_RESEARCH, Unlimited, UnitCategory.Research);

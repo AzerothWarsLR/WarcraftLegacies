@@ -10,8 +10,8 @@ public static class StormwindObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H06K_TOWN_HALL_STORMWIND_T1, Unlimited, TownHall);
-    yield return new(UNIT_H06M_STORMWIND_T2, Unlimited, TownHall);
-    yield return new(UNIT_H06N_CASTLE_STORMWIND_T3, Unlimited, TownHall);
+    yield return new(UNIT_H06M_STORMWIND_T2, Unlimited, Keep);
+    yield return new(UNIT_H06N_CASTLE_STORMWIND_T3, Unlimited, Castle);
     yield return new(UNIT_H072_HOMESTEAD_STORMWIND_FARM, Unlimited, Farm);
     yield return new(UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR, Unlimited, Altar);
     yield return new(UNIT_H06E_BARRACKS_STORMWIND_BARRACKS, Unlimited, Barracks);

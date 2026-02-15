@@ -10,8 +10,8 @@ public static class ScourgeObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_UNPL_NECROPOLIS_SCOURGE_T1, Unlimited, TownHall);
-    yield return new(UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2, Unlimited, TownHall);
-    yield return new(UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, Unlimited, TownHall);
+    yield return new(UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2, Unlimited, Keep);
+    yield return new(UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, Unlimited, Castle);
     yield return new(UNIT_UZIG_ZIGGURAT_SCOURGE_FARM, Unlimited, Farm);
     yield return new(UNIT_UZG1_SPIRIT_TOWER_SCOURGE_TOWER, Unlimited, new List<UnitCategory> { Farm, Tower });
     yield return new(UNIT_UZG2_NERUBIAN_TOWER_SCOURGE_TOWER, Unlimited, new List<UnitCategory> { Farm, Tower });

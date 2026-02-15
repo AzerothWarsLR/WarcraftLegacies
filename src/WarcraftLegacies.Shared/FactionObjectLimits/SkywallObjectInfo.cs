@@ -10,8 +10,8 @@ public static class SkywallObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_N05Q_HOLDFAST_SKYWALL_T1, Unlimited, TownHall);
-    yield return new(UNIT_N05W_FORTIFIED_BURG_SKYWALL_T2, Unlimited, TownHall);
-    yield return new(UNIT_N06R_GREAT_ALCAZAR_SKYWALL_T3, Unlimited, TownHall);
+    yield return new(UNIT_N05W_FORTIFIED_BURG_SKYWALL_T2, Unlimited, Keep);
+    yield return new(UNIT_N06R_GREAT_ALCAZAR_SKYWALL_T3, Unlimited, Castle);
     yield return new(UNIT_H03I_NIJARA_SKYWALL_RESEARCH, Unlimited, Research);
     yield return new(UNIT_N08A_FOUNDRY_SKYWALL_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_N07N_PAVILION_SKYWALL_MAGIC, Unlimited, Magic);

@@ -10,8 +10,8 @@ public static class SunfuryObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H02P_HOLDING_SUNFURY_T1, Unlimited, TownHall);
-    yield return new(UNIT_H0C4_COVENANT_SUNFURY_T2, Unlimited, TownHall);
-    yield return new(UNIT_H0C5_SANCTUARY_SUNFURY_T3, Unlimited, TownHall);
+    yield return new(UNIT_H0C4_COVENANT_SUNFURY_T2, Unlimited, Keep);
+    yield return new(UNIT_H0C5_SANCTUARY_SUNFURY_T3, Unlimited, Castle);
     yield return new(UNIT_H0C7_ARBORETUM_SUNFURY_FARM, 3, Farm);
     yield return new(UNIT_H0C8_FORGE_SUNFURY_RESEARCH, Unlimited, Research);
     yield return new(UNIT_H0C9_TRAINING_QUARTER_SUNFURY_BARRACKS, Unlimited, Barracks);

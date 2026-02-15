@@ -10,8 +10,8 @@ public static class BlackEmpireObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_N0AR_TWISTING_HALLS_NZOTH_T1, Unlimited, TownHall);
-    yield return new(UNIT_N0AS_WHISPERING_LABYRINTH_NZOTH_T2, Unlimited, TownHall);
-    yield return new(UNIT_N0AT_CATHEDRAL_OF_MADNESS_NZOTH_T3, Unlimited, TownHall);
+    yield return new(UNIT_N0AS_WHISPERING_LABYRINTH_NZOTH_T2, Unlimited, Keep);
+    yield return new(UNIT_N0AT_CATHEDRAL_OF_MADNESS_NZOTH_T3, Unlimited, Castle);
     yield return new(UNIT_N0AU_PULSATING_PORTAL_NZOTH_FARM, Unlimited, Farm);
     yield return new(UNIT_H06U_SIPHONING_CRYSTAL_NZOTH_RESEARCH, Unlimited, Research);
     yield return new(UNIT_N0AW_INCUBATION_POOL_NZOTH_BARRACKS, Unlimited, Barracks);

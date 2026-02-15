@@ -10,9 +10,9 @@ public static class LegionObjectInfo
   {
     yield return new(UNIT_U00H_SOUL_TOWER_LEGION_TOWER, Unlimited); // Soultower
     yield return new(UNIT_U00I_IMPROVED_SOUL_TOWER_LEGION_TOWER, Unlimited); //Improved Soultower
-    yield return new(UNIT_U00F_DORMANT_SPIRE_LEGION_T1, Unlimited); // Townhall T1
-    yield return new(UNIT_U00C_LEGION_BASTION_LEGION_T2, Unlimited); // Townhall T2
-    yield return new(UNIT_U00N_BURNING_CITADEL_LEGION_T3, Unlimited); // Townhall T3
+    yield return new(UNIT_U00F_DORMANT_SPIRE_LEGION_T1, Unlimited, UnitCategory.TownHall);
+    yield return new(UNIT_U00C_LEGION_BASTION_LEGION_T2, Unlimited, UnitCategory.Keep);
+    yield return new(UNIT_U00N_BURNING_CITADEL_LEGION_T3, Unlimited, UnitCategory.Castle);
     yield return new(UNIT_N040_SOUL_FORGE_LEGION_RESEARCH, Unlimited); // Blacksmith
     yield return new(UNIT_U009_SHIPYARD_LEGION_SHIPYARD, Unlimited, UnitCategory.Shipyard); //Shipyard
     yield return new(UNIT_U00E_SOUL_PRISON_LEGION_FARM, Unlimited); //Farm

@@ -10,8 +10,8 @@ public static class IronforgeObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H07E_MINING_COLONY_IRONFORGE_T1, Unlimited, TownHall);
-    yield return new(UNIT_H07F_DWARF_HOLD_IRONFORGE_T2, Unlimited, TownHall);
-    yield return new(UNIT_H07G_GREAT_HOLD_IRONFORGE_T3, Unlimited, TownHall);
+    yield return new(UNIT_H07F_DWARF_HOLD_IRONFORGE_T2, Unlimited, Keep);
+    yield return new(UNIT_H07G_GREAT_HOLD_IRONFORGE_T3, Unlimited, Castle);
     yield return new(UNIT_H01S_TAVERN_IRONFORGE_FARM, Unlimited, Farm);
     yield return new(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR, Unlimited, Altar);
     yield return new(UNIT_H07C_MUSTERING_HALL_IRONFORGE_BARRACKS, Unlimited, Barracks);

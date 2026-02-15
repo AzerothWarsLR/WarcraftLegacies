@@ -10,8 +10,8 @@ public static class FelHordeObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectInfos()
   {
     yield return new(UNIT_O02Y_GREAT_HALL_FEL_T1, Unlimited, TownHall);
-    yield return new(UNIT_O02Z_STRONGHOLD_FEL_T2, Unlimited, TownHall);
-    yield return new(UNIT_O030_FORTRESS_FEL_T3, Unlimited, TownHall);
+    yield return new(UNIT_O02Z_STRONGHOLD_FEL_T2, Unlimited, Keep);
+    yield return new(UNIT_O030_FORTRESS_FEL_T3, Unlimited, Castle);
     yield return new(UNIT_O02V_ALTAR_OF_DOMINATION_FEL_ALTAR, Unlimited, Altar);
     yield return new(UNIT_O02W_BARRACKS_FEL_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_O031_WAR_MILL_FEL_RESEARCH, Unlimited, Research);

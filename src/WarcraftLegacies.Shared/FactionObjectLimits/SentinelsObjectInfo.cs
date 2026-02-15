@@ -17,8 +17,8 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_E011_KALDOREI_DOCKS_SENTINELS_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_H03N_IMPROVED_HUNTER_TOWER_SENTINELS_TOWER, Unlimited, Tower);
     yield return new(UNIT_H03M_HUNTER_TOWER_SENTINELS_TOWER, Unlimited, Tower);
-    yield return new(UNIT_N06O_SENTINEL_EMBASSY_SENTINELS_T2, Unlimited, TownHall);
-    yield return new(UNIT_N06P_SENTINEL_ENCLAVE_SENTINELS_T3, Unlimited, TownHall);
+    yield return new(UNIT_N06O_SENTINEL_EMBASSY_SENTINELS_T2, Unlimited, Keep);
+    yield return new(UNIT_N06P_SENTINEL_ENCLAVE_SENTINELS_T3, Unlimited, Castle);
     yield return new(UNIT_N06J_SENTINEL_OUTPOST_SENTINELS_T1, Unlimited, TownHall);
     yield return new(UNIT_N06M_RESIDENCE_SENTINELS_FARM, Unlimited, Farm);
     yield return new(UNIT_EDOS_ROOST_SENTINELS_SPECIALIST, Unlimited, FlyingBuilding);

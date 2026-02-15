@@ -10,8 +10,8 @@ public static class IllidariObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_NNTT_BETRAYER_S_RESERVOIR_ILLIDARI_T1, Unlimited, TownHall);
-    yield return new(UNIT_N04T_BETRAYER_S_SPIRE_ILLIDARI_T2, Unlimited, TownHall);
-    yield return new(UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3, Unlimited, TownHall);
+    yield return new(UNIT_N04T_BETRAYER_S_SPIRE_ILLIDARI_T2, Unlimited, Keep);
+    yield return new(UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3, Unlimited, Castle);
     yield return new(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR, Unlimited, Altar);
     yield return new(UNIT_NNSG_SPAWNING_GROUNDS_ILLIDARI_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_H06S_STEAMWORKS_ILLIDARI_RESEARCH, Unlimited, Research);
