@@ -10,6 +10,7 @@
     <Project Path="src/Warcraft.Integrity/Warcraft.Integrity.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/test/">
+    <Project Path="test/MacroTools.Tests/MacroTools.Tests.csproj" />
     <Project Path="test/MacroTools.TestSupport/MacroTools.TestSupport.csproj" />
     <Project Path="test/WarcraftLegacies.Source.Tests/WarcraftLegacies.Source.Tests.csproj" />
     <Project Path="test\WarcraftLegacies.Map.Tests\WarcraftLegacies.Map.Tests.csproj" />
