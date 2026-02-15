@@ -130,7 +130,7 @@ public sealed class QuestBlackTemple : QuestData
         continue;
       }
 
-      if (unit.IsControlPoint())
+      if (!unit.IsRemovable())
       {
         unit.SetOwner(player.NeutralAggressive);
         continue;
