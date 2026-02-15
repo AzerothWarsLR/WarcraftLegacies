@@ -136,14 +136,13 @@ public sealed class QuestBlackTemple : QuestData
         continue;
       }
 
+      unit.SetPosition(Regions.IllidanBlackTempleUnlock.Center.X, Regions.IllidanBlackTempleUnlock.Center.Y);
+
       if (unit.IsABuilding || unit.IsUnitBoat())
       {
         completingPlayer.Gold += unit.GoldCostOf(unit.UnitType);
         unit.Dispose();
-        continue;
       }
-
-      unit.SetPosition(Regions.IllidanBlackTempleUnlock.Center.X, Regions.IllidanBlackTempleUnlock.Center.Y);
     }
   }
 
