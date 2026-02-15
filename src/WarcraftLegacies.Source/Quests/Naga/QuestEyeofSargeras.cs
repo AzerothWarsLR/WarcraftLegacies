@@ -5,6 +5,7 @@ using MacroTools.Quests;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Spells;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Quests.Naga;
 
@@ -79,9 +80,12 @@ public sealed class QuestEyeofSargeras : QuestData
 
     _illidan.Unit.AddAbility(ABILITY_ZBEU_ENGINEERING_UPGRADE_ILLIDAN);
 
-    for (var i = 0; i < activeMetamorphosisLevel; i++)
+    Delay.Add(() =>
     {
-      _illidan.Unit.SelectHeroSkill(PermanentMetamorphosisId);
-    }
+      for (var i = 0; i < activeMetamorphosisLevel; i++)
+      {
+        _illidan.Unit.SelectHeroSkill(PermanentMetamorphosisId);
+      }
+    });
   }
 }
