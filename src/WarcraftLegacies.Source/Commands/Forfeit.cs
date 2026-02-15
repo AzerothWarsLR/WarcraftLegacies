@@ -2,6 +2,7 @@
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using WarcraftLegacies.Source.Stats;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
@@ -9,7 +10,7 @@ namespace WarcraftLegacies.Source.Commands;
 /// <summary>
 /// A <see cref="Command"/> that allows a player to vote to forfeit a game.
 /// </summary>
-/// 
+///
 public sealed class Forfeit : Command
 {
   private static readonly Dictionary<Team, HashSet<player>> _ffVotesByTeam = new();
@@ -49,6 +50,8 @@ public sealed class Forfeit : Command
       {
         player.DisplayTextTo($"{team.Name} has forfeited the game. The game will end in 10 seconds.");
       }
+      MatchResultRecorder.RecordForfeitResult(team);
+
       WCSharp.Events.PeriodicEvents.AddPeriodicEvent(() =>
       {
         EndGame(true);

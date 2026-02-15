@@ -70,6 +70,9 @@ public static class PlayerExtensions
     }
   }
 
+  public static PlayerMatchStats GetMatchStats(this player whichPlayer) =>
+    PlayerData.ByHandle(whichPlayer).PlayerSettings.MatchStats;
+
   public static PlayerData GetPlayerData(this player player) => PlayerData.ByHandle(player);
 
   /// <summary>

@@ -18,4 +18,9 @@ public sealed class PlayerSettings : Saveable
   public bool PlayDialogue { get; internal set; } = true;
 
   public bool ShowCaptions { get; internal set; } = true;
+
+  public PlayerMatchStats MatchStats { get; set; } = new();
+
+
 }
+

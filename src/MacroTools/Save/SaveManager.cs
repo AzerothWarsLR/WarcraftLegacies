@@ -66,4 +66,8 @@ public static class SaveManager
   {
     _saveSystem?.Save(save);
   }
+  public static void SavePublic(PlayerSettings save)
+  {
+    Save(save);
+  }
 }
