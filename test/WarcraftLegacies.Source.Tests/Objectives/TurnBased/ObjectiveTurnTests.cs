@@ -1,5 +1,5 @@
 ﻿using MacroTools.Quests;
-using MacroTools.Testing;
+using MacroTools.TestSupport;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Tests.Objectives.TurnBased;

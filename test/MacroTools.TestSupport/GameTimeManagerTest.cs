@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace MacroTools.Testing;
+namespace MacroTools.TestSupport;
 
 public static class GameTimeManagerTest
 {
