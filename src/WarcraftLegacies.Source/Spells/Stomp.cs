@@ -51,6 +51,11 @@ public sealed class Stomp : Spell
   /// </summary>
   public string SpecialEffect { get; init; } = "";
 
+  /// <summary> 
+  /// The filter for which units should be affected by the stomp. By default, it affects all enemy ground units (building exlcuded).
+  /// </summary>
+  public CastFilterDelegate CastFilter { get; init; } = CastFilters.IsTargetEnemyAliveAndGroundUnits;
+
   private void DamageUnit(unit caster, widget target)
   {
     caster.DealDamage(target, DamageBase + DamageLevel * GetAbilityLevel(caster), false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
@@ -77,7 +82,7 @@ public sealed class Stomp : Spell
 
     foreach (var enumUnit in GlobalGroup.EnumUnitsInRange(casterX, casterY, Radius))
     {
-      if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
+      if (!CastFilter(caster, enumUnit))
       {
         continue;
       }
@@ -92,4 +97,5 @@ public sealed class Stomp : Spell
   {
 
   }
+  public delegate bool CastFilterDelegate(unit caster, unit target);
 }
