@@ -1,0 +1,56 @@
+{
+  "OldId": 1936016193,
+  "NewId": 825248579,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684562785,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Focal Demon Gate - Fel Horde DUMMY)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Demonic Convergence"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Demonic Convergence"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unique structure that causes units spawned from your Demon Gates in Outland to converge at this location."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}
