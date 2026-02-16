@@ -24,7 +24,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASWarlockSummoning.blp"
     },
     {
       "Id": 1718840929,
@@ -46,7 +46,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unique structure that causes units spawned from your Demon Gates in Outland to converge at this location."
+      "Value": "Causes units spawned from your Demon Gates in Outland to emerge from this structure instead."
     },
     {
       "Id": 2020631137,

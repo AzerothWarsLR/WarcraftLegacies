@@ -24,7 +24,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassTeleport.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASWarpPortal.blp"
     },
     {
       "Id": 1718840929,
@@ -46,7 +46,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unique structure that allows Dalaran and its allies to instantly travel between two constructed Waygates."
+      "Value": "Allows units to instantly travel to the other constructed Waygate."
     },
     {
       "Id": 2020631137,
