@@ -225,19 +225,19 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the attack damage of nearby enemy units by 20% and grants this unit a \u003CA0Z2,DataA2,%\u003E% chance to evade attacks."
+      "Value": "Reduces the attack damage of nearby enemy units by 30% and grants this unit a \u003CA0Z1,DataA2,%\u003E% chance to evade attacks."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the attack damage of nearby enemy units by 20% and grants this unit a \u003CA0Z3,DataA3,%\u003E% chance to evade attacks."
+      "Value": "Reduces the attack damage of nearby enemy units by 40% and grants this unit a \u003CA0Z1,DataA3,%\u003E% chance to evade attacks."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the attack damage of nearby enemy units by 20% and grants this unit a \u003CA0Z4,DataA4,%\u003E% chance to evade attacks."
+      "Value": "Reduces the attack damage of nearby enemy units by 50% and grants this unit a \u003CA0Z1,DataA4,%\u003E% chance to evade attacks."
     },
     {
       "Id": 1952543841,
