@@ -98,7 +98,6 @@ public sealed class Ironforge : Faction
     {
       Progress = QuestProgress.Undiscovered
     };
-    AddQuest(questWildhammer);
 
     questWildhammer.AddObjective(new ObjectiveControlLegend(AllLegends.Ironforge.Magni, false)
     {
@@ -106,6 +105,9 @@ public sealed class Ironforge : Faction
       ShowsInQuestLog = false,
       ShowsInPopups = false
     });
+
+    AddQuest(questWildhammer);
+
 
     var questDarkIron = new QuestDarkIron(
       Regions.Shadowforge_City,
