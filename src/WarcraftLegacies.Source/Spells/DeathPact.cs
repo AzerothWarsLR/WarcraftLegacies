@@ -30,6 +30,10 @@ public sealed class DeathPact : Spell
   /// <summary>The percentage of the target unit's health used to restore the caster's mana.</summary>
   public float ManaRestorePercent { get; init; } = 0.10f;
 
+  /// <summary>The unt that is summoned if set.</summary>
+  public int? SummonedUnitType { get; init; }
+  public float SummonedDuration { get; init; }
+
   /// <inheritdoc />
   public DeathPact(int id) : base(id)
   {
@@ -85,6 +89,13 @@ public sealed class DeathPact : Spell
       var currentMana = caster.Mana;
       caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
     });
+    if (SummonedUnitType.HasValue)
+    {
+      var summoned = unit.Create(caster.Owner, SummonedUnitType.Value, targetUnit.X, targetUnit.Y, caster.Facing);
+      summoned.SetTimedLife(SummonedDuration);
+      summoned.AddType(unittype.Summoned);
+    }
+
 
     EffectSystem.Add(effect.Create(KillEffect, targetUnit.X, targetUnit.Y));
   }
