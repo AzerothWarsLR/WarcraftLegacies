@@ -74,7 +74,11 @@ public static class GameTimeManager
       GameStarted?.Invoke(null, EventArgs.Empty);
     }
 
-    _turnTimerDialog.SetTitle($"Turn {_turnCount}");
+    if (_turnTimerDialog != null)
+    {
+      _turnTimerDialog.SetTitle($"Turn {_turnCount}");
+    }
+
     if (_turnCount >= 20)
     {
       foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
