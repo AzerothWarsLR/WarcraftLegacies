@@ -77,7 +77,11 @@ public abstract class Objective
     protected set
     {
       _description = value;
-      QuestItem.SetDescription(_description);
+
+      if (QuestItem != null)
+      {
+        QuestItem.SetDescription(_description);
+      }
     }
   }
 
@@ -225,6 +229,11 @@ public abstract class Objective
 
   private static void SetResearchLevelForAllPlayers(int researchId, int level)
   {
+    if (researchId == 0)
+    {
+      return;
+    }
+
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
       player.SetTechResearched(researchId, level);
