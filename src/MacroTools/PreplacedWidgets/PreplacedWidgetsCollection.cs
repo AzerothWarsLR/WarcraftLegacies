@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
@@ -30,6 +31,14 @@ public abstract class PreplacedWidgetCollection<T> where T : widget
     return widgets.Count == 1
       ? widgets[0]
       : throw new InvalidOperationException($"There are multiple preplaced widgets with id {FourCc.GetString(typeId)}.");
+  }
+
+  public bool TryGetAll(
+    int typeId,
+    [NotNullWhen(true)] out List<T>? widgets)
+  {
+    return _widgetsByTypeId.TryGetValue(typeId, out widgets);
+
   }
 
   /// <summary>

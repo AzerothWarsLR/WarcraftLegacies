@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.PreplacedWidgets;
 using WCSharp.Events;
 
 namespace MacroTools.UnitNames;
@@ -11,9 +12,13 @@ public static class DynamicUnitNameRegistry
   {
     foreach (var kvp in nameData)
     {
-      _pools[kvp.Key] = new NamePool(kvp.Value);
+      var pool = new NamePool(kvp.Value);
+      _pools[kvp.Key] = pool;
+
       PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, kvp.Key);
       PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, kvp.Key);
+
+      AssignNamesToPreplacedUnits(kvp.Key, pool);
     }
   }
 
@@ -34,4 +39,20 @@ public static class DynamicUnitNameRegistry
       pool.TryRelease(unit);
     }
   }
+
+  private static void AssignNamesToPreplacedUnits(int unitType, NamePool pool)
+  {
+
+    if (!AllPreplacedWidgets.Units.TryGetAll(unitType, out var preplacedUnits))
+    {
+      return;
+    }
+
+    foreach (var preplacedUnit in preplacedUnits)
+    {
+      pool.TryAssign(preplacedUnit);
+    }
+  }
+
 }
+

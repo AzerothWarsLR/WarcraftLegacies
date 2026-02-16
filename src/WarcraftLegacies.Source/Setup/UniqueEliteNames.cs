@@ -416,7 +416,27 @@ public static class UniqueEliteNames
         "Sulfiren Bonewrought",
         "Velkris Doomcaller",
         "Kaelvros Nightbane"
-      }
+      },
+
+      [UNIT_H06B_TEMPLAR_LORDAERON] =
+        new()
+        {
+          "Alaric the Zealous",
+          "Sir Mathias Dawnhammer",
+          "Thane Valemort Creed",
+          "Edric Lightbane",
+          "Brother Halbrecht Pyre",
+          "Justicar Thalos Redmark",
+          "Sir Corvin Ashguard",
+          "Magnus Brightwrath",
+          "High Templar Aurelian",
+          "Garrick Flameward",
+          "Lucien Dawnreaver",
+          "Sir Roland Scarletbane",
+          "Inquisitor Varrus Holycinder",
+          "Benedict Ironfaith",
+          "Albrecht Sunfall"
+        }
     };
   }
 }
