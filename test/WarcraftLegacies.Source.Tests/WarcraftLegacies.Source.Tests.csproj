@@ -22,7 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\WarcraftLegacies.Source\WarcraftLegacies.Source.csproj" />
-      <ProjectReference Include="..\MacroTools.Testing\MacroTools.Testing.csproj" />
+      <ProjectReference Include="..\MacroTools.TestSupport\MacroTools.TestSupport.csproj" />
     </ItemGroup>
 
 </Project>
