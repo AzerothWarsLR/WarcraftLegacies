@@ -12,7 +12,7 @@
     {
       "Id": 1819239285,
       "Type": 2,
-      "Value": 0
+      "Value": 200
     },
     {
       "Id": 1819240309,
@@ -68,13 +68,13 @@
       "Value": "ancient,mechanical,townhall"
     },
     {
+      "Id": 1634559605,
+      "Value": 35
+    },
+    {
       "Id": 1885433973,
       "Type": 3,
       "Value": ""
-    },
-    {
-      "Id": 1634559605,
-      "Value": 35
     },
     {
       "Id": 1718840949,
@@ -133,6 +133,11 @@
       "Id": 1668510581,
       "Type": 1,
       "Value": 8
+    },
+    {
+      "Id": 1919905909,
+      "Type": 3,
+      "Value": "war3mapImported/Building_WyrmrestTemple_White.mdl"
     }
   ]
 }
