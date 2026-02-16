@@ -4,7 +4,9 @@ using MacroTools.Factions;
 
 namespace WarcraftLegacies.Source.Commands;
 
-/// <summary>Share control of your units with another player.</summary>
+/// <summary>
+/// Share control of your units with another player.
+/// </summary>
 public sealed class Share : Command
 {
   /// <inheritdoc />
@@ -32,7 +34,7 @@ public sealed class Share : Command
       {
         if (faction.Player != null && faction.Player.GetPlayerData().Team == cheaterTeam)
         {
-          cheater.SetAlliance(faction.Player, alliancetype.SharedControl, true);
+          SetPlayerAlliance(cheater, faction.Player, ALLIANCE_SHARED_CONTROL, true);
         }
       }
 
@@ -54,7 +56,7 @@ public sealed class Share : Command
       return $"{targetFaction.Name} isn't on your team, so you can't share control with them.";
     }
 
-    cheater.SetAlliance(targetFaction.Player, alliancetype.SharedControl, true);
+    SetPlayerAlliance(cheater, targetFaction.Player, ALLIANCE_SHARED_CONTROL, true);
 
     return $"Shared control with {targetFaction.Name}.";
   }

@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 namespace WarcraftLegacies.Source.Commands;
 
 /// <summary>
-/// A <see cref="Command"/> That turns dialogue captions on or off.
+/// A <see cref="Command"/> that turns dialogue captions on or off.
 /// </summary>
 public sealed class Captions : Command
 {
@@ -18,18 +18,25 @@ public sealed class Captions : Command
   public override CommandType Type => CommandType.Normal;
 
   /// <inheritdoc />
-  public override string Description => "Turns dialogue captions on or off.";
+  public override string Description => "Turns dialogue captions on or off (accepts 'true', 'false', 'on', 'off').";
 
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var captions = parameters[0];
-    if (!bool.TryParse(captions, out var captionsBool))
+    var input = parameters[0].ToLowerInvariant();
+    bool? parsed = input switch
     {
-      return "You must specify either true or false as the first parameter.";
+      "true" or "on" => true,
+      "false" or "off" => false,
+      _ => null
+    };
+
+    if (parsed is null)
+    {
+      return "Invalid parameter. Please use 'true', 'false', 'on', or 'off'.";
     }
 
-    PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowCaptions", captionsBool);
-    return $"Setting show captions option to {captionsBool}.";
+    PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowCaptions", parsed.Value);
+    return $"Setting show captions option to {parsed.Value}.";
   }
 }

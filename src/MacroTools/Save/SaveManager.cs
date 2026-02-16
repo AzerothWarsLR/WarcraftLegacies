@@ -45,13 +45,15 @@ public static class SaveManager
       save.ShowCaptions = true;
     }
     save.GetPlayer().ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, save.CamDistance, 1);
+    save.GetPlayer().GetPlayerSettings().ShowQuestText = save.ShowQuestText;
+    save.GetPlayer().GetPlayerSettings().PlayDialogue = save.PlayDialogue;
+    save.GetPlayer().GetPlayerSettings().ShowCaptions = save.ShowCaptions;
 
-    // If the load result is anything except success, the save will be a newly created object
     if (loadResult == LoadResult.FailedHash)
     {
       Console.WriteLine($"Validating save file for {save.GetPlayer().Name} failed! The game should probably be restarted.");
     }
-    // Extension method for determining whether the load result is any of the failed states
+
     if (loadResult.Failed())
     {
       Console.WriteLine("An existing save failed to load correctly!");

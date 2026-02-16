@@ -5,7 +5,7 @@ using MacroTools.Extensions;
 namespace WarcraftLegacies.Source.Commands;
 
 /// <summary>
-/// A <see cref="Command"/> that sets the player's camera to a specific height.
+/// A <see cref="Command"/> that sets the player's camera to a specific height or preset.
 /// </summary>
 public sealed class Cam : Command
 {
@@ -19,19 +19,28 @@ public sealed class Cam : Command
   public override CommandType Type => CommandType.Normal;
 
   /// <inheritdoc />
-  public override string Description => "Sets your camera zoom to the specified distance.";
+  public override string Description =>
+    "Sets your camera zoom to a specified distance (number between 700–2701 or presets like 'near', 'medium', 'far').";
 
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var cameraHeight = parameters[0];
-    if (!int.TryParse(cameraHeight, out var cameraHeightInt))
+    var input = parameters[0].ToLowerInvariant();
+
+    int? parsedHeight = input switch
     {
-      return "You must specify a number as the first parameter.";
+      "near" => 1000,
+      "medium" => 1700,
+      "far" => 2400,
+      _ => int.TryParse(input, out var h) ? Math.Clamp(h, 700, 2701) : null
+    };
+
+    if (parsedHeight is null)
+    {
+      return "Invalid parameter. Please use a number between 700 and 2701, or one of the presets: 'near', 'medium', 'far'.";
     }
 
-    cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2701);
-    PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", cameraHeightInt);
-    return $"Setting camera height to {cameraHeightInt}.";
+    PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", parsedHeight.Value);
+    return $"Setting camera height to {parsedHeight.Value}.";
   }
 }
