@@ -140,7 +140,6 @@ public sealed class FontOfPower : Power
       Delay.Add(() =>
       {
         caster.Mana += manaRefund;
-        @event.ExpiredTimer.Dispose();
       });
     }
     else
