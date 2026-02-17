@@ -66,7 +66,7 @@ public static class GameTimeManager
   {
     _turnCount += 1;
 
-    if (_gameStarted == false)
+    if (!_gameStarted)
     {
       _gameStarted = true;
       GameStarted?.Invoke(null, EventArgs.Empty);
