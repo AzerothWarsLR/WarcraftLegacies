@@ -42,6 +42,12 @@
       "Value": "nfre"
     },
     {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgShaman.blp"
