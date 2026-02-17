@@ -96,13 +96,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Witch Doctors\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Stasis Trap."
+      "Value": "Increases Witch Doctors\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Stasis Trap."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Witch Doctors\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Healing Ward."
+      "Value": "Increases Witch Doctors\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Healing Ward."
     }
   ]
 }

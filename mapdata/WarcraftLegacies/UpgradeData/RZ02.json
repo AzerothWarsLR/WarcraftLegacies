@@ -125,13 +125,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadow Weavers\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Rejuvenation."
+      "Value": "Increases Shadow Weavers\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Rejuvenation."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadow Weavers\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Ground Shackles."
+      "Value": "Increases Shadow Weavers\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Ground Shackles."
     }
   ]
 }

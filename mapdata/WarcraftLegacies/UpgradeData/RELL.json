@@ -125,13 +125,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Lurking Tempest\u0027s mana capacity, mana regeneration rate and gives the ability Lightning Shield."
+      "Value": "Increases Lurking Tempest\u0027s mana capacity and mana regeneration rate, and gives the ability Lightning Shield."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Lurking Tempest\u0027s mana capacity, mana regeneration rate and gives the ability Storm Cloud."
+      "Value": "Increases Lurking Tempest\u0027s mana capacity and mana regeneration rate, and gives the ability Storm Cloud."
     }
   ]
 }

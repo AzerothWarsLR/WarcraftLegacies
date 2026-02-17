@@ -113,13 +113,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Fateweavers\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Purge."
+      "Value": "Increases Fateweavers\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Purge."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Fateweavers\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Inner Fire"
+      "Value": "Increases Fateweavers\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Inner Fire"
     }
   ]
 }

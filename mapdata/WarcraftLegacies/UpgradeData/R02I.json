@@ -125,13 +125,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Warlock\u0027s mana capacity, mana regeneration rate and gives them the ability to cast Devour Magic."
+      "Value": "Increases Warlock\u0027s mana capacity and mana regeneration rate, and gives them the ability to cast Devour Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Warlock\u0027s mana capacity, mana regeneration rate and gives them the ability to cast Soulburn."
+      "Value": "Increases Warlock\u0027s mana capacity and mana regeneration rate, and gives them the ability to cast Soulburn."
     }
   ]
 }

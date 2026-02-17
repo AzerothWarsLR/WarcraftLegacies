@@ -106,13 +106,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Banshees\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Anti-magic Shell."
+      "Value": "Increases Banshees\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Anti-magic Shell."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Banshees\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Possession."
+      "Value": "Increases Banshees\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Possession."
     },
     {
       "Level": 3,

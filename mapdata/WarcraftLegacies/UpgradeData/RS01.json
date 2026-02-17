@@ -113,13 +113,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Tunnelers\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Dispel Magic."
+      "Value": "Increases Tunnelers\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Tunnelers\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Stone Armor."
+      "Value": "Increases Tunnelers\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Stone Armor."
     }
   ]
 }

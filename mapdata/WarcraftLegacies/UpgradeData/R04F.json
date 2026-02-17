@@ -125,13 +125,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate and gives them the Dispel Magic ability."
+      "Value": "Increases Inquisitor\u0027s mana capacity and mana regeneration rate, and gives them the Dispel Magic ability."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate and gives them the Inner Fire ability."
+      "Value": "Increases Inquisitor\u0027s mana capacity and mana regeneration rate, and gives them the Inner Fire ability."
     }
   ]
 }
