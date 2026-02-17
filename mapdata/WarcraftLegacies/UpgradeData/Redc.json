@@ -56,6 +56,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": 2020631143,
       "Value": 0
     },
@@ -81,13 +86,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases their Night Elf Form\u0027s mana capacity, mana regeneration rate, hit points and gives them the ability Rejuvenation."
+      "Value": "Increases their Night Elf Form\u0027s mana capacity and mana regeneration rate, and gives them the ability Rejuvenation."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases their Night Elf Form\u0027s mana capacity, mana regeneration rate, hit points and gives them the ability Summon Bear."
+      "Value": "Increases their Night Elf Form\u0027s mana capacity and mana regeneration rate, and gives them the ability Summon Bear."
     }
   ]
 }

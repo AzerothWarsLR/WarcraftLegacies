@@ -65,6 +65,11 @@
       "Value": "R00K"
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
@@ -122,13 +127,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spiritual Guidance."
+      "Value": "Increases Shadowpriests\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Spiritual Guidance."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Windfury."
+      "Value": "Increases Shadowpriests\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Windfury."
     }
   ]
 }

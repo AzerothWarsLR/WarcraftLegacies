@@ -62,6 +62,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": 2020631143,
       "Value": 1
     },
@@ -87,13 +92,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Sorceresses\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Summon Fire Elemental."
+      "Value": "Increases Sorceresses\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Summon Fire Elemental."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Sorceresses\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Soul Burn."
+      "Value": "Increases Sorceresses\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Soul Burn."
     }
   ]
 }

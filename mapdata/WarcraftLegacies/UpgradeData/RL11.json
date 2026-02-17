@@ -69,6 +69,11 @@
       "Value": "u022"
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
@@ -126,13 +131,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Tol\u0027vir Statues\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Siphon Mana."
+      "Value": "Increases Tol\u0027vir Statues\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Siphon Mana."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Tol\u0027vir Statues\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Mana Burn."
+      "Value": "Increases Tol\u0027vir Statues\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Mana Burn."
     },
     {
       "Id": 2020631143,

@@ -73,6 +73,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": 2020631143,
       "Value": 1
     },
@@ -98,13 +103,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Flamekeeper\u0027s mana capacity, hit points and gives them the ability to cast Crimson Renewal."
+      "Value": "Increases Flamekeeper\u0027s mana capacity and gives them the ability to cast Crimson Renewal."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Flamekeeper\u0027s mana capacity, hit points and gives them the ability to cast Flame Shield."
+      "Value": "Increases Flamekeeper\u0027s mana capacity and gives them the ability to cast Flame Shield."
     },
     {
       "Level": 1,
