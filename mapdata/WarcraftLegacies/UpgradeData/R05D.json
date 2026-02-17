@@ -63,6 +63,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
@@ -84,13 +89,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Monks\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spiritual Guidance."
+      "Value": "Increases Monks\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Spiritual Guidance."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Monks\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Resurrection."
+      "Value": "Increases Monks\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Resurrection."
     },
     {
       "Level": 1,

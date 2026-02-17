@@ -74,6 +74,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
@@ -135,13 +140,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Elementalist\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Summon Earth Elemental."
+      "Value": "Increases Elementalist\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Summon Earth Elemental."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Elementalist\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Frost Armor."
+      "Value": "Increases Elementalist\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Frost Armor."
     }
   ]
 }

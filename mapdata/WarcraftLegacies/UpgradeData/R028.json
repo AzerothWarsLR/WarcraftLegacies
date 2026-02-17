@@ -63,6 +63,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
@@ -120,13 +125,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Succubi\u0027s mana capacity, mana regeneration rate, hit points and gives them the ability to cast Dispel."
+      "Value": "Increases Succubi\u0027s mana capacity, mana regeneration rate and gives them the ability to cast Dispel."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Succubi\u0027s mana capacity, mana regeneration rate, hit points and gives them the ability to cast Mind Flay."
+      "Value": "Increases Succubi\u0027s mana capacity, mana regeneration rate and gives them the ability to cast Mind Flay."
     }
   ]
 }

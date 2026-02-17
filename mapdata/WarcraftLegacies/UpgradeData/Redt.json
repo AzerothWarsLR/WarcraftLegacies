@@ -66,6 +66,11 @@
       "Value": ""
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": 2020631143,
       "Value": 0
     },
@@ -97,13 +102,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Druid of the Talons\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability Dispel Magic."
+      "Value": "Increases Druid of the Talons\u0027 mana capacity, mana regeneration rate and gives them the ability Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Druids of the Talons\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Invoke Spiders."
+      "Value": "Increases Druids of the Talons\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Invoke Spiders."
     }
   ]
 }

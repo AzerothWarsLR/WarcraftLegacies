@@ -58,6 +58,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
@@ -86,6 +91,18 @@
       "Id": 829453415,
       "Type": 3,
       "Value": "Research Witch Doctor Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Witch Doctors\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Stasis Trap."
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Increases Witch Doctors\u0027 mana capacity, mana regeneration rate and gives them the ability to cast Healing Ward."
     }
   ]
 }
