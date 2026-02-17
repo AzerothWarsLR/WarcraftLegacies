@@ -1,10 +1,31 @@
 {
-  "OldId": 2004045377,
-  "NewId": 1347760193,
+  "OldId": 1702316097,
+  "NewId": 875580227,
   "Unk": [
     0
   ],
   "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 828733256,
+      "Type": 3,
+      "Value": "n08J"
+    },
     {
       "Level": 1,
       "Id": 1718968929,
@@ -23,25 +44,17 @@
       "Value": 100
     },
     {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 845510472,
-      "Value": 3
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell,slam"
     },
     {
-      "Id": 1919248481,
+      "Id": 2020631137,
       "Value": 0
     },
     {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "nightelf"
-    },
-    {
-      "Level": 1,
-      "Id": 828733256,
-      "Type": 3,
-      "Value": "n08J"
+      "Id": 2020635233,
+      "Value": 0
     },
     {
       "Id": 1953653089,
@@ -49,9 +62,19 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlue.blp"
     },
     {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon the Forest Spiders"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl"
+    },
+    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Brown Cenarius)"
+      "Value": "(Druids - Cenarius)"
     },
     {
       "Id": 2037082209,
@@ -59,15 +82,10 @@
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Summon the Forest Spiders"
-    },
-    {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Summon the Forest Spiders (|cffffcc00Q|r)"
+      "Value": "Summon the Forest Spiders"
     },
     {
       "Level": 1,
