@@ -301,7 +301,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump.|n|n|cffffcc00Level 1|r - Burns 150 mana.|n|cffffcc00Level 2|r - Burns 225 mana.|n|cffffcc00Level 3|r - Burns 300 mana.|n|cffffcc00Level 4|r - Burns 375 mana."
+      "Value": "Sends a bolt of negative energy that burns a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump.|n|n|cffffcc00Level 1|r - Burns 175 mana.|n|cffffcc00Level 2|r - Burns 250 mana.|n|cffffcc00Level 3|r - Burns 325 mana.|n|cffffcc00Level 4|r - Burns 400 mana."
     },
     {
       "Id": 1952543841,
@@ -330,25 +330,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 150 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 175 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 225 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 250 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 300 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 325 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 375 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 400 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 1,

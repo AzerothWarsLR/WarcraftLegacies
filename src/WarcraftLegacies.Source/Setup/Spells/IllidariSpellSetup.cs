@@ -62,7 +62,7 @@ public static class IllidariSpellSetup
     {
       ManaBurned = new LeveledAbilityField<int>
       {
-        Base = 75,
+        Base = 100,
         PerLevel = 75
       },
       MaximumBounces = 5,
