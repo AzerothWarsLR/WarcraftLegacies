@@ -48,6 +48,7 @@ public sealed class Rematerialization : Power
   private void OnUnitDeath()
   {
     var dyingUnit = @event.Unit;
+    var unitOwner = dyingUnit.Owner;
     if (GetRandomReal(0, 1) > _chance
         || !EligibilityCondition(dyingUnit)
         || _noReturnRect.Contains(dyingUnit.GetPosition())
@@ -55,7 +56,8 @@ public sealed class Rematerialization : Power
         || dyingUnit.IsUnitType(unittype.Hero)
         || dyingUnit.IsUnitType(unittype.Mechanical)
         || dyingUnit.IsIllusion
-        || dyingUnit.IsUnitType(unittype.Summoned))
+        || dyingUnit.IsUnitType(unittype.Summoned)
+        || unitOwner.SlotState != playerslotstate.Playing)
     {
       return;
     }

@@ -191,7 +191,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Damages everything in its area of effect by a percentage of its base hit points per second. Also destroys trees.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - Decays for 4% hit points.|n|cffffcc00Level 2|r - Decays for 5% hit points.|n|cffffcc00Level 3|r - Decays for 6% hit points."
+      "Value": "Damages everything in its area of effect by a percentage of its base hit points per second.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - Decays for 4% hit points.|n|cffffcc00Level 2|r - Decays for 5% hit points.|n|cffffcc00Level 3|r - Decays for 6% hit points."
     },
     {
       "Level": 1,
@@ -215,13 +215,19 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA2,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur2\u003E seconds."
+      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA2,%\u003E% of its base hit points per second.|nLasts \u003CAUdd,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA3,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur3\u003E seconds."
+      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA3,%\u003E% of its base hit points per second.|nLasts \u003CAUdd,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA1,%\u003E% of its base hit points per second.|nLasts \u003CAUdd,Dur1\u003E seconds."
     }
   ]
 }
