@@ -12,12 +12,12 @@ public sealed class GameTimeManagerTests : IDisposable
   }
 
   [Theory]
-  [InlineData(0f, 0)]
-  [InlineData(60f, 1)]
-  [InlineData(120f, 2)]
-  [InlineData(59f, 0)]
-  [InlineData(119f, 1)]
-  public void ConvertGameTimeToTurn_ReturnsNumberOfCompletedTurns(float gameTime, int expectedTurn)
+  [InlineData(0, 0)]
+  [InlineData(60, 1)]
+  [InlineData(120, 2)]
+  [InlineData(59, 0)]
+  [InlineData(119, 1)]
+  public void ConvertGameTimeToTurn_ReturnsNumberOfCompletedTurns(int gameTime, int expectedTurn)
   {
     var result = GameTimeManager.ConvertGameTimeToTurn(gameTime);
 

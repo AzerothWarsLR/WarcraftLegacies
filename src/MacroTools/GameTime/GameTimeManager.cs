@@ -5,7 +5,7 @@ namespace MacroTools.GameTime;
 /// <summary>Counts the elapsed game time, displayed in number of turns passed.</summary>
 public static class GameTimeManager
 {
-  public const float TurnDuration = 60;
+  public const int TurnDuration = 60;
 
   /// <summary>
   /// How long after game start to actually show the timer.
@@ -15,7 +15,7 @@ public static class GameTimeManager
   //This must be after the Multiboard is shown or the Multiboard will break
   private static timerdialog? _turnTimerDialog;
   private static int _turnCount;
-  private static float _currentTime;
+  private static int _currentTime;
   private static bool _gameStarted;
 
   /// <summary>Fired when a turn ends.</summary>
@@ -44,7 +44,7 @@ public static class GameTimeManager
     });
   }
 
-  public static int ConvertGameTimeToTurn(float gameTime) => (int)Math.Floor(gameTime / TurnDuration);
+  public static int ConvertGameTimeToTurn(int gameTime) => gameTime / TurnDuration;
 
   /// <summary>What turn it is right now.</summary>
   public static int GetTurn() => _turnCount;
