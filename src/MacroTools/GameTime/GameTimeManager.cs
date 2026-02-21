@@ -7,13 +7,7 @@ public static class GameTimeManager
 {
   public const int TurnDuration = 60;
 
-  /// <summary>
-  /// How long after game start to actually show the timer.
-  /// </summary>
-  private const float TimerDelay = 2;
-
-  //This must be after the Multiboard is shown or the Multiboard will break
-  private static timerdialog? _turnTimerDialog;
+  private static timer? _turnTimer;
   private static int _turnCount;
   private static bool _gameStarted;
 
@@ -26,24 +20,38 @@ public static class GameTimeManager
   /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
   public static void Start()
   {
-    timer.Create().Start(0, false, () =>
+    if (_turnTimer != null)
     {
-      var turnTimer = timer.Create();
-      turnTimer.Start(TurnDuration, true, EndTurn);
-      _turnTimerDialog = timerdialog.Create(turnTimer);
-      @event.ExpiredTimer.Dispose();
-    });
+      throw new InvalidOperationException($"{nameof(GameTimeManager)} has already been initialized.");
+    }
 
-    timer.Create().Start(TimerDelay, false, () =>
-    {
-      _turnTimerDialog.IsDisplayed = true;
-      _turnTimerDialog.SetTitle("Game starts in:");
-      @event.ExpiredTimer.Dispose();
-    });
+    _turnTimer = timer.Create();
+    _turnTimer.Start(TurnDuration, true, EndTurn);
   }
 
   /// <summary>What turn it is right now.</summary>
   public static int GetTurn() => _turnCount;
+
+  /// <summary>
+  /// Creates a <see cref="timerdialog"/> attached to the turn timer.
+  /// </summary>
+  /// <exception cref="InvalidOperationException">
+  /// Thrown if the <see cref="GameTimeManager"/> has not been initialized.
+  /// </exception>
+  /// <remarks>
+  /// <see cref="Start"/> must be called before invoking this method. The returned
+  /// dialog reflects the countdown of the current turn, whose duration is defined
+  /// by <see cref="TurnDuration"/>.
+  /// </remarks>
+  public static timerdialog CreateDialog()
+  {
+    if (_turnTimer == null)
+    {
+      throw new InvalidOperationException($"{nameof(GameTimeManager)} has not been initialized. Call {nameof(Start)} before creating a timer dialog.");
+    }
+
+    return timerdialog.Create(_turnTimer);
+  }
 
   /// <summary>Skips the game forward a number of turns.</summary>
   public static void SkipTurns(int turnSkip)
@@ -62,11 +70,6 @@ public static class GameTimeManager
     {
       _gameStarted = true;
       GameStarted?.Invoke(null, EventArgs.Empty);
-    }
-
-    if (_turnTimerDialog != null)
-    {
-      _turnTimerDialog.SetTitle($"Turn {_turnCount}");
     }
 
     TurnEnded?.Invoke(null, EventArgs.Empty);

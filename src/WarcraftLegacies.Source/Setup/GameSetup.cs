@@ -53,6 +53,7 @@ public static class GameSetup
     HintConfig.Setup();
     QuestMenuSetup.Setup();
     GameTimeManager.Start();
+    GameTimeDialog.Setup();
 
     MapFlagSetup.Setup();
     InfoQuests.Setup();
