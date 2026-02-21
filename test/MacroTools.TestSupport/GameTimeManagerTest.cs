@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using MacroTools.GameTime;
 
 namespace MacroTools.TestSupport;
 
@@ -11,8 +12,8 @@ public static class GameTimeManagerTest
   [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_gameStarted")]
   private static extern ref bool GameStartedField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
 
-  [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_turnCount")]
-  private static extern ref int TurnCountField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
+  [UnsafeAccessor(UnsafeAccessorKind.StaticMethod, Name = "set_Turn")]
+  private static extern void TurnSetter([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _, int value);
 
   [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "GameStarted")]
   private static extern ref EventHandler? GameStartedHandler([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
@@ -26,10 +27,10 @@ public static class GameTimeManagerTest
     set => GameStartedField() = value;
   }
 
-  public static int TurnCount
+  public static int Turn
   {
-    get => TurnCountField();
-    set => TurnCountField() = value;
+    get => GameTimeManager.Turn;
+    set => TurnSetter(null, value);
   }
 
   public static void RaiseGameStarted()
@@ -45,7 +46,7 @@ public static class GameTimeManagerTest
   public static void Reset()
   {
     GameStarted = false;
-    TurnCount = 0;
+    Turn = 0;
     TurnEndedHandler() = null;
     GameStartedHandler() = null;
   }

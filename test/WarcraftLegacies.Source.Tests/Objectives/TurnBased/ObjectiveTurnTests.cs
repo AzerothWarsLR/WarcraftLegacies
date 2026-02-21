@@ -25,7 +25,7 @@ public sealed class ObjectiveTurnTests : IDisposable
   {
     // Arrange
     var objective = new ObjectiveTurn(5) { ShowsInQuestLog = false };
-    GameTimeManagerTest.TurnCount = 5;
+    GameTimeManagerTest.Turn = 5;
 
     // Act
     GameTimeManagerTest.RaiseTurnEnded();
@@ -41,11 +41,11 @@ public sealed class ObjectiveTurnTests : IDisposable
     var progressChangedCalls = 0;
     var objective = new ObjectiveTurn(5) { ShowsInQuestLog = false };
     objective.ProgressChanged += (_, _) => progressChangedCalls++;
-    GameTimeManagerTest.TurnCount = 5;
+    GameTimeManagerTest.Turn = 5;
     GameTimeManagerTest.RaiseTurnEnded();
 
     // Act
-    GameTimeManagerTest.TurnCount++;
+    GameTimeManagerTest.Turn++;
     GameTimeManagerTest.RaiseTurnEnded();
 
     // Assert
