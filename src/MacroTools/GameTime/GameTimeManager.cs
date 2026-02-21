@@ -15,7 +15,6 @@ public static class GameTimeManager
   //This must be after the Multiboard is shown or the Multiboard will break
   private static timerdialog? _turnTimerDialog;
   private static int _turnCount;
-  private static int _currentTime;
   private static bool _gameStarted;
 
   /// <summary>Fired when a turn ends.</summary>
@@ -29,7 +28,6 @@ public static class GameTimeManager
   {
     timer.Create().Start(0, false, () =>
     {
-      timer.Create().Start(1, true, GameTick);
       var turnTimer = timer.Create();
       turnTimer.Start(TurnDuration, true, EndTurn);
       _turnTimerDialog = timerdialog.Create(turnTimer);
@@ -44,18 +42,12 @@ public static class GameTimeManager
     });
   }
 
-  public static int ConvertGameTimeToTurn(int gameTime) => gameTime / TurnDuration;
-
   /// <summary>What turn it is right now.</summary>
   public static int GetTurn() => _turnCount;
-
-  /// <returns>The number of seconds that have elapsed since the start of the game</returns>
-  public static float GetGameTime() => _currentTime;
 
   /// <summary>Skips the game forward a number of turns.</summary>
   public static void SkipTurns(int turnSkip)
   {
-    _currentTime += TurnDuration * turnSkip;
     for (var i = 0; i < turnSkip; i++)
     {
       EndTurn();
@@ -79,6 +71,4 @@ public static class GameTimeManager
 
     TurnEnded?.Invoke(null, EventArgs.Empty);
   }
-
-  private static void GameTick() => _currentTime += 1;
 }
