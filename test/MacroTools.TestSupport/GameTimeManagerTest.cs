@@ -11,9 +11,6 @@ public static class GameTimeManagerTest
   [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_gameStarted")]
   private static extern ref bool GameStartedField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
 
-  [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_currentTime")]
-  private static extern ref int GameTimeField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
-
   [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_turnCount")]
   private static extern ref int TurnCountField([UnsafeAccessorType($"{Namespace}.{Type}, {Assembly}")] object? _ = null);
 
@@ -27,12 +24,6 @@ public static class GameTimeManagerTest
   {
     get => GameStartedField();
     set => GameStartedField() = value;
-  }
-
-  public static int GameTime
-  {
-    get => GameTimeField();
-    set => GameTimeField() = value;
   }
 
   public static int TurnCount
@@ -54,7 +45,6 @@ public static class GameTimeManagerTest
   public static void Reset()
   {
     GameStarted = false;
-    GameTime = 0;
     TurnCount = 0;
     TurnEndedHandler() = null;
     GameStartedHandler() = null;
