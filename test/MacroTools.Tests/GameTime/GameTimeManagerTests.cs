@@ -19,7 +19,7 @@ public sealed class GameTimeManagerTests : IDisposable
   {
     GameTimeManager.SkipTurns(turnsToSkip);
 
-    Assert.Equal(expectedTurn, GameTimeManager.GetTurn());
+    Assert.Equal(expectedTurn, GameTimeManager.Turn);
   }
 
   [Theory]

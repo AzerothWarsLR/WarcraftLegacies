@@ -21,7 +21,7 @@ public sealed class ObjectiveTurn : Objective
 
   private void CheckCompletion()
   {
-    if (GameTimeManager.GetTurn() < _targetTurn)
+    if (GameTimeManager.Turn < _targetTurn)
     {
       return;
     }

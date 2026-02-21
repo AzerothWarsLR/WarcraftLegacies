@@ -30,8 +30,7 @@ public static class PlayerElimination
   {
     GameTimeManager.TurnEnded += (_, _) =>
     {
-      var turn = GameTimeManager.GetTurn();
-      if (turn < EliminationStartTurn)
+      if (GameTimeManager.Turn < EliminationStartTurn)
       {
         return;
       }

@@ -35,7 +35,7 @@ public sealed class ObjectiveExpire : Objective
 
   private void OnTurnEnded()
   {
-    var currentTurn = GameTimeManager.GetTurn();
+    var currentTurn = GameTimeManager.Turn;
     if (currentTurn == _warningTurn)
     {
       OnWarning();

@@ -5,10 +5,17 @@ namespace MacroTools.GameTime;
 /// <summary>Counts the elapsed game time, displayed in number of turns passed.</summary>
 public static class GameTimeManager
 {
+  /// <summary>
+  /// The duration of a single turn, in seconds.
+  /// </summary>
   public const int TurnDuration = 60;
 
+  /// <summary>
+  /// Gets the current turn number.
+  /// </summary>
+  public static int Turn { get; private set; }
+
   private static timer? _turnTimer;
-  private static int _turnCount;
   private static bool _gameStarted;
 
   /// <summary>Fired when a turn ends.</summary>
@@ -28,9 +35,6 @@ public static class GameTimeManager
     _turnTimer = timer.Create();
     _turnTimer.Start(TurnDuration, true, EndTurn);
   }
-
-  /// <summary>What turn it is right now.</summary>
-  public static int GetTurn() => _turnCount;
 
   /// <summary>
   /// Creates a <see cref="timerdialog"/> attached to the turn timer.
@@ -64,7 +68,7 @@ public static class GameTimeManager
 
   private static void EndTurn()
   {
-    _turnCount += 1;
+    Turn++;
 
     if (!_gameStarted)
     {
