@@ -48,12 +48,12 @@ public static class CheatSkipCinematic
 
     _skipTrigger.AddAction(Actions);
 
-    GameTimeManager.GameStarted += (_, _) =>
+    GameTimeManager.OnTurn(1, () =>
     {
       if (_skipTrigger != null)
       {
         _skipTrigger.Dispose();
       }
-    };
+    });
   }
 }

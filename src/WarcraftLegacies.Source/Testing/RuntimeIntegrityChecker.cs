@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.ControlPoints;
+﻿using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Utils;
@@ -16,7 +15,7 @@ public static class RuntimeIntegrityChecker
   /// </summary>
   public static void Setup()
   {
-    GameTimeManager.GameStarted += RunGameStartChecks;
+    GameTimeManager.OnTurn(1, RunGameStartChecks);
     CheckUndefeatedResearchNames();
     CheckQuestResearchNames();
   }
@@ -24,10 +23,9 @@ public static class RuntimeIntegrityChecker
   /// <summary>
   /// Run checks that are only relevant once the game has finished initializing.
   /// </summary>
-  private static void RunGameStartChecks(object? sender, EventArgs eventArgs)
+  private static void RunGameStartChecks()
   {
     NoNeutralPassiveVulnerableControlPoints();
-    GameTimeManager.GameStarted -= RunGameStartChecks;
   }
 
   private static void NoNeutralPassiveVulnerableControlPoints()
