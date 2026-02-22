@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.GameTime;
 
 namespace WarcraftLegacies.Source.Rocks;
 
@@ -17,15 +18,12 @@ public static class RockSystem
   {
     _rockGroups.Add(rockGroup);
 
-    if (rockGroup.Expiry > 0) // Only use a timer if an expiry is set
+    if (rockGroup.Expiry <= 0)
     {
-      timer timer = timer.Create();
-      timer.Start(rockGroup.Expiry, false, () =>
-      {
-        rockGroup.Destroy();
-        _rockGroups.Remove(rockGroup);
-      });
+      return;
     }
+
+    GameTimeManager.OnTurn(rockGroup.Expiry, () => Remove(rockGroup));
   }
 
   /// <summary>
