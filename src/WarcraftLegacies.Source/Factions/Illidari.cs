@@ -393,6 +393,7 @@ public sealed class Illidari : Faction
       var kiljaedensCommand = AddQuest(new QuestKiljaedensCommand(scourge, druids, ahnqiraj, AllLegends.Ahnqiraj.Cthun,
         AllLegends.Druids.Nordrassil, AllLegends.Naga.Illidan));
       this.DisplayDiscovered(kiljaedensCommand, true);
+      @event.ExpiredTimer.Dispose();
     });
   }
 }
