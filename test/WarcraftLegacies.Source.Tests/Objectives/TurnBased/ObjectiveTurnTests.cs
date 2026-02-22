@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.GameTime;
+using MacroTools.Quests;
 using MacroTools.TestSupport;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
@@ -15,8 +16,12 @@ public sealed class ObjectiveTurnTests : IDisposable
   [Fact]
   public void Constructor_SetsDescription()
   {
+    // Arrange
+
+    // Act
     var objective = new ObjectiveTurn(5);
 
+    // Assert
     Assert.Equal("Turn 5 has started", objective.Description);
   }
 
@@ -24,11 +29,10 @@ public sealed class ObjectiveTurnTests : IDisposable
   public void TurnEnded_AtTargetTurn_CompletesObjective()
   {
     // Arrange
-    var objective = new ObjectiveTurn(5) { ShowsInQuestLog = false };
-    GameTimeManagerTest.Turn = 5;
+    var objective = new ObjectiveTurn(1) { ShowsInQuestLog = false };
 
     // Act
-    GameTimeManagerTest.RaiseTurnEnded();
+    GameTimeManager.SkipTurns(1);
 
     // Assert
     Assert.Equal(QuestProgress.Complete, objective.Progress);
@@ -39,14 +43,11 @@ public sealed class ObjectiveTurnTests : IDisposable
   {
     // Arrange
     var progressChangedCalls = 0;
-    var objective = new ObjectiveTurn(5) { ShowsInQuestLog = false };
+    var objective = new ObjectiveTurn(1) { ShowsInQuestLog = false };
     objective.ProgressChanged += (_, _) => progressChangedCalls++;
-    GameTimeManagerTest.Turn = 5;
-    GameTimeManagerTest.RaiseTurnEnded();
 
     // Act
-    GameTimeManagerTest.Turn++;
-    GameTimeManagerTest.RaiseTurnEnded();
+    GameTimeManager.SkipTurns(2);
 
     // Assert
     Assert.Equal(1, progressChangedCalls);

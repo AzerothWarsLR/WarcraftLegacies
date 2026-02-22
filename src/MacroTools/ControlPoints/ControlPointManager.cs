@@ -17,7 +17,7 @@ public sealed class ControlPointManager
 {
   static ControlPointManager()
   {
-    GameTimeManager.GameStarted += (_, _) =>
+    GameTimeManager.OnTurn(1, () =>
     {
       timer.Create().Start(Period, true, () =>
       {
@@ -30,7 +30,7 @@ public sealed class ControlPointManager
           }
         }
       });
-    };
+    });
   }
 
   /// <summary>
@@ -271,7 +271,7 @@ public sealed class ControlPointManager
 
   private void RegisterControlLevelGrowthOverTime(ControlPoint controlPoint)
   {
-    GameTimeManager.TurnEnded += (_, _) =>
+    GameTimeManager.OnTurnRepeating(1, () =>
     {
       if (controlPoint.Owner == player.NeutralAggressive ||
           controlPoint.Owner == player.NeutralPassive ||
@@ -285,7 +285,7 @@ public sealed class ControlPointManager
       effect effect = effect.Create(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", controlPoint.Unit.X, controlPoint.Unit.Y);
       effect.Scale = 1.5f;
       EffectSystem.Add(effect);
-    };
+    });
   }
 
   private void ConfigureControlPointStats(ControlPoint controlPoint, bool initialize)

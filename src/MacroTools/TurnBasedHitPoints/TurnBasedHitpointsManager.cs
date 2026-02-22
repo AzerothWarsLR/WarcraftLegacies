@@ -8,7 +8,7 @@ namespace MacroTools.TurnBasedHitPoints;
 public static class TurnBasedHitpointsManager
 {
   /// <summary>Past this turn, units will not gain maximum hit points.</summary>
-  private const float TurnLimit = 45;
+  private const int TurnLimit = 45;
 
   private static readonly Dictionary<unit, TurnBasedHitpointData> _unitData = new();
   private static bool _intialized;
@@ -31,7 +31,7 @@ public static class TurnBasedHitpointsManager
       return;
     }
 
-    GameTimeManager.TurnEnded += OnTurnEnded;
+    GameTimeManager.OnTurnRange(1, TurnLimit, OnTurnEnded);
     _intialized = true;
   }
 
@@ -43,7 +43,7 @@ public static class TurnBasedHitpointsManager
     }
   }
 
-  private static void OnTurnEnded(object? sender, EventArgs eventArgs)
+  private static void OnTurnEnded()
   {
     var turn = GameTimeManager.Turn;
     foreach (var (unit, turnBasedHitpointData) in _unitData)
@@ -56,11 +56,6 @@ public static class TurnBasedHitpointsManager
       var heal = turnBasedHitpointData.BaseHitPoints * turnBasedHitpointData.HitPointPercentagePerTurn;
       var value1 = (int)Math.Ceiling(unit.Life + heal);
       unit.Life = value1;
-    }
-
-    if (turn >= TurnLimit)
-    {
-      GameTimeManager.TurnEnded -= OnTurnEnded;
     }
   }
 
