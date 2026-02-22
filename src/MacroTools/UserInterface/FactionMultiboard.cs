@@ -55,7 +55,11 @@ public sealed class FactionMultiboard
     }
 
     timer timer = timer.Create();
-    timer.Start(2, false, () => { Instance = new FactionMultiboard(ColumnCount, 3, Title); });
+    timer.Start(2, false, () =>
+    {
+      Instance = new FactionMultiboard(ColumnCount, 3, Title);
+      @event.ExpiredTimer.Dispose();
+    });
 
     PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
     FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;

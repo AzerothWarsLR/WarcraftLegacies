@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Quests;
@@ -13,37 +12,22 @@ public sealed class ObjectiveExpire : Objective
 {
   private const int WarningTurnsBeforeExpiry = 2;
 
-  private readonly int _expirationTurn;
-  private readonly int _warningTurn;
   private readonly string _questName;
   private readonly List<Faction> _assignedFactions = new();
-  private readonly EventHandler _turnEndedHandler;
 
   /// <param name="expirationTurn">The turn on which this objective will fail</param>
   /// <param name="questName">The name of the quest this objective belongs to</param>
   public ObjectiveExpire(int expirationTurn, string questName)
   {
     Description = $"Turn {expirationTurn} hasn't started";
-    _expirationTurn = expirationTurn;
-    _warningTurn = expirationTurn - WarningTurnsBeforeExpiry;
     _questName = questName;
     ShowsInPopups = false;
 
-    _turnEndedHandler = (_, _) => OnTurnEnded();
-    GameTimeManager.TurnEnded += _turnEndedHandler;
-  }
+    GameTimeManager.OnTurn(expirationTurn, OnExpire);
 
-  private void OnTurnEnded()
-  {
-    var currentTurn = GameTimeManager.Turn;
-    if (currentTurn == _warningTurn)
+    if (expirationTurn > WarningTurnsBeforeExpiry)
     {
-      OnWarning();
-    }
-
-    if (currentTurn >= _expirationTurn)
-    {
-      OnExpire();
+      GameTimeManager.OnTurn(expirationTurn - WarningTurnsBeforeExpiry, OnWarning);
     }
   }
 
@@ -56,7 +40,6 @@ public sealed class ObjectiveExpire : Objective
   private void OnExpire()
   {
     Progress = QuestProgress.Failed;
-    Dispose();
   }
 
   private void OnWarning()
@@ -74,10 +57,5 @@ public sealed class ObjectiveExpire : Objective
         assignedFactionPlayer.DisplayTextTo($"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in {WarningTurnsBeforeExpiry} turns.");
       }
     }
-  }
-
-  private void Dispose()
-  {
-    GameTimeManager.TurnEnded -= _turnEndedHandler;
   }
 }

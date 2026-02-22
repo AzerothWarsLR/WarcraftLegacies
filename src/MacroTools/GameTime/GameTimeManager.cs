@@ -17,11 +17,14 @@ public static class GameTimeManager
 
   private static timer? _turnTimer;
   private static bool _gameStarted;
+  private static readonly TurnScheduler _turnScheduler = new();
 
   /// <summary>Fired when a turn ends.</summary>
+  [Obsolete($"Use {nameof(OnTurn)}, {nameof(OnTurnRange)}, or {nameof(OnTurnRepeating)} instead.")]
   public static event EventHandler? TurnEnded;
 
   /// <summary>Fired when the game starts.</summary>
+  [Obsolete($"Use {nameof(OnTurn)}, {nameof(OnTurnRange)}, or {nameof(OnTurnRepeating)} instead.")]
   public static event EventHandler? GameStarted;
 
   /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
@@ -57,6 +60,24 @@ public static class GameTimeManager
     return timerdialog.Create(_turnTimer);
   }
 
+  /// <summary>Execute once on the given turn.</summary>
+  public static void OnTurn(int startTurn, Action callback, Func<bool>? condition = null)
+  {
+    _turnScheduler.Register(startTurn, callback, startTurn, 1, condition);
+  }
+
+  /// <summary>Execute repeatedly every N turns starting from startTurn, bounded.</summary>
+  public static void OnTurnRange(int startTurn, int endTurn, Action callback, int interval = 1, Func<bool>? condition = null)
+  {
+    _turnScheduler.Register(startTurn, callback, endTurn, interval, condition);
+  }
+
+  /// <summary>Execute repeatedly every N turns starting from startTurn, indefinitely.</summary>
+  public static void OnTurnRepeating(int startTurn, Action callback, int interval = 1, Func<bool>? condition = null)
+  {
+    _turnScheduler.Register(startTurn, callback, TurnCallback.Infinite, interval, condition);
+  }
+
   /// <summary>Skips the game forward a number of turns.</summary>
   public static void SkipTurns(int turnSkip)
   {
@@ -68,7 +89,7 @@ public static class GameTimeManager
 
   private static void EndTurn()
   {
-    Turn++;
+    _turnScheduler.Process(++Turn);
 
     if (!_gameStarted)
     {

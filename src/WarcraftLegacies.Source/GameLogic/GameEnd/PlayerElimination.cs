@@ -28,18 +28,13 @@ public static class PlayerElimination
   /// </remarks>
   public static void Setup()
   {
-    GameTimeManager.TurnEnded += (_, _) =>
+    GameTimeManager.OnTurnRepeating(EliminationStartTurn, static () =>
     {
-      if (GameTimeManager.Turn < EliminationStartTurn)
-      {
-        return;
-      }
-
       foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
         ProcessPlayerElimination(player);
       }
-    };
+    });
   }
 
   private static void ProcessPlayerElimination(player player)

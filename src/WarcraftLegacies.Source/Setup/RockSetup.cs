@@ -13,18 +13,18 @@ public static class RockSetup
   {
 
     //south rocks
-    RockSystem.Register(new RockGroup(Regions.KaliRock12, _rockChunkId, 0));
+    RockSystem.Register(new RockGroup(Regions.KaliRock12, _rockChunkId));
 
     //Northrend Rocks
-    RockSystem.Register(new RockGroup(Regions.NorthrendRock1, _rockChunkId, 360));
-    RockSystem.Register(new RockGroup(Regions.NorthrendRock2, _rockChunkId, 360));
-    RockSystem.Register(new RockGroup(Regions.NorthrendRock3, _rockChunkId, 360));
-    RockSystem.Register(new RockGroup(Regions.NorthrendRock4, _rockChunkId, 360));
+    RockSystem.Register(new RockGroup(Regions.NorthrendRock1, _rockChunkId, 6));
+    RockSystem.Register(new RockGroup(Regions.NorthrendRock2, _rockChunkId, 6));
+    RockSystem.Register(new RockGroup(Regions.NorthrendRock3, _rockChunkId, 6));
+    RockSystem.Register(new RockGroup(Regions.NorthrendRock4, _rockChunkId, 6));
 
     //AQ Rocks
-    RockSystem.Register(new RockGroup(Regions.AQ_Blockers, _rockChunkId, 0));
+    RockSystem.Register(new RockGroup(Regions.AQ_Blockers, _rockChunkId));
 
     //Bridge Rocks
-    RockSystem.Register(new RockGroup(Regions.BridgeAmbient, _rockChunkId, 1800));
+    RockSystem.Register(new RockGroup(Regions.BridgeAmbient, _rockChunkId, 30));
   }
 }
