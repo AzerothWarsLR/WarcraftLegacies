@@ -50,7 +50,11 @@ public sealed class GameModeManager
       }
 
       @event.ExpiredTimer.Dispose();
-      timer.Create().Start(VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
+      timer.Create().Start(VoteLength, false, () =>
+      {
+        ConcludeVote(dialog, buttonClickTriggers);
+        @event.ExpiredTimer.Dispose();
+      });
     }
 
     catch (Exception ex)

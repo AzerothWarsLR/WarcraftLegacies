@@ -29,6 +29,7 @@ public sealed class ObjectiveSelfExists : Objective
       {
         Progress = QuestProgress.Failed;
       }
+      @event.ExpiredTimer.Dispose();
     });
   }
 

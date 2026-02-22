@@ -47,6 +47,7 @@ public sealed class QuestBloodpact : QuestData
 
       _mannoroth.ForceCreate(player.NeutralAggressive, Regions.FountainUnlock.Center, 270);
       _grom.UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG;
+      @event.ExpiredTimer.Dispose();
     });
   }
 }
