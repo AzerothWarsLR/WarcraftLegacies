@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Rocks;
 public sealed class RockGroup
 {
   private readonly int _destructibleType;
-  public float Expiry { get; }
+  public int Expiry { get; }
   private readonly List<destructable> _rockGroup = new();
 
   public void Destroy()
@@ -32,7 +32,7 @@ public sealed class RockGroup
     enumDestructable.IsInvulnerable = true;
   }
 
-  public RockGroup(Rectangle area, int destructibleType, float expiry)
+  public RockGroup(Rectangle area, int destructibleType, int expiry = 0)
   {
     _destructibleType = destructibleType;
     Expiry = expiry;
