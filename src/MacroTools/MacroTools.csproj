@@ -21,4 +21,8 @@
       <ProjectReference Include="..\MacroTools.Shared\MacroTools.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <InternalsVisibleTo Include="MacroTools.Tests" />
+    </ItemGroup>
+
 </Project>
