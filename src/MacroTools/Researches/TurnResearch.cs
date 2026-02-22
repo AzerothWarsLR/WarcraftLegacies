@@ -1,4 +1,6 @@
-﻿namespace MacroTools.Researches;
+﻿using MacroTools.GameTime;
+
+namespace MacroTools.Researches;
 
 /// <summary>
 /// Research that is automatically granted to all players when a particular turn has passed.
@@ -20,19 +22,16 @@ public sealed class TurnResearch
   }
 
   /// <summary>
-  /// Registers a <see cref="TurnResearch"/> so that the game can grant it at the speciified time.
+  /// Registers a <see cref="TurnResearch"/> so that the game can grant it at the specified time.
   /// </summary>
   public static void Register(TurnResearch turnResearch)
   {
-    var turnTimer = timer.Create();
-    turnTimer.Start((turnResearch._turn + 1) * 60, false, () =>
+    GameTimeManager.OnTurn(turnResearch._turn, () =>
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         player.SetTechResearched(turnResearch._researchId, 1);
       }
-
-      @event.ExpiredTimer.Dispose();
     });
   }
 }
