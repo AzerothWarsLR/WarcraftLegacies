@@ -45,7 +45,7 @@ public sealed class QuestTitanJailors : QuestData
   /// </summary>
   private void RegisterRockGroups()
   {
-    _rockGroups.Add(new RockGroup(Regions.AQ_Blockers, FourCC("LTrc"), 0));
+    _rockGroups.Add(new RockGroup(Regions.AQ_Blockers, FourCC("LTrc")));
     foreach (var rockGroup in _rockGroups)
     {
       RockSystem.Register(rockGroup);

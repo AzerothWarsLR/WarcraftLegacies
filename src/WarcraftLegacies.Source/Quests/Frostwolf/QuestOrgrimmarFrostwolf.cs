@@ -31,7 +31,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
 
   private void RegisterRockGroups()
   {
-    _rockGroups.Add(new RockGroup(Regions.KaliRock12, FourCC("LTrc"), 0));
+    _rockGroups.Add(new RockGroup(Regions.KaliRock12, FourCC("LTrc")));
     foreach (var rockGroup in _rockGroups)
     {
       RockSystem.Register(rockGroup);
