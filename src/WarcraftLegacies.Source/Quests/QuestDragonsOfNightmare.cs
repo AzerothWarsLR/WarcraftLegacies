@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Sounds;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -23,7 +24,6 @@ public sealed class QuestDragonsOfNightmare : QuestData
   private readonly unit _waygateTwo;
   private readonly Rectangle _wayGateOneDestination;
   private readonly Rectangle _wayGateTwoDestination;
-  private readonly timer _timer;
 
   /// <summary>
   /// Initilaizes the quest <see cref="QuestDragonsOfNightmare"/>
@@ -56,14 +56,15 @@ public sealed class QuestDragonsOfNightmare : QuestData
     AddObjective(new ObjectiveKillUnit(nightmareDragonKalimdor));
     AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
     AddObjective(new ObjectiveTurn(6));
-    _timer = timer.Create();
-    _timer.Start(360, false, OnTimeElapsed);
+
+    // TODO: Attach callback to objective instead.
+    GameTimeManager.OnTurn(6, OnTurnsElapsed);
+
     IsFactionQuest = false;
   }
 
-  private void OnTimeElapsed()
+  private void OnTurnsElapsed()
   {
-    _timer.Dispose();
     foreach (var player in Util.EnumeratePlayers())
     {
       player.DisplayTextTo($"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
