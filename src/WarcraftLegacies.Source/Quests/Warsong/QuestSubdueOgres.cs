@@ -37,7 +37,7 @@ public sealed class QuestSubdueOgres : QuestData
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     _grom = grom;
-    PillageGoldReward = 900;
+    PillageGoldReward = 600;
     PillageExperienceReward = 3000;
   }
 

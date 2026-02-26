@@ -1,0 +1,75 @@
+{
+  "OldId": 1986544449,
+  "NewId": 842155085,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862741327,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu,organic"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RBEH"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Black Empire - Herald)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CMD22,DataB1\u003E times, healing \u003CMD22,DataA1\u003E damage on the primary target. Each jump heals less damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    }
+  ]
+}

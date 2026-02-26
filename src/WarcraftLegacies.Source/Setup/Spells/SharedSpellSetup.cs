@@ -1,5 +1,6 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup.Spells;

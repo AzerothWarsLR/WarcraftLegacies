@@ -2,11 +2,13 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.PreplacedWidgets;
+using MacroTools.Spells;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Factions;
 
@@ -39,11 +41,45 @@ public sealed class Sunfury : Faction
     };
     ProcessObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
   }
+  private static void RegisterSpells()
+  {
+    var resurgentFlameStrike = new ResurgentSpell(ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
+      ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, ORDER_FLAMESTRIKE)
+    {
+      Duration = 14,
+      Interval = 7
+    };
+    SpellRegistry.Register(resurgentFlameStrike);
 
+    var massBanish = new MassAnySpell(ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
+    {
+      DummyAbilityId = ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
+      DummyAbilityOrderId = ORDER_BANISH,
+      Radius = 250,
+      CastFilter = CastFilters.IsTargetOrganicAndAlive,
+      TargetType = SpellTargetType.Point
+    };
+    SpellRegistry.Register(massBanish);
+
+    var siphoningRitual = new SiphoningRitualSpell(ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
+    {
+      TargetCountBase = 24,
+      TargetCountLevel = 0,
+      LifeDrainedPerSecondBase = 30,
+      LifeDrainedPerSecondLevel = 10,
+      ManaDrainedPerSecondBase = 15,
+      ManaDrainedPerSecondLevel = 5,
+      Range = 800,
+      Radius = 225,
+      Interval = 0.1f
+    };
+    SpellRegistry.Register(siphoningRitual);
+  }
   /// <inheritdoc />
   public override void OnRegistered()
   {
     RegisterQuests();
+    RegisterSpells();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
