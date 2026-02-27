@@ -194,6 +194,15 @@ public sealed class UnreachableObjectCollection(
 
             break;
           }
+        case PlagueToss plagueToss:
+          {
+            for (var i = 1; i <= plagueToss.StatsLevels; i++)
+            {
+              RemoveWithChildren(plagueToss.DataWardUnitType[i]);
+            }
+
+            break;
+          }
         case Bearform bearform:
           {
             for (var i = 1; i <= bearform.StatsLevels; i++)
