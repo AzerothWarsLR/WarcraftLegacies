@@ -5,7 +5,7 @@ using MacroTools.Factions;
 namespace MacroTools.Quests;
 
 /// <summary>
-/// A heavily cutomized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
+/// A heavily customized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
 /// </summary>
 public abstract class QuestData
 {
@@ -400,6 +400,8 @@ public abstract class QuestData
     {
       Progress = QuestProgress.Incomplete;
     }
+
+    Console.WriteLine(this.Title + " became " + Progress.ToString());
   }
 
   public void AddObjective(Objective objective)
