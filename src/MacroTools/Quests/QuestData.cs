@@ -381,8 +381,13 @@ public abstract class QuestData
       }
     }
 
+    //If anything is failed, the quest is failed
+    if (anyFailed)
+    {
+      Progress = QuestProgress.Failed;
+    }
     //If anything is undiscovered, the quest is undiscovered
-    if (anyUndiscovered)
+    else if (anyUndiscovered)
     {
       Progress = QuestProgress.Undiscovered;
     }
@@ -391,17 +396,10 @@ public abstract class QuestData
     {
       Progress = QuestProgress.Complete;
     }
-    //If anything is failed, the quest is failed
-    else if (anyFailed)
-    {
-      Progress = QuestProgress.Failed;
-    }
     else
     {
       Progress = QuestProgress.Incomplete;
     }
-
-    Console.WriteLine(this.Title + " became " + Progress.ToString());
   }
 
   public void AddObjective(Objective objective)
