@@ -14,7 +14,7 @@ public static class Regions
   public static Rectangle AQFeralasUnlock { get; set; } = new Rectangle(-15968f, -12224f, -13056f, -10080f);
   public static Rectangle AQTempleUnlock { get; set; } = new Rectangle(-24128f, -18368f, -20864f, -15712f);
   public static Rectangle ArchimondeChannel { get; set; } = new Rectangle(-10048f, 10752f, -9856f, 10944f);
-  public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22688f, 1472f, -20608f);
+  public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22720f, 1184f, -20608f);
   public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
   public static Rectangle AshbringerForge { get; set; } = new Rectangle(10240f, -5440f, 10368f, -5312f);
   public static Rectangle AshenvaleAmbient { get; set; } = new Rectangle(-18560f, 544f, -9856f, 9120f);
@@ -350,7 +350,7 @@ public static class Regions
   public static Rectangle TyrHandAmbient { get; set; } = new Rectangle(19008f, 6592f, 22048f, 11648f);
   public static Rectangle TyrsFall { get; set; } = new Rectangle(5216f, 9280f, 5504f, 9568f);
   public static Rectangle TyrUnlock { get; set; } = new Rectangle(18336f, 6560f, 22592f, 9472f);
-  public static Rectangle UldumAmbiance { get; set; } = new Rectangle(-15712f, -20576f, -11552f, -16128f);
+  public static Rectangle UldumAmbiance { get; set; } = new Rectangle(-15712f, -20576f, -11872f, -16896f);
   public static Rectangle Undercity_Escape { get; set; } = new Rectangle(6048f, 8288f, 6400f, 8672f);
   public static Rectangle Undercity_Exterior_1 { get; set; } = new Rectangle(9248f, 7808f, 9600f, 8192f);
   public static Rectangle Undercity_Exterior_2 { get; set; } = new Rectangle(8576f, 7808f, 8928f, 8192f);

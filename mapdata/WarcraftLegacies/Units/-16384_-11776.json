@@ -3,9 +3,9 @@
     "TypeId": 1701668718,
     "Variation": 0,
     "Position": {
-      "X": 1280,
-      "Y": -21760,
-      "Z": 802.5
+      "X": -16576,
+      "Y": -12032,
+      "Z": 61.54362
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -33,6 +33,6 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 876
+    "CreationNumber": 1046
   }
 ]

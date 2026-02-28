@@ -131,7 +131,7 @@ public sealed class BlackEmpire : Faction
 
     var massBanish = new MassAnySpell(ABILITY_MD29_MASS_BANISH_BLACK_EMPIRE_ZA_QUL)
     {
-      DummyAbilityId = ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
+      DummyAbilityId = ABILITY_MD30_MASS_BANISH_BLACK_EMPIRE_ZA_QUL_DUMMY_CASTER,
       DummyAbilityOrderId = ORDER_BANISH,
       Radius = 250,
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
