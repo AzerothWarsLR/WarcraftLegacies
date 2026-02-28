@@ -85,6 +85,11 @@
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDireWolf.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }
