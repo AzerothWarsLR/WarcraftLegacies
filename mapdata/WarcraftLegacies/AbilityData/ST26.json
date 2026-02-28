@@ -200,7 +200,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(tess)"
+      "Value": "(Tess Greymane)"
     },
     {
       "Id": 1952542049,
@@ -229,7 +229,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "This hero\u0027s attacks fire multiple projectiles at different enemies. |n|n|cffffcc00Level 1|r - Attacks fire 3 projectiles.|n|cffffcc00Level 2|r - Attacks fire 4 projectiles.|n|cffffcc00Level 3|r - Attacks fire 5 projectiles.|n|cffffcc00Level 4|r - Attacks fire 6 projectiles."
+      "Value": "Causes this hero\u0027s attacks to fire additional projectiles at nearby enemy units.|n|n|cffffcc00Level 1|r - Attacks fire at up to 2 additional units.|n|cffffcc00Level 2|r - Attacks fire at up to 3 additional units.|n|cffffcc00Level 3|r - Attacks fire at up to 4 additional units.|n|cffffcc00Level 4|r - Attacks fire at up to 5 additional units."
     },
     {
       "Level": 1,
@@ -259,25 +259,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires attacks at \u003CST26,DataC1\u003E targets."
+      "Value": "Causes this hero\u0027s attacks to fire an additional projectile at up to 2 nearby enemy units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires attacks at \u003CST26,DataC2\u003E targets."
+      "Value": "Causes this hero\u0027s attacks to fire an additional projectile at up to 3 nearby enemy units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires attacks at \u003CST26,DataC3\u003E targets."
+      "Value": "Causes this hero\u0027s attacks to fire an additional projectile at up to 4 nearby enemy units."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires attacks at \u003CST26,DataC4\u003E targets. "
+      "Value": "Causes this hero\u0027s attacks to fire an additional projectile at up to 5 nearby enemy units."
     },
     {
       "Id": 1835101793,
