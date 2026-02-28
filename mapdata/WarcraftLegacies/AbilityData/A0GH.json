@@ -93,7 +93,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "This units attacks fire an extra projectile at every ranged unit nearby, up to \u003CA0GH,DataC1\u003E targets."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 5 nearby enemy air units."
     },
     {
       "Level": 2,
@@ -105,7 +105,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "This units attacks fire an extra projectile at every ranged unit nearby, up to \u003CA0GH,DataC2\u003E targets."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 8 nearby enemy air units."
     }
   ]
 }

@@ -123,7 +123,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives the tower the ability to fire multiple arrows at its enemies."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 4 nearby enemy units."
     }
   ]
 }

@@ -204,7 +204,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The building fires multiple glaives at targets. A total of 4 glaives are shot."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 5 nearby enemy units."
     },
     {
       "Level": 2,
