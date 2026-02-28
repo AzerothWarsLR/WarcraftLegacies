@@ -4,7 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf;
@@ -19,7 +19,7 @@ public sealed class QuestCrossroadsFrostwolf : QuestData
     @"ReplaceableTextures\CommandButtons\BTNBarracks.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N01T_NORTHERN_BARRENS));
-    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveExpire(10, Title));
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

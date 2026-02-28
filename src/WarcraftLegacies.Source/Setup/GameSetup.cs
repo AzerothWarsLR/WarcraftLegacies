@@ -53,6 +53,7 @@ public static class GameSetup
     HintConfig.Setup();
     QuestMenuSetup.Setup();
     GameTimeManager.Start();
+    GameTimeDialog.Setup();
 
     MapFlagSetup.Setup();
     InfoQuests.Setup();
@@ -80,6 +81,7 @@ public static class GameSetup
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
     CleanupUnoccupiedPlayerSlots.Setup();
+    PlayerElimination.Setup();
     PlayerLeaves.Setup();
     FloatingTextSetup.Setup(60, 10);
     AmbianceSetup.Setup();

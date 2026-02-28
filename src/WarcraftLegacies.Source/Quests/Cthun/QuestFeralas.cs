@@ -4,7 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Cthun;
@@ -21,7 +21,7 @@ public sealed class QuestFeralas : QuestData
     @"ReplaceableTextures\CommandButtons\BTNJungleBeast.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N00Q_SPINEBARK_GROVE));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = feralas.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 

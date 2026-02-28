@@ -130,14 +130,9 @@
       "Value": "Learn Legendary Warrior - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures/PassiveButtons/PASHolyStrikeRemake(Fix3).blp"
-    },
-    {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyStrikeRemake(Fix3).blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShalamayne_Anduin2.blp"
     },
     {
       "Level": 1,
@@ -164,6 +159,11 @@
     {
       "Id": 2020635233,
       "Value": 3
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASShalamayne_Anduin2.blp"
     }
   ]
 }

@@ -117,13 +117,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Ogre Magis\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Rejuvenation."
+      "Value": "Increases Ogre Magis\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Rejuvenation."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Ogre Magis\u0027  mana capacity, mana regeneration rate, hit points and gives them the ability to cast Healing Spray."
+      "Value": "Increases Ogre Magis\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Healing Spray."
     },
     {
       "Id": 2020631143,

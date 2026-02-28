@@ -4,7 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
@@ -35,7 +35,7 @@ public sealed class QuestStormwindCity : QuestData
 
     AddObjective(new ObjectiveUpgrade(UNIT_H06N_CASTLE_STORMWIND_T3,
       UNIT_H06K_TOWN_HALL_STORMWIND_T1));
-    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveExpire(10, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R02S_QUEST_COMPLETED_CLEAR_THE_OUTSKIRTS;

@@ -45,7 +45,7 @@ public static class TurnBasedHitpointsManager
 
   private static void OnTurnEnded(object? sender, EventArgs eventArgs)
   {
-    var turn = GameTimeManager.GetTurn();
+    var turn = GameTimeManager.Turn;
     foreach (var (unit, turnBasedHitpointData) in _unitData)
     {
       var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;

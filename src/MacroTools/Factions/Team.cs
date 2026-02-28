@@ -173,21 +173,19 @@ public sealed class Team
   }
 
   /// <summary>
-  ///   Checks whether or not the given <see cref="Faction" /> has been invited to this <see cref="Team" />.
+  ///   Checks whether the given <see cref="Faction"/> has been invited to this <see cref="Team"/>.
   /// </summary>
   public bool IsPlayerInvited(player whichPlayer) => _invitees.Contains(whichPlayer);
 
   /// <summary>
-  ///   Checks whether or not the given <see cref="player" /> is in this <see cref="Team" />.
+  ///   Checks whether the given <see cref="player"/> is in this <see cref="Team"/>.
   /// </summary>
   /// <param name="whichPlayer"></param>
-  /// <returns></returns>
   public bool Contains(player whichPlayer) => _members.Contains(whichPlayer);
 
   /// <summary>
-  ///   Checks whether or not any <see cref="player" />'s faction in the <see cref="Team" /> has an Essential <see cref="Legend" />.
+  ///   Checks whether any <see cref="player"/>'s faction in the <see cref="Team"/> has an Essential <see cref="Legend"/>.
   /// </summary>
-  /// <returns></returns>
   public bool DoesTeamHaveEssentialLegend()
   {
     foreach (var player in _members)

@@ -6,7 +6,7 @@ using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -31,7 +31,7 @@ public sealed class QuestWakingCity : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
     AddObjective(new ObjectiveQuestComplete(prerequisite));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_NZOTH_T3, UNIT_N0AR_TWISTING_HALLS_NZOTH_T1));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,

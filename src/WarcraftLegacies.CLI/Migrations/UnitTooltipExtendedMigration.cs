@@ -348,7 +348,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       or SpikedBarricades or BlightDispelSmall or BlightDispelLarge or CargoHoldBurrow or CargoHoldDeath
       or CargoHoldDevour or CargoHoldShip or CargoHoldTank or CargoHoldTransport or CargoHoldGoldMine
       or CargoHoldMeatWagon or AuraRegenerationStatue or TreeOfLifeForAttachingArt or ChaosGrom or ChaosGrunt
-      or ChaosPeon or ChaosKodo or ChaosRaider or ChaosShaman or ChaosCargoLoad or ReturnLumber);
+      or ChaosPeon or ChaosKodo or ChaosRaider or ChaosShaman or ChaosCargoLoad or ReturnLumber or Warp);
   }
 
   /// <summary>

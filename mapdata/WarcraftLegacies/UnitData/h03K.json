@@ -119,7 +119,17 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Royal Knight.mdl"
+      "Value": "Royal Paladin.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.1
     }
   ]
 }

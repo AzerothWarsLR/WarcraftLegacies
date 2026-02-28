@@ -2,7 +2,7 @@
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.MetaBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde;
@@ -45,8 +45,8 @@ public sealed class QuestDarkPortal : QuestData
     _outerWaygate3 = outerWaygate3;
     AddObjective(new ObjectiveEitherOf(
       new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, UNIT_O008_HELLFIRE_CITADEL_FEL, true),
-      new ObjectiveTime(600)));
-    AddObjective(new ObjectiveTime(480));
+      new ObjectiveTurn(10)));
+    AddObjective(new ObjectiveTurn(8));
     Global = true;
   }
 

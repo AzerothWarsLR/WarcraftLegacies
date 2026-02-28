@@ -70,6 +70,11 @@
       "Value": "n06R"
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": 2020631143,
       "Value": 2
     },
@@ -119,13 +124,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Tidal Lords\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Summon Water Elemental."
+      "Value": "Increases Tidal Lords\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Summon Water Elemental."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Tidal Lords\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Superior Whirlpool."
+      "Value": "Increases Tidal Lords\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Superior Whirlpool."
     },
     {
       "Level": 1,

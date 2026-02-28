@@ -5,7 +5,7 @@ using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -35,7 +35,7 @@ public sealed class QuestSilvermoon : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N01V_ZUL_AMAN));
     AddObjective(new ObjectiveControlPoint(UNIT_N01L_EVERSONG_WOODS));
     AddObjective(new ObjectiveUpgrade(UNIT_H03T_PALACE_QUELTHALAS_T3, UNIT_H033_STEADING_QUELTHALAS_T1));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

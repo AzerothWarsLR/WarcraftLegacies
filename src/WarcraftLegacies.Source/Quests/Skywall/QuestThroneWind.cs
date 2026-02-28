@@ -4,7 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Skywall;
@@ -25,7 +25,7 @@ public sealed class QuestThroneWind : QuestData
     @"ReplaceableTextures\CommandButtons\BTNAlAkirTownHall3.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
       filterUnit => filterUnit.UnitType != UNIT_NGME_GOBLIN_MERCHANT);

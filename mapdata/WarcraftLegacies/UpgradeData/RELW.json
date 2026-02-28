@@ -59,6 +59,11 @@
       "Value": ""
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
@@ -116,13 +121,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Whipping Wind\u0027s mana capacity, mana regeneration rate, hit points and gives the ability Dispel Magic."
+      "Value": "Increases Whipping Wind\u0027s mana capacity and mana regeneration rate, and gives the ability Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Whipping Wind\u0027s mana capacity, mana regeneration rate, hit points and gives the ability Fog."
+      "Value": "Increases Whipping Wind\u0027s mana capacity and mana regeneration rate, and gives the ability Fog."
     }
   ]
 }
