@@ -64,7 +64,7 @@ public sealed class Dalaran : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterProtectors();
-    WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
+    WaygateManager.Setup(UNIT_N0AO_WAYGATE_DALARAN_SIEGE);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
   private static void ReplaceWithFactionUnits(Faction pickedFaction)

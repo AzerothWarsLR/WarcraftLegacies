@@ -10,7 +10,7 @@ public static class TierReflectivePlating
   {
     var triggerPlayer = @event.Player;
     var triggerPlayerData = triggerPlayer.GetPlayerData();
-    triggerPlayerData.Faction?.ModObjectLimit(UNIT_H04C_PIKEMAN_STORMWIND, Faction.Unlimited);
+    triggerPlayerData.Faction?.ModObjectLimit(UNIT_H04C_VANGUARD_STORMWIND, Faction.Unlimited);
     triggerPlayerData.Faction?.ModObjectLimit(UNIT_H02O_BLADESMAN_STORMWIND, -Faction.Unlimited);
   }
 
