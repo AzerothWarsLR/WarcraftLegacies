@@ -4,7 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -23,7 +23,7 @@ public sealed class QuestSpiderWar : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N00G_BOREAN_TUNDRA));
     AddObjective(new ObjectiveControlPoint(UNIT_N09H_EN_KILAH));
     AddObjective(new ObjectiveUpgrade(UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

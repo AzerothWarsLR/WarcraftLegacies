@@ -5,7 +5,7 @@ using MacroTools.Quests;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup;
@@ -27,7 +27,7 @@ public sealed class QuestTitanJailors : QuestData
             @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveUpgrade(UNIT_U022_NEXUS_CTHUN_T3, UNIT_U020_MONUMENT_CTHUN_T1));
     _rockGroups = new List<RockGroup>();

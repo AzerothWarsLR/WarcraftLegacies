@@ -1,6 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests;
 
@@ -11,7 +11,7 @@ public sealed class QuestSharedVision : QuestData
     "Beyond our local conflicts lies a larger war for the fate of Azeroth itself. It will reach us eventually, whether we wish it or not.",
     @"ReplaceableTextures\CommandButtons\BTNFarSight.blp")
   {
-    AddObjective(new ObjectiveTime(840));
+    AddObjective(new ObjectiveTurn(14));
     IsFactionQuest = false;
   }
 

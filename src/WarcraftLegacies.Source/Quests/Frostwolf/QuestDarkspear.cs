@@ -3,7 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf;
@@ -23,7 +23,7 @@ public sealed class QuestDarkspear : QuestData
     _rescueUnits = Regions.EchoUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     AddObjective(new ObjectiveAnyUnitInRect(Regions.EchoUnlock, "Echo Isles", true));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveExpire(900, Title));
+    AddObjective(new ObjectiveExpire(15, Title));
 
     ResearchId = UPGRADE_R032_QUEST_COMPLETED_THE_DARKSPEAR_TROLLS;
   }

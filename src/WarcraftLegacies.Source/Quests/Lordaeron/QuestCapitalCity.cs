@@ -7,7 +7,7 @@ using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -42,7 +42,7 @@ public sealed class QuestCapitalCity : QuestData
     }
 
     AddObjective(new ObjectiveControlLegend(arthas, false));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
     _terenas = terenas;

@@ -2,7 +2,7 @@
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Scourge;
@@ -18,7 +18,7 @@ public sealed class QuestCultoftheDamned : QuestData
   {
     _lordaeron = lordaeron;
     _rivendare = rivendare;
-    AddObjective(new ObjectiveTime(420));
+    AddObjective(new ObjectiveTurn(7));
     ResearchId = UPGRADE_R01H_QUEST_COMPLETED_THE_CULT_OF_THE_DAMNED;
   }
 

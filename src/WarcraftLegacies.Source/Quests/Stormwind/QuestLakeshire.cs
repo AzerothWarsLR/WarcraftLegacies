@@ -5,7 +5,7 @@ using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind;
@@ -19,7 +19,7 @@ public sealed class QuestLakeshire : QuestData
     @"ReplaceableTextures\CommandButtons\BTNOgreLord.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N011_REDRIDGE_MOUNTAINS));
-    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
     {

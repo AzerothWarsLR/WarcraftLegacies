@@ -6,7 +6,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Researches.Ironforge;
@@ -133,7 +133,7 @@ public sealed class Ironforge : Faction
     var questExpedition = new QuestExpedition(
       missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
 
-    questExpedition.AddObjective(new ObjectiveTime(15 * 60)
+    questExpedition.AddObjective(new ObjectiveTurn(15)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

@@ -9,7 +9,7 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.Objectives;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Naga;
@@ -36,7 +36,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     _cthun = cthun;
     _nordrassil = nordrassil;
     _illidan = illidan;
-    AddObjective(new ObjectiveExpire(3600, "Kil'jaeden's Command"));
+    AddObjective(new ObjectiveExpire(60, "Kil'jaeden's Command"));
     Knowledge = 10;
   }
 

@@ -4,7 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -20,7 +20,7 @@ public sealed class QuestStromgarde : QuestData
   {
     var objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
     AddObjective(objectiveAnyUnitInRect);
-    AddObjective(new ObjectiveTime(900));
+    AddObjective(new ObjectiveTurn(15));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))

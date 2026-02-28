@@ -73,6 +73,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": 2020631143,
       "Value": 0
     },
@@ -98,13 +103,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Astromancer\u0027s mana capacity, hit points and gives them the ability to cast Dispel Magic."
+      "Value": "Increases Astromancer\u0027s mana capacity and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Astromancer \u0027s mana capacity, hit points and gives them the ability to cast Suppression."
+      "Value": "Increases Astromancer \u0027s mana capacity and gives them the ability to cast Suppression."
     },
     {
       "Level": 1,

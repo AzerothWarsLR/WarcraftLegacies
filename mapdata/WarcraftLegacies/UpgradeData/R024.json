@@ -64,6 +64,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
@@ -109,13 +114,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Necrolytes\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Unholy Frenzy."
+      "Value": "Increases Necrolytes\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Unholy Frenzy."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Necrolytes\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Soul Burn."
+      "Value": "Increases Necrolytes\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Soul Burn."
     }
   ]
 }

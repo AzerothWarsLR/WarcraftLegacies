@@ -1,6 +1,6 @@
 ﻿using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas;
 
@@ -17,7 +17,7 @@ public sealed class QuestForgottenKnowledge : QuestData
     @"ReplaceableTextures\CommandButtons\BTNBloodelf_Arcane_Annihilator.blp")
   {
     AddObjective(new ObjectiveControlLevel(UNIT_N032_SURAMAR, 10));
-    AddObjective(new ObjectiveTime(1080));
+    AddObjective(new ObjectiveTurn(18));
     ResearchId = UPGRADE_R08Z_QUEST_COMPLETED_FORGOTTEN_KNOWLEDGE;
   }
 

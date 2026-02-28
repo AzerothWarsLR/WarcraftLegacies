@@ -59,6 +59,11 @@
       "Value": 200
     },
     {
+      "Id": 862348647,
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
@@ -116,13 +121,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Druid of the Scythes\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Dispel Magic."
+      "Value": "Increases Druid of the Scythes\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Druid of the Scythes\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spawn Spider."
+      "Value": "Increases Druid of the Scythes\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Spawn Spider."
     }
   ]
 }

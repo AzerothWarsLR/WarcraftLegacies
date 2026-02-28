@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.TimeBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind;
 
@@ -23,7 +23,7 @@ public sealed class QuestConstructionSites : QuestData
   {
     _constructionSites = constructionSites;
     ResearchId = UPGRADE_R022_QUEST_COMPLETED_INEVITABLE_PROGRESS_STORMWIND;
-    AddObjective(new ObjectiveTime(360));
+    AddObjective(new ObjectiveTurn(6));
   }
 
   /// <inheritdoc />
