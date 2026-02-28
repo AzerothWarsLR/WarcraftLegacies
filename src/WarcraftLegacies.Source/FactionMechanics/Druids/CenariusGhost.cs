@@ -9,7 +9,7 @@ public static class CenariusGhost
 {
   private static void Dies(LegendDiedEventArgs args, Faction druids)
   {
-    if (args.Permanent)
+    if (!args.Permanent)
     {
       return;
     }
