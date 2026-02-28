@@ -16,6 +16,7 @@ ToolTipLumberIcon=war3mapImported\BTNTomeRes32x32.blp
 Nolumber="Not enough knowledge."
 
 [FrameDef]
+ARMOR_NORMAL="Type: |Cffffcc00Gate|R"
 ARMORTIP_DIVINE="Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r"
 ARMORTIP_DIVINE_V0C="Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r"
 ARMORTIP_DIVINE_V0M="Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r"
