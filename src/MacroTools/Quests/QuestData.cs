@@ -5,7 +5,7 @@ using MacroTools.Factions;
 namespace MacroTools.Quests;
 
 /// <summary>
-/// A heavily cutomized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
+/// A heavily customized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
 /// </summary>
 public abstract class QuestData
 {
@@ -381,8 +381,13 @@ public abstract class QuestData
       }
     }
 
+    //If anything is failed, the quest is failed
+    if (anyFailed)
+    {
+      Progress = QuestProgress.Failed;
+    }
     //If anything is undiscovered, the quest is undiscovered
-    if (anyUndiscovered)
+    else if (anyUndiscovered)
     {
       Progress = QuestProgress.Undiscovered;
     }
@@ -390,11 +395,6 @@ public abstract class QuestData
     else if (allComplete)
     {
       Progress = QuestProgress.Complete;
-    }
-    //If anything is failed, the quest is failed
-    else if (anyFailed)
-    {
-      Progress = QuestProgress.Failed;
     }
     else
     {

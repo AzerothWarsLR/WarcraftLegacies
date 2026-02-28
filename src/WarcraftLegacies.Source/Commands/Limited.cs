@@ -28,7 +28,7 @@ public sealed class Limited : Command
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var pingedPositions = new HashSet<Point>();
+    var pingedPositions = new List<Point>();
 
     var limitedUnits = GlobalGroup
       .EnumUnitsOfPlayer(commandUser)
@@ -51,7 +51,7 @@ public sealed class Limited : Command
     return "Pinging all limited units you control.";
   }
 
-  private static bool PositionIsNearPositions(Point positionA, HashSet<Point> pingedPositions)
+  private static bool PositionIsNearPositions(Point positionA, List<Point> pingedPositions)
   {
     const float distanceLimit = 500f;
     foreach (var positionB in pingedPositions)

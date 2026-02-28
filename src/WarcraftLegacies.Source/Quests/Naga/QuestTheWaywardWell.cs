@@ -3,7 +3,6 @@ using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 
-
 namespace WarcraftLegacies.Source.Quests.Naga;
 
 public sealed class QuestTheWaywardWell : QuestData
@@ -15,12 +14,12 @@ public sealed class QuestTheWaywardWell : QuestData
       @"ReplaceableTextures\CommandButtons\BTNPoTN_Sanctity_Potion.blp")
   {
     Knowledge = 15;
-    Progress = QuestProgress.Undiscovered;
 
     AddObjective(new ObjectiveQuestComplete(burningCrusade)
     {
       ShowsInPopups = false,
-      ShowsInQuestLog = false
+      ShowsInQuestLog = false,
+      Progress = QuestProgress.Undiscovered
     });
 
     AddObjective(new ObjectiveControlCapital(sunwell, false));

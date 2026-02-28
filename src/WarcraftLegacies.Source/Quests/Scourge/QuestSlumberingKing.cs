@@ -28,7 +28,7 @@ public sealed class QuestSlumberingKing : QuestData
       Regions.IcecrownShipyard
     }, "Northrend", "non-boat")
     {
-      EligibilityCondition = triggeringUnit => !triggeringUnit.IsUnitBoat()
+      EligibilityCondition = triggeringUnit => !triggeringUnit.IsUnitBoat() && triggeringUnit.UnitType != UNIT_U00X_DUMMY_CASTER
     };
     AddObjective(_anyEnemyUnitInRectsObjective);
     ResearchId = UPGRADE_R04V_QUEST_COMPLETED_THE_SLUMBERING_KING;
