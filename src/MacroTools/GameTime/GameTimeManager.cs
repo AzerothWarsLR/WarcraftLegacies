@@ -16,16 +16,7 @@ public static class GameTimeManager
   public static int Turn { get; private set; }
 
   private static timer? _turnTimer;
-  private static bool _gameStarted;
   private static readonly TurnScheduler _turnScheduler = new();
-
-  /// <summary>Fired when a turn ends.</summary>
-  [Obsolete($"Use {nameof(OnTurn)}, {nameof(OnTurnRange)}, or {nameof(OnTurnRepeating)} instead.")]
-  public static event EventHandler? TurnEnded;
-
-  /// <summary>Fired when the game starts.</summary>
-  [Obsolete($"Use {nameof(OnTurn)}, {nameof(OnTurnRange)}, or {nameof(OnTurnRepeating)} instead.")]
-  public static event EventHandler? GameStarted;
 
   /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
   public static void Start()
@@ -90,13 +81,5 @@ public static class GameTimeManager
   private static void EndTurn()
   {
     _turnScheduler.Process(++Turn);
-
-    if (!_gameStarted)
-    {
-      _gameStarted = true;
-      GameStarted?.Invoke(null, EventArgs.Empty);
-    }
-
-    TurnEnded?.Invoke(null, EventArgs.Empty);
   }
 }
