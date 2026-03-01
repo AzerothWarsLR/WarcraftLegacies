@@ -11,7 +11,6 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Dalaran;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
@@ -98,15 +97,8 @@ public sealed class Dalaran : Faction
     QuestNewGuardian newGuardian = new(Artifacts.BookOfMedivh, AllLegends.Dalaran.Jaina,
       AllLegends.Dalaran.Dalaran);
     QuestAegwynn aegwynn = new(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Antonidas);
-    QuestTheNexus theNexus = new(AllLegends.Scourge.TheFrozenThrone, AllLegends.Dalaran, AllLegends.Neutral.TheNexus);
     QuestCrystalGolem crystalGolem = new(AllLegends.Neutral.DraktharonKeep);
     QuestFallenGuardian fallenGuardian = new(AllLegends.Neutral.Karazhan);
-
-    newGuardian.AddObjective(new ObjectiveQuestNotComplete(theNexus));
-    crystalGolem.AddObjective(new ObjectiveQuestNotComplete(theNexus));
-    aegwynn.AddObjective(new ObjectiveQuestNotComplete(theNexus));
-
-    theNexus.AddObjective(new ObjectiveQuestNotComplete(newGuardian));
 
     AddQuest(new QuestJainaSoulGem(AllLegends.Dalaran.Jaina, AllLegends.Neutral.Caerdarrow));
     AddQuest(new QuestBlueDragons(AllLegends.Neutral.TheNexus));
@@ -117,7 +109,6 @@ public sealed class Dalaran : Faction
     AddQuest(fallenGuardian);
     AddQuest(aegwynn);
     AddQuest(newGuardian);
-    AddQuest(theNexus);
   }
 
   private void RegisterBookOfMedivhQuest(Legion legion)

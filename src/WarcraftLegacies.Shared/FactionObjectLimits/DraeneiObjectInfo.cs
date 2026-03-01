@@ -35,7 +35,7 @@ public static class DraeneiObjectInfo
     yield return new(UNIT_H09U_ELEKK_KNIGHT_DRAENEI, 4, new List<UnitCategory> { Tank, Summoner, Support });
     yield return new(UNIT_U02H_NETHER_RAY_DRAENEI, 6, new List<UnitCategory> { Flyer, Marksman });
     yield return new(UNIT_N0BJ_LIGHTFORGED_SHARPSHOOTER_DRAENEI, 6, Marksman);
-    yield return new(UNIT_N0BP_LIGHTFORGED_JUGGERNAUT_NEXUS, 4, new List<UnitCategory> { Marksman, Support });
+    yield return new(UNIT_N0BP_LIGHTFORGED_JUGGERNAUT_DRAENEI, 4, new List<UnitCategory> { Marksman, Support });
     yield return new(UNIT_N0BM_LIGHTFORGED_DRAGOON_DRAENEI, 8, new List<UnitCategory> { Tank, Fighter });
 
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);

@@ -11,7 +11,6 @@ public sealed class LegendDalaran
   public LegendaryHero Antonidas { get; }
   public LegendaryHero Medivh { get; }
   public LegendaryHero Jaina { get; }
-  public LegendaryHero Kalecgos { get; }
   public LegendaryHero Aegwynn { get; }
   public Capital Dalaran { get; }
   public Capital Shadowfang { get; }
@@ -30,12 +29,6 @@ public sealed class LegendDalaran
     {
       UnitType = UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN,
       StartingXp = 2800
-    };
-
-    Kalecgos = new LegendaryHero("Kalecgos")
-    {
-      UnitType = UNIT_U027_STEWARD_OF_MAGIC_NEXUS,
-      StartingXp = 5400
     };
 
     Aegwynn = new LegendaryHero("Aegwynn")
@@ -71,7 +64,6 @@ public sealed class LegendDalaran
   {
     LegendaryHeroManager.Register(Antonidas);
     LegendaryHeroManager.Register(Jaina);
-    LegendaryHeroManager.Register(Kalecgos);
     LegendaryHeroManager.Register(Medivh);
     LegendaryHeroManager.Register(Aegwynn);
     CapitalManager.Register(Dalaran);
