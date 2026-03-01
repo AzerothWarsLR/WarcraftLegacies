@@ -22,7 +22,5 @@ public static class SharedSpellSetup
       UNIT_H05Y_LORD_WIZARD_STORMWIND,
       UNIT_N0E8_SKYSHIP_SUNFURY
     });
-
-    UnitTypeTraitRegistry.Register(new ProvidesIncome(-2), UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN);
   }
 }
