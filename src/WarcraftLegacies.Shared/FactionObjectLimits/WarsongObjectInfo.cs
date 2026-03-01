@@ -54,7 +54,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, 1, UnitCategory.Fighter);
     yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Summoner });
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1, UnitCategory.Support); //Rokhan
-    yield return new(UNIT_N0CN_FOREMAN_GLIBBS_WARSONG_DEMI, 1, UnitCategory.Support);
     yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1, UnitCategory.Tank);
 
     yield return new(UPGRADE_R00J_OGRE_MAGI_ADEPT_TRAINING_WARSONG, Unlimited);

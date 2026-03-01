@@ -55,7 +55,6 @@ public static class DalaranObjectInfo
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
 
-    yield return new(UNIT_NJKS_JAILOR_KASSAN_DALARAN_DEMI, 1, Fighter);
     yield return new(UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN, 1, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN, 1, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, 1, new List<UnitCategory> { Destroyer, Support });

@@ -47,7 +47,6 @@ public static class DruidsObjectInfo
     yield return new(UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_EFUR_ARCHDRUID_DRUIDS, 1, Support);
     yield return new(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1, new List<UnitCategory> { Fighter, Tank, Support });
-    yield return new(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1, new List<UnitCategory> { Support, Destroyer });
     yield return new(UNIT_H04U_DEMIGOD_DRUIDS, 1, new List<UnitCategory> { Destroyer, Tank });
 
     yield return new(UPGRADE_REDT_DRUID_OF_THE_TALON_ADEPT_TRAINING_DRUIDS, Unlimited);

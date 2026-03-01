@@ -50,7 +50,6 @@ public static class LordaeronObjectInfo
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
 
-    yield return new(UNIT_H012_CAPTAIN_FALRIC_LORDAERON_DEMI, 1, new List<UnitCategory> { Tank, Support });
     yield return new(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, 1, new List<UnitCategory> { Destroyer, Support, Summoner });
     yield return new(UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON, 1, new List<UnitCategory> { Fighter, Support });
     yield return new(UNIT_H01J_THE_ASHBRINGER_LORDAERON, 1, Fighter);
