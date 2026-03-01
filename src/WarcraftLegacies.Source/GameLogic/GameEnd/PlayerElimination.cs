@@ -28,7 +28,7 @@ public static class PlayerElimination
   /// </remarks>
   public static void Setup()
   {
-    GameTimeManager.OnTurnRepeating(EliminationStartTurn, static () =>
+    GameTimeManager.RegisterOnTurnRepeating(EliminationStartTurn, static () =>
     {
       foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {

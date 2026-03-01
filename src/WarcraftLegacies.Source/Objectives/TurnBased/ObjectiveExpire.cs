@@ -23,11 +23,11 @@ public sealed class ObjectiveExpire : Objective
     _questName = questName;
     ShowsInPopups = false;
 
-    GameTimeManager.OnTurn(expirationTurn, OnExpire);
+    GameTimeManager.RegisterOnTurn(expirationTurn, OnExpire);
 
     if (expirationTurn > WarningTurnsBeforeExpiry)
     {
-      GameTimeManager.OnTurn(expirationTurn - WarningTurnsBeforeExpiry, OnWarning);
+      GameTimeManager.RegisterOnTurn(expirationTurn - WarningTurnsBeforeExpiry, OnWarning);
     }
   }
 

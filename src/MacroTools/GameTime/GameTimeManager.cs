@@ -53,19 +53,19 @@ public static class GameTimeManager
   }
 
   /// <summary>Execute once on the given turn.</summary>
-  public static void OnTurn(int startTurn, Action callback, Func<bool>? condition = null)
+  public static void RegisterOnTurn(int startTurn, Action callback, Func<bool>? condition = null)
   {
     _turnScheduler.Register(startTurn, callback, startTurn, 1, condition);
   }
 
   /// <summary>Execute repeatedly every N turns starting from startTurn, bounded.</summary>
-  public static void OnTurnRange(int startTurn, int endTurn, Action callback, int interval = 1, Func<bool>? condition = null)
+  public static void RegisterOnTurnRange(int startTurn, int endTurn, Action callback, int interval = 1, Func<bool>? condition = null)
   {
     _turnScheduler.Register(startTurn, callback, endTurn, interval, condition);
   }
 
   /// <summary>Execute repeatedly every N turns starting from startTurn, indefinitely.</summary>
-  public static void OnTurnRepeating(int startTurn, Action callback, int interval = 1, Func<bool>? condition = null)
+  public static void RegisterOnTurnRepeating(int startTurn, Action callback, int interval = 1, Func<bool>? condition = null)
   {
     _turnScheduler.Register(startTurn, callback, TurnCallback.Infinite, interval, condition);
   }

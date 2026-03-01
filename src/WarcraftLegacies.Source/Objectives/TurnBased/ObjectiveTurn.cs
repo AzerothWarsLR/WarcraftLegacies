@@ -9,7 +9,7 @@ public sealed class ObjectiveTurn : Objective
   public ObjectiveTurn(int targetTurn)
   {
     Description = $"Turn {targetTurn} has started";
-    GameTimeManager.OnTurn(targetTurn, OnComplete);
+    GameTimeManager.RegisterOnTurn(targetTurn, OnComplete);
   }
 
   private void OnComplete()

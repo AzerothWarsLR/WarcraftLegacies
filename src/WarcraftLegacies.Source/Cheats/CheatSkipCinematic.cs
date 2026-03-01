@@ -48,7 +48,7 @@ public static class CheatSkipCinematic
 
     _skipTrigger.AddAction(Actions);
 
-    GameTimeManager.OnTurn(1, () =>
+    GameTimeManager.RegisterOnTurn(1, () =>
     {
       if (_skipTrigger != null)
       {

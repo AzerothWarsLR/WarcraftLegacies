@@ -26,7 +26,7 @@ public sealed class TurnResearch
   /// </summary>
   public static void Register(TurnResearch turnResearch)
   {
-    GameTimeManager.OnTurn(turnResearch._turn, () =>
+    GameTimeManager.RegisterOnTurn(turnResearch._turn, () =>
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
