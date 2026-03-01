@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace MacroTools.GameTime;
 
@@ -81,5 +82,18 @@ public static class GameTimeManager
   private static void EndTurn()
   {
     _turnScheduler.Process(++Turn);
+  }
+
+  [EditorBrowsable(EditorBrowsableState.Never)]
+  internal static void SetTurn(int value)
+  {
+    Turn = value;
+  }
+
+  [EditorBrowsable(EditorBrowsableState.Never)]
+  internal static void Reset()
+  {
+    Turn = 0;
+    _turnScheduler.Callbacks.Clear();
   }
 }

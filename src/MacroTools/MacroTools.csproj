@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <InternalsVisibleTo Include="MacroTools.Tests" />
+      <InternalsVisibleTo Include="MacroTools.TestSupport" />
     </ItemGroup>
 
 </Project>
