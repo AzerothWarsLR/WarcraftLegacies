@@ -3,13 +3,8 @@ using MacroTools.TestSupport;
 
 namespace MacroTools.Tests.GameTime;
 
-[Collection(nameof(GameTimeManagerCollection))]
-public sealed class TurnCallbackTests : IDisposable
+public sealed class TurnCallbackTests : GameTimeManagerTestsBase
 {
-  public TurnCallbackTests() => GameTimeManagerTest.Reset();
-
-  public void Dispose() => GameTimeManagerTest.Reset();
-
   [Theory]
   [InlineData(5, 4)]
   [InlineData(10, 1)]
@@ -44,7 +39,7 @@ public sealed class TurnCallbackTests : IDisposable
   public void Ctor_ThrowsWhenStartTurnIsLessThanOrEqualToCurrentTurn(int currentTurn, int startTurn)
   {
     // Arrange
-    GameTimeManagerTest.Turn = currentTurn;
+    GameTimeManager.SetTurn(currentTurn);
 
     // Act
     var exception = Record.Exception(() => new TurnCallback(startTurn, TurnCallback.Infinite, 1, () => { }));
@@ -59,7 +54,7 @@ public sealed class TurnCallbackTests : IDisposable
   public void Ctor_ThrowsWhenEndTurnIsLessThanOrEqualToCurrentTurn(int currentTurn, int endTurn)
   {
     // Arrange
-    GameTimeManagerTest.Turn = currentTurn;
+    GameTimeManager.SetTurn(currentTurn);
 
     // Act
     var exception = Record.Exception(() => new TurnCallback(6, endTurn, 1, () => { }));

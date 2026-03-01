@@ -3,14 +3,8 @@ using MacroTools.TestSupport;
 
 namespace MacroTools.Tests.GameTime;
 
-[Collection(nameof(GameTimeManagerCollection))]
-public sealed class GameTimeManagerTests : IDisposable
+public sealed class GameTimeManagerTests : GameTimeManagerTestsBase
 {
-  public GameTimeManagerTests()
-  {
-    GameTimeManagerTest.Reset();
-  }
-
   [Theory]
   [InlineData(0, 0)]
   [InlineData(1, 1)]
@@ -20,10 +14,5 @@ public sealed class GameTimeManagerTests : IDisposable
     GameTimeManager.SkipTurns(turnsToSkip);
 
     Assert.Equal(expectedTurn, GameTimeManager.Turn);
-  }
-
-  public void Dispose()
-  {
-    GameTimeManagerTest.Reset();
   }
 }
