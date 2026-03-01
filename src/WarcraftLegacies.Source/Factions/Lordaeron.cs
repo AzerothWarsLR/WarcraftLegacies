@@ -155,7 +155,7 @@ public sealed class Lordaeron : Faction
         }, new Objective[]
         {
           new ObjectiveLegendInRect(AllLegends.Lordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
-          new ObjectiveUnitAlive(AllPreplacedWidgets.Units.GetClosest(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
+          new ObjectiveUnitAlive(AllPreplacedWidgets.Units.GetClosest(UNIT_O00B_JUBEI_THOS_CREEP,
             11066, 6291))
         }));
 

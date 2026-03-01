@@ -41,7 +41,6 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3, new List<UnitCategory> { Flyer, Destroyer, Support });
 
-    yield return new(UNIT_H01M_BAELGUN_FLAMEBEARD_IRONFORGE_DEMI, 1, new List<UnitCategory> { Tank, Support });
     yield return new(UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE, 1, Support);
     yield return new(UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE, 1, new List<UnitCategory> { Fighter, Support });
     yield return new(UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1, new List<UnitCategory> { Destroyer, Summoner, Support });

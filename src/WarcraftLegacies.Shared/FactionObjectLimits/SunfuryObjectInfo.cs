@@ -53,7 +53,6 @@ public static class SunfuryObjectInfo
     yield return new(UNIT_U02V_HIGH_ASTROMANCER_SUNFURY, 1, new List<UnitCategory> { Destroyer, Marksman });
     yield return new(UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUELTHALAS, 1, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_U004_THE_DECEIVER_LEGION, 1, Destroyer);
-    yield return new(UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1, new List<UnitCategory> { Tank, Support });
 
     yield return new(UPGRADE_R09H_ASTROMANCER_ADEPT_TRAINING_SUNFURY, Unlimited);
     yield return new(UPGRADE_R09G_FLAMEKEEPER_ADEPT_TRAINING_SUNFURY, Unlimited);

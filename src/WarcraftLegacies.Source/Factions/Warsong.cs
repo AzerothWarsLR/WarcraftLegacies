@@ -78,18 +78,13 @@ public sealed class Warsong : Faction
     AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
     AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
-    // AddQuest(new QuestFountainOfBlood(AllLegendSetup.Neutral.FountainOfBlood, AllLegendSetup.Warsong.GromHellscream));
-    // AddQuest(new QuestBloodpact(AllLegendSetup.Warsong.Mannoroth, AllLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestGarrosh());
-    AddQuest(new QuestWarsongKillCthun());
     AddQuest(new QuestKillOldGods());
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
     AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
-
-
   }
 
   private static void ReplaceWithFactionUnits(Faction pickedFaction)
