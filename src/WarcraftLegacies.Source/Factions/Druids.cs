@@ -66,7 +66,7 @@ public sealed class Druids : Faction
     AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
     AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
     AddQuest(new QuestDruidsKillElemental(AllLegends.Skywall.Vortex));
-    AddQuest(new QuestDruidsKillCthun(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestDruidsKillCthun());
     AddQuest(new QuestShaladrassil(AllLegends.Neutral.Shaladrassil));
     AddQuest(new QuestTortolla(AllLegends.Druids.Tortolla));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
