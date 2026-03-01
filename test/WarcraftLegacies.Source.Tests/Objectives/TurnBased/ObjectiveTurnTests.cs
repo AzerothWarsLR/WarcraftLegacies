@@ -5,14 +5,8 @@ using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Tests.Objectives.TurnBased;
 
-[Collection(nameof(GameTimeManagerCollection))]
-public sealed class ObjectiveTurnTests : IDisposable
+public sealed class ObjectiveTurnTests : GameTimeManagerTestsBase
 {
-  public ObjectiveTurnTests()
-  {
-    GameTimeManagerTest.Reset();
-  }
-
   [Fact]
   public void Constructor_SetsDescription()
   {
@@ -52,10 +46,5 @@ public sealed class ObjectiveTurnTests : IDisposable
     // Assert
     Assert.Equal(1, progressChangedCalls);
     Assert.Equal(QuestProgress.Complete, objective.Progress);
-  }
-
-  public void Dispose()
-  {
-    GameTimeManagerTest.Reset();
   }
 }
