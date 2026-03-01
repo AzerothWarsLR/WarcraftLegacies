@@ -1,7 +1,7 @@
 ﻿using MacroTools.Factions;
-using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Warsong;
 
@@ -22,11 +22,11 @@ public sealed class QuestWarsongKillCthun : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestWarsongKillCthun"/> class.
   /// </summary>
-  public QuestWarsongKillCthun(Legend cthun) : base("Whispers of the Old One",
+  public QuestWarsongKillCthun() : base("Whispers of the Old One",
     "The ancient Old God C'Thun stirs beneath Kalimdor, corrupting the world above. Strike down this colossus to safeguard the Horde's future.",
     @"ReplaceableTextures\CommandButtons\BTNSilithidColossus.blp")
   {
-    AddObjective(new ObjectiveKillUnit(cthun.Unit));
+    AddObjective(new ObjectiveLegendDead(AllLegends.Ahnqiraj.Cthun));
     ResearchId = UPGRADE_R08M_QUEST_COMPLETED_WHISPERS_OF_THE_OLD_ONE;
   }
 

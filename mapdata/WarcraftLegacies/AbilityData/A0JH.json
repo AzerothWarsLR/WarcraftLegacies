@@ -68,7 +68,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASArcaneBolts.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
     },
     {
       "Id": 2020631137,
@@ -118,7 +118,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives the town hall the ability to fire multiple projectiles at its enemies."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 4 nearby enemy units."
     },
     {
       "Id": 1952542049,

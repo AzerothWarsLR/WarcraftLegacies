@@ -1,20 +1,20 @@
-﻿using MacroTools.Legends;
-using MacroTools.Quests;
+﻿using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Warsong;
 
 public sealed class QuestKillOldGods : QuestData
 {
-  public QuestKillOldGods(Legend cthun, Legend nzoth) : base("Echoes of War",
+  public QuestKillOldGods() : base("Echoes of War",
     "The Old Gods C'Thun and N'Zoth threaten to spread chaos across the land. By eliminating these ancient terrors, the Warsong may claim victory and infuse their warriors with newfound strength.",
     @"ReplaceableTextures\CommandButtons\BTNOrcGrunt.blp")
   {
     AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ));
     AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
-    AddObjective(new ObjectiveKillUnit(cthun.Unit));
-    AddObjective(new ObjectiveKillUnit(nzoth.Unit));
+    AddObjective(new ObjectiveLegendDead(AllLegends.Ahnqiraj.Cthun));
+    AddObjective(new ObjectiveLegendDead(AllLegends.BlackEmpire.Nzoth));
     ResearchId = UPGRADE_R021_QUEST_COMPLETED_ECHOES_OF_WAR;
   }
 

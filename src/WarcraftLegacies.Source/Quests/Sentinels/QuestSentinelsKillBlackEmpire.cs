@@ -1,7 +1,7 @@
 ﻿using MacroTools.Factions;
-using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels;
 
@@ -13,11 +13,11 @@ public sealed class QuestSentinelsKillBlackEmpire : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestSentinelsKillBlackEmpire"/> class.
   /// </summary>
-  public QuestSentinelsKillBlackEmpire(Legend nzoth) : base("Otherwordly Invaders",
+  public QuestSentinelsKillBlackEmpire() : base("Otherwordly Invaders",
     "The Black Empire has poured out near Feathermoon and begun threatening the wilds. These invaders must be repelled.",
     @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
-    AddObjective(new ObjectiveKillUnit(nzoth.Unit));
+    AddObjective(new ObjectiveLegendDead(AllLegends.BlackEmpire.Nzoth));
     ResearchId = UPGRADE_R007_QUEST_COMPLETED_OTHERWORDLY_INVADERS_SENTINELS;
 
   }

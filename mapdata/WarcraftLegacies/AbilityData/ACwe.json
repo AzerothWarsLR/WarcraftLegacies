@@ -47,7 +47,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": " (Stormwind Conjurer)"
+      "Value": "(Conjurer)"
     },
     {
       "Id": 2037082209,
@@ -69,7 +69,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a group of \u003CACwe,DataA1\u003E Scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal \u003Cnsel,mindmg1\u003E - \u003Cnsel,maxdmg1\u003E damage. |n|cffffcc00Lasts \u003CACwe,Dur1\u003E seconds."
+      "Value": "Summons a group of \u003CACwe,DataA1\u003E Scorpions with Envenomed Weapons. Each scorpion has \u003Cn05M:nanw,realhp\u003E hit points and deals \u003Cn05M:nanw,mindmg1\u003E - \u003Cn05M:nanw,maxdmg1\u003E damage. |n|cffffcc00Lasts \u003CACwe,Dur1\u003E seconds."
     }
   ]
 }

@@ -1,7 +1,7 @@
 ﻿using MacroTools.Factions;
-using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels;
 
@@ -14,11 +14,11 @@ public sealed class QuestSentinelsKillCthun : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestSentinelsKillCthun"/> class.
   /// </summary>
-  public QuestSentinelsKillCthun(Legend cthun) : base("Gates of Ahn'Qiraj",
+  public QuestSentinelsKillCthun() : base("Gates of Ahn'Qiraj",
     "The Qiraji have bursted out of their underground city. They need to be ridden from the surface of Kalimdor.",
     @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
-    AddObjective(new ObjectiveKillUnit(cthun.Unit));
+    AddObjective(new ObjectiveLegendDead(AllLegends.Ahnqiraj.Cthun));
     ResearchId = UPGRADE_R052_QUEST_COMPLETED_GATES_OF_AHN_QIRAJ_SENTINELS;
 
   }

@@ -12,13 +12,6 @@
       "Value": 400
     },
     {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 829122117,
-      "Type": 2,
-      "Value": 15
-    },
-    {
       "Id": 1902473825,
       "Type": 3,
       "Value": ""
@@ -42,7 +35,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Sky barge)"
+      "Value": "(Sky Barge)"
     },
     {
       "Id": 1952542049,
@@ -50,21 +43,20 @@
       "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Rocket Barrage"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Rocket Barrage"
-    },
-    {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires powerful rockets at nearby enemy ground units, dealing 15 damage per hit."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 7 nearby enemy units."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Multi Shot"
     }
   ]
 }

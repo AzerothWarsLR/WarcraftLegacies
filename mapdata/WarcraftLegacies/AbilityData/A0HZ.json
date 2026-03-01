@@ -77,7 +77,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Light Blue - Hippogryph Rider)"
+      "Value": "(Hippogryph Rider)"
     },
     {
       "Id": 1952542049,
@@ -123,7 +123,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "This unit is able to fire a constant stream of arrows at their enemies, hitting 3 targets at once."
+      "Value": "Causes this hero\u0027s attacks to fire an additional projectile at up to 3 nearby enemy units."
     }
   ]
 }
