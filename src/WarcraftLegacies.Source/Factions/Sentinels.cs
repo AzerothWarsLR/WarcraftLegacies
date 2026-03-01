@@ -77,8 +77,8 @@ public sealed class Sentinels : Faction
     // Register the updated QuestFeathermoon
     var questFeathermoon = AddQuest(new QuestFeathermoon(AllLegends.Sentinels.Feathermoon, Regions.FeathermoonUnlock));
 
-    AddQuest(new QuestSentinelsKillBlackEmpire(AllLegends.BlackEmpire.Nzoth));
-    AddQuest(new QuestSentinelsKillCthun(AllLegends.Ahnqiraj.Cthun));
+    AddQuest(new QuestSentinelsKillBlackEmpire());
+    AddQuest(new QuestSentinelsKillCthun());
     AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, Artifacts.ScepterOfTheQueen));
     AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));

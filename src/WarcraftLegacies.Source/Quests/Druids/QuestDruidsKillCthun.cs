@@ -1,8 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Druids;
 
@@ -10,11 +10,11 @@ public sealed class QuestDruidsKillCthun : QuestData
 {
   private const int UnittypeId = UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE;
 
-  public QuestDruidsKillCthun(Legend cthun) : base("The War of the Shifting Sands",
+  public QuestDruidsKillCthun() : base("The War of the Shifting Sands",
     "The ravaging hordes of the Qiraji have been consumming Kalimdor. We must put an end to their rampage.",
     @"ReplaceableTextures\CommandButtons\BTNCthunT3.blp")
   {
-    AddObjective(new ObjectiveKillUnit(cthun.Unit));
+    AddObjective(new ObjectiveLegendDead(AllLegends.Ahnqiraj.Cthun));
 
     ResearchId = UPGRADE_R05A_QUEST_COMPLETED_THE_WAR_OF_THE_SHIFTING_SANDS;
   }
