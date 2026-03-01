@@ -266,7 +266,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   {
     try
     {
-      if (player.LocalPlayer == triggerPlayer)
+      if (player.LocalPlayer == triggerPlayer && Pages[_activePageIndex + 1].HasOccupiedCards())
       {
         ActivePageIndex++;
       }
