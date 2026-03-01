@@ -37,8 +37,10 @@ public sealed class CityOfHeroes : Power
     _chance = chance;
     _statMultiplier = statMultiplier;
     Description =
-      $"{eligibleUnitPlural} you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by {(statMultiplier - 1) * 100}%, changing their attack and armor types to Hero, and granting them the ability to use items.";
+      $"{eligibleUnitPlural} you train have a {ToReadablePercentage(chance)} to become demiheroes, increasing their hit points, mana, and damage by {ToReadablePercentage(statMultiplier - 1)}, changing their attack and armor types to Hero, and granting them the ability to use items.";
   }
+
+  private static string ToReadablePercentage(float chance) => (int)(chance * 100) + "%";
 
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer) =>
