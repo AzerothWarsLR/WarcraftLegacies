@@ -15,7 +15,7 @@ public static class RuntimeIntegrityChecker
   /// </summary>
   public static void Setup()
   {
-    GameTimeManager.OnTurn(1, RunGameStartChecks);
+    GameTimeManager.RegisterOnTurn(1, RunGameStartChecks);
     CheckUndefeatedResearchNames();
     CheckQuestResearchNames();
   }

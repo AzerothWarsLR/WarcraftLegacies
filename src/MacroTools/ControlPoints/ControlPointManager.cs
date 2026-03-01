@@ -17,7 +17,7 @@ public sealed class ControlPointManager
 {
   static ControlPointManager()
   {
-    GameTimeManager.OnTurn(1, () =>
+    GameTimeManager.RegisterOnTurn(1, () =>
     {
       timer.Create().Start(Period, true, () =>
       {
@@ -271,7 +271,7 @@ public sealed class ControlPointManager
 
   private void RegisterControlLevelGrowthOverTime(ControlPoint controlPoint)
   {
-    GameTimeManager.OnTurnRepeating(1, () =>
+    GameTimeManager.RegisterOnTurnRepeating(1, () =>
     {
       if (controlPoint.Owner == player.NeutralAggressive ||
           controlPoint.Owner == player.NeutralPassive ||

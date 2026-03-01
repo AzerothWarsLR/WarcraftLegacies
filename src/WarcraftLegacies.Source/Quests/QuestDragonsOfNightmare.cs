@@ -58,7 +58,7 @@ public sealed class QuestDragonsOfNightmare : QuestData
     AddObjective(new ObjectiveTurn(6));
 
     // TODO: Attach callback to objective instead.
-    GameTimeManager.OnTurn(6, OnTurnsElapsed);
+    GameTimeManager.RegisterOnTurn(6, OnTurnsElapsed);
 
     IsFactionQuest = false;
   }

@@ -31,7 +31,7 @@ public static class TurnBasedHitpointsManager
       return;
     }
 
-    GameTimeManager.OnTurnRange(1, TurnLimit, OnTurnEnded);
+    GameTimeManager.RegisterOnTurnRange(1, TurnLimit, OnTurnEnded);
     _intialized = true;
   }
 

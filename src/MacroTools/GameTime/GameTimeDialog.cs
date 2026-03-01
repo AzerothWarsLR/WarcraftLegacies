@@ -33,6 +33,6 @@ public static class GameTimeDialog
       delayedDisplayTimer.Dispose();
     });
 
-    GameTimeManager.OnTurnRepeating(1, () => _timerDialog.SetTitle($"Turn {GameTimeManager.Turn}"));
+    GameTimeManager.RegisterOnTurnRepeating(1, () => _timerDialog.SetTitle($"Turn {GameTimeManager.Turn}"));
   }
 }
