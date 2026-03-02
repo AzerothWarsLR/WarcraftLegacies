@@ -14,7 +14,8 @@ public static class MapMigrationProvider
       new FlightMigration(),
       new UnitTooltipExtendedMigration(),
       new UnitTooltipBasicMigration(),
-      new PortraitModelFileMapMigration()
+      new PortraitModelFileMapMigration(),
+      new HeroPriorityMigration()
     };
   }
 }
