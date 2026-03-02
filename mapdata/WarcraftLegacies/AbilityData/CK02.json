@@ -29,24 +29,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Waygate - Dalaran DUMMY)"
+      "Value": "(Way Gate - Dalaran DUMMY)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Waygate Travel"
+      "Value": "Way Gate Travel"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Waygate Travel"
+      "Value": "Way Gate Travel"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Allows units to instantly travel to the other constructed Waygate."
+      "Value": "Allows units to instantly travel to the other constructed Way Gate."
     },
     {
       "Id": 2020631137,
