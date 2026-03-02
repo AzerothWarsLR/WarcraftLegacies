@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -387,13 +388,11 @@ public sealed class Illidari : Faction
 
   private void RegisterScourgeDruidsAhnqirajQuests(Scourge scourge, Druids druids, Ahnqiraj ahnqiraj)
   {
-    var kiljaedenQuestTimer = timer.Create();
-    kiljaedenQuestTimer.Start(1200, false, () =>
+    GameTimeManager.RegisterOnTurn(20, () =>
     {
       var kiljaedensCommand = AddQuest(new QuestKiljaedensCommand(scourge, druids, ahnqiraj, AllLegends.Ahnqiraj.Cthun,
         AllLegends.Druids.Nordrassil, AllLegends.Naga.Illidan));
       this.DisplayDiscovered(kiljaedensCommand, true);
-      @event.ExpiredTimer.Dispose();
     });
   }
 }
