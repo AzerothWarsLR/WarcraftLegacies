@@ -42,7 +42,10 @@ public sealed class ObjectiveEitherOf : Objective
     if (ObjectiveA.Progress == QuestProgress.Failed && ObjectiveB.Progress == QuestProgress.Failed)
     {
       Progress = QuestProgress.Failed;
+      return;
     }
+
+    Progress = QuestProgress.Incomplete;
   }
 
   private void OnChildProgressChanged(object? sender, Objective objective)
