@@ -9,8 +9,10 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.Objectives;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TimeBased;
 using WarcraftLegacies.Source.Powers;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Naga;
 
@@ -142,7 +144,7 @@ public sealed class QuestKiljaedensCommand : QuestData
 
     if (faction == _scourge)
     {
-      AddObjective(new ObjectiveFrozenThroneState(FrozenThroneState.Ruptured));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(AllLegends.Scourge.TheFrozenThrone), new ObjectiveFrozenThroneState(FrozenThroneState.Ruptured)));
       AddObjective(new ObjectiveControlPoint(UNIT_N04R_ICECROWN_CITADEL, 0));
     }
 
