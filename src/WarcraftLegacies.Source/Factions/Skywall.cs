@@ -140,7 +140,6 @@ public sealed class Skywall : Faction
       Radius = 200,
       DamageBase = 30,
       DamageLevel = 20,
-      EnableDamage = true,
       TargetType = SpellTargetType.Point,
       CastFilter = CastFilters.IsTargetEnemyAndAlive
     };

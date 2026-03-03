@@ -25,8 +25,8 @@ public sealed class MassAnySpell : Spell
   public DummyCastOriginType DummyCastOriginType { get; init; } = DummyCastOriginType.Target;
 
   public float DamageBase { get; init; } = 0f;
+
   public float DamageLevel { get; init; } = 0f;
-  public bool EnableDamage { get; init; } = false;
 
   public MassAnySpell(int id) : base(id)
   {
@@ -39,11 +39,11 @@ public sealed class MassAnySpell : Spell
 
     var filteredUnits = units.Where(u => GetRandomReal(0, 1) <= Chance).ToList();
 
+    var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
     foreach (var unit in filteredUnits)
     {
-      if (EnableDamage && unit.IsEnemyTo(caster.Owner))
+      if (damage > 0 && unit.IsEnemyTo(caster.Owner))
       {
-        var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
         caster.DealDamage(unit, damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
       }
     }
