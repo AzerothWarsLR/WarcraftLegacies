@@ -10,7 +10,7 @@ public static class GilneasObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_H01R_TOWN_HALL_GILNEAS_T1, Unlimited, TownHall);
-    yield return new(UNIT_H023_GILNEAS_T2, Unlimited, Keep);
+    yield return new(UNIT_H023_KEEP_GILNEAS_T2, Unlimited, Keep);
     yield return new(UNIT_H02C_CASTLE_GILNEAS_T3, Unlimited, Castle);
     yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, GilneasManor);
     yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, Lighthouse);

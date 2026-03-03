@@ -63,7 +63,7 @@ public sealed class Dalaran : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterProtectors();
-    WaygateManager.Setup(UNIT_N0AO_WAYGATE_DALARAN_SIEGE);
+    WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
   private static void ReplaceWithFactionUnits(Faction pickedFaction)
@@ -79,8 +79,6 @@ public sealed class Dalaran : Faction
   private void RegisterObjectLevels()
   {
     ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
-    ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
-    ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
     ModAbilityAvailability(ABILITY_A0UG_PHASE_BLADE_AUTO_CAST_ORANGE_BARRACKS_OFF, -1); //Todo: should have a system for this
     ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
     ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);

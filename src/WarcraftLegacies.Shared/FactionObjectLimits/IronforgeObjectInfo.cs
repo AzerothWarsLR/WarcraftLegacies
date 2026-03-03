@@ -18,7 +18,7 @@ public static class IronforgeObjectInfo
     yield return new(1751938413, Unlimited, Research); // Lumber Mill
     yield return new(UNIT_H048_FORGEWORKS_IRONFORGE_RESEARCH, Unlimited, Research);
     yield return new(UNIT_H042_PINNACLE_IRONFORGE_MAGIC, Unlimited, Magic);
-    yield return new(UNIT_HARM_IRONFORGE_SPECIALIST, Unlimited, Specialist);
+    yield return new(UNIT_HARM_WORKSHOP_IRONFORGE_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SIEGE, Unlimited, FlyingBuilding);
     yield return new(UNIT_H07H_SCOUT_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
     yield return new(UNIT_H07J_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
