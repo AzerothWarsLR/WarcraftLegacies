@@ -45,11 +45,6 @@ public sealed class MassAnySpell : Spell
   public DummyCasterType DummyCasterType { get; init; } = DummyCasterType.Global;
 
   /// <summary>
-  /// The chance of each unit in the area being affected.
-  /// </summary>
-  public float Chance { get; init; } = 1.0f;
-
-  /// <summary>
   /// Where each dummy spell should be cast from.
   /// <remarks>Defaults to <see cref="DummyCastOriginType.Target"/>, which causes each spell to cast from each target's positions.</remarks>
   /// </summary>
@@ -79,10 +74,8 @@ public sealed class MassAnySpell : Spell
     var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
     var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
 
-    var filteredUnits = units.Where(u => GetRandomReal(0, 1) <= Chance).ToList();
-
     var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
-    foreach (var unit in filteredUnits)
+    foreach (var unit in units)
     {
       if (damage > 0 && unit.IsEnemyTo(caster.Owner))
       {
@@ -100,7 +93,7 @@ public sealed class MassAnySpell : Spell
           GetAbilityLevel(caster),
           center,
           Radius,
-          (c, t) => filteredUnits.Contains(t),
+          (c, t) => units.Contains(t),
           DummyCastOriginType
         );
     }
@@ -112,7 +105,7 @@ public sealed class MassAnySpell : Spell
           GetAbilityLevel(caster),
           center,
           Radius,
-          (c, t) => filteredUnits.Contains(t),
+          (c, t) => units.Contains(t),
           DummyCastOriginType
         );
     }

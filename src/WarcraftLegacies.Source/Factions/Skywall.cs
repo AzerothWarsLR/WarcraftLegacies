@@ -150,8 +150,7 @@ public sealed class Skywall : Faction
       DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
       DummyAbilityOrderId = ORDER_ENSNARE,
       Radius = 250,
-      Chance = 0.75f,
-      CastFilter = CastFilters.IsTargetEnemyAndAlive,
+      CastFilter = (caster, target) => CastFilters.IsTargetEnemyAndAlive(caster, target) && GetRandomReal(0, 1) <= 0.75,
       TargetType = SpellTargetType.Point
     };
     SpellRegistry.Register(massEnsnare);
