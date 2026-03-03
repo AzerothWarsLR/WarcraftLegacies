@@ -37,14 +37,6 @@ public sealed class MassAnySpell : Spell
   public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
 
   /// <summary>
-  /// What kind of dummy caster is used to cast the spell.
-  /// <remarks>Use <see cref="DummyCasterType.AbilitySpecific"/> if the spell being cast will break if it is removed from
-  /// the dummy unit before its effect takes place, e.g. Death Coil.</remarks>
-  /// <remarks>Currently does not support <see cref="DummyCasterType.LongLived"/>.</remarks>
-  /// </summary>
-  public DummyCasterType DummyCasterType { get; init; } = DummyCasterType.Global;
-
-  /// <summary>
   /// Where each dummy spell should be cast from.
   /// <remarks>Defaults to <see cref="DummyCastOriginType.Target"/>, which causes each spell to cast from each target's positions.</remarks>
   /// </summary>
@@ -83,31 +75,16 @@ public sealed class MassAnySpell : Spell
       }
     }
 
-    if (DummyCasterType == DummyCasterType.Global)
-    {
-      DummyCasterManager.GetGlobalDummyCaster()
-        .CastOnUnitsInCircle(
-          caster,
-          DummyAbilityId,
-          DummyAbilityOrderId,
-          GetAbilityLevel(caster),
-          center,
-          Radius,
-          (c, t) => units.Contains(t),
-          DummyCastOriginType
-        );
-    }
-    else if (DummyCasterType == DummyCasterType.AbilitySpecific)
-    {
-      DummyCasterManager.GetAbilitySpecificDummyCaster(DummyAbilityId, DummyAbilityOrderId)
-        .CastOnUnitsInCircle(
-          caster,
-          GetAbilityLevel(caster),
-          center,
-          Radius,
-          (c, t) => units.Contains(t),
-          DummyCastOriginType
-        );
-    }
+    DummyCasterManager.GetGlobalDummyCaster()
+      .CastOnUnitsInCircle(
+        caster,
+        DummyAbilityId,
+        DummyAbilityOrderId,
+        GetAbilityLevel(caster),
+        center,
+        Radius,
+        (c, t) => units.Contains(t),
+        DummyCastOriginType
+      );
   }
 }
