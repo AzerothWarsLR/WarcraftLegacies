@@ -74,7 +74,7 @@ public sealed class MassAnySpell : Spell
     var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
 
     var casterAbilityLevel = GetAbilityLevel(caster);
-    float damage = 0;
+    var damage = 0f;
     if (Damage != null)
     {
       damage = Damage.Base + Damage.PerLevel * casterAbilityLevel;
