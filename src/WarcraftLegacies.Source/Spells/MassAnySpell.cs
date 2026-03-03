@@ -66,25 +66,16 @@ public sealed class MassAnySpell : Spell
     var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
     var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
 
-    var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
+    var casterAbilityLevel = GetAbilityLevel(caster);
+    var damage = DamageBase + DamageLevel * casterAbilityLevel;
+    var dummyCaster = DummyCasterManager.GetGlobalDummyCaster();
     foreach (var unit in units)
     {
-      if (damage > 0 && unit.IsEnemyTo(caster.Owner))
+      dummyCaster.CastUnit(caster, DummyAbilityId, DummyAbilityOrderId, casterAbilityLevel, unit, DummyCastOriginType);
+      if (damage > 0)
       {
         caster.DealDamage(unit, damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
       }
     }
-
-    DummyCasterManager.GetGlobalDummyCaster()
-      .CastOnUnitsInCircle(
-        caster,
-        DummyAbilityId,
-        DummyAbilityOrderId,
-        GetAbilityLevel(caster),
-        center,
-        Radius,
-        (c, t) => units.Contains(t),
-        DummyCastOriginType
-      );
   }
 }
