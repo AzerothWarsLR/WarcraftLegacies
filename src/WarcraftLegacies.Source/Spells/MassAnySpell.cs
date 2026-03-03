@@ -2,6 +2,7 @@
 using MacroTools.DummyCasters;
 using MacroTools.Spells;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
@@ -48,6 +49,11 @@ public sealed class MassAnySpell : Spell
   public LeveledAbilityField<float>? Damage { get; init; }
 
   /// <summary>
+  /// The special effect to create at the spell radius origin.
+  /// </summary>
+  public string? SpecialEffect { get; init; }
+
+  /// <summary>
   /// Initializes a new instance of the <see cref="MassAnySpell"/> class.
   /// </summary>
   /// <inheritdoc />
@@ -59,6 +65,12 @@ public sealed class MassAnySpell : Spell
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
     var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
+
+    if (SpecialEffect != null)
+    {
+      EffectSystem.Add(effect.Create(SpecialEffect, center.X, center.Y));
+    }
+
     var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
 
     var casterAbilityLevel = GetAbilityLevel(caster);
