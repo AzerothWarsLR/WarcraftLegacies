@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.DummyCasters;
 using MacroTools.Factions;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
@@ -116,16 +117,19 @@ public sealed class BlackEmpire : Faction
 
   private static void RegisterSpells()
   {
-    var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
+    var poisonYor = new MassAnySpell(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
     {
       Radius = 500,
-      DamageBase = 60,
-      DamageLevel = 20,
-      DurationBase = 3,
-      DurationLevel = 0,
-      StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
-      StunOrderId = ORDER_SHADOWSTRIKE,
-      SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 60,
+        PerLevel = 20
+      },
+      DummyAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
+      DummyAbilityOrderId = ORDER_SHADOWSTRIKE,
+      SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      DummyCastOriginType = DummyCastOriginType.Caster
     };
     SpellRegistry.Register(poisonYor);
 

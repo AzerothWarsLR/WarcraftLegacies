@@ -11,25 +11,33 @@ public static class SpellsSetup
 {
   public static void Setup()
   {
-    var thunderClap = new Stomp(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
+    var thunderClap = new MassAnySpell(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
     {
       Radius = 300,
-      DamageBase = 75,
-      DurationBase = 1,
-      StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
-      StunOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 75
+      },
+      DummyAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
+      DummyAbilityOrderId = ORDER_CRIPPLE,
+      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(thunderClap);
 
-    var thunderClapGil = new Stomp(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
+    var thunderClapGil = new MassAnySpell(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
     {
       Radius = 300,
-      DamageBase = 55,
-      DurationBase = 1,
-      StunAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
-      StunOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 55
+      },
+      DummyAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
+      DummyAbilityOrderId = ORDER_CRIPPLE,
+      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(thunderClapGil);
 

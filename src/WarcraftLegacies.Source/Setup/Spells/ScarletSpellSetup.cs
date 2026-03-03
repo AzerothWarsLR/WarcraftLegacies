@@ -24,17 +24,14 @@ public static class ScarletSpellSetup
       TargetType = SpellTargetType.None
     }, UNIT_H08H_HIGH_INQUISITOR_SCARLET);
 
-    var crusaderShout = new Stomp(ABILITY_A0KB_CRUSADER_S_SHOUT_SAIDEN)
+    var crusaderShout = new MassAnySpell(ABILITY_A0KB_CRUSADER_S_SHOUT_SAIDEN)
     {
       Radius = 600,
-      DamageBase = 00,
-      DamageLevel = 00,
-      DurationBase = 2,
-      DurationLevel = 1,
-      StunAbilityId = ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
-      StunOrderId = ORDER_SOUL_BURN,
+      DummyAbilityId = ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
+      DummyAbilityOrderId = ORDER_SOUL_BURN,
       SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx",
-      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(crusaderShout);
 
@@ -49,6 +46,5 @@ public static class ScarletSpellSetup
 
     var recklessOnslaught = new CooldownReset(ABILITY_A0TC_RECKLESS_ONSLAUGHT_SCARLET);
     SpellRegistry.Register(recklessOnslaught);
-
   }
 }
