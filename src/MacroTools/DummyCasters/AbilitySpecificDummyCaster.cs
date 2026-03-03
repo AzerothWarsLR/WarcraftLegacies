@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
-using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.DummyCasters;
@@ -74,20 +73,6 @@ public sealed class AbilitySpecificDummyCaster
     _unit.AddAbility(_abilityTypeId);
     _unit.SetAbilityLevel(_abilityTypeId, level);
     _unit.IssueOrder(_abilityOrderId, target.X, target.Y);
-  }
-
-  /// <summary>
-  /// Causes the specified spell to be cast on all units in a circle.
-  /// </summary>
-  public void CastOnUnitsInCircle(unit caster, int level, Point center,
-    float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
-  {
-    foreach (var target in GlobalGroup
-               .EnumUnitsInRange(center, radius)
-               .FindAll(unit => castFilter(caster, unit)))
-    {
-      CastUnit(caster, level, target, originType);
-    }
   }
 
   /// <summary>
