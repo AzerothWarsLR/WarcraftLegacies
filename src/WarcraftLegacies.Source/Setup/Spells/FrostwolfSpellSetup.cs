@@ -21,8 +21,7 @@ public static class FrostwolfSpellSetup
       Radius = 300,
       Damage = new LeveledAbilityField<float>
       {
-        Base = 20,
-        PerLevel = 30
+        PerLevel = 25
       },
       DummyAbilityId = ABILITY_A0WN_STUN_UNIT_DUMMY_CASTER_WAR_STOMP_CAIRNE,
       DummyAbilityOrderId = ORDER_THUNDERBOLT,
