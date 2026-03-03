@@ -236,25 +236,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing \u003CAOw2,DataA1\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur1\u003E seconds."
+      "Value": "Slams the ground, dealing 25 damage to nearby enemy land units and stunning them for \u003CA0WN,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing \u003CAOw2,DataA2\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur2\u003E seconds."
+      "Value": "Slams the ground, dealing 50 damage to nearby enemy land units and stunning them for \u003CA0WN,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing \u003CAOw2,DataA3\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur3\u003E seconds."
+      "Value": "Slams the ground, dealing 75 damage to nearby enemy land units and stunning them for \u003CA0WN,Dur3\u003E seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing \u003CAOw2,DataA4\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur4\u003E seconds."
+      "Value": "Slams the ground, dealing 100 damage to nearby enemy land units and stunning them for \u003CA0WN,Dur4\u003E seconds."
     }
   ]
 }
