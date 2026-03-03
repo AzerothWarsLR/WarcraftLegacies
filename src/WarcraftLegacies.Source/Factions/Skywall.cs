@@ -138,8 +138,11 @@ public sealed class Skywall : Faction
       DummyAbilityId = ABILITY_TP04_PURGE_DUMMY,
       DummyAbilityOrderId = ORDER_PURGE,
       Radius = 200,
-      DamageBase = 30,
-      DamageLevel = 20,
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 30,
+        PerLevel = 20
+      },
       TargetType = SpellTargetType.Point,
       CastFilter = CastFilters.IsTargetEnemyAndAlive
     };

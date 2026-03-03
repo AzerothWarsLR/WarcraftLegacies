@@ -43,14 +43,9 @@ public sealed class MassAnySpell : Spell
   public DummyCastOriginType DummyCastOriginType { get; init; } = DummyCastOriginType.Target;
 
   /// <summary>
-  /// How much damage the spell does to each affected unit, ignoring any levels.
+  /// How much damage the spell deals.
   /// </summary>
-  public float DamageBase { get; init; }
-
-  /// <summary>
-  /// How much damage the spell does to each affected unit per spell level.
-  /// </summary>
-  public float DamageLevel { get; init; }
+  public LeveledAbilityField<float>? Damage { get; init; }
 
   /// <summary>
   /// Initializes a new instance of the <see cref="MassAnySpell"/> class.
@@ -67,7 +62,12 @@ public sealed class MassAnySpell : Spell
     var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
 
     var casterAbilityLevel = GetAbilityLevel(caster);
-    var damage = DamageBase + DamageLevel * casterAbilityLevel;
+    float damage = 0;
+    if (Damage != null)
+    {
+      damage = Damage.Base + Damage.PerLevel * casterAbilityLevel;
+    }
+
     var dummyCaster = DummyCasterManager.GetGlobalDummyCaster();
     foreach (var unit in units)
     {
