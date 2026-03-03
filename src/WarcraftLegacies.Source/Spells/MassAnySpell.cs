@@ -15,17 +15,17 @@ public sealed class MassAnySpell : Spell
   /// <summary>
   /// The ID of the single-target ability to cast on units in the area.
   /// </summary>
-  public int DummyAbilityId { get; init; }
+  public required int DummyAbilityId { get; init; }
 
   /// <summary>
   /// The order string used to cast <see cref="DummyAbilityId"/>.
   /// </summary>
-  public int DummyAbilityOrderId { get; init; }
+  public required int DummyAbilityOrderId { get; init; }
 
   /// <summary>
   /// The radius in which units are affected.
   /// </summary>
-  public float Radius { get; init; }
+  public required float Radius { get; init; }
 
   /// <summary>
   /// A filter that units must pass to be considered eligible targets for the spell.
@@ -35,7 +35,7 @@ public sealed class MassAnySpell : Spell
   /// <summary>
   /// What kind of thing the spell targets.
   /// </summary>
-  public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
+  public required SpellTargetType TargetType { get; init; }
 
   /// <summary>
   /// Where each dummy spell should be cast from.

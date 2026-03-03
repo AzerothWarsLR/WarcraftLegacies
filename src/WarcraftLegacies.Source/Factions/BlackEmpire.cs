@@ -129,7 +129,8 @@ public sealed class BlackEmpire : Faction
       DummyAbilityOrderId = ORDER_SHADOWSTRIKE,
       SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl",
       CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
-      DummyCastOriginType = DummyCastOriginType.Caster
+      DummyCastOriginType = DummyCastOriginType.Caster,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(poisonYor);
 
