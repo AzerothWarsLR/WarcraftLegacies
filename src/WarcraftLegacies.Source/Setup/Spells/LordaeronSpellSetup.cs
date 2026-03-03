@@ -10,15 +10,19 @@ public static class LordaeronSpellSetup
 {
   public static void Setup()
   {
-    var consecration = new Stomp(ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
+    var consecration = new MassAnySpell(ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
     {
       Radius = 300,
-      DamageBase = 20,
-      DamageLevel = 40,
-      DurationBase = 1,
-      StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
-      StunOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 20,
+        PerLevel = 40
+      },
+      DummyAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
+      DummyAbilityOrderId = ORDER_CRIPPLE,
+      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(consecration);
 

@@ -16,29 +16,30 @@ public static class FrostwolfSpellSetup
     };
     SpellRegistry.Register(devour);
 
-    var warStompCairne = new Stomp(ABILITY_A0WM_WAR_STOMP_CAIRNE_MANNOROTH)
+    var warStompCairne = new MassAnySpell(ABILITY_A0WM_WAR_STOMP_CAIRNE_MANNOROTH)
     {
       Radius = 300,
-      DamageBase = 20,
-      DamageLevel = 30,
-      DurationBase = 0,
-      DurationLevel = 1,
-      StunAbilityId = ABILITY_A0WN_STUN_UNIT_DUMMY,
-      StunOrderId = ORDER_THUNDERBOLT,
-      SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 20,
+        PerLevel = 30
+      },
+      DummyAbilityId = ABILITY_A0WN_STUN_UNIT_DUMMY,
+      DummyAbilityOrderId = ORDER_THUNDERBOLT,
+      SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(warStompCairne);
 
-    var cripplingShout = new Stomp(ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
+    var cripplingShout = new MassAnySpell(ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
     {
       Radius = 700,
-      DamageBase = 00,
-      DamageLevel = 00,
-      DurationBase = 15,
-      StunAbilityId = ABILITY_TP08_CRIPPLE_DUMMY,
-      StunOrderId = ORDER_CRIPPLE,
+      DummyAbilityId = ABILITY_TP08_CRIPPLE_DUMMY,
+      DummyAbilityOrderId = ORDER_CRIPPLE,
       SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx",
-      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(cripplingShout);
 

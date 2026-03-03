@@ -53,17 +53,14 @@ public static class DraeneiSpellSetup
       Distance = 700
     }, UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI);
 
-    var warStompAdal = new Stomp(ABILITY_A105_BLINDING_STARLIGHT_ADAL)
+    var warStompAdal = new MassAnySpell(ABILITY_A105_BLINDING_STARLIGHT_ADAL)
     {
       Radius = 1000,
-      DamageBase = 00,
-      DamageLevel = 00,
-      DurationBase = 6,
-      DurationLevel = 3,
-      StunAbilityId = ABILITY_A106_CURSE_DRAENEI,
-      StunOrderId = ORDER_CURSE,
+      DummyAbilityId = ABILITY_A106_CURSE_DRAENEI,
+      DummyAbilityOrderId = ORDER_CURSE,
       SpecialEffect = @"war3mapImported\FrostNova.mdx",
-      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits
+      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits,
+      TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(warStompAdal);
 
