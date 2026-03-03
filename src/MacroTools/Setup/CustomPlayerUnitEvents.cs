@@ -45,7 +45,7 @@ public static class CustomPlayerUnitEvents
     PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaged);
     PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaged);
     PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => @event.Unit.Owner.Id, playerunitevent.Death);
-    PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => @event.KillingUnit.Owner.GetPlayerData().Faction.Id, playerunitevent.Death);
+    PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => @event.KillingUnit.Owner.GetPlayerData().Faction?.Id ?? -1, playerunitevent.Death);
     PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => @event.Unit.Owner.Id, playerunitevent.SpellEffect);
   }
 }
