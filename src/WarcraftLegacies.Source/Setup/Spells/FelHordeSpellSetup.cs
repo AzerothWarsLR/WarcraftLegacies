@@ -48,14 +48,14 @@ public static class FelHordeSpellSetup
     };
     SpellRegistry.Register(healingWavePlusHero);
 
-    var warStompKazzak = new MassAnySpell(ABILITY_A0AW_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
+    var warStompKazzak = new MassAnySpell(ABILITY_A0AW_WAR_STOMP_DOOM_LORD)
     {
       Radius = 300,
       Damage = new LeveledAbilityField<float>
       {
         Base = 25
       },
-      DummyAbilityId = ABILITY_A0WN_STUN_UNIT_DUMMY,
+      DummyAbilityId = ABILITY_YBAS_STUN_UNIT_DUMMY_CASTER_WAR_STOMP_DOOM_LORD,
       DummyAbilityOrderId = ORDER_THUNDERBOLT,
       SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl",
       CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
