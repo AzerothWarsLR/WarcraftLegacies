@@ -32,11 +32,6 @@ public sealed class Druids : Faction
                 "Use him to awaken Malfurion from his slumber as soon as possible.\n\n" +
                 "Gather your forces and strike before the Old Gods can organize their efforts.";
 
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9200, 10742),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -17545, 15856)
-    };
     Nicknames = new List<string>
     {
       "druid"

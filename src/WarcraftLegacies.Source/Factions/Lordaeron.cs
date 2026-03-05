@@ -31,13 +31,6 @@ public sealed class Lordaeron : Faction
                 "You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeath is imminent.\n\n" +
                 "Secure your major settlements by clearing out clusters of enemies and fortify your Kingdom as much as possible.\n\n" +
                 "If you survive the Plague, sail to the frozen wasteland of Northrend and take the fight to the Lich King.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 13617, 8741),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 7716, 11657),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 17198, 8222)
-    };
     Nicknames = new List<string>
     {
       "lord"

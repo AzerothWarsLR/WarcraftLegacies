@@ -32,11 +32,6 @@ public sealed class Legion : Faction
                 "You begin isolated on Argus. Once the planet is under your control, you will unlock two teleporters to Northrend and Alterac.\n\n" +
                 "On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran, and Quel'Thalas.\n\n" +
                 "Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the Book of Medivh is kept, and use it to open the Demon-gate to Argus.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 19331f, -30663)
-    };
     Nicknames = new List<string>
     {
       "leg",

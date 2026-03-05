@@ -27,13 +27,6 @@ public sealed class Sunfury : Faction
                 "You begin in Netherstorm. Your first mission is to build three biodomes in the green areas protected by a bubble.\n\n" +
                 "Unite with your fel ally to push through the Dark Portal and destroy Stormwind.\n\n" +
                 "Your ultimate goal is to summon Kil'jaeden and annihilate your enemies.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 3295, -22670),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 2529, -19141),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), Regions.Area52Unlock.Center)
-    };
     Nicknames = new List<string>
     {
       "sf",

@@ -34,8 +34,7 @@ public sealed class QuestWakingCity : QuestData
     AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_NZOTH_T3, UNIT_N0AR_TWISTING_HALLS_NZOTH_T1));
     AddObjective(new ObjectiveSelfExists());
-    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => filterUnit.UnitType != FourCC("ngol"));
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_THE_WAKING_CITY;
   }
 

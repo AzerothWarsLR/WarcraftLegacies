@@ -3,7 +3,6 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -30,11 +29,6 @@ public sealed class Sentinels : Faction
                "The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods' invaders from Kalimdor until then.\n\n" +
                "Your first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel bastion on the southern half of the continent.\n\n" +
                "Once you have secured your holdings, gather your army and destroy the Old Gods. Be cautious—they will outnumber you if given time to establish a foothold in Azeroth.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -20780, 7860)
-    };
     Nicknames = new List<string>
     {
       "sent",

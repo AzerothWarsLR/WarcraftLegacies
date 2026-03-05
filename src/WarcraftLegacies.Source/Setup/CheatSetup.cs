@@ -55,7 +55,6 @@ public static class CheatSetup
       Artifacts.RubyFragment,
       Artifacts.ObsidianFragment
     }));
-    CommandManager.Register(new CheatPingGoldMines());
     CommandManager.Register(new CheatGetWaygateDestination());
     CommandManager.Register(new CheatPause());
     CommandManager.Register(new CheatRemovePower());

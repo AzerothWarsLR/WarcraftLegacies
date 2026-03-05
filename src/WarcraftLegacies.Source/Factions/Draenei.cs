@@ -25,10 +25,6 @@ public sealed class Draenei : Faction
                 "Further inland your Night-elf allies will need your help against the Old Gods. Quickly build your base and gain entry to the Exodar.\n\n" +
                 "Power up your buildings with your Arcane Wells to unlock powerful global abilities.";
 
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -21000, 8600)
-    };
     Nicknames = new List<string>
     {
       "draenei",

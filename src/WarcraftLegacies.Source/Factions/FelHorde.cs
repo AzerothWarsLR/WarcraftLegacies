@@ -26,10 +26,6 @@ public sealed class FelHorde : Faction
                             "The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
 
     FoodMaximum = 250;
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -2735, -30242)
-    };
     Nicknames = new List<string>
     {
       "fh",
