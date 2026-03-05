@@ -35,7 +35,7 @@ public static class DalaranObjectInfo
     yield return new(UNIT_N004_IMPROVED_KIRIN_TOR_TOWER_DALARAN_TOWER, Unlimited, Tower);
     yield return new(UNIT_N03G_VIOLET_TOWER_DALARAN, Unlimited, Tower);
 
-    yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, Worker);
+    yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, Builder);
     yield return new(UNIT_NHYM_HYDROMANCER_DALARAN, Unlimited, Support);
     yield return new(UNIT_H032_BATTLEMAGE_DALARAN, Unlimited, Fighter);
     yield return new(UNIT_H02D_GEOMANCER_DALARAN, Unlimited, Support);

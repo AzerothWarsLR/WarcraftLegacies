@@ -27,7 +27,7 @@ public static class QuelthalasObjectInfo
     yield return new(UNIT_H077_SHIPYARD_QUELTHALAS_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_NEFM_RESIDENCE_QUELTHALAS, Unlimited, Farm);
 
-    yield return new(UNIT_NBEE_ARCHITECT_QUELTHALAS_WORKER, Unlimited, Worker);
+    yield return new(UNIT_NBEE_ARCHITECT_QUELTHALAS_WORKER, Unlimited, Builder);
     yield return new(UNIT_HHES_SWORDSMAN_QUELTHALAS, Unlimited, Tank);
     yield return new(UNIT_HMPR_PRIEST_QUELTHALAS, Unlimited, Support);
     yield return new(UNIT_HSOR_SORCERESS_QUELTHALAS, Unlimited, Support);

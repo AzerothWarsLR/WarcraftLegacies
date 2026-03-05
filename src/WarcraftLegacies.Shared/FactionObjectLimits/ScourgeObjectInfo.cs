@@ -27,8 +27,8 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_U003_IMPROVED_NERUBIAN_TOWER_SCOURGE_TOWER, Unlimited, new List<UnitCategory> { Farm, Tower });
 
     //Units
-    yield return new(UNIT_UACO_ACOLYTE_SCOURGE_WORKER, Unlimited, Worker);
-    yield return new(UNIT_UGHO_GHOUL_SCOURGE, Unlimited, new List<UnitCategory> { Fighter, Worker });
+    yield return new(UNIT_UACO_ACOLYTE_SCOURGE_WORKER, Unlimited, Builder);
+    yield return new(UNIT_UGHO_GHOUL_SCOURGE, Unlimited, new List<UnitCategory> { Fighter, Builder });
     yield return new(UNIT_UABO_ABOMINATION_SCOURGE, Unlimited, Tank);
     yield return new(UNIT_UMTW_MEAT_WAGON_SCOURGE, 8, Siege);
     yield return new(UNIT_UCRY_CRYPT_FIEND_SCOURGE, Unlimited, Marksman);

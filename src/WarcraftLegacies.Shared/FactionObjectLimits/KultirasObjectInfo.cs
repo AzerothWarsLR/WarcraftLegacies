@@ -27,7 +27,7 @@ public static class KultirasObjectInfo
     yield return new(UNIT_H07P_WORKSHOP_KULTIRAS_SPECIALIST, Unlimited, SiegeWorkshop);
     yield return new(UNIT_H093_ORDER_CHAPTER_HOUSE_KULTIRAS_SIEGE, Unlimited, Specialist);
 
-    yield return new(UNIT_H01E_DECKHAND_KULTIRAS_WORKER, Unlimited, Worker);
+    yield return new(UNIT_H01E_DECKHAND_KULTIRAS_WORKER, Unlimited, Builder);
     yield return new(UNIT_E007_THORNSPEAKER_KULTIRAS, Unlimited, Support);
     yield return new(UNIT_N09A_EMBER_CLERIC_KULTIRAS, 12, Support);
     yield return new(UNIT_N09B_WITCH_HUNTER_KULTIRAS, 8, Marksman);

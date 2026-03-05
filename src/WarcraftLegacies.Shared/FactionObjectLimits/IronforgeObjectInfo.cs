@@ -28,7 +28,7 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H07I_GUARD_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
     yield return new(UNIT_H07L_IMPROVED_GUARD_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
 
-    yield return new(UNIT_H019_MASON_IRONFORGE_WORKER, Unlimited, Worker);
+    yield return new(UNIT_H019_MASON_IRONFORGE_WORKER, Unlimited, Builder);
     yield return new(UNIT_HRIF_RIFLEMAN_IRONFORGE, Unlimited, Marksman);
     yield return new(UNIT_HMTM_MORTAR_TEAM_IRONFORGE, 9, Siege);
     yield return new(UNIT_N0CZ_DREADNAUGHT_IRONFORGE, 4, Tank);

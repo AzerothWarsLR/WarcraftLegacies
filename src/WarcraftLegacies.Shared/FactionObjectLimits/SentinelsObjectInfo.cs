@@ -23,7 +23,7 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_N06M_RESIDENCE_SENTINELS_FARM, Unlimited, Farm);
     yield return new(UNIT_EDOS_ROOST_SENTINELS_SPECIALIST, Unlimited, FlyingBuilding);
     yield return new(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE, Unlimited, Specialist);
-    yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, Worker);
+    yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, Builder);
     yield return new(UNIT_E006_PRIESTESS_SENTINELS, Unlimited, Support);
     yield return new(UNIT_N06C_MOONHUNTER_SENTINELS, Unlimited, Support);
     yield return new(UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE, 6, new List<UnitCategory> { Marksman, Support });

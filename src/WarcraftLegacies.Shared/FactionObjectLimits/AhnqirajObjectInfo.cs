@@ -19,7 +19,7 @@ public static class AhnqirajObjectInfo
     yield return new(UNIT_U01H_ANCIENT_CATACOMBS_CTHUN_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_U01I_CHAMBER_OF_WONDERS_CTHUN_SHOP, Unlimited, Shop);
     yield return new(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR, Unlimited, Altar);
-    yield return new(UNIT_U019_WORKER_CTHUN_WORKER, Unlimited, Worker);
+    yield return new(UNIT_U019_WORKER_CTHUN_WORKER, Unlimited, Builder);
     yield return new(UNIT_O000_ROYALTY_CTHUN_ELITES, 6, new List<UnitCategory> { Elite, Fighter });
     yield return new(UNIT_N06I_SOLDIER_CTHUN_SILITHID_WARRIOR, Unlimited, new List<UnitCategory> { Tank, Summoner });
     yield return new(UNIT_O00L_CREMATOGASTER_CTHUN_SILITHID_REAVER, Unlimited, Marksman);

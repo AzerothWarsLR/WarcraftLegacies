@@ -24,7 +24,7 @@ public static class DraeneiObjectInfo
     yield return new(UNIT_O059_SHIPYARD_DRAENEI_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_O05U_LIGHTFORGED_GATEWAY_DRAENEI_ELITE, Unlimited, Specialist);
 
-    yield return new(UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER, Unlimited, Worker);
+    yield return new(UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER, Unlimited, Builder);
     yield return new(UNIT_O05B_DEFENDER_DRAENEI, Unlimited, Tank);
     yield return new(UNIT_H09T_RANGARI_DRAENEI, Unlimited, Marksman);
     yield return new(UNIT_E01K_POLYBOLOS_DRAENEI, 3, Siege);
