@@ -24,7 +24,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_E020_ANCIENT_SHIPYARD_ILLIDARI_SHIPYARD, Unlimited, Shipyard);
 
-    yield return new(UNIT_NMPE_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, Worker);
+    yield return new(UNIT_NMPE_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, Builder);
     yield return new(UNIT_NMYR_MYRMIDON_ILLIDARI, Unlimited, Fighter);
     yield return new(UNIT_NSNP_SNAP_DRAGON_ILLIDARI, Unlimited, Marksman);
     yield return new(UNIT_NNSW_SIREN_ILLIDARI, Unlimited, Support);

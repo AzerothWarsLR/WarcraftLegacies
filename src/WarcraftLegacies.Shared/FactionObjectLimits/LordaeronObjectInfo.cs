@@ -27,7 +27,7 @@ public static class LordaeronObjectInfo
     yield return new(UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE, Unlimited, SiegeWorkshop);
 
-    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Worker);
+    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Builder);
     yield return new(UNIT_HFOO_FOOTMAN_LORDAERON, Unlimited, Tank);
     yield return new(UNIT_HKNI_KNIGHT_LORDAERON, Unlimited, Fighter);
     yield return new(UNIT_NCHP_MAGE_LORDAERON, Unlimited, Support);

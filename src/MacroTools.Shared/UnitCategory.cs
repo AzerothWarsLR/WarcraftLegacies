@@ -27,7 +27,7 @@ public enum UnitCategory
   FlyingBuilding,
 
   //Units
-  Worker,
+  Builder,
   Elite,
   Support,
   Marksman,
@@ -86,8 +86,8 @@ public static class UnitCategoryExtensions
         return "Teleport";
       case UnitCategory.FlyingBuilding:
         return "Flyer Production";
-      case UnitCategory.Worker:
-        return "Worker";
+      case UnitCategory.Builder:
+        return "Builder";
       case UnitCategory.Elite:
         return string.Empty;
       case UnitCategory.Support:

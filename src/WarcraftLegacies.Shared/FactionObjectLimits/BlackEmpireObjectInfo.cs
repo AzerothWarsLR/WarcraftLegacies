@@ -27,7 +27,7 @@ public static class BlackEmpireObjectInfo
     yield return new(UNIT_N0B1_IMPROVED_SLEEPLESS_WATCHER_NZOTH_TOWER, Unlimited, Tower);
     yield return new(UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD, Unlimited, Shipyard);
 
-    yield return new(UNIT_N0B5_SCAVENGER_NZOTH_WORKER, Unlimited, Worker);
+    yield return new(UNIT_N0B5_SCAVENGER_NZOTH_WORKER, Unlimited, Builder);
     yield return new(UNIT_N0B4_REAPER_NZOTH, 6, new List<UnitCategory> { Elite, Fighter });
     yield return new(UNIT_O01G_BRUTE_NZOTH, Unlimited, Tank);
     yield return new(UNIT_O04V_LURKER_NZOTH, Unlimited, Marksman);

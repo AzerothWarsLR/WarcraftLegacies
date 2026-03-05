@@ -30,7 +30,7 @@ public static class FelHordeObjectInfo
     yield return new(UNIT_NCHW_FEL_WARLOCK_FEL, Unlimited, Support);
     yield return new(UNIT_NCHG_FEL_GRUNT_FEL, Unlimited, Fighter);
     yield return new(UNIT_NCHR_FEL_RAIDER_FEL, Unlimited, new List<UnitCategory> { Fighter, Siege });
-    yield return new(UNIT_NCPN_FEL_PEON_FEL_WORKER, Unlimited, Worker);
+    yield return new(UNIT_NCPN_FEL_PEON_FEL_WORKER, Unlimited, Builder);
     yield return new(UNIT_OWAR_BONEBREAKER_FEL, 12, Fighter);
     yield return new(UNIT_O01L_EXECUTIONER_FEL_ELITE, 6, new List<UnitCategory> { Elite, Fighter });
     yield return new(UNIT_O01O_DEMOLISHER_FEL, 8, Siege);

@@ -22,7 +22,7 @@ public static class DruidsObjectInfo
     yield return new(UNIT_E019_ANCIENT_OF_WONDERS_DRUIDS_SHOP, Unlimited, Shop);
     yield return new(UNIT_ESHY_KALDOREI_DOCKS_DRUIDS_SENTINEL_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS_TOWER, Unlimited, Tower);
-    yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, Worker);
+    yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, Builder);
     yield return new(UNIT_EDRY_DRYAD_DRUIDS, Unlimited, Marksman);
     yield return new(UNIT_EDOT_DRUID_OF_THE_TALON_DRUIDS, Unlimited, new List<UnitCategory> { Support, Flyer });
     yield return new(UNIT_EMTG_MOUNTAIN_GIANT_DRUIDS, 12, Tank);

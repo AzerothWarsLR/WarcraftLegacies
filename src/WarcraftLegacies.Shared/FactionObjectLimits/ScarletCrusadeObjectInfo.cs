@@ -23,7 +23,7 @@ public static class ScarletCrusadeObjectInfo
     yield return new(UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_SCARLET_TOWER, Unlimited, Tower);
     yield return new(UNIT_H0BQ_ALTAR_OF_CRUSADERS_SCARLET_ALTAR, Unlimited, Altar);
     yield return new(UNIT_N0D8_VENDOR_HALL_SCARLET_SHOP, Unlimited, Shop);
-    yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, Worker);
+    yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, Builder);
     yield return new(UNIT_H06B_TEMPLAR_LORDAERON, 6, new List<UnitCategory> { Elite, Fighter, Tank, Support });
     yield return new(UNIT_H08I_CRUSADER_SCARLET, Unlimited, Tank);
     yield return new(UNIT_H09P_LONGBOWMAN_SCARLET, Unlimited, Marksman);
