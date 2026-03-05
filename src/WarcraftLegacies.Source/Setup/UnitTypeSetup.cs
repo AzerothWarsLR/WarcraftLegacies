@@ -12,7 +12,6 @@ public static class UnitTypeSetup
     SubSetupTrader();
     SubSetupGatesA();
     SubSetupGatesB();
-    SubSetupGoblinMerchant();
   }
 
   private static void SubSetupFactionConfig()
@@ -139,14 +138,6 @@ public static class UnitTypeSetup
     });
 
     UnitType.Register(new UnitType(UNIT_H04S_DIAGONAL_WOODEN_GATE_GATE_CLOSED)
-    {
-      NeverDelete = true
-    });
-  }
-
-  private static void SubSetupGoblinMerchant()
-  {
-    UnitType.Register(new UnitType(FourCC("ngol"))
     {
       NeverDelete = true
     });

@@ -59,7 +59,7 @@ public static class RectangleExtensions
 
     foreach (var unit in unitsInArea)
     {
-      if (unit.Owner != player.NeutralPassive || unit.UnitType == FourCC("ngol"))
+      if (unit.Owner != player.NeutralPassive)
       {
         continue;
       }
@@ -130,7 +130,6 @@ public static class RectangleExtensions
 
   /// <summary>
   /// Replaces all units in a rectangle with their equivalents from the specified faction.
-  /// Ignores all units with the type ID "ngol".
   /// </summary>
   /// <param name="region">The rectangular region.</param>
   /// <param name="pickedFaction">The faction whose equivalents will be used.</param>
@@ -143,7 +142,6 @@ public static class RectangleExtensions
 
     var unitsInRegion = GlobalGroup
       .EnumUnitsInRect(region)
-      .Where(x => x.UnitType != FourCC("ngol")) // exclude goldmines
       .Where(unit => unit.IsUnitType(unittype.Structure)); // Filter to include only structures
 
     foreach (var unit in unitsInRegion)

@@ -41,10 +41,6 @@ public sealed class Dalaran : Faction
                 "Once your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.\n\n" +
                 "Your mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle.";
 
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
-    };
     Nicknames = new List<string>
     {
       "dala"

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
-using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
@@ -24,11 +23,6 @@ public sealed class Gilneas : Faction
                 "You start beyond the Greymane Wall at Pyrewood Village;\n\n" +
                 "You must raise an army and fight back against the feral wolves of Silverpine and the bandit lords of Durnholde that have taken over Southern-Lordaeron.\n\n" +
                 "Once you have reclaimed Southern-Lordaeron, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5466, 3210),
-    };
     Nicknames = new List<string>
     {
       "gil",

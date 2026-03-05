@@ -3,7 +3,6 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
-using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -47,12 +46,6 @@ public sealed class Illidari : Faction
     RegisterFactionDependentInitializer<Scourge, Druids, Ahnqiraj>(RegisterScourgeDruidsAhnqirajQuests);
     RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5467, -31440),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 5805, -31258),
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 767, 6244),
-    };
   }
 
   /// <inheritdoc />

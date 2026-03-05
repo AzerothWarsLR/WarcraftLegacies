@@ -27,10 +27,8 @@ public sealed class QuestTwilightlanding : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_NTWL_TWILIGHT_LANDING));
     AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
-    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => filterUnit.UnitType != FourCC("ngol"));
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     ResearchId = UPGRADE_RBMG_QUEST_COMPLETED_TWILIGHT_LANDING;
-
   }
 
   /// <inheritdoc />
