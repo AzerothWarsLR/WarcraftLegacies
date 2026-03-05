@@ -36,11 +36,6 @@ public sealed class Scourge : Faction
                 "The local Nerubians have declared war on you. Destroy their decrepit holdings and slay their Queen to secure the continent.\n\n" +
                 "Coordinate with the Burning Legion and unleash the Plague of Undeath to sweep Lordaeron away.\n\n" +
                 "When the Plague strikes Lordaeron, you will have a choice of where to instantly transport all your military units.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -4939, 18803)
-    };
     Nicknames = new List<string>
     {
       "ud",

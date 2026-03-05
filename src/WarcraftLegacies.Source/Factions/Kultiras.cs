@@ -25,11 +25,6 @@ public sealed class Kultiras : Faction
     IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
                 "You begin on Balor Island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar, and Stormsong Valley.\n\n" +
                 "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and assist them, or risk losing your strongest ally.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), 4585, -13038)
-    };
     Nicknames = new List<string>
     {
       "kt",

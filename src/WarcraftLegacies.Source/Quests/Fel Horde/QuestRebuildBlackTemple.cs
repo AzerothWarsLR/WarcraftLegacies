@@ -39,5 +39,5 @@ public sealed class QuestRuinsofShadowmoon : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => "Gain a base with a goldmine in Shadowmoon Valley";
+  protected override string RewardDescription => "Gain control of the base in Shadowmoon Valley";
 }

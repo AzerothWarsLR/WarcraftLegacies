@@ -27,7 +27,6 @@ public abstract class Faction
   private static int _highestId;
 
   private readonly Dictionary<int, int> _abilityAvailabilities = new();
-  private readonly List<unit> _goldMines = new();
   private readonly Dictionary<int, int> _objectLevels = new();
   private readonly Dictionary<int, int> _objectLimits = new();
   private readonly Dictionary<UnitCategory, List<int>> _objectsByFirstCategory = new();
@@ -56,12 +55,6 @@ public abstract class Faction
 
   /// <summary>A unique numerical identifier.</summary>
   public int Id { get; }
-
-  public IReadOnlyList<unit> GoldMines
-  {
-    get => _goldMines;
-    protected init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
-  }
 
   /// <summary>Displayed to the <see cref="Faction" /> when the game starts.</summary>
   public string? IntroText { get; protected init; }
@@ -248,7 +241,6 @@ public abstract class Faction
       Player.Remove(playergameresult.Defeat);
       Player.SetState(playerstate.Observer, 1);
       PlayerDistributor.DistributePlayer(Player);
-      RemoveGoldMines();
     }
 
     ScoreStatus = ScoreStatus.Defeated;
@@ -491,22 +483,6 @@ public abstract class Faction
   public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
   /// <summary>
-  /// Removes a number of gold mines both from the game and from this unit's list of mines.
-  /// </summary>
-  internal void RemoveGoldMines(IEnumerable<unit> goldMinesToRemove)
-  {
-    foreach (var goldMine in goldMinesToRemove)
-    {
-      if (!_goldMines.Contains(goldMine))
-      {
-        throw new InvalidOperationException($"Tried to remove Gold Mine from {Name} that they don't own.");
-      }
-
-      goldMine.Dispose();
-    }
-  }
-
-  /// <summary>
   /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>.
   /// </summary>
   protected void ProcessObjectInfo(IEnumerable<ObjectInfo> objectInfos)
@@ -660,17 +636,6 @@ public abstract class Faction
     }
 
     return essentialLegends;
-  }
-
-  /// <summary>Removes all gold mines assigned to the faction.</summary>
-  private void RemoveGoldMines()
-  {
-    foreach (var unit in GoldMines)
-    {
-      unit.Kill();
-    }
-
-    _goldMines.Clear();
   }
 
   /// <summary>

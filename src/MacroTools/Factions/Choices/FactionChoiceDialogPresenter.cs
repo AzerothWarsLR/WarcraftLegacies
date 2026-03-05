@@ -35,9 +35,7 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
   private static void ReplaceStartingUnitsWithFactionEquivalents(player pickingPlayer, FactionChoice choice,
     Faction pickedFaction)
   {
-    var startingUnits = GlobalGroup
-      .EnumUnitsInRect(choice.StartingArea)
-      .Where(x => x.UnitType != FourCC("ngol"));
+    var startingUnits = GlobalGroup.EnumUnitsInRect(choice.StartingArea);
 
     foreach (var unit in startingUnits)
     {
@@ -60,7 +58,6 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
 
     var unitsInRegion = GlobalGroup
       .EnumUnitsInRect(region)
-      .Where(x => x.UnitType != FourCC("ngol"))
       .Where(x => x.Owner != player.NeutralAggressive);
 
     foreach (var unit in unitsInRegion)
@@ -79,9 +76,7 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
     var unpickedFactions = Choices.Where(x => x != choice).Select(x => x.Faction).ToList();
     foreach (var unpickedFaction in unpickedFactions)
     {
-      var goldMinesToRemove = unpickedFaction.GoldMines.Except(choice.Faction.GoldMines);
       unpickedFaction.OnNotPicked();
-      unpickedFaction.RemoveGoldMines(goldMinesToRemove);
     }
   }
 

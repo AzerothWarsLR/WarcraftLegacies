@@ -2,7 +2,6 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -26,11 +25,6 @@ public sealed class Frostwolf : Faction
     IntroText = $"You are playing as the honorable {PrefixCol}Frostwolf Clan|r.\n\n" +
                 "You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\n" +
                 "Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
-    };
     Nicknames = new List<string>
     {
       "fw",

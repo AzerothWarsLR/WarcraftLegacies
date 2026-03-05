@@ -33,11 +33,6 @@ public sealed class Warsong : Faction
                 "Begin swiftly by rescuing your Chieftain, Grom Hellscream, who is trapped in battle and consumed by demonic fury. His survival is paramount.\n\n" +
                 "With Grom secured, expand your dominance by subduing or pillaging nearby races to bolster your clan's strength.\n\n" +
                 "Work closely with your new elven allies—only together can you overcome the looming threat of the Old Gods.";
-
-    GoldMines = new List<unit>
-    {
-      AllPreplacedWidgets.Units.GetClosest(FourCC("ngol"), -9729, 2426),
-    };
     Nicknames = new List<string>
     {
       "ws",
