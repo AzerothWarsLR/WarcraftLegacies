@@ -34,7 +34,7 @@ public static class GilneasObjectInfo
     yield return new(UNIT_H04N_IMPROVED_CANNON_TOWER_GILNEAS_TOWER, Unlimited, Tower);
     yield return new(UNIT_N03G_VIOLET_TOWER_DALARAN, Unlimited, Tower);
 
-    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Worker);
+    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Builder);
     yield return new(UNIT_H04M_CLERIC_GILNEAS, Unlimited, Support);
     yield return new(UNIT_N06K_DRUID_OF_THE_SCYTHE_GILNEAS, Unlimited, Support);
     yield return new(UNIT_H04X_HARVEST_WITCH_GILNEAS, 6, Support);

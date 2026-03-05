@@ -31,7 +31,7 @@ public static class StormwindObjectInfo
     yield return new(UNIT_H05J_CHAMPION_S_HALL_STORMWIND_OTHER, 1, Research);
     yield return new(UNIT_H05A_WIZARD_S_SANCTUM_STORMWIND_OTHER, 1, Research);
 
-    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Worker);
+    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Builder);
     yield return new(UNIT_H02O_BLADESMAN_STORMWIND, Unlimited, Tank);
     yield return new(UNIT_H03K_MARSHAL_STORMWIND, 12, Tank);
     yield return new(UNIT_H00A_SPEARMAN_STORMWIND, Unlimited, Marksman);

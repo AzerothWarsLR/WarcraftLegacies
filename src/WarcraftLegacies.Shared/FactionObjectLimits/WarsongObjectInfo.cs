@@ -25,7 +25,7 @@ public static class WarsongObjectInfo
     yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.Farm);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.Farm);
     yield return new(UNIT_O006_SPIRE_WARSONG_MAGIC, Unlimited, UnitCategory.Magic);
-    yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
+    yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Builder);
     yield return new(UNIT_O02M_WARSONG_GRUNT_WARSONG, Unlimited, UnitCategory.Tank);
     yield return new(UNIT_ORAI_RAIDER_WARSONG, Unlimited, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Siege });
     yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited, UnitCategory.Fighter);

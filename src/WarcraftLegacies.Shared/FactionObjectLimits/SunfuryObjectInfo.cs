@@ -26,7 +26,7 @@ public static class SunfuryObjectInfo
     yield return new(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER, 1, Unique);
     yield return new(UNIT_TP04_SHIPYARD_SUNFURY_SHIPYARD, Unlimited, Shipyard);
 
-    yield return new(UNIT_N0E2_TECHNICIAN_SUNFURY_WORKER, Unlimited, Worker);
+    yield return new(UNIT_N0E2_TECHNICIAN_SUNFURY_WORKER, Unlimited, Builder);
     yield return new(UNIT_N09S_CENTURION_SUNFURY, Unlimited, Tank);
     yield return new(UNIT_H0CF_BOWMAN_SUNFURY, Unlimited, Marksman);
     yield return new(UNIT_U02W_ENERGY_WAGON_SUNFURY, 2, Support);

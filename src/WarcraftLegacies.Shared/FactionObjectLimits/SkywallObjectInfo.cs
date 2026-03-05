@@ -21,7 +21,7 @@ public static class SkywallObjectInfo
     yield return new(UNIT_N08L_LATTICE_SPIRE_SKYWALL_TOWER, Unlimited, Tower);
     yield return new(UNIT_N08N_IMPROVED_LATTICE_SPIRE_SKYWALL_TOWER, Unlimited, Tower);
 
-    yield return new(UNIT_LS05_SHAPER_SKYWALL_WORKER, Unlimited, Worker);
+    yield return new(UNIT_LS05_SHAPER_SKYWALL_WORKER, Unlimited, Builder);
     yield return new(UNIT_N08S_ELEMENTAL_LORD_SKYWALL, 6, new List<UnitCategory> { Elite, Support, Marksman });
     yield return new(UNIT_O01I_ANIMATED_ARMOR_SKYWALL, Unlimited, Tank);
     yield return new(UNIT_SFH5_AIR_REVENANT_SKYWALL, Unlimited, new List<UnitCategory> { Marksman, Support });

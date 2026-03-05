@@ -25,7 +25,7 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, Teleport);
-    yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited, Worker);
+    yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited, Builder);
     yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, Farm);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, Farm);
 

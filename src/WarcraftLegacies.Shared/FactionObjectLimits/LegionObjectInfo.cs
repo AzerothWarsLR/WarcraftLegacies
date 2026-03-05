@@ -24,7 +24,7 @@ public static class LegionObjectInfo
     yield return new(UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_NDMG_DEMON_GATE_LEGION_SIEGE, Unlimited, Specialist);
 
-    yield return new(UNIT_U00D_LEGION_HERALD_LEGION_WORKER, Unlimited, Worker);
+    yield return new(UNIT_U00D_LEGION_HERALD_LEGION_WORKER, Unlimited, Builder);
     yield return new(UNIT_U007_DREADLORD_LEGION_ELITE, 6, new List<UnitCategory> { Elite, Fighter, Destroyer });
     yield return new(UNIT_N04P_EREDAR_SUMMONER_LEGION, Unlimited, Support);
     yield return new(UNIT_NINC_BURNING_ARCHER_LEGION, Unlimited, Marksman);
