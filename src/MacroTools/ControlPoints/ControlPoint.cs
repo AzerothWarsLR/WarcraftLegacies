@@ -34,7 +34,7 @@ public sealed class ControlPoint
   public player Owner => Unit.Owner;
 
   /// <summary>
-  /// Whether or not this <see cref="ControlPoint"/> can gain levels.
+  /// Whether this <see cref="ControlPoint"/> can gain levels.
   /// </summary>
   public bool UseControlLevels { get; }
 
@@ -77,8 +77,8 @@ public sealed class ControlPoint
   /// </summary>
   /// <param name="representingUnit">The unit representing the <see cref="ControlPoint"/>.</param>
   /// <param name="value">The gold income granted by the <see cref="ControlPoint"/>.</param>
-  /// <param name="useControlLevels">Whether or not this <see cref="ControlPoint"/> can gain levels.</param>
-  public ControlPoint(unit representingUnit, int value, bool useControlLevels)
+  /// <param name="useControlLevels">Whether this <see cref="ControlPoint"/> can gain levels.</param>
+  internal ControlPoint(unit representingUnit, int value, bool useControlLevels)
   {
     Unit = representingUnit;
     Value = value;
