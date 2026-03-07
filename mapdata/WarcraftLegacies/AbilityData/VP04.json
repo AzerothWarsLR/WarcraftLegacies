@@ -33,13 +33,6 @@
       "Value": 15
     },
     {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": 828928837,
-      "Type": 2,
-      "Value": 60
-    },
-    {
       "Level": 1,
       "Pointer": 2,
       "Id": 845706053,
@@ -72,21 +65,21 @@
       "Pointer": 5,
       "Id": 896037701,
       "Type": 2,
-      "Value": 30
+      "Value": 100
     },
     {
       "Level": 3,
       "Pointer": 5,
       "Id": 896037701,
       "Type": 2,
-      "Value": 90
+      "Value": 100
     },
     {
       "Level": 4,
       "Pointer": 5,
       "Id": 896037701,
       "Type": 2,
-      "Value": 120
+      "Value": 100
     },
     {
       "Id": 1986358369,
@@ -121,77 +114,59 @@
       "Pointer": 4,
       "Id": 879260485,
       "Type": 2,
-      "Value": 1.5
+      "Value": 0.5
     },
     {
       "Level": 3,
       "Pointer": 4,
       "Id": 879260485,
       "Type": 2,
-      "Value": 1.5
+      "Value": 0.5
     },
     {
       "Level": 4,
       "Pointer": 4,
       "Id": 879260485,
       "Type": 2,
-      "Value": 1.5
+      "Value": 0.5
     },
     {
       "Level": 2,
       "Pointer": 5,
       "Id": 896037701,
       "Type": 2,
-      "Value": 60
+      "Value": 100
     },
     {
       "Level": 1,
       "Id": 1935762273,
       "Type": 2,
-      "Value": 1
+      "Value": 0.67
     },
     {
       "Level": 2,
       "Id": 1935762273,
       "Type": 2,
-      "Value": 1
+      "Value": 0.67
     },
     {
       "Level": 3,
       "Id": 1935762273,
       "Type": 2,
-      "Value": 1
+      "Value": 0.67
     },
     {
       "Level": 4,
       "Id": 1935762273,
       "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 13
-    },
-    {
-      "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 11
-    },
-    {
-      "Level": 3,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 9
+      "Value": 0.67
     },
     {
       "Level": 1,
       "Pointer": 4,
       "Id": 879260485,
       "Type": 2,
-      "Value": 1.5
+      "Value": 0.5
     },
     {
       "Level": 1,
@@ -222,10 +197,66 @@
       "Value": 0.25
     },
     {
-      "Level": 4,
-      "Id": 1852072801,
+      "Level": 1,
+      "Id": 1969514593,
       "Type": 2,
-      "Value": 7
+      "Value": 8.1
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 8.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 35
     },
     {
       "Id": 1718840929,
@@ -245,7 +276,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed and attack speed slowed by 25% for it\u0027s duration. Lasts 15 seconds on units and Heroes. Poison triggers 10 times.|n|n|cffffcc00Level 1|r - \u003CVP04,DataE1\u003E strike damage, \u003CVP04,DataA1\u003E duration damage. |n|cffffcc00Level 2|r - \u003CVP04,DataE2\u003E strike damage, \u003CVP04,DataA2\u003E duration damage. |n|cffffcc00Level 3|r - \u003CVP04,DataE3\u003E strike damage, \u003CVP04,DataA3\u003E duration damage.|n|cffffcc00Level 4|r - \u003CVP04,DataE4\u003E strike damage, \u003CVP04,DataA4\u003E duration damage."
+      "Value": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed and attack speed slowed by 25% for it\u0027s duration. Lasts 8 seconds on units and Heroes. Poison triggers 15 times.|n|n|cffffcc00Level 1|r - \u003CVP04,DataE1\u003E strike damage, \u003CVP04,DataA1\u003E duration damage. |n|cffffcc00Level 2|r - \u003CVP04,DataE2\u003E strike damage, \u003CVP04,DataA2\u003E duration damage. |n|cffffcc00Level 3|r - \u003CVP04,DataE3\u003E strike damage, \u003CVP04,DataA3\u003E duration damage.|n|cffffcc00Level 4|r - \u003CVP04,DataE4\u003E strike damage, \u003CVP04,DataA4\u003E duration damage."
     },
     {
       "Level": 4,
@@ -257,25 +288,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE1\u003E initial damage, and \u003CVP04,DataA1\u003E damage every \u003CVP04,Cast1\u003E seconds for \u003CVP04,Dur1\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB1,%\u003E% for it\u0027s duration. Poison triggers 10 times."
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE1\u003E initial damage, and \u003CVP04,DataA1\u003E damage every \u003CVP04,Cast1\u003E seconds for \u003CVP04,Dur1\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB1,%\u003E% for it\u0027s duration. Poison triggers 15 times."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE2\u003E initial damage, and \u003CVP04,DataA2\u003E damage every \u003CVP04,Cast2\u003E seconds for \u003CVP04,Dur2\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB2,%\u003E% for it\u0027s duration. Poison triggers 10 times."
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE2\u003E initial damage, and \u003CVP04,DataA2\u003E damage every \u003CVP04,Cast2\u003E seconds for \u003CVP04,Dur2\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB2,%\u003E% for it\u0027s duration. Poison triggers 15 times."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE3\u003E initial damage, and \u003CVP04,DataA3\u003E damage every \u003CVP04,Cast3\u003E seconds for \u003CVP04,Dur3\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB3,%\u003E% for it\u0027s duration. Poison triggers 10 times."
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE3\u003E initial damage, and \u003CVP04,DataA3\u003E damage every \u003CVP04,Cast3\u003E seconds for \u003CVP04,Dur3\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB3,%\u003E% for it\u0027s duration. Poison triggers 15 times."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE4\u003E initial damage, and \u003CVP04,DataA4\u003E damage every \u003CVP04,Cast4\u003E seconds for \u003CVP04,Dur4\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB4,%\u003E% for it\u0027s duration. Poison triggers 10 times."
+      "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE4\u003E initial damage, and \u003CVP04,DataA4\u003E damage every \u003CVP04,Cast4\u003E seconds for \u003CVP04,Dur4\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB4,%\u003E% for it\u0027s duration. Poison triggers 15 times."
     },
     {
       "Id": 2020631137,

@@ -115,13 +115,13 @@ public static class ScourgeSpellSetup
     {
       HitPointPercentageBonus = new LeveledAbilityField<float>
       {
-        Base = -0.3f,
-        PerLevel = 0.3f
+        Base = -0.2f,
+        PerLevel = 0.2f
       },
       AttackDamagePercentageBonus = new LeveledAbilityField<float>
       {
-        Base = -0.3f,
-        PerLevel = 0.3f
+        Base = -0.2f,
+        PerLevel = 0.2f
       }
     }, new[]
     {
@@ -158,19 +158,19 @@ public static class ScourgeSpellSetup
       UnitsSlain = new()
       {
         Base = 1,
-        PerLevel = 2
+        PerLevel = 1
       },
       StrengthPerUnit = new()
       {
-        Base = 5
+        Base = 8
       },
       StrengthPerUnitUpgraded = new LeveledAbilityField<int>
       {
-        Base = 7
+        Base = 10
       },
       Radius = new()
       {
-        Base = 500
+        Base = 400
       },
       Duration = 30,
       UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE,

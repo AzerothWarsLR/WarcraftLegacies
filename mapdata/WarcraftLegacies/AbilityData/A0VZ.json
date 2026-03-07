@@ -7,12 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
-      "Type": 2,
-      "Value": 350
-    },
-    {
-      "Level": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B06Y"
@@ -39,14 +33,14 @@
       "Pointer": 3,
       "Id": 862548814,
       "Type": 2,
-      "Value": 0.2
+      "Value": 0.1
     },
     {
       "Level": 1,
       "Pointer": 4,
       "Id": 879326030,
       "Type": 2,
-      "Value": 0.3
+      "Value": 0.2
     },
     {
       "Level": 1,
@@ -155,7 +149,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases the attack speed by 30% and move speed by 20% of units inside the targetted area. |nLasts 30 seconds. "
+      "Value": "Increases the attack speed by \u003CA0VZ,DataD1\u003E% and move speed by \u003CA0VZ,DataC1\u003E% of units inside the targetted area. |nLasts 30 seconds. "
     }
   ]
 }

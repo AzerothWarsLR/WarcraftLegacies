@@ -196,6 +196,11 @@
       "Value": 25
     },
     {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 2
+    },
+    {
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGreenDragon.blp"

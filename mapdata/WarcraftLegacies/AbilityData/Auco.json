@@ -9,14 +9,14 @@
       "Pointer": 2,
       "Id": 845243460,
       "Type": 2,
-      "Value": 400
+      "Value": 500
     },
     {
       "Level": 1,
       "Pointer": 4,
       "Id": 878797892,
       "Type": 2,
-      "Value": 100
+      "Value": 150
     },
     {
       "Id": 1986358369,
@@ -34,21 +34,21 @@
       "Pointer": 2,
       "Id": 845243460,
       "Type": 2,
-      "Value": 750
+      "Value": 1000
     },
     {
       "Level": 2,
       "Pointer": 4,
       "Id": 878797892,
       "Type": 2,
-      "Value": 200
+      "Value": 300
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": 862020676,
       "Type": 2,
-      "Value": 200
+      "Value": 350
     },
     {
       "Level": 2,
@@ -82,7 +82,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes a powerful explosion that deals 450 damage to a target air unit, and 100 damage to nearby enemy air units."
+      "Value": "Causes a powerful explosion that deals \u003CAuco,DataB1\u003E damage to a target air unit, and \u003CAuco,DataD12\u003E damage to nearby enemy air units."
     },
     {
       "Id": 1802007905,
@@ -93,7 +93,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes a powerful explosion that deals 750 damage to a target air unit, and 200 damage to nearby enemy air units."
+      "Value": "Causes a powerful explosion that deals \u003CAuco,DataB2\u003E damage to a target air unit, and \u003CAuco,DataD2\u003E damage to nearby enemy air units."
     },
     {
       "Level": 2,

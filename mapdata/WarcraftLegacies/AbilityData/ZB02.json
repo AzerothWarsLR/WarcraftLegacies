@@ -37,12 +37,12 @@
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 135
+      "Value": 125
     },
     {
       "Level": 4,
       "Id": 1935895905,
-      "Value": 155
+      "Value": 125
     },
     {
       "Level": 1,
@@ -154,7 +154,7 @@
     {
       "Level": 3,
       "Id": 1935895905,
-      "Value": 145
+      "Value": 125
     },
     {
       "Level": 2,
@@ -263,25 +263,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 3 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 2 lowest level non-Hero nearby enemy units, granting the caster 8 Strength for each unit slain for 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 5 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 3 lowest level non-Hero nearby enemy units, granting the caster 8 Strength for each unit slain for 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 7 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 4 lowest level non-Hero nearby enemy units, granting the caster 8 Strength for each unit slain for 30 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 9 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 5 lowest level non-Hero nearby enemy units, granting the caster 8 Strength for each unit slain for 30 seconds."
     },
     {
       "Id": 2020631137,

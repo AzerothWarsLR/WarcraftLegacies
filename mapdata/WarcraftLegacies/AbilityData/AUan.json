@@ -30,16 +30,6 @@
     },
     {
       "Level": 1,
-      "Id": 1935895905,
-      "Value": 100
-    },
-    {
-      "Level": 3,
-      "Id": 1935895905,
-      "Value": 150
-    },
-    {
-      "Level": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 60
@@ -161,19 +151,19 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 30%."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 20%."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 60%."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 40%."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 90%."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 60%."
     }
   ]
 }
