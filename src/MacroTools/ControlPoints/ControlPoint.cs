@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Factions;
+using WCSharp.Events;
 
 namespace MacroTools.ControlPoints;
 
@@ -91,9 +92,7 @@ public sealed class ControlPoint
   /// </summary>
   internal void OnRegister()
   {
-    trigger trigger = trigger.Create();
-    trigger.RegisterUnitEvent(Unit, unitevent.ChangeOwner);
-    trigger.AddAction(SignalOwnerAllianceChange);
+    PlayerUnitEvents.Register(UnitEvent.ChangesOwner, SignalOwnerAllianceChange, Unit);
   }
 
   /// <summary>
