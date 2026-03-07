@@ -15,13 +15,13 @@ public sealed class ControlPoint
   /// <summary>
   /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
   /// </summary>
-  public event EventHandler? ControlLevelChanged;
+  public event Action? ControlLevelChanged;
 
   /// <summary>
   /// The owner of this <see cref="ControlPoint"/> changed their alliances, or the <see cref="ControlPoint"/> itself
   /// changed ownership.
   /// </summary>
-  public event EventHandler<ControlPoint>? OwnerAllianceChanged;
+  public event Action<ControlPoint>? OwnerAllianceChanged;
 
   /// <summary>
   /// A tower that appears on the <see cref="ControlPoint"/> when its <see cref="ControlLevel"/> exceeds 0.
@@ -68,7 +68,7 @@ public sealed class ControlPoint
     set
     {
       _controlLevel = value;
-      ControlLevelChanged?.Invoke(this, EventArgs.Empty);
+      ControlLevelChanged?.Invoke();
     }
   }
 
@@ -99,5 +99,5 @@ public sealed class ControlPoint
   /// <summary>
   /// Signals that the <see cref="ControlPoint"/>'s <see cref="ControlPoint.Owner"/> has changed its alliances.
   /// </summary>
-  internal void SignalOwnerAllianceChange() => OwnerAllianceChanged?.Invoke(this, this);
+  internal void SignalOwnerAllianceChange() => OwnerAllianceChanged?.Invoke(this);
 }

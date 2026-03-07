@@ -66,17 +66,17 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
     }
   }
 
-  private void OnFactionAddPower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
+  private void OnFactionAddPower(FactionPowerEventArgs factionPowerEventArgs)
   {
     AddPower(factionPowerEventArgs.Power);
   }
 
-  private void OnPlayerChangedFaction(object? sender, PlayerFactionChangeEventArgs args)
+  private void OnPlayerChangedFaction(PlayerFactionChangeEventArgs args)
   {
     TrackedFaction = args.Player.GetPlayerData().Faction;
   }
 
-  private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
+  private void OnFactionRemovePower(FactionPowerEventArgs factionPowerEventArgs)
   {
     ReRender();
   }

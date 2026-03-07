@@ -135,7 +135,7 @@ public abstract class QuestData
             throw new ArgumentOutOfRangeException(nameof(value));
         }
 
-        ProgressChanged?.Invoke(this, new QuestProgressChangedEventArgs(this, formerProgress));
+        ProgressChanged?.Invoke(new QuestProgressChangedEventArgs(this, formerProgress));
       }
       catch (Exception ex)
       {
@@ -273,7 +273,7 @@ public abstract class QuestData
   }
 
   /// <summary>Fired when the <see cref="QuestData" /> changes its progress.</summary>
-  internal event EventHandler<QuestProgressChangedEventArgs>? ProgressChanged;
+  internal event Action<QuestProgressChangedEventArgs>? ProgressChanged;
 
   /// <summary>Fired when the Quest is completed.</summary>
   protected virtual void OnComplete(Faction whichFaction)
@@ -333,7 +333,7 @@ public abstract class QuestData
     }
   }
 
-  private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)
+  private void OnQuestItemProgressChanged(Objective _)
   {
     var allComplete = true;
     var anyFailed = false;

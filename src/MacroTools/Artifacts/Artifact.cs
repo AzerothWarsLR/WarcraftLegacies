@@ -47,7 +47,7 @@ public sealed class Artifact
     private set
     {
       _locationType = value;
-      StatusChanged?.Invoke(this, this);
+      StatusChanged?.Invoke(this);
     }
     get => _locationType;
   }
@@ -78,32 +78,32 @@ public sealed class Artifact
   ///   Fired when the <see cref="player" /> owning the <see cref="unit" /> carrying the <see cref="Artifact" /> changes
   ///   <see cref="Faction" />.
   /// </summary>
-  public event EventHandler<Artifact>? FactionChanged;
+  public event Action<Artifact>? FactionChanged;
 
   /// <summary>
   ///   Fired when the <see cref="Artifact" /> is picked up by a unit.
   /// </summary>
-  public event EventHandler<Artifact>? PickedUp;
+  public event Action<Artifact>? PickedUp;
 
   /// <summary>
   ///   Fired when the <see cref="Artifact" /> is dropped.
   /// </summary>
-  public event EventHandler<Artifact>? Dropped;
+  public event Action<Artifact>? Dropped;
 
   /// <summary>
   ///   Fired when the <see cref="Artifact" /> is permanently destroyed.
   /// </summary>
-  public event EventHandler<Artifact>? Disposed;
+  public event Action<Artifact>? Disposed;
 
   /// <summary>
   ///   The owner of this <see cref="Artifact" /> changes.
   /// </summary>
-  public event EventHandler<Artifact>? OwnerChanged;
+  public event Action<Artifact>? OwnerChanged;
 
   /// <summary>
   ///   Any Artifact changes its <see cref="ArtifactLocationType" />.
   /// </summary>
-  public event EventHandler<Artifact>? StatusChanged;
+  public event Action<Artifact>? StatusChanged;
 
   /// <summary>
   ///   Pings the <see cref="Artifact" /> on the minimap for the given player.
@@ -123,7 +123,7 @@ public sealed class Artifact
   private void SetOwningPlayer(player? value)
   {
     OwningPlayer = value;
-    OwnerChanged?.Invoke(this, this);
+    OwnerChanged?.Invoke(this);
 
     LocationType = OwningPlayer != null ? ArtifactLocationType.Unit : ArtifactLocationType.Ground;
   }
@@ -131,7 +131,7 @@ public sealed class Artifact
   private void OnPickedUp()
   {
     OwningUnit = @event.Unit;
-    PickedUp?.Invoke(this, this);
+    PickedUp?.Invoke(this);
   }
 
   private void OnDropped()
@@ -144,10 +144,10 @@ public sealed class Artifact
 
     SetOwningPlayer(null);
     OwningUnit = null;
-    Dropped?.Invoke(this, this);
+    Dropped?.Invoke(this);
   }
 
-  private void OnPlayerFactionChange(object? sender, PlayerFactionChangeEventArgs e)
+  private void OnPlayerFactionChange(PlayerFactionChangeEventArgs e)
   {
     var owningFaction = OwningPlayer?.GetPlayerData().Faction;
     if (owningFaction == null)
@@ -157,7 +157,7 @@ public sealed class Artifact
 
     if (owningFaction == e.Player.GetPlayerData().Faction)
     {
-      FactionChanged?.Invoke(this, this);
+      FactionChanged?.Invoke(this);
     }
   }
 
@@ -174,7 +174,7 @@ public sealed class Artifact
   /// </summary>
   internal void Dispose()
   {
-    Disposed?.Invoke(this, this);
+    Disposed?.Invoke(this);
     Item.Dispose();
   }
 }

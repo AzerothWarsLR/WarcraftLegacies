@@ -40,9 +40,9 @@ public sealed class ArtifactBook : Book<Artifact, ArtifactPage, ArtifactCard, Ar
     artifact.Disposed += OnArtifactDisposed;
   }
 
-  private void OnArtifactDisposed(object? sender, Artifact artifact) => ReRender();
+  private void OnArtifactDisposed(Artifact artifact) => ReRender();
 
-  private void ArtifactCreated(object? sender, Artifact artifact)
+  private void ArtifactCreated(Artifact artifact)
   {
     AddArtifact(artifact);
   }

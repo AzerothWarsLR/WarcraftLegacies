@@ -39,7 +39,7 @@ public sealed class ObjectiveControlLegend : Objective
     }
   }
 
-  private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+  private void OnTargetChangeOwner(LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
   {
     if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {
@@ -51,7 +51,7 @@ public sealed class ObjectiveControlLegend : Objective
     }
   }
 
-  private void OnTargetPermaDeath(object? sender, LegendDiedEventArgs eventArgs)
+  private void OnTargetPermaDeath(LegendDiedEventArgs eventArgs)
   {
     if (_canFail && eventArgs.Permanent)
     {

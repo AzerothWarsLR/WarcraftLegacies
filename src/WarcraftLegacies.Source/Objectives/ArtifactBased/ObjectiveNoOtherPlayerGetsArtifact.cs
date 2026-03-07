@@ -26,7 +26,7 @@ public sealed class ObjectiveNoOtherPlayerGetsArtifact : Objective
   public override void OnAdd(Faction faction)
   {
     Progress = QuestProgress.Complete;
-    _target.OwnerChanged += (_, _) =>
+    _target.OwnerChanged += _ =>
     {
       RefreshProgress(faction);
     };

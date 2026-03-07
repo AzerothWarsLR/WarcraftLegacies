@@ -23,7 +23,7 @@ public static class ArtifactManager
   /// <summary>
   /// Fired when an <see cref="Artifact"/> is newly registered to the system.
   /// </summary>
-  public static event EventHandler<Artifact>? ArtifactRegistered;
+  public static event Action<Artifact>? ArtifactRegistered;
 
   /// <summary>
   /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
@@ -55,7 +55,7 @@ public static class ArtifactManager
       artifact.Item.IsDroppedOnDeath = false;
       _artifactsByType[artifact.Item.TypeId] = artifact;
       _artifactsByName.Add(artifact.Item.Name.ToLower(), artifact);
-      ArtifactRegistered?.Invoke(artifact, artifact);
+      ArtifactRegistered?.Invoke(artifact);
       _allArtifacts.Add(artifact);
     }
     else

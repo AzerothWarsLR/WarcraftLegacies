@@ -26,7 +26,7 @@ public static class CenariusGhost
 
   public static void Setup(LegendaryHero cenarius, Faction druids)
   {
-    cenarius.Died += (sender, hero) => Dies(hero, druids);
+    cenarius.Died += hero => Dies(hero, druids);
     cenarius.DeathMessage =
       "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
   }

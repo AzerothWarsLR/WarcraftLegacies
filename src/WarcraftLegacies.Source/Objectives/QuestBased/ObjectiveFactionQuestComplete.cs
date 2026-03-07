@@ -19,7 +19,7 @@ public sealed class ObjectiveFactionQuestComplete : Objective
     Progress = QuestProgress.Incomplete;
   }
 
-  private void OnQuestProgressChanged(object? sender, FactionQuestProgressChangedEventArgs args)
+  private void OnQuestProgressChanged(FactionQuestProgressChangedEventArgs args)
   {
     if (args.Quest == _target && args.Quest.Progress == QuestProgress.Complete)
     {

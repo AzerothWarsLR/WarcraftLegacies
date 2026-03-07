@@ -27,7 +27,7 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnAnyUnitTrain);
   }
 
-  private void OnTargetDied(object? sender, LegendDiedEventArgs eventArgs)
+  private void OnTargetDied(LegendDiedEventArgs eventArgs)
   {
     if (eventArgs.Permanent)
     {

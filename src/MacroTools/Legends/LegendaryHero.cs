@@ -32,12 +32,12 @@ public sealed class LegendaryHero : Legend
   /// <summary>
   ///   Fired when the <see cref="Legend" /> permanently dies.
   /// </summary>
-  public event EventHandler<LegendDiedEventArgs>? Died;
+  public event Action<LegendDiedEventArgs>? Died;
 
   /// <summary>
   /// Invoked when the <see cref="LegendaryHero"/> deals damage.
   /// </summary>
-  public event EventHandler? DealtDamage;
+  public event Action? DealtDamage;
 
   /// <summary>
   ///   If true, the Legend is permanently removed from the game upon death.
@@ -172,7 +172,7 @@ public sealed class LegendaryHero : Legend
   public void PermanentlyKill()
   {
     OnPermaDeath();
-    Died?.Invoke(this, new LegendDiedEventArgs
+    Died?.Invoke(new LegendDiedEventArgs
     {
       LegendaryHero = this,
       Permanent = true
@@ -189,7 +189,7 @@ public sealed class LegendaryHero : Legend
 
   private void OnDeath()
   {
-    Died?.Invoke(this, new LegendDiedEventArgs
+    Died?.Invoke(new LegendDiedEventArgs
     {
       LegendaryHero = this,
       Permanent = false
@@ -248,10 +248,7 @@ public sealed class LegendaryHero : Legend
     {
       OnChangeOwner(new LegendChangeOwnerEventArgs(this, @event.ChangingUnitPrevOwner));
     });
-    PlayerUnitEvents.Register(UnitEvent.Damaging, () =>
-    {
-      DealtDamage?.Invoke(this, EventArgs.Empty);
-    }, Unit);
+    PlayerUnitEvents.Register(UnitEvent.Damaging, () => DealtDamage?.Invoke(), Unit);
     Unit.SetColor(HasCustomColor ? _playerColor : Unit.Owner.Color);
     if (Unit.Experience < StartingXp)
     {

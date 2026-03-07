@@ -29,7 +29,7 @@ public sealed class Channel : IDisposable
   /// <summary>
   /// Fired when the <see cref="Channel"/> ends, successfully or otherwise.
   /// </summary>
-  public event EventHandler<Channel>? Finished;
+  public event Action<Channel>? Finished;
 
   /// <summary>
   /// If true, the caster finished the entire channel duration.
@@ -107,7 +107,7 @@ public sealed class Channel : IDisposable
     }
 
     FinishedWithoutInterruption = finishedWithoutInterruption;
-    Finished?.Invoke(this, this);
+    Finished?.Invoke(this);
   }
 
   private void Periodic()

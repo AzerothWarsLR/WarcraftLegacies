@@ -33,7 +33,7 @@ public sealed class ObjectiveSelfExists : Objective
     });
   }
 
-  private void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
+  private void OnAnyFactionScoreStatusChanged(Faction faction)
   {
     if (faction.ScoreStatus == ScoreStatus.Defeated)
     {

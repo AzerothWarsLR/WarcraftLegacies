@@ -15,7 +15,7 @@ public sealed class TriggeredDialogue
   /// <summary>
   /// Fired when the <see cref="Dialogue"/> plays.
   /// </summary>
-  public event EventHandler<TriggeredDialogue>? Completed;
+  public event Action<TriggeredDialogue>? Completed;
 
   internal List<Objective> Objectives { get; }
 
@@ -54,13 +54,13 @@ public sealed class TriggeredDialogue
     }
 
     _inactive = true;
-    Completed?.Invoke(this, this);
+    Completed?.Invoke(this);
   }
 
   private void Fail()
   {
     _inactive = true;
-    Completed?.Invoke(this, this);
+    Completed?.Invoke(this);
   }
 
   /// <summary>
@@ -77,7 +77,7 @@ public sealed class TriggeredDialogue
     Objectives = objectives.ToList();
   }
 
-  internal void OnObjectiveCompleted(object? sender, Objective completedObjective)
+  internal void OnObjectiveCompleted(Objective _)
   {
     if (_inactive)
     {

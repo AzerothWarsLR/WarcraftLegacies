@@ -45,7 +45,7 @@ public static class SharedQuestRepository
     }
   }
 
-  private static void GiveFactionSharedQuests(object? sender, Faction faction)
+  private static void GiveFactionSharedQuests(Faction faction)
   {
     foreach (var quest in _sharedQuests)
     {

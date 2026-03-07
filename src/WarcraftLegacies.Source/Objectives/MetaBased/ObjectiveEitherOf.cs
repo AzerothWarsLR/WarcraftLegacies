@@ -48,7 +48,7 @@ public sealed class ObjectiveEitherOf : Objective
     Progress = QuestProgress.Incomplete;
   }
 
-  private void OnChildProgressChanged(object? sender, Objective objective)
+  private void OnChildProgressChanged(Objective _)
   {
     Update();
   }

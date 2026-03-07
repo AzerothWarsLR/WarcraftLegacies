@@ -1,9 +1,8 @@
-﻿using System;
-using MacroTools.Quests;
+﻿using MacroTools.Quests;
 
 namespace MacroTools.Factions;
 
-public sealed class FactionQuestProgressChangedEventArgs : EventArgs
+public sealed class FactionQuestProgressChangedEventArgs
 {
   public Faction Faction { get; }
 

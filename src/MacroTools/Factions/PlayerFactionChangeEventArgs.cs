@@ -1,8 +1,6 @@
-﻿using System;
+﻿namespace MacroTools.Factions;
 
-namespace MacroTools.Factions;
-
-public sealed class PlayerFactionChangeEventArgs : EventArgs
+public sealed class PlayerFactionChangeEventArgs
 {
   public player Player { get; }
   public Faction? PreviousFaction { get; }

@@ -1,8 +1,6 @@
-﻿using System;
+﻿namespace MacroTools.Quests;
 
-namespace MacroTools.Quests;
-
-public sealed class QuestProgressChangedEventArgs : EventArgs
+public sealed class QuestProgressChangedEventArgs
 {
   public QuestProgressChangedEventArgs(QuestData quest, QuestProgress formerProgress)
   {

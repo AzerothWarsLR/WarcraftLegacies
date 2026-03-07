@@ -16,7 +16,7 @@ public sealed class ObjectiveLegendaryHeroTrained : Objective
     target.ChangedOwner += OnTargetChangeOwner;
   }
 
-  private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs e)
+  private void OnTargetChangeOwner(LegendChangeOwnerEventArgs e)
   {
     Progress = QuestProgress.Complete;
   }

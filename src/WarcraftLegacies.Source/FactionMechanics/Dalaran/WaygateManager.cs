@@ -12,7 +12,7 @@ public static class WaygateManager
   private static Waygate? WaygateA { get; set; }
   private static Waygate? WaygateB { get; set; }
 
-  private static void OnWaygateDied(object? sender, Waygate waygate)
+  private static void OnWaygateDied(Waygate waygate)
   {
     if (WaygateA == waygate)
     {

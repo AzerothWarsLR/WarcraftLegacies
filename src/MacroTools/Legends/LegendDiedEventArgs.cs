@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace MacroTools.Legends;
+﻿namespace MacroTools.Legends;
 
 /// <summary>
 /// Event arguments for when a <see cref="Legend"/> dies.
 /// </summary>
-public sealed class LegendDiedEventArgs : EventArgs
+public sealed class LegendDiedEventArgs
 {
   /// <summary>
   /// The <see cref="LegendaryHero"/> that died.

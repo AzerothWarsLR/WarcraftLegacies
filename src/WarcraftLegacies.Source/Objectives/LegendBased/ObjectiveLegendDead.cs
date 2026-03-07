@@ -53,7 +53,7 @@ public sealed class ObjectiveLegendDead : Objective
     Description = CalculateDescription(_target);
   }
 
-  private void OnDeath(object? sender, LegendDiedEventArgs eventArgs)
+  private void OnDeath(LegendDiedEventArgs eventArgs)
   {
     if (PermanentOnly && !eventArgs.Permanent)
     {

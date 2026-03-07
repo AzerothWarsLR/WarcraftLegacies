@@ -38,7 +38,7 @@ public sealed class ObjectiveTurnTests : GameTimeManagerTestsBase
     // Arrange
     var progressChangedCalls = 0;
     var objective = new ObjectiveTurn(1) { ShowsInQuestLog = false };
-    objective.ProgressChanged += (_, _) => progressChangedCalls++;
+    objective.ProgressChanged += _ => progressChangedCalls++;
 
     // Act
     GameTimeManager.SkipTurns(2);

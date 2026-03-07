@@ -15,7 +15,7 @@ public static class TheFrozenThrone
   /// <summary>
   /// Invoked when the Frozen Throne's state has changed.
   /// </summary>
-  public static event EventHandler<FrozenThroneState>? FrozenThroneStateChanged;
+  public static event Action<FrozenThroneState>? FrozenThroneStateChanged;
 
   public static FrozenThroneState State
   {
@@ -23,7 +23,7 @@ public static class TheFrozenThrone
     private set
     {
       _state = value;
-      FrozenThroneStateChanged?.Invoke(null, value);
+      FrozenThroneStateChanged?.Invoke(value);
     }
   }
 
@@ -43,7 +43,7 @@ public static class TheFrozenThrone
   /// <summary>
   /// When the Scourge leaves, vacate Ner'zhul from the Throne.
   /// </summary>
-  private static void OnScourgeScoreStatusChanged(object? sender, Faction scourge)
+  private static void OnScourgeScoreStatusChanged(Faction scourge)
   {
     if (scourge.ScoreStatus != ScoreStatus.Defeated)
     {
@@ -157,7 +157,7 @@ public static class TheFrozenThrone
     Fracture();
   }
 
-  private static void OnLichKingDied(object? sender, LegendDiedEventArgs eventArgs)
+  private static void OnLichKingDied(LegendDiedEventArgs eventArgs)
   {
     if (eventArgs.Permanent && eventArgs.LegendaryHero.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE)
     {

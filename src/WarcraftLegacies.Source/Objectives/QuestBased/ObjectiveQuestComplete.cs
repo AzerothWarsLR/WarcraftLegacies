@@ -16,7 +16,7 @@ public sealed class ObjectiveQuestComplete : Objective
   /// <inheritdoc />
   public override void OnAdd(Faction faction) => faction.QuestProgressChanged += OnQuestProgressChanged;
 
-  private void OnQuestProgressChanged(object? sender, FactionQuestProgressChangedEventArgs args)
+  private void OnQuestProgressChanged(FactionQuestProgressChangedEventArgs args)
   {
     if (args.Quest != _target)
     {

@@ -66,7 +66,7 @@ public abstract class Objective
       _progress = value;
       UpdateDisplay();
 
-      ProgressChanged?.Invoke(this, this);
+      ProgressChanged?.Invoke(this);
     }
   }
 
@@ -119,7 +119,7 @@ public abstract class Objective
   }
 
   /// <summary>Fires after the <see cref="Progress"/> of this objective has changed.</summary>
-  public event EventHandler<Objective>? ProgressChanged;
+  public event Action<Objective>? ProgressChanged;
 
   /// <summary>
   /// Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/>

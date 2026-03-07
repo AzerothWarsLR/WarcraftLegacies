@@ -46,7 +46,7 @@ public static class LegendaryHeroManager
   /// </summary>
   public static ReadOnlyCollection<LegendaryHero> GetAll() => _allLegendaryHeroes.AsReadOnly();
 
-  private static void OnLegendUnitChanged(object? sender, LegendChangeUnitEventArgs args)
+  private static void OnLegendUnitChanged(LegendChangeUnitEventArgs args)
   {
     if (args.PreviousUnit != null)
     {

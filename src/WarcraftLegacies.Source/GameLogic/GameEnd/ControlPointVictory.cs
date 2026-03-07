@@ -48,7 +48,7 @@ public static class ControlPointVictory
     }
   }
 
-  private static void ControlPointOwnerChanges(object? sender, ControlPoint controlPoint)
+  private static void ControlPointOwnerChanges(ControlPoint controlPoint)
   {
     if (_gameWon)
     {

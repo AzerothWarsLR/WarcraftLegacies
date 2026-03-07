@@ -249,7 +249,7 @@ public sealed class ControlPointManager
 
   private void RegisterControlLevelChangeTrigger(ControlPoint controlPoint)
   {
-    controlPoint.ControlLevelChanged += (_, _) =>
+    controlPoint.ControlLevelChanged += () =>
     {
       if (controlPoint.ControlLevel > 0)
       {
