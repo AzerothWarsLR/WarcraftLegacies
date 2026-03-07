@@ -61,27 +61,32 @@ public sealed class ControlPointManager
   /// <summary>
   /// All <see cref="ControlPoint"/>s are given this many hitpoints.
   /// </summary>
-  public int StartingMaxHitPoints { get; init; }
+  public required int StartingMaxHitPoints { get; init; }
 
   /// <summary>
   /// All Neutral Hostile <see cref="ControlPoint"/>s start with this many hit points.
   /// </summary>
-  public int HostileStartingCurrentHitPoints { get; init; }
+  public required int HostileStartingCurrentHitPoints { get; init; }
 
   /// <summary>
   /// An ability that grants <see cref="ControlPoint"/>s additional hit point regeneration.
   /// </summary>
-  public int RegenerationAbility { get; init; }
+  public required int RegenerationAbility { get; init; }
 
   /// <summary>
   /// An ability that grants <see cref="ControlPoint"/>s resistance against Piercing damage.
   /// </summary>
-  public int PiercingResistanceAbility { get; init; }
+  public required int PiercingResistanceAbility { get; init; }
 
   /// <summary>
   /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
   /// </summary>
-  public ControlLevelSettings ControlLevelSettings { get; init; } = new();
+  public required ControlPointSettings ControlPointSettings { get; init; }
+
+  /// <summary>
+  /// Fired when a <see cref="ControlPoint"/> is created.
+  /// </summary>
+  public event EventHandler<ControlPoint>? ControlPointCreated;
 
   /// <summary>
   /// This ability can be used to increase a <see cref="ControlPoint"/>'s <see cref="ControlPoint.ControlLevel"/>.
@@ -156,9 +161,11 @@ public sealed class ControlPointManager
     var controlPoint = new ControlPoint(representingUnit, value, useControlLevels);
     _byUnit.Add(controlPoint.Unit, controlPoint);
     _byUnitType.TryAdd(controlPoint.UnitType, controlPoint);
+
     controlPoint.Unit.MaxLife = StartingMaxHitPoints;
-    controlPoint.Unit.SetLifePercent(100);
+    controlPoint.Unit.Life = representingUnit.Owner == player.NeutralAggressive ? HostileStartingCurrentHitPoints : controlPoint.Unit.MaxLife;
     controlPoint.Unit.DefenseType = WCSharp.Api.Enums.DefenseType.Large;
+    controlPoint.Unit.ShowAttackUi(false);
 
     controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);
@@ -170,9 +177,8 @@ public sealed class ControlPointManager
 
     if (controlPoint.UseControlLevels)
     {
-      RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
-      ConfigureControlPointStats(controlPoint, true);
+      controlPoint.ControlLevelChanged += OnControlPointLevelChanged;
       controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
     }
 
@@ -181,6 +187,8 @@ public sealed class ControlPointManager
     {
       controlPoint.Unit.AddAbility(RegenerationAbility);
     }
+
+    ControlPointCreated?.Invoke(this, controlPoint);
   }
 
   private static void RegisterIncome(ControlPoint controlPoint)
@@ -228,11 +236,6 @@ public sealed class ControlPointManager
         controlPoint.Unit.AddAbility(RegenerationAbility);
       }
 
-      if (controlPoint.Unit.GetAbilityLevel(PiercingResistanceAbility) == 0)
-      {
-        controlPoint.Unit.AddAbility(PiercingResistanceAbility);
-      }
-
       controlPoint.Unit.SetLifePercent(100);
       controlPoint.ControlLevel = 0;
     }
@@ -242,28 +245,6 @@ public sealed class ControlPointManager
     }
   }
 
-  private void RegisterControlLevelChangeTrigger(ControlPoint controlPoint)
-  {
-    controlPoint.ControlLevelChanged += (_, _) =>
-    {
-      if (controlPoint.ControlLevel > 0)
-      {
-        CreateOrUpdateDefender(controlPoint);
-        ConfigureControlPointStats(controlPoint, false);
-        controlPoint.Unit.SetScale(1.2f, 1.2f, 1.2f);
-        if ((int)controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
-        {
-          controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
-        }
-      }
-      else
-      {
-        RemoveDefender(controlPoint);
-        ConfigureControlPointStats(controlPoint, false);
-      }
-    };
-  }
-
   private void RegisterControlLevelGrowthOverTime(ControlPoint controlPoint)
   {
     GameTimeManager.RegisterOnTurnRepeating(1, () =>
@@ -271,7 +252,7 @@ public sealed class ControlPointManager
       if (controlPoint.Owner == player.NeutralAggressive ||
           controlPoint.Owner == player.NeutralPassive ||
           controlPoint.Owner == player.NeutralVictim ||
-          controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum)
+          controlPoint.ControlLevel >= ControlPointSettings.ControlLevelMaximum)
       {
         return;
       }
@@ -283,64 +264,28 @@ public sealed class ControlPointManager
     });
   }
 
-  private void ConfigureControlPointStats(ControlPoint controlPoint, bool initialize)
+  private void OnControlPointLevelChanged(object? sender, ControlPoint controlPoint)
   {
+    var unit = controlPoint.Unit;
+
     var flooredLevel = (int)controlPoint.ControlLevel;
-    var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
+    var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlPointSettings.HitPointsPerControlLevel;
     var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
 
     controlPoint.Unit.MaxLife = maxHitPoints;
     controlPoint.Unit.Level = flooredLevel;
-    controlPoint.Unit.Armor = ControlLevelSettings.ArmorPerControlLevel * flooredLevel;
-    controlPoint.Unit
-      .ShowAttackUi(false);
+    controlPoint.Unit.Armor = ControlPointSettings.ArmorPerControlLevel * flooredLevel;
+    controlPoint.Unit.SetLifePercent(lifePercent);
 
-    if (initialize && controlPoint.Unit.Owner == player.NeutralAggressive)
+    if (unit.GetAbilityLevel(IncreaseControlLevelAbilityTypeId) > 0 && controlPoint.ControlLevel >= ControlPointSettings.ControlLevelMaximum)
     {
-      controlPoint.Unit.Life = HostileStartingCurrentHitPoints;
-    }
-    else
-    {
-      controlPoint.Unit.SetLifePercent(lifePercent);
+      unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
+      return;
     }
 
-    ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
-  }
-
-  private void CreateOrUpdateDefender(ControlPoint controlPoint)
-  {
-    var flooredLevel = (int)controlPoint.ControlLevel;
-
-    var owner = controlPoint.Owner;
-    var playerData = owner.GetPlayerData();
-
-    var defenderUnitTypeId = playerData.Faction?.ControlPointDefenderUnitTypeId ?? ControlLevelSettings.DefaultDefenderUnitTypeId;
-    controlPoint.Defender ??= unit.Create(owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y);
-    controlPoint.Defender.AddAbility(FourCC("Aloc"));
-    controlPoint.Defender.IsInvulnerable = true;
-    ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);
-    ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
-  }
-
-  private void RemoveDefender(ControlPoint controlPoint)
-  {
-    if (controlPoint.Defender != null)
+    if (unit.GetAbilityLevel(IncreaseControlLevelAbilityTypeId) == 0 && controlPoint.ControlLevel < ControlPointSettings.ControlLevelMaximum)
     {
-      controlPoint.Defender.Kill();
+      unit.AddAbility(IncreaseControlLevelAbilityTypeId);
     }
-
-    controlPoint.Defender = null;
-    controlPoint.Unit.IsInvulnerable = false;
-    controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
-  }
-
-  private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
-  {
-    whichUnit.AttackBaseDamage1 = controlLevel == 0
-      ? -1
-      : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel;
-    whichUnit.AttackDiceNumber1 = 1;
-    whichUnit.AttackDiceSides1 = 1;
-    whichUnit.AttackAttackType1 = WCSharp.Api.Enums.AttackType.Chaos;
   }
 }

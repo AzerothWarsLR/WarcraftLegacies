@@ -34,6 +34,7 @@ public static class GameSetup
     DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
+    SetupControlPointDefenderManager();
     SoundLibrary.Setup();
     Artifacts.Setup();
     AllLegends.Setup();
@@ -108,15 +109,21 @@ public static class GameSetup
       RegenerationAbility = ABILITY_A0UT_CP_LIFE_REGEN_NEUTRAL,
       PiercingResistanceAbility = ABILITY_A13X_MAGIC_RESISTANCE_CONTROL_POINT_TOWER,
       IncreaseControlLevelAbilityTypeId = ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
-      ControlLevelSettings = new ControlLevelSettings
+      ControlPointSettings = new ControlPointSettings
       {
-        DefaultDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-        DamageBase = 8,
-        DamagePerControlLevel = 1,
         ArmorPerControlLevel = 1,
         HitPointsPerControlLevel = 70,
         ControlLevelMaximum = 30
       }
     };
+  }
+
+  private static void SetupControlPointDefenderManager()
+  {
+    ControlPointDefenderManager.Initialize(ControlPointManager.Instance, new ControlPointDefenderSettings
+    {
+      DamageBase = 8,
+      DamagePerControlLevel = 1
+    });
   }
 }
