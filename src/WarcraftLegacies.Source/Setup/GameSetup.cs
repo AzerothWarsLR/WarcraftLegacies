@@ -133,7 +133,7 @@ public static class GameSetup
   {
     GoldMineManager.Initialize(ControlPointManager.Instance, new GoldMineSettings
     {
-      GoldMineModelDefault = @"buildings\other\GoldMine\GoldMine.mdl"
+      GoldMineModelDefault = @"war3mapImported\GoldBrilliance.mdx"
     });
   }
 }

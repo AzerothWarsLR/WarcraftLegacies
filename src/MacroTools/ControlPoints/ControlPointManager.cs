@@ -178,6 +178,7 @@ public sealed class ControlPointManager
     controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);
     controlPoint.AttackEnabled--;
+    controlPoint.Unit.SetUsesAltIcon(false);
     controlPoint.Unit.RemoveAbility(FourCC("Agld"));
 
     RegisterIncome(controlPoint);

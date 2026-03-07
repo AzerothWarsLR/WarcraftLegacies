@@ -97,7 +97,6 @@ public static class GoldMineManager
     var effect = AddSpecialEffect(_settings.GoldMineModelDefault, unit.X, unit.Y);
     effect.PlayAnimation(animtype.Stand);
     effect.Scale = 1.2f;
-    effect.SetHeight(200f);
     controlPoint.Owner.GetPlayerData().BonusIncome += income;
     var createdGoldMine = new GoldMine(effect, income, capacity, controlPoint);
     _goldMines.Add(createdGoldMine);
