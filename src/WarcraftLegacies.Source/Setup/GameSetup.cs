@@ -3,6 +3,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
 using MacroTools.GameTime;
+using MacroTools.GoldMines;
 using MacroTools.Save;
 using MacroTools.Sounds;
 using MacroTools.UnitNames;
@@ -35,6 +36,7 @@ public static class GameSetup
     CinematicMode.Setup(59);
     SetupControlPointManager();
     SetupControlPointDefenderManager();
+    SetupGoldMineManager();
     SoundLibrary.Setup();
     Artifacts.Setup();
     AllLegends.Setup();
@@ -124,6 +126,14 @@ public static class GameSetup
     {
       DamageBase = 8,
       DamagePerControlLevel = 1
+    });
+  }
+
+  private static void SetupGoldMineManager()
+  {
+    GoldMineManager.Initialize(ControlPointManager.Instance, new GoldMineSettings
+    {
+      GoldMineModelDefault = @"buildings\other\GoldMine\GoldMine.mdl"
     });
   }
 }

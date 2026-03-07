@@ -70,7 +70,9 @@ public static class ControlPointDefenderManager
       controlPoint.Defender = unit.Create(owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y);
       controlPoint.Defender.AddAbility(FourCC("Aloc"));
       controlPoint.Defender.IsInvulnerable = true;
+      controlPoint.AttackEnabled++;
     }
+
     ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);
     ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
   }
@@ -80,10 +82,9 @@ public static class ControlPointDefenderManager
     if (controlPoint.Defender != null)
     {
       controlPoint.Defender.Kill();
+      controlPoint.Defender = null;
+      controlPoint.AttackEnabled--;
     }
-
-    controlPoint.Defender = null;
-    controlPoint.Unit.IsInvulnerable = false;
   }
 
   private static void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)

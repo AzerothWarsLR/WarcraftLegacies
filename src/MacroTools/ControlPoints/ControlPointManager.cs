@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
@@ -149,6 +150,14 @@ public sealed class ControlPointManager
 
     throw new KeyNotFoundException($"There is no {nameof(ControlPoint)} with unit type ID {Utils.FourCc.GetString(unitType)}");
   }
+  /// <summary>
+  /// Provides the registered <see cref="ControlPoint"/> with the given unit type ID.
+  /// <para>Returns null if there is no match.</para>
+  /// </summary>
+  public bool TryGetFromUnitType(int unitTypeId, [NotNullWhen(true)] out ControlPoint? controlPoint)
+  {
+    return _byUnitType.TryGetValue(unitTypeId, out controlPoint);
+  }
 
   /// <summary>
   /// Creates a new <see cref="ControlPoint"/>, causing it to grant income over time.
@@ -165,10 +174,11 @@ public sealed class ControlPointManager
     controlPoint.Unit.MaxLife = StartingMaxHitPoints;
     controlPoint.Unit.Life = representingUnit.Owner == player.NeutralAggressive ? HostileStartingCurrentHitPoints : controlPoint.Unit.MaxLife;
     controlPoint.Unit.DefenseType = WCSharp.Api.Enums.DefenseType.Large;
-    controlPoint.Unit.ShowAttackUi(false);
 
     controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);
+    controlPoint.AttackEnabled--;
+    controlPoint.Unit.RemoveAbility(FourCC("Agld"));
 
     RegisterIncome(controlPoint);
 

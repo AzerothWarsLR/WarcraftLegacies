@@ -25,6 +25,12 @@ public sealed class ControlPointMapMigration : IMapMigration
       unit.EditorDisplayAsNeutralHostile = true;
       unit.StatsRace = UnitRace.Creeps;
       unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+
+      //Some Control Points are also Gold Mines. Dynamically changing Gold Remaining count is only supported for unit
+      //types that started the game with Gold Mine Ability, so ALL Control Points must start with it.
+      //Control Points that are not Gold Mines can have it removed at the start of the game, and it can be re-added
+      //at any time and will still work.
+      unit.AbilitiesNormal = unit.AbilitiesNormal.Append(objectDatabase.GetAbility(1684825921));
     }
 
     map.UnitObjectData = objectDatabase.GetAllData().UnitData;

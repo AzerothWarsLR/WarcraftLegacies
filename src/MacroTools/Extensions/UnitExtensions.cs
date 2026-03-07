@@ -32,12 +32,6 @@ public static class UnitExtensions
   }
 
   /// <summary>
-  /// Determines whether or not the unit's attack can be seen in the UI window.
-  /// </summary>
-  public static void ShowAttackUi(this unit whichUnit, bool show, int weaponSlot = 0) =>
-    BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
-
-  /// <summary>
   /// Gets the unit's unit level if it's a unit, or hero level if it's a hero.
   /// </summary>
   public static int GetLevel(this unit whichUnit) =>

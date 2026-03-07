@@ -11,6 +11,7 @@ namespace MacroTools.ControlPoints;
 public sealed class ControlPoint
 {
   private float _controlLevel;
+  private int _attackEnabled = 1;
 
   /// <summary>
   /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
@@ -57,6 +58,24 @@ public sealed class ControlPoint
   /// The unit representing the <see cref="ControlPoint"/>.
   /// </summary>
   public unit Unit { get; }
+
+  /// <summary>
+  /// Whether the <see cref="ControlPoint"/> has an attack visible in its user interface.
+  /// <remarks>Represented as a stack; if greater than zero, attack is visible. This allows multiple systems to
+  /// influence whether attacks are enabled.</remarks>
+  /// </summary>
+  public int AttackEnabled
+  {
+    get
+    {
+      return _attackEnabled;
+    }
+    set
+    {
+      _attackEnabled = value;
+      BlzSetUnitWeaponBooleanField(Unit, UNIT_WEAPON_BF_ATTACKS_ENABLED, 0, _attackEnabled > 0);
+    }
+  }
 
   /// <summary>
   /// When <see cref="ControlLevel"/> is higher than 0, the <see cref="ControlPoint"/> becomes a tower with
