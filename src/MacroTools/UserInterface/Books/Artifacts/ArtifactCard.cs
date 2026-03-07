@@ -135,7 +135,7 @@ public sealed class ArtifactCard : Card<Artifact>
     }
   }
 
-  private void OnArtifactOwnerChanged(object? sender, Artifact artifact)
+  private void OnArtifactOwnerChanged(Artifact artifact)
   {
     try
     {
@@ -147,7 +147,7 @@ public sealed class ArtifactCard : Card<Artifact>
     }
   }
 
-  private void OnArtifactStatusChanged(object? sender, Artifact artifact)
+  private void OnArtifactStatusChanged(Artifact artifact)
   {
     try
     {
@@ -159,7 +159,7 @@ public sealed class ArtifactCard : Card<Artifact>
     }
   }
 
-  private void OnAnyFactionNameChanged(object? sender, Faction e)
+  private void OnAnyFactionNameChanged(Faction e)
   {
     try
     {

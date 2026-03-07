@@ -1,8 +1,6 @@
-﻿using System;
+﻿namespace MacroTools.Legends;
 
-namespace MacroTools.Legends;
-
-public sealed class LegendChangeOwnerEventArgs : EventArgs
+public sealed class LegendChangeOwnerEventArgs
 {
   public Legend Legend { get; }
   public player? PreviousOwner { get; }

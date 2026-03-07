@@ -22,7 +22,7 @@ public sealed class ObjectiveDestroyAnyCapital : Objective
   /// <inheritdoc />
   public override void OnAdd(Faction faction)
   {
-    CapitalManager.CapitalDestroyed += (_, capital) =>
+    CapitalManager.CapitalDestroyed += capital =>
     {
       if (IsPlayerOnSameTeamAsAnyEligibleFaction(@event.KillingUnit.Owner))
       {

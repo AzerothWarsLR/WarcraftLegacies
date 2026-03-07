@@ -16,7 +16,7 @@ public sealed class ObjectiveLegendMeetsLegend : Objective
   public ObjectiveLegendMeetsLegend(LegendaryHero damagingLegendaryHero, LegendaryHero legendaryHeroInRange)
   {
     Description = $"{damagingLegendaryHero.Name} has dealt damage within 500 units of {legendaryHeroInRange.Name}";
-    damagingLegendaryHero.DealtDamage += (_, _) =>
+    damagingLegendaryHero.DealtDamage += () =>
     {
       if (damagingLegendaryHero.Unit == null || legendaryHeroInRange.Unit == null)
       {

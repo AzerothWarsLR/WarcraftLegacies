@@ -20,7 +20,7 @@ public static class CapitalManager
   /// <summary>
   /// Invoked when any <see cref="Capital"/> is destroyed.
   /// </summary>
-  public static event EventHandler<Capital>? CapitalDestroyed;
+  public static event Action<Capital>? CapitalDestroyed;
 
   /// <summary>
   /// Registers a <see cref="Capital"/> to the <see cref="CapitalManager"/>.
@@ -39,7 +39,7 @@ public static class CapitalManager
 
     _byUnit.Add(capital.Unit, capital);
     _allCapitals.Add(capital);
-    PlayerUnitEvents.Register(UnitEvent.Dies, () => { CapitalDestroyed?.Invoke(capital, capital); }, capital.Unit);
+    PlayerUnitEvents.Register(UnitEvent.Dies, () => CapitalDestroyed?.Invoke(capital), capital.Unit);
     TurnBasedHitpointsManager.Register(capital.Unit, HitPointPercentagePerTurn);
   }
 

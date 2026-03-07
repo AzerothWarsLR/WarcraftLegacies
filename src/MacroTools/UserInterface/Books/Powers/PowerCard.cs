@@ -73,7 +73,7 @@ public sealed class PowerCard : Card<Power>
     AddFrame(_textFrame);
   }
 
-  private void OnPowerDescriptionChanged(object? sender, Power power)
+  private void OnPowerDescriptionChanged(Power power)
   {
     _textFrame.Text = power.Description;
   }

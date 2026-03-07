@@ -40,7 +40,7 @@ public sealed class ObjectiveDontControlLegend : Objective
     }
   }
 
-  private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+  private void OnTargetChangeOwner(LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
   {
     if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {

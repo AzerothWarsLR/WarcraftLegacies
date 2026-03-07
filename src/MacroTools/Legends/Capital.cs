@@ -30,7 +30,7 @@ public sealed class Capital : Legend
   private trigger? _deathTrig;
   private trigger? _ownerTrig;
 
-  private void OnProtectorDeath(object? sender, Protector protector)
+  private void OnProtectorDeath(Protector protector)
   {
     try
     {

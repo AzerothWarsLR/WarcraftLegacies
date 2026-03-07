@@ -21,7 +21,7 @@ public abstract class Power
     protected set
     {
       _description = value;
-      DescriptionChanged?.Invoke(this, this);
+      DescriptionChanged?.Invoke(this);
     }
   }
 
@@ -29,7 +29,7 @@ public abstract class Power
 
   public bool OnCooldown { get; set; }
 
-  public event EventHandler<Power>? DescriptionChanged;
+  public event Action<Power>? DescriptionChanged;
 
   /// <summary>
   ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.

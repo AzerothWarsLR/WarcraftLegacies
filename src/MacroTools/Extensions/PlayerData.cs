@@ -80,33 +80,33 @@ public sealed class PlayerData
   /// <summary>
   /// Fired when the player leaves a team.
   /// </summary>
-  public event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
+  public event Action<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
 
   /// <summary>
   /// Fired when the player joins a team.
   /// </summary>
-  public event EventHandler<PlayerChangeTeamEventArgs>? PlayerJoinedTeam;
+  public event Action<PlayerChangeTeamEventArgs>? PlayerJoinedTeam;
 
   /// <summary>
   /// Fired when the player changes their <see cref="Faction"/>.
   /// </summary>
-  public event EventHandler<PlayerFactionChangeEventArgs>? ChangedFaction;
+  public event Action<PlayerFactionChangeEventArgs>? ChangedFaction;
 
   /// <summary>
   /// Fired when the player's income changes.
   /// </summary>
-  public event EventHandler<PlayerData>? IncomeChanged;
+  public event Action<PlayerData>? IncomeChanged;
 
   /// <summary>
   /// Fired when the <see cref="player" />'s <see cref="ControlPoint" />s change
   /// </summary>
-  public event EventHandler<PlayerData>? ControlPointsChanged;
+  public event Action<PlayerData>? ControlPointsChanged;
 
   /// <summary>
   /// Fired when any player changes <see cref="Faction"/>.
   /// Todo: remove this and use the instance version instead.
   /// </summary>
-  public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
+  public static event Action<PlayerFactionChangeEventArgs>? FactionChange;
 
   /// <summary>
   /// Controls who the player is allied to.
@@ -129,7 +129,7 @@ public sealed class PlayerData
     set
     {
       _bonusGoldPerMinute = value;
-      IncomeChanged?.Invoke(this, this);
+      IncomeChanged?.Invoke(this);
     }
   }
 
@@ -148,7 +148,7 @@ public sealed class PlayerData
       }
 
       _goldPerMinute = value;
-      IncomeChanged?.Invoke(this, this);
+      IncomeChanged?.Invoke(this);
     }
   }
 
@@ -196,8 +196,9 @@ public sealed class PlayerData
         }
       }
 
-      FactionChange?.Invoke(this, new PlayerFactionChangeEventArgs(_player, prevFaction));
-      ChangedFaction?.Invoke(this, new PlayerFactionChangeEventArgs(_player, prevFaction));
+      var eventArgs = new PlayerFactionChangeEventArgs(_player, prevFaction);
+      FactionChange?.Invoke(eventArgs);
+      ChangedFaction?.Invoke(eventArgs);
     }
   }
 
@@ -244,7 +245,7 @@ public sealed class PlayerData
     if (Team != null)
     {
       Team?.RemovePlayer(_player);
-      PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, Team));
+      PlayerLeftTeam?.Invoke(new PlayerChangeTeamEventArgs(_player, Team));
     }
 
     if (newTeam == null)
@@ -255,7 +256,7 @@ public sealed class PlayerData
     var prevTeam = Team;
     Team = newTeam;
     newTeam.AddPlayer(_player);
-    PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
+    PlayerJoinedTeam?.Invoke(new PlayerChangeTeamEventArgs(_player, prevTeam));
   }
 
   /// <summary>
@@ -264,7 +265,7 @@ public sealed class PlayerData
   public void AddControlPoint(ControlPoint controlPoint)
   {
     ControlPoints.Add(controlPoint);
-    ControlPointsChanged?.Invoke(this, this);
+    ControlPointsChanged?.Invoke(this);
   }
 
   /// <summary>
@@ -273,7 +274,7 @@ public sealed class PlayerData
   public void RemoveControlPoint(ControlPoint controlPoint)
   {
     ControlPoints.Remove(controlPoint);
-    ControlPointsChanged?.Invoke(this, this);
+    ControlPointsChanged?.Invoke(this);
   }
 
   public void SetObjectLevel(int obj, int level)

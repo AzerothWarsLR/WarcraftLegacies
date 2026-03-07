@@ -46,7 +46,7 @@ public abstract class Legend
 
       _unitType = _unit.UnitType;
       OnChangeUnit();
-      UnitChanged?.Invoke(this, new LegendChangeUnitEventArgs(this, previousUnit));
+      UnitChanged?.Invoke(new LegendChangeUnitEventArgs(this, previousUnit));
     }
   }
 
@@ -58,7 +58,7 @@ public abstract class Legend
   /// <summary>
   /// Invoked when the <see cref="Unit"/> value changes.
   /// </summary>
-  public event EventHandler<LegendChangeUnitEventArgs>? UnitChanged;
+  public event Action<LegendChangeUnitEventArgs>? UnitChanged;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="Legend"/> class.
@@ -74,7 +74,7 @@ public abstract class Legend
       }
 
       Unit = trainedUnit;
-      ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
+      ChangedOwner?.Invoke(new LegendChangeOwnerEventArgs(this));
     });
     Essential = false;
   }
@@ -120,13 +120,13 @@ public abstract class Legend
   /// <summary>
   ///   Fired when the <see cref="Legend" /> changes owner.
   /// </summary>
-  public event EventHandler<LegendChangeOwnerEventArgs>? ChangedOwner;
+  public event Action<LegendChangeOwnerEventArgs>? ChangedOwner;
 
   /// <summary>
   /// Invokes the <see cref="ChangedOwner"/> event.
   /// </summary>
   protected void OnChangeOwner(LegendChangeOwnerEventArgs args)
   {
-    ChangedOwner?.Invoke(this, args);
+    ChangedOwner?.Invoke(args);
   }
 }

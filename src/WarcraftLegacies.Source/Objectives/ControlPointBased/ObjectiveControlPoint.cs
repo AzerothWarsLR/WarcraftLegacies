@@ -53,7 +53,7 @@ public sealed class ObjectiveControlPoint : Objective
       ? QuestProgress.Complete
       : QuestProgress.Incomplete;
 
-    _target.OwnerAllianceChanged += (_, _) => RefreshProgress();
+    _target.OwnerAllianceChanged += _ => RefreshProgress();
   }
 
   private void RefreshProgress()

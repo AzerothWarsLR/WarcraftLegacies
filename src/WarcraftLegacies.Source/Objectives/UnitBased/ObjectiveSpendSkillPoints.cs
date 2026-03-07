@@ -37,7 +37,7 @@ public sealed class ObjectiveSpendSkillPoints : Objective
     }
   }
 
-  private void OnHeroDied(object? sender, LegendDiedEventArgs eventArgs)
+  private void OnHeroDied(LegendDiedEventArgs eventArgs)
   {
     if (eventArgs.Permanent)
     {

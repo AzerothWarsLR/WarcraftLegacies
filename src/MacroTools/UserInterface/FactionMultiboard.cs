@@ -61,16 +61,16 @@ public sealed class FactionMultiboard
       @event.ExpiredTimer.Dispose();
     });
 
-    PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
+    PlayerData.FactionChange += _ => Instance?.Render();
     FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
-    FactionManager.FactionRegistered += (_, faction) => { RegisterFaction(faction); };
+    FactionManager.FactionRegistered += RegisterFaction;
 
     foreach (var player in Util.EnumeratePlayers())
     {
       var playerData = player.GetPlayerData();
       playerData.IncomeChanged += OnPlayerIncomeChanged;
-      playerData.PlayerJoinedTeam += (_, _) => { Instance?.Render(); };
-      playerData.PlayerLeftTeam += (_, _) => { Instance?.Render(); };
+      playerData.PlayerJoinedTeam += _ => Instance?.Render();
+      playerData.PlayerLeftTeam += _ => Instance?.Render();
     }
 
     foreach (var faction in FactionManager.GetAllFactions())
@@ -188,16 +188,16 @@ public sealed class FactionMultiboard
 
   private static void RegisterFaction(Faction faction)
   {
-    faction.StatusChanged += (_, _) => { Instance?.Render(); };
+    faction.StatusChanged += _ => Instance?.Render();
     faction.IconChanged += OnFactionIconChanged;
   }
 
-  private static void OnFactionAnyFactionNameChanged(object? sender, Faction faction)
+  private static void OnFactionAnyFactionNameChanged(Faction faction)
   {
     Instance?.UpdateFactionRow(faction);
   }
 
-  private static void OnPlayerIncomeChanged(object? sender, PlayerData player)
+  private static void OnPlayerIncomeChanged(PlayerData player)
   {
     var faction = player.Faction;
     if (faction != null)
@@ -206,7 +206,7 @@ public sealed class FactionMultiboard
     }
   }
 
-  private static void OnFactionIconChanged(object? sender, Faction args)
+  private static void OnFactionIconChanged(Faction args)
   {
     Instance?.UpdateFactionRow(args);
   }

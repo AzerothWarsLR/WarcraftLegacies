@@ -14,9 +14,9 @@ public sealed class Protector
     deathTrigger.RegisterUnitEvent(unit, unitevent.Death);
     deathTrigger.AddAction(() =>
     {
-      ProtectorDied?.Invoke(this, this);
+      ProtectorDied?.Invoke(this);
     });
   }
 
-  internal event EventHandler<Protector>? ProtectorDied;
+  internal event Action<Protector>? ProtectorDied;
 }

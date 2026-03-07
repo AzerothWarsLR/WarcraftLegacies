@@ -22,13 +22,13 @@ public sealed class Waygate
   }
 
   public Waygate? Sister { get; set; }
-  public event EventHandler<Waygate>? Died;
+  public event Action<Waygate>? Died;
 
   private void OnDeath()
   {
     Disconnect();
     Sister?.Disconnect();
-    Died?.Invoke(this, this);
+    Died?.Invoke(this);
   }
 
   private void OnConstructed()

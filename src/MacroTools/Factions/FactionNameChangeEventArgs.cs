@@ -1,8 +1,6 @@
-﻿using System;
+﻿namespace MacroTools.Factions;
 
-namespace MacroTools.Factions;
-
-public sealed class FactionNameChangeEventArgs : EventArgs
+public sealed class FactionNameChangeEventArgs
 {
   public FactionNameChangeEventArgs(Faction faction, string previousName)
   {

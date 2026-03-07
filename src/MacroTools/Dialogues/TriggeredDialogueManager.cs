@@ -22,7 +22,7 @@ public static class TriggeredDialogueManager
     dialogue.Completed += DialogueFinished;
   }
 
-  private static void DialogueFinished(object? sender, TriggeredDialogue triggeredDialogue)
+  private static void DialogueFinished(TriggeredDialogue triggeredDialogue)
   {
     foreach (var objective in triggeredDialogue.Objectives)
     {

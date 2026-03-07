@@ -1,8 +1,6 @@
-﻿using System;
+﻿namespace MacroTools.Factions;
 
-namespace MacroTools.Factions;
-
-public sealed class FactionPowerEventArgs : EventArgs
+public sealed class FactionPowerEventArgs
 {
   public FactionPowerEventArgs(Faction faction, Power power)
   {

@@ -19,10 +19,10 @@ public sealed class ObjectiveAcquireArtifact : Objective
   {
     Description = $"Acquire {target.Item.Name}";
     _target = target;
-    target.PickedUp += (_, _) =>
+    target.PickedUp += _ =>
       Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;
-    target.Dropped += (_, _) => Progress = QuestProgress.Incomplete;
-    target.Disposed += (_, _) => Progress = QuestProgress.Failed;
+    target.Dropped += _ => Progress = QuestProgress.Incomplete;
+    target.Disposed += _ => Progress = QuestProgress.Failed;
   }
 
   public override void OnAdd(Faction whichFaction)

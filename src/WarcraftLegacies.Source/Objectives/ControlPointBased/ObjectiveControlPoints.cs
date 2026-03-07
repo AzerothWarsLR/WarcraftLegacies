@@ -48,7 +48,7 @@ public sealed class ObjectiveControlPoints : Objective
     }
   }
 
-  private void OnTargetOwnerAllianceChanged(object? sender, ControlPoint controlPoint)
+  private void OnTargetOwnerAllianceChanged(ControlPoint controlPoint)
   {
     SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner));
   }

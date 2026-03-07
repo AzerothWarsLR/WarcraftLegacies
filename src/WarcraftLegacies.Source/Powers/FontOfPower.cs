@@ -162,7 +162,7 @@ public sealed class FontOfPower : Power
     objective.ProgressChanged -= OnObjectiveProgressChanged;
   }
 
-  private void OnObjectiveProgressChanged(object? sender, Objective objective) => RefreshIsActive();
+  private void OnObjectiveProgressChanged(Objective _) => RefreshIsActive();
 
   private void RefreshIsActive() => IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
 }

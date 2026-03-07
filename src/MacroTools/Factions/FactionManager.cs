@@ -24,12 +24,12 @@ public static class FactionManager
   /// <summary>
   ///   Fired when a <see cref="Faction" /> is registered to the <see cref="FactionManager" />.
   /// </summary>
-  public static event EventHandler<Faction>? FactionRegistered;
+  public static event Action<Faction>? FactionRegistered;
 
   /// <summary>
   /// Fired when any <see cref="Faction"/> changes its name.
   /// </summary>
-  public static event EventHandler<Faction>? AnyFactionNameChanged; //todo: remove this; shouldn't need static events of this nature
+  public static event Action<Faction>? AnyFactionNameChanged; //todo: remove this; shouldn't need static events of this nature
 
   /// <summary>
   /// How shared vision in <see cref="Team"/>s should behave.
@@ -94,13 +94,13 @@ public static class FactionManager
     });
   }
 
-  private static void OnFactionNameChange(object? sender, FactionNameChangeEventArgs args)
+  private static void OnFactionNameChange(FactionNameChangeEventArgs args)
   {
     try
     {
       _factionsByName.Remove(args.PreviousName);
       _factionsByName.Add(args.Faction.Name, args.Faction);
-      AnyFactionNameChanged?.Invoke(args.Faction, args.Faction);
+      AnyFactionNameChanged?.Invoke(args.Faction);
     }
     catch (Exception ex)
     {
@@ -166,7 +166,7 @@ public static class FactionManager
     }
 
     _allFactions.Add(faction);
-    FactionRegistered?.Invoke(faction, faction);
+    FactionRegistered?.Invoke(faction);
     faction.OnRegistered();
     faction.NameChanged += OnFactionNameChange;
 

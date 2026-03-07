@@ -36,10 +36,10 @@ public sealed class ObjectiveLegendHasArtifact : Objective
     }
 
     _targetArtifact.OwnerChanged += OnArtifactOwnerChanged;
-    _targetArtifact.Disposed += (_, _) => Progress = QuestProgress.Failed;
+    _targetArtifact.Disposed += _ => Progress = QuestProgress.Failed;
   }
 
-  private void OnArtifactOwnerChanged(object? sender, Artifact artifact)
+  private void OnArtifactOwnerChanged(Artifact artifact)
   {
     Progress = _targetArtifact.OwningUnit != null && _targetArtifact.OwningUnit == _targetLegend.Unit
       ? QuestProgress.Complete

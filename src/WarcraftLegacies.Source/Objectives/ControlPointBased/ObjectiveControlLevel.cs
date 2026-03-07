@@ -31,8 +31,8 @@ public sealed class ObjectiveControlLevel : Objective
     RefreshDescription();
     RefreshProgress();
 
-    _target.OwnerAllianceChanged += (_, _) => Refresh();
-    _target.ControlLevelChanged += (_, _) => Refresh();
+    _target.OwnerAllianceChanged += _ => Refresh();
+    _target.ControlLevelChanged += Refresh;
   }
 
   private void Refresh()

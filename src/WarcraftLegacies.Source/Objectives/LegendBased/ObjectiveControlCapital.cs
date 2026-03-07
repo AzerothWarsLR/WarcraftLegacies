@@ -38,8 +38,8 @@ public sealed class ObjectiveControlCapital : Objective
     {
       Progress = QuestProgress.Complete;
     }
-    _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
-    _target.UnitChanged += (_, _) => { RecalculateProgress(); };
+    _target.ChangedOwner += _ => RecalculateProgress();
+    _target.UnitChanged += _ => RecalculateProgress();
 
     var deathTrigger = trigger.Create();
     deathTrigger.RegisterUnitEvent(_target.Unit, unitevent.Death);

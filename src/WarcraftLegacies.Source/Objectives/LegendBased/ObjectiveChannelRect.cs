@@ -65,7 +65,7 @@ public sealed class ObjectiveChannelRect : Objective
     _channel.Finished += OnChannelEnd;
   }
 
-  private void OnChannelEnd(object? sender, Channel channel)
+  private void OnChannelEnd(Channel channel)
   {
     if (channel.FinishedWithoutInterruption)
     {

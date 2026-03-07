@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace MacroTools.Legends;
+﻿namespace MacroTools.Legends;
 
 /// <summary>
 /// Event arguments for when a <see cref="Legend"/> changes unit.
 /// </summary>
-public sealed class LegendChangeUnitEventArgs : EventArgs
+public sealed class LegendChangeUnitEventArgs
 {
   /// <summary>
   /// The <see cref="Legend"/> triggering the event.

@@ -128,7 +128,7 @@ public abstract class Faction
     {
       var formerName = _name;
       _name = value;
-      NameChanged?.Invoke(this, new FactionNameChangeEventArgs(this, formerName));
+      NameChanged?.Invoke(new FactionNameChangeEventArgs(this, formerName));
     }
   }
 
@@ -138,7 +138,7 @@ public abstract class Faction
     set
     {
       _icon = value;
-      IconChanged?.Invoke(this, this);
+      IconChanged?.Invoke(this);
     }
   }
 
@@ -195,25 +195,25 @@ public abstract class Faction
   }
 
   /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
-  public event EventHandler<FactionPowerEventArgs>? PowerAdded;
+  public event Action<FactionPowerEventArgs>? PowerAdded;
 
   /// <summary>Fired when the <see cref="Faction" /> loses a <see cref="Power" />.</summary>
-  public event EventHandler<FactionPowerEventArgs>? PowerRemoved;
+  public event Action<FactionPowerEventArgs>? PowerRemoved;
 
   /// <summary>Invoked when <see cref="ScoreStatus"/> changes.</summary>
-  public event EventHandler<Faction>? ScoreStatusChanged;
+  public event Action<Faction>? ScoreStatusChanged;
 
   /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
-  public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
+  public event Action<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
   /// <summary>Fires when the <see cref="Faction" /> changes its name.</summary>
-  public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
+  public event Action<FactionNameChangeEventArgs>? NameChanged;
 
   /// <summary>Fired when the <see cref="Faction"/>'s has changed.</summary>
-  public event EventHandler<Faction>? IconChanged;
+  public event Action<Faction>? IconChanged;
 
   /// <summary>Fired after the <see cref="Faction"/>'s status has changed.</summary>
-  public event EventHandler<Faction>? StatusChanged;
+  public event Action<Faction>? StatusChanged;
 
   /// <summary>
   /// Invoked after the <see cref="Faction"/> is registered to a <see cref="FactionManager"/>.
@@ -253,8 +253,8 @@ public abstract class Faction
 
     ScoreStatus = ScoreStatus.Defeated;
 
-    StatusChanged?.Invoke(this, this);
-    ScoreStatusChanged?.Invoke(this, this);
+    StatusChanged?.Invoke(this);
+    ScoreStatusChanged?.Invoke(this);
   }
 
 
@@ -288,7 +288,7 @@ public abstract class Faction
       power.OnAdd(Player);
     }
 
-    PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
+    PowerAdded?.Invoke(new FactionPowerEventArgs(this, power));
   }
 
   /// <summary>Removes a <see cref="Power" /> from this <see cref="Faction" />.</summary>
@@ -301,7 +301,7 @@ public abstract class Faction
       power.OnRemove(Player);
     }
 
-    PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
+    PowerRemoved?.Invoke(new FactionPowerEventArgs(this, power));
   }
 
   /// <summary>
@@ -805,12 +805,12 @@ public abstract class Faction
     }
   }
 
-  private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
+  private void OnQuestProgressChanged(QuestProgressChangedEventArgs args)
   {
     try
     {
       args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
-      QuestProgressChanged?.Invoke(this, new FactionQuestProgressChangedEventArgs(this, args.Quest, args.FormerProgress));
+      QuestProgressChanged?.Invoke(new FactionQuestProgressChangedEventArgs(this, args.Quest, args.FormerProgress));
     }
     catch (Exception ex)
     {

@@ -38,7 +38,7 @@ public sealed class ObjectiveExpireTests : GameTimeManagerTestsBase
     // Arrange
     var progressChangedCalls = 0;
     var objective = new ObjectiveExpire(1, "foo") { ShowsInQuestLog = false };
-    objective.ProgressChanged += (_, _) => progressChangedCalls++;
+    objective.ProgressChanged += _ => progressChangedCalls++;
 
     // Act
     GameTimeManager.SkipTurns(3);

@@ -28,7 +28,7 @@ public sealed class ObjectiveFrozenThroneState : Objective
 
   public override void OnAdd(Faction whichFaction)
   {
-    TheFrozenThrone.FrozenThroneStateChanged += (_, state) =>
+    TheFrozenThrone.FrozenThroneStateChanged += state =>
     {
       Progress = state == _desiredState ? QuestProgress.Complete : QuestProgress.Failed;
       State = state;
