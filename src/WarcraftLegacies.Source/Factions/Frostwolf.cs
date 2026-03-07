@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -47,7 +48,7 @@ public sealed class Frostwolf : Faction
     Regions.GromSpawn.CleanupHostileUnits();
     Regions.EchoUnlock.CleanupHostileUnits();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-
+    GoldMineManager.Preregister(UNIT_N08U_SOUTHERN_ASHENVALE, 130, 1300);
   }
 
   private void RegisterObjectLevels()

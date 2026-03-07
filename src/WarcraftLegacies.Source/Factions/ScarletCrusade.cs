@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Scarlet;
 using WarcraftLegacies.Source.Setup;
@@ -29,6 +30,7 @@ public sealed class ScarletCrusade : Faction
   {
     RegisterQuests();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N04W_HAVENSHIRE, 70, 700);
   }
 
   private void RegisterQuests()

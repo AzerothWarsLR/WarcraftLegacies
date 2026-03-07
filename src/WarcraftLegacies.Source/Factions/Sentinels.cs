@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -52,6 +53,7 @@ public sealed class Sentinels : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.AstranaarUnlock.CleanupHostileUnits();
     Regions.AuberdineUnlock.CleanupHostileUnits();
+    GoldMineManager.Preregister(UNIT_N06F_SILVERMYST_ISLAND, 160, 1600);
   }
 
   /// <inheritdoc />

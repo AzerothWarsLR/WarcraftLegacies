@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
@@ -39,6 +40,7 @@ public sealed class Stormwind : Faction
     RegisterQuests();
     RegisterResearches();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N02L_WESTFALL, 100, 1000);
   }
 
   private void RegisterObjectLevels()

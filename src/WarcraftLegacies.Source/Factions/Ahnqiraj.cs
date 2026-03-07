@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using MacroTools.Spells;
@@ -54,6 +55,7 @@ public sealed class Ahnqiraj : Faction
     RegisterSpells();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterQuests();
+    GoldMineManager.Preregister(UNIT_N00K_TUNNELS_OF_AHN_QIRAJ, 250, 2500);
   }
 
   private void RegisterQuests()

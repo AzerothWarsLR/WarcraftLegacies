@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -51,6 +52,7 @@ public sealed class Lordaeron : Faction
     RegisterCrownOfLordaeronDrop();
     RegisterResearches();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N01H_ANDORHAL, 220, 2200);
   }
 
   private void RegisterObjectLevels()

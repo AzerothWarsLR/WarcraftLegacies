@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Spells;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -68,12 +69,14 @@ public sealed class Sunfury : Faction
     };
     SpellRegistry.Register(siphoningRitual);
   }
+
   /// <inheritdoc />
   public override void OnRegistered()
   {
     RegisterQuests();
     RegisterSpells();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N07Q_AREA_52, 240, 2400);
   }
 
   /// <inheritdoc />

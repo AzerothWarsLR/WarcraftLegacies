@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
@@ -41,6 +42,7 @@ public sealed class FelHorde : Faction
     RegisterQuests();
     JuggernautDeath.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N09Y_KIL_SORROW_FORTRESS, 200, 2000);
   }
 
   private void RegisterObjectLevels()

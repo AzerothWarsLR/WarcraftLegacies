@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -41,6 +42,7 @@ public sealed class Kultiras : Faction
   {
     RegisterQuests();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N07L_BALOR, 100, 1000);
   }
 
   private void RegisterQuests()

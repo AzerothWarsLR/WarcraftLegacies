@@ -4,6 +4,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Utils;
@@ -61,7 +62,9 @@ public sealed class Dalaran : Faction
     RegisterProtectors();
     WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N01D_SILVERPINE_FOREST, 100, 1000);
   }
+
   private static void ReplaceWithFactionUnits(Faction pickedFaction)
   {
     if (pickedFaction == null)

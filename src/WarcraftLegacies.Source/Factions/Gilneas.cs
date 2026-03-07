@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
+using MacroTools.GoldMines;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
@@ -44,6 +45,7 @@ public sealed class Gilneas : Faction
     ReplaceWithFactionUnits(this);
     RegisterQuests();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N01D_SILVERPINE_FOREST, 100, 1000);
   }
 
   private void RegisterQuests()

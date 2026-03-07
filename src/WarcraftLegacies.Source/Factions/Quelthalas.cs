@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
@@ -47,7 +48,9 @@ public sealed class Quelthalas : Faction
     RegisterResearches();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterPowers();
+    GoldMineManager.Preregister(UNIT_N01N_TRANQUILLIEN, 150, 1500);
   }
+
   private void RegisterPowers()
   {
     var fontsOfPower = new List<Capital>

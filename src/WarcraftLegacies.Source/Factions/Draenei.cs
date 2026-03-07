@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -42,7 +43,9 @@ public sealed class Draenei : Faction
   {
     RegisterQuests();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N06F_SILVERMYST_ISLAND, 160, 1600);
   }
+
   /// <inheritdoc />
   public override void OnNotPicked()
   {

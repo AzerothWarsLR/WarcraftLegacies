@@ -4,6 +4,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -59,6 +60,7 @@ public sealed class Warsong : Faction
     var echoIslesUnit = AllPreplacedWidgets.Units.Get(UNIT_N02V_ECHO_ISLES);
     var whichPlayer1 = player.NeutralAggressive;
     echoIslesUnit.SetOwner(whichPlayer1);
+    GoldMineManager.Preregister(UNIT_N08U_SOUTHERN_ASHENVALE, 130, 1300);
   }
 
   private void RegisterObjectLevels()

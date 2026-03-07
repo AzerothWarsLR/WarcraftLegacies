@@ -3,6 +3,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
+using MacroTools.GoldMines;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -56,7 +57,9 @@ public sealed class Illidari : Faction
     RegisterResearches();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     ModAbilityAvailability(ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER, -1);
+    GoldMineManager.Preregister(UNIT_N032_SURAMAR, 180, 1800);
   }
+
   /// <inheritdoc />
   public override void OnNotPicked()
   {

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -44,6 +45,7 @@ public sealed class Ironforge : Faction
     RegisterObjectLevels();
     RegisterQuests();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N06W_MENETHIL_HARBOUR, 140, 1400);
   }
 
   private void RegisterObjectLevels()

@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -55,6 +56,7 @@ public sealed class Legion : Faction
     RegisterResearches();
     RegisterDialogue();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N03A_NATH_RAXAS_HOLD, 100, 1000);
   }
 
   private void RegisterQuests()

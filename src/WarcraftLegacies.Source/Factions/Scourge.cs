@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -65,6 +66,7 @@ public sealed class Scourge : Faction
     SacrificeAcolyte.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     TheFrozenThrone.Setup(this, AllLegends.Scourge.TheFrozenThrone, AllLegends.Scourge.Arthas);
+    GoldMineManager.Preregister(UNIT_N0EC_MORD_RETHAR, 210, 2100);
   }
 
   private void RegisterResearches()

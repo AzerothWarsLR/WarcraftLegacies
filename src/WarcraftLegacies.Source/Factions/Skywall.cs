@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Researches;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
@@ -53,6 +54,7 @@ public sealed class Skywall : Faction
     RegisterQuests();
     RegisterFactionDependentInitializer<Druids, Ahnqiraj>(RegisterInvasionRelatedQuests);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR, 100, 1000);
   }
 
   private void RegisterQuests()

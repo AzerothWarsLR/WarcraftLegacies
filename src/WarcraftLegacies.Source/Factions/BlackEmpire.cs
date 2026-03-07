@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DummyCasters;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -45,6 +46,7 @@ public sealed class BlackEmpire : Faction
     RegisterSpells();
     RegisterUnitTypeTraits();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_NMOG_MAW_OF_GOR_MA, 130, 1300);
   }
 
   private void RegisterQuests()

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
+using MacroTools.GoldMines;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
@@ -49,6 +50,7 @@ public sealed class Druids : Faction
     RegisterPowers();
     CenariusGhost.Setup(AllLegends.Druids.Cenarius, this);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    GoldMineManager.Preregister(UNIT_N01P_NORDRASSIL, 160, 1600);
   }
 
   private void RegisterQuests()
