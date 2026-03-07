@@ -30,7 +30,7 @@ public sealed class MassAnySpell : Spell
   /// <summary>
   /// A filter that units must pass to be considered eligible targets for the spell.
   /// </summary>
-  public required DummyCasterManager.CastFilter CastFilter { get; init; }
+  public required CastFilter CastFilter { get; init; }
 
   /// <summary>
   /// What kind of thing the spell targets.
