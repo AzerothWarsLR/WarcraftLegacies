@@ -52,7 +52,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemies. Each jump deals less damage. |n|n|cffffcc00Level 1|r - \u003CAOcl,DataA1\u003E damage, jumps \u003CAOcl,DataB1\u003E times. |n|cffffcc00Level 2|r - \u003CAOcl,DataA2\u003E damage, jumps \u003CAOcl,DataB2\u003E times. |n|cffffcc00Level 3|r - \u003CAOcl,DataA3\u003E damage, jumps \u003CAOcl,DataB3\u003E times.  |n|cffffcc00Level 4|r - \u003CAOcl,DataA4\u003E damage, jumps \u003CAOcl,DataB4\u003E times."
+      "Value": "Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemies. Each jump deals less damage. |n|n|cffffcc00Level 1|r - \u003CZBCL,DataA1\u003E damage, jumps \u003CZBCL,DataB1\u003E times. |n|cffffcc00Level 2|r - \u003CZBCL,DataA2\u003E damage, jumps \u003CZBCL,DataB2\u003E times. |n|cffffcc00Level 3|r - \u003CZBCL,DataA3\u003E damage, jumps \u003CZBCL,DataB3\u003E times.  |n|cffffcc00Level 4|r - \u003CZBCL,DataA4\u003E damage, jumps \u003CZBCL,DataB4\u003E times."
     },
     {
       "Level": 4,

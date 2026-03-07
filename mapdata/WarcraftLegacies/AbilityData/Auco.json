@@ -79,12 +79,6 @@
       "Value": "Unstable Concoction- [|cffffcc00Level 1|r]"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Causes a powerful explosion that deals \u003CAuco,DataB1\u003E damage to a target air unit, and \u003CAuco,DataD12\u003E damage to nearby enemy air units."
-    },
-    {
       "Id": 1802007905,
       "Type": 3,
       "Value": "Q"

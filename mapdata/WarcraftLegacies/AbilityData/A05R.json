@@ -91,7 +91,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Forms a shield of healing energies around a target unit, healing \u003CA05R,DataA1\u003E damage per second to all units around it. Lasts \u003CA05R,Dur1\u003E seconds."
+      "Value": "Forms a shield of healing energies around a target unit, healing 25 damage per second to all units around it. Lasts \u003CA05R,Dur1\u003E seconds."
     }
   ]
 }

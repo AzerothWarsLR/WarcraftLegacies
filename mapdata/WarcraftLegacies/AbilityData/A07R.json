@@ -270,7 +270,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes damage each second. |n|n|cffffcc00Level 1|r - 75 damage per second for 6 seconds (2 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5 for Heroes)."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes damage each second. |n|n|cffffcc00Level 1|r - \u003CA07R,DataA1\u003E damage per second for \u003CA07R,Dur1\u003E seconds (\u003CA07R,HeroDur1,.\u003E for Heroes). |n|cffffcc00Level 2|r - \u003CA07R,DataA2\u003E damage per second for \u003CA07R,Dur2\u003E seconds (\u003CA07R,HeroDur2,.\u003E for Heroes). |n|cffffcc00Level 3|r - \u003CA07R,DataA3\u003E damage per second for \u003CA07R,Dur3\u003E seconds (\u003CA07R,HeroDur3,.\u003E for Heroes). |n|cffffcc00Level 4|r - \u003CA07R,DataA4\u003E damage per second for \u003CA07R,Dur4\u003E seconds (\u003CA07R,HeroDur4,.\u003E for Heroes)."
     },
     {
       "Id": 1952543841,
@@ -314,25 +314,25 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA2\u003E damage per second. |nLasts \u003CA07R,Dur2\u003E seconds against units and \u003CA07R,HeroDur2\u003E seconds against heroes."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA2\u003E damage per second. |nLasts \u003CA07R,Dur2\u003E seconds against units and \u003CA07R,HeroDur2,.\u003E seconds against heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA3\u003E damage per second. |nLasts \u003CA07R,Dur3\u003E seconds against units and \u003CA07R,HeroDur3\u003E seconds against heroes."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA3\u003E damage per second. |nLasts \u003CA07R,Dur3\u003E seconds against units and \u003CA07R,HeroDur3,.\u003E seconds against heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA4\u003E damage per second. |nLasts \u003CA07R,Dur4\u003E seconds against units and \u003CA07R,HeroDur4\u003E seconds against heroes."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA4\u003E damage per second. |nLasts \u003CA07R,Dur4\u003E seconds against units and \u003CA07R,HeroDur4,.\u003E seconds against heroes."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA1\u003E damage per second. |nLasts \u003CA07R,Dur1\u003E seconds against units and \u003CA07R,HeroDur1\u003E seconds against heroes."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA07R,DataA1\u003E damage per second. |nLasts \u003CA07R,Dur1\u003E seconds against units and \u003CA07R,HeroDur1,.\u003E seconds against heroes."
     }
   ]
 }

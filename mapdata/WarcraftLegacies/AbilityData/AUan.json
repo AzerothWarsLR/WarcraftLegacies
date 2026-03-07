@@ -115,7 +115,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - No bonus.|n|cffffcc00Level 2|r - Raised units gain 30% additional hit points and attack damage. |n|cffffcc00Level 3|r - Raised units gain 60% additional hit points and attack damage.|n|cffffcc00Level 4|r - Raised units gain 90% additional hit points and attack damage."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - No bonus.|n|cffffcc00Level 2|r - Raised units gain 20% additional hit points and attack damage. |n|cffffcc00Level 3|r - Raised units gain 40% additional hit points and attack damage.|n|cffffcc00Level 4|r - Raised units gain 60% additional hit points and attack damage."
     },
     {
       "Level": 1,
@@ -145,7 +145,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster."
     },
     {
       "Level": 2,
