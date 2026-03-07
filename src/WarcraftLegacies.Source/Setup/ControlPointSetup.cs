@@ -32,7 +32,7 @@ public static class ControlPointSetup
     {
       if (unit.GetAbilityLevel(initData.BuffId) > 0)
       {
-        ControlPointManager.Instance.Register(new ControlPoint(unit, initData.Income, initData.UseControlLevels));
+        ControlPointManager.Instance.Create(unit, initData.Income, initData.UseControlLevels);
       }
     }
   }

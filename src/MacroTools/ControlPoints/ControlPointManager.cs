@@ -146,10 +146,14 @@ public sealed class ControlPointManager
   }
 
   /// <summary>
-  ///   Registers a <see cref="ControlPoint" /> to the Control Point system.
+  /// Creates a new <see cref="ControlPoint"/>, causing it to grant income over time.
   /// </summary>
-  public void Register(ControlPoint controlPoint)
+  /// <param name="representingUnit">The unit representing the Control Point on the map.</param>
+  /// <param name="value">The income gained per turn from owning the Control Point.</param>
+  /// <param name="useControlLevels">Whether the Control Point accumulates a level each turn.</param>
+  public void Create(unit representingUnit, int value, bool useControlLevels)
   {
+    var controlPoint = new ControlPoint(representingUnit, value, useControlLevels);
     _byUnit.Add(controlPoint.Unit, controlPoint);
     _byUnitType.TryAdd(controlPoint.UnitType, controlPoint);
     controlPoint.Unit.MaxLife = StartingMaxHitPoints;
