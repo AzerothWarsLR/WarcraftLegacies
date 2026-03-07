@@ -16,7 +16,7 @@ public sealed class ControlPoint
   /// <summary>
   /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
   /// </summary>
-  public event Action? ControlLevelChanged;
+  public event Action<ControlPoint>? ControlLevelChanged;
 
   /// <summary>
   /// The owner of this <see cref="ControlPoint"/> changed their alliances, or the <see cref="ControlPoint"/> itself
@@ -69,7 +69,7 @@ public sealed class ControlPoint
     set
     {
       _controlLevel = value;
-      ControlLevelChanged?.Invoke();
+      ControlLevelChanged?.Invoke(this);
     }
   }
 
