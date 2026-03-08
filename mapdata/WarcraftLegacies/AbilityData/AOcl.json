@@ -13,13 +13,40 @@
       "Pointer": 1,
       "Id": 829186895,
       "Type": 2,
-      "Value": 225
+      "Value": 300
     },
     {
-      "Level": 4,
+      "Level": 1,
       "Pointer": 2,
       "Id": 845964111,
-      "Value": 10
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829186895,
+      "Type": 2,
+      "Value": 250
     },
     {
       "Id": 1953854049,
@@ -41,7 +68,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(zul)"
+      "Value": "(Ertan)"
     },
     {
       "Id": 1802007137,

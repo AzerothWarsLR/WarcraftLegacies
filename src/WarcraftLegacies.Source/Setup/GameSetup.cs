@@ -111,7 +111,7 @@ public static class GameSetup
       ControlLevelSettings = new ControlLevelSettings
       {
         DefaultDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-        DamageBase = 8,
+        DamageBase = 3,
         DamagePerControlLevel = 1,
         ArmorPerControlLevel = 1,
         HitPointsPerControlLevel = 70,

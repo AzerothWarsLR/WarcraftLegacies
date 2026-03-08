@@ -12,13 +12,6 @@
       "Value": "B04A"
     },
     {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 829387598,
-      "Type": 2,
-      "Value": 7
-    },
-    {
       "Id": 1919248481,
       "Value": 0
     },
@@ -31,6 +24,13 @@
     {
       "Id": 1986358369,
       "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829387598,
+      "Type": 2,
+      "Value": 15
     },
     {
       "Id": 1953653089,
@@ -62,7 +62,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Shocks the enemy with lightning which causes 7 damage per second, prevents the casting of spells, and reduces attack damage by 50%.|nLasts 14 seconds on units and 3 seconds on heroes                          12 Second cooldown."
+      "Value": "Shocks the enemy with lightning which causes \u003CA09C,DataA1\u003E damage per second, prevents the casting of spells, and reduces attack damage by 50%.|nLasts \u003CA09C,Dur1\u003E seconds on units and \u003CA09C,HeroDur1\u003E seconds on heroes."
     }
   ]
 }

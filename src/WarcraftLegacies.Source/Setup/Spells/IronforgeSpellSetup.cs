@@ -28,7 +28,7 @@ public static class IronforgeSpellSetup
     {
       DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
       DummyOrderId = ORDER_FORKED_LIGHTNING,
-      ProcChance = 0.15f
+      ProcChance = 0.2f
     }, UNIT_H03Z_STORMRIDER_IRONFORGE);
   }
 }
