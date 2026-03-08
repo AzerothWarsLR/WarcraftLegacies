@@ -33,7 +33,12 @@ public sealed class Dalaran : Faction
       AllPreplacedWidgets.Units.GetClosest(UNIT_N03G_VIOLET_TOWER_DALARAN, 9864, 4086)
     };
     UndefeatedResearch = UPGRADE_R05N_DALARAN_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 100,
+      Turns = 10
+    };
     CinematicMusic = "SadMystery";
     ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
     IntroText = $"You are playing the wise {PrefixCol}Council of Dalaran|r.\n\n" +

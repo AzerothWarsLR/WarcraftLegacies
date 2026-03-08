@@ -17,7 +17,12 @@ public sealed class Stormwind : Faction
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     UndefeatedResearch = UPGRADE_R060_STORMWIND_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 100,
+      Turns = 10
+    };
     ControlPointDefenderUnitTypeId = UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND;
     IntroText = $"You are playing as the steadfast {PrefixCol}Kingdom of Stormwind|r.\n\n" +
                 "You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire, and finally Stormwind City.\n\n" +

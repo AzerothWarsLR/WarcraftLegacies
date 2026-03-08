@@ -23,7 +23,12 @@ public sealed class Druids : Faction
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     UndefeatedResearch = UPGRADE_R06E_DRUIDS_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 160,
+      Turns = 10
+    };
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
     IntroText = $"You are playing as the ancient {PrefixCol}Druids of the Cenarion Circle|r.\n\n" +

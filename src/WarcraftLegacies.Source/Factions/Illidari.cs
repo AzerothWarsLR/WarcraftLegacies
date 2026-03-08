@@ -26,7 +26,12 @@ public sealed class Illidari : Faction
   {
     TraditionalTeam = TeamSetup.Outland;
     UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 180,
+      Turns = 10
+    };
     FoodMaximum = 250;
     ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
     Nicknames = new List<string>

@@ -21,7 +21,12 @@ public sealed class Quelthalas : Faction
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
     UndefeatedResearch = UPGRADE_R05U_QUEL_THALAS_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 150,
+      Turns = 10
+    };
     CinematicMusic = "BloodElfTheme";
     ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
     IntroText = $"You are playing as the proud {PrefixCol}Kingdom of Quel'Thalas|r.\n\n" +

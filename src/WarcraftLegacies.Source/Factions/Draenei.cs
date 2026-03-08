@@ -18,7 +18,12 @@ public sealed class Draenei : Faction
     : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 160,
+      Turns = 10
+    };
     ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
     IntroText = $"You are playing as the exiled {PrefixCol}Draenei|r.\n\n" +
                 "You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.\n\n" +

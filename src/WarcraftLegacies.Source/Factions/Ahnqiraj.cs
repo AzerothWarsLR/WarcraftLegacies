@@ -29,7 +29,12 @@ public sealed class Ahnqiraj : Faction
     _gateAhnQiraj = AllPreplacedWidgets.Units.Get(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
     ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 250,
+      Turns = 10
+    };
     IntroText = $"You are playing as {PrefixCol}C'thun and his Qiraji followers|r.\n\n" +
                 "You start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and free yourself from the Titan Guardians.\n\n" +
                 "Then, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.\n\n" +

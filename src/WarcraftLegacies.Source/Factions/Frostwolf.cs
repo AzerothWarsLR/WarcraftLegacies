@@ -19,7 +19,12 @@ public sealed class Frostwolf : Faction
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 130,
+      Turns = 10
+    };
     CinematicMusic = "SadMystery";
     ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
     IntroText = $"You are playing as the honorable {PrefixCol}Frostwolf Clan|r.\n\n" +

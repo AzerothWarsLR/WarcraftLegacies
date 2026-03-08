@@ -19,7 +19,12 @@ public sealed class BlackEmpire : Faction
   {
     ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_NZOTH_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 130,
+      Turns = 10
+    };
     IntroText = $"You are playing as the {PrefixCol}Black Empire of N'zoth|r.\n\n" +
                 "You start in Nyalotha, restore the city to its glory by repelling the invaders from Azeroth.\n\n" +
                 "Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.\n\n" +

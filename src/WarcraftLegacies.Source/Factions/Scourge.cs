@@ -27,7 +27,12 @@ public sealed class Scourge : Faction
   {
     TraditionalTeam = TeamSetup.Legion;
     UndefeatedResearch = UPGRADE_R05K_SCOURGE_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 210,
+      Turns = 10
+    };
     FoodMaximum = 250;
     CinematicMusic = "ArthasTheme";
     ControlPointDefenderUnitTypeId = UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
