@@ -30,16 +30,6 @@
     },
     {
       "Level": 1,
-      "Id": 1935895905,
-      "Value": 100
-    },
-    {
-      "Level": 3,
-      "Id": 1935895905,
-      "Value": 150
-    },
-    {
-      "Level": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 60
@@ -125,7 +115,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - No bonus.|n|cffffcc00Level 2|r - Raised units gain 30% additional hit points and attack damage. |n|cffffcc00Level 3|r - Raised units gain 60% additional hit points and attack damage.|n|cffffcc00Level 4|r - Raised units gain 90% additional hit points and attack damage."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - No bonus.|n|cffffcc00Level 2|r - Raised units gain 20% additional hit points and attack damage. |n|cffffcc00Level 3|r - Raised units gain 40% additional hit points and attack damage.|n|cffffcc00Level 4|r - Raised units gain 60% additional hit points and attack damage."
     },
     {
       "Level": 1,
@@ -155,25 +145,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 30%."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 20%."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 60%."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 40%."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 90%."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 60%."
     }
   ]
 }

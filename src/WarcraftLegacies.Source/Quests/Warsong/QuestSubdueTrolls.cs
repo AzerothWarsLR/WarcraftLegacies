@@ -37,7 +37,7 @@ public sealed class QuestSubdueTrolls : QuestData
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-    PillageGoldReward = 850;
+    PillageGoldReward = 600;
     PillageExperienceReward = 3000;
   }
 

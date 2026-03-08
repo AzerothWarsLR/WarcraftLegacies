@@ -6,7 +6,7 @@
   "Modifications": [
     {
       "Id": 1651271527,
-      "Value": 125
+      "Value": 80
     },
     {
       "Id": 1651078247,
@@ -58,7 +58,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Batriders\u0027 Unstable Concoction by increasing its initial damage to 750 and splash damage to 200."
+      "Value": "Improves Batriders\u0027 Unstable Concoction by increasing its initial damage to 1000 and splash damage to 300."
     },
     {
       "Level": 1,
