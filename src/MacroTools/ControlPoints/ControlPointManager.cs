@@ -86,7 +86,7 @@ public sealed class ControlPointManager
   /// <summary>
   /// Fired when a <see cref="ControlPoint"/> is created.
   /// </summary>
-  public event EventHandler<ControlPoint>? ControlPointCreated;
+  public event Action<ControlPoint>? ControlPointCreated;
 
   /// <summary>
   /// This ability can be used to increase a <see cref="ControlPoint"/>'s <see cref="ControlPoint.ControlLevel"/>.
@@ -189,7 +189,7 @@ public sealed class ControlPointManager
       controlPoint.Unit.AddAbility(RegenerationAbility);
     }
 
-    ControlPointCreated?.Invoke(this, controlPoint);
+    ControlPointCreated?.Invoke(controlPoint);
   }
 
   private static void RegisterIncome(ControlPoint controlPoint)
