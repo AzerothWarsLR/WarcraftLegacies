@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.GameTime;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic;
@@ -13,20 +14,26 @@ public static class StartingResources
   /// </summary>
   public static void Setup()
   {
-    var trig = trigger.Create();
-    trig.RegisterTimerEvent(58, false);
-    trig.AddAction(() =>
+    const int startTurn = 1;
+    GameTimeManager.RegisterOnTurn(startTurn, () =>
     {
       foreach (var player in Util.EnumeratePlayers())
       {
-        var faction = player.GetPlayerData().Faction;
+        var playerData = player.GetPlayerData();
+        var faction = playerData.Faction;
         if (faction == null)
         {
           continue;
         }
 
-        player.SetState(playerstate.ResourceGold, faction.StartingGold);
+        player.SetState(playerstate.ResourceGold, faction.StartingGold.Instant);
         player.SetState(playerstate.ResourceHeroTokens, 1);
+        playerData.BonusIncome += faction.StartingGold.Income;
+
+        GameTimeManager.RegisterOnTurn(faction.StartingGold.Turns + 1, () =>
+        {
+          playerData.BonusIncome -= faction.StartingGold.Income;
+        });
       }
     });
   }
