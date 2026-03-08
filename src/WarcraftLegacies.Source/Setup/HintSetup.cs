@@ -23,5 +23,6 @@ public static class HintConfig
     Hint.Register($"Each turn, every Capital and every gate gains bonus maximum hit points. Capitals gain {CapitalManager.HitPointPercentagePerTurn * 100}% and gates gain {Gate.HitPointPercentagePerTurn * 100}%.");
     Hint.Register($"There are 4 {GetObjectName(UNIT_H014_TRADING_POST_SEA)}s scattered throughout the seas, which each give a large amount of income when controlled.");
     Hint.Register("Summoned units grant no experience when slain.");
+    Hint.Register("All players get bonus income for the first 10 turns. Use it to train a strong army, complete your starting quests, and secure Control Points.");
   }
 }
