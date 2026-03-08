@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Commands;
+using MacroTools.ControlPoints;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -55,7 +56,7 @@ public sealed class CheatGod : Command
       {
         @event.Damage = 0;
       }
-      else if (IsCheatActive(@event.DamageSource.Owner))
+      else if (IsCheatActive(@event.DamageSource.Owner) && !@event.DamageTarget.IsControlPoint())
       {
         @event.Damage *= 100;
       }
