@@ -21,7 +21,7 @@ public sealed class QuestScarletCrusade : QuestData
   private readonly unit _tyrsHand;
   private readonly LegendaryHero _saiden;
   private readonly List<unit> _rescueUnits;
-  private const int StartingGold = 300;
+  private const int StartingGold = 1000;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
