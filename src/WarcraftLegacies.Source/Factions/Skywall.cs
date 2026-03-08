@@ -24,7 +24,12 @@ public sealed class Skywall : Faction
   {
     ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 100,
+      Turns = 10
+    };
     IntroText = $"You are playing as the {PrefixCol}Elementals of Skywall|r.\n\n" +
                 "At the start, clear Uldum and take control of Tanaris.\n\n" +
                 "Coordinate with your Qiraji ally to push back the Horde before the Druids can intervene.\n\n" +

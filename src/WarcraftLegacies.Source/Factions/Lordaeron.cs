@@ -23,7 +23,12 @@ public sealed class Lordaeron : Faction
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 220,
+      Turns = 10
+    };
     UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;
     CinematicMusic = "Comradeship";
     ControlPointDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON;

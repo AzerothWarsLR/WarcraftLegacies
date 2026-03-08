@@ -19,7 +19,12 @@ public sealed class Sunfury : Faction
     : base("Sunfury", playercolor.Violet, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 240,
+      Turns = 10
+    };
     CinematicMusic = "BloodElfTheme";
     FoodMaximum = 250;
     ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;

@@ -12,9 +12,7 @@ public sealed class ScarletCrusade : Faction
   public ScarletCrusade() : base("Scarlet Crusade", playercolor.LightBlue,
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
-    StartingGold = 200;
     ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;
-
     Nicknames = new List<string>
     {
       "sc",

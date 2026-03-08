@@ -24,7 +24,12 @@ public sealed class Legion : Faction
   {
     TraditionalTeam = TeamSetup.Legion;
     UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 240,
+      Turns = 10
+    };
     FoodMaximum = 250;
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;

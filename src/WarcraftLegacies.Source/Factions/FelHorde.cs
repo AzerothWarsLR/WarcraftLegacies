@@ -17,7 +17,12 @@ public sealed class FelHorde : Faction
   {
     TraditionalTeam = TeamSetup.Outland;
     UndefeatedResearch = UPGRADE_R05L_FEL_HORDE_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 200,
+      Turns = 10
+    };
     CinematicMusic = "Doom";
     ControlPointDefenderUnitTypeId = UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL;
     IntroText = IntroText = $"You are playing as the bloodthirsty {PrefixCol}Fel Horde|r.\n\n" +

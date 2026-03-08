@@ -22,7 +22,12 @@ public sealed class Sentinels : Faction
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     UndefeatedResearch = UPGRADE_R05Y_SENTINELS_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 160,
+      Turns = 10
+    };
     CinematicMusic = "Comradeship";
     ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
     IntroText = $"You are playing as the ever-watchful {PrefixCol}Sentinels|r.\n\n" +

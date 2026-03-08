@@ -20,7 +20,12 @@ public sealed class Kultiras : Faction
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _proudmooreCapitalShip = AllPreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 100,
+      Turns = 10
+    };
     ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
     IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
                 "You begin on Balor Island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar, and Stormsong Valley.\n\n" +

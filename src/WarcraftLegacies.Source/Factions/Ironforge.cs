@@ -21,7 +21,12 @@ public sealed class Ironforge : Faction
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     UndefeatedResearch = UPGRADE_R05T_IRONFORGE_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 140,
+      Turns = 10
+    };
     CinematicMusic = "PursuitTheme";
     ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
     IntroText = $"You are playing as the long-enduring {PrefixCol}Kingdom of Ironforge |r.\n\n" +

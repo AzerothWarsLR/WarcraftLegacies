@@ -26,7 +26,12 @@ public sealed class Warsong : Faction
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     UndefeatedResearch = UPGRADE_R05W_WARSONG_EXISTS;
-    StartingGold = 200;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 130,
+      Turns = 10
+    };
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;
     IntroText = $"You are playing as the fierce and relentless {PrefixCol}Warsong Clan|r.\n\n" +
