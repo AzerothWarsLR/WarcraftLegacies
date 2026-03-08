@@ -26,7 +26,7 @@ public static class ControlPointDefenderManager
   public static void Initialize(ControlPointManager controlPointManager, ControlPointDefenderSettings controlPointSettings)
   {
     _settings = controlPointSettings;
-    controlPointManager.ControlPointCreated += (_, controlPoint) =>
+    controlPointManager.ControlPointCreated += controlPoint =>
     {
       if (controlPoint.UseControlLevels)
       {
