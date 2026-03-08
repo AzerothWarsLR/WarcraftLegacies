@@ -71,7 +71,7 @@ public abstract class Faction
   public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
   /// <summary>How much gold the faction starts with.</summary>
-  public int StartingGold { get; protected init; }
+  public StartingGold StartingGold { get; protected init; }
 
   /// <summary>Players with this faction will become this color.</summary>
   public playercolor PlayerColor { get; }
