@@ -30,7 +30,6 @@ public static class GameSetup
     FactionManager.Setup();
     UnitTypeSetup.Setup();
     SaveManager.Initialize();
-    KeyboardSetup.InitializeKeyboard();
     DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
