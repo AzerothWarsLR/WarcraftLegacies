@@ -131,7 +131,7 @@ public static class OrderIds
   public const int ORDER_FLARE = 852060;
   public const int ORDER_FORCE_BOARD = 852044;
   public const int ORDER_FORCE_OF_NATURE = 852176;
-  public const int ORDER_FORKED_LIGHTNING = 852586;
+  public const int ORDER_FORKED_LIGHTNING = 852587;
   public const int ORDER_FREEZING_BREATH = 852195;
   public const int ORDER_FRENZY = 852561;
   public const int ORDER_FRENZY_OFF = 852563;
