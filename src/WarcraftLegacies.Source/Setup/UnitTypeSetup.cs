@@ -13,6 +13,7 @@ public static class UnitTypeSetup
     SubSetupGatesA();
     SubSetupGatesB();
     SubSetupGoblinMerchant();
+    SubSetupOldGods();
   }
 
   private static void SubSetupFactionConfig()
@@ -147,6 +148,18 @@ public static class UnitTypeSetup
   private static void SubSetupGoblinMerchant()
   {
     UnitType.Register(new UnitType(FourCC("ngol"))
+    {
+      NeverDelete = true
+    });
+  }
+
+  private static void SubSetupOldGods()
+  {
+    UnitType.Register(new UnitType(UNIT_U00R_OLD_GOD_CTHUN)
+    {
+      NeverDelete = true
+    });
+    UnitType.Register(new UnitType(UNIT_U01Z_OLD_GOD_NZOTH)
     {
       NeverDelete = true
     });

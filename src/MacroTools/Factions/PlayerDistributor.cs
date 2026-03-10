@@ -115,8 +115,15 @@ public static class PlayerDistributor
         continue;
       }
 
+      var isRemovable = unit.IsRemovable();
       if (unit.IsUnitType(unittype.Hero))
       {
+        if (!isRemovable)
+        {
+          unit.SetOwner(player.NeutralVictim);
+          continue;
+        }
+
         refund.Gold += HeroCost;
         refund.Experience += unit.Experience;
         if (LegendaryHeroManager.GetFromUnit(unit) != null)
@@ -130,12 +137,11 @@ public static class PlayerDistributor
         continue;
       }
 
-      if (unit.IsRemovable())
+      if (isRemovable)
       {
         if (!unit.IsUnitType(unittype.Structure))
         {
-          // TODO: Replace with unit.GoldCost once upgraded to WCSharp 3.3.0+
-          refund.Gold += unit.GoldCostOf(unit.UnitType) * RefundMultiplier;
+          refund.Gold += unit.GoldCost * RefundMultiplier;
         }
 
         unit.DropAllItems();
