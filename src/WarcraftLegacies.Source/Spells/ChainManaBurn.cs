@@ -104,6 +104,8 @@ public sealed class ChainManaBurn : Spell
            target.Alive &&
            !target.IsInvulnerable &&
            !target.IsUnitType(unittype.Mechanical) &&
-           !target.IsABuilding;
+           !target.IsABuilding &&
+           !target.IsUnitType(unittype.MagicImmune) &&
+           !target.IsUnitType(unittype.Mechanical);
   }
 }
