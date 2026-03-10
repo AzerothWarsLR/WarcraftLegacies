@@ -97,12 +97,12 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "Doodads\\Ashenvale\\Structures\\Worldtree\\Worldtree.mdl"
+      "Value": "war3mapImported/WorldTree.mdl"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.35
+      "Value": 3
     },
     {
       "Id": 1835101813,
