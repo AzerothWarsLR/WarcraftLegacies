@@ -15,8 +15,6 @@ public static class MapMigrationProvider
       new UnitTooltipExtendedMigration(),
       new UnitTooltipBasicMigration(),
       new PortraitModelFileMapMigration(),
-      new ResistantSkinCasterMigration(),
-      new DiagnosticAbilityFieldDumpMigration(),
       new HeroPriorityMigration()
     };
   }
