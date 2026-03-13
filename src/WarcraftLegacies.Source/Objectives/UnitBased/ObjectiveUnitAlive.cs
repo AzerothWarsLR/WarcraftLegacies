@@ -1,4 +1,5 @@
 ﻿using MacroTools.Quests;
+using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -17,8 +18,9 @@ public sealed class ObjectiveUnitAlive : Objective
       ? $"{whichUnit.Name} is intact"
       : $"{whichUnit.Name} is alive";
     Progress = QuestProgress.Complete;
-    var deathTrigger = trigger.Create();
-    deathTrigger.RegisterUnitEvent(whichUnit, unitevent.Death);
-    deathTrigger.AddAction(() => { Progress = QuestProgress.Failed; });
+    PlayerUnitEvents.Register(UnitEvent.Dies, () =>
+    {
+      Progress = QuestProgress.Failed;
+    }, whichUnit);
   }
 }

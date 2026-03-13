@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
+using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.ControlPointBased;
 
@@ -77,13 +78,10 @@ public sealed class ObjectiveControlPoint : Objective
     foreach (var unit in unitsNearby)
     {
       _maxKillCount++;
-      var killTrigger = trigger.Create();
-      killTrigger.RegisterUnitEvent(unit, unitevent.Death);
-      killTrigger.AddAction(() =>
+      PlayerUnitEvents.Register(UnitEvent.Dies, () =>
       {
         CurrentKillCount++;
-        @event.Trigger.Dispose();
-      });
+      }, unit);
     }
   }
 }
