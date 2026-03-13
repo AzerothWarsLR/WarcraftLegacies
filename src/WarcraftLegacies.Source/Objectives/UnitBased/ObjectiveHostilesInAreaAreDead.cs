@@ -2,7 +2,6 @@
 using System.Linq;
 using MacroTools.Quests;
 using MacroTools.Utils;
-using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
@@ -50,7 +49,7 @@ public sealed class ObjectiveHostilesInAreaAreDead : Objective
       foreach (var unit in unitsInAreas)
       {
         _maxKillCount++;
-        PlayerUnitEvents.Register(UnitEvent.Dies, () =>
+        PlayerUnitEventsHelper.RegisterDiesOrChangesOwnerOnce(() =>
         {
           CurrentKillCount++;
         }, unit);
