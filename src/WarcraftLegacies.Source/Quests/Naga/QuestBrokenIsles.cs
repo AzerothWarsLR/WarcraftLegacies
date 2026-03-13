@@ -19,7 +19,7 @@ public sealed class QuestBrokenIsles : QuestData
     "With Outland now under Illidan's command, the Demon Hunter has returned to the Broken Isles in search of a legendary demonic artifact: the Eye of the Dark Titan, Sargeras.",
     @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp")
   {
-    AddObjective(new ObjectiveKillUnitsInRects(new List<Rectangle>
+    AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle>
     {
       Regions.BrokenIslesA,
       Regions.BrokenIslesB
