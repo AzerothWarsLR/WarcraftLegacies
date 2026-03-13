@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Quests;
-using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -14,7 +13,7 @@ public sealed class ObjectiveKillUnit : Objective
   /// </summary>
   public ObjectiveKillUnit(unit unitToKill)
   {
-    PlayerUnitEvents.Register(UnitEvent.Dies, OnUnitDeath, unitToKill);
+    PlayerUnitEventsHelper.RegisterDiesOrChangesOwner(OnUnitDeath, unitToKill);
     Target = unitToKill;
     TargetWidget = Target;
     InitializeDescription();
