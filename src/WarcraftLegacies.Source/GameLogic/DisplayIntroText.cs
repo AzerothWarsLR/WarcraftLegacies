@@ -35,9 +35,8 @@ public static class DisplayIntroText
     {
       player.DisplayTimedTextTo(displayTime - 1, @"|cffffcc00Warcraft Legacies|r
   |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
-  |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
 
-  If you are a new player, look at the Quest (F9) tab to see your objectives
+  If you are a new player, look at the Quest (F9) tab to see your objectives.
   ");
     }
   }
