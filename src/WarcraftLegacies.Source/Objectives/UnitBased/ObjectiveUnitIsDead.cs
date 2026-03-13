@@ -1,4 +1,5 @@
 ﻿using MacroTools.Quests;
+using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -23,13 +24,11 @@ public sealed class ObjectiveUnitIsDead : Objective
   /// <param name="unitToKill"></param>
   public ObjectiveUnitIsDead(unit unitToKill)
   {
-    var deathTrigger = trigger.Create();
-    deathTrigger.RegisterUnitEvent(unitToKill, unitevent.Death);
-    deathTrigger.AddAction(() =>
+    PlayerUnitEvents.Register(UnitEvent.Dies, () =>
     {
       KillingUnit = @event.KillingUnit;
       Progress = QuestProgress.Complete;
-    });
+    }, unitToKill);
     Target = unitToKill;
     TargetWidget = Target;
     InitializeDescription();

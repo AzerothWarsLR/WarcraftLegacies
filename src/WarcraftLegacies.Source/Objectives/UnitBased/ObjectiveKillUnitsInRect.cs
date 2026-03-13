@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Quests;
 using MacroTools.Utils;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
@@ -53,13 +54,11 @@ public sealed class ObjectiveKillUnitsInRects : Objective
       foreach (var unit in unitsNearby)
       {
         _maxKillCount++;
-        var killTrigger = trigger.Create();
-        killTrigger.RegisterUnitEvent(unit, unitevent.Death);
-        killTrigger.AddAction(() =>
+        PlayerUnitEvents.Register(UnitEvent.Dies, () =>
         {
           CurrentKillCount++;
           @event.Trigger.Dispose();
-        });
+        }, unit);
       }
     }
   }
