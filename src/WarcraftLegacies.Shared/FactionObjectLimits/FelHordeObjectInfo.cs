@@ -49,6 +49,7 @@ public static class FelHordeObjectInfo
     yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
     yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
 
+    yield return new(UNIT_N05T_KAZZAK_THE_SUPREME_FEL_DEMI, 1, new List<UnitCategory> { Fighter, Support, AntiMage });
     yield return new(UNIT_N03D_WARCHIEF_OF_THE_FEL_HORDE_FEL, 1, new List<UnitCategory> { Fighter, Support });
     yield return new(UNIT_NBBC_WARCHIEF_OF_THE_BLACKROCK_CLAN_FEL, 1, new List<UnitCategory> { Fighter, Support, Assassin });
     yield return new(UNIT_U02D_DEATH_KNIGHT_LORD_FEL_HORDE, 1, Support);
