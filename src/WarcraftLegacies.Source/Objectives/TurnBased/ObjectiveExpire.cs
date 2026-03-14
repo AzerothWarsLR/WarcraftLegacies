@@ -44,7 +44,7 @@ public sealed class ObjectiveExpire : Objective
 
   private void OnWarning()
   {
-    if (Progress != QuestProgress.Complete)
+    if (Progress == QuestProgress.Complete)
     {
       return;
     }
