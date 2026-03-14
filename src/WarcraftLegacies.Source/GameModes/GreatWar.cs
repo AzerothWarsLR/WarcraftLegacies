@@ -16,4 +16,7 @@ public sealed class GreatWar : IGameMode
     this.SetupGreatWarTeams()
       .SetupAllianceCommands();
   }
+
+  /// <inheritdoc />
+  public int VoteOffset => -4;
 }

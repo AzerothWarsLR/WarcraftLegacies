@@ -14,4 +14,7 @@ public sealed class ClosedAlliance : IGameMode
       .SetupControlPointVictory()
       .SetupUnallyCommand();
   }
+
+  /// <inheritdoc />
+  public int VoteOffset => 0;
 }
