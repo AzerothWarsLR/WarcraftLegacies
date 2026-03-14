@@ -92,6 +92,7 @@ public sealed class GameModeManager
     public GameModeVote(IGameMode gameMode)
     {
       GameMode = gameMode;
+      VoteCount = gameMode.VoteOffset;
     }
   }
 }

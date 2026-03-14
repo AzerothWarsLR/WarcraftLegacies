@@ -14,4 +14,7 @@ public sealed class OpenAlliance : IGameMode
       .SetupAllianceCommands()
       .SetupControlPointVictory();
   }
+
+  /// <inheritdoc />
+  public int VoteOffset => 0;
 }
