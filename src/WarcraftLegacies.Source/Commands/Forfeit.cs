@@ -39,7 +39,7 @@ public sealed class Forfeit : Command
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.ScoreStatusChanged += _ => OnFactionScoreStatusChanged(faction);
-     };
+      }
     }
     catch (Exception ex)
     {
