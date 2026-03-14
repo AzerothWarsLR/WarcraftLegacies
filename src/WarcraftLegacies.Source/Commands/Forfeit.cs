@@ -21,8 +21,6 @@ public sealed class Forfeit : Command
   public override ExpectedParameterCount ExpectedParameterCount => new(0);
   public override CommandType Type => CommandType.Normal;
   public override string Description => "Vote to forfeit the game.";
-
-
   public override void OnRegister()
   {
     try
@@ -41,15 +39,13 @@ public sealed class Forfeit : Command
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.ScoreStatusChanged += _ => OnFactionScoreStatusChanged(faction);
-      };
+     };
     }
     catch (Exception ex)
     {
       Console.WriteLine("wow an error.");
     }
   }
-
-
   /// <summary>
   /// Gets Called when a factions score status changes aka -obs
   /// </summary>
@@ -73,7 +69,7 @@ public sealed class Forfeit : Command
     var team = leavingPlayer.GetPlayerData().Team;
     if (team == null)
     {
-      return;   
+      return;
     }
     if (!_ffVotesByTeam.TryGetValue(team, out var votes))
     {
