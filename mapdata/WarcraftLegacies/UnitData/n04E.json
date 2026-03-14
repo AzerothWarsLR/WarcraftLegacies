@@ -24,6 +24,11 @@
       "Value": 30
     },
     {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
       "Id": 1835101813,
       "Type": 3,
       "Value": "NzothTentacle"

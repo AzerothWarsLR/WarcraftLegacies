@@ -97,6 +97,16 @@
       "Value": 2.333
     },
     {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,enemies,ground,nonancient,structure,ward"
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Summoner)"
