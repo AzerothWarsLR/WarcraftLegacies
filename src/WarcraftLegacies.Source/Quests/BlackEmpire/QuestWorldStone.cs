@@ -27,7 +27,7 @@ public sealed class QuestWorldStone : QuestData
     @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
     _nzoth = nzoth;
-    AddObjective(new ObjectiveControlPoint(UNIT_N03M_THUNDERBLUFF));
+    AddObjective(new ObjectiveControlPoint(UNIT_N03M_THUNDERBLUFF, 0));
     AddObjective(new ObjectiveKillUnit(orgrimmar.Unit));
   }
 
