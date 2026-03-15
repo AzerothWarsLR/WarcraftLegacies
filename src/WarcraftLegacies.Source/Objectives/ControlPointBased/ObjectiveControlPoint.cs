@@ -77,7 +77,7 @@ public sealed class ObjectiveControlPoint : Objective
     foreach (var unit in unitsNearby)
     {
       _maxKillCount++;
-      PlayerUnitEventsHelper.RegisterDiesOrChangesOwner(() =>
+      PlayerUnitEventsHelper.RegisterDiesOrChangesOwnerOnce(() =>
       {
         CurrentKillCount++;
       }, unit);

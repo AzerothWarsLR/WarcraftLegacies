@@ -11,13 +11,21 @@ namespace WarcraftLegacies.Source.Objectives;
 public static class PlayerUnitEventsHelper
 {
   /// <summary>
-  /// Registers <see cref="action"/> to fire when the specified unit either dies or changes owner.
+  /// Registers <see cref="action"/> to fire when the specified unit either dies or changes owner. The action only
+  /// occurs once in the entire game.
   /// <remarks>Changing owner usually indicates that the unit has been Charmed or Possessed, which can be seen as
   /// equivalent to killing the unit within the framing of a map objective.</remarks>
   /// </summary>
-  public static void RegisterDiesOrChangesOwner(Action action, unit unit)
+  public static void RegisterDiesOrChangesOwnerOnce(Action action, unit unit)
   {
-    PlayerUnitEvents.Register(UnitEvent.Dies, action, unit);
-    PlayerUnitEvents.Register(UnitEvent.ChangesOwner, action, unit);
+    Action? actionWithUnregister = null;
+    actionWithUnregister = () =>
+    {
+      action();
+      PlayerUnitEvents.Unregister(UnitEvent.Dies, actionWithUnregister, unit);
+      PlayerUnitEvents.Unregister(UnitEvent.ChangesOwner, actionWithUnregister, unit);
+    };
+    PlayerUnitEvents.Register(UnitEvent.Dies, actionWithUnregister, unit);
+    PlayerUnitEvents.Register(UnitEvent.ChangesOwner, actionWithUnregister, unit);
   }
 }

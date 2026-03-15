@@ -49,7 +49,7 @@ public sealed class ObjectiveHostilesInAreaAreDead : Objective
       foreach (var unit in unitsInAreas)
       {
         _maxKillCount++;
-        PlayerUnitEventsHelper.RegisterDiesOrChangesOwner(() =>
+        PlayerUnitEventsHelper.RegisterDiesOrChangesOwnerOnce(() =>
         {
           CurrentKillCount++;
         }, unit);

@@ -23,7 +23,7 @@ public sealed class ObjectiveUnitIsDead : Objective
   /// <param name="unitToKill"></param>
   public ObjectiveUnitIsDead(unit unitToKill)
   {
-    PlayerUnitEventsHelper.RegisterDiesOrChangesOwner(() =>
+    PlayerUnitEventsHelper.RegisterDiesOrChangesOwnerOnce(() =>
     {
       KillingUnit = @event.KillingUnit;
       Progress = QuestProgress.Complete;
