@@ -3,7 +3,8 @@ using MacroTools.Artifacts;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.GameLogic;
-using WarcraftLegacies.Source.Quests;
+using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Shared.Quests;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup;

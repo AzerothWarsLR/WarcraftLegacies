@@ -1,0 +1,48 @@
+﻿using MacroTools.Factions;
+using MacroTools.Legends;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Factions.ScarletCrusade.Quests;
+
+/// <summary>
+/// Rebuild Brill to buff Renault.
+/// </summary>
+public sealed class QuestRebuildBrill : QuestData
+{
+  private readonly LegendaryHero _renault;
+  private const int ExperienceReward = 6000;
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="QuestRebuildBrill"/> class.
+  /// </summary>
+  public QuestRebuildBrill(Rectangle questRect, LegendaryHero renault) : base(
+    "Brill",
+    "The desolated village of Brill was once the hometown of Renault Mograine. Though insignificant in the grand scheme of things, the Crusade cares for its members.",
+    @"ReplaceableTextures\CommandButtons\BTNStromgardeFarm.blp")
+  {
+
+    AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Brill", 4));
+    AddObjective(new ObjectiveControlLevel(UNIT_N03H_BRILL, 2));
+    _renault = renault;
+  }
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction whichFaction)
+  {
+    if (_renault.Unit != null)
+    {
+      AddHeroXP(_renault.Unit, ExperienceReward, true);
+    }
+  }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour =>
+    "Nobody had noticed, but until now Renault has been somewhat reserved in his actions. With his hometown now reclaimed, he shines with a new vigour.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription =>
+    $"Renault gains {ExperienceReward} experience";
+}
