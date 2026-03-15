@@ -1,0 +1,34 @@
+﻿using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Factions.ScarletCrusade.Quests;
+
+/// <summary>
+/// Rebuild Andhoral to buff your air units
+/// </summary>
+public sealed class QuestRebuildAndorhal : QuestData
+{
+  /// <summary>
+  /// Initializes a new instance of the <see cref="QuestRebuildAndorhal"/> class.
+  /// </summary>
+  public QuestRebuildAndorhal(Rectangle questRect) : base(
+    "Andorhal",
+    "Once the breadbasket of Lordaeron, Andorhal is now nothing but ashes. Were it to be rebuilt, its proximity to Aerie Peak would allow the Scarlet Crusade to breed powerful Eagles and Gryphons.",
+    @"ReplaceableTextures\CommandButtons\BTNAlteracGryphonAviary.blp")
+  {
+
+    AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Andorhal", 5));
+    AddObjective(new ObjectiveControlLevel(UNIT_N01H_ANDORHAL, 2));
+    ResearchId = UPGRADE_R03P_QUEST_COMPLETED_ANDORHAL;
+  }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour =>
+    "Survivors from Lordaeron's fall are once more pouring into Andorhal. Eagles and Gryphons from Aerie Peak soar down to the renewed agricultural center to enjoy its renewed production.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription =>
+    $"Your {GetObjectName(UNIT_O06V_EAGLE_RIDER_SCARLET)}s and {GetObjectName(UNIT_E01L_GRYPHON_MARKSMAN_SCARLET)} gain 400 hit points";
+}
