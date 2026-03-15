@@ -9,10 +9,12 @@ using MacroTools.UnitNames;
 using MacroTools.UnitTraits;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
+using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Patrons;
+using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
 
 namespace WarcraftLegacies.Source.Setup;
