@@ -1,0 +1,28 @@
+﻿using MacroTools.Factions;
+using MacroTools.Legends;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+
+namespace WarcraftLegacies.Source.Factions.Legion.Quests;
+
+public sealed class QuestControlShadowfang : QuestData
+{
+  public QuestControlShadowfang(Capital shadowfang) : base("The Dark Manor",
+    "The Legion will need a hidden stronghold to house a demon gate, the Shadowfang Keep is perfectly out of the way for the role.",
+    @"ReplaceableTextures\CommandButtons\BTNKeep.blp")
+  {
+    AddObjective(new ObjectiveControlCapital(shadowfang, false));
+  }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Shadowfang Keep is now under the Legion control. A secret demon gate has now been formed inside.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => $"Learn to train troops from Shadowfang Keep, and learn to build 1 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)}";
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction whichFaction)
+  {
+    whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 4);
+  }
+}

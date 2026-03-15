@@ -1,0 +1,230 @@
+﻿using System.Collections.Generic;
+using MacroTools.Dialogues;
+using MacroTools.Extensions;
+using MacroTools.Factions;
+using MacroTools.PreplacedWidgets;
+using MacroTools.Quests;
+using MacroTools.Researches;
+using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Dalaran;
+using WarcraftLegacies.Source.Factions.Druids;
+using WarcraftLegacies.Source.Factions.Frostwolf;
+using WarcraftLegacies.Source.Factions.Illidari;
+using WarcraftLegacies.Source.Factions.Legion.Powers;
+using WarcraftLegacies.Source.Factions.Legion.Quests;
+using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
+using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Shared.Researches;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Factions.Legion;
+
+public sealed class LegionLegends : Faction
+{
+  /// <inheritdoc />
+  public LegionLegends() : base("Legion",
+    playercolor.Peanut, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
+  {
+    TraditionalTeam = TeamSetup.Legion;
+    UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 240,
+      Turns = 10
+    };
+    FoodMaximum = 250;
+    CinematicMusic = "DarkAgents";
+    ControlPointDefenderUnitTypeId = UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;
+    IntroText = $"You are playing as the mighty {PrefixCol}Burning Legion|r.\n\n" +
+                "You begin isolated on Argus. Once the planet is under your control, you will unlock two teleporters to Northrend and Alterac.\n\n" +
+                "On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran, and Quel'Thalas.\n\n" +
+                "Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the Book of Medivh is kept, and use it to open the Demon-gate to Argus.";
+    Nicknames = new List<string>
+    {
+      "leg",
+      "demon",
+      "demons",
+      "argus"
+    };
+    RegisterFactionDependentInitializer<DalaranFaction>(RegisterDalaranDialogue);
+    RegisterFactionDependentInitializer<IllidariFaction>(RegisterIllidariDialogue);
+    RegisterFactionDependentInitializer<FrostwolfFaction>(RegisterFrostwolfDialogue);
+    RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
+    RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeQuests);
+    RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsRelatedQuestsAndDialogue);
+    ProcessObjectInfo(LegionObjectInfo.GetAllObjectLimits());
+  }
+
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    RegisterQuests();
+    RegisterResearches();
+    RegisterDialogue();
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
+
+  private void RegisterQuests()
+  {
+    var newQuest = AddQuest(new QuestArgusControl());
+    StartingQuest = newQuest;
+    AddQuest(new QuestControlMonastery(AllLegends.Lordaeron.Monastery));
+    AddQuest(new QuestControlSpire(AllLegends.Quelthalas.Spire));
+    AddQuest(new QuestControlShadowfang(AllLegends.Dalaran.Shadowfang));
+    AddQuest(new QuestLegionCaptureSunwell(AllLegends.Quelthalas.Sunwell));
+    AddQuest(new QuestLegionKillLordaeron(AllLegends.Lordaeron.CapitalPalace,
+      AllLegends.Lordaeron.Stratholme, AllLegends.Legion.Tichondrius));
+    AddQuest(new QuestSummonLegion(Regions.TwistingNether,
+      AllPreplacedWidgets.Units.Get(UNIT_N03C_DEMON_PORTAL_LEGION), AllLegends.Legion.Anetheron)); ;
+  }
+
+  private static void RegisterResearches()
+  {
+    ResearchManager.Register(new PowerResearch(UPGRADE_R096_REMATERIALIZATION_LEGION, 150,
+      new Rematerialization(0.2f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
+      {
+        IconName = "achievement_raid_argusraid",
+        Name = "Rematerialization",
+        EligibilityCondition = dyingUnit => dyingUnit.Owner.GetPlayerData().GetObjectLimit(dyingUnit.UnitType) != 0
+      }));
+  }
+
+  private void RegisterDialogue()
+  {
+    TriggeredDialogueManager.Add(new TriggeredDialogue(new Dialogue(
+      @"Sound\Dialogue\UndeadCampaign\Undead08\U08Archimonde19.flac",
+      "Tremble, mortals, and despair! Doom has come to this world!", "Archimonde"), new Faction[]
+    {
+      this
+    }, new Objective[]
+    {
+      new ObjectiveQuestComplete(GetQuestByType<QuestSummonLegion>())
+      {
+        EligibleFactions = new List<Faction>
+        {
+          this
+        }
+      }
+    }));
+  }
+
+  private void RegisterDalaranDialogue(DalaranFaction dalaran)
+  {
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new DialogueSequence(
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
+          "You are very brave to stand against me, little human. If only your countrymen had been as bold, I would have had more fun scouring your wretched nations from the world!",
+          "Archimonde"),
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Jaina22.flac",
+          "Is talking all you demons do?",
+          "Jaina Proudmoore")
+      )
+      , new Faction[]
+      {
+        this,
+        dalaran
+      }, new List<Objective>
+      {
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Dalaran.Jaina)
+      }
+    ));
+  }
+
+  private void RegisterIllidariDialogue(IllidariFaction illidari)
+  {
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new DialogueSequence(
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Tichondrius21.flac",
+          "What? Who are... you?",
+          "Tichondrius"),
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan22.flac",
+          "Let's see how confident you are against one of your own kind, dreadlord!",
+          "Illidan Stormrage"),
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Tichondrius20.flac",
+          "I'm through toying with you, night elf! Begone from my sight!",
+          "Tichondrius")
+      )
+      , new Faction[]
+      {
+        this,
+        illidari
+      }, new List<Objective>
+      {
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Tichondrius, AllLegends.Naga.Illidan)
+      }
+    ));
+  }
+
+  private void RegisterFrostwolfDialogue(FrostwolfFaction frostwolf)
+  {
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new DialogueSequence(
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde14.flac",
+          "You orcs are weak, and hardly worth the effort. I wonder why Mannoroth even bothered with you.",
+          "Archimonde"),
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Thrall15.flac",
+          "Our spirit is stronger than you know, demon! If we are to fall, then so be it! At least now... we are free!",
+          "Thrall")
+      )
+      , new Faction[]
+      {
+        this,
+        frostwolf
+      }, new List<Objective>
+      {
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Frostwolf.Thrall)
+      }
+    ));
+  }
+
+  private void RegisterScourgeDialogue(ScourgeFaction scourge)
+  {
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new DialogueSequence(
+        new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06Archimonde22.flac",
+          "You called my name, puny lich, and I have come. You are Kel'Thuzad, are you not?",
+          "Archimonde"),
+        new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06Kelthuzad23.flac",
+          "Yes, great one. I am the summoner.",
+          "Kel'thuzad")
+      ), new Faction[]
+      {
+        this,
+        scourge
+      }, new List<Objective>
+      {
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Scourge.Kelthuzad)
+      }
+    ));
+  }
+
+  private void RegisterScourgeQuests(ScourgeFaction scourge)
+  {
+    AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge, AllLegends.Legion.Malganis));
+  }
+
+  private void RegisterDruidsRelatedQuestsAndDialogue(DruidsFaction druids)
+  {
+    var questConsumeTree = AddQuest(new QuestConsumeTree(AllLegends.Legion.Archimonde, druids));
+
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",
+        "At last, the way to the World Tree is clear! Witness the end, you mortals! The final hour has come.",
+        "Archimonde")
+      , null, new List<Objective>
+      {
+        new ObjectiveQuestComplete(questConsumeTree)
+        {
+          EligibleFactions = new List<Faction>
+          {
+            this
+          }
+        }
+      }
+    ));
+  }
+}

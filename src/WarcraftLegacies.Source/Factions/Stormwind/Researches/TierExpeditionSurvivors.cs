@@ -1,0 +1,19 @@
+﻿using MacroTools.Extensions;
+using MacroTools.Factions;
+using WCSharp.Events;
+
+namespace WarcraftLegacies.Source.Factions.Stormwind.Researches;
+
+public static class TierExpeditionSurvivors
+{
+  private static void Research()
+  {
+    @event.Player.GetPlayerData().Faction?.ModObjectLimit(UNIT_H00A_SPEARMAN_STORMWIND, -Faction.Unlimited);
+    @event.Player.GetPlayerData().Faction?.ModObjectLimit(UNIT_H05N_MARKSMAN_STORMWIND, Faction.Unlimited);
+  }
+
+  public static void Setup()
+  {
+    PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, UPGRADE_R031_EXPEDITION_SURVIVORS_ARATHOR_T3);
+  }
+}

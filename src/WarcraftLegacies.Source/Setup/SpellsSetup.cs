@@ -1,7 +1,24 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.Setup.Spells;
+using WarcraftLegacies.Source.Factions.Dalaran;
+using WarcraftLegacies.Source.Factions.Draenei;
+using WarcraftLegacies.Source.Factions.Druids;
+using WarcraftLegacies.Source.Factions.FelHorde;
+using WarcraftLegacies.Source.Factions.Frostwolf;
+using WarcraftLegacies.Source.Factions.Gilneas;
+using WarcraftLegacies.Source.Factions.Illidari;
+using WarcraftLegacies.Source.Factions.Ironforge;
+using WarcraftLegacies.Source.Factions.Kultiras;
+using WarcraftLegacies.Source.Factions.Legion;
+using WarcraftLegacies.Source.Factions.Lordaeron;
+using WarcraftLegacies.Source.Factions.Quelthalas;
+using WarcraftLegacies.Source.Factions.ScarletCrusade;
+using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Factions.Sentinels;
+using WarcraftLegacies.Source.Factions.Stormwind;
+using WarcraftLegacies.Source.Factions.Warsong;
+using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 
@@ -105,23 +122,23 @@ public static class SpellsSetup
       Target = InstantKill.KillTarget.Self
     });
 
-    FrostwolfSpellSetup.Setup();
-    LegionSpellSetup.Setup();
-    ScourgeSpellSetup.Setup();
-    LordaeronSpellSetup.Setup();
-    DruidsSpellSetup.Setup();
-    QuelthalasSpellSetup.Setup();
-    KulTirasSpellSetup.Setup();
-    StormwindSpellSetup.Setup();
-    IllidariSpellSetup.Setup();
-    FelHordeSpellSetup.Setup();
-    DraeneiSpellSetup.Setup();
-    WarsongSpellSetup.Setup();
-    IronforgeSpellSetup.Setup();
-    SentinelSpellSetup.Setup();
-    ScarletSpellSetup.Setup();
-    DalaranSpellSetup.Setup();
-    GilneasSpellSetup.Setup();
+    FrostwolfSpells.Setup();
+    LegionSpells.Setup();
+    ScourgeSpells.Setup();
+    LordaeronSpells.Setup();
+    DruidsSpells.Setup();
+    QuelthalasSpells.Setup();
+    KultirasSpells.Setup();
+    StormwindSpells.Setup();
+    IllidariSpells.Setup();
+    FelHordeSpells.Setup();
+    DraeneiSpells.Setup();
+    WarsongSpells.Setup();
+    IronforgeSpells.Setup();
+    SentinelsSpells.Setup();
+    ScarletSpells.Setup();
+    DalaranSpells.Setup();
+    GilneasSpells.Setup();
     SharedSpellSetup.Setup();
   }
 }
