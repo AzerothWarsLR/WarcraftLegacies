@@ -60,7 +60,7 @@ public sealed class SunfuryFaction : Faction
     };
     SpellRegistry.Register(massBanish);
 
-    var siphoningRitual = new SiphoningRitualSpell(ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
+    var siphoningRitual = new SiphoningRitual(ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
     {
       TargetCountBase = 24,
       TargetCountLevel = 0,

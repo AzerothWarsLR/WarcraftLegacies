@@ -150,7 +150,7 @@ public sealed class BlackEmpireFaction : Faction
     };
     SpellRegistry.Register(massBanish);
 
-    var siphoningRitual = new SiphoningRitualSpell(ABILITY_MD24_SIPHONING_RITUAL_BLACK_EMPIRE_ZON_OOZ)
+    var siphoningRitual = new SiphoningRitual(ABILITY_MD24_SIPHONING_RITUAL_BLACK_EMPIRE_ZON_OOZ)
     {
       TargetCountBase = 24,
       TargetCountLevel = 0,

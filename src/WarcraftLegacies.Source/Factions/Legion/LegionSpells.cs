@@ -67,7 +67,7 @@ public static class LegionSpells
 
 
 
-    var summonBurningLegion = new SummonLegionSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
+    var summonBurningLegion = new SummonLegion(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
       ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
     SpellRegistry.Register(summonBurningLegion);
 
