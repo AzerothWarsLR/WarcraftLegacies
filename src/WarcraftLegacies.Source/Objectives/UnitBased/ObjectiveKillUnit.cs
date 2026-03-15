@@ -13,7 +13,7 @@ public sealed class ObjectiveKillUnit : Objective
   /// </summary>
   public ObjectiveKillUnit(unit unitToKill)
   {
-    PlayerUnitEventsHelper.RegisterDiesOrChangesOwner(OnUnitDeath, unitToKill);
+    PlayerUnitEventsHelper.RegisterDiesOrChangesOwnerOnce(OnUnitDeath, unitToKill);
     Target = unitToKill;
     TargetWidget = Target;
     InitializeDescription();

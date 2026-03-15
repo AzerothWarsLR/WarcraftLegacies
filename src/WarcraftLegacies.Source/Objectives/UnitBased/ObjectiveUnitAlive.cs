@@ -17,7 +17,7 @@ public sealed class ObjectiveUnitAlive : Objective
       ? $"{whichUnit.Name} is intact"
       : $"{whichUnit.Name} is alive";
     Progress = QuestProgress.Complete;
-    PlayerUnitEventsHelper.RegisterDiesOrChangesOwner(() =>
+    PlayerUnitEventsHelper.RegisterDiesOrChangesOwnerOnce(() =>
     {
       Progress = QuestProgress.Failed;
     }, whichUnit);
