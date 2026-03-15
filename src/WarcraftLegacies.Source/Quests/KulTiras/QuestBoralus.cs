@@ -12,9 +12,6 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras;
 
-/// <summary>
-/// Tier 4 must be researched to unlock all units in the Boralus area.
-/// </summary>
 public sealed class QuestBoralus : QuestData
 {
   private readonly List<unit> _rescueUnits;
