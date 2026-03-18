@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
@@ -15,13 +14,13 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
   private bool _choiceExecuted;
 
   public UnlockShipDialogPresenter(player player, List<unit> rescueUnits, unit proudmooreCapitalShip)
-      : base(
-          new[]
-          {
-                  new UnlockShipChoice("Sail to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
-                  new UnlockShipChoice("Do Nothing", UnlockShipChoiceType.DoNothing)
-          },
-          "Choose What To Do With Your Troops")
+    : base(
+      new[]
+      {
+        new UnlockShipChoice("Sail to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
+        new UnlockShipChoice("Do Nothing", UnlockShipChoiceType.DoNothing)
+      },
+      "Choose What To Do With Your Troops")
   {
     _player = player;
     _rescueUnits = rescueUnits;
