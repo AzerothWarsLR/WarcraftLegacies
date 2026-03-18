@@ -34,7 +34,7 @@ public sealed class QuestArgusControl : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    "Learn to train Tichondrius and Anetheron from the Altar of Destruction, and to cast the Portal spells from the Legion Teleporter";
+    $"Enables training of Tichondrius and Anetheron from the Altar of Destruction, constructing {GetObjectName(UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST)} and to cast the Portal spells from the Legion Teleporter";
 
   /// <inheritdoc/>
   public override string RewardFlavour =>

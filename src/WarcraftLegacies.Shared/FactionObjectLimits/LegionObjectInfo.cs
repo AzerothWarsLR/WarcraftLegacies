@@ -19,8 +19,8 @@ public static class LegionObjectInfo
     yield return new(UNIT_U00E_SOUL_PRISON_LEGION_FARM, Unlimited, Farm);
     yield return new(UNIT_U01N_ALTAR_OF_DESTRUCTION_LEGION_ALTAR, Unlimited, Altar);
     yield return new(UNIT_U015_UNHOLY_RELIQUARY_LEGION_SHOP, Unlimited, Shop);
-    yield return new(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 3, Magic, limitIncreaseHint: "completing certain Quests");
-    yield return new(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 3, Barracks, limitIncreaseHint: "completing certain Quests");
+    yield return new(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, Unlimited, Magic);
+    yield return new(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_NDMG_DEMON_GATE_LEGION_SIEGE, Unlimited, Specialist);
 
