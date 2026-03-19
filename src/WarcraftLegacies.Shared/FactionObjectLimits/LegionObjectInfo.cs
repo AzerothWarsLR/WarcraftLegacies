@@ -56,7 +56,7 @@ public static class LegionObjectInfo
     yield return new(UPGRADE_R042_NATHREZIM_WARLOCK_ADEPT_TRAINING_LEGION, Unlimited);
     yield return new(UPGRADE_R027_EREDAR_SUMMONER_ADEPT_TRAINING_LEGION, Unlimited);
     yield return new(UPGRADE_R04G_IMPROVED_CARRION_SWARM_LEGION, Unlimited);
-    yield return new(UPGRADE_R03Z_WAR_PLATING_LEGION, Unlimited);
+    yield return new(UPGRADE_VP21_IMPROVED_HARDENED_BASE_UNIT, Unlimited);
     yield return new(UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
     yield return new(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE, 1);
     yield return new(UPGRADE_R03L_IMPROVED_HEAL_FEL_HORDE, 1);

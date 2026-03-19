@@ -51,7 +51,7 @@ public static class Regions
   public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9024f, 13696f, -4640f, 19040f);
   public static Rectangle BridgeAmbient { get; set; } = new Rectangle(15232f, -512f, 17856f, 896f);
   public static Rectangle Brill { get; set; } = new Rectangle(7776f, 10144f, 9792f, 11648f);
-  public static Rectangle BrokenIslesA { get; set; } = new Rectangle(-3680f, 3424f, 3648f, 8992f);
+  public static Rectangle BrokenIslesA { get; set; } = new Rectangle(-3680f, 2368f, 3648f, 8992f);
   public static Rectangle BrokenIslesB { get; set; } = new Rectangle(544f, 8960f, 3296f, 10368f);
   public static Rectangle BurningSteppeAmbient2 { get; set; } = new Rectangle(17952f, -14720f, 19872f, -9504f);
   public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);

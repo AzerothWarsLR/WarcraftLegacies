@@ -10,7 +10,7 @@ public static class LordaeronObjectInfo
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Unlimited, TownHall);
-    yield return new(UNIT_HKEE_LORDAERON_T2, Unlimited, Keep);
+    yield return new(UNIT_HKEE_KEEP_LORDAERON_T2, Unlimited, Keep);
     yield return new(UNIT_HCAS_CASTLE_LORDAERON_T3, Unlimited, TownHall);
     yield return new(UNIT_HHOU_FARM_LORDAERON_FARM, Unlimited, Farm);
     yield return new(UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR, Unlimited, Altar);
@@ -28,7 +28,7 @@ public static class LordaeronObjectInfo
     yield return new(UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE, Unlimited, SiegeWorkshop);
 
     yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, Worker);
-    yield return new(UNIT_HFOO_LORDAERON, Unlimited, Tank);
+    yield return new(UNIT_HFOO_FOOTMAN_LORDAERON, Unlimited, Tank);
     yield return new(UNIT_HKNI_KNIGHT_LORDAERON, Unlimited, Fighter);
     yield return new(UNIT_NCHP_MAGE_LORDAERON, Unlimited, Support);
     yield return new(UNIT_H00F_PALADIN_LORDAERON, 6, new List<UnitCategory> { Elite, Tank, Support });
