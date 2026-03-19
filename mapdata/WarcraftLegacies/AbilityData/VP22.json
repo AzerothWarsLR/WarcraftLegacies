@@ -1,0 +1,75 @@
+{
+  "OldId": 1802726977,
+  "NewId": 842158166,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1986358369,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829125459,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896234323,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879457107,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845902675,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hardened"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Limited Unit)"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CVP22,DataC2\u003E damage. Attacks cannot be reduced below \u003CVP22,DataB2\u003E damage."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CVP22,DataC1\u003E damage. Attacks cannot be reduced below \u003CVP22,DataB1\u003E damage."
+    }
+  ]
+}
