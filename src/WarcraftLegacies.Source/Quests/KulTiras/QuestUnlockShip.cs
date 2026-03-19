@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.FactionMechanics.KulTiras;
@@ -18,15 +19,10 @@ public sealed class QuestUnlockShip : QuestData
 {
   private readonly unit _proudmooreCapitalShip;
   private readonly List<unit> _rescueUnits;
-  private bool _questProcessed; // New field to prevent repeated execution
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestUnlockShip"/> class.
   /// </summary>
-  /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
-  /// <param name="proudmooreCapitalShip">Starts invulnerable and unusable and will be made usable and vulnerable when the quest is completed.</param>
-  /// <param name="daelinProudmoore">Must be controlled to complete the quest.</param>
-  /// <param name="prerequisite">Needs to be completed first.</param>
   public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip, LegendaryHero daelinProudmoore,
     QuestData prerequisite) : base("Stranglethorn Expedition",
     "The Stranglethorn vale is still infested with trolls and pirates. If peace is to be brought back to the South Alliance, it needs to be purged",
@@ -35,27 +31,23 @@ public sealed class QuestUnlockShip : QuestData
     AddObjective(new ObjectiveQuestComplete(prerequisite));
     AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
     AddObjective(new ObjectiveSelfExists());
+
     _proudmooreCapitalShip = proudmooreCapitalShip;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+
+    _proudmooreCapitalShip.Owner = player.NeutralPassive;
+    _proudmooreCapitalShip.SetPausedEx(true);
+    _proudmooreCapitalShip.IsInvulnerable = true;
   }
 
-  /// <inheritdoc/>
-  public override string RewardFlavour => "The capital ship will set sail with the Kul'tiran navy army to Stranglethorn Vale.";
+  public override string RewardFlavour =>
+    "The capital ship will set sail with the Kul'tiran navy army to Stranglethorn Vale.";
 
-  /// <inheritdoc/>
   protected override string RewardDescription =>
-    "Unlock the Proudmoore capital ship and the buildings inside. Move all your non-worker units to Stranglethorn Vale.";
+    "Unlock the Proudmoore capital ship and the buildings inside on turn 11. Move all your non-worker units to Stranglethorn Vale.";
 
-  /// <inheritdoc/>
-  /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    if (_questProcessed)
-    {
-      return;
-    }
-
-    _questProcessed = true;
     if (completingFaction.Player != null)
     {
       var dialogPresenter = new UnlockShipDialogPresenter(
@@ -65,38 +57,44 @@ public sealed class QuestUnlockShip : QuestData
       );
       dialogPresenter.Run(completingFaction.Player);
     }
+
+    TryUnlockShip(completingFaction);
+  }
+
+  private void TryUnlockShip(Faction completingFaction)
+  {
+    const int unlockTurn = 11;
+
+    if (GameTimeManager.Turn >= unlockTurn)
+    {
+      UnlockShipNow(completingFaction);
+    }
+    else
+    {
+      GameTimeManager.RegisterOnTurn(unlockTurn, () => UnlockShipNow(completingFaction));
+    }
+  }
+
+  private void UnlockShipNow(Faction completingFaction)
+  {
+    var owner = completingFaction.Player ?? player.NeutralAggressive;
+
+    if (completingFaction.Player != null)
+    {
+      completingFaction.Player.RescueGroup(_rescueUnits);
+    }
     else
     {
       player.NeutralVictim.RescueGroup(_rescueUnits);
-      _proudmooreCapitalShip.Rescue(player.NeutralAggressive);
     }
 
-    EnsureShipIsUnlocked(completingFaction);
-  }
-
-  private void EnsureShipIsUnlocked(Faction completingFaction)
-  {
-    if (completingFaction.Player != null)
-    {
-      _proudmooreCapitalShip.Rescue(completingFaction.Player);
-    }
-    else
-    {
-      _proudmooreCapitalShip.Rescue(player.NeutralAggressive);
-    }
-
+    _proudmooreCapitalShip.Rescue(owner);
     _proudmooreCapitalShip.SetPausedEx(false);
+    _proudmooreCapitalShip.IsInvulnerable = false;
   }
 
-  /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
-    if (_questProcessed)
-    {
-      return;
-    }
-
     _proudmooreCapitalShip.Dispose();
-    _questProcessed = true;
   }
 }

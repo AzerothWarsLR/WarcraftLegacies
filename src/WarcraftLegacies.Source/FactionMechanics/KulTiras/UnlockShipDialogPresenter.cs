@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
@@ -15,13 +14,13 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
   private bool _choiceExecuted;
 
   public UnlockShipDialogPresenter(player player, List<unit> rescueUnits, unit proudmooreCapitalShip)
-      : base(
-          new[]
-          {
-                  new UnlockShipChoice("Sail to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
-                  new UnlockShipChoice("Do Nothing", UnlockShipChoiceType.DoNothing)
-          },
-          "Choose What To Do With Your Troops")
+    : base(
+      new[]
+      {
+        new UnlockShipChoice("Sail to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
+        new UnlockShipChoice("Do Nothing", UnlockShipChoiceType.DoNothing)
+      },
+      "Choose What To Do With Your Troops")
   {
     _player = player;
     _rescueUnits = rescueUnits;
@@ -36,8 +35,6 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
     }
 
     _choiceExecuted = true;
-    _player.RescueGroup(_rescueUnits);
-
     if (choice.Type == UnlockShipChoiceType.TeleportTroops)
     {
       TeleportTroops(_player);
@@ -47,7 +44,7 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
   private static void TeleportTroops(player whichPlayer)
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds)
-                 .Where(x => x.Owner == whichPlayer))
+               .Where(x => x.Owner == whichPlayer))
     {
       if (!unit.IsUnitType(unittype.Structure) &&
           !unit.IsUnitType(unittype.Ancient) &&
@@ -58,6 +55,11 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
     }
 
     whichPlayer.RepositionCamera(6864, -17176);
+
+    const int workerId = UNIT_H01E_DECKHAND_KULTIRAS_WORKER;
+
+    unit.Create(whichPlayer, workerId, 6864 + 80, -17176, 0);
+    unit.Create(whichPlayer, workerId, 6864 - 80, -17176, 0);
   }
 
   protected override UnlockShipChoice GetDefaultChoice(player whichPlayer)
