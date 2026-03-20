@@ -2,7 +2,6 @@
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
-using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Illidari;
@@ -44,15 +43,6 @@ public static class IllidariSpells
       BlinkEffectPath = @"Abilities\Spells\NightElf\Blink\BlinkCaster.mdl"
     });
 
-    UnitTypeTraitRegistry.Register(new DamageMultiplierOnAttack(ABILITY_A0YV_CRIPPLING_STRIKE_AKAMA)
-    {
-      BaseUnitMultiplier = 1.4f,
-      LevelUnitMultiplier = 0.25f,
-      BaseHeroMultiplier = 1.2f,
-      LevelHeroMultiplier = 0.15f,
-      OnlyAttackDamage = true
-    }, UNIT_NAKA_ELDER_SAGE_ILLIDARI);
-
     SpellRegistry.Register(new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
     {
       AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA
@@ -69,23 +59,6 @@ public static class IllidariSpells
       BurnReductionPerBounce = 0.15f,
       MaximumBounceRadius = 500
     });
-
-    ItemTypeTraitRegistry.Register(new WarglaivesOfAzzinoth
-    {
-      Radius = 150,
-      DamageBase = 35,
-      DamageLevel = 0,
-      DamageMultiplierAgainstDemons = 1.2f,
-      Effect = @"war3mapImported\Culling Cleave.mdx",
-      EffectScale = 1.2f,
-      DamageType = damagetype.Magic
-    }, ITEM_I0WG_WARGLAIVES_OF_AZZINOTH);
-
-    UnitTypeTraitRegistry.Register(new Kingslayer
-    {
-      RequiredResearch = UPGRADE_YBPH_KINGSLAYER_ILLIDARI,
-      DamageBonus = 0.6f
-    }, UNIT_NDRN_DEATHSWORN_ILLIDARI);
 
     SpellRegistry.Register(new SplitHealingWave(ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER)
     {

@@ -7,7 +7,6 @@ using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Gilneas;
-using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -114,7 +113,6 @@ public static class SpellsSetup
 
     FrostwolfSpells.Setup();
     DruidsSpells.Setup();
-    IllidariSpells.Setup();
     FelHordeSpells.Setup();
     DraeneiSpells.Setup();
     DalaranSpells.Setup();

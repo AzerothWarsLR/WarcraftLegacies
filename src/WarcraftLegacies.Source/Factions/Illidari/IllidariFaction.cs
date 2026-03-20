@@ -65,6 +65,8 @@ public sealed class IllidariFaction : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterResearches();
+    IllidariSpells.Setup();
+    IllidariTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     ModAbilityAvailability(ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER, -1);
   }
