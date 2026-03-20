@@ -7,10 +7,10 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.ScarletCrusade;
 
-public sealed class ScarletCrusade : Faction
+public sealed class ScarletCrusadeFaction : Faction
 {
   /// <inheritdoc />
-  public ScarletCrusade() : base("Scarlet Crusade", playercolor.LightBlue,
+  public ScarletCrusadeFaction() : base("Scarlet Crusade", playercolor.LightBlue,
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
     ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;

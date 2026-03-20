@@ -6,6 +6,7 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
@@ -71,7 +72,7 @@ public sealed class QuestScarletCrusade : QuestData
 
   private void AssignScarletCrusadeFaction(Faction completingFaction)
   {
-    var scarletCrusade = new ScarletCrusade.ScarletCrusade();
+    var scarletCrusade = new ScarletCrusadeFaction();
     FactionManager.Register(scarletCrusade);
     scarletCrusade.CopyObjectLevelsFrom(completingFaction);
     if (completingFaction.Player != null)
