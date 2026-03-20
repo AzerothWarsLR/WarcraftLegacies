@@ -5,7 +5,6 @@ using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Draenei;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
-using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -110,7 +109,6 @@ public static class SpellsSetup
       Target = InstantKill.KillTarget.Self
     });
 
-    FrostwolfSpells.Setup();
     DruidsSpells.Setup();
     FelHordeSpells.Setup();
     DraeneiSpells.Setup();
