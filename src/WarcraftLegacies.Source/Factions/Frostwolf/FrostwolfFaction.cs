@@ -48,12 +48,12 @@ public sealed class FrostwolfFaction : Faction
     RegisterFlightPath();
     RegisterQuests();
     RegisterDialogue();
+    FrostwolfSpells.Setup();
     Regions.ThunderBluff.CleanupHostileUnits();
     Regions.Highmountain_Unlock.CleanupHostileUnits();
     Regions.GromSpawn.CleanupHostileUnits();
     Regions.EchoUnlock.CleanupHostileUnits();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-
   }
 
   private void RegisterObjectLevels()
