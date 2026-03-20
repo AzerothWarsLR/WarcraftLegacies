@@ -5,8 +5,8 @@ using MacroTools.Hints;
 using WarcraftLegacies.Source.Commands;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
-using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.GameModes;
 
