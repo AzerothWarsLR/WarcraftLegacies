@@ -27,6 +27,8 @@ public sealed class ScarletCrusade : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    ScarletSpells.Setup();
+    ScarletTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
