@@ -59,6 +59,8 @@ public sealed class LordaeronFaction : Faction
     RegisterDialogue();
     RegisterCrownOfLordaeronDrop();
     RegisterResearches();
+    LordaeronSpells.Setup();
+    LordaeronTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
