@@ -1,8 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
-using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Factions.Stormwind;
 
@@ -16,15 +14,6 @@ public static class StormwindSpells
   /// </summary>
   public static void Setup()
   {
-    UnitTypeTraitRegistry.Register(new ChannelSpellOnAttack(ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
-    {
-      DummyAbilityId = ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,
-      DummyOrderId = ORDER_VOODOO,
-      ProcChance = 0.15f,
-      DurationBase = (int)0.5,
-      DurationLevel = (int)0.5
-    }, UNIT_H00R_KING_OF_STORMWIND_STORMWIND);
-
     SpellRegistry.Register(new CastDummySpell(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
     {
       DummyAbilityId = ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
