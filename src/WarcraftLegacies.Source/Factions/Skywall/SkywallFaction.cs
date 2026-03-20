@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Researches;
-using MacroTools.Spells;
-using MacroTools.UnitTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Ahnqiraj;
 using WarcraftLegacies.Source.Factions.Druids;
@@ -11,10 +9,6 @@ using WarcraftLegacies.Source.Factions.Skywall.Quests;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Researches;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.WarpedMalediction;
-using WarcraftLegacies.Source.Spells.WhimOfTheWinds;
-using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Skywall;
@@ -56,8 +50,8 @@ public sealed class SkywallFaction : Faction
   public override void OnRegistered()
   {
     RegisterResearches();
-    RegisterUnitTypeTraits();
-    RegisterSpells();
+    SkywallTraits.Setup();
+    SkywallSpells.Setup();
     RegisterQuests();
     RegisterFactionDependentInitializer<DruidsFaction, AhnqirajFaction>(RegisterInvasionRelatedQuests);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -109,67 +103,5 @@ public sealed class SkywallFaction : Faction
         IconName = "ItemForging",
         Name = "Windforging",
       }));
-  }
-
-  private static void RegisterUnitTypeTraits()
-  {
-    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
-    {
-      DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
-      DummyOrderId = ORDER_PURGE,
-      ProcChance = 0.20f,
-      RequiredResearch = UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
-    }, UNIT_O01I_ANIMATED_ARMOR_SKYWALL);
-
-
-    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
-    {
-      DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
-      DummyOrderId = ORDER_ENTANGLING_ROOTS,
-      ProcChance = 0.2f,
-      Cooldown = 10f,
-      RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
-    }, UNIT_N08S_ELEMENTAL_LORD_SKYWALL);
-  }
-
-  private static void RegisterSpells()
-  {
-    var earthProtectionHero = new AnySpellNoTarget(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)
-    {
-      DummyAbilityId = ABILITY_A0XY_EARTH_PROTECTION_HERO_DUMMY,
-      DummyAbilityOrderId = ORDER_ROAR
-    };
-    SpellRegistry.Register(earthProtectionHero);
-
-    var stormSurge = new MassAnySpell(ABILITY_A104_STORM_SURGE_SKYWALL)
-    {
-      DummyAbilityId = ABILITY_TP04_PURGE_DUMMY,
-      DummyAbilityOrderId = ORDER_PURGE,
-      Radius = 200,
-      Damage = new LeveledAbilityField<float>
-      {
-        Base = 30,
-        PerLevel = 20
-      },
-      TargetType = SpellTargetType.Point,
-      CastFilter = CastFilters.IsTargetEnemyAndAlive
-    };
-    SpellRegistry.Register(stormSurge);
-
-    var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
-    {
-      DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
-      DummyAbilityOrderId = ORDER_ENSNARE,
-      Radius = 250,
-      CastFilter = (caster, target) => CastFilters.IsTargetEnemyAndAlive(caster, target) && GetRandomReal(0, 1) <= 0.75,
-      TargetType = SpellTargetType.Point
-    };
-    SpellRegistry.Register(massEnsnare);
-
-    var whimOfTheWinds = new WhimOfTheWinds(ABILITY_WOTW_WHIM_OF_THE_WINDS_SKYWALL);
-    SpellRegistry.Register(whimOfTheWinds);
-
-    var warpedMalediction = new WarpedMalediction(ABILITY_WMTP_WARPED_MALEDICTION_SKYWALL);
-    SpellRegistry.Register(warpedMalediction);
   }
 }
