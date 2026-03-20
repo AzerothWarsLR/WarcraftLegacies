@@ -51,6 +51,7 @@ public sealed class GilneasFaction : Faction
     RegisterObjectLevels();
     ReplaceWithFactionUnits(this);
     RegisterQuests();
+    GilneasSpells.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
