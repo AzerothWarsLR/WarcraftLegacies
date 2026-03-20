@@ -3,7 +3,6 @@ using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Draenei;
-using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -108,7 +107,6 @@ public static class SpellsSetup
       Target = InstantKill.KillTarget.Self
     });
 
-    DruidsSpells.Setup();
     DraeneiSpells.Setup();
     DalaranSpells.Setup();
     SharedSpellSetup.Setup();
