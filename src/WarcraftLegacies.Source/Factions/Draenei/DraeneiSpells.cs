@@ -1,8 +1,6 @@
 ﻿using MacroTools.Spells;
-using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
-using WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Draenei;
@@ -46,12 +44,6 @@ public static class DraeneiSpells
       Color = new Color(55, 50, 250, 255)
     });
 
-    UnitTypeTraitRegistry.Register(new MassiveAttackAbility
-    {
-      AttackDamagePercentage = 0.3f,
-      Distance = 700
-    }, UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI);
-
     var warStompAdal = new MassAnySpell(ABILITY_A105_BLINDING_STARLIGHT_ADAL)
     {
       Radius = 1000,
@@ -83,7 +75,6 @@ public static class DraeneiSpells
       HealEffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     };
     SpellRegistry.Register(blessedGround);
-
 
     var manaSyphon2 = new GrantMana(ABILITY_ADMS_RESTORE_MANA_DRAENEI_CASTER_BUILDING)
     {
