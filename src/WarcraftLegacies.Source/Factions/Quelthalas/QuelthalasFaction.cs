@@ -52,6 +52,8 @@ public sealed class QuelthalasFaction : Faction
     RegisterObjectLevels();
     RegisterQuests();
     RegisterResearches();
+    QuelthalasSpells.Setup();
+    QuelthalasTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterPowers();
   }
