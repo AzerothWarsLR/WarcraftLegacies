@@ -55,6 +55,8 @@ public sealed class DruidsFaction : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterPowers();
+    DruidsSpells.Setup();
+    DruidsTraits.Setup();
     CenariusGhost.Setup(AllLegends.Druids.Cenarius, this);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
