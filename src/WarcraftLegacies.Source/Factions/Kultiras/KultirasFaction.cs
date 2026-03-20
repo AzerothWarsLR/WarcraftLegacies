@@ -47,6 +47,7 @@ public sealed class KultirasFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    KultirasSpells.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 

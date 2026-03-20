@@ -9,7 +9,6 @@ using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Ironforge;
-using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -116,7 +115,6 @@ public static class SpellsSetup
 
     FrostwolfSpells.Setup();
     DruidsSpells.Setup();
-    KultirasSpells.Setup();
     IllidariSpells.Setup();
     FelHordeSpells.Setup();
     DraeneiSpells.Setup();
