@@ -65,6 +65,8 @@ public sealed class LegionLegends : Faction
     RegisterQuests();
     RegisterResearches();
     RegisterDialogue();
+    LegionSpells.Setup();
+    LegionTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 

@@ -1,9 +1,7 @@
 ﻿using MacroTools.Spells;
-using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.HealingWavePlus;
 using WarcraftLegacies.Source.Spells.Slipstream;
-using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Legion;
@@ -32,7 +30,6 @@ public static class LegionSpells
       DummyAbilityId = ABILITY_TPY4_PHANTOM_STEP_DUMMY,
       DummyOrderId = ORDER_WAND_ILLUSION
     };
-
     SpellRegistry.Register(phantomStep);
 
     var phantomStepHero = new PhantomStep(ABILITY_TPY1_PHANTOM_STEP_LEGION_HERO)
@@ -47,7 +44,6 @@ public static class LegionSpells
       EffectScaleBase = 1.0f,
       EffectScalePerLevel = 0.0f,
     };
-
     SpellRegistry.Register(phantomStepHero);
 
     var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
@@ -63,9 +59,6 @@ public static class LegionSpells
       TargetMarkEffect = @""
     };
     SpellRegistry.Register(healingWavePlus);
-
-
-
 
     var summonBurningLegion = new SummonLegion(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
       ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
@@ -103,39 +96,7 @@ public static class LegionSpells
       Radius = 50,
     };
     SpellRegistry.Register(summonFelHoundsDoomGuard);
-
-    UnitTypeTraitRegistry.Register(new RestoreHealthFromEachTargetDamaged(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS)
-    {
-      HealthPerTarget = new LeveledAbilityField<int>
-      {
-        Base = -5,
-        PerLevel = 10
-      },
-      HealthPerLevel = 1,
-      Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
-    }, new[]
-    {
-      UNIT_UMAL_THE_CUNNING_LEGION,
-      UNIT_UTIC_THE_DARKENER_LEGION,
-      UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION
-    });
-
-    UnitTypeTraitRegistry.Register(new RestoreHealthFromEachTargetDamaged(ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
-    {
-      HealthPerTarget = new LeveledAbilityField<int>
-      {
-        Base = -5,
-        PerLevel = 10
-      },
-      HealthPerLevel = 1,
-      Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
-    }, new[]
-    {
-      UNIT_U007_DREADLORD_LEGION_ELITE,
-      UNIT_N04O_DOOM_LORD_LEGION });
   }
-
-
 
   private static void RegisterSlipstreams()
   {
