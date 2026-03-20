@@ -47,6 +47,8 @@ public sealed class DraeneiFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    DraeneiSpells.Setup();
+    DraeneiTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
   /// <inheritdoc />
