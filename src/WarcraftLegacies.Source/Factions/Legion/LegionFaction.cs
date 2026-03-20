@@ -22,10 +22,10 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Legion;
 
-public sealed class LegionLegends : Faction
+public sealed class LegionFaction : Faction
 {
   /// <inheritdoc />
-  public LegionLegends() : base("Legion",
+  public LegionFaction() : base("Legion",
     playercolor.Peanut, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
   {
     TraditionalTeam = TeamSetup.Legion;

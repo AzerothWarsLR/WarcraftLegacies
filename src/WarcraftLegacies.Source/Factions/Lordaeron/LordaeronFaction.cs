@@ -44,10 +44,10 @@ public sealed class LordaeronFaction : Faction
     {
       "lord"
     };
-    RegisterFactionDependentInitializer<LegionLegends>(RegisterLegionDialogue);
+    RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<DalaranFaction>(RegisterDalaranDialogue);
-    RegisterFactionDependentInitializer<ScourgeFaction, LegionLegends>(RegisterScourgeLegionDialogue);
+    RegisterFactionDependentInitializer<ScourgeFaction, LegionFaction>(RegisterScourgeLegionDialogue);
     ProcessObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
   }
 
@@ -207,7 +207,7 @@ public sealed class LordaeronFaction : Faction
         }));
   }
 
-  private void RegisterLegionDialogue(LegionLegends legion)
+  private void RegisterLegionDialogue(LegionFaction legion)
   {
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(
@@ -334,7 +334,7 @@ public sealed class LordaeronFaction : Faction
         }));
   }
 
-  private void RegisterScourgeLegionDialogue(ScourgeFaction scourge, LegionLegends legion)
+  private void RegisterScourgeLegionDialogue(ScourgeFaction scourge, LegionFaction legion)
   {
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(
