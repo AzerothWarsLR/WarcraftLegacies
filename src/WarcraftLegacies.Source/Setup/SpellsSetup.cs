@@ -16,7 +16,6 @@ using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
-using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -128,7 +127,6 @@ public static class SpellsSetup
     DruidsSpells.Setup();
     QuelthalasSpells.Setup();
     KultirasSpells.Setup();
-    StormwindSpells.Setup();
     IllidariSpells.Setup();
     FelHordeSpells.Setup();
     DraeneiSpells.Setup();

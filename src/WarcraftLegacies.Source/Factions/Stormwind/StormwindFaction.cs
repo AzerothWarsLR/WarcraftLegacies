@@ -44,6 +44,8 @@ public sealed class StormwindFaction : Faction
     RegisterObjectLevels();
     RegisterQuests();
     RegisterResearches();
+    StormwindSpells.Setup();
+    StormwindTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
