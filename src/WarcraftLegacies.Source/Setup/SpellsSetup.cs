@@ -17,7 +17,6 @@ using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
-using WarcraftLegacies.Source.Factions.Warsong;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -133,7 +132,6 @@ public static class SpellsSetup
     IllidariSpells.Setup();
     FelHordeSpells.Setup();
     DraeneiSpells.Setup();
-    WarsongSpells.Setup();
     IronforgeSpells.Setup();
     SentinelsSpells.Setup();
     ScarletSpells.Setup();

@@ -54,6 +54,8 @@ public sealed class WarsongFaction : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterFlightPath();
+    WarsongSpells.Setup();
+    WarsongTraits.Setup();
     BloodPactBattleSimulation.StartSimulation();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.BarrenAmbient2.CleanupHostileUnits();
