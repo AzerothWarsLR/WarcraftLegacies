@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -106,7 +105,6 @@ public static class SpellsSetup
       Target = InstantKill.KillTarget.Self
     });
 
-    DalaranSpells.Setup();
     SharedSpellSetup.Setup();
   }
 }
