@@ -2,7 +2,7 @@
 using MacroTools.Utils;
 using WCSharp.Effects;
 
-namespace WarcraftLegacies.Source.Spells;
+namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 /// When a unit with this ability deals physical/normal damage, it heals allies in a radius around itself.
