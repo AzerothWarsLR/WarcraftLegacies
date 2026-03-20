@@ -70,8 +70,12 @@ public static class RectangleExtensions
         continue;
       }
 
-      if (unit.IsRemovable() && !unit.IsInvulnerable &&
-          (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsUnitType(unittype.Structure)))
+      if (unit.IsInvulnerable)
+      {
+        continue;
+      }
+
+      if (unit.IsRemovable() && (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsUnitType(unittype.Structure)))
       {
         unit.Dispose();
       }
