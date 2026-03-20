@@ -59,6 +59,8 @@ public sealed class SentinelsFaction : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterPowers();
+    SentinelsSpells.Setup();
+    SentinelsTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.AstranaarUnlock.CleanupHostileUnits();
     Regions.AuberdineUnlock.CleanupHostileUnits();
