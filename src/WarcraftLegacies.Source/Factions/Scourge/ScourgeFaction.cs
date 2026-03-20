@@ -70,6 +70,8 @@ public sealed class ScourgeFaction : Faction
     RegisterPowers();
     RegisterDialogue();
     RegisterResearches();
+    ScourgeSpells.Setup();
+    ScourgeTraits.Setup();
     BlightSystem.Setup(this);
     BlightSetup.Setup();
     SacrificeAcolyte.Setup();
