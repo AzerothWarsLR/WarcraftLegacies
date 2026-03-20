@@ -49,7 +49,7 @@ public static class GameSetup
     PlayerSetup.Setup();
     FactionChoiceDialogSetup.Setup();
     SharedQuestSetup.Setup();
-    SpellsSetup.Setup();
+    SharedSpellSetup.Setup();
     FactionMultiboard.Setup();
     BookSetup.Setup();
     HintConfig.Setup();
