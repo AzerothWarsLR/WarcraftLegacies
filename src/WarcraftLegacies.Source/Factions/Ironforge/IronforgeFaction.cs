@@ -50,6 +50,8 @@ public sealed class IronforgeFaction : Faction
   {
     RegisterObjectLevels();
     RegisterQuests();
+    IronforgeSpells.Setup();
+    IronforgeTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
