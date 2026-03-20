@@ -45,6 +45,8 @@ public sealed class FelHordeFaction : Faction
   {
     RegisterObjectLevels();
     RegisterQuests();
+    FelHordeSpells.Setup();
+    FelHordeTraits.Setup();
     JuggernautDeath.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
