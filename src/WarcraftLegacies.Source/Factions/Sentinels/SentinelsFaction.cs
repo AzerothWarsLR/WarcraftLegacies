@@ -49,7 +49,7 @@ public sealed class SentinelsFaction : Faction
     };
     RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsDialogue);
     RegisterFactionDependentInitializer<IllidariFaction>(RegisterIllidariQuests);
-    RegisterFactionDependentInitializer<LegionLegends>(RegisterLegionDialogue);
+    RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
     ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
   }
 
@@ -183,7 +183,7 @@ public sealed class SentinelsFaction : Faction
     AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
   }
 
-  private void RegisterLegionDialogue(LegionLegends legion)
+  private void RegisterLegionDialogue(LegionFaction legion)
   {
     TriggeredDialogueManager.Add(new TriggeredDialogue(
       new DialogueSequence(

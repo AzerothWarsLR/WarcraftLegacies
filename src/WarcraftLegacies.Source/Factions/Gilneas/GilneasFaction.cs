@@ -41,7 +41,7 @@ public sealed class GilneasFaction : Faction
       "dogs"
     };
     ProcessObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
-    RegisterFactionDependentInitializer<LegionLegends>(RegisterBookOfMedivhQuest);
+    RegisterFactionDependentInitializer<LegionFaction>(RegisterBookOfMedivhQuest);
     RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsQuests);
   }
 
@@ -86,7 +86,7 @@ public sealed class GilneasFaction : Faction
     FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Dalaran, pickedFaction);
   }
 
-  private void RegisterBookOfMedivhQuest(LegionLegends legion)
+  private void RegisterBookOfMedivhQuest(LegionFaction legion)
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Gilneas.GilneasCastle,
       new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), Artifacts.BookOfMedivh,

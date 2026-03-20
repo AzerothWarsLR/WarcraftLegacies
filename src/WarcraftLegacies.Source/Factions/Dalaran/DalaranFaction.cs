@@ -55,7 +55,7 @@ public sealed class DalaranFaction : Faction
     };
 
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
-    RegisterFactionDependentInitializer<LegionLegends>(RegisterBookOfMedivhQuest);
+    RegisterFactionDependentInitializer<LegionFaction>(RegisterBookOfMedivhQuest);
     ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
   }
 
@@ -113,7 +113,7 @@ public sealed class DalaranFaction : Faction
     AddQuest(newGuardian);
   }
 
-  private void RegisterBookOfMedivhQuest(LegionLegends legion)
+  private void RegisterBookOfMedivhQuest(LegionFaction legion)
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Dalaran.Dalaran,
       new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), Artifacts.BookOfMedivh,

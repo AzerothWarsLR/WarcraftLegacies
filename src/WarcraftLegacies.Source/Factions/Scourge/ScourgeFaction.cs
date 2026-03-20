@@ -53,11 +53,11 @@ public sealed class ScourgeFaction : Faction
     };
     RegisterFactionDependentInitializer<QuelthalasFaction>(RegisterQuelthalasRelatedQuests);
     RegisterFactionDependentInitializer<LordaeronFaction>(RegisterLordaeronRelatedQuests);
-    RegisterFactionDependentInitializer<LordaeronFaction, LegionLegends>(RegisterLordaeronLegionRelatedQuests);
+    RegisterFactionDependentInitializer<LordaeronFaction, LegionFaction>(RegisterLordaeronLegionRelatedQuests);
     RegisterFactionDependentInitializer<DalaranFaction>(RegisterDalaranDialogue);
     RegisterFactionDependentInitializer<QuelthalasFaction>(RegisterQuelthalasDialogue);
     RegisterFactionDependentInitializer<LordaeronFaction>(RegisterLordaeronDialogue);
-    RegisterFactionDependentInitializer<LegionLegends>(RegisterLegionDialogue);
+    RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
 
     ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
   }
@@ -350,7 +350,7 @@ public sealed class ScourgeFaction : Faction
         }));
   }
 
-  private void RegisterLegionDialogue(LegionLegends legion)
+  private void RegisterLegionDialogue(LegionFaction legion)
   {
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(
@@ -392,7 +392,7 @@ public sealed class ScourgeFaction : Faction
     AddQuest(new QuestCultoftheDamned(lordaeron, AllLegends.Scourge.Rivendare));
   }
 
-  private void RegisterLordaeronLegionRelatedQuests(LordaeronFaction lordaeron, LegionLegends legion)
+  private void RegisterLordaeronLegionRelatedQuests(LordaeronFaction lordaeron, LegionFaction legion)
   {
     var plagueParameters = new PlagueParameters();
     plagueParameters.PlagueRects = new List<Rectangle>

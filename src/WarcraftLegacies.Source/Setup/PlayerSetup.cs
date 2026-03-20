@@ -35,7 +35,7 @@ public static class PlayerSetup
     player.Create(18).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
     player.Create(15).GetPlayerData().SetTeam(TeamSetup.Outland);
     SetupPlayer(player.Create(22), new KultirasFaction());
-    SetupPlayer(player.Create(23), new LegionLegends());
+    SetupPlayer(player.Create(23), new LegionFaction());
   }
 
 
