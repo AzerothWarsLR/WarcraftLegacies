@@ -14,7 +14,6 @@ using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.ScarletCrusade;
-using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
@@ -121,7 +120,6 @@ public static class SpellsSetup
 
     FrostwolfSpells.Setup();
     LegionSpells.Setup();
-    ScourgeSpells.Setup();
     LordaeronSpells.Setup();
     DruidsSpells.Setup();
     QuelthalasSpells.Setup();
