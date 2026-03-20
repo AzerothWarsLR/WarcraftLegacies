@@ -63,7 +63,7 @@ public static class AllLegends
   /// <summary>
   /// Contains references to all Legion <see cref="Legend"/>s.
   /// </summary>
-  public static LegendLegion Legion { get; }
+  public static LegionLegends Legion { get; }
 
   /// <summary>
   /// Contains references to all Lordaeron <see cref="Legend"/>s.
@@ -126,7 +126,7 @@ public static class AllLegends
     Frostwolf = new FrostwolfLegends();
     Ironforge = new IronforgeLegends();
     Kultiras = new KultirasLegends();
-    Legion = new LegendLegion();
+    Legion = new LegionLegends();
     Lordaeron = new LordaeronLegends();
     Naga = new IllidariLegends();
     Quelthalas = new QuelthalasLegends();

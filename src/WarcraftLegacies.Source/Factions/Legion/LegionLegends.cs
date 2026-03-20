@@ -3,7 +3,7 @@ using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Factions.Legion;
 
-public sealed class LegendLegion
+public sealed class LegionLegends
 {
   public LegendaryHero Archimonde { get; }
   public LegendaryHero Anetheron { get; }
@@ -12,7 +12,7 @@ public sealed class LegendLegion
 
   public Capital LegionStronghold { get; }
 
-  public LegendLegion()
+  public LegionLegends()
   {
     Archimonde = new LegendaryHero("Archimonde")
     {
