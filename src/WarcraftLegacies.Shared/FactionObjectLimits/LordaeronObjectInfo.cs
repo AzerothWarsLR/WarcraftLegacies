@@ -67,5 +67,6 @@ public static class LordaeronObjectInfo
     yield return new(UPGRADE_R04A_RAPID_FIRE_LORDAERON, Unlimited);
     yield return new(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, Unlimited);
     yield return new(UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET, Unlimited);
+    yield return new(UPGRADE_R01E_AERIAL_SHACKLES_LORDAERON, Unlimited);
   }
 }

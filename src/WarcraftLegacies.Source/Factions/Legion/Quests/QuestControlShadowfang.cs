@@ -18,7 +18,7 @@ public sealed class QuestControlShadowfang : QuestData
   public override string RewardFlavour => "Shadowfang Keep is now under the Legion control. A secret demon gate has now been formed inside.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to train troops from Shadowfang Keep, and learn to build 1 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)}";
+  protected override string RewardDescription => $"Learn to train troops from Shadowfang Keep.";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
