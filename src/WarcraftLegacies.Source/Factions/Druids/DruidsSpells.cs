@@ -1,7 +1,7 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.MassiveAttack;
+using WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
 
 namespace WarcraftLegacies.Source.Factions.Druids;
 

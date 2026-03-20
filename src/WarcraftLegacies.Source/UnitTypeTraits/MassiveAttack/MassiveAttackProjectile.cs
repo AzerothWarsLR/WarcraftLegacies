@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.Spells.MassiveAttack;
+namespace WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
 
 /// <summary>
 /// A very simple Shockwave projectile with configurable range and damage.

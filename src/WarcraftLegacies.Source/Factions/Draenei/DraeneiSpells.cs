@@ -1,8 +1,8 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.Spells.Slipstream;
+using WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Draenei;

@@ -3,7 +3,7 @@ using MacroTools.UnitTraits;
 using MacroTools.Utils;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.Spells.MassiveAttack;
+namespace WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
 
 /// <summary>
 /// When the unit deals damage, it casts Shockwave on the target.

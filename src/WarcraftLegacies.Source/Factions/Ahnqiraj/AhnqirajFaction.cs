@@ -11,10 +11,10 @@ using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Researches;
 using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.UnitTypeTraits;
 using WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
 using WarcraftLegacies.Source.UnitTypeTraits.Incubate;
+using WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
 using WarcraftLegacies.Source.UnitTypeTraits.SpellConduction;
 
 namespace WarcraftLegacies.Source.Factions.Ahnqiraj;
