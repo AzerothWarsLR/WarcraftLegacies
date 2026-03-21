@@ -23,7 +23,7 @@ public static class RockSystem
       return;
     }
 
-    GameTimeManager.RegisterOnTurn(rockGroup.Expiry, () => Remove(rockGroup));
+    GameTimeManager.RegisterOnTurn(GameTimeManager.Turn + rockGroup.Expiry, () => Remove(rockGroup));
   }
 
   /// <summary>
