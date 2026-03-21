@@ -47,11 +47,11 @@ public static class GameSetup
     CheatSetup.Setup();
     TeamSetup.Setup();
     FactionStartingResources.Setup();
+    FactionMultiboard.Setup();
     PlayerSetup.Setup();
     FactionChoiceDialogSetup.Setup();
     SharedQuestSetup.Setup();
     SharedSpellSetup.Setup();
-    FactionMultiboard.Setup();
     BookSetup.Setup();
     HintConfig.Setup();
     QuestMenuSetup.Setup();

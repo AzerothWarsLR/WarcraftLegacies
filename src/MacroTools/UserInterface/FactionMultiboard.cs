@@ -73,11 +73,6 @@ public sealed class FactionMultiboard
       playerData.PlayerLeftTeam += _ => Instance?.Render();
     }
 
-    foreach (var faction in FactionManager.GetAllFactions())
-    {
-      RegisterFaction(faction);
-    }
-
     _initialized = true;
   }
 
