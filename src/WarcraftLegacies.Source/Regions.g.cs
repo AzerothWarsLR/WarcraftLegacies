@@ -126,11 +126,6 @@ public static class Regions
   public static Rectangle Gilneas_Canals { get; set; } = new Rectangle(6080f, -1376f, 8800f, 2656f);
   public static Rectangle Gilneas { get; set; } = new Rectangle(2848f, -3264f, 9696f, 2880f);
   public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
-  public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3616f, 8128f, -1472f);
-  public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 320f, 6016f, 2656f);
-  public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
-  public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6432f, 2112f, 7456f, 3360f);
-  public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6080f, -928f, 8544f, 1376f);
   public static Rectangle Gnomergan { get; set; } = new Rectangle(7296f, -6528f, 8672f, -4960f);
   public static Rectangle Grim_Batol_Tunnel_Entrance { get; set; } = new Rectangle(16480f, -2944f, 16672f, -2784f);
   public static Rectangle Grim_Batol_Tunnel_Top { get; set; } = new Rectangle(16608f, -2496f, 16832f, -2400f);
