@@ -6,7 +6,6 @@ using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
-using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Gilneas.Quests;
@@ -48,8 +47,6 @@ public sealed class QuestGilneasCity : QuestData
     }
 
     completingFaction.Player?.PlayMusicThematic("war3mapImported\\GilneasTheme1.mp3");
-
-    RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
   }
 
   /// <inheritdoc/>
@@ -59,8 +56,6 @@ public sealed class QuestGilneasCity : QuestData
     {
       return;
     }
-
-    RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
 
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
       ? player.NeutralAggressive
