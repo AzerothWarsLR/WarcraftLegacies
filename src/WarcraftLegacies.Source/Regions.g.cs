@@ -125,7 +125,6 @@ public static class Regions
   public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
   public static Rectangle Gilneas_Canals { get; set; } = new Rectangle(6080f, -1376f, 8800f, 2656f);
   public static Rectangle Gilneas { get; set; } = new Rectangle(2848f, -3264f, 9696f, 2880f);
-  public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
   public static Rectangle Gnomergan { get; set; } = new Rectangle(7296f, -6528f, 8672f, -4960f);
   public static Rectangle Grim_Batol_Tunnel_Entrance { get; set; } = new Rectangle(16480f, -2944f, 16672f, -2784f);
   public static Rectangle Grim_Batol_Tunnel_Top { get; set; } = new Rectangle(16608f, -2496f, 16832f, -2400f);
