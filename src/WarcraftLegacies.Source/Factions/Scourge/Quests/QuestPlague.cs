@@ -91,8 +91,8 @@ public sealed class QuestPlague : QuestData
 
   private static void RegisterRocks()
   {
-    RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 120));
-    RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 120));
+    RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 2));
+    RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 2));
   }
 
   private void RescueBases(Faction completingFaction)
