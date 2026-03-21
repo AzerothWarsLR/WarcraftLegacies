@@ -46,6 +46,7 @@ public static class GameSetup
     CommandSetup.Setup();
     CheatSetup.Setup();
     TeamSetup.Setup();
+    FactionStartingResources.Setup();
     PlayerSetup.Setup();
     FactionChoiceDialogSetup.Setup();
     SharedQuestSetup.Setup();
@@ -78,7 +79,6 @@ public static class GameSetup
     BlockerSetup.Setup();
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
-    StartingResources.Setup();
     StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
