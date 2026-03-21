@@ -21,7 +21,6 @@ public sealed class QuestScarletCrusade : QuestData
   private readonly unit _tyrsHand;
   private readonly LegendaryHero _saiden;
   private readonly List<unit> _rescueUnits;
-  private const int StartingGold = 1000;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
@@ -73,12 +72,12 @@ public sealed class QuestScarletCrusade : QuestData
   private void AssignScarletCrusadeFaction(Faction completingFaction)
   {
     var scarletCrusade = new ScarletCrusadeFaction();
-    FactionManager.Register(scarletCrusade);
     scarletCrusade.CopyObjectLevelsFrom(completingFaction);
     if (completingFaction.Player != null)
     {
       completingFaction.Player.GetPlayerData().Faction = scarletCrusade;
     }
+    FactionManager.Register(scarletCrusade);
   }
 
   private static void EvacuateTyrsHand(player newOwner)
@@ -145,7 +144,6 @@ public sealed class QuestScarletCrusade : QuestData
     CreateStructureForced(whichPlayer, UNIT_H0BP_FARMSTEAD_SCARLET_FARM, 20917, 8193,
       4.712389f * MathEx.DegToRad, 256);
 
-    whichPlayer.Gold += StartingGold;
     whichPlayer.RepositionCamera(20629, 10112);
   }
 }

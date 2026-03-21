@@ -14,6 +14,12 @@ public sealed class ScarletCrusadeFaction : Faction
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
     ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;
+    StartingGold = new StartingGold
+    {
+      Instant = 1000,
+      Income = 0,
+      Turns = 0
+    };
     Nicknames = new List<string>
     {
       "sc",
