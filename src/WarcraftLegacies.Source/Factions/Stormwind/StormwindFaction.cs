@@ -76,7 +76,7 @@ public sealed class StormwindFaction : Faction
     }));
     AddQuest(new QuestKingdomOfManStormwind(Artifacts.CrownOfLordaeron, Artifacts.CrownOfStormwind,
       AllLegends.Stormwind.Varian));
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
   private static void RegisterResearches()

@@ -55,14 +55,14 @@ public sealed class BlackEmpireFaction : Faction
 
     AddQuest(new QuestWakingCity(questGorma, Regions.Nyalotha));
     AddQuest(new QuestGiftofFlesh());
-    AddQuest(new QuestWakingDream(AllLegends.BlackEmpire.Zaqul));
-    AddQuest(new QuestMawofShuma(AllLegends.BlackEmpire.Yorsahj));
-    AddQuest(new QuestMawofGorath(AllLegends.BlackEmpire.Zonozz));
+    AddQuest(new QuestWakingDream(AllLegends.BlackE.Zaqul));
+    AddQuest(new QuestMawofShuma(AllLegends.BlackE.Yorsahj));
+    AddQuest(new QuestMawofGorath(AllLegends.BlackE.Zonozz));
     AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));
     AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
-    AddQuest(new QuestDestruction(AllLegends.BlackEmpire.Nzoth));
-    AddQuest(new QuestWorldStone(AllLegends.BlackEmpire.Nzoth, AllLegends.Warsong.Orgrimmar));
-    AddQuest(new QuestAscension(AllLegends.BlackEmpire.Nzoth));
-    AddQuest(new QuestAlignement(AllLegends.BlackEmpire.Nzoth));
+    AddQuest(new QuestDestruction(AllLegends.BlackE.Nzoth));
+    AddQuest(new QuestWorldStone(AllLegends.BlackE.Nzoth, AllLegends.Warsong.Orgrimmar));
+    AddQuest(new QuestAscension(AllLegends.BlackE.Nzoth));
+    AddQuest(new QuestAlignement(AllLegends.BlackE.Nzoth));
   }
 }

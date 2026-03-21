@@ -73,7 +73,7 @@ public sealed class DruidsFaction : Faction
     AddQuest(new QuestDruidsKillCthun());
     AddQuest(new QuestShaladrassil(AllLegends.Neutral.Shaladrassil));
     AddQuest(new QuestTortolla(AllLegends.Druids.Tortolla));
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue()

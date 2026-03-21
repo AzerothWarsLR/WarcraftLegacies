@@ -78,6 +78,6 @@ public sealed class DraeneiFaction : Faction
     AddQuest(new QuestTriumvirate(AllLegends.Draenei.Velen));
     var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, AllLegends.Draenei.LegendExodarGenerator);
     AddQuest(questDimensionalShip);
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 }

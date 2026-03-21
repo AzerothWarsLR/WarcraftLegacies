@@ -78,7 +78,7 @@ public static class AllLegends
   /// <summary>
   /// Contains references to all Quel'thalas <see cref="Legend"/>s.
   /// </summary>
-  public static QuelthalasLegends Quelthalas { get; }
+  public static QuelthalasLegends Quel { get; }
 
   /// <summary>
   /// Contains references to all Scourge <see cref="Legend"/>s.
@@ -102,7 +102,7 @@ public static class AllLegends
 
   public static AhnqirajLegends Ahnqiraj { get; }
 
-  public static BlackEmpireLegends BlackEmpire { get; }
+  public static BlackEmpireLegends BlackE { get; }
 
   public static SkywallLegends Skywall { get; }
 
@@ -129,7 +129,7 @@ public static class AllLegends
     Legion = new LegionLegends();
     Lordaeron = new LordaeronLegends();
     Naga = new IllidariLegends();
-    Quelthalas = new QuelthalasLegends();
+    Quel = new QuelthalasLegends();
     Scourge = new ScourgeLegends();
     Sentinels = new SentinelsLegends();
     Stormwind = new StormwindLegends();
@@ -137,7 +137,7 @@ public static class AllLegends
     Neutral = new NeutralLegends();
     Gilneas = new GilneasLegends();
     Ahnqiraj = new AhnqirajLegends();
-    BlackEmpire = new BlackEmpireLegends();
+    BlackE = new BlackEmpireLegends();
     Skywall = new SkywallLegends();
     Scarlet = new ScarletLegends();
     Sunfury = new SunfuryLegends();
@@ -158,13 +158,13 @@ public static class AllLegends
     Legion.RegisterLegends();
     Lordaeron.RegisterLegends();
     Naga.RegisterLegends();
-    Quelthalas.RegisterLegends();
+    Quel.RegisterLegends();
     Scourge.RegisterLegends();
     Sentinels.RegisterLegends();
     Stormwind.RegisterLegends();
     Warsong.RegisterLegends();
     Ahnqiraj.RegisterLegends();
-    BlackEmpire.RegisterLegends();
+    BlackE.RegisterLegends();
     Skywall.RegisterLegends();
     Neutral.RegisterLegends();
     Gilneas.RegisterLegends();

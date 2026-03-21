@@ -62,7 +62,7 @@ public sealed class GilneasFaction : Faction
     AddQuest(new QuestGilneasCity(Regions.Gilneas));
     AddQuest(new QuestDalarangilneas(Regions.Dalaran));
     AddQuest(new QuestCrowley());
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
   private void RegisterObjectLevels()
   {

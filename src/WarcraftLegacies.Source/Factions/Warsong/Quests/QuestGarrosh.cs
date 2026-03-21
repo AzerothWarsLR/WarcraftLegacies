@@ -18,7 +18,7 @@ public sealed class QuestGarrosh : QuestData
     "The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions.",
     @"ReplaceableTextures\CommandButtons\BTNFacelessMadness.blp")
   {
-    AddObjective(new ObjectiveLegendDead(AllLegends.BlackEmpire.Nzoth));
+    AddObjective(new ObjectiveLegendDead(AllLegends.BlackE.Nzoth));
     AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
     ResearchId = UPGRADE_R062_QUEST_COMPLETED_TWILIGHT_S_RECKONING;
   }

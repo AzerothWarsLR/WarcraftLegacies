@@ -293,7 +293,7 @@ public sealed class ScourgeFaction : Faction
         },
         new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Quelthalas.Sylvanas)
+          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Quel.Sylvanas)
         }));
 
     TriggeredDialogueManager.Add(
@@ -376,7 +376,7 @@ public sealed class ScourgeFaction : Faction
 
   private void RegisterQuelthalasRelatedQuests(QuelthalasFaction quelthalas)
   {
-    var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(AllLegends.Quelthalas.Sunwell,
+    var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(AllLegends.Quel.Sunwell,
       AllLegends.Scourge.Kelthuzad, quelthalas, Artifacts.SunwellVial));
     AddQuest(new QuestKelthuzadDies(questKelthuzadLich, AllLegends.Scourge.Kelthuzad));
   }

@@ -17,7 +17,7 @@ public sealed class QuestSentinelsKillBlackEmpire : QuestData
     "The Black Empire has poured out near Feathermoon and begun threatening the wilds. These invaders must be repelled.",
     @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
-    AddObjective(new ObjectiveLegendDead(AllLegends.BlackEmpire.Nzoth));
+    AddObjective(new ObjectiveLegendDead(AllLegends.BlackE.Nzoth));
     ResearchId = UPGRADE_R007_QUEST_COMPLETED_OTHERWORDLY_INVADERS_SENTINELS;
 
   }

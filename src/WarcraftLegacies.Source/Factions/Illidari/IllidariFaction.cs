@@ -114,7 +114,7 @@ public sealed class IllidariFaction : Faction
 
     AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, AllLegends.Naga.Vashj));
     AddQuest(new QuestEyeofSargeras(Artifacts.EyeOfSargeras, AllLegends.Naga.Illidan));
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
     var questVestigesOfPower = new QuestVestigesOfPower(questBlackTemple);
     AddQuest(questVestigesOfPower);
   }
@@ -380,7 +380,7 @@ public sealed class IllidariFaction : Faction
     AddQuest(questBurningCrusade);
 
     var theWaywardWell = new QuestTheWaywardWell(
-      AllLegends.Quelthalas.Sunwell,
+      AllLegends.Quel.Sunwell,
       AllLegends.Naga.Illidan,
       questBurningCrusade
     );

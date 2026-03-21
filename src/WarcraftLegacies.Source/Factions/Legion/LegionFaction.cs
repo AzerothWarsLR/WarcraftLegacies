@@ -75,9 +75,9 @@ public sealed class LegionFaction : Faction
     var newQuest = AddQuest(new QuestArgusControl());
     StartingQuest = newQuest;
     AddQuest(new QuestControlMonastery(AllLegends.Lordaeron.Monastery));
-    AddQuest(new QuestControlSpire(AllLegends.Quelthalas.Spire));
+    AddQuest(new QuestControlSpire(AllLegends.Quel.Spire));
     AddQuest(new QuestControlShadowfang(AllLegends.Dalaran.Shadowfang));
-    AddQuest(new QuestLegionCaptureSunwell(AllLegends.Quelthalas.Sunwell));
+    AddQuest(new QuestLegionCaptureSunwell(AllLegends.Quel.Sunwell));
     AddQuest(new QuestLegionKillLordaeron(AllLegends.Lordaeron.CapitalPalace,
       AllLegends.Lordaeron.Stratholme, AllLegends.Legion.Tichondrius));
     AddQuest(new QuestSummonLegion(Regions.TwistingNether,

@@ -72,6 +72,6 @@ public sealed class SunfuryFaction : Faction
       AllLegends.Sunfury.Kael));
     AddQuest(new QuestForgottenKnowledge());
     AddQuest(new QuestWellOfEternity(AllLegends.Sunfury.Kiljaeden));
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 }

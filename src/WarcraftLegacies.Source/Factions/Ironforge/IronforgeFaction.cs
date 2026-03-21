@@ -145,7 +145,7 @@ public sealed class IronforgeFaction : Faction
     AddQuest(questExpedition);
 
     AddQuest(new QuestExtractSunwellVial(
-      AllLegends.Quelthalas.Sunwell,
+      AllLegends.Quel.Sunwell,
       Artifacts.SunwellVial));
   }
 

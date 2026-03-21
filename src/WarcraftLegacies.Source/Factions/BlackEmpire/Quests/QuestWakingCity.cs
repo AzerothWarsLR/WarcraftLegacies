@@ -57,7 +57,7 @@ public sealed class QuestWakingCity : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.Player.RescueGroup(_rescueUnits);
-    var nzoth = AllLegends.BlackEmpire.Nzoth.Unit;
+    var nzoth = AllLegends.BlackE.Nzoth.Unit;
     if (nzoth != null)
     {
       UnitTypeTraitRegistry.ForceOnCreated(nzoth);

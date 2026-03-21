@@ -62,7 +62,7 @@ public sealed class KultirasFaction : Faction
     AddQuest(new QuestHighBank(Regions.HighbankUnlock, AllLegends.Kultiras.LegendKatherine));
     AddQuest(new QuestBeyondPortal(AllLegends.FelHorde.HellfireCitadel,
       AllLegends.FelHorde.KilsorrowFortress));
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
   private void RegisterDialogue(FrostwolfFaction frostwolf)

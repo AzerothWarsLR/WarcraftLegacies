@@ -61,7 +61,7 @@ public sealed class QuelthalasFaction : Faction
   {
     var fontsOfPower = new List<Capital>
     {
-      AllLegends.Quelthalas.Sunwell,
+      AllLegends.Quel.Sunwell,
       AllLegends.FelHorde.BlackTemple,
       AllLegends.Druids.Nordrassil,
       AllLegends.Sunfury.WellOfEternity,
@@ -86,12 +86,12 @@ public sealed class QuelthalasFaction : Faction
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
-      AllPreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20477, 17447), AllLegends.Quelthalas.Silvermoon, AllLegends.Quelthalas.Sunwell));
+      AllPreplacedWidgets.Units.GetClosest(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, 20477, 17447), AllLegends.Quel.Silvermoon, AllLegends.Quel.Sunwell));
     StartingQuest = newQuest;
-    AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, AllLegends.Quelthalas.Sylvanas));
+    AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, AllLegends.Quel.Sylvanas));
     AddQuest(new QuestTheBloodElves(AllLegends.Neutral.DraktharonKeep));
     AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge));
-    AddQuest(new QuestQueensArchive(AllLegends.Quelthalas.Rommath));
+    AddQuest(new QuestQueensArchive(AllLegends.Quel.Rommath));
     AddQuest(new QuestForgottenKnowledge());
   }
 

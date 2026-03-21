@@ -83,7 +83,7 @@ public sealed class WarsongFaction : Faction
     AddQuest(new QuestGarrosh());
     AddQuest(new QuestKillOldGods());
     AddQuest(new QuestWarsongHold());
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
     AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
