@@ -169,7 +169,6 @@ public sealed class ControlPointManager
 
     controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);
-    controlPoint.Unit.SetScale(1.2f, 1.2f, 1.2f);
 
     RegisterIncome(controlPoint);
 
