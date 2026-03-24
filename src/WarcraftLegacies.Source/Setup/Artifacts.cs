@@ -32,11 +32,6 @@ public static class Artifacts
   public static Artifact HelmOfDomination { get; }
 
   /// <summary>
-  /// Azshara's Scepter.
-  /// </summary>
-  public static Artifact ScepterOfTheQueen { get; }
-
-  /// <summary>
   /// Powerful tome left behind by the Guardian Medivh.
   /// </summary>
   public static Artifact BookOfMedivh { get; }
@@ -113,12 +108,6 @@ public static class Artifacts
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
-
-    ScepterOfTheQueen = new Artifact(item.Create(ITEM_I00I_SCEPTER_OF_THE_QUEEN, DummyX, DummyY));
-    tempUnit = AllPreplacedWidgets.Units.Get(UNIT_N085_THE_ATHENAEUM_SENTINELS_OTHER);
-    tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
-    tempUnit.AddItem(ScepterOfTheQueen.Item);
-    ArtifactManager.Register(ScepterOfTheQueen);
 
     BookOfMedivh = new Artifact(item.Create(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
     ArtifactManager.Register(BookOfMedivh);
