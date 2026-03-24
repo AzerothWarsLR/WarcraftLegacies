@@ -19,7 +19,7 @@ public sealed class QuestMawofGorath : QuestData
     "Zon'ozz has been tasked with awakening the Maw of Go'rath, a terrible Forgotten One. To that end, he will need to carve a crest of blood with the corpses of his enemies.",
     @"ReplaceableTextures\CommandButtons\BTNFacelessKing.blp")
   {
-    AddObjective(new ObjectiveKillCount(200));
+    AddObjective(new ObjectiveKillCount(100));
     AddObjective(new ObjectiveLegendLevel(zonozz, 8));
 
   }

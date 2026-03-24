@@ -15,7 +15,7 @@ public sealed class QuestMockeryOfLife : QuestData
     "C'thun, the great distorter of flesh, needs to amass samples from many beings to create ",
     @"ReplaceableTextures\CommandButtons\BTNMindWorm.blp")
   {
-    AddObjective(new ObjectiveKillCount(100));
+    AddObjective(new ObjectiveKillCount(50));
     ResearchId = UPGRADE_RLLL_QUEST_COMPLETED_MOCKERY_OF_LIFE;
   }
 
