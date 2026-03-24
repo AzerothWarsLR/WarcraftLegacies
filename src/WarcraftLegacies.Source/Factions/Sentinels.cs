@@ -79,7 +79,7 @@ public sealed class Sentinels : Faction
 
     AddQuest(new QuestSentinelsKillBlackEmpire());
     AddQuest(new QuestSentinelsKillCthun());
-    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, Artifacts.ScepterOfTheQueen));
+    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum));
     AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quelthalas.Sunwell, Artifacts.SunwellVial));
   }
