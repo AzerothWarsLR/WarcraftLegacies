@@ -28,7 +28,7 @@ public sealed class QuestFreshMeat : QuestData
     @"ReplaceableTextures\CommandButtons\BTNSilithid.blp")
   {
     _cthun = cthun;
-    AddObjective(new ObjectiveKillCount(200));
+    AddObjective(new ObjectiveKillCount(100));
   }
 
   /// <inheritdoc/>
