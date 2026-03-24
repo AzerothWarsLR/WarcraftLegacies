@@ -43,6 +43,11 @@ public static class StormwindObjectInfo
     yield return new(UNIT_N093_CHAPLAIN_STORMWIND, Unlimited, Support);
     yield return new(UNIT_O06K_SIEGE_TOWER_STORMWIND, 5, Siege);
 
+    yield return new(UNIT_H04C_PIKEMAN_STORMWIND, 0, Tank);
+    yield return new(UNIT_H05N_MARKSMAN_STORMWIND, 0, Marksman);
+    yield return new(UNIT_H054_STORMWIND_KNIGHT_STORMWIND, 0, Fighter);
+    yield return new(UNIT_H03U_REAR_MARSHAL_STORMWIND_DEFENSIVE, 0, new List<UnitCategory> { Tank, Support });
+
     yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);
     yield return new(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, Unlimited);
     yield return new(UNIT_H0AX_FRIGATE_ALLIANCE, Unlimited);

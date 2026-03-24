@@ -72,6 +72,7 @@ public sealed class SentinelsFaction : Faction
     Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
     Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
     Regions.FeathermoonUnlock.CleanupNeutralPassiveUnits();
+    Regions.TheAthenaeum.CleanupNeutralPassiveUnits();
     base.OnNotPicked();
   }
 
@@ -85,7 +86,7 @@ public sealed class SentinelsFaction : Faction
 
     AddQuest(new QuestSentinelsKillBlackEmpire());
     AddQuest(new QuestSentinelsKillCthun());
-    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, Artifacts.ScepterOfTheQueen));
+    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum));
     AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }

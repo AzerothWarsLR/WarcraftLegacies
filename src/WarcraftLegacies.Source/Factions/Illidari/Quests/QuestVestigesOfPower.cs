@@ -37,10 +37,6 @@ public sealed class QuestVestigesOfPower : QuestData
     {
       _chosenArtifact = Artifacts.BookOfMedivh;
     }
-    else if (roll <= 80)
-    {
-      _chosenArtifact = Artifacts.ScepterOfTheQueen;
-    }
     else
     {
       var fragments = new List<Artifact>
@@ -65,12 +61,6 @@ public sealed class QuestVestigesOfPower : QuestData
       {
         return "Illidan pores over the prophet's tome, unveiling arcane secrets that enhance his already prodigious mastery over magic.";
       }
-
-      if (_chosenArtifact == Artifacts.ScepterOfTheQueen)
-      {
-        return "Azshara's scepter contains extraordinary energies, even so long after her death. Illidan relishes in recovering these once-lost Highborne secrets.";
-      }
-
       return "The Soulflayer's blade, though shattered and spread to the corners of Azeroth, still hold immense power. Even Illidan cannot decipher the sword's origin - but he can relish its power.";
     }
   }

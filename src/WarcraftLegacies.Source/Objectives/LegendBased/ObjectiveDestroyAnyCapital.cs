@@ -1,4 +1,5 @@
-﻿using MacroTools.Factions;
+﻿using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 
@@ -16,7 +17,7 @@ public sealed class ObjectiveDestroyAnyCapital : Objective
   /// </summary>
   public ObjectiveDestroyAnyCapital()
   {
-    Description = "Destroy any enemy capital";
+    Description = "Destroy any player-owned enemy capital";
   }
 
   /// <inheritdoc />
@@ -24,11 +25,29 @@ public sealed class ObjectiveDestroyAnyCapital : Objective
   {
     CapitalManager.CapitalDestroyed += capital =>
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(@event.KillingUnit.Owner))
+      if (capital.Unit == null)
       {
-        DestroyedCapital = capital;
-        Progress = QuestProgress.Complete;
+        return;
       }
+
+      var capitalOwner = capital.Unit.Owner;
+      var capitalOwnerData = capitalOwner.GetPlayerData();
+      var capitalOwnerTeam = capitalOwnerData.Team;
+
+      if (faction.Player == null ||
+          faction.Player.GetPlayerData().Team == capitalOwnerTeam ||
+          capitalOwnerData.Faction == null)
+      {
+        return;
+      }
+
+      if (!IsPlayerOnSameTeamAsAnyEligibleFaction(@event.KillingUnit.Owner))
+      {
+        return;
+      }
+
+      DestroyedCapital = capital;
+      Progress = QuestProgress.Complete;
     };
   }
 }

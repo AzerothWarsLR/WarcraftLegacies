@@ -106,7 +106,7 @@ public sealed class QuelthalasFaction : Faction
       new TriggeredDialogue(new DialogueSequence(new Dialogue(
           @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Arthas30",
           "Are you still upset that I stole Jaina from you, Kael?",
-          "Illidan Stormrage"), new Dialogue(
+          "Arthas Menethil"), new Dialogue(
           @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Kael31",
           "You've taken everything I ever cared for, Arthas. Vengeance is all I have left.",
           "Kael'thas Sunstrider"))

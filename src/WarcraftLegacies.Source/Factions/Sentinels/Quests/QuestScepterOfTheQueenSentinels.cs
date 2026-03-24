@@ -2,8 +2,8 @@
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.ArtifactBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
@@ -17,8 +17,9 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
 {
   private readonly List<unit> _highBourneAreaUnits;
   private readonly Rectangle _highBourneArea;
-  private readonly Artifact _scepterOfTheQueen;
+  private Artifact? _scepterOfTheQueen;
   private readonly ObjectiveAnyUnitInRect _anyUnitInRect;
+  private static bool _initialized;
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
@@ -31,33 +32,44 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.
   /// </summary>
-  public QuestScepterOfTheQueenSentinels(QuestData prerequisite, Rectangle area, Artifact scepterOfTheQueen) : base("Return to the Fold",
+  public QuestScepterOfTheQueenSentinels(QuestData prerequisite, Rectangle area) : base("Return to the Fold",
     "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Stonemaul falls, it would be safe for them to come out.",
     @"ReplaceableTextures\CommandButtons\BTNNagaWeaponUp2.blp")
   {
     _highBourneArea = area;
-    _scepterOfTheQueen = scepterOfTheQueen;
     _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
     AddObjective(new ObjectiveQuestComplete(prerequisite));
     AddObjective(new ObjectiveHostilesInAreaAreDead(new[] { area }, "outside the Athenaeum"));
     _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "the Athenaeum", false);
     AddObjective(_anyUnitInRect);
-    AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(scepterOfTheQueen));
-
   }
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
   {
-    _anyUnitInRect.CompletingUnit?.AddItemSafe(_scepterOfTheQueen.Item);
+    _anyUnitInRect.CompletingUnit?.AddItemSafe(_scepterOfTheQueen!.Item);
     whichFaction.Player?.RescueGroup(_highBourneAreaUnits);
   }
 
   /// <inheritdoc/>
   protected override void OnFail(Faction whichFaction)
   {
-    _scepterOfTheQueen.Item.SetPosition(_highBourneArea.Center);
+    _scepterOfTheQueen!.Item.SetPosition(_highBourneArea.Center);
     player.NeutralAggressive.RescueGroup(_highBourneAreaUnits);
+  }
+
+  /// <inheritdoc/>
+  protected override void OnAdd(Faction whichFaction)
+  {
+    if (!_initialized)
+    {
+      var athenaeum = AllPreplacedWidgets.Units.Get(UNIT_N085_THE_ATHENAEUM_SENTINELS_OTHER);
+      _scepterOfTheQueen = new Artifact(item.Create(ITEM_I00I_SCEPTER_OF_THE_QUEEN, athenaeum.X, athenaeum.Y));
+      athenaeum.AddAbility(Artifact.ArtifactHolderAbilId);
+      athenaeum.AddItem(_scepterOfTheQueen.Item);
+      ArtifactManager.Register(_scepterOfTheQueen);
+    }
+    _initialized = true;
   }
 }
