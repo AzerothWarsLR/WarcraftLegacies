@@ -66,6 +66,7 @@ public sealed class Sentinels : Faction
     Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
     Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
     Regions.FeathermoonUnlock.CleanupNeutralPassiveUnits();
+    Regions.TheAthenaeum.CleanupNeutralPassiveUnits();
     base.OnNotPicked();
   }
 
