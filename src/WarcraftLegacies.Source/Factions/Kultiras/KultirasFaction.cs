@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
-using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Kultiras.Quests;
@@ -14,14 +13,11 @@ namespace WarcraftLegacies.Source.Factions.Kultiras;
 
 public sealed class KultirasFaction : Faction
 {
-  private readonly unit _proudmooreCapitalShip;
-
   /// <inheritdoc />
   public KultirasFaction()
     : base("Kul'tiras", playercolor.Emerald, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
-    _proudmooreCapitalShip = AllPreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     StartingGold = new StartingGold
     {
       Instant = 200,
@@ -55,8 +51,7 @@ public sealed class KultirasFaction : Faction
   {
     var questBoralus = new QuestBoralus(Regions.Kultiras, AllLegends.Kultiras.LegendKatherine);
     StartingQuest = AddQuest(questBoralus);
-    AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, AllLegends.Kultiras.LegendAdmiral,
-      questBoralus));
+    AddQuest(new QuestStranglethornExpedition(Regions.ShipAmbient, AllLegends.Kultiras.LegendAdmiral, questBoralus));
     AddQuest(new QuestOldHatreds(AllLegends.Kultiras.LegendAdmiral));
     AddQuest(new QuestWestfallOutpost(Regions.StranglethornBaseBuild));
     AddQuest(new QuestHighBank(Regions.HighbankUnlock, AllLegends.Kultiras.LegendKatherine));

@@ -13,7 +13,7 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
   private readonly List<unit> _rescueUnits;
   private bool _choiceExecuted;
 
-  public UnlockShipDialogPresenter(player player, List<unit> rescueUnits, unit proudmooreCapitalShip)
+  public UnlockShipDialogPresenter(player player, List<unit> rescueUnits)
     : base(
       new[]
       {
