@@ -10,7 +10,6 @@ public sealed class KultirasLegends
   public LegendaryHero LegendMeredith { get; }
   public LegendaryHero LegendKatherine { get; }
   public Capital LegendBoralus { get; }
-  public LegendaryHero Flagship { get; }
 
   public KultirasLegends()
   {
@@ -43,13 +42,6 @@ public sealed class KultirasLegends
       DeathMessage = "Boralus Keep has fallen", //Todo: pointless flavour
       Essential = true
     };
-
-    Flagship = new LegendaryHero("Flagship")
-    {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS)
-    };
-    Flagship.Unit.IsInvulnerable = true;
-    Flagship.Unit.SetPausedEx(true);
   }
 
   public void RegisterLegends()
@@ -58,7 +50,6 @@ public sealed class KultirasLegends
     LegendaryHeroManager.Register(LegendLucille);
     LegendaryHeroManager.Register(LegendMeredith);
     LegendaryHeroManager.Register(LegendKatherine);
-    LegendaryHeroManager.Register(Flagship);
     CapitalManager.Register(LegendBoralus);
   }
 }
