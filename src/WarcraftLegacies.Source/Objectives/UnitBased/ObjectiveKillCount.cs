@@ -19,7 +19,7 @@ public sealed class ObjectiveKillCount : Objective
     set
     {
       _currentCount = value;
-      Description = $"Kill {_requiredCount} units ({_currentCount}/{_requiredCount})";
+      Description = $"Kill {_requiredCount} non-summoned enemy units ({_currentCount}/{_requiredCount})";
       if (_currentCount >= _requiredCount)
       {
         Progress = QuestProgress.Complete;
@@ -39,5 +39,16 @@ public sealed class ObjectiveKillCount : Objective
     CurrentCount = 0;
   }
 
-  private void OnKillUnit() => CurrentCount++;
+  private void OnKillUnit()
+  {
+    var killedUnit = GetTriggerUnit();
+    if (killedUnit.IsUnitType(UNIT_TYPE_SUMMONED) ||
+        killedUnit.IsABuilding ||
+        killedUnit.IsAllyTo(GetKillingUnit().Owner))
+    {
+      return;
+    }
+
+    CurrentCount++;
+  }
 }
