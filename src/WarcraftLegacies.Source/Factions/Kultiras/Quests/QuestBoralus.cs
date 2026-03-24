@@ -55,7 +55,7 @@ public sealed class QuestBoralus : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    var rewardPower = new CityOfHeroes(0.140f, 1.5f, "Ships")
+    var rewardPower = new CityOfHeroes(0.35f, 1.5f, "Ships")
     {
       IconName = "LordAdmiralPendant",
       Name = RewardPowerName,
