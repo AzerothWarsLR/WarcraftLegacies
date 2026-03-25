@@ -1,0 +1,21 @@
+﻿using MacroTools.Spells;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Shared.Spells;
+
+/// <summary>
+/// When cast, the caster becomes vulnerable.
+/// </summary>
+public sealed class MakeCasterVulnerable : Spell
+{
+  /// <inheritdoc />
+  public MakeCasterVulnerable(int id) : base(id)
+  {
+  }
+
+  /// <inheritdoc />
+  public override void OnStartCast(unit caster, unit target, Point targetPoint)
+  {
+    caster.IsInvulnerable = false;
+  }
+}

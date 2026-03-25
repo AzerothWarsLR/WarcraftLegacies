@@ -3,8 +3,8 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Spells;
+using WarcraftLegacies.Source.Factions.Illidari.Spells;
 using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Spells;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Illidari.Quests;

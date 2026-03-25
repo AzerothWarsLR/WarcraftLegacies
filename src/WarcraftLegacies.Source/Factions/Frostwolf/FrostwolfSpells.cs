@@ -1,7 +1,8 @@
 ﻿using MacroTools.Researches;
 using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.Slipstream;
+using WarcraftLegacies.Source.Factions.Frostwolf.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
+using WarcraftLegacies.Source.Shared.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Frostwolf;

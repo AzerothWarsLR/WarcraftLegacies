@@ -1,6 +1,7 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.ExactJustice;
+using WarcraftLegacies.Source.Factions.Lordaeron.Spells;
+using WarcraftLegacies.Source.Factions.Lordaeron.Spells.ExactJustice;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 

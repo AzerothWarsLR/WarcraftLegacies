@@ -1,7 +1,8 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.HealingWavePlus;
-using WarcraftLegacies.Source.Spells.Slipstream;
+using WarcraftLegacies.Source.Factions.Legion.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
+using WarcraftLegacies.Source.Shared.Spells.HealingWavePlus;
+using WarcraftLegacies.Source.Shared.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Legion;

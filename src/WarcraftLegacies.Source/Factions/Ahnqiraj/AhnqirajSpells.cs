@@ -1,5 +1,6 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Factions.Ahnqiraj.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Ahnqiraj;
 

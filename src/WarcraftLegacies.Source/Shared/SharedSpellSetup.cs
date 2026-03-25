@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
 using WarcraftLegacies.Source.UnitTypeTraits;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 

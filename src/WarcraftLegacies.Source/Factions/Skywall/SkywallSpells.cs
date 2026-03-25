@@ -1,7 +1,8 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.WarpedMalediction;
-using WarcraftLegacies.Source.Spells.WhimOfTheWinds;
+using WarcraftLegacies.Source.Factions.Skywall.Spells;
+using WarcraftLegacies.Source.Factions.Skywall.Spells.WarpedMalediction;
+using WarcraftLegacies.Source.Factions.Skywall.Spells.WhimOfTheWinds;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Skywall;
 
