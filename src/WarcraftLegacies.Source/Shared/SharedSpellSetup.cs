@@ -2,7 +2,6 @@
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Shared.Spells;
-using WarcraftLegacies.Source.Shared.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits.Vengeance;
 
 namespace WarcraftLegacies.Source.Shared;
@@ -11,46 +10,6 @@ public static class SharedSpellSetup
 {
   public static void Setup()
   {
-    var thunderClap = new MassAnySpell(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
-    {
-      Radius = 300,
-      Damage = new LeveledAbilityField<float>
-      {
-        Base = 75
-      },
-      DummyAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
-      DummyAbilityOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl",
-      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
-      TargetType = SpellTargetType.None
-    };
-    SpellRegistry.Register(thunderClap);
-
-    var thunderClapGil = new MassAnySpell(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
-    {
-      Radius = 300,
-      Damage = new LeveledAbilityField<float>
-      {
-        Base = 55
-      },
-      DummyAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
-      DummyAbilityOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl",
-      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
-      TargetType = SpellTargetType.None
-    };
-    SpellRegistry.Register(thunderClapGil);
-
-    var massAntiMagicShell = new MassAnySpell(ABILITY_A099_MASS_ANTI_MAGIC_SHIELD)
-    {
-      DummyAbilityId = ABILITY_A0JN_ANTI_MAGIC_SHELL_WARSONG_DUMMY,
-      DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
-      Radius = 200,
-      CastFilter = CastFilters.IsTargetAllyAndAlive,
-      TargetType = SpellTargetType.Point
-    };
-    SpellRegistry.Register(massAntiMagicShell);
-
     var massEnrage = new MassAnySpell(ABILITY_A0QK_MASS_ENRAGE_HAKKAR)
     {
       DummyAbilityId = ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
@@ -103,21 +62,6 @@ public static class SharedSpellSetup
     SpellRegistry.Register(new InstantKill(ABILITY_A041_SELF_DESTRUCT_WORKERS)
     {
       Target = InstantKill.KillTarget.Self
-    });
-
-    UnitTypeTraitRegistry.Register(new RestoreManaFromDamage(ABILITY_A11N_ARCANE_ABSORPTION_SUNFURY_STORMWIND)
-    {
-      ManaPerDamage = new LeveledAbilityField<float>
-      {
-        Base = 0.20f,
-        PerLevel = 0.20f
-      },
-      Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
-    }, new[]
-    {
-      UNIT_N0E7_BLOODWARDER_SUNFURY,
-      UNIT_H05Y_LORD_WIZARD_STORMWIND,
-      UNIT_N0E8_SKYSHIP_SUNFURY
     });
   }
 }
