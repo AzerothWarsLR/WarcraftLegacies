@@ -1,8 +1,9 @@
 ﻿using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.IceBlock;
-using WarcraftLegacies.Source.Spells.Reap;
+using WarcraftLegacies.Source.Factions.Scourge.Spells;
+using WarcraftLegacies.Source.Factions.Scourge.Spells.IceBlock;
+using WarcraftLegacies.Source.Factions.Scourge.Spells.Reap;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 

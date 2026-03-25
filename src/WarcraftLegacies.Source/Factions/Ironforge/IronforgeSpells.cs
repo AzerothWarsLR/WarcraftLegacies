@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Factions.Ironforge.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 

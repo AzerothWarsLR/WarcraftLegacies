@@ -1,6 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Factions.Stormwind.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Stormwind;
 

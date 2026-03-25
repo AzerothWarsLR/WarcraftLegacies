@@ -1,7 +1,8 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.Spells;
-using WarcraftLegacies.Source.Spells.HealingWavePlus;
+using WarcraftLegacies.Source.Factions.FelHorde.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
+using WarcraftLegacies.Source.Shared.Spells.HealingWavePlus;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde;
 

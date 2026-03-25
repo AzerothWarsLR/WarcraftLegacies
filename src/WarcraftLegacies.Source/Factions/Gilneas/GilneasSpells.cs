@@ -1,5 +1,5 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Factions.Gilneas.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Gilneas;
 

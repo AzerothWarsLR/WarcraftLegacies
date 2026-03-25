@@ -1,5 +1,5 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels;
 

@@ -1,6 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
-using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Factions.Kultiras.Spells;
+using WarcraftLegacies.Source.Shared.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Kultiras;
