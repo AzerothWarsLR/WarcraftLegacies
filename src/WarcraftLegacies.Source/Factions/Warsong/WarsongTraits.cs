@@ -1,5 +1,6 @@
 ﻿using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.Factions.Warsong.UnitTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.Warsong;
 

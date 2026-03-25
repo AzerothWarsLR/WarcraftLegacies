@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
-using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
+using WarcraftLegacies.Source.Shared.UnitTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits.Vengeance;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels;
 

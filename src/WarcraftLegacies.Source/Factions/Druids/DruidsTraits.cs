@@ -1,5 +1,5 @@
 ﻿using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
+using WarcraftLegacies.Source.Shared.UnitTraits.MassiveAttack;
 
 namespace WarcraftLegacies.Source.Factions.Druids;
 

@@ -1,5 +1,5 @@
 ﻿using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.Factions.Illidari.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.Illidari;
 
