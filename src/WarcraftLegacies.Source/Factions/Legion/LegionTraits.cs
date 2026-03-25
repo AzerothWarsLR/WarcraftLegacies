@@ -1,6 +1,6 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.Factions.Legion.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.Legion;
 

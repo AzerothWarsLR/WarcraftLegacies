@@ -1,6 +1,6 @@
 ﻿using MacroTools.Hints;
 using MacroTools.Legends;
-using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits;
 
 namespace WarcraftLegacies.Source.Setup;
 

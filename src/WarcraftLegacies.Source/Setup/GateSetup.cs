@@ -1,5 +1,5 @@
 ﻿using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits;
 
 namespace WarcraftLegacies.Source.Setup;
 

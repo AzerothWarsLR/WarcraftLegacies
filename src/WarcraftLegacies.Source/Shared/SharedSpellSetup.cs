@@ -2,8 +2,8 @@
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Shared.Spells;
-using WarcraftLegacies.Source.UnitTypeTraits;
-using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
+using WarcraftLegacies.Source.Shared.UnitTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits.Vengeance;
 
 namespace WarcraftLegacies.Source.Shared;
 

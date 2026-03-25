@@ -1,10 +1,10 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
-using WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
-using WarcraftLegacies.Source.UnitTypeTraits.Incubate;
-using WarcraftLegacies.Source.UnitTypeTraits.MassiveAttack;
-using WarcraftLegacies.Source.UnitTypeTraits.SpellConduction;
+using WarcraftLegacies.Source.Factions.Ahnqiraj.UnitTraits.DefensiveCocoon;
+using WarcraftLegacies.Source.Factions.Ahnqiraj.UnitTraits.Incubate;
+using WarcraftLegacies.Source.Factions.Ahnqiraj.UnitTraits.SpellConduction;
+using WarcraftLegacies.Source.Shared.UnitTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits.MassiveAttack;
 
 namespace WarcraftLegacies.Source.Factions.Ahnqiraj;
 

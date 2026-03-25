@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.Factions.Scourge.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 
