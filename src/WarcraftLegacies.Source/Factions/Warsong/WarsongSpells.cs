@@ -37,5 +37,15 @@ public static class WarsongSpells
       DamageBonusLevel = 0.15F
     };
     SpellRegistry.Register(stormEarthandFire);
+
+    var massAntiMagicShell = new MassAnySpell(ABILITY_A099_MASS_ANTI_MAGIC_SHIELD)
+    {
+      DummyAbilityId = ABILITY_A0JN_ANTI_MAGIC_SHELL_WARSONG_DUMMY,
+      DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
+      Radius = 200,
+      CastFilter = CastFilters.IsTargetAllyAndAlive,
+      TargetType = SpellTargetType.Point
+    };
+    SpellRegistry.Register(massAntiMagicShell);
   }
 }

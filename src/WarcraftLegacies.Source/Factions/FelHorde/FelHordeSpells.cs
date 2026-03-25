@@ -72,5 +72,20 @@ public static class FelHordeSpells
       PercentageDamage = 0.06f
     };
     SpellRegistry.Register(unholyArmor);
+
+    var thunderClap = new MassAnySpell(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
+    {
+      Radius = 300,
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 75
+      },
+      DummyAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
+      DummyAbilityOrderId = ORDER_CRIPPLE,
+      SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      TargetType = SpellTargetType.None
+    };
+    SpellRegistry.Register(thunderClap);
   }
 }
