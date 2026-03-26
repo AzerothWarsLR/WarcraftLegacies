@@ -1,8 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Sounds;
-using WCSharp.Shared;
-
 namespace MacroTools.Quests;
 
 public static class FactionQuestExtensions
@@ -12,80 +10,80 @@ public static class FactionQuestExtensions
   /// </summary>
   internal static void DisplayCompletedGlobal(this player whichPlayer, QuestData questData)
   {
-    var whichplayerData = whichPlayer.GetPlayerData();
+    var whichPlayerData = whichPlayer.GetPlayerData();
     var localPlayerData = player.LocalPlayer.GetPlayerData();
     var localPlayerIsAlly = localPlayerData.Team?.Contains(whichPlayer) == true;
 
     var sound = localPlayerIsAlly ? SoundLibrary.Completed : SoundLibrary.Failed;
     sound.Start();
 
-    var message = $"\n|cffffcc00MAJOR EVENT - {whichplayerData.Faction?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n";
+    var message = $"\n|cffffcc00MAJOR EVENT - {whichPlayerData.Faction?.PrefixCol}{questData.Title}|r";
+    var messageWithFlavour = $"\n{questData.RewardFlavour}\n";
 
-    foreach (var recipient in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
+    if (player.LocalPlayer != whichPlayer)
     {
-      if (recipient == whichPlayer)
-      {
-        continue;
-      }
-
-      var recipientData = recipient.GetPlayerData();
-      if (recipientData.PlayerSettings.ShowQuestText)
-      {
-        recipient.DisplayTextTo(message);
-      }
+      player.LocalPlayer.DisplayTextTo(localPlayerData.PlayerSettings.ShowQuestText ? messageWithFlavour : message);
     }
   }
 
   internal static void DisplayFailed(this Faction faction, QuestData questData)
   {
+    if (faction.Player == null)
+    {
+      return;
+    }
+
     var display = !string.IsNullOrEmpty(questData.PenaltyFlavour)
       ? $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n{questData.PenaltyFlavour}\n"
       : $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n";
 
-    foreach (var objective in questData.Objectives)
+    if (faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      if (objective.ShowsInPopups || objective.Progress == QuestProgress.Failed)
+      foreach (var objective in questData.Objectives)
       {
-        display = objective.Progress switch
+        if (objective.ShowsInPopups || objective.Progress == QuestProgress.Failed)
         {
-          QuestProgress.Complete => $"{display} - |cff808080{objective.Description} (Completed)|r\n",
-          QuestProgress.Failed => $"{display} - |cffCD5C5C{objective.Description} (Failed)|r\n",
-          _ => $"{display} - {objective.Description}\n"
-        };
+          display = objective.Progress switch
+          {
+            QuestProgress.Complete => $"{display} - |cff808080{objective.Description} (Completed)|r\n",
+            QuestProgress.Failed => $"{display} - |cffCD5C5C{objective.Description} (Failed)|r\n",
+            _ => $"{display} - {objective.Description}\n"
+          };
+        }
       }
     }
 
-    if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
-    {
-      faction.Player.DisplayTextTo(display);
-    }
-
-    faction.Player?.PlaySound(SoundLibrary.Failed);
+    faction.Player.DisplayTextTo(display);
+    faction.Player.PlaySound(SoundLibrary.Failed);
   }
 
   internal static void DisplayCompleted(this Faction faction, QuestData questData)
   {
-    var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n";
-
-    if (!string.IsNullOrEmpty(questData.RewardFlavour))
+    if (faction.Player == null)
     {
-      display += $"{questData.RewardFlavour}\n";
+      return;
     }
 
-    foreach (var objective in questData.Objectives)
+    var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n";
+
+    if (faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      if (objective.ShowsInPopups)
+      if (!string.IsNullOrEmpty(questData.RewardFlavour))
       {
-        display = $"{display} - |cff808080{objective.Description} (Completed)|r\n";
+        display += $"{questData.RewardFlavour}\n";
+      }
+
+      foreach (var objective in questData.Objectives)
+      {
+        if (objective.ShowsInPopups)
+        {
+          display = $"{display} - |cff808080{objective.Description} (Completed)|r\n";
+        }
       }
     }
 
-    if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
-    {
-      faction.Player.DisplayTextTo(display);
-    }
-
-    faction.Player?.PlaySound(SoundLibrary.Completed);
+    faction.Player.DisplayTextTo(display);
+    faction.Player.PlaySound(SoundLibrary.Completed);
   }
 
   /// <summary>
@@ -93,30 +91,33 @@ public static class FactionQuestExtensions
   /// </summary>
   public static void DisplayDiscovered(this Faction faction, QuestData questData, bool displayFlavour)
   {
-    var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n";
-
-    if (displayFlavour)
+    if (faction.Player == null)
     {
-      display += $"{questData.Flavour}\n";
+      return;
     }
 
-    foreach (var objective in questData.Objectives)
+    var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n";
+
+    if (faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      if (objective.ShowsInPopups)
+      if (displayFlavour)
       {
-        display = objective.Progress == QuestProgress.Complete
-          ? $"{display} - |cff808080{objective.Description} (Completed)|r\n"
-          : $"{display} - {objective.Description}\n";
+        display += $"{questData.Flavour}\n";
+      }
+
+      foreach (var objective in questData.Objectives)
+      {
+        if (objective.ShowsInPopups)
+        {
+          display = objective.Progress == QuestProgress.Complete
+            ? $"{display} - |cff808080{objective.Description} (Completed)|r\n"
+            : $"{display} - {objective.Description}\n";
+        }
       }
     }
 
-    if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
-    {
-      faction.Player.DisplayTextTo(display);
-    }
-
-    var sound = SoundLibrary.Discovered;
-    faction.Player?.PlaySound(sound);
-    faction.Player?.FlashQuests();
+    faction.Player.DisplayTextTo(display);
+    faction.Player.PlaySound(SoundLibrary.Discovered);
+    faction.Player.FlashQuests();
   }
 }
