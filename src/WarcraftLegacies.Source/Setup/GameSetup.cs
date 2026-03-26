@@ -91,7 +91,6 @@ public static class GameSetup
     IncompatibleResearchSetup.Setup();
     DemonGateSetup.Setup();
     SummonRallyPoints.Setup();
-    RemoveUnusedAreas.Run();
     EyeOfSargerasCooldowns.Setup();
     CapturableUnitSetup.Setup();
     EyeOfSargerasPickup.Setup();
