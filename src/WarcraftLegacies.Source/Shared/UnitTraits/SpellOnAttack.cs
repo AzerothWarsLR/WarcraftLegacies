@@ -1,6 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.UnitTraits;
-using WarcraftLegacies.Source.Buffs;
+using WarcraftLegacies.Source.Shared.Buffs;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Shared.UnitTraits;

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.Buffs;
+namespace WarcraftLegacies.Source.Factions.FelHorde.Buffs;
 
 public sealed class AscendancyBuff : PassiveBuff
 {

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Spells;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.Buffs;
+using WarcraftLegacies.Source.Factions.Dalaran.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 

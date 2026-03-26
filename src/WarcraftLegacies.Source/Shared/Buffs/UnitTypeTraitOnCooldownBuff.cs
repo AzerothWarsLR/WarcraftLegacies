@@ -1,7 +1,7 @@
 ﻿using MacroTools.UnitTraits;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.Buffs;
+namespace WarcraftLegacies.Source.Shared.Buffs;
 
 /// <summary>
 /// Marker buff to indicate that any instance of a <see cref="UnitTrait"/>

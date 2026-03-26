@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.Spells;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.Buffs;
+using WarcraftLegacies.Source.Factions.Legion.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
