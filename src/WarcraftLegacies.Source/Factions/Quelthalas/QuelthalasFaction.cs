@@ -26,7 +26,7 @@ public sealed class QuelthalasFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 150,
+      Income = 145,
       Turns = 10
     };
     CinematicMusic = "BloodElfTheme";
