@@ -25,7 +25,7 @@ public sealed class AhnqirajFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 250,
+      Income = 225,
       Turns = 10
     };
     IntroText = $"You are playing as {PrefixCol}C'thun and his Qiraji followers|r.\n\n" +

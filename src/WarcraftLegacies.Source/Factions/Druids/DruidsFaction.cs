@@ -29,7 +29,7 @@ public sealed class DruidsFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 160,
+      Income = 155,
       Turns = 10
     };
     CinematicMusic = "DarkAgents";

@@ -33,7 +33,7 @@ public sealed class LegionFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 240,
+      Income = 230,
       Turns = 10
     };
     FoodMaximum = 250;

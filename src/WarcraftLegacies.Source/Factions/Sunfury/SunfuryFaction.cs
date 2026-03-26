@@ -21,7 +21,7 @@ public sealed class SunfuryFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 240,
+      Income = 225,
       Turns = 10
     };
     CinematicMusic = "BloodElfTheme";

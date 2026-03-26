@@ -35,7 +35,7 @@ public sealed class IllidariFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 180,
+      Income = 170,
       Turns = 10
     };
     FoodMaximum = 250;

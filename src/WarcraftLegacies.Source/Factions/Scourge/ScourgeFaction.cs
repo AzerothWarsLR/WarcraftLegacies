@@ -35,7 +35,7 @@ public sealed class ScourgeFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 210,
+      Income = 205,
       Turns = 10
     };
     FoodMaximum = 250;
