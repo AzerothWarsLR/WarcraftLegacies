@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.Buffs;
+namespace WarcraftLegacies.Source.Factions.Dalaran.Buffs;
 
 public sealed class SimulacrumBuff : PassiveBuff
 {

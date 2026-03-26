@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.Buffs;
+namespace WarcraftLegacies.Source.Factions.Gilneas.Buffs;
 
 public sealed class AddAbilitiesBuff : BoundBuff
 {

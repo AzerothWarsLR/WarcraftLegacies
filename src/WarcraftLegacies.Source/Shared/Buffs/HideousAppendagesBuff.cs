@@ -3,7 +3,7 @@ using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.Buffs;
+namespace WarcraftLegacies.Source.Shared.Buffs;
 
 /// <summary>
 ///   Surrounds the buff holder with tentacles.

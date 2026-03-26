@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.Buffs;
+using WarcraftLegacies.Source.Factions.FelHorde.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
