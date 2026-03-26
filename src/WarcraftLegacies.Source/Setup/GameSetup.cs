@@ -13,7 +13,6 @@ using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
-using WarcraftLegacies.Source.Patrons;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
 
@@ -61,7 +60,6 @@ public static class GameSetup
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
-    PatronSystem.Setup();
     var gameModeManager = new GameModeManager(new IGameMode[]
     {
       new ClosedAlliance(),
