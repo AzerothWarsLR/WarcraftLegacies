@@ -72,14 +72,6 @@ public static class FactionQuestExtensions
       {
         display += $"{questData.RewardFlavour}\n";
       }
-
-      foreach (var objective in questData.Objectives)
-      {
-        if (objective.ShowsInPopups)
-        {
-          display = $"{display} - |cff808080{objective.Description} (Completed)|r\n";
-        }
-      }
     }
 
     faction.Player.DisplayTextTo(display);
