@@ -26,7 +26,6 @@ public sealed class ControlPointMapMigration : IMapMigration
       unit.StatsRace = UnitRace.Creeps;
       unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
       unit.ArtScalingValue = 1.2f;
-      unit.ArtSelectionScale = 2.4f;
     }
 
     map.UnitObjectData = objectDatabase.GetAllData().UnitData;
