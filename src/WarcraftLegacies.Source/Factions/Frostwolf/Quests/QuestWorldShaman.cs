@@ -54,20 +54,23 @@ public sealed class QuestWorldShaman : QuestData
       AddHeroXP(_thrall.Unit, 2000, true);
     }
 
-    completingFaction.AddPower(new MaelstromWeapon(0.12f, 100)
+    var maelstromWeapon = new MaelstromWeapon(0.12f, 100)
     {
       Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
       ValidUnitTypes = new[]
       {
-        UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER,
-        UNIT_OGRU_GRUNT_FROSTWOLF,
-        UNIT_OSHM_SHAMAN_FROSTWOLF,
-        UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE,
-        UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
-        UNIT_H0CN_PACKLEADER_FROSTWOLF,
-        UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF
+        UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, UNIT_OGRU_GRUNT_FROSTWOLF, UNIT_OSHM_SHAMAN_FROSTWOLF,
+        UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE, UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+        UNIT_H0CN_PACKLEADER_FROSTWOLF, UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF
       },
       IconName = "_Lightning_Orc"
-    });
+    };
+
+    completingFaction.AddPower(maelstromWeapon);
+
+    if (completingFaction.Player != null)
+    {
+      completingFaction.Player.DisplayPowerAcquired(maelstromWeapon);
+    }
   }
 }
