@@ -11,6 +11,7 @@ public sealed class QuestClosePortal : QuestData
 {
   private readonly List<unit> _unitsToRemove;
   private readonly LegendaryHero _khadgar;
+  private const int XpReward = 10000;
 
   public QuestClosePortal(LegendaryHero khadgar) : base("Seal the Dark Portal",
     "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once and for all.",
@@ -40,7 +41,7 @@ public sealed class QuestClosePortal : QuestData
     "Khadgar has sealed the Dark Portal forever, finally correcting the mistake made by his former master decades ago.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => "The Dark Portal closes permanently";
+  protected override string RewardDescription => $"The Dark Portal closes permanently and Khadgar gains {XpReward} experience";
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
@@ -58,7 +59,7 @@ public sealed class QuestClosePortal : QuestData
     _unitsToRemove.Clear();
     if (_khadgar.Unit != null)
     {
-      AddHeroXP(_khadgar.Unit, 10000, true);
+      AddHeroXP(_khadgar.Unit, XpReward, true);
     }
   }
 }
