@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.GameTime;
 
-namespace WarcraftLegacies.Source.Rocks;
+namespace WarcraftLegacies.Source.GameLogic.Rocks;
 
 /// <summary>
 /// Manages <see cref="RockGroup"/>s by destroying them based on timer or manual removal.

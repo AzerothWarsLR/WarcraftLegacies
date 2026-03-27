@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.ArtifactBehaviour;
+namespace WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 
 /// <summary>
 /// Eye of Sargeras' abilities go on cooldown when transferring the item between heroes to avoid abuse.

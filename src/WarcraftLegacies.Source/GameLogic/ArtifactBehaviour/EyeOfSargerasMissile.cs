@@ -2,7 +2,7 @@
 using WCSharp.Effects;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.ArtifactBehaviour;
+namespace WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 
 /// <summary>
 /// Carries the Eye of Sargeras into the target's inventory.

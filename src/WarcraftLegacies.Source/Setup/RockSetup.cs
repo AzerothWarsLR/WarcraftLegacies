@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.Source.Rocks;
+﻿using WarcraftLegacies.Source.GameLogic.Rocks;
 
 namespace WarcraftLegacies.Source.Setup;
 

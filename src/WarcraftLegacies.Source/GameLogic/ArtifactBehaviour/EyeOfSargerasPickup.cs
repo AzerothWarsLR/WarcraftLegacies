@@ -4,7 +4,7 @@ using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.ArtifactBehaviour;
+namespace WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 
 /// <summary>
 /// When the Eye of Sargeras is picked up with a hostile unit nearby, it transfers itself to the inventory of that hostile unit.

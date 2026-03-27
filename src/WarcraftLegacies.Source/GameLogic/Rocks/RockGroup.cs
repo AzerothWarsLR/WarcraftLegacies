@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Rocks;
+namespace WarcraftLegacies.Source.GameLogic.Rocks;
 
 /// <summary>
 /// A group of rocks used to prevent players from accessing an area of the game before a certain time passes.

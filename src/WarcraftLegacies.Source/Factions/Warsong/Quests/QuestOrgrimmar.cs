@@ -2,10 +2,10 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
-using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Warsong.Quests;

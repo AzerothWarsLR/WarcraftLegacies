@@ -5,10 +5,10 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
+using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
-using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Quests;

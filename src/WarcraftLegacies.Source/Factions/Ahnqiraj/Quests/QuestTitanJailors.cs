@@ -3,11 +3,11 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
-using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;
 
