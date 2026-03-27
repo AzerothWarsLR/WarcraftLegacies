@@ -74,7 +74,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "N\u0027zoth has numerous Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth. |n|n|cffffcc00Level 1|r - 5 Tentacles. |n|cffffcc00Level 2|r - 6 Tentacles. |n|cffffcc00Level 3|r - 7 Tentacles. |n|cffffcc00Level 3|r - 8 Tentacles."
+      "Value": "N\u0027zoth has numerous Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth. |n|n|cffffcc00Level 1|r - 5 Tentacles. |n|cffffcc00Level 2|r - 6 Tentacles. |n|cffffcc00Level 3|r - 7 Tentacles. |n|cffffcc00Level 3|r - 8 Tentacles."
     },
     {
       "Level": 1,
@@ -110,19 +110,19 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "N\u0027zoth has 6 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
+      "Value": "N\u0027zoth has 6 Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "N\u0027zoth has 7 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
+      "Value": "N\u0027zoth has 7 Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "N\u0027zoth has 8 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
+      "Value": "N\u0027zoth has 8 Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth."
     },
     {
       "Id": 2037408353,
