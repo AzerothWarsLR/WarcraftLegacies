@@ -148,7 +148,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Creates a Healing Bulb from a nearby friendly corpse that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hitpoints each."
+      "Value": "Creates a Healing Bulb from a nearby friendly corpse that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hit points each."
     }
   ]
 }
