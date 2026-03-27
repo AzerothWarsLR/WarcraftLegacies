@@ -7,23 +7,24 @@ using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests;
 
-public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
+[Collection(nameof(MapTestCollection))]
+public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 {
   [Fact]
   public void UnreachableObjectCollection_HasNoExceptions()
   {
-    mapTestFixture.UnreachableObjects.Exceptions.Should().BeEmpty();
+    fixture.UnreachableObjects.Exceptions.Should().BeEmpty();
   }
 
   [Fact]
   public void AllResearches_CanBeAccessed()
   {
-    if (mapTestFixture.UnreachableObjects.Upgrades.Count <= 0)
+    if (fixture.UnreachableObjects.Upgrades.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
       throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
@@ -33,7 +34,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
       "Robk"
     };
 
-    var upgradesToCheck = mapTestFixture.UnreachableObjects.Upgrades
+    var upgradesToCheck = fixture.UnreachableObjects.Upgrades
       .Where(upgrade => !exceptions.Contains(GetReadableId(upgrade)))
       .ToList();
 
@@ -57,17 +58,17 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllUnits_CanBeTrained()
   {
-    if (mapTestFixture.UnreachableObjects.Units.Count <= 0)
+    if (fixture.UnreachableObjects.Units.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
       throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
-    var unitsToCheck = mapTestFixture.UnreachableObjects.Units.ToList();
+    var unitsToCheck = fixture.UnreachableObjects.Units.ToList();
 
     if (unitsToCheck.Count <= 0)
     {
@@ -89,17 +90,17 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllAbilities_CanBeCast()
   {
-    if (mapTestFixture.UnreachableObjects.Abilities.Count <= 0)
+    if (fixture.UnreachableObjects.Abilities.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
       throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
-    var abilitiesToCheck = mapTestFixture.UnreachableObjects.Abilities.ToList();
+    var abilitiesToCheck = fixture.UnreachableObjects.Abilities.ToList();
 
     if (abilitiesToCheck.Count <= 0)
     {
@@ -121,14 +122,14 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllDoodads_ArePlaced()
   {
-    var unplacedDoodads = mapTestFixture.UnreachableObjects.Doodads;
+    var unplacedDoodads = fixture.UnreachableObjects.Doodads;
 
     if (unplacedDoodads.Count <= 0)
     {
       return;
     }
 
-    if (mapTestFixture.UnreachableObjects.Exceptions.Count != 0)
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
       throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }

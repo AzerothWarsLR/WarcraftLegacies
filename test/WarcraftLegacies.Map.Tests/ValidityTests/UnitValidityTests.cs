@@ -7,13 +7,14 @@ using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
-public sealed class UnitValidityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
+[Collection(nameof(MapTestCollection))]
+public sealed class UnitValidityTests(MapTestFixture fixture)
 {
   [Fact]
   public void AllUnits_HaveValidFields()
   {
     var issues = new List<string>();
-    var objectDatabase = mapTestFixture.ObjectDatabase;
+    var objectDatabase = fixture.ObjectDatabase;
 
     foreach (var unit in objectDatabase.GetUnits().ToArray())
     {

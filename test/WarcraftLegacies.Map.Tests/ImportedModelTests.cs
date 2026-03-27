@@ -5,7 +5,8 @@ using WarcraftLegacies.Map.Tests.TestSupport;
 
 namespace WarcraftLegacies.Map.Tests;
 
-public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
+[Collection(nameof(MapTestCollection))]
+public sealed class ImportedModelTests(MapTestFixture fixture)
 {
   [Fact]
   public void AllModels_AreInActiveUse()
@@ -21,7 +22,7 @@ public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFi
       .OrderBy(x => x)
       .ToList();
 
-    var activeModels = GetModelsUsedInMap(mapTestFixture.Map).OrderBy(x => x).ToHashSet();
+    var activeModels = GetModelsUsedInMap(fixture.Map).OrderBy(x => x).ToHashSet();
 
     var unusedModels = importedModels
       .Where(model => !activeModels.Contains(model))

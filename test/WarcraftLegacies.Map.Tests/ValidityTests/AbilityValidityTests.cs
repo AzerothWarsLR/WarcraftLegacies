@@ -9,12 +9,13 @@ using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
-public sealed class AbilityValidityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
+[Collection(nameof(MapTestCollection))]
+public sealed class AbilityValidityTests(MapTestFixture fixture)
 {
   [Fact]
   public void AllAbilities_HaveValidFields()
   {
-    var objectDatabase = mapTestFixture.ObjectDatabase;
+    var objectDatabase = fixture.ObjectDatabase;
 
     var exceptionMessageBuilder = new StringBuilder();
     foreach (var ability in objectDatabase.GetAbilities())
@@ -36,7 +37,7 @@ public sealed class AbilityValidityTests(MapTestFixture mapTestFixture) : IClass
   [Fact]
   public void AllAbilities_CanBeHandledByWar3Net()
   {
-    var objectDatabase = mapTestFixture.ObjectDatabase;
+    var objectDatabase = fixture.ObjectDatabase;
 
     var exceptionMessageBuilder = new StringBuilder();
     foreach (var ability in objectDatabase.GetAbilities())

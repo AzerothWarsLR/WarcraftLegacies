@@ -5,7 +5,8 @@ using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.RulesTests;
 
-public sealed class UnitEditorSuffixTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
+[Collection(nameof(MapTestCollection))]
+public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
 {
   private static readonly List<string> _approvedEditorSuffixes =
   [
@@ -47,7 +48,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture mapTestFixture) : IClas
   public void AllUnits_FirstWordOfEditorSuffix_MatchesApprovedList()
   {
     var issues = new List<string>();
-    var objectDatabase = mapTestFixture.ObjectDatabase;
+    var objectDatabase = fixture.ObjectDatabase;
 
     foreach (var unit in objectDatabase.GetUnits().ToArray())
     {
