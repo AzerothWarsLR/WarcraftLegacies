@@ -235,7 +235,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Gazlowee burns some extra fuel, resetting the cooldown of all his abilities.|n|n|cffffcc00Level 1|r - 400 mana.|n|cffffcc00Level 2|r - 250 mana.|n|cffffcc00Level 3|r - 100 mana."
+      "Value": "Gazlowe burns some extra fuel, resetting the cooldown of all his abilities.|n|n|cffffcc00Level 1|r - 400 mana.|n|cffffcc00Level 2|r - 250 mana.|n|cffffcc00Level 3|r - 100 mana."
     },
     {
       "Level": 1,
@@ -259,19 +259,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gazlowee overclock his mech, instantly resetting his spell cooldowns."
+      "Value": "Gazlowe overclock his mech, instantly resetting his spell cooldowns."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gazlowee overclock his mech, instantly resetting his spell cooldowns."
+      "Value": "Gazlowe overclock his mech, instantly resetting his spell cooldowns."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gazlowee overclock his mech, instantly resetting his spell cooldowns."
+      "Value": "Gazlowe overclock his mech, instantly resetting his spell cooldowns."
     }
   ]
 }
