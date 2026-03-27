@@ -63,5 +63,20 @@ public static class SharedSpellSetup
     {
       Target = InstantKill.KillTarget.Self
     });
+
+    var warStompCairneMannorothTichondrius = new MassAnySpell(ABILITY_A0WM_WAR_STOMP_CAIRNE_MANNOROTH)
+    {
+      Radius = 300,
+      Damage = new LeveledAbilityField<float>
+      {
+        PerLevel = 25
+      },
+      DummyAbilityId = ABILITY_A0WN_STUN_UNIT_DUMMY_CASTER_WAR_STOMP_CAIRNE,
+      DummyAbilityOrderId = ORDER_THUNDERBOLT,
+      SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl",
+      CastFilter = CastFilters.IsTargetEnemyAliveAndGroundUnits,
+      TargetType = SpellTargetType.None
+    };
+    SpellRegistry.Register(warStompCairneMannorothTichondrius);
   }
 }
