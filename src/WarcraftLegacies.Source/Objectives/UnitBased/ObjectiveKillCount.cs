@@ -1,6 +1,6 @@
-﻿using MacroTools.Factions;
+﻿using MacroTools.Events;
+using MacroTools.Factions;
 using MacroTools.Quests;
-using MacroTools.Setup;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;

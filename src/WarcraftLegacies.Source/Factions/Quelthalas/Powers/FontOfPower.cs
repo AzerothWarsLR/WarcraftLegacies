@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Events;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
-using MacroTools.Setup;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WCSharp.Events;
 using WCSharp.Shared;

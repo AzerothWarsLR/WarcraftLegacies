@@ -1,5 +1,5 @@
-﻿using MacroTools.Factions;
-using MacroTools.Setup;
+﻿using MacroTools.Events;
+using MacroTools.Factions;
 using WCSharp.Events;
 using WCSharp.Lightnings;
 

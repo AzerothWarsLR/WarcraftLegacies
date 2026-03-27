@@ -1,7 +1,7 @@
 ﻿using System;
+using MacroTools.Events;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;

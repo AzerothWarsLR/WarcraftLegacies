@@ -2,7 +2,7 @@
 using MacroTools.Factions;
 using WCSharp.Events;
 
-namespace MacroTools.Setup;
+namespace MacroTools.Events;
 
 /// <summary>
 /// Provides a set of custom player unit events for the <see cref="PlayerUnitEvents"/> system.

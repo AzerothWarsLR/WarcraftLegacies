@@ -1,6 +1,6 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.Events;
+using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Setup;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas.Powers;

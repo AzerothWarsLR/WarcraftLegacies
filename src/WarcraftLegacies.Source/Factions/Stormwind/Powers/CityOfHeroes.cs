@@ -1,7 +1,7 @@
 ﻿using System;
+using MacroTools.Events;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Setup;
 using WCSharp.Api.Enums;
 using WCSharp.Effects;
 using WCSharp.Events;
