@@ -169,7 +169,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Assasinate"
+      "Value": "Assassinate"
     },
     {
       "Id": 1918988897,
@@ -188,7 +188,7 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Assasinate - [|cffffcc00Level %d|r]"
+      "Value": "Learn Assassinate - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
@@ -199,19 +199,19 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Assasinate - [|cffffcc00Level 1|r]"
+      "Value": "Assassinate - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Assasinate - [|cffffcc00Level 2|r]"
+      "Value": "Assassinate - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Assasinate - [|cffffcc00Level 3|r]"
+      "Value": "Assassinate - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
