@@ -274,7 +274,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Rend lets lose a ferocious howl increasing his allies damage and health regeneration for 25 seconds.|n|n|cffffcc00Level 1|r - 15% damage, 180% regen|n|cffffcc00Level 2|r - 20% damage, 260% regen|n|cffffcc00Level 3|r - 25% damage, 340% regen|n|cffffcc00Level 4|r - 30% damage, 420% regen"
+      "Value": "Rend lets lose a ferocious howl increasing his allies damage and health regeneration for 25 seconds.|n|n|cffffcc00Level 1|r - 15% damage, 180% regeneration|n|cffffcc00Level 2|r - 20% damage, 260% regeneration|n|cffffcc00Level 3|r - 25% damage, 340% regeneration|n|cffffcc00Level 4|r - 30% damage, 420% regeneration"
     },
     {
       "Level": 1,
