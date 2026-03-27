@@ -187,19 +187,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|nLasts 30 seconds."
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 15 damage. |n|nLasts 30 seconds."
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 15 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
     }
   ]
 }
