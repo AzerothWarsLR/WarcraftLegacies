@@ -12,9 +12,9 @@ public static class DisplayIntroText
   /// <summary>
   /// Displays intro text to all players after some period of time has elapsed.
   /// </summary>
-  /// <param name="displayTime">The time after which to display intro text, in seconds.</param>
-  public static void Setup(float displayTime)
+  public static void PreSetup()
   {
+    const float displayTime = 25;
     timer.Create().Start(displayTime, false, () =>
     {
       try

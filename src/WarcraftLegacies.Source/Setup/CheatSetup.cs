@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class CheatSetup
 {
-  public static void Setup()
+  public static void PreSetup()
   {
     CommandManager.Register(new CheatAddSpell());
     CommandManager.Register(new CheatResearchLevel());

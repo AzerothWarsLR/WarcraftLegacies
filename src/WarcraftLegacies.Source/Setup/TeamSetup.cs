@@ -13,7 +13,8 @@ public static class TeamSetup
   public static Team Outland { get; private set; }
   public static Team OldGods { get; private set; }
   public static Team Kalimdor { get; private set; }
-  public static void Setup()
+
+  public static void MainSetup()
   {
     Alliance = new Team("Alliance")
     {

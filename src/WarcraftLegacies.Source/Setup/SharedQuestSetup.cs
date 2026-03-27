@@ -17,7 +17,7 @@ public static class SharedQuestSetup
   /// <summary>
   /// Sets up all shared <see cref="QuestData"/>s.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     SharedQuestRepository.RegisterQuest(CreateTombOfSargerasQuest());
     SharedQuestRepository.RegisterQuest(CreateRagnarosQuest());

@@ -17,7 +17,7 @@ public static class UnitTypeTraitRegistry
   /// for any <see cref="UnitTrait"/>s it finds. This should be run at game start to ensure that preplaced units
   /// are initialized correctly.
   /// </summary>
-  public static void InitializePreplacedUnits()
+  public static void MainSetup()
   {
     var group = GlobalGroup
       .EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds);
@@ -30,7 +30,7 @@ public static class UnitTypeTraitRegistry
 
   /// <summary>
   /// Finds any <see cref="UnitTrait"/>s on the specified unit and forcibly fires <see cref="IEffectOnCreated.OnCreated"/>
-  /// for each of them. Usually <see cref="InitializePreplacedUnits"/> should have covered this already.
+  /// for each of them. Usually <see cref="MainSetup"/> should have covered this already.
   /// </summary>
   public static void ForceOnCreated(unit whichUnit)
   {

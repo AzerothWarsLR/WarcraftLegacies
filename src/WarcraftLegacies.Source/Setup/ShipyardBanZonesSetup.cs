@@ -4,7 +4,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class ShipyardBanZonesSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     ShipyardBanZones.Setup(new[]
     {

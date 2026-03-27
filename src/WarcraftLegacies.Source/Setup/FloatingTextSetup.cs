@@ -10,7 +10,7 @@ public static class FloatingTextSetup
   /// </summary>
   /// <param name="delay">How long to wait before spawning the text. Must be greater than 0 or the text won't spawn.</param>
   /// <param name="fontSize">How large the floating text should be.</param>
-  public static void Setup(float delay, int fontSize)
+  public static void PostSetup(float delay, int fontSize)
   {
     timer timer = timer.Create();
     timer.Start(delay, false, () =>

@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class GameModeManagerSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     var gameModeManager = new GameModeManager(new IGameMode[]
     {

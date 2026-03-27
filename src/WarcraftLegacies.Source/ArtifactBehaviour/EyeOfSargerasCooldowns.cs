@@ -25,6 +25,6 @@ public static class EyeOfSargerasCooldowns
   /// <summary>
   /// Sets up <see cref="EyeOfSargerasCooldowns"/>.
   /// </summary>
-  public static void Setup() =>
+  public static void MainSetup() =>
     PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, ItemPickup, ITEM_I003_EYE_OF_SARGERAS);
 }

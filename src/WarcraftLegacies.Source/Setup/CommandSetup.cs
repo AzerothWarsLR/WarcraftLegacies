@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class CommandSetup
 {
-  public static void Setup()
+  public static void PreSetup()
   {
     CommandManager.Register(new Limited());
     CommandManager.Register(new Clear("clear"));

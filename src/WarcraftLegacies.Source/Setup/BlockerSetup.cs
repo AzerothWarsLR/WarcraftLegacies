@@ -10,7 +10,7 @@ public static class BlockerSetup
   /// <summary>
   /// Hides all pathing blockers on the map.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     var pathingBlockers = new[]
     {

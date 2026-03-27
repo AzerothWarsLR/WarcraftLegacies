@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class ShoreSetup
 {
-  public static void Setup()
+  public static void PreSetup()
   {
     ShoreManager.Register(new Shore(new Point(-19986, 12602), "Darnassus"));
     ShoreManager.Register(new Shore(new Point(-20649, 9363), "Azuremyst Isle"));

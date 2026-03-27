@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using MacroTools.Setup;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source;
 
@@ -15,15 +15,17 @@ public static class Program
     timer.Start(0.01f, false, () =>
     {
       timer.Dispose();
-      Start();
+      Beans();
     });
   }
 
-  private static void Start()
+  private static void Beans()
   {
     try
     {
-      GameSetup.Setup();
+      SetupOrchestrator.RunPreSetup();
+      SetupOrchestrator.RunMainSetup();
+      SetupOrchestrator.RunPostSetup();
     }
     catch (Exception ex)
     {

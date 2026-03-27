@@ -15,7 +15,7 @@ public static class StartingQuestPopup
   /// after a period of time has elapsed.
   /// </summary>
   /// <param name="timeToDisplay">Number of seconds after which to display the quests.</param>
-  public static void Setup(float timeToDisplay)
+  public static void PostSetup(float timeToDisplay)
   {
     var trig = trigger.Create();
     trig.RegisterTimerEvent(timeToDisplay, false);

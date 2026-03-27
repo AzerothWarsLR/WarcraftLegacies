@@ -20,7 +20,7 @@ public static class GameTimeManager
   private static readonly TurnScheduler _turnScheduler = new();
 
   /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
-  public static void Start()
+  public static void PostSetup()
   {
     if (_turnTimer != null)
     {
@@ -38,7 +38,7 @@ public static class GameTimeManager
   /// Thrown if the <see cref="GameTimeManager"/> has not been initialized.
   /// </exception>
   /// <remarks>
-  /// <see cref="Start"/> must be called before invoking this method. The returned
+  /// <see cref="PostSetup"/> must be called before invoking this method. The returned
   /// dialog reflects the countdown of the current turn, whose duration is defined
   /// by <see cref="TurnDuration"/>.
   /// </remarks>
@@ -46,7 +46,7 @@ public static class GameTimeManager
   {
     if (_turnTimer == null)
     {
-      throw new InvalidOperationException($"{nameof(GameTimeManager)} has not been initialized. Call {nameof(Start)} before creating a timer dialog.");
+      throw new InvalidOperationException($"{nameof(GameTimeManager)} has not been initialized. Call {nameof(PostSetup)} before creating a timer dialog.");
     }
 
     return timerdialog.Create(_turnTimer);

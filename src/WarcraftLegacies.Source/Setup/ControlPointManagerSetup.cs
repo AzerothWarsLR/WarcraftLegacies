@@ -4,7 +4,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class ControlPointManagerSetup
 {
-  public static void Setup()
+  public static void PreSetup()
   {
     ControlPointManager.Instance = new ControlPointManager
     {

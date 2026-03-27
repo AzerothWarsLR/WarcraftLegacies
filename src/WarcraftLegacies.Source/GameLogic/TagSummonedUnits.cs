@@ -10,7 +10,7 @@ public static class TagSummonedUnits
   /// <summary>
   /// Sets up <see cref="TagSummonedUnits"/>.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
     {

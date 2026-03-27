@@ -13,7 +13,7 @@ public static class CleanupUnoccupiedPlayerSlots
   /// <summary>
   ///   After a short delay, removes players from the game if their slot is unoccupied.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     var trig = trigger.Create();
     trig.RegisterTimerEvent(2, false);

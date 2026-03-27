@@ -14,7 +14,7 @@ public static class SoundLibrary
 
   public static sound Discovered { get; private set; }
 
-  public static void Setup()
+  public static void PreSetup()
   {
     Rescue = sound.CreateFromLabel("Rescue", false, false, false, 10000, 10000);
     Hint = sound.CreateFromLabel("Hint", false, false, false, 10000, 10000);

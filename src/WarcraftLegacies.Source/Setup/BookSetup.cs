@@ -13,7 +13,7 @@ public static class BookSetup
   /// <summary>
   /// Sets up all <see cref="ISpecialMenu"/>s.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     foreach (var player in Util.EnumeratePlayers())
     {

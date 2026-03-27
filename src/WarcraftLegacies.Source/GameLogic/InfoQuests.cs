@@ -8,7 +8,7 @@ public static class InfoQuests
   /// <summary>
   /// Creates a series of dummy quests that provide information to players.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     var creditsAndDiscordQuest = quest.Create();
     creditsAndDiscordQuest.SetTitle("Discord & Credits");

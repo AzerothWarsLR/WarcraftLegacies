@@ -11,7 +11,7 @@ public static class CapturableUnitSetup
   /// <summary>
   /// Sets up <see cref="CapturableUnitSetup"/>.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     foreach (var fountainOfHealth in AllPreplacedWidgets.Units.GetAll(UNIT_NFOH_FOUNTAIN_OF_HEALTH))
     {

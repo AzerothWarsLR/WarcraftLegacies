@@ -8,7 +8,7 @@ public static class DynamicUnitNameRegistry
 {
   private static readonly Dictionary<int, NamePool> _pools = new();
 
-  public static void Setup(Dictionary<int, List<string>> nameData)
+  public static void MainSetup(Dictionary<int, List<string>> nameData)
   {
     foreach (var kvp in nameData)
     {

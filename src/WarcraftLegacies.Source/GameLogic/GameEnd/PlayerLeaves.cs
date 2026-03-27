@@ -39,7 +39,7 @@ public static class PlayerLeaves
   /// <summary>
   /// Sets up <see cref="PlayerLeaves"/>.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     trigger trigger = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())

@@ -11,7 +11,7 @@ public static class SummonRallyPoints
   /// <summary>
   /// Sets up <see cref="SummonRallyPoints"/>.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
     {

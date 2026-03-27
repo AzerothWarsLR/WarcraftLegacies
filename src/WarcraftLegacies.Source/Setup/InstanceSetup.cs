@@ -10,7 +10,7 @@ public static class InstanceSetup
   /// <summary>
   /// Sets up all <see cref="Instance"/>s.
   /// </summary>
-  public static void Setup()
+  public static void PreSetup()
   {
     InstanceSystem.Register(
       new Instance(Regions.MonolithNoBuild)

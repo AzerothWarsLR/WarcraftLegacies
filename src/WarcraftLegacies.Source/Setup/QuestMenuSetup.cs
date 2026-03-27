@@ -5,7 +5,7 @@
 /// </summary>
 public static class QuestMenuSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     //Quest frames aren't rendered until the Quest menu is first accessed
     framehandle.Get("UpperButtonBarQuestsButton", 0).Click();

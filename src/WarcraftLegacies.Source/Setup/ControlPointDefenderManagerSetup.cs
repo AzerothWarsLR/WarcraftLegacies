@@ -4,7 +4,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class ControlPointDefenderManagerSetup
 {
-  public static void Setup()
+  public static void PreSetup()
   {
     ControlPointDefenderManager.Initialize(ControlPointManager.Instance, new ControlPointDefenderSettings
     {

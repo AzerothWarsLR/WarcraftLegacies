@@ -47,7 +47,7 @@ public sealed class FactionMultiboard
   /// <summary>
   /// Sets up the globally visible <see cref="FactionMultiboard"/>.
   /// </summary>
-  public static void Setup()
+  public static void PreSetup()
   {
     if (_initialized)
     {

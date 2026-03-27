@@ -10,7 +10,7 @@ public static class DemonGateSetup
   /// <summary>
   /// Registers all <see cref="DemonGate"/>s.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     DemonGateBuff.Setup(ABILITY_A05V_TOGGLE_SUMMONING_FEL_HORDE_DEMON_GATE, BUFF_B08B_TOGGLE_SUMMONING_FEL_HORDE_DEMON_GATE);
 

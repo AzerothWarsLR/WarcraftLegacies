@@ -14,7 +14,7 @@ public static class SaveManager
   internal static Dictionary<player, PlayerSettings> SavesByPlayer { get; } = new();
   private static SaveSystem<PlayerSettings>? _saveSystem;
 
-  public static void Initialize()
+  public static void PreSetup()
   {
     _saveSystem = new SaveSystem<PlayerSettings>(new SaveSystemOptions
     {

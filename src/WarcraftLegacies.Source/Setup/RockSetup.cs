@@ -9,9 +9,8 @@ public static class RockSetup
 {
   private static readonly int _rockChunkId = FourCC("LTrc");
 
-  public static void Setup()
+  public static void PostSetup()
   {
-
     //south rocks
     RockSystem.Register(new RockGroup(Regions.KaliRock12, _rockChunkId));
 

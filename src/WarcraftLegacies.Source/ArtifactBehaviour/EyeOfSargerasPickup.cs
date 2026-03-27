@@ -14,7 +14,7 @@ public static class EyeOfSargerasPickup
   /// <summary>
   /// Sets up <see cref="EyeOfSargerasPickup"/>.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp, ITEM_I003_EYE_OF_SARGERAS);
   }

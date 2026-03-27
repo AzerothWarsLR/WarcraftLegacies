@@ -26,7 +26,7 @@ public static class PlayerElimination
   /// <remarks>
   /// Elimination checks begin once the <see cref="EliminationStartTurn"/> turn is reached.
   /// </remarks>
-  public static void Setup()
+  public static void PostSetup()
   {
     GameTimeManager.RegisterOnTurnRepeating(EliminationStartTurn, static () =>
     {

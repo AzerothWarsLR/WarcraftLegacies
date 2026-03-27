@@ -10,7 +10,7 @@ public static class NeutralHostileSetup
   /// <summary>
   /// Grants all units controlled by Illidan to Neutral Hostile, except for those in <see cref="Regions.IllidanStartingPosition"/>.
   /// </summary>
-  public static void Setup()
+  public static void PreSetup()
   {
     foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(player.Create(20)))
     {

@@ -12,7 +12,7 @@ public static class DarkPortalControlNexusSetup
   /// <summary>
   /// Sets up <see cref="DarkPortalControlNexusSetup"/>.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     foreach (var controlNexus in AllPreplacedWidgets.Units.GetAll(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS))
     {

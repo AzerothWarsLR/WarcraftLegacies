@@ -146,7 +146,7 @@ public static class AllLegends
   /// <summary>
   /// Registers all <see cref="Legend"/>s managed by the <see cref="AllLegends"/>.
   /// </summary>
-  public static void Setup()
+  public static void PreSetup()
   {
     Dalaran.RegisterLegends();
     Draenei.RegisterLegends();

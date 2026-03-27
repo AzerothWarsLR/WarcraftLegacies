@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class UnitTypeSetup
 {
-  public static void Setup()
+  public static void PreSetup()
   {
     SubSetupFactionConfig();
     SubSetupPortals();

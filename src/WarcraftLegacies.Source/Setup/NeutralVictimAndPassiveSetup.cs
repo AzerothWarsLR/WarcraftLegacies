@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class NeutralVictimAndPassiveSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     Regions.HideUnitBottomLeft.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     foreach (var player in Util.EnumeratePlayers())

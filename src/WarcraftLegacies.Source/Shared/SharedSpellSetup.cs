@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Shared;
 
 public static class SharedSpellSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     var massEnrage = new MassAnySpell(ABILITY_A0QK_MASS_ENRAGE_HAKKAR)
     {

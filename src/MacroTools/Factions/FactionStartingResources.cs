@@ -12,7 +12,7 @@ public static class FactionStartingResources
   /// <summary>
   /// After a player is assigned a faction, they are given the faction's starting resources.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     FactionManager.FactionRegistered += faction =>
     {

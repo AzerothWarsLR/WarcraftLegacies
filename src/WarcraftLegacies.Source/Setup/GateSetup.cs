@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class GateSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     UnitTypeTraitRegistry.Register(
       new Gate(UNIT_H00L_HORIZONTAL_WOODEN_GATE_GATE_OPEN, UNIT_H00M_HORIZONTAL_WOODEN_GATE_GATE_DEAD),

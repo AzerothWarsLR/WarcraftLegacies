@@ -12,7 +12,7 @@ public static class AmbianceSetup
   /// <summary>
   /// Adds ambient sounds to regions across the map.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     StopDefaultAmbientSounds();
     SetupEasternKingdoms();

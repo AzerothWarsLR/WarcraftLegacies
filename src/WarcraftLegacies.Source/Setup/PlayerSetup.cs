@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class PlayerSetup
 {
-  public static void Setup()
+  public static void MainSetup()
   {
     SetupPlayer(player.Create(1), new StormwindFaction());
     SetupPlayer(player.Create(2), new QuelthalasFaction());

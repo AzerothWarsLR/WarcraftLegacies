@@ -20,11 +20,12 @@ public static class CinematicMode
   public static CinematicState State => _state;
 
   /// <summary>
-  /// Initiates cinematic mode.
+  /// Initiates cinematic mode for 59 seconds.
   /// </summary>
-  /// <param name="duration">How long cinematic mode should last.</param>
-  public static void Setup(float duration)
+  public static void PreSetup()
   {
+    const float duration = 59f;
+
     _cinematicTimer = timer.Create();
     _cinematicTimer.Start(duration, false, TimerEnd);
 

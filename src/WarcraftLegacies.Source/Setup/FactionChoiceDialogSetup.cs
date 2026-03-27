@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class FactionChoiceDialogSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     var illidari = new FactionChoice
     {

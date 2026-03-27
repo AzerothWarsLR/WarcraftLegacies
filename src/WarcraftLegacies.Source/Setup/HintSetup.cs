@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup;
 
 public static class HintConfig
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     Hint.Register("Quests are unique objectives that grant rewards when completed. View the Quest Menu (F9) to see the quests available to your faction.");
     Hint.Register("Artifacts are unique items that can grant major advantages. You can find out where Artifacts are using the Artifact Menu at the top-left of your screen.");

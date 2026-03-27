@@ -13,7 +13,7 @@ public static class HeroGlowFix
   /// Causes heroes trained to have their colours manually set to the colour indicated by their <see cref="Legend"/>
   /// class. This avoids a Warcraft 3 issue wherein revived heroes do not have their attachment colours updated to match their colour.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () =>
     {

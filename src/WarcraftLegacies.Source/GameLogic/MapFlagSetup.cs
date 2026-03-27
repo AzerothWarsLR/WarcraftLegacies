@@ -8,7 +8,7 @@ public static class MapFlagSetup
   /// <summary>
   /// Forces observers to be enabled.
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     SetMapFlag(mapflag.Observers, true);
     SetMapFlag(mapflag.ObserversOnDeath, true);

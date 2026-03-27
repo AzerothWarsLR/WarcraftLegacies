@@ -27,7 +27,7 @@ public static class RefundZeroLimitUnits
   /// Registers triggers that cause the following:
   /// <para>Whenever a unit with a tech limit of 0 is trained or revived, delete and refund it instantly.</para>
   /// </summary>
-  public static void Setup()
+  public static void PostSetup()
   {
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining,
       () => { VerifyUnitIntegrity(@event.TrainedUnit); });

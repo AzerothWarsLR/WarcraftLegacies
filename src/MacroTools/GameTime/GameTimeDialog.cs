@@ -15,7 +15,7 @@ public static class GameTimeDialog
   /// <remarks>
   /// The dialog display is delayed to avoid conflicts with the multiboard initialization.
   /// </remarks>
-  public static void Setup()
+  public static void PostSetup()
   {
     if (_timerDialog != null)
     {

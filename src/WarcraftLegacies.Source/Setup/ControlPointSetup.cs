@@ -18,7 +18,7 @@ public static class ControlPointSetup
     new(BUFF_B06A_COMMAND_POINT_25_GOLD_PER_MINUTE, 25, false)
   };
 
-  public static void Setup()
+  public static void PreSetup()
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds))
     {

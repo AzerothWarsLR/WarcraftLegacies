@@ -13,7 +13,7 @@ public static class RuntimeIntegrityChecker
   /// <summary>
   /// Runs the <see cref="RuntimeIntegrityChecker"/>.
   /// </summary>
-  public static void Setup()
+  public static void MainSetup()
   {
     GameTimeManager.RegisterOnTurn(1, RunGameStartChecks);
     CheckUndefeatedResearchNames();

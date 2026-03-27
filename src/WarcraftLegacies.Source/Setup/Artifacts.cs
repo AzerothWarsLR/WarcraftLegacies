@@ -165,7 +165,7 @@ public static class Artifacts
     ArtifactManager.Register(SunwellVial);
   }
 
-  public static void Setup()
+  public static void PreSetup()
   {
     // No-op used to force execution of the static constructor.
   }

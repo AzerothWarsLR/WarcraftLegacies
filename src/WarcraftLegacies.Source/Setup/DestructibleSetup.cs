@@ -7,10 +7,9 @@ namespace WarcraftLegacies.Source.Setup;
 /// </summary>
 public static class DestructibleSetup
 {
-  public static void Setup()
+  public static void PostSetup()
   {
     var thandolSpan = AllPreplacedWidgets.Destructables.GetClosest(FourCC("LT08"), 15695, 457);
     thandolSpan.IsInvulnerable = true;
-    //thandolSpan.Kill();
   }
 }

@@ -52,7 +52,7 @@ public static class FactionManager
   /// <summary>
   /// Initialize WC3 game events related to <see cref="Faction"/>s.
   /// </summary>
-  public static void Setup()
+  public static void PreSetup()
   {
     PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
     {
