@@ -85,25 +85,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives an additional 0.8 mana regen per second to nearby units."
+      "Value": "Gives an additional 0.8 mana regeneration per second to nearby units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives an additional 1.1 mana regen per second to nearby units."
+      "Value": "Gives an additional 1.1 mana regeneration per second to nearby units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives an additional 1.4 mana regen per second to nearby units."
+      "Value": "Gives an additional 1.4 mana regeneration per second to nearby units."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives an additional 1.7 mana regen per second to nearby units."
+      "Value": "Gives an additional 1.7 mana regeneration per second to nearby units."
     }
   ]
 }
