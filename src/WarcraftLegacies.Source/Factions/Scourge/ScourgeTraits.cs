@@ -22,21 +22,6 @@ public static class ScourgeTraits
       DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
     }, UNIT_N094_ICECROWN_OBELISK_SCOURGE);
 
-    UnitTypeTraitRegistry.Register(new CreateUnitOnDeath
-    {
-      Duration = 30,
-      CreateUnitTypeId = UNIT_U012_HALF_GHOUL_SCOURGE,
-      CreateCount = 1,
-      SpecialEffectPath = @"Objects\Spawnmodels\Human\HumanBlood\HumanBloodLarge0.mdl",
-      RequiredResearch = UPGRADE_R008_DOMINATION_POWER
-    }, UNIT_UGHO_GHOUL_SCOURGE);
-
-    UnitTypeTraitRegistry.Register(new CreateCorpseOnDeath
-    {
-      CorpseUnitTypeId = UNIT_UGHO_GHOUL_SCOURGE,
-      CorpseCount = 1
-    }, UNIT_U012_HALF_GHOUL_SCOURGE);
-
     UnitTypeTraitRegistry.Register(new SummonUnitOnCast(ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
     {
       Duration = 45,

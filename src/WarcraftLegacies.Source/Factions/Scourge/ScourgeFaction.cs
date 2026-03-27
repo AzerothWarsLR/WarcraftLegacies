@@ -158,7 +158,6 @@ public sealed class ScourgeFaction : Faction
       MindlessUndeadUnitTypes = new List<int>
       {
         UNIT_UGHO_GHOUL_SCOURGE,
-        UNIT_U012_HALF_GHOUL_SCOURGE,
         UNIT_UABO_ABOMINATION_SCOURGE,
         UNIT_UFRO_FROST_WYRM_SCOURGE,
         UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE,
