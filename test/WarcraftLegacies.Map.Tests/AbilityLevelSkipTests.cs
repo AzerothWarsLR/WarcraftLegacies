@@ -7,20 +7,14 @@ using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests;
 
-public sealed class AbilityLevelSkipTests : IClassFixture<MapTestFixture>
+[Collection(nameof(MapTestCollection))]
+public sealed class AbilityLevelSkipTests(MapTestFixture fixture)
 {
-  private readonly MapTestFixture _mapTestFixture;
-
-  public AbilityLevelSkipTests(MapTestFixture mapTestFixture)
-  {
-    _mapTestFixture = mapTestFixture;
-  }
-
   [Fact]
   public void AllUnits_HaveValidFields()
   {
     var issues = new List<string>();
-    var objectDatabase = _mapTestFixture.ObjectDatabase;
+    var objectDatabase = fixture.ObjectDatabase;
 
     foreach (var unit in objectDatabase.GetAbilities())
     {
