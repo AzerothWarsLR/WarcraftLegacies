@@ -236,19 +236,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero blows the Horn of Stormwind giving nearby friendly units a bonus 15 point to attack damage and a 4 point bouns to defense. |nLasts 15 seconds."
+      "Value": "The hero blows the Horn of Stormwind giving nearby friendly units a bonus 15 point to attack damage and a 4 point bonus to defense. |nLasts 15 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero blows the Horn of Stormwind giving nearby friendly units a bonus 30 point to attack damage and a 8 point bouns to defense. |nLasts 20 seconds."
+      "Value": "The hero blows the Horn of Stormwind giving nearby friendly units a bonus 30 point to attack damage and a 8 point bonus to defense. |nLasts 20 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero blows the Horn of Stormwind giving nearby friendly units a bonus 45 point to attack damage and a 12 point bouns to defense. |nLasts 25 seconds."
+      "Value": "The hero blows the Horn of Stormwind giving nearby friendly units a bonus 45 point to attack damage and a 12 point bonus to defense. |nLasts 25 seconds."
     }
   ]
 }
