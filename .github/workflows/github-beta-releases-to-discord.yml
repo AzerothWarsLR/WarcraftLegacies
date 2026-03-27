@@ -1,8 +1,6 @@
 on:
   release:
-    types: [published]
-    branches: 
-      - dev
+    types: [prereleased]
 
 jobs:
   github-releases-to-discord:
