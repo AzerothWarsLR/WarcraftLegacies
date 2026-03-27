@@ -252,7 +252,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The Hero rallies his men increasing their movespeed drastically for a short period of time. |n|n|cffffcc00Level 1|r - Increases movespeed by 40%. |n|cffffcc00Level 2|r - Increases movespeed by 60%. |n|cffffcc00Level 3|r - Increases movespeed by 80%. |n|cffffcc00Level 4|r - Increases movespeed by 100%.|n|nLasts 10 seconds."
+      "Value": "The Hero rallies his men increasing their movement speed drastically for a short period of time. |n|n|cffffcc00Level 1|r - Increases movement speed by 40%. |n|cffffcc00Level 2|r - Increases movement speed by 60%. |n|cffffcc00Level 3|r - Increases movement speed by 80%. |n|cffffcc00Level 4|r - Increases movement speed by 100%.|n|nLasts 10 seconds."
     },
     {
       "Level": 1,
@@ -282,25 +282,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Hero empowers nearby friendly units, increasing their movespeed by 60% for 10 seconds."
+      "Value": "The Hero empowers nearby friendly units, increasing their movement speed by 60% for 10 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Hero rallies his men increasing their movespeed by 60% for 10 seconds."
+      "Value": "The Hero rallies his men increasing their movement speed by 60% for 10 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Hero rallies his men increasing their movespeed by 80% for 10 seconds."
+      "Value": "The Hero rallies his men increasing their movement speed by 80% for 10 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Hero rallies his men increasing their movespeed by 100% for 10 seconds."
+      "Value": "The Hero rallies his men increasing their movement speed by 100% for 10 seconds."
     }
   ]
 }
