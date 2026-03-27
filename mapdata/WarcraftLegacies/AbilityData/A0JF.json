@@ -206,13 +206,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation abillity. Summons 3 Fire Elementals."
+      "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation ability. Summons 3 Fire Elementals."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation abillity. Summons 4 Fire Elementals."
+      "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation ability. Summons 4 Fire Elementals."
     },
     {
       "Level": 3,
@@ -224,7 +224,7 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero summons powerful fire elementals to fight by his side. The Fire Elementals have Incinerate, Immolation and the Breath of Fire abillity. Summons 5 strong Fire Elementals."
+      "Value": "The hero summons powerful fire elementals to fight by his side. The Fire Elementals have Incinerate, Immolation and the Breath of Fire ability. Summons 5 strong Fire Elementals."
     }
   ]
 }
