@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Dialogues;
 using MacroTools.Save;
@@ -114,6 +115,13 @@ public static class PlayerExtensions
       FlashQuestDialogButton();
     }
   }
+
+  /// <summary>
+  /// Returns the number of units of the provided type the player controls.
+  /// <remarks>Use sparingly; this enumerates ALL the player's units.</remarks>
+  /// </summary>
+  public static int CountUnitsOfUnitType(this player whichPlayer, int unitType) =>
+    GlobalGroup.EnumUnitsOfPlayer(whichPlayer).Count(x => x.UnitType == unitType);
 
   /// <summary>
   /// Returns cross-game settings set by the player.
