@@ -5,8 +5,16 @@ namespace Warcraft.Cartographer.Extensions;
 
 public static class BaseObjectExtensions
 {
-  public static int GetId(this BaseObject baseObject) => baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
+  extension(BaseObject baseObject)
+  {
+    public int GetId()
+    {
+      return baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
+    }
 
-  public static string GetReadableId(this BaseObject baseObject) =>
-    baseObject.NewId != 0 ? baseObject.NewId.ToRawcode() : baseObject.OldId.ToRawcode();
+    public string GetReadableId()
+    {
+      return baseObject.GetId().ToRawcode();
+    }
+  }
 }
