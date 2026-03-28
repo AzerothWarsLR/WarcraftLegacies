@@ -28,6 +28,7 @@ public sealed class IceBlockBuff : BoundBuff
       target.IsInvulnerable = true;
       target.SetTimeScale(0);
     }
+    Target.IsInvulnerable = true;
   }
 
   /// <inheritdoc />

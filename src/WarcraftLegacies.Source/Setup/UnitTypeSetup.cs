@@ -12,6 +12,7 @@ public static class UnitTypeSetup
     SubSetupTrader();
     SubSetupGatesA();
     SubSetupGatesB();
+    SetupFountainOfHealth();
     SubSetupOldGods();
   }
 
@@ -139,6 +140,18 @@ public static class UnitTypeSetup
     });
 
     UnitType.Register(new UnitType(UNIT_H04S_DIAGONAL_WOODEN_GATE_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+  }
+
+  private static void SetupFountainOfHealth()
+  {
+    UnitType.Register(new UnitType(FourCC("ngol"))
+    {
+      NeverDelete = true
+    });
+    UnitType.Register(new UnitType(UNIT_NFOH_FOUNTAIN_OF_HEALTH)
     {
       NeverDelete = true
     });
