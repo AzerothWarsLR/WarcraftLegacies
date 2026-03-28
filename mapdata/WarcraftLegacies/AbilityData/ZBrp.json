@@ -101,7 +101,7 @@
       "Level": 1,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "vulnerable"
+      "Value": "invulnerable,vulnerable"
     },
     {
       "Level": 1,
