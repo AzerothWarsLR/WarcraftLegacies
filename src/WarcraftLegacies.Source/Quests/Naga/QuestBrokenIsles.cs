@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
@@ -25,6 +26,7 @@ public sealed class QuestBrokenIsles : QuestData
       Regions.BrokenIslesB
     }, "the Broken Isles"));
     AddObjective(new ObjectiveLegendReachRect(illidan, Regions.Sargeras_Entrance, "the Tomb of Sargeras entrance"));
+    AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R095_QUEST_COMPLETED_THE_BROKEN_ISLES;
     Knowledge = 10;
   }
