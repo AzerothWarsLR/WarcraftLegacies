@@ -43,7 +43,7 @@ public sealed class IceBlockSpell : Spell
 
     var iceBlockDispelTarget = unit.Create(caster.Owner, DummyUnitTypeId, targetPoint.X, targetPoint.Y);
     var targets = GlobalGroup.EnumUnitsInRange(targetPoint, radius)
-      .Where(x => x != iceBlockDispelTarget && x.Alive && !x.IsInvulnerable)
+      .Where(x => x != iceBlockDispelTarget && IsValidTarget(x))
       .ToList();
 
     DummyCasterManager
@@ -62,5 +62,12 @@ public sealed class IceBlockSpell : Spell
     BuffSystem.Add(iceBlockBuff);
 
     effect.Create(CastEffectPath, targetPoint.X, targetPoint.Y).Dispose();
+  }
+
+  private static bool IsValidTarget(unit target)
+  {
+    return target.Alive &&
+           !target.IsInvulnerable &&
+           !target.IsUnitType(unittype.MagicImmune);
   }
 }
