@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.ControlPoints;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.UnitTypes;
 using MacroTools.Utils;
@@ -131,10 +132,21 @@ public static class UnitExtensions
   }
 
   /// <summary>
-  ///   Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
+  /// Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player. If the unit would put
+  /// the player above their limit for that unit's type, refunds the unit instead.
   /// </summary>
   public static void Rescue(this unit whichUnit, player whichPlayer)
   {
+    var unitType = whichUnit.UnitType;
+    var maxUnitsAllowed = whichPlayer.GetTechMaxAllowed(unitType);
+    if (maxUnitsAllowed is > 0 and < Faction.Unlimited &&
+        maxUnitsAllowed <= whichPlayer.CountUnitsOfUnitType(unitType))
+    {
+      whichPlayer.Gold += whichUnit.GoldCost;
+      whichUnit.SafelyRemove();
+      return;
+    }
+
     //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
     var whichPlayer1 = whichUnit.FoodUsed == 10 ? player.NeutralPassive : whichPlayer;
     whichUnit.SetOwner(whichPlayer1);
