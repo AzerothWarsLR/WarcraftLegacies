@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 using War3Api.Object;
 using War3Net.CodeAnalysis.Jass.Extensions;
 using Warcraft.Cartographer.Deserialization;
@@ -11,7 +12,7 @@ namespace WarcraftLegacies.Map.Tests.TestSupport;
 /// <summary>
 /// Provides a fully constructed Warcraft Legacies map.
 /// </summary>
-public sealed class MapTestFixture
+public sealed partial class MapTestFixture
 {
   private static readonly int[] _utilityUnitIds =
   [
@@ -63,9 +64,16 @@ public sealed class MapTestFixture
     RemovePreplacedUnits(unreachableObjects);
     RemovePreplacedDoodads(unreachableObjects);
 
+    var objectIdsInScript = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+    foreach (var match in FourCcRegex().EnumerateMatches(UncompiledScript))
+    {
+      objectIdsInScript.Add(UncompiledScript.Substring(match.Index, match.Length));
+    }
+
     var objectsInScript = unreachableObjects
       .GetAllObjects()
-      .Where(x => UncompiledScript.Contains(x.GetReadableId(), StringComparison.InvariantCultureIgnoreCase))
+      .Where(x => objectIdsInScript.Contains(x.GetReadableId()))
       .ToList();
 
     foreach (var objectInScript in objectsInScript)
@@ -106,4 +114,7 @@ public sealed class MapTestFixture
   {
     return _utilityUnitIds.Contains(unit.NewId.InvertEndianness());
   }
+
+  [GeneratedRegex(@"(?<![A-Za-z0-9])[A-Za-z0-9]{4}(?![A-Za-z0-9])")]
+  private static partial Regex FourCcRegex();
 }
