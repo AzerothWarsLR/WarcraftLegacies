@@ -1,221 +1,221 @@
 {
-  "OldId": 1853113153,
-  "NewId": 1414745665,
+  "OldId": "ACtn",
+  "NewId": "ANST",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 60
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 3
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 6
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 9
     },
     {
       "Level": 1,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "n04E"
     },
     {
       "Level": 2,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "n04E"
     },
     {
       "Level": 3,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "n04E"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BOwd"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BOwd"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Nzoth)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Spawn Tentacle - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Summons Tentacles at the target location. Lasts 60 seconds. |n|n|cffffcc00Level 1|r - 3 Tentacles.|n|cffffcc00Level 2|r - 6 Tentacles.|n|cffffcc00Level 3|r - 9 Tentacles."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Unleashes 3 mighty tentacles upon the enemy."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Unleashes 6 mighty tentacles upon the enemy."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Unleashes 9 mighty tentacles upon the enemy."
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
     }

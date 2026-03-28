@@ -1,69 +1,69 @@
 {
-  "OldId": 1952937838,
-  "NewId": 1178021998,
+  "OldId": "nwgt",
+  "NewId": "n07F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A03K,Awrp,Avul"
     },
     {
-      "Id": 1836017781,
+      "Id": "uhom",
       "Value": 1
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNPortal.blp"
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Portal)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Emerald Portal"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 50
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 50
     }
   ]

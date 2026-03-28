@@ -1,31 +1,31 @@
 {
-  "OldId": 828861038,
+  "OldId": "njg1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 24
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 525
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium melee unit. "
     }

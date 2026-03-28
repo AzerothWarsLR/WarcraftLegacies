@@ -1,130 +1,130 @@
 {
-  "OldId": 1918984808,
-  "NewId": 859123816,
+  "OldId": "hbar",
+  "NewId": "h053",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 300
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 60
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2500
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 1000
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1918989429,
+      "Id": "utar",
       "Type": 3,
       "Value": "ancient,structure"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1953527157,
+      "Id": "uupt",
       "Type": 3,
       "Value": "h05A"
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 0
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1885430133,
+      "Id": "uaap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Stormwind - Wizard\u0027s Sanctum)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_BaseRuin\\CityBuildingSmall135_0_BaseRuin.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Construction Site"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 7
     },
     {
-      "Id": 1634759541,
+      "Id": "uspa",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": "HSMA"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "HumanLumberMill"
     }

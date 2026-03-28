@@ -1,187 +1,187 @@
 {
-  "OldId": 2004116328,
-  "NewId": 892481640,
+  "OldId": "hctw",
+  "NewId": "h025",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 70
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 30
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2.2
     },
     {
-      "Id": 1664246133,
+      "Id": "ua2c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 8
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 4
     },
     {
-      "Id": 1681023349,
+      "Id": "ua2d",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 125
     },
     {
-      "Id": 1647468917,
+      "Id": "ua2b",
       "Value": 136
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 50
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 40
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2000
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1852404597,
+      "Id": "usin",
       "Value": 1400
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "_"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 900
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 50
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 20
     },
     {
-      "Id": 1932681589,
+      "Id": "ua2s",
       "Value": 26
     },
     {
-      "Id": 1684632437,
+      "Id": "usid",
       "Value": 1800
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "debris,ground,nonancient,notself,structure,tree,wall"
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,tree,wall,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,R013,Rhac,Rgfo"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,sapper"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNStormwindCannonTower.blp"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 175
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\StormwindTower.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 175
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.4
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Stormwind Cannon"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 175
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Upgrade to Improved |cffffcc00C|rannon Tower"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy defensive structure. Particularly effective against clusters of troops."
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Stormwind Tower)"
     },
     {
-      "Id": 1935827317,
+      "Id": "uabs",
       "Type": 3,
       "Value": "Abds,Afsh"
     }

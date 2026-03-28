@@ -1,133 +1,133 @@
 {
-  "OldId": 1818584686,
+  "OldId": "nfel",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0BU,A06Y"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 4
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "medium"
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 17
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 17
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 100
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 100
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1634562933,
+      "Id": "usma",
       "Value": 2
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 20
     },
     {
-      "Id": 1953723253,
+      "Id": "usst",
       "Value": 0
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "summoned"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rguv,Rhme,Rhar"
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 450
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 20
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 1
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Summoner-Warlock-Eye of Sargeras)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Summoned hound. "
     }

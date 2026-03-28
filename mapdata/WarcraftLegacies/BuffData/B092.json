@@ -1,27 +1,27 @@
 {
-  "OldId": 1684097090,
-  "NewId": 842608706,
+  "OldId": "BHad",
+  "NewId": "B092",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASFortifiedDefenses.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Fortified Defense Aura"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This structure is under the effects of Fortified Defense Aura; it has increased armor."
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

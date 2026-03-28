@@ -1,127 +1,127 @@
 {
-  "OldId": 1752328015,
+  "OldId": "Ogrh",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0G9,A0G8,A10G,A0KV,AInv"
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 22
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 1.65
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A0EH"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "A0BO,A03S,Aamk,AOww,A0FK"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 270
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 1.55
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 19
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 260
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 27
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 2.7
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R00X"
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "STR"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Hellscream"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Warsong)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Chieftain of the Warsong Clan"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Hellscream"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Cunning Hero, incredible at killing key units and dealing damage."
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Hellscream"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.05
     }

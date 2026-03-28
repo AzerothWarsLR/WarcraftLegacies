@@ -1,51 +1,51 @@
 {
-  "OldId": 2053732206,
+  "OldId": "nwiz",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A009"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "magic"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "none"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 17
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 530
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 140
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 140
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit. "
     }

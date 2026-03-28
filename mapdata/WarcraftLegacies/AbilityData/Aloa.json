@@ -1,22 +1,22 @@
 {
-  "OldId": 1634692161,
+  "OldId": "Aloa",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Castle)"
     }

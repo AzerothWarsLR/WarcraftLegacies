@@ -1,103 +1,103 @@
 {
-  "OldId": 1734637166,
+  "OldId": "nvdg",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A076"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A076"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 7
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 28
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 19
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1.2
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 5
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 60
     },
     {
-      "Id": 1953723253,
+      "Id": "usst",
       "Value": 0
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1150
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 1
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Eye of Sargeras)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "G"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.2
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged unit that casts Chain Lightning and Frost Armor. "
     }

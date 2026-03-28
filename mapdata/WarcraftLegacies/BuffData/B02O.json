@@ -1,22 +1,22 @@
 {
-  "OldId": 1718832962,
-  "NewId": 1328689218,
+  "OldId": "BOsf",
+  "NewId": "B02O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMageInitiate.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Initiate Mage"
     }

@@ -1,28 +1,28 @@
 {
-  "OldId": 1852132929,
+  "OldId": "ANen",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,neutral,nonhero"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Naga)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ensnare (|cffffcc00Q|r)"
     }

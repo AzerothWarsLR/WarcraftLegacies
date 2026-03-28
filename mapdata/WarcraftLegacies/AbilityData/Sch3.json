@@ -1,19 +1,19 @@
 {
-  "OldId": 862479187,
+  "OldId": "Sch3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,ground,hero,invulnerable,organic,vulnerable"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829579587,
+      "Id": "Car1",
       "Value": 1
     }
   ]

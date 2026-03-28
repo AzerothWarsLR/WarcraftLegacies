@@ -1,91 +1,91 @@
 {
-  "OldId": 1952607553,
-  "NewId": 1348087873,
+  "OldId": "Ambt",
+  "NewId": "A0ZP",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,invulnerable,player,structure,vulnerable"
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 880042573,
+      "Id": "Mbt4",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846488141,
+      "Id": "Mbt2",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829710925,
+      "Id": "Mbt1",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896819789,
+      "Id": "Mbt5",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863265357,
+      "Id": "Mbt3",
       "Type": 2,
       "Value": 60
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Arcane Well)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Transfers mana from the Arcane Well to the target adjacent friendly structure."
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Charge Mana"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Charge Mana"
     }

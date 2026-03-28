@@ -1,41 +1,41 @@
 {
-  "OldId": 1836544622,
+  "OldId": "nrwm",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A089"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1800
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 200
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Vaelastrasz"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged flying unit that can Devour opponents and is immune to magic. "
     }

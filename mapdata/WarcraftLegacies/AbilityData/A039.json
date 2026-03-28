@@ -1,67 +1,67 @@
 {
-  "OldId": 1785873217,
-  "NewId": 959656001,
+  "OldId": "ACrj",
+  "NewId": "A039",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 110
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829056338,
+      "Id": "Rej1",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "RZ02"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(cthun)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Heals a target friendly unit for 600 hit points over 10 seconds."
     }

@@ -1,13 +1,13 @@
 {
-  "OldId": 1751347026,
-  "NewId": 1280989778,
+  "OldId": "Roch",
+  "NewId": "RZZL",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Quest Completed: The Emperor\u0027s Constructs"
     }

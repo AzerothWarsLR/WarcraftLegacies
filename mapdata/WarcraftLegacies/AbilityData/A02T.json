@@ -1,127 +1,127 @@
 {
-  "OldId": 1818447425,
-  "NewId": 1412575297,
+  "OldId": "ANcl",
+  "NewId": "A02T",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 913072974,
+      "Id": "Ncl6",
       "Type": 3,
       "Value": "darksummoning"
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896295758,
+      "Id": "Ncl5",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 180
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862741326,
+      "Id": "Ncl3",
       "Value": 19
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845964110,
+      "Id": "Ncl2",
       "Value": 2
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829186894,
+      "Id": "Ncl1",
       "Type": 2,
       "Value": 0.6
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "F"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Dark Summoning"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Dark Summoning"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons 12 friendly non-hero units from a target area to the caster. The units will arrive at the caster after a 3 to 30 second delay, based on their distance from the caster. If the caster dies before the units arrive, half of the units will die in transit."
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
     },
     {
-      "Id": 1952539489,
+      "Id": "acat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "spell"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Dreadlord)"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     }
   ]

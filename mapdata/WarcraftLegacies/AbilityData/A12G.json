@@ -1,136 +1,136 @@
 {
-  "OldId": 1769161537,
-  "NewId": 1194471745,
+  "OldId": "ACsi",
+  "NewId": "A12G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 205
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BNsi"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 80
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828994382,
+      "Id": "Nsi1",
       "Value": 2
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828994382,
+      "Id": "Nsi1",
       "Value": 15
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 14
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 14
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "self"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R09H"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": "2"
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0AV"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMage 03.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(sunfury)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Suppression"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Suppression"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Suppresses all enemy ranged units in a target area from attacking for 4 seconds."
     }

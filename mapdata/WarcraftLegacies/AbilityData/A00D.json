@@ -1,6 +1,6 @@
 {
-  "OldId": 1818447425,
-  "NewId": 1144008769,
+  "OldId": "ANcl",
+  "NewId": "A00D",
   "Unk": [
     0
   ],
@@ -8,133 +8,133 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829186894,
+      "Id": "Ncl1",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862741326,
+      "Id": "Ncl3",
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896295758,
+      "Id": "Ncl5",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 913072974,
+      "Id": "Ncl6",
       "Type": 3,
       "Value": "darkconversion"
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 5
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "spell"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1952539489,
+      "Id": "acat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1885430625,
+      "Id": "acap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Quel\u0027thalas - Sunwell)"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Destroy the Corrupted Sunwell"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMind Crush.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 3
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Z"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Inspire Madness - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Takes control of several random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness.|n|n|cffffcc00Level 1|r - Controls 6 units. |n|cffffcc00Level 2|r - Controls 10 units. |n|cffffcc00Level 3|r - Controls 14 units."
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Destroy the Corrupted Sunwell"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Destroys the Sunwell, putting an end to its corruptive influence over the land."
     }

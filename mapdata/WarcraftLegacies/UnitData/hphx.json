@@ -1,44 +1,44 @@
 {
-  "OldId": 2020110440,
+  "OldId": "hphx",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0IM,Aphx,ACmi,ACrk,Apxf"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 70
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1750
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Quelthalas-Anasterian-Level 1)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Al\u0027ar"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Loyal phoenix of the Sunstrider Dynasty."
     }

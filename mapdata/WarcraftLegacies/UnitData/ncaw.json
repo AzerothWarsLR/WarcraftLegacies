@@ -1,29 +1,29 @@
 {
-  "OldId": 2002871150,
+  "OldId": "ncaw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 80
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Keeper of primary assault troops. "
     }

@@ -1,43 +1,43 @@
 {
-  "OldId": 1919054401,
-  "NewId": 826557505,
+  "OldId": "Arbr",
+  "NewId": "ADD1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "other"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "RD01"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Draenei attachement)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Defender Shield Visual"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Defender Shield Visual"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "war3mapImported\\Runestone Shield.mdx"
     },
     {
-      "Id": 811693153,
+      "Id": "ata0",
       "Type": 3,
       "Value": "hand,right"
     }

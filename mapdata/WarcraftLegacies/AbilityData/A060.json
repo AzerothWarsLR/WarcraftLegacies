@@ -1,143 +1,143 @@
 {
-  "OldId": 1801545281,
-  "NewId": 808857665,
+  "OldId": "Afak",
+  "NewId": "A060",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 13
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 13
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829120870,
+      "Id": "fak1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845898086,
+      "Id": "fak2",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845898086,
+      "Id": "fak2",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862675302,
+      "Id": "fak3",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 879452518,
+      "Id": "fak4",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896229734,
+      "Id": "fak5",
       "Type": 2,
       "Value": 50
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 896229734,
+      "Id": "fak5",
       "Type": 2,
       "Value": 50
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 2
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 750
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Quel\u0027Thalas-Farstrider)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Splintering Arrows"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Splintering Arrows"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Farstriders shoot their arrows with great force and precision, causes the Farstriders attacks to do area of effect damage. |n|nDeals half damage in a radius of 50 and slightly less beyond that."
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     }

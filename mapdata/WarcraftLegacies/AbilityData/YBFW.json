@@ -1,93 +1,93 @@
 {
-  "OldId": 1903382081,
-  "NewId": 1464222297,
+  "OldId": "ANsq",
+  "NewId": "YBFW",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "n08K"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 125
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Cenarius)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Call of the Feral Wolves"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Call of the Feral Wolves"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDireWolf.blp"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     }

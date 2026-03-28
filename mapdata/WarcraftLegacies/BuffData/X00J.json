@@ -1,12 +1,12 @@
 {
-  "OldId": 1869434456,
-  "NewId": 1244672088,
+  "OldId": "XNmo",
+  "NewId": "X00J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Lightning Storm (Effect)"
     }

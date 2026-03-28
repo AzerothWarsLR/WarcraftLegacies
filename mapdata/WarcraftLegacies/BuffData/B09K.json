@@ -1,27 +1,27 @@
 {
-  "OldId": 1718832962,
-  "NewId": 1262039106,
+  "OldId": "BOsf",
+  "NewId": "B09K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Summon Garrison"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Lordaeron/Stormwind)"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCallToArms.blp"
     }

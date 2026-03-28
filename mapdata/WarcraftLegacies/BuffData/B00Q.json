@@ -1,17 +1,17 @@
 {
-  "OldId": 1650680898,
-  "NewId": 1362112578,
+  "OldId": "Bdcb",
+  "NewId": "B00Q",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Drain Life \u0026 Mana Arthas (Caster)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualCaster.mdl"
     }

@@ -1,52 +1,52 @@
 {
-  "OldId": 813126489,
-  "NewId": 875573316,
+  "OldId": "YSw0",
+  "NewId": "D004",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 1.5
     },
     {
-      "Id": 1920493156,
+      "Id": "dfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Dalaran Low wall"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 210
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 240
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Doodads\\Cityscape\\Structures\\CityLowWall90\\CityLowWall90.mdl"
     }

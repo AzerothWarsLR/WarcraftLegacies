@@ -1,104 +1,104 @@
 {
-  "OldId": 1667384129,
-  "NewId": 1230123073,
+  "OldId": "ACbc",
+  "NewId": "A0RI",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 2500
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863200085,
+      "Id": "Ucs3",
       "Type": 2,
       "Value": 350
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879977301,
+      "Id": "Ucs4",
       "Type": 2,
       "Value": 130
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1886612833,
+      "Id": "amsp",
       "Value": 500
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 350
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "attack"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Ironforge - Steam Tank)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Flamethrower"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Flamethrower"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Blasts fire at enemy units in a cone in front of the steam tank, dealing \u003CA0RI,DataA1\u003E damage and \u003CA0RI,DataE1\u003E damage per second for \u003CA0RI,Dur1\u003E seconds."
     }

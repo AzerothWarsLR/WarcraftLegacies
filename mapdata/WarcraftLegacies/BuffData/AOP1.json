@@ -1,32 +1,32 @@
 {
-  "OldId": 1684097090,
-  "NewId": 827346753,
+  "OldId": "BHad",
+  "NewId": "AOP1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Protection Aura"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of Protection Aura; it has increased armor."
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Protection Aura"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNProtection1.blp"
     }

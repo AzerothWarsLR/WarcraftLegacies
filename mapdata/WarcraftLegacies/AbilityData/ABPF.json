@@ -1,39 +1,39 @@
 {
-  "OldId": 1769105473,
-  "NewId": 1179664961,
+  "OldId": "Ahri",
+  "NewId": "ABPF",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "RBEP"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "This unit has a 20% chance on attack to slow the enemy unit\u0027s attack speed by \u003CABSF,DataB1,%\u003E% and movement speed by \u003CABSF,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CABSF,Dur1\u003E (0.6 for Heros) seconds."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Paralysing Fear"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Paralysing Fear"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PAS_CR_Faceless_OLDGODS.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     }
   ]

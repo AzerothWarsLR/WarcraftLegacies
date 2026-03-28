@@ -1,5 +1,5 @@
 {
-  "OldId": 1936737089,
+  "OldId": "ACps",
   "Unk": [
     0
   ],
@@ -7,12 +7,12 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829648720,
+      "Id": "Pos1",
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground,neutral,nonhero,nonsapper,organic"
     }

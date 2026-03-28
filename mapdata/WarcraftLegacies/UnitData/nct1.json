@@ -1,20 +1,20 @@
 {
-  "OldId": 829711214,
+  "OldId": "nct1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 30
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

@@ -1,22 +1,22 @@
 {
-  "OldId": 1718379330,
-  "NewId": 1160851522,
+  "OldId": "Bclf",
+  "NewId": "B01E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Fog"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is covered in fog; it cannot use ranged attacks."
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\CloudOfFog\\CloudOfFog.mdl"
     }

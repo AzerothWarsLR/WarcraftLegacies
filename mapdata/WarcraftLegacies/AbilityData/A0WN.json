@@ -1,160 +1,160 @@
 {
-  "OldId": 1651723841,
-  "NewId": 1314336833,
+  "OldId": "ANsb",
+  "NewId": "A0WN",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1886612833,
+      "Id": "amsp",
       "Value": 1500
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 6
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Dummy Caster - War Stomp - Cairne)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Stun Unit"
     }

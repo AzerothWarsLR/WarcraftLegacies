@@ -1,91 +1,91 @@
 {
-  "OldId": 1701988417,
-  "NewId": 959524929,
+  "OldId": "AHre",
+  "NewId": "A019",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 7000
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828731976,
+      "Id": "Hre1",
       "Value": 50
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R04E"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 6500
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedStrengthOfTheMoon.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Brown - Nordrassil)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Z"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Begin Anew"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallCaster.mdl"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Begin Anew"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Brings back to life the corpses of \u003CA019,DataA1\u003E friendly units within a radius of \u003CA019,Area1\u003E."
     }

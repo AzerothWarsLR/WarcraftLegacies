@@ -1,17 +1,17 @@
 {
-  "OldId": 1685275969,
-  "NewId": 1396060226,
+  "OldId": "AEsd",
+  "NewId": "B06S",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Inferno (Target)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

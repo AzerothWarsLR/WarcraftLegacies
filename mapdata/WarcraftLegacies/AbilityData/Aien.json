@@ -1,5 +1,5 @@
 {
-  "OldId": 1852139841,
+  "OldId": "Aien",
   "Unk": [
     0
   ],
@@ -7,16 +7,16 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846622313,
+      "Id": "inv2",
       "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (Night Elf - Light Blue, Brown)"
     }

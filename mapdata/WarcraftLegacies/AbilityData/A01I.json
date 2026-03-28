@@ -1,112 +1,112 @@
 {
-  "OldId": 1969313089,
-  "NewId": 1227960385,
+  "OldId": "AUau",
+  "NewId": "A01I",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B07G"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846553429,
+      "Id": "Uau2",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,invulnerable,vulnerable"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829776213,
+      "Id": "Uau1",
       "Type": 2,
       "Value": -0.1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASSpiritCrusader.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Alexandros)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Crusade Aura"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDisenchant.blp"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Blazing Aura - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Undead and Demons are weakened in the face of the Light. Decreases hitpoint regeneration and movement speed of nearby enemy units. |n|n|cffffcc00Level 1|r - 50% degeneration, 3% movement speed reduction.|n|cffffcc00Level 2|r - 100% degeneration, 6% movement speed reduction.|n|cffffcc00Level 3|r - 200% degeneration, 9% movement speed reduction."
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Crusade Aura"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces nearby enemy units\u0027 movement speed by 10%."
     }

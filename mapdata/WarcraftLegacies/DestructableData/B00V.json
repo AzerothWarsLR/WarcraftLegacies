@@ -1,39 +1,39 @@
 {
-  "OldId": 1953189720,
-  "NewId": 1445998658,
+  "OldId": "XOkt",
+  "NewId": "B00V",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1650685538,
+      "Id": "bvcb",
       "Value": 50
     },
     {
-      "Id": 1734571618,
+      "Id": "bvcg",
       "Value": 50
     },
     {
-      "Id": 1919120994,
+      "Id": "bvcr",
       "Value": 50
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Throne of Kil\u0027Jaeden"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": "PathTextures\\12x12Default.tga"
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "Doodads\\Barrens\\Props\\HellscreamThrone\\HellscreamThrone.mdl"
     }

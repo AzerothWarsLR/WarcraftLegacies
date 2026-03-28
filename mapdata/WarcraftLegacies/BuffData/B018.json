@@ -1,22 +1,22 @@
 {
-  "OldId": 1685275969,
-  "NewId": 942747714,
+  "OldId": "AEsd",
+  "NewId": "B018",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Divine Sacrifice (Target)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl"
     }

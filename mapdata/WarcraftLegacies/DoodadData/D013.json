@@ -1,17 +1,17 @@
 {
-  "OldId": 1886540354,
-  "NewId": 858861636,
+  "OldId": "BRrp",
+  "NewId": "D013",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Needle"
     }

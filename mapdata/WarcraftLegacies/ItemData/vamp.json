@@ -1,28 +1,28 @@
 {
-  "OldId": 1886216566,
+  "OldId": "vamp",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 45
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 4
     },
     {
-      "Id": 1702065513,
+      "Id": "iuse",
       "Value": 3
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Miscellaneous"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     }

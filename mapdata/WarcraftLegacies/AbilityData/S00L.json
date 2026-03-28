@@ -1,6 +1,6 @@
 {
-  "OldId": 845701971,
-  "NewId": 1278226515,
+  "OldId": "Sch2",
+  "NewId": "S00L",
   "Unk": [
     0
   ],
@@ -8,11 +8,11 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829579587,
+      "Id": "Car1",
       "Value": 6
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Red - Plague Titan)"
     }

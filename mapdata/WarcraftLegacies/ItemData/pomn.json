@@ -1,32 +1,32 @@
 {
-  "OldId": 1852665712,
+  "OldId": "pomn",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 180
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 300
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Purchasable"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 3
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "F"
     }

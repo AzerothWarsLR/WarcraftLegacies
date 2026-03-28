@@ -1,37 +1,37 @@
 {
-  "OldId": 1937141586,
+  "OldId": "Rovs",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Warsong)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "S"
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 1
     }
   ]

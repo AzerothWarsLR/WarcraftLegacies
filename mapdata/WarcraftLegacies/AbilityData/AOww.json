@@ -1,239 +1,239 @@
 {
-  "OldId": 2004307777,
+  "OldId": "AOww",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 220
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 220
     },
     {
       "Level": 3,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 220
     },
     {
       "Level": 4,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 220
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 13
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 13
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 13
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 13
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 110
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 130
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 140
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829912911,
+      "Id": "Oww1",
       "Type": 2,
       "Value": 160
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829912911,
+      "Id": "Oww1",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829912911,
+      "Id": "Oww1",
       "Type": 2,
       "Value": 330
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 829912911,
+      "Id": "Oww1",
       "Type": 2,
       "Value": 405
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Teal - Rend. Grey - Grom)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 0
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Bladestorm - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing damage to nearby enemy land units for 1 seconds. |n|n|cffffcc00Level 1|r - 160 damage. |n|cffffcc00Level 2|r - 250 damage. |n|cffffcc00Level 3|r - 330 damage.|n|cffffcc00Level 4|r - 405 damage."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Bladestorm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Bladestorm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Bladestorm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Bladestorm - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 160 damage to nearby enemy units.|nLasts 1 seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 250 damage to nearby enemy units. |nLasts 1 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 330 damage to nearby enemy units. |nLasts 1 seconds."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 405 damage to nearby enemy units. |nLasts 1 seconds."
     }

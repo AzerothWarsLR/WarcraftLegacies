@@ -1,20 +1,20 @@
 {
-  "OldId": 1818588014,
+  "OldId": "nsel",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 625
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged unit that can Bash opponents. "
     }

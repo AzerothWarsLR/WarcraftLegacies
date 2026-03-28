@@ -1,102 +1,102 @@
 {
-  "OldId": 1818523246,
+  "OldId": "nvdl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 750
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 5
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 22
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 10
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 10
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 640
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 650
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 250
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 1
     },
     {
-      "Id": 1634562933,
+      "Id": "usma",
       "Value": 3
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 15
     },
     {
-      "Id": 1953723253,
+      "Id": "usst",
       "Value": 0
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar,Rguv"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Fel-Portal)"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Voidwalker"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Voidwalker"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Etheral demon of void origins.| "
     }

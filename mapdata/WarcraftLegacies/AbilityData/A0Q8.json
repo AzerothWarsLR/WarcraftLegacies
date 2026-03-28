@@ -1,48 +1,48 @@
 {
-  "OldId": 1768967745,
-  "NewId": 944844865,
+  "OldId": "ANpi",
+  "NewId": "A0Q8",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829253957,
+      "Id": "Eim1",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Teal - Zuluhed Ult)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Burns nearby enemy units for 25 points of damage per second."
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 1
     }
   ]

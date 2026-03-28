@@ -1,32 +1,32 @@
 {
-  "OldId": 1935951938,
-  "NewId": 1261449282,
+  "OldId": "BHds",
+  "NewId": "B00K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBearBlink.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Divine Guardian"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of Divine Guardian"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Divine Guardian"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\ManaShield\\ManaShieldCaster.mdl"
     }

@@ -1,110 +1,110 @@
 {
-  "OldId": 1769161537,
-  "NewId": 1163014209,
+  "OldId": "ACsi",
+  "NewId": "A0RE",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845771598,
+      "Id": "Nsi2",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R03U"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828994382,
+      "Id": "Nsi1",
       "Value": 15
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSolarFlareFinalQualityUpdate.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (Dark Green - Wizard\u0027s Sanctum)"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\ReviveHuman\\ReviveHuman.mdl"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Solar Flare"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Solar Flare"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Stops all enemies in a target area from attacking and casting spells for 6(3) seconds."
     }

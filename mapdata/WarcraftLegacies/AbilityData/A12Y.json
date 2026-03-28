@@ -1,380 +1,380 @@
 {
-  "OldId": 1718511937,
-  "NewId": 1496461633,
+  "OldId": "Ainf",
+  "NewId": "A12Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0B8"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828796489,
+      "Id": "Inf1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 1000
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,neutral,organic,self,vulnerable"
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 1000
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 1000
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 1000
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0B8"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0B8"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0B8"
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,neutral,organic,self,vulnerable"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,neutral,organic,self,vulnerable"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,neutral,organic,self,vulnerable"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 80
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879128137,
+      "Id": "Inf4",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1869770593,
+      "Id": "aoro",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718775649,
+      "Id": "aorf",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862350921,
+      "Id": "Inf3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 879128137,
+      "Id": "Inf4",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 3,
       "Pointer": 4,
-      "Id": 879128137,
+      "Id": "Inf4",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 4,
       "Pointer": 4,
-      "Id": 879128137,
+      "Id": "Inf4",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 80
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 80
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 80
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCSunBlindDefense.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(maraad)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Divine Salvation"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Divine Salvation"
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCSunBlindDefense.blp"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 4 seconds."
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Divine Salvation"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Divine Salvation"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Divine Salvation"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 6 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 8 seconds."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 10 seconds."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSunBlindDefense.blp"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Divine Salvation - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "The hero Increases a target friendly unit\u0027s armor by 1000 and health regeneration by 300. |n|n|cffffcc00Level 1|r - 4 seconds duration. |n|cffffcc00Level 2|r - 6 seconds duration. |n|cffffcc00Level 3|r - 8 seconds duration. |n|cffffcc00Level 4|r - 10 seconds duration"
     }

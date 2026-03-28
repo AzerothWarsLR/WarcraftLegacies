@@ -1,64 +1,64 @@
 {
-  "OldId": 1986544449,
-  "NewId": 1465074265,
+  "OldId": "AChv",
+  "NewId": "YBSW",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 125
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829186895,
+      "Id": "Ocl1",
       "Type": 2,
       "Value": 155
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862741327,
+      "Id": "Ocl3",
       "Type": 2,
       "Value": 0.2
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,friend,self,vuln,invu,organic"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Seer)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "war3mapImported\\Effect_HealingWave.mdx"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls forth a wave of healing energy that bounces up to \u003CYBSW,DataB1\u003E times, healing \u003CYBSW,DataA1\u003E damage on the primary target. Each jump heals less damage."
     }

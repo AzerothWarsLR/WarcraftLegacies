@@ -1,114 +1,114 @@
 {
-  "OldId": 1634954862,
-  "NewId": 1110978670,
+  "OldId": "nnsa",
+  "NewId": "n08B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 15
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 18
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 60
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "REOW,RELG,RELB"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "ls06,u02P"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "n07J,n06R"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Skywall Specialist)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.2
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Upper Elemental production building."
     },
     {
-      "Id": 1768841589,
+      "Id": "uani",
       "Type": 3,
       "Value": "upgrade,first"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\DarkIronArcaneHall2Fix.mdl"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNDjinnPalace.blp"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Djinn Palace"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Build Djinn Palace"
     }

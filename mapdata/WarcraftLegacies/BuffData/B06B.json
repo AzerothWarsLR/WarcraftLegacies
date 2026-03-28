@@ -1,46 +1,46 @@
 {
-  "OldId": 1869374018,
-  "NewId": 1110847554,
+  "OldId": "Bblo",
+  "NewId": "B06B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "WingsBuff_Overhead.mdx"
     },
     {
-      "Id": 1667331174,
+      "Id": "ftac",
       "Value": 0
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": "overhead"
     },
     {
-      "Id": 828470374,
+      "Id": "fta1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Gale"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of the Gale; its attack rate and movement speed are increased."
     }

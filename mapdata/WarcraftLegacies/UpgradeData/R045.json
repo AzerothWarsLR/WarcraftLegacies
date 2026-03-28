@@ -1,61 +1,61 @@
 {
-  "OldId": 1751347026,
-  "NewId": 892612690,
+  "OldId": "Roch",
+  "NewId": "R045",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 300
     },
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1651469415,
+      "Id": "glob",
       "Value": 0
     },
     {
-      "Id": 829386087,
+      "Id": "gmo1",
       "Type": 2,
       "Value": 300
     },
     {
-      "Id": 1667330663,
+      "Id": "grac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumArmor.blp"
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Dalaran) (Quest)"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Hard Crystal Constructs"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Hard Crystal Constructs"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 and attack damage by 20."
     }

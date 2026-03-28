@@ -1,45 +1,45 @@
 {
-  "OldId": 1702454639,
-  "NewId": 1462775919,
+  "OldId": "oeye",
+  "NewId": "o00W",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Avul,Adt1,Aeth"
     },
     {
-      "Id": 1852404597,
+      "Id": "usin",
       "Value": 1800
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1684632437,
+      "Id": "usid",
       "Value": 1800
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneEye.blp"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Frostwolf - Witch Doctor)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\orc\\WatcherWard\\WatcherWard.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Watcher\u0027s Eye"
     }

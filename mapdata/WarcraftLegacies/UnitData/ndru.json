@@ -1,52 +1,52 @@
 {
-  "OldId": 1970431086,
+  "OldId": "ndru",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836017781,
+      "Id": "uhom",
       "Value": 1
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1500
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1919053429,
+      "Id": "unbr",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
-      "Id": 1969582965,
+      "Id": "useu",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 4.5
     }

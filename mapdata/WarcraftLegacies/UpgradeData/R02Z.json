@@ -1,110 +1,110 @@
 {
-  "OldId": 1701079122,
-  "NewId": 1513238610,
+  "OldId": "Rhde",
+  "NewId": "R02Z",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 829383527,
+      "Id": "gco1",
       "Type": 3,
       "Value": "Adef"
     },
     {
-      "Id": 846160743,
+      "Id": "gco2",
       "Type": 3,
       "Value": "h04C"
     },
     {
-      "Id": 862937959,
+      "Id": "gco3",
       "Type": 3,
       "Value": "A0P3"
     },
     {
-      "Id": 828794215,
+      "Id": "gef1",
       "Type": 3,
       "Value": "rlev"
     },
     {
-      "Id": 845571431,
+      "Id": "gef2",
       "Type": 3,
       "Value": "rtma"
     },
     {
-      "Id": 846163303,
+      "Id": "gmo2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 862940519,
+      "Id": "gmo3",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1651078247,
+      "Id": "gtib",
       "Value": 120
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanArmorUpThree.blp"
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Arathor-T2)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "S"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Reflective Plating"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Reflective Plating"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Upgrades Bladesmen into Vanguards, improving their hit points by 100, movement speed by 15, armor by 1, and attack damage by 15. Also improves Defend, increasing its chance to reflect by 5% and reducing magic damage taken by a further 20%."
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 1
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 1
     }
   ]

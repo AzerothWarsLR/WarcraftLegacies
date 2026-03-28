@@ -1,81 +1,81 @@
 {
-  "OldId": 1869571688,
+  "OldId": "hfoo",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "S01I,Adef,A0BG,Aihn"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 2
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 4
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 21
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 13
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 14
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 795
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 2
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 3
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R01N,Rhme,Rhar,R00B,Rhpm,Rguv"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Lordaeron)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.85
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Versatile foot soldier of Lordaeron."
     }

@@ -1,275 +1,275 @@
 {
-  "OldId": 1818447425,
-  "NewId": 1414742618,
+  "OldId": "ANcl",
+  "NewId": "ZBST",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829186894,
+      "Id": "Ncl1",
       "Type": 2,
       "Value": 0.001
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829186894,
+      "Id": "Ncl1",
       "Type": 2,
       "Value": 0.001
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829186894,
+      "Id": "Ncl1",
       "Type": 2,
       "Value": 0.001
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862741326,
+      "Id": "Ncl3",
       "Value": 17
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 862741326,
+      "Id": "Ncl3",
       "Value": 17
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896295758,
+      "Id": "Ncl5",
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 896295758,
+      "Id": "Ncl5",
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 5,
-      "Id": 896295758,
+      "Id": "Ncl5",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 913072974,
+      "Id": "Ncl6",
       "Type": 3,
       "Value": "slow"
     },
     {
       "Level": 2,
       "Pointer": 6,
-      "Id": 913072974,
+      "Id": "Ncl6",
       "Type": 3,
       "Value": "slow"
     },
     {
       "Level": 3,
       "Pointer": 6,
-      "Id": 913072974,
+      "Id": "Ncl6",
       "Type": 3,
       "Value": "slow"
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862741326,
+      "Id": "Ncl3",
       "Value": 17
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845964110,
+      "Id": "Ncl2",
       "Value": 2
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845964110,
+      "Id": "Ncl2",
       "Value": 2
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845964110,
+      "Id": "Ncl2",
       "Value": 2
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "spell"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1952539489,
+      "Id": "acat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1885430625,
+      "Id": "acap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(C\u0027thun)"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Spawn Tentacle"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Spawn Tentacle - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Summons a powerful Tentacle at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds. |n|n|cffffcc00Level 1|r - The Tentacle has 600 hit points and 40 base damage.|n|cffffcc00Level 2|r - The Tentacle has 700 hit points and 60 base damage.|n|cffffcc00Level 3|r - The Tentacle has 800 hit points and 80 base damage."
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Tentacle - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons a powerful Tentacle with 600 hit points and 40 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons a powerful Tentacle with 700 hit points and 60 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons a powerful Tentacle with 800 hit points and 80 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 30 seconds."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     }
   ]

@@ -1,27 +1,27 @@
 {
-  "OldId": 1668437068,
-  "NewId": 1278292034,
+  "OldId": "LTrc",
+  "NewId": "B01L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1000
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1718973282,
+      "Id": "bsuf",
       "Type": 3,
       "Value": "(outside Kali/NR blockade)"
     }

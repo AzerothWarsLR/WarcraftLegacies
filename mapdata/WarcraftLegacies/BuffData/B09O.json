@@ -1,12 +1,12 @@
 {
-  "OldId": 1920222529,
-  "NewId": 1329147970,
+  "OldId": "AEtr",
+  "NewId": "B09O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Acid Rain Target"
     }

@@ -1,36 +1,36 @@
 {
-  "OldId": 1886614337,
-  "NewId": 1364406337,
+  "OldId": "Assp",
+  "NewId": "A0SQ",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845442899,
+      "Id": "Sod2",
       "Type": 3,
       "Value": "o04Z"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(yogg)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Spawn Horror"
     }

@@ -1,5 +1,5 @@
 {
-  "OldId": 1818325825,
+  "OldId": "Asal",
   "Unk": [
     0
   ],
@@ -7,25 +7,25 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829186387,
+      "Id": "Sal1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sturdy War Axe)"
     }

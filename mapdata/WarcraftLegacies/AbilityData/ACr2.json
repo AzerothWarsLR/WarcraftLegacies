@@ -1,5 +1,5 @@
 {
-  "OldId": 846349121,
+  "OldId": "ACr2",
   "Unk": [
     0
   ],
@@ -7,39 +7,39 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829056338,
+      "Id": "Rej1",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Seer)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Heals a target friendly unit for 500 hit points over 10 seconds."
     }

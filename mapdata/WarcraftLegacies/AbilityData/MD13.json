@@ -1,93 +1,93 @@
 {
-  "OldId": 1702316097,
-  "NewId": 858866765,
+  "OldId": "AHwe",
+  "NewId": "MD13",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
       "Level": 1,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "nsel"
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "spell"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Gilneas - Grey Guard)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Thunder Clap"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Thunder Clap"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Slams the ground, dealing 55 damage to nearby enemy land units and slowing their movement by \u003CMD14,DataA1,%\u003E% and attack rate by \u003CMD14,DataB1,%\u003E%. Lasts \u003CMD14,Dur1\u003E seconds against units and \u003CMD14,HeroDur1\u003E seconds against heroes. "
     }

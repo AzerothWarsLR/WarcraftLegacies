@@ -1,88 +1,88 @@
 {
-  "OldId": 1952933486,
-  "NewId": 1161065586,
+  "OldId": "nfgt",
+  "NewId": "rt4E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.35
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "small"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 18
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 750
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 6
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 240
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 2
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 50
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 221
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.75
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Medium Tentacle"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 100
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "A mighty tentacle from the depths. "
     }

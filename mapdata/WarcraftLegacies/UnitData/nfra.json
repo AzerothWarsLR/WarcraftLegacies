@@ -1,60 +1,60 @@
 {
-  "OldId": 1634887278,
+  "OldId": "nfra",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0AW,A0W3"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 36
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 6
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 58
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 950
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar,R019,R00A,R04H,Reuv,R05X"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.55
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit with Command Aura. Can also War Stomp. "
     }

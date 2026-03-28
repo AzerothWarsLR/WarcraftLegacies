@@ -1,45 +1,45 @@
 {
-  "OldId": 1920167246,
-  "NewId": 826552430,
+  "OldId": "Nmsr",
+  "NewId": "n0D1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1100
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 450
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 450
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 20
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep-Loch Modan)"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Mystical Murloc, adept at ranged assaults. Can learn Rain of Fire. "
     }

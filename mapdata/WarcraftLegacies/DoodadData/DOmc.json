@@ -1,26 +1,26 @@
 {
-  "OldId": 1668108100,
+  "OldId": "DOmc",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "*"
     }

@@ -1,46 +1,46 @@
 {
-  "OldId": 829453167,
-  "NewId": 825307247,
+  "OldId": "osp1",
+  "NewId": "o011",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "S00E"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "S00E"
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.blp"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Fel-Zuluhed-Level 3)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\orc\\StasisTotem\\StasisTotem.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Bloodlust Totem"
     }

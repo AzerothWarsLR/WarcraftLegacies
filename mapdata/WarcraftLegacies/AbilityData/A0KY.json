@@ -1,54 +1,54 @@
 {
-  "OldId": 1751935041,
-  "NewId": 1498099777,
+  "OldId": "Ahlh",
+  "NewId": "A0KY",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Generator will need one of the following power sources to power the Dimensional Ship:|n-The Eye of Sargeras|n-The Book of Medivh|n-A Vial of the Sunwell|n-The Crown of the Triumvirate|n-Sulfuras, Hand of Ragnaros|n-The Helm of Domination"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASArcaneEnergy.blp"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Power Sources"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Power Sources"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Icon Draenei)"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "OldId": 829245761,
+  "OldId": "AIm1",
   "Unk": [
     0
   ],
@@ -7,11 +7,11 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1735421257,
+      "Id": "Impg",
       "Value": 175
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Mana Stone 175)"
     }

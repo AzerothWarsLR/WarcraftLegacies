@@ -1,82 +1,82 @@
 {
-  "OldId": 1952937838,
-  "NewId": 1329672302,
+  "OldId": "nwgt",
+  "NewId": "n0AO",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "CK02,A126,Awrp"
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1500
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,neutral,standon"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 80
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": "ShadowAltarofKings"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 3
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Dalaran Siege)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "F"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.7
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

@@ -1,73 +1,73 @@
 {
-  "OldId": 1868918895,
-  "NewId": 1278488687,
+  "OldId": "opeo",
+  "NewId": "o04L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Arlm,A041,Sca5,Arep"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 2
     },
     {
-      "Id": 1769300597,
+      "Id": "ubui",
       "Type": 3,
       "Value": "o05G,o009,o01T,n03E,o020,o006,o028,o02T,n03E,o01S,o00C,o02Q"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 10
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 7
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 2
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "sapper,peon"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R021,Ropg,Rguv"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Warsong Worker)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.85
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Hard working, back breaking laborer."
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\WarsongPeon.mdl"
     }

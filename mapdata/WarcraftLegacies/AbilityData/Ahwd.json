@@ -1,22 +1,22 @@
 {
-  "OldId": 1685547073,
+  "OldId": "Ahwd",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Frostwolf-Witch Doctor)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons an immovable ward that heals \u003CAoar,DataA1,%\u003E% of a nearby friendly non-mechanical unit\u0027s hit points per second. |nLasts \u003CAhwd,Dur1\u003E seconds."
     }

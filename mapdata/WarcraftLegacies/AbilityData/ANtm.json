@@ -1,82 +1,82 @@
 {
-  "OldId": 1836338753,
+  "OldId": "ANtm",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 250
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829256782,
+      "Id": "Ntm1",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862811214,
+      "Id": "Ntm3",
       "Value": 7
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 862811214,
+      "Id": "Ntm3",
       "Value": 9
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 3
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,enemy,neutral,nonhero"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,enemy,neutral,nonhero"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Kills a target unit instantly, transforming it into gold which is added to your available gold!|nTransmute cannot be used on Heroes, or creeps above level 7."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Kills a target unit instantly, transforming it into gold which is added to your available gold!|nTransmute cannot be used on Heroes, or creeps above level 9."
     }

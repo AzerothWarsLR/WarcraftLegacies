@@ -1,150 +1,150 @@
 {
-  "OldId": 1952933486,
-  "NewId": 1345859694,
+  "OldId": "nfgt",
+  "NewId": "n08P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Aloc,Avul"
     },
     {
-      "Id": 1818850421,
+      "Id": "util",
       "Type": 3,
       "Value": "I,*"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1800
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "hero"
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "WoodHeavyBash"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "unknown"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 0
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "fly"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 0
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "_"
     },
     {
-      "Id": 1752591733,
+      "Id": "umvh",
       "Type": 2,
       "Value": 50
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 828535413,
+      "Id": "urb1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.5
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_Ny\u0027alothaTentacle.mdl"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 135
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 135
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 135
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 2
     },
     {
-      "Id": 1751675765,
+      "Id": "ushh",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 2003334005,
+      "Id": "ushw",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 2036888437,
+      "Id": "ushy",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 2020111221,
+      "Id": "ushx",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ny\u0027alothan Tentacle"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "A gnarly tentacle from the depths. "
     }

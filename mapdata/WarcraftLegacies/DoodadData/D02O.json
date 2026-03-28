@@ -1,76 +1,76 @@
 {
-  "OldId": 1802654274,
-  "NewId": 1328689220,
+  "OldId": "BRrk",
+  "NewId": "D02O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_Cave 2.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.45
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Cave"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "*"
     },
     {
-      "Id": 1918989924,
+      "Id": "dvar",
       "Value": 3
     },
     {
-      "Id": 1684566884,
+      "Id": "dshd",
       "Value": 0
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 100
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 80
     },
     {
       "Variation": 2,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 90
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 125
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 200
     }
   ]

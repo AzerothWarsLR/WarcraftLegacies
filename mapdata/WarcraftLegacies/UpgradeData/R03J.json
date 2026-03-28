@@ -1,99 +1,99 @@
 {
-  "OldId": 1702062162,
-  "NewId": 1244868690,
+  "OldId": "Rhse",
+  "NewId": "R03J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 878797415,
+      "Id": "gba4",
       "Type": 2,
       "Value": 75
     },
     {
-      "Id": 829383527,
+      "Id": "gco1",
       "Type": 3,
       "Value": "h01E"
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 150
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 846163303,
+      "Id": "gmo2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1667330663,
+      "Id": "grac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1651078247,
+      "Id": "gtib",
       "Value": 35
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": "n06P"
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp"
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 1
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Sentinels)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "S"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Wind Walk"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Wind Walk"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Alows Archers, Huntresses, Moonhunters, Priestesses, and Hippogryph Riders to become briefly invisible."
     }

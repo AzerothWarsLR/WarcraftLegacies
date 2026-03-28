@@ -1,62 +1,62 @@
 {
-  "OldId": 1919903343,
+  "OldId": "ofor",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 14
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 13
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 15
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "R09X,R00C,R006,R04R,Rhme,Rhar,Rosp,Rorb"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Frostwolf Research)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.8
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "General research building. "
     }

@@ -1,87 +1,87 @@
 {
-  "OldId": 1701079122,
-  "NewId": 1345925202,
+  "OldId": "Rhde",
+  "NewId": "R09P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 300
     },
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 829383527,
+      "Id": "gco1",
       "Type": 3,
       "Value": "h03K"
     },
     {
-      "Id": 846160743,
+      "Id": "gco2",
       "Type": 3,
       "Value": "h03U"
     },
     {
-      "Id": 862937959,
+      "Id": "gco3",
       "Type": 3,
       "Value": "A094"
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 0
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 1667330663,
+      "Id": "grac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1651078247,
+      "Id": "gtib",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNBloodFury.blp"
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Revert Bloodpact"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Revert Bloodpact"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Revert Bloodpact"
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 2
     }
   ]

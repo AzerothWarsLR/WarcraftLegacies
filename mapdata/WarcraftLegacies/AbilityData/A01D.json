@@ -1,359 +1,359 @@
 {
-  "OldId": 1633962305,
-  "NewId": 1144074305,
+  "OldId": "AIda",
+  "NewId": "A01D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 350
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 350
     },
     {
       "Level": 3,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 350
     },
     {
       "Level": 4,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 350
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "Bdef"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "Bdef"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "Bdef"
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 110
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 130
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1717920841,
+      "Id": "Idef",
       "Value": 4
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 1717920841,
+      "Id": "Idef",
       "Value": 6
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 1717920841,
+      "Id": "Idef",
       "Value": 8
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 1717920841,
+      "Id": "Idef",
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846227529,
+      "Id": "Ihp2",
       "Value": 60
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 846227529,
+      "Id": "Ihp2",
       "Value": 90
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 846227529,
+      "Id": "Ihp2",
       "Value": 120
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 846227529,
+      "Id": "Ihp2",
       "Value": 150
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,air,friend,self,invu,vuln"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,air,friend,self,invu,vuln"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,air,friend,self,invu,vuln"
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 2
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Light Blue - Tyrande)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Words of Protection"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Words of Protection - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "The hero heals and gives additional armor to nearby friendly units for 25 seconds. 350 AOE.|n|cffffcc00Level 1|r - Heals for 60 and gives 4 armor.|n|cffffcc00Level 2|r - Heals for 90 and gives 6 armor.|n|cffffcc00Level 3|r - Heals for 120 and gives 8 armor.|n|cffffcc00Level 4|r - Heals for 150 and gives 10 armor."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Words of Protection - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Words of Protection - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Words of Protection - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Words of Protection - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Heals for 60 and gives 4 armor to nearby units for 25 seconds. 350 AOE."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Heals for 90 and gives 6 armor to nearby units for 25 seconds. 350 AOE.\r\n"
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Heals for 120 and gives 8 armor to nearby units for 25 seconds. 350 AOE."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Heals for 150 and gives 10 armor to nearby units for 25 seconds. 350 AOE."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
     }

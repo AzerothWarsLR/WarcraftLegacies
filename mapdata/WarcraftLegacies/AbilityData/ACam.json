@@ -1,39 +1,39 @@
 {
-  "OldId": 1835090753,
+  "OldId": "ACam",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,ground,invulnerable,self,vulnerable"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863202625,
+      "Id": "Ams3",
       "Value": 400
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Black Empire)"
     }

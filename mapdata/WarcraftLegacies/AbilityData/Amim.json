@@ -1,19 +1,19 @@
 {
-  "OldId": 1835625793,
+  "OldId": "Amim",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "( just another )"
     }

@@ -1,75 +1,75 @@
 {
-  "OldId": 1734494529,
-  "NewId": 1431121985,
+  "OldId": "AIbg",
+  "NewId": "A0MU",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
       "Level": 1,
-      "Id": 829186633,
+      "Id": "Ibl1",
       "Type": 3,
       "Value": "o04R"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOilStation.blp"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Goblin - Oil Rig Constructor)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Build Oil Rig"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Build Oil Rig"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Builds an Oil Rig at the target location.|n|n|cff99b4d1Must be built near an Oil deposit in the sea, and only one Oil Rig can be built at each deposit."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     }
   ]

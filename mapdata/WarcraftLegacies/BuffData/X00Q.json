@@ -1,12 +1,12 @@
 {
-  "OldId": 1936083032,
-  "NewId": 1362112600,
+  "OldId": "XHfs",
+  "NewId": "X00Q",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Inferno Strike (Effect)"
     }

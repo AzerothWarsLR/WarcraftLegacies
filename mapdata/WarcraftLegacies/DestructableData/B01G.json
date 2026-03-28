@@ -1,27 +1,27 @@
 {
-  "OldId": 2004112450,
-  "NewId": 1194405954,
+  "OldId": "BTtw",
+  "NewId": "B01G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1818850402,
+      "Id": "btil",
       "Type": 3,
       "Value": "O"
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Terrokar Tree Wall"
     },
     {
-      "Id": 1719170146,
+      "Id": "btxf",
       "Type": 3,
       "Value": "ReplaceableTextures\\AshenvaleTree\\AshenTree"
     }

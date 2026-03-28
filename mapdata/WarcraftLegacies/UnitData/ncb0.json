@@ -1,57 +1,57 @@
 {
-  "OldId": 811754350,
+  "OldId": "ncb0",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 5
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 5
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\4x4SimpleSolid.tga"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 30
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R013,Rhac,Rgfo"
     },
     {
-      "Id": 1886940533,
+      "Id": "umxp",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1920494965,
+      "Id": "umxr",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.6
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1
     }

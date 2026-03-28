@@ -1,134 +1,134 @@
 {
-  "OldId": 1953654383,
-  "NewId": 942747759,
+  "OldId": "ofrt",
+  "NewId": "o018",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0CJ,Argl"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 150
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 10
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 15
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 150
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 30
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\12x12Simple.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 1
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1986359925,
+      "Id": "urev",
       "Value": 1
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "o04A"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhac,R013,Renb,R064,Rosp,Rgfo"
     },
     {
-      "Id": 1768841589,
+      "Id": "uani",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1885430133,
+      "Id": "uaap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 75
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 150
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 2.1
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Shrine of Zul\u0027Gurub"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 150
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

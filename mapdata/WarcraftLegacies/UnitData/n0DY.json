@@ -1,41 +1,41 @@
 {
-  "OldId": 1734963310,
-  "NewId": 1497641070,
+  "OldId": "npig",
+  "NewId": "n0DY",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Avul"
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 10
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dragozer - 8v8 season 1 champion"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\Cityscape\\Props\\City_Statue\\City_Statue.mdl"
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "HeroPaladin"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Patrons)"
     }

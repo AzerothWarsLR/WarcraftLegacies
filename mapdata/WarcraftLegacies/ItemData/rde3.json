@@ -1,42 +1,42 @@
 {
-  "OldId": 862282866,
+  "OldId": "rde3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 100
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 600
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Purchasable"
     },
     {
-      "Id": 1953723241,
+      "Id": "isst",
       "Value": 140
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ring of Protection"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase Ring of Protection"
     }

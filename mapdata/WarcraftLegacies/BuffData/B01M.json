@@ -1,27 +1,27 @@
 {
-  "OldId": 1718511938,
-  "NewId": 1295069250,
+  "OldId": "Binf",
+  "NewId": "B01M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNPhaseShift.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Elune\u0027s Blessing"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit has Elune\u0027s Blessing; its life regeneration rate is increased."
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

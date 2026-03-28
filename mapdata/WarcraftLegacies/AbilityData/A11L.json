@@ -1,38 +1,38 @@
 {
-  "OldId": 1734636609,
-  "NewId": 1278292289,
+  "OldId": "Atdg",
+  "NewId": "A11L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground"
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845636692,
+      "Id": "Tdg2",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828859476,
+      "Id": "Tdg1",
       "Type": 2,
       "Value": 15
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Black Hole)"
     }

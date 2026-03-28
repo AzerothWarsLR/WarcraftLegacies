@@ -1,19 +1,19 @@
 {
-  "OldId": 1651994478,
+  "OldId": "nowb",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 26
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 800
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium melee unit. "
     }

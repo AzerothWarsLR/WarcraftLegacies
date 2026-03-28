@@ -1,47 +1,47 @@
 {
-  "OldId": 1684105070,
+  "OldId": "ngad",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836017781,
+      "Id": "uhom",
       "Value": 1
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1919053429,
+      "Id": "unbr",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
-      "Id": 1969582965,
+      "Id": "useu",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 10
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3.25
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

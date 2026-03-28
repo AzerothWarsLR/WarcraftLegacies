@@ -1,91 +1,91 @@
 {
-  "OldId": 1701143150,
-  "NewId": 843395182,
+  "OldId": "nbee",
+  "NewId": "n0E2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A041,Arlm,Ahrp"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 2
     },
     {
-      "Id": 1769300597,
+      "Id": "ubui",
       "Type": 3,
       "Value": "h02P,h0C7,h0C8,h0C9,h0C6,h0CB,h0CA,h0CI,tp04,h0CC,h0CD"
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "small"
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 10
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 7
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 2
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 190
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "sapper,peon"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Sunfury Worker)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.8
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Technician"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Technician"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Intelligent builder of Thalassian structures."
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\WorkerBloodElfV1.01.mdl"
     }

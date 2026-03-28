@@ -1,46 +1,46 @@
 {
-  "OldId": 1702454593,
-  "NewId": 909529172,
+  "OldId": "Aeye",
+  "NewId": "TP66",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1969518440,
+      "Id": "hwdu",
       "Type": 3,
       "Value": "tp67"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 180
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sentinels)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons an invisible and immovable owl ward that provides vision in an area. |nCan see invisible units. |nLasts \u003CAeye,Dur1\u003E seconds."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     }
   ]

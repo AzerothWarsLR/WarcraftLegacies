@@ -1,94 +1,94 @@
 {
-  "OldId": 1685547073,
-  "NewId": 942813249,
+  "OldId": "Ahwd",
+  "NewId": "A028",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B098"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "other"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1969518440,
+      "Id": "hwdu",
       "Type": 3,
       "Value": "o037"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Scythe of Elune)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Moon Beam"
     },
     {
-      "Id": 1802728801,
+      "Id": "ausk",
       "Type": 3,
       "Value": "o037"
     }

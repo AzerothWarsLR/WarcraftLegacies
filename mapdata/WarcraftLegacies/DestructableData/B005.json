@@ -1,36 +1,36 @@
 {
-  "OldId": 1668437068,
-  "NewId": 892350530,
+  "OldId": "LTrc",
+  "NewId": "B005",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1000
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1718973282,
+      "Id": "bsuf",
       "Type": 3,
       "Value": "(Aq Temple)"
     },
     {
-      "Id": 1918989922,
+      "Id": "bvar",
       "Value": 1
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Force Wall Blockers"
     }

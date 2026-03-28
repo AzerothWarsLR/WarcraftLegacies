@@ -1,66 +1,66 @@
 {
-  "OldId": 1702316097,
-  "NewId": 959590465,
+  "OldId": "AHwe",
+  "NewId": "A029",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 150
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 90
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 90
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R00E"
     },
     {
       "Level": 1,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "h00U"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Hydromancer)"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Summon Water Elemental"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons a Water Elemental, which has \u003Ch00U,realHP\u003E hit points, deals \u003Ch00U,mindmg1\u003E - \u003Ch00U,maxdmg1\u003E damage, and can learn the Freezing Shot ability. |nLasts \u003CA029,Dur1\u003E seconds.|n|n|cffffcc00Attacks land and air units.|r"
     }

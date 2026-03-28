@@ -1,37 +1,37 @@
 {
-  "OldId": 1936941422,
+  "OldId": "nass",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 18
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 23
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 700
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.1
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged unit that fires envenomed bolts and can Shadowmeld. "
     }

@@ -1,12 +1,12 @@
 {
-  "OldId": 1919962689,
+  "OldId": "ANpr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,neutral,nonhero,player,vulnerable"
     }

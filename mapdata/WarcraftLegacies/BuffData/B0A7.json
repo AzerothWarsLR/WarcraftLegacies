@@ -1,32 +1,32 @@
 {
-  "OldId": 1835615554,
-  "NewId": 927019074,
+  "OldId": "BEim",
+  "NewId": "B0A7",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "war3mapImported\\Effect_LightStormOptimized.mdx"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Divine Field"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit has Divine Storm; nearby enemy ground units will take damage over time."
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
     },
     {
-      "Id": 1952543590,
+      "Id": "fsat",
       "Type": 3,
       "Value": ""
     }

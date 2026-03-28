@@ -1,52 +1,52 @@
 {
-  "OldId": 1937003842,
-  "NewId": 909717570,
+  "OldId": "BUts",
+  "NewId": "B096",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNThorns.blp"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Thorns (Treant)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 828470374,
+      "Id": "fta1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 845247590,
+      "Id": "fta2",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 862024806,
+      "Id": "fta3",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1667331174,
+      "Id": "ftac",
       "Value": 0
     }
   ]

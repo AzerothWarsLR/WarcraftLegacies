@@ -1,67 +1,67 @@
 {
-  "OldId": 845639745,
-  "NewId": 1513500737,
+  "OldId": "Apg2",
+  "NewId": "A06Z",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862417488,
+      "Id": "Prg3",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 45
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879194704,
+      "Id": "Prg4",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895971920,
+      "Id": "Prg5",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828863056,
+      "Id": "Prg1",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Ogre Magi)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     }

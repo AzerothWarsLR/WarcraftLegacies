@@ -1,28 +1,28 @@
 {
-  "OldId": 845703022,
+  "OldId": "ngh2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1000
     },
     {
-      "Id": 1935827317,
+      "Id": "uabs",
       "Type": 3,
       "Value": "ACcs"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged unit that can cast Curse and Possession. "
     }

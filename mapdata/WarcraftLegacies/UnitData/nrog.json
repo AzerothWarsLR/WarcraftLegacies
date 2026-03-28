@@ -1,39 +1,39 @@
 {
-  "OldId": 1735357038,
+  "OldId": "nrog",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACct,Ashm"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A02D"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 18
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 20
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 700
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.1
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit with Shadowmeld. "
     }

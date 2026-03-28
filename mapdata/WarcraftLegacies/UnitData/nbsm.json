@@ -1,42 +1,42 @@
 {
-  "OldId": 1836278382,
+  "OldId": "nbsm",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Avul,Aiun"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 100
     },
     {
-      "Id": 1734632053,
+      "Id": "ubdg",
       "Value": 0
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,neutral,sapper"
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 10
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Book of Medivh"
     }

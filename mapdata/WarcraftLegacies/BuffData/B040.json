@@ -1,27 +1,27 @@
 {
-  "OldId": 1718832962,
-  "NewId": 808726594,
+  "OldId": "BOsf",
+  "NewId": "B040",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Summon Minion"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Legion)"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp"
     }

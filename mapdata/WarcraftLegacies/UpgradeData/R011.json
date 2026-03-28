@@ -1,39 +1,39 @@
 {
-  "OldId": 1751347026,
-  "NewId": 825307218,
+  "OldId": "Roch",
+  "NewId": "R011",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828794215,
+      "Id": "gef1",
       "Type": 3,
       "Value": "rlev"
     },
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 829383527,
+      "Id": "gco1",
       "Type": 3,
       "Value": "A0I6"
     },
     {
-      "Id": 829386087,
+      "Id": "gmo1",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Fel Horde)"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Quest Completed: Felsteel Refining"
     }

@@ -1,112 +1,112 @@
 {
-  "OldId": 1970235496,
-  "NewId": 1144008808,
+  "OldId": "hhou",
+  "NewId": "h00D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 10
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 10
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 30
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 3500
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 50
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 300
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 300
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1.9
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A13O"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNResStone.blp"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Quelthalas Other)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\Cinematic\\RessurectionStoneSE\\RessurectionStoneSE.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.6
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Elven Runestone"
     },
     {
-      "Id": 1634759541,
+      "Id": "uspa",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Protects Quel\u0027thalas from attacks."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": ""
     }

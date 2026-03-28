@@ -1,192 +1,192 @@
 {
-  "OldId": 1935762280,
-  "NewId": 1429287016,
+  "OldId": "hcas",
+  "NewId": "h01U",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0K5,Arlm,AEsb"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "siege"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.6
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 10
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 87
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 30
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 30
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 106
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 40
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 80
     },
     {
-      "Id": 828663925,
+      "Id": "uhd1",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\12x12Simple.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "_"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 18
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 125
     },
     {
-      "Id": 828666229,
+      "Id": "uqd1",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 600
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1986359925,
+      "Id": "urev",
       "Value": 1
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 26
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "debris,ground,nonancient,notself,structure,tree,wall"
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,tree,wall,ward"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "h019,h01L,hpea"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,townhall"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R013,Rhac,Rgfo"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 160
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Ironforge)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "buildings\\human\\GryphonAviary\\GryphonAviary.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 160
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.25
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Aerie Peak"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 160
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

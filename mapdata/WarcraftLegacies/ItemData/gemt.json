@@ -1,20 +1,20 @@
 {
-  "OldId": 1953326439,
+  "OldId": "gemt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 400
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "A"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase (|cffcece00A|r) Gem of True Seeing"
     }

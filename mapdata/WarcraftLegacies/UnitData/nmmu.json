@@ -1,38 +1,38 @@
 {
-  "OldId": 1970105710,
+  "OldId": "nmmu",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "amph"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.8
     },
     {
-      "Id": 1919252085,
+      "Id": "uver",
       "Value": 1
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\creeps\\MurlocMutant\\MurlocMutant.mdl"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium melee unit that can Cripple opponents. "
     }

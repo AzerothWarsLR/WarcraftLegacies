@@ -1,27 +1,27 @@
 {
-  "OldId": 1768967746,
-  "NewId": 1161244738,
+  "OldId": "BNpi",
+  "NewId": "B07E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Holy Radiance"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Purple - Alexandros)"
     },
     {
-      "Id": 1952543590,
+      "Id": "fsat",
       "Type": 3,
       "Value": ""
     }

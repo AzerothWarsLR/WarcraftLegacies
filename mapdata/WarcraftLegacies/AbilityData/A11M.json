@@ -1,6 +1,6 @@
 {
-  "OldId": 1819500865,
-  "NewId": 1295069505,
+  "OldId": "Aasl",
+  "NewId": "A11M",
   "Unk": [
     0
   ],
@@ -8,18 +8,18 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829385811,
+      "Id": "Slo1",
       "Type": 2,
       "Value": -0.9
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0B3"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Black hole)"
     }

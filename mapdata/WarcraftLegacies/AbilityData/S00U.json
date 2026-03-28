@@ -1,33 +1,33 @@
 {
-  "OldId": 1953788499,
-  "NewId": 1429221459,
+  "OldId": "Srtt",
+  "NewId": "S00U",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R09P"
     },
     {
       "Level": 1,
-      "Id": 828467267,
+      "Id": "Cha1",
       "Type": 3,
       "Value": "okod"
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(revert bloodpact - Kodo)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Chaos"
     }

@@ -1,58 +1,58 @@
 {
-  "OldId": 1936016193,
-  "NewId": 892420698,
+  "OldId": "ACes",
+  "NewId": "ZB15",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829842757,
+      "Id": "Eev1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Ursoc)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes this units attacks to emit waves which deal 50% of their attack damage to enemy ground units in a line in front of them."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Massive Attack"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASHammerCrush.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Massive Attack"
     }

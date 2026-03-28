@@ -1,6 +1,6 @@
 {
-  "OldId": 1651536705,
-  "NewId": 1513107521,
+  "OldId": "Aspb",
+  "NewId": "A00Z",
   "Unk": [
     0
   ],
@@ -8,60 +8,60 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828534899,
+      "Id": "spb1",
       "Type": 3,
       "Value": "A010,A093,ZB10"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845312115,
+      "Id": "spb2",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895643763,
+      "Id": "spb5",
       "Type": 3,
       "Value": "sacrifice"
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancerAdept.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Lich King spellbook)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Power of the Lich King"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Power of the Lich King"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Lich King\u0027s immense power provides access to additional abilities."
     }

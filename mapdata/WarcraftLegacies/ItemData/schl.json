@@ -1,32 +1,32 @@
 {
-  "OldId": 1818780531,
+  "OldId": "schl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Artifact"
     },
     {
-      "Id": 1886545001,
+      "Id": "idrp",
       "Value": 1
     },
     {
-      "Id": 1886677097,
+      "Id": "ihtp",
       "Value": 500000
     },
     {
-      "Id": 2002874473,
+      "Id": "ipaw",
       "Value": 0
     },
     {
-      "Id": 1818588009,
+      "Id": "isel",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Grants the ability to heal a friendly unit. Also grants the Hero and friendly nearby units 2 hit point regeneration per second."
     }

@@ -1,17 +1,17 @@
 {
-  "OldId": 1986086978,
-  "NewId": 1312895042,
+  "OldId": "BHav",
+  "NewId": "B0AN",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": " (Thane)"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is in Avatar form; it has dramatically increased hit points, attack damage, armor, and is immune to spells."
     }

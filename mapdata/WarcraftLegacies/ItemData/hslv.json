@@ -1,28 +1,28 @@
 {
-  "OldId": 1986818920,
+  "OldId": "hslv",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 10
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 9
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     }
   ]

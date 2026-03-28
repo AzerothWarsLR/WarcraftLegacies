@@ -1,63 +1,63 @@
 {
-  "OldId": 1836075329,
-  "NewId": 1194930241,
+  "OldId": "AIpm",
+  "NewId": "A09G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 120
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 210
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(sapper)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Goblin Land Mine"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Goblin Land Mine"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Places a mine at a target point. Enemy units that move near the trap causes the trap to explode for 60 damage in a small area, and 30 damage in a large area. |nHas a 10 second activation timer."
     }

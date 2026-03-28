@@ -1,17 +1,17 @@
 {
-  "OldId": 1701988673,
+  "OldId": "AIre",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "( 500 hitpoint 200 mana)"
     }

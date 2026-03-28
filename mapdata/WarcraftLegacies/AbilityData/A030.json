@@ -1,6 +1,6 @@
 {
-  "OldId": 1718832961,
-  "NewId": 808661057,
+  "OldId": "AOsf",
+  "NewId": "A030",
   "Unk": [
     0
   ],
@@ -8,91 +8,91 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 3
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
       "Level": 1,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "efon"
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BFig"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sunfury)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Call Treants"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Call Treant - [|cffffcc00Level %d|r]."
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Summons Treants to battle Malfurion\u0027s enemies. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 3 Treants.|n|cffffcc00Level 2|r - 4 Treants.|n|cffffcc00Level 3|r - 5 Treants.|n|cffffcc00Level 4|r - 6 Poison Treants."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Call Treants"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons \u003CA030,DataB1\u003E Treants to aid the Ancient in battle. |n|n|cffffcc00Attacks land units.|r"
     }

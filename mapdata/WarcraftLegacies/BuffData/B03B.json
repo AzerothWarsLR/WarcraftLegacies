@@ -1,47 +1,47 @@
 {
-  "OldId": 1751404098,
-  "NewId": 1110650946,
+  "OldId": "BNdh",
+  "NewId": "B03B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCloudOfFog.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Smoke Bomb"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit was hit by a smoke bomb; it has reduced movement speed and a chance to miss on attacks."
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Smoke Bomb"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Sent)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": "chest"
     }

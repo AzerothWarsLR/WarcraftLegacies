@@ -1,6 +1,6 @@
 {
-  "OldId": 1937130305,
-  "NewId": 1264070721,
+  "OldId": "ACvs",
+  "NewId": "A0XK",
   "Unk": [
     0
   ],
@@ -8,64 +8,64 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828993360,
+      "Id": "Poi1",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845770576,
+      "Id": "Poi2",
       "Type": 2,
       "Value": 0.4
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862547792,
+      "Id": "Poi3",
       "Type": 2,
       "Value": 0.3
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Assasins)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Poison Spears"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Poison Spears"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Deals 10 poison damage per second and slows attack speed by 40% and movement speed by 30%. |nLasts 10 seconds. 3 seconds on heroes"
     }

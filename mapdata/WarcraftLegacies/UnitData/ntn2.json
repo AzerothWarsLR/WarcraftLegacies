@@ -1,21 +1,21 @@
 {
-  "OldId": 846099566,
+  "OldId": "ntn2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\4x4SimpleSolid.tga"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

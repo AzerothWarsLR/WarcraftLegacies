@@ -1,37 +1,37 @@
 {
-  "OldId": 1700876098,
-  "NewId": 1144008770,
+  "OldId": "BOae",
+  "NewId": "B00D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly Might.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Holy Power"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Orc\\Voodoo\\VoodooAuraTarget.mdl"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of Holy Power; it has an increased movement speed and attack rate."
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": "overhead"
     }

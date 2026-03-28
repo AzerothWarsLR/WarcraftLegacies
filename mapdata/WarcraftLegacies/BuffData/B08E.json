@@ -1,17 +1,17 @@
 {
-  "OldId": 1702316098,
-  "NewId": 1161310274,
+  "OldId": "BHwe",
+  "NewId": "B08E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLavaSpawn.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Fire Elemental"
     }

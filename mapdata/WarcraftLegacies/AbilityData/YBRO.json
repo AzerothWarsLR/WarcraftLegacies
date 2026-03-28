@@ -1,49 +1,49 @@
 {
-  "OldId": 1920092481,
-  "NewId": 1330791001,
+  "OldId": "AIrr",
+  "NewId": "YBRO",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828469074,
+      "Id": "Roa1",
       "Type": 2,
       "Value": 0.3
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(The Doomhammer)"
     }

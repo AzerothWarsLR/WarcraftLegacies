@@ -1,96 +1,96 @@
 {
-  "OldId": 1650812242,
-  "NewId": 1479880786,
+  "OldId": "Reeb",
+  "NewId": "R05X",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 150
     },
     {
-      "Id": 828794215,
+      "Id": "gef1",
       "Type": 3,
       "Value": "ratx"
     },
     {
-      "Id": 845571431,
+      "Id": "gef2",
       "Type": 3,
       "Value": "rarm"
     },
     {
-      "Id": 862348647,
+      "Id": "gef3",
       "Type": 3,
       "Value": "rhpx"
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 75
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1668379239,
+      "Id": "grqc",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNClaw.blp"
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 2
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 2
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Druids)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "C"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Blessing of Ursol"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Blessing of Ursol"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Improves Druids of the Claw and Bears by increasing their armor upgrade by 1, hit points by 150, and damage by 10."
     }

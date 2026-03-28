@@ -1,6 +1,6 @@
 {
-  "OldId": 1802728257,
-  "NewId": 1479618625,
+  "OldId": "Assk",
+  "NewId": "A01X",
   "Unk": [
     0
   ],
@@ -8,52 +8,52 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASPlated Gauntlet2.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Orange - Kassan. Dark Green - Champions)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Heavy Armor"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Heavy Armor"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces all attacks on this unit by \u003CA01X,DataC1\u003E damage."
     }

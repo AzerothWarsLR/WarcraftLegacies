@@ -1,12 +1,12 @@
 {
-  "OldId": 2053261378,
-  "NewId": 943206466,
+  "OldId": "BHbz",
+  "NewId": "B088",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Arcane Artillery (Caster)"
     }

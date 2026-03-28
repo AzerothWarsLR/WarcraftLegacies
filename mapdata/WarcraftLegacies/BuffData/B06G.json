@@ -1,12 +1,12 @@
 {
-  "OldId": 1634288962,
-  "NewId": 1194733634,
+  "OldId": "BEia",
+  "NewId": "B06G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Voodoo Restoration (Caster)"
     }

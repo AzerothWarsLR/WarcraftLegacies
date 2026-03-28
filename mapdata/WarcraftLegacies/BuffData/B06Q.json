@@ -1,17 +1,17 @@
 {
-  "OldId": 1802723906,
-  "NewId": 1362505794,
+  "OldId": "Bbsk",
+  "NewId": "B06Q",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Blood Fury"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is Berserk; it receives no damage and moves and attack faster."
     }

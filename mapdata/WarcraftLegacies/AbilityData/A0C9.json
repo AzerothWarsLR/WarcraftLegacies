@@ -1,77 +1,77 @@
 {
-  "OldId": 1986085697,
-  "NewId": 960704577,
+  "OldId": "ACav",
+  "NewId": "A0C9",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 2000
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B092"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828662088,
+      "Id": "Had1",
       "Type": 2,
       "Value": 6
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,self,structure"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASWarlockAura.BLP"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Any main building) (General)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Fortified Defenses"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Fortified Defenses"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "This base is in a strong fortified location. Gives nearby structures 6 bonus armor in 2000 area of effect."
     }

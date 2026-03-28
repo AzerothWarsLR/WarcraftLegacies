@@ -1,5 +1,5 @@
 {
-  "OldId": 1667318593,
+  "OldId": "ACac",
   "Unk": [
     0
   ],
@@ -7,22 +7,22 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828596547,
+      "Id": "Cac1",
       "Type": 2,
       "Value": 0.05
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Grey - Darkspear Warlord)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives 5% extra damage to the attacks of nearby friendly units."
     }

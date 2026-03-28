@@ -1,34 +1,34 @@
 {
-  "OldId": 1769105473,
-  "NewId": 1112748097,
+  "OldId": "Ahri",
+  "NewId": "A0SB",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "This unit spawns 2 Flying Horrors upon dying"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Spawn Flying Horror"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Spawn Flying Horror"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASFlyer.blp"
     }

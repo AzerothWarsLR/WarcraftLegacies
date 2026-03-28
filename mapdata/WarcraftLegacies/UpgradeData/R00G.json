@@ -1,57 +1,57 @@
 {
-  "OldId": 1818650706,
-  "NewId": 1194340434,
+  "OldId": "Rhfl",
+  "NewId": "R00G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 100
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": "h03T"
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp"
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Quel\u0027Thalas)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "X"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Feint"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Feint"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Allows Farstriders to use Feint, which turns them invisible for \u003CA02I,Dur1\u003E seconds and increases their movement speed by \u003CA02I,DataB1,%\u003E%."
     }

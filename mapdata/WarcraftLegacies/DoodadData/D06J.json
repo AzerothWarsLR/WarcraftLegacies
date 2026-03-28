@@ -1,72 +1,72 @@
 {
-  "OldId": 1936936793,
-  "NewId": 1245065284,
+  "OldId": "YOss",
+  "NewId": "D06J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_LordaeronTowerRound.mdl"
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Tower - Lordaeron Round"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.2
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "Y,X,J,*"
     },
     {
-      "Id": 1918989924,
+      "Id": "dvar",
       "Value": 3
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 100
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 100
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 175
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 90
     }
   ]

@@ -1,21 +1,21 @@
 {
-  "OldId": 1651070025,
+  "OldId": "ITib",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": "PathTextures\\CityBridgeSmall0.tga"
     }

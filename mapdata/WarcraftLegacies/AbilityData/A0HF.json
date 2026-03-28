@@ -1,47 +1,47 @@
 {
-  "OldId": 1634224449,
-  "NewId": 1179136065,
+  "OldId": "AIha",
+  "NewId": "A0HF",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 180
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1735419977,
+      "Id": "Ihpg",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "self"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Ability Cooldown reset"
     }

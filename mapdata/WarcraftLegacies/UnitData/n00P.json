@@ -1,90 +1,90 @@
 {
-  "OldId": 1886348142,
-  "NewId": 1345335406,
+  "OldId": "ncop",
+  "NewId": "n00P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0LO"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1936681077,
+      "Id": "uhos",
       "Value": 1
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 5000
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,sapper"
     },
     {
-      "Id": 1752591733,
+      "Id": "umvh",
       "Type": 2,
       "Value": 60
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": -1
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 1
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 1
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 1
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 900
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 900
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "bridge"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\4x4SimpleSolid.tga"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "The Abyss"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.5
     }

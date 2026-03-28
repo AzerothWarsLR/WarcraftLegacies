@@ -1,53 +1,53 @@
 {
-  "OldId": 1920356186,
-  "NewId": 1345335364,
+  "OldId": "ZOvr",
+  "NewId": "D00P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Doodads\\Ruins\\Props\\Ruins_NagaCircle\\Ruins_NagaCircle.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 20
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Naga Circle"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 200
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 200
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 200
     }
   ]

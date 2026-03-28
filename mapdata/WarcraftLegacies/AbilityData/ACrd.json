@@ -1,75 +1,75 @@
 {
-  "OldId": 1685209921,
+  "OldId": "ACrd",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B05E"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 50
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 50
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828989778,
+      "Id": "Rai1",
       "Value": 1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Pink - Stormreaver Warlock)"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": "Objects\\Spawnmodels\\Demon\\DemonDissipate\\DemonDissipate.mdl"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Call Voidwalker"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "(|cffffcc00R|r) - Call Voidwalker"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls forth a Greater Voidwalker using the soul of a dead unit.|n|nThe Voidwalker has 825 hit points and lasts 40 seconds."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp"
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 3
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "OldId": 1953066049,
-  "NewId": 1244737857,
+  "OldId": "Alit",
+  "NewId": "A11J",
   "Unk": [
     0
   ],
@@ -8,24 +8,24 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829712716,
+      "Id": "Lit1",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846489932,
+      "Id": "Lit2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Medivh)"
     },
     {
-      "Id": 1734962273,
+      "Id": "alig",
       "Type": 3,
       "Value": "FORK"
     }

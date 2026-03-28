@@ -1,33 +1,33 @@
 {
-  "OldId": 1953721448,
+  "OldId": "hlst",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055145,
+      "Id": "iabi",
       "Type": 3,
       "Value": "AIhx,Arll"
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 35
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "A"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Increases the life regeneration rate of the Hero by \u003CArll,DataA1\u003E hit points per second. Can be consumed for \u003CAIhx,DataA1\u003E health."
     }

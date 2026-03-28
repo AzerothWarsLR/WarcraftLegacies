@@ -1,33 +1,33 @@
 {
-  "OldId": 813127500,
-  "NewId": 1127559236,
+  "OldId": "LWw0",
+  "NewId": "D05C",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Fel Waterfall"
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\UrugarthVenomfall.mdl"
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 200
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 0
     }
   ]

@@ -1,82 +1,82 @@
 {
-  "OldId": 1718829889,
-  "NewId": 1465528385,
+  "OldId": "ACsf",
+  "NewId": "A0ZW",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "h0CJ"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNProwl.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sunfury)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Animal Companion"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Animal Companion"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons a panther companion with True Sight. |nLasts 45 seconds. |n|n|cffffcc00Attacks land units.|r"
     }

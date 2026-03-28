@@ -1,101 +1,101 @@
 {
-  "OldId": 1836278849,
-  "NewId": 1129459777,
+  "OldId": "Adsm",
+  "NewId": "A0RC",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846029889,
+      "Id": "Adm2",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R03T"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (Dark Green - Wizard\u0027s Sanctum)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Electric Strike"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Electric Strike"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Purges all units in a target area and stuns them for 2(1) seconds.|n|cffffcc00Deals 600 damage to summoned units.|r"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 1952543585,
+      "Id": "asat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNElectricStrike.blp"
     }

@@ -1,17 +1,17 @@
 {
-  "OldId": 1802654274,
-  "NewId": 1479553092,
+  "OldId": "BRrk",
+  "NewId": "D00X",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Unslanted barrens rock"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     }

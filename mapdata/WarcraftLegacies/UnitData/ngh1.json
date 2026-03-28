@@ -1,28 +1,28 @@
 {
-  "OldId": 828925806,
+  "OldId": "ngh1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 600
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit that can cast Possession. "
     }

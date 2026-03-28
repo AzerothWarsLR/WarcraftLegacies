@@ -1,6 +1,6 @@
 {
-  "OldId": 1835561811,
-  "NewId": 858796115,
+  "OldId": "Sshm",
+  "NewId": "S003",
   "Unk": [
     0
   ],
@@ -8,17 +8,17 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829253715,
+      "Id": "Shm1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sentinels- most units)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "X"
     }

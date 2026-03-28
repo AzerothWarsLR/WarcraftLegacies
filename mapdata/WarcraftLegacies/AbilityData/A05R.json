@@ -1,95 +1,95 @@
 {
-  "OldId": 1752394817,
-  "NewId": 1379217473,
+  "OldId": "Alsh",
+  "NewId": "A05R",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 225
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B02X,B02Y"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 125
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828928844,
+      "Id": "Lsh1",
       "Type": 2,
       "Value": -25
     },
     {
-      "Id": 1685221217,
+      "Id": "aord",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R00V"
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": "1"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,ground,neutral"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Ironforge - Rune Priest)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Healing Shield"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Healing Shield"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Forms a shield of healing energies around a target unit, healing 25 damage per second to all units around it. Lasts \u003CA05R,Dur1\u003E seconds."
     }

@@ -1,109 +1,109 @@
 {
-  "OldId": 1767991880,
+  "OldId": "Hjai",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0TD,AInv"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "Aamk,A096,AHbz,AHab,AHmt"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 350
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 18
     },
     {
-      "Id": 1853190773,
+      "Id": "urun",
       "Type": 1,
       "Value": 350
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
     },
     {
-      "Id": 1818326901,
+      "Id": "uwal",
       "Type": 1,
       "Value": 350
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Dalaran)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Archmage of Dalaran"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Jaina Proudmoore"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Mystical Hero, adept at summoning and damaging enemies over time."
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Jaina"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Hero_Jaina.mdl"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNjainahd.blp"
     }

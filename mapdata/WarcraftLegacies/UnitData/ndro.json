@@ -1,21 +1,21 @@
 {
-  "OldId": 1869767790,
+  "OldId": "ndro",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 4.5
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

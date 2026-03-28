@@ -1,6 +1,6 @@
 {
-  "OldId": 1650882369,
-  "NewId": 826552385,
+  "OldId": "Awfb",
+  "NewId": "A0D1",
   "Unk": [
     0
   ],
@@ -8,56 +8,56 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneBolt.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Arcanist)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "war3mapImported\\ArcaneMissile_Fixed.mdx"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Magic Missile"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Magic Missile"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Launches a magical missile at a target enemy unit, dealing 60 damage and stunning the target for \u003CA0D1,Dur1\u003E seconds. Lasts 0.1 seconds on heroes."
     }

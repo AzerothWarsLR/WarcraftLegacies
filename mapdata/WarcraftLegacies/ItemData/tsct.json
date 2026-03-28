@@ -1,36 +1,36 @@
 {
-  "OldId": 1952674676,
+  "OldId": "tsct",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 5
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 5
     },
     {
-      "Id": 1836412009,
+      "Id": "ilum",
       "Value": 0
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     }

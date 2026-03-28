@@ -1,6 +1,6 @@
 {
-  "OldId": 1651730497,
-  "NewId": 1515860033,
+  "OldId": "Ahsb",
+  "NewId": "A0ZZ",
   "Unk": [
     0
   ],
@@ -8,56 +8,56 @@
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862090056,
+      "Id": "Hsb3",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845312840,
+      "Id": "Hsb2",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828535624,
+      "Id": "Hsb1",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Incendiary Arrows"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases damage dealt to enemy Boarding Vessels by 20."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Incendiary Arrows"
     },
     {
-      "Id": 1952539489,
+      "Id": "acat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1885430625,
+      "Id": "acap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASSearingArrowAlt.blp"
     }

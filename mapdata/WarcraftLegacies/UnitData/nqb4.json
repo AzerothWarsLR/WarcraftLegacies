@@ -1,21 +1,21 @@
 {
-  "OldId": 878866798,
+  "OldId": "nqb4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Level 4)(Grey - Rexxar Summon)"
     }

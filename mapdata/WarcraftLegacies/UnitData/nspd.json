@@ -1,32 +1,32 @@
 {
-  "OldId": 1685091182,
+  "OldId": "nspd",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Aweb"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 17
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 390
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit. "
     }

@@ -1,46 +1,46 @@
 {
-  "OldId": 830105454,
+  "OldId": "ngz1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACbh"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "siege"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 5
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 5
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 41
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 985
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1.33
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 5
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Amani War Bear"
     }

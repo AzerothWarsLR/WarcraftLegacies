@@ -1,32 +1,32 @@
 {
-  "OldId": 1969313090,
-  "NewId": 1194668098,
+  "OldId": "BUau",
+  "NewId": "B05G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Dark Portal Control Aura"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of Dark Portal Control Aura; it is taking 4 damage per second."
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Dark Portal Control Aura"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Dark Portal Anti Camp)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

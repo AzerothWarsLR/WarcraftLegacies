@@ -1,6 +1,6 @@
 {
-  "OldId": 1802728257,
-  "NewId": 1380266049,
+  "OldId": "Assk",
+  "NewId": "A0ER",
   "Unk": [
     0
   ],
@@ -8,96 +8,96 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125459,
+      "Id": "Ssk1",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829125459,
+      "Id": "Ssk1",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 40
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 2
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R03Z"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemy,ally"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASTenebriousArmor.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "( Blue - Orc Cavalry)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "War Plating"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "War Plating"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
     }

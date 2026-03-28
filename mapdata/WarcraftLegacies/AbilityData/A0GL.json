@@ -1,259 +1,259 @@
 {
-  "OldId": 1651787841,
-  "NewId": 1279733825,
+  "OldId": "AHtb",
+  "NewId": "A0GL",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 110
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 145
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 828535880,
+      "Id": "Htb1",
       "Type": 2,
       "Value": 180
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "vulnerable"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Kul\u0027tiras - Lady Ashvane - Dummy)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 250 damage, 4 second stun. 2 second on Heroes.|n|cffffcc00Level 2|r - 300 damage, 5 second stun. 2.5 seconds on Heroes.|n|cffffcc00Level 3|r - 350 damage, 6 second stun. 3 seconds on Heroes.|n|cffffcc00Level 4|r - 400 damage, 7 second stun. 3.5 seconds on Heroes"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNImpactBolt.blp"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "war3mapImported\\LowQualityCannonball.mdx"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Scattershot"
     }

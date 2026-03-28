@@ -1,187 +1,187 @@
 {
-  "OldId": 1667392078,
-  "NewId": 1144205390,
+  "OldId": "Nbbc",
+  "NewId": "N03D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0W3,AInv"
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 1.7
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 0.7
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1935827829,
+      "Id": "ucbs",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1953522549,
+      "Id": "ucpt",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 5
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "A0W1,Aamk,A07R,A0TW,A0DB"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 200
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 1.8
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "STR"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 18
     },
     {
-      "Id": 1853190773,
+      "Id": "urun",
       "Type": 1,
       "Value": 250
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 25
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 3.8
     },
     {
-      "Id": 1818326901,
+      "Id": "uwal",
       "Type": 1,
       "Value": 250
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrc_Warlord.blp"
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Fel Warchief"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Fel)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\FelOrcWarlord.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 2053990773,
+      "Id": "uimz",
       "Type": 2,
       "Value": 90
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.95
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Warchief of the Fel Horde"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Kargath Bladefist"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Fel Warchief"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.35
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Warrior Hero, adept at bolstering troups and melee combat."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "Shaman"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Kargath"
     }

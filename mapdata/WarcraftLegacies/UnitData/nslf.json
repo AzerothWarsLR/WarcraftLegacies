@@ -1,46 +1,46 @@
 {
-  "OldId": 1718383470,
+  "OldId": "nslf",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0KF,ACsw"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A0KF"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 34
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 725
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit that can Slow opponents. "
     }

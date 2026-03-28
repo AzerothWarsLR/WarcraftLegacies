@@ -1,40 +1,40 @@
 {
-  "OldId": 1668697922,
-  "NewId": 843198530,
+  "OldId": "BOvc",
+  "NewId": "B0B2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Time\u0027s Shield (Caster)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "war3mapImported\\Bondage Blue SD.mdx"
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": "origin"
     },
     {
-      "Id": 1667331174,
+      "Id": "ftac",
       "Value": 1
     },
     {
-      "Id": 1685091174,
+      "Id": "fspd",
       "Value": 2
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "war3mapImported\\Bondage Blue SD.mdx"
     },
     {
-      "Id": 1952867686,
+      "Id": "feft",
       "Type": 3,
       "Value": "origin"
     }

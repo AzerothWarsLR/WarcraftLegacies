@@ -1,6 +1,6 @@
 {
-  "OldId": 1852396865,
-  "NewId": 1196175425,
+  "OldId": "AUin",
+  "NewId": "A0LG",
   "Unk": [
     0
   ],
@@ -8,41 +8,41 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829319509,
+      "Id": "Uin1",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846096725,
+      "Id": "Uin2",
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 879651157,
+      "Id": "Uin4",
       "Type": 3,
       "Value": "uloc"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Rain of Meteors(damage spell level 3)"
     }

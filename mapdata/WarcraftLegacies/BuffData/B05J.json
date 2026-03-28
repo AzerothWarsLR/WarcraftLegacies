@@ -1,27 +1,27 @@
 {
-  "OldId": 1986090306,
-  "NewId": 1244999746,
+  "OldId": "BUav",
+  "NewId": "B05J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Grim Batol"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "Restores hit points equal to 10% of damage dealt to enemy units."
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1952543590,
+      "Id": "fsat",
       "Type": 3,
       "Value": ""
     }

@@ -1,141 +1,141 @@
 {
-  "OldId": 1685550664,
+  "OldId": "Hvwd",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0KV,AInv,Ault"
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 750
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 24
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 2.2
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.7
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 10
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "Aamk,A083,A047,AEar,A0PK"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 200
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 2.3
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 18
     },
     {
-      "Id": 1915904373,
+      "Id": "ua2r",
       "Value": 650
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 260
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 1.5
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "air,debris,ground,item,structure,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R01R"
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSylvanas_by67chrome.blp"
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Ranger-General"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Quelthalas)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ranger-General of Silvermoon"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Ranger-General"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.1
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Sylvanas"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Cuning Hero, adept at supporting armies and assasinating heroes."
     }

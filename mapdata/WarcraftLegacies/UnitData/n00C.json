@@ -1,157 +1,157 @@
 {
-  "OldId": 1836673134,
-  "NewId": 1127231598,
+  "OldId": "nhym",
+  "NewId": "n00C",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A006,A05R,A009,Aihn"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A009"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 3
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.5
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 19
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 15
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 22
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 700
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 200
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 13
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 235
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 1
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar,R00V,Rguv"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMonk.blp"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 1635083125,
+      "Id": "ucua",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGheavenlydemolisher.blp"
     },
     {
-      "Id": 1853186933,
+      "Id": "ucun",
       "Type": 3,
       "Value": "Initiate, Adept, Master"
     },
     {
-      "Id": 1953850229,
+      "Id": "ucut",
       "Type": 3,
       "Value": "- Rune of Wrath,- Rune of Wrath|n- Healing Shield,- Rune of Wrath|n- Healing Shield|n- Rune of Shielding"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Ironforge)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Battle Priest .mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.85
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Rune Priest"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Rune Priest"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Learned war-priest and runecrafter. "
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "HeroMountainKing"
     }

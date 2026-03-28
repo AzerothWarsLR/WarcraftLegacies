@@ -1,6 +1,6 @@
 {
-  "OldId": 1802723905,
-  "NewId": 1396851290,
+  "OldId": "Absk",
+  "NewId": "ZBBS",
   "Unk": [
     0
   ],
@@ -8,87 +8,87 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125474,
+      "Id": "bsk1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679906,
+      "Id": "bsk3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.001
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0.001
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Incubate)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Hatches the Mature Egg, destroying it and creating a permanent Soldier."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Hatch"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHatchingEgg.blp"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Hatch"
     }

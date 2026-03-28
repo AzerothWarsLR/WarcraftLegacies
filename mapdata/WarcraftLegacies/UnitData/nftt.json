@@ -1,50 +1,50 @@
 {
-  "OldId": 1953785454,
+  "OldId": "nftt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACev,ACen"
     },
     {
-      "Id": 1701606261,
+      "Id": "usle",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 22
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 30
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 650
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2.1
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged unit that can Ensnare opponents. "
     }

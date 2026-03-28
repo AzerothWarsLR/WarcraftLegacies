@@ -1,62 +1,62 @@
 {
-  "OldId": 1685547119,
-  "NewId": 909143141,
+  "OldId": "ohwd",
+  "NewId": "el06",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "EL0X,Avul,Aloc"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(tidal Lord)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Whirlpool.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.4
     },
     {
-      "Id": 2020111221,
+      "Id": "ushx",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 2036888437,
+      "Id": "ushy",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1751675765,
+      "Id": "ushh",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 2003334005,
+      "Id": "ushw",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Superior Whirlpool"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
     }

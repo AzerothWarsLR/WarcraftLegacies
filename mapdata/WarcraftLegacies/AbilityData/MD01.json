@@ -1,6 +1,6 @@
 {
-  "OldId": 1802723905,
-  "NewId": 825246797,
+  "OldId": "Absk",
+  "NewId": "MD01",
   "Unk": [
     0
   ],
@@ -8,356 +8,356 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125474,
+      "Id": "bsk1",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 0.4
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 0.7
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 1.3
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679906,
+      "Id": "bsk3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829125474,
+      "Id": "bsk1",
       "Type": 2,
       "Value": 0.15
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829125474,
+      "Id": "bsk1",
       "Type": 2,
       "Value": 0.2
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 829125474,
+      "Id": "bsk1",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,self"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,self"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,self"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,self"
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B00D"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B00D"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B00D"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B00D"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 3,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 4,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Lordaeron - Alexandros)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases this units attack speed by 40% and increases movement speed by 10%. |nLasts 12 seconds."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Holy Power"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Holy Power - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Increases Alexandros\u0027 attack speed and movement speed. Lasts 12 seconds.  |n|cffffcc00|nLevel 1 |r - Attack speed by 40%, movement speed by 10%.|n|cffffcc00Level 2 |r - Attack speed by 70%, movement speed by 15%. |n|cffffcc00Level 3 |r - Attack speed by 100%, movement speed by 20%. |n|cffffcc00Level 4|r - Attack speed by 130%, movement speed by 25%."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Holy Power - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Holy Power - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Holy Power - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Holy Power - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases this units attack speed by 70% and increases movement speed by 15%. |nLasts 12 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases this units attack speed by 100% and increases movement speed by 20%. |nLasts 12 seconds."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases this units attack speed by 130% and increases movement speed by 25%. |nLasts 12 seconds."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly Might.blp"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly Might.blp"
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly Might.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 2
     }
   ]

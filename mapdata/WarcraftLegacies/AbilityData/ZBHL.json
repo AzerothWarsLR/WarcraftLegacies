@@ -1,51 +1,51 @@
 {
-  "OldId": 1802728257,
-  "NewId": 1279803994,
+  "OldId": "Assk",
+  "NewId": "ZBHL",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "ZBHS"
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 30
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Obsidian Eradicator)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Hardened"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Hardened"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces all attacks on the unit by \u003CZBHL,DataC1\u003E damage. Attacks cannot be reduced below \u003CZBHL,DataB1\u003E damage."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     }
   ]

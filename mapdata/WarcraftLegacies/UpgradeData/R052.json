@@ -1,29 +1,29 @@
 {
-  "OldId": 1751347026,
-  "NewId": 842346578,
+  "OldId": "Roch",
+  "NewId": "R052",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651469415,
+      "Id": "glob",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Sentinels)"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Quest Completed: Gates of Ahn\u0027Qiraj"
     }

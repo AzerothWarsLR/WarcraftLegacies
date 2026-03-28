@@ -1,51 +1,51 @@
 {
-  "OldId": 1836270401,
-  "NewId": 1953524566,
+  "OldId": "ACsm",
+  "NewId": "Vkpt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R017"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896689230,
+      "Id": "Ndr5",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (Scylla)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Transfers mana between the Scylla and a target. Drains \u003CVkpt,DataB1\u003E mana per second from an enemy, or transfers \u003CVkpt,DataE1\u003E mana per second to an ally.|n|nSiphon Mana can push the Scylla\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     }
   ]

@@ -1,126 +1,126 @@
 {
-  "OldId": 1918984815,
-  "NewId": 1211248751,
+  "OldId": "obar",
+  "NewId": "o02H",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0BV"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 10
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 18
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 40
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 3000
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 20
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "R04G,R01Y"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "u00D,u007"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rgfo"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 100
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Legion - Alterac)"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 130
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Blackrock Encampment"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Encampment of orcs under the guideance of the Legion."
     }

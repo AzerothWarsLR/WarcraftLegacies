@@ -1,39 +1,39 @@
 {
-  "OldId": 1936683073,
+  "OldId": "Apos",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 185
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829648720,
+      "Id": "Pos1",
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground,neutral,nonhero,nonsapper,organic"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Red - Banshee)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     }

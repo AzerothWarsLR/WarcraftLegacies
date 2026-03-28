@@ -1,46 +1,46 @@
 {
-  "OldId": 1919046732,
-  "NewId": 1462775874,
+  "OldId": "LTbr",
+  "NewId": "B00W",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1918989410,
+      "Id": "btar",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1702061922,
+      "Id": "bgse",
       "Value": 0
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 7
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "war3mapImported\\Tree_HugeStump.mdl"
     },
     {
-      "Id": 1836083042,
+      "Id": "bgpm",
       "Type": 3,
       "Value": "war3mapImported\\Tree_HugeStump.mdl"
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Tree Huge"
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": "ShadowTempleoftheDamned"
     }

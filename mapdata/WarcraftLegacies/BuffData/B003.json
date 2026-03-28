@@ -1,17 +1,17 @@
 {
-  "OldId": 1314149186,
-  "NewId": 858796098,
+  "OldId": "BSTN",
+  "NewId": "B003",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Thunder"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
     }

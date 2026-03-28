@@ -1,65 +1,65 @@
 {
-  "OldId": 1818839361,
-  "NewId": 878268500,
+  "OldId": "AIil",
+  "NewId": "TPY4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1684826441,
+      "Id": "Iild",
       "Type": 2,
       "Value": 0.6
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,alive,allies,ancient,enemies,friend,ground,hero,invulnerable,item,neutral,nonancient,nonhero,organic,player,self,vulnerable"
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 2003593545,
+      "Id": "Iilw",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Phantom Step"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Dummy)"
     }

@@ -1,6 +1,6 @@
 {
-  "OldId": 1952662337,
-  "NewId": 808923201,
+  "OldId": "ACct",
+  "NewId": "A070",
   "Unk": [
     0
   ],
@@ -8,21 +8,21 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 15
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Teal - Felguard. Blue - Felguard. Dark Green - Marksman)"
     }

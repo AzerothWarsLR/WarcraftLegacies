@@ -1,5 +1,5 @@
 {
-  "OldId": 1868789057,
+  "OldId": "Auco",
   "Unk": [
     0
   ],
@@ -7,103 +7,103 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845243460,
+      "Id": "Dda2",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 878797892,
+      "Id": "Dda4",
       "Type": 2,
       "Value": 150
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 2
     },
     {
       "Level": 2,
       "Pointer": 6,
-      "Id": 913269589,
+      "Id": "Uco6",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845243460,
+      "Id": "Dda2",
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 878797892,
+      "Id": "Dda4",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862020676,
+      "Id": "Dda3",
       "Type": 2,
       "Value": 350
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,neutral,enemy"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Pink - Troll Batrider)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Unstable Concoction- [|cffffcc00Level 1|r]"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes a powerful explosion that deals \u003CAuco,DataB2\u003E damage to a target air unit, and \u003CAuco,DataD2\u003E damage to nearby enemy air units."
     },
     {
       "Level": 2,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
     },
     {
       "Level": 2,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Unstable Concoction- [|cffffcc00Level 2|r]"
     }

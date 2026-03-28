@@ -1,78 +1,78 @@
 {
-  "OldId": 1852200257,
-  "NewId": 825241665,
+  "OldId": "AUfn",
+  "NewId": "A001",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829318741,
+      "Id": "Ufn1",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846095957,
+      "Id": "Ufn2",
       "Type": 2,
       "Value": 150
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 2000
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,neutral"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R04V"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(The Frozen Throne)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "X"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Frost Nova"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Blasts enemy units with a wave of frost that deals \u003CA001,DataB1\u003E damage to the target, and \u003CA001,DataA1\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CA001,Dur1\u003E seconds."
     }

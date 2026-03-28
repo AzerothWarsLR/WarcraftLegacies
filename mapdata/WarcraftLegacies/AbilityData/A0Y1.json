@@ -1,6 +1,6 @@
 {
-  "OldId": 1802728257,
-  "NewId": 827928641,
+  "OldId": "Assk",
+  "NewId": "A0Y1",
   "Unk": [
     0
   ],
@@ -8,62 +8,62 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125459,
+      "Id": "Ssk1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASDarkness Shield.blp"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(C\u0027thun Vezax)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Unholy Plating"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Unholy Plating"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Attacks against this unit have a \u003CA0Y1,DataA1\u003E% to have their damage reduced by \u003CA0Y1,DataC1\u003E. Attacks cannot be reduced below \u003CA0Y1,DataB1\u003E damage."
     }

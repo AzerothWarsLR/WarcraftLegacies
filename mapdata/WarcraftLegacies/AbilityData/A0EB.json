@@ -1,6 +1,6 @@
 {
-  "OldId": 1734636353,
-  "NewId": 1111830593,
+  "OldId": "Asdg",
+  "NewId": "A0EB",
   "Unk": [
     0
   ],
@@ -8,69 +8,69 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845243460,
+      "Id": "Dda2",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 878797892,
+      "Id": "Dda4",
       "Type": 2,
       "Value": 20
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCNecroPowah.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Plagueling)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Meatsplosion"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Meatsplosion"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Deals \u003CA0EB,DataB1\u003E damage in a small area."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCNecroPowah.blp"
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     }

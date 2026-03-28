@@ -1,60 +1,60 @@
 {
-  "OldId": 1668246645,
-  "NewId": 1110519925,
+  "OldId": "uloc",
+  "NewId": "u01B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 30
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 4
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "enemies,ground,nonancient"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar,Rguv"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Stormwind - Flagship)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\human\\Gyrocopter\\Gyrocopter_V1.mdl"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.5
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Gyrocopter"
     },
     {
-      "Id": 1650684789,
+      "Id": "uscb",
       "Value": 0
     }
   ]

@@ -1,38 +1,38 @@
 {
-  "OldId": 1701998707,
+  "OldId": "spre",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 25
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Purchasable"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Teleports a target friendly unit to its highest level town hall. Has a 2 second cast time. 90 second cooldown."
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     }

@@ -1,105 +1,105 @@
 {
-  "OldId": 1919969381,
+  "OldId": "ehpr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ANwk,A0HZ,Ault"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 10
     },
     {
-      "Id": 1918985077,
+      "Id": "ucar",
       "Value": 3
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 30
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 26
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 900
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 650
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 3
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 280
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "air,debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rguv,R002,R03J,Rhme,Rhar,Reib,Remk,Reuv"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R09X"
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 650
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Sentinels)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.85
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Hippogryph Rider"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Airborne archer of the Sentinels who strikes multiple foes."
     }

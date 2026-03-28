@@ -1,40 +1,40 @@
 {
-  "OldId": 1634747201,
+  "OldId": "ACpa",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(fel horde_"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Void Parasite"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Void Parasite"
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     }

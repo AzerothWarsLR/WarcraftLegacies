@@ -1,58 +1,58 @@
 {
-  "OldId": 1718317934,
+  "OldId": "nskf",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "ACsa"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 6
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "small"
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R03M,R03N,R000,Rhme,Rhar,R03L"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Fel)"
     },
     {
-      "Id": 828468597,
+      "Id": "uma1",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit that shoots Searing Arrows. "
     }

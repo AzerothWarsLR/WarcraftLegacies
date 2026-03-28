@@ -1,28 +1,28 @@
 {
-  "OldId": 1802728001,
-  "NewId": 825377869,
+  "OldId": "Arsk",
+  "NewId": "MD21",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Kul\u0027Tiras - Sea Giant)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces the duration of negative spells and renders the Sea Giant immune to certain spells."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     }
   ]

@@ -1,114 +1,114 @@
 {
-  "OldId": 1919053128,
+  "OldId": "Hmbr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 20
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 1.8
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 20
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "Aamk,A0K3,ANdh,A0I9,MD07"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 500
     },
     {
-      "Id": 1953393013,
+      "Id": "uint",
       "Value": 18
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 1.7
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 18
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 26
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R014"
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Mountain Prince"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Ironforge)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "High Thane of the Bronzebeards"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Mountain Prince"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Warrior Hero, adept at offensive combat and disrupting enemy troops."
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Muradin"
     }

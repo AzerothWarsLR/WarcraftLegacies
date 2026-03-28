@@ -1,17 +1,17 @@
 {
-  "OldId": 2053261400,
-  "NewId": 1295003736,
+  "OldId": "XHbz",
+  "NewId": "X00M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Arcane Artillery (Effect)"
     },
     {
-      "Id": 1818649958,
+      "Id": "fefl",
       "Type": 3,
       "Value": "AcolyteUnsummonLoop"
     }

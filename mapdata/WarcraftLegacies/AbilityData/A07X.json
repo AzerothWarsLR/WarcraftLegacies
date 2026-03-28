@@ -1,312 +1,312 @@
 {
-  "OldId": 1634945345,
-  "NewId": 1480011841,
+  "OldId": "AIsa",
+  "NewId": "A07X",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 3,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 4,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B007"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B007"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B007"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B007"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 80
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 140
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1768977225,
+      "Id": "Ispi",
       "Type": 2,
       "Value": 0.4
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 1768977225,
+      "Id": "Ispi",
       "Type": 2,
       "Value": 0.6
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 1768977225,
+      "Id": "Ispi",
       "Type": 2,
       "Value": 0.8
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 1768977225,
+      "Id": "Ispi",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 2
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,vulnerable"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,vulnerable"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,vulnerable"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,vulnerable"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAnimalWarTraining.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Purple - Garithos)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Rally"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAnimalWarTraining.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Rally - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "The Hero rallies his men increasing their movement speed drastically for a short period of time. |n|n|cffffcc00Level 1|r - Increases movement speed by 40%. |n|cffffcc00Level 2|r - Increases movement speed by 60%. |n|cffffcc00Level 3|r - Increases movement speed by 80%. |n|cffffcc00Level 4|r - Increases movement speed by 100%.|n|nLasts 10 seconds."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rally - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rally - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rally - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rally - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Hero rallies his men increasing their movement speed by 40% for 10 seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Hero rallies his men increasing their movement speed by 60% for 10 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Hero rallies his men increasing their movement speed by 80% for 10 seconds."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Hero rallies his men increasing their movement speed by 100% for 10 seconds."
     }

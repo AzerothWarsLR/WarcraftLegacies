@@ -1,47 +1,47 @@
 {
-  "OldId": 1851877441,
-  "NewId": 877417300,
+  "OldId": "Ahan",
+  "NewId": "TSL4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASCryptStalker.blp"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Advanced Metabolism"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Advanced Metabolism"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The unit regenerates 10 hit points per second."
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(icon)"
     }

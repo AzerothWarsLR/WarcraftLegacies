@@ -1,24 +1,24 @@
 {
-  "OldId": 1953646913,
+  "OldId": "AIrt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,nonancient,nonhero,player,vulnerable"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 2
     }

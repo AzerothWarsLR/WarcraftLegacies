@@ -1,6 +1,6 @@
 {
-  "OldId": 1919110977,
-  "NewId": 858796353,
+  "OldId": "AOcr",
+  "NewId": "A103",
   "Unk": [
     0
   ],
@@ -8,163 +8,163 @@
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 846357327,
+      "Id": "Ocr2",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 846357327,
+      "Id": "Ocr2",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 846357327,
+      "Id": "Ocr2",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846357327,
+      "Id": "Ocr2",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863134543,
+      "Id": "Ocr3",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Draenei)"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB1\u003E targets, dealing damage to each of them. |n|n|cffffcc00Level 1|r - Deals \u003CA024,DataA1\u003E damage. |n|cffffcc00Level 2|r - Deals \u003CA024,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA024,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA024,DataA4\u003E damage."
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Thunder Fists - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes this units attacks to emit waves which deal 30% of their attack damage to enemy ground units in a line in front of them."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB2\u003E targets, dealing \u003CA024,DataA2\u003E damage to each of them."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB3\u003E targets, dealing \u003CA024,DataA3\u003E damage to each of them."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB4\u003E targets, dealing \u003CA024,DataA4\u003E damage to each of them."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Massive Attack"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Thunder Fists - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASHammerCrush.blp"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNZeusStrike.blp"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Massive Attack"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Thunder Fists - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Thunder Fists - [|cffffcc00Level 3|r]"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     }
   ]

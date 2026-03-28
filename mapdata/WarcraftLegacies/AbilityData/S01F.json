@@ -1,6 +1,6 @@
 {
-  "OldId": 862479187,
-  "NewId": 1177628755,
+  "OldId": "Sch3",
+  "NewId": "S01F",
   "Unk": [
     0
   ],
@@ -8,16 +8,16 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829579587,
+      "Id": "Car1",
       "Value": 4
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Cargo Hold (Steam Tank)"
     }

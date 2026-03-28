@@ -1,73 +1,73 @@
 {
-  "OldId": 1970103406,
-  "NewId": 1261777006,
+  "OldId": "ndmu",
+  "NewId": "n05K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 0
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1818850421,
+      "Id": "util",
       "Type": 3,
       "Value": "*"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 5
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 660
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Wretched"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Quelthalas - Corrpted Sunwell)"
     },
     {
-      "Id": 2020111221,
+      "Id": "ushx",
       "Type": 1,
       "Value": 50
     },
     {
-      "Id": 2036888437,
+      "Id": "ushy",
       "Type": 1,
       "Value": 50
     },
     {
-      "Id": 1751675765,
+      "Id": "ushh",
       "Type": 1,
       "Value": 140
     },
     {
-      "Id": 2003334005,
+      "Id": "ushw",
       "Type": 1,
       "Value": 140
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.15
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1
     }

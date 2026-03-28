@@ -1,94 +1,94 @@
 {
-  "OldId": 1919705968,
-  "NewId": 1412444233,
+  "OldId": "pclr",
+  "NewId": "I00T",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055145,
+      "Id": "iabi",
       "Type": 3,
       "Value": "AIlm"
     },
     {
-      "Id": 1684628329,
+      "Id": "icid",
       "Type": 3,
       "Value": "AIem"
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 225
     },
     {
-      "Id": 1986358377,
+      "Id": "ilev",
       "Value": 2
     },
     {
-      "Id": 2003791977,
+      "Id": "ipow",
       "Value": 1
     },
     {
-      "Id": 1769107561,
+      "Id": "ipri",
       "Value": 200
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R00J"
     },
     {
-      "Id": 1869902697,
+      "Id": "isto",
       "Value": 1
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 480
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Charged"
     },
     {
-      "Id": 1868786025,
+      "Id": "iico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     },
     {
-      "Id": 1936024681,
+      "Id": "ides",
       "Type": 3,
       "Value": "Gives bonus experience points."
     },
     {
-      "Id": 1818846825,
+      "Id": "ifil",
       "Type": 3,
       "Value": "Objects\\InventoryItems\\tomeBrown\\tomeBrown.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Book of Experience"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase Book of |cffffcc00E|rxperience"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Increases the level of the Hero by \u003CAIlm,DataA1\u003E when used."
     }

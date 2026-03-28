@@ -1,6 +1,6 @@
 {
-  "OldId": 1902734401,
-  "NewId": 1261589587,
+  "OldId": "Aliq",
+  "NewId": "ST2K",
   "Unk": [
     0
   ],
@@ -8,80 +8,80 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829516140,
+      "Id": "liq1",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863070572,
+      "Id": "liq3",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879847788,
+      "Id": "liq4",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "S060"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground,neutral,nonancient,structure"
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Burning Archer)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Flings a burning arrow that causes the target ground unit to take an extra \u003CST2K,DataA1\u003E damage per second. Units that are currently taking damage from Burning Arrow cannot be repaired, and have their attack rate reduced by \u003CST2K,DataC1,%\u003E%. Lasts \u003CST2K,Dur1\u003E seconds."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Burning Arrows"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Burning Arrows"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASFlameArrowShower.blp"
     }

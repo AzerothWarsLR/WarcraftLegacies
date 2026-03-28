@@ -1,54 +1,54 @@
 {
-  "OldId": 1751935041,
-  "NewId": 1197027393,
+  "OldId": "Ahlh",
+  "NewId": "A0YG",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "This unit has 1 goblin crewing it, he will jump out when the shredder is destroyed."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASGoblinCommando.blp"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Goblin Pilot"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Goblin Pilot"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(icon shredder)"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     }
   ]

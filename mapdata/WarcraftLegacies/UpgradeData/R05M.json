@@ -1,13 +1,13 @@
 {
-  "OldId": 1751347026,
-  "NewId": 1295331410,
+  "OldId": "Roch",
+  "NewId": "R05M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Lordaeron exists"
     }

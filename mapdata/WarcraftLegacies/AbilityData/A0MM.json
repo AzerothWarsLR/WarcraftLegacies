@@ -1,6 +1,6 @@
 {
-  "OldId": 1952662337,
-  "NewId": 1296904257,
+  "OldId": "ACct",
+  "NewId": "A0MM",
   "Unk": [
     0
   ],
@@ -8,27 +8,27 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Rend Blackhand, Blademaster)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a \u003CA0MM,DataA1\u003E% chance to do \u003CA0MM,DataB1\u003E times total damage on an attack."
     }

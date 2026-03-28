@@ -1,27 +1,27 @@
 {
-  "OldId": 1651265369,
-  "NewId": 943140932,
+  "OldId": "YOlb",
+  "NewId": "D078",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Cyclone"
     },
     {
-      "Id": 1818588004,
+      "Id": "dsel",
       "Type": 2,
       "Value": 0
     }

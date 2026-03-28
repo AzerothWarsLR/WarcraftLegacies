@@ -1,78 +1,78 @@
 {
-  "OldId": 2036552265,
-  "NewId": 926101572,
+  "OldId": "IRcy",
+  "NewId": "D037",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 20
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Crystal (Purple)"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "*"
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 4,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 5,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 6,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 7,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 8,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 9,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     }
   ]

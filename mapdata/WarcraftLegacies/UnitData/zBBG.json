@@ -1,138 +1,138 @@
 {
-  "OldId": 1734894446,
-  "NewId": 1195524730,
+  "OldId": "nchg",
+  "NewId": "zBBG",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 2
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 0
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 3
     },
     {
-      "Id": 1868788853,
+      "Id": "utco",
       "Value": 16
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 0
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "hero"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 0
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 0
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ward"
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEgg.blp"
     },
     {
-      "Id": 1667462261,
+      "Id": "utcc",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Cthun - Defensive Cocoon)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\Dungeon\\Terrain\\EggSack\\EggSack0.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 2.5
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Cocoon"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 2.7
     }

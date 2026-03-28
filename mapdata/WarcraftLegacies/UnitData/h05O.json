@@ -1,78 +1,78 @@
 {
-  "OldId": 1970235496,
-  "NewId": 1328885864,
+  "OldId": "hhou",
+  "NewId": "h05O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 5
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 30
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Dalaran Other 3)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding0.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.55
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dalaran Building"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1920494965,
+      "Id": "umxr",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1886940533,
+      "Id": "umxp",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 200
     }
   ]

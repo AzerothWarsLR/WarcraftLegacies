@@ -1,97 +1,97 @@
 {
-  "OldId": 1919184494,
+  "OldId": "nndr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A07C"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1664246133,
+      "Id": "ua2c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 4
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 80
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 90
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1600
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 8
     },
     {
-      "Id": 1932681589,
+      "Id": "ua2s",
       "Value": 8
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 140
     },
     {
-      "Id": 1953723253,
+      "Id": "usst",
       "Value": 0
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged flying unit. Has Spell Resistance."
     }

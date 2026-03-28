@@ -1,131 +1,131 @@
 {
-  "OldId": 1935762280,
-  "NewId": 909258856,
+  "OldId": "hcas",
+  "NewId": "h026",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0AE,Aihn"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 225
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 106
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 30
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2000
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\12x12Simple.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "_"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rosp,Renb,R064,R013,Rhac,Rgfo"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 100
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "buildings\\undead\\HauntedMine\\HauntedMine.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 100
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.2
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Auchindoun"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 100
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 8
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

@@ -1,227 +1,227 @@
 {
-  "OldId": 1752458088,
-  "NewId": 1178153064,
+  "OldId": "hcth",
+  "NewId": "h09F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ABEB,ABGP,A0YE,Aiun"
     },
     {
-      "Id": 1836212597,
+      "Id": "uarm",
       "Type": 3,
       "Value": "Stone"
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 0.47
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 5
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.85
     },
     {
-      "Id": 1836344437,
+      "Id": "udtm",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 1
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 6
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 4
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 43
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.53
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 24
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 24
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1350
     },
     {
-      "Id": 1769107317,
+      "Id": "uori",
       "Value": 4
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 200
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 2
     },
     {
-      "Id": 1853190773,
+      "Id": "urun",
       "Type": 1,
       "Value": 300
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 3
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 260
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rguv,Rhar,RBEP,Rhme"
     },
     {
-      "Id": 1818326901,
+      "Id": "uwal",
       "Type": 1,
       "Value": 300
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "MetalHeavyBash"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "n0AT"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessOneGladiator.blp"
     },
     {
-      "Id": 1667462261,
+      "Id": "utcc",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Nzoth)"
     },
     {
-      "Id": 1685218677,
+      "Id": "uerd",
       "Type": 1,
       "Value": 50
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\FacelessOneGladiator.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 2053990773,
+      "Id": "uimz",
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 1886940533,
+      "Id": "umxp",
       "Type": 1,
       "Value": 60
     },
     {
-      "Id": 1920494965,
+      "Id": "umxr",
       "Type": 1,
       "Value": 60
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.3
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Deep Fiend"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 2
     },
     {
-      "Id": 1751675765,
+      "Id": "ushh",
       "Type": 1,
       "Value": 140
     },
     {
-      "Id": 2003334005,
+      "Id": "ushw",
       "Type": 1,
       "Value": 140
     },
     {
-      "Id": 1634759541,
+      "Id": "uspa",
       "Type": 3,
       "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Deep Fiend"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Elite melee unit."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "Unbroken"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     }
   ]

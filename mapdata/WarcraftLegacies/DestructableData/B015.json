@@ -1,34 +1,34 @@
 {
-  "OldId": 896685132,
-  "NewId": 892416066,
+  "OldId": "LTr5",
+  "NewId": "B015",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1650685538,
+      "Id": "bvcb",
       "Value": 75
     },
     {
-      "Id": 1734571618,
+      "Id": "bvcg",
       "Value": 50
     },
     {
-      "Id": 1919120994,
+      "Id": "bvcr",
       "Value": 50
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Stone Ramp Zul"
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     }

@@ -1,12 +1,12 @@
 {
-  "OldId": 1767993922,
-  "NewId": 809054274,
+  "OldId": "Brai",
+  "NewId": "B090",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Reanimated Zombie"
     }

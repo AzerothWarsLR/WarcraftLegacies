@@ -1,127 +1,127 @@
 {
-  "OldId": 1718511937,
-  "NewId": 1497575489,
+  "OldId": "Ainf",
+  "NewId": "A0CY",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B091"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828796489,
+      "Id": "Inf1",
       "Type": 2,
       "Value": 0.4
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862350921,
+      "Id": "Inf3",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1685221217,
+      "Id": "aord",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718775649,
+      "Id": "aorf",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1869770593,
+      "Id": "aoro",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 1500
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,self,structure"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCExplosiveShot.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Ironforge) (inner fire)"
     },
     {
-      "Id": 1936090465,
+      "Id": "aefs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Powered Up Ammunition"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Powered Up Ammunition"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a nearby friendly tower\u0027s damage by 40% for 60 seconds. 4 seconds cooldown."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCExplosiveShot.blp"
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     }
   ]

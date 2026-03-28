@@ -1,6 +1,6 @@
 {
-  "OldId": 1886614337,
-  "NewId": 1481257025,
+  "OldId": "Assp",
+  "NewId": "A0JX",
   "Unk": [
     0
   ],
@@ -8,23 +8,23 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845442899,
+      "Id": "Sod2",
       "Type": 3,
       "Value": "h08Y"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828665683,
+      "Id": "Sod1",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Goblin Shredder"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Gunner Pilot"
     }

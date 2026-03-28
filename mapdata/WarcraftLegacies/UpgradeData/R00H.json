@@ -1,72 +1,72 @@
 {
-  "OldId": 1802331474,
-  "NewId": 1211117650,
+  "OldId": "Remk",
+  "NewId": "R00H",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828794215,
+      "Id": "gef1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 5
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1667330663,
+      "Id": "grac",
       "Type": 3,
       "Value": "naga"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Feedback"
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "replaceabletextures\\commandbuttons\\btnfeedback.dds"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Allows Couatl to use Feedback, which causes their attacks to destroy mana and deal extra damage to summoned units."
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Feedback"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Illidari)"
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 2
     }
   ]

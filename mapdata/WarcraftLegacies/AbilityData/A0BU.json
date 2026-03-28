@@ -1,27 +1,27 @@
 {
-  "OldId": 1970435137,
-  "NewId": 1430401089,
+  "OldId": "Atru",
+  "NewId": "A0BU",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Blue - Fel Stalkers)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Acute Senses"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Acute Senses"
     }

@@ -1,27 +1,27 @@
 {
-  "OldId": 1919445102,
+  "OldId": "nhhr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 321
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1000
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged unit that hurls Demon fire. Can cast Raise Dead and Carrion Swarm. "
     }

@@ -1,6 +1,6 @@
 {
-  "OldId": 1869640513,
-  "NewId": 1515270209,
+  "OldId": "Aspo",
+  "NewId": "A0QZ",
   "Unk": [
     0
   ],
@@ -8,42 +8,42 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829386835,
+      "Id": "Spo1",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846164051,
+      "Id": "Spo2",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862941267,
+      "Id": "Spo3",
       "Type": 2,
       "Value": 0.3
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,organic"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Dark Green - SI:7 Agent, Sentinels - Priestess)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "A poison attack that deals 5 damage per second, and slows the target enemy\u0027s movement by 50% and attack by 30% for 5 seconds. Lasts 1 second on heroes."
     }

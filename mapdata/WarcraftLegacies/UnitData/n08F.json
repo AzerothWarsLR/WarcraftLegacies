@@ -1,55 +1,55 @@
 {
-  "OldId": 1952937838,
-  "NewId": 1178087534,
+  "OldId": "nwgt",
+  "NewId": "n08F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A01M,A023,Awrp,Avul"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 200000
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Effect_DarkPortal.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Undercity Entrance"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

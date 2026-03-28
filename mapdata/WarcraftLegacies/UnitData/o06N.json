@@ -1,51 +1,51 @@
 {
-  "OldId": 1685547119,
-  "NewId": 1312174191,
+  "OldId": "ohwd",
+  "NewId": "o06N",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A045"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Sunfury)"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Arcane Ward"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\orc\\WatcherWard\\WatcherWard.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.5
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNManaWard.blp"
     }

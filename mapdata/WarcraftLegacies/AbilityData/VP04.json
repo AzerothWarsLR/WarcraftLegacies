@@ -1,263 +1,263 @@
 {
-  "OldId": 1752384833,
-  "NewId": 875581526,
+  "OldId": "AEsh",
+  "NewId": "VP04",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828928837,
+      "Id": "Esh1",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896037701,
+      "Id": "Esh5",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 3,
       "Pointer": 5,
-      "Id": 896037701,
+      "Id": "Esh5",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 4,
       "Pointer": 5,
-      "Id": 896037701,
+      "Id": "Esh5",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 896037701,
+      "Id": "Esh5",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 2,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 3,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 4,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862483269,
+      "Id": "Esh3",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862483269,
+      "Id": "Esh3",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 862483269,
+      "Id": "Esh3",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 4,
       "Pointer": 3,
-      "Id": 862483269,
+      "Id": "Esh3",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3.1
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828928837,
+      "Id": "Esh1",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828928837,
+      "Id": "Esh1",
       "Type": 2,
       "Value": 35
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Legion Hero)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed and attack speed slowed by 25% for it\u0027s duration. Lasts 8 seconds on units and Heroes. Poison triggers 12 times.|n|n|cffffcc00Level 1|r - \u003CVP04,DataE1\u003E strike damage, \u003CVP04,DataA1\u003E duration damage. |n|cffffcc00Level 2|r - \u003CVP04,DataE2\u003E strike damage, \u003CVP04,DataA2\u003E duration damage. |n|cffffcc00Level 3|r - \u003CVP04,DataE3\u003E strike damage, \u003CVP04,DataA3\u003E duration damage.|n|cffffcc00Level 4|r - \u003CVP04,DataE4\u003E strike damage, \u003CVP04,DataA4\u003E duration damage."
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Shadow Strike - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE1\u003E initial damage, and \u003CVP04,DataA1\u003E damage every \u003CVP04,Cast1,.\u003E seconds for \u003CVP04,Dur1\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB1,%\u003E% for it\u0027s duration. Poison triggers 12 times."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE2\u003E initial damage, and \u003CVP04,DataA2\u003E damage every \u003CVP04,Cast2,.\u003E seconds for \u003CVP04,Dur2\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB2,%\u003E% for it\u0027s duration. Poison triggers 12 times."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE3\u003E initial damage, and \u003CVP04,DataA3\u003E damage every \u003CVP04,Cast3,.\u003E seconds for \u003CVP04,Dur3\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB3,%\u003E% for it\u0027s duration. Poison triggers 12 times."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CVP04,DataE4\u003E initial damage, and \u003CVP04,DataA4\u003E damage every \u003CVP04,Cast4,.\u003E seconds for \u003CVP04,Dur4\u003E seconds. The poison slows the movement speed of the targeted unit by \u003CVP04,DataB4,%\u003E% for it\u0027s duration. Poison triggers 12 times."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 0
     }
   ]

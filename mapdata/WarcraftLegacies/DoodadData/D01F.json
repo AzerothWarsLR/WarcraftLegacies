@@ -1,42 +1,42 @@
 {
-  "OldId": 813127500,
-  "NewId": 1177628740,
+  "OldId": "LWw0",
+  "NewId": "D01F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Green waterfall"
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 50
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 50
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_WaterfallNOSPLASH.mdl"
     }

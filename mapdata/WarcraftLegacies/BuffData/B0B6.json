@@ -1,32 +1,32 @@
 {
-  "OldId": 1685475138,
-  "NewId": 910307394,
+  "OldId": "BOvd",
+  "NewId": "B0B6",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "war3mapImported\\Sacred Guard Gold.mdx"
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": "chest"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Legendary Warrior"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of Legendary Warrior, and is invulnerable."
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNSphereOfDivine.blp"
     }

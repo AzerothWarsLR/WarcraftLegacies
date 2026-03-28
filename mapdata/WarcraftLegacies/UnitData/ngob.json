@@ -1,39 +1,39 @@
 {
-  "OldId": 1651468142,
+  "OldId": "ngob",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Adtg,Avul"
     },
     {
-      "Id": 1852404597,
+      "Id": "usin",
       "Value": 1800
     },
     {
-      "Id": 1684632437,
+      "Id": "usid",
       "Value": 1800
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Renb,R064"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.75
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "World Tree Guardian Runestone"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.5
     }

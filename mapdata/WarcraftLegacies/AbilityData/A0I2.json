@@ -1,60 +1,60 @@
 {
-  "OldId": 1835814465,
-  "NewId": 843657281,
+  "OldId": "ANlm",
+  "NewId": "A0I2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 5
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "n05E"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Creep - Ragnaros)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Spawn Fire Element"
     }

@@ -1,118 +1,118 @@
 {
-  "OldId": 1685023599,
+  "OldId": "okod",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0DS,A0DX,S00M,AInv,ACrk,A0VZ,Aakb,Advc,Adev,Apak"
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 600
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 10
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.7
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 0
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 25
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 45
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 25
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 600
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 3
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 200
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Ropm,Rhme,Rhar,Rguv"
     },
     {
-      "Id": 1918985077,
+      "Id": "ucar",
       "Value": 1
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R00O,o02S"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1100
     },
     {
-      "Id": 1885693045,
+      "Id": "udep",
       "Type": 3,
       "Value": "o06Q"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Warsong)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.85
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Kodo-mounted drummer which inspires the soldiers of the Horde."
     }

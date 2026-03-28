@@ -1,55 +1,55 @@
 {
-  "OldId": 1818587758,
-  "NewId": 1446195310,
+  "OldId": "nrel",
+  "NewId": "n03V",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 630
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R001,Rhme,Rhar,Rguv"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 22
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(KulTiras - Tidesage)"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Sea Elemental"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Sea Elemental"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit. "
     }

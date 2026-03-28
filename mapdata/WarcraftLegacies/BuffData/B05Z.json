@@ -1,27 +1,27 @@
 {
-  "OldId": 1769169730,
-  "NewId": 1513435202,
+  "OldId": "Bcsi",
+  "NewId": "B05Z",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Impaling Strike"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Dark Green Skirmisher)"
     }

@@ -1,36 +1,36 @@
 {
-  "OldId": 2004045657,
-  "NewId": 1177759812,
+  "OldId": "YOsw",
+  "NewId": "D03F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718509924,
+      "Id": "danf",
       "Value": 1
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "buildings\\orc\\WatchTower\\WatchTower.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Orgrimmar Gate Tower"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     }

@@ -1,22 +1,22 @@
 {
-  "OldId": 1668437068,
-  "NewId": 1144074306,
+  "OldId": "LTrc",
+  "NewId": "B01D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1500
     },
     {
-      "Id": 1718973282,
+      "Id": "bsuf",
       "Type": 3,
       "Value": "(Dalaran)"
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     }

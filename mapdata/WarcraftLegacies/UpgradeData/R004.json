@@ -1,94 +1,94 @@
 {
-  "OldId": 1702062162,
-  "NewId": 875573330,
+  "OldId": "Rhse",
+  "NewId": "R004",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 0.15
     },
     {
-      "Id": 878797415,
+      "Id": "gba4",
       "Type": 2,
       "Value": 0.15
     },
     {
-      "Id": 829383527,
+      "Id": "gco1",
       "Type": 3,
       "Value": "Adef"
     },
     {
-      "Id": 846160743,
+      "Id": "gco2",
       "Type": 3,
       "Value": "A02Y"
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 150
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 846163303,
+      "Id": "gmo2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1651078247,
+      "Id": "gtib",
       "Value": 35
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelvenWarrior.blp"
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Quel\u0027thalas)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Sunfury Training"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Sunfury Training"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Replace Swordsman with Sunfury Warrior, which have Combat Experience, Feedback, Magic Resistance and improved stats."
     }

@@ -1,85 +1,85 @@
 {
-  "OldId": 1801743982,
+  "OldId": "nndk",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 12
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 30
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 62
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 350
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1853190773,
+      "Id": "urun",
       "Type": 1,
       "Value": 400
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 60
     },
     {
-      "Id": 1953723253,
+      "Id": "usst",
       "Value": 0
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1818326901,
+      "Id": "uwal",
       "Type": 1,
       "Value": 400
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "T"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Ne|cffffcc00t|rher Drake"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged flying unit. "
     }

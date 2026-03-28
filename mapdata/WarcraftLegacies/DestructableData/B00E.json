@@ -1,70 +1,70 @@
 {
-  "OldId": 1920226369,
-  "NewId": 1160785986,
+  "OldId": "ATtr",
+  "NewId": "B00E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1668181858,
+      "Id": "bonc",
       "Value": 1
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Wrecked Ship"
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "doodads\\northrend\\water\\Battleship\\Battleship.mdl"
     },
     {
-      "Id": 1836083042,
+      "Id": "bgpm",
       "Type": 3,
       "Value": "doodads\\northrend\\water\\Battleship\\Battleship.mdl"
     },
     {
-      "Id": 1918989922,
+      "Id": "bvar",
       "Value": 1
     },
     {
-      "Id": 1668507490,
+      "Id": "bgsc",
       "Type": 1,
       "Value": 300
     },
     {
-      "Id": 1818588002,
+      "Id": "bsel",
       "Type": 2,
       "Value": 300
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": "ShadowMercenaryCamp"
     },
     {
-      "Id": 1953066082,
+      "Id": "blit",
       "Value": 0
     }
   ]

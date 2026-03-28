@@ -1,28 +1,28 @@
 {
-  "OldId": 1819504483,
+  "OldId": "cosl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Artifact"
     },
     {
-      "Id": 1886545001,
+      "Id": "idrp",
       "Value": 1
     },
     {
-      "Id": 1886677097,
+      "Id": "ihtp",
       "Value": 500000
     },
     {
-      "Id": 2002874473,
+      "Id": "ipaw",
       "Value": 0
     },
     {
-      "Id": 1818588009,
+      "Id": "isel",
       "Value": 0
     }
   ]

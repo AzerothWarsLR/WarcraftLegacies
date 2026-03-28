@@ -1,139 +1,139 @@
 {
-  "OldId": 1836212584,
-  "NewId": 858861672,
+  "OldId": "harm",
+  "NewId": "h013",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0CY,A0K5,Argl,A0M0,A06K"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 10
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 10
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 40
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2500
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 300
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 300
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\10x10SimpleSolid.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 2.2
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "R022"
     },
     {
-      "Id": 1986359925,
+      "Id": "urev",
       "Value": 1
     },
     {
-      "Id": 1918989429,
+      "Id": "utar",
       "Type": 3,
       "Value": "ancient,structure"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "h019,h01L,hpea"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R013,Rhac,Rgfo"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Ironforge Other)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 225
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.75
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Gnomeregan"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 225
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": ""
     }

@@ -1,72 +1,72 @@
 {
-  "OldId": 1936936793,
-  "NewId": 909127748,
+  "OldId": "YOss",
+  "NewId": "D006",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_DwarfStatue.mdl"
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Statue Dwarf"
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "Y,X,J,*"
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 155
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1918989924,
+      "Id": "dvar",
       "Value": 2
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 65
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 85
     },
     {
       "Variation": 2,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 200
     }
   ]

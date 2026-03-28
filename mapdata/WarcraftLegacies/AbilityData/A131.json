@@ -1,6 +1,6 @@
 {
-  "OldId": 1635141953,
-  "NewId": 825438529,
+  "OldId": "AIva",
+  "NewId": "A131",
   "Unk": [
     0
   ],
@@ -8,32 +8,32 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1835103817,
+      "Id": "Ivam",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "MD16"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Mask of Death worgen)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Worgen Bite"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     }
   ]

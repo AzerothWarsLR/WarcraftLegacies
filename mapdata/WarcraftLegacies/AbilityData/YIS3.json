@@ -1,42 +1,42 @@
 {
-  "OldId": 1886614337,
-  "NewId": 861096281,
+  "OldId": "Assp",
+  "NewId": "YIS3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845442899,
+      "Id": "Sod2",
       "Type": 3,
       "Value": "yl01"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828665683,
+      "Id": "Sod1",
       "Value": 5
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Cthun Progeny 5 - Real)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Progeny Gland "
     }

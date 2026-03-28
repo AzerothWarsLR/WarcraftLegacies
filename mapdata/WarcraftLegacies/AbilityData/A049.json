@@ -1,6 +1,6 @@
 {
-  "OldId": 1651536705,
-  "NewId": 959721537,
+  "OldId": "Aspb",
+  "NewId": "A049",
   "Unk": [
     0
   ],
@@ -8,30 +8,30 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828534899,
+      "Id": "spb1",
       "Type": 3,
       "Value": "A04G,ACrg,ACde,A04B"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845312115,
+      "Id": "spb2",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862089331,
+      "Id": "spb3",
       "Value": 4
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 878866547,
+      "Id": "spb4",
       "Value": 4
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Sargeras Spellbook"
     }

@@ -1,17 +1,17 @@
 {
-  "OldId": 1819497794,
-  "NewId": 1093873730,
+  "OldId": "BUsl",
+  "NewId": "B03A",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Discordant Cadenza"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is sleeping; it is invulnerable and it cannot move attack or cast spells."
     }

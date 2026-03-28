@@ -1,61 +1,61 @@
 {
-  "OldId": 1920628590,
+  "OldId": "nwzr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "magic"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "small"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 29
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 680
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 0.9
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.8
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit that can cast Frost Armor. "
     }

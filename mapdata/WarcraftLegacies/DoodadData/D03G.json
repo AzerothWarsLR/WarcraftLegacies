@@ -1,73 +1,73 @@
 {
-  "OldId": 1651659610,
-  "NewId": 1194537028,
+  "OldId": "ZSrb",
+  "NewId": "D03G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Ny\u0027alotha Ruins"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "N,*"
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 90
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 90
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 90
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 50
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 50
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 50
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 60
     },
     {
       "Variation": 2,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 60
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 60
     }
   ]

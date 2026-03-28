@@ -1,243 +1,243 @@
 {
-  "OldId": 1701659969,
+  "OldId": "AEme",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B05Q"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B05Q"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B05Q"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828730693,
+      "Id": "Eme1",
       "Type": 3,
       "Value": "O00Y"
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828730693,
+      "Id": "Eme1",
       "Type": 3,
       "Value": "O00Y"
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828730693,
+      "Id": "Eme1",
       "Type": 3,
       "Value": "O00Y"
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895839557,
+      "Id": "Eme5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 895839557,
+      "Id": "Eme5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 5,
-      "Id": 895839557,
+      "Id": "Eme5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 60
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 3
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 5
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1969581381,
+      "Id": "Emeu",
       "Type": 3,
       "Value": "O027"
     },
     {
       "Level": 2,
-      "Id": 1969581381,
+      "Id": "Emeu",
       "Type": 3,
       "Value": "O027"
     },
     {
       "Level": 3,
-      "Id": 1969581381,
+      "Id": "Emeu",
       "Type": 3,
       "Value": "O027"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
     },
     {
-      "Id": 1952539489,
+      "Id": "acat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationREDTarget.mdl,Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Teal - Zuluhed)"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "R"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Ascendance"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "R"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Ascendance - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hitpoint and 15 hitpoint regeneration per second. Also heals allies in a 600 aoe around the caster for 150/250/300. |n|nHas Incinerate, Immolation, Flame Strike, Meteor, and Chain Explosion.|n|n|cffcece00Level 1|r - Lasts 30 seconds|n|cffcece00Level 2|r - Lasts 45 seconds|n|cffcece00Level 3|r - Lasts 60 seconds."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ascendance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ascendance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ascendance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hitpoint and 15 hitpoint regeneration per second. Also heals allies in a 600 aoe around the caster for 150. |n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 30 seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hitpoint and 15 hitpoint regeneration per second. Also heals allies in a 600 aoe around the caster for 250. |n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 45 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hitpoint and 15 hitpoint regeneration per second. Also heals allies in a 600 aoe around the caster for 300.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 60 seconds."
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 3
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 2
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "R"
     },
     {
       "Level": 1,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Ascendance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Ascendance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Ascendance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 30 seconds."
     },
     {
       "Level": 2,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 45 seconds."
     },
     {
       "Level": 3,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 60 seconds."
     }

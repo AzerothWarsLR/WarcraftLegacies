@@ -1,34 +1,34 @@
 {
-  "OldId": 880437102,
+  "OldId": "ngz4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACro,ANb2,ACrk"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 40
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1500
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 320
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Grey - Rexxar Summon)"
     }

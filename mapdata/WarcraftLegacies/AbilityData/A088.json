@@ -1,6 +1,6 @@
 {
-  "OldId": 1685677889,
-  "NewId": 943206465,
+  "OldId": "Agyd",
+  "NewId": "A088",
   "Unk": [
     0
   ],
@@ -8,29 +8,29 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828668231,
+      "Id": "Gyd1",
       "Value": 8
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862222663,
+      "Id": "Gyd3",
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "creeps"
     },
     {
       "Level": 1,
-      "Id": 1969518919,
+      "Id": "Gydu",
       "Type": 3,
       "Value": "ndtr"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Create Troll Corpse"
     }

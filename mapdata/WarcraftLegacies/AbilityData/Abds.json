@@ -1,24 +1,24 @@
 {
-  "OldId": 1935958593,
+  "OldId": "Abds",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828992578,
+      "Id": "Bli1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Several Buildings)"
     }

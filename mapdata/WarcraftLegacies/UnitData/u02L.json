@@ -1,185 +1,185 @@
 {
-  "OldId": 846229109,
-  "NewId": 1278357621,
+  "OldId": "unp2",
+  "NewId": "u02L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0CB,Argl"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A0C8"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 20
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 80
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 75
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 105
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 100
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 7000
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 300
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\10x10SimpleSolid.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 2.2
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "ZB24,R00Q,ZB74"
     },
     {
-      "Id": 1986359925,
+      "Id": "urev",
       "Value": 1
     },
     {
-      "Id": 829781877,
+      "Id": "uwu1",
       "Value": 1
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "zbli,h00H,uaco"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,townhall,undead"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rgfo"
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 1752591733,
+      "Id": "umvh",
       "Type": 2,
       "Value": -60
     },
     {
-      "Id": 1719037301,
+      "Id": "umvf",
       "Type": 2,
       "Value": -60
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 250
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Shadow Vault"
     },
     {
-      "Id": 1919447925,
+      "Id": "ushr",
       "Value": 0
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNIronHordeFoundry.blp"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\FoundryIronHordeV1.01.mdl"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 6
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 2
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 150
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 150
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Scourge)"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": ""
     }

@@ -1,20 +1,20 @@
 {
-  "OldId": 1718903154,
+  "OldId": "ratf",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Permanent"
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 250
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "C"
     }

@@ -1,194 +1,194 @@
 {
-  "OldId": 1701803109,
+  "OldId": "etoe",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "SLS9,Aro1,Atol,Argl"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 50
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 46
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1664246133,
+      "Id": "ua2c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 4
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 103
     },
     {
-      "Id": 1647468917,
+      "Id": "ua2b",
       "Value": 103
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 35
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 135
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 50
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2500
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 300
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\10x10Simple.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 12
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 200
     },
     {
-      "Id": 1915904373,
+      "Id": "ua2r",
       "Value": 200
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 2.2
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "Renb"
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 20
     },
     {
-      "Id": 1932681589,
+      "Id": "ua2s",
       "Value": 20
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 100
     },
     {
-      "Id": 1731354997,
+      "Id": "ua2g",
       "Type": 3,
       "Value": "debris,ground,item,structure,ward"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "e00N,ewsp"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,townhall"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R064,R002,R018,Renb,Rgfo,Rhme"
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1885693045,
+      "Id": "udep",
       "Type": 3,
       "Value": "n002"
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 2
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Druids T3)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "C"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Primary structure. "
     }

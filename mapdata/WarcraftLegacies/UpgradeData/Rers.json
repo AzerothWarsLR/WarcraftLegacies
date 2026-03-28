@@ -1,42 +1,42 @@
 {
-  "OldId": 1936876882,
+  "OldId": "Rers",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 100
     },
     {
-      "Id": 1651078247,
+      "Id": "gtib",
       "Value": 60
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Mountain Giant)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "C"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Unlocks Resistant Skin, giving Mountain Giants increased resistance to spells, and Hardened, which increases their resistance to damage."
     }

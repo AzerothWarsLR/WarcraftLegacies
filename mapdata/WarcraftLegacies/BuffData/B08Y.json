@@ -1,27 +1,27 @@
 {
-  "OldId": 1684097090,
-  "NewId": 1496854594,
+  "OldId": "BHad",
+  "NewId": "B08Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Zul\u0027Aman Aura"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is under the effects of Zul\u0027Aman Aura; it has 3 increased armor."
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

@@ -1,34 +1,34 @@
 {
-  "OldId": 2003321665,
+  "OldId": "AChw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R02V"
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": "2"
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Shadowcaster)"
     }

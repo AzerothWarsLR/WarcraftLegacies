@@ -1,93 +1,93 @@
 {
-  "OldId": 1735222610,
+  "OldId": "Remg",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 95
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": "R052"
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": "R052"
     },
     {
-      "Id": 829386087,
+      "Id": "gmo1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1835820903,
+      "Id": "gglm",
       "Value": -45
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Light Blue Research)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "A"
     },
     {
       "Level": 2,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNUpgradeMoonGlaive.blp"
     },
     {
       "Level": 2,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Light Blue Research)"
     },
     {
       "Level": 2,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "A"
     },
     {
       "Level": 2,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Upgrade Moon Glaive"
     },
     {
       "Level": 2,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Upgrade Moon Glaive [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Causes Huntresses\u0027 attacks to strike an additional unit."
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Upgrade Moon Glaive [|cffffcc00Level 1|r]"
     }

@@ -1,17 +1,17 @@
 {
-  "OldId": 1903445336,
-  "NewId": 1429221464,
+  "OldId": "XEtq",
+  "NewId": "X00U",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Rays of the new dawn (Effect)"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "war3mapImported\\Heaven\u0027s Gate Channel.mdx"
     }

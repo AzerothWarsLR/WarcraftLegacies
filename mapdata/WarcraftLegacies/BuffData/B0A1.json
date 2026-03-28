@@ -1,17 +1,17 @@
 {
-  "OldId": 1920222529,
-  "NewId": 826355778,
+  "OldId": "AEtr",
+  "NewId": "B0A1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Rays of the New Dawn (Target)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\ReviveHuman\\ReviveHuman.mdl"
     }

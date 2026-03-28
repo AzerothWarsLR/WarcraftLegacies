@@ -1,72 +1,72 @@
 {
-  "OldId": 1886540354,
-  "NewId": 1211510852,
+  "OldId": "BRrp",
+  "NewId": "D06H",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 1.2
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Needle Dark"
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 50
     },
     {
       "Variation": 2,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 50
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 50
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 50
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 50
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 50
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 50
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 50
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 50
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     }

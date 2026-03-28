@@ -1,24 +1,24 @@
 {
-  "OldId": 1633968750,
+  "OldId": "nbda",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dragonspawn Apprentice"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit with Evasion and Rejuvenation. "
     }

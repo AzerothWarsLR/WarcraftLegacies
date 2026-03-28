@@ -1,24 +1,24 @@
 {
-  "OldId": 1752328052,
+  "OldId": "tgrh",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1869767785,
+      "Id": "idro",
       "Value": 0
     },
     {
-      "Id": 2002874473,
+      "Id": "ipaw",
       "Value": 0
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Miscellaneous"
     },
     {
-      "Id": 1868786025,
+      "Id": "iico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTownHall.blp"
     }

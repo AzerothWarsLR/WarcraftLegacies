@@ -1,118 +1,118 @@
 {
-  "OldId": 1852990574,
+  "OldId": "ndrn",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Aihn,YBBS,YBKS"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A0H2"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 5
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.4
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 22
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 21
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 850
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 300
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1.33
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 260
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 7
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Illidari)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Deathsworn"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Basic frontline warrior."
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Deathsworn"
     }

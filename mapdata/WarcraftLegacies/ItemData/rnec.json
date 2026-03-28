@@ -1,42 +1,42 @@
 {
-  "OldId": 1667591794,
+  "OldId": "rnec",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 15
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 3
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Miscellaneous"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 3
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "F"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "(|cffcece00F|r) Purchase Rod of Necromancy"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Creates six Skeleton Warriors from a corpse. |nContains \u003Crnec,uses\u003E charges."
     }

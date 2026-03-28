@@ -1,12 +1,12 @@
 {
-  "OldId": 1936876354,
-  "NewId": 1297568323,
+  "OldId": "Bcrs",
+  "NewId": "CRWM",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Dummy Debuff"
     }

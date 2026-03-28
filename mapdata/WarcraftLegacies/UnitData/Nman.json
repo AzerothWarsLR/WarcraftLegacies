@@ -1,140 +1,140 @@
 {
-  "OldId": 1851878734,
+  "OldId": "Nman",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 600
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2.1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 20
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "A04N,A0WM,A0KU,Aamk"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 100
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 1.6
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 300
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 19
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 225
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 210
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 2.6
     },
     {
-      "Id": 1918985077,
+      "Id": "ucar",
       "Value": 8
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "sapper"
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0GK,AInv"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Warsong-Bloodpact)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "A"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.2
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Mannoroth, the Destroyer"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Mannoroth"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Revive Mannoroth"
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "HeroPitLord"
     }

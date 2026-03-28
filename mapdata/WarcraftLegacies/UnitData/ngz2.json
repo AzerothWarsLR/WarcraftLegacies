@@ -1,40 +1,40 @@
 {
-  "OldId": 846882670,
+  "OldId": "ngz2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 900
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "siege"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 700
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 23
     }
   ]

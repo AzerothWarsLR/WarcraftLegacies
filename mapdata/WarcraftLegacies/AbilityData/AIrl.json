@@ -1,31 +1,31 @@
 {
-  "OldId": 1819429185,
+  "OldId": "AIrl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BIrg,BIrl"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829190761,
+      "Id": "irl1",
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 30
     }

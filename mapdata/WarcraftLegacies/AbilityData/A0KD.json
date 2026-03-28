@@ -1,259 +1,259 @@
 {
-  "OldId": 1869827649,
-  "NewId": 1145778241,
+  "OldId": "ANso",
+  "NewId": "A0KD",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829387598,
+      "Id": "Nso1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829387598,
+      "Id": "Nso1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879719246,
+      "Id": "Nso4",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 879719246,
+      "Id": "Nso4",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1.5
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829387598,
+      "Id": "Nso1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 829387598,
+      "Id": "Nso1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862942030,
+      "Id": "Nso3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862942030,
+      "Id": "Nso3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 862942030,
+      "Id": "Nso3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 3,
-      "Id": 862942030,
+      "Id": "Nso3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 4,
-      "Id": 879719246,
+      "Id": "Nso4",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 4,
       "Pointer": 4,
-      "Id": 879719246,
+      "Id": "Nso4",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2.5
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 4,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "CK03"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "CK03"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "CK03"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "CK03"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(saiden dummy)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Soul Burn"
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
     }

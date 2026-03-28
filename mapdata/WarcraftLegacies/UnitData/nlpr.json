@@ -1,38 +1,38 @@
 {
-  "OldId": 1919970414,
+  "OldId": "nlpr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 300
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 29
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit. "
     }

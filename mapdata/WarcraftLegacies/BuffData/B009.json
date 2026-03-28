@@ -1,22 +1,22 @@
 {
-  "OldId": 1953262914,
-  "NewId": 959459394,
+  "OldId": "Bmlt",
+  "NewId": "B009",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is bound in Universal Shackles; it cannot move or attack and will take damage over time."
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Universal Shackles"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
     }

@@ -1,118 +1,118 @@
 {
-  "OldId": 1718511937,
-  "NewId": 1414672449,
+  "OldId": "Ainf",
+  "NewId": "A0RT",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B00A"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 15
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828796489,
+      "Id": "Inf1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 7
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862350921,
+      "Id": "Inf3",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 45
     },
     {
-      "Id": 1769107553,
+      "Id": "apri",
       "Value": 8
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "RS01"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 650
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskinOn.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Tunneler)"
     },
     {
-      "Id": 1936090465,
+      "Id": "aefs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Stone Armor"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Stone Armor"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a target friendly unit\u0027s armor by 7 points. |n|cffffcc00Lasts 45 seconds."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskinOn.blp"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "E"
     }

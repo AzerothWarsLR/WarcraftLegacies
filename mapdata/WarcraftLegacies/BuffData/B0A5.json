@@ -1,27 +1,27 @@
 {
-  "OldId": 1634693698,
-  "NewId": 893464642,
+  "OldId": "Broa",
+  "NewId": "B0A5",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNPeriapt.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Gazlowe Overclock"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Demon\\DemonBoltImpact\\DemonBoltImpact.mdl"
     }

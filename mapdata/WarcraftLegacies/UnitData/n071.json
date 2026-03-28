@@ -1,159 +1,159 @@
 {
-  "OldId": 1835429486,
-  "NewId": 825700462,
+  "OldId": "nnfm",
+  "NewId": "n071",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0YA,A0RU"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 35
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 10
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 12
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 12
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 975
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "hover"
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\4x4SimpleSolid.tga"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,sapper"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768841589,
+      "Id": "uani",
       "Type": 3,
       "Value": "upgrade,first"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunTower.blp"
     },
     {
-      "Id": 1885430133,
+      "Id": "uaap",
       "Type": 3,
       "Value": "small"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 150
     },
     {
-      "Id": 1819501173,
+      "Id": "ubsl",
       "Type": 3,
       "Value": "UndeadBuildingConstructionLoop"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 1667462261,
+      "Id": "utcc",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Cthun Pillars)"
     },
     {
-      "Id": 1953523061,
+      "Id": "uept",
       "Value": 0
     },
     {
-      "Id": 1685218677,
+      "Id": "uerd",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\CthunZigguratTower.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 221
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 2054188149,
+      "Id": "ulpz",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.6
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Pillar of C\u0027thun"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 2
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Pillar of C\u0027thun"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

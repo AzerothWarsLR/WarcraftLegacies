@@ -1,69 +1,69 @@
 {
-  "OldId": 909333593,
-  "NewId": 1160851522,
+  "OldId": "YT36",
+  "NewId": "B01E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1650685538,
+      "Id": "bvcb",
       "Value": 100
     },
     {
-      "Id": 1734571618,
+      "Id": "bvcg",
       "Value": 100
     },
     {
-      "Id": 1919120994,
+      "Id": "bvcr",
       "Value": 100
     },
     {
-      "Id": 1718973282,
+      "Id": "bsuf",
       "Type": 3,
       "Value": "(Horizontal Stormwind)"
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "Doodads\\Terrain\\CityBridgeLarge45\\CityBridgeLarge45.mdl"
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 0.35
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.35
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Dark Iron Bridge"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1685352546,
+      "Id": "bptd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1719170146,
+      "Id": "btxf",
       "Type": 3,
       "Value": "ReplaceableTextures\\Cliff\\Cliff1.tga"
     }

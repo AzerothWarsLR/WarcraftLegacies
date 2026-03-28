@@ -1,28 +1,28 @@
 {
-  "OldId": 1718185074,
+  "OldId": "rlif",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 150
     },
     {
-      "Id": 1886677097,
+      "Id": "ihtp",
       "Value": 500000
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 300
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "S"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase (|cffcece00S|r) Ring of Regeneration"
     }

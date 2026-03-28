@@ -1,27 +1,27 @@
 {
-  "OldId": 1936543298,
-  "NewId": 1194340418,
+  "OldId": "BNms",
+  "NewId": "B00G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Mana Shield"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Magi) "
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "war3mapImported\\MagicShield_Blue.mdx"
     },
     {
-      "Id": 811693158,
+      "Id": "fta0",
       "Type": 3,
       "Value": "origin"
     }

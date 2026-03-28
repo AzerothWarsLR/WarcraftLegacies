@@ -1,114 +1,114 @@
 {
-  "OldId": 1869640513,
-  "NewId": 859385921,
+  "OldId": "Aspo",
+  "NewId": "A093",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B000,B000"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829386835,
+      "Id": "Spo1",
       "Type": 2,
       "Value": 50
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846164051,
+      "Id": "Spo2",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862941267,
+      "Id": "Spo3",
       "Type": 2,
       "Value": 2.5
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879718483,
+      "Id": "Spo4",
       "Value": 7
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,vulnerable"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASFrostBite.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Lich King)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Frostbite"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShard.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Frost Bite - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "The Lich King\u0027s attacks completely freeze enemy units stopping them from moving or attacking, and dealing damage to them while frozen. Duration is only 10% effective on heroes.|n|n|cffffcc00Level 1|r - Lasts 2 seconds on units, dealing 20 damage per second. |n|cffffcc00Level 2|r - Lasts 3 seconds on units, dealing 30 damage per second. |n|cffffcc00Level 3|r - Lasts 4 seconds on units, dealing 40 damage per second. |n|cffffcc00Level 4|r - Lasts 5 seconds on units, dealing 50 damage per second."
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Lich King\u0027s attacks apply Frostbite, which deals \u003CA093,DataA1\u003E damage per second, and slows the target enemy\u0027s movement by \u003CA093,DataB1,%\u003E% and attack by \u003CA093,DataC1,%\u003E% for \u003CA093,Dur1\u003E (0.3) seconds."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Frostbite"
     }

@@ -1,34 +1,34 @@
 {
-  "OldId": 1819566657,
-  "NewId": 877473857,
+  "OldId": "Abtl",
+  "NewId": "A0M4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R004"
     },
     {
       "Level": 1,
-      "Id": 829191234,
+      "Id": "Btl1",
       "Type": 3,
       "Value": "o00E"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Pink/Grey - Orc Burrow, Bloodpact)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Battle Stations (|cffffcc00Q|r)"
     }

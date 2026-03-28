@@ -1,19 +1,19 @@
 {
-  "OldId": 1651664449,
-  "NewId": 1480142913,
+  "OldId": "Afrb",
+  "NewId": "A09X",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     }

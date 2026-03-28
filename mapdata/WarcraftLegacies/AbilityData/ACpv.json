@@ -1,5 +1,5 @@
 {
-  "OldId": 1987068737,
+  "OldId": "ACpv",
   "Unk": [
     0
   ],
@@ -7,31 +7,31 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829579607,
+      "Id": "War1",
       "Type": 2,
       "Value": 50
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(green sea giant) (yogg elites)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 50% chance that an attack will deal 40 damage to nearby units."
     },
     {
-      "Id": 1952543585,
+      "Id": "asat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoDeath.mdl"
     }

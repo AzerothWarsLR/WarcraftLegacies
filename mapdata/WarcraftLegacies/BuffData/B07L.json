@@ -1,27 +1,27 @@
 {
-  "OldId": 1936083010,
-  "NewId": 1278685250,
+  "OldId": "BHfs",
+  "NewId": "B07L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Desert Storm"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is in a Desert Storm"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl"
     }

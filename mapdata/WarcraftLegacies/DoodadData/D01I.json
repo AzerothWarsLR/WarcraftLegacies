@@ -1,22 +1,22 @@
 {
-  "OldId": 1868713794,
-  "NewId": 1227960388,
+  "OldId": "BObo",
+  "NewId": "D01I",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 2.5
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Bones Large"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     }

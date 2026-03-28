@@ -1,75 +1,75 @@
 {
-  "OldId": 846029121,
-  "NewId": 1313484865,
+  "OldId": "Aam2",
+  "NewId": "A0JN",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "Bam2,Bams"
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 863202625,
+      "Id": "Ams3",
       "Value": 800
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,vulnerable"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(warsong - DUMMY)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Improved Anti-magic Shell"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Creates a barrier that stops 800 points of spell damage from affecting a target unit. |nLasts \u003CAam2,Dur1\u003E seconds."
     }

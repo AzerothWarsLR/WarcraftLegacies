@@ -1,22 +1,22 @@
 {
-  "OldId": 1869768258,
-  "NewId": 1295331394,
+  "OldId": "Bfro",
+  "NewId": "B05M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSlow.blp"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Slow Orb)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
     }

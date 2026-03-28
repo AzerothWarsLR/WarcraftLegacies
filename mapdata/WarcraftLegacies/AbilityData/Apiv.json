@@ -1,23 +1,23 @@
 {
-  "OldId": 1986621505,
+  "OldId": "Apiv",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 5.5
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 5.5
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Red - Varimathras. Blue - Tichondrius/Dreadlords/Jubei\u0027Thos/Mal\u0027Ganis/Balnazzar/Detheroc/Si:7 Agents)"
     }
