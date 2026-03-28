@@ -6,6 +6,49 @@ namespace Warcraft.Cartographer.Json;
 
 public sealed class JsonModifierProvider
 {
+  private static readonly HashSet<Type> _objectModificationTypes =
+  [
+    typeof(SimpleObjectModification),
+    typeof(LevelObjectModification),
+    typeof(VariationObjectModification),
+  ];
+
+  private static readonly HashSet<Type> _objectDataModificationTypes =
+  [
+    typeof(SimpleObjectDataModification),
+    typeof(LevelObjectDataModification),
+    typeof(VariationObjectDataModification),
+  ];
+
+  /// <summary>
+  ///   Applies <see cref="FourCcJsonConverter" /> to the <c>Id</c>, <c>NewId</c>, and <c>OldId</c> properties of object
+  ///   modifications, so they round-trip as human-readable FourCC strings instead of raw integers.
+  /// </summary>
+  public static void AssignFourCcToObjectIds(JsonTypeInfo typeInfo)
+  {
+    if (_objectModificationTypes.Contains(typeInfo.Type))
+    {
+      foreach (var property in typeInfo.Properties)
+      {
+        if (property.Name is "OldId" or "NewId")
+        {
+          property.CustomConverter = FourCcJsonConverter.Instance;
+        }
+      }
+    }
+
+    if (_objectDataModificationTypes.Contains(typeInfo.Type))
+    {
+      foreach (var property in typeInfo.Properties)
+      {
+        if (property.Name is "Id")
+        {
+          property.CustomConverter = FourCcJsonConverter.Instance;
+        }
+      }
+    }
+  }
+
   /// <summary>
   /// Data stored as <see cref="ObjectDataModification"/> or anything deriving from it has an object field which
   /// needs to be manually given a type by interpreting the object's Type field.
