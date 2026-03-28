@@ -16,7 +16,11 @@ internal static class JsonHelper
     WriteIndented = true,
     TypeInfoResolver = new DefaultJsonTypeInfoResolver
     {
-      Modifiers = { JsonModifierProvider.CastModificationSets }
+      Modifiers =
+      {
+        JsonModifierProvider.AssignFourCcToObjectIds,
+        JsonModifierProvider.CastModificationSets
+      }
     },
     Converters =
     {
