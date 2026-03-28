@@ -1,41 +1,41 @@
 {
-  "OldId": 1651009618,
+  "OldId": "Rhhb",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 80
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Khaz Modan)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "A"
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 1
     }
   ]

@@ -1,78 +1,78 @@
 {
-  "OldId": 1801864513,
-  "NewId": 1412444225,
+  "OldId": "AEfk",
+  "NewId": "A00T",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829122117,
+      "Id": "Efk1",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845899333,
+      "Id": "Efk2",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862676549,
+      "Id": "Efk3",
       "Value": 6
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Light Blue Wards"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - \u003CAEfk,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CAEfk,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CAEfk,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CAEfk,DataA4\u003E damage per target."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Fan of Knives"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     }
   ]

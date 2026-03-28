@@ -1,251 +1,251 @@
 {
-  "OldId": 1919764801,
-  "NewId": 1179594817,
+  "OldId": "AImr",
+  "NewId": "A0OF",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 3,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 4,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 150
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 200
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 250
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1735421257,
+      "Id": "Impg",
       "Value": 50
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 1735421257,
+      "Id": "Impg",
       "Value": 100
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 1735421257,
+      "Id": "Impg",
       "Value": 150
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 1735421257,
+      "Id": "Impg",
       "Value": 200
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,allies,friend,ground,hero,nonhero"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,allies,friend,ground,hero,nonhero"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,allies,friend,ground,hero,nonhero"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,allies,friend,ground,hero,nonhero"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Antonidas)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Wise Council"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNScrollOfProtection.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Wise Council - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Restores mana to nearby friendly units.|n|n|cffffcc00Level 1|r - Restores 50 mana. |n|cffffcc00Level 2|r - Restores 100 mana. |n|cffffcc00Level 3|r - Restores 150 mana. |n|cffffcc00Level 4|r - Restores 200 mana."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Wise Council - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Wise Council - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Wise Council - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Wise Council - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Restores \u003CA0OF,DataA1\u003E mana to nearby friendly units."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Restores \u003CA0OF,DataA2\u003E mana to nearby friendly units."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Restores \u003CA0OF,DataA3\u003E mana to nearby friendly units."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Restores \u003CA0OF,DataA4\u003E mana to nearby friendly units."
     }

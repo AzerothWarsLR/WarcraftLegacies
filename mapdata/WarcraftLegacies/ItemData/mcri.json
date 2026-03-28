@@ -1,24 +1,24 @@
 {
-  "OldId": 1769104237,
+  "OldId": "mcri",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 3
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 180
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Miscellaneous"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase (|cffcece00E|r) Mechanical Critter"
     }

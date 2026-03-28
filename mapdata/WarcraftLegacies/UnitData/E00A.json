@@ -1,216 +1,216 @@
 {
-  "OldId": 1919315269,
-  "NewId": 1093677125,
+  "OldId": "Emfr",
+  "NewId": "E00A",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ZB15,A0GK,AInv,Ault"
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 13
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 1.2
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 20
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "A07N,A109,AOae,A06E,Aamk"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 350
     },
     {
-      "Id": 1953393013,
+      "Id": "uint",
       "Value": 15
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 2050056565,
+      "Id": "ua1z",
       "Value": 0
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "STR"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 17
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 100
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R002"
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 230
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 30
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,structure,ward"
     },
     {
-      "Id": 1999724917,
+      "Id": "ua1w",
       "Type": 3,
       "Value": "normal"
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "WoodHeavyBash"
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 0
     },
     {
-      "Id": 1634562933,
+      "Id": "usma",
       "Value": 1
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgTracker.blp"
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Ancient Guardian"
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Druids)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\BlackBear.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "X"
     },
     {
-      "Id": 828468597,
+      "Id": "uma1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.3
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ancient Guardian"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Ursoc"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Ancient Guardian"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 2
     },
     {
-      "Id": 1769173877,
+      "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgTracker.blp"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Ursoc"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Ancient bear hero, adept at frontline melee combat."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "Furbolg"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 1768841589,
+      "Id": "uani",
       "Type": 3,
       "Value": "alternate"
     }

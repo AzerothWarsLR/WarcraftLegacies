@@ -1,17 +1,17 @@
 {
-  "OldId": 1953722945,
+  "OldId": "Arst",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,alive,ancient,bridge,dead,friend,ground,invulnerable,mechanical,nonancient,structure,vulnerable"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Red - Acolyte. Blue - Eredar Summoner)"
     }

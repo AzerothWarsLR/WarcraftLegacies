@@ -1,29 +1,29 @@
 {
-  "OldId": 846489454,
+  "OldId": "ngt2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 250
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Creep Hut"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1
     }

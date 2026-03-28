@@ -1,63 +1,63 @@
 {
-  "OldId": 1919046465,
-  "NewId": 1228025924,
+  "OldId": "ASbr",
+  "NewId": "D02I",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "Y,X,J"
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 100
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 100
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 100
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 100
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 100
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 100
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     },
     {
       "Variation": 2,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     }
   ]

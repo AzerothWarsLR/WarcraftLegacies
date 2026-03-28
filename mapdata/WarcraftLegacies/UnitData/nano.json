@@ -1,31 +1,31 @@
 {
-  "OldId": 1869504878,
+  "OldId": "nano",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 4
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 37
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1200
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit with Command Aura. "
     }

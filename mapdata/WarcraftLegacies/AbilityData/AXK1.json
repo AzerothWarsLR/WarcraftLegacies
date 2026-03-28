@@ -1,113 +1,113 @@
 {
-  "OldId": 1801864513,
-  "NewId": 827021377,
+  "OldId": "AEfk",
+  "NewId": "AXK1",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829122117,
+      "Id": "Efk1",
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845899333,
+      "Id": "Efk2",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862676549,
+      "Id": "Efk3",
       "Value": 1
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879453765,
+      "Id": "Efk4",
       "Type": 2,
       "Value": 50
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
-      "Id": 1886612833,
+      "Id": "amsp",
       "Value": 500
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(x\u0027korr Dummy spell)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - \u003CAEfk,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CAEfk,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CAEfk,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CAEfk,DataA4\u003E damage per target."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "VoidBoltDummy"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "war3mapImported\\Voidbolt Medium.mdx"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "VoidBoltDummy"
     },
     {
-      "Id": 1667329377,
+      "Id": "amac",
       "Type": 2,
       "Value": 0.5
     }

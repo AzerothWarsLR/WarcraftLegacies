@@ -1,19 +1,19 @@
 {
-  "OldId": 1937206894,
+  "OldId": "nnws",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit that carries its young into battle. "
     }

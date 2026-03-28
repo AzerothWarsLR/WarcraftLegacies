@@ -1,39 +1,39 @@
 {
-  "OldId": 2004112463,
+  "OldId": "OTtw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1668181858,
+      "Id": "bonc",
       "Value": 1
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1650685538,
+      "Id": "bvcb",
       "Value": 0
     },
     {
-      "Id": 1734571618,
+      "Id": "bvcg",
       "Value": 0
     }
   ]

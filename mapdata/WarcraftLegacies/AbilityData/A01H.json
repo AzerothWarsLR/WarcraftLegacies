@@ -1,17 +1,17 @@
 {
-  "OldId": 1936081729,
-  "NewId": 1211183169,
+  "OldId": "ACfs",
+  "NewId": "A01H",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Blood Mage)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     }

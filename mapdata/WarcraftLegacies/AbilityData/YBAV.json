@@ -1,217 +1,217 @@
 {
-  "OldId": 1718832961,
-  "NewId": 1447117401,
+  "OldId": "AOsf",
+  "NewId": "YBAV",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 3
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 4
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 5
     },
     {
       "Level": 1,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "espv"
     },
     {
       "Level": 2,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "espv"
     },
     {
       "Level": 3,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "espv"
     },
     {
       "Level": 4,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "espv"
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B02N"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B02N"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B02N"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B02N"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Avatar of Vengeance"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Maiev)"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Avatar of Vengeance - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Summons Avatars of Vengeance to fight Maiev\u0027s enemies. |nLasts 60 seconds. |n|n|cffffcc00Level 1|r - 2 Avatars summoned. |n|cffffcc00Level 2|r - 3 Avatars summoned. |n|cffffcc00Level 3|r - 4 Avatars summoned. |n|cffffcc00Level 4|r - 5 Avatars summoned."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Avatar of Vengeance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Avatar of Vengeance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Avatar of Vengeance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Avatar of Vengeance - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons \u003CYBAV,DataB1\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons \u003CYBAV,DataB2\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons \u003CYBAV,DataB3\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons \u003CYBAV,DataB4\u003E Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
     }

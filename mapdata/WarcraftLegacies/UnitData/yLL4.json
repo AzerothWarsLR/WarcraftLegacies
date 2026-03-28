@@ -1,50 +1,50 @@
 {
-  "OldId": 1836278382,
-  "NewId": 877415545,
+  "OldId": "nbsm",
+  "NewId": "yLL4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "LLLN"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1000
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,neutral,sapper"
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Yogg-Saron\u0027s Prison"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\BlackEmpireSiphoningCrystal.mdl"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackEmpireSiphoningCrystal.blp"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
     }

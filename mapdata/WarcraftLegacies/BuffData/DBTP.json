@@ -1,12 +1,12 @@
 {
-  "OldId": 1718511938,
-  "NewId": 1347699268,
+  "OldId": "Binf",
+  "NewId": "DBTP",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Dummy Buff"
     }

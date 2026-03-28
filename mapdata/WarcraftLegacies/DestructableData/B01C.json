@@ -1,29 +1,29 @@
 {
-  "OldId": 1936020548,
-  "NewId": 1127297090,
+  "OldId": "DTes",
+  "NewId": "B01C",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1650685538,
+      "Id": "bvcb",
       "Value": 150
     },
     {
-      "Id": 1734571618,
+      "Id": "bvcg",
       "Value": 150
     },
     {
-      "Id": 1919120994,
+      "Id": "bvcr",
       "Value": 150
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Silithus Egg Sack"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     }

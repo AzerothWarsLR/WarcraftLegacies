@@ -1,70 +1,70 @@
 {
-  "OldId": 1734830917,
-  "NewId": 1345335365,
+  "OldId": "Ekgg",
+  "NewId": "E00P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Amim,AInv,Ault"
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 24
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "AEer,AEah,AEtq"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 500
     },
     {
-      "Id": 1852404597,
+      "Id": "usin",
       "Value": 600
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1684632437,
+      "Id": "usid",
       "Value": 600
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.5
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Horn Guardian"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Mystical Hero, adept at using nature spells. Can learn Entangling Roots, Force of Nature, Thorns Aura, and Tranquility. "
     }

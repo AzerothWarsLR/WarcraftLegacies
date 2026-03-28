@@ -1,38 +1,38 @@
 {
-  "OldId": 1719169089,
-  "NewId": 1279602753,
+  "OldId": "Apxf",
+  "NewId": "A0EL",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828799088,
+      "Id": "pxf1",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845576304,
+      "Id": "pxf2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Phoenix)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": ""
     }

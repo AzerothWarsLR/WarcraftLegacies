@@ -1,23 +1,23 @@
 {
-  "OldId": 1734503790,
+  "OldId": "nmbg",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 450
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged amphibious unit with Heal. "
     }

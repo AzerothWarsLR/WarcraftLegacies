@@ -1,37 +1,37 @@
 {
-  "OldId": 1920225100,
-  "NewId": 1127493700,
+  "OldId": "LOtr",
+  "NewId": "D04C",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Buildings\\Other\\BarrelsUnit\\BarrelsUnit.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Non-dest Barrel"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818588004,
+      "Id": "dsel",
       "Type": 2,
       "Value": 200
     }

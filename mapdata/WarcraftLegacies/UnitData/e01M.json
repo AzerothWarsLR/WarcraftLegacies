@@ -1,245 +1,245 @@
 {
-  "OldId": 1668244581,
-  "NewId": 1295069285,
+  "OldId": "edoc",
+  "NewId": "e01M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0UI,Aien"
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 5
     },
     {
-      "Id": 1885693045,
+      "Id": "udep",
       "Type": 3,
       "Value": "e01N"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 31
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 30
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 18
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 900
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 0
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 0
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R05R"
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 5
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 200
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar,Rguv"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 15
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1999724917,
+      "Id": "ua1w",
       "Type": 3,
       "Value": "missile"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 700
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 2050056565,
+      "Id": "ua1z",
       "Value": 1800
     },
     {
-      "Id": 1836344437,
+      "Id": "udtm",
       "Type": 2,
       "Value": 2.6
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "siege"
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,structure,ward"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarMachine1.blp"
     },
     {
-      "Id": 1635083125,
+      "Id": "ucua",
       "Type": 3,
       "Value": "None"
     },
     {
-      "Id": 1853186933,
+      "Id": "ucun",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1953850229,
+      "Id": "ucut",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Warsong)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_HordeWarMachine.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Azerite Siege Engine"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Azerite Siege Engine"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Siege unit that can transform into an immobile ranged siege unit."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "SteamTank"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
     },
     {
-      "Id": 2054188149,
+      "Id": "ulpz",
       "Type": 2,
       "Value": 150
     },
     {
-      "Id": 828468597,
+      "Id": "uma1",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3
     }

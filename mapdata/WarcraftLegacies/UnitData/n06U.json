@@ -1,85 +1,85 @@
 {
-  "OldId": 829844590,
-  "NewId": 1429614702,
+  "OldId": "nlv1",
+  "NewId": "n06U",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A089,A0BB,A0JG"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.35
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 3
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 29
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 600
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 400
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 400
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 450
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1.8
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R01K,R033,R034,Rhar,Rhme,Rguv"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Dargan summon level 3)"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Fire Elemental"
     }

@@ -1,40 +1,40 @@
 {
-  "OldId": 1769161537,
+  "OldId": "ACsi",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Bishop)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Stops all enemies in a target area from casting spells for \u003CACsi,Dur1\u003E(\u003CACsi,HeroDur1\u003E) seconds."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     }
   ]

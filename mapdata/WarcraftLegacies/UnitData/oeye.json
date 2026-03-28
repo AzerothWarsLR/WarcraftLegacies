@@ -1,16 +1,16 @@
 {
-  "OldId": 1702454639,
+  "OldId": "oeye",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Adt1,Aeth"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Frostwolf-Witch Doctor)"
     }

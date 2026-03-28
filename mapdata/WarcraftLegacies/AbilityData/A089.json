@@ -1,86 +1,86 @@
 {
-  "OldId": 1717784129,
-  "NewId": 959983681,
+  "OldId": "ANcf",
+  "NewId": "A089",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 600
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFireForTheCannon.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Dagran Fire Elemental)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Breath of Fire"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of fire at enemy units, dealing 75 damage and an additional 50 damage over 10 seconds."
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 2
     }
   ]

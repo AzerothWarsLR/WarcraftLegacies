@@ -1,33 +1,33 @@
 {
-  "OldId": 1851878768,
+  "OldId": "pman",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 16
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 5
     },
     {
-      "Id": 1869902697,
+      "Id": "isto",
       "Value": 3
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "S"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Restores 175 mana when used."
     }

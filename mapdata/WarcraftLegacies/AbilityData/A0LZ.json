@@ -1,6 +1,6 @@
 {
-  "OldId": 1953066049,
-  "NewId": 1514942529,
+  "OldId": "Alit",
+  "NewId": "A0LZ",
   "Unk": [
     0
   ],
@@ -8,34 +8,34 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829712716,
+      "Id": "Lit1",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846489932,
+      "Id": "Lit2",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Tidal Serpent)"
     },
     {
-      "Id": 1734962273,
+      "Id": "alig",
       "Type": 3,
       "Value": "LEAS"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
     }

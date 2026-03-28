@@ -1,202 +1,202 @@
 {
-  "OldId": 1668435521,
+  "OldId": "ANrc",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 3,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 360
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 360
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 360
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 200
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 250
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 300
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828600910,
+      "Id": "Nrc1",
       "Type": 3,
       "Value": "AUin"
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828600910,
+      "Id": "Nrc1",
       "Type": 3,
       "Value": "AUin"
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828600910,
+      "Id": "Nrc1",
       "Type": 3,
       "Value": "AUin"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845378126,
+      "Id": "Nrc2",
       "Value": 4
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845378126,
+      "Id": "Nrc2",
       "Value": 5
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845378126,
+      "Id": "Nrc2",
       "Value": 6
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0.66
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 5
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNInfernalMeteorShower.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Legion, Archimonde, Mannoroth)"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNInfernalMeteorShower.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 3
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Rain of Chaos - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Infernals. |n|cffffcc00Level 2|r - Calls down 5 stronger Infernals. |n|cffffcc00Level 3|r - Calls down 6 even stronger Infernals."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rain of Chaos - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rain of Chaos - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Rain of Chaos - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls down 4 Infernals from the sky."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls down 5 stronger Infernals from the sky."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls down 6 even stronger Infernals from the sky."
     }

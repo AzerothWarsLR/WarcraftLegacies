@@ -1,17 +1,17 @@
 {
-  "OldId": 1785033282,
-  "NewId": 1295462466,
+  "OldId": "Brej",
+  "NewId": "B07M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Accelerated Vitality"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
     }

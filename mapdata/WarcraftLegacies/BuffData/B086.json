@@ -1,17 +1,17 @@
 {
-  "OldId": 1685275969,
-  "NewId": 909652034,
+  "OldId": "AEsd",
+  "NewId": "B086",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Call of the Void (target)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

@@ -1,5 +1,5 @@
 {
-  "OldId": 1668248129,
+  "OldId": "Aroc",
   "Unk": [
     0
   ],
@@ -7,31 +7,31 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829122117,
+      "Id": "Efk1",
       "Type": 2,
       "Value": 45
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Steam Tank)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes this unit\u0027s attacks to fire additional projectiles at up to 10 nearby enemy air units."
     }

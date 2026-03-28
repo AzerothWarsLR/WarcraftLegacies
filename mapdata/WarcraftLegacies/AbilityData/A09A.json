@@ -1,30 +1,30 @@
 {
-  "OldId": 846225729,
-  "NewId": 1094266945,
+  "OldId": "Aap2",
+  "NewId": "A09A",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground,neutral,organic"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829190209,
+      "Id": "Apl1",
       "Type": 2,
       "Value": 120
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Plague Ward Level 2)"
     }

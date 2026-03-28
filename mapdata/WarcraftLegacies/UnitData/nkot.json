@@ -1,19 +1,19 @@
 {
-  "OldId": 1953459054,
+  "OldId": "nkot",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 21
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 625
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit that can Bash opponents. "
     }

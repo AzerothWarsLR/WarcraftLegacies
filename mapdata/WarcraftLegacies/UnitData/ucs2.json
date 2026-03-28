@@ -1,57 +1,57 @@
 {
-  "OldId": 846422901,
+  "OldId": "ucs2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0GY,A0KF"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 18
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 950
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R008,Rhar,Rhme,Rguv"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Red - Anub\u0027Arak)(Level 2)"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 150
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.2
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 150
     }
   ]

@@ -1,108 +1,108 @@
 {
-  "OldId": 1702316097,
-  "NewId": 1463889985,
+  "OldId": "AHwe",
+  "NewId": "A0AW",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 150
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 845510472,
+      "Id": "Hwe2",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
       "Level": 1,
-      "Id": 828733256,
+      "Id": "Hwe1",
       "Type": 3,
       "Value": "nsel"
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "attack,slam"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarStomp.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Doom Lord)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "War Stomp"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarStomp.blp"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn War Stomp - [|cffffcc00Level %d|r]."
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAOw2,DataA1\u003E damage, \u003CAOw2,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CAOw2,DataA2\u003E damage, \u003CAOw2,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CAOw2,DataA3\u003E damage, \u003CAOw2,Dur3\u003E second stun. |n|cffffcc00Level 4|r - \u003CAOw2,DataA4\u003E damage, \u003CAOw2,Dur4\u003E second stun."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "War Stomp"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Slams the ground, dealing 25 damage to nearby enemy land units and stunning them for 2 seconds."
     }

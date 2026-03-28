@@ -1,22 +1,22 @@
 {
-  "OldId": 1936083032,
-  "NewId": 858796120,
+  "OldId": "XHfs",
+  "NewId": "X003",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Nether Strike (Effect)"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayTarget.mdl"
     }

@@ -1,38 +1,38 @@
 {
-  "OldId": 1651265369,
-  "NewId": 1311977540,
+  "OldId": "YOlb",
+  "NewId": "D03N",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Maelstrom"
     },
     {
-      "Id": 1818588004,
+      "Id": "dsel",
       "Type": 2,
       "Value": 0
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 155
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 155
     }
   ]

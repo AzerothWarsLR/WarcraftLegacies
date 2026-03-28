@@ -1,189 +1,189 @@
 {
-  "OldId": 1852404814,
+  "OldId": "Ntin",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "A0RA,Aamk,ANsy,ANcs,ANeg"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 700
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 18
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R01F"
     },
     {
-      "Id": 829518453,
+      "Id": "urq1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 846295669,
+      "Id": "urq2",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1668379253,
+      "Id": "urqc",
       "Value": 0
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1953723253,
+      "Id": "usst",
       "Value": 0
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 40
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "MetalHeavyBash"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical"
     },
     {
-      "Id": 1953393013,
+      "Id": "uint",
       "Value": 1
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "STR"
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 2500
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 1250
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 200
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0MN,AInv"
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 3
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Gazlowe"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Chief Engineer"
     },
     {
-      "Id": 1970434165,
+      "Id": "upru",
       "Value": 0
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Gazlowe"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Gazlowe"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Gazlowe"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Versatile warrior Hero, adept at disrupting enemy armies."
     },
     {
-      "Id": 1768841589,
+      "Id": "uani",
       "Type": 3,
       "Value": "alternate"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     }
   ]

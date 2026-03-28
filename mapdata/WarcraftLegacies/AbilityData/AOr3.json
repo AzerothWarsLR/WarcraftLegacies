@@ -1,60 +1,60 @@
 {
-  "OldId": 863129409,
+  "OldId": "AOr3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 360
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828731983,
+      "Id": "Ore1",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 0
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 10
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "When killed, the Hero will come back to life. |n|n|cffffcc00Level 1|r - \u003CAOr3,Cool1\u003E second cooldown. |n|cffffcc00Level 2|r - \u003CAOr3,Cool2\u003E second cooldown."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Reincarnation"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "When killed, this unit will come back to life. Reincarnation has a \u003CAOr3,Cool1\u003E second cooldown."
     }

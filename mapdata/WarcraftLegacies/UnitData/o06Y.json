@@ -1,183 +1,183 @@
 {
-  "OldId": 1634493007,
-  "NewId": 1496723567,
+  "OldId": "Obla",
+  "NewId": "o06Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACce,A0EH"
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 2.65
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 22
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 6
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "AUan"
     },
     {
-      "Id": 1936681077,
+      "Id": "uhos",
       "Value": 1
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1150
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "STR"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 16
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2.5
     },
     {
-      "Id": 829518453,
+      "Id": "urq1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 846295669,
+      "Id": "urq2",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 240
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 2.3
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,structure,ward"
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "MetalMediumChop"
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 450
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 450
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 35
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Witch Doctor"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 200
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep-Zul\u0027Farrak)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\creeps\\DarkTroll\\DarkTroll.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 150
     },
     {
-      "Id": 1935763573,
+      "Id": "uhas",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.35
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ukorz"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Ukorz Sandscalp"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Witch Doctor"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "ForestTroll"
     }

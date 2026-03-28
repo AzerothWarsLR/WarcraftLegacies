@@ -1,41 +1,41 @@
 {
-  "OldId": 1836413796,
+  "OldId": "dsum",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Purchasable"
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 45
     },
     {
-      "Id": 1702065513,
+      "Id": "iuse",
       "Value": 3
     },
     {
-      "Id": 1953723241,
+      "Id": "isst",
       "Value": 600
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "X"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Teleports \u003CAUds,DataA1\u003E of the player\u0027s non-hero units within the targeted area to the location of the Hero when used."
     }

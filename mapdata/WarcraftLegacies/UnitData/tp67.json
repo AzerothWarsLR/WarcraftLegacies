@@ -1,27 +1,27 @@
 {
-  "OldId": 1702454639,
-  "NewId": 926314612,
+  "OldId": "oeye",
+  "NewId": "tp67",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Adt1,Aeth"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Sentinels)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Units\\NightElf\\Owl\\Owl.mdl"
     }

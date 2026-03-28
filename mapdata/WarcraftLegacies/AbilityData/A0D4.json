@@ -1,57 +1,57 @@
 {
-  "OldId": 1667318593,
-  "NewId": 876884033,
+  "OldId": "ACac",
+  "NewId": "A0D4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 1500
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828596547,
+      "Id": "Cac1",
       "Type": 2,
       "Value": 0.2
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,structure"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Ironforge)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Ironforge Aura"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ironforge Aura"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives 20% extra damage to the attacks of nearby structures."
     }

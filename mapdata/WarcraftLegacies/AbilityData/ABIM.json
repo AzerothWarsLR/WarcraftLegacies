@@ -1,73 +1,73 @@
 {
-  "OldId": 1886208833,
-  "NewId": 1296646721,
+  "OldId": "ACmp",
+  "NewId": "ABIM",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 200
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829253973,
+      "Id": "Uim1",
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862808405,
+      "Id": "Uim3",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846031189,
+      "Id": "Uim2",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 1200
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Forgotten One)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Slams the ground, sending a wave of force out in a straight line, dealing 25 damage and hurling enemy ground units into the air in their wake, stunning them for 2 (0.5 on heroes) seconds."
     }

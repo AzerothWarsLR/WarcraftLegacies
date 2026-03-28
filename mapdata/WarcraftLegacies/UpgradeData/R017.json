@@ -1,76 +1,76 @@
 {
-  "OldId": 1802331474,
-  "NewId": 925970514,
+  "OldId": "Remk",
+  "NewId": "R017",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828794215,
+      "Id": "gef1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 5
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1667330663,
+      "Id": "grac",
       "Type": 3,
       "Value": "naga"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Siphon Mana"
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNManaDrain.blp"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Allows Scylla to use Siphon Mana, which drains mana from enemies and transfers mana to allies. "
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Siphon Mana"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "X"
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Illidari)"
     },
     {
-      "Id": 2037408359,
+      "Id": "gbpy",
       "Value": 2
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 1
     }
   ]

@@ -1,17 +1,17 @@
 {
-  "OldId": 1685275969,
-  "NewId": 842018882,
+  "OldId": "AEsd",
+  "NewId": "B002",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Summoning target"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Demon\\RainOfFire\\RainOfFireTarget.mdl"
     }

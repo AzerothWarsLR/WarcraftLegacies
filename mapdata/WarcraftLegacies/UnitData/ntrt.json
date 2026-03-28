@@ -1,67 +1,67 @@
 {
-  "OldId": 1953657966,
+  "OldId": "ntrt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.35
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 7
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 35
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 15
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 850
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 1
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "F"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Call Giant Sea Turtle |cffffcc00F|r"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged amphibious unit whose spiked shell harms enemy melee attackers. "
     }

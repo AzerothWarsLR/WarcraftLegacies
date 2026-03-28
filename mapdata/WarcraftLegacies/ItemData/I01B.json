@@ -1,96 +1,96 @@
 {
-  "OldId": 1886876787,
-  "NewId": 1110519881,
+  "OldId": "stwp",
+  "NewId": "I01B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055145,
+      "Id": "iabi",
       "Type": 3,
       "Value": "AIi4,A00M"
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Permanent"
     },
     {
-      "Id": 1684628329,
+      "Id": "icid",
       "Type": 3,
       "Value": "AIsp"
     },
     {
-      "Id": 1886545001,
+      "Id": "idrp",
       "Value": 1
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 1250
     },
     {
-      "Id": 1886677097,
+      "Id": "ihtp",
       "Value": 250000
     },
     {
-      "Id": 1986358377,
+      "Id": "ilev",
       "Value": 6
     },
     {
-      "Id": 2002874473,
+      "Id": "ipaw",
       "Value": 0
     },
     {
-      "Id": 1919250537,
+      "Id": "iper",
       "Value": 0
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1869902697,
+      "Id": "isto",
       "Value": 1
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 3600
     },
     {
-      "Id": 1702065513,
+      "Id": "iuse",
       "Value": 0
     },
     {
-      "Id": 1868786025,
+      "Id": "iico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.blp"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     },
     {
-      "Id": 1936024681,
+      "Id": "ides",
       "Type": 3,
       "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Staff of Teleportation"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase Staff of |cffffcc00T|releportation"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
     }

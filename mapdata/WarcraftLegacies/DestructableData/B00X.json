@@ -1,52 +1,52 @@
 {
-  "OldId": 829641796,
-  "NewId": 1479553090,
+  "OldId": "DTs1",
+  "NewId": "B00X",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1818850402,
+      "Id": "btil",
       "Type": 3,
       "Value": "D,G,*"
     },
     {
-      "Id": 1836212578,
+      "Id": "barm",
       "Type": 3,
       "Value": "Ethereal"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1685352546,
+      "Id": "bptd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "Doodads\\Terrain\\ForceBridgeLarge0\\ForceBridgeLarge0.mdl"
     }

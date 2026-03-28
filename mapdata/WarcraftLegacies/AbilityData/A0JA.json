@@ -1,144 +1,144 @@
 {
-  "OldId": 1802723905,
-  "NewId": 1095381057,
+  "OldId": "Absk",
+  "NewId": "A0JA",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B01R"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 18
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125474,
+      "Id": "bsk1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 1.5
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679906,
+      "Id": "bsk3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 2
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845902690,
+      "Id": "bsk2",
       "Type": 2,
       "Value": 2.5
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B01R"
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 18
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMonsoon.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Chimaera)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Lightning Barrage"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Lightning Barrage"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Unleashes a flurry of attacks, increasing attack speed by 150%  for \u003CA0JA,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Lightning Barrage"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Unleashes a flurry of attacks, increasing attack speed by 250%  for \u003CA0JA,Dur1\u003E seconds."
     }

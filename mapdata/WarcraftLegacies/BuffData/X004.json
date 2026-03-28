@@ -1,22 +1,22 @@
 {
-  "OldId": 1718830424,
-  "NewId": 875573336,
+  "OldId": "XEsf",
+  "NewId": "X004",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Divine Sacrifice (Effect)"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
     }

@@ -1,46 +1,46 @@
 {
-  "OldId": 1919837505,
+  "OldId": "Aenr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829580613,
+      "Id": "Eer1",
       "Type": 2,
       "Value": 50
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground,neutral,organic"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Brown - The Chosen One)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Entangling Roots - |cffffcc00(Q)|r"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes roots to burst from the ground, immobilizing a target enemy unit for 10 seconds (3 for heroes), and dealing 50 damage per second."
     }

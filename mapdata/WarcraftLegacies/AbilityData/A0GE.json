@@ -1,126 +1,126 @@
 {
-  "OldId": 1935887937,
-  "NewId": 1162293313,
+  "OldId": "ANcs",
+  "NewId": "A0GE",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829645646,
+      "Id": "Ncs1",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846422862,
+      "Id": "Ncs2",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896754510,
+      "Id": "Ncs5",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground,neutral,structure"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R01T"
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879977294,
+      "Id": "Ncs4",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0.2
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 0.5
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Kul\u0027tiras - Bomber)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Bombards an area with rockets, stunning enemy units for 1 second and damaging nearby enemy units.|n|n|cffffcc00Level 1|r - 45 damage.|n|cffffcc00Level 2|r - 75 damage.|n|cffffcc00Level 3|r - 110 damage.|n|cffffcc00Level 4|r - 150 damage."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Cluster Rockets"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Bombards an area with rockets, dealing up to \u003CA0GE,DataA1\u003E damage to nearby enemy ground units and stunning them for \u003CA0GE,Dur1,.\u003E seconds. Deals \u003CA0GE,DataE1,%\u003E damage to buildings."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     }
   ]

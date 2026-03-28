@@ -1,73 +1,73 @@
 {
-  "OldId": 1919181429,
+  "OldId": "ubdr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "large"
     },
     {
-      "Id": 1719037301,
+      "Id": "umvf",
       "Type": 2,
       "Value": 300
     },
     {
-      "Id": 1752591733,
+      "Id": "umvh",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 1
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1868788853,
+      "Id": "utco",
       "Value": 13
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 0
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 0
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 0
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A08P"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 2
     }

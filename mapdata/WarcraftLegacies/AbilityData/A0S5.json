@@ -1,121 +1,121 @@
 {
-  "OldId": 2053261377,
-  "NewId": 894644289,
+  "OldId": "AHbz",
+  "NewId": "A0S5",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1935762273,
+      "Id": "acas",
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 830104136,
+      "Id": "Hbz1",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846881352,
+      "Id": "Hbz2",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863658568,
+      "Id": "Hbz3",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 880435784,
+      "Id": "Hbz4",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 913990216,
+      "Id": "Hbz6",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1717986657,
+      "Id": "aeff",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 1800
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (Stormwind Dummy)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Bombing Run"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Sends a squadron of Gyro-Copters to a target area, bombing building and units for 15 seconds.|n|n90 second cooldown."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Bombing Run"
     }

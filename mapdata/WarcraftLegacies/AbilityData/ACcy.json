@@ -1,22 +1,22 @@
 {
-  "OldId": 2036548417,
+  "OldId": "ACcy",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Green Naga)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Cyclone (|cffffff00E|r)"
     }

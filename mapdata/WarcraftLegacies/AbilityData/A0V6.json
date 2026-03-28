@@ -1,6 +1,6 @@
 {
-  "OldId": 1987068737,
-  "NewId": 911618113,
+  "OldId": "ACpv",
+  "NewId": "A0V6",
   "Unk": [
     0
   ],
@@ -8,33 +8,33 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829579607,
+      "Id": "War1",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846356823,
+      "Id": "War2",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Zakajz)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 25% chance that an attack will deal 50 damage to nearby units."
     }

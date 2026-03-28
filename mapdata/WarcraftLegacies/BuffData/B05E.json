@@ -1,17 +1,17 @@
 {
-  "OldId": 1767993922,
-  "NewId": 1161113666,
+  "OldId": "Brai",
+  "NewId": "B05E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Summoned Voidwalker"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Pink - Stormreaver Warlock)"
     }

@@ -1,169 +1,169 @@
 {
-  "OldId": 1818715758,
+  "OldId": "nfgl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Amed,A129,S00L,Aap1"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 1935827829,
+      "Id": "ucbs",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 3.5
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 7
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "large"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 80
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 50
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 250
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2225
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 0
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 0
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 9
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 150
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 60
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "unp2"
     },
     {
-      "Id": 1969582965,
+      "Id": "useu",
       "Type": 3,
       "Value": "n08G"
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 175
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rguv,R01X,Rhme,Rhar"
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "MetalHeavyBash"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Scourge)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.05
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Plague Titan"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Plague Titan"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Massive Flesh Golem, the ultimate fleshwork creation."
     }

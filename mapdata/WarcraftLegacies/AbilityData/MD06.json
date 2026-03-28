@@ -1,126 +1,126 @@
 {
-  "OldId": 1651001409,
-  "NewId": 909132877,
+  "OldId": "AHhb",
+  "NewId": "MD06",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 85
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 95
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 828532808,
+      "Id": "Hhb1",
       "Type": 2,
       "Value": 800
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,invulnerable,nonancient,organic,vulnerable"
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,invulnerable,nonancient,organic,vulnerable"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,invulnerable,nonancient,organic,vulnerable"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,invulnerable,nonancient,organic,vulnerable"
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Alexandros)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "A holy light that can heal a friendly living unit or damage an enemy Undead unit. |n|n|cffffcc00Level 1|r - Heals for 200 hit points. |n|cffffcc00Level 2|r - Heals for 400 hit points. |n|cffffcc00Level 3|r - Heals for 600 hit points. |n|cffffcc00Level 4|r - Heals for 800 hit points."
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Holy Light - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "A holy light that can heal a friendly living unit for \u003CMD06,DataA1\u003E or deal half damage to an enemy Undead unit."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "A holy light that can heal a friendly living unit for 400 or deal half damage to an enemy Undead unit."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "A holy light that can heal a friendly living unit for 600 or deal half damage to an enemy Undead unit."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "A holy light that can heal a friendly living unit for 800 or deal half damage to an enemy Undead unit."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Holy Light"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     }
   ]

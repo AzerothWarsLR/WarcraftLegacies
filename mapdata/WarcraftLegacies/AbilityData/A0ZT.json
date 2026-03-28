@@ -1,6 +1,6 @@
 {
-  "OldId": 1668248129,
-  "NewId": 1415196737,
+  "OldId": "Aroc",
+  "NewId": "A0ZT",
   "Unk": [
     0
   ],
@@ -8,71 +8,71 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829122117,
+      "Id": "Efk1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845899333,
+      "Id": "Efk2",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "debris,enemies,ground,item,structure"
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 900
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(defender cannon tower missile)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Multishot"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Multishot"
     }

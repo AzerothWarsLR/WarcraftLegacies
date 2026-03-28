@@ -1,319 +1,319 @@
 {
-  "OldId": 1717784129,
-  "NewId": 878325825,
+  "OldId": "ANcf",
+  "NewId": "A0Z4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BCbf"
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BCbf"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BCbf"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BCbf"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 120
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 105
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 195
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 15000
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 15000
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 15000
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 15000
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 863200085,
+      "Id": "Ucs3",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 863200085,
+      "Id": "Ucs3",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 4,
       "Pointer": 3,
-      "Id": 863200085,
+      "Id": "Ucs3",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 879977301,
+      "Id": "Ucs4",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 3,
       "Pointer": 4,
-      "Id": 879977301,
+      "Id": "Ucs4",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 4,
       "Pointer": 4,
-      "Id": 879977301,
+      "Id": "Ucs4",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "attack"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Al-akir)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\BreathOfFrost\\BreathOfFrostMissile.mdl"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Breath of Frost"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Breath of Frost - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Breathes a cone of frost at enemy units which deals damage. |n|n|cffffcc00Level 1|r - \u003CA0Z4,DataA1\u003E damage. |n|cffffcc00Level 2|r - \u003CA0Z4,DataA2\u003E damage. |n|cffffcc00Level 3|r - \u003CA0Z4,DataA3\u003E damage. |n|cffffcc00Level 4|r - \u003CA0Z4,DataA4\u003E damage."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Breath of Frost - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Breath of Frost - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Breath of Frost - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Breath of Frost - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of cold air at enemy units, dealing \u003CA0Z4,DataA1\u003E damage."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of cold air at enemy units, dealing \u003CA0Z4,DataA2\u003E damage."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of cold air at enemy units, dealing \u003CA0Z4,DataA3\u003E damage."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of cold air at enemy units, dealing \u003CA0Z4,DataA4\u003E damage."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     }
   ]

@@ -1,22 +1,22 @@
 {
-  "OldId": 1668697666,
-  "NewId": 892547138,
+  "OldId": "BNvc",
+  "NewId": "B035",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNdancingLightningGS.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Tempest"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "Tempest"
     }

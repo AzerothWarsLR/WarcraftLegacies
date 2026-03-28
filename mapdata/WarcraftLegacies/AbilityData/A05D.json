@@ -1,60 +1,60 @@
 {
-  "OldId": 1668248129,
-  "NewId": 1144336449,
+  "OldId": "Aroc",
+  "NewId": "A05D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 400
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground"
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862676549,
+      "Id": "Efk3",
       "Value": 6
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sky Barge)"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 7 nearby enemy units."
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Multi Shot"
     }

@@ -1,11 +1,11 @@
 {
-  "OldId": 1633907566,
+  "OldId": "nsca",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit. "
     }

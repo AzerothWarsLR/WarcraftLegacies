@@ -1,71 +1,71 @@
 {
-  "OldId": 1952544616,
-  "NewId": 1429221480,
+  "OldId": "hwat",
+  "NewId": "h00U",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 17
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1000
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 200
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R020,Rhme,Rhar"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A138"
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A138"
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 200
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Dalaran-Hydromancer Summon)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.8
     }

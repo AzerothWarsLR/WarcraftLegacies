@@ -1,129 +1,129 @@
 {
-  "OldId": 1752458088,
-  "NewId": 1194471528,
+  "OldId": "hcth",
+  "NewId": "h02G",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Ahan,A0R1,A020,Aihn"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 2
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2.15
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 40
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 23
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 24
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1200
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 2
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 4
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhar,Rhme,Rguv"
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "MetalHeavySlice"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 160
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Scourge)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Vrykul Warrior"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train - Vrykul Warrior"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Hardy fighters of the Vrykul."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "Draenei"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNVrykulHarpooner.blp"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\VrykulWarriorV5Optimized.mdl"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.4
     }

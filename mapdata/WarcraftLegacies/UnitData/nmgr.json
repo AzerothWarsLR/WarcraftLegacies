@@ -1,33 +1,33 @@
 {
-  "OldId": 1919380846,
+  "OldId": "nmgr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 66
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1.66
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit that hurls bolts of frost at opponents. Immune to spells. "
     }

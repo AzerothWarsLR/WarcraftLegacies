@@ -1,103 +1,103 @@
 {
-  "OldId": 1851875957,
+  "OldId": "uban",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Acrs,Aam2,Apos,Aiun"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 3
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 16
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 19
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 15
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 800
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 10
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 3
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Ruba,Rupm,Rguv,Rhme,Rhar"
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 3
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Scourge)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.85
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "A risen Elf spirit enslaved to the Scourge."
     }

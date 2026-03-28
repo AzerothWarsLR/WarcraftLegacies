@@ -1,33 +1,33 @@
 {
-  "OldId": 845243219,
-  "NewId": 825241683,
+  "OldId": "Sca2",
+  "NewId": "S001",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R08A"
     },
     {
       "Level": 1,
-      "Id": 828467267,
+      "Id": "Cha1",
       "Type": 3,
       "Value": "h0CP"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Purple - Knight to Gallant)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Chaos"
     }

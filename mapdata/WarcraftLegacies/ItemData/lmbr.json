@@ -1,20 +1,20 @@
 {
-  "OldId": 1919053164,
+  "OldId": "lmbr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055145,
+      "Id": "iabi",
       "Type": 3,
       "Value": "A03D"
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 175
     },
     {
-      "Id": 1818588009,
+      "Id": "isel",
       "Value": 1
     }
   ]

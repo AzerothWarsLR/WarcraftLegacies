@@ -1,19 +1,19 @@
 {
-  "OldId": 1685089390,
+  "OldId": "nlpd",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 111
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 400
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit. "
     }

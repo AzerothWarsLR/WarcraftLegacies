@@ -1,22 +1,22 @@
 {
-  "OldId": 1902734402,
-  "NewId": 808857683,
+  "OldId": "Bliq",
+  "NewId": "S060",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Burning Arrow"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire1.mdl"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASFlameArrowShower.blp"
     }

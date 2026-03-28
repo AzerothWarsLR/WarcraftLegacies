@@ -1,173 +1,173 @@
 {
-  "OldId": 845642357,
-  "NewId": 892350581,
+  "OldId": "uzg2",
+  "NewId": "u005",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 25
     },
     {
-      "Id": 1919050101,
+      "Id": "uabr",
       "Type": 2,
       "Value": 14
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 30
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 30
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 35
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 50
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 4000
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\4x4SimpleSolid.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1918988405,
+      "Id": "upar",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 10
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "o04P,u00D,u007"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,undead"
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 1768841589,
+      "Id": "uani",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp"
     },
     {
-      "Id": 1885430133,
+      "Id": "uaap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Legion Special)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Building_ScourgeShrine45.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.7
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dread Shrine"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Dread Shrine"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "A gathering point for the followers of the Burning Legion."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "Necropolis"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3
     }

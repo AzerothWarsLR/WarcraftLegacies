@@ -1,280 +1,280 @@
 {
-  "OldId": 1668047182,
-  "NewId": 858927182,
+  "OldId": "Nalc",
+  "NewId": "N023",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACm2,A00Z,AInv"
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 44
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1836212597,
+      "Id": "uarm",
       "Type": 3,
       "Value": "Metal"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 0.44
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1935827829,
+      "Id": "ucbs",
       "Type": 2,
       "Value": 0.55
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 3.5
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "divine"
     },
     {
-      "Id": 1885693045,
+      "Id": "udep",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 125
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.66
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "ZB06,ZB02,A0SC,A10N,Aamk"
     },
     {
-      "Id": 828663925,
+      "Id": "uhd1",
       "Type": 2,
       "Value": 0.4
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 4225
     },
     {
-      "Id": 1953393013,
+      "Id": "uint",
       "Value": 50
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 3.7
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 400
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 19
     },
     {
-      "Id": 828666229,
+      "Id": "uqd1",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 150
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 829518453,
+      "Id": "urq1",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 846295669,
+      "Id": "urq2",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 6
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "air,ward,structure,ground,item,debris"
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 50
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "air,ward,structure,ground,item,debris"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 829645685,
+      "Id": "ucs1",
       "Type": 3,
       "Value": "MetalHeavySlice"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLichKing.blp"
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Lich King"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Scourge)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Hero_LichKing_AWVariant.mdl"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.3
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Lord of the Scourge"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "The Lich King"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Lich King"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.4
     },
     {
-      "Id": 1769173877,
+      "Id": "ussi",
       "Type": 3,
       "Value": "war3mapImported\\SSCscorescreen-hero-lichking.blp"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "EvilArthas"
     },
     {
-      "Id": 1667462261,
+      "Id": "utcc",
       "Value": 1
     }
   ]

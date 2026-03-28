@@ -1,21 +1,21 @@
 {
-  "OldId": 845632577,
+  "OldId": "ATg2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     }

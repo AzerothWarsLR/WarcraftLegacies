@@ -1,21 +1,21 @@
 {
-  "OldId": 1651468142,
-  "NewId": 1244999790,
+  "OldId": "ngob",
+  "NewId": "n05J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2500
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "creeps"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dark Portal Aura Control Nexus"
     }

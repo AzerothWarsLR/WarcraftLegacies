@@ -1,60 +1,60 @@
 {
-  "OldId": 1734962287,
-  "NewId": 1345400905,
+  "OldId": "olig",
+  "NewId": "I01P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055145,
+      "Id": "iabi",
       "Type": 3,
       "Value": "A0MB"
     },
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 50
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Purchasable"
     },
     {
-      "Id": 1868786025,
+      "Id": "iico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     },
     {
-      "Id": 1936024681,
+      "Id": "ides",
       "Type": 3,
       "Value": "Attacks have a chance to silence the target."
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Z"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Tech-Orb 4000"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase Tech-Orb 4000"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, has a small chance to silence enemies hit."
     }

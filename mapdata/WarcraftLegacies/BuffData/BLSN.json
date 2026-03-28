@@ -1,17 +1,17 @@
 {
-  "OldId": 1953788738,
-  "NewId": 1314081858,
+  "OldId": "Bstt",
+  "NewId": "BLSN",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Ice Trap"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
     }

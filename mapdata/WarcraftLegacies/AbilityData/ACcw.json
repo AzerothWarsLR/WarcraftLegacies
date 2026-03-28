@@ -1,67 +1,67 @@
 {
-  "OldId": 2002993985,
+  "OldId": "ACcw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 6
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828465992,
+      "Id": "Hca1",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845243208,
+      "Id": "Hca2",
       "Type": 2,
       "Value": 0.3
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862020424,
+      "Id": "Hca3",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.15
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sea Witch)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Adds a cold effect to each attack, slowing a target enemy unit\u0027s attacks by \u003CACcw,DataB1,%\u003E% and movement by \u003CACcw,DataC1,%\u003E% for \u003CACcw,Dur1\u003E seconds."
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     }

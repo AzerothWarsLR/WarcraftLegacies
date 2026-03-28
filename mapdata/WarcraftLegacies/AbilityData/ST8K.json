@@ -1,21 +1,21 @@
 {
-  "OldId": 2020886849,
-  "NewId": 1261982803,
+  "OldId": "AItx",
+  "NewId": "ST8K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Tess damage"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Tess Greymane - Vanish Dummy)"
     }

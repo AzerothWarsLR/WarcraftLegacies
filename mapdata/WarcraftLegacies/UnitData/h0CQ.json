@@ -1,161 +1,161 @@
 {
-  "OldId": 1718186600,
-  "NewId": 1363357800,
+  "OldId": "hrif",
+  "NewId": "h0CQ",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0A3,A0AC,A0F3,Aihn"
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A0AC"
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 3
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.9
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 29
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.334
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 15
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 670
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 2050056565,
+      "Id": "ua1z",
       "Value": 1500
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 600
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 220
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R04A,R01P,R01N,Rhar,Rhpm,Rguv,Rhme"
     },
     {
-      "Id": 1999724917,
+      "Id": "ua1w",
       "Type": 3,
       "Value": "missile"
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNarbalesticon.blp"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Lordaeron)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\arbalester.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 2020633717,
+      "Id": "ulpx",
       "Type": 2,
       "Value": 11
     },
     {
-      "Id": 2037410933,
+      "Id": "ulpy",
       "Type": 2,
       "Value": 62
     },
     {
-      "Id": 2054188149,
+      "Id": "ulpz",
       "Type": 2,
       "Value": 71
     },
     {
-      "Id": 828468597,
+      "Id": "uma1",
       "Type": 2,
       "Value": 0.05
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "war3mapImported\\CrossboltMissile.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Royal Arbalest"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Royal Arbalest"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Trained crossbowmen of Lordaeron."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "Footman"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     }

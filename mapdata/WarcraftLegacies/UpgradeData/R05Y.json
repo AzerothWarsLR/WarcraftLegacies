@@ -1,13 +1,13 @@
 {
-  "OldId": 1751347026,
-  "NewId": 1496658002,
+  "OldId": "Roch",
+  "NewId": "R05Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Sentinels exists"
     }

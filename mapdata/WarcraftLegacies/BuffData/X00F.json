@@ -1,22 +1,22 @@
 {
-  "OldId": 1936083032,
-  "NewId": 1177563224,
+  "OldId": "XHfs",
+  "NewId": "X00F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Field of Blood (Effect)"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Objects\\Spawnmodels\\Orc\\Orcblood\\OrcBloodWitchDoctor.mdl"
     },
     {
-      "Id": 1818649958,
+      "Id": "fefl",
       "Type": 3,
       "Value": "FountainLoop"
     }

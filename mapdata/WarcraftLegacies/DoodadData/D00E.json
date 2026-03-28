@@ -1,27 +1,27 @@
 {
-  "OldId": 1667846734,
-  "NewId": 1160785988,
+  "OldId": "NRic",
+  "NewId": "D00E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 2.5
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "FrostSabar"
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "I,N"
     }

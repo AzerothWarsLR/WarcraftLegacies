@@ -1,241 +1,241 @@
 {
-  "OldId": 2004121448,
-  "NewId": 875704424,
+  "OldId": "hwtw",
+  "NewId": "h024",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A094"
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "pierce"
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 30
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 0.7
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 10
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "fort"
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 3
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 32
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 15
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 40
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2500
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 200
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 200
     },
     {
-      "Id": 2050056565,
+      "Id": "ua1z",
       "Value": 1800
     },
     {
-      "Id": 1852404597,
+      "Id": "usin",
       "Value": 2100
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 800
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 0.45
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 828535413,
+      "Id": "urb1",
       "Type": 2,
       "Value": 250
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 6
     },
     {
-      "Id": 1684632437,
+      "Id": "usid",
       "Value": 1900
     },
     {
-      "Id": 1634562933,
+      "Id": "usma",
       "Value": 1
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 30
     },
     {
-      "Id": 828601461,
+      "Id": "utc1",
       "Value": 3
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "air,debris,ground,item,structure,ward"
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "mechanical,sapper"
     },
     {
-      "Id": 1953527157,
+      "Id": "uupt",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhac,R013"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 150
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Stormwind Other)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\StormwindTower.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 150
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 828468597,
+      "Id": "uma1",
       "Type": 2,
       "Value": 0.15
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.35
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Light House"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 150
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 3
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Build Light House"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Basic naval watch tower. Has the Flash of Light ability and high sight radius."
     }

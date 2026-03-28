@@ -1,17 +1,17 @@
 {
-  "OldId": 1986947394,
-  "NewId": 808923202,
+  "OldId": "Binv",
+  "NewId": "B070",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlareOff.blp"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Elunes Gaze"
     }

@@ -1,57 +1,57 @@
 {
-  "OldId": 1919173441,
-  "NewId": 1280847937,
+  "OldId": "ACdr",
+  "NewId": "A0XL",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829580366,
+      "Id": "Ndr1",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(forsaken)"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Life Drain"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Absorbs the life essence of a target enemy unit by taking 40 hit points per second from it and giving them to the caster. |nLasts 10 seconds. (4 on heroes)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     }

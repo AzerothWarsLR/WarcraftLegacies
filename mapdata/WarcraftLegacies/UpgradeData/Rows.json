@@ -1,48 +1,48 @@
 {
-  "OldId": 1937207122,
+  "OldId": "Rows",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 65
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Frostwolf)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Improved Pulverize"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Improved Pulverize"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Improves Taurens\u0027 Pulverize by increasing its damage dealt to \u003CAwar,DataB2\u003E and maximum damage radius to \u003CAwar,DataD2\u003E."
     }

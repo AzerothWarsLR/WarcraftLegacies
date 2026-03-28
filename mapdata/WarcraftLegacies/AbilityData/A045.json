@@ -1,6 +1,6 @@
 {
-  "OldId": 1633829697,
-  "NewId": 892612673,
+  "OldId": "ACba",
+  "NewId": "A045",
   "Unk": [
     0
   ],
@@ -8,18 +8,18 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828531016,
+      "Id": "Hab1",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(arcane ward)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives additional mana regeneration to nearby friendly units of 3 mana per second."
     }

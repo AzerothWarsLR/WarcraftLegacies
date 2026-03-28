@@ -1,6 +1,6 @@
 {
-  "OldId": 1667845697,
-  "NewId": 1196044353,
+  "OldId": "ANic",
+  "NewId": "A0JG",
   "Unk": [
     0
   ],
@@ -8,75 +8,75 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828598606,
+      "Id": "Nic1",
       "Type": 2,
       "Value": 1.5
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845375822,
+      "Id": "Nic2",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862153038,
+      "Id": "Nic3",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 878930254,
+      "Id": "Nic4",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895707470,
+      "Id": "Nic5",
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Dagran\u0027s Fire Elementals)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "E"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Incinerate"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0JG,DataB1\u003E damage to all nearby hostile units."
     }

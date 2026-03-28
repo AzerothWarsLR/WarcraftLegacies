@@ -1,74 +1,74 @@
 {
-  "OldId": 863200117,
+  "OldId": "ucs3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0GY,A0KI,A0KH"
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 22
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 40
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 60
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1150
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 75
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R008,Rhar,Rhme,Rguv"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 100
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Red - Anub\u0027Arak)(Level 3)"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 100
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.4
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dire Carrion Beetle"
     }

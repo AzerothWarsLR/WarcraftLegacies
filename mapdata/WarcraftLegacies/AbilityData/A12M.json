@@ -1,6 +1,6 @@
 {
-  "OldId": 1633829697,
-  "NewId": 1295135041,
+  "OldId": "ACba",
+  "NewId": "A12M",
   "Unk": [
     0
   ],
@@ -8,34 +8,34 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828531016,
+      "Id": "Hab1",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,ground,invulnerable,player,self,vulnerable"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(well of eternity)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives additional mana regeneration to nearby friendly units of 100 mana per second."
     }

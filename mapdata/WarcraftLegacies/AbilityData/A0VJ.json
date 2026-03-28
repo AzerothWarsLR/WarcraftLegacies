@@ -1,6 +1,6 @@
 {
-  "OldId": 897075521,
-  "NewId": 1247162433,
+  "OldId": "AIx5",
+  "NewId": "A0VJ",
   "Unk": [
     0
   ],
@@ -8,49 +8,49 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1768382793,
+      "Id": "Iagi",
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 1953392969,
+      "Id": "Iint",
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 1920234313,
+      "Id": "Istr",
       "Value": 3
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(\u002B3 All Stats)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Titanforged"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Titanforged"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Additionally increases Strength, Agility, and Intelligence by 3."
     }

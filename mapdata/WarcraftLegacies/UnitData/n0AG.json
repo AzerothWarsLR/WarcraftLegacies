@@ -1,66 +1,66 @@
 {
-  "OldId": 1684824686,
-  "NewId": 1195454574,
+  "OldId": "nbld",
+  "NewId": "n0AG",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 24
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 50
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 2375
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.35
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Lord Barov"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Units\\Undead\\HeroDeathknight\\HeroDeathknight.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 190
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 170
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit with Shadowmeld and Devotion Aura. Can cast Divine Shield. "
     },
     {
-      "Id": 1935827317,
+      "Id": "uabs",
       "Type": 3,
       "Value": ""
     }

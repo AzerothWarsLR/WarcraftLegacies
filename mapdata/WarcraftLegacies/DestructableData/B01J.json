@@ -1,22 +1,22 @@
 {
-  "OldId": 858805324,
-  "NewId": 1244737602,
+  "OldId": "LT03",
+  "NewId": "B01J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Short Stone Bridge (Vertical)"
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": -1
     }

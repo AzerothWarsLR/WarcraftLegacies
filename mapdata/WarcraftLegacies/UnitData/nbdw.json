@@ -1,16 +1,16 @@
 {
-  "OldId": 2003067502,
+  "OldId": "nbdw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Dragonspawn Warrior"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit with Evasion. "
     }

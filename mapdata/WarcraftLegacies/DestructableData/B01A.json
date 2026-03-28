@@ -1,17 +1,17 @@
 {
-  "OldId": 895964228,
-  "NewId": 1093742658,
+  "OldId": "DTg5",
+  "NewId": "B01A",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 9001
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Greymane\u0027s Gate"
     }

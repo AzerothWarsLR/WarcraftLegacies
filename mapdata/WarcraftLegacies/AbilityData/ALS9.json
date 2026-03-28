@@ -1,409 +1,409 @@
 {
-  "OldId": 1635021633,
-  "NewId": 961760321,
+  "OldId": "Asta",
+  "NewId": "ALS9",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BLSN"
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828470355,
+      "Id": "Sta1",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845247571,
+      "Id": "Sta2",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862024787,
+      "Id": "Sta3",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 878802003,
+      "Id": "Sta4",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,neutral,enemy"
     },
     {
       "Level": 2,
-      "Id": 1969321043,
+      "Id": "Stau",
       "Type": 3,
       "Value": "tlS0"
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 1
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 4
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828470355,
+      "Id": "Sta1",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 828470355,
+      "Id": "Sta1",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845247571,
+      "Id": "Sta2",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845247571,
+      "Id": "Sta2",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 845247571,
+      "Id": "Sta2",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 895579219,
+      "Id": "Sta5",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 3,
       "Pointer": 5,
-      "Id": 895579219,
+      "Id": "Sta5",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 4,
       "Pointer": 5,
-      "Id": 895579219,
+      "Id": "Sta5",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862024787,
+      "Id": "Sta3",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 862024787,
+      "Id": "Sta3",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 4,
       "Pointer": 3,
-      "Id": 862024787,
+      "Id": "Sta3",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 3,
       "Pointer": 4,
-      "Id": 878802003,
+      "Id": "Sta4",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 4,
       "Pointer": 4,
-      "Id": 878802003,
+      "Id": "Sta4",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895579219,
+      "Id": "Sta5",
       "Type": 2,
       "Value": 0.25
     },
     {
       "Level": 4,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 4,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,neutral,enemy"
     },
     {
       "Level": 4,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,neutral,enemy"
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BLSN"
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BLSN"
     },
     {
       "Level": 1,
-      "Id": 1969321043,
+      "Id": "Stau",
       "Type": 3,
       "Value": "tlS0"
     },
     {
       "Level": 3,
-      "Id": 1969321043,
+      "Id": "Stau",
       "Type": 3,
       "Value": "tlS0"
     },
     {
       "Level": 4,
-      "Id": 1969321043,
+      "Id": "Stau",
       "Type": 3,
       "Value": "tlS0"
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BLSN"
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 1.5
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 4,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2.5
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 878802003,
+      "Id": "Sta4",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828470355,
+      "Id": "Sta1",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 1
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(skeram)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD1\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA1\u003E second activation delay."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD2\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA2\u003E second activation delay."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Ice Trap"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ice Trap - [|cffffcc00Level 1|r]"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other Ice Traps in its area of effect. |nThe trap lasts forever.|n|n|cffffcc00Level 1|r - Stuns for \u003CALS9,DataD1\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). \u003CALS9,DataA1\u003E seconds activation delay.|n|cffffcc00Level 2|r - Stuns for \u003CALS9,DataD2\u003E seconds (\u003CALS9,HeroDur2,.\u003E for heroes). \u003CALS9,DataA2\u003E seconds activation delay.|n|cffffcc00Level 3|r - Stuns for \u003CALS9,DataD3\u003E seconds (\u003CALS9,HeroDur3,.\u003E for heroes). \u003CALS9,DataA3\u003E seconds activation delay.|n|cffffcc00Level 4|r - Stuns for \u003CALS9,DataD4\u003E seconds (\u003CALS9,HeroDur4,.\u003E for heroes). \u003CALS9,DataA4\u003E seconds activation delay."
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Ice Trap  - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ice Trap - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ice Trap - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Ice Trap - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD3\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA3\u003E second activation delay."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD4\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA4\u003E second activation delay."
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
     }

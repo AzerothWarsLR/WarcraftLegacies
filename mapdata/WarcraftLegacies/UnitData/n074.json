@@ -1,77 +1,77 @@
 {
-  "OldId": 1903652462,
-  "NewId": 876032110,
+  "OldId": "nnwq",
+  "NewId": "n074",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 39
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 5
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 5
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 35
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1500
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 300
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R008,Rhme,Rhar,Rugf,R00Q,R00P"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 150
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 135
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.75
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Queen Nezar\u0027Azret"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit with Unholy Aura. Casts Raise Dead and Carrion Swarm. "
     }

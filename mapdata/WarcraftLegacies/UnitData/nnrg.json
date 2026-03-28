@@ -1,179 +1,179 @@
 {
-  "OldId": 1735552622,
+  "OldId": "nnrg",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0GK,A0CH,A0M5,Aien,ACcv,ACcb,ACsk"
     },
     {
-      "Id": 1949458805,
+      "Id": "ua2t",
       "Type": 3,
       "Value": "pierce"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1664246133,
+      "Id": "ua2c",
       "Type": 2,
       "Value": 1.7
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "hero"
     },
     {
-      "Id": 1681023349,
+      "Id": "ua2d",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 87
     },
     {
-      "Id": 1647468917,
+      "Id": "ua2b",
       "Value": 20
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 75
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 50
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1555
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 15
     },
     {
-      "Id": 1915904373,
+      "Id": "ua2r",
       "Value": 128
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 40
     },
     {
-      "Id": 845312629,
+      "Id": "urb2",
       "Type": 2,
       "Value": 250
     },
     {
-      "Id": 1932681589,
+      "Id": "ua2s",
       "Value": 7
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 240
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,structure,ward"
     },
     {
-      "Id": 1731354997,
+      "Id": "ua2g",
       "Type": 3,
       "Value": "air,ground,mechanical,structure"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1999790453,
+      "Id": "ua2w",
       "Type": 3,
       "Value": "normal"
     },
     {
-      "Id": 846422901,
+      "Id": "ucs2",
       "Type": 3,
       "Value": "MetalHeavyChop"
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "n055"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Illidari)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.2
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train - Royal Guard"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Powerful defenders of the sea."
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Royal Guard"
     },
     {
-      "Id": 1935827317,
+      "Id": "uabs",
       "Type": 3,
       "Value": "ACcv,ACcb,ACwe,ACsk"
     }

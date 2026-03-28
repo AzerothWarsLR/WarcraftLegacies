@@ -1,42 +1,42 @@
 {
-  "OldId": 1935889226,
-  "NewId": 1462775876,
+  "OldId": "JScs",
+  "NewId": "D00W",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 0.7
     },
     {
-      "Id": 1920493156,
+      "Id": "dfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Broken semicircle"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "*"
     }

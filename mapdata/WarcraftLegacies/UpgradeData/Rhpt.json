@@ -1,102 +1,102 @@
 {
-  "OldId": 1953523794,
+  "OldId": "Rhpt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": 0.35
     },
     {
-      "Id": 878797415,
+      "Id": "gba4",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 846163303,
+      "Id": "gmo2",
       "Type": 2,
       "Value": 0.35
     },
     {
-      "Id": 879717735,
+      "Id": "gmo4",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": "h03T"
     },
     {
-      "Id": 1835627623,
+      "Id": "gtim",
       "Value": 30
     },
     {
-      "Id": 1835887719,
+      "Id": "glmm",
       "Value": 0
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 1835820903,
+      "Id": "gglm",
       "Value": 25
     },
     {
-      "Id": 879125863,
+      "Id": "gef4",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 862940519,
+      "Id": "gmo3",
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 862348647,
+      "Id": "gef3",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Quel\u0027Thalas)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Level": 2,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Increases Priests\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Increases Priests\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Inner Fire."
     }

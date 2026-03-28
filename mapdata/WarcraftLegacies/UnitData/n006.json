@@ -1,271 +1,271 @@
 {
-  "OldId": 845242990,
-  "NewId": 909127790,
+  "OldId": "nba2",
+  "NewId": "n006",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A12X,A12Q,A030,A034,ACsk"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 7
     },
     {
-      "Id": 1681023349,
+      "Id": "ua2d",
       "Value": 2
     },
     {
-      "Id": 1647468917,
+      "Id": "ua2b",
       "Value": 75
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 100
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 110
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 829781877,
+      "Id": "uwu1",
       "Value": 0
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "debris,ground,structure"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Reuv,Rhme,Rhar,Rguv"
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 2
     },
     {
-      "Id": 846422901,
+      "Id": "ucs2",
       "Type": 3,
       "Value": "WoodHeavyBash"
     },
     {
-      "Id": 1853190773,
+      "Id": "urun",
       "Type": 1,
       "Value": 100
     },
     {
-      "Id": 1818326901,
+      "Id": "uwal",
       "Type": 1,
       "Value": 100
     },
     {
-      "Id": 1836344437,
+      "Id": "udtm",
       "Type": 2,
       "Value": 6
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 0.81
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.59
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 235
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "hero"
     },
     {
-      "Id": 2050122101,
+      "Id": "ua2z",
       "Value": 10000
     },
     {
-      "Id": 845704565,
+      "Id": "umh2",
       "Value": 1
     },
     {
-      "Id": 846422645,
+      "Id": "ubs2",
       "Type": 2,
       "Value": 0.81
     },
     {
-      "Id": 846226549,
+      "Id": "udp2",
       "Type": 2,
       "Value": 0.59
     },
     {
-      "Id": 1999790453,
+      "Id": "ua2w",
       "Type": 3,
       "Value": "missile"
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 0
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R09I"
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 30
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 15
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 1500
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 1500
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 800
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A12Q"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCorruptedAncientOfWar.blp"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Sunfury)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "buildings\\demon\\CorruptedAncientofWar\\CorruptedAncientofWar.mdl"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.8
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ancient of the Arcane"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Ancient of the Arcane"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Ancient disformed by arcane transformation."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "TreeOfLife"
     },
     {
-      "Id": 1885430133,
+      "Id": "uaap",
       "Type": 3,
       "Value": "large"
     },
     {
-      "Id": 1701601909,
+      "Id": "uble",
       "Type": 1,
       "Value": 0.4
     },
     {
-      "Id": 1886940533,
+      "Id": "umxp",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1920494965,
+      "Id": "umxr",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 2053990773,
+      "Id": "uimz",
       "Type": 2,
       "Value": 120
     },
     {
-      "Id": 1832018293,
+      "Id": "ua2m",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 100
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 200
     }
   ]

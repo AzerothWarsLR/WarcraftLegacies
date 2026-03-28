@@ -1,46 +1,46 @@
 {
-  "OldId": 942691161,
-  "NewId": 1261645892,
+  "OldId": "YS08",
+  "NewId": "D03K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Doodads\\LordaeronSummer\\Terrain\\Gate\\Gate.mdl"
     },
     {
-      "Id": 1920493156,
+      "Id": "dfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Gilneas Tower Bridge"
     },
     {
-      "Id": 1918989924,
+      "Id": "dvar",
       "Value": 2
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": "none"
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "*"
     }

@@ -1,28 +1,28 @@
 {
-  "OldId": 1684955507,
+  "OldId": "sand",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 40
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1936024681,
+      "Id": "ides",
       "Type": 3,
       "Value": "Animates the dead to fight for you, for a mere 9 seconds. These summoned by this scroll shall enjoy an invulnerable, if brief, second life."
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "C"
     }

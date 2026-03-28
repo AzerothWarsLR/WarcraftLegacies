@@ -1,36 +1,36 @@
 {
-  "OldId": 1768967745,
-  "NewId": 876687425,
+  "OldId": "ANpi",
+  "NewId": "A0A4",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829253957,
+      "Id": "Eim1",
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "nonancient,notself,structure"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(500 range)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Anti Portal Blocking"
     }

@@ -1,12 +1,12 @@
 {
-  "OldId": 1952735832,
-  "NewId": 1160786008,
+  "OldId": "Xbdt",
+  "NewId": "X00E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Reveal (Farseer)"
     }

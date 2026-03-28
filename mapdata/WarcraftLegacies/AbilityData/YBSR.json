@@ -1,99 +1,99 @@
 {
-  "OldId": 1718832961,
-  "NewId": 1381188185,
+  "OldId": "AOsf",
+  "NewId": "YBSR",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 120
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 1,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "u00T"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 1
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Summon Ramstein"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "D"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Summon Ramstein"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons Ramstein the Gorger, a mighty abomination.|nHas Frenzy, Cleaving Attack, Aura of Dread, and Bash.|nLasts 60 seconds."
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp"
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "spell,slam"
     },
     {
-      "Id": 1952543585,
+      "Id": "asat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Baron Rivendare)"
     }

@@ -1,6 +1,6 @@
 {
-  "OldId": 1717920833,
-  "NewId": 910831681,
+  "OldId": "Adef",
+  "NewId": "A0J6",
   "Unk": [
     0
   ],
@@ -8,102 +8,102 @@
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862348612,
+      "Id": "Def3",
       "Type": 2,
       "Value": 0.6
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895903044,
+      "Id": "Def5",
       "Type": 2,
       "Value": 0.65
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 912680260,
+      "Id": "Def6",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 8,
-      "Id": 946234692,
+      "Id": "Def8",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828794180,
+      "Id": "Def1",
       "Type": 2,
       "Value": 0.65
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Stormwind - Stormwind Champion)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Safeguard"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Safeguard"
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Safeguard"
     },
     {
       "Level": 1,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "Deactivate to move at normal speed, but take regular damage."
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Activate to take only \u003CA0J6,DataA1,%\u003E% damage from incoming spells, Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by \u003CA0J6,DataC1,%\u003E%."
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLionShieldup.blp"
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLionShieldDown.blp"
     }

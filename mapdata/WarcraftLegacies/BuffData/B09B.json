@@ -1,22 +1,22 @@
 {
-  "OldId": 1767993922,
-  "NewId": 1111044162,
+  "OldId": "Brai",
+  "NewId": "B09B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Natural Burial"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Kul\u0027tiras - Thornspeaker)"
     }

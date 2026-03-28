@@ -1,102 +1,102 @@
 {
-  "OldId": 1869374017,
-  "NewId": 1346777153,
+  "OldId": "Ablo",
+  "NewId": "A0FP",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B09G"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 5
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829385794,
+      "Id": "Blo1",
       "Type": 2,
       "Value": 0.2
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846163010,
+      "Id": "Blo2",
       "Type": 2,
       "Value": 0.2
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862940226,
+      "Id": "Blo3",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "YB01"
     },
     {
-      "Id": 1634824801,
+      "Id": "arqa",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 800
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCDruidSpeed.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Brown - Keeper of the Grove)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Haste"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Haste"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases a friendly unit\u0027s attack speed by 20% and movement speed by 20%. |nLasts 60 seconds."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCDruidSpeed.blp"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "E"
     }

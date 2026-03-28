@@ -1,19 +1,19 @@
 {
-  "OldId": 1751347026,
-  "NewId": 1513435218,
+  "OldId": "Roch",
+  "NewId": "R05Z",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Fel Horde)"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Quest Completed: Those Who Came Before"
     }

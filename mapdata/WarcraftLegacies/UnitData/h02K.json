@@ -1,157 +1,157 @@
 {
-  "OldId": 1970235496,
-  "NewId": 1261580392,
+  "OldId": "hhou",
+  "NewId": "h02K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0O0"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 0
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 15
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 5
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 50
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 25
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 5000
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\Gate1Path.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "_"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "unknown"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 30
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,sapper"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rosp,Renb,R064,R013,Rhac"
     },
     {
-      "Id": 2037671029,
+      "Id": "udty",
       "Type": 3,
       "Value": "normal"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 100
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Gate - Closed)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "Doodads\\LordaeronSummer\\Terrain\\IronGate\\IronGate.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 100
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Greymane\u0027s Gate"
     },
     {
-      "Id": 1919705973,
+      "Id": "uclr",
       "Value": 100
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Horizontal Wooden Gate"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Repairs the broken gate."
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1920494965,
+      "Id": "umxr",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1886940533,
+      "Id": "umxp",
       "Type": 1,
       "Value": 0
     }

@@ -1,55 +1,55 @@
 {
-  "OldId": 1952933486,
-  "NewId": 943272046,
+  "OldId": "nfgt",
+  "NewId": "n098",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 250
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 100
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "NzothTentacle"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\NzothTentacle.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "A gnarly tentacle from the depths. "
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Hideous Appendages - N\u0027zoth)"
     }

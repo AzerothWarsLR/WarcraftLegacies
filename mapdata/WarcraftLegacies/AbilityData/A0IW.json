@@ -1,57 +1,57 @@
 {
-  "OldId": 1869431617,
-  "NewId": 1464414273,
+  "OldId": "ACmo",
+  "NewId": "A0IW",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B02O"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 125
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828797765,
+      "Id": "Esf1",
       "Type": 2,
       "Value": 30
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Stormwind Conjurer)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls down a storm of lightning to strike enemy units for 30 damage in a small target area. |nLasts 15 seconds."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Monsoon"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderStorm.blp"
     }

@@ -1,64 +1,64 @@
 {
-  "OldId": 1818641217,
-  "NewId": 1380336217,
+  "OldId": "ACfl",
+  "NewId": "YBFR",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829186895,
+      "Id": "Ocl1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845964111,
+      "Id": "Ocl2",
       "Value": 5
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,neutral,organic"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sea Witch)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to \u003CYBFR,DataB1\u003E enemy units for \u003CYBFR,DataA1\u003E damage."
     }

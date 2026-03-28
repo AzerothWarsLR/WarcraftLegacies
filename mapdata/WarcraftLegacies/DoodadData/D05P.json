@@ -1,42 +1,42 @@
 {
-  "OldId": 1818316623,
-  "NewId": 1345663044,
+  "OldId": "OOal",
+  "NewId": "D05P",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936024676,
+      "Id": "ddes",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Units\\Creeps\\ForgottenOne\\ForgottenOne.mdl"
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Maw of Madness"
     },
     {
-      "Id": 1818588004,
+      "Id": "dsel",
       "Type": 2,
       "Value": 100
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "X"
     },
     {
-      "Id": 1885433188,
+      "Id": "dmap",
       "Type": 2,
       "Value": 15
     },
     {
-      "Id": 1918987620,
+      "Id": "dmar",
       "Type": 2,
       "Value": 15
     }

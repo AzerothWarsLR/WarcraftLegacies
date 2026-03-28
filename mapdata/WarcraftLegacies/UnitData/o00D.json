@@ -1,173 +1,173 @@
 {
-  "OldId": 1684829039,
-  "NewId": 1144008815,
+  "OldId": "osld",
+  "NewId": "o00D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0YA,A0RU"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 30
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 6
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 15
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 15
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 950
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "hover"
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 19
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "u021"
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "RL11,RZ02,RS01"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "o001,n05V,n060"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rgfo"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunShop.blp"
     },
     {
-      "Id": 1651270517,
+      "Id": "uclb",
       "Value": 150
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": "ShadowTombOfRelics"
     },
     {
-      "Id": 1819501173,
+      "Id": "ubsl",
       "Type": 3,
       "Value": "UndeadBuildingConstructionLoop"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 1667462261,
+      "Id": "utcc",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Cthun Magic)"
     },
     {
-      "Id": 1953523061,
+      "Id": "uept",
       "Value": 0
     },
     {
-      "Id": 1685218677,
+      "Id": "uerd",
       "Type": 1,
       "Value": 0
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "CthunShop.mdl"
     },
     {
-      "Id": 1735156597,
+      "Id": "uclg",
       "Value": 221
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Pyramid"
     },
     {
-      "Id": 1634759541,
+      "Id": "uspa",
       "Type": 3,
       "Value": "Objects\\Spawnmodels\\Undead\\UCancelDeath\\UCancelDeath.mdl"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Pyramid"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Spellcaster production building. "
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "TempleOfTheDamned"
     }

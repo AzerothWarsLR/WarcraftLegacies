@@ -1,45 +1,45 @@
 {
-  "OldId": 1734636609,
-  "NewId": 1412510017,
+  "OldId": "Atdg",
+  "NewId": "A11T",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "enemies,ground"
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845636692,
+      "Id": "Tdg2",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828859476,
+      "Id": "Tdg1",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862413908,
+      "Id": "Tdg3",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(toxic cloud 1)"
     }

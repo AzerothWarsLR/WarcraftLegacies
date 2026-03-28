@@ -1,63 +1,63 @@
 {
-  "OldId": 1651795566,
+  "OldId": "nftb",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACev,Absk"
     },
     {
-      "Id": 1701606261,
+      "Id": "usle",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 23
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 3
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 32
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 835
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 2.1
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 7
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Rabid axe-thrower. "
     }

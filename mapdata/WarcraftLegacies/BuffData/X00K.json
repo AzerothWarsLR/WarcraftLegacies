@@ -1,27 +1,27 @@
 {
-  "OldId": 2053261400,
-  "NewId": 1261449304,
+  "OldId": "XHbz",
+  "NewId": "X00K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Dark Energy (effect)"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl"
     },
     {
-      "Id": 1936090470,
+      "Id": "fefs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818649958,
+      "Id": "fefl",
       "Type": 3,
       "Value": ""
     }

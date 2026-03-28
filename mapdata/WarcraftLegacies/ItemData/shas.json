@@ -1,28 +1,28 @@
 {
-  "OldId": 1935763571,
+  "OldId": "shas",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 30
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 3
     },
     {
-      "Id": 1869902697,
+      "Id": "isto",
       "Value": 2
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     }
   ]

@@ -1,27 +1,27 @@
 {
-  "OldId": 1987212142,
+  "OldId": "nsrv",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 244
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1000
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit. "
     }

@@ -1,20 +1,20 @@
 {
-  "OldId": 845244014,
-  "NewId": 1127362670,
+  "OldId": "nfa2",
+  "NewId": "n02C",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 3
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 950
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": " (Level 1)"
     }

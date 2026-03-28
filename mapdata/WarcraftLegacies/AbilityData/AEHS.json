@@ -1,74 +1,74 @@
 {
-  "OldId": 1936215617,
-  "NewId": 1397245249,
+  "OldId": "ANhs",
+  "NewId": "AEHS",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "RELB"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879977294,
+      "Id": "Ncs4",
       "Type": 2,
       "Value": 650
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 12
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Djinn)"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Healing Spray"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Sprays \u003CAEHS,DataF1\u003E waves of healing mist; each wave heals \u003CAEHS,DataA1\u003E damage to all friendly units in an area."
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     }
   ]

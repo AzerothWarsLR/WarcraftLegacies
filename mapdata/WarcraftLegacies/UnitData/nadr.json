@@ -1,77 +1,77 @@
 {
-  "OldId": 1919181166,
+  "OldId": "nadr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 48
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1800
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 800
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 800
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 0
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 0
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 0
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.6
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Saragosa"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged flying unit that deals cold damage and slows enemy units. Can Devour opponents and is immune to magic. "
     }

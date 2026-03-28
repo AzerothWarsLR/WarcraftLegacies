@@ -1,41 +1,41 @@
 {
-  "OldId": 1953395822,
+  "OldId": "ntnt",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 1
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 8
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 375
     },
     {
-      "Id": 1852404597,
+      "Id": "usin",
       "Value": 400
     },
     {
-      "Id": 1684632437,
+      "Id": "usid",
       "Value": 800
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rosp"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

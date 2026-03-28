@@ -1,6 +1,6 @@
 {
-  "OldId": 1920295489,
-  "NewId": 962146369,
+  "OldId": "Abur",
+  "NewId": "A0Y9",
   "Unk": [
     0
   ],
@@ -8,75 +8,75 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828730693,
+      "Id": "Eme1",
       "Type": 3,
       "Value": "u019"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "RDBD"
     },
     {
       "Level": 1,
-      "Id": 1969581381,
+      "Id": "Emeu",
       "Type": 3,
       "Value": "uCBD"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(C\u0027thun Scarab)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Deep Burrow"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Drone digs deep into the ground, becoming invisible and allowing it to move through water, but preventing it from attacking."
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 1
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Resurface"
     },
     {
       "Level": 1,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "The Drone pops out of the ground and becomes visible again."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Deep Burrow"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWormBurrow.blp"
     }

@@ -1,72 +1,72 @@
 {
-  "OldId": 2019710028,
-  "NewId": 842149954,
+  "OldId": "LTbx",
+  "NewId": "B022",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1918989410,
+      "Id": "btar",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836212578,
+      "Id": "barm",
       "Type": 3,
       "Value": "Stone"
     },
     {
-      "Id": 1818326882,
+      "Id": "bwal",
       "Value": 1
     },
     {
-      "Id": 1702061922,
+      "Id": "bgse",
       "Value": 0
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Ny\u0027alothan Stairs"
     },
     {
-      "Id": 1919120994,
+      "Id": "bvcr",
       "Value": 60
     },
     {
-      "Id": 1734571618,
+      "Id": "bvcg",
       "Value": 50
     },
     {
-      "Id": 1650685538,
+      "Id": "bvcb",
       "Value": 70
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0.mdl"
     },
     {
-      "Id": 1836083042,
+      "Id": "bgpm",
       "Type": 3,
       "Value": "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0.mdl"
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     }

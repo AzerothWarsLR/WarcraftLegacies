@@ -1,49 +1,49 @@
 {
-  "OldId": 2020110440,
-  "NewId": 926036072,
+  "OldId": "hphx",
+  "NewId": "h027",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0EM,A0EL"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 34
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 550
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": -30
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 7
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "air,debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Blood Mage Summon)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.7
     }

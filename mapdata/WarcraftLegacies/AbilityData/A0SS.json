@@ -1,6 +1,6 @@
 {
-  "OldId": 1751204673,
-  "NewId": 1397960769,
+  "OldId": "ACah",
+  "NewId": "A0SS",
   "Unk": [
     0
   ],
@@ -8,40 +8,40 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828924229,
+      "Id": "Eah1",
       "Type": 2,
       "Value": 0.3
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B032"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Retribution Aura"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASRetriAura.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Scarlet)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "An aura that gives nearby friendly units a damage shield, which deals 30% of an enemy unit\u0027s attack damage back to it."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Retribution Aura"
     }

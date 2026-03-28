@@ -1,22 +1,22 @@
 {
-  "OldId": 1668565058,
-  "NewId": 1094004802,
+  "OldId": "BHtc",
+  "NewId": "B05A",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "other"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Thunder Clap debuff"
     },
     {
-      "Id": 1667331174,
+      "Id": "ftac",
       "Value": 1
     }
   ]

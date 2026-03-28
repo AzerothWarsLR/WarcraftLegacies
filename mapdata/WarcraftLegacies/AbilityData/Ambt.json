@@ -1,5 +1,5 @@
 {
-  "OldId": 1952607553,
+  "OldId": "Ambt",
   "Unk": [
     0
   ],
@@ -7,35 +7,35 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846488141,
+      "Id": "Mbt2",
       "Type": 2,
       "Value": 0.75
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829710925,
+      "Id": "Mbt1",
       "Type": 2,
       "Value": 2.2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Brown - Moon Well)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Replenish the life and mana of a target friendly unit. |n|nRestores 0.75 health and 2.2 mana to the unit for every point of mana spent."
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "Q"
     }

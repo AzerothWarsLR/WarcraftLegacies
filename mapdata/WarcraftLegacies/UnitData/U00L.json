@@ -1,179 +1,179 @@
 {
-  "OldId": 1818321493,
-  "NewId": 1278226517,
+  "OldId": "Ubal",
+  "NewId": "U00L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0FH,A07B,AInv,VP02"
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 2.6
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 13
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 16
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 15
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "VP07,TPY1,VP04,A04A,Aamk"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 200
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 2.5
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 15
     },
     {
-      "Id": 1953654901,
+      "Id": "uhrt",
       "Type": 3,
       "Value": "always"
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 2.4
     },
     {
-      "Id": 1868788853,
+      "Id": "utco",
       "Value": 5
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R04B,R054,R01Y"
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "R055"
     },
     {
-      "Id": 1634562933,
+      "Id": "usma",
       "Value": 1
     },
     {
-      "Id": 1735553909,
+      "Id": "usrg",
       "Value": 0
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 100
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "AGI"
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 32
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 26
     },
     {
-      "Id": 1953393013,
+      "Id": "uint",
       "Value": 15
     },
     {
-      "Id": 1935827829,
+      "Id": "ucbs",
       "Type": 2,
       "Value": 0.53
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp"
     },
     {
-      "Id": 1885430133,
+      "Id": "uaap",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Legion)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 1.01
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Envoy of Archimonde"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Anetheron"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 1.5
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Cunning hero, adept at dealing magic damage and supporting armies."
     },
     {
-      "Id": 1953980789,
+      "Id": "uawt",
       "Type": 3,
       "Value": "Revive Envoy of Archimonde"
     },
     {
-      "Id": 1919972469,
+      "Id": "utpr",
       "Type": 3,
       "Value": "Revive Envoy of Archimonde"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Summon Anetheron"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     }
   ]

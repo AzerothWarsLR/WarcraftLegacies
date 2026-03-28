@@ -1,32 +1,32 @@
 {
-  "OldId": 1701659970,
-  "NewId": 1295396930,
+  "OldId": "BEme",
+  "NewId": "B06M",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAvengingWatcher.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Ascendance"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "Transformed into an an Avatar of Vengeance."
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Units\\NightElf\\Owl\\Owl.mdl"
     },
     {
-      "Id": 1952543590,
+      "Id": "fsat",
       "Type": 3,
       "Value": "Units\\NightElf\\Owl\\Owl.mdl"
     }

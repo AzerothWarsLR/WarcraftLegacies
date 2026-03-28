@@ -1,17 +1,17 @@
 {
-  "OldId": 1668306009,
-  "NewId": 959459394,
+  "OldId": "YTpc",
+  "NewId": "B009",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Big path blocker"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": "PathTextures\\12x12Default.tga"
     }

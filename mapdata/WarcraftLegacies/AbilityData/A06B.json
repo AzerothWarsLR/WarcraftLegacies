@@ -1,6 +1,6 @@
 {
-  "OldId": 828655937,
-  "NewId": 1110847553,
+  "OldId": "AId1",
+  "NewId": "A06B",
   "Unk": [
     0
   ],
@@ -8,40 +8,40 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1717920841,
+      "Id": "Idef",
       "Value": 0
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Fel Horde-Voidcaller)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Voidcaller Wings"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "war3mapImported\\VoidWings.mdx"
     },
     {
-      "Id": 811693153,
+      "Id": "ata0",
       "Type": 3,
       "Value": "chest"
     },
     {
-      "Id": 1667331169,
+      "Id": "atac",
       "Value": 1
     }
   ]

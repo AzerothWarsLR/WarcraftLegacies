@@ -1,115 +1,115 @@
 {
-  "OldId": 1768844136,
-  "NewId": 1346580584,
+  "OldId": "hkni",
+  "NewId": "h0CP",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Ahsb,A02Y,A020,Aihn"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 4
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 29
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 23
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 26
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1135
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 5
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 270
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R01N,R00B,Rhar,Rhme,Rhan,Rhpm,Rguv"
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 7
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 6
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Lordaeron)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Powerful mounted warrior."
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Gallant Knight"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Gallant Knight"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "LordearonKnight.mdl"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKnightReClassic.blp"
     }

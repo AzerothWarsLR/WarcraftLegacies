@@ -1,43 +1,43 @@
 {
-  "OldId": 813127500,
-  "NewId": 1278488644,
+  "OldId": "LWw0",
+  "NewId": "D04L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 0.8
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Fel Water"
     },
     {
-      "Id": 1684960100,
+      "Id": "dsnd",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\UrugarthVenom.mdl"
     },
     {
       "Variation": 1,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 0
     },
     {
       "Variation": 1,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 200
     }
   ]

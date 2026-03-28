@@ -1,6 +1,6 @@
 {
-  "OldId": 845562689,
-  "NewId": 1430335553,
+  "OldId": "ACf2",
+  "NewId": "A0AU",
   "Unk": [
     0
   ],
@@ -8,37 +8,37 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845243989,
+      "Id": "Ufa2",
       "Type": 2,
       "Value": 7
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Teal - Eredar Sorcerer. Elemental Lord)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds 7 armor and slows melee units that attack it for \u003CACfa,Dur1\u003E seconds. |nLasts \u003CACfa,DataA1\u003E seconds."
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 0
     }
   ]

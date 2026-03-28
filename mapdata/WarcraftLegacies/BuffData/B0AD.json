@@ -1,22 +1,22 @@
 {
-  "OldId": 1650673986,
-  "NewId": 1145122882,
+  "OldId": "BIcb",
+  "NewId": "B0AD",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Searing Bite"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit was hit by a Searing Bite; its armor is temporarily reduced."
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBreatheFire.blp"
     }

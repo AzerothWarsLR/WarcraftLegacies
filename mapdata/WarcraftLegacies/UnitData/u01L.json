@@ -1,27 +1,27 @@
 {
-  "OldId": 1668246645,
-  "NewId": 1278292085,
+  "OldId": "uloc",
+  "NewId": "u01L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.5
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Ancestral Spirits"
     }

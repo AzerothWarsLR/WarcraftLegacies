@@ -1,36 +1,36 @@
 {
-  "OldId": 1935823948,
-  "NewId": 1378889794,
+  "OldId": "LTbs",
+  "NewId": "B00R",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1702061922,
+      "Id": "bgse",
       "Value": 0
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "Abilities\\Spells\\Orc\\SpikeBarrier\\SpikeBarrier.mdl"
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Spikes"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": ""
     }

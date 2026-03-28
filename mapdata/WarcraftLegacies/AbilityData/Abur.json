@@ -1,36 +1,36 @@
 {
-  "OldId": 1920295489,
+  "OldId": "Abur",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Scourge-Crypt Fiend)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "R"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "R"
     },
     {
       "Level": 1,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Resurface"
     }

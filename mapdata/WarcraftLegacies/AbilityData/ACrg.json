@@ -1,51 +1,51 @@
 {
-  "OldId": 1735541569,
+  "OldId": "ACrg",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 120
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 175
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 830104136,
+      "Id": "Hbz1",
       "Value": 7
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863658568,
+      "Id": "Hbz3",
       "Value": 7
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 913990216,
+      "Id": "Hbz6",
       "Type": 2,
       "Value": 600
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Spellbook)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     }

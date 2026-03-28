@@ -1,11 +1,11 @@
 {
-  "OldId": 1802266995,
+  "OldId": "silk",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Miscellaneous"
     }

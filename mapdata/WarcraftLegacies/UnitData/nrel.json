@@ -1,53 +1,53 @@
 {
-  "OldId": 1818587758,
+  "OldId": "nrel",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A00S"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 330
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 100
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 100
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R01N,Rhme,Rhar"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": "foot"
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Stormwind)"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light ranged unit. "
     }

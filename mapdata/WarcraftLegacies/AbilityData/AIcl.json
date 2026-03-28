@@ -1,43 +1,43 @@
 {
-  "OldId": 1818446145,
+  "OldId": "AIcl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845964111,
+      "Id": "Ocl2",
       "Value": 16
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862741327,
+      "Id": "Ocl3",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground,neutral,organic"
     }

@@ -1,6 +1,6 @@
 {
-  "OldId": 828655937,
-  "NewId": 1279668289,
+  "OldId": "AId1",
+  "NewId": "A0FL",
   "Unk": [
     0
   ],
@@ -8,31 +8,31 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 1717920841,
+      "Id": "Idef",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Attachment)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Mal\u0027ganis Orb"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Items\\OrbSlow\\OrbSlow.mdl"
     },
     {
-      "Id": 811693153,
+      "Id": "ata0",
       "Type": 3,
       "Value": "hand,right"
     },
     {
-      "Id": 1667331169,
+      "Id": "atac",
       "Value": 1
     }
   ]

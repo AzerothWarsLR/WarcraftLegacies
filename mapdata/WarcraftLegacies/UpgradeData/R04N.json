@@ -1,13 +1,13 @@
 {
-  "OldId": 1751347026,
-  "NewId": 1312043090,
+  "OldId": "Roch",
+  "NewId": "R04N",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Turn 3 has passed"
     }

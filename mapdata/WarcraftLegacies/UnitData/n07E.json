@@ -1,73 +1,73 @@
 {
-  "OldId": 1952937838,
-  "NewId": 1161244782,
+  "OldId": "nwgt",
+  "NewId": "n07E",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0A4,Awrp,Avul"
     },
     {
-      "Id": 1836017781,
+      "Id": "uhom",
       "Value": 1
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 1000
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 1000
     },
     {
-      "Id": 1835167349,
+      "Id": "unbm",
       "Value": 0
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNPortal.blp"
     },
     {
-      "Id": 1651012469,
+      "Id": "ushb",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Quelthalas - Nazjatar)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Portal"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     }

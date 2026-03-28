@@ -1,66 +1,66 @@
 {
-  "OldId": 2003067246,
+  "OldId": "nadw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rguv,R00N,Rhme,Rhar"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 980
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 32
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0LI,A0LS,Afrc,A07C"
     },
     {
-      "Id": 1647468917,
+      "Id": "ua2b",
       "Value": 30
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 45
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.7
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Tiny ranged flying unit that deals cold damage and slows enemy units. "
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.8
     }

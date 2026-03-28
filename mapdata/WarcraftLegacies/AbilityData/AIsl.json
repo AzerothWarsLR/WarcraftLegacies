@@ -1,37 +1,37 @@
 {
-  "OldId": 1819494721,
+  "OldId": "AIsl",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829190761,
+      "Id": "irl1",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 30
     }

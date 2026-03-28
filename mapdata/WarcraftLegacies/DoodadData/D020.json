@@ -1,70 +1,70 @@
 {
-  "OldId": 1802719041,
-  "NewId": 808595524,
+  "OldId": "AOsk",
+  "NewId": "D020",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_AshenvaleLights.mdl"
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Ashenvale Lights"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1952539492,
+      "Id": "dcat",
       "Type": 3,
       "Value": "Z"
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "A,*"
     },
     {
-      "Id": 1751348580,
+      "Id": "duch",
       "Value": 1
     },
     {
-      "Id": 1953261156,
+      "Id": "dflt",
       "Value": 1
     },
     {
-      "Id": 1918989924,
+      "Id": "dvar",
       "Value": 3
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 25
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 0
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 0
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 0
     }
   ]

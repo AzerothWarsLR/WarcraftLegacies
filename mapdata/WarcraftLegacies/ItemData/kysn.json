@@ -1,39 +1,39 @@
 {
-  "OldId": 1853061483,
+  "OldId": "kysn",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 0
     },
     {
-      "Id": 1886677097,
+      "Id": "ihtp",
       "Value": 9999
     },
     {
-      "Id": 1868786025,
+      "Id": "iico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Trading Gold"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Trading Gold"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Trading Gold"
     },
     {
-      "Id": 1936024681,
+      "Id": "ides",
       "Type": 3,
       "Value": "Gold from trading offshore"
     }

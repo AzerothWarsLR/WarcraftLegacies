@@ -1,21 +1,21 @@
 {
-  "OldId": 2004045657,
-  "NewId": 959459396,
+  "OldId": "YOsw",
+  "NewId": "D009",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718509924,
+      "Id": "danf",
       "Value": 1
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "buildings\\other\\GoldMine\\GoldMine.mdl"
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Deadmines"
     }

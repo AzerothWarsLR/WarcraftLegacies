@@ -1,70 +1,70 @@
 {
-  "OldId": 1700873043,
-  "NewId": 1479560261,
+  "OldId": "SCae",
+  "NewId": "EL0X",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845504847,
+      "Id": "Oae2",
       "Type": 2,
       "Value": -0.1
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828727631,
+      "Id": "Oae1",
       "Type": 2,
       "Value": -0.15
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,enemies,ground"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Superior Whirlpool Aura"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(tidal Lord)"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Superior Whirlpool Aura"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces nearby enemy units\u0027 movement speed by 40% and attack rate by 25%."
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\commandButtons\\PASWhirlpool.blp"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": ""
     }

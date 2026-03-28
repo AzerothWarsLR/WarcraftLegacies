@@ -1,46 +1,46 @@
 {
-  "OldId": 1768910914,
-  "NewId": 1177825346,
+  "OldId": "Bpoi",
+  "NewId": "B04F",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWallOfFire.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Burning"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is burning"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Fire Arrows"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": " (elf)"
     },
     {
-      "Id": 1953526630,
+      "Id": "fspt",
       "Type": 3,
       "Value": "head"
     },
     {
-      "Id": 1685091174,
+      "Id": "fspd",
       "Value": 0
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

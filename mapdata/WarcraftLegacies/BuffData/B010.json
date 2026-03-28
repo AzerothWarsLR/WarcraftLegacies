@@ -1,17 +1,17 @@
 {
-  "OldId": 1735553090,
-  "NewId": 808529986,
+  "OldId": "Bprg",
+  "NewId": "B010",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(shocking blade)"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is Purged; it has had all buffs removed and has its movement speed slowed for a short duration."
     }

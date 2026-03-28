@@ -1,6 +1,6 @@
 {
-  "OldId": 1802726977,
-  "NewId": 1230385217,
+  "OldId": "Ansk",
+  "NewId": "A0VI",
   "Unk": [
     0
   ],
@@ -8,56 +8,56 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896234323,
+      "Id": "Ssk5",
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Brown Elekk)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces all ranged attacks on the unit by \u003CA0VI,DataC1\u003E damage. Attacks cannot be reduced below \u003CA0VI,DataB1\u003E damage."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Hardened"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Hardened"
     }

@@ -1,35 +1,35 @@
 {
-  "OldId": 1818588275,
+  "OldId": "stel",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1869767785,
+      "Id": "idro",
       "Value": 0
     },
     {
-      "Id": 1886677097,
+      "Id": "ihtp",
       "Value": 500000
     },
     {
-      "Id": 2002874473,
+      "Id": "ipaw",
       "Value": 0
     },
     {
-      "Id": 1818588009,
+      "Id": "isel",
       "Value": 0
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 1
     },
     {
-      "Id": 2037408373,
+      "Id": "ubpy",
       "Value": 2
     },
     {
-      "Id": 1936024681,
+      "Id": "ides",
       "Type": 3,
       "Value": "Teleports the Hero. Has a 2 minute cooldown."
     }

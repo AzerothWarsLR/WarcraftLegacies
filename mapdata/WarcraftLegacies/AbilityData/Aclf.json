@@ -1,34 +1,34 @@
 {
-  "OldId": 1718379329,
+  "OldId": "Aclf",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Quel\u0027Thalas-Dragonhawk Rider)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Cast on enemy buildings with ranged attacks to stop the buildings from attacking. |n|cffffcc00Lasts \u003CAclf,Dur1\u003E seconds."
     }

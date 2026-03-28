@@ -1,13 +1,13 @@
 {
-  "OldId": 1751347026,
-  "NewId": 1328558162,
+  "OldId": "Roch",
+  "NewId": "R00O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Subdue the Thunderbluff Tauren"
     }

@@ -1,94 +1,94 @@
 {
-  "OldId": 1767993921,
-  "NewId": 1144270913,
+  "OldId": "Arai",
+  "NewId": "A04D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B08A"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 100
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828989778,
+      "Id": "Rai1",
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862544210,
+      "Id": "Rai3",
       "Type": 3,
       "Value": "nvdl"
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 60
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1969840466,
+      "Id": "Raiu",
       "Type": 3,
       "Value": "nvdl"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCDestroOrb.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Voidcaller)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Soul Ritual"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Soul Ritual"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Raises 1 Voidwalker from a corpse. They last 60 seconds."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCDestroOrb.blp"
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 3
     }
   ]

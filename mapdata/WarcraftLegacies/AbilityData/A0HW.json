@@ -1,63 +1,63 @@
 {
-  "OldId": 1936474945,
-  "NewId": 1464348737,
+  "OldId": "ACls",
+  "NewId": "A0HW",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B03E,B01J"
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 150
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828928844,
+      "Id": "Lsh1",
       "Type": 2,
       "Value": 35
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameWall.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Creep - Ragnaros, Teal Elder warlock)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Flame Shield"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Flame Shield"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Forms a shield of fire around a target unit, dealing 35 damage per second to units around it. |nLasts 20 seconds."
     }

@@ -1,46 +1,46 @@
 {
-  "OldId": 2004118894,
+  "OldId": "nmtw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 23
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rguv,Rhme,Rhar"
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 650
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 250
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 1
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Najentus Summon)"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee amphibious unit. "
     }

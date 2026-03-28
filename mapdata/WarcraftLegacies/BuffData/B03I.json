@@ -1,22 +1,22 @@
 {
-  "OldId": 1751404098,
-  "NewId": 1228091458,
+  "OldId": "BNdh",
+  "NewId": "B03I",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Drunken Haze"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Dargan)"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

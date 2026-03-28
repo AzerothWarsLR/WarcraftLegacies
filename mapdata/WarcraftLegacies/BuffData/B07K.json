@@ -1,17 +1,17 @@
 {
-  "OldId": 1869374018,
-  "NewId": 1261908034,
+  "OldId": "Bblo",
+  "NewId": "B07K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit has Bloodlust; its attack rate is increased."
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": "(Purple - Inquisitor)"
     }

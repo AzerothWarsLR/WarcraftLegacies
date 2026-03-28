@@ -1,336 +1,336 @@
 {
-  "OldId": 1935762280,
-  "NewId": 1412640872,
+  "OldId": "hcas",
+  "NewId": "h03T",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Argl"
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 1300
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "siege"
     },
     {
-      "Id": 1949458805,
+      "Id": "ua2t",
       "Type": 3,
       "Value": "siege"
     },
     {
-      "Id": 829645429,
+      "Id": "ubs1",
       "Type": 2,
       "Value": 1.9
     },
     {
-      "Id": 846422645,
+      "Id": "ubs2",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 50
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 3.5
     },
     {
-      "Id": 1664246133,
+      "Id": "ua2c",
       "Type": 2,
       "Value": 3.5
     },
     {
-      "Id": 829187189,
+      "Id": "udl1",
       "Type": 2,
       "Value": 0.2
     },
     {
-      "Id": 845964405,
+      "Id": "udl2",
       "Type": 2,
       "Value": 0.2
     },
     {
-      "Id": 1886741621,
+      "Id": "udup",
       "Value": 3
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 1
     },
     {
-      "Id": 1681023349,
+      "Id": "ua2d",
       "Value": 1
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 50
     },
     {
-      "Id": 1647468917,
+      "Id": "ua2b",
       "Value": 135
     },
     {
-      "Id": 829449333,
+      "Id": "udp1",
       "Type": 2,
       "Value": 0.1
     },
     {
-      "Id": 846226549,
+      "Id": "udp2",
       "Type": 2,
       "Value": 0.3
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 25
     },
     {
-      "Id": 1714577781,
+      "Id": "ua2f",
       "Value": 25
     },
     {
-      "Id": 1634559605,
+      "Id": "ufma",
       "Value": 30
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 135
     },
     {
-      "Id": 1919903605,
+      "Id": "ugor",
       "Value": 50
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 50
     },
     {
-      "Id": 1748132213,
+      "Id": "ua2h",
       "Value": 50
     },
     {
-      "Id": 828663925,
+      "Id": "uhd1",
       "Type": 2,
       "Value": 0.4
     },
     {
-      "Id": 845441141,
+      "Id": "uhd2",
       "Type": 2,
       "Value": 0.4
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 2050056565,
+      "Id": "ua1z",
       "Value": 1400
     },
     {
-      "Id": 2050122101,
+      "Id": "ua2z",
       "Value": 1400
     },
     {
-      "Id": 1952542837,
+      "Id": "upat",
       "Type": 3,
       "Value": "PathTextures\\12x12Simple.tga"
     },
     {
-      "Id": 1885433973,
+      "Id": "upap",
       "Type": 3,
       "Value": "unwalkable"
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 150
     },
     {
-      "Id": 1899127157,
+      "Id": "ua2q",
       "Value": 150
     },
     {
-      "Id": 828666229,
+      "Id": "uqd1",
       "Type": 2,
       "Value": 0.25
     },
     {
-      "Id": 845443445,
+      "Id": "uqd2",
       "Type": 2,
       "Value": 0.25
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 1300
     },
     {
-      "Id": 1915904373,
+      "Id": "ua2r",
       "Value": 1200
     },
     {
-      "Id": 1836348021,
+      "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "h01H"
     },
     {
-      "Id": 1936028277,
+      "Id": "ures",
       "Type": 3,
       "Value": "R00G"
     },
     {
-      "Id": 828535413,
+      "Id": "urb1",
       "Type": 2,
       "Value": 250
     },
     {
-      "Id": 845312629,
+      "Id": "urb2",
       "Type": 2,
       "Value": 250
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 18
     },
     {
-      "Id": 1932681589,
+      "Id": "ua2s",
       "Value": 25
     },
     {
-      "Id": 829584245,
+      "Id": "usr1",
       "Type": 2,
       "Value": 50
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "debris,ground,structure,wall"
     },
     {
-      "Id": 828601461,
+      "Id": "utc1",
       "Value": 1
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,structure,wall,ward"
     },
     {
-      "Id": 1731354997,
+      "Id": "ua2g",
       "Type": 3,
       "Value": "debris,ground,item,structure,wall,ward"
     },
     {
-      "Id": 1634890869,
+      "Id": "utra",
       "Type": 3,
       "Value": "nbee,n00A"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "R013,R02H,Rhac,Rgfo"
     },
     {
-      "Id": 1999790453,
+      "Id": "ua2w",
       "Type": 3,
       "Value": "artillery"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,townhall"
     },
     {
-      "Id": 1885693045,
+      "Id": "udep",
       "Type": 3,
       "Value": "h003,h05C"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenCastle.blp"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Quelthalas T3)"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\TownHallElfV1.01.mdl"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "C"
     },
     {
-      "Id": 845245813,
+      "Id": "uma2",
       "Type": 2,
       "Value": 0.35
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl"
     },
     {
-      "Id": 1832018293,
+      "Id": "ua2m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.95
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Palace"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 4.5
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Upgrade to Palace"
     },
     {
-      "Id": 1935832437,
+      "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Primary structure. "
     }

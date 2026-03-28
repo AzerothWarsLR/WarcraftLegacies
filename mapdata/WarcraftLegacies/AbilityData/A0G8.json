@@ -1,6 +1,6 @@
 {
-  "OldId": 1802726977,
-  "NewId": 944189505,
+  "OldId": "Ansk",
+  "NewId": "A0G8",
   "Unk": [
     0
   ],
@@ -8,63 +8,63 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "h02W"
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 9999
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125459,
+      "Id": "Ssk1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 896234323,
+      "Id": "Ssk5",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Martial Spirit)"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Hardened"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Prevent all ranged damage."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": -11
     }
   ]

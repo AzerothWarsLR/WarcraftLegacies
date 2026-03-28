@@ -1,110 +1,110 @@
 {
-  "OldId": 1702062162,
-  "NewId": 894916946,
+  "OldId": "Rhse",
+  "NewId": "RYW5",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 828465767,
+      "Id": "gba1",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 845242983,
+      "Id": "gba2",
       "Type": 2,
       "Value": 20
     },
     {
-      "Id": 862020199,
+      "Id": "gba3",
       "Type": 2,
       "Value": 200
     },
     {
-      "Id": 878797415,
+      "Id": "gba4",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 829383527,
+      "Id": "gco1",
       "Type": 3,
       "Value": "ASWB"
     },
     {
-      "Id": 862937959,
+      "Id": "gco3",
       "Type": 3,
       "Value": "h00H"
     },
     {
-      "Id": 879715175,
+      "Id": "gco4",
       "Type": 3,
       "Value": "A058"
     },
     {
-      "Id": 828794215,
+      "Id": "gef1",
       "Type": 3,
       "Value": "rlev"
     },
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 100
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 1651078247,
+      "Id": "gtib",
       "Value": 35
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": "u022"
     },
     {
-      "Id": 1667330663,
+      "Id": "grac",
       "Type": 3,
       "Value": "undead"
     },
     {
       "Level": 1,
-      "Id": 829579623,
+      "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSwarmScarab.blp"
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Cthun - Warrior)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "Z"
     },
     {
       "Level": 1,
-      "Id": 1835101799,
+      "Id": "gnam",
       "Type": 3,
       "Value": "Improved Swarm Beetle"
     },
     {
       "Level": 1,
-      "Id": 829453415,
+      "Id": "gtp1",
       "Type": 3,
       "Value": "Research Improved Swarm Beetle"
     },
     {
       "Level": 1,
-      "Id": 828536167,
+      "Id": "gub1",
       "Type": 3,
       "Value": "Increases the number of Swarm Beetles summoned by the Summon Swarm Beetle ability to \u003CASWB,DataB2\u003E."
     }

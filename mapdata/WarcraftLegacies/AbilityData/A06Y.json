@@ -1,47 +1,47 @@
 {
-  "OldId": 1650617665,
-  "NewId": 1496723521,
+  "OldId": "Ambb",
+  "NewId": "A06Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828534085,
+      "Id": "Emb1",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "Fel Stalker, Inquisitor, Magus"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Sends a bolt of negative energy that burns 25 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned."
     }

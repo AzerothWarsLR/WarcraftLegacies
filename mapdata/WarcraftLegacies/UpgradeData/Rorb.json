@@ -1,40 +1,40 @@
 {
-  "OldId": 1651666770,
+  "OldId": "Rorb",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651271527,
+      "Id": "gglb",
       "Value": 30
     },
     {
-      "Id": 1752066407,
+      "Id": "ginh",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1902473831,
+      "Id": "greq",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651338343,
+      "Id": "glmb",
       "Value": 0
     },
     {
-      "Id": 2020631143,
+      "Id": "gbpx",
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1718840935,
+      "Id": "gnsf",
       "Type": 3,
       "Value": "(Frostwolf/Fel Horde/Warsong)"
     },
     {
       "Level": 1,
-      "Id": 829122663,
+      "Id": "ghk1",
       "Type": 3,
       "Value": "F"
     }

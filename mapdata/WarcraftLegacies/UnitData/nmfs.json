@@ -1,20 +1,20 @@
 {
-  "OldId": 1936092526,
+  "OldId": "nmfs",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1919252085,
+      "Id": "uver",
       "Value": 1
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "units\\creeps\\MurlocFlesheater\\MurlocFlesheater.mdl"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit that can Cannibalize corpses. "
     }

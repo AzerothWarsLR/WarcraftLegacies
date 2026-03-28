@@ -1,17 +1,17 @@
 {
-  "OldId": 1634954306,
-  "NewId": 1244737602,
+  "OldId": "Blsa",
+  "NewId": "B01J",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Flame Shield (Caster)"
     }

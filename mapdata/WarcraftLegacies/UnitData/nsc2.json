@@ -1,11 +1,11 @@
 {
-  "OldId": 845378414,
+  "OldId": "nsc2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit. "
     }

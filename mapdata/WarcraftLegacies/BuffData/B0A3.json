@@ -1,12 +1,12 @@
 {
-  "OldId": 1767993922,
-  "NewId": 859910210,
+  "OldId": "Brai",
+  "NewId": "B0A3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Invoke Spider"
     }

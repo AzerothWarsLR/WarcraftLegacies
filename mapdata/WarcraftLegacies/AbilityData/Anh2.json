@@ -1,5 +1,5 @@
 {
-  "OldId": 845704769,
+  "OldId": "Anh2",
   "Unk": [
     0
   ],
@@ -7,28 +7,28 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828466504,
+      "Id": "Hea1",
       "Type": 2,
       "Value": 20
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Legion)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Heal (|cffffcc00Q|r)"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "Q"
     }

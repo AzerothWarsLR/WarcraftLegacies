@@ -1,6 +1,6 @@
 {
-  "OldId": 1802728257,
-  "NewId": 1448095809,
+  "OldId": "Assk",
+  "NewId": "A0PV",
   "Unk": [
     0
   ],
@@ -8,64 +8,64 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829125459,
+      "Id": "Ssk1",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 40
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "_"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASStoneShield.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Orange - Earth Golem)(Icon)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Stone Skin"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Stone Skin"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Golem has a 25% chance to reduce incoming damage by 40."
     }

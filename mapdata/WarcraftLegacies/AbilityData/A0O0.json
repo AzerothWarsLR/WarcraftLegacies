@@ -1,123 +1,123 @@
 {
-  "OldId": 1735544385,
-  "NewId": 810496065,
+  "OldId": "ANrg",
+  "NewId": "A0O0",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828730693,
+      "Id": "Eme1",
       "Type": 3,
       "Value": "h02M"
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895971918,
+      "Id": "Nrg5",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 6,
-      "Id": 912749134,
+      "Id": "Nrg6",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0.25
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969581381,
+      "Id": "Emeu",
       "Type": 3,
       "Value": "h02K"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNUnload.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Greymane)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "A Close"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Close Gate"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Closes the gate."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLoad.blp"
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 0
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 0
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "Q"
     },
     {
       "Level": 1,
-      "Id": 829715809,
+      "Id": "aut1",
       "Type": 3,
       "Value": "Open Gate"
     },
     {
       "Level": 1,
-      "Id": 829781345,
+      "Id": "auu1",
       "Type": 3,
       "Value": "Opens the gate."
     }

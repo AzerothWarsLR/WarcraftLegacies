@@ -1,330 +1,330 @@
 {
-  "OldId": 2037599809,
-  "NewId": 1462841665,
+  "OldId": "ANsy",
+  "NewId": "A11W",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 4,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BNcg,BNcg"
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 846820174,
+      "Id": "Nsy2",
       "Type": 3,
       "Value": "h06H"
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 846820174,
+      "Id": "Nsy2",
       "Type": 3,
       "Value": "ncg2"
     },
     {
       "Level": 1,
-      "Id": 1970893646,
+      "Id": "Nsyu",
       "Type": 3,
       "Value": "n0DJ"
     },
     {
       "Level": 4,
-      "Id": 1970893646,
+      "Id": "Nsyu",
       "Type": 3,
       "Value": "n04M"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 10
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 5
     },
     {
       "Level": 2,
-      "Id": 1970893646,
+      "Id": "Nsyu",
       "Type": 3,
       "Value": "n0DL"
     },
     {
       "Level": 3,
-      "Id": 1970893646,
+      "Id": "Nsyu",
       "Type": 3,
       "Value": "n0DM"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846820174,
+      "Id": "Nsy2",
       "Type": 3,
       "Value": "h06H"
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 846820174,
+      "Id": "Nsy2",
       "Type": 3,
       "Value": "h06H"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863597390,
+      "Id": "Nsy3",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 863597390,
+      "Id": "Nsy3",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 863597390,
+      "Id": "Nsy3",
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 830042958,
+      "Id": "Nsy1",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 830042958,
+      "Id": "Nsy1",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 830042958,
+      "Id": "Nsy1",
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 3,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 3,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 3,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 200
     },
     {
       "Level": 2,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 200
     },
     {
       "Level": 3,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 200
     },
     {
-      "Id": 1886612833,
+      "Id": "amsp",
       "Value": 400
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "R"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "R"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 25 damage per second, 10 seconds duration.|n|cffffcc00Level 2|r - 50 damage per second, 15 seconds duration.|n|cffffcc00Level 3|r - 75 damage per second, 20 seconds duration."
     },
     {
       "Level": 4,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Pocket Factory - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 25 damage a second. Lasts 10 seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 50 damage a second. Lasts 15 seconds."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 75 damage a second. Lasts 20 seconds."
     },
     {
       "Level": 4,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 1050 hit points, deal 37 - 39 damage, and explode upon death, causing up to 180 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(noggenfogger)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Toxic Cloud"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Toxic Cloud - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Toxic Cloud - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Toxic Cloud - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Toxic Cloud - [|cffffcc00Level 3|r]"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 3
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNToxicGoo.blp"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNToxicGoo.blp"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl"
     },
     {
-      "Id": 1768841569,
+      "Id": "aani",
       "Type": 3,
       "Value": "spell,channel"
     }

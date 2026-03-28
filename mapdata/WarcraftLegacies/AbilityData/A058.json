@@ -1,191 +1,191 @@
 {
-  "OldId": 1717715777,
-  "NewId": 943009857,
+  "OldId": "ACbf",
+  "NewId": "A058",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 2,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "BCbf"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 70
     },
     {
       "Level": 2,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 70
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829645653,
+      "Id": "Ucs1",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 846422869,
+      "Id": "Ucs2",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 863200085,
+      "Id": "Ucs3",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 879977301,
+      "Id": "Ucs4",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 895902286,
+      "Id": "Nbf5",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 9
     },
     {
       "Level": 2,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 9
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 2,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "undead"
     },
     {
       "Level": 2,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,air"
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863200085,
+      "Id": "Ucs3",
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 700
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (Scourge, Forsaken, Cult, Frost Wyrm, Sapphiron)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Hypothermic Breath"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Hypothermic Breath"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Hypothermic Breath - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of frost at enemy units that deals \u003CA058,DataA1\u003E initial damage, and \u003CA058,DataE1\u003E damage per second over \u003CA058,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Breathes a cone of frost at enemy units that deals \u003CA058,DataA2\u003E initial damage, and \u003CA058,DataE2\u003E damage per second over \u003CA058,Dur2\u003E seconds."
     }

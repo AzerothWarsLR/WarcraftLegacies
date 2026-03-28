@@ -1,23 +1,23 @@
 {
-  "OldId": 1650946926,
+  "OldId": "nsgb",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1200
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee amphibious unit with Hurl Boulder, War Stomp, and Pulverize. "
     }

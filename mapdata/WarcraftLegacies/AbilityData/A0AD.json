@@ -1,60 +1,60 @@
 {
-  "OldId": 1953318977,
-  "NewId": 1145122881,
+  "OldId": "AHmt",
+  "NewId": "A0AD",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 1000
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 120
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829713736,
+      "Id": "Hmt1",
       "Value": 96
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846490952,
+      "Id": "Hmt2",
       "Type": 2,
       "Value": 9
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1702127969,
+      "Id": "aite",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "invulnerable,nonsapper,structure,vulnerable"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Scroll Tele(Drekthar)"
     }

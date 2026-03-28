@@ -1,5 +1,5 @@
 {
-  "OldId": 1918988097,
+  "OldId": "Aoar",
   "Unk": [
     0
   ],
@@ -7,7 +7,7 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829579599,
+      "Id": "Oar1",
       "Type": 2,
       "Value": 0.015
     }

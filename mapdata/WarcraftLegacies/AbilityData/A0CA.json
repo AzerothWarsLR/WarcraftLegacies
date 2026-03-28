@@ -1,69 +1,69 @@
 {
-  "OldId": 1635074881,
-  "NewId": 1094922305,
+  "OldId": "ACua",
+  "NewId": "A0CA",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829776213,
+      "Id": "Uau1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846553429,
+      "Id": "Uau2",
       "Type": 2,
       "Value": 6
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0AW"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Black Citadel)"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Blight Aura"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Blight Aura"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASBlightHorn.blp"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases the hit point regeneration of friendly units within a range of \u003CA0CA,Area1\u003E by \u003CA0CA,DataB1\u003E."
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     }
   ]

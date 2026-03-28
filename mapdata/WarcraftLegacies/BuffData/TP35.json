@@ -1,17 +1,17 @@
 {
-  "OldId": 1718764888,
-  "NewId": 892555348,
+  "OldId": "XErf",
+  "NewId": "TP35",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "war3mapImported\\Rain of Fire Fel.mdx"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Felfire (Effect)"
     }

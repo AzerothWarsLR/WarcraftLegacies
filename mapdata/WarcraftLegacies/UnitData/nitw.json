@@ -1,36 +1,36 @@
 {
-  "OldId": 2004117870,
+  "OldId": "nitw",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACct,ACat"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 4
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 1125
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged unit with Trueshot Aura. "
     }

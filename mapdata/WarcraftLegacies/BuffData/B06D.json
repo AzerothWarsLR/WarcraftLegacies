@@ -1,32 +1,32 @@
 {
-  "OldId": 1163087938,
-  "NewId": 1144401986,
+  "OldId": "BPSE",
+  "NewId": "B06D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBigBadVoodooSpell.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Psychicly Decimated"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Psychic Decimation"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
     }

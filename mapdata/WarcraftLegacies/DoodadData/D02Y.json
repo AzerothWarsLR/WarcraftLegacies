@@ -1,115 +1,115 @@
 {
-  "OldId": 1801867855,
-  "NewId": 1496461380,
+  "OldId": "ORfk",
+  "NewId": "D02Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1920493156,
+      "Id": "dfxr",
       "Type": 2,
       "Value": -1
     },
     {
-      "Id": 1935764836,
+      "Id": "dmas",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 1936289124,
+      "Id": "dmis",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Smog"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1818850404,
+      "Id": "dtil",
       "Type": 3,
       "Value": "*"
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Water_Polluted.mdl"
     },
     {
-      "Id": 1751348580,
+      "Id": "duch",
       "Value": 1
     },
     {
-      "Id": 1952539492,
+      "Id": "dcat",
       "Type": 3,
       "Value": "Z"
     },
     {
-      "Id": 1718509924,
+      "Id": "danf",
       "Value": 1
     },
     {
       "Variation": 4,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 15
     },
     {
       "Variation": 4,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 40
     },
     {
-      "Id": 1918989924,
+      "Id": "dvar",
       "Value": 3
     },
     {
       "Variation": 5,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 5,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 0
     },
     {
       "Variation": 3,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 0
     },
     {
       "Variation": 3,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 0
     },
     {
       "Variation": 2,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 50
     },
     {
       "Variation": 2,
-      "Id": 828864100,
+      "Id": "dvg1",
       "Value": 30
     },
     {
       "Variation": 2,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 10
     },
     {
       "Variation": 1,
-      "Id": 828536420,
+      "Id": "dvb1",
       "Value": 75
     },
     {
       "Variation": 3,
-      "Id": 829584996,
+      "Id": "dvr1",
       "Value": 100
     }
   ]

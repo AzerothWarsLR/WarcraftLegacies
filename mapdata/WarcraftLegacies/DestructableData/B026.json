@@ -1,41 +1,41 @@
 {
-  "OldId": 1668502594,
-  "NewId": 909258818,
+  "OldId": "BTsc",
+  "NewId": "B026",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1702061922,
+      "Id": "bgse",
       "Value": 0
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "#Shadow_Large"
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": "ShadowTombOfRelics"
     },
     {
-      "Id": 1836083042,
+      "Id": "bgpm",
       "Type": 3,
       "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
     },
     {
-      "Id": 1920493154,
+      "Id": "bfxr",
       "Type": 2,
       "Value": 0
     }

@@ -1,11 +1,11 @@
 {
-  "OldId": 1869827650,
+  "OldId": "BNso",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\Tranquility\\TranquilityTarget.mdl"
     }

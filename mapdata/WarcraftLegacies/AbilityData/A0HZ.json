@@ -1,127 +1,127 @@
 {
-  "OldId": 1668248129,
-  "NewId": 1514680385,
+  "OldId": "Aroc",
+  "NewId": "A0HZ",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 600
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 2.46
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829122117,
+      "Id": "Efk1",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845899333,
+      "Id": "Efk2",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862676549,
+      "Id": "Efk3",
       "Value": 2
     },
     {
-      "Id": 1802726497,
+      "Id": "alsk",
       "Value": 5
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1986818657,
+      "Id": "arlv",
       "Value": 10
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "air,debris,enemies,ground,ward"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Hippogryph Rider)"
     },
     {
-      "Id": 1952542049,
+      "Id": "amat",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Multi Shot"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTripleShot.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 3
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "R"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Learn Multi Shot - [|cffffcc00Level %d|r]"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Sylvanas\u0027 skill with the bow allows her to fire multiple arrows at the same time. |n|n|cffffcc00Level 1|r - Sylvanas is able to fire 3 arrows at once. |n|cffffcc00Level 2|r - Sylvanas is able to fire 5 arrows at once.|n|cffffcc00Level 3|r - Sylvanas is able to fire 7 arrows at once."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Multi Shot"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Causes this hero\u0027s attacks to fire an additional projectile at up to 3 nearby enemy units."
     }

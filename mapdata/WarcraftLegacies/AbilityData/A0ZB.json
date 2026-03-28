@@ -1,74 +1,74 @@
 {
-  "OldId": 1684097089,
-  "NewId": 1113206849,
+  "OldId": "AHad",
+  "NewId": "A0ZB",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 450
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828662088,
+      "Id": "Had1",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 3
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Battle Standard)"
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by 1.5. |n|cffffcc00Level 2|r - Increases base armor by 3. |n|cffffcc00Level 3|r - Increases base armor by 4.5. |n|cffffcc00Level 4|r - Increases base armor by 6."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Devotion Aura"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives 4 additional armor to nearby friendly units."
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 811693153,
+      "Id": "ata0",
       "Type": 3,
       "Value": ""
     }

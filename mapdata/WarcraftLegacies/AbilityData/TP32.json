@@ -1,6 +1,6 @@
 {
-  "OldId": 1718764353,
-  "NewId": 842223700,
+  "OldId": "ACrf",
+  "NewId": "TP32",
   "Unk": [
     0
   ],
@@ -8,118 +8,118 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846881352,
+      "Id": "Hbz2",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 897213000,
+      "Id": "Hbz5",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863658568,
+      "Id": "Hbz3",
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 830104136,
+      "Id": "Hbz1",
       "Value": 15
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "orc"
     },
     {
       "Level": 1,
-      "Id": 1717986657,
+      "Id": "aeff",
       "Type": 3,
       "Value": "TP34"
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R03I"
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "TP37,BNrf"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNFlameStorm.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Eredar Warlock)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Calls down \u003CTP32:ACrf,DataA1\u003E individual firebolts from the sky igniting units, affected units take \u003CTP32:ACrf,DataE1\u003E damage per second for \u003CTP32:ACrf,Dur1\u003E seconds."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Firestorm"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Firestorm"
     }

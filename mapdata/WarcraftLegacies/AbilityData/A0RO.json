@@ -1,95 +1,95 @@
 {
-  "OldId": 1718832961,
-  "NewId": 1330786369,
+  "OldId": "AOsf",
+  "NewId": "A0RO",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B0AK"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845574991,
+      "Id": "Osf2",
       "Value": 1
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 828797775,
+      "Id": "Osf1",
       "Type": 3,
       "Value": "ndqs"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDemoness.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(felelves warlock)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Summon Queen of Suffering"
     },
     {
-      "Id": 1918988897,
+      "Id": "arar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLavaSpawn.blp"
     },
     {
-      "Id": 2020635233,
+      "Id": "arpx",
       "Value": 1
     },
     {
-      "Id": 1802007137,
+      "Id": "arhk",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1952805473,
+      "Id": "aret",
       "Type": 3,
       "Value": "Ritual of Fire - [|cffffcc00Level %d|r]."
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Dargan performs a ritual that opens a portal allowing Fire Elementals to fight his enemies. |nThe Fire Elementals last 60 seconds. |n|n|cffffcc00Level 1|r - 3 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 2|r - 4 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 3|r - 4 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire.|n|cffffcc00Level 4|r - 5 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Summon Queen of Suffering"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "The Warlock summons 1 Queen of Suffering to help him in battle."
     }

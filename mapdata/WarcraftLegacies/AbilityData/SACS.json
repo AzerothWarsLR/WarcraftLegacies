@@ -1,6 +1,6 @@
 {
-  "OldId": 1952662337,
-  "NewId": 1396916563,
+  "OldId": "ACct",
+  "NewId": "SACS",
   "Unk": [
     0
   ],
@@ -8,29 +8,29 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829580111,
+      "Id": "Ocr1",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846357327,
+      "Id": "Ocr2",
       "Type": 2,
       "Value": 1.5
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Sentinels 1,2)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 15% chance to do 1.5 times normal damage on an attack."
     }

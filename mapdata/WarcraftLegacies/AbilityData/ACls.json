@@ -1,34 +1,34 @@
 {
-  "OldId": 1936474945,
+  "OldId": "ACls",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 50
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828928844,
+      "Id": "Lsh1",
       "Type": 2,
       "Value": 25
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Neutral Hostile. Brown - Ysondre, Furbolg Shaman, Illidari seer)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     }

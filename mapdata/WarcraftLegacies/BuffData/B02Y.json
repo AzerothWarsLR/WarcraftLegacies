@@ -1,17 +1,17 @@
 {
-  "OldId": 1634954306,
-  "NewId": 1496461378,
+  "OldId": "Blsa",
+  "NewId": "B02Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "human"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Healing Shield (Caster)"
     }

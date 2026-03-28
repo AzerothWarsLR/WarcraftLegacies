@@ -1,15 +1,15 @@
 {
-  "OldId": 1936028272,
+  "OldId": "pres",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 100
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 5
     }
   ]

@@ -1,184 +1,184 @@
 {
-  "OldId": 1836346728,
-  "NewId": 897214579,
+  "OldId": "hmtm",
+  "NewId": "shz5",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Aihn"
     },
     {
-      "Id": 1684824693,
+      "Id": "ubld",
       "Value": 12
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1634034805,
+      "Id": "udea",
       "Value": 2
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 2
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 64
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 1
     },
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 25
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 35
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 590
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1769107573,
+      "Id": "upri",
       "Value": 8
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 90
     },
     {
-      "Id": 828666229,
+      "Id": "uqd1",
       "Type": 2,
       "Value": 0.25
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 10
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 210
     },
     {
-      "Id": 1731289461,
+      "Id": "ua1g",
       "Type": 3,
       "Value": "debris,ground,item,tree,ward"
     },
     {
-      "Id": 1920363893,
+      "Id": "umvr",
       "Type": 2,
       "Value": 0.4
     },
     {
-      "Id": 1887007861,
+      "Id": "utyp",
       "Type": 3,
       "Value": "sapper"
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhar,RBFC,Rhme,Rguv"
     },
     {
-      "Id": 1918985077,
+      "Id": "ucar",
       "Value": 1
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "naga"
     },
     {
-      "Id": 2050056565,
+      "Id": "ua1z",
       "Value": 10000
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 2
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1902473845,
+      "Id": "ureq",
       "Type": 3,
       "Value": "RBCF"
     },
     {
-      "Id": 2020631157,
+      "Id": "ubpx",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Nzoth)"
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable."
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Aqir"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Train Aqir"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_SiegeAqir_Attack1Only.mdl"
     },
     {
-      "Id": 1831952757,
+      "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Spells\\Undead\\Impale\\ImpaleHitTarget.mdl"
     },
     {
-      "Id": 828468597,
+      "Id": "uma1",
       "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAqir.blp"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 2
     },
     {
-      "Id": 1684960117,
+      "Id": "usnd",
       "Type": 3,
       "Value": "HeroCryptLord"
     }

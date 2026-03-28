@@ -1,35 +1,35 @@
 {
-  "OldId": 1668437068,
+  "OldId": "LTrc",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1936746594,
+      "Id": "bhps",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1918989410,
+      "Id": "btar",
       "Type": 3,
       "Value": "decoration"
     },
     {
-      "Id": 1702061922,
+      "Id": "bgse",
       "Value": 0
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.01
     },
     {
-      "Id": 1718973282,
+      "Id": "bsuf",
       "Type": 3,
       "Value": "(Kali/NR blockade)"
     }

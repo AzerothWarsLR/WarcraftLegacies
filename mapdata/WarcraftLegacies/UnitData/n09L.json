@@ -1,70 +1,70 @@
 {
-  "OldId": 846621806,
-  "NewId": 1278816366,
+  "OldId": "nlv2",
+  "NewId": "n09L",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 13
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 600
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "orc"
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 1
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 3
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar,Rguv"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1986358389,
+      "Id": "ulev",
       "Value": 3
     },
     {
-      "Id": 1633837685,
+      "Id": "ubba",
       "Value": 7
     },
     {
-      "Id": 1768186485,
+      "Id": "ubdi",
       "Value": 4
     },
     {
-      "Id": 1769169525,
+      "Id": "ubsi",
       "Value": 2
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Fel Horde-Zuluhed)"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
-      "Id": 1919905909,
+      "Id": "upor",
       "Type": 3,
       "Value": ""
     }

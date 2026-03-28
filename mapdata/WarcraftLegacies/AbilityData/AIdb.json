@@ -1,47 +1,47 @@
 {
-  "OldId": 1650739521,
+  "OldId": "AIdb",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B01H"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846227529,
+      "Id": "Ihp2",
       "Value": 125
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 846228809,
+      "Id": "Imp2",
       "Value": 50
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": " (with Life \u0026 Mana Healing) (ALL CROWNS)"
     }

@@ -1,46 +1,46 @@
 {
-  "OldId": 1935823948,
-  "NewId": 808595522,
+  "OldId": "LTbs",
+  "NewId": "B020",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1918989410,
+      "Id": "btar",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1702061922,
+      "Id": "bgse",
       "Value": 0
     },
     {
-      "Id": 1818846818,
+      "Id": "bfil",
       "Type": 3,
       "Value": "buildings\\other\\MurlocHut1\\MurlocHut1.mdl"
     },
     {
-      "Id": 1935764834,
+      "Id": "bmas",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1835101794,
+      "Id": "bnam",
       "Type": 3,
       "Value": "Building - Troll Hut"
     },
     {
-      "Id": 2020896866,
+      "Id": "bptx",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1684566882,
+      "Id": "bshd",
       "Type": 3,
       "Value": "BuildingShadowSmall"
     },
     {
-      "Id": 1936289122,
+      "Id": "bmis",
       "Type": 2,
       "Value": 0.8
     }

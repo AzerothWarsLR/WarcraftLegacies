@@ -1,6 +1,6 @@
 {
-  "OldId": 1801610817,
-  "NewId": 1514811457,
+  "OldId": "Afbk",
+  "NewId": "A0JZ",
   "Unk": [
     0
   ],
@@ -8,29 +8,29 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829121126,
+      "Id": "fbk1",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862675558,
+      "Id": "fbk3",
       "Type": 2,
       "Value": 10
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Draenei)"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "This unit\u0027s attacks combust 10(30 for Heroes) mana per hit dealing damage to the attacked unit equal to the mana destroyed."
     }

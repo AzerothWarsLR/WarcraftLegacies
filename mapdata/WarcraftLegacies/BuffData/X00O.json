@@ -1,27 +1,27 @@
 {
-  "OldId": 1718575704,
-  "NewId": 1328558168,
+  "OldId": "Xbof",
+  "NewId": "X00O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Emerald Flames (Effect)"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeDamageTarget.mdl"
     },
     {
-      "Id": 1818649958,
+      "Id": "fefl",
       "Type": 3,
       "Value": ""
     }

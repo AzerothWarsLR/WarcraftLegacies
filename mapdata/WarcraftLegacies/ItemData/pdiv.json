@@ -1,43 +1,43 @@
 {
-  "OldId": 1986618480,
+  "OldId": "pdiv",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240297,
+      "Id": "igol",
       "Value": 25
     },
     {
-      "Id": 1635021673,
+      "Id": "ista",
       "Value": 5
     },
     {
-      "Id": 1920234345,
+      "Id": "istr",
       "Value": 240
     },
     {
-      "Id": 1634493289,
+      "Id": "icla",
       "Type": 3,
       "Value": "Purchasable"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Brew of Divinity"
     },
     {
-      "Id": 1885959285,
+      "Id": "utip",
       "Type": 3,
       "Value": "Purchase Brew of Divinity"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Turns the Hero invulnerable for 7 seconds."
     },
     {
-      "Id": 1953458293,
+      "Id": "uhot",
       "Type": 3,
       "Value": "Q"
     }

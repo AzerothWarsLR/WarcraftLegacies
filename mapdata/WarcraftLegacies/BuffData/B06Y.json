@@ -1,12 +1,12 @@
 {
-  "OldId": 1869374018,
-  "NewId": 1496723522,
+  "OldId": "Bblo",
+  "NewId": "B06Y",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "|c0000FF00Bloodlust"
     }

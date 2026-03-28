@@ -1,51 +1,51 @@
 {
-  "OldId": 1836085825,
-  "NewId": 842089549,
+  "OldId": "Arpm",
+  "NewId": "MD12",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 912420946,
+      "Id": "Rpb6",
       "Value": 20
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845833554,
+      "Id": "Rej2",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
       "Pointer": 5,
-      "Id": 895643730,
+      "Id": "Rpb5",
       "Value": 1
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Quel\u0027thalas - Arcane Wagon)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "W"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "W"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Restores  mana to nearby friendly non-mechanical units."
     }

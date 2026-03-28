@@ -1,27 +1,27 @@
 {
-  "OldId": 1802981186,
-  "NewId": 1328623682,
+  "OldId": "BOwk",
+  "NewId": "B01O",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "|cff00ff00Vanish|r"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNAbility_Vanish.blp"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit is Vanished; it is invisible and has bonus damage. The invisibility will not break if the hero attacks or casts a spell."
     },
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Vanish"
     }

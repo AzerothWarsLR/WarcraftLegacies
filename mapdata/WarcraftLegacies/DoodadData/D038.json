@@ -1,26 +1,26 @@
 {
-  "OldId": 2004045657,
-  "NewId": 942878788,
+  "OldId": "YOsw",
+  "NewId": "D038",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718509924,
+      "Id": "danf",
       "Value": 1
     },
     {
-      "Id": 1818846820,
+      "Id": "dfil",
       "Type": 3,
       "Value": "Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory.mdl"
     },
     {
-      "Id": 1835101796,
+      "Id": "dnam",
       "Type": 3,
       "Value": "Gnomereagen buildings"
     },
     {
-      "Id": 2020896868,
+      "Id": "dptx",
       "Type": 3,
       "Value": ""
     }

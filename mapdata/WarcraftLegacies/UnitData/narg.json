@@ -1,36 +1,36 @@
 {
-  "OldId": 1735549294,
+  "OldId": "narg",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1919381621,
+      "Id": "upgr",
       "Type": 3,
       "Value": "Rhme,Rhar"
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 21
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 655
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy melee unit. Immune to spells. "
     }

@@ -1,21 +1,21 @@
 {
-  "OldId": 1919906926,
-  "NewId": 1110847598,
+  "OldId": "ntor",
+  "NewId": "n06B",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "Avul,A0H9,Atsp,Aasl"
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 200
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Level 3)"
     }

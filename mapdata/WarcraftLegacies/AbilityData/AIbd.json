@@ -1,5 +1,5 @@
 {
-  "OldId": 1684162881,
+  "OldId": "AIbd",
   "Unk": [
     0
   ],
@@ -7,18 +7,18 @@
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 829715273,
+      "Id": "Ist1",
       "Type": 3,
       "Value": "n0AC"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829322057,
+      "Id": "Isn1",
       "Value": 2
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Blue Drake Summon"
     }

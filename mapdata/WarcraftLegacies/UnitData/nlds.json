@@ -1,27 +1,27 @@
 {
-  "OldId": 1935961198,
+  "OldId": "nlds",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1819240309,
+      "Id": "ugol",
       "Value": 555
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 800
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged unit that can cast Entangling Roots and summon Prawns. "
     }

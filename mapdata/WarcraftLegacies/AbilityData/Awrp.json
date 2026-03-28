@@ -1,5 +1,5 @@
 {
-  "OldId": 1886549825,
+  "OldId": "Awrp",
   "Unk": [
     0
   ],
@@ -7,14 +7,14 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829452887,
+      "Id": "Wrp1",
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846230103,
+      "Id": "Wrp2",
       "Type": 2,
       "Value": 500
     }

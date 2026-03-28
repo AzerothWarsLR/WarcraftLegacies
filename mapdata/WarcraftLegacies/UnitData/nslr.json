@@ -1,41 +1,41 @@
 {
-  "OldId": 1919710062,
+  "OldId": "nslr",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 0
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 0
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 0
     },
     {
-      "Id": 1935827317,
+      "Id": "uabs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Medium ranged unit that hurls fiery missiles. Can cast Immolation and Firebolt. "
     }

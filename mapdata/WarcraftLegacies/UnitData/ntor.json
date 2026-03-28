@@ -1,11 +1,11 @@
 {
-  "OldId": 1919906926,
+  "OldId": "ntor",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.5
     }

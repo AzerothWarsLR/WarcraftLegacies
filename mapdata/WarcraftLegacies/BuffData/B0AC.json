@@ -1,22 +1,22 @@
 {
-  "OldId": 1768967746,
-  "NewId": 1128345666,
+  "OldId": "BNpi",
+  "NewId": "B0AC",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953526630,
+      "Id": "fspt",
       "Type": 3,
       "Value": "chest"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationTarget.mdl"
     },
     {
-      "Id": 1718840934,
+      "Id": "fnsf",
       "Type": 3,
       "Value": " (Zelemar Effect)"
     }

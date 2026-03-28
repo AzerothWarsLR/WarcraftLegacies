@@ -1,17 +1,17 @@
 {
-  "OldId": 1718830424,
-  "NewId": 1445998680,
+  "OldId": "XEsf",
+  "NewId": "X00V",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101798,
+      "Id": "fnam",
       "Type": 3,
       "Value": "Absorb Nexus"
     },
     {
-      "Id": 1952540006,
+      "Id": "feat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Blizzard\\BlizzardTarget.mdl"
     }

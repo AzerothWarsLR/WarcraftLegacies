@@ -1,6 +1,6 @@
 {
-  "OldId": 1918990145,
-  "NewId": 1431646273,
+  "OldId": "Awar",
+  "NewId": "A0UU",
   "Unk": [
     0
   ],
@@ -8,140 +8,140 @@
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 829579607,
+      "Id": "War1",
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846356823,
+      "Id": "War2",
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 846356823,
+      "Id": "War2",
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 846356823,
+      "Id": "War2",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 3,
       "Pointer": 3,
-      "Id": 863134039,
+      "Id": "War3",
       "Type": 2,
       "Value": 250
     },
     {
       "Level": 3,
       "Pointer": 4,
-      "Id": 879911255,
+      "Id": "War4",
       "Type": 2,
       "Value": 350
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "human"
     },
     {
       "Level": 3,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "ground,enemy,neutral"
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 863134039,
+      "Id": "War3",
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": 879911255,
+      "Id": "War4",
       "Type": 2,
       "Value": 600
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 1
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Archangel)"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": "war3mapImported\\Judgment of Light.mdx"
     },
     {
-      "Id": 1952543585,
+      "Id": "asat",
       "Type": 3,
       "Value": "war3mapImported\\Judgment of Light.mdx"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Righteous Fury"
     },
     {
       "Level": 2,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Pulverize - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Pulverize - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 25% chance that an attack will deal 60 damage to nearby units in a large area."
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
     },
     {
       "Level": 3,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 25% chance that an attack will deal 100 damage to nearby units."
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Righteous Fury"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyHammerOn.blp"
     }

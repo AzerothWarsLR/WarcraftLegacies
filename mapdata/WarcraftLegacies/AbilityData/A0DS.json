@@ -1,6 +1,6 @@
 {
-  "OldId": 1700876097,
-  "NewId": 1396977729,
+  "OldId": "AOae",
+  "NewId": "A0DS",
   "Unk": [
     0
   ],
@@ -8,98 +8,98 @@
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845504847,
+      "Id": "Oae2",
       "Type": 2,
       "Value": 0.6
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "h02W"
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828727631,
+      "Id": "Oae1",
       "Type": 2,
       "Value": 0.3
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "self"
     },
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B011"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(dummy)"
     },
     {
-      "Id": 1953854049,
+      "Id": "arut",
       "Type": 3,
       "Value": "Increases the movement speed and attack rate of nearby friendly units. |n|n|cffffcc00Level 1|r - \u003CAOae,DataA1,%\u003E% movement, \u003CAOae,DataB1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAOae,DataA2,%\u003E% movement, \u003CAOae,DataB2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAOae,DataA3,%\u003E% movement, \u003CAOae,DataB3,%\u003E% attack.|n|cffffcc00Level 4|r - \u003CAOae,DataA4,%\u003E% movement, \u003CAOae,DataB4,%\u003E% attack."
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Martial Spirit"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Increases nearby friendly units\u0027 movement speed by 60% and attack rate by 30%."
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Spells\\Orc\\Bloodlust\\BloodlustSpecial.mdl"
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
     },
     {
-      "Id": 1667331169,
+      "Id": "atac",
       "Value": 2
     },
     {
-      "Id": 811693153,
+      "Id": "ata0",
       "Type": 3,
       "Value": "hand,left"
     },
     {
-      "Id": 828470369,
+      "Id": "ata1",
       "Type": 3,
       "Value": "hand,right"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 0
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": -11
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Martial Spirit"
     }

@@ -1,22 +1,22 @@
 {
-  "OldId": 1702454594,
-  "NewId": 876097602,
+  "OldId": "Beye",
+  "NewId": "B084",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330662,
+      "Id": "frac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1953653094,
+      "Id": "fart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneEye.blp"
     },
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Watcher\u0027s Eye"
     }

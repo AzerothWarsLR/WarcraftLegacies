@@ -1,22 +1,22 @@
 {
-  "OldId": 1650544194,
-  "NewId": 1261580354,
+  "OldId": "BNab",
+  "NewId": "B02K",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
+      "Id": "ftip",
       "Type": 3,
       "Value": "Plague Explosion"
     },
     {
-      "Id": 1700951398,
+      "Id": "fube",
       "Type": 3,
       "Value": "This unit has been infected with the Plague by Ramstein himself. It is taking damage over time as well as having reduced movement speed"
     },
     {
-      "Id": 1952543846,
+      "Id": "ftat",
       "Type": 3,
       "Value": ""
     }

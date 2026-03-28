@@ -1,197 +1,197 @@
 {
-  "OldId": 1919510094,
-  "NewId": 1144008782,
+  "OldId": "Nfir",
+  "NewId": "N00D",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A01Y,ACrk,Apig,Amim,A0I2,A04S,A0HW"
     },
     {
-      "Id": 1902338421,
+      "Id": "uacq",
       "Type": 2,
       "Value": 1200
     },
     {
-      "Id": 1768382837,
+      "Id": "uagi",
       "Value": 45
     },
     {
-      "Id": 1885823349,
+      "Id": "uagp",
       "Type": 2,
       "Value": 4
     },
     {
-      "Id": 1949393269,
+      "Id": "ua1t",
       "Type": 3,
       "Value": "chaos"
     },
     {
-      "Id": 1835098997,
+      "Id": "ucam",
       "Value": 1
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 70
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 2.45
     },
     {
-      "Id": 1717920885,
+      "Id": "udef",
       "Value": 6
     },
     {
-      "Id": 1680957813,
+      "Id": "ua1d",
       "Value": 10
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 40
     },
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1650550901,
+      "Id": "uhab",
       "Type": 3,
       "Value": "ANav"
     },
     {
-      "Id": 1936681077,
+      "Id": "uhos",
       "Value": 1
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 9000
     },
     {
-      "Id": 1953393013,
+      "Id": "uint",
       "Value": 32
     },
     {
-      "Id": 1886284149,
+      "Id": "uinp",
       "Type": 2,
       "Value": 6
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 5000
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 5000
     },
     {
-      "Id": 1953918325,
+      "Id": "umvt",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 1634889845,
+      "Id": "upra",
       "Type": 3,
       "Value": "STR"
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "demon"
     },
     {
-      "Id": 1915838837,
+      "Id": "ua1r",
       "Value": 1200
     },
     {
-      "Id": 1915904373,
+      "Id": "ua2r",
       "Value": 1200
     },
     {
-      "Id": 1919969397,
+      "Id": "uhpr",
       "Type": 2,
       "Value": 40
     },
     {
-      "Id": 1919970677,
+      "Id": "umpr",
       "Type": 2,
       "Value": 3
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 10
     },
     {
-      "Id": 1937141109,
+      "Id": "umvs",
       "Value": 0
     },
     {
-      "Id": 1882284405,
+      "Id": "ua1p",
       "Type": 3,
       "Value": "air,debris,ground,notself,structure"
     },
     {
-      "Id": 1920234357,
+      "Id": "ustr",
       "Value": 22
     },
     {
-      "Id": 1886679925,
+      "Id": "ustp",
       "Type": 2,
       "Value": 5
     },
     {
-      "Id": 828601461,
+      "Id": "utc1",
       "Value": 6
     },
     {
-      "Id": 1868788853,
+      "Id": "utco",
       "Value": 5
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 3
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Primary Firelord"
     },
     {
-      "Id": 1869770869,
+      "Id": "upro",
       "Type": 3,
       "Value": "Ragnaros"
     },
     {
-      "Id": 1668510581,
+      "Id": "ussc",
       "Type": 1,
       "Value": 4
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Ragnaros.mdl"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Mystical Hero, adept at disrupting spells and dealing large amounts of fire damage.  Can learn Soul Burn, Summon Lava Spawn, Incinerate and Volcano."
     }

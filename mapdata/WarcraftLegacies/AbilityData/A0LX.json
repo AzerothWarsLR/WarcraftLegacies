@@ -1,153 +1,153 @@
 {
-  "OldId": 1718174529,
-  "NewId": 1481388097,
+  "OldId": "ACif",
+  "NewId": "A0LX",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B05T"
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 400
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828796489,
+      "Id": "Inf1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845573705,
+      "Id": "Inf2",
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862350921,
+      "Id": "Inf3",
       "Type": 2,
       "Value": 99999
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 0.01
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 0.01
     },
     {
       "Level": 1,
-      "Id": 1918989409,
+      "Id": "atar",
       "Type": 3,
       "Value": "friend,ground,player,self"
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Id": "aran",
       "Type": 2,
       "Value": 99999
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 1
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCRevive.blp"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Draenei)"
     },
     {
-      "Id": 1936090465,
+      "Id": "aefs",
       "Type": 3,
       "Value": ""
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Gateway Reinforcement"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Gateway Reinforcement"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Summons a permanent Defender at the position of the target friendly unit anywhere on the map."
     },
     {
-      "Id": 1918989665,
+      "Id": "auar",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\ATCRevive.blp"
     },
     {
-      "Id": 1802007905,
+      "Id": "auhk",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1952540001,
+      "Id": "aeat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
     },
     {
-      "Id": 1952543585,
+      "Id": "asat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
     },
     {
-      "Id": 1952543841,
+      "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
     },
     {
-      "Id": 811693153,
+      "Id": "ata0",
       "Type": 3,
       "Value": "origin"
     },
     {
-      "Id": 1953526625,
+      "Id": "aspt",
       "Type": 3,
       "Value": "origin"
     },
     {
-      "Id": 2037408353,
+      "Id": "abpy",
       "Value": 0
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 0
     }
   ]

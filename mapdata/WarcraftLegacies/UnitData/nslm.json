@@ -1,15 +1,15 @@
 {
-  "OldId": 1835823982,
+  "OldId": "nslm",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Light melee unit that can Slow opponents. "
     }

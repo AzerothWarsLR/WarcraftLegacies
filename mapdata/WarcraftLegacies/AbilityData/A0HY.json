@@ -1,118 +1,118 @@
 {
-  "OldId": 1751404097,
-  "NewId": 1497903169,
+  "OldId": "ANdh",
+  "NewId": "A0HY",
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
+      "Id": "abuf",
       "Type": 3,
       "Value": "B03B"
     },
     {
-      "Id": 1684562785,
+      "Id": "achd",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1852072801,
+      "Id": "acdn",
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Id": 1935895905,
+      "Id": "amcs",
       "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845771598,
+      "Id": "Nsi2",
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862548814,
+      "Id": "Nsi3",
       "Type": 2,
       "Value": 0.05
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Id": "adur",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1919248481,
+      "Id": "aher",
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
+      "Id": "ahdu",
       "Type": 2,
       "Value": 2
     },
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 1
     },
     {
-      "Id": 1667330657,
+      "Id": "arac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
       "Level": 1,
-      "Id": 1701994849,
+      "Id": "aare",
       "Type": 2,
       "Value": 150
     },
     {
-      "Id": 1953653089,
+      "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCloudOfFog.blp"
     },
     {
-      "Id": 2020631137,
+      "Id": "abpx",
       "Value": 2
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Green - Farstrider, Dark Green - SI:7)"
     },
     {
-      "Id": 2037082209,
+      "Id": "ahky",
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Smoke Bomb"
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Smoke Bomb"
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Throws a smoke bomb in the midst of the enemy causing them to have a 100% chance to miss on attacks. Their movement speed is reduced by 5%.Lasts 4 seconds on units, and 2 seconds on heroes."
     },
     {
-      "Id": 2019718497,
+      "Id": "aubx",
       "Value": 2
     },
     {
-      "Id": 2036495713,
+      "Id": "auby",
       "Value": 2
     }
   ]

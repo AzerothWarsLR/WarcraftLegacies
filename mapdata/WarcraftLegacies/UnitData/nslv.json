@@ -1,45 +1,45 @@
 {
-  "OldId": 1986818926,
+  "OldId": "nslv",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1869571701,
+      "Id": "ufoo",
       "Value": 0
     },
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "ACbl"
     },
     {
-      "Id": 1836412021,
+      "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": 1920298101,
+      "Id": "ulur",
       "Value": 0
     },
     {
-      "Id": 1714512245,
+      "Id": "ua1f",
       "Value": 0
     },
     {
-      "Id": 1748066677,
+      "Id": "ua1h",
       "Value": 0
     },
     {
-      "Id": 1899061621,
+      "Id": "ua1q",
       "Value": 0
     },
     {
-      "Id": 1935827317,
+      "Id": "uabs",
       "Type": 3,
       "Value": "ACbl"
     },
     {
-      "Id": 1651864693,
+      "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged unit that hurls fiery missiles. Can cast Abolish Magic, Mana Burn, and Bloodlust. "
     }

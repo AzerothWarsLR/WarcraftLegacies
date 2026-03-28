@@ -1,94 +1,94 @@
 {
-  "OldId": 846230383,
-  "NewId": 1312108655,
+  "OldId": "osp2",
+  "NewId": "o05N",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
+      "Id": "uabi",
       "Type": 3,
       "Value": "A0HR"
     },
     {
-      "Id": 1664180597,
+      "Id": "ua1c",
       "Type": 2,
       "Value": 1.6
     },
     {
-      "Id": 1647403381,
+      "Id": "ua1b",
       "Value": 21
     },
     {
-      "Id": 1836083317,
+      "Id": "uhpm",
       "Value": 350
     },
     {
-      "Id": 1932616053,
+      "Id": "ua1s",
       "Value": 3
     },
     {
-      "Id": 1701868405,
+      "Id": "uspe",
       "Value": 0
     },
     {
-      "Id": 1999724917,
+      "Id": "ua1w",
       "Type": 3,
       "Value": "msplash"
     },
     {
-      "Id": 1819239285,
+      "Id": "ucol",
       "Type": 2,
       "Value": 8
     },
     {
-      "Id": 1667330677,
+      "Id": "urac",
       "Type": 3,
       "Value": "nightelf"
     },
     {
-      "Id": 1868788853,
+      "Id": "utco",
       "Value": 6
     },
     {
-      "Id": 1768975733,
+      "Id": "umpi",
       "Value": 400
     },
     {
-      "Id": 1836084597,
+      "Id": "umpm",
       "Value": 400
     },
     {
-      "Id": 1633772661,
+      "Id": "udaa",
       "Type": 3,
       "Value": "A0HR"
     },
     {
-      "Id": 1852137845,
+      "Id": "uaen",
       "Value": 0
     },
     {
-      "Id": 1718840949,
+      "Id": "unsf",
       "Type": 3,
       "Value": "(Druids)"
     },
     {
-      "Id": 1835101813,
+      "Id": "unam",
       "Type": 3,
       "Value": "Healing Flower"
     },
     {
-      "Id": 1868786037,
+      "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingPlants.blp"
     },
     {
-      "Id": 1818520949,
+      "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Petal Ward.mdl"
     },
     {
-      "Id": 1633907573,
+      "Id": "usca",
       "Type": 1,
       "Value": 0.9
     }

@@ -1,22 +1,22 @@
 {
-  "OldId": 845243219,
+  "OldId": "Sca2",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1902473825,
+      "Id": "areq",
       "Type": 3,
       "Value": "R09O"
     },
     {
       "Level": 1,
-      "Id": 828467267,
+      "Id": "Cha1",
       "Type": 3,
       "Value": "o00S"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Warsong-Bloodpact Raider)"
     }
