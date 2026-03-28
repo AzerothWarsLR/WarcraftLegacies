@@ -151,6 +151,10 @@ public static class UnitTypeSetup
     {
       NeverDelete = true
     });
+    UnitType.Register(new UnitType(UNIT_NFOH_FOUNTAIN_OF_HEALTH)
+    {
+      NeverDelete = true
+    });
   }
 
   private static void SubSetupOldGods()
