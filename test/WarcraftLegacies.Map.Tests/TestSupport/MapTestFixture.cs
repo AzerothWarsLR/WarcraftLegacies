@@ -64,21 +64,14 @@ public sealed partial class MapTestFixture
     RemovePreplacedUnits(unreachableObjects);
     RemovePreplacedDoodads(unreachableObjects);
 
-    var objectIdsInScript = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+    var referencedIds = GetAllFourCcs(
+      [UncompiledScript],
+      ObjectDatabase.GetItems().Where(x => x.IsTextTooltipExtendedModified).Select(x => x.TextTooltipExtended),
+      ObjectDatabase.GetUnits().Where(x => x.IsTextTooltipExtendedModified).Select(x => x.TextTooltipExtended));
 
-    foreach (var match in FourCcRegex().EnumerateMatches(UncompiledScript))
+    foreach (var obj in unreachableObjects.GetAllObjects().Where(x => referencedIds.Contains(x.GetReadableId())))
     {
-      objectIdsInScript.Add(UncompiledScript.Substring(match.Index, match.Length));
-    }
-
-    var objectsInScript = unreachableObjects
-      .GetAllObjects()
-      .Where(x => objectIdsInScript.Contains(x.GetReadableId()))
-      .ToList();
-
-    foreach (var objectInScript in objectsInScript)
-    {
-      unreachableObjects.RemoveWithChildren(objectInScript);
+      unreachableObjects.RemoveWithChildren(obj);
     }
 
     return unreachableObjects;
@@ -115,6 +108,23 @@ public sealed partial class MapTestFixture
     return _utilityUnitIds.Contains(unit.NewId.InvertEndianness());
   }
 
-  [GeneratedRegex(@"(?<![A-Za-z0-9])[A-Za-z0-9]{4}(?![A-Za-z0-9])")]
+  [GeneratedRegex(@"(?<![A-Z\d])[A-Z\d]{4}(?![A-Z\d])", RegexOptions.IgnoreCase)]
   private static partial Regex FourCcRegex();
+
+  private static HashSet<string> GetAllFourCcs(params IEnumerable<string>[] texts)
+  {
+    // TODO: A reachable fourcc whose uppercase form collides with an unreachable fourcc will produce a false negative
+    // The result is case-insensitive because generated constants uppercase the fourcc.
+    var result = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+    foreach (var text in texts.SelectMany(x => x))
+    {
+      foreach (var match in FourCcRegex().EnumerateMatches(text))
+      {
+        result.Add(text.Substring(match.Index, match.Length));
+      }
+    }
+
+    return result;
+  }
 }
