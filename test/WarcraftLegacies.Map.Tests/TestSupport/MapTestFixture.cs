@@ -19,6 +19,17 @@ public sealed partial class MapTestFixture
       Units.UNIT_U00X_DUMMY_CASTER
   ];
 
+  // Abilities rooted by Items, Upgrades, or other objects that are not yet monitored.
+  private static readonly int[] _rootedAbilityUnitIds =
+  [
+    // Asds
+    1935962945,
+    // Asal
+    1818325825,
+    // AIse
+    1702054209
+  ];
+
   public War3Net.Build.Map Map { get; }
 
   public ObjectDatabase ObjectDatabase { get; }
@@ -57,7 +68,7 @@ public sealed partial class MapTestFixture
     var unreachableObjects = new UnreachableObjectCollection(
       ObjectDatabase.GetUnits().Where(u => !IsUtilityUnit(u)).ToList(),
       ObjectDatabase.GetUpgrades().ToList(),
-      ObjectDatabase.GetAbilities().ToList(),
+      ObjectDatabase.GetAbilities().Where(a => !IsRootedAbility(a)).ToList(),
       ObjectDatabase.GetItems().ToList(),
       ObjectDatabase.GetDoodads().ToList());
 
@@ -106,6 +117,11 @@ public sealed partial class MapTestFixture
   private static bool IsUtilityUnit(Unit unit)
   {
     return _utilityUnitIds.Contains(unit.NewId.InvertEndianness());
+  }
+
+  private static bool IsRootedAbility(Ability ability)
+  {
+    return _rootedAbilityUnitIds.Contains(ability.GetId());
   }
 
   [GeneratedRegex(@"(?<![A-Z\d])[A-Z\d]{4}(?![A-Z\d])", RegexOptions.IgnoreCase)]
