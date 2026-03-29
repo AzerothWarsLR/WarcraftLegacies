@@ -1,7 +1,6 @@
 ﻿using System.Text;
 using FluentAssertions;
-using War3Api.Object;
-using War3Net.Common.Extensions;
+using Warcraft.Cartographer.Extensions;
 using WarcraftLegacies.Map.Tests.TestSupport;
 using Xunit.Sdk;
 
@@ -35,7 +34,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
     };
 
     var upgradesToCheck = fixture.UnreachableObjects.Upgrades
-      .Where(upgrade => !exceptions.Contains(GetReadableId(upgrade)))
+      .Where(upgrade => !exceptions.Contains(upgrade.GetReadableId()))
       .ToList();
 
     if (upgradesToCheck.Count <= 0)
@@ -49,7 +48,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var upgrade in upgradesToCheck)
     {
-      exceptionMessageBuilder.AppendLine($"{GetReadableId(upgrade)} - {GetId(upgrade)}");
+      exceptionMessageBuilder.AppendLine($"{upgrade.GetReadableId()} - {upgrade.GetId()}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -81,7 +80,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var unit in unitsToCheck)
     {
-      exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
+      exceptionMessageBuilder.AppendLine($"{unit.GetReadableId()} - {unit.GetId()}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -113,7 +112,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var unit in abilitiesToCheck)
     {
-      exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
+      exceptionMessageBuilder.AppendLine($"{unit.GetReadableId()} - {unit.GetId()}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -140,13 +139,9 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var doodad in unplacedDoodads)
     {
-      exceptionMessageBuilder.AppendLine($"{GetReadableId(doodad)} - {GetId(doodad)}");
+      exceptionMessageBuilder.AppendLine($"{doodad.GetReadableId()} - {doodad.GetId()}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
-
-  private static int GetId(BaseObject baseObject) => baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
-
-  private static string GetReadableId(BaseObject baseObject) => GetId(baseObject).ToRawcode();
 }
