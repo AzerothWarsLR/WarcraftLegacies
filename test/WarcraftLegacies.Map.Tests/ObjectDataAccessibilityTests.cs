@@ -26,7 +26,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
     }
 
     var exceptions = new HashSet<string>
@@ -65,7 +65,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
     }
 
     var unitsToCheck = fixture.UnreachableObjects.Units.ToList();
@@ -97,7 +97,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
     }
 
     var abilitiesToCheck = fixture.UnreachableObjects.Abilities.ToList();
@@ -131,7 +131,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
     }
 
     var exceptionMessageBuilder = new StringBuilder();
