@@ -227,23 +227,6 @@ public static class UniqueEliteNames
           "Negel Fireye",
           "Warmaul"
         },
-      [UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE] =
-        new()
-        {
-          "Arashicage",
-          "Bloodgrin",
-          "Bonethirst",
-          "Genjuros",
-          "Maim",
-          "Mazuru",
-          "Mizgill",
-          "Moogul the Sly",
-          "Nera'thor",
-          "Rend",
-          "Sagra'nel",
-          "Samuro",
-          "Tojara"
-        },
       [UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] =
         new()
       {

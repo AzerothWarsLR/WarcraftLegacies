@@ -31,7 +31,6 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Skywall",
     "Stormwind",
     "Sunfury",
-    "Warsong",
     "Creep",
     "Horde",
     "NightElves",

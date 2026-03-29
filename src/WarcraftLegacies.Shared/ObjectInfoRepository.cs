@@ -37,7 +37,6 @@ public sealed class ObjectInfoRepository
     AddFactionObjectInfo(SkywallObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
-    AddFactionObjectInfo(WarsongObjectInfo.GetAllObjectLimits());
   }
 
   /// <summary>
