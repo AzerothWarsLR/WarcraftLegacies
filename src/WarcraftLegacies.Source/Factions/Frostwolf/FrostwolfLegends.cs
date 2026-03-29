@@ -13,6 +13,7 @@ public sealed class FrostwolfLegends
   public LegendaryHero Voljin { get; }
   public Capital ThunderBluff { get; }
   public Capital DarkspearHold { get; }
+  public Capital Orgrimmar { get; }
 
   public FrostwolfLegends()
   {
@@ -63,6 +64,13 @@ public sealed class FrostwolfLegends
     {
       UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
       StartingXp = 2800
+    };
+
+    Orgrimmar = new Capital
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
+      DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
+      Essential = true
     };
   }
 
