@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using System.Text.RegularExpressions;
 using War3Api.Object;
 using War3Net.CodeAnalysis.Jass.Extensions;
 using Warcraft.Cartographer.Deserialization;
@@ -12,7 +11,7 @@ namespace WarcraftLegacies.Map.Tests.TestSupport;
 /// <summary>
 /// Provides a fully constructed Warcraft Legacies map.
 /// </summary>
-public sealed partial class MapTestFixture
+public sealed class MapTestFixture
 {
   private static readonly int[] _utilityUnitIds =
   [
@@ -27,7 +26,11 @@ public sealed partial class MapTestFixture
     // Asal
     1818325825,
     // AIse
-    1702054209
+    1702054209,
+    // ANsa
+    1634946625,
+    // AIdf
+    1717848385
   ];
 
   public War3Net.Build.Map Map { get; }
@@ -75,10 +78,7 @@ public sealed partial class MapTestFixture
     RemovePreplacedUnits(unreachableObjects);
     RemovePreplacedDoodads(unreachableObjects);
 
-    var referencedIds = GetAllFourCcs(
-      [UncompiledScript],
-      ObjectDatabase.GetItems().Where(x => x.IsTextTooltipExtendedModified).Select(x => x.TextTooltipExtended),
-      ObjectDatabase.GetUnits().Where(x => x.IsTextTooltipExtendedModified).Select(x => x.TextTooltipExtended));
+    var referencedIds = GetAllFourCcs([UncompiledScript]);
 
     foreach (var obj in unreachableObjects.GetAllObjects().Where(x => referencedIds.Contains(x.GetReadableId())))
     {
@@ -124,9 +124,6 @@ public sealed partial class MapTestFixture
     return _rootedAbilityUnitIds.Contains(ability.GetId());
   }
 
-  [GeneratedRegex(@"(?<![A-Z\d])[A-Z\d]{4}(?![A-Z\d])", RegexOptions.IgnoreCase)]
-  private static partial Regex FourCcRegex();
-
   private static HashSet<string> GetAllFourCcs(params IEnumerable<string>[] texts)
   {
     // TODO: A reachable fourcc whose uppercase form collides with an unreachable fourcc will produce a false negative
@@ -135,7 +132,7 @@ public sealed partial class MapTestFixture
 
     foreach (var text in texts.SelectMany(x => x))
     {
-      foreach (var match in FourCcRegex().EnumerateMatches(text))
+      foreach (var match in MapDataRegex.ParseFourCcs().EnumerateMatches(text))
       {
         result.Add(text.Substring(match.Index, match.Length));
       }
