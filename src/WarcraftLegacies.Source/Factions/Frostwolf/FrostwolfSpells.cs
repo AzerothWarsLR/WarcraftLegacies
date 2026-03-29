@@ -1,5 +1,4 @@
-﻿using MacroTools.Researches;
-using MacroTools.Spells;
+﻿using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Frostwolf.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 using WarcraftLegacies.Source.Shared.Spells.Slipstream;
@@ -27,9 +26,6 @@ public static class FrostwolfSpells
       TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(cripplingShout);
-
-    ParentChildResearchSystem.Register(UPGRADE_RHME_COPPER_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
-      UPGRADE_R06C_KABOOM_LEVEL_UP);
 
     SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
     {

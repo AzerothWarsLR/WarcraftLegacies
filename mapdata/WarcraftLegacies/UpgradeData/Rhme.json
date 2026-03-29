@@ -15,11 +15,6 @@
       "Value": 1
     },
     {
-      "Id": "gba4",
-      "Type": 2,
-      "Value": 1
-    },
-    {
       "Id": "gco2",
       "Type": 3,
       "Value": "Afbt"
@@ -30,22 +25,12 @@
       "Value": "A04W"
     },
     {
-      "Id": "gco4",
-      "Type": 3,
-      "Value": "Asds"
-    },
-    {
       "Id": "gef2",
       "Type": 3,
       "Value": "rlev"
     },
     {
       "Id": "gef3",
-      "Type": 3,
-      "Value": "rlev"
-    },
-    {
-      "Id": "gef4",
       "Type": 3,
       "Value": "rlev"
     },
@@ -64,11 +49,6 @@
     },
     {
       "Id": "gmo3",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Id": "gmo4",
       "Type": 2,
       "Value": 1
     },
