@@ -1,5 +1,4 @@
-﻿using MacroTools.Researches;
-using MacroTools.Spells;
+﻿using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Frostwolf.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 
@@ -25,9 +24,6 @@ public static class FrostwolfSpells
       TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(cripplingShout);
-
-    ParentChildResearchSystem.Register(UPGRADE_RHME_COPPER_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
-      UPGRADE_R06C_KABOOM_LEVEL_UP);
 
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {

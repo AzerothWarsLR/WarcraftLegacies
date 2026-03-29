@@ -18,11 +18,9 @@ public sealed class MapTestFixture
       Units.UNIT_U00X_DUMMY_CASTER
   ];
 
-  // Abilities rooted by Items, Upgrades, or other objects that are not yet monitored.
+  // Abilities rooted by Items that are not yet monitored.
   private static readonly int[] _rootedAbilityUnitIds =
   [
-    // Asds
-    1935962945,
     // Asal
     1818325825,
     // AIse
