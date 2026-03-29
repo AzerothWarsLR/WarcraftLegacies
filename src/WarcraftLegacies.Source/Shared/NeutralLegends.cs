@@ -22,7 +22,6 @@ public sealed class NeutralLegends
   public Capital TheNexus { get; }
   public Capital Karazhan { get; }
   public Capital Zulfarrak { get; }
-  public Capital FountainOfBlood { get; }
   public LegendaryHero Vaelastrasz { get; }
   public Capital Caerdarrow { get; }
   public Capital Shaladrassil { get; }
@@ -144,12 +143,6 @@ public sealed class NeutralLegends
       Unit = AllPreplacedWidgets.Units.Get(UNIT_O00K_GRAND_PYRAMID_OF_ZUL_FARRAK)
     };
 
-    FountainOfBlood = new Capital
-    {
-      Capturable = true,
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_NBFL_FOUNTAIN_OF_BLOOD_WARSONG)
-    };
-
     Vaelastrasz = new LegendaryHero("Vaelastrasz")
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_NRWM_VAELASTRASZ)
@@ -196,7 +189,6 @@ public sealed class NeutralLegends
     CapitalManager.Register(TheNexus);
     CapitalManager.Register(Karazhan);
     CapitalManager.Register(Zulfarrak);
-    CapitalManager.Register(FountainOfBlood);
     CapitalManager.Register(Caerdarrow);
     CapitalManager.Register(Shaladrassil);
     CapitalManager.Register(BlackrookHold);
