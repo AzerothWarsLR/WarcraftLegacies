@@ -93,11 +93,35 @@ public sealed class MapTestFixture
   /// </summary>
   private void RemovePreplacedUnits(UnreachableObjectCollection unreachableObjects)
   {
-    var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.GetId())).ToList();
-    foreach (var preplacedUnit in preplacedUnitTypes)
+    var unitIds = new HashSet<int>();
+    var itemIds = new HashSet<int>();
+
+    foreach (var unit in Map.Units!.Units)
     {
-      unreachableObjects.RemoveWithChildren(preplacedUnit);
+      unitIds.Add(unit.TypeId);
+
+      foreach (var data in unit.InventoryData)
+      {
+        itemIds.Add(data.ItemId);
+      }
+
+      foreach (var itemSetItem in unit.ItemTableSets.SelectMany(s => s.Items))
+      {
+        itemIds.Add(itemSetItem.ItemId);
+      }
+    }
+
+    foreach (var unit in ObjectDatabase.GetUnits().Where(x => unitIds.Contains(x.GetId())).ToList())
+    {
+      unreachableObjects.RemoveWithChildren(unit);
+    }
+
+    foreach (var itemId in itemIds)
+    {
+      if (ObjectDatabase.TryGetItem(itemId, out var item))
+      {
+        unreachableObjects.RemoveWithChildren(item);
+      }
     }
   }
 
