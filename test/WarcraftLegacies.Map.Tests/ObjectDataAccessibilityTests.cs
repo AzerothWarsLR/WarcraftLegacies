@@ -144,4 +144,35 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
+
+  [Fact]
+  public void AllItems_CanBeAccessed()
+  {
+    if (fixture.UnreachableObjects.Items.Count <= 0)
+    {
+      return;
+    }
+
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
+    {
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+    }
+
+    var itemsToCheck = fixture.UnreachableObjects.Items.ToList();
+
+    if (itemsToCheck.Count <= 0)
+    {
+      return;
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    exceptionMessageBuilder.AppendLine($"The following {itemsToCheck.Count} items aren't accessible in the map. Remove them from the map or place them somewhere.");
+
+    foreach (var item in itemsToCheck)
+    {
+      exceptionMessageBuilder.AppendLine($"{item.GetReadableId()} - {item.GetId()}");
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
 }
