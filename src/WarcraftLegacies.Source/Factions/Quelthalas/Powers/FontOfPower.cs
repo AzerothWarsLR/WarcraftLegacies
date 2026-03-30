@@ -51,7 +51,7 @@ public sealed class FontOfPower : Power
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, whichPlayer.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealingDamage, OnDamage, whichPlayer.Id);
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, whichPlayer.Id);
     _playersWithPower.Add(whichPlayer);
   }
@@ -74,7 +74,7 @@ public sealed class FontOfPower : Power
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, whichPlayer.Id);
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealingDamage, OnDamage, whichPlayer.Id);
     PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, whichPlayer.Id);
     _playersWithPower.Remove(whichPlayer);
   }

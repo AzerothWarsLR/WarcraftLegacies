@@ -27,7 +27,7 @@ public sealed class CheatGod : Command
 
   static CheatGod()
   {
-    PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, Damage);
+    PlayerUnitEvents.Register(UnitTypeEvent.Damaging, Damage);
   }
 
   private static bool IsCheatActive(player whichPlayer)
