@@ -1,9 +1,7 @@
-﻿using System.Text;
-using War3Api.Object;
+﻿using War3Api.Object;
 using War3Net.Common.Extensions;
 using Warcraft.Cartographer.Extensions;
 using WarcraftLegacies.Map.Tests.TestSupport;
-using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
@@ -17,14 +15,14 @@ public sealed class UpgradeValidityTests(MapTestFixture fixture)
       .SelectMany(x => GetEffectIssues(x.GetReadableId(), GetEffectFourCcs(x)))
       .ToList();
 
-    ThrowIfAny(issues);
+    ValidityTestHelpers.ThrowIfAny(issues);
   }
 
   private IEnumerable<string> GetEffectIssues(string upgradeId, IEnumerable<string> fourCcs)
   {
     return fourCcs
       .Where(fourCc => !fixture.ObjectDatabase.TryGetObject(fourCc.FromRawcode(), out _))
-      .Select(fourCc => $"{upgradeId} has an invalid effect fourcc '{fourCc}'.");
+      .Select(fourCc => $"{upgradeId} has an invalid effect '{fourCc}'.");
   }
 
   private static IEnumerable<string> GetEffectFourCcs(Upgrade upgrade)
@@ -38,21 +36,5 @@ public sealed class UpgradeValidityTests(MapTestFixture fixture)
     }
     .Where(x => x.IsModified && !string.IsNullOrEmpty(x.FourCc) && x.FourCc != "-")
     .Select(x => x.FourCc);
-  }
-
-  private static void ThrowIfAny(List<string> issues)
-  {
-    if (issues.Count == 0)
-    {
-      return;
-    }
-
-    var sb = new StringBuilder();
-    foreach (var issue in issues)
-    {
-      sb.AppendLine(issue);
-    }
-
-    throw new XunitException(sb.ToString());
   }
 }
