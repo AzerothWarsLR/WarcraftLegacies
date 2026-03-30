@@ -19,15 +19,13 @@ public static class FelHordeTraits
     UnitTypeTraitRegistry.Register(new Execute
     {
       DamageMultNonResistant = 4,
-      DamageMultResistant = 2,
-      DamageMultStructure = 1
+      DamageMultResistant = 2
     }, UNIT_O01L_EXECUTIONER_FEL_ELITE);
 
     UnitTypeTraitRegistry.Register(new Execute
     {
       DamageMultNonResistant = 4,
-      DamageMultResistant = 2,
-      DamageMultStructure = 1
+      DamageMultResistant = 2
     }, UNIT_N0B4_REAPER_NZOTH);
   }
 }

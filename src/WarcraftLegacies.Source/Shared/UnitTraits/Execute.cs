@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPoints;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.Shared.UnitTraits;
@@ -21,22 +20,18 @@ public sealed class Execute : UnitTrait, IAppliesEffectOnDamage
   /// </summary>
   public float DamageMultResistant { get; init; }
 
-  /// <summary>
-  /// Structures are instantly killed when their hit points drop below the caster's attack damage multiplied by this value.
-  /// </summary>
-  public float DamageMultStructure { get; init; }
-
   /// <inheritdoc />
   public void OnDealsDamage()
   {
     var triggerUnit = @event.Unit;
 
-    var damageMult = 1f;
-    if (triggerUnit.IsUnitType(unittype.Structure) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
+    if (!IsValidTarget(triggerUnit))
     {
-      damageMult = DamageMultStructure;
+      return;
     }
-    else if (triggerUnit.IsResistant())
+
+    var damageMult = 1f;
+    if (triggerUnit.IsResistant())
     {
       damageMult = DamageMultResistant;
     }
@@ -58,5 +53,11 @@ public sealed class Execute : UnitTrait, IAppliesEffectOnDamage
     @event.Damage = triggerUnit.Life + 1;
     @event.DamageType = damagetype.Universal;
     effect.Create(Effect, triggerUnit, "origin").Dispose();
+  }
+
+  private static bool IsValidTarget(unit target)
+  {
+    return !target.IsUnitType(unittype.Ancient) &&
+           !target.IsABuilding;
   }
 }
