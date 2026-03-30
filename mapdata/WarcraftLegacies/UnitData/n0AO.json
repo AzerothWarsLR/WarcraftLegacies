@@ -21,7 +21,7 @@
     {
       "Id": "upat",
       "Type": 3,
-      "Value": "PathTextures\\6x6SimpleSolid.tga"
+      "Value": "PathTextures\\6x6unbuildable.tga"
     },
     {
       "Id": "urac",
