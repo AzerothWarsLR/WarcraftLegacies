@@ -53,7 +53,7 @@ public sealed class ConstantsGenerator(ConstantsGeneratorOptions options)
 
     WriteHeader(writer, className);
 
-    foreach (var obj in objects)
+    foreach (var obj in objects.OrderBy(x => x.Key.InvertEndianness()))
     {
       writer.WriteLine($"  public const int {Sanitize(getPropertyName(obj))} = {obj.GetId().InvertEndianness()};");
     }
@@ -71,7 +71,7 @@ public sealed class ConstantsGenerator(ConstantsGeneratorOptions options)
     writer.WriteLine("using WCSharp.Shared.Data;");
     WriteHeader(writer, "Regions");
 
-    foreach (var region in regions)
+    foreach (var region in regions.OrderBy(x => x.Name, StringComparer.Ordinal))
     {
       var propertyName = Sanitize(region.Name.Replace(" ", "_"));
       var propertyValue = string.Create(System.Globalization.CultureInfo.InvariantCulture,
