@@ -1,11 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using System.Text;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 using War3Net.Common.Extensions;
 using Warcraft.Cartographer.Extensions;
 using WarcraftLegacies.Map.Tests.TestSupport;
-using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
@@ -17,21 +15,16 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
   {
     var objectDatabase = fixture.ObjectDatabase;
 
-    var exceptionMessageBuilder = new StringBuilder();
+    var issues = new List<string>();
     foreach (var ability in objectDatabase.GetAbilities())
     {
-      if (VerifyUnitsSummoned(ability, out var unitsSummonedIssues))
+      if (VerifyUnitsSummoned(ability, out var unitsSummonedIssue))
       {
-        exceptionMessageBuilder.AppendLine(unitsSummonedIssues);
+        issues.Add(unitsSummonedIssue);
       }
     }
 
-    if (exceptionMessageBuilder.Length == 0)
-    {
-      return;
-    }
-
-    throw new XunitException(exceptionMessageBuilder.ToString());
+    ValidityTestHelpers.ThrowIfAny(issues);
   }
 
   [Fact]
@@ -39,21 +32,16 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
   {
     var objectDatabase = fixture.ObjectDatabase;
 
-    var exceptionMessageBuilder = new StringBuilder();
+    var issues = new List<string>();
     foreach (var ability in objectDatabase.GetAbilities())
     {
       if (!CanAbilityBeHandledByWar3Net(ability) && ability.Modifications.Any())
       {
-        exceptionMessageBuilder.AppendLine($"{ability.TextName} ({ability.GetReadableId()} - {ability.GetId()}) is of banned type {ability.OldId.ToRawcode()} - {ability.OldId}");
+        issues.Add($"{ability.TextName} ({ability.GetReadableId()} - {ability.GetId()}) is of banned type {ability.OldId.ToRawcode()} - {ability.OldId}");
       }
     }
 
-    if (exceptionMessageBuilder.Length == 0)
-    {
-      return;
-    }
-
-    throw new XunitException(exceptionMessageBuilder.ToString());
+    ValidityTestHelpers.ThrowIfAny(issues);
   }
 
   /// <summary>

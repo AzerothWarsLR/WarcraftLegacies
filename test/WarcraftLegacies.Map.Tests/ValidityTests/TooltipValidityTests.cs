@@ -1,8 +1,6 @@
-﻿using System.Text;
-using War3Net.Common.Extensions;
+﻿using War3Net.Common.Extensions;
 using Warcraft.Cartographer.Extensions;
 using WarcraftLegacies.Map.Tests.TestSupport;
-using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
@@ -17,7 +15,7 @@ public sealed class TooltipValidityTests(MapTestFixture fixture)
       .SelectMany(x => GetTooltipIssues(x.GetReadableId(), x.TextTooltipExtended))
       .ToList();
 
-    ThrowIfAny(issues);
+    ValidityTestHelpers.ThrowIfAny(issues);
   }
 
   [Fact]
@@ -28,7 +26,7 @@ public sealed class TooltipValidityTests(MapTestFixture fixture)
       .SelectMany(x => GetTooltipIssues(x.GetReadableId(), x.TextTooltipExtended))
       .ToList();
 
-    ThrowIfAny(issues);
+    ValidityTestHelpers.ThrowIfAny(issues);
   }
 
   private IEnumerable<string> GetTooltipIssues(string ownerId, string tooltip)
@@ -37,22 +35,6 @@ public sealed class TooltipValidityTests(MapTestFixture fixture)
       .Select(match => match.Groups["fourcc"].Value)
       .Where(fourcc => !fixture.ObjectDatabase.TryGetObject(fourcc.FromRawcode(), out _))
       .Distinct()
-      .Select(fourcc => $"{ownerId} has a tooltip reference to unknown object {fourcc}.");
-  }
-
-  private static void ThrowIfAny(List<string> issues)
-  {
-    if (issues.Count == 0)
-    {
-      return;
-    }
-
-    var sb = new StringBuilder();
-    foreach (var issue in issues)
-    {
-      sb.AppendLine(issue);
-    }
-
-    throw new XunitException(sb.ToString());
+      .Select(fourcc => $"{ownerId} has an invalid tooltip tag '{fourcc}'.");
   }
 }
