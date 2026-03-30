@@ -21,14 +21,8 @@ public sealed class MapTestFixture
   // Abilities rooted by Items that are not yet monitored.
   private static readonly int[] _rootedAbilityUnitIds =
   [
-    // Asal
-    1818325825,
     // AIse
-    1702054209,
-    // ANsa
-    1634946625,
-    // AIdf
-    1717848385
+    1702054209
   ];
 
   public War3Net.Build.Map Map { get; }
