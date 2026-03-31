@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
 public sealed class QuestOrgrimmarFrostwolf : QuestData
 {
   private readonly List<unit> _rescueUnits;
-  private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_WARSONG;
+  private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_FROSTWOLF;
   private readonly List<RockGroup> _rockGroups;
 
   public QuestOrgrimmarFrostwolf(Rectangle rescueRect) : base("To Tame a Land",
