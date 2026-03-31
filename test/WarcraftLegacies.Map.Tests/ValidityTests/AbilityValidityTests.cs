@@ -28,6 +28,34 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
   }
 
   [Fact]
+  public void AllAbilities_HaveValidBuffReferences()
+  {
+    var issues = fixture.ObjectDatabase.GetAbilities()
+      .SelectMany(ability => Enumerable.Range(1, ability.StatsLevels).SelectMany(i => GetInvalidBuffIds(ability, i)))
+      .ToList();
+
+    ValidityTestHelpers.ThrowIfAny(issues);
+  }
+
+  private IEnumerable<string> GetInvalidBuffIds(Ability ability, int level)
+  {
+    return new (bool IsModified, ObjectProperty<string> Property)[]
+      {
+        (ability.IsStatsBuffsModified[level], ability.StatsBuffsRaw),
+        (ability.IsStatsEffectsModified[level], ability.StatsEffectsRaw),
+      }
+      .Where(x => x.IsModified)
+      .SelectMany(x => GetInvalidBuffIds(ability, level, x.Property));
+  }
+
+  private IEnumerable<string> GetInvalidBuffIds(Ability ability, int level, ObjectProperty<string> property)
+  {
+    return property[level].Split(',', StringSplitOptions.RemoveEmptyEntries)
+      .Where(id => !fixture.ObjectDatabase.TryGetBuff(id.FromRawcode(), out _))
+      .Select(id=> $"{ability.TextName} ({ability.GetReadableId()}) references invalid buff '{id}' at level {level}.");
+  }
+
+  [Fact]
   public void AllAbilities_CanBeHandledByWar3Net()
   {
     var objectDatabase = fixture.ObjectDatabase;
