@@ -12,7 +12,8 @@ public sealed class UnreachableObjectCollection(
   List<Upgrade> upgrades,
   List<Ability> abilities,
   List<Item> items,
-  List<Doodad> doodads)
+  List<Doodad> doodads,
+  List<Buff> buffs)
 {
   /// <summary>
   /// Units which have not yet been marked as reachable.
@@ -38,6 +39,11 @@ public sealed class UnreachableObjectCollection(
   /// Doodads which have not yet been marked as reachable.
   /// </summary>
   public List<Doodad> Doodads { get; } = doodads;
+
+  /// <summary>
+  /// Buffs which have not yet been marked as reachable.
+  /// </summary>
+  public List<Buff> Buffs { get; } = buffs;
 
   /// <summary>
   /// All exceptions which have accumulated over the course of removing objects from the collection.
@@ -67,6 +73,9 @@ public sealed class UnreachableObjectCollection(
         break;
       case Doodad doodad:
         RemoveWithChildren(doodad);
+        break;
+      case Buff buff:
+        RemoveWithChildren(buff);
         break;
     }
   }
@@ -1230,6 +1239,25 @@ public sealed class UnreachableObjectCollection(
           }
       }
 
+      for (var i = 1; i <= ability.StatsLevels; i++)
+      {
+        if (ability.IsStatsBuffsModified[i])
+        {
+          foreach (var buff in ability.StatsBuffs[i])
+          {
+            RemoveWithChildren(buff);
+          }
+        }
+
+        if (ability.IsStatsEffectsModified[i])
+        {
+          foreach (var buff in ability.StatsEffects[i])
+          {
+            RemoveWithChildren(buff);
+          }
+        }
+      }
+
       Abilities.Remove(ability);
     }
     catch (Exception ex)
@@ -1238,6 +1266,17 @@ public sealed class UnreachableObjectCollection(
     }
   }
 
+  private void RemoveWithChildren(Buff buff)
+  {
+    try
+    {
+      Buffs.Remove(buff);
+    }
+    catch (Exception ex)
+    {
+      Exceptions.Add(new ObjectRemovalException(buff, ex));
+    }
+  }
 
   private void RemoveWithChildren(Upgrade upgrade)
   {
@@ -1305,6 +1344,7 @@ public sealed class UnreachableObjectCollection(
     objects.AddRange(Upgrades);
     objects.AddRange(Abilities);
     objects.AddRange(Items);
+    objects.AddRange(Buffs);
     return objects;
   }
 }
