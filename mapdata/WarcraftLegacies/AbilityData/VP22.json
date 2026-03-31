@@ -1,73 +1,73 @@
 {
-  "OldId": 1802726977,
-  "NewId": 842158166,
+  "OldId": "Ansk",
+  "NewId": "VP22",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1986358369,
+      "Id": "alev",
       "Value": 2
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 829125459,
+      "Id": "Ssk1",
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 2,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 2,
       "Pointer": 5,
-      "Id": 896234323,
+      "Id": "Ssk5",
       "Value": 1
     },
     {
       "Level": 2,
       "Pointer": 4,
-      "Id": 879457107,
+      "Id": "Ssk4",
       "Value": 1
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845902675,
+      "Id": "Ssk2",
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": 862679891,
+      "Id": "Ssk3",
       "Type": 2,
       "Value": 9
     },
     {
-      "Id": 1835101793,
+      "Id": "anam",
       "Type": 3,
       "Value": "Hardened"
     },
     {
-      "Id": 1718840929,
+      "Id": "ansf",
       "Type": 3,
       "Value": "(Limited Unit)"
     },
     {
       "Level": 2,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces all attacks on the unit by \u003CVP22,DataC2\u003E damage. Attacks cannot be reduced below \u003CVP22,DataB2\u003E damage."
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": "aub1",
       "Type": 3,
       "Value": "Reduces all attacks on the unit by \u003CVP22,DataC1\u003E damage. Attacks cannot be reduced below \u003CVP22,DataB1\u003E damage."
     }
