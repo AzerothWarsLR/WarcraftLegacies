@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Argl,A027,Aspi,A0GM"
+      "Value": "Argl,Aspi,A0GM"
     },
     {
       "Id": "ubld",
@@ -70,12 +70,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R019"
+      "Value": ""
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o04L,n03F,o00A,opeo"
+      "Value": "o00A,opeo"
     },
     {
       "Id": "ulum",
@@ -102,7 +102,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Warsong)"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": "uhot",

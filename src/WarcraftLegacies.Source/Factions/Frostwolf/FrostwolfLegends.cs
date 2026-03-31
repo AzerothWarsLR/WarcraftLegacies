@@ -68,8 +68,8 @@ public sealed class FrostwolfLegends
 
     Orgrimmar = new Capital
     {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
-      DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_FROSTWOLF),
+      DeathMessage = "Orgrimmar has been demolished, and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
       Essential = true
     };
   }

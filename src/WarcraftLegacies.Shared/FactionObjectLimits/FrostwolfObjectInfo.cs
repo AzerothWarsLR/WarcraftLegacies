@@ -24,8 +24,8 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Unlimited, Shop);
     yield return new(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Unlimited, Specialist);
-    yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, Teleport);
-    yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited, Builder);
+    yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF, 1, Teleport);
+    yield return new(UNIT_OPEO_PEON_FROSTWOLF_WORKER, Unlimited, Builder);
     yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, Farm);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, Farm);
 
@@ -42,7 +42,7 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_H0CN_PACKLEADER_FROSTWOLF, 4, new List<UnitCategory> { Fighter, Support });
     yield return new(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2, new List<UnitCategory> { Fighter, Support });
     yield return new(UNIT_N049_WANDERER_FROSTWOLF, 4, new List<UnitCategory> { Marksman, Support });
-    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_FROSTWOLF_FEL_HORDE, Unlimited);
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
     yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
@@ -56,12 +56,11 @@ public static class FrostwolfObjectInfo
     yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROWT_SPIRIT_WALKER_ADEPT_TRAINING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_FROSTWOLF, Unlimited);
-    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
-    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R00W_TOUGHENED_HIDES_FROSTWOLF, Unlimited);
-    yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
-    yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
+    yield return new(UPGRADE_R09N_FLIGHT_PATH_FROSTWOLF, 1);
 
     yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF, 1, new List<UnitCategory> { Destroyer, Summoner });
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF, 1, new List<UnitCategory> { Tank, Support });

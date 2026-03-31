@@ -55,7 +55,6 @@ public static class KultirasObjectInfo
     yield return new(UPGRADE_R000_TIDESAGE_ADEPT_TRAINING_KUL_TIRAS, Unlimited);
     yield return new(UPGRADE_R01O_CRUSHING_WAVE_KUL_TIRAS_SEA_GIANT, Unlimited);
     yield return new(UPGRADE_R01T_CLUSTER_ROCKETS_KUL_TIRAS_BOMBER, Unlimited);
-    yield return new(UPGRADE_R01U_PILLAGE_STONEMAUL, Unlimited);
     yield return new(UPGRADE_R05G_THORNSPEAKER_ADEPT_TRAINING_KULTIRAS, Unlimited);
     yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
     yield return new(UPGRADE_R08B_LONG_RIFLES_KUL_TIRAS, Unlimited);

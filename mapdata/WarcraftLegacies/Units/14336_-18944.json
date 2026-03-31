@@ -29,13 +29,7 @@
     "HeroAgility": 0,
     "HeroIntelligence": 0,
     "InventoryData": [],
-    "AbilityData": [
-      {
-        "AbilityId": 1246113857,
-        "IsAutocastActive": true,
-        "HeroAbilityLevel": 0
-      }
-    ],
+    "AbilityData": [],
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,

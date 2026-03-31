@@ -37,7 +37,6 @@ public static class Items
   public const int ITEM_I01O_TROL_KALAR = 1227895119;
   public const int ITEM_I01P_TECH_ORB_4000 = 1227895120;
   public const int ITEM_I01T_FANDRAL_S_FLAMESCYTHE = 1227895124;
-  public const int ITEM_I01V_GOREHOWL = 1227895126;
   public const int ITEM_I01Y_HELM_OF_DOMINATION = 1227895129;
   public const int ITEM_I0WG_WARGLAIVES_OF_AZZINOTH = 1227904839;
   public const int ITEM_ISGC_THE_SCARAB_GONG = 1230194499;
