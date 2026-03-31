@@ -3,6 +3,7 @@ using War3Api.Object;
 using War3Api.Object.Abilities;
 using War3Net.Common.Extensions;
 using Warcraft.Cartographer.Extensions;
+using Warcraft.Integrity;
 using WarcraftLegacies.Map.Tests.TestSupport;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
@@ -30,7 +31,7 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
   [Fact]
   public void AllAbilities_HaveValidBuffReferences()
   {
-    var issues = fixture.ObjectDatabase.GetAbilities()
+    var issues = fixture.ObjectDatabase.GetAbilities().ToList()
       .SelectMany(ability => Enumerable.Range(1, ability.StatsLevels).SelectMany(i => GetInvalidBuffIds(ability, i)))
       .ToList();
 
@@ -44,15 +45,22 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
         (ability.IsStatsBuffsModified[level], ability.StatsBuffsRaw),
         (ability.IsStatsEffectsModified[level], ability.StatsEffectsRaw),
       }
+      // Only report invalid buffs for fields configured in the map. Errors inherited from the game files are not our responsibility.
       .Where(x => x.IsModified)
-      .SelectMany(x => GetInvalidBuffIds(ability, level, x.Property));
+      .SelectMany(x => GetInvalidBuffIds(ability, level, x.Property, x.IsModified));
   }
 
-  private IEnumerable<string> GetInvalidBuffIds(Ability ability, int level, ObjectProperty<string> property)
+  private IEnumerable<string> GetInvalidBuffIds(Ability ability, int level, ObjectProperty<string> property, bool isFieldModified)
   {
-    return property[level].Split(',', StringSplitOptions.RemoveEmptyEntries)
+    var raw = property.TryGetStringAtLevel(level, isFieldModified);
+    if (raw is null)
+    {
+      return [];
+    }
+
+    return raw.Split(',', StringSplitOptions.RemoveEmptyEntries)
       .Where(id => !fixture.ObjectDatabase.TryGetBuff(id.FromRawcode(), out _))
-      .Select(id=> $"{ability.TextName} ({ability.GetReadableId()}) references invalid buff '{id}' at level {level}.");
+      .Select(id => $"{ability.TextName} ({ability.GetReadableId()}) references invalid buff '{id}' at level {level}.");
   }
 
   [Fact]

@@ -1241,20 +1241,22 @@ public sealed class UnreachableObjectCollection(
 
       for (var i = 1; i <= ability.StatsLevels; i++)
       {
-        if (ability.IsStatsBuffsModified[i])
+        foreach (var buff in ability.StatsBuffs.TryGetBuffsAtLevel(i, ability.IsStatsBuffsModified[i]))
         {
-          foreach (var buff in ability.StatsBuffs[i])
+          RemoveWithChildren(buff);
+        }
+
+        try
+        {
+          foreach (var buff in ability.StatsEffects.TryGetBuffsAtLevel(i, ability.IsStatsEffectsModified[i]))
           {
             RemoveWithChildren(buff);
           }
         }
-
-        if (ability.IsStatsEffectsModified[i])
+        catch (InvalidCastException) when (ability is DeathKnightAnimateDead)
         {
-          foreach (var buff in ability.StatsEffects[i])
-          {
-            RemoveWithChildren(buff);
-          }
+          // DeathKnightAnimateDead.StatsEffects throws InvalidCastException due
+          // to a type mismatch in the game's files for that ability.
         }
       }
 
@@ -1270,6 +1272,11 @@ public sealed class UnreachableObjectCollection(
   {
     try
     {
+      if (!Buffs.Contains(buff))
+      {
+        return;
+      }
+
       Buffs.Remove(buff);
     }
     catch (Exception ex)
