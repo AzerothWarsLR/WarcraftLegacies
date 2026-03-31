@@ -52,6 +52,7 @@ public static class DruidsObjectInfo
     yield return new(UPGRADE_REDT_DRUID_OF_THE_TALON_ADEPT_TRAINING_DRUIDS, Unlimited);
     yield return new(UPGRADE_RENB_NATURE_S_BLESSING_BROWN_RESEARCH, Unlimited);
     yield return new(UPGRADE_RERS_RESISTANT_SKIN_MOUNTAIN_GIANT, Unlimited);
+    yield return new(UPGRADE_VP23_IMPROVED_HARDENED_LIMITED_UNIT, Unlimited);
     yield return new(UPGRADE_REUV_ULTRAVISION_LIGHT_BLUE_RESEARCH_BROWN_RESEARCH, Unlimited);
     yield return new(UPGRADE_REWS_WELL_SPRING, Unlimited);
     yield return new(UPGRADE_REDC_DRUID_OF_THE_CLAW_ADEPT_TRAINING_DRUIDS, Unlimited);

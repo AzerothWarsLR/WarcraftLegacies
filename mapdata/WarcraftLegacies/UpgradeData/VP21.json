@@ -58,15 +58,10 @@
       "Value": "VP20"
     },
     {
-      "Id": "gmo1",
-      "Type": 2,
-      "Value": 1
-    },
-    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNHardenedSkin.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
     },
     {
       "Level": 1,

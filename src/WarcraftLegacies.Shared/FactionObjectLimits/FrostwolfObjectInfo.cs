@@ -59,7 +59,7 @@ public static class FrostwolfObjectInfo
     yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
     yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_FROSTWOLF, Unlimited);
-    yield return new(UPGRADE_R00W_TOUGHENED_HIDES_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_VP23_IMPROVED_HARDENED_LIMITED_UNIT, Unlimited);
     yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
 

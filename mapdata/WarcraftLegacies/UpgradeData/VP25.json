@@ -13,7 +13,7 @@
     {
       "Id": "gba2",
       "Type": 2,
-      "Value": 20
+      "Value": 1
     },
     {
       "Id": "gba3",
@@ -58,15 +58,20 @@
       "Value": "VP24"
     },
     {
-      "Id": "gmo1",
-      "Type": 2,
-      "Value": 1
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "VP20"
     },
     {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNHardenedSkin.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
     },
     {
       "Level": 1,
@@ -90,7 +95,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Improves the Hardened abilities on your elite and hero units, increasing the damage reduction from \u003CVP24,DataC1\u003E to \u003CVP24,DataC2\u003E."
+      "Value": "Improves the Hardened abilities on your units, increasing the damage reduction from \u003CVP20,DataC1\u003E to \u003CVP20,DataC2\u003E on basic units and from \u003CVP24,DataC1\u003E to \u003CVP24,DataC2\u003E on elite and hero units."
     },
     {
       "Id": "gbpx",
