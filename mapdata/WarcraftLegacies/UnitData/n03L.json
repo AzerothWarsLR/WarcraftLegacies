@@ -201,7 +201,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R09X"
+      "Value": "R04B,R09X"
     },
     {
       "Id": "ucol",

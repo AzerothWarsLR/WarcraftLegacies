@@ -11,8 +11,7 @@ public static class WarsongTraits
     UnitTypeTraitRegistry.Register(new Execute
     {
       DamageMultNonResistant = 4,
-      DamageMultResistant = 1.5f,
-      DamageMultStructure = 1
+      DamageMultResistant = 1.5f
     }, UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG);
 
     UnitTypeTraitRegistry.Register(new ResoluteHeart(ABILITY_A0TY_RESOLUTE_HEART_ICON)

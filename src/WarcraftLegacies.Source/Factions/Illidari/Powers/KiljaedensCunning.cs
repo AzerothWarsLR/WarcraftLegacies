@@ -29,6 +29,11 @@ public sealed class KiljaedensCunning : Power
 
   private void OnDamage()
   {
+    if (!IsValidTarget(GetTriggerUnit()))
+    {
+      return;
+    }
+
     var attackTypeDealt = @event.AttackType;
     if (attackTypeDealt != attacktype.Magic && attackTypeDealt != attacktype.Normal)
     {
@@ -49,5 +54,11 @@ public sealed class KiljaedensCunning : Power
       Duration = 1f,
       FadeDuration = 0.25f
     });
+  }
+
+  private static bool IsValidTarget(unit target)
+  {
+    return !target.IsUnitType(unittype.Ancient) &&
+           !target.IsABuilding;
   }
 }
