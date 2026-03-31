@@ -175,4 +175,35 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
+
+  [Fact]
+  public void AllBuffs_CanBeApplied()
+  {
+    if (fixture.UnreachableObjects.Buffs.Count <= 0)
+    {
+      return;
+    }
+
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
+    {
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+    }
+
+    var buffsToCheck = fixture.UnreachableObjects.Buffs.ToList();
+
+    if (buffsToCheck.Count <= 0)
+    {
+      return;
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    exceptionMessageBuilder.AppendLine($"The following {buffsToCheck.Count} buffs aren't applied by any ability in the map. Remove them from the map or assign them to an ability.");
+
+    foreach (var buff in buffsToCheck)
+    {
+      exceptionMessageBuilder.AppendLine($"{buff.GetReadableId()} - {buff.GetId()}");
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
 }
