@@ -73,7 +73,8 @@ public sealed class MapTestFixture
       ObjectDatabase.GetUpgrades().ToList(),
       ObjectDatabase.GetAbilities().Where(a => !IsRootedAbility(a)).ToList(),
       ObjectDatabase.GetItems().ToList(),
-      ObjectDatabase.GetDoodads().ToList());
+      ObjectDatabase.GetDoodads().ToList(),
+      ObjectDatabase.GetBuffs().ToList());
 
     RemovePreplacedUnits(unreachableObjects);
     RemovePreplacedDoodads(unreachableObjects);
@@ -111,9 +112,12 @@ public sealed class MapTestFixture
       }
     }
 
-    foreach (var unit in ObjectDatabase.GetUnits().Where(x => unitIds.Contains(x.GetId())).ToList())
+    foreach (var unitId in unitIds)
     {
-      unreachableObjects.RemoveWithChildren(unit);
+      if (ObjectDatabase.TryGetUnit(unitId, out var unit))
+      {
+        unreachableObjects.RemoveWithChildren(unit);
+      }
     }
 
     foreach (var itemId in itemIds)
