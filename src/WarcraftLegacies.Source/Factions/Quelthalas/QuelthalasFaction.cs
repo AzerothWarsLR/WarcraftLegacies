@@ -79,7 +79,6 @@ public sealed class QuelthalasFaction : Faction
 
   private void RegisterObjectLevels()
   {
-    ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
     ModAbilityAvailability(ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
   }
 
