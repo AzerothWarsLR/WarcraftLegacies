@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks slow enemies hit for \u003Cafrb,Dur1\u003E(Heros for \u003Cafrb,HeroDur1\u003E) seconds."
+      "Value": "Attacks slow enemies hit for \u003CAfrb,Dur1\u003E(Heros for \u003CAfrb,HeroDur1\u003E) seconds."
     }
   ]
 }
