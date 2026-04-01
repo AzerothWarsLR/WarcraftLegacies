@@ -29,11 +29,9 @@ public static class ShoreSetup
     ShoreManager.Register(new Shore(new Point(-2884, 3990), "Broken Isles left"));
     ShoreManager.Register(new Shore(new Point(3425, 5504), "Broken Isles right"));
     ShoreManager.Register(new Shore(new Point(2398, 9324), "Broken Isles top right"));
-    ShoreManager.Register(new Shore(new Point(-4909, -16591), "Zuldazar"));
     ShoreManager.Register(new Shore(new Point(5593, -12891), "Balor"));
     ShoreManager.Register(new Shore(new Point(-2502, -7759), "Kezan"));
     ShoreManager.Register(new Shore(new Point(5727, -8037), "Boralus"));
-    ShoreManager.Register(new Shore(new Point(-4949, -11987), "Vol'dun"));
     ShoreManager.Register(new Shore(new Point(1288, -6019), "Stormsong Valley"));
 
     ShoreManager.Register(new Shore(new Point(-5307, 16156), "Borean Tundra"));
