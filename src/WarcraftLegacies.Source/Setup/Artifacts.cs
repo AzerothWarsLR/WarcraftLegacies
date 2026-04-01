@@ -69,11 +69,6 @@ public static class Artifacts
   /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
-  public static Artifact ObsidianFragment { get; }
-
-  /// <summary>
-  /// A fragment of Zin'rokh.
-  /// </summary>
   public static Artifact BronzeFragment { get; }
 
   public static Artifact SunwellVial { get; }
@@ -117,10 +112,6 @@ public static class Artifacts
     tempUnit.AddAbility(Artifact.ArtifactHolderAbilId);
     tempUnit.AddItem(BronzeFragment.Item);
     ArtifactManager.Register(BronzeFragment);
-
-    ObsidianFragment = new Artifact(item.Create(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-    AllPreplacedWidgets.Units.Get(UNIT_NDTW_XU_BA).AddItem(ObsidianFragment.Item);
-    ArtifactManager.Register(ObsidianFragment);
 
     RubyFragment = new Artifact(item.Create(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
     tempUnit = AllPreplacedWidgets.Units.Get(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB);
