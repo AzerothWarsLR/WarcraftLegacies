@@ -24,18 +24,18 @@
     "TypeId": 1227960388,
     "Variation": 4,
     "Position": {
-      "X": -11793.406,
-      "Y": -13012.1875,
-      "Z": 641.6166
+      "X": -11937.315,
+      "Y": -12906.842,
+      "Z": 589.25
     },
-    "Rotation": 4.2613964,
+    "Rotation": 0.7763352,
     "Scale": {
       "X": 1.25,
       "Y": 1.25,
       "Z": 1.5100999
     },
     "SkinId": 1227960388,
-    "State": 6,
+    "State": 2,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
