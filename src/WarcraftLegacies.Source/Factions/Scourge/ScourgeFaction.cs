@@ -65,7 +65,6 @@ public sealed class ScourgeFaction : Faction
   /// <inheritdoc />
   public override void OnRegistered()
   {
-    RegisterObjectLevels();
     RegisterQuests();
     RegisterPowers();
     RegisterDialogue();
@@ -99,12 +98,6 @@ public sealed class ScourgeFaction : Faction
           faction?.ModObjectLimit(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, 1);
         }
       });
-  }
-
-  private void RegisterObjectLevels()
-  {
-    ModAbilityAvailability(ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
-    ModAbilityAvailability(ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);
   }
 
   private void RegisterQuests()
