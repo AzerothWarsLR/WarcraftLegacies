@@ -67,9 +67,7 @@ public sealed class LordaeronFaction : Faction
   private void RegisterObjectLevels()
   {
     //Todo: these probably should be in some kind of ability library, not here
-    ModAbilityAvailability(ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
     ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
-    ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
     ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, 1);
     ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
   }
