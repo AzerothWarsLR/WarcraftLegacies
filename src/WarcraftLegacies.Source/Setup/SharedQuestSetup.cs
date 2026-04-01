@@ -28,7 +28,6 @@ public static class SharedQuestSetup
       Artifacts.AzureFragment,
       Artifacts.BronzeFragment,
       Artifacts.EmeraldFragment,
-      Artifacts.ObsidianFragment,
       Artifacts.RubyFragment
     }));
   }

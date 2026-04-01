@@ -44,7 +44,6 @@ public sealed class QuestVestigesOfPower : QuestData
       Artifacts.AzureFragment,
       Artifacts.EmeraldFragment,
       Artifacts.RubyFragment,
-      Artifacts.ObsidianFragment,
       Artifacts.BronzeFragment
     };
       var randIndex = GetRandomInt(0, fragments.Count - 1);

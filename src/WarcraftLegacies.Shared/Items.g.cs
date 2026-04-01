@@ -32,7 +32,6 @@ public static class Items
   public const int ITEM_I01I_AZURE_FRAGMENT = 1227895113;
   public const int ITEM_I01J_RUBY_FRAGMENT = 1227895114;
   public const int ITEM_I01K_EMERALD_FRAGMENT = 1227895115;
-  public const int ITEM_I01L_OBSIDIAN_FRAGMENT = 1227895116;
   public const int ITEM_I01M_BRONZE_FRAGMENT = 1227895117;
   public const int ITEM_I01O_TROL_KALAR = 1227895119;
   public const int ITEM_I01P_TECH_ORB_4000 = 1227895120;
