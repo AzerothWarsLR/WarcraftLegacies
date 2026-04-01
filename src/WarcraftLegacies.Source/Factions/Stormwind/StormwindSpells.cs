@@ -1,5 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.Stormwind.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 
@@ -39,5 +40,18 @@ public static class StormwindSpells
       ManaToGrant = 250
     };
     SpellRegistry.Register(manaSyphon);
+
+    UnitTypeTraitRegistry.Register(new RestoreManaFromDamage(ABILITY_A11N_ARCANE_ABSORPTION_SUNFURY_STORMWIND)
+    {
+      ManaPerDamage = new LeveledAbilityField<float>
+      {
+        Base = 0.20f,
+        PerLevel = 0.20f
+      },
+      Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
+    }, new[]
+    {
+        UNIT_H05Y_LORD_WIZARD_STORMWIND,
+    });
   }
 }

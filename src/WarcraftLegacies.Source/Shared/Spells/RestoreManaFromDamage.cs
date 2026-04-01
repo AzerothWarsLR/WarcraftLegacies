@@ -2,7 +2,7 @@
 using MacroTools.UnitTraits;
 using WCSharp.Effects;
 
-namespace WarcraftLegacies.Source.Factions.Sunfury.Spells;
+namespace WarcraftLegacies.Source.Shared.Spells;
 
 /// <summary>
 /// The unit with this ability gains mana based on the damage they deal.
