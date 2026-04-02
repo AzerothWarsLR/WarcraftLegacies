@@ -12,61 +12,12 @@
       "Value": 45
     },
     {
-      "Level": 2,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 60
-    },
-    {
-      "Level": 3,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 60
-    },
-    {
-      "Level": 4,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 60
-    },
-    {
       "Level": 1,
       "Id": "amcs",
       "Value": 60
     },
     {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 135
-    },
-    {
-      "Level": 4,
-      "Id": "amcs",
-      "Value": 155
-    },
-    {
       "Level": 1,
-      "Pointer": 1,
-      "Id": "Ncl1",
-      "Type": 2,
-      "Value": 0.5
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Ncl1",
-      "Type": 2,
-      "Value": 0.5
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Ncl1",
-      "Type": 2,
-      "Value": 0.5
-    },
-    {
-      "Level": 4,
       "Pointer": 1,
       "Id": "Ncl1",
       "Type": 2,
@@ -79,37 +30,7 @@
       "Value": 17
     },
     {
-      "Level": 3,
-      "Pointer": 3,
-      "Id": "Ncl3",
-      "Value": 17
-    },
-    {
-      "Level": 4,
-      "Pointer": 3,
-      "Id": "Ncl3",
-      "Value": 17
-    },
-    {
       "Level": 1,
-      "Pointer": 5,
-      "Id": "Ncl5",
-      "Value": 0
-    },
-    {
-      "Level": 2,
-      "Pointer": 5,
-      "Id": "Ncl5",
-      "Value": 0
-    },
-    {
-      "Level": 3,
-      "Pointer": 5,
-      "Id": "Ncl5",
-      "Value": 0
-    },
-    {
-      "Level": 4,
       "Pointer": 5,
       "Id": "Ncl5",
       "Value": 0
@@ -122,27 +43,6 @@
       "Value": "darkconversion"
     },
     {
-      "Level": 2,
-      "Pointer": 6,
-      "Id": "Ncl6",
-      "Type": 3,
-      "Value": "howlofterror"
-    },
-    {
-      "Level": 3,
-      "Pointer": 6,
-      "Id": "Ncl6",
-      "Type": 3,
-      "Value": "howlofterror"
-    },
-    {
-      "Level": 4,
-      "Pointer": 6,
-      "Id": "Ncl6",
-      "Type": 3,
-      "Value": "howlofterror"
-    },
-    {
       "Id": "arac",
       "Type": 3,
       "Value": "undead"
@@ -150,17 +50,6 @@
     {
       "Id": "alev",
       "Value": 1
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 145
-    },
-    {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": "Ncl3",
-      "Value": 17
     },
     {
       "Id": "aher",
@@ -247,46 +136,10 @@
       "Value": "Death Pact"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Reap - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Reap - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Reap - [|cffffcc00Level 4|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Sacrifices a friendly Undead unit, giving 150% of its hit points to the Death Knight and 20% of it\u0027s hit points in mana. Prioritises summoned units."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Instantly kills the 5 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Instantly kills the 7 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Instantly kills the 9 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
     }
   ]
 }
