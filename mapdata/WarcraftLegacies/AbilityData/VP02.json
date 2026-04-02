@@ -48,21 +48,6 @@
       "Value": "Vampiric Siphon"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Vampiric Siphon - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Causes the hero to heal damage whenever they deal damage to an enemy. |n|n|cffffcc00Level 1|r - Heals 50 per unit hit. |n|cffffcc00Level 2|r - Heals 100 per unit hit."
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,

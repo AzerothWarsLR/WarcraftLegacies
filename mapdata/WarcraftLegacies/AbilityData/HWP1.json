@@ -64,11 +64,6 @@
       "Value": "W"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals \u003CANhw,DataA1\u003E damage, jumps \u003CANhw,DataB1\u003E times, 25% less healing per jump.|n|cffffcc00Level 2|r - Heals \u003CANhw,DataA2\u003E damage, jumps \u003CANhw,DataB2\u003E times, 20% less healing per jump.|n|cffffcc00Level 3|r - Heals \u003CANhw,DataA3\u003E damage, jumps \u003CANhw,DataB3\u003E times, 15% less healing per jump.|n|cffffcc00Level 4|r - Heals \u003CANhw,DataA4\u003E damage, jumps \u003CANhw,DataB4\u003E times, 10% less healing per jump."
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -94,19 +89,9 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFelBurn.blp"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelBurn.blp"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "Energy Wave"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Energy Wave - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,

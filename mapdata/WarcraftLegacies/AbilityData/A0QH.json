@@ -54,21 +54,6 @@
       "Value": "Conveyance Aura"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNLeadershipAura.blp"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Conveyance Aura - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "The unit is an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 5% increased movement speed."
-    },
-    {
       "Id": "atat",
       "Type": 3,
       "Value": "war3mapImported\\SpiralAura.mdx"

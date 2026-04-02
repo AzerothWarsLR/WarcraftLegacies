@@ -47,11 +47,6 @@
       "Value": "Elite Combat Experience"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp"
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
