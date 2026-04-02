@@ -55,21 +55,6 @@
       "Value": "Blessing of Seradane"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Increases movement speed by 5% and attack speed by 3% for nearby friendly units"
-    },
-    {
       "Id": "atat",
       "Type": 3,
       "Value": ""

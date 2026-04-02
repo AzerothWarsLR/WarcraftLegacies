@@ -41,21 +41,6 @@
       "Value": "Hideous Appendages"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacles.blp"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "[|cffffcc00E|r] Learn Hideous Appendages - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "N\u0027zoth has numerous Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth. |n|n|cffffcc00Level 1|r - 5 Tentacles. |n|cffffcc00Level 2|r - 6 Tentacles. |n|cffffcc00Level 3|r - 7 Tentacles. |n|cffffcc00Level 3|r - 8 Tentacles."
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,

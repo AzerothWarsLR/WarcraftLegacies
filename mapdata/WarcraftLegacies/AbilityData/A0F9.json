@@ -286,24 +286,9 @@
       "Value": "Resurgent Flame Strike"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCosmicFlame.blp"
-    },
-    {
       "Id": "arhk",
       "Type": 3,
       "Value": "Q"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": ""
     },
     {
       "Level": 1,

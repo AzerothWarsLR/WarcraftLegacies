@@ -63,16 +63,6 @@
       "Value": "Demon Call"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Demoncall"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Opens a portal, allowing demons to step through and do the Caster\u0027s bidding."
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,

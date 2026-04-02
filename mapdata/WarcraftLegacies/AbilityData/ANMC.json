@@ -95,11 +95,6 @@
       "Value": "Mind Confusion"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellstalker.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 1
     },
@@ -107,16 +102,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Mind Confusion - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "The hero\u0027s masterful trickery stops enemy units from attacking for a short period of time. |n|n|cffffcc00Level 1|r - Small area, lasts 3(2) seconds. |n|cffffcc00Level 2|r - Medium area, lasts 4(2.75) seconds. |n|cffffcc00Level 3|r - Large area, lasts 5(3.5) seconds.|n|cffffcc00Level 4|r - Very large area, lasts 6(4.25) seconds."
     },
     {
       "Level": 1,

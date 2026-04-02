@@ -98,11 +98,6 @@
       "Value": "Snipe"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpOne.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 3
     },
@@ -110,16 +105,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "R"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Assassinate - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "The hero takes aim and fires at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 450 damage, 4 second stun. .8 second on Heroes.|n|cffffcc00Level 2|r - 600 damage, 5 second stun. .9 seconds on Heroes.|n|cffffcc00Level 3|r - 800 damage, 6 second stun. 1 seconds on Heroes."
     },
     {
       "Level": 1,
