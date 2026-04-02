@@ -7,24 +7,17 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
-      "Id": "Ssk1",
-      "Type": 2,
-      "Value": 40
-    },
-    {
-      "Level": 1,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 8
+      "Value": 6
     },
     {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 10
+      "Value": 12
     },
     {
       "Id": "arac",
@@ -69,7 +62,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks against this unit have a \u003CUnho,DataA1\u003E% to have their damage reduced by \u003CUnho,DataC1\u003E. Attacks cannot be reduced below \u003CUnho,DataB1\u003E damage."
+      "Value": "Attacks against this unithave their damage reduced by \u003CUnho,DataC1\u003E. Attacks cannot be reduced below \u003CUnho,DataB1\u003E damage."
     }
   ]
 }
