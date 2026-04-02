@@ -21,12 +21,6 @@
       "Value": "Causes the caster to generate an magical Glaive whenever they cast a spell. The orb orbits around the caster for 20 seconds, dealing 50 damage to enemy units it strikes."
     },
     {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Increases the rate at which this unit gathers lumber."
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASGlaiveStorm.BLP"

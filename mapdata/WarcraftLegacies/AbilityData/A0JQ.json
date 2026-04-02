@@ -12,31 +12,7 @@
       "Value": 120
     },
     {
-      "Level": 2,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 100
-    },
-    {
-      "Level": 3,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 130
-    },
-    {
       "Level": 1,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 2,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 3,
       "Id": "abuf",
       "Type": 3,
       "Value": ""
@@ -48,41 +24,7 @@
       "Value": 0
     },
     {
-      "Level": 2,
-      "Id": "acas",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
-      "Id": "acas",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 2,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 12
-    },
-    {
-      "Level": 3,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 12
-    },
-    {
       "Level": 1,
-      "Id": "amcs",
-      "Value": 150
-    },
-    {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 150
-    },
-    {
-      "Level": 3,
       "Id": "amcs",
       "Value": 150
     },
@@ -94,35 +36,7 @@
       "Value": -100
     },
     {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Hfs1",
-      "Type": 2,
-      "Value": -130
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Hfs1",
-      "Type": 2,
-      "Value": -100
-    },
-    {
       "Level": 1,
-      "Pointer": 2,
-      "Id": "Hfs2",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Hfs2",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 3,
       "Pointer": 2,
       "Id": "Hfs2",
       "Type": 2,
@@ -136,35 +50,7 @@
       "Value": 0
     },
     {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": "Hfs3",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
-      "Pointer": 3,
-      "Id": "Hfs3",
-      "Type": 2,
-      "Value": 0
-    },
-    {
       "Level": 1,
-      "Pointer": 5,
-      "Id": "Hfs5",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 2,
-      "Pointer": 5,
-      "Id": "Hfs5",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 3,
       "Pointer": 5,
       "Id": "Hfs5",
       "Type": 2,
@@ -178,33 +64,7 @@
       "Value": 99999
     },
     {
-      "Level": 2,
-      "Pointer": 6,
-      "Id": "Hfs6",
-      "Type": 2,
-      "Value": 99999
-    },
-    {
-      "Level": 3,
-      "Pointer": 6,
-      "Id": "Hfs6",
-      "Type": 2,
-      "Value": 99999
-    },
-    {
       "Level": 1,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 2,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
       "Id": "adur",
       "Type": 2,
       "Value": 0
@@ -216,31 +76,7 @@
       "Value": "X002"
     },
     {
-      "Level": 2,
-      "Id": "aeff",
-      "Type": 3,
-      "Value": "X002"
-    },
-    {
-      "Level": 3,
-      "Id": "aeff",
-      "Type": 3,
-      "Value": "X002"
-    },
-    {
       "Level": 1,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 2,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
       "Id": "ahdu",
       "Type": 2,
       "Value": 0
@@ -257,31 +93,7 @@
       "Value": 700
     },
     {
-      "Level": 2,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 3,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 700
-    },
-    {
       "Level": 1,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
-    },
-    {
-      "Level": 2,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
-    },
-    {
-      "Level": 3,
       "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
@@ -370,31 +182,7 @@
       "Value": "Rain of Light"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Rain of Light - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Rain of Light - [|cffffcc00Level 2|r]"
-    },
-    {
       "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Heal all friendly units in the target area for 100 hit points."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Heal all friendly units in the target area for 130 hit points."
-    },
-    {
-      "Level": 3,
       "Id": "aub1",
       "Type": 3,
       "Value": "Heal all friendly units in the target area for 100 hit points."

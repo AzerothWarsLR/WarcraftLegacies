@@ -13,27 +13,6 @@
       "Value": 0
     },
     {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Eev1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Eev1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Eev1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
       "Id": "alev",
       "Value": 1
     },
@@ -83,46 +62,10 @@
       "Value": "Infinite Influence"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Hideous Appendages - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Hideous Appendages - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Hideous Appendages - [|cffffcc00Level 4|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "This hero can cast its abilities anywhere within 800 units of a hero you control."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "N\u0027zoth has 6 Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "N\u0027zoth has 7 Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "N\u0027zoth has 8 Tentacles which attack nearby enemy units autonomously. Each Tentacle has the same attack damage as N\u0027zoth."
     },
     {
       "Id": "abpy",
