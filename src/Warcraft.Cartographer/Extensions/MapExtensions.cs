@@ -33,7 +33,12 @@ public static class MapExtensions
     {
       objectDatabase.AddObjects(map.BuffObjectData, new BuffObjectData(ObjectDataFormatVersion.v3));
     }
-    //if (map.DestructableObjectData != null) objectDatabase.AddObjects(map.DestructableObjectData);
+
+    if (map.DestructableObjectData != null)
+    {
+      objectDatabase.AddObjects(map.DestructableObjectData, new DestructableObjectData(ObjectDataFormatVersion.v3));
+    }
+
     if (map.DoodadObjectData != null)
     {
       objectDatabase.AddObjects(map.DoodadObjectData, new DoodadObjectData(ObjectDataFormatVersion.v3));
