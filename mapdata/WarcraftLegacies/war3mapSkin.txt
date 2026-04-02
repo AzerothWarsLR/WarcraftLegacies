@@ -78,3 +78,4 @@ RESOURCES_COLUMN1="Knowledge Gained"
 [her4]
 GameCommand=1,1,1,1
 Hotkey=115
+

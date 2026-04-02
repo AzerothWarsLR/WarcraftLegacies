@@ -16,7 +16,7 @@ public static class AhnqirajSpells
     SpellRegistry.Register(new InspireMadness(ABILITY_ZBIM_INSPIRE_MADNESS_C_THUN)
     {
       Radius = 300,
-      CountBase = 14,
+      CountBase = 6,
       Duration = 30,
       EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
       EffectScaleTarget = 0.5f

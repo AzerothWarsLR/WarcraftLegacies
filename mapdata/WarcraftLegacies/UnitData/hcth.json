@@ -28,10 +28,6 @@
       "Value": 1.2
     },
     {
-      "Id": "udea",
-      "Value": 0
-    },
-    {
       "Id": "udef",
       "Value": 5
     },
@@ -71,11 +67,6 @@
     {
       "Id": "umvs",
       "Value": 225
-    },
-    {
-      "Id": "utyp",
-      "Type": 3,
-      "Value": "undead"
     },
     {
       "Id": "upgr",

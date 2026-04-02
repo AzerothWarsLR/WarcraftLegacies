@@ -55,7 +55,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 22
+      "Value": 28
     },
     {
       "Id": "udp1",
@@ -68,11 +68,11 @@
     },
     {
       "Id": "ugol",
-      "Value": 18
+      "Value": 17
     },
     {
       "Id": "uhpm",
-      "Value": 600
+      "Value": 800
     },
     {
       "Id": "ulum",
@@ -104,6 +104,10 @@
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 550
     },
     {
       "Id": "uico",

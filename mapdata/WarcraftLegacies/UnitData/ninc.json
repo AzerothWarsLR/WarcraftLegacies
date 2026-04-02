@@ -70,7 +70,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 16
+      "Value": 14
     },
     {
       "Id": "ugor",
@@ -87,7 +87,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 500
+      "Value": 575
     },
     {
       "Id": "ulum",
@@ -248,6 +248,10 @@
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 650
     },
     {
       "Id": "ubpx",

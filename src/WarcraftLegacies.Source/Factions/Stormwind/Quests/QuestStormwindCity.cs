@@ -61,7 +61,7 @@ public sealed class QuestStormwindCity : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Units")
+    var rewardPower = new CityOfHeroes(0.2f, 1.5f, "Units")
     {
       IconName = "Angel",
       Name = RewardPowerName,

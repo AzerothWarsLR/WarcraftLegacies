@@ -32,7 +32,7 @@ public sealed class QuestWorldShaman : QuestData
       ControlPointManager.Instance.GetFromUnitType(UNIT_N05Z_STORMHEIM),
     };
     AddObjective(new ObjectiveLegendLevel(_thrall, 8));
-    AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 120, 120, "Taming the Maelstrom"));
+    AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 90, 120, "Taming the Maelstrom"));
     AddObjective(new ObjectiveControlPoints(controlPoints, "on the Broken Isles and near the Maelstrom"));
   }
 
@@ -42,7 +42,7 @@ public sealed class QuestWorldShaman : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Thrall gains 2000 experience and 10 Agility, and you gain the Power Maelstrom Spirit";
+    "Thrall gains 2000 experience and 15 to all attributes, and you gain the Power Maelstrom Spirit";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
@@ -50,11 +50,11 @@ public sealed class QuestWorldShaman : QuestData
     if (_thrall.Unit != null)
     {
       _thrall.Unit.Name = "World-Shaman";
-      _thrall.Unit.AddHeroAttributes(0, 10, 0);
+      _thrall.Unit.AddHeroAttributes(15, 15, 15);
       AddHeroXP(_thrall.Unit, 2000, true);
     }
 
-    var maelstromWeapon = new MaelstromWeapon(0.12f, 100)
+    var maelstromWeapon = new MaelstromWeapon(0.15f, 100)
     {
       Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
       ValidUnitTypes = new[]

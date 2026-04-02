@@ -25,28 +25,28 @@
       "Pointer": 1,
       "Id": "Udc1",
       "Type": 2,
-      "Value": 80
+      "Value": 100
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Udc1",
       "Type": 2,
-      "Value": 120
+      "Value": 150
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Udc1",
       "Type": 2,
-      "Value": 160
+      "Value": 200
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Udc1",
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Id": "alev",

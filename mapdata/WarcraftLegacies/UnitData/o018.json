@@ -131,6 +131,11 @@
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
     }
   ]
 }
