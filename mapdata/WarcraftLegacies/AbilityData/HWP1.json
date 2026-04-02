@@ -6,86 +6,11 @@
   ],
   "Modifications": [
     {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 105
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 120
-    },
-    {
-      "Level": 4,
-      "Id": "amcs",
-      "Value": 135
-    },
-    {
       "Level": 1,
       "Pointer": 1,
       "Id": "Ocl1",
       "Type": 2,
       "Value": 0
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Ocl1",
-      "Type": 2,
-      "Value": 230
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Ocl1",
-      "Type": 2,
-      "Value": 320
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Ocl1",
-      "Type": 2,
-      "Value": 410
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Ocl2",
-      "Value": 5
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "Ocl2",
-      "Value": 6
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": "Ocl2",
-      "Value": 7
-    },
-    {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": "Ocl3",
-      "Type": 2,
-      "Value": 0.2
-    },
-    {
-      "Level": 3,
-      "Pointer": 3,
-      "Id": "Ocl3",
-      "Type": 2,
-      "Value": 0.15
-    },
-    {
-      "Level": 4,
-      "Pointer": 3,
-      "Id": "Ocl3",
-      "Type": 2,
-      "Value": 0.1
     },
     {
       "Id": "aher",
@@ -150,24 +75,6 @@
       "Value": "Calls forth a wave of healing energy that bounces up to 3 times. The primary target is healed for 100, each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
     },
     {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB2\u003E times, healing \u003CA0RR,DataA2\u003E damage on the primary target. Each jump heals 20% less."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB3\u003E times, healing \u003CA0RR,DataA3\u003E damage on the primary target. Each jump heals 15% less."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB4\u003E times, healing \u003CA0RR,DataA4\u003E damage on the primary target. Each jump heals 10% less."
-    },
-    {
       "Id": "atat",
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\MoonWell\\MoonWellCasterArt.mdl"
@@ -206,24 +113,6 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "Energy Wave - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Energy Wave - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Energy Wave - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Energy Wave - [|cffffcc00Level 4|r]"
     },
     {
       "Id": "abpx",

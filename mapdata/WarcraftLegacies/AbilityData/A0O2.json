@@ -21,12 +21,6 @@
       "Value": "This unit has 2 goblin crewing it, they will jump out when the tank is destroyed."
     },
     {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Increases the rate at which this unit gathers lumber."
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASGoblinCommando.blp"

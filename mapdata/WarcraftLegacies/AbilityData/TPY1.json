@@ -30,17 +30,6 @@
       "Value": 12
     },
     {
-      "Level": 5,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 10
-    },
-    {
-      "Level": 5,
-      "Id": "amcs",
-      "Value": 90
-    },
-    {
       "Level": 1,
       "Pointer": 1,
       "Id": "Owk1",
@@ -63,13 +52,6 @@
     },
     {
       "Level": 4,
-      "Pointer": 1,
-      "Id": "Owk1",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 5,
       "Pointer": 1,
       "Id": "Owk1",
       "Type": 2,
@@ -97,13 +79,6 @@
       "Value": 0.45
     },
     {
-      "Level": 5,
-      "Pointer": 2,
-      "Id": "Owk2",
-      "Type": 2,
-      "Value": 0.4
-    },
-    {
       "Level": 1,
       "Pointer": 3,
       "Id": "Owk3",
@@ -125,13 +100,6 @@
       "Value": 85
     },
     {
-      "Level": 5,
-      "Pointer": 3,
-      "Id": "Owk3",
-      "Type": 2,
-      "Value": 125
-    },
-    {
       "Level": 2,
       "Id": "adur",
       "Type": 2,
@@ -150,12 +118,6 @@
       "Value": 20
     },
     {
-      "Level": 5,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 20
-    },
-    {
       "Level": 2,
       "Id": "ahdu",
       "Type": 2,
@@ -169,12 +131,6 @@
     },
     {
       "Level": 4,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 5,
       "Id": "ahdu",
       "Type": 2,
       "Value": 20
@@ -215,12 +171,6 @@
       "Value": "Phantom Step - [|cffffcc00Level 4|r]"
     },
     {
-      "Level": 5,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Wind Walk (|cffffcc00Q|r) - [|cffffcc00Level 5|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -243,12 +193,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Allows the Hero to become invisible, and move \u003CTPY1,DataB4,%\u003E% faster for \u003CTPY1,Dur4\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CTPY1,DataC4\u003E bonus damage."
-    },
-    {
-      "Level": 5,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB5,%\u003E% faster for \u003CAOwk,Dur5\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC5\u003E bonus damage."
     },
     {
       "Id": "ansf",

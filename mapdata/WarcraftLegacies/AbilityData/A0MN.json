@@ -21,12 +21,6 @@
       "Value": "This unit\u0027s abilities consume Oil instead of mana."
     },
     {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Increases the rate at which this unit gathers lumber."
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASOil.blp"
