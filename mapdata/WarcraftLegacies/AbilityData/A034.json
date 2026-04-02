@@ -127,11 +127,6 @@
       "Value": "Arcane Bombardment"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStarfall.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 0
     },
@@ -139,16 +134,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "Q"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Arcane Bombardment - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Bombards an area with arcane missile, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 300 total damage.|n|cffffcc00Level 2|r - 400 total damage.|n|cffffcc00Level 3|r - 500 total damage.|n|cffffcc00Level 4|r - 600 total damage."
     },
     {
       "Level": 1,

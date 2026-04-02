@@ -63,16 +63,6 @@
       "Value": "Q"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn (|cffffcc00Q|r) Pocket Factory - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does 30 damage.|n|cffffcc00Level 2|r - Explosion does 60 damage.|n|cffffcc00Level 3|r - Explosion does 80 damage. |n|cffffcc00Level 4|r - Explosion does 100 damage.|nFactory lasts 40 seconds."
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,

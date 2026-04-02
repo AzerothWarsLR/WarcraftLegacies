@@ -113,11 +113,6 @@
       "Value": "Dark Pact"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyShower.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 1
     },
@@ -129,16 +124,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "R"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "[|cffffcc00R|r] Learn Solar Judgement - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Targets an area for solar bombardment, carpeting it with 28 bolts over the course of 14 seconds. Each bolt deals damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage.  |n|n|cffffcc00Level 1|r - Each bolt deals 40 damage.|n|cffffcc00Level 2|r - Each bolt deals 60 damage. |n|cffffcc00Level 3|r - Each bolt deals 80 damage."
     },
     {
       "Level": 1,

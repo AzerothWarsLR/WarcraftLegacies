@@ -101,11 +101,6 @@
       "Value": "Dark Ritual"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 1
     },
@@ -113,16 +108,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Reap - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Instantly kills the lowest level nearby non-Hero enemy units, granting the caster 5 Strength for each unit slain for 30 seconds. |n|n|cffffcc00Level 1|r - Kills 3 units.|n|cffffcc00Level 2|r - Kills 5 units.|n|cffffcc00Level 3|r - Kills 7 units.|n|cffffcc00Level 4|r - Kills 9 units."
     },
     {
       "Id": "atat",

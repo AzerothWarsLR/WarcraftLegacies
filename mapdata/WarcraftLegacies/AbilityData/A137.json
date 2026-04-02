@@ -44,11 +44,6 @@
       "Value": "King of Lordaeron sword"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostMourne.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 0
     },
@@ -56,16 +51,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "T"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn |cffffcc00T|rhe Power of Frostmourne - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Frostmourne gives the power for Arthas to hit multiple enemies with one swing of his sword .|n|n|cffffcc00Level 1|r - 25% of damage is splash. |n|cffffcc00Level 2|r - 40% of damage is splash. |n|cffffcc00Level 3|r - 55% of damage is splash."
     },
     {
       "Level": 1,

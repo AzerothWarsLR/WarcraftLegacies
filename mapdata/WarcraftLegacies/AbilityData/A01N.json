@@ -113,11 +113,6 @@
       "Value": "Q"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassFrostArmor.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 1
     },
@@ -125,16 +120,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Mass Frost Armor - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Grants Frost Armor to all friendly unit in a target area for \u003CA13S,DataA1\u003E seconds. |n|n|cffffcc00Level 1|r - Grants \u003CA13S,DataB1\u003E armor and has a \u003CA13R,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Grants \u003CA13S,DataB2\u003E armor and has a \u003CA13R,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Grants \u003CA13S,DataB3\u003E armor and has a \u003CA13R,Cool3\u003E second cooldown.|n|cffffcc00Level 4|r - Grants \u003CA13S,DataB4\u003E armor and has a \u003CA13R,Cool4\u003E second cooldown."
     },
     {
       "Id": "atat",

@@ -135,16 +135,6 @@
       "Value": "Q"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Frost Nova (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate. |n|n|cffffcc00Level 1|r - 100 target damage, 50 nova damage. |n|cffffcc00Level 2|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 3|r - 100 target damage, 150 nova damage. |n|cffffcc00Level 4|r - 100 target damage, 200 nova damage. |n|cffffcc00Level 5|r - 100 target damage, 250 nova damage."
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,

@@ -77,11 +77,6 @@
       "Value": "Summon Elekks"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Summon Fel Hounds - [|cffffcc00Level %d|r]"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "Summon Elekks"
@@ -90,11 +85,6 @@
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNElephant.blp"
-    },
-    {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp"
     },
     {
       "Id": "arpx",
