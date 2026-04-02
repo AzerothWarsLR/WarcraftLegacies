@@ -119,11 +119,6 @@
       "Value": "For The Horde!"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_BloodBoil.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 3
     },
@@ -131,16 +126,6 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "R"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Blood Frenzy - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Greatly increases the attack speed and move speed of units inside the targeted area. |n|n|cffffcc00Level 1|r - 90% increased attack speed, 120% increased movement speed. Lasts 30 seconds. |n|cffffcc00Level 2|r - 110% increased attack speed, 130% increased movement speed. Lasts 30 seconds |n|cffffcc00Level 3|r - 130% increased attack speed, 140% increased movement speed. Lasts 30 seconds"
     },
     {
       "Level": 1,

@@ -130,11 +130,6 @@
       "Value": "Ice Block"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCosmicFlame.blp"
-    },
-    {
       "Id": "arhk",
       "Type": 3,
       "Value": "Q"

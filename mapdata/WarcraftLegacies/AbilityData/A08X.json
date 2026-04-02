@@ -71,24 +71,9 @@
       "Value": "Aura of Dread"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerationAura.blp"
-    },
-    {
       "Id": "arhk",
       "Type": 3,
       "Value": "E"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Aura of Dread - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Decreases armor of nearby enemy units in 600 AOE. |n|n|cffffcc00Level 1|r - Decreases armor by 1.5. |n|cffffcc00Level 2|r - Decreases armor by 3. |n|cffffcc00Level 3|r - Decreases armor by 4.5. |n|cffffcc00Level 4|r - Decreases armor by 6."
     },
     {
       "Id": "atat",

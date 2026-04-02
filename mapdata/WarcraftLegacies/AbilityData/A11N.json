@@ -38,11 +38,6 @@
       "Value": "E"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "When this hero deals damage, it will regain a portion of the damage dealt as mana. |n|n|cffffcc00Level 1|r - 40% of the damage gained as mana. |n|cffffcc00Level 2|r - 60% of the damage gained as mana.|n|cffffcc00Level 3|r - 80% of the damage gained as mana.|n|cffffcc00Level 4|r - 100% of the damage gained as mana."
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -54,19 +49,9 @@
       "Value": "Arcane Absorption"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Arcane Absorption - [|cffffcc00Level %d|r]"
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures/PassiveButtons/PASArcaneEnergy.blp"
-    },
-    {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneEnergy.blp"
     },
     {
       "Level": 1,

@@ -100,23 +100,8 @@
       "Value": "Auberdine Navy"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfBattleCruiser.blp"
-    },
-    {
       "Id": "arpx",
       "Value": 0
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": ""
     },
     {
       "Level": 1,
