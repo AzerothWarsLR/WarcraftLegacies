@@ -177,13 +177,13 @@ namespace War3Api.Object
 
         public void AddObjects(DestructableObjectData destructableObjectData, DestructableObjectData destructableSkinObjectData)
         {
-          foreach (var oldDestructable in destructableObjectData.BaseDestructables) 
-            AddOrModifyBaseDestructable(oldDestructable);
-            
-          foreach (var oldDestructable in destructableObjectData.NewDestructables) 
+          foreach (var oldDestructable in destructableObjectData.BaseDestructables)
             AddOrModifyBaseDestructable(oldDestructable);
 
-          foreach (var newDestructable in destructableSkinObjectData.BaseDestructables) 
+          foreach (var oldDestructable in destructableObjectData.BaseDestructables)
+            AddOrModifyBaseDestructable(oldDestructable);
+
+          foreach (var newDestructable in destructableSkinObjectData.NewDestructables)
             AddOrModifyNewDestructable(newDestructable);
 
           foreach (var newDestructable in destructableSkinObjectData.NewDestructables)
