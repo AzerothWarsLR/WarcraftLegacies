@@ -78,28 +78,28 @@
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 200
+      "Value": 175
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 275
+      "Value": 250
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 350
+      "Value": 325
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 425
+      "Value": 400
     },
     {
       "Level": 1,

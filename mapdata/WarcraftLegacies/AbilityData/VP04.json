@@ -6,24 +6,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "amcs",
-      "Value": 90
-    },
-    {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 90
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 90
-    },
-    {
       "Level": 4,
       "Id": "amcs",
-      "Value": 90
+      "Value": 75
     },
     {
       "Level": 1,

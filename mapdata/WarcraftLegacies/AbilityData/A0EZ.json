@@ -62,7 +62,7 @@
       "Pointer": 2,
       "Id": "Rej2",
       "Type": 2,
-      "Value": -100
+      "Value": -150
     },
     {
       "Id": "aart",
@@ -93,7 +93,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Inflicts a curse upon the target unit, causing it to lose 25 hit points and 10 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."
+      "Value": "Inflicts a curse upon the target unit, causing it to lose 25 hit points and 15 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."
     }
   ]
 }

@@ -17,7 +17,7 @@
       "Pointer": 5,
       "Id": "Def5",
       "Type": 2,
-      "Value": 0.55
+      "Value": 0.45
     },
     {
       "Id": "arac",
@@ -53,7 +53,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces the damage taken from Magic attacks and Spells by 45%."
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 55%."
     }
   ]
 }

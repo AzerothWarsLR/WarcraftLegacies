@@ -104,12 +104,12 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 90
+      "Value": 120
     },
     {
       "Level": 2,
       "Id": "amcs",
-      "Value": 105
+      "Value": 120
     },
     {
       "Level": 3,
@@ -119,7 +119,7 @@
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 135
+      "Value": 120
     },
     {
       "Level": 1,
@@ -133,21 +133,21 @@
       "Pointer": 1,
       "Id": "Uin1",
       "Type": 2,
-      "Value": 150
+      "Value": 145
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Uin1",
       "Type": 2,
-      "Value": 200
+      "Value": 190
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Uin1",
       "Type": 2,
-      "Value": 250
+      "Value": 225
     },
     {
       "Level": 1,
@@ -341,7 +341,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Call a comet from the sky, dealing damage and stunning enemy land units for 2 seconds in an area.|n|cffffcc00Level 1|r - 100 damage.|n|cffffcc00Level 2|r - 200 damage.|n|cffffcc00Level 3|r - 300 damage.|n|cffffcc00Level 4|r - 400 damage."
+      "Value": "Call a comet from the sky, dealing damage and stunning enemy land units for 2 seconds in an area.|n|cffffcc00Level 1|r - \u003CA00W,DataA1\u003E damage.|n|cffffcc00Level 2|r - \u003CA00W,DataA2\u003E damage.|n|cffffcc00Level 3|r - \u003CA00W,DataA3\u003E damage.|n|cffffcc00Level 4|r - \u003CA00W,DataA4\u003E damage."
     },
     {
       "Level": 1,
@@ -371,25 +371,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Call a comet from the sky, dealing 100 damage and stunning enemy land units for 2 seconds in an area."
+      "Value": "Call a comet from the sky, dealing \u003CA00W,DataA1\u003E damage and stunning enemy land units for 2 seconds in an area."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Call a comet from the sky, dealing 150 damage and stunning enemy land units for 2 seconds in an area."
+      "Value": "Call a comet from the sky, dealing \u003CA00W,DataA2\u003E damage and stunning enemy land units for 2 seconds in an area."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Call a comet from the sky, dealing 200 damage and stunning enemy land units for 2 seconds in an area."
+      "Value": "Call a comet from the sky, dealing \u003CA00W,DataA3\u003E damage and stunning enemy land units for 2 seconds in an area."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Call a comet from the sky, dealing 250 damage and stunning enemy land units for 2 seconds in an area."
+      "Value": "Call a comet from the sky, dealing \u003CA00W,DataA1\u003E damage and stunning enemy land units for 2 seconds in an area."
     }
   ]
 }

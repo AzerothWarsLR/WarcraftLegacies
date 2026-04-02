@@ -27,14 +27,14 @@ public sealed class LegionLegends
     {
       UnitType = UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION,
       PlayerColor = playercolor.Orange,
-      StartingXp = 400
+      StartingXp = 1800
     };
 
     Tichondrius = new LegendaryHero("Tichondrius")
     {
       UnitType = UNIT_UTIC_THE_DARKENER_LEGION,
       PlayerColor = playercolor.Red,
-      StartingXp = 1000
+      StartingXp = 1800
     };
 
     Malganis = new LegendaryHero("Mal'ganis")

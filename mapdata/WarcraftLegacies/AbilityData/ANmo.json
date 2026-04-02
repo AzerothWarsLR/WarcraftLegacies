@@ -64,21 +64,21 @@
       "Pointer": 1,
       "Id": "Esf1",
       "Type": 2,
-      "Value": 30
+      "Value": 45
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Esf1",
       "Type": 2,
-      "Value": 60
+      "Value": 80
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Esf1",
       "Type": 2,
-      "Value": 90
+      "Value": 115
     },
     {
       "Level": 1,
@@ -219,7 +219,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Calls a storm of lightning bolts to strike enemy units for 20 seconds.|n |n|cffffcc00Level 1|r - 30 damage dealt by each lightning strike. |n|cffffcc00Level 2|r - 60 damage dealt by each lightning strike. |n|cffffcc00Level 3|r - 90 damage dealt by each lightning strike."
+      "Value": "Calls a storm of lightning bolts to strike enemy units for 20 seconds.|n |n|cffffcc00Level 1|r - 45 damage dealt by each lightning strike. |n|cffffcc00Level 2|r - 80 damage dealt by each lightning strike. |n|cffffcc00Level 3|r - 115 damage dealt by each lightning strike."
     },
     {
       "Level": 1,
@@ -243,19 +243,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Calls down a storm of lightning to strike enemy units for 30 damage. |nLasts 20 seconds."
+      "Value": "Calls down a storm of lightning to strike enemy units for 45 damage. |nLasts 20 seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Calls down a storm of lightning to strike enemy units for 60 damage. |nLasts 20 seconds."
+      "Value": "Calls down a storm of lightning to strike enemy units for 80 damage. |nLasts 20 seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Calls down a storm of lightning to strike enemy units for 90 damage. |nLasts 20 seconds."
+      "Value": "Calls down a storm of lightning to strike enemy units for 115 damage. |nLasts 20 seconds."
     }
   ]
 }
