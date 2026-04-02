@@ -20,20 +20,6 @@
       "Value": 0
     },
     {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Eev1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Eev1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
       "Id": "alev",
       "Value": 2
     },
@@ -89,18 +75,6 @@
       "Value": "Vampiric Siphon - [|cffffcc00Level 2|r]"
     },
     {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 4|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -111,18 +85,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Causes the unit to heal a small amount whenever they deal damage to an enemy. Scales with upgrades."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Causes Illidan\u0027s attacks to deal 50 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Causes Illidan\u0027s attacks to deal 65 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
     },
     {
       "Id": "arhk",
