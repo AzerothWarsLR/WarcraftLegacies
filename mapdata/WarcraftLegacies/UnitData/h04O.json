@@ -84,6 +84,15 @@
       "Value": 0
     },
     {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "umvs",
+      "Value": 360
+    },
+    {
       "Id": "ubpx",
       "Value": 2
     },

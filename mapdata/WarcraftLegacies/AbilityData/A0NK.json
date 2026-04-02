@@ -10,28 +10,28 @@
       "Pointer": 1,
       "Id": "Spo1",
       "Type": 2,
-      "Value": 10
+      "Value": 25
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Spo1",
       "Type": 2,
-      "Value": 20
+      "Value": 25
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Spo1",
       "Type": 2,
-      "Value": 30
+      "Value": 25
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Spo1",
       "Type": 2,
-      "Value": 40
+      "Value": 25
     },
     {
       "Level": 1,
@@ -117,53 +117,47 @@
       "Level": 1,
       "Id": "adur",
       "Type": 2,
-      "Value": 1
+      "Value": 6
     },
     {
       "Level": 2,
       "Id": "adur",
       "Type": 2,
-      "Value": 2
+      "Value": 6
     },
     {
       "Level": 3,
       "Id": "adur",
       "Type": 2,
-      "Value": 3
+      "Value": 6
     },
     {
       "Level": 4,
       "Id": "adur",
       "Type": 2,
-      "Value": 4
+      "Value": 6
     },
     {
       "Id": "aher",
       "Value": 1
     },
     {
-      "Level": 1,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 0.4
-    },
-    {
       "Level": 2,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 0.8
+      "Value": 2
     },
     {
       "Level": 3,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 1.2
+      "Value": 2.5
     },
     {
       "Level": 4,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 1.6
+      "Value": 3
     },
     {
       "Id": "alev",
@@ -227,6 +221,12 @@
       "Value": 1
     },
     {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(putress-Skeram)"
@@ -258,7 +258,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "The hero\u0027s attacks completely poisons enemy units slowing their attack by 250% and movement speed by 10%. |n|n|cffffcc00Level 1|r - Lasts 1 seconds on units, 0.4 second on heroes dealing 10 damage per second. |n|cffffcc00Level 2|r - Lasts 2 seconds on units, .8 seconds on heroes dealing 20 damage per second. |n|cffffcc00Level 3|r - Lasts 3 seconds on units, 1.2 seconds on heroes dealing 30 damage per second. |n|cffffcc00Level 4|r - Lasts 4 seconds on units, 1.6 seconds on heroes dealing 40 damage per second."
+      "Value": "The hero\u0027s attacks completely poisons enemy units slowing their attack by 250% and movement speed by 10%. |n|n|cffffcc00Level 1|r - Lasts \u003CA0NK,Dur1\u003E seconds on units, \u003CA0NK,HeroDur1,.\u003E seconds on heroes dealing \u003CA0NK,DataA1\u003E damage per second. |n|cffffcc00Level 2|r - Lasts \u003CA0NK,Dur2\u003E seconds on units, \u003CA0NK,HeroDur2,.\u003E seconds on heroes dealing \u003CA0NK,DataA2\u003E damage per second. |n|cffffcc00Level 3|r - Lasts \u003CA0NK,Dur3\u003E seconds on units, \u003CA0NK,HeroDur3,.\u003E seconds on heroes dealing \u003CA0NK,DataA3\u003E damage per second. |n|cffffcc00Level 4|r - Lasts \u003CA0NK,Dur4\u003E seconds on units, \u003CA0NK,HeroDur4,.\u003E seconds on heroes dealing \u003CA0NK,DataA4\u003E damage per second."
     },
     {
       "Level": 1,
@@ -288,25 +288,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 1 seconds dealing 10 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 1 seconds dealing \u003CA0NK,DataA1\u003E damage per second. Lasts \u003CA0NK,Dur1\u003E seconds on units and \u003CA0NK,HeroDur1,.\u003E seconds on heroes."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 2 seconds dealing 20 damage per second. Lasts 0.8 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 1 seconds dealing \u003CA0NK,DataA2\u003E damage per second. Lasts \u003CA0NK,Dur2\u003E seconds on units and \u003CA0NK,HeroDur2,.\u003E seconds on heroes."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 3 seconds dealing 30 damage per second. Lasts 1.2 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 1 seconds dealing \u003CA0NK,DataA3\u003E damage per second. Lasts \u003CA0NK,Dur3\u003E seconds on units and \u003CA0NK,HeroDur3,.\u003E seconds on heroes."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 4 seconds dealing 40 damage per second. Lasts 1.6 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and movement speed by 10% for 1 seconds dealing \u003CA0NK,DataA4\u003E damage per second. Lasts \u003CA0NK,Dur4\u003E seconds on units and \u003CA0NK,HeroDur4,.\u003E seconds on heroes."
     },
     {
       "Id": "aart",

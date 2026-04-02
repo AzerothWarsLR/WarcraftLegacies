@@ -35,7 +35,7 @@ public static class ScourgeSpells
     {
       DummyAbilityId = ABILITY_A13S_MASS_FROST_ARMOUR_KEL_THUZAD_DUMMY,
       DummyAbilityOrderId = ORDER_FROST_ARMOR,
-      Radius = 200,
+      Radius = 250,
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
       TargetType = SpellTargetType.Point
     };
@@ -113,7 +113,7 @@ public static class ScourgeSpells
     {
       DummyAbilityId = ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
       DummyAbilityOrderId = ORDER_DEATH_COIL,
-      Radius = 250,
+      Radius = 300,
       CasterHealPerTargetUpgraded = 25,
       UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
     });

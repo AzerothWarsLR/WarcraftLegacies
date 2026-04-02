@@ -9,25 +9,25 @@
       "Level": 1,
       "Id": "aare",
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Level": 2,
       "Id": "aare",
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Level": 3,
       "Id": "aare",
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Level": 4,
       "Id": "aare",
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Level": 1,
@@ -61,12 +61,12 @@
     {
       "Level": 2,
       "Id": "amcs",
-      "Value": 135
+      "Value": 125
     },
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 155
+      "Value": 125
     },
     {
       "Level": 1,
@@ -199,25 +199,25 @@
       "Level": 1,
       "Id": "aran",
       "Type": 2,
-      "Value": 600
+      "Value": 650
     },
     {
       "Level": 2,
       "Id": "aran",
       "Type": 2,
-      "Value": 600
+      "Value": 650
     },
     {
       "Level": 3,
       "Id": "aran",
       "Type": 2,
-      "Value": 600
+      "Value": 650
     },
     {
       "Level": 4,
       "Id": "aran",
       "Type": 2,
-      "Value": 600
+      "Value": 650
     },
     {
       "Id": "alev",
@@ -226,7 +226,7 @@
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 145
+      "Value": 125
     },
     {
       "Level": 2,
