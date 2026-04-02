@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": "uabi",
-      "Type": 3,
-      "Value": "Aihn"
-    },
-    {
       "Id": "uacq",
       "Type": 2,
       "Value": 700
@@ -68,7 +63,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "o03Q"
+      "Value": ""
     },
     {
       "Id": "umvs",
@@ -77,12 +72,12 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhar,Rhme"
+      "Value": ""
     },
     {
       "Id": "urac",
       "Type": 3,
-      "Value": "orc"
+      "Value": "creeps"
     },
     {
       "Id": "ua1b",
@@ -105,6 +100,11 @@
       "Value": 545
     },
     {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
@@ -120,19 +120,9 @@
       "Value": 0.85
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "Highly skilled sharpshooter, and fan of the boomstick. "
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "Gunner"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "Train Gunner"
     },
     {
       "Id": "usnd",
