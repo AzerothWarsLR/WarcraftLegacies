@@ -146,6 +146,33 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
   }
 
   [Fact]
+  public void AllDestructables_ArePlaced()
+  {
+    var unplacedDestructables = fixture.UnreachableObjects.Destructables;
+
+    if (unplacedDestructables.Count <= 0)
+    {
+      return;
+    }
+
+    if (fixture.UnreachableObjects.Exceptions.Count != 0)
+    {
+      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    exceptionMessageBuilder.AppendLine(
+      $"The following {unplacedDestructables.Count} destructables aren't placed anywhere on the map. Remove them from the map or place them somewhere.");
+
+    foreach (var destructable in unplacedDestructables)
+    {
+      exceptionMessageBuilder.AppendLine($"{destructable.GetReadableId()} - {destructable.GetId()}");
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
+
+  [Fact]
   public void AllItems_CanBeAccessed()
   {
     if (fixture.UnreachableObjects.Items.Count <= 0)

@@ -13,6 +13,7 @@ public sealed class UnreachableObjectCollection(
   List<Ability> abilities,
   List<Item> items,
   List<Doodad> doodads,
+  List<Destructable> destructables,
   List<Buff> buffs)
 {
   /// <summary>
@@ -39,6 +40,11 @@ public sealed class UnreachableObjectCollection(
   /// Doodads which have not yet been marked as reachable.
   /// </summary>
   public List<Doodad> Doodads { get; } = doodads;
+
+  /// <summary>
+  /// Destructables which have not yet been marked as reachable.
+  /// </summary>
+  public List<Destructable> Destructables { get; } = destructables;
 
   /// <summary>
   /// Buffs which have not yet been marked as reachable.
@@ -73,6 +79,9 @@ public sealed class UnreachableObjectCollection(
         break;
       case Doodad doodad:
         RemoveWithChildren(doodad);
+        break;
+      case Destructable destructable:
+        RemoveWithChildren(destructable);
         break;
       case Buff buff:
         RemoveWithChildren(buff);
@@ -1338,6 +1347,23 @@ public sealed class UnreachableObjectCollection(
     catch (Exception ex)
     {
       Exceptions.Add(new ObjectRemovalException(doodad, ex));
+    }
+  }
+
+  private void RemoveWithChildren(Destructable destructable)
+  {
+    try
+    {
+      if (!Destructables.Contains(destructable))
+      {
+        return;
+      }
+
+      Destructables.Remove(destructable);
+    }
+    catch (Exception ex)
+    {
+      Exceptions.Add(new ObjectRemovalException(destructable, ex));
     }
   }
 

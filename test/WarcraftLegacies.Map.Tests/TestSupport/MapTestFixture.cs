@@ -74,6 +74,7 @@ public sealed class MapTestFixture
       ObjectDatabase.GetAbilities().Where(a => !IsRootedAbility(a)).ToList(),
       ObjectDatabase.GetItems().ToList(),
       ObjectDatabase.GetDoodads().ToList(),
+      ObjectDatabase.GetDestructables().ToList(),
       ObjectDatabase.GetBuffs().ToList());
 
     RemovePreplacedUnits(unreachableObjects);
@@ -130,15 +131,21 @@ public sealed class MapTestFixture
   }
 
   /// <summary>
-  /// Identifies preplaced doodads on the map and removes them, and their children, from the <see cref="UnreachableObjectCollection"/>.
+  /// Identifies preplaced doodads and destructables on the map and removes them, and their children, from the <see cref="UnreachableObjectCollection"/>.
   /// </summary>
   private void RemovePreplacedDoodads(UnreachableObjectCollection unreachableObjects)
   {
-    var preplacedDoodadIds = Map.Doodads!.Doodads.Select(x => x.TypeId).ToHashSet();
-    var preplacedDoodadTypeIds = ObjectDatabase.GetDoodads().Where(x => preplacedDoodadIds.Contains(x.GetId())).ToList();
-    foreach (var preplacedDoodadTypeId in preplacedDoodadTypeIds)
+    foreach (var doodadData in Map.Doodads!.Doodads)
     {
-      unreachableObjects.RemoveWithChildren(preplacedDoodadTypeId);
+      if (ObjectDatabase.TryGetDoodad(doodadData.TypeId, out var doodad))
+      {
+        unreachableObjects.RemoveWithChildren(doodad);
+      }
+
+      if (ObjectDatabase.TryGetDestructable(doodadData.TypeId, out var destructable))
+      {
+        unreachableObjects.RemoveWithChildren(destructable);
+      }
     }
   }
 
