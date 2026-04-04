@@ -42,16 +42,11 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00R"
+      "Value": ""
     },
     {
       "Id": "ulum",
       "Value": 0
-    },
-    {
-      "Id": "utra",
-      "Type": 3,
-      "Value": "o00A,opeo"
     },
     {
       "Id": "ufma",

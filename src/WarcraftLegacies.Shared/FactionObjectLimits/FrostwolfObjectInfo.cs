@@ -15,7 +15,7 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, Unlimited, Altar);
     yield return new(UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Unlimited, Research);
-    yield return new(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE, Unlimited, SiegeWorkshop);
+    yield return new(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST, Unlimited, SiegeWorkshop);
     yield return new(UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Unlimited, Magic);
     yield return new(UNIT_OTRB_BURROW_FROSTWOLF_FARM, Unlimited, Farm);
     yield return new(UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, Unlimited, Tower);
@@ -37,7 +37,6 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Unlimited, Support);
     yield return new(UNIT_OSHM_SHAMAN_FROSTWOLF, Unlimited, Support);
     yield return new(UNIT_OSPW_SPIRIT_WALKER_FROSTWOLF, Unlimited, Support);
-    yield return new(UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE, 6, new List<UnitCategory> { Elite, Destroyer, Support });
     yield return new(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6, Tank);
     yield return new(UNIT_H0CN_PACKLEADER_FROSTWOLF, 4, new List<UnitCategory> { Fighter, Support });
     yield return new(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2, new List<UnitCategory> { Fighter, Support });
@@ -54,11 +53,9 @@ public static class FrostwolfObjectInfo
     yield return new(UPGRADE_ROWS_IMPROVED_PULVERIZE_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_FROSTWOLF, Unlimited);
-    yield return new(UPGRADE_ROWT_SPIRIT_WALKER_ADEPT_TRAINING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE, Unlimited);
-    yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R00W_TOUGHENED_HIDES_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_FROSTWOLF, 1);
 

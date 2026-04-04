@@ -67,8 +67,6 @@ public sealed class FrostwolfFaction : Faction
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-    AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
-    AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
     AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
@@ -77,47 +75,6 @@ public sealed class FrostwolfFaction : Faction
 
   private void RegisterDialogue()
   {
-    TriggeredDialogueManager.Add(
-      new TriggeredDialogue(new DialogueSequence(new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
-            "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
-            "Rexxar"),
-          new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar02",
-            "I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction.",
-            "Rexxar"),
-          new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar03",
-            "No, they cannot be trusted. Only beasts are above deceit.",
-            "Rexxar"))
-        , new[]
-        {
-          this
-        }, new[]
-        {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Rexxar, false)
-          {
-            EligibleFactions = new List<Faction> { this }
-          }
-        }));
-
-    TriggeredDialogueManager.Add(
-      new TriggeredDialogue(new DialogueSequence(new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Thrall25",
-            "Who are you, warrior?",
-            "Thrall"),
-          new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar26",
-            "I am Rexxar, last son of the Mok'Nathal.",
-            "Rexxar"))
-        , new[]
-        {
-          this
-        }, new[]
-        {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Thrall, AllLegends.Frostwolf.Rexxar)
-        }));
-
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt01",
