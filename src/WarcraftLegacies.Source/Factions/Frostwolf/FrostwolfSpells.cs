@@ -1,5 +1,4 @@
 ﻿using MacroTools.Spells;
-using WarcraftLegacies.Source.Factions.Frostwolf.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 using WarcraftLegacies.Source.Shared.Spells.Slipstream;
 using WCSharp.Shared.Data;
@@ -16,17 +15,6 @@ public static class FrostwolfSpells
     };
     SpellRegistry.Register(devour);
 
-    var cripplingShout = new MassAnySpell(ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
-    {
-      Radius = 700,
-      DummyAbilityId = ABILITY_TP08_CRIPPLE_DUMMY,
-      DummyAbilityOrderId = ORDER_CRIPPLE,
-      SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx",
-      CastFilter = CastFilters.IsTargetEnemyAndAliveUnits,
-      TargetType = SpellTargetType.None
-    };
-    SpellRegistry.Register(cripplingShout);
-
     SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
     {
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
@@ -34,30 +22,6 @@ public static class FrostwolfSpells
       ClosingDelay = 10,
       TargetLocation = new Point(-3169, -29714),
       Color = new Color(255, 50, 50, 255)
-    });
-
-    SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
-    {
-      Duration = 60,
-      HealthBonus = new LeveledAbilityField<float>
-      {
-        Base = 0.2f,
-        PerLevel = 0.1f
-      },
-      DamageBonus = new LeveledAbilityField<float>
-      {
-        Base = 0.2f,
-        PerLevel = 0.1f
-      },
-      SummonCap = new LeveledAbilityField<int>
-      {
-        Base = 6,
-        PerLevel = 6
-      },
-      RememberChance = 1f,
-      RememberableUnitTypeId = UNIT_OTAU_TAUREN_FROSTWOLF,
-      SummonEffect = @"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl",
-      DeathEffect = @"Abilities\Spells\Orc\Disenchant\DisenchantSpecialArt.mdl"
     });
   }
 }

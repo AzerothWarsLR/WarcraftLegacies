@@ -9,7 +9,6 @@ public sealed class FrostwolfLegends
 {
   public LegendaryHero Cairne { get; }
   public LegendaryHero Thrall { get; }
-  public LegendaryHero Rexxar { get; }
   public LegendaryHero Voljin { get; }
   public Capital ThunderBluff { get; }
   public Capital DarkspearHold { get; }
@@ -54,12 +53,6 @@ public sealed class FrostwolfLegends
       Essential = true
     };
 
-    Rexxar = new LegendaryHero("Rexxar")
-    {
-      UnitType = UNIT_OREX_BEASTMASTER_FROSTWOLF,
-      StartingXp = 1800
-    };
-
     Voljin = new LegendaryHero("Vol'jin")
     {
       UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
@@ -78,7 +71,6 @@ public sealed class FrostwolfLegends
   {
     LegendaryHeroManager.Register(Cairne);
     LegendaryHeroManager.Register(Thrall);
-    LegendaryHeroManager.Register(Rexxar);
     LegendaryHeroManager.Register(Voljin);
     CapitalManager.Register(ThunderBluff);
     CapitalManager.Register(DarkspearHold);

@@ -72,6 +72,11 @@
       "Value": "o00J"
     },
     {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00W,Rhme,Rhar,Ropm,Rguv"
+    },
+    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -93,12 +98,17 @@
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "- Ethereal Form|n- Healing Surge,- Ethereal Form|n- Healing Surge|n- Disenchant,- Ethereal Form|n- Healing Surge|n- Disenchant|n- Ancestral Spirit"
+      "Value": ""
     },
     {
       "Id": "uhot",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

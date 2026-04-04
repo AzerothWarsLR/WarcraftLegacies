@@ -1,5 +1,5 @@
 {
-  "OldId": "ogru",
+  "OldId": "orai",
   "Unk": [
     0
   ],
@@ -7,7 +7,12 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0ES,A020,A0BG,Aion"
+      "Value": "A0ES,A0LQ,Aens,Aion"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
     },
     {
       "Id": "ubld",
@@ -19,12 +24,17 @@
       "Value": 8
     },
     {
-      "Id": "udef",
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua1d",
       "Value": 3
     },
     {
       "Id": "ua1b",
-      "Value": 24
+      "Value": 23
     },
     {
       "Id": "ufoo",
@@ -32,11 +42,23 @@
     },
     {
       "Id": "ugol",
-      "Value": 15
+      "Value": 20
     },
     {
       "Id": "ugor",
-      "Value": 20
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 925
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
     },
     {
       "Id": "urtm",
@@ -44,21 +66,22 @@
     },
     {
       "Id": "umvs",
-      "Value": 230
+      "Value": 280
     },
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rguv,R017,Robs,Rhar,Rhme"
+      "Value": "Rhme,Rhar,Ropg,Ropm,Rguv"
     },
     {
-      "Id": "uhpm",
-      "Value": 850
-    },
-    {
-      "Id": "uabs",
+      "Id": "udep",
       "Type": 3,
-      "Value": ""
+      "Value": "o00S"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
     },
     {
       "Id": "unsf",
@@ -76,9 +99,14 @@
       "Value": 0.85
     },
     {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
       "Id": "utub",
       "Type": 3,
-      "Value": "Pride of the Horde, warrior of Honor."
+      "Value": "Fast and ferocious wolf rider with high health regeneration."
     }
   ]
 }

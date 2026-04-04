@@ -41,18 +41,8 @@
       "Value": "R00W,Rows"
     },
     {
-      "Id": "utra",
-      "Type": 3,
-      "Value": "otau,n049,o06T"
-    },
-    {
       "Id": "ulum",
       "Value": 0
-    },
-    {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "R05I,ostr"
     },
     {
       "Id": "ubpx",
@@ -65,7 +55,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf Siege)"
+      "Value": "(Frostwolf Specialist)"
     },
     {
       "Id": "uhot",

@@ -90,7 +90,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00R"
+      "Value": ""
     },
     {
       "Id": "urev",
@@ -108,7 +108,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o00A,opeo,noga,n03R"
+      "Value": "opeo,noga,n03R"
     },
     {
       "Id": "utyp",
