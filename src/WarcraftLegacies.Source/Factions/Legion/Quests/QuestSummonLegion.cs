@@ -42,7 +42,7 @@ public sealed class QuestSummonLegion : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}. Anetheron improves his Vampiric Siphon ability";
+    $"The hero Archimonde, control of all units in the Twisting Nether. Anetheron improves his Vampiric Siphon ability";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction whichFaction)
