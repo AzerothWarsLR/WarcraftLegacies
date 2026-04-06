@@ -19,7 +19,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 575
+      "Value": 500
     },
     {
       "Id": "upgr",
@@ -33,6 +33,10 @@
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 320
     },
     {
       "Id": "unsf",
