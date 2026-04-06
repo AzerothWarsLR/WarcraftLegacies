@@ -55,7 +55,7 @@ public sealed class BlackEmpireFaction : Faction
 
     AddQuest(new QuestWakingCity(questGorma, Regions.Nyalotha));
     AddQuest(new QuestGiftofFlesh());
-    AddQuest(new QuestWakingDream(AllLegends.BlackE.Zaqul));
+    AddQuest(new QuestWakingDream());
     AddQuest(new QuestMawofShuma(AllLegends.BlackE.Yorsahj));
     AddQuest(new QuestMawofGorath(AllLegends.BlackE.Zonozz));
     AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));

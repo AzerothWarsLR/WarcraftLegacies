@@ -2,7 +2,7 @@
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Factions.BlackEmpire.Quests;
 
@@ -28,7 +28,7 @@ public sealed class QuestWorldStone : QuestData
   {
     _nzoth = nzoth;
     AddObjective(new ObjectiveControlPoint(UNIT_N03M_THUNDERBLUFF, 0));
-    AddObjective(new ObjectiveKillUnit(orgrimmar.Unit));
+    AddObjective(new ObjectiveCapitalDead(orgrimmar));
   }
 
   /// <inheritdoc/>
