@@ -2,8 +2,6 @@
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Frostwolf.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
-using WarcraftLegacies.Source.Shared.Spells.Slipstream;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Frostwolf;
 
@@ -30,15 +28,6 @@ public static class FrostwolfSpells
 
     ParentChildResearchSystem.Register(UPGRADE_RHME_COPPER_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
       UPGRADE_R06C_KABOOM_LEVEL_UP);
-
-    SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
-    {
-      PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-      OpeningDelay = 5,
-      ClosingDelay = 10,
-      TargetLocation = new Point(-3169, -29714),
-      Color = new Color(255, 50, 50, 255)
-    });
 
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
