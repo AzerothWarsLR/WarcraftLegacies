@@ -19,7 +19,7 @@ public sealed class HordeFaction : Faction
   public HordeFaction() : base("Horde", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
-    UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
+    UndefeatedResearch = UPGRADE_R05V_HORDE_EXISTS;
     StartingGold = new StartingGold
     {
       Instant = 200,
@@ -27,7 +27,7 @@ public sealed class HordeFaction : Faction
       Turns = 10
     };
     CinematicMusic = "SadMystery";
-    ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
+    ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_HORDE;
     IntroText = $"You are playing as the {PrefixCol}Horde|r.\n\n" +
                 "You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\n" +
                 "Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
@@ -50,7 +50,7 @@ public sealed class HordeFaction : Faction
 
   private void RegisterObjectLevels()
   {
-    ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+    ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_HORDE_WARSONG_BURROW, 1);
     ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
   }
 
@@ -116,7 +116,7 @@ public sealed class HordeFaction : Faction
   {
     ResearchManager.Register(new FlightPath(
       this,
-      UPGRADE_R09N_FLIGHT_PATH_FROSTWOLF,
+      UPGRADE_R09N_FLIGHT_PATH_HORDE,
       70));
   }
 }

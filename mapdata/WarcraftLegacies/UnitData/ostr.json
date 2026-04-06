@@ -62,13 +62,13 @@
       "Value": 90
     },
     {
-      "Id": "ulum",
-      "Value": 0
-    },
-    {
       "Id": "ures",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
     },
     {
       "Id": "ubpx",
@@ -77,7 +77,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf T2)"
+      "Value": "(Horde T2)"
     },
     {
       "Id": "uhot",

@@ -59,8 +59,8 @@ public sealed class QuestWorldShaman : QuestData
       Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
       ValidUnitTypes = new[]
       {
-        UNIT_OPEO_PEON_FROSTWOLF_WORKER, UNIT_OGRU_GRUNT_FROSTWOLF, UNIT_OSHM_SHAMAN_FROSTWOLF,
-        UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF
+        UNIT_OPEO_PEON_HORDE_WORKER, UNIT_OGRU_GRUNT_HORDE, UNIT_OSHM_SHAMAN_HORDE,
+        UNIT_OTHR_WARCHIEF_OF_THE_HORDE_HORDE
       },
       IconName = "_Lightning_Orc"
     };

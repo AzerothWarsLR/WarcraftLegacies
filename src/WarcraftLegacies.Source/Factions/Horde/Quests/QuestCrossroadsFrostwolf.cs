@@ -35,9 +35,9 @@ public sealed class QuestCrossroadsFrostwolf : QuestData
       unit.Rescue(whichPlayer);
     }
 
-    unit.Create(whichPlayer, UNIT_OEYE_SENTRY_WARD_FROSTWOLF_WITCH_DOCTOR, -12844, -1975, 0);
-    unit.Create(whichPlayer, UNIT_OEYE_SENTRY_WARD_FROSTWOLF_WITCH_DOCTOR, -10876, -2066, 0);
-    unit.Create(whichPlayer, UNIT_OEYE_SENTRY_WARD_FROSTWOLF_WITCH_DOCTOR, -11922, -824, 0);
+    unit.Create(whichPlayer, UNIT_OEYE_SENTRY_WARD_HORDE_WITCH_DOCTOR, -12844, -1975, 0);
+    unit.Create(whichPlayer, UNIT_OEYE_SENTRY_WARD_HORDE_WITCH_DOCTOR, -10876, -2066, 0);
+    unit.Create(whichPlayer, UNIT_OEYE_SENTRY_WARD_HORDE_WITCH_DOCTOR, -11922, -824, 0);
   }
 
   /// <inheritdoc/>

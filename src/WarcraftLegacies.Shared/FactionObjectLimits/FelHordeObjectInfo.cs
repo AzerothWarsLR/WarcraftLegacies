@@ -40,7 +40,7 @@ public static class FelHordeObjectInfo
     yield return new(UNIT_NINA_INFERNAL_JUGGERNAUT_FEL, 4, new List<UnitCategory> { Siege, Marksman });
     yield return new(UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER, 6, new List<UnitCategory> { Elite, Tank, Support });
 
-    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_HORDE_FEL_HORDE, Unlimited);
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
     yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
@@ -57,8 +57,8 @@ public static class FelHordeObjectInfo
 
     yield return new(UPGRADE_ROBF_DEMONIC_FLUX_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R066_BURNING_OIL_FEL_HORDE, Unlimited);
-    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE, Unlimited);
-    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_HORDE_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_HORDE_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R024_NECROLYTE_ADEPT_TRAINING_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00M_FEL_WARLOCK_ADEPT_TRAINING_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R03I_EREDAR_OCCULTIST_ADEPT_TRAINING_FEL_HORDE, Unlimited);

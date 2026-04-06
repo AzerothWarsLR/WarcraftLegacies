@@ -13,14 +13,14 @@ namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 public sealed class QuestOrgrimmar : QuestData
 {
   private readonly List<unit> _rescueUnits;
-  private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_FROSTWOLF;
+  private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_HORDE;
   private readonly List<RockGroup> _rockGroups;
 
   public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
-    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_FROSTWOLF_T3));
+    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_HORDE_T3));
     AddObjective(new ObjectiveExpire(13, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;

@@ -18,7 +18,7 @@ public sealed class HordeLegends
   {
     Cairne = new LegendaryHero("Cairne Bloodhoof")
     {
-      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF,
+      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_HORDE,
 
       DeathMessage =
         "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
@@ -31,7 +31,7 @@ public sealed class HordeLegends
 
     Thrall = new LegendaryHero("Thrall")
     {
-      UnitType = UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+      UnitType = UNIT_OTHR_WARCHIEF_OF_THE_HORDE_HORDE,
       StartingArtifacts = new()
       {
         new(item.Create(ITEM_I004_THE_DOOMHAMMER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
@@ -40,7 +40,7 @@ public sealed class HordeLegends
 
     ThunderBluff = new Capital
     {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_FROSTWOLF_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_HORDE_OTHER),
       Capturable = true,
       DeathMessage =
         "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
@@ -49,19 +49,19 @@ public sealed class HordeLegends
 
     DarkspearHold = new Capital
     {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O02D_DARKSPEAR_HOLD_FROSTWOLF_OTHER),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O02D_DARKSPEAR_HOLD_HORDE_OTHER),
       Essential = true
     };
 
     Voljin = new LegendaryHero("Vol'jin")
     {
-      UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
+      UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_HORDE,
       StartingXp = 2800
     };
 
     Orgrimmar = new Capital
     {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_FROSTWOLF),
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_HORDE),
       DeathMessage = "Orgrimmar has been demolished, and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
       Essential = true
     };

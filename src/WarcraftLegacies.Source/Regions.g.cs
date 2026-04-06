@@ -120,7 +120,6 @@ public static class Regions
   public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
   public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
   public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10976f, 2432f, -10432f, 2848f);
-  public static Rectangle FrostwolfStartPos { get; set; } = new Rectangle(-10656f, 1568f, -9760f, 2304f);
   public static Rectangle FurionBlockers { get; set; } = new Rectangle(-13344f, 10048f, -12768f, 10848f);
   public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
   public static Rectangle Gilneas { get; set; } = new Rectangle(2848f, -3264f, 9696f, 2880f);
@@ -144,6 +143,7 @@ public static class Regions
   public static Rectangle HinterlandAmbient1 { get; set; } = new Rectangle(13600f, 3040f, 19968f, 5376f);
   public static Rectangle HinterlandAmbient2 { get; set; } = new Rectangle(16256f, 5408f, 19072f, 7040f);
   public static Rectangle HonorHold { get; set; } = new Rectangle(2208f, -27360f, 3936f, -26016f);
+  public static Rectangle HordeStartPos { get; set; } = new Rectangle(-10656f, 1568f, -9760f, 2304f);
   public static Rectangle Ice_Crown { get; set; } = new Rectangle(-4480f, 19616f, -2272f, 24256f);
   public static Rectangle IcecrownShipyard { get; set; } = new Rectangle(-6976f, 22304f, -1248f, 24992f);
   public static Rectangle IllidanBlackTempleUnlock { get; set; } = new Rectangle(3392f, -32256f, 8640f, -27872f);

@@ -76,7 +76,7 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "Frostwolf Clan",
+      "Name": "Horde",
       "StartPosition": {
         "X": -10048,
         "Y": 2048
@@ -326,7 +326,7 @@
     {
       "Flags": 7,
       "Players": 264193,
-      "Name": "Frostwolf, Druids, Sentinels"
+      "Name": "Horde, Druids, Sentinels"
     },
     {
       "Flags": 7,
