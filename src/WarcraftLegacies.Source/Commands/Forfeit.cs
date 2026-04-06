@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
@@ -15,6 +16,7 @@ public sealed class Forfeit : Command
   private static readonly Dictionary<Team, HashSet<player>> _ffVotesByTeam = new();
 
   private const int VotesRequired = 6;
+  private const int ForfeitAllowedTurn = 10;
 
   public override string CommandText => "ff";
   public override ExpectedParameterCount ExpectedParameterCount => new(0);
@@ -81,6 +83,11 @@ public sealed class Forfeit : Command
   /// </summary>
   public override string Execute(player commandUser, params string[] parameters)
   {
+    if (GameTimeManager.Turn < ForfeitAllowedTurn)
+    {
+      return $"You can't forfeit before turn {ForfeitAllowedTurn}.";
+    }
+
     var result = TryForfeitPlayer(commandUser);
     return result switch
     {
