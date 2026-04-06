@@ -8,13 +8,13 @@
       "Level": 1,
       "Id": "aare",
       "Type": 2,
-      "Value": 700
+      "Value": 600
     },
     {
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 50
+      "Value": 40
     },
     {
       "Level": 1,
@@ -26,7 +26,7 @@
       "Pointer": 1,
       "Id": "mfl1",
       "Type": 2,
-      "Value": 0.65
+      "Value": 0.6
     },
     {
       "Level": 1,
@@ -47,30 +47,23 @@
       "Pointer": 5,
       "Id": "mfl5",
       "Type": 2,
-      "Value": 20
+      "Value": 0
     },
     {
       "Level": 1,
       "Id": "adur",
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Id": "alev",
       "Value": 2
-    },
-    {
-      "Level": 2,
-      "Pointer": 5,
-      "Id": "mfl5",
-      "Type": 2,
-      "Value": 20
     },
     {
       "Level": 2,
@@ -84,7 +77,7 @@
       "Pointer": 1,
       "Id": "mfl1",
       "Type": 2,
-      "Value": 0.65
+      "Value": 0.6
     },
     {
       "Level": 2,
@@ -103,19 +96,19 @@
       "Level": 2,
       "Id": "acdn",
       "Type": 2,
-      "Value": 50
+      "Value": 40
     },
     {
       "Level": 2,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Level": 2,
       "Id": "adur",
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Level": 2,
@@ -126,7 +119,7 @@
       "Level": 2,
       "Id": "acas",
       "Type": 2,
-      "Value": 0.75
+      "Value": 1.25
     },
     {
       "Level": 2,
@@ -160,6 +153,12 @@
       "Value": 1
     },
     {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Brown - Faerie Dragon)"
@@ -173,7 +172,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon\u0027s armor by 20. |n|nLasts 15 seconds.|nDeals 0.65 damage per point of mana.|n50 second cooldown."
+      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. |n|nLasts \u003CAmfl,Dur1\u003E seconds.|nDeals \u003CAmfl,DataA1,.\u003E damage per point of mana."
     },
     {
       "Id": "auhk",
@@ -184,7 +183,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon\u0027s armor by 20. |n|nLasts 15 seconds.|nDeals 0.65 damage per point of mana.|n50 second cooldown."
+      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. |n|nLasts \u003CAmfl,Dur2\u003E seconds.|nDeals \u003CAmfl,DataA2,.\u003E damage per point of mana."
     },
     {
       "Level": 2,

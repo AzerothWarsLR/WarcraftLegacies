@@ -236,7 +236,11 @@
       "Level": 1,
       "Id": "aran",
       "Type": 2,
-      "Value": 700
+      "Value": 900
+    },
+    {
+      "Id": "amsp",
+      "Value": 1600
     },
     {
       "Id": "aani",
@@ -362,6 +366,11 @@
       "Id": "anam",
       "Type": 3,
       "Value": "Mass Ensnare"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Ensnare\\EnsnareMissile.mdl"
     }
   ]
 }

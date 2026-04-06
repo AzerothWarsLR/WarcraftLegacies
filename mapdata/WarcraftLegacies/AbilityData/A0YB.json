@@ -58,7 +58,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a rock bolt that stuns a target enemy unit."
+      "Value": "Hurls a rock bolt that stuns a target enemy unit, dealing \u003CA0YB,DataA1\u003E damage."
     }
   ]
 }
