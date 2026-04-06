@@ -4,11 +4,11 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Factions.Frostwolf.Powers;
+using WarcraftLegacies.Source.Factions.Horde.Powers;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 
 /// <summary>
 /// Thrall becomes the World Shaman and gets cool stuff.

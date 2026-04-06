@@ -23,7 +23,7 @@ public sealed class ObjectInfoRepository
     AddFactionObjectInfo(DraeneiObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(FelHordeObjectInfo.GetAllObjectInfos());
-    AddFactionObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
+    AddFactionObjectInfo(HordeObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());

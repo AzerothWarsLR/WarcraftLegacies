@@ -1,6 +1,6 @@
-//  0   Frostwolf 
-//  1   Stormwind
-//  2   Quelthalas 
+//  0 Horde
+//  1 Stormwind
+//  2 Quelthalas
 //  3	Scourge
 //  4	Ironforge
 //  5	Empty

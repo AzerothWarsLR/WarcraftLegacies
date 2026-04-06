@@ -5,8 +5,8 @@ using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Draenei;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
-using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Gilneas;
+using WarcraftLegacies.Source.Factions.Horde;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
@@ -45,9 +45,9 @@ public static class AllLegends
   public static FelHordeLegends FelHorde { get; }
 
   /// <summary>
-  /// Contains references to all Frostwolf <see cref="Legend"/>s.
+  /// Contains references to all Horde <see cref="Legend"/>s.
   /// </summary>
-  public static FrostwolfLegends Frostwolf { get; }
+  public static HordeLegends Horde { get; }
 
   /// <summary>
   /// Contains references to all Ironforge <see cref="Legend"/>s.
@@ -117,7 +117,7 @@ public static class AllLegends
     Draenei = new DraeneiLegends();
     Druids = new DruidsLegends();
     FelHorde = new FelHordeLegends();
-    Frostwolf = new FrostwolfLegends();
+    Horde = new HordeLegends();
     Ironforge = new IronforgeLegends();
     Kultiras = new KultirasLegends();
     Legion = new LegionLegends();
@@ -145,7 +145,7 @@ public static class AllLegends
     Draenei.RegisterLegends();
     Druids.RegisterLegends();
     FelHorde.RegisterLegends();
-    Frostwolf.RegisterLegends();
+    Horde.RegisterLegends();
     Ironforge.RegisterLegends();
     Kultiras.RegisterLegends();
     Legion.RegisterLegends();

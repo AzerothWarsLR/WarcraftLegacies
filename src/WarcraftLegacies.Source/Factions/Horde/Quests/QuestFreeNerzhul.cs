@@ -7,10 +7,10 @@ using WarcraftLegacies.Source.Objectives;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 
 /// <summary>
-/// Frostwolf kills the Frozen Throne to get cool stuff for Thrall.
+/// Horde kills the Frozen Throne to get cool stuff for Thrall.
 /// </summary>
 public sealed class QuestFreeNerzhul : QuestData
 {

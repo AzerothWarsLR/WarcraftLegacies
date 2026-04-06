@@ -8,7 +8,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Druids;
-using WarcraftLegacies.Source.Factions.Frostwolf;
+using WarcraftLegacies.Source.Factions.Horde;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Legion.Powers;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
@@ -52,7 +52,7 @@ public sealed class LegionFaction : Faction
     };
     RegisterFactionDependentInitializer<DalaranFaction>(RegisterDalaranDialogue);
     RegisterFactionDependentInitializer<IllidariFaction>(RegisterIllidariDialogue);
-    RegisterFactionDependentInitializer<FrostwolfFaction>(RegisterFrostwolfDialogue);
+    RegisterFactionDependentInitializer<HordeFaction>(RegisterHordeDialogue);
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeQuests);
     RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsRelatedQuestsAndDialogue);
@@ -161,7 +161,7 @@ public sealed class LegionFaction : Faction
     ));
   }
 
-  private void RegisterFrostwolfDialogue(FrostwolfFaction frostwolf)
+  private void RegisterHordeDialogue(HordeFaction horde)
   {
     TriggeredDialogueManager.Add(new TriggeredDialogue(
       new DialogueSequence(
@@ -175,10 +175,10 @@ public sealed class LegionFaction : Faction
       , new Faction[]
       {
         this,
-        frostwolf
+        horde
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Frostwolf.Thrall)
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Horde.Thrall)
       }
     ));
   }

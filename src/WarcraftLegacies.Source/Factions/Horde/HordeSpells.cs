@@ -1,9 +1,9 @@
 ﻿using MacroTools.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf;
+namespace WarcraftLegacies.Source.Factions.Horde;
 
-public static class FrostwolfSpells
+public static class HordeSpells
 {
   public static void Setup()
   {

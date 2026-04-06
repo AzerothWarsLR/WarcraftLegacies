@@ -5,7 +5,7 @@ using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 
 public sealed class QuestDrektharsSpellbook : QuestData
 {

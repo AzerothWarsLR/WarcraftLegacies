@@ -8,15 +8,15 @@ using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 
-public sealed class QuestOrgrimmarFrostwolf : QuestData
+public sealed class QuestOrgrimmar : QuestData
 {
   private readonly List<unit> _rescueUnits;
   private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_FROSTWOLF;
   private readonly List<RockGroup> _rockGroups;
 
-  public QuestOrgrimmarFrostwolf(Rectangle rescueRect) : base("To Tame a Land",
+  public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
@@ -40,7 +40,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
-    "The city of Orgrimmar was finally constructed by the Frostwolf engineers, it is now a home for the new Horde and a symbol of power and innovation. Rexxar has now joined the Horde!";
+    "The city of Orgrimmar was finally constructed by the Horde engineers, it is now a home for the new Horde and a symbol of power and innovation. Rexxar has now joined the Horde!";
 
   /// <inheritdoc/>
   protected override string RewardDescription =>

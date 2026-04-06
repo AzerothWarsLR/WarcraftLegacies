@@ -7,7 +7,7 @@ using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 
 public sealed class QuestCrossroadsFrostwolf : QuestData
 {

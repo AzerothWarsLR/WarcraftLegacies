@@ -6,7 +6,7 @@ using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Powers;
+namespace WarcraftLegacies.Source.Factions.Horde.Powers;
 
 /// <summary>
 /// The player's units have a chance to do bonus damage when they attack.

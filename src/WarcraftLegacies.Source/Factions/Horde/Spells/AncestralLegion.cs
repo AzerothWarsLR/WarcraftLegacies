@@ -6,7 +6,7 @@ using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Spells;
+namespace WarcraftLegacies.Source.Factions.Horde.Spells;
 
 /// <summary>
 /// When a of a given type unit dies, the caster remembers it, and can later summon copies of all of the units that died.

@@ -7,10 +7,10 @@ using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+namespace WarcraftLegacies.Source.Factions.Horde.Quests;
 
 /// <summary>
-/// Kill the centaur leader in Mulgore and bring <see cref="FrostwolfLegends.Cairne"/> to <see cref="FrostwolfLegends.ThunderBluff"/> to unlock it
+/// Kill the centaur leader in Mulgore and bring <see cref="HordeLegends.Cairne"/> to <see cref="HordeLegends.ThunderBluff"/> to unlock it
 /// </summary>
 public sealed class QuestThunderBluff : QuestData
 {

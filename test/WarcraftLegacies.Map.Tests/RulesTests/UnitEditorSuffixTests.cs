@@ -17,7 +17,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Draenei",
     "Druids",
     "Fel",
-    "Frostwolf",
+    "Horde",
     "Gilneas",
     "Illidari",
     "Ironforge",

@@ -2,7 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Factions;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.Factions.Frostwolf;
+using WarcraftLegacies.Source.Factions.Horde;
 using WarcraftLegacies.Source.Factions.Kultiras.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
@@ -35,7 +35,7 @@ public sealed class KultirasFaction : Faction
       "kultiras"
     };
 
-    RegisterFactionDependentInitializer<FrostwolfFaction>(RegisterDialogue);
+    RegisterFactionDependentInitializer<HordeFaction>(RegisterDialogue);
     ProcessObjectInfo(KultirasObjectInfo.GetAllObjectLimits());
   }
 
@@ -60,7 +60,7 @@ public sealed class KultirasFaction : Faction
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
-  private void RegisterDialogue(FrostwolfFaction frostwolf)
+  private void RegisterDialogue(HordeFaction horde)
   {
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new DialogueSequence(new Dialogue(
@@ -78,10 +78,10 @@ public sealed class KultirasFaction : Faction
         , new Faction[]
         {
           this,
-          frostwolf
+          horde
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Kultiras.LegendAdmiral, AllLegends.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Kultiras.LegendAdmiral, AllLegends.Horde.Thrall)
         }));
   }
 }

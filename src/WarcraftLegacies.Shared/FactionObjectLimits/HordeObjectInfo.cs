@@ -3,7 +3,7 @@ using static MacroTools.Shared.UnitCategory;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
-public static class FrostwolfObjectInfo
+public static class HordeObjectInfo
 {
   private const int Unlimited = 200;
 

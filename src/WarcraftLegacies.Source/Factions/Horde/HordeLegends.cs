@@ -3,9 +3,9 @@ using MacroTools.Artifacts;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgets;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf;
+namespace WarcraftLegacies.Source.Factions.Horde;
 
-public sealed class FrostwolfLegends
+public sealed class HordeLegends
 {
   public LegendaryHero Cairne { get; }
   public LegendaryHero Thrall { get; }
@@ -14,7 +14,7 @@ public sealed class FrostwolfLegends
   public Capital DarkspearHold { get; }
   public Capital Orgrimmar { get; }
 
-  public FrostwolfLegends()
+  public HordeLegends()
   {
     Cairne = new LegendaryHero("Cairne Bloodhoof")
     {

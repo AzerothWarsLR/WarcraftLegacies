@@ -4,19 +4,19 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.Factions.Frostwolf.Quests;
+using WarcraftLegacies.Source.Factions.Horde.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
 
-namespace WarcraftLegacies.Source.Factions.Frostwolf;
+namespace WarcraftLegacies.Source.Factions.Horde;
 
-public sealed class FrostwolfFaction : Faction
+public sealed class HordeFaction : Faction
 {
   /// <inheritdoc />
-  public FrostwolfFaction() : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
+  public HordeFaction() : base("Horde", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
@@ -28,17 +28,10 @@ public sealed class FrostwolfFaction : Faction
     };
     CinematicMusic = "SadMystery";
     ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
-    IntroText = $"You are playing as the honorable {PrefixCol}Frostwolf Clan|r.\n\n" +
+    IntroText = $"You are playing as the {PrefixCol}Horde|r.\n\n" +
                 "You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\n" +
                 "Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
-    Nicknames = new List<string>
-    {
-      "fw",
-      "frost",
-      "frostwolves",
-      "frostwolve"
-    };
-    ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
+    ProcessObjectInfo(HordeObjectInfo.GetAllObjectLimits());
   }
 
   /// <inheritdoc />
@@ -48,7 +41,7 @@ public sealed class FrostwolfFaction : Faction
     RegisterFlightPath();
     RegisterQuests();
     RegisterDialogue();
-    FrostwolfSpells.Setup();
+    HordeSpells.Setup();
     Regions.ThunderBluff.CleanupHostileUnits();
     Regions.GromSpawn.CleanupHostileUnits();
     Regions.EchoUnlock.CleanupHostileUnits();
@@ -66,10 +59,10 @@ public sealed class FrostwolfFaction : Faction
     StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
-    AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-    AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Frostwolf.Thrall));
-    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
-    AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
+    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
+    AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Horde.Thrall));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Horde.Thrall));
+    AddQuest(new QuestWorldShaman(AllLegends.Horde.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
@@ -93,7 +86,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Thrall, false)
+          new ObjectiveControlLegend(AllLegends.Horde.Thrall, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -113,7 +106,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Horde.Cairne, AllLegends.Horde.Thrall)
         }));
   }
 
