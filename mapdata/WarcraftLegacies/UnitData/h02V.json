@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "ACav,A0GD,Argl"
+      "Value": "ACav,A0GD"
     },
     {
       "Id": "ua1t",
@@ -194,7 +194,7 @@
     {
       "Id": "uabs",
       "Type": 3,
-      "Value": "Abdl,Argl"
+      "Value": "Abdl"
     }
   ]
 }

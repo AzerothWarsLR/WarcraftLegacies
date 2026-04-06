@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aosp,Aspi,Argl"
+      "Value": "Aosp,Aspi"
     },
     {
       "Id": "ubld",

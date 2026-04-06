@@ -1,5 +1,4 @@
-﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgets;
+﻿using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -7,14 +6,12 @@ namespace WarcraftLegacies.Source.Factions.BlackEmpire.Quests;
 
 public sealed class QuestWakingDream : QuestData
 {
-
-  public QuestWakingDream(LegendaryHero channelingHero) : base("Waking Dream",
+  public QuestWakingDream() : base("Waking Dream",
     "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again.",
     @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
   {
-    AddObjective(new ObjectiveKillUnit(AllPreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
+    AddObjective(new ObjectiveUnitIsDead(AllPreplacedWidgets.Units.Get(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
     ResearchId = UPGRADE_RBWD_QUEST_COMPLETED_WAKING_DREAM;
-
   }
 
   /// <inheritdoc/>
@@ -23,6 +20,4 @@ public sealed class QuestWakingDream : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription => $"Learn to train Warlord Zon'ozz from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_NZOTH_ALTAR)}";
-
-
 }

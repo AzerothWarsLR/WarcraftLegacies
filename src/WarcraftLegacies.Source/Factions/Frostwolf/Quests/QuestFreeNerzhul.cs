@@ -32,16 +32,15 @@ public sealed class QuestFreeNerzhul : QuestData
 
   /// <inheritdoc/>
   public override string RewardFlavour => _objectiveFrozenThroneState.State == FrozenThroneState.Ruptured
-    ? "The Frozen Throne has been ruptured beyond repair, but Ner'zhul's mangled soul remains imprisoned within. Perhaps the old Shaman will never know peace. From his latent energies, Thrall gains the essence of the Spell of Conjuration that once shattered Draenor."
-    : "It seems Ner'zhul is finally free from his tortured existence as the bearer of the Helm of Domination. From his latent energies, Thrall gains the essence of the Spell of Conjuration that once shattered Draenor.";
+    ? "The Frozen Throne has been ruptured beyond repair, but Ner'zhul's mangled soul remains imprisoned within. Perhaps the old Shaman will never know peace."
+    : "It seems Ner'zhul is finally free from his tortured existence as the bearer of the Helm of Domination.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => "Thrall gains 10 Strength, 10 Dexterity, 10 Intelligence, and an item that can channel a one-time portal to Nagrand in Outland";
+  protected override string RewardDescription => "Thrall gains 10 Strength, 10 Dexterity, and 10 Intelligence";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
     _thrall.Unit?.AddHeroAttributes(10, 10, 10);
-    _thrall.Unit?.AddItemSafe(item.Create(ITEM_I017_PORTAL_TO_NAGRAND, 0, 0));
   }
 }
