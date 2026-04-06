@@ -37,10 +37,6 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Unlimited, Support);
     yield return new(UNIT_OSHM_SHAMAN_FROSTWOLF, Unlimited, Support);
     yield return new(UNIT_OSPW_SPIRIT_WALKER_FROSTWOLF, Unlimited, Support);
-    yield return new(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6, Tank);
-    yield return new(UNIT_H0CN_PACKLEADER_FROSTWOLF, 4, new List<UnitCategory> { Fighter, Support });
-    yield return new(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2, new List<UnitCategory> { Fighter, Support });
-    yield return new(UNIT_N049_WANDERER_FROSTWOLF, 4, new List<UnitCategory> { Marksman, Support });
     yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_FROSTWOLF_FEL_HORDE, Unlimited);
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
@@ -62,6 +58,5 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF, 1, new List<UnitCategory> { Destroyer, Summoner });
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF, 1, new List<UnitCategory> { Tank, Support });
     yield return new(UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF, 1, new List<UnitCategory> { Support });
-    yield return new(UNIT_OREX_BEASTMASTER_FROSTWOLF, 1, Tank);
   }
 }
