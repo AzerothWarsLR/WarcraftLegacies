@@ -2,8 +2,6 @@
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.Illidari.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
-using WarcraftLegacies.Source.Shared.Spells.Slipstream;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Illidari;
 
@@ -17,15 +15,6 @@ public static class IllidariSpells
   /// </summary>
   public static void Setup()
   {
-    SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
-    {
-      PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-      OpeningDelay = 20,
-      ClosingDelay = 15,
-      TargetLocation = new Point(6930, -30177),
-      Color = new Color(255, 255, 250, 255)
-    });
-
     var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
     {
       BaseDamage = 150,
