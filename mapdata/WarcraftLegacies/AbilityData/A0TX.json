@@ -18,7 +18,7 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 120
+      "Value": 100
     },
     {
       "Level": 1,
@@ -57,6 +57,13 @@
       "Value": 600
     },
     {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Rej2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Musketeer)"
@@ -70,7 +77,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals a target friendly unit for \u003CA0TX,DataA1\u003E hit points over \u003CA0TX,Dur1\u003E seconds."
+      "Value": "Heals a target friendly unit for \u003CA0TX,DataA1\u003E hit points and \u003CA0TX,DataB1\u003E over \u003CA0TX,Dur1\u003E seconds."
     }
   ]
 }
