@@ -40,7 +40,6 @@ public sealed class QuestBlackTemple : QuestData
     AddObjective(new ObjectiveLegendInRect(AllLegends.Naga.Illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
     AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
-    ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_RETURN_TO_OUTLAND;
     _rescueUnits = Regions.IllidanBlackTempleUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     Knowledge = 10;
   }
@@ -49,7 +48,7 @@ public sealed class QuestBlackTemple : QuestData
   public override string RewardFlavour => "Illidan returns triumphant to Black Temple, the seat of his power. The orcs and demons of Outland hail his coming.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, abandon your base in the Broken Isles, and Illidan learns to cast Portal to Black Temple";
+  protected override string RewardDescription => "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, abandon your base in the Broken Isles";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
