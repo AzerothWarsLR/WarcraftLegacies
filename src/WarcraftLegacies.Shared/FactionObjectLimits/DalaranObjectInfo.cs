@@ -26,7 +26,6 @@ public static class DalaranObjectInfo
     yield return new(UNIT_HVLT_ARCANE_VAULT_DALARAN_SHOP, Unlimited, Shop);
     yield return new(UNIT_H076_SHIPYARD_DALARAN_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_H067_MANAFORGE_DALARAN_SPECIALIST, Unlimited, Specialist);
-    yield return new(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE, 2, Waygate);
 
     yield return new(UNIT_H078_SCOUT_TOWER_DALARAN_TOWER, Unlimited, Tower);
     yield return new(UNIT_H079_ARCANE_TOWER_DALARAN_TOWER, Unlimited, Tower);
