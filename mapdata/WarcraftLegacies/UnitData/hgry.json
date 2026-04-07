@@ -83,13 +83,12 @@
       "Value": 1275
     },
     {
-      "Id": "udty",
-      "Type": 3,
-      "Value": "large"
-    },
-    {
       "Id": "ua1d",
       "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 3
     },
     {
       "Id": "ubpx",
