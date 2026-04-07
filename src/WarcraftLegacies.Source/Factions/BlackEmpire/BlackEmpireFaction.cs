@@ -18,7 +18,7 @@ public sealed class BlackEmpireFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 120,
+      Income = 135,
       Turns = 10
     };
     IntroText = $"You are playing as the {PrefixCol}Black Empire of N'zoth|r.\n\n" +
