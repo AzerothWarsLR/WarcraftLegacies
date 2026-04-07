@@ -30,7 +30,7 @@ public sealed class LordaeronFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 205,
+      Income = 190,
       Turns = 10
     };
     UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;

@@ -30,18 +30,6 @@
       "Value": 800
     },
     {
-      "Level": 1,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 1,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 20
-    },
-    {
       "Id": "arac",
       "Type": 3,
       "Value": "human"
@@ -62,6 +50,18 @@
       "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,mechanical,neutral,structure"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
     },
     {
       "Id": "aart",

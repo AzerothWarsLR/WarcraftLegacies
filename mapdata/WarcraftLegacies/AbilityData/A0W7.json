@@ -15,7 +15,7 @@
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 50
+      "Value": 40
     },
     {
       "Level": 1,
@@ -54,13 +54,13 @@
       "Level": 1,
       "Id": "adur",
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Id": "arac",
@@ -85,7 +85,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes the Summoner to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Summoner\u0027s armor by 12. |nLasts \u003CAmfl,Dur1\u003E seconds."
+      "Value": "Causes the Summoner to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Summoner\u0027s armor by \u003CA0W7,DataE1\u003E. |nLasts \u003CA0W7,Dur1\u003E seconds."
     },
     {
       "Id": "aubx",

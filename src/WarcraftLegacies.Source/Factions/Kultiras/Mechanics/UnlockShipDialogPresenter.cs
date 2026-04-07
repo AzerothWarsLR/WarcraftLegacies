@@ -59,7 +59,9 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
     const int workerId = UNIT_H01E_DECKHAND_KULTIRAS_WORKER;
 
     unit.Create(whichPlayer, workerId, 6864 + 80, -17176, 0);
+    unit.Create(whichPlayer, workerId, 6864 + 88, -17176, 0);
     unit.Create(whichPlayer, workerId, 6864 - 80, -17176, 0);
+    unit.Create(whichPlayer, workerId, 6864 - 88, -17176, 0);
   }
 
   protected override UnlockShipChoice GetDefaultChoice(player whichPlayer)

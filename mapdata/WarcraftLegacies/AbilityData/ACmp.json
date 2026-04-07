@@ -33,7 +33,7 @@
       "Pointer": 4,
       "Id": "Uim4",
       "Type": 2,
-      "Value": 0.5
+      "Value": 0
     },
     {
       "Level": 1,
@@ -55,7 +55,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Slams the ground, sending a wave of force out in a straight line, dealing 50 damage and hurling enemy ground units into the air in their wake, stunning them for 2 (0.5 on heroes) seconds."
+      "Value": "Slams the ground, sending a wave of force out in a straight line, dealing 50 damage and stunning units for 2 (0.5 on heroes) seconds."
     }
   ]
 }

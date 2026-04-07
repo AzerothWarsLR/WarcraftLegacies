@@ -385,7 +385,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heal all friendly units in the target area for 100 hit points."
+      "Value": "Heal all friendly units in the target area for 125 hit points."
     },
     {
       "Level": 2,

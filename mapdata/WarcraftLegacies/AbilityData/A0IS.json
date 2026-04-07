@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": "aare",
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Level": 1,
@@ -21,7 +21,7 @@
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 45
+      "Value": 60
     },
     {
       "Level": 1,
@@ -45,13 +45,13 @@
       "Level": 1,
       "Id": "adur",
       "Type": 2,
-      "Value": 2
+      "Value": 3
     },
     {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 2
+      "Value": 3
     },
     {
       "Id": "arac",

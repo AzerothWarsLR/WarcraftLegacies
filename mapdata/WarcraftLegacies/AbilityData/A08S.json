@@ -21,12 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 2,
-      "Id": "Osf2",
-      "Value": 3
-    },
-    {
-      "Level": 1,
       "Id": "amcs",
       "Value": 0
     },
@@ -35,6 +29,24 @@
       "Id": "abuf",
       "Type": 3,
       "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
     },
     {
       "Id": "abpx",

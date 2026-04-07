@@ -8,7 +8,7 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 100
+      "Value": 115
     },
     {
       "Level": 2,
@@ -18,12 +18,12 @@
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 130
+      "Value": 115
     },
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 145
+      "Value": 115
     },
     {
       "Level": 3,
@@ -69,7 +69,7 @@
       "Level": 4,
       "Pointer": 3,
       "Id": "Hbz3",
-      "Value": 12
+      "Value": 11
     },
     {
       "Level": 4,
@@ -83,28 +83,28 @@
       "Pointer": 6,
       "Id": "Hbz6",
       "Type": 2,
-      "Value": 500
+      "Value": 800
     },
     {
       "Level": 2,
       "Pointer": 6,
       "Id": "Hbz6",
       "Type": 2,
-      "Value": 700
+      "Value": 1000
     },
     {
       "Level": 3,
       "Pointer": 6,
       "Id": "Hbz6",
       "Type": 2,
-      "Value": 900
+      "Value": 1200
     },
     {
       "Level": 4,
       "Pointer": 6,
       "Id": "Hbz6",
       "Type": 2,
-      "Value": 1100
+      "Value": 1400
     },
     {
       "Id": "alev",
@@ -164,24 +164,6 @@
       "Value": 0.001
     },
     {
-      "Level": 2,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 3,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 4,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 700
-    },
-    {
       "Level": 1,
       "Pointer": 1,
       "Id": "Hbz1",
@@ -237,6 +219,18 @@
       "Id": "Hbz5",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 8
     },
     {
       "Id": "aart",

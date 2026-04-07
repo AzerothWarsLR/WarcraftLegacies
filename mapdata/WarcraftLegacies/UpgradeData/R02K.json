@@ -30,6 +30,16 @@
       "Value": 300
     },
     {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratr"
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,
@@ -61,7 +71,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Grant all Gryphons a bonus 300 hit points."
+      "Value": "Grant all Gryphons a bonus 300 hit points and 100 attack range."
     },
     {
       "Level": 1,
