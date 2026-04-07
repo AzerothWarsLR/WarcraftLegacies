@@ -78,6 +78,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Heals a target friendly unit for \u003CA0TX,DataA1\u003E hit points and \u003CA0TX,DataB1\u003E over \u003CA0TX,Dur1\u003E seconds."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Innervate"
     }
   ]
 }
