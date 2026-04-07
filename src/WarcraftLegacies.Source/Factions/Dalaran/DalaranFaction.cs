@@ -38,7 +38,7 @@ public sealed class DalaranFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 100,
+      Income = 110,
       Turns = 10
     };
     CinematicMusic = "SadMystery";
