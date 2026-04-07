@@ -21,12 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 2,
-      "Id": "Osf2",
-      "Value": 3
-    },
-    {
-      "Level": 1,
       "Id": "amcs",
       "Value": 0
     },

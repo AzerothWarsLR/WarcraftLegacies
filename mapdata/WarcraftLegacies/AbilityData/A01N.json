@@ -230,13 +230,13 @@
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 45
+      "Value": 35
     },
     {
       "Level": 1,
       "Id": "aran",
       "Type": 2,
-      "Value": 900
+      "Value": 700
     },
     {
       "Id": "amsp",
