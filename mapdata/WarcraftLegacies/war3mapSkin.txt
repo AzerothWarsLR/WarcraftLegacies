@@ -1,3 +1,15 @@
+[Categories]
+GiantClass="Elite"
+
+[CmdSelectSkill]
+Hotkey=F
+
+[CustomSkin]
+InfoPanelIconArmorDivine=ReplaceableTextures\CommandButtons\ATTDivineArmor.blp
+InfoPanelIconArmorDivineNeutral=ReplaceableTextures\CommandButtons\ATTDivineArmor.blp
+InfoPanelIconArmorNormal=UI\Widgets\Console\Human\UPGGate.blp
+InfoPanelIconArmorNormalNeutral=UI\Widgets\Console\Human\BTNGate.blp
+LumberIcon=war3mapImported\BTNTomeR.blp
 ToolTipLumberIcon=war3mapImported\BTNTomeRes32x32.blp
 
 [Errors]
@@ -65,3 +77,4 @@ RESOURCES_COLUMN1="Knowledge Gained"
 
 [her4]
 GameCommand=1,1,1,1
+Hotkey=115
