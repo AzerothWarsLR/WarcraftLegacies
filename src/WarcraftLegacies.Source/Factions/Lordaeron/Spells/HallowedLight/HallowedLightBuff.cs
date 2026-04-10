@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron.Spells.HallowedLight;
 
@@ -9,14 +7,14 @@ public sealed class HallowedLightBuff : BoundBuff
   public int BuffId { get; init; }
   public int ArmorAbilityId { get; init; }
   public int ApplicatorAbilityId { get; init; }
+  public string BuffEffect { get; init; }
+  public string DebuffEffect { get; init; }
 
-  private static readonly Dictionary<unit, effect> ActiveFx = new();
   private effect fx;
 
   public HallowedLightBuff(unit caster, unit target)
     : base(caster, target)
   {
-    EffectAttachmentPoint = "origin";
   }
 
   public override void OnApply()
@@ -24,24 +22,25 @@ public sealed class HallowedLightBuff : BoundBuff
     Target.AddAbility(ArmorAbilityId);
     BindAura(ApplicatorAbilityId, BuffId);
 
-    if (ActiveFx.TryGetValue(Target, out var existing) && existing != null)
+    if (fx != null)
     {
-      DestroyEffect(existing);
+      Common.DestroyEffect(fx);
+      fx = null;
     }
 
-    fx = AddSpecialEffectTarget(EffectString, Target, EffectAttachmentPoint);
-    ActiveFx[Target] = fx;
+    var model = IsBeneficial ? BuffEffect : DebuffEffect;
+    fx = Common.AddSpecialEffectTarget(model, Target, "origin");
 
     base.OnApply();
   }
 
+
   public override void OnDispose()
   {
-    Console.WriteLine("HALLOWED LIGHT DISPOSE " + GetUnitName(Target));
-
     if (fx != null)
     {
-      DestroyEffect(fx);
+      Common.DestroyEffect(fx);
+      fx = null;
     }
 
     Target.RemoveAbility(ArmorAbilityId);
