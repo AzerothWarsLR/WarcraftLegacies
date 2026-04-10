@@ -1,19 +1,39 @@
 {
-  "OldId": "BSTN",
+  "OldId": "Basl",
   "NewId": "B003",
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00Reap|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has reduced armor"
+    },
+    {
       "Id": "fnam",
       "Type": 3,
-      "Value": "Thunder"
+      "Value": "Hallowed Light"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "ftat",
       "Type": 3,
-      "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly_Light.blp"
     }
   ]
 }
