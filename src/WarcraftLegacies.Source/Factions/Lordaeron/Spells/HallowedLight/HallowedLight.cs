@@ -23,7 +23,7 @@ public sealed class HallowedLight : Spell
       IsBeneficial = isAlly,
       EffectString = isAlly ? BuffEffect : DebuffEffect,
       BuffId = isAlly ? BUFF_B001_HALLOWED_LIGHT : BUFF_B003_HALLOWED_LIGHT,
-      ArmorAbilityId = isAlly ? ABILITY_A00G_HALLOWED_LIGHT_BUFF_PALADIN : ABILITY_A00K_HALLOWED_LIGHT_DEBUFF_PALADIN
+      ArmorAbilityId = isAlly ? ABILITY_A00C_HALLOWED_LIGHT_BUFF_APPLICATOR : ABILITY_A00L_HALLOWED_LIGHT_DEBUFF_APPLICATOR
     });
   }
 }
