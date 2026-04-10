@@ -47,6 +47,7 @@ public static class LordaeronSpells
       BuffEffect = "war3mapImported\\Soul Armor Radiant_opt.mdx",
       DebuffEffect = "war3mapImported\\Soul Armor Crimson_opt.mdx"
     });
+
     var exactJustice = new ExactJusticeSpell(ABILITY_A097_EXACT_JUSTICE_UTHER)
     {
       DamageBase = 0,

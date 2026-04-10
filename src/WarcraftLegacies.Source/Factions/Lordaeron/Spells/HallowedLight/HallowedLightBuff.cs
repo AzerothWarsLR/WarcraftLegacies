@@ -10,7 +10,7 @@ public sealed class HallowedLightBuff : BoundBuff
   public string BuffEffect { get; init; }
   public string DebuffEffect { get; init; }
 
-  private effect fx;
+  private effect _fx;
 
   public HallowedLightBuff(unit caster, unit target)
     : base(caster, target)
@@ -22,25 +22,24 @@ public sealed class HallowedLightBuff : BoundBuff
     Target.AddAbility(ArmorAbilityId);
     BindAura(ApplicatorAbilityId, BuffId);
 
-    if (fx != null)
+    if (_fx != null)
     {
-      Common.DestroyEffect(fx);
-      fx = null;
+      Common.DestroyEffect(_fx);
+      _fx = null;
     }
 
     var model = IsBeneficial ? BuffEffect : DebuffEffect;
-    fx = Common.AddSpecialEffectTarget(model, Target, "origin");
+    _fx = Common.AddSpecialEffectTarget(model, Target, "origin");
 
     base.OnApply();
   }
 
-
   public override void OnDispose()
   {
-    if (fx != null)
+    if (_fx != null)
     {
-      Common.DestroyEffect(fx);
-      fx = null;
+      Common.DestroyEffect(_fx);
+      _fx = null;
     }
 
     Target.RemoveAbility(ArmorAbilityId);
