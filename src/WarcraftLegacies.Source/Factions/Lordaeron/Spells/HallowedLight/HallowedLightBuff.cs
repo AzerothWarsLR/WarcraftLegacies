@@ -6,6 +6,7 @@ public sealed class HallowedLightBuff : BoundBuff
 {
   public int BuffId { get; init; }
   public int ArmorAbilityId { get; init; }
+  private effect fx;
 
   public HallowedLightBuff(unit caster, unit target)
     : base(caster, target)
@@ -16,12 +17,18 @@ public sealed class HallowedLightBuff : BoundBuff
   public override void OnApply()
   {
     Target.AddAbility(ArmorAbilityId);
-    BindAura(ABILITY_A00C_HALLOWED_LIGHT_BUFF_APPLICATOR, BuffId);
+    BindAura(ArmorAbilityId, BuffId);
+    fx = AddSpecialEffectTarget(EffectString, Target, EffectAttachmentPoint);
     base.OnApply();
   }
 
   public override void OnDispose()
   {
+    if (fx != null)
+    {
+      DestroyEffect(fx);
+    }
+
     Target.RemoveAbility(ArmorAbilityId);
     base.OnDispose();
   }
