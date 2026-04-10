@@ -79,13 +79,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals a friendly living unit for 200 and grants bonus armor, or afflicts an enemy unit with reduced armor dealing half the damage to an enemy Undead unit."
+      "Value": "Heals a friendly living unit for 200 and grants bonus armor, or afflicts an enemy Undead unit with reduced armor dealing half the damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals a friendly living unit for 300 and grants bonus armor, or afflicts an enemy unit with reduced armor dealing half the damage to an enemy Undead unit."
+      "Value": "Heals a friendly living unit for 300 and grants bonus armor, or afflicts an enemy Undead unit with reduced armor dealing half the damage."
     },
     {
       "Id": "aart",
