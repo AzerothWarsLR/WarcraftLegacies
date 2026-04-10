@@ -1,5 +1,5 @@
 {
-  "OldId": "ANdp",
+  "OldId": "Aasl",
   "NewId": "A00C",
   "Unk": [
     0
@@ -7,256 +7,43 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 180
-    },
-    {
-      "Level": 2,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 180
-    },
-    {
-      "Level": 3,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 180
-    },
-    {
-      "Level": 4,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 180
-    },
-    {
-      "Level": 1,
-      "Id": "amcs",
-      "Value": 100
-    },
-    {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 100
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 100
-    },
-    {
-      "Level": 4,
-      "Id": "amcs",
-      "Value": 100
-    },
-    {
-      "Level": 1,
       "Pointer": 1,
-      "Id": "Ndp1",
-      "Type": 3,
-      "Value": "h08Y"
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Ndp1",
-      "Type": 3,
-      "Value": "h08Y"
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Ndp1",
-      "Type": 3,
-      "Value": "n099,h08Y"
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Ndp1",
-      "Type": 3,
-      "Value": "n099,h08Y"
+      "Id": "Slo1",
+      "Type": 2,
+      "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 2,
-      "Id": "Ndp2",
-      "Value": 4
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Ndp2",
-      "Value": 6
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "Ndp2",
-      "Value": 6
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": "Ndp2",
-      "Value": 8
-    },
-    {
-      "Level": 1,
-      "Pointer": 3,
-      "Id": "Ndp3",
-      "Value": 4
-    },
-    {
-      "Level": 4,
-      "Pointer": 3,
-      "Id": "Ndp3",
-      "Value": 8
-    },
-    {
-      "Level": 1,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 2,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 3,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Level": 4,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Id": "alev",
-      "Value": 4
-    },
-    {
-      "Level": 1,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Level": 2,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Level": 3,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Level": 4,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Id": "aart",
+      "Id": "abuf",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinMiner.blp"
+      "Value": "ZB04"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Gallywix)"
-    },
-    {
-      "Id": "aeat",
-      "Type": 3,
-      "Value": "Objects\\InventoryItems\\UndeadCaptureFlag\\UndeadCaptureFlag.mdl"
-    },
-    {
-      "Id": "ahky",
-      "Type": 3,
-      "Value": "Q"
+      "Value": "(Buff Applicator)"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Call for Reinforcements"
+      "Value": "Hallowed Light"
     },
     {
-      "Id": "arar",
+      "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinMiner.blp"
-    },
-    {
-      "Id": "arhk",
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Call for Reinforcements - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Jastor calls for reinforcements in his time of need These reinforcements are permanent. |n|n|cffffcc00Level 1|r - 4 Gunmen. |n|cffffcc00Level 2|r - 6 units. |n|cffffcc00Level 3|r - 6 units, Ogre Mercenary can be summoned. |n|cffffcc00Level 4|r - 8 units."
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Call for Reinforcements - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Call for Reinforcements - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Call for Reinforcements - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Call for Reinforcements - [|cffffcc00Level 4|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly_Light.blp"
     }
   ]
 }

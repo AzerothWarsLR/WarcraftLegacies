@@ -1,6 +1,7 @@
 ﻿using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Lordaeron.Spells;
 using WarcraftLegacies.Source.Factions.Lordaeron.Spells.ExactJustice;
+using WarcraftLegacies.Source.Factions.Lordaeron.Spells.HallowedLight;
 using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
@@ -39,6 +40,13 @@ public static class LordaeronSpells
       EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     };
     SpellRegistry.Register(solarJudgement);
+
+    SpellRegistry.Register(new HallowedLight(ABILITY_A043_HALLOWED_LIGHT_PALADIN)
+    {
+      Duration = 7.0f,
+      BuffEffect = "war3mapImported\\Soul Armor Radiant_opt.mdx",
+      DebuffEffect = "war3mapImported\\Soul Armor Crimson_opt.mdx"
+    });
 
     var exactJustice = new ExactJusticeSpell(ABILITY_A097_EXACT_JUSTICE_UTHER)
     {
