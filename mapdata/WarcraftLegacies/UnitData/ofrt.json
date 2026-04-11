@@ -64,7 +64,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R05O"
+      "Value": "TP10,TP09,TP10,TP08,R05O"
     },
     {
       "Id": "ulum",
@@ -79,6 +79,11 @@
       "Id": "udep",
       "Type": 3,
       "Value": "o00J,o004"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "tp11,o005,opeo"
     },
     {
       "Id": "ubpx",

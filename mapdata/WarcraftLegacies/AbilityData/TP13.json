@@ -1,0 +1,22 @@
+{
+  "OldId": "ANr2",
+  "NewId": "TP13",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Tauren Chieftain)"
+    }
+  ]
+}

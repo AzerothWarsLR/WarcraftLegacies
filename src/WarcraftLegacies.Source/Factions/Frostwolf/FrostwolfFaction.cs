@@ -10,6 +10,7 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
+using WarcraftLegacies.Source.Shared.Researches;
 
 namespace WarcraftLegacies.Source.Factions.Frostwolf;
 
@@ -39,6 +40,28 @@ public sealed class FrostwolfFaction : Faction
       "frostwolve"
     };
     ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
+  }
+  private void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_TP10_TAUREN_CHIEFTENS_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_TP11_TAUREN_CHIEFTAIN_HORDE_ELITE, 6);
+          faction?.ModObjectLimit(UPGRADE_TP14_IMPROVED_SHOCKWAVE_HORDE, 1);
+        }
+      },
+      new CustomResearch(UPGRADE_TP09_BLADEMASTERS_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_O005_BLADEMASTER_HORDE_ELITE, 6);
+          faction?.ModObjectLimit(UPGRADE_TP08_IMPROVED_CRITICAL_STRIKE_HORDE, 1);
+        }
+      });
   }
 
   /// <inheritdoc />

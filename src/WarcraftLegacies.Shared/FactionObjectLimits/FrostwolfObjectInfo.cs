@@ -45,6 +45,9 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_H0B5_BOARDING_VESSEL_HORDE, Unlimited);
     yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
     yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
+    yield return new(UNIT_TP11_TAUREN_CHIEFTAIN_HORDE_ELITE, 6, new List<UnitCategory> { Elite, Tank, Fighter });
+    yield return new(UNIT_O005_BLADEMASTER_HORDE_ELITE, 6, new List<UnitCategory> { Elite, Assassin });
+
 
     yield return new(UPGRADE_ROWS_IMPROVED_PULVERIZE_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_FROSTWOLF, Unlimited);
@@ -54,7 +57,10 @@ public static class FrostwolfObjectInfo
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00W_TOUGHENED_HIDES_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_FROSTWOLF, 1);
-
+    yield return new(UPGRADE_TP08_IMPROVED_CRITICAL_STRIKE_HORDE, Unlimited);
+    yield return new(UPGRADE_TP14_IMPROVED_SHOCKWAVE_HORDE, Unlimited);
+    yield return new(UPGRADE_TP10_TAUREN_CHIEFTENS_HORDE, Unlimited);
+    yield return new(UPGRADE_TP09_BLADEMASTERS_HORDE, Unlimited);
     yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF, 1, new List<UnitCategory> { Destroyer, Summoner });
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF, 1, new List<UnitCategory> { Tank, Support });
     yield return new(UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF, 1, new List<UnitCategory> { Support });

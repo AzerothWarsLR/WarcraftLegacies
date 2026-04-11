@@ -70,7 +70,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "TP08"
     },
     {
       "Id": "ulum",
@@ -89,6 +89,11 @@
       "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "tp11,o005,opeo"
     },
     {
       "Id": "ubpx",
