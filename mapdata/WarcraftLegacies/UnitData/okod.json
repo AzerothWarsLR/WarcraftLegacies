@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0DX,S00M,AInv,ACrk,A0VZ,Aakb,Advc,Adev,Apak"
+      "Value": "ACrk,Aakb,Advc,Adev,Apak"
     },
     {
       "Id": "uacq",
@@ -99,7 +99,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": "uhot",

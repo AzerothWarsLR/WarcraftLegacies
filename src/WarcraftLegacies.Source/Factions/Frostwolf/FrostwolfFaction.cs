@@ -50,7 +50,6 @@ public sealed class FrostwolfFaction : Faction
     RegisterDialogue();
     FrostwolfSpells.Setup();
     Regions.ThunderBluff.CleanupHostileUnits();
-    Regions.Highmountain_Unlock.CleanupHostileUnits();
     Regions.GromSpawn.CleanupHostileUnits();
     Regions.EchoUnlock.CleanupHostileUnits();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -58,11 +57,6 @@ public sealed class FrostwolfFaction : Faction
 
   private void RegisterObjectLevels()
   {
-    ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
-    ModAbilityAvailability(
-      ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON,
-      -1);
-    ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
     ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
     ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
   }
@@ -73,65 +67,14 @@ public sealed class FrostwolfFaction : Faction
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-    AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
-    AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
-    AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
     AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
-  public override void OnNotPicked()
-  {
-    Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
-
-    base.OnNotPicked();
-  }
-
   private void RegisterDialogue()
   {
-    TriggeredDialogueManager.Add(
-      new TriggeredDialogue(new DialogueSequence(new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
-            "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
-            "Rexxar"),
-          new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar02",
-            "I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction.",
-            "Rexxar"),
-          new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar03",
-            "No, they cannot be trusted. Only beasts are above deceit.",
-            "Rexxar"))
-        , new[]
-        {
-          this
-        }, new[]
-        {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Rexxar, false)
-          {
-            EligibleFactions = new List<Faction> { this }
-          }
-        }));
-
-    TriggeredDialogueManager.Add(
-      new TriggeredDialogue(new DialogueSequence(new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Thrall25",
-            "Who are you, warrior?",
-            "Thrall"),
-          new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar26",
-            "I am Rexxar, last son of the Mok'Nathal.",
-            "Rexxar"))
-        , new[]
-        {
-          this
-        }, new[]
-        {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Thrall, AllLegends.Frostwolf.Rexxar)
-        }));
-
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt01",
@@ -180,7 +123,7 @@ public sealed class FrostwolfFaction : Faction
   {
     ResearchManager.Register(new FlightPath(
       this,
-      UPGRADE_R09N_FLIGHT_PATH_WARSONG,
+      UPGRADE_R09N_FLIGHT_PATH_FROSTWOLF,
       70));
   }
 }

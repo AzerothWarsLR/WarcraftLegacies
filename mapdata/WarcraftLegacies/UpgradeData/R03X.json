@@ -6,31 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": "gba1",
-      "Type": 2,
-      "Value": 100
-    },
-    {
-      "Id": "gba2",
-      "Type": 2,
-      "Value": 1
-    },
-    {
-      "Id": "gba3",
-      "Type": 2,
-      "Value": 0.5
-    },
-    {
-      "Id": "gco2",
-      "Type": 3,
-      "Value": "A0E4"
-    },
-    {
-      "Id": "gco3",
-      "Type": 3,
-      "Value": "Ahea"
-    },
-    {
       "Id": "gglb",
       "Value": 200
     },

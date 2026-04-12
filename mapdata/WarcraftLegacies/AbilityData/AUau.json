@@ -77,24 +77,9 @@
       "Value": "Invigoration"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
-    },
-    {
       "Id": "arhk",
       "Type": 3,
       "Value": "E"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - \u003CAUau,DataA1,%\u003E% movement, 0.80 HP regeneration bonus. |n|cffffcc00Level 2|r - \u003CAUau,DataA2,%\u003E% movement, 1.30 HP regeneration bonus. |n|cffffcc00Level 3|r - \u003CAUau,DataA3,%\u003E% movement, 1.80 HP regeneration bonus. |n|cffffcc00Level 4|r - \u003CAUau,DataA4,%\u003E% movement, 2.30 HP regeneration bonus."
     },
     {
       "Level": 1,

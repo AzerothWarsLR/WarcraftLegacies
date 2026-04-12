@@ -13,7 +13,7 @@
     {
       "Id": "gba2",
       "Type": 2,
-      "Value": 20
+      "Value": 1
     },
     {
       "Id": "gba3",
@@ -88,6 +88,16 @@
       "Value": "R09T"
     },
     {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "VP21"
+    },
+    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
@@ -125,7 +135,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Improves Felsteel Plating, increasing its chance to reduce damage to 25%, and total damage reduced to 40."
+      "Value": "Improves Felsteel Plating, increase the damage blocked by Bonebreakers from \u003CA0I6,DataC1\u003E to \u003CA0I6,DataC2\u003E and Executioners from \u003CVP21,DataC1\u003E to \u003CVP21,DataC2\u003E."
     },
     {
       "Level": 2,

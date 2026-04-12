@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0DX,Sca2,A0ES,Sca2,A0SX,A0LQ,A0XM,Aens,Aion"
+      "Value": "A0ES,A0LQ,Aens,Aion"
     },
     {
       "Id": "ua1t",
@@ -15,17 +15,8 @@
       "Value": "normal"
     },
     {
-      "Id": "udaa",
-      "Type": 3,
-      "Value": "A0XM"
-    },
-    {
       "Id": "ubld",
       "Value": 3
-    },
-    {
-      "Id": "ucam",
-      "Value": 1
     },
     {
       "Id": "ucol",
@@ -80,7 +71,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "TP17,R01J,R00X,Rhme,Rhar,Ropg,Ropm,Rguv"
+      "Value": "Rhme,Rhar,Ropg,Ropm,Rguv"
     },
     {
       "Id": "udep",
@@ -95,7 +86,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": "uhot",

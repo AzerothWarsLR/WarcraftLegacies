@@ -6,39 +6,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": "Ssk1",
-      "Type": 2,
-      "Value": 25
-    },
-    {
       "Level": 2,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 35
+      "Value": 100
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 3
+      "Value": 6
     },
     {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 40
+      "Value": 6
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 40
+      "Value": 12
     },
     {
       "Id": "alev",
@@ -59,6 +52,25 @@
       "Id": "atar",
       "Type": 3,
       "Value": "enemy,ally"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
     },
     {
       "Id": "aart",
@@ -93,13 +105,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Attacks against this unit have their damage reduced by \u003CA0ER,DataC1\u003E. Attacks cannot be reduced below \u003CA0ER,DataB1\u003E damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Attacks against this unit have their damage reduced by \u003CA0ER,DataC2\u003E. Attacks cannot be reduced below \u003CA0ER,DataB2\u003E damage."
     }
   ]
 }

@@ -22,11 +22,6 @@
       "Value": 250
     },
     {
-      "Level": 4,
-      "Id": "amcs",
-      "Value": 400
-    },
-    {
       "Level": 2,
       "Pointer": 1,
       "Id": "Hmt1",
@@ -37,12 +32,6 @@
       "Pointer": 1,
       "Id": "Hmt1",
       "Value": 84
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Hmt1",
-      "Value": 96
     },
     {
       "Level": 1,
@@ -78,12 +67,6 @@
       "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
     },
     {
-      "Level": 4,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "allies,ground,invulnerable,neutral,nonsapper,player,structure,vulnerable"
-    },
-    {
       "Level": 2,
       "Pointer": 2,
       "Id": "Hmt2",
@@ -96,13 +79,6 @@
       "Id": "Hmt2",
       "Type": 2,
       "Value": 1
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": "Hmt2",
-      "Type": 2,
-      "Value": 0
     },
     {
       "Id": "alsk",
@@ -194,12 +170,6 @@
       "Value": "Shifting Sands - [|cffffcc00Level 3|r]"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Mass Teleport- [|cffffcc00Level 4|r]"
-    },
-    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
@@ -210,12 +180,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "After 1 seconds, teleports \u003CA000,DataA3\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng3\u003E range."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Teleports 96 of the player\u0027s nearby units, including Jaina, to a friendly ground unit or structure."
     },
     {
       "Id": "aart",

@@ -228,7 +228,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA01C,DataA1\u003E bonus armor, \u003CA01C,DataB1\u003E bonus hit points, \u003CA01C,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA01C,Dur1\u003E seconds."
+      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA0N6,DataA1\u003E bonus armor, \u003CA0N6,DataB1\u003E bonus hit points, \u003CA0N6,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA0N6,Dur1\u003E seconds."
     },
     {
       "Level": 2,
