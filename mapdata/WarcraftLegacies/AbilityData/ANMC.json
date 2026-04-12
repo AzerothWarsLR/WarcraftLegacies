@@ -12,7 +12,43 @@
       "Value": 450
     },
     {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 275
+    },
+    {
       "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00S"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00S"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00S"
+    },
+    {
+      "Level": 4,
       "Id": "abuf",
       "Type": 3,
       "Value": "B00S"
@@ -24,16 +60,70 @@
       "Value": 3
     },
     {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nsi1",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nsi1",
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nsi1",
+      "Value": 3
+    },
+    {
       "Level": 1,
       "Id": "adur",
       "Type": 2,
       "Value": 30
     },
     {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
       "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.75
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4.25
     },
     {
       "Id": "alev",
@@ -95,6 +185,11 @@
       "Value": "Mind Confusion"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellstalker.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 1
     },
@@ -104,16 +199,62 @@
       "Value": "W"
     },
     {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Mind Confusion - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero\u0027s masterful trickery stops enemy units from attacking for a short period of time. |n|n|cffffcc00Level 1|r - Small area, lasts 3(2) seconds. |n|cffffcc00Level 2|r - Medium area, lasts 4(2.75) seconds. |n|cffffcc00Level 3|r - Large area, lasts 5(3.5) seconds.|n|cffffcc00Level 4|r - Very large area, lasts 6(4.25) seconds."
+    },
+    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "Mind Confusion"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Confusion - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Confusion - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Confusion - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Stops all enemies in a small target area from attacking for 30(10) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Stops all enemies in a small target area from attacking for 4(2.75) seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Stops all enemies in a small target area from attacking for 5(3.5) seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Stops all enemies in a small target area from attacking for 6(4.25) seconds."
     }
   ]
 }

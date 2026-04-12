@@ -12,13 +12,70 @@
       "Value": 700
     },
     {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
       "Level": 1,
       "Id": "abuf",
       "Type": 3,
       "Value": "B08P"
     },
     {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08P"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08P"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08P"
+    },
+    {
       "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -6
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -4.5
+    },
+    {
+      "Level": 4,
       "Pointer": 1,
       "Id": "Had1",
       "Type": 2,
@@ -52,6 +109,24 @@
       "Value": "air,enemies,ground,invulnerable,vulnerable"
     },
     {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
       "Id": "aher",
       "Value": 0
     },
@@ -71,9 +146,24 @@
       "Value": "Aura of Dread"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerationAura.blp"
+    },
+    {
       "Id": "arhk",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Aura of Dread - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Decreases armor of nearby enemy units in 600 AOE. |n|n|cffffcc00Level 1|r - Decreases armor by 1.5. |n|cffffcc00Level 2|r - Decreases armor by 3. |n|cffffcc00Level 3|r - Decreases armor by 4.5. |n|cffffcc00Level 4|r - Decreases armor by 6."
     },
     {
       "Id": "atat",
@@ -87,7 +177,43 @@
       "Value": "Aura of Dread"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Aura of Dread - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Aura of Dread - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Aura of Dread - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Decreases armor of nearby enemy units in 600 AOE by 6."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Decreases armor of nearby enemy units in 600 AOE by 3."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Decreases armor of nearby enemy units in 600 AOE by 4.5."
+    },
+    {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
       "Value": "Decreases armor of nearby enemy units in 600 AOE by 6."

@@ -68,7 +68,10 @@ public sealed class GilneasFaction : Faction
   {
     ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
     ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+    ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+    ModAbilityAvailability(ABILITY_A0JV_SUMMON_INITIATE_MAGE_DALARAN_GARRISON, -1);
     ModAbilityAvailability(UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN, -1);
+    ModAbilityAvailability(ABILITY_A0KT_ARCANE_RECALL_DALARAN, -1);
   }
 
   private static void ReplaceWithFactionUnits(Faction pickedFaction)

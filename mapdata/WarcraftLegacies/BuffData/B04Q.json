@@ -1,0 +1,39 @@
+{
+  "OldId": "Brej",
+  "NewId": "B04Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbofSlowness.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Health Funnel"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Health Funnel; it is healing hit points over time."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Health Funnel"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Curse\\CurseTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

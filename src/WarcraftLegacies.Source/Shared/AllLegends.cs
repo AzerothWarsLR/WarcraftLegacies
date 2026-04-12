@@ -19,6 +19,7 @@ using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Skywall;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.Factions.Warsong;
 
 namespace WarcraftLegacies.Source.Shared;
 
@@ -94,6 +95,11 @@ public static class AllLegends
   /// </summary>
   public static StormwindLegends Stormwind { get; }
 
+  /// <summary>
+  /// Contains references to all Warsong <see cref="Legend"/>s.
+  /// </summary>
+  public static WarsongLegends Warsong { get; }
+
   public static AhnqirajLegends Ahnqiraj { get; }
 
   public static BlackEmpireLegends BlackE { get; }
@@ -127,6 +133,7 @@ public static class AllLegends
     Scourge = new ScourgeLegends();
     Sentinels = new SentinelsLegends();
     Stormwind = new StormwindLegends();
+    Warsong = new WarsongLegends();
     Neutral = new NeutralLegends();
     Gilneas = new GilneasLegends();
     Ahnqiraj = new AhnqirajLegends();
@@ -155,6 +162,7 @@ public static class AllLegends
     Scourge.RegisterLegends();
     Sentinels.RegisterLegends();
     Stormwind.RegisterLegends();
+    Warsong.RegisterLegends();
     Ahnqiraj.RegisterLegends();
     BlackE.RegisterLegends();
     Skywall.RegisterLegends();

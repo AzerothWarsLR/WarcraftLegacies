@@ -23,13 +23,6 @@
       "Value": ""
     },
     {
-      "Level": 1,
-      "Pointer": 3,
-      "Id": "Ssk3",
-      "Type": 2,
-      "Value": 18
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASPlated Gauntlet2.blp"
@@ -41,7 +34,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Stormwind Heroes)"
+      "Value": "(Varian)"
     },
     {
       "Id": "anam",
@@ -58,7 +51,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces all attacks on this unit by \u003CA11P,DataC1\u003E damage."
+      "Value": "Reduces all attacks on this unit by \u003CA01X,DataC1\u003E damage."
     }
   ]
 }

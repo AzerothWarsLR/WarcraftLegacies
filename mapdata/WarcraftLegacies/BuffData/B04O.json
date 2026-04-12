@@ -1,0 +1,39 @@
+{
+  "OldId": "BUfa",
+  "NewId": "B04O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfFrost.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Orb of Deceleration"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Orb of Deceleration; melee units that attack it will have their movement speed and attack rate reduced for a short duration."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Orb of Deceleration"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIob\\AIobTarget.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIob\\AIobTarget.mdl"
+    }
+  ]
+}

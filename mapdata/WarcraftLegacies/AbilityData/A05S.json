@@ -1,0 +1,71 @@
+{
+  "OldId": "Aspb",
+  "NewId": "A05S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "YBSM,YBSQ,A00G"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spb2",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritBear.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Warsong - Rexxar)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Menagerie"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Menagerie"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Rexxar summons beasts to aid him in combat.|n|n|cffffcc00- Summon Misha|n- Summon Quilboar|n- Summon Spirit|r"
+    }
+  ]
+}

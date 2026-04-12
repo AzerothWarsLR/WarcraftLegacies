@@ -1,0 +1,28 @@
+{
+  "OldId": "DTg4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    }
+  ]
+}

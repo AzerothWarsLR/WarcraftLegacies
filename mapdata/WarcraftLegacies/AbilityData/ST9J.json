@@ -18,6 +18,12 @@
       "Value": 1
     },
     {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
       "Level": 1,
       "Id": "abuf",
       "Type": 3,
@@ -36,6 +42,12 @@
       "Value": "B0B2"
     },
     {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0B2"
+    },
+    {
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
@@ -54,6 +66,12 @@
       "Value": 60
     },
     {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
       "Level": 2,
       "Id": "amcs",
       "Value": 150
@@ -62,6 +80,11 @@
       "Level": 3,
       "Id": "amcs",
       "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 250
     },
     {
       "Level": 1,
@@ -89,6 +112,12 @@
       "Value": 0.001
     },
     {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 25
+    },
+    {
       "Id": "aher",
       "Value": 1
     },
@@ -111,6 +140,12 @@
       "Value": 0.001
     },
     {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 25
+    },
+    {
       "Id": "alev",
       "Value": 3
     },
@@ -131,6 +166,12 @@
     },
     {
       "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 4,
       "Id": "atar",
       "Type": 3,
       "Value": "self"
@@ -213,6 +254,12 @@
       "Value": "Vanish - [|cffffcc00Level 3|r]"
     },
     {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Vanish - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -229,6 +276,12 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 20 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives friendly nearby units invulnerable. Lasts 4 seconds."
     },
     {
       "Id": "aani",

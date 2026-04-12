@@ -1,0 +1,45 @@
+{
+  "OldId": "Roch",
+  "NewId": "R021",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rmnx"
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Echoes of War"
+    }
+  ]
+}

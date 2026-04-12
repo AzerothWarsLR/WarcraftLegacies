@@ -1,10 +1,12 @@
 ﻿using MacroTools.Factions.Choices;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Draenei;
+using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.Factions.Warsong;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -56,5 +58,20 @@ public static class FactionChoiceDialogSetup
       RequiresCheats = false
     };
     new FactionChoiceDialogPresenter(sentinels, draenei).Run(player.Create(18));
+    var frostwolf = new FactionChoice
+    {
+      Faction = new FrostwolfFaction(),
+      Difficulty = FactionLearningDifficulty.Basic,
+      StartingArea = Regions.FrostwolfStartPos
+    };
+    var warsong = new FactionChoice
+
+    {
+      Faction = new WarsongFaction(),
+      Difficulty = FactionLearningDifficulty.Advanced,
+      StartingArea = Regions.FrostwolfStartPos,
+      RequiresCheats = false
+    };
+    new FactionChoiceDialogPresenter(frostwolf, warsong).Run(player.Create(0));
   }
 }

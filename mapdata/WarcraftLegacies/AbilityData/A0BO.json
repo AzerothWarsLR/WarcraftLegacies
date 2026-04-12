@@ -1,0 +1,216 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A0BO",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grom)"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from  ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 10 seconds."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Martial Spirit - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal. |n|n|cffffcc00Level 1|r - 10 second duration. |n|cffffcc00Level 2|r - 15 second duration.|n|cffffcc00Level 3|r - 25 second duration.|n"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Martial Spirit - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 15 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom has a 75% chance to reduce damage from ranged physical attacks to 0, whilst Kor\u0027krons and Blademasters attacks gain 50% lifesteal.|nLasts 25 seconds."
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
+    }
+  ]
+}

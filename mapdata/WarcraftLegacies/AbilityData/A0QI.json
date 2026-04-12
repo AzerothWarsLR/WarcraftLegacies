@@ -11,6 +11,39 @@
       "Value": 0
     },
     {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 4
+    },
+    {
       "Level": 1,
       "Id": "Hwe1",
       "Type": 3,
@@ -72,16 +105,57 @@
       "Value": "Q"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons immobile serpentine wards to attack the caster\u0027s enemies. The wards are immune to magic. |nLasts \u003CArsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - \u003CArsw,DataA1\u003E wards, \u003Cosp1,realHP\u003E hit points, \u003Cosp1,mindmg1\u003E - \u003Cosp1,maxdmg1\u003E damage. |n|cffffcc00Level 2|r - \u003CArsw,DataA2\u003E wards, \u003Cosp2,realHP\u003E hit points, \u003Cosp2,mindmg1\u003E - \u003Cosp2,maxdmg1\u003E damage. |n|cffffcc00Level 3|r - \u003CArsw,DataA3\u003E wards, \u003Cosp3,realHP\u003E hit points, \u003Cosp3,mindmg1\u003E - \u003Cosp3,maxdmg1\u003E damage. |n|cffffcc00Level 4|r - \u003CArsw,DataA4\u003E wards, \u003Cosp4,realHP\u003E hit points, \u003Cosp4,mindmg1\u003E - \u003Cosp4,maxdmg1\u003E damage."
+    },
+    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "Deploy Trebuchet"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Summons 1 immobile siege weapon to attack your enemies. The trebuchet has 1025 hit points and deals 92-119 damage. |nLasts 30 seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons \u003CArsw,DataA2\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp2,realHP\u003E hit points, is magic immune, and deals \u003Cosp2,mindmg1\u003E - \u003Cosp2,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur2\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons \u003CArsw,DataA3\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp3,realHP\u003E hit points, is magic immune, and deals \u003Cosp3,mindmg1\u003E - \u003Cosp3,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons \u003CArsw,DataA4\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp4,realHP\u003E hit points, is magic immune, and deals \u003Cosp4,mindmg1\u003E - \u003Cosp4,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur4\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "anam",

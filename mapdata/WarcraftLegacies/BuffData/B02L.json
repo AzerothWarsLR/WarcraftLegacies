@@ -1,0 +1,34 @@
+{
+  "OldId": "BNab",
+  "NewId": "B02L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Fire Bomb"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been Fire Bombed.  It is being damaged over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

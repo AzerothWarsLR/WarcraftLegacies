@@ -50,6 +50,11 @@
       "Value": "Rolf"
     },
     {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h0CN,h0CO,otbr"
+    },
+    {
       "Id": "ulum",
       "Value": 0
     },
@@ -67,6 +72,11 @@
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\FrostwolfBeastiary.mdl"
     },
     {
       "Id": "usca",

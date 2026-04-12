@@ -1,0 +1,17 @@
+{
+  "OldId": "nsko",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 88
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light melee unit. "
+    }
+  ]
+}

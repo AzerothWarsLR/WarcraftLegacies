@@ -10,74 +10,81 @@
       "Value": 0
     },
     {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
       "Level": 2,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 100
+      "Value": 40
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 100
+      "Value": 43
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 100
+      "Value": 47
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 3
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 3
     },
     {
       "Level": 4,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 14
+      "Value": 20
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 21
+      "Value": 38
     },
     {
       "Level": 3,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 28
+      "Value": 56
     },
     {
       "Level": 4,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 35
+      "Value": 74
     },
     {
       "Level": 2,
@@ -160,13 +167,6 @@
       "Value": "enemy,ally"
     },
     {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": "Ssk2",
-      "Type": 2,
-      "Value": 6
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarplating.blp"
@@ -208,7 +208,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "The defensive prowess of this hero reduces damage of incoming attacks.|n|n|cffffcc00Level 1|r - Blocks \u003CA04K,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA04K,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA04K,DataC3\u003E damage.|n|cffffcc00Level 4|r - Blocks \u003CA04K,DataC4\u003E damage."
+      "Value": "The defensive prowess of this hero give it a percent chance to block damage.|n|n|cffffcc00Level 1|r - 35% chance to block, ignores 20 damage.|n|cffffcc00Level 2|r - 40% chance to block, ignores 38 damage.|n|cffffcc00Level 3|r - 43% chance to block, ignores 56 damage.|n|cffffcc00Level 4|r - 47% chance to block, ignores 74 damage."
     },
     {
       "Level": 1,
@@ -238,25 +238,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA04K,DataC1\u003E. Attacks cannot be reduced below \u003CA04K,DataB1\u003E damage."
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 35% chance for 20 damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA04K,DataC2\u003E. Attacks cannot be reduced below \u003CA04K,DataB2\u003E damage."
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 39% chance for 38 damage."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA04K,DataC3\u003E. Attacks cannot be reduced below \u003CA04K,DataB3\u003E damage."
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 43% chance for 56 damage."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA04K,DataC4\u003E. Attacks cannot be reduced below \u003CA04K,DataB4\u003E damage."
+      "Value": "The mighty defensive powers of this hero give it a percent chance to block damage. 47% chance for 74 damage."
     }
   ]
 }

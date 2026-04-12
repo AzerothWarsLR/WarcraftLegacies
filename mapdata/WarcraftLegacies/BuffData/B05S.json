@@ -1,0 +1,24 @@
+{
+  "OldId": "BIcb",
+  "NewId": "B05S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNCleavingAttack.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Sunder Armor"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by Sunder Armor; its armor is temporarily reduced."
+    }
+  ]
+}

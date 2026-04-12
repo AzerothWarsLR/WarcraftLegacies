@@ -40,6 +40,16 @@
       "Value": "E"
     },
     {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Immolation"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Engulfs the Demon Hunter in flames, causing 20 damage per second to nearby enemy land units. |nDrains mana until deactivated. |n|n"
+    },
+    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,

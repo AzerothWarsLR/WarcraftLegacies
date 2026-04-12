@@ -10,7 +10,7 @@
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 0
     },
     {
       "Id": "arac",
@@ -21,13 +21,6 @@
       "Id": "areq",
       "Type": 3,
       "Value": ""
-    },
-    {
-      "Level": 1,
-      "Pointer": 3,
-      "Id": "Ssk3",
-      "Type": 2,
-      "Value": 12
     },
     {
       "Id": "aart",
@@ -45,7 +38,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Stormwind - Champion, Lordaeron - Paladin)"
+      "Value": "(Orange - Kassan. Dark Green - Champions)"
     },
     {
       "Id": "anam",

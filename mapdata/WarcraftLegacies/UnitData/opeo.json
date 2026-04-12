@@ -16,7 +16,7 @@
     {
       "Id": "ubui",
       "Type": 3,
-      "Value": "obea,ovln,otto,oshy,ogre,otrb,obar,ofor,oalt,obea,osld,owtw"
+      "Value": "obea,ovln,otto,oshy,ogre,otrb,npgf,obar,ofor,oalt,obea,osld,owtw"
     },
     {
       "Id": "ucol",
@@ -43,12 +43,12 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rguv"
+      "Value": "R021,Ropg,Rguv"
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf Worker)"
+      "Value": "(Frostwolf, Warsong, Worker)"
     },
     {
       "Id": "uhot",

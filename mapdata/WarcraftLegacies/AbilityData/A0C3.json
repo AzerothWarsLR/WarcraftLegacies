@@ -38,6 +38,16 @@
       "Value": "W"
     },
     {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Mana Shield"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Creates a shield that absorbs damage by using the Caster\u0027s mana. |n|n|cffffcc00Level 1|r - 1 damage per point of mana. |n|cffffcc00Level 2|r - 1.5 damage per point of mana. |n|cffffcc00Level 3|r - 2 damage per point of mana. |n|cffffcc00Level 4|r - 2.5 damage per point of mana. |n|cffffcc00Level 5|r - 3 damage per point of mana."
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,

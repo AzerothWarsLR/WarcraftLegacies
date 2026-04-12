@@ -6,11 +6,46 @@
   ],
   "Modifications": [
     {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
       "Level": 1,
       "Pointer": 2,
       "Id": "War2",
       "Type": 2,
       "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
     },
     {
       "Id": "alev",
@@ -20,6 +55,12 @@
       "Id": "arac",
       "Type": 3,
       "Value": "human"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
     },
     {
       "Id": "abpx",
@@ -33,6 +74,30 @@
       "Id": "ansf",
       "Type": 3,
       "Value": "(Alexandros)"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CA0MQ,DataA2\u003E% chance that an attack will deal \u003CA0MQ,DataB2\u003E damage to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CA0MQ,DataA3\u003E% chance that an attack will deal \u003CA0MQ,DataB3\u003E damage to nearby units."
     },
     {
       "Level": 1,

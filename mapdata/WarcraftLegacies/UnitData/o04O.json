@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Awfb"
+      "Value": "A11S,A0NJ,A07A,A0QL,Aion"
     },
     {
       "Id": "ubld",
@@ -58,7 +58,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rguv"
+      "Value": "R07M,Rhme,Rhar,Rguv"
     },
     {
       "Id": "udp1",
@@ -92,11 +92,6 @@
       "Value": 3
     },
     {
-      "Id": "urac",
-      "Type": 3,
-      "Value": "creeps"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"
@@ -112,9 +107,19 @@
       "Value": 80
     },
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mad Scientist of the Goblins."
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "Alchemist"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Alchemist"
     },
     {
       "Id": "umdl",
@@ -144,7 +149,7 @@
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": ""
+      "Value": "- Explosive Potion,- Explosive Potion|n- Dispel Magic,- Explosive Potion|n- Dispel Magic|n- Acid Bomb,- Explosive Potion|n- Dispel Magic|n- Acid Bomb|n- Napalm"
     },
     {
       "Id": "usca",
@@ -154,7 +159,7 @@
     {
       "Id": "ucun",
       "Type": 3,
-      "Value": ""
+      "Value": "Initiate, Adept, Master, Grandmaster"
     },
     {
       "Id": "ubpx",

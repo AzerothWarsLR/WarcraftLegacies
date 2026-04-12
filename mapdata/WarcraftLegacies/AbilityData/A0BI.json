@@ -17,21 +17,21 @@
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 9
+      "Value": 6
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 15
+      "Value": 9
     },
     {
       "Id": "alev",
@@ -52,25 +52,6 @@
       "Id": "atar",
       "Type": 3,
       "Value": "enemy,ally"
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Ssk2",
-      "Type": 2,
-      "Value": 6
-    },
-    {
-      "Level": 2,
-      "Pointer": 5,
-      "Id": "Ssk5",
-      "Value": 1
-    },
-    {
-      "Level": 2,
-      "Pointer": 4,
-      "Id": "Ssk4",
-      "Value": 1
     },
     {
       "Id": "aart",
@@ -103,13 +84,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heavy steel plating reduces damage dealt to the Marshal by 9 damage."
+      "Value": "Heavy steel plating reduces damage dealt to the Marshal by 6 damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heavy steel plating reduces damage dealt to the Marshal by 15 damage."
+      "Value": "Heavy steel plating reduces damage dealt to the Marshal by 9 damage."
     }
   ]
 }

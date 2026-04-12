@@ -62,6 +62,11 @@
       "Value": 90
     },
     {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o04A"
+    },
+    {
       "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical"

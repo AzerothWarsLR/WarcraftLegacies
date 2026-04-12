@@ -1,0 +1,137 @@
+{
+  "OldId": "orai",
+  "NewId": "o00S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0DS,A0EF,S00R,A0ES,Sca2,A0SX,A0LQ,A0XM,Aens,Aion"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0XM"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01J,R00X,Rhme,Rhar,Ropg,Ropm,Rguv"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fast and ferocious wolf rider with high health regeneration."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chaos Raider"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Chaos Raider"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\demon\\ChaosWolfRider\\ChaosWolfRider.mdl"
+    }
+  ]
+}

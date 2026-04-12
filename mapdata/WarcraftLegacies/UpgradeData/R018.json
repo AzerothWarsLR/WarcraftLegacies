@@ -11,9 +11,34 @@
       "Value": 1
     },
     {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
       "Id": "gco1",
       "Type": 3,
       "Value": "A0JA"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "Adtn"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "A0M9"
     },
     {
       "Id": "gglb",

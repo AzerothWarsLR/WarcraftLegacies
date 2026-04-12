@@ -1,0 +1,24 @@
+{
+  "OldId": "Bpoi",
+  "NewId": "B08C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Bleed"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is bleeding"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

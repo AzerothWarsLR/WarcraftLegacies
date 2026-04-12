@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "ACbh"
+      "Value": "Aion,ACbh"
     },
     {
       "Id": "ubld",
@@ -49,6 +49,11 @@
       "Value": 1570
     },
     {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
       "Id": "uhpr",
       "Type": 2,
       "Value": 1.25
@@ -68,7 +73,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": ""
+      "Value": "Robs,Ropm,R015,Rguv,Rhar,Rhme"
     },
     {
       "Id": "ucam",
@@ -88,6 +93,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "Ogre Mercenary"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Ogre Mercenary"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful mercenary hired by the goblin cartel."
     },
     {
       "Id": "umdl",

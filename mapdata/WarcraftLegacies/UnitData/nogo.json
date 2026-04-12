@@ -48,6 +48,11 @@
       "Value": 1150
     },
     {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
       "Id": "uhpr",
       "Type": 2,
       "Value": 1.25
@@ -67,12 +72,12 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rguv"
+      "Value": "Robs,Ropm,R015,Rguv,Rhar,Rhme"
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Creep)"
+      "Value": "(Warsong)"
     },
     {
       "Id": "uhot",
@@ -88,6 +93,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "Stonemaul Bruiser"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Stonemaul Bruiser"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful warrior of Rexxar\u0027s clan."
     }
   ]
 }

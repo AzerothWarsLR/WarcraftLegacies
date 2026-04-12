@@ -1,0 +1,29 @@
+{
+  "OldId": "BOae",
+  "NewId": "B0B0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Well Oiled Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Well Oiled Aura; it has an increased movement speed and attack rate."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASOil.blp"
+    }
+  ]
+}

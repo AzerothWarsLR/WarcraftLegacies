@@ -52,7 +52,8 @@ public static class CheatSetup
       Artifacts.AzureFragment,
       Artifacts.BronzeFragment,
       Artifacts.EmeraldFragment,
-      Artifacts.RubyFragment
+      Artifacts.RubyFragment,
+      Artifacts.ObsidianFragment
     }));
     CommandManager.Register(new CheatGetWaygateDestination());
     CommandManager.Register(new CheatPause());

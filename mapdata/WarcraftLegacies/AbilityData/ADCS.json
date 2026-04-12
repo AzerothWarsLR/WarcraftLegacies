@@ -11,6 +11,16 @@
       "Value": 300
     },
     {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
       "Level": 1,
       "Pointer": 1,
       "Id": "Htb1",
@@ -18,10 +28,36 @@
       "Value": 0
     },
     {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
       "Level": 1,
       "Id": "adur",
       "Type": 2,
       "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
     },
     {
       "Level": 1,
@@ -34,6 +70,12 @@
       "Id": "ahdu",
       "Type": 2,
       "Value": 0.3
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
     },
     {
       "Id": "alev",
@@ -50,6 +92,18 @@
       "Id": "aran",
       "Type": 2,
       "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
     },
     {
       "Id": "aher",
@@ -110,6 +164,16 @@
       "Value": "Q"
     },
     {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 250 damage, 4 second stun. 2 second on Heroes.|n|cffffcc00Level 2|r - 300 damage, 5 second stun. 2.5 seconds on Heroes.|n|cffffcc00Level 3|r - 350 damage, 6 second stun. 3 seconds on Heroes.|n|cffffcc00Level 4|r - 400 damage, 7 second stun. 3.5 seconds on Heroes"
+    },
+    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
@@ -122,6 +186,18 @@
       "Value": "Crystal Discharge - [|cffffcc00Level 2|r]"
     },
     {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -132,6 +208,18 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Launches a Crystal at a target enemy unit anywhere on the map, stunning the target for \u003CADCS,Dur2\u003E seconds. (\u003CADCS,HeroDur2,.\u003E for heroes)"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 350 damage and stunning the target for 6 seconds. Lasts 3 seconds on heroes."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 400 damage and stunning the target for 7 seconds. Lasts 3.5 seconds on heroes."
     },
     {
       "Id": "aart",

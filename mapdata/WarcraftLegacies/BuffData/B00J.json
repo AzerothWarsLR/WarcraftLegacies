@@ -1,0 +1,39 @@
+{
+  "OldId": "BUau",
+  "NewId": "B00J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShip.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Naval Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has increased movement and attack speed."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " (Theramore Variant)"
+    }
+  ]
+}

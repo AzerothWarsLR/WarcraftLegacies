@@ -1,0 +1,190 @@
+{
+  "OldId": "Ntin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0RA,Aamk,ANsy,ANcs,ANeg"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R01F"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical"
+    },
+    {
+      "Id": "uint",
+      "Value": 1
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 2500
+    },
+    {
+      "Id": "umpi",
+      "Value": 1250
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0MN,AInv"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Gazlowe"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chief Engineer"
+    },
+    {
+      "Id": "upru",
+      "Value": 0
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Gazlowe"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Gazlowe"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Gazlowe"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Versatile warrior Hero, adept at disrupting enemy armies."
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    }
+  ]
+}

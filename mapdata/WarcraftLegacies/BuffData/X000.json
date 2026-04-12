@@ -1,0 +1,24 @@
+{
+  "OldId": "XHfs",
+  "NewId": "X000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Blessed Ground (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "FountainLoop"
+    }
+  ]
+}

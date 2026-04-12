@@ -1,0 +1,154 @@
+{
+  "OldId": "ACce",
+  "NewId": "A0TY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Icon)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 10% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
+    },
+    {
+      "Id": "aspt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHeartAmulet.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 30% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 40% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resolute Heart - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resolute Heart - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resolute Heart - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resolute Heart - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeartAmulet.blp"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Gives a chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300.|n|n|cffffcc00Level 1|r - 10% chance.|n|cffffcc00Level 2|r - 20% chance.|n|cffffcc00Level 3|r - 30% chance.|n|cffffcc00Level 4|r - 40% chance."
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Resolute Heart  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Resolute Heart"
+    }
+  ]
+}

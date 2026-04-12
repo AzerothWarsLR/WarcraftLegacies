@@ -1,0 +1,39 @@
+{
+  "OldId": "Binf",
+  "NewId": "B064",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Holy Fire Blessing"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has the Holy Fire Blessing"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Purple)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "hand,left"
+    }
+  ]
+}

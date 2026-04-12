@@ -1,0 +1,34 @@
+{
+  "OldId": "BNpa",
+  "NewId": "B01Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoom.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Demonic Possession"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Demonically possessed. It has increased attack and movement speed and is taking damage over time. If it dies a Demonic Spirit will spawn from the corpse."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+    }
+  ]
+}

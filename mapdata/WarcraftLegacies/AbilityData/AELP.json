@@ -6,6 +6,48 @@
   ],
   "Modifications": [
     {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
       "Id": "alev",
       "Value": 1
     },
@@ -49,10 +91,39 @@
       "Value": "W"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB1\u003E targets, dealing damage to each of them. |n|n|cffffcc00Level 1|r - Deals \u003CA024,DataA1\u003E damage. |n|cffffcc00Level 2|r - Deals \u003CA024,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA024,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA024,DataA4\u003E damage."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "When this unit attacks, it has a 20% chance to cast Purge on the target, dispelling and slowing their movement speed. Summoned units will take 200 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB2\u003E targets, dealing \u003CA024,DataA2\u003E damage to each of them."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB3\u003E targets, dealing \u003CA024,DataA3\u003E damage to each of them."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB4\u003E targets, dealing \u003CA024,DataA4\u003E damage to each of them."
     },
     {
       "Id": "anam",
@@ -60,15 +131,37 @@
       "Value": "Shocking Blades"
     },
     {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Thunder Fists - [|cffffcc00Level %d|r]"
+    },
+    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\PassiveButtons\\PASPhaseBlade.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNZeusStrike.blp"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "Shocking Blades"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 3|r]"
     },
     {
       "Id": "abpx",

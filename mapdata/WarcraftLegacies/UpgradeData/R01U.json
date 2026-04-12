@@ -1,0 +1,55 @@
+{
+  "OldId": "Roch",
+  "NewId": "R01U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Pillage Stonemaul"
+    }
+  ]
+}

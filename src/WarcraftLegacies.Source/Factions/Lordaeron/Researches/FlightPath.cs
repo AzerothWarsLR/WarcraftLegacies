@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 public sealed class FlightPath : Research
 {
   private readonly Faction _frostwolf;
-  private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_FROSTWOLF;
+  private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
   private static unit? _flightToOrgrimmar;
   private static unit? _flightToThunderBluff;
   private static bool _researched;
@@ -23,9 +23,9 @@ public sealed class FlightPath : Research
   {
     _frostwolf = frostwolf;
     _flightToOrgrimmar = AllPreplacedWidgets.Units.GetClosest(
-      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF, -14445, -4042);
+      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, -14445, -4042);
     _flightToThunderBluff = AllPreplacedWidgets.Units.GetClosest(
-      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF, -9704, -858);
+      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, -9704, -858);
   }
 
   /// <inheritdoc />

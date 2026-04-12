@@ -1,0 +1,29 @@
+{
+  "OldId": "Brej",
+  "NewId": "B06R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mana Funnel"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Mana Funnel"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BOae",
+  "NewId": "B027",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNElunesBlessing.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Sentinel General\u0027s Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Sentinel General\u0027s Aura; it has an increased movement speed and attack rate."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

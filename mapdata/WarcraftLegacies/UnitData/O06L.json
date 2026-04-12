@@ -1,0 +1,235 @@
+{
+  "OldId": "Obla",
+  "NewId": "O06L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.64
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 3.333
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 90
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0TF,A0VX,A0TY,Aamk,A0TW"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 270
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 5
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0VU,AInv"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.77
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R062"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGarrosh Hellscream.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Garrosh"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GarroshHellscream.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warlord of the Warsong Clan"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Garrosh Hellscream"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Garrosh"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGarrosh Hellscream.blp"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Garrosh"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, specialize in buffing his frontline."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Grom"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.7
+    }
+  ]
+}

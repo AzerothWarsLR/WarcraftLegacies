@@ -9,10 +9,10 @@ public sealed class FrostwolfLegends
 {
   public LegendaryHero Cairne { get; }
   public LegendaryHero Thrall { get; }
+  public LegendaryHero Rexxar { get; }
   public LegendaryHero Voljin { get; }
   public Capital ThunderBluff { get; }
   public Capital DarkspearHold { get; }
-  public Capital Orgrimmar { get; }
 
   public FrostwolfLegends()
   {
@@ -53,17 +53,16 @@ public sealed class FrostwolfLegends
       Essential = true
     };
 
+    Rexxar = new LegendaryHero("Rexxar")
+    {
+      UnitType = UNIT_OREX_BEASTMASTER_FROSTWOLF,
+      StartingXp = 1800
+    };
+
     Voljin = new LegendaryHero("Vol'jin")
     {
       UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
       StartingXp = 2800
-    };
-
-    Orgrimmar = new Capital
-    {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_FROSTWOLF),
-      DeathMessage = "Orgrimmar has been demolished, and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
-      Essential = true
     };
   }
 
@@ -71,6 +70,7 @@ public sealed class FrostwolfLegends
   {
     LegendaryHeroManager.Register(Cairne);
     LegendaryHeroManager.Register(Thrall);
+    LegendaryHeroManager.Register(Rexxar);
     LegendaryHeroManager.Register(Voljin);
     CapitalManager.Register(ThunderBluff);
     CapitalManager.Register(DarkspearHold);

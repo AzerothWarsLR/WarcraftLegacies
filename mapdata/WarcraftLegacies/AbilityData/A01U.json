@@ -75,6 +75,11 @@
       "Value": "Earth Bind"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 1
     },
@@ -82,6 +87,16 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Earth Bind - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes the ground to burst, immobilizing and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - 25 damage per second for 5 seconds (1 seconds for Heroes). |n|cffffcc00Level 2|r - 30 damage per second for 6 seconds (1.75 seconds for Heroes). |n|cffffcc00Level 3|r - 40 damage per second for 8 seconds (2.50 seconds for Heroes). |n|cffffcc00Level 4|r - 50 damage per second for 10 seconds (3.25 seconds for Heroes)."
     },
     {
       "Id": "atat",

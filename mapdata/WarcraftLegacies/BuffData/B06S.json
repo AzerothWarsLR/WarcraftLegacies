@@ -1,0 +1,19 @@
+{
+  "OldId": "AEsd",
+  "NewId": "B06S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Inferno (Target)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

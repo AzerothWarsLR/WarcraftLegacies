@@ -1,0 +1,17 @@
+{
+  "OldId": "nsog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 333
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee unit. "
+    }
+  ]
+}

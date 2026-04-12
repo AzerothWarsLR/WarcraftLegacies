@@ -1,0 +1,30 @@
+{
+  "OldId": "Sca1",
+  "NewId": "S00N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R09O"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "n0E9"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Grey - Warlock)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

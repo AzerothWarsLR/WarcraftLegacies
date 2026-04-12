@@ -1,0 +1,80 @@
+{
+  "OldId": "ngsp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A6,Asds"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 25
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 45
+    },
+    {
+      "Id": "usst",
+      "Value": 240
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep Shop)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Goblin Sapper"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Hire Goblin Sapper"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Explosive team of goblin sappers. Particularly effective against buildings. "
+    }
+  ]
+}

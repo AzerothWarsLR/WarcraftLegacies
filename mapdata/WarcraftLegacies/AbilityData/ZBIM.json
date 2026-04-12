@@ -12,7 +12,31 @@
       "Value": 300
     },
     {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
       "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
       "Id": "acdn",
       "Type": 2,
       "Value": 120
@@ -23,7 +47,31 @@
       "Value": 300
     },
     {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
       "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
       "Pointer": 1,
       "Id": "Ncl1",
       "Type": 2,
@@ -36,13 +84,49 @@
       "Value": 2
     },
     {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ncl3",
       "Value": 3
     },
     {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 3
+    },
+    {
       "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 3,
       "Pointer": 5,
       "Id": "Ncl5",
       "Value": 0
@@ -55,12 +139,38 @@
       "Value": "darkconversion"
     },
     {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "darkconversion"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "darkconversion"
+    },
+    {
       "Id": "arac",
       "Type": 3,
       "Value": "naga"
     },
     {
       "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
       "Id": "aran",
       "Type": 2,
       "Value": 99999
@@ -127,6 +237,11 @@
       "Value": "Inspire Madness"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMind Crush.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 3
     },
@@ -134,6 +249,16 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Inspire Madness"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Takes control of 14 random enemy units in the target area. After 30 seconds, each unit controlled this way dies."
     },
     {
       "Id": "atat",
@@ -147,10 +272,34 @@
       "Value": "Inspire Madness"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Inspire Madness - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Inspire Madness - [|cffffcc00Level 3|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Takes control of up to 6 non-summoned enemy units in the target area. Controlled units die after 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Takes control of 10 random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Takes control of 14 random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness."
     }
   ]
 }

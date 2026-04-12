@@ -149,6 +149,11 @@
       "Value": "Q"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "A coil of death that can damage an enemy living unit or heal a friendly Undead unit. |n|n|cffffcc00Level 1|r - Heals for \u003CAUdc,DataA1\u003E hit points. |n|cffffcc00Level 2|r - Heals for \u003CAUdc,DataA2\u003E hit points. |n|cffffcc00Level 3|r - Heals for \u003CAUdc,DataA3\u003E hit points. |n|cffffcc00Level 4|r - Heals for \u003CAUdc,DataA4\u003E hit points."
+    },
+    {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,

@@ -1,0 +1,115 @@
+{
+  "OldId": "obot",
+  "NewId": "o06G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 1
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R04R,Rguv,R006"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0PJ,A0MU,Sch5,Sdro,S000"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R097"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUndeadTransport.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HumanOilTanker.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Oil Rig Constructor"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Oil Rig Constructor"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A sturdy ship that can construct Oil Rigs."
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

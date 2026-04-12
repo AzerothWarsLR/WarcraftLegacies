@@ -58,6 +58,11 @@
       "Value": "Summon Queen of Suffering"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLavaSpawn.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 1
     },
@@ -65,6 +70,16 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Ritual of Fire - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Dargan performs a ritual that opens a portal allowing Fire Elementals to fight his enemies. |nThe Fire Elementals last 60 seconds. |n|n|cffffcc00Level 1|r - 3 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 2|r - 4 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 3|r - 4 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire.|n|cffffcc00Level 4|r - 5 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire."
     },
     {
       "Level": 1,

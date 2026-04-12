@@ -211,6 +211,39 @@ public static class UniqueEliteNames
           "Rak Coldskull",
           "Ras Frostwhisper"
         },
+      [UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE] =
+        new()
+        {
+          "Bale Bleakstare",
+          "Doomroar",
+          "Fenris'ar Gul",
+          "Foerend",
+          "Gar'dal Grimsight",
+          "Gorr Grimwolf",
+          "Kag'ar Winterfang",
+          "Kazil Darkeye",
+          "Kazragore",
+          "Magis Coldeye",
+          "Negel Fireye",
+          "Warmaul"
+        },
+      [UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE] =
+        new()
+        {
+          "Arashicage",
+          "Bloodgrin",
+          "Bonethirst",
+          "Genjuros",
+          "Maim",
+          "Mazuru",
+          "Mizgill",
+          "Moogul the Sly",
+          "Nera'thor",
+          "Rend",
+          "Sagra'nel",
+          "Samuro",
+          "Tojara"
+        },
       [UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] =
         new()
       {

@@ -1,0 +1,39 @@
+{
+  "OldId": "BUau",
+  "NewId": "B03N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNEngineeringUpgrade.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mech Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This building is under the effects of Mech Aura; It has increased health regeneration."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mech Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

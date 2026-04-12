@@ -70,8 +70,23 @@
       "Value": "Naval Aura"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": "arpx",
       "Value": 0
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "atat",

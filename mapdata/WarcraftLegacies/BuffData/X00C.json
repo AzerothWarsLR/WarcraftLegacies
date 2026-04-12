@@ -1,0 +1,19 @@
+{
+  "OldId": "XHbz",
+  "NewId": "X00C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Shardfall (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl"
+    }
+  ]
+}

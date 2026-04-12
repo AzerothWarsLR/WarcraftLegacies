@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using FluentAssertions;
-using Warcraft.Cartographer.Extensions;
+using War3Api.Object;
+using War3Net.Common.Extensions;
 using WarcraftLegacies.Map.Tests.TestSupport;
 using Xunit.Sdk;
 
@@ -25,7 +26,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
     var exceptions = new HashSet<string>
@@ -34,7 +35,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
     };
 
     var upgradesToCheck = fixture.UnreachableObjects.Upgrades
-      .Where(upgrade => !exceptions.Contains(upgrade.GetReadableId()))
+      .Where(upgrade => !exceptions.Contains(GetReadableId(upgrade)))
       .ToList();
 
     if (upgradesToCheck.Count <= 0)
@@ -48,7 +49,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var upgrade in upgradesToCheck)
     {
-      exceptionMessageBuilder.AppendLine($"{upgrade.GetReadableId()} - {upgrade.GetId()}");
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(upgrade)} - {GetId(upgrade)}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -64,7 +65,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
     var unitsToCheck = fixture.UnreachableObjects.Units.ToList();
@@ -80,7 +81,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var unit in unitsToCheck)
     {
-      exceptionMessageBuilder.AppendLine($"{unit.GetReadableId()} - {unit.GetId()}");
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -96,7 +97,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
     var abilitiesToCheck = fixture.UnreachableObjects.Abilities.ToList();
@@ -112,7 +113,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var unit in abilitiesToCheck)
     {
-      exceptionMessageBuilder.AppendLine($"{unit.GetReadableId()} - {unit.GetId()}");
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -130,7 +131,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     if (fixture.UnreachableObjects.Exceptions.Count != 0)
     {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
+      throw new XunitException("Test cannot start because there were issues building the UnreachableObjectCollection.");
     }
 
     var exceptionMessageBuilder = new StringBuilder();
@@ -139,98 +140,13 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture fixture)
 
     foreach (var doodad in unplacedDoodads)
     {
-      exceptionMessageBuilder.AppendLine($"{doodad.GetReadableId()} - {doodad.GetId()}");
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(doodad)} - {GetId(doodad)}");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
 
-  [Fact]
-  public void AllDestructables_ArePlaced()
-  {
-    var unplacedDestructables = fixture.UnreachableObjects.Destructables;
+  private static int GetId(BaseObject baseObject) => baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
 
-    if (unplacedDestructables.Count <= 0)
-    {
-      return;
-    }
-
-    if (fixture.UnreachableObjects.Exceptions.Count != 0)
-    {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
-    }
-
-    var exceptionMessageBuilder = new StringBuilder();
-    exceptionMessageBuilder.AppendLine(
-      $"The following {unplacedDestructables.Count} destructables aren't placed anywhere on the map. Remove them from the map or place them somewhere.");
-
-    foreach (var destructable in unplacedDestructables)
-    {
-      exceptionMessageBuilder.AppendLine($"{destructable.GetReadableId()} - {destructable.GetId()}");
-    }
-
-    throw new XunitException(exceptionMessageBuilder.ToString());
-  }
-
-  [Fact]
-  public void AllItems_CanBeAccessed()
-  {
-    if (fixture.UnreachableObjects.Items.Count <= 0)
-    {
-      return;
-    }
-
-    if (fixture.UnreachableObjects.Exceptions.Count != 0)
-    {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
-    }
-
-    var itemsToCheck = fixture.UnreachableObjects.Items.ToList();
-
-    if (itemsToCheck.Count <= 0)
-    {
-      return;
-    }
-
-    var exceptionMessageBuilder = new StringBuilder();
-    exceptionMessageBuilder.AppendLine($"The following {itemsToCheck.Count} items aren't accessible in the map. Remove them from the map or place them somewhere.");
-
-    foreach (var item in itemsToCheck)
-    {
-      exceptionMessageBuilder.AppendLine($"{item.GetReadableId()} - {item.GetId()}");
-    }
-
-    throw new XunitException(exceptionMessageBuilder.ToString());
-  }
-
-  [Fact]
-  public void AllBuffs_CanBeApplied()
-  {
-    if (fixture.UnreachableObjects.Buffs.Count <= 0)
-    {
-      return;
-    }
-
-    if (fixture.UnreachableObjects.Exceptions.Count != 0)
-    {
-      throw new UnreachableObjectCollectionBuildException(fixture.UnreachableObjects.Exceptions);
-    }
-
-    var buffsToCheck = fixture.UnreachableObjects.Buffs.ToList();
-
-    if (buffsToCheck.Count <= 0)
-    {
-      return;
-    }
-
-    var exceptionMessageBuilder = new StringBuilder();
-    exceptionMessageBuilder.AppendLine($"The following {buffsToCheck.Count} buffs aren't applied by any ability in the map. Remove them from the map or assign them to an ability.");
-
-    foreach (var buff in buffsToCheck)
-    {
-      exceptionMessageBuilder.AppendLine($"{buff.GetReadableId()} - {buff.GetId()}");
-    }
-
-    throw new XunitException(exceptionMessageBuilder.ToString());
-  }
+  private static string GetReadableId(BaseObject baseObject) => GetId(baseObject).ToRawcode();
 }

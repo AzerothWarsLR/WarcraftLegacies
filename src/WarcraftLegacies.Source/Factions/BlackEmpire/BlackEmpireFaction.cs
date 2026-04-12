@@ -61,7 +61,7 @@ public sealed class BlackEmpireFaction : Faction
     AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));
     AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
     AddQuest(new QuestDestruction(AllLegends.BlackE.Nzoth));
-    AddQuest(new QuestWorldStone(AllLegends.BlackE.Nzoth, AllLegends.Frostwolf.Orgrimmar));
+    AddQuest(new QuestWorldStone(AllLegends.BlackE.Nzoth, AllLegends.Warsong.Orgrimmar));
     AddQuest(new QuestAscension(AllLegends.BlackE.Nzoth));
     AddQuest(new QuestAlignement(AllLegends.BlackE.Nzoth));
   }

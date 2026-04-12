@@ -1,0 +1,20 @@
+{
+  "OldId": "Sch3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "friend,ground,hero,invulnerable,organic,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Car1",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "OldId": "ANen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Naga)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ensnare (|cffffcc00Q|r)"
+    }
+  ]
+}

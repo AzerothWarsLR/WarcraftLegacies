@@ -6,6 +6,13 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
       "Id": "areq",
       "Type": 3,
       "Value": ""
@@ -15,14 +22,7 @@
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 18
-    },
-    {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": "Ssk2",
-      "Type": 2,
-      "Value": 6
+      "Value": 25
     },
     {
       "Id": "ansf",

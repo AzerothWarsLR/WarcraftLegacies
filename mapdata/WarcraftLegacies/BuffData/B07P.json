@@ -1,0 +1,14 @@
+{
+  "OldId": "ANmd",
+  "NewId": "B07P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Lightning Storm"
+    }
+  ]
+}

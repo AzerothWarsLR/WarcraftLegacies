@@ -1,0 +1,34 @@
+{
+  "OldId": "BOmi",
+  "NewId": "B0AM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Afterimage"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Elemental Guardian)"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "A duplicate illusion of the original Elemental Guardian."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKeeperGhostBlue.blp"
+    }
+  ]
+}

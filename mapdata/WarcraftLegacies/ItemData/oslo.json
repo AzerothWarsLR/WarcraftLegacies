@@ -1,0 +1,32 @@
+{
+  "OldId": "oslo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIsb,A0NA"
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "(|cffcece00W|r) Purchase Orb of Slow"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, and have a chance to slow a target enemy unit\u0027s movement speed by \u003CAIos,DataA1,%\u003E% and attack rate by \u003CAIos,DataB1,%\u003E% for 20 seconds. Lasts 3 seconds on Heroes."
+    }
+  ]
+}

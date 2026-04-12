@@ -1,0 +1,128 @@
+{
+  "OldId": "Opgh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A10G,A0KV,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.85
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0EH"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0TW,A03S,Aamk,AOww,A0FK"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 30
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00X"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Corruptor"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong-Bloodpact)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Corruptor of the Warsong Clan"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Corruptor"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

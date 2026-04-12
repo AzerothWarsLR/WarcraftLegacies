@@ -1,0 +1,29 @@
+{
+  "OldId": "BHab",
+  "NewId": "B09J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Refurbish Aura; its mana is continuously being fully restored."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Refurbish Aura"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRefurbish.blp"
+    }
+  ]
+}

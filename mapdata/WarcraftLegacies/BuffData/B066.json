@@ -1,0 +1,39 @@
+{
+  "OldId": "Bfae",
+  "NewId": "B066",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Judgement"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Judgement; it has reduced armor and can be seen by the enemy."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Purple Inquisitor)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -64,7 +64,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R05O"
+      "Value": "R05O,R00R"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o00A,opeo"
     },
     {
       "Id": "ulum",

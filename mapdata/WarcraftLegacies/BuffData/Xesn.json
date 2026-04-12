@@ -1,0 +1,13 @@
+{
+  "OldId": "Xesn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Units\\NightElf\\Owl\\Owl.mdl"
+    }
+  ]
+}

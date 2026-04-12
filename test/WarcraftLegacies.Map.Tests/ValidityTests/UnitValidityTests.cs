@@ -1,7 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Text;
 using War3Api.Object;
 using Warcraft.Cartographer.Extensions;
 using WarcraftLegacies.Map.Tests.TestSupport;
+using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
@@ -42,7 +44,18 @@ public sealed class UnitValidityTests(MapTestFixture fixture)
       }
     }
 
-    ValidityTestHelpers.ThrowIfAny(issues);
+    if (issues.Count == 0)
+    {
+      return;
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    foreach (var issue in issues)
+    {
+      exceptionMessageBuilder.AppendLine(issue);
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
   }
 
   private static bool VerifyUnitsTrained(Unit unit, [NotNullWhen(true)] out string? issue)

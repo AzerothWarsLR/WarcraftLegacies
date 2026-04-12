@@ -5,7 +5,6 @@ using WarcraftLegacies.Source.Factions.Ahnqiraj;
 using WarcraftLegacies.Source.Factions.BlackEmpire;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
-using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Legion;
@@ -27,7 +26,7 @@ public static class PlayerSetup
     SetupPlayer(player.Create(4), new IronforgeFaction());
     SetupPlayer(player.Create(6), new FelHordeFaction());
     player.Create(7).GetPlayerData().SetTeam(TeamSetup.NorthAlliance);
-    SetupPlayer(player.Create(0), new FrostwolfFaction());
+    player.Create(0).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
     SetupPlayer(player.Create(8), new SkywallFaction());
     SetupPlayer(player.Create(9), new LordaeronFaction());
     SetupPlayer(player.Create(11), new DruidsFaction());

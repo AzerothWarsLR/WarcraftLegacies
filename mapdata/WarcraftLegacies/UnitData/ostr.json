@@ -62,13 +62,18 @@
       "Value": 90
     },
     {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R00R"
+    },
+    {
       "Id": "ulum",
       "Value": 0
     },
     {
-      "Id": "ures",
+      "Id": "utra",
       "Type": 3,
-      "Value": ""
+      "Value": "o00A,opeo"
     },
     {
       "Id": "ubpx",

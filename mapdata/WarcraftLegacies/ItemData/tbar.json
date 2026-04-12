@@ -1,0 +1,16 @@
+{
+  "OldId": "tbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    }
+  ]
+}

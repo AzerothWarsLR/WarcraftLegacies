@@ -1,0 +1,44 @@
+{
+  "OldId": "BEsh",
+  "NewId": "B0AT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was hit by Curse of Flame; it will take damage over time and move more slowly."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCurseofflame.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Curse of Flame"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " (Jergosh)"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "head"
+    }
+  ]
+}

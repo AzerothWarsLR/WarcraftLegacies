@@ -109,6 +109,11 @@
       "Value": "enemies,ground,mechanical"
     },
     {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o04E,o04A"
+    },
+    {
       "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,townhall"

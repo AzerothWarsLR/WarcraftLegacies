@@ -1,0 +1,39 @@
+{
+  "OldId": "Bfae",
+  "NewId": "B02G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIncinerate.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Living Flame"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been afflicted with the Living Flame; it has reduced armor and can be seen by the enemy."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "Origin"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BNbr",
+  "NewId": "B07W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImprovedUnholyStrength.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shout of the Highlord"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has heard the Highlord; its attack damage and defense have been increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "OldId": "opeo",
+  "NewId": "o00E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arep"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "o02F,o009,ovln,otto,o01M,o01T,oshy,ogre,otrb,npgf,obar,ofor,oalt,obea,osld,owtw"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 7
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 150
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R021,Ropg,Rguv"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosPeon.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong-Bloodpact)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\demon\\ChaosPeon\\ChaosPeon.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chaos Peon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Chaos Peon"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Corrupted laborer of the Horde."
+    }
+  ]
+}

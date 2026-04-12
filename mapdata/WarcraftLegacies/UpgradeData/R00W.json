@@ -6,6 +6,41 @@
   ],
   "Modifications": [
     {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "ACmo"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "Aast"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "AChx"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "Awar"
+    },
+    {
       "Id": "gglb",
       "Value": 60
     },

@@ -1,0 +1,29 @@
+{
+  "OldId": "BNms",
+  "NewId": "B00G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mana Shield"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Magi) "
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\MagicShield_Blue.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

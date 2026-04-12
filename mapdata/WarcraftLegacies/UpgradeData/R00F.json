@@ -61,7 +61,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Reduces incoming damage from attacks by \u003CA02O,DataC1\u003E for Dwarven Warriors and \u003CVP20,DataC1\u003E for Thanes."
+      "Value": "Gives Dwarven Warriors, Thanes and Baelgun Flamebeard a \u003CA02O,DataA1\u003E% chance to reduce incoming damage by \u003CA02O,DataC1\u003E."
     }
   ]
 }

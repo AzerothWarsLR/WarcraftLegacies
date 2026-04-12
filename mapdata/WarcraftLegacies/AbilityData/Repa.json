@@ -1,0 +1,47 @@
+{
+  "OldId": "Ahrp",
+  "NewId": "Repa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,alive,bridge,dead,friend,ground,invulnerable,mechanical,nonancient,self,structure,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rep1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Rep4",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Rep2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(All Colors - Battleships)"
+    }
+  ]
+}

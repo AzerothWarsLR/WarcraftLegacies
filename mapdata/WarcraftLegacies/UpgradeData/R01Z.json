@@ -1,0 +1,50 @@
+{
+  "OldId": "Roch",
+  "NewId": "R01Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rmnx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmnr"
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Pillage Echo Isles"
+    }
+  ]
+}

@@ -12,10 +12,34 @@
       "Value": 120
     },
     {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
       "Level": 1,
       "Id": "abuf",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06L"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06L"
     },
     {
       "Level": 1,
@@ -24,9 +48,43 @@
       "Value": 0
     },
     {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
       "Level": 1,
       "Id": "amcs",
       "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
     },
     {
       "Level": 1,
@@ -36,7 +94,35 @@
       "Value": -125
     },
     {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": -50
+    },
+    {
       "Level": 1,
+      "Pointer": 2,
+      "Id": "Hfs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hfs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
       "Pointer": 2,
       "Id": "Hfs2",
       "Type": 2,
@@ -50,7 +136,35 @@
       "Value": 0
     },
     {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": -15
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": -20
+    },
+    {
       "Level": 1,
+      "Pointer": 5,
+      "Id": "Hfs5",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Hfs5",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
       "Pointer": 5,
       "Id": "Hfs5",
       "Type": 2,
@@ -64,10 +178,36 @@
       "Value": 99999
     },
     {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
       "Level": 1,
       "Id": "adur",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 35
     },
     {
       "Level": 1,
@@ -76,10 +216,34 @@
       "Value": "X002"
     },
     {
+      "Level": 2,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00F"
+    },
+    {
+      "Level": 3,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00F"
+    },
+    {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
     },
     {
       "Id": "arac",
@@ -93,10 +257,34 @@
       "Value": 700
     },
     {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
       "Level": 1,
       "Id": "atar",
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "friend,ground,neutral,self"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "friend,ground,neutral,self"
     },
     {
       "Id": "alev",
@@ -147,6 +335,11 @@
       "Value": "Rain of Light"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 3
     },
@@ -154,6 +347,16 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Field of Blood - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hit points over 5 seconds, then 10 hit point every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hit points over 5 seconds, then 15 hit point every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hit points over 5 seconds, then 20 hit point every 1 seconds for 35 seconds.|n"
     },
     {
       "Id": "asat",
@@ -167,10 +370,34 @@
       "Value": "Rain of Light"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Field of Blood - [|cffffcc00Level 3|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Heal all friendly units in the target area for 125 hit points."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|nHeals 200 hit points over 5 seconds, then 15 hit point every 1 seconds for 35 seconds.|n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|cffffcc00|n|rHeals 250 hit points over 5 seconds, then 20 hit point every 1 seconds for 35 seconds."
     },
     {
       "Id": "aeat",

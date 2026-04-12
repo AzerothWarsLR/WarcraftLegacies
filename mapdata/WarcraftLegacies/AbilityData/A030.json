@@ -61,6 +61,11 @@
       "Value": "Call Treants"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 1
     },
@@ -68,6 +73,16 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Call Treant - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons Treants to battle Malfurion\u0027s enemies. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 3 Treants.|n|cffffcc00Level 2|r - 4 Treants.|n|cffffcc00Level 3|r - 5 Treants.|n|cffffcc00Level 4|r - 6 Poison Treants."
     },
     {
       "Level": 1,

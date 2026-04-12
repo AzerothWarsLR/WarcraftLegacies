@@ -10,7 +10,7 @@
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 5
     },
     {
       "Level": 1,
@@ -20,15 +20,15 @@
       "Value": 20
     },
     {
-      "Id": "arac",
-      "Type": 3,
-      "Value": "human"
-    },
-    {
       "Level": 1,
       "Pointer": 5,
       "Id": "Ssk5",
       "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
     },
     {
       "Id": "abpy",

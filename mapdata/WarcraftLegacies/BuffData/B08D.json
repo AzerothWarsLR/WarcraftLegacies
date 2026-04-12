@@ -1,0 +1,24 @@
+{
+  "OldId": "Bpsd",
+  "NewId": "B08D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Bleed"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is bleeding; it will take damage over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

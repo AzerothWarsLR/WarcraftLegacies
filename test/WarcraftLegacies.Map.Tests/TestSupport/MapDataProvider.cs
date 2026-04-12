@@ -17,7 +17,7 @@ public static class MapDataProvider
       }
 
       var sharedPathOptions = DefaultOptionsFactory.CreateSharedPathOptions("WarcraftLegacies");
-      var conversionService = new MapDataToMapConverter(DefaultOptionsFactory.CreateMapDataToMapConverterOptions(sharedPathOptions));
+      var conversionService = new MapDataToMapConverter(DefaultOptionsFactory.CreateMapDataToMapConverterOptions((SharedPathOptions)sharedPathOptions));
       _mapData = conversionService.ConvertToMapAndAdditionalFiles();
 
       return _mapData.Value;

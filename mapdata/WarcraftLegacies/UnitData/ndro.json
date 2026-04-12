@@ -1,0 +1,23 @@
+{
+  "OldId": "ndro",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4.5
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

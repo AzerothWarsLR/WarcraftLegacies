@@ -6,46 +6,53 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
       "Level": 2,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 100
+      "Value": 60
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 100
+      "Value": 70
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 3
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 6
+      "Value": 3
     },
     {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 6
+      "Value": 15
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 12
+      "Value": 15
     },
     {
       "Level": 3,
@@ -105,13 +112,6 @@
       "Value": "allies,enemies"
     },
     {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": "Ssk2",
-      "Type": 2,
-      "Value": 6
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASTenebriousArmor.blp"
@@ -127,7 +127,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Stormwind,  Lordaeron - Knights, Sent - Glaive)"
+      "Value": "(Stormwind - Knights, Lordaeron - Knights)"
     },
     {
       "Id": "anam",
@@ -156,19 +156,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks against this unit have their damage reduced by \u003CA02Y,DataC1\u003E. Attacks cannot be reduced below \u003CA02Y,DataB1\u003E damage."
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA1\u003E% to have their damage reduced by \u003CA02Y,DataC1\u003E. Attacks cannot be reduced below \u003CA02Y,DataB1\u003E damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks against this unit have their damage reduced by \u003CA02Y,DataC2\u003E. Attacks cannot be reduced below \u003CA02Y,DataB2\u003E damage."
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA2\u003E% to have their damage reduced by \u003CA02Y,DataC2\u003E. Attacks cannot be reduced below \u003CA02Y,DataB2\u003E damage."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks against this unit have their damage reduced by \u003CA02Y,DataC3\u003E. Attacks cannot be reduced below \u003CA02Y,DataB3\u003E damage."
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA3\u003E% to have their damage reduced by \u003CA02Y,DataC3\u003E. Attacks cannot be reduced below \u003CA02Y,DataB3\u003E damage."
     }
   ]
 }

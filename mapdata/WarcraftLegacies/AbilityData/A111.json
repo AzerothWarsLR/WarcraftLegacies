@@ -62,6 +62,11 @@
       "Value": "Light of the Goddess"
     },
     {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "|cff7777aaHoly Light|r |cff7777aa[E]|r"
+    },
+    {
       "Id": "atat",
       "Type": 3,
       "Value": "Holy Light Royal.mdx"

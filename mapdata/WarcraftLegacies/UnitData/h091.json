@@ -1,0 +1,253 @@
+{
+  "OldId": "hgyr",
+  "NewId": "h091",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Agyv,Aflk,Agyb"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucar",
+      "Value": 2
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ua2b",
+      "Value": 27
+    },
+    {
+      "Id": "ugol",
+      "Value": 31
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1550
+    },
+    {
+      "Id": "ua2r",
+      "Value": 700
+    },
+    {
+      "Id": "urtm",
+      "Value": 20
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 320
+    },
+    {
+      "Id": "umpm",
+      "Value": 1000
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07Y,o03N"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.633
+    },
+    {
+      "Id": "ua1b",
+      "Value": 81
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "ua1r",
+      "Value": 400
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.97
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.03
+    },
+    {
+      "Id": "ua2z",
+      "Value": 2000
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "instant"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "War Zeppelin"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train War Zeppelin"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fine Goblin engineering with a deadshot pilot."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinWarZeppelin.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinWarZeppelin.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "GoblinZeppelin"
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": -60
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    }
+  ]
+}

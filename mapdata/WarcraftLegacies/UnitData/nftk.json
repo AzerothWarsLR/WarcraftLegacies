@@ -1,0 +1,155 @@
+{
+  "OldId": "nftk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0DS,A0DX,ANtr,Aion,A0FJ,Absk,ACac"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 36
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "urtm",
+      "Value": 20
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R016,Ropm,R021,Rhme,Rhar,Rotr,Ropm,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02Q"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 950
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\IceTroll\\IceTroll.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warlord"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Warlord"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Deadly leader of the Drakkari tribe."
+    }
+  ]
+}

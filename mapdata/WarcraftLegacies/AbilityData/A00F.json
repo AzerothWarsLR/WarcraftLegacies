@@ -12,12 +12,61 @@
       "Value": 20
     },
     {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
       "Level": 1,
       "Id": "amcs",
       "Value": 25
     },
     {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
       "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
       "Pointer": 1,
       "Id": "Ncl1",
       "Type": 2,
@@ -30,13 +79,64 @@
       "Value": 17
     },
     {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 17
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 17
+    },
+    {
       "Level": 1,
       "Pointer": 5,
       "Id": "Ncl5",
       "Value": 0
     },
     {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
       "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "howlofterror"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "howlofterror"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "howlofterror"
+    },
+    {
+      "Level": 4,
       "Pointer": 6,
       "Id": "Ncl6",
       "Type": 3,
@@ -50,6 +150,17 @@
     {
       "Id": "alev",
       "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 17
     },
     {
       "Id": "aher",
@@ -101,6 +212,11 @@
       "Value": "Rend Soul"
     },
     {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
+    },
+    {
       "Id": "arpx",
       "Value": 1
     },
@@ -108,6 +224,16 @@
       "Id": "arhk",
       "Type": 3,
       "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Reap - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Instantly kills the lowest level nearby non-Hero enemy units, granting the caster 5 Strength for each unit slain for 30 seconds. |n|n|cffffcc00Level 1|r - Kills 3 units.|n|cffffcc00Level 2|r - Kills 5 units.|n|cffffcc00Level 3|r - Kills 7 units.|n|cffffcc00Level 4|r - Kills 9 units."
     },
     {
       "Id": "atat",
@@ -121,10 +247,46 @@
       "Value": "Rend Soul"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Reap - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Reap - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Reap - [|cffffcc00Level 4|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Sacrifices a friendly unit to convert 35% of its hit points into mana, and 25% of its hit points into hit points, for Kel\u0027thuzad, then summons a Revenant lasting 45 seconds with the Persistent Soul ability at its corpse.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Instantly kills the 5 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Instantly kills the 7 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Instantly kills the 9 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
     },
     {
       "Id": "abpx",

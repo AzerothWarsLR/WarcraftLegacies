@@ -1,0 +1,13 @@
+{
+  "OldId": "BUsl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is sleeping; it is invulnerable and it cannot move attack or cast spells."
+    }
+  ]
+}
