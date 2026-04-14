@@ -1,6 +1,6 @@
 {
   "OldId": "Assk",
-  "NewId": "A0E6",
+  "NewId": "VP20",
   "Unk": [
     0
   ],
@@ -17,26 +17,22 @@
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 12
+      "Value": 18
     },
     {
       "Id": "arac",
       "Type": 3,
-      "Value": "orc"
+      "Value": "human"
     },
     {
       "Id": "areq",
       "Type": 3,
-      "Value": "R00W"
+      "Value": "R00F"
     },
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASDragonCarapace.blp"
-    },
-    {
-      "Id": "abpx",
-      "Value": 3
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLancelot_Plate.blp"
     },
     {
       "Id": "abpy",
@@ -45,29 +41,24 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Pink - Spirit Walker, Tauren)"
+      "Value": "(Dwarven Thane)"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Toughened Hides"
+      "Value": "Mithril Plated Armor"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Toughened Hides"
+      "Value": "Mithril Plated Armor"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces damage taken from attacks by \u003CA0E6,DataC1\u003E."
-    },
-    {
-      "Id": "auar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASDragonCarapace.blp"
+      "Value": "This unit reduces incoming damage by \u003CVP20,DataC1\u003E."
     }
   ]
 }
