@@ -14,6 +14,7 @@ using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics.Blight;
 using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -77,6 +78,8 @@ public sealed class ScourgeFaction : Faction
     SacrificeAcolyte.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     TheFrozenThrone.Setup(this, AllLegends.Scourge.TheFrozenThrone, AllLegends.Scourge.Arthas);
+    BuildBlockerSystem.BlockRegion(Regions.DeathknellUnlock);
+
   }
 
   private void RegisterResearches()

@@ -5,6 +5,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -78,6 +79,7 @@ public sealed class QuestPlague : QuestData
     PresentInvasionDialogs();
     RescueBases(completingFaction);
     RegisterRocks();
+    BuildBlockerSystem.UnblockAll();
 
     if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
     {
