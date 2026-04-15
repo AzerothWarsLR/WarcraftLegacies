@@ -22,7 +22,12 @@
     {
       "Id": "bptx",
       "Type": 3,
-      "Value": "PathTextures\\4x4Default.tga"
+      "Value": "PathTextures\\Waygate.tga"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
     }
   ]
 }
