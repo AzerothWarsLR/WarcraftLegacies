@@ -4,7 +4,8 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Skywall.Spells.WhimOfTheWinds;
 
-public sealed class WhimOfTheWinds : Spell
+public sealed class
+  WhimOfTheWinds : Spell
 {
   private readonly struct BuffSpell
   {

@@ -1,29 +1,39 @@
 {
-  "OldId": "BNsi",
+  "OldId": "Basl",
   "NewId": "B001",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": "fart",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSolarFlareFinalQualityUpdate.blp"
-    },
-    {
       "Id": "ftip",
       "Type": 3,
-      "Value": "Solar Flare"
+      "Value": "|cff00ff00Hallowed Light|r"
     },
     {
       "Id": "fube",
       "Type": 3,
-      "Value": "This unit was hit with a Solar Flare; it cannot cast attack or spells."
+      "Value": "This unit has increased armor"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Hallowed Light"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "ftat",
       "Type": 3,
-      "Value": "war3mapImported\\Effect_Weaken_Red.mdx"
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly_Light.blp"
     }
   ]
 }

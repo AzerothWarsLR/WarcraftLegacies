@@ -47,9 +47,9 @@ public static class Buffs
   public const int BUFF_XESN = 1483043694;
   public const int BUFF_AOP1_PROTECTION_AURA = 1095716913;
   public const int BUFF_B000_FROSTBITE = 1110454320;
-  public const int BUFF_B001_SOLAR_FLARE = 1110454321;
+  public const int BUFF_B001_HALLOWED_LIGHT = 1110454321;
   public const int BUFF_B002_SUMMONING_TARGET = 1110454322;
-  public const int BUFF_B003_THUNDER = 1110454323;
+  public const int BUFF_B003_HALLOWED_LIGHT = 1110454323;
   public const int BUFF_B004_WEAKNESS = 1110454324;
   public const int BUFF_B005_CHARGE = 1110454325;
   public const int BUFF_B006_CONCUSSIVE_SHOT_STACKING = 1110454326;
