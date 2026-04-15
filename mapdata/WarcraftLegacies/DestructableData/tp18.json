@@ -1,0 +1,28 @@
+{
+  "OldId": "YTpb",
+  "NewId": "tp18",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bwal",
+      "Value": 1
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Building Blocker"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    }
+  ]
+}
