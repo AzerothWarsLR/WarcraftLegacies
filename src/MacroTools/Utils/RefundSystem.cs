@@ -6,7 +6,7 @@ namespace MacroTools.Utils;
 
 public static class RefundSystem
 {
-  private static readonly Dictionary<player, float> GlobalTotals = new();
+  private static readonly Dictionary<player, float> _globalTotals = new();
 
   public static Dictionary<player, float> RefundUnits(IEnumerable<unit> units, player owner)
   {
@@ -31,12 +31,12 @@ public static class RefundSystem
 
         refundTotals[enemy] += refund;
 
-        if (!GlobalTotals.ContainsKey(enemy))
+        if (!_globalTotals.ContainsKey(enemy))
         {
-          GlobalTotals[enemy] = 0;
+          _globalTotals[enemy] = 0;
         }
 
-        GlobalTotals[enemy] += refund;
+        _globalTotals[enemy] += refund;
       }
 
       u.DropAllItems();
@@ -49,12 +49,12 @@ public static class RefundSystem
 
   public static void FlushMessages()
   {
-    foreach (var kvp in GlobalTotals)
+    foreach (var kvp in _globalTotals)
     {
       DisplayTextToPlayer(kvp.Key, 0, 0,
         $"|cff00ff00You received {kvp.Value} gold refunded from removed buildings.|r");
     }
 
-    GlobalTotals.Clear();
+    _globalTotals.Clear();
   }
 }
