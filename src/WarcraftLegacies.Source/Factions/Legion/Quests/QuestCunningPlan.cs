@@ -3,8 +3,8 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
-using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WCSharp.Shared.Data;
 
@@ -51,8 +51,9 @@ public sealed class QuestCunningPlan : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      RefundEnemyStructures.InRegion(Regions.AlteracArea, p);
-      RefundEnemyStructures.FlushMessages();
+      var units = GlobalGroup.EnumUnitsInRect(Regions.AlteracArea);
+      RefundSystem.RefundUnits(units, p);
+      RefundSystem.FlushMessages();
     }
   }
 

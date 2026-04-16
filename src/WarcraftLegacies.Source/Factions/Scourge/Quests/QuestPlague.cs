@@ -5,7 +5,6 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
-using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -85,10 +84,16 @@ public sealed class QuestPlague : QuestData
 
     if (p != null)
     {
-      RefundEnemyStructures.InRegion(Regions.DeathknellUnlock, p);
-      RefundEnemyStructures.InRegion(Regions.StratholmeScourgeBase, p);
-      RefundEnemyStructures.InRegion(Regions.CaerDarrow, p);
-      RefundEnemyStructures.FlushMessages();
+      var units1 = GlobalGroup.EnumUnitsInRect(Regions.DeathknellUnlock);
+      RefundSystem.RefundUnits(units1, p);
+
+      var units2 = GlobalGroup.EnumUnitsInRect(Regions.StratholmeScourgeBase);
+      RefundSystem.RefundUnits(units2, p);
+
+      var units3 = GlobalGroup.EnumUnitsInRect(Regions.CaerDarrow);
+      RefundSystem.RefundUnits(units3, p);
+
+      RefundSystem.FlushMessages();
     }
 
     if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))

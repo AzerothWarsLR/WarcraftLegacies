@@ -25,12 +25,16 @@ public static class RefundSystem
         enemy.Gold += refund;
 
         if (!refundTotals.ContainsKey(enemy))
+        {
           refundTotals[enemy] = 0;
+        }
 
         refundTotals[enemy] += refund;
 
         if (!GlobalTotals.ContainsKey(enemy))
+        {
           GlobalTotals[enemy] = 0;
+        }
 
         GlobalTotals[enemy] += refund;
       }
@@ -46,8 +50,10 @@ public static class RefundSystem
   public static void FlushMessages()
   {
     foreach (var kvp in GlobalTotals)
+    {
       DisplayTextToPlayer(kvp.Key, 0, 0,
         $"|cff00ff00You received {kvp.Value} gold refunded from removed buildings.|r");
+    }
 
     GlobalTotals.Clear();
   }

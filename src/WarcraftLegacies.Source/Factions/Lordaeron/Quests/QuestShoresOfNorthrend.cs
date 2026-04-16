@@ -2,7 +2,6 @@
 using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -47,8 +46,9 @@ public sealed class QuestShoresOfNorthrend : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      RefundEnemyStructures.InRadius(-512, 15776, 2000, p);
-      RefundEnemyStructures.FlushMessages();
+      var units = GlobalGroup.EnumUnitsInRange(-512, 15776, 2000);
+      RefundSystem.RefundUnits(units, p);
+      RefundSystem.FlushMessages();
     }
 
     KillNeutralHostileUnitsInRadius(-512, 15776, 2000);

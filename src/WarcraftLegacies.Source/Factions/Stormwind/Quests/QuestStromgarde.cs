@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
-using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -56,15 +55,19 @@ public sealed class QuestStromgarde : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      RefundEnemyStructures.InRegion(Regions.Stromgarde, p);
-      RefundEnemyStructures.FlushMessages();
+      var units = GlobalGroup.EnumUnitsInRect(Regions.Stromgarde);
+      RefundSystem.RefundUnits(units, p);
+      RefundSystem.FlushMessages();
     }
+
     completingFaction.Player.SetTechResearched(ResearchId, 1);
+
     foreach (var unit in _rescueUnits)
     {
       unit.Rescue(completingFaction.Player);
     }
   }
+
 
   /// <inheritdoc />
   protected override void OnAdd(Faction whichFaction)
