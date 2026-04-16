@@ -5,6 +5,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -68,7 +69,10 @@ public sealed class QuestPlague : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.ModObjectLimit(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.Unlimited);
-    if (completingFaction.Player != null)
+
+    var p = completingFaction.Player;
+
+    if (p != null)
     {
       SpawnArmies(completingFaction);
     }
@@ -79,6 +83,14 @@ public sealed class QuestPlague : QuestData
     RescueBases(completingFaction);
     RegisterRocks();
 
+    if (p != null)
+    {
+      RefundEnemyStructures.InRegion(Regions.DeathknellUnlock, p);
+      RefundEnemyStructures.InRegion(Regions.StratholmeScourgeBase, p);
+      RefundEnemyStructures.InRegion(Regions.CaerDarrow, p);
+      RefundEnemyStructures.FlushMessages();
+    }
+
     if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
     {
       completingFaction.RemovePower(spiesPower);
@@ -88,6 +100,7 @@ public sealed class QuestPlague : QuestData
       Logger.LogWarning($"Expected {completingFaction.Name} to have the Cult Spies Power.");
     }
   }
+
 
   private static void RegisterRocks()
   {

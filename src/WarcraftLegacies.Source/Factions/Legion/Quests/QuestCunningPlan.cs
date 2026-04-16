@@ -4,6 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WCSharp.Shared.Data;
 
@@ -41,9 +42,18 @@ public sealed class QuestCunningPlan : QuestData
     unit.Create(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 11138, 12802, 0);
     unit.Create(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 4860, 9277, 0);
     unit.Create(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 14725, 7356, 0);
+
     if (_malganis.Unit != null)
     {
       _malganis.Unit.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
     }
+
+    var p = completingFaction.Player;
+    if (p != null)
+    {
+      RefundEnemyStructures.InRegion(Regions.AlteracArea, p);
+      RefundEnemyStructures.FlushMessages();
+    }
   }
+
 }

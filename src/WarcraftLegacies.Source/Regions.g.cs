@@ -7,6 +7,7 @@ public static class Regions
   public static Rectangle Aerie_Peak { get; set; } = new Rectangle(13600f, 4096f, 14752f, 5184f);
   public static Rectangle AkamaUnlock { get; set; } = new Rectangle(-4416f, -21088f, -3072f, -20064f);
   public static Rectangle AlteracAmbient { get; set; } = new Rectangle(10432f, 4608f, 12160f, 7104f);
+  public static Rectangle AlteracArea { get; set; } = new Rectangle(10688f, 4736f, 12416f, 6752f);
   public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
   public static Rectangle Andorhal { get; set; } = new Rectangle(11136f, 7712f, 13696f, 9120f);
   public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
@@ -55,7 +56,7 @@ public static class Regions
   public static Rectangle BrokenIslesB { get; set; } = new Rectangle(544f, 8960f, 3296f, 10368f);
   public static Rectangle BurningSteppeAmbient2 { get; set; } = new Rectangle(17952f, -14720f, 19872f, -9504f);
   public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);
-  public static Rectangle CaerDarrow { get; set; } = new Rectangle(13984f, 6048f, 15680f, 7904f);
+  public static Rectangle CaerDarrow { get; set; } = new Rectangle(13984f, 5888f, 15680f, 7904f);
   public static Rectangle CaerDarrowShipyard { get; set; } = new Rectangle(8608f, 2240f, 18176f, 11424f);
   public static Rectangle CapitalInvasion { get; set; } = new Rectangle(5120f, 9248f, 5632f, 9728f);
   public static Rectangle CavernofTime { get; set; } = new Rectangle(-9344f, -16192f, -8960f, -15840f);
@@ -81,7 +82,7 @@ public static class Regions
   public static Rectangle DarkshireUnlock { get; set; } = new Rectangle(11904f, -16320f, 13408f, -15072f);
   public static Rectangle Darkshore { get; set; } = new Rectangle(-18144f, 3936f, -15744f, 8672f);
   public static Rectangle Darrowshire { get; set; } = new Rectangle(16096f, 7168f, 17600f, 8480f);
-  public static Rectangle DeathknellUnlock { get; set; } = new Rectangle(4672f, 8384f, 6080f, 10048f);
+  public static Rectangle DeathknellUnlock { get; set; } = new Rectangle(4672f, 8384f, 6144f, 10144f);
   public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
   public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
   public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -17088f, -3488f);
@@ -292,7 +293,7 @@ public static class Regions
   public static Rectangle StrathAttackTarget { get; set; } = new Rectangle(15104f, 12864f, 15392f, 13152f);
   public static Rectangle StrathInvasion { get; set; } = new Rectangle(11520f, 12576f, 12096f, 13088f);
   public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(12608f, 11136f, 16288f, 15136f);
-  public static Rectangle StratholmeScourgeBase { get; set; } = new Rectangle(10944f, 12160f, 12576f, 13472f);
+  public static Rectangle StratholmeScourgeBase { get; set; } = new Rectangle(10944f, 12160f, 12576f, 13760f);
   public static Rectangle StratholmeShipyard { get; set; } = new Rectangle(13696f, 7232f, 20128f, 11712f);
   public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(12544f, 11200f, 16224f, 15136f);
   public static Rectangle Stromgarde { get; set; } = new Rectangle(12896f, 192f, 15232f, 1632f);

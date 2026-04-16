@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -32,6 +33,13 @@ public sealed class QuestRuinsofShadowmoon : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
   {
+    var p = whichFaction.Player;
+    if (p != null)
+    {
+      RefundEnemyStructures.InRegion(Regions.BlackrockUnlock, p);
+      RefundEnemyStructures.FlushMessages();
+    }
+
     if (whichFaction.Player != null)
     {
       whichFaction.Player.RescueGroup(_rescueUnits);
