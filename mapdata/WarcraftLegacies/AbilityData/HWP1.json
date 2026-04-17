@@ -6,86 +6,11 @@
   ],
   "Modifications": [
     {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 105
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 120
-    },
-    {
-      "Level": 4,
-      "Id": "amcs",
-      "Value": 135
-    },
-    {
       "Level": 1,
       "Pointer": 1,
       "Id": "Ocl1",
       "Type": 2,
       "Value": 0
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Ocl1",
-      "Type": 2,
-      "Value": 230
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Ocl1",
-      "Type": 2,
-      "Value": 320
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Ocl1",
-      "Type": 2,
-      "Value": 410
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Ocl2",
-      "Value": 5
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "Ocl2",
-      "Value": 6
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": "Ocl2",
-      "Value": 7
-    },
-    {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": "Ocl3",
-      "Type": 2,
-      "Value": 0.2
-    },
-    {
-      "Level": 3,
-      "Pointer": 3,
-      "Id": "Ocl3",
-      "Type": 2,
-      "Value": 0.15
-    },
-    {
-      "Level": 4,
-      "Pointer": 3,
-      "Id": "Ocl3",
-      "Type": 2,
-      "Value": 0.1
     },
     {
       "Id": "aher",
@@ -139,33 +64,10 @@
       "Value": "W"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals \u003CANhw,DataA1\u003E damage, jumps \u003CANhw,DataB1\u003E times, 25% less healing per jump.|n|cffffcc00Level 2|r - Heals \u003CANhw,DataA2\u003E damage, jumps \u003CANhw,DataB2\u003E times, 20% less healing per jump.|n|cffffcc00Level 3|r - Heals \u003CANhw,DataA3\u003E damage, jumps \u003CANhw,DataB3\u003E times, 15% less healing per jump.|n|cffffcc00Level 4|r - Heals \u003CANhw,DataA4\u003E damage, jumps \u003CANhw,DataB4\u003E times, 10% less healing per jump."
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Calls forth a wave of healing energy that bounces up to 3 times. The primary target is healed for 100, each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB2\u003E times, healing \u003CA0RR,DataA2\u003E damage on the primary target. Each jump heals 20% less."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB3\u003E times, healing \u003CA0RR,DataA3\u003E damage on the primary target. Each jump heals 15% less."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB4\u003E times, healing \u003CA0RR,DataA4\u003E damage on the primary target. Each jump heals 10% less."
     },
     {
       "Id": "atat",
@@ -187,43 +89,15 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFelBurn.blp"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelBurn.blp"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "Energy Wave"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Energy Wave - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "Energy Wave - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Energy Wave - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Energy Wave - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Energy Wave - [|cffffcc00Level 4|r]"
     },
     {
       "Id": "abpx",

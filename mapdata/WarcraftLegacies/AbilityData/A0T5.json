@@ -21,12 +21,6 @@
       "Value": "Teleporters will be activated when the Argus Incursion quest is completed. They are temporary structures that will destroy themselves after 20 turns. |n|nThey cannot be repaired or healed so use them well before then!"
     },
     {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Increases the rate at which this unit gathers lumber."
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASSoulBinding.blp"

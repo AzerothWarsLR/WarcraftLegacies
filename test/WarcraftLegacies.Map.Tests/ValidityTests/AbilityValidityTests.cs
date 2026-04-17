@@ -1,11 +1,10 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using System.Text;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 using War3Net.Common.Extensions;
 using Warcraft.Cartographer.Extensions;
+using Warcraft.Integrity;
 using WarcraftLegacies.Map.Tests.TestSupport;
-using Xunit.Sdk;
 
 namespace WarcraftLegacies.Map.Tests.ValidityTests;
 
@@ -17,21 +16,51 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
   {
     var objectDatabase = fixture.ObjectDatabase;
 
-    var exceptionMessageBuilder = new StringBuilder();
+    var issues = new List<string>();
     foreach (var ability in objectDatabase.GetAbilities())
     {
-      if (VerifyUnitsSummoned(ability, out var unitsSummonedIssues))
+      if (VerifyUnitsSummoned(ability, out var unitsSummonedIssue))
       {
-        exceptionMessageBuilder.AppendLine(unitsSummonedIssues);
+        issues.Add(unitsSummonedIssue);
       }
     }
 
-    if (exceptionMessageBuilder.Length == 0)
+    ValidityTestHelpers.ThrowIfAny(issues);
+  }
+
+  [Fact]
+  public void AllAbilities_HaveValidBuffReferences()
+  {
+    var issues = fixture.ObjectDatabase.GetAbilities().ToList()
+      .SelectMany(ability => Enumerable.Range(1, ability.StatsLevels).SelectMany(i => GetInvalidBuffIds(ability, i)))
+      .ToList();
+
+    ValidityTestHelpers.ThrowIfAny(issues);
+  }
+
+  private IEnumerable<string> GetInvalidBuffIds(Ability ability, int level)
+  {
+    return new (bool IsModified, ObjectProperty<string> Property)[]
+      {
+        (ability.IsStatsBuffsModified[level], ability.StatsBuffsRaw),
+        (ability.IsStatsEffectsModified[level], ability.StatsEffectsRaw),
+      }
+      // Only report invalid buffs for fields configured in the map. Errors inherited from the game files are not our responsibility.
+      .Where(x => x.IsModified)
+      .SelectMany(x => GetInvalidBuffIds(ability, level, x.Property, x.IsModified));
+  }
+
+  private IEnumerable<string> GetInvalidBuffIds(Ability ability, int level, ObjectProperty<string> property, bool isFieldModified)
+  {
+    var raw = property.TryGetStringAtLevel(level, isFieldModified);
+    if (raw is null)
     {
-      return;
+      return [];
     }
 
-    throw new XunitException(exceptionMessageBuilder.ToString());
+    return raw.Split(',', StringSplitOptions.RemoveEmptyEntries)
+      .Where(id => !fixture.ObjectDatabase.TryGetBuff(id.FromRawcode(), out _))
+      .Select(id => $"{ability.TextName} ({ability.GetReadableId()}) references invalid buff '{id}' at level {level}.");
   }
 
   [Fact]
@@ -39,21 +68,16 @@ public sealed class AbilityValidityTests(MapTestFixture fixture)
   {
     var objectDatabase = fixture.ObjectDatabase;
 
-    var exceptionMessageBuilder = new StringBuilder();
+    var issues = new List<string>();
     foreach (var ability in objectDatabase.GetAbilities())
     {
       if (!CanAbilityBeHandledByWar3Net(ability) && ability.Modifications.Any())
       {
-        exceptionMessageBuilder.AppendLine($"{ability.TextName} ({ability.GetReadableId()} - {ability.GetId()}) is of banned type {ability.OldId.ToRawcode()} - {ability.OldId}");
+        issues.Add($"{ability.TextName} ({ability.GetReadableId()} - {ability.GetId()}) is of banned type {ability.OldId.ToRawcode()} - {ability.OldId}");
       }
     }
 
-    if (exceptionMessageBuilder.Length == 0)
-    {
-      return;
-    }
-
-    throw new XunitException(exceptionMessageBuilder.ToString());
+    ValidityTestHelpers.ThrowIfAny(issues);
   }
 
   /// <summary>

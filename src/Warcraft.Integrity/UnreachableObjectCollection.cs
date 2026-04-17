@@ -12,7 +12,9 @@ public sealed class UnreachableObjectCollection(
   List<Upgrade> upgrades,
   List<Ability> abilities,
   List<Item> items,
-  List<Doodad> doodads)
+  List<Doodad> doodads,
+  List<Destructable> destructables,
+  List<Buff> buffs)
 {
   /// <summary>
   /// Units which have not yet been marked as reachable.
@@ -38,6 +40,16 @@ public sealed class UnreachableObjectCollection(
   /// Doodads which have not yet been marked as reachable.
   /// </summary>
   public List<Doodad> Doodads { get; } = doodads;
+
+  /// <summary>
+  /// Destructables which have not yet been marked as reachable.
+  /// </summary>
+  public List<Destructable> Destructables { get; } = destructables;
+
+  /// <summary>
+  /// Buffs which have not yet been marked as reachable.
+  /// </summary>
+  public List<Buff> Buffs { get; } = buffs;
 
   /// <summary>
   /// All exceptions which have accumulated over the course of removing objects from the collection.
@@ -67,6 +79,12 @@ public sealed class UnreachableObjectCollection(
         break;
       case Doodad doodad:
         RemoveWithChildren(doodad);
+        break;
+      case Destructable destructable:
+        RemoveWithChildren(destructable);
+        break;
+      case Buff buff:
+        RemoveWithChildren(buff);
         break;
     }
   }
@@ -1230,6 +1248,27 @@ public sealed class UnreachableObjectCollection(
           }
       }
 
+      for (var i = 1; i <= ability.StatsLevels; i++)
+      {
+        foreach (var buff in ability.StatsBuffs.TryGetBuffsAtLevel(i, ability.IsStatsBuffsModified[i]))
+        {
+          RemoveWithChildren(buff);
+        }
+
+        try
+        {
+          foreach (var buff in ability.StatsEffects.TryGetBuffsAtLevel(i, ability.IsStatsEffectsModified[i]))
+          {
+            RemoveWithChildren(buff);
+          }
+        }
+        catch (InvalidCastException) when (ability is DeathKnightAnimateDead)
+        {
+          // DeathKnightAnimateDead.StatsEffects throws InvalidCastException due
+          // to a type mismatch in the game's files for that ability.
+        }
+      }
+
       Abilities.Remove(ability);
     }
     catch (Exception ex)
@@ -1238,6 +1277,22 @@ public sealed class UnreachableObjectCollection(
     }
   }
 
+  private void RemoveWithChildren(Buff buff)
+  {
+    try
+    {
+      if (!Buffs.Contains(buff))
+      {
+        return;
+      }
+
+      Buffs.Remove(buff);
+    }
+    catch (Exception ex)
+    {
+      Exceptions.Add(new ObjectRemovalException(buff, ex));
+    }
+  }
 
   private void RemoveWithChildren(Upgrade upgrade)
   {
@@ -1295,6 +1350,23 @@ public sealed class UnreachableObjectCollection(
     }
   }
 
+  private void RemoveWithChildren(Destructable destructable)
+  {
+    try
+    {
+      if (!Destructables.Contains(destructable))
+      {
+        return;
+      }
+
+      Destructables.Remove(destructable);
+    }
+    catch (Exception ex)
+    {
+      Exceptions.Add(new ObjectRemovalException(destructable, ex));
+    }
+  }
+
   /// <summary>
   /// Returns all <see cref="BaseObject"/>s in the collection.
   /// </summary>
@@ -1305,6 +1377,7 @@ public sealed class UnreachableObjectCollection(
     objects.AddRange(Upgrades);
     objects.AddRange(Abilities);
     objects.AddRange(Items);
+    objects.AddRange(Buffs);
     return objects;
   }
 }

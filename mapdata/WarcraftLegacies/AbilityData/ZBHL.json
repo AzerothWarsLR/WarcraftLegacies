@@ -23,6 +23,13 @@
       "Value": "undead"
     },
     {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Obsidian Eradicator)"

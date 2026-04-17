@@ -65,27 +65,38 @@
       "Value": "Q"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "|cff7777aaHoly Light|r |cff7777aa[E]|r"
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Holy Light"
+      "Value": "Hallowed Light"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "A holy light that can heal a friendly living unit for 200 or deal half damage to an enemy Undead unit."
+      "Value": "Heals a friendly living unit for 200 and grants bonus armor, or afflicts an enemy Undead unit with reduced armor dealing half the damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "A holy light that can heal a friendly living unit for 300 or deal half damage to an enemy Undead unit."
+      "Value": "Heals a friendly living unit for 300 and grants bonus armor, or afflicts an enemy Undead unit with reduced armor dealing half the damage."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly_Light.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hallowed Light - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Hallowed Light"
     }
   ]
 }

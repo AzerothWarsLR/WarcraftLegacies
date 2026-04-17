@@ -1,0 +1,25 @@
+{
+  "OldId": "AId7",
+  "NewId": "A00K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": -7
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Hallowed Light Debuff"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Paladin)"
+    }
+  ]
+}

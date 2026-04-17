@@ -1,0 +1,123 @@
+{
+  "OldId": "Assk",
+  "NewId": "VP21",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTenebriousArmor.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel Horde - Executioner)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Felsteel Plating"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Lesser Felsteel Plating"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Felsteel plating reduces damage taken by \u003CVP21,DataC1\u003E damage. Attacks cannot be reduced below \u003CVP21,DataB1\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Felsteel plating reduces damage taken by \u003CVP21,DataC2\u003E damage. Attacks cannot be reduced below \u003CVP21,DataB2\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Felsteel Plating"
+    }
+  ]
+}

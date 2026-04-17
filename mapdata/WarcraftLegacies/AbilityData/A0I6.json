@@ -6,39 +6,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": "Ssk1",
-      "Type": 2,
-      "Value": 25
-    },
-    {
       "Level": 2,
       "Pointer": 1,
       "Id": "Ssk1",
       "Type": 2,
-      "Value": 35
+      "Value": 100
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": "Ssk2",
       "Type": 2,
-      "Value": 3
+      "Value": 6
     },
     {
       "Level": 1,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 25
+      "Value": 9
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 40
+      "Value": 15
     },
     {
       "Id": "alev",
@@ -73,6 +66,13 @@
       "Value": 1
     },
     {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASTenebriousArmor.blp"
@@ -88,7 +88,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Teal - Horde Cavalry, executioners)"
+      "Value": "(Fel Horde - Bonebreakers)"
     },
     {
       "Id": "anam",
@@ -105,13 +105,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Gives a 25% chance for an attack to be absorbed reducing damage taken by 25 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Felsteel plating reduces damage taken by \u003CA0I6,DataC1\u003E damage. Attacks cannot be reduced below \u003CA0I6,DataB1\u003E damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Felsteel plating reduces damage taken by \u003CA0I6,DataC2\u003E damage. Attacks cannot be reduced below \u003CA0I6,DataB2\u003E damage."
     },
     {
       "Level": 2,

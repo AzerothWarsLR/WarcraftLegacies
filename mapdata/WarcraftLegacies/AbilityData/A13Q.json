@@ -13,74 +13,11 @@
       "Value": 20
     },
     {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "War1",
-      "Type": 2,
-      "Value": 30
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "War1",
-      "Type": 2,
-      "Value": 35
-    },
-    {
       "Level": 1,
       "Pointer": 2,
       "Id": "War2",
       "Type": 2,
       "Value": 30
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "War2",
-      "Type": 2,
-      "Value": 50
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "War2",
-      "Type": 2,
-      "Value": 70
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": "War2",
-      "Type": 2,
-      "Value": 90
-    },
-    {
-      "Level": 3,
-      "Pointer": 3,
-      "Id": "War3",
-      "Type": 2,
-      "Value": 250
-    },
-    {
-      "Level": 4,
-      "Pointer": 3,
-      "Id": "War3",
-      "Type": 2,
-      "Value": 250
-    },
-    {
-      "Level": 3,
-      "Pointer": 4,
-      "Id": "War4",
-      "Type": 2,
-      "Value": 350
-    },
-    {
-      "Level": 4,
-      "Pointer": 4,
-      "Id": "War4",
-      "Type": 2,
-      "Value": 350
     },
     {
       "Id": "alev",
@@ -89,24 +26,6 @@
     {
       "Id": "alsk",
       "Value": 1
-    },
-    {
-      "Level": 2,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "enemies,ground,neutral"
-    },
-    {
-      "Level": 3,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "enemies,ground,neutral"
-    },
-    {
-      "Level": 4,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "enemies,ground,neutral"
     },
     {
       "Id": "aart",
@@ -157,46 +76,10 @@
       "Value": "Abilities\\Weapons\\GryphonRiderMissile\\GryphonRiderMissileTarget.mdl"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Storm Hammers - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Storm Hammers - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Storm Hammers - [|cffffcc00Level 4|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 20% chance that an attack will deal 30 damage to nearby units."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gives a 25% chance that an attack will deal 50 damage to nearby units."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gives a 30% chance that an attack will deal 70 damage to nearby units."
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Gives a 35% chance that an attack will deal 90 damage to nearby units."
     }
   ]
 }

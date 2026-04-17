@@ -6,48 +6,6 @@
   ],
   "Modifications": [
     {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Ocr1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Ocr1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 4,
-      "Pointer": 1,
-      "Id": "Ocr1",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Ocr2",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "Ocr2",
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": "Ocr2",
-      "Type": 2,
-      "Value": 0
-    },
-    {
       "Id": "alev",
       "Value": 1
     },
@@ -80,39 +38,10 @@
       "Value": "E"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "When this hero deals damage, it will regain a portion of the damage dealt as mana. |n|n|cffffcc00Level 1|r - 40% of the damage gained as mana. |n|cffffcc00Level 2|r - 60% of the damage gained as mana.|n|cffffcc00Level 3|r - 80% of the damage gained as mana.|n|cffffcc00Level 4|r - 100% of the damage gained as mana."
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Arcane Absorption - [|cffffcc00Level 4|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "When this unit deals damage, 40% of the damage will be gained as mana."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "When this hero deals damage, 60% of the damage will be gained as mana"
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "When this hero deals damage, 80% of the damage will be gained as mana"
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "When this hero deals damage, 100% of the damage will be gained as mana"
     },
     {
       "Id": "anam",
@@ -120,37 +49,15 @@
       "Value": "Arcane Absorption"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Arcane Absorption - [|cffffcc00Level %d|r]"
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures/PassiveButtons/PASArcaneEnergy.blp"
-    },
-    {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneEnergy.blp"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "Arcane Absorption"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Arcane Absorption - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Arcane Absorption - [|cffffcc00Level 3|r]"
     },
     {
       "Id": "abpx",

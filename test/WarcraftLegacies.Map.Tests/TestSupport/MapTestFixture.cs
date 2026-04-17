@@ -18,6 +18,13 @@ public sealed class MapTestFixture
       Units.UNIT_U00X_DUMMY_CASTER
   ];
 
+  // Abilities rooted by Items that are not yet monitored.
+  private static readonly int[] _rootedAbilityUnitIds =
+  [
+    // AIse
+    1702054209
+  ];
+
   public War3Net.Build.Map Map { get; }
 
   public ObjectDatabase ObjectDatabase { get; }
@@ -56,21 +63,20 @@ public sealed class MapTestFixture
     var unreachableObjects = new UnreachableObjectCollection(
       ObjectDatabase.GetUnits().Where(u => !IsUtilityUnit(u)).ToList(),
       ObjectDatabase.GetUpgrades().ToList(),
-      ObjectDatabase.GetAbilities().ToList(),
+      ObjectDatabase.GetAbilities().Where(a => !IsRootedAbility(a)).ToList(),
       ObjectDatabase.GetItems().ToList(),
-      ObjectDatabase.GetDoodads().ToList());
+      ObjectDatabase.GetDoodads().ToList(),
+      ObjectDatabase.GetDestructables().ToList(),
+      ObjectDatabase.GetBuffs().ToList());
 
     RemovePreplacedUnits(unreachableObjects);
     RemovePreplacedDoodads(unreachableObjects);
 
-    var objectsInScript = unreachableObjects
-      .GetAllObjects()
-      .Where(x => UncompiledScript.Contains(x.GetReadableId(), StringComparison.InvariantCultureIgnoreCase))
-      .ToList();
+    var referencedIds = GetAllFourCcs([UncompiledScript]);
 
-    foreach (var objectInScript in objectsInScript)
+    foreach (var obj in unreachableObjects.GetAllObjects().Where(x => referencedIds.Contains(x.GetReadableId())))
     {
-      unreachableObjects.RemoveWithChildren(objectInScript);
+      unreachableObjects.RemoveWithChildren(obj);
     }
 
     return unreachableObjects;
@@ -81,29 +87,84 @@ public sealed class MapTestFixture
   /// </summary>
   private void RemovePreplacedUnits(UnreachableObjectCollection unreachableObjects)
   {
-    var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.GetId())).ToList();
-    foreach (var preplacedUnit in preplacedUnitTypes)
+    var unitIds = new HashSet<int>();
+    var itemIds = new HashSet<int>();
+
+    foreach (var unit in Map.Units!.Units)
     {
-      unreachableObjects.RemoveWithChildren(preplacedUnit);
+      unitIds.Add(unit.TypeId);
+
+      foreach (var data in unit.InventoryData)
+      {
+        itemIds.Add(data.ItemId);
+      }
+
+      foreach (var itemSetItem in unit.ItemTableSets.SelectMany(s => s.Items))
+      {
+        itemIds.Add(itemSetItem.ItemId);
+      }
+    }
+
+    foreach (var unitId in unitIds)
+    {
+      if (ObjectDatabase.TryGetUnit(unitId, out var unit))
+      {
+        unreachableObjects.RemoveWithChildren(unit);
+      }
+    }
+
+    foreach (var itemId in itemIds)
+    {
+      if (ObjectDatabase.TryGetItem(itemId, out var item))
+      {
+        unreachableObjects.RemoveWithChildren(item);
+      }
     }
   }
 
   /// <summary>
-  /// Identifies preplaced doodads on the map and removes them, and their children, from the <see cref="UnreachableObjectCollection"/>.
+  /// Identifies preplaced doodads and destructables on the map and removes them, and their children, from the <see cref="UnreachableObjectCollection"/>.
   /// </summary>
   private void RemovePreplacedDoodads(UnreachableObjectCollection unreachableObjects)
   {
-    var preplacedDoodadIds = Map.Doodads!.Doodads.Select(x => x.TypeId).ToHashSet();
-    var preplacedDoodadTypeIds = ObjectDatabase.GetDoodads().Where(x => preplacedDoodadIds.Contains(x.GetId())).ToList();
-    foreach (var preplacedDoodadTypeId in preplacedDoodadTypeIds)
+    foreach (var doodadData in Map.Doodads!.Doodads)
     {
-      unreachableObjects.RemoveWithChildren(preplacedDoodadTypeId);
+      if (ObjectDatabase.TryGetDoodad(doodadData.TypeId, out var doodad))
+      {
+        unreachableObjects.RemoveWithChildren(doodad);
+      }
+
+      if (ObjectDatabase.TryGetDestructable(doodadData.TypeId, out var destructable))
+      {
+        unreachableObjects.RemoveWithChildren(destructable);
+      }
     }
   }
 
   private static bool IsUtilityUnit(Unit unit)
   {
     return _utilityUnitIds.Contains(unit.NewId.InvertEndianness());
+  }
+
+  private static bool IsRootedAbility(Ability ability)
+  {
+    return _rootedAbilityUnitIds.Contains(ability.GetId());
+  }
+
+  private static HashSet<string> GetAllFourCcs(params IEnumerable<string>[] texts)
+  {
+    // TODO: A reachable fourcc whose uppercase form collides with an unreachable fourcc will produce a false negative
+    // The result is case-insensitive because generated constants uppercase the fourcc.
+    var result = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+    foreach (var text in texts.SelectMany(x => x))
+    {
+      foreach (var match in MapDataRegex.ParseFourCcs().EnumerateMatches(text))
+      {
+        result.Add(text.Substring(match.Index, match.Length));
+      }
+    }
+
+    return result;
   }
 }

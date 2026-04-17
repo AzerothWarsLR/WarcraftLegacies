@@ -51,16 +51,6 @@
       "Value": 0
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "In the pressence of Feathermoon Stronghold nearby friendly units have their attack increased by \u003CAEar,DataA1,%\u003E%."
-    },
-    {
       "Id": "atat",
       "Type": 3,
       "Value": ""
