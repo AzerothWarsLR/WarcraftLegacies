@@ -7,7 +7,6 @@ public static class Regions
   public static Rectangle AQFeralasUnlock { get; set; } = new Rectangle(-15968f, -12224f, -13056f, -10080f);
   public static Rectangle AQTempleUnlock { get; set; } = new Rectangle(-24128f, -18368f, -20864f, -15712f);
   public static Rectangle Aerie_Peak { get; set; } = new Rectangle(13600f, 4096f, 14752f, 5184f);
-  public static Rectangle Aerie_Peak_Copy { get; set; } = new Rectangle(13600f, 4096f, 14752f, 5184f);
   public static Rectangle AkamaUnlock { get; set; } = new Rectangle(-4416f, -21088f, -3072f, -20064f);
   public static Rectangle AlteracAmbient { get; set; } = new Rectangle(10432f, 4608f, 12160f, 7104f);
   public static Rectangle AlteracArea { get; set; } = new Rectangle(10688f, 4736f, 12416f, 6752f);
@@ -83,8 +82,8 @@ public static class Regions
   public static Rectangle Darkshore { get; set; } = new Rectangle(-18144f, 3936f, -15744f, 8672f);
   public static Rectangle Darrowshire { get; set; } = new Rectangle(16096f, 7168f, 17600f, 8480f);
   public static Rectangle DeathknellUnlock { get; set; } = new Rectangle(4672f, 8384f, 6144f, 10144f);
-  public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
   public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
+  public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
   public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -17088f, -3488f);
   public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20928f, -5376f, -17184f, -2624f);
   public static Rectangle DragonmawPortal { get; set; } = new Rectangle(22176f, -4896f, 22720f, -4576f);
