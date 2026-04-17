@@ -43,8 +43,6 @@ public sealed class QuestArgusControl : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Argus quest OnComplete fired");
-
     _legionTeleporter1.SetWaygateDestination(Regions.NorthrendLegionLanding.Center);
     _legionTeleporter2.SetWaygateDestination(Regions.AlteracLegionLanding.Center);
   }
