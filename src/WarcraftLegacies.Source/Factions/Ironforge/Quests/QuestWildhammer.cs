@@ -45,9 +45,7 @@ public sealed class QuestWildhammer : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      var units = GlobalGroup.EnumUnitsInRect(Regions.Aerie_Peak);
-      RefundSystem.RefundUnits(units, p);
-      RefundSystem.FlushMessages();
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.Aerie_Peak);
     }
 
     completingFaction.Player.RescueGroup(_rescueUnits);

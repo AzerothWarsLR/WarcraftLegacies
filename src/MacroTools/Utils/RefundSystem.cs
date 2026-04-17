@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
+using WCSharp.Shared.Data;
 
 namespace MacroTools.Utils;
 
@@ -8,14 +9,9 @@ public static class RefundSystem
 {
   private static readonly Dictionary<player, float> _globalTotals = new();
 
-  public static Dictionary<player, float> RefundUnits(IEnumerable<unit> units, player owner)
+  private static void RefundHostileStructures(player whichPlayer, IEnumerable<unit> units)
   {
-    var refundTotals = new Dictionary<player, float>();
-
-    foreach (var u in units.Where(u => u.IsUnitType(unittype.Structure) &&
-                                       u.Owner != owner &&
-                                       u.Owner != player.NeutralPassive &&
-                                       u.Owner != player.NeutralAggressive))
+    foreach (var u in units.Where(u => u.IsUnitType(unittype.Structure) && u.IsEnemyTo(whichPlayer)))
     {
       var enemy = u.Owner;
       var refund = u.GoldCost;
@@ -23,13 +19,6 @@ public static class RefundSystem
       if (refund > 0)
       {
         enemy.Gold += refund;
-
-        if (!refundTotals.ContainsKey(enemy))
-        {
-          refundTotals[enemy] = 0;
-        }
-
-        refundTotals[enemy] += refund;
 
         if (!_globalTotals.ContainsKey(enemy))
         {
@@ -43,16 +32,31 @@ public static class RefundSystem
       u.Kill();
       u.Dispose();
     }
-
-    return refundTotals;
   }
 
-  public static void FlushMessages()
+  public static void RefundEnemyStructuresInRect(player whichPlayer, params Rectangle[] regions)
+  {
+    foreach (var region in regions)
+    {
+      var units = GlobalGroup.EnumUnitsInRect(region);
+      RefundHostileStructures(whichPlayer, units);
+    }
+
+    FlushMessages();
+  }
+
+  public static void RefundEnemyStructuresInRange(player whichPlayer, float x, float y, float radius)
+  {
+    var units = GlobalGroup.EnumUnitsInRange(x, y, radius);
+    RefundHostileStructures(whichPlayer, units);
+    FlushMessages();
+  }
+
+  private static void FlushMessages()
   {
     foreach (var kvp in _globalTotals)
     {
-      DisplayTextToPlayer(kvp.Key, 0, 0,
-        $"|cff00ff00You received {kvp.Value} gold refunded from removed buildings.|r");
+      DisplayTextToPlayer(kvp.Key, 0, 0, $"|cff00ff00You received {kvp.Value} gold refunded from removed buildings.|r");
     }
 
     _globalTotals.Clear();

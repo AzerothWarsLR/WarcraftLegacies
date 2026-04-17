@@ -46,9 +46,7 @@ public sealed class QuestShoresOfNorthrend : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      var units = GlobalGroup.EnumUnitsInRange(-512, 15776, 2000);
-      RefundSystem.RefundUnits(units, p);
-      RefundSystem.FlushMessages();
+      RefundSystem.RefundEnemyStructuresInRange(p, -512, 15776, 2000);
     }
 
     KillNeutralHostileUnitsInRadius(-512, 15776, 2000);
@@ -58,6 +56,7 @@ public sealed class QuestShoresOfNorthrend : QuestData
       _arthas.Unit.Revive(400, 16102);
       _arthas.Unit.Facing = 112;
     }
+
     if (completingFaction.Player != null)
     {
       CreateStructureForced(completingFaction.Player, UNIT_H01C_HUNTSMAN_LORDAERON, -513, 16679, 4.757993f * MathEx.DegToRad, 256);

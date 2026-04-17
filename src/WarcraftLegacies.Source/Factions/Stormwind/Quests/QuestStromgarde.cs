@@ -55,9 +55,7 @@ public sealed class QuestStromgarde : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      var units = GlobalGroup.EnumUnitsInRect(Regions.Stromgarde);
-      RefundSystem.RefundUnits(units, p);
-      RefundSystem.FlushMessages();
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.Stromgarde);
     }
 
     completingFaction.Player.SetTechResearched(ResearchId, 1);
@@ -67,7 +65,6 @@ public sealed class QuestStromgarde : QuestData
       unit.Rescue(completingFaction.Player);
     }
   }
-
 
   /// <inheritdoc />
   protected override void OnAdd(Faction whichFaction)

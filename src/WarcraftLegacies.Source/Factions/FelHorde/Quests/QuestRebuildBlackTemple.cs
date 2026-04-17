@@ -36,9 +36,7 @@ public sealed class QuestRuinsofShadowmoon : QuestData
     var p = whichFaction.Player;
     if (p != null)
     {
-      var units = GlobalGroup.EnumUnitsInRect(Regions.BlackrockUnlock);
-      RefundSystem.RefundUnits(units, p);
-      RefundSystem.FlushMessages();
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.BlackrockUnlock);
     }
 
     if (whichFaction.Player != null)

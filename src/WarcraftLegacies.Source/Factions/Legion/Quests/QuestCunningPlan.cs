@@ -51,10 +51,9 @@ public sealed class QuestCunningPlan : QuestData
     var p = completingFaction.Player;
     if (p != null)
     {
-      var units = GlobalGroup.EnumUnitsInRect(Regions.AlteracArea);
-      RefundSystem.RefundUnits(units, p);
-      RefundSystem.FlushMessages();
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.AlteracArea);
     }
   }
+
 
 }

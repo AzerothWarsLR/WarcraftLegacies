@@ -84,16 +84,12 @@ public sealed class QuestPlague : QuestData
 
     if (p != null)
     {
-      var units1 = GlobalGroup.EnumUnitsInRect(Regions.DeathknellUnlock);
-      RefundSystem.RefundUnits(units1, p);
-
-      var units2 = GlobalGroup.EnumUnitsInRect(Regions.StratholmeScourgeBase);
-      RefundSystem.RefundUnits(units2, p);
-
-      var units3 = GlobalGroup.EnumUnitsInRect(Regions.CaerDarrow);
-      RefundSystem.RefundUnits(units3, p);
-
-      RefundSystem.FlushMessages();
+      RefundSystem.RefundEnemyStructuresInRect(
+        p,
+        Regions.DeathknellUnlock,
+        Regions.StratholmeScourgeBase,
+        Regions.CaerDarrow
+      );
     }
 
     if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
@@ -105,7 +101,6 @@ public sealed class QuestPlague : QuestData
       Logger.LogWarning($"Expected {completingFaction.Name} to have the Cult Spies Power.");
     }
   }
-
 
   private static void RegisterRocks()
   {
