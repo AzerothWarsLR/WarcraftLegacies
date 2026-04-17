@@ -1,11 +1,74 @@
 [
   {
+    "TypeId": 1936872009,
+    "Variation": 7,
+    "Position": {
+      "X": -5528.172,
+      "Y": 23118.453,
+      "Z": 313.63074
+    },
+    "Rotation": 4.886922,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1936872009,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 24187
+  },
+  {
+    "TypeId": 842477636,
+    "Variation": 0,
+    "Position": {
+      "X": -5504,
+      "Y": 23168,
+      "Z": 341.5
+    },
+    "Rotation": 0,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 842477636,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21659
+  },
+  {
+    "TypeId": 1936872009,
+    "Variation": 5,
+    "Position": {
+      "X": -5455.0312,
+      "Y": 23128.008,
+      "Z": 319.18176
+    },
+    "Rotation": 4.34587,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1936872009,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 24188
+  },
+  {
     "TypeId": 1651528793,
     "Variation": 0,
     "Position": {
       "X": -5472,
       "Y": 23200,
-      "Z": 381.4375
+      "Z": 346.14062
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -26,7 +89,7 @@
     "Position": {
       "X": -5408,
       "Y": 23200,
-      "Z": 359.0625
+      "Z": 337.54688
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -47,7 +110,7 @@
     "Position": {
       "X": -5408,
       "Y": 23264,
-      "Z": 379.1875
+      "Z": 360.76562
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -68,7 +131,7 @@
     "Position": {
       "X": -5600,
       "Y": 23264,
-      "Z": 391.5625
+      "Z": 366.8125
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -89,7 +152,7 @@
     "Position": {
       "X": -5536,
       "Y": 23200,
-      "Z": 380.3125
+      "Z": 345.0625
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -110,7 +173,7 @@
     "Position": {
       "X": -5600,
       "Y": 23200,
-      "Z": 355.6875
+      "Z": 334.3125
     },
     "Rotation": 4.712389,
     "Scale": {
