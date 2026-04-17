@@ -106,7 +106,6 @@ public static class Regions
   public static Rectangle Eastern_Northrend { get; set; } = new Rectangle(-2272f, 20320f, 4608f, 22304f);
   public static Rectangle EchoIsleAmbient { get; set; } = new Rectangle(-8576f, -10208f, -5056f, -4064f);
   public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8416f, -6816f, -6208f, -3968f);
-  public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8416f, -6816f, -6208f, -3968f);
   public static Rectangle ElementalRealm { get; set; } = new Rectangle(-18016f, -22848f, -8480f, -20320f);
   public static Rectangle ElwinForestAmbient { get; set; } = new Rectangle(8704f, -14816f, 13376f, -12672f);
   public static Rectangle EnKilahUnlock { get; set; } = new Rectangle(-6016f, 18176f, -4832f, 18848f);
