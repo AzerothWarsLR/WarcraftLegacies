@@ -104,7 +104,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "TP17,R021,R01U,R01Z,R019,R015,Ropm,Rhme,Rhar,Rguv"
+      "Value": "R021,TP17,R01U,R01Z,R019,R015,Ropm,Rhme,Rhar,Rguv"
     },
     {
       "Id": "ucs1",

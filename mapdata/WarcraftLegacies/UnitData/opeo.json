@@ -41,11 +41,6 @@
       "Value": "sapper,peon"
     },
     {
-      "Id": "upgr",
-      "Type": 3,
-      "Value": "R021,Ropg,Rguv"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Frostwolf, Warsong, Worker)"
