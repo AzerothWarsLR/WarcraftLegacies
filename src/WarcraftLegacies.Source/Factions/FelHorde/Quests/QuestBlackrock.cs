@@ -51,6 +51,11 @@ public sealed class QuestBlackrock : QuestData
       ? player.NeutralAggressive
       : completingFaction.Player;
 
+    if (completingFaction.ScoreStatus != ScoreStatus.Defeated)
+    {
+      RefundSystem.RefundEnemyStructuresInRect(rescuer, Regions.BlackrockUnlock);
+    }
+
     rescuer.RescueGroup(_rescueUnits1);
     rescuer.RescueGroup(_rescueUnits2);
   }
