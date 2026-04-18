@@ -5,6 +5,7 @@ using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Warsong.Mechanics;
 using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Extensions;
 
@@ -26,9 +27,11 @@ public sealed class QuestGrom : QuestData
   {
     AddObjective(new ObjectiveUnitIsDead(AllPreplacedWidgets.Units.Get(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT)));
     AddObjective(new ObjectiveSelfExists());
+    AddObjective(new ObjectiveControlLegend(gargok, true));
+
     ResearchId = UPGRADE_R013_QUEST_COMPLETED_BREAKING_BAD_BLOOD;
     _gromHellscream = gromHellscreamLegend;
-    _gargok = gargok; // now correctly aligned
+    _gargok = gargok;
   }
 
   /// <inheritdoc />

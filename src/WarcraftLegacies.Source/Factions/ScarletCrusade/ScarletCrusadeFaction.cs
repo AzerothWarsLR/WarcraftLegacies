@@ -13,6 +13,7 @@ public sealed class ScarletCrusadeFaction : Faction
   public ScarletCrusadeFaction() : base("Scarlet Crusade", playercolor.LightBlue,
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
+    TraditionalTeam = TeamSetup.NorthAlliance;
     ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;
     StartingGold = new StartingGold
     {

@@ -19,7 +19,7 @@ public static class SkywallSpells
 
     var stormSurge = new MassAnySpell(ABILITY_A104_STORM_SURGE_SKYWALL)
     {
-      DummyAbilityId = ABILITY_TP04_PURGE_DUMMY,
+      DummyAbilityId = ABILITY_TP20_PURGE_STORM_SURGE,
       DummyAbilityOrderId = ORDER_PURGE,
       Radius = 200,
       Damage = new LeveledAbilityField<float>

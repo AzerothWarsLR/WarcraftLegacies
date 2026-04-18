@@ -17,6 +17,7 @@ public sealed class QuestLegionKillLordaeron : QuestData
     _tichondrius = tichondrius;
     AddObjective(new ObjectiveControlCapital(capitalPalace, false));
     AddObjective(new ObjectiveCapitalDead(stratholme));
+    AddObjective(new ObjectiveControlLegend(_tichondrius, true));
   }
 
   /// <inheritdoc/>
