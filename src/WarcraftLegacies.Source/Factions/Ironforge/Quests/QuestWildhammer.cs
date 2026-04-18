@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
@@ -41,6 +42,12 @@ public sealed class QuestWildhammer : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
+    var p = completingFaction.Player;
+    if (p != null)
+    {
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.Aerie_Peak);
+    }
+
     completingFaction.Player.RescueGroup(_rescueUnits);
   }
 
