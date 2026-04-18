@@ -29,12 +29,9 @@
       "Value": 0.01
     },
     {
-      "Id": "bvcb",
-      "Value": 0
-    },
-    {
-      "Id": "bvcg",
-      "Value": 0
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": " (The missing one)"
     }
   ]
 }
