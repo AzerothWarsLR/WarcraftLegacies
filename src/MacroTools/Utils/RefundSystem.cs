@@ -11,7 +11,10 @@ public static class RefundSystem
 
   private static void RefundHostileStructures(player whichPlayer, IEnumerable<unit> units)
   {
-    foreach (var u in units.Where(u => u.IsUnitType(unittype.Structure) && u.IsEnemyTo(whichPlayer)))
+    foreach (var u in units.Where(u =>
+               u.IsUnitType(unittype.Structure) &&
+               u.IsEnemyTo(whichPlayer) &&
+               u.IsRemovable()))
     {
       var enemy = u.Owner;
       var refund = u.GoldCost;
@@ -56,7 +59,8 @@ public static class RefundSystem
   {
     foreach (var kvp in _globalTotals)
     {
-      DisplayTextToPlayer(kvp.Key, 0, 0, $"|cff00ff00You received {kvp.Value} gold refunded from removed buildings.|r");
+      DisplayTextToPlayer(kvp.Key, 0, 0,
+        $"|cff00ff00You received {kvp.Value} gold refunded from removed buildings.|r");
     }
 
     _globalTotals.Clear();
