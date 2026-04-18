@@ -1,0 +1,168 @@
+{
+  "OldId": "nbal",
+  "NewId": "n05T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0B2,ACcr,A0AW,A0B3,A0EQ,AInv,ACrk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ubba",
+      "Value": 35
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 75
+    },
+    {
+      "Id": "ua2b",
+      "Value": 65
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1650
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 85
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "giant"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uclb",
+      "Value": 65
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde-Demi)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 65
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Kazzak the Supreme"
+    },
+    {
+      "Id": "uclr",
+      "Value": 155
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive Kazzak"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Demon lord of the Blasted Lands, and reopener of the portal to Outland, Kazzak is a mighty adversary for the mortals of Azeroth, and a prime beta commander for Magtheridon\u0027s fel legions."
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

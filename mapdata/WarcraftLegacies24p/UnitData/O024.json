@@ -1,0 +1,169 @@
+{
+  "OldId": "Obla",
+  "NewId": "O024",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACce,A0EH"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.65
+    },
+    {
+      "Id": "ubba",
+      "Value": 65
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AUan"
+    },
+    {
+      "Id": "uhos",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumChop"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Witch Doctor"
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep-Zul\u0027Farrak)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\DarkTroll\\DarkTroll.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "uhas",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chieftan of the Sandfury Tribe"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Ukorz Sandscalp"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Witch Doctor"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ForestTroll"
+    }
+  ]
+}

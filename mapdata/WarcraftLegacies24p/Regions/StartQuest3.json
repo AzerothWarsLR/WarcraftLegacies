@@ -1,0 +1,16 @@
+{
+  "Left": -12480,
+  "Bottom": -24416,
+  "Right": -12320,
+  "Top": -24256,
+  "Name": "StartQuest3",
+  "CreationNumber": 406,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

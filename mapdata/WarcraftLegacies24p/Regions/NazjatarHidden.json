@@ -1,0 +1,16 @@
+{
+  "Left": -12480,
+  "Bottom": -24032,
+  "Right": -12320,
+  "Top": -23872,
+  "Name": "NazjatarHidden",
+  "CreationNumber": 475,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

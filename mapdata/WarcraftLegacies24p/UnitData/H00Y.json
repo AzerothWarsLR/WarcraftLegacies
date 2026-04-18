@@ -1,0 +1,145 @@
+{
+  "OldId": "Huth",
+  "NewId": "H00Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0IA,A0WE,A07P,Aamk,A0QI"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uint",
+      "Value": 22
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumSlice"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R03F"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBRIGITTE.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Rise from the ashes)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Brigitte_Abbendis.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Commander of the Scarlet Crusade"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Brigitte Abbendis"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": " Revive Paladin"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBRIGITTE.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Archer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Brigitte"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at melee combat and aggression.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Consecration, Blood Fury, Fiery Aura, Guarding Light|n|n|cffffcc00Attacks land units.|R"
+    }
+  ]
+}

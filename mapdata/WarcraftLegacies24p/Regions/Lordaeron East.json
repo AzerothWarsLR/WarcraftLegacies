@@ -1,0 +1,16 @@
+{
+  "Left": 12896,
+  "Bottom": 7456,
+  "Right": 18240,
+  "Top": 13984,
+  "Name": "Lordaeron East",
+  "CreationNumber": 50,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

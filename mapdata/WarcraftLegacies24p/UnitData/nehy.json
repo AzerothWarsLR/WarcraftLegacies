@@ -1,0 +1,34 @@
+{
+  "OldId": "nehy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    }
+  ]
+}

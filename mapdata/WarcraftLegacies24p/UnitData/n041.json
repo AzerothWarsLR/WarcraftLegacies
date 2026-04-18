@@ -1,0 +1,106 @@
+{
+  "OldId": "ninf",
+  "NewId": "n041",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 39
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 60
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion-Archimond-Level 1)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 220
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Abyssal"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.25
+    }
+  ]
+}

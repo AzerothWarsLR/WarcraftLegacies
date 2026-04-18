@@ -1,0 +1,111 @@
+{
+  "OldId": "ebal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 8
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 21
+    },
+    {
+      "Id": "ugor",
+      "Value": 21
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1050
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,structure,tree,wall"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,wall,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme,Reuv,Repb"
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R06M"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elegant Sentinel siege weapon.|n|n|cff99b4d1Can only build 8.|r|n|cffffcc00Attacks land units and trees.|r"
+    }
+  ]
+}

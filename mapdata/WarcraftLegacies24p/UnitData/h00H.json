@@ -1,0 +1,221 @@
+{
+  "OldId": "hkni",
+  "NewId": "h00H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YL,ACdc,ACbk,A109,Unho,A059,ACsk,Aiun"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "ACbk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 33
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 90
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1350
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upri",
+      "Value": 13
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R094,Rupm,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge-Elite)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\undead\\HeroDeathKnight\\HeroDeathKnight.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ulfi",
+      "Value": 0
+    },
+    {
+      "Id": "ulfo",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "umsl",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Death Knight"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Death Knight"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "The loyal knights of Ner\u0027zhul.|n|cfff5962dAbilities:|R Death Coil, Black Strike, Animate Dead, Unholy Plating, Death Pact, Resistant Skin|n|cfff5962dCan Learn:|R Chilling Aura|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroDeathKnight"
+    }
+  ]
+}

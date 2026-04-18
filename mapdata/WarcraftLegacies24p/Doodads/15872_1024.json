@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1668437068,
+    "Variation": 3,
+    "Position": {
+      "X": 15808,
+      "Y": 832,
+      "Z": 181.25
+    },
+    "Rotation": 3.5604715,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1668437068,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 18333
+  },
+  {
+    "TypeId": 1668437068,
+    "Variation": 3,
+    "Position": {
+      "X": 16064,
+      "Y": 832,
+      "Z": 175.25
+    },
+    "Rotation": 3.5604715,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1668437068,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 18339
+  },
+  {
+    "TypeId": 1668437068,
+    "Variation": 3,
+    "Position": {
+      "X": 15616,
+      "Y": 832,
+      "Z": 183.875
+    },
+    "Rotation": 3.5604715,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1668437068,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 18325
+  },
+  {
+    "TypeId": 1668437068,
+    "Variation": 3,
+    "Position": {
+      "X": 15744,
+      "Y": 832,
+      "Z": 180.75
+    },
+    "Rotation": 3.5604715,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1668437068,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 18331
+  },
+  {
+    "TypeId": 1668437068,
+    "Variation": 3,
+    "Position": {
+      "X": 15936,
+      "Y": 832,
+      "Z": 178.4375
+    },
+    "Rotation": 3.5604715,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1668437068,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 18332
+  }
+]

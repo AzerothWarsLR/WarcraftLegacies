@@ -1,0 +1,174 @@
+{
+  "OldId": "nemi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,ACsk"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "divine"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "umh1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1r",
+      "Value": 0
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uwu1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1s",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utco",
+      "Value": 9
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\HeroPaladinBoss2\\HeroPaladinBoss2.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "King Terenas Menethil"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "None"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

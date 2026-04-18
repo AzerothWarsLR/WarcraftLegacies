@@ -1,0 +1,42 @@
+{
+  "OldId": "ACpv",
+  "NewId": "A10H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Nazgrim) (iron giant)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 50 damage to nearby units."
+    }
+  ]
+}

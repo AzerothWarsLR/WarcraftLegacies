@@ -1,0 +1,148 @@
+{
+  "OldId": "nhym",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A07Q,Aihn,A029,A0CZ"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 22
+    },
+    {
+      "Id": "uhpm",
+      "Value": 390
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 13
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00J,R00K,R00E"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrushingWave.blp"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Frost Cell"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Adept mage of the frost arcanum.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Summon Water Elemental, Frost Cell|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 45
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 45
+    },
+    {
+      "Id": "uclb",
+      "Value": 255
+    },
+    {
+      "Id": "uclg",
+      "Value": 180
+    },
+    {
+      "Id": "uclr",
+      "Value": 180
+    }
+  ]
+}

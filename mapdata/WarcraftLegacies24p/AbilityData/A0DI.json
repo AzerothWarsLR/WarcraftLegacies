@@ -1,0 +1,50 @@
+{
+  "OldId": "ACac",
+  "NewId": "A0DI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 4000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,self,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Nexus"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "The Nexus Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nexus Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Control of The Nexus gives your nearby units bonus attack damage."
+    }
+  ]
+}

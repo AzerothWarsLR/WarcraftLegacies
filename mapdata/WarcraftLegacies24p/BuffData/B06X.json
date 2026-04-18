@@ -1,0 +1,24 @@
+{
+  "OldId": "BNpi",
+  "NewId": "B06X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Purple)"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "war3mapImported\\HolyStrike.mdx"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

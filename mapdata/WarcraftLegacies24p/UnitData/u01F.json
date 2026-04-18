@@ -1,0 +1,129 @@
+{
+  "OldId": "uaod",
+  "NewId": "u01F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YA,A0RU"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "U02A,U00Z,E005"
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(C\u0027thun Building)"
+    },
+    {
+      "Id": "uept",
+      "Value": 0
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "uclg",
+      "Value": 221
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Altar of the Old Ones"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon - Altar of the Old Ones"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Revives slain Heroes."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\AltarofAnub.mdl"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

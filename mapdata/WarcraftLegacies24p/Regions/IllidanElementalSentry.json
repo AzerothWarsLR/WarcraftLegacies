@@ -1,0 +1,16 @@
+{
+  "Left": 20192,
+  "Bottom": -26176,
+  "Right": 20768,
+  "Top": -25440,
+  "Name": "IllidanElementalSentry",
+  "CreationNumber": 405,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "OldId": "nmed",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A00W,A00V,Afbt,Afae,Amim,Avul,Amrf"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.35
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 19
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1500
+    },
+    {
+      "Id": "umpi",
+      "Value": 750
+    },
+    {
+      "Id": "umpm",
+      "Value": 750
+    },
+    {
+      "Id": "ua1z",
+      "Value": 800
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 21
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Medivh, The Last Guardian"
+    }
+  ]
+}

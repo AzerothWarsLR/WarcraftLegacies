@@ -1,0 +1,148 @@
+{
+  "OldId": "Huth",
+  "NewId": "H09S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 15
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AEim,A07X,AHtb,AHad,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 28
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 28
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R082"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Hammer of the Light"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Vindicator Maraad"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional frontline support.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan learn:|R Storm Bolt, Rally, Devotion Aura, Divine Storm|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Maraad"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Maraad"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Maraad"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Vindicator Maraad.mdl"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "OldId": "AIct",
+  "NewId": "A053",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - Tyrande)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Nightfall"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nightfall"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The priestess of the moon channels her extremely powerful spells, casting an illusion of night over the sky for 30 seconds. Has a 90 Second cooldown."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "OldId": "DRfc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Crater Fiery (Dungeon)"
+    },
+    {
+      "Id": "donw",
+      "Value": 1
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

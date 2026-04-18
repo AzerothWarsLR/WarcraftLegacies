@@ -1,0 +1,16 @@
+{
+  "Left": 14688,
+  "Bottom": -6752,
+  "Right": 15648,
+  "Top": -4768,
+  "Name": "ThelUnlock",
+  "CreationNumber": 461,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "OldId": "AIcb",
+  "NewId": "A0KG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idic",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(level 1) (anubarack beetles)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Acid Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Acid Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spits acid on the enemy, reducing armor by 4."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp"
+    }
+  ]
+}

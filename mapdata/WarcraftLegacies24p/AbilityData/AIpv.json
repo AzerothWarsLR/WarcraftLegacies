@@ -1,0 +1,15 @@
+{
+  "OldId": "AIpv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "ipv2",
+      "Type": 2,
+      "Value": 0.5
+    }
+  ]
+}

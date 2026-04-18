@@ -1,0 +1,127 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 15
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0WE,A07Z,AHad,A097,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 20
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 32
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04Y"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNuther......blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Leader of the Silver Hand"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Uther the Lightbringer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional frontline support.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan learn:|R Consecration, Lightbringer\u0027s Strength, Devotion Aura, Exact Justice|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Uther"
+    }
+  ]
+}

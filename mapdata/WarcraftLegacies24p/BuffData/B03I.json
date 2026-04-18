@@ -1,0 +1,19 @@
+{
+  "OldId": "BNdh",
+  "NewId": "B03I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Drunken Haze"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Dargan)"
+    }
+  ]
+}

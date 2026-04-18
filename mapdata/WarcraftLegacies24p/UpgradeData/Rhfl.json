@@ -1,0 +1,38 @@
+{
+  "OldId": "Rhfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R,h07F"
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
+}

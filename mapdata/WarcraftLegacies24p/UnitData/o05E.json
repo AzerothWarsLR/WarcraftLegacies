@@ -1,0 +1,244 @@
+{
+  "OldId": "oalt",
+  "NewId": "o05E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0ZJ,A0ZA"
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": -25
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\16x16Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "urtm",
+      "Value": 120
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R013"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h09R,o05A"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R064,Rgfo"
+    },
+    {
+      "Id": "ulum",
+      "Value": 25
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1000
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1z",
+      "Value": 2000
+    },
+    {
+      "Id": "ua1f",
+      "Value": 100
+    },
+    {
+      "Id": "ua1h",
+      "Value": 150
+    },
+    {
+      "Id": "ua1q",
+      "Value": 175
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 200
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "udl1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "utc1",
+      "Value": 10
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonWell.blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowMoonWell"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DraeneiDimensionalGate.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Exodar Regalis"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 12
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

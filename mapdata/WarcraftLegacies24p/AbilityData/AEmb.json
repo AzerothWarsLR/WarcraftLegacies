@@ -1,0 +1,120 @@
+{
+  "OldId": "AEmb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 420
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green / Light Blue - Illidan)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Sends a bolt of negative energy that burns a target enemy unit\u0027s mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to 240 mana. |n|cffffcc00Level 2|r - Burns up to 300 mana. |n|cffffcc00Level 3|r - Burns up to 360 mana.|n|cffffcc00Level 4|r - Burns up to 420 mana."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mana Burn - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a bolt of negative energy that burns up to \u003CAEmb,DataA4\u003E points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned."
+    }
+  ]
+}

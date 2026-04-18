@@ -1,0 +1,92 @@
+{
+  "OldId": "npfm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A06Y,Afbk,ACde"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 32
+    },
+    {
+      "Id": "ugor",
+      "Value": 28
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 30
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde-Portal)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fel enlarged hound, and consumer of magi.|n|cfff5962dAbilities:|R Mana Burn, Devour Magic, Feedback |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

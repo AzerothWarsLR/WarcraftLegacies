@@ -1,0 +1,60 @@
+{
+  "OldId": "ckng",
+  "NewId": "I003",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A049,A048"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "Ashs"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Increases all stats. Can be used to cast Invibility, Rain of Fire, Devour Magic and Demon Call."
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Doodads\\Cinematic\\EyeOfSargeras\\EyeOfSargeras.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Eye of Sargeras"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength and Agility by 10, and Intelligence by 20. Can be used to cast Invisibility, Rain of Fire, Devour Magic, and Demon Call.|n|cffffcc00Lore|r|n|cffffdeadThe last remnant of Sargeras\u0027 summoned, withered form.|r"
+    }
+  ]
+}

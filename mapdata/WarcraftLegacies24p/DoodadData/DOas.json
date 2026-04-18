@@ -1,0 +1,58 @@
+{
+  "OldId": "DOas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 120
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 75
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 15
+    }
+  ]
+}

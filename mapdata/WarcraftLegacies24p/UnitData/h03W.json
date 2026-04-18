@@ -1,0 +1,199 @@
+{
+  "OldId": "hkni",
+  "NewId": "h03W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0BG,A0S8,A02Y,ACsk,AInv,A0GK"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1050
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "umpm",
+      "Value": 425
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R039"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "giant"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDanath.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 144
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Arathor-Demi)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\TheCaptain\\TheCaptain.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "ulfi",
+      "Value": 0
+    },
+    {
+      "Id": "ulfo",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "umsl",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Danath Trollbane"
+    },
+    {
+      "Id": "uclr",
+      "Value": 144
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive Danath Trollbane"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Valiant hero of the Southern Alliance, and well renowned commander of the Second War. Last believed to of perished in the destruction of Draenor, he has survived, and rejoined Stormwind."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Captain"
+    }
+  ]
+}

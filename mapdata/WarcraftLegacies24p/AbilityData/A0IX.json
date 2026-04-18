@@ -1,0 +1,60 @@
+{
+  "OldId": "Aroc",
+  "NewId": "A0IX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DG zeppelin)"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Rocket Barrage"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rocket Barrage"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Fires powerful rockets at nearby enemy ground units, dealing \u003Chrtt,mindmg2\u003E - \u003Chrtt,maxdmg2\u003E damage per hit."
+    }
+  ]
+}

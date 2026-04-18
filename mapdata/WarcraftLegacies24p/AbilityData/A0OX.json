@@ -1,0 +1,125 @@
+{
+  "OldId": "ANcl",
+  "NewId": "A0OX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Unleash Souls"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Unleash Souls"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Boneseer unleash spirits to attack his enemies all around him. He channels for 8 seconds, each soul dealing 40 damage."
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLifeBurn.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(troll)"
+    }
+  ]
+}

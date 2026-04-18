@@ -1,0 +1,76 @@
+{
+  "OldId": "klmm",
+  "NewId": "I012",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0AL,AIvl,AItx"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIvl"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ilev",
+      "Value": 8
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ipri",
+      "Value": 200
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAshbringer2.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Increases damage and provides life steal. Can be used to cast Divine Shield."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ashbringer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases the attack damage of the Hero by 20 and Strength by 10. Can be used to cast Minor Divine Shield, which grants the user invulnerability for 5 seconds.|n|cffffcc00Lore|r|n|cffffdeadForged in the great anvil of Ironforge, the legendary blade is known to slaughter undead and leave nothing but ash in it\u0027s wake. It\u0027s crystal is the Living Embodiment of Shadow purified by the Holy Light."
+    }
+  ]
+}

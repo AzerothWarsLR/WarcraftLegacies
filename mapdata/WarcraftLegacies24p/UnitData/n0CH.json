@@ -1,0 +1,186 @@
+{
+  "OldId": "nhym",
+  "NewId": "n0CH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0WZ,A0X0,A0X1,Aihn"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0X0"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 19
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 22
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "ulev",
+      "Value": 3
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 13
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00V,Rguv,R00K"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h07G"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodstoneMage.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGheavenlydemolisher.blp"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Rune of Wrath,- Rune of Wrath|n- Healing Shield,- Rune of Wrath|n- Healing Shield|n- Rune of Shielding"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BloodStoneMage.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Flame Keeper"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Flame Keeper"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Follower of the ancient techniques of old. |n|cfff5962dAbilities:|R Rune of Wrath |n|cfff5962dCan learn:|R Healing Shield, Rune of Shielding|n|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

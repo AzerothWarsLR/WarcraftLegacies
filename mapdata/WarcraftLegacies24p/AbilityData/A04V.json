@@ -1,0 +1,43 @@
+{
+  "OldId": "ACsa",
+  "NewId": "A04V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Legion - Archer)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "aubx",
+      "Value": 0
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds \u003CACsa,DataA1\u003E bonus fire damage to an attack against enemies"
+    }
+  ]
+}

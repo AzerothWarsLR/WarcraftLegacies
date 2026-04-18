@@ -1,0 +1,140 @@
+{
+  "OldId": "Ubal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0FH,A07B,A06R,AInv,Apiv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A05J,A098,A0SC,AUdd,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 550
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "upri",
+      "Value": 15
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "utco",
+      "Value": 5
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R054"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Envoy of Archimonde"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Anetheron"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Envoy of Archimonde"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Envoy of Archimonde"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning hero, adept at dealing magic damage and supporting armies.|n|cfff5962dCan learn:|R Astral Walk, Feedback, Demonic Thunder, Summon Demonic Reinforcements, Unholy Aura, Death and Decay|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Anetheron"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "OldId": "nnwa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 745
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,R001,R00Q,Rugf"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

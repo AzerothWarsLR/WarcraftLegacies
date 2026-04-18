@@ -1,0 +1,33 @@
+{
+  "OldId": "nspd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aweb"
+    },
+    {
+      "Id": "ubba",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 17
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 480
+    }
+  ]
+}

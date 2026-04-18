@@ -1,0 +1,44 @@
+{
+  "OldId": "Bblo",
+  "NewId": "B060",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTongueOfFlame.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Dragon\u0027s Fury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Dragon\u0027s Fury; its attack rate and movement speed are increased."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Dragon\u0027s Fury"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Dark Green)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl,Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    }
+  ]
+}

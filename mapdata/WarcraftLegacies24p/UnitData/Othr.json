@@ -1,0 +1,102 @@
+{
+  "OldId": "Othr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0W3,AInv"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0WL,Aamk,ANfl,ANmo,A0MH"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "umvs",
+      "Value": 285
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Warchief"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warchief of the Horde"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Warchief"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, exceptional at empowering allies and dealing magic damage.|n|cfff5962dAbilities:|r Command Aura|n|cfff5962dCan learn:|R Forked Lightning, Thunder Grip, Feral Spirit, Thunderstorm|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Warchief"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Thrall.mdl"
+    }
+  ]
+}

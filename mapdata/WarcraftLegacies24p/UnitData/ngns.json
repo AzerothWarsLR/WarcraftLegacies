@@ -1,0 +1,37 @@
+{
+  "OldId": "ngns",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 540
+    }
+  ]
+}

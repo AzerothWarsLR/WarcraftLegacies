@@ -1,0 +1,90 @@
+{
+  "OldId": "hpea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "h097,h094,h01R,h039,h02F,h02X,h03Q,h03O,h03E,h03D,n008,h03H,h06E,h072,h06V,h06T,h06K,h06G,h06F,h06D,h06C,h06A,nmrk,n07T,h035,hshy,htow,hhou,hbar,hbla,hwtw,halt,hars,harm,hlum,hvlt,h07X,h088,h081,h06G,hshy,h083,h082,h080,h086,h084"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rhlh,Rguv"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,Ahar,Ahrp,Ahlh,A106"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron, Stormwind, Worker)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees."
+    }
+  ]
+}

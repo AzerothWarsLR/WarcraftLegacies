@@ -1,0 +1,34 @@
+{
+  "OldId": "ACd2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Draz\u0027zilb)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffe8e800W|r) - Abolish Magic"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

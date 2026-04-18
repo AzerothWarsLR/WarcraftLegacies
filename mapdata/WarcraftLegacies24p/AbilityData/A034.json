@@ -1,0 +1,281 @@
+{
+  "OldId": "AEsf",
+  "NewId": "A034",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B009"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B009"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B009"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Esf2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Esf2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00H"
+    },
+    {
+      "Level": 2,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00H"
+    },
+    {
+      "Level": 3,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00H"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "stand,channel"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostBolt.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Orange - Antonidas)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Frostfall"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostBolt.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Frostfall - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls down waves of piercing ice shards that damage nearby enemy units.|n|n|cffffcc00Level 1|r - Each wave deals 40 damage.|n|cffffcc00Level 2|r - Each wave deals 60 damage.|n|cffffcc00Level 3|r - Each wave deals 80 damage|n|nLasts 20 seconds. 900 range."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frostfall - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frostfall - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frostfall - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down waves of piercing ice shards that damage nearby enemy units. Each wave deals \u003CA034,DataA1\u003E damage. |nLasts for \u003CA034,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down waves of piercing ice shards that damage nearby enemy units. Each wave deals \u003CA034,DataA2\u003E damage. |nLasts for \u003CA034,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down waves of piercing ice shards that damage nearby enemy units. Each wave deals \u003CA034,DataA3\u003E damage. |nLasts for \u003CA034,Dur3\u003E seconds."
+    }
+  ]
+}

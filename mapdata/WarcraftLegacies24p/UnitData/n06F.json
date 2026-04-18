@@ -1,0 +1,237 @@
+{
+  "OldId": "nhef",
+  "NewId": "n06F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,ACrk,ACba,A06L,A0S0"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0S0"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.78
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R03Y"
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "giant"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rhme,Rhpm,Rhar,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMirjana.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 100
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Arathor-Demi)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\Jaina\\Jaina.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Katrana Prestor"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive [|cffffcc00S|r] - Katrana Prestor"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning demi-hero. Has the following abilities: Firebolt, Dragon\u0027s Fury and Brilliance Aura. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Sorceress"
+    }
+  ]
+}

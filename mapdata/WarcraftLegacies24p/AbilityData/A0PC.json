@@ -1,0 +1,78 @@
+{
+  "OldId": "ACac",
+  "NewId": "A0PC",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,player,self,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B09T"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Crusade 4)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives 20% extra damage to the attacks of nearby player units. |n|n|cffd45e19This aura stacks for each different type of unit that has it.|r"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "United for the Crusade"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "United for the Crusade"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSacredStrike.blp"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

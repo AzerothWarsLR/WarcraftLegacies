@@ -1,0 +1,18 @@
+{
+  "OldId": "ACbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Neutral Hostile Forsaken)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

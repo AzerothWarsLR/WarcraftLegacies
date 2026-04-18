@@ -1,0 +1,29 @@
+{
+  "OldId": "BNbr",
+  "NewId": "B019",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionHorn.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Horn of Stormwind"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has heard the Horn of Stormwind; its attack damage and defense have been increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+    }
+  ]
+}

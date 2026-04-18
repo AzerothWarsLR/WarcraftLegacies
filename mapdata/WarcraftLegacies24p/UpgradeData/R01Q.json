@@ -1,0 +1,91 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R01Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "h00H"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": "gglb",
+      "Value": 200
+    },
+    {
+      "Id": "glmb",
+      "Value": 350
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMystical Knight on Pegasus Lordaeron.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Pegasus Taming"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Pegasus Taming"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows the training of Pegasus Knights from the Aviary."
+    }
+  ]
+}

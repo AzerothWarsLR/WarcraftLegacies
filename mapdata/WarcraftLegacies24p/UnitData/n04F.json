@@ -1,0 +1,137 @@
+{
+  "OldId": "nfoh",
+  "NewId": "n04F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A03P,Adtg,A00H,A01A,A019"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "usin",
+      "Value": 1800
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "urtm",
+      "Value": 120
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R05X"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h04L,e00N,ewsp"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo,Renb,R064"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Ashenvale\\Structures\\Worldtree\\Worldtree.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Andrassil"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

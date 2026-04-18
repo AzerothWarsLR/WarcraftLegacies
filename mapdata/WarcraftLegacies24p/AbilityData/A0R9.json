@@ -1,0 +1,112 @@
+{
+  "OldId": "ACbl",
+  "NewId": "A0R9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Blo1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Blo2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellShieldAmulet.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Bishop of Light)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Warding of the Light"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00Q|r) - Warding of the Light"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Protects a target unit from one spell every 2 seconds. Lasts 10 seconds."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellShieldAmulet.blp"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

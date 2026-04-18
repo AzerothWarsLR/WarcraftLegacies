@@ -1,0 +1,21 @@
+{
+  "OldId": "ndh1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "usin",
+      "Value": 600
+    },
+    {
+      "Id": "usid",
+      "Value": 900
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "OldId": "Aliq",
+  "NewId": "A0J2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B041"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "liq1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "liq3",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Saboteur - Dark Green)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Incendiary Cocktail"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Molotov Cocktail"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Saboteur throws Molotov Cocktails at buildings; lighting them on fire, making it impossible to repair them. The buildings will take damage over time and have their attack rate reduced by \u003CA0J2,DataC1,%\u003E%."
+    }
+  ]
+}

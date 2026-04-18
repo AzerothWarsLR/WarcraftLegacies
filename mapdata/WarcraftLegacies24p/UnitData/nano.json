@@ -1,0 +1,24 @@
+{
+  "OldId": "nano",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 37
+    },
+    {
+      "Id": "uhpm",
+      "Value": 940
+    }
+  ]
+}

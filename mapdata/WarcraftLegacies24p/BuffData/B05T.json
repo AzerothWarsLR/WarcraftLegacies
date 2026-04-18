@@ -1,0 +1,24 @@
+{
+  "OldId": "Broa",
+  "NewId": "B05T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanArmorUpOne.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Bolster"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Bolster; its Armor has been increased."
+    }
+  ]
+}

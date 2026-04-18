@@ -1,0 +1,90 @@
+{
+  "OldId": "ewsp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "e011,edos,e00R,e010,e00L,e00T,eden,n06M,eaom,e00V,h03M,n06J,etol,emow,eshy,eate,eaow,eaoe,edob,etrp,e019"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 6
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R026,R01H,R018,Reuv"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0O4,Adtn,Aren,Awha,Ault"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids, Sentinels, Worker)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Ancient spirit builder of the Kaldorei.|n|cfff5962dAbilities:|r Detonate, Renew, Gather|n|n|cffffcc00Attacks land units."
+    }
+  ]
+}

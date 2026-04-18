@@ -1,0 +1,24 @@
+{
+  "OldId": "BNbr",
+  "NewId": "B08M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBoneChimes.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Death\u0027s Advance"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Death\u0027s Advance; its attack damage and armor have been increased."
+    }
+  ]
+}

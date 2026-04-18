@@ -1,0 +1,194 @@
+{
+  "OldId": "Eill",
+  "NewId": "E01H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AEfk,A083,A0FK,A110,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "enemies,ground,vulnerable"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A9,Apiv,AInv"
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04J,R02C,R093"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSoldier2.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Defias Kingpin"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Mercenary)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\EdwinVancleef1.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Defias Kingpin"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Edwin Vancleef"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Defias Kingpin"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.27
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSoldier2.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Choose Vassal: Edwin"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff0000You will lose your current faction and join an Employer as a new small 1 hero faction|r|n|nPossible employers in order of priority:|n-Forsaken (once independant)|n-Scarlet Crusade (once unleashed)|n-Lordaeron (If Stormwind is gone)|n-Dalaran (If Lordaeron are gone)|n-Stormwind (If Dalaran is gone)"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ".mdl"
+    }
+  ]
+}

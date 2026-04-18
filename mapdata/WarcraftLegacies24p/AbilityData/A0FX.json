@@ -1,0 +1,274 @@
+{
+  "OldId": "AUfn",
+  "NewId": "A0FX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNaturesFury.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Cenarius)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Nature\u0027s Fury"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNaturesFury.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Nature\u0027s Fury - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals damage in an area of effect around the target. |n|n|cffffcc00Level 1|r - 100 target damage, 50 nova damage. |n|cffffcc00Level 2|r - 150 target damage, 100 nova damage. |n|cffffcc00Level 3|r - 200 target damage, 150 nova damage. |n|cffffcc00Level 4|r - 250 target damage, 200 nova damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 100 damage to the target, and 50 splash damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 150 damage to the target, and 100 splash damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 200 damage to the target, and 150 splash damage."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 250 damage to the target, and 200 splash damage."
+    }
+  ]
+}

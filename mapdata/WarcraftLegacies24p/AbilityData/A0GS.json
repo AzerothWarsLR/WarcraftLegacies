@@ -1,0 +1,47 @@
+{
+  "OldId": "Amnx",
+  "NewId": "A0GS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Dda1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 33
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Elven Trap2)"
+    }
+  ]
+}

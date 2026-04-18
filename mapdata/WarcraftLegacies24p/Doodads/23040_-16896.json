@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1752387418,
+    "Variation": 4,
+    "Position": {
+      "X": 22804.398,
+      "Y": -16896.502,
+      "Z": 15.701884
+    },
+    "Rotation": 2.5132742,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1752387418,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38388
+  },
+  {
+    "TypeId": 1634752334,
+    "Variation": 0,
+    "Position": {
+      "X": 22812.695,
+      "Y": -17211.562,
+      "Z": 38.399994
+    },
+    "Rotation": 5.4105206,
+    "Scale": {
+      "X": 0.79999995,
+      "Y": 0.79999995,
+      "Z": 0.79999995
+    },
+    "SkinId": 1634752334,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38324
+  },
+  {
+    "TypeId": 813127500,
+    "Variation": 0,
+    "Position": {
+      "X": 23266.58,
+      "Y": -17238.506,
+      "Z": 69.16891
+    },
+    "Rotation": 4.086815,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 1.3499997
+    },
+    "SkinId": 813127500,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38311
+  },
+  {
+    "TypeId": 2004112474,
+    "Variation": 3,
+    "Position": {
+      "X": 23168,
+      "Y": -17024,
+      "Z": 247
+    },
+    "Rotation": 2.5307274,
+    "Scale": {
+      "X": 0.7186804,
+      "Y": 0.7186804,
+      "Z": 0.7186804
+    },
+    "SkinId": 2004112474,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38272
+  },
+  {
+    "TypeId": 2004112474,
+    "Variation": 4,
+    "Position": {
+      "X": 23040,
+      "Y": -16896,
+      "Z": 128.5
+    },
+    "Rotation": 0.5235988,
+    "Scale": {
+      "X": 0.92388684,
+      "Y": 0.92388684,
+      "Z": 0.92388684
+    },
+    "SkinId": 2004112474,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38270
+  }
+]

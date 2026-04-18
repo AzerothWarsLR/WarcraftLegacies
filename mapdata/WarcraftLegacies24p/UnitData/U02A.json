@@ -1,0 +1,218 @@
+{
+  "OldId": "Ulic",
+  "NewId": "U02A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK,AInv"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0SF,A0BR,A0FC,A0DG,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "uint",
+      "Value": 25
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1800
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07S"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\PeeKay\u0027s BoneSpear.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "N\u0027raqi Aberration"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Yor\u0027sahj the Unsleeping"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOneMastermind.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Yor\u0027sahj"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, adept at illusion and deception.|n|cfff5962dAbilities:|r Permanent Invisibility |n|cfff5962dCan learn:|R Power Surge, Barbed Net, Simulacrum, Illusionary Lance |n|n|cffffcc00Attacks land and air units.|R"
+    }
+  ]
+}

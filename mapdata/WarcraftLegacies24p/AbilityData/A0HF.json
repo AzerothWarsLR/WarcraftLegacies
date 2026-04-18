@@ -1,0 +1,49 @@
+{
+  "OldId": "AIha",
+  "NewId": "A0HF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ihpg",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ability Cooldown reset"
+    }
+  ]
+}

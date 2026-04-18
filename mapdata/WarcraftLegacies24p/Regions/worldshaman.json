@@ -1,0 +1,16 @@
+{
+  "Left": -192,
+  "Bottom": 1856,
+  "Right": 32,
+  "Top": 2080,
+  "Name": "worldshaman",
+  "CreationNumber": 439,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

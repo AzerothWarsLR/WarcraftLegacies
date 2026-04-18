@@ -1,0 +1,154 @@
+{
+  "OldId": "nzom",
+  "NewId": "n08G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aap1,A0EB"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0EB"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 6
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 9
+    },
+    {
+      "Id": "uhpm",
+      "Value": 100
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "usma",
+      "Value": 5
+    },
+    {
+      "Id": "usrg",
+      "Value": 5
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R01X,Rhar,Rhme"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDalaranMutant.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 100
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\other\\DalaranMutant\\DalaranMutant.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 255
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Plagueling"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Spawn Plagueling"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Zombie thrumming with disease, ready to burst at any moment.|n|cfff5962dAbilities:|R Disease Cloud, Meatsplosion|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BEme",
+  "NewId": "B082",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNdragon.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Dragon Form"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Transforms the Korialstraz into a powerful Flying Dragon with a ranged attack."
+    }
+  ]
+}

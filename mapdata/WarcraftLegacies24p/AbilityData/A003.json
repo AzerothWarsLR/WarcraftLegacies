@@ -1,0 +1,229 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A003",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulArmor.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green Mediv)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Sonic Boom"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulArmor.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Sonic Boom - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The user\u0027s unleash a powerful sonic strike that stuns all enemy in a largy aoe around him. |n|n|cffffcc00Level 1|r - 4 second stun. |n|cffffcc00Level 2|r - 5 second stun. |n|cffffcc00Level 3|r - 6 second stun."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Sonic Boom - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Sonic Boom - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Sonic Boom - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Unleash a Sonic Boom, stunning nearby enemy land units 4 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Unleash a Sonic Boom, stunning nearby enemy land units 5 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Unleash a Sonic Boom, stunning nearby enemy land units 6 seconds."
+    }
+  ]
+}

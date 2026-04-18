@@ -1,0 +1,255 @@
+{
+  "OldId": "ANbr",
+  "NewId": "A0N7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B076"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B076"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B076"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B076"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(nzoth)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Disorienting Howl"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Disorienting Howl - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The Old God unleashes a devastating roar that reduces attack damage of all nearby enemy units by 100%. |n|n|cffffcc00Level 1|r - 3(1) seconds duration. |n|cffffcc00Level 2|r - 5(3) seconds duration. |n|cffffcc00Level 3|r - 7(5) seconds duration. |n|cffffcc00Level 4|r - 9(7) seconds duration."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Disorienting Howl - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Disorienting Howl - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Disorienting Howl - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Disorienting Howl - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "N\u0027zoth unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 3 seconds duration. Lasts 1 second on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "N\u0027zoth unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 5 seconds duration. Lasts 3 second on heroes."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "N\u0027zoth unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 7 seconds duration. Lasts 5 second on heroes."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "N\u0027zoth unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes."
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\HowlOfTerror\\HowlCaster.mdl"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    }
+  ]
+}

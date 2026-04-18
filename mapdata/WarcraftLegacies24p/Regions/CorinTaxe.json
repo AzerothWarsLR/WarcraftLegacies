@@ -1,0 +1,16 @@
+{
+  "Left": 17536,
+  "Bottom": 9056,
+  "Right": 17568,
+  "Top": 9088,
+  "Name": "CorinTaxe",
+  "CreationNumber": 197,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

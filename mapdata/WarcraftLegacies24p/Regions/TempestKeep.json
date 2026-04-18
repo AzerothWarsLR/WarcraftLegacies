@@ -1,0 +1,16 @@
+{
+  "Left": 1408,
+  "Bottom": -22432,
+  "Right": 5024,
+  "Top": -17952,
+  "Name": "TempestKeep",
+  "CreationNumber": 127,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

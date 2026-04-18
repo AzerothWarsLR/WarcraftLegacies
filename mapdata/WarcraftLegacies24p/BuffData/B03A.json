@@ -1,0 +1,34 @@
+{
+  "OldId": "Brej",
+  "NewId": "B03A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMinorRejuvPotion.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Poisoned Arrow"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effect of Poisoned Arrow"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Poisoned Arrow"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\AcidBomb\\BottleImpact.mdl"
+    }
+  ]
+}

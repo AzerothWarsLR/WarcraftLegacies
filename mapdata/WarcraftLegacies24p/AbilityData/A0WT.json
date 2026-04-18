@@ -1,0 +1,89 @@
+{
+  "OldId": "Aslp",
+  "NewId": "A0WT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 24
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n04E"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlue.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blue Broodmother)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon the Brood"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon the Forest Spiders (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 24 small Spiders that have poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

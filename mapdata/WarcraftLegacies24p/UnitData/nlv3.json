@@ -1,0 +1,38 @@
+{
+  "OldId": "nlv3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    }
+  ]
+}

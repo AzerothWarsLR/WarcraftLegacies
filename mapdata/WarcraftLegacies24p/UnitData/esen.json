@@ -1,0 +1,123 @@
+{
+  "OldId": "esen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S003,ANwk,Aens,Aegr,Aesn,Amgl,Aien,Ault"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Wood"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 22
+    },
+    {
+      "Id": "uhpm",
+      "Value": 870
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Roen,Rguv,R03J,Rhme,Rhar,Resc,Reuv,Remg,Repm,R002"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mounted Sentinel warrior.|n|cfff5962dAbilities:|r Ensnare, Evasion, Elune\u0027s Grace|n|cfff5962dCan Learn:|r Sentinel, Moon Glaive|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

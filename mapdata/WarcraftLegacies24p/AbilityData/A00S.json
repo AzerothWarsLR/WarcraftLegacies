@@ -1,0 +1,61 @@
+{
+  "OldId": "ACc2",
+  "NewId": "A00S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ucs3",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green Conjurer - Reef Elemental. Orange - Jaina\u0027s Elemental)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Crushing Wave (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 60 damage to each enemy land unit in a line, up to 200 max damage."
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "OldId": "AOsw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 12
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n073"
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n073"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n073"
+    },
+    {
+      "Level": 4,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n073"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027thun)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Tentacles"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Spawn Tentacles |cffffcc00W|r - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons an immobile Tentacles ward to attack the C\u0027thun\u0027s enemies. The ward is immune to magic. |nLasts \u003CAOsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - 6 Tentacles. |n|cffffcc00Level 2|r - 8 Tentacles. |n|cffffcc00Level 3|r - 10 tentacles.  |n|cffffcc00Level 4|r - 12 tentacles."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Tentacles |cffffcc00W|r - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Tentacles |cffffcc00W|r - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Tentacles |cffffcc00W|r - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Tentacles |cffffcc00W|r - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons multiple immobile Tentacles to attack the C\u0027thun enemies. |nLasts \u003CAOsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons multiple immobile Tentacles to attack the C\u0027thun enemies. |nLasts \u003CAOsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons multiple immobile Tentacles to attack the C\u0027thun enemies. |nLasts \u003CAOsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

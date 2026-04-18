@@ -1,0 +1,67 @@
+{
+  "OldId": "ACbh",
+  "NewId": "A0TJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbh3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHeadshot.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Orange Kul tiras Marine)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Headshot"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Headshot"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CA0TJ,DataA1\u003E% chance that an attack will stun the target for 0.5 seconds."
+    }
+  ]
+}

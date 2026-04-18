@@ -1,0 +1,145 @@
+{
+  "OldId": "nmdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0VI"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 40
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.35
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 80
+    },
+    {
+      "Id": "ufoo",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "uhos",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2550
+    },
+    {
+      "Id": "ulum",
+      "Value": 10
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 150
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 380
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 380
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o050"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(draenei)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Brown Elekk"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\WildElekkBrown.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElephant.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Brown Elekk"
+    }
+  ]
+}

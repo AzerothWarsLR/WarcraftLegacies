@@ -1,0 +1,16 @@
+{
+  "Left": -1344,
+  "Bottom": 8736,
+  "Right": -768,
+  "Top": 9216,
+  "Name": "Sargeras Entrance",
+  "CreationNumber": 19,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

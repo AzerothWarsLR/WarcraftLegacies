@@ -1,0 +1,24 @@
+{
+  "OldId": "ANta",
+  "NewId": "A0DJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Royal Guard)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

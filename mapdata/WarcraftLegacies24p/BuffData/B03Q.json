@@ -1,0 +1,39 @@
+{
+  "OldId": "Beng",
+  "NewId": "B03Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCommand.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Impale"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Impaled"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Outrider)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+    }
+  ]
+}

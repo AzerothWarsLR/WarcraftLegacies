@@ -1,0 +1,69 @@
+{
+  "OldId": "nbzd",
+  "NewId": "n0AB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A00I,AInv,Alit,ACsk"
+    },
+    {
+      "Id": "ubba",
+      "Value": 85
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "umpi",
+      "Value": 500
+    },
+    {
+      "Id": "umpm",
+      "Value": 500
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Occulus"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    }
+  ]
+}

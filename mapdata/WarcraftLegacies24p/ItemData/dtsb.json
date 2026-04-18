@@ -1,0 +1,43 @@
+{
+  "OldId": "dtsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0AD,AImv,AIsr"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nGrants the ability to portal to your home town. Also reduces spell damage by \u003CAIsr,DataB1,%\u003E% and increases the Hero\u0027s mana by \u003CAImv,DataA1\u003E while equipped.|n|cffffcc00Lore|r|n|cffffdeadDrek\u0027Thar\u0027s old spellbook is filled with pages stolen from Kirin Tor mages that were slain in battle.|r"
+    }
+  ]
+}

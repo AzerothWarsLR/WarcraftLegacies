@@ -1,0 +1,116 @@
+{
+  "OldId": "ORfk",
+  "NewId": "D02Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Smog"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Water_Polluted.mdl"
+    },
+    {
+      "Id": "duch",
+      "Value": 1
+    },
+    {
+      "Id": "dcat",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "danf",
+      "Value": 1
+    },
+    {
+      "Variation": 4,
+      "Id": "dvb1",
+      "Value": 15
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 40
+    },
+    {
+      "Id": "dvar",
+      "Value": 3
+    },
+    {
+      "Variation": 5,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 5,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 50
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 40
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 30
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 75
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

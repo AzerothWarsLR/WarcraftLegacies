@@ -1,0 +1,264 @@
+{
+  "OldId": "nogn",
+  "NewId": "n060",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aion,A0RT,A0NW,A0YB"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0RT"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubdi",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.15
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 21
+    },
+    {
+      "Id": "ugor",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 520
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 600
+    },
+    {
+      "Id": "upri",
+      "Value": 9
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "urtm",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 185
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R07J,Rguv,R02A,Rhme"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArachnathid.blp"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Boulder Toss,- Boulder Toss|n- Dispel Magic,- Boulder Toss|n- Dispel Magic|n - Stone Armor"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(C\u0027thun Silithid Tunneler)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\Archnathid\\Archnathid.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Silithid Tunneler"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train - Silithid Tunneler"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Siege spellcaster. Using the power of the Earth, this caster supports their faction with underground siege attacks and Defensive magic. |n|cffffcc00Casts:|r Boulder Toss, Dispel Magic, Stone Armor. |n|n|cffd5d500Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Arachnathid"
+    },
+    {
+      "Id": "uclg",
+      "Value": 255
+    },
+    {
+      "Id": "uclb",
+      "Value": 55
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

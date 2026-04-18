@@ -1,0 +1,34 @@
+{
+  "OldId": "BNdh",
+  "NewId": "B03F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNIncinerate.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Fire Attacks"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was hit by a Fire Attack; it has reduced movement speed and a chance to miss on attacks."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Fire attacks"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIfb\\AIfbTarget.mdl"
+    }
+  ]
+}

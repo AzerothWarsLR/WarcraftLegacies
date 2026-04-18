@@ -1,0 +1,26 @@
+{
+  "OldId": "Roch",
+  "NewId": "R079",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "The Lich King tempts Jaina to join him"
+    }
+  ]
+}

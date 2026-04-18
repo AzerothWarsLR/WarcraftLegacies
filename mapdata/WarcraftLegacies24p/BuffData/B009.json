@@ -1,0 +1,29 @@
+{
+  "OldId": "AEsd",
+  "NewId": "B009",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "FrostFall"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Target)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Blizzard\\BlizzardTarget.mdl"
+    }
+  ]
+}

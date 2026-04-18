@@ -1,0 +1,126 @@
+{
+  "OldId": "ndrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACls,AChv"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Ahea"
+    },
+    {
+      "Id": "ubld",
+      "Value": 8
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 24
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00K"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Draenei Seer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy ranged unit. Can cast Slow Lightning shield and Healing Wave. |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

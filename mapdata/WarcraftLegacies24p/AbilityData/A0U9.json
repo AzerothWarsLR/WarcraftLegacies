@@ -1,0 +1,20 @@
+{
+  "OldId": "AItx",
+  "NewId": "A0U9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 80
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(\u002B80)"
+    }
+  ]
+}

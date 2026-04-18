@@ -1,0 +1,19 @@
+{
+  "OldId": "Bmlc",
+  "NewId": "B074",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Thunder Grip (Caster)"
+    }
+  ]
+}

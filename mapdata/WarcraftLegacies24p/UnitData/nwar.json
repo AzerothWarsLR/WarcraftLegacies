@@ -1,0 +1,17 @@
+{
+  "OldId": "nwar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "TWN3"
+    }
+  ]
+}

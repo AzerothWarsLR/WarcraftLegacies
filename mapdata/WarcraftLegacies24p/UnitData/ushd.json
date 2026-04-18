@@ -1,0 +1,83 @@
+{
+  "OldId": "ushd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 3
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Sacrifice"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Kills the Acolyte to raise a Shade from its corpse.|n|cfff5962dAbilities:|R Permanent Invisibility, True Sight"
+    }
+  ]
+}

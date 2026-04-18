@@ -1,0 +1,198 @@
+{
+  "OldId": "hcas",
+  "NewId": "h001",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0VH,A0CY,A0D4,A0K5"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 106
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "umpi",
+      "Value": 350
+    },
+    {
+      "Id": "umpm",
+      "Value": 350
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R08K"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h019,h01L,hpea"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "instant"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Ironforge)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenForge.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Great Forge"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "OldId": "ward",
+  "NewId": "I008",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0QT"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "Amls"
+    },
+    {
+      "Id": "igol",
+      "Value": 80
+    },
+    {
+      "Id": "iper",
+      "Value": 1
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iuse",
+      "Value": 3
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isst",
+      "Value": 720
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEbonBladePeasant.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Summons Cultist"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Summon Cultist"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Summon Cultist"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Summons Cultist"
+    }
+  ]
+}

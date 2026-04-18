@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R04T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Burning Legion exists"
+    }
+  ]
+}

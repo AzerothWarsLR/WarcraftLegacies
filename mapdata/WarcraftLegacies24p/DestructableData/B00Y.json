@@ -1,0 +1,66 @@
+{
+  "OldId": "ATwf",
+  "NewId": "B00Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bcat",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "decoration"
+    },
+    {
+      "Id": "bvcb",
+      "Value": 150
+    },
+    {
+      "Id": "bvcg",
+      "Value": 0
+    },
+    {
+      "Id": "bvcr",
+      "Value": 150
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIta\\CrystalBallCaster.mdl"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Netherstorm Dome"
+    },
+    {
+      "Id": "bgsc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "bsel",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

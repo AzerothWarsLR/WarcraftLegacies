@@ -1,0 +1,158 @@
+{
+  "OldId": "Hvsh",
+  "NewId": "H08U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0ZN,A0PD,A0ZOAEsf,AEsf,Aamk"
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "utco",
+      "Value": 9
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "uint",
+      "Value": 31
+    },
+    {
+      "Id": "uagi",
+      "Value": 31
+    },
+    {
+      "Id": "ustr",
+      "Value": 21
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0V8,AInv"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R08V"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Empress of Nazjatar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Nzoth)"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Queen Azshara"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "HeroNagaEnchantress.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Azshara"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at melee combat and healing. |n|cfff5962dCan learn:|R Water Wave, Mirror Image, Tidal Aura, Starfall|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\BeamMissile.mdl"
+    }
+  ]
+}

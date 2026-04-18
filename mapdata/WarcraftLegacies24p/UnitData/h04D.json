@@ -1,0 +1,64 @@
+{
+  "OldId": "hphx",
+  "NewId": "h04D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0IM,Aphx,ACmi,ACrk,Apxf"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 80
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00T,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uclb",
+      "Value": 180
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Anasterian-Level 2)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 180
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Al\u0027ar"
+    },
+    {
+      "Id": "uclr",
+      "Value": 180
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Loyal phoenix of the Sunstrider Dynasty.|n|cfff5962dAbilities:|R Sun Ray, Spell Immunity, Resistant Skin|n|n|cffffcc00Attacks land and air units.|R\r\n\r\n"
+    }
+  ]
+}

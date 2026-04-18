@@ -1,0 +1,144 @@
+{
+  "OldId": "etrp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aeat,Aro2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 54
+    },
+    {
+      "Id": "ua2b",
+      "Value": 54
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ulum",
+      "Value": 50
+    },
+    {
+      "Id": "ulur",
+      "Value": 70
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "umvs",
+      "Value": 100
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "e000"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,R018,R002,Renb,Rhme,Rgfo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "e010"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Ancient Protector"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Defensive Ancient of the Kaldorei forests who hurls boulders at his foes|n|cfff5962dUpgraded Into:|R Improved Ancient Protector |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

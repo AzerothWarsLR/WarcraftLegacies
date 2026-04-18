@@ -1,0 +1,29 @@
+{
+  "OldId": "Bbof",
+  "NewId": "B02U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInfernalShower.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Emerald Flames"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is caught in emerald fire; it will take damage over time."
+    }
+  ]
+}

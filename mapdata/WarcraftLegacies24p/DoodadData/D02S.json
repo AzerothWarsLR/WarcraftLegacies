@@ -1,0 +1,24 @@
+{
+  "OldId": "YOss",
+  "NewId": "D02S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_DarkPortal.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "DARK PORTAL"
+    }
+  ]
+}

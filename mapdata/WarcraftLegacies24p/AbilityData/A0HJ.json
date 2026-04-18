@@ -1,0 +1,45 @@
+{
+  "OldId": "Amgl",
+  "NewId": "A0HJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASScout.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - Towers)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bounce Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Bounce Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives the Runestone the ability to strike additional units with its bouncing attacks."
+    }
+  ]
+}

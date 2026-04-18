@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B053",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Command Point 30 gold per minute"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is a 30 gold per minute CP. It increases your income by 30 gold."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Command Point 30 gold per minute"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "OldId": "ACbl",
+  "NewId": "A08E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Blo1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Blo2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Katrana - Trigger)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Searing Weapons"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Searing Weapons"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases a target friendly unit\u0027s attack rate by 20% and movement speed by 20% for \u003CACbl,Dur1\u003E seconds."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

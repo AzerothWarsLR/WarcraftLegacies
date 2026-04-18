@@ -1,0 +1,57 @@
+{
+  "OldId": "nrvi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACf2,ACvp"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "ACf2"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 30
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "umpi",
+      "Value": 250
+    },
+    {
+      "Id": "umpm",
+      "Value": 250
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,R008,Rhar"
+    }
+  ]
+}

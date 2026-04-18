@@ -1,0 +1,170 @@
+{
+  "OldId": "eaom",
+  "NewId": "e010",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aeat,Aro1"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 60
+    },
+    {
+      "Id": "ua2b",
+      "Value": 60
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1150
+    },
+    {
+      "Id": "ulum",
+      "Value": 75
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua2r",
+      "Value": 150
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R02T,R01H,R026,R064,Rews,Reuv,Rhme,Rhar"
+    },
+    {
+      "Id": "umvs",
+      "Value": 95
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,Renb,R018,Rhme,R002,Rgfo"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAncient of Lore (Spring).blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowAncientProtector"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\AncientOfCreation.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ancient of Creation"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Ancient of Creation"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RWeapon Upgrades, Armor Upgrades, Ultravision, Wellspring, Malorne\u0027s Infusion"
+    }
+  ]
+}

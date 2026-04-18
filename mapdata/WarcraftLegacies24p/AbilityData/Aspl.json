@@ -1,0 +1,43 @@
+{
+  "OldId": "Aspl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spl1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spl2",
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Spirit Walker)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "BUav",
+  "NewId": "B04Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNGenericSpellImmunity.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Forced Atonment"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Forced Atonment; part of the damage the unit deals"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Feedback\\ArcaneTowerAttack.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

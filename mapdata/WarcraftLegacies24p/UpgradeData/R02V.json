@@ -1,0 +1,91 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R02V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "h03K"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 250
+    },
+    {
+      "Id": "gtib",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Arathor-T0)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Champion\u0027s Hall"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Construct|cffff8040 Champion\u0027s Hall|r"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "- Enables |cffcece00Devotion Aura |ron Stormwind Keep, Lakeshire, Darkshire, Netherguard Keep, Sentinel Tower, and Honor Hold which grants an additional 2 armor to units within 1200 range.|n|n- Contains research which improves the |cffcece00Bladesman|r, |cffcece00Outrider|r, |cffcece00Marshal|r, and |cffcece00Brigadier |runits.|n|n- Further research will unlock the |cffcece00Stormwind Knight|r or |cffcece00Marksman |runit, replacing Outriders or Spearmen.|n"
+    }
+  ]
+}

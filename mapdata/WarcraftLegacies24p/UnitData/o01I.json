@@ -1,0 +1,112 @@
+{
+  "OldId": "oalt",
+  "NewId": "o01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul"
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "urev",
+      "Value": 0
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R062,R063"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Illidan Path Selector"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\other\\CircleOfPower\\CircleOfPower.mdl"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "OldId": "ACls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Neutral Hostile. Brown - Ysondre, Furbolg Shaman, Illidari seer)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

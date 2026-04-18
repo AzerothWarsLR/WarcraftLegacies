@@ -1,0 +1,38 @@
+{
+  "OldId": "Aspt",
+  "NewId": "A0KI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "ucs1"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Anubarack Beetles)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Beetles"
+    }
+  ]
+}

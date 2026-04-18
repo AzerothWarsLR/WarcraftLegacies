@@ -1,0 +1,16 @@
+{
+  "Left": 9696,
+  "Bottom": 5152,
+  "Right": 9984,
+  "Top": 5440,
+  "Name": "DalaranExit2",
+  "CreationNumber": 139,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

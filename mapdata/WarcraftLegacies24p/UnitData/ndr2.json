@@ -1,0 +1,36 @@
+{
+  "OldId": "ndr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uhpm",
+      "Value": 690
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rusl,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Red- Death Knight)"
+    }
+  ]
+}

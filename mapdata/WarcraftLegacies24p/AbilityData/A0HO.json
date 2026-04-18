@@ -1,0 +1,128 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A0HO",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B038"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aord",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "ebsh"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfBattleCruiser.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - Auberdine Summon)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Auberdine Navy"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfBattleCruiser.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Auberdine Navy"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 1 Night Elf Battleships which last 2 minutes.|n|n|cffe8e8004 minute cooldown.|r"
+    }
+  ]
+}

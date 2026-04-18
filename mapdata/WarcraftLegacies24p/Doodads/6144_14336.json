@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1160785986,
+    "Variation": 3,
+    "Position": {
+      "X": 6208,
+      "Y": 14464,
+      "Z": 225.25
+    },
+    "Rotation": 1.5707964,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1160785986,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 35322
+  },
+  {
+    "TypeId": 1160785986,
+    "Variation": 6,
+    "Position": {
+      "X": 6080,
+      "Y": 14336,
+      "Z": 132.25
+    },
+    "Rotation": 1.5707964,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1160785986,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 35321
+  },
+  {
+    "TypeId": 1752387674,
+    "Variation": 2,
+    "Position": {
+      "X": 6220.34,
+      "Y": 14097.394,
+      "Z": 241.80641
+    },
+    "Rotation": 6.2482786,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 0.95
+    },
+    "SkinId": 1752387674,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 35175
+  },
+  {
+    "TypeId": 2003193946,
+    "Variation": 2,
+    "Position": {
+      "X": 6389.78,
+      "Y": 14204.421,
+      "Z": 245.0437
+    },
+    "Rotation": 2.9670596,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 2003193946,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 35263
+  },
+  {
+    "TypeId": 1953256524,
+    "Variation": 7,
+    "Position": {
+      "X": 6144,
+      "Y": 14080,
+      "Z": 247.5
+    },
+    "Rotation": 0,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1953256524,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 4933
+  }
+]

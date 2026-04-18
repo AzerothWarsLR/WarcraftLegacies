@@ -1,0 +1,24 @@
+{
+  "OldId": "XHfs",
+  "NewId": "X00I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Desert Storm (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "TornadoLoop"
+    }
+  ]
+}

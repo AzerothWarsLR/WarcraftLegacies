@@ -1,0 +1,30 @@
+{
+  "OldId": "whwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 30
+    },
+    {
+      "Id": "ista",
+      "Value": 9
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "OldId": "Nalc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AHbh,A0RJ,Aamk,ANcr,A0KN"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07E"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Marin Noggenfogger"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Baron of Gadgetzan"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(goblin)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Bash, Chemical Rage|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Noggenfogger"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Noggenfogger"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Noggenfogger"
+    }
+  ]
+}

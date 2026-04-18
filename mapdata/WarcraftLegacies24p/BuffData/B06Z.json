@@ -1,0 +1,34 @@
+{
+  "OldId": "Binf",
+  "NewId": "B06Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFire.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Demon Heart"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Demon Heart; its hp regen and attack damage are increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

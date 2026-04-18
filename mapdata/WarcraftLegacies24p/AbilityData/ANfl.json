@@ -1,0 +1,170 @@
+{
+  "OldId": "ANfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 140
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 6
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 775
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 775
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 775
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 775
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Thrall. Green - Vashj)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - \u003CANfl,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CANfl,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CANfl,DataA3\u003E damage per unit. |n|cffffcc00Level 4|r - \u003CANfl,DataA4\u003E damage per unit."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 3 enemy units for 125 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 4 enemy units for 200 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 5 enemy units for 275 damage."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 6 enemy units for 350 damage."
+    }
+  ]
+}

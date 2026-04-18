@@ -1,0 +1,19 @@
+{
+  "OldId": "BUau",
+  "NewId": "B05H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Graveyard\u0027s Blessing"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Graveyard\u0027s Blessing; it has 5% increased movement speed and it\u0027s life regeneration is increased by 0.5."
+    }
+  ]
+}

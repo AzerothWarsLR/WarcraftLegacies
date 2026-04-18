@@ -1,0 +1,111 @@
+{
+  "OldId": "AUdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Udp1",
+      "Type": 2,
+      "Value": 1.33
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Udp2",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Udp2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Udp2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Udp2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Lich Kel\u0027Thuzad / Kel\u0027Thuzad(Necro)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Sacrifices a target friendly Undead unit to convert its hit points into mana and health for the Lich. |n|n|cffffcc00Level 1|r - 33% of hit points to mana and 25% hit points to health. |n|cffffcc00Level 2|r - 66% of hit points to mana and 50% hit points to health. |n|cffffcc00Level 3|r - 100% of hit points to mana and 75% hit points to health. |n|cffffcc00Level 4|r - 133% of hit points to mana and 100% hit points to health."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dark Ritual - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sacrifices a target friendly Undead unit to convert 33% of its hit points into mana for the Lich and 25% of its hit points into health for the Lich."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sacrifices a target friendly Undead unit to convert 66% of its hit points into mana for the Lich and 50% of its hit points into health for the Lich."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sacrifices a target friendly Undead unit to convert 100% of its hit points into mana for the Lich and 75% of its hit points into health for the Lich."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sacrifices a target friendly Undead unit to convert 133% of its hit points into mana for the Lich and 100% of its hit points into health for the Lich."
+    }
+  ]
+}

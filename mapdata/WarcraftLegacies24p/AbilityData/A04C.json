@@ -1,0 +1,32 @@
+{
+  "OldId": "AIpl",
+  "NewId": "A04C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "irl2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "irl3",
+      "Value": 3
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfBuild.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Seed Growth"
+    }
+  ]
+}

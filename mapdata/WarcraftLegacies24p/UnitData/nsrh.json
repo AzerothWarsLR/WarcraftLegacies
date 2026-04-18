@@ -1,0 +1,17 @@
+{
+  "OldId": "nsrh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    }
+  ]
+}

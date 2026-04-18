@@ -1,0 +1,90 @@
+{
+  "OldId": "nsty",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aiun,A020,Afbk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "uhpm",
+      "Value": 740
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Vassal - Xavius)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Satyr Warrior"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Satyr Warrior"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light melee unit, has the Evasion and Feedback abilities. |n|n|cffffcc00Attacks land units.|r "
+    }
+  ]
+}

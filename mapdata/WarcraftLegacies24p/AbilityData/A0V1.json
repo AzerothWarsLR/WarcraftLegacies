@@ -1,0 +1,94 @@
+{
+  "OldId": "AHhb",
+  "NewId": "A0V1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,ground,invulnerable,nonancient,notself,organic,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hhb1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNReplenish.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(thornspeaker)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Healing Surge"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "|cff7777aaHoly Light|r |cff7777aa[E]|r"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\RitualDagger\\RitualDaggerTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Healing Surge"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Heals a friendly living unit for \u003CA0H0,DataA1\u003E."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "ohwd",
+  "NewId": "o00U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A08I"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Level 3)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Healing Totem"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

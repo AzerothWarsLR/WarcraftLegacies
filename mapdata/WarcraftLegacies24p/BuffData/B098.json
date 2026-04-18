@@ -1,0 +1,29 @@
+{
+  "OldId": "Bhwd",
+  "NewId": "B098",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Moon Beam"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This ward provides life mana for nearby friendly units."
+    }
+  ]
+}

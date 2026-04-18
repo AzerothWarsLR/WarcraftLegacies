@@ -1,0 +1,16 @@
+{
+  "Left": -19840,
+  "Bottom": -12896,
+  "Right": -19072,
+  "Top": -12000,
+  "Name": "KaliRock7",
+  "CreationNumber": 502,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

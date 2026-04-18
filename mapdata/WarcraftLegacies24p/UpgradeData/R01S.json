@@ -1,0 +1,64 @@
+{
+  "OldId": "Rhri",
+  "NewId": "R01S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "glmb",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h03T"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImpalingBolt.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Precision Shots"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Precision Shots"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Enables the Precision Shots ability for your Rangers and Farstriders, which provides a \u003CA02H,DataA1\u003E% chance to do \u003CA02H,DataB1\u003E times damage on an attack."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "BNab",
+  "NewId": "B057",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImprovedStrengthOfTheWild.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mangle"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by Mangle. It suffers periodic damage and has reduced movement speed."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mangle"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+    }
+  ]
+}

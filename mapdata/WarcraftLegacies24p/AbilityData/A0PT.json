@@ -1,0 +1,138 @@
+{
+  "OldId": "ANsy",
+  "NewId": "A0PT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNcg,BNcg"
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "ncg3"
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "ncg2"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n02C"
+    },
+    {
+      "Level": 4,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n04M"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(upgrade 1)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn (|cffffcc00Q|r) Pocket Factory - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does 30 damage.|n|cffffcc00Level 2|r - Explosion does 60 damage.|n|cffffcc00Level 3|r - Explosion does 80 damage. |n|cffffcc00Level 4|r - Explosion does 100 damage.|nFactory lasts 40 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Pocket Factory - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 450 hit points, deal 22 - 24 damage, and explode upon death, causing up to 45 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 650 hit points, deal 27 - 29 damage, and explode upon death, causing up to 90 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 850 hit points, deal 32 - 34 damage, and explode upon death, causing up to 135 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 1050 hit points, deal 37 - 39 damage, and explode upon death, causing up to 180 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+    }
+  ]
+}

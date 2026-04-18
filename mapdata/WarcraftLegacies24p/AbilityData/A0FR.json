@@ -1,0 +1,99 @@
+{
+  "OldId": "Ambt",
+  "NewId": "A0FR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Mbt1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Mbt2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "mechanical,notself"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Mbt4",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Mbt5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(main supply)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Replenish mana (fuel) of a target friendly mechanical unit. |n|nRestores 1 mana to the unit for every point of mana spent."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Transfer Fuel"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Transfer Fuel"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\MoonWell\\CorruptedMoonWellTarget.mdl"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    }
+  ]
+}

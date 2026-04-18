@@ -1,0 +1,55 @@
+{
+  "OldId": "ANfs",
+  "NewId": "A0AG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(deathwing)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

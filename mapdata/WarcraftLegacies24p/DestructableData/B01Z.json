@@ -1,0 +1,43 @@
+{
+  "OldId": "LTbs",
+  "NewId": "B01Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "buildings\\other\\PigFarm\\PigFarm.mdl"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Building - Pig Farm"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "BuildingShadowSmall"
+    }
+  ]
+}

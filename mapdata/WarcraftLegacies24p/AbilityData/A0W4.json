@@ -1,0 +1,304 @@
+{
+  "OldId": "Absk",
+  "NewId": "A0W4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B071"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B071"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B071"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B071"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 70
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTimberWolf.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\BattleRoar\\RoarCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stormwind - Varian)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTimberWolf.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Lo\u0027gosh\u0027s Fury [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Spirit of Goldrinn comes to accompany Varian, increasing his attack rate and movement speed.|n|n|cffffcc00Level 1|r - \u003CA0W4,DataB1,%\u003E% attack rate increase, \u003CA0W4,DataA1,%\u003E% movement speed increase, lasts \u003CA0W4,Dur1\u003E seconds.|n|cffffcc00Level 2|r - \u003CA0W4,DataB2,%\u003E% attack rate increase, \u003CA0W4,DataA2,%\u003E% movement speed increase, lasts \u003CA0W4,Dur2\u003E seconds.|n|cffffcc00Level 3|r - \u003CA0W4,DataB3,%\u003E% attack rate increase, \u003CA0W4,DataA3,%\u003E% movement speed increase, lasts \u003CA0W4,Dur3\u003E seconds. |n|cffffcc00Level 4|r - \u003CA0W4,DataB4,%\u003E% attack rate increase, \u003CA0W4,DataA4,%\u003E% movement speed increase, lasts \u003CA0W4,Dur4\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spirit of Goldrinn comes to accompany Varian, increasing his attack rate by \u003CA0W4,DataB1,%\u003E% and movement speed by \u003CA0W4,DataA1,%\u003E% for \u003CA0W4,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spirit of Goldrinn comes to accompany Varian, increasing his attack rate by \u003CA0W4,DataB2,%\u003E% and movement speed by \u003CA0W4,DataA2,%\u003E% for \u003CA0W4,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spirit of Goldrinn comes to accompany Varian, increasing his attack rate by \u003CA0W4,DataB3,%\u003E% and movement speed by \u003CA0W4,DataA3,%\u003E% for \u003CA0W4,Dur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spirit of Goldrinn comes to accompany Varian, increasing his attack rate by \u003CA0W4,DataB4,%\u003E% and movement speed by \u003CA0W4,DataA4,%\u003E% for \u003CA0W4,Dur4\u003E seconds."
+    }
+  ]
+}

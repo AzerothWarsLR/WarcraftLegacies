@@ -1,0 +1,33 @@
+{
+  "OldId": "ZPfw",
+  "NewId": "D048",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Structures\\BridgeLog\\BridgeLog.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Wooden Bridge Custom"
+    },
+    {
+      "Id": "dvar",
+      "Value": 1
+    }
+  ]
+}

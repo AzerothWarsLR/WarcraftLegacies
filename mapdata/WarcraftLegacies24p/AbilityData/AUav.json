@@ -1,0 +1,91 @@
+{
+  "OldId": "AUav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blue - Tichondrius)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain hit points when they hit enemy units. |n|n|cffffcc00Level 1|r - Gains \u003CAUav,DataA1,%\u003E% of attack damage. |n|cffffcc00Level 2|r - Gains \u003CAUav,DataA2,%\u003E% of attack damage. |n|cffffcc00Level 3|r - Gains \u003CAUav,DataA3,%\u003E% of attack damage. |n|cffffcc00Level 4|r - Gains \u003CAUav,DataA4,%\u003E% of attack damage."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Vampiric Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Nearby friendly melee units gain \u003CAUav,DataA4,%\u003E% of their attack damage when they hit enemy units."
+    }
+  ]
+}

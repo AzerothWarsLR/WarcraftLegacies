@@ -1,0 +1,182 @@
+{
+  "OldId": "noga",
+  "NewId": "n03R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0XM,A0GK,A0XP,A09Z,Aion,ACsk,A0AJ,A0J6,ANta"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0EH"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.45
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 37
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 45
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1150
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "upri",
+      "Value": 14
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02Q"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Robs,Ropg,Rhar,Rhme,Ropm,Rguv"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosWarlord.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong-Elite)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\demon\\ChaosWarlord\\ChaosWarlord.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warsong Blood-Rider"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Warsong Blood-Rider"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Bloodstained raiders of the corrupted Warsong.|n|cfff5962dAbilities:|R Taunt, Shockwave, Tenacity, Resistant Skin, Heavy Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Grunt"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "OldId": "ospm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Acpf,A0H0,Adcn,Aast,Aion,ACrk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 11
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ufle",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 21
+    },
+    {
+      "Id": "ugor",
+      "Value": 19
+    },
+    {
+      "Id": "uhpm",
+      "Value": 425
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "upri",
+      "Value": 12
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R023,Rowt,Ropm,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Frostwolf-Ethereal)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Tauren shaman of the Bloodhoof Tribe in ethereal form.|n|cfff5962dAbilities:|R Ethereal Form, Healing Surge|n|cfff5962dCan Learn:|R Disenchant, Ancestral Spirit|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Ethereal Form|n- Healing Surge,- Ethereal Form|n- Healing Surge|n- Disenchant,- Ethereal Form|n- Healing Surge|n- Disenchant|n- Ancestral Spirit"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Broa",
+  "NewId": "B03K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Battleshout"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Battleshout; it has increased armour and health regenaration."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Battleshout"
+    }
+  ]
+}

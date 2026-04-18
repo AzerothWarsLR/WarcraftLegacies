@@ -1,0 +1,13 @@
+{
+  "OldId": "Aret",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "war3mapImported\\HolyTornado.mdx"
+    }
+  ]
+}

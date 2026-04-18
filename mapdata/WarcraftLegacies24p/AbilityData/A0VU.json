@@ -1,0 +1,225 @@
+{
+  "OldId": "AHtb",
+  "NewId": "A0VU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 375
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 1900
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Throws a gobule of magma at a target enemy unit, dealing substantial damage and stunning it.|n|n|cffffcc00Level 1|r - Deals \u003CA0VU,DataA1\u003E damage, stuns heroes for \u003CA0VU,HeroDur1\u003E second and normal units for \u003CA0VU,Dur1\u003E second.|n|cffffcc00Level 2|r - Deals \u003CA0VU,DataA2\u003E damage, stuns heroes for \u003CA0VU,HeroDur2\u003E seconds and normal units for \u003CA0VU,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Deals \u003CA0VU,DataA3\u003E damage, stuns heroes for \u003CA0VU,HeroDur3\u003E seconds and normal units for \u003CA0VU,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Deals \u003CA0VU,DataA4\u003E damage, stuns heroes for \u003CA0VU,HeroDur4\u003E seconds and normal units for \u003CA0VU,Dur4\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA1\u003E damage, stuns heroes for \u003CA0VU,HeroDur1\u003E seconds and normal units for \u003CA0VU,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA2\u003E damage, stuns heroes for \u003CA0VU,HeroDur2\u003E seconds and normal units for \u003CA0VU,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA3\u003E damage, stuns heroes for \u003CA0VU,HeroDur3\u003E seconds and normal units for \u003CA0VU,Dur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA4\u003E damage, stuns heroes for \u003CA0VU,HeroDur4\u003E seconds and normal units for \u003CA0VU,Dur4\u003E seconds."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Magma Blast"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Magma Blast - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnaB1.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnaB1.blp"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    }
+  ]
+}

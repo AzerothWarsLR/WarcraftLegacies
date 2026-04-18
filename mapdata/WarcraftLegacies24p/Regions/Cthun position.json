@@ -1,0 +1,16 @@
+{
+  "Left": -17504,
+  "Bottom": -18240,
+  "Right": -17472,
+  "Top": -18208,
+  "Name": "Cthun position",
+  "CreationNumber": 225,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

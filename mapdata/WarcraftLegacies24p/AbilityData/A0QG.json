@@ -1,0 +1,109 @@
+{
+  "OldId": "AOww",
+  "NewId": "A0QG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oww1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Oww1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Warsong - Blademaster)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Enchanced Bladestorm"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 60 damage per second to nearby enemy land units. |nLasts 3 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 75 damage per second to nearby enemy land units. |nLasts 3 seconds."
+    }
+  ]
+}

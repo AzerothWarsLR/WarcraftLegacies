@@ -1,0 +1,21 @@
+{
+  "OldId": "nfot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 50
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,enemies,ground,hero,structure"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "OldId": "AImr",
+  "NewId": "A033",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Impg",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Impg",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Impg",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Impg",
+      "Value": 200
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,friend,ground,hero,nonhero"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,friend,ground,hero,nonhero"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,friend,ground,hero,nonhero"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,friend,ground,hero,nonhero"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Lich Kel\u0027Thuzad / Kel\u0027Thuzad(Necro)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Wise Council"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScrollOfProtection.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Wise Council - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero utters mystical words, increasing the magical powers of nearby allies.|n|n|cffffcc00Level 1|r - Adds 50 mana to nearby friendly units. |n|cffffcc00Level 2|r - Adds 100 mana to nearby friendly units. |n|cffffcc00Level 3|r - Adds 150 mana to nearby friendly units. |n|cffffcc00Level 4|r - Adds 200 mana to nearby friendly units."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wise Council - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero utters mystical words, increasing the magical powers of nearby allies. Restores 50 mana to all nearby allies."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero utters mystical words, increasing the magical powers of nearby allies. Restores 100 mana to all nearby allies."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero utters mystical words, increasing the magical powers of nearby allies. Restores 150 mana to all nearby allies."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero utters mystical words, increasing the magical powers of nearby allies. Restores 200 mana to all nearby allies."
+    }
+  ]
+}

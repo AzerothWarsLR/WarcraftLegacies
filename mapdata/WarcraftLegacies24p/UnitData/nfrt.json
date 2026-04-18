@@ -1,0 +1,52 @@
+{
+  "OldId": "nfrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aall,Apit"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "umki",
+      "Type": 3,
+      "Value": "shea,sman,spro,sreg,shas,hslv,hlst,mnst,rej5,plcl,pnvl,stwp"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Aneu"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

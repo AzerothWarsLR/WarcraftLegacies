@@ -1,0 +1,97 @@
+{
+  "OldId": "AHfa",
+  "NewId": "A107",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hfa1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFirstStrike.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Universal)"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "First Strike"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "First Strike"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Bladesman has 30 bonus damage on his first attack. Cooldown 30 seconds."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFirstStrike.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    }
+  ]
+}

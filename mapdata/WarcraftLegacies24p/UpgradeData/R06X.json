@@ -1,0 +1,106 @@
+{
+  "OldId": "Rost",
+  "NewId": "R06X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "o03B"
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(twilight)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Magi Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Magi Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases magi mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rain of Fire."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases magi mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Bloodlust."
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Magi Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Magi Master Training"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ]
+}

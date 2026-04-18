@@ -1,0 +1,16 @@
+{
+  "Left": -16768,
+  "Bottom": 9856,
+  "Right": -16704,
+  "Top": 9920,
+  "Name": "Sent3",
+  "CreationNumber": 144,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

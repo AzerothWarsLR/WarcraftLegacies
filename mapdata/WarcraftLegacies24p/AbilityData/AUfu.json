@@ -1,0 +1,121 @@
+{
+  "OldId": "AUfu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 60
+    },
+    {
+      "Level": 5,
+      "Id": "amcs",
+      "Value": 70
+    },
+    {
+      "Level": 6,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufa2",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 5,
+      "Pointer": 2,
+      "Id": "Ufa2",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 6,
+      "Pointer": 2,
+      "Id": "Ufa2",
+      "Type": 2,
+      "Value": 13
+    },
+    {
+      "Id": "alev",
+      "Value": 6
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds armor and slows melee units that attack it. |n|n|cffffcc00Level 1|r - Adds \u003CAUfu,DataB1\u003E armor. |n|cffffcc00Level 2|r - Adds \u003CAUfu,DataB2\u003E armor. |n|cffffcc00Level 3|r - Adds \u003CAUfu,DataB3\u003E armor.|n|cffffcc00Level 4|r - Adds \u003CAUfu,DataB4\u003E armor.|n|cffffcc00Level 5|r - Adds \u003CAUfu,DataB5\u003E armor.|n|cffffcc00Level 6|r - Adds \u003CAUfu,DataB6\u003E armor."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Armor - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Armor - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Armor - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB2\u003E armor and slows melee units that attack it for \u003CAUfu,Dur2\u003E seconds. |nLasts \u003CAUfu,DataA2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB3\u003E armor and slows melee units that attack it for \u003CAUfu,Dur3\u003E seconds. |nLasts \u003CAUfu,DataA3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB4\u003E armor and slows melee units that attack it for \u003CAUfu,Dur4\u003E seconds. |nLasts \u003CAUfu,DataA4\u003E seconds."
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB5\u003E armor and slows melee units that attack it for \u003CAUfu,Dur5\u003E seconds. |nLasts \u003CAUfu,DataA5\u003E seconds."
+    },
+    {
+      "Level": 6,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB6\u003E armor and slows melee units that attack it for \u003CAUfu,Dur6\u003E seconds. |nLasts \u003CAUfu,DataA6\u003E seconds."
+    }
+  ]
+}

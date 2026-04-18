@@ -1,0 +1,99 @@
+{
+  "OldId": "Arej",
+  "NewId": "A0EZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01X"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rej1",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Rej2",
+      "Type": 2,
+      "Value": -50
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R028"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,neutral,organic,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMind Crush.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Legion-Sister of Succulence)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Mind Flay"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Flay"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Inflicts a curse upon the target unit, causing it to lose 10 hit points and 50 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."
+    }
+  ]
+}

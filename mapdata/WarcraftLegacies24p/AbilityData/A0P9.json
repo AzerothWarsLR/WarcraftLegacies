@@ -1,0 +1,97 @@
+{
+  "OldId": "AUds",
+  "NewId": "A0P9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uds1",
+      "Value": 24
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "amsp",
+      "Value": 65536
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,player,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlareOff.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dalaran) (Arcane Teleporter)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PriestMissile\\PriestMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Arcane Recall"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Recall"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 24 friendly units from a target area to Dalaran. 240 seconds cooldown."
+    }
+  ]
+}

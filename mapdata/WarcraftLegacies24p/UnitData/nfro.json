@@ -1,0 +1,47 @@
+{
+  "OldId": "nfro",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Patrons Knight"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\Knight\\Knight.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Knight"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Tier 2 Patron)"
+    }
+  ]
+}

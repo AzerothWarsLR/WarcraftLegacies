@@ -1,0 +1,30 @@
+{
+  "OldId": "Afrb",
+  "NewId": "A0EC",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bspo,Bssd"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green Drake)"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Green Drake Breath"
+    }
+  ]
+}

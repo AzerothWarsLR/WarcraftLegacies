@@ -1,0 +1,239 @@
+{
+  "OldId": "AEme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Q"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Q"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Q"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "O00Y"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "O00Y"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "O00Y"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "O027"
+    },
+    {
+      "Level": 2,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "O027"
+    },
+    {
+      "Level": 3,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "O027"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationREDTarget.mdl,Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Zuluhed)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ascendance"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Ascendance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 150/250/300. |n|nHas Incinerate, Immolation, Flame Strike, Meteor, and Chain Explosion.|n|n|cffcece00Level 1|r - Lasts 30 seconds|n|cffcece00Level 2|r - Lasts 45 seconds|n|cffcece00Level 3|r - Lasts 60 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 150. |n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 250. |n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 45 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities. Gives him 1000 bonus hp and 15 hp regen per second. Also heals allies in a 600 aoe around the caster for 300.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 60 seconds."
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Ascendance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 45 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Transforms the shaman into a Flame Ascendant with powerful elemental abilities.|n|nHas Incinerate, Immolation, Flame Strike, Volcanic Eruption, and Chain Explosion.|n|nLasts 60 seconds."
+    }
+  ]
+}

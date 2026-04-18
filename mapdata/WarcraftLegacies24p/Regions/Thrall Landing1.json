@@ -1,0 +1,16 @@
+{
+  "Left": -4096,
+  "Bottom": -3328,
+  "Right": -3264,
+  "Top": -2656,
+  "Name": "Thrall Landing1",
+  "CreationNumber": 135,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "OldId": "AEsv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esv1",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esv1",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Vengeance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Creates a powerful avatar that summons invulnerable spirits from nearby corpses to attack your enemies. When the Avatar of Vengeance dies, the spirits vanish. |n|n|cffffcc00Level 1|r - Summons 1 Spirit of Vengeance. |n|n|cffffcc00Level 2|r -  Summons 2 Spirits of Vengeance. |n|n|cffffcc00Level 3|r - Summons 4 Spirits of Vengeance. |nLasts \u003CAEsv,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Vengeance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Vengeance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Vengeance - [|cffffcc00Level 3|r]"
+    }
+  ]
+}

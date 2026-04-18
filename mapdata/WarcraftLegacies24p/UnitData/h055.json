@@ -1,0 +1,114 @@
+{
+  "OldId": "hbar",
+  "NewId": "h055",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 300
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urtm",
+      "Value": 1000
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R02V"
+    },
+    {
+      "Id": "utar",
+      "Type": 3,
+      "Value": "ancient,structure"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Arathor-SI:7 / Champion\u0027s Hall)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_BaseRuin\\CityBuildingSmall135_0_BaseRuin.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Construction Site"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 7
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": "HSMA"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HumanLumberMill"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

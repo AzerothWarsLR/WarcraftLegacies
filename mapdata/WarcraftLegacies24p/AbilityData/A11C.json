@@ -1,0 +1,338 @@
+{
+  "OldId": "Amls",
+  "NewId": "A11C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B011,B010"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B011,B010"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B011,B010"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B011,B010"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 140
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4.5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aord",
+      "Type": 3,
+      "Value": "entanglingroots"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Kargath)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Grip of the Deep"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Grip of the Deep - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Dark magic wraps itself around the body of a foe, rendering it immobile and dealing damage over time. |n|n|cffffcc00Level 1|r - 75 damage a second for 6 seconds (2.5 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3.5 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4.5 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5.5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIso\\AIsoTarget.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "head"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Grip of the Deep - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Grip of the Deep - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Grip of the Deep - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Grip of the Deep - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Dark magic wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 6 seconds (2.5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Dark magic wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 8 seconds (3.5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Dark magic wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 10 seconds (4.5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Dark magic wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 12 seconds (5.5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+    }
+  ]
+}

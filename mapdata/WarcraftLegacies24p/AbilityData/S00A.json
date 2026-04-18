@@ -1,0 +1,72 @@
+{
+  "OldId": "SCae",
+  "NewId": "S00A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": -0.15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Whirlpool Aura"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Tidesage)"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Whirlpool Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 movement speed by 10% and attack rate by 15%."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\commandButtons\\PASWhirlpool.blp"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "OldId": "ACbc",
+  "NewId": "A08Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFire.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel Horde - Nefarian)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Fire"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing \u003CACbc,DataA1\u003E damage to land and air units."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "OldId": "ssil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "OldId": "stwp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A002"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIsp"
+    },
+    {
+      "Id": "igol",
+      "Value": 185
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Transports troops to a owned unit or structure."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Town Portal Scroll"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Town Portal Scroll"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Teleports the Hero and any of its nearby troops to a target owned structure.|n|n|cffe8e800Has a 9 second cast time.|r"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingScrollVariation.blp"
+    }
+  ]
+}

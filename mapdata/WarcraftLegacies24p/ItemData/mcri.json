@@ -1,0 +1,26 @@
+{
+  "OldId": "mcri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "istr",
+      "Value": 180
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase (|cffcece00E|r) Mechanical Critter"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "XEsf",
+  "NewId": "X00W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Awaken C\u0027thun"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UndeadDissipate\\UndeadDissipate.mdl"
+    }
+  ]
+}

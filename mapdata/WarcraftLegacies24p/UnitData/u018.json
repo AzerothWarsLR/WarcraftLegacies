@@ -1,0 +1,135 @@
+{
+  "OldId": "ushd",
+  "NewId": "u018",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "usin",
+      "Value": 1500
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 335
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEyeOfKilrogg.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 120
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_EvilEye.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Eye of Grillok"
+    },
+    {
+      "Id": "uclr",
+      "Value": 120
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Eye of Grillok"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Bleeding Hallow Clan\u0027s contribution to the war, used to scout the lands of its enemies.|n|cfff5962dAbilities:|R True Sight, Shade|n|n|cff99b4d1Can only train 10.|r"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "OldId": "hhou",
+  "NewId": "h08C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "ufma",
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "ugor",
+      "Value": 5
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": "ulum",
+      "Value": 10
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A forgotten grave, the forsaken remember.|nProvides 8 food, which increases the maximum number of units that can be trained."
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Forsaken)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GraveForsakenV1.03.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForsakenGrave.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Grave"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Grave"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

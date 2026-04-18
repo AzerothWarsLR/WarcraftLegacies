@@ -1,0 +1,72 @@
+{
+  "OldId": "nsbm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACvs,A07A,Aspd"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 150
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "LPwh",
+  "NewId": "D05W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "\u5927\u6F29\u6DA1"
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "OldId": "uabo",
+  "NewId": "u029",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aiun,A064"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.64
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 3
+    },
+    {
+      "Id": "ubsi",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 3.03
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 74
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.33
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1500
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 140
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "n0AS"
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,ward"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlindBeast.blp"
+    },
+    {
+      "Id": "uble",
+      "Type": 1,
+      "Value": 0.15
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\StygianHulkV2.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Stygian Hulk"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 102
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train - Stygian Hulk"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee Siege unit.|n|cfff5962dAbilities:|R Heavy Bash.|r|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units and trees.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "KotoBeast"
+    }
+  ]
+}

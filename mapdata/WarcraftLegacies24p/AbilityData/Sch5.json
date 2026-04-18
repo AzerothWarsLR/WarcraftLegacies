@@ -1,0 +1,14 @@
+{
+  "OldId": "Sch5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,vulnerable"
+    }
+  ]
+}

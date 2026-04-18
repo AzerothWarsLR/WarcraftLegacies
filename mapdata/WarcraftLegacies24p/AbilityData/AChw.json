@@ -1,0 +1,22 @@
+{
+  "OldId": "AChw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Shadowcaster)"
+    }
+  ]
+}

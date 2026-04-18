@@ -1,0 +1,77 @@
+{
+  "OldId": "ACfb",
+  "NewId": "A0V3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacrificialDagger.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Ranger)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Knife Throw"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Knife Throw"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunning them for 5 seconds (2 on heroes)."
+    }
+  ]
+}

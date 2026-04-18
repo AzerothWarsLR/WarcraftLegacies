@@ -1,0 +1,16 @@
+{
+  "Left": -2016,
+  "Bottom": -29440,
+  "Right": -768,
+  "Top": -28000,
+  "Name": "Shattrah",
+  "CreationNumber": 433,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

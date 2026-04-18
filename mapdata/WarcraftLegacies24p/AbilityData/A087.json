@@ -1,0 +1,92 @@
+{
+  "OldId": "Ansk",
+  "NewId": "A087",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASShieldHumanLionMark.BLP"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Galen)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Warplate"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShieldHumanLionMark.BLP"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn King\u0027s Warplating - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "King wears tough armor which is capable of blocking enemy attacks. |n|n|cffffcc00Level 1|r - Blocks 7 damage to a minimum of 4 damage.|n|cffffcc00Level 2|r - Blocks 14 damage to a minimum of 6 damage.|n|cffffcc00Level 3|r - Blocks 21 damage to a minimum of 7 damage.|n|cffffcc00Level 4|r - Blocks 28 damage to a minimum of 8 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Warplate"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA087,DataC1\u003E damage. Attacks cannot be reduced below \u003CA087,DataB1\u003E damage."
+    }
+  ]
+}

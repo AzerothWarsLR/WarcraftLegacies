@@ -1,0 +1,88 @@
+{
+  "OldId": "halt",
+  "NewId": "h01F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A04E"
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 106
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ulur",
+      "Value": 120
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp,R064,Renb,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\NorthrendCrypt\\NorthrendCrypt.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Duskwood Graveyard"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Revives Slain Heroes"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

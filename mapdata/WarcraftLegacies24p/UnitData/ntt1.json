@@ -1,0 +1,59 @@
+{
+  "OldId": "ntt1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 80
+    },
+    {
+      "Id": "ulur",
+      "Value": 70
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhac"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

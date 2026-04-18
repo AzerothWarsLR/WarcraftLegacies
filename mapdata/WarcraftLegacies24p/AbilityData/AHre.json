@@ -1,0 +1,130 @@
+{
+  "OldId": "AHre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hre1",
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hre1",
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hre1",
+      "Value": 60
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,friend,ground,nonsapper"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,friend,ground,nonsapper"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,friend,ground,nonsapper"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stormwind - Bolvar)"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Resurrection - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Brings back to life the corpses of nearby friendly units|n|n|cffffcc00Level 1|r - 20 units revived. 150 second cooldown.|n|cffffcc00Level 2|r - 40 units revived. 135 second cooldown.|n|cffffcc00Level 3|r - 60 units revived. 120 second cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resurrection - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resurrection - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Resurrection - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Brings back to life the corpses of 20 friendly nearby units.|n|cffffcc00150 second cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Brings back to life the corpses of 40 friendly nearby units.|n|cffffcc00135 second cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Brings back to life the corpses of 60 friendly nearby units.|n|cffffcc00120 second cooldown."
+    }
+  ]
+}

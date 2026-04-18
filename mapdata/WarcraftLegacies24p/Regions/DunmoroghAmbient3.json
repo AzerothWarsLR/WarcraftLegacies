@@ -1,0 +1,16 @@
+{
+  "Left": 11680,
+  "Bottom": -7552,
+  "Right": 14656,
+  "Top": -4032,
+  "Name": "DunmoroghAmbient3",
+  "CreationNumber": 354,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

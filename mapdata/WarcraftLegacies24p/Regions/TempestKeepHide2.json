@@ -1,0 +1,16 @@
+{
+  "Left": 1216,
+  "Bottom": -19552,
+  "Right": 3040,
+  "Top": -18368,
+  "Name": "TempestKeepHide2",
+  "CreationNumber": 437,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

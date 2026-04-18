@@ -1,0 +1,30 @@
+{
+  "OldId": "Rusf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "glmb",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Red Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research [|cffffcc00C|r] - Stone Form"
+    }
+  ]
+}

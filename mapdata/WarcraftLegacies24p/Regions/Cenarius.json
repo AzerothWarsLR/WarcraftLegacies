@@ -1,0 +1,16 @@
+{
+  "Left": -11744,
+  "Bottom": 6816,
+  "Right": -11648,
+  "Top": 6944,
+  "Name": "Cenarius",
+  "CreationNumber": 48,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 0,
+    "A": 255
+  }
+}

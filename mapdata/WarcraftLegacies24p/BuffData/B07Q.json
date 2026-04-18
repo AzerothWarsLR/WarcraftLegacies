@@ -1,0 +1,34 @@
+{
+  "OldId": "Binf",
+  "NewId": "B07Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Inner Will"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Inner Will; its armor is increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayDamage.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

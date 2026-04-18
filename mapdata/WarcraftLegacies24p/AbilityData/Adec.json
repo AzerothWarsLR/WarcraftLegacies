@@ -1,0 +1,19 @@
+{
+  "OldId": "Adec",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00Q|r) - Dismount Archer \u0026 Hippogryph"
+    }
+  ]
+}

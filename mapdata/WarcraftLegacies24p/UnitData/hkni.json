@@ -1,0 +1,104 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A02Y,A020,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 7
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "ugor",
+      "Value": 26
+    },
+    {
+      "Id": "uhpm",
+      "Value": 985
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,R00B,Rhar,Rhme,Rhan,Rhpm,Rguv"
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Armored knight of Lordaeron.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

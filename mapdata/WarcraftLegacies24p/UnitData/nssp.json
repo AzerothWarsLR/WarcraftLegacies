@@ -1,0 +1,46 @@
+{
+  "OldId": "nssp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aspo,A0DH"
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar,Ruwb"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light ranged unit that spits poison at opponents. Can Cast Web. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

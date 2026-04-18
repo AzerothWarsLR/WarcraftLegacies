@@ -1,0 +1,76 @@
+{
+  "OldId": "ACbz",
+  "NewId": "A11G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(N\u0027zoth)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ice Fall"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00E|r) Ice Fall"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 3 freezing ice shard waves; each wave deals 35\u003E damage to units in a small area."
+    }
+  ]
+}

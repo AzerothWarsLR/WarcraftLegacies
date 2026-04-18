@@ -1,0 +1,104 @@
+{
+  "OldId": "ACim",
+  "NewId": "A08L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08B,BEia"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Eim3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel Horde - Throne of Kil\u0027jaeden)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Master Toggle Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate to allow all Demon Gate to spawn Demons when they reach maximum mana."
+    },
+    {
+      "Id": "aubx",
+      "Value": 0
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Deactivate to prevent all Demon Gates from spawning Demons when they reach maximum mana."
+    }
+  ]
+}

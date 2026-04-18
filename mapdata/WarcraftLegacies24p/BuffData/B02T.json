@@ -1,0 +1,34 @@
+{
+  "OldId": "BIcb",
+  "NewId": "B02T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRiflemanBurningShot.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Armor Penetration Rounds"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This units armor is reduced."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Armor Penetration Rounds"
+    }
+  ]
+}

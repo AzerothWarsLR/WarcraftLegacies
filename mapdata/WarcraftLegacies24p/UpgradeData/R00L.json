@@ -1,0 +1,46 @@
+{
+  "OldId": "Roch",
+  "NewId": "R00L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumArmor.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(KulTiras)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: City at Sea"
+    }
+  ]
+}

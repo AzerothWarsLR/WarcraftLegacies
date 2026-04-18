@@ -1,0 +1,221 @@
+{
+  "OldId": "AUa2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Uan3",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Uan3",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Uan3",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uan1",
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uan1",
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uan1",
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uan1",
+      "Value": 8
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Animate Dead - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Animate Dead - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Animate Dead - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Animate Dead - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Animate Dead - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises \u003CAUa2,DataA1\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and abilities."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises \u003CAUa2,DataA2\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and abilities,, additionally increasing their hit points and attack damage by 30%."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises \u003CAUa2,DataA3\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and abilities,, additionally increasing their hit points and attack damage by 60%."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises \u003CAUa2,DataA4\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and abilities, additionally increasing their hit points and attack damage by 90%."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Raises \u003CAUa2,DataA1\u003E nearby dead units to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - No bonus.|n|cffffcc00Level 2|r - Raised units gain 30% additional hit points and attack damage. |n|cffffcc00Level 3|r - Raised units gain 60% additional hit points and attack damage.|n|cffffcc00Level 4|r - Raised units gain 90% additional hit points and attack damage."
+    }
+  ]
+}

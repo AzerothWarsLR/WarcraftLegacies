@@ -1,0 +1,137 @@
+{
+  "OldId": "hsor",
+  "NewId": "h01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0D1,A0D2,Aihn,A0VE"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A00D"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 14
+    },
+    {
+      "Id": "uhpm",
+      "Value": 340
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upri",
+      "Value": 11
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 325
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R03M,R00J,R00K,R01I,Rhpm"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Flame Shield"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Arcanist"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Arcanist"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Well-versed sorceress in the arts of magic domination. |cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HeroArcanist.mdl"
+    }
+  ]
+}

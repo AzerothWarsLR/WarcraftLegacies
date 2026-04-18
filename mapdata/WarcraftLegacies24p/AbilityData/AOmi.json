@@ -1,0 +1,150 @@
+{
+  "OldId": "AOmi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Omi1",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Omi1",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Omi1",
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Omi2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Omi2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Omi2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Rend)"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Creates images of Hero to fight enemies and dispels all magic from Hero.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% the damage of Hero and take 200% the damage."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates 3 images which deal 100% the damage of the Heror and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates 5 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Creates 7 images which deal 100% the damage of the Heror and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
+    }
+  ]
+}

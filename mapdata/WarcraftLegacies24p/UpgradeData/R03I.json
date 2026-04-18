@@ -1,0 +1,124 @@
+{
+  "OldId": "Rost",
+  "NewId": "R03I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "o030"
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFire.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodLustOn.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Eredar Occultist Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Eredar Occultist Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Eredar Occultist Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Eredar Occultist Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Eredar Occultists\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Firestorm."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Eredar Occultists\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Mass Bloodlust."
+    }
+  ]
+}

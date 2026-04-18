@@ -1,0 +1,44 @@
+{
+  "OldId": "ngnw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 28
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    }
+  ]
+}

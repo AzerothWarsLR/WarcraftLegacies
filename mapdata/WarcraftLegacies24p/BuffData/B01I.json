@@ -1,0 +1,44 @@
+{
+  "OldId": "Blsh",
+  "NewId": "B01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameWall.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Flame Shield"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has a Flame Shield; nearby friendly and enemy units will take damage if they are next to this unit."
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 10624,
+  "Bottom": 10176,
+  "Right": 13312,
+  "Top": 11744,
+  "Name": "Hearthglen",
+  "CreationNumber": 26,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

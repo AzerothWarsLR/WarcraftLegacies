@@ -1,0 +1,167 @@
+{
+  "OldId": "Ocbh",
+  "NewId": "O01P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 0.95
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0OK,A0SC,ANrf,A0LN,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "uint",
+      "Value": 32
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "ustr",
+      "Value": 32
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uagi",
+      "Value": 7
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChogall.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Cho\u0027gall"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Twilight Hammer)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Chogall.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Leader of the Twilight\u0027s Hammer"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Cho\u0027gall"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Cho\u0027gall"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\SSHHeroChogall.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Cho\u0027gall"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at dealing magical damage and summoning.|n|cfff5962dCan learn:|R Rain of Fire, Thunder Fists, Unholy Aura, Corrupt Blood|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Ogre"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "OldId": "ANst",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWyvern.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Rokhan)"
+    },
+    {
+      "Id": "aefl",
+      "Type": 3,
+      "Value": "TranquilityLoop"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "units\\orc\\SpiritWyvern\\SpiritWyvern.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Voodoo Spirits"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWyvern.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Voodoo Spirits - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Rokhan calls forth waves of voodoo spirits that explode dealing damage to to the Shadowhunter\u0027s enemies. Each exploding spirit deals \u003CANst,DataC1\u003E damage. |nLasts \u003CANst,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voodoo Spirits - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voodoo Spirits - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voodoo Spirits - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Rokhan calls forth waves of voodoo spirits that explode dealing damage to to the Shadowhunter\u0027s enemies. Each exploding spirit deals \u003CANst,DataC1\u003E damage. |nLasts \u003CANst,Dur1\u003E seconds."
+    }
+  ]
+}

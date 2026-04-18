@@ -1,0 +1,105 @@
+{
+  "OldId": "Adis",
+  "NewId": "A0D2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Adm2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01I"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,ward,invu,vuln,tree"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,ward,invu,vuln,tree"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dalaran-Arcanist)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dispel Magic - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dispel Magic - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0D2,DataB1\u003E damage to summoned units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0D2,DataB2\u003E damage to summoned units.|r"
+    }
+  ]
+}

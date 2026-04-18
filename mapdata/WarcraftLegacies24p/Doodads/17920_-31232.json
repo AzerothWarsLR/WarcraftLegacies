@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 959590468,
+    "Variation": 0,
+    "Position": {
+      "X": 17723.842,
+      "Y": -31702.656,
+      "Z": -151.75
+    },
+    "Rotation": 1.6187929,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 959590468,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29475
+  },
+  {
+    "TypeId": 959590468,
+    "Variation": 0,
+    "Position": {
+      "X": 17937.844,
+      "Y": -31697.906,
+      "Z": -151.75
+    },
+    "Rotation": 1.6187929,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 959590468,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29470
+  },
+  {
+    "TypeId": 909389892,
+    "Variation": 0,
+    "Position": {
+      "X": 18018.977,
+      "Y": -31699.973,
+      "Z": -151.75
+    },
+    "Rotation": 4.7442822,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 1.3
+    },
+    "SkinId": 909389892,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29452
+  },
+  {
+    "TypeId": 959590468,
+    "Variation": 0,
+    "Position": {
+      "X": 18115.98,
+      "Y": -31690.602,
+      "Z": -151.75
+    },
+    "Rotation": 1.6187929,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 959590468,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29451
+  },
+  {
+    "TypeId": 1244803140,
+    "Variation": 0,
+    "Position": {
+      "X": 17796.809,
+      "Y": -31362.842,
+      "Z": -151.75
+    },
+    "Rotation": 2.3689353,
+    "Scale": {
+      "X": 0.75,
+      "Y": 0.75,
+      "Z": 0.75
+    },
+    "SkinId": 1244803140,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32653
+  }
+]

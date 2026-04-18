@@ -1,0 +1,104 @@
+{
+  "OldId": "Rhpt",
+  "NewId": "R02E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_Renew.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyBolt.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Arathor-Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Light\u0027s Praise Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Light\u0027s Praise Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Light\u0027s Praise Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Light\u0027s Praise Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Renewal."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rain of Light."
+    }
+  ]
+}

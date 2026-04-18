@@ -1,0 +1,16 @@
+{
+  "Left": 11808,
+  "Bottom": -22016,
+  "Right": 14880,
+  "Top": -18272,
+  "Name": "StranglethornAmbient2",
+  "CreationNumber": 341,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "OldId": "Roch",
+  "NewId": "R03F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Unleash the Crusade"
+    }
+  ]
+}

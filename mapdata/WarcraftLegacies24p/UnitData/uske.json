@@ -1,0 +1,111 @@
+{
+  "OldId": "uske",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0PI"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 11
+    },
+    {
+      "Id": "ugol",
+      "Value": 7
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "summoned,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R094,R008,Rhar,Rhme,Rusl,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Red - Rod of Necromancy/Necromancers)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Skeleton Warrior"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Weak skeleton warrior that can be effective as fodder with a larger Undead army."
+    }
+  ]
+}

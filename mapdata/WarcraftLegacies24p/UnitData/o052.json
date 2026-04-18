@@ -1,0 +1,127 @@
+{
+  "OldId": "obar",
+  "NewId": "o052",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "e01K,o05B,h09T"
+    },
+    {
+      "Id": "ulum",
+      "Value": 25
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o050"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ceremonial Altar"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Ceremonial Altar"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Training halls of light and virtue.|n|cfff5962dTrains:|R Paladin Initiate, Rangari, Polybolos"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DraeneiCeremonialAltar V1.01.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiCeremonialAltar.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SacrificialPit"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

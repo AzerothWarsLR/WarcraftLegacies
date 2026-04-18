@@ -1,0 +1,73 @@
+{
+  "OldId": "ACvs",
+  "NewId": "A0XK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Poi1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Poi2",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Poi3",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Assasins)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Poison Spears"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Poison Spears"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 10 poison damage per second and slows attack speed by 40% and mouvement speed by 30%. |nLasts 10 seconds. 3 seconds on heroes"
+    }
+  ]
+}

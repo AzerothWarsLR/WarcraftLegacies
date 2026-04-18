@@ -1,0 +1,83 @@
+{
+  "OldId": "unpl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Argl"
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 25
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "ulum",
+      "Value": 80
+    },
+    {
+      "Id": "ulur",
+      "Value": 200
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "uaco,h00H"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Acolytes|n|cfff5962dUpgrades to:|R Halls of the Dead"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "OldId": "Reeb",
+  "NewId": "R00A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A05X"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gglb",
+      "Value": 50
+    },
+    {
+      "Id": "glmb",
+      "Value": 150
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "etoa"
+    },
+    {
+      "Level": 1,
+      "Id": "grqc",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtib",
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThorns.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Improved Thorns"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Improved Thorns"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Saplings\u0027 Thorns by causing it to return \u003CA05X,DataA2,%\u003E% of melee attack damage to enemies."
+    }
+  ]
+}

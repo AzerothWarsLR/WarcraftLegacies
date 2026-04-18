@@ -1,0 +1,57 @@
+{
+  "OldId": "nfgt",
+  "NewId": "n0B8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ua1r",
+      "Value": 250
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A01K"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "YoggTentacleMace"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\YoggSaronTentacleClub.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

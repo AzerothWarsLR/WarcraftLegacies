@@ -1,0 +1,58 @@
+{
+  "OldId": "AIx5",
+  "NewId": "A0VM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iagi",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Iint",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Istr",
+      "Value": 9
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(\u002B9 Strength)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Titanforged"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Titanforged"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Additionally increases Strength by 9."
+    }
+  ]
+}

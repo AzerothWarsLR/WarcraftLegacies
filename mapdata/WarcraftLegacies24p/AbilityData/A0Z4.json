@@ -1,0 +1,312 @@
+{
+  "OldId": "ANcf",
+  "NewId": "A0Z4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BCbf"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BCbf"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BCbf"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BCbf"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 105
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 195
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 15000
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 15000
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 15000
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 15000
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ucs3",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ucs3",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ucs3",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "attack"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scourge-Ner\u0027zhul) (Thoras Trollbane) (hodir)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\BreathOfFrost\\BreathOfFrostMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Breath of Frost"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Breath of Frost (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Breathes a cone of frost at enemy units which deals damage. |n|n|cffffcc00Level 1|r - 60 damage. |n|cffffcc00Level 2|r - 105 damage. |n|cffffcc00Level 3|r - 150 damage. |n|cffffcc00Level 4|r - 195 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing 60 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing 105 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing 150 damage."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing 195 damage."
+    }
+  ]
+}

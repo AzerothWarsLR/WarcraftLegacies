@@ -1,0 +1,22 @@
+{
+  "OldId": "ngol",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    }
+  ]
+}

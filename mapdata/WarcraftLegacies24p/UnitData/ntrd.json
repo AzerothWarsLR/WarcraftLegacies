@@ -1,0 +1,25 @@
+{
+  "OldId": "ntrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACdv,Advc,ANt2"
+    },
+    {
+      "Id": "ubba",
+      "Value": 50
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
+    }
+  ]
+}

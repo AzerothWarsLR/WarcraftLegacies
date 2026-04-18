@@ -1,0 +1,67 @@
+{
+  "OldId": "AIdb",
+  "NewId": "A0U8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ihp2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Imp2",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Urn of Kings Effect"
+    }
+  ]
+}

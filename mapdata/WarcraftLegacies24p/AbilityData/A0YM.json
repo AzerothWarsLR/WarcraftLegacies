@@ -1,0 +1,60 @@
+{
+  "OldId": "AIbg",
+  "NewId": "A0YM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Ibl1",
+      "Type": 3,
+      "Value": "o05R"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Build Murloc Gathering"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Build a Murloc Gathering"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Build a Murloc Gathering at target location, has a 300 seconds cooldown."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCoralBed.blp"
+    }
+  ]
+}

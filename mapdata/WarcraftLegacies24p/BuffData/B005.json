@@ -1,0 +1,53 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B005",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbility_Warrior_Charge.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Charge"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Charge"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftac",
+      "Value": 1
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This units attacks and moves faster but takes increased damage."
+    }
+  ]
+}

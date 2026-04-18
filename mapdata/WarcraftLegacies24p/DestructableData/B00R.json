@@ -1,0 +1,38 @@
+{
+  "OldId": "LTbs",
+  "NewId": "B00R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\SpikeBarrier\\SpikeBarrier.mdl"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Spikes"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

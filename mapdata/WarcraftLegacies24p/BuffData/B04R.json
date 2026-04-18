@@ -1,0 +1,43 @@
+{
+  "OldId": "Bam2",
+  "NewId": "B04R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Power Word: Shield"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Power Word: Shield; damage spells must destroy the shell to affect the unit."
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fspd",
+      "Value": 2
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
+    }
+  ]
+}

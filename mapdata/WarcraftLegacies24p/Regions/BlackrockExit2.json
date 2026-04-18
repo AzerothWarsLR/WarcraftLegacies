@@ -1,0 +1,16 @@
+{
+  "Left": 19808,
+  "Bottom": -30048,
+  "Right": 20320,
+  "Top": -29888,
+  "Name": "BlackrockExit2",
+  "CreationNumber": 11,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

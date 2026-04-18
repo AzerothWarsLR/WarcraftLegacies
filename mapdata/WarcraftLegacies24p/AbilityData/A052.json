@@ -1,0 +1,380 @@
+{
+  "OldId": "ANdr",
+  "NewId": "A052",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Q,B00R"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Q,B00R"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Q,B00R"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Q,B00R"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndr1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ndr1",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ndr1",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ndr1",
+      "Type": 2,
+      "Value": 320
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndr2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ndr2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ndr2",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ndr2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ndr4",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ndr4",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ndr4",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ndr4",
+      "Type": 2,
+      "Value": 320
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,throw"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDrain.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Death Knight Arthas)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Soul Drain"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDrain.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Soul Drain - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero drains the life and mana of an enemy unit instantly and adds it to his own. |n|n|cffffcc00Level 1|r - 80 hit points and 40 mana drained. |n|cffffcc00Level 2|r - 160 hit points and 60 mana drained. |n|cffffcc00Level 3|r - 240 hit points and 80 mana drained. |n|cffffcc00Level 4|r - 320 hit points and 100 mana drained."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Soul Drain - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Soul Drain - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Soul Drain - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Soul Drain - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Drains 80 hit points and 40 mana instantly from a targetted enemy unit and gives them to the hero."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Drains 160 hit points and 60 mana instantly from a targetted enemy unit and gives them to the hero."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Drains 240 hit points and 80 mana instantly from a targetted enemy unit and gives them to the hero."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Drains 320 hit points and 100 mana instantly from a targetted enemy unit and gives them to the hero."
+    }
+  ]
+}

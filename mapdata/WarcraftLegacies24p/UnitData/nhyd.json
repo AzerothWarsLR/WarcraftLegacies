@@ -1,0 +1,44 @@
+{
+  "OldId": "nhyd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aspo,Aspt"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    }
+  ]
+}

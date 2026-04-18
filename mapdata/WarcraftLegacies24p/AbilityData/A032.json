@@ -1,0 +1,408 @@
+{
+  "OldId": "ANcs",
+  "NewId": "A032",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1800
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStarfall.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(orange antonidas) (Medivh)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Arcane Bombardment"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStarfall.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Arcane Bombardment - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Bombards an area with arcane missile, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 300 total damage.|n|cffffcc00Level 2|r - 400 total damage.|n|cffffcc00Level 3|r - 500 total damage.|n|cffffcc00Level 4|r - 600 total damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bombardment - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bombardment - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bombardment - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bombardment - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Bombards an area with arcane missiles, dealing up to 300 damage to nearby enemy land units and stunning them for 1 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Bombards an area with arcane missiles, dealing up to 400 damage to nearby enemy land units and stunning them for 1 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Bombards an area with arcane missiles, dealing up to 500 damage to nearby enemy land units and stunning them for 1 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Bombards an area with arcane missiles, dealing up to 600 damage to nearby enemy land units and stunning them for 1 seconds."
+    }
+  ]
+}

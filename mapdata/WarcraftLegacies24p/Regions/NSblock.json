@@ -1,0 +1,16 @@
+{
+  "Left": 14976,
+  "Bottom": -384,
+  "Right": 16416,
+  "Top": 1024,
+  "Name": "NSblock",
+  "CreationNumber": 515,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

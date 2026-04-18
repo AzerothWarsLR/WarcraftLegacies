@@ -1,0 +1,29 @@
+{
+  "OldId": "sror",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0DY"
+    },
+    {
+      "Id": "igol",
+      "Value": 20
+    },
+    {
+      "Id": "ista",
+      "Value": 2
+    },
+    {
+      "Id": "iuse",
+      "Value": 4
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "AEsd",
+  "NewId": "B00C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyBolt.blp"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Light Fall"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
+    }
+  ]
+}

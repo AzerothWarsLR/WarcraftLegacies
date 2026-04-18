@@ -1,0 +1,30 @@
+{
+  "OldId": "nrdk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 515
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R04U,R046,Rhme,Rhar"
+    }
+  ]
+}

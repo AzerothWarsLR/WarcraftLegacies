@@ -1,0 +1,258 @@
+{
+  "OldId": "AIfu",
+  "NewId": "A0WW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0CJ"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0CI"
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0CK"
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 235
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 270
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Isn1",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Isn1",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon Zelemar"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoomGuard.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoomGuard.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Summon Zelemar  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons Zelemar the Wrathful to fight as the Hero\u0027s champion.|n|n|cffffcc00Level 1|r - Summons a Strong to aid the hero in battle. Lasts \u003CA0WW,Dur1\u003E seconds.|n|cffffcc00Level 2|r - Summons a Mighty Demon to aid the hero in battle. Lasts \u003CA0WW,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Summons an Unstoppable Demon to aid the hero in battle. Lasts \u003CA0WW,Dur3\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Zelemar"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Zelemar"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Zelemar"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons Zelemar the Wrathful, a strong demon champion to aid the hero in battle.|n|nLasts \u003CA0WW,Dur1\u003E seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons Zelemar the Wrathful, a mighty demon champion to aid the hero in battle.|n|nLasts \u003CA0WW,Dur2\u003E seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons Zelemar the Wrathful, an unstoppable demon champion to aid the hero in battle.|n|nLasts \u003CA0WW,Dur3\u003E seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Banish Zelemar"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Banish Zelemar"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Banish Zelemar"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Jergosh, Warsong)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    }
+  ]
+}

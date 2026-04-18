@@ -1,0 +1,107 @@
+{
+  "OldId": "ACsa",
+  "NewId": "A0H2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hfa1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "amsp",
+      "Value": 10000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyLance.BLP"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": "acap",
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(dreanei vindicator)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Vindication"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Vindication"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit enhances their attack with the Holy Light dealing 20 additional damage with every attack but draining mana with each hit."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyLance.BLP"
+    },
+    {
+      "Id": "aubx",
+      "Value": 0
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "OldId": "unec",
+  "NewId": "u01T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0O5,A0AR,A08F,Aion"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0AR"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 6
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 14
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R06Z,R023,Rguv"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcWarlock.blp"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Shadow Infusion,- Shadow Infusion|n- Devour Magic,- Shadow Infusion|n- Devour Magic|n- Lightning Shield"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(twilight)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HeraldOfTwilight.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Herald"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Herald"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Support caster of the Twilight hammer.|n|cfff5962dAbilities:|R Shadow Infusion|n|cfff5962dCan Learn:|R Devour Magic, Lightning Shield |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ShamanX"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    }
+  ]
+}

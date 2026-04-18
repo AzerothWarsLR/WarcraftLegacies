@@ -1,0 +1,105 @@
+{
+  "OldId": "Redt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtib",
+      "Value": 45
+    },
+    {
+      "Id": "gtim",
+      "Value": 60
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Druid of the Talon Advanced Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Druid of the Talons\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability Dispel Magic."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Druids of the Talons\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Storm Crow Form."
+    }
+  ]
+}

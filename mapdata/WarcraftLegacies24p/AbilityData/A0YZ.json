@@ -1,0 +1,179 @@
+{
+  "OldId": "AOae",
+  "NewId": "A0YZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AG"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.07
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLeadershipAura.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(sentinel)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Hunt Aura"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUpgradeRegenerationAura.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "|cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 15% increased movement speed. |n|cffffcc00Level 2|r - 20% increased movement speed. |n|cffffcc00Level 3|r - 25% increased movement speed. |n|cffffcc00Level 4|r - 30% increased movement speed. |n"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hunt Aura"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Conveyance Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Conveyance Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Conveyance Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 7%."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 20%."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 25%."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases nearby friendly units\u0027 movement speed by 30%."
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    }
+  ]
+}

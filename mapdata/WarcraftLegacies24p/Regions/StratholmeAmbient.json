@@ -1,0 +1,16 @@
+{
+  "Left": 13056,
+  "Bottom": 11136,
+  "Right": 16288,
+  "Top": 13888,
+  "Name": "StratholmeAmbient",
+  "CreationNumber": 313,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

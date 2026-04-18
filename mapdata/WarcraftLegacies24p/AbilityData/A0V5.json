@@ -1,0 +1,61 @@
+{
+  "OldId": "ANso",
+  "NewId": "A0V5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(dark knight)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Soul Burn"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Wreaths an enemy unit in magical flames which cause \u003CANso,DataA1\u003E damage per second, prevent the casting of spells, and reduce attack damage by \u003CANso,DataC1,%\u003E%.|nLasts 14 seconds. Lasts 6 seconds on Heroes."
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ]
+}

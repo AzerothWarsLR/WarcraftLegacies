@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R05L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Fel Horde exists"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n035",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A4,Awrp,Avul"
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 100000
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "uclb",
+      "Value": 100
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\human\\HumanBarracks\\HumanBarracks.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scholomance"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowHumanBarracks"
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HCancelDeath\\HCancelDeath.mdl"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

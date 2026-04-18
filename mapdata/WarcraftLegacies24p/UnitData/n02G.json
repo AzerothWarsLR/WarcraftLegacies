@@ -1,0 +1,47 @@
+{
+  "OldId": "ngst",
+  "NewId": "n02G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACbh,ACmi,ACtb"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 36
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Crystalline Golem"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    }
+  ]
+}

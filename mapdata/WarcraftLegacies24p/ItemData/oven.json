@@ -1,0 +1,32 @@
+{
+  "OldId": "oven",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and poison enemy units for \u003CApo2,Dur1\u003E seconds."
+    }
+  ]
+}

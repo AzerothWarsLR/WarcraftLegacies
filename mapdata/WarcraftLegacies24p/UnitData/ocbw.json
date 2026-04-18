@@ -1,0 +1,127 @@
+{
+  "OldId": "ocbw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CF,Abds,Aspi,Abun,Sbtl,Astd,Arbr,Aorb"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ubld",
+      "Value": 35
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "ugol",
+      "Value": 11
+    },
+    {
+      "Id": "ugor",
+      "Value": 16
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ulum",
+      "Value": 20
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rosp,Rorb,Rgfo"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrcBurrow.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BurrowFelOrcV1.01.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Fel Orc Burrow"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Provides 10 food, which increases the maximum number of units that can be trained. Fel Orc Peons can garrison inside to attack enemy units. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

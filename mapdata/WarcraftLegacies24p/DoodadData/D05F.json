@@ -1,0 +1,64 @@
+{
+  "OldId": "NObc",
+  "NewId": "D05F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Silithid Broken Column"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 120
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 120
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 130
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 130
+    }
+  ]
+}

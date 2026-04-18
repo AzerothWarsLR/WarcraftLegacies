@@ -1,0 +1,98 @@
+{
+  "OldId": "Hjai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0TD,AInv"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A096,AHbz,AHab,AHmt"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 350
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 350
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Archmage of Dalaran"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Jaina Proudmoore"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at summoning and damaging enemies over time.|n|cfff5962dAbilities:|r Invisibility|n|cfff5962dCan learn:|R Blizzard, Water Elemental, Brilliance Aura, Mass Teleport|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Jaina"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Jaina.mdl"
+    }
+  ]
+}

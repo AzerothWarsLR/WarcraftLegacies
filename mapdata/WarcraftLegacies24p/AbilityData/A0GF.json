@@ -1,0 +1,32 @@
+{
+  "OldId": "ANss",
+  "NewId": "A0GF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Passive)"
+    }
+  ]
+}

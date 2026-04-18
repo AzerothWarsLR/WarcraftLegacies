@@ -1,0 +1,77 @@
+{
+  "OldId": "AIha",
+  "NewId": "A106",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ihpg",
+      "Value": -5000
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Self Destruct"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Self Destruct"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Destruct this unused unit."
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSelf_Destruct.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    }
+  ]
+}

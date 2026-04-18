@@ -1,0 +1,114 @@
+{
+  "OldId": "AUau",
+  "NewId": "A01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B07G"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASSpiritCrusader.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "( Purple Alexandros spellbook)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Crusade Aura"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDisenchant.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Blazing Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Undead and Demons are weakened in the face of the Light. Decreases hp regen and movespeed of nearby enemy units. |n|n|cffffcc00Level 1|r - 50% degeneration, 3% movespeed reduction.|n|cffffcc00Level 2|r - 100% degeneration, 6% movespeed reduction.|n|cffffcc00Level 3|r - 200% degeneration, 9% movespeed reduction."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Crusade Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 movement speed by \u003CA0N2,DataA1,%\u003E%."
+    }
+  ]
+}

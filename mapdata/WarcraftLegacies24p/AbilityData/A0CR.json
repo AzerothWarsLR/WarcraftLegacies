@@ -1,0 +1,88 @@
+{
+  "OldId": "Afzy",
+  "NewId": "A0CR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02J"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Blo1",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedBears.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids-Druid of the Claw)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Animal Fury"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Animal Fury"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases this unit\u0027s attack rate by 35% and movement speed by 25% for \u003CAfzy,Dur1\u003E seconds."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedBears.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

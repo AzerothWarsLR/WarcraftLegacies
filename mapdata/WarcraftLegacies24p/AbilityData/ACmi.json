@@ -1,0 +1,16 @@
+{
+  "OldId": "ACmi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    }
+  ]
+}

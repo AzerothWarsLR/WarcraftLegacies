@@ -1,0 +1,25 @@
+{
+  "OldId": "nfpu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACac"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 40
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    }
+  ]
+}

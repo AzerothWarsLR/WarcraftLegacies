@@ -1,0 +1,109 @@
+{
+  "OldId": "AImt",
+  "NewId": "A0RY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "demon"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,friend,neutral,notself"
+    },
+    {
+      "Id": "aaea",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(herald)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Materialisation"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Astral Walk -  [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Teleports Balnazzar to the targeted allied land unit or structure.  |n|n|cffffcc00Level 1|r - 45 second cooldown, 75 mana cost. |n|cffffcc00Level 2|r - 30 second cooldown, 50 mana cost. |n|cffffcc00Level 3|r - 15 second cooldown, 25 mana cost.|n|cffffcc00Level 4|r - no cooldown, free to cast."
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Materialisation"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "After casting for 3 seconds, teleports the Dreadlord to the target unit."
+    }
+  ]
+}

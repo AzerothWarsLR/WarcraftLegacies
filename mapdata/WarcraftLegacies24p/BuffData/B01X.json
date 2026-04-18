@@ -1,0 +1,34 @@
+{
+  "OldId": "BNso",
+  "NewId": "B01X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mind Flay"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit\u0027s Mind has been Flayed. Its mana is being reduced and is taking damage over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+    }
+  ]
+}

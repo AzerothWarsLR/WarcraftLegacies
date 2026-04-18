@@ -1,0 +1,53 @@
+{
+  "OldId": "LTbr",
+  "NewId": "B021",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_ShipWall 2.mdl"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_ShipWall 2.mdl"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Cannon Port"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "OldId": "Eilm",
+  "NewId": "E00E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AEIl,A0QP,AEev,AEmb,Aamk"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Morphed Level 2) "
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DemonHunter_Variant1.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNdemonhunterVariant.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNdemonhunterVariant.blp"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Altruis"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "TypeId": 1651461977,
+    "Variation": 0,
+    "Position": {
+      "X": -22659.28,
+      "Y": 17282.52,
+      "Z": 310.38654
+    },
+    "Rotation": 4.732726,
+    "Scale": {
+      "X": 0.93305767,
+      "Y": 0.93305767,
+      "Z": 0.88305765
+    },
+    "SkinId": 1651461977,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10977
+  },
+  {
+    "TypeId": 1651461977,
+    "Variation": 0,
+    "Position": {
+      "X": -22908.123,
+      "Y": 17533.988,
+      "Z": 311.56067
+    },
+    "Rotation": 4.732726,
+    "Scale": {
+      "X": 0.93305767,
+      "Y": 0.93305767,
+      "Z": 0.88305765
+    },
+    "SkinId": 1651461977,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12326
+  },
+  {
+    "TypeId": 2002867033,
+    "Variation": 0,
+    "Position": {
+      "X": -22916.947,
+      "Y": 17531.867,
+      "Z": 306.34695
+    },
+    "Rotation": 1.5707964,
+    "Scale": {
+      "X": 0.34999985,
+      "Y": 0.34999985,
+      "Z": 0.44999993
+    },
+    "SkinId": 2002867033,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 24678
+  },
+  {
+    "TypeId": 2002867033,
+    "Variation": 0,
+    "Position": {
+      "X": -22665.553,
+      "Y": 17263.602,
+      "Z": 285.12003
+    },
+    "Rotation": 3.1415927,
+    "Scale": {
+      "X": 0.34999985,
+      "Y": 0.34999985,
+      "Z": 0.44999993
+    },
+    "SkinId": 2002867033,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 24753
+  },
+  {
+    "TypeId": 1936412505,
+    "Variation": 0,
+    "Position": {
+      "X": -22748.744,
+      "Y": 17416.992,
+      "Z": 147.49457
+    },
+    "Rotation": 3.8035018,
+    "Scale": {
+      "X": 1.3499998,
+      "Y": 1.3499998,
+      "Z": 1.3499998
+    },
+    "SkinId": 1936412505,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 24754
+  },
+  {
+    "TypeId": 1479684164,
+    "Variation": 1,
+    "Position": {
+      "X": -22912.393,
+      "Y": 17407.3,
+      "Z": 178.6
+    },
+    "Rotation": 0.7853982,
+    "Scale": {
+      "X": 1.9,
+      "Y": 1.9,
+      "Z": 0.1
+    },
+    "SkinId": 1479684164,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 26606
+  },
+  {
+    "TypeId": 1479684164,
+    "Variation": 1,
+    "Position": {
+      "X": -22787.318,
+      "Y": 17280.834,
+      "Z": 178.6
+    },
+    "Rotation": 0.7853982,
+    "Scale": {
+      "X": 1.9,
+      "Y": 1.9,
+      "Z": 0.1
+    },
+    "SkinId": 1479684164,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 26607
+  },
+  {
+    "TypeId": 1479684164,
+    "Variation": 1,
+    "Position": {
+      "X": -22909.922,
+      "Y": 17153.885,
+      "Z": 178.6
+    },
+    "Rotation": 0.7853982,
+    "Scale": {
+      "X": 1.9,
+      "Y": 1.9,
+      "Z": 0.1
+    },
+    "SkinId": 1479684164,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 26595
+  },
+  {
+    "TypeId": 1479684164,
+    "Variation": 1,
+    "Position": {
+      "X": -23036.785,
+      "Y": 17284.045,
+      "Z": 178.6
+    },
+    "Rotation": 0.7853982,
+    "Scale": {
+      "X": 1.9,
+      "Y": 1.9,
+      "Z": 0.1
+    },
+    "SkinId": 1479684164,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 26596
+  },
+  {
+    "TypeId": 1651199812,
+    "Variation": 0,
+    "Position": {
+      "X": -23010.146,
+      "Y": 17450.275,
+      "Z": 188.3378
+    },
+    "Rotation": 4.699299,
+    "Scale": {
+      "X": 1,
+      "Y": 0.75,
+      "Z": 1
+    },
+    "SkinId": 1651199812,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 24917
+  }
+]

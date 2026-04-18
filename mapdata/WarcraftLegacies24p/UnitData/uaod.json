@@ -1,0 +1,78 @@
+{
+  "OldId": "uaod",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "U001,Uanb,ubdd,Uear,U00A"
+    },
+    {
+      "Id": "ulum",
+      "Value": 25
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Revives slain Heroes and demi-heroes."
+    }
+  ]
+}

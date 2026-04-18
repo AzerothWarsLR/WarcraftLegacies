@@ -1,0 +1,72 @@
+{
+  "OldId": "ANbr",
+  "NewId": "A0HH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Manipulate Shimmering portal"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Battle Roar (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Battle Roar (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

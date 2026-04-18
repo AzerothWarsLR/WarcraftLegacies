@@ -1,0 +1,463 @@
+{
+  "OldId": "ANsb",
+  "NewId": "A0KW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 5,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 6,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 7,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 8,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 9,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 10,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 5,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 6,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 7,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 8,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 9,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 10,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 5,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 6,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 7,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 8,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 9,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 10,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 5,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 6,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 7,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 8,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 9,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 10,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 5,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 7,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 8,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 9,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 10,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 5,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 6,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 7,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 8,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 9,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 10,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "vulnerable"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Charred Ancient)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Burning Crash"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Burning Crash"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Charred Ancient charge at a target unit, dealing 30 damage to every unit on the way. Once reached, the target is knocked back and takes 60 damage and is stunned for 1.5 seconds (0.5 for heroes). |n|nIf your charge collides with unpathable terrain, it will be cancelled."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurnedAncient.blp"
+    }
+  ]
+}

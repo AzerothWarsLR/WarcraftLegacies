@@ -1,0 +1,43 @@
+{
+  "OldId": "Amic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Lordaeron-Arathor-Town Halls)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Call all nearby Peasants to the this building to be converted to Militia. |n|cffffcc00Lasts \u003CAmil,Dur1\u003E seconds."
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Call all nearby Militia to the this building to be converted to Peasants."
+    }
+  ]
+}

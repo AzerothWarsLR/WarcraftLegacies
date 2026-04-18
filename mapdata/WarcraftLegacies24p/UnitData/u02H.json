@@ -1,0 +1,172 @@
+{
+  "OldId": "ufro",
+  "NewId": "u02H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Advm"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucar",
+      "Value": 5
+    },
+    {
+      "Id": "ufoo",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ua1h",
+      "Value": 0
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1050
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1q",
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar,Rupm"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ua1f",
+      "Value": 0
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o051"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Native beasts of Outland, tamed by the Draenei.|n|cfff5962dAbilities:|R Devour Magic|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Nether Ray"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Nether Ray"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\NetherRayTC v2.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl"
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "OldId": "Aroa",
+  "NewId": "A03C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02C"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02C"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02C"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02C"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 70
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,self"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanCaptureFlag.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stormwind - Bolvar)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Rally to the Highlord!"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanCaptureFlag.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Rally to the Highlord! - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Bolvar rallies nearby friendly units to him increasing their attack for 20 seconds.|n|cffffcc00|nLevel 1 |r - 20% temporary damage bonus.|n|cffffcc00Level 2 |r - 30% temporary damage bonus.|n|cffffcc00Level 3 |r - 40% temporary damage bonus.|n|cffffcc00Level 4 |r - 50% temporary damage bonus."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rally to the King! - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rally to the King! - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rally to the King! - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rally to the King! - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 20% bonus to damage. |nLasts 20 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 30% bonus to damage. |n|nLasts 20 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 40% bonus to damage. |n|nLasts 20 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives friendly nearby units a 50% bonus to damage. |n|nLasts 20 seconds."
+    }
+  ]
+}

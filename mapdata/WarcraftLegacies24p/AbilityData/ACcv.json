@@ -1,0 +1,64 @@
+{
+  "OldId": "ACcv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ucs3",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green Royal Guard)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Crushing Wave"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a gigantic wave which deals 100 damage to each enemy land unit in a line, up to 1000 max damage."
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    }
+  ]
+}

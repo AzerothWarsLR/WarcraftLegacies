@@ -1,0 +1,29 @@
+{
+  "OldId": "Basl",
+  "NewId": "B0AN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000Death Domain|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by Death Domain; its movement speed temporarily reduced."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDeath.blp"
+    }
+  ]
+}

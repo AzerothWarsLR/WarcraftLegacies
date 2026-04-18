@@ -1,0 +1,16 @@
+{
+  "Left": 15168,
+  "Bottom": 17440,
+  "Right": 21376,
+  "Top": 23104,
+  "Name": "SunwellAmbient",
+  "CreationNumber": 321,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

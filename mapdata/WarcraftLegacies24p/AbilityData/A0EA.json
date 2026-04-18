@@ -1,0 +1,25 @@
+{
+  "OldId": "AIlf",
+  "NewId": "A0EA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ilif",
+      "Value": 100000
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dummy)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Capture Protection Dummy"
+    }
+  ]
+}

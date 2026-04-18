@@ -1,0 +1,16 @@
+{
+  "Left": 15360,
+  "Bottom": 4352,
+  "Right": 16160,
+  "Top": 5152,
+  "Name": "QuelDanil Lodge",
+  "CreationNumber": 66,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

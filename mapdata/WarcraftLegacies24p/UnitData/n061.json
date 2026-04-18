@@ -1,0 +1,106 @@
+{
+  "OldId": "ngsp",
+  "NewId": "n061",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A6,Asds"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Asds"
+    },
+    {
+      "Id": "ubld",
+      "Value": 7
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 12
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 60
+    },
+    {
+      "Id": "usst",
+      "Value": 420
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,R021,Rguv"
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Sapper"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Explosive team of goblin sappers.|n|cfff5962dAbilities:|R Suicide Shield, Kaboom|n|n|cff99b4d1Can only train 12.|r|cffffcc00|nCan Kaboom land units and trees.|r"
+    }
+  ]
+}

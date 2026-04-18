@@ -1,0 +1,41 @@
+{
+  "OldId": "GOlc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": 199
+    },
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "donc",
+      "Value": 1
+    },
+    {
+      "Id": "donw",
+      "Value": 1
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

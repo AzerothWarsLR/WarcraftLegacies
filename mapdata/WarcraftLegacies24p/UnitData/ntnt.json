@@ -1,0 +1,43 @@
+{
+  "OldId": "ntnt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ufma",
+      "Value": 8
+    },
+    {
+      "Id": "uhpm",
+      "Value": 375
+    },
+    {
+      "Id": "usin",
+      "Value": 400
+    },
+    {
+      "Id": "usid",
+      "Value": 800
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

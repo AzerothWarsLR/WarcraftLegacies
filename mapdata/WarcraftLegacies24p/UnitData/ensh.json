@@ -1,0 +1,136 @@
+{
+  "OldId": "ensh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0F0,A0GK,A0E2,AInv,Aesr,A0I5,Amgr,ACrk,S003"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulev",
+      "Value": 8
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 250
+    },
+    {
+      "Id": "umpm",
+      "Value": 350
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "ua1r",
+      "Value": 400
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "utc1",
+      "Value": 2
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "giant"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R002,R00U,R03J,R007,Resc,Rhme,Rhar,Reuv"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHuntressN.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(UNUSED BECAUSE SCALING VALUE)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 140
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive - Naisha"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei"
+    }
+  ]
+}

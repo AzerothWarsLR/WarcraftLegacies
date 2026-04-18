@@ -1,0 +1,220 @@
+{
+  "OldId": "ANhx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nshe"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nshe"
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nshe"
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nshe"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ply4",
+      "Type": 3,
+      "Value": "nsha"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ply4",
+      "Type": 3,
+      "Value": "nsha"
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ply4",
+      "Type": 3,
+      "Value": "nsha"
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ply4",
+      "Type": 3,
+      "Value": "nsha"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Khadgar)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - Lasts 60(2) seconds. |n|cffffcc00Level 2|r - Lasts 60(3) seconds. |n|cffffcc00Level 3|r - Lasts 60(4) seconds. |n|cffffcc00Level 4|r - Lasts 60(5) seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for 60(2) seconds"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for 60(3) seconds"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for 60(4) seconds"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for 60(5) seconds"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Polymorph - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Polymorph - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Polymorph - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Polymorph - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Polymorph - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Polymorph"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPolymorph.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPolymorph.blp"
+    }
+  ]
+}

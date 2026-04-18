@@ -1,0 +1,142 @@
+{
+  "OldId": "uzg2",
+  "NewId": "u003",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Afr2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "ufma",
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 48
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1150
+    },
+    {
+      "Id": "ulum",
+      "Value": 85
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo,Rhme"
+    },
+    {
+      "Id": "upar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Improved Nerubian Tower"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Upgrade to Improved Nerubian Tower"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

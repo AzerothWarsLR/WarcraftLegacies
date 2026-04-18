@@ -1,0 +1,19 @@
+{
+  "OldId": "XErf",
+  "NewId": "X00X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "war3mapImported\\Rain of Fire Fel.mdx"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Felfire (Effect)"
+    }
+  ]
+}

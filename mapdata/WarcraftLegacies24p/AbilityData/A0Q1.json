@@ -1,0 +1,81 @@
+{
+  "OldId": "ANic",
+  "NewId": "A0Q1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nic2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nic4",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Zuluhed ult)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - 0.5 bonus damage multiplier, 30 incineration damage.|n|cffffcc00Level 2|r - 1 bonus damage multiplier, 40 incineration damage.|n|cffffcc00Level 3|r - 1.5 bonus damage multiplier, 50 incineration damage.|n|cffffcc00Level 4|r - 2 bonus damage multiplier, 60 incineration damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Incinerate"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "OldId": "oshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "ulum",
+      "Value": 55
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R006,R00C"
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "oosc,odes,obot,ojgn"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Horde Pier"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Horde Pier"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r"
+    }
+  ]
+}

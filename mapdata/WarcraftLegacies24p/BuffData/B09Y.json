@@ -1,0 +1,39 @@
+{
+  "OldId": "BHad",
+  "NewId": "B09Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "United for the Cause"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of United for the Cause; it has increased armor."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGloryAura.blp"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "1"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 19008,
+  "Bottom": 6592,
+  "Right": 22048,
+  "Top": 9952,
+  "Name": "TyrHandAmbient",
+  "CreationNumber": 315,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

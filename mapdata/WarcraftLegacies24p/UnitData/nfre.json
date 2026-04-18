@@ -1,0 +1,53 @@
+{
+  "OldId": "nfre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,ACls,A0EO"
+    },
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R05X,Reuv,R019,Rhme,Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Brown - Cenarius Summon)"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    }
+  ]
+}

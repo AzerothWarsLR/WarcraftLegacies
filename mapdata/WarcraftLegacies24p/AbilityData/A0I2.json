@@ -1,0 +1,62 @@
+{
+  "OldId": "ANlm",
+  "NewId": "A0I2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 5
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n05E"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Creep - Ragnaros)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Fire Element"
+    }
+  ]
+}

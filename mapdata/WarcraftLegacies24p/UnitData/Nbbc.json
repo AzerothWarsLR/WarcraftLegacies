@@ -1,0 +1,157 @@
+{
+  "OldId": "Nbbc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0MM,A0GK,A0KV,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 27
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 5
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,AOww,AOmi,AOr2,A0AI"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 18
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R011"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R03C"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\RendBlackhand_Hero.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warchief of the Blackrock Clan"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Dal\u0027rend Blackhand"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-blademaster.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, specialised in dealing damage and disrupting enemies.|n|cfff5962dAbilities:|r Wind Walk, Critical Strike|n|cfff5962dCan learn:|R Bladestorm, Howl, Endurance Aura, Mirror Image|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Rend"
+    }
+  ]
+}

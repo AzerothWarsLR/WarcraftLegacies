@@ -1,0 +1,58 @@
+{
+  "OldId": "Ashm",
+  "NewId": "A0J4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Shm1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R03F"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoodOfCunning.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green Assassin)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ambush"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ambush"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Stops the unit from auto-acquiring enemies, allowing it to hide and ambush its enemies."
+    }
+  ]
+}

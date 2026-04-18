@@ -1,0 +1,96 @@
+{
+  "OldId": "uslh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 14
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "upar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R01X,Ruex"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "uabo,nfgl,umtw"
+    },
+    {
+      "Id": "ulum",
+      "Value": 65
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3.2
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Gore spattered fleshworks of the Scourge.|n|cfff5962dTrains:|R Abominations, Meat Wagons, Obsidian Statues, Plague Titans|n|cfff5962dResearches:|R Epidemic, Exhume Corpses, Flesh Shaping"
+    }
+  ]
+}

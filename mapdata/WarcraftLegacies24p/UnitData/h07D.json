@@ -1,0 +1,117 @@
+{
+  "OldId": "hshy",
+  "NewId": "h07D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ane2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 55
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R006,R00C"
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h02C,h060,h005,h04X,hdes,hbsh,hbot"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R03A,Rhac,Rgfo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNorthrendShipyard.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ShipyardIronforgeHumanV1.01.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Shipyard"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Shipyard"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas."
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

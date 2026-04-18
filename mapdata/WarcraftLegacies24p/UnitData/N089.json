@@ -1,0 +1,18 @@
+{
+  "OldId": "Nmsr",
+  "NewId": "N089",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

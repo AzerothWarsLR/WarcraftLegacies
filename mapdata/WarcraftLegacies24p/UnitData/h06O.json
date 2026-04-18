@@ -1,0 +1,155 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h06O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aloc"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 100000
+    },
+    {
+      "Id": "ulev",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "usin",
+      "Value": 300
+    },
+    {
+      "Id": "upri",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "usid",
+      "Value": 300
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "usma",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Consecration)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TheHolyBomb.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Effect"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushu",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

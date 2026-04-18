@@ -1,0 +1,249 @@
+{
+  "OldId": "ACac",
+  "NewId": "A0EN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02Q"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02Q"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02Q"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02Q"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.15
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ear2",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ear2",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ear2",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ear3",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ear3",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ear3",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASUnholy.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blue, Yellow - Archimonde, Jergosh)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Fear Aura"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholy.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Fear Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Reduces the damage of nearby enemy units.|n|n|cffffcc00Level 1|r - 10% reduced damage. |n|cffffcc00Level 2|r - 15% reduced damage. |n|cffffcc00Level 3|r - 20% reduced damage. |n|cffffcc00Level 4|r - 25% reduced damage."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\AuraDemon_Fixed.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fear Aura - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fear Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fear Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fear Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces the attack damage of nearby enemy units by 10%."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces the attack damage of nearby enemy units by 15%."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces the attack damage of nearby enemy units by 20%."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces the attack damage of nearby enemy units by 25%."
+    }
+  ]
+}

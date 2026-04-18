@@ -1,0 +1,77 @@
+{
+  "OldId": "Bams",
+  "NewId": "B06I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBearBlink.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Blink"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit will move with lightspeed."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Blink"
+    },
+    {
+      "Id": "fspd",
+      "Value": 2
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": "fta2",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fta3",
+      "Type": 3,
+      "Value": "foot,left"
+    },
+    {
+      "Id": "fta4",
+      "Type": 3,
+      "Value": "foot,right"
+    },
+    {
+      "Id": "fta5",
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": "ftac",
+      "Value": 6
+    }
+  ]
+}

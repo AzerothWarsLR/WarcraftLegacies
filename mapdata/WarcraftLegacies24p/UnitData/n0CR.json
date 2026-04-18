@@ -1,0 +1,48 @@
+{
+  "OldId": "npig",
+  "NewId": "n0CR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Spore - Tier 3 Patron"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Abomination"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "Patrons Tier 3 2"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    }
+  ]
+}

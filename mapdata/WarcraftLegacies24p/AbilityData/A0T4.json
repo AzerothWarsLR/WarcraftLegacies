@@ -1,0 +1,48 @@
+{
+  "OldId": "AId1",
+  "NewId": "A0T4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Purple Bishop and Paladin skin)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bishop of Silver Hand"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

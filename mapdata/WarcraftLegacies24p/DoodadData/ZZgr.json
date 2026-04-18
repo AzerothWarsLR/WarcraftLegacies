@@ -1,0 +1,23 @@
+{
+  "OldId": "ZZgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

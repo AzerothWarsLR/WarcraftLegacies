@@ -1,0 +1,16 @@
+{
+  "Left": 8576,
+  "Bottom": 1600,
+  "Right": 13536,
+  "Top": 3904,
+  "Name": "SouthshoreAmbient",
+  "CreationNumber": 324,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

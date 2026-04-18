@@ -1,0 +1,16 @@
+{
+  "Left": 13696,
+  "Bottom": 7232,
+  "Right": 20128,
+  "Top": 11712,
+  "Name": "StratholmeShipyard",
+  "CreationNumber": 84,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

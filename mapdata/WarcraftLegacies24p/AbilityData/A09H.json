@@ -1,0 +1,60 @@
+{
+  "OldId": "AIbg",
+  "NewId": "A09H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "Ibl1",
+      "Type": 3,
+      "Value": "osld"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritLodge.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pack Kodo)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Unpack Spirit Lodge"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Unpack Spirit Lodge"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Consumes the Pack Kodo to build a Spirit Lodge."
+    }
+  ]
+}

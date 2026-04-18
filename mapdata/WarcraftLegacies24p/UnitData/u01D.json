@@ -1,0 +1,28 @@
+{
+  "OldId": "uloc",
+  "NewId": "u01D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aloc,Afra"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 24
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Soul of Frostmourne"
+    }
+  ]
+}

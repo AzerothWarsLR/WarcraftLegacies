@@ -1,0 +1,35 @@
+{
+  "OldId": "pman",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 20
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "isto",
+      "Value": 3
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Restores 175 mana when used."
+    }
+  ]
+}

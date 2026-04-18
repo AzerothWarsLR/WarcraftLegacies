@@ -1,0 +1,69 @@
+{
+  "OldId": "npgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CF"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 975
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 180
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Teal)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 180
+    },
+    {
+      "Id": "uclr",
+      "Value": 180
+    },
+    {
+      "Id": "ushr",
+      "Value": 0
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ArcaneTower"
+    }
+  ]
+}

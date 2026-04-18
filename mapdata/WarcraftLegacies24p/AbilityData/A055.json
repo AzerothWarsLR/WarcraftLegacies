@@ -1,0 +1,183 @@
+{
+  "OldId": "ANab",
+  "NewId": "A055",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B017"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Nab6",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 1000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "Attack,two"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_AuraOfLight.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "war3mapImported\\TheHolyBomb.mdx"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Reginald Windsor)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Righteous Blow"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_RighteousFury.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Righteous Blow - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Reginald Windsor strikes an enemy with such strength that nearby enemies are also crippled.|n|n|cffffcc00Level 1|r - Deals 100 damage to the primary target and 50 to nearby enemies.|n|cffffcc00Level 2|r - Deals 175 damage to the primary target and 100 to nearby enemies.|n|cffffcc00Level 3|r - Deals 250 damage to the primary target and 150 to nearby enemies.|n|cffffcc00Level 4|r - Deals 325 damage to the primary target and 200 to nearby enemies.|n|cffffcc00Level 5|r - Deals 400 damage to the primary target and 250 to nearby enemies."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Righteous Blow"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reginald Windsor strikes an enemy with such strength that nearby enemies are also crippled. Deals 200 damage to the primary target and 50 to nearby enemies, slows their attack speed by 15% and movement speed by 50%. Lasts 8 seconds."
+    }
+  ]
+}

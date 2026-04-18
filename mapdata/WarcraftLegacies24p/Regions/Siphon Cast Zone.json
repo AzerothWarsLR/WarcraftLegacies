@@ -1,0 +1,16 @@
+{
+  "Left": -11744,
+  "Bottom": 7424,
+  "Right": -11488,
+  "Top": 7648,
+  "Name": "Siphon Cast Zone",
+  "CreationNumber": 116,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 128,
+    "A": 255
+  }
+}

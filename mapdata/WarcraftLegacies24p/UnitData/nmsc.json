@@ -1,0 +1,152 @@
+{
+  "OldId": "nmsc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 30
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "uhos",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aien,Acrs,A07L,AChw"
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 380
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R00K"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Mur\u0027gul Shadowcaster"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy ranged amphibious unit with Curse, Dispel Magic and Healing Ward. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

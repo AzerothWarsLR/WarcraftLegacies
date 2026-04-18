@@ -1,0 +1,19 @@
+{
+  "OldId": "BRrk",
+  "NewId": "D00X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Unslanted barrens rock"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "OldId": "hpea",
+  "NewId": "h019",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,Ahar,Ahrp,A106"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 6
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "h057,h07D,h01S,h07E,h07C,h048,h07H,h07B,harm,hgra,h042,n07U"
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "peon,sapper"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge, Worker)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "DwarfShoveler.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Mason"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Mason"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Skilled craftsman and designer of dwarven wonders.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees."
+    }
+  ]
+}

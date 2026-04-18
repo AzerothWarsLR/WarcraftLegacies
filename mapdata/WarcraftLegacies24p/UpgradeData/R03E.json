@@ -1,0 +1,116 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R03E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "h014"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03K"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "Aspo"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "A0IQ"
+    },
+    {
+      "Id": "gglb",
+      "Value": 50
+    },
+    {
+      "Id": "glmb",
+      "Value": 35
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gtib",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLiquidFire.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(stormwind Workshop)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Saboteur Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Saboteur Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows the training of |cffcece00Saboteurs|r in Workshop. They are similar to |cffcece00Brigadiers|r, but with following unique traits: |n|n- Adds 25 movement speed|n|n- Enables the |cffcece00Incendiary Cocktail |rability, which disables repairs on a building and slows it\u0027s attack while dealing additional damage over time.|n|n- Enables the |cffcece00Infiltrate|r ability, allowing the Saboteur to enter stealth for 14 seconds after a 2 second delay."
+    }
+  ]
+}

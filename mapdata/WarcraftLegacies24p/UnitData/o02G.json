@@ -1,0 +1,108 @@
+{
+  "OldId": "oalt",
+  "NewId": "o02G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CM,Argl,Abds"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 15
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 120
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o04A"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013,Renb,R064,Rosp,Rgfo"
+    },
+    {
+      "Id": "uclb",
+      "Value": 210
+    },
+    {
+      "Id": "uclg",
+      "Value": 210
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Jintha\u0027Alor"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

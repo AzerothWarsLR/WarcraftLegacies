@@ -1,0 +1,18 @@
+{
+  "OldId": "ACfa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(neutral, Elementalist)"
+    }
+  ]
+}

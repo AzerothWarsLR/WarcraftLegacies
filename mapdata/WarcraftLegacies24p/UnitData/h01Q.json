@@ -1,0 +1,271 @@
+{
+  "OldId": "hcth",
+  "NewId": "h01Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YH,A0YF,A0YE,ACrk,Aiun,ACce,ANbh"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.47
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "udea",
+      "Value": 1
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 93
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.53
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 80
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1725
+    },
+    {
+      "Id": "ulev",
+      "Value": 8
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "uori",
+      "Value": 4
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 200
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R08X"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessMadness.blp"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Nzoth)"
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\NyalothaNaga.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Immortal Guardian"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train - Immortal Guardian"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elite melee unit. They are the Personnal Guard of N\u0027zoth. Has the Bash, Combat Experience, Consuming Attack, Resistant Skin, Cleaving Attack and Void Tide abilities.|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Unbroken"
+    }
+  ]
+}

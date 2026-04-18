@@ -1,0 +1,87 @@
+{
+  "OldId": "ANdo",
+  "NewId": "A04P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 2
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "n059"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pit Fiends)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Doom - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CANdo,DataA1\u003E damage per second until it dies. Upon its death, a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled. |n|cffffcc00Level 1|r - 40 damage per second and 1 Elite Doom Guard summoned.|n|cffffcc00Level 2|r - 70 damage per second and 2 Elite Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 4 Elite Doom Guards summoned."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take30 damage per second until it dies. Upon its death, 2 Fel Hounds will spawn from its corpse. Doom cannot be dispelled or cancelled."
+    }
+  ]
+}

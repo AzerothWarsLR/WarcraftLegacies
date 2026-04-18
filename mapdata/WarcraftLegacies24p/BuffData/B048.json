@@ -1,0 +1,29 @@
+{
+  "OldId": "Bhwd",
+  "NewId": "B048",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStasisTrap.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Medical Destribution Platform"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Medical Destrubution Platform"
+    }
+  ]
+}

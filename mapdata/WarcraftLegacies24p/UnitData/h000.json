@@ -1,0 +1,182 @@
+{
+  "OldId": "hcas",
+  "NewId": "h000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GA,A04Y,Argl"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 106
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R06Q"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h09Y,h00F,hpea"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DomeOfTruth.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Capital Palace"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 8
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

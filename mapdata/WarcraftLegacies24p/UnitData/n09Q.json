@@ -1,0 +1,71 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n09Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0SY,Avul"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "ubdg",
+      "Value": 0
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran Prison Secret Room)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tunnel"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

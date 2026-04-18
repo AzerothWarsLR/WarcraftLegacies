@@ -1,0 +1,235 @@
+{
+  "OldId": "ACad",
+  "NewId": "A0PA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cad1",
+      "Value": 24
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Cad1",
+      "Value": 48
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Cad1",
+      "Value": 72
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 2500
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,ground"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,ground"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,ground"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lich King, teron)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Mass Animate Dead"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAnimateDead.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Mass Animate Dead - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Animates alot nearby corpses to fight for the Lich King. Lasts 60 seconds.|n|n|cffffcc00Level 1|r - Animates 50 nearby corpses. Got a 240 seconds cooldown. |n|cffffcc00Level 2|r - Animates 100 nearby corpses. Got a 180 seconds cooldown. |n|cffffcc00Level 3|r - Animates 200 nearby corpses. Got a 120 seconds cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mass Animate Dead  - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mass Animate Dead - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mass Animate Dead - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Animates 24 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 240 seconds cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Animates 48 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 180 seconds cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Animates 72 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 120 seconds cooldown."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B044",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Overheat"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "The Dark Iron War Golem is in an overheat state . It attacks a lot faster but takes more damage."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Oveheat"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Environment\\NightElfBuildingFire\\ElfLargeBuildingFire1.mdl"
+    }
+  ]
+}

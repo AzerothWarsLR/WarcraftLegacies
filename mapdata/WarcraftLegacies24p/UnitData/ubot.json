@@ -1,0 +1,85 @@
+{
+  "OldId": "ubot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 25
+    },
+    {
+      "Id": "ugor",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 4000
+    },
+    {
+      "Id": "ulum",
+      "Value": 280
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R006"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge-Legion)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Haunted Transport Ship"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Haunted Transport Ship"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units."
+    }
+  ]
+}

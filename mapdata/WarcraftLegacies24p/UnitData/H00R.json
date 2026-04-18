@@ -1,0 +1,176 @@
+{
+  "OldId": "Huth",
+  "NewId": "H00R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0W3,A0GK,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 32
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0W4,A08M,Aamk,A01R,A0FK"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 125
+    },
+    {
+      "Id": "uint",
+      "Value": 15
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "ua1r",
+      "Value": 120
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 24
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02S"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroVarianWrynn.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Varian Wrynn"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dark Green)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\King Varian Wrynn1.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "King Varian Wrynn"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Varian Wrynn"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "war3mapImported\\SSHHeroVarianWrynn.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dAbilities:|r Command Aura|n|cfff5962dCan Learn:|R Shockwave, Lo\u0027gosh Fury, Battle Experience, Horn of Stormwind|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Varian Wrynn"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "King of Stormwind"
+    }
+  ]
+}

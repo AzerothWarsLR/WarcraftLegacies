@@ -1,0 +1,116 @@
+{
+  "OldId": "hkni",
+  "NewId": "h01B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0LQ,S00T,A020,A0IQ,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 8
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h06F"
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,R02Y,Rhme,Rhar,Rhan,Rguv"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBanditLord.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(stormwind)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\BanditLord\\BanditLord.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Outrider"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Outrider"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Simple rider warrior of the Southern lands.|n|cfff5962dAbilities:|R Charge, Trample|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

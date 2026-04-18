@@ -1,0 +1,34 @@
+{
+  "OldId": "Bslo",
+  "NewId": "B04K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Stagger"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is staggered; its attack rate are reduced."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

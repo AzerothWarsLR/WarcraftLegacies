@@ -1,0 +1,34 @@
+{
+  "OldId": "Binf",
+  "NewId": "B04L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoom.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Soul Sacrifice"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has given a piece of its soul for great power but lowered armour."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "OldId": "YOlb",
+  "NewId": "D033",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\UrugarthVenomFissure.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Green Volcano"
+    },
+    {
+      "Id": "dshf",
+      "Value": 1
+    }
+  ]
+}

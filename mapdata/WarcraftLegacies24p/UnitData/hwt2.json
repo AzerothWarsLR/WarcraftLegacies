@@ -1,0 +1,76 @@
+{
+  "OldId": "hwt2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANbh"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 450
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "upri",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran-Jaina)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Jaina\u0027s personal elemental.|n|cfff5962dAbilities:|R Bash|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    }
+  ]
+}

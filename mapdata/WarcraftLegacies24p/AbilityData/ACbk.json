@@ -1,0 +1,72 @@
+{
+  "OldId": "ACbk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nba1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "Nbau",
+      "Type": 3,
+      "Value": "ndr2"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Death Knight)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Black Strike"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds \u003CACbk,DataA1\u003E bonus damage to attacks. Units killed while under the effect of Black Strike will turn into skeletons."
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    }
+  ]
+}

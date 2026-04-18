@@ -1,0 +1,16 @@
+{
+  "Left": 20320,
+  "Bottom": 9408,
+  "Right": 20352,
+  "Top": 9440,
+  "Name": "HavenshireTaxe",
+  "CreationNumber": 198,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

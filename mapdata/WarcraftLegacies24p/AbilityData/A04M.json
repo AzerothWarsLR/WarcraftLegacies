@@ -1,0 +1,84 @@
+{
+  "OldId": "ANca",
+  "NewId": "A04M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrosty.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Lich King, DK Arthas, Purple - King Arthas)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "The Power of Frostmourne"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostMourne.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "T"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn |cffffcc00T|rhe Power of Frostmourne - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Frostmourne gives the power for Arthas to hit multiple enemies with one swing of his sword .|n|n|cffffcc00Level 1|r - 25% of damage is splash. |n|cffffcc00Level 2|r - 40% of damage is splash. |n|cffffcc00Level 3|r - 55% of damage is splash."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "The Power of Frostmourne"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Frostmourne gives Arthas the power to do 25% of his damage to enemies near the primary attacked unit."
+    }
+  ]
+}

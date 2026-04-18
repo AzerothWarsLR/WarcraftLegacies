@@ -1,0 +1,96 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R091",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "h03K"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "gtib",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAncientOfTheMoon.blp"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druid)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Unleash the Spirits of Ashenvale"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Unleash the Spirits of Ashenvale"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "The Forest will be unleashed upon the Warsong Lumber Camp.|n|n|cffffcc00Required to complete the quest Spirits of Ashenvale."
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    }
+  ]
+}

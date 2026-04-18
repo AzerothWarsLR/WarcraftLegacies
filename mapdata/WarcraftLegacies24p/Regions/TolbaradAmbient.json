@@ -1,0 +1,16 @@
+{
+  "Left": 10400,
+  "Bottom": -2176,
+  "Right": 12416,
+  "Top": 544,
+  "Name": "TolbaradAmbient",
+  "CreationNumber": 334,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

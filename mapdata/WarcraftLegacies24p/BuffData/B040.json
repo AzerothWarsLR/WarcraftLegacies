@@ -1,0 +1,29 @@
+{
+  "OldId": "BOsf",
+  "NewId": "B040",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Summon Minion"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp"
+    }
+  ]
+}

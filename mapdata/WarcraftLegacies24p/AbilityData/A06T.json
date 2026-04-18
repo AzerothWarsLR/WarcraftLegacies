@@ -1,0 +1,14 @@
+{
+  "OldId": "ACsp",
+  "NewId": "A06T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    }
+  ]
+}

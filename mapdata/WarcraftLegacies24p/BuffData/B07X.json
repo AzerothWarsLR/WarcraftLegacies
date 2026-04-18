@@ -1,0 +1,24 @@
+{
+  "OldId": "BNcg",
+  "NewId": "B07X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Void Portal"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Void Portal"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Pink - Neeru Void Portal)"
+    }
+  ]
+}

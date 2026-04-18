@@ -1,0 +1,268 @@
+{
+  "OldId": "hkee",
+  "NewId": "h0AF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACav,Argl"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1300
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": "udl1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 45
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua1f",
+      "Value": 25
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "ugol",
+      "Value": 70
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "ua1h",
+      "Value": 50
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1750
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1400
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "ua1q",
+      "Value": 150
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1300
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 18
+    },
+    {
+      "Id": "usr1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,structure,wall"
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,wall,ward"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o05A,o05D"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DraeneiVaultOfRelics V1.01.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Farahlon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "uclg",
+      "Value": 155
+    },
+    {
+      "Id": "uclb",
+      "Value": 155
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

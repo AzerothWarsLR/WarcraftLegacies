@@ -1,0 +1,34 @@
+{
+  "OldId": "Agyv",
+  "NewId": "A0S6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTelescope.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Arathor Flagship)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Crow\u0027s Nest Lookout"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This ship has increased sight radius and can detect invisible units."
+    }
+  ]
+}

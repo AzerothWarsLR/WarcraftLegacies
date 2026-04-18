@@ -1,0 +1,16 @@
+{
+  "Left": -2464,
+  "Bottom": -1568,
+  "Right": -2336,
+  "Top": -1376,
+  "Name": "Thrall 4",
+  "CreationNumber": 248,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

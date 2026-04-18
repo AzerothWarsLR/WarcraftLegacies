@@ -1,0 +1,103 @@
+[
+  {
+    "TypeId": 1362112623,
+    "Variation": 0,
+    "Position": {
+      "X": 22592,
+      "Y": 12480,
+      "Z": 124.08912
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1362112623,
+    "Flags": 2,
+    "OwnerId": 24,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": 0,
+    "RandomData": {
+      "Level": 1,
+      "Class": 0
+    },
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 989
+  },
+  {
+    "TypeId": 1328558159,
+    "Variation": 0,
+    "Position": {
+      "X": 22347.713,
+      "Y": 12487.2295,
+      "Z": 92.64928
+    },
+    "Rotation": 3.0707324,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1328558159,
+    "Flags": 2,
+    "OwnerId": 24,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": 240,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -1,
+    "HeroLevel": 6,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [
+      {
+        "AbilityId": 1918977345,
+        "IsAutocastActive": false,
+        "HeroAbilityLevel": 2
+      },
+      {
+        "AbilityId": 1212493889,
+        "IsAutocastActive": true,
+        "HeroAbilityLevel": 0
+      },
+      {
+        "AbilityId": 1262891073,
+        "IsAutocastActive": true,
+        "HeroAbilityLevel": 2
+      },
+      {
+        "AbilityId": 843919425,
+        "IsAutocastActive": true,
+        "HeroAbilityLevel": 2
+      }
+    ],
+    "RandomDataMode": 0,
+    "RandomData": {
+      "Level": 1,
+      "Class": 0
+    },
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 1933
+  }
+]

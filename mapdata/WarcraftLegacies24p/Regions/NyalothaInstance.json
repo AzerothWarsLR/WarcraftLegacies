@@ -1,0 +1,16 @@
+{
+  "Left": -28672,
+  "Bottom": -7264,
+  "Right": -22656,
+  "Top": 1536,
+  "Name": "NyalothaInstance",
+  "CreationNumber": 511,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A0WE",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Level": 4,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nsel"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_RighteousFury.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lordaeron - Uther)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Consecration"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_RighteousFury.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Consecration - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero consecrates the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units by 50%. |n|n|cffffcc00Level 1|r - 100 damage.  |n|cffffcc00Level 2|r - 150 damage. |n|cffffcc00Level 3|r - 200 damage. |n|cffffcc00Level 4|r - 250 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecration (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecration (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecration (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecration (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing 100 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing 150 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing 200 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing 250 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+    }
+  ]
+}

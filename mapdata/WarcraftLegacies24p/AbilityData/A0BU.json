@@ -1,0 +1,29 @@
+{
+  "OldId": "Atru",
+  "NewId": "A0BU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blue - Fel Stalkers)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Acute Senses"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Acute Senses"
+    }
+  ]
+}

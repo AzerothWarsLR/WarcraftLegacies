@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1886408793,
+    "Variation": 0,
+    "Position": {
+      "X": 9589.248,
+      "Y": 4868.0576,
+      "Z": 53.25
+    },
+    "Rotation": 5.5613327,
+    "Scale": {
+      "X": 0.79999995,
+      "Y": 0.79999995,
+      "Z": 0.79999995
+    },
+    "SkinId": 1886408793,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 11565
+  },
+  {
+    "TypeId": 1886146393,
+    "Variation": 0,
+    "Position": {
+      "X": 9602.437,
+      "Y": 4936.477,
+      "Z": 53.25
+    },
+    "Rotation": 0.48869222,
+    "Scale": {
+      "X": 0.6499999,
+      "Y": 0.6499999,
+      "Z": 0.6499999
+    },
+    "SkinId": 1886146393,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12401
+  },
+  {
+    "TypeId": 1634095193,
+    "Variation": 0,
+    "Position": {
+      "X": 9576.95,
+      "Y": 5346.31,
+      "Z": 53.25
+    },
+    "Rotation": 5.136096,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1634095193,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12031
+  },
+  {
+    "TypeId": 1651789658,
+    "Variation": 0,
+    "Position": {
+      "X": 9755.206,
+      "Y": 4971.8433,
+      "Z": 53.25
+    },
+    "Rotation": 1.2696503,
+    "Scale": {
+      "X": 0.5499999,
+      "Y": 0.5499999,
+      "Z": 0.5499999
+    },
+    "SkinId": 1651789658,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 16479
+  },
+  {
+    "TypeId": 1651658586,
+    "Variation": 0,
+    "Position": {
+      "X": 9853.694,
+      "Y": 4867.708,
+      "Z": 53.25
+    },
+    "Rotation": 4.7762537,
+    "Scale": {
+      "X": 0.74999994,
+      "Y": 0.74999994,
+      "Z": 0.74999994
+    },
+    "SkinId": 1651658586,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 16482
+  }
+]

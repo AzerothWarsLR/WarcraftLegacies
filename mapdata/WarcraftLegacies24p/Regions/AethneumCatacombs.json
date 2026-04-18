@@ -1,0 +1,16 @@
+{
+  "Left": -28160,
+  "Bottom": 17952,
+  "Right": -23072,
+  "Top": 24544,
+  "Name": "AethneumCatacombs",
+  "CreationNumber": 382,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

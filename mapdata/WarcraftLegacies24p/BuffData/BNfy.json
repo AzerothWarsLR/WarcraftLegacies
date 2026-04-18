@@ -1,0 +1,18 @@
+{
+  "OldId": "BNfy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Void Portal"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Void Portal"
+    }
+  ]
+}

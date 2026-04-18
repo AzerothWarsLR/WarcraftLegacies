@@ -1,0 +1,54 @@
+{
+  "OldId": "nbld",
+  "NewId": "n0AG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0U5,Adtg,ACce,ACav"
+    },
+    {
+      "Id": "ubba",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Id": "ua1b",
+      "Value": 150
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lord Barov"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Undead\\HeroDeathknight\\HeroDeathknight.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 190
+    },
+    {
+      "Id": "uclb",
+      "Value": 170
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "OldId": "Ansk",
+  "NewId": "A02G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(moam)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Stoneform"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Stoneform - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero can transform into stone, greatly reducing physical damage taken. |n|n|cffffcc00Level 1|r - Blocks 14 damage to a minimum of 5 damage.|n|cffffcc00Level 2|r - Blocks 20 damage to a minimum of 7 damage.|n|cffffcc00Level 3|r - Blocks 26 damage to a minimum of 9 damage.|n|cffffcc00Level 4|r - Blocks 32 damage to a minimum of 11 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stoneform - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stoneform - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stoneform - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stoneform - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero\u0027s Stoneform blocks 14 damage from all physical attacks to a minimum of 5 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero\u0027s Stoneform blocks 20 damage from all physical attacks to a minimum of 7 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero\u0027s Stoneform blocks 26 damage from all physical attacks to a minimum of 9 damage."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero\u0027s Stoneform blocks 32 damage from all physical attacks to a minimum of 11 damage."
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ]
+}

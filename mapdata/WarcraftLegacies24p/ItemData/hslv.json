@@ -1,0 +1,29 @@
+{
+  "OldId": "hslv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 10
+    },
+    {
+      "Id": "ista",
+      "Value": 9
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "OldId": "Hjai",
+  "NewId": "H05Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A033,ANhx,A01V,A0XB,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1800
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R016"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11J,AInv"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Lord Wizard"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Khadgar.mdl"
+    },
+    {
+      "Id": "uhas",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lord Wizard"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Khadgar"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Lord Wizard"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Arcane Hero, adept at dealing magic damage and transporting armies.|n|cfff5962dCan learn:|R Forked Thunder, Polymorph, Wise Council, Mass Teleport|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroArchMage"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Khadgar"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    }
+  ]
+}

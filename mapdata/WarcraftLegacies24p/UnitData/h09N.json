@@ -1,0 +1,246 @@
+{
+  "OldId": "hbar",
+  "NewId": "h09N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0UB"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h096,h095,h08M"
+    },
+    {
+      "Id": "ulum",
+      "Value": 280
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h07Z"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "h09P"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Wood"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 985
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1800
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uwu1",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Grounds to train peasants on the art of war.|n|n|r|cfff5962dTrains:|R Men-at-arms, Bowman, Light Cavalry\r\n|cfff5962dUpgrades Into:|R Scarlet Keep|n|n|cffffcc00Attacks land and air units.|r |n|cffd45e19Generates Taxes|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Castle.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Palisade Fort"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Palisade Fort"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCastle3.blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowBlacksmith"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

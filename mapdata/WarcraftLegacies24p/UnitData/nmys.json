@@ -1,0 +1,50 @@
+{
+  "OldId": "nmys",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Asb1,Aihn"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1025
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Green - Naga)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

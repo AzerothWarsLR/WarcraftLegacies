@@ -1,0 +1,166 @@
+{
+  "OldId": "Huth",
+  "NewId": "H09Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A01R,A0QI,AHad,A06M"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 125
+    },
+    {
+      "Id": "uint",
+      "Value": 24
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "ua1r",
+      "Value": 120
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 34
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R087"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Tirion Fordring"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Argent)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\LegendaryPaladin.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Supreme Commander"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Tirion Fordring"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Tirion Fordring"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dCan Learn:|R Shockwave, Divine Shield, Fiery Aura, Guarding Light|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Tirion Fordring"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.8
+    }
+  ]
+}

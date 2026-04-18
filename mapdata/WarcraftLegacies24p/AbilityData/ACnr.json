@@ -1,0 +1,33 @@
+{
+  "OldId": "ACnr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu"
+    }
+  ]
+}

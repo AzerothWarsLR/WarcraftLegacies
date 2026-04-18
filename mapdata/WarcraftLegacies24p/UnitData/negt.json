@@ -1,0 +1,128 @@
+{
+  "OldId": "negt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adts"
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 26
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 40
+    },
+    {
+      "Id": "ulur",
+      "Value": 70
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "n003"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhac"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h02Y"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\other\\ElvenGuardMagicTower\\ElvenGuardMagicTower.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Sun Tower"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Sun Tower"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

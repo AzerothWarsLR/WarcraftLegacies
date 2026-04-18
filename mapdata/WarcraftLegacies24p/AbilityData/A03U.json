@@ -1,0 +1,73 @@
+{
+  "OldId": "Ahea",
+  "NewId": "A03U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01Y"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOn.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal succubus)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Shadow Infusion"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Shadow Infusion"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Infuses an ally with dark magic, healing a target friendly non-mechanical wounded unit for 25 hit points."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOff.blp"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "Srtt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R03L"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "n086"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel Horde-Deathknights)"
+    }
+  ]
+}

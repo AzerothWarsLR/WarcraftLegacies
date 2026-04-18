@@ -1,0 +1,59 @@
+{
+  "OldId": "ACad",
+  "NewId": "A109",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cad1",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Death Knight)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises 3 dead units in an area for 60 seconds."
+    }
+  ]
+}

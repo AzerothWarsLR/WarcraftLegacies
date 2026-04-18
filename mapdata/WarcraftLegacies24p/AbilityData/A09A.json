@@ -1,0 +1,25 @@
+{
+  "OldId": "Aap2",
+  "NewId": "A09A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Plague Ward Level 2)"
+    }
+  ]
+}

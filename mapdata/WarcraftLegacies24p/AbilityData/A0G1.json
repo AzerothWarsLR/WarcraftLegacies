@@ -1,0 +1,38 @@
+{
+  "OldId": "Awar",
+  "NewId": "A0G1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNSeaGiantPulverize.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Sea Giant)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CA0G1,DataA1\u003E% chance that an attack will deal \u003CA0G1,DataB1\u003E damage to nearby units."
+    }
+  ]
+}

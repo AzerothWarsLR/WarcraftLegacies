@@ -1,0 +1,59 @@
+{
+  "OldId": "Asds",
+  "NewId": "A0OW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Dda1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 300 damage in a 300 radius. Deals 3 times more damage against buildings. Can destroy trees."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

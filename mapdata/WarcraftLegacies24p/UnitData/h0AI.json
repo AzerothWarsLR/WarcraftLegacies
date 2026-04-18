@@ -1,0 +1,203 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h0AI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 12
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,R01C,Rhar,Rhme,R05O"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0V3,ACrk,A0QZ,A0HY,Apiv,A07F,A0QW,Aihn"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 100
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 45
+    },
+    {
+      "Id": "upri",
+      "Value": 14
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "udu1",
+      "Value": 1
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Defias Assassin"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Defias Assassin"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HumanAssassine.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanAssassine.blp"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elite Assassin of the SI:7.|n|cfff5962dAbilities:|R Smoke Bomb, Stealth, Slow Poison, Resistant Skin|n|cfff5962dCan Learn:|R Runic Strength|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroDemonHunter"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Arathor-Elite)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    }
+  ]
+}

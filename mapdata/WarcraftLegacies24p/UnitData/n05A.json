@@ -1,0 +1,133 @@
+{
+  "OldId": "nntt",
+  "NewId": "n05A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 160
+    },
+    {
+      "Id": "ugor",
+      "Value": 35
+    },
+    {
+      "Id": "ulur",
+      "Value": 140
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h0AC,nnrg,nmpe"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulum",
+      "Value": 280
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "LEca,Argl,Abds"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build - Temple of Tides"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Primary structure, used to train Mur\u0027gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade."
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,third"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TempleofTides4TierV3.00.mdl"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Vault of the Eternal Palace"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

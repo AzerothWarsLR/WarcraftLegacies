@@ -1,0 +1,34 @@
+{
+  "OldId": "LWw0",
+  "NewId": "D05C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Fel Waterfall"
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\UrugarthVenomfall.mdl"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 200
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 0
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "OldId": "Asta",
+  "NewId": "A03E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bstt"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Sta1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Sta2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Sta3",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Sta4",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "Stau",
+      "Type": 3,
+      "Value": "otot"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Eredar Warlock)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stasis Trap (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts 150 seconds. |nThe stun lasts 6 seconds. |n 10 second activation delay."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts 200 seconds. |nThe stun lasts 8 seconds. |n 8 second activation delay."
+    }
+  ]
+}

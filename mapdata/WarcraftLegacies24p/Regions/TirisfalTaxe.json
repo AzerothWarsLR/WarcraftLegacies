@@ -1,0 +1,16 @@
+{
+  "Left": 7072,
+  "Bottom": 10016,
+  "Right": 7104,
+  "Top": 10048,
+  "Name": "TirisfalTaxe",
+  "CreationNumber": 186,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "OldId": "BUts",
+  "NewId": "B0A8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThorns.blp"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Spike Aura (Warsong)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftac",
+      "Value": 0
+    }
+  ]
+}

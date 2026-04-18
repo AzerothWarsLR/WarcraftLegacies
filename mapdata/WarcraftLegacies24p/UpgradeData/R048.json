@@ -1,0 +1,83 @@
+{
+  "OldId": "Remk",
+  "NewId": "R048",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Id": "glmb",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R047"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A0JL"
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Dryads\u0027 Slow Poison by increasing its damage dealt per second to \u003CA0JL,DataA3\u003E and duration to \u003CA0JL,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Deadly Poison"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Deadly Poison"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLethal_Venom.blp"
+    }
+  ]
+}

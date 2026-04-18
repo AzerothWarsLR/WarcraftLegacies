@@ -1,0 +1,73 @@
+{
+  "OldId": "nsts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACev,Aiun,ACcs,Ashm"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 12
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "usrg",
+      "Value": 50
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ulfi",
+      "Value": 14
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

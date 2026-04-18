@@ -1,0 +1,197 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h0A8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A02O,ACrk,A0KQ,A064,A0HI,A06I,Aihn"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ubba",
+      "Value": 26
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 90
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "upri",
+      "Value": 15
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rguv,Rhme,R00F"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKingRagnar.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 230
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge-Elite)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\KingBloodstoneRagnar.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 230
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chieftain"
+    },
+    {
+      "Id": "uclr",
+      "Value": 230
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Chieftain"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Aspiring commander under General Angerforge.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    }
+  ]
+}

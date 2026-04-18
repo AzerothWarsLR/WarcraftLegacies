@@ -1,0 +1,24 @@
+{
+  "OldId": "uloc",
+  "NewId": "u005",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\AncestralSpirit\\AncestralSpiritCaster.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Totemic Spirits"
+    }
+  ]
+}

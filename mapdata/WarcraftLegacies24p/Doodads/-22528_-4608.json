@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1496461380,
+    "Variation": 2,
+    "Position": {
+      "X": -22804.008,
+      "Y": -4798.662,
+      "Z": 1035.0509
+    },
+    "Rotation": 5.3407073,
+    "Scale": {
+      "X": 3.6499975,
+      "Y": 3.6499975,
+      "Z": 3.6499975
+    },
+    "SkinId": 1496461380,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 35693
+  },
+  {
+    "TypeId": 1328689220,
+    "Variation": 1,
+    "Position": {
+      "X": -22813.623,
+      "Y": -4923.352,
+      "Z": 714.77545
+    },
+    "Rotation": 3.4075809,
+    "Scale": {
+      "X": 1,
+      "Y": 1.55,
+      "Z": 1.35
+    },
+    "SkinId": 1328689220,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33899
+  },
+  {
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -22721.637,
+      "Y": -4692.729,
+      "Z": 734.24976
+    },
+    "Rotation": 3.6075888,
+    "Scale": {
+      "X": 1.3085003,
+      "Y": 1.3085003,
+      "Z": 2.4584992
+    },
+    "SkinId": 1160982596,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33898
+  },
+  {
+    "TypeId": 1446326340,
+    "Variation": 0,
+    "Position": {
+      "X": -22865.385,
+      "Y": -5014.706,
+      "Z": 651.06067
+    },
+    "Rotation": 3.851028,
+    "Scale": {
+      "X": 3.3065886,
+      "Y": 3.3065886,
+      "Z": 4.006588
+    },
+    "SkinId": 1446326340,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33881
+  },
+  {
+    "TypeId": 1177890884,
+    "Variation": 1,
+    "Position": {
+      "X": -22797.043,
+      "Y": -4717.9526,
+      "Z": 798.25
+    },
+    "Rotation": 4.520462,
+    "Scale": {
+      "X": 2.2499995,
+      "Y": 2.2499995,
+      "Z": 2.2499995
+    },
+    "SkinId": 1177890884,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33977
+  }
+]

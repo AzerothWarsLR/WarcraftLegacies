@@ -1,0 +1,98 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A0UX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R05C"
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B040"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken "
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Zombie"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a Zombie to fight for the Archivist. |nLasts \u003CA029,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNZombie.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon Zombie"
+    }
+  ]
+}

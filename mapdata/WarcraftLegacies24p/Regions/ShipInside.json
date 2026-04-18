@@ -1,0 +1,16 @@
+{
+  "Left": -15552,
+  "Bottom": -24608,
+  "Right": -15008,
+  "Top": -24160,
+  "Name": "ShipInside",
+  "CreationNumber": 265,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

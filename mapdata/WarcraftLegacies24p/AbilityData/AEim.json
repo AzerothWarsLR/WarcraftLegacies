@@ -1,0 +1,226 @@
+{
+  "OldId": "AEim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A7"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A7"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A7"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "war3mapImported\\HolyTornado.mdx"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(velen)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Divine Storm"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Divine Storm - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Unleashes divine flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - 35 damage per second. |n|cffffcc00Level 2|r - 60 damage per second. |n|cffffcc00Level 3|r - 85 damage per second."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Divine Storm - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Divine Storm - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Divine Storm - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 35 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 60 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 85 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Divine Storm - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Divine Storm - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Divine Storm - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Deactivate Divine Storm to stop draining mana."
+    }
+  ]
+}

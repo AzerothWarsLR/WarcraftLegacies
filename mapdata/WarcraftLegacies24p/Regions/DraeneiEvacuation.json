@@ -1,0 +1,16 @@
+{
+  "Left": -21984,
+  "Bottom": 6976,
+  "Right": -20000,
+  "Top": 9344,
+  "Name": "DraeneiEvacuation",
+  "CreationNumber": 136,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

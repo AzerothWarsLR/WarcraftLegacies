@@ -1,0 +1,25 @@
+{
+  "OldId": "spro",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 20
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

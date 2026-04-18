@@ -1,0 +1,61 @@
+{
+  "OldId": "Rwdm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R058"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Frostwolf-Warsong)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Improved War Drums"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the damage bonus that the War Drums aura on the Kodo Beast gives to 25%. War Drums increases the damage of friendly units around Kodo Beasts."
+    }
+  ]
+}

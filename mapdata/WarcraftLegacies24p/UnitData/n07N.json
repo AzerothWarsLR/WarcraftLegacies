@@ -1,0 +1,232 @@
+{
+  "OldId": "nzep",
+  "NewId": "n07N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0VV,A0IZ,A0IX,A0IY"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua2d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 15
+    },
+    {
+      "Id": "ua2b",
+      "Value": 28
+    },
+    {
+      "Id": "ugol",
+      "Value": 35
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 875
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1000
+    },
+    {
+      "Id": "ua2z",
+      "Value": 1000
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 300
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 2
+    },
+    {
+      "Id": "ua2s",
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 210
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 300
+    },
+    {
+      "Id": "usst",
+      "Value": 300
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "debris,enemies,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R077"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Human Destroyer Zeppelin.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl"
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Airship"
+    },
+    {
+      "Id": "uslz",
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Airship"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Dwarven engineering in the hands of ingenuic humans.|n|cfff5962dAbilities:|r Cloud, Rocket Barrage, Repair Crew, Spyglass|n|n|cff99b4d1Can only build 6.|n|r|cffffd700Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Boat"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

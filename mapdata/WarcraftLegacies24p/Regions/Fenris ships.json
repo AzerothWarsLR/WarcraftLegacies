@@ -1,0 +1,16 @@
+{
+  "Left": 5760,
+  "Bottom": 4960,
+  "Right": 13024,
+  "Top": 8128,
+  "Name": "Fenris ships",
+  "CreationNumber": 196,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "OldId": "AEah",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eah1",
+      "Type": 2,
+      "Value": 0.08
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eah1",
+      "Type": 2,
+      "Value": 0.16
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eah1",
+      "Type": 2,
+      "Value": 0.24
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eah1",
+      "Type": 2,
+      "Value": 0.32
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Cenarius)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker\u0027s damage back to it. |n|n|cffffcc00Level 1|r - Returns 8% damage. |n|cffffcc00Level 2|r - Returns 16% damage. |n|cffffcc00Level 3|r - Returns 24% damage.|n|cffffcc00Level 4|r - Returns 32% damage."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thorns Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "An aura that gives friendly nearby units a damage shield, which deals \u003CAEah,DataA4,%\u003E% of an enemy unit\u0027s melee attack damage back to it."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "OldId": "Ecen",
+  "NewId": "E00H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 18
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AEer,A02M,A03B,A0C6,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "uint",
+      "Value": 23
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": "utco",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R018,Reuv"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKeeperGhostBlue.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids-GHOST)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\nightelf\\HeroKeeperoftheGroveGhost\\HeroKeeperoftheGroveGhost.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Demigod of the Night Elves"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

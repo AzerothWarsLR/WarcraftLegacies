@@ -1,0 +1,80 @@
+{
+  "OldId": "ANcf",
+  "NewId": "A02P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireForTheCannon.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(worgen blood shaman)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Fire"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing 75 damage and an additional 10 damage over 10 seconds."
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "Bam2",
+  "NewId": "B04S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireBolt.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Last for 2 mins"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "These ships are barely holding together"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "2 mins!"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

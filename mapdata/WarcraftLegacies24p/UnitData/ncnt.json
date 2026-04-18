@@ -1,0 +1,18 @@
+{
+  "OldId": "ncnt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

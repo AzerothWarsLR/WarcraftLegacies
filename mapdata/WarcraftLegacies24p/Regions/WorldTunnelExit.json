@@ -1,0 +1,16 @@
+{
+  "Left": 17248,
+  "Bottom": -11488,
+  "Right": 17824,
+  "Top": -10944,
+  "Name": "WorldTunnelExit",
+  "CreationNumber": 467,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

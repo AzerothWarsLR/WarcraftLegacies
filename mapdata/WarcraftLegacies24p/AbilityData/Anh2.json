@@ -1,0 +1,36 @@
+{
+  "OldId": "Anh2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hea1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Heal (|cffffcc00Q|r)"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

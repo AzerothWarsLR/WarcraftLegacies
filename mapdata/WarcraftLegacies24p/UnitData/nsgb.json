@@ -1,0 +1,12 @@
+{
+  "OldId": "nsgb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucar",
+      "Value": 1
+    }
+  ]
+}

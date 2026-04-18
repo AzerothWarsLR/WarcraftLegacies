@@ -1,0 +1,16 @@
+{
+  "Left": 3616,
+  "Bottom": 7456,
+  "Right": 3744,
+  "Top": 7616,
+  "Name": "IllidanBoat2",
+  "CreationNumber": 389,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

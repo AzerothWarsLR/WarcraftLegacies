@@ -1,0 +1,35 @@
+{
+  "OldId": "ACbc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFire.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Chen)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Fire"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing \u003CACbc,DataA1\u003E damage to land and air units."
+    }
+  ]
+}

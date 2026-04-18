@@ -1,0 +1,16 @@
+{
+  "Left": 1344,
+  "Bottom": -3840,
+  "Right": 6016,
+  "Top": 5472,
+  "Name": "gilneasblock",
+  "CreationNumber": 474,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

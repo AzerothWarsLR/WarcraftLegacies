@@ -1,0 +1,19 @@
+{
+  "OldId": "YTpc",
+  "NewId": "B009",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Big path blocker"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Default.tga"
+    }
+  ]
+}

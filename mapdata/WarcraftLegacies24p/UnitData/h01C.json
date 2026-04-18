@@ -1,0 +1,167 @@
+{
+  "OldId": "hrif",
+  "NewId": "h01C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0AC,A0F3,Aihn"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0AC"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 7
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.334
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "ua1r",
+      "Value": 550
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R04A,R01P,R01N,Rhar,Rhpm,Rguv,Rhme"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFootarcher.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Archer  Lordaeron_Light_Alter.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 62
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 71
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Archer_Lordaeron_ArrowMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Huntsman"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Huntsman"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Highly skilled hunter of Tirisfal.|n|cfff5962dCan learn:|R Ensnare, Rapid Fire|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Footman"
+    }
+  ]
+}

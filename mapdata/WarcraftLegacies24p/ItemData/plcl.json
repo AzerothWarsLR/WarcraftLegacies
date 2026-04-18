@@ -1,0 +1,26 @@
+{
+  "OldId": "plcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 7
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

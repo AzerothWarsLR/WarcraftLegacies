@@ -1,0 +1,16 @@
+{
+  "Left": 13600,
+  "Bottom": 3040,
+  "Right": 19136,
+  "Top": 5408,
+  "Name": "HinterlandAmbient1",
+  "CreationNumber": 335,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

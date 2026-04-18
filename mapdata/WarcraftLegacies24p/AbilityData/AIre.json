@@ -1,0 +1,19 @@
+{
+  "OldId": "AIre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "( 500 hp 200 mana)"
+    }
+  ]
+}

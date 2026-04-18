@@ -1,0 +1,104 @@
+{
+  "OldId": "AOws",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 325
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Wrs1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "UNUSED"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAOws,DataA1\u003E damage, \u003CAOws,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CAOws,DataA2\u003E damage, \u003CAOws,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CAOws,DataA3\u003E damage, \u003CAOws,Dur3\u003E second stun.|n|cffffcc00Level 4|r - \u003CAOws,DataA4\u003E damage, \u003CAOws,Dur4\u003E second stun."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "War S|cffffcc00t|romp - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing \u003CAOws,DataA4\u003E damage to nearby enemy land units and stunning them for \u003CAOws,Dur4\u003E seconds."
+    }
+  ]
+}

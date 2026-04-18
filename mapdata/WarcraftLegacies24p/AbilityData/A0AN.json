@@ -1,0 +1,68 @@
+{
+  "OldId": "Acht",
+  "NewId": "A0AN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06P"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\TomeOfRetraining\\TomeOfRetrainingCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue Amara)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Fear the Goddess"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fear the Goddess"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Induce the enemy units with a fear in Elune that reduces nearby their attack damage by \u003CAcht,DataA1,%\u003E% for \u003CAcht,Dur1\u003E seconds."
+    }
+  ]
+}

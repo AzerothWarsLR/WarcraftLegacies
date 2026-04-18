@@ -1,0 +1,231 @@
+{
+  "OldId": "Uwar",
+  "NewId": "U023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ua1f",
+      "Value": 0
+    },
+    {
+      "Id": "ua1h",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0QK,A0QJ,AUav,AUim,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "uint",
+      "Value": 19
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.25
+    },
+    {
+      "Id": "umpi",
+      "Value": 250
+    },
+    {
+      "Id": "umpm",
+      "Value": 250
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1q",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 150
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.25
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1z",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Defiler"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2.7
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Soulflayer"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Defiler"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Hakkar"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Executus.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "NagaRoyalGuard"
+    },
+    {
+      "Id": "uclr",
+      "Value": 55
+    },
+    {
+      "Id": "uclb",
+      "Value": 155
+    }
+  ]
+}

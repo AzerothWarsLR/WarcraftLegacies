@@ -1,0 +1,44 @@
+{
+  "OldId": "Rers",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "gtib",
+      "Value": 60
+    },
+    {
+      "Id": "glmb",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Brown Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Unlocks Resistant Skin giving Mountain Giants increased resistance to spells and Hardened Skin which increases their resistance to damage."
+    }
+  ]
+}

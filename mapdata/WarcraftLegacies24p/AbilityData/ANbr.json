@@ -1,0 +1,162 @@
+{
+  "OldId": "ANbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 65
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 13
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 20
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\HowlOfTerror\\HowlCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027thun Vezax)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "General\u0027s Order"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn General\u0027s Order - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Gives nearby friendly units a bonus to attack damage. |nLasts 12 seconds. |n|n|cffffcc00Level 1|r - 7 damage and 5 armor. |n|cffffcc00Level 2|r - 10 damage and 10 armor. |n|cffffcc00Level 3|r - 13 damage and 15 armor. |n|cffffcc00Level 4|r - 16 damage and 20 armor.."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives nearby friendly units 7 bonus attack damage and 5 bonus armor. |nLasts 12 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives nearby friendly units 10 bonus attack damage and 10 bonus armor. |nLasts 12 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives nearby friendly units 13 bonus attack damage and 15 bonus armor. |nLasts 12 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives nearby friendly units 16 bonus attack damage and 20 bonus armor. |nLasts 12 seconds."
+    }
+  ]
+}

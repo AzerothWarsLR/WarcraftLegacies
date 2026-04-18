@@ -1,0 +1,114 @@
+{
+  "OldId": "ndmg",
+  "NewId": "n081",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ARal"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "uhpm",
+      "Value": 3000
+    },
+    {
+      "Id": "ulum",
+      "Value": 200
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "n04I,n05F,n000"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(T0)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Unfocused Demon Gate"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Demon Gate"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Unattuned gateway, ready to summon forth the Burning Crusade.|n|n|cfff5962dUpgrades Into:|R Fel Hound, Succubus, or Voidwalker Demon Gate"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

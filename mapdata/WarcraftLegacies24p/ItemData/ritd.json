@@ -1,0 +1,21 @@
+{
+  "OldId": "ritd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 25
+    },
+    {
+      "Id": "isto",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

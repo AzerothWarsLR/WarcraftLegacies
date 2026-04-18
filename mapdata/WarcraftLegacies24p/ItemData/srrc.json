@@ -1,0 +1,29 @@
+{
+  "OldId": "srrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 64
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    }
+  ]
+}

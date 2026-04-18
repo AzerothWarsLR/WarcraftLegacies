@@ -1,0 +1,120 @@
+{
+  "OldId": "ndrn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0H2,A02Y"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0H2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 21
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1230
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.33
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Draenei Vindicator"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee unit. Has Vindication and War Plating.|n |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

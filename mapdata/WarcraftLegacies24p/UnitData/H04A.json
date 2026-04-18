@@ -1,0 +1,153 @@
+{
+  "OldId": "Hjai",
+  "NewId": "H04A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A096,AHmt,Aamk,AHbz,AHab"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 350
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 350
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "uagi",
+      "Value": 27
+    },
+    {
+      "Id": "uint",
+      "Value": 29
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lord of the Nexus"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Jaina Proudmoore"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Lord Admiral Jaina hoody.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Jaina Proudmoore"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Lord of the Nexus"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Lord of the Nexus"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    }
+  ]
+}

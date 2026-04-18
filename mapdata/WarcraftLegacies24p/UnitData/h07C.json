@@ -1,0 +1,116 @@
+{
+  "OldId": "hbar",
+  "NewId": "h07C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R00Z,R00B,R04A,R01P,R06O,Rhfl,Rhfs,R02B,Rhri,Rhan,R00F"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h0A6,h00B,h0A7,o01A,hhes,nbel,hmtm,h05V,h05N,h054,nhea,h032,h033,h02O,hkni,h01B,h00A,hfoo,hrif,h01C,h018,h03K,h03U,h014,h029,h04C"
+    },
+    {
+      "Id": "ulum",
+      "Value": 30
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarvenBarracks.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Ironforge)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenBarracksV1.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Housing for the defenders of the Alliance.|n|cfff5962dTrains:|R Defender, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "OldId": "uzg2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Afr2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ufma",
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 32
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "ulum",
+      "Value": 45
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "upar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper,undead"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "u003"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Ziggurat infused with the chilling magic of Azjol-Nerub.|n|cfff5962dUpgrades Into:|R Improved Nerubian Tower|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowTrollBurrow"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.5
+    }
+  ]
+}

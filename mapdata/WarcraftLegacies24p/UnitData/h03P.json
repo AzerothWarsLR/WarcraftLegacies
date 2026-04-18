@@ -1,0 +1,89 @@
+{
+  "OldId": "hhou",
+  "NewId": "h03P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "ugor",
+      "Value": 5
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unbuildable,blighted"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gnomish House"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

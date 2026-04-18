@@ -1,0 +1,31 @@
+{
+  "OldId": "Aasl",
+  "NewId": "A0LL",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 950
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,friend,ground"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Maelstrom - Neutral. Portal)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Maelstrom Slow Aura"
+    }
+  ]
+}

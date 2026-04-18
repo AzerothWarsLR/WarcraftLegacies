@@ -1,0 +1,121 @@
+{
+  "OldId": "hbar",
+  "NewId": "h081",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h09I,h0A3,h09J,h08I,h08J,h08L"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "ulum",
+      "Value": 30
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R086"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Housing for the crusaders of the Scarlet Crusade.|n|r|cfff5962dTrains:|R Crusaders, Arbalest, Cavalier\r\n"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_BarracksWestfall.mdl"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

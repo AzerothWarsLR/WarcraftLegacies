@@ -1,0 +1,106 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R00J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0GP"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratr"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rhpo"
+    },
+    {
+      "Id": "gglb",
+      "Value": 350
+    },
+    {
+      "Id": "glmb",
+      "Value": 200
+    },
+    {
+      "Id": "gtib",
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNbookAzyr.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Combat Tomes"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Combat Tomes"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Arcanists, Geomancers, Hydromancers, and Kirin Tor by increasing their damage by 10, hit points by 15%, and attack range by 75."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "YOm4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Dungeon\\Props\\MineCartEmpty\\MineCartEmpty.mdl"
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.1
+    }
+  ]
+}

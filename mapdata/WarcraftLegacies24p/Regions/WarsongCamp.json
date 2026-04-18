@@ -1,0 +1,16 @@
+{
+  "Left": -11072,
+  "Bottom": 832,
+  "Right": -9632,
+  "Top": 2688,
+  "Name": "WarsongCamp",
+  "CreationNumber": 131,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 255,
+    "B": 0,
+    "A": 255
+  }
+}

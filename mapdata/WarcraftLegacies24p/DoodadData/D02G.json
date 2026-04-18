@@ -1,0 +1,44 @@
+{
+  "OldId": "JScs",
+  "NewId": "D02G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Column Semi Circle Ruined Dark"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

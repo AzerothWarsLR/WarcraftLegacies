@@ -1,0 +1,30 @@
+{
+  "OldId": "Sca1",
+  "NewId": "S009",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R004"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "o005"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Blademaster)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

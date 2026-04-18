@@ -1,0 +1,16 @@
+{
+  "Left": -11744,
+  "Bottom": 21504,
+  "Right": -11040,
+  "Top": 22304,
+  "Name": "BloodElfSecondChanceSpawn",
+  "CreationNumber": 376,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "OldId": "Amin",
+  "NewId": "A0VA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Min1",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Min2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(unused)"
+    },
+    {
+      "Id": "aefs",
+      "Type": 3,
+      "Value": "ExplodingBarrelDeath"
+    }
+  ]
+}

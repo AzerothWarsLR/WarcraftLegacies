@@ -1,0 +1,103 @@
+{
+  "OldId": "nmyr",
+  "NewId": "n0CA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0M5,Aens,A0CH,Asb1,Aihn"
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 28
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1135
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 20
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 33
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(nzoth)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Naga Incursor"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Naga Incursor"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\incursor.mdl"
+    }
+  ]
+}

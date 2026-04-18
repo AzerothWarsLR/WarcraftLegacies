@@ -1,0 +1,110 @@
+{
+  "OldId": "nsnp",
+  "NewId": "n0CE",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rnsb,Rhme,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 19
+    },
+    {
+      "Id": "uhpm",
+      "Value": 675
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aien,Aspo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h0A4"
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Hatchling"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Hatchling"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\Hydra\\Hydra.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGreenHydra.blp"
+    },
+    {
+      "Id": "uclr",
+      "Value": 50
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Nzoth)"
+    }
+  ]
+}

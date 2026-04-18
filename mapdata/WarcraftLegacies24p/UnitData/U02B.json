@@ -1,0 +1,238 @@
+{
+  "OldId": "Ulic",
+  "NewId": "U02B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0Y1,A0GK,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 26
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AOre,A11D,Aamk,A08X,ANbr"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 150
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ustr",
+      "Value": 36
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumChop"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNerubianSmasher.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Vezax"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOneReaper.mdl"
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Yogg-Saron Champion"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "General Vezax"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Vezax"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNerubianSmasher.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "FacelessOne"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Vezax"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at enduring and strengthening nearby allies.|n|cfff5962dAbilities:|r Unholy Plating |n|cfff5962dCan learn:|R Dark Burst, General\u0027s Order, Dread Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

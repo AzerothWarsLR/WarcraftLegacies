@@ -1,0 +1,16 @@
+{
+  "Left": -11712,
+  "Bottom": 7264,
+  "Right": -11520,
+  "Top": 7424,
+  "Name": "ArchimondeChannel",
+  "CreationNumber": 86,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": "nitw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACct,ACat"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "OldId": "APtv",
+  "NewId": "D005",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Vines Thorny (Barrens)"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 4,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 5,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 6,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 7,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 5,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 6,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 7,
+      "Id": "dvg1",
+      "Value": 155
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Variation": 4,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Variation": 5,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Variation": 6,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Variation": 7,
+      "Id": "dvr1",
+      "Value": 122
+    },
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": 5
+    }
+  ]
+}

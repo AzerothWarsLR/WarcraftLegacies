@@ -1,0 +1,31 @@
+{
+  "OldId": "phea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 16
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heals 400 hit points when used."
+    }
+  ]
+}

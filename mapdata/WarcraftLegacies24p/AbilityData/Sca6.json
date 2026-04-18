@@ -1,0 +1,18 @@
+{
+  "OldId": "Sca6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R004"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Warsong-Bloodpact Grom)"
+    }
+  ]
+}

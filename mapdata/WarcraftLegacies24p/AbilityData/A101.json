@@ -1,0 +1,39 @@
+{
+  "OldId": "ANpi",
+  "NewId": "A101",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AM"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Death Domain"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "\u6B7B\u4EA1\u9886\u57DF"
+    }
+  ]
+}

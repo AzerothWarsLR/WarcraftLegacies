@@ -1,0 +1,40 @@
+{
+  "OldId": "ACce",
+  "NewId": "A0NE",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids - Druid of the Claw)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit strikes with such force that \u003CA0NE,DataA1,%\u003E% of their damage strikes through to enemies near the primary attacked unit."
+    }
+  ]
+}

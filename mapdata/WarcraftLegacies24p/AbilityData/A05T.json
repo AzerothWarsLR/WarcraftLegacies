@@ -1,0 +1,125 @@
+{
+  "OldId": "ANhs",
+  "NewId": "A05T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": -50
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green - Hydra)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Acid Spray"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Healing Spray (|cffffcc00Q|r)  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Rexxar sprays waves of mists into his allies healing them. |n|n|cffffcc00Level 1|r - 3 waves at 60 hit points healed each. |n|cffffcc00Level 2|r - 4 waves at 65 hit points healed each. |n|cffffcc00Level 3|r - 5 waves at 75 hit points healed each.|n|cffffcc00Level 4|r - 6 waves at 85 hit points healed each.|n|cffffcc00Level 5|r - 7 waves at 100 hit points healed each."
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Acid Spray"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Bombards an area with 3 waves of acid. Each wave deals 50 damage to all units in an area."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -18272,
+  "Bottom": 2848,
+  "Right": -15936,
+  "Top": 5312,
+  "Name": "Auberdine Ships",
+  "CreationNumber": 269,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -14176,
+  "Bottom": 20192,
+  "Right": -13792,
+  "Top": 22176,
+  "Name": "InstanceDalaranDungeon2",
+  "CreationNumber": 289,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "OldId": "Usyl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.58
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ua1b",
+      "Value": 15
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0DU,Aamk,A083,A03J,A0PK"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1r",
+      "Value": 750
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02D"
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A01O,A0KV,AInv"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R07V"
+    },
+    {
+      "Id": "ustr",
+      "Value": 19
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(forsaken)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Sylvanas Windrunner"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Sylvanas"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, adept at manipulating opponents.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan learn:|R Aimed Shot, Silence, Black Arrow, Banshee Queen|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

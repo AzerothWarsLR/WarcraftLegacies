@@ -1,0 +1,108 @@
+{
+  "OldId": "Aivs",
+  "NewId": "A0W8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ivs1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic,player"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecroGrip2.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Frozen Throne)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Recall"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Recall"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Teleports the target unit to the Frozen Throne."
+    }
+  ]
+}

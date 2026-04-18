@@ -1,0 +1,292 @@
+{
+  "OldId": "Atau",
+  "NewId": "A0R7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,nonhero,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,nonhero,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,nonhero,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,nonhero,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Tau5",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Tau5",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Tau5",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Tau5",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Tau4",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Tau4",
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Tau4",
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Tau4",
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Tau1",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Tau1",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Tau1",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Tau1",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Tau3",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Tau3",
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Tau3",
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Tau3",
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The closest 10 enemies are forced to attack this unit. 5 pulses"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Instill Rage - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Instill Rage"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Instill Rage  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Instill Rage - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Instill Rage - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Instill Rage - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The closest 10/20/30/40 enemies are forced to attack this unit every half second. 5/8/11/14 pulses"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The closest 20 enemies are forced to attack this unit. 8 pulses"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The closest 30 enemies are forced to attack this unit. 11 pulses."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The closest 40 enemies are forced to attack this unit. 14 pulses."
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaunt.blp"
+    }
+  ]
+}

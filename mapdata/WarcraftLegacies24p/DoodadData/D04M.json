@@ -1,0 +1,68 @@
+{
+  "OldId": "ZOvr",
+  "NewId": "D04M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Darkness"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dsel",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "Z,*"
+    },
+    {
+      "Id": "dshd",
+      "Value": 0
+    },
+    {
+      "Id": "dvis",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Ruins\\Props\\Ruins_NagaCircle\\Ruins_NagaCircle.mdl"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 0
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 10
+    }
+  ]
+}

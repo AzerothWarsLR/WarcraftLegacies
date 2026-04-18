@@ -1,0 +1,21 @@
+{
+  "OldId": "nsgh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    }
+  ]
+}

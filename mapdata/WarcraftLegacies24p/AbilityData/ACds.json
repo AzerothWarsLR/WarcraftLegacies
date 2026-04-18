@@ -1,0 +1,53 @@
+{
+  "OldId": "ACds",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(All Paladin Heroes)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells.|n|cffffcc00Lasts \u003CACds,Dur1\u003E seconds."
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    }
+  ]
+}

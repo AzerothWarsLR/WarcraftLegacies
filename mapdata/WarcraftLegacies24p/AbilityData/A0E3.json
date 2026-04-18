@@ -1,0 +1,54 @@
+{
+  "OldId": "Alsh",
+  "NewId": "A0E3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Lsh1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(kul Tiras)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Forms a shield of electricity around a target unit, dealing 15 damage per second to units around it. |nLasts 20 seconds."
+    }
+  ]
+}

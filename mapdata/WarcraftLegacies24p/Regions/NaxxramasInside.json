@@ -1,0 +1,16 @@
+{
+  "Left": -23744,
+  "Bottom": 14080,
+  "Right": -23232,
+  "Top": 14368,
+  "Name": "NaxxramasInside",
+  "CreationNumber": 212,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

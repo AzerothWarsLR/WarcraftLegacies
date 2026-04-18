@@ -1,0 +1,54 @@
+{
+  "OldId": "Ekgg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACcy,Amim,AInv,Ault"
+    },
+    {
+      "Id": "ubld",
+      "Value": 180
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "uint",
+      "Value": 30
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Califax"
+    }
+  ]
+}

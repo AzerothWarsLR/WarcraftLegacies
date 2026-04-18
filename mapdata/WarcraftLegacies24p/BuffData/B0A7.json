@@ -1,0 +1,34 @@
+{
+  "OldId": "BEim",
+  "NewId": "B0A7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_LightStormOptimized.mdx"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Divine Field"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Divine Storm; nearby enemy ground units will take damage over time."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl"
+    }
+  ]
+}

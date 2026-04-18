@@ -1,0 +1,112 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R04V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "h00H"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "A058"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "glmb",
+      "Value": 75
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Improved Hypothermic Breath"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Improved Hypothermic Breath"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Frost Wyrms\u0027 Hypothermic Breath by increasing its initial damage to \u003CA058,DataA2\u003E and damage per second to \u003CA058,DataE2\u003E."
+    }
+  ]
+}

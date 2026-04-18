@@ -1,0 +1,39 @@
+{
+  "OldId": "Boar",
+  "NewId": "B05Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyCharge.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Restoration Aura"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Benedictus)"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "feet"
+    }
+  ]
+}

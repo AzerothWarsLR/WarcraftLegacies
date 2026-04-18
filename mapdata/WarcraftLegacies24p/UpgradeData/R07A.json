@@ -1,0 +1,51 @@
+{
+  "OldId": "Roch",
+  "NewId": "R07A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "renw"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Illidan can\u0027t attack"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(2)"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "OldId": "Apxf",
+  "NewId": "A0OY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "pxf2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "pxf1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(troll)"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\TrollBonecaster_Missile.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Unleash Soul projectile"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Unleash Soul projectile"
+    }
+  ]
+}

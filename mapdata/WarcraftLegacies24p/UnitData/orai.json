@@ -1,0 +1,119 @@
+{
+  "OldId": "orai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0ES,Sca2,A0SX,A0LQ,A0XM,Aens,Aion"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0XM"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 870
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01J,R00X,Rhme,Rhar,Ropg,Ropm,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fast and ferocious wolf rider.|n|cfff5962dAbilities:|R Ensnare, Bleeding Blade, Demolish|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

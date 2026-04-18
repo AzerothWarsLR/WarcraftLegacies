@@ -1,0 +1,22 @@
+{
+  "OldId": "nlrv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Amim,ACcv,ACf2"
+    },
+    {
+      "Id": "ubba",
+      "Value": 50
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    }
+  ]
+}

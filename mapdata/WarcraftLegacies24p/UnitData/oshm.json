@@ -1,0 +1,104 @@
+{
+  "OldId": "oshm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Alsh,Ablo,Aion,Apg2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R023,Rost,Ropm,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elementalist connected with the spirits of Azeroth.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Lightning Shield, Bloodlust|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    }
+  ]
+}

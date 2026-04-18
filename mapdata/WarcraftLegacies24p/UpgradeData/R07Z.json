@@ -1,0 +1,40 @@
+{
+  "OldId": "Roch",
+  "NewId": "R07Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Lumber Market Crash"
+    }
+  ]
+}

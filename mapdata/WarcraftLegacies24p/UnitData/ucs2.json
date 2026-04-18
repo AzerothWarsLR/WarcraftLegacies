@@ -1,0 +1,70 @@
+{
+  "OldId": "ucs2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GY,A0KF"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 550
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Red - Anub\u0027Arak)(Level 2)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    }
+  ]
+}

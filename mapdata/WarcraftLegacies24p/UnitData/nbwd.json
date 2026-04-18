@@ -1,0 +1,70 @@
+{
+  "OldId": "nbwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "ewsp,e00N"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R064"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

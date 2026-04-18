@@ -1,0 +1,19 @@
+{
+  "OldId": "Adts",
+  "NewId": "A00E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01L"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dalaran Towers)"
+    }
+  ]
+}

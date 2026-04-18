@@ -1,0 +1,34 @@
+{
+  "OldId": "Brej",
+  "NewId": "B014",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_FlashHeal.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Renewal"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Renewal; it is healing hit points over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
+    }
+  ]
+}

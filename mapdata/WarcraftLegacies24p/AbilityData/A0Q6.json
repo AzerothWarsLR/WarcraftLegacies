@@ -1,0 +1,23 @@
+{
+  "OldId": "Andt",
+  "NewId": "A0Q6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00R|r) - Reveal"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    }
+  ]
+}

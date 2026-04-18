@@ -1,0 +1,16 @@
+{
+  "Left": 14304,
+  "Bottom": -13216,
+  "Right": 14368,
+  "Top": -13152,
+  "Name": "Stormwind1",
+  "CreationNumber": 259,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

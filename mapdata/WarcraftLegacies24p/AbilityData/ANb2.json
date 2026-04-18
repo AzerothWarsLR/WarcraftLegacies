@@ -1,0 +1,33 @@
+{
+  "OldId": "ANb2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbh3",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Misha)"
+    }
+  ]
+}

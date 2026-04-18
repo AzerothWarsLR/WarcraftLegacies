@@ -1,0 +1,491 @@
+{
+  "OldId": "Asds",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Dda1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 5,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 6,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 7,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 8,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 9,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 325
+    },
+    {
+      "Level": 5,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 6,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 375
+    },
+    {
+      "Level": 7,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 8,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 425
+    },
+    {
+      "Level": 9,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 5,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 6,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 7,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 8,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 9,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 9,
+      "Pointer": 6,
+      "Id": "Sds6",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 5,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 6,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 7,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 8,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 9,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 5,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 6,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 7,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 8,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 9,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "alev",
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 5,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 6,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 7,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 8,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Level": 9,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,structure,debris,tree,ward"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Goblin Sapper level 1-9)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 8|r]"
+    },
+    {
+      "Level": 9,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Kaboom! - [|cffffcc00Level 9|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 250 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 275 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 300 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 325 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 350 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 6,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 375 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 7,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 400 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 8,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 425 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Level": 9,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals 450 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destroys Trees.|nDeals 3x more damage to buildings.|r"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

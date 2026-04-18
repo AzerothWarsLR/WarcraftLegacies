@@ -1,0 +1,84 @@
+{
+  "OldId": "nanw",
+  "NewId": "n05M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0DQ"
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 380
+    },
+    {
+      "Id": "ulev",
+      "Value": 1
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rguv,R01N"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Arathor-Conjurer)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scorpion"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

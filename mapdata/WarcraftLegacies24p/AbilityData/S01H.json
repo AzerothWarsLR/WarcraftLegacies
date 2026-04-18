@@ -1,0 +1,25 @@
+{
+  "OldId": "Slo3",
+  "NewId": "S01H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "friend,invulnerable,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Steam Tank)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

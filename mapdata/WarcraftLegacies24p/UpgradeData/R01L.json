@@ -1,0 +1,43 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R01L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Provides towers with the ability to detect invisible units, excluding Cannon Towers."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "AImt",
+  "NewId": "A0Y7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,ground,invulnerable,organic,player,structure,vulnerable"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EarthQuake\\EarthQuakeTarget.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Nzoth)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "N\u0027zoth Transportation"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "N\u0027zoth Transportation (|cffffff00D|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "N\u0027zoth transports to any organic allied unit. It has a 5 second cast time and 40 seconds cooldown."
+    },
+    {
+      "Id": "aaea",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EarthQuake\\EarthQuakeTarget.mdl"
+    }
+  ]
+}

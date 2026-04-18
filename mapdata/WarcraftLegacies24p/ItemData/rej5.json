@@ -1,0 +1,29 @@
+{
+  "OldId": "rej5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "isto",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "OldId": "ANhw",
+  "NewId": "A0ZN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Vol\u0027Jin)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage.\r\n\r\n|cffffcc00Level 1|r - Heals \u003CA0ZN,DataA1\u003E damage, jumps \u003CA0ZN,DataB1\u003E times, 25% less healing per jump.|n|cffffcc00Level 2|r - Heals \u003CA0ZN,DataA2\u003E damage, jumps \u003CA0ZN,DataB2\u003E times, 20% less healing per jump.|n|cffffcc00Level 3|r - Heals \u003CA0ZN,DataA3\u003E damage, jumps \u003CA0ZN,DataB3\u003E times, 15% less healing per jump.|n|cffffcc00Level 4|r - Heals \u003CA0ZN,DataA4\u003E damage, jumps \u003CA0ZN,DataB4\u003E times, 10% less healing per jump."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0ZN,DataB1\u003E times, healing \u003CA0ZN,DataA1\u003E damage on the primary target. Each jump heals 25% less."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0ZN,DataB2\u003E times, healing \u003CA0ZN,DataA2\u003E damage on the primary target. Each jump heals 25% less."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0ZN,DataB3\u003E times, healing \u003CA0ZN,DataA3\u003E damage on the primary target. Each jump heals 25% less."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0ZN,DataB4\u003E times, healing \u003CA0ZN,DataA4\u003E damage on the primary target. Each jump heals 25% less."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Water Wave"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Water Wave - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWaterAttack.blp"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "MFPB,DRAM"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Water Wave (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Water Wave (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Water Wave (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Water Wave (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWaterAttack.blp"
+    }
+  ]
+}

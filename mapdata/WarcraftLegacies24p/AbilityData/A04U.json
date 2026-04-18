@@ -1,0 +1,207 @@
+{
+  "OldId": "ACs7",
+  "NewId": "A04U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "n08J"
+    },
+    {
+      "Level": 2,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "n08K"
+    },
+    {
+      "Level": 3,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nfre"
+    },
+    {
+      "Level": 4,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "ngrd"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Cenarius)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Nature\u0027s Call"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons animals of Ashenvale to fight Cenarius\u0027 enemies.|nLasts \u003CACs7,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Summons 3 Spiders with Web and poison attacks.|n|cffffcc00Level 2|r - Summons 3 Wolves with Roar, Critical Strike, and Bash.|n|cffffcc00Level 3|r - Summons 3 Furbolg Elder Shamans with Lightning Shield and Rejuvenation.                                                       |cffffcc00Level 4|r - Summons Ysondre to fight for you. Has Rejuvenation and Lightning Shield."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 3 Spiders that have Web. and poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 3 Furbolg Elder Shaman companions that have Lightning Shield and Rejuvenation.|nLasts \u003CACs7,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons Ysondre to fight for you. Has Lightning shield and Rejuvenation.|nLasts \u003CACs7,Dur4\u003E seconds."
+    }
+  ]
+}

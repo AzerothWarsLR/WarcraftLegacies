@@ -1,0 +1,27 @@
+{
+  "OldId": "modt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 80
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "While wearing this mask, a Hero will recover hit points equal to 25% of the attack damage dealt to an enemy unit."
+    }
+  ]
+}

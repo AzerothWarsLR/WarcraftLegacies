@@ -1,0 +1,23 @@
+{
+  "OldId": "Nngs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DruidOfTheTidesV1.01.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    }
+  ]
+}

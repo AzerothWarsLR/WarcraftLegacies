@@ -1,0 +1,14 @@
+{
+  "OldId": "Brai",
+  "NewId": "B090",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Reanimated Zombie"
+    }
+  ]
+}

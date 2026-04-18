@@ -1,0 +1,16 @@
+{
+  "Left": 20256,
+  "Bottom": -26144,
+  "Right": 20288,
+  "Top": -26112,
+  "Name": "IllidanDala5",
+  "CreationNumber": 401,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

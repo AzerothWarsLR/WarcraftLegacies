@@ -1,0 +1,63 @@
+{
+  "OldId": "Roch",
+  "NewId": "R059",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Arms Race"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Arms Race"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows Goblin Shredders to use Emergency Repairs, Pocket Factory, and Saw Bombardment."
+    }
+  ]
+}

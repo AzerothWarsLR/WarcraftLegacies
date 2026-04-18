@@ -1,0 +1,89 @@
+{
+  "OldId": "Hapm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A04K,A0V2,A07X,ANmo,Aamk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0JB,AInv"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lord Admiral of Kul Tiras"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Daelin Proudmoore"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Daelin Proudmoore"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Daelin Proudmoore"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(kul tiras)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Daelin"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, tough hero that excels at damaging enemy units.|n|cfff5962dCan learn:|R Crushing Wave, Rally, Toughness, Thunderstorm|n|n|cffffcc00Attacks land units.|R"
+    }
+  ]
+}

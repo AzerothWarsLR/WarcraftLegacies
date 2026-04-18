@@ -1,0 +1,102 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R06I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "h03K"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "gtib",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R03A"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Plague of Undeath"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Plague of Undeath"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Gives the order for the Scourge\u0027s apothecaries to unleash a devastating plague upon Lordaeron.|n|n|cffffcc00Required to complete the quest Plague of Undeath."
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "Buhf",
+  "NewId": "B02M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Overclock"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This units attack rate is increased and it takes increased damage."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Ember.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

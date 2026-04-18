@@ -1,0 +1,250 @@
+{
+  "OldId": "Rhpt",
+  "NewId": "R08K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "gcls",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 75
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmm",
+      "Value": 0
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDER_Weapon_Forge.blp"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once."
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.|n|n|cff8080ffTitanforges remaining|r: 3"
+    },
+    {
+      "Level": 4,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.|n|n|cff8080ffTitanforges remaining|r: 2"
+    },
+    {
+      "Level": 5,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.|n|n|cff8080ffTitanforges remaining|r: 1"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 4,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 5,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 4,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 5,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Titanforge Artifact"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 4,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 5,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 3,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 4,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 5,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDER_Weapon_Forge.blp"
+    },
+    {
+      "Level": 3,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDER_Weapon_Forge.blp"
+    },
+    {
+      "Level": 4,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDER_Weapon_Forge.blp"
+    },
+    {
+      "Level": 5,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDER_Weapon_Forge.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    }
+  ]
+}

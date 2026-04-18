@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1228222532,
+    "Variation": 0,
+    "Position": {
+      "X": -26116.695,
+      "Y": -1365.1571,
+      "Z": 811.05005
+    },
+    "Rotation": 5.3327312,
+    "Scale": {
+      "X": 2.1999993,
+      "Y": 2.1999993,
+      "Z": 2.3000004
+    },
+    "SkinId": 1228222532,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33594
+  },
+  {
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -26483.475,
+      "Y": -1429.1951,
+      "Z": 148.50742
+    },
+    "Rotation": 2.4671822,
+    "Scale": {
+      "X": 3.608498,
+      "Y": 3.608498,
+      "Z": 4
+    },
+    "SkinId": 1160982596,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32963
+  },
+  {
+    "TypeId": 1244999748,
+    "Variation": 2,
+    "Position": {
+      "X": -26238.684,
+      "Y": -1464.1345,
+      "Z": 644.6494
+    },
+    "Rotation": 5.480334,
+    "Scale": {
+      "X": 3.3999977,
+      "Y": 3.3999977,
+      "Z": 3.7999973
+    },
+    "SkinId": 1244999748,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33722
+  },
+  {
+    "TypeId": 1244999748,
+    "Variation": 2,
+    "Position": {
+      "X": -26238.684,
+      "Y": -1464.1345,
+      "Z": 836.65015
+    },
+    "Rotation": 5.480334,
+    "Scale": {
+      "X": 2.1999989,
+      "Y": 2.1999989,
+      "Z": 2.5999985
+    },
+    "SkinId": 1244999748,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33721
+  },
+  {
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -26148.293,
+      "Y": -1149.3889,
+      "Z": 24.57626
+    },
+    "Rotation": 2.4671822,
+    "Scale": {
+      "X": 3.608498,
+      "Y": 3.608498,
+      "Z": 4
+    },
+    "SkinId": 1160982596,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34961
+  }
+]

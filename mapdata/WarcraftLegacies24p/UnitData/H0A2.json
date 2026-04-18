@@ -1,0 +1,126 @@
+{
+  "OldId": "Hpb1",
+  "NewId": "H0A2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A078,A0DV,AHhb,A085,Aamk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "uagi",
+      "Value": 15
+    },
+    {
+      "Id": "uint",
+      "Value": 12
+    },
+    {
+      "Id": "ustr",
+      "Value": 21
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Monastery Commander"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Renault Mograine"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\RenaultMograine.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at Healing and Vengeance.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Holy Shackles, Retribution Aura, Flame Inferno|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Renault"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinRenault.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinRenault.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.97
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

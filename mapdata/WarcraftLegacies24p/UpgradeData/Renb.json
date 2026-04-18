@@ -1,0 +1,126 @@
+{
+  "OldId": "Renb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0G9"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": "rhpo"
+    },
+    {
+      "Id": "gglb",
+      "Value": 125
+    },
+    {
+      "Id": "gglm",
+      "Value": 50
+    },
+    {
+      "Id": "glmb",
+      "Value": 60
+    },
+    {
+      "Id": "glmm",
+      "Value": 25
+    },
+    {
+      "Id": "glvl",
+      "Value": 3
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Brown Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Nature\u0027s Blessing - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Nature\u0027s Blessing - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Nature\u0027s Blessing - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Upgrades all Ancients\u0027 movement speed by 40, health points and armor. Reduces Force of Nature cooldown by 20 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

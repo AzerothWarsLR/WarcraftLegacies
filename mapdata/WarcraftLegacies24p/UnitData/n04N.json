@@ -1,0 +1,158 @@
+{
+  "OldId": "ndmg",
+  "NewId": "n04N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n04L,n03L"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1750
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R042"
+    },
+    {
+      "Id": "ugol",
+      "Value": 25
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R040"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Infernal Machine Factory"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Gore filled structure of bodily desecration.|n|cfff5962dTrains:|R Infernal Juggernaut, Sky Barge"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Infernal Machine Factory"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SlaughterHouseDemonV1.01.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonSlaughterHouse.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SlaughterHouse"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

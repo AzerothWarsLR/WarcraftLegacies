@@ -1,0 +1,34 @@
+{
+  "OldId": "BUau",
+  "NewId": "B021",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShimmerWeed.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Aerial Captain Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is near an Hippogryph Rider Captain; it has increased mouvement speed."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Aerial Captain Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

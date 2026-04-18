@@ -1,0 +1,123 @@
+{
+  "OldId": "even",
+  "NewId": "e00I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACev,Ault"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ubsi",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "umh1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 100
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,item,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R002,Reuv,Rhme,Rhar"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels-Nightblade on death)"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Spirit of Retribution"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A spirit of retribution, born of a Sentinel\u0027s unyielding soul.|n|cfff5962dAbilities:|R Evasion|n|n|cffffcc00Attacks land units."
+    }
+  ]
+}

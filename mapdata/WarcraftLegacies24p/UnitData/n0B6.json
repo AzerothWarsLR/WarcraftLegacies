@@ -1,0 +1,144 @@
+{
+  "OldId": "nntt",
+  "NewId": "n0B6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "ugol",
+      "Value": 160
+    },
+    {
+      "Id": "ugor",
+      "Value": 35
+    },
+    {
+      "Id": "ulur",
+      "Value": 140
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "u02E,n0B4,n0B5"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 10000
+    },
+    {
+      "Id": "ulum",
+      "Value": 280
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "LEca,Argl,Abds"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(black Empire)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build - Temple of Tides"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Primary structure, used to train Mur\u0027gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade."
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackEmpireCathedralOfMadness.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BlackEmpireMainBuilding.mdl"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Pyramid of Madness"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 15
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "BEim",
+  "NewId": "B08J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Toggle Unholy Defense"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Scourge-Frozen Throne)"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "war3mapImported\\ImmolationBlueTarget.mdx"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "sprite"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\ImmolationBlueDamage.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

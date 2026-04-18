@@ -1,0 +1,16 @@
+{
+  "Left": 12000,
+  "Bottom": -27712,
+  "Right": 12480,
+  "Top": -27520,
+  "Name": "NazjatarExit1",
+  "CreationNumber": 101,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

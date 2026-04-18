@@ -1,0 +1,59 @@
+{
+  "OldId": "AOs2",
+  "NewId": "A0S2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Osh1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osh2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Osh3",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Osh4",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 150
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "units\\human\\Gyrocopter\\Gyrocopter_V1.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bombing Run"
+    }
+  ]
+}

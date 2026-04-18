@@ -1,0 +1,107 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n0AO",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Awrp,A106"
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 150
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1500
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,neutral,standon"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubld",
+      "Value": 80
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowAltarofKings"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Teleports units to its corresponding Way Gate.|n|n|cff99b4d1Can only build 2."
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

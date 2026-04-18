@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R04N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Turn 3 has passed"
+    }
+  ]
+}

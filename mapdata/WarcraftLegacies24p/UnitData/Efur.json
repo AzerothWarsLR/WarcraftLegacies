@@ -1,0 +1,114 @@
+{
+  "OldId": "Efur",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACfr,AInv,Ault"
+    },
+    {
+      "Id": "uagi",
+      "Value": 18
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A0DD,A0CE,A0H7,AHab"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 23
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "horse"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Shan\u0027do"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Archdruid"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Malfurion Stormrage"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Shan\u0027do"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at healing allies and disrupting the enemies.|n|cfff5962dCan learn:|R Rejuvenation, Grow a Tree, Brilliance Aura, Hurricane |n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Furion"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "OldId": "AUfn",
+  "NewId": "A06S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 220
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScepterOfMastery.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Arthas, King Arthas)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "war3mapImported\\Holy Nova.mdx"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Holy Nova"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScepterOfMastery.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Holy Nova - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Blasts enemy units around a target enemy unit with a wave of damaging light. |n|n|cffffcc00Level 1|r - \u003CA06S,DataB1\u003E target damage, \u003CA06S,DataA1\u003E nova damage. |n|cffffcc00Level 2|r - \u003CA06S,DataB2\u003E target damage, \u003CA06S,DataA2\u003E nova damage. |n|cffffcc00Level 3|r - \u003CA06S,DataB3\u003E target damage, \u003CA06S,DataA3\u003E nova damage. |n|cffffcc00Level 4|r - \u003CA06S,DataB4\u003E target damage, \u003CA06S,DataA4\u003E nova damage."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\HolyNova_Fixed.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Holy Nova - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Holy Nova - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Holy Nova - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Holy Nova - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of light that deals \u003CA06S,DataB1\u003E damage to the target and \u003CA06S,DataA1\u003E nova damage. "
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of light that deals \u003CA06S,DataB2\u003E damage to the target and \u003CA06S,DataA2\u003E nova damage. "
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of light that deals \u003CA06S,DataB3\u003E damage to the target and \u003CA06S,DataA3\u003E nova damage. "
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts enemy units with a wave of light that deals \u003CA06S,DataB4\u003E damage to the target and \u003CA06S,DataA4\u003E nova damage. "
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "Alit",
+  "NewId": "A11J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Lit1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Lit2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Medivh)"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "FORK"
+    }
+  ]
+}

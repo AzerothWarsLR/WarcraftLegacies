@@ -1,0 +1,14 @@
+{
+  "OldId": "AIgo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Igol",
+      "Value": 75
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "Broa",
+  "NewId": "B01V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDragonDevour.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Howl"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Howl"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Howl"
+    }
+  ]
+}

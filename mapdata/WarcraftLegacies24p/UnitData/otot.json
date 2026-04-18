@@ -1,0 +1,27 @@
+{
+  "OldId": "otot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aeth"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    }
+  ]
+}

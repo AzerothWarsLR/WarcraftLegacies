@@ -1,0 +1,89 @@
+{
+  "OldId": "AIrv",
+  "NewId": "A0K4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Det1",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTelescope.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Yellow - Hall of Explorers)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Explore Map"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTelescope.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Explore Map - "
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The explores are filling out every black spot on the map, exploreing every corner of Azeroth. |n|nDetects invisible units. |nLasts 5 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Explore Map - (|cffffcc00Z|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The explores are filling out every black spot on the map, exploring every corner of Azeroth. |n|cffe8e800|nReveals the entire map.|nLasts 5 seconds.|r"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "OldId": "Rugf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "glmb",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
+    }
+  ]
+}

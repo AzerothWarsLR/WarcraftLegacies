@@ -1,0 +1,24 @@
+{
+  "OldId": "ITtw",
+  "NewId": "B00N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Backwards icecrown tree 2"
+    }
+  ]
+}

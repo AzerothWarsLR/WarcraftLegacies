@@ -1,0 +1,215 @@
+{
+  "OldId": "Uktl",
+  "NewId": "U02K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0VW,A0W9,A0VU,Aamk,A0WF"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 3500
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 35
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ua1z",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 300
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,item,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "uint",
+      "Value": 25
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Ironforge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lord of the Firelands"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Supremely deadly Warrior Hero, Excels at killing enemy Heroes. |n|cfff5962dCan learn:|R Elemental Fire, Magma Blast, Wrath of Ragnaros, Herald of Destruction|n|n|cffffcc00Attacks land units."
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Ragnaros"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Ragnaros.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Ragnaros"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Ragnaros"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Ragnaros"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroFireLord"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ".mdl"
+    }
+  ]
+}

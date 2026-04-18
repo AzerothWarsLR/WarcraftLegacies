@@ -1,0 +1,56 @@
+{
+  "OldId": "nbot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 34
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usin",
+      "Value": 1100
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R006"
+    },
+    {
+      "Id": "usst",
+      "Value": 1200
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "|cffeae402(Q) |r- Hire |cffffcc00T|rransport Ship"
+    }
+  ]
+}

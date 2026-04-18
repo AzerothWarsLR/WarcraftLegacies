@@ -1,0 +1,88 @@
+{
+  "OldId": "AItg",
+  "NewId": "A10Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 40
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Azgalor) (Hidden) 3"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Brute Strength"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "[|cffffcc00E|r] Learn Brute Strength - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Azgalor strike with absolute force, gaining 60/100/140/180 bonus damage with every attack. "
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Brute Strength - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Azgalor strike with absolute force, gaining 60 bonus damage with every attack. "
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp"
+    }
+  ]
+}

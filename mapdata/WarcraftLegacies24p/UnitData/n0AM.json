@@ -1,0 +1,156 @@
+{
+  "OldId": "nbt1",
+  "NewId": "n0AM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 65
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 70
+    },
+    {
+      "Id": "ulur",
+      "Value": 70
+    },
+    {
+      "Id": "ua1z",
+      "Value": 700
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "ground,nonancient,notself,structure,tree,wall"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,wall,ward"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "n0AN"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rosp"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonPillar.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(fel horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TowerFelOrcV2.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 222
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Flame Pillar"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Upgrade to Flame Pillar"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Flame Pillar|n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

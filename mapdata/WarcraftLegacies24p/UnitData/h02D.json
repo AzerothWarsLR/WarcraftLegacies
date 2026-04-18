@@ -1,0 +1,147 @@
+{
+  "OldId": "hmpr",
+  "NewId": "h02D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0K6,A0FW,Aihn,A045"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A045"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 375
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00J,R00K,R01V,Rhpm,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h066"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Raise Earth,- Raise Earth|n- Healing Shield,- Raise Earth|n- Healing Shield|n- Mage Armour"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MageDalaranV1.01.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Geomancer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Geomancer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mage adept in the means of earthbending.|n|cfff5962dAbilities:|R Raise Earth|n|cfff5962dCan Learn:|R Mage Armor, Healing Shield|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

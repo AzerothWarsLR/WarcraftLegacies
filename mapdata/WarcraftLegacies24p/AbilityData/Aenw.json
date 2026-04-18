@@ -1,0 +1,57 @@
+{
+  "OldId": "Aenw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,nonhero,organic"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Druid of the Talon)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes roots to burst from the ground, immobilizing a target enemy unit for 12 seconds, and dealing 10 damage per second."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "OldId": "AHca",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hca1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hca2",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hca3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027thun Soggoth)"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chilling Strike"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "|cffffcc00C|rhilling Strike"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds a cold effect to each attack, slowing a target enemy unit\u0027s attacks by 50% and movement by 70% for 5 seconds. (Half duration for heroes)"
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1819759436,
+    "Variation": 0,
+    "Position": {
+      "X": 16711.893,
+      "Y": 7996.9624,
+      "Z": 153.31055
+    },
+    "Rotation": 0.52359885,
+    "Scale": {
+      "X": 0.6499999,
+      "Y": 0.6499999,
+      "Z": 1.1507158
+    },
+    "SkinId": 1819759436,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2503
+  },
+  {
+    "TypeId": 1886146380,
+    "Variation": 0,
+    "Position": {
+      "X": 16764.088,
+      "Y": 8079.89,
+      "Z": 150.72781
+    },
+    "Rotation": 2.2469778,
+    "Scale": {
+      "X": 0.6027833,
+      "Y": 0.6027833,
+      "Z": 0.9000002
+    },
+    "SkinId": 1886146380,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2484
+  },
+  {
+    "TypeId": 1144008770,
+    "Variation": 9,
+    "Position": {
+      "X": 16960,
+      "Y": 8384,
+      "Z": 142.8125
+    },
+    "Rotation": 2.6179938,
+    "Scale": {
+      "X": 1.0355663,
+      "Y": 1.0355663,
+      "Z": 1.0355663
+    },
+    "SkinId": 1144008770,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2467
+  },
+  {
+    "TypeId": 1936215873,
+    "Variation": 0,
+    "Position": {
+      "X": 16684.068,
+      "Y": 8425.503,
+      "Z": 163.59792
+    },
+    "Rotation": 3.1401806,
+    "Scale": {
+      "X": 0.5499999,
+      "Y": 0.5499999,
+      "Z": 0.5499999
+    },
+    "SkinId": 1936215873,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3756
+  },
+  {
+    "TypeId": 1936151372,
+    "Variation": 0,
+    "Position": {
+      "X": 17024.34,
+      "Y": 8257.663,
+      "Z": 121.51006
+    },
+    "Rotation": 4.703798,
+    "Scale": {
+      "X": 0.84999996,
+      "Y": 0.84999996,
+      "Z": 0.84999996
+    },
+    "SkinId": 1936151372,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29504
+  }
+]

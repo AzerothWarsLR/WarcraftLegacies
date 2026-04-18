@@ -1,0 +1,19 @@
+{
+  "OldId": "Blsa",
+  "NewId": "B01J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Flame Shield (Caster)"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "OldId": "Utic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0FG,A07B,AInv,Apiv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AUav,Aamk,A06V,A06U,A10M"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 20
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.25
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R054,R01Y"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Darkener"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at manipulating enemies and destroying them from the inside.|n|cfff5962dAbilities:|r Permanent Invisibility, Astral Walk|n|cfff5962dCan learn:|R Finger of Pain, Mind Confusion, Vampiric Aura, Inspire Madness|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Tichondrius"
+    }
+  ]
+}

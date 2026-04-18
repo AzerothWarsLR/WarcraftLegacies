@@ -1,0 +1,34 @@
+{
+  "OldId": "sres",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIdb"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ista",
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Restores 125 hit points and 50 mana of friendly non-mechanical units in an area around your Hero."
+    }
+  ]
+}

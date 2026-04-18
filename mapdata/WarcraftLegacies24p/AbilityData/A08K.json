@@ -1,0 +1,114 @@
+{
+  "OldId": "ACim",
+  "NewId": "A08K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Eim3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueImmolationOn.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scourge - Frozen Throne"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Toggle Unholy Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Unholy Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate to make Icecrown Obelisks invulnerable.|nDrains mana until deactivated."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueImmolationOff.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Unholy Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Deactivate to stop draining mana, but make Icecrown Obelisks vulnerable."
+    }
+  ]
+}

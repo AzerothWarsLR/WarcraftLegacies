@@ -1,0 +1,216 @@
+{
+  "OldId": "nbal",
+  "NewId": "n0D6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACce,A020,A0YE,A07C,ACsk,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 18
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 9
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 80
+    },
+    {
+      "Id": "ua2b",
+      "Value": 60
+    },
+    {
+      "Id": "ufoo",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 90
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1750
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 13
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 85
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 2
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ucs2",
+      "Type": 3,
+      "Value": "MetalMediumSlice"
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 280
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 280
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.68
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.68
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R08L,o05E"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lightforged Dragoon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Lightforged Dragoon"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elite draenei warriors blessed by the Naaru.|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Zodiac Warrior.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNZodiac Warrior.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroPaladin"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ".mdl"
+    }
+  ]
+}

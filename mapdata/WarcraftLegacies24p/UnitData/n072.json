@@ -1,0 +1,134 @@
+{
+  "OldId": "nfsh",
+  "NewId": "n072",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACev,AChx"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 150
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1500
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 1000
+    },
+    {
+      "Id": "umpm",
+      "Value": 1000
+    },
+    {
+      "Id": "usin",
+      "Value": 1000
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "urtm",
+      "Value": 1
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "uclg",
+      "Value": 135
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Vile Priestess Hexx"
+    },
+    {
+      "Id": "uclr",
+      "Value": 190
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Shandris"
+    }
+  ]
+}

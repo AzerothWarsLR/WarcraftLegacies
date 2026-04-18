@@ -1,0 +1,22 @@
+{
+  "OldId": "gemt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "istr",
+      "Value": 400
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase (|cffcece00A|r) Gem of True Seeing"
+    }
+  ]
+}

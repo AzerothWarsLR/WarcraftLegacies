@@ -1,0 +1,16 @@
+{
+  "Left": -1184,
+  "Bottom": -1824,
+  "Right": -1088,
+  "Top": -1728,
+  "Name": "Thrall Ship 1",
+  "CreationNumber": 252,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

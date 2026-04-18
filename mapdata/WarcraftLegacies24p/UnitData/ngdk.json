@@ -1,0 +1,25 @@
+{
+  "OldId": "ngdk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 30
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    }
+  ]
+}

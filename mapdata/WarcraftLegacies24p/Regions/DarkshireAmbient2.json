@@ -1,0 +1,16 @@
+{
+  "Left": 13600,
+  "Bottom": -18208,
+  "Right": 14912,
+  "Top": -14720,
+  "Name": "DarkshireAmbient2",
+  "CreationNumber": 345,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

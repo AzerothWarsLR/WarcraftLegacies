@@ -1,0 +1,85 @@
+{
+  "OldId": "AEtq",
+  "NewId": "A02Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(yogg Treant)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Healing Rain"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Tranquility - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units. |n|cffffcc00Level 1|r - Heals \u003CAEtq,DataA1\u003E hit points per second. 180 seconds cooldown. |n|cffffcc00Level 2|r - Heals \u003CAEtq,DataA2\u003E hit points per second. 165 seconds cooldown. |n|cffffcc00Level 3|r - Heals \u003CAEtq,DataA3\u003E hit points per second. 150 seconds cooldown. |n|nLasts \u003CAEtq,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Healing Rain"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 20 hit points per second. |nLasts 10 seconds."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "OldId": "ACct",
+  "NewId": "A070",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Felguard. Blue - Felguard. Dark Green - Marksman)"
+    }
+  ]
+}

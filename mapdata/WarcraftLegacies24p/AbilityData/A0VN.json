@@ -1,0 +1,53 @@
+{
+  "OldId": "Apig",
+  "NewId": "A0VN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Permanent Immolation)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Burns nearby enemy units for 40 points of damage per second."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Titanforged"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Titanforged"
+    }
+  ]
+}

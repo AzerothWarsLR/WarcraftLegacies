@@ -1,0 +1,16 @@
+{
+  "Left": -608,
+  "Bottom": 21632,
+  "Right": 96,
+  "Top": 21984,
+  "Name": "NR Rock2",
+  "CreationNumber": 418,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}
