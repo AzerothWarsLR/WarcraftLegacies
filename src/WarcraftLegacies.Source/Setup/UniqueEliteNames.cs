@@ -417,7 +417,6 @@ public static class UniqueEliteNames
         "Velkris Doomcaller",
         "Kaelvros Nightbane"
       },
-
       [UNIT_H06B_TEMPLAR_LORDAERON] =
         new()
         {
@@ -436,7 +435,20 @@ public static class UniqueEliteNames
           "Inquisitor Varrus Holycinder",
           "Benedict Ironfaith",
           "Albrecht Sunfall"
+        },
+      [UNIT_N04O_DOOM_LORD_LEGION] =
+        new()
+        {
+          "Brutillus",
+          "Bulgarian",
+          "Destromath",
+          "Gogonnash",
+          "Mongrethod",
+          "Ra'Adoom",
+          "Xaxion",
+          "Drak'eem"
         }
     };
   }
 }
+
