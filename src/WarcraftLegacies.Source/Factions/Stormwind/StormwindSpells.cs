@@ -27,7 +27,7 @@ public static class StormwindSpells
     var electricStrike = new ElectricStrike(ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
     {
       StunId = ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
-      PurgeId = ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
+      PurgeId = ABILITY_APRG_PURGE_ELECTRIC_STRIKE,
       PurgeOrder = ORDER_PURGE,
       StunOrder = ORDER_FIREBOLT,
       Radius = 500f,
