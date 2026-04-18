@@ -1,6 +1,6 @@
 {
   "OldId": "Assk",
-  "NewId": "A0ER",
+  "NewId": "VP22",
   "Unk": [
     0
   ],
@@ -24,7 +24,7 @@
       "Pointer": 3,
       "Id": "Ssk3",
       "Type": 2,
-      "Value": 12
+      "Value": 15
     },
     {
       "Level": 2,
@@ -32,10 +32,6 @@
       "Id": "Ssk3",
       "Type": 2,
       "Value": 12
-    },
-    {
-      "Id": "alev",
-      "Value": 2
     },
     {
       "Id": "arac",
@@ -88,7 +84,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "( Blue - Orc Cavalry)"
+      "Value": "(Legion - Doomguard)"
     },
     {
       "Id": "anam",
@@ -105,7 +101,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks against this unit have their damage reduced by \u003CA0ER,DataC1\u003E. Attacks cannot be reduced below \u003CA0ER,DataB1\u003E damage."
+      "Value": "Attacks against this unit have their damage reduced by \u003CVP22,DataC1\u003E. Attacks cannot be reduced below \u003CVP22,DataB1\u003E damage."
     },
     {
       "Level": 2,
