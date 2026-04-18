@@ -36,6 +36,10 @@
       "Value": 100
     },
     {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
