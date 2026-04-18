@@ -43,12 +43,20 @@ public sealed class QuestShoresOfNorthrend : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
+    var p = completingFaction.Player;
+    if (p != null)
+    {
+      RefundSystem.RefundEnemyStructuresInRange(p, -512, 15776, 2000);
+    }
+
     KillNeutralHostileUnitsInRadius(-512, 15776, 2000);
+
     if (_arthas.Unit.Owner == completingFaction.Player)
     {
       _arthas.Unit.Revive(400, 16102);
       _arthas.Unit.Facing = 112;
     }
+
     if (completingFaction.Player != null)
     {
       CreateStructureForced(completingFaction.Player, UNIT_H01C_HUNTSMAN_LORDAERON, -513, 16679, 4.757993f * MathEx.DegToRad, 256);

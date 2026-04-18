@@ -30,14 +30,23 @@ public sealed class QuestWarsongHold : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     var boreanTundra = ControlPointManager.Instance.GetFromUnitType(UNIT_N00G_BOREAN_TUNDRA).Unit;
+
+    var p = completingFaction.Player;
+    if (p != null)
+    {
+      RefundSystem.RefundEnemyStructuresInRange(p, boreanTundra.X, boreanTundra.Y, 2300);
+    }
+
     KillNeutralHostileUnitsInRadius(boreanTundra.X, boreanTundra.Y, 2300);
-    //Spawn the base
+
     boreanTundra.SetOwner(completingFaction.Player);
+
     var warsongHold = CreateStructureForced(completingFaction.Player, UNIT_O02S_FORTRESS_WARSONG_T3, -7648, 15456, 270, 192);
     warsongHold.Name = "Warsong Hold";
     warsongHold.MaxLife = 4000;
     warsongHold.SetLifePercent(100);
     warsongHold.AddAbility(AbilityId);
+
     CreateStructureForced(completingFaction.Player, UNIT_N03E_IRON_KEEP_WARSONG_TOWER, -7296, 15680, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O01T_TREASURE_HOARD_WARSONG_SHOP, -7456, 15008, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O028_BURROW_WARSONG_FARM, -7808, 16512, 4.712389f * MathEx.DegToRad, 128);
@@ -61,6 +70,7 @@ public sealed class QuestWarsongHold : QuestData
     CreateStructureForced(completingFaction.Player, UNIT_N03E_IRON_KEEP_WARSONG_TOWER, -7808, 16128, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_ORAI_RAIDER_WARSONG, -7319, 15134, 0.467489f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, -8672, 15328, 4.712389f * MathEx.DegToRad, 128);
+
     completingFaction.ModObjectLimit(RequiredResearchId, -Faction.Unlimited);
   }
 

@@ -52,7 +52,14 @@ public sealed class QuestStromgarde : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
+    var p = completingFaction.Player;
+    if (p != null)
+    {
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.Stromgarde);
+    }
+
     completingFaction.Player.SetTechResearched(ResearchId, 1);
+
     foreach (var unit in _rescueUnits)
     {
       unit.Rescue(completingFaction.Player);

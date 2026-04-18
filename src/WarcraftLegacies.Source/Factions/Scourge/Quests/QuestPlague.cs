@@ -68,7 +68,10 @@ public sealed class QuestPlague : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.ModObjectLimit(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.Unlimited);
-    if (completingFaction.Player != null)
+
+    var p = completingFaction.Player;
+
+    if (p != null)
     {
       SpawnArmies(completingFaction);
     }
@@ -78,6 +81,16 @@ public sealed class QuestPlague : QuestData
     PresentInvasionDialogs();
     RescueBases(completingFaction);
     RegisterRocks();
+
+    if (p != null)
+    {
+      RefundSystem.RefundEnemyStructuresInRect(
+        p,
+        Regions.DeathknellUnlock,
+        Regions.StratholmeScourgeBase,
+        Regions.CaerDarrow
+      );
+    }
 
     if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
     {

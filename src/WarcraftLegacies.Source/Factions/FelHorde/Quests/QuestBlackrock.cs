@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -50,6 +51,11 @@ public sealed class QuestBlackrock : QuestData
       ? player.NeutralAggressive
       : completingFaction.Player;
 
+    if (completingFaction.ScoreStatus != ScoreStatus.Defeated)
+    {
+      RefundSystem.RefundEnemyStructuresInRect(rescuer, Regions.BlackrockUnlock);
+    }
+
     rescuer.RescueGroup(_rescueUnits1);
     rescuer.RescueGroup(_rescueUnits2);
   }
@@ -57,12 +63,17 @@ public sealed class QuestBlackrock : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
+    var p = completingFaction.Player;
+    if (p != null)
+    {
+      RefundSystem.RefundEnemyStructuresInRect(p, Regions.BlackrockUnlock);
+    }
+
     completingFaction.Player.RescueGroup(_rescueUnits1);
     completingFaction.Player.RescueGroup(_rescueUnits2);
 
     completingFaction.Player.PingMinimapSimple(12400.0f, -11800.0f, 3.0f);
   }
-
 
   /// <inheritdoc />
   protected override void OnAdd(Faction whichFaction) =>
