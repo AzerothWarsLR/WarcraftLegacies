@@ -27,6 +27,15 @@
     "Convert C# to Lua": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies -i Script -d false"
+    },
+
+    "Convert W3X to MapData (24p)": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies24p"
+    },
+    "Convert MapData to W3X (24p)": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies24p"
     }
   }
 }
