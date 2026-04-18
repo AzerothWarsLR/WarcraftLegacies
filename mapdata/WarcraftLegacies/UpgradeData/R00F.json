@@ -61,7 +61,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Reduces incoming damage from attacks by \u003CA02O,DataC1\u003E for Dwarven Warriors and \u003CVP20,DataC1\u003E for Thanes."
+      "Value": "Equips Dwarven Warriors and Thanes with mithril plating, reducing incoming damage from attacks by \u003CA02O,DataC1\u003E for Dwarven Warriors and \u003CVP20,DataC1\u003E for Thanes."
     }
   ]
 }
