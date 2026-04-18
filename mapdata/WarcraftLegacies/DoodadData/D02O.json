@@ -37,7 +37,7 @@
     },
     {
       "Id": "dvar",
-      "Value": 3
+      "Value": 4
     },
     {
       "Id": "dshd",
@@ -61,17 +61,22 @@
     {
       "Variation": 3,
       "Id": "dvr1",
-      "Value": 100
+      "Value": 150
     },
     {
       "Variation": 3,
       "Id": "dvb1",
-      "Value": 125
+      "Value": 150
     },
     {
-      "Variation": 3,
+      "Variation": 4,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 4,
       "Id": "dvg1",
-      "Value": 200
+      "Value": 125
     }
   ]
 }

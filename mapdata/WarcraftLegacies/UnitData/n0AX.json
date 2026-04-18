@@ -115,6 +115,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "Mutation Circle"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowSacrificialPit"
     }
   ]
 }

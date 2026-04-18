@@ -1,0 +1,78 @@
+{
+  "OldId": "LTbs",
+  "NewId": "B006",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bfvi",
+      "Value": 1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "B_ShadowCanopy"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\AncestralSpirit\\AncestralSpiritCaster.mdl"
+    },
+    {
+      "Id": "bvcb",
+      "Value": 0
+    },
+    {
+      "Id": "bvcr",
+      "Value": 0
+    },
+    {
+      "Id": "bvcg",
+      "Value": 0
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "ShadowAncientofLore"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": "buch",
+      "Value": 1
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 1
+    }
+  ]
+}
