@@ -51,6 +51,17 @@ internal static class MapCommandFactory
       }
     };
   }
+  public static Command Generate24p()
+  {
+    return new MapCommand<WarcraftLegacies.CLI.Contexts.MapGenerateContext24p>(
+      "constants-24p",
+      "Produces Constants and Regions C# files for the 24-player map.")
+    {
+      Configure = ctx =>
+      {
+      }
+    };
+  }
 
   public static Command Serialize()
   {

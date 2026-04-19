@@ -1,15 +1,15 @@
 <Solution>
-  <Folder Name="/src/">
-    <Project Path="src/MacroTools.Shared/MacroTools.Shared.csproj" />
-    <Project Path="src/MacroTools/MacroTools.csproj" />
-    <Project Path="src/War3Api.Object/War3Api.Object.csproj" />
-    <Project Path="src/Warcraft.Cartographer/Warcraft.Cartographer.csproj" />
-    <Project Path="src/Warcraft.Integrity/Warcraft.Integrity.csproj" Type="Classic C#" />
-    <Project Path="src/WarcraftLegacies.CLI/WarcraftLegacies.CLI.csproj" />
-    <Project Path="src/WarcraftLegacies.Shared/WarcraftLegacies.Shared.csproj" />
-    <Project Path="src/WarcraftLegacies.Source/WarcraftLegacies.Source.csproj" />
-    <Project Path="WarcraftLegacies24p\WarcraftLegacies24p.csproj" Type="Classic C#" />
-  </Folder>
+ <Folder Name="/src/">
+  <Project Path="src/MacroTools.Shared/MacroTools.Shared.csproj" />
+  <Project Path="src/MacroTools/MacroTools.csproj" />
+  <Project Path="src/War3Api.Object/War3Api.Object.csproj" />
+  <Project Path="src/Warcraft.Cartographer/Warcraft.Cartographer.csproj" />
+  <Project Path="src/Warcraft.Integrity/Warcraft.Integrity.csproj" Type="Classic C#" />
+  <Project Path="src/WarcraftLegacies.CLI/WarcraftLegacies.CLI.csproj" />
+  <Project Path="src/WarcraftLegacies.Shared/WarcraftLegacies.Shared.csproj" />
+  <Project Path="src/WarcraftLegacies.Source/WarcraftLegacies.Source.csproj" />
+  <Project Path="src/WarcraftLegacies24p/WarcraftLegacies24p.csproj" />
+</Folder>
   <Folder Name="/test/">
     <Project Path="test/MacroTools.Tests/MacroTools.Tests.csproj" />
     <Project Path="test/MacroTools.TestSupport/MacroTools.TestSupport.csproj" />

@@ -13,7 +13,15 @@ public sealed class ConstantsGeneratorOptions
     };
   }
 
-  public required string ConstantsOutputPath { get; init; }
+  public static ConstantsGeneratorOptions CreateFor24p(SharedPathOptions sharedPathOptions)
+  {
+    return new ConstantsGeneratorOptions
+    {
+      ConstantsOutputPath = Path.Combine(sharedPathOptions.SourceProjectPath, "Constants"),
+      RegionsOutputPath   = Path.Combine(sharedPathOptions.SourceProjectPath, "Regions")
+    };
+  }
 
+  public required string ConstantsOutputPath { get; init; }
   public required string RegionsOutputPath { get; init; }
 }

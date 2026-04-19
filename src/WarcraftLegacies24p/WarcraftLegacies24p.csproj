@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\MacroTools.Shared\MacroTools.Shared.csproj" />
-    <ProjectReference Include="..\src\MacroTools\MacroTools.csproj" />
-    <ProjectReference Include="..\src\WarcraftLegacies.Shared\WarcraftLegacies.Shared.csproj" />
+    <ProjectReference Include="..\MacroTools.Shared\MacroTools.Shared.csproj" />
+    <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
+    <ProjectReference Include="..\WarcraftLegacies.Shared\WarcraftLegacies.Shared.csproj" />
   </ItemGroup>
 
 </Project>

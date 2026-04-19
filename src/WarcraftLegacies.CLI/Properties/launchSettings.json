@@ -36,6 +36,10 @@
     "Convert MapData to W3X (24p)": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies24p"
+    },
+    "Generate Constants (24p)": {
+      "commandName": "Project",
+      "commandLineArgs": "generate constants WarcraftLegacies24p"
     }
   }
 }
