@@ -1,0 +1,52 @@
+{
+  "OldId": "Agyv",
+  "NewId": "A0QW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNScout.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(SI:7 Agent)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Heightened Senses"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Heightened Senses"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reveals nearby invisible units. up to a range of 500."
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    }
+  ]
+}

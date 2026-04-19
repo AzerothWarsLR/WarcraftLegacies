@@ -1,0 +1,14 @@
+{
+  "OldId": "Afod",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ancient,enemies,ground,nonhero,structure"
+    }
+  ]
+}

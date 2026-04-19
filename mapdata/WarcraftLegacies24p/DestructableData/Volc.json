@@ -1,0 +1,17 @@
+{
+  "OldId": "Volc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bonc",
+      "Value": 1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 5
+    }
+  ]
+}

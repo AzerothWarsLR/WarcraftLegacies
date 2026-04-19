@@ -1,0 +1,48 @@
+{
+  "OldId": "nhmc",
+  "NewId": "n0D5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "hllh"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Footman"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Hero_LichKing.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Tier 1 Patron)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    }
+  ]
+}

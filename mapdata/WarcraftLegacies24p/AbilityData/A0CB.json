@@ -1,0 +1,51 @@
+{
+  "OldId": "ACua",
+  "NewId": "A0CB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Halls of the Dead)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Blighted Grounds"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blighted Grounds"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The grounds near the structure is blighted. Increases nearby friendly life regeneration rate by 3 health per second in a 1000 area of effect."
+    }
+  ]
+}

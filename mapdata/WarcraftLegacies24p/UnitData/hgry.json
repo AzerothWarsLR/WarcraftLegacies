@@ -1,0 +1,110 @@
+{
+  "OldId": "hgry",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0JP,A0CL,A09C,Asth"
+    },
+    {
+      "Id": "ubld",
+      "Value": 12
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ua2b",
+      "Value": 34
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 42
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R014,Rhar,Rhme,Rhan,Rhhb,Rguv"
+    },
+    {
+      "Id": "umvs",
+      "Value": 350
+    },
+    {
+      "Id": "uhpm",
+      "Value": 975
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Wildhammer trained, Bronzebeard tough.|n|cfff5962dAbilities:|R Shock, Chain Lightning|n|cfff5962dCan Learn:|R Storm Hammers|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

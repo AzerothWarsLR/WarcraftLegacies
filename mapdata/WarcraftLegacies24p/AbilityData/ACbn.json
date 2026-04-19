@@ -1,0 +1,22 @@
+{
+  "OldId": "ACbn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Neutral Hostile) (Medivh)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
+}

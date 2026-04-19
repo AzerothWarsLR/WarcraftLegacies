@@ -1,0 +1,52 @@
+{
+  "OldId": "Abtl",
+  "NewId": "A00P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "Btl1",
+      "Type": 3,
+      "Value": "hrif"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLoadDwarf.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Yellow - Keep Tower)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Battle Stations (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes nearby Riflemen to run into the Keep."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnloadDwarf.blp"
+    }
+  ]
+}

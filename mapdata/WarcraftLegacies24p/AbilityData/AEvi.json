@@ -1,0 +1,80 @@
+{
+  "OldId": "AEvi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E00G"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Metamorphosis - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transforms Illidan into a powerful Demon with a ranged attack. |n|n|cffffcc00Level 1|r - 400 hit points, lasts 60 seconds. Got 180 seconds cooldown. |n|cffffcc00Level 2|r - 800 hit points, lasts 70 seconds. Got 160 seconds cooldown. |n|cffffcc00Level 3|r - 1200 hit points, lasts 80 seconds. Got 140 seconds cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack. Has 600 bonus hit points and lasts for 20 seconds."
+    }
+  ]
+}

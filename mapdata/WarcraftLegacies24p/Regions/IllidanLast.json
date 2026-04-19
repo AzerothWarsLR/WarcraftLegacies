@@ -1,0 +1,16 @@
+{
+  "Left": -18720,
+  "Bottom": 3712,
+  "Right": -18688,
+  "Top": 3744,
+  "Name": "IllidanLast",
+  "CreationNumber": 410,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

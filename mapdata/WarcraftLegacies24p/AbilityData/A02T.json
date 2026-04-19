@@ -1,0 +1,34 @@
+{
+  "OldId": "AHta",
+  "NewId": "A02T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00D"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01L"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

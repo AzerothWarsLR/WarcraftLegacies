@@ -1,0 +1,16 @@
+{
+  "Left": -12768,
+  "Bottom": 1152,
+  "Right": -12736,
+  "Top": 1184,
+  "Name": "ForestSpirits6",
+  "CreationNumber": 429,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

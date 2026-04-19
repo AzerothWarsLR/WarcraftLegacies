@@ -1,0 +1,64 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n079",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A4,Awrp,Avul"
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\StoneWall1Path.tga"
+    },
+    {
+      "Id": "uclb",
+      "Value": 70
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Ruins\\Structures\\RuinsArchway0_\\RuinsArchway0_0.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ahn\u0027Qiraj"
+    },
+    {
+      "Id": "uclr",
+      "Value": 45
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "OldId": "nfa2",
+  "NewId": "n02C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 950
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Level 1)"
+    }
+  ]
+}

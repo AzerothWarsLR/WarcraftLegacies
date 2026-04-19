@@ -1,0 +1,34 @@
+{
+  "OldId": "BEah",
+  "NewId": "B032",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRetriAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Retribution Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Retribution Aura; melee units that attack it will take damage."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

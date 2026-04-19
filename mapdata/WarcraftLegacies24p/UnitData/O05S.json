@@ -1,0 +1,167 @@
+{
+  "OldId": "Ogrh",
+  "NewId": "O05S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.85
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0YQ"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0TW,AOwk,A08N,Aamk,A0WM"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 240
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 80
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YN,AInv"
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04J,R076,R093"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Overseer of Fenris Keep"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(gnoll)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Overseer of Fenris Keep"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Overseer of Fenris Keep"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff0000You will lose your current faction and join an Employer as a new small 1 hero faction|r|n|nPossible employers in order of priority:|n-Forsaken (once independant)|n-Zandalar|n-Twilight Hammer|n-Goblin|n-Warsong|n-Frostwolf|n-Dragonmaw"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Overseer of Fenris Keep"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Snarlmane"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroGnollSlicer.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroGnollSlicer.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HeroSlicerv2.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Gnoll"
+    }
+  ]
+}

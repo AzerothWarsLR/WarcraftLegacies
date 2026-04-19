@@ -1,0 +1,103 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R03B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h04C"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0P3"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rtma"
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gtib",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCriticalStrike.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Arathor-T2)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Exploit Weakness"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Exploit Weakness"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Upgrades |cffcece00Bladesman |rinto |cffcece00Pikeman|r, providing the following changes:|n|n- Increases health by 100.|n|n- Increases movement speed by 15.|n|n- Increases armor by 1.|n|n- Increases range by 75.|n|n- Enables the |cffcece00Sunder Armor |rability, causing attacks to reduce a target\u0027s armor by 3 for 5 seconds.|n|n- Improves |cffcece00Defend|r with an additional 5% chance to reflect and taking 15% less piercing damage while active."
+    }
+  ]
+}

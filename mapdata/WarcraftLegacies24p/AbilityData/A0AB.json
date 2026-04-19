@@ -1,0 +1,52 @@
+{
+  "OldId": "Auns",
+  "NewId": "A0AB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R011"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Defiled Fountain)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Unsummon Defiled Fountain of Life"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "|cffffcc00U|rnsummon Defiled Fountain of Life"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Unsummon your Defiled Fountain of Life to regain 50% of the spent resources, and to rebuild it where wanted."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -27456,
+  "Bottom": 18496,
+  "Right": -26240,
+  "Top": 19936,
+  "Name": "ImmolFight",
+  "CreationNumber": 380,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

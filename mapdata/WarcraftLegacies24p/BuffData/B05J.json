@@ -1,0 +1,19 @@
+{
+  "OldId": "BUav",
+  "NewId": "B05J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Grim Batol"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Restores hit points equal to 10% of damage dealt to enemy units."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Aphx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas)"
+    }
+  ]
+}

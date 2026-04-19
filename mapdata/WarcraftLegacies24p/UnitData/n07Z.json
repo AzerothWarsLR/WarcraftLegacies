@@ -1,0 +1,92 @@
+{
+  "OldId": "nogm",
+  "NewId": "n07Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A06P,ACbh"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 7
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 36
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 43
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 25
+    },
+    {
+      "Id": "ugor",
+      "Value": 25
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1250
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "ua1r",
+      "Value": 150
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "urtm",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Boulderfist Mauler"
+    }
+  ]
+}

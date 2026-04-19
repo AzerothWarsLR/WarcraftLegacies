@@ -1,0 +1,39 @@
+{
+  "OldId": "fgbd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "istr",
+      "Value": 180
+    },
+    {
+      "Id": "isst",
+      "Value": 300
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Summons 2 Blue Dragon to fight for you. |nLasts 180 seconds."
+    }
+  ]
+}

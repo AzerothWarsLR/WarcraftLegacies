@@ -1,0 +1,116 @@
+{
+  "OldId": "AEev",
+  "NewId": "A0LI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "demon"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Khadgar)"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Give Khadgar a chance to cast a random spell from the following list when attacking an enemy unit. Khadgar Arcane Phantoms also have this ability. |n|n|cffffcc00Level 1|r - \u003CAEev,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CAEev,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CAEev,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - 35% chance that an opponent misses."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CAEev,DataA4,%\u003E% chance to avoid an attack."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Spell Mastery - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spell Mastery"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASDevastation.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevastation.blp"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EtherealForm\\SpiritWalkerChange.mdl"
+    }
+  ]
+}

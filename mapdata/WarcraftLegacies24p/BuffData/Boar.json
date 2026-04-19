@@ -1,0 +1,13 @@
+{
+  "OldId": "Boar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWardTarget.mdx"
+    }
+  ]
+}

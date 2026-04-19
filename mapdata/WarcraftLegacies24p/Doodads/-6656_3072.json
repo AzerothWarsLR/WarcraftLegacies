@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1651789658,
+    "Variation": 1,
+    "Position": {
+      "X": -6954.6104,
+      "Y": 3203.6475,
+      "Z": -40.319656
+    },
+    "Rotation": 0.77451444,
+    "Scale": {
+      "X": 0.93553275,
+      "Y": 0.93553275,
+      "Z": 0.93553275
+    },
+    "SkinId": 1651789658,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 31501
+  },
+  {
+    "TypeId": 1802654284,
+    "Variation": 9,
+    "Position": {
+      "X": -7032.29,
+      "Y": 2982.4255,
+      "Z": -1.9339075
+    },
+    "Rotation": 3.9444444,
+    "Scale": {
+      "X": 0.78,
+      "Y": 0.78,
+      "Z": 0.78
+    },
+    "SkinId": 1802654284,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 31672
+  },
+  {
+    "TypeId": 1802654284,
+    "Variation": 9,
+    "Position": {
+      "X": -7165.126,
+      "Y": 3061.6926,
+      "Z": 7.276369
+    },
+    "Rotation": 3.9444444,
+    "Scale": {
+      "X": 0.78,
+      "Y": 0.78,
+      "Z": 0.78
+    },
+    "SkinId": 1802654284,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 31671
+  },
+  {
+    "TypeId": 1802654284,
+    "Variation": 9,
+    "Position": {
+      "X": -6848.907,
+      "Y": 2973.7395,
+      "Z": -32.243958
+    },
+    "Rotation": 1.9992467,
+    "Scale": {
+      "X": 0.78,
+      "Y": 0.78,
+      "Z": 0.78
+    },
+    "SkinId": 1802654284,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 31670
+  },
+  {
+    "TypeId": 1802654284,
+    "Variation": 4,
+    "Position": {
+      "X": -6953.1597,
+      "Y": 3211.602,
+      "Z": -38.86584
+    },
+    "Rotation": 3.9444442,
+    "Scale": {
+      "X": 0.78,
+      "Y": 0.78,
+      "Z": 0.78
+    },
+    "SkinId": 1802654284,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 31986
+  }
+]

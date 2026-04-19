@@ -1,0 +1,16 @@
+{
+  "Left": 8768,
+  "Bottom": -11616,
+  "Right": 8896,
+  "Top": -11488,
+  "Name": "Khadgar",
+  "CreationNumber": 40,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

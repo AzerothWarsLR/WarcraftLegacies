@@ -1,0 +1,33 @@
+{
+  "OldId": "ACce",
+  "NewId": "A0AM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(25%)(Stormwind Champion"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The unit strikes with such force that 25% of their damage strikes through to enemies near the primary attacked unit."
+    }
+  ]
+}

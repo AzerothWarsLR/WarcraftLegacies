@@ -1,0 +1,48 @@
+{
+  "OldId": "LTbr",
+  "NewId": "B00W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_HugeStump.mdl"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_HugeStump.mdl"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Tree Huge"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "ShadowTempleoftheDamned"
+    }
+  ]
+}

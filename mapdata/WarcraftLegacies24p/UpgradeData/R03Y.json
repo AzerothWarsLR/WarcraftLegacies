@@ -1,0 +1,90 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R03Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "A0E4"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "Ahea"
+    },
+    {
+      "Id": "gglb",
+      "Value": 200
+    },
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "glmb",
+      "Value": 200
+    },
+    {
+      "Id": "gtib",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMirjana.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Arathor-T3)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Katrana Prestor Aid"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Katrana Prestor Aid"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "- Unlocks|cffcece00 Katrana Prestor |ras a Demi Hero and enables the training of |cffcece00Conjurers|r, limited to 6, with the following abilities:|n|n|cffcece00Firestorm|r - Calls down a storm of fire to strike enemy units for 30 damage in a large area. Lasts 15 seconds.|n|n|cffcece00Summon Scorpions |r- Summons 4 scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal 28 -37 damage. Lasts 45 seconds.|n|n|cffcece00Invisibility|r - Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible. Lasts 120 seconds."
+    }
+  ]
+}

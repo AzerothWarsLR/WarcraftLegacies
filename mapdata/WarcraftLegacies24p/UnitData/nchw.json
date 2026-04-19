@@ -1,0 +1,145 @@
+{
+  "OldId": "nchw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0F8,Aion,ACfb,A0JI"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0F8"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.39
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 19
+    },
+    {
+      "Id": "ugor",
+      "Value": 22
+    },
+    {
+      "Id": "uhpm",
+      "Value": 335
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R035,R023,R00M,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-shaman.blp"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Firebolt,- Firebolt|n- Devour Magic,- Firebolt|n- Devour Magic|n- Unholy Armor"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Fel Warlock"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Fel Warlock"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Vile warlock of the various Outland clans.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Learn:|R Devour Magic, Unholy Armor |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

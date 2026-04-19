@@ -1,0 +1,31 @@
+{
+  "OldId": "Asta",
+  "NewId": "A0U6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R071"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Sta4",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(troll Zandalar)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

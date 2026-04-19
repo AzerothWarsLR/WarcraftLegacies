@@ -1,0 +1,34 @@
+{
+  "OldId": "BIpv",
+  "NewId": "B03H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVampiricAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Blood Fury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "The hero has entered a frenzy state and his weapons now thirst for blood."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Blood Fury"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "OldId": "Xbdt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIda\\AIdaCaster.mdl"
+    }
+  ]
+}

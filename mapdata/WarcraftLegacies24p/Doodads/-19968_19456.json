@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1752321868,
+    "Variation": 3,
+    "Position": {
+      "X": -20360.465,
+      "Y": 19242.012,
+      "Z": 57
+    },
+    "Rotation": 4.590216,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1752321868,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 37835
+  },
+  {
+    "TypeId": 1953713993,
+    "Variation": 0,
+    "Position": {
+      "X": -20059.797,
+      "Y": 19373.898,
+      "Z": 248.99991
+    },
+    "Rotation": 2.287778,
+    "Scale": {
+      "X": 0.9,
+      "Y": 0.9,
+      "Z": 0.71
+    },
+    "SkinId": 1953713993,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 37824
+  },
+  {
+    "TypeId": 909389892,
+    "Variation": 0,
+    "Position": {
+      "X": -20055.814,
+      "Y": 19372.918,
+      "Z": 57
+    },
+    "Rotation": 1.5707965,
+    "Scale": {
+      "X": 1.2499998,
+      "Y": 1.2499998,
+      "Z": 1.2499998
+    },
+    "SkinId": 909389892,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 37823
+  },
+  {
+    "TypeId": 1228156996,
+    "Variation": 0,
+    "Position": {
+      "X": -20056.13,
+      "Y": 19276.717,
+      "Z": 57
+    },
+    "Rotation": 1.5707965,
+    "Scale": {
+      "X": 0.75,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1228156996,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 37783
+  },
+  {
+    "TypeId": 1667845964,
+    "Variation": 1,
+    "Position": {
+      "X": -20440.951,
+      "Y": 19249.248,
+      "Z": 57
+    },
+    "Rotation": 3.3684857,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1667845964,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 23184
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "Left": 19200,
+  "Bottom": -512,
+  "Right": 19520,
+  "Top": -160,
+  "Name": "NyHighland",
+  "CreationNumber": 81,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

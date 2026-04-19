@@ -1,0 +1,49 @@
+{
+  "OldId": "YSw0",
+  "NewId": "D04U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Terrain\\StoneWall0\\StoneWall03.mdl"
+    },
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Shattrath Wall 2"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 75
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

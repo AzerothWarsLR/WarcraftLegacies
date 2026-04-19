@@ -1,0 +1,124 @@
+{
+  "OldId": "ACfb",
+  "NewId": "A0U7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BPSE"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 1200
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "commoner"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 950
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,hero,nonhero,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Item Soul Gem)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Soul Capture"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumRanged.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals \u003CA0CJ:ACfb,DataA1\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur1\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur1\u003E seconds on heroes.|n|cffffcc00Level 2|r - Deals \u003CA0CJ:ACfb,DataA2\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur2\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur2\u003E seconds on heroes.|n|cffffcc00Level 3|r - Deals \u003CA0CJ:ACfb,DataA3\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur3\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur3\u003E seconds on heroes.|n|cffffcc00Level 4|r - Deals \u003CA0CJ:ACfb,DataA4\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur4\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur4\u003E seconds on heroes."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Weighted Spear (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a weighted spear at an enemy target, dealing 50 damage and stunning the target for 3 seconds. Lasts 1 second on heroes. 1 minute cooldown"
+    }
+  ]
+}

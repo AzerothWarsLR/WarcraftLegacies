@@ -1,0 +1,28 @@
+{
+  "OldId": "nwns",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "usin",
+      "Value": 200
+    },
+    {
+      "Id": "usid",
+      "Value": 400
+    }
+  ]
+}

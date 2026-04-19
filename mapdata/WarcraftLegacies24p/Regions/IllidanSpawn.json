@@ -1,0 +1,16 @@
+{
+  "Left": -12960,
+  "Bottom": 6080,
+  "Right": -12896,
+  "Top": 6144,
+  "Name": "IllidanSpawn",
+  "CreationNumber": 63,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

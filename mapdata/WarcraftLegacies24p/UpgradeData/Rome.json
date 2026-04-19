@@ -1,0 +1,264 @@
+{
+  "OldId": "Rome",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "zar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpOne.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "zar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpTwo.blp"
+    },
+    {
+      "Level": 3,
+      "Id": "zar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
+    },
+    {
+      "Level": 4,
+      "Id": "zar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
+    },
+    {
+      "Level": 5,
+      "Id": "zar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "zar2",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpOne.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "zar2",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpTwo.blp"
+    },
+    {
+      "Level": 3,
+      "Id": "zar2",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
+    },
+    {
+      "Level": 4,
+      "Id": "zar2",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
+    },
+    {
+      "Level": 5,
+      "Id": "zar2",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
+    },
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gglm",
+      "Value": 110
+    },
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "glmb",
+      "Value": 50
+    },
+    {
+      "Id": "glmm",
+      "Value": 150
+    },
+    {
+      "Id": "glvl",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWalkerAdeptTraining.blp"
+    },
+    {
+      "Level": 5,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWalkerMasterTraining.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Unused)"
+    },
+    {
+      "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Teal/Pink/Grey Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Steel Weaponry"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Fel Iron Weaponry"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Thorium Weaponry"
+    },
+    {
+      "Level": 4,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Adamantite Weaponry"
+    },
+    {
+      "Level": 5,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Eternium Weaponry"
+    },
+    {
+      "Level": 6,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Felsteel Weaponry"
+    },
+    {
+      "Level": 7,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Khorium Weaponry"
+    },
+    {
+      "Level": 8,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Arcanite Weaponry"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Steel Weaponry"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Fel Iron Weaponry"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Thorium Weaponry"
+    },
+    {
+      "Level": 4,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Adamantite Weaponry"
+    },
+    {
+      "Level": 5,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Eternium Weaponry"
+    },
+    {
+      "Level": 6,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Felsteel Weaponry"
+    },
+    {
+      "Level": 7,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Khorium Weaponry"
+    },
+    {
+      "Level": 8,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00Q|r] - Upgrade Arcanite Weaponry"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the attack damage of most units."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases the attack damage of most units."
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases the attack damage of most units."
+    }
+  ]
+}

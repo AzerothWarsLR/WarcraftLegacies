@@ -1,0 +1,44 @@
+{
+  "OldId": "OOal",
+  "NewId": "D05P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Units\\Creeps\\ForgottenOne\\ForgottenOne.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Maw of Madness"
+    },
+    {
+      "Id": "dsel",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 15
+    }
+  ]
+}

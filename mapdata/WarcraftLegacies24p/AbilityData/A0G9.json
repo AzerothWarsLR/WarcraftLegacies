@@ -1,0 +1,161 @@
+{
+  "OldId": "AEfn",
+  "NewId": "A0G9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efn1",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Efn1",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Efn1",
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Efn1",
+      "Value": 5
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Main Buildings)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Spawns Treants. Treants have \u003Cefon,realHP\u003E hit points and deal \u003Cefon,mindmg1\u003E - \u003Cefon,maxdmg1\u003E damage. Can learn Nature\u0027s Blessing and Nature\u0027s Gift.|n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises \u003CAEfn,DataA1\u003E Treants for \u003CAEfn,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Raises \u003CAEfn,DataA2\u003E Treants for \u003CAEfn,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Raises \u003CAEfn,DataA3\u003E Treants for \u003CAEfn,Dur3\u003E seconds. |n|cffffcc00Level 4|r - Raises \u003CAEfn,DataA4\u003E Treants for \u003CAEfn,Dur4\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Force of Nature - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spawns 5 Treants from targeted Trees to defend the ancient. Lasts 60 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spawns 5 Treants from targeted Trees to defend the ancient. Lasts 60 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Spawns 5 Treants from targeted Trees to defend the ancient. Lasts 60 seconds."
+    }
+  ]
+}

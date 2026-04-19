@@ -1,0 +1,16 @@
+{
+  "Left": -9600,
+  "Bottom": -18528,
+  "Right": -8672,
+  "Top": -18080,
+  "Name": "TrollSecondChanceWater",
+  "CreationNumber": 267,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

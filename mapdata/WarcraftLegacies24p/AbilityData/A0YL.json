@@ -1,0 +1,114 @@
+{
+  "OldId": "AOae",
+  "NewId": "A0YL",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B07R"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFrostAura.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red Death knight)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chilling Aura"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Presence of the Unspeakable - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Decreases the movement speed and attack rate of nearby enemy units. |n|n|cffffcc00Level 1|r - \u003CAOae,DataA1,%\u003E% movement, \u003CAOae,DataB1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAOae,DataA2,%\u003E% movement, \u003CAOae,DataB2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAOae,DataA3,%\u003E% movement, \u003CAOae,DataB3,%\u003E% attack.|n|cffffcc00Level 4|r - \u003CAOae,DataA4,%\u003E% movement, \u003CAOae,DataB4,%\u003E% attack."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Chilling Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 20%."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\MistAura.mdx"
+    }
+  ]
+}

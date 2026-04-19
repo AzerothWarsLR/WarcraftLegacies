@@ -1,0 +1,106 @@
+{
+  "OldId": "Hmkg",
+  "NewId": "H00E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "SCae,ACfb,Afzy,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 14
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 45
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "ANht"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 760
+    },
+    {
+      "Id": "uint",
+      "Value": 19
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.75
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\CentaurKhan\\CentaurKhan.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Centaur Khan"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Ramzes the Horror"
+    }
+  ]
+}

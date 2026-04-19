@@ -1,0 +1,39 @@
+{
+  "OldId": "BUau",
+  "NewId": "B04B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASNavalAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Kul Tiras Naval Aura."
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This ship is sailing in familiar waters"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Kul Tiras Naval Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

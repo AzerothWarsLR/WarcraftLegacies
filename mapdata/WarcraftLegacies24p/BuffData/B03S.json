@@ -1,0 +1,34 @@
+{
+  "OldId": "Bspo",
+  "NewId": "B03S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTrample.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Trample"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is being trampled by an Outrider; its movement speed is reduced."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Tornado\\Tornado_Target.mdl"
+    }
+  ]
+}

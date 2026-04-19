@@ -1,0 +1,19 @@
+{
+  "OldId": "AIrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 6
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Rod Of Necromancy)(Item)"
+    }
+  ]
+}

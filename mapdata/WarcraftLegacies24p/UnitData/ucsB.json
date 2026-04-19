@@ -1,0 +1,53 @@
+{
+  "OldId": "ucsB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 550
+    },
+    {
+      "Id": "umvs",
+      "Value": 130
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Red - Anub\u0027Arak)(Level 2)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Barrens\\Rocks\\Geyser\\Geyser0.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "nico",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,LEca"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,sapper"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Hero\u0027s Obelisk"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

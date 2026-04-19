@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1412444226,
+    "Variation": 3,
+    "Position": {
+      "X": 6528,
+      "Y": -15424,
+      "Z": 90.5
+    },
+    "Rotation": 2.6179938,
+    "Scale": {
+      "X": 1.1500001,
+      "Y": 1.1500001,
+      "Z": 1.1500001
+    },
+    "SkinId": 1412444226,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 4209
+  },
+  {
+    "TypeId": 1935757142,
+    "Variation": 0,
+    "Position": {
+      "X": 6846.8735,
+      "Y": -15529.877,
+      "Z": 163.37758
+    },
+    "Rotation": 3.7455227,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "SkinId": 1935757142,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 1204
+  },
+  {
+    "TypeId": 1935757142,
+    "Variation": 0,
+    "Position": {
+      "X": 6796.47,
+      "Y": -15672.11,
+      "Z": 124.9128
+    },
+    "Rotation": 3.7455227,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "SkinId": 1935757142,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25205
+  },
+  {
+    "TypeId": 2002997324,
+    "Variation": 0,
+    "Position": {
+      "X": 6787.453,
+      "Y": -15593.43,
+      "Z": 155.04076
+    },
+    "Rotation": 2.5656343,
+    "Scale": {
+      "X": 1.0580035,
+      "Y": 1.0580035,
+      "Z": 1.0580035
+    },
+    "SkinId": 2002997324,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25206
+  },
+  {
+    "TypeId": 2002997324,
+    "Variation": 0,
+    "Position": {
+      "X": 6895.8564,
+      "Y": -15614.656,
+      "Z": 193.4014
+    },
+    "Rotation": 1.4964666,
+    "Scale": {
+      "X": 1.0580035,
+      "Y": 1.0580035,
+      "Z": 1.0580035
+    },
+    "SkinId": 2002997324,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25207
+  }
+]

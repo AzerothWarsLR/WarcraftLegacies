@@ -1,0 +1,44 @@
+{
+  "OldId": "Advc",
+  "NewId": "A051",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Car1",
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dev2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Dev3",
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(void Hunter)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Consume Cargo"
+    }
+  ]
+}

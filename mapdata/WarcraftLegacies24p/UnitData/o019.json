@@ -1,0 +1,73 @@
+{
+  "OldId": "ohwd",
+  "NewId": "o019",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S00A,Avul,Aloc"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tidesage - Kul\u0027tiras)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Whirlpool.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.2
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Whirlpool"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

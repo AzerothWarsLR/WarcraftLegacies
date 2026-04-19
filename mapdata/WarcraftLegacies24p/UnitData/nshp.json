@@ -1,0 +1,25 @@
+{
+  "OldId": "nshp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "unbr",
+      "Value": 0
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

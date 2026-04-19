@@ -1,0 +1,88 @@
+{
+  "OldId": "ohwd",
+  "NewId": "o01U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK,Avul"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "divine"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 9000
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 100
+    },
+    {
+      "Id": "ua1s",
+      "Value": 1
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground"
+    },
+    {
+      "Id": "utco",
+      "Value": 3
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGuldan.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\orc\\OrcWarlockGuldan\\OrcWarlockGuldan.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gul\u0027dan\u0027s Remains"
+    },
+    {
+      "Id": "ushu",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

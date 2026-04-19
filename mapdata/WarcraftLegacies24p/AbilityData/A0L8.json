@@ -1,0 +1,50 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A0L8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "hwt2"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "demon"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Khadgar)"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Water Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a water lord elemental to attack Khadgar enemies. Has 1250 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

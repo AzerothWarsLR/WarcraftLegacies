@@ -1,0 +1,24 @@
+{
+  "OldId": "Brai",
+  "NewId": "B09B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Natural Burial"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Thornspeaker)"
+    }
+  ]
+}

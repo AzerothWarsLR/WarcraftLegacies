@@ -1,0 +1,44 @@
+{
+  "OldId": "AId1",
+  "NewId": "A0KL",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Attachment)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Charred Ancient"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": "atac",
+      "Value": 2
+    },
+    {
+      "Id": "ata1",
+      "Type": 3,
+      "Value": "hand,left"
+    }
+  ]
+}

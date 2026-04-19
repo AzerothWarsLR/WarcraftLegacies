@@ -1,0 +1,16 @@
+{
+  "Left": -2592,
+  "Bottom": -26368,
+  "Right": -1600,
+  "Top": -25120,
+  "Name": "Telredor",
+  "CreationNumber": 432,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

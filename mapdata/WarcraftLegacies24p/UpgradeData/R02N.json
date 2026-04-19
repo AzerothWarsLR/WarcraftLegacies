@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "NewId": "R02N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: The Ancient Egg"
+    }
+  ]
+}

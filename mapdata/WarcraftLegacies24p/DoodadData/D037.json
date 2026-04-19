@@ -1,0 +1,79 @@
+{
+  "OldId": "IRcy",
+  "NewId": "D037",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Crystal (Purple)"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 5,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 6,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 7,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 8,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 9,
+      "Id": "dvg1",
+      "Value": 0
+    }
+  ]
+}

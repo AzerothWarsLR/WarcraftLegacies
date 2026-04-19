@@ -1,0 +1,66 @@
+{
+  "OldId": "desc",
+  "NewId": "I007",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "ANdo,A0W0"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Increases Intelligence. Can be used to cast Doom."
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\CrystalShard\\CrystalShard.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Skull of Gul\u0027dan"
+    },
+    {
+      "Id": "isca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "issc",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by 15. Can be used to cast Doom.|n|cffffcc00Lore|r|n|cffffdeadOnce belonging to the grand warlock Gul\u0027dan, his skull has been infused immensely by the shifting Nether and is now teeming with fel energy."
+    }
+  ]
+}

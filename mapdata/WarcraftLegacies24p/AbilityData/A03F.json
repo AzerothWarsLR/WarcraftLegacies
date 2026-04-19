@@ -1,0 +1,31 @@
+{
+  "OldId": "Aeye",
+  "NewId": "A03F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Eye of Kilrogg"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Eye of Kilrogg"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that provides vision in an area. |nCan see invisible units. |nLasts 10 minutes."
+    }
+  ]
+}

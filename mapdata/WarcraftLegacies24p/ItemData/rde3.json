@@ -1,0 +1,44 @@
+{
+  "OldId": "rde3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 100
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "isst",
+      "Value": 140
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ring of Protection"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Ring of Protection"
+    }
+  ]
+}

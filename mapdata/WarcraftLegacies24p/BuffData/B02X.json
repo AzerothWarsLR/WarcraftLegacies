@@ -1,0 +1,39 @@
+{
+  "OldId": "Blsh",
+  "NewId": "B02X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Healing Shield"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has a Healing Shield; nearby friendly units will be healed of damage damage if they are next to this unit."
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl"
+    }
+  ]
+}

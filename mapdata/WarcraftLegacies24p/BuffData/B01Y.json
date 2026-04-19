@@ -1,0 +1,24 @@
+{
+  "OldId": "Bhea",
+  "NewId": "B01Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOn.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shadow Infusion"
+    }
+  ]
+}

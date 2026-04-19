@@ -1,0 +1,16 @@
+{
+  "Left": 384,
+  "Bottom": 9568,
+  "Right": 2912,
+  "Top": 11936,
+  "Name": "highmountain",
+  "CreationNumber": 441,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

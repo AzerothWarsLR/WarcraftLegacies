@@ -1,0 +1,127 @@
+{
+  "OldId": "ACfb",
+  "NewId": "A069",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BPSE"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 800
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,hero,nonhero,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumRanged.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Wind Rider)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "abilities\\weapons\\WyvernSpear\\WyvernSpearMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Weighted Spear"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumRanged.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals \u003CA0CJ:ACfb,DataA1\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur1\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur1\u003E seconds on heroes.|n|cffffcc00Level 2|r - Deals \u003CA0CJ:ACfb,DataA2\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur2\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur2\u003E seconds on heroes.|n|cffffcc00Level 3|r - Deals \u003CA0CJ:ACfb,DataA3\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur3\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur3\u003E seconds on heroes.|n|cffffcc00Level 4|r - Deals \u003CA0CJ:ACfb,DataA4\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur4\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur4\u003E seconds on heroes."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Weighted Spear"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a weighted spear at the target unit that deals \u003CA069,DataA1\u003E damage and stuns for \u003CA069,Dur1\u003E. Lasts \u003CA069,HeroDur1\u003E against heroes."
+    }
+  ]
+}

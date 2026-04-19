@@ -1,0 +1,16 @@
+{
+  "Left": -19072,
+  "Bottom": 2080,
+  "Right": -17856,
+  "Top": 7584,
+  "Name": "AshenvaleAmbient4",
+  "CreationNumber": 311,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

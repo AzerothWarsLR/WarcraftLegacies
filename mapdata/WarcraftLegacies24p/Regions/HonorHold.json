@@ -1,0 +1,16 @@
+{
+  "Left": 2208,
+  "Bottom": -27360,
+  "Right": 3936,
+  "Top": -26016,
+  "Name": "HonorHold",
+  "CreationNumber": 43,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

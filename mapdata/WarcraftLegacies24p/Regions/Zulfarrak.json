@@ -1,0 +1,16 @@
+{
+  "Left": -12352,
+  "Bottom": -14272,
+  "Right": -10592,
+  "Top": -12064,
+  "Name": "Zulfarrak",
+  "CreationNumber": 34,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

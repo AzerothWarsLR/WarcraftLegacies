@@ -1,0 +1,16 @@
+{
+  "Left": 16192,
+  "Bottom": 8896,
+  "Right": 18080,
+  "Top": 10944,
+  "Name": "Corins Crossing",
+  "CreationNumber": 151,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

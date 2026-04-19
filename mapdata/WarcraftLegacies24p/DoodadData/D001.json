@@ -1,0 +1,39 @@
+{
+  "OldId": "GPsh",
+  "NewId": "D001",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\SpikeBarrier\\SpikeBarrier.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Blade\u0027s Edge Spikes"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "O"
+    }
+  ]
+}

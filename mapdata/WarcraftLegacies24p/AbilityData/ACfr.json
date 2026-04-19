@@ -1,0 +1,17 @@
+{
+  "OldId": "ACfr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
+}

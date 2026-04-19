@@ -1,0 +1,38 @@
+{
+  "OldId": "BRfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Fissure (Barrens)"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

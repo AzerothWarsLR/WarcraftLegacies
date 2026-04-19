@@ -1,0 +1,16 @@
+{
+  "Left": 5696,
+  "Bottom": -17664,
+  "Right": 8672,
+  "Top": -14304,
+  "Name": "SentinelTowerAmbient",
+  "CreationNumber": 339,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

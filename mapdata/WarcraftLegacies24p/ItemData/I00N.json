@@ -1,0 +1,73 @@
+{
+  "OldId": "infs",
+  "NewId": "I00N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A035"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 80
+    },
+    {
+      "Id": "iuse",
+      "Value": 3
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isst",
+      "Value": 720
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Summons an Acolyte."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Summon Forsaken Acolyte"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Summon Workers"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Summon Acolytes."
+    }
+  ]
+}

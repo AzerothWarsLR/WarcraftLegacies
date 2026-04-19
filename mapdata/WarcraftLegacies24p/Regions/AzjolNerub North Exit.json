@@ -1,0 +1,16 @@
+{
+  "Left": -8832,
+  "Bottom": -28992,
+  "Right": -8352,
+  "Top": -28864,
+  "Name": "AzjolNerub North Exit",
+  "CreationNumber": 22,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

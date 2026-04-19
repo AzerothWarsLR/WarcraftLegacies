@@ -1,0 +1,29 @@
+{
+  "OldId": "BHab",
+  "NewId": "B013",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_HolyNova.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Revitalization"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has a 40% chance of reviving upon death."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

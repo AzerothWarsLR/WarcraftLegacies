@@ -1,0 +1,23 @@
+{
+  "OldId": "Aakb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Kodo Beast)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases the damage of nearby friendly units by \u003CAakb,DataA1,%\u003E%."
+    }
+  ]
+}

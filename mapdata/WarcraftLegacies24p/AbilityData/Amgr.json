@@ -1,0 +1,38 @@
+{
+  "OldId": "Amgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Enhanced Glaives"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "With skill and precision, Naisha learns how to bounce her glaive further, and do more damage to enemies."
+    }
+  ]
+}

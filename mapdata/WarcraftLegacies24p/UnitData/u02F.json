@@ -1,0 +1,224 @@
+{
+  "OldId": "uobs",
+  "NewId": "u02F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0SP,A0SO"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0SO"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 26
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1075
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "umpi",
+      "Value": 600
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07R"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 750
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Flesh"
+    },
+    {
+      "Id": "ua1z",
+      "Value": 10000
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1f",
+      "Value": 25
+    },
+    {
+      "Id": "ua1h",
+      "Value": 25
+    },
+    {
+      "Id": "ua1q",
+      "Value": 25
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Forgotten one"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Evil Abomination of the Old Gods.|n|cfff5962dAbilities:|R Essence of Blight, Spawn Tentacle|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Forgotten one"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForgottenOne.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\ForgottenOne\\ForgottenOne.mdl"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "KotoBeast"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

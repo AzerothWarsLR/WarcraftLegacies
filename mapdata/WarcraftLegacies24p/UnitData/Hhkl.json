@@ -1,0 +1,130 @@
+{
+  "OldId": "Hhkl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "uagi",
+      "Value": 22
+    },
+    {
+      "Id": "ustr",
+      "Value": 24
+    },
+    {
+      "Id": "uint",
+      "Value": 12
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A02A,A0WM,AEah,A0N6"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANbh,AInv"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02R"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GennGreymane.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Genn Greymane"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "King of Gilneas"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(gilneas)"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Genn"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, extremely aggressive hero adept at disrupting enemies.|n|cfff5962dAbilities:|r Bash|n|cfff5962dCan learn:|R Roar of the Worgen, War Stomp, Thorns Aura, Goldrinn\u0027s Might|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

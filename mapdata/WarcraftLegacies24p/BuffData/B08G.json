@@ -1,0 +1,39 @@
+{
+  "OldId": "BNms",
+  "NewId": "B08G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDefend.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Defending"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is defending; it has a chance to take reduced Piercing and Magic damage."
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Ember Shield I FX 3.mdx"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Ember Shield I FX 3.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "hand,right"
+    }
+  ]
+}

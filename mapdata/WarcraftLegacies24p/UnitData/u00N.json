@@ -1,0 +1,183 @@
+{
+  "OldId": "unp2",
+  "NewId": "u00N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0M7,A0JH,Argl"
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 70
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 135
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "ulum",
+      "Value": 290
+    },
+    {
+      "Id": "ulur",
+      "Value": 200
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "u01N"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R04G,R01Y"
+    },
+    {
+      "Id": "uwu1",
+      "Value": 1
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "u00D,u007"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rgfo"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall,undead"
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "u01Q,u00G"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "ushr",
+      "Value": 0
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Flying bastion of Legion\u0027s reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot |n|cfff5962dTrains:|R Legion Herald and Dreadlords|n|n|cfff5962dUpgrades Into:|R Infernal Palace|R|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MetropolisDemon4TierV1.01.mdl"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(legion)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Burning Citadel"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Upgrade to Burning Citadel"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonHallsOfTheDead.blp"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

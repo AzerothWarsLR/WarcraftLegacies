@@ -1,0 +1,24 @@
+{
+  "OldId": "BHbd",
+  "NewId": "B087",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSparkFlare.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Arcane Artillery"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is being bombarded by Arcane Artillery"
+    }
+  ]
+}

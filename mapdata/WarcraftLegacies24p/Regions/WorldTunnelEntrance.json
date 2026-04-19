@@ -1,0 +1,16 @@
+{
+  "Left": -27808,
+  "Bottom": -9472,
+  "Right": -27200,
+  "Top": -8896,
+  "Name": "WorldTunnelEntrance",
+  "CreationNumber": 427,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

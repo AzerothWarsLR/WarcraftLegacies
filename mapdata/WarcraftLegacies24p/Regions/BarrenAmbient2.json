@@ -1,0 +1,16 @@
+{
+  "Left": -16448,
+  "Bottom": -7776,
+  "Right": -12352,
+  "Top": -5472,
+  "Name": "BarrenAmbient2",
+  "CreationNumber": 169,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

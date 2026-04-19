@@ -1,0 +1,16 @@
+{
+  "Left": -1888,
+  "Bottom": 224,
+  "Right": 1568,
+  "Top": 3552,
+  "Name": "MaelstromAmbient",
+  "CreationNumber": 312,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

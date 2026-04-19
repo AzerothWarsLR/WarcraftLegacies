@@ -1,0 +1,188 @@
+{
+  "OldId": "Ogrh",
+  "NewId": "O02E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KV,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.64
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.33
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0IA,A0FK,AOmi,Aamk,AOww"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R052"
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 5
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfPriest.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Jarod"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinel Vassal)"
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 30
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\JarodWOTA.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.93
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Guard Captain"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Jarod Shadowsong"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Jarod"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfPriest.blp"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Jarod"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dCan learn:|R Maiming Strike, Mirror Image, Battle Experience, Bladestorm|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroBladeMaster"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "Rowt,R03Q,R024,R03Q,R00M,R03Q,Rowd,Rost,R03I"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "ospw,oosc,n08E,u018,odkt,nchw,u00V,nw2w,oshm,odoc"
+    },
+    {
+      "Id": "ulum",
+      "Value": 65
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Spiritual Hut for the casters of the Horde.|n|cfff5962dTrains:|r Shaman, Witch Doctor, Spirit Walker|n|cfff5962dResearches:|R Shaman Training, Witch Doctor Training, Spirit Walker Training"
+    }
+  ]
+}

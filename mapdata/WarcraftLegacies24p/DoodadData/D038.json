@@ -1,0 +1,28 @@
+{
+  "OldId": "YOsw",
+  "NewId": "D038",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "danf",
+      "Value": 1
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Gnomereagen buildings"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

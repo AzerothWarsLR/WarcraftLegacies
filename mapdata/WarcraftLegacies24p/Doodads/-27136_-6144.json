@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1144336452,
+    "Variation": 0,
+    "Position": {
+      "X": -27571.377,
+      "Y": -6501.5015,
+      "Z": 380.5577
+    },
+    "Rotation": 4.734942,
+    "Scale": {
+      "X": 0.60000014,
+      "Y": 0.60000014,
+      "Z": 0.50000024
+    },
+    "SkinId": 1144336452,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34593
+  },
+  {
+    "TypeId": 1144336452,
+    "Variation": 0,
+    "Position": {
+      "X": -27636.855,
+      "Y": -6435.412,
+      "Z": 380.37933
+    },
+    "Rotation": 4.734904,
+    "Scale": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 0.49999994
+    },
+    "SkinId": 1144336452,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34592
+  },
+  {
+    "TypeId": 1194668100,
+    "Variation": 1,
+    "Position": {
+      "X": -27303.514,
+      "Y": -6618.698,
+      "Z": 350.99088
+    },
+    "Rotation": 3.1075895,
+    "Scale": {
+      "X": 2.4499986,
+      "Y": 2.4499986,
+      "Z": 2.4499986
+    },
+    "SkinId": 1194668100,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34528
+  },
+  {
+    "TypeId": 1228222532,
+    "Variation": 0,
+    "Position": {
+      "X": -27524.11,
+      "Y": -6624.226,
+      "Z": 192.40015
+    },
+    "Rotation": 3.1415927,
+    "Scale": {
+      "X": 1.4,
+      "Y": 1.4,
+      "Z": 2.8
+    },
+    "SkinId": 1228222532,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34359
+  },
+  {
+    "TypeId": 1228222532,
+    "Variation": 0,
+    "Position": {
+      "X": -27577.336,
+      "Y": -6498.363,
+      "Z": 192.40015
+    },
+    "Rotation": 0.7853982,
+    "Scale": {
+      "X": 1.4,
+      "Y": 1.4,
+      "Z": 2.8
+    },
+    "SkinId": 1228222532,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34331
+  }
+]

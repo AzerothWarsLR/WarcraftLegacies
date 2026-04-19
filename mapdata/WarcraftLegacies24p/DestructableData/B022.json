@@ -1,0 +1,74 @@
+{
+  "OldId": "LTbx",
+  "NewId": "B022",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "barm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "bwal",
+      "Value": 1
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Ny\u0027alothan Stairs"
+    },
+    {
+      "Id": "bvcr",
+      "Value": 60
+    },
+    {
+      "Id": "bvcg",
+      "Value": 50
+    },
+    {
+      "Id": "bvcb",
+      "Value": 70
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0.mdl"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0.mdl"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

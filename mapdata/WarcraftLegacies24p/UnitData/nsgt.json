@@ -1,0 +1,152 @@
+{
+  "OldId": "nsgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GX,A0DH,ACvs"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0GX"
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 950
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "usrg",
+      "Value": 75
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02R"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlack.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Medium melee unit that poisons opponents. Can cast Frenzy. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(gilneas)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Blackwald Spider"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Blackwald Spider"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\SpiderBlack\\SpiderBlack.mdl"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "uclg",
+      "Value": 111
+    },
+    {
+      "Id": "uclr",
+      "Value": 111
+    },
+    {
+      "Id": "uclb",
+      "Value": 111
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

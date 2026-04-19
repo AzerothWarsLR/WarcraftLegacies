@@ -1,0 +1,83 @@
+{
+  "OldId": "AHdr",
+  "NewId": "A09T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R04F"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lordaeron - Inquisitor - Scarlet Crusade)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transfers mana between the Blood Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Blood Mage\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts \u003CAHdr,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - \u003CAHdr,DataB1\u003E mana drained per second. |n|cffffcc00Level 2|r - \u003CAHdr,DataB2\u003E mana drained per second. |n|cffffcc00Level 3|r - \u003CAHdr,DataB3\u003E mana drained per second. |n|cffffcc00Level 4|r - \u003CAHdr,DataB4\u003E mana drained per second. |n|cffffcc00Level 5|r - \u003CAHdr,DataB5\u003E mana drained per second."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Siphon Mana"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transfers mana between the Minister and a target. Drains 15 mana per second from an enemy, or transfers 10 mana per second to an ally.|n|nSiphon Mana can push the Minister\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+    }
+  ]
+}

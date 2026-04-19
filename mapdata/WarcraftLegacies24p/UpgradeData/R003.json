@@ -1,0 +1,57 @@
+{
+  "OldId": "Ruac",
+  "NewId": "R003",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "glmb",
+      "Value": 100
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNScatterRockets.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Nether Strands"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Nether Strands"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Provides Voidwalkers with the Voidic Lash ability, which silences spellcasters. "
+    }
+  ]
+}

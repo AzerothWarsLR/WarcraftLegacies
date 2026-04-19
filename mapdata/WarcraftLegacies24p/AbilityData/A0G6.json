@@ -1,0 +1,36 @@
+{
+  "OldId": "Aoar",
+  "NewId": "A0G6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.015
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNblackBerry.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Natural Burial)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Healing Aura"
+    }
+  ]
+}

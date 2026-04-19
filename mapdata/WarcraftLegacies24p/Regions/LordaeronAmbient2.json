@@ -1,0 +1,16 @@
+{
+  "Left": 12928,
+  "Bottom": 8448,
+  "Right": 16128,
+  "Top": 11040,
+  "Name": "LordaeronAmbient2",
+  "CreationNumber": 316,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

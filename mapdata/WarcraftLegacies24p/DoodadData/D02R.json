@@ -1,0 +1,39 @@
+{
+  "OldId": "AOsk",
+  "NewId": "D02R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_ShipWall 1.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Ship Wall"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "A,*"
+    }
+  ]
+}

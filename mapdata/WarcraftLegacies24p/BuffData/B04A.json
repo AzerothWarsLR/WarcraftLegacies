@@ -1,0 +1,29 @@
+{
+  "OldId": "BNso",
+  "NewId": "B04A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOverload.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shock"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is in a shock. It cannot cast spells."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Shock"
+    }
+  ]
+}

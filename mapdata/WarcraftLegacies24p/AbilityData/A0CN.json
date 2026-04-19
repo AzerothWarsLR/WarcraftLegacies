@@ -1,0 +1,77 @@
+{
+  "OldId": "AEer",
+  "NewId": "A0CN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids-demi)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Entangling Roots (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - \u003CAEer,DataA1\u003E damage per second for \u003CAEer,Dur1\u003E seconds. |n|cffffcc00Level 2|r - \u003CAEer,DataA2\u003E damage per second for \u003CAEer,Dur2\u003E seconds. |n|cffffcc00Level 3|r - \u003CAEer,DataA3\u003E damage per second for \u003CAEer,Dur3\u003E seconds.|n|cffffcc00Level 4|r - \u003CAEer,DataA4\u003E damage per second for \u003CAEer,Dur4\u003E seconds.|n|cffffcc00Level 5|r - \u003CAEer,DataA5\u003E damage per second for \u003CAEer,Dur5\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Entangling Roots"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for 9(2) seconds, and dealing 75 damage per second."
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    }
+  ]
+}

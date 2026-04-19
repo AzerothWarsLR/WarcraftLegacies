@@ -1,0 +1,16 @@
+{
+  "Left": -960,
+  "Bottom": -5856,
+  "Right": -352,
+  "Top": -5216,
+  "Name": "ZeppelinReturn",
+  "CreationNumber": 431,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

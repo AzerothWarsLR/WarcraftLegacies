@@ -1,0 +1,16 @@
+{
+  "Left": 3584,
+  "Bottom": 7200,
+  "Right": 13792,
+  "Top": 13024,
+  "Name": "Lordaeron West",
+  "CreationNumber": 24,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "OldId": "ANfd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nfd3",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nfd3",
+      "Type": 2,
+      "Value": 950
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nfd3",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ancient,enemies,ground,nonancient"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ancient,enemies,ground,nonancient"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ancient,enemies,ground,nonancient"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Azil)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "CLPB"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Mind Destruction"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Mind Destruction"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage. |n|cffffcc00Level 2|r - 950 damage. |n|cffffcc00Level 3|r - 1100 damage."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCasterOverhead.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Destruction - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 2|r - 950 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 3|r - 1100 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Destruction - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mind Destruction - [|cffffcc00Level 3|r]"
+    }
+  ]
+}

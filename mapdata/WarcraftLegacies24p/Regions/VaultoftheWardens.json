@@ -1,0 +1,16 @@
+{
+  "Left": -1152,
+  "Bottom": 6784,
+  "Right": -832,
+  "Top": 7104,
+  "Name": "VaultoftheWardens",
+  "CreationNumber": 189,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

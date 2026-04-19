@@ -1,0 +1,33 @@
+{
+  "OldId": "AIrl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BIrg,BIrl"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "irl1",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    }
+  ]
+}

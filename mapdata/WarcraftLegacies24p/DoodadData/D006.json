@@ -1,0 +1,68 @@
+{
+  "OldId": "YOss",
+  "NewId": "D006",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_DwarfStatue.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Statue Dwarf"
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "Y,X,J,*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 215
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "dvar",
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 65
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 85
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BEme",
+  "NewId": "B05Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Ascendance"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Transformed into an a Flame Ascendant with powerful elemental abilities."
+    }
+  ]
+}

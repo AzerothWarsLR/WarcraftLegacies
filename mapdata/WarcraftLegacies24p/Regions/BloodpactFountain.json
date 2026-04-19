@@ -1,0 +1,16 @@
+{
+  "Left": -11552,
+  "Bottom": 3072,
+  "Right": -11200,
+  "Top": 3328,
+  "Name": "BloodpactFountain",
+  "CreationNumber": 194,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

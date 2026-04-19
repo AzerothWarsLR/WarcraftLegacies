@@ -1,0 +1,21 @@
+{
+  "OldId": "nenp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACvs,Aap3"
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 590
+    }
+  ]
+}

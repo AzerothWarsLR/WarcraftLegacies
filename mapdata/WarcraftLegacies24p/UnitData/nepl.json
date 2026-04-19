@@ -1,0 +1,42 @@
+{
+  "OldId": "nepl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACce,Aenr,Aap3"
+    },
+    {
+      "Id": "ubba",
+      "Value": 75
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 61
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2800
+    },
+    {
+      "Id": "ulev",
+      "Value": 10
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    }
+  ]
+}

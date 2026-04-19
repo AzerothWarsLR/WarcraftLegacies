@@ -1,0 +1,16 @@
+{
+  "Left": 19168,
+  "Bottom": 7520,
+  "Right": 19776,
+  "Top": 8160,
+  "Name": "GarithosCrusadeSpawn",
+  "CreationNumber": 535,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

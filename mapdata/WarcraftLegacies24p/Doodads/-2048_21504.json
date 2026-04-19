@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1177563202,
+    "Variation": 6,
+    "Position": {
+      "X": -2368,
+      "Y": 21376,
+      "Z": 354.25
+    },
+    "Rotation": 1.2217305,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1177563202,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34789
+  },
+  {
+    "TypeId": 1177563202,
+    "Variation": 2,
+    "Position": {
+      "X": -2432,
+      "Y": 21504,
+      "Z": 335
+    },
+    "Rotation": 5.0440016,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1177563202,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34788
+  },
+  {
+    "TypeId": 1651659598,
+    "Variation": 0,
+    "Position": {
+      "X": -2423.887,
+      "Y": 21711.12,
+      "Z": 178.4959
+    },
+    "Rotation": 2.3561945,
+    "Scale": {
+      "X": 1.6999993,
+      "Y": 1.6999993,
+      "Z": 2.149999
+    },
+    "SkinId": 1651659598,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34786
+  },
+  {
+    "TypeId": 1668042567,
+    "Variation": 1,
+    "Position": {
+      "X": -2203.1418,
+      "Y": 21587.588,
+      "Z": 182.5
+    },
+    "Rotation": 6.277854,
+    "Scale": {
+      "X": 1.4999995,
+      "Y": 1.4999995,
+      "Z": 0.11
+    },
+    "SkinId": 1668042567,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21087
+  },
+  {
+    "TypeId": 1668042567,
+    "Variation": 1,
+    "Position": {
+      "X": -2169.861,
+      "Y": 21611.879,
+      "Z": 178.00822
+    },
+    "Rotation": 3.5255651,
+    "Scale": {
+      "X": 1.4999995,
+      "Y": 1.4999995,
+      "Z": 0.06
+    },
+    "SkinId": 1668042567,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21040
+  }
+]

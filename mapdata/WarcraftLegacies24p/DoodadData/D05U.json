@@ -1,0 +1,53 @@
+{
+  "OldId": "BRrk",
+  "NewId": "D05U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\TeldrassilRoot.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Teldrassil Roots"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": "dvar",
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 75
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 150
+    }
+  ]
+}

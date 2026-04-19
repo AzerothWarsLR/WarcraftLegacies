@@ -1,0 +1,34 @@
+{
+  "OldId": "nubk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0F0,ACsk"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udup",
+      "Value": 6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 43
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    }
+  ]
+}

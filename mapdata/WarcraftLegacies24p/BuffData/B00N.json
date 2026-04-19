@@ -1,0 +1,48 @@
+{
+  "OldId": "Bcyc",
+  "NewId": "B00N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMindControl.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Corruption of Sargeras"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is losing 2% hit points per second due to the corrupting influence of Sargeras\u0027 energies."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Corruption of Sargeras"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayDamage.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "DrainLoop"
+    },
+    {
+      "Id": "fspd",
+      "Value": 2
+    }
+  ]
+}

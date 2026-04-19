@@ -1,0 +1,38 @@
+{
+  "OldId": "ohwd",
+  "NewId": "o01E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A065"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf-Witch Doctor)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Enhanced Healing Ward"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

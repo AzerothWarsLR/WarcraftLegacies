@@ -1,0 +1,19 @@
+{
+  "OldId": "AEsd",
+  "NewId": "B002",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Summonin target"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\RainOfFire\\RainOfFireTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "OldId": "AEbl",
+  "NewId": "A0LW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ebl2",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R07H"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - Illidan)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - \u003CAEbl,Cool1\u003E second cooldown, \u003CAEbl,Cost1\u003E mana. |n|cffffcc00Level 2|r - \u003CAEbl,Cool2\u003E second cooldown, \u003CAEbl,Cost2\u003E mana. |n|cffffcc00Level 3|r - \u003CAEbl,Cool3\u003E second cooldown, \u003CAEbl,Cost3\u003E mana. |n|cffffcc00Level 4|r - \u003CAEbl,Cool4\u003E second cooldown, \u003CAEbl,Cost4\u003E mana."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blink"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Teleports the hero a short distance, allowing him to move in and out of combat.|n12 second cooldown."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Astd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Releases garrisoned units and has them return to their previous task."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -22016,
+  "Bottom": 6464,
+  "Right": -18976,
+  "Top": 11072,
+  "Name": "AzuremystAmbient",
+  "CreationNumber": 165,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

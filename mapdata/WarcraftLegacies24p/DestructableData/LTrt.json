@@ -1,0 +1,16 @@
+{
+  "OldId": "LTrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bvcg",
+      "Value": 200
+    },
+    {
+      "Id": "bvcr",
+      "Value": 150
+    }
+  ]
+}

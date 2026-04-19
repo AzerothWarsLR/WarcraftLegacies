@@ -1,0 +1,16 @@
+{
+  "Left": -26240,
+  "Bottom": 20832,
+  "Right": -26208,
+  "Top": 20864,
+  "Name": "IllidanNaga1",
+  "CreationNumber": 103,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

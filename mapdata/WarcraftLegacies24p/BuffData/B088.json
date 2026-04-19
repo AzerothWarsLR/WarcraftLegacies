@@ -1,0 +1,14 @@
+{
+  "OldId": "BHbz",
+  "NewId": "B088",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Arcane Artillery (Caster)"
+    }
+  ]
+}

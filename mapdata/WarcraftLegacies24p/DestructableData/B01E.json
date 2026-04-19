@@ -1,0 +1,71 @@
+{
+  "OldId": "YT36",
+  "NewId": "B01E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bvcb",
+      "Value": 100
+    },
+    {
+      "Id": "bvcg",
+      "Value": 100
+    },
+    {
+      "Id": "bvcr",
+      "Value": 100
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Horizontal Stormwind)"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CityBridgeLarge45\\CityBridgeLarge45.mdl"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Dark Iron Bridge"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bptd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\Cliff\\Cliff1.tga"
+    }
+  ]
+}

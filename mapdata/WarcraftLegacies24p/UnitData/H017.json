@@ -1,0 +1,141 @@
+{
+  "OldId": "Hlgr",
+  "NewId": "H017",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 14
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AHre,A085,Aamk,AHhb,A03C"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uint",
+      "Value": 20
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "utco",
+      "Value": 10
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroPaladin.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Bolvar Fordragon"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dark Green)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Bolvar.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Highlord of the Alliance"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Bolvar Fordragon"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Bolvar Fordragon"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at augmenting nearby troops.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Rally to the Highlord, Retribution Aura, Resurrection|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Uther"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Bolvar Fordragon"
+    }
+  ]
+}

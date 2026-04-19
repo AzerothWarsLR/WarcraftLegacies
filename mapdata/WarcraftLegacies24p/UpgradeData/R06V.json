@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R06V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Scarlet Crusade is Unleashed"
+    }
+  ]
+}

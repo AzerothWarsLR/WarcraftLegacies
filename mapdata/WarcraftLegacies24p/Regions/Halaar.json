@@ -1,0 +1,16 @@
+{
+  "Left": -4896,
+  "Bottom": -29728,
+  "Right": -3776,
+  "Top": -28736,
+  "Name": "Halaar",
+  "CreationNumber": 434,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

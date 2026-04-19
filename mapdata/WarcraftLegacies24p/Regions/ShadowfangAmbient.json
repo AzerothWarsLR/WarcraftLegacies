@@ -1,0 +1,16 @@
+{
+  "Left": 5344,
+  "Bottom": 2624,
+  "Right": 8576,
+  "Top": 8160,
+  "Name": "ShadowfangAmbient",
+  "CreationNumber": 322,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

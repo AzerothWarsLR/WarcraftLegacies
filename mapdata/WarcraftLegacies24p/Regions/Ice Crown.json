@@ -1,0 +1,16 @@
+{
+  "Left": -4480,
+  "Bottom": 19616,
+  "Right": -2272,
+  "Top": 23424,
+  "Name": "Ice Crown",
+  "CreationNumber": 2,
+  "WeatherType": 1936477779,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -16896,
+  "Bottom": 10432,
+  "Right": -16832,
+  "Top": 10496,
+  "Name": "Sent2",
+  "CreationNumber": 143,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

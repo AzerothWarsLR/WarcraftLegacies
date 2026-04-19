@@ -1,0 +1,347 @@
+{
+  "OldId": "hcth",
+  "NewId": "h01N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YD,A0YC,Aiun"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Flesh"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0YD"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.56
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.95
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 1.57
+    },
+    {
+      "Id": "udea",
+      "Value": 1
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "ua1f",
+      "Value": 15
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "ua1h",
+      "Value": 30
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 975
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 780
+    },
+    {
+      "Id": "uori",
+      "Value": 4
+    },
+    {
+      "Id": "ua1q",
+      "Value": 50
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 225
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 250
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "u022"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessOne.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 50
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(C\u0027thun Faceless Corruptor)"
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\FacelessOne\\FacelessOne.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 221
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\MakuraMissile\\MakuraMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Faceless Corrupter"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Faceless Corrupter"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Support Range unit. Has the Seed of Evil and Parasite abilities.|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Unbroken"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "OldId": "Uktl",
+  "NewId": "U02I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Aabr"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0VC,A0V7,A072,Aamk,A0LP"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKalecgos.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Necromancer"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Forsaken)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\NecromancerFar.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\NecromancerMissile\\NecromancerMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Master of the Royal Apothecary Society"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Necromancer"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, exceptional at area of effect magic and summoning.|n|cfff5962dCan Learn:|R Corpse Explosion, Plague Summons, Brilliance Aura, Viral Plague|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Faranell"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Master Apothecary Faranell"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

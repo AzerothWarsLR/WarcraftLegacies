@@ -1,0 +1,72 @@
+{
+  "OldId": "klmm",
+  "NewId": "I00Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AItx,AIcl"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIcl"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ilev",
+      "Value": 8
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ipri",
+      "Value": 200
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderfury2.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Increases damage. Provides the ability to cast Chain Lightning"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Thunderfury"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases the attack damage of the Hero by 20 when carried. Can be used to cast Chain Lightning.|n|cffffcc00Lore|r|n|cffffdeadThunderfury, Blessed Blade of the Windseeker is the legendary sword once wielded by Prince Thunderaan, Prince of Air."
+    }
+  ]
+}

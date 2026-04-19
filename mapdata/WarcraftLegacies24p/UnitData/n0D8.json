@@ -1,0 +1,53 @@
+{
+  "OldId": "ntav",
+  "NewId": "n0D8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10Simple.tga"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YU,Avul"
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": "U02M,O05S,E01H"
+    },
+    {
+      "Id": "utco",
+      "Value": 9
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Ane2,Avul"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Vassals)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Mercenaries Tavern 1"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "uloc",
+  "NewId": "u00O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Possession\\PossessionMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Banshee Spirits"
+    }
+  ]
+}

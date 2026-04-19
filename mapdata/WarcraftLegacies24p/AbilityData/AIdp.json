@@ -1,0 +1,22 @@
+{
+  "OldId": "AIdp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Udp1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Udp2",
+      "Type": 2,
+      "Value": 0.3
+    }
+  ]
+}

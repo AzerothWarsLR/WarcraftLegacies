@@ -1,0 +1,29 @@
+{
+  "OldId": "BHad",
+  "NewId": "B093",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMetalPlatingLevel3.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Dwarven Masonry Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This structure is under the effects of Fortified Defense Aura; it has increased armor."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

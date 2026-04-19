@@ -1,0 +1,51 @@
+{
+  "OldId": "AHta",
+  "NewId": "A0IZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTelescope.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DG zeppelin)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spyglass"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spyglass"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reveals an area of the map. |nDetects invisible units. |nLasts \u003CA0IZ,Dur1\u003E seconds."
+    }
+  ]
+}

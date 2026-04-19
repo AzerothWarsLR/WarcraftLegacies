@@ -1,0 +1,67 @@
+{
+  "OldId": "nmpe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "n0C1,n0BZ,n0C7,n0C3,n0C4,n0C5,h0A4,n0C0,n0C2,n08V,n08H,n08W,nmrb,nnad,nnfm,nnsa,nnsg,nntt,nntg,h06S,n0A3"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "ulur",
+      "Value": 25
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 185
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "peon,sapper"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,ANha,Arep,A106"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari, Nzoth, Worker)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

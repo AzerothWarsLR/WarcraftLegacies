@@ -1,0 +1,29 @@
+{
+  "OldId": "Buhf",
+  "NewId": "B04T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCyclone.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Windfury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Windfury; its attack rate is increased"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Windfury"
+    }
+  ]
+}

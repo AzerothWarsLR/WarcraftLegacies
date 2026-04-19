@@ -1,0 +1,23 @@
+{
+  "OldId": "ACct",
+  "NewId": "A03O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - saboteur,assassin,Jubei, Gray grunt)"
+    }
+  ]
+}

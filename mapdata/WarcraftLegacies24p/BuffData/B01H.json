@@ -1,0 +1,29 @@
+{
+  "OldId": "Bdef",
+  "NewId": "B01H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHelmutPurple.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Crown Heal"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by a crown; its armor is temporarily increased and it had life and mana restored."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_ShieldBuff_Small.mdx"
+    }
+  ]
+}

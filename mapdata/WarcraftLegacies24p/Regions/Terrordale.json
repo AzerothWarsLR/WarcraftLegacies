@@ -1,0 +1,16 @@
+{
+  "Left": 14656,
+  "Bottom": 10336,
+  "Right": 15968,
+  "Top": 10880,
+  "Name": "Terrordale",
+  "CreationNumber": 195,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

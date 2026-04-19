@@ -1,0 +1,24 @@
+{
+  "OldId": "BOsf",
+  "NewId": "B03V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBandit.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Westfall Brigade"
+    }
+  ]
+}

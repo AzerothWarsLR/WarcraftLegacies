@@ -1,0 +1,52 @@
+{
+  "OldId": "LTbx",
+  "NewId": "B00G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bwal",
+      "Value": 1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_HighlandsHome.mdl"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_HighlandsHome.mdl"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Twilight Highlands Home"
+    }
+  ]
+}

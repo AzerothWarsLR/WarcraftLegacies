@@ -1,0 +1,29 @@
+{
+  "OldId": "BNht",
+  "NewId": "B08P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerationAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Aura of Dread"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under effect of the Aura of Dread; it has decreased armor."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

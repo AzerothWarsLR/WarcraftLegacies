@@ -1,0 +1,175 @@
+{
+  "OldId": "nfgl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aap1"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 80
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 95
+    },
+    {
+      "Id": "ugor",
+      "Value": 250
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2225
+    },
+    {
+      "Id": "ulev",
+      "Value": 9
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 200
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 9
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 150
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": "n08G"
+    },
+    {
+      "Id": "umvs",
+      "Value": 190
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R094,Rguv,R01X,Rhme,Rhar"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Plague Titan"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Plague Titan"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Massive Flesh Golem, the ultimate fleshwork creation.|n|cfff5962dAbilities:|R Disease Cloud, Spawn Plagueling|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

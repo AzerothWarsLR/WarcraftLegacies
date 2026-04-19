@@ -1,0 +1,16 @@
+{
+  "Left": 704,
+  "Bottom": -29408,
+  "Right": 1792,
+  "Top": -28384,
+  "Name": "Tuurem",
+  "CreationNumber": 435,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 11104,
+  "Bottom": 5664,
+  "Right": 11168,
+  "Top": 5728,
+  "Name": "Legion3",
+  "CreationNumber": 140,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 2336,
+  "Bottom": -20960,
+  "Right": 3616,
+  "Top": -19616,
+  "Name": "Farahlon",
+  "CreationNumber": 188,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

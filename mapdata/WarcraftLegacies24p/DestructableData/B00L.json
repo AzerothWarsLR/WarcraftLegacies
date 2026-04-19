@@ -1,0 +1,24 @@
+{
+  "OldId": "WTst",
+  "NewId": "B00L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Snowy tree 2"
+    }
+  ]
+}

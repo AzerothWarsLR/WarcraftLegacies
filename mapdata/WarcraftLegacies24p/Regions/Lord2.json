@@ -1,0 +1,16 @@
+{
+  "Left": 11328,
+  "Bottom": 6016,
+  "Right": 11456,
+  "Top": 6144,
+  "Name": "Lord2",
+  "CreationNumber": 184,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

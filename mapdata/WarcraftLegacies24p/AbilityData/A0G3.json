@@ -1,0 +1,49 @@
+{
+  "OldId": "Adis",
+  "NewId": "A0G3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Adm2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R05G"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(thornspeaker)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area and deals \u003CA0G3,DataB1\u003E damage to summoned units.|r"
+    }
+  ]
+}

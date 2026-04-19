@@ -1,0 +1,29 @@
+{
+  "OldId": "Bmlc",
+  "NewId": "B010",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Dark Grip (Caster)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\VampiricPotion\\VampPotionCaster.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

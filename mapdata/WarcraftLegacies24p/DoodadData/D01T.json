@@ -1,0 +1,74 @@
+{
+  "OldId": "ZSrb",
+  "NewId": "D01T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Ruins Zul\u0027Drak"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "N"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 140
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 140
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 140
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 90
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 90
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 90
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 80
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 80
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 80
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "OldId": "ubdd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACrk,A058,Afrz,Afrb"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 98
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 150
+    },
+    {
+      "Id": "ua1h",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2200
+    },
+    {
+      "Id": "ulev",
+      "Value": 8
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 13
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R025"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "ua2s",
+      "Value": 7
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 3
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "giant,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R094,Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNskullblue.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge-Demi)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 170
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uclr",
+      "Value": 170
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive Sapphiron"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Flying demi-hero, has the following abilities: Freazing Breath, Breat of Frost and Frost Breath.|n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

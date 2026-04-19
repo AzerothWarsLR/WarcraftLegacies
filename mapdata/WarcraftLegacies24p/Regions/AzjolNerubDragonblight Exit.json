@@ -1,0 +1,16 @@
+{
+  "Left": -12992,
+  "Bottom": -26944,
+  "Right": -12544,
+  "Top": -26720,
+  "Name": "AzjolNerubDragonblight Exit",
+  "CreationNumber": 107,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "OldId": "AHbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(noggen)"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Gives a chance that an attack will do \u003CAHbh,DataC1\u003E bonus damage and stun an opponent for \u003CAHbh,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CAHbh,DataA1\u003E% chance per attack. |n|cffffcc00Level 2|r - \u003CAHbh,DataA2\u003E% chance per attack. |n|cffffcc00Level 3|r - \u003CAHbh,DataA3\u003E% chance per attack. |n|cffffcc00Level 4|r - \u003CAHbh,DataA4\u003E% chance per attack."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Bash - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CAHbh,DataA2\u003E% chance that an attack will do \u003CAHbh,DataC2\u003E bonus damage and stun an opponent for \u003CAHbh,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CAHbh,DataA3\u003E% chance that an attack will do \u003CAHbh,DataC3\u003E bonus damage and stun an opponent for \u003CAHbh,Dur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CAHbh,DataA4\u003E% chance that an attack will do \u003CAHbh,DataC4\u003E bonus damage and stun an opponent for \u003CAHbh,Dur4\u003E seconds."
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BNpm",
+  "NewId": "B020",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoom.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Demonic Possession"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Demonically possessed. It has increased attack and movement speed and is taking damage over time. If it dies a Demonic Spirit will spawn from the corpse."
+    }
+  ]
+}

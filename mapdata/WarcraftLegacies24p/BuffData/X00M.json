@@ -1,0 +1,24 @@
+{
+  "OldId": "XHbz",
+  "NewId": "X00M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Arcane Artillery (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Blizzard\\BlizzardTarget.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "AcolyteUnsummonLoop"
+    }
+  ]
+}

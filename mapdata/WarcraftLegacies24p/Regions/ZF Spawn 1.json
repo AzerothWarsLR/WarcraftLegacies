@@ -1,0 +1,16 @@
+{
+  "Left": -11968,
+  "Bottom": -12928,
+  "Right": -11616,
+  "Top": -12768,
+  "Name": "ZF Spawn 1",
+  "CreationNumber": 255,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "OldId": "AId1",
+  "NewId": "A06A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lordaeron-Ashbringer)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ashbringer Wings"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Divine Wings.mdx"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

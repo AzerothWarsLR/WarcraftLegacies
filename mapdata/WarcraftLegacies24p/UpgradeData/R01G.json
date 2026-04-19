@@ -1,0 +1,27 @@
+{
+  "OldId": "Roch",
+  "NewId": "R01G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Silver Hand"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "This is a dummy upgrade used to enable Chaos abilities for the Silver Hand."
+    }
+  ]
+}

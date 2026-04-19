@@ -1,0 +1,29 @@
+{
+  "OldId": "Amgl",
+  "NewId": "A112",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Huntress COmmander)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives the Huntress Commander the ability to strike 3 additional units with her bouncing glaive attacks."
+    }
+  ]
+}

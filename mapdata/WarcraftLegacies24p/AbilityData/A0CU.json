@@ -1,0 +1,21 @@
+{
+  "OldId": "ACac",
+  "NewId": "A0CU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Camping Attack Bonus"
+    }
+  ]
+}

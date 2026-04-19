@@ -1,0 +1,31 @@
+{
+  "OldId": "ACba",
+  "NewId": "A10D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Mediv) (Gul\u0027dan)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives additional mana regeneration to nearby friendly units of 1.5 mana per second."
+    }
+  ]
+}

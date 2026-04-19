@@ -1,0 +1,16 @@
+{
+  "Left": -10656,
+  "Bottom": -15392,
+  "Right": -10592,
+  "Top": -15328,
+  "Name": "Barren Excavation",
+  "CreationNumber": 95,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

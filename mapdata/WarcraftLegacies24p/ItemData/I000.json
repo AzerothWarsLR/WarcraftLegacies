@@ -1,0 +1,73 @@
+{
+  "OldId": "stwp",
+  "NewId": "I000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A00M"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIsp"
+    },
+    {
+      "Id": "igol",
+      "Value": 300
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "isst",
+      "Value": 1140
+    },
+    {
+      "Id": "istr",
+      "Value": 30
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Transports troops to a friendly unit or structure."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scroll of Teleportation"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Scroll of Teleportation"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Teleports the Hero and any of its nearby troops to a target friendly unit or structure.|n|n|cffe8e800Has a 9 second cast time.|r"
+    }
+  ]
+}

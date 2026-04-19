@@ -1,0 +1,16 @@
+{
+  "Left": -10944,
+  "Bottom": 13088,
+  "Right": 8608,
+  "Top": 24736,
+  "Name": "Northrend Ambiance",
+  "CreationNumber": 70,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

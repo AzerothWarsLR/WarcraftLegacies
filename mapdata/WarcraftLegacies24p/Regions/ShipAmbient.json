@@ -1,0 +1,16 @@
+{
+  "Left": -15840,
+  "Bottom": -24736,
+  "Right": -14656,
+  "Top": -22112,
+  "Name": "ShipAmbient",
+  "CreationNumber": 471,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

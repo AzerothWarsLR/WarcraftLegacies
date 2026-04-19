@@ -1,0 +1,19 @@
+{
+  "OldId": "Abun",
+  "NewId": "A00Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Barrage (keep tower)"
+    }
+  ]
+}

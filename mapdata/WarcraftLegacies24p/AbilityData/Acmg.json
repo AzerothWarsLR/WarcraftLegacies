@@ -1,0 +1,25 @@
+{
+  "OldId": "Acmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Cmg2",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Spell Breaker)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

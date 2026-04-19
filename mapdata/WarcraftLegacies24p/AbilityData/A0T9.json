@@ -1,0 +1,25 @@
+{
+  "OldId": "Adro",
+  "NewId": "A0T9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Castle)"
+    }
+  ]
+}

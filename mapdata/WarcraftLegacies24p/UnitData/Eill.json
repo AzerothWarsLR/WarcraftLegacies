@@ -1,0 +1,173 @@
+{
+  "OldId": "Eill",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0M9,A07K,AInv,A0LW,Ault"
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 5
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A10I,AHds,Aamk,A0YW"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "enemies,ground,vulnerable"
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R05J"
+    },
+    {
+      "Id": "utco",
+      "Value": 3
+    },
+    {
+      "Id": "uhhm",
+      "Value": 1
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "usin",
+      "Value": 2000
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utar",
+      "Type": 3,
+      "Value": "ancient,ground"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "usid",
+      "Value": 2000
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive The Betrayer"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Naga)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Betrayer"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive The Betrayer"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.27
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_IllidanV3.mdl"
+    },
+    {
+      "Id": "usew",
+      "Value": 1
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

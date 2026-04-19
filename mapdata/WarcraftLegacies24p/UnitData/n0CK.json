@@ -1,0 +1,67 @@
+{
+  "OldId": "nba2",
+  "NewId": "n0CK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0X7,ACbl,ACsk,A0EJ"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua2b",
+      "Value": 110
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 145
+    },
+    {
+      "Id": "udef",
+      "Value": 12
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2480
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Zelemar the Wrathful"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (3)"
+    }
+  ]
+}

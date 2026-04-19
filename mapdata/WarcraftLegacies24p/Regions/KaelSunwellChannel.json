@@ -1,0 +1,16 @@
+{
+  "Left": 18496,
+  "Bottom": 21568,
+  "Right": 18624,
+  "Top": 21696,
+  "Name": "KaelSunwellChannel",
+  "CreationNumber": 525,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

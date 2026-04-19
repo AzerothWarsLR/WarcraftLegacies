@@ -1,0 +1,56 @@
+{
+  "OldId": "nrel",
+  "NewId": "n03V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 630
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R001,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras - Tidesage)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Sea Elemental"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Sea Elemental"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

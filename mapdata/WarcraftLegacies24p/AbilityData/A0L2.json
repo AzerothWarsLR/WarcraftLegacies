@@ -1,0 +1,49 @@
+{
+  "OldId": "ACba",
+  "NewId": "A0L2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05L"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Nexus Empowerment"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Nexus Empowerment"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives additional mana regeneration to nearby friendly units of 0.5 mana per second."
+    }
+  ]
+}

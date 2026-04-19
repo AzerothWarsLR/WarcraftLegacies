@@ -1,0 +1,24 @@
+{
+  "OldId": "nfpt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    }
+  ]
+}

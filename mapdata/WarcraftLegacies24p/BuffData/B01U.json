@@ -1,0 +1,24 @@
+{
+  "OldId": "BNso",
+  "NewId": "B01U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Blaze of Burden"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is afflicted by Blaze of Burden. It will deal reduced damage."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Blaze of Burden"
+    }
+  ]
+}

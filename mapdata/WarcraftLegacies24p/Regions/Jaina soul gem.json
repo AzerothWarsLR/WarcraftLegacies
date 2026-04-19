@@ -1,0 +1,16 @@
+{
+  "Left": -21184,
+  "Bottom": 17440,
+  "Right": -19168,
+  "Top": 19808,
+  "Name": "Jaina soul gem",
+  "CreationNumber": 122,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

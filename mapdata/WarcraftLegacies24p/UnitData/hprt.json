@@ -1,0 +1,53 @@
+{
+  "OldId": "hprt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Awrp,Avul"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 200
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dark Portal"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 10
+    }
+  ]
+}

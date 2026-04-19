@@ -1,0 +1,16 @@
+{
+  "Left": 12320,
+  "Bottom": -11552,
+  "Right": 12544,
+  "Top": -11328,
+  "Name": "DragonSoulChannel",
+  "CreationNumber": 161,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

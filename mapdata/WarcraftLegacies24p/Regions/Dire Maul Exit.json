@@ -1,0 +1,16 @@
+{
+  "Left": -18272,
+  "Bottom": 20960,
+  "Right": -18016,
+  "Top": 21088,
+  "Name": "Dire Maul Exit",
+  "CreationNumber": 45,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

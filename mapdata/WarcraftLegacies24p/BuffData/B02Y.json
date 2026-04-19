@@ -1,0 +1,19 @@
+{
+  "OldId": "Blsa",
+  "NewId": "B02Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Healing Shield (Caster)"
+    }
+  ]
+}

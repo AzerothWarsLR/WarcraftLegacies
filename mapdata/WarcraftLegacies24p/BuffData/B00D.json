@@ -1,0 +1,24 @@
+{
+  "OldId": "BOae",
+  "NewId": "B00D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Holy Power"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "OldId": "Amnx",
+  "NewId": "A0NY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Dda1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "debris,enemies,ground,player,structure"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(goblin)"
+    }
+  ]
+}

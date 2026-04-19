@@ -1,0 +1,16 @@
+{
+  "Left": 18080,
+  "Bottom": 12256,
+  "Right": 18784,
+  "Top": 14688,
+  "Name": "Dreadscar 1",
+  "CreationNumber": 30,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

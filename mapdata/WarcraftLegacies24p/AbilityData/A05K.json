@@ -1,0 +1,32 @@
+{
+  "OldId": "Aoar",
+  "NewId": "A05K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Level 1)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Healing Totem Aura"
+    }
+  ]
+}

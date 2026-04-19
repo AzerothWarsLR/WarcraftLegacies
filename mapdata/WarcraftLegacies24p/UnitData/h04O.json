@@ -1,0 +1,122 @@
+{
+  "OldId": "hgyr",
+  "NewId": "h04O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GE,Agyv"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucar",
+      "Value": 2
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua2b",
+      "Value": 35
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "urtm",
+      "Value": 20
+    },
+    {
+      "Id": "ua2s",
+      "Value": 4
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rhgb,Rhfc,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 2
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R06T"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "FlyingMachineKulTirasV1.02.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bomber"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bomber"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Kul\u0027tiras weapon of war designed to scout enemy bases and provide aerial support to ground forces.|n|cfff5962dAbilities:|R True Sight|n|cfff5962dCan learn:|R Cluster Rockets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "OldId": "owar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0I8,A0ES,A0I6,A0EH,A020,Aion"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0EH"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "ugor",
+      "Value": 28
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1075
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R03O,Rguv,R02L,Robf,R00Y,Rhar,Rhme"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o031"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bonebreaker"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bonebreaker"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Strong mounted warrior of Outland.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Bash, Pillage|n|cfff5962dCan learn:|R Felsteel Plating, Blood Runes|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "BHab",
+  "NewId": "B06J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mui"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fspd",
+      "Value": 0
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

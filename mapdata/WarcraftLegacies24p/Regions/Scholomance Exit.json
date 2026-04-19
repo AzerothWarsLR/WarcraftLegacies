@@ -1,0 +1,16 @@
+{
+  "Left": -21120,
+  "Bottom": 17440,
+  "Right": -20736,
+  "Top": 17792,
+  "Name": "Scholomance Exit",
+  "CreationNumber": 14,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

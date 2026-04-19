@@ -1,0 +1,43 @@
+{
+  "OldId": "ZPfw",
+  "NewId": "D007",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": "dvar",
+      "Value": 1
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\FlowerField.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Flower Field"
+    },
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": 4
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "OldId": "nico",
+  "NewId": "n0BA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,sapper,townhall"
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ubld",
+      "Value": 120
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ny\u0027alotha Obelisk"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_NyAlothaObelisk.mdl"
+    },
+    {
+      "Id": "uept",
+      "Value": 0
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

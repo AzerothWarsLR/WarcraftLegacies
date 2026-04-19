@@ -1,0 +1,39 @@
+{
+  "OldId": "Bena",
+  "NewId": "B030",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWeb.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Web"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is webbed; it is stuck to the ground and cannot move."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " (Air)(Real)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Web\\Web_AirTarget.mdl"
+    }
+  ]
+}

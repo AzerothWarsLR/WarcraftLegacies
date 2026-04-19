@@ -1,0 +1,244 @@
+{
+  "OldId": "hbar",
+  "NewId": "h09P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0UE,A0RB"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h096,h095,h08M"
+    },
+    {
+      "Id": "ulum",
+      "Value": 340
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R03F"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "h09O"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 975
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2100
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 36
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1000
+    },
+    {
+      "Id": "ua1r",
+      "Value": 975
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uwu1",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Grim stronghold and training grounds for the Scarlet Crusaders.|n|n|r|cfff5962dTrains:|R Men-at-arms, Bowman, Light Cavalry\r\n|cfff5962dUpgrades Into:|R Crimson Castle|n|n|cffffcc00Attacks land and air units.|r |n|cffd45e19Generates Taxes|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Castle.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scarlet Keep"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Scarlet Keep"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,fourth"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCastle4.blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowBlacksmith"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

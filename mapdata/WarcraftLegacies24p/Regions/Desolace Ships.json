@@ -1,0 +1,16 @@
+{
+  "Left": -18720,
+  "Bottom": -7584,
+  "Right": -16192,
+  "Top": -3488,
+  "Name": "Desolace Ships",
+  "CreationNumber": 234,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

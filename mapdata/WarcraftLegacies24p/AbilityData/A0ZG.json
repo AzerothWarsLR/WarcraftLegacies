@@ -1,0 +1,350 @@
+{
+  "OldId": "ANhs",
+  "NewId": "A0ZG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": -18
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Nhs6",
+      "Value": 6
+    },
+    {
+      "Id": "amsp",
+      "Value": 2500
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Nhs6",
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Nhs6",
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Nhs6",
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": -24
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": -32
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": -40
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 4000
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1300
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\Golden Light.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Light\u0027s Edict"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Light\u0027s Edict  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "war3mapImported\\Golden Light.mdx"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Golden Light.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls upon 6 waves of light bursts. Each wave deals 18 damage to all units in an area."
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Light\u0027s Edict - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls upon 8 waves of light bursts. Each wave deals 24 damage to all units in an area."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls upon 10 waves of light bursts. Each wave deals 32 damage to all units in an area."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls upon 12 waves of light bursts. Each wave deals 40 damage to all units in an area."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls down holy beams of light that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CANhs,DataF1\u003E waves at \u003CANhs,DataA1\u003E damage per wave.|n|cffffcc00Level 2|r - \u003CANhs,DataF2\u003E waves at \u003CANhs,DataA2\u003E damage per wave. |n|cffffcc00Level 3|r - \u003CANhs,DataF3\u003E waves at \u003CANhs,DataA3\u003E damage per wave."
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 1
+    }
+  ]
+}

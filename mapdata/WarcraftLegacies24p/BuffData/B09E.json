@@ -1,0 +1,29 @@
+{
+  "OldId": "BHav",
+  "NewId": "B09E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Ignore Pain"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGruntWarcry.blp"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is ignoring pain, it has 1000 increased armor and magic resistance."
+    }
+  ]
+}

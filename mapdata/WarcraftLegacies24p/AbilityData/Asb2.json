@@ -1,0 +1,23 @@
+{
+  "OldId": "Asb2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "Rnsb"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    }
+  ]
+}

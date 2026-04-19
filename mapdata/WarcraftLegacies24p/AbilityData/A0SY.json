@@ -1,0 +1,28 @@
+{
+  "OldId": "Awrp",
+  "NewId": "A0SY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Wrp1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Wrp2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Small Area)"
+    }
+  ]
+}

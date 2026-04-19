@@ -1,0 +1,22 @@
+{
+  "OldId": "nmmu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 18
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.8
+    }
+  ]
+}

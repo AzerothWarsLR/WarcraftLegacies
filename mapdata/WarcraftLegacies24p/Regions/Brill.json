@@ -1,0 +1,16 @@
+{
+  "Left": 8064,
+  "Bottom": 10144,
+  "Right": 9792,
+  "Top": 11648,
+  "Name": "Brill",
+  "CreationNumber": 152,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "GTsh",
+  "NewId": "B00S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Backwards Mushroom tree"
+    }
+  ]
+}

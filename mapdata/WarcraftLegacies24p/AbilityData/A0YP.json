@@ -1,0 +1,92 @@
+{
+  "OldId": "ANso",
+  "NewId": "A0YP",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B07T"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nso1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "amho",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 888
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShadowStrike.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(light blue)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BloodElfSpellThiefMISSILE\\BloodElfSpellThiefMISSILE.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Silencing Glaive"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Silencing Glaive |cffffcc00Q|r "
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Throws a Magical Glaive at an enemy unit which cause 15 damage per second, prevent the casting of spells, and reduce attack damage by 50%.|nLasts 16 seconds. (4 for heroes)"
+    }
+  ]
+}

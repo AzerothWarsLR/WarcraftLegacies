@@ -1,0 +1,14 @@
+{
+  "OldId": "AIda",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 5
+    }
+  ]
+}

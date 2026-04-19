@@ -1,0 +1,44 @@
+{
+  "OldId": "BUfa",
+  "NewId": "B00A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mage Armour"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Mage Armour"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mage Armour"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Barkskin\\BarkSkinTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "OldId": "AIfr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "nggr"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Item Granite Golem Summon"
+    }
+  ]
+}

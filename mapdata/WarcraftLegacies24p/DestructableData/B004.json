@@ -1,0 +1,34 @@
+{
+  "OldId": "FTtw",
+  "NewId": "B004",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "A,B,K,Y,X,J,D,C,I,F,L,W,N,O,Z,G,V,Q,*"
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Custom)"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Quel Tree Wall (Lordaeron)"
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": "war3mapImported\\QuelThalasTree.blp"
+    }
+  ]
+}

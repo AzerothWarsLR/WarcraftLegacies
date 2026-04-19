@@ -1,0 +1,39 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B02P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyPower.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Unholy Armor"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Unholy Armor; it is impervious to damage."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

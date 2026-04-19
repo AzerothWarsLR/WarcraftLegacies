@@ -1,0 +1,104 @@
+{
+  "OldId": "Reib",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gglm",
+      "Value": 50
+    },
+    {
+      "Id": "glmm",
+      "Value": 25
+    },
+    {
+      "Id": "glvl",
+      "Value": 2
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "n06O"
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Id": "gtim",
+      "Value": 10
+    },
+    {
+      "Id": "glmb",
+      "Value": 50
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Light Blue Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Improved Bows - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Improved Bows - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the attack range of Archers and Hippogryph Rider by 100."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the attack range of Archers and Hippogryph Rider by an additional 100."
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Improved Bows"
+    }
+  ]
+}

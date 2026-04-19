@@ -1,0 +1,157 @@
+{
+  "OldId": "Etyr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A053,AInv,Ault,S003"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0DP,Aamk,A01D,AEar,AEsf"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 27
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua1r",
+      "Value": 750
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R002,R007"
+    },
+    {
+      "Id": "utco",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.15
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTyrande.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive High Priestess"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "High Priestess of Elune "
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Tyrande Whisperwind"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive High Priestess"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at empowering your backline and dealing magic damage over time.|n|cfff5962dAbilities:|r Moonlight, Hide |n|cfff5962dCan learn:|R Starfire, Words of Protection, Trueshot Aura, Starfall|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TyrandeWhisperwind.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Tyrande"
+    }
+  ]
+}

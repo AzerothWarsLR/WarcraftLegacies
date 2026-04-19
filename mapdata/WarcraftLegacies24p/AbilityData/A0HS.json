@@ -1,0 +1,26 @@
+{
+  "OldId": "Assp",
+  "NewId": "A0HS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "h08Y"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Goblin tank)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Gunner Pilot"
+    }
+  ]
+}

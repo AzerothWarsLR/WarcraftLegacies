@@ -1,0 +1,14 @@
+{
+  "OldId": "AIpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "irl3",
+      "Value": 3
+    }
+  ]
+}

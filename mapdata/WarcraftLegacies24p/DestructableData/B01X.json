@@ -1,0 +1,79 @@
+{
+  "OldId": "LOcg",
+  "NewId": "B01X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": "bwal",
+      "Value": 1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Bridge Wide"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Bridge_Wide.mdl"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "war3mapImported\\Bridge_Wide.mdl"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bvcg",
+      "Value": 135
+    },
+    {
+      "Id": "bvcr",
+      "Value": 110
+    },
+    {
+      "Id": "bvcb",
+      "Value": 125
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Dark)"
+    }
+  ]
+}

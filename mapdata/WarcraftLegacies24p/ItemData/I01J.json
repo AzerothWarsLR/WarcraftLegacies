@@ -1,0 +1,56 @@
+{
+  "OldId": "ckng",
+  "NewId": "I01J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0AL"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIfu"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPhilosophersStone.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "A fragment of the Demon Soul, grants bonus Strength."
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tome\\tome.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ruby Fragment"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength by 10.|n|cffffcc00Lore|r|n|cffffdeadA strongly glowing fragment of the Demon Soul."
+    }
+  ]
+}

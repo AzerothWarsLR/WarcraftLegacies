@@ -1,0 +1,163 @@
+{
+  "OldId": "Oths",
+  "NewId": "O01Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 20
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AUan,ANsb,Aamk,A02B,A013"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 29
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "ustr",
+      "Value": 24
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.85
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecroMagus.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Dragonmaw Chieftain"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\OrcNercroMagus.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dragonmaw Chieftain"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Nek\u0027rosh Skullcrusher"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Dragonmaw Chieftain"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecroMagus.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Nek\u0027rosh"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at dealing magical damage and reanimation.|n|cfff5962dCan learn:|R Shadow Ball, Rain of Meteors, Devour Magic, Animate Dead|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "PitLord"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

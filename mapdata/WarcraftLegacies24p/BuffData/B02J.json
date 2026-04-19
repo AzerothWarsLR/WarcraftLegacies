@@ -1,0 +1,29 @@
+{
+  "OldId": "Bfzy",
+  "NewId": "B02J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedBears.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Animal Fury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Animal Fury; its attack rate and movement speed are increased."
+    }
+  ]
+}

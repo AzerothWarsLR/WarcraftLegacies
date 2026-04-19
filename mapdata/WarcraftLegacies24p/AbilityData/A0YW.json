@@ -1,0 +1,119 @@
+{
+  "OldId": "AEev",
+  "NewId": "A0YW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASWarglaive_of_Azzinoth.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green/Light Blue - Illidan)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarglaive_of_Azzinoth.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Warglaives of Azzinoth - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons. |n|n|cffffcc00Level 1|r - Deals 20 damage. |n|cffffcc00Level 2|r - Deals 35 damage. |n|cffffcc00Level 3|r - Deals 50 damage. |n|cffffcc00Level 3|r - Deals 65 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal 20 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal 35 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal 50 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal 65 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
+    }
+  ]
+}

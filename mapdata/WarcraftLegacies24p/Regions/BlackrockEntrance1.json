@@ -1,0 +1,16 @@
+{
+  "Left": 12576,
+  "Bottom": -10784,
+  "Right": 12960,
+  "Top": -10656,
+  "Name": "BlackrockEntrance1",
+  "CreationNumber": 10,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

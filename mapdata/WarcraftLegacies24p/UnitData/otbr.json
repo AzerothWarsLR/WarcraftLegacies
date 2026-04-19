@@ -1,0 +1,111 @@
+{
+  "OldId": "otbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANtr,A09D,Aliq,Auco"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubld",
+      "Value": 8
+    },
+    {
+      "Id": "ucar",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 13
+    },
+    {
+      "Id": "ulev",
+      "Value": 3
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 120
+    },
+    {
+      "Id": "umpm",
+      "Value": 120
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R,ostr"
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R06B,Rhar,Rotr,Rhme,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Swift flying bomber of the skies.|n|cfff5962dAbilities:|R Unstable Concoction, Acid Bomb|n|cfff5962dCan Learn:|R Liquid Fire, Troll Regeneration |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

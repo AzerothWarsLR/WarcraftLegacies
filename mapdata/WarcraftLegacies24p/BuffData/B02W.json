@@ -1,0 +1,29 @@
+{
+  "OldId": "Bmlt",
+  "NewId": "B02W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Board"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This ship has been Boarded; it cannot move or attack and will take damage over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl"
+    }
+  ]
+}

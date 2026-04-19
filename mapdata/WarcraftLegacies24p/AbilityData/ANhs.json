@@ -1,0 +1,16 @@
+{
+  "OldId": "ANhs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    }
+  ]
+}

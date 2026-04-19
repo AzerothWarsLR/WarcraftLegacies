@@ -1,0 +1,13 @@
+{
+  "OldId": "ncat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Robf,Rhme,Rguv"
+    }
+  ]
+}

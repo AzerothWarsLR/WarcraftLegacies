@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1429221442,
+    "Variation": 1,
+    "Position": {
+      "X": -27008,
+      "Y": -1600,
+      "Z": 288.125
+    },
+    "Rotation": 1.7453293,
+    "Scale": {
+      "X": 1.0215034,
+      "Y": 1.0215034,
+      "Z": 1.0215034
+    },
+    "SkinId": 1429221442,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34782
+  },
+  {
+    "TypeId": 1429221442,
+    "Variation": 4,
+    "Position": {
+      "X": -27072,
+      "Y": -1728,
+      "Z": 413.375
+    },
+    "Rotation": 1.7453293,
+    "Scale": {
+      "X": 1.1669058,
+      "Y": 1.1669058,
+      "Z": 1.1669058
+    },
+    "SkinId": 1429221442,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34771
+  },
+  {
+    "TypeId": 1177890884,
+    "Variation": 0,
+    "Position": {
+      "X": -26681.8,
+      "Y": -1968.7882,
+      "Z": 782.2046
+    },
+    "Rotation": 4.0758495,
+    "Scale": {
+      "X": 3.3499978,
+      "Y": 3.3499978,
+      "Z": 3.5499976
+    },
+    "SkinId": 1177890884,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34745
+  },
+  {
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -26871.082,
+      "Y": -1979.8191,
+      "Z": 683.9884
+    },
+    "Rotation": 5.074664,
+    "Scale": {
+      "X": 1.5585,
+      "Y": 1.5585,
+      "Z": 2.6000013
+    },
+    "SkinId": 1160982596,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34583
+  },
+  {
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -26744.064,
+      "Y": -1732.12,
+      "Z": 722.5577
+    },
+    "Rotation": 5.074664,
+    "Scale": {
+      "X": 1.5585,
+      "Y": 1.5585,
+      "Z": 1.5500023
+    },
+    "SkinId": 1160982596,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 34414
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "OldId": "Afbb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Thelsamar)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Attacks destroy \u003CAfbb,DataA1\u003E mana per hit. The mana combusts, dealing damage to the attacked unit."
+    }
+  ]
+}

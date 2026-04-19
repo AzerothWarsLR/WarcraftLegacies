@@ -1,0 +1,126 @@
+{
+  "OldId": "Orkn",
+  "NewId": "O01J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A07R,A033,AOcl,AUls,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uint",
+      "Value": 23
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Troll)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Dark Prophet"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Zul"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at destructive and disrupting magic.|n|cfff5962dCan Learn:|R Chain Lightning, Dark Grip, Thorns Aura, Locust Swarm|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Zul"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Dark Prophet"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Dark Prophet"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\RokhanMaskV2.mdl"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

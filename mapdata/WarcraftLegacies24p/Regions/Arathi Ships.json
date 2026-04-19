@@ -1,0 +1,16 @@
+{
+  "Left": 16256,
+  "Bottom": 768,
+  "Right": 17024,
+  "Top": 1632,
+  "Name": "Arathi Ships",
+  "CreationNumber": 281,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

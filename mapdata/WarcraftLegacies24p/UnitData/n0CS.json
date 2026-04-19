@@ -1,0 +1,43 @@
+{
+  "OldId": "nfro",
+  "NewId": "n0CS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Mr. Cash - Tier 2 Patron"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\Knight\\Knight.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Knight"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    }
+  ]
+}

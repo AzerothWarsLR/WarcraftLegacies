@@ -1,0 +1,178 @@
+{
+  "OldId": "etoa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0G9,A0G8,Aeat,Aro1,Atol,Argl"
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 42
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 76
+    },
+    {
+      "Id": "ua2b",
+      "Value": 76
+    },
+    {
+      "Id": "ufma",
+      "Value": 20
+    },
+    {
+      "Id": "ugol",
+      "Value": 70
+    },
+    {
+      "Id": "ugor",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ulur",
+      "Value": 200
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "ua1r",
+      "Value": 200
+    },
+    {
+      "Id": "ua2r",
+      "Value": 200
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "Renb"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 18
+    },
+    {
+      "Id": "ua2s",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 100
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,R002,R018,Renb,Rgfo,Rhme"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "e00N,ewsp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp|n|cfff5962dAbilities:|R Force of Nature, Sacred Ground |n|cfff5962dUpgrades to:|R Tree of Eternity"
+    }
+  ]
+}

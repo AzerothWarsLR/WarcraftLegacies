@@ -1,0 +1,99 @@
+{
+  "OldId": "nnsw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aien,A0LX,Aams,ANpa"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 430
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R00K"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "None"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful spellcaster. Can initially cast Parasite, which damages an enemy unit over time and can spawn a Watery Minion from their corpse. Also has the Frostbolt and anti-magic shell abilities. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    }
+  ]
+}

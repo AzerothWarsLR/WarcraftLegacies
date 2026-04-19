@@ -1,0 +1,16 @@
+{
+  "Left": -17408,
+  "Bottom": -11552,
+  "Right": -14336,
+  "Top": -7904,
+  "Name": "FeralasAmbient1",
+  "CreationNumber": 274,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

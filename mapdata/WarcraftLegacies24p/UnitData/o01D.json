@@ -1,0 +1,48 @@
+{
+  "OldId": "osp1",
+  "NewId": "o01D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S00B"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "S00B"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde-Zuluhed-Level 4)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\orc\\StasisTotem\\StasisTotem.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bloodlust Totem"
+    }
+  ]
+}

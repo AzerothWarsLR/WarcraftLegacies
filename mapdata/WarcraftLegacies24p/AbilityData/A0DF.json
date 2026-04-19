@@ -1,0 +1,25 @@
+{
+  "OldId": "AIlz",
+  "NewId": "A0DF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ilif",
+      "Value": 500000
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Damage System)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Life Gain"
+    }
+  ]
+}

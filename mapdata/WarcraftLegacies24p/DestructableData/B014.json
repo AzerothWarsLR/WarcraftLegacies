@@ -1,0 +1,33 @@
+{
+  "OldId": "WTtw",
+  "NewId": "B014",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bonc",
+      "Value": 1
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "L,W"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": " Winter Tree 4"
+    }
+  ]
+}

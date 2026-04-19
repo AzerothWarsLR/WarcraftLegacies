@@ -1,0 +1,178 @@
+{
+  "OldId": "nwrg",
+  "NewId": "n0CC",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A064,ACrk,A0CC"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 27
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 11
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 177
+    },
+    {
+      "Id": "ugol",
+      "Value": 150
+    },
+    {
+      "Id": "ugor",
+      "Value": 19
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2200
+    },
+    {
+      "Id": "ulev",
+      "Value": 8
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "umpi",
+      "Value": 100
+    },
+    {
+      "Id": "umpm",
+      "Value": 250
+    },
+    {
+      "Id": "upri",
+      "Value": 9
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R010,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "ACrk"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Shadowforge Gatebreaker"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy magic-resistant melee unit.|n|cfff5962dAbilities:|R Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only build 4.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Shadowforge Gatebreaker"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_DarkIronGolem.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronGolem.blp"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

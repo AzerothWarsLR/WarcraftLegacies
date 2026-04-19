@@ -1,0 +1,16 @@
+{
+  "Left": 16192,
+  "Bottom": -19488,
+  "Right": 16480,
+  "Top": -19232,
+  "Name": "ClosePortal",
+  "CreationNumber": 531,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

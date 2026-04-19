@@ -1,0 +1,29 @@
+{
+  "OldId": "APbs",
+  "NewId": "D02M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Ashenvale\\Props\\Totem\\Totem2.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Elven Lantern"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BNht",
+  "NewId": "B06P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Fear of the Goddess"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is afraid of Elune; it deals less damage for a duration."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

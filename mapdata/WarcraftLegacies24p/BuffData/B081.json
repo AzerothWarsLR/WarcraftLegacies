@@ -1,0 +1,19 @@
+{
+  "OldId": "BOac",
+  "NewId": "B081",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Time Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Time Aura; it has decreased attack damage."
+    }
+  ]
+}

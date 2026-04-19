@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1684165210,
+    "Variation": 1,
+    "Position": {
+      "X": -16015.467,
+      "Y": 21240.867,
+      "Z": 313
+    },
+    "Rotation": 6.1334577,
+    "Scale": {
+      "X": 1.1050752,
+      "Y": 1.1050752,
+      "Z": 1.1050752
+    },
+    "SkinId": 1684165210,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12647
+  },
+  {
+    "TypeId": 1684165210,
+    "Variation": 1,
+    "Position": {
+      "X": -16131.745,
+      "Y": 21170.809,
+      "Z": 313
+    },
+    "Rotation": 0.26493025,
+    "Scale": {
+      "X": 1.1050752,
+      "Y": 1.1050752,
+      "Z": 1.1050752
+    },
+    "SkinId": 1684165210,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12628
+  },
+  {
+    "TypeId": 1935823450,
+    "Variation": 1,
+    "Position": {
+      "X": -16087.492,
+      "Y": 21026.299,
+      "Z": 313
+    },
+    "Rotation": 0.888199,
+    "Scale": {
+      "X": 1.1895016,
+      "Y": 1.1895016,
+      "Z": 1.1895016
+    },
+    "SkinId": 1935823450,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10241
+  },
+  {
+    "TypeId": 1936872026,
+    "Variation": 7,
+    "Position": {
+      "X": -16064,
+      "Y": 21184,
+      "Z": 313
+    },
+    "Rotation": 3.6477385,
+    "Scale": {
+      "X": 0.8587421,
+      "Y": 0.8587421,
+      "Z": 0.8587421
+    },
+    "SkinId": 1936872026,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10184
+  },
+  {
+    "TypeId": 1936872026,
+    "Variation": 0,
+    "Position": {
+      "X": -16128,
+      "Y": 20800,
+      "Z": 306.6
+    },
+    "Rotation": 3.623694,
+    "Scale": {
+      "X": 1.3213902,
+      "Y": 1.3213902,
+      "Z": 1.3213902
+    },
+    "SkinId": 1936872026,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 8988
+  }
+]

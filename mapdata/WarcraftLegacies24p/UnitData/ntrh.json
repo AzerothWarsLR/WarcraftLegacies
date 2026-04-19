@@ -1,0 +1,82 @@
+{
+  "OldId": "ntrh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "umvs",
+      "Value": 215
+    },
+    {
+      "Id": "usma",
+      "Value": 10
+    },
+    {
+      "Id": "usrg",
+      "Value": 45
+    },
+    {
+      "Id": "usst",
+      "Value": 35
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Vassal - Tortolla)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Breed Sea Turtle Hatchling"
+    }
+  ]
+}

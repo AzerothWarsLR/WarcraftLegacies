@@ -1,0 +1,16 @@
+{
+  "Left": -1920,
+  "Bottom": -2080,
+  "Right": -1856,
+  "Top": -2016,
+  "Name": "Frostwolf1",
+  "CreationNumber": 141,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

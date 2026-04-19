@@ -1,0 +1,29 @@
+{
+  "OldId": "Brpl",
+  "NewId": "B01G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStrongDrink.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Alcohol"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by alcohol; some of its hit points have been restored."
+    }
+  ]
+}

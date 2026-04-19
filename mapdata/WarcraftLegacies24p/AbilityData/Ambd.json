@@ -1,0 +1,28 @@
+{
+  "OldId": "Ambd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    }
+  ]
+}

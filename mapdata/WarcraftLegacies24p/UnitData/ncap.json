@@ -1,0 +1,146 @@
+{
+  "OldId": "ncap",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udl2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ua2d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "ua2b",
+      "Value": 54
+    },
+    {
+      "Id": "ua2f",
+      "Value": 25
+    },
+    {
+      "Id": "ugol",
+      "Value": 14
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhd2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 80
+    },
+    {
+      "Id": "ulur",
+      "Value": 70
+    },
+    {
+      "Id": "uamn",
+      "Value": 0
+    },
+    {
+      "Id": "umh2",
+      "Value": 1
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua2s",
+      "Value": 10
+    },
+    {
+      "Id": "umvs",
+      "Value": 80
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "e00Q"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,Rgfo,Renb"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Create [|cffffcc00W|r] Corrupted Ancient Protector"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

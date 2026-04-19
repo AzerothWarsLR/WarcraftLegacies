@@ -1,0 +1,16 @@
+{
+  "Left": -18816,
+  "Bottom": -18464,
+  "Right": -18496,
+  "Top": -18048,
+  "Name": "Silithus Stone Exterior",
+  "CreationNumber": 485,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BNpi",
+  "NewId": "B0AM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Death Domain"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UndeadDissipate\\UndeadDissipate.mdl"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

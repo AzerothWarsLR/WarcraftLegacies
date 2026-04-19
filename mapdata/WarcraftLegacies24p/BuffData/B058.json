@@ -1,0 +1,34 @@
+{
+  "OldId": "BUau",
+  "NewId": "B058",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaharvest.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Vitality Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Vitality Aura; it has increased hit point regeneration."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Vitality Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

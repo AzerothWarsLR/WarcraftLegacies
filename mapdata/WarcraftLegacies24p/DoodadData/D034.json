@@ -1,0 +1,58 @@
+{
+  "OldId": "YOlb",
+  "NewId": "D034",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Structures\\CityBridgeSmall\\CityBridgeSmall.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Dark Bridge"
+    },
+    {
+      "Id": "dshf",
+      "Value": 1
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Id": "dcat",
+      "Type": 3,
+      "Value": "S"
+    }
+  ]
+}

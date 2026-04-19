@@ -1,0 +1,48 @@
+{
+  "OldId": "Edmm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ualp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

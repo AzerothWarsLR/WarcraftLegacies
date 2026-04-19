@@ -1,0 +1,54 @@
+{
+  "OldId": "ATwf",
+  "NewId": "B023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bcat",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "decoration"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Ubershield Arcane.mdl"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Draenei Shield"
+    },
+    {
+      "Id": "bgsc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "bsel",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

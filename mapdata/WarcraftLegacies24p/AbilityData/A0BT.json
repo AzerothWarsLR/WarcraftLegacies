@@ -1,0 +1,39 @@
+{
+  "OldId": "Aspb",
+  "NewId": "A0BT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "A00J"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spb2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Book of Medivh)"
+    }
+  ]
+}

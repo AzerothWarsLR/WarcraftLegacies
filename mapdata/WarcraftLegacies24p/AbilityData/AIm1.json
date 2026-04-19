@@ -1,0 +1,19 @@
+{
+  "OldId": "AIm1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Impg",
+      "Value": 175
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Mana Stone 175)"
+    }
+  ]
+}

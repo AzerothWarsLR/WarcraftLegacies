@@ -1,0 +1,16 @@
+{
+  "Left": 7648,
+  "Bottom": -31424,
+  "Right": 11008,
+  "Top": -26368,
+  "Name": "NagaUnlock",
+  "CreationNumber": 71,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

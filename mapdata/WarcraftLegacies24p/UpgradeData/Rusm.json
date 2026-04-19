@@ -1,0 +1,23 @@
+{
+  "OldId": "Rusm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "glmb",
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BHav",
+  "NewId": "B02B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "The World tree is getting its energy siphoned"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "HOLY FUCKIGN SHIT YOU GUYS BETTER DO SOMETHING OR ARCHIMONDE WILL FUCKING KILL YOU!!!!!!"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "World Tree Siphon"
+    }
+  ]
+}

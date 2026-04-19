@@ -1,0 +1,246 @@
+{
+  "OldId": "hbar",
+  "NewId": "h09O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0UC,A0T3,A0T2,A0RB"
+    },
+    {
+      "Id": "ubld",
+      "Value": 45
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 246
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h096,h095,h08M"
+    },
+    {
+      "Id": "ulum",
+      "Value": 380
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "h09Q"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2400
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ua1b",
+      "Value": 44
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ua1h",
+      "Value": 75
+    },
+    {
+      "Id": "ua1q",
+      "Value": 100
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1400
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ufma",
+      "Value": 15
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uwu1",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fearsome Fortress of the Scarlet Crusade.|n|n|cfff5962dAbilities:|R Summon Garrison, 1 Archer Sentry|n|cfff5962dTrains:|R Men-at-arms, Bowman, Light Cavalry|n|n|cffffcc00Attacks land and air units.|r |n|cffd45e19Generates Taxes|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Castle.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Crimson Castle"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Crimson Castle"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,fifth"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCastle5.blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowBlacksmith"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 5.3
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 280
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

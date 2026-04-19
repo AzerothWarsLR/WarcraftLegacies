@@ -1,0 +1,43 @@
+{
+  "OldId": "Aspl",
+  "NewId": "A0TT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spl1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green - Naga Summoner)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spiritual Connection"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spiritual Connection (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Links 4 units together in a chain. All units with Spirit Link on them will live longer, by distributing 40% of the damage they take across other Spirit Linked units. |nLasts 75 seconds."
+    }
+  ]
+}

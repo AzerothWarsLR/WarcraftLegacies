@@ -1,0 +1,16 @@
+{
+  "Left": 14944,
+  "Bottom": -21344,
+  "Right": 18592,
+  "Top": -17984,
+  "Name": "Blasted Lands Weather",
+  "CreationNumber": 182,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 0,
+    "A": 255
+  }
+}

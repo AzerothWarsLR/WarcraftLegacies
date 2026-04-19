@@ -1,0 +1,47 @@
+{
+  "OldId": "ACpv",
+  "NewId": "A0KM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Charred Ancient)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 100% chance that an attack will deal 40 damage to nearby units."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Burning Fists"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Burning Fists"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASMoltenBoulder.blp"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "OldId": "nbrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0P0,Ashm"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0P0"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 475
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

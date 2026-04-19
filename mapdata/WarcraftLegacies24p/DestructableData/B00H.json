@@ -1,0 +1,32 @@
+{
+  "OldId": "NTtw",
+  "NewId": "B00H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "K,N,O"
+    },
+    {
+      "Id": "bvcb",
+      "Value": 160
+    },
+    {
+      "Id": "bvcg",
+      "Value": 160
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Red Tree"
+    }
+  ]
+}

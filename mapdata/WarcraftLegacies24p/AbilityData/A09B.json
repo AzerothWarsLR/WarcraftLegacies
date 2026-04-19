@@ -1,0 +1,28 @@
+{
+  "OldId": "Afbk",
+  "NewId": "A09B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas-Sunfury Warrior)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The warrior\u0027s attacks combust \u003CAfbk,DataA1\u003E(\u003CAfbk,DataC1\u003E for Heros) mana per hit dealing damage to the attacked unit equal to the mana destroyed."
+    }
+  ]
+}

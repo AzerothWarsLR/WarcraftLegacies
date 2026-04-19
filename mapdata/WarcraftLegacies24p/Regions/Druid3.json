@@ -1,0 +1,16 @@
+{
+  "Left": -15648,
+  "Bottom": 1984,
+  "Right": -15584,
+  "Top": 2048,
+  "Name": "Druid3",
+  "CreationNumber": 214,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

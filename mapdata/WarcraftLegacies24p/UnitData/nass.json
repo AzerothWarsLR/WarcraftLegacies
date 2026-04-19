@@ -1,0 +1,30 @@
+{
+  "OldId": "nass",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "OldId": "Atdg",
+  "NewId": "A0H8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Tdg1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Tdg2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Tdg3",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Tdg4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Tdg5",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Tornado)(Level 2)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Tornado Unit Damage"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "XUdd",
+  "NewId": "X006",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Moving Earth (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Earth NovaTarget.mdx"
+    }
+  ]
+}

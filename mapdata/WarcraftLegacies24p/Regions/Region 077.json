@@ -1,0 +1,16 @@
+{
+  "Left": 4640,
+  "Bottom": 16832,
+  "Right": 7200,
+  "Top": 17504,
+  "Name": "Region 077",
+  "CreationNumber": 77,
+  "WeatherType": 1936477779,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

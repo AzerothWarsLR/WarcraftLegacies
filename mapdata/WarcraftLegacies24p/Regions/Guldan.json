@@ -1,0 +1,16 @@
+{
+  "Left": -1152,
+  "Bottom": 10176,
+  "Right": -896,
+  "Top": 10432,
+  "Name": "Guldan",
+  "CreationNumber": 185,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

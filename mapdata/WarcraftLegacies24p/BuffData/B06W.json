@@ -1,0 +1,43 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B06W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_HolyNova.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Light\u0027s Fury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is infused by the power of the Light. It moves faster and damages every enemy around."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\HolyTornado.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftac",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "OldId": "efon",
+  "NewId": "e01F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 11
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1450
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R002,R018,Reuv,Rhme,Rhar"
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids - Event)"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Treant"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Basic Wooden warrior |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -24864,
+  "Bottom": 15360,
+  "Right": -24512,
+  "Top": 15744,
+  "Name": "Scarlet Monastery Interior",
+  "CreationNumber": 442,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}
