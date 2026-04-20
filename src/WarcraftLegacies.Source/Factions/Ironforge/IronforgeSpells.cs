@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells;
+using WarcraftLegacies.Source.Shared.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 

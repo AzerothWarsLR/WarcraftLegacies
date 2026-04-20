@@ -23,7 +23,7 @@ public sealed class IronforgeLegends
     Falstad = new LegendaryHero("Falstad Wildhammer")
     {
       UnitType = UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE,
-      StartingXp = 5400
+      StartingXp = 2800
     };
 
     Magni = new LegendaryHero("Magni Bronzebeard")

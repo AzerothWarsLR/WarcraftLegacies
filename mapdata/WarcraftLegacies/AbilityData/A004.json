@@ -9,30 +9,24 @@
       "Level": 1,
       "Id": "aare",
       "Type": 2,
-      "Value": 800
+      "Value": 900
     },
     {
       "Level": 2,
       "Id": "aare",
       "Type": 2,
-      "Value": 800
+      "Value": 900
     },
     {
       "Level": 3,
       "Id": "aare",
       "Type": 2,
-      "Value": 800
+      "Value": 900
     },
     {
       "Level": 3,
       "Id": "amcs",
       "Value": 150
-    },
-    {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": "Nst1",
-      "Value": 15
     },
     {
       "Level": 2,
@@ -54,25 +48,18 @@
       "Value": 55
     },
     {
-      "Level": 1,
-      "Pointer": 3,
-      "Id": "Nst3",
-      "Type": 2,
-      "Value": 10
-    },
-    {
       "Level": 2,
       "Pointer": 3,
       "Id": "Nst3",
       "Type": 2,
-      "Value": 15
+      "Value": 50
     },
     {
       "Level": 3,
       "Pointer": 3,
       "Id": "Nst3",
       "Type": 2,
-      "Value": 20
+      "Value": 75
     },
     {
       "Level": 3,
@@ -85,13 +72,13 @@
       "Level": 3,
       "Id": "adur",
       "Type": 2,
-      "Value": 30
+      "Value": 10
     },
     {
       "Level": 3,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 30
+      "Value": 10
     },
     {
       "Id": "alev",
@@ -113,7 +100,74 @@
       "Level": 3,
       "Id": "aran",
       "Type": 2,
-      "Value": 500
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
     },
     {
       "Id": "aart",
@@ -123,7 +177,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Yellow Falstad)"
+      "Value": "(Ironforge - Falstad)"
     },
     {
       "Id": "ahky",
@@ -158,7 +212,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Calls Gryphon Riders from the sky. |n|n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|cffffcc00Level 2|r -  Each gryphon deals 15 damage. |n|cffffcc00Level 3|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
+      "Value": "Calls Gryphon Riders from the sky for 10 seconds. |n|n|cffffcc00Level 1|r -  Each gryphon deals \u003CA004,DataC1\u003E damage. |n|cffffcc00Level 2|r -  Each gryphon deals \u003CA004,DataC2\u003E damage. |n|cffffcc00Level 3|r -  Each gryphon deals \u003CA004,DataC3\u003E damage."
     },
     {
       "Id": "asat",
@@ -187,19 +241,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|nLasts 30 seconds."
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in their path. Each gryphon deals \u003CA004,DataC1\u003E damage. "
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 15 damage. |n|nLasts 30 seconds."
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in their path. Each gryphon deals \u003CA004,DataC2\u003E damage. "
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in their path. Each gryphon deals \u003CA004,DataC3\u003E damage. "
     }
   ]
 }

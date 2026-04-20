@@ -13,5 +13,13 @@ public static class IronforgeTraits
       DummyOrderId = ORDER_FORKED_LIGHTNING,
       ProcChance = 0.2f
     }, UNIT_H03Z_STORMRIDER_IRONFORGE);
+
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_VP26_MASTER_OF_LIGHTNING_IRONFORGE_FALSTAD)
+    {
+      DummyAbilityId = ABILITY_VP27_FORKED_LIGHTNING_IRONFORGE_FALSTAD_DUMMY,
+      DummyOrderId = ORDER_FORKED_LIGHTNING,
+      ProcChance = 0.1f,
+      ProcChancePerLevel = 0.1f,
+    }, UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE);
   }
 }
