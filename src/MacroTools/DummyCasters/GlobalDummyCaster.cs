@@ -58,4 +58,19 @@ public sealed class GlobalDummyCaster
     _unit.IssueOrder(orderId, target.X, target.Y);
     _unit.RemoveAbility(abilId);
   }
+  public void CastPointFromCaster(unit caster, int abilId, int orderId, int level, float x, float y)
+  {
+    var whichPlayer = caster.Owner;
+
+    _unit.SetOwner(whichPlayer);
+    _unit.SetPosition(caster.X, caster.Y);
+    _unit.AddAbility(abilId);
+    _unit.SetAbilityLevel(abilId, level);
+
+    _unit.FacePosition(new Point(x, y));
+    _unit.IssueOrder(orderId, x, y);
+
+    _unit.RemoveAbility(abilId);
+  }
+
 }

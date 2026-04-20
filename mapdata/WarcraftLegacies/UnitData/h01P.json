@@ -44,7 +44,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 5
+      "Value": 50
     },
     {
       "Id": "ua2b",
@@ -126,11 +126,6 @@
       "Value": "Rhar,Rhme,Rguv"
     },
     {
-      "Id": "ua1t",
-      "Type": 3,
-      "Value": "pierce"
-    },
-    {
       "Id": "ua2t",
       "Type": 3,
       "Value": "unknown"
@@ -151,6 +146,20 @@
       "Id": "ua2g",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ua1f",
+      "Value": 250
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "aline"
     },
     {
       "Id": "uabs",

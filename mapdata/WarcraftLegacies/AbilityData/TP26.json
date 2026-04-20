@@ -112,6 +112,13 @@
       "Value": "ground,structure"
     },
     {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Flame Tank Dummy)"

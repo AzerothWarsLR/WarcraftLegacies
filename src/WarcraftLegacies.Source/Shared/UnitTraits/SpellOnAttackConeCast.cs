@@ -3,15 +3,14 @@ using MacroTools.UnitTraits;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Shared.Buffs;
 using WCSharp.Buffs;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Shared.UnitTraits;
 
 /// <summary>
 /// When the unit deals damage, it casts a point-targeted dummy spell
-/// in the direction of the attack target.
+/// in the direction of the attack target from the location of the attacking unit. Useful for abilities that spread in a cone.
 /// </summary>
-public sealed class SpellOnAttackPointCast : UnitTrait, IAppliesEffectOnDamage
+public sealed class SpellOnAttackConeCast : UnitTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 
@@ -22,7 +21,7 @@ public sealed class SpellOnAttackPointCast : UnitTrait, IAppliesEffectOnDamage
   public int RequiredResearch { get; init; }
   public float CastDistance { get; init; } = 600;
 
-  public SpellOnAttackPointCast(int abilityTypeId)
+  public SpellOnAttackConeCast(int abilityTypeId)
   {
     _abilityTypeId = abilityTypeId;
   }
@@ -78,13 +77,12 @@ public sealed class SpellOnAttackPointCast : UnitTrait, IAppliesEffectOnDamage
     var x = MathEx.GetPolarOffsetX(caster.X, CastDistance, angle);
     var y = MathEx.GetPolarOffsetY(caster.Y, CastDistance, angle);
 
-    var point = new Point(x, y);
-
-    DummyCasterManager.GetGlobalDummyCaster().CastPoint(
-      caster.Owner,
+    DummyCasterManager.GetGlobalDummyCaster().CastPointFromCaster(
+      caster,
       DummyAbilityId,
       DummyOrderId,
       caster.GetAbilityLevel(_abilityTypeId),
-      point);
+      x,
+      y);
   }
 }
