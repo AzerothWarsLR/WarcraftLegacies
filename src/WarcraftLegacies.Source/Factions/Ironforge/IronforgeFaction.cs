@@ -6,9 +6,7 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 using WarcraftLegacies.Source.Factions.Ironforge.Researches;
 using WarcraftLegacies.Source.Factions.Stormwind;
-using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
-using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
@@ -37,6 +35,7 @@ public sealed class IronforgeFaction : Faction
     Nicknames = new List<string>
     {
       "if",
+      "iron",
       "dwarf",
       "dwarfs",
       "dwarves"
@@ -95,25 +94,33 @@ public sealed class IronforgeFaction : Faction
     });
     AddQuest(questGnomeregan);
 
-    var questWildhammer = new QuestWildhammer(AllLegends.Ironforge.Magni)
-    {
-      Progress = QuestProgress.Undiscovered
-    };
-
-    questWildhammer.AddObjective(new ObjectiveControlLegend(AllLegends.Ironforge.Magni, false)
+    var questBlackTemple = new QuestBlackTemple(AllLegends.FelHorde.BlackTemple);
+    questBlackTemple.AddObjective(new ObjectiveQuestComplete(questDominion)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,
       ShowsInPopups = false
     });
+    AddQuest(questBlackTemple);
 
+    var questWildhammer = new QuestWildhammer()
+    {
+      Progress = QuestProgress.Undiscovered
+    };
+
+    questWildhammer.AddObjective(new ObjectiveQuestComplete(questDominion)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
     AddQuest(questWildhammer);
 
 
     var questDarkIron = new QuestDarkIron(
       Regions.Shadowforge_City,
-      AllLegends.FelHorde.BlackTemple,
-      AllLegends.Ironforge.Magni);
+      Regions.Shadowforge_City_Base,
+      AllLegends.FelHorde.BlackrockSpire);
 
     questDarkIron.AddObjective(new ObjectiveQuestComplete(questDominion)
     {
@@ -122,6 +129,26 @@ public sealed class IronforgeFaction : Faction
       ShowsInPopups = false
     });
     AddQuest(questDarkIron);
+
+    var explorersLeagueOne = new QuestExplorersLeagueFoundation();
+    explorersLeagueOne.AddObjective(new ObjectiveQuestComplete(questDominion)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+
+    AddQuest(explorersLeagueOne);
+
+    var explorersLeagueTwo = new QuestExplorersLeagueKalimdorExpedition();
+    explorersLeagueTwo.AddObjective(new ObjectiveQuestComplete(explorersLeagueOne)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+
+    AddQuest(explorersLeagueTwo);
 
     var missingArtifacts = new int[]
     {
@@ -134,7 +161,7 @@ public sealed class IronforgeFaction : Faction
     var questExpedition = new QuestExpedition(
       missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]);
 
-    questExpedition.AddObjective(new ObjectiveTurn(15)
+    questExpedition.AddObjective(new ObjectiveQuestComplete(explorersLeagueOne)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

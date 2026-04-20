@@ -28,6 +28,11 @@ public sealed class SpellOnAttack : UnitTrait, IAppliesEffectOnDamage
   public float ProcChance { get; init; }
 
   /// <summary>
+  /// The addtional percentage chance that the effect will occur on attack per level.
+  /// </summary>
+  public float ProcChancePerLevel { get; init; }
+
+  /// <summary>
   /// The cooldown in seconds for the effect.
   /// </summary>
   public float Cooldown { get; init; }
@@ -36,6 +41,11 @@ public sealed class SpellOnAttack : UnitTrait, IAppliesEffectOnDamage
   /// The player must have this research for the ability to take effect.
   /// </summary>
   public int RequiredResearch { get; init; }
+
+  /// <summary>
+  /// The current level of this <see cref="DummyAbilityId"/> instance for any specified unit.
+  /// </summary>
+  public int GetAbilityLevel(unit whichUnit) => whichUnit.GetAbilityLevel(_abilityTypeId);
 
   /// <summary>
   /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
@@ -75,7 +85,14 @@ public sealed class SpellOnAttack : UnitTrait, IAppliesEffectOnDamage
       }
     }
 
-    if (GetRandomReal(0, 1) >= ProcChance)
+    var procChance = ProcChance;
+    if (ProcChancePerLevel > 0)
+    {
+      var abilityLevel = GetAbilityLevel(caster);
+      procChance = abilityLevel == 0 ? 0f : ProcChance + (abilityLevel * ProcChancePerLevel);
+    }
+
+    if (GetRandomReal(0, 1) >= procChance)
     {
       return;
     }
