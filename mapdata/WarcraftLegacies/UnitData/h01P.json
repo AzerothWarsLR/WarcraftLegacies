@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0RI,A0E1,A0F5,S01F,S01H,S01G,Aroc"
+      "Value": "TP27,A0E1,A0F5,S01F,S01H,S01G,Aroc"
     },
     {
       "Id": "uacq",
@@ -31,24 +31,24 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2.5
+      "Value": 3
     },
     {
       "Id": "ua2c",
       "Type": 2,
-      "Value": 1.5
+      "Value": 0
     },
     {
       "Id": "udef",
-      "Value": 10
+      "Value": 6
     },
     {
       "Id": "ua1b",
-      "Value": 200
+      "Value": 5
     },
     {
       "Id": "ua2b",
-      "Value": 20
+      "Value": 0
     },
     {
       "Id": "ufoo",
@@ -76,7 +76,7 @@
     },
     {
       "Id": "ua1z",
-      "Value": 2600
+      "Value": 0
     },
     {
       "Id": "ua2z",
@@ -88,11 +88,11 @@
     },
     {
       "Id": "ua1r",
-      "Value": 950
+      "Value": 250
     },
     {
       "Id": "ua2r",
-      "Value": 400
+      "Value": 250
     },
     {
       "Id": "urtm",
@@ -105,11 +105,11 @@
     },
     {
       "Id": "ua1s",
-      "Value": 10
+      "Value": 2
     },
     {
       "Id": "ua2s",
-      "Value": 3
+      "Value": 0
     },
     {
       "Id": "uspe",
@@ -126,8 +126,31 @@
       "Value": "Rhar,Rhme,Rguv"
     },
     {
-      "Id": "uaen",
-      "Value": 3
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "ua2d",
+      "Value": 0
+    },
+    {
+      "Id": "udu2",
+      "Value": 0
+    },
+    {
+      "Id": "utc2",
+      "Value": 0
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "uabs",
@@ -159,11 +182,6 @@
       "Value": 0.15
     },
     {
-      "Id": "ua2m",
-      "Type": 3,
-      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "Steam Tank"
@@ -177,6 +195,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Extremely heavily armored vehicle."
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
     }
   ]
 }
