@@ -52,12 +52,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00T,R010"
+      "Value": "TP29,TP28,R00T,R010"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n02D,n0CZ,h01P"
+      "Value": "tp01,tp02,n02D,n0CZ,h01P"
     },
     {
       "Id": "ulum",
