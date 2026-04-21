@@ -1,6 +1,6 @@
 {
   "OldId": "Rhse",
-  "NewId": "TP29",
+  "NewId": "TP38",
   "Unk": [
     0
   ],
@@ -24,10 +24,40 @@
       "Value": "h07G"
     },
     {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNArtilleryAttack.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRepair2.blp"
     },
     {
       "Level": 1,
@@ -39,28 +69,28 @@
       "Level": 1,
       "Id": "ghk1",
       "Type": 3,
-      "Value": "D"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "Artillery"
+      "Value": "Improved Chassis"
     },
     {
       "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "Research Artillery"
+      "Value": "Research Improved Chassis"
     },
     {
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Upgrades Steam Tanks into long range artillery, increasing their attack range and damage while granting Barrage, causing their attacks to fire additional projectiles at nearby enemy air units.  \r\n|n|cffc864c8Cannot be researched with Flamethrower.|r"
+      "Value": "Improves Dreadnaughts, increasing their hit points by 350 and movement speed by 50."
     },
     {
-      "Id": "gbpy",
+      "Id": "gbpx",
       "Value": 1
     }
   ]
