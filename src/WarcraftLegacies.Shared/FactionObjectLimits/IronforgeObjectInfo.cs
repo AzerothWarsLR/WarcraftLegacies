@@ -71,6 +71,8 @@ public static class IronforgeObjectInfo
     yield return new(UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, Unlimited);
     yield return new(UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, Unlimited);
+    yield return new(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_TP29_ARTILLERY_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
   }
 }
