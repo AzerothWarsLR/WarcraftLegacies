@@ -73,6 +73,7 @@ public static class IronforgeObjectInfo
     yield return new(UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, Unlimited);
     yield return new(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, Unlimited);
     yield return new(UPGRADE_TP29_ARTILLERY_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_TP38_IMPROVED_CHASSIS_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
   }
 }

@@ -14,7 +14,7 @@ public static class IronforgeTraits
       ProcChance = 0.2f
     }, UNIT_H03Z_STORMRIDER_IRONFORGE);
 
-    UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_STEAM_TANK)
+    UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
     {
       DummyAbilityId = ABILITY_TP26_FLAMETHROWER_FLAME_TANK_DUMMY,
       DummyOrderId = ORDER_BREATH_OF_FIRE,
