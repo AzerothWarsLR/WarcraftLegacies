@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": ""
+      "Value": "TP39"
     },
     {
       "Id": "ubld",
@@ -41,7 +41,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 2850
+      "Value": 2600
     },
     {
       "Id": "ulum",
@@ -62,7 +62,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar"
+      "Value": "TP38,Rhme,Rhar"
     },
     {
       "Id": "urac",
@@ -197,7 +197,7 @@
     },
     {
       "Id": "umvs",
-      "Value": 200
+      "Value": 180
     },
     {
       "Id": "umvr",
