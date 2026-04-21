@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "TP40,A0IL,A0CV,Aihn,A0GK,A07C"
+      "Value": "ACrk,TP40,A0IL,A0CV,Aihn,A0GK,A07C"
     },
     {
       "Id": "uacq",
@@ -22,7 +22,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 3
+      "Value": 30
     },
     {
       "Id": "ucol",
