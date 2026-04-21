@@ -39,7 +39,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 50
+      "Value": 68
     },
     {
       "Id": "ua2b",
@@ -100,7 +100,7 @@
     },
     {
       "Id": "ua1s",
-      "Value": 2
+      "Value": 14
     },
     {
       "Id": "ua2s",
@@ -136,6 +136,10 @@
     {
       "Id": "uaen",
       "Value": 3
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
     },
     {
       "Id": "uabs",
