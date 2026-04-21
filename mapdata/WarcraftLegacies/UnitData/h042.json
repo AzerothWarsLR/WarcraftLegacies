@@ -57,12 +57,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00V,R03H"
+      "Value": "R00V,TP42"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h037,n00C,n0CH,h0AB"
+      "Value": "tp03,n00C"
     },
     {
       "Id": "uico",
