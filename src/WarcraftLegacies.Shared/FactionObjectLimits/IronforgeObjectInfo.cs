@@ -35,7 +35,7 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, 6, new List<UnitCategory> { Flyer, Destroyer });
     yield return new(UNIT_H018_WARRIOR_IRONFORGE, Unlimited, Tank);
     yield return new(UNIT_H01L_THANE_IRONFORGE_ELITE, 6, new List<UnitCategory> { Elite, Tank, Support });
-    yield return new(UNIT_H037_ENGINEER_IRONFORGE, Unlimited, new List<UnitCategory> { Support, Summoner });
+    yield return new(UNIT_H037_ENGINEER_IRONFORGE, 6, new List<UnitCategory> { Elite, Support, Summoner });
     yield return new(UNIT_N02D_WAR_GOLEM_IRONFORGE, Unlimited, new List<UnitCategory> { Tank, AntiMage });
     yield return new(UNIT_H01P_STEAM_TANK_IRONFORGE, 3, new List<UnitCategory> { Siege, Destroyer, Support });
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited, Support);
