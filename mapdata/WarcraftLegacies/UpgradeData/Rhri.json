@@ -6,11 +6,11 @@
   "Modifications": [
     {
       "Id": "gglb",
-      "Value": 100
+      "Value": 0
     },
     {
       "Id": "glmb",
-      "Value": 0
+      "Value": 5
     },
     {
       "Level": 1,

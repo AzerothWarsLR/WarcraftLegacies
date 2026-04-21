@@ -1,6 +1,6 @@
 {
   "OldId": "Rhss",
-  "NewId": "R00F",
+  "NewId": "TP41",
   "Unk": [
     0
   ],
@@ -20,18 +20,25 @@
       "Value": 5
     },
     {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A0H1"
+    },
+    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNLancelot_Plate.blp"
-    },
-    {
-      "Id": "gbpx",
-      "Value": 0
-    },
-    {
-      "Id": "gbpy",
-      "Value": 2
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOtherBarrel.blp"
     },
     {
       "Level": 1,
@@ -43,25 +50,29 @@
       "Level": 1,
       "Id": "ghk1",
       "Type": 3,
-      "Value": "Z"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "Mithril Plated Armor"
+      "Value": "Potent Stormbrew"
     },
     {
       "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "Research Mithril Plated Armor"
+      "Value": "Research Potent Stormbrew"
     },
     {
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Equips Dwarven Warriors and Thanes with mithril plating, reducing incoming damage from attacks by \u003CA02O,DataC1\u003E for Dwarven Warriors and \u003CVP20,DataC1\u003E for Thanes."
+      "Value": "Enhances Stormbrew, increasing the amount of hit points restored by 75."
+    },
+    {
+      "Id": "gbpx",
+      "Value": 3
     }
   ]
 }
