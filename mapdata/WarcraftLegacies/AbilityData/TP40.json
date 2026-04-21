@@ -1,6 +1,6 @@
 {
   "OldId": "Asta",
-  "NewId": "A03E",
+  "NewId": "TP40",
   "Unk": [
     0
   ],
@@ -86,24 +86,57 @@
       "Value": 60
     },
     {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Sta1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sta2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Sta5",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Sta4",
+      "Type": 2,
+      "Value": 3
+    },
+    {
       "Id": "abpx",
       "Value": 0
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Teal - Eredar Warlock)"
+      "Value": "(Engineer)"
     },
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "Q"
+      "Value": "C"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Summons an invisible, immovable ward that stuns nearby enemy ground units when they approach. Activating the trap destroys all other Stasis Wards in its area.\r\nLasts 60 seconds. Stun lasts 4 seconds. Activation delay: 7 seconds."
+      "Value": "Summons an invisible, immovable ward that stuns nearby enemy ground units when they approach. Activating the trap destroys all other Stasis Wards in its area.\r\nLasts 60 seconds. Stun lasts 3 seconds. 8 second activation delay."
     },
     {
       "Level": 2,
