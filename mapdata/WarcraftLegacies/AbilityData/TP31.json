@@ -1,6 +1,6 @@
 {
   "OldId": "AOcr",
-  "NewId": "TP27",
+  "NewId": "TP31",
   "Unk": [
     0
   ],
@@ -30,7 +30,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Flame Tank)"
+      "Value": "(Steam Tank)"
     },
     {
       "Id": "arhk",
@@ -41,23 +41,23 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "This unit attacks using a flamethrower, dealing \u003CTP26,DataA1\u003E initial damage. Units that have Drunken Haze on them will ignite and burn for \u003CTP26,DataE1\u003E damage per second over \u003CTP26,Dur1\u003E seconds. "
+      "Value": "This unit\u2019s attack has been upgraded for long range artillery fire, dealing increased area damage and is able to target air units."
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Flamethrower"
+      "Value": "Artillery"
     },
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASFlamethrower.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASArtilleryAttack.blp"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Flamethrower"
+      "Value": "Artillery"
     },
     {
       "Id": "abpx",

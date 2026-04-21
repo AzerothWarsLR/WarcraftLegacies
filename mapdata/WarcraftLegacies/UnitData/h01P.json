@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "TP27,A0E1,A0F5,S01F,S01H,S01G,Aroc"
+      "Value": "A0F5,S01F,S01H,S01G"
     },
     {
       "Id": "uacq",
@@ -31,12 +31,12 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 3
+      "Value": 2.75
     },
     {
       "Id": "ua2c",
       "Type": 2,
-      "Value": 0
+      "Value": 1.5
     },
     {
       "Id": "udef",
