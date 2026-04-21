@@ -5,30 +5,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
-      "Level": 2,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
-      "Level": 3,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
-      "Level": 4,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
       "Level": 2,
       "Id": "amcs",
       "Value": 75
@@ -36,12 +12,12 @@
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 80
+      "Value": 75
     },
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 85
+      "Value": 75
     },
     {
       "Level": 1,
@@ -102,9 +78,38 @@
       "Value": "human"
     },
     {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Khaz Modan-Muradin)"
+      "Value": "(Muradin)"
     },
     {
       "Id": "ahky",
