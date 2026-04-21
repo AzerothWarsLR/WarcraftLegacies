@@ -19,7 +19,8 @@ public sealed class DeeprunTram : Research
   private static bool _researched;
 
   /// <inheritdoc />
-  public DeeprunTram(Faction ironforge, Faction stormwind, int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
+  public DeeprunTram(Faction ironforge, Faction stormwind, int researchTypeId, int goldCost, int lumberCost = 0)
+    : base(researchTypeId, goldCost, lumberCost)
   {
     _ironforge = ironforge;
     _stormwind = stormwind;
