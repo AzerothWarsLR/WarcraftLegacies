@@ -1,6 +1,6 @@
 {
   "OldId": "hmtt",
-  "NewId": "h04W",
+  "NewId": "tp02",
   "Unk": [
     0
   ],
@@ -8,12 +8,12 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0GH"
+      "Value": "Aroc,TP31,A0F5,S01F,S01H,S01G"
     },
     {
       "Id": "uacq",
       "Type": 2,
-      "Value": 1100
+      "Value": 1000
     },
     {
       "Id": "ubld",
@@ -21,7 +21,7 @@
     },
     {
       "Id": "ucar",
-      "Value": 1
+      "Value": 8
     },
     {
       "Id": "ucol",
@@ -31,24 +31,19 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2.5
-    },
-    {
-      "Id": "ua2c",
-      "Type": 2,
-      "Value": 1.5
+      "Value": 2.75
     },
     {
       "Id": "udef",
-      "Value": 10
+      "Value": 6
     },
     {
       "Id": "ua1b",
-      "Value": 140
+      "Value": 50
     },
     {
       "Id": "ua2b",
-      "Value": 35
+      "Value": 37
     },
     {
       "Id": "ufoo",
@@ -76,7 +71,7 @@
     },
     {
       "Id": "ua1z",
-      "Value": 700
+      "Value": 500
     },
     {
       "Id": "ua2z",
@@ -88,11 +83,11 @@
     },
     {
       "Id": "ua1r",
-      "Value": 1100
+      "Value": 1200
     },
     {
       "Id": "ua2r",
-      "Value": 400
+      "Value": 600
     },
     {
       "Id": "urtm",
@@ -101,15 +96,15 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R00L"
+      "Value": "h07G"
     },
     {
       "Id": "ua1s",
-      "Value": 10
+      "Value": 2
     },
     {
       "Id": "ua2s",
-      "Value": 5
+      "Value": 3
     },
     {
       "Id": "uspe",
@@ -123,16 +118,24 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R01U,Rhar,Rhme,Rguv"
+      "Value": "TP29,Rhar,Rhme,Rguv"
     },
     {
-      "Id": "uaen",
-      "Value": 3
+      "Id": "udu2",
+      "Value": 0
+    },
+    {
+      "Id": "ua1f",
+      "Value": 250
     },
     {
       "Id": "ua1w",
       "Type": 3,
-      "Value": "missile"
+      "Value": "aline"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
     },
     {
       "Id": "uabs",
@@ -150,27 +153,13 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSeigeEngineWithMissles.blp"
     },
     {
-      "Id": "ubpx",
-      "Value": 0
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(KulTiras)"
-    },
-    {
-      "Id": "umdl",
-      "Type": 3,
-      "Value": "SiegeEngineKulTirasV1.01.mdl"
+      "Value": "(Ironforge)"
     },
     {
       "Id": "uver",
       "Value": 1
-    },
-    {
-      "Id": "uhot",
-      "Type": 3,
-      "Value": "Q"
     },
     {
       "Id": "uma2",
@@ -178,24 +167,19 @@
       "Value": 0.15
     },
     {
-      "Id": "ua2m",
-      "Type": 3,
-      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
-    },
-    {
       "Id": "unam",
       "Type": 3,
-      "Value": "Siege Tank"
+      "Value": "Artillery Tank"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Build Steam Tank"
+      "Value": "Build Artillery Tank"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Heavily armored vehicle, adept at shooting down air units."
+      "Value": "Extremely heavily armored vehicle."
     }
   ]
 }

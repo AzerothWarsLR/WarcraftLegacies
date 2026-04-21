@@ -8,12 +8,12 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0F5,S01F,S01H,S01G"
+      "Value": "A0F5,S01F,TP03,TP02,S01H,S01G"
     },
     {
       "Id": "uacq",
       "Type": 2,
-      "Value": 1000
+      "Value": 600
     },
     {
       "Id": "ubld",
@@ -26,12 +26,12 @@
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 32
+      "Value": 16
     },
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2.75
+      "Value": 4
     },
     {
       "Id": "ua2c",
@@ -44,7 +44,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 50
+      "Value": 65
     },
     {
       "Id": "ua2b",
@@ -76,7 +76,7 @@
     },
     {
       "Id": "ua1z",
-      "Value": 0
+      "Value": 700
     },
     {
       "Id": "ua2z",
@@ -88,7 +88,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 250
+      "Value": 600
     },
     {
       "Id": "ua2r",
@@ -105,7 +105,7 @@
     },
     {
       "Id": "ua1s",
-      "Value": 2
+      "Value": 15
     },
     {
       "Id": "ua2s",
@@ -149,17 +149,30 @@
     },
     {
       "Id": "ua1f",
-      "Value": 250
-    },
-    {
-      "Id": "ua1t",
-      "Type": 3,
-      "Value": "normal"
+      "Value": 25
     },
     {
       "Id": "ua1w",
       "Type": 3,
-      "Value": "aline"
+      "Value": "msplash"
+    },
+    {
+      "Id": "ua1h",
+      "Value": 30
+    },
+    {
+      "Id": "ua1q",
+      "Value": 90
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
     },
     {
       "Id": "uabs",
@@ -204,11 +217,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Extremely heavily armored vehicle."
-    },
-    {
-      "Id": "ua1m",
-      "Type": 3,
-      "Value": ""
     }
   ]
 }

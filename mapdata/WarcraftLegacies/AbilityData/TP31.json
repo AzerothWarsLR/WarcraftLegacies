@@ -28,6 +28,11 @@
       "Value": 0
     },
     {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "TP29"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Steam Tank)"
@@ -58,10 +63,6 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "Artillery"
-    },
-    {
-      "Id": "abpx",
-      "Value": 0
     },
     {
       "Id": "arpx",

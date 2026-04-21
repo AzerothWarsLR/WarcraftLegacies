@@ -24,11 +24,6 @@
       "Value": "h07G"
     },
     {
-      "Id": "grac",
-      "Type": 3,
-      "Value": "undead"
-    },
-    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
@@ -62,7 +57,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Upgrades Steam Tanks into long\u2011range artillery, increasing their attack range and damage while granting Barrage, causing their attacks to fire additional projectiles at nearby enemy air units.  \r\n|n|cffc864c8Cannot be researched with Flamethrower.|r"
+      "Value": "Upgrades Steam Tanks into long range artillery, increasing their attack range and damage while granting Barrage, causing their attacks to fire additional projectiles at nearby enemy air units.  \r\n|n|cffc864c8Cannot be researched with Flamethrower.|r"
     },
     {
       "Id": "gbpy",

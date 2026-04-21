@@ -1,0 +1,35 @@
+{
+  "OldId": "Sca1",
+  "NewId": "TP03",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "TP29"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "tp02"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Steam Tank to Artillery Tank)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    },
+    {
+      "Id": "ausk",
+      "Type": 3,
+      "Value": "h01P"
+    }
+  ]
+}

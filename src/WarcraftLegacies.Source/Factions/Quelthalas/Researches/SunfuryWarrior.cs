@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Factions.Quelthalas.Researches;
 public sealed class SunfuryWarrior : Research
 {
   /// <inheritdoc />
-  public SunfuryWarrior(int researchTypeId, int goldCost, int lumberCost =0) : base(researchTypeId, goldCost, lumberCost)
+  public SunfuryWarrior(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
   {
   }
 

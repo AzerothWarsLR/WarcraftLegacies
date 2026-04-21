@@ -17,8 +17,14 @@
       "Value": ""
     },
     {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 6
+    },
+    {
       "Id": "abpx",
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": "abpy",
@@ -27,13 +33,13 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Steam Tank)"
+      "Value": "(Artillery Tank)"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Upgrades Steam Tanks into long range artillery, increasing their attack range and damage while granting Barrage, causing their attacks to fire additional projectiles at nearby enemy air units.  \r\n|n|n|cffc864c8Cannot be researched with Flamethrower.|r"
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 6  nearby enemy air units."
     }
   ]
 }

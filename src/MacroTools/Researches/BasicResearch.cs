@@ -6,7 +6,7 @@
 public sealed class BasicResearch : Research
 {
   /// <inheritdoc />
-  public BasicResearch(int researchTypeId, int goldCost, int lumberCost = 0) 
+  public BasicResearch(int researchTypeId, int goldCost, int lumberCost = 0)
     : base(researchTypeId, goldCost, lumberCost)
   {
   }

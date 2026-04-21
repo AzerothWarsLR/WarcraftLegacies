@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Factions.Warsong.Researches;
 public sealed class MoknathalWarrior : Research
 {
   /// <inheritdoc />
-  public MoknathalWarrior(int researchTypeId, int goldCost, int lumberCost =0) : base(researchTypeId, goldCost, lumberCost)
+  public MoknathalWarrior(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
   {
   }
 

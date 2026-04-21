@@ -25,6 +25,7 @@ public sealed class LongLivedDummyCaster
     newUnit.SetTimedLife(duration);
   }
 
+
   /// <summary>
   /// Causes the specified spell to be channeled at the caster's point.
   /// </summary>

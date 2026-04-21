@@ -76,13 +76,15 @@ public sealed class SpellOnAttackConeCast : UnitTrait, IAppliesEffectOnDamage
     var angle = MathEx.GetAngleBetweenPoints(caster.X, caster.Y, target.X, target.Y);
     var x = MathEx.GetPolarOffsetX(caster.X, CastDistance, angle);
     var y = MathEx.GetPolarOffsetY(caster.Y, CastDistance, angle);
-
-    DummyCasterManager.GetGlobalDummyCaster().CastPointFromCaster(
+    var dummy = DummyCasterManager.GetGlobalDummyCaster();
+    dummy.SetFacing(angle);
+    dummy.CastPointFromCaster(
       caster,
       DummyAbilityId,
       DummyOrderId,
       caster.GetAbilityLevel(_abilityTypeId),
       x,
-      y);
+      y
+    );
   }
 }
