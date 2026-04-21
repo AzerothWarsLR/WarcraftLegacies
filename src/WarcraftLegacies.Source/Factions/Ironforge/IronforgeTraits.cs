@@ -14,13 +14,13 @@ public static class IronforgeTraits
       ProcChance = 0.2f
     }, UNIT_H03Z_STORMRIDER_IRONFORGE);
 
-    UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
+    UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_STEAM_TANK)
     {
       DummyAbilityId = ABILITY_TP26_FLAMETHROWER_FLAME_TANK_DUMMY,
       DummyOrderId = ORDER_BREATH_OF_FIRE,
       ProcChance = 1.0f,
       Cooldown = 0,
-      CastDistance = 600
-    }, UNIT_H01P_STEAM_TANK_IRONFORGE);
+      CastDistance = 250
+    }, UNIT_TP01_FLAME_TANK_IRONFORGE);
   }
 }
