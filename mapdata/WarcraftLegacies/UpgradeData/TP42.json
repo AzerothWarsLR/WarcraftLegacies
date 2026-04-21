@@ -40,10 +40,6 @@
       "Value": 0
     },
     {
-      "Id": "gglm",
-      "Value": 25
-    },
-    {
       "Id": "gef4",
       "Type": 3,
       "Value": ""
@@ -62,6 +58,10 @@
       "Id": "gef3",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "gglm",
+      "Value": 25
     },
     {
       "Level": 1,
