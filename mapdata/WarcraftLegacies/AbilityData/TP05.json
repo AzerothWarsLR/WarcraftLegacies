@@ -114,7 +114,7 @@
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": "arhk",
@@ -161,6 +161,10 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "Drunken Haze"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
     }
   ]
 }
