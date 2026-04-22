@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Factions;
 using MacroTools.Researches;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Researches;
@@ -19,7 +18,7 @@ public sealed class Artillery : Research
   public override void OnResearch(player researchingPlayer)
   {
     var faction = researchingPlayer.GetPlayerData().Faction;
-    faction?.ModObjectLimit(UNIT_H01P_STEAM_TANK_IRONFORGE, -Faction.Unlimited);
-    faction?.ModObjectLimit(UNIT_TP02_ARTILLERY_TANK_IRONFORGE, Faction.Unlimited);
+    faction?.ModObjectLimit(UNIT_H01P_STEAM_TANK_IRONFORGE, -3);
+    faction?.ModObjectLimit(UNIT_TP02_ARTILLERY_TANK_IRONFORGE, 3);
   }
 }

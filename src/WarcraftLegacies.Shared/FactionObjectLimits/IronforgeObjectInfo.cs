@@ -37,7 +37,20 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H01L_THANE_IRONFORGE, 12, new List<UnitCategory> { Tank, Fighter });
     yield return new(UNIT_H037_ENGINEER_IRONFORGE_ELITE, 6, new List<UnitCategory> { Elite, Support, Summoner });
     yield return new(UNIT_N02D_WAR_GOLEM_IRONFORGE, Unlimited, new List<UnitCategory> { Tank, AntiMage });
-    yield return new(UNIT_H01P_STEAM_TANK_IRONFORGE, 3, new List<UnitCategory> { Siege, Destroyer, Support });
+    yield return new(UNIT_TP01_FLAME_TANK_IRONFORGE, 0, new List<UnitCategory> { Siege, Destroyer, Support })
+    {
+      LimitTooltipOverride = 3
+    };
+
+    yield return new(UNIT_TP02_ARTILLERY_TANK_IRONFORGE, 0, new List<UnitCategory> { Siege, Destroyer, AntiAir })
+    {
+      LimitTooltipOverride = 3
+    };
+
+    yield return new(UNIT_H01P_STEAM_TANK_IRONFORGE, 3, new List<UnitCategory> { Siege, Destroyer, Support })
+    {
+      LimitTooltipOverride = 3
+    };
     yield return new(UNIT_TP03_RUNE_SMITH_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3, new List<UnitCategory> { Flyer, Destroyer, Support });
