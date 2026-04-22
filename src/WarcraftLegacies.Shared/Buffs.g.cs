@@ -242,6 +242,7 @@ public static class Buffs
   public const int BUFF_MD18_WHITE_WOLF_S_FURY = 1296314680;
   public const int BUFF_S060_BURNING_ARROW = 1395668528;
   public const int BUFF_TP01_ENERGY_GRID = 1414541361;
+  public const int BUFF_TP06_BURNING = 1414541366;
   public const int BUFF_TP23_THORNED_VINES_SLOW_AURA = 1414541875;
   public const int BUFF_TP24_THORNED_VINES_REGEN_AURA = 1414541876;
   public const int BUFF_TP30_FRENZY = 1414542128;
