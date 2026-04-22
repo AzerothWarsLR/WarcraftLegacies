@@ -43,7 +43,7 @@ public static class IronforgeObjectInfo
 
     yield return new(UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE, 1, Support);
     yield return new(UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE, 1, new List<UnitCategory> { Fighter, Support });
-    yield return new(UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1, new List<UnitCategory> { Destroyer, Summoner, Support });
+    yield return new(UNIT_H03G_EMPEROR_OF_BLACKROCK_IRONFORGE, 1, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE, 1, new List<UnitCategory> { Tank, Support });
 
     yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);

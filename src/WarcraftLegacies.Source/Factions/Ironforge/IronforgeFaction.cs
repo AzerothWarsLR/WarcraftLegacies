@@ -112,8 +112,8 @@ public sealed class IronforgeFaction : Faction
 
     var questDarkIron = new QuestDarkIron(
       Regions.Shadowforge_City,
-      AllLegends.FelHorde.BlackTemple,
-      AllLegends.Ironforge.Magni);
+      Regions.Shadowforge_City_Base,
+      AllLegends.FelHorde.BlackrockSpire);
 
     questDarkIron.AddObjective(new ObjectiveQuestComplete(questDominion)
     {
