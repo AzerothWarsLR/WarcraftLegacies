@@ -255,7 +255,8 @@ public static class Regions
   public static Rectangle SentinelTowerAmbient { get; set; } = new Rectangle(5696f, -17664f, 8672f, -14304f);
   public static Rectangle ShadowfangAmbient { get; set; } = new Rectangle(4480f, 2784f, 8544f, 8320f);
   public static Rectangle ShadowfangUnlock { get; set; } = new Rectangle(4800f, 3040f, 7680f, 4736f);
-  public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11488f, -9728f, 13248f, -8320f);
+  public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11264f, -9632f, 12032f, -8832f);
+  public static Rectangle Shadowforge_City_Base { get; set; } = new Rectangle(11840f, -10112f, 13312f, -8320f);
   public static Rectangle ShadowmoonBaseUnlock { get; set; } = new Rectangle(1696f, -31776f, 3936f, -28896f);
   public static Rectangle ShadowvaultUnlock { get; set; } = new Rectangle(-4480f, 23424f, -3168f, 24224f);
   public static Rectangle Shattrah { get; set; } = new Rectangle(-2016f, -29440f, -768f, -28000f);
