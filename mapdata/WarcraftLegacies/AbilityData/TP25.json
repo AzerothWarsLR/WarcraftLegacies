@@ -1,6 +1,6 @@
 {
   "OldId": "ANcf",
-  "NewId": "TP26",
+  "NewId": "TP25",
   "Unk": [
     0
   ],
@@ -14,7 +14,7 @@
       "Pointer": 3,
       "Id": "Ucs3",
       "Type": 2,
-      "Value": 50
+      "Value": 230
     },
     {
       "Level": 2,
@@ -103,7 +103,7 @@
       "Level": 1,
       "Id": "atar",
       "Type": 3,
-      "Value": "ground,structure"
+      "Value": "air,ground,structure"
     },
     {
       "Level": 2,
@@ -120,13 +120,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 4,
-      "Id": "Ucs4",
-      "Type": 2,
-      "Value": 75
-    },
-    {
-      "Level": 1,
       "Pointer": 5,
       "Id": "Nbf5",
       "Type": 2,
@@ -139,10 +132,29 @@
       "Value": 12
     },
     {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 12
+    },
+    {
       "Level": 1,
       "Id": "adur",
       "Type": 2,
       "Value": 12
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 230
     },
     {
       "Level": 1,
@@ -153,17 +165,12 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Volatile Flask Dummy)"
+      "Value": "(Flame Tank Dummy)"
     },
     {
-      "Id": "amat",
+      "Id": "anam",
       "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aart",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNPotion4.blp"
+      "Value": "Flamethrower"
     }
   ]
 }
