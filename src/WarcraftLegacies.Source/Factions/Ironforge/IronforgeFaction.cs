@@ -153,11 +153,11 @@ public sealed class IronforgeFaction : Faction
 
   private static void RegisterResearches()
   {
-    ResearchManager.RegisterIncompatibleSet(
-      new BasicResearch(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, 0, 5),
-      new BasicResearch(UPGRADE_TP29_ARTILLERY_IRONFORGE, 0, 5)
-    );
+    var flamethrower = new Flamethrower(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, 0, 5);
+    var artillery = new Artillery(UPGRADE_TP29_ARTILLERY_IRONFORGE, 0, 5);
+
+    ResearchManager.RegisterIncompatibleSet(flamethrower, artillery);
   }
-
-
 }
+
+
