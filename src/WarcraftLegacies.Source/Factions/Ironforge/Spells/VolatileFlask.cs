@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.DummyCasters;
+﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Effects;
@@ -29,10 +28,14 @@ public sealed class VolatileFlask : Spell
     foreach (var u in GlobalGroup.EnumUnitsInRange(targetPoint, AoE))
     {
       if (!u.Alive)
+      {
         continue;
+      }
 
       if (totalDamage + Damage > MaxDamage)
+      {
         break;
+      }
 
       u.Damage(caster, Damage, attacktype.Magic);
       totalDamage += Damage;
@@ -46,7 +49,7 @@ public sealed class VolatileFlask : Spell
 
       dummy.CastPointFromCaster(
         caster,
-        ABILITY_TP26_FLAMETHROWER_FLAME_TANK_DUMMY,
+        ABILITY_TP26_BREATH_OF_FIRE_VOLATILE_FLASK_DUMMY,
         ORDER_BREATH_OF_FIRE,
         1,
         x,

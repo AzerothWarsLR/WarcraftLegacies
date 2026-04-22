@@ -16,7 +16,7 @@ public static class IronforgeTraits
 
     UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
     {
-      DummyAbilityId = ABILITY_TP26_FLAMETHROWER_FLAME_TANK_DUMMY,
+      DummyAbilityId = ABILITY_TP25_FLAMETHROWER_FLAME_TANK_DUMMY,
       DummyOrderId = ORDER_BREATH_OF_FIRE,
       ProcChance = 1.0f,
       Cooldown = 0,
