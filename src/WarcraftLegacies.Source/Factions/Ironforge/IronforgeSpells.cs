@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Factions.Ironforge;
 
 public static class IronforgeSpells
 {
-  /// <summary>
+  /// <summary>nostop
   /// Sets up <see cref="IronforgeSpells"/>.
   /// </summary>
   public static void Setup()
@@ -21,5 +21,15 @@ public static class IronforgeSpells
       },
       GoldCost = 25
     });
+    var volatileFlask = new VolatileFlask(ABILITY_TP11_VOLATILE_FLASK_IRONFORGE)
+    {
+      Damage = 25f,
+      AoE = 175f,
+      IgniteDuration = 12f,
+      IgniteTickInterval = 1f,
+      IgniteDamagePerTick = 10f,
+      MaxDamage = 300f
+    };
+    SpellRegistry.Register(volatileFlask);
   }
 }
