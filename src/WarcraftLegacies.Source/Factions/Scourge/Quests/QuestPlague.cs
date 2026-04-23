@@ -10,6 +10,7 @@ using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
+using WCSharp.Timers;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Quests;
 
@@ -186,12 +187,28 @@ public sealed class QuestPlague : QuestData
 
       foreach (var parameter in _plagueParameters.PlagueArmySummonParameters)
       {
-        foreach (var unit in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
+        foreach (var u in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!unit.IsUnitType(unittype.Peon))
+          if (parameter.SummonUnitTypeId == UNIT_UCRY_CRYPT_FIEND_SCOURGE)
           {
-            unit.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+            u.SafelyRemove();
+            var burrowed = unit.Create(primaryPlaguePlayer, UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE,
+              position.X, position.Y, 0);
+
+            var timer = new Timer(_ =>
+            {
+              burrowed.IssueOrder(ORDER_UNBURROW);
+              burrowed.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+            }, 0.15f);
+
+            TimerSystem.Add(timer);
+            continue;
+          }
+
+          if (!u.IsUnitType(unittype.Peon))
+          {
+            u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
           }
         }
       }
