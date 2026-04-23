@@ -25,9 +25,6 @@ public static class IronforgeSpells
     {
       Damage = 25f,
       AoE = 175f,
-      IgniteDuration = 12f,
-      IgniteTickInterval = 1f,
-      IgniteDamagePerTick = 10f,
       MaxDamage = 300f
     };
     SpellRegistry.Register(volatileFlask);

@@ -71,7 +71,7 @@
       "Pointer": 3,
       "Id": "Nsi3",
       "Type": 2,
-      "Value": 0.4
+      "Value": 0.2
     },
     {
       "Level": 2,
@@ -109,7 +109,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Ironforge)"
+      "Value": "Rune Priest)"
     },
     {
       "Id": "ahky",
@@ -136,7 +136,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CTP05,DataC1%\u003E, and have a \u003CTP05,DataB1%\u003E chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CTP05,Dur1\u003E seconds (\u003CTP05,HeroDur1\u003E for Heroes)."
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CTP05,DataC1,%\u003E, and have a \u003CTP05,DataB1,%\u003E chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CTP05,Dur1\u003E seconds (\u003CTP05,HeroDur1\u003E for Heroes).\r\n"
     },
     {
       "Level": 2,

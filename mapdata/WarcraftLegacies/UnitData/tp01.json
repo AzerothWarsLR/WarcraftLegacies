@@ -31,7 +31,7 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 3
+      "Value": 3.25
     },
     {
       "Id": "ua2c",
@@ -64,7 +64,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1500
+      "Value": 1200
     },
     {
       "Id": "ulum",
