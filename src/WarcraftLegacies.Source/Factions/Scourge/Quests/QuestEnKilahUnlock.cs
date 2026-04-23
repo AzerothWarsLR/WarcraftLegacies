@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.Extensions;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -42,7 +43,7 @@ public sealed class QuestEnKilahUnlock : QuestData
       ? player.NeutralAggressive
       : completingFaction.Player;
 
-    rescuer.RescueGroup(_rescueUnits);
+    rescuer.RescueGroupWithUnburrow(_rescueUnits);
   }
 
   /// <inheritdoc/>
@@ -50,7 +51,7 @@ public sealed class QuestEnKilahUnlock : QuestData
   {
     if (completingFaction.Player != null)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroupWithUnburrow(_rescueUnits);
     }
   }
 }

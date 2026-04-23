@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.Extensions;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -44,13 +45,13 @@ public sealed class QuestSpiderWar : QuestData
       ? player.NeutralAggressive
       : completingFaction.Player;
 
-    rescuer.RescueGroup(_rescueUnits);
+    rescuer.RescueGroupWithUnburrow(_rescueUnits);
   }
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    completingFaction.Player.RescueGroup(_rescueUnits);
+    completingFaction.Player.RescueGroupWithUnburrow(_rescueUnits);
     completingFaction.Player?.PlayMusicThematic("war3mapImported\\ScourgeTheme.mp3");
   }
 
