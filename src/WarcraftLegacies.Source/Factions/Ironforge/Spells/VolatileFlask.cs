@@ -6,6 +6,7 @@ using WCSharp.Missiles;
 using WCSharp.Shared.Data;
 using WCSharp.Shared.Extensions;
 
+namespace WarcraftLegacies.Source.Factions.Ironforge.Spells;
 public sealed class VolatileFlask : Spell
 {
   public float Damage { get; init; }
