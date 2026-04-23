@@ -7,6 +7,7 @@ using WCSharp.Shared.Data;
 using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Spells;
+
 public sealed class VolatileFlask : Spell
 {
   public float Damage { get; init; }
@@ -43,7 +44,7 @@ public sealed class VolatileFlaskProjectile : BasicMissile
   {
     Speed = 900;
     Arc = 0.15f;
-    EffectString = @"Abilities\\spells\\other\\acidbomb\\bottlemissile.mdx"";";
+    EffectString = @"Abilities\\spells\\other\\acidbomb\\bottlemissile.mdx";
     EffectScale = 1.0f;
     CollisionRadius = 0;
     CasterLaunchZ = 50;
