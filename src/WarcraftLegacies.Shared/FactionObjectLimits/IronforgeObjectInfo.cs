@@ -51,7 +51,7 @@ public static class IronforgeObjectInfo
     {
       LimitTooltipOverride = 3
     };
-    yield return new(UNIT_TP03_RUNE_SMITH_IRONFORGE, Unlimited, Support);
+    yield return new(UNIT_TP05_RUNE_SMITH_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3, new List<UnitCategory> { Flyer, Destroyer, Support });
 
