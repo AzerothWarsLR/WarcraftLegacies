@@ -78,7 +78,7 @@
     {
       "Id": "ua1g",
       "Type": 3,
-      "Value": "air,debris,ground,item,nonancient,structure,ward"
+      "Value": "debris,ground,item,nonancient,structure,ward"
     },
     {
       "Id": "ua1d",
@@ -110,6 +110,11 @@
       "Id": "ua1p",
       "Type": 3,
       "Value": "debris,ground,structure,tree,wall"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
     },
     {
       "Id": "uico",

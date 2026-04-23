@@ -14,7 +14,7 @@
       "Pointer": 3,
       "Id": "Ucs3",
       "Type": 2,
-      "Value": 230
+      "Value": 120
     },
     {
       "Level": 2,
@@ -103,7 +103,7 @@
       "Level": 1,
       "Id": "atar",
       "Type": 3,
-      "Value": "air,ground,structure"
+      "Value": "air,enemies,ground,structure"
     },
     {
       "Level": 2,
@@ -154,7 +154,7 @@
       "Pointer": 4,
       "Id": "Ucs4",
       "Type": 2,
-      "Value": 230
+      "Value": 200
     },
     {
       "Level": 1,

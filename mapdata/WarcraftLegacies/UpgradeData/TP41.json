@@ -73,6 +73,10 @@
     {
       "Id": "gbpx",
       "Value": 3
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }

@@ -44,7 +44,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 50
+      "Value": 27
     },
     {
       "Id": "ua2b",
@@ -118,7 +118,7 @@
     {
       "Id": "ua1g",
       "Type": 3,
-      "Value": "debris,ground,item,structure,ward"
+      "Value": "debris,enemies,ground,item,structure,ward"
     },
     {
       "Id": "upgr",
@@ -149,7 +149,7 @@
     },
     {
       "Id": "ua1f",
-      "Value": 230
+      "Value": 100
     },
     {
       "Id": "ua1t",
@@ -160,6 +160,14 @@
       "Id": "ua1w",
       "Type": 3,
       "Value": "aline"
+    },
+    {
+      "Id": "ua1h",
+      "Value": 150
+    },
+    {
+      "Id": "ua1q",
+      "Value": 200
     },
     {
       "Id": "uabs",
