@@ -136,7 +136,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CTP05,DataC1,%\u003E, and have a \u003CTP05,DataB1,%\u003E chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CTP05,Dur1\u003E seconds (\u003CTP05,HeroDur1\u003E for Heroes).\r\n"
+      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CTP05,DataC1,%\u003E and causing attacks to have a \u003CTP05,DataB1,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CTP05,Dur1\u003E seconds (\u003CTP05,HeroDur1\u003E for Heroes).\r\n"
     },
     {
       "Level": 2,

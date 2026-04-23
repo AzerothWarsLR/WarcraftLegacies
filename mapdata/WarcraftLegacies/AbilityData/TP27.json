@@ -46,7 +46,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "This unit\u2019s attack has been refitted with a shortrange flamethrower, releasing a cone of fire. Units affected by Drunken Haze will ignite and burn for \u003CTP26,DataE1\u003E damage per second over \u003CTP26,Dur1\u003E seconds."
+      "Value": "This unit\u2019s attack has been refitted with a short range flamethrower, releasing a cone of fire.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite, taking \u003CTP26,DataE1\u003E damage per second for \u003CTP26,Dur1\u003E seconds.\r\n"
     },
     {
       "Id": "anam",
