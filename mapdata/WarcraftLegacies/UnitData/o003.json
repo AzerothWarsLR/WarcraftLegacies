@@ -30,7 +30,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 200
+      "Value": 750
     },
     {
       "Id": "ubdg",
@@ -115,6 +115,11 @@
       "Id": "ua1t",
       "Type": 3,
       "Value": "siege"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
     },
     {
       "Id": "uico",

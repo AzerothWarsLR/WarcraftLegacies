@@ -71,7 +71,7 @@
     },
     {
       "Id": "ua1z",
-      "Value": 500
+      "Value": 900
     },
     {
       "Id": "ua2z",
@@ -184,6 +184,16 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Extremely heavily armored vehicle."
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     }
   ]
 }

@@ -217,6 +217,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Extremely heavily armored vehicle."
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     }
   ]
 }

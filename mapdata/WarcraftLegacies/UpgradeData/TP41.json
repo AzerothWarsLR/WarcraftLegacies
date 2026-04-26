@@ -35,6 +35,11 @@
       "Value": "A0H1"
     },
     {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
