@@ -8,21 +8,16 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "VP20,ACrk,A0H1,A064,A0HI,A06I,Aihn"
-    },
-    {
-      "Id": "ua1t",
-      "Type": 3,
-      "Value": "hero"
+      "Value": "VP20,A0H1,A064,A0HI,Aihn"
     },
     {
       "Id": "ubld",
-      "Value": 30
+      "Value": 3
     },
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 16
+      "Value": 8
     },
     {
       "Id": "ua1c",
@@ -30,17 +25,8 @@
       "Value": 1.7
     },
     {
-      "Id": "udea",
-      "Value": 2
-    },
-    {
       "Id": "udef",
       "Value": 4
-    },
-    {
-      "Id": "udty",
-      "Type": 3,
-      "Value": "hero"
     },
     {
       "Id": "ua1d",
@@ -56,7 +42,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 75
+      "Value": 27
     },
     {
       "Id": "ugor",
@@ -64,7 +50,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1350
+      "Value": 1125
     },
     {
       "Id": "umpi",
@@ -98,7 +84,7 @@
     },
     {
       "Id": "umvs",
-      "Value": 240
+      "Value": 220
     },
     {
       "Id": "uspe",
@@ -107,7 +93,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhar,Rguv,Rhme,R00F"
+      "Value": "TP41,Rhar,Rguv,Rhme,R00F"
     },
     {
       "Id": "ucs1",
@@ -130,12 +116,12 @@
     },
     {
       "Id": "ubpx",
-      "Value": 1
+      "Value": 3
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Ironforge Elite)"
+      "Value": "(Ironforge)"
     },
     {
       "Id": "umdl",
@@ -149,12 +135,12 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "W"
+      "Value": "R"
     },
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.75
+      "Value": 0.65
     },
     {
       "Id": "unam",
@@ -173,7 +159,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Elite Melee unit and head of a Dwarven clan."
+      "Value": "Melee unit and head of a Dwarven clan."
     },
     {
       "Id": "usnd",

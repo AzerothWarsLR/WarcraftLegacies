@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0J8,A0IL,A0CV,A0JD,Aihn"
+      "Value": "ACrk,TP40,A0IL,A0CV,Aihn,A0GK,A07C"
     },
     {
       "Id": "uacq",
@@ -22,7 +22,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 3
+      "Value": 30
     },
     {
       "Id": "ucol",
@@ -32,16 +32,11 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2.5
-    },
-    {
-      "Id": "udty",
-      "Type": 3,
-      "Value": "none"
+      "Value": 1.5
     },
     {
       "Id": "ua1b",
-      "Value": 18
+      "Value": 37
     },
     {
       "Id": "ufoo",
@@ -49,7 +44,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 21
+      "Value": 75
     },
     {
       "Id": "ugor",
@@ -57,7 +52,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 800
+      "Value": 850
     },
     {
       "Id": "ulum",
@@ -69,11 +64,11 @@
     },
     {
       "Id": "umpi",
-      "Value": 200
+      "Value": 400
     },
     {
       "Id": "umpm",
-      "Value": 200
+      "Value": 400
     },
     {
       "Id": "ua1z",
@@ -103,7 +98,7 @@
     },
     {
       "Id": "ua1s",
-      "Value": 3
+      "Value": 6
     },
     {
       "Id": "umvs",
@@ -116,12 +111,16 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhri,R03H,Rhme,Rhar,Rguv"
+      "Value": "Rhri,Rhme,Rhar,Rguv"
     },
     {
       "Id": "ua1w",
       "Type": 3,
       "Value": "missile"
+    },
+    {
+      "Id": "udef",
+      "Value": 8
     },
     {
       "Id": "uico",
@@ -138,19 +137,9 @@
       "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGMechanism.blp"
     },
     {
-      "Id": "ucun",
-      "Type": 3,
-      "Value": "Initiate, Adept, Master, Guildmaster"
-    },
-    {
-      "Id": "ucut",
-      "Type": 3,
-      "Value": "- Mech Kit,- Mech Kit|n- EMP,- Mech Kit|n- EMP|n- Portable Turret,- Mech Kit|n- EMP|n- Portable Turret|n- Stun Mine"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Ironforge)"
+      "Value": "(Ironforge Elite)"
     },
     {
       "Id": "umdl",
@@ -160,7 +149,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Id": "ulpx",
@@ -201,6 +190,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Master of technomechanical tools."
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
     }
   ]
 }

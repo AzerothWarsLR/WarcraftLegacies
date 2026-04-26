@@ -1,0 +1,97 @@
+{
+  "OldId": "Rhse",
+  "NewId": "TP38",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h07G"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRepair2.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Improved Chassis"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Improved Chassis"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Dreadnaughts, increasing their hit points by 350 and movement speed by 50."
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ]
+}

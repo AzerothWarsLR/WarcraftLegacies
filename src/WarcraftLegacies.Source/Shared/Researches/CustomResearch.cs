@@ -14,7 +14,7 @@ public sealed class CustomResearch : Research
   public required Action<player> ResearchFunc { get; init; }
 
   /// <inheritdoc />
-  public CustomResearch(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
+  public CustomResearch(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
   {
   }
 

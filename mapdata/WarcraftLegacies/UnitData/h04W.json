@@ -13,7 +13,7 @@
     {
       "Id": "uacq",
       "Type": 2,
-      "Value": 1000
+      "Value": 1100
     },
     {
       "Id": "ubld",
@@ -76,7 +76,7 @@
     },
     {
       "Id": "ua1z",
-      "Value": 2600
+      "Value": 900
     },
     {
       "Id": "ua2z",
@@ -88,7 +88,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 950
+      "Value": 1100
     },
     {
       "Id": "ua2r",
@@ -196,6 +196,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Heavily armored vehicle, adept at shooting down air units."
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     }
   ]
 }

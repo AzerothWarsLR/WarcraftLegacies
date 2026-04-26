@@ -342,7 +342,7 @@ public static class UniqueEliteNames
           "Pharax the Lurker",
           "Sythrak the Poisoned"
         },
-      [UNIT_H01L_THANE_IRONFORGE_ELITE] =
+      [UNIT_H037_ENGINEER_IRONFORGE_ELITE] =
         new()
         {
           "Aggronor the Mighty",

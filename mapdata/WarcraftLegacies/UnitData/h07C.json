@@ -48,12 +48,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00Z,Rhfl,Rhfs,Rhri,R00F"
+      "Value": "TP41,R00Z,Rhfl,Rhfs,Rhri,R00F"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "hmtm,hrif,h018"
+      "Value": "h018,hrif,h01L,hmtm"
     },
     {
       "Id": "ulum",

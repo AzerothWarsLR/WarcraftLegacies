@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A006,A05R,A009,Aihn"
+      "Value": "TP05,A05R,A009,Aihn"
     },
     {
       "Id": "udaa",
@@ -39,7 +39,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 19
+      "Value": 12
     },
     {
       "Id": "ufoo",
@@ -89,7 +89,7 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMonk.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBronzebeardPriest.blp"
     },
     {
       "Id": "ubpx",
@@ -98,7 +98,7 @@
     {
       "Id": "ucua",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGheavenlydemolisher.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGRuneOfLife.blp"
     },
     {
       "Id": "ucun",
@@ -108,7 +108,7 @@
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "- Rune of Wrath,- Rune of Wrath|n- Healing Shield,- Rune of Wrath|n- Healing Shield|n- Rune of Shielding"
+      "Value": "- Drunken Haze,- Drunken Haze|n- Healing Shield,- Drunken Haze|n- Healing Shield|n- Rune of Shielding"
     },
     {
       "Id": "unsf",
@@ -118,7 +118,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\Battle Priest .mdl"
+      "Value": "war3mapImported\\BronzebeardPriest_bakr.mdl"
     },
     {
       "Id": "uhot",
@@ -133,7 +133,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.95
     },
     {
       "Id": "unam",

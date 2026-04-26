@@ -47,6 +47,15 @@ public sealed class GlobalDummyCaster
   }
 
   /// <summary>
+  /// Sets the facing angle of the internal dummy unit before casting a spell.
+  /// Useful for directional abilities such as cone attacks, where the dummy's
+  /// facing determines the direction of the effect.
+  /// </summary>
+  public void SetFacing(float angle)
+  {
+    _unit.SetFacing(angle);
+  }
+  /// <summary>
   /// Casts the specified spell from the specified point.
   /// </summary>
   public void CastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
@@ -58,4 +67,19 @@ public sealed class GlobalDummyCaster
     _unit.IssueOrder(orderId, target.X, target.Y);
     _unit.RemoveAbility(abilId);
   }
+  public void CastPointFromCaster(unit caster, int abilId, int orderId, int level, float x, float y)
+  {
+    var whichPlayer = caster.Owner;
+
+    _unit.SetOwner(whichPlayer);
+    _unit.SetPosition(caster.X, caster.Y);
+    _unit.AddAbility(abilId);
+    _unit.SetAbilityLevel(abilId, level);
+
+    _unit.FacePosition(new Point(x, y));
+    _unit.IssueOrder(orderId, x, y);
+
+    _unit.RemoveAbility(abilId);
+  }
+
 }

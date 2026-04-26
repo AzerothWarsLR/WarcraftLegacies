@@ -34,10 +34,24 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_N0CZ_DREADNAUGHT_IRONFORGE, 4, Tank);
     yield return new(UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, 6, new List<UnitCategory> { Flyer, Destroyer });
     yield return new(UNIT_H018_WARRIOR_IRONFORGE, Unlimited, Tank);
-    yield return new(UNIT_H01L_THANE_IRONFORGE_ELITE, 6, new List<UnitCategory> { Elite, Tank, Support });
-    yield return new(UNIT_H037_ENGINEER_IRONFORGE, Unlimited, new List<UnitCategory> { Support, Summoner });
+    yield return new(UNIT_H01L_THANE_IRONFORGE, 12, new List<UnitCategory> { Tank, Fighter });
+    yield return new(UNIT_H037_ENGINEER_IRONFORGE_ELITE, 6, new List<UnitCategory> { Elite, Support, Summoner });
     yield return new(UNIT_N02D_WAR_GOLEM_IRONFORGE, Unlimited, new List<UnitCategory> { Tank, AntiMage });
-    yield return new(UNIT_H01P_STEAM_TANK_IRONFORGE, 3, new List<UnitCategory> { Siege, Destroyer, Support });
+    yield return new(UNIT_TP01_FLAME_TANK_IRONFORGE, 0, new List<UnitCategory> { Siege, Destroyer, Support })
+    {
+      LimitTooltipOverride = 3
+    };
+
+    yield return new(UNIT_TP02_ARTILLERY_TANK_IRONFORGE, 0, new List<UnitCategory> { Siege, Destroyer, AntiAir })
+    {
+      LimitTooltipOverride = 3
+    };
+
+    yield return new(UNIT_H01P_STEAM_TANK_IRONFORGE, 3, new List<UnitCategory> { Siege, Destroyer, Support })
+    {
+      LimitTooltipOverride = 3
+    };
+    yield return new(UNIT_TP05_RUNE_SMITH_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3, new List<UnitCategory> { Flyer, Destroyer, Support });
 
@@ -55,7 +69,7 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
 
-    yield return new(UPGRADE_R03H_ENGINEERING_ADEPT_TRAINING_KHAZ_MODAN, Unlimited);
+    yield return new(UPGRADE_TP42_RUNE_SMITH_ADEPT_TRAINING_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R00F_MITHRIL_PLATED_ARMOR_IRONFORGE, Unlimited);
     yield return new(UPGRADE_RHFL_FLARE_IRONFORGE, Unlimited);
     yield return new(UPGRADE_RHFS_FRAGMENTATION_SHARDS_YELLOW_RESEARCH, Unlimited);
@@ -71,6 +85,10 @@ public static class IronforgeObjectInfo
     yield return new(UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, Unlimited);
     yield return new(UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, Unlimited);
+    yield return new(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_TP29_ARTILLERY_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_TP38_IMPROVED_CHASSIS_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_TP41_POTENT_STORMBREW_IRONFORGE, Unlimited);
     yield return new(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
   }
 }
