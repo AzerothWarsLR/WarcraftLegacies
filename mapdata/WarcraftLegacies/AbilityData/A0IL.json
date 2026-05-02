@@ -20,7 +20,7 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 110
+      "Value": 100
     },
     {
       "Level": 1,
@@ -38,12 +38,6 @@
       "Id": "areq",
       "Type": 3,
       "Value": ""
-    },
-    {
-      "Level": 1,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 350
     },
     {
       "Level": 1,
@@ -75,7 +69,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Khaz Modan-Engineer"
+      "Value": "(Engineer)"
     },
     {
       "Id": "ahky",

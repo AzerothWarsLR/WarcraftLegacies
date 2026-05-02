@@ -1,0 +1,148 @@
+{
+  "OldId": "Asta",
+  "NewId": "TP40",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bstt"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Sta1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Sta2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Sta3",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Sta4",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "Stau",
+      "Type": 3,
+      "Value": "otot"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Sta1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sta2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Sta5",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Sta4",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Engineer)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons an invisible, immovable ward that stuns nearby enemy ground units when they approach. Activating the trap destroys all other Stasis Wards in its area.\r\nLasts 60 seconds. Stun lasts 3 seconds. 8 second activation delay."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts 200 seconds. |nThe stun lasts 8 seconds. |n 8 second activation delay."
+    }
+  ]
+}

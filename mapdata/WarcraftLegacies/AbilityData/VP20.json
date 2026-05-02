@@ -35,10 +35,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\PASLancelot_Plate.blp"
     },
     {
-      "Id": "abpy",
-      "Value": 1
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Dwarven Thane)"
@@ -59,6 +55,14 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "This unit reduces incoming damage by \u003CVP20,DataC1\u003E."
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
     }
   ]
 }

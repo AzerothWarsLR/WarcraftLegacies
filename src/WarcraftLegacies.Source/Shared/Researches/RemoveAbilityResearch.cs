@@ -14,7 +14,7 @@ public sealed class RemoveAbilityResearch : Research
   public required int RemovedAbility { get; init; }
 
   /// <inheritdoc />
-  public RemoveAbilityResearch(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
+  public RemoveAbilityResearch(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
   {
   }
 

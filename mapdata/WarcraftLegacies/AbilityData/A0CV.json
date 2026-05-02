@@ -32,16 +32,6 @@
       "Value": "human"
     },
     {
-      "Id": "areq",
-      "Type": 3,
-      "Value": "R03H"
-    },
-    {
-      "Id": "arqa",
-      "Type": 3,
-      "Value": "2"
-    },
-    {
       "Level": 1,
       "Id": "Nsyu",
       "Type": 3,
@@ -54,22 +44,22 @@
     },
     {
       "Id": "abpx",
-      "Value": 3
+      "Value": 1
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(engineers)"
+      "Value": "(Engineer)"
     },
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Portable Turret"
+      "Value": "Portable Cannon"
     },
     {
       "Id": "arhk",
@@ -80,13 +70,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Portable Turret"
+      "Value": "Portable Cannon"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Creates a turret which automatically attack your enemies.|n|nTurrets have 300 hit points and deals piercing damage every 0.2 seconds. |nTurret lasts 40 seconds. |n|n|cffffcc00Turrets attack land and air units.|r"
+      "Value": "Creates a turret which automatically attack your enemies.|n|nTurrets have 750 hit points and deal siege damage every 0.2 seconds. |nTurret lasts 40 seconds. |n|n|cffffcc00Turrets attack land and air units.|r"
     }
   ]
 }
