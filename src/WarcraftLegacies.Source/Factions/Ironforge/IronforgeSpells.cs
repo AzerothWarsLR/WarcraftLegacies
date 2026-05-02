@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells;
+using WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 
@@ -20,6 +22,28 @@ public static class IronforgeSpells
         { ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE, ABILITY_A0VM_TITANFORGED_9_STRENGTH }
       },
       GoldCost = 25
+    });
+
+    SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_MAGNI_BRONZEBEARD)
+    {
+      GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
+
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 35,
+        PerLevel = 20
+      },
+
+      Duration = new LeveledAbilityField<float>
+      {
+        Base = 25,
+        PerLevel = 5
+      },
+
+      CollisionRadius = 100,
+      OrbitRadius = 300,
+      OrbitalPeriod = 4,
+      BaseProjectileCount = 3
     });
   }
 }
