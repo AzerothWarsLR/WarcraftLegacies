@@ -27,23 +27,17 @@ public static class IronforgeSpells
     SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_MAGNI_BRONZEBEARD)
     {
       GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
-
-      Damage = new LeveledAbilityField<float>
-      {
-        Base = 30,
-        PerLevel = 20
-      },
-
-      Duration = new LeveledAbilityField<float>
-      {
-        Base = 25,
-        PerLevel = 5
-      },
-
+      Damage = new LeveledAbilityField<float> { Base = 30, PerLevel = 20 },
+      Duration = new LeveledAbilityField<float> { Base = 25, PerLevel = 5 },
       CollisionRadius = 100,
       OrbitRadius = 300,
       OrbitalPeriod = 4,
       BaseProjectileCount = 3
     });
+    var volatileFlask = new VolatileFlask(ABILITY_TP11_VOLATILE_FLASK_IRONFORGE)
+    {
+      Damage = 25f, AoE = 175f, MaxDamage = 300f
+    };
+    SpellRegistry.Register(volatileFlask);
   }
 }
