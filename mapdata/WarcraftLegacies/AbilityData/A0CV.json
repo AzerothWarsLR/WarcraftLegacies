@@ -76,7 +76,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Creates a turret which automatically attack your enemies.|n|nTurrets have 750 hit points and deal siege damage every 0.2 seconds. |nTurret lasts 40 seconds. |n|n|cffffcc00Turrets attack land and air units.|r"
+      "Value": "Creates a turret which automatically attack your enemies.|n|nTurrets have 900 hit points and deal siege damage . |nTurret lasts 40 seconds. |n|n|cffffcc00Turrets attack land and air units.|r"
     }
   ]
 }

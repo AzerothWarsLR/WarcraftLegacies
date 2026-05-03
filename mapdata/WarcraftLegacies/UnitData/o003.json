@@ -26,11 +26,11 @@
     },
     {
       "Id": "ua1b",
-      "Value": 37
+      "Value": 57
     },
     {
       "Id": "uhpm",
-      "Value": 750
+      "Value": 900
     },
     {
       "Id": "ubdg",
@@ -120,6 +120,11 @@
       "Id": "ua1w",
       "Type": 3,
       "Value": "msplash"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,ward"
     },
     {
       "Id": "uico",

@@ -43,7 +43,7 @@
       "Level": 1,
       "Id": "atar",
       "Type": 3,
-      "Value": "air,friend,ground,mechanical,neutral,structure"
+      "Value": "air,friend,ground,mechanical,neutral,structure,ward"
     },
     {
       "Level": 1,
