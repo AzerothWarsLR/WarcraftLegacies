@@ -42,34 +42,34 @@ public sealed class GryphonOrbitSpell : Spell
       MissileSystem.Add(m);
     }
 
-    var group = Common.CreateGroup();
-    Common.GroupEnumUnitsInRange(group, caster.X, caster.Y, 600, null);
+    var group = CreateGroup();
+    GroupEnumUnitsInRange(group, caster.X, caster.Y, 600, null);
 
-    var u = Common.FirstOfGroup(group);
+    var u = FirstOfGroup(group);
     while (u != null)
     {
       if (u.UnitType == GryphonTypeId && u.Owner == caster.Owner && u.Alive)
       {
         borrowed.Add(new BorrowedGryphon(u));
 
-        Common.ShowUnit(u, false);
+        ShowUnit(u, false);
         u.SetPausedEx(true);
         u.IsInvulnerable = true;
-        Common.SetUnitPathing(u, false);
-        Common.SetUnitVertexColor(u, 255, 255, 255, 0);
-        Common.SetUnitScale(u, 0.01f, 0.01f, 0.01f);
+        SetUnitPathing(u, false);
+        SetUnitVertexColor(u, 255, 255, 255, 0);
+        SetUnitScale(u, 0.01f, 0.01f, 0.01f);
 
         var m = CreateMissile(caster, damage, duration);
-        m.OrbitalAngle = Common.GetRandomReal(0, 360);
+        m.OrbitalAngle = GetRandomReal(0, 360);
         missiles.Add(m);
         MissileSystem.Add(m);
       }
 
-      Common.GroupRemoveUnit(group, u);
-      u = Common.FirstOfGroup(group);
+      GroupRemoveUnit(group, u);
+      u = FirstOfGroup(group);
     }
 
-    Common.DestroyGroup(group);
+    DestroyGroup(group);
 
     _activeMissiles[caster] = missiles;
     _borrowed[caster] = borrowed;
@@ -137,20 +137,20 @@ public sealed class GryphonOrbitSpell : Spell
 
         foreach (var b in borrowed)
         {
-          var x = caster.X + Common.Cos(angle * 0.0174533f) * 150f;
-          var y = caster.Y + Common.Sin(angle * 0.0174533f) * 150f;
+          var x = caster.X + Cos(angle * 0.0174533f) * 150f;
+          var y = caster.Y + Sin(angle * 0.0174533f) * 150f;
 
           b.Unit.X = x;
           b.Unit.Y = y;
           b.Unit.Facing = angle;
 
-          Common.ShowUnit(b.Unit, true);
+          ShowUnit(b.Unit, true);
           b.Unit.SetPausedEx(false);
           b.Unit.IsInvulnerable = false;
-          Common.SetUnitPathing(b.Unit, true);
-          Common.SetUnitVertexColor(b.Unit, 255, 255, 255, 255);
-          Common.SetUnitScale(b.Unit, 1f, 1f, 1f);
-          Common.IssueImmediateOrder(b.Unit, "stop");
+          SetUnitPathing(b.Unit, true);
+          SetUnitVertexColor(b.Unit, 255, 255, 255, 255);
+          SetUnitScale(b.Unit, 1f, 1f, 1f);
+          IssueImmediateOrder(b.Unit, "stop");
 
           angle += angleStep;
         }
