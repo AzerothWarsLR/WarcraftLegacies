@@ -36,7 +36,9 @@ public static class IronforgeSpells
     });
     var volatileFlask = new VolatileFlask(ABILITY_TP11_VOLATILE_FLASK_IRONFORGE)
     {
-      Damage = 25f, AoE = 175f, MaxDamage = 300f
+      Damage = 25f,
+      AoE = 175f,
+      MaxDamage = 300f
     };
     SpellRegistry.Register(volatileFlask);
   }

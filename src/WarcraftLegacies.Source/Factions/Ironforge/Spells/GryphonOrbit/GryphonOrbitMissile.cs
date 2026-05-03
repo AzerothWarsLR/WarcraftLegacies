@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Missiles;
 
@@ -19,10 +20,16 @@ public sealed class GryphonOrbitMissile : OrbitalMissile
 
   public override void OnCollision(unit unit)
   {
-    if (!unit.IsAllyTo(Caster.Owner) && unit.Alive && !unit.IsInvulnerable)
+    if (unit.IsAllyTo(Caster.Owner) || !unit.Alive || unit.IsInvulnerable)
     {
-      unit.TakeDamage(Caster, Damage);
+      return;
     }
+
+    unit.TakeDamage(Caster, Damage, false, false, damageType: damagetype.Normal);
+
+    var fx = effect.Create("Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl", unit, "origin");
+    fx.Scale = 0.8f;
+    EffectSystem.Add(fx);
   }
 
   public override void OnPeriodic()
