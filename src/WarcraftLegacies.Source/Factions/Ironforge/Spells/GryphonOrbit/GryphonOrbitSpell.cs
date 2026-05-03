@@ -101,6 +101,12 @@ public sealed class GryphonOrbitSpell : Spell
     {
       _durationRemaining[caster] -= PeriodicEvents.SYSTEM_INTERVAL;
 
+      if (!caster.Alive)
+      {
+        toEnd.Add(caster);
+        continue;
+      }
+
       if (_durationRemaining[caster] <= 0)
       {
         toEnd.Add(caster);
