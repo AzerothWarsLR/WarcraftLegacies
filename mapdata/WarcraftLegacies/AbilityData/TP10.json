@@ -8,35 +8,35 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 125
+      "Value": 150
     },
     {
       "Level": 2,
       "Id": "amcs",
-      "Value": 125
+      "Value": 150
     },
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 125
+      "Value": 150
     },
     {
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 60
+      "Value": 90
     },
     {
       "Level": 2,
       "Id": "acdn",
       "Type": 2,
-      "Value": 60
+      "Value": 90
     },
     {
       "Level": 3,
       "Id": "acdn",
       "Type": 2,
-      "Value": 60
+      "Value": 90
     },
     {
       "Id": "arlv",
@@ -105,6 +105,20 @@
       "Value": 0
     },
     {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "channel"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "channel"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "Stormguard"
@@ -117,43 +131,43 @@
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends."
+      "Value": "Learn Stormgaurd - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.|n|n|cffffcc00Level 1|r \u2013 35 damage, 25 second duration"
+      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.|n|n|cffffcc00Level 1|r \u2013 50 damage, 30 second duration"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.|n|n|cffffcc00Level 2|r \u2013 55 damage, 30 second duration"
+      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.|n|n|cffffcc00Level 2|r \u2013 70 damage, 35 second duration"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.|n|n|cffffcc00Level 3|r \u2013 70 damage, 40 second duration"
+      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.|n|n|cffffcc00Level 3|r \u2013 90 damage, 40 second duration"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends."
+      "Value": "Stormgaurd - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends."
+      "Value": "Stormgaurd - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon Riders near the caster are swept into the storm, orbiting alongside them and returning when the effect ends."
+      "Value": "Stormgaurd - [|cffffcc00Level 3|r]"
     },
     {
       "Id": "ansf",
@@ -189,6 +203,37 @@
       "Id": "ata0",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpy",
+      "Value": 2
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormguard.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormguard.blp"
     }
   ]
 }

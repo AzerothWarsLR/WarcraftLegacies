@@ -30,7 +30,7 @@ public static class IronforgeSpells
 
       Damage = new LeveledAbilityField<float>
       {
-        Base = 35,
+        Base = 30,
         PerLevel = 20
       },
 
