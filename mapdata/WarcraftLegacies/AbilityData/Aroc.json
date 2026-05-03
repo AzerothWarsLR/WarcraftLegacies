@@ -17,8 +17,14 @@
       "Value": ""
     },
     {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 6
+    },
+    {
       "Id": "abpx",
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": "abpy",
@@ -27,13 +33,13 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Steam Tank)"
+      "Value": "(Artillery Tank)"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes this unit\u0027s attacks to fire additional projectiles at up to 10 nearby enemy air units."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 6  nearby enemy air units."
     }
   ]
 }

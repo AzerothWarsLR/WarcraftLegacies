@@ -5,30 +5,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
-      "Level": 2,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
-      "Level": 3,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
-      "Level": 4,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B03I"
-    },
-    {
       "Level": 2,
       "Id": "amcs",
       "Value": 75
@@ -36,12 +12,12 @@
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 80
+      "Value": 75
     },
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 85
+      "Value": 75
     },
     {
       "Level": 1,
@@ -102,9 +78,38 @@
       "Value": "human"
     },
     {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Khaz Modan-Muradin)"
+      "Value": "(Muradin)"
     },
     {
       "Id": "ahky",
@@ -119,7 +124,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(5 for Heros) seconds. |n|n|cffffcc00Level 1|r - 40% movement speed reduction, 30% miss chance. |n|cffffcc00Level 2|r - 45% movement speed reduction, 40% miss chance. |n|cffffcc00Level 3|r - 50% movement speed reduction, 50% miss chance. |n|cffffcc00Level 4|r - 55% movement speed reduction, 60% miss chance."
+      "Value": "Drenches enemy units in alcohol, reducing movement speed and causing attacks to have a chance to miss.\r\n|n|cffffcc00Lasts \u003CANdh,Dur1\u003E seconds (5 for Heroes).|r\r\n\r\n|cffffcc00Level 1|r \u2013 \u003CANdh,DataC1,%\u003E movement speed reduction, \u003CANdh,DataB1,%\u003E miss chance.\r\n|n|cffffcc00Level 2|r \u2013 \u003CANdh,DataC2,%\u003E movement speed reduction, \u003CANdh,DataB2,%\u003E miss chance.\r\n|n|cffffcc00Level 3|r \u2013 \u003CANdh,DataC3,%\u003E movement speed reduction, \u003CANdh,DataB3,%\u003E miss chance.\r\n|n|cffffcc00Level 4|r \u2013 \u003CANdh,DataC4,%\u003E movement speed reduction, \u003CANdh,DataB4,%\u003E miss chance."
     },
     {
       "Level": 4,
@@ -131,25 +136,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 40%, and have a 30% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(5 for Heros) seconds."
+      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC1,%\u003E and causing attacks to have a \u003CANdh,DataB1,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur1\u003E seconds (5 for Heroes).\r\n"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 45%, and have a 40% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur2\u003E(5 for Heros) seconds."
+      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC2,%\u003E and causing attacks to have a \u003CANdh,DataB2,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur2\u003E seconds (5 for Heroes).\r\n"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 50%, and have a 50% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur3\u003E(5 for Heros) seconds."
+      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC3,%\u003E and causing attacks to have a \u003CANdh,DataB3,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur3\u003E seconds (5 for Heroes).\r\n"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 55%, and have a 60% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur4\u003E(5 for Heros) seconds."
+      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC4,%\u003E and causing attacks to have a \u003CANdh,DataB4,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur4\u003E seconds (5 for Heroes).\r\n"
     }
   ]
 }
