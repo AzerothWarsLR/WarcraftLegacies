@@ -74,6 +74,12 @@ public sealed class GryphonOrbitSpell : Spell
     _activeMissiles[caster] = missiles;
     _borrowed[caster] = borrowed;
     _durationRemaining[caster] = duration;
+
+    var total = missiles.Count;
+    for (var i = 0; i < total; i++)
+    {
+      missiles[i].OrbitalAngle = (360f / total) * i;
+    }
   }
 
   public override void OnStop(unit caster)
