@@ -1,0 +1,44 @@
+{
+  "OldId": "Basl",
+  "NewId": "TP43",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00Stormguard|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has increased Armor"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Stormguard"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNStormguard.blp"
+    }
+  ]
+}
