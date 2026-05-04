@@ -10,9 +10,9 @@ public sealed class GryphonOrbitMissile : OrbitalMissile
   public float Damage { get; init; }
   public float Duration { get; set; }
 
-  public GryphonOrbitMissile(unit caster, unit target) : base(caster, target)
+  public GryphonOrbitMissile(unit caster, unit target, string model) : base(caster, target)
   {
-    EffectString = "war3mapImported\\WarGryphon_Yellow.mdl";
+    EffectString = model;
     EffectScale = 0.85f;
     Interval = PeriodicEvents.SYSTEM_INTERVAL;
     TargetImpactZ = 50;
@@ -34,6 +34,8 @@ public sealed class GryphonOrbitMissile : OrbitalMissile
 
   public override void OnPeriodic()
   {
+    MissileX += 0.001f;
+
     Duration -= PeriodicEvents.SYSTEM_INTERVAL;
     if (Duration <= 0)
     {

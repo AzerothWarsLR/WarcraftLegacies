@@ -1,20 +1,23 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
+using WCSharp.Buffs;
 using WCSharp.Events;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
-
 namespace WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
 
 public sealed class GryphonOrbitSpell : Spell
 {
   public int GryphonTypeId { get; init; }
+  public int StormRiderTypeId { get; init; }
   public LeveledAbilityField<float> Damage { get; init; } = new();
   public LeveledAbilityField<float> Duration { get; init; } = new();
   public float CollisionRadius { get; init; }
   public float OrbitRadius { get; init; }
   public float OrbitalPeriod { get; init; }
   public int BaseProjectileCount { get; init; }
+  public int ArmorBonus { get; init; }
+  public string ArmorBuffEffect { get; init; } = "";
 
   private readonly Dictionary<unit, List<GryphonOrbitMissile>> _activeMissiles = new();
   private readonly Dictionary<unit, List<BorrowedGryphon>> _borrowed = new();
@@ -36,11 +39,19 @@ public sealed class GryphonOrbitSpell : Spell
 
     for (var i = 0; i < BaseProjectileCount; i++)
     {
-      var m = CreateMissile(caster, damage, duration);
+      var m = CreateMissile(caster, damage, duration, "war3mapImported\\WarGryphon_Yellow.mdl");
       m.OrbitalAngle = (360f / BaseProjectileCount) * i;
       missiles.Add(m);
       MissileSystem.Add(m);
     }
+
+    BuffSystem.Add(new GryphonOrbitArmorBuff(caster, ArmorBuffEffect)
+    {
+      Active = true,
+      Duration = duration,
+      IsBeneficial = true,
+      ArmorBonus = ArmorBonus
+    });
 
     var group = CreateGroup();
     GroupEnumUnitsInRange(group, caster.X, caster.Y, 600, null);
@@ -48,7 +59,21 @@ public sealed class GryphonOrbitSpell : Spell
     var u = FirstOfGroup(group);
     while (u != null)
     {
-      if (u.UnitType == GryphonTypeId && u.Owner == caster.Owner && u.Alive)
+      string model = null;
+
+      if (u.Owner == caster.Owner && u.Alive)
+      {
+        if (u.UnitType == GryphonTypeId)
+        {
+          model = "war3mapImported\\GryphonRider_Yellow.mdx";
+        }
+        else if (u.UnitType == StormRiderTypeId)
+        {
+          model = "war3mapImported\\WarGryphon_Yellow.mdl";
+        }
+      }
+
+      if (model != null)
       {
         borrowed.Add(new BorrowedGryphon(u));
 
@@ -59,7 +84,7 @@ public sealed class GryphonOrbitSpell : Spell
         SetUnitVertexColor(u, 255, 255, 255, 0);
         SetUnitScale(u, 0.01f, 0.01f, 0.01f);
 
-        var m = CreateMissile(caster, damage, duration);
+        var m = CreateMissile(caster, damage, duration, model);
         m.OrbitalAngle = GetRandomReal(0, 360);
         missiles.Add(m);
         MissileSystem.Add(m);
@@ -82,13 +107,11 @@ public sealed class GryphonOrbitSpell : Spell
     }
   }
 
-  public override void OnStop(unit caster)
-  {
-  }
+  public override void OnStop(unit caster) { }
 
-  private GryphonOrbitMissile CreateMissile(unit caster, float damage, float duration)
+  private GryphonOrbitMissile CreateMissile(unit caster, float damage, float duration, string model)
   {
-    return new GryphonOrbitMissile(caster, caster)
+    return new GryphonOrbitMissile(caster, caster, model)
     {
       CollisionRadius = CollisionRadius,
       Range = OrbitRadius,
@@ -107,13 +130,7 @@ public sealed class GryphonOrbitSpell : Spell
     {
       _durationRemaining[caster] -= PeriodicEvents.SYSTEM_INTERVAL;
 
-      if (!caster.Alive)
-      {
-        toEnd.Add(caster);
-        continue;
-      }
-
-      if (_durationRemaining[caster] <= 0)
+      if (!caster.Alive || _durationRemaining[caster] <= 0)
       {
         toEnd.Add(caster);
       }
