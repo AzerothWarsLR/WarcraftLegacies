@@ -62,7 +62,6 @@ public static class Buffs
   public const int BUFF_B03E_FLAME_SHIELD_RAGNAROS = 1110455109;
   public const int BUFF_B03F_FIRE_ATTACKS = 1110455110;
   public const int BUFF_B03G_GLOVES_OF_FURY_BERSERK = 1110455111;
-  public const int BUFF_B03I_DRUNKEN_HAZE_DARGAN = 1110455113;
   public const int BUFF_B03J_DILIGENCE_AURA = 1110455114;
   public const int BUFF_B03K_BATTLE_SHOUT = 1110455115;
   public const int BUFF_B03L_MECH_KIT = 1110455116;
