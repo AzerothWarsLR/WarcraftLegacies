@@ -191,13 +191,13 @@ public sealed class QuestPlague : QuestData
         {
           if (parameter.SummonUnitTypeId == UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE)
           {
-            var timer = new Timer(_ =>
+            u.IssueOrder(ORDER_UNBURROW);
+            var attackTimer = new Timer(_ =>
             {
-              u.IssueOrder(ORDER_UNBURROW);
               u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
-            }, 0.15f);
+            }, 1.55f);
 
-            TimerSystem.Add(timer);
+            TimerSystem.Add(attackTimer);
             continue;
           }
           if (!u.IsUnitType(unittype.Peon))
