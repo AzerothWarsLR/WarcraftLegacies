@@ -163,7 +163,6 @@ public sealed class QuestPlague : QuestData
       villager.Kill();
     }
   }
-
   private void SpawnArmies(Faction completingFaction)
   {
     var primaryPlaguePlayer = completingFaction.ScoreStatus != ScoreStatus.Defeated && completingFaction.Player != null
@@ -190,22 +189,17 @@ public sealed class QuestPlague : QuestData
         foreach (var u in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (parameter.SummonUnitTypeId == UNIT_UCRY_CRYPT_FIEND_SCOURGE)
+          if (parameter.SummonUnitTypeId == UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE)
           {
-            u.SafelyRemove();
-            var burrowed = unit.Create(primaryPlaguePlayer, UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE,
-              position.X, position.Y, 0);
-
             var timer = new Timer(_ =>
             {
-              burrowed.IssueOrder(ORDER_UNBURROW);
-              burrowed.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+              u.IssueOrder(ORDER_UNBURROW);
+              u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
             }, 0.15f);
 
             TimerSystem.Add(timer);
             continue;
           }
-
           if (!u.IsUnitType(unittype.Peon))
           {
             u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
@@ -214,7 +208,6 @@ public sealed class QuestPlague : QuestData
       }
     }
   }
-
   private void ResetVictimControlPointLevel()
   {
     if (_plagueVictim.Player == null)
