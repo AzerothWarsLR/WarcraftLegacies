@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 60
+      "Value": 90
     },
     {
       "Level": 2,
@@ -21,17 +21,17 @@
       "Level": 3,
       "Id": "acdn",
       "Type": 2,
-      "Value": 120
+      "Value": 90
     },
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 100
+      "Value": 175
     },
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 200
+      "Value": 175
     },
     {
       "Level": 2,
@@ -126,6 +126,11 @@
       "Value": 10
     },
     {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Muradin)"
@@ -143,42 +148,42 @@
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "Learn Avatar - [|cffffcc00Level %d|r]"
+      "Value": "Learn Avatar of the Mountain - [|cffffcc00Level %d|r]"
     },
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "When Avatar is activated, it gives the Mountain King bonus armor, bonus hit points, bonus damage and spell immunity. |n|cffffcc00Level 1|r - \u003CMD07,DataC1\u003E damage, \u003CMD07,DataA1\u003E armor, \u003CMD07,DataB1\u003E hit points, \u003CMD07,Dur1\u003E seconds.|n|cffffcc00Level 2|r - \u003CMD07,DataC2\u003E damage, \u003CMD07,DataA2\u003E armor, \u003CMD07,DataB2\u003E hit points, \u003CMD07,Dur2\u003E seconds.|n|cffffcc00Level 3|r - \u003CMD07,DataC3\u003E damage, \u003CMD07,DataA3\u003E armor, \u003CMD07,DataB3\u003E hit points, \u003CMD07,Dur3\u003E seconds."
+      "Value": "When Avatar of the Mountain is activated, Muradin gains bonus armor, bonus hit points, bonus damage, spell immunity, and cleave attacks. Muradin also periodically taunts nearby enemies, forcing them to attack him.\r\n|n|cffffcc00Level 1|r - \u003CMD07,DataC1\u003E damage, \u003CMD07,DataA1\u003E armor, \u003CMD07,DataB1\u003E hit points, \u003CMD07,Dur1\u003E seconds.\r\n|n|cffffcc00Level 2|r - \u003CMD07,DataC2\u003E damage, \u003CMD07,DataA2\u003E armor, \u003CMD07,DataB2\u003E hit points, \u003CMD07,Dur2\u003E seconds.\r\n|n|cffffcc00Level 3|r - \u003CMD07,DataC3\u003E damage, \u003CMD07,DataA3\u003E armor, \u003CMD07,DataB3\u003E hit points, \u003CMD07,Dur3\u003E seconds.\r\n"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Activate Avatar - [|cffffcc00Level 1|r]"
+      "Value": "Activate Avatar of the Mountain- [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Activate Avatar - [|cffffcc00Level 2|r]"
+      "Value": "Activate Avatar of the Mountain- [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Activate Avatar - [|cffffcc00Level 3|r]"
+      "Value": "Activate Avatar of the Mountain- [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Avatar to give the Mountain King \u003CMD07,DataA2\u003E bonus armor, \u003CMD07,DataB2\u003E bonus hit points, \u003CMD07,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CMD07,Dur2\u003E seconds."
+      "Value": "Activate Avatar of the Mountain to give the Mountain King \u003CMD07,DataA2\u003E bonus armor, \u003CMD07,DataB2\u003E bonus hit points, \u003CMD07,DataC2\u003E bonus damage, spell immunity, cleave attacks, and periodic taunts that force nearby enemies to attack him.\r\n|nLasts \u003CMD07,Dur2\u003E seconds.\r\n"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Avatar to give the Mountain King \u003CMD07,DataA3\u003E bonus armor, \u003CMD07,DataB3\u003E bonus hit points, \u003CMD07,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CMD07,Dur3\u003E seconds."
+      "Value": "Activate Avatar of the Mountain to give the Mountain King \u003CMD07,DataA3\u003E bonus armor, \u003CMD07,DataB3\u003E bonus hit points, \u003CMD07,DataC3\u003E bonus damage, spell immunity, cleave attacks, and periodic taunts that force nearby enemies to attack him.\r\n|nLasts \u003CMD07,Dur3\u003E seconds.\r\n"
     },
     {
       "Id": "auhk",
@@ -189,7 +194,22 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Avatar to give the Mountain King \u003CMD07,DataA1\u003E bonus armor, \u003CMD07,DataB1\u003E bonus hit points, \u003CMD07,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CMD07,Dur1\u003E seconds."
+      "Value": "Activate Avatar of the Mountain to give the Mountain King \u003CMD07,DataA1\u003E bonus armor, \u003CMD07,DataB1\u003E bonus hit points, \u003CMD07,DataC1\u003E bonus damage, spell immunity, cleave attacks, and periodic taunts that force nearby enemies to attack him.\r\n|nLasts \u003CMD07,Dur1\u003E seconds.\r\n"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatar.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatar.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Avatar of the Mountain"
     }
   ]
 }

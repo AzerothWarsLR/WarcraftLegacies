@@ -1,0 +1,157 @@
+{
+  "OldId": "AHtc",
+  "NewId": "TP51",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Htc5",
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Htc5",
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Htc5",
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Htc4",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Htc4",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Htc4",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP53"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP53"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP53"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP53"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. Also reduces their armor for a short duration.\r\n|n|cffffcc00Level 1|r - \u003CAHtc,DataA1\u003E damage, \u003CAHtc,DataC1,%\u003E% move, \u003CAHtc,DataD1,%\u003E% attack, -3 armor.\r\n|n|cffffcc00Level 2|r - \u003CAHtc,DataA2\u003E damage, \u003CAHtc,DataC2,%\u003E% move, \u003CAHtc,DataD2,%\u003E% attack, -5 armor.\r\n|n|cffffcc00Level 3|r - \u003CAHtc,DataA3\u003E damage, \u003CAHtc,DataC3,%\u003E% move, \u003CAHtc,DataD3,%\u003E% attack, -7 armor.\r\n|n|cffffcc00Level 4|r - \u003CAHtc,DataA4\u003E damage, \u003CAHtc,DataC4,%\u003E% move, \u003CAHtc,DataD4,%\u003E% attack, -9 armor."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Crack - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Crack - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Crack - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Crack - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing \u003CAHtc,DataA1\u003E damage to nearby enemy land units and slowing their movement by \u003CAHtc,DataC1,%\u003E% and attack rate by \u003CAHtc,DataD1,%\u003E%. Also reduces their armor by 3.\r\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing \u003CAHtc,DataA2\u003E damage to nearby enemy land units and slowing their movement by \u003CAHtc,DataC2,%\u003E% and attack rate by \u003CAHtc,DataD2,%\u003E%. Also reduces their armor by 5.\r\n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing \u003CAHtc,DataA3\u003E damage to nearby enemy land units and slowing their movement by \u003CAHtc,DataC3,%\u003E% and attack rate by \u003CAHtc,DataD3,%\u003E%. Also reduces their armor by 7.\r\n"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing \u003CAHtc,DataA4\u003E damage to nearby enemy land units and slowing their movement by \u003CAHtc,DataC4,%\u003E% and attack rate by \u003CAHtc,DataD4,%\u003E%. Also reduces their armor by 9."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Thunder Crack"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Thunder Crack - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Muradin)"
+    }
+  ]
+}
