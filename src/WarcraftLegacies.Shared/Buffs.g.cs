@@ -251,6 +251,8 @@ public static class Buffs
   public const int BUFF_TP35_FELFIRE_EFFECT = 1414542133;
   public const int BUFF_TP36_FELFIRE = 1414542134;
   public const int BUFF_TP37_FIRESTORM = 1414542135;
+  public const int BUFF_TP48_SECOND_WIND = 1414542392;
+  public const int BUFF_TP53_THUNDER_CRACK = 1414542643;
   public const int BUFF_TP60_PHANTOM_STEP = 1414542896;
   public const int BUFF_X001_SUMMON = 1479553073;
   public const int BUFF_X002_LIGHT_BURST_EFFECT = 1479553074;
