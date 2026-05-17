@@ -10,6 +10,7 @@ using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
+using WCSharp.Timers;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Quests;
 
@@ -162,7 +163,6 @@ public sealed class QuestPlague : QuestData
       villager.Kill();
     }
   }
-
   private void SpawnArmies(Faction completingFaction)
   {
     var primaryPlaguePlayer = completingFaction.ScoreStatus != ScoreStatus.Defeated && completingFaction.Player != null
@@ -186,18 +186,28 @@ public sealed class QuestPlague : QuestData
 
       foreach (var parameter in _plagueParameters.PlagueArmySummonParameters)
       {
-        foreach (var unit in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
+        foreach (var u in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!unit.IsUnitType(unittype.Peon))
+          if (parameter.SummonUnitTypeId == UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE)
           {
-            unit.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+            u.IssueOrder(ORDER_UNBURROW);
+            var attackTimer = new Timer(_ =>
+            {
+              u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+            }, 1.55f);
+
+            TimerSystem.Add(attackTimer);
+            continue;
+          }
+          if (!u.IsUnitType(unittype.Peon))
+          {
+            u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
           }
         }
       }
     }
   }
-
   private void ResetVictimControlPointLevel()
   {
     if (_plagueVictim.Player == null)
