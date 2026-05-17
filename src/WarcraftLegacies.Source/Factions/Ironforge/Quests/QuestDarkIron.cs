@@ -5,6 +5,7 @@ using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Quests;
@@ -14,37 +15,46 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Quests;
 /// </summary>
 public sealed class QuestDarkIron : QuestData
 {
-  private readonly List<unit> _rescueUnits;
+  private readonly List<unit> _rescueUnitsShadowforge;
+  private readonly List<unit> _rescueUnitsShadowforgeBase;
+  private readonly ObjectiveAnyUnitInRect _heroEnteringShadowforge;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestDarkIron"/> class.
   /// </summary>
-  public QuestDarkIron(Rectangle shadowforgeCity, Capital blackTemple, LegendaryHero magni) : base("Dark Iron Alliance",
-    "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.",
+  public QuestDarkIron(Rectangle shadowforgeCity, Rectangle shadowforgeCityBase, Capital blackrockSpire) : base("Dark Iron Alliance",
+    "Despite our strained past relations with the Dark Iron dwarves, we could reforge an alliance with them if we clear out the fel orcs from Blackrock Spire.",
     @"ReplaceableTextures\CommandButtons\BTNRPGDarkIron.blp")
   {
-    Knowledge = 25;
+    Knowledge = 20;
 
-    AddObjective(new ObjectiveCapitalDead(blackTemple));
-    AddObjective(new ObjectiveLegendInRect(magni, shadowforgeCity, "Shadowforge City"));
+    AddObjective(new ObjectiveCapitalDead(blackrockSpire));
+    _heroEnteringShadowforge = new ObjectiveAnyUnitInRect(shadowforgeCityBase, "Shadowforge City", true);
+    AddObjective(_heroEnteringShadowforge);
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
-    _rescueUnits = shadowforgeCity.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _rescueUnitsShadowforge = shadowforgeCity.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _rescueUnitsShadowforgeBase = shadowforgeCityBase.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
   }
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "You gain control of Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
+    $"You gain control of a small base in Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
+
+  /// <inheritdoc />
+  public override string RewardFlavour =>
+    $"The fel orcs have been vanquished from Blackrock Spire and {_heroEnteringShadowforge.CompletingUnitName} has convinced Dagran and his Dark Iron dwarves to join our cause.";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    completingFaction.Player.RescueGroup(_rescueUnits);
+    completingFaction.Player.RescueGroup(_rescueUnitsShadowforge);
+    completingFaction.Player.RescueGroup(_rescueUnitsShadowforgeBase);
   }
 
   /// <inheritdoc />
   protected override void OnFail(Faction failingFaction)
   {
-    player.NeutralAggressive.RescueGroup(_rescueUnits);
+    player.NeutralAggressive.RescueGroup(_rescueUnitsShadowforge);
   }
 }

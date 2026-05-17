@@ -4,15 +4,17 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Quests;
 
 public sealed class QuestExpedition : QuestData
 {
   private readonly int _rewardArtifactItemTypeId;
+  private readonly ObjectiveAnyUnitInRect _heroEnteringExpeditionRegion;
 
   public override string RewardFlavour =>
-    $"After months of digging, excavating, and tomb raiding, the Explorer's Guild has finally unearthed an artifact from Ul'dum: {GetObjectName(_rewardArtifactItemTypeId)}.";
+    $"After months of digging, excavating, and tomb raiding, {_heroEnteringExpeditionRegion.CompletingUnitName} and the Explorer's League have finally unearthed an artifact from Ul'dum: {GetObjectName(_rewardArtifactItemTypeId)}.";
 
   protected override string RewardDescription => $"The Artifact {GetObjectName(_rewardArtifactItemTypeId)} appears at Uldum";
 
@@ -22,7 +24,9 @@ public sealed class QuestExpedition : QuestData
   {
     Knowledge = 5;
     _rewardArtifactItemTypeId = rewardArtifactItemTypeId;
-    AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 5));
+    _heroEnteringExpeditionRegion = new ObjectiveAnyUnitInRect(Regions.UldumAmbiance, "Uldum", true);
+    AddObjective(_heroEnteringExpeditionRegion);
+    AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
   }
 
   protected override void OnComplete(Faction whichFaction)

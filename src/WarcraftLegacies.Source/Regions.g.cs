@@ -92,7 +92,7 @@ public static class Regions
   public static Rectangle Dreadscar_1 { get; set; } = new Rectangle(18080f, 12256f, 18784f, 14688f);
   public static Rectangle Dreadscar_2 { get; set; } = new Rectangle(17856f, 15392f, 19360f, 17376f);
   public static Rectangle Dreadscar_3 { get; set; } = new Rectangle(18304f, 19424f, 18816f, 21408f);
-  public static Rectangle DrownedTemple { get; set; } = new Rectangle(17248f, -15936f, 17696f, -15520f);
+  public static Rectangle DrownedTemple { get; set; } = new Rectangle(17248f, -16000f, 18048f, -15424f);
   public static Rectangle Dun_Morogh_Ships { get; set; } = new Rectangle(7296f, -7872f, 14240f, -4992f);
   public static Rectangle DunmoroghAmbient1 { get; set; } = new Rectangle(6688f, -8416f, 9536f, -4096f);
   public static Rectangle DunmoroghAmbient2 { get; set; } = new Rectangle(8320f, -8768f, 11744f, -6656f);
@@ -255,7 +255,8 @@ public static class Regions
   public static Rectangle SentinelTowerAmbient { get; set; } = new Rectangle(5696f, -17664f, 8672f, -14304f);
   public static Rectangle ShadowfangAmbient { get; set; } = new Rectangle(4480f, 2784f, 8544f, 8320f);
   public static Rectangle ShadowfangUnlock { get; set; } = new Rectangle(4800f, 3040f, 7680f, 4736f);
-  public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11488f, -9728f, 13248f, -8320f);
+  public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11264f, -9632f, 12032f, -8832f);
+  public static Rectangle Shadowforge_City_Base { get; set; } = new Rectangle(11840f, -10112f, 13312f, -8320f);
   public static Rectangle ShadowmoonBaseUnlock { get; set; } = new Rectangle(1696f, -31776f, 3936f, -28896f);
   public static Rectangle ShadowvaultUnlock { get; set; } = new Rectangle(-4480f, 23424f, -3168f, 24224f);
   public static Rectangle Shattrah { get; set; } = new Rectangle(-2016f, -29440f, -768f, -28000f);
@@ -367,6 +368,7 @@ public static class Regions
   public static Rectangle Zandalari_Echo_Unlock { get; set; } = new Rectangle(-9280f, -5440f, -8384f, -4512f);
   public static Rectangle ZeppelinReturn { get; set; } = new Rectangle(-960f, -5824f, -320f, -5216f);
   public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
+  public static Rectangle ZulGurub { get; set; } = new Rectangle(12320f, -20288f, 14272f, -18208f);
   public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
   public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
 }

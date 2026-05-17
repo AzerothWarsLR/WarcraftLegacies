@@ -16,14 +16,14 @@ public sealed class IronforgeLegends
   {
     Dagran = new LegendaryHero("Dagran Thaurissan")
     {
-      UnitType = UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS,
-      StartingXp = 7000
+      UnitType = UNIT_H03G_EMPEROR_OF_BLACKROCK_IRONFORGE,
+      StartingXp = 2800
     };
 
     Falstad = new LegendaryHero("Falstad Wildhammer")
     {
       UnitType = UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE,
-      StartingXp = 5400
+      StartingXp = 2800
     };
 
     Magni = new LegendaryHero("Magni Bronzebeard")
