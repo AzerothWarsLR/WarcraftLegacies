@@ -58,9 +58,11 @@ public sealed class VolatileFlaskProjectile : BasicMissile
     fx.Scale = 0.7f;
     EffectSystem.Add(fx, 1.0f);
 
+    var center = new Point(MissileX, MissileY);
+    var units = GlobalGroup.EnumUnitsInRange(center, AoE);
     var dummy = DummyCasterManager.GetGlobalDummyCaster();
 
-    foreach (var u in GlobalGroup.EnumUnitsInRange(new Point(MissileX, MissileY), AoE))
+    foreach (var u in units)
     {
       if (!u.Alive)
       {
@@ -74,10 +76,18 @@ public sealed class VolatileFlaskProjectile : BasicMissile
 
       u.Damage(Caster, Damage, attacktype.Magic);
       _totalDamage += Damage;
+    }
+
+    foreach (var u in units)
+    {
+      if (!u.Alive)
+      {
+        continue;
+      }
 
       var angle = MathEx.GetAngleBetweenPoints(MissileX, MissileY, u.X, u.Y);
-      var x = MathEx.GetPolarOffsetX(MissileX, 50, angle);
-      var y = MathEx.GetPolarOffsetY(MissileY, 50, angle);
+      var x = MathEx.GetPolarOffsetX(u.X, -100, angle);
+      var y = MathEx.GetPolarOffsetY(u.Y, -100, angle);
 
       dummy.SetFacing(angle);
 

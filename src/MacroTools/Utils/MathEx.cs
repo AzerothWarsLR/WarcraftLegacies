@@ -1,4 +1,5 @@
-﻿using WCSharp.Shared.Data;
+﻿using System;
+using WCSharp.Shared.Data;
 
 namespace MacroTools.Utils;
 
@@ -28,6 +29,12 @@ public static class MathEx
 
     return SquareRoot(dx * dx + dy * dy);
   }
+  public static float AngleDifference(float a, float b)
+  {
+    var diff = Math.Abs(a - b) % 360f;
+    return diff > 180f ? 360f - diff : diff;
+  }
+
 
   public static float GetAngleBetweenPoints(float xa, float ya, float xb, float yb) => RadToDeg * Atan2(yb - ya, xb - xa);
 
