@@ -63,7 +63,6 @@ public static class Buffs
   public const int BUFF_B03F_FIRE_ATTACKS = 1110455110;
   public const int BUFF_B03G_GLOVES_OF_FURY_BERSERK = 1110455111;
   public const int BUFF_B03J_DILIGENCE_AURA = 1110455114;
-  public const int BUFF_B03K_BATTLE_SHOUT = 1110455115;
   public const int BUFF_B03L_MECH_KIT = 1110455116;
   public const int BUFF_B03R_TRAMPLE_STACKING = 1110455122;
   public const int BUFF_B03S_TRAMPLE_NON_STACKING = 1110455123;
@@ -251,6 +250,7 @@ public static class Buffs
   public const int BUFF_TP36_FELFIRE = 1414542134;
   public const int BUFF_TP37_FIRESTORM = 1414542135;
   public const int BUFF_TP60_PHANTOM_STEP = 1414542896;
+  public const int BUFF_VP25_PREVAILING_WIND = 1448096309;
   public const int BUFF_X001_SUMMON = 1479553073;
   public const int BUFF_X002_LIGHT_BURST_EFFECT = 1479553074;
   public const int BUFF_X003_NETHER_STRIKE_EFFECT = 1479553075;

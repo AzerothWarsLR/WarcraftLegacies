@@ -5,21 +5,6 @@
   ],
   "Modifications": [
     {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 75
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 75
-    },
-    {
-      "Level": 4,
-      "Id": "amcs",
-      "Value": 75
-    },
-    {
       "Level": 1,
       "Pointer": 2,
       "Id": "Nsi2",
@@ -52,21 +37,14 @@
       "Pointer": 3,
       "Id": "Nsi3",
       "Type": 2,
-      "Value": 0.4
+      "Value": 0.5
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": "Nsi3",
       "Type": 2,
-      "Value": 0.45
-    },
-    {
-      "Level": 4,
-      "Pointer": 3,
-      "Id": "Nsi3",
-      "Type": 2,
-      "Value": 0.55
+      "Value": 0.5
     },
     {
       "Id": "alev",
@@ -81,35 +59,30 @@
       "Level": 1,
       "Id": "aare",
       "Type": 2,
-      "Value": 250
+      "Value": 300
     },
     {
       "Level": 2,
       "Id": "aare",
       "Type": 2,
-      "Value": 250
+      "Value": 300
     },
     {
       "Level": 3,
       "Id": "aare",
       "Type": 2,
-      "Value": 250
+      "Value": 300
     },
     {
       "Level": 4,
       "Id": "aare",
       "Type": 2,
-      "Value": 250
-    },
-    {
-      "Level": 1,
-      "Id": "amcs",
-      "Value": 75
+      "Value": 300
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Muradin)"
+      "Value": "(Ironforge - Magni)"
     },
     {
       "Id": "ahky",
@@ -124,7 +97,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, reducing movement speed and causing attacks to have a chance to miss.\r\n|n|cffffcc00Lasts \u003CANdh,Dur1\u003E seconds (5 for Heroes).|r\r\n\r\n|cffffcc00Level 1|r \u2013 \u003CANdh,DataC1,%\u003E movement speed reduction, \u003CANdh,DataB1,%\u003E miss chance.\r\n|n|cffffcc00Level 2|r \u2013 \u003CANdh,DataC2,%\u003E movement speed reduction, \u003CANdh,DataB2,%\u003E miss chance.\r\n|n|cffffcc00Level 3|r \u2013 \u003CANdh,DataC3,%\u003E movement speed reduction, \u003CANdh,DataB3,%\u003E miss chance.\r\n|n|cffffcc00Level 4|r \u2013 \u003CANdh,DataC4,%\u003E movement speed reduction, \u003CANdh,DataB4,%\u003E miss chance."
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC1,%\u003E%, and have a chance to miss on attacks. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(\u003CANdh,HeroDur1\u003E for Heros) seconds. |n|n|cffffcc00Level 1|r - \u003CANdh,DataB1,%\u003E% miss chance. |n|cffffcc00Level 2|r - \u003CANdh,DataB2,%\u003E% miss chance. |n|cffffcc00Level 3|r - \u003CANdh,DataB3,%\u003E% miss chance. |n|cffffcc00Level 4|r - \u003CANdh,DataB4,%\u003E% miss chance."
     },
     {
       "Level": 4,
@@ -136,25 +109,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC1,%\u003E and causing attacks to have a \u003CANdh,DataB1,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur1\u003E seconds (5 for Heroes).\r\n"
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC1,%\u003E%, and have a \u003CANdh,DataB1,%\u003E% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(\u003CANdh,HeroDur1\u003E for Heros) seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC2,%\u003E and causing attacks to have a \u003CANdh,DataB2,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur2\u003E seconds (5 for Heroes).\r\n"
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC2,%\u003E%, and have a \u003CANdh,DataB2,%\u003E% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur2\u003E(\u003CANdh,HeroDur2\u003E for Heros) seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC3,%\u003E and causing attacks to have a \u003CANdh,DataB3,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur3\u003E seconds (5 for Heroes).\r\n"
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC3,%\u003E%, and have a \u003CANdh,DataB3,%\u003E% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur3\u003E(\u003CANdh,HeroDur3\u003E for Heros) seconds."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, reducing movement speed by \u003CANdh,DataC4,%\u003E and causing attacks to have a \u003CANdh,DataB4,%\u003E chance to miss.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffffcc00Lasts \u003CANdh,Dur4\u003E seconds (5 for Heroes).\r\n"
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC4,%\u003E%, and have a \u003CANdh,DataB4,%\u003E% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur4\u003E(\u003CANdh,HeroDur4\u003E for Heros) seconds."
     }
   ]
 }

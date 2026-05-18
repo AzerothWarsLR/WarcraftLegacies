@@ -27,6 +27,7 @@ public sealed class NeutralLegends
   public Capital Caerdarrow { get; }
   public Capital Shaladrassil { get; }
   public Capital BlackrookHold { get; }
+  public Capital SunkenTemple { get; }
 
   public NeutralLegends()
   {
@@ -174,6 +175,12 @@ public sealed class NeutralLegends
     };
     BlackrookHold.Unit.Life = 500;
     BlackrookHold.Unit.Owner = player.NeutralVictim;
+
+    SunkenTemple = new Capital
+    {
+      Capturable = true,
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_VP31_TEMPLE_OF_ATAL_HAKKAR)
+    };
   }
 
   public void RegisterLegends()
@@ -200,5 +207,6 @@ public sealed class NeutralLegends
     CapitalManager.Register(Caerdarrow);
     CapitalManager.Register(Shaladrassil);
     CapitalManager.Register(BlackrookHold);
+    CapitalManager.Register(SunkenTemple);
   }
 }

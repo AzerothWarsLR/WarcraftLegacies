@@ -1,10 +1,10 @@
 {
-  "Left": 11488,
-  "Bottom": -9728,
-  "Right": 13248,
-  "Top": -8320,
+  "Left": 11264,
+  "Bottom": -9632,
+  "Right": 12032,
+  "Top": -8832,
   "Name": "Shadowforge City",
-  "CreationNumber": 4,
+  "CreationNumber": 208,
   "WeatherType": 0,
   "AmbientSound": "",
   "Color": {

@@ -114,11 +114,6 @@
       "Value": 150
     },
     {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 2.1
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "Shrine of Zul\u0027Gurub"
@@ -135,7 +130,12 @@
     {
       "Id": "ussc",
       "Type": 1,
-      "Value": 3
+      "Value": 1.5
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2.1
     }
   ]
 }
