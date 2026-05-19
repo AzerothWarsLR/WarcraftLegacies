@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Spells;
 public sealed class VolatileFlask : Spell
 {
   public float Damage { get; init; }
-  public float AoE { get; init; }
+  public float Radius { get; init; }
   public float MaxDamage { get; init; }
 
   public VolatileFlask(int id) : base(id)
@@ -23,7 +23,7 @@ public sealed class VolatileFlask : Spell
     var missile = new VolatileFlaskProjectile(caster, targetPoint.X, targetPoint.Y)
     {
       Damage = Damage,
-      AoE = AoE,
+      Radius = Radius,
       MaxDamage = MaxDamage
     };
 
@@ -34,7 +34,7 @@ public sealed class VolatileFlask : Spell
 public sealed class VolatileFlaskProjectile : BasicMissile
 {
   public float Damage { get; init; }
-  public float AoE { get; init; }
+  public float Radius { get; init; }
   public float MaxDamage { get; init; }
 
   private float _totalDamage;
@@ -59,7 +59,7 @@ public sealed class VolatileFlaskProjectile : BasicMissile
     EffectSystem.Add(fx, 1.0f);
 
     var center = new Point(MissileX, MissileY);
-    var units = GlobalGroup.EnumUnitsInRange(center, AoE);
+    var units = GlobalGroup.EnumUnitsInRange(center, Radius);
     var dummy = DummyCasterManager.GetGlobalDummyCaster();
 
     foreach (var u in units)
