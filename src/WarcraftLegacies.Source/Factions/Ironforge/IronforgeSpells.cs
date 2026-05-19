@@ -21,5 +21,12 @@ public static class IronforgeSpells
       },
       GoldCost = 25
     });
+    var volatileFlask = new VolatileFlask(ABILITY_TP11_VOLATILE_FLASK_IRONFORGE)
+    {
+      Damage = 25f,
+      Radius = 175f,
+      MaxDamage = 300f
+    };
+    SpellRegistry.Register(volatileFlask);
   }
 }

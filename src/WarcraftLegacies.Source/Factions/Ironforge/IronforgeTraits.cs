@@ -14,6 +14,14 @@ public static class IronforgeTraits
       ProcChance = 0.2f
     }, UNIT_H03Z_STORMRIDER_IRONFORGE);
 
+    UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
+    {
+      DummyAbilityId = ABILITY_TP25_FLAMETHROWER_FLAME_TANK_DUMMY,
+      DummyOrderId = ORDER_BREATH_OF_FIRE,
+      ProcChance = 1.0f,
+      Cooldown = 0,
+      CastDistance = 250
+    }, UNIT_TP01_FLAME_TANK_IRONFORGE);
     UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_VP26_MASTER_OF_LIGHTNING_IRONFORGE_FALSTAD)
     {
       DummyAbilityId = ABILITY_VP27_FORKED_LIGHTNING_IRONFORGE_FALSTAD_DUMMY,

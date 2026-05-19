@@ -78,11 +78,6 @@
       "Value": "MetalMediumBash"
     },
     {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "h048"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarvenWarrior.blp"
