@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Factions.Ironforge;
 
 public static class IronforgeSpells
 {
-  /// <summary>nostop
+  /// <summary>
   /// Sets up <see cref="IronforgeSpells"/>.
   /// </summary>
   public static void Setup()
