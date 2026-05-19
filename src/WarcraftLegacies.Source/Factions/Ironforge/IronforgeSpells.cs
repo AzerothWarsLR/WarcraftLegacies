@@ -37,5 +37,12 @@ public static class IronforgeSpells
       ArmorBonus = 35,
       ArmorBuffEffect = "war3mapImported/Effect_ShieldBuff_Yellow.mdx"
     });
+    var volatileFlask = new VolatileFlask(ABILITY_TP11_VOLATILE_FLASK_IRONFORGE)
+    {
+      Damage = 25f,
+      Radius = 175f,
+      MaxDamage = 300f
+    };
+    SpellRegistry.Register(volatileFlask);
   }
 }

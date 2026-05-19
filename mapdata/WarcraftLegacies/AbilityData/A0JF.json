@@ -33,35 +33,35 @@
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 60
+      "Value": 45
     },
     {
       "Level": 2,
       "Id": "acdn",
       "Type": 2,
-      "Value": 50
+      "Value": 45
     },
     {
       "Level": 3,
       "Id": "acdn",
       "Type": 2,
-      "Value": 40
+      "Value": 45
     },
     {
       "Level": 4,
       "Id": "acdn",
       "Type": 2,
-      "Value": 35
+      "Value": 45
     },
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 180
+      "Value": 200
     },
     {
       "Level": 2,
       "Id": "amcs",
-      "Value": 190
+      "Value": 200
     },
     {
       "Level": 3,
@@ -71,7 +71,7 @@
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 210
+      "Value": 200
     },
     {
       "Level": 1,
@@ -89,13 +89,13 @@
       "Level": 3,
       "Pointer": 2,
       "Id": "Osf2",
-      "Value": 4
+      "Value": 5
     },
     {
       "Level": 4,
       "Pointer": 2,
       "Id": "Osf2",
-      "Value": 5
+      "Value": 6
     },
     {
       "Id": "alev",
@@ -129,6 +129,54 @@
       "Id": "Osf1",
       "Type": 3,
       "Value": "n056"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
     },
     {
       "Id": "aart",
@@ -176,7 +224,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "The hero performs a ritual that opens a portal allowing Fire Elementals to fight his enemies. |nThe Fire Elementals last 60 seconds. |n|n|cffffcc00Level 1|r - 3 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 2|r - 4 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 3|r - 4 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire.|n|cffffcc00Level 4|r - 5 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire."
+      "Value": "Summon Fire Elementals to fight the heroes enemies. The Fire Elementals are stronger with each level and have the abilities Immolation, Incinerate, and Breath of Fire.  |n|n|cffffcc00Level 1|r - \u003CA0JF,DataB1\u003E Fire Elementals. |n|cffffcc00Level 2|r - \u003CA0JF,DataB2\u003E Fire Elementals.|n|cffffcc00Level 3|r - \u003CA0JF,DataB3\u003E Fire Elementals.|n|cffffcc00Level 4|r - \u003CA0JF,DataB4\u003E Fire Elementals."
     },
     {
       "Level": 1,
@@ -206,25 +254,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation ability. Summons 3 Fire Elementals."
+      "Value": "The hero summons \u003CA0JF,DataB1\u003E fire elementals to fight by their side. The Fire Elementals have the Immolation, Incinerate, and Breath of Fire abilities."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation ability. Summons 4 Fire Elementals."
+      "Value": "The hero summons \u003CA0JF,DataB2\u003E fire elementals to fight by their side. The Fire Elementals have the Immolation, Incinerate, and Breath of Fire abilities."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero summons powerful fire elementals to fight by his side. The Fire Elementals have Immolation, Incinerate, and the Breath of Fire ability. Summons 4 strong Fire Elementals."
+      "Value": "The hero summons \u003CA0JF,DataB3\u003E fire elementals to fight by their side. The Fire Elementals have the Immolation, Incinerate, and Breath of Fire abilities."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero summons powerful fire elementals to fight by his side. The Fire Elementals have Incinerate, Immolation and the Breath of Fire ability. Summons 5 strong Fire Elementals."
+      "Value": "The hero summons \u003CA0JF,DataB4\u003E fire elementals to fight by their side. The Fire Elementals have the Immolation, Incinerate, and Breath of Fire abilities."
     }
   ]
 }

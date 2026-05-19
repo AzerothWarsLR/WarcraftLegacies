@@ -1,0 +1,16 @@
+{
+  "Left": 12320,
+  "Bottom": -20288,
+  "Right": 14272,
+  "Top": -18208,
+  "Name": "ZulGurub",
+  "CreationNumber": 209,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

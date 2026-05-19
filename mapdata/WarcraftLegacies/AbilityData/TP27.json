@@ -1,0 +1,76 @@
+{
+  "OldId": "AOcr",
+  "NewId": "TP27",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "TP28"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Flame Tank)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit\u2019s attack has been refitted with a short range flamethrower, releasing a cone of fire.\r\n\r\n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite, taking \u003CTP26,DataE1\u003E damage per second for \u003CTP26,Dur1\u003E seconds.\r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Flamethrower"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFlamethrower.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Flamethrower"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    }
+  ]
+}

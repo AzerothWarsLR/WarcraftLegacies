@@ -401,7 +401,7 @@ public sealed class ScourgeFaction : Faction
     {
       new(1, UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
       new(2, UNIT_UGHO_GHOUL_SCOURGE),
-      new(2, UNIT_UCRY_CRYPT_FIEND_SCOURGE),
+      new(2, UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE),
       new(2, UNIT_UABO_ABOMINATION_SCOURGE),
     };
     plagueParameters.AttackTargets = new List<Point>

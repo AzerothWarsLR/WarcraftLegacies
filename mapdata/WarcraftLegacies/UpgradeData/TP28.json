@@ -1,0 +1,83 @@
+{
+  "OldId": "Rhse",
+  "NewId": "TP28",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h07G"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": -400
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlamethrower.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Flamethrower"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Flamethrower"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows Steam Tanks to use Flamethrowers, replacing their long\u2011range siege attack with a short\u2011range cone of fire. Enemies affected by Drunken Haze ignite and take damage over time.\r\n|n|cffc864c8Cannot be researched with Artillery.|r"
+    }
+  ]
+}
