@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to 6  nearby enemy air units."
+      "Value": "Causes this unit\u0027s attacks to fire an additional projectile at up to \u003CAroc,DataC1\u003E nearby enemy air units.\r\n"
     }
   ]
 }

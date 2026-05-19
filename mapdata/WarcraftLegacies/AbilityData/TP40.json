@@ -136,7 +136,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Summons an invisible, immovable ward that stuns nearby enemy ground units when they approach. Activating the trap destroys all other Stasis Wards in its area.\r\nLasts 60 seconds. Stun lasts 3 seconds. 8 second activation delay."
+      "Value": "Summons an invisible, immovable ward that stuns nearby enemy ground units when they approach. Activating the trap destroys all other Stasis Wards in its area.\r\nLasts \u003CTP40,Dur1\u003E seconds. Stun lasts \u003CTP40,DataD1\u003E seconds. Activation delay: \u003CTP40,DataA1\u003E seconds.\r\n"
     },
     {
       "Level": 2,
