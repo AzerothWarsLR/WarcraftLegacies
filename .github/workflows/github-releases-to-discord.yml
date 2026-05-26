@@ -15,6 +15,7 @@ jobs:
           color: "2105893"
           username: "Warcraft Legacies Releases"
           avatar_url: "https://cdn.discordapp.com/avatars/487431320314576937/bd64361e4ba6313d561d54e78c9e7171.png"
+          embed_title: "Download Link: ${{ github.event.release.tag_name }}"
           footer_title: "Changelog"
           footer_icon_url: "https://cdn.discordapp.com/avatars/487431320314576937/bd64361e4ba6313d561d54e78c9e7171.png"
           footer_timestamp: true
