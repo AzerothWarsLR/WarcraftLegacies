@@ -1,5 +1,5 @@
 {
-  "OldId": "Adis",
+  "OldId": "ANcl",
   "NewId": "TP10",
   "Unk": [
     0
@@ -7,106 +7,233 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 175
+      "Id": "amcs",
+      "Value": 150
     },
     {
       "Level": 2,
-      "Id": "aare",
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
       "Type": 2,
-      "Value": 225
+      "Value": 90
     },
     {
       "Level": 2,
       "Id": "acdn",
       "Type": 2,
-      "Value": 5
+      "Value": 90
     },
     {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 75
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Adm2",
+      "Level": 3,
+      "Id": "acdn",
       "Type": 2,
-      "Value": 250
+      "Value": 90
     },
     {
-      "Id": "areq",
-      "Type": 3,
-      "Value": "TP42"
+      "Id": "arlv",
+      "Value": 10
     },
     {
-      "Id": "arqa",
+      "Id": "arac",
       "Type": 3,
-      "Value": "1"
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 9
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 0
     },
     {
       "Level": 2,
       "Id": "aran",
       "Type": 2,
-      "Value": 700
+      "Value": 0
     },
     {
-      "Level": 1,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 0
     },
     {
       "Level": 2,
-      "Id": "atar",
+      "Pointer": 6,
+      "Id": "Ncl6",
       "Type": 3,
-      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+      "Value": "channel"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "channel"
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Stormguard"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes gryphons to orbit the caster, damaging enemy units they collide with.\r\nAny additional Gryphon units near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.\r\nAlso grants the caster bonus armor for the duration.\r\n\r\n|cffffcc00Level 1|r \u2013 50 damage, 30 second duration, \u002B35 armor\r\n|cffffcc00Level 2|r \u2013 70 damage, 35 second duration, \u002B35 armor\r\n|cffffcc00Level 3|r \u2013 90 damage, 40 second duration, \u002B35 armor"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Stormgaurd - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
-      "Pointer": 2,
-      "Id": "Adm2",
-      "Type": 2,
-      "Value": 250
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes 3 gryphons to orbit the caster, dealing 50 damage to enemy units they collide with.\r\nAny additional Gryphon units near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.\r\nAlso grants the caster 35 bonus armor for the duration.\r\n\r\nLasts 30 seconds"
     },
     {
-      "Id": "alev",
-      "Value": 2
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes 3 gryphons to orbit the caster, dealing 70 damage to enemy units they collide with.\r\nAny additional Gryphon units near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.\r\nAlso grants the caster 35 bonus armor for the duration.\r\n\r\nLasts 35 seconds"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes 3 gryphons to orbit the caster, dealing 90 damage to enemy units they collide with.\r\nAny additional Gryphon units near the caster are swept into the storm, orbiting alongside them and returning when the effect ends.\r\nAlso grants the caster 35 bonus armor for the duration.\r\n\r\nLasts 40 seconds"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stormgaurd - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stormgaurd - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stormgaurd - [|cffffcc00Level 3|r]"
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Ironforge Rune Smith)"
+      "Value": "(Falstad Wildhammer)"
     },
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "W"
+      "Value": "R"
     },
     {
-      "Level": 1,
-      "Id": "atp1",
+      "Id": "acat",
       "Type": 3,
-      "Value": "Dispel Magic - [|cffffcc00Level 1|r]"
+      "Value": ""
     },
     {
-      "Level": 2,
-      "Id": "atp1",
+      "Id": "acap",
       "Type": 3,
-      "Value": "Dispel Magic - [|cffffcc00Level 2|r]"
+      "Value": ""
     },
     {
-      "Level": 1,
-      "Id": "aub1",
+      "Id": "aani",
       "Type": 3,
-      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0D2,DataB1\u003E damage to summoned units.|r"
+      "Value": ""
     },
     {
-      "Level": 2,
-      "Id": "aub1",
+      "Id": "atat",
       "Type": 3,
-      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0D2,DataB2\u003E damage to summoned units.|r"
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormguard.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormguard.blp"
     }
   ]
 }
