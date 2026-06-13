@@ -45,7 +45,6 @@ public sealed class QuestExplorersLeagueKalimdorExpedition : QuestData
     };
 
     var chosenRegion = regionsNorth[GetRandomInt(0, regionsNorth.Count - 1)];
-    chosenRegion = Regions.Stonetalon_Peak;
 
     if (chosenRegion == Regions.AzsharaAmbient2)
     {
