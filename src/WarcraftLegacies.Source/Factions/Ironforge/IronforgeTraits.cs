@@ -7,12 +7,12 @@ public static class IronforgeTraits
 {
   public static void Setup()
   {
-    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_IRONFORGE)
     {
       DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
       DummyOrderId = ORDER_FORKED_LIGHTNING,
       ProcChance = 0.2f
-    }, UNIT_H03Z_STORMRIDER_IRONFORGE);
+    }, UNIT_HGRY_GRYPHON_RIDER_IRONFORGE);
 
     UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
     {

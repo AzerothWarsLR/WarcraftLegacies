@@ -19,7 +19,7 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H048_FORGEWORKS_IRONFORGE_RESEARCH, Unlimited, Research);
     yield return new(UNIT_H042_PINNACLE_IRONFORGE_MAGIC, Unlimited, Magic);
     yield return new(UNIT_HARM_WORKSHOP_IRONFORGE_SPECIALIST, Unlimited, Specialist);
-    yield return new(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SIEGE, Unlimited, FlyingBuilding);
+    yield return new(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_AIR, Unlimited, FlyingBuilding);
     yield return new(UNIT_H07H_SCOUT_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
     yield return new(UNIT_H07J_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
     yield return new(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
@@ -32,7 +32,7 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_HRIF_RIFLEMAN_IRONFORGE, Unlimited, Marksman);
     yield return new(UNIT_HMTM_MORTAR_TEAM_IRONFORGE, 9, Siege);
     yield return new(UNIT_N0CZ_DREADNAUGHT_IRONFORGE, 4, Tank);
-    yield return new(UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, 6, new List<UnitCategory> { Flyer, Destroyer });
+    yield return new(UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, 8, new List<UnitCategory> { Flyer, Destroyer });
     yield return new(UNIT_H018_WARRIOR_IRONFORGE, Unlimited, Tank);
     yield return new(UNIT_H01L_THANE_IRONFORGE, 12, new List<UnitCategory> { Tank, Fighter });
     yield return new(UNIT_H037_ENGINEER_IRONFORGE_ELITE, 6, new List<UnitCategory> { Elite, Support, Summoner });
@@ -53,7 +53,6 @@ public static class IronforgeObjectInfo
     };
     yield return new(UNIT_TP05_RUNE_SMITH_IRONFORGE, Unlimited, Support);
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited, Support);
-    yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3, new List<UnitCategory> { Flyer, Destroyer, Support });
 
     yield return new(UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE, 1, Support);
     yield return new(UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE, 1, new List<UnitCategory> { Fighter, Support });

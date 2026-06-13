@@ -27,19 +27,19 @@
       "Level": 1,
       "Id": "acdn",
       "Type": 2,
-      "Value": 120
+      "Value": 45
     },
     {
       "Level": 2,
       "Id": "acdn",
       "Type": 2,
-      "Value": 120
+      "Value": 35
     },
     {
       "Level": 3,
       "Id": "acdn",
       "Type": 2,
-      "Value": 120
+      "Value": 15
     },
     {
       "Level": 1,
@@ -49,19 +49,19 @@
     {
       "Level": 2,
       "Id": "amcs",
-      "Value": 225
+      "Value": 200
     },
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 250
+      "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 1,
       "Id": "Efk1",
       "Type": 2,
-      "Value": 200
+      "Value": 175
     },
     {
       "Level": 2,
@@ -75,7 +75,7 @@
       "Pointer": 1,
       "Id": "Efk1",
       "Type": 2,
-      "Value": 300
+      "Value": 325
     },
     {
       "Level": 1,
@@ -194,7 +194,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Unleashes streaks of lightning in all directions dealing massive damage to all enemy units nearby.|n|n|cffffcc00Level 1|r - 200 damage per target.|n|cffffcc00Level 2|r - 250 damage per target.|n|cffffcc00Level 3|r - 300 damage per target."
+      "Value": "Unleashes lightning in all directions dealing damage to all enemy units nearby.|n|n|cffffcc00Level 1|r - \u003CA08Q,DataA1\u003E damage per target.|n|cffffcc00Level 2|r - \u003CA08Q,DataA2\u003E damage per target.|n|cffffcc00Level 3|r - \u003CA08Q,DataA3\u003E damage per target."
     },
     {
       "Level": 1,
@@ -218,19 +218,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Unleashes streaks of lightning in all directions dealing 200 damage to all enemy units nearby."
+      "Value": "Unleashes streaks of lightning in all directions dealing \u003CA08Q,DataA1\u003E damage to all enemy units nearby."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Unleashes streaks of lightning in all directions dealing 250 damage to all enemy units nearby."
+      "Value": "Unleashes streaks of lightning in all directions dealing \u003CA08Q,DataA2\u003E damage to all enemy units nearby."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Unleashes streaks of lightning in all directions dealing 300 damage to all enemy units nearby."
+      "Value": "Unleashes streaks of lightning in all directions dealing \u003CA08Q,DataA3\u003E damage to all enemy units nearby."
     }
   ]
 }

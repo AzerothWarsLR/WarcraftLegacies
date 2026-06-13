@@ -22,7 +22,7 @@ public sealed class QuestExplorersLeagueKalimdorExpedition : QuestData
   {
     Knowledge = 30;
     _expeditionRegionNorth = GetRandomRegionNorth();
-    AddObjective(new ObjectiveControlLevel(_expeditionRegionNorth.ControlPointId, 2));
+    AddObjective(new ObjectiveControlPoint(_expeditionRegionNorth.ControlPointId));
     _heroEnteringRegionNorth = new ObjectiveAnyUnitReachRect(_expeditionRegionNorth.Region, _expeditionRegionNorth.Name, true);
     AddObjective(_heroEnteringRegionNorth);
     _expeditionRegionSouth = GetRandomRegionSouth();
@@ -41,10 +41,11 @@ public sealed class QuestExplorersLeagueKalimdorExpedition : QuestData
   {
     var regionsNorth = new List<Rectangle>() {
       Regions.AzsharaAmbient2,
-      Regions.AuberdineUnlock,
+      Regions.Stonetalon_Peak,
     };
 
     var chosenRegion = regionsNorth[GetRandomInt(0, regionsNorth.Count - 1)];
+    chosenRegion = Regions.Stonetalon_Peak;
 
     if (chosenRegion == Regions.AzsharaAmbient2)
     {
@@ -56,13 +57,13 @@ public sealed class QuestExplorersLeagueKalimdorExpedition : QuestData
       };
     }
 
-    if (chosenRegion == Regions.AuberdineUnlock)
+    if (chosenRegion == Regions.Stonetalon_Peak)
     {
       return new RegionModel()
       {
         Region = chosenRegion,
-        Name = "Auberdine",
-        ControlPointId = UNIT_N09D_AUBERDINE
+        Name = "Stonetalon Peak",
+        ControlPointId = UNIT_N01U_STONETALON_PEAK
       };
     }
 
