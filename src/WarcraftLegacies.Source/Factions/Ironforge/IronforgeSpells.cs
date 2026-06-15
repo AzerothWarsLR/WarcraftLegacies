@@ -44,5 +44,15 @@ public static class IronforgeSpells
       MaxDamage = 300f
     };
     SpellRegistry.Register(volatileFlask);
+
+    SpellRegistry.Register(new Stormbolt(ABILITY_TP49_MURADIN_S_STORMBOLT_MURADIN)
+    {
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 25f,
+        PerLevel = 50f
+      },
+      StunAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+    });
   }
 }
