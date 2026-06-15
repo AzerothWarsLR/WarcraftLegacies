@@ -13,6 +13,7 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
+using WarcraftLegacies.Source.Save;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
 
@@ -31,6 +32,7 @@ public static class GameSetup
     FactionManager.Setup();
     UnitTypeSetup.Setup();
     SaveManager.Initialize();
+    MmdSaveManager.Initialize();
     DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
@@ -96,6 +98,15 @@ public static class GameSetup
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
+    GameLogic.Mmd.MmdEvents.Setup();
+    var mmdEndTrigger = CreateTrigger();
+    TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_VICTORY);
+    TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_END_LEVEL);
+    TriggerAddAction(mmdEndTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmdCache());
+    var leaveTrigger = CreateTrigger();
+    TriggerRegisterPlayerEvent(leaveTrigger, Player(PLAYER_NEUTRAL_AGGRESSIVE), EVENT_PLAYER_LEAVE);
+    TriggerAddAction(leaveTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmdCache());
+
   }
 
   private static void SetupControlPointManager()

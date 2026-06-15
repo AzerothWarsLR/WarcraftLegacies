@@ -53,5 +53,6 @@ public static class PlayerSetup
 
     player.GetPlayerData().Faction = faction;
     FactionManager.Register(faction);
+    GameLogic.Mmd.MmdManager.RegisterPlayer(player, faction);
   }
 }
