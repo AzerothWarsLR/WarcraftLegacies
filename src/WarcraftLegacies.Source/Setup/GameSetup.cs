@@ -13,12 +13,11 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
-using WarcraftLegacies.Source.Save;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
 
-namespace WarcraftLegacies.Source.Setup;
 
+namespace WarcraftLegacies.Source.Setup;
 /// <summary>
 /// Responsible for setting up the entire game.
 /// </summary>
@@ -57,7 +56,6 @@ public static class GameSetup
     QuestMenuSetup.Setup();
     GameTimeManager.Start();
     GameTimeDialog.Setup();
-
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
@@ -98,12 +96,16 @@ public static class GameSetup
     TagSummonedUnits.Setup();
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
     GameLogic.Mmd.MmdEvents.Setup();
+    GameLogic.Mmd.MmdEvents_W3MMD.Setup();
     var mmdEndTrigger = CreateTrigger();
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_VICTORY);
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_END_LEVEL);
     TriggerAddAction(mmdEndTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
     var leaveTrigger = CreateTrigger();
-    TriggerRegisterPlayerEvent(leaveTrigger, Player(PLAYER_NEUTRAL_AGGRESSIVE), EVENT_PLAYER_LEAVE);
+    for (var i = 0; i < 24; i++)
+    {
+      TriggerRegisterPlayerEvent(leaveTrigger, Player(i), EVENT_PLAYER_LEAVE);
+    }
     TriggerAddAction(leaveTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
   }
 

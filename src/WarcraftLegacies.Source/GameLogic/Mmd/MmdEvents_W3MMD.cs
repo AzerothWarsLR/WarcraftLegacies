@@ -39,6 +39,7 @@ public static class MmdEvents_W3MMD
       return;
     }
 
+    MmdVariables.hero_kills.Add(killer.Owner, 1);
     MmdVariables.hero_kill_event.Emit(killer.Owner.Name, unit.Owner.Name);
   }
 
@@ -59,6 +60,7 @@ public static class MmdEvents_W3MMD
       return;
     }
 
+    MmdVariables.units_killed.Add(killer.Owner, 1);
     MmdVariables.unit_kill_event.Emit(killer.Owner.Name, victim.Owner.Name);
   }
 
@@ -73,7 +75,8 @@ public static class MmdEvents_W3MMD
           return;
         }
 
-        MmdVariables.capital_destroyed_event.Emit(capital.Unit.Owner.Name, capital.Name);
+        var owner = capital.Unit.Owner;
+        MmdVariables.capital_destroyed_event.Emit(owner.Name, capital.Name);
       };
     }
   }
@@ -84,7 +87,10 @@ public static class MmdEvents_W3MMD
     {
       cp.OwnerAllianceChanged += controlPoint =>
       {
-        MmdVariables.cp_capture_event.Emit(controlPoint.Owner.Name, controlPoint.Value.ToString());
+        var owner = controlPoint.Owner;
+        MmdVariables.cp_captures.Add(owner, 1);
+        MmdVariables.cp_value_controlled.Add(owner, controlPoint.Value);
+        MmdVariables.cp_capture_event.Emit(owner.Name, controlPoint.Value.ToString());
       };
     }
   }
