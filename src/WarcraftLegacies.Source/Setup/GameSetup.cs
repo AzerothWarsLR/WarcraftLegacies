@@ -32,7 +32,6 @@ public static class GameSetup
     FactionManager.Setup();
     UnitTypeSetup.Setup();
     SaveManager.Initialize();
-    MmdSaveManager.Initialize();
     DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
@@ -102,11 +101,10 @@ public static class GameSetup
     var mmdEndTrigger = CreateTrigger();
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_VICTORY);
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_END_LEVEL);
-    TriggerAddAction(mmdEndTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmdCache());
+    TriggerAddAction(mmdEndTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
     var leaveTrigger = CreateTrigger();
     TriggerRegisterPlayerEvent(leaveTrigger, Player(PLAYER_NEUTRAL_AGGRESSIVE), EVENT_PLAYER_LEAVE);
-    TriggerAddAction(leaveTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmdCache());
-
+    TriggerAddAction(leaveTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
   }
 
   private static void SetupControlPointManager()

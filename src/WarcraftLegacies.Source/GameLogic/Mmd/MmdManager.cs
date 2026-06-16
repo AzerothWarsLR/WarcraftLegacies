@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using WarcraftLegacies.Source.Save;
 using WCSharp.Shared;
+using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.GameLogic.Mmd;
 
@@ -87,17 +87,6 @@ public static class MmdManager
     stats.CpMinutesOwned += cpCount;
   }
 
-  public static void AddUpgrade(player p, int researchId)
-  {
-    var stats = GetStats(p);
-    if (stats == null)
-    {
-      return;
-    }
-
-    stats.UpgradesCompleted.Add(researchId);
-  }
-
   public static void AddCapitalDestroyed(player p, string capitalName)
   {
     var stats = GetStats(p);
@@ -120,7 +109,7 @@ public static class MmdManager
     stats.Result = result;
   }
 
-  public static void WriteToMmdCache()
+  public static void WriteToMmd()
   {
     foreach (var p in Util.EnumeratePlayers())
     {
@@ -129,28 +118,39 @@ public static class MmdManager
         continue;
       }
 
-      var save = MmdSaveManager.Get(p);
-      save.PlayerId = p.Id;
+      MmdVariables.hero_kills.Set(p, s.HeroKills);
+      MmdVariables.hero_deaths.Set(p, s.HeroDeaths);
+      MmdVariables.hero_damage_dealt.Set(p, s.HeroDamageDealt);
+      MmdVariables.hero_damage_taken.Set(p, s.HeroDamageTaken);
+      MmdVariables.hero_revives.Set(p, s.HeroRevives);
 
-      save.GamesPlayed += 1;
+      MmdVariables.units_killed.Set(p, s.UnitsKilled);
+      MmdVariables.units_lost.Set(p, s.UnitsLost);
+      MmdVariables.damage_to_units.Set(p, s.DamageToUnits);
+      MmdVariables.damage_to_heroes.Set(p, s.DamageToHeroes);
+      MmdVariables.damage_taken_units.Set(p, s.DamageTakenUnits);
+      MmdVariables.damage_taken_heroes.Set(p, s.DamageTakenHeroes);
 
-      save.LastScore = s.UnitsKilled
-                       + s.HeroKills * 5
-                       + s.CpCaptures * 3
-                       + (int)(s.GoldEarned / 100);
+      MmdVariables.gold_earned.Set(p, s.GoldEarned);
+      MmdVariables.gold_spent.Set(p, s.GoldSpent);
 
-      save.TotalScore += save.LastScore;
+      MmdVariables.cp_minutes_owned.Set(p, s.CpMinutesOwned);
+      MmdVariables.cp_captures.Set(p, s.CpCaptures);
+      MmdVariables.cp_value_controlled.Set(p, s.CpValueControlled);
+
+      foreach (var c in s.CapitalsDestroyed)
+      {
+        MmdVariables.capital_destroyed_event.Emit(p.Name, c);
+      }
 
       if (s.Result == "win")
       {
-        save.Wins += 1;
+        W3Mmd.SetPlayerFlag(p, W3MmdFlag.Winner);
       }
       else if (s.Result == "loss")
       {
-        save.Losses += 1;
+        W3Mmd.SetPlayerFlag(p, W3MmdFlag.Loser);
       }
-
-      MmdSaveManager.Save(save);
     }
   }
 }

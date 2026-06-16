@@ -13,4 +13,8 @@
         <ProjectReference Include="..\WarcraftLegacies.Shared\WarcraftLegacies.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="WCSharp.W3MMD" Version="3.3.9" />
+    </ItemGroup>
+
 </Project>

@@ -46,7 +46,6 @@ public static class CheatSetup
     CommandManager.Register(new CheatRemoveAllAbilities());
     CommandManager.Register(new CheatSkipTurns());
     CommandManager.Register(new CheatPermaKill());
-    CommandManager.Register(new CheatWriteMmd());
     CommandManager.Register(new CheatGetUnitCurrentOrder());
     CommandManager.Register(new AssembleZinrokh(new List<Artifact>
     {

@@ -5,7 +5,6 @@ using System.Linq;
 using MacroTools.Extensions;
 
 namespace MacroTools.Commands;
-
 /// <summary>
 /// Responsible for managing all <see cref="Command"/>s in the game.
 /// </summary>

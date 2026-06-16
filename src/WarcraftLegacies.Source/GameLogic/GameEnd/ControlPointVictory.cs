@@ -77,7 +77,7 @@ public static class ControlPointVictory
     }
 
     PlayThematicMusic(whichTeam.VictoryMusic);
-    Mmd.MmdManager.WriteToMmdCache();
+    Mmd.MmdManager.WriteToMmd();
     _gameWon = true;
   }
 }

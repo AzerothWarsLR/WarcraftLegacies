@@ -31,6 +31,7 @@ public sealed class DemonGate : UnitTrait, IEffectOnUpgrade, IEffectOnCreated
   /// <inheritdoc />
   public void OnUpgrade()
   {
+    @event
     ApplyBuff(@event.Unit);
   }
 
