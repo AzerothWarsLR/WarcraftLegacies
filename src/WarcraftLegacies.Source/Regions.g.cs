@@ -281,6 +281,7 @@ public static class Regions
   public static Rectangle SouthshoreAmbient5 { get; set; } = new Rectangle(15232f, 896f, 18848f, 1632f);
   public static Rectangle SouthshoreUnlock { get; set; } = new Rectangle(10016f, 1664f, 12128f, 2848f);
   public static Rectangle StonemaulKeep { get; set; } = new Rectangle(-12096f, -10144f, -9216f, -7904f);
+  public static Rectangle Stonetalon_Peak { get; set; } = new Rectangle(-19520f, 384f, -17728f, 1824f);
   public static Rectangle Storm_Peaks { get; set; } = new Rectangle(-1088f, 21088f, 4640f, 25088f);
   public static Rectangle Stormwind { get; set; } = new Rectangle(10880f, -10176f, 11040f, -10016f);
   public static Rectangle StormwindAmbient2 { get; set; } = new Rectangle(6624f, -10528f, 8160f, -8544f);

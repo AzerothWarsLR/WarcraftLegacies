@@ -36,7 +36,7 @@
       "Pointer": 5,
       "Id": "Nbf5",
       "Type": 2,
-      "Value": 10
+      "Value": 20
     },
     {
       "Id": "aher",
@@ -51,6 +51,18 @@
       "Id": "aran",
       "Type": 2,
       "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
     },
     {
       "Id": "aart",
@@ -77,7 +89,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Breathes a cone of fire at enemy units, dealing 75 damage and an additional 50 damage over 10 seconds."
+      "Value": "Breathes a cone of fire at enemy units, dealing 75 damage."
     },
     {
       "Id": "auby",

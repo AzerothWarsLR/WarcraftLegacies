@@ -20,14 +20,14 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 100
+      "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 1,
       "Id": "Rej1",
       "Type": 2,
-      "Value": 800
+      "Value": 1000
     },
     {
       "Id": "arac",

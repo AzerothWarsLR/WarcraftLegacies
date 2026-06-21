@@ -59,12 +59,12 @@
     },
     {
       "Id": "uint",
-      "Value": 24
+      "Value": 28
     },
     {
       "Id": "uinp",
       "Type": 2,
-      "Value": 2.8
+      "Value": 3.1
     },
     {
       "Id": "umh1",

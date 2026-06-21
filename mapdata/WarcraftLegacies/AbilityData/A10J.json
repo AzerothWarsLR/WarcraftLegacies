@@ -28,9 +28,19 @@
       "Value": 0
     },
     {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "VP31"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(stormriders)"
+      "Value": "(Ironforge)"
     },
     {
       "Id": "arhk",
@@ -58,10 +68,6 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "Master of Lightning"
-    },
-    {
-      "Id": "abpx",
-      "Value": 0
     },
     {
       "Id": "arpx",

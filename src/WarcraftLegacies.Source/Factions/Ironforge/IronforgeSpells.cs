@@ -24,7 +24,7 @@ public static class IronforgeSpells
       GoldCost = 25
     });
 
-    SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_MAGNI_BRONZEBEARD)
+    SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_FALSTAD_WILDHAMMER)
     {
       GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
       StormRiderTypeId = UNIT_H03Z_STORMRIDER_IRONFORGE,

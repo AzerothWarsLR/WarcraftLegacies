@@ -38,7 +38,7 @@ public sealed class QuestWildhammer : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Gain control of Aerie Peak, learn to train War Gryphons from the Gryphon Aviary, learn to train Falstad Wildhammer from the {GetObjectName(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR)}, and gain the ability to research {GetObjectName(UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)} at the {GetObjectName(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SIEGE)}";
+    $"Gain control of Aerie Peak, learn to train Falstad Wildhammer from the {GetObjectName(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR)}, and gain the ability to research {GetObjectName(UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)} at the {GetObjectName(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_AIR)}";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
