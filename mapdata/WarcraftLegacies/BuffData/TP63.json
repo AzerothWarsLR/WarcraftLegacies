@@ -1,0 +1,34 @@
+{
+  "OldId": "BOwk",
+  "NewId": "TP63",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00Taunt|r"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaunt.blp"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit periodically forces nearby enemies to attack it."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Taunt"
+    }
+  ]
+}

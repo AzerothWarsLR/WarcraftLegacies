@@ -1,0 +1,64 @@
+{
+  "OldId": "Atau",
+  "NewId": "TP61",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Tau5",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Tau4",
+      "Value": 5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Avatar of the Mountain)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The closest \u003CAtau,DataA1\u003E enemies are forced to attack this unit."
+    },
+    {
+      "Id": "abpx",
+      "Value": -1
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    }
+  ]
+}
