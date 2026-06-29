@@ -12,10 +12,11 @@ using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
+using WarcraftLegacies.Source.GameLogic.Mmd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
-
+using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.Setup;
 /// <summary>
@@ -28,6 +29,8 @@ public static class GameSetup
   /// </summary>
   public static void Setup()
   {
+    W3Mmd.ForceInit();
+    MmdVariables.Init();
     FactionManager.Setup();
     UnitTypeSetup.Setup();
     SaveManager.Initialize();
@@ -95,12 +98,21 @@ public static class GameSetup
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
-    GameLogic.Mmd.MmdEvents.Setup();
-    GameLogic.Mmd.MmdEvents_W3MMD.Setup();
+    var mmdInitTimer = CreateTimer();
+    TimerStart(mmdInitTimer, 5.0f, false, () =>
+    {
+      MmdEvents.Setup();
+    });
+    var mmdWriteTimer = CreateTimer();
+    TimerStart(mmdWriteTimer, 60.0f, false, () =>
+    {
+      MmdManager.WriteToMmd();
+    });
     var mmdEndTrigger = CreateTrigger();
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_VICTORY);
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_END_LEVEL);
     TriggerAddAction(mmdEndTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
+
     var leaveTrigger = CreateTrigger();
     for (var i = 0; i < 24; i++)
     {
