@@ -3,7 +3,6 @@ using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Setup;
 using WCSharp.Events;
-using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic.Mmd;
 
@@ -17,10 +16,21 @@ public static class MmdEvents
     SetupCapitalEvents();
   }
 
+  private static bool IsMmdPlayer(player p)
+  {
+    return GetPlayerController(p) == MAP_CONTROL_USER
+        && GetPlayerSlotState(p) != PLAYER_SLOT_STATE_EMPTY;
+  }
+
   private static void SetupHeroEvents()
   {
-    foreach (var p in Util.EnumeratePlayers())
+    foreach (var p in MmdManager.StatsByPlayer.Keys)
     {
+      if (!MmdUtils.IsMmdPlayer(p))
+      {
+        continue;
+      }
+
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnHeroTrained, p.Id);
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnHeroDealsDamage, p.Id);
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnHeroTakesDamage, p.Id);
@@ -38,7 +48,7 @@ public static class MmdEvents
     }
 
     var stats = MmdManager.GetStats(unit.Owner);
-    if (stats == null)
+    if (stats == null || !IsMmdPlayer(unit.Owner))
     {
       return;
     }
@@ -55,16 +65,18 @@ public static class MmdEvents
       return;
     }
 
-    var stats = MmdManager.GetStats(source.Owner);
-    if (stats == null)
+    if (LegendaryHeroManager.GetFromUnit(source) == null)
     {
       return;
     }
 
-    if (LegendaryHeroManager.GetFromUnit(source) != null)
+    var stats = MmdManager.GetStats(source.Owner);
+    if (stats == null || !IsMmdPlayer(source.Owner))
     {
-      stats.HeroDamageDealt += @event.Damage;
+      return;
     }
+
+    stats.HeroDamageDealt += @event.Damage;
   }
 
   private static void OnHeroTakesDamage()
@@ -76,16 +88,18 @@ public static class MmdEvents
       return;
     }
 
-    var stats = MmdManager.GetStats(target.Owner);
-    if (stats == null)
+    if (LegendaryHeroManager.GetFromUnit(target) == null)
     {
       return;
     }
 
-    if (LegendaryHeroManager.GetFromUnit(target) != null)
+    var stats = MmdManager.GetStats(target.Owner);
+    if (stats == null || !IsMmdPlayer(target.Owner))
     {
-      stats.HeroDamageTaken += @event.Damage;
+      return;
     }
+
+    stats.HeroDamageTaken += @event.Damage;
   }
 
   private static void OnHeroDeath()
@@ -98,7 +112,7 @@ public static class MmdEvents
     }
 
     var stats = MmdManager.GetStats(unit.Owner);
-    if (stats == null)
+    if (stats == null || !IsMmdPlayer(unit.Owner))
     {
       return;
     }
@@ -108,8 +122,13 @@ public static class MmdEvents
 
   private static void SetupUnitEvents()
   {
-    foreach (var p in Util.EnumeratePlayers())
+    foreach (var p in MmdManager.StatsByPlayer.Keys)
     {
+      if (!MmdUtils.IsMmdPlayer(p))
+      {
+        continue;
+      }
+
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.FactionUnitKills, OnUnitKill, p.Id);
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, p.Id);
     }
@@ -125,7 +144,7 @@ public static class MmdEvents
     }
 
     var stats = MmdManager.GetStats(killer.Owner);
-    if (stats == null)
+    if (stats == null || !IsMmdPlayer(killer.Owner))
     {
       return;
     }
@@ -136,8 +155,9 @@ public static class MmdEvents
   private static void OnUnitDeath()
   {
     var unit = @event.Unit;
+
     var stats = MmdManager.GetStats(unit.Owner);
-    if (stats == null)
+    if (stats == null || !IsMmdPlayer(unit.Owner))
     {
       return;
     }
@@ -152,6 +172,12 @@ public static class MmdEvents
       cp.OwnerAllianceChanged += controlPoint =>
       {
         var owner = controlPoint.Owner;
+
+        if (!IsMmdPlayer(owner))
+        {
+          return;
+        }
+
         var stats = MmdManager.GetStats(owner);
         if (stats == null)
         {
@@ -168,6 +194,12 @@ public static class MmdEvents
       foreach (var cp in ControlPointManager.Instance.GetAllControlPoints())
       {
         var owner = cp.Owner;
+
+        if (!IsMmdPlayer(owner))
+        {
+          continue;
+        }
+
         var stats = MmdManager.GetStats(owner);
         if (stats == null)
         {
@@ -191,6 +223,12 @@ public static class MmdEvents
         }
 
         var owner = capital.Unit.Owner;
+
+        if (!IsMmdPlayer(owner))
+        {
+          return;
+        }
+
         var stats = MmdManager.GetStats(owner);
         if (stats == null)
         {

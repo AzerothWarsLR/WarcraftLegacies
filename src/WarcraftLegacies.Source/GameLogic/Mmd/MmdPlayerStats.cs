@@ -5,11 +5,13 @@ namespace WarcraftLegacies.Source.GameLogic.Mmd;
 public sealed class MmdPlayerStats
 {
   public int PlayerId { get; }
+
   public string? FactionName { get; set; }
   public string? PlayerName { get; set; }
   public string? TeamName { get; set; }
 
   public string? HeroName { get; set; }
+
   public int HeroKills { get; set; }
   public int HeroDeaths { get; set; }
   public float HeroDamageDealt { get; set; }
@@ -18,6 +20,7 @@ public sealed class MmdPlayerStats
 
   public int UnitsKilled { get; set; }
   public int UnitsLost { get; set; }
+
   public float DamageToUnits { get; set; }
   public float DamageToHeroes { get; set; }
   public float DamageTakenUnits { get; set; }

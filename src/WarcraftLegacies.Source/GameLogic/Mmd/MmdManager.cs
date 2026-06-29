@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using WCSharp.Shared;
 using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.GameLogic.Mmd;
@@ -111,8 +110,13 @@ public static class MmdManager
 
   public static void WriteToMmd()
   {
-    foreach (var p in Util.EnumeratePlayers())
+    foreach (var p in MmdManager.StatsByPlayer.Keys)
     {
+      if (!MmdUtils.IsMmdPlayer(p))
+      {
+        continue;
+      }
+
       if (!_statsByPlayer.TryGetValue(p, out var s))
       {
         continue;
