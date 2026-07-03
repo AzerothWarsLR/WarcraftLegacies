@@ -13,6 +13,9 @@ public static class MmdManager
 
   public static void RegisterPlayer(player p, Faction faction)
   {
+    if (!MmdUtils.IsMmdPlayer(p))
+      return;
+
     if (!_statsByPlayer.TryGetValue(p, out var stats))
     {
       stats = new MmdPlayerStats(p.Id);
