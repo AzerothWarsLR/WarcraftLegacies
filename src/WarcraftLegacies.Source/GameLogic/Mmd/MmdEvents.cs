@@ -1,4 +1,5 @@
 ﻿using MacroTools.ControlPoints;
+using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Legends;
 using MacroTools.Setup;
@@ -8,12 +9,16 @@ namespace WarcraftLegacies.Source.GameLogic.Mmd;
 
 public static class MmdEvents
 {
+  public static void SubscribeToPlayerRegistration()
+  {
+    MmdManager.PlayerRegistered += RegisterPlayerEvents;
+  }
+
   public static void Setup()
   {
-    SetupHeroEvents();
-    SetupUnitEvents();
     SetupControlPointEvents();
     SetupCapitalEvents();
+    SetupHeroReviveEvents();
   }
 
   private static bool IsMmdPlayer(player p)
@@ -22,20 +27,14 @@ public static class MmdEvents
         && GetPlayerSlotState(p) != PLAYER_SLOT_STATE_EMPTY;
   }
 
-  private static void SetupHeroEvents()
+  private static void RegisterPlayerEvents(player p, Faction faction)
   {
-    foreach (var p in MmdManager.StatsByPlayer.Keys)
-    {
-      if (!MmdUtils.IsMmdPlayer(p))
-      {
-        continue;
-      }
-
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnHeroTrained, p.Id);
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnHeroDealsDamage, p.Id);
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnHeroTakesDamage, p.Id);
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnHeroDeath, p.Id);
-    }
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnHeroTrained, p.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnPlayerDealsDamage, p.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnPlayerTakesDamage, p.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnHeroDeath, p.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.FactionUnitKills, OnUnitKill, faction.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, p.Id);
   }
 
   private static void OnHeroTrained()
@@ -56,16 +55,11 @@ public static class MmdEvents
     stats.HeroName = hero.Name;
   }
 
-  private static void OnHeroDealsDamage()
+  private static void OnPlayerDealsDamage()
   {
     var source = @event.DamageSource;
     var target = @event.Unit;
     if (source == null || target == null)
-    {
-      return;
-    }
-
-    if (LegendaryHeroManager.GetFromUnit(source) == null)
     {
       return;
     }
@@ -76,19 +70,26 @@ public static class MmdEvents
       return;
     }
 
-    stats.HeroDamageDealt += @event.Damage;
+    if (LegendaryHeroManager.GetFromUnit(target) != null)
+    {
+      stats.DamageToHeroes += @event.Damage;
+    }
+    else
+    {
+      stats.DamageToUnits += @event.Damage;
+    }
+
+    if (LegendaryHeroManager.GetFromUnit(source) != null)
+    {
+      stats.HeroDamageDealt += @event.Damage;
+    }
   }
 
-  private static void OnHeroTakesDamage()
+  private static void OnPlayerTakesDamage()
   {
     var source = @event.DamageSource;
     var target = @event.Unit;
     if (source == null || target == null)
-    {
-      return;
-    }
-
-    if (LegendaryHeroManager.GetFromUnit(target) == null)
     {
       return;
     }
@@ -99,7 +100,19 @@ public static class MmdEvents
       return;
     }
 
-    stats.HeroDamageTaken += @event.Damage;
+    if (LegendaryHeroManager.GetFromUnit(source) != null)
+    {
+      stats.DamageTakenHeroes += @event.Damage;
+    }
+    else
+    {
+      stats.DamageTakenUnits += @event.Damage;
+    }
+
+    if (LegendaryHeroManager.GetFromUnit(target) != null)
+    {
+      stats.HeroDamageTaken += @event.Damage;
+    }
   }
 
   private static void OnHeroDeath()
@@ -118,20 +131,6 @@ public static class MmdEvents
     }
 
     stats.HeroDeaths += 1;
-  }
-
-  private static void SetupUnitEvents()
-  {
-    foreach (var p in MmdManager.StatsByPlayer.Keys)
-    {
-      if (!MmdUtils.IsMmdPlayer(p))
-      {
-        continue;
-      }
-
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.FactionUnitKills, OnUnitKill, p.Id);
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, p.Id);
-    }
   }
 
   private static void OnUnitKill()
@@ -236,6 +235,35 @@ public static class MmdEvents
         }
 
         stats.CapitalsDestroyed.Add(capital.Name);
+      };
+    }
+  }
+
+  private static void SetupHeroReviveEvents()
+  {
+    foreach (var hero in LegendaryHeroManager.GetAll())
+    {
+      hero.Revived += () =>
+      {
+        if (hero.Unit == null)
+        {
+          return;
+        }
+
+        var owner = hero.Unit.Owner;
+
+        if (!IsMmdPlayer(owner))
+        {
+          return;
+        }
+
+        var stats = MmdManager.GetStats(owner);
+        if (stats == null)
+        {
+          return;
+        }
+
+        stats.HeroRevives += 1;
       };
     }
   }

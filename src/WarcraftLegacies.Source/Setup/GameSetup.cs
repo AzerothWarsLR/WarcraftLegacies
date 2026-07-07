@@ -31,6 +31,8 @@ public static class GameSetup
   {
     W3Mmd.ForceInit();
     MmdVariables.Init();
+    MmdManager.Setup();
+    MmdEvents.SubscribeToPlayerRegistration();
     FactionManager.Setup();
     UnitTypeSetup.Setup();
     SaveManager.Initialize();
@@ -98,11 +100,7 @@ public static class GameSetup
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
-    var mmdInitTimer = CreateTimer();
-    TimerStart(mmdInitTimer, 5.0f, false, () =>
-    {
-      MmdEvents.Setup();
-    });
+    MmdEvents.Setup();
     var mmdWriteTimer = CreateTimer();
     TimerStart(mmdWriteTimer, 60.0f, false, () =>
     {
@@ -111,7 +109,11 @@ public static class GameSetup
     var mmdEndTrigger = CreateTrigger();
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_VICTORY);
     TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_END_LEVEL);
-    TriggerAddAction(mmdEndTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
+    TriggerAddAction(mmdEndTrigger, () =>
+    {
+      MmdManager.FinalizeUndecidedResults();
+      MmdManager.WriteToMmd();
+    });
 
     var leaveTrigger = CreateTrigger();
     for (var i = 0; i < 24; i++)

@@ -40,6 +40,11 @@ public sealed class LegendaryHero : Legend
   public event Action? DealtDamage;
 
   /// <summary>
+  /// Invoked when the <see cref="LegendaryHero"/> is revived after a temporary death.
+  /// </summary>
+  public event Action? Revived;
+
+  /// <summary>
   ///   If true, the Legend is permanently removed from the game upon death.
   /// </summary>
   public bool PermaDies
@@ -131,6 +136,7 @@ public sealed class LegendaryHero : Legend
     else if (!Unit.Alive)
     {
       Unit.Revive(position.X, position.Y, false);
+      Revived?.Invoke();
     }
     else
     {

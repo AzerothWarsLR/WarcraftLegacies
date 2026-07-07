@@ -40,6 +40,11 @@ public sealed class MmdPlayerStats
 
   public string Result { get; set; } = "Unknown";
 
+  /// <summary>
+  /// The <see cref="MacroTools.GameTime.GameTimeManager"/> turn at which <see cref="Result"/> was decided.
+  /// </summary>
+  public int TurnsSurvived { get; set; }
+
   public MmdPlayerStats(int playerId)
   {
     PlayerId = playerId;

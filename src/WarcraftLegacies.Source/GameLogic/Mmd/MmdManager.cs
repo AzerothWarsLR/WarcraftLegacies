@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Legends;
 using WCSharp.W3MMD;
 
@@ -11,15 +14,38 @@ public static class MmdManager
 
   public static IReadOnlyDictionary<player, MmdPlayerStats> StatsByPlayer => _statsByPlayer;
 
+  public static event Action<player, Faction>? PlayerRegistered;
+
+  public static void Setup()
+  {
+    PlayerData.FactionChange += args =>
+    {
+      if (args.Player.GetPlayerData().Faction is { } faction)
+      {
+        RegisterPlayer(args.Player, faction);
+      }
+    };
+  }
+
   public static void RegisterPlayer(player p, Faction faction)
   {
-    if (!MmdUtils.IsMmdPlayer(p))
-      return;
+    if (!MmdUtils.IsMmdPlayer(p)){
+      return;}
 
     if (!_statsByPlayer.TryGetValue(p, out var stats))
     {
       stats = new MmdPlayerStats(p.Id);
       _statsByPlayer[p] = stats;
+
+      faction.ScoreStatusChanged += changedFaction =>
+      {
+        if (changedFaction.ScoreStatus == ScoreStatus.Defeated)
+        {
+          SetResult(p, "loss");
+        }
+      };
+
+      PlayerRegistered?.Invoke(p, faction);
     }
 
     stats.PlayerName = p.Name;
@@ -109,6 +135,24 @@ public static class MmdManager
     }
 
     stats.Result = result;
+    stats.TurnsSurvived = GameTimeManager.Turn;
+  }
+
+  public static void FinalizeUndecidedResults()
+  {
+    foreach (var (p, stats) in _statsByPlayer)
+    {
+      if (stats.Result != "Unknown")
+      {
+        continue;
+      }
+
+      if (p.GetPlayerData().Faction?.ScoreStatus != ScoreStatus.Defeated)
+      {
+        stats.Result = "win";
+        stats.TurnsSurvived = GameTimeManager.Turn;
+      }
+    }
   }
 
   public static void WriteToMmd()
@@ -144,6 +188,9 @@ public static class MmdManager
       MmdVariables.cp_minutes_owned.Set(p, s.CpMinutesOwned);
       MmdVariables.cp_captures.Set(p, s.CpCaptures);
       MmdVariables.cp_value_controlled.Set(p, s.CpValueControlled);
+
+      MmdVariables.turns_survived.Set(p, s.TurnsSurvived);
+      MmdVariables.score.Set(p, MmdScoring.Compute(s));
 
       foreach (var c in s.CapitalsDestroyed)
       {

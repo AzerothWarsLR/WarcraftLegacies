@@ -24,6 +24,9 @@ public static class MmdVariables
   public static W3MmdIntVar cp_captures;
   public static W3MmdIntVar cp_value_controlled;
 
+  public static W3MmdIntVar turns_survived;
+  public static W3MmdFloatVar score;
+
   public static W3MmdEvent hero_kill_event;
   public static W3MmdEvent unit_kill_event;
   public static W3MmdEvent capital_destroyed_event;
@@ -57,6 +60,9 @@ public static class MmdVariables
     cp_minutes_owned = W3Mmd.DefineFloat("cp_minutes_owned", W3MmdGoalType.High, W3MmdSuggestionType.Track);
     cp_captures = W3Mmd.DefineInt("cp_captures", W3MmdGoalType.High, W3MmdSuggestionType.Track);
     cp_value_controlled = W3Mmd.DefineInt("cp_value_controlled", W3MmdGoalType.High, W3MmdSuggestionType.Track);
+
+    turns_survived = W3Mmd.DefineInt("turns_survived", W3MmdGoalType.High, W3MmdSuggestionType.Track);
+    score = W3Mmd.DefineFloat("score", W3MmdGoalType.High, W3MmdSuggestionType.Track);
 
     hero_kill_event = W3Mmd.DefineEvent("hero_kill", "{0} killed hero {1}", "Killer", "Victim");
     unit_kill_event = W3Mmd.DefineEvent("unit_kill", "{0} killed unit {1}", "Killer", "Victim");
