@@ -1,7 +1,8 @@
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using WarcraftLegacies.Source.GameLogic.Mmd;
 
 namespace WarcraftLegacies.Source.Cheats;
+
 public sealed class CheatForceWin : Command
 {
   /// <inheritdoc />

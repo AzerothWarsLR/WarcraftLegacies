@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.Source.GameLogic.Mmd;
+﻿namespace WarcraftLegacies.Source.GameLogic.Mmd;
 
 /// <summary>
 /// Combines a player's raw MMD stats into a single overall performance score.
