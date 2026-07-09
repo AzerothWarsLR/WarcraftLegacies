@@ -2,6 +2,7 @@
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -25,7 +26,9 @@ public sealed class ObjectiveAnyUnitReachRect : Objective, IHasCompletingUnit
   public ObjectiveAnyUnitReachRect(Rectangle targetRect, string rectName, bool heroOnly)
   {
     _targetRect = targetRect.Rect;
-    Description = heroOnly ? $"You have a hero reach {rectName}" : $"You have a unit reach {rectName}";
+    Description = heroOnly
+      ? Loc.Format("You have a hero reach {rect}", ("{rect}", Loc.Get(rectName)))
+      : Loc.Format("You have a unit reach {rect}", ("{rect}", Loc.Get(rectName)));
     _heroOnly = heroOnly;
     DisplaysPosition = true;
     PingPath = "MinimapQuestTurnIn";
@@ -50,7 +53,7 @@ public sealed class ObjectiveAnyUnitReachRect : Objective, IHasCompletingUnit
   public unit? CompletingUnit { get; private set; }
 
   /// <inheritdoc />
-  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : Loc.Get("an unknown hero");
 
   private bool IsUnitValid(unit whichUnit) => EligibleFactions.Contains(whichUnit.Owner) &&
                                               whichUnit.Alive &&

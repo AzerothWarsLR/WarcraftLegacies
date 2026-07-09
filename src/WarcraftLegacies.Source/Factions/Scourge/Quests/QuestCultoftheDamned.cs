@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -33,8 +34,8 @@ public sealed class QuestCultoftheDamned : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    var power = new PlayerVisionPower("Cult Spies",
-      "Grants vision of all of Lordaeron's units.",
+    var power = new PlayerVisionPower(Loc.Get("Cult Spies"),
+      Loc.Get("Grants vision of all of Lordaeron's units."),
       "Acolyte",
       new[]
       {

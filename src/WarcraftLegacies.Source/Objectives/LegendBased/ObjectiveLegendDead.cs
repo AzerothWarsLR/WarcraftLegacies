@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Shared.Data;
 
@@ -75,9 +76,13 @@ public sealed class ObjectiveLegendDead : Objective
   {
     if (PermanentOnly)
     {
-      return OnlyCreditKiller ? $"Permanently kill {target.Name}" : $"{target.Name} is permanently dead";
+      return OnlyCreditKiller
+        ? Loc.Format("Permanently kill {target}", ("{target}", Loc.Get(target.Name)))
+        : Loc.Format("{target} is permanently dead", ("{target}", Loc.Get(target.Name)));
     }
 
-    return OnlyCreditKiller ? $"Kill {target.Name}" : $"{target.Name} is dead";
+    return OnlyCreditKiller
+      ? Loc.Format("Kill {target}", ("{target}", Loc.Get(target.Name)))
+      : Loc.Format("{target} is dead", ("{target}", Loc.Get(target.Name)));
   }
 }

@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
@@ -15,8 +16,8 @@ public sealed class ObjectiveUnitAlive : Objective
   public ObjectiveUnitAlive(unit whichUnit)
   {
     Description = whichUnit.IsUnitType(unittype.Structure)
-      ? $"{whichUnit.Name} is intact"
-      : $"{whichUnit.Name} is alive";
+      ? Loc.Format("{target} is intact", ("{target}", Loc.Get(whichUnit.Name)))
+      : Loc.Format("{target} is alive", ("{target}", Loc.Get(whichUnit.Name)));
     Progress = QuestProgress.Complete;
     PlayerUnitEvents.Register(UnitEvent.Dies, () =>
     {

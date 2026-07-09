@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -34,7 +35,8 @@ public sealed class QuestWildhammer : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    $"{_heroEnteringShadowforge.CompletingUnitName} has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.";
+    Loc.Format("{hero} has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.",
+      ("{hero}", _heroEnteringShadowforge.CompletingUnitName));
 
   /// <inheritdoc />
   protected override string RewardDescription =>

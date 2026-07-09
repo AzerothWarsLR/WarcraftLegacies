@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
@@ -93,7 +94,7 @@ public sealed class QuestPlague : QuestData
       );
     }
 
-    if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
+    if (completingFaction.TryGetPowerByName(Loc.Get("Cult Spies"), out var spiesPower))
     {
       completingFaction.RemovePower(spiesPower);
     }
@@ -119,19 +120,19 @@ public sealed class QuestPlague : QuestData
   private static void PresentInvasionDialogs()
   {
     new ScourgeInvasionDialogPresenter(
-        new ScourgeInvasionChoice(null, "No invasion")
+        new ScourgeInvasionChoice(null, Loc.Get("No invasion"))
         {
           AttackTarget = null
         },
-        new ScourgeInvasionChoice(Regions.ScholoInvasion, "Scholomance")
+        new ScourgeInvasionChoice(Regions.ScholoInvasion, Loc.Get("Scholomance"))
         {
           AttackTarget = new Point(Regions.SkullRetrieval.Center.X, Regions.SkullRetrieval.Center.Y)
         },
-        new ScourgeInvasionChoice(Regions.StrathInvasion, "Stratholme")
+        new ScourgeInvasionChoice(Regions.StrathInvasion, Loc.Get("Stratholme"))
         {
           AttackTarget = new Point(Regions.StrathAttackTarget.Center.X, Regions.StrathAttackTarget.Center.Y)
         },
-        new ScourgeInvasionChoice(Regions.DeathknellUnlock, "Deathknell")
+        new ScourgeInvasionChoice(Regions.DeathknellUnlock, Loc.Get("Deathknell"))
         {
           AttackTarget = new Point(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y)
         })

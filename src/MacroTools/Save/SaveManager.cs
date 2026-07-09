@@ -67,7 +67,21 @@ public static class SaveManager
       }
 
       LocalPlayerSettingsReady = true;
-      LocalPlayerSettingsLoaded?.Invoke();
+
+      if (LocalPlayerSettingsLoaded != null)
+      {
+        foreach (var action in LocalPlayerSettingsLoaded.GetInvocationList())
+        {
+          try
+          {
+            ((Action)action)();
+          }
+          catch (Exception ex)
+          {
+            Console.WriteLine($"A {nameof(RunWhenLocalPlayerSettingsReady)} action failed: {ex}");
+          }
+        }
+      }
     }
     save.GetPlayer().ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, save.CamDistance, 1);
     save.GetPlayer().GetPlayerSettings().ShowQuestText = save.ShowQuestText;

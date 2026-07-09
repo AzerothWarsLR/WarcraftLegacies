@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WCSharp.Events;
@@ -18,8 +19,8 @@ public sealed class ObjectiveResearch : Objective
   public ObjectiveResearch(int researchId, int structureId, bool structureIsProperNoun = false)
   {
     Description = structureIsProperNoun
-      ? $"Research {GetObjectName(researchId)} from {GetObjectName(structureId)}"
-      : $"Research {GetObjectName(researchId)} from the {GetObjectName(structureId)}";
+      ? Loc.Format("Research {research} from {structure}", ("{research}", GetObjectName(researchId)), ("{structure}", GetObjectName(structureId)))
+      : Loc.Format("Research {research} from the {structure}", ("{research}", GetObjectName(researchId)), ("{structure}", GetObjectName(structureId)));
     PlayerUnitEvents.Register(ResearchEvent.IsFinished, OnAnyResearch, researchId);
   }
 

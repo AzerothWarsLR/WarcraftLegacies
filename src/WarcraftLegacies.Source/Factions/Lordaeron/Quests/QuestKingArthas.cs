@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -52,7 +53,7 @@ public sealed class QuestKingArthas : QuestData
     _arthas.ClearUnitDependencies();
     _arthas.Unit?
       .AddItemSafe(_crownOfLordaeron.Item);
-    _terenas.Name = "King Emeritus Terenas Menethil";
+    _terenas.Name = Loc.Get("King Emeritus Terenas Menethil");
     completingFaction.ModObjectLimit(UNIT_HKNI_KNIGHT_LORDAERON, -Faction.Unlimited);
     completingFaction.ModObjectLimit(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON, Faction.Unlimited);
 

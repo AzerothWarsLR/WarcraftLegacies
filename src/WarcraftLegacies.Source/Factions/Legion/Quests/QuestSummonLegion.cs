@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -38,7 +39,8 @@ public sealed class QuestSummonLegion : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    $"A great portal to the depths of the Twisting Nether has been opened by {_objectiveCastSpell.Caster?.GetProperName()}. The Burning Legion steps forth, heralding the beginning of the end.";
+    Loc.Format("A great portal to the depths of the Twisting Nether has been opened by {hero}. The Burning Legion steps forth, heralding the beginning of the end.",
+      ("{hero}", _objectiveCastSpell.Caster?.GetProperName() ?? Loc.Get("an unknown hero")));
 
   /// <inheritdoc />
   protected override string RewardDescription =>

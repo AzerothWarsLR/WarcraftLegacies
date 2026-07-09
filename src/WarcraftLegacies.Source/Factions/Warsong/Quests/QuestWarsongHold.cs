@@ -1,6 +1,7 @@
 ﻿using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -42,7 +43,7 @@ public sealed class QuestWarsongHold : QuestData
     boreanTundra.SetOwner(completingFaction.Player);
 
     var warsongHold = CreateStructureForced(completingFaction.Player, UNIT_O02S_FORTRESS_WARSONG_T3, -7648, 15456, 270, 192);
-    warsongHold.Name = "Warsong Hold";
+    warsongHold.Name = Loc.Get("Warsong Hold");
     warsongHold.MaxLife = 4000;
     warsongHold.SetLifePercent(100);
     warsongHold.AddAbility(AbilityId);

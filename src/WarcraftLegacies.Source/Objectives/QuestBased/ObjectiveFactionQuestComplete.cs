@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.QuestBased;
@@ -14,7 +15,7 @@ public sealed class ObjectiveFactionQuestComplete : Objective
   public ObjectiveFactionQuestComplete(QuestData target, Faction faction)
   {
     _target = target;
-    Description = $"{faction.Name} has completed the quest {target.Title}";
+    SetDescription("{faction} has completed the quest {quest}", ("{faction}", faction.Name), ("{quest}", target.Title));
     faction.QuestProgressChanged += OnQuestProgressChanged;
     Progress = QuestProgress.Incomplete;
   }

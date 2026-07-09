@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -19,7 +20,7 @@ public sealed class ObjectiveLegendInRect : Objective
     _targetRect = targetRect.Rect;
     _target = RectToRegion(_targetRect);
     _legendaryHero = legendaryHero;
-    Description = $"{legendaryHero.Name} is at {rectName}";
+    SetDescription("{hero} is at {rect}", ("{hero}", legendaryHero.Name), ("{rect}", Loc.Get(rectName)));
     _entersRect.Trigger.RegisterEnterRegion(_target);
     _entersRect.Trigger.AddAction(OnRegionEnter);
     _exitsRect.Trigger.RegisterLeaveRegion(_target);

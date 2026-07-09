@@ -2232,9 +2232,15 @@ public static class Loc
   /// Returns the translation of <paramref name="english"/> for the local player's language, or
   /// <paramref name="english"/> itself if no translation exists yet.
   /// </summary>
-  public static string Get(string english)
+  public static string Get(string english) => Get(english, player.LocalPlayer.GetPlayerData().PlayerSettings.Language);
+
+  /// <summary>
+  /// Like <see cref="Get(string)"/>, but resolves against an explicit <paramref name="language"/> instead of the
+  /// local player's saved preference. Use this when text must be localized before the local player's save (and
+  /// therefore their saved language) has finished loading - see <see cref="GetSystemLanguage"/>.
+  /// </summary>
+  public static string Get(string english, string? language)
   {
-    var language = player.LocalPlayer.GetPlayerData().PlayerSettings.Language;
     if (language != null
         && _translations.TryGetValue(language, out var dictionary)
         && dictionary.TryGetValue(english, out var translated))
@@ -2243,6 +2249,17 @@ public static class Loc
     }
 
     return english;
+  }
+
+  /// <summary>
+  /// Best-effort language guess based on the client's OS locale, available synchronously with no dependency on
+  /// <see cref="MacroTools.Save.SaveManager"/>. Does not reflect a manually-chosen language preference stored in
+  /// the player's save, since that requires the save to finish loading first.
+  /// </summary>
+  public static string GetSystemLanguage()
+  {
+    var locale = BlzGetLocale();
+    return locale.StartsWith("es") ? "es" : locale.StartsWith("zh") ? "zh" : "en";
   }
 
   /// <summary>

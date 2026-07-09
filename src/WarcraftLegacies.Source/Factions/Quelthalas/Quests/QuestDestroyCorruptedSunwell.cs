@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Quelthalas.Powers;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -34,8 +35,10 @@ public sealed class QuestDestroyCorruptedSunwell : QuestData
     {
       var firstActiveFont = _fontOfPower.GetActiveFonts().FirstOrDefault(x => x != _sunwell);
       return firstActiveFont != null
-        ? $"The blighted tumour of the Sunwell has been excised from the Thalassian homeland. Its people have already turned their magical thirst elsewhere, drawing upon the magicks of {firstActiveFont.Name}."
-        : "With the Sunwell destroyed, the people of Quel'thalas are freed from its necrotic influence. Yet still they yearn for its magical energies - this addiction must be sated another way.";
+        ? Loc.Format(
+            "The blighted tumour of the Sunwell has been excised from the Thalassian homeland. Its people have already turned their magical thirst elsewhere, drawing upon the magicks of {font}.",
+            ("{font}", firstActiveFont.Name))
+        : Loc.Get("With the Sunwell destroyed, the people of Quel'thalas are freed from its necrotic influence. Yet still they yearn for its magical energies - this addiction must be sated another way.");
     }
   }
 

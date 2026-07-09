@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
+using MacroTools.Save;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Utils.Environment;
 
@@ -80,7 +82,7 @@ public abstract class Objective
 
       if (QuestItem != null)
       {
-        QuestItem.SetDescription(_description);
+        QuestItem.SetDescription(Loc.Get(_description));
       }
     }
   }
@@ -94,6 +96,11 @@ public abstract class Objective
   /// Initializes a new instance of the <see cref="Objective"/> class.
   /// </summary>
   protected Objective() => SetResearchLevelForAllPlayers(ResearchId, 0);
+
+  protected void SetDescription(string english, params (string Token, string Value)[] args)
+  {
+    SaveManager.RunWhenLocalPlayerSettingsReady(() => Description = Loc.Format(english, args));
+  }
 
   /// <summary>
   /// Returns true if the specified player is on the same team as any of the players that are eligible to contribute
@@ -204,7 +211,7 @@ public abstract class Objective
       return;
     }
 
-    QuestItem.SetDescription(Description);
+    QuestItem.SetDescription(Loc.Get(Description));
 
     switch (Progress)
     {

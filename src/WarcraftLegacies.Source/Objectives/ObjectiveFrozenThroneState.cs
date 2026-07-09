@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 
@@ -22,7 +23,7 @@ public sealed class ObjectiveFrozenThroneState : Objective
   /// <param name="desiredState">The Objective is completed when the Throne changes to this state.</param>
   public ObjectiveFrozenThroneState(FrozenThroneState desiredState)
   {
-    Description = $"The Frozen Throne is {desiredState}";
+    SetDescription("The Frozen Throne is {state}", ("{state}", Loc.Get(desiredState.ToString())));
     _desiredState = desiredState;
   }
 

@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -24,7 +25,8 @@ public sealed class ObjectiveHeroWithLevelInRect : Objective, IHasCompletingUnit
   {
     _targetRect = targetRect.Rect;
     _targetLevel = targetLevel;
-    Description = $"Reach {rectName} with a level {targetLevel}+ hero";
+    SetDescription("Reach {rect} with a level {level}+ hero",
+      ("{rect}", Loc.Get(rectName)), ("{level}", targetLevel.ToString()));
     PingPath = "MinimapQuestTurnIn";
     DisplaysPosition = true;
 
@@ -58,7 +60,7 @@ public sealed class ObjectiveHeroWithLevelInRect : Objective, IHasCompletingUnit
   public unit? CompletingUnit { get; private set; }
 
   /// <inheritdoc />
-  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : Loc.Get("an unknown hero");
 
   private bool IsUnitValid(unit whichUnit) =>
     EligibleFactions.Contains(whichUnit.Owner) && whichUnit.Alive && whichUnit.IsUnitType(unittype.Hero) &&

@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
@@ -18,7 +19,7 @@ public sealed class ObjectiveControlLegend : Objective
   public ObjectiveControlLegend(LegendaryHero target, bool canFail)
   {
     _target = target;
-    Description = $"You control {target.Name}";
+    SetDescription("You control {target}", ("{target}", Loc.Get(target.Name)));
     _canFail = canFail;
     if (target.Unit != null)
     {

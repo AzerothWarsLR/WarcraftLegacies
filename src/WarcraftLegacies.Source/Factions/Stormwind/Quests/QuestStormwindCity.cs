@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Stormwind.Powers;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -64,7 +65,7 @@ public sealed class QuestStormwindCity : QuestData
     var rewardPower = new CityOfHeroes(0.2f, 1.5f, "Units")
     {
       IconName = "Angel",
-      Name = RewardPowerName,
+      Name = Loc.Get(RewardPowerName),
       HeroGlowAbilityTypeId = ABILITY_A0GK_HERO_GLOW_ORIGIN,
       Filter = unit => !unit.IsUnitType(unittype.Mechanical) && unit.UnitType != UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
     };

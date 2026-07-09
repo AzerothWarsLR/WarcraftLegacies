@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -21,7 +22,11 @@ public sealed class ObjectiveHostilesInAreaAreDead : Objective
     set
     {
       _currentKillCount = value;
-      Description = $"All creeps {_areaName} are dead ({_currentKillCount}/{_maxKillCount})";
+      SetDescription(
+        "All creeps {area} are dead ({current}/{max})",
+        ("{area}", Loc.Get(_areaName)),
+        ("{current}", _currentKillCount.ToString()),
+        ("{max}", _maxKillCount.ToString()));
       if (_currentKillCount == _maxKillCount)
       {
         Progress = QuestProgress.Complete;

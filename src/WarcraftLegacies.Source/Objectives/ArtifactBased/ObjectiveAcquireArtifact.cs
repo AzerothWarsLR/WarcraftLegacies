@@ -1,5 +1,6 @@
 ﻿using MacroTools.Artifacts;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.ArtifactBased;
@@ -17,7 +18,7 @@ public sealed class ObjectiveAcquireArtifact : Objective
   /// <param name="target">The objective is completed when this artifact is acquired.</param>
   public ObjectiveAcquireArtifact(Artifact target)
   {
-    Description = $"Acquire {target.Item.Name}";
+    SetDescription("Acquire {item}", ("{item}", target.Item.Name));
     _target = target;
     target.PickedUp += _ =>
       Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;

@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -13,7 +14,9 @@ public sealed class QuestDesolation : QuestData
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
-    $"{_objectiveDestroyAnyCapital.DestroyedCapital?.Name} has fallen, merely the first in a row of dominoes that will topple this world.";
+    Loc.Format(
+      "{capital} has fallen, merely the first in a row of dominoes that will topple this world.",
+      ("{capital}", _objectiveDestroyAnyCapital.DestroyedCapital?.Name ?? ""));
 
   /// <inheritdoc/>
   protected override string RewardDescription =>

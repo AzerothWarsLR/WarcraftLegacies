@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -43,7 +44,7 @@ public sealed class QuestConsumeTree : QuestData
 
     if (archimondeUnit != null)
     {
-      archimondeUnit.Name = "Devourer of Worlds";
+      archimondeUnit.Name = Loc.Get("Devourer of Worlds");
     }
 
     effect.Create(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit, "hand, right");

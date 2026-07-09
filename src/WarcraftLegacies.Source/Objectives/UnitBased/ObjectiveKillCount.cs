@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Setup;
 using WCSharp.Events;
@@ -19,7 +20,10 @@ public sealed class ObjectiveKillCount : Objective
     set
     {
       _currentCount = value;
-      Description = $"Kill {_requiredCount} non-summoned enemy units ({_currentCount}/{_requiredCount})";
+      SetDescription(
+        "Kill {required} non-summoned enemy units ({current}/{required})",
+        ("{required}", _requiredCount.ToString()),
+        ("{current}", _currentCount.ToString()));
       if (_currentCount >= _requiredCount)
       {
         Progress = QuestProgress.Complete;

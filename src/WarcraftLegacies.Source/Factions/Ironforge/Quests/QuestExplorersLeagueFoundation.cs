@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -23,7 +24,9 @@ public sealed class QuestExplorersLeagueFoundation : QuestData
     AddObjective(_heroEnteringRegion);
   }
 
-  public override string RewardFlavour => $"{_heroEnteringRegion.CompletingUnitName} has overseen the expedition at {_expeditionRegion.Name} and the archaeologists have taken the relics back to Ironforge to study.";
+  public override string RewardFlavour => Loc.Format(
+    "{hero} has overseen the expedition at {region} and the archaeologists have taken the relics back to Ironforge to study.",
+    ("{hero}", _heroEnteringRegion.CompletingUnitName), ("{region}", Loc.Get(_expeditionRegion.Name)));
 
   public static RegionModel GetRandomRegion()
   {

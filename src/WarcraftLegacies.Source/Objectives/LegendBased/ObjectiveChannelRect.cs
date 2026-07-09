@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -39,7 +40,11 @@ public sealed class ObjectiveChannelRect : Objective
     var target = RectToRegion(_targetRect);
     _targetLegend = legendaryHero;
     _duration = duration;
-    Description = $"Have {legendaryHero.Name} channel at {rectName} for {duration} seconds";
+    SetDescription(
+      "Have {hero} channel at {rect} for {duration} seconds",
+      ("{hero}", legendaryHero.Name),
+      ("{rect}", Loc.Get(rectName)),
+      ("{duration}", duration.ToString()));
     _facing = facing;
     _timerDialogTitle = timerDialogTitle;
 

@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -21,7 +22,11 @@ public sealed class ObjectiveControlPoints : Objective
     set
     {
       _controlPointCount = value;
-      Description = $"You control all CPs {_rectName} ({ControlPointCount}/{_progressByControlPoint.Count})";
+      SetDescription(
+        "You control all CPs {rect} ({current}/{max})",
+        ("{rect}", Loc.Get(_rectName)),
+        ("{current}", ControlPointCount.ToString()),
+        ("{max}", _progressByControlPoint.Count.ToString()));
       CheckObjectiveProgress();
     }
   }
