@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Setup;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -34,7 +35,10 @@ public sealed class FontOfPower : Power
     {
       _isActive = value;
       var prefix = IsActive ? "" : "|cffc0c0c0";
-      Description = $"{prefix}All units deal {(int)(BonusDamagePercentage * 100)}% extra damage and regain {(int)(ManaRefundPercentage * 100)}% of the mana cost of abilities. Only active while your team controls the Sunwell, the Well of Eternity, Black Temple, or Nordrassil.";
+      Description = prefix + Loc.Format(
+        "All units deal {damage}% extra damage and regain {mana}% of the mana cost of abilities. Only active while your team controls the Sunwell, the Well of Eternity, Black Temple, or Nordrassil.",
+        ("{damage}", ((int)(BonusDamagePercentage * 100)).ToString()),
+        ("{mana}", ((int)(ManaRefundPercentage * 100)).ToString()));
       var researchLevel = _isActive ? 1 : 0;
       foreach (var player in _playersWithPower)
       {

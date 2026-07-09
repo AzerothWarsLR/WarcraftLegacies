@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Spells;
 using WCSharp.Effects;
 using WCSharp.Events;
@@ -60,7 +61,7 @@ public sealed class AncestralLegion : Spell, IEffectOnLearn
       summonedTauren.MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0);
       summonedTauren.MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
       summonedTauren.SetTimedLife(Duration);
-      summonedTauren.Name = "Ancestor";
+      summonedTauren.Name = Loc.Get("Ancestor");
       summonedTauren.AddType(unittype.Summoned);
 
       var deathTrigger = trigger.Create();
@@ -124,7 +125,7 @@ public sealed class AncestralLegion : Spell, IEffectOnLearn
     var ancestralLegionData = _ancestralLegionDataByUnit[caster];
     for (var i = 0; i < 3; i++)
     {
-      BlzSetAbilityExtendedTooltip(Id, $"{ancestralLegionData.BaseTooltips[i]}|n|n|cffDA9531Remembered Tauren:|r {ancestralLegionData.RememberedUnits}", i);
+      BlzSetAbilityExtendedTooltip(Id, $"{ancestralLegionData.BaseTooltips[i]}|n|n|cffDA9531{Loc.Get("Remembered Tauren:")}|r {ancestralLegionData.RememberedUnits}", i);
     }
   }
 

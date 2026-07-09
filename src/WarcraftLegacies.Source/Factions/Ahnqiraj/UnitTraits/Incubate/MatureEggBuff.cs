@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.Localization;
 using WCSharp.Buffs;
 using WCSharp.Effects;
 
@@ -21,7 +22,7 @@ public sealed class MatureEggBuff : PassiveBuff
   /// <inheritdoc />
   public override void OnApply()
   {
-    Target.Name = "Mature Egg";
+    Target.Name = Loc.Get("Mature Egg");
     Target.SetVertexColor(255, 255, 255);
     Target.AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 

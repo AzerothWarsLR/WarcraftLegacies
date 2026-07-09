@@ -3,6 +3,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using WCSharp.Shared;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd;
 
@@ -44,7 +45,13 @@ public static class ControlPointVictory
   {
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
+      var warningMessage = Loc.Format(
+        "{team} has captured {captured} out of {total} Control Points required to win the game!",
+        ("{team}", whichTeam.Name),
+        ("{captured}", controlPoints.ToString()),
+        ("{total}", CpsVictory.ToString()));
+
+      player.DisplayTextTo($"\n{VictoryColor}{Loc.Get("TEAM VICTORY IMMINENT")}|r\n{warningMessage}");
     }
   }
 
@@ -73,7 +80,11 @@ public static class ControlPointVictory
     ClearTextMessages();
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
+      var victoryMessage = Loc.Format(
+        "The {team} has won the game! You may choose to continue playing.",
+        ("{team}", whichTeam.Name));
+
+      player.DisplayTextTo($"{VictoryColor}\n{Loc.Get("TEAM VICTORY!")}|r\n{victoryMessage}");
     }
 
     PlayThematicMusic(whichTeam.VictoryMusic);

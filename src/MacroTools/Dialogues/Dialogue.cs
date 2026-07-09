@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Sounds;
+using MacroTools.Localization;
 
 namespace MacroTools.Dialogues;
 
@@ -40,7 +41,7 @@ public sealed class Dialogue : IHasPlayableDialogue
 
     if (whichPlayer.GetPlayerSettings().ShowCaptions)
     {
-      whichPlayer.DisplayTextTo($"|cffffcc00{_speaker}:|r {_caption}");
+      whichPlayer.DisplayTextTo($"|cffffcc00{Loc.Get(_speaker)}:|r {Loc.Get(_caption)}");
     }
   }
 }

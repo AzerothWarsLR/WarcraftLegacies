@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 
@@ -9,12 +10,13 @@ public sealed class Hint
   private const float HintInterval = 180;
 
   private static readonly List<Hint> _unread = new();
-  private readonly string _msg;
+
+  private readonly Func<string> _messageProvider;
   private static bool _initialized;
 
-  public Hint(string msg)
+  public Hint(Func<string> messageProvider)
   {
-    _msg = msg;
+    _messageProvider = messageProvider;
   }
 
   public static void Register(Hint hint)
@@ -26,23 +28,21 @@ public sealed class Hint
     _unread.Add(hint);
   }
 
-  /// <summary>
-  /// Registers a new <see cref="Hint"/> with the specified message.
-  /// </summary>
-  public static void Register(string message)
+  public static void Register(Func<string> messageProvider)
   {
     if (!_initialized)
     {
       Initialize();
     }
-    _unread.Add(new Hint(message));
+    _unread.Add(new Hint(messageProvider));
   }
 
   private void Display()
   {
+    var message = _messageProvider();
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayHint(_msg);
+      player.DisplayHint(message);
     }
 
     _unread.Remove(this);

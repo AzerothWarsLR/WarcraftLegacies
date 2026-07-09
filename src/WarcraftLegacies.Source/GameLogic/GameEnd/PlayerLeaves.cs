@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using WCSharp.Shared;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd;
 
@@ -18,11 +19,13 @@ public static class PlayerLeaves
 
       var playerFaction = triggerPlayer.GetPlayerData().Faction;
 
+      var message = playerFaction != null
+          ? Loc.Format("{faction} has left the game.", ("{faction}", playerFaction.ColoredName))
+          : Loc.Format("{playerName} has left the game.", ("{playerName}", triggerPlayer.Name));
+
       foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
-        player.DisplayTextTo(playerFaction != null
-            ? $"{playerFaction.ColoredName} has left the game."
-            : $"{triggerPlayer.Name} has left the game.");
+        player.DisplayTextTo(message);
       }
 
       if (playerFaction != null && playerFaction.ScoreStatus != ScoreStatus.Defeated)

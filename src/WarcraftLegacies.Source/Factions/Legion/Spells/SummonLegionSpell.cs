@@ -1,6 +1,7 @@
 ﻿using MacroTools.Channels;
 using MacroTools.Extensions;
 using MacroTools.Instances;
+using MacroTools.Localization;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
@@ -66,11 +67,11 @@ public sealed class SummonLegionChannel : Channel
     Caster.AddAbility(_spellImmunityId);
     _timer.Start(Duration, false, null);
     _timerDialog.IsDisplayed = true;
-    _timerDialog.SetTitle("Legion Summon");
+    _timerDialog.SetTitle(Loc.Get("Legion Summon"));
     PingMinimap(Caster.X, Caster.Y, 8);
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo("The Burning Legion is being summoned!");
+      player.DisplayTextTo(Loc.Get("The Burning Legion is being summoned!"));
     }
   }
 

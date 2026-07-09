@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -28,9 +29,9 @@ public sealed class IronforgeFaction : Faction
     };
     CinematicMusic = "PursuitTheme";
     ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
-    IntroText = $"You are playing as the long-enduring {PrefixCol}Kingdom of Ironforge |r.\n\n" +
-                "You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morogh to regain access to your territories.\n\n" +
-                "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster your forces and aid them, or risk losing your strongest ally.";
+    IntroText = () => Loc.Format(
+      "You are playing as the long-enduring {faction}.\n\nYou begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morogh to regain access to your territories.\n\nStormwind is preparing for an invasion through the Dark Portal in the South. Muster your forces and aid them, or risk losing your strongest ally.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Ironforge")}|r"));
     Nicknames = new List<string>
     {
       "if",

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace MacroTools.Commands;
 
@@ -52,12 +53,15 @@ public static class CommandManager
 
         if (parameters.Length < command.ExpectedParameterCount.Minimum)
         {
-          @event.Player.DisplayTextTo($"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
+          var notEnoughParamsMessage = Loc.Format(
+            "You must supply at least {min} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.",
+            ("{min}", command.ExpectedParameterCount.Minimum.ToString()));
+          @event.Player.DisplayTextTo($"|{CommandColor}{command.CommandText}:|r {notEnoughParamsMessage}");
           return;
         }
 
         var message = command.Execute(@event.Player, parameters);
-        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
+        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}{Loc.Get("CHEAT")}:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");        
       }
       catch (Exception ex)
       {
@@ -70,7 +74,7 @@ public static class CommandManager
   public static void CreateInfoQuest()
   {
     var commandQuest = quest.Create();
-    commandQuest.SetTitle("Commands");
+    commandQuest.SetTitle(Loc.Get("Commands"));
     commandQuest.SetIcon(@"ReplaceableTextures\CommandButtons\BTNDizzy.blp");
     commandQuest.IsEnabled = true;
     commandQuest.IsRequired = false;

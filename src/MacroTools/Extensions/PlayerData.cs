@@ -55,6 +55,18 @@ public sealed class PlayerData
     SaveManager.Save(PlayerSettings);
   }
 
+  public void UpdatePlayerSetting(string setting, string value)
+  {
+    switch (setting)
+    {
+      case "Language":
+        PlayerSettings.Language = value;
+        PlayerSettings.LanguageIsManual = true;
+        break;
+    }
+    SaveManager.Save(PlayerSettings);
+  }
+
   private PlayerSettings CreateNewPlayerSettings()
   {
     var newPlayerSettings = new PlayerSettings();

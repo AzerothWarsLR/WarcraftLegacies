@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Utils;
+using MacroTools.Localization;
 
 namespace MacroTools.GameModes;
 
@@ -33,7 +34,7 @@ public sealed class GameModeManager
     try
     {
       dialog dialog = dialog.Create();
-      dialog.SetMessage("Vote Game Mode");
+      dialog.SetMessage(Loc.Get("Vote Game Mode"));
       var buttonClickTriggers = new List<trigger>();
       foreach (var gameModeVote in _gameModeVotes)
       {
@@ -73,7 +74,7 @@ public sealed class GameModeManager
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"The {highestVotedGameMode.GameMode.Name} game mode has been chosen.");
+      player.DisplayTextTo(Loc.Format("The {mode} game mode has been chosen.", ("{mode}", highestVotedGameMode.GameMode.Name)));      
       dialog.SetVisibility(player, false);
     }
 

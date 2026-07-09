@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -31,10 +32,9 @@ public sealed class QuelthalasFaction : Faction
     };
     CinematicMusic = "BloodElfTheme";
     ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
-    IntroText = $"You are playing as the proud {PrefixCol}Kingdom of Quel'Thalas|r.\n\n" +
-                "You begin in Tranquillien, separated from Silvermoon. The Trolls of Zul'Aman have laid siege to the city and are preparing attacks on your base.\n\n" +
-                "Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.\n\n" +
-                "The Plague of Undeath is imminent, and Lordaeron will soon need your help against the Scourge. Be ready to join them once you have secured Silvermoon and dealt with the Amani invasion.";
+    IntroText = () => Loc.Format(
+      "You are playing as the proud {faction}.\n\nYou begin in Tranquillien, separated from Silvermoon. The Trolls of Zul'Aman have laid siege to the city and are preparing attacks on your base.\n\nTrain soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.\n\nThe Plague of Undeath is imminent, and Lordaeron will soon need your help against the Scourge. Be ready to join them once you have secured Silvermoon and dealt with the Amani invasion.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Quel'Thalas")}|r"));
     Nicknames = new List<string>
     {
       "qt",
@@ -70,7 +70,7 @@ public sealed class QuelthalasFaction : Faction
     AddPower(new FontOfPower(fontsOfPower)
     {
       IconName = "FountainOfLife",
-      Name = "Font of Power",
+      Name = Loc.Get("Font of Power"),
       ResearchId = UPGRADE_ZBFO_FONT_OF_POWER_IS_ACTIVE_POWER,
       ManaRefundPercentage = 0.15f,
       BonusDamagePercentage = 0.1f

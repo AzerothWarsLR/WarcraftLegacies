@@ -5,6 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using WCSharp.Shared;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -69,9 +70,18 @@ public sealed class Forfeit : Command
     var currentVotes = votes.Count;
     var playerFaction = leavingPlayer.GetPlayerData().Faction;
     var prefixCol = playerFaction?.PrefixCol ?? "";
+    var coloredPlayerName = $"{prefixCol}{leavingPlayer.Name}|r";
     var message = hasLeft
-      ? $"{prefixCol}{leavingPlayer.Name}|r has left the game and counts as a forfeit vote. ({currentVotes}/{VotesRequired})."
-      : $"{prefixCol}{leavingPlayer.Name}|r voted to forfeit. ({currentVotes}/{VotesRequired}).";
+      ? Loc.Format(
+          "{player} has left the game and counts as a forfeit vote. ({votes}/{required}).",
+          ("{player}", coloredPlayerName),
+          ("{votes}", currentVotes.ToString()),
+          ("{required}", VotesRequired.ToString()))
+      : Loc.Format(
+          "{player} voted to forfeit. ({votes}/{required}).",
+          ("{player}", coloredPlayerName),
+          ("{votes}", currentVotes.ToString()),
+          ("{required}", VotesRequired.ToString()));
 
     team.DisplayText(message);
     TryEndGame(currentVotes, team);
@@ -85,15 +95,15 @@ public sealed class Forfeit : Command
   {
     if (GameTimeManager.Turn < ForfeitAllowedTurn)
     {
-      return $"You can't forfeit before turn {ForfeitAllowedTurn}.";
+      return Loc.Format("You can't forfeit before turn {turn}.", ("{turn}", ForfeitAllowedTurn.ToString()));
     }
 
     var result = TryForfeitPlayer(commandUser);
     return result switch
     {
-      ForfeitResult.Succeeded => "Forfeit vote registered.",
-      ForfeitResult.NoTeam => "You are not in a team.",
-      ForfeitResult.AlreadyForfeited => "You have already forfeited.",
+      ForfeitResult.Succeeded => Loc.Get("Forfeit vote registered."),
+      ForfeitResult.NoTeam => Loc.Get("You are not in a team."),
+      ForfeitResult.AlreadyForfeited => Loc.Get("You have already forfeited."),
       _ => throw new ArgumentOutOfRangeException(nameof(result))
     };
   }
@@ -102,10 +112,12 @@ public sealed class Forfeit : Command
   {
     if (currentVotes >= VotesRequired)
     {
-      team.DisplayText("Forfeit vote passed.");
+      team.DisplayText(Loc.Get("Forfeit vote passed."));
       foreach (var player in Util.EnumeratePlayers())
       {
-        player.DisplayTextTo($"{team.Name} has forfeited the game.|cFFFF0000The game will end in 10 seconds.|r");
+        player.DisplayTextTo(Loc.Format(
+          "{team} has forfeited the game.|cFFFF0000The game will end in 10 seconds.|r",
+          ("{team}", team.Name)));
       }
       WCSharp.Events.PeriodicEvents.AddPeriodicEvent(() =>
       {

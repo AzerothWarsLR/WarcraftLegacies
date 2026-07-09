@@ -22,6 +22,8 @@ public static class CommandSetup
     CommandManager.Register(new GiveGold("gold"));
     CommandManager.Register(new GiveGold("g"));
     CommandManager.Register(new Observer());
+    CommandManager.Register(new Language("language"));
+    CommandManager.Register(new Language("idioma"));
     CommandManager.CreateInfoQuest();
   }
 }

@@ -4,6 +4,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -34,10 +35,9 @@ public sealed class WarsongFaction : Faction
     };
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;
-    IntroText = $"You are playing as the fierce and relentless {PrefixCol}Warsong Clan|r.\n\n" +
-                "Begin swiftly by rescuing your Chieftain, Grom Hellscream, who is trapped in battle and consumed by demonic fury. His survival is paramount.\n\n" +
-                "With Grom secured, expand your dominance by subduing or pillaging nearby races to bolster your clan's strength.\n\n" +
-                "Work closely with your new elven allies—only together can you overcome the looming threat of the Old Gods.";
+    IntroText = () => Loc.Format(
+      "You are playing as the fierce and relentless {faction}.\n\nBegin swiftly by rescuing your Chieftain, Grom Hellscream, who is trapped in battle and consumed by demonic fury. His survival is paramount.\n\nWith Grom secured, expand your dominance by subduing or pillaging nearby races to bolster your clan's strength.\n\nWork closely with your new elven allies—only together can you overcome the looming threat of the Old Gods.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Warsong Clan")}|r"));
     Nicknames = new List<string>
     {
       "ws",

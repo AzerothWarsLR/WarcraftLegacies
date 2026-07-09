@@ -18,4 +18,12 @@ public sealed class PlayerSettings : Saveable
   public bool PlayDialogue { get; internal set; } = true;
 
   public bool ShowCaptions { get; internal set; } = true;
+
+  /// <summary>
+  /// The player's preferred language for translated game text, as an IETF-style tag (eg. "en", "es", "zh").
+  /// Null means it has not been detected or set yet, and callers should fall back to English.
+  /// </summary>
+  public string? Language { get; internal set; }
+
+  public bool LanguageIsManual { get; internal set; }
 }

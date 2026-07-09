@@ -13,6 +13,19 @@ public static class SaveManager
 {
   internal static Dictionary<player, PlayerSettings> SavesByPlayer { get; } = new();
   private static SaveSystem<PlayerSettings>? _saveSystem;
+  public static event Action? LocalPlayerSettingsLoaded;
+  public static bool LocalPlayerSettingsReady { get; private set; }
+  public static void RunWhenLocalPlayerSettingsReady(Action action)
+  {
+    if (LocalPlayerSettingsReady)
+    {
+      action();
+    }
+    else
+    {
+      LocalPlayerSettingsLoaded += action;
+    }
+  }
 
   public static void Initialize()
   {
@@ -43,6 +56,18 @@ public static class SaveManager
       save.ShowQuestText = true;
       save.PlayDialogue = true;
       save.ShowCaptions = true;
+    }
+
+    if (save.GetPlayer() == player.LocalPlayer)
+    {
+      if (!save.LanguageIsManual)
+      {
+        var locale = BlzGetLocale();
+        save.Language = locale.StartsWith("es") ? "es" : locale.StartsWith("zh") ? "zh" : "en";
+      }
+
+      LocalPlayerSettingsReady = true;
+      LocalPlayerSettingsLoaded?.Invoke();
     }
     save.GetPlayer().ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, save.CamDistance, 1);
     save.GetPlayer().GetPlayerSettings().ShowQuestText = save.ShowQuestText;

@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.GameTime;
 using WCSharp.Shared;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd;
 
@@ -68,8 +69,15 @@ public static class PlayerElimination
   private static void ShowEliminationWarning(player player, PlayerData playerData)
   {
     var turnsRemaining = EliminationGraceTurns - playerData.EliminationTurns;
-    var turnText = turnsRemaining == 1 ? "turn" : "turns";
+    var turnText = Loc.Get(turnsRemaining == 1 ? "turn" : "turns");
 
-    player.DisplayTextTo($"You have met the threshold for being eliminated from the game. Unless you raise your Control Point count above {EliminationControlPointThreshold}, raise food used above {EliminationFoodThreshold} or your team retakes/gains an essential Legend, you will be defeated in {turnsRemaining} {turnText}.");
+    var message = Loc.Format(
+      "You have met the threshold for being eliminated from the game. Unless you raise your Control Point count above {cpThreshold}, raise food used above {foodThreshold} or your team retakes/gains an essential Legend, you will be defeated in {turns} {turnWord}.",
+      ("{cpThreshold}", EliminationControlPointThreshold.ToString()),
+      ("{foodThreshold}", EliminationFoodThreshold.ToString()),
+      ("{turns}", turnsRemaining.ToString()),
+      ("{turnWord}", turnText));
+
+    player.DisplayTextTo(message);
   }
 }
