@@ -1,37 +1,36 @@
 ﻿using WCSharp.W3MMD;
 
-// ReSharper disable InconsistentNaming
 namespace WarcraftLegacies.Source.GameLogic.Mmd;
 
 public static class MmdVariables
 {
-  public static W3MmdIntVar hero_kills = null!;
-  public static W3MmdIntVar hero_deaths = null!;
-  public static W3MmdFloatVar hero_damage_dealt = null!;
-  public static W3MmdFloatVar hero_damage_taken = null!;
-  public static W3MmdIntVar hero_revives = null!;
+  public static W3MmdIntVar hero_kills;
+  public static W3MmdIntVar hero_deaths;
+  public static W3MmdFloatVar hero_damage_dealt;
+  public static W3MmdFloatVar hero_damage_taken;
+  public static W3MmdIntVar hero_revives;
 
-  public static W3MmdIntVar units_killed = null!;
-  public static W3MmdIntVar units_lost = null!;
-  public static W3MmdFloatVar damage_to_units = null!;
-  public static W3MmdFloatVar damage_to_heroes = null!;
-  public static W3MmdFloatVar damage_taken_units = null!;
-  public static W3MmdFloatVar damage_taken_heroes = null!;
+  public static W3MmdIntVar units_killed;
+  public static W3MmdIntVar units_lost;
+  public static W3MmdFloatVar damage_to_units;
+  public static W3MmdFloatVar damage_to_heroes;
+  public static W3MmdFloatVar damage_taken_units;
+  public static W3MmdFloatVar damage_taken_heroes;
 
-  public static W3MmdFloatVar gold_earned = null!;
-  public static W3MmdFloatVar gold_spent = null!;
+  public static W3MmdFloatVar gold_earned;
+  public static W3MmdFloatVar gold_spent;
 
-  public static W3MmdFloatVar cp_minutes_owned = null!;
-  public static W3MmdIntVar cp_captures = null!;
-  public static W3MmdIntVar cp_value_controlled = null!;
+  public static W3MmdFloatVar cp_minutes_owned;
+  public static W3MmdIntVar cp_captures;
+  public static W3MmdIntVar cp_value_controlled;
 
-  public static W3MmdIntVar turns_survived = null!;
-  public static W3MmdFloatVar score = null!;
+  public static W3MmdIntVar turns_survived;
+  public static W3MmdFloatVar score;
 
-  public static W3MmdEvent hero_kill_event = null!;
-  public static W3MmdEvent unit_kill_event = null!;
-  public static W3MmdEvent capital_destroyed_event = null!;
-  public static W3MmdEvent cp_capture_event = null!;
+  public static W3MmdEvent hero_kill_event;
+  public static W3MmdEvent unit_kill_event;
+  public static W3MmdEvent capital_destroyed_event;
+  public static W3MmdEvent cp_capture_event;
 
   public static bool _initialized;
 
@@ -73,4 +72,3 @@ public static class MmdVariables
     _initialized = true;
   }
 }
-// ReSharper restore InconsistentNaming
