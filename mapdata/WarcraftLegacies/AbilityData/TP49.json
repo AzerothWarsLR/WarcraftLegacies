@@ -1,0 +1,339 @@
+{
+  "OldId": "ANcl",
+  "NewId": "TP49",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "thunderbolt"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "thunderbolt"
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "thunderbolt"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "thunderbolt"
+    },
+    {
+      "Id": "amsp",
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Muradin\u0027s Stormbolt - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Muradin\u0027s Stormbolt - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Muradin\u0027s Stormbolt - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Muradin\u0027s Stormbolt - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Muradin\u0027s Stormbolt"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Hurls a storm-charged hammer that pierces enemies in a line and returns to Muradin, damaging and stunning all enemies it hits.|n|n|cffffcc00Level 1|r - 75 damage, \u003CTP50,Dur1,.\u003E (\u003CTP50,HeroDur1,.\u003E) seconds stun.|n|cffffcc00Level 2|r - 125 damage, \u003CTP50,Dur2,.\u003E (\u003CTP50,HeroDur2,.\u003E) seconds stun.|n|cffffcc00Level 3|r - 175 damage, \u003CTP50,Dur3,.\u003E (\u003CTP50,HeroDur3,.\u003E) seconds stun.|n|cffffcc00Level 4|r - 225 damage, \u003CTP50,Dur4,.\u003E (\u003CTP50,HeroDur4,.\u003E) seconds stun."
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Muradin\u0027s Stormbolt - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a storm-charged hammer that pierces enemies in a line and returns to Muradin, dealing 75 damage and stunning for \u003CTP50,Dur1,.\u003E (\u003CTP50,HeroDur1,.\u003E) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a storm-charged hammer that pierces enemies in a line and returns to Muradin, dealing 125 damage and stunning for \u003CTP50,Dur2,.\u003E (\u003CTP50,HeroDur2,.\u003E) seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a storm-charged hammer that pierces enemies in a line and returns to Muradin, dealing 175 damage and stunning for \u003CTP50,Dur3,.\u003E (\u003CTP50,HeroDur3,.\u003E) seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a storm-charged hammer that pierces enemies in a line and returns to Muradin, dealing 225 damage and stunning for \u003CTP50,Dur4,.\u003E (\u003CTP50,HeroDur4,.\u003E) seconds."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormBolt.blp"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormBolt.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "acap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Muradin)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    }
+  ]
+}

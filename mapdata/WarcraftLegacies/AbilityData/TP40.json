@@ -92,31 +92,8 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
-      "Id": "Sta1",
-      "Type": 2,
-      "Value": 8
-    },
-    {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": "Sta2",
-      "Type": 2,
-      "Value": 150
-    },
-    {
-      "Level": 1,
-      "Pointer": 5,
-      "Id": "Sta5",
-      "Type": 2,
-      "Value": 0.6
-    },
-    {
-      "Level": 1,
-      "Pointer": 4,
-      "Id": "Sta4",
-      "Type": 2,
-      "Value": 3
+      "Id": "amcs",
+      "Value": 75
     },
     {
       "Id": "abpx",

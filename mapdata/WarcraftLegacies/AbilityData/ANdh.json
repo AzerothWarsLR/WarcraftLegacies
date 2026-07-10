@@ -97,7 +97,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC1,%\u003E%, and have a chance to miss on attacks. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(\u003CANdh,HeroDur1\u003E for Heros) seconds. |n|n|cffffcc00Level 1|r - \u003CANdh,DataB1,%\u003E% miss chance. |n|cffffcc00Level 2|r - \u003CANdh,DataB2,%\u003E% miss chance. |n|cffffcc00Level 3|r - \u003CANdh,DataB3,%\u003E% miss chance. |n|cffffcc00Level 4|r - \u003CANdh,DataB4,%\u003E% miss chance."
+      "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by \u003CANdh,DataC1,%\u003E%, and have a chance to miss on attacks.|n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(\u003CANdh,HeroDur1\u003E for Heros) seconds. |n|n|cffffcc00Level 1|r - \u003CANdh,DataB1,%\u003E% miss chance. |n|cffffcc00Level 2|r - \u003CANdh,DataB2,%\u003E% miss chance. |n|cffffcc00Level 3|r - \u003CANdh,DataB3,%\u003E% miss chance. |n|cffffcc00Level 4|r - \u003CANdh,DataB4,%\u003E% miss chance."
     },
     {
       "Level": 4,

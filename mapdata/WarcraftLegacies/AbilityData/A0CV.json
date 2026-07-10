@@ -38,6 +38,11 @@
       "Value": "o003"
     },
     {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarfTurret.blp"

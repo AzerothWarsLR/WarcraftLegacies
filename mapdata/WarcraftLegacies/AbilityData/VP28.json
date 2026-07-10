@@ -8,22 +8,22 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 150
+      "Value": 110
     },
     {
       "Level": 2,
       "Id": "amcs",
-      "Value": 150
+      "Value": 110
     },
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 150
+      "Value": 110
     },
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 150
+      "Value": 110
     },
     {
       "Level": 1,
@@ -60,6 +60,103 @@
       "Value": 800
     },
     {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 170
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 230
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
       "Id": "arhk",
       "Type": 3,
       "Value": "Q"
@@ -77,31 +174,31 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Breathes a cone of fire at enemy units which deals damage. Units that have Drunken Haze on them will ignite and take burn damage over time. |nLasts \u003CANcf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CVP28,DataA1\u003E initial damage, \u003CVP28,DataE1\u003E damage per second. |n|cffffcc00Level 2|r - \u003CVP28,DataA2\u003E initial damage, \u003CVP28,DataE2\u003E damage per second. |n|cffffcc00Level 3|r - \u003CVP28,DataA3\u003E initial damage, \u003CVP28,DataE3\u003E damage per second. |n|cffffcc00Level 4|r - \u003CVP28,DataA4\u003E initial damage, \u003CVP28,DataE4\u003E damage per second."
+      "Value": "Breathes a cone of fire at enemy units which deals damage. |n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r |n|n|cffffcc00Level 1|r - \u003CVP28,DataA1\u003E initial damage, \u003CVP28,DataE1\u003E damage per second. |n|cffffcc00Level 2|r - \u003CVP28,DataA2\u003E initial damage, \u003CVP28,DataE2\u003E damage per second. |n|cffffcc00Level 3|r - \u003CVP28,DataA3\u003E initial damage, \u003CVP28,DataE3\u003E damage per second. |n|cffffcc00Level 4|r - \u003CVP28,DataA4\u003E initial damage, \u003CVP28,DataE4\u003E damage per second."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA2\u003E initial damage. Units that have Drunken Haze on them will ignite and burn for \u003CVP28,DataE2\u003E damage per second over \u003CVP28,Dur2\u003E seconds."
+      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA2\u003E initial damage. |n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking \u003CVP28,DataE2\u003E burn damage for \u003CVP28,Dur2\u003E seconds."
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA1\u003E initial damage. Units that have Drunken Haze on them will ignite and burn for \u003CVP28,DataE1\u003E damage per second over \u003CVP28,Dur1\u003E seconds."
+      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA1\u003E initial damage. |n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking \u003CVP28,DataE1\u003E burn damage for \u003CVP28,Dur1\u003E seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA3\u003E initial damage. Units that have Drunken Haze on them will ignite and burn for \u003CVP28,DataE3\u003E damage per second over \u003CVP28,Dur3\u003E seconds."
+      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA3\u003E initial damage. |n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking \u003CVP28,DataE3\u003E burn damage for \u003CVP28,Dur3\u003E seconds."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA4\u003E initial damage. Units that have Drunken Haze on them will ignite and burn for \u003CVP28,DataE4\u003E damage per second over \u003CVP28,Dur4\u003E seconds."
+      "Value": "Breathes a cone of fire at enemy units, dealing \u003CVP28,DataA4\u003E initial damage. |n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking \u003CVP28,DataE4\u003E burn damage for \u003CVP28,Dur4\u003E seconds."
     }
   ]
 }

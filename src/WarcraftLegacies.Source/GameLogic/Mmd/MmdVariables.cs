@@ -1,4 +1,4 @@
-﻿using WCSharp.W3MMD;
+using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.GameLogic.Mmd;
 

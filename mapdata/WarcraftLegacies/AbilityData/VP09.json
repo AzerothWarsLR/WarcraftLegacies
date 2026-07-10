@@ -1,0 +1,96 @@
+{
+  "OldId": "Adis",
+  "NewId": "VP09",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Adm2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Adm2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "TP42"
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "|cffffcc00(W)|r - Dispel Magic"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CVP09,DataB1\u003E damage to summoned units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA02E,DataB2\u003E damage to summoned units.|r"
+    }
+  ]
+}

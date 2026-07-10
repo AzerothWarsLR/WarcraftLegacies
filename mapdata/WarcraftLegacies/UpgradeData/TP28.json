@@ -77,7 +77,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Allows Steam Tanks to use Flamethrowers, replacing their long\u2011range siege attack with a short\u2011range cone of fire. Enemies affected by Drunken Haze ignite and take damage over time.\r\n|n|cffc864c8Cannot be researched with Artillery.|r"
+      "Value": "Allows Steam Tanks to use Flamethrowers, replacing their long-range siege attack with a short-range cone of fire. |n|cffffcc00Units affected by |cff99ccffDrunken Haze|r|cffffcc00 ignite when struck by |cff99ccffBreath of Fire|r|cffffcc00, taking burn damage over time.|r\r\n|n|cffc864c8Cannot be researched with Artillery.|r"
     }
   ]
 }

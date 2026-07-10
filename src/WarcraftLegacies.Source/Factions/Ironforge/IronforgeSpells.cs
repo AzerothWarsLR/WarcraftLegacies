@@ -24,7 +24,7 @@ public static class IronforgeSpells
       GoldCost = 25
     });
 
-    SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_MAGNI_BRONZEBEARD)
+    SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_FALSTAD_WILDHAMMER)
     {
       GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
       StormRiderTypeId = UNIT_H03Z_STORMRIDER_IRONFORGE,
@@ -44,5 +44,15 @@ public static class IronforgeSpells
       MaxDamage = 300f
     };
     SpellRegistry.Register(volatileFlask);
+
+    SpellRegistry.Register(new Stormbolt(ABILITY_TP49_MURADIN_S_STORMBOLT_MURADIN)
+    {
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 25f,
+        PerLevel = 50f
+      },
+      StunAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+    });
   }
 }
