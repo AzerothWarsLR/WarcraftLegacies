@@ -32,11 +32,11 @@ public static class MmdVariables
   public static W3MmdEvent CapitalDestroyedEvent;
   public static W3MmdEvent CpCaptureEvent;
 
-  public static bool _initialized;
+  public static bool Initialized;
 
   public static void Init()
   {
-    if (_initialized)
+    if (Initialized)
     {
       return;
     }
@@ -69,6 +69,6 @@ public static class MmdVariables
     CapitalDestroyedEvent = W3Mmd.DefineEvent("capital_destroyed", "{0} destroyed capital {1}", "Player", "Capital");
     CpCaptureEvent = W3Mmd.DefineEvent("cp_capture", "{0} captured CP worth {1}", "Player", "Value");
 
-    _initialized = true;
+    Initialized = true;
   }
 }
