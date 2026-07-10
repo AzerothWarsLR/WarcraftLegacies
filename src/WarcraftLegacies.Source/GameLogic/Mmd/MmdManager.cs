@@ -82,7 +82,6 @@ public static class MmdManager
 
     stats.GoldEarned += amount;
   }
-
   public static void AddGoldSpent(player p, float amount)
   {
     var stats = GetStats(p);
@@ -93,7 +92,6 @@ public static class MmdManager
 
     stats.GoldSpent += amount;
   }
-
   public static void AddCpCapture(player p, int cpValue)
   {
     var stats = GetStats(p);
@@ -116,7 +114,6 @@ public static class MmdManager
 
     stats.CpMinutesOwned += cpCount;
   }
-
   public static void AddCapitalDestroyed(player p, string capitalName)
   {
     var stats = GetStats(p);
@@ -127,7 +124,6 @@ public static class MmdManager
 
     stats.CapitalsDestroyed.Add(capitalName);
   }
-
   public static void SetResult(player p, string result)
   {
     var stats = GetStats(p);
@@ -139,7 +135,6 @@ public static class MmdManager
     stats.Result = result;
     stats.TurnsSurvived = GameTimeManager.Turn;
   }
-
   public static void FinalizeUndecidedResults()
   {
     foreach (var (p, stats) in _statsByPlayer)
@@ -156,7 +151,6 @@ public static class MmdManager
       }
     }
   }
-
   public static void WriteToMmd()
   {
     foreach (var p in MmdManager.StatsByPlayer.Keys)
@@ -171,32 +165,32 @@ public static class MmdManager
         continue;
       }
 
-      MmdVariables.hero_kills.Set(p, s.HeroKills);
-      MmdVariables.hero_deaths.Set(p, s.HeroDeaths);
-      MmdVariables.hero_damage_dealt.Set(p, s.HeroDamageDealt);
-      MmdVariables.hero_damage_taken.Set(p, s.HeroDamageTaken);
-      MmdVariables.hero_revives.Set(p, s.HeroRevives);
+      MmdVariables.HeroKills.Set(p, s.HeroKills);
+      MmdVariables.HeroDeaths.Set(p, s.HeroDeaths);
+      MmdVariables.HeroDamageDealt.Set(p, s.HeroDamageDealt);
+      MmdVariables.HeroDamageTaken.Set(p, s.HeroDamageTaken);
+      MmdVariables.HeroRevives.Set(p, s.HeroRevives);
 
-      MmdVariables.units_killed.Set(p, s.UnitsKilled);
-      MmdVariables.units_lost.Set(p, s.UnitsLost);
-      MmdVariables.damage_to_units.Set(p, s.DamageToUnits);
-      MmdVariables.damage_to_heroes.Set(p, s.DamageToHeroes);
-      MmdVariables.damage_taken_units.Set(p, s.DamageTakenUnits);
-      MmdVariables.damage_taken_heroes.Set(p, s.DamageTakenHeroes);
+      MmdVariables.UnitsKilled.Set(p, s.UnitsKilled);
+      MmdVariables.UnitsLost.Set(p, s.UnitsLost);
+      MmdVariables.DamageToUnits.Set(p, s.DamageToUnits);
+      MmdVariables.DamageToHeroes.Set(p, s.DamageToHeroes);
+      MmdVariables.DamageTakenUnits.Set(p, s.DamageTakenUnits);
+      MmdVariables.DamageTakenHeroes.Set(p, s.DamageTakenHeroes);
 
-      MmdVariables.gold_earned.Set(p, s.GoldEarned);
-      MmdVariables.gold_spent.Set(p, s.GoldSpent);
+      MmdVariables.GoldEarned.Set(p, s.GoldEarned);
+      MmdVariables.GoldSpent.Set(p, s.GoldSpent);
 
-      MmdVariables.cp_minutes_owned.Set(p, s.CpMinutesOwned);
-      MmdVariables.cp_captures.Set(p, s.CpCaptures);
-      MmdVariables.cp_value_controlled.Set(p, s.CpValueControlled);
+      MmdVariables.CpMinutesOwned.Set(p, s.CpMinutesOwned);
+      MmdVariables.CpCaptures.Set(p, s.CpCaptures);
+      MmdVariables.CpValueControlled.Set(p, s.CpValueControlled);
 
-      MmdVariables.turns_survived.Set(p, s.TurnsSurvived);
-      MmdVariables.score.Set(p, MmdScoring.Compute(s));
+      MmdVariables.TurnsSurvived.Set(p, s.TurnsSurvived);
+      MmdVariables.Score.Set(p, MmdScoring.Compute(s));
 
       foreach (var c in s.CapitalsDestroyed)
       {
-        MmdVariables.capital_destroyed_event.Emit(p.Name, c);
+        MmdVariables.CapitalDestroyedEvent.Emit(p.Name, c);
       }
 
       if (s.Result == "win")
