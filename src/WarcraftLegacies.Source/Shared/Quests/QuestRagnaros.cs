@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Effects;
@@ -43,7 +44,8 @@ public sealed class QuestRagnaros : QuestData
   protected override string RewardDescription => "Ragnaros is summoned near the Blackrock Depths, and can be slain to acquire Sulfuras";
 
   /// <inheritdoc/>
-  public override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the portal to the Firelands, and can now summon Ragnaros.";
+  public override string RewardFlavour => Loc.Format("{unit} has seized control of the portal to the Firelands, and can now summon Ragnaros.",
+    ("{unit}", _heroInRectObjective.CompletingUnitName));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

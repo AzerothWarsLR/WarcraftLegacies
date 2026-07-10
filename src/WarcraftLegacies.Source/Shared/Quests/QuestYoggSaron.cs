@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Effects;
@@ -43,7 +44,8 @@ public sealed class QuestYoggSaron : QuestData
   protected override string RewardDescription => "Gain the ability to release Yogg-Saron from his near Storm peaks; he can be slain to acquire Val'anyr, Hammer of Ancient Kings";
 
   /// <inheritdoc/>
-  public override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the prison of Yogg-Saron, and can now free him.";
+  public override string RewardFlavour => Loc.Format("{unit} has seized control of the prison of Yogg-Saron, and can now free him.",
+    ("{unit}", _heroInRectObjective.CompletingUnitName));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
