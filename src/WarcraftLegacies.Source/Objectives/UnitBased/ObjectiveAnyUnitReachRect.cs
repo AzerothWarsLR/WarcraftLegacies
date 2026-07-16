@@ -26,9 +26,9 @@ public sealed class ObjectiveAnyUnitReachRect : Objective, IHasCompletingUnit
   public ObjectiveAnyUnitReachRect(Rectangle targetRect, string rectName, bool heroOnly)
   {
     _targetRect = targetRect.Rect;
-    Description = heroOnly
-      ? Loc.Format("You have a hero reach {rect}", ("{rect}", Loc.Get(rectName)))
-      : Loc.Format("You have a unit reach {rect}", ("{rect}", Loc.Get(rectName)));
+    SetDescription(
+      heroOnly ? "You have a hero reach {rect}" : "You have a unit reach {rect}",
+      ("{rect}", Loc.Get(rectName)));
     _heroOnly = heroOnly;
     DisplaysPosition = true;
     PingPath = "MinimapQuestTurnIn";

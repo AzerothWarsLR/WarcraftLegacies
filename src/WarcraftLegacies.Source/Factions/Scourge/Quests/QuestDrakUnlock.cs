@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Extensions;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -36,7 +37,10 @@ public sealed class QuestDrakUnlock : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {_kelthuzad.Name} from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all buildings in Drak'tharon Keep and learn to train {hero} from the {altar}",
+    ("{hero}", _kelthuzad.Name),
+    ("{altar}", GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)

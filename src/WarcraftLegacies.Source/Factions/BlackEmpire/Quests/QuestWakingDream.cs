@@ -1,4 +1,5 @@
-﻿using MacroTools.PreplacedWidgets;
+﻿using MacroTools.Localization;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -19,5 +20,7 @@ public sealed class QuestWakingDream : QuestData
     "Zon'ozz has joined my ranks once more.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to train Warlord Zon'ozz from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_NZOTH_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train Warlord Zon'ozz from the {altar}",
+    ("{altar}", GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_NZOTH_ALTAR)));
 }

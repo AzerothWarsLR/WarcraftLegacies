@@ -15,9 +15,9 @@ public sealed class ObjectiveUnitAlive : Objective
   /// <param name="whichUnit">The unit that must stay alive for this objective to be completed.</param>
   public ObjectiveUnitAlive(unit whichUnit)
   {
-    Description = whichUnit.IsUnitType(unittype.Structure)
-      ? Loc.Format("{target} is intact", ("{target}", Loc.Get(whichUnit.Name)))
-      : Loc.Format("{target} is alive", ("{target}", Loc.Get(whichUnit.Name)));
+    SetDescription(
+      whichUnit.IsUnitType(unittype.Structure) ? "{target} is intact" : "{target} is alive",
+      ("{target}", Loc.Get(whichUnit.Name)));
     Progress = QuestProgress.Complete;
     PlayerUnitEvents.Register(UnitEvent.Dies, () =>
     {

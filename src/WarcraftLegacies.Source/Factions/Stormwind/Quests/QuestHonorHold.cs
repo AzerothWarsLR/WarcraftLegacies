@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -35,8 +36,10 @@ public sealed class QuestHonorHold : QuestData
     "Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Control of all units at Honor Hold and {GetObjectName(UNIT_O06K_SIEGE_TOWER_STORMWIND)} gain the {GetObjectName(ABILITY_A108_ARTILLERY_BOMBARDMENT_STORMWIND)} ability.";
+  protected override string RewardDescription => Loc.Format(
+    "Control of all units at Honor Hold and {siegeTower} gain the {ability} ability.",
+    ("{siegeTower}", Loc.Get(GetObjectName(UNIT_O06K_SIEGE_TOWER_STORMWIND))),
+    ("{ability}", Loc.Get(GetObjectName(ABILITY_A108_ARTILLERY_BOMBARDMENT_STORMWIND))));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)

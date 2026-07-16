@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -21,9 +22,20 @@ public sealed class ObjectiveBuildInRect : Objective
     set
     {
       _currentBuildCount = value;
-      Description = _targetBuildCount > 1
-        ? $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount}/{_targetBuildCount})"
-        : $"Build {GetObjectName(_objectId)} {_areaName}";
+      if (_targetBuildCount > 1)
+      {
+        SetDescription("Build {count} {building}s {area} ({current}/{count})",
+          ("{count}", _targetBuildCount.ToString()),
+          ("{building}", GetObjectName(_objectId)),
+          ("{area}", Loc.Get(_areaName)),
+          ("{current}", _currentBuildCount.ToString()));
+      }
+      else
+      {
+        SetDescription("Build {building} {area}",
+          ("{building}", GetObjectName(_objectId)),
+          ("{area}", Loc.Get(_areaName)));
+      }
     }
   }
 

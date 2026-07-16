@@ -41,10 +41,14 @@ public sealed class QuestKingArthas : QuestData
     "Fate decreed that Arthas would witness the fall of Stratholme and become corrupted by vengeance. Instead, he defended his homeland from the ravenous Scourge and took the battle to Northrend. Back at home, Terenas Menethil is forced to admit: his son is ready to be King.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die. Learn to build {GetObjectName(UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)}s. " +
-    $"Your {GetObjectName(UNIT_HKNI_KNIGHT_LORDAERON)}s become {GetObjectName(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)}s and " +
-    $"your {GetObjectName(UNIT_H01C_HUNTSMAN_LORDAERON)}s become {GetObjectName(UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)}s";
+  protected override string RewardDescription => Loc.Format(
+    "Arthas becomes the King of Lordaeron, gains the {crown}, and he can no longer permanently die. Learn to build {tower}s. Your {knight}s become {gallantKnight}s and your {huntsman}s become {arbalest}s",
+    ("{crown}", "Crown of Lordaeron"),
+    ("{tower}", GetObjectName(UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)),
+    ("{knight}", GetObjectName(UNIT_HKNI_KNIGHT_LORDAERON)),
+    ("{gallantKnight}", GetObjectName(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)),
+    ("{huntsman}", GetObjectName(UNIT_H01C_HUNTSMAN_LORDAERON)),
+    ("{arbalest}", GetObjectName(UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

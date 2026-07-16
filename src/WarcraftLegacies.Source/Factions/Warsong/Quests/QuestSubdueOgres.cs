@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Warsong.Mechanics;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -43,8 +44,15 @@ public sealed class QuestSubdueOgres : QuestData
   public override string RewardFlavour =>
     "The fate of the ogres has been decided, and the Horde's power grows.";
 
-  protected override string RewardDescription =>
-    $"Gain control of Stonemaul, {GetObjectName(SubdueRemoveUnit)}s' are upgraded to {GetObjectName(SubdueAddUnit)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage by 10, movement speed by 20 and hit points by 250.";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of Stonemaul, {removeUnit}s' are upgraded to {addUnit}s' and unlock the ability to train {ogreMagi}s. Alternatively, earn {gold} gold and up to {experience} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {blademaster}s' and {korkronElite}s' attack damage by 10, movement speed by 20 and hit points by 250.",
+    ("{removeUnit}", Loc.Get(GetObjectName(SubdueRemoveUnit))),
+    ("{addUnit}", Loc.Get(GetObjectName(SubdueAddUnit))),
+    ("{ogreMagi}", Loc.Get(GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG))),
+    ("{gold}", PillageGoldReward.ToString()),
+    ("{experience}", PillageExperienceReward.ToString()),
+    ("{blademaster}", Loc.Get(GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG))),
+    ("{korkronElite}", Loc.Get(GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE))));
 
   protected override void OnComplete(Faction completingFaction)
   {

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
@@ -32,11 +33,15 @@ public sealed class QuestBookOfMedivh : QuestData
   /// <param name="bypassDestructionRequirement">If true, <paramref name="protectingCapital"/> does not need to be destroyed to complete the quest.</param>
   public QuestBookOfMedivh(Capital protectingCapital, NamedRectangle bookLocation, Artifact bookOfMedivh,
     bool bypassLevelRequirement, bool bypassDestructionRequirement) : base("Book of Medivh",
-    $"The last remaining spellbook written by Medivh, the Last Guardian, is held securely within {bookLocation.Name}. The spells within its pages could bring us great power.",
+    Loc.Format(
+      "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within {location}. The spells within its pages could bring us great power.",
+      ("{location}", Loc.Get(bookLocation.Name))),
     @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
   {
     _bypassLevelRequirement = bypassLevelRequirement;
-    var bookLocationFullName = $"the Book of Medivh's pedestal at {bookLocation.Name}";
+    var bookLocationFullName = Loc.Format(
+      "the Book of Medivh's pedestal at {location}",
+      ("{location}", Loc.Get(bookLocation.Name)));
     _bookOfMedivh = bookOfMedivh;
     _objectiveWithCompletingUnit = bypassLevelRequirement
       ? new ObjectiveAnyUnitInRect(bookLocation.Rectangle, bookLocationFullName, true)

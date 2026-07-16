@@ -20,9 +20,9 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
   public ObjectiveLegendNotPermanentlyDead(LegendaryHero target)
   {
     _target = target;
-    Description = target.Unit.IsUnitType(unittype.Structure)
-      ? Loc.Format("{target} is intact", ("{target}", Loc.Get(target.Name)))
-      : Loc.Format("{target} is alive", ("{target}", Loc.Get(target.Name)));
+    SetDescription(
+      target.Unit.IsUnitType(unittype.Structure) ? "{target} is intact" : "{target} is alive",
+      ("{target}", Loc.Get(target.Name)));
 
     target.Died += OnTargetDied;
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnAnyUnitTrain);

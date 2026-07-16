@@ -51,7 +51,7 @@ public sealed class ObjectiveLegendDead : Objective
   /// <inheritdoc />
   public override void OnAdd(Faction faction)
   {
-    Description = CalculateDescription(_target);
+    SetDescription(GetDescriptionTemplate(), ("{target}", Loc.Get(_target.Name)));
   }
 
   private void OnDeath(LegendDiedEventArgs eventArgs)
@@ -72,17 +72,13 @@ public sealed class ObjectiveLegendDead : Objective
     }
   }
 
-  private string CalculateDescription(LegendaryHero target)
+  private string GetDescriptionTemplate()
   {
     if (PermanentOnly)
     {
-      return OnlyCreditKiller
-        ? Loc.Format("Permanently kill {target}", ("{target}", Loc.Get(target.Name)))
-        : Loc.Format("{target} is permanently dead", ("{target}", Loc.Get(target.Name)));
+      return OnlyCreditKiller ? "Permanently kill {target}" : "{target} is permanently dead";
     }
 
-    return OnlyCreditKiller
-      ? Loc.Format("Kill {target}", ("{target}", Loc.Get(target.Name)))
-      : Loc.Format("{target} is dead", ("{target}", Loc.Get(target.Name)));
+    return OnlyCreditKiller ? "Kill {target}" : "{target} is dead";
   }
 }

@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -35,7 +36,10 @@ public sealed class QuestTheBloodElves : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UnittypeId)}s from the Consortium, and you can summon Magister Rommath & Lor'themar Theron from the Altar of Prowess";
+    Loc.Format("Learn to train {unit}s from the {building}, and you can summon Magister Rommath & Lor'themar Theron from the {altar}",
+      ("{unit}", GetObjectName(UnittypeId)),
+      ("{building}", GetObjectName(BuildingId)),
+      ("{altar}", GetObjectName(UNIT_H01H_ALTAR_OF_PROWESS_QUELTHALAS_ALTAR)));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

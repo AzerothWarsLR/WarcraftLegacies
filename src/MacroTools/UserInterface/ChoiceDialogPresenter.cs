@@ -23,15 +23,8 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     _dialogText = dialogText;
   }
 
-  /// <summary>Fired when a choice has been made.</summary>
   protected abstract void OnChoicePicked(player whichPlayer, TChoice choice);
-
-  /// <summary>The default choice for this presenter, if the player picks nothing by the time it expires.</summary>
   protected abstract TChoice GetDefaultChoice(player whichPlayer);
-
-  /// <summary>
-  /// Determines whether a choice is active for the player it is being presented to. Inactive choices are not shown.
-  /// </summary>
   protected abstract bool IsChoiceActive(player whichPlayer, TChoice choice);
 
   /// <summary>Displays the faction choice to a player.</summary>
@@ -71,12 +64,6 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
   {
     if (player.LocalPlayer == whichPlayer)
     {
-      // SetMessage and SetVisibility(true) must land in the same call, together, gated on the same
-      // RunWhenLocalPlayerSettingsReady check - WC3 dialogs don't visually update SetMessage calls that land
-      // after SetVisibility(true), so if the two were awaited separately (as before), a message set later than
-      // the dialog's visibility could silently render blank forever once the dialog is already on screen. Waiting
-      // here still matters: this dialog appears on a fixed 4-second timer, well before the local player's language
-      // is guaranteed to have finished auto-detecting.
       SaveManager.RunWhenLocalPlayerSettingsReady(() =>
       {
         _pickDialog?.SetMessage(Loc.Get(_dialogText));

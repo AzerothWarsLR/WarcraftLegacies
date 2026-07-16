@@ -3,17 +3,6 @@ using MacroTools.Extensions;
 
 namespace MacroTools.Localization;
 
-/// <summary>
-/// Resolves player-facing text into the local player's preferred language.
-/// English text is used directly as the translation key, so there is no separate ID table to keep in sync.
-/// </summary>
-/// <remarks>
-/// Always resolves against <see cref="player.LocalPlayer"/>, never an arbitrary player, because Warcraft 3
-/// natives that display text to a specific player (eg. <c>DisplayTextToPlayer</c>) already only render locally
-/// on that player's own client. Every client independently evaluates <see cref="Get"/> using its own language
-/// setting, so looping over all players and displaying the "same" call produces different on-screen text per
-/// client without needing to synchronize anyone's language choice.
-/// </remarks>
 public static class Loc
 {
   private static readonly Dictionary<string, string> _spanish = new()
@@ -123,8 +112,8 @@ public static class Loc
     ["Open Alliance"] = "Alianza Abierta",
     ["Great War (8v8)"] = "Gran Guerra (8v8)",
     ["You are playing as the honorable {clan}.\n\nYou begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\nYour allies will be coming south to help you defend against the Old Gods, do not engage them alone."] =
-    "Juegas como el honorable {clan}.\n\nComienzas en Ashenvale, dirígete al sur para establecer tus bases, las Islas del Eco y Cuernos de Trueno.\n\nTus aliados vendrán del sur para ayudarte a defenderte contra los Antiguos Dioses, no los enfrentes solo.",
-    ["Grunt"] = "Soldado",
+    "Juegas como el honorable {clan}.\n\nComienzas en Vallefresno, dirígete al sur para establecer tus bases, las Islas del Eco y Cima del Trueno.\n\nTus aliados vendrán del sur para ayudarte a defenderte contra los Antiguos Dioses, no los enfrentes solo.",
+    ["Grunt"] = "Grunt",
     ["I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude."] =
       "He vagado solo durante muchos años, pequeña Misha. Sin embargo, a veces hasta yo me canso de esta soledad interminable.",
     ["I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction."] =
@@ -150,7 +139,7 @@ public static class Loc
     ["Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor."] =
       "El espíritu de Cairne ha partido de este mundo. Los Tauren ya han comenzado a venerar a su ancestro caído.",
     ["The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."] =
-      "Las mesetas de Cuernos de Trueno han sido despojadas de los Tauren. Los Pezuña de Sangre se han quedado sin hogar.",
+      "Las mesetas de Cima del Trueno han sido despojadas de los Tauren. Los Pezuña de Sangre se han quedado sin hogar.",
     ["Maelstrom Spirit"] = "Espíritu del Vórtice",
     ["Your Orc units have a {chance}% chance on attack to call down a lightning bolt dealing {damage} magic damage. Thrall instead has a 100% chance."] =
       "Tus unidades Orcas tienen un {chance}% de probabilidad al atacar de invocar un rayo que inflige {damage} de daño mágico. Thrall en cambio tiene un 100% de probabilidad.",
@@ -162,12 +151,8 @@ public static class Loc
     ["\n|c00FF7F00WARNING|r - Quest {quest} will expire in {turns} turns."] =
       "\n|c00FF7F00ADVERTENCIA|r - La misión {quest} expirará en {turns} turnos.",
 
-    // Entity names embedded into Objective descriptions via Loc.Get(unit.Name)/Loc.Get(target.Name) - these
-    // are the raw WC3 object data name (still English, since Capa 1's TRIGSTR conversion is reverted), looked
-    // up separately from the surrounding template. Keyed the same as ObjectDataTranslations.cs's Control Point
-    // entries for consistency, but this dictionary is the one actually consulted at runtime.
-    ["Southern Barrens"] = "Los Baldíos del Sur",
-    ["Northern Barrens"] = "Los Baldíos del Norte",
+    ["Southern Barrens"] = "Southern Barrens",
+    ["Northern Barrens"] = "Northern Barrens",
 
     // Frostwolf - QuestCrossroadsFrostwolf
     ["The Crossroads"] = "La Encrucijada",
@@ -183,7 +168,7 @@ public static class Loc
       "Vol'jin, el principal Cazador de Sombras de la tribu Lanza Negra, recibe a Thrall en su aldea con los brazos abiertos. Los trolls de las Islas del Eco acuerdan unánimemente unirse a la nueva Horda.",
     ["You gain control of Echo Isles, and learn to train Vol'jin from the Altar of Storms"] =
       "Obtienes el control de las Islas del Eco, y aprendes a entrenar a Vol'jin desde el Altar de las Tormentas",
-    ["Echo Isles"] = "las Islas del Eco",
+    ["Echo Isles"] = "Echo Isles",
 
     // Frostwolf - QuestDrektharsSpellbook
     ["Drekthar's Spellbook"] = "El Grimorio de Drek'thar",
@@ -192,7 +177,7 @@ public static class Loc
     ["The Vortex Pinnacle has been captured by the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement."] =
       "La Cumbre del Vórtice ha sido capturada por la Horda. Drek'thar le ha obsequiado al Jefe de Guerra Thrall su grimorio mágico por este logro.",
     ["Drek'thar's Spellbook"] = "El Grimorio de Drek'thar",
-    ["Vortex Pinnacle"] = "la Cumbre del Vórtice",
+    ["Vortex Pinnacle"] = "Vortex Pinnacle",
 
     // Frostwolf - QuestFreeNerzhul
     ["Jailor of the Damned"] = "Carcelero de los Condenados",
@@ -209,7 +194,7 @@ public static class Loc
     // Frostwolf - QuestHighmountain
     ["A Feast for Our Kin"] = "Un Festín para Nuestro Pueblo",
     ["Scouts report sighting of the Highmountain totem, thought lost long ago when the Broken Isles were shattered. As a gesture of renewed welcome, Cairne might offer them an invitation to a feast in Thunderbluff."] =
-      "Los exploradores reportan haber avistado el tótem de Monte Alto, que se creía perdido desde que las Islas Quebradas fueron destruidas. Como gesto de renovada bienvenida, Cairne podría ofrecerles una invitación a un festín en Cuernos de Trueno.",
+      "Los exploradores reportan haber avistado el tótem de Monte Alto, que se creía perdido desde que las Islas Quebradas fueron destruidas. Como gesto de renovada bienvenida, Cairne podría ofrecerles una invitación a un festín en Cima del Trueno.",
     ["Cairne is welcomed in Highmountain like a lost-long friend. Eager to explore the world and fight alongside their long-lost brethren, the Highmountain send their best hunters to support the Horde, and offer their home as a traveler's respite."] =
       "Cairne es recibido en Monte Alto como un viejo amigo perdido. Ansiosos por explorar el mundo y luchar junto a sus hermanos perdidos hace tiempo, los de Monte Alto envían a sus mejores cazadores para apoyar a la Horda, y ofrecen su hogar como refugio para viajeros.",
     ["Highmountain, north of Stormheim"] = "Monte Alto, al norte de Tormenheim",
@@ -220,9 +205,10 @@ public static class Loc
       "El ansia viajera de Rexxar lo ha puesto en contacto con todo tipo de bestias. Sin embargo, hay una gran masa de tierra a la que nunca se ha aventurado: la fría extensión de Rasganorte. Seguramente las criaturas salvajes también deambulen libres allí.",
     ["Rexxar ventures north into lands once thought incompatible with life, and discovers the paradise of furred megafauna that is the Borean Tundra. He tames the woolly mammoths there, and teaches the Frostwolf to ride them into battle."] =
       "Rexxar se aventura hacia el norte, a tierras que alguna vez se creyeron incompatibles con la vida, y descubre el paraíso de megafauna peluda que es la Tundra Boreal. Allí doma a los mamuts lanudos, y enseña a los Lobo Gélido a montarlos en batalla.",
-    ["Borean Tundra"] = "la Tundra Boreal",
+    ["Borean Tundra"] = "Borean Tundra",
 
-    // Frostwolf - QuestOrgrimmarFrostwolf
+    // Frostwolf - QuestOrgrimmarFrostwolf 
+    ["Build Orgrimmar"] = "Construir Orgrimmar",
     ["To Tame a Land"] = "Domar una Tierra",
     ["This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built."] =
       "Este nuevo continente está listo para ser tomado. Si la Horda ha de sobrevivir, debe construirse una nueva ciudad.",
@@ -245,7 +231,8 @@ public static class Loc
     ["The long march of the Tauren clans has ended, and they have joined forces with the Horde."] =
       "La larga marcha de los clanes Tauren ha terminado, y han unido fuerzas con la Horda.",
     ["Control of Thunder Bluff and enable Cairne to be trained at the Altar of Storms"] =
-      "Control de Cuernos de Trueno y habilita entrenar a Cairne en el Altar de las Tormentas",
+      "Control de Cima del Trueno y habilita entrenar a Cairne en el Altar de las Tormentas",
+    ["Thunder Bluff"] = "Thunder Bluff",
 
     // Frostwolf - QuestWorldShaman
     ["The World-Shaman"] = "El Chamán del Mundo",
@@ -318,12 +305,15 @@ public static class Loc
     ["Queen Azshara studied many forms of arcane knowledge, some darker than others. With access to her library and enough time, I will uncover her secrets."] =
       "La Reina Azshara estudió muchas formas de conocimiento arcano, algunas más oscuras que otras. Con acceso a su biblioteca y suficiente tiempo, descubriré sus secretos.",
     ["I have enslaved the cursed Tol'vir."] = "He esclavizado a los malditos Tol'vir.",
+    ["Learn to train {eradicator}s from the {hatchery}, learn to train {tolvirStatue}s from the {pyramid} and learn to train Moam from the {altar}"] =
+      "Aprendes a entrenar {eradicator} desde el {hatchery}, aprendes a entrenar {tolvirStatue} desde el {pyramid} y aprendes a entrenar a Moam desde el {altar}",
 
     // Ahnqiraj - QuestMockeryOfLife
     ["Mockery of Life"] = "Burla de la Vida",
     ["C'thun, the great distorter of flesh, needs to amass samples from many beings to create "] =
       "C'thun, el gran distorsionador de la carne, necesita reunir muestras de muchos seres para crear ",
     ["The abominable sandwurm Ouro has been created by Cthun"] = "El abominable gusano de arena Ouro ha sido creado por Cthun",
+    ["Learn to train {sandWorm}s from the {altar}"] = "Aprendes a entrenar {sandWorm} desde el {altar}",
 
     // Ahnqiraj - QuestDesolation
     ["Desolation"] = "Desolación",
@@ -347,6 +337,7 @@ public static class Loc
       "Solo recientemente he despertado, empuñando apenas una sombra de mi poder de los días del Imperio Negro. Debo reclamar mis poderes.",
     ["My singular gaze opens wide, pouring into the minds of all those unfortunate enough to inhabit Azeroth during my imminent reign."] =
       "Mi mirada singular se abre de par en par, derramándose en las mentes de todos aquellos con la desgracia de habitar Azeroth durante mi inminente reinado.",
+    ["C'thun learn to cast {ability}"] = "C'thun aprende a lanzar {ability}",
 
     // Ahnqiraj - QuestWarOfTheShiftingSand
     ["War of the Shifting Sands"] = "La Guerra de las Arenas Cambiantes",
@@ -375,31 +366,39 @@ public static class Loc
       "Invasores de Azeroth han tomado el control del Desembarco Crepuscular. ¡Destrúyelos!",
     ["With the invaders defeated, I have retaken control of the Twilight landing."] =
       "Con los invasores derrotados, he retomado el control del Desembarco Crepuscular.",
+    ["Gain Control of all buildings and units in the Twilight landing area, learn to train X'korr the Compelling from the {altar} and the ability to train 1 {forgottenOne} from the {mutationCircle}"] =
+      "Obtienes control de todos los edificios y unidades en el área del Desembarco Crepuscular, aprendes a entrenar a X'korr el Compulsivo desde el {altar} y la habilidad de entrenar 1 {forgottenOne} desde el {mutationCircle}",
 
     // BlackEmpire - QuestWakingCity
-    ["The Waking City"] = "La Ciudad que Despierta",
+    ["The Waking City"] = "La Ciudad del Despertar",
     ["Adventurers from Azeroth are threatening me, your god. Annihilate them."] =
       "Aventureros de Azeroth me amenazan a mí, su dios. Aniquílalos.",
     ["With the adventurer party destroyed, no one stands in my way."] =
       "Con el grupo de aventureros destruido, nadie se interpone en mi camino.",
+    ["Gain control of all buildings in Ny'lotha, learn to build the {mutationCircle}, and gain control of N'zoth"] =
+      "Obtienes control de todos los edificios en Ny'lotha, aprendes a construir el {mutationCircle}, y obtienes control de N'zoth",
 
     // BlackEmpire - QuestGiftofFlesh
     ["Gift of Flesh"] = "Regalo de Carne",
     ["The original Aqir, now buried deep beneath the earth, have always served me faithfully. To awaken them once more, I must search in the deepest reaches of Kalimdor: the Stonetalon caverns and the tunnels of Ahn'qiraj."] =
       "Los Aqir originales, ahora enterrados en las profundidades de la tierra, siempre me han servido fielmente. Para despertarlos una vez más, debo buscar en los rincones más profundos de Kalimdor: las cavernas de Garra de Piedra y los túneles de Ahn'Qiraj.",
     ["The Aqir have joined my ranks in glory again!"] = "¡Los Aqir se han unido a mis filas con gloria una vez más!",
+    ["Learn to train {aqir}s from the {pitOfTorment}"] = "Aprendes a entrenar {aqir} desde el {pitOfTorment}",
 
     // BlackEmpire - QuestWakingDream
     ["Waking Dream"] = "Sueño que Despierta",
     ["Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again."] =
       "Hace incontables eras, el Señor de la Guerra Zon'ozz era uno de mis generales más fuertes. Desafortunadamente, actualmente está atrapado en el pasado. Para invocarlo, necesito capturar las Cavernas del Tiempo y llamarlo para que me sirva en el presente una vez más.",
     ["Zon'ozz has joined my ranks once more."] = "Zon'ozz se ha unido a mis filas una vez más.",
+    ["Learn to train Warlord Zon'ozz from the {altar}"] = "Aprendes a entrenar a Warlord Zon'ozz desde el {altar}",
 
     // BlackEmpire - QuestMawofShuma
     ["Maw of Shu'ma"] = "Fauces de Shu'ma",
     ["Yor'sahj needs souls to awaken the Maw of Shu'ma, a terrible Forgotten one, for me. Destroying and ravaging one of the mortals great cities will grant him the souls he needs."] =
       "Yor'sahj necesita almas para despertar las Fauces de Shu'ma, un terrible Olvidado, para mí. Destruir y devastar una de las grandes ciudades de los mortales le otorgará las almas que necesita.",
     ["We have gained a new Forgotten One."] = "Hemos ganado un nuevo Olvidado.",
+    ["Learn to train one additional {forgottenOne} from the {mutationCircle}"] =
+      "Aprendes a entrenar un {forgottenOne} adicional desde el {mutationCircle}",
 
     // BlackEmpire - QuestMawofGorath
     ["Maw of Go'rath"] = "Fauces de Go'rath",
@@ -420,7 +419,7 @@ public static class Loc
       "Una hoja antigua de la época del propio Imperio Negro. La daga tiene voluntad propia e intenta corromper a quien la empuñe. Se ha perdido en el tiempo.",
     ["I have found the Blade of the Black Empire."] = "He encontrado la Hoja del Imperio Negro.",
     ["The Blade of the Black Empire appears near The Abyss"] = "La Hoja del Imperio Negro aparece cerca del Abismo",
-    ["The Abyss"] = "el Abismo",
+    ["The Abyss"] = "The Abyss",
 
     // BlackEmpire - QuestDestruction
     ["Destruction"] = "Destrucción",
@@ -442,6 +441,7 @@ public static class Loc
     ["I have been scheming behind the backs of the other old gods  for eons, now my time has come. I will rule the world."] =
       "He estado conspirando a espaldas de los otros antiguos dioses durante eones, ahora ha llegado mi momento. Gobernaré el mundo.",
     ["The World of Azeroth is mine."] = "El Mundo de Azeroth es mío.",
+    ["N'zoth learn to cast {ability}"] = "N'zoth aprende a lanzar {ability}",
 
     // BlackEmpire - QuestAlignement
     ["Alignement"] = "Alineación",
@@ -534,7 +534,7 @@ public static class Loc
     ["Gain control of all units at Theramore"] = "Obtienes control de todas las unidades en Theramore",
 
     // Dalaran - QuestCrystalGolem
-    ["Crystalsong Forest"] = "Bosque Cantoscristal",
+    ["Crystalsong Forest"] = "Crystalsong Forest",
     ["The living crystal of the Crystalsong Forest suffers from its proximity to the Legion. Freed from that corruption, it could be used to empower Dalaran's constructs."] =
       "El cristal viviente del Bosque Cantoscristal sufre por su cercanía a la Legión. Liberado de esa corrupción, podría usarse para potenciar los constructos de Dalaran.",
     ["Dalaran's Earth Golems have been infused with living crystal."] = "Los Gólems de Tierra de Dalaran han sido imbuidos con cristal viviente.",
@@ -575,6 +575,8 @@ public static class Loc
       "Hemos reconstruido el Exodar. Sus sistemas cobran vida vibrante, pulsando con energía cristalina.",
     ["The Exodar is destroyed. It can never be repaired again."] = "El Exodar ha sido destruido. Nunca podrá repararse de nuevo.",
     ["on Azuremyst Isle"] = "en la Isla Azuremyst",
+    ["Gain control of all units in the Exodar and learn to train Nobundo from the {altar}"] =
+      "Obtienes control de todas las unidades en el Exodar, y aprendes a entrenar a Nobundo desde el {altar}",
 
     // Draenei - QuestRebuildCivilisation
     ["The Way Forward"] = "El Camino a Seguir",
@@ -619,7 +621,7 @@ public static class Loc
     // Druids faction
     ["Druids of the Cenarion Circle"] = "Druidas del Círculo Cenarion",
     ["You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal near the World Tree.\n\nThe Old Gods are gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. Use him to awaken Malfurion from his slumber as soon as possible.\n\nGather your forces and strike before the Old Gods can organize their efforts."] =
-      "Juegas como los ancestrales {faction}.\n\nComienzas aislado en las partes más profundas del Monte Hyjal, cerca del Árbol del Mundo.\n\nLos Antiguos Dioses se están reuniendo para quemar el bosque de Ashenvale y el Árbol del Mundo. Cenarius ha emergido de su reclusión para detenerlos. Úsalo para despertar a Malfurion de su letargo lo antes posible.\n\nReúne tus fuerzas y ataca antes de que los Antiguos Dioses puedan organizar sus esfuerzos.",
+      "Juegas como los ancestrales {faction}.\n\nComienzas aislado en las partes más profundas del Monte Hyjal, cerca del Árbol del Mundo.\n\nLos Antiguos Dioses se están reuniendo para quemar el bosque de Vallefresno y el Árbol del Mundo. Cenarius ha emergido de su reclusión para detenerlos. Úsalo para despertar a Malfurion de su letargo lo antes posible.\n\nReúne tus fuerzas y ataca antes de que los Antiguos Dioses puedan organizar sus esfuerzos.",
 
     // Druids - dialogues (DruidsFaction.RegisterDialogue / RegisterSentinelsDialogue)
     ["Satyr"] = "Sátiro",
@@ -669,10 +671,10 @@ public static class Loc
     ["Control of all units in the Ascendant's Rise base"] = "Control de todas las unidades en la base de Ascenso del Ascendente",
 
     // Druids - QuestAshenvale
-    ["The Spirits of Ashenvale"] = "Los Espíritus de Ashenvale",
+    ["The Spirits of Ashenvale"] = "Los Espíritus de Vallefresno",
     ["The forest needs healing. Regain control of it to awaken it."] = "El bosque necesita sanar. Recupera el control de él para despertarlo.",
-    ["Ashenvale has awakened!"] = "¡Ashenvale ha despertado!",
-    ["Control of all units in Ashenvale"] = "Control de todas las unidades en Ashenvale",
+    ["Ashenvale has awakened!"] = "¡Vallefresno ha despertado!",
+    ["Control of all units in Ashenvale"] = "Control de todas las unidades en Vallefresno",
 
     // Druids - QuestDruidsKillCthun
     ["The War of the Shifting Sands"] = "La Guerra de las Arenas Cambiantes",
@@ -707,7 +709,7 @@ public static class Loc
     // FelHorde faction
     ["Fel Horde"] = "la Horda Fel",
     ["You are playing as the bloodthirsty {faction}.\n\nYou begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.\n\nOnce Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.\n\nThe Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout."] =
-      "Juegas como la sanguinaria {faction}.\n\nComienzas en Nagrand, aislado de tus fuerzas en la Ciudadela Infernal. Debes levantar un ejército y conquistar Terrallende rápidamente.\n\nUna vez que Terrallende esté bajo tu control, reúne tus hordas y prepárate para invadir Azeroth a través del Portal Oscuro.\n\nLa Alianza se está reuniendo fuera del Portal Oscuro para detenerte, así que prepárate para una fuga muy difícil.",
+      "Juegas como la sanguinaria {faction}.\n\nComienzas en Nagrand, aislado de tus fuerzas en la Ciudadela del Fuego Infernal. Debes levantar un ejército y conquistar Terrallende rápidamente.\n\nUna vez que Terrallende esté bajo tu control, reúne tus hordas y prepárate para invadir Azeroth a través del Portal Oscuro.\n\nLa Alianza se está reuniendo fuera del Portal Oscuro para detenerte, así que prepárate para una fuga muy difícil.",
 
     // FelHorde - DeathMessages (FelHordeLegends.cs)
     ["Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."] =
@@ -718,9 +720,9 @@ public static class Loc
     // FelHorde - QuestHellfireCitadel
     ["The Citadel"] = "La Ciudadela",
     ["The clans holding Hellfire Citadel do not respect Kargath's authority yet, Magtheridon is being kept alive by Illidan, if we break him, he could serve us well."] =
-      "Los clanes que retienen la Ciudadela Infernal aún no respetan la autoridad de Kargath, Magtheridon está siendo mantenido con vida por Illidan, si lo quebramos, podría servirnos bien.",
+      "Los clanes que retienen la Ciudadela del Fuego Infernal aún no respetan la autoridad de Kargath, Magtheridon está siendo mantenido con vida por Illidan, si lo quebramos, podría servirnos bien.",
     ["Control of all units in Hellfire Citadel and enable Magtheridon to be trained at the altar"] =
-      "Control de todas las unidades en la Ciudadela Infernal y habilita entrenar a Magtheridon en el altar",
+      "Control de todas las unidades en la Ciudadela del Fuego Infernal y habilita entrenar a Magtheridon en el altar",
 
     // FelHorde - QuestRuinsofShadowmoon (file QuestRebuildBlackTemple.cs)
     ["Ash and Smoke"] = "Cenizas y Humo",
@@ -768,6 +770,8 @@ public static class Loc
       "El Portal Oscuro puede usarse para teletransportar unidades entre los Reinos del Este y Terrallende",
 
     // Objective description templates (shared across all quests, tokens substituted after lookup)
+    ["Cast {spell}"] = "Lanza {spell}",
+    ["Anyone casts {spell}"] = "Cualquiera lanza {spell}",
     ["{hero} is at {rect}"] = "{hero} está en {rect}",
     ["{hero} is level {level}"] = "{hero} está en el nivel {level}",
     ["Have {hero} channel at {rect} for {duration} seconds"] = "Haz que {hero} canalice en {rect} durante {duration} segundos",
@@ -824,7 +828,7 @@ public static class Loc
       "Juegas como el maldito {faction}.\n\nComienzas más allá del Muro de Greymane, en la Aldea de Pyrewood;\n\nDebes levantar un ejército y contraatacar a los lobos feroces de Silverpine y a los señores bandidos de Durnholde que se han apoderado del sur de Lordaeron.\n\nUna vez que hayas recuperado el sur de Lordaeron, abre la Puerta de Greymane y marcha al norte para ayudar a Lordaeron y Dalaran con la plaga, si no es demasiado tarde.",
 
     // Gilneas - QuestShadowfangKeep
-    ["Shadowfang Keep"] = "Castillo de Colmillo Oscuro",
+    ["Shadowfang Keep"] = "Shadowfang Keep",
     ["Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us secure our lost lands."] =
       "Colmillo Oscuro y Ambermill están asediados por criaturas hostiles, debemos eliminarlas para que puedan ayudarnos a asegurar nuestras tierras perdidas.",
     ["Control of all buildings and units in Shadowfang."] = "Control de todos los edificios y unidades en Colmillo Oscuro.",
@@ -853,7 +857,7 @@ public static class Loc
       "Illidan regresa triunfante al Templo Negro, la sede de su poder. Los orcos y demonios de Terrallende aclaman su llegada.",
     ["Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, abandon your base in the Broken Isles"] =
       "Obtén control del Templo Negro, aprende a entrenar a Lady Vashj desde el Altar del Traidor, y abandona tu base en las Islas Quebradas",
-    ["Black Temple"] = "el Templo Negro",
+    ["Black Temple"] = "Black Temple",
 
     // Illidari - QuestAzsharasVein
     ["Azshara's Vein"] = "La Vena de Azshara",
@@ -861,7 +865,7 @@ public static class Loc
       "Bajo Eldarath y la costa de Azshara yace una convergencia de antiguas líneas ley, antaño cartografiadas y manipuladas por los Altos Nacidos. Lady Vashj cree que los restos de su labor arcana aún pueden estudiarse para desvelar conocimientos que se creían perdidos hace mucho.",
     ["By examining the ley line nexus and the remnants of Highborne arcane structures, the Illidari recover forgotten principles of the arcane, expanding their understanding of Azeroth’s ancient magic."] =
       "Al examinar el nexo de líneas ley y los restos de estructuras arcanas de los Altos Nacidos, los Illidari recuperan principios olvidados de lo arcano, ampliando su comprensión de la antigua magia de Azeroth.",
-    ["Azshara Coast"] = "la Costa de Azshara",
+    ["Azshara Coast"] = "Azshara Coast",
 
     // Illidari - QuestZangarmarsh
     ["Coilfang Reservoir"] = "Reserva Colmillo Torcido",
@@ -869,16 +873,18 @@ public static class Loc
       "Lady Vashj y sus Naga fueron fundamentales para asegurar Terrallende, y por sus hazañas recibieron el pantano de Zangarmarsh. Últimamente ha sido invadido, y debe ser reconquistado si los Naga han de ayudar en la lucha contra la Alianza.",
     ["With the swamps of Zangarmarsh secured, Lady Vashj and her Naga begin the work of rebuilding their clutcheries."] =
       "Con los pantanos de Zangarmarsh asegurados, Lady Vashj y sus Naga comienzan la labor de reconstruir sus criaderos.",
+    ["Gain control of the Zangarmarsh outpost, learn to build {clutchery}s, and learn to train Warlord Naj'entus from the {altar}"] =
+      "Obtienes control del puesto avanzado de Zangarmarsh, aprendes a construir {clutchery}, y aprendes a entrenar a Warlord Naj'entus desde el {altar}",
 
     // Illidari - QuestStranglethornOutpost
-    ["The Cape of Stranglethorn"] = "El Cabo de Tuercespina",
+    ["The Cape of Stranglethorn"] = "The Cape of Stranglethorn",
     ["Some time ago, a group of Naga were sent to scout out the Cape of Stranglethorn. They should be brought back into the fold to aid in the war with Stormwind."] =
       "Hace tiempo, un grupo de Naga fue enviado a explorar el Cabo de Tuercespina. Deben ser traídos de vuelta al redil para ayudar en la guerra contra Ventormenta.",
     ["The Naga explorers in the Cape of Stranglethorn are rejoined with the Illidari forces from Outland, and are eager to battle the Alliance."] =
       "Los exploradores Naga en el Cabo de Tuercespina se reúnen con las fuerzas Illidari de Terrallende, y están ansiosos por luchar contra la Alianza.",
     ["Gain control of Naga units and buildings in the Cape of Stranglethorn"] =
       "Obtén control de las unidades y edificios Naga en el Cabo de Tuercespina",
-    ["the Cape of Stranglethorn"] = "el Cabo de Tuercespina",
+    ["the Cape of Stranglethorn"] = "the Cape of Stranglethorn",
 
     // Illidari - QuestLostOnes
     ["The Draenei"] = "Los Draenei",
@@ -886,6 +892,8 @@ public static class Loc
       "Los Draenei nativos de Terrallende, liderados por el Sabio Anciano Akama, ayudaron a Illidan en su asalto al Templo Negro, pero lo abandonaron cuando dejó vivir a Magtheridon. Con invasores a las puertas de Terrallende, los Draenei deben ser obligados a volver al redil.",
     ["Elder Sage Akama and his Draenei tribesmen have been brought to heel, now forced to fight alongside Illidan - and the Pit Lord that once threatened their extinction."] =
       "El Sabio Anciano Akama y sus tribus Draenei han sido sometidos, ahora obligados a luchar junto a Illidan, y junto al Señor del Pozo que una vez amenazó con su extinción.",
+    ["Gain control of the Draenei camp in Outland, learn to build {draeneiHut}s, and learn to train Akama from the {altar}"] =
+      "Obtienes control del campamento Draenei en Terrallende, aprendes a construir {draeneiHut}, y aprendes a entrenar a Akama desde el {altar}",
 
     // Illidari - QuestBurningCrusade
     ["The Burning Crusade"] = "La Cruzada Ardiente",
@@ -1040,7 +1048,7 @@ public static class Loc
       "La Liga de Exploradores ha sido establecida en Forjaz, y han emprendido su primera expedición.",
     ["{hero} has overseen the expedition at {region} and the archaeologists have taken the relics back to Ironforge to study."] =
       "{hero} ha supervisado la expedición en {region} y los arqueólogos han llevado las reliquias de vuelta a Forjaz para estudiarlas.",
-    ["Sunken Temple"] = "el Templo Hundido",
+    ["Sunken Temple"] = "Sunken Temple",
     ["Zul'Gurub"] = "Zul'Gurub",
 
     // Ironforge - QuestExplorersLeagueKalimdorExpedition
@@ -1053,8 +1061,8 @@ public static class Loc
       "{heroNorth} ha supervisado la expedición en {regionNorth}, mientras que {heroSouth} ha supervisado la expedición en {regionSouth}. Los arqueólogos han llevado las valiosas reliquias de vuelta a Forjaz para estudiarlas y venderlas.",
     ["Gain 500 gold."] = "Obtén 500 de oro.",
     ["Eldarath"] = "Eldarath",
-    ["Stonetalon Peak"] = "el Pico de Garra de Piedra",
-    ["Dire Maul"] = "Masacre",
+    ["Stonetalon Peak"] = "Stonetalon Peak",
+    ["Dire Maul"] = "Dire Maul",
     ["Zul'Farrak"] = "Zul'Farrak",
 
     // Ironforge - QuestExpedition
@@ -1108,7 +1116,7 @@ public static class Loc
     ["Daelin Proudmoore led his people against the savage Orcs during the Second War. Now his old enemies ride forth once more, and he won't be satisfied until he brings the battle to their doorstep."] =
       "Daelin Proudmoore lideró a su pueblo contra los salvajes Orcos durante la Segunda Guerra. Ahora sus viejos enemigos cabalgan de nuevo, y no estará satisfecho hasta llevar la batalla hasta su puerta.",
     ["Daelin stands before the Hellfire Citadel, towering over the landscape like a twisted monument to the Orc's brutality. He vows that, this time, he won't merely drive the Orcs back - he'll lead his men to conquer these brutal lands and slaughter them all."] =
-      "Daelin se yergue ante la Ciudadela Infernal, dominando el paisaje como un monumento retorcido a la brutalidad Orca. Jura que, esta vez, no se limitará a hacer retroceder a los Orcos: liderará a sus hombres para conquistar estas tierras brutales y masacrarlos a todos.",
+      "Daelin se yergue ante la Ciudadela del Fuego Infernal, dominando el paisaje como un monumento retorcido a la brutalidad Orca. Jura que, esta vez, no se limitará a hacer retroceder a los Orcos: liderará a sus hombres para conquistar estas tierras brutales y masacrarlos a todos.",
     ["Daelin Proudmoore gains 4000 experience"] = "Daelin Proudmoore gana 4000 puntos de experiencia",
     ["Hellfire, the belly of the beast"] = "Infierno, el vientre de la bestia",
 
@@ -1130,6 +1138,9 @@ public static class Loc
       "Ventormenta enfrenta la amenaza de aniquilación a manos de fuerzas de más allá del Portal Oscuro, y han solicitado nuestra ayuda. Si hemos de ayudarles, primero debemos establecer un punto de apoyo en la costa de Vragosuelo.",
     ["The Kul Tiran outpost in Westfall has been completed. In the mean time, the Ember Order has cleansed House Waycrest of their Drust influence. Meredith Waycrest has been released from her pact, and may now join the war effort."] =
       "El puesto avanzado de Kul Tiras en Poniente ha sido completado. Mientras tanto, la Orden de las Ascuas ha purgado a la Casa Waycrest de su influencia Drust. Meredith Waycrest ha sido liberada de su pacto, y ahora puede unirse al esfuerzo bélico.",
+    ["in Stranglethorn or Westfall"] = "en Vragosuelo o Poniente",
+    ["Learn to build {chapterHouse}s, and learn to train Meredith Waycrest from the {altar}"] =
+      "Aprendes a construir {chapterHouse}, y aprendes a entrenar a Meredith Waycrest desde el {altar}",
 
     // Kultiras - QuestBeyondPortal
     ["Beyond the Dark Portal"] = "Más Allá del Portal Oscuro",
@@ -1211,7 +1222,7 @@ public static class Loc
     ["Learn to train troops from Shadowfang Keep."] = "Aprende a entrenar tropas desde el Castillo de Colmillo Oscuro.",
 
     // Legion - QuestControlSpire
-    ["Windrunner Spire"] = "La Aguja de Windrunner",
+    ["Windrunner Spire"] = "Windrunner Spire",
     ["The seat of the Windrunners, pillaging it would yield a great bounty and be the perfect grounds for a demon gate."] =
       "La sede de los Windrunner; saquearla produciría un gran botín y sería el terreno perfecto para una puerta demoníaca.",
     ["The Spire has been pillaged. A secret demon gate has now been formed inside."] =
@@ -1224,6 +1235,8 @@ public static class Loc
       "Los Señores del Terror han jugado un papel sutil en preparar a Lordaeron para la llegada de la Plaga. Una vez que la Plaga sea desatada, los Señores del Terror activarán sus propios recursos.",
     ["With the Plague now spreading amongst Lordaeron's populace, the Dreadlords set the second half of their plan in motion: a direct demonic incursion into the Eastern Kingdoms."] =
       "Con la Plaga ahora propagándose entre la población de Lordaeron, los Señores del Terror ponen en marcha la segunda mitad de su plan: una incursión demoníaca directa en los Reinos del Este.",
+    ["Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {dreadShrine} in each of the following Scourge bases: Deathknell, Stratholme Coast, and Scholomance. Mal'ganis improves his Vampiric Siphon ability."] =
+      "Obtienes control de una pequeña base en Alterac, aprendes a generar un portal hacia Alterac usando el Argus Teleporter, y obtienes un {dreadShrine} en cada una de las siguientes bases de la Plaga: El Doblar de la Muerte, la Costa de Stratholme, y Scholomance. Mal'ganis mejora su habilidad Sifón Vampírico.",
 
     // Legion - QuestLegionCaptureSunwell
     ["Fall of Silvermoon"] = "La Caída de Lunargenta",
@@ -1310,11 +1323,11 @@ public static class Loc
     // Lordaeron - QuestHearthglen
     ["Hearthglen"] = "Hearthglen",
     ["The village of Hearthglen is under siege from the restless dead. The people there must be saved."] =
-      "La aldea de Hearthglen está sitiada por los muertos inquietos. Su gente debe ser salvada.",
+      "La aldea de Vega del Amparo está sitiada por los muertos inquietos. Su gente debe ser salvada.",
     ["The walking corpses assailing Hearthglen have been put back to rest, and Hearthglen lives to see another day."] =
-      "Los cadáveres andantes que asediaban Hearthglen han vuelto a descansar, y Hearthglen vive para ver otro día.",
-    ["Control of all units in Hearthglen"] = "Control de todas las unidades en Hearthglen",
-    ["in Hearthglen"] = "en Hearthglen",
+      "Los cadáveres andantes que asediaban Vega del Amparo han vuelto a descansar, y Vega del Amparo vive para ver otro día.",
+    ["Control of all units in Hearthglen"] = "Control de todas las unidades en Vega del Amparo",
+    ["in Hearthglen"] = "en Vega del Amparo",
 
     // Lordaeron - QuestStrahnbrad
     ["The Defense of Strahnbrad"] = "La Defensa de Strahnbrad",
@@ -1515,7 +1528,7 @@ public static class Loc
     ["The Crimson Cathedral has been established in Northrend. Seeing first-hand that the Light can reach even the darkest places of the world, what few shreds of doubt lingering in Brigitte Abbendis' soul evaporate."] =
       "La Catedral Carmesí ha sido establecida en Rasganorte. Al ver de primera mano que la Luz puede alcanzar incluso los lugares más oscuros del mundo, los pocos jirones de duda que quedaban en el alma de Brigitte Abbendis se desvanecen.",
     ["Brigitte Abbendis gains the Divine Intervention ability, and you gain control of the Crimson Cathedral in Sholazar Bassin"] =
-      "Brigitte Abbendis obtiene la habilidad Intervención Divina, y obtienes control de la Catedral Carmesí en la Cuenca de Sholazar",
+      "Brigitte Abbendis obtiene la habilidad Divine Intervention, y obtienes control de la Catedral Carmesí en la Cuenca de Sholazar",
 
     // ScarletCrusade - QuestOnslaught
     ["Onslaught"] = "Arremetida",
@@ -1551,7 +1564,7 @@ public static class Loc
     ["Saiden Dathrohan gains 6000 experience"] = "Saiden Dathrohan gana 6000 de experiencia",
 
     // ScarletCrusade - QuestReconquerCapital
-    ["Lordaeron City"] = "La Ciudad de Lordaeron",
+    ["Lordaeron City"] = "Lordaeron City",
     ["Lordaeron City was once the heart of the Alliance and the center of the humanity before its fall. It must be reclaimed at all costs."] =
       "La Ciudad de Lordaeron fue alguna vez el corazón de la Alianza y el centro de la humanidad antes de su caída. Debe ser recuperada a toda costa.",
     ["The Scarlet Crusade has successfully rebuilt Lordaeron City, cementing their position as the rightful successors of Lordaeron's legacy."] =
@@ -1673,7 +1686,7 @@ public static class Loc
       "El Nigromante Kel'thuzad ha sido sumergido en el Pozo del Sol y ha renacido como un Lich. El pozo, antes un faro de luz y poder eternos, se ha retorcido en una fuente de magia oscura, esparciendo malevolencia por la tierra.",
     ["Permanently corrupt the Sunwell and turn Kel'thuzad into a Lich, causing his Dark Ritual ability to also summon a Revenant"] =
       "Corrompe permanentemente el Pozo del Sol y convierte a Kel'thuzad en un Lich, haciendo que su habilidad Ritual Oscuro también invoque a un Revenant",
-    ["The Sunwell"] = "El Pozo del Sol",
+    ["The Sunwell"] = "The Sunwell",
 
     // Scourge - QuestLichKingArthas
     ["The Ascension"] = "La Ascensión",
@@ -1724,9 +1737,9 @@ public static class Loc
     ["Gain control of a base in Icecrown"] = "Obtienes control de una base en Corona de Hielo",
 
     // Scourge - Mechanics/TheFrozenThrone
-    ["Frozen Throne (Empty)"] = "Trono de Hielo (Vacío)",
-    ["Frozen Throne (Ruptured)"] = "Trono de Hielo (Fracturado)",
-    ["Icecrown Citadel"] = "Ciudadela de Corona de Hielo",
+    ["Frozen Throne (Empty)"] = "Frozen Throne (Empty)",
+    ["Frozen Throne (Ruptured)"] = "Frozen Throne (Ruptured)",
+    ["Icecrown Citadel"] = "Icecrown Citadel",
     ["Northrend quakes as Icecrown Citadel topples to the glacier below, bringing a final end to Ner'zhul's fortress and prison of ice."] =
       "Rasganorte tiembla mientras la Ciudadela de Corona de Hielo se derrumba sobre el glaciar de abajo, poniendo fin definitivo a la fortaleza y prisión de hielo de Ner'zhul.",
     ["CAPITAL DAMAGED"] = "CAPITAL DAÑADA",
@@ -1774,6 +1787,8 @@ public static class Loc
     ["Daughters of the Moon"] = "Hijas de la Luna",
     ["Auberdin needs to be mobilized for war. Darkshore has already been attacked by wild creatures gone mad."] =
       "Auberdine necesita movilizarse para la guerra. Costa Oscura ya ha sido atacada por criaturas salvajes enloquecidas.",
+    ["Control of all units in Astranaar Outpost and Auberdine and learn to train Tyrande and Naisha from the {altar}"] =
+      "Control de todas las unidades en el Puesto Avanzado de Astranaar y Auberdine, y aprendes a entrenar a Tyrande y Naisha desde el {altar}",
 
     // Sentinels - QuestFeathermoon
     ["Shores of Feathermoon"] = "Costas de Feathermoon",
@@ -1782,6 +1797,8 @@ public static class Loc
     ["The Sentinels have rebuilt Feathermoon Stronghold to its former glory. Maiev Shadowsong now joins their efforts."] =
       "Las Centinelas han reconstruido el Bastión de Feathermoon a su antigua gloria. Maiev Shadowsong ahora se une a sus esfuerzos.",
     ["in Feathermoon"] = "en Feathermoon",
+    ["Learn to train Maiev Shadowsong from the {altar} and gain control of the survivors hiding in Feathermoon."] =
+      "Aprendes a entrenar a Maiev Shadowsong desde el {altar}, y obtienes control de los sobrevivientes escondidos en Feathermoon.",
 
     // Sentinels - QuestMaievOutland
     ["Driven by Vengeance"] = "Impulsada por la Venganza",
@@ -1795,30 +1812,51 @@ public static class Loc
     // Sentinels - QuestScepterOfTheQueenSentinels
     ["Return to the Fold"] = "Regreso al Redil",
     ["Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Stonemaul falls, it would be safe for them to come out."] =
-      "Vestigios de los antiguos Altos Nacidos sobreviven entre las ruinas del Athenaeum. Si Stonemaul cae, sería seguro para ellos salir.",
+      "Vestigios de los antiguos Altos Nacidos sobreviven entre las ruinas del Athenaeum. Si Quebrantarrocas cae, sería seguro para ellos salir.",
     ["The Shen'dralar, the Highborne survivors of the Sundering, swear allegiance to their fellow Night Elves. As a sign of their loyalty, they offer up an artifact they have guarded for thousands of years: the Scepter of the Queen."] =
       "Los Shen'dralar, los sobrevivientes Altos Nacidos del Hundimiento, juran lealtad a sus congéneres Elfos Nocturnos. Como muestra de su lealtad, ofrecen un artefacto que han custodiado durante miles de años: el Cetro de la Reina.",
     ["outside the Athenaeum"] = "fuera del Athenaeum",
     ["the Athenaeum"] = "el Athenaeum",
+    ["Gain the Scepter of the Queen, the Athenaeum, 4 {highborne}, and the ability to train {highborne} from the {temple}"] =
+      "Obtienes el Cetro de la Reina, el Athenaeum, 4 {highborne}, y la habilidad de entrenar {highborne} desde el {temple}",
 
     // Sentinels - QuestSentinelsKillBlackEmpire
     ["Otherwordly Invaders"] = "Invasores de Otro Mundo",
     ["The Black Empire has poured out near Feathermoon and begun threatening the wilds. These invaders must be repelled."] =
       "El Imperio Negro se ha derramado cerca de Feathermoon y ha comenzado a amenazar las tierras salvajes. Estos invasores deben ser repelidos.",
+    ["Allows {guildRanger}s to be trained from {bastion}s"] =
+      "Permite entrenar {guildRanger} desde {bastion}",
 
     // Sentinels - QuestSentinelsKillCthun
     ["Gates of Ahn'Qiraj"] = "Las Puertas de Ahn'Qiraj",
     ["The Qiraji have bursted out of their underground city. They need to be ridden from the surface of Kalimdor."] =
       "Los Qiraji han irrumpido desde su ciudad subterránea. Deben ser expulsados de la superficie de Kalimdor.",
+    ["Learn to train {moonRider}s from the {roost}s and research {upgrade}'s second level from the {academy}"] =
+      "Aprendes a entrenar {moonRider} desde el {roost}, e investigar el segundo nivel de {upgrade} desde el {academy}",
 
     // Sentinels - QuestVaultoftheWardens
-    ["Vault of the Wardens"] = "Bóveda de los Guardianes",
+    ["Vault of the Wardens"] = "Vault of the Wardens",
     ["In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari, but it was abandoned when the Broken Isles were shattered. In troubling times such as these, the Wardens could make great use of such a facility."] =
       "Hace milenios, las entidades más viles de Azeroth fueron encarceladas en unas instalaciones cerca de Zin-Ashari, pero fueron abandonadas cuando las Islas Quebradas se hicieron pedazos. En tiempos tan turbulentos como estos, los Guardianes podrían sacar gran provecho de esas instalaciones.",
     ["The ancient Vault of the Wardens has been secured. Maiev and her Wardens take up residence within its ancient halls."] =
       "La antigua Bóveda de los Guardianes ha sido asegurada. Maiev y sus Guardianes se establecen en sus antiguos salones.",
+    ["4 free {warden}s appear at the Broken Isles, and you learn to train {warden}s from the {vault} and from {bastion}s"] =
+      "Aparecen 4 {warden} gratis en las Islas Quebradas, y aprendes a entrenar {warden} desde el {vault} y desde {bastion}",
+    ["You can now train Wardens from the {vault} and from {bastion}s."] =
+      "Ahora puedes entrenar Wardens desde el {vault} y desde {bastion}.",
 
-    // Shared/Quests/QuestExtractSunwellVial (used by Draenei, Quel'thalas, Sentinels — all now translated)
+    // Shared/Quests/QuestBookOfMedivh
+    ["Book of Medivh"] = "Libro de Medivh",
+    ["The last remaining spellbook written by Medivh, the Last Guardian, is held securely within {location}. The spells within its pages could bring us great power."] =
+      "El último grimorio restante escrito por Medivh, el Último Guardián, se resguarda con seguridad dentro de {location}. Los hechizos en sus páginas podrían darnos un gran poder.",
+    ["the Book of Medivh's pedestal at {location}"] = "el pedestal del Libro de Medivh en {location}",
+    ["No other player has acquired {item}"] = "Ningún otro jugador ha obtenido {item}",
+    ["The Book of Medivh, which can be used to summon the full might of the Burning Legion"] =
+      "El Libro de Medivh, que puede usarse para invocar todo el poderío de la Legión Ardiente",
+    ["The Book of Medivh"] = "El Libro de Medivh",
+    ["Gilneas"] = "Gilneas",
+
+    // Shared/Quests/QuestExtractSunwellVial
     ["Eternity, Distilled"] = "Eternidad, Destilada",
     ["The High Elves of Quel'thalas have in their possession a well of immense arcane energy. A mere vial of it would be of extraordinary value, if only we could get our hands on one."] =
       "Los Altos Elfos de Quel'thalas poseen un pozo de inmensa energía arcana. Un simple vial de ella sería de un valor extraordinario, si tan solo pudiéramos conseguir uno.",
@@ -1857,7 +1895,7 @@ public static class Loc
       "Con Nordrassil bajo tu control, los druidas flaquean, y las fuerzas elementales del Trono de los Cuatro Vientos se fortalecen.",
 
     // Skywall - QuestShimmering
-    ["Shimmering Flats"] = "Llano Reluciente",
+    ["Shimmering Flats"] = "Shimmering Flats",
     ["With our lands secured we must establish a forward base."] =
       "Con nuestras tierras aseguradas, debemos establecer una base avanzada.",
     ["Gain Control all buildings in Shimmering Flats"] = "Obtienes control de todos los edificios en el Llano Reluciente",
@@ -1883,7 +1921,7 @@ public static class Loc
     // Stormwind faction
     ["Kingdom of Stormwind"] = "Reino de Ventormenta",
     ["You are playing as the steadfast {faction}.\n\nYou begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire, and finally Stormwind City.\n\nOnce you have unified Stormwind's forces, race east to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.\n\nMake sure to communicate with your Dwarven and Kul Tiran allies, as they will be key to defeating the evil that lurks beyond the Dark Portal."] =
-      "Juegas como el firme {faction}.\n\nComienzas en Poniente, separado del resto del reino. Reúne tus tierras liberando Darkshire, Lakeshire, y finalmente la Ciudad de Ventormenta.\n\nUna vez que hayas unificado las fuerzas de Ventormenta, corre hacia el este hasta el Bastión de Nethergarde y prepárate para la invasión de la Horda Fel.\n\nAsegúrate de comunicarte con tus aliados Enanos y de Kul Tiras, ya que serán clave para derrotar al mal que acecha más allá del Portal Oscuro.",
+      "Juegas como el firme {faction}.\n\nComienzas en Poniente, separado del resto del reino. Reúne tus tierras liberando Villa Oscura, Villa del Lago, y finalmente la Ciudad de Ventormenta.\n\nUna vez que hayas unificado las fuerzas de Ventormenta, corre hacia el este hasta el Bastión de Nethergarde y prepárate para la invasión de la Horda Fel.\n\nAsegúrate de comunicarte con tus aliados Enanos y de Kul Tiras, ya que serán clave para derrotar al mal que acecha más allá del Portal Oscuro.",
 
     // Stormwind - StormwindLegends
     ["The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing."] =
@@ -1893,11 +1931,14 @@ public static class Loc
 
     // Stormwind - CityOfHeroes power (QuestStormwindCity)
     ["City of Heroes"] = "Ciudad de Héroes",
+    ["Units"] = "Unidades",
 
     // Stormwind - QuestStormwindCity
     ["Clear the Outskirts"] = "Limpia las Afueras",
     ["The outskirts of Stormwind are infested by rebels and foul creatures. Defeat them to regain control of your lands."] =
       "Las afueras de Ventormenta están infestadas de rebeldes y criaturas repugnantes. Derrótalos para recuperar el control de tus tierras.",
+    ["Gain control of all units in Stormwind, learn to train Varian from the {altar}, learn to cast {summonGarrison} from {keep}s and {castle}s, and acquire the {power} Power"] =
+      "Obtienes control de todas las unidades en Ventormenta, aprendes a entrenar a Varian desde el {altar}, aprendes a lanzar {summonGarrison} desde los {keep} y los {castle}, y adquieres el Poder {power}",
 
     // Stormwind - QuestClosePortal
     ["Seal the Dark Portal"] = "Sella el Portal Oscuro",
@@ -1920,21 +1961,29 @@ public static class Loc
     // Stormwind - QuestDarkshire
     ["Gnoll Troubles"] = "Problemas de Gnolls",
     ["The town of Darkshire is under attack by Gnoll's, clear them out!"] =
-      "La ciudad de Darkshire está siendo atacada por Gnolls, ¡elimínalos!",
-    ["Control of all units in Darkshire"] = "Control de todas las unidades en Darkshire",
+      "La ciudad de Villa Oscura está siendo atacada por Gnolls, ¡elimínalos!",
+    ["Control of all units in Darkshire"] = "Control de todas las unidades en Villa Oscura",
+    ["Duskwood"] = "Duskwood",
 
     // Stormwind - QuestGoldshire
     ["The Scourge of Elwynn"] = "El Flagelo de Elwynn",
     ["Hogger and his pack have taken over Goldshire, clear them out!"] =
-      "Hogger y su manada se han apoderado de Goldshire, ¡elimínalos!",
-    ["The Gnolls have been defeated, Goldshire is safe."] = "Los Gnolls han sido derrotados, Goldshire está a salvo.",
-    ["Control of all units in Goldshire"] = "Control de todas las unidades en Goldshire",
+      "Hogger y su manada se han apoderado de Villadorada, ¡elimínalos!",
+    ["The Gnolls have been defeated, Goldshire is safe."] = "Los Gnolls han sido derrotados, Villadorada está a salvo.",
+    ["Control of all units in Goldshire"] = "Control de todas las unidades en Villadorada",
+    ["Elwynn Forest"] = "Elwynn Forest",
 
     // Stormwind - QuestHonorHold
+    ["Honor Hold"] = "Bastión del Honor",
     ["Despite Outland's incredibly harsh climate, some Alliance forces have managed to make a home there - a town called Honor Hold"] =
-      "A pesar del clima increíblemente duro de Terrallende, algunas fuerzas de la Alianza han logrado hacer un hogar allí: una ciudad llamada Honor Hold",
+      "A pesar del clima increíblemente duro de Terrallende, algunas fuerzas de la Alianza han logrado hacer un hogar allí: una ciudad llamada Bastión del Honor",
     ["Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth."] =
-      "Honor Hold ahora está libre de la constante amenaza latente de la Ciudadela Infernal, y finalmente se ha reconectado con su Alianza de Azeroth.",
+      "Bastión del Honor ahora está libre de la constante amenaza latente de la Ciudadela del Fuego Infernal, y finalmente se ha reconectado con su Alianza de Azeroth.",
+    ["Hellfire Citadel"] = "Hellfire Citadel",
+    ["Siege Tower"] = "Siege Tower",
+    ["Artillery Bombardment"] = "Artillery Bombardment",
+    ["Control of all units at Honor Hold and {siegeTower} gain the {ability} ability."] =
+      "Control de todas las unidades en Bastión del Honor y las {siegeTower} obtienen la habilidad {ability}.",
 
     // Stormwind - QuestKhadgar
     ["Keeper of the Eternal Watch"] = "Guardián de la Vigilia Eterna",
@@ -1944,17 +1993,21 @@ public static class Loc
       "Khadgar ha sido liberado de su confinamiento bajo el Templo Negro, y ahora es libre de servir al Reino de Ventormenta.",
     ["You can summon Khadgar from the Altar of Kings"] = "Puedes invocar a Khadgar desde el Altar de los Reyes",
 
-    // Stormwind - QuestKingdomOfManStormwind (Title and Flavour reused verbatim from Lordaeron's QuestKingdomOfManLordaeron)
+    // Stormwind - QuestKingdomOfManStormwind  
     ["The people of the Eastern Kingdoms have been united under the banner of Lordaeron. Long live High King Varian Wrynn!"] =
       "El pueblo de los Reinos del Este ha sido unido bajo el estandarte de Lordaeron. ¡Larga vida al Alto Rey Varian Wrynn!",
     ["You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Varian gains 10 Strength and 10 Agility"] =
       "Obtienes una investigación que mejora a todas tus unidades, las Coronas de Lordaeron y Ventormenta se fusionan, y Varian gana 10 de Fuerza y 10 de Agilidad",
+    ["Crown of Lordaeron"] = "Crown of Lordaeron",
+    ["Crown of Stormwind"] = "Crown of Stormwind",
+    ["Stormwind City"] = "Stormwind City",
 
     // Stormwind - QuestLakeshire
     ["Marauding Ogres"] = "Ogros Merodeadores",
     ["The town of Lakeshire is invaded by Ogres, wipe them out!"] =
-      "La ciudad de Lakeshire está siendo invadida por Ogros, ¡acábalos!",
-    ["Control of all units in Lakeshire"] = "Control de todas las unidades en Lakeshire",
+      "La ciudad de Villa del Lago está siendo invadida por Ogros, ¡acábalos!",
+    ["Control of all units in Lakeshire"] = "Control de todas las unidades en Villa del Lago",
+    ["Redridge Mountains"] = "Redridge Mountains",
 
     // Stormwind - QuestNethergarde
     ["Nethergarde Relief"] = "Socorro a Nethergarde",
@@ -1971,7 +2024,6 @@ public static class Loc
     ["Control of all units at Stromgarde, the artifact Trol'kalar, and you can summon the hero Galen Trollbane from the Altar of Kings"] =
       "Control de todas las unidades en Stromgarde, el artefacto Trol'kalar, y puedes invocar al héroe Galen Trollbane desde el Altar de los Reyes",
 
-    // Shared Objectives/Channel.cs timerDialogTitle fix — also unblocks Frostwolf's "Taming the Maelstrom"
     ["Taming the Maelstrom"] = "Domando el Maelström",
 
     // Sunfury faction
@@ -1998,6 +2050,8 @@ public static class Loc
       "La Gran Astrómanta Solarion ha sentido durante mucho tiempo una fascinación por el vacío, para disgusto de sus colegas. Con los materiales de investigación adecuados en mano, podría convertirse en una fuerza a tener en cuenta.",
     ["Extensive study of Murmur's essence has granted Solarion the power to channel void energies."] =
       "El extenso estudio de la esencia de Murmur ha otorgado a Solarion el poder de canalizar energías del vacío.",
+    ["Learn to train High Astromancer Solarion from the {altar}"] =
+      "Aprendes a entrenar a la Gran Astrómanta Solarion desde el {altar}",
 
     // Sunfury - QuestSummonKil
     ["The Deceiver"] = "El Engañador",
@@ -2006,6 +2060,8 @@ public static class Loc
     ["Kael'thas' profane ritual has paved the way for Kil'jaeden, supreme commander of the Burning Legion, to bridge the gap from the Twisting Nether to our world. Our people embrace fel magic wholeheartedly, training in preparation for their coming lord."] =
       "El ritual profano de Kael'thas ha abierto el camino para que Kil'jaeden, comandante supremo de la Legión Ardiente, tienda un puente desde el Vacío Abisal hasta nuestro mundo. Nuestro pueblo abraza la magia fel de todo corazón, entrenando en preparación para la llegada de su señor.",
     ["Summoning Kil'jaeden"] = "Invocando a Kil'jaeden",
+    ["Learn to train Kil'jaeden from the {altar}, and {warlock}s from the {lyceum}"] =
+      "Aprendes a entrenar a Kil'jaeden desde el {altar}, y {warlock} desde el {lyceum}",
 
     // Sunfury - QuestTempestKeep
     ["Eco-domes"] = "Biodomos",
@@ -2013,6 +2069,9 @@ public static class Loc
       "La Furia del Sol debe aprender a adaptarse a su nuevo hogar dentro del inhóspito Netherstorm. Hay varios biodomos repartidos por la región, remanentes de la existencia anterior de Netherstorm como el verdeante Farahlon. Serían excelentes ubicaciones para instalaciones de cultivo.",
     ["With food production now secured, we can settle Tempest Keep and start growing Ancients of the Arcane."] =
       "Con la producción de alimentos ahora asegurada, podemos asentarnos en la Fortaleza Tempestuosa y comenzar a cultivar Ancestrales de lo Arcano.",
+    ["Gain control of Tempest Keep, and learn to build {ancientPool}s and {artificerCourt}s"] =
+      "Obtienes control de la Fortaleza Tempestuosa, y aprendes a construir {ancientPool} y {artificerCourt}",
+    ["in one of the 3 Eco-dome in Netherstorm"] = "en uno de los 3 Biodomos de Netherstorm",
 
     // Sunfury - QuestUpperNetherstorm
     ["Upper Netherstorm"] = "Netherstorm Superior",
@@ -2024,7 +2083,7 @@ public static class Loc
     ["in upper Netherstorm"] = "en el Netherstorm superior",
 
     // Sunfury - QuestWellOfEternity
-    ["The Well of Eternity"] = "El Pozo de la Eternidad",
+    ["The Well of Eternity"] = "The Well of Eternity",
     ["The Maelstrom still hides the shattered Well of Eternity. With his immense power, Kil'jaeden can summon a new well that will bring forth the destruction of the world."] =
       "El Maelström todavía oculta el destrozado Pozo de la Eternidad. Con su inmenso poder, Kil'jaeden puede invocar un nuevo pozo que traerá la destrucción del mundo.",
     ["Kil'jaeden has reformed the ancient Well of Eternity. From its wellsprings, unlimited arcane energies spring forth. For the first time in their miserable existences, the Sunfury are truly sated."] =
@@ -2046,7 +2105,7 @@ public static class Loc
 
     // Warsong - WarsongLegends
     ["Mannoroth the Corrupter has fallen."] = "Mannoroth el Corruptor ha caído.",
-    ["The fortress of the Stonemaul Clan has fallen."] = "La fortaleza del Clan Stonemaul ha caído.",
+    ["The fortress of the Stonemaul Clan has fallen."] = "La fortaleza del Clan Quebrantarrocas ha caído.",
     ["Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world."] =
       "Orgrimmar ha sido demolida, y con ella mueren las esperanzas y sueños de una raza devastada por la guerra que busca refugio en un nuevo mundo.",
 
@@ -2069,8 +2128,8 @@ public static class Loc
     ["The Fountain of Blood is under Warsong control. As the orcs drink from it, they feel a a familiar fury awake within them."] =
       "La Fuente de Sangre está bajo control Warsong. Al beber de ella, los orcos sienten despertar una furia familiar dentro de sí.",
     ["Allows Orcish units to increase their attack rate and movement speed temporarily. Blood Brothers is now available to Grunts"] =
-      "Permite a las unidades Orcas aumentar temporalmente su velocidad de ataque y de movimiento. Hermanos de Sangre ahora está disponible para los Soldados",
-    ["The Fountain of Blood"] = "la Fuente de Sangre",
+      "Permite a las unidades Orcas aumentar temporalmente su velocidad de ataque y de movimiento. Hermanos de Sangre ahora está disponible para los Grunts",
+    ["The Fountain of Blood"] = "The Fountain of Blood",
 
     // Warsong - QuestGarrosh
     ["Twilight's Reckoning"] = "El Ajuste de Cuentas del Crepúsculo",
@@ -2078,9 +2137,15 @@ public static class Loc
       "El monstruoso Antiguo Dios N'Zoth amenaza Kalimdor con locura y ruina. Termina su aterrador reinado para asegurar el continente y avanzar las ambiciones de la Horda.",
     ["The nightmarish grasp of N'Zoth and the Black Empire has been shattered, allowing Garrosh and the Warsong clan to rally and press forward towards new territories."] =
       "El pesadillesco control de N'Zoth y el Imperio Negro ha sido destrozado, permitiendo que Garrosh y el clan Warsong se reagrupen y avancen hacia nuevos territorios.",
+    ["Ny'alotha, the Waking City"] = "Ny'alotha, the Waking City",
+    ["Can now train Garrosh from the {altar} and research the Warsong expedition from the {shipyard}"] =
+      "Ahora puedes entrenar a Garrosh desde el {altar} e investigar la expedición Warsong desde el {shipyard}",
+    ["Altar of Conquerors"] = "Altar de los Conquistadores",
+    ["Shipyard"] = "Astillero",
 
     // Warsong - QuestGrom
     ["Breaking Bad Blood"] = "Rompiendo la Mala Sangre",
+    ["Mannoroth, the Destroyer"] = "Mannoroth, el Destructor",
     ["Tricked by Mannoroth into drinking from the corrupted fountain, Grom Hellscream has fallen into demonic fury, locked in battle with the Sentinels. To free him from this enslaving curse, you must defeat Mannoroth the Destroyer himself."] =
       "Engañado por Mannoroth para beber de la fuente corrupta, Grom Hellscream ha caído en furia demoníaca, atrapado en batalla con las Centinelas. Para liberarlo de esta maldición esclavizante, debes derrotar al mismísimo Mannoroth el Destructor.",
     ["With Mannoroth's death, the dark curse binding Grom Hellscream shatters like twisted iron chains. Freed from corruption and the demon's grasp, a redeemed Grom Hellscream rises once more, joining your ranks to fight for the honor of the Warsong Clan."] =
@@ -2090,6 +2155,7 @@ public static class Loc
 
     // Warsong - QuestKillOldGods
     ["Echoes of War"] = "Ecos de Guerra",
+    ["Temple of Ahn'Qiraj"] = "Temple of Ahn'Qiraj",
     ["The Old Gods C'Thun and N'Zoth threaten to spread chaos across the land. By eliminating these ancient terrors, the Warsong may claim victory and infuse their warriors with newfound strength."] =
       "Los Antiguos Dioses C'Thun y N'Zoth amenazan con esparcir el caos por la tierra. Al eliminar a estos terrores ancestrales, el Warsong puede reclamar la victoria e infundir a sus guerreros con nuevas fuerzas.",
     ["With the defeat of C'Thun and N'Zoth, the Warsong champions channel the lingering echoes of the Old Gods' power. Both Kor'krons' and Blademasters' emerge reinvigorated to lead the Horde's conquests."] =
@@ -2116,14 +2182,26 @@ public static class Loc
     ["The fate of the ogres has been decided, and the Horde's power grows."] =
       "El destino de los ogros ha sido decidido, y el poder de la Horda crece.",
     ["Subdue the Ogres"] = "Someter a los Ogros",
-    ["Pillage Stonemaul"] = "Saquear Stonemaul",
+    ["Pillage Stonemaul"] = "Saquear Quebrantarrocas",
+    ["Stonemaul"] = "Stonemaul",
+    ["Warsong Grunt"] = "Warsong Grunt",
+    ["Mok'Nathal Warrior"] = "Mok'Nathal Warrior",
+    ["Blademaster"] = "Blademaster",
+    ["Kor'kron Elite"] = "Kor'kron Elite",
+    ["Gain control of Stonemaul, {removeUnit}s' are upgraded to {addUnit}s' and unlock the ability to train {ogreMagi}s. Alternatively, earn {gold} gold and up to {experience} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {blademaster}s' and {korkronElite}s' attack damage by 10, movement speed by 20 and hit points by 250."] =
+      "Obtienes control de Quebrantarrocas: los {removeUnit} se mejoran a {addUnit}, y desbloqueas la habilidad de entrenar {ogreMagi}. Alternativamente, gana {gold} de oro y hasta {experience} puntos de experiencia, repartidos entre todos tus héroes —mientras menos héroes controles, menos experiencia recibe cada uno—. Además, mejora el daño de ataque de los {blademaster} y {korkronElite} en 10, la velocidad de movimiento en 20, y los puntos de vida en 250.",
 
     // Warsong - QuestSubdueTauren
     ["Unyielding Bonds"] = "Lazos Inquebrantables",
     ["The Tauren of Thunder Bluff are noble warriors, but their allegiances are uncertain. Bring them into the fold or pillage their lands."] =
-      "Los Tauren de Cuernos de Trueno son guerreros nobles, pero sus lealtades son inciertas. Tráelos al redil o saquea sus tierras.",
+      "Los Tauren de Cima del Trueno son guerreros nobles, pero sus lealtades son inciertas. Tráelos al redil o saquea sus tierras.",
     ["Subdue the Tauren"] = "Someter a los Tauren",
-    ["Pillage Thunder Bluff"] = "Saquear Cuernos de Trueno",
+    ["Pillage Thunder Bluff"] = "Saquear Cima del Trueno",
+
+    ["Thunderbluff"] = "Thunderbluff",
+    ["Bloodhoof Totem"] = "Bloodhoof Totem",
+    ["Control of Thunder Bluff and the ability to train {kodo}s' from {beastiary} or gain the artifact {totem}, {gold} gold and {experience} experience points, shared across all your heroes—the fewer heroes you control, the less experience each receives."] =
+      "Control de Cima del Trueno y la habilidad de entrenar {kodo} desde {beastiary}, o consigue el artefacto {totem}, {gold} de oro y {experience} puntos de experiencia, repartidos entre todos tus héroes —mientras menos héroes controles, menos experiencia recibe cada uno—.",
 
     // Warsong - QuestSubdueTrolls
     ["To Break or Bind"] = "Quebrar o Atar",
@@ -2132,18 +2210,23 @@ public static class Loc
     ["The Darkspear Trolls have been brought to heel."] = "Los Trolls Lanza Negra han sido sometidos.",
     ["Subdue the Trolls"] = "Someter a los Trolls",
     ["Pillage Echo Isles"] = "Saquear las Islas del Eco",
+    ["Axe Thrower"] = "Axe Thrower",
+    ["Darkspear Berserker"] = "Darkspear Berserker",
+    ["Shadowpriest"] = "Shadowpriest",
+    ["Gain control of Echo Isles, {removeUnit}s are upgraded to {addUnit}s and learn to train {shadowpriest}s. Alternatively, earn {gold} gold and up to {experience} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {blademaster}s' and {korkronElite}s' maximum mana by 250 and mana regeneration by 50%."] =
+      "Obtienes control de las Islas del Eco: los {removeUnit} se mejoran a {addUnit}, y aprendes a entrenar {shadowpriest}. Alternativamente, ganas {gold} de oro y hasta {experience} puntos de experiencia, repartidos entre todos tus héroes —mientras menos héroes controles, menos experiencia recibe cada uno—. Además, mejora el maná máximo de los {blademaster} y {korkronElite} en 250 y la regeneración de maná en 50%.",
 
     // Warsong - QuestWarsongHold
     ["Warsong Hold"] = "Fortaleza Grito de Guerra",
+    ["Northrend Expedition"] = "Northrend Expedition",
     ["The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents."] =
       "La lejana tierra de Rasganorte es el nuevo hogar del chamán traidor Ner'zhul. El Warsong debe desembarcar sus fuerzas en sus costas para poner fin a la amenaza existencial que ahora representa.",
     ["The Warsong Clan has set sail for the icy shores of Northrend and set up a formidable encampment at Borean Tundra."] =
       "El Clan Grito de Guerra ha zarpado hacia las heladas costas de Rasganorte y ha establecido un campamento formidable en la Tundra Boreal.",
     ["A new base at Borean Tundra in Northrend"] = "Una nueva base en la Tundra Boreal en Rasganorte",
 
-    // Global quests (Shared/Quests) — registered once for every player regardless of faction
     // QuestTombOfSargeras
-    ["Tomb of Sargeras"] = "la Tumba de Sargeras",
+    ["Tomb of Sargeras"] = "Tomb of Sargeras",
     ["When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within."] =
       "Cuando la Guardiana Aegwynn derrotó al Titán caído Sargeras, selló su cadáver dentro del templo que llegaría a conocerse como la Tumba de Sargeras. Aún yace allí, tentando a quienes tengan la ambición de apoderarse del poder que permanece en su interior.",
     ["the Tomb of Sargeras' entrance"] = "la entrada de la Tumba de Sargeras",
@@ -2201,14 +2284,113 @@ public static class Loc
     ["A global conflict for control of Azeroth is brewing. The great powers set their sights on distant shores as allies, new and old alike, seek to bolster their own."] =
       "Se está gestando un conflicto global por el control de Azeroth. Las grandes potencias ponen su mirada en costas distantes mientras aliados, nuevos y antiguos por igual, buscan fortalecer los suyos.",
 
-    // ObjectiveKillUnit (fixed bug: baked GetProperName() before Loc.Get, never matched)
-    // "Kill {target}" already exists above (reused from another Objective class)
+    // ObjectiveKillUnit
     ["Destroy {target}"] = "Destruye a {target}",
 
-    // Frostwolf - RewardDescriptions unblocked now that Capa 1 (object data) covers these units
+    // Frostwolf
     ["Gain control of all units in Highmountain, and learn to train {unit}s from the {building}"] =
       "Obtienes control de todas las unidades en Monte Alto, y aprendes a entrenar la unidad {unit} desde {building}",
     ["Learn to train {unit}s from the {building}"] = "Aprendes a entrenar la unidad {unit} desde {building}",
+
+    // Quel'thalas
+    ["Eversong Woods"] = "Eversong Woods",
+    ["Drak'Tharon Keep"] = "Drak'Tharon Keep",
+    ["Altar of Prowess"] = "Altar of Prowess",
+    ["Learn to train {unit}s from the {building}, and you can summon Magister Rommath & Lor'themar Theron from the {altar}"] =
+      "Aprendes a entrenar la unidad {unit} desde {building}, y puedes invocar a Magíster Rommath y Lor'themar Theron desde el {altar}",
+
+    // Scourge
+    ["Icecrown Glacier"] = "Icecrown Glacier",
+    ["Stratholme Castle"] = "Stratholme Castle",
+    ["Frozen Throne"] = "Frozen Throne",
+    ["{caster} has cast {spell} on {target}"] = "{caster} ha lanzado {spell} sobre {target}",
+    ["Gain control of all buildings in Drak'tharon Keep and learn to train {hero} from the {altar}"] =
+      "Obtienes control de todos los edificios en el Fuerte Drak'tharon y aprendes a entrenar a {hero} desde el {altar}",
+    ["Learn to train {unit}s from the {building}. If your team killed Sapphiron, gain him in an undead form; otherwise, learn to train him from the {altar}"] =
+      "Aprendes a entrenar la unidad {unit} desde {building}. Si tu equipo mató a Sapphiron, lo obtienes en su forma no-muerta; de lo contrario, aprendes a entrenarlo desde el {altar}",
+    ["Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {building}, and {hero} becomes trainable at the {altar}"] =
+      "Obtienes visión sobre Lordaeron hasta que desates la Plaga, la investigación Plaga de la No-Muerte estará disponible en el {building}, y {hero} se vuelve entrenable en el {altar}",
+    ["Arthas abandons Lordaeron to join the Scourge; learn to train {hero} from the {altar}"] =
+      "Arthas abandona Lordaeron para unirse a la Plaga; aprendes a entrenar a {hero} desde el {altar}",
+    ["Enemy {descriptor} unit has entered {rect}"] = "Una unidad {descriptor} enemiga ha entrado a {rect}",
+    ["non-boat"] = "no naval",
+    ["Northrend"] = "Rasganorte",
+
+    // Ironforge
+    ["Gryphon Superior Breed"] = "Gryphon Superior Breed",
+    ["Gain control of {place}, learn to train Falstad Wildhammer from the {altar}, and gain the ability to research {upgrade} at the {building}"] =
+      "Obtienes control de {place}, aprendes a entrenar a Falstad Wildhammer desde el {altar}, y obtienes la habilidad de investigar {upgrade} en el {building}",
+
+    // Fel Horde
+    ["Blood Runes"] = "Blood Runes",
+    ["Learn to train {count} {unit}s from the {building} and acquire Felsteel Plating"] =
+      "Aprendes a entrenar {count} {unit} desde el {building} y adquieres las Placas de Acero Fel",
+    ["Teron Gorefiend can be trained at the altar and learn to train {count} {unit}s from the {building}"] =
+      "Teron Gorefiend puede ser entrenado en el altar, y aprendes a entrenar {count} {unit} desde el {building}",
+    ["Learn to research {upgrade} from the {building}"] = "Aprendes a investigar {upgrade} desde el {building}",
+    ["West-Zangarmarsh"] = "West-Zangarmarsh",
+    ["Terokkar Forest"] = "Terokkar Forest",
+    ["Stormwind Keep"] = "Stormwind Keep",
+    ["The Great Forge"] = "The Great Forge",
+    ["Silverpine Forest"] = "Silverpine Forest",
+    ["Southshore"] = "Southshore",
+    ["Hinterlands"] = "Hinterlands",
+    ["Arathi Highlands"] = "Arathi Highlands",
+    ["The Violet Citadel"] = "The Violet Citadel",
+
+    // Gilneas
+    ["Mount Hyjal"] = "Monte Hyjal",
+    ["Learn to train Darius Crowley from the {altar}"] = "Aprendes a entrenar a Darius Crowley desde el {altar}",
+    ["Learn to train {hero} from the {altar}, and learn to train {unit} from the {building}. If you're allied to the Druids, {hero}'s starting experience is halved"] =
+      "Aprendes a entrenar a {hero} desde el {altar}, y aprendes a entrenar {unit} desde {building}. Si estás aliado con los Druidas, la experiencia inicial de {hero} se reduce a la mitad",
+
+    // Skywall
+    ["Un'Goro Crater"] = "Un'Goro Crater",
+    ["Altar of Elements"] = "Altar of Elements",
+    ["Pavilion"] = "Pavilion",
+    ["Earth Protection"] = "Earth Protection",
+    ["Elemental Lord"] = "Elemental Lord",
+    ["Water Prison"] = "Water Prison",
+    ["Learn to train Ragnaros from the {altar} and learn to build the Magma Complex"] =
+      "Aprendes a entrenar a Ragnaros desde el {altar} y aprendes a construir el Complejo de Magma",
+    ["Learn to train Neptulon from the {altar}, Tidal Lords from the {building}, and unlocks the {ability} for {unit}."] =
+      "Aprendes a entrenar a Neptulon desde el {altar}, a los Señores de las Mareas desde el {building}, y desbloqueas el {ability} para el {unit}.",
+    ["Harness the magical essence of Nordrassil to empower your forces and unlocks the {ability} for {unit}. The training limit of {djinn}'s and {efreet}'s is increased from 4 to 6"] =
+      "Aprovechas la esencia mágica de Nordrassil para fortalecer tus fuerzas y desbloqueas el {ability} para el {unit}. El límite de entrenamiento de {djinn} y {efreet} aumenta de 4 a 6",
+    ["Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {altar}"] =
+      "Obtienes control de todos los edificios en la Cumbre del Vórtice, y aprendes a entrenar a Al-Akir desde el {altar}",
+
+    // Lordaeron
+    ["Alterac Mountains"] = "Alterac Mountains",
+    ["Storm Peaks"] = "Storm Peaks",
+    ["Learn to train {unit}s"] = "Aprendes a entrenar la unidad {unit}",
+    ["Gain control of all units in Tyr's Hand, learn to train Garithos from the {altar}, and learn to build {building}s"] =
+      "Obtienes control de todas las unidades en Tyr's Hand, aprendes a entrenar a Garithos desde el {altar}, y aprendes a construir {building}",
+    ["Learn to train Alexandros Mograine from the {altar}"] = "Aprendes a entrenar a Alexandros Mograine desde el {altar}",
+    ["Arthas becomes the King of Lordaeron, gains the {crown}, and he can no longer permanently die. Learn to build {tower}s. Your {knight}s become {gallantKnight}s and your {huntsman}s become {arbalest}s"] =
+      "Arthas se convierte en el Rey de Lordaeron, obtiene la {crown}, y ya no puede morir permanentemente. Aprendes a construir {tower}. Tus {knight} se convierten en {gallantKnight} y tus {huntsman} se convierten en {arbalest}",
+
+    // Scarlet Crusade
+    ["Scarlet Monastery"] = "Scarlet Monastery",
+    ["Sholazar Basin"] = "Sholazar Basin",
+    ["in Brill"] = "en Brill",
+    ["in Andorhal"] = "en Andorhal",
+    ["in Dragonblight"] = "en el Cementerio de Dragones",
+    ["Build {count} {building}s {area} ({current}/{count})"] = "Construye {count} {building} {area} ({current}/{count})",
+    ["Build {building} {area}"] = "Construye {building} {area}",
+    ["Learn to train Sally Whitemane from the {altar}"] = "Aprendes a entrenar a Sally Whitemane desde el {altar}",
+    ["Your {unit1}s and {unit2} gain 400 hit points"] = "Tus {unit1} y {unit2} obtienen 400 puntos de vida",
+    ["Your {unit} gain the Unholy Archon ability."] = "Tus {unit} obtienen la habilidad Unholy Archon.",
+
+    // Druids
+    ["Shrine to Malorne"] = "Shrine to Malorne",
+    ["Felwood"] = "Felwood",
+    ["Northern Ashenvale"] = "Northern Ashenvale",
+    ["Southern Ashenvale"] = "Southern Ashenvale",
+    ["Grizzly Hills"] = "Grizzly Hills",
+    ["in Grizzly Hills"] = "en Colinas Pardas",
+    ["Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {unit}, and learn to train the hero Ursoc from the {altar}. If you're allied to the Scourge, {hero}'s starting experience is halved"] =
+      "Obtienes una nueva capital en Colinas Pardas que puede investigar una mejora poderosa para tu {unit}, y aprendes a entrenar al héroe Ursoc desde el {altar}. Si estás aliado con la Plaga, la experiencia inicial de {hero} se reduce a la mitad",
 
   };
 
@@ -2217,28 +2399,15 @@ public static class Loc
   /// </summary>
   private static readonly Dictionary<string, string> _chinese = new();
 
-  /// <summary>
-  /// Every supported non-English language, keyed by the same IETF-style tag stored in
-  /// <see cref="PlayerSettings.Language"/>. Adding a new language means adding a dictionary here -
-  /// <see cref="Get"/> and <see cref="Format"/> need no changes.
-  /// </summary>
   private static readonly Dictionary<string, Dictionary<string, string>> _translations = new()
   {
     ["es"] = _spanish,
     ["zh"] = _chinese
   };
 
-  /// <summary>
-  /// Returns the translation of <paramref name="english"/> for the local player's language, or
-  /// <paramref name="english"/> itself if no translation exists yet.
-  /// </summary>
-  public static string Get(string english) => Get(english, player.LocalPlayer.GetPlayerData().PlayerSettings.Language);
+  public static string Get(string english) =>
+    Get(english, player.LocalPlayer.GetPlayerData().PlayerSettings.Language ?? GetSystemLanguage());
 
-  /// <summary>
-  /// Like <see cref="Get(string)"/>, but resolves against an explicit <paramref name="language"/> instead of the
-  /// local player's saved preference. Use this when text must be localized before the local player's save (and
-  /// therefore their saved language) has finished loading - see <see cref="GetSystemLanguage"/>.
-  /// </summary>
   public static string Get(string english, string? language)
   {
     if (language != null
@@ -2251,29 +2420,40 @@ public static class Loc
     return english;
   }
 
-  /// <summary>
-  /// Best-effort language guess based on the client's OS locale, available synchronously with no dependency on
-  /// <see cref="MacroTools.Save.SaveManager"/>. Does not reflect a manually-chosen language preference stored in
-  /// the player's save, since that requires the save to finish loading first.
-  /// </summary>
   public static string GetSystemLanguage()
   {
     var locale = BlzGetLocale();
     return locale.StartsWith("es") ? "es" : locale.StartsWith("zh") ? "zh" : "en";
   }
 
-  /// <summary>
-  /// Like <see cref="Get"/>, but replaces each <c>{token}</c> placeholder in the resolved template with its
-  /// corresponding value. Placeholders may appear in any order, so translations can reorder them freely.
-  /// </summary>
+
   public static string Format(string english, params (string Token, string Value)[] args)
   {
     var template = Get(english);
     foreach (var (token, value) in args)
     {
-      template = template.Replace(token, value);
+      template = ReplaceLiteral(template, token, Get(value));
     }
 
     return template;
+  }
+
+  private static string ReplaceLiteral(string source, string oldValue, string newValue)
+  {
+    var result = "";
+    var searchStart = 0;
+    while (true)
+    {
+      var index = source.IndexOf(oldValue, searchStart);
+      if (index < 0)
+      {
+        result += source.Substring(searchStart);
+        return result;
+      }
+
+      result += source.Substring(searchStart, index - searchStart);
+      result += newValue;
+      searchStart = index + oldValue.Length;
+    }
   }
 }

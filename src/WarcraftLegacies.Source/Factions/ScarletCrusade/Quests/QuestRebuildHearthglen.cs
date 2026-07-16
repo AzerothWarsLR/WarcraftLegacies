@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -32,6 +33,6 @@ public sealed class QuestRebuildHearthglen : QuestData
     "With the Monastery under Scarlet control, Sally Whitemane can be brought into the fold of the Crusade's leadership in earnest.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Learn to train Sally Whitemane from the {GetObjectName(UNIT_H0BQ_ALTAR_OF_CRUSADERS_SCARLET_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train Sally Whitemane from the {altar}", ("{altar}", GetObjectName(UNIT_H0BQ_ALTAR_OF_CRUSADERS_SCARLET_ALTAR)));
 }

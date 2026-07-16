@@ -18,9 +18,10 @@ public sealed class ObjectiveResearch : Objective
   /// terminology will treat it as one.</param>
   public ObjectiveResearch(int researchId, int structureId, bool structureIsProperNoun = false)
   {
-    Description = structureIsProperNoun
-      ? Loc.Format("Research {research} from {structure}", ("{research}", GetObjectName(researchId)), ("{structure}", GetObjectName(structureId)))
-      : Loc.Format("Research {research} from the {structure}", ("{research}", GetObjectName(researchId)), ("{structure}", GetObjectName(structureId)));
+    SetDescription(
+      structureIsProperNoun ? "Research {research} from {structure}" : "Research {research} from the {structure}",
+      ("{research}", Loc.Get(GetObjectName(researchId))),
+      ("{structure}", Loc.Get(GetObjectName(structureId))));
     PlayerUnitEvents.Register(ResearchEvent.IsFinished, OnAnyResearch, researchId);
   }
 

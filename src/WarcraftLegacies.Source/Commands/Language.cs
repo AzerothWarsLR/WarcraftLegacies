@@ -45,7 +45,6 @@ public sealed class Language : Command
     }
 
     commandUser.GetPlayerData().UpdatePlayerSetting("Language", languageCode);
-    // No Chinese UI text exists yet, since content translation hasn't started - only the language tag switches.
     return languageCode switch
     {
       "es" => "Idioma cambiado a español.",

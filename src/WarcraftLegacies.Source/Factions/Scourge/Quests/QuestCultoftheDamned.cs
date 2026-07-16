@@ -28,8 +28,11 @@ public sealed class QuestCultoftheDamned : QuestData
     "With the Cult of the Damned established, the Scourge can plan their invasion of Lordaeron. The powerful Baron Rivendare has also joined the Cult to serve the Lich King.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {GetObjectName(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN)}, and {_rivendare.Name} becomes trainable at the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {building}, and {hero} becomes trainable at the {altar}",
+    ("{building}", GetObjectName(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN)),
+    ("{hero}", _rivendare.Name),
+    ("{altar}", GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

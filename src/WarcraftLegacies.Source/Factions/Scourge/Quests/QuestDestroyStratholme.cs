@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -30,8 +31,10 @@ public sealed class QuestDestroyStratholme : QuestData
     "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, and will soon become its greatest champion.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    $"Arthas abandons Lordaeron to join the Scourge; learn to train {_arthas.Name} from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Arthas abandons Lordaeron to join the Scourge; learn to train {hero} from the {altar}",
+    ("{hero}", _arthas.Name),
+    ("{altar}", GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

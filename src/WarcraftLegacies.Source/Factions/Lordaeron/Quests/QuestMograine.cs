@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron.Quests;
@@ -26,6 +27,6 @@ public sealed class QuestMograine : QuestData
     "With the threat of the Scourge and the Plague, Mograine has returned to help Lordaeorn in their dire times.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Learn to train Alexandros Mograine from the {GetObjectName(AltarId)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train Alexandros Mograine from the {altar}", ("{altar}", GetObjectName(AltarId)));
 }

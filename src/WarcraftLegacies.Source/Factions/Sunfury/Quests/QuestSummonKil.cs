@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -26,6 +27,9 @@ public sealed class QuestSummonKil : QuestData
     "Kael'thas' profane ritual has paved the way for Kil'jaeden, supreme commander of the Burning Legion, to bridge the gap from the Twisting Nether to our world. Our people embrace fel magic wholeheartedly, training in preparation for their coming lord.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    $"Learn to train Kil'jaeden from the {GetObjectName(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)}, and {GetObjectName(UNIT_N0E3_WARLOCK_SUNFURY)}s from the {GetObjectName(UNIT_H0CB_LYCEUM_ARCANUM_SUNFURY_MAGIC)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train Kil'jaeden from the {altar}, and {warlock}s from the {lyceum}",
+    ("{altar}", GetObjectName(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)),
+    ("{warlock}", GetObjectName(UNIT_N0E3_WARLOCK_SUNFURY)),
+    ("{lyceum}", GetObjectName(UNIT_H0CB_LYCEUM_ARCANUM_SUNFURY_MAGIC)));
 }

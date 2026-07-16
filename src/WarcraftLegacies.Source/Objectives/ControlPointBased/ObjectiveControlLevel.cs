@@ -44,16 +44,21 @@ public sealed class ObjectiveControlLevel : Objective
 
   private void RefreshDescription()
   {
-    Description = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
-      ? Loc.Format(
-          "{target} is Control Level {level} or higher ({current}/{level})",
-          ("{target}", Loc.Get(_target.Name)),
-          ("{level}", _requiredLevel.ToString()),
-          ("{current}", ((int)_target.ControlLevel).ToString()))
-      : Loc.Format(
-          "{target} is Control Level {level} or higher",
-          ("{target}", Loc.Get(_target.Name)),
-          ("{level}", _requiredLevel.ToString()));
+    if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner))
+    {
+      SetDescription(
+        "{target} is Control Level {level} or higher ({current}/{level})",
+        ("{target}", Loc.Get(_target.Name)),
+        ("{level}", _requiredLevel.ToString()),
+        ("{current}", ((int)_target.ControlLevel).ToString()));
+    }
+    else
+    {
+      SetDescription(
+        "{target} is Control Level {level} or higher",
+        ("{target}", Loc.Get(_target.Name)),
+        ("{level}", _requiredLevel.ToString()));
+    }
   }
 
   private void RefreshProgress()

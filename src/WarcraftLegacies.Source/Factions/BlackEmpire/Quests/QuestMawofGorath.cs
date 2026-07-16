@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -28,7 +29,10 @@ public sealed class QuestMawofGorath : QuestData
   public override string RewardFlavour => "I have gained a new Forgotten One.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Learn to train one additional {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_NZOTH)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train one additional {forgottenOne} from the {mutationCircle}",
+    ("{forgottenOne}", GetObjectName(UNIT_U02F_FORGOTTEN_ONE_NZOTH)),
+    ("{mutationCircle}", GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)

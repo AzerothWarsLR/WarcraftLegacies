@@ -43,11 +43,13 @@ public sealed class QuestStormwindCity : QuestData
   }
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    "Gain control of all units in Stormwind, " +
-    $"learn to train Varian from the {GetObjectName(UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR)}, " +
-    $"learn to cast {GetObjectName(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND)} from {GetObjectName(UNIT_H06M_KEEP_STORMWIND_T2)}s and {GetObjectName(UNIT_H06N_CASTLE_STORMWIND_T3)}s, " +
-    $"and acquire the {RewardPowerName} Power";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all units in Stormwind, learn to train Varian from the {altar}, learn to cast {summonGarrison} from {keep}s and {castle}s, and acquire the {power} Power",
+    ("{altar}", Loc.Get(GetObjectName(UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR))),
+    ("{summonGarrison}", Loc.Get(GetObjectName(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND))),
+    ("{keep}", Loc.Get(GetObjectName(UNIT_H06M_KEEP_STORMWIND_T2))),
+    ("{castle}", Loc.Get(GetObjectName(UNIT_H06N_CASTLE_STORMWIND_T3))),
+    ("{power}", Loc.Get(RewardPowerName)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
