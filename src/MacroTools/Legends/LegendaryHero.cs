@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using MacroTools.Localization;
 
 namespace MacroTools.Legends;
 

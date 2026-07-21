@@ -61,7 +61,7 @@ public static class CommandManager
         }
 
         var message = command.Execute(@event.Player, parameters);
-        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}{Loc.Get("CHEAT")}:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");        
+        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}{Loc.Get("CHEAT")}:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
       }
       catch (Exception ex)
       {

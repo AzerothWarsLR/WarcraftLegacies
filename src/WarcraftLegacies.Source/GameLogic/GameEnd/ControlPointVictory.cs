@@ -2,8 +2,8 @@
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using WCSharp.Shared;
 using MacroTools.Localization;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd;
 

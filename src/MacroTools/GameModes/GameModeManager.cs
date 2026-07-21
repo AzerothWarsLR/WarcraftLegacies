@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Utils;
 using MacroTools.Localization;
+using MacroTools.Utils;
 
 namespace MacroTools.GameModes;
 
@@ -74,7 +74,7 @@ public sealed class GameModeManager
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo(Loc.Format("The {mode} game mode has been chosen.", ("{mode}", highestVotedGameMode.GameMode.Name)));      
+      player.DisplayTextTo(Loc.Format("The {mode} game mode has been chosen.", ("{mode}", highestVotedGameMode.GameMode.Name)));
       dialog.SetVisibility(player, false);
     }
 

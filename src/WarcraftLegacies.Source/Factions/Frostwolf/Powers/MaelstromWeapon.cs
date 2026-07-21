@@ -2,10 +2,10 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
-using MacroTools.Localization;
 
 
 namespace WarcraftLegacies.Source.Factions.Frostwolf.Powers;

@@ -4,8 +4,8 @@ using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
-using WCSharp.Shared;
 using MacroTools.Localization;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
 

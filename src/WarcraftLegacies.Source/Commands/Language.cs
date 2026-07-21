@@ -1,4 +1,4 @@
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 
 namespace WarcraftLegacies.Source.Commands;
@@ -31,7 +31,7 @@ public sealed class Language : Command
   public override string Execute(player commandUser, params string[] parameters)
   {
     var input = parameters[0].ToLowerInvariant();
-    string? languageCode = input switch
+    var languageCode = input switch
     {
       "en" or "english" or "ingles" or "inglés" => "en",
       "es" or "spanish" or "espanol" or "español" => "es",

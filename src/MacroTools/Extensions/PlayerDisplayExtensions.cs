@@ -1,7 +1,7 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.Sounds;
 using MacroTools.Localization;
+using MacroTools.Sounds;
 
 namespace MacroTools.Extensions;
 

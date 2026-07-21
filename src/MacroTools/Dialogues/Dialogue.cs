@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Sounds;
 using MacroTools.Localization;
+using MacroTools.Sounds;
 
 namespace MacroTools.Dialogues;
 
