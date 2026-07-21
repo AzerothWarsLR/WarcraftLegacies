@@ -85,12 +85,12 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSecondWind.blp"
     },
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSecondWind.blp"
     },
     {
       "Id": "anam",

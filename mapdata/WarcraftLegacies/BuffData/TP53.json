@@ -42,7 +42,7 @@
     {
       "Id": "fart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHeroThunderclap.blp"
     }
   ]
 }

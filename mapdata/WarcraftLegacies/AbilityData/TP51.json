@@ -146,12 +146,12 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
     },
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
     },
     {
       "Id": "aret",

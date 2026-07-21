@@ -33,7 +33,7 @@
     {
       "Id": "fart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSecondWind.blp"
     }
   ]
 }
