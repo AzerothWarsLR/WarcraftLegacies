@@ -106,6 +106,11 @@ public static class UnitTypeTraitRegistry
       PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, UnitCreated, unitTypeId);
       PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
     }
+    if (unitTrait is IEffectOnAbilityLearned effectOnAbilityLearned)
+    {
+      void UnitLearns() => effectOnAbilityLearned.OnAbilityLearned(@event.Unit);
+      PlayerUnitEvents.Register(HeroTypeEvent.LearnsSpell, UnitLearns, unitTypeId);
+    }
     if (unitTrait is IEffectOnTrained effectOnTrained)
     {
       PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, effectOnTrained.OnTrained, unitTypeId);

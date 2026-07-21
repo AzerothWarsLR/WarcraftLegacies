@@ -6,7 +6,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.UnitTraits.SecondWind;
 
-public sealed class SecondWindTrait : UnitTrait, IEffectOnCreated, IEffectOnDamaged
+public sealed class SecondWindTrait : UnitTrait, IEffectOnCreated, IEffectOnDamaged, IEffectOnAbilityLearned
 {
   private readonly int _abilityTypeId;
 
@@ -46,6 +46,22 @@ public sealed class SecondWindTrait : UnitTrait, IEffectOnCreated, IEffectOnDama
     }
 
     StartCooldown(damaged, level);
+  }
+
+  public void OnAbilityLearned(unit learner)
+  {
+    if (@event.LearnedSkill != _abilityTypeId)
+    {
+      return;
+    }
+
+    var level = learner.GetAbilityLevel(_abilityTypeId);
+    if (level != 1)
+    {
+      return;
+    }
+
+    StartCooldown(learner, level);
   }
 
   private void StartCooldown(unit target, int level)
