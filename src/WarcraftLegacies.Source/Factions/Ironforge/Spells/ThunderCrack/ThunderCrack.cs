@@ -9,8 +9,6 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
 
 public sealed class ThunderCrack : Spell
 {
-  public required LeveledAbilityField<float> ArmorReduction { get; init; }
-
   public float DebuffDuration { get; init; } = 3f;
 
   public ThunderCrack(int id) : base(id)
@@ -22,7 +20,6 @@ public sealed class ThunderCrack : Spell
     var level = GetAbilityLevel(caster);
     var ability = caster.GetAbility(Id);
     var radius = ability.GetAreaOfEffect_aare(level - 1);
-    var armorReduction = ArmorReduction.Base + ArmorReduction.PerLevel * level;
 
     var enemies = GlobalGroup.EnumUnitsInRange(caster.GetPosition(), radius)
       .Where(enemy => CastFilters.IsTargetEnemyAliveAndGroundUnits(caster, enemy))
@@ -30,12 +27,11 @@ public sealed class ThunderCrack : Spell
 
     foreach (var enemy in enemies)
     {
-      BuffSystem.Add(new ThunderCrackBuff(caster, enemy)
+      BuffSystem.Add(new ThunderCrackBuff(caster, enemy, level)
       {
         Active = true,
         Duration = DebuffDuration,
-        IsBeneficial = false,
-        ArmorReduction = armorReduction
+        IsBeneficial = false
       }, StackBehaviour.Stack);
     }
   }

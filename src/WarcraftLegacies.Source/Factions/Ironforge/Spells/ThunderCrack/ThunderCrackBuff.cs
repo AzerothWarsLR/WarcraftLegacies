@@ -4,20 +4,8 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
 
 public sealed class ThunderCrackBuff : BoundBuff
 {
-  public required float ArmorReduction { private get; init; }
-
-  public ThunderCrackBuff(unit caster, unit target) : base(caster, target)
+  public ThunderCrackBuff(unit caster, unit target, int level) : base(caster, target)
   {
-    BindAura(ABILITY_TP54_THUNDER_CRACK_BUFF_APPLICATOR, BUFF_TP53_THUNDER_CRACK);
-  }
-
-  public override void OnApply()
-  {
-    Target.Armor -= ArmorReduction;
-  }
-
-  public override void OnDispose()
-  {
-    Target.Armor += ArmorReduction;
+    BindAura(ABILITY_A004_THUNDER_CRACK_ARMOR_DEBUFF_APPLICATOR, BUFF_TP53_THUNDER_CRACK, level);
   }
 }
