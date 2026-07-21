@@ -1,4 +1,4 @@
-namespace MacroTools.UnitTraits;
+﻿namespace MacroTools.UnitTraits;
 
 /// <summary>
 /// Called when the unit learns any ability.

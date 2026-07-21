@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.UnitTraits.SecondWind;
