@@ -1,5 +1,4 @@
 ﻿using MacroTools.Factions;
-using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Save;
 

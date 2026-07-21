@@ -1,5 +1,4 @@
-﻿using MacroTools.Localization;
-using MacroTools.Quests;
+﻿using MacroTools.Quests;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;

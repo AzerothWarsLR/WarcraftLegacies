@@ -1,6 +1,5 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Events;
 

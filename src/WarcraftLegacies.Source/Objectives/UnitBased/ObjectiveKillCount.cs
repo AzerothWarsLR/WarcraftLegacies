@@ -1,5 +1,4 @@
 ﻿using MacroTools.Factions;
-using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Setup;
 using WCSharp.Events;

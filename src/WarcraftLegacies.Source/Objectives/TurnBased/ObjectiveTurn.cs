@@ -1,5 +1,4 @@
 ﻿using MacroTools.GameTime;
-using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.TurnBased;
