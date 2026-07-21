@@ -3,6 +3,7 @@
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
+using WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 
@@ -53,6 +54,15 @@ public static class IronforgeSpells
         PerLevel = 50f
       },
       StunAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+    });
+
+    SpellRegistry.Register(new ThunderCrack(ABILITY_TP51_THUNDER_CRACK_MURADIN)
+    {
+      ArmorReduction = new LeveledAbilityField<float>
+      {
+        Base = 1f,
+        PerLevel = 2f
+      }
     });
   }
 }
