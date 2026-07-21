@@ -99,6 +99,14 @@ public abstract class Objective
 
   protected void SetDescription(string english, params (string Token, string Value)[] args)
   {
+    var fallback = english;
+    foreach (var (token, value) in args)
+    {
+      fallback = fallback.Replace(token, value);
+    }
+
+    Description = fallback;
+
     SaveManager.RunWhenLocalPlayerSettingsReady(() => Description = Loc.Format(english, args));
   }
 
