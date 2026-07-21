@@ -12,12 +12,13 @@ using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
+using WarcraftLegacies.Source.GameLogic.Mmd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
+using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.Setup;
-
 /// <summary>
 /// Responsible for setting up the entire game.
 /// </summary>
@@ -28,6 +29,10 @@ public static class GameSetup
   /// </summary>
   public static void Setup()
   {
+    W3Mmd.ForceInit();
+    MmdVariables.Init();
+    MmdManager.Setup();
+    MmdEvents.SubscribeToPlayerRegistration();
     FactionManager.Setup();
     UnitTypeSetup.Setup();
     SaveManager.Initialize();
@@ -56,7 +61,6 @@ public static class GameSetup
     QuestMenuSetup.Setup();
     GameTimeManager.Start();
     GameTimeDialog.Setup();
-
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
@@ -96,6 +100,27 @@ public static class GameSetup
     DarkPortalControlNexusSetup.Setup();
     TagSummonedUnits.Setup();
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
+    MmdEvents.Setup();
+    var mmdWriteTimer = CreateTimer();
+    TimerStart(mmdWriteTimer, 60.0f, false, () =>
+    {
+      MmdManager.WriteToMmd();
+    });
+    var mmdEndTrigger = CreateTrigger();
+    TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_VICTORY);
+    TriggerRegisterGameEvent(mmdEndTrigger, EVENT_GAME_END_LEVEL);
+    TriggerAddAction(mmdEndTrigger, () =>
+    {
+      MmdManager.FinalizeUndecidedResults();
+      MmdManager.WriteToMmd();
+    });
+
+    var leaveTrigger = CreateTrigger();
+    for (var i = 0; i < 24; i++)
+    {
+      TriggerRegisterPlayerEvent(leaveTrigger, Player(i), EVENT_PLAYER_LEAVE);
+    }
+    TriggerAddAction(leaveTrigger, () => GameLogic.Mmd.MmdManager.WriteToMmd());
   }
 
   private static void SetupControlPointManager()

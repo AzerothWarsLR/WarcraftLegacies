@@ -77,6 +77,16 @@ public static class ControlPointVictory
     }
 
     PlayThematicMusic(whichTeam.VictoryMusic);
+
+    foreach (var faction in whichTeam.GetAllFactions())
+    {
+      if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)
+      {
+        Mmd.MmdManager.SetResult(faction.Player, "win");
+      }
+    }
+
+    Mmd.MmdManager.WriteToMmd();
     _gameWon = true;
   }
 }
