@@ -1,6 +1,6 @@
 {
   "OldId": "ACav",
-  "NewId": "A004",
+  "NewId": "A011",
   "Unk": [
     0
   ],
@@ -10,7 +10,7 @@
       "Pointer": 1,
       "Id": "Had1",
       "Type": 2,
-      "Value": -3
+      "Value": -9
     },
     {
       "Level": 1,
@@ -64,7 +64,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Armor reduced by 3"
+      "Value": "Armor reduced by 9"
     }
   ]
 }

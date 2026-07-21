@@ -85,17 +85,27 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASPowerFist.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
     },
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNPowerFist.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
     },
     {
       "Id": "anam",
       "Type": 3,
       "Value": "Second Wind"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
     },
     {
       "Level": 1,

@@ -48,7 +48,7 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASPowerFist.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
     }
   ]
 }

@@ -134,14 +134,24 @@
       "Value": "Thunder Crack"
     },
     {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp"
     },
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp"
     },
     {
       "Id": "aret",

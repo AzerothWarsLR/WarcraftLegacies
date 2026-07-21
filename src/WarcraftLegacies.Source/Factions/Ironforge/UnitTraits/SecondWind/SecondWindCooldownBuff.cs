@@ -15,6 +15,7 @@ public sealed class SecondWindCooldownBuff : PassiveBuff
     BuffSystem.Add(new SecondWindBuff(Target, Target)
     {
       Active = true,
+      Duration = float.MaxValue,
       IsBeneficial = true,
       HealPercentPerSecond = HealPercentPerSecond
     });
