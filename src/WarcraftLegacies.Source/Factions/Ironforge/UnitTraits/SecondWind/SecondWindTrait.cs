@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WCSharp.Buffs;
