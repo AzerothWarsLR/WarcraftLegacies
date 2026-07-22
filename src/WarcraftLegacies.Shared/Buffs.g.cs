@@ -186,7 +186,6 @@ public static class Buffs
   public const int BUFF_B0AV_SUPPRESSION = 1110458710;
   public const int BUFF_B0AW_BLIGHT_AURA_HALLS_OF_THE_DEAD = 1110458711;
   public const int BUFF_B0AY_BLOOD_BROTHERS = 1110458713;
-  public const int BUFF_B0AZ_WAR_LEADER_AURA = 1110458714;
   public const int BUFF_B0B1_TIME_S_SHIELD = 1110458929;
   public const int BUFF_B0B2_TIME_S_SHIELD_CASTER = 1110458930;
   public const int BUFF_B0B3_BLACK_HOLE_SLOW_AURA = 1110458931;
@@ -253,6 +252,7 @@ public static class Buffs
   public const int BUFF_TP48_SECOND_WIND = 1414542392;
   public const int BUFF_TP53_THUNDER_CRACK = 1414542643;
   public const int BUFF_TP60_PHANTOM_STEP = 1414542896;
+  public const int BUFF_TP63_TAUNT = 1414542899;
   public const int BUFF_VP25_PREVAILING_WIND = 1448096309;
   public const int BUFF_VP33_SECRETS_OF_KARAZHAN = 1448096563;
   public const int BUFF_X001_SUMMON = 1479553073;
