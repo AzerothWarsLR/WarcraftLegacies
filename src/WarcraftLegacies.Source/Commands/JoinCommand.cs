@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
@@ -30,17 +31,20 @@ public static class JoinCommand
       {
         var triggerPlayerData = triggerPlayer.GetPlayerData();
         triggerPlayerData.SetTeam(targetTeam);
-        triggerPlayer.DisplayTextTo($"You have joined {targetTeam.Name}.");
-        targetTeam.DisplayText($"{triggerPlayerData.Faction?.ColoredName} has joined the {targetTeam.Name}.");
+        triggerPlayer.DisplayTextTo(Loc.Format("You have joined {team}.", ("{team}", targetTeam.Name)));
+        targetTeam.DisplayText(Loc.Format(
+          "{faction} has joined the {team}.",
+          ("{faction}", triggerPlayerData.Faction?.ColoredName ?? ""),
+          ("{team}", targetTeam.Name)));
       }
       else
       {
-        triggerPlayer.DisplayTextTo($"You have not been invited to join {targetTeam.Name}.");
+        triggerPlayer.DisplayTextTo(Loc.Format("You have not been invited to join {team}.", ("{team}", targetTeam.Name)));
       }
     }
     else
     {
-      triggerPlayer.DisplayTextTo($"There is no Team with the name {content}.");
+      triggerPlayer.DisplayTextTo(Loc.Format("There is no Team with the name {name}.", ("{name}", content)));
     }
   }
 

@@ -1,5 +1,6 @@
 ﻿using MacroTools.ControlPoints;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -43,9 +44,21 @@ public sealed class ObjectiveControlLevel : Objective
 
   private void RefreshDescription()
   {
-    Description = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
-      ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})"
-      : $"{_target.Name} is Control Level {_requiredLevel} or higher";
+    if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner))
+    {
+      SetDescription(
+        "{target} is Control Level {level} or higher ({current}/{level})",
+        ("{target}", Loc.Get(_target.Name)),
+        ("{level}", _requiredLevel.ToString()),
+        ("{current}", ((int)_target.ControlLevel).ToString()));
+    }
+    else
+    {
+      SetDescription(
+        "{target} is Control Level {level} or higher",
+        ("{target}", Loc.Get(_target.Name)),
+        ("{level}", _requiredLevel.ToString()));
+    }
   }
 
   private void RefreshProgress()

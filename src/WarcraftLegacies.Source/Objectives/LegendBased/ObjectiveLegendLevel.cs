@@ -12,7 +12,7 @@ public sealed class ObjectiveLegendLevel : Objective
 
   public ObjectiveLegendLevel(LegendaryHero target, int level)
   {
-    Description = $"{target.Name} is level {level}";
+    SetDescription("{hero} is level {level}", ("{hero}", target.Name), ("{level}", level.ToString()));
     _target = target;
     _level = level;
     PlayerUnitEvents.Register(HeroTypeEvent.Levels, OnLevel);

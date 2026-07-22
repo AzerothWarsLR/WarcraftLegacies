@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Shared.Data;
 
@@ -50,7 +51,7 @@ public sealed class ObjectiveLegendDead : Objective
   /// <inheritdoc />
   public override void OnAdd(Faction faction)
   {
-    Description = CalculateDescription(_target);
+    SetDescription(GetDescriptionTemplate(), ("{target}", Loc.Get(_target.Name)));
   }
 
   private void OnDeath(LegendDiedEventArgs eventArgs)
@@ -71,13 +72,13 @@ public sealed class ObjectiveLegendDead : Objective
     }
   }
 
-  private string CalculateDescription(LegendaryHero target)
+  private string GetDescriptionTemplate()
   {
     if (PermanentOnly)
     {
-      return OnlyCreditKiller ? $"Permanently kill {target.Name}" : $"{target.Name} is permanently dead";
+      return OnlyCreditKiller ? "Permanently kill {target}" : "{target} is permanently dead";
     }
 
-    return OnlyCreditKiller ? $"Kill {target.Name}" : $"{target.Name} is dead";
+    return OnlyCreditKiller ? "Kill {target}" : "{target} is dead";
   }
 }

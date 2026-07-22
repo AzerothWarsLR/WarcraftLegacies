@@ -4,6 +4,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Utils;
@@ -43,10 +44,9 @@ public sealed class DalaranFaction : Faction
     };
     CinematicMusic = "SadMystery";
     ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
-    IntroText = $"You are playing the wise {PrefixCol}Council of Dalaran|r.\n\n" +
-                "You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran, you must capture Shadowfang Keep, which has been encircled by monsters.\n\n" +
-                "Once your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.\n\n" +
-                "Your mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle.";
+    IntroText = () => Loc.Format(
+      "You are playing the wise {faction}.\n\nYou begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran, you must capture Shadowfang Keep, which has been encircled by monsters.\n\nOnce your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.\n\nYour mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Council of Dalaran")}|r"));
 
     Nicknames = new List<string>
     {

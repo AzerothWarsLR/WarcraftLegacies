@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -13,7 +14,9 @@ public sealed class QuestDestruction : QuestData
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
-    $"{_objectiveDestroyAnyCapital.DestroyedCapital?.Name} has fallen, but more will fall to my influence.";
+    Loc.Format(
+      "{capital} has fallen, but more will fall to my influence.",
+      ("{capital}", _objectiveDestroyAnyCapital.DestroyedCapital?.Name ?? ""));
 
   /// <inheritdoc/>
   protected override string RewardDescription =>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 
 namespace MacroTools.Factions;
 
@@ -134,8 +135,9 @@ public sealed class Team
       return;
     }
 
-    DisplayText($"{faction.ColoredName}|r is no longer invited to join the {Name}.");
-    whichPlayer.DisplayTextTo($"You are no longer invited to join the {Name}.");
+    var coloredFactionName = $"{faction.ColoredName}|r";
+    DisplayText(Loc.Format("{faction} is no longer invited to join the {team}.", ("{faction}", coloredFactionName), ("{team}", Name)));
+    whichPlayer.DisplayTextTo(Loc.Format("You are no longer invited to join the {team}.", ("{team}", Name)));
     _invitees.Remove(whichPlayer);
   }
 
@@ -155,8 +157,9 @@ public sealed class Team
       return;
     }
 
-    DisplayText($"{faction.ColoredName}|r has been invited to join the {Name}.");
-    whichPlayer.DisplayTextTo($"You have been invited to join the {Name}. Type -join {Name} to accept.");
+    var coloredFactionName = $"{faction.ColoredName}|r";
+    DisplayText(Loc.Format("{faction} has been invited to join the {team}.", ("{faction}", coloredFactionName), ("{team}", Name)));
+    whichPlayer.DisplayTextTo(Loc.Format("You have been invited to join the {team}. Type -join {team} to accept.", ("{team}", Name)));
     _invitees.Add(whichPlayer);
   }
 

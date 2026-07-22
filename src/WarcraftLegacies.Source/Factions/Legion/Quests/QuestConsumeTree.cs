@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -27,8 +28,9 @@ public sealed class QuestConsumeTree : QuestData
     "The Third War is over. Archimonde has successfully consumed the energies of the Well of Eternity resting beneath Nordrassil. The last line of defense against the Burning Legion has fallen, and with it dies the hopes and dreams of Azeroth.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Archimonde gains {StatGain} Strength, Agility, and Intelligence, and the Druids are defeated";
+  protected override string RewardDescription => Loc.Format(
+    "Archimonde gains {stat} Strength, Agility, and Intelligence, and the Druids are defeated",
+    ("{stat}", StatGain.ToString()));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
@@ -43,7 +45,7 @@ public sealed class QuestConsumeTree : QuestData
 
     if (archimondeUnit != null)
     {
-      archimondeUnit.Name = "Devourer of Worlds";
+      archimondeUnit.Name = Loc.Get("Devourer of Worlds");
     }
 
     effect.Create(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit, "hand, right");

@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Shared;
@@ -23,7 +24,10 @@ public sealed class QuestSentinelsKillBlackEmpire : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Allows {GetObjectName(UNIT_N034_GUILD_RANGER_SENTINELS)}s to be trained from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)}s";
+  protected override string RewardDescription => Loc.Format(
+    "Allows {guildRanger}s to be trained from {bastion}s",
+    ("{guildRanger}", GetObjectName(UNIT_N034_GUILD_RANGER_SENTINELS)),
+    ("{bastion}", GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

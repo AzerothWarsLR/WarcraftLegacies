@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -24,6 +25,7 @@ public sealed class QuestRagetotem : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF)}s from the {GetObjectName(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)}";
+    Loc.Format("Learn to train {unit}s from the {building}",
+      ("{unit}", GetObjectName(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF)), ("{building}", GetObjectName(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)));
 
 }

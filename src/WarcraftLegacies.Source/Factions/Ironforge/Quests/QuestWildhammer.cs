@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -34,11 +35,16 @@ public sealed class QuestWildhammer : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    $"{_heroEnteringShadowforge.CompletingUnitName} has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.";
+    Loc.Format("{hero} has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.",
+      ("{hero}", _heroEnteringShadowforge.CompletingUnitName));
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    $"Gain control of Aerie Peak, learn to train Falstad Wildhammer from the {GetObjectName(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR)}, and gain the ability to research {GetObjectName(UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)} at the {GetObjectName(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_AIR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of {place}, learn to train Falstad Wildhammer from the {altar}, and gain the ability to research {upgrade} at the {building}",
+    ("{place}", "Aerie Peak"),
+    ("{altar}", GetObjectName(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR)),
+    ("{upgrade}", GetObjectName(UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)),
+    ("{building}", GetObjectName(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_AIR)));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -32,8 +33,10 @@ public sealed class QuestLostOnes : QuestData
   public override string RewardFlavour =>
     "Elder Sage Akama and his Draenei tribesmen have been brought to heel, now forced to fight alongside Illidan - and the Pit Lord that once threatened their extinction.";
 
-  protected override string RewardDescription =>
-    $"Gain control of the Draenei camp in Outland, learn to build {GetObjectName(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SPECIALIST)}s, and learn to train Akama from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of the Draenei camp in Outland, learn to build {draeneiHut}s, and learn to train Akama from the {altar}",
+    ("{draeneiHut}", GetObjectName(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SPECIALIST)),
+    ("{altar}", GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)));
 
   protected override void OnComplete(Faction completingFaction)
   {

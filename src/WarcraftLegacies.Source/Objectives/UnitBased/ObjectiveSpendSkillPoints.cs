@@ -18,7 +18,10 @@ public sealed class ObjectiveSpendSkillPoints : Objective
   {
     _hero = hero;
     _skillPointsRequired = skillPointsRequired;
-    Description = $"{hero.Name} has spent {skillPointsRequired} Skill Points";
+    SetDescription(
+      "{hero} has spent {points} Skill Points",
+      ("{hero}", hero.Name),
+      ("{points}", skillPointsRequired.ToString()));
   }
 
   /// <inheritdoc />

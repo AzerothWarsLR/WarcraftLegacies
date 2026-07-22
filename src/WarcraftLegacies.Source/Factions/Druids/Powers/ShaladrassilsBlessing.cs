@@ -1,6 +1,7 @@
 ﻿using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
@@ -35,7 +36,7 @@ public sealed class ShaladrassilsBlessing : Power
     _manaCost = manaCost;
     Description =
       $"When an undamaged Control Point you control takes damage and you control {shaladrassil.Name}, consume {_manaCost} mana from {shaladrassil.Name} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
-    Name = $"{shaladrassil.Name}'s Blessing";
+    Name = Loc.Format("{hero}'s Blessing", ("{hero}", shaladrassil.Name));
   }
 
   /// <inheritdoc />

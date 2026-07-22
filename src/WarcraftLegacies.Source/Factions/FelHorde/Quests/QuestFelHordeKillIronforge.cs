@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -23,8 +24,10 @@ public sealed class QuestFelHordeKillIronforge : QuestData
     "The Great Forge has been annihilated. The Fel Horde's peons immediately salvage its intact refineries and put them to purpose in the creation of Felsteel.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => "Learn to train " + I2S(UnitLimit) + " " +
-                                                     GetObjectName(UnittypeId) + "s from the " +
-                                                     GetObjectName(BuildingId) + " and acquire Felsteel Plating";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {count} {unit}s from the {building} and acquire Felsteel Plating",
+    ("{count}", I2S(UnitLimit)),
+    ("{unit}", GetObjectName(UnittypeId)),
+    ("{building}", GetObjectName(BuildingId)));
 
 }

@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -53,7 +54,8 @@ public sealed class QuestTombOfSargeras : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}.";
+    Loc.Format("The Tomb of Sargeras has been opened by {unit}.",
+      ("{unit}", _enterTombOfSargerasRegion.CompletingUnitName));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -39,11 +40,12 @@ public sealed class QuestDarkIron : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"You gain control of a small base in Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
+    "You gain control of a small base in Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    $"The fel orcs have been vanquished from Blackrock Spire and {_heroEnteringShadowforge.CompletingUnitName} has convinced Dagran and his Dark Iron dwarves to join our cause.";
+    Loc.Format("The fel orcs have been vanquished from Blackrock Spire and {hero} has convinced Dagran and his Dark Iron dwarves to join our cause.",
+      ("{hero}", _heroEnteringShadowforge.CompletingUnitName));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

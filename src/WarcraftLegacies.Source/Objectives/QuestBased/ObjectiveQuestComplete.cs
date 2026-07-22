@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.QuestBased;
@@ -10,7 +11,7 @@ public sealed class ObjectiveQuestComplete : Objective
   public ObjectiveQuestComplete(QuestData target)
   {
     _target = target;
-    Description = $"Complete the quest {target.Title}";
+    SetDescription("Complete the quest {quest}", ("{quest}", Loc.Get(target.Title)));
   }
 
   /// <inheritdoc />

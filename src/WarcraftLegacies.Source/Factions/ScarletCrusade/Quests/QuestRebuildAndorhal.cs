@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
@@ -29,6 +30,8 @@ public sealed class QuestRebuildAndorhal : QuestData
     "Survivors from Lordaeron's fall are once more pouring into Andorhal. Eagles and Gryphons from Aerie Peak soar down to the renewed agricultural center to enjoy its renewed production.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Your {GetObjectName(UNIT_O06V_EAGLE_RIDER_SCARLET)}s and {GetObjectName(UNIT_E01L_GRYPHON_MARKSMAN_SCARLET)} gain 400 hit points";
+  protected override string RewardDescription => Loc.Format(
+    "Your {unit1}s and {unit2} gain 400 hit points",
+    ("{unit1}", GetObjectName(UNIT_O06V_EAGLE_RIDER_SCARLET)),
+    ("{unit2}", GetObjectName(UNIT_E01L_GRYPHON_MARKSMAN_SCARLET)));
 }

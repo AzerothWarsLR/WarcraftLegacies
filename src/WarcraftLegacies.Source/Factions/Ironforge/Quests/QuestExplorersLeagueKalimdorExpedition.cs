@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -32,10 +33,15 @@ public sealed class QuestExplorersLeagueKalimdorExpedition : QuestData
   }
 
   public override string RewardFlavour => _heroEnteringRegionNorth.CompletingUnitName == _heroEnteringRegionSouth.CompletingUnitName
-        ? $"{_heroEnteringRegionNorth.CompletingUnitName} has overseen the expeditions at {_expeditionRegionNorth.Name} and {_expeditionRegionSouth.Name}. The archaeologists have taken the valuable relics back to Ironforge to study and sell."
-        : $"{_heroEnteringRegionNorth.CompletingUnitName} has overseen the expedition at {_expeditionRegionNorth.Name}, while {_heroEnteringRegionSouth.CompletingUnitName} has overseen the expedition at {_expeditionRegionSouth.Name}. The archaeologists have taken the valuable relics back to Ironforge to study and sell.";
+        ? Loc.Format(
+          "{hero} has overseen the expeditions at {regionNorth} and {regionSouth}. The archaeologists have taken the valuable relics back to Ironforge to study and sell.",
+          ("{hero}", _heroEnteringRegionNorth.CompletingUnitName), ("{regionNorth}", Loc.Get(_expeditionRegionNorth.Name)), ("{regionSouth}", Loc.Get(_expeditionRegionSouth.Name)))
+        : Loc.Format(
+          "{heroNorth} has overseen the expedition at {regionNorth}, while {heroSouth} has overseen the expedition at {regionSouth}. The archaeologists have taken the valuable relics back to Ironforge to study and sell.",
+          ("{heroNorth}", _heroEnteringRegionNorth.CompletingUnitName), ("{regionNorth}", Loc.Get(_expeditionRegionNorth.Name)),
+          ("{heroSouth}", _heroEnteringRegionSouth.CompletingUnitName), ("{regionSouth}", Loc.Get(_expeditionRegionSouth.Name)));
 
-  protected override string RewardDescription => $"Gain {_goldReward} gold.";
+  protected override string RewardDescription => "Gain 500 gold.";
 
   public static RegionModel GetRandomRegionNorth()
   {

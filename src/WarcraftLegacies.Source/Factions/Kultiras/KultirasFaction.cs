@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Kultiras.Quests;
@@ -25,9 +26,9 @@ public sealed class KultirasFaction : Faction
       Turns = 10
     };
     ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
-    IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
-                "You begin on Balor Island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar, and Stormsong Valley.\n\n" +
-                "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and assist them, or risk losing your strongest ally.";
+    IntroText = () => Loc.Format(
+      "You are playing as the maritime {faction}.\n\nYou begin on Balor Island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar, and Stormsong Valley.\n\nStormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and assist them, or risk losing your strongest ally.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Kul Tiras")}|r"));
     Nicknames = new List<string>
     {
       "kt",

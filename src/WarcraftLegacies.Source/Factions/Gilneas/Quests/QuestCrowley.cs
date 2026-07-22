@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Factions.Gilneas.Quests;
@@ -27,6 +28,7 @@ public sealed class QuestCrowley : QuestData
     "Facing the looming threat of the Scourge and its horrific Plague, Genn Greymane has decided to pardon Darius Crowley for the Northgate rebellion so that he can assist in Gilneas' defense.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Learn to train Darius Crowley from the {GetObjectName(AltarId)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train Darius Crowley from the {altar}",
+    ("{altar}", GetObjectName(AltarId)));
 }

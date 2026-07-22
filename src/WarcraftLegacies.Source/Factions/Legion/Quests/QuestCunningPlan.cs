@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
@@ -28,8 +29,9 @@ public sealed class QuestCunningPlan : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {GetObjectName(UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in each of the following Scourge bases: Deathknell, Stratholme Coast, and Scholomance. Mal'ganis improves his Vampiric Siphon ability.";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {dreadShrine} in each of the following Scourge bases: Deathknell, Stratholme Coast, and Scholomance. Mal'ganis improves his Vampiric Siphon ability.",
+    ("{dreadShrine}", GetObjectName(UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)));
 
   /// <inheritdoc/>
   public override string RewardFlavour =>

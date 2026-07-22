@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Stormwind.Quests;
@@ -25,10 +26,9 @@ public sealed class StormwindFaction : Faction
       Turns = 10
     };
     ControlPointDefenderUnitTypeId = UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND;
-    IntroText = $"You are playing as the steadfast {PrefixCol}Kingdom of Stormwind|r.\n\n" +
-                "You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire, and finally Stormwind City.\n\n" +
-                "Once you have unified Stormwind's forces, race east to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.\n\n" +
-                "Make sure to communicate with your Dwarven and Kul Tiran allies, as they will be key to defeating the evil that lurks beyond the Dark Portal.";
+    IntroText = () => Loc.Format(
+      "You are playing as the steadfast {faction}.\n\nYou begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire, and finally Stormwind City.\n\nOnce you have unified Stormwind's forces, race east to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.\n\nMake sure to communicate with your Dwarven and Kul Tiran allies, as they will be key to defeating the evil that lurks beyond the Dark Portal.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Stormwind")}|r"));
 
     Nicknames = new List<string>
     {

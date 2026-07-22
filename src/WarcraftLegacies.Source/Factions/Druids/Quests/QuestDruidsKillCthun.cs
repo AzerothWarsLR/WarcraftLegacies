@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Shared;
@@ -24,7 +25,8 @@ public sealed class QuestDruidsKillCthun : QuestData
     "The Qiraji presence on Kalimdor has been eliminated. The sacred lands are safe from them.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => "Learn to train " + GetObjectName(UnittypeId) + "s";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {unit}s", ("{unit}", GetObjectName(UnittypeId)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

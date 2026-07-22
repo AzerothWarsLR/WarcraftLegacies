@@ -18,15 +18,7 @@ public sealed class ObjectiveCastSpell : Objective
   public ObjectiveCastSpell(int spellId, bool holderOnly)
   {
     PlayerUnitEvents.Register(SpellEvent.Finish, OnCast, spellId);
-    if (holderOnly)
-    {
-      Description = "Cast " + GetObjectName(spellId);
-    }
-    else
-    {
-      Description = "Anyone casts " + GetObjectName(spellId);
-    }
-
+    SetDescription(holderOnly ? "Cast {spell}" : "Anyone casts {spell}", ("{spell}", GetObjectName(spellId)));
     _holderOnly = holderOnly;
   }
 

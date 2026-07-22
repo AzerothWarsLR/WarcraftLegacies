@@ -2,6 +2,7 @@
 using MacroTools.Factions;
 using MacroTools.GameModes;
 using MacroTools.Hints;
+using MacroTools.Localization;
 using WarcraftLegacies.Source.Commands;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
@@ -39,7 +40,7 @@ public static class GameModeExtensions
 
   public static IGameMode SetupAllianceCommands(this IGameMode gameMode)
   {
-    Hint.Register(new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
+    Hint.Register(new Hint(() => Loc.Get("You can change alliances by using the commands -invite, -uninvite, -join, and -unally.")));
     InviteCommand.Setup();
     JoinCommand.Setup();
     UnallyCommand.Setup();
@@ -50,13 +51,13 @@ public static class GameModeExtensions
   public static IGameMode SetupControlPointVictory(this IGameMode gameMode)
   {
     ControlPointVictory.Setup();
-    Hint.Register(new Hint($"Win the game by capturing {ControlPointVictory.CpsVictory} Control Points."));
+    Hint.Register(new Hint(() => Loc.Format("Win the game by capturing {cps} Control Points.", ("{cps}", ControlPointVictory.CpsVictory.ToString()))));
     return gameMode;
   }
 
   public static IGameMode SetupUnallyCommand(this IGameMode gameMode)
   {
-    Hint.Register(new Hint("You can leave your current alliances by typing -unally, but you won't be able to join a new one."));
+    Hint.Register(new Hint(() => Loc.Get("You can leave your current alliances by typing -unally, but you won't be able to join a new one.")));
     UnallyCommand.Setup();
     return gameMode;
   }

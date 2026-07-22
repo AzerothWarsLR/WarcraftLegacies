@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
+using MacroTools.Localization;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.Gilneas.Quests;
@@ -27,10 +28,9 @@ public sealed class GilneasFaction : Faction
       Turns = 10
     };
     ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
-    IntroText = $"You are playing as the accursed {PrefixCol}Kingdom of Gilneas|r.\n\n" +
-                "You start beyond the Greymane Wall at Pyrewood Village;\n\n" +
-                "You must raise an army and fight back against the feral wolves of Silverpine and the bandit lords of Durnholde that have taken over Southern-Lordaeron.\n\n" +
-                "Once you have reclaimed Southern-Lordaeron, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
+    IntroText = () => Loc.Format(
+      "You are playing as the accursed {faction}.\n\nYou start beyond the Greymane Wall at Pyrewood Village;\n\nYou must raise an army and fight back against the feral wolves of Silverpine and the bandit lords of Durnholde that have taken over Southern-Lordaeron.\n\nOnce you have reclaimed Southern-Lordaeron, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Gilneas")}|r"));
     Nicknames = new List<string>
     {
       "gil",

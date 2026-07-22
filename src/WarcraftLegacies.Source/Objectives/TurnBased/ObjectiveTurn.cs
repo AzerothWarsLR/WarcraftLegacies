@@ -8,7 +8,7 @@ public sealed class ObjectiveTurn : Objective
   /// <param name="targetTurn">The turn number on which this objective should complete</param>
   public ObjectiveTurn(int targetTurn)
   {
-    Description = $"Turn {targetTurn} has started";
+    SetDescription("Turn {turn} has started", ("{turn}", targetTurn.ToString()));
     GameTimeManager.RegisterOnTurn(targetTurn, OnComplete);
   }
 

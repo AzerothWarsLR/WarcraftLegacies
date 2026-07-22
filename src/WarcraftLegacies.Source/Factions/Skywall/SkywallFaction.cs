@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Ahnqiraj;
@@ -27,10 +28,9 @@ public sealed class SkywallFaction : Faction
       Income = 100,
       Turns = 10
     };
-    IntroText = $"You are playing as the {PrefixCol}Elementals of Skywall|r.\n\n" +
-                "At the start, clear Uldum and take control of Tanaris.\n\n" +
-                "Coordinate with your Qiraji ally to push back the Horde before the Druids can intervene.\n\n" +
-                "You have a powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and possibly attack them from behind.";
+    IntroText = () => Loc.Format(
+      "You are playing as the {faction}.\n\nAt the start, clear Uldum and take control of Tanaris.\n\nCoordinate with your Qiraji ally to push back the Horde before the Druids can intervene.\n\nYou have a powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and possibly attack them from behind.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Elementals of Skywall")}|r"));
 
     Nicknames = new List<string>
     {
@@ -101,7 +101,7 @@ public sealed class SkywallFaction : Faction
       new Windforging(UNIT_O01I_ANIMATED_ARMOR_SKYWALL, 0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
       {
         IconName = "ItemForging",
-        Name = "Windforging",
+        Name = Loc.Get("Windforging"),
       }));
   }
 }

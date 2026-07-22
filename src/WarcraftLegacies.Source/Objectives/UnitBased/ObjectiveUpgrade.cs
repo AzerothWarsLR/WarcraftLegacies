@@ -7,7 +7,10 @@ public sealed class ObjectiveUpgrade : Objective
 {
   public ObjectiveUpgrade(int objectId, int upgradeFromId)
   {
-    Description = "Upgrade your " + GetObjectName(upgradeFromId) + " to a " + GetObjectName(objectId);
+    SetDescription(
+      "Upgrade your {from} to a {to}",
+      ("{from}", GetObjectName(upgradeFromId)),
+      ("{to}", GetObjectName(objectId)));
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, OnUpgrade, objectId);
   }
 

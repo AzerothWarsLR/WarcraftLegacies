@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -34,11 +35,9 @@ public sealed class DruidsFaction : Faction
     };
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
-    IntroText = $"You are playing as the ancient {PrefixCol}Druids of the Cenarion Circle|r.\n\n" +
-                "You begin isolated in the deepest parts of Mount Hyjal near the World Tree.\n\n" +
-                "The Old Gods are gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. " +
-                "Use him to awaken Malfurion from his slumber as soon as possible.\n\n" +
-                "Gather your forces and strike before the Old Gods can organize their efforts.";
+    IntroText = () => Loc.Format(
+      "You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal near the World Tree.\n\nThe Old Gods are gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. Use him to awaken Malfurion from his slumber as soon as possible.\n\nGather your forces and strike before the Old Gods can organize their efforts.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Druids of the Cenarion Circle")}|r"));
 
     Nicknames = new List<string>
     {
@@ -124,7 +123,6 @@ public sealed class DruidsFaction : Faction
     AddPower(new Immortality(20, 40, worldTrees)
     {
       IconName = "ArcaneRessurection",
-      Name = "Immortality",
       Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
       ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
     });
