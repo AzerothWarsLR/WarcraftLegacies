@@ -1,0 +1,39 @@
+{
+  "OldId": "Basl",
+  "NewId": "TP48",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00Second Wind|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is recovering Hit Points at an accelerated rate."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Second Wind"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSecondWind.blp"
+    }
+  ]
+}

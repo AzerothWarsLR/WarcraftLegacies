@@ -1,4 +1,6 @@
-﻿using MacroTools.UnitTraits;
+﻿using MacroTools.Spells;
+using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Factions.Ironforge.UnitTraits.SecondWind;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
@@ -29,5 +31,17 @@ public static class IronforgeTraits
       ProcChance = 0.1f,
       ProcChancePerLevel = 0.1f,
     }, UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE);
+
+    UnitTypeTraitRegistry.Register(
+      new SecondWindTrait(ABILITY_TP46_SECOND_WIND_MURADIN)
+      {
+        HealPercentPerSecond = new LeveledAbilityField<float>
+        {
+          Base = 0f,
+          PerLevel = 2f
+        }
+      },
+      UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE
+    );
   }
 }
