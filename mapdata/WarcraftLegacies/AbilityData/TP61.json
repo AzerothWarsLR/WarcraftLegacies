@@ -37,6 +37,10 @@
       "Value": 5
     },
     {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Avatar of the Mountain)"
@@ -58,7 +62,12 @@
     },
     {
       "Id": "abpy",
-      "Value": -11
+      "Value": -1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHeroAvatar.blp"
     }
   ]
 }

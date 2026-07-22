@@ -295,7 +295,7 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormBolt.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroStormbolt.blp"
     },
     {
       "Id": "aeat",
@@ -305,7 +305,7 @@
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormBolt.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroStormbolt.blp"
     },
     {
       "Id": "acat",
