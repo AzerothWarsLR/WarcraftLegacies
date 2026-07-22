@@ -85,7 +85,7 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSecondWind.blp"
+      "Value": "ReplaceableTextures/PassiveButtons/PASSecondWind.blp"
     },
     {
       "Id": "arar",
