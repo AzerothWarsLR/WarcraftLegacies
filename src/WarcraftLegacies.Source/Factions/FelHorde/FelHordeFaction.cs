@@ -22,7 +22,7 @@ public sealed class FelHordeFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 190,
+      Income = 210,
       Turns = 10
     };
     CinematicMusic = "Doom";
