@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-
 using MacroTools.Spells;
+using WarcraftLegacies.Source.Factions.Gilneas.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
@@ -25,10 +25,25 @@ public static class IronforgeSpells
       GoldCost = 25
     });
 
+    SpellRegistry.Register(new AddAbilityOnCast(ABILITY_MD07_AVATAR_OF_THE_MOUNTAIN_MURADIN)
+    {
+      Duration = new LeveledAbilityField<float>
+      {
+        Base = 30f,
+        PerLevel = 0f
+      },
+      BuffApplicatorId = ABILITY_TP62_TAUNT_BUFF_APPLICATOR,
+      BuffId = BUFF_TP63_TAUNT,
+      AbilitiesToAdd = new List<int>
+      {
+        ABILITY_TP61_TAUNT_AVATAR_OF_THE_MOUNTAIN
+      }
+    });
+
     SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_FALSTAD_WILDHAMMER)
     {
       GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
-      StormRiderTypeId = UNIT_H03Z_STORMRIDER_IRONFORGE,
+      // StormRiderTypeId = UNIT_H03Z_STORMRIDER_IRONFORGE,
       Damage = new LeveledAbilityField<float> { Base = 30, PerLevel = 20 },
       Duration = new LeveledAbilityField<float> { Base = 25, PerLevel = 5 },
       CollisionRadius = 100,

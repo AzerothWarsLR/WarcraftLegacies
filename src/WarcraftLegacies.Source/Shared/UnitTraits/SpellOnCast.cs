@@ -25,10 +25,6 @@ public sealed class SpellOnCast : UnitTrait, IEffectOnSpellEffect
 
   public required SpellTargetType TargetType { get; init; }
 
-  /// <summary>
-  /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
-  /// </summary>
-  /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
   public SpellOnCast(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   public required List<int> AbilityWhitelist { get; init; }
@@ -38,7 +34,13 @@ public sealed class SpellOnCast : UnitTrait, IEffectOnSpellEffect
   {
     var caster = @event.Unit;
     var abilityLevel = caster.GetAbilityLevel(_abilityTypeId);
-    if (abilityLevel == 0 || !AbilityWhitelist.Contains(@event.SpellAbilityId))
+
+    if (abilityLevel == 0)
+    {
+      return;
+    }
+
+    if (!AbilityWhitelist.Contains(@event.SpellAbilityId))
     {
       return;
     }
@@ -46,16 +48,33 @@ public sealed class SpellOnCast : UnitTrait, IEffectOnSpellEffect
     switch (TargetType)
     {
       case SpellTargetType.None:
-        DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
-          DummyOrderId, caster.GetAbilityLevel(_abilityTypeId));
+        DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(
+          caster,
+          DummyAbilityId,
+          DummyOrderId,
+          abilityLevel
+        );
         break;
+
       case SpellTargetType.Unit:
-        DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, DummyAbilityId,
-          DummyOrderId, caster.GetAbilityLevel(_abilityTypeId), GetSpellTargetUnit(), DummyCastOriginType.Caster);
+        DummyCasterManager.GetGlobalDummyCaster().CastUnit(
+          caster,
+          DummyAbilityId,
+          DummyOrderId,
+          abilityLevel,
+          GetSpellTargetUnit(),
+          DummyCastOriginType.Caster
+        );
         break;
+
       case SpellTargetType.Point:
-        DummyCasterManager.GetGlobalDummyCaster().CastPoint(caster.Owner, DummyAbilityId,
-          DummyOrderId, caster.GetAbilityLevel(_abilityTypeId), new Point(GetSpellTargetX(), GetSpellTargetY()));
+        DummyCasterManager.GetGlobalDummyCaster().CastPoint(
+          caster.Owner,
+          DummyAbilityId,
+          DummyOrderId,
+          abilityLevel,
+          new Point(GetSpellTargetX(), GetSpellTargetY())
+        );
         break;
     }
   }

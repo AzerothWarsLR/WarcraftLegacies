@@ -1,5 +1,6 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Factions.Ironforge.UnitTraits;
 using WarcraftLegacies.Source.Factions.Ironforge.UnitTraits.SecondWind;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 
@@ -9,12 +10,12 @@ public static class IronforgeTraits
 {
   public static void Setup()
   {
-    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_IRONFORGE)
-    {
-      DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
-      DummyOrderId = ORDER_FORKED_LIGHTNING,
-      ProcChance = 0.2f
-    }, UNIT_HGRY_GRYPHON_RIDER_IRONFORGE);
+    // UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
+    //{
+    // DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
+    // DummyOrderId = ORDER_FORKED_LIGHTNING,
+    // ProcChance = 0.2f
+    // }, UNIT_HGRY_GRYPHON_RIDER_IRONFORGE);
 
     UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
     {
@@ -41,6 +42,25 @@ public static class IronforgeTraits
           PerLevel = 2f
         }
       },
+      UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE
+    );
+
+    UnitTypeTraitRegistry.Register(
+      new AvatarOfTheMountain(
+        ABILITY_MD07_AVATAR_OF_THE_MOUNTAIN_MURADIN,
+        30,
+        1.00f,
+        150
+      ),
+      UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE
+    );
+
+    UnitTypeTraitRegistry.Register(
+      new TauntOnAvatarCast(
+        ABILITY_MD07_AVATAR_OF_THE_MOUNTAIN_MURADIN,
+        ABILITY_TP61_TAUNT_AVATAR_OF_THE_MOUNTAIN,
+        ORDER_TAUNT
+      ),
       UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE
     );
   }
