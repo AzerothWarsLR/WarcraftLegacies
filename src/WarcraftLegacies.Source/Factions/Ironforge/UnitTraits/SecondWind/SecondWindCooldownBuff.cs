@@ -6,6 +6,9 @@ public sealed class SecondWindCooldownBuff : PassiveBuff
 {
   public required float HealPercentPerSecond { private get; init; }
 
+  public string HealingEffect { private get; init; }
+  public float HealingEffectScale { private get; init; } = 1f;
+
   public SecondWindCooldownBuff(unit target) : base(target, target)
   {
   }
@@ -17,7 +20,9 @@ public sealed class SecondWindCooldownBuff : PassiveBuff
       Active = true,
       Duration = float.MaxValue,
       IsBeneficial = true,
-      HealPercentPerSecond = HealPercentPerSecond
+      HealPercentPerSecond = HealPercentPerSecond,
+      HealingEffect = HealingEffect,
+      HealingEffectScale = HealingEffectScale
     });
   }
 
