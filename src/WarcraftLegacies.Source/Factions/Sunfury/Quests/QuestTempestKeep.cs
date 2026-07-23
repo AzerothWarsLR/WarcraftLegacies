@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -67,6 +68,8 @@ public sealed class QuestTempestKeep : QuestData
     "With food production now secured, we can settle Tempest Keep and start growing Ancients of the Arcane.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Gain control of Tempest Keep, and learn to build {GetObjectName(UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}s";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of Tempest Keep, and learn to build {ancientPool}s and {artificerCourt}s",
+    ("{ancientPool}", GetObjectName(UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)),
+    ("{artificerCourt}", GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)));
 }

@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Events;
 
@@ -19,9 +20,9 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
   public ObjectiveLegendNotPermanentlyDead(LegendaryHero target)
   {
     _target = target;
-    Description = target.Unit.IsUnitType(unittype.Structure)
-      ? $"{target.Name} is intact"
-      : $"{target.Name} is alive";
+    SetDescription(
+      target.Unit.IsUnitType(unittype.Structure) ? "{target} is intact" : "{target} is alive",
+      ("{target}", Loc.Get(target.Name)));
 
     target.Died += OnTargetDied;
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnAnyUnitTrain);

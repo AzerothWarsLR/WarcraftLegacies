@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 
 namespace WarcraftLegacies.Source.Factions.Ahnqiraj.Quests;
@@ -24,6 +25,12 @@ public sealed class QuestEmperorConstruct : QuestData
   public override string RewardFlavour => "I have enslaved the cursed Tol'vir.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)}s from the {GetObjectName(UNIT_O00R_HATCHERY_CTHUN_BARRACK)},Learn to train {GetObjectName(UNIT_O001_TOL_VIR_STATUE_CTHUN_TOL_VIR_STATUE)}s from the {GetObjectName(UNIT_O00D_PYRAMID_CTHUN_MAGIC)} and learn to train Moam from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR)} ";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {eradicator}s from the {hatchery}, learn to train {tolvirStatue}s from the {pyramid} and learn to train Moam from the {altar}",
+    ("{eradicator}", GetObjectName(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)),
+    ("{hatchery}", GetObjectName(UNIT_O00R_HATCHERY_CTHUN_BARRACK)),
+    ("{tolvirStatue}", GetObjectName(UNIT_O001_TOL_VIR_STATUE_CTHUN_TOL_VIR_STATUE)),
+    ("{pyramid}", GetObjectName(UNIT_O00D_PYRAMID_CTHUN_MAGIC)),
+    ("{altar}", GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR)));
 
 }

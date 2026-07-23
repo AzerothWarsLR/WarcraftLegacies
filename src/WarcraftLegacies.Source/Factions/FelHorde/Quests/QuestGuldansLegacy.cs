@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde.Quests;
@@ -9,8 +10,10 @@ namespace WarcraftLegacies.Source.Factions.FelHorde.Quests;
 public sealed class QuestGuldansLegacy : QuestData
 {
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Learn to research {GetObjectName(UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE)} from the {GetObjectName(UNIT_O031_WAR_MILL_FEL_RESEARCH)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to research {upgrade} from the {building}",
+    ("{upgrade}", GetObjectName(UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE)),
+    ("{building}", GetObjectName(UNIT_O031_WAR_MILL_FEL_RESEARCH)));
 
   /// <inheritdoc/>
   public override string RewardFlavour =>

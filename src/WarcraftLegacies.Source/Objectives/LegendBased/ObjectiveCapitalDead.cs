@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
@@ -15,7 +16,7 @@ public sealed class ObjectiveCapitalDead : Objective
   public ObjectiveCapitalDead(Capital target)
   {
     TargetWidget = target.Unit;
-    Description = $"{target.Unit.Name} is destroyed";
+    SetDescription("{target} is destroyed", ("{target}", Loc.Get(target.Unit.Name)));
     DisplaysPosition = true;
     var deathTrigger = trigger.Create();
     deathTrigger.RegisterUnitEvent(target.Unit, unitevent.Death);

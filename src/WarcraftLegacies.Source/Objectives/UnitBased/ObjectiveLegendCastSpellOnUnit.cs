@@ -25,7 +25,8 @@ public sealed class ObjectiveLegendCastSpellOnUnit : Objective
     _spellId = spellId;
     _target = target;
     PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spellId);
-    Description = $"{caster.Name} has casted {GetObjectName(spellId)} on {target.Name}";
+    SetDescription("{caster} has cast {spell} on {target}",
+      ("{caster}", caster.Name), ("{spell}", GetObjectName(spellId)), ("{target}", target.Name));
   }
 
   private void OnCast()

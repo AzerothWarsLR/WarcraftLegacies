@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -30,8 +31,12 @@ public sealed class QuestGoldrinn : QuestData
     "Tess Greymane calls to Goldrinn's spirit. Revolted at the horrors that his fang had wrought on the Gilnean people but impressed with their ferocity, he returns to the mortal world, ready to rend and tear for his new people.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Learn to train {_goldrinn.Name} from the {GetObjectName(UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR)}, and learn to train {GetObjectName(UNIT_O06P_WORGEN_SHAMAN_GILNEAS)} from the {GetObjectName(UNIT_H03E_WORGEN_MANOR_GILNEAS_SPECIALIST)}. If you're allied to the Druids, {_goldrinn.Name}'s starting experience is halved";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {hero} from the {altar}, and learn to train {unit} from the {building}. If you're allied to the Druids, {hero}'s starting experience is halved",
+    ("{hero}", _goldrinn.Name),
+    ("{altar}", GetObjectName(UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR)),
+    ("{unit}", GetObjectName(UNIT_O06P_WORGEN_SHAMAN_GILNEAS)),
+    ("{building}", GetObjectName(UNIT_H03E_WORGEN_MANOR_GILNEAS_SPECIALIST)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

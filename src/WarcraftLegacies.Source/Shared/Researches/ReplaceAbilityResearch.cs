@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Shared.Researches;
 public sealed class ReplaceAbilityResearch : Research
 {
   /// <inheritdoc />
-  public ReplaceAbilityResearch(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
+  public ReplaceAbilityResearch(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
   {
   }
 

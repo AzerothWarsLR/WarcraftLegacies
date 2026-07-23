@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Localization;
 
 namespace MacroTools.Legends;
 
@@ -135,7 +136,7 @@ public sealed class Capital : Legend
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}");
+      player.DisplayTextTo($"\n|cffffcc00{Loc.Get("CAPITAL DESTROYED")}|r\n{Loc.Get(DeathMessage)}");
     }
   }
 }

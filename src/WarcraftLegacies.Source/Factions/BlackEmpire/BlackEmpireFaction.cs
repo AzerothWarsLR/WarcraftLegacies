@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.BlackEmpire.Quests;
 using WarcraftLegacies.Source.Setup;
@@ -21,10 +22,9 @@ public sealed class BlackEmpireFaction : Faction
       Income = 135,
       Turns = 10
     };
-    IntroText = $"You are playing as the {PrefixCol}Black Empire of N'zoth|r.\n\n" +
-                "You start in Nyalotha, restore the city to its glory by repelling the invaders from Azeroth.\n\n" +
-                "Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.\n\n" +
-                "Be sure to train Forsaken Ones, they are powerful units.";
+    IntroText = () => Loc.Format(
+      "You are playing as the {faction}.\n\nYou start in Nyalotha, restore the city to its glory by repelling the invaders from Azeroth.\n\nThen, move onto Kalimdor with your allies. You will quickly run into the Sentinels.\n\nBe sure to train Forsaken Ones, they are powerful units.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Black Empire of N'zoth")}|r"));
 
     Nicknames = new List<string>
     {

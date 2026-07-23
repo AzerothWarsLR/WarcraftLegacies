@@ -51,7 +51,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h03Z,hgry"
+      "Value": "hgry"
     },
     {
       "Id": "upgr",
@@ -65,7 +65,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R02K,Rhhb"
+      "Value": "VP31,R02K,Rhhb"
     },
     {
       "Id": "upat",
@@ -113,7 +113,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Ironforge Siege)"
+      "Value": "(Ironforge Air)"
     }
   ]
 }

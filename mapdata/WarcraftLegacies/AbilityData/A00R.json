@@ -1,0 +1,70 @@
+{
+  "OldId": "ACav",
+  "NewId": "A00R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -7
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP53"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Thunder Crack (Armor Debuff Applicator)"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Armor reduced by 7"
+    }
+  ]
+}

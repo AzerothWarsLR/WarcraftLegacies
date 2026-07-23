@@ -20,6 +20,11 @@ public abstract class Research
   public int GoldCost { get; }
 
   /// <summary>
+  /// The amount of lumber the research costs. Unfortunately this is hard-coded.
+  /// </summary>
+  public int LumberCost { get; }
+
+  /// <summary>
   /// The ID of the Warcraft 3 research object.
   /// </summary>
   public int ResearchTypeId { get; }
@@ -27,10 +32,11 @@ public abstract class Research
   /// <summary>
   /// Initializes a new instance of the <see cref="Research"/> class.
   /// </summary>
-  protected Research(int researchTypeId, int goldCost)
+  protected Research(int researchTypeId, int goldCost, int lumberCost)
   {
     ResearchTypeId = researchTypeId;
     GoldCost = goldCost;
+    LumberCost = lumberCost;
   }
 
   /// <summary>
@@ -54,6 +60,7 @@ public abstract class Research
   {
     researchingPlayer.DisplayRefundedResearch(ResearchTypeId);
     researchingPlayer.Gold += GoldCost;
+    researchingPlayer.Lumber += LumberCost;
     if (unresearch)
     {
       var playerData = researchingPlayer.GetPlayerData();

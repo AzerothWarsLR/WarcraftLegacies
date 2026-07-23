@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -25,5 +26,7 @@ public sealed class QuestAscension : QuestData
     "The World of Azeroth is mine.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"N'zoth learn to cast {GetObjectName(Ultimate)}";
+  protected override string RewardDescription => Loc.Format(
+    "N'zoth learn to cast {ability}",
+    ("{ability}", GetObjectName(Ultimate)));
 }

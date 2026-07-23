@@ -66,12 +66,12 @@
     },
     {
       "Id": "ugol",
-      "Value": 100
+      "Value": 0
     },
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "A004,Aamk,A0ID,A0IE,A0D3"
+      "Value": "TP10,Aamk,VP24,VP23,VP26"
     },
     {
       "Id": "uhpm",
@@ -179,7 +179,7 @@
     },
     {
       "Id": "ulum",
-      "Value": 0
+      "Value": 5
     },
     {
       "Id": "ulur",

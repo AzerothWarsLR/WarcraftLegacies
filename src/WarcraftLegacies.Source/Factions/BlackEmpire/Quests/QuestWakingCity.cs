@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -42,7 +43,9 @@ public sealed class QuestWakingCity : QuestData
   public override string RewardFlavour => "With the adventurer party destroyed, no one stands in my way.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)}, and gain control of N'zoth";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all buildings in Ny'lotha, learn to build the {mutationCircle}, and gain control of N'zoth",
+    ("{mutationCircle}", GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

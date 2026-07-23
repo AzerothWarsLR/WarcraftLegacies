@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -32,7 +33,10 @@ public sealed class QuestZangarmarsh : QuestData
   public override string RewardFlavour => "With the swamps of Zangarmarsh secured, Lady Vashj and her Naga begin the work of rebuilding their clutcheries.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain control of the Zangarmarsh outpost, learn to build {GetObjectName(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)}s, and learn to train Warlord Naj'entus from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of the Zangarmarsh outpost, learn to build {clutchery}s, and learn to train Warlord Naj'entus from the {altar}",
+    ("{clutchery}", GetObjectName(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)),
+    ("{altar}", GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

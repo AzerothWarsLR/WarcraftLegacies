@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -35,7 +36,11 @@ public sealed class QuestTwilightlanding : QuestData
   public override string RewardFlavour => "With the invaders defeated, I have retaken control of the Twilight landing.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain Control of all buildings and units in the Twilight landing area, learn to train X'korr the Compelling from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_NZOTH_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_NZOTH)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain Control of all buildings and units in the Twilight landing area, learn to train X'korr the Compelling from the {altar} and the ability to train 1 {forgottenOne} from the {mutationCircle}",
+    ("{altar}", GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_NZOTH_ALTAR)),
+    ("{forgottenOne}", GetObjectName(UNIT_U02F_FORGOTTEN_ONE_NZOTH)),
+    ("{mutationCircle}", GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

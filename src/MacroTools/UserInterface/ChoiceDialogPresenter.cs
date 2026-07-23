@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Localization;
+using MacroTools.Save;
 
 namespace MacroTools.UserInterface;
 
@@ -21,22 +23,13 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     _dialogText = dialogText;
   }
 
-  /// <summary>Fired when a choice has been made.</summary>
   protected abstract void OnChoicePicked(player whichPlayer, TChoice choice);
-
-  /// <summary>The default choice for this presenter, if the player picks nothing by the time it expires.</summary>
   protected abstract TChoice GetDefaultChoice(player whichPlayer);
-
-  /// <summary>
-  /// Determines whether a choice is active for the player it is being presented to. Inactive choices are not shown.
-  /// </summary>
   protected abstract bool IsChoiceActive(player whichPlayer, TChoice choice);
 
   /// <summary>Displays the faction choice to a player.</summary>
   public void Run(player whichPlayer)
   {
-    _pickDialog.SetMessage(_dialogText);
-
     var activeChoices = Choices.Where(x => IsChoiceActive(whichPlayer, x));
 
     if (activeChoices.Count() == 1)
@@ -48,7 +41,7 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     var choicePicksByButton = new Dictionary<button, TChoice>();
     foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
     {
-      var factionButton = _pickDialog.AddButton(choice.Name, 0);
+      var factionButton = _pickDialog.AddButton(Loc.Get(choice.Name), 0);
       choicePicksByButton[factionButton] = choice;
     }
 
@@ -71,7 +64,11 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
   {
     if (player.LocalPlayer == whichPlayer)
     {
-      _pickDialog.SetVisibility(player.LocalPlayer, true);
+      SaveManager.RunWhenLocalPlayerSettingsReady(() =>
+      {
+        _pickDialog?.SetMessage(Loc.Get(_dialogText));
+        _pickDialog?.SetVisibility(player.LocalPlayer, true);
+      });
     }
 
     foreach (var (button, choice) in choicePicksByButton)

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -36,7 +37,7 @@ public sealed class QuestHighBank : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Gain control of High Bank, earn 225 gold, and {_katherine.Name} gains 2000 experience";
+    Loc.Format("Gain control of High Bank, earn 225 gold, and {hero} gains 2000 experience", ("{hero}", _katherine.Name));
 
   protected override void OnFail(Faction completingFaction)
   {

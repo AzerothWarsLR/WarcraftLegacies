@@ -2,7 +2,9 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.Extensions;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -35,7 +37,10 @@ public sealed class QuestDrakUnlock : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {_kelthuzad.Name} from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all buildings in Drak'tharon Keep and learn to train {hero} from the {altar}",
+    ("{hero}", _kelthuzad.Name),
+    ("{altar}", GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
@@ -44,9 +49,9 @@ public sealed class QuestDrakUnlock : QuestData
       ? player.NeutralAggressive
       : completingFaction.Player;
 
-    rescuer.RescueGroup(_rescueUnits);
+    rescuer.RescueGroupWithUnburrow(_rescueUnits);
   }
 
   /// <inheritdoc/>
-  protected override void OnComplete(Faction completingFaction) => completingFaction.Player?.RescueGroup(_rescueUnits);
+  protected override void OnComplete(Faction completingFaction) => completingFaction.Player?.RescueGroupWithUnburrow(_rescueUnits);
 }

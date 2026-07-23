@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.TurnBased;
@@ -19,7 +20,7 @@ public sealed class ObjectiveExpire : Objective
   /// <param name="questName">The name of the quest this objective belongs to</param>
   public ObjectiveExpire(int expirationTurn, string questName)
   {
-    Description = $"Turn {expirationTurn} hasn't started";
+    SetDescription("Turn {turn} hasn't started", ("{turn}", expirationTurn.ToString()));
     _questName = questName;
     ShowsInPopups = false;
 
@@ -54,7 +55,10 @@ public sealed class ObjectiveExpire : Objective
       var assignedFactionPlayer = assignedFaction.Player;
       if (assignedFactionPlayer != null)
       {
-        assignedFactionPlayer.DisplayTextTo($"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in {WarningTurnsBeforeExpiry} turns.");
+        assignedFactionPlayer.DisplayTextTo(Loc.Format(
+          "\n|c00FF7F00WARNING|r - Quest {quest} will expire in {turns} turns.",
+          ("{quest}", Loc.Get(_questName)),
+          ("{turns}", WarningTurnsBeforeExpiry.ToString())));
       }
     }
   }

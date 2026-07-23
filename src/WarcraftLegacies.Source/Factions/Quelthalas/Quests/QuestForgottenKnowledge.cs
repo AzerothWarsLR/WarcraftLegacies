@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
@@ -23,5 +24,7 @@ public sealed class QuestForgottenKnowledge : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_E024_ARCANE_ANNIHILATOR_QUELTHALAS)}s from the {GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}";
+    Loc.Format("Learn to train {unit}s from the {building}",
+      ("{unit}", GetObjectName(UNIT_E024_ARCANE_ANNIHILATOR_QUELTHALAS)),
+      ("{building}", GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)));
 }

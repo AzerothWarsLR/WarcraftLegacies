@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Factions.Ahnqiraj.Quests;
@@ -23,6 +24,8 @@ public sealed class QuestMockeryOfLife : QuestData
   public override string RewardFlavour => "The abominable sandwurm Ouro has been created by Cthun";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_U02S_ANCIENT_SAND_WORM)}s from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {sandWorm}s from the {altar}",
+    ("{sandWorm}", GetObjectName(UNIT_U02S_ANCIENT_SAND_WORM)),
+    ("{altar}", GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR)));
 }

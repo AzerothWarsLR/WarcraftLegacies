@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Events;
 
@@ -13,9 +14,10 @@ public sealed class CorruptedSunwell : Power
   /// <param name="damage">The amount of damage taken per mana the player's units spend on abilities.</param>
   public CorruptedSunwell(float damage)
   {
-    Name = "Corrupted Sunwell";
-    Description =
-      $"Your units are damaged for {damage * 100}% of the mana they spend on spells. Units that die from this effect are reanimated as hostile Wretched.";
+    Name = Loc.Get("Corrupted Sunwell");
+    Description = Loc.Format(
+      "Your units are damaged for {damage}% of the mana they spend on spells. Units that die from this effect are reanimated as hostile Wretched.",
+      ("{damage}", (damage * 100).ToString()));
     IconName = "OrbOfDarkness";
   }
 

@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
@@ -21,7 +22,7 @@ public sealed class ObjectiveControlCapital : Objective
   public ObjectiveControlCapital(Capital target, bool failOnControlLoss)
   {
     _target = target;
-    Description = $"You control {target.Name}";
+    SetDescription("You control {target}", ("{target}", Loc.Get(target.Name)));
     _failOnControlLoss = failOnControlLoss;
     if (target.Unit != null)
     {

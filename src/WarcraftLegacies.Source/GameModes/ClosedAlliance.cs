@@ -1,11 +1,12 @@
 ﻿using MacroTools.GameModes;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.GameModes;
 
 public sealed class ClosedAlliance : IGameMode
 {
   /// <inheritdoc />
-  public string Name => "Closed Alliance";
+  public string Name => Loc.Get("Closed Alliance");
 
   /// <inheritdoc />
   public void OnChoose()

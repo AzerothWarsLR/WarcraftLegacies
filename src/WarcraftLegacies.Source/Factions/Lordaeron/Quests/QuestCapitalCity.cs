@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Powers;
@@ -55,7 +56,9 @@ public sealed class QuestCapitalCity : QuestData
   private static bool RescueUnitFilter(unit whichUnit) => whichUnit.UnitType != UNIT_N08F_UNDERCITY_ENTRANCE;
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Gain control of all units in the Capital City, gain Uther, and acquire the {RewardPowerName} Power";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all units in the Capital City, gain Uther, and acquire the {power} Power",
+    ("{power}", Loc.Get(RewardPowerName)));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
@@ -74,7 +77,7 @@ public sealed class QuestCapitalCity : QuestData
     var rewardPower = new ControlLevelPerTurnBonus(0.5f)
     {
       IconName = "ShieldOfUnification",
-      Name = RewardPowerName
+      Name = Loc.Get(RewardPowerName)
     };
 
     completingFaction.AddPower(rewardPower);

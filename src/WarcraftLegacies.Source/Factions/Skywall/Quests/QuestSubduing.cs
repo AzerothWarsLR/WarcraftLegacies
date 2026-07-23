@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 
@@ -25,5 +26,10 @@ public sealed class QuestSubduing : QuestData
   }
 
   /// <uz />
-  protected override string RewardDescription => $"Learn to train Neptulon from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)},Tidal Lords from the {GetObjectName(UNIT_N07N_PAVILION_SKYWALL_MAGIC)},and unlocks the {GetObjectName(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)} for {GetObjectName(UNIT_N08S_ELEMENTAL_LORD_SKYWALL)}.";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train Neptulon from the {altar}, Tidal Lords from the {building}, and unlocks the {ability} for {unit}.",
+    ("{altar}", GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)),
+    ("{building}", GetObjectName(UNIT_N07N_PAVILION_SKYWALL_MAGIC)),
+    ("{ability}", GetObjectName(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)),
+    ("{unit}", GetObjectName(UNIT_N08S_ELEMENTAL_LORD_SKYWALL)));
 }

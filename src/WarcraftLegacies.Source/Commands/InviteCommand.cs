@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
@@ -27,19 +28,20 @@ public static class InviteCommand
 
     if (!FactionManager.TryGetFactionByName(content, out var targetFaction))
     {
-      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.");
+      triggerPlayer.DisplayTextTo(Loc.Format("There is no Faction with the name {name}.", ("{name}", content)));
       return;
     }
 
     if (triggerPlayerData.Faction == targetFaction)
     {
-      triggerPlayer.DisplayTextTo("You can'invite yourself to your own team.");
+      triggerPlayer.DisplayTextTo(Loc.Get("You can't invite yourself to your own team."));
       return;
     }
 
     if (targetFaction.Player == null)
     {
-      triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.");
+      var coloredFactionName = $"{targetFaction.PrefixCol} {targetFaction.Name}|r";
+      triggerPlayer.DisplayTextTo(Loc.Format("There is no player with the Faction {faction}.", ("{faction}", coloredFactionName)));
       return;
     }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Api.Enums;
 using WCSharp.Effects;
@@ -36,8 +37,11 @@ public sealed class CityOfHeroes : Power
   {
     _chance = chance;
     _statMultiplier = statMultiplier;
-    Description =
-      $"{eligibleUnitPlural} you train have a {ToReadablePercentage(chance)} to become demiheroes, increasing their hit points, mana, and damage by {ToReadablePercentage(statMultiplier - 1)}, changing their attack and armor types to Hero, and granting them the ability to use items.";
+    Description = Loc.Format(
+      "{units} you train have a {chance} to become demiheroes, increasing their hit points, mana, and damage by {stat}, changing their attack and armor types to Hero, and granting them the ability to use items.",
+      ("{units}", Loc.Get(eligibleUnitPlural)),
+      ("{chance}", ToReadablePercentage(chance)),
+      ("{stat}", ToReadablePercentage(statMultiplier - 1)));
   }
 
   private static string ToReadablePercentage(float chance) => (int)(chance * 100) + "%";

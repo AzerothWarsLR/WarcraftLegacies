@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -17,8 +18,12 @@ public sealed class QuestKillDruids : QuestData
     "With Nordrassil under your control, the druids falter, and the elemental forces of Skywall grow strengthened.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Harness the magical essence of Nordrassil to empower your forces and unlocks the {GetObjectName(ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)} for {GetObjectName(UNIT_N08S_ELEMENTAL_LORD_SKYWALL)}. The training limit of {GetObjectName(UNIT_U02P_DJINN_SKYWALL)}'s and {GetObjectName(UNIT_LS06_EFREET_SKYWALL)}'s is increased from 4 to 6";
+  protected override string RewardDescription => Loc.Format(
+    "Harness the magical essence of Nordrassil to empower your forces and unlocks the {ability} for {unit}. The training limit of {djinn}'s and {efreet}'s is increased from 4 to 6",
+    ("{ability}", GetObjectName(ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)),
+    ("{unit}", GetObjectName(UNIT_N08S_ELEMENTAL_LORD_SKYWALL)),
+    ("{djinn}", GetObjectName(UNIT_U02P_DJINN_SKYWALL)),
+    ("{efreet}", GetObjectName(UNIT_LS06_EFREET_SKYWALL)));
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestKillDruids"/> class.

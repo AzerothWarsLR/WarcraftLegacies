@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
@@ -21,15 +22,14 @@ public sealed class FelHordeFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 190,
+      Income = 210,
       Turns = 10
     };
     CinematicMusic = "Doom";
     ControlPointDefenderUnitTypeId = UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL;
-    IntroText = IntroText = $"You are playing as the bloodthirsty {PrefixCol}Fel Horde|r.\n\n" +
-                            "You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.\n\n" +
-                            "Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.\n\n" +
-                            "The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
+    IntroText = () => Loc.Format(
+      "You are playing as the bloodthirsty {faction}.\n\nYou begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.\n\nOnce Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.\n\nThe Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Fel Horde")}|r"));
 
     FoodMaximum = 250;
     Nicknames = new List<string>

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Powers;
@@ -18,8 +19,8 @@ public sealed class Domination : Power
 
   public Domination()
   {
-    Name = "Domination";
-    Description = "You can train and control Ghouls, Abominations, Frost Wyrms, and Crypt Fiends.";
+    Name = Loc.Get("Domination");
+    Description = Loc.Get("You can train and control Ghouls, Abominations, Frost Wyrms, and Crypt Fiends.");
   }
 
   /// <inheritdoc />

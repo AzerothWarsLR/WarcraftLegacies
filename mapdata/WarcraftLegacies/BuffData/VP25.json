@@ -1,0 +1,34 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "VP25",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMonsoon.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Prevailing Wind"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has increased attack speed and movement speed."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\UnholyFrenzy\\UnholyFrenzyTarget.mdl"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Prevailing Wind"
+    }
+  ]
+}

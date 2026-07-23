@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -41,11 +42,9 @@ public sealed class ScourgeFaction : Faction
     FoodMaximum = 250;
     CinematicMusic = "ArthasTheme";
     ControlPointDefenderUnitTypeId = UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
-    IntroText = $"You are playing as the horrific {PrefixCol}Undead Scourge|r.\n\n" +
-                "You begin in Northrend, a vast and isolated land—perfect for raising an army of undying warriors to annihilate the living.\n\n" +
-                "The local Nerubians have declared war on you. Destroy their decrepit holdings and slay their Queen to secure the continent.\n\n" +
-                "Coordinate with the Burning Legion and unleash the Plague of Undeath to sweep Lordaeron away.\n\n" +
-                "When the Plague strikes Lordaeron, you will have a choice of where to instantly transport all your military units.";
+    IntroText = () => Loc.Format(
+      "You are playing as the horrific {faction}.\n\nYou begin in Northrend, a vast and isolated land—perfect for raising an army of undying warriors to annihilate the living.\n\nThe local Nerubians have declared war on you. Destroy their decrepit holdings and slay their Queen to secure the continent.\n\nCoordinate with the Burning Legion and unleash the Plague of Undeath to sweep Lordaeron away.\n\nWhen the Plague strikes Lordaeron, you will have a choice of where to instantly transport all your military units.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Undead Scourge")}|r"));
     Nicknames = new List<string>
     {
       "ud",
@@ -128,8 +127,8 @@ public sealed class ScourgeFaction : Faction
 
   private void RegisterPowers()
   {
-    var allSeeing = new RegionVisionPower("All-Seeing",
-      "Grants permanent vision over Northrend.",
+    var allSeeing = new RegionVisionPower(Loc.Get("All-Seeing"),
+      Loc.Get("Grants permanent vision over Northrend."),
       "Charm", new[]
       {
         Regions.Storm_Peaks,
@@ -401,7 +400,7 @@ public sealed class ScourgeFaction : Faction
     {
       new(1, UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
       new(2, UNIT_UGHO_GHOUL_SCOURGE),
-      new(2, UNIT_UCRY_CRYPT_FIEND_SCOURGE),
+      new(2, UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE),
       new(2, UNIT_UABO_ABOMINATION_SCOURGE),
     };
     plagueParameters.AttackTargets = new List<Point>

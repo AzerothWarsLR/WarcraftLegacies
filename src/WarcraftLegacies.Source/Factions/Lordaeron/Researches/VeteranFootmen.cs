@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 public sealed class VeteranFootmen : Research
 {
   /// <inheritdoc />
-  public VeteranFootmen(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
+  public VeteranFootmen(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
   {
   }
 

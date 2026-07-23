@@ -8,12 +8,12 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0RI,A0E1,A0F5,S01F,S01H,S01G,Aroc"
+      "Value": "A0F5,S01F,TP03,TP02,S01H,S01G"
     },
     {
       "Id": "uacq",
       "Type": 2,
-      "Value": 1000
+      "Value": 600
     },
     {
       "Id": "ubld",
@@ -26,12 +26,12 @@
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 32
+      "Value": 16
     },
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2.5
+      "Value": 4
     },
     {
       "Id": "ua2c",
@@ -40,15 +40,15 @@
     },
     {
       "Id": "udef",
-      "Value": 10
+      "Value": 6
     },
     {
       "Id": "ua1b",
-      "Value": 200
+      "Value": 65
     },
     {
       "Id": "ua2b",
-      "Value": 20
+      "Value": 0
     },
     {
       "Id": "ufoo",
@@ -64,7 +64,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1500
+      "Value": 1200
     },
     {
       "Id": "ulum",
@@ -76,7 +76,7 @@
     },
     {
       "Id": "ua1z",
-      "Value": 2600
+      "Value": 700
     },
     {
       "Id": "ua2z",
@@ -88,11 +88,11 @@
     },
     {
       "Id": "ua1r",
-      "Value": 950
+      "Value": 600
     },
     {
       "Id": "ua2r",
-      "Value": 400
+      "Value": 250
     },
     {
       "Id": "urtm",
@@ -105,11 +105,11 @@
     },
     {
       "Id": "ua1s",
-      "Value": 10
+      "Value": 15
     },
     {
       "Id": "ua2s",
-      "Value": 3
+      "Value": 0
     },
     {
       "Id": "uspe",
@@ -126,8 +126,53 @@
       "Value": "Rhar,Rhme,Rguv"
     },
     {
-      "Id": "uaen",
-      "Value": 3
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "ua2d",
+      "Value": 0
+    },
+    {
+      "Id": "udu2",
+      "Value": 0
+    },
+    {
+      "Id": "utc2",
+      "Value": 0
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1f",
+      "Value": 25
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "ua1h",
+      "Value": 30
+    },
+    {
+      "Id": "ua1q",
+      "Value": 90
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
     },
     {
       "Id": "uabs",
@@ -159,11 +204,6 @@
       "Value": 0.15
     },
     {
-      "Id": "ua2m",
-      "Type": 3,
-      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "Steam Tank"
@@ -177,6 +217,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Extremely heavily armored vehicle."
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
     }
   ]
 }

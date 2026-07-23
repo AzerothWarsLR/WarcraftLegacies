@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -33,16 +34,21 @@ public sealed class QuestVaultoftheWardens : QuestData
     "The ancient Vault of the Wardens has been secured. Maiev and her Wardens take up residence within its ancient halls.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    $"4 free {GetObjectName(UNIT_H045_WARDEN_SENTINELS)}s appear at the Broken Isles, and you learn to train {GetObjectName(UNIT_H045_WARDEN_SENTINELS)}s from the {GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)}s";
+  protected override string RewardDescription => Loc.Format(
+    "4 free {warden}s appear at the Broken Isles, and you learn to train {warden}s from the {vault} and from {bastion}s",
+    ("{warden}", GetObjectName(UNIT_H045_WARDEN_SENTINELS)),
+    ("{vault}", GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)),
+    ("{bastion}", GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
     CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
       Regions.VaultoftheWardens.Center.Y, 270, 4);
-    completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
-      $"You can now train Wardens from the {GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)}s.");
+    completingFaction.Player.DisplayUnitTypeAcquired(WardenId, Loc.Format(
+      "You can now train Wardens from the {vault} and from {bastion}s.",
+      ("{vault}", GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)),
+      ("{bastion}", GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE))));
     _vaultOfTheWardens.Unit?.Rescue(completingFaction.Player);
   }
 

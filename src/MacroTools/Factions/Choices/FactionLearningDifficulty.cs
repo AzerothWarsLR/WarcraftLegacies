@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Localization;
 
 namespace MacroTools.Factions.Choices;
 
@@ -18,9 +19,9 @@ public static class FactionLearningDifficultyExtensions
     switch (difficulty)
     {
       case FactionLearningDifficulty.Basic:
-        return "|c0096FF96(Basic)|r";
+        return $"|c0096FF96({Loc.Get("Basic")})|r";
       case FactionLearningDifficulty.Advanced:
-        return "|c00FF7F00(Advanced)|r";
+        return $"|c00FF7F00({Loc.Get("Advanced")})|r";
       default:
         throw new ArgumentOutOfRangeException(nameof(difficulty), difficulty, null);
     }

@@ -3,6 +3,7 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids;
@@ -35,10 +36,9 @@ public sealed class SentinelsFaction : Faction
     };
     CinematicMusic = "Comradeship";
     ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
-    IntroText = $"You are playing as the ever-watchful {PrefixCol}Sentinels|r.\n\n" +
-               "The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods' invaders from Kalimdor until then.\n\n" +
-               "Your first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel bastion on the southern half of the continent.\n\n" +
-               "Once you have secured your holdings, gather your army and destroy the Old Gods. Be cautious—they will outnumber you if given time to establish a foothold in Azeroth.";
+    IntroText = () => Loc.Format(
+      "You are playing as the ever-watchful {faction}.\n\nThe Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods' invaders from Kalimdor until then.\n\nYour first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel bastion on the southern half of the continent.\n\nOnce you have secured your holdings, gather your army and destroy the Old Gods. Be cautious—they will outnumber you if given time to establish a foothold in Azeroth.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Sentinels")}|r"));
     Nicknames = new List<string>
     {
       "sent",
@@ -144,8 +144,8 @@ public sealed class SentinelsFaction : Faction
 
   private void RegisterPowers()
   {
-    AddPower(new DummyPower("Unspoiled Wilderness",
-      "Your Control Points increase your units' movement speed by 15% in a large radius.",
+    AddPower(new DummyPower(Loc.Get("Unspoiled Wilderness"),
+      Loc.Get("Your Control Points increase your units' movement speed by 15% in a large radius."),
       "ANA_HealingButterfliesFixed"));
 
     var worldTrees = new List<Capital>
@@ -157,7 +157,6 @@ public sealed class SentinelsFaction : Faction
     AddPower(new Immortality(25, 45, worldTrees)
     {
       IconName = "ArcaneRessurection",
-      Name = "Immortality",
       Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
       ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
     });

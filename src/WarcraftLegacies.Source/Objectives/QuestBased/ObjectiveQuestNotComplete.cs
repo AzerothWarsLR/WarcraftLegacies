@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.QuestBased;
@@ -9,7 +10,7 @@ public sealed class ObjectiveQuestNotComplete : Objective
 
   public ObjectiveQuestNotComplete(QuestData target)
   {
-    Description = $"Do not complete the quest {target.Title}";
+    SetDescription("Do not complete the quest {quest}", ("{quest}", Loc.Get(target.Title)));
     Progress = QuestProgress.Complete;
     _target = target;
   }

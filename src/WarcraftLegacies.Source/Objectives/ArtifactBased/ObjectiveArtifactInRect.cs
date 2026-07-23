@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Artifacts;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -19,7 +20,7 @@ public sealed class ObjectiveArtifactInRect : Objective
     _targetArtifact = targetArtifact;
     _targetRect = targetRect;
     var targetRegion = RectToRegion(_targetRect.Rect);
-    Description = "Bring " + targetArtifact.Item.Name + " to " + rectName;
+    SetDescription("Bring {item} to {rect}", ("{item}", targetArtifact.Item.Name), ("{rect}", Loc.Get(rectName)));
 
     _entersRect.Trigger.RegisterEnterRegion(targetRegion);
     _entersRect.Trigger.AddAction(OnRegionEnter);

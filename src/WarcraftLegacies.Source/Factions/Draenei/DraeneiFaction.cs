@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -26,10 +27,9 @@ public sealed class DraeneiFaction : Faction
       Turns = 10
     };
     ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
-    IntroText = $"You are playing as the exiled {PrefixCol}Draenei|r.\n\n" +
-                "You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.\n\n" +
-                "Further inland your Night-elf allies will need your help against the Old Gods. Quickly build your base and gain entry to the Exodar.\n\n" +
-                "Power up your buildings with your Arcane Wells to unlock powerful global abilities.";
+    IntroText = () => Loc.Format(
+      "You are playing as the exiled {faction}.\n\nYou begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.\n\nFurther inland your Night-elf allies will need your help against the Old Gods. Quickly build your base and gain entry to the Exodar.\n\nPower up your buildings with your Arcane Wells to unlock powerful global abilities.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Draenei")}|r"));
 
     Nicknames = new List<string>
     {

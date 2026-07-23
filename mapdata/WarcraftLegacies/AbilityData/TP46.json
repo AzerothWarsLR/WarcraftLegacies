@@ -1,0 +1,134 @@
+{
+  "OldId": "AEev",
+  "NewId": "TP46",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Muradin)"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Restores Health when avoiding damage for several seconds.|n\r\n|cffffcc00Level 1|r - Restores 2% of maximum Health per second after not taking damage for 7 seconds. Increased to 4% when below 40% Health.|n\r\n|cffffcc00Level 2|r - Restores 4% of maximum Health per second after not taking damage for 7 seconds. Increased to 8% when below 40% Health.|n\r\n|cffffcc00Level 3|r - Restores 6% of maximum Health per second after not taking damage for 7 seconds. Increased to 12% when below 40% Health.|n\r\n|cffffcc00Level 4|r - Restores 8% of maximum Health per second after not taking damage for 7 seconds. Increased to 16% when below 40% Health.\r\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Second Wind - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Restores 8% of maximum Health per second after not taking damage for 7 seconds, increasing to 16% when below 40% Health."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Second Wind - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Second Wind - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Second Wind - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/PassiveButtons/PASSecondWind.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSecondWind.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Second Wind"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Restores 2% of maximum Health per second after not taking damage for 7 seconds, increasing to 4% when below 40% Health."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Restores 4% of maximum Health per second after not taking damage for 7 seconds, increasing to 8% when below 40% Health."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Restores 6% of maximum Health per second after not taking damage for 7 seconds, increasing to 12% when below 40% Health."
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Second Wind - [|cffffcc00Level %d|r]"
+    }
+  ]
+}

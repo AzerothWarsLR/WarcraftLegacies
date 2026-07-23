@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -28,7 +29,8 @@ public sealed class QuestThunderEagle : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {unit}s", ("{unit}", GetObjectName(ThunderEagleId)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

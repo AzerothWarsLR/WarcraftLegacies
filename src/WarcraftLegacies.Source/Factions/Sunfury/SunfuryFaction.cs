@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
@@ -27,10 +28,9 @@ public sealed class SunfuryFaction : Faction
     CinematicMusic = "BloodElfTheme";
     FoodMaximum = 250;
     ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
-    IntroText = $"You are playing as the power-hungry {PrefixCol}Sunfury|r.\n\n" +
-                "You begin in Netherstorm. Your first mission is to build three biodomes in the green areas protected by a bubble.\n\n" +
-                "Unite with your fel ally to push through the Dark Portal and destroy Stormwind.\n\n" +
-                "Your ultimate goal is to summon Kil'jaeden and annihilate your enemies.";
+    IntroText = () => Loc.Format(
+      "You are playing as the power-hungry {faction}.\n\nYou begin in Netherstorm. Your first mission is to build three biodomes in the green areas protected by a bubble.\n\nUnite with your fel ally to push through the Dark Portal and destroy Stormwind.\n\nYour ultimate goal is to summon Kil'jaeden and annihilate your enemies.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Sunfury")}|r"));
     Nicknames = new List<string>
     {
       "sf",

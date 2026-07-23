@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -37,7 +38,9 @@ public sealed class QuestVortexPinnacle : QuestData
   }
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {altar}",
+    ("{altar}", GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

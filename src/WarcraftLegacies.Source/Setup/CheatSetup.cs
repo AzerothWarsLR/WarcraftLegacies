@@ -59,6 +59,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatPause());
     CommandManager.Register(new CheatRemovePower());
     CommandManager.Register(new CheatLimit());
+    CommandManager.Register(new CheatForceWin());
     TestMode.Setup();
     CheatSkipCinematic.Init();
   }

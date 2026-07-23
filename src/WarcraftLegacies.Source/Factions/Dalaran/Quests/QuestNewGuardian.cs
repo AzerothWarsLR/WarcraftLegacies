@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -37,7 +38,7 @@ public sealed class QuestNewGuardian : QuestData
     var whichUnit = _jaina.Unit;
     whichUnit.RemoveAbility(ABILITY_A0RB_PORTAL_TO_ARGUS_DRAENEI);
     effect.Create("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
-    whichUnit.Name = "Guardian of Tirisfal";
+    whichUnit.Name = Loc.Get("Guardian of Tirisfal");
     whichUnit.AddAbility(ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
     whichUnit.AttackAttackType1 = WCSharp.Api.Enums.AttackType.Chaos; //Chaos
     whichUnit?.AddHeroAttributes(0, 0, 20);

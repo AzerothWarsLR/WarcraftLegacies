@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Sounds;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -67,7 +68,10 @@ public sealed class QuestDragonsOfNightmare : QuestData
   {
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
+      player.DisplayTextTo($"\n|cff590ff7 {Loc.Get("NIGHTMARE DRAGONS SPAWNED")} \n|r " +
+        Loc.Format("{dragon1} and {dragon2} have appeared in {loc1} and {loc2}.",
+          ("{dragon1}", _nightmareDragonKalimdor.GetProperName()), ("{dragon2}", _nightmareDragonEk.GetProperName()),
+          ("{loc1}", _portalOneLocation), ("{loc2}", _portalTwoLocation)));
       SoundLibrary.Warning.Start();
     }
 
@@ -76,10 +80,12 @@ public sealed class QuestDragonsOfNightmare : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"A portal between {_portalOneLocation} and {_portalTwoLocation} opens";
+  protected override string RewardDescription => Loc.Format("A portal between {loc1} and {loc2} opens",
+    ("{loc1}", _portalOneLocation), ("{loc2}", _portalTwoLocation));
 
   /// <inheritdoc/>
-  public override string RewardFlavour => $"The Dragons of Nightmare {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have been defeated.";
+  public override string RewardFlavour => Loc.Format("The Dragons of Nightmare {dragon1} and {dragon2} have been defeated.",
+    ("{dragon1}", _nightmareDragonKalimdor.GetProperName()), ("{dragon2}", _nightmareDragonEk.GetProperName()));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Events;
 using WCSharp.Lightnings;
@@ -12,9 +13,11 @@ public sealed class KiljaedensCunning : Power
   public KiljaedensCunning(float hpPercentageHitpoints)
   {
     _hpPercentageHitpoints = hpPercentageHitpoints;
-    Name = "Kil'jaeden's Cunning";
+    Name = Loc.Get("Kil'jaeden's Cunning");
     IconName = "Kiljaedin";
-    Description = $"Your units' Magic attacks and spell damage execute enemy units with less than {hpPercentageHitpoints}% hit points.";
+    Description = Loc.Format(
+      "Your units' Magic attacks and spell damage execute enemy units with less than {percentage}% hit points.",
+      ("{percentage}", hpPercentageHitpoints.ToString()));
   }
 
   public override void OnAdd(player whichPlayer)

@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -34,9 +35,11 @@ public sealed class QuestSapphiron : QuestData
     "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_UFRO_FROST_WYRM_SCOURGE)}s from the {GetObjectName(UNIT_UBON_BONEYARD_SCOURGE_SIEGE)}. " +
-                                                 "If your team killed Sapphiron, gain him in an undead form; " +
-                                                 $"otherwise, learn to train him from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {unit}s from the {building}. If your team killed Sapphiron, gain him in an undead form; otherwise, learn to train him from the {altar}",
+    ("{unit}", GetObjectName(UNIT_UFRO_FROST_WYRM_SCOURGE)),
+    ("{building}", GetObjectName(UNIT_UBON_BONEYARD_SCOURGE_SIEGE)),
+    ("{altar}", GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

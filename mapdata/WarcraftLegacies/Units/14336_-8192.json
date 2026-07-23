@@ -114,27 +114,12 @@
     "InventoryData": [],
     "AbilityData": [
       {
-        "AbilityId": 1328689217,
-        "IsAutocastActive": true,
-        "HeroAbilityLevel": 0
-      },
-      {
         "AbilityId": 1229467713,
         "IsAutocastActive": true,
         "HeroAbilityLevel": 0
       },
       {
-        "AbilityId": 1363882049,
-        "IsAutocastActive": true,
-        "HeroAbilityLevel": 0
-      },
-      {
         "AbilityId": 875966529,
-        "IsAutocastActive": true,
-        "HeroAbilityLevel": 0
-      },
-      {
-        "AbilityId": 1228288065,
         "IsAutocastActive": true,
         "HeroAbilityLevel": 0
       }

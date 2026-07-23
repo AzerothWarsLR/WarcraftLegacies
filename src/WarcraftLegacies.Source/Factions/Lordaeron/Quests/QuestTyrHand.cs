@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -39,7 +40,10 @@ public sealed class QuestTyrHand : QuestData
   public override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us! Renowed for their siege engineers, we can now build siege workshops.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain control of all units in Tyr's Hand, learn to train Garithos from the {GetObjectName(UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR)}, and learn to build {GetObjectName(UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE)}s";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all units in Tyr's Hand, learn to train Garithos from the {altar}, and learn to build {building}s",
+    ("{altar}", GetObjectName(UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR)),
+    ("{building}", GetObjectName(UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

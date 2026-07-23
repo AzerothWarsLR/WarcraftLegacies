@@ -46,12 +46,12 @@
     },
     {
       "Id": "ugol",
-      "Value": 100
+      "Value": 0
     },
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "ANrf,Aamk,A0C7,AHab,A0JF"
+      "Value": "VP28,A0JF,AHab,vSW2,Aamk"
     },
     {
       "Id": "uhpm",
@@ -59,12 +59,12 @@
     },
     {
       "Id": "uint",
-      "Value": 24
+      "Value": 28
     },
     {
       "Id": "uinp",
       "Type": 2,
-      "Value": 2.8
+      "Value": 3.1
     },
     {
       "Id": "umh1",
@@ -130,7 +130,7 @@
     },
     {
       "Id": "ulum",
-      "Value": 0
+      "Value": 5
     },
     {
       "Id": "ulur",
@@ -149,7 +149,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Ragnaros)"
+      "Value": "(Ironforge)"
     },
     {
       "Id": "umdl",

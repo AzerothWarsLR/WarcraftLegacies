@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -28,10 +29,9 @@ public sealed class AhnqirajFaction : Faction
       Income = 225,
       Turns = 10
     };
-    IntroText = $"You are playing as {PrefixCol}C'thun and his Qiraji followers|r.\n\n" +
-                "You start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and free yourself from the Titan Guardians.\n\n" +
-                "Then, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.\n\n" +
-                "You do not possess boats, but your workers can burrow through water, use them to outmaneuver your enemies.";
+    IntroText = () => Loc.Format(
+      "You are playing as {faction}.\n\nYou start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and free yourself from the Titan Guardians.\n\nThen, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.\n\nYou do not possess boats, but your workers can burrow through water, use them to outmaneuver your enemies.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("C'thun and his Qiraji followers")}|r"));
 
     Nicknames = new List<string>
     {

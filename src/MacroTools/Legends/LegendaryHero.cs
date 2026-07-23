@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -38,6 +39,11 @@ public sealed class LegendaryHero : Legend
   /// Invoked when the <see cref="LegendaryHero"/> deals damage.
   /// </summary>
   public event Action? DealtDamage;
+
+  /// <summary>
+  /// Invoked when the <see cref="LegendaryHero"/> is revived after a temporary death.
+  /// </summary>
+  public event Action? Revived;
 
   /// <summary>
   ///   If true, the Legend is permanently removed from the game upon death.
@@ -131,6 +137,7 @@ public sealed class LegendaryHero : Legend
     else if (!Unit.Alive)
     {
       Unit.Revive(position.X, position.Y, false);
+      Revived?.Invoke();
     }
     else
     {
@@ -287,11 +294,12 @@ public sealed class LegendaryHero : Legend
       return;
     }
 
+    var label = Unit.Owner == player.NeutralAggressive ? Loc.Get("LEGENDARY FOE SLAIN") : Loc.Get("HERO SLAIN");
+    var message = $"\n|cffffcc00{label}|r\n{Loc.Get(DeathMessage)}";
+
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo(Unit.Owner == player.NeutralAggressive
-          ? $"\n|cffffcc00LEGENDARY FOE SLAIN|r\n{DeathMessage}"
-          : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}");
+      player.DisplayTextTo(message);
     }
   }
 

@@ -2,9 +2,11 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
+
 
 namespace WarcraftLegacies.Source.Factions.Frostwolf.Powers;
 
@@ -33,8 +35,11 @@ public sealed class MaelstromWeapon : Power
   {
     _damageChance = damageChance;
     _damageDealt = damageDealt;
-    Name = "Maelstrom Spirit";
-    Description = $"Your Orc units have a {damageChance * 100}% chance on attack to call down a lightning bolt dealing {damageDealt} magic damage. Thrall instead has a 100% chance.";
+    Name = Loc.Get("Maelstrom Spirit");
+    Description = Loc.Format(
+      "Your Orc units have a {chance}% chance on attack to call down a lightning bolt dealing {damage} magic damage. Thrall instead has a 100% chance.",
+      ("{chance}", (damageChance * 100).ToString()),
+      ("{damage}", damageDealt.ToString()));
   }
 
   /// <inheritdoc />

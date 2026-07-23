@@ -21,6 +21,13 @@
       "Value": 1
     },
     {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 14
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Dagran Fire Elementals)"

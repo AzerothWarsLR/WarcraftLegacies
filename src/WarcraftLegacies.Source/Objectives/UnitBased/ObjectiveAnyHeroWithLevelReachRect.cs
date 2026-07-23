@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -26,7 +27,8 @@ public sealed class ObjectiveAnyHeroWithLevelReachRect : Objective, IHasCompleti
     _targetRect = targetRect.Rect;
     _targetLevel = targetLevel;
     var target = RectToRegion(_targetRect);
-    Description = $"Any level {targetLevel}+ hero reaches {rectName}";
+    SetDescription("Any level {level}+ hero reaches {rect}",
+      ("{level}", targetLevel.ToString()), ("{rect}", Loc.Get(rectName)));
     _entersRect.Trigger.RegisterEnterRegion(target);
     _entersRect.Trigger.AddAction(OnRegionEnter);
     PingPath = "MinimapQuestTurnIn";
@@ -38,7 +40,7 @@ public sealed class ObjectiveAnyHeroWithLevelReachRect : Objective, IHasCompleti
   public unit? CompletingUnit { get; private set; }
 
   /// <inheritdoc />
-  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : Loc.Get("an unknown hero");
 
   private static region RectToRegion(rect whichRect)
   {

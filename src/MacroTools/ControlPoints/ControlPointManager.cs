@@ -166,6 +166,10 @@ public sealed class ControlPointManager
     controlPoint.Unit.Life = representingUnit.Owner == player.NeutralAggressive ? HostileStartingCurrentHitPoints : controlPoint.Unit.MaxLife;
     controlPoint.Unit.DefenseType = WCSharp.Api.Enums.DefenseType.Large;
     controlPoint.Unit.ShowAttackUi(false);
+    if (controlPoint.Unit.Owner == player.NeutralPassive)
+    {
+      controlPoint.Unit.IsInvulnerable = true;
+    }
 
     controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);

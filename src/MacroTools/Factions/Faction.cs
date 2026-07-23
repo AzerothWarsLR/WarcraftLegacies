@@ -57,7 +57,7 @@ public abstract class Faction
   public int Id { get; }
 
   /// <summary>Displayed to the <see cref="Faction" /> when the game starts.</summary>
-  public string? IntroText { get; protected init; }
+  public Func<string>? IntroText { get; protected init; }
 
   /// <summary>
   /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s

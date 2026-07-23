@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -39,10 +40,9 @@ public sealed class LegionFaction : Faction
     FoodMaximum = 250;
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;
-    IntroText = $"You are playing as the mighty {PrefixCol}Burning Legion|r.\n\n" +
-                "You begin isolated on Argus. Once the planet is under your control, you will unlock two teleporters to Northrend and Alterac.\n\n" +
-                "On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran, and Quel'Thalas.\n\n" +
-                "Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the Book of Medivh is kept, and use it to open the Demon-gate to Argus.";
+    IntroText = () => Loc.Format(
+      "You are playing as the mighty {faction}.\n\nYou begin isolated on Argus. Once the planet is under your control, you will unlock two teleporters to Northrend and Alterac.\n\nOn Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran, and Quel'Thalas.\n\nYour primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the Book of Medivh is kept, and use it to open the Demon-gate to Argus.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Burning Legion")}|r"));
     Nicknames = new List<string>
     {
       "leg",
@@ -90,7 +90,7 @@ public sealed class LegionFaction : Faction
       new Rematerialization(0.2f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
       {
         IconName = "achievement_raid_argusraid",
-        Name = "Rematerialization",
+        Name = Loc.Get("Rematerialization"),
         EligibilityCondition = dyingUnit => dyingUnit.Owner.GetPlayerData().GetObjectLimit(dyingUnit.UnitType) != 0
       }));
   }

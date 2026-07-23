@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
 
@@ -31,11 +32,13 @@ public sealed class QuestZinrokhAssembly : QuestData
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
-    $"{_fragments.First().OwningUnit?.GetProperName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
+    Loc.Format("{unit} has assembled Zin'rokh, Destroyer of Worlds!",
+      ("{unit}", _fragments.First().OwningUnit?.GetProperName() ?? ""));
 
   /// <inheritdoc/>
   public override string PenaltyFlavour =>
-    $"{_fragments.First().OwningPlayer?.GetPlayerData().Faction?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
+    Loc.Format("{faction} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.",
+      ("{faction}", _fragments.First().OwningPlayer?.GetPlayerData().Faction?.ColoredName ?? ""));
 
   /// <inheritdoc/>
   protected override string RewardDescription => "Reforge Zin'rokh, Destroyer of Worlds from its Shards";
