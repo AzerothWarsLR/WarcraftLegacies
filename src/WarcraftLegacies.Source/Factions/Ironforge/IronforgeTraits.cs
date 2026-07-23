@@ -40,11 +40,12 @@ public static class IronforgeTraits
         {
           Base = 0f,
           PerLevel = 2f
-        }
+        },
+        HealingEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+        HealingEffectScale = 1f
       },
       UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE
     );
-
     UnitTypeTraitRegistry.Register(
       new AvatarOfTheMountain(
         ABILITY_MD07_AVATAR_OF_THE_MOUNTAIN_MURADIN,

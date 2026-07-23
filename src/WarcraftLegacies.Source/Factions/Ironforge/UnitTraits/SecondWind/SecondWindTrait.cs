@@ -11,6 +11,8 @@ public sealed class SecondWindTrait : UnitTrait, IEffectOnCreated, IEffectOnDama
 
   public required LeveledAbilityField<float> HealPercentPerSecond { private get; init; }
 
+  public string HealingEffect { private get; init; }
+  public float HealingEffectScale { private get; init; } = 1f;
   public float OutOfCombatThreshold { private get; init; } = 7f;
 
   public SecondWindTrait(int abilityTypeId)
@@ -78,7 +80,9 @@ public sealed class SecondWindTrait : UnitTrait, IEffectOnCreated, IEffectOnDama
       Active = true,
       Duration = OutOfCombatThreshold,
       IsBeneficial = true,
-      HealPercentPerSecond = healPercentPerSecond
+      HealPercentPerSecond = healPercentPerSecond,
+      HealingEffect = HealingEffect,
+      HealingEffectScale = HealingEffectScale
     });
   }
 }
