@@ -9,6 +9,9 @@ public sealed class Standard : IGameMode
   public string Name => Loc.Get("Standard");
 
   /// <inheritdoc />
+  public string Description => Loc.Get("Capture Control Points across Azeroth alongside your allies to win.");
+
+  /// <inheritdoc />
   public void OnChoose()
   {
     this.SetupControlPointVictory();

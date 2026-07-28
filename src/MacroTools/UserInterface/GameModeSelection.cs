@@ -29,6 +29,7 @@ public static class GameModeSelection
     var options = gameModesArray.Select(gameMode => new VoteOption
     {
       Name = gameMode.Name,
+      Description = gameMode.Description,
       VoteOffset = gameMode.VoteOffset,
       OnChosen = gameMode.OnChoose
     }).ToArray();

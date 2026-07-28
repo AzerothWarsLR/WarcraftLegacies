@@ -6,6 +6,9 @@ public interface IGameMode
   /// <summary>A user-friendly name that players will see.</summary>
   public string Name { get; }
 
+  /// <summary>A short user-friendly description of what this gamemode is, shown under its vote button.</summary>
+  public string Description { get; }
+
   /// <summary>Fired when this <see cref="IGameMode"/> is successfully voted on.</summary>
   public void OnChoose();
 
