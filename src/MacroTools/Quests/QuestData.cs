@@ -51,6 +51,14 @@ public abstract class QuestData
   protected bool Global { get; init; }
 
   /// <summary>
+  ///   If true, completing this quest won't show the normal "QUEST COMPLETED" popup/sound (or the
+  ///   <see cref="Global"/> broadcast, if applicable) - meant for quests forced complete programmatically
+  ///   (e.g. by a difficulty setting) rather than through normal play, where showing that popup would just be
+  ///   noise since nothing the player did caused it.
+  /// </summary>
+  public bool SuppressCompletionDisplay { get; set; }
+
+  /// <summary>
   ///   Describes to the player what will happen when the quest is completed.
   ///   Describes mechanics, not flavour.
   /// </summary>
@@ -166,10 +174,13 @@ public abstract class QuestData
 
   private void CompleteForFaction(Faction whichFaction)
   {
-    whichFaction.DisplayCompleted(this);
-    if (Global)
+    if (!SuppressCompletionDisplay)
     {
-      whichFaction.Player?.DisplayCompletedGlobal(this);
+      whichFaction.DisplayCompleted(this);
+      if (Global)
+      {
+        whichFaction.Player?.DisplayCompletedGlobal(this);
+      }
     }
 
     if (ResearchId != 0)
