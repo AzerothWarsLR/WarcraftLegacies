@@ -16,6 +16,7 @@ using WarcraftLegacies.Source.GameLogic.Mmd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
+using WarcraftLegacies.Source.UserInterface;
 using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -64,17 +65,12 @@ public static class GameSetup
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
-    var gameModeManager = new GameModeManager(new IGameMode[]
+    GameStartVoteSequence.Setup(new IGameMode[]
     {
       new ClosedAlliance(),
       new OpenAlliance(),
       new GreatWar()
-    })
-    {
-      TimeToDisplay = 49,
-      VoteLength = 10
-    };
-    gameModeManager.Setup();
+    }, timeToDisplay: 0, modeVoteLength: 10, customOptionsVoteLength: 15);
     RockSetup.Setup();
     TurnResearchSetup.Setup();
     ShipyardBanZonesSetup.Setup();
@@ -89,6 +85,7 @@ public static class GameSetup
     PlayerLeaves.Setup();
     FloatingTextSetup.Setup(60, 10);
     AmbianceSetup.Setup();
+    HeroDamageTakenSetting.Setup();
     UnitTypeTraitRegistry.InitializePreplacedUnits();
     IncompatibleResearchSetup.Setup();
     DemonGateSetup.Setup();

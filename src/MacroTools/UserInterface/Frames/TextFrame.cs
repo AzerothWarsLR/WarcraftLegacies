@@ -8,6 +8,14 @@ public sealed class TextFrame : Frame
     set => Handle.Text = value;
   }
 
+  /// <summary>
+  /// Centers this text both horizontally and vertically within its own frame bounds.
+  /// </summary>
+  public void CenterText()
+  {
+    BlzFrameSetTextAlignment(Handle, TEXT_JUSTIFY_MIDDLE, TEXT_JUSTIFY_CENTER);
+  }
+
   public TextFrame(string name, Frame parent, int priority) : base(name, parent, priority)
   {
   }

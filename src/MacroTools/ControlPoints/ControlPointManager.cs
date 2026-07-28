@@ -15,6 +15,12 @@ namespace MacroTools.ControlPoints;
 /// </summary>
 public sealed class ControlPointManager
 {
+  /// <summary>
+  /// Scales gold gained from Control Points specifically. Applied to <see cref="PlayerData.BaseIncome"/> only,
+  /// not <see cref="PlayerData.BonusIncome"/>, which comes from unrelated sources like starting bonuses.
+  /// </summary>
+  public static float IncomeMultiplier = 1f;
+
   static ControlPointManager()
   {
     GameTimeManager.RegisterOnTurn(1, () =>
@@ -26,7 +32,7 @@ public sealed class ControlPointManager
           var playerData = player.GetPlayerData();
           if (playerData.Faction != null)
           {
-            playerData.AddFractionalGold(playerData.TotalIncome * Period / 60);
+            playerData.AddFractionalGold((playerData.BaseIncome * IncomeMultiplier + playerData.BonusIncome) * Period / 60);
           }
         }
       });

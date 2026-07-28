@@ -39,6 +39,14 @@ public static class CustomPlayerUnitEvents
   public static string PlayerTakesDamage => nameof(PlayerTakesDamage);
 
   /// <summary>
+  /// A specific player's unit is taking damage from any source. Fires pre-mitigation.
+  /// <remarks>As this event uses <see cref="playerunitevent.Damaging"/>, it is guaranteed to fire before events
+  /// that use <see cref="playerunitevent.Damaged"/>. Use this for damage modification, but do not check
+  /// for damage thresholds as the damage event may not represent the final damage value.</remarks>
+  /// </summary>
+  public static string PlayerTakingDamage => nameof(PlayerTakingDamage);
+
+  /// <summary>
   /// A unit owned by a specific player dies.
   /// </summary>
   public static string PlayerUnitDies => nameof(PlayerUnitDies);
@@ -59,6 +67,7 @@ public static class CustomPlayerUnitEvents
     PlayerUnitEvents.AddCustomEvent(PlayerDealingDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaging);
     PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaged);
     PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaged);
+    PlayerUnitEvents.AddCustomEvent(PlayerTakingDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaging);
     PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => @event.Unit.Owner.Id, playerunitevent.Death);
     PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => @event.KillingUnit.Owner.GetPlayerData().Faction?.Id ?? -1, playerunitevent.Death);
     PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => @event.Unit.Owner.Id, playerunitevent.SpellEffect);
