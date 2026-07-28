@@ -20,12 +20,13 @@ public static class GameModeSelection
 
   /// <summary>
   /// Builds the voting UI and shows it immediately, giving players <paramref name="voteLength"/> seconds to
-  /// vote. Calls <paramref name="onConcluded"/> once the winning <see cref="IGameMode"/> has been chosen and
-  /// its effect applied. Does not pause the game or manage any further pages - that's the caller's job.
+  /// vote. Calls <paramref name="onConcluded"/> with the winning <see cref="IGameMode"/> once it's been chosen
+  /// and its effect applied. Does not pause the game or manage any further pages - that's the caller's job.
   /// </summary>
-  public static void Setup(IEnumerable<IGameMode> gameModes, float voteLength, Action onConcluded)
+  public static void Setup(IEnumerable<IGameMode> gameModes, float voteLength, Action<IGameMode> onConcluded)
   {
-    var options = gameModes.Select(gameMode => new VoteOption
+    var gameModesArray = gameModes.ToArray();
+    var options = gameModesArray.Select(gameMode => new VoteOption
     {
       Name = gameMode.Name,
       VoteOffset = gameMode.VoteOffset,
@@ -53,7 +54,7 @@ public static class GameModeSelection
       }
 
       root.Visible = false;
-      onConcluded();
+      onConcluded(gameModesArray[Array.IndexOf(options, voteGroup.Winner)]);
     });
   }
 }

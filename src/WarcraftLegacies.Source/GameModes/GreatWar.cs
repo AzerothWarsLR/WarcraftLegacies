@@ -14,10 +14,12 @@ public sealed class GreatWar : IGameMode
   public void OnChoose()
   {
     CommandManager.Register(new Forfeit());
-    this.SetupGreatWarTeams()
-      .SetupAllianceCommands();
+    this.SetupGreatWarTeams();
   }
 
   /// <inheritdoc />
   public int VoteOffset => -4;
+
+  /// <inheritdoc />
+  public bool ForcesOpenDiplomacy => true;
 }

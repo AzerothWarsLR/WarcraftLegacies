@@ -17,19 +17,30 @@ public static class GameStartVoteSequence
   private static List<unit> _pausedUnits = new();
 
   /// <summary>
-  /// Shows the game-mode vote after <paramref name="timeToDisplay"/> seconds, then the Custom Options vote once
-  /// a mode has been chosen, unpausing the game once both have concluded.
+  /// Shows the game-mode vote after <paramref name="timeToDisplay"/> seconds, then the Difficulty/Diplomacy
+  /// vote once a mode has been chosen, then the Custom Options vote too if "Custom" won that, unpausing the
+  /// game once everything has concluded.
   /// </summary>
   public static void Setup(IEnumerable<IGameMode> gameModes, float timeToDisplay, float modeVoteLength,
-    float customOptionsVoteLength)
+    float difficultyVoteLength, float customOptionsVoteLength)
   {
     timer.Create().Start(timeToDisplay, false, () =>
     {
       PauseAllUnits();
 
-      GameModeSelection.Setup(gameModes, modeVoteLength, () =>
+      GameModeSelection.Setup(gameModes, modeVoteLength, winningMode =>
       {
-        CustomOptionsSelection.Setup(customOptionsVoteLength, UnpauseAllUnits);
+        DifficultySelection.Setup(difficultyVoteLength, winningMode.ForcesOpenDiplomacy, customChosen =>
+        {
+          if (customChosen)
+          {
+            CustomOptionsSelection.Setup(customOptionsVoteLength, UnpauseAllUnits);
+          }
+          else
+          {
+            UnpauseAllUnits();
+          }
+        });
       });
     });
   }

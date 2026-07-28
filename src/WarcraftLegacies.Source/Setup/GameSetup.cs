@@ -68,10 +68,9 @@ public static class GameSetup
     DestructibleSetup.Setup();
     GameStartVoteSequence.Setup(new IGameMode[]
     {
-      new ClosedAlliance(),
-      new OpenAlliance(),
+      new Standard(),
       new GreatWar()
-    }, timeToDisplay: 0, modeVoteLength: 10, customOptionsVoteLength: 15);
+    }, timeToDisplay: 0, modeVoteLength: 10, difficultyVoteLength: 10, customOptionsVoteLength: 15);
     RockSetup.Setup();
     TurnResearchSetup.Setup();
     ShipyardBanZonesSetup.Setup();
