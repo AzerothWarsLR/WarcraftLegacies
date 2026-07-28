@@ -21,37 +21,70 @@ public static class CustomOptionsSelection
   private const float ButtonSpacing = 0.012f;
   private const float GroupSpacing = 0.015f;
   private const float Margin = 0.03f;
+  private const int ColumnCount = 2;
+  private const float ColumnSpacing = 0.05f;
 
-  // Guards against the panel being narrower than a category title needs, since title width isn't measured -
-  // only the (now much narrower) button row is.
-  private const float MinContentWidth = 0.3f;
+  // Guards against a column being narrower than its longest category title needs, since title width isn't
+  // measured - only the (usually much narrower) button row is.
+  private const float MinColumnWidth = 0.3f;
 
   /// <summary>
   /// Builds the Custom Options voting UI and shows it immediately, giving players <paramref name="voteLength"/>
-  /// seconds to vote. Calls <paramref name="onConcluded"/> once every category has a winner and its effect has
-  /// been applied. Does not pause the game - that's the caller's job.
+  /// seconds to vote. Categories are laid out into <see cref="ColumnCount"/> columns (filled top-to-bottom,
+  /// then left-to-right) so the page stays short enough to fit on screen as more categories are added. Calls
+  /// <paramref name="onConcluded"/> once every category has a winner and its effect has been applied. Does not
+  /// pause the game - that's the caller's job.
   /// </summary>
   public static void Setup(float voteLength, Action onConcluded)
   {
     var categories = BuildCategories();
+    var rowsPerColumn = (categories.Length + ColumnCount - 1) / ColumnCount;
 
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
     root.SetAbsPoint(framepointtype.Center, 0.4f, 0.35f);
 
-    var groups = new VoteGroup[categories.Length];
-    var y = -Margin;
-    var contentWidth = MinContentWidth;
+    // First pass: figure out how wide each column needs to be, from the widest category assigned to it.
+    var columnWidths = new float[ColumnCount];
     for (var i = 0; i < categories.Length; i++)
     {
-      var group = new VoteGroup(root, groupId: i + 1, Loc.Get(categories[i].Title), categories[i].Options,
-        Margin, y, ButtonWidth, ButtonHeight, ButtonSpacing);
-      groups[i] = group;
-      y -= group.Height + GroupSpacing;
-      contentWidth = Math.Max(contentWidth, group.Width);
+      var column = i / rowsPerColumn;
+      var optionCount = categories[i].Options.Length;
+      var categoryWidth = optionCount * ButtonWidth + (optionCount - 1) * ButtonSpacing;
+      columnWidths[column] = Math.Max(Math.Max(columnWidths[column], categoryWidth), MinColumnWidth);
     }
 
-    root.Width = contentWidth + Margin * 2;
-    root.Height = -y - GroupSpacing + Margin;
+    var columnX = new float[ColumnCount];
+    columnX[0] = Margin;
+    for (var c = 1; c < ColumnCount; c++)
+    {
+      columnX[c] = columnX[c - 1] + columnWidths[c - 1] + ColumnSpacing;
+    }
+
+    // Second pass: actually build each category into its assigned column, tracking that column's running Y.
+    var groups = new VoteGroup[categories.Length];
+    var columnY = new float[ColumnCount];
+    for (var c = 0; c < ColumnCount; c++)
+    {
+      columnY[c] = -Margin;
+    }
+
+    for (var i = 0; i < categories.Length; i++)
+    {
+      var column = i / rowsPerColumn;
+      var group = new VoteGroup(root, groupId: i + 1, Loc.Get(categories[i].Title), categories[i].Options,
+        columnX[column], columnY[column], ButtonWidth, ButtonHeight, ButtonSpacing);
+      groups[i] = group;
+      columnY[column] -= group.Height + GroupSpacing;
+    }
+
+    var contentHeight = 0f;
+    for (var c = 0; c < ColumnCount; c++)
+    {
+      contentHeight = Math.Max(contentHeight, -columnY[c] - GroupSpacing);
+    }
+
+    root.Width = columnX[ColumnCount - 1] + columnWidths[ColumnCount - 1] + Margin;
+    root.Height = contentHeight + Margin;
 
     timer.Create().Start(voteLength, false, () =>
     {
@@ -104,7 +137,7 @@ public static class CustomOptionsSelection
       ("Flight Availability", new[]
       {
         new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
-        new VoteOption { Name = Loc.Get("Unlocked"), OnChosen = () => GrantResearchToAllPlayers(UPGRADE_R09X_FLIGHT_UNIVERSAL_UPGRADE) }
+        new VoteOption { Name = Loc.Get("Unlocked"), OnChosen = () => ResearchGranting.GrantToAllPlayers(UPGRADE_R09X_FLIGHT_UNIVERSAL_UPGRADE) }
       }),
       ("Navigation Availability", new[]
       {
@@ -113,9 +146,9 @@ public static class CustomOptionsSelection
         {
           Name = Loc.Get("Unlocked"), OnChosen = () =>
           {
-            GrantResearchToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE);
+            ResearchGranting.GrantToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE);
             // Ahn'Qiraj has no ships - Deep Burrow is its equivalent way to cross water, so it belongs here too.
-            GrantResearchToAllPlayers(UPGRADE_RDBD_DEEP_BURROW_C_THUN);
+            ResearchGranting.GrantToAllPlayers(UPGRADE_RDBD_DEEP_BURROW_C_THUN);
           }
         }
       }),
@@ -131,6 +164,11 @@ public static class CustomOptionsSelection
             RevealMapForAllPlayers();
           }
         }
+      }),
+      ("Early Game (PvE)", new[]
+      {
+        new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
+        new VoteOption { Name = Loc.Get("Skipped"), OnChosen = HardModeSetting.ApplyWithoutTechUnlocks }
       })
     };
   }
@@ -140,14 +178,6 @@ public static class CustomOptionsSelection
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
       SetPlayerHandicapReviveTime(player, handicap);
-    }
-  }
-
-  private static void GrantResearchToAllPlayers(int upgradeId)
-  {
-    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-    {
-      player.SetTechResearched(upgradeId, 1);
     }
   }
 
