@@ -73,6 +73,9 @@ public sealed class VoteGroup
     const float countGap = 0.005f;
     const float countWidth = 0.03f;
     const float countHeight = 0.02f;
+    const float descriptionGap = 0.004f;
+    const float descriptionHeight = 0.05f;
+    const float descriptionScale = 0.7f;
 
     var titleFrame = new TextFrame("ArtifactMenuTitle", parent, 0)
     {
@@ -81,12 +84,37 @@ public sealed class VoteGroup
     titleFrame.SetPoint(framepointtype.TopLeft, parent, framepointtype.TopLeft, x, y);
     parent.AddFrame(titleFrame);
 
-    var buttonY = y - titleHeight - titleGap;
+    var hasAnyDescription = false;
+    foreach (var option in options)
+    {
+      if (!string.IsNullOrEmpty(option.Description))
+      {
+        hasAnyDescription = true;
+        break;
+      }
+    }
+
+    // Order top-to-bottom: title, description, button, vote-count chip.
+    var descriptionY = y - titleHeight - titleGap;
+    var buttonY = descriptionY - (hasAnyDescription ? descriptionHeight + descriptionGap : 0);
     var countY = buttonY - buttonHeight - countGap;
     for (var i = 0; i < options.Length; i++)
     {
       var optionIndex = i;
       var buttonX = x + optionIndex * (buttonWidth + buttonSpacing);
+
+      if (hasAnyDescription)
+      {
+        var descriptionFrame = new TextFrame("ArtifactMenuTitle", parent, 0)
+        {
+          Width = buttonWidth,
+          Height = descriptionHeight,
+          Text = string.IsNullOrEmpty(options[optionIndex].Description) ? "" : $"|cffffffff{options[optionIndex].Description}|r"
+        };
+        descriptionFrame.SetPoint(framepointtype.TopLeft, parent, framepointtype.TopLeft, buttonX, descriptionY);
+        descriptionFrame.SetScale(descriptionScale);
+        parent.AddFrame(descriptionFrame);
+      }
 
       var button = new Button("ScriptDialogButton", parent, 0)
       {
@@ -122,7 +150,8 @@ public sealed class VoteGroup
       _countTexts[optionIndex] = countText;
     }
 
-    Height = titleHeight + titleGap + buttonHeight + countGap + countHeight;
+    Height = titleHeight + titleGap + (hasAnyDescription ? descriptionHeight + descriptionGap : 0) +
+             buttonHeight + countGap + countHeight;
     Width = options.Length * buttonWidth + (options.Length - 1) * buttonSpacing;
 
     RegisterSyncListener();

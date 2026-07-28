@@ -13,6 +13,12 @@ public sealed class VoteOption
   public required string Name { get; init; }
 
   /// <summary>
+  /// Optional short text shown below this option's button, describing what choosing it does. Left null for no
+  /// description.
+  /// </summary>
+  public string? Description { get; init; }
+
+  /// <summary>
   /// Total votes for this option are offset by the specified amount.
   /// <remarks>Set this to a negative value for options that should require a larger proportion of players to
   /// vote for in order to pass.</remarks>
