@@ -2,7 +2,6 @@
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
-using MacroTools.GameTime;
 using MacroTools.Save;
 using MacroTools.Sounds;
 using MacroTools.UnitNames;
@@ -30,6 +29,14 @@ public static class GameSetup
   /// </summary>
   public static void Setup()
   {
+    // Runs before everything else so the turn timer and starting resources (further down) can wait on it -
+    // see GameStartVoteSequence for why that matters.
+    GameStartVoteSequence.Setup(new IGameMode[]
+    {
+      new Standard(),
+      new GreatWar()
+    }, timeToDisplay: 0, modeVoteLength: 10, difficultyVoteLength: 10, customOptionsVoteLength: 15);
+
     W3Mmd.ForceInit();
     MmdVariables.Init();
     MmdManager.Setup();
@@ -61,16 +68,9 @@ public static class GameSetup
     BookSetup.Setup();
     HintConfig.Setup();
     QuestMenuSetup.Setup();
-    GameTimeManager.Start();
-    GameTimeDialog.Setup();
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
-    GameStartVoteSequence.Setup(new IGameMode[]
-    {
-      new Standard(),
-      new GreatWar()
-    }, timeToDisplay: 0, modeVoteLength: 10, difficultyVoteLength: 10, customOptionsVoteLength: 15);
     RockSetup.Setup();
     TurnResearchSetup.Setup();
     ShipyardBanZonesSetup.Setup();
