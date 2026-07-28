@@ -1,4 +1,5 @@
-﻿using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
+﻿using WarcraftLegacies.Source.Factions.Legion.Mechanics;
+using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 
 namespace WarcraftLegacies.Source.GameLogic;
@@ -31,6 +32,9 @@ public static class HardModeSetting
   {
     RockSystem.RemoveAll();
     ScourgeHardModeSetup.Setup();
+    // Legion must run after Scourge - Gundrak sits in the region Scourge's setup sweeps for capturable
+    // capitals, but actually belongs to Legion, so this order lets Legion's explicit award win out.
+    LegionHardModeSetup.Setup();
   }
 
   private static void GrantUniversalTechUnlocks()
