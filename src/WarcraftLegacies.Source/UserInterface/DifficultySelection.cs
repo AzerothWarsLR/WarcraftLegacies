@@ -23,8 +23,8 @@ public enum Difficulty
 /// </summary>
 public static class DifficultySelection
 {
-  private const float ButtonWidth = 0.15f;
-  private const float ButtonHeight = 0.035f;
+  private const float ButtonWidth = 0.16f;
+  private const float ButtonHeight = 0.04f;
   private const float ButtonSpacing = 0.012f;
   private const float GroupSpacing = 0.015f;
   private const float Margin = 0.03f;
@@ -66,10 +66,11 @@ public static class DifficultySelection
       }
     };
 
+    var contentY = -Margin - VotePageTitle.Height - VotePageTitle.Gap;
     var difficultyGroup = new VoteGroup(root, groupId: 0, Loc.Get("Difficulty"), difficultyOptions, Margin,
-      -Margin, ButtonWidth, ButtonHeight, ButtonSpacing);
+      contentY, ButtonWidth, ButtonHeight, ButtonSpacing);
 
-    var diplomacyY = -Margin - difficultyGroup.Height - GroupSpacing;
+    var diplomacyY = contentY - difficultyGroup.Height - GroupSpacing;
     VoteGroup? diplomacyGroup = null;
     float diplomacySectionHeight;
     float diplomacySectionWidth;
@@ -78,9 +79,13 @@ public static class DifficultySelection
     {
       var label = new TextFrame("ArtifactMenuTitle", root, 0)
       {
+        Width = difficultyGroup.Width,
+        Height = LabelHeight,
         Text = Loc.Format("{category}: {value}", ("{category}", Loc.Get("Diplomacy")), ("{value}", Loc.Get("Open")))
       };
-      label.SetPoint(framepointtype.TopLeft, root, framepointtype.TopLeft, Margin, diplomacyY);
+      label.SetPoint(framepointtype.Center, root, framepointtype.TopLeft,
+        Margin + difficultyGroup.Width / 2, diplomacyY - LabelHeight / 2);
+      label.CenterText();
       root.AddFrame(label);
 
       diplomacySectionHeight = LabelHeight;
@@ -94,16 +99,29 @@ public static class DifficultySelection
         new VoteOption { Name = Loc.Get("Closed"), OnChosen = SetupClosedDiplomacy }
       };
 
-      diplomacyGroup = new VoteGroup(root, groupId: 1, Loc.Get("Diplomacy"), diplomacyOptions, Margin, diplomacyY,
-        ButtonWidth, ButtonHeight, ButtonSpacing);
+      // Diplomacy has fewer options than Difficulty, so it's narrower - centered under Difficulty's row rather
+      // than sharing its left edge, or it'd hug the left side of the panel instead of looking like part of the
+      // same centered layout.
+      var diplomacyWidth = diplomacyOptions.Length * ButtonWidth + (diplomacyOptions.Length - 1) * ButtonSpacing;
+      var diplomacyX = Margin + (difficultyGroup.Width - diplomacyWidth) / 2;
+
+      diplomacyGroup = new VoteGroup(root, groupId: 1, Loc.Get("Diplomacy"), diplomacyOptions, diplomacyX,
+        diplomacyY, ButtonWidth, ButtonHeight, ButtonSpacing);
       diplomacySectionHeight = diplomacyGroup.Height;
       diplomacySectionWidth = diplomacyGroup.Width;
     }
 
     root.Width = Math.Max(difficultyGroup.Width, diplomacySectionWidth) + Margin * 2;
-    root.Height = difficultyGroup.Height + GroupSpacing + diplomacySectionHeight + Margin * 2;
+    root.Height = VotePageTitle.Height + VotePageTitle.Gap + difficultyGroup.Height + GroupSpacing +
+                  diplomacySectionHeight + Margin * 2;
 
-    timer.Create().Start(voteLength, false, () =>
+    VotePageTitle.Add(root, Loc.Get("Difficulty & Diplomacy"), root.Width, Margin);
+
+    var groups = forceOpenDiplomacy
+      ? new[] { difficultyGroup }
+      : new[] { difficultyGroup, diplomacyGroup! };
+
+    VotePageTimer.Start(voteLength, groups, () =>
     {
       difficultyGroup.Conclude();
 

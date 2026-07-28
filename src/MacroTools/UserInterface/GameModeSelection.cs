@@ -13,8 +13,8 @@ namespace MacroTools.UserInterface;
 /// </summary>
 public static class GameModeSelection
 {
-  private const float ButtonWidth = 0.15f;
-  private const float ButtonHeight = 0.05f;
+  private const float ButtonWidth = 0.17f;
+  private const float ButtonHeight = 0.055f;
   private const float ButtonSpacing = 0.02f;
   private const float Margin = 0.03f;
 
@@ -37,7 +37,7 @@ public static class GameModeSelection
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
     root.SetAbsPoint(framepointtype.Center, 0.4f, 0.35f);
 
-    var voteGroup = new VoteGroup(root, groupId: 0, Loc.Get("Vote Game Mode"), options, Margin, -Margin,
+    var voteGroup = new VoteGroup(root, groupId: 0, Loc.Get("Game Mode"), options, Margin, -Margin,
       ButtonWidth, ButtonHeight, ButtonSpacing);
 
     // Sized from the group's own content rather than a hardcoded guess, so the panel can never end up
@@ -45,7 +45,7 @@ public static class GameModeSelection
     root.Width = voteGroup.Width + Margin * 2;
     root.Height = voteGroup.Height + Margin * 2;
 
-    timer.Create().Start(voteLength, false, () =>
+    VotePageTimer.Start(voteLength, new[] { voteGroup }, () =>
     {
       voteGroup.Conclude();
 

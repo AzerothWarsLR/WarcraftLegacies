@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.Localization;
@@ -16,10 +17,10 @@ namespace WarcraftLegacies.Source.UserInterface;
 /// </summary>
 public static class CustomOptionsSelection
 {
-  private const float ButtonWidth = 0.08f;
-  private const float ButtonHeight = 0.035f;
+  private const float ButtonWidth = 0.095f;
+  private const float ButtonHeight = 0.036f;
   private const float ButtonSpacing = 0.012f;
-  private const float GroupSpacing = 0.015f;
+  private const float GroupSpacing = 0.008f;
   private const float Margin = 0.03f;
   private const int ColumnCount = 2;
   private const float ColumnSpacing = 0.05f;
@@ -37,11 +38,21 @@ public static class CustomOptionsSelection
   /// </summary>
   public static void Setup(float voteLength, Action onConcluded)
   {
-    var categories = BuildCategories();
+    // Widest categories first, so columns end up uniformly-wide instead of a mix - otherwise a narrower
+    // category sharing a column with wider ones looks squeezed in next to them rather than deliberately
+    // grouped. Partitioned via Where+Concat rather than OrderBy: LINQ's OrderBy is normally stable, but that
+    // guarantee doesn't carry over once this transpiles to Lua, so a same-width group could silently end up in
+    // a different order than declared - filtering preserves each partition's original order regardless.
+    var builtCategories = BuildCategories();
+    var categories = builtCategories.Where(category => category.Options.Length >= 3)
+      .Concat(builtCategories.Where(category => category.Options.Length < 3))
+      .ToArray();
     var rowsPerColumn = (categories.Length + ColumnCount - 1) / ColumnCount;
 
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
     root.SetAbsPoint(framepointtype.Center, 0.4f, 0.35f);
+
+    var contentTopY = -Margin - VotePageTitle.Height - VotePageTitle.Gap;
 
     // First pass: figure out how wide each column needs to be, from the widest category assigned to it.
     var columnWidths = new float[ColumnCount];
@@ -65,14 +76,22 @@ public static class CustomOptionsSelection
     var columnY = new float[ColumnCount];
     for (var c = 0; c < ColumnCount; c++)
     {
-      columnY[c] = -Margin;
+      columnY[c] = contentTopY;
     }
 
     for (var i = 0; i < categories.Length; i++)
     {
       var column = i / rowsPerColumn;
+
+      // A category with fewer options than the widest one in its column would otherwise render narrower than
+      // its column-mates and end up hugging the column's left edge instead of sharing their center - so it's
+      // nudged right by however much narrower it is than the column itself.
+      var optionCount = categories[i].Options.Length;
+      var categoryWidth = optionCount * ButtonWidth + (optionCount - 1) * ButtonSpacing;
+      var groupX = columnX[column] + (columnWidths[column] - categoryWidth) / 2;
+
       var group = new VoteGroup(root, groupId: i + 1, Loc.Get(categories[i].Title), categories[i].Options,
-        columnX[column], columnY[column], ButtonWidth, ButtonHeight, ButtonSpacing);
+        groupX, columnY[column], ButtonWidth, ButtonHeight, ButtonSpacing);
       groups[i] = group;
       columnY[column] -= group.Height + GroupSpacing;
     }
@@ -86,7 +105,9 @@ public static class CustomOptionsSelection
     root.Width = columnX[ColumnCount - 1] + columnWidths[ColumnCount - 1] + Margin;
     root.Height = contentHeight + Margin;
 
-    timer.Create().Start(voteLength, false, () =>
+    VotePageTitle.Add(root, Loc.Get("Custom Options"), root.Width, Margin);
+
+    VotePageTimer.Start(voteLength, groups, () =>
     {
       for (var i = 0; i < groups.Length; i++)
       {
