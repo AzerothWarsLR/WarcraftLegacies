@@ -1112,6 +1112,7 @@ public static class Units
   public const int UNIT_NGH1_GHOST = 1852270641;
   public const int UNIT_NGH2_WRAITH = 1852270642;
   public const int UNIT_NGLM_GOBLIN_LAND_MINE = 1852271725;
+  public const int UNIT_NGM2_GOBLIN_MERCHANT = 1852271922;
   public const int UNIT_NGME_GOBLIN_MERCHANT = 1852271973;
   public const int UNIT_NGNA_GNOLL_POACHER = 1852272225;
   public const int UNIT_NGNB_GNOLL_BRUTE = 1852272226;

@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aall,Apit"
+      "Value": "Aall,Apit,Aneu,Asid"
     },
     {
       "Id": "ubld",
@@ -69,7 +69,7 @@
     {
       "Id": "umki",
       "Type": 3,
-      "Value": "sreg,phea,pman,stwp,hslv,oven,evtl,pams"
+      "Value": "sreg,phea,pman,hslv,oven,evtl,pams"
     },
     {
       "Id": "uico",

@@ -36,6 +36,7 @@ public static class GameSetup
     MmdEvents.SubscribeToPlayerRegistration();
     FactionManager.Setup();
     UnitTypeSetup.Setup();
+    TeleportScrollSetting.Setup();
     SaveManager.Initialize();
     DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);

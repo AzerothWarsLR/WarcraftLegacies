@@ -93,6 +93,11 @@ public static class CustomOptionsSelection
         new VoteOption { Name = Loc.Get("Fast"), OnChosen = () => SetAllPlayersReviveHandicap(0.75f) },
         new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => SetAllPlayersReviveHandicap(1f) },
         new VoteOption { Name = Loc.Get("Slow"), OnChosen = () => SetAllPlayersReviveHandicap(1.25f) }
+      }),
+      ("Teleport Scroll Options", new[]
+      {
+        new VoteOption { Name = Loc.Get("Normal"), OnChosen = TeleportScrollSetting.SeedNormalScrolls },
+        new VoteOption { Name = Loc.Get("Global"), OnChosen = TeleportScrollSetting.EnableGlobalScrolls }
       })
     };
   }
