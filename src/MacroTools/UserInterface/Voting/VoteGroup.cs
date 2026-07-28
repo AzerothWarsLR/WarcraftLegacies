@@ -51,6 +51,24 @@ public sealed class VoteGroup
   public VoteOption? Winner { get; private set; }
 
   /// <summary>
+  /// Whether every currently active player has already cast a vote in this group - lets a vote page (see
+  /// <see cref="VotePageTimer"/>) conclude the moment everyone's done instead of always waiting out its full
+  /// timer.
+  /// </summary>
+  public bool AllPlayersVoted()
+  {
+    foreach (var activePlayer in WCSharp.Shared.Util.EnumeratePlayers())
+    {
+      if (_votesByPlayerSlot[GetPlayerId(activePlayer)] < 0)
+      {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  /// <summary>
   /// Builds the group's title, option buttons, and vote-count labels as children of <paramref name="parent"/>,
   /// anchored at (<paramref name="x"/>, <paramref name="y"/>) from its top-left corner, and starts listening
   /// for votes. The group is visible whenever <paramref name="parent"/> is visible.
@@ -69,19 +87,24 @@ public sealed class VoteGroup
     _countTexts = new TextFrame[options.Length];
 
     const float titleHeight = 0.025f;
-    const float titleGap = 0.01f;
-    const float countGap = 0.005f;
-    const float countWidth = 0.03f;
-    const float countHeight = 0.02f;
-    const float descriptionGap = 0.004f;
-    const float descriptionHeight = 0.05f;
+    const float titleGap = 0.008f;
+    const float countGap = 0.004f;
+    const float countWidth = 0.045f;
+    const float countHeight = 0.024f;
+    const float descriptionGap = 0.008f;
+    const float descriptionHeight = 0.09f;
     const float descriptionScale = 0.7f;
+
+    var groupWidth = options.Length * buttonWidth + (options.Length - 1) * buttonSpacing;
 
     var titleFrame = new TextFrame("ArtifactMenuTitle", parent, 0)
     {
+      Width = groupWidth,
+      Height = titleHeight,
       Text = title
     };
-    titleFrame.SetPoint(framepointtype.TopLeft, parent, framepointtype.TopLeft, x, y);
+    titleFrame.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft, x + groupWidth / 2, y - titleHeight / 2);
+    titleFrame.CenterText();
     parent.AddFrame(titleFrame);
 
     var hasAnyDescription = false;
@@ -94,14 +117,15 @@ public sealed class VoteGroup
       }
     }
 
-    // Order top-to-bottom: title, description, button, vote-count chip.
-    var descriptionY = y - titleHeight - titleGap;
-    var buttonY = descriptionY - (hasAnyDescription ? descriptionHeight + descriptionGap : 0);
-    var countY = buttonY - buttonHeight - countGap;
+    // Order top-to-bottom: title, description, button, vote-count chip. Every element in a column is anchored
+    // by its own Center to the same optionCenterX, rather than by TopLeft to a shared left edge.
+    var descriptionCenterY = y - titleHeight - titleGap - descriptionHeight / 2;
+    var buttonCenterY = y - titleHeight - titleGap - (hasAnyDescription ? descriptionHeight + descriptionGap : 0) - buttonHeight / 2;
+    var countCenterY = buttonCenterY - buttonHeight / 2 - countGap - countHeight / 2;
     for (var i = 0; i < options.Length; i++)
     {
       var optionIndex = i;
-      var buttonX = x + optionIndex * (buttonWidth + buttonSpacing);
+      var optionCenterX = x + optionIndex * (buttonWidth + buttonSpacing) + buttonWidth / 2;
 
       if (hasAnyDescription)
       {
@@ -111,8 +135,15 @@ public sealed class VoteGroup
           Height = descriptionHeight,
           Text = string.IsNullOrEmpty(options[optionIndex].Description) ? "" : $"|cffffffff{options[optionIndex].Description}|r"
         };
-        descriptionFrame.SetPoint(framepointtype.TopLeft, parent, framepointtype.TopLeft, buttonX, descriptionY);
+        // BlzFrameSetScale doesn't just shrink the frame's own size - it also scales the (offsetX, offsetY)
+        // SetPoint was given, as if that offset were measured from the parent's own origin and then multiplied
+        // by scale. That's why the drift got worse for columns further from the panel's left edge (a bigger
+        // offset means a bigger chunk gets scaled away) and why it crept up into the title above it (Y offset
+        // scaled the same way). Dividing the intended offset by scale up front cancels that out.
+        descriptionFrame.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft,
+          optionCenterX / descriptionScale, descriptionCenterY / descriptionScale);
         descriptionFrame.SetScale(descriptionScale);
+        descriptionFrame.CenterText();
         parent.AddFrame(descriptionFrame);
       }
 
@@ -123,19 +154,18 @@ public sealed class VoteGroup
         Text = options[optionIndex].Name,
         OnClick = triggerPlayer => OnButtonClicked(triggerPlayer, optionIndex)
       };
-      button.SetPoint(framepointtype.TopLeft, parent, framepointtype.TopLeft, buttonX, buttonY);
+      button.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft, optionCenterX, buttonCenterY);
       parent.AddFrame(button);
 
       // A plain framehandle keeps its own border/backdrop from the "ScriptDialogButton" template (same as the
       // vote buttons above), so the count reads as a small counter chip rather than floating bare text. It's
       // deliberately much narrower than the button and centered under it, rather than matching its full width.
-      var countX = buttonX + (buttonWidth - countWidth) / 2;
       var countFrame = new Frame("ScriptDialogButton", parent, 0)
       {
         Width = countWidth,
         Height = countHeight
       };
-      countFrame.SetPoint(framepointtype.TopLeft, parent, framepointtype.TopLeft, countX, countY);
+      countFrame.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft, optionCenterX, countCenterY);
       parent.AddFrame(countFrame);
 
       var countText = new TextFrame("ArtifactMenuTitle", countFrame, 0)
@@ -152,7 +182,7 @@ public sealed class VoteGroup
 
     Height = titleHeight + titleGap + (hasAnyDescription ? descriptionHeight + descriptionGap : 0) +
              buttonHeight + countGap + countHeight;
-    Width = options.Length * buttonWidth + (options.Length - 1) * buttonSpacing;
+    Width = groupWidth;
 
     RegisterSyncListener();
   }
