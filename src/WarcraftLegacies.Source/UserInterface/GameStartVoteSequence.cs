@@ -13,10 +13,11 @@ namespace WarcraftLegacies.Source.UserInterface;
 
 /// <summary>
 /// Orchestrates the game-start vote sequence: the game mode vote, then the Custom Options vote, pausing every
-/// unit in the world for the duration of both so nobody can start playing before they're settled. The turn
-/// timer doesn't start counting, and starting resources aren't handed out, until all of this has concluded -
-/// see <see cref="FinishGameStart"/> - so difficulty settings decided here (e.g. Hard mode) can still affect
-/// them instead of racing against an already-ticking clock.
+/// unit in the world - including any created mid-sequence, e.g. heroes preplaced by Hard mode - all the way
+/// until turn 1 actually begins, not just until voting concludes. The turn timer doesn't start counting, and
+/// starting resources aren't handed out, until voting concludes either - see <see cref="FinishGameStart"/> - so
+/// difficulty settings decided here (e.g. Hard mode) can still affect them instead of racing against an
+/// already-ticking clock.
 /// </summary>
 public static class GameStartVoteSequence
 {
@@ -58,15 +59,30 @@ public static class GameStartVoteSequence
 
   /// <summary>
   /// Everything that used to happen unconditionally at map init, now deferred until the vote sequence is
-  /// actually done: hands out every faction's (possibly difficulty-adjusted) starting resources, starts the
-  /// turn timer, and unpauses the world.
+  /// actually done: hands out every faction's (possibly difficulty-adjusted) starting resources and starts the
+  /// turn timer. The world itself stays paused a little longer still, until turn 1 actually begins (see
+  /// <see cref="UnpauseAllUnits"/>) rather than unpausing the instant voting ends, so anything Hard mode just
+  /// preplaced doesn't end up effectively never paused (created and immediately unpaused in the same instant).
   /// </summary>
   private static void FinishGameStart()
   {
     FactionStartingResources.GrantPending();
     GameTimeManager.Start();
     GameTimeDialog.Setup();
-    UnpauseAllUnits();
+    GameTimeManager.RegisterOnTurn(1, UnpauseAllUnits);
+    DisplayIntroText.SetupWelcomeMessage(24);
+    DisplayIntroText.SetupFactionIntroText(3);
+  }
+
+  /// <summary>
+  /// Pauses <paramref name="whichUnit"/> and keeps it paused until the vote sequence concludes, same as every
+  /// unit that already existed when it started - for units created afterwards but still during the vote (e.g.
+  /// heroes preplaced by Hard mode), which <see cref="PauseAllUnits"/> couldn't have caught.
+  /// </summary>
+  public static void PauseUnit(unit whichUnit)
+  {
+    whichUnit.SetPausedEx(true);
+    _pausedUnits.Add(whichUnit);
   }
 
   private static void PauseAllUnits()

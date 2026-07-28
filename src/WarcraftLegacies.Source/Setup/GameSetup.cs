@@ -35,7 +35,7 @@ public static class GameSetup
     {
       new Standard(),
       new GreatWar()
-    }, timeToDisplay: 0, modeVoteLength: 10, difficultyVoteLength: 10, customOptionsVoteLength: 15);
+    }, timeToDisplay: 0, modeVoteLength: 15, difficultyVoteLength: 15, customOptionsVoteLength: 20);
 
     W3Mmd.ForceInit();
     MmdVariables.Init();
@@ -45,7 +45,6 @@ public static class GameSetup
     UnitTypeSetup.Setup();
     TeleportScrollSetting.Setup();
     SaveManager.Initialize();
-    DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
     SetupControlPointDefenderManager();

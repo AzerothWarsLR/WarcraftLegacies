@@ -8,6 +8,7 @@ using WarcraftLegacies.Source.Factions.Scourge.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.UserInterface;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Mechanics;
@@ -91,7 +92,8 @@ public static class ScourgeHardModeSetup
     // which won't be true here - so that part is replicated manually instead of relying on it. Dispose(),
     // not Kill(), so no on-death effects (summons, reincarnation, etc.) trigger.
     AllPreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP).Dispose();
-    unit.Create(owner, UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI, -2600, 18800, 300);
+    var sapphiron = unit.Create(owner, UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI, -2600, 18800, 300);
+    GameStartVoteSequence.PauseUnit(sapphiron);
     ForceComplete(scourge.GetQuestByType<QuestSapphiron>());
   }
 
@@ -142,5 +144,9 @@ public static class ScourgeHardModeSetup
   {
     hero.ForceCreate(owner, position, 270);
     hero.Unit?.SetExperience(HeroLevelExperience.ForLevel(level), true);
+    if (hero.Unit != null)
+    {
+      GameStartVoteSequence.PauseUnit(hero.Unit);
+    }
   }
 }
