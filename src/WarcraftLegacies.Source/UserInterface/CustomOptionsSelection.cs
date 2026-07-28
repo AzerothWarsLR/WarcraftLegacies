@@ -98,6 +98,16 @@ public static class CustomOptionsSelection
       {
         new VoteOption { Name = Loc.Get("Normal"), OnChosen = TeleportScrollSetting.SeedNormalScrolls },
         new VoteOption { Name = Loc.Get("Global"), OnChosen = TeleportScrollSetting.EnableGlobalScrolls }
+      }),
+      ("Flight Availability", new[]
+      {
+        new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
+        new VoteOption { Name = Loc.Get("Unlocked"), OnChosen = () => GrantResearchToAllPlayers(UPGRADE_R09X_FLIGHT_UNIVERSAL_UPGRADE) }
+      }),
+      ("Navigation Availability", new[]
+      {
+        new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
+        new VoteOption { Name = Loc.Get("Unlocked"), OnChosen = () => GrantResearchToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE) }
       })
     };
   }
@@ -107,6 +117,14 @@ public static class CustomOptionsSelection
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
       SetPlayerHandicapReviveTime(player, handicap);
+    }
+  }
+
+  private static void GrantResearchToAllPlayers(int upgradeId)
+  {
+    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+    {
+      player.SetTechResearched(upgradeId, 1);
     }
   }
 }
