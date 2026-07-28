@@ -37,6 +37,15 @@ public static class ScourgeHardModeSetup
 
     var owner = scourge.Player;
 
+    // Scourge normally earns a lot of its early gold from creeps it now no longer has to fight through, so
+    // compress its starting income window to compensate - delivered over 5 turns instead of the usual 10. This
+    // only works because the actual grant is deferred until after the vote sequence concludes - see
+    // FactionStartingResources.GrantPending.
+    if (scourge.StartingGold != null)
+    {
+      scourge.StartingGold.Turns = 5;
+    }
+
     CompleteCultOfTheDamned(scourge, owner);
     CompleteDrakUnlock(scourge, owner);
     CompleteEnKilahUnlock(scourge, owner);
