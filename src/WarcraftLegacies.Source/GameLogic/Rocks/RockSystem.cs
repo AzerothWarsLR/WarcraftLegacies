@@ -37,4 +37,16 @@ public static class RockSystem
       _rockGroups.Remove(rockGroup); // Remove it from the system
     }
   }
+
+  /// <summary>
+  /// Manually removes and destroys every currently registered <see cref="RockGroup"/> - used by Hard mode to
+  /// clear every path-blocking rock on the map at once.
+  /// </summary>
+  public static void RemoveAll()
+  {
+    foreach (var rockGroup in _rockGroups.ToArray())
+    {
+      Remove(rockGroup);
+    }
+  }
 }

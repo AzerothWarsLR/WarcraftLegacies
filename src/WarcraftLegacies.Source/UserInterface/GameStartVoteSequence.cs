@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.GameModes;
 using MacroTools.UserInterface;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.GameLogic;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
@@ -30,9 +31,14 @@ public static class GameStartVoteSequence
 
       GameModeSelection.Setup(gameModes, modeVoteLength, winningMode =>
       {
-        DifficultySelection.Setup(difficultyVoteLength, winningMode.ForcesOpenDiplomacy, customChosen =>
+        DifficultySelection.Setup(difficultyVoteLength, winningMode.ForcesOpenDiplomacy, difficulty =>
         {
-          if (customChosen)
+          if (difficulty == Difficulty.Hard)
+          {
+            HardModeSetting.Apply();
+          }
+
+          if (difficulty == Difficulty.Custom)
           {
             CustomOptionsSelection.Setup(customOptionsVoteLength, UnpauseAllUnits);
           }

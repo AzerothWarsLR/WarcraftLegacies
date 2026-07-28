@@ -8,12 +8,22 @@ using WarcraftLegacies.Source.Commands;
 namespace WarcraftLegacies.Source.UserInterface;
 
 /// <summary>
+/// The winner of the Difficulty vote in <see cref="DifficultySelection"/>.
+/// </summary>
+public enum Difficulty
+{
+  Normal,
+  Hard,
+  Custom
+}
+
+/// <summary>
 /// Shown right after the game mode is chosen: lets players vote for a difficulty (Normal/Hard/Custom) and, if
 /// the winning mode doesn't require it, separately for diplomacy rules (Open/Closed).
 /// </summary>
 public static class DifficultySelection
 {
-  private const float ButtonWidth = 0.08f;
+  private const float ButtonWidth = 0.15f;
   private const float ButtonHeight = 0.035f;
   private const float ButtonSpacing = 0.012f;
   private const float GroupSpacing = 0.015f;
@@ -25,20 +35,35 @@ public static class DifficultySelection
   /// vote. If <paramref name="forceOpenDiplomacy"/> is true (the winning game mode assigns fixed teams itself,
   /// making a Closed vote meaningless - see <see cref="MacroTools.GameModes.IGameMode.ForcesOpenDiplomacy"/>),
   /// Diplomacy is shown as a plain "Open" label instead of a vote. Calls <paramref name="onConcluded"/> once
-  /// concluded, passing whether "Custom" won the difficulty vote - the caller decides what that means (e.g.
-  /// whether to show the Custom Options page next).
+  /// concluded, passing which <see cref="Difficulty"/> won - the caller decides what that means (e.g. whether
+  /// to show the Custom Options page next, or apply Hard mode's effects).
   /// </summary>
-  public static void Setup(float voteLength, bool forceOpenDiplomacy, Action<bool> onConcluded)
+  public static void Setup(float voteLength, bool forceOpenDiplomacy, Action<Difficulty> onConcluded)
   {
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
     root.SetAbsPoint(framepointtype.Center, 0.4f, 0.35f);
 
-    var customChosen = false;
+    var difficulty = Difficulty.Normal;
     var difficultyOptions = new[]
     {
-      new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
-      new VoteOption { Name = Loc.Get("Hard"), OnChosen = () => { } },
-      new VoteOption { Name = Loc.Get("Custom"), OnChosen = () => customChosen = true }
+      new VoteOption
+      {
+        Name = Loc.Get("Normal"),
+        Description = Loc.Get("The standard experience - build your faction from the ground up."),
+        OnChosen = () => difficulty = Difficulty.Normal
+      },
+      new VoteOption
+      {
+        Name = Loc.Get("Hard"),
+        Description = Loc.Get("Skip the early game - Capitals and most heroes are unlocked from the start, with some early quests already completed."),
+        OnChosen = () => difficulty = Difficulty.Hard
+      },
+      new VoteOption
+      {
+        Name = Loc.Get("Custom"),
+        Description = Loc.Get("Choose your own settings to customise the game."),
+        OnChosen = () => difficulty = Difficulty.Custom
+      }
     };
 
     var difficultyGroup = new VoteGroup(root, groupId: 0, Loc.Get("Difficulty"), difficultyOptions, Margin,
@@ -100,7 +125,7 @@ public static class DifficultySelection
       }
 
       root.Visible = false;
-      onConcluded(customChosen);
+      onConcluded(difficulty);
     });
   }
 
