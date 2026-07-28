@@ -11,7 +11,9 @@ public sealed class QuestSharedVision : QuestData
     "Beyond our local conflicts lies a larger war for the fate of Azeroth itself. It will reach us eventually, whether we wish it or not.",
     @"ReplaceableTextures\CommandButtons\BTNFarSight.blp")
   {
-    AddObjective(new ObjectiveTurn(14));
+    // Redundant if the "Fog of War" Custom Option already forced shared vision on - skip it rather than
+    // showing a completion popup for something that already happened at game start.
+    AddObjective(new ObjectiveTurn(14, () => FactionManager.SharedVisionMode != TeamSharedVisionMode.All));
     IsFactionQuest = false;
   }
 

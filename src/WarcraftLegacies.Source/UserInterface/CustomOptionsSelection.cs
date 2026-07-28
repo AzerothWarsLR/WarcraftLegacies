@@ -1,9 +1,11 @@
 ﻿using System;
 using MacroTools.ControlPoints;
+using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.UserInterface.Frames;
 using MacroTools.UserInterface.Voting;
 using WarcraftLegacies.Source.GameLogic;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.UserInterface;
 
@@ -107,7 +109,28 @@ public static class CustomOptionsSelection
       ("Navigation Availability", new[]
       {
         new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
-        new VoteOption { Name = Loc.Get("Unlocked"), OnChosen = () => GrantResearchToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE) }
+        new VoteOption
+        {
+          Name = Loc.Get("Unlocked"), OnChosen = () =>
+          {
+            GrantResearchToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE);
+            // Ahn'Qiraj has no ships - Deep Burrow is its equivalent way to cross water, so it belongs here too.
+            GrantResearchToAllPlayers(UPGRADE_RDBD_DEEP_BURROW_C_THUN);
+          }
+        }
+      }),
+      ("Fog of War", new[]
+      {
+        new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
+        new VoteOption { Name = Loc.Get("All Allies"), OnChosen = () => FactionManager.SharedVisionMode = TeamSharedVisionMode.All },
+        new VoteOption
+        {
+          Name = Loc.Get("Everything"), OnChosen = () =>
+          {
+            FactionManager.SharedVisionMode = TeamSharedVisionMode.All;
+            RevealMapForAllPlayers();
+          }
+        }
       })
     };
   }
@@ -125,6 +148,14 @@ public static class CustomOptionsSelection
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
       player.SetTechResearched(upgradeId, 1);
+    }
+  }
+
+  private static void RevealMapForAllPlayers()
+  {
+    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+    {
+      Rectangle.WorldBounds.Rect.AddFogModifier(player, fogstate.Visible, false, false).Start();
     }
   }
 }
