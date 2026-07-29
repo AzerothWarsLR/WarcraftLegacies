@@ -1,4 +1,5 @@
-﻿using WarcraftLegacies.Source.Factions.Legion.Mechanics;
+﻿using WarcraftLegacies.Source.Factions.Dalaran.Mechanics;
+using WarcraftLegacies.Source.Factions.Legion.Mechanics;
 using WarcraftLegacies.Source.Factions.Lordaeron.Mechanics;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 using WarcraftLegacies.Source.GameLogic.Rocks;
@@ -37,6 +38,7 @@ public static class HardModeSetting
     // capitals, but actually belongs to Legion, so this order lets Legion's explicit award win out.
     LegionHardModeSetup.Setup();
     LordaeronHardModeSetup.Setup();
+    DalaranHardModeSetup.Setup();
   }
 
   private static void GrantUniversalTechUnlocks()
