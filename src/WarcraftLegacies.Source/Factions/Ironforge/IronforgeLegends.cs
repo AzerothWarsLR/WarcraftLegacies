@@ -8,6 +8,7 @@ public sealed class IronforgeLegends
   public LegendaryHero Dagran { get; }
   public LegendaryHero Falstad { get; }
   public LegendaryHero Magni { get; }
+  public LegendaryHero Muradin { get; }
   public Capital GreatForge { get; }
   public Capital Thelsamar { get; }
   public Capital MenethilHarbor { get; }
@@ -31,6 +32,12 @@ public sealed class IronforgeLegends
       UnitType = UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE,
       DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
       StartingXp = 1000
+    };
+
+    Muradin = new LegendaryHero("Muradin Bronzebeard")
+    {
+      UnitType = UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE,
+      StartingXp = 2800
     };
 
     GreatForge = new Capital
@@ -58,6 +65,7 @@ public sealed class IronforgeLegends
     LegendaryHeroManager.Register(Dagran);
     LegendaryHeroManager.Register(Falstad);
     LegendaryHeroManager.Register(Magni);
+    LegendaryHeroManager.Register(Muradin);
     CapitalManager.Register(GreatForge);
     CapitalManager.Register(Thelsamar);
     CapitalManager.Register(MenethilHarbor);
