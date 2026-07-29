@@ -1,4 +1,5 @@
 ﻿using MacroTools.ControlPoints;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgets;
@@ -54,6 +55,7 @@ public static class ScourgeHardModeSetup
     CompleteSapphiron(scourge, owner);
     AwardRemainingNorthrendControlPoints(owner);
     ClearNeutralHostileCreeps(Regions.Northrend_Ambiance, owner);
+    UpgradeStartingTownHall(owner);
   }
 
   private static void CompleteCultOfTheDamned(Faction scourge, player owner)
@@ -129,6 +131,19 @@ public static class ScourgeHardModeSetup
       // Dispose(), not Kill(), so on-death effects (summons, reincarnation, etc.) don't leave anything behind.
       creep.Dispose();
     }
+  }
+
+  // Most quests gate their rewards behind a Tier 3 town hall, which the player would already have built by
+  // this point in a normal game - so Hard mode has to grant it directly, since force-completing quests
+  // doesn't retroactively upgrade buildings.
+  private static void UpgradeStartingTownHall(player owner)
+  {
+    var townHall = AllPreplacedWidgets.Units.GetClosest(UNIT_UNPL_NECROPOLIS_SCOURGE_T1, -2156.9f, 22375f);
+    var position = townHall.GetPosition();
+    var facing = townHall.Facing;
+    townHall.Dispose();
+    var necropolis = unit.Create(owner, UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, position.X, position.Y, facing);
+    GameStartVoteSequence.PauseUnit(necropolis);
   }
 
   private static void ForceComplete(QuestData quest)

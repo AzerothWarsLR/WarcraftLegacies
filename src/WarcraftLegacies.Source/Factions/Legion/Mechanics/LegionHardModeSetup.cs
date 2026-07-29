@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
@@ -59,6 +60,7 @@ public static class LegionHardModeSetup
     AllLegends.Neutral.Gundrak.Unit.SetOwner(owner);
 
     ClearNeutralHostileCreeps(Regions.MonolithNoBuild, owner);
+    UpgradeStartingTownHall(owner);
 
     var krokuunPosition = ControlPointManager.Instance.GetFromUnitType(UNIT_N0BG_KROKUUN).Unit.GetPosition();
     PlaceHeroAtLevel(AllLegends.Legion.Malganis, owner,
@@ -92,6 +94,19 @@ public static class LegionHardModeSetup
       // Dispose(), not Kill(), so on-death effects (summons, reincarnation, etc.) don't leave anything behind.
       creep.Dispose();
     }
+  }
+
+  // Most quests gate their rewards behind a Tier 3 town hall, which the player would already have built by
+  // this point in a normal game - so Hard mode has to grant it directly, since force-completing quests
+  // doesn't retroactively upgrade buildings.
+  private static void UpgradeStartingTownHall(player owner)
+  {
+    var townHall = AllPreplacedWidgets.Units.GetClosest(UNIT_U00F_DORMANT_SPIRE_LEGION_T1, 18825.9f, -31054.4f);
+    var position = townHall.GetPosition();
+    var facing = townHall.Facing;
+    townHall.Dispose();
+    var citadel = unit.Create(owner, UNIT_U00N_BURNING_CITADEL_LEGION_T3, position.X, position.Y, facing);
+    GameStartVoteSequence.PauseUnit(citadel);
   }
 
   private static void ForceComplete(QuestData quest)
