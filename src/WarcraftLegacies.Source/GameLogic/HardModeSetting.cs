@@ -4,6 +4,7 @@ using WarcraftLegacies.Source.Factions.Legion.Mechanics;
 using WarcraftLegacies.Source.Factions.Lordaeron.Mechanics;
 using WarcraftLegacies.Source.Factions.Quelthalas.Mechanics;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
+using WarcraftLegacies.Source.Factions.Stormwind.Mechanics;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 
 namespace WarcraftLegacies.Source.GameLogic;
@@ -43,6 +44,7 @@ public static class HardModeSetting
     DalaranHardModeSetup.Setup();
     QuelthalasHardModeSetup.Setup();
     IronforgeHardModeSetup.Setup();
+    StormwindHardModeSetup.Setup();
   }
 
   private static void GrantUniversalTechUnlocks()
