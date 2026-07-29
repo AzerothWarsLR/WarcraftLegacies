@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPoints;
+﻿using System.Collections.Generic;
+using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Legends;
@@ -9,6 +10,9 @@ namespace WarcraftLegacies.Source.GameLogic.Mmd;
 
 public static class MmdEvents
 {
+  private static readonly Dictionary<player, int> _lastGold = new();
+  private static readonly Dictionary<player, int> _trackedGoldSpent = new();
+
   public static void SubscribeToPlayerRegistration()
   {
     MmdManager.PlayerRegistered += RegisterPlayerEvents;
@@ -19,6 +23,8 @@ public static class MmdEvents
     SetupControlPointEvents();
     SetupCapitalEvents();
     SetupHeroReviveEvents();
+    SetupGoldTracking();
+    SetupTurnsSurvivedTracking();
   }
 
   private static bool IsMmdPlayer(player p)
@@ -35,6 +41,11 @@ public static class MmdEvents
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnHeroDeath, p.Id);
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.FactionUnitKills, OnUnitKill, faction.Id);
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, p.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerStartsTraining, OnPlayerStartsTraining, p.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerStartsConstruction, OnPlayerStartsConstruction, p.Id);
+
+    _lastGold[p] = p.GetState(playerstate.ResourceGold);
+    _trackedGoldSpent[p] = 0;
   }
 
   private static void OnHeroTrained()
@@ -149,6 +160,13 @@ public static class MmdEvents
     }
 
     stats.UnitsKilled += 1;
+
+    var victimHero = LegendaryHeroManager.GetFromUnit(victim);
+    if (victimHero != null)
+    {
+      stats.HeroKills += 1;
+      MmdVariables.HeroKillEvent.Emit(killer.Owner.Name, victimHero.Name);
+    }
   }
 
   private static void OnUnitDeath()
@@ -162,6 +180,37 @@ public static class MmdEvents
     }
 
     stats.UnitsLost += 1;
+  }
+
+  private static void OnPlayerStartsTraining()
+  {
+    var p = @event.Player;
+    if (!IsMmdPlayer(p))
+    {
+      return;
+    }
+
+    var cost = GetUnitGoldCost(@event.TrainedUnitType);
+    if (cost > 0)
+    {
+      _trackedGoldSpent[p] += cost;
+    }
+  }
+
+  private static void OnPlayerStartsConstruction()
+  {
+    var p = @event.Player;
+    if (!IsMmdPlayer(p))
+    {
+      return;
+    }
+
+    var structure = @event.ConstructingStructure;
+    var cost = structure == null ? 0 : structure.GoldCost;
+    if (cost > 0)
+    {
+      _trackedGoldSpent[p] += cost;
+    }
   }
 
   private static void SetupControlPointEvents()
@@ -206,6 +255,70 @@ public static class MmdEvents
         }
 
         stats.CpMinutesOwned += 1f;
+      }
+    });
+  }
+
+  private static void SetupGoldTracking()
+  {
+    var goldTrackingTimer = CreateTimer();
+    TimerStart(goldTrackingTimer, 1.0f, true, () =>
+    {
+      foreach (var p in _lastGold.Keys)
+      {
+        if (!IsMmdPlayer(p))
+        {
+          continue;
+        }
+
+        var stats = MmdManager.GetStats(p);
+        if (stats == null)
+        {
+          continue;
+        }
+
+        var currentGold = p.GetState(playerstate.ResourceGold);
+        var rawDelta = currentGold - _lastGold[p];
+        var trackedSpent = _trackedGoldSpent[p];
+        var reconstructedEarned = rawDelta + trackedSpent;
+
+        if (reconstructedEarned >= 0)
+        {
+          stats.GoldEarned += reconstructedEarned;
+          stats.GoldSpent += trackedSpent;
+        }
+        else
+        {
+          // The tracked spend alone doesn't explain the full drop in gold, meaning something spent gold that
+          // wasn't captured by the training/construction hooks. Attribute the entire drop to spending rather
+          // than letting the unexplained portion offset GoldEarned.
+          stats.GoldSpent += trackedSpent - reconstructedEarned;
+        }
+
+        _lastGold[p] = currentGold;
+        _trackedGoldSpent[p] = 0;
+      }
+    });
+  }
+
+  private static void SetupTurnsSurvivedTracking()
+  {
+    GameTimeManager.RegisterOnTurnRepeating(1, () =>
+    {
+      foreach (var p in MmdManager.StatsByPlayer.Keys)
+      {
+        if (!IsMmdPlayer(p))
+        {
+          continue;
+        }
+
+        var stats = MmdManager.GetStats(p);
+        if (stats == null || stats.Result != "Unknown")
+        {
+          continue;
+        }
+
+        stats.TurnsSurvived = GameTimeManager.Turn;
       }
     });
   }
