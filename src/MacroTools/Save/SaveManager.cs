@@ -56,6 +56,7 @@ public static class SaveManager
       save.ShowQuestText = true;
       save.PlayDialogue = true;
       save.ShowCaptions = true;
+      save.SmartFollowEnabled = false;
     }
 
     if (save.GetPlayer() == player.LocalPlayer)

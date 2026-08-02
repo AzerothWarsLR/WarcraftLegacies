@@ -20,6 +20,12 @@ public sealed class PlayerSettings : Saveable
   public bool ShowCaptions { get; internal set; } = true;
 
   /// <summary>
+  /// Whether friendly units use stable destinations when following one of the player's heroes.
+  /// Disabled by default until the feature has been validated in large multiplayer games.
+  /// </summary>
+  public bool SmartFollowEnabled { get; internal set; }
+
+  /// <summary>
   /// The player's preferred language for translated game text, as an IETF-style tag (eg. "en", "es", "zh").
   /// Null means it has not been detected or set yet, and callers should fall back to English.
   /// </summary>

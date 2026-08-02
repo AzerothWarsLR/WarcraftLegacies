@@ -44,6 +44,20 @@ public static class AssistedFollowSystem
   /// <summary>The number of units currently bound to a friendly hero.</summary>
   public static int ActiveFollowerCount => _activeFollowerCount;
 
+  /// <summary>Returns whether Smart Follow is active for the specified player.</summary>
+  public static bool IsPlayerEnabled(player whichPlayer) =>
+    _mode == FollowOrderMode.StableDestination && whichPlayer.GetPlayerSettings().SmartFollowEnabled;
+
+  /// <summary>Updates and saves one player's Smart Follow preference.</summary>
+  public static void SetPlayerEnabled(player whichPlayer, bool enabled)
+  {
+    PlayerData.ByHandle(whichPlayer).UpdatePlayerSetting("SmartFollowEnabled", enabled);
+    if (!enabled)
+    {
+      ResetPlayerTracking(whichPlayer);
+    }
+  }
+
   /// <summary>Registers the order and lifecycle events used by the system.</summary>
   public static void Setup()
   {
@@ -74,12 +88,16 @@ public static class AssistedFollowSystem
       return;
     }
 
+    if (!IsPlayerEnabled(orderedUnit.Owner))
+    {
+      return;
+    }
+
     CancelPendingBinding(orderedUnit);
     DetachFollower(orderedUnit);
     _lastHeroMovementOrders.Remove(orderedUnit);
 
-    if (_mode != FollowOrderMode.StableDestination || issuedOrderId != ORDER_SMART ||
-        !IsFollowCandidate(orderedUnit, targetUnit))
+    if (issuedOrderId != ORDER_SMART || !IsFollowCandidate(orderedUnit, targetUnit))
     {
       return;
     }
@@ -101,14 +119,13 @@ public static class AssistedFollowSystem
       return;
     }
 
-    CancelPendingBinding(orderedUnit);
-    DetachFollower(orderedUnit);
-
-    if (_mode != FollowOrderMode.StableDestination)
+    if (!IsPlayerEnabled(orderedUnit.Owner))
     {
-      _lastHeroMovementOrders.Remove(orderedUnit);
       return;
     }
+
+    CancelPendingBinding(orderedUnit);
+    DetachFollower(orderedUnit);
 
     if (!orderedUnit.IsUnitType(unittype.Hero))
     {
@@ -148,6 +165,11 @@ public static class AssistedFollowSystem
       return;
     }
 
+    if (!IsPlayerEnabled(orderedUnit.Owner))
+    {
+      return;
+    }
+
     CancelPendingBinding(orderedUnit);
     DetachFollower(orderedUnit);
     _lastHeroMovementOrders.Remove(orderedUnit);
@@ -157,8 +179,7 @@ public static class AssistedFollowSystem
       return;
     }
 
-    if (_mode == FollowOrderMode.StableDestination &&
-        FollowOrderClassifier.IsMirroredImmediateOrder(issuedOrderId) &&
+    if (FollowOrderClassifier.IsMirroredImmediateOrder(issuedOrderId) &&
         _groupsByLeader.TryGetValue(orderedUnit, out var group))
     {
       QueueImmediateOrder(group, issuedOrderId);
@@ -201,7 +222,7 @@ public static class AssistedFollowSystem
       }
 
       _pendingBindingsByFollower.Remove(pendingBinding.Follower);
-      if (_mode != FollowOrderMode.StableDestination ||
+      if (!IsPlayerEnabled(pendingBinding.Follower.Owner) ||
           !IsFollowCandidate(pendingBinding.Follower, pendingBinding.Leader))
       {
         continue;
@@ -251,7 +272,7 @@ public static class AssistedFollowSystem
       processedOrders++;
       var follower = state.Follower;
       var leader = state.Group.Leader;
-      if (!IsActiveFollowerValid(follower, leader))
+      if (!IsPlayerEnabled(follower.Owner) || !IsActiveFollowerValid(follower, leader))
       {
         DetachFollower(follower);
         continue;
@@ -512,6 +533,91 @@ public static class AssistedFollowSystem
     _pendingFollowerStateIndex = 0;
     _internallyOrderedUnits.Clear();
     _activeFollowerCount = 0;
+  }
+
+  private static void ResetPlayerTracking(player whichPlayer)
+  {
+    for (var i = _pendingBindings.Count - 1; i >= 0; i--)
+    {
+      var pendingBinding = _pendingBindings[i];
+      if (pendingBinding.Follower.Owner != whichPlayer)
+      {
+        continue;
+      }
+
+      if (_pendingBindingsByFollower.TryGetValue(pendingBinding.Follower, out var currentBinding) &&
+          currentBinding == pendingBinding)
+      {
+        _pendingBindingsByFollower.Remove(pendingBinding.Follower);
+      }
+
+      _pendingBindings.RemoveAt(i);
+    }
+
+    var leadersToRemove = new List<unit>();
+    foreach (var group in _groupsByLeader.Values)
+    {
+      if (group.Leader.Owner == whichPlayer)
+      {
+        leadersToRemove.Add(group.Leader);
+      }
+    }
+
+    foreach (var leader in leadersToRemove)
+    {
+      RemoveFollowGroup(leader);
+    }
+
+    var followersToRemove = new List<unit>();
+    foreach (var state in _statesByFollower.Values)
+    {
+      if (state.Follower.Owner == whichPlayer)
+      {
+        followersToRemove.Add(state.Follower);
+      }
+    }
+
+    foreach (var follower in followersToRemove)
+    {
+      DetachFollower(follower);
+    }
+
+    var movementOrdersToRemove = new List<unit>();
+    foreach (var leader in _lastHeroMovementOrders.Keys)
+    {
+      if (leader.Owner == whichPlayer)
+      {
+        movementOrdersToRemove.Add(leader);
+      }
+    }
+
+    foreach (var leader in movementOrdersToRemove)
+    {
+      _lastHeroMovementOrders.Remove(leader);
+    }
+
+    CompactPendingFollowerStates();
+  }
+
+  private static void CompactPendingFollowerStates()
+  {
+    var activeStates = new List<FollowerState>();
+    for (var i = _pendingFollowerStateIndex; i < _pendingFollowerStates.Count; i++)
+    {
+      var state = _pendingFollowerStates[i];
+      if (state.Active)
+      {
+        activeStates.Add(state);
+      }
+      else
+      {
+        state.IsOrderQueued = false;
+        state.PendingOrder = null;
+      }
+    }
+
+    _pendingFollowerStates = activeStates;
+    _pendingFollowerStateIndex = 0;
   }
 
   private sealed class FollowGroup

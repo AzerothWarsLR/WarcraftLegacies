@@ -18,6 +18,7 @@ public static class CommandSetup
     CommandManager.Register(new Share());
     CommandManager.Register(new Unshare());
     CommandManager.Register(new Text());
+    CommandManager.Register(new SmartFollow());
     CommandManager.Register(new GiveGold("givegold"));
     CommandManager.Register(new GiveGold("gold"));
     CommandManager.Register(new GiveGold("g"));
