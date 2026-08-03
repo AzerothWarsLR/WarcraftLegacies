@@ -51,6 +51,9 @@ public sealed class PlayerData
       case "ShowCaptions":
         PlayerSettings.ShowCaptions = value;
         break;
+      case nameof(PlayerSettings.SmartFollowEnabled):
+        PlayerSettings.SmartFollowEnabled = value;
+        break;
     }
     SaveManager.Save(PlayerSettings);
   }
