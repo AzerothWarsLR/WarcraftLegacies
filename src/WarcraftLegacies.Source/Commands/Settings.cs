@@ -30,6 +30,6 @@ Play dialogue: " + playerSettings.PlayDialogue + @"
 
 Show captions: " + playerSettings.ShowCaptions + @"
 
-Smart follow: " + (playerSettings.SmartFollowEnabled ? "On" : "Off");
+Smart follow: " + playerSettings.SmartFollowEnabled;
   }
 }

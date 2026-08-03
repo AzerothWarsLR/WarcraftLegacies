@@ -7,15 +7,12 @@ namespace WarcraftLegacies.Source.GameLogic.AssistedFollow;
 /// </summary>
 public static class FollowDestinationPlanner
 {
-  /// <summary>
-  /// Prevents a straggler's old position from producing a destination far away from its leader.
-  /// </summary>
-  public const float MaximumFormationRadius = 768;
-
+  private const float MaximumFormationRadius = 768;
+  private const float MaximumRadiusSquared = MaximumFormationRadius * MaximumFormationRadius;
   private const float MinimumFormationSeparation = 48;
   private const float BaseFallbackRadius = 96;
   private const float FallbackRadiusPerSlot = 32;
-  private const double GoldenAngleRadians = 2.399963229728653;
+  private const float GoldenAngleRadians = 2.399963229728653f;
   private const float PathingSampleSpacing = 32;
 
   /// <summary>
@@ -28,11 +25,10 @@ public static class FollowDestinationPlanner
     var offsetX = followerX - leaderX;
     var offsetY = followerY - leaderY;
     var offsetDistanceSquared = offsetX * offsetX + offsetY * offsetY;
-    var maximumRadiusSquared = MaximumFormationRadius * MaximumFormationRadius;
 
-    if (offsetDistanceSquared > maximumRadiusSquared)
+    if (offsetDistanceSquared > MaximumRadiusSquared)
     {
-      var scale = MaximumFormationRadius / (float)Math.Sqrt(offsetDistanceSquared);
+      var scale = MaximumFormationRadius / MathF.Sqrt(offsetDistanceSquared);
       offsetX *= scale;
       offsetY *= scale;
     }
@@ -41,10 +37,10 @@ public static class FollowDestinationPlanner
       // Units can overlap after teleports or scripted spawns. Give them deterministic
       // fallback slots so trigger-issued individual orders do not converge on one point.
       var radius = Math.Min(MaximumFormationRadius,
-        BaseFallbackRadius + FallbackRadiusPerSlot * (float)Math.Sqrt(formationSlot));
+        BaseFallbackRadius + FallbackRadiusPerSlot * MathF.Sqrt(formationSlot));
       var angle = formationSlot * GoldenAngleRadians;
-      offsetX = radius * (float)Math.Cos(angle);
-      offsetY = radius * (float)Math.Sin(angle);
+      offsetX = radius * MathF.Cos(angle);
+      offsetY = radius * MathF.Sin(angle);
     }
 
     destinationX = leaderDestinationX + offsetX;
@@ -71,7 +67,7 @@ public static class FollowDestinationPlanner
 
     var offsetX = desiredDestinationX - leaderDestinationX;
     var offsetY = desiredDestinationY - leaderDestinationY;
-    var distance = (float)Math.Sqrt(offsetX * offsetX + offsetY * offsetY);
+    var distance = MathF.Sqrt(offsetX * offsetX + offsetY * offsetY);
     if (distance == 0)
     {
       return;

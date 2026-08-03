@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -20,33 +21,12 @@ public static class AssistedFollowSystem
   private static List<FollowerState> _pendingFollowerStates = new();
   private static readonly HashSet<unit> _internallyOrderedUnits = new();
 
-  private static FollowOrderMode _mode = FollowOrderMode.StableDestination;
   private static bool _isSetup;
-  private static int _activeFollowerCount;
   private static int _pendingFollowerStateIndex;
-
-  /// <summary>The active implementation, exposed so the test harness can perform an A/B comparison.</summary>
-  public static FollowOrderMode Mode
-  {
-    get => _mode;
-    set
-    {
-      if (_mode == value)
-      {
-        return;
-      }
-
-      ResetTracking();
-      _mode = value;
-    }
-  }
-
-  /// <summary>The number of units currently bound to a friendly hero.</summary>
-  public static int ActiveFollowerCount => _activeFollowerCount;
 
   /// <summary>Returns whether Smart Follow is active for the specified player.</summary>
   public static bool IsPlayerEnabled(player whichPlayer) =>
-    _mode == FollowOrderMode.StableDestination && whichPlayer.GetPlayerSettings().SmartFollowEnabled;
+    whichPlayer.GetPlayerSettings().SmartFollowEnabled;
 
   /// <summary>Updates and saves one player's Smart Follow preference.</summary>
   public static void SetPlayerEnabled(player whichPlayer, bool enabled)
@@ -310,14 +290,7 @@ public static class AssistedFollowSystem
     }
     else if (_pendingFollowerStateIndex >= 512)
     {
-      var compactedStates = new List<FollowerState>();
-      for (var i = _pendingFollowerStateIndex; i < _pendingFollowerStates.Count; i++)
-      {
-        compactedStates.Add(_pendingFollowerStates[i]);
-      }
-
-      _pendingFollowerStates = compactedStates;
-      _pendingFollowerStateIndex = 0;
+      CompactPendingFollowerStates();
     }
   }
 
@@ -354,7 +327,6 @@ public static class AssistedFollowSystem
     group.Followers.Add(state);
     group.ActiveFollowerCount++;
     _statesByFollower.Add(follower, state);
-    _activeFollowerCount++;
 
     if (movementOrder != null)
     {
@@ -391,17 +363,17 @@ public static class AssistedFollowSystem
     out float destinationX, out float destinationY)
   {
     var worldBounds = Rectangle.WorldBounds;
-    var leaderDestinationX = System.Math.Clamp(pendingOrder.LeaderDestinationX,
+    var leaderDestinationX = Math.Clamp(pendingOrder.LeaderDestinationX,
       worldBounds.Left + 32, worldBounds.Right - 32);
-    var leaderDestinationY = System.Math.Clamp(pendingOrder.LeaderDestinationY,
+    var leaderDestinationY = Math.Clamp(pendingOrder.LeaderDestinationY,
       worldBounds.Bottom + 32, worldBounds.Top - 32);
     FollowDestinationPlanner.GetDestination(pendingOrder.LeaderX, pendingOrder.LeaderY,
       pendingOrder.FollowerX, pendingOrder.FollowerY,
       leaderDestinationX, leaderDestinationY, state.FormationSlot, out var desiredDestinationX,
       out var desiredDestinationY);
 
-    desiredDestinationX = System.Math.Clamp(desiredDestinationX, worldBounds.Left + 32, worldBounds.Right - 32);
-    desiredDestinationY = System.Math.Clamp(desiredDestinationY, worldBounds.Bottom + 32, worldBounds.Top - 32);
+    desiredDestinationX = Math.Clamp(desiredDestinationX, worldBounds.Left + 32, worldBounds.Right - 32);
+    desiredDestinationY = Math.Clamp(desiredDestinationY, worldBounds.Bottom + 32, worldBounds.Top - 32);
     FollowDestinationPlanner.GetPathingSafeDestination(leaderDestinationX, leaderDestinationY,
       desiredDestinationX, desiredDestinationY, IsTerrainUnwalkable, out destinationX, out destinationY);
   }
@@ -460,7 +432,6 @@ public static class AssistedFollowSystem
     state.Active = false;
     state.Group.ActiveFollowerCount--;
     state.Group.InactiveFollowerCount++;
-    _activeFollowerCount--;
     if (state.Group.ActiveFollowerCount == 0)
     {
       _groupsByLeader.Remove(state.Group.Leader);
@@ -506,33 +477,11 @@ public static class AssistedFollowSystem
 
       state.Active = false;
       _statesByFollower.Remove(state.Follower);
-      _activeFollowerCount--;
     }
 
     group.Followers.Clear();
     group.ActiveFollowerCount = 0;
     group.InactiveFollowerCount = 0;
-  }
-
-  private static void ResetTracking()
-  {
-    foreach (var group in _groupsByLeader.Values)
-    {
-      foreach (var state in group.Followers)
-      {
-        state.Active = false;
-      }
-    }
-
-    _groupsByLeader.Clear();
-    _statesByFollower.Clear();
-    _lastHeroMovementOrders.Clear();
-    _pendingBindingsByFollower.Clear();
-    _pendingBindings.Clear();
-    _pendingFollowerStates.Clear();
-    _pendingFollowerStateIndex = 0;
-    _internallyOrderedUnits.Clear();
-    _activeFollowerCount = 0;
   }
 
   private static void ResetPlayerTracking(player whichPlayer)
