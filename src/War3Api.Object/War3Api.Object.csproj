@@ -14,9 +14,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="WCSharp.War3Net.Build" Version="5.8.0" />
-        <PackageReference Include="WCSharp.War3Net.Build.Core" Version="5.8.0" />
-        <PackageReference Include="War3Net.Common" Version="5.8.0" />
+        <PackageReference Include="War3Net.Build" Version="6.0.3" />
+        <PackageReference Include="War3Net.Build.Core" Version="6.0.3" />
+        <PackageReference Include="War3Net.Common" Version="6.0.2" />
     </ItemGroup>
 
 </Project>
