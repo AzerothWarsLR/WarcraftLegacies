@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Factions.Ahnqiraj.UnitTraits.SpellConduction;
 
 public sealed class SpellConductionTrait : UnitTrait, IEffectOnCreated
 {
-  private readonly List<unit> _eradicators = new();
+  private readonly List<unit> _conductors = new();
 
   /// <summary>
   /// The research required for this ability to work.
@@ -37,13 +37,19 @@ public sealed class SpellConductionTrait : UnitTrait, IEffectOnCreated
   }
 
   /// <inheritdoc />
-  public void OnCreated(unit createdUnit) => _eradicators.Add(createdUnit);
+  public void OnCreated(unit createdUnit)
+  {
+    if (!_conductors.Contains(createdUnit))
+    {
+      _conductors.Add(createdUnit);
+    }
+  }
 
   private void OnDamageTaken()
   {
     var target = @event.Unit;
     var attackType = @event.AttackType;
-    if (_eradicators.Count == 0 ||
+    if (_conductors.Count == 0 ||
         !RedirectableAttackTypes.Contains(attackType) ||
         UnitTypeTraitRegistry.UnitHasTrait(target, typeof(SpellConductionTrait)))
     {
@@ -55,19 +61,19 @@ public sealed class SpellConductionTrait : UnitTrait, IEffectOnCreated
     var weaponType = @event.WeaponType;
     var eventDamage = @event.Damage;
 
-    for (var i = 0; i < _eradicators.Count;)
+    for (var i = 0; i < _conductors.Count;)
     {
-      var eradicator = _eradicators[i];
-      if (!eradicator.Alive)
+      var conductor = _conductors[i];
+      if (!conductor.Alive)
       {
-        _eradicators.RemoveAt(i);
+        _conductors.RemoveAt(i);
         continue;
       }
 
       i++;
-      if (eradicator.Owner.GetTechResearched(RequiredResearch, false) <= 0 ||
-          !CastFilters.IsTargetAllyAndAlive(eradicator, target) ||
-          !IsInRange(eradicator, target))
+      if (conductor.Owner.GetTechResearched(RequiredResearch, false) <= 0 ||
+          !CastFilters.IsTargetAllyAndAlive(conductor, target) ||
+          !IsInRange(conductor, target))
       {
         continue;
       }
@@ -75,15 +81,15 @@ public sealed class SpellConductionTrait : UnitTrait, IEffectOnCreated
       var redirectedDamage = eventDamage * RedirectionPercentage;
       eventDamage *= 1 - RedirectionPercentage;
       @event.Damage = eventDamage;
-      eradicator.TakeDamage(damageSource, redirectedDamage, false, true,
+      conductor.TakeDamage(damageSource, redirectedDamage, false, true,
         attackType, damageType, weaponType);
     }
   }
 
-  private bool IsInRange(unit eradicator, unit target)
+  private bool IsInRange(unit conductor, unit target)
   {
-    var deltaX = eradicator.X - target.X;
-    var deltaY = eradicator.Y - target.Y;
+    var deltaX = conductor.X - target.X;
+    var deltaY = conductor.Y - target.Y;
     return deltaX * deltaX + deltaY * deltaY <= Radius * Radius;
   }
 }
