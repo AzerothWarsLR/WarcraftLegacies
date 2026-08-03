@@ -1,0 +1,259 @@
+{
+  "OldId": "ANbr",
+  "NewId": "A08M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B019"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B019"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B019"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nbr1",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "aord",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionHorn.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stormwind - Varian)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Horn of Stormwind"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionHorn.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Horn of Stormwind - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Varian blows the Horn of Stormwind giving nearby friendly units a bonus to attack damage and armor.|n|n|cffffcc00Level 1|r - 15 bonus damage, 4 bonus armor, lasts 15 seconds.|n|cffffcc00Level 2|r - 30 bonus damage, 8 bonus armor, lasts 20 seconds. |n|cffffcc00Level 3|r - 45 bonus damage, 12 bonus armor, lasts 25 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Horn of Stormwind - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Horn of Stormwind - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Horn of Stormwind - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Varian blows the Horn of Stormwind giving nearby friendly units a bonus 15 point to attack damage and a 4 point bouns to defense. |nLasts 15 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Varian blows the Horn of Stormwind giving nearby friendly units a bonus 30 point to attack damage and a 8 point bouns to defense. |nLasts 20 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Varian blows the Horn of Stormwind giving nearby friendly units a bonus 45 point to attack damage and a 12 point bouns to defense. |nLasts 25 seconds."
+    }
+  ]
+}

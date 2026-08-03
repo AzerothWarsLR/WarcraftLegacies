@@ -1,0 +1,51 @@
+{
+  "OldId": "ndog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 100
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\LordGarithos\\LordGarithos.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Patrons Crusader"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Garithos"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Tier 3 Patron)"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "nfrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AChv,ACr2"
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 36
+    },
+    {
+      "Id": "uhpm",
+      "Value": 755
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    }
+  ]
+}

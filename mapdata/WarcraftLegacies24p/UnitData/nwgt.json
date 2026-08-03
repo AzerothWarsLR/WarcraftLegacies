@@ -1,0 +1,33 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,standon,neutral,sapper"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -21344,
+  "Bottom": -3040,
+  "Right": -19488,
+  "Top": -1248,
+  "Name": "RanazjarAmbient",
+  "CreationNumber": 310,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

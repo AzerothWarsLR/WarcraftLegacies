@@ -1,0 +1,25 @@
+{
+  "OldId": "nkog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    }
+  ]
+}

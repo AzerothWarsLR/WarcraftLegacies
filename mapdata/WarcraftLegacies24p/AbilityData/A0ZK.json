@@ -1,0 +1,20 @@
+{
+  "OldId": "Aotr",
+  "NewId": "A0ZK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increase the maximum health of the unit by 150 and its hit point regeneration by 2."
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Troll)"
+    }
+  ]
+}

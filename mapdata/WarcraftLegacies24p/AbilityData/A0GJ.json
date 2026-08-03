@@ -1,0 +1,333 @@
+{
+  "OldId": "AUin",
+  "NewId": "A0GJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Level": 4,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.76
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "uloc"
+    },
+    {
+      "Level": 2,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "uloc"
+    },
+    {
+      "Level": 3,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "uloc"
+    },
+    {
+      "Level": 4,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "uloc"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Warsong - Jergosh)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Meteor Strike"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Meteor Strike - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls a Meteor down from the sky, dealing  damage and stunning enemy land units for 2 seconds in an area.|n|cffffcc00Level 1|r - 100 damage.|n|cffffcc00Level 2|r - 150 damage.|n|cffffcc00Level 3|r - 200 damage.|n|cffffcc00Level 4|r - 250 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Meteor Strike - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Meteor Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Meteor Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Meteor Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls a Meteor down from the sky, dealing 100 damage and stunning enemy land units for 2 seconds in an area."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls a Meteor down from the sky, dealing 150 damage and stunning enemy land units for 2 seconds in an area."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls a Meteor down from the sky, dealing 200 damage and stunning enemy land units for 2 seconds in an area."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls a Meteor down from the sky, dealing 250 damage and stunning enemy land units for 2 seconds in an area."
+    }
+  ]
+}

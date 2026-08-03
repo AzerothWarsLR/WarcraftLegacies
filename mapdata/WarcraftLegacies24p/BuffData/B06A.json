@@ -1,0 +1,39 @@
+{
+  "OldId": "Bcrs",
+  "NewId": "B06A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueWhiteSpell.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Blinding Light"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Blinded; it can miss when it attacks."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(human Bishop)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIso\\BIsvTarget.mdl"
+    }
+  ]
+}

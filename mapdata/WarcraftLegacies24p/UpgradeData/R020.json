@@ -1,0 +1,93 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R020",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "h03K"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratd"
+    },
+    {
+      "Id": "glmb",
+      "Value": 175
+    },
+    {
+      "Id": "gtib",
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSummonWaterElemental.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Dalaran) (Karazhan)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Rain: An Amalgam"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Rain: An Amalgam"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Water Elementals by increasing their hit points by 350 and damage number of dice by 1."
+    }
+  ]
+}

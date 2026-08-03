@@ -1,0 +1,270 @@
+{
+  "OldId": "AHav",
+  "NewId": "A0Z2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scourge Ebon Blade Darion)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Avatar (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "When Avatar is activated, it gives the Highlord bonus armor, bonus hit points, bonus damage and spell immunity. |n|cffffcc00Level 1|r - 20 damage, 5 armor, 300 hit points, 30 seconds.|n|cffffcc00Level 2|r - 40 damage, 10 armor, 600 hit points, 45 seconds.|n|cffffcc00Level 3|r - 60 damage, 15 armor, 900 hit points, 60 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Avatar to give Darion 3 bonus armor, 200 bonus hit points, 20 bonus damage and spell immunity. |nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Avatar to give Darion 6 bonus armor, 300 bonus hit points, 30 bonus damage and spell immunity. |nLasts 35 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Avatar to give Darion 9 bonus armor, 400 bonus hit points, 40 bonus damage and spell immunity. |nLasts 40 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Avatar to give Darion 12 bonus armor, 500 bonus hit points, 50 bonus damage and spell immunity. |nLasts 45 seconds."
+    },
+    {
+      "Id": "aubx",
+      "Value": 0
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Avatar (|cffffcc00Q|r)"
+    }
+  ]
+}

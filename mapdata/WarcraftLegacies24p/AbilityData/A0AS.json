@@ -1,0 +1,87 @@
+{
+  "OldId": "Alsh",
+  "NewId": "A0AS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01I,B01J"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Lsh1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R027"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameWall.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blue - Warlock)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Flame Shield"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Flame Shield"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Forms a shield of flames around a target unit, dealing 15 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes."
+    }
+  ]
+}

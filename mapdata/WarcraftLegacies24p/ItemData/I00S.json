@@ -1,0 +1,58 @@
+{
+  "OldId": "ofir",
+  "NewId": "I00S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0MC"
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Attacks also do holy damage."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Orb of Light"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Orb of Light"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Adds 6 bonus holy damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and has 15% chance to stun his target for 2 seconds."
+    }
+  ]
+}

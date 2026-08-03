@@ -1,0 +1,26 @@
+{
+  "OldId": "rots",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIwm"
+    },
+    {
+      "Id": "igol",
+      "Value": 60
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff87ceebUnique Consumable|r|nSummons 4 Murlocs to fight for you.|nContains \u003Crots,uses\u003E charges."
+    }
+  ]
+}

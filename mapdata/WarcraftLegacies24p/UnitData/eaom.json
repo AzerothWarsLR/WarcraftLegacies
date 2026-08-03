@@ -1,0 +1,152 @@
+{
+  "OldId": "eaom",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aeat,Aro1"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 60
+    },
+    {
+      "Id": "ua2b",
+      "Value": 60
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulum",
+      "Value": 75
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua2r",
+      "Value": 150
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R046,R047,R048,R00A"
+    },
+    {
+      "Id": "umvs",
+      "Value": 95
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n05H,edry,e012"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,Renb,R018,Rhme,R002,Rgfo"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Ancient of War"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Ancient of the warrior Sentinels.|n|cfff5962dTrains:|R Sapling, Dryad, Siege Ancient|n|cfff5962dResearches:|R Improved Thorns, Crippling Poison, Deadly Poison, Limber Timber|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

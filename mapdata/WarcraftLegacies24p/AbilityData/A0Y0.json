@@ -1,0 +1,191 @@
+{
+  "OldId": "ACav",
+  "NewId": "A0Y0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03C"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03C"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03C"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03C"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -7
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -9
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Vezax  C\u0027thun)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Death Aura"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Death Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Reduces nearby enemy units armor.|n|n|cffffcc00Level 1|r - 3 armor. |n|cffffcc00Level 2|r - 5 armor. |n|cffffcc00Level 3|r - 7 Armor. |n|cffffcc00Level 4|r - 9 Armor."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\UnholyAura\\UnholyAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Death Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 3."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 5."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 7."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 9."
+    }
+  ]
+}

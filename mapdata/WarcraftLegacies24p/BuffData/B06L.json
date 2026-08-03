@@ -1,0 +1,39 @@
+{
+  "OldId": "BHfs",
+  "NewId": "B06L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Field of Blood"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is in a Field of Blood"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\TrollBerserk\\HeadhunterWEAPONSLeft.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

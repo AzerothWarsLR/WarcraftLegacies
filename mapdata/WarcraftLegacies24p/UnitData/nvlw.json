@@ -1,0 +1,31 @@
+{
+  "OldId": "nvlw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "uhpm",
+      "Value": 280
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.6
+    }
+  ]
+}

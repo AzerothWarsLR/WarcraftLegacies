@@ -1,0 +1,204 @@
+{
+  "OldId": "edob",
+  "NewId": "e00T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 24
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 60
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R007"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n034,h08V"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,Renb,Rgfo"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,ground,structure,debris,item,ward"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 43
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1z",
+      "Value": 950
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHunterTower.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Towered_Hunters_Hall_v3.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Watcher\u0027s Bastion"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Watcher\u0027s Bastion"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "High rise tower where the best warriors of the Sentinels reside.|n|cfff5962dTrains:|R Nightsaber Knights and Guild Rangers"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\Towered_Hunters_Hall_Missile.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

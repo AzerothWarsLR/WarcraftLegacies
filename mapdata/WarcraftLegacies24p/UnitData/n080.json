@@ -1,0 +1,81 @@
+{
+  "OldId": "nomg",
+  "NewId": "n080",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 36
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Boulderfist Magi"
+    }
+  ]
+}

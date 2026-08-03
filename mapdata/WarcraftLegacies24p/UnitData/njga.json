@@ -1,0 +1,34 @@
+{
+  "OldId": "njga",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANbh"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 42
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1025
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 12704,
+  "Bottom": 17376,
+  "Right": 14080,
+  "Top": 18816,
+  "Name": "RiseSpawn2",
+  "CreationNumber": 263,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

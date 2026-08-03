@@ -1,0 +1,19 @@
+{
+  "OldId": "Xbdt",
+  "NewId": "X00D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Reveal (Dalaran)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AItb\\AItbTarget.mdl"
+    }
+  ]
+}

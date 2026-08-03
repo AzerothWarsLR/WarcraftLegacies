@@ -1,0 +1,28 @@
+{
+  "OldId": "Aweb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00Q"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Crypt Fiend)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

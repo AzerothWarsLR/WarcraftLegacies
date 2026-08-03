@@ -1,0 +1,49 @@
+{
+  "OldId": "nrel",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A00S"
+    },
+    {
+      "Id": "ubba",
+      "Value": 3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 330
+    },
+    {
+      "Id": "umpi",
+      "Value": 100
+    },
+    {
+      "Id": "umpm",
+      "Value": 100
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stormwind)"
+    }
+  ]
+}

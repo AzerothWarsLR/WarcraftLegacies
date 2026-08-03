@@ -1,0 +1,109 @@
+{
+  "OldId": "Renb",
+  "NewId": "R064",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gglb",
+      "Value": 125
+    },
+    {
+      "Id": "gglm",
+      "Value": 50
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 125
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Id": "glvl",
+      "Value": 2
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStoneArchitecture.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Sentinel Fortifications"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Sentinel Fortifications"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Upgrades all structures\u0027 hit points and armor."
+    }
+  ]
+}

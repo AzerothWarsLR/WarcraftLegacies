@@ -1,0 +1,106 @@
+{
+  "OldId": "ninf",
+  "NewId": "n091",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACmi,A04Q,ACrk"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 51
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1300
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 60
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uclb",
+      "Value": 130
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion-Archimond-Level 2)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 180
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Doomfire Abyssal"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.75
+    }
+  ]
+}

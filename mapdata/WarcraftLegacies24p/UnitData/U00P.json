@@ -1,0 +1,248 @@
+{
+  "OldId": "Ulic",
+  "NewId": "U00P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A10H,A0Y1,A0GK,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A013,Aamk,A0Y0,ANsb,A015"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 200
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ustr",
+      "Value": 45
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 4.2
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R084"
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uint",
+      "Value": 33
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GeneralVezax.mdl"
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "C\u0027thrax Aberration"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Zakajz the Corruptor"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "DoomGuard"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Zakajz"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at debuffing enemies.|n|cfff5962dAbilities:|r Pulverise, Unholy Armor |n|cfff5962dCan learn:|R Shadow Ball, Devour Magic, Death Aura, Roar of Despair |n|n|cffffcc00Attacks land and air units.|R"
+    }
+  ]
+}

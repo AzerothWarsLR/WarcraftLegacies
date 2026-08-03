@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 959459394,
+    "Variation": 0,
+    "Position": {
+      "X": -8192,
+      "Y": 7936,
+      "Z": 501.25
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 959459394,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7169
+  },
+  {
+    "TypeId": 1667715657,
+    "Variation": 8,
+    "Position": {
+      "X": -8640,
+      "Y": 8384,
+      "Z": 179.1875
+    },
+    "Rotation": 3.6477385,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1667715657,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19613
+  },
+  {
+    "TypeId": 2004112457,
+    "Variation": 6,
+    "Position": {
+      "X": -8576,
+      "Y": 8192,
+      "Z": 180.5
+    },
+    "Rotation": 2.96706,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 2004112457,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19631
+  },
+  {
+    "TypeId": 1667846734,
+    "Variation": 4,
+    "Position": {
+      "X": -8508.275,
+      "Y": 8113.738,
+      "Z": 220.63533
+    },
+    "Rotation": 2.548181,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1667846734,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19662
+  },
+  {
+    "TypeId": 1936872009,
+    "Variation": 4,
+    "Position": {
+      "X": -8371.582,
+      "Y": 7942.5864,
+      "Z": 371.10968
+    },
+    "Rotation": 0.37386164,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1936872009,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19664
+  }
+]

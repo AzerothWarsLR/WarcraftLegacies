@@ -1,0 +1,216 @@
+{
+  "OldId": "hmtt",
+  "NewId": "h0AA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0RI,A0E1,A0F5,S01F,S01H,S01G,Aroc"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucar",
+      "Value": 8
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua2b",
+      "Value": 20
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "ulum",
+      "Value": 150
+    },
+    {
+      "Id": "ulur",
+      "Value": 75
+    },
+    {
+      "Id": "ua1z",
+      "Value": 600
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "upri",
+      "Value": 8
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1050
+    },
+    {
+      "Id": "ua2r",
+      "Value": 400
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1s",
+      "Value": 10
+    },
+    {
+      "Id": "ua2s",
+      "Value": 3
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 58
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Aroc"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronTank.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "uver",
+      "Value": 1
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Magma Tank"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Magma Tank"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Extremely heavily armored vehicle.|n|cfff5962dAbilities:|R Flamethrower, Lockdown, Barrage|n|cfff5962dCan Learn:|R Overclock|n|n|cff00ffffCan transport 4 units.|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SteamTankDarkIronV1.00.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile_mini.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

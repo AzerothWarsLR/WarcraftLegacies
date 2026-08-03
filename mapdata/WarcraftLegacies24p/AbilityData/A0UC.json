@@ -1,0 +1,55 @@
+{
+  "OldId": "Ahlh",
+  "NewId": "A0UC",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This building generates 80 gold every 60 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases the rate at which this unit gathers lumber."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Tax Collecting"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Tax Collecting"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Icon) 80"
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "OldId": "Alsh",
+  "NewId": "A0FW",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02X,B02Y"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Lsh1",
+      "Type": 2,
+      "Value": -15
+    },
+    {
+      "Id": "aord",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01V"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "friend,ground,neutral"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dalaran-Geomancer)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Healing Shield"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Healing Shield"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Forms a shield of healing energies around a target unit, healing 15 damage per second to all units around it. |n|cffffcc00Lasts 20 seconds."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "Barm",
+  "NewId": "B00E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMedalionOfDarkness.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Corrupting Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Corrupting Aura; it will constantly lose health."
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "DeathAndDecayLoop"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Banish\\BanishTarget.mdl"
+    }
+  ]
+}

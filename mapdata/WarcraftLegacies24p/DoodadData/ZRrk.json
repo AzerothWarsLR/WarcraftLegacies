@@ -1,0 +1,33 @@
+{
+  "OldId": "ZRrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Rocks (SunkenRuins)"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

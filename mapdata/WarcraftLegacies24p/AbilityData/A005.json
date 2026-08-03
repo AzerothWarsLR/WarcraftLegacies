@@ -1,0 +1,110 @@
+{
+  "OldId": "ANdp",
+  "NewId": "A005",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "h005"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndp2",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01A"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrate.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Yellow Tinkers)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Deploy Barricades"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Deploy Barricades"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deploy a solid barricade blocking the path of enemies. The barricade takes 15 damage per second until it is destroyed."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrate.blp"
+    }
+  ]
+}

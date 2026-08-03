@@ -1,0 +1,114 @@
+{
+  "OldId": "ehpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANwk,A0HZ,Ault"
+    },
+    {
+      "Id": "ubld",
+      "Value": 10
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 19
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R002,R03J,Rhme,Rhar,Reib,Remk,Reuv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "n06P"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Hippogryph Rider"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Airborne archer of the Sentinels who strikes multiple foes.|n|cfff5962dAbilities:|R Multi Shot|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

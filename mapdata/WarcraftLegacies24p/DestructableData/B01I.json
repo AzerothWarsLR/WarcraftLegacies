@@ -1,0 +1,51 @@
+{
+  "OldId": "LTbs",
+  "NewId": "B01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\SpikeBarrier\\SpikeBarrier.mdl"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Fountain Spikes"
+    },
+    {
+      "Id": "bvar",
+      "Value": 2
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bsmm",
+      "Value": 0
+    }
+  ]
+}

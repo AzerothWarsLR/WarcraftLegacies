@@ -1,0 +1,49 @@
+{
+  "OldId": "ACac",
+  "NewId": "A0LB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": 0.08
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNEvasion.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(level 1)(Light Blue - Shandris Standard)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Sentinel Standard Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Sentinel Standard Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives 7.5% extra damage to the attacks of nearby friendly units."
+    }
+  ]
+}

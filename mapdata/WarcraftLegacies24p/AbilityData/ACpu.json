@@ -1,0 +1,38 @@
+{
+  "OldId": "ACpu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Prg3",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Purge (|cffffcc00Q|r)"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "OldId": "BNms",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fspd",
+      "Value": 1
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\MagicShield_Blue.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

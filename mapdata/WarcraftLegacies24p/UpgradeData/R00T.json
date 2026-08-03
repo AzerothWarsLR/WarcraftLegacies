@@ -1,0 +1,72 @@
+{
+  "OldId": "Rhri",
+  "NewId": "R00T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "gtib",
+      "Value": 45
+    },
+    {
+      "Id": "glmb",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Ironforge Steam Tank)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Overclock"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Overclock"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows Steam Tanks to Overclock, causing them to attack \u003CA0F5,DataB1,%\u003E% faster but take \u003CA0F5,DataC1,%\u003E% more damage for \u003CA0F5,Dur1\u003E seconds."
+    }
+  ]
+}

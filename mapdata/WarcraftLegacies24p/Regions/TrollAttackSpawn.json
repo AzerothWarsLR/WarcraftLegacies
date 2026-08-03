@@ -1,0 +1,16 @@
+{
+  "Left": 20928,
+  "Bottom": 12224,
+  "Right": 21248,
+  "Top": 12480,
+  "Name": "TrollAttackSpawn",
+  "CreationNumber": 456,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

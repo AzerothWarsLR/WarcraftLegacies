@@ -1,0 +1,16 @@
+{
+  "Left": -17856,
+  "Bottom": 12736,
+  "Right": -16736,
+  "Top": 15968,
+  "Name": "DarnassusWorgen",
+  "CreationNumber": 256,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

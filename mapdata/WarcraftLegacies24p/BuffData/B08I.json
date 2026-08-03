@@ -1,0 +1,44 @@
+{
+  "OldId": "Bfzy",
+  "NewId": "B08I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNhorrify.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Borrowed Time"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effect of Borrowed Time; it is healing instead of taking damage."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

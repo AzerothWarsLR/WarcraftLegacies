@@ -1,0 +1,107 @@
+{
+  "OldId": "nndr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A07C"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ubba",
+      "Value": 100
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 80
+    },
+    {
+      "Id": "ugor",
+      "Value": 90
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1600
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "ua2s",
+      "Value": 8
+    },
+    {
+      "Id": "usrg",
+      "Value": 140
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy ranged flying unit. Has Spell Resistance.|n |n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

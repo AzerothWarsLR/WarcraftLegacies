@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "NewId": "R04L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: To the Skies!"
+    }
+  ]
+}

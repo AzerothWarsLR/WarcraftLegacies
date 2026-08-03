@@ -1,0 +1,95 @@
+{
+  "OldId": "Arai",
+  "NewId": "A04D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08A"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Rai3",
+      "Type": 3,
+      "Value": "nvdl"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Raiu",
+      "Type": 3,
+      "Value": "nvdl"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCDestroOrb.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Voidcaller)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Soul Ritual"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Soul Ritual"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises 1 Voidcaller from a corpse. They last 60 seconds."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCDestroOrb.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    }
+  ]
+}

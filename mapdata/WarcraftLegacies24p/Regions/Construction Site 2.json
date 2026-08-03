@@ -1,0 +1,16 @@
+{
+  "Left": 10752,
+  "Bottom": -12160,
+  "Right": 11360,
+  "Top": -11488,
+  "Name": "Construction Site 2",
+  "CreationNumber": 1,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

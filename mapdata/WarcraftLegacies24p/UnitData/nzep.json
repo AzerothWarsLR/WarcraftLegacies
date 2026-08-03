@@ -1,0 +1,245 @@
+{
+  "OldId": "nzep",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aloc,Avul"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.97
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua2d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 54
+    },
+    {
+      "Id": "ua2b",
+      "Value": 54
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.03
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.633
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 80
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "ua1z",
+      "Value": 2000
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "ua2r",
+      "Value": 300
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "ua2s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 170
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 300
+    },
+    {
+      "Id": "usst",
+      "Value": 300
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "instant"
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl"
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Trading Zeppelin"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Flying Lumber Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will collect Gold over time. |n|n|cff99b4d1Can only build 16."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Trading Zeppelin"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "OldId": "AOre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Saurfang)"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Reincarnation - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "When killed, the Hero will come back to life.|n |n|cffffcc00Level 1|r - \u003CAOre,Cool1\u003E cooldown. |n|cffffcc00Level 2|r - \u003CAOre,Cool2\u003E cooldown. |n|cffffcc00Level 3|r - \u003CAOre,Cool3\u003E cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Reincarnation - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Reincarnation - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Reincarnation - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When killed, the Hero will come back to life. Reincarnation has a \u003CAOre,Cool1\u003E second cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When killed, the Hero will come back to life. Reincarnation has a \u003CAOre,Cool2\u003E second cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When killed, the Hero will come back to life. Reincarnation has a \u003CAOre,Cool3\u003E second cooldown."
+    }
+  ]
+}

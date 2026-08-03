@@ -1,0 +1,94 @@
+{
+  "OldId": "Apxf",
+  "NewId": "A0KR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "pxf1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "pxf2",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B09H"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Charred Ancient)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Burning Spirits"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Burning Spirits"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHatred.blp"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_BurningSoul.mdx"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.7
+    }
+  ]
+}

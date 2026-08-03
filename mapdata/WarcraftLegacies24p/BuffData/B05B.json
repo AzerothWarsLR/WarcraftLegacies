@@ -1,0 +1,29 @@
+{
+  "OldId": "BIrl",
+  "NewId": "B05B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeartOfAszune.blp"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Astral Empowerment"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Astral Empowerment"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "SharedModels\\EntangleWisp"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "OldId": "AUts",
+  "NewId": "A0KU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04I"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04I"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04I"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04I"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uts1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uts1",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uts1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uts1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Uts3",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Uts3",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Uts3",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASUnholy.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Magtheridon, Pink - Mannoroth)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Fel Battleplate"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholy.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Fel Battleplate - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The Pit Lord enhances his chitinous armor plates with fel fire etchings, giving the Pit Lord armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - \u003CAUts,DataA1,%\u003E% damage returned, \u003CAUts,DataC1\u003E bonus armor. |n|cffffcc00Level 2|r -  \u003CAUts,DataA2,%\u003E% damage returned, \u003CAUts,DataC2\u003E bonus armor. |n|cffffcc00Level 3|r -  \u003CAUts,DataA3,%\u003E% damage returned, \u003CAUts,DataC3\u003E bonus armor.  |n|cffffcc00Level 4|r -  \u003CAUts,DataA4,%\u003E% damage returned, \u003CAUts,DataC4\u003E bonus armor."
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel Battleplate - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel Battleplate - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel Battleplate - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel Battleplate - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC1\u003E bonus armor and returning \u003CAUts,DataA1,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC2\u003E bonus armor and returning \u003CAUts,DataA2,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC3\u003E bonus armor and returning \u003CAUts,DataA3,%\u003E% of melee attack damage to enemies."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC4\u003E bonus armor and returning \u003CAUts,DataA4,%\u003E% of melee attack damage to enemies."
+    }
+  ]
+}

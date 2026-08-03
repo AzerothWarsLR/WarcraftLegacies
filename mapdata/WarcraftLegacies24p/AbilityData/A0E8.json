@@ -1,0 +1,85 @@
+{
+  "OldId": "Aoar",
+  "NewId": "A0E8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Y"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScepterOfMastery.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Benedictus)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Aura of the Light"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Aura of the Light"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases the health regen of nearby friendly units by 1.75 per second."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    }
+  ]
+}

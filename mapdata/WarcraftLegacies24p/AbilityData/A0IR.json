@@ -1,0 +1,57 @@
+{
+  "OldId": "ACua",
+  "NewId": "A0IR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05G"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": -4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,alive,enemies,ground,hero,invulnerable,mechanical,nonancient,nonhero,organic,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Control Nexus - Dark Portal)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Decreases Enemy regeneration by 4hp/sec."
+    }
+  ]
+}

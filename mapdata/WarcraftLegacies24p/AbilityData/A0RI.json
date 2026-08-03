@@ -1,0 +1,106 @@
+{
+  "OldId": "ACbc",
+  "NewId": "A0RI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 2500
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ucs3",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "amsp",
+      "Value": 500
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "attack"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Ironforge - Steam Tank)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Flamethrower"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Flamethrower"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Blasts fire at enemy units in a cone in front of the steam tank, dealing \u003CA0RI,DataA1\u003E damage and \u003CA0RI,DataE1\u003E damage per second for \u003CA0RI,Dur1\u003E seconds."
+    }
+  ]
+}

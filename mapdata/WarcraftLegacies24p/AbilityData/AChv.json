@@ -1,0 +1,53 @@
+{
+  "OldId": "AChv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 155
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Far Seer) (Dreanei seer) (bishop)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    }
+  ]
+}

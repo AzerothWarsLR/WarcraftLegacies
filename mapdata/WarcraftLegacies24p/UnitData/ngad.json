@@ -1,0 +1,49 @@
+{
+  "OldId": "ngad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "unbr",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": "ngir"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3.25
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

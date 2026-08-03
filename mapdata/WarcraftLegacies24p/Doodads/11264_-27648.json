@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1718835034,
+    "Variation": 0,
+    "Position": {
+      "X": 11127.639,
+      "Y": -27731.736,
+      "Z": -40.178555
+    },
+    "Rotation": 4.4854965,
+    "Scale": {
+      "X": 1.5499995,
+      "Y": 1.5499995,
+      "Z": 1.5499995
+    },
+    "SkinId": 1718835034,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25896
+  },
+  {
+    "TypeId": 1752387418,
+    "Variation": 8,
+    "Position": {
+      "X": 11068.796,
+      "Y": -27702.39,
+      "Z": 1.3630264
+    },
+    "Rotation": 5.0614552,
+    "Scale": {
+      "X": 0.9,
+      "Y": 0.9,
+      "Z": 0.9
+    },
+    "SkinId": 1752387418,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25545
+  },
+  {
+    "TypeId": 1802654298,
+    "Variation": 5,
+    "Position": {
+      "X": 11475.21,
+      "Y": -27918.818,
+      "Z": 65.82619
+    },
+    "Rotation": 2.885786,
+    "Scale": {
+      "X": 0.9,
+      "Y": 0.9,
+      "Z": 0.9
+    },
+    "SkinId": 1802654298,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29535
+  },
+  {
+    "TypeId": 1752387674,
+    "Variation": 0,
+    "Position": {
+      "X": 11152.969,
+      "Y": -28158.162,
+      "Z": 50.747524
+    },
+    "Rotation": 4.9392824,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 0.95
+    },
+    "SkinId": 1752387674,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25932
+  },
+  {
+    "TypeId": 808595524,
+    "Variation": 3,
+    "Position": {
+      "X": 11462.944,
+      "Y": -27765.455,
+      "Z": 221.20471
+    },
+    "Rotation": 3.263766,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 808595524,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 25552
+  }
+]

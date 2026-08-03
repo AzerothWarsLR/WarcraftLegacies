@@ -1,0 +1,55 @@
+{
+  "OldId": "ANia",
+  "NewId": "A0MA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Item)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Incinerate"
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    }
+  ]
+}

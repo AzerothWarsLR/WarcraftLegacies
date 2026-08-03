@@ -1,0 +1,130 @@
+{
+  "OldId": "unp2",
+  "NewId": "u00G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0M7,Arlm"
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 90
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "u007,u00D"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall,undead"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Legion Stronghold"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Legion Stronghold"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Legion Stronghold, base of operations for the Legions activities in Azeroth."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MetropolisDemon4TierV1.01.mdl"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,third"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

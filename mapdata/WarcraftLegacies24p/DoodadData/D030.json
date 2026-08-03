@@ -1,0 +1,63 @@
+{
+  "OldId": "YSw0",
+  "NewId": "D030",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "buildings\\human\\HumanBarracks\\HumanBarracks.mdl"
+    },
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Dark Iron City"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dsel",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Id": "dvar",
+      "Value": 2
+    }
+  ]
+}

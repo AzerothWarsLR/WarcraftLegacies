@@ -1,0 +1,97 @@
+{
+  "OldId": "hars",
+  "NewId": "h00T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 150000
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R088,R03K,R03P"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "ulum",
+      "Value": 70
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_ScarletMonastery.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scarlet Monastery"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

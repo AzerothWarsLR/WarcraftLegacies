@@ -1,0 +1,76 @@
+{
+  "OldId": "AOfs",
+  "NewId": "A082",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfTeleportation.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Item-Helm of Domination)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Prescience"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Reveals the area of the map that it is cast upon. Also reveals invisible units. |n|n|cffffcc00Level 1|r - Reveals a small area for \u003CAOfs,Cost1\u003E mana. |n|cffffcc00Level 2|r - Reveals a large area for \u003CAOfs,Cost2\u003E mana. |n|cffffcc00Level 3|r - Reveals a very large area for \u003CAOfs,Cost3\u003E mana.|n|cffffcc00Level 4|r - Reveals a huge area for \u003CAOfs,Cost4\u003E mana.|n|cffffcc00Level 5|r - Reveals a massive area for \u003CAOfs,Cost5\u003E mana."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Prescience (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

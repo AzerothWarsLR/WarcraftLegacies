@@ -1,0 +1,41 @@
+{
+  "OldId": "nnrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aien,Asb2"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Green - Naga)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

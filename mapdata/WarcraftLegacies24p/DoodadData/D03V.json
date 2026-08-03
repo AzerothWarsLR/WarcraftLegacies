@@ -1,0 +1,59 @@
+{
+  "OldId": "YSw2",
+  "NewId": "D03V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": -1.57
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Naga Wall Flat"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 150
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 220
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 220
+    }
+  ]
+}

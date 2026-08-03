@@ -1,0 +1,107 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R01B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A0C3"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmnx"
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 250
+    },
+    {
+      "Id": "gtib",
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h068"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Dalaran) (Karazhan)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "A Treatise on Barriers"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research A Treatise on Barriers"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves the Mana Shield of Battlemages and Kirin Tor by increasing its damage absorbed per mana point to \u003CA0C3,DataA2\u003E.|n|nIncreases Battemages\u0027 and Kirin Tors\u0027 maximum mana by 150."
+    }
+  ]
+}

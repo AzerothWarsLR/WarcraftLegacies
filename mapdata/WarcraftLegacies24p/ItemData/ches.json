@@ -1,0 +1,16 @@
+{
+  "OldId": "ches",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    }
+  ]
+}

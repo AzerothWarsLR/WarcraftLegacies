@@ -1,0 +1,186 @@
+{
+  "OldId": "hrif",
+  "NewId": "h095",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0P6,A0Q2,Aihn"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0AC"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 7
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.15
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.23
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "uhpm",
+      "Value": 335
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 975
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rguv,Rhme"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h06G"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMilitia (Kul Tiras).blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BreelandBowman.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 71
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bowman"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bowman"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Skilled militia with a bow dedicated to protect their farms.|n|cfff5962dAbilities:|R United for the Cause|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Footman"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

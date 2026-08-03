@@ -1,0 +1,195 @@
+{
+  "OldId": "Nbbc",
+  "NewId": "N03D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0W3,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 5
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0W1,Aamk,A07R,A0TW,A0DB"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 250
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.8
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R011"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 250
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R00P"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrc_Warlord.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Fel Warchief"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\FelOrcWarlord.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warchief of the Fel Horde"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Kargath Bladefist"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Fel Warchief"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at bolstering troups and melee combat.|n|cfff5962dAbilities:|r Command Aura|n|cfff5962dCan Learn:|R Breath of Fire, Dark Grip, Vampiric Aura, Field of Blood|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Shaman"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Kargath"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

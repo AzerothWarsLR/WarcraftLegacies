@@ -1,0 +1,16 @@
+{
+  "Left": 12288,
+  "Bottom": -3328,
+  "Right": 12352,
+  "Top": -3264,
+  "Name": "Dwarf3",
+  "CreationNumber": 201,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

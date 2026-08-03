@@ -1,0 +1,27 @@
+{
+  "OldId": "ncfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Level 1)"
+    }
+  ]
+}

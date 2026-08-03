@@ -1,0 +1,25 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "Rers"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Mountain Giant)"
+    }
+  ]
+}

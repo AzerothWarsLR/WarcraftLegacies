@@ -1,0 +1,178 @@
+{
+  "OldId": "unp2",
+  "NewId": "u01X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CB,Arlm"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0C8"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "ua1b",
+      "Value": 80
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 105
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 5000
+    },
+    {
+      "Id": "ulum",
+      "Value": 500
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "uwu1",
+      "Value": 1
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "uaco,h00H"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rgfo"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": -360
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": -360
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Heart of Naxxramas"
+    },
+    {
+      "Id": "ushr",
+      "Value": 0
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "uept",
+      "Value": 0
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

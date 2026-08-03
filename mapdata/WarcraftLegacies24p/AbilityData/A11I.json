@@ -1,0 +1,68 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A11I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h00U"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(dark Green Wizard)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Water Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Water Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a water elemental to attack the Wizard\u0027s enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "prvt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 85
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "isst",
+      "Value": 140
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

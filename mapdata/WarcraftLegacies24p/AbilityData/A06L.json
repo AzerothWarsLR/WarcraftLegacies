@@ -1,0 +1,54 @@
+{
+  "OldId": "Awfb",
+  "NewId": "A06L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Arathor-Katrana)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a fiery bolt that deals 200 damage and stuns a target enemy unit.|n|cffffcc00Lasts 4(1 for Heros) seconds.|n8 second cooldown."
+    }
+  ]
+}

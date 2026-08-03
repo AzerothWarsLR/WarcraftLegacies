@@ -1,0 +1,120 @@
+{
+  "OldId": "hgyr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Agyv,Aflk,Agyb"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucar",
+      "Value": 2
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua2b",
+      "Value": 13
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ua2r",
+      "Value": 400
+    },
+    {
+      "Id": "urtm",
+      "Value": 20
+    },
+    {
+      "Id": "ua2s",
+      "Value": 3
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rhgb,Rhfc,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gyrocopter"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Gyrocopter"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fine Gnomish engineering with a deadshot pilot.|n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

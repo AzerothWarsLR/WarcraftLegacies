@@ -1,0 +1,16 @@
+{
+  "Left": -9056,
+  "Bottom": -1408,
+  "Right": -8576,
+  "Top": -1248,
+  "Name": "OrgGate",
+  "CreationNumber": 117,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

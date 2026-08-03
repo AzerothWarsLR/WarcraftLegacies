@@ -1,0 +1,36 @@
+{
+  "OldId": "Abu2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dig Tunnel"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Carrion Beetle digs through the ground and becomes invisible."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Resurface"
+    }
+  ]
+}

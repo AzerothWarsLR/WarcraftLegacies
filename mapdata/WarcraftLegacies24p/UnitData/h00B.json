@@ -1,0 +1,175 @@
+{
+  "OldId": "hrif",
+  "NewId": "h00B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aens,A0F4,Aihn"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 4
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rguv,Rhme,Rhri,R00Z"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "ua1z",
+      "Value": 2060
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ua1h",
+      "Value": 90
+    },
+    {
+      "Id": "ua1q",
+      "Value": 120
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Highly skilled sharpshooter, and fan of the boomstick. |cfff5962dAbilities:|R Ensnare|n|cfff5962dCan Learn:|R Armor Penetration Rounds|n|n|cffffcc00Attacks land and air units.|nCan be loaded into Keep Towers.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Irondrake"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Irondrake"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BloodstoneIrondrake.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodstoneIrondrake.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\Firebrand Shot Orange.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.01
+    }
+  ]
+}

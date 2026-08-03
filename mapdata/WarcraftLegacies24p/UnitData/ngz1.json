@@ -1,0 +1,52 @@
+{
+  "OldId": "ngz1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACbh"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubba",
+      "Value": 13
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 41
+    },
+    {
+      "Id": "uhpm",
+      "Value": 985
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.33
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Amani War Bear"
+    }
+  ]
+}

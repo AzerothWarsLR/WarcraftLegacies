@@ -1,0 +1,36 @@
+{
+  "OldId": "Ahri",
+  "NewId": "A0SB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit spawns 2 Flying Horrors upon dying"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Flying Horror"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Flying Horror"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlyer.blp"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "OldId": "odkt",
+  "NewId": "o001",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Alit,Acny,A0Y5,ACsk"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0Y6"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ubld",
+      "Value": 10
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 48
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 25
+    },
+    {
+      "Id": "uhpm",
+      "Value": 865
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 450
+    },
+    {
+      "Id": "umpm",
+      "Value": 650
+    },
+    {
+      "Id": "ua1z",
+      "Value": 3000
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": "upri",
+      "Value": 15
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1000
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R03G"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "u022"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNObsidianStatue.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-witchdoctor.blp"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Shadow Storm,- Shadow Storm|n- Cyclone,- Shadow Storm|n- Cyclone|n- Inner Will"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(C\u0027thun Tol\u0027vir Statue)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ObsidianSphinx.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tol\u0027vir Statue"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": "uscb",
+      "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train - Tol\u0027vir Statue"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Ancient Animated Statue from the time of Old.|n|cffffcc00Casts:|r Shadow storm, Cyclone |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ObsidianStatue"
+    },
+    {
+      "Id": "uclg",
+      "Value": 255
+    }
+  ]
+}

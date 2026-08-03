@@ -1,0 +1,34 @@
+{
+  "OldId": "ACpv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(green sea giant) (yogg elites)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 50% chance that an attack will deal 40 damage to nearby units."
+    }
+  ]
+}

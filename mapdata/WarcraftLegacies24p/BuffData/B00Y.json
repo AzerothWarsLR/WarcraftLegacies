@@ -1,0 +1,29 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B00Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathPact.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Strength of the Gurubashi"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is using Strength of the Gurubashi; it has greatly increased attack and move speed."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl"
+    }
+  ]
+}

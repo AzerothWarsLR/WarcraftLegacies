@@ -1,0 +1,14 @@
+{
+  "OldId": "AUds",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonhero,player,vulnerable"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "OldId": "pclr",
+  "NewId": "I00T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIlm"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIem"
+    },
+    {
+      "Id": "igol",
+      "Value": 225
+    },
+    {
+      "Id": "ilev",
+      "Value": 2
+    },
+    {
+      "Id": "ipow",
+      "Value": 1
+    },
+    {
+      "Id": "ipri",
+      "Value": 200
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R00J"
+    },
+    {
+      "Id": "isto",
+      "Value": 1
+    },
+    {
+      "Id": "istr",
+      "Value": 480
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Charged"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Gives bonus experience points."
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tomeBrown\\tomeBrown.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Book of Experience"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Book of |cffffcc00E|rxperience"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Increases the level of the Hero by \u003CAIlm,DataA1\u003E when used."
+    }
+  ]
+}

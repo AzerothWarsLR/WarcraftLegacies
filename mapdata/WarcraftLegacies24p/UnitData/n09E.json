@@ -1,0 +1,95 @@
+{
+  "OldId": "nstw",
+  "NewId": "n09E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "ubba",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ulum",
+      "Value": 25
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Alit,ACls,ACcl"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02F"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(troll)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy ranged unit that hurls bolts of lightning. Can cast Chain Lightning and Lightning Shield.|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

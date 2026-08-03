@@ -1,0 +1,43 @@
+{
+  "OldId": "nadk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    }
+  ]
+}

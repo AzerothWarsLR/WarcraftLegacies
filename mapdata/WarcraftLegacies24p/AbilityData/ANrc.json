@@ -1,0 +1,204 @@
+{
+  "OldId": "ANrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nrc1",
+      "Type": 3,
+      "Value": "AUin"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nrc1",
+      "Type": 3,
+      "Value": "AUin"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nrc1",
+      "Type": 3,
+      "Value": "AUin"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nrc2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nrc2",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nrc2",
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.66
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInfernalMeteorShower.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Legion, Archimonde, Mannoroth)"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInfernalMeteorShower.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Rain of Chaos - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 basic infernals. |n|cffffcc00Level 2|r - Calls down 5 powerful infernals. |n|cffffcc00Level 3|r - Calls down 6 elite infernals."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rain of Chaos - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rain of Chaos - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rain of Chaos - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 4 basic Infernals from the sky."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 5 powerful Infernals from the sky."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 6 Elite Infernals from the sky."
+    }
+  ]
+}

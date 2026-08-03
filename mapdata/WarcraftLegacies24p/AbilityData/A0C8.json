@@ -1,0 +1,102 @@
+{
+  "OldId": "Arai",
+  "NewId": "A0C8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Rai2",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Black Citadel)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Raise Dead (|cffffcc00X|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Raise Dead (|cffffcc00X|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises 6 skeletons from a corpse for 45 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises 6 skeletons from a corpse for 85 seconds."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "X"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "OldId": "ntrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.35
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "ulum",
+      "Value": 15
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Call Giant Sea Turtle |cffffcc00F|r"
+    }
+  ]
+}

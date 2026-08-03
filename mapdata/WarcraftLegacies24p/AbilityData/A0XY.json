@@ -1,0 +1,218 @@
+{
+  "OldId": "AUcs",
+  "NewId": "A0XY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027thun Skeram)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathPact\\DeathPactTarget.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Gaze of the Slithering One"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Gaze of the Slithering One (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Sends a horde of Evil to damage enemies. |n|n|cffffcc00Level 1|r - \u003CAUcs,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CAUcs,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CAUcs,DataA3\u003E damage per unit.|n|cffffcc00Level 4|r - \u003CAUcs,DataA4\u003E damage per unit."
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Id": "aspt",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Gaze of the Slithering One (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Gaze of the Slithering One (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Gaze of the Slithering One (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Gaze of the Slithering One (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a deadly gaze to deal \u003CAUcs,DataA1\u003E damage to each enemy unit in a cone."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a deadly gaze to deal \u003CAUcs,DataA2\u003E damage to each enemy unit in a cone."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a deadly gaze to deal \u003CAUcs,DataA3\u003E damage to each enemy unit in a cone."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a deadly gaze to deal \u003CAUcs,DataA4\u003E damage to each enemy unit in a cone."
+    }
+  ]
+}

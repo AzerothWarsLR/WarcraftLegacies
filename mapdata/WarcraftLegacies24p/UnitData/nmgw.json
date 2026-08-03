@@ -1,0 +1,24 @@
+{
+  "OldId": "nmgw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 15
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    }
+  ]
+}

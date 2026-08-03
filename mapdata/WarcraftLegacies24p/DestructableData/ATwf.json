@@ -1,0 +1,37 @@
+{
+  "OldId": "ATwf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 9999
+    },
+    {
+      "Id": "bgse",
+      "Value": 1
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "invulnerable"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "bgsc",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

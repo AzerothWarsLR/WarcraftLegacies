@@ -1,0 +1,161 @@
+{
+  "OldId": "oshm",
+  "NewId": "o05Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0E3,A0B5,Aion,Apg2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 650
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0B5"
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Gnoll)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elementalist connected with the spirits of Azeroth.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Lightning Shield, Bloodlust|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gnoll Warden"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Gnoll Warden"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGnollWarden.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\GnollWarden\\GnollWarden.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    }
+  ]
+}

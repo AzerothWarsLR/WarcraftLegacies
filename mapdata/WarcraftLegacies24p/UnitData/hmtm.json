@@ -1,0 +1,148 @@
+{
+  "OldId": "hmtm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aihn,Afla,Afsh"
+    },
+    {
+      "Id": "ubld",
+      "Value": 12
+    },
+    {
+      "Id": "ubdi",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 7
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "ua1h",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 430
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 40
+    },
+    {
+      "Id": "upri",
+      "Value": 8
+    },
+    {
+      "Id": "ua1q",
+      "Value": 90
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1050
+    },
+    {
+      "Id": "ua1s",
+      "Value": 10
+    },
+    {
+      "Id": "umvs",
+      "Value": 190
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,tree,ward"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhpm,Rhar,Rhfl,Rhme,R012,Rhfs,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "harm"
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Ironforge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Exceptional duo in the art of demolitions.|n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 9.|r|n|cffffcc00Attacks land units and trees. |r"
+    }
+  ]
+}

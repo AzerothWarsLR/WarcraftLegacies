@@ -1,0 +1,22 @@
+{
+  "OldId": "wswd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 60
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase (|cffcece00W|r) Sentry Wards"
+    }
+  ]
+}

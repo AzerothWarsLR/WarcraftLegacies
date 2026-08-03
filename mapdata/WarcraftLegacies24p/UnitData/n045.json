@@ -1,0 +1,138 @@
+{
+  "OldId": "nntt",
+  "NewId": "n045",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 65
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ugol",
+      "Value": 65
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulum",
+      "Value": 215
+    },
+    {
+      "Id": "ulur",
+      "Value": 300
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "usin",
+      "Value": 1200
+    },
+    {
+      "Id": "urtm",
+      "Value": 120
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "nmpe,h02P"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,Rosp"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "LEca,Argl,Abds"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Default.tga"
+    },
+    {
+      "Id": "uclb",
+      "Value": 160
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Nzoth)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 160
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Temple of Azshara"
+    },
+    {
+      "Id": "uclr",
+      "Value": 160
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 13
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

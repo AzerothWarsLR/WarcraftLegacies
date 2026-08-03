@@ -1,0 +1,85 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R021",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "A020"
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "glmb",
+      "Value": 2000
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "gtib",
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBundleOfLumber.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Warsong-Quest)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Horde War Machine"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Horde War Machine"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "The massive amounts of Lumber aquired by the Warsong clan is funnelled into the Horde war effort.|n|n|cfff5962dUnlocks:|R 1 level of attack and defence upgrades and researches Reinforced Defences and Spiked Barricade"
+    }
+  ]
+}

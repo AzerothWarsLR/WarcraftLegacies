@@ -1,0 +1,18 @@
+{
+  "OldId": "Rhfc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 75
+    }
+  ]
+}

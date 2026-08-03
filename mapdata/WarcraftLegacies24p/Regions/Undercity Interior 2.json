@@ -1,0 +1,16 @@
+{
+  "Left": -28128,
+  "Bottom": 17344,
+  "Right": -27776,
+  "Top": 17728,
+  "Name": "Undercity Interior 2",
+  "CreationNumber": 444,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "Bssd",
+  "NewId": "B068",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Bleeding"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unis is bleeding and has it\u0027s mouvement speed slowed."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Teal) (raider) (Stacking)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "OldId": "AOsf",
+  "NewId": "A0DA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nmtw"
+    },
+    {
+      "Level": 2,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nmtw"
+    },
+    {
+      "Level": 3,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nmtw"
+    },
+    {
+      "Level": 4,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nmtw"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMurgulTideWarrior.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Overseer idra)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon Mur\u0027gul"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMurgulTideWarrior.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Summon Mur\u0027gul - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons a legion of 4/6/8/10 Mur\u0027gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Mur\u0027gul - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Mur\u0027gul - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Mur\u0027gul - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Mur\u0027gul - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a legion of 4 Naga Mur\u0027gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a legion of 6 Naga Mur\u0027gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a legion of 8 Naga Mur\u0027gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a legion of 10 Naga Mur\u0027gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "OldId": "AEim",
+  "NewId": "A0QP",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids - Fandral)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Engulfs the hero in flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - 20 damage per second. |n|cffffcc00Level 2|r - 30 damage per second. |n|cffffcc00Level 3|r - 40 damage per second.|n|cffffcc00Level 4|r - 50 damage per second."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Immolation - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Immolation to engulf this unit in flames, causing 20 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Immolation to engulf this unit in flames, causing 30 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Immolation to engulf this unit in flames, causing 40 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Immolation to engulf this unit in flames, causing 50 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

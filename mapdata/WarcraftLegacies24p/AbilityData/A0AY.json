@@ -1,0 +1,21 @@
+{
+  "OldId": "ACav",
+  "NewId": "A0AY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Camping Defence Aura"
+    }
+  ]
+}

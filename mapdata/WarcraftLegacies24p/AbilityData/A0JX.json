@@ -1,0 +1,32 @@
+{
+  "OldId": "Assp",
+  "NewId": "A0JX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "h08Y"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Sod1",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Goblin Shredder"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Gunner Pilot"
+    }
+  ]
+}

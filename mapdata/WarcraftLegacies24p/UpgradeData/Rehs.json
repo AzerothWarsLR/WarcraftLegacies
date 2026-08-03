@@ -1,0 +1,18 @@
+{
+  "OldId": "Rehs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "glmb",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
+}

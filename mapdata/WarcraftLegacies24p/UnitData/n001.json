@@ -1,0 +1,129 @@
+{
+  "OldId": "nfoh",
+  "NewId": "n001",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0EP,A09F"
+    },
+    {
+      "Id": "ubld",
+      "Value": 120
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 4500
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 1000
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Default.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "nbee"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,neutral"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013,Rosp,R064,Renb"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Cinematic\\SunWell\\SunWell.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Sunwell"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Reconstruct the Elven Grand Sunwell."
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Reconstruct the Elven Grand Sunwell to again have a  life regeneration aura throughout your lands."
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

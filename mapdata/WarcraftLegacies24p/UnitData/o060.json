@@ -1,0 +1,167 @@
+{
+  "OldId": "otau",
+  "NewId": "o060",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0NQ,Aion"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 13
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 28
+    },
+    {
+      "Id": "ugor",
+      "Value": 28
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1655
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R042"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mighty warriors of the Burning Legion.|n|cfff5962dAbilities:|R Pulverize|n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Annihilan Guard"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Annihilan Guard"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMannoroth.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\demon\\Mannoroth\\Mannoroth.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroPitLord"
+    }
+  ]
+}

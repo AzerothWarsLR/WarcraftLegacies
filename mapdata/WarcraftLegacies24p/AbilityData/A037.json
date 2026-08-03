@@ -1,0 +1,82 @@
+{
+  "OldId": "Apxf",
+  "NewId": "A037",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "pxf1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "pxf2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanArtilleryUpOne.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(yogg tank)"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Rocket System"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rocket System"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Fires down streams of rockets, damaging nearby enemies."
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "OldId": "Osam",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A10H,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A07X,A0K3,A10I,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 13
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 4.2
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGrunt.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Veteran"
+    },
+    {
+      "Id": "uclb",
+      "Value": 222
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf-True Horde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units/Orc/GarThok/GarThok.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 222
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Veteran of the Horde"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Eitrigg"
+    },
+    {
+      "Id": "uclr",
+      "Value": 222
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Veteran"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Grunt"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

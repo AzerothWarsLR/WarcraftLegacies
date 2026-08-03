@@ -1,0 +1,16 @@
+{
+  "Left": 10432,
+  "Bottom": 4608,
+  "Right": 12160,
+  "Top": 7104,
+  "Name": "AlteracAmbient",
+  "CreationNumber": 325,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

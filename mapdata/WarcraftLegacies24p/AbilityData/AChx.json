@@ -1,0 +1,127 @@
+{
+  "OldId": "AChx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BOhx"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 17
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ply1",
+      "Value": 99
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nsea,ncrb,nrat"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ply3",
+      "Type": 3,
+      "Value": "nalb,nvul,nsno"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ply4",
+      "Type": 3,
+      "Value": "nsha,npng"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ply5",
+      "Type": 3,
+      "Value": "nshw,npnw"
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,enemy,organic,neutral"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nsea,ncrb,nrat"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Frostwolf-Far Seer)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur1\u003E seconds. Lasts 1 second on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur2\u003E seconds. Lasts 2 seconds on heroes."
+    }
+  ]
+}

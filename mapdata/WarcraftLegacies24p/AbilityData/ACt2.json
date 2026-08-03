@@ -1,0 +1,84 @@
+{
+  "OldId": "ACt2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ctc1",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ctc3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ctc4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathPact.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\BattleRoar\\RoarCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal Shattered Hand)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Executioner\u0027s Calling"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Executioner\u0027s Calling"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Slams the ground, dealing 65 points of damage and slowing the movement and attack rate of nearby enemy units."
+    }
+  ]
+}

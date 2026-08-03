@@ -1,0 +1,24 @@
+{
+  "OldId": "BNsi",
+  "NewId": "B06U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Forest Path"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit as a mouvement speed buff and is Silenced; it cannot cast spells."
+    }
+  ]
+}

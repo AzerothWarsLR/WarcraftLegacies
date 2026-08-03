@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1668042564,
+    "Variation": 0,
+    "Position": {
+      "X": 16760.713,
+      "Y": -28999.717,
+      "Z": -308.47324
+    },
+    "Rotation": 6.1959186,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 0.95
+    },
+    "SkinId": 1668042564,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32717
+  },
+  {
+    "TypeId": 1936872015,
+    "Variation": 4,
+    "Position": {
+      "X": 16768,
+      "Y": -28800,
+      "Z": -458.59976
+    },
+    "Rotation": 5.0492134,
+    "Scale": {
+      "X": 1.7999992,
+      "Y": 1.7999992,
+      "Z": 1.7999992
+    },
+    "SkinId": 1936872015,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33615
+  },
+  {
+    "TypeId": 1144008772,
+    "Variation": 2,
+    "Position": {
+      "X": 17077.389,
+      "Y": -29004.68,
+      "Z": -71.17864
+    },
+    "Rotation": 1.6681716,
+    "Scale": {
+      "X": 2,
+      "Y": 2,
+      "Z": 2
+    },
+    "SkinId": 1144008772,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 4869
+  },
+  {
+    "TypeId": 1668042564,
+    "Variation": 0,
+    "Position": {
+      "X": 16925.871,
+      "Y": -28908.223,
+      "Z": -319.4059
+    },
+    "Rotation": 4.1364303,
+    "Scale": {
+      "X": 0.92447275,
+      "Y": 0.92447275,
+      "Z": 0.92447275
+    },
+    "SkinId": 1668042564,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32711
+  },
+  {
+    "TypeId": 1668042564,
+    "Variation": 0,
+    "Position": {
+      "X": 16914.29,
+      "Y": -28816.838,
+      "Z": -250.48672
+    },
+    "Rotation": 0.57595867,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 0.95
+    },
+    "SkinId": 1668042564,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32710
+  }
+]

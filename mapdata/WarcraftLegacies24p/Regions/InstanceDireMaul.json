@@ -1,0 +1,16 @@
+{
+  "Left": -18784,
+  "Bottom": 20544,
+  "Right": -15904,
+  "Top": 24544,
+  "Name": "InstanceDireMaul",
+  "CreationNumber": 287,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

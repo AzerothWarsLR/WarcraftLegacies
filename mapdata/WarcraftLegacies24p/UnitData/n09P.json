@@ -1,0 +1,112 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n09P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0F2,Awrp"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 5000
+    },
+    {
+      "Id": "ubdg",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,townhall"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "doodads\\cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Portal"
+    },
+    {
+      "Id": "uclr",
+      "Value": 0
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

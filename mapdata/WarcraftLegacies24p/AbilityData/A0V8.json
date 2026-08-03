@@ -1,0 +1,85 @@
+{
+  "OldId": "ANdb",
+  "NewId": "A0V8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ocr3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ocr4",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(azshara)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ancient Combat Expertise"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ancient Combat Expertise"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "After Eons, The unit is a master of combat. Gives a 25% chance to dodge an attack and a 50% chance to deal 1.5x normal damage."
+    }
+  ]
+}

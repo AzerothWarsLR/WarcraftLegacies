@@ -1,0 +1,188 @@
+{
+  "OldId": "nmsc",
+  "NewId": "n0CD",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 30
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "uhos",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0WU,A0XI,A0XC,Aien"
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 380
+    },
+    {
+      "Id": "ua1b",
+      "Value": 12
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R08O,Rguv,R00K"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0WU"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Nzoth)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bloodkin"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Healing and support caster.|n|cfff5962dAbilities:|R Shadow Mend, Dispel Magic, Bloodlust|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\MurgulBloodGill\\MurgulBloodGill.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMurgulBloodGill.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bloodkin"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Shadow Mend,- Shadow Mend|n- Dispel Magic,- Shadow Mend|n- Dispel Magic|n - Bloodlust"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-shaman.blp"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "OldId": "hwtw",
+  "NewId": "h04B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": -15
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 10
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00N,Rhac,Rgfo"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGolemThunderclap.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Geomancer rock)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Terrain\\LoardaeronRockChunks\\LoardaeronRockChunks3.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Rock"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

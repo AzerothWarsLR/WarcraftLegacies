@@ -1,0 +1,64 @@
+{
+  "OldId": "ANbl",
+  "NewId": "A00A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlink.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - Wardens)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Teleports the unitl a short distance, allowing her to move in and out of combat. |n12 second cooldown.                             "
+    }
+  ]
+}

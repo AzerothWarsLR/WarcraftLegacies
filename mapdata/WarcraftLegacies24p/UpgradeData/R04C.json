@@ -1,0 +1,93 @@
+{
+  "OldId": "Rhpt",
+  "NewId": "R04C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRune.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfNegation.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron-Silver Hand)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Minister Initiate Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Minister Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Minister Initiate Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Minister Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Silver Hand Ministers\u0027 mana capacity, mana regeneration rate, hit points, damage, and gives them the ability to cast Blinding Light."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Silver Hand Ministers\u0027 mana capacity, mana regeneration rate, hit points, damage, and gives them the ability to cast Healing Wave."
+    }
+  ]
+}

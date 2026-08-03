@@ -1,0 +1,41 @@
+{
+  "OldId": "LTlt",
+  "NewId": "B00O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "A,C"
+    },
+    {
+      "Id": "bvcb",
+      "Value": 200
+    },
+    {
+      "Id": "bvcg",
+      "Value": 200
+    },
+    {
+      "Id": "bvcr",
+      "Value": 200
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Dark Pine tree"
+    }
+  ]
+}

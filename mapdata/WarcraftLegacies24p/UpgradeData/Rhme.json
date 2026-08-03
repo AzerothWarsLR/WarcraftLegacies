@@ -1,0 +1,310 @@
+{
+  "OldId": "Rhme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "Afbt"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A04W"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "Asds"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gglm",
+      "Value": 110
+    },
+    {
+      "Id": "glvl",
+      "Value": 10
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 25
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Universal Upgrade)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Copper Forged Weaponry"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Bronze Forged Weaponry"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Iron Forged Weaponry"
+    },
+    {
+      "Level": 4,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Steel Forged Weaponry"
+    },
+    {
+      "Level": 5,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Mithril Forged Weaponry"
+    },
+    {
+      "Level": 6,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Thorium Forged Weaponry"
+    },
+    {
+      "Level": 7,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Elementium Forged Weaponry"
+    },
+    {
+      "Level": 8,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Adamantium Forged Weaponry"
+    },
+    {
+      "Level": 9,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Titanium Forged Weaponry"
+    },
+    {
+      "Level": 10,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Pyrite Forged Weaponry"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Copper Forged Weaponry"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Bronze Forged Weaponry"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Iron Forged Weaponry"
+    },
+    {
+      "Level": 4,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Steel Forged Weaponry"
+    },
+    {
+      "Level": 5,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Mithril Forged Weaponry"
+    },
+    {
+      "Level": 6,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Thorium Forged Weaponry"
+    },
+    {
+      "Level": 7,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Elementium Forged Weaponry"
+    },
+    {
+      "Level": 8,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Adamantium Forged Weaponry"
+    },
+    {
+      "Level": 9,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Titanium Forged Weaponry"
+    },
+    {
+      "Level": 10,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade Pyrite Forged Weaponry"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the attack damage of most units."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases the attack damage of most units."
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases the attack damage of most units."
+    },
+    {
+      "Level": 4,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 5,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 6,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 7,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 8,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 9,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 10,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

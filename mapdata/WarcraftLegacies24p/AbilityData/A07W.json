@@ -1,0 +1,67 @@
+{
+  "OldId": "Aspb",
+  "NewId": "A07W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "ACrk,A0AJ"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spb2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "spb5",
+      "Type": 3,
+      "Value": "sacrifice"
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scarlet Templar spellbook)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Libram"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Libram"
+    }
+  ]
+}

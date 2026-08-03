@@ -1,0 +1,16 @@
+{
+  "Left": -960,
+  "Bottom": 8576,
+  "Right": -896,
+  "Top": 8640,
+  "Name": "Region ToS",
+  "CreationNumber": 368,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 255,
+    "A": 255
+  }
+}

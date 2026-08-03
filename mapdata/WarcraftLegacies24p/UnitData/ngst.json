@@ -1,0 +1,89 @@
+{
+  "OldId": "ngst",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 150
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 35
+    },
+    {
+      "Id": "ugor",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "urtm",
+      "Value": 150
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,R00N"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran-Stone Token)"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

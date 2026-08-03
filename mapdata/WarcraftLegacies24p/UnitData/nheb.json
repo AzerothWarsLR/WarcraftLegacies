@@ -1,0 +1,105 @@
+{
+  "OldId": "nheb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 14
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 25
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R01S,R01R"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "hhes,nbel,e008,nhea"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Quel\u0027thalas)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Cantonment"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Cantonment"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

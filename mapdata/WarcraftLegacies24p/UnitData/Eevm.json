@@ -1,0 +1,95 @@
+{
+  "OldId": "Eevm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACsk,AInv,Ault,ANcl"
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,AEim,AEev,AEvi"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "uint",
+      "Value": 21
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.3
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R07A"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Evil Morphed)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

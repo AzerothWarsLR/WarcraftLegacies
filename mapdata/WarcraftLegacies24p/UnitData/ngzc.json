@@ -1,0 +1,13 @@
+{
+  "OldId": "ngzc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    }
+  ]
+}

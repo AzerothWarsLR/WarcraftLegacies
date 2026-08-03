@@ -1,0 +1,16 @@
+{
+  "OldId": "nanb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    }
+  ]
+}

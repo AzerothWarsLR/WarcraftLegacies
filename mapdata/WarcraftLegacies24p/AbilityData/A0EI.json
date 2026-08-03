@@ -1,0 +1,94 @@
+{
+  "OldId": "AImt",
+  "NewId": "A0EI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "invulnerable,nonsapper,structure,vulnerable"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Kirin Tor)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Teleport"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Astral Walk -  [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Teleports Balnazzar to the targeted allied land unit or structure.  |n|n|cffffcc00Level 1|r - 45 second cooldown, 75 mana cost. |n|cffffcc00Level 2|r - 30 second cooldown, 50 mana cost. |n|cffffcc00Level 3|r - 15 second cooldown, 25 mana cost.|n|cffffcc00Level 4|r - no cooldown, free to cast."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Teleport"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Teleports the caster to the target allied structure after \u003CA0EI,DataB1\u003E seconds."
+    }
+  ]
+}

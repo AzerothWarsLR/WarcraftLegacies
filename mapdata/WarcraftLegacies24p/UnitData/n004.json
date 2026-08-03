@@ -1,0 +1,142 @@
+{
+  "OldId": "ndgt",
+  "NewId": "n004",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AHta,A00E"
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1100
+    },
+    {
+      "Id": "ulum",
+      "Value": 80
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhac"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneGuardTowerA.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_DalaranWatchtower.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Improved Kirin Tor Tower"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Upgrade to Improved Kirin Tor Tower"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Erected tower of the Kirin Tor order.|n|cfff5962dCan Learn:|RMagic Sentry|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

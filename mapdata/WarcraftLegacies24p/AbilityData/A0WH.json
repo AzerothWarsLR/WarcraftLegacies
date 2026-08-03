@@ -1,0 +1,258 @@
+{
+  "OldId": "Afak",
+  "NewId": "A0WH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,structure,enemy,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,structure,enemy,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,structure,enemy,neutral"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCVerdantSpheres.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Quel\u0027thalas - Kael\u0027thas)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Verdant Spheres"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVerdantSpheres.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Verdant Spheres - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Adds bonus damage to the caster\u0027s attack.|n |n|cffffcc00Level 1|r - 25 damage. |n|cffffcc00Level 2|r - 40 damage. |n|cffffcc00Level 3|r - 55 damage. |n|cffffcc00Level 4|r - 70 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magical Spheres - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA1\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA2\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA3\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds \u003CA0WH,DataA4\u003E bonus damage to the caster\u0027s attack."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCVerdantSpheres.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

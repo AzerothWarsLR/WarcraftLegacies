@@ -1,0 +1,28 @@
+{
+  "OldId": "ankh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "ista",
+      "Value": 2
+    }
+  ]
+}

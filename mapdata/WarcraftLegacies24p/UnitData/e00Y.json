@@ -1,0 +1,187 @@
+{
+  "OldId": "echm",
+  "NewId": "e00Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Acor,A0JA,Alit"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucar",
+      "Value": 5
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 75
+    },
+    {
+      "Id": "ua2f",
+      "Value": 25
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ua2h",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 925
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua2q",
+      "Value": 90
+    },
+    {
+      "Id": "ua1r",
+      "Value": 750
+    },
+    {
+      "Id": "ua2r",
+      "Value": 750
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ua2s",
+      "Value": 13
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,nonancient,structure"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Reuv,Rguv,R018"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "n055"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Flying two headed Dragon. |n|cfff5962dAbilities:|R Corrisive Breath|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scylla"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Scylla"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSkyHydra.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SkyHydra.mdl"
+    }
+  ]
+}

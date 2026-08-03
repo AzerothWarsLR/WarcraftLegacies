@@ -1,0 +1,55 @@
+{
+  "OldId": "ANde",
+  "NewId": "A0XJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Tsunami"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Tsunami"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Storm Terror, Demolish)"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASCrushingWave.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrushingWave.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes attacks to do \u003CA0XJ,DataB1\u003E times normal damage to buildings."
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

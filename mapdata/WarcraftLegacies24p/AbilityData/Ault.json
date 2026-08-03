@@ -1,0 +1,13 @@
+{
+  "OldId": "Ault",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - All units. Brown - All units)"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "Aspl",
+  "NewId": "A0YR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spl1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lordaeron - Minister)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Links \u003CA0YR,DataB1\u003E units together in a chain. All units with Spirit Link on them will live longer, by distributing \u003CA0YR,DataA1,%\u003E% of the damage they take across other Spirit Linked units. |nLasts \u003CA0YR,Dur1\u003E seconds."
+    }
+  ]
+}

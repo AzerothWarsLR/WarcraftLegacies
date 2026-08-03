@@ -1,0 +1,16 @@
+{
+  "Left": 11104,
+  "Bottom": 5856,
+  "Right": 11168,
+  "Top": 5920,
+  "Name": "Alterac Exca",
+  "CreationNumber": 273,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

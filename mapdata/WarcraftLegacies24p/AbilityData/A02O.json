@@ -1,0 +1,71 @@
+{
+  "OldId": "Assk",
+  "NewId": "A02O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00F"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLancelot_Plate.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dwarven Warrior, Thane)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Mithril Plated Armor"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mithril Plated Armor"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit has a \u003CA02O,DataA1\u003E% chance to reduce incoming damage by \u003CA02O,DataC1\u003E."
+    }
+  ]
+}

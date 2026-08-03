@@ -1,0 +1,178 @@
+{
+  "OldId": "Rora",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 50
+    },
+    {
+      "Id": "gglm",
+      "Value": 100
+    },
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "glvl",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Unused)"
+    },
+    {
+      "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Teal/Pink Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Fel Iron Ranged Weapons"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Thorium Ranged Weapons"
+    },
+    {
+      "Level": 4,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Adamantite Ranged Weapons"
+    },
+    {
+      "Level": 5,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Eternium Ranged Weapons"
+    },
+    {
+      "Level": 6,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Felsteel Ranged Weapons"
+    },
+    {
+      "Level": 7,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Khorium Ranged Weapons"
+    },
+    {
+      "Level": 8,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Arcanite Ranged Weapons"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Steel Ranged Weapons"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Fel Iron Ranged Weapons"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Thorium Ranged Weapons"
+    },
+    {
+      "Level": 4,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Adamantite Ranged Weapons"
+    },
+    {
+      "Level": 5,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Eternium Ranged Weapons"
+    },
+    {
+      "Level": 6,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Felsteel Ranged Weapons"
+    },
+    {
+      "Level": 7,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Khorium Ranged Weapons"
+    },
+    {
+      "Level": 8,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00W|r] - Upgrade Arcanite Ranged Weapons"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the ranged attack damage of your ranged units."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases the ranged attack damage of your ranged units."
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases the ranged attack damage of your ranged units."
+    }
+  ]
+}

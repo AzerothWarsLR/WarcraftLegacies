@@ -1,0 +1,19 @@
+{
+  "OldId": "YTpc",
+  "NewId": "B00A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Big path blocker"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\CityBuilding9-11.tga"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "OldId": "nvdl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubba",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 10
+    },
+    {
+      "Id": "uhpm",
+      "Value": 640
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 650
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "usma",
+      "Value": 3
+    },
+    {
+      "Id": "usrg",
+      "Value": 15
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde-Portal)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Voidwalker"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Voidwalker"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Etheral demon of void origins.| |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Binf",
+  "NewId": "B09L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Corrupted"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is corrupted"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPlagueCloud.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Tranquility\\TranquilityTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "nubw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACsk,ACfb,AChw,ACuf"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "udup",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 63
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.5
+    }
+  ]
+}

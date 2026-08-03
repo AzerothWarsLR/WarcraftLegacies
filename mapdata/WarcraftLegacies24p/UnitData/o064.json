@@ -1,0 +1,135 @@
+{
+  "OldId": "obar",
+  "NewId": "o064",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 75
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n0D6,n0D7,n0D9"
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R08L"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Draenei Elite)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lightforged Gateway"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Lightforged Gateway"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Advanced troop production building.|n|cfff5962dTrains:|R Lightforged Juggernaut, Lightforged Sharpshooter, Lightforged Juggernaut"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DraeneiAltar7.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAltar of Starlight1.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "TempleOfTides"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

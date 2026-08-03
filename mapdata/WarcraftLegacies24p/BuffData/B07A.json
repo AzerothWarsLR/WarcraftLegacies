@@ -1,0 +1,49 @@
+{
+  "OldId": "Bam2",
+  "NewId": "B07A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Holy Protection"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Holy Protection; damage spells must destroy the shell to affect the unit."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Holy Protection"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

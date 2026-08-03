@@ -1,0 +1,29 @@
+{
+  "OldId": "BTtw",
+  "NewId": "B01G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "O"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Terrokar Tree Wall"
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\AshenvaleTree\\AshenTree"
+    }
+  ]
+}

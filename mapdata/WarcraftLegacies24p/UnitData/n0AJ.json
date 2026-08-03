@@ -1,0 +1,125 @@
+{
+  "OldId": "nbt2",
+  "NewId": "n0AJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 64
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1150
+    },
+    {
+      "Id": "ulum",
+      "Value": 110
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ua1s",
+      "Value": 10
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "ground,nonancient,notself,structure,tree,wall"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,wall,ward"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rosp"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Goblin Boulder Tower"
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Upgrade to Improved Boulder Tower"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

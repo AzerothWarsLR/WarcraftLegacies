@@ -1,0 +1,201 @@
+{
+  "OldId": "edoc",
+  "NewId": "e007",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0G3,A0G7,A0V1,Aien,Ault"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 19
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 550
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 700
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 400
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R05G,R00K,Rguv"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "DruidoftheClawKulTirasV1.02.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Thornspeaker"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Supporting spellcaster. |n|cfff5962dAbilities:|R Healing Surge |n|cfff5962dCan learn:|R Natural Burial, Dispel Magic|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Thornspeaker"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Healing Surge,- Healing Surge|n- Dispel,- Healing Surge|n- Dispel|n- Natural Burial"
+    }
+  ]
+}

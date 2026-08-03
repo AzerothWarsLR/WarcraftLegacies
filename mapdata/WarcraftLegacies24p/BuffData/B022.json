@@ -1,0 +1,39 @@
+{
+  "OldId": "Beng",
+  "NewId": "B022",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSilence.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Paralyse"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Paralysed"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl"
+    }
+  ]
+}

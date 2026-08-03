@@ -1,0 +1,18 @@
+{
+  "OldId": "nw2w",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ShamanX"
+    }
+  ]
+}

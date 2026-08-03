@@ -1,0 +1,82 @@
+{
+  "OldId": "opeo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,Sca5,Ahar,Arep,A106"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "o065,ovln,otto,oshy,ogre,otrb,npgf,obar,ofor,oalt,osld,owtw"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R021,Ropg,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R05H"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf, Warsong, Worker)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Hard working, back breaking laborer.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees."
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    }
+  ]
+}

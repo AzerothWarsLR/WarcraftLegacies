@@ -1,0 +1,137 @@
+{
+  "OldId": "ofrt",
+  "NewId": "o016",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CA,Argl"
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 15
+    },
+    {
+      "Id": "ugol",
+      "Value": 105
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "ulur",
+      "Value": 120
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upri",
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "uaco,nbee"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013,Renb,R064,Rosp,Rgfo"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Drak\u0027Tharon Keep"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

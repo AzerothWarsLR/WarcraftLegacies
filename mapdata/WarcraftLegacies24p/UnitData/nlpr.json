@@ -1,0 +1,39 @@
+{
+  "OldId": "nlpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "ua1b",
+      "Value": 29
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    }
+  ]
+}

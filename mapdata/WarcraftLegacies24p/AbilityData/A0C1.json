@@ -1,0 +1,34 @@
+{
+  "OldId": "AId1",
+  "NewId": "A0C1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Good Arthas Sword Glow"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "weapon"
+    }
+  ]
+}

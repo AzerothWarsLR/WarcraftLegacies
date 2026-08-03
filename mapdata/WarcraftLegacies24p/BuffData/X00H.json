@@ -1,0 +1,19 @@
+{
+  "OldId": "XEsf",
+  "NewId": "X00H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Frostfall (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl"
+    }
+  ]
+}

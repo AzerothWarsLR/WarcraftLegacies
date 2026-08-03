@@ -1,0 +1,24 @@
+{
+  "OldId": "Bmlt",
+  "NewId": "B07O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Earth Shackles"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is bound in Earth Shackles; it cannot move or attack and will take damage over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Web\\WebTarget.mdl"
+    }
+  ]
+}

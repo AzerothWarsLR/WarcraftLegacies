@@ -1,0 +1,228 @@
+{
+  "OldId": "uabo",
+  "NewId": "u025",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0C3,ACfa,ACbz,Aiun"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 12
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 32
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 350
+    },
+    {
+      "Id": "umpm",
+      "Value": 350
+    },
+    {
+      "Id": "upri",
+      "Value": 14
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rupm,Rhme,Rhar"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "ACfa"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_AzureDragonElementalist.blp"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(nexus)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\AzureDragonElementarist.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Elementalist"
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Elementalist"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mage warrior of the Draconians.|n|cfff5962dAbilities:|R Blizzard, Frost Armor, Mana Shield|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "AzureDragon"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    }
+  ]
+}

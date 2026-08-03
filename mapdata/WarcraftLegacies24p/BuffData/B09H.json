@@ -1,0 +1,24 @@
+{
+  "OldId": "Bpxf",
+  "NewId": "B09H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHatred.blp"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is being burned by Burning Spirits; it will take damage over time."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Burning Spirits"
+    }
+  ]
+}

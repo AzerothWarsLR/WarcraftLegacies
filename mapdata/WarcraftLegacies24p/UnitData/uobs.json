@@ -1,0 +1,128 @@
+{
+  "OldId": "uobs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arpl,Arpm"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Arpm"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 26
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 35
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 875
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 100
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "umpi",
+      "Value": 600
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R094,Rguv,R06L,Rhme,Rhar"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "unp2"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Obsidian Statue"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Construct of ancient design.|n|cfff5962dAbilities:|R Essence of Blight, Spirit Touch|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

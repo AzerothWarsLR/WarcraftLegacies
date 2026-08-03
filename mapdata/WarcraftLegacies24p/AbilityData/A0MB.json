@@ -1,0 +1,56 @@
+{
+  "OldId": "AIdf",
+  "NewId": "A0MB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Iob2",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Iob3",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Iob4",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "Iobu",
+      "Type": 3,
+      "Value": "AIse"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Item Attack Silence"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIlb\\AIlbTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "OldId": "hmpr",
+  "NewId": "h08K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0SL,A0S7,Ahea,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 12
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R00K,R05D"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(scarlet)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ClericWC1.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Monk"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Monk"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Peaceful followers of the Light.|n|cfff5962dAbilities:|R Heal|n|cfff5962dCan Learn:|R Minor Holy Light, Rain of Light|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Minor Holy Light,- Heal|n- Minor Holy Light|n- Rain of Light"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNClericWC1.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "OldId": "ACav",
+  "NewId": "A0I1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03C"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -6
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Creep - C\u0027thun)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Death Aura"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\UnholyAura\\UnholyAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Death Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "C\u0027thun\u0027s presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 6."
+    }
+  ]
+}

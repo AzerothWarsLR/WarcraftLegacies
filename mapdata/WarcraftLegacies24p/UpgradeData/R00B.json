@@ -1,0 +1,102 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R00B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "A02Y"
+    },
+    {
+      "Id": "gglb",
+      "Value": 220
+    },
+    {
+      "Id": "glmb",
+      "Value": 120
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFootman Lordaeron_HD.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Veteran Footmen"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Veteran Footmen"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Replace Footmen with Veteran Footmen, which have Perfect Defend and improved stats."
+    }
+  ]
+}

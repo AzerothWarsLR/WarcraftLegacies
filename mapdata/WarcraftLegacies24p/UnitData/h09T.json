@@ -1,0 +1,166 @@
+{
+  "OldId": "hrif",
+  "NewId": "h09T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aens,Aihn"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ubld",
+      "Value": 6
+    },
+    {
+      "Id": "ubdi",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 44
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 4
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o053"
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rguv,Rhme"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 49
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1450
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(draenei)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Rangari.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Agile sharpshooters.|n|cfff5962dAbilities:|R Ensnare|n|cffffcc00Attacks land and air units.|n"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Rangari"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiHuntress.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Archer"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Rangari"
+    }
+  ]
+}

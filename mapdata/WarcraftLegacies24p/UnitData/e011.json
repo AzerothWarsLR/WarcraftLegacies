@@ -1,0 +1,117 @@
+{
+  "OldId": "eshy",
+  "NewId": "e011",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ane2"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 55
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R006,R00C,R01D"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "etrs,edes,ebsh"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R064,Rgfo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinel)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ShipyardGilneasHumanV1.03.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Kaldorei Docks"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Kaldorei Docks"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Boat construction facility of the Kaldorei.|n|cfff5962dTrains: |RNight Elf Transport Ship, Night Elf Frigate, Night Elf Battleship|n|cfff5962dResearches:|R Improved Sails, Improved Cannons, Fortified Hulls|n|n|cff00c4c4Cannot be built near small inland water areas.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "AIcf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Icfd",
+      "Value": 20
+    }
+  ]
+}

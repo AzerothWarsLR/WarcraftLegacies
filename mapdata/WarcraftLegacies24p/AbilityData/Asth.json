@@ -1,0 +1,22 @@
+{
+  "OldId": "Asth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Khaz Modan-Gryphon Riders)"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNStormHammer.blp"
+    }
+  ]
+}

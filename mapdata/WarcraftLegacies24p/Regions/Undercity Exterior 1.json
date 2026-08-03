@@ -1,0 +1,16 @@
+{
+  "Left": 9248,
+  "Bottom": 7808,
+  "Right": 9600,
+  "Top": 8192,
+  "Name": "Undercity Exterior 1",
+  "CreationNumber": 445,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

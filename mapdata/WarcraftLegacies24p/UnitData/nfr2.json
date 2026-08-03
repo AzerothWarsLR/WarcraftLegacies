@@ -1,0 +1,27 @@
+{
+  "OldId": "nfr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

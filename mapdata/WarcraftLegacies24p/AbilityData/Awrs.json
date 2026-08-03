@@ -1,0 +1,24 @@
+{
+  "OldId": "Awrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "UNUSED"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

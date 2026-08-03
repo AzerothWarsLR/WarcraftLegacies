@@ -1,0 +1,88 @@
+{
+  "OldId": "Apxf",
+  "NewId": "A0T3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "pxf1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "pxf2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "amsp",
+      "Value": 1200
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Archers Sentry"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Archers Sentry"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Fires down a volley of chemical rockets, lighting nearby enemies on fire."
+    }
+  ]
+}

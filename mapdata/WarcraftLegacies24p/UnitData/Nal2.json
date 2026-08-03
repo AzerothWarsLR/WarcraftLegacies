@@ -1,0 +1,21 @@
+{
+  "OldId": "Nal2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    }
+  ]
+}

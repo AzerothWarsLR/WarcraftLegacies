@@ -1,0 +1,82 @@
+{
+  "OldId": "wild",
+  "NewId": "I00L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A04C"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIpl"
+    },
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "ista",
+      "Value": 9
+    },
+    {
+      "Id": "isto",
+      "Value": 3
+    },
+    {
+      "Id": "istr",
+      "Value": 240
+    },
+    {
+      "Id": "iuse",
+      "Value": 3
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "isst",
+      "Value": 600
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDust.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Regrows trees nearby the caster. Also, restores 50 mana to the caster. "
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Seeds of Regrowth"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Seeds of Regrowth"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Regrows trees nearby the caster and regenerates 50 mana to the caster when used. |n|n|cffdaa520|nNote - this unit may not be used next to the Thandol Span.|r"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "OldId": "etrp",
+  "NewId": "e000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 69
+    },
+    {
+      "Id": "ua2b",
+      "Value": 69
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "ulum",
+      "Value": 95
+    },
+    {
+      "Id": "ulur",
+      "Value": 100
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "ua2r",
+      "Value": 750
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "ua2s",
+      "Value": 12
+    },
+    {
+      "Id": "umvs",
+      "Value": 115
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R018,R002,Renb,Rhme,Rgfo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubba",
+      "Value": 25
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Improved Ancient Protector"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Upgrade to Improved Ancient Protector"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Druids)"
+    }
+  ]
+}

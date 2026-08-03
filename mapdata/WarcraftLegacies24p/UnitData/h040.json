@@ -1,0 +1,129 @@
+{
+  "OldId": "halt",
+  "NewId": "h040",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GD"
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "ugol",
+      "Value": 106
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R00K,R005,R02E"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n05L,hpea,h00J,n093"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,R03A,Rhac,Rgfo"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stormwind controlled)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Structures\\Cathedral\\Cathedral.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Imperial Quarters"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Castle"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

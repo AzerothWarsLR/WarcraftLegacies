@@ -1,0 +1,255 @@
+{
+  "OldId": "ACua",
+  "NewId": "A0VR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": -4
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": -5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": -6
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A9"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A9"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A9"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0A9"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Majordomo Executus, Yellow)"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blazing Aura - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Blazing Aura"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\AuraFire.mdx"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASAuraFire.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAuraFire.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASAuraFire.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blazing Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blazing Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blazing Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VR,DataB1\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA1,%\u003E%"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Blazing Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero burns with a withering heat, searing and slowing nearby enemies.|n|n|cffffcc00Level 1|r - Deals \u003CA0VR,DataB1\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA1,%\u003E%|n|cffffcc00Level 2|r - Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%|n|cffffcc00Level 3|r - Deals \u003CA0VR,DataB3\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA3,%\u003E%|n|cffffcc00Level 4|r - Deals \u003CA0VR,DataB4\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA4,%\u003E%"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    }
+  ]
+}

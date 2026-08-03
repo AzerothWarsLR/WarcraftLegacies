@@ -1,0 +1,215 @@
+{
+  "OldId": "AOsf",
+  "NewId": "A07T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 7
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nadw"
+    },
+    {
+      "Level": 2,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nadw"
+    },
+    {
+      "Level": 3,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nadw"
+    },
+    {
+      "Level": 4,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "nadw"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueDragonRoost.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(malygos)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Dragon Kin"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueDragonRoost.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Malygos summons his blue dragon kin to fight his enemies, summoning Blue Dragon Whelp to help him. |nThe dragons last 60 seconds. |n|n|cffffcc00Level 1|r - 4 Drakes.|n|cffffcc00Level 2|r - 5 Drakes.|n|cffffcc00Level 3|r - 6 Drakes.|n|cffffcc00Level 4|r - 7 Drakes."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Dragon Kin - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Malygos summons 4 Blue Dragon Whelps."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Malygos summons 5 Blue Dragon Whelps."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Malygos summons 6 Blue Dragon Whelps."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Malygos summons 7 Blue Dragon Whelps."
+    }
+  ]
+}

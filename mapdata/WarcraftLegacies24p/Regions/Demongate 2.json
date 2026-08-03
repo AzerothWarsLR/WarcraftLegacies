@@ -1,0 +1,16 @@
+{
+  "Left": 5152,
+  "Bottom": -29152,
+  "Right": 5504,
+  "Top": -28800,
+  "Name": "Demongate 2",
+  "CreationNumber": 119,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 255,
+    "B": 255,
+    "A": 255
+  }
+}

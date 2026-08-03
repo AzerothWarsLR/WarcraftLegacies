@@ -1,0 +1,399 @@
+{
+  "OldId": "ANab",
+  "NewId": "A0C4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 53
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 56
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 13
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 1000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "Attack,two"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWalkerMasterTraining.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Grom)"
+    },
+    {
+      "Id": "aefs",
+      "Type": 3,
+      "Value": "MetalHeavySliceMetal"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Colossal Slam"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWalkerMasterTraining.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals damage over time and reduces the targetted enemies\u0027 armor and movement speed.|n|n|cffffcc00Level 1|r - 150 damage, reduces armor by 2 and move speed by 20%, lasts 10 seconds (3 second for Heroes).|n|cffffcc00Level 2|r - 185 damage, reduces armor by 3 and move speed by 30%, lasts 11 seconds (4 seconds for Heroes).|n|cffffcc00Level 3|r - 225 damage, reduces armor by 4 and move speed by 40%, lasts 12 seconds (5 seconds for Heroes).|n|cffffcc00Level 4|r - 300 damage, reduces armor by 5 and move speed by 50%, lasts 13 second (6 seconds for Heroes)."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Orc\\Orcblood\\BattrollBlood.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 150 damage and reduces the targetted enemies\u0027 armor by 2 and move speeds by 20%."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 185 damage and reduces the targetted enemies\u0027 armor by 3 and move speeds by 30%."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 225 damage and reduces the targetted enemies\u0027 armor by 4 and move speeds by 40%."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 300 damage and reduces the targetted enemies\u0027 armor by 5 and move speeds by 50%."
+    }
+  ]
+}

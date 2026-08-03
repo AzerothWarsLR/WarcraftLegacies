@@ -1,0 +1,48 @@
+{
+  "OldId": "AId1",
+  "NewId": "A06B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel Horde-Voidcaller)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Voidcaller Wings"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\VoidWings.mdx"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

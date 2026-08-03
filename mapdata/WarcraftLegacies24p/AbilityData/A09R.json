@@ -1,0 +1,51 @@
+{
+  "OldId": "AIgd",
+  "NewId": "A09R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idam",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(perfect defend)"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Perfect Defend indicator"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aspt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Ember Shield I FX 3.mdx"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "hand,right"
+    }
+  ]
+}

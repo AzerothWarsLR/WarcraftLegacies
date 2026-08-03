@@ -1,0 +1,111 @@
+{
+  "OldId": "Adef",
+  "NewId": "A0J6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Def3",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Def6",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 8,
+      "Id": "Def8",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShieldHumanLionMark.BLP"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stormwind - Stormwind Champion)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Safeguard"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Safeguard"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvisibility.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Safe Guard"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Deactivate to move at normal speed, but take regular damage."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate to take only \u003CA0J6,DataA1,%\u003E% damage from incoming spells and Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by \u003CA0J6,DataC1,%\u003E%."
+    }
+  ]
+}

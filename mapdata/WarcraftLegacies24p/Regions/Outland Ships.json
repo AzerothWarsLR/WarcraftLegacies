@@ -1,0 +1,16 @@
+{
+  "Left": -6816,
+  "Bottom": -32192,
+  "Right": 6304,
+  "Top": -18144,
+  "Name": "Outland Ships",
+  "CreationNumber": 241,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

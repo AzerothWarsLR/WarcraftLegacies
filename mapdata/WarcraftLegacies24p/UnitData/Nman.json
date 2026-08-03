@@ -1,0 +1,135 @@
+{
+  "OldId": "Nman",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK,A0EJ,AInv"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 78
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0X5,A0WM,A0KU,ANrc,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1100
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 225
+    },
+    {
+      "Id": "umvs",
+      "Value": 210
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,ancient,debris,ground,item,mechanical,nonancient,organic,structure,ward"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong-Bloodpact)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "The Destroyer"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Mannoroth"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive Mannoroth"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroPitLord"
+    }
+  ]
+}

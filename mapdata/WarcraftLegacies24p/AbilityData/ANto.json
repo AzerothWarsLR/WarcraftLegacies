@@ -1,0 +1,140 @@
+{
+  "OldId": "ANto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 3
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green - Vashj)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |n|n|cffffcc00Level 1|r - Got 700 range, 120 second cooldown, 200 manacost and 45 seconds duration. |n|cffffcc00Level 2|r - Got 800 range, 105 second cooldown, 225 manacost and 50 seconds duration. |n|cffffcc00Level 3|r - Got 900 range, 90 second cooldown, 250 manacost and 55 seconds duration."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Tornado - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Tornado - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts 45 seconds and got 120 seconds cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANto,Dur2\u003E seconds and got 105 seconds cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANto,Dur3\u003E seconds."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Adef",
+  "NewId": "A0WI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "0"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(AIDS)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "State Detection"
+    }
+  ]
+}

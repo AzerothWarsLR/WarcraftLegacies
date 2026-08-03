@@ -1,0 +1,253 @@
+{
+  "OldId": "Absk",
+  "NewId": "A0KA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B07D"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B07D"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B07D"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyStrikeRemake(Fix3).blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lordaeron - Alexandros)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Will of the Ashbringer"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyStrikeRemake(Fix3).blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Will of the Ashbringer - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Alexandros unleashes his fury, increasing his attack speed and healing for 10% of damage taken instead of taking damage for 8 seconds.|n |n|cffffcc00Level 1|r - 20% healed, 50% attack speed. |n|cffffcc00Level 2|r - 30% healed, 75% attack speed. |n|cffffcc00Level 3|r - 40% healed, 100% attack speed."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Will of the Ashbringer - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Will of the Ashbringer - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Will of the Ashbringer - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Ashbringer unleashes his fury, increasing his attack speed by 50% and healing for 20% of damage taken instead of taking damage for 8 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Ashbringer unleashes his fury, increasing his attack speed by 75% and healing for 30% of damage taken instead of taking damage for 8 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Ashbringer unleashes his fury, increasing his attack speed by 100% and healing for 40% of damage taken instead of taking damage for 8 seconds."
+    }
+  ]
+}

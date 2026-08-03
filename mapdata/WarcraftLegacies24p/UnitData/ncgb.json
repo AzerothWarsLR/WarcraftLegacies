@@ -1,0 +1,40 @@
+{
+  "OldId": "ncgb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "ua1b",
+      "Value": 21
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "upri",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(level 1)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "OldId": "Adtg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Nordrassil. Teal - Black Drake. Pink - Wind Rider. Grey - Rexxar Hawk)"
+    }
+  ]
+}

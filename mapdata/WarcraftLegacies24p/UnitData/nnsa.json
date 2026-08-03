@@ -1,0 +1,112 @@
+{
+  "OldId": "nnsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R00K,Rnsw"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "nwgs,e00Y"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "n04T"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build - Serpentshrine"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Trains Arcane Drakes and the mighty Scylla. Also contains spell upgrades for Naga Sirens, Summoners and Mur\u0027gul Shadowcasters."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DimensionalGateIllidariV1.01.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIllidariDemonGate.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Serpentshrine"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowCrypt"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

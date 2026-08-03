@@ -1,0 +1,16 @@
+{
+  "Left": -11904,
+  "Bottom": 9152,
+  "Right": -8480,
+  "Top": 12032,
+  "Name": "WinterspringAmbient1",
+  "CreationNumber": 307,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "OldId": "AUcs",
+  "NewId": "A0XZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Queen of Suffering)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Carrion Swarm (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - \u003CAUcs,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CAUcs,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CAUcs,DataA3\u003E damage per unit.|n|cffffcc00Level 4|r - \u003CAUcs,DataA4\u003E damage per unit."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Carrion Swarm"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a horde of bats to deal \u003CA0XZ,DataA1\u003E damage to each enemy unit in a cone, up to a maximum of \u003CA0XZ,DataB1\u003E total damage. "
+    }
+  ]
+}

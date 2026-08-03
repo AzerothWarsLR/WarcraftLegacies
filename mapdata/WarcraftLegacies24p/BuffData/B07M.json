@@ -1,0 +1,19 @@
+{
+  "OldId": "Brej",
+  "NewId": "B07M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Accelerated Vitality"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+    }
+  ]
+}

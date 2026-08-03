@@ -1,0 +1,23 @@
+{
+  "OldId": "Ocb2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Unused)"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "GRrk",
+  "NewId": "D012",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Unslanted underground rock"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "OldId": "Ulic",
+  "NewId": "U00Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK,AInv"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uagi",
+      "Value": 28
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A02G,AUcb,Aamk,A0XU,A0XT"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uint",
+      "Value": 33
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1800
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07B"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "AUcb"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDestroyer.blp"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Obsidian Destroyer"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Moam"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDestroyer.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ObsidianDestroyer"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ObsidianSphinx.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Moam"
+    }
+  ]
+}

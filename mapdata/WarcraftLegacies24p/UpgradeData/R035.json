@@ -1,0 +1,105 @@
+{
+  "OldId": "Roch",
+  "NewId": "R035",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "ACfb"
+    },
+    {
+      "Id": "gglb",
+      "Value": 50
+    },
+    {
+      "Id": "glmb",
+      "Value": 250
+    },
+    {
+      "Id": "gtib",
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "o030"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireBolt.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(fel horde)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Improved Firebolt"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Improved Firebolt"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improve Warlocks\u0027 Firebolt by increasing its range by 100 and damage by 15."
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "OldId": "Ewar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,AEsh,A01D,A0MS,A0MG"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KV,AInv"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "usin",
+      "Value": 1600
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 275
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Tess Greymane"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Princess of Gilneas"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HumanAssassine.mdl"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(gilneas)"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Tess"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Tess"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Tess"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, adept at engaging and disengaging enemies.|n|cfff5962dAbilities:|r Wind Walk |n|cfff5962dCan learn:|R Mirror Image, Words of Protection, Shadow Strike, Greater Fan of Knives|n|n|cffffcc00Attacks land units.|R"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "OldId": "AIbd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0AC"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Isn1",
+      "Value": 2
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Blue Drake Summon"
+    }
+  ]
+}

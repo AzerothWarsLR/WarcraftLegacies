@@ -1,0 +1,16 @@
+{
+  "Left": -11360,
+  "Bottom": -9024,
+  "Right": -11200,
+  "Top": -8864,
+  "Name": "Jergosh",
+  "CreationNumber": 88,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

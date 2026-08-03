@@ -1,0 +1,185 @@
+{
+  "OldId": "emtg",
+  "NewId": "e00Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arsk,Assk,Aien"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 65
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 33
+    },
+    {
+      "Id": "ugor",
+      "Value": 32
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1550
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04W"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rguv,Rhar,Rers"
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(troll)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Living Battering Rams. Extremely resilient beast with siege attack.|n|cfff5962dCan learn:|R Hardened Skin, Resistant Skin|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units and trees.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Direhorn"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Direhorn"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DireHornGreen.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDirehornIconFirst.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "GiantSeaTurtle"
+    }
+  ]
+}

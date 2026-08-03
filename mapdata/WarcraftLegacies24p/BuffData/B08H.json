@@ -1,0 +1,53 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B08H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBootsOfSpeed.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Burst of Speed"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Increased movement speed."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Burst of Speed"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIsp\\SpeedTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftac",
+      "Value": 1
+    }
+  ]
+}

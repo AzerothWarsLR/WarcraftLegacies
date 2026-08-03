@@ -1,0 +1,34 @@
+{
+  "OldId": "BEar",
+  "NewId": "B037",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Feathermoon Aura"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Feathermoon Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFeatherMoonAura.blp"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Feathermoon Aura; its ranged attacks will deal more damage."
+    }
+  ]
+}

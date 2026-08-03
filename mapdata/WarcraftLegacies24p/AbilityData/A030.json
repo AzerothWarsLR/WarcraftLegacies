@@ -1,0 +1,94 @@
+{
+  "OldId": "AOsf",
+  "NewId": "A030",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(yogg ancient)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Call Treants"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Call Treant - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons Treants to battle Malfurion\u0027s enemies. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 3 Treants.|n|cffffcc00Level 2|r - 4 Treants.|n|cffffcc00Level 3|r - 5 Treants.|n|cffffcc00Level 4|r - 6 Poison Treants."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Call Treants"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons Treants to aid the Ancient in battle |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

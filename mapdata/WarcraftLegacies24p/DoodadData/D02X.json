@@ -1,0 +1,48 @@
+{
+  "OldId": "ZPfw",
+  "NewId": "D02X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Structures\\City_LowWall_ShortEndCap\\City_LowWall_ShortEndCap.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Wall End Short (Custom Placement)"
+    },
+    {
+      "Id": "dvar",
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 150
+    }
+  ]
+}

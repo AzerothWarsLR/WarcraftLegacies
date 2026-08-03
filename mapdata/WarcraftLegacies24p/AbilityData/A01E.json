@@ -1,0 +1,48 @@
+{
+  "OldId": "ACes",
+  "NewId": "A01E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGrizzlyBear.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Broll)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Thick Hide"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thick Hide"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Armor increased by 3 while in bear form"
+    }
+  ]
+}

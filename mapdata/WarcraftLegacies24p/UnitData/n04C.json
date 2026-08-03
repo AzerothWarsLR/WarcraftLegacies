@@ -1,0 +1,125 @@
+{
+  "OldId": "ndfl",
+  "NewId": "n04C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0AB,A0BN"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A01M"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 125
+    },
+    {
+      "Id": "ugor",
+      "Value": 125
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "umpi",
+      "Value": 140
+    },
+    {
+      "Id": "umpm",
+      "Value": 1000
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Defiled Fountain of Life"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Corrupted life spring replenishing the soldiers of the Fel Horde.|n|cfff5962dAbilities:|R Life Regeneration Aura|n|n|cff99b4d1Can only build 1.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

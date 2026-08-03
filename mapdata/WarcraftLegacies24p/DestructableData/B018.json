@@ -1,0 +1,51 @@
+{
+  "OldId": "ITtw",
+  "NewId": "B018",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bonc",
+      "Value": 1
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "I,*"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Crystalsong Tree"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_CrystalsongForest.mdl"
+    },
+    {
+      "Id": "bvar",
+      "Value": 1
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "btxi",
+      "Value": 0
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -27872,
+  "Bottom": -15424,
+  "Right": -27392,
+  "Top": -14912,
+  "Name": "Silithus Bug Interior",
+  "CreationNumber": 483,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

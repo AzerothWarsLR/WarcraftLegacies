@@ -1,0 +1,62 @@
+{
+  "OldId": "ACbc",
+  "NewId": "A074",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dragonmaw)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Breath of Fire"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Breathes a cone of fire at enemy units, dealing 60 damage, with a max of 400 damage dealt."
+    }
+  ]
+}

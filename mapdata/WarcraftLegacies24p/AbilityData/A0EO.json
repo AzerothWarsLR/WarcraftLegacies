@@ -1,0 +1,74 @@
+{
+  "OldId": "ACr2",
+  "NewId": "A0EO",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rej1",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNaturesWrath.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Furbolg Elder Shaman)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0EO,DataA1\u003E hit points over \u003CA0EO,Dur1\u003E seconds."
+    }
+  ]
+}

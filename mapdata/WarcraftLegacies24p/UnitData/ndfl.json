@@ -1,0 +1,95 @@
+{
+  "OldId": "ndfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0BN"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A01M"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 125
+    },
+    {
+      "Id": "ugor",
+      "Value": 125
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "umpi",
+      "Value": 140
+    },
+    {
+      "Id": "umpm",
+      "Value": 1000
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Defiled Fountain of Life"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Corrupted life spring replenishing the soldiers of the Fel Horde.|n|cfff5962dAbilities:|R Life Regeneration Aura|n|n|cff99b4d1Can only build 1.|r"
+    }
+  ]
+}

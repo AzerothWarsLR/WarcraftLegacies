@@ -1,0 +1,19 @@
+{
+  "OldId": "Bfae",
+  "NewId": "B00J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Corrosive Venom"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Corrosive Venom; it has reduced armor and can be seen by the enemy."
+    }
+  ]
+}

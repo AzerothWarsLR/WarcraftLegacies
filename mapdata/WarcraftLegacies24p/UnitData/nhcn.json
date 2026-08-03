@@ -1,0 +1,22 @@
+{
+  "OldId": "nhcn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep)"
+    }
+  ]
+}

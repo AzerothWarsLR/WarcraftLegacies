@@ -1,0 +1,26 @@
+{
+  "OldId": "AIrr",
+  "NewId": "A0DY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scroll Item)"
+    }
+  ]
+}

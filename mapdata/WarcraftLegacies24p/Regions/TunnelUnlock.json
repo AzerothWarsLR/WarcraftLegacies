@@ -1,0 +1,16 @@
+{
+  "Left": -26240,
+  "Bottom": -11712,
+  "Right": -24576,
+  "Top": -8480,
+  "Name": "TunnelUnlock",
+  "CreationNumber": 488,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R01N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A0C3"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratd"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rarm"
+    },
+    {
+      "Id": "gglb",
+      "Value": 200
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 250
+    },
+    {
+      "Id": "gtib",
+      "Value": 1
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron, Stormwind) (Quest)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Arathorian Legacy"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Arathorian Legacy"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves all non-Hero units by increasing their damage number of dice by 1, hit points by 100, and armor level by 1."
+    }
+  ]
+}

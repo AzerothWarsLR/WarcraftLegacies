@@ -1,0 +1,154 @@
+{
+  "OldId": "nfv2",
+  "NewId": "n07I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udup",
+      "Value": 1
+    },
+    {
+      "Id": "ufma",
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "ugor",
+      "Value": 5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "ulum",
+      "Value": 10
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "usin",
+      "Value": 600
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,Rgfo"
+    },
+    {
+      "Id": "ubsl",
+      "Type": 3,
+      "Value": "NightElfGrowingLoop"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels-Druids)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\other\\ElvenFishVillageBuilding4\\ElvenFishVillageBuilding4.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ulfi",
+      "Value": 512
+    },
+    {
+      "Id": "ulfo",
+      "Value": 512
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Residence"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": "uspa",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Residence"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "MoonWell"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

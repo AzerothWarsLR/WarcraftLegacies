@@ -1,0 +1,85 @@
+{
+  "OldId": "ndth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubba",
+      "Value": 24
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 23
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 29
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 22
+    },
+    {
+      "Id": "ugor",
+      "Value": 22
+    },
+    {
+      "Id": "uhpm",
+      "Value": 680
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "usrg",
+      "Value": 150
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    }
+  ]
+}

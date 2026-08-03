@@ -1,0 +1,111 @@
+{
+  "OldId": "ANsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nsi3",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01W"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,neutral,organic,player"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(unused)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Forest Paths"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forest Paths (|cffffd700E|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Massively increase the speed of player units in the area, but silences them for the whole duration and make them miss 100% of their attack. Last 15 seconds."
+    }
+  ]
+}

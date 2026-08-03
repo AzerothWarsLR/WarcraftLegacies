@@ -1,0 +1,74 @@
+{
+  "OldId": "nvde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adtg,ACfl,ACde"
+    },
+    {
+      "Id": "ubba",
+      "Value": 35
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 37
+    },
+    {
+      "Id": "ugor",
+      "Value": 37
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "usrg",
+      "Value": 110
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Elder Voidwalker"
+    }
+  ]
+}

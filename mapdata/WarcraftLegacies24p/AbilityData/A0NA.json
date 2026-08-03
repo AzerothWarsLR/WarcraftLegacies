@@ -1,0 +1,76 @@
+{
+  "OldId": "Aspo",
+  "NewId": "A0NA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05M"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSlow.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Orb of Slow)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Slow"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "A poison attack that deals \u003CAspo,DataA1\u003E damage per second, and slows the target enemy\u0027s movement by \u003CAspo,DataB1,%\u003E% and attack by \u003CAspo,DataC1,%\u003E% for 1.5 seconds."
+    }
+  ]
+}

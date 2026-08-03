@@ -1,0 +1,86 @@
+{
+  "OldId": "Rhse",
+  "NewId": "R04A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "hkni"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h029"
+    },
+    {
+      "Id": "gglb",
+      "Value": 150
+    },
+    {
+      "Id": "glmb",
+      "Value": 80
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "hkee"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRapid Fire.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Rapid Fire"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Rapid Fire"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows Huntsmen to use Rapid Fire, which increases attack speed by \u003CA0AC,DataA1,%\u003E% for \u003CA0AC,Dur1\u003E seconds."
+    }
+  ]
+}

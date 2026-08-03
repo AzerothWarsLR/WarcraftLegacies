@@ -1,0 +1,34 @@
+{
+  "OldId": "BUau",
+  "NewId": "B016",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDivineClarity2.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Holy Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Holy Aura; it has an increased movement speed and hit point regeneration."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

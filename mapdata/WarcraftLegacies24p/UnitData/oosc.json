@@ -1,0 +1,103 @@
+{
+  "OldId": "oosc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 10
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "uble",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Pack Kodo"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Pack Building"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Packs this building into a Pack Kodo. The Pack Kodo can rebuild it anywhere."
+    }
+  ]
+}

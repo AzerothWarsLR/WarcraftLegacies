@@ -1,0 +1,146 @@
+{
+  "OldId": "Hmbr",
+  "NewId": "H00S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,AHtb,A0IC,A0KN,A08Q"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 475
+    },
+    {
+      "Id": "uint",
+      "Value": 23
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R043"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNmagni.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Khaz Modan)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero Dwarven Rider.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "King of Khaz Modan"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "King Magni Bronzebeard"
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon King of Ironforge and leader of the Bronzebeard clan."
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at defensive combat and offensive magic.|n|cfff5962dCan Learn:|R Storm Bolt, Earth\u0027s Grace, Diligence Aura, Lightning Streak|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroAvatarMountainKing"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "OldId": "Aast",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "ast1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Spirit Walker)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises a fallen non-Hero Tauren from the dead. Has 70% of total life. "
+    }
+  ]
+}

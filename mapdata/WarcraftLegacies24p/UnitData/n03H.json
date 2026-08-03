@@ -1,0 +1,62 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n03H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A4,Awrp,Avul"
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Inside)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dalaran Dungeons"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

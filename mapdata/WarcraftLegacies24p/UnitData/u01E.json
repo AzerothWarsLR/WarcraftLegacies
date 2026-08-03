@@ -1,0 +1,252 @@
+{
+  "OldId": "uabo",
+  "NewId": "u01E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0Y9,Aiun,ACce"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.64
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 3.03
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 200
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.33
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "ugor",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1700
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": -50
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabs.blp"
+    },
+    {
+      "Id": "uble",
+      "Type": 1,
+      "Value": 0.15
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(C\u0027thun Giant Scarab)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Barrens\\Rocks\\Geyser\\Geyser0.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Burrowed Giant Scarab"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 102
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train [|cffffcc00E|r] - Giant Scarab"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee Siege unit. Has Cleaving attack. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Scarab"
+    }
+  ]
+}

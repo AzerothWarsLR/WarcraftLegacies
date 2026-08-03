@@ -1,0 +1,31 @@
+{
+  "OldId": "DTes",
+  "NewId": "B01C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bvcb",
+      "Value": 150
+    },
+    {
+      "Id": "bvcg",
+      "Value": 150
+    },
+    {
+      "Id": "bvcr",
+      "Value": 150
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Silithus Egg Sack"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

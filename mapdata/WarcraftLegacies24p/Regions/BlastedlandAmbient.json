@@ -1,0 +1,16 @@
+{
+  "Left": 14912,
+  "Bottom": -21760,
+  "Right": 19200,
+  "Top": -16896,
+  "Name": "BlastedlandAmbient",
+  "CreationNumber": 347,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

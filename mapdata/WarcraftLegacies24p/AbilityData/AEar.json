@@ -1,0 +1,67 @@
+{
+  "OldId": "AEar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ear1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ear1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ear1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ear1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green - Sylvanas. Light Blue - Tyrande)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "An aura that gives friendly nearby units bonus damage to their ranged attacks. |n|n|cffffcc00Level 1|r - Increases base ranged damage by \u003CAEar,DataA1,%\u003E%. |n|cffffcc00Level 2|r - Increases base ranged damage by \u003CAEar,DataA2,%\u003E%. |n|cffffcc00Level 3|r - Increases base ranged damage by \u003CAEar,DataA3,%\u003E%.|n|cffffcc00Level 4|r - Increases base ranged damage by \u003CAEar,DataA4,%\u003E%."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Trueshot Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "An aura that gives friendly nearby units a \u003CAEar,DataA4,%\u003E% bonus damage to their ranged attacks."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "OldId": "ncg2",
+  "NewId": "n0AI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adda"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 2
+    },
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "ua1b",
+      "Value": 36
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1050
+    },
+    {
+      "Id": "upri",
+      "Value": 2
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(creep)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    }
+  ]
+}

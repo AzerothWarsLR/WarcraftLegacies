@@ -1,0 +1,107 @@
+{
+  "OldId": "AHfs",
+  "NewId": "A0Q7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Zuluhed)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Flame Strike (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 270 damage over 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 315 damage over 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 360 damage over 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 405 damage over 3 seconds, followed by major damage for 6 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Flame Strike"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Conjures a pillar of flame that burns ground units for 270 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take minor damage. |n|nLasts 5 seconds.|n15 second cooldown."
+    }
+  ]
+}

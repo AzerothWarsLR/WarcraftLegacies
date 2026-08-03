@@ -1,0 +1,26 @@
+{
+  "OldId": "spsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 125
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

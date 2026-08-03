@@ -1,0 +1,72 @@
+{
+  "OldId": "hwt3",
+  "NewId": "h00W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R020,R00N,Rhme,Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Level 2 Custom)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "nsll",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACim,Advc,ACdv"
+    },
+    {
+      "Id": "ubba",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulev",
+      "Value": 8
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Salazarian Lizard"
+    }
+  ]
+}

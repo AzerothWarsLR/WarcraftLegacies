@@ -1,0 +1,24 @@
+{
+  "OldId": "BNcg",
+  "NewId": "B078",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Just Grow a Tree"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Just Grow a Tree"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Brown - Malfurion (Just Grow a Tree)"
+    }
+  ]
+}

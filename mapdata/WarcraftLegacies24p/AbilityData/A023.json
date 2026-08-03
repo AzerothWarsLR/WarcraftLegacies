@@ -1,0 +1,44 @@
+{
+  "OldId": "ANpi",
+  "NewId": "A023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "nonancient,notself,structure"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(1000 range)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Anti Portal Blocking"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Burns nearby enemy structures for 75 points of damage per second."
+    }
+  ]
+}

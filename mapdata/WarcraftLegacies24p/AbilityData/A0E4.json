@@ -1,0 +1,60 @@
+{
+  "OldId": "AIbh",
+  "NewId": "A0E4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "Ibl1",
+      "Type": 3,
+      "Value": "oalt"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAltarOfStorms.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pack Kodo)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Unpack Altar of Storms"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Unpack Altar of Storms"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Consume the Pack Kodo to build an Altar of Storms."
+    }
+  ]
+}

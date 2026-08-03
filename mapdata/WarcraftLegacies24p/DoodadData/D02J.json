@@ -1,0 +1,44 @@
+{
+  "OldId": "JSco",
+  "NewId": "D02J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Structures\\City_ColumnSingle\\City_ColumnSingle.mdl"
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Column Dark"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

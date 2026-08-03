@@ -1,0 +1,38 @@
+{
+  "OldId": "nsgn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANth,ACrk,ACpv"
+    },
+    {
+      "Id": "ubba",
+      "Value": 15
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    }
+  ]
+}

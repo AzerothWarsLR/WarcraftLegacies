@@ -1,0 +1,111 @@
+{
+  "OldId": "hhou",
+  "NewId": "h059",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "ugor",
+      "Value": 5
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,R03A,Rhac,Rgfo"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep - Gilneas)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Buildings\\Other\\CityBuildingSmall0_2\\CityBuildingSmall0_2.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gilneas City Building"
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build [|cffffcc00W|r] - Farm"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGenericHumanBuilding.blp"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

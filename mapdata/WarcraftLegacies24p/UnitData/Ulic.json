@@ -1,0 +1,122 @@
+{
+  "OldId": "Ulic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 10
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A00Y,A052,A10V,A0BV,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "uint",
+      "Value": 26
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "ustr",
+      "Value": 21
+    },
+    {
+      "Id": "utco",
+      "Value": 20
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R061"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurningLegionLich.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 100
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\undead\\HeroLich\\HeroLich_V1.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Rage Winterchill"
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

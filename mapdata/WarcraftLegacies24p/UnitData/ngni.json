@@ -1,0 +1,18 @@
+{
+  "OldId": "ngni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

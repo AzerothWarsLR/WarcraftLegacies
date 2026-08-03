@@ -1,0 +1,29 @@
+{
+  "OldId": "LRrk",
+  "NewId": "D008",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Unslanted rock"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

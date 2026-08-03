@@ -1,0 +1,36 @@
+{
+  "OldId": "uktn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK"
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utco",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "( - - - Unused - - - )"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\undead\\Anubarak\\Anubarak.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 3
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "OldId": "Amfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "mfl1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "mfl2",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "mfl3",
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "mfl4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "mfl5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "mfl5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "mfl2",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "mfl4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "mfl1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "mfl3",
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmfl,Bmfa"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "mfl6",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Faerie Dragon)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon\u0027s armor by 20. |n|nLasts 15 seconds.|nDeals 0.65 damage per point of mana.|n50 second cooldown."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon\u0027s armor by 20. |n|nLasts 15 seconds.|nDeals 0.65 damage per point of mana.|n50 second cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Stop Mana Flare"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Stops channeling Mana Flare."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mana Flare - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mana Flare - [|cffffcc00Level 1|r]"
+    }
+  ]
+}

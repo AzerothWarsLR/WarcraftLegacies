@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R04M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Sunwell destroyed"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "OldId": "Ablo",
+  "NewId": "A0T0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Blo2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R04F"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Purple - Inquisitor)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases a friendly unit\u0027s attack rate by 40%.|nLasts \u003CAblo,Dur1\u003E seconds."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

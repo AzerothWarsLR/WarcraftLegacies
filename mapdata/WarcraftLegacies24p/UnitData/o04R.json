@@ -1,0 +1,154 @@
+{
+  "OldId": "obea",
+  "NewId": "o04R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 200
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 50
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unfloat,blighted"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ulum",
+      "Value": 50
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "float"
+    },
+    {
+      "Id": "uabr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uabt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 4000
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Goblin)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Beast stables for the Horde.|n|cfff5962dTrains:|R Wind Rider, Batrider, Kodo Beast|n|cfff5962dResearches:|R Envenomed Spears, Liquid Fire, For The Horde!"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\OrcOilPlatform.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Oil Platform"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Oil Platform"
+    },
+    {
+      "Id": "uept",
+      "Value": 0
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOilStation.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "PocketFactory"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

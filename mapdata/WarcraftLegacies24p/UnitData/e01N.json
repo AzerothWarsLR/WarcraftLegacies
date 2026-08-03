@@ -1,0 +1,290 @@
+{
+  "OldId": "edcm",
+  "NewId": "e01N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aien,A0UI"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0CR"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.7
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 93
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "ua1h",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1025
+    },
+    {
+      "Id": "ubdg",
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1600
+    },
+    {
+      "Id": "ua1q",
+      "Value": 150
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1200
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1s",
+      "Value": 10
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urtm",
+      "Value": 15
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarMachine2.blp"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_HordeWarMachine.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Azerite Siege Engine"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train [|cffffcc00W|r] - Druid of the Claw"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Strikes."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SteamTank"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

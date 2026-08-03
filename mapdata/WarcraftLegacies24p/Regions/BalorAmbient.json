@@ -1,0 +1,16 @@
+{
+  "Left": 3104,
+  "Bottom": -14400,
+  "Right": 6656,
+  "Top": -10112,
+  "Name": "BalorAmbient",
+  "CreationNumber": 337,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

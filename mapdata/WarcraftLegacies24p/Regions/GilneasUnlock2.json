@@ -1,0 +1,16 @@
+{
+  "Left": 6624,
+  "Bottom": -3232,
+  "Right": 8032,
+  "Top": -2400,
+  "Name": "GilneasUnlock2",
+  "CreationNumber": 414,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

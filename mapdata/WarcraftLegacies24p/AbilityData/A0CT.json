@@ -1,0 +1,48 @@
+{
+  "OldId": "ANb2",
+  "NewId": "A0CT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbh3",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDragonDevour.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Furbolg)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 15% chance that an attack will do 20 bonus damage and stun an opponent for \u003CANb2,Dur1\u003E seconds."
+    }
+  ]
+}

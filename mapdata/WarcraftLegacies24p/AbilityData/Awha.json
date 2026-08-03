@@ -1,0 +1,43 @@
+{
+  "OldId": "Awha",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Wha1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Light Blue/Brown - Wisp Gold and Lumber)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Harvests lumber from trees."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Bdef",
+  "NewId": "B04H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagicalSentry.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Arcane Brilliance"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by a Arcane Brilliance; its armor is temporarily increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIco\\CrownOfCmndTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "OldId": "ACav",
+  "NewId": "A05L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03C"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(forsaken)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Rust Aura"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rust Aura"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Plague construct emits horrifying gases of plague and death. Decreases the armour of nearby enemies by 3"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ]
+}

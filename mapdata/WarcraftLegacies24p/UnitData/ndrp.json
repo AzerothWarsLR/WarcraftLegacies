@@ -1,0 +1,29 @@
+{
+  "OldId": "ndrp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 3
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 13
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    }
+  ]
+}

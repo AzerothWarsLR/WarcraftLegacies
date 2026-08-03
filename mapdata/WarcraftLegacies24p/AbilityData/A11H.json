@@ -1,0 +1,51 @@
+{
+  "OldId": "Acmg",
+  "NewId": "A11H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Cmg2",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R05D"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(scarlet)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Takes control of an enemy summoned unit. The mana cost is 20% of the summoned unit\u0027s current hit points."
+    }
+  ]
+}

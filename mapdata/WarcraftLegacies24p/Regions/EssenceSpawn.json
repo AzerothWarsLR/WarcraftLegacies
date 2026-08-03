@@ -1,0 +1,16 @@
+{
+  "Left": -12160,
+  "Bottom": 6240,
+  "Right": -11968,
+  "Top": 6400,
+  "Name": "EssenceSpawn",
+  "CreationNumber": 112,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

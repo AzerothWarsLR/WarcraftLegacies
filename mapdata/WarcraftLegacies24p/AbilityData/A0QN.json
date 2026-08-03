@@ -1,0 +1,64 @@
+{
+  "OldId": "Assp",
+  "NewId": "A0QN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Sod1",
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "n09L"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Zuluhed)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Lava Spawn"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

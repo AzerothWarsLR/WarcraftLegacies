@@ -1,0 +1,43 @@
+{
+  "OldId": "ANba",
+  "NewId": "A0MF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BEfn"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Nbau",
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Treant Orb"
+    }
+  ]
+}

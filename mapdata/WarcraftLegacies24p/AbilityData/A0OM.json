@@ -1,0 +1,23 @@
+{
+  "OldId": "ACad",
+  "NewId": "A0OM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Twilight DK)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "OldId": "Afak",
+  "NewId": "A0RZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.45000002
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.45000002
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.45000002
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds 35 bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bomb - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Arcane Bomb"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCArcaneVoid.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCArcaneVoid.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneVoid.blp"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\Arcane Bomb.mdx"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Arcane Bomb - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero adds bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage.|n|cffffcc00Level 1|r - 35 damage and 100 AOE|n|cffffcc00Level 2|r - 45 damage and 120 AOE|n|cffffcc00Level 3|r - 55 damage and 140 AOE|n|cffffcc00Level 4|r - 65 damage and 160 AOE"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bomb - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bomb - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Bomb - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds 45 bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds 55 bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Adds 65 bonus damage to the unit\u0027s attack and causes its attacks to do area of effect damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    }
+  ]
+}

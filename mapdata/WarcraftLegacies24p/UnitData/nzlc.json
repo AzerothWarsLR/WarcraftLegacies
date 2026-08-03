@@ -1,0 +1,13 @@
+{
+  "OldId": "nzlc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLichKing.blp"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "OldId": "hcth",
+  "NewId": "h012",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A020,A02Y,AInv,A05A,ACrk,A0YO"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "udu1",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ugor",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "giant"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,R00B,Rhar,Rhme,Rhpm,Rguv"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron-Demi)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 188
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Captain Falric"
+    },
+    {
+      "Id": "uclr",
+      "Value": 188
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive Captain Falric"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Loyal Captain of Arthas, and his acting right hand. Falric has been with the prince since his youth, and is a strong follower. Him and his friend, Marwyn, are the closest to Arthas."
+    }
+  ]
+}

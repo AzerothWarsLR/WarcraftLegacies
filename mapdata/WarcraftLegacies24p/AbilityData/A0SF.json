@@ -1,0 +1,164 @@
+{
+  "OldId": "AOcr",
+  "NewId": "A0SF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(yor)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a  chance to summon an illusion at his target. |n|n|cffffcc00Level 1|r - 10% chance. |n|cffffcc00Level 2|r - 20% chance.|n|cffffcc00Level 3|r - 30% chance"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Thunder Fists - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 10% chance to summon an illusion"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 20% chance to summon an illusion"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 30% chance to summon an illusion"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "When this hero attacks, it has a 15% chance to hurl lightning at \u003CA024,DataB4\u003E targets, dealing \u003CA024,DataA4\u003E damage to each of them."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Illusionary Lance"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Illusionary Lance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSpearOfJustice.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpearOfJustice.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Illusionary Lance - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Illusionary Lance - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Illusionary Lance - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    }
+  ]
+}

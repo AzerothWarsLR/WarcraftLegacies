@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1886146393,
+    "Variation": 0,
+    "Position": {
+      "X": 19350.898,
+      "Y": 14452.424,
+      "Z": 54.5
+    },
+    "Rotation": 5.672321,
+    "Scale": {
+      "X": 0.6499999,
+      "Y": 0.6499999,
+      "Z": 0.49999988
+    },
+    "SkinId": 1886146393,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29022
+  },
+  {
+    "TypeId": 1818447704,
+    "Variation": 0,
+    "Position": {
+      "X": 19349.988,
+      "Y": 14452.248,
+      "Z": 99.30001
+    },
+    "Rotation": 1.1693708,
+    "Scale": {
+      "X": 0.5499999,
+      "Y": 0.5499999,
+      "Z": 0.5499999
+    },
+    "SkinId": 1818447704,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29021
+  },
+  {
+    "TypeId": 1160785986,
+    "Variation": 5,
+    "Position": {
+      "X": 19328,
+      "Y": 14080,
+      "Z": 84.25
+    },
+    "Rotation": 1.5707964,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1160785986,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3834
+  },
+  {
+    "TypeId": 1819759436,
+    "Variation": 0,
+    "Position": {
+      "X": 19275.32,
+      "Y": 14471.626,
+      "Z": 54.5
+    },
+    "Rotation": 2.5830874,
+    "Scale": {
+      "X": 0.74999994,
+      "Y": 0.74999994,
+      "Z": 0.74999994
+    },
+    "SkinId": 1819759436,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3873
+  },
+  {
+    "TypeId": 1752387674,
+    "Variation": 2,
+    "Position": {
+      "X": 19463.14,
+      "Y": 14271.376,
+      "Z": 54.5
+    },
+    "Rotation": 3.106686,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 0.95
+    },
+    "SkinId": 1752387674,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 9941
+  }
+]

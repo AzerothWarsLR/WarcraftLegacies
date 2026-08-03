@@ -1,0 +1,141 @@
+{
+  "OldId": "edry",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0JL,ACrk,Aien,Ault"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 24
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 21
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R047,R048,Rguv,Rhme,Rhar,Reuv,Repm"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "eaoe"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Brown)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Basic ranged attacker with a poison attack.|n|cfff5962dAbilities:|r Slow Poison, Resistant Skin|n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "ACsw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027thun Silithid Tunneler) "
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

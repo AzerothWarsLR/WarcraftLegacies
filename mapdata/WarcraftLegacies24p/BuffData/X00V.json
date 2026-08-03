@@ -1,0 +1,19 @@
+{
+  "OldId": "XEsf",
+  "NewId": "X00V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Absord Nexus"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Blizzard\\BlizzardTarget.mdl"
+    }
+  ]
+}

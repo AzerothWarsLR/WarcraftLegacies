@@ -1,0 +1,19 @@
+{
+  "OldId": "Bspe",
+  "NewId": "B09G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDruidSpeed.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Haste"
+    }
+  ]
+}

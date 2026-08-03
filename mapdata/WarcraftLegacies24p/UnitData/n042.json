@@ -1,0 +1,106 @@
+{
+  "OldId": "ninf",
+  "NewId": "n042",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACmi,A06W,ACrk"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "ua1b",
+      "Value": 65
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1400
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 60
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion-Archimond-Level 3)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 50
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gargantuan Abyssal"
+    },
+    {
+      "Id": "uclr",
+      "Value": 50
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    }
+  ]
+}

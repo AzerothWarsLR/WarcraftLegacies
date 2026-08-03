@@ -1,0 +1,56 @@
+{
+  "OldId": "ACes",
+  "NewId": "LEca",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\commandButtons\\PASBTNSlaughter.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DUMMY)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Capital"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Capital"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This building is one of your Capitals. When your team controls no Capitals and fewer than 6 Control Points, you lose the game."
+    }
+  ]
+}

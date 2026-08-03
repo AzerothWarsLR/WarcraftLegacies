@@ -1,0 +1,85 @@
+{
+  "OldId": "Apsh",
+  "NewId": "A0M9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "aoru",
+      "Type": 3,
+      "Value": "phaseshiftoff"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Illidan)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes this unit to shift out of existence for a long duration, avoiding any further damage until cancelled. |nLasts 30 seconds.|n|cffd45e19Has an 80 seconds cooldown.|r"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Void Exile"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Void Exile"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPhaseShift.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPhaseShift.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    }
+  ]
+}

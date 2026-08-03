@@ -1,0 +1,29 @@
+{
+  "OldId": "Ahr3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Grey - Goblin Shredders lumber)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "F"
+    }
+  ]
+}

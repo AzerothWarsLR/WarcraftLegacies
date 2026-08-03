@@ -1,0 +1,73 @@
+{
+  "OldId": "Roch",
+  "NewId": "R054",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Legion - Quest)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Stolen Power"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Stolen Power"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Dreadlords by increasing their attack damage by 20, movement speed by 20, and hit points by 200."
+    }
+  ]
+}

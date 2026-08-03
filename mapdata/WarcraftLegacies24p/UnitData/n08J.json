@@ -1,0 +1,115 @@
+{
+  "OldId": "nsbm",
+  "NewId": "n08J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,ACvs,ACwb"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "ACwb"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 20
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,enemies,ground,item,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Reuv,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Brown - Cenarius Summon)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\SpiderGreen\\SpiderGreen.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Black Widow"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Black Widow"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee unit that poisons opponents and carries its young into battle. Can cast Web."
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

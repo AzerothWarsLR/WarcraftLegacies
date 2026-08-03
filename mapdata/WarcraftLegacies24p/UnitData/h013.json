@@ -1,0 +1,137 @@
+{
+  "OldId": "harm",
+  "NewId": "h013",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CY,A0K5,Argl,A0M0,A06K"
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R022"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "utar",
+      "Type": 3,
+      "Value": "ancient,structure"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h019,h01L,hpea"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Ironforge)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 225
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gnomeregan"
+    },
+    {
+      "Id": "uclr",
+      "Value": 225
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

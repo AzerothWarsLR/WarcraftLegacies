@@ -1,0 +1,46 @@
+{
+  "OldId": "ngme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "usei",
+      "Type": 3,
+      "Value": "amrc,bspd,rde3,prvt,I000,pghe,pgma,shea,pomn,tret,dust"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowHouse"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3.25
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

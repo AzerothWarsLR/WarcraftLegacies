@@ -1,0 +1,16 @@
+{
+  "Left": 19776,
+  "Bottom": -29792,
+  "Right": 19840,
+  "Top": -29728,
+  "Name": "Region BS",
+  "CreationNumber": 360,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 255,
+    "A": 255
+  }
+}

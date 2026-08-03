@@ -1,0 +1,23 @@
+{
+  "OldId": "nshr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,neutral"
+    }
+  ]
+}

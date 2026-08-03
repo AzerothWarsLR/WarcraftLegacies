@@ -1,0 +1,39 @@
+{
+  "OldId": "AId1",
+  "NewId": "A08H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Attachment)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Drekthar weapon"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

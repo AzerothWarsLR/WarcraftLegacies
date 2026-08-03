@@ -1,0 +1,196 @@
+{
+  "OldId": "ACs7",
+  "NewId": "A063",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02N"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02N"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02N"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B02N"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "espv"
+    },
+    {
+      "Level": 2,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "espv"
+    },
+    {
+      "Level": 3,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "espv"
+    },
+    {
+      "Level": 4,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "espv"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Light Blue - Maiev)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Avatar of Vengeance"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Avatar of Vengeance - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons Avatars of Vengence to fight Maiev\u0027s enemies. |nLasts 60 seconds. |n|n|cffffcc00Level 1|r - 2 Avatars summoned. |n|cffffcc00Level 2|r - 3 Avatars summoned. |n|cffffcc00Level 3|r - 4 Avatars summoned. |n|cffffcc00Level 4|r - 5 Avatars summoned."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Avatar of Vengeance - |cffffcc00(W)|r [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 2 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 3 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 4 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 5 Avatars. |nLasts 60 seconds. |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

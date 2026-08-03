@@ -1,0 +1,29 @@
+{
+  "OldId": "Babr",
+  "NewId": "B08Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_Excorcism.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Holy Drain"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effect of Holy Drain; it has a bonus to hit point regeneration."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

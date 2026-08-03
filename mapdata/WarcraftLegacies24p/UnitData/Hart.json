@@ -1,0 +1,88 @@
+{
+  "OldId": "Hart",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A056,A06S,A05E,A01F,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Crown Prince"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Crown Prince of Lordaeron"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Arthas Menethil"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Crown Prince"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at healing allies and damaging enemies.|n|cfff5962dAbilities:|r Divine Shield |n|cfff5962dCan learn:|R Holy Nova, Call Royal Guard, Holy Aura, Solar Judgement|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Arthas Menethil"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 2144,
+  "Bottom": 15456,
+  "Right": 2560,
+  "Top": 15776,
+  "Name": "Trader1",
+  "CreationNumber": 495,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

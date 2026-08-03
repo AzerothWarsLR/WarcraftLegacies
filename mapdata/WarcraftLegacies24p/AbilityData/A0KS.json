@@ -1,0 +1,94 @@
+{
+  "OldId": "Advm",
+  "NewId": "A0KS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "dvm1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "dvm2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "dvm5",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "dvm6",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R03Q"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Warsong - Shadow Priest)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0KS,DataA1\u003E hit points and \u003CA0KS,DataB1\u003E mana. |n|cffffcc00Deals \u003CA0KS,DataE1\u003E damage to summoned units.|r"
+    }
+  ]
+}

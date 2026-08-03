@@ -1,0 +1,21 @@
+{
+  "OldId": "Afrb",
+  "NewId": "A09X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    }
+  ]
+}

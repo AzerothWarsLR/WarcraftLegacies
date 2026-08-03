@@ -1,0 +1,16 @@
+{
+  "Left": 9504,
+  "Bottom": -6656,
+  "Right": 11712,
+  "Top": -4160,
+  "Name": "IronforgeAmbient",
+  "CreationNumber": 351,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

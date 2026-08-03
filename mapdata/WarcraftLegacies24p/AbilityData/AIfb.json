@@ -1,0 +1,21 @@
+{
+  "OldId": "AIfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idam",
+      "Type": 2,
+      "Value": 6
+    }
+  ]
+}

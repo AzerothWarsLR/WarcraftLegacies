@@ -1,0 +1,144 @@
+{
+  "OldId": "Hant",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0WD,A0WG,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 12
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A032,A0OF,A0DG,A034"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R038"
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Grand Magus"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Grand Magus of the Kirin Tor"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Archmage Antonidas"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Grand Magus"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at conjuring and long range damaging spells.|n|cfff5962dAbilities:|r Counterspell |n|cfff5962dCan learn:|R Arcane Bombardment, Mass Simulacrum, Wise Council, Frostfall|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Antonidas"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

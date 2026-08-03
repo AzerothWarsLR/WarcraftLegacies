@@ -1,0 +1,75 @@
+{
+  "OldId": "Roen",
+  "NewId": "R00O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A07J"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gglm",
+      "Value": 75
+    },
+    {
+      "Id": "glmb",
+      "Value": 60
+    },
+    {
+      "Id": "glmm",
+      "Value": 75
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Ensnare Improvements"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Ensnare Improvements"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves the Ensnare ability, increasing its duration to \u003CA07J,Dur2\u003E and its range to \u003CA07J,Rng2\u003E."
+    }
+  ]
+}

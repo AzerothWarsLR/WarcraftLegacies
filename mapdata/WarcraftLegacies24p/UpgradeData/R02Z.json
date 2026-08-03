@@ -1,0 +1,99 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R02Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h04C"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0P3"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rtma"
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gtib",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanArmorUpThree.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Arathor-T2)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Reflective Plating"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Reflective Plating"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Upgrades |cffcece00Bladesman|r into |cffcece00Pikeman|r, providing the following changes:|n|n- Increases health by 100.|n|n- Increases movement speed by 15.|n|n- Increases armor by 1.|n|n- Increases range by 75.|n|n- Enables the|cffcece00 First Strike |rability, dealing 30 bonus damage on his first attack with a 30 second cooldown.|n|n- Improves |cffcece00Defend|r with an additional 5% more chance to reflect and 20% less magic damage taken while active."
+    }
+  ]
+}

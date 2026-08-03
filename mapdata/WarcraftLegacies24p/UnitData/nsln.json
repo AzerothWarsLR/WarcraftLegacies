@@ -1,0 +1,39 @@
+{
+  "OldId": "nsln",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0P0,ACsw,A0KH"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0P0"
+    },
+    {
+      "Id": "ubba",
+      "Value": 11
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ua1b",
+      "Value": 42
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1275
+    }
+  ]
+}

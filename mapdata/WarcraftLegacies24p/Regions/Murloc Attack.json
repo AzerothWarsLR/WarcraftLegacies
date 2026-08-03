@@ -1,0 +1,16 @@
+{
+  "Left": -3456,
+  "Bottom": -2368,
+  "Right": -3296,
+  "Top": -2176,
+  "Name": "Murloc Attack",
+  "CreationNumber": 245,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

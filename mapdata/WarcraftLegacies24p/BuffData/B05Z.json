@@ -1,0 +1,29 @@
+{
+  "OldId": "Bcsi",
+  "NewId": "B05Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Impaling Strike"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Dark Green Skirmisher)"
+    }
+  ]
+}

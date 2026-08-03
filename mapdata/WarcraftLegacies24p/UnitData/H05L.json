@@ -1,0 +1,160 @@
+{
+  "OldId": "Hjai",
+  "NewId": "H05L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0DT,Aamk,A0GP,A0GW,A0GV"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 350
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 350
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "uint",
+      "Value": 17
+    },
+    {
+      "Id": "uagi",
+      "Value": 19
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1900
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R00L"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lady of House Proudmoore"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Katherine Proudmoore"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, exceptional at dealing damages in all form.|n|cfff5962dCan Learn:|R Scattershot, Make it Rain, Deadeye, Assasinate|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\KatherineProudmooreV1.02.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Katherine Proudmoore"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Lady of House Proudmoore"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Lady of House Proudmoore"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNJainaFormal.blp"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNJainaFormal.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Rifle\\RifleImpact.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Sylvanus"
+    }
+  ]
+}

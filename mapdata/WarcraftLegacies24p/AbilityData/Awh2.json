@@ -1,0 +1,14 @@
+{
+  "OldId": "Awh2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Harvests lumber from trees."
+    }
+  ]
+}

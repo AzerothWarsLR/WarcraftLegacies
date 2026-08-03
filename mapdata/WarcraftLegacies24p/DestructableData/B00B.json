@@ -1,0 +1,24 @@
+{
+  "OldId": "FTtw",
+  "NewId": "B00B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Fall tree 2"
+    }
+  ]
+}

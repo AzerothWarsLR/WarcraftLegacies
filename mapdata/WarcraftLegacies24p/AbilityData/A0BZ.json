@@ -1,0 +1,59 @@
+{
+  "OldId": "Aegr",
+  "NewId": "A0BZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhoulFrenzy.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Passive)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Crippling Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Crippling Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit has a 20% chance to do extra damage and reduce the targets Attack and Movement speed."
+    }
+  ]
+}

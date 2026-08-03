@@ -1,0 +1,31 @@
+{
+  "OldId": "azhr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A096"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIsp"
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Allows for unlimited Town Portal Usages."
+    }
+  ]
+}

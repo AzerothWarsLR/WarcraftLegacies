@@ -1,0 +1,29 @@
+{
+  "OldId": "Bblo",
+  "NewId": "B0AF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Lubrificated; its attack rate are increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl,Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Lubrificated"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASOil.blp"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -9952,
+  "Bottom": 9632,
+  "Right": -9888,
+  "Top": 9696,
+  "Name": "Winterpspring Excavation",
+  "CreationNumber": 94,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

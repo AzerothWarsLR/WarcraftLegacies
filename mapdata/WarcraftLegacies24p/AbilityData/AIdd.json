@@ -1,0 +1,19 @@
+{
+  "OldId": "AIdd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 0.85
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}
