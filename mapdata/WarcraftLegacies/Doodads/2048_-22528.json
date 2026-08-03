@@ -1,13 +1,34 @@
 [
   {
+    "TypeId": 1479553090,
+    "Variation": 0,
+    "Position": {
+      "X": 1792,
+      "Y": -22592,
+      "Z": 545.3641
+    },
+    "Rotation": 3.9223876,
+    "Scale": {
+      "X": 0.90959996,
+      "Y": 0.90959996,
+      "Z": 0.90959996
+    },
+    "SkinId": 1479553090,
+    "State": 6,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 13381
+  },
+  {
     "TypeId": 1953714759,
     "Variation": 2,
     "Position": {
-      "X": 1873.9941,
-      "Y": -23028.15,
-      "Z": 541.288
+      "X": 1900.1763,
+      "Y": -22984.84,
+      "Z": 381.28806
     },
-    "Rotation": 2.4404097,
+    "Rotation": 4.217904,
     "Scale": {
       "X": 2.5999985,
       "Y": 2.5999985,
@@ -40,5 +61,68 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 4388
+  },
+  {
+    "TypeId": 1885951055,
+    "Variation": 0,
+    "Position": {
+      "X": 1856,
+      "Y": -22528,
+      "Z": 730.9648
+    },
+    "Rotation": 0,
+    "Scale": {
+      "X": 1.5426013,
+      "Y": 1.5426013,
+      "Z": 1.5426013
+    },
+    "SkinId": 1885951055,
+    "State": 6,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2320
+  },
+  {
+    "TypeId": 1885951055,
+    "Variation": 0,
+    "Position": {
+      "X": 1792,
+      "Y": -22784,
+      "Z": 730.9648
+    },
+    "Rotation": 0,
+    "Scale": {
+      "X": 1.5426013,
+      "Y": 1.5426013,
+      "Z": 1.5426013
+    },
+    "SkinId": 1885951055,
+    "State": 6,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2319
+  },
+  {
+    "TypeId": 1885951055,
+    "Variation": 0,
+    "Position": {
+      "X": 1920,
+      "Y": -22656,
+      "Z": 730.9648
+    },
+    "Rotation": 0,
+    "Scale": {
+      "X": 1.5426013,
+      "Y": 1.5426013,
+      "Z": 1.5426013
+    },
+    "SkinId": 1885951055,
+    "State": 6,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2318
   }
 ]

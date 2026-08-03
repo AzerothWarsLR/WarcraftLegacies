@@ -2,6 +2,7 @@
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.QuestBased;
@@ -26,8 +27,10 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
     "The Shen'dralar, the Highborne survivors of the Sundering, swear allegiance to their fellow Night Elves. As a sign of their loyalty, they offer up an artifact they have guarded for thousands of years: the Scepter of the Queen.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINELS_MAGIC)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain the Scepter of the Queen, the Athenaeum, 4 {highborne}, and the ability to train {highborne} from the {temple}",
+    ("{highborne}", GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)),
+    ("{temple}", GetObjectName(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINELS_MAGIC)));
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.

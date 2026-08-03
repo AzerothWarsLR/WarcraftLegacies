@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Localization;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Utils.Environment;
@@ -70,7 +71,7 @@ public sealed class Channel : IDisposable
       _channelingTimer = timer.Create();
       _channelingTimer.Start(_maxDuration, false, null);
       _channelingDialog = timerdialog.Create(_channelingTimer);
-      _channelingDialog.SetTitle(timerDialogTitle);
+      _channelingDialog.SetTitle(Loc.Get(timerDialogTitle));
       _channelingDialog.IsDisplayed = true;
     }
 

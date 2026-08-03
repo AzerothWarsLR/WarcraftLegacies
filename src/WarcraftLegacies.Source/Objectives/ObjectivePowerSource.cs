@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives;
@@ -20,7 +21,7 @@ public sealed class ObjectivePowerSource : Objective
   /// </summary>
   public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<int> validItemTypeIds)
   {
-    Description = $"Place a valid power source in the {dimensionalGenerator.Name}";
+    SetDescription("Place a valid power source in the {target}", ("{target}", Loc.Get(dimensionalGenerator.Name)));
     var pickupTrigger = trigger.Create();
     pickupTrigger.RegisterUnitEvent(dimensionalGenerator, unitevent.PickupItem);
     pickupTrigger.AddAction(() =>

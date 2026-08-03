@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Shared;
@@ -24,7 +25,12 @@ public sealed class QuestSentinelsKillCthun : QuestData
   }
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(UNIT_EDOS_ROOST_SENTINELS_SPECIALIST)}s and research {GetObjectName(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINELS_BARRACKS)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {moonRider}s from the {roost}s and research {upgrade}'s second level from the {academy}",
+    ("{moonRider}", GetObjectName(UNIT_E022_MOON_RIDER_SENTINELS)),
+    ("{roost}", GetObjectName(UNIT_EDOS_ROOST_SENTINELS_SPECIALIST)),
+    ("{upgrade}", GetObjectName(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)),
+    ("{academy}", GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINELS_BARRACKS)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

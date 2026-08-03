@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Sounds;
 namespace MacroTools.Quests;
 
@@ -17,8 +18,8 @@ public static class FactionQuestExtensions
     var sound = localPlayerIsAlly ? SoundLibrary.Completed : SoundLibrary.Failed;
     sound.Start();
 
-    var message = $"\n|cffffcc00MAJOR EVENT - {whichPlayerData.Faction?.PrefixCol}{questData.Title}|r";
-    var messageWithFlavour = $"\n{questData.RewardFlavour}\n";
+    var message = $"\n|cffffcc00{Loc.Get("MAJOR EVENT")} - {whichPlayerData.Faction?.PrefixCol}{Loc.Get(questData.Title)}|r";
+    var messageWithFlavour = $"\n{Loc.Get(questData.RewardFlavour)}\n";
 
     if (player.LocalPlayer != whichPlayer)
     {
@@ -34,8 +35,8 @@ public static class FactionQuestExtensions
     }
 
     var display = !string.IsNullOrEmpty(questData.PenaltyFlavour)
-      ? $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n{questData.PenaltyFlavour}\n"
-      : $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n";
+      ? $"\n|cffffcc00{Loc.Get("QUEST FAILED")} - {Loc.Get(questData.Title)}|r\n{Loc.Get(questData.PenaltyFlavour)}\n"
+      : $"\n|cffffcc00{Loc.Get("QUEST FAILED")} - {Loc.Get(questData.Title)}|r\n";
 
     if (faction.Player.GetPlayerSettings().ShowQuestText)
     {
@@ -45,9 +46,9 @@ public static class FactionQuestExtensions
         {
           display = objective.Progress switch
           {
-            QuestProgress.Complete => $"{display} - |cff808080{objective.Description} (Completed)|r\n",
-            QuestProgress.Failed => $"{display} - |cffCD5C5C{objective.Description} (Failed)|r\n",
-            _ => $"{display} - {objective.Description}\n"
+            QuestProgress.Complete => $"{display} - |cff808080{Loc.Get(objective.Description)} ({Loc.Get("Completed")})|r\n",
+            QuestProgress.Failed => $"{display} - |cffCD5C5C{Loc.Get(objective.Description)} ({Loc.Get("Failed")})|r\n",
+            _ => $"{display} - {Loc.Get(objective.Description)}\n"
           };
         }
       }
@@ -64,13 +65,13 @@ public static class FactionQuestExtensions
       return;
     }
 
-    var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n";
+    var display = $"\n|cffffcc00{Loc.Get("QUEST COMPLETED")} - {Loc.Get(questData.Title)}|r\n";
 
     if (faction.Player.GetPlayerSettings().ShowQuestText)
     {
       if (!string.IsNullOrEmpty(questData.RewardFlavour))
       {
-        display += $"{questData.RewardFlavour}\n";
+        display += $"{Loc.Get(questData.RewardFlavour)}\n";
       }
     }
 
@@ -88,13 +89,13 @@ public static class FactionQuestExtensions
       return;
     }
 
-    var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n";
+    var display = $"\n|cffffcc00{Loc.Get("QUEST DISCOVERED")} - {Loc.Get(questData.Title)}|r\n";
 
     if (faction.Player.GetPlayerSettings().ShowQuestText)
     {
       if (displayFlavour)
       {
-        display += $"{questData.Flavour}\n";
+        display += $"{Loc.Get(questData.Flavour)}\n";
       }
 
       foreach (var objective in questData.Objectives)
@@ -102,8 +103,8 @@ public static class FactionQuestExtensions
         if (objective.ShowsInPopups)
         {
           display = objective.Progress == QuestProgress.Complete
-            ? $"{display} - |cff808080{objective.Description} (Completed)|r\n"
-            : $"{display} - {objective.Description}\n";
+            ? $"{display} - |cff808080{Loc.Get(objective.Description)} ({Loc.Get("Completed")})|r\n"
+            : $"{display} - {Loc.Get(objective.Description)}\n";
         }
       }
     }

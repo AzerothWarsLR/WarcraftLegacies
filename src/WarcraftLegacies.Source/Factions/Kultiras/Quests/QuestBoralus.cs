@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Stormwind.Powers;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -40,7 +41,8 @@ public sealed class QuestBoralus : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Gain control of all units in Kul'tiras,gain control of Katherine Proudmoore, and acquire the {RewardPowerName} Power";
+    Loc.Format("Gain control of all units in Kul'tiras, gain control of Katherine Proudmoore, and acquire the {power} Power",
+      ("{power}", Loc.Get(RewardPowerName)));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
@@ -58,7 +60,7 @@ public sealed class QuestBoralus : QuestData
     var rewardPower = new CityOfHeroes(0.35f, 1.5f, "Ships")
     {
       IconName = "LordAdmiralPendant",
-      Name = RewardPowerName,
+      Name = Loc.Get(RewardPowerName),
       HeroGlowAbilityTypeId = ABILITY_A0GK_HERO_GLOW_ORIGIN,
       Filter = unit =>
       {

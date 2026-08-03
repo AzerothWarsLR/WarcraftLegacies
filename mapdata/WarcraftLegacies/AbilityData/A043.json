@@ -74,7 +74,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals a friendly living unit for 200 and grants bonus armor, or afflicts an enemy Undead unit with reduced armor dealing half the damage."
+      "Value": "Heals a friendly living unit for 200 and grants \u003CA00G,DataA1\u003E bonus armor, or afflicts an enemy Undead unit with \u003CA00K,DataA1\u003E reduced armor dealing half the damage."
     },
     {
       "Level": 2,

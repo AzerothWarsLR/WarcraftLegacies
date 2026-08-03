@@ -21,16 +21,6 @@
       "Value": "Ethereal"
     },
     {
-      "Id": "bptx",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "bptd",
-      "Type": 3,
-      "Value": ""
-    },
-    {
       "Id": "bmis",
       "Type": 2,
       "Value": 0.5
@@ -49,6 +39,16 @@
       "Id": "bfil",
       "Type": 3,
       "Value": "Doodads\\Terrain\\ForceBridgeLarge0\\ForceBridgeLarge0.mdl"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bptd",
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

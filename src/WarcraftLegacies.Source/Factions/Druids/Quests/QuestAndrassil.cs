@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -33,8 +34,11 @@ public sealed class QuestAndrassil : QuestData
     "With Grizzly Hills now being tended by the Trees of Life, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and learn to train the hero Ursoc from the {GetObjectName(UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS_ALTAR)}. If you're allied to the Scourge, {_ursoc.Name}'s starting experience is halved";
+  protected override string RewardDescription => Loc.Format(
+    "Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {unit}, and learn to train the hero Ursoc from the {altar}. If you're allied to the Scourge, {hero}'s starting experience is halved",
+    ("{unit}", GetObjectName(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)),
+    ("{altar}", GetObjectName(UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS_ALTAR)),
+    ("{hero}", _ursoc.Name));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

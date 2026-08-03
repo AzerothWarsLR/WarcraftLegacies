@@ -1,6 +1,7 @@
 ﻿using MacroTools.Artifacts;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Quelthalas.Powers;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
@@ -61,7 +62,7 @@ public sealed class QuestKelthuzadLich : QuestData
       _sunwell.Unit.AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
       _sunwell.Unit.MaxMana = 0;
       _sunwell.Unit.Skin = UNIT_N079_THE_SUNWELL_CORRUPTED_QUELTHALAS_OTHER;
-      _sunwell.Unit.Name = "Corrupted Sunwell";
+      _sunwell.Unit.Name = Loc.Get("Corrupted Sunwell");
     }
 
     _sunwell.Essential = false;

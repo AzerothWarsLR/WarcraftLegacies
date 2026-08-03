@@ -43,21 +43,6 @@
       "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_NetherstormRock.mdl"
-    },
-    {
-      "Variation": 1,
-      "Id": "dvb1",
-      "Value": 155
-    },
-    {
-      "Variation": 1,
-      "Id": "dvg1",
-      "Value": 135
-    },
-    {
-      "Variation": 1,
-      "Id": "dvr1",
-      "Value": 125
     }
   ]
 }

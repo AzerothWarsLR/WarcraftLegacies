@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -41,8 +42,9 @@ public sealed class QuestAstranaar : QuestData
   }
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-     $"Control of all units in Astranaar Outpost and Auberdine and learn to train Tyrande and Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINELS_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Control of all units in Astranaar Outpost and Auberdine and learn to train Tyrande and Naisha from the {altar}",
+    ("{altar}", GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINELS_ALTAR)));
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

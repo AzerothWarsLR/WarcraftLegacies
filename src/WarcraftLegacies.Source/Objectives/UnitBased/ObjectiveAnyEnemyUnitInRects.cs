@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -31,7 +32,8 @@ public sealed class ObjectiveAnyEnemyUnitInRects : Objective, IHasCompletingUnit
   {
     var rectangles = targetRects as Rectangle[] ?? targetRects.ToArray();
     _targetRects = rectangles;
-    Description = $"Enemy {unitDescriptor} unit has entered {rectName}";
+    SetDescription("Enemy {descriptor} unit has entered {rect}",
+      ("{descriptor}", Loc.Get(unitDescriptor)), ("{rect}", Loc.Get(rectName)));
     DisplaysPosition = false;
     PingPath = "MinimapQuestTurnIn";
   }
@@ -40,7 +42,7 @@ public sealed class ObjectiveAnyEnemyUnitInRects : Objective, IHasCompletingUnit
   public unit? CompletingUnit { get; private set; }
 
   /// <inheritdoc />
-  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : Loc.Get("an unknown hero");
 
   private bool IsUnitValid(unit whichUnit) =>
     !IsPlayerOnSameTeamAsAnyEligibleFaction(whichUnit.Owner) && whichUnit.Alive &&

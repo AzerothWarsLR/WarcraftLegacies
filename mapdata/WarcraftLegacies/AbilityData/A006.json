@@ -42,11 +42,6 @@
       "Value": "air,enemies,ground,organic"
     },
     {
-      "Id": "aart",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfFire.blp"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Yellow Rune Priest)"
@@ -59,18 +54,7 @@
     {
       "Id": "amat",
       "Type": 3,
-      "Value": "Abilities\\Weapons\\DemolisherFireMissile\\DemolisherFireMissile.mdl"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "Rune of Wrath"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Rune of Wrath"
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
     },
     {
       "Level": 1,

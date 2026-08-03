@@ -1,11 +1,12 @@
 ﻿using MacroTools.GameModes;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.GameModes;
 
 public sealed class OpenAlliance : IGameMode
 {
   /// <inheritdoc />
-  public string Name => "Open Alliance";
+  public string Name => Loc.Get("Open Alliance");
 
   /// <inheritdoc />
   public void OnChoose()

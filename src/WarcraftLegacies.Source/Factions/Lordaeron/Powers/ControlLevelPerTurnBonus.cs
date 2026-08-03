@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron.Powers;
 
@@ -17,8 +18,8 @@ public sealed class ControlLevelPerTurnBonus : Power
   {
     _bonus = bonus;
     Description = bonus == 1
-      ? "Your Control Points gain an additional level each turn."
-      : $"Your Control Points gain {bonus} additional levels each turn.";
+      ? Loc.Get("Your Control Points gain an additional level each turn.")
+      : Loc.Format("Your Control Points gain {bonus} additional levels each turn.", ("{bonus}", bonus.ToString()));
   }
 
   /// <inheritdoc />

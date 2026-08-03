@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -26,5 +27,8 @@ public sealed class QuestWestfallOutpost : QuestData
     "The Kul Tiran outpost in Westfall has been completed. In the mean time, the Ember Order has cleansed House Waycrest of their Drust influence. Meredith Waycrest has been released from her pact, and may now join the war effort.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to build {GetObjectName(UNIT_H093_ORDER_CHAPTER_HOUSE_KULTIRAS_SIEGE)}s, and learn to train Meredith Waycrest from the {GetObjectName(UNIT_H07M_ALTAR_OF_ADMIRALS_KULTIRAS_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to build {chapterHouse}s, and learn to train Meredith Waycrest from the {altar}",
+    ("{chapterHouse}", GetObjectName(UNIT_H093_ORDER_CHAPTER_HOUSE_KULTIRAS_SIEGE)),
+    ("{altar}", GetObjectName(UNIT_H07M_ALTAR_OF_ADMIRALS_KULTIRAS_ALTAR)));
 }

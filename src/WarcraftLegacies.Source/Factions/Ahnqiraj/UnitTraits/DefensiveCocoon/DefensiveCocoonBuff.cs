@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using WCSharp.Buffs;
 using WCSharp.Effects;
 
@@ -33,7 +34,7 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
     _egg.MaxLife = MaximumHitPoints;
     _egg.SetLifePercent(100);
     _egg.Armor = Target.Armor;
-    _egg.Name = $"Cocoon ({Target.GetProperName()})";
+    _egg.Name = Loc.Format("Cocoon ({hero})", ("{hero}", Target.GetProperName()));
 
     var reviveEffect = effect.Create(ReviveEffect, Target.X, Target.Y);
     reviveEffect.Scale = 2;

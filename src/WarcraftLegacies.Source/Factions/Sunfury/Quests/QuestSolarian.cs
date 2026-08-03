@@ -1,4 +1,5 @@
 ﻿using MacroTools.Artifacts;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
 
@@ -27,6 +28,7 @@ public sealed class QuestSolarian : QuestData
     "Extensive study of Murmur's essence has granted Solarion the power to channel void energies.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    $"Learn to train High Astromancer Solarion from the {GetObjectName(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train High Astromancer Solarion from the {altar}",
+    ("{altar}", GetObjectName(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)));
 }

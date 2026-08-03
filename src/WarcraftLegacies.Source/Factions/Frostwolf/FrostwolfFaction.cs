@@ -2,6 +2,7 @@
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf.Quests;
@@ -28,9 +29,9 @@ public sealed class FrostwolfFaction : Faction
     };
     CinematicMusic = "SadMystery";
     ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
-    IntroText = $"You are playing as the honorable {PrefixCol}Frostwolf Clan|r.\n\n" +
-                "You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\n" +
-                "Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
+    IntroText = () => Loc.Format(
+      "You are playing as the honorable {clan}.\n\nYou begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\nYour allies will be coming south to help you defend against the Old Gods, do not engage them alone.",
+      ("{clan}", $"{PrefixCol}{Loc.Get("Frostwolf Clan")}|r"));
     Nicknames = new List<string>
     {
       "fw",

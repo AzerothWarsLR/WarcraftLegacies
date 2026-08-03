@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WCSharp.Shared.Data;
@@ -31,7 +32,8 @@ public sealed class QuestHighmountain : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Gain control of all units in Highmountain, and learn to train {GetObjectName(UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)}";
+    Loc.Format("Gain control of all units in Highmountain, and learn to train {unit}s from the {building}",
+      ("{unit}", GetObjectName(UNIT_N049_WANDERER_FROSTWOLF)), ("{building}", GetObjectName(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)));
 
   protected override void OnFail(Faction completingFaction)
   {

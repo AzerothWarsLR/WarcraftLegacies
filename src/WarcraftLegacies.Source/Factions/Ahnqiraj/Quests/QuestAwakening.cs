@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -25,5 +26,7 @@ public sealed class QuestAwakening : QuestData
     "My singular gaze opens wide, pouring into the minds of all those unfortunate enough to inhabit Azeroth during my imminent reign.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"C'thun learn to cast {GetObjectName(Ultimate)}";
+  protected override string RewardDescription => Loc.Format(
+    "C'thun learn to cast {ability}",
+    ("{ability}", GetObjectName(Ultimate)));
 }

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -39,8 +40,9 @@ public sealed class QuestRepairExodarHull : QuestData
   public override string PenaltyFlavour => "The Exodar is destroyed. It can never be repaired again.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Gain control of all units in the Exodar and learn to train Nobundo from the {GetObjectName(UNIT_O058_ALTAR_OF_LIGHT_DRAENEI_ALTAR)}";
+  protected override string RewardDescription => Loc.Format(
+    "Gain control of all units in the Exodar and learn to train Nobundo from the {altar}",
+    ("{altar}", GetObjectName(UNIT_O058_ALTAR_OF_LIGHT_DRAENEI_ALTAR)));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)

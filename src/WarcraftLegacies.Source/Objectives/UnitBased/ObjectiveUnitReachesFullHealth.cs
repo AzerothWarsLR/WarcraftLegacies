@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
@@ -20,9 +21,10 @@ public sealed class ObjectiveUnitReachesFullHealth : Objective
     _objectiveUnit = objectiveUnit;
     TargetWidget = objectiveUnit;
     var hitPointRequirement = objectiveUnit.MaxLife;
-    Description = objectiveUnit.IsUnitType(unittype.Structure)
-      ? $"Repair {objectiveUnit.Name} to {hitPointRequirement} hit points"
-      : $"Bring {objectiveUnit.Name} to {hitPointRequirement} hit points";
+    SetDescription(
+      objectiveUnit.IsUnitType(unittype.Structure) ? "Repair {target} to {hp} hit points" : "Bring {target} to {hp} hit points",
+      ("{target}", Loc.Get(objectiveUnit.Name)),
+      ("{hp}", hitPointRequirement.ToString()));
     DisplaysPosition = objectiveUnit.IsUnitType(unittype.Structure);
     var lifeTrigger = trigger.Create();
     float limitValue = hitPointRequirement - 1;

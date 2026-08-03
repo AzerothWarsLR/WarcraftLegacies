@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 
 namespace MacroTools.Quests;
 
@@ -24,10 +25,10 @@ public abstract class QuestData
     Quest = quest.Create();
     Flavour = desc;
     Title = title;
-    Quest.SetTitle(title);
     Quest.SetIcon(icon);
     Quest.IsEnabled = false;
     IsFactionQuest = true;
+    Quest.SetTitle(Loc.Get(title, Loc.GetSystemLanguage()));
   }
 
   /// <summary>
@@ -146,18 +147,19 @@ public abstract class QuestData
 
   private void RefreshDescription()
   {
-    var description = Flavour;
+    var language = Loc.GetSystemLanguage();
+    var description = Loc.Get(Flavour, language);
     if (!string.IsNullOrEmpty(RewardDescription))
     {
-      description += $"\n|cffffcc00On completion:|r {RewardDescription}";
+      description += $"\n|cffffcc00{Loc.Get("On completion:", language)}|r {Loc.Get(RewardDescription, language)}";
     }
     if (!string.IsNullOrEmpty(PenaltyDescription))
     {
-      description += $"\n|cffffcc00On failure:|r {PenaltyDescription}";
+      description += $"\n|cffffcc00{Loc.Get("On failure:", language)}|r {Loc.Get(PenaltyDescription, language)}";
     }
     if (Knowledge > 0)
     {
-      description += $"\n|cff8080ffKnowledge:|r {Knowledge}";
+      description += $"\n|cff8080ff{Loc.Get("Knowledge:", language)}|r {Knowledge}";
     }
     Quest.SetDescription(description);
   }

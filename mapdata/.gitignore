@@ -8,13 +8,13 @@
 !*/war3mapMisc.txt
 !*/war3mapSkin.txt
 
-!**/Imports/**/*.blp
-!**/Imports/**/*.BLP
-!**/Imports/**/*.fdf
-!**/Imports/**/*.mdx
-!**/Imports/**/*.Mdx
-!**/Imports/**/*.MDX
-!**/Imports/**/*.mp3
-!**/Imports/**/*.slk
-!**/Imports/**/*.toc
-!**/Imports/**/*.webp
+!*/Imports/**/*.blp
+!*/Imports/**/*.BLP
+!*/Imports/**/*.fdf
+!*/Imports/**/*.mdx
+!*/Imports/**/*.Mdx
+!*/Imports/**/*.MDX
+!*/Imports/**/*.mp3
+!*/Imports/**/*.slk
+!*/Imports/**/*.toc
+!*/Imports/**/*.webp

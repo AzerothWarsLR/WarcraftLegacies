@@ -105,6 +105,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Summons Heroes and Demi-heroes. "
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowSacrificialPit"
     }
   ]
 }

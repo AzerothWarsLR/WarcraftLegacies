@@ -1,0 +1,103 @@
+{
+  "OldId": "AHad",
+  "NewId": "VP30",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Ironforge - Magni)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Devotion Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives \u003CVP30,DataA4,.\u003E additional armor to nearby friendly units in 450 range."
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Gives additional armor to nearby friendly units in 450 range. |n|n|cffffcc00Level 1|r - Increases armor by \u003CVP30,DataA1,.\u003E. |n|cffffcc00Level 2|r - Increases armor by \u003CVP30,DataA2,.\u003E. |n|cffffcc00Level 3|r - Increases armor by \u003CVP30,DataA3,.\u003E.|n|cffffcc00Level 4|r - Increases armor by \u003CVP30,DataA4,.\u003E."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives \u003CVP30,DataA1,.\u003E additional armor to nearby friendly units in 450 range."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives \u003CVP30,DataA2,.\u003E additional armor to nearby friendly units in 450 range."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives \u003CVP30,DataA3,.\u003E additional armor to nearby friendly units in 450 range."
+    }
+  ]
+}

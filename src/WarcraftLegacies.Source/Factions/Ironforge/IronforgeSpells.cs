@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
+using WarcraftLegacies.Source.Factions.Gilneas.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells;
+using WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
+using WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 
@@ -21,5 +24,53 @@ public static class IronforgeSpells
       },
       GoldCost = 25
     });
+
+    SpellRegistry.Register(new AddAbilityOnCast(ABILITY_MD07_AVATAR_OF_THE_MOUNTAIN_MURADIN)
+    {
+      Duration = new LeveledAbilityField<float>
+      {
+        Base = 30f,
+        PerLevel = 0f
+      },
+      BuffApplicatorId = ABILITY_TP62_TAUNT_BUFF_APPLICATOR,
+      BuffId = BUFF_TP63_TAUNT,
+      AbilitiesToAdd = new List<int>
+      {
+        ABILITY_TP61_TAUNT_AVATAR_OF_THE_MOUNTAIN
+      }
+    });
+
+    SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_FALSTAD_WILDHAMMER)
+    {
+      GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
+      // StormRiderTypeId = UNIT_H03Z_STORMRIDER_IRONFORGE,
+      Damage = new LeveledAbilityField<float> { Base = 30, PerLevel = 20 },
+      Duration = new LeveledAbilityField<float> { Base = 25, PerLevel = 5 },
+      CollisionRadius = 100,
+      OrbitRadius = 300,
+      OrbitalPeriod = 4,
+      BaseProjectileCount = 3,
+      ArmorBonus = 35,
+      ArmorBuffEffect = "war3mapImported/Effect_ShieldBuff_Yellow.mdx"
+    });
+    var volatileFlask = new VolatileFlask(ABILITY_TP11_VOLATILE_FLASK_IRONFORGE)
+    {
+      Damage = 25f,
+      Radius = 175f,
+      MaxDamage = 300f
+    };
+    SpellRegistry.Register(volatileFlask);
+
+    SpellRegistry.Register(new Stormbolt(ABILITY_TP49_MURADIN_S_STORMBOLT_MURADIN)
+    {
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 25f,
+        PerLevel = 50f
+      },
+      StunAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+    });
+
+    SpellRegistry.Register(new ThunderCrack(ABILITY_TP51_THUNDER_CRACK_MURADIN));
   }
 }

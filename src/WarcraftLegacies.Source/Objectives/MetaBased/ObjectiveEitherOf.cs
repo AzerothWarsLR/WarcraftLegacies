@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Quests;
+using MacroTools.Save;
 
 namespace WarcraftLegacies.Source.Objectives.MetaBased;
 
@@ -13,7 +14,8 @@ public sealed class ObjectiveEitherOf : Objective
   {
     ObjectiveA = objectiveA;
     ObjectiveB = objectiveB;
-    Description = $"{objectiveA.Description} or {objectiveB.Description}";
+    SaveManager.RunWhenLocalPlayerSettingsReady(() =>
+      SetDescription("{a} or {b}", ("{a}", objectiveA.Description), ("{b}", objectiveB.Description)));
     objectiveA.ProgressChanged += OnChildProgressChanged;
     objectiveB.ProgressChanged += OnChildProgressChanged;
     Position = ObjectiveA.Position;

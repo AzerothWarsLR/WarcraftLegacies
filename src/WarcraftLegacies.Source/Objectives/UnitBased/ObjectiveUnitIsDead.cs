@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -41,10 +42,10 @@ public sealed class ObjectiveUnitIsDead : Objective
   {
     if (Target.IsUnitType(unittype.Structure) || Target.IsUnitType(unittype.Ancient))
     {
-      Description = $"{Target.Name} has been destroyed";
+      SetDescription("{target} has been destroyed", ("{target}", Loc.Get(Target.Name)));
       return;
     }
 
-    Description = $"{Target.Name} is dead";
+    SetDescription("{target} is dead", ("{target}", Loc.Get(Target.Name)));
   }
 }

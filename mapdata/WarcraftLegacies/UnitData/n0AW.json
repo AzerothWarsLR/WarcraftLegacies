@@ -115,6 +115,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "Incubation Pool"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowSacrificialPit"
     }
   ]
 }

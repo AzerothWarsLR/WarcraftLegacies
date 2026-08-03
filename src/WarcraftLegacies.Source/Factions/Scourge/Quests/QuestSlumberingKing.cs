@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -39,8 +40,8 @@ public sealed class QuestSlumberingKing : QuestData
   {
     get
     {
-      var name = "unit";
-      var factionName = "an unknown faction";
+      var name = Loc.Get("unit");
+      var factionName = Loc.Get("an unknown faction");
 
       var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
       if (completingUnit != null)
@@ -58,7 +59,10 @@ public sealed class QuestSlumberingKing : QuestData
         }
       }
 
-      return $"A {name} under the control of {factionName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
+      return Loc.Format(
+        "A {unit} under the control of {faction} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.",
+        ("{unit}", name),
+        ("{faction}", factionName));
     }
   }
 

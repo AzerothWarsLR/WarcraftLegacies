@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
@@ -37,10 +38,10 @@ public sealed class ObjectiveKillUnit : Objective
 
   private void InitializeDescription()
   {
-    var killVerb = Target.IsUnitType(unittype.Structure) || Target.IsUnitType(unittype.Ancient)
-      ? "Destroy"
-      : "Kill";
+    var template = Target.IsUnitType(unittype.Structure) || Target.IsUnitType(unittype.Ancient)
+      ? "Destroy {target}"
+      : "Kill {target}";
 
-    Description = $"{killVerb} {Target.GetProperName()}";
+    SetDescription(template, ("{target}", Loc.Get(Target.GetProperName())));
   }
 }

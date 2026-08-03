@@ -13,17 +13,17 @@
     {
       "Id": "ftip",
       "Type": 3,
-      "Value": "Command Point 25 gold per minute"
+      "Value": "Trading Post 10 gold per minute"
     },
     {
       "Id": "fube",
       "Type": 3,
-      "Value": "This unit is a 25 gold per minute CP. It increases your income by 25 gold."
+      "Value": "This unit is a 10 gold per minute CP. It increases your income by 10 gold."
     },
     {
       "Id": "fnam",
       "Type": 3,
-      "Value": "Command Point 25 gold per minute"
+      "Value": "Trading Post 10 gold per minute"
     },
     {
       "Id": "ftat",

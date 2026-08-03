@@ -1,5 +1,5 @@
 {
-  "OldId": "Arsp",
+  "OldId": "ACav",
   "NewId": "A004",
   "Unk": [
     0
@@ -7,199 +7,64 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "aare",
+      "Pointer": 1,
+      "Id": "Had1",
       "Type": 2,
-      "Value": 800
-    },
-    {
-      "Level": 2,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 800
-    },
-    {
-      "Level": 3,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 800
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 150
+      "Value": -3
     },
     {
       "Level": 1,
-      "Pointer": 1,
-      "Id": "Nst1",
-      "Value": 15
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Nst1",
-      "Value": 15
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Nst1",
-      "Value": 15
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "Nst2",
+      "Id": "aare",
       "Type": 2,
-      "Value": 55
+      "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 3,
-      "Id": "Nst3",
-      "Type": 2,
-      "Value": 10
-    },
-    {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": "Nst3",
-      "Type": 2,
-      "Value": 15
-    },
-    {
-      "Level": 3,
-      "Pointer": 3,
-      "Id": "Nst3",
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 3,
-      "Pointer": 4,
-      "Id": "Nst4",
-      "Type": 2,
-      "Value": 275
-    },
-    {
-      "Level": 3,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 30
-    },
-    {
-      "Level": 3,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 30
-    },
-    {
-      "Id": "alev",
-      "Value": 3
-    },
-    {
-      "Id": "alsk",
-      "Value": 5
-    },
-    {
-      "Id": "amsp",
-      "Value": 900
-    },
-    {
-      "Id": "arlv",
-      "Value": 10
-    },
-    {
-      "Level": 3,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Id": "aart",
+      "Id": "atar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGryphonRider.blp"
+      "Value": "self"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "abuf",
       "Type": 3,
-      "Value": "(Yellow Falstad)"
+      "Value": "TP53"
     },
     {
-      "Id": "ahky",
+      "Id": "arac",
       "Type": 3,
-      "Value": "R"
-    },
-    {
-      "Id": "amat",
-      "Type": 3,
-      "Value": "units\\human\\GryphonRider\\GryphonRider.mdl"
+      "Value": "human"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Gryphon Sky"
+      "Value": "Thunder Crack (Armor Debuff Applicator)"
     },
     {
-      "Id": "arar",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGryphonRider.blp"
+      "Value": ""
     },
     {
-      "Id": "arhk",
+      "Id": "atat",
       "Type": 3,
-      "Value": "R"
+      "Value": ""
     },
     {
-      "Id": "aret",
+      "Id": "ata0",
       "Type": 3,
-      "Value": "Learn |cffffcc00R|r Gryphon Sky - [|cffffcc00Level %d|r]"
+      "Value": ""
     },
     {
-      "Id": "arut",
+      "Id": "aart",
       "Type": 3,
-      "Value": "Calls Gryphon Riders from the sky. |n|n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|cffffcc00Level 2|r -  Each gryphon deals 15 damage. |n|cffffcc00Level 3|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
-    },
-    {
-      "Id": "asat",
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Items\\AIlb\\AIlbSpecialArt.mdl"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroThunderclap.blp"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|nLasts 30 seconds."
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 15 damage. |n|nLasts 30 seconds."
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
+      "Value": "Armor reduced by 3"
     }
   ]
 }

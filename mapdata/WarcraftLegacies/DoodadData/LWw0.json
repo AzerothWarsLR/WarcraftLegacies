@@ -15,16 +15,6 @@
       "Value": 0.01
     },
     {
-      "Variation": 1,
-      "Id": "dvg1",
-      "Value": 200
-    },
-    {
-      "Variation": 1,
-      "Id": "dvr1",
-      "Value": 200
-    },
-    {
       "Id": "dfil",
       "Type": 3,
       "Value": "war3mapImported\\Prop_WaterfallNOSPLASH.mdl"

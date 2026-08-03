@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -24,6 +25,7 @@ public sealed class QuestMammoth : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF)}s from the {GetObjectName(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST)}";
+    Loc.Format("Learn to train {unit}s from the {building}",
+      ("{unit}", GetObjectName(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF)), ("{building}", GetObjectName(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST)));
 
 }

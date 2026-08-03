@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Setup;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -26,7 +27,10 @@ public sealed class Immortality : Power
     {
       _isActive = value;
       var prefix = IsActive ? "" : "|cffc0c0c0";
-      Description = $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead be restored to {_healAmountPercentage}% of its maximum hit points. Only active while your team controls a World Tree.";
+      Description = prefix + Loc.Format(
+        "When a unit you control would take lethal damage, it has a {chance}% chance to instead be restored to {amount}% of its maximum hit points. Only active while your team controls a World Tree.",
+        ("{chance}", _healChancePercentage.ToString()),
+        ("{amount}", _healAmountPercentage.ToString()));
       var researchLevel = _isActive ? 1 : 0;
       foreach (var player in _playersWithPower)
       {
@@ -45,7 +49,7 @@ public sealed class Immortality : Power
   {
     _healChancePercentage = healChancePercentage;
     _healAmountPercentage = healAmountPercentage;
-    Name = "Immortality";
+    Name = Loc.Get("Immortality");
     _worldTrees = worldTrees;
   }
 

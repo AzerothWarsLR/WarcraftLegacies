@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -18,7 +19,7 @@ public sealed class ObjectiveLegendReachRect : Objective
     _targetRect = targetRect.Rect;
     _target = RectToRegion(_targetRect);
     _legend = legendaryHero;
-    Description = legendaryHero.Name + " reaches " + rectName;
+    SetDescription("{legend} reaches {rect}", ("{legend}", legendaryHero.Name), ("{rect}", Loc.Get(rectName)));
     _entersRect.Trigger.RegisterEnterRegion(_target);
     _entersRect.Trigger.AddAction(OnRegionEnter);
     PingPath = "MinimapQuestTurnIn";

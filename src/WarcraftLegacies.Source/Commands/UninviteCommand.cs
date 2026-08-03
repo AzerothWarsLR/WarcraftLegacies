@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands;
@@ -33,12 +34,12 @@ public static class UninviteCommand
       }
       else
       {
-        triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.ColoredName}.");
+        triggerPlayer.DisplayTextTo(Loc.Format("There is no player with the Faction {faction}.", ("{faction}", targetFaction.ColoredName)));
       }
     }
     else
     {
-      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.");
+      triggerPlayer.DisplayTextTo(Loc.Format("There is no Faction with the name {name}.", ("{name}", content)));
     }
   }
 

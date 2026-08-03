@@ -1,5 +1,26 @@
 [
   {
+    "TypeId": 1952665667,
+    "Variation": 0,
+    "Position": {
+      "X": -11452.34,
+      "Y": -6441.968,
+      "Z": 17.987816
+    },
+    "Rotation": 6.1435595,
+    "Scale": {
+      "X": 0.79999995,
+      "Y": 0.79999995,
+      "Z": 0.79999995
+    },
+    "SkinId": 1952665667,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 18176
+  },
+  {
     "TypeId": 1935822915,
     "Variation": 0,
     "Position": {
@@ -24,9 +45,9 @@
     "TypeId": 1127690308,
     "Variation": 0,
     "Position": {
-      "X": -11551.395,
-      "Y": -6166.1406,
-      "Z": 52.196053
+      "X": -11664.707,
+      "Y": -6246.776,
+      "Z": 53.66193
     },
     "Rotation": 1.5707964,
     "Scale": {
@@ -40,5 +61,68 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 3487
+  },
+  {
+    "TypeId": 1802654275,
+    "Variation": 1,
+    "Position": {
+      "X": -11768.005,
+      "Y": -6281.804,
+      "Z": 56.42552
+    },
+    "Rotation": 0.15763599,
+    "Scale": {
+      "X": 1.1499999,
+      "Y": 1.1499999,
+      "Z": 1.1499999
+    },
+    "SkinId": 1802654275,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 5007
+  },
+  {
+    "TypeId": 909127746,
+    "Variation": 0,
+    "Position": {
+      "X": -11434.068,
+      "Y": -6651.305,
+      "Z": 15.326206
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 909127746,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 9146
+  },
+  {
+    "TypeId": 909127746,
+    "Variation": 0,
+    "Position": {
+      "X": -11647.048,
+      "Y": -6274.259,
+      "Z": 48.87176
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 909127746,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 9148
   }
 ]

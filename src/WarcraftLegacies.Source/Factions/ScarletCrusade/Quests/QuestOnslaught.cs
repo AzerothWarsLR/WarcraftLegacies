@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
@@ -26,6 +27,6 @@ public sealed class QuestOnslaught : QuestData
     "The Crusade finally manages to establish a foothold in Northrend. Already the land's dark influence pierces the mind of even its most stalwart Archons.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Your {GetObjectName(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)} gain the Unholy Archon ability.";
+  protected override string RewardDescription => Loc.Format(
+    "Your {unit} gain the Unholy Archon ability.", ("{unit}", GetObjectName(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)));
 }

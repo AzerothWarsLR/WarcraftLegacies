@@ -2,6 +2,7 @@
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 
@@ -19,7 +20,11 @@ public sealed class ObjectiveControlPoint : Objective
     set
     {
       _currentKillCount = value;
-      Description = $"You control {_target.Name} and all nearby creeps are dead ({_currentKillCount}/{_maxKillCount})";
+      SetDescription(
+        "You control {target} and all nearby creeps are dead ({current}/{max})",
+        ("{target}", Loc.Get(_target.Name)),
+        ("{current}", _currentKillCount.ToString()),
+        ("{max}", _maxKillCount.ToString()));
       RefreshProgress();
     }
   }
@@ -43,7 +48,7 @@ public sealed class ObjectiveControlPoint : Objective
     }
     else
     {
-      Description = $"You control {_target.Name}";
+      SetDescription("You control {target}", ("{target}", Loc.Get(_target.Name)));
     }
   }
 

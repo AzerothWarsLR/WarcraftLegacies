@@ -12,7 +12,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 4
+      "Value": 3
     },
     {
       "Id": "ucol",
@@ -76,11 +76,6 @@
       "Id": "ucs1",
       "Type": 3,
       "Value": "MetalMediumBash"
-    },
-    {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "h048"
     },
     {
       "Id": "uico",

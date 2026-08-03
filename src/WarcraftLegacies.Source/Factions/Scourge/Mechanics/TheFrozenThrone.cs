@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WCSharp.Shared;
 
@@ -67,7 +68,7 @@ public static class TheFrozenThrone
     RemoveAbilities();
     if (_frozenThrone.Unit != null)
     {
-      _frozenThrone.Unit.Name = "Frozen Throne (Empty)";
+      _frozenThrone.Unit.Name = Loc.Get("Frozen Throne (Empty)");
       _frozenThrone.Unit.Skin = UNIT_ZBFT_FROZEN_THRONE_SCOURGE_EMPTY;
     }
 
@@ -108,14 +109,14 @@ public static class TheFrozenThrone
     RemoveAbilities();
     if (_frozenThrone.Unit != null)
     {
-      _frozenThrone.Unit.Name = "Frozen Throne (Ruptured)";
+      _frozenThrone.Unit.Name = Loc.Get("Frozen Throne (Ruptured)");
       _frozenThrone.Unit.SetOwner(player.NeutralPassive);
       _frozenThrone.Unit.IsInvulnerable = true;
     }
 
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo("\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
+      player.DisplayTextTo($"\n|cffffcc00{Loc.Get("CAPITAL DAMAGED")}|r\n{Loc.Get("The Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.")}");
     }
 
     State = FrozenThroneState.Ruptured;
@@ -148,7 +149,7 @@ public static class TheFrozenThrone
     _frozenThrone.Unit.RemoveAbility(ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE);
     _frozenThrone.Unit.RemoveAbility(ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE);
     _frozenThrone.Unit.MaxMana = 0;
-    _frozenThrone.Unit.Name = "Icecrown Citadel";
+    _frozenThrone.Unit.Name = Loc.Get("Icecrown Citadel");
   }
 
   private static void OnFrozenThroneChangeOwner()

@@ -1,0 +1,44 @@
+{
+  "OldId": "Basl",
+  "NewId": "TP53",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000Thunder Crack|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been hit by Thunder Crack; its movement speed attack rate and armor are reduced."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Thunder Crack"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHeroThunderclap.blp"
+    }
+  ]
+}

@@ -62,7 +62,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Attacks against this unithave their damage reduced by \u003CUnho,DataC1\u003E. Attacks cannot be reduced below \u003CUnho,DataB1\u003E damage."
+      "Value": "Attacks against this unit have their damage reduced by \u003CUnho,DataC1\u003E. Attacks cannot be reduced below \u003CUnho,DataB1\u003E damage."
     }
   ]
 }

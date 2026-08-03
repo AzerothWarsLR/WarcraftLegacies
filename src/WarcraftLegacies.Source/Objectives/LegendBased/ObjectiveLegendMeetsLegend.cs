@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 
@@ -15,7 +16,10 @@ public sealed class ObjectiveLegendMeetsLegend : Objective
   /// </summary>
   public ObjectiveLegendMeetsLegend(LegendaryHero damagingLegendaryHero, LegendaryHero legendaryHeroInRange)
   {
-    Description = $"{damagingLegendaryHero.Name} has dealt damage within 500 units of {legendaryHeroInRange.Name}";
+    SetDescription(
+      "{attacker} has dealt damage within 500 units of {target}",
+      ("{attacker}", Loc.Get(damagingLegendaryHero.Name)),
+      ("{target}", Loc.Get(legendaryHeroInRange.Name)));
     damagingLegendaryHero.DealtDamage += () =>
     {
       if (damagingLegendaryHero.Unit == null || legendaryHeroInRange.Unit == null)

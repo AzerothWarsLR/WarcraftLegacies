@@ -3,6 +3,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Frostwolf.Powers;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -49,7 +50,7 @@ public sealed class QuestWorldShaman : QuestData
   {
     if (_thrall.Unit != null)
     {
-      _thrall.Unit.Name = "World-Shaman";
+      _thrall.Unit.Name = Loc.Get("World-Shaman");
       _thrall.Unit.AddHeroAttributes(15, 15, 15);
       AddHeroXP(_thrall.Unit, 2000, true);
     }

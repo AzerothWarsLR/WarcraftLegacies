@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 
 namespace WarcraftLegacies.Source.Factions.BlackEmpire.Quests;
@@ -22,6 +23,9 @@ public sealed class QuestGiftofFlesh : QuestData
   public override string RewardFlavour => "The Aqir have joined my ranks in glory again!";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_SHZ5_AQIR_NZOTH)}s from the {GetObjectName(UNIT_ST5K_PIT_OF_TORMENT_NZOTH_SPECIALIST)}";
+  protected override string RewardDescription => Loc.Format(
+    "Learn to train {aqir}s from the {pitOfTorment}",
+    ("{aqir}", GetObjectName(UNIT_SHZ5_AQIR_NZOTH)),
+    ("{pitOfTorment}", GetObjectName(UNIT_ST5K_PIT_OF_TORMENT_NZOTH_SPECIALIST)));
 
 }

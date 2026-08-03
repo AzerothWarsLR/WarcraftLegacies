@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
@@ -10,6 +11,7 @@ using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
+using WCSharp.Timers;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Quests;
 
@@ -92,7 +94,7 @@ public sealed class QuestPlague : QuestData
       );
     }
 
-    if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
+    if (completingFaction.TryGetPowerByName(Loc.Get("Cult Spies"), out var spiesPower))
     {
       completingFaction.RemovePower(spiesPower);
     }
@@ -118,19 +120,19 @@ public sealed class QuestPlague : QuestData
   private static void PresentInvasionDialogs()
   {
     new ScourgeInvasionDialogPresenter(
-        new ScourgeInvasionChoice(null, "No invasion")
+        new ScourgeInvasionChoice(null, Loc.Get("No invasion"))
         {
           AttackTarget = null
         },
-        new ScourgeInvasionChoice(Regions.ScholoInvasion, "Scholomance")
+        new ScourgeInvasionChoice(Regions.ScholoInvasion, Loc.Get("Scholomance"))
         {
           AttackTarget = new Point(Regions.SkullRetrieval.Center.X, Regions.SkullRetrieval.Center.Y)
         },
-        new ScourgeInvasionChoice(Regions.StrathInvasion, "Stratholme")
+        new ScourgeInvasionChoice(Regions.StrathInvasion, Loc.Get("Stratholme"))
         {
           AttackTarget = new Point(Regions.StrathAttackTarget.Center.X, Regions.StrathAttackTarget.Center.Y)
         },
-        new ScourgeInvasionChoice(Regions.DeathknellUnlock, "Deathknell")
+        new ScourgeInvasionChoice(Regions.DeathknellUnlock, Loc.Get("Deathknell"))
         {
           AttackTarget = new Point(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y)
         })
@@ -162,7 +164,6 @@ public sealed class QuestPlague : QuestData
       villager.Kill();
     }
   }
-
   private void SpawnArmies(Faction completingFaction)
   {
     var primaryPlaguePlayer = completingFaction.ScoreStatus != ScoreStatus.Defeated && completingFaction.Player != null
@@ -186,18 +187,28 @@ public sealed class QuestPlague : QuestData
 
       foreach (var parameter in _plagueParameters.PlagueArmySummonParameters)
       {
-        foreach (var unit in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
+        foreach (var u in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!unit.IsUnitType(unittype.Peon))
+          if (parameter.SummonUnitTypeId == UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE)
           {
-            unit.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+            u.IssueOrder(ORDER_UNBURROW);
+            var attackTimer = new Timer(_ =>
+            {
+              u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
+            }, 1.55f);
+
+            TimerSystem.Add(attackTimer);
+            continue;
+          }
+          if (!u.IsUnitType(unittype.Peon))
+          {
+            u.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
           }
         }
       }
     }
   }
-
   private void ResetVictimControlPointLevel()
   {
     if (_plagueVictim.Player == null)

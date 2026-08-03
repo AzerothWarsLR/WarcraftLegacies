@@ -1,5 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Localization;
+using MacroTools.Save;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic;
@@ -19,10 +21,13 @@ public static class DisplayIntroText
     {
       try
       {
-        foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
+        SaveManager.RunWhenLocalPlayerSettingsReady(() =>
         {
-          player.DisplayTextTo(player.GetPlayerData().Faction?.IntroText ?? "");
-        }
+          foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
+          {
+            player.DisplayTextTo(player.GetPlayerData().Faction?.IntroText?.Invoke() ?? "");
+          }
+        });
 
         @event.ExpiredTimer.Dispose();
       }
@@ -31,13 +36,17 @@ public static class DisplayIntroText
         Console.WriteLine($"Error displaying intro text {ex}");
       }
     });
-    foreach (var player in Util.EnumeratePlayers())
-    {
-      player.DisplayTimedTextTo(displayTime - 1, @"|cffffcc00Warcraft Legacies|r
-  |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
 
-  If you are a new player, look at the Quest (F9) tab to see your objectives.
+    SaveManager.RunWhenLocalPlayerSettingsReady(() =>
+    {
+      foreach (var player in Util.EnumeratePlayers())
+      {
+        player.DisplayTimedTextTo(displayTime - 1, $@"|cffffcc00Warcraft Legacies|r
+  |cffaaaaaa{Loc.Get("Join our Discord:")}|r discord.gg/pnWZs69
+
+  {Loc.Get("If you are a new player, look at the Quest (F9) tab to see your objectives.")}
   ");
-    }
+      }
+    });
   }
 }

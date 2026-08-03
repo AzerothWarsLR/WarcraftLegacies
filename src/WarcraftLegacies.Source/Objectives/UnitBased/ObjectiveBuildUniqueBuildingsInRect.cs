@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -24,7 +25,11 @@ public sealed class ObjectiveBuildUniqueBuildingsInRect : Objective
     set
     {
       _currentBuildCount = value;
-      Description = $"Build {_targetBuildCount} different buildings {_areaName} ({_currentBuildCount}/{_targetBuildCount})";
+      SetDescription(
+        "Build {count} different buildings {area} ({current}/{count})",
+        ("{count}", _targetBuildCount.ToString()),
+        ("{area}", Loc.Get(_areaName)),
+        ("{current}", _currentBuildCount.ToString()));
     }
   }
 
