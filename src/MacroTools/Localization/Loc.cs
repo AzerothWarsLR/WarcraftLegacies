@@ -2405,8 +2405,10 @@ public static class Loc
     ["zh"] = _chinese
   };
 
-  public static string Get(string english) =>
-    Get(english, player.LocalPlayer.GetPlayerData().PlayerSettings.Language ?? GetSystemLanguage());
+  public static string Get(string english)
+  {
+    return Get(english, GetLanguage());
+  }
 
   public static string Get(string english, string? language)
   {
@@ -2420,40 +2422,30 @@ public static class Loc
     return english;
   }
 
+  public static string GetLanguage()
+  {
+    return player.LocalPlayer.GetPlayerData().PlayerSettings.Language ?? GetSystemLanguage();
+  }
+
   public static string GetSystemLanguage()
   {
     var locale = BlzGetLocale();
     return locale.StartsWith("es") ? "es" : locale.StartsWith("zh") ? "zh" : "en";
   }
 
-
   public static string Format(string english, params (string Token, string Value)[] args)
   {
-    var template = Get(english);
+    return Format(english, GetLanguage(), args);
+  }
+
+  public static string Format(string english, string? language, params (string Token, string Value)[] args)
+  {
+    var template = Get(english, language);
     foreach (var (token, value) in args)
     {
-      template = ReplaceLiteral(template, token, Get(value));
+      template = template.Replace(token, Get(value, language));
     }
 
     return template;
-  }
-
-  private static string ReplaceLiteral(string source, string oldValue, string newValue)
-  {
-    var result = "";
-    var searchStart = 0;
-    while (true)
-    {
-      var index = source.IndexOf(oldValue, searchStart);
-      if (index < 0)
-      {
-        result += source.Substring(searchStart);
-        return result;
-      }
-
-      result += source.Substring(searchStart, index - searchStart);
-      result += newValue;
-      searchStart = index + oldValue.Length;
-    }
   }
 }
