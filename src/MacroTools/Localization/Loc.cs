@@ -1980,8 +1980,6 @@ public static class Loc
     ["Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth."] =
       "Bastión del Honor ahora está libre de la constante amenaza latente de la Ciudadela del Fuego Infernal, y finalmente se ha reconectado con su Alianza de Azeroth.",
     ["Hellfire Citadel"] = "Hellfire Citadel",
-    ["Siege Tower"] = "Siege Tower",
-    ["Artillery Bombardment"] = "Artillery Bombardment",
     ["Control of all units at Honor Hold and {siegeTower} gain the {ability} ability."] =
       "Control de todas las unidades en Bastión del Honor y las {siegeTower} obtienen la habilidad {ability}.",
 
@@ -2140,8 +2138,6 @@ public static class Loc
     ["Ny'alotha, the Waking City"] = "Ny'alotha, the Waking City",
     ["Can now train Garrosh from the {altar} and research the Warsong expedition from the {shipyard}"] =
       "Ahora puedes entrenar a Garrosh desde el {altar} e investigar la expedición Warsong desde el {shipyard}",
-    ["Altar of Conquerors"] = "Altar de los Conquistadores",
-    ["Shipyard"] = "Astillero",
 
     // Warsong - QuestGrom
     ["Breaking Bad Blood"] = "Rompiendo la Mala Sangre",
@@ -2183,11 +2179,6 @@ public static class Loc
       "El destino de los ogros ha sido decidido, y el poder de la Horda crece.",
     ["Subdue the Ogres"] = "Someter a los Ogros",
     ["Pillage Stonemaul"] = "Saquear Quebrantarrocas",
-    ["Stonemaul"] = "Stonemaul",
-    ["Warsong Grunt"] = "Warsong Grunt",
-    ["Mok'Nathal Warrior"] = "Mok'Nathal Warrior",
-    ["Blademaster"] = "Blademaster",
-    ["Kor'kron Elite"] = "Kor'kron Elite",
     ["Gain control of Stonemaul, {removeUnit}s' are upgraded to {addUnit}s' and unlock the ability to train {ogreMagi}s. Alternatively, earn {gold} gold and up to {experience} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {blademaster}s' and {korkronElite}s' attack damage by 10, movement speed by 20 and hit points by 250."] =
       "Obtienes control de Quebrantarrocas: los {removeUnit} se mejoran a {addUnit}, y desbloqueas la habilidad de entrenar {ogreMagi}. Alternativamente, gana {gold} de oro y hasta {experience} puntos de experiencia, repartidos entre todos tus héroes —mientras menos héroes controles, menos experiencia recibe cada uno—. Además, mejora el daño de ataque de los {blademaster} y {korkronElite} en 10, la velocidad de movimiento en 20, y los puntos de vida en 250.",
 
@@ -2197,9 +2188,6 @@ public static class Loc
       "Los Tauren de Cima del Trueno son guerreros nobles, pero sus lealtades son inciertas. Tráelos al redil o saquea sus tierras.",
     ["Subdue the Tauren"] = "Someter a los Tauren",
     ["Pillage Thunder Bluff"] = "Saquear Cima del Trueno",
-
-    ["Thunderbluff"] = "Thunderbluff",
-    ["Bloodhoof Totem"] = "Bloodhoof Totem",
     ["Control of Thunder Bluff and the ability to train {kodo}s' from {beastiary} or gain the artifact {totem}, {gold} gold and {experience} experience points, shared across all your heroes—the fewer heroes you control, the less experience each receives."] =
       "Control de Cima del Trueno y la habilidad de entrenar {kodo} desde {beastiary}, o consigue el artefacto {totem}, {gold} de oro y {experience} puntos de experiencia, repartidos entre todos tus héroes —mientras menos héroes controles, menos experiencia recibe cada uno—.",
 
@@ -2210,9 +2198,6 @@ public static class Loc
     ["The Darkspear Trolls have been brought to heel."] = "Los Trolls Lanza Negra han sido sometidos.",
     ["Subdue the Trolls"] = "Someter a los Trolls",
     ["Pillage Echo Isles"] = "Saquear las Islas del Eco",
-    ["Axe Thrower"] = "Axe Thrower",
-    ["Darkspear Berserker"] = "Darkspear Berserker",
-    ["Shadowpriest"] = "Shadowpriest",
     ["Gain control of Echo Isles, {removeUnit}s are upgraded to {addUnit}s and learn to train {shadowpriest}s. Alternatively, earn {gold} gold and up to {experience} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {blademaster}s' and {korkronElite}s' maximum mana by 250 and mana regeneration by 50%."] =
       "Obtienes control de las Islas del Eco: los {removeUnit} se mejoran a {addUnit}, y aprendes a entrenar {shadowpriest}. Alternativamente, ganas {gold} de oro y hasta {experience} puntos de experiencia, repartidos entre todos tus héroes —mientras menos héroes controles, menos experiencia recibe cada uno—. Además, mejora el maná máximo de los {blademaster} y {korkronElite} en 250 y la regeneración de maná en 50%.",
 
