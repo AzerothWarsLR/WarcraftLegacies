@@ -16,6 +16,7 @@ public enum UnitCategory
   Farm,
   Altar,
   Specialist,
+  Waygate,
   SiegeWorkshop,
   Barracks,
   Research,
@@ -67,6 +68,8 @@ public static class UnitCategoryExtensions
         return "Altar";
       case UnitCategory.Specialist:
         return "Specialist Production";
+      case UnitCategory.Waygate:
+        return "Way Gate";
       case UnitCategory.SiegeWorkshop:
         return "Siege Production";
       case UnitCategory.Barracks:
