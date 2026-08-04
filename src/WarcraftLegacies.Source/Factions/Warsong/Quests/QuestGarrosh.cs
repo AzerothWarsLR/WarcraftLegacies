@@ -15,8 +15,8 @@ public sealed class QuestGarrosh : QuestData
   /// <inheritdoc/>
   protected override string RewardDescription => Loc.Format(
     "Can now train Garrosh from the {altar} and research the Warsong expedition from the {shipyard}",
-    ("{altar}", Loc.Get(GetObjectName(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR))),
-    ("{shipyard}", Loc.Get(GetObjectName(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD))));
+    ("{altar}", GetObjectName(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR)),
+    ("{shipyard}", GetObjectName(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD)));
 
   public QuestGarrosh() : base("Twilight's Reckoning",
     "The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions.",
