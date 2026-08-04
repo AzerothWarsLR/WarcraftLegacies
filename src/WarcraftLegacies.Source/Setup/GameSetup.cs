@@ -102,7 +102,7 @@ public static class GameSetup
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
     MmdEvents.Setup();
     var mmdWriteTimer = CreateTimer();
-    TimerStart(mmdWriteTimer, 60.0f, false, () =>
+    TimerStart(mmdWriteTimer, 60.0f, true, () =>
     {
       MmdManager.WriteToMmd();
     });

@@ -15,6 +15,16 @@ public static class CustomPlayerUnitEvents
   public static string PlayerFinishesTraining => nameof(PlayerFinishesTraining);
 
   /// <summary>
+  /// A specific player starts training any unit. Fires the instant gold is deducted, before the unit exists.
+  /// </summary>
+  public static string PlayerStartsTraining => nameof(PlayerStartsTraining);
+
+  /// <summary>
+  /// A specific player starts constructing any structure. Fires the instant gold is deducted.
+  /// </summary>
+  public static string PlayerStartsConstruction => nameof(PlayerStartsConstruction);
+
+  /// <summary>
   /// A specific player is dealing damage with any of their units. Fires pre-mitigation.
   /// <remarks>As this event uses <see cref="playerunitevent.Damaging"/>, it is guaranteed to fire before events
   /// that use <see cref="playerunitevent.Damaged"/>. Use this for damage modification, but do not check
@@ -56,6 +66,8 @@ public static class CustomPlayerUnitEvents
   static CustomPlayerUnitEvents()
   {
     PlayerUnitEvents.AddCustomEvent(PlayerFinishesTraining, () => @event.TrainedUnit.Owner.Id, playerunitevent.TrainFinish);
+    PlayerUnitEvents.AddCustomEvent(PlayerStartsTraining, () => @event.Player.Id, playerunitevent.TrainStart);
+    PlayerUnitEvents.AddCustomEvent(PlayerStartsConstruction, () => @event.Player.Id, playerunitevent.ConstructStart);
     PlayerUnitEvents.AddCustomEvent(PlayerDealingDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaging);
     PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaged);
     PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaged);
