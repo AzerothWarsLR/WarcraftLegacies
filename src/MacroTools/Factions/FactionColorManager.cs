@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 
 namespace MacroTools.Factions;
 
@@ -34,7 +35,5 @@ public static class ColorManager
   }
 
   public static string GetColorHexCode(playercolor color) =>
-    _colorHexMap.TryGetValue(color, out var value)
-      ? value
-      : "|cff4f5055"; // Default to Coal if no colors can be found freely available.
+    _colorHexMap.GetValueOrDefault(color, "|cff4f5055"); // Default to Coal if no colors can be found freely available.
 }
