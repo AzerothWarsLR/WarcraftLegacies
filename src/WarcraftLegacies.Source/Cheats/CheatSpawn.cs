@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -48,7 +47,7 @@ public sealed class CheatSpawn : Command
       }
     }
 
-    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
+    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
     SpawnUnitsOrItems(firstSelectedUnit, objectTypeId, count);
     return $"Attempted to spawn {count} of object {GetObjectName(objectTypeId)}.";
   }
