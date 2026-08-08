@@ -16,7 +16,7 @@ public sealed class QuestDestruction : QuestData
   public override string RewardFlavour =>
     Loc.Format(
       "{capital} has fallen, but more will fall to my influence.",
-      ("{capital}", _objectiveDestroyAnyCapital.DestroyedCapital?.Name ?? ""));
+      ("{capital}", _objectiveDestroyAnyCapital.DestroyedCapitalName));
 
   /// <inheritdoc/>
   protected override string RewardDescription =>

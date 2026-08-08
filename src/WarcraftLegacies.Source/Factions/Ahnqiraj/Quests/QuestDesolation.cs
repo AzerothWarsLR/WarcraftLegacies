@@ -16,7 +16,7 @@ public sealed class QuestDesolation : QuestData
   public override string RewardFlavour =>
     Loc.Format(
       "{capital} has fallen, merely the first in a row of dominoes that will topple this world.",
-      ("{capital}", _objectiveDestroyAnyCapital.DestroyedCapital?.Name ?? ""));
+      ("{capital}", _objectiveDestroyAnyCapital.DestroyedCapitalName));
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
