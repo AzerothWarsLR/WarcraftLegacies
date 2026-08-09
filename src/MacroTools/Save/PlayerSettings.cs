@@ -5,11 +5,11 @@ namespace MacroTools.Save;
 
 public sealed class PlayerSettings : Saveable
 {
-  private int? _camDistance;
+  private int _camDistance = 2400;
 
   public int CamDistance
   {
-    get => _camDistance ?? 2400;
+    get => _camDistance;
     set => _camDistance = Math.Clamp(value, 700, 2701);
   }
 

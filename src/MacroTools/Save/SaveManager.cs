@@ -50,14 +50,6 @@ public static class SaveManager
   {
     SavesByPlayer[save.GetPlayer()] = save;
 
-    if (loadResult != LoadResult.Success)
-    {
-      save.CamDistance = 2400;
-      save.ShowQuestText = true;
-      save.PlayDialogue = true;
-      save.ShowCaptions = true;
-    }
-
     if (save.GetPlayer() == player.LocalPlayer)
     {
       if (!save.LanguageIsManual)
@@ -84,9 +76,6 @@ public static class SaveManager
       }
     }
     save.GetPlayer().ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, save.CamDistance, 1);
-    save.GetPlayer().GetPlayerSettings().ShowQuestText = save.ShowQuestText;
-    save.GetPlayer().GetPlayerSettings().PlayDialogue = save.PlayDialogue;
-    save.GetPlayer().GetPlayerSettings().ShowCaptions = save.ShowCaptions;
 
     if (loadResult == LoadResult.FailedHash)
     {
