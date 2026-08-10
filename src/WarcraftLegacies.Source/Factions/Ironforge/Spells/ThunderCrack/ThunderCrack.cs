@@ -9,8 +9,6 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
 
 public sealed class ThunderCrack : Spell
 {
-  public float DebuffDuration { get; init; } = 3f;
-
   public ThunderCrack(int id) : base(id)
   {
   }
@@ -18,11 +16,14 @@ public sealed class ThunderCrack : Spell
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
     var level = GetAbilityLevel(caster);
+    var index = level - 1;
     var ability = caster.GetAbility(Id);
-    var radius = ability.GetAreaOfEffect_aare(level - 1);
+    var radius = ability.GetAreaOfEffect_aare(index);
+    var durationNormal = ability.GetDurationNormal_adur(index);
+    var durationHero = ability.GetDurationHero_ahdu(index);
 
     var enemies = GlobalGroup.EnumUnitsInRange(caster.GetPosition(), radius)
-      .Where(enemy => CastFilters.IsTargetEnemyAliveAndGroundUnits(caster, enemy))
+      .Where(enemy => CastFilters.IsTargetEnemyAliveAndGroundUnits(caster, enemy) && !enemy.IsUnitType(unittype.MagicImmune))
       .ToList();
 
     foreach (var enemy in enemies)
@@ -30,7 +31,7 @@ public sealed class ThunderCrack : Spell
       BuffSystem.Add(new ThunderCrackBuff(caster, enemy, level)
       {
         Active = true,
-        Duration = DebuffDuration,
+        Duration = enemy.IsUnitType(unittype.Hero) ? durationHero : durationNormal,
         IsBeneficial = false
       }, StackBehaviour.Stack);
     }
