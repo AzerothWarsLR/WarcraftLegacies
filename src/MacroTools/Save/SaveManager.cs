@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using WCSharp.SaveLoad;
 using WCSharp.Shared;
 
@@ -62,8 +63,7 @@ public static class SaveManager
     {
       if (!save.LanguageIsManual)
       {
-        var locale = BlzGetLocale();
-        save.Language = locale.StartsWith("es") ? "es" : locale.StartsWith("zh") ? "zh" : "en";
+        save.Language = Loc.GetSystemLanguage();
       }
 
       LocalPlayerSettingsReady = true;
