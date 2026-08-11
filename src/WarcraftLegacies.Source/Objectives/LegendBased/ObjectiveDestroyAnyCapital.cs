@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
@@ -11,6 +12,11 @@ public sealed class ObjectiveDestroyAnyCapital : Objective
   /// The <see cref="Capital"/> that was destroyed to complete the objective, if any.
   /// </summary>
   public Capital? DestroyedCapital { get; private set; }
+
+  /// <summary>
+  /// The name of the <see cref="Capital"/> that was destroyed to complete the objective.
+  /// </summary>
+  public string DestroyedCapitalName => DestroyedCapital != null ? DestroyedCapital.Name : Loc.Get("an unknown capital");
 
   /// <summary>
   /// Initializes a new instance of the <see cref="ObjectiveDestroyAnyCapital"/> class.

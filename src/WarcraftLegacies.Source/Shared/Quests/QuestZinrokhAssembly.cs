@@ -33,7 +33,7 @@ public sealed class QuestZinrokhAssembly : QuestData
   /// <inheritdoc/>
   public override string RewardFlavour =>
     Loc.Format("{unit} has assembled Zin'rokh, Destroyer of Worlds!",
-      ("{unit}", _fragments.First().OwningUnit?.GetProperName() ?? ""));
+      ("{unit}", _fragments.First().OwningUnitName));
 
   /// <inheritdoc/>
   public override string PenaltyFlavour =>
