@@ -1,19 +1,27 @@
 ﻿using MacroTools.Localization;
+using MacroTools.TestSupport;
 
 namespace MacroTools.Tests.Localization;
 
-public sealed class LocTests
+public sealed class LocTests : LocTestsBase
 {
   [Fact]
   public void Get_TranslationExists_ReturnsTranslatedText()
   {
     // Arrange
+    Loc.SetTranslations(new Dictionary<string, IReadOnlyDictionary<string, string>>
+    {
+      ["lang-with-translation"] = new Dictionary<string, string>
+      {
+        ["source"] = "translated"
+      }
+    });
 
     // Act
-    var result = Loc.Get("Completed", "es");
+    var result = Loc.Get("source", "lang-with-translation");
 
     // Assert
-    Assert.Equal("Completado", result);
+    Assert.Equal("translated", result);
   }
 
   [Fact]
@@ -22,22 +30,29 @@ public sealed class LocTests
     // Arrange
 
     // Act
-    var result = Loc.Get("Completed", "zh");
+    var result = Loc.Get("source", "lang-without-translation");
 
     // Assert
-    Assert.Equal("Completed", result);
+    Assert.Equal("source", result);
   }
 
   [Fact]
   public void Get_UnknownKey_ReturnsInputUnchanged()
   {
     // Arrange
+    Loc.SetTranslations(new Dictionary<string, IReadOnlyDictionary<string, string>>
+    {
+      ["lang-with-translation"] = new Dictionary<string, string>
+      {
+        ["source"] = "translated"
+      }
+    });
 
     // Act
-    var result = Loc.Get("Some untranslated string", "es");
+    var result = Loc.Get("other-source", "lang-with-translation");
 
     // Assert
-    Assert.Equal("Some untranslated string", result);
+    Assert.Equal("other-source", result);
   }
 
   [Fact]
@@ -46,33 +61,41 @@ public sealed class LocTests
     // Arrange
 
     // Act
-    var result = Loc.Get("Completed", null);
+    var result = Loc.Get("source", null);
 
     // Assert
-    Assert.Equal("Completed", result);
+    Assert.Equal("source", result);
   }
 
   [Fact]
-  public void Format_TranslationExists_SubstitutesLocalizedToken()
+  public void Format_TranslationExists_SubstitutesTranslatedTemplateAndValue()
+  {
+    // Arrange
+    Loc.SetTranslations(new Dictionary<string, IReadOnlyDictionary<string, string>>
+    {
+      ["lang-with-translation"] = new Dictionary<string, string>
+      {
+        ["Hello, {name}"] = "Translated hello, {name}",
+        ["name"] = "translated name"
+      }
+    });
+
+    // Act
+    var result = Loc.Format("Hello, {name}", "lang-with-translation", ("{name}", "name"));
+
+    // Assert
+    Assert.Equal("Translated hello, translated name", result);
+  }
+
+  [Fact]
+  public void Format_NoTranslationForLanguage_SubstitutesIntoEnglishTemplate()
   {
     // Arrange
 
     // Act
-    var result = Loc.Format("You have joined {team}.", "es", ("{team}", "Alianza"));
+    var result = Loc.Format("Hello, {name}", null, ("{name}", "name"));
 
     // Assert
-    Assert.Equal("Te uniste a Alianza.", result);
-  }
-
-  [Fact]
-  public void Format_NoTranslation_SubstitutesIntoEnglishTemplate()
-  {
-    // Arrange
-
-    // Act
-    var result = Loc.Format("You have joined {team}.", null, ("{team}", "Alliance"));
-
-    // Assert
-    Assert.Equal("You have joined Alliance.", result);
+    Assert.Equal("Hello, name", result);
   }
 }
