@@ -256,12 +256,7 @@ public abstract class Faction
   /// <param name="whichObject">The object ID of a unit, building, or research.</param>
   public int GetObjectLimit(int whichObject)
   {
-    if (_objectLimits.TryGetValue(whichObject, out var limit))
-    {
-      return limit;
-    }
-
-    return 0;
+    return _objectLimits.GetValueOrDefault(whichObject);
   }
 
   /// <summary>
@@ -358,7 +353,7 @@ public abstract class Faction
     return questData;
   }
 
-  public int GetObjectLevel(int obj) => _objectLevels.TryGetValue(obj, out var objectLevel) ? objectLevel : 0;
+  public int GetObjectLevel(int obj) => _objectLevels.GetValueOrDefault(obj);
 
   /// <summary>Sets the current level of a particular research for the <see cref="Faction"/>.</summary>
   public void SetObjectLevel(int obj, int level)
