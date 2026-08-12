@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -33,12 +32,12 @@ public sealed class QuestZinrokhAssembly : QuestData
   /// <inheritdoc/>
   public override string RewardFlavour =>
     Loc.Format("{unit} has assembled Zin'rokh, Destroyer of Worlds!",
-      ("{unit}", _fragments.First().OwningUnitName));
+      ("{unit}", _fragments[0].OwningUnitName));
 
   /// <inheritdoc/>
   public override string PenaltyFlavour =>
     Loc.Format("{faction} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.",
-      ("{faction}", _fragments.First().OwningPlayer?.GetPlayerData().Faction?.ColoredName ?? ""));
+      ("{faction}", _fragments[0].OwningPlayer?.GetPlayerData().Faction?.ColoredName ?? ""));
 
   /// <inheritdoc/>
   protected override string RewardDescription => "Reforge Zin'rokh, Destroyer of Worlds from its Shards";
@@ -46,7 +45,7 @@ public sealed class QuestZinrokhAssembly : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    var azureFragmentHolder = _fragments.First().OwningUnit;
+    var azureFragmentHolder = _fragments[0].OwningUnit;
     foreach (var artifact in _fragments)
     {
       ArtifactManager.Destroy(artifact);

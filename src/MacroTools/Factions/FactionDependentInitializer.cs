@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace MacroTools.Factions;
 
@@ -43,7 +42,7 @@ public sealed class FactionDependentInitializer
   {
     if (Executed)
     {
-      throw new Exception($"Tried to execute {nameof(FactionDependentInitializer)} with {nameof(FactionDependencies)} {FactionDependencies.First().Name} but it has already been executed.");
+      throw new Exception($"Tried to execute {nameof(FactionDependentInitializer)} with {nameof(FactionDependencies)} {FactionDependencies[0].Name} but it has already been executed.");
     }
 
     _initializerAction();

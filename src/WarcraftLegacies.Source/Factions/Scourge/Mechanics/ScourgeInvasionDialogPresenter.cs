@@ -58,7 +58,7 @@ public sealed class ScourgeInvasionDialogPresenter : ChoiceDialogPresenter<Scour
     pickingPlayer.RepositionCamera(invasionLocation.Center);
   }
 
-  protected override ScourgeInvasionChoice GetDefaultChoice(player whichPlayer) => Choices.First();
+  protected override ScourgeInvasionChoice GetDefaultChoice(player whichPlayer) => Choices[0];
 
   protected override bool IsChoiceActive(player whichPlayer, ScourgeInvasionChoice choice) => true;
 }

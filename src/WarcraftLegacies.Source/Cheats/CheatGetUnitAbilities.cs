@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Utils;
 
@@ -26,7 +25,7 @@ public sealed class CheatGetUnitAbilities : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var abilityString = "";
-    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
+    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
     foreach (var ability in firstSelectedUnit.GetUnitAbilities())
     {
       abilityString += $"{ability.Name}: {ability.Id}\n";
