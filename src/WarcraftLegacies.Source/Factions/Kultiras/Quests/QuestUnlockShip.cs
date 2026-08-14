@@ -18,6 +18,8 @@ public sealed class QuestStranglethornExpedition : QuestData
 {
   private readonly List<unit> _rescueUnits;
 
+  public bool SkipDialog { get; set; }
+
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestStranglethornExpedition"/> class.
   /// </summary>
@@ -37,6 +39,11 @@ public sealed class QuestStranglethornExpedition : QuestData
 
   protected override void OnComplete(Faction completingFaction)
   {
+    if (SkipDialog)
+    {
+      return;
+    }
+
     if (completingFaction.Player != null)
     {
       var dialogPresenter = new UnlockShipDialogPresenter(
