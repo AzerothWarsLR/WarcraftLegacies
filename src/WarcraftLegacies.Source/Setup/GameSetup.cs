@@ -35,7 +35,7 @@ public static class GameSetup
     {
       new Standard(),
       new GreatWar()
-    }, timeToDisplay: 0, modeVoteLength: 5, difficultyVoteLength: 5, customOptionsVoteLength: 20);
+    }, timeToDisplay: 0, modeVoteLength: 7, difficultyVoteLength: 7, customOptionsVoteLength: 20);
 
     W3Mmd.ForceInit();
     MmdVariables.Init();

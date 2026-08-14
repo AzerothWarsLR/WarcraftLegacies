@@ -55,7 +55,7 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     });
 
     var concludeTimer = timer.Create();
-    concludeTimer.Start(24, false, () =>
+    concludeTimer.Start(20, false, () =>
     {
       ChoiceExpired(whichPlayer);
       @event.ExpiredTimer.Dispose();
