@@ -13,11 +13,6 @@ public static class FactionStartingResources
   private static readonly List<Faction> _pendingFactions = new();
   private static bool _pendingGrantDone;
 
-  /// <summary>
-  /// Registers this system, but doesn't grant anything yet for factions that register before
-  /// <see cref="GrantPending"/> is called - see that method for why. Any faction that registers afterwards
-  /// (e.g. a faction unlocked mid-game by a quest) is granted its resources immediately instead, same as always.
-  /// </summary>
   public static void Setup()
   {
     FactionManager.FactionRegistered += faction =>
@@ -33,13 +28,6 @@ public static class FactionStartingResources
     };
   }
 
-  /// <summary>
-  /// Grants starting resources to every faction that registered before the game-start vote sequence concluded.
-  /// Deferred this late (rather than granting each faction the instant it registers, like before) so a
-  /// difficulty setting has a chance to adjust a faction's <see cref="StartingGold"/> - e.g. Hard mode
-  /// shortening Scourge's income window - before the grant actually happens, instead of having to claw back
-  /// gold that was already handed out.
-  /// </summary>
   public static void GrantPending()
   {
     foreach (var faction in _pendingFactions)
@@ -82,14 +70,12 @@ public static class FactionStartingResources
     var playerData = player.GetPlayerData();
     playerData.BonusIncome += income;
 
-    // Apply the income bonus permanently when no turns are specified
     var turns = startingGold.Turns;
     if (turns <= 0)
     {
       return;
     }
 
-    // Apply the income bonus temporarily for the specified number of turns
     GameTimeManager.RegisterOnTurn(currentTurn + turns + 1, () =>
     {
       playerData.BonusIncome -= income;

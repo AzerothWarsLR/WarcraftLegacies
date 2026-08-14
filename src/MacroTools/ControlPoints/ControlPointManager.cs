@@ -16,8 +16,7 @@ namespace MacroTools.ControlPoints;
 public sealed class ControlPointManager
 {
   /// <summary>
-  /// Scales gold gained from Control Points specifically. Applied to <see cref="PlayerData.BaseIncome"/> only,
-  /// not <see cref="PlayerData.BonusIncome"/>, which comes from unrelated sources like starting bonuses.
+  /// Scales gold gained from Control Points.
   /// </summary>
   public static float IncomeMultiplier = 1f;
 

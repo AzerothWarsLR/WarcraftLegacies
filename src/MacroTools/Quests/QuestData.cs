@@ -50,12 +50,6 @@ public abstract class QuestData
   /// </summary>
   protected bool Global { get; init; }
 
-  /// <summary>
-  ///   If true, completing this quest won't show the normal "QUEST COMPLETED" popup/sound (or the
-  ///   <see cref="Global"/> broadcast, if applicable) - meant for quests forced complete programmatically
-  ///   (e.g. by a difficulty setting) rather than through normal play, where showing that popup would just be
-  ///   noise since nothing the player did caused it.
-  /// </summary>
   public bool SuppressCompletionDisplay { get; set; }
 
   /// <summary>

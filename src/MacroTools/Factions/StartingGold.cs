@@ -18,9 +18,5 @@ public sealed class StartingGold
   /// <summary>
   /// Turn at which free gold <see cref="Income"/> ends.
   /// </summary>
-  /// <remarks>
-  /// Settable (not just <c>init</c>) so a difficulty setting can shorten it before the grant actually happens -
-  /// see <see cref="FactionStartingResources.GrantPending"/>.
-  /// </remarks>
   public required int Turns { get; set; }
 }

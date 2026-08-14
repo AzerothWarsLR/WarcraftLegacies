@@ -19,9 +19,6 @@ public interface IGameMode
   /// </summary>
   public int VoteOffset { get; }
 
-  /// <summary>
-  /// Whether this gamemode requires Open diplomacy rather than letting players vote on it - e.g. because it
-  /// assigns players to fixed teams itself, making a Closed (no re-alliancing) vote meaningless.
-  /// </summary>
+  /// <summary>Whether this gamemode forces Open diplomacy instead of letting players vote on it.</summary>
   public bool ForcesOpenDiplomacy { get; }
 }
