@@ -39,8 +39,7 @@ public static class RockSystem
   }
 
   /// <summary>
-  /// Manually removes and destroys every currently registered <see cref="RockGroup"/> - used by Hard mode to
-  /// clear every path-blocking rock on the map at once.
+  /// Manually removes and destroys every currently registered <see cref="RockGroup"/>.
   /// </summary>
   public static void RemoveAll()
   {

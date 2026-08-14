@@ -12,9 +12,7 @@ namespace WarcraftLegacies.Source.GameLogic;
 public static class DisplayIntroText
 {
   /// <summary>
-  /// Shows the generic welcome/Discord message to all players, staying up for <paramref name="displayDuration"/>
-  /// seconds. Independent of <see cref="SetupFactionIntroText"/> - this one isn't faction-specific, so there's
-  /// no reason to wait on the game-start vote sequence for it.
+  /// Shows the generic welcome/Discord message to all players.
   /// </summary>
   public static void SetupWelcomeMessage(float displayDuration)
   {
@@ -33,9 +31,6 @@ public static class DisplayIntroText
 
   /// <summary>
   /// Displays each player's faction's intro text after <paramref name="displayTime"/> seconds have elapsed.
-  /// Meant to be called a few seconds after the game-start vote sequence concludes, not on a fixed timer from
-  /// map init - a fixed timer risks firing while the vote UI is still up, since voting can now take a variable
-  /// amount of time (see <see cref="MacroTools.UserInterface.Voting.VotePageTimer"/>-driven early conclusion).
   /// </summary>
   public static void SetupFactionIntroText(float displayTime)
   {
