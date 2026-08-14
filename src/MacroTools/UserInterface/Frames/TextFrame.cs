@@ -8,18 +8,11 @@ public sealed class TextFrame : Frame
     set => Handle.Text = value;
   }
 
-  /// <summary>
-  /// Centers this text both horizontally and vertically within its own frame bounds.
-  /// </summary>
   public void CenterText()
   {
     BlzFrameSetTextAlignment(Handle, TEXT_JUSTIFY_MIDDLE, TEXT_JUSTIFY_CENTER);
   }
 
-  /// <summary>
-  /// Scales this frame - including its text - uniformly around its anchor point. Used to shrink text below
-  /// its template's default size (1 = default, less than 1 = smaller).
-  /// </summary>
   public void SetScale(float scale)
   {
     BlzFrameSetScale(Handle, scale);
