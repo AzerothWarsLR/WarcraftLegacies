@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPoints;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -13,10 +13,6 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Legion.Mechanics;
 
-/// <summary>
-/// Hard mode's effect on the Legion: instantly completes Argus, the only quest needed to bring the Legion to
-/// "ready to invade Azeroth" status.
-/// </summary>
 public static class LegionHardModeSetup
 {
   private static readonly int[] _controlPoints =
@@ -38,10 +34,6 @@ public static class LegionHardModeSetup
 
     var owner = legion.Player;
 
-    // Legion normally earns a lot of its early gold from creeps it no longer has to fight through, so
-    // compress its starting income window to compensate - delivered over 5 turns instead of the usual 10,
-    // same as Scourge. Only works because the actual grant is deferred until after the vote sequence
-    // concludes - see FactionStartingResources.GrantPending.
     if (legion.StartingGold != null)
     {
       legion.StartingGold.Turns = 5;
@@ -54,9 +46,6 @@ public static class LegionHardModeSetup
       AwardControlPoint(unitType, owner);
     }
 
-    // Gundrak sits inside the region Scourge's own Hard mode sweeps for capturable capitals, but it actually
-    // belongs to Legion - this has to run after ScourgeHardModeSetup to win ownership back from it. See
-    // HardModeSetting.ApplyWithoutTechUnlocks for the ordering.
     AllLegends.Neutral.Gundrak.Unit.SetOwner(owner);
 
     ClearNeutralHostileCreeps(Regions.MonolithNoBuild, owner);
@@ -91,14 +80,10 @@ public static class LegionHardModeSetup
         continue;
       }
 
-      // Dispose(), not Kill(), so on-death effects (summons, reincarnation, etc.) don't leave anything behind.
       creep.Dispose();
     }
   }
 
-  // Most quests gate their rewards behind a Tier 3 town hall, which the player would already have built by
-  // this point in a normal game - so Hard mode has to grant it directly, since force-completing quests
-  // doesn't retroactively upgrade buildings.
   private static void UpgradeStartingTownHall(player owner)
   {
     var townHall = AllPreplacedWidgets.Units.GetClosest(UNIT_U00F_DORMANT_SPIRE_LEGION_T1, 18825.9f, -31054.4f);
