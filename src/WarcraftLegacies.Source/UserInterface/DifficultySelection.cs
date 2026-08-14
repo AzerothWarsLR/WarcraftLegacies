@@ -7,9 +7,6 @@ using WarcraftLegacies.Source.Commands;
 
 namespace WarcraftLegacies.Source.UserInterface;
 
-/// <summary>
-/// The winner of the Difficulty vote in <see cref="DifficultySelection"/>.
-/// </summary>
 public enum Difficulty
 {
   Normal,
@@ -17,10 +14,6 @@ public enum Difficulty
   Custom
 }
 
-/// <summary>
-/// Shown right after the game mode is chosen: lets players vote for a difficulty (Normal/Hard/Custom) and, if
-/// the winning mode doesn't require it, separately for diplomacy rules (Open/Closed).
-/// </summary>
 public static class DifficultySelection
 {
   private const float ButtonWidth = 0.16f;
@@ -30,14 +23,6 @@ public static class DifficultySelection
   private const float Margin = 0.03f;
   private const float LabelHeight = 0.025f;
 
-  /// <summary>
-  /// Builds the voting UI and shows it immediately, giving players <paramref name="voteLength"/> seconds to
-  /// vote. If <paramref name="forceOpenDiplomacy"/> is true (the winning game mode assigns fixed teams itself,
-  /// making a Closed vote meaningless - see <see cref="MacroTools.GameModes.IGameMode.ForcesOpenDiplomacy"/>),
-  /// Diplomacy is shown as a plain "Open" label instead of a vote. Calls <paramref name="onConcluded"/> once
-  /// concluded, passing which <see cref="Difficulty"/> won - the caller decides what that means (e.g. whether
-  /// to show the Custom Options page next, or apply Hard mode's effects).
-  /// </summary>
   public static void Setup(float voteLength, bool forceOpenDiplomacy, Action<Difficulty> onConcluded)
   {
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
@@ -99,9 +84,6 @@ public static class DifficultySelection
         new VoteOption { Name = Loc.Get("Closed"), OnChosen = SetupClosedDiplomacy }
       };
 
-      // Diplomacy has fewer options than Difficulty, so it's narrower - centered under Difficulty's row rather
-      // than sharing its left edge, or it'd hug the left side of the panel instead of looking like part of the
-      // same centered layout.
       var diplomacyWidth = diplomacyOptions.Length * ButtonWidth + (diplomacyOptions.Length - 1) * ButtonSpacing;
       var diplomacyX = Margin + (difficultyGroup.Width - diplomacyWidth) / 2;
 

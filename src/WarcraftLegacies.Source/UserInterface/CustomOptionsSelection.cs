@@ -10,11 +10,6 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.UserInterface;
 
-/// <summary>
-/// A vote page shown after the game mode is chosen, letting players tune a handful of gameplay knobs. New
-/// categories are added by appending to <see cref="BuildCategories"/> - the page lays itself out around
-/// however many there are.
-/// </summary>
 public static class CustomOptionsSelection
 {
   private const float ButtonWidth = 0.095f;
@@ -25,24 +20,10 @@ public static class CustomOptionsSelection
   private const int ColumnCount = 2;
   private const float ColumnSpacing = 0.05f;
 
-  // Guards against a column being narrower than its longest category title needs, since title width isn't
-  // measured - only the (usually much narrower) button row is.
   private const float MinColumnWidth = 0.3f;
 
-  /// <summary>
-  /// Builds the Custom Options voting UI and shows it immediately, giving players <paramref name="voteLength"/>
-  /// seconds to vote. Categories are laid out into <see cref="ColumnCount"/> columns (filled top-to-bottom,
-  /// then left-to-right) so the page stays short enough to fit on screen as more categories are added. Calls
-  /// <paramref name="onConcluded"/> once every category has a winner and its effect has been applied. Does not
-  /// pause the game - that's the caller's job.
-  /// </summary>
   public static void Setup(float voteLength, Action onConcluded)
   {
-    // Widest categories first, so columns end up uniformly-wide instead of a mix - otherwise a narrower
-    // category sharing a column with wider ones looks squeezed in next to them rather than deliberately
-    // grouped. Partitioned via Where+Concat rather than OrderBy: LINQ's OrderBy is normally stable, but that
-    // guarantee doesn't carry over once this transpiles to Lua, so a same-width group could silently end up in
-    // a different order than declared - filtering preserves each partition's original order regardless.
     var builtCategories = BuildCategories();
     var categories = builtCategories.Where(category => category.Options.Length >= 3)
       .Concat(builtCategories.Where(category => category.Options.Length < 3))
@@ -54,7 +35,6 @@ public static class CustomOptionsSelection
 
     var contentTopY = -Margin - VotePageTitle.Height - VotePageTitle.Gap;
 
-    // First pass: figure out how wide each column needs to be, from the widest category assigned to it.
     var columnWidths = new float[ColumnCount];
     for (var i = 0; i < categories.Length; i++)
     {
@@ -71,7 +51,6 @@ public static class CustomOptionsSelection
       columnX[c] = columnX[c - 1] + columnWidths[c - 1] + ColumnSpacing;
     }
 
-    // Second pass: actually build each category into its assigned column, tracking that column's running Y.
     var groups = new VoteGroup[categories.Length];
     var columnY = new float[ColumnCount];
     for (var c = 0; c < ColumnCount; c++)
@@ -83,9 +62,6 @@ public static class CustomOptionsSelection
     {
       var column = i / rowsPerColumn;
 
-      // A category with fewer options than the widest one in its column would otherwise render narrower than
-      // its column-mates and end up hugging the column's left edge instead of sharing their center - so it's
-      // nudged right by however much narrower it is than the column itself.
       var optionCount = categories[i].Options.Length;
       var categoryWidth = optionCount * ButtonWidth + (optionCount - 1) * ButtonSpacing;
       var groupX = columnX[column] + (columnWidths[column] - categoryWidth) / 2;
@@ -168,7 +144,6 @@ public static class CustomOptionsSelection
           Name = Loc.Get("Unlocked"), OnChosen = () =>
           {
             ResearchGranting.GrantToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE);
-            // Ahn'Qiraj has no ships - Deep Burrow is its equivalent way to cross water, so it belongs here too.
             ResearchGranting.GrantToAllPlayers(UPGRADE_RDBD_DEEP_BURROW_C_THUN);
           }
         }
