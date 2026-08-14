@@ -61,7 +61,6 @@ public static class GameSetup
     FactionStartingResources.Setup();
     FactionMultiboard.Setup();
     PlayerSetup.Setup();
-    FactionChoiceDialogSetup.Setup();
     SharedQuestSetup.Setup();
     SharedSpellSetup.Setup();
     BookSetup.Setup();
