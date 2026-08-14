@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPoints;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -14,11 +14,6 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 
-/// <summary>
-/// Hard mode's effect on the Scourge: instantly completes the quests that would normally bring it to "ready to
-/// invade Lordaeron" status by turn 10-12, so an engagement can start right away instead. The Plague itself
-/// (<see cref="QuestPlague"/>) is deliberately left for the player to trigger.
-/// </summary>
 public static class ScourgeHardModeSetup
 {
   private static readonly int[] _unclaimedNorthrendControlPoints =
@@ -39,10 +34,6 @@ public static class ScourgeHardModeSetup
 
     var owner = scourge.Player;
 
-    // Scourge normally earns a lot of its early gold from creeps it now no longer has to fight through, so
-    // compress its starting income window to compensate - delivered over 5 turns instead of the usual 10. This
-    // only works because the actual grant is deferred until after the vote sequence concludes - see
-    // FactionStartingResources.GrantPending.
     if (scourge.StartingGold != null)
     {
       scourge.StartingGold.Turns = 5;
@@ -83,16 +74,11 @@ public static class ScourgeHardModeSetup
     AwardControlPoint(UNIT_N08D_ICECROWN_GLACIER, owner);
     AwardControlPoint(UNIT_N00G_BOREAN_TUNDRA, owner);
     AwardControlPoint(UNIT_N09H_EN_KILAH, owner);
-    // Anub'arak isn't gated behind a specific quest research, but Spider War/En'Kilah are his Nerubian home
-    // turf, so he's preplaced here.
     PlaceHeroAtLevel(AllLegends.Scourge.Anubarak, owner, Regions.EnKilahUnlock.Center, 5);
   }
 
   private static void CompleteSapphiron(Faction scourge, player owner)
   {
-    // QuestSapphiron.OnComplete only spawns the reanimated Sapphiron if a real unit dealt the killing blow,
-    // which won't be true here - so that part is replicated manually instead of relying on it. Dispose(),
-    // not Kill(), so no on-death effects (summons, reincarnation, etc.) trigger.
     AllPreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP).Dispose();
     var sapphiron = unit.Create(owner, UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI, -2600, 18800, 300);
     GameStartVoteSequence.PauseUnit(sapphiron);
@@ -123,19 +109,14 @@ public static class ScourgeHardModeSetup
 
       if (CapitalManager.UnitIsCapital(creep))
       {
-        // Capturable neutral Legends/Capitals (e.g. Gundrak, The Nexus) are awarded, not cleared.
         creep.SetOwner(owner);
         continue;
       }
 
-      // Dispose(), not Kill(), so on-death effects (summons, reincarnation, etc.) don't leave anything behind.
       creep.Dispose();
     }
   }
 
-  // Most quests gate their rewards behind a Tier 3 town hall, which the player would already have built by
-  // this point in a normal game - so Hard mode has to grant it directly, since force-completing quests
-  // doesn't retroactively upgrade buildings.
   private static void UpgradeStartingTownHall(player owner)
   {
     var townHall = AllPreplacedWidgets.Units.GetClosest(UNIT_UNPL_NECROPOLIS_SCOURGE_T1, -2156.9f, 22375f);

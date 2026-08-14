@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPoints;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -14,10 +14,6 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas.Mechanics;
 
-/// <summary>
-/// Hard mode's effect on Quel'thalas: instantly completes the quests that would normally secure Quel'thalas's
-/// home territory (Silvermoon, Windrunner Spire, Quel'danil Lodge).
-/// </summary>
 public static class QuelthalasHardModeSetup
 {
   private static readonly int[] _controlPoints =
@@ -41,10 +37,6 @@ public static class QuelthalasHardModeSetup
 
     var owner = quelthalas.Player;
 
-    // Quel'thalas normally earns a lot of its early gold from creeps it no longer has to fight through, so
-    // compress its starting income window to compensate - delivered over 5 turns instead of the usual 10,
-    // same as the other completed factions. Only works because the actual grant is deferred until after the
-    // vote sequence concludes - see FactionStartingResources.GrantPending.
     if (quelthalas.StartingGold != null)
     {
       quelthalas.StartingGold.Turns = 5;
@@ -90,19 +82,14 @@ public static class QuelthalasHardModeSetup
 
       if (CapitalManager.UnitIsCapital(creep))
       {
-        // Capturable neutral Legends/Capitals are awarded, not cleared.
         creep.SetOwner(owner);
         continue;
       }
 
-      // Dispose(), not Kill(), so on-death effects (summons, reincarnation, etc.) don't leave anything behind.
       creep.Dispose();
     }
   }
 
-  // Most quests gate their rewards behind a Tier 3 town hall, which the player would already have built by
-  // this point in a normal game - so Hard mode has to grant it directly, since force-completing quests
-  // doesn't retroactively upgrade buildings.
   private static void UpgradeStartingTownHall(player owner)
   {
     var townHall = AllPreplacedWidgets.Units.GetClosest(UNIT_H033_STEADING_QUELTHALAS_T1, 17146.6f, 12466.4f);

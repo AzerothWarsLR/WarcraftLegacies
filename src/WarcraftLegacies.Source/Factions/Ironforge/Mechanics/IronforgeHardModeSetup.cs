@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPoints;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -14,10 +14,6 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Mechanics;
 
-/// <summary>
-/// Hard mode's effect on Ironforge: instantly completes the quests that would normally secure Ironforge's
-/// home territory (Thelsamar, Dun Morogh, Gnomeregan, and Ironforge itself via Dwarven Dominion).
-/// </summary>
 public static class IronforgeHardModeSetup
 {
   private static readonly int[] _controlPoints =
@@ -57,10 +53,6 @@ public static class IronforgeHardModeSetup
 
     var owner = ironforge.Player;
 
-    // Ironforge normally earns a lot of its early gold from creeps it no longer has to fight through, so
-    // compress its starting income window to compensate - delivered over 5 turns instead of the usual 10,
-    // same as the other completed factions. Only works because the actual grant is deferred until after the
-    // vote sequence concludes - see FactionStartingResources.GrantPending.
     if (ironforge.StartingGold != null)
     {
       ironforge.StartingGold.Turns = 5;
@@ -76,8 +68,6 @@ public static class IronforgeHardModeSetup
       AwardControlPoint(unitType, owner);
     }
 
-    // Grim Batol is both a strategic control point (above) and a separate Capital - both need awarding
-    // independently, same as Lordaeron's Caer Darrow.
     AllLegends.Neutral.GrimBatol.Unit.SetOwner(owner);
 
     foreach (var region in _sweepRegions)
@@ -111,19 +101,14 @@ public static class IronforgeHardModeSetup
 
       if (CapitalManager.UnitIsCapital(creep))
       {
-        // Capturable neutral Legends/Capitals are awarded, not cleared.
         creep.SetOwner(owner);
         continue;
       }
 
-      // Dispose(), not Kill(), so on-death effects (summons, reincarnation, etc.) don't leave anything behind.
       creep.Dispose();
     }
   }
 
-  // Most quests gate their rewards behind a Tier 3 town hall, which the player would already have built by
-  // this point in a normal game - so Hard mode has to grant it directly, since force-completing quests
-  // doesn't retroactively upgrade buildings.
   private static void UpgradeStartingTownHall(player owner)
   {
     var townHall = AllPreplacedWidgets.Units.GetClosest(UNIT_H07E_MINING_COLONY_IRONFORGE_T1,
