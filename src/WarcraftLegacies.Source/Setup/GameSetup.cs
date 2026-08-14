@@ -10,6 +10,7 @@ using MacroTools.UserInterface;
 using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
+using WarcraftLegacies.Source.GameLogic.AssistedFollow;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameLogic.Mmd;
 using WarcraftLegacies.Source.GameModes;
@@ -55,6 +56,7 @@ public static class GameSetup
     ControlPointSetup.Setup();
     InstanceSetup.Setup();
     NeutralHostileSetup.Setup();
+    AssistedFollowSystem.Setup();
     CommandSetup.Setup();
     CheatSetup.Setup();
     TeamSetup.Setup();

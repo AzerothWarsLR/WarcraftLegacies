@@ -1,0 +1,171 @@
+{
+  "OldId": "ofrt",
+  "NewId": "o00K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S00J,A088,Argl"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 200
+    },
+    {
+      "Id": "ua1f",
+      "Value": 100
+    },
+    {
+      "Id": "ufma",
+      "Value": 15
+    },
+    {
+      "Id": "ugol",
+      "Value": 150
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "ulur",
+      "Value": 120
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "ua1z",
+      "Value": 950
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 1
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1150
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "enemies,ground,mechanical"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o04A"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013,Renb,R064,Rosp,Rgfo"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "uclb",
+      "Value": 155
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\other\\NerubianZiggurat\\NerubianZiggurat.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.23
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "abilities\\weapons\\catapult\\catapultmissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Grand Pyramid of Zul\u0027Farrak"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

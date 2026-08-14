@@ -1,0 +1,101 @@
+{
+  "OldId": "odoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANtr,Aeye,Ahwd,Asta,Aion"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 5
+    },
+    {
+      "Id": "ubba",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 11
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R023,Rowd,Rotr,Ropm,Rguv"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 130
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Voodoo master of the Darkspear.|n|cfff5962dAbilities:|R Sentry Ward|n|cfff5962dCan Learn:|R Stasis Trap, Healing Ward, Troll Regeneration|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    }
+  ]
+}

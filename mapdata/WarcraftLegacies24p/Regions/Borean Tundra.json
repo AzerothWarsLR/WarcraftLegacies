@@ -1,0 +1,16 @@
+{
+  "Left": -9152,
+  "Bottom": 13664,
+  "Right": -4768,
+  "Top": 19008,
+  "Name": "Borean Tundra",
+  "CreationNumber": 58,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 0,
+    "A": 255
+  }
+}

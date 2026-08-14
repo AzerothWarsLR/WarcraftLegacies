@@ -1,0 +1,17 @@
+{
+  "OldId": "nsqa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACfr,ACrn"
+    },
+    {
+      "Id": "ubba",
+      "Value": 50
+    }
+  ]
+}

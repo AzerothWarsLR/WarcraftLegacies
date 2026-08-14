@@ -1,0 +1,54 @@
+{
+  "OldId": "YT36",
+  "NewId": "B01B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Horizontal Stormwind)"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\CityBridgeLarge0\\CityBridgeLarge0.mdl"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bptd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\Cliff\\Cliff1.tga"
+    }
+  ]
+}

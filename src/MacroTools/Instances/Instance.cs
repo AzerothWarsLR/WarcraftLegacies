@@ -90,7 +90,7 @@ public sealed class Instance
         var unitsInRect = GlobalGroup
           .EnumUnitsInRect(rect);
 
-        var evacuationPosition = _gates.First().ExteriorPosition;
+        var evacuationPosition = _gates[0].ExteriorPosition;
 
         KillUnits(unitsInRect);
         EvacuateUnits(unitsInRect, evacuationPosition);

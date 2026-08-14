@@ -1,0 +1,175 @@
+{
+  "OldId": "Orkn",
+  "NewId": "O027",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0Q8,A0Q7,A0Q3,A0Q1,A0GK,A0FI,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1100
+    },
+    {
+      "Id": "uint",
+      "Value": 19
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 18
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.33
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Zuluhed"
+    },
+    {
+      "Id": "uclb",
+      "Value": 50
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Fel Horde-Zuluhed Ult Form)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\HeroFlameLord\\HeroFlameLord.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 55
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chieftan of the Dragonmaw Clan"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Zuluhed The Whacked"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Zuluhed"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-guldan.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive |cffffcc00Z|ruluhed the Whacked"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful Shaman of the Old Horde, can cast chain heal, Bloodlust totem, and Summon Nether Dragons. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroFireLord"
+    }
+  ]
+}

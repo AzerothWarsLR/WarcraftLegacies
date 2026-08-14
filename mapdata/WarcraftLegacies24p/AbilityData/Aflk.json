@@ -1,0 +1,18 @@
+{
+  "OldId": "Aflk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Khaz Modan-GyroCopter-Warsong-Zeppelin)"
+    }
+  ]
+}

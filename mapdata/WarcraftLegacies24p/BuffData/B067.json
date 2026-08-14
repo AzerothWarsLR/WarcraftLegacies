@@ -1,0 +1,39 @@
+{
+  "OldId": "Bspo",
+  "NewId": "B067",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_BLOOD.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Bleeding"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is bleeding"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Teal Raider) (Non-stacking)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+    }
+  ]
+}

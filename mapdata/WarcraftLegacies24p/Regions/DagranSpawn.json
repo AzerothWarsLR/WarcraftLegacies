@@ -1,0 +1,16 @@
+{
+  "Left": 17120,
+  "Bottom": -31264,
+  "Right": 17216,
+  "Top": -31200,
+  "Name": "DagranSpawn",
+  "CreationNumber": 93,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

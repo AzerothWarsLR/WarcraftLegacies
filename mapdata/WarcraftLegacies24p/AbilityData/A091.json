@@ -1,0 +1,239 @@
+{
+  "OldId": "ANdo",
+  "NewId": "A091",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01N"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01N"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01N"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "nonancient,player,structure"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "nonancient,player,structure"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "nonancient,player,structure"
+    },
+    {
+      "Level": 1,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "n006"
+    },
+    {
+      "Level": 2,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "n006"
+    },
+    {
+      "Level": 3,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "n006"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ndo4",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurnedAncient.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - Fandral)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Seed of Burning Hatred"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurnedAncient.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Seed of Burning Hatred"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot train units or uproot and  and will take damage until it dies. Upon its death, a mighty Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled.|n|n|cffffcc00Level 1|r - 240 seconds cooldown.|n|cffffcc00Level 2|r - 120 seconds cooldown.|n|cffffcc00Level 3|r - 60 seconds cooldown."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Seed of Burning Hatred - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Seed of Burning Hatred - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Seed of Burning Hatred - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 1 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 2 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 3 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."
+    }
+  ]
+}

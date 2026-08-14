@@ -1,0 +1,53 @@
+{
+  "OldId": "AOhx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 6
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - Lasts \u003CAOhx,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Lasts \u003CAOhx,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Lasts \u003CAOhx,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Lasts \u003CAOhx,Dur4\u003E seconds.|n|cffffcc00Level 5|r - Lasts \u003CAOhx,Dur5\u003E seconds.|n|cffffcc00Level 6|r - Lasts \u003CAOhx,Dur6\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "He|cffffcc00x|r - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "He|cffffcc00x|r - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "He|cffffcc00x|r - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAOhx,Dur4\u003E seconds."
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAOhx,Dur5\u003E seconds."
+    },
+    {
+      "Level": 6,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms an enemy unit into a random critter for \u003CAOhx,Dur6\u003E seconds."
+    }
+  ]
+}

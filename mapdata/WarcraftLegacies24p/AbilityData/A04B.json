@@ -1,0 +1,88 @@
+{
+  "OldId": "ANdp",
+  "NewId": "A04B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "nvdg,nbal,nfel,n05D,ndqp,nerd"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndp2",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Eye of Sargeras)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Demon Call"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Demoncall"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Opens a portal, allowing demons to step through and do the Caster\u0027s bidding."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Demoncall"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Opens a portal, allowing demons to step through and do The Caster\u0027s bidding."
+    }
+  ]
+}

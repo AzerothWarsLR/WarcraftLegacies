@@ -1,0 +1,16 @@
+{
+  "Left": 6560,
+  "Bottom": 3104,
+  "Right": 7232,
+  "Top": 5728,
+  "Name": "Plague 6",
+  "CreationNumber": 155,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 0,
+    "A": 255
+  }
+}

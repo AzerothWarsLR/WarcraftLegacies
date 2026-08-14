@@ -1,0 +1,29 @@
+{
+  "OldId": "Broa",
+  "NewId": "B03T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDefend.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "On Guard!"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has On Guard!; its armour has been increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIda\\AIdaTarget.mdl"
+    }
+  ]
+}

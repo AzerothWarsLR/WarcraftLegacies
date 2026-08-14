@@ -1,0 +1,16 @@
+{
+  "Left": -9536,
+  "Bottom": -17856,
+  "Right": -8736,
+  "Top": -17152,
+  "Name": "TrollSecondChance",
+  "CreationNumber": 266,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

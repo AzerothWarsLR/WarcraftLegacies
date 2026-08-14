@@ -1,0 +1,16 @@
+{
+  "Left": -4384,
+  "Bottom": -3680,
+  "Right": -1120,
+  "Top": -352,
+  "Name": "Darkspear Island",
+  "CreationNumber": 251,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

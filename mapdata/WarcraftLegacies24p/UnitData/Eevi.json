@@ -1,0 +1,176 @@
+{
+  "OldId": "Eevi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KY,AInv,AEvi,Ault"
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 15
+    },
+    {
+      "Id": "ua1f",
+      "Value": 35
+    },
+    {
+      "Id": "ua1h",
+      "Value": 85
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A10I,A0UK,AHds,A0YW,Aamk"
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uint",
+      "Value": 18
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ulum",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1q",
+      "Value": 135
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.23
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "enemies,ground,vulnerable"
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "usin",
+      "Value": 1600
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R07A"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ua2r",
+      "Value": 0
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua2d",
+      "Value": 0
+    },
+    {
+      "Id": "ua2s",
+      "Value": 0
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Naga)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Betrayer"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Illidan Stormrage"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

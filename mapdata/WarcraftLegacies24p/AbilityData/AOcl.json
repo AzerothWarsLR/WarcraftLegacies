@@ -1,0 +1,57 @@
+{
+  "OldId": "AOcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 10
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemies. Each jump deals less damage. |n|n|cffffcc00Level 1|r - \u003CAOcl,DataA1\u003E damage, jumps \u003CAOcl,DataB1\u003E times. |n|cffffcc00Level 2|r - \u003CAOcl,DataA2\u003E damage, jumps \u003CAOcl,DataB2\u003E times. |n|cffffcc00Level 3|r - \u003CAOcl,DataA3\u003E damage, jumps \u003CAOcl,DataB3\u003E times.  |n|cffffcc00Level 4|r - \u003CAOcl,DataA4\u003E damage, jumps \u003CAOcl,DataB4\u003E times."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Chain Lightning - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth a bolt of lightning that bounces up to \u003CAOcl,DataB4\u003E times, dealing \u003CAOcl,DataA4\u003E damage on the primary target. Each jump deals less damage."
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(zul)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

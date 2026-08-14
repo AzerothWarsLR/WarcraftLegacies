@@ -1,0 +1,16 @@
+{
+  "Left": 13568,
+  "Bottom": -13696,
+  "Right": 15456,
+  "Top": -12864,
+  "Name": "LakeshireUnlock",
+  "CreationNumber": 451,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

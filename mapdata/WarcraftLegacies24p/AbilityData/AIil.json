@@ -1,0 +1,14 @@
+{
+  "OldId": "AIil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    }
+  ]
+}

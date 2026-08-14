@@ -38,8 +38,8 @@ public sealed class QuestHonorHold : QuestData
   /// <inheritdoc/>
   protected override string RewardDescription => Loc.Format(
     "Control of all units at Honor Hold and {siegeTower} gain the {ability} ability.",
-    ("{siegeTower}", Loc.Get(GetObjectName(UNIT_O06K_SIEGE_TOWER_STORMWIND))),
-    ("{ability}", Loc.Get(GetObjectName(ABILITY_A108_ARTILLERY_BOMBARDMENT_STORMWIND))));
+    ("{siegeTower}", GetObjectName(UNIT_O06K_SIEGE_TOWER_STORMWIND)),
+    ("{ability}", GetObjectName(ABILITY_A108_ARTILLERY_BOMBARDMENT_STORMWIND)));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)

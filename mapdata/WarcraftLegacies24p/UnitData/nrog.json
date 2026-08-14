@@ -1,0 +1,36 @@
+{
+  "OldId": "nrog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A02D,ACct,Ashm"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A02D"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    }
+  ]
+}

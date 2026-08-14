@@ -1,0 +1,16 @@
+{
+  "Left": -24928,
+  "Bottom": 11520,
+  "Right": -22016,
+  "Top": 14528,
+  "Name": "NaxAmbient",
+  "CreationNumber": 211,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

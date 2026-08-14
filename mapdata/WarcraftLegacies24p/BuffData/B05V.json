@@ -1,0 +1,24 @@
+{
+  "OldId": "Bclf",
+  "NewId": "B05V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Smoke Bomb"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is affected by Smoke Bomb - It has a reduced chance to hit."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Smoke Cloud"
+    }
+  ]
+}

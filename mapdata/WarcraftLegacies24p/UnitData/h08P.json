@@ -1,0 +1,147 @@
+{
+  "OldId": "hsor",
+  "NewId": "h08P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0UX,A0SE,A0D1,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 385
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R02A,R05C,Rhpm,Rguv"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0O3"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Arcane Missile,- Arcane Missile|n- Suppression,- Arcane Missile|n- Suppression|n- Summon Zombie"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Forsaken, Cult)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Arcane spellcaster of the Forsaken.|n|cfff5962dAbilities:|r Arcane Missile|n|cfff5962dCan Learn:|R Suppression, Summon Zombie|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\NecromancerBlack.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Archivist"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Archivist"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancer.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Necromancer"
+    }
+  ]
+}

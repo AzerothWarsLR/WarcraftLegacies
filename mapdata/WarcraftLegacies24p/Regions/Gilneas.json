@@ -1,0 +1,16 @@
+{
+  "Left": 2848,
+  "Bottom": -3264,
+  "Right": 9760,
+  "Top": 2624,
+  "Name": "Gilneas",
+  "CreationNumber": 29,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

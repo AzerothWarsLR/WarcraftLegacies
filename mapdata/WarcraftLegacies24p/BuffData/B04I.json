@@ -1,0 +1,28 @@
+{
+  "OldId": "BUts",
+  "NewId": "B04I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholy.blp"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Fel Battleplate"
+    },
+    {
+      "Id": "fta3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftac",
+      "Value": 3
+    }
+  ]
+}

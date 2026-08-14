@@ -1,0 +1,37 @@
+{
+  "OldId": "hpxe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uhpm",
+      "Value": 150
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "Quel\u0027Thalas-Anasterian)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Al\u0027ar\u0027s vulnerable egg."
+    }
+  ]
+}

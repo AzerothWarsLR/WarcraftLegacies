@@ -1,0 +1,26 @@
+{
+  "OldId": "Aoar",
+  "NewId": "A065",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.03
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Frostwolf-Witch Doctor)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Enhanced Healing Totem Aura"
+    }
+  ]
+}

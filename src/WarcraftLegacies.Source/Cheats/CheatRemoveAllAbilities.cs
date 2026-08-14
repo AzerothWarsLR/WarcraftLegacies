@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Utils;
@@ -26,7 +25,7 @@ public sealed class CheatRemoveAllAbilities : Command
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
   {
-    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
+    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
     firstSelectedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
     return $"All abilities removed from {firstSelectedUnit.Name}";
   }

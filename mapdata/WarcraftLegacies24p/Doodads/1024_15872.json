@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1868713806,
+    "Variation": 7,
+    "Position": {
+      "X": 860.0472,
+      "Y": 15926.795,
+      "Z": 36.77324
+    },
+    "Rotation": 5.223393,
+    "Scale": {
+      "X": 0.81149995,
+      "Y": 0.81149995,
+      "Z": 0.81149995
+    },
+    "SkinId": 1868713806,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 686
+  },
+  {
+    "TypeId": 1177563202,
+    "Variation": 7,
+    "Position": {
+      "X": 1152,
+      "Y": 15744,
+      "Z": 98.5
+    },
+    "Rotation": 0,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "SkinId": 1177563202,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 6645
+  },
+  {
+    "TypeId": 1685215054,
+    "Variation": 0,
+    "Position": {
+      "X": 807.85144,
+      "Y": 15812.064,
+      "Z": 14.711929
+    },
+    "Rotation": 0.33161256,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1685215054,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 16658
+  },
+  {
+    "TypeId": 1295003714,
+    "Variation": 8,
+    "Position": {
+      "X": 1024,
+      "Y": 15872,
+      "Z": 56.5
+    },
+    "Rotation": 1.0471976,
+    "Scale": {
+      "X": 0.9142857,
+      "Y": 0.9142857,
+      "Z": 0.9142857
+    },
+    "SkinId": 1295003714,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 5399
+  },
+  {
+    "TypeId": 1936872009,
+    "Variation": 0,
+    "Position": {
+      "X": 1253.2421,
+      "Y": 15841.713,
+      "Z": 165.78297
+    },
+    "Rotation": 0.99483764,
+    "Scale": {
+      "X": 1.2499998,
+      "Y": 1.2499998,
+      "Z": 1.2499998
+    },
+    "SkinId": 1936872009,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33447
+  }
+]

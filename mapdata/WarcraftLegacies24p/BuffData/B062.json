@@ -1,0 +1,34 @@
+{
+  "OldId": "BSTN",
+  "NewId": "B062",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Consecrated Slam"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

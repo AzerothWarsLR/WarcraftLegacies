@@ -1,0 +1,16 @@
+{
+  "Left": -18272,
+  "Bottom": 23904,
+  "Right": -17664,
+  "Top": 24160,
+  "Name": "AethneumLibraryEntrance",
+  "CreationNumber": 378,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

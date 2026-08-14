@@ -1,0 +1,87 @@
+{
+  "OldId": "AUds",
+  "NewId": "A044",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uds1",
+      "Value": 36
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uds2",
+      "Type": 2,
+      "Value": 2.75
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "amsp",
+      "Value": 2000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonhero,player,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWand.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Teal - Summoning Spire)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Voidic Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffff00Q|r) Voidic Summoning"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 36 friendly units from a target area to the Obelisk; excludes heroes. 120 seconds cooldown."
+    }
+  ]
+}

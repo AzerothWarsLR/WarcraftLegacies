@@ -1,0 +1,16 @@
+{
+  "Left": 8320,
+  "Bottom": -11872,
+  "Right": 8800,
+  "Top": -11456,
+  "Name": "Cathedral of Light",
+  "CreationNumber": 123,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 0,
+    "A": 255
+  }
+}

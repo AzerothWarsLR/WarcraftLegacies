@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1684165210,
+    "Variation": 1,
+    "Position": {
+      "X": -15991.653,
+      "Y": 23220.838,
+      "Z": 313
+    },
+    "Rotation": 6.1334577,
+    "Scale": {
+      "X": 1.1050752,
+      "Y": 1.1050752,
+      "Z": 1.1050752
+    },
+    "SkinId": 1684165210,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10240
+  },
+  {
+    "TypeId": 1684165210,
+    "Variation": 1,
+    "Position": {
+      "X": -16107.932,
+      "Y": 23150.78,
+      "Z": 313
+    },
+    "Rotation": 0.26493025,
+    "Scale": {
+      "X": 1.1050752,
+      "Y": 1.1050752,
+      "Z": 1.1050752
+    },
+    "SkinId": 1684165210,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10225
+  },
+  {
+    "TypeId": 1935823450,
+    "Variation": 1,
+    "Position": {
+      "X": -16063.679,
+      "Y": 23006.27,
+      "Z": 313
+    },
+    "Rotation": 0.888199,
+    "Scale": {
+      "X": 1.1895016,
+      "Y": 1.1895016,
+      "Z": 1.1895016
+    },
+    "SkinId": 1935823450,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10200
+  },
+  {
+    "TypeId": 1936872026,
+    "Variation": 5,
+    "Position": {
+      "X": -16064,
+      "Y": 23232,
+      "Z": 313
+    },
+    "Rotation": 6.1784663,
+    "Scale": {
+      "X": 1.0893034,
+      "Y": 1.0893034,
+      "Z": 1.0893034
+    },
+    "SkinId": 1936872026,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 9824
+  },
+  {
+    "TypeId": 1684165210,
+    "Variation": 2,
+    "Position": {
+      "X": -16057.871,
+      "Y": 22899.326,
+      "Z": 313
+    },
+    "Rotation": 3.185226,
+    "Scale": {
+      "X": 1.1051,
+      "Y": 1.1051,
+      "Z": 1.1051
+    },
+    "SkinId": 1684165210,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12656
+  }
+]

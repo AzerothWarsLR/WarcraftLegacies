@@ -1,0 +1,16 @@
+{
+  "Left": 18912,
+  "Bottom": 6560,
+  "Right": 22592,
+  "Top": 9696,
+  "Name": "TyrUnlock",
+  "CreationNumber": 454,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

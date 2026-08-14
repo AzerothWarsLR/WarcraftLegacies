@@ -1,0 +1,13 @@
+{
+  "OldId": "BNbf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFire.blp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "Bblo",
+  "NewId": "B06Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mass Bloodlust"
+    }
+  ]
+}

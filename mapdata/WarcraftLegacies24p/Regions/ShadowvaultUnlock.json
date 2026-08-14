@@ -1,0 +1,16 @@
+{
+  "Left": -4480,
+  "Bottom": 23424,
+  "Right": -3168,
+  "Top": 24224,
+  "Name": "ShadowvaultUnlock",
+  "CreationNumber": 420,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

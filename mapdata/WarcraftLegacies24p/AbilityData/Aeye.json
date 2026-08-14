@@ -1,0 +1,24 @@
+{
+  "OldId": "Aeye",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Pink - Witch Doctor)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Sentry Ward (|cffffcc00Q|r)"
+    }
+  ]
+}

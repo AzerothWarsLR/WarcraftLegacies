@@ -1,0 +1,16 @@
+{
+  "Left": -21376,
+  "Bottom": -10272,
+  "Right": -19776,
+  "Top": -7840,
+  "Name": "FeathermoonUnlock",
+  "CreationNumber": 137,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

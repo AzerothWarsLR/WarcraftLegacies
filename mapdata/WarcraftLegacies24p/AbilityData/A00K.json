@@ -1,0 +1,14 @@
+{
+  "OldId": "Aloa",
+  "NewId": "A00K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "On board"
+    }
+  ]
+}

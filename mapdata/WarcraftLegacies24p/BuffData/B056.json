@@ -1,0 +1,19 @@
+{
+  "OldId": "Binf",
+  "NewId": "B056",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Living Fragments (Caster)"
+    }
+  ]
+}

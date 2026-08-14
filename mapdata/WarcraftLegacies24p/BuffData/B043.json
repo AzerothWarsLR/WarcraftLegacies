@@ -1,0 +1,24 @@
+{
+  "OldId": "BUts",
+  "NewId": "B043",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Spiked Carapace"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Fire Tanks)"
+    }
+  ]
+}

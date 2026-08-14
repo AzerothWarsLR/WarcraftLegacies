@@ -1,0 +1,218 @@
+{
+  "OldId": "edes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0TE,A0FV,Ault"
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ubld",
+      "Value": 45
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua2d",
+      "Value": 1
+    },
+    {
+      "Id": "ua2b",
+      "Value": 54
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ua2f",
+      "Value": 25
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 25
+    },
+    {
+      "Id": "ua2h",
+      "Value": 35
+    },
+    {
+      "Id": "uhd2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 3500
+    },
+    {
+      "Id": "ulum",
+      "Value": 200
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "ua2q",
+      "Value": 50
+    },
+    {
+      "Id": "uqd2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua1r",
+      "Value": 350
+    },
+    {
+      "Id": "ua2r",
+      "Value": 350
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua2s",
+      "Value": 15
+    },
+    {
+      "Id": "umvs",
+      "Value": 330
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "ua2p",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R006,R00C"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 270
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids-Sentinels)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Corvette"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Corvette"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Agile dominator of the seas of Kalimdor.|n|cfff5962dAbilities:|R Board|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

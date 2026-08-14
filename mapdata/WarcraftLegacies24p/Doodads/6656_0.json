@@ -1,0 +1,212 @@
+[
+  {
+    "TypeId": 959590468,
+    "Variation": 0,
+    "Position": {
+      "X": 6508.1465,
+      "Y": -2.2979126,
+      "Z": -0.40001392
+    },
+    "Rotation": 6.1339936,
+    "Scale": {
+      "X": 1.25,
+      "Y": 1.4,
+      "Z": 1.25
+    },
+    "SkinId": 959590468,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7031
+  },
+  {
+    "TypeId": 959590468,
+    "Variation": 0,
+    "Position": {
+      "X": 6514.617,
+      "Y": -289.851,
+      "Z": -0.40001392
+    },
+    "Rotation": 0.21506499,
+    "Scale": {
+      "X": 1.25,
+      "Y": 1.4,
+      "Z": 1.25
+    },
+    "SkinId": 959590468,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7032
+  },
+  {
+    "TypeId": 1818316622,
+    "Variation": 0,
+    "Position": {
+      "X": 6866.6733,
+      "Y": 167.84192,
+      "Z": 112.75463
+    },
+    "Rotation": 5.4491835,
+    "Scale": {
+      "X": 0.79999995,
+      "Y": 0.79999995,
+      "Z": 0.74999994
+    },
+    "SkinId": 1818316622,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12971
+  },
+  {
+    "TypeId": 1819759436,
+    "Variation": 0,
+    "Position": {
+      "X": 6829.6953,
+      "Y": -82.1651,
+      "Z": 102
+    },
+    "Rotation": 4.0315957,
+    "Scale": {
+      "X": 0.74999994,
+      "Y": 0.74999994,
+      "Z": 0.74999994
+    },
+    "SkinId": 1819759436,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21459
+  },
+  {
+    "TypeId": 813127500,
+    "Variation": 0,
+    "Position": {
+      "X": 6659.7075,
+      "Y": 172.85191,
+      "Z": 13.844778
+    },
+    "Rotation": 3.2160945,
+    "Scale": {
+      "X": 0.34999985,
+      "Y": 0.34999985,
+      "Z": 0.34999985
+    },
+    "SkinId": 813127500,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21229
+  },
+  {
+    "TypeId": 1918979916,
+    "Variation": 0,
+    "Position": {
+      "X": 6875.8228,
+      "Y": 110.96265,
+      "Z": 102
+    },
+    "Rotation": 4.724883,
+    "Scale": {
+      "X": 0.5999999,
+      "Y": 0.5999999,
+      "Z": 0.5999999
+    },
+    "SkinId": 1918979916,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7928
+  },
+  {
+    "TypeId": 1918979916,
+    "Variation": 0,
+    "Position": {
+      "X": 6823.9385,
+      "Y": 106.68848,
+      "Z": 102
+    },
+    "Rotation": 4.7289314,
+    "Scale": {
+      "X": 0.49999988,
+      "Y": 0.49999988,
+      "Z": 0.49999988
+    },
+    "SkinId": 1918979916,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7949
+  },
+  {
+    "TypeId": 1886146393,
+    "Variation": 0,
+    "Position": {
+      "X": 6760.315,
+      "Y": -171.74323,
+      "Z": 102
+    },
+    "Rotation": 4.455805,
+    "Scale": {
+      "X": 0.6499999,
+      "Y": 0.6499999,
+      "Z": 0.6499999
+    },
+    "SkinId": 1886146393,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10076
+  },
+  {
+    "TypeId": 1886146393,
+    "Variation": 0,
+    "Position": {
+      "X": 6554.669,
+      "Y": 177.6883,
+      "Z": 80.8335
+    },
+    "Rotation": 4.455805,
+    "Scale": {
+      "X": 0.6499999,
+      "Y": 0.6499999,
+      "Z": 0.6499999
+    },
+    "SkinId": 1886146393,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10074
+  },
+  {
+    "TypeId": 808661060,
+    "Variation": 0,
+    "Position": {
+      "X": 6521.226,
+      "Y": -137.5918,
+      "Z": 100.1767
+    },
+    "Rotation": 0.47123888,
+    "Scale": {
+      "X": 0.5,
+      "Y": 0.65,
+      "Z": 0.65
+    },
+    "SkinId": 808661060,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10794
+  }
+]

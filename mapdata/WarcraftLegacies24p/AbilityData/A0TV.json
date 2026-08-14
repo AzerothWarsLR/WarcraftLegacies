@@ -1,0 +1,28 @@
+{
+  "OldId": "Afbt",
+  "NewId": "A0TV",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green Akama)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Akama attacks destroy \u003CAfbt,DataA1\u003E mana per hit against any unit, causing bonus damage equal to the mana destroyed.|n|nAdditionally, attacks made by Akama cause \u003CAfbt,DataE1\u003E bonus damage against summoned units."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "pghe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 30
+    },
+    {
+      "Id": "isto",
+      "Value": 3
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    }
+  ]
+}

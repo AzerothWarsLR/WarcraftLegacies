@@ -1,0 +1,16 @@
+{
+  "Left": 4608,
+  "Bottom": -10528,
+  "Right": 4640,
+  "Top": -10496,
+  "Name": "ShipTarget",
+  "CreationNumber": 472,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

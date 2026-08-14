@@ -1,0 +1,53 @@
+{
+  "OldId": "AOsk",
+  "NewId": "D047",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\ChainFence.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Chain Fence"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "A,*"
+    },
+    {
+      "Id": "dvar",
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 125
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 125
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "OldId": "AOww",
+  "NewId": "A10Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 220
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 210
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 220
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 230
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oww1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Oww1",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(nazgrim)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Axestorm"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Axestorm - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 1|r - 100 damage. |n|cffffcc00Level 2|r - 125 damage. |n|cffffcc00Level 3|r - 150 damage."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Axestorm - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Axestorm - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Axestorm - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 1|r - 100 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 2|r - 125 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 3|r - 150 damage."
+    }
+  ]
+}

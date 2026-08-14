@@ -1,0 +1,57 @@
+{
+  "OldId": "oli2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIt6,A0E5"
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUsedSoulGem.blp"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Orb of Arcane"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Orb of Arcane"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, and burn 25 mana from the target with each attack. Burns 15 mana on heroes.|nCauses attacks to deal 200 damage total to summoned units."
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Attacks cause arcane damage."
+    }
+  ]
+}

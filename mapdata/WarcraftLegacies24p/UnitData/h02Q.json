@@ -1,0 +1,163 @@
+{
+  "OldId": "hdhw",
+  "NewId": "h02Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0VV,A0BJ"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Metal"
+    },
+    {
+      "Id": "ubld",
+      "Value": 12
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "udef",
+      "Value": 9
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 68
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 38
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1225
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R01Q"
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,item,nonancient,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhan,Rhar,Rhme"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMystical Knight on Pegasus Lordaeron.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Knight on Pegasus(white) Lordaeron_L.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Pegasus Knight"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Pegasus Knight"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks air units.|r"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

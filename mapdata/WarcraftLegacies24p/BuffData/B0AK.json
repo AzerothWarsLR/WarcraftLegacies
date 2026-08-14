@@ -1,0 +1,29 @@
+{
+  "OldId": "Bakb",
+  "NewId": "B0AK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit hears War Cadence; it has increased attack speed."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTribal Drum of War.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "War Cadence"
+    }
+  ]
+}

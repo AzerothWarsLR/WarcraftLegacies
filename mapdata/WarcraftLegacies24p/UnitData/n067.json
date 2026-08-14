@@ -1,0 +1,93 @@
+{
+  "OldId": "nspr",
+  "NewId": "n067",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aloc,ACvs"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 5
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "summoned,undead"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Mini Spiders"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.3
+    },
+    {
+      "Id": "uclr",
+      "Value": 55
+    },
+    {
+      "Id": "uclg",
+      "Value": 88
+    },
+    {
+      "Id": "uclb",
+      "Value": 55
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 11
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 11
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 25
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 25
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.5
+    }
+  ]
+}

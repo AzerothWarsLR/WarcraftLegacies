@@ -1,0 +1,13 @@
+{
+  "OldId": "BNso",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Tranquility\\TranquilityTarget.mdl"
+    }
+  ]
+}

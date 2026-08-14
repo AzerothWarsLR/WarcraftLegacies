@@ -1,0 +1,34 @@
+{
+  "OldId": "BEme",
+  "NewId": "B049",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGryphonRider.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mount Gryphon"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Falstad mounts his gryphon and becomes a gryphon rider. While in this form he gains an abillity called Gryphon Sky which lets him call his gryphon rider brethren. Lasts \u003CAEme"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mount Gryphon"
+    }
+  ]
+}

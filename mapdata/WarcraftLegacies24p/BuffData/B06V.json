@@ -1,0 +1,24 @@
+{
+  "OldId": "BEsh",
+  "NewId": "B06V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Corrosive Armor"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was hit by Corrosive Armor"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PoisonSting\\PoisonStingTarget.mdl"
+    }
+  ]
+}

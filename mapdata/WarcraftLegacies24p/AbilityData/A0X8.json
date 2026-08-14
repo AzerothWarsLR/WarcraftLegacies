@@ -1,0 +1,91 @@
+{
+  "OldId": "ANlm",
+  "NewId": "A0X8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n0CM"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Yellow, Shadowcaster)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon Shadowspawn"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Shadowspawn"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a twisted Shadowspawn, a resilient and deadly creature. As a Shadowspawn deals damage, it consumes the flesh of its target, thereby fueling its essence and eventually splitting into two Spawns.|n|nHas \u003Cnlv1,realHP\u003E hit points and deals \u003Cnlv1,mindmg1\u003E - \u003Cnlv1,maxdmg1\u003E damage.|nLasts \u003CANlm,Dur1\u003E seconds.|n|n|cffffcc00Attacks ground and air units.|r"
+    },
+    {
+      "Id": "ausk",
+      "Type": 3,
+      "Value": "n0CM"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSludgeCreature.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    }
+  ]
+}

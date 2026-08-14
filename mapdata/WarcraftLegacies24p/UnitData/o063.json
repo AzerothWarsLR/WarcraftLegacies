@@ -1,0 +1,145 @@
+{
+  "OldId": "otau",
+  "NewId": "o063",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACrk,A064,A0ZY,A0ZZ,A0E6,Aion"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua1b",
+      "Value": 53
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 34
+    },
+    {
+      "Id": "ugor",
+      "Value": 28
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1685
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00W,Rhar,Rhme,Ropm,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R095,o00J,ofor,ofrt"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Metal"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Strongest warriors of the Ragetotem Tribe.|n|cfff5962dAbilities:|R Ancestral Endurance,VampiricAura,\r\nHeavyBash, Resistant Skin|n|cfff5962dCan learn:|R Toughened Hides|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tauren Gladiator"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Tauren Gladiator"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\bourrin.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGreatTaurenThieftain.blp"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 5088,
+  "Bottom": -30080,
+  "Right": 5152,
+  "Top": -30016,
+  "Name": "Fel8",
+  "CreationNumber": 279,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

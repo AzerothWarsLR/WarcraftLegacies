@@ -1,0 +1,154 @@
+{
+  "OldId": "Huth",
+  "NewId": "H098",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,A0GK"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0G5,A083,A085,A04J,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uint",
+      "Value": 22
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumSlice"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R073"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElf4.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(High Elves)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BloodElfSwordsmanV2.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Sunfury Mastermind"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Pathaleon the Calculator"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": " Revive Paladin"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElf4.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SpellBreaker"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Pathaleon"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at disrupting enemies and offensive magic.|n|cfff5962dCan Learn:|R Arcane Blast, Silence, Retribution Aura, Arcane Burst|n|n|cffffcc00Attacks land units.|R"
+    }
+  ]
+}

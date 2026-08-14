@@ -1,0 +1,24 @@
+{
+  "OldId": "Beye",
+  "NewId": "B084",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneEye.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Watcher\u0027s Eye"
+    }
+  ]
+}

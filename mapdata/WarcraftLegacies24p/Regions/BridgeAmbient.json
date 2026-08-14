@@ -1,0 +1,16 @@
+{
+  "Left": 15232,
+  "Bottom": -288,
+  "Right": 17504,
+  "Top": 736,
+  "Name": "BridgeAmbient",
+  "CreationNumber": 332,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

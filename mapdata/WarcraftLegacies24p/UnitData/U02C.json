@@ -1,0 +1,310 @@
+{
+  "OldId": "Ulic",
+  "NewId": "U02C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AImt,ACm2,A0GK"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "uagi",
+      "Value": 13
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 48
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "udl1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "ua1b",
+      "Value": 600
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ua1f",
+      "Value": 25
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ua1h",
+      "Value": 50
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A013,A0R7,A02L,Aamk,A10M"
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uhpm",
+      "Value": 14000
+    },
+    {
+      "Id": "uint",
+      "Value": 11
+    },
+    {
+      "Id": "umas",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 0
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "usin",
+      "Value": 1800
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1q",
+      "Value": 100
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 250
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 1
+    },
+    {
+      "Id": "usd1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "usr1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,item,notself,structure,ward"
+    },
+    {
+      "Id": "ustr",
+      "Value": 33
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,notself,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 16
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucar",
+      "Value": 12
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\YoggSaron.mdl"
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Old God"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Yogg-Saron"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 7
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

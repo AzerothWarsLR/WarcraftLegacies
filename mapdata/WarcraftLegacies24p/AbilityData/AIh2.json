@@ -1,0 +1,19 @@
+{
+  "OldId": "AIh2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ihpg",
+      "Value": 800
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(800)"
+    }
+  ]
+}

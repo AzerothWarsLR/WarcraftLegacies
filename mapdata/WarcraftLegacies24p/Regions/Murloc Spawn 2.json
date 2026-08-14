@@ -1,0 +1,16 @@
+{
+  "Left": -4608,
+  "Bottom": -3040,
+  "Right": -4416,
+  "Top": -2592,
+  "Name": "Murloc Spawn 2",
+  "CreationNumber": 244,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

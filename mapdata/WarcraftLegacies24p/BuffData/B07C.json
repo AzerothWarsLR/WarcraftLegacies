@@ -1,0 +1,39 @@
+{
+  "OldId": "Bfzy",
+  "NewId": "B07C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Holy Power"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effect of Holy Power; its movement speed and attack speed are increased."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Sweep_Holy_Large.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": "fta1",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

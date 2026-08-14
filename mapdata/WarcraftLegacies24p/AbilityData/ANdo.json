@@ -1,0 +1,92 @@
+{
+  "OldId": "ANdo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nbal"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Skull of Guldan)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "B"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Doom - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CANdo,DataA1\u003E damage per second until it dies. Upon its death, a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled. |n|cffffcc00Level 1|r - 40 damage per second and 1 Elite Doom Guard summoned.|n|cffffcc00Level 2|r - 70 damage per second and 2 Elite Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 4 Elite Doom Guards summoned."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Doom - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CANdo,DataA1\u003E damage per second until it dies. Upon its death, 1 Elite Doom Guard will spawn from its corpse. Doom cannot be dispelled or cancelled."
+    }
+  ]
+}

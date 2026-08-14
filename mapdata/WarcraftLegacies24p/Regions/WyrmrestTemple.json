@@ -1,0 +1,16 @@
+{
+  "Left": -928,
+  "Bottom": 17056,
+  "Right": -288,
+  "Top": 17824,
+  "Name": "WyrmrestTemple",
+  "CreationNumber": 426,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

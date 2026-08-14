@@ -1,0 +1,213 @@
+{
+  "OldId": "AOls",
+  "NewId": "A0DU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uls1",
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uls1",
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uls2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uls2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uls2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Uls3",
+      "Value": 13
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Uls3",
+      "Value": 19
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Uls4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Uls5",
+      "Type": 2,
+      "Value": 27
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Uls5",
+      "Type": 2,
+      "Value": 33
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Ulsu",
+      "Type": 3,
+      "Value": "u00O"
+    },
+    {
+      "Level": 2,
+      "Id": "Ulsu",
+      "Type": 3,
+      "Value": "u00O"
+    },
+    {
+      "Level": 3,
+      "Id": "Ulsu",
+      "Type": 3,
+      "Value": "u00O"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(sylvanas)"
+    },
+    {
+      "Id": "aefl",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EtherealForm\\SpiritWalkerChange.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Banshee Queen"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Banshee Queen - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Unleashes Banshees to attack the Dark Ranger enemies.|n|n|cffffcc00Level 1|r - 20 spirits. |n|cffffcc00Level 2|r - 30 spirits.|n|cffffcc00Level 3|r - 40 spirits.|n|nLasts \u003CAOls,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Banshee Queen - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Banshee Queen - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Banshee Queen - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Unleashes ancient spirits which drain enemy health and replenish Sylvanas\u0027s health.|nLasts \u003CAOls,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Unleashes ancient spirits which drain enemy health and replenish Sylvanas\u0027s health.|nLasts \u003CAOls,HeroDur1\u003E seconds."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "AId1",
+  "NewId": "A114",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Attachment)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Lightning Ball  right hand"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "OldId": "ushd",
+  "NewId": "u00K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aloc"
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 100000
+    },
+    {
+      "Id": "umpm",
+      "Value": 100000
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Channel Dummy Caster"
+    },
+    {
+      "Id": "ushu",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

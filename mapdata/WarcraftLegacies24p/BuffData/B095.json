@@ -1,0 +1,24 @@
+{
+  "OldId": "Bslo",
+  "NewId": "B095",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLoathe.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Ooze"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is oozed; its movement speed and attack rate are reduced."
+    }
+  ]
+}

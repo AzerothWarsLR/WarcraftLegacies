@@ -1,0 +1,16 @@
+{
+  "Left": -27552,
+  "Bottom": -9312,
+  "Right": -27424,
+  "Top": -9184,
+  "Name": "CthunSummon",
+  "CreationNumber": 490,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

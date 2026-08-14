@@ -1,0 +1,16 @@
+{
+  "Left": 3904,
+  "Bottom": -13440,
+  "Right": 3936,
+  "Top": -13408,
+  "Name": "KulTarget",
+  "CreationNumber": 463,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

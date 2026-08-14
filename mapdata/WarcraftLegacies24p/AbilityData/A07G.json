@@ -1,0 +1,18 @@
+{
+  "OldId": "ACat",
+  "NewId": "A07G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Legion)"
+    }
+  ]
+}

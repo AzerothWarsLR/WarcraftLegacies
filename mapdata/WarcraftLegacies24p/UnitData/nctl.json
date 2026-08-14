@@ -1,0 +1,111 @@
+{
+  "OldId": "nctl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,Aeat,Aro1,Atol"
+    },
+    {
+      "Id": "ubld",
+      "Value": 120
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "ua2b",
+      "Value": 50
+    },
+    {
+      "Id": "ugol",
+      "Value": 34
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "ulum",
+      "Value": 185
+    },
+    {
+      "Id": "ulur",
+      "Value": 200
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 6
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "Renb"
+    },
+    {
+      "Id": "umvs",
+      "Value": 80
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o000"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo,Renb"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    }
+  ]
+}

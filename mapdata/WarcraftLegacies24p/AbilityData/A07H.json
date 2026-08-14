@@ -1,0 +1,48 @@
+{
+  "OldId": "AId1",
+  "NewId": "A07H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Sentinels-Priestess)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Priestess Weapon"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Moonstaffv2.mdx"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

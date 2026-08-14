@@ -1,0 +1,52 @@
+{
+  "OldId": "oeye",
+  "NewId": "o00W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Adt1,Aeth"
+    },
+    {
+      "Id": "usin",
+      "Value": 1800
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneEye.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Pink - Witch Doctor)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\orc\\WatcherWard\\WatcherWard.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Watcher\u0027s Eye"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "OldId": "Aivs",
+  "NewId": "A0R8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Invisibility (Dark Green - Conjurer)"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "OldId": "Assk",
+  "NewId": "A0M5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Naga Elites)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Hardened Scales"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hardened Scales"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASReptilesHand.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA0M5,DataC1\u003E damage. Attacks cannot be reduced below \u003CA0M5,DataB1\u003E damage."
+    }
+  ]
+}

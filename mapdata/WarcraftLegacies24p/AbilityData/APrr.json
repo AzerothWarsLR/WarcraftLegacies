@@ -1,0 +1,14 @@
+{
+  "OldId": "APrr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,dead,friend,ground,nonsapper"
+    }
+  ]
+}

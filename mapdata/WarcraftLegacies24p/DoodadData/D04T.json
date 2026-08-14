@@ -1,0 +1,38 @@
+{
+  "OldId": "DOtc",
+  "NewId": "D04T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "buildings\\other\\ChieftainHut\\ChieftainHut.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Draenei Hut 2"
+    },
+    {
+      "Id": "donw",
+      "Value": 1
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

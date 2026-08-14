@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "NewId": "R00U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: The Blue Dragonflight"
+    }
+  ]
+}

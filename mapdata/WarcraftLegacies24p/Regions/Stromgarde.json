@@ -1,0 +1,16 @@
+{
+  "Left": 12896,
+  "Bottom": 448,
+  "Right": 15264,
+  "Top": 2048,
+  "Name": "Stromgarde",
+  "CreationNumber": 159,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

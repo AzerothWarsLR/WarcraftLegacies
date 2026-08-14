@@ -1,0 +1,140 @@
+{
+  "OldId": "Hkal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A04H,A0FD,A0WH,A0FA"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua2r",
+      "Value": 600
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04Q"
+    },
+    {
+      "Id": "uwu2",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0IP,AInv,Asph"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Quel\u0027thalas)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SerpentWardMissile\\SerpentWardMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Kael\u0027thas Sunstrider"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Kael\u0027thas Sunstrider"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Resurgent Flame Strike, Mass Banish, Verdant Spheres, Siphoning Ritual|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "Aivs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,neutral,organic"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Unused?)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

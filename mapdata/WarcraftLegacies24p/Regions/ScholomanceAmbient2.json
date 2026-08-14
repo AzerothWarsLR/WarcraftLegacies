@@ -1,0 +1,16 @@
+{
+  "Left": 12128,
+  "Bottom": 5440,
+  "Right": 16224,
+  "Top": 7072,
+  "Name": "ScholomanceAmbient2",
+  "CreationNumber": 326,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

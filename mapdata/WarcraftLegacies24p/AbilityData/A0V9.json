@@ -1,0 +1,170 @@
+{
+  "OldId": "AEer",
+  "NewId": "A0V9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(N\u0027zoth"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn |cffffcc00Q|r Entangling Roots - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Causes roots to burst from the depths, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - \u003CAEer,DataA1\u003E damage per second for 5 seconds. |n|cffffcc00Level 2|r - \u003CAEer,DataA2\u003E damage per second for 6 seconds. |n|cffffcc00Level 3|r - \u003CAEer,DataA3\u003E damage per second for 7 seconds.|n|cffffcc00Level 4|r - \u003CAEer,DataA4\u003E damage per second for 8 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Entangling Roots (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Entangling Roots (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Entangling Roots (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Entangling Roots (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes roots to burst from the depths, immobilizing and disarming a target enemy unit for 5 seconds, and dealing \u003CAEer,DataA1\u003E damage per second."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes roots to burst from the depths, immobilizing and disarming a target enemy unit for 6 seconds, and dealing \u003CAEer,DataA2\u003E damage per second."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes roots to burst from the depths, immobilizing and disarming a target enemy unit for 7 seconds, and dealing \u003CAEer,DataA3\u003E damage per second."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes roots to burst from the depths, immobilizing and disarming a target enemy unit for 8 seconds, and dealing \u003CAEer,DataA4\u003E damage per second."
+    }
+  ]
+}

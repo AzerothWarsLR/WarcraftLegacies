@@ -1,0 +1,16 @@
+{
+  "Left": 17600,
+  "Bottom": -19232,
+  "Right": 18016,
+  "Top": -18912,
+  "Name": "Dark Portal Entrance 2",
+  "CreationNumber": 121,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

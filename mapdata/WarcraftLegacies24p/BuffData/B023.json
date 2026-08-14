@@ -1,0 +1,19 @@
+{
+  "OldId": "BNba",
+  "NewId": "B023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Living Missile"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was hit by a Living Missile; if it dies"
+    }
+  ]
+}

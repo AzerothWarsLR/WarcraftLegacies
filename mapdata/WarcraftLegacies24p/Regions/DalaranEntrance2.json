@@ -1,0 +1,16 @@
+{
+  "Left": -11968,
+  "Bottom": 22880,
+  "Right": -11616,
+  "Top": 23104,
+  "Name": "DalaranEntrance2",
+  "CreationNumber": 51,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "BOae",
+  "NewId": "B03J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_RuneRage.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Diligence Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This units attack rate is increased."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Diligence Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

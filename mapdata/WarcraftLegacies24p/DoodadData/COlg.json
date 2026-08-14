@@ -1,0 +1,38 @@
+{
+  "OldId": "COlg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmar",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Log Straight (Felwood)"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

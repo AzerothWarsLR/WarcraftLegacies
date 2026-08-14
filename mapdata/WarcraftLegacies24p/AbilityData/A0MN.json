@@ -1,0 +1,46 @@
+{
+  "OldId": "Ahlh",
+  "NewId": "A0MN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit carries Fuel instead of Mana. |n|nIt will not regenerate it over time, use Fuel Transport Vehicules to refuel your units.|n|nAll collected Oil is accumulated at your Oil Supply in Kezan. "
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases the rate at which this unit gathers lumber."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASOil.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Oil Unit"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Oil Unit"
+    }
+  ]
+}

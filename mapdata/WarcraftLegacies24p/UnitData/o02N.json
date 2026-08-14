@@ -1,0 +1,146 @@
+{
+  "OldId": "owyv",
+  "NewId": "o02N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 12
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 865
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rovs,Rguv"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Atru,A0Y3"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R06A"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(cthun)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Aerial warriors of the Silithid.|n|cfff5962dAbilities:|R Envenomed Dart|n |n|cff99b4d1Can only train 24.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Silithid Wasp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Silithid Wasp"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDuneCrawler.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Drone.mdl"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BristleBackMissile\\BristleBackMissile.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "FacelessOne"
+    }
+  ]
+}

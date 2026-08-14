@@ -1,0 +1,24 @@
+{
+  "OldId": "BUau",
+  "NewId": "B01O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFreezeField.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Hypothermic Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Hypothermic Aura; it has reduced movement speed and is losing hit points over time."
+    }
+  ]
+}

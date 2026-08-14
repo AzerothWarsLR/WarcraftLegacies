@@ -6,6 +6,7 @@ using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
+using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -94,7 +95,8 @@ public sealed class QuestPlague : QuestData
       );
     }
 
-    if (completingFaction.TryGetPowerByName(Loc.Get("Cult Spies"), out var spiesPower))
+    var spiesPower = completingFaction.GetPowerByType<PlayerVisionPower>();
+    if (spiesPower != null)
     {
       completingFaction.RemovePower(spiesPower);
     }

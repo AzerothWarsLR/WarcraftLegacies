@@ -1,0 +1,17 @@
+{
+  "OldId": "nahy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    }
+  ]
+}

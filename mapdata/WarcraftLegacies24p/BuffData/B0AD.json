@@ -1,0 +1,24 @@
+{
+  "OldId": "BIcb",
+  "NewId": "B0AD",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Serrated Bite"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was hit by a Serrated Bite; its armor is temporarily reduced."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    }
+  ]
+}

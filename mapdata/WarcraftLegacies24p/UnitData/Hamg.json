@@ -1,0 +1,27 @@
+{
+  "OldId": "Hamg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 2200
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AHbz,AHab,AHmt"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0L8,AInv"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Conjurus Rex"
+    }
+  ]
+}

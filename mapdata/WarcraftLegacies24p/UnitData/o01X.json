@@ -1,0 +1,80 @@
+{
+  "OldId": "osp1",
+  "NewId": "o01X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0LD"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 85
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "utc1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfCaptureFlag.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Light Blue - Shandris)(Level 4)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\NightElfCaptureFlag\\NightElfCaptureFlag.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Sentinel Standard"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.55
+    }
+  ]
+}

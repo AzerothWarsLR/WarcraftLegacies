@@ -1,0 +1,16 @@
+{
+  "Left": -27840,
+  "Bottom": 23232,
+  "Right": -27712,
+  "Top": 23840,
+  "Name": "AethneumTombExit",
+  "CreationNumber": 229,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

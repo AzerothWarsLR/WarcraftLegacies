@@ -1,0 +1,29 @@
+{
+  "OldId": "BNht",
+  "NewId": "B08K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThorns.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Nature Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Nature Aura; it has reduced movement speed and attack rate."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+    }
+  ]
+}

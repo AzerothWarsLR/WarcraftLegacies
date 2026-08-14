@@ -1,0 +1,42 @@
+{
+  "OldId": "ngrk",
+  "NewId": "n02H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 10
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "uhpm",
+      "Value": 540
+    },
+    {
+      "Id": "ulev",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Small Crystalline Golem"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -18816,
+  "Bottom": 4032,
+  "Right": -18784,
+  "Top": 4064,
+  "Name": "IllidanMovement1",
+  "CreationNumber": 369,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

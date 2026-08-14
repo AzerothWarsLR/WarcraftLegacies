@@ -1,0 +1,23 @@
+{
+  "OldId": "Andt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Neutral - Goblin Laboratoy)"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00R|r) Reveal"
+    }
+  ]
+}

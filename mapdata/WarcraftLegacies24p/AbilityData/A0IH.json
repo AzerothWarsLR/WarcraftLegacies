@@ -1,0 +1,19 @@
+{
+  "OldId": "Aspi",
+  "NewId": "A0IH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(dwarf Keep)"
+    }
+  ]
+}

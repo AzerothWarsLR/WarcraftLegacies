@@ -1,0 +1,14 @@
+{
+  "OldId": "Aps2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Pos1",
+      "Value": 4
+    }
+  ]
+}

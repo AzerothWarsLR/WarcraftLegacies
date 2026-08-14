@@ -1,0 +1,16 @@
+{
+  "Left": -20864,
+  "Bottom": 4576,
+  "Right": -20256,
+  "Top": 5216,
+  "Name": "West of Kalimdor",
+  "CreationNumber": 183,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

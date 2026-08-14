@@ -1,0 +1,16 @@
+{
+  "Left": -10656,
+  "Bottom": 16896,
+  "Right": -8704,
+  "Top": 18272,
+  "Name": "Coldarra",
+  "CreationNumber": 57,
+  "WeatherType": 1936477779,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

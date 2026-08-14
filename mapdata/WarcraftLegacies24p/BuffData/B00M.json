@@ -1,0 +1,34 @@
+{
+  "OldId": "BNab",
+  "NewId": "B00M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFragmentationBombs.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Grenade"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Grenade; it has reduced movement speed and will take damage over time."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Grenade"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Environment\\NightElfBuildingFire\\ElfLargeBuildingFire1.mdl"
+    }
+  ]
+}

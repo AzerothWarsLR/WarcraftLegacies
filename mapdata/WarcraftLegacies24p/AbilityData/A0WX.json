@@ -1,0 +1,431 @@
+{
+  "OldId": "ACss",
+  "NewId": "A0WX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12.1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Esh4",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Esh4",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Esh4",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 220
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AA"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AA"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AA"
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12.1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12.1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12.1
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 140
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 160
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral"
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AA"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Jergosh, Warsong)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Curse of Flame (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Engulfs an enemy in searing flame, dealing 75 initial damage, and 15 damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The poison slows attack rate and movement speed by 50%. Lasts 12(3) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Curse of Flame (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Curse of Flame (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Curse of Flame (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Engulfs an enemy in searing flame, dealing 110 initial damage, and 20 damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The poison slows attack rate and movement speed by 50%. Lasts 12(3) seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Engulfs an enemy in searing flame, dealing 150 initial damage, and 25 damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The poison slows attack rate and movement speed by 50%. Lasts 12(3) seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Engulfs an enemy in searing flame, dealing 250 initial damage, and 25 damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The poison slows attack rate and movement speed by 50%. Lasts 12(3) seconds."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImmolationOn.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Curse of Flame"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNImmolationOn.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Curse of Flame - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Engulfs an enemy unit in demonic flame.|n|n|cffffcc00Level 1|r - Deals \u003CA0W9,DataA1\u003E initial damage, and \u003CA0W9,Cool1\u003E damage every \u003CA0W9,Cast1\u003E seconds for \u003CA0W9,Dur1\u003E seconds. Slows attack rate and movement speed.|n|cffffcc00Level 2|r - Deals \u003CA0W9,DataA2\u003E initial damage, and \u003CA0W9,Cool2\u003E damage every \u003CA0W9,Cast2\u003E seconds for \u003CA0W9,Dur2\u003E seconds. Slows attack rate and movement speed.|n|cffffcc00Level 3|r - Deals \u003CA0W9,DataA3\u003E initial damage, and \u003CA0W9,Cool3\u003E damage every \u003CA0W9,Cast3\u003E seconds for \u003CA0W9,Dur3\u003E seconds. Slows attack rate and movement speed.|n|cffffcc00Level 4|r - Deals \u003CA0W9,DataA4\u003E initial damage, and \u003CA0W9,Cool4\u003E damage every \u003CA0W9,Cast4\u003E seconds for \u003CA0W9,Dur4\u003E seconds. Slows attack rate and movement speed."
+    }
+  ]
+}

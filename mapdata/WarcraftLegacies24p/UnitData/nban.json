@@ -1,0 +1,26 @@
+{
+  "OldId": "nban",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 440
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    }
+  ]
+}

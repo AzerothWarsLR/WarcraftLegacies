@@ -1,0 +1,230 @@
+{
+  "OldId": "nba2",
+  "NewId": "n006",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KW,A09W,A0KR,A0KP,A0KM,A0KL,Ault,ACsk"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua2d",
+      "Value": 2
+    },
+    {
+      "Id": "ua2b",
+      "Value": 75
+    },
+    {
+      "Id": "ua1f",
+      "Value": 100
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 150
+    },
+    {
+      "Id": "umpm",
+      "Value": 150
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 110
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "uwu1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,structure"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R002,Reuv,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 2
+    },
+    {
+      "Id": "ucs2",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.81
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.59
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua2z",
+      "Value": 10000
+    },
+    {
+      "Id": "umh2",
+      "Value": 1
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.81
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.59
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurnedAncient.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Brown - Fandral Summon)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_BurnedAncient.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Charred Ancient"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Charred Ancient"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "The product of a very insidious druid spell.|n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "TreeOfLife"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "uble",
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

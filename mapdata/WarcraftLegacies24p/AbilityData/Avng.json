@@ -1,0 +1,91 @@
+{
+  "OldId": "Avng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Rai3",
+      "Type": 3,
+      "Value": "e00I"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ucb5",
+      "Value": 24
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ucb6",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R02X"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "dead,ground"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spirit of Vengeance - |cffffcc00(W)|r"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises an feral spirit from a corpse. Lasts \u003CAvng,Dur1\u003E seconds or until the avatar dies."
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    }
+  ]
+}

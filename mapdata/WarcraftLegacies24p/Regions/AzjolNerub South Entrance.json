@@ -1,0 +1,16 @@
+{
+  "Left": -3456,
+  "Bottom": 17696,
+  "Right": -3136,
+  "Top": 17856,
+  "Name": "AzjolNerub South Entrance",
+  "CreationNumber": 20,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

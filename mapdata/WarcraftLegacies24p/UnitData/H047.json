@@ -1,0 +1,200 @@
+{
+  "OldId": "Huth",
+  "NewId": "H047",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 30
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "ugol",
+      "Value": 5
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A066,A07R,Aamk,AUin,AUcs"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 125
+    },
+    {
+      "Id": "uint",
+      "Value": 30
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 120
+    },
+    {
+      "Id": "urtm",
+      "Value": 10
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04J,R04T,R03S"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 5
+    },
+    {
+      "Id": "ustr",
+      "Value": 30
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroXaviusSatyr.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Xavius"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion Vassal)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SatyrHeadhunter.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lord of the Satyrs"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Xavius"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Xavius"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\SSHHeroXaviusSatyr.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Choose Vassal: Xavius"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff0000You will lose your current faction and join the Legion as a new small 1 hero faction|r|n|nCruel Hero, adept at destroying opponents. Can train Satyr Warriors, Tricksters and Soul Stealer. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Satyr"
+    }
+  ]
+}

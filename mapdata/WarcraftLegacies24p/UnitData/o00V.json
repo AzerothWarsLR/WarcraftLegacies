@@ -1,0 +1,210 @@
+{
+  "OldId": "ofrt",
+  "NewId": "o00V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S00I,Argl"
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 15
+    },
+    {
+      "Id": "ugol",
+      "Value": 105
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "ulum",
+      "Value": 300
+    },
+    {
+      "Id": "ulur",
+      "Value": 120
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Simple.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upri",
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o04E,o04A"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013,Renb,R064,Rosp,Rgfo"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 99
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 1
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 700
+    },
+    {
+      "Id": "ua1r",
+      "Value": 2000
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "ground,mechanical"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dazar\u0027alor"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\TrollBonecaster_Missile.mdl"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

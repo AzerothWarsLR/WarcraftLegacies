@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Artifacts;
 using MacroTools.Commands;
-using MacroTools.Quests;
 using WarcraftLegacies.Source.Cheats;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -13,14 +12,11 @@ public static class CheatSetup
     CommandManager.Register(new CheatAddSpell());
     CommandManager.Register(new CheatResearchLevel());
     CommandManager.Register(new CheatBuild());
-    CommandManager.Register(new CheatQuestProgress("complete", QuestProgress.Complete));
-    CommandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
-    CommandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
-    CommandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
-    CommandManager.Register(new CheatControl("control", true));
-    CommandManager.Register(new CheatControl("uncontrol", false));
     CommandManager.Register(new CheatDestroy());
+    CommandManager.Register(new CheatHelp());
     CommandManager.Register(new CheatFaction());
+    CommandManager.Register(new CheatPower());
+    CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());
     CommandManager.Register(new CheatGold());
@@ -34,9 +30,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatRemove());
     CommandManager.Register(new CheatResearchLevel());
     CommandManager.Register(new CheatSetResearchLevel());
-    CommandManager.Register(new CheatShowQuestNames());
     CommandManager.Register(new CheatSpawn());
-    CommandManager.Register(new CheatTeam());
     CommandManager.Register(new CheatTele());
     CommandManager.Register(new CheatTime());
     CommandManager.Register(new CheatVision());
@@ -57,7 +51,6 @@ public static class CheatSetup
     }));
     CommandManager.Register(new CheatGetWaygateDestination());
     CommandManager.Register(new CheatPause());
-    CommandManager.Register(new CheatRemovePower());
     CommandManager.Register(new CheatLimit());
     CommandManager.Register(new CheatForceWin());
     TestMode.Setup();

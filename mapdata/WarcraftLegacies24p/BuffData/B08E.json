@@ -1,0 +1,19 @@
+{
+  "OldId": "BHwe",
+  "NewId": "B08E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLavaSpawn.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Fire Elemental"
+    }
+  ]
+}

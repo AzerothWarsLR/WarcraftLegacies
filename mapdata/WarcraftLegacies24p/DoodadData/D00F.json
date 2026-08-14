@@ -1,0 +1,90 @@
+{
+  "OldId": "YOss",
+  "NewId": "D00F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_Gateway_White.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Teleporter Circle Indicator"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "Y,X,J,*"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "dcat",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "dshd",
+      "Value": 0
+    },
+    {
+      "Id": "dflt",
+      "Value": 1
+    },
+    {
+      "Id": "danf",
+      "Value": 1
+    },
+    {
+      "Id": "dvar",
+      "Value": 4
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 175
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 4,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 175
+    }
+  ]
+}

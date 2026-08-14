@@ -126,8 +126,6 @@ internal sealed class Stormbolt : Spell
         return;
       }
 
-      effect.Create(EffectModel, MissileX, MissileY).Dispose();
-
       DummyCasterManager
         .GetGlobalDummyCaster()
         .CastUnit(Caster, StunAbilityId, ORDER_THUNDERBOLT, Level, unit, DummyCastOriginType.Target);

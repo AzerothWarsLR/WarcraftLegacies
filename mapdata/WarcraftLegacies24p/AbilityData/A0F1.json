@@ -1,0 +1,23 @@
+{
+  "OldId": "Aspo",
+  "NewId": "A0F1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Beserker)"
+    }
+  ]
+}

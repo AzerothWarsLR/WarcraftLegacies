@@ -1,0 +1,16 @@
+{
+  "Left": -8832,
+  "Bottom": -28992,
+  "Right": -8768,
+  "Top": -28928,
+  "Name": "Region DB",
+  "CreationNumber": 362,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 255,
+    "A": 255
+  }
+}

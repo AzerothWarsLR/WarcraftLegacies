@@ -1,0 +1,16 @@
+{
+  "Left": -20832,
+  "Bottom": 9664,
+  "Right": -20608,
+  "Top": 9856,
+  "Name": "Bloodcurse",
+  "CreationNumber": 518,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

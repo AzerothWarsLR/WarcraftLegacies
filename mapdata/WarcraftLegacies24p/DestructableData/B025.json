@@ -1,0 +1,48 @@
+{
+  "OldId": "LTrc",
+  "NewId": "B025",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Islands Blockade)"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_WaterRapids.mdl"
+    },
+    {
+      "Id": "bvar",
+      "Value": 1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Whirlpool Blockers"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    }
+  ]
+}

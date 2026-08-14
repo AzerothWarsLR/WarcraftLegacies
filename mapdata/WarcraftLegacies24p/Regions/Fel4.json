@@ -1,0 +1,16 @@
+{
+  "Left": 12736,
+  "Bottom": -10880,
+  "Right": 12800,
+  "Top": -10816,
+  "Name": "Fel4",
+  "CreationNumber": 270,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

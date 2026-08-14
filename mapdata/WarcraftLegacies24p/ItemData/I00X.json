@@ -1,0 +1,86 @@
+{
+  "OldId": "ward",
+  "NewId": "I00X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0R0"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "Amls"
+    },
+    {
+      "Id": "igol",
+      "Value": 80
+    },
+    {
+      "Id": "iper",
+      "Value": 1
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iuse",
+      "Value": 3
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isst",
+      "Value": 720
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinWorker.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Summons Engineer"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Summon Engineer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Summon Engineer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Summons Engineer"
+    }
+  ]
+}

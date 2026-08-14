@@ -1,0 +1,22 @@
+{
+  "OldId": "Agyb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Khaz-Modan-GyroCopter)"
+    }
+  ]
+}

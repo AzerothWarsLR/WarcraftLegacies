@@ -1,0 +1,109 @@
+{
+  "OldId": "AHab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Zuluhed-Jaina-Malfurion-Vol\u0027Jin-Jergosh)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants 0.8 per second.|n|cffffcc00Level 2|r - Grants 1.10 mana per second. |n|cffffcc00Level 3|r - Grants 1.40 mana per second. |n|cffffcc00Level 4|r - Grants 1.70 mana per second."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Brilliance Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives an additional 0.8 mana regen per second to nearby units."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives an additional 1.1 mana regen per second to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives an additional 1.4 mana regen per second to nearby units."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives an additional 1.7 mana regen per second to nearby units."
+    }
+  ]
+}

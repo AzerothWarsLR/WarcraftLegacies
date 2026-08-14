@@ -1,0 +1,28 @@
+{
+  "OldId": "LTlt",
+  "NewId": "B006",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bonc",
+      "Value": 1
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Backwards tree"
+    }
+  ]
+}

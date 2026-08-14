@@ -1,0 +1,16 @@
+{
+  "Left": 3776,
+  "Bottom": -11136,
+  "Right": 4096,
+  "Top": -10912,
+  "Name": "KulAttack",
+  "CreationNumber": 462,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

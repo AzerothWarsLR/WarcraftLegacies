@@ -1,0 +1,17 @@
+{
+  "OldId": "nhfp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    }
+  ]
+}

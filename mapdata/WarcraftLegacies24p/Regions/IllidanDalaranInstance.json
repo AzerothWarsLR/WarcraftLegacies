@@ -1,0 +1,16 @@
+{
+  "Left": 16768,
+  "Bottom": -27584,
+  "Right": 22528,
+  "Top": -24384,
+  "Name": "IllidanDalaranInstance",
+  "CreationNumber": 398,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

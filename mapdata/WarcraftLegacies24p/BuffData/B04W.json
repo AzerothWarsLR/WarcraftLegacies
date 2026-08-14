@@ -1,0 +1,19 @@
+{
+  "OldId": "Brai",
+  "NewId": "B04W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSatyr.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Curse of the Satyr"
+    }
+  ]
+}

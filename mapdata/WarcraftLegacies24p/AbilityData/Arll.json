@@ -1,0 +1,19 @@
+{
+  "OldId": "Arll",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ihpr",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Health Stone)"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "OldId": "XTvt",
+  "NewId": "B003",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bcat",
+      "Type": 3,
+      "Value": "P"
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bvcb",
+      "Value": 25
+    },
+    {
+      "Id": "bvcg",
+      "Value": 5
+    },
+    {
+      "Id": "bvcr",
+      "Value": 25
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding1.mdl"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "// Destructibles: B003 (Karazhan), Name (Name)\r\nKarazhan"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Unflyable.tga"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "ncaw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 80
+    }
+  ]
+}

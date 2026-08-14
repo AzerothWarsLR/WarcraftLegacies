@@ -1,0 +1,16 @@
+{
+  "Left": -8576,
+  "Bottom": -10208,
+  "Right": -5056,
+  "Top": -4064,
+  "Name": "EchoIsleAmbient",
+  "CreationNumber": 303,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

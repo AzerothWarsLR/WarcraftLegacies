@@ -1,0 +1,19 @@
+{
+  "OldId": "AImz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iman",
+      "Value": 50
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Item Mana Bonus (50)"
+    }
+  ]
+}

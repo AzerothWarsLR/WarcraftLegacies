@@ -1,0 +1,55 @@
+{
+  "OldId": "npfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 11
+    },
+    {
+      "Id": "ugor",
+      "Value": 11
+    },
+    {
+      "Id": "usma",
+      "Value": 3
+    },
+    {
+      "Id": "usrg",
+      "Value": 10
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train |cffffcc00F|rel Beast"
+    }
+  ]
+}

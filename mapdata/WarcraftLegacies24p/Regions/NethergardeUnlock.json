@@ -1,0 +1,16 @@
+{
+  "Left": 17472,
+  "Bottom": -18400,
+  "Right": 18880,
+  "Top": -16960,
+  "Name": "NethergardeUnlock",
+  "CreationNumber": 452,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

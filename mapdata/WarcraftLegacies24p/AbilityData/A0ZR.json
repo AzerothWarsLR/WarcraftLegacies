@@ -1,0 +1,27 @@
+{
+  "OldId": "AIsa",
+  "NewId": "A0ZR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ispi",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bloodhoof Totem Speed"
+    }
+  ]
+}

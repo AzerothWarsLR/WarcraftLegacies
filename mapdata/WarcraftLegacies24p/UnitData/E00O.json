@@ -1,0 +1,181 @@
+{
+  "OldId": "Eill",
+  "NewId": "E00O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "ugol",
+      "Value": 5
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0WE,A06J,Aamk,AHad,A08T"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "enemies,ground,vulnerable"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 5
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinSword.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Goodchild"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(garithos)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\PaladinSword.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "High Commander"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Michael Goodchilde"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Goodchild"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.27
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinSword.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Goodchild"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at bolstering troops around him.|n|cfff5962dCan Learn:|R Consecration, Silence, Devotion Aura, Call Reinforcements|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ".mdl"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "AId1",
+  "NewId": "A00F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Attachment)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Immolation effect obelisk"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\ImmolationBlueTarget.mdx"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

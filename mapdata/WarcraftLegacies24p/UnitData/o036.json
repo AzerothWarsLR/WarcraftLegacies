@@ -1,0 +1,43 @@
+{
+  "OldId": "otot",
+  "NewId": "o036",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aeth"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dwarf)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Stun Mine"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "OldId": "Rupc",
+  "NewId": "R01X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Aap1"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "Apts"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Id": "gglb",
+      "Value": 250
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Scourge)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Epidemic"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Epidemic"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing their movent speed by 35 and increasing Disease Cloud\u0027s duration by 30 seconds."
+    }
+  ]
+}

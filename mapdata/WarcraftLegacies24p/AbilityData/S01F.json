@@ -1,0 +1,25 @@
+{
+  "OldId": "Sch3",
+  "NewId": "S01F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Car1",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Cargo Hold (Steam Tank)"
+    }
+  ]
+}

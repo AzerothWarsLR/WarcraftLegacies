@@ -1,0 +1,46 @@
+{
+  "OldId": "sman",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 20
+    },
+    {
+      "Id": "ipri",
+      "Value": 75
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "isto",
+      "Value": 2
+    },
+    {
+      "Id": "istr",
+      "Value": 200
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    }
+  ]
+}

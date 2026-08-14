@@ -1,0 +1,25 @@
+{
+  "OldId": "AIdf",
+  "NewId": "A0OH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Iobu",
+      "Type": 3,
+      "Value": "A0OI"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Item Attack Nature Attack bonus"
+    }
+  ]
+}

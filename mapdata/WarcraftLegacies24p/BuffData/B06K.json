@@ -1,0 +1,29 @@
+{
+  "OldId": "BUim",
+  "NewId": "B06K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Fell Rift"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UDeathSmall\\UDeathSmall.mdl"
+    },
+    {
+      "Id": "feft",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\StormBolt\\StormBoltTarget.mdl"
+    }
+  ]
+}

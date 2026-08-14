@@ -1,0 +1,105 @@
+{
+  "OldId": "Hpb1",
+  "NewId": "H08G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AHre,A0Z1,AOae,AHhb,Aamk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scarlet Crusader Lord"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Saiden Dathrohan"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\saidandathrohan.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at bolstering troops around him.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Shout of the Crusader, Endurance Aura, Resurrection|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Scarlet)"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Saiden"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.97
+    }
+  ]
+}

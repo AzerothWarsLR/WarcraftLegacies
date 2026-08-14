@@ -1,0 +1,16 @@
+{
+  "Left": 14880,
+  "Bottom": 192,
+  "Right": 15072,
+  "Top": 416,
+  "Name": "West Thandol",
+  "CreationNumber": 53,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

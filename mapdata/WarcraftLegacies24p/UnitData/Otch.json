@@ -1,0 +1,36 @@
+{
+  "OldId": "Otch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,AInv"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Yak"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    }
+  ]
+}

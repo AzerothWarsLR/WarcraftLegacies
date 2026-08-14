@@ -1,0 +1,160 @@
+{
+  "OldId": "otau",
+  "NewId": "o02K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0NQ,A099,A016,Aion"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 13
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 33
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "ugor",
+      "Value": 28
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1545
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02N"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00W,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 125
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(warsong)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mounted warriors of the Vilebranch tribe.|n|cfff5962dAbilities:|R Mass Anti-magic Shell, Pulverize, Toughened Hides|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrollBearRider.BLP"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ForestTrollBearRider.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bear Rider"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bear Rider"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "DruidoftheClawMorphed"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    }
+  ]
+}

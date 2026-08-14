@@ -1,0 +1,51 @@
+{
+  "OldId": "ANpi",
+  "NewId": "A01M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,nonancient,ward"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(1000 range)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Anti Portal Blocking (units)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Burns nearby enemy units for 5 points of damage per second and 1 mana per second."
+    }
+  ]
+}

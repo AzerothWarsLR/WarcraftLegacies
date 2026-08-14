@@ -1,0 +1,49 @@
+{
+  "OldId": "Advm",
+  "NewId": "A0B3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 19
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "dvm5",
+      "Type": 2,
+      "Value": 380
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Brown - The Chosen One. Blue - Doom Guard,Kazzak)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0B3,DataA1\u003E hit points and \u003CA0B3,DataB1\u003E mana. |n|cffffcc00Deals \u003CA0B3,DataE1\u003E damage to summoned units.|r"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

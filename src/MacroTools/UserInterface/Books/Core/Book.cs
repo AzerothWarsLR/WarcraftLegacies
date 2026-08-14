@@ -174,7 +174,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
         page.Visible = false;
       }
 
-      Pages.First().Visible = true;
+      Pages[0].Visible = true;
       _activePageIndex = 0;
       RefreshNavigationButtonVisiblity();
     }

@@ -1,0 +1,29 @@
+{
+  "OldId": "BHfs",
+  "NewId": "B07L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Desert Storm"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is in a Desert Storm"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl"
+    }
+  ]
+}

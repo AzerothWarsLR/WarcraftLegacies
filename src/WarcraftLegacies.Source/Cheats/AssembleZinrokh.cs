@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Commands;
 using MacroTools.Extensions;
@@ -31,7 +30,7 @@ public sealed class AssembleZinrokh : Command
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var selectedUnit = GlobalGroup.EnumSelectedUnits(commandUser).First();
+    var selectedUnit = GlobalGroup.EnumSelectedUnits(commandUser)[0];
     foreach (var artifact in _zinrokhFragments)
     {
       selectedUnit.AddItemSafe(artifact.Item);

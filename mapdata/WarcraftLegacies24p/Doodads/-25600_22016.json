@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1752452940,
+    "Variation": 0,
+    "Position": {
+      "X": -25988.098,
+      "Y": 22100.777,
+      "Z": -106.05865
+    },
+    "Rotation": 2.6703541,
+    "Scale": {
+      "X": 0.8939238,
+      "Y": 0.8939238,
+      "Z": 0.8939238
+    },
+    "SkinId": 1752452940,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 14906
+  },
+  {
+    "TypeId": 1935823450,
+    "Variation": 1,
+    "Position": {
+      "X": -25920,
+      "Y": 22016,
+      "Z": -63.5
+    },
+    "Rotation": 0.76794493,
+    "Scale": {
+      "X": 0.82364583,
+      "Y": 0.82364583,
+      "Z": 0.82364583
+    },
+    "SkinId": 1935823450,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 14896
+  },
+  {
+    "TypeId": 1886802010,
+    "Variation": 0,
+    "Position": {
+      "X": -25696,
+      "Y": 21856,
+      "Z": -41.875
+    },
+    "Rotation": 4.677483,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "SkinId": 1886802010,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 14876
+  },
+  {
+    "TypeId": 1886539610,
+    "Variation": 0,
+    "Position": {
+      "X": -25760,
+      "Y": 21920,
+      "Z": 12.390625
+    },
+    "Rotation": 5.672321,
+    "Scale": {
+      "X": 1.6307749,
+      "Y": 1.6307749,
+      "Z": 1.6307749
+    },
+    "SkinId": 1886539610,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 14757
+  },
+  {
+    "TypeId": 1886539610,
+    "Variation": 0,
+    "Position": {
+      "X": -25748.783,
+      "Y": 21776.857,
+      "Z": -1.7296786
+    },
+    "Rotation": 5.672321,
+    "Scale": {
+      "X": 0.8000001,
+      "Y": 0.8000001,
+      "Z": 1.7000003
+    },
+    "SkinId": 1886539610,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 14756
+  }
+]

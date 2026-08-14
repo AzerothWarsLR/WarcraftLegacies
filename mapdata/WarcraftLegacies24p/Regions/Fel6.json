@@ -1,0 +1,16 @@
+{
+  "Left": 17600,
+  "Bottom": -17632,
+  "Right": 17664,
+  "Top": -17568,
+  "Name": "Fel6",
+  "CreationNumber": 275,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

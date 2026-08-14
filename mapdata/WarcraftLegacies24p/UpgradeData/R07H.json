@@ -1,0 +1,26 @@
+{
+  "OldId": "Roch",
+  "NewId": "R07H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(naga)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Reach Feralas"
+    }
+  ]
+}

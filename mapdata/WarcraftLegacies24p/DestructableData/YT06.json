@@ -1,0 +1,18 @@
+{
+  "OldId": "YT06",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    }
+  ]
+}

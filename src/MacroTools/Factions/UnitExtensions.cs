@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UnitTypes;
 
@@ -33,13 +32,13 @@ public static class UnitExtensions
       throw new InvalidOperationException($"{whichUnit.Name} doesn't have any categories.");
     }
 
-    var firstCategory = unitType.Categories.First();
+    var firstCategory = unitType.Categories[0];
     if (!newFaction.TryGetObjectByCategory(firstCategory, out var newUnitTypes))
     {
       throw new InvalidOperationException($"{whichUnit.Name} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {firstCategory}.");
     }
 
-    var newUnitType = newUnitTypes.First();
+    var newUnitType = newUnitTypes[0];
     if (whichUnit.UnitType == newUnitType)
     {
       return whichUnit;

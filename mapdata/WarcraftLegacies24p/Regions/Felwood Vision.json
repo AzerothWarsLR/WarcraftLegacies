@@ -1,0 +1,16 @@
+{
+  "Left": -16224,
+  "Bottom": 5888,
+  "Right": -14560,
+  "Top": 7776,
+  "Name": "Felwood Vision",
+  "CreationNumber": 12,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

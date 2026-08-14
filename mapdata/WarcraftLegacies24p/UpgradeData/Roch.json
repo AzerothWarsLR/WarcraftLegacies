@@ -1,0 +1,48 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "owar"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "odkt"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "odkt"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rtma"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rtma"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rspi"
+    }
+  ]
+}

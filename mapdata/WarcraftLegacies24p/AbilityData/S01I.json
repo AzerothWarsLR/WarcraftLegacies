@@ -1,0 +1,35 @@
+{
+  "OldId": "Sca2",
+  "NewId": "S01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00B"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "h029"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Purple - Footmen to Veteran)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

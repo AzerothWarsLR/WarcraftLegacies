@@ -1,0 +1,17 @@
+{
+  "OldId": "now2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "umvs",
+      "Value": 320
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sentinels-Tyrande)"
+    }
+  ]
+}

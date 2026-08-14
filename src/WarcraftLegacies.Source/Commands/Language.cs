@@ -25,7 +25,7 @@ public sealed class Language : Command
 
   /// <inheritdoc />
   public override string Description =>
-    "Sets your language ('en'/'english', 'es'/'espanol'/'spanish', or 'zh'/'chinese').";
+    "Sets your language ('en'/'english' or 'es'/'espanol'/'spanish').";
 
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
@@ -35,20 +35,18 @@ public sealed class Language : Command
     {
       "en" or "english" or "ingles" or "inglés" => "en",
       "es" or "spanish" or "espanol" or "español" => "es",
-      "zh" or "chinese" or "chino" or "中文" => "zh",
       _ => null
     };
 
     if (languageCode is null)
     {
-      return "Invalid parameter. Please use 'en'/'english', 'es'/'espanol', or 'zh'/'chinese'.";
+      return "Invalid parameter. Please use 'en'/'english' or 'es'/'espanol'.";
     }
 
     commandUser.GetPlayerData().UpdatePlayerSetting("Language", languageCode);
     return languageCode switch
     {
       "es" => "Idioma cambiado a español.",
-      "zh" => "Language changed to Chinese.",
       _ => "Language changed to English."
     };
   }

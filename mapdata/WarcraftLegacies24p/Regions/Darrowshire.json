@@ -1,0 +1,16 @@
+{
+  "Left": 16096,
+  "Bottom": 7168,
+  "Right": 17600,
+  "Top": 8480,
+  "Name": "Darrowshire",
+  "CreationNumber": 150,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

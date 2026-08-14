@@ -1,0 +1,56 @@
+{
+  "OldId": "tkno",
+  "NewId": "I020",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Permanent"
+    },
+    {
+      "Id": "igol",
+      "Value": 350
+    },
+    {
+      "Id": "ihtp",
+      "Value": 999999
+    },
+    {
+      "Id": "ilum",
+      "Value": 1000
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpy.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Starts repairs on the Thandol Span bridge."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Thandol Span Repairs"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Repair the Thandol Span bridge"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Workers will start repairing the Thandol Span bridge. It will take them 60 seconds to finish repairing the bridge and making it safe so that it can\u0027t be destroyed in the future."
+    }
+  ]
+}

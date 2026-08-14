@@ -1,0 +1,16 @@
+{
+  "Left": 10976,
+  "Bottom": -16000,
+  "Right": 11456,
+  "Top": -15520,
+  "Name": "GoldrinnDuskwood",
+  "CreationNumber": 523,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "BNcg",
+  "NewId": "B097",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Portable Turret"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Portable Turret."
+    }
+  ]
+}

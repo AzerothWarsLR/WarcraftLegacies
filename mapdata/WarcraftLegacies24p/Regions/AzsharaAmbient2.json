@@ -1,0 +1,16 @@
+{
+  "Left": -8704,
+  "Bottom": 832,
+  "Right": -4352,
+  "Top": 6176,
+  "Name": "AzsharaAmbient2",
+  "CreationNumber": 301,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

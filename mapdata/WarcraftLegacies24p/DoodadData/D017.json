@@ -1,0 +1,69 @@
+{
+  "OldId": "NSrb",
+  "NewId": "D017",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Icecrown\\Terrain\\IceCrownWall0\\IceCrownWall02.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Dark Wall"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

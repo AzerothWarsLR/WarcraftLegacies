@@ -81,7 +81,7 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
   }
 
   /// <inheritdoc />
-  protected override FactionChoice GetDefaultChoice(player whichPlayer) => Choices.First();
+  protected override FactionChoice GetDefaultChoice(player whichPlayer) => Choices[0];
 
   /// <inheritdoc />
   protected override bool IsChoiceActive(player whichPlayer, FactionChoice choice) =>

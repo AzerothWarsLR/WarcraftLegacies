@@ -1,0 +1,16 @@
+{
+  "Left": 11712,
+  "Bottom": -3520,
+  "Right": 12096,
+  "Top": -2912,
+  "Name": "Dwarf group 1",
+  "CreationNumber": 296,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

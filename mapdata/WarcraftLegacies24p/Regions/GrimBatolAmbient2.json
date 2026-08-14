@@ -1,0 +1,16 @@
+{
+  "Left": 17952,
+  "Bottom": -7200,
+  "Right": 22080,
+  "Top": 736,
+  "Name": "GrimBatolAmbient2",
+  "CreationNumber": 359,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

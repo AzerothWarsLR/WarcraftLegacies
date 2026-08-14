@@ -1,0 +1,16 @@
+{
+  "Left": -19456,
+  "Bottom": 2624,
+  "Right": -17632,
+  "Top": 4640,
+  "Name": "IllidanWeather",
+  "CreationNumber": 364,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 212,
+    "G": 94,
+    "B": 25,
+    "A": 255
+  }
+}

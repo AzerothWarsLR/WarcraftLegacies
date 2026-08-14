@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Artifacts;
+using MacroTools.Extensions;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
@@ -52,10 +53,7 @@ public sealed class TitanForgeArtifact : Spell
 
   private bool TryTitanforgeArtifact(Artifact artifact)
   {
-    if (!UniqueTitanforgedAbilitiesByItemTypeId.TryGetValue(artifact.Item.TypeId, out var titanforgedAbility))
-    {
-      titanforgedAbility = DefaultTitanforgedAbility;
-    }
+    var titanforgedAbility = UniqueTitanforgedAbilitiesByItemTypeId.GetValueOrDefault(artifact.Item.TypeId, DefaultTitanforgedAbility);
 
     if (artifact.Item.GetAbility(titanforgedAbility) != null)
     {

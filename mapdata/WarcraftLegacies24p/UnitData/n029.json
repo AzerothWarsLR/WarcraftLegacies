@@ -1,0 +1,116 @@
+{
+  "OldId": "nsgn",
+  "NewId": "n029",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0G0,A0G1"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 15
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1725
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01O,Rhme,Rhar"
+    },
+    {
+      "Id": "umpi",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h06I"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Sea Giant"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Slow melee unit capable of devastating area of effect attacks.|n|cfff5962dAbilities:|R Pulverize|n|cfff5962dCan learn:|R Crushing Wave|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

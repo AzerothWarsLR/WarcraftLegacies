@@ -1,0 +1,34 @@
+{
+  "OldId": "BHfs",
+  "NewId": "B00V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_BlackPlague.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Nether Strike"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is in a Nether Strike"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "OldId": "ckng",
+  "NewId": "I00H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A03X"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R01W"
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "isst",
+      "Value": 800
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSulfuras.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Increases all stats."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Sulfuras, Hand of Ragnaros"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Sulfuras, Hand of Ragnaros"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases the Strength, Intelligence, and Agility of the Hero by 10 when wielded.|n|cffffcc00Lore|r|n|cffffdeadForged in the elemental planes of the Firelands, this immense hammer is deigned to be Ragnaros\u0027 greatest construction, spewing magma and carnage with every swing."
+    }
+  ]
+}

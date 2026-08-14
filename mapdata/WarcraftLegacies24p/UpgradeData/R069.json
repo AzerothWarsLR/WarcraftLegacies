@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "NewId": "R069",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Recruit the Dragonmaw Clan"
+    }
+  ]
+}

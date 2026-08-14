@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -24,7 +23,7 @@ public sealed class CheatPosition : Command
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
   {
-    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
+    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
     return $"{firstSelectedUnit.Name} is at position {firstSelectedUnit.X}, {firstSelectedUnit.Y}.";
   }
 }

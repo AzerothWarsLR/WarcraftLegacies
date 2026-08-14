@@ -1,0 +1,151 @@
+{
+  "OldId": "Ewar",
+  "NewId": "E01O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A083,A0FK,Aamk,A0MG,AEsh"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Apiv,AInv"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "usin",
+      "Value": 1600
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 275
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Lilian Voss"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Champion of the Uncrowned"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Champion of the Uncrowned.mdl"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(gilneas)"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Lilian"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Lilian"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLilianVoss.blp"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLilianVoss.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, adept at entering and escaping combat. Can learn Shadow Strike, Silence, Battle Experience, Fan of Knives. |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

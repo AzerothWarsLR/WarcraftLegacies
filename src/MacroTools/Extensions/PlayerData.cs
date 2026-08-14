@@ -51,6 +51,9 @@ public sealed class PlayerData
       case "ShowCaptions":
         PlayerSettings.ShowCaptions = value;
         break;
+      case nameof(PlayerSettings.SmartFollowEnabled):
+        PlayerSettings.SmartFollowEnabled = value;
+        break;
     }
     SaveManager.Save(PlayerSettings);
   }
@@ -324,7 +327,7 @@ public sealed class PlayerData
     }
   }
 
-  public int GetObjectLimit(int id) => _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
+  public int GetObjectLimit(int id) => _objectLimits.GetValueOrDefault(id);
 
   public void SetObjectLimit(int id, int limit)
   {

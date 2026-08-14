@@ -1,0 +1,109 @@
+{
+  "OldId": "BRrs",
+  "NewId": "D023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Rock Spires StoneTalon"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 4,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 5,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 6,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 7,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 8,
+      "Id": "dvb1",
+      "Value": 180
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 5,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 6,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 7,
+      "Id": "dvg1",
+      "Value": 180
+    },
+    {
+      "Variation": 8,
+      "Id": "dvg1",
+      "Value": 180
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "OldId": "Asds",
+  "NewId": "A0F2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Dda1",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Dda3",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Sds1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Sds6",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,structure,ward"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Deeprun Tram)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Self-Destroy"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Self-Destroy"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Destroys this unit to deal \u003CA0F2,DataB1\u003E damage to enemy units within a radius of \u003CA0F2,DataA1\u003E, and \u003CA0F2,DataD1\u003E damage to enemy units within a radius of \u003CA0F2,DataC1\u003E."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    }
+  ]
+}

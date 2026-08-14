@@ -1,0 +1,19 @@
+{
+  "OldId": "XNhs",
+  "NewId": "X00B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Earth\u0027s Grace (Effect)"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\ResourceItems\\ResourceEffectTarget.mdl"
+    }
+  ]
+}

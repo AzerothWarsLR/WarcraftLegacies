@@ -1,0 +1,16 @@
+{
+  "Left": -15712,
+  "Bottom": -20576,
+  "Right": -11552,
+  "Top": -15232,
+  "Name": "UldumAmbiance",
+  "CreationNumber": 132,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

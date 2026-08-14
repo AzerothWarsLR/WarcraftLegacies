@@ -1,0 +1,16 @@
+{
+  "Left": 8704,
+  "Bottom": -14816,
+  "Right": 13376,
+  "Top": -12704,
+  "Name": "ElwinForestAmbient",
+  "CreationNumber": 343,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

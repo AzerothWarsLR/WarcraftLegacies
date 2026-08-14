@@ -1,0 +1,34 @@
+{
+  "OldId": "BNdi",
+  "NewId": "B06O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Curse of the Woods"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been stricken with the Curse of the Woods; it cannot cast spells and will take 15 damage per second for 15 seconds. If the unit dies while under the effect"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Minion)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\EntanglingRoots\\EntanglingRootsTarget.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

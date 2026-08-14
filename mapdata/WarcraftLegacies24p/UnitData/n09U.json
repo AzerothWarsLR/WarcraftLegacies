@@ -1,0 +1,61 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n09U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "ubdg",
+      "Value": 0
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(New)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Dungeon\\Structures\\DungeonArchway45\\DungeonArchway45.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Maelstrom Pass"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

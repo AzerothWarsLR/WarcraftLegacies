@@ -1,0 +1,29 @@
+{
+  "OldId": "XHbz",
+  "NewId": "X005",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Cleansing Light (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
+    },
+    {
+      "Id": "fefs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

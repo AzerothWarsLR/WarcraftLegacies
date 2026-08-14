@@ -1,0 +1,24 @@
+{
+  "OldId": "Bclf",
+  "NewId": "B01E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Fog"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is covered in fog"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\CloudOfFog\\CloudOfFog.mdl"
+    }
+  ]
+}

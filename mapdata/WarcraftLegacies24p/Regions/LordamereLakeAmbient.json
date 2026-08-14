@@ -1,0 +1,16 @@
+{
+  "Left": 8320,
+  "Bottom": 5824,
+  "Right": 10368,
+  "Top": 7680,
+  "Name": "LordamereLakeAmbient",
+  "CreationNumber": 323,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}
