@@ -23,7 +23,7 @@ public sealed class VoteGroup
 
   public bool AllPlayersVoted()
   {
-    foreach (var activePlayer in WCSharp.Shared.Util.EnumeratePlayers())
+    foreach (var activePlayer in WCSharp.Shared.Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
     {
       if (_votesByPlayerSlot[GetPlayerId(activePlayer)] < 0)
       {
