@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MacroTools.UserInterface.Frames;
 using MacroTools.Utils;
 using WCSharp.Sync;
@@ -6,26 +6,6 @@ using Environment = MacroTools.Utils.Environment;
 
 namespace MacroTools.UserInterface.Voting;
 
-/// <summary>
-/// A row of buttons - one per <see cref="VoteOption"/> - that players click to vote, with a live vote-count
-/// label under each button. Multiple <see cref="VoteGroup"/>s can run concurrently on the same page under a
-/// single shared timer; each is only responsible for its own buttons and tally, not for display timing or
-/// pausing the game, which are the caller's responsibility.
-/// </summary>
-/// <remarks>
-/// <para>
-/// Custom frame click events only fire locally, on the clicking player's own client - they are not part of the
-/// synchronized simulation. Every vote is therefore broadcast to all clients explicitly via
-/// <see cref="SyncSystem"/> (a thin, typed wrapper around <c>BlzSendSyncData</c>) and stored in a fixed-size
-/// array indexed by player slot, so every client ends up running identical tally logic over identical data.
-/// </para>
-/// <para>
-/// Votes are deliberately kept in a plain array rather than a <see cref="System.Collections.Generic.Dictionary{TKey,TValue}"/>:
-/// enumeration order over a dictionary is not guaranteed to be identical across clients once transpiled to Lua,
-/// which would make tie-breaking a desync hazard. Iterating a fixed-size array in index order sidesteps that
-/// entirely.
-/// </para>
-/// </remarks>
 public sealed class VoteGroup
 {
   private readonly int _groupId;
@@ -35,26 +15,12 @@ public sealed class VoteGroup
   private Action<VoteSyncMessage>? _voteReceivedHandler;
   private bool _concluded;
 
-  /// <summary>
-  /// The total vertical space this group occupies, so callers can stack multiple groups on one panel.
-  /// </summary>
   public float Height { get; }
 
-  /// <summary>
-  /// The total horizontal space this group's button row occupies, so callers can size their panel to fit it.
-  /// </summary>
   public float Width { get; }
 
-  /// <summary>
-  /// The option that won this group's vote. Only set after <see cref="Conclude"/> has run.
-  /// </summary>
   public VoteOption? Winner { get; private set; }
 
-  /// <summary>
-  /// Whether every currently active player has already cast a vote in this group - lets a vote page (see
-  /// <see cref="VotePageTimer"/>) conclude the moment everyone's done instead of always waiting out its full
-  /// timer.
-  /// </summary>
   public bool AllPlayersVoted()
   {
     foreach (var activePlayer in WCSharp.Shared.Util.EnumeratePlayers())
@@ -68,11 +34,6 @@ public sealed class VoteGroup
     return true;
   }
 
-  /// <summary>
-  /// Builds the group's title, option buttons, and vote-count labels as children of <paramref name="parent"/>,
-  /// anchored at (<paramref name="x"/>, <paramref name="y"/>) from its top-left corner, and starts listening
-  /// for votes. The group is visible whenever <paramref name="parent"/> is visible.
-  /// </summary>
   public VoteGroup(Frame parent, int groupId, string title, VoteOption[] options, float x, float y,
     float buttonWidth, float buttonHeight, float buttonSpacing)
   {
@@ -117,8 +78,6 @@ public sealed class VoteGroup
       }
     }
 
-    // Order top-to-bottom: title, description, button, vote-count chip. Every element in a column is anchored
-    // by its own Center to the same optionCenterX, rather than by TopLeft to a shared left edge.
     var descriptionCenterY = y - titleHeight - titleGap - descriptionHeight / 2;
     var buttonCenterY = y - titleHeight - titleGap - (hasAnyDescription ? descriptionHeight + descriptionGap : 0) - buttonHeight / 2;
     var countCenterY = buttonCenterY - buttonHeight / 2 - countGap - countHeight / 2;
@@ -135,11 +94,6 @@ public sealed class VoteGroup
           Height = descriptionHeight,
           Text = string.IsNullOrEmpty(options[optionIndex].Description) ? "" : $"|cffffffff{options[optionIndex].Description}|r"
         };
-        // BlzFrameSetScale doesn't just shrink the frame's own size - it also scales the (offsetX, offsetY)
-        // SetPoint was given, as if that offset were measured from the parent's own origin and then multiplied
-        // by scale. That's why the drift got worse for columns further from the panel's left edge (a bigger
-        // offset means a bigger chunk gets scaled away) and why it crept up into the title above it (Y offset
-        // scaled the same way). Dividing the intended offset by scale up front cancels that out.
         descriptionFrame.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft,
           optionCenterX / descriptionScale, descriptionCenterY / descriptionScale);
         descriptionFrame.SetScale(descriptionScale);
@@ -157,9 +111,6 @@ public sealed class VoteGroup
       button.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft, optionCenterX, buttonCenterY);
       parent.AddFrame(button);
 
-      // A plain framehandle keeps its own border/backdrop from the "ScriptDialogButton" template (same as the
-      // vote buttons above), so the count reads as a small counter chip rather than floating bare text. It's
-      // deliberately much narrower than the button and centered under it, rather than matching its full width.
       var countFrame = new Frame("ScriptDialogButton", parent, 0)
       {
         Width = countWidth,
@@ -248,13 +199,6 @@ public sealed class VoteGroup
     return counts;
   }
 
-  /// <summary>
-  /// Tallies votes deterministically: fixed-size arrays, iterated strictly in index order, with ties broken in
-  /// favor of whichever <see cref="VoteOption"/> was declared first. This must produce bit-identical results on
-  /// every client, since it runs independently (not synced) on each of them once every client's local copy of
-  /// the vote array has received the same synced votes. Stops listening for further votes, invokes the winning
-  /// option's <see cref="VoteOption.OnChosen"/>, and sets <see cref="Winner"/>.
-  /// </summary>
   public void Conclude()
   {
     _concluded = true;
