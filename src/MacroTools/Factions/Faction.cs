@@ -355,6 +355,7 @@ public abstract class Faction
       throw new InvalidOperationException($"Tried to add a quest named {loweredQuestTitle} to {Name} but they already have one with that name.");
     }
 
+    questData.ProgressChanged += OnQuestProgressChanged;
     questData.Add(this);
     _questsByName.Add(questData.Title.ToLower(), questData);
     if (player.LocalPlayer == Player)
@@ -363,7 +364,6 @@ public abstract class Faction
     }
 
     questData.ShowSync();
-    questData.ProgressChanged += OnQuestProgressChanged;
     return questData;
   }
 
