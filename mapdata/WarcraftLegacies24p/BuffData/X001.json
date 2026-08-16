@@ -1,0 +1,19 @@
+{
+  "OldId": "XEsf",
+  "NewId": "X001",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Summon"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\RainOfFire\\RainOfFireTarget.mdl"
+    }
+  ]
+}

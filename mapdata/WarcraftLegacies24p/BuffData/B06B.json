@@ -1,0 +1,39 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B06B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLifeDrain.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Curse of Ages"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Cursed with Old Age; its movement speed"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Purple Bishop)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Drain\\DrainTarget.mdl"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "OldId": "nnwq",
+  "NewId": "n074",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACua,ACca,Aspa,A08R,Assp"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 60
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 39
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1500
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhme,Rhar,Rugf,R00Q,R00P"
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "uclg",
+      "Value": 135
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Queen Nezar\u0027Azret"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "OldId": "nnsu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0W7,Aien,ACmo,A0M1"
+    },
+    {
+      "Id": "ubld",
+      "Value": 16
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ua1b",
+      "Value": 19
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 48
+    },
+    {
+      "Id": "uhpm",
+      "Value": 655
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.14
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00K,Rguv"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 400
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1300
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train - Summoner"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful caster. Can cast Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GargoyleMissile\\GargoyleMissile.mdl"
+    }
+  ]
+}

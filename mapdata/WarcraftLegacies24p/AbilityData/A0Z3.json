@@ -1,0 +1,229 @@
+{
+  "OldId": "ANst",
+  "NewId": "A0Z3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "amsp",
+      "Value": 400
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostStorm.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scourge - Ner\u0027zhul) (Scourge Ebon Blade Darion)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FrostWyrmMissile\\FrostWyrmMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Frost Storm"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostStorm.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Frost Storm - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls forth waves of ice to explode upon the caster\u0027s enemies.|nLasts \u003CA0Z3,Dur1\u003E seconds.|n |n|cffffcc00Level 1|r - Each explosion deals \u003CA0Z3,DataC1\u003E damage. |n|cffffcc00Level 2|r - Each explosion deals \u003CA0Z3,DataC2\u003E damage. |n|cffffcc00Level 3|r - Each explosion deals \u003CA0Z3,DataC3\u003E damage"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Storm - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Storm - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Storm - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth waves of frost that explode dealing \u003CA0Z3,DataC1\u003E damage to enemies struck. Each exploding missile deals \u003CA0Z3,DataC1\u003E damage. |nLasts \u003CA0Z3,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth waves of frost that explode dealing \u003CA0Z3,DataC2\u003E damage to enemies struck. Each exploding missile deals \u003CA0Z3,DataC2\u003E damage. |nLasts \u003CA0Z3,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls forth waves of frost that explode dealing \u003CA0Z3,DataC3\u003E damage to enemies struck. Each exploding missile deals \u003CA0Z3,DataC3\u003E damage. |nLasts \u003CA0Z3,Dur3\u003E seconds."
+    }
+  ]
+}

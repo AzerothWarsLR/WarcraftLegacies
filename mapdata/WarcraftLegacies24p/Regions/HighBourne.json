@@ -1,0 +1,16 @@
+{
+  "Left": -17536,
+  "Bottom": 22272,
+  "Right": -16448,
+  "Top": 23584,
+  "Name": "HighBourne",
+  "CreationNumber": 47,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "Bpig",
+  "NewId": "B08O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Scythe)"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "head"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "head"
+    }
+  ]
+}

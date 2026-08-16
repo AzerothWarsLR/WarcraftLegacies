@@ -1,0 +1,124 @@
+{
+  "OldId": "ANrg",
+  "NewId": "A0UO",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nrg5",
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Nrg5",
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Nrg5",
+      "Value": 13
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Nrg6",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Nrg6",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Nrg6",
+      "Value": 7
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(level 2)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transforms the Tinker into a melee Robo-Goblin, a powerful armored form that has the following traits:|n|n- Bonus Strength and armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Robo-Goblin - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Robo-Goblin - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Robo-Goblin - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Tinker into a melee Robo-Goblin, a powerful armored form that has the following traits:|n|n- 5 bonus Strength and 1 bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Tinker into a melee Robo-Goblin, a powerful armored form that has the following traits:|n|n- 7 bonus Strength and 3 bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Tinker into a melee Robo-Goblin, a powerful armored form that has the following traits:|n|n- 9 bonus Strength and 5 bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Returns to normal Tinker form, losing the benefits of Robo-Goblin but once again becoming organic and ranged."
+    }
+  ]
+}

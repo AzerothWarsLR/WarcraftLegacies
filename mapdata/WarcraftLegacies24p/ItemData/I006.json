@@ -1,0 +1,60 @@
+{
+  "OldId": "ckng",
+  "NewId": "I006",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0BT,A0W0"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIse"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBookOfTheDead.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Powerful spellbook that can summon forth the Legion. Provided bonus intellect and can cast Silence."
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tomeRed\\tomeRed.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Book of Medivh"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by 15 and can be used to summon the Burning Legion from the depths of the Twisting Nether.|n|cffffcc00Lore|r|n|cffffdeadThe last known tome of Medivh\u0027s work."
+    }
+  ]
+}

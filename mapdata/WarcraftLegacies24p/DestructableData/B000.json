@@ -1,0 +1,60 @@
+{
+  "OldId": "LTrc",
+  "NewId": "B000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "decoration"
+    },
+    {
+      "Id": "bvcb",
+      "Value": 150
+    },
+    {
+      "Id": "bvcg",
+      "Value": 180
+    },
+    {
+      "Id": "bvcr",
+      "Value": 150
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Doodad - Unkillable)"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgsc",
+      "Type": 1,
+      "Value": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nmrl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubba",
+      "Value": 6
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 435
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.8
+    }
+  ]
+}

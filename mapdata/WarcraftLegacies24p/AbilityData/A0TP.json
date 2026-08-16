@@ -1,0 +1,418 @@
+{
+  "OldId": "ANab",
+  "NewId": "A0TP",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.05
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.06
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.07
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Nab6",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Nab6",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Nab6",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Nab6",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 20000
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "Spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTheBlackArrow.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Green Akama)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UndeadDissipate\\UndeadDissipate.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Shadow Strike"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTheBlackArrow.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Shadow Strike - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor, mouvement speed, attack speed and deals damage.|nLasts 8 seconds on heroes.|n|n|cffffcc00Level 1|r - 150 damage, reduces armor by 3, mouvement speed by 30% and attack speed by 40%.|n|cffffcc00Level 2|r - 200 damage, reduces armor by 4, mouvement speed by 40% and attack speed by 50%.|n|cffffcc00Level 3|r - 250 damage, reduces armor by 5, mouvement speed by 50% and attack speed by 60%.|n|cffffcc00Level 4|r - 300 damage, reduces armor by 6, mouvement speed by 60% and attack speed by 70%."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Shadow Strike - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Shadow Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Shadow Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Shadow Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 3, mouvement speed by 30%, attack speed by 40% and deals 150 damage |nLasts 8 seconds on heroes."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 4, mouvement speed by 40%, attack speed by 50% and deals 200 damage |nLasts 8 seconds on heroes."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 5, mouvement speed by 50%, attack speed by 60% and deals 250 damage |nLasts 8 seconds on heroes."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 6, mouvement speed by 60%, attack speed by 70% and deals 300 damage |nLasts 8 seconds on heroes."
+    }
+  ]
+}

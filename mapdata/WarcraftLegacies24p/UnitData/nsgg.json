@@ -1,0 +1,26 @@
+{
+  "OldId": "nsgg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 228
+    },
+    {
+      "Id": "uhpm",
+      "Value": 3800
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Titan Construct"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2.5
+    }
+  ]
+}

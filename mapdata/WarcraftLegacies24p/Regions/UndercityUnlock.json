@@ -1,0 +1,16 @@
+{
+  "Left": -28672,
+  "Bottom": 14176,
+  "Right": -25728,
+  "Top": 17888,
+  "Name": "UndercityUnlock",
+  "CreationNumber": 466,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

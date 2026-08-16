@@ -1,0 +1,99 @@
+{
+  "OldId": "ZPfw",
+  "NewId": "D03I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\Portraits\\DungeonPorticulisGate_Portrait\\DungeonPorticulisGate_Portrait.mdl"
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Gilneas Canal Gate"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 4,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 5,
+      "Id": "dvb1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 5,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 4,
+      "Id": "dvr1",
+      "Value": 100
+    },
+    {
+      "Variation": 5,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

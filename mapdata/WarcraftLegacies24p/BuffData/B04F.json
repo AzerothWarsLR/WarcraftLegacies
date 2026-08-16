@@ -1,0 +1,53 @@
+{
+  "OldId": "Bpoi",
+  "NewId": "B04F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWallOfFire.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Burning"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is burning"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Fire Arrows"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " (elf)"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "head"
+    },
+    {
+      "Id": "fspd",
+      "Value": 0
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedDamage.mdl"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "OldId": "Apig",
+  "NewId": "A09N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08J"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueImmolationOff.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scourge - Icecrown Obelisk)"
+    }
+  ]
+}

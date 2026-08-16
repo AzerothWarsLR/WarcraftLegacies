@@ -1,0 +1,43 @@
+{
+  "OldId": "nogl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACav,A01T"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1300
+    },
+    {
+      "Id": "ulev",
+      "Value": 6
+    },
+    {
+      "Id": "umpm",
+      "Value": 250
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    }
+  ]
+}

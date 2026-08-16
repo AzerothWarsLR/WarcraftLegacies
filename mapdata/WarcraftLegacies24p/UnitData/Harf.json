@@ -1,0 +1,122 @@
+{
+  "OldId": "Harf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A04M,ACds,A0C1,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 31
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A056,A01F,Aamk,A0DM,A06S"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive High King"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Lordaeron-High King)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_KingArthas.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "High King"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Arthas Menethil"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive High King"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at destroying the enemy and enduring.|n|cfff5962dAbilities:|r Divine Shield |n|cfff5962dCan learn:|R Holy Nova, Call Royal Guard, Holy Aura, Solar Judgement|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon King"
+    }
+  ]
+}

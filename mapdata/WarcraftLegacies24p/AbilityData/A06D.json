@@ -1,0 +1,39 @@
+{
+  "OldId": "AId1",
+  "NewId": "A06D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Attachment)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ashbringer Glow"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Sweep_Holy_Large.mdx"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "weapon"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    }
+  ]
+}

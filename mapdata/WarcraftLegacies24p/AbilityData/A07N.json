@@ -1,0 +1,412 @@
+{
+  "OldId": "ANab",
+  "NewId": "A07N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 65
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 53
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 56
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 1000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "Attack,two"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids - Ursoc, Jarod)"
+    },
+    {
+      "Id": "aefs",
+      "Type": 3,
+      "Value": "WoodHeavyBashFlesh"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Maiming Strike"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Maiming Strike - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals damage over time and reduces the targetted enemies\u0027 move and attack speed.|n|n|cffffcc00Level 1|r - 150 damage, reduces attack speed by 20% and move speed by 10%, lasts 4 second (1 second for Heroes).|n|cffffcc00Level 2|r - 185 damage, reduces attack speed by 30% and move speed by 15%, lasts 5 second (1 seconds for Heroes).|n|cffffcc00Level 3|r - 225 damage, reduces attack speed by 40% and move speed by 20%, lasts 6 second (2 seconds for Heroes).|n|cffffcc00Level 4|r - 300 damage, reduces attack speed by 50% and move speed by 25%, lasts 7 second (2 seconds for Heroes)."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Maiming Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 150 damage and reduces the targetted enemies\u0027 move and attack speeds by 20%."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 185 damage and reduces the targetted enemies\u0027 move and attack speeds by 30%."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 225 damage and reduces the targetted enemies\u0027 move and attack speeds by 40%."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 300 damage and reduces the targetted enemies\u0027 move and attack speeds by 50%."
+    }
+  ]
+}

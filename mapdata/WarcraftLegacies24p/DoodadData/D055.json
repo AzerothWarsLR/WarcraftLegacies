@@ -1,0 +1,64 @@
+{
+  "OldId": "BSrc",
+  "NewId": "D055",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Outland Wall 3"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 75
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 75
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 75
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 75
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 125
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 125
+    }
+  ]
+}

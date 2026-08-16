@@ -1,0 +1,18 @@
+{
+  "OldId": "BCbf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Hypothermic Breath"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was hit by Hypothermic Breath; it will take damage over time."
+    }
+  ]
+}

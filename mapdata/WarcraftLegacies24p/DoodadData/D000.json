@@ -1,0 +1,164 @@
+{
+  "OldId": "IRcy",
+  "NewId": "D000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Crystalsong Crystal"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 4,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 5,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 6,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 7,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 8,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 9,
+      "Id": "dvb1",
+      "Value": 200
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 4,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 5,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 6,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 7,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 8,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 9,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 4,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 5,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 6,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 7,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 8,
+      "Id": "dvr1",
+      "Value": 200
+    },
+    {
+      "Variation": 9,
+      "Id": "dvr1",
+      "Value": 200
+    }
+  ]
+}

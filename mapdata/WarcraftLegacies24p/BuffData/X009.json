@@ -1,0 +1,19 @@
+{
+  "OldId": "XEsf",
+  "NewId": "X009",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Arrow Volley (effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl"
+    }
+  ]
+}

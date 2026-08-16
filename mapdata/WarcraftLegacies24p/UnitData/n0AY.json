@@ -1,0 +1,152 @@
+{
+  "OldId": "nntg",
+  "NewId": "n0AY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ubdi",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 15
+    },
+    {
+      "Id": "ubsi",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "n0B0"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adtg"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h06U"
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Yogg)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build - Acid Spitter"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BlackEmpireTowerEndlessFountain.mdl"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackEmpireTowerAcidicCarnivore.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Acid Spitter"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -3232,
+  "Bottom": -31104,
+  "Right": 4064,
+  "Top": -19424,
+  "Name": "DraeneiCamLock",
+  "CreationNumber": 298,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

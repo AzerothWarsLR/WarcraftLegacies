@@ -1,0 +1,19 @@
+{
+  "OldId": "Xbof",
+  "NewId": "X00T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Searing Breath (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 19424,
+  "Bottom": 12704,
+  "Right": 19488,
+  "Top": 12768,
+  "Name": "Quel5",
+  "CreationNumber": 283,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

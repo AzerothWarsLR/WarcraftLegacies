@@ -1,0 +1,16 @@
+{
+  "Left": 11392,
+  "Bottom": 8736,
+  "Right": 13952,
+  "Top": 9888,
+  "Name": "Plague 2",
+  "CreationNumber": 97,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 0,
+    "A": 255
+  }
+}

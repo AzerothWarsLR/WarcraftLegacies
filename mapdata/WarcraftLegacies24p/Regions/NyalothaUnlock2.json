@@ -1,0 +1,16 @@
+{
+  "Left": -25504,
+  "Bottom": -7552,
+  "Right": -22528,
+  "Top": -2464,
+  "Name": "NyalothaUnlock2",
+  "CreationNumber": 516,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

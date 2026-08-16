@@ -1,0 +1,31 @@
+{
+  "OldId": "Roch",
+  "NewId": "R044",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Natural Contest"
+    }
+  ]
+}

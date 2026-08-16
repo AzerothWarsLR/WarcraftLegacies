@@ -1,0 +1,378 @@
+{
+  "OldId": "ninc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0PI,A04V"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua2d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ua2b",
+      "Value": 38
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "ua1f",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 18
+    },
+    {
+      "Id": "ugor",
+      "Value": 14
+    },
+    {
+      "Id": "ua1h",
+      "Value": 0
+    },
+    {
+      "Id": "uhd2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "ulev",
+      "Value": 3
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1200
+    },
+    {
+      "Id": "ua2z",
+      "Value": 800
+    },
+    {
+      "Id": "ua1q",
+      "Value": 0
+    },
+    {
+      "Id": "uqd2",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "ua2r",
+      "Value": 700
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "ua2s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 40
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,item,structure,wall,ward"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A04V"
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 180
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 180
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0.51
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "n040"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Legion)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.08
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 25
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Burning Archer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Burning archer of the Legion.|n|cfff5962dAbilities:|R Searing Arrows, Skeletal Frame|n |n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\BurningArcher\\BurningArcher.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSkeletonArcher.blp"
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SkeletonArcher"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Burning Archer"
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 60
+    }
+  ]
+}

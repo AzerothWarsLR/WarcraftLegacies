@@ -1,0 +1,56 @@
+{
+  "OldId": "rag1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIa4"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIa4"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Boosts Agility by 4."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Slippers of Agility \u002B4"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Slippers of Agility \u002B4"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Increases the Agility of the Hero by 4 when worn."
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 11136,
+  "Bottom": 7104,
+  "Right": 13696,
+  "Top": 8512,
+  "Name": "Andorhal",
+  "CreationNumber": 277,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

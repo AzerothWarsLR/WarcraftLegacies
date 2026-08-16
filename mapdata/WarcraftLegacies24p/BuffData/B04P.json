@@ -1,0 +1,44 @@
+{
+  "OldId": "Blsh",
+  "NewId": "B04P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCharm.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mind Spike"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Hit by Mind Spike; nearby friendly and enemy units will take damage if they are next to this unit."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mind Spike"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayTarget.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIso\\BIsvTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

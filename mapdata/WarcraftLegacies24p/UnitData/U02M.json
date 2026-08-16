@@ -1,0 +1,259 @@
+{
+  "OldId": "Ulic",
+  "NewId": "U02M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A083,A033,AOvd,A0DA,Aamk"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 80
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "uagi",
+      "Value": 30
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0YM,AInv"
+    },
+    {
+      "Id": "uint",
+      "Value": 33
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04J,R04H,R093"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urqc",
+      "Value": 1
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Murlock.mdl"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Mmmrrrggglll"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMurlocFlesheater.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "NagaRoyalGuard"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Grimscale Chieftain"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Grimscale Chieftain"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleRed.blp"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.8
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Naga)"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff0000You will lose your current faction and join an Employer as a new small 1 hero faction|r|n|nPossible employers in order of priority:|n-Forsaken (once independant)|n-Illidan (If in Outland)|n-Dalaran (If Nexus)|n-Scourge (If Independant)|n-Nzoth|n-Twilight|n-Black Empire|n-C\u0027thun"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Mmmrrrggglll"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Grimscale Chieftain"
+    }
+  ]
+}

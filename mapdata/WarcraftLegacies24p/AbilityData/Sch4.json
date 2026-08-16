@@ -1,0 +1,14 @@
+{
+  "OldId": "Sch4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Car1",
+      "Value": 6
+    }
+  ]
+}

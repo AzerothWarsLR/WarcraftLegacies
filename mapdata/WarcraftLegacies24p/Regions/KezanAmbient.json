@@ -1,0 +1,16 @@
+{
+  "Left": -3104,
+  "Bottom": -9920,
+  "Right": 736,
+  "Top": -5184,
+  "Name": "KezanAmbient",
+  "CreationNumber": 305,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

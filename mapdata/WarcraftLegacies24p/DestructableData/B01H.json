@@ -1,0 +1,28 @@
+{
+  "OldId": "BTtw",
+  "NewId": "B01H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "bvcr",
+      "Value": 100
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Wetlands tree"
+    }
+  ]
+}

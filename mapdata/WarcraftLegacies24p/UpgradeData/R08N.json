@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R08N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Gul\u0027dan\u0027s Remains"
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "OldId": "ANsy",
+  "NewId": "A02M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "n04A"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "n04A"
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "n04A"
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "n04A"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Level": 2,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Level": 3,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Level": 4,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAncientOfTheEarth.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Cenarius Ghost)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ritual of the Ancients"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAncientOfTheEarth.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Ritual of the Ancients - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. |n|n|cffffcc00Level 1|r - Lasts 3 seconds. |n|cffffcc00Level 2|r - Lasts 5 seconds. |n|cffffcc00Level 3|r - Lasts 7 seconds. |n|cffffcc00Level 4|r - Lasts 9 seconds. |n|nTreants last 45 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ritual of the Ancients - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ritual of the Ancients - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ritual of the Ancients - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ritual of the Ancients - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 3 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 5 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 7 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 9 seconds."
+    }
+  ]
+}

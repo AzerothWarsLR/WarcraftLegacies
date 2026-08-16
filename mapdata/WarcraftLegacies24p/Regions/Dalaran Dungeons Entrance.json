@@ -1,0 +1,16 @@
+{
+  "Left": 8544,
+  "Bottom": 4576,
+  "Right": 8928,
+  "Top": 4928,
+  "Name": "Dalaran Dungeons Entrance",
+  "CreationNumber": 9,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 255,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "OldId": "AHpx",
+  "NewId": "A0EK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h027"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blood Mage)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons a powerful Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. Has Spell Immunity, Resistant Skin and Sun Ray. When a Phoenix dies, it creates an egg that will hatch into a Phoenix.|n|nEach level adds 250 health, 10 damage, and shortens the cooldown by 30 seconds.|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "Aap4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    }
+  ]
+}

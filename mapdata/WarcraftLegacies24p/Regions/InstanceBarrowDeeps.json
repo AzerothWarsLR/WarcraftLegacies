@@ -1,0 +1,16 @@
+{
+  "Left": 15712,
+  "Bottom": -32128,
+  "Right": 15840,
+  "Top": -31904,
+  "Name": "InstanceBarrowDeeps",
+  "CreationNumber": 286,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

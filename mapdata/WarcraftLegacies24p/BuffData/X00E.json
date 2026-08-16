@@ -1,0 +1,14 @@
+{
+  "OldId": "Xbdt",
+  "NewId": "X00E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Reveal (Farseer)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "BNab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNRegenerationAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shadow Strike"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been struck from the Shadows.  It has reduced armor"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

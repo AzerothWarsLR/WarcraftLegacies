@@ -1,0 +1,29 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B08R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElements.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Surge of Power"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is surging with power"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl,Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    }
+  ]
+}

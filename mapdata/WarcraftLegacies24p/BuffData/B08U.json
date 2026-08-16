@@ -1,0 +1,29 @@
+{
+  "OldId": "BOae",
+  "NewId": "B08U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Zandalar Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Zandalar Aura; it has 10% increased attack rate."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

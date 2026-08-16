@@ -1,0 +1,29 @@
+{
+  "OldId": "Binf",
+  "NewId": "B069",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDalaranIntellect.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Arcane Intellect"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Arcane Intellect; its attack damage is increased and it refunds mana costs whenever it casts a spell."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Dalaran BrillianceSmall.mdx"
+    }
+  ]
+}

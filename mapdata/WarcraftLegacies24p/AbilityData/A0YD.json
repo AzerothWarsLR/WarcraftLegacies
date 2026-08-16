@@ -1,0 +1,54 @@
+{
+  "OldId": "ACpa",
+  "NewId": "A0YD",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Npa6",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,nonhero,organic"
+    },
+    {
+      "Level": 1,
+      "Id": "ipmu",
+      "Type": 3,
+      "Value": "nfgt"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027Thun)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly parasite that deals 5 damage per second for 30 seconds. If the afflicted unit dies while under the effect of Parasite, a Tentacle will spawn from its corpse."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

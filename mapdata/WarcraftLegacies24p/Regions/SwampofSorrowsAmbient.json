@@ -1,0 +1,16 @@
+{
+  "Left": 14944,
+  "Bottom": -16896,
+  "Right": 19424,
+  "Top": -14784,
+  "Name": "SwampofSorrowsAmbient",
+  "CreationNumber": 348,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

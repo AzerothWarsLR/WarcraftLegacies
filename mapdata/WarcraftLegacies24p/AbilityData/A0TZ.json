@@ -1,0 +1,256 @@
+{
+  "OldId": "AEim",
+  "NewId": "A0TZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06H,B06G"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06H,B06G"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06H,B06G"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06H,B06G"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": -25
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": -35
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": -45
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": -55
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,ground,neutral,organic,player,self"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,ground,neutral,organic,player,self"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,ground,neutral,organic,player,self"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,allies,ground,neutral,organic,player,self"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(voljin)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Voodoo Restoration"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Voodoo Restoration - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Heal nearby ally in an 350 aoe.|nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - 25 health per second. |n|cffffcc00Level 2|r - 35 health per second. |n|cffffcc00Level 3|r - 45 health per second.|n|cffffcc00Level 4 -|r 55 health per second."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration, healing nearby units for 25 health per second in an 350 aoe.|nDrains mana until deactivated."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration, healing nearby units for 35 health per second in an 350 aoe.|nDrains mana until deactivated."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration, healing nearby units for 45 health per second in an 350 aoe.|nDrains mana until deactivated."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate Voodoo Restoration, healing nearby units for 55 health per second in an 350 aoe.|nDrains mana until deactivated."
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Deactivate Voodoo Restoration"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Deactivate Voodoo Restoration to stop draining mana."
+    }
+  ]
+}

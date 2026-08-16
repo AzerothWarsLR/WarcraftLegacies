@@ -1,0 +1,19 @@
+{
+  "OldId": "AEsd",
+  "NewId": "B086",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Call of the Void (target)"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Soul Discharge Purple.mdx"
+    }
+  ]
+}

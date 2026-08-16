@@ -1,0 +1,44 @@
+{
+  "OldId": "ATtr",
+  "NewId": "B01T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "invulnerable"
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "A,L"
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "Indestructible"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 170
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Ashenvale Tree backwards"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

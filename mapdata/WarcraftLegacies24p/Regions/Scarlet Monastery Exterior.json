@@ -1,0 +1,16 @@
+{
+  "Left": 10976,
+  "Bottom": 10912,
+  "Right": 11328,
+  "Top": 11296,
+  "Name": "Scarlet Monastery Exterior",
+  "CreationNumber": 447,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

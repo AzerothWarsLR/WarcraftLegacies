@@ -1,0 +1,186 @@
+{
+  "OldId": "AEIl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 525
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E00E"
+    },
+    {
+      "Level": 3,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E00D"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "E015"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "E015"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "E015"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Metamorphosis - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Transforms the the hero into a powerful Demon with a ranged attack. Got a 180 seconds cooldown. |n|n|cffffcc00Level 1|r - 175 bonus hit points, lasts 60 seconds.|n|cffffcc00Level 2|r - 350 bonus hit points, lasts 65 seconds. |n|cffffcc00Level 3|r - 525 bonus hit points, lasts 70 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Metamorphosis - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Metamorphosis - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Metamorphosis - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack. Gives 175 bonus hit points and lasts 60 seconds. Got a 180 seconds cooldown."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack. Gives 350 bonus hit points and lasts 65 seconds. Got a 180 seconds cooldown."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack. Gives 525 bonus hit points and lasts 70 seconds. Got a 180 seconds cooldown."
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(altruis)"
+    }
+  ]
+}

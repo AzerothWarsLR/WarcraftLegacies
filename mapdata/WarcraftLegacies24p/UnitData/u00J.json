@@ -1,0 +1,153 @@
+{
+  "OldId": "uobs",
+  "NewId": "u00J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arpm,A054"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Arpm"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 26
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ugor",
+      "Value": 60
+    },
+    {
+      "Id": "uhpm",
+      "Value": 875
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "ulum",
+      "Value": 110
+    },
+    {
+      "Id": "ulur",
+      "Value": 110
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1900
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "n0A2"
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,R008,Rhar,Rguv"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfSupplyWagon.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Quel\u0027Thalas)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\other\\BloodElfWagon\\BloodElfWagon.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Arcane Wagon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Arcane Wagon"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Forged with the Mana infused steel, bleeding excess into the air.|n|cfff5962dAbilities:|R Spirit Touch, Arcane Artillery|n|n|cff99b4d1Can only build 2.|r|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

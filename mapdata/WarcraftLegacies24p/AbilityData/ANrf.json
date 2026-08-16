@@ -1,0 +1,151 @@
+{
+  "OldId": "ANrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Cho\u0027gall, Varimathras)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals initial damage and then burns enemies for \u003CANrf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CANrf,DataB1\u003E wave damage, \u003CANrf,DataA1\u003E waves, \u003CANrf,DataE1\u003E damage per second. |n|cffffcc00Level 2|r - \u003CANrf,DataB2\u003E wave damage, \u003CANrf,DataA2\u003E waves, \u003CANrf,DataE2\u003E damage per second. |n|cffffcc00Level 3|r - \u003CANrf,DataB3\u003E wave damage, \u003CANrf,DataA3\u003E waves, \u003CANrf,DataE3\u003E damage per second. |n|cffffcc00Level 4|r - \u003CANrf,DataB4\u003E wave damage, \u003CANrf,DataA4\u003E waves, \u003CANrf,DataE4\u003E damage per second."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Rain of Fire - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals \u003CANrf,DataB4\u003E initial damage and \u003CANrf,DataE4\u003E damage per second for \u003CANrf,Dur4\u003E seconds. |nLasts for \u003CANrf,DataA4\u003E waves."
+    }
+  ]
+}

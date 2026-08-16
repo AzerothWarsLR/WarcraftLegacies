@@ -1,0 +1,120 @@
+{
+  "OldId": "Rhan",
+  "NewId": "R023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rarm"
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "gglm",
+      "Value": 50
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 100
+    },
+    {
+      "Id": "glmm",
+      "Value": 50
+    },
+    {
+      "Id": "glvl",
+      "Value": 4
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtib",
+      "Value": 60
+    },
+    {
+      "Id": "gtim",
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.blp"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Warsong-Frostwolf-Fel Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Spiritual Infusion"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Spiritual Infusion"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cfff5962dAffects:|r Shamans, Witch Doctors, Spirit Walkers, Shadowbinders, Stonmaul Magi, Necrolytes, Eredar Occultist, Fel Warlocks"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 4,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    }
+  ]
+}

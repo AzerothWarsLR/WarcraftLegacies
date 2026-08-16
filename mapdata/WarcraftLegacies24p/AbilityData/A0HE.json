@@ -1,0 +1,21 @@
+{
+  "OldId": "AIsx",
+  "NewId": "A0HE",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Isx1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Demon Soul)"
+    }
+  ]
+}

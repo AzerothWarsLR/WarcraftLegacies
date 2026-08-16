@@ -1,0 +1,29 @@
+{
+  "OldId": "ATtr",
+  "NewId": "B00C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "A,L"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 170
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Ashenvale Tree backwards"
+    }
+  ]
+}

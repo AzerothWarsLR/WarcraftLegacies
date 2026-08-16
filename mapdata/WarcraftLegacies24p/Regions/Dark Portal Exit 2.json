@@ -1,0 +1,16 @@
+{
+  "Left": 4032,
+  "Bottom": -25088,
+  "Right": 4416,
+  "Top": -24704,
+  "Name": "Dark Portal Exit 2",
+  "CreationNumber": 89,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}

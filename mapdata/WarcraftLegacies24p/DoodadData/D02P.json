@@ -1,0 +1,54 @@
+{
+  "OldId": "GPsh",
+  "NewId": "D02P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dcat",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Objects\\Invalidmodel\\Invalidmodel.mdl"
+    },
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Pathblocker Horizontal"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": "PathTextures\\StoneWall3Path.tga"
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

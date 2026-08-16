@@ -1,0 +1,73 @@
+{
+  "OldId": "ofir",
+  "NewId": "I016",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0FY,A0U9,A0HE,A0HD"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHSZin\u0027Rokhv1.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Zin\u0027rokh, Destroyer of Worlds"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Zin\u0027rokh, Destroyer of Worlds"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nGrants \u002B15 to all stats, \u002B80 damage as well as 30% increased attack and movement speed. "
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

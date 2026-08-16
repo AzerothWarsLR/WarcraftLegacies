@@ -1,0 +1,16 @@
+{
+  "Left": 14560,
+  "Bottom": 7552,
+  "Right": 14912,
+  "Top": 7872,
+  "Name": "Scholomance Entrance",
+  "CreationNumber": 15,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

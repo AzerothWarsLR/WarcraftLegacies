@@ -1,0 +1,39 @@
+{
+  "OldId": "BNcr",
+  "NewId": "B071",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTimberWolf.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is benefiting from Lo\u0027gosh\u0027s Fury.  It is moving and attacking more quickly."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Lo\u0027gosh\u0027s Fury"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\BattleRoar\\RoarTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

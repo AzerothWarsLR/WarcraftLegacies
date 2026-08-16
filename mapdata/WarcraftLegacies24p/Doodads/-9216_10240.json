@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1311780930,
+    "Variation": 7,
+    "Position": {
+      "X": -9344,
+      "Y": 10368,
+      "Z": 223.75
+    },
+    "Rotation": 2.7925267,
+    "Scale": {
+      "X": 0.95,
+      "Y": 0.95,
+      "Z": 0.95
+    },
+    "SkinId": 1311780930,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 5760
+  },
+  {
+    "TypeId": 1701402441,
+    "Variation": 3,
+    "Position": {
+      "X": -9356.877,
+      "Y": 10261.138,
+      "Z": 251.16704
+    },
+    "Rotation": 0.76794493,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1701402441,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19849
+  },
+  {
+    "TypeId": 1953715287,
+    "Variation": 5,
+    "Position": {
+      "X": -9216,
+      "Y": 10432,
+      "Z": 227.75
+    },
+    "Rotation": 0.40142578,
+    "Scale": {
+      "X": 1.1999998,
+      "Y": 1.1999998,
+      "Z": 1.1999998
+    },
+    "SkinId": 1953715287,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 5754
+  },
+  {
+    "TypeId": 1667715657,
+    "Variation": 2,
+    "Position": {
+      "X": -9472,
+      "Y": 10304,
+      "Z": 227.25
+    },
+    "Rotation": 0.3490659,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1667715657,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 5765
+  },
+  {
+    "TypeId": 1667846729,
+    "Variation": 0,
+    "Position": {
+      "X": -9537.008,
+      "Y": 10200.42,
+      "Z": 244.05305
+    },
+    "Rotation": 4.9043756,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1667846729,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 5767
+  }
+]

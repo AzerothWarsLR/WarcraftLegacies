@@ -1,0 +1,39 @@
+{
+  "OldId": "AOsk",
+  "NewId": "D010",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "buildings\\other\\NerubianZiggurat\\NerubianZiggurat.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Ziggurat"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 190
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 150
+    }
+  ]
+}

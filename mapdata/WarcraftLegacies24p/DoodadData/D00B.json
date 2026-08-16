@@ -1,0 +1,44 @@
+{
+  "OldId": "AOsk",
+  "NewId": "D00B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Ancient Ziggurat"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 130
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 100
+    }
+  ]
+}

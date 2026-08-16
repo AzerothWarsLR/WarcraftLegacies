@@ -1,0 +1,33 @@
+{
+  "OldId": "ZPvp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

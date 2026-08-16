@@ -1,0 +1,16 @@
+{
+  "Left": 384,
+  "Bottom": 2752,
+  "Right": 864,
+  "Top": 2944,
+  "Name": "NazjatarEntrance1",
+  "CreationNumber": 385,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

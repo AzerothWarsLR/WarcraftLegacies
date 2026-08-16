@@ -1,0 +1,39 @@
+{
+  "OldId": "Binf",
+  "NewId": "B04N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoom.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Soul Sacrifice"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Soul Sacrifice; It has 60% increased damage and -4 armour."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Soul Sacrifice"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIso\\BIsvTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "weapon"
+    }
+  ]
+}

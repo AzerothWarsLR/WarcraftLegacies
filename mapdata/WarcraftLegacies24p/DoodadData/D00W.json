@@ -1,0 +1,29 @@
+{
+  "OldId": "JScs",
+  "NewId": "D00W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "dfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Broken semicircle"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "OldId": "ANdp",
+  "NewId": "A01B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "o012,nskm,nskf"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSkeletonArcher.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(teal Death Knight)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Necromancy"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Demoncall"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Opens a portal, allowing demons to step through and do the Caster\u0027s bidding."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Necromancy"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summon Skeletons to fight for the Death Knight."
+    }
+  ]
+}

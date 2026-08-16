@@ -1,0 +1,52 @@
+{
+  "OldId": "Adis",
+  "NewId": "A0XI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Adm2",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R08O"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Bloodkin)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

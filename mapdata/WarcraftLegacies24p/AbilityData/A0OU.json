@@ -1,0 +1,49 @@
+{
+  "OldId": "Ahri",
+  "NewId": "A0OU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(troll icon)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Totem"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Totem"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "On death, the Boneseer will spawn a permanent totem at the location of it\u0027s body"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASPortal2.blp"
+    }
+  ]
+}

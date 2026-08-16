@@ -1,0 +1,37 @@
+{
+  "OldId": "Ambb",
+  "NewId": "A06Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "Fel Stalker, Inquisitor, Magus"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a bolt of negative energy that burns 65 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned."
+    }
+  ]
+}

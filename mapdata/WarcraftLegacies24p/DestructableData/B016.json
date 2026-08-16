@@ -1,0 +1,36 @@
+{
+  "OldId": "LTs6",
+  "NewId": "B016",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bvcb",
+      "Value": 75
+    },
+    {
+      "Id": "bvcg",
+      "Value": 50
+    },
+    {
+      "Id": "bvcr",
+      "Value": 50
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Stone Ramp Zul\u0027Drak"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    }
+  ]
+}

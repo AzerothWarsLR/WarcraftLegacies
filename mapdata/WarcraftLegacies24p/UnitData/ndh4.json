@@ -1,0 +1,96 @@
+{
+  "OldId": "ndh4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ufma",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 10
+    },
+    {
+      "Id": "ulum",
+      "Value": 80
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 10
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "ndrt,ndrs,ndrn,ndsa"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Green Draenei)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Draenei Haven"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Draenei Haven (|cffffff00R|r)"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Produces Draenei units as well as offering upgrades for Draenei units."
+    }
+  ]
+}

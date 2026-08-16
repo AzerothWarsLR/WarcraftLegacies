@@ -1,0 +1,16 @@
+{
+  "Left": 15008,
+  "Bottom": 7360,
+  "Right": 15072,
+  "Top": 7424,
+  "Name": "Scourge3",
+  "CreationNumber": 219,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 2528,
+  "Bottom": -31072,
+  "Right": 2592,
+  "Top": -31008,
+  "Name": "Shadowmoon Excavation",
+  "CreationNumber": 147,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

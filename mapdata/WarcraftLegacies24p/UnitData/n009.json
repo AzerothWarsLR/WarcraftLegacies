@@ -1,0 +1,111 @@
+{
+  "OldId": "ntrv",
+  "NewId": "n009",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "amph"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "util",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h06I"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0E3,A0PY"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kul\u0027tiras)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tide Revenant"
+    },
+    {
+      "Id": "uclb",
+      "Value": 255
+    },
+    {
+      "Id": "uclr",
+      "Value": 222
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Tide Revenant"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light Melee Unit.|n|cfff5962dAbilities:|R Depth Void, Lightning Shield|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

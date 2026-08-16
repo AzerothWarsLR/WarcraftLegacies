@@ -1,0 +1,98 @@
+{
+  "OldId": "stwp",
+  "NewId": "I01B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIi4,A00M"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Permanent"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIsp"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 1250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 250000
+    },
+    {
+      "Id": "ilev",
+      "Value": 6
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iper",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "isto",
+      "Value": 1
+    },
+    {
+      "Id": "istr",
+      "Value": 3600
+    },
+    {
+      "Id": "iuse",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Staff of Teleportation"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Staff of |cffffcc00T|releportation"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
+    }
+  ]
+}

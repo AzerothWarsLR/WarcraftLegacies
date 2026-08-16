@@ -1,0 +1,42 @@
+{
+  "OldId": "nhmc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,Awan"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Patrons Footman"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Footman"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\Footman\\Footman.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFootman.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Tier 1 Patron)"
+    }
+  ]
+}

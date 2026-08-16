@@ -1,0 +1,16 @@
+{
+  "Left": -17216,
+  "Bottom": -8736,
+  "Right": -16800,
+  "Top": -8544,
+  "Name": "Dire Maul Entrance",
+  "CreationNumber": 46,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

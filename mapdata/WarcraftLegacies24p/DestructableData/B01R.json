@@ -1,0 +1,55 @@
+{
+  "OldId": "DTes",
+  "NewId": "B01R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 9999
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "invulnerable"
+    },
+    {
+      "Id": "bvcb",
+      "Value": 0
+    },
+    {
+      "Id": "bvcg",
+      "Value": 120
+    },
+    {
+      "Id": "bvcr",
+      "Value": 250
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Silithid Egg Sack"
+    },
+    {
+      "Id": "bgsc",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

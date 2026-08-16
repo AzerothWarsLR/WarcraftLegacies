@@ -1,0 +1,16 @@
+{
+  "Left": 20640,
+  "Bottom": 24256,
+  "Right": 21184,
+  "Top": 24512,
+  "Name": "HeroOrItemWaitRect",
+  "CreationNumber": 36,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

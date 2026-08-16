@@ -1,0 +1,16 @@
+{
+  "Left": -640,
+  "Bottom": -3264,
+  "Right": 1728,
+  "Top": -384,
+  "Name": "OilRig2",
+  "CreationNumber": 500,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "OldId": "LOsm",
+  "NewId": "D04Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmap",
+      "Type": 2,
+      "Value": -6
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Smoke Smudge Upside Down"
+    },
+    {
+      "Id": "dshd",
+      "Value": 1
+    },
+    {
+      "Id": "dshf",
+      "Value": 1
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 0
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 0
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 0
+    }
+  ]
+}

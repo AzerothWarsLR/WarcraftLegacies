@@ -1,0 +1,74 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n04S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A03K,Awrp,Avul"
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\StoneWall1Path.tga"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "uclb",
+      "Value": 130
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Barrens\\Rocks\\Crator\\Crator0.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 130
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Azjol-Nerub"
+    },
+    {
+      "Id": "uclr",
+      "Value": 130
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BNsi",
+  "NewId": "B00S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMindControl.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mind Confusion"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been hit by Mind Confusion; it cannot attack."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Barkskin\\BarkSkinTarget.mdl"
+    }
+  ]
+}

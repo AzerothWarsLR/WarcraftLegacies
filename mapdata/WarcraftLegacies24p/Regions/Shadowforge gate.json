@@ -1,0 +1,16 @@
+{
+  "Left": 17952,
+  "Bottom": -31712,
+  "Right": 18336,
+  "Top": -30912,
+  "Name": "Shadowforge gate",
+  "CreationNumber": 44,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 255,
+    "B": 0,
+    "A": 255
+  }
+}

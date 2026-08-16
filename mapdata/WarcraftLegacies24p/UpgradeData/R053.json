@@ -1,0 +1,45 @@
+{
+  "OldId": "Roch",
+  "NewId": "R053",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSteelRanged.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Legitimate Necromancy"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "OldId": "Auuf",
+  "NewId": "A03R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Uuf1",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 8,
+      "Id": "Uuf3",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,player,vulnerable"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(teal)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sacrifices a target friendly unit. All nearby units gain Unholy Frenzy, increasing attack rate by \u003CAuuf,DataA1,%\u003E% but draining them of \u003CAuuf,DataB1\u003E hit points per second. |nLasts \u003CAuuf,Dur1\u003E seconds."
+    }
+  ]
+}

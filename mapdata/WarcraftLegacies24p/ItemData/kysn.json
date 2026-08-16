@@ -1,0 +1,41 @@
+{
+  "OldId": "kysn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ihtp",
+      "Value": 9999
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Trading Gold"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Trading Gold"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Trading Gold"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Gold from trading offshore"
+    }
+  ]
+}

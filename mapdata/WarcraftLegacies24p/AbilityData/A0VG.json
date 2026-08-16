@@ -1,0 +1,263 @@
+{
+  "OldId": "ANdp",
+  "NewId": "A0VG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 160
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "ugho,nska"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "uabo,ucry,ugho,nska"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "nrvs,uabo"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "nrvi,nrvs"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndp2",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ndp2",
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ndp2",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Kel Tuzad)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Graveyard\\GraveMarker.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Necromantic Summon"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Necromantic Summon - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Summons undead creatures from the ground to aid the necromancer in his battles. These summons are permanent. |n|n|cffffcc00Level 1|r - 6 Ghoul, Skeleton Archer. |n|cffffcc00Level 2|r - 5 but with Abomination and Crypth Fiend added. |n|cffffcc00Level 3|r - Summon 5 Ice Revenants or Abominations  |n|cffffcc00Level 4|r - Summons 4 units. Frost Revenants or Ice Revenants."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Necromantic Summon - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Necromantic Summon - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Necromantic Summon - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Necromantic Summon - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons undead creatures from the ground to aid the necromancer in his battles. These summons are permanent."
+    }
+  ]
+}

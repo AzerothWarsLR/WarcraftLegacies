@@ -1,0 +1,16 @@
+{
+  "Left": 20864,
+  "Bottom": -4416,
+  "Right": 22240,
+  "Top": -3488,
+  "Name": "DragonmawUnlock",
+  "CreationNumber": 479,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

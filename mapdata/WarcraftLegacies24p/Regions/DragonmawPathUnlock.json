@@ -1,0 +1,16 @@
+{
+  "Left": 18336,
+  "Bottom": -5952,
+  "Right": 19040,
+  "Top": -4384,
+  "Name": "DragonmawPathUnlock",
+  "CreationNumber": 73,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

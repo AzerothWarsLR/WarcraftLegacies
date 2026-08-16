@@ -1,0 +1,16 @@
+{
+  "Left": -9248,
+  "Bottom": -13984,
+  "Right": -8320,
+  "Top": -12896,
+  "Name": "GadgetUnlock",
+  "CreationNumber": 498,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

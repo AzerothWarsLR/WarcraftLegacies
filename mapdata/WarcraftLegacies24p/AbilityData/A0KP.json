@@ -1,0 +1,40 @@
+{
+  "OldId": "Ahpe",
+  "NewId": "A0KP",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(CharredAncient) (Icon)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Charred Ancients house tormented forest spirits that lash out at nearby enemies, dealing 10 damage on impact and burning them for 15 per second over 25 seconds."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Burning Spirits"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Burning Spirits"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHatred.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "OldId": "hpea",
+  "NewId": "h09C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,Ahar,Ahrp"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "n0AO,h065,h063,h09B,h076,h09A,h078,h044,h036,hvlt,h02N"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 150
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Dalaran)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Gatherers and builders of the Blue Dragonkin.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962d|n|n|cffffcc00Attacks land units and trees.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Whelp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DragonSpawnWorkerGreen.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Whelp"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNpurpleDragonSpawn.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "DragonSpawn"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

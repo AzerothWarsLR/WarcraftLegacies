@@ -1,0 +1,34 @@
+{
+  "OldId": "BNht",
+  "NewId": "B0AB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been cursed by Majordomo Executus; it deals less damage for a duration."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Curse of Executus"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_Weaken_Red.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASAuraShadow.blp"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BHbd",
+  "NewId": "B0A6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSparkFlare.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Arcane Barrage"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is being bombarded by Arcane Artillery"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl"
+    }
+  ]
+}

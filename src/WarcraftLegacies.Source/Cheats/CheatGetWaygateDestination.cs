@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -27,7 +26,7 @@ public sealed class CheatGetWaygateDestination : Command
       return "You're not selecting any units.";
     }
 
-    var firstUnit = selectedUnits.First();
+    var firstUnit = selectedUnits[0];
     var x = firstUnit.WaygateDestinationX;
     var y = firstUnit.WaygateDestinationY;
 

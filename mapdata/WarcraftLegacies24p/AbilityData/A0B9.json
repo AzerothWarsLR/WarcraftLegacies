@@ -1,0 +1,72 @@
+{
+  "OldId": "AEbl",
+  "NewId": "A0B9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ebl2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dark Green - Andromath)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - \u003CAEbl,Cool1\u003E second cooldown, \u003CAEbl,Cost1\u003E mana. |n|cffffcc00Level 2|r - \u003CAEbl,Cool2\u003E second cooldown, \u003CAEbl,Cost2\u003E mana. |n|cffffcc00Level 3|r - \u003CAEbl,Cool3\u003E second cooldown, \u003CAEbl,Cost3\u003E mana. |n|cffffcc00Level 4|r - .5 second cooldown, 5 mana. |n|cffffcc00Level 5|r - no cooldown, 1 mana."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blink"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Teleports the Mage a short distance, allowing him to move in and out of combat."
+    }
+  ]
+}

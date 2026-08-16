@@ -1,0 +1,16 @@
+{
+  "Left": -13152,
+  "Bottom": -24384,
+  "Right": -12992,
+  "Top": -24224,
+  "Name": "StartQuest2",
+  "CreationNumber": 399,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

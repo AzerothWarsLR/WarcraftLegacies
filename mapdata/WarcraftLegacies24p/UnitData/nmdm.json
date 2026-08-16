@@ -1,0 +1,30 @@
+{
+  "OldId": "nmdm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11J,ACrk,AInv,Amrf"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    }
+  ]
+}

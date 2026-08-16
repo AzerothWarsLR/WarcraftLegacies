@@ -1,0 +1,48 @@
+{
+  "OldId": "LTbs",
+  "NewId": "B020",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "buildings\\other\\MurlocHut1\\MurlocHut1.mdl"
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Building - Troll Hut"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "BuildingShadowSmall"
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.8
+    }
+  ]
+}

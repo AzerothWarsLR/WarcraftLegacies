@@ -1,0 +1,16 @@
+{
+  "Left": 10592,
+  "Bottom": -7328,
+  "Right": 10656,
+  "Top": -7264,
+  "Name": "Dun Morogh Excavation",
+  "CreationNumber": 100,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

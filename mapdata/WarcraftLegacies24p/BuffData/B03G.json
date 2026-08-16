@@ -1,0 +1,19 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B03G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is Berserk; it will attack a lot faster"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Gloves of Fury Berserk"
+    }
+  ]
+}

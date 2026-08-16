@@ -1,0 +1,99 @@
+Frame "BACKDROP" "ArtifactMenuBackdrop" {
+	Height 0.3,  //default Height
+    Width  0.3,  //default Width
+	
+    DecorateFileNames,
+    BackdropTileBackground,
+    BackdropBackground  "EscMenuButtonBackground",
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+    BackdropCornerSize  0.0125,
+    BackdropBackgroundSize  0.256,
+    BackdropBackgroundInsets 0.005 0.005 0.005 0.005,
+    BackdropEdgeFile  "EscMenuBorder",
+}
+
+Frame "TEXT" "ArtifactMenuTitle" {
+    DecorateFileNames,
+    FrameFont "EscMenuTextFont", 0.015, "",
+    FontJustificationH JUSTIFYLEFT,
+    FontJustificationV JUSTIFYMIDDLE,    
+    FontFlags "FIXEDSIZE",
+    FontColor 0.99 0.827 0.0705 1.0,
+    FontHighlightColor 1.0 1.0 1.0 1.0,
+    FontDisabledColor 0.2 0.2 0.2 1.0,
+	FontShadowColor 0.0 0.0 0.0 0.9,	
+    FontShadowOffset 0.002 -0.002,	
+}
+
+Frame "BACKDROP" "ArtifactItemIcon" {
+    DecorateFileNames,
+    BackdropBackgroundSize  0.256,
+}
+
+Frame "BACKDROP" "ArtifactItemBox" {
+	Height 0.3,  //default Height
+    Width  0.3,  //default Width
+	
+    DecorateFileNames,
+    BackdropTileBackground,
+    BackdropBackground  "EscMenuEditBoxBackground",
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+    BackdropCornerSize  0.0125,
+    BackdropBackgroundSize  0.256,
+    BackdropBackgroundInsets 0.005 0.005 0.005 0.005,
+    BackdropEdgeFile  "EscMenuButtonBorder",
+}
+
+Frame "TEXT" "ArtifactItemTitle" {
+    DecorateFileNames,  //Inside this Frame Filenames are lookups in a string table like GameInterface etc.
+    FrameFont "EscMenuTextFont", 0.0105, "",
+    FontJustificationH JUSTIFYCENTER,   //Place the Text in the center < > in regards left right
+    FontJustificationV JUSTIFYMIDDLE,    //place the Text in the middle in regards up down
+    FontJustificationOffset 0.0 -0.002,
+    FontFlags "FIXEDSIZE",
+    FontColor 0.99 0.827 0.0705 1.0,
+    FontHighlightColor 1.0 1.0 1.0 1.0,
+    FontDisabledColor 0.5 0.5 0.5 1.0,
+    FontShadowColor 0.0 0.0 0.0 0.9,
+    FontShadowOffset 0.002 -0.002,
+}
+
+Frame "TEXT" "ArtifactItemOwnerText" {
+    DecorateFileNames,  //Inside this Frame Filenames are lookups in a string table like GameInterface etc.
+    FrameFont "EscMenuTextFont", 0.010, "",
+    FontJustificationH JUSTIFYLEFT,   //Place the Text in the left < > in regards left right
+    FontJustificationV JUSTIFYMIDDLE,    //place the Text in the middle in regards up down
+    FontFlags "FIXEDSIZE",
+    FontColor 1.0 1.0 1.0 1.0,
+    FontHighlightColor 1.0 1.0 1.0 1.0,
+    FontDisabledColor 0.5 0.5 0.5 1.0,
+    FontShadowColor 0.0 0.0 0.0 0.9,
+    FontShadowOffset 0.002 -0.002,
+}
+
+// -- LOCAL TEMPLATES -------------------------------------------------------
+Frame "BACKDROP" "BoxedTextBackgroundTemplate" {
+	DecorateFileNames, //Look-Up Names in some String table (for example gameinterface)
+	BackdropTileBackground, //Tile mode enabled
+	BackdropBackground  "ToolTipBackground", //BackgroundFile
+	BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+	BackdropCornerSize  0.008, //higher numbers make the corners bigger.
+	BackdropBackgroundInsets 0.0022 0.0022 0.0022 0.0022, //makes the background smaller, from the outside.
+	BackdropEdgeFile  "ToolTipBorder", //the border File
+	BackdropBlendAll,
+}
+
+// -- Frames -------------------------------------------------------
+Frame "BACKDROP" "BoxedText" INHERITS "BoxedTextBackgroundTemplate" {
+   UseActiveContext,
+}
+
+Frame "TEXT" "BoxedTextValue" {
+   UseActiveContext,
+   DecorateFileNames,
+   FontFlags "FIXEDSIZE",
+   FrameFont "MasterFont", 0.010, "",
+   FontColor 1.0 1.0 1.0 1.0,
+   FontShadowColor 0.0 0.0 0.0 0.9,
+   FontShadowOffset 0.001 -0.001,
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BNab",
+  "NewId": "B00Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Maiming Strike"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been hit by Maiming Strike. It has reduced attack and move speed and is taking damage."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+    }
+  ]
+}

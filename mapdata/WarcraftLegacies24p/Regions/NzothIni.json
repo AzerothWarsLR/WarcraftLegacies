@@ -1,0 +1,16 @@
+{
+  "Left": -13056,
+  "Bottom": -25216,
+  "Right": -12928,
+  "Top": -25088,
+  "Name": "NzothIni",
+  "CreationNumber": 478,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

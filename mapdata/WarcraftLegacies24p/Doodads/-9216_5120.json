@@ -1,0 +1,23 @@
+[
+  {
+    "TypeId": 1802654286,
+    "Variation": 2,
+    "Position": {
+      "X": -9688.307,
+      "Y": 5366.6294,
+      "Z": 193.81421
+    },
+    "Rotation": 0.92502457,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1802654286,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 13254
+  }
+]

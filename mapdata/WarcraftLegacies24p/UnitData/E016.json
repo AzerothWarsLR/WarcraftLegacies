@@ -1,0 +1,178 @@
+{
+  "OldId": "Ewar",
+  "NewId": "E016",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A01Q,A07N,AOcr,A10Y,Aamk"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KV,AInv"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "usin",
+      "Value": 1600
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 275
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R06T"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Lucille Waycrest"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ruler of House Waycrest"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HumanAssassine.mdl"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Kultiras)"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Lucille"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Lucille"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Lucille"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, exceptional at assasination and disruption.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan learn:|R Maiming Strike, Critical Strike, Vampiric Aura, Shadow Aura|n|n|cffffcc00Attacks land units.|R"
+    }
+  ]
+}

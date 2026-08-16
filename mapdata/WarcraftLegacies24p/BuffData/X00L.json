@@ -1,0 +1,19 @@
+{
+  "OldId": "XErf",
+  "NewId": "X00L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Void Hail (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl"
+    }
+  ]
+}

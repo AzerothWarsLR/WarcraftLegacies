@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WCSharp.Events;
 
 namespace MacroTools.Artifacts;
@@ -67,6 +68,11 @@ public sealed class Artifact
       }
     }
   }
+
+  /// <summary>
+  ///   The name of the <see cref="unit" /> carrying this <see cref="Artifact" />.
+  /// </summary>
+  public string OwningUnitName => OwningUnit != null ? OwningUnit.GetProperName() : Loc.Get("an unknown unit");
 
   /// <summary>
   ///   The <see cref="player" /> owning the <see cref="unit" /> carrying this <see cref="Artifact" />.

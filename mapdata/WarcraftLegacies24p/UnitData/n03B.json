@@ -1,0 +1,113 @@
+{
+  "OldId": "nwgt",
+  "NewId": "n03B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0F2,Awrp,Avul"
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,neutral,standon"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac"
+    },
+    {
+      "Id": "uclb",
+      "Value": 160
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Teleports units to the other Deeprun Tram."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\WarWagon\\WarWagon_V1.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 120
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Deeprun Tram"
+    },
+    {
+      "Id": "uclr",
+      "Value": 120
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

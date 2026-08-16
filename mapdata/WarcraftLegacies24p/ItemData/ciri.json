@@ -1,0 +1,22 @@
+{
+  "OldId": "ciri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 90
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

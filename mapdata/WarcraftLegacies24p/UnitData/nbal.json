@@ -1,0 +1,104 @@
+{
+  "OldId": "nbal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACrk,A095,A07L,ACrf"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ubba",
+      "Value": 35
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 46
+    },
+    {
+      "Id": "ua2b",
+      "Value": 60
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulev",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 85
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Eye of Sargeras)"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lesser Doom Guard"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Doom Guard"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee unit can cast Dispel Magic, Summon Fel Beast, Cripple and Rain of Fire. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

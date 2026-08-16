@@ -1,0 +1,34 @@
+{
+  "OldId": "BEim",
+  "NewId": "B06H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Voodoo Restoration"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Voodoo Restoration"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Voodoo\\VoodooAura.mdl"
+    }
+  ]
+}

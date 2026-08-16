@@ -40,9 +40,9 @@ public sealed class QuestSubdueTauren : QuestData
   /// <inheritdoc/>
   protected override string RewardDescription => Loc.Format(
     "Control of Thunder Bluff and the ability to train {kodo}s' from {beastiary} or gain the artifact {totem}, {gold} gold and {experience} experience points, shared across all your heroes—the fewer heroes you control, the less experience each receives.",
-    ("{kodo}", Loc.Get(GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG))),
-    ("{beastiary}", Loc.Get(GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST))),
-    ("{totem}", Loc.Get(GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM))),
+    ("{kodo}", GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)),
+    ("{beastiary}", GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)),
+    ("{totem}", GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM)),
     ("{gold}", PillageGoldReward.ToString()),
     ("{experience}", PillageExperienceReward.ToString()));
 

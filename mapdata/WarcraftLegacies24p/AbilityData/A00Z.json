@@ -1,0 +1,63 @@
+{
+  "OldId": "Aspb",
+  "NewId": "A00Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "A093,A011,A04M"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spb2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "spb5",
+      "Type": 3,
+      "Value": "sacrifice"
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancerAdept.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lich King spellbook)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Lich King Spellbook"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Power of the Lich King"
+    }
+  ]
+}

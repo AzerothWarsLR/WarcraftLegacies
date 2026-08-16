@@ -1,0 +1,216 @@
+{
+  "OldId": "Obla",
+  "NewId": "O023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.65
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.74
+    },
+    {
+      "Id": "ubba",
+      "Value": 65
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.43
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AOhx,Arsw"
+    },
+    {
+      "Id": "uhos",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Witch Doctor"
+    },
+    {
+      "Id": "uclb",
+      "Value": 50
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Creep-Zul\u0027Gurub)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Troll MageMask.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 50
+    },
+    {
+      "Id": "uhas",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Witch Doctor of the Gurubian Tribe"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Jin\u0027do"
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Witch Doctor"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ForestTroll"
+    }
+  ]
+}

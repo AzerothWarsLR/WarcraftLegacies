@@ -1,0 +1,16 @@
+{
+  "Left": -9824,
+  "Bottom": -2080,
+  "Right": -5824,
+  "Top": 1248,
+  "Name": "Orgrimmar",
+  "CreationNumber": 42,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "ANmd",
+  "NewId": "B02O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Firestorm"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\RainOfFire\\RainOfFireTarget.mdl"
+    }
+  ]
+}

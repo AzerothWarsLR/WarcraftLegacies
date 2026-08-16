@@ -1,0 +1,33 @@
+{
+  "OldId": "nglm",
+  "NewId": "n05P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Land Mine"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

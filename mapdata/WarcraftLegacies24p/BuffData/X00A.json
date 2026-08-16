@@ -1,0 +1,34 @@
+{
+  "OldId": "XNvc",
+  "NewId": "X00A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Tempest (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonRain.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "MonsoonLoop"
+    },
+    {
+      "Id": "fmat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldBuff.mdl"
+    }
+  ]
+}

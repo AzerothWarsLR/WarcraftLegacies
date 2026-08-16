@@ -1,0 +1,22 @@
+{
+  "OldId": "nth1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    }
+  ]
+}

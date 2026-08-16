@@ -1,0 +1,34 @@
+{
+  "OldId": "BOac",
+  "NewId": "B09P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacredStrike.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "United for the Crusade"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Spirit of the Crusade; it has increased attack damage."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "1"
+    }
+  ]
+}

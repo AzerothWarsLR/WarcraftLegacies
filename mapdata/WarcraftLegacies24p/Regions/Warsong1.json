@@ -1,0 +1,16 @@
+{
+  "Left": -10816,
+  "Bottom": -5024,
+  "Right": -10752,
+  "Top": -4960,
+  "Name": "Warsong1",
+  "CreationNumber": 142,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

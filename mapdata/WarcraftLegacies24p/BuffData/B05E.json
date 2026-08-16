@@ -1,0 +1,19 @@
+{
+  "OldId": "Brai",
+  "NewId": "B05E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Summoned Voidwalker"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Pink - Stormreaver Warlock)"
+    }
+  ]
+}

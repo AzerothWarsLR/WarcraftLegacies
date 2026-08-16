@@ -1,0 +1,84 @@
+{
+  "OldId": "Hvsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,ANfl,ANfa,ANms,ANto"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uint",
+      "Value": 28
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, adept at ranged combat and dealing magical damage. |n|cfff5962dCan learn:|R Forked Lightning, Frost Arrows, Mana Shield, Tornado|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Lady Vashj"
+    }
+  ]
+}

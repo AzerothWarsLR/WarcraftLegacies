@@ -1,0 +1,44 @@
+{
+  "OldId": "will",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 45
+    },
+    {
+      "Id": "iper",
+      "Value": 0
+    },
+    {
+      "Id": "iuse",
+      "Value": 0
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Creates a phantom double of a unit."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Create an illusory double of the targeted unit when used. The illusory double deals no damage to enemy units, takes \u003CAIil,DataB1\u003E times the damage from enemy attacks, and will disappear after \u003CAIil,Dur1\u003E seconds or when its hit points reach zero.  |nIllusion lasts 60 seconds."
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

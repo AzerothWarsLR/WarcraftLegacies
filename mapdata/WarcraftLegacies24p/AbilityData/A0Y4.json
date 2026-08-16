@@ -1,0 +1,85 @@
+{
+  "OldId": "Amls",
+  "NewId": "A0Y4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmlc,B07O"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,nonhero,organic"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R07I"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCripple.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(C\u0027thun Silithid Tunneler)"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "MBUR"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Earth Shackles"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Earth Shackles"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Binds the target in Earth energy immoblising them and dealing 30 damage per second. |nLasts 20 seconds."
+    }
+  ]
+}

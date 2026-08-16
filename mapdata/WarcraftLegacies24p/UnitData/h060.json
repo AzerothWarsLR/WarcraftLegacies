@@ -1,0 +1,286 @@
+{
+  "OldId": "hdes",
+  "NewId": "h060",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACsk,Ahrp,Sch5,Sdro,Slo3,A0S6,A0S5"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "h024"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.35
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua2d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 400
+    },
+    {
+      "Id": "ua2b",
+      "Value": 60
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "udu2",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 180
+    },
+    {
+      "Id": "ugor",
+      "Value": 65
+    },
+    {
+      "Id": "ua1h",
+      "Value": 70
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uhd2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 6000
+    },
+    {
+      "Id": "ulum",
+      "Value": 800
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "ua2z",
+      "Value": 1500
+    },
+    {
+      "Id": "usin",
+      "Value": 1500
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "ua1q",
+      "Value": 100
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "uqd2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua1r",
+      "Value": 400
+    },
+    {
+      "Id": "ua2r",
+      "Value": 700
+    },
+    {
+      "Id": "urpp",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 14
+    },
+    {
+      "Id": "ua2s",
+      "Value": 4
+    },
+    {
+      "Id": "usid",
+      "Value": 1900
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,enemies,ground,neutral,nonancient,structure,tree,wall"
+    },
+    {
+      "Id": "utc2",
+      "Value": 5
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R01N,R00C,R006"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormHawkIcon.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stormwind)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "StormhawkShip.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Carrier Flagship"
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Carrier Flagship"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful flagship built from the combined genius of dwarven engineering and Stormwind ship building.|n|cfff5962dAbilities:|R Bombing Run, True Sight, Build Light House|n|n|cff00ffffCan transport 10 units.|R|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land units.|R\r\n"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

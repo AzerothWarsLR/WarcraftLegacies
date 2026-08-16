@@ -1,0 +1,97 @@
+{
+  "OldId": "Rhan",
+  "NewId": "R094",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rats"
+    },
+    {
+      "Id": "gtib",
+      "Value": 0
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": "rmov"
+    },
+    {
+      "Id": "gmo4",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Dark Green/Purple Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves all non-Hero units by increasing their hit points by 300, damage power by 10, and attack and movement speed by 20% and 10%."
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "The Scourge Onslaught"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research The Scourge Onslaught"
+    }
+  ]
+}

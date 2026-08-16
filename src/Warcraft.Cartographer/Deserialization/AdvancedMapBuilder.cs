@@ -156,7 +156,17 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
     };
 
     // Collect required paths and compile
-    var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles(CSharpLua.CoreSystem.Wc3Api.WCSharp);
+    var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles()
+      .Distinct()
+      .ToList();
+
+    // Replace War3Net's Common.lua with WCSharp's, since WCSharp defines its own API.
+    coreSystemFiles.Replace(Path.Combine("./CoreSystem", "Common.lua"), "./Lua/WCSharp.lua");
+
+    // Override War3Net's System.traceback with WCSharp's DebugUtils implementation, since CSharpLua's
+    // CoreSystem stubs it to "" (Warcraft 3's Lua build has no debug library).
+    coreSystemFiles.Add("./Lua/Traceback.lua");
+
     const string blizzardJ = "../../../../../build/blizzard.j";
     const string commonJ = "../../../../../build/common.j";
     var mapScriptBuilder = new MapScriptBuilder();

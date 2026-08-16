@@ -1,0 +1,157 @@
+{
+  "OldId": "uskm",
+  "NewId": "u01C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACmi"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Ethereal"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "uhpm",
+      "Value": 210
+    },
+    {
+      "Id": "umh1",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "hover"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhostMage.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Arathor-Chaplain)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 140
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Fallen Soul"
+    },
+    {
+      "Id": "uclr",
+      "Value": 200
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 40
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 40
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 35
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 35
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Ghost"
+    }
+  ]
+}

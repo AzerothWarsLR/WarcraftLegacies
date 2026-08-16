@@ -1,0 +1,187 @@
+{
+  "OldId": "ANic",
+  "NewId": "A0KC",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nic1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nic1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nic1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nic2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nic2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nic2",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nic3",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nic3",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nic3",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nic4",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nic4",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nic4",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "amho",
+      "Value": 0
+    },
+    {
+      "Id": "amsp",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Purple - Alexandros)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Lethal strike against enemy causes it to explode, dealing 40 damage in an area."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Lethal strike against enemy causes it to explode, dealing 60 damage in an area."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Lethal strike against enemy causes it to explode, dealing 80 damage in an area."
+    }
+  ]
+}

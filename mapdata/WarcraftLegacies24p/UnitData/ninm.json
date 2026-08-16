@@ -1,0 +1,78 @@
+{
+  "OldId": "ninm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A074"
+    },
+    {
+      "Id": "ubld",
+      "Value": 14
+    },
+    {
+      "Id": "ubba",
+      "Value": 35
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 38
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 27
+    },
+    {
+      "Id": "ugor",
+      "Value": 27
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 80
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train In|cffffcc00f|rernal Machine"
+    }
+  ]
+}

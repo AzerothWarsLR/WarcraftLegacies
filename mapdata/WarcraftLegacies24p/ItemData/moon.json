@@ -1,0 +1,35 @@
+{
+  "OldId": "moon",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "iuse",
+      "Value": 0
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Miscellaneous"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "(|cffcece00Q|r) Purchase Moonstone"
+    }
+  ]
+}

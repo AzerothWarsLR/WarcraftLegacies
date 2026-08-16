@@ -1,0 +1,23 @@
+{
+  "OldId": "ANta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Warsong- Ogre Lord)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

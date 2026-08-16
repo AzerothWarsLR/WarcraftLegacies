@@ -1,0 +1,23 @@
+{
+  "OldId": "ngob",
+  "NewId": "n05J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dark Portal Aura Control Nexus"
+    }
+  ]
+}

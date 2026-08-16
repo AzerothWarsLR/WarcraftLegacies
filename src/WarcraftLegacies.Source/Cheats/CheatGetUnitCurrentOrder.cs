@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -25,7 +24,7 @@ public sealed class CheatGetUnitCurrentOrder : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var orderString = "";
-    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
+    var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
 
     orderString += $"{OrderId2String(firstSelectedUnit.CurrentOrder)}: {firstSelectedUnit.CurrentOrder}\n";
 

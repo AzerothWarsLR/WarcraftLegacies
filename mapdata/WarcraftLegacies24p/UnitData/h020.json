@@ -1,0 +1,195 @@
+{
+  "OldId": "hgtw",
+  "NewId": "h020",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 35
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1d",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 59
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "ugol",
+      "Value": 24
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "ulum",
+      "Value": 135
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R00Q"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "utar",
+      "Type": 3,
+      "Value": "ancient,structure"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "uaco,h00H,h022,h019,hpea,nbee"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKeep.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 75
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowKeep"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\human\\TownHall\\TownHall.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 60
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Greymane Manor"
+    },
+    {
+      "Id": "uclr",
+      "Value": 50
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Keep"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

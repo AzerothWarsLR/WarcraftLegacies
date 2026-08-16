@@ -1,0 +1,16 @@
+{
+  "Left": 7872,
+  "Bottom": -31584,
+  "Right": 15552,
+  "Top": -26624,
+  "Name": "InstanceNazjatar",
+  "CreationNumber": 90,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

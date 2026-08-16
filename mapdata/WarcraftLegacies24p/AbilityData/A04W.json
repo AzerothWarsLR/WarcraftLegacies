@@ -1,0 +1,385 @@
+{
+  "OldId": "Awar",
+  "NewId": "A04W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 5,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 6,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 7,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 8,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 5,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 6,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 7,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 8,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 5,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 6,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 7,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 8,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 5,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 6,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 7,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 8,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "alev",
+      "Value": 8
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 5,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 6,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 7,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 8,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNConsecretedStrikes.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Purple - Silverhand Paladin)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Consecrated Strikes"
+    },
+    {
+      "Id": "atac",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Consecrated Strikes - [|cffffcc00Level 8|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 35 damage to nearby units."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 40 damage to nearby units."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 45 damage to nearby units."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 50 damage to nearby units."
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 55 damage to nearby units."
+    },
+    {
+      "Level": 6,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 60 damage to nearby units."
+    },
+    {
+      "Level": 7,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 65 damage to nearby units."
+    },
+    {
+      "Level": 8,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will deal 70 damage to nearby units."
+    }
+  ]
+}

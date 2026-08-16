@@ -28,6 +28,8 @@ Show quest text: " + playerSettings.ShowQuestText + @"
 
 Play dialogue: " + playerSettings.PlayDialogue + @"
 
-Show captions: " + playerSettings.ShowCaptions;
+Show captions: " + playerSettings.ShowCaptions + @"
+
+Smart follow: " + playerSettings.SmartFollowEnabled;
   }
 }

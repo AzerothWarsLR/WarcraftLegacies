@@ -1,0 +1,108 @@
+{
+  "OldId": "hwtw",
+  "NewId": "h039",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A00E,Adts"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 4
+    },
+    {
+      "Id": "ugor",
+      "Value": 3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "ulum",
+      "Value": 5
+    },
+    {
+      "Id": "ulur",
+      "Value": 15
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "h03A,h03B,h00B,ndgt,negt,n06Y,hgtw,hctw,hatw"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R03A,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h01R"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Gilneas)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GilneasTower.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Observation tower.|n|cff6480ffLordaeron|r/|cff556b2fArathor|r/|cffffd700Khaz Modan |r|cfff5962dUpgrades Into:|R Guard Tower, Cannon Tower|N|cff556b2fArathor|r/|cff828282Dalaran|r/|cff00ffffQuel\u0027Thalas|r |cfff5962dUpgrades Into:|R Arcane Tower|N|cff828282Dalaran|R |cfff5962dUpgrades Into:|R Kirin Tor Tower|N|cff00ffffQuel\u0027Thalas|r |cfff5962dUpgrades Into:|R Sun Tower"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTowerScout.blp"
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

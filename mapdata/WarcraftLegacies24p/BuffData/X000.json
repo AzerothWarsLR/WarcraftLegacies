@@ -1,0 +1,19 @@
+{
+  "OldId": "XEsf",
+  "NewId": "X000",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "WrathHighElves"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl"
+    }
+  ]
+}

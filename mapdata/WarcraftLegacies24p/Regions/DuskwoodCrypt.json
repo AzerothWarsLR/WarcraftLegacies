@@ -1,0 +1,16 @@
+{
+  "Left": 9376,
+  "Bottom": -16032,
+  "Right": 9728,
+  "Top": -15616,
+  "Name": "DuskwoodCrypt",
+  "CreationNumber": 529,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

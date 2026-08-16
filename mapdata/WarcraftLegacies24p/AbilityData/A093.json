@@ -1,0 +1,116 @@
+{
+  "OldId": "Aspo",
+  "NewId": "A093",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B000,B000"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShardPassive.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Red - Lich King)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Frost Bite"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShard.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Frost Bite - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The Lich King\u0027s attacks completely freeze enemy units stopping them from moving or attacking, and dealing damage to them while frozen. Duration is only 10% effective on heroes.|n|n|cffffcc00Level 1|r - Lasts 2 seconds on units, dealing 20 damage per second. |n|cffffcc00Level 2|r - Lasts 3 seconds on units, dealing 30 damage per second. |n|cffffcc00Level 3|r - Lasts 4 seconds on units, dealing 40 damage per second. |n|cffffcc00Level 4|r - Lasts 5 seconds on units, dealing 50 damage per second."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Frost Bite"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Lich King\u0027s attacks stop a unit from attacking or moving for 3(0.3) seconds dealing 30 damage per second while frozen."
+    }
+  ]
+}

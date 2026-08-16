@@ -1,0 +1,38 @@
+{
+  "OldId": "YOsw",
+  "NewId": "D03F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "danf",
+      "Value": 1
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "buildings\\orc\\WatchTower\\WatchTower.mdl"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Orgrimmar Gate Tower"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

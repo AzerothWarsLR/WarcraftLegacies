@@ -1,0 +1,19 @@
+{
+  "OldId": "AEsd",
+  "NewId": "B001",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "WrathHighElves target"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl"
+    }
+  ]
+}

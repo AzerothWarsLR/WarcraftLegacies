@@ -91,7 +91,7 @@ public sealed class FontOfPower : Power
 
     foreach (var objective in _objectives)
     {
-      RemoveObjective(objective);
+      objective.ProgressChanged -= OnObjectiveProgressChanged;
     }
 
     _objectives.Clear();
@@ -158,12 +158,6 @@ public sealed class FontOfPower : Power
     _objectives.Add(objective);
     objective.OnAdd(faction);
     objective.ProgressChanged += OnObjectiveProgressChanged;
-  }
-
-  private void RemoveObjective(Objective objective)
-  {
-    _objectives.Remove(objective);
-    objective.ProgressChanged -= OnObjectiveProgressChanged;
   }
 
   private void OnObjectiveProgressChanged(Objective _) => RefreshIsActive();

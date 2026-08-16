@@ -256,12 +256,7 @@ public abstract class Faction
   /// <param name="whichObject">The object ID of a unit, building, or research.</param>
   public int GetObjectLimit(int whichObject)
   {
-    if (_objectLimits.TryGetValue(whichObject, out var limit))
-    {
-      return limit;
-    }
-
-    return 0;
+    return _objectLimits.GetValueOrDefault(whichObject);
   }
 
   /// <summary>
@@ -294,15 +289,6 @@ public abstract class Faction
     }
 
     PowerRemoved?.Invoke(new FactionPowerEventArgs(this, power));
-  }
-
-  /// <summary>
-  ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
-  /// </summary>
-  public bool TryGetPowerByName(string name, [MaybeNullWhen(false)] out Power power)
-  {
-    power = _powers.FirstOrDefault(x => x.Name == name);
-    return power != null;
   }
 
   /// <summary>Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.</summary>
@@ -367,7 +353,7 @@ public abstract class Faction
     return questData;
   }
 
-  public int GetObjectLevel(int obj) => _objectLevels.TryGetValue(obj, out var objectLevel) ? objectLevel : 0;
+  public int GetObjectLevel(int obj) => _objectLevels.GetValueOrDefault(obj);
 
   /// <summary>Sets the current level of a particular research for the <see cref="Faction"/>.</summary>
   public void SetObjectLevel(int obj, int level)
@@ -459,15 +445,6 @@ public abstract class Faction
     {
       yield return power;
     }
-  }
-
-  /// <summary>
-  ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
-  /// </summary>
-  public QuestData? GetQuestByTitle(string parameter)
-  {
-    _questsByName.TryGetValue(parameter.ToLower(), out var quest);
-    return quest;
   }
 
   /// <summary>

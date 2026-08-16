@@ -1,0 +1,100 @@
+{
+  "OldId": "Aamk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 5,
+      "Pointer": 1,
+      "Id": "Iagi",
+      "Value": 15
+    },
+    {
+      "Level": 5,
+      "Pointer": 2,
+      "Id": "Iint",
+      "Value": 15
+    },
+    {
+      "Level": 5,
+      "Pointer": 3,
+      "Id": "Istr",
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ihid",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ihid",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ihid",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ihid",
+      "Value": 1
+    },
+    {
+      "Level": 5,
+      "Pointer": 4,
+      "Id": "Ihid",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 5
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(All Heroes)"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Attribute Bonus - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Gives a permanent bonus to Agility, Intelligence, and Strength. Each level adds 3 points to all stats."
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Attribute Bonus - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a total of \u003CAamk,DataA5\u003E points to Agility, Intelligence, and Strength"
+    }
+  ]
+}

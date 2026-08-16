@@ -1,0 +1,26 @@
+{
+  "OldId": "AIva",
+  "NewId": "A0C0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ivam",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Mask of Death Dreadlord)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Vampiric Attack"
+    }
+  ]
+}

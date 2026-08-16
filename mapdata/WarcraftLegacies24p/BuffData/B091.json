@@ -1,0 +1,34 @@
+{
+  "OldId": "Buhf",
+  "NewId": "B091",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosiveShot.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Powered Up Ammunition"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This structure is under the effect of Powered Up Ammunition. It has increased damage."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_MechanicGears.mdx"
+    }
+  ]
+}

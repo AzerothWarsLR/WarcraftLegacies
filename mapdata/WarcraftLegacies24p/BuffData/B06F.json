@@ -1,0 +1,39 @@
+{
+  "OldId": "BHtc",
+  "NewId": "B06F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "commoner"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrushingWave.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Termal Erruption"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been hit by Termal Erruption; its movement speed and attack rate are reduced."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WaterElementalMissile\\WaterElementalMissile.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

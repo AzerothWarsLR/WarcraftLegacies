@@ -97,6 +97,11 @@ public static class CommandManager
     if (command.ExpectedParameterCount.Maximum == 1)
     {
       var commandLength = command.CommandText.Length + Prefix.Length + 1;
+      if (commandLength >= inputString.Length)
+      {
+        return Array.Empty<string>();
+      }
+
       return new string[]
       {
         inputString.Substring(commandLength).Replace("\"", string.Empty)

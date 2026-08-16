@@ -1,0 +1,128 @@
+{
+  "OldId": "hkni",
+  "NewId": "h0A3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A020,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 8
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 31
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "uhpm",
+      "Value": 995
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h07Z,h06G"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0SH"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 150
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBanditLord.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(argent)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GoldenKnight.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Lancer"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Lancer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mounted Soldier for the Argent Cause.|n|cfff5962dAbilities:|R Charge|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

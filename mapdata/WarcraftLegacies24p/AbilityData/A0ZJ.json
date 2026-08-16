@@ -1,0 +1,55 @@
+{
+  "OldId": "Ahlh",
+  "NewId": "A0ZJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Generator will need one of the following power sources to power the Dimensional Ship:|n-The Eye of Sargeras|n-The Crown of the Triumvirate|n-Crown of the Eastern Kingdoms|n-Zin\u0027rokh, Destroyer of Worlds|n-Sulfuras, Hand of Ragnaros"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases the rate at which this unit gathers lumber."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASArcaneEnergy.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Power Sources"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Power Sources"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Icon Draenei)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ]
+}

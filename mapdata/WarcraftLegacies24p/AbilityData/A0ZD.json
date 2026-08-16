@@ -1,0 +1,70 @@
+{
+  "OldId": "Ahsb",
+  "NewId": "A0ZD",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hsb3",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hsb2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hsb1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Holy Arrows"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases damage dealt to Heavy Armor by 30."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Holy Arrows"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "acap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSearingArrowAlt.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Draenei)"
+    }
+  ]
+}

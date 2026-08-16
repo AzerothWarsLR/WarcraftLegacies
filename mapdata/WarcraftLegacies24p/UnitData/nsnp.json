@@ -1,0 +1,75 @@
+{
+  "OldId": "nsnp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rnsb,Rhme,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 675
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adtg,Aien,Aspo,Asb3"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h06S"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uclb",
+      "Value": 255
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Illidari)"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "OldId": "ACbh",
+  "NewId": "A064",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbh3",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Yellow - Thane, Grey- Ogre Lord)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Heavy Bash"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 20% chance that an attack will do 50 bonus damage and stun an opponent for 2 seconds. (1 for heroes)"
+    }
+  ]
+}

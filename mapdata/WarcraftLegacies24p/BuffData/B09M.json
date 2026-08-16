@@ -1,0 +1,29 @@
+{
+  "OldId": "Bmlt",
+  "NewId": "B09M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is being assasinated"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Assasinate"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacrifice.blp"
+    }
+  ]
+}

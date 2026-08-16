@@ -1,0 +1,16 @@
+{
+  "Left": -16832,
+  "Bottom": 1344,
+  "Right": -15168,
+  "Top": 2496,
+  "Name": "AstranaarUnlock",
+  "CreationNumber": 377,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

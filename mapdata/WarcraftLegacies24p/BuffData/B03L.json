@@ -1,0 +1,44 @@
+{
+  "OldId": "Brej",
+  "NewId": "B03L",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRepairOn.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mech Kit"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This building is being repaired by a tinker; it is healing hit points over time."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mech Kit"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\mechkit.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

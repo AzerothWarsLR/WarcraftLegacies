@@ -1,0 +1,98 @@
+{
+  "OldId": "nmpe",
+  "NewId": "n0B5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "h06U,n0B2,h09E,n0AV,n0AW,n0B3,n0AX,n0AU,n0AR"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "ulur",
+      "Value": 25
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "peon,sapper"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Arlm,ANha,Arep,A106"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": " (Yogg, Worker)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessMadness.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ScavangerCreeper.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Scavenger"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Scavenger"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Shade"
+    }
+  ]
+}

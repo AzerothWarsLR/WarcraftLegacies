@@ -1,0 +1,23 @@
+{
+  "OldId": "Asta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Frostwolf - Witch Doctor)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

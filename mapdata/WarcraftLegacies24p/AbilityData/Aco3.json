@@ -1,0 +1,24 @@
+{
+  "OldId": "Aco3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,alive,allies,ancient,bridge,dead,debris,decoration,enemies,friend,ground,hero,invulnerable,item,mechanical,neutral,nonancient,nonhero,nonsapper,none,notself,organic,player,self,structure,sapper,terrain,tree,vulnerable,wall,ward"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(sent)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

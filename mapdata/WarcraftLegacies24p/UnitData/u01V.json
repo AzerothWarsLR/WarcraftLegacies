@@ -1,0 +1,238 @@
+{
+  "OldId": "ubdd",
+  "NewId": "u01V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0BM,A0NF,ACrk"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 98
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 55
+    },
+    {
+      "Id": "ua1h",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1225
+    },
+    {
+      "Id": "ulev",
+      "Value": 8
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upri",
+      "Value": 13
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "ua2s",
+      "Value": 7
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 3
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 575
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0NH"
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Ethereal"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaleValkyr.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(forsaken)"
+    },
+    {
+      "Id": "uclg",
+      "Value": 170
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "uclr",
+      "Value": 170
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Val\u0027kyr"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful Flying caster Unit.|n|cfff5962dAbilities:|R Resurrection, Mass Animate Dead, Resistant Skin|n|n|cff99b4d1Can only train 2 (4) (9).|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Val\u0027kyr"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ValkyrPale.mdl"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 150
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroFemaleDeathKnight"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\DragonHawkMissile\\DragonHawkMissile.mdl"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

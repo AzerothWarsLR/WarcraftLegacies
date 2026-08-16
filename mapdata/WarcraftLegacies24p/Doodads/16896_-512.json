@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 829378380,
+    "Variation": 0,
+    "Position": {
+      "X": 17097.916,
+      "Y": -986.98804,
+      "Z": 302.5085
+    },
+    "Rotation": 4.094025,
+    "Scale": {
+      "X": 1.473275,
+      "Y": 1.473275,
+      "Z": 1.473275
+    },
+    "SkinId": 829378380,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7566
+  },
+  {
+    "TypeId": 2004112462,
+    "Variation": 1,
+    "Position": {
+      "X": 16768,
+      "Y": -896,
+      "Z": 191
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 2004112462,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 396
+  },
+  {
+    "TypeId": 829706060,
+    "Variation": 0,
+    "Position": {
+      "X": 16961.57,
+      "Y": -952.3336,
+      "Z": 246.98955
+    },
+    "Rotation": 0.7504917,
+    "Scale": {
+      "X": 0.81566215,
+      "Y": 0.81566215,
+      "Z": 0.81566215
+    },
+    "SkinId": 829706060,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 4271
+  },
+  {
+    "TypeId": 2004112462,
+    "Variation": 0,
+    "Position": {
+      "X": 16960,
+      "Y": -832,
+      "Z": 201.125
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 2004112462,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 372
+  },
+  {
+    "TypeId": 1144008770,
+    "Variation": 8,
+    "Position": {
+      "X": 16768,
+      "Y": -768,
+      "Z": 183.25
+    },
+    "Rotation": 2.6179938,
+    "Scale": {
+      "X": 1.014948,
+      "Y": 1.014948,
+      "Z": 1.014948
+    },
+    "SkinId": 1144008770,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 658
+  }
+]

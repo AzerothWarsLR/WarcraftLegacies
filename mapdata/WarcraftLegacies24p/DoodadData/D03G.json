@@ -1,0 +1,74 @@
+{
+  "OldId": "ZSrb",
+  "NewId": "D03G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Ny\u0027alotha Ruins"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "N,*"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 90
+    },
+    {
+      "Variation": 2,
+      "Id": "dvb1",
+      "Value": 90
+    },
+    {
+      "Variation": 3,
+      "Id": "dvb1",
+      "Value": 90
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 2,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 3,
+      "Id": "dvg1",
+      "Value": 50
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 60
+    },
+    {
+      "Variation": 2,
+      "Id": "dvr1",
+      "Value": 60
+    },
+    {
+      "Variation": 3,
+      "Id": "dvr1",
+      "Value": 60
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "OldId": "AUcs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 2400
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 2600
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ucs2",
+      "Type": 2,
+      "Value": 2200
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Blue - Mal\u0027Ganis/Detheroc)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - \u003CAUcs,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CAUcs,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CAUcs,DataA3\u003E damage per unit.|n|cffffcc00Level 4|r - \u003CAUcs,DataA4\u003E damage per unit."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Carrion Swarm - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a horde of bats to deal \u003CAUcs,DataA4\u003E damage to each enemy unit in a cone."
+    }
+  ]
+}

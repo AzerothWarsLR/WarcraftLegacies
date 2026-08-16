@@ -1,0 +1,82 @@
+{
+  "OldId": "AIcb",
+  "NewId": "A0X9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idic",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,ward"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AD"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Iarp",
+      "Value": 3
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Serrated Bite"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": " (Core Hound, Yellow)"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aspt",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

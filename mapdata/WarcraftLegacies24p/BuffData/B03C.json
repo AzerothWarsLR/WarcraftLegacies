@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B03C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Death Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Death Aura; it has significally decreased armor."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Death Aura"
+    }
+  ]
+}

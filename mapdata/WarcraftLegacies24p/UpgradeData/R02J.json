@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "NewId": "R02J",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Legion not already summoned"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "YTfb",
+  "NewId": "B011",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Pathing Blocker (Huge)"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Unflyable.tga"
+    }
+  ]
+}

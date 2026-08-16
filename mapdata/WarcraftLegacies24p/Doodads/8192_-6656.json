@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 1462841412,
+    "Variation": 3,
+    "Position": {
+      "X": 7977.8325,
+      "Y": -6946.091,
+      "Z": 107.411934
+    },
+    "Rotation": 4.7909293,
+    "Scale": {
+      "X": 0.85510004,
+      "Y": 0.85510004,
+      "Z": 0.85510004
+    },
+    "SkinId": 1462841412,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 13388
+  },
+  {
+    "TypeId": 1462841412,
+    "Variation": 1,
+    "Position": {
+      "X": 8218.941,
+      "Y": -7116.53,
+      "Z": 116.96362
+    },
+    "Rotation": 5.3326797,
+    "Scale": {
+      "X": 1.0080999,
+      "Y": 1.0080999,
+      "Z": 1.0080999
+    },
+    "SkinId": 1462841412,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 13387
+  },
+  {
+    "TypeId": 925904962,
+    "Variation": 1,
+    "Position": {
+      "X": 7936,
+      "Y": -6848,
+      "Z": 104.375
+    },
+    "Rotation": 6.2831855,
+    "Scale": {
+      "X": 1.0977752,
+      "Y": 1.0977752,
+      "Z": 1.0977752
+    },
+    "SkinId": 925904962,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3487
+  },
+  {
+    "TypeId": 925904962,
+    "Variation": 2,
+    "Position": {
+      "X": 8384,
+      "Y": -7040,
+      "Z": 126
+    },
+    "Rotation": 6.2831855,
+    "Scale": {
+      "X": 0.9679617,
+      "Y": 0.9679617,
+      "Z": 0.9679617
+    },
+    "SkinId": 925904962,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3489
+  },
+  {
+    "TypeId": 925904962,
+    "Variation": 4,
+    "Position": {
+      "X": 8384,
+      "Y": -6848,
+      "Z": 102.375
+    },
+    "Rotation": 6.2831855,
+    "Scale": {
+      "X": 0.9045809,
+      "Y": 0.9045809,
+      "Z": 0.9045809
+    },
+    "SkinId": 925904962,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3490
+  }
+]

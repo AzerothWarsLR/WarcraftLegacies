@@ -1,0 +1,39 @@
+{
+  "OldId": "LWw0",
+  "NewId": "D01G",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Lava River"
+    },
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\MordorLavafall.mdl"
+    },
+    {
+      "Variation": 1,
+      "Id": "dvg1",
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": "dvb1",
+      "Value": 0
+    },
+    {
+      "Variation": 1,
+      "Id": "dvr1",
+      "Value": 175
+    }
+  ]
+}

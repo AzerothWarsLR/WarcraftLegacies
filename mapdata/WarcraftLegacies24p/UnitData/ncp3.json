@@ -1,0 +1,13 @@
+{
+  "OldId": "ncp3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper,townhall,standon"
+    }
+  ]
+}

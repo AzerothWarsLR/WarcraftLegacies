@@ -1,0 +1,35 @@
+{
+  "OldId": "AIpg",
+  "NewId": "A0HQ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfLightning.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Purging Attack"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 30% (10 on heroes) chance to purge a unit on attack."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Purging Attack"
+    }
+  ]
+}

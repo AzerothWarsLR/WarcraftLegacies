@@ -1,0 +1,56 @@
+{
+  "OldId": "ckng",
+  "NewId": "I01I",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0F6,AIi1"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIfu"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShard.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "A fragment of the Demon Soul, grants bonus intelligence."
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tome\\tome.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Azure Fragment"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Intelligence by 10.|n|cffffcc00Lore|r|n|cffffdeadA vibrant glowing fragment of the Demon Soul."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "OldId": "ACsf",
+  "NewId": "AeoK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "u018"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEyeOfKilrogg.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel Horde-Zeth\u0027Gor)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon Eye of Grillok"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Eyes of Grillok"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons 3 invulnerable Eyes of Grillok. |n|cffffcc00Lasts 180 seconds.|n240 second cooldown.|R |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -18912,
+  "Bottom": 3872,
+  "Right": -18880,
+  "Top": 3904,
+  "Name": "WaveCrash",
+  "CreationNumber": 375,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

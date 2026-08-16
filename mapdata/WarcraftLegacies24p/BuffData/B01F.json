@@ -1,0 +1,29 @@
+{
+  "OldId": "Buhf",
+  "NewId": "B01F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCharm.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Arcane Blinding"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Arcane Blinding; it has a chance to miss on attacks and moves slower."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": 6592,
+  "Bottom": 6656,
+  "Right": 7840,
+  "Top": 8864,
+  "Name": "Vandermar Village",
+  "CreationNumber": 153,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

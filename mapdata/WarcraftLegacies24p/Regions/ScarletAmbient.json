@@ -1,0 +1,16 @@
+{
+  "Left": -25152,
+  "Bottom": 15072,
+  "Right": -22592,
+  "Top": 17696,
+  "Name": "ScarletAmbient",
+  "CreationNumber": 460,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

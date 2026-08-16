@@ -1,0 +1,30 @@
+{
+  "OldId": "Srtt",
+  "NewId": "S00C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R045"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "n0AD"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Earth Golem-Crystal Golem)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

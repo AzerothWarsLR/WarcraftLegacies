@@ -1,0 +1,19 @@
+{
+  "OldId": "CRrk",
+  "NewId": "D00C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Unslanted darkrock"
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

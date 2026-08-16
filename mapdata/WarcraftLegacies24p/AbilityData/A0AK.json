@@ -1,0 +1,38 @@
+{
+  "OldId": "ANre",
+  "NewId": "A0AK",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B099"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Arm1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Arm2",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Moon Beam) (Scythe of Elune)"
+    }
+  ]
+}

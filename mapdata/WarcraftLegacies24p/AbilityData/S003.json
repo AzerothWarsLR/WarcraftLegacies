@@ -1,0 +1,26 @@
+{
+  "OldId": "Sshm",
+  "NewId": "S003",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Shm1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Sentinels- most units)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    }
+  ]
+}

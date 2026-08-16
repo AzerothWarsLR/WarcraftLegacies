@@ -1,0 +1,32 @@
+{
+  "OldId": "nwrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 37
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "AImx"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavy melee unit. Magic immune. |n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
+}

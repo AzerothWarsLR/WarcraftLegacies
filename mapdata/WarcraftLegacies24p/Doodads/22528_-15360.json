@@ -1,0 +1,107 @@
+[
+  {
+    "TypeId": 828919628,
+    "Variation": 0,
+    "Position": {
+      "X": 22506.385,
+      "Y": -15760.1,
+      "Z": 60.259274
+    },
+    "Rotation": 5.060318,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 828919628,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38412
+  },
+  {
+    "TypeId": 1650545498,
+    "Variation": 0,
+    "Position": {
+      "X": 22697.89,
+      "Y": -15722.588,
+      "Z": 38.5385
+    },
+    "Rotation": 1.6126349,
+    "Scale": {
+      "X": 0.44999987,
+      "Y": 0.44999987,
+      "Z": 0.5999999
+    },
+    "SkinId": 1650545498,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38334
+  },
+  {
+    "TypeId": 2003982158,
+    "Variation": 0,
+    "Position": {
+      "X": 22594.842,
+      "Y": -15617.608,
+      "Z": 51.199997
+    },
+    "Rotation": 1.2293326,
+    "Scale": {
+      "X": 0.5499999,
+      "Y": 0.5499999,
+      "Z": 0.5499999
+    },
+    "SkinId": 2003982158,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38320
+  },
+  {
+    "TypeId": 2004112474,
+    "Variation": 3,
+    "Position": {
+      "X": 22400,
+      "Y": -15808,
+      "Z": 68.875
+    },
+    "Rotation": 5.305801,
+    "Scale": {
+      "X": 0.6548204,
+      "Y": 0.6548204,
+      "Z": 0.6548204
+    },
+    "SkinId": 2004112474,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38265
+  },
+  {
+    "TypeId": 2004112474,
+    "Variation": 9,
+    "Position": {
+      "X": 22336,
+      "Y": -15744,
+      "Z": 60.125
+    },
+    "Rotation": 3.3161256,
+    "Scale": {
+      "X": 0.8980224,
+      "Y": 0.8980224,
+      "Z": 0.8980224
+    },
+    "SkinId": 2004112474,
+    "State": 2,
+    "Life": 100,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 38263
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "OldId": "XOkt",
+  "NewId": "B00V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bvcb",
+      "Value": 50
+    },
+    {
+      "Id": "bvcg",
+      "Value": 50
+    },
+    {
+      "Id": "bvcr",
+      "Value": 50
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Throne of Kil\u0027Jaeden"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Default.tga"
+    }
+  ]
+}

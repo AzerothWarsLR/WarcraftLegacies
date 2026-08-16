@@ -1,0 +1,108 @@
+{
+  "OldId": "Rerh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gglm",
+      "Value": 100
+    },
+    {
+      "Id": "glmm",
+      "Value": 75
+    },
+    {
+      "Id": "glvl",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 45
+    },
+    {
+      "Id": "glmb",
+      "Value": 25
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Brown Research)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 3,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade [|cffffcc00A|r] - Reinforced Hides"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade [|cffffcc00A|r] - Improved Reinforced Hides"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Upgrade [|cffffcc00A|r] - Advanced Reinforced Hides"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves the armor of Keepers of the Grove, Dryads, Druid of the Claw, Mountain Giants, Furbolgs, Faerie Dragons, Chimaera, Cenarius\u0027 summons, and Broll Bearmantle."
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further improves the armor of Keepers of the Grove, Dryads, Druid of the Claw, Mountain Giants, Furbolgs, Faerie Dragons, Chimaera, Cenarius\u0027 summons, and Broll Bearmantle."
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further improves the armor of Keepers of the Grove, Dryads, Druid of the Claw, Mountain Giants, Furbolgs, Faerie Dragons, Chimaera, Cenarius\u0027 summons, and Broll Bearmantle."
+    }
+  ]
+}

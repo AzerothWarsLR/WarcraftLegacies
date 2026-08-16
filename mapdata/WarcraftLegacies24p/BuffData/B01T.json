@@ -1,0 +1,39 @@
+{
+  "OldId": "BUau",
+  "NewId": "B01T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNQuillSpray.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Corrosion Aura"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the effects of Corrosion Aura; it has a decreased movement speed."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Corrosion Aura"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+    }
+  ]
+}

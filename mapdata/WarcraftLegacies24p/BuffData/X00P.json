@@ -1,0 +1,29 @@
+{
+  "OldId": "XErf",
+  "NewId": "X00P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "war3mapImported\\Cannonball D Rain.mdx"
+    },
+    {
+      "Id": "fefs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Make It Rain (Effect)"
+    }
+  ]
+}

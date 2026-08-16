@@ -1,0 +1,144 @@
+{
+  "OldId": "oshm",
+  "NewId": "o04Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A03D,A0SN,A0YD,Aion"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ubdi",
+      "Value": 4
+    },
+    {
+      "Id": "ubba",
+      "Value": 9
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R02A,R07O,Rguv"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0YD"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Master of magics from Ny\u0027alotha.|n|cfff5962dAbilities:|R Parasite|n|cfff5962dCan Learn:|R Anti-magic Shell, Suppression|n|n|cffffcc00Attacks land and air units.|R\r\n"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessSorcerer.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOne_Sorcerer.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Fateweaver"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Fateweaver"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "KelThuzadNecro"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Parasite,- Parasite|n- Anti-magic Shell,- Parasite|n- Anti-magic Shell|n- Suppression"
+    }
+  ]
+}

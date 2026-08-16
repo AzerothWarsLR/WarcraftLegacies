@@ -1,0 +1,16 @@
+{
+  "Left": -2208,
+  "Bottom": 9152,
+  "Right": 512,
+  "Top": 12096,
+  "Name": "InstanceSargerasTomb",
+  "CreationNumber": 157,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

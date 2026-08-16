@@ -1,0 +1,13 @@
+{
+  "OldId": "AIpg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfLightning.blp"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "OldId": "nwna",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACbh,ACrn"
+    },
+    {
+      "Id": "ubdi",
+      "Value": 1
+    },
+    {
+      "Id": "ubba",
+      "Value": 30
+    },
+    {
+      "Id": "ubsi",
+      "Value": 1
+    }
+  ]
+}

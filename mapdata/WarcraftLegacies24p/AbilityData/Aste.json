@@ -1,0 +1,15 @@
+{
+  "OldId": "Aste",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Udp1",
+      "Type": 2,
+      "Value": 100
+    }
+  ]
+}

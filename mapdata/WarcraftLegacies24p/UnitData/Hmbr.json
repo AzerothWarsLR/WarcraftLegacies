@@ -1,0 +1,108 @@
+{
+  "OldId": "Hmbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 20
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A0K3,ANdh,A0I9,AHav"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "uint",
+      "Value": 18
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Mountain Prince"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Khaz Modan)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "High Thane of the Bronzebeards"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Mountain Prince"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at offensive combat and disrupting enemy troops.|n|cfff5962dCan learn:|R Seismic Slam, Drunken Haze, Storm Hammers, Avatar|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Muradin"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "XNmo",
+  "NewId": "X008",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Firestorm (Effect)"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeEmbers.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "RainOfFireLoop"
+    }
+  ]
+}

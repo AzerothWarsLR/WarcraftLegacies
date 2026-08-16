@@ -1,0 +1,161 @@
+{
+  "OldId": "ndgt",
+  "NewId": "n057",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0LV,Avul"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A04X"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 36
+    },
+    {
+      "Id": "ugol",
+      "Value": 12
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1900
+    },
+    {
+      "Id": "ulur",
+      "Value": 150
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1500
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1200
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,R00L,Rhac"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ubdg",
+      "Value": 0
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": -20
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\WaterElemental\\WaterElemental.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Water Elemental Sentry"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

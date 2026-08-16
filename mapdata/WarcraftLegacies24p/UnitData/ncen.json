@@ -1,0 +1,30 @@
+{
+  "OldId": "ncen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A020"
+    },
+    {
+      "Id": "ubba",
+      "Value": 7
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.45
+    },
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "uhpm",
+      "Value": 925
+    }
+  ]
+}

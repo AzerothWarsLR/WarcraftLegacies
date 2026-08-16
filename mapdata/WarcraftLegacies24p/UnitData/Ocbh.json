@@ -1,0 +1,133 @@
+{
+  "OldId": "Ocbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AOr3,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A01R,A0WM,A0NI,A08S"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 16
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 35
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.8
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00W"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R05H"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Cairne"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Chieftain of the Bloodhoof"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Cairne"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Revive Cairne"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at absorbing damage and melee combat.|n|cfff5962dAbilities:|r Reincarnation|n|cfff5962dCan learn:|R Shockwave, War Stomp, Ancestors\u0027 Blessing, Totemic Spirits|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "upor",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

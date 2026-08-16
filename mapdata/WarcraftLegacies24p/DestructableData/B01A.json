@@ -1,0 +1,19 @@
+{
+  "OldId": "DTg5",
+  "NewId": "B01A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 9001
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Greymane\u0027s Gate"
+    }
+  ]
+}

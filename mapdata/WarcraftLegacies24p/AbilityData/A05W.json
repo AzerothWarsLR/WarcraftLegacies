@@ -1,0 +1,24 @@
+{
+  "OldId": "AUds",
+  "NewId": "A05W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonhero,player,vulnerable"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

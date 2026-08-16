@@ -1,0 +1,16 @@
+{
+  "Left": 17952,
+  "Bottom": -14720,
+  "Right": 19872,
+  "Top": -9504,
+  "Name": "BurningSteppeAmbient2",
+  "CreationNumber": 350,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 255,
+    "A": 255
+  }
+}
