@@ -190,7 +190,7 @@ public static class MmdEvents
       return;
     }
 
-    var cost = GetUnitGoldCost(@event.TrainedUnitType);
+    var cost = IsUnitIdType(@event.TrainedUnitType, unittype.Hero) ? PlayerDistributor.HeroCost : GetUnitGoldCost(@event.TrainedUnitType);
     if (cost > 0)
     {
       _trackedGoldSpent[p] += cost;
