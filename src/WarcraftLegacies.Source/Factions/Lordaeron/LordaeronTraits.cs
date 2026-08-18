@@ -1,5 +1,7 @@
-﻿using MacroTools.UnitTraits;
+﻿using System.Collections.Generic;
+using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits;
+using WarcraftLegacies.Source.Shared.UnitTraits.BonusDamageAttack;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
@@ -13,5 +15,24 @@ public static class LordaeronTraits
       DummyOrderId = ORDER_RESURRECTION,
       ProcChance = 0.2f
     }, UNIT_H01J_THE_ASHBRINGER_LORDAERON);
+
+    var scourgeBaneConditions = new List<DamageCondition>
+    {
+        new() {
+          Damage = 100,
+          Condition = target => target.Race == RACE_UNDEAD && target.IsUnitType(unittype.Summoned),
+          Effect = "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
+        },
+        new() {
+          Damage = 33,
+          Condition = target => target.Race == RACE_UNDEAD,
+          Effect = "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
+        },
+    };
+
+    UnitTypeTraitRegistry.Register(new BonusDamageOnAttack()
+    {
+      Conditions = scourgeBaneConditions
+    }, UNIT_HCTH_SILVER_HAND_SQUIRE_LORDAERON);
   }
 }

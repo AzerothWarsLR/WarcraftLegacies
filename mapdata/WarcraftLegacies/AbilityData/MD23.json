@@ -330,25 +330,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 175 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 90 points of a target enemy unit\u0027s mana and dealing damage equal to twice the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 250 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 130 points of a target enemy unit\u0027s mana, also dealing damage equal to twice the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 325 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 170 points of a target enemy unit\u0027s mana, also dealing damage equal to twice the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a bolt of negative energy that burns up to 400 points of a target enemy unit\u0027s mana, also dealing damage equal to the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
+      "Value": "Sends a bolt of negative energy that burns up to 210 points of a target enemy unit\u0027s mana, also dealing damage equal to twice the amount burned. The bolt then bounces up to 5 times, burning 15% less mana with each jump."
     },
     {
       "Level": 1,

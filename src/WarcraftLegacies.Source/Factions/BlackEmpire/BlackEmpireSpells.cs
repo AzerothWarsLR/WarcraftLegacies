@@ -53,12 +53,13 @@ public static class BlackEmpireSpells
     {
       ManaBurned = new LeveledAbilityField<int>
       {
-        Base = 100,
-        PerLevel = 75
+        Base = 50,
+        PerLevel = 40
       },
       MaximumBounces = 5,
       BurnReductionPerBounce = 0.15f,
-      MaximumBounceRadius = 500
+      MaximumBounceRadius = 500,
+      BurnedManaDamageMultiplier = 2f,
     });
   }
 }
