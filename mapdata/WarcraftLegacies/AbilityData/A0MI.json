@@ -50,7 +50,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "This unit deals 33 additional damage to undead, increased to 100 additional damage to summoned undead."
+      "Value": "This unit has a 40% chance on attack to deal 25 additional damage to undead, increased to 100 additional damage to summoned undead."
     }
   ]
 }

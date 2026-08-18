@@ -2,6 +2,7 @@
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits.BonusDamageAttack;
+using WCSharp.Api.Enums;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
@@ -18,21 +19,29 @@ public static class LordaeronTraits
 
     var scourgeBaneConditions = new List<DamageCondition>
     {
-        new() {
+        new() { 
           Damage = 100,
-          Condition = target => target.Race == RACE_UNDEAD && target.IsUnitType(unittype.Summoned),
+          Condition = target => IsScourgeCondition(target) && target.IsUnitType(unittype.Summoned),
           Effect = "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
         },
         new() {
-          Damage = 33,
-          Condition = target => target.Race == RACE_UNDEAD,
+          Damage = 25,
+          Condition = target => IsScourgeCondition(target),
           Effect = "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
         },
     };
 
     UnitTypeTraitRegistry.Register(new BonusDamageOnAttack()
     {
-      Conditions = scourgeBaneConditions
+      Conditions = scourgeBaneConditions,
+      ProcChance = 0.4f
     }, UNIT_HCTH_SILVER_HAND_SQUIRE_LORDAERON);
+  }
+
+  public static bool IsScourgeCondition(unit target)
+  {
+    return target.UnitClassification == UnitClassifications.Undead
+      && target.IsABuilding == false
+      && (target.Owner.Name == "Scourge" || target.Owner.Name == "Fel Horde" || target.Owner == player.NeutralAggressive);
   }
 }

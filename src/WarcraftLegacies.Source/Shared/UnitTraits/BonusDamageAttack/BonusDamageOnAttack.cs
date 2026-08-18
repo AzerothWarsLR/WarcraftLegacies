@@ -8,6 +8,8 @@ public sealed class BonusDamageOnAttack : UnitTrait, IAppliesEffectOnDamage
 {
   public required IReadOnlyList<DamageCondition> Conditions { get; init; }
 
+  public float ProcChance { get; init; } = 1f;
+
   public void OnDealsDamage()
   {
     var target = @event.Unit;
@@ -20,6 +22,13 @@ public sealed class BonusDamageOnAttack : UnitTrait, IAppliesEffectOnDamage
     var rule = Conditions.FirstOrDefault(x => x.Condition(target));
 
     if (rule == null)
+    {
+      return;
+    }
+
+    var procChance = ProcChance;
+
+    if (GetRandomReal(0, 1) >= procChance)
     {
       return;
     }
