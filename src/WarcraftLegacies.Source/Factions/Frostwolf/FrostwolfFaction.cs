@@ -72,7 +72,6 @@ public sealed class FrostwolfFaction : Faction
     AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
     AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
     AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
-    AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
