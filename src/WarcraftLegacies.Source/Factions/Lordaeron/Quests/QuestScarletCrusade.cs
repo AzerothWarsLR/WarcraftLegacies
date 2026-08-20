@@ -69,15 +69,10 @@ public sealed class QuestScarletCrusade : QuestData
     _saiden.ForceCreate(whichPlayer, Regions.Scarlet_Spawn.Center, 270);
   }
 
-  private void AssignScarletCrusadeFaction(Faction completingFaction)
+  private static void AssignScarletCrusadeFaction(Faction completingFaction)
   {
     var scarletCrusade = new ScarletCrusadeFaction();
-    scarletCrusade.CopyObjectLevelsFrom(completingFaction);
-    if (completingFaction.Player != null)
-    {
-      completingFaction.Player.GetPlayerData().Faction = scarletCrusade;
-    }
-    FactionManager.Register(scarletCrusade);
+    FactionTransition.AssignNewFaction(completingFaction, scarletCrusade);
   }
 
   private static void EvacuateTyrsHand(player newOwner)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Cinematics;
 using MacroTools.Commands;
@@ -60,7 +61,23 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
       .EnumUnitsInRect(region)
       .Where(x => x.Owner != player.NeutralAggressive);
 
-    foreach (var unit in unitsInRegion)
+    ReplaceUnitsWithFactionEquivalents(unitsInRegion, pickedFaction);
+  }
+
+  /// <summary>Replaces every unit a player owns, anywhere on the map, with its equivalent from <paramref name="pickedFaction"/>.</summary>
+  public static void ReplaceAllUnitsOwnedByPlayerWithFactionEquivalents(player whichPlayer, Faction pickedFaction)
+  {
+    if (pickedFaction == null)
+    {
+      throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
+    }
+
+    ReplaceUnitsWithFactionEquivalents(GlobalGroup.EnumUnitsOfPlayer(whichPlayer), pickedFaction);
+  }
+
+  private static void ReplaceUnitsWithFactionEquivalents(IEnumerable<unit> units, Faction pickedFaction)
+  {
+    foreach (var unit in units)
     {
       var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction);
 
