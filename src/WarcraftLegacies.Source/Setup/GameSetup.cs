@@ -35,7 +35,8 @@ public static class GameSetup
     GameStartVoteSequence.Setup(new IGameMode[]
     {
       new Standard(),
-      new GreatWar()
+      new GreatWar(),
+      new Roleplay()
     }, timeToDisplay: 0, modeVoteLength: 10, difficultyVoteLength: 10, customOptionsVoteLength: 30);
 
     W3Mmd.ForceInit();
