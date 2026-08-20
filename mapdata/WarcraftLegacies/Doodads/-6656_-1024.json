@@ -3,6 +3,27 @@
     "TypeId": 858861636,
     "Variation": 0,
     "Position": {
+      "X": -6784,
+      "Y": -1280,
+      "Z": 201.05026
+    },
+    "Rotation": 2.7028167,
+    "Scale": {
+      "X": 4.5500016,
+      "Y": 4.5500016,
+      "Z": 3.449999
+    },
+    "SkinId": 858861636,
+    "State": 6,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7430
+  },
+  {
+    "TypeId": 858861636,
+    "Variation": 0,
+    "Position": {
       "X": -6976,
       "Y": -1216,
       "Z": 138.82535

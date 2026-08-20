@@ -128,6 +128,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNGate.blp"
     }
   ]
 }

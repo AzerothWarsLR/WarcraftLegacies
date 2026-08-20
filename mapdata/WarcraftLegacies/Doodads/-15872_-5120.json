@@ -1,5 +1,26 @@
 [
   {
+    "TypeId": 1952665665,
+    "Variation": 0,
+    "Position": {
+      "X": -15880.349,
+      "Y": -5196.492,
+      "Z": 25.57068
+    },
+    "Rotation": 0.62831855,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1952665665,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 12017
+  },
+  {
     "TypeId": 1885753420,
     "Variation": 0,
     "Position": {
@@ -63,150 +84,66 @@
     "CreationNumber": 32853
   },
   {
-    "TypeId": 1935822913,
+    "TypeId": 1952665665,
     "Variation": 0,
     "Position": {
-      "X": -16087.195,
-      "Y": -5173.7793,
-      "Z": 70.95652
+      "X": -15911.724,
+      "Y": -5563.4766,
+      "Z": 33.915714
     },
-    "Rotation": 1.2566371,
+    "Rotation": 2.9321532,
     "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
+      "X": 1,
+      "Y": 1,
+      "Z": 1
     },
-    "SkinId": 1935822913,
+    "SkinId": 1952665665,
     "State": 2,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 19009
+    "CreationNumber": 12016
   },
   {
-    "TypeId": 1110782020,
+    "TypeId": 1952665665,
     "Variation": 0,
     "Position": {
-      "X": -16095.565,
-      "Y": -5141.4805,
-      "Z": 93.96172
+      "X": -16100.001,
+      "Y": -5285.7363,
+      "Z": 12.587952
     },
-    "Rotation": 4.6960697,
+    "Rotation": 4.6076694,
     "Scale": {
-      "X": 0.8838685,
-      "Y": 0.8838685,
-      "Z": 1.4838681
+      "X": 1,
+      "Y": 1,
+      "Z": 1
     },
-    "SkinId": 1110782020,
+    "SkinId": 1952665665,
     "State": 2,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 26671
+    "CreationNumber": 6293
   },
   {
-    "TypeId": 1110782020,
+    "TypeId": 1952665665,
     "Variation": 0,
     "Position": {
-      "X": -15907.714,
-      "Y": -5133.2715,
-      "Z": 92.60721
+      "X": -16149.909,
+      "Y": -5339.5635,
+      "Z": 10.482472
     },
-    "Rotation": 4.6960697,
+    "Rotation": 4.468043,
     "Scale": {
-      "X": 0.8838685,
-      "Y": 0.8838685,
-      "Z": 1.633868
+      "X": 1,
+      "Y": 1,
+      "Z": 1
     },
-    "SkinId": 1110782020,
+    "SkinId": 1952665665,
     "State": 2,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 26672
-  },
-  {
-    "TypeId": 1110782020,
-    "Variation": 0,
-    "Position": {
-      "X": -16282.656,
-      "Y": -5135.2715,
-      "Z": 71.39727
-    },
-    "Rotation": 4.6960697,
-    "Scale": {
-      "X": 0.8838685,
-      "Y": 0.8838685,
-      "Z": 1.7838678
-    },
-    "SkinId": 1110782020,
-    "State": 2,
-    "Life": 255,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 26673
-  },
-  {
-    "TypeId": 1953779522,
-    "Variation": 0,
-    "Position": {
-      "X": -16311.676,
-      "Y": -5127.328,
-      "Z": 238.45766
-    },
-    "Rotation": 4.4457026,
-    "Scale": {
-      "X": 0.7,
-      "Y": 0.7,
-      "Z": 0.7
-    },
-    "SkinId": 1953779522,
-    "State": 6,
-    "Life": 255,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 26699
-  },
-  {
-    "TypeId": 1633834060,
-    "Variation": 0,
-    "Position": {
-      "X": -15872,
-      "Y": -5184,
-      "Z": 91.880005
-    },
-    "Rotation": 4.772972,
-    "Scale": {
-      "X": 1.66,
-      "Y": 1.66,
-      "Z": 1.66
-    },
-    "SkinId": 1633834060,
-    "State": 6,
-    "Life": 100,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 27165
-  },
-  {
-    "TypeId": 1110782020,
-    "Variation": 0,
-    "Position": {
-      "X": -15884.561,
-      "Y": -5125.5547,
-      "Z": 99.591286
-    },
-    "Rotation": 4.7287083,
-    "Scale": {
-      "X": 0.54999995,
-      "Y": 0.54999995,
-      "Z": 2.783867
-    },
-    "SkinId": 1110782020,
-    "State": 2,
-    "Life": 255,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 26587
+    "CreationNumber": 5037
   }
 ]

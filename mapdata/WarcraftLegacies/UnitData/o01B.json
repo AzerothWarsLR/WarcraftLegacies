@@ -86,11 +86,6 @@
       "Value": 7000
     },
     {
-      "Id": "umvh",
-      "Type": 2,
-      "Value": 75
-    },
-    {
       "Id": "utyp",
       "Type": 3,
       "Value": "ancient,mechanical,townhall"
@@ -138,6 +133,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,third"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

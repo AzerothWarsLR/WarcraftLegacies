@@ -1,5 +1,68 @@
 [
   {
+    "TypeId": 825700420,
+    "Variation": 0,
+    "Position": {
+      "X": -9410.379,
+      "Y": 5015.8867,
+      "Z": 168.83011
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 0.8711936,
+      "Y": 0.8711936,
+      "Z": 0.8711936
+    },
+    "SkinId": 825700420,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19834
+  },
+  {
+    "TypeId": 1429614660,
+    "Variation": 1,
+    "Position": {
+      "X": -9536,
+      "Y": 4992,
+      "Z": 321.25
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 0.91015965,
+      "Y": 0.91015965,
+      "Z": 0.91015965
+    },
+    "SkinId": 1429614660,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19833
+  },
+  {
+    "TypeId": 825700420,
+    "Variation": 0,
+    "Position": {
+      "X": -9279.232,
+      "Y": 4944.367,
+      "Z": 126.04589
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 0.9630543,
+      "Y": 0.9630543,
+      "Z": 0.9630543
+    },
+    "SkinId": 825700420,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 7324
+  },
+  {
     "TypeId": 1802654286,
     "Variation": 2,
     "Position": {
@@ -24,30 +87,9 @@
     "TypeId": 1668052057,
     "Variation": 0,
     "Position": {
-      "X": -9536,
-      "Y": 4928,
-      "Z": 681.75
-    },
-    "Rotation": 4.712389,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1668052057,
-    "State": 2,
-    "Life": 100,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 17668
-  },
-  {
-    "TypeId": 1668052057,
-    "Variation": 0,
-    "Position": {
       "X": -9664,
       "Y": 5056,
-      "Z": 512.875
+      "Z": 442.8125
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -68,7 +110,7 @@
     "Position": {
       "X": -9344,
       "Y": 5248,
-      "Z": 471
+      "Z": 220
     },
     "Rotation": 4.712389,
     "Scale": {

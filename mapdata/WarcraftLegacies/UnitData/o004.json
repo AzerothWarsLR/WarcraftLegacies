@@ -98,11 +98,6 @@
       "Value": 150
     },
     {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 1.35
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "Stonemaul Keep"

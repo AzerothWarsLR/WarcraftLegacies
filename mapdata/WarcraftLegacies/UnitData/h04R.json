@@ -139,6 +139,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "alternate"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNGate.blp"
     }
   ]
 }

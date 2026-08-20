@@ -81,6 +81,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Primary structure. "
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
     }
   ]
 }
