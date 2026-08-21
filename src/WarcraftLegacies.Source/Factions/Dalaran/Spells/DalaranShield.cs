@@ -154,6 +154,19 @@ public sealed class DalaranShield : Spell
     return true;
   }
 
+  /// <summary>
+  /// Ends the shield early, if it's currently active.
+  /// </summary>
+  public void Cancel()
+  {
+    if (_caster == null)
+    {
+      return;
+    }
+
+    BeginShrink();
+  }
+
   private void BeginShrink()
   {
     _caster = null;
