@@ -49,7 +49,6 @@ public static class Items
   public const int ITEM_BSPD_BOOTS_OF_SPEED = 1651732580;
   public const int ITEM_CIRI_ROBE_OF_THE_MAGI_6 = 1667854953;
   public const int ITEM_CNHN_HORN_OF_CENARIUS = 1668180078;
-  public const int ITEM_DTSB_DREK_THAR_S_SPELLBOOK = 1685353314;
   public const int ITEM_DUST_DUST_OF_APPEARANCE = 1685418868;
   public const int ITEM_ENVL_ENCHANTED_VIAL = 1701738092;
   public const int ITEM_EVTL_TALISMAN_OF_EVASION = 1702261868;

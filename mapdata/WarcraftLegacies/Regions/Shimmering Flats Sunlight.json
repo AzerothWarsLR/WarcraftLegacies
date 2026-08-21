@@ -1,0 +1,16 @@
+{
+  "Left": -9696,
+  "Bottom": -11680,
+  "Right": -9216,
+  "Top": -11200,
+  "Name": "Shimmering Flats Sunlight",
+  "CreationNumber": 207,
+  "WeatherType": 1633768012,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

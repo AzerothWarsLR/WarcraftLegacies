@@ -7,6 +7,8 @@ public sealed class NeutralLegends
 {
   public LegendaryHero Ragnaros { get; }
   public LegendaryHero YoggSaron { get; }
+  public LegendaryHero CThun { get; }
+  public LegendaryHero NZoth { get; }
   public Capital Auchindoun { get; }
   public Capital DraktharonKeep { get; }
   public Capital Oshugun { get; }
@@ -52,6 +54,20 @@ public sealed class NeutralLegends
         new(item.Create(ITEM_IYGL_VAL_ANYR_HAMMER_OF_ANCIENT_KINGS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       },
       StartingXp = 23800
+    };
+
+    CThun = new LegendaryHero("C'thun")
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_U00R_OLD_GOD_CTHUN),
+      PermaDies = true,
+      DeathMessage = "C'thun, the Eye of Silithus, has been destroyed."
+    };
+
+    NZoth = new LegendaryHero("N'zoth")
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_U01Z_OLD_GOD_NZOTH),
+      PermaDies = true,
+      DeathMessage = "N'zoth, the Corruptor of Ny'alotha, has been destroyed."
     };
 
     Auchindoun = new Capital
@@ -187,6 +203,8 @@ public sealed class NeutralLegends
   {
     LegendaryHeroManager.Register(Ragnaros);
     LegendaryHeroManager.Register(YoggSaron);
+    LegendaryHeroManager.Register(CThun);
+    LegendaryHeroManager.Register(NZoth);
     LegendaryHeroManager.Register(Vaelastrasz);
     CapitalManager.Register(Auchindoun);
     CapitalManager.Register(DraktharonKeep);

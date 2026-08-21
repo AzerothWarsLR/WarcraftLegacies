@@ -76,13 +76,13 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "Frostwolf Clan",
+      "Name": "Orcish Horde",
       "StartPosition": {
-        "X": -10048,
-        "Y": 2048
+        "X": -2752,
+        "Y": -8960
       },
       "AllyLowPriorityFlags": 4456450,
-      "AllyHighPriorityFlags": 332032,
+      "AllyHighPriorityFlags": 262144,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -177,21 +177,6 @@
       "EnemyHighPriorityFlags": 0
     },
     {
-      "Id": 8,
-      "Controller": 1,
-      "Race": 4,
-      "Flags": 1,
-      "Name": "Skywall",
-      "StartPosition": {
-        "X": -12416,
-        "Y": -19712
-      },
-      "AllyLowPriorityFlags": 1,
-      "AllyHighPriorityFlags": 32768,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
-    },
-    {
       "Id": 9,
       "Controller": 1,
       "Race": 1,
@@ -216,25 +201,10 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 332040,
+      "AllyLowPriorityFlags": 262152,
       "AllyHighPriorityFlags": 76,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
-    },
-    {
-      "Id": 12,
-      "Controller": 1,
-      "Race": 3,
-      "Flags": 1,
-      "Name": "Black Empire",
-      "StartPosition": {
-        "X": -28032,
-        "Y": -9216
-      },
-      "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 32768,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 15,
@@ -247,22 +217,7 @@
         "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 334081,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
-    },
-    {
-      "Id": 16,
-      "Controller": 1,
-      "Race": 3,
-      "Flags": 1,
-      "Name": "Ahn\u0027Qiraj",
-      "StartPosition": {
-        "X": -23232,
-        "Y": -19584
-      },
-      "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 0,
+      "AllyHighPriorityFlags": 264193,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -315,7 +270,7 @@
   "Forces": [
     {
       "Flags": 7,
-      "Players": -4561880,
+      "Players": -4491992,
       "Name": "Scourge, Legion"
     },
     {
@@ -335,7 +290,7 @@
     },
     {
       "Flags": 7,
-      "Players": 69888,
+      "Players": 0,
       "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
     },
     {
@@ -7063,14 +7018,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 943796328
-    },
-    {
-      "Players": 16777215,
-      "Id": 1111568488
-    },
-    {
-      "Players": 16777215,
       "Id": 1195585646
     },
     {
@@ -7080,10 +7027,6 @@
     {
       "Players": 16777215,
       "Id": 1178808430
-    },
-    {
-      "Players": 16777215,
-      "Id": 1212362862
     },
     {
       "Players": 16777215,
@@ -7244,10 +7187,6 @@
     {
       "Players": 16777215,
       "Id": 1245261928
-    },
-    {
-      "Players": 16777215,
-      "Id": 1513304168
     },
     {
       "Players": 16777215,
@@ -7578,6 +7517,34 @@
       "Id": 825258100
     },
     {
+      "Players": 131071,
+      "Id": 892350568
+    },
+    {
+      "Players": 16777215,
+      "Id": 959459432
+    },
+    {
+      "Players": 16777215,
+      "Id": 1110454376
+    },
+    {
+      "Players": 16777215,
+      "Id": 943796328
+    },
+    {
+      "Players": 16777215,
+      "Id": 1111568488
+    },
+    {
+      "Players": 16777215,
+      "Id": 1212362862
+    },
+    {
+      "Players": 16777215,
+      "Id": 1513304168
+    },
+    {
       "Players": 16351,
       "Id": 1196765249
     },
@@ -7758,10 +7725,6 @@
       "Id": 1362178152
     },
     {
-      "Players": 131071,
-      "Id": 892350568
-    },
-    {
       "Players": 16777215,
       "Id": 892809326
     },
@@ -7872,10 +7835,6 @@
     {
       "Players": 16777215,
       "Id": 1312305256
-    },
-    {
-      "Players": 16777215,
-      "Id": 959459432
     },
     {
       "Players": 1966079,
@@ -8028,10 +7987,6 @@
     {
       "Players": 16777215,
       "Id": 1211445359
-    },
-    {
-      "Players": 16777215,
-      "Id": 1110454376
     },
     {
       "Players": 16777215,

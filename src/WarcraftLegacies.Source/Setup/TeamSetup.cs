@@ -11,7 +11,6 @@ public static class TeamSetup
   public static Team Horde { get; private set; }
   public static Team NightElves { get; private set; }
   public static Team Outland { get; private set; }
-  public static Team OldGods { get; private set; }
   public static Team Kalimdor { get; private set; }
   public static void Setup()
   {
@@ -56,12 +55,6 @@ public static class TeamSetup
       VictoryMusic = "DarkVictory"
     };
     FactionManager.Register(Outland);
-
-    OldGods = new Team("Old Gods")
-    {
-      VictoryMusic = "DarkVictory"
-    };
-    FactionManager.Register(OldGods);
 
     Kalimdor = new Team("Kalimdor")
     {

@@ -3,8 +3,8 @@
     "TypeId": 842215528,
     "Variation": 0,
     "Position": {
-      "X": 9432.059,
-      "Y": 4902.0156,
+      "X": 9325.355,
+      "Y": 5030.0625,
       "Z": 206.25
     },
     "Rotation": 4.123225,
@@ -33,7 +33,7 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 886
+    "CreationNumber": 236
   },
   {
     "TypeId": 1144139880,
@@ -75,8 +75,8 @@
     "TypeId": 842215528,
     "Variation": 0,
     "Position": {
-      "X": 9325.355,
-      "Y": 5030.0625,
+      "X": 9432.059,
+      "Y": 4902.0156,
       "Z": 206.25
     },
     "Rotation": 4.123225,
@@ -105,6 +105,6 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 236
+    "CreationNumber": 886
   }
 ]

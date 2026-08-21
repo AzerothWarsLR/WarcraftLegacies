@@ -19,7 +19,6 @@ public static class Buffs
   public const int BUFF_B00V_NETHER_STRIKE = 1110454358;
   public const int BUFF_B00X_BLAST_OF_FIRE = 1110454360;
   public const int BUFF_B00Z_MAIMING_STRIKE = 1110454362;
-  public const int BUFF_B010_PURGE_SHOCKING_BLADE = 1110454576;
   public const int BUFF_B011_MARTIAL_SPIRIT = 1110454577;
   public const int BUFF_B013_MARTIAL_SPIRIT_GROM = 1110454579;
   public const int BUFF_B015_RESILIENT_STRENGTH = 1110454581;
@@ -108,7 +107,6 @@ public static class Buffs
   public const int BUFF_B06C_INVISIBILITY_JAINA = 1110455875;
   public const int BUFF_B06G_VOODOO_RESTORATION_CASTER = 1110455879;
   public const int BUFF_B06H_VOODOO_RESTORATION = 1110455880;
-  public const int BUFF_B06I_WATER_PRISON = 1110455881;
   public const int BUFF_B06K_FELL_RIFT = 1110455883;
   public const int BUFF_B06L_FIELD_OF_BLOOD = 1110455884;
   public const int BUFF_B06N_EARTH_PROTECTION = 1110455886;
@@ -172,7 +170,6 @@ public static class Buffs
   public const int BUFF_B09Z_UNITED_FOR_THE_CAUSE_6 = 1110456666;
   public const int BUFF_B0A0_UNITED_FOR_THE_CAUSE_3 = 1110458672;
   public const int BUFF_B0A5_GAZLOWE_OVERCLOCK = 1110458677;
-  public const int BUFF_B0A6_ARCANE_BARRAGE = 1110458678;
   public const int BUFF_B0A7_DIVINE_FIELD = 1110458679;
   public const int BUFF_B0AD_SEARING_BITE = 1110458692;
   public const int BUFF_B0AF_LUBRIFICATED = 1110458694;
@@ -195,9 +192,6 @@ public static class Buffs
   public const int BUFF_B0B7_SPIRITUAL_GUIDANCE = 1110458935;
   public const int BUFF_B0B8_SALVATION = 1110458936;
   public const int BUFF_B0B9_C0000FF00BLESSED_GROUND = 1110458937;
-  public const int BUFF_BBEG_GENESIS_ATTACK = 1111639367;
-  public const int BUFF_BBEP_PARALYSING_FEAR = 1111639376;
-  public const int BUFF_BBEV_VOID_TOXIN = 1111639382;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
   public const int BUFF_BEAR_TRUESHOT_AURA = 1111843186;
@@ -232,8 +226,6 @@ public static class Buffs
   public const int BUFF_BMFA_MANA_FLARE_EXTRA = 1114465889;
   public const int BUFF_BOAR_HEALING_WARD_AURA = 1114595698;
   public const int BUFF_CK03_CRUSADER_S_SHOUT_SCARLET_SAIDEN = 1129001011;
-  public const int BUFF_CRWM_DUMMY_DEBUFF = 1129469773;
-  public const int BUFF_DBTP_DUMMY_BUFF = 1145197648;
   public const int BUFF_HWP3_ENERGY_WAVE = 1213681715;
   public const int BUFF_MD16_WORGEN_BITE = 1296314678;
   public const int BUFF_MD17_ROAR_OF_THE_WORGEN = 1296314679;

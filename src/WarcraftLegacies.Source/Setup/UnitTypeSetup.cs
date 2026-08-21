@@ -13,7 +13,6 @@ public static class UnitTypeSetup
     SubSetupGatesA();
     SubSetupGatesB();
     SetupFountainOfHealth();
-    SubSetupOldGods();
   }
 
   private static void SubSetupFactionConfig()
@@ -152,18 +151,6 @@ public static class UnitTypeSetup
       NeverDelete = true
     });
     UnitType.Register(new UnitType(UNIT_NFOH_FOUNTAIN_OF_HEALTH)
-    {
-      NeverDelete = true
-    });
-  }
-
-  private static void SubSetupOldGods()
-  {
-    UnitType.Register(new UnitType(UNIT_U00R_OLD_GOD_CTHUN)
-    {
-      NeverDelete = true
-    });
-    UnitType.Register(new UnitType(UNIT_U01Z_OLD_GOD_NZOTH)
     {
       NeverDelete = true
     });
