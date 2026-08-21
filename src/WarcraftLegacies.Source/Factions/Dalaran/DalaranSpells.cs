@@ -1,7 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Dalaran.Spells;
-using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran;
@@ -61,26 +60,5 @@ public static class DalaranSpells
       DamageBonusLevel = 0.2f
     };
     SpellRegistry.Register(massSimulacrum);
-
-    var dalaranShield = new DalaranShield(ABILITY_A0E0_DALARAN_SHIELD)
-    {
-      Center = Regions.Dalaran.Center,
-      MaxRadius = 1640,
-      MaxEffectScale = 2.496f,
-      GrowthDuration = 4,
-      TotalDuration = 90,
-      TickInterval = 2,
-      DamagePerTick = 20,
-      ShrinkDuration = 3,
-      DomeEffectPath = @"war3mapImported\Dalaran Shield.mdl",
-      GroundEffectPath = @"Doodads\Cinematic\EnergyField\EnergyField.mdl",
-      GroundEffectScale = 1,
-      GroundEffectSpacing = 400,
-      GroundEffectEdgeMargin = 400,
-      RequiredHero = AllLegends.Dalaran.Antonidas,
-      RequiredHeroRange = 200
-    };
-    SpellRegistry.Register(dalaranShield);
-    SpellRegistry.Register(new DalaranShieldCancel(ABILITY_A0E3_CANCEL_SHIELD_DALARAN, dalaranShield));
   }
 }
