@@ -1,5 +1,5 @@
 {
-  "OldId": "Basl",
+  "OldId": "BEer",
   "NewId": "B0DS",
   "Unk": [
     0
@@ -8,7 +8,7 @@
     {
       "Id": "ftip",
       "Type": 3,
-      "Value": "|cff00ccffDalaran Shield|r"
+      "Value": "|cffff0000Dalaran Shield|r"
     },
     {
       "Id": "fube",
