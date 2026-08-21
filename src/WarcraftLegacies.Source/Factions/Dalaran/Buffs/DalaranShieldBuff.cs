@@ -1,6 +1,6 @@
 ﻿using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.Factions.Dalaran.Spells;
+namespace WarcraftLegacies.Source.Factions.Dalaran.Buffs;
 
 public sealed class DalaranShieldBuff : BoundBuff
 {
