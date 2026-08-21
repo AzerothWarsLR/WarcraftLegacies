@@ -20,10 +20,6 @@
       "Value": "A0E0,A0E3"
     },
     {
-      "Id": "ubdg",
-      "Value": 0
-    },
-    {
       "Id": "udef",
       "Value": 10
     },
@@ -31,11 +27,6 @@
       "Id": "udty",
       "Type": 3,
       "Value": "large"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "Power Generator"
     },
     {
       "Id": "umdl",
@@ -46,6 +37,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNPowerGenerator.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Power Generator"
     }
   ]
 }
