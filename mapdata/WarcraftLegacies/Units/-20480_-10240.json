@@ -1,19 +1,19 @@
 [
   {
-    "TypeId": 1668440421,
+    "TypeId": 1920560494,
     "Variation": 0,
     "Position": {
-      "X": -20495.13,
-      "Y": -10286.102,
-      "Z": 9.239948
+      "X": -20549.805,
+      "Y": -10296.631,
+      "Z": 6.8382144
     },
-    "Rotation": 4.537856,
+    "Rotation": 5.6316543,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1668440421,
+    "SkinId": 1920560494,
     "Flags": 2,
     "OwnerId": 24,
     "Unk1": 0,
@@ -33,23 +33,23 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1806
+    "CreationNumber": 1755
   },
   {
-    "TypeId": 1668440421,
+    "TypeId": 1752787054,
     "Variation": 0,
     "Position": {
-      "X": -20598.492,
-      "Y": -10261.906,
-      "Z": 13.256325
+      "X": -20770.252,
+      "Y": -10425.23,
+      "Z": -10.891203
     },
-    "Rotation": 4.537856,
+    "Rotation": 4.713087,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1668440421,
+    "SkinId": 1752787054,
     "Flags": 2,
     "OwnerId": 24,
     "Unk1": 0,
@@ -69,42 +69,6 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1804
-  },
-  {
-    "TypeId": 1852142437,
-    "Variation": 0,
-    "Position": {
-      "X": -20530.084,
-      "Y": -10380.678,
-      "Z": -5.991864
-    },
-    "Rotation": 4.537856,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1852142437,
-    "Flags": 2,
-    "OwnerId": 24,
-    "Unk1": 0,
-    "Unk2": 0,
-    "HP": -1,
-    "MP": -1,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "GoldAmount": 0,
-    "TargetAcquisition": -2,
-    "HeroLevel": 1,
-    "HeroStrength": 0,
-    "HeroAgility": 0,
-    "HeroIntelligence": 0,
-    "InventoryData": [],
-    "AbilityData": [],
-    "RandomDataMode": -1,
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1807
+    "CreationNumber": 1776
   }
 ]

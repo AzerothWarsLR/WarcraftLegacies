@@ -78,11 +78,11 @@
       "Flags": 1,
       "Name": "Frostwolf Clan",
       "StartPosition": {
-        "X": -10048,
-        "Y": 2048
+        "X": -9408,
+        "Y": -11264
       },
-      "AllyLowPriorityFlags": 4456450,
-      "AllyHighPriorityFlags": 332032,
+      "AllyLowPriorityFlags": 4456482,
+      "AllyHighPriorityFlags": 393216,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -147,6 +147,21 @@
       "EnemyHighPriorityFlags": 0
     },
     {
+      "Id": 5,
+      "Controller": 1,
+      "Race": 2,
+      "Flags": 1,
+      "Name": "Warsong",
+      "StartPosition": {
+        "X": -8960,
+        "Y": -3200
+      },
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 1,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
+    },
+    {
       "Id": 6,
       "Controller": 1,
       "Race": 2,
@@ -157,7 +172,7 @@
         "Y": -31040
       },
       "AllyLowPriorityFlags": 262152,
-      "AllyHighPriorityFlags": 4194440,
+      "AllyHighPriorityFlags": 4325512,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -173,21 +188,6 @@
       },
       "AllyLowPriorityFlags": 262144,
       "AllyHighPriorityFlags": 262664,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
-    },
-    {
-      "Id": 8,
-      "Controller": 1,
-      "Race": 4,
-      "Flags": 1,
-      "Name": "Skywall",
-      "StartPosition": {
-        "X": -12416,
-        "Y": -19712
-      },
-      "AllyLowPriorityFlags": 1,
-      "AllyHighPriorityFlags": 32768,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -216,23 +216,23 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 332040,
-      "AllyHighPriorityFlags": 76,
+      "AllyLowPriorityFlags": 262184,
+      "AllyHighPriorityFlags": 8268,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
     {
-      "Id": 12,
+      "Id": 13,
       "Controller": 1,
-      "Race": 3,
+      "Race": 2,
       "Flags": 1,
-      "Name": "Black Empire",
+      "Name": "Exodar",
       "StartPosition": {
-        "X": -28032,
-        "Y": -9216
+        "X": -20672,
+        "Y": 8320
       },
-      "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 32768,
+      "AllyLowPriorityFlags": 32,
+      "AllyHighPriorityFlags": 2048,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -247,22 +247,22 @@
         "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 334081,
+      "AllyHighPriorityFlags": 264193,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
     {
-      "Id": 16,
+      "Id": 17,
       "Controller": 1,
-      "Race": 3,
+      "Race": 2,
       "Flags": 1,
-      "Name": "Ahn\u0027Qiraj",
+      "Name": "Zandalar",
       "StartPosition": {
-        "X": -23232,
-        "Y": -19584
+        "X": -8768,
+        "Y": -17280
       },
       "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 0,
+      "AllyHighPriorityFlags": 1,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -273,11 +273,11 @@
       "Flags": 1,
       "Name": "Sentinels",
       "StartPosition": {
-        "X": -20672,
-        "Y": 8320
+        "X": -22592,
+        "Y": -13632
       },
-      "AllyLowPriorityFlags": 4194321,
-      "AllyHighPriorityFlags": 262164,
+      "AllyLowPriorityFlags": 4194353,
+      "AllyHighPriorityFlags": 393236,
       "EnemyLowPriorityFlags": 4194448,
       "EnemyHighPriorityFlags": 12582912
     },
@@ -7063,14 +7063,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 943796328
-    },
-    {
-      "Players": 16777215,
-      "Id": 1111568488
-    },
-    {
-      "Players": 16777215,
       "Id": 1195585646
     },
     {
@@ -7080,10 +7072,6 @@
     {
       "Players": 16777215,
       "Id": 1178808430
-    },
-    {
-      "Players": 16777215,
-      "Id": 1212362862
     },
     {
       "Players": 16777215,
@@ -7244,10 +7232,6 @@
     {
       "Players": 16777215,
       "Id": 1245261928
-    },
-    {
-      "Players": 16777215,
-      "Id": 1513304168
     },
     {
       "Players": 16777215,
@@ -7576,6 +7560,22 @@
     {
       "Players": 16,
       "Id": 825258100
+    },
+    {
+      "Players": 16777215,
+      "Id": 943796328
+    },
+    {
+      "Players": 16777215,
+      "Id": 1111568488
+    },
+    {
+      "Players": 16777215,
+      "Id": 1212362862
+    },
+    {
+      "Players": 16777215,
+      "Id": 1513304168
     },
     {
       "Players": 16351,

@@ -12,12 +12,12 @@
 //  11	Druids
 //  12	Black Empire
 //  13	Empty
-//  14	Empty
+//  14	Exodar (turn into Exodar)
 //  15	Illidan/Sunfury
 //  16	Ahn'qiraj
 //  17  Empty
-//  18	Sentinels/Exodar
-//  19  Empty
+//  18	Sentinels
+//  19  Zandalar/Goblins (when done)
 //  20  Empty
 //  21  Empty
 //  22  Kultiras
