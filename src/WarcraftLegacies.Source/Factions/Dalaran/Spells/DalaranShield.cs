@@ -104,6 +104,7 @@ public sealed class DalaranShield : Spell
       }
     }
 
+    _hero.FacePosition(casterPosition);
     SetUnitAnimation(_hero, "channel");
     _hero.SetPausedEx(true);
     _hero.IsInvulnerable = true;
