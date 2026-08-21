@@ -1,34 +1,25 @@
 {
-  "OldId": "Aroa",
+  "OldId": "ANbr",
   "NewId": "A0E3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": "aher",
-      "Value": 0
-    },
-    {
-      "Id": "alev",
-      "Value": 1
-    },
-    {
       "Level": 1,
-      "Pointer": 1,
-      "Id": "Roa1",
+      "Id": "aare",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": "atar",
+      "Id": "abuf",
       "Type": 3,
-      "Value": "self"
+      "Value": ""
     },
     {
       "Level": 1,
-      "Id": "aare",
+      "Id": "acdn",
       "Type": 2,
       "Value": 0
     },
@@ -39,9 +30,46 @@
     },
     {
       "Level": 1,
-      "Id": "acdn",
+      "Pointer": 1,
+      "Id": "Nbr1",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "alsk",
+      "Value": 0
+    },
+    {
+      "Id": "aord",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "ansf",
@@ -77,6 +105,36 @@
       "Id": "ahky",
       "Type": 3,
       "Value": "C"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aaea",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aca1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aspt",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "aart",
