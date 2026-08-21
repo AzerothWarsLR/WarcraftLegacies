@@ -1,4 +1,4 @@
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran.Spells;
 

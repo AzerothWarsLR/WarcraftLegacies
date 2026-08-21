@@ -1,4 +1,4 @@
-using MacroTools.Spells;
+﻿using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran.Spells;
