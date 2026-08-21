@@ -195,7 +195,6 @@ public static class Buffs
   public const int BUFF_B0B7_SPIRITUAL_GUIDANCE = 1110458935;
   public const int BUFF_B0B8_SALVATION = 1110458936;
   public const int BUFF_B0B9_C0000FF00BLESSED_GROUND = 1110458937;
-  public const int BUFF_B0DS_DALARAN_SHIELD = 1110459475;
   public const int BUFF_BBEG_GENESIS_ATTACK = 1111639367;
   public const int BUFF_BBEP_PARALYSING_FEAR = 1111639376;
   public const int BUFF_BBEV_VOID_TOXIN = 1111639382;
