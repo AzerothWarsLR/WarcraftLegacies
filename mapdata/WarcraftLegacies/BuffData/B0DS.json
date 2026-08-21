@@ -1,0 +1,39 @@
+{
+  "OldId": "Basl",
+  "NewId": "B0DS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ccffDalaran Shield|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is taking damage from the Dalaran Shield."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Dalaran Shield"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASShardOfPower.blp"
+    }
+  ]
+}
