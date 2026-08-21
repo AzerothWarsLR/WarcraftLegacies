@@ -17,11 +17,20 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0E0"
+      "Value": "A0E0,A0E3"
     },
     {
       "Id": "ubdg",
       "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
     },
     {
       "Id": "unam",

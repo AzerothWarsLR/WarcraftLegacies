@@ -62,7 +62,7 @@ public static class DalaranSpells
     };
     SpellRegistry.Register(massSimulacrum);
 
-    SpellRegistry.Register(new DalaranShield(ABILITY_A0E0_DALARAN_SHIELD)
+    var dalaranShield = new DalaranShield(ABILITY_A0E0_DALARAN_SHIELD)
     {
       Center = Regions.Dalaran.Center,
       MaxRadius = 1640,
@@ -79,6 +79,8 @@ public static class DalaranSpells
       GroundEffectEdgeMargin = 400,
       RequiredHero = AllLegends.Dalaran.Antonidas,
       RequiredHeroRange = 200
-    });
+    };
+    SpellRegistry.Register(dalaranShield);
+    SpellRegistry.Register(new DalaranShieldCancel(ABILITY_A0E3_CANCEL_SHIELD_DALARAN, dalaranShield));
   }
 }
