@@ -256,207 +256,6 @@ internal sealed class SpanishTranslation : ITranslation
     ["Ancestor"] = "Ancestro",
     ["Remembered Tauren:"] = "Tauren Recordados:",
 
-    // Ahnqiraj faction
-    ["C'thun and his Qiraji followers"] = "C'thun y sus seguidores Qiraji",
-    ["You are playing as {faction}.\n\nYou start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and free yourself from the Titan Guardians.\n\nThen, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.\n\nYou do not possess boats, but your workers can burrow through water, use them to outmaneuver your enemies."] =
-      "Juegas como {faction}.\n\nComienzas en las profundidades de los túneles de Ahn'Qiraj. Necesitarás despertar a C'thun y liberarte de los Guardianes Titanes.\n\nLuego, avanza rápidamente hacia el norte, coordínate con tu aliado elemental para atacar Kalimdor.\n\nNo posees barcos, pero tus trabajadores pueden excavar a través del agua, úsalos para superar en maniobra a tus enemigos.",
-
-    // Ahnqiraj - UnitTraits (DefensiveCocoon, Incubate)
-    ["Cocoon ({hero})"] = "Capullo ({hero})",
-    ["Mature Egg"] = "Huevo Maduro",
-
-    // Ahnqiraj - QuestTitanJailors
-    ["Titan Jailors"] = "Carceleros Titanes",
-    ["C'thun is currently watched by a Titan Construct. We must rid the temple of hostiles and destroy the Titan to free our god."] =
-      "C'thun está actualmente vigilado por un Constructo Titán. Debemos limpiar el templo de hostiles y destruir al Titán para liberar a nuestro dios.",
-    ["The Titan Construct has fallen, and C'thun stirs within his prison. The Old God is free to spread chaos once more."] =
-      "El Constructo Titán ha caído, y C'thun se agita dentro de su prisión. El Antiguo Dios es libre de esparcir el caos una vez más.",
-    ["Control of all units in Ahn'Qiraj Temple and C'thun becomes active"] =
-      "Control de todas las unidades en el Templo de Ahn'Qiraj y C'thun se activa",
-
-    // Ahnqiraj - QuestRebuildAhnqiraj
-    ["Rebuilding of Ahn'Qiraj"] = "La Reconstrucción de Ahn'Qiraj",
-    ["The once great kingdom of Ahn'Qiraj was lost to the sands of time. The hive needs to awaken and be rebuilt."] =
-      "El otrora gran reino de Ahn'Qiraj se perdió en las arenas del tiempo. La colmena necesita despertar y ser reconstruida.",
-    ["The glorious kingdom of Ahn'Qiraj has now been rebuilt. The gates are open, and the world shall fear the Qiraji once more."] =
-      "El glorioso reino de Ahn'Qiraj ha sido reconstruido. Las puertas están abiertas, y el mundo temerá a los Qiraji una vez más.",
-    ["Gain control of the gate of Ahn'Qiraj"] = "Obtienes control de la puerta de Ahn'Qiraj",
-    ["in outer Ahn'Qiraj"] = "en el Ahn'Qiraj exterior",
-
-    // Ahnqiraj - QuestSlitheringForward
-    ["Slithering Forward"] = "Reptando Hacia Adelante",
-    ["The hive needs to grow and spread to thrive. The sands of Silithus are perfect for that purpose, but the surroundings will have to be secured first."] =
-      "La colmena necesita crecer y expandirse para prosperar. Las arenas de Silithus son perfectas para ese propósito, pero antes habrá que asegurar los alrededores.",
-    ["The land has been secured. I can now expand the hive warrens to Silithus."] =
-      "La tierra ha sido asegurada. Ahora puedo expandir las madrigueras de la colmena hacia Silithus.",
-    ["Control of all outposts in Silithus"] = "Control de todos los puestos avanzados en Silithus",
-
-    // Ahnqiraj - QuestTanarisOutpost
-    ["The Noxious Lair"] = "La Guarida Nociva",
-    ["The sands of Tanaris call for the Hive, but first I must eliminate the Trolls of Zul'farrak."] =
-      "Las arenas de Tanaris llaman a la Colmena, pero primero debo eliminar a los Trolls de Zul'farrak.",
-    ["With Zul'farrak under my control, I can extend the Hive to the sands of Tanaris."] =
-      "Con Zul'farrak bajo mi control, puedo extender la Colmena hacia las arenas de Tanaris.",
-    ["Control of all units in the Noxious Lair"] = "Control de todas las unidades en la Guarida Nociva",
-
-    // Ahnqiraj - QuestFeralas
-    ["With our hives restored we can establish a forward one in Feralas."] =
-      "Con nuestras colmenas restauradas podemos establecer una avanzada en Feralas.",
-    ["With the local wildlife destroyed we can establish a forward outpost."] =
-      "Con la vida salvaje local destruida podemos establecer un puesto avanzado.",
-    ["Gain control off all buildings in Feralas"] = "Obtienes control de todos los edificios en Feralas",
-
-    // Ahnqiraj - QuestEmperorConstruct
-    ["The Emperor's Constructs"] = "Los Constructos del Emperador",
-    ["Queen Azshara studied many forms of arcane knowledge, some darker than others. With access to her library and enough time, I will uncover her secrets."] =
-      "La Reina Azshara estudió muchas formas de conocimiento arcano, algunas más oscuras que otras. Con acceso a su biblioteca y suficiente tiempo, descubriré sus secretos.",
-    ["I have enslaved the cursed Tol'vir."] = "He esclavizado a los malditos Tol'vir.",
-    ["Learn to train {eradicator}s from the {hatchery}, learn to train {tolvirStatue}s from the {pyramid} and learn to train Moam from the {altar}"] =
-      "Aprendes a entrenar {eradicator} desde el {hatchery}, aprendes a entrenar {tolvirStatue} desde el {pyramid} y aprendes a entrenar a Moam desde el {altar}",
-
-    // Ahnqiraj - QuestMockeryOfLife
-    ["Mockery of Life"] = "Burla de la Vida",
-    ["C'thun, the great distorter of flesh, needs to amass samples from many beings to create "] =
-      "C'thun, el gran distorsionador de la carne, necesita reunir muestras de muchos seres para crear ",
-    ["The abominable sandwurm Ouro has been created by Cthun"] = "El abominable gusano de arena Ouro ha sido creado por Cthun",
-    ["Learn to train {sandWorm}s from the {altar}"] = "Aprendes a entrenar {sandWorm} desde el {altar}",
-
-    // Ahnqiraj - QuestDesolation
-    ["Desolation"] = "Desolación",
-    ["Before this time of mortals, the Old Gods ruled this world, our empires stretching to every corner. I will bury their cities, and return Azeroth to primordial chaos."] =
-      "Antes de esta era de los mortales, los Antiguos Dioses gobernaban este mundo, nuestros imperios se extendían hasta cada rincón. Enterraré sus ciudades, y devolveré Azeroth al caos primordial.",
-    ["{capital} has fallen, merely the first in a row of dominoes that will topple this world."] =
-      "{capital} ha caído, apenas la primera de una fila de fichas de dominó que derribará este mundo.",
-    ["C'thun gain 2 skill points"] = "C'thun gana 2 puntos de habilidad",
-
-    // Ahnqiraj - QuestFreshMeat
-    ["Fresh Meat"] = "Carne Fresca",
-    ["Only recently awoken from their long slumber, my Qiraji are ravenous for flesh."] =
-      "Recién despiertos de su largo letargo, mis Qiraji están hambrientos de carne.",
-    ["My Qiraji have ripped, torn, and consumed scores of fallen prey, satiating their hunger and lifting a bloody haze from my mind."] =
-      "Mis Qiraji han desgarrado, destrozado y consumido a decenas de presas caídas, saciando su hambre y despejando una bruma sangrienta de mi mente.",
-    ["C'thun gains 2 skill points"] = "C'thun gana 2 puntos de habilidad",
-
-    // Ahnqiraj - QuestAwakening
-    ["Awakening"] = "Despertar",
-    ["I have only recently awoken, wielding but a shadow of my might during the days of the Black Empire. I must reclaim my powers."] =
-      "Solo recientemente he despertado, empuñando apenas una sombra de mi poder de los días del Imperio Negro. Debo reclamar mis poderes.",
-    ["My singular gaze opens wide, pouring into the minds of all those unfortunate enough to inhabit Azeroth during my imminent reign."] =
-      "Mi mirada singular se abre de par en par, derramándose en las mentes de todos aquellos con la desgracia de habitar Azeroth durante mi inminente reinado.",
-    ["C'thun learn to cast {ability}"] = "C'thun aprende a lanzar {ability}",
-
-    // Ahnqiraj - QuestWarOfTheShiftingSand
-    ["War of the Shifting Sands"] = "La Guerra de las Arenas Cambiantes",
-    ["A millenia ago, the Night Elves soundly defeated my Qiraji and drove them scurrying back into Ahn'qiraj. If I am to succeed in my domination of Azeroth, the second War of the Shifting Sands must begin with their demise."] =
-      "Hace un milenio, los Elfos Nocturnos derrotaron rotundamente a mis Qiraji y los hicieron huir de vuelta a Ahn'Qiraj. Si he de triunfar en mi dominación de Azeroth, la segunda Guerra de las Arenas Cambiantes debe comenzar con su fin.",
-    ["Nordrassil has been taken, and with it, the source of the Night Elves' immortality. The War of the Shifting Sands, begun anew a thousand years after its first conclusion, is over once more."] =
-      "Nordrassil ha sido tomado, y con él, la fuente de la inmortalidad de los Elfos Nocturnos. La Guerra de las Arenas Cambiantes, iniciada de nuevo mil años después de su primera conclusión, ha terminado una vez más.",
-    ["C'thun gains 3 skill points"] = "C'thun gana 3 puntos de habilidad",
-
-    // Ahnqiraj - QuestFiendThousandFaces
-    ["Fiend of a Thousand Faces"] = "Demonio de las Mil Caras",
-    ["Yogg-Saron is still imprisoned and weak, but holds great power. If he is released and vanquished, I can consume his power and infuse it into my the Qiraji."] =
-      "Yogg-Saron aún está aprisionado y débil, pero posee un gran poder. Si es liberado y vencido, podré consumir su poder e infundirlo en mis Qiraji.",
-    ["Yogg-Saron has been consumed. His genome has been added to the brood!"] =
-      "Yogg-Saron ha sido consumido. ¡Su genoma ha sido añadido a la progenie!",
-    ["Soldiers and Super Majors gain the Vampiric Attack ability"] = "Los Soldados y Súper Mayores obtienen la habilidad Ataque Vampírico",
-
-    // Black Empire faction
-    ["Black Empire of N'zoth"] = "Imperio Negro de N'zoth",
-    ["You are playing as the {faction}.\n\nYou start in Nyalotha, restore the city to its glory by repelling the invaders from Azeroth.\n\nThen, move onto Kalimdor with your allies. You will quickly run into the Sentinels.\n\nBe sure to train Forsaken Ones, they are powerful units."] =
-      "Juegas como el {faction}.\n\nComienzas en Ny'alotha, restaura la ciudad a su antigua gloria repeliendo a los invasores de Azeroth.\n\nLuego, avanza hacia Kalimdor con tus aliados. Pronto te toparás con los Centinelas.\n\nAsegúrate de entrenar Renegados, son unidades poderosas.",
-
-    // BlackEmpire - QuestTwilightlanding
-    ["Twilight landing"] = "El Desembarco Crepuscular",
-    ["Invaders from Azeroth have taken control of the Twilight landing. Destroy them!"] =
-      "Invasores de Azeroth han tomado el control del Desembarco Crepuscular. ¡Destrúyelos!",
-    ["With the invaders defeated, I have retaken control of the Twilight landing."] =
-      "Con los invasores derrotados, he retomado el control del Desembarco Crepuscular.",
-    ["Gain Control of all buildings and units in the Twilight landing area, learn to train X'korr the Compelling from the {altar} and the ability to train 1 {forgottenOne} from the {mutationCircle}"] =
-      "Obtienes control de todos los edificios y unidades en el área del Desembarco Crepuscular, aprendes a entrenar a X'korr el Compulsivo desde el {altar} y la habilidad de entrenar 1 {forgottenOne} desde el {mutationCircle}",
-
-    // BlackEmpire - QuestWakingCity
-    ["The Waking City"] = "La Ciudad del Despertar",
-    ["Adventurers from Azeroth are threatening me, your god. Annihilate them."] =
-      "Aventureros de Azeroth me amenazan a mí, su dios. Aniquílalos.",
-    ["With the adventurer party destroyed, no one stands in my way."] =
-      "Con el grupo de aventureros destruido, nadie se interpone en mi camino.",
-    ["Gain control of all buildings in Ny'lotha, learn to build the {mutationCircle}, and gain control of N'zoth"] =
-      "Obtienes control de todos los edificios en Ny'lotha, aprendes a construir el {mutationCircle}, y obtienes control de N'zoth",
-
-    // BlackEmpire - QuestGiftofFlesh
-    ["Gift of Flesh"] = "Regalo de Carne",
-    ["The original Aqir, now buried deep beneath the earth, have always served me faithfully. To awaken them once more, I must search in the deepest reaches of Kalimdor: the Stonetalon caverns and the tunnels of Ahn'qiraj."] =
-      "Los Aqir originales, ahora enterrados en las profundidades de la tierra, siempre me han servido fielmente. Para despertarlos una vez más, debo buscar en los rincones más profundos de Kalimdor: las cavernas de Garra de Piedra y los túneles de Ahn'Qiraj.",
-    ["The Aqir have joined my ranks in glory again!"] = "¡Los Aqir se han unido a mis filas con gloria una vez más!",
-    ["Learn to train {aqir}s from the {pitOfTorment}"] = "Aprendes a entrenar {aqir} desde el {pitOfTorment}",
-
-    // BlackEmpire - QuestWakingDream
-    ["Waking Dream"] = "Sueño que Despierta",
-    ["Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again."] =
-      "Hace incontables eras, el Señor de la Guerra Zon'ozz era uno de mis generales más fuertes. Desafortunadamente, actualmente está atrapado en el pasado. Para invocarlo, necesito capturar las Cavernas del Tiempo y llamarlo para que me sirva en el presente una vez más.",
-    ["Zon'ozz has joined my ranks once more."] = "Zon'ozz se ha unido a mis filas una vez más.",
-    ["Learn to train Warlord Zon'ozz from the {altar}"] = "Aprendes a entrenar a Warlord Zon'ozz desde el {altar}",
-
-    // BlackEmpire - QuestMawofShuma
-    ["Maw of Shu'ma"] = "Fauces de Shu'ma",
-    ["Yor'sahj needs souls to awaken the Maw of Shu'ma, a terrible Forgotten one, for me. Destroying and ravaging one of the mortals great cities will grant him the souls he needs."] =
-      "Yor'sahj necesita almas para despertar las Fauces de Shu'ma, un terrible Olvidado, para mí. Destruir y devastar una de las grandes ciudades de los mortales le otorgará las almas que necesita.",
-    ["We have gained a new Forgotten One."] = "Hemos ganado un nuevo Olvidado.",
-    ["Learn to train one additional {forgottenOne} from the {mutationCircle}"] =
-      "Aprendes a entrenar un {forgottenOne} adicional desde el {mutationCircle}",
-
-    // BlackEmpire - QuestMawofGorath
-    ["Maw of Go'rath"] = "Fauces de Go'rath",
-    ["Zon'ozz has been tasked with awakening the Maw of Go'rath, a terrible Forgotten One. To that end, he will need to carve a crest of blood with the corpses of his enemies."] =
-      "Zon'ozz ha sido encargado de despertar las Fauces de Go'rath, un terrible Olvidado. Para ello, deberá tallar una cresta de sangre con los cadáveres de sus enemigos.",
-    ["I have gained a new Forgotten One."] = "He ganado un nuevo Olvidado.",
-
-    // BlackEmpire - QuestDesolace
-    ["We must establish a forward base in Desolace to stop Night elf incursions."] =
-      "Debemos establecer una base avanzada en Desolace para detener las incursiones de los elfos nocturnos.",
-    ["With the local centaurs destroyed we can establish an outpost."] =
-      "Con los centauros locales destruidos podemos establecer un puesto avanzado.",
-    ["Gain control of all buildings in Desolace"] = "Obtienes control de todos los edificios en Desolace",
-
-    // BlackEmpire - QuestBladeoftheBlackEmpire
-    ["The Blade of the Black Empire"] = "La Hoja del Imperio Negro",
-    ["An ancient blade from the time of the Black Empire itself. The Dagger has a mind of its own and tries to corrupt whoever wields it. It has been lost to time."] =
-      "Una hoja antigua de la época del propio Imperio Negro. La daga tiene voluntad propia e intenta corromper a quien la empuñe. Se ha perdido en el tiempo.",
-    ["I have found the Blade of the Black Empire."] = "He encontrado la Hoja del Imperio Negro.",
-    ["The Blade of the Black Empire appears near The Abyss"] = "La Hoja del Imperio Negro aparece cerca del Abismo",
-    ["The Abyss"] = "The Abyss",
-
-    // BlackEmpire - QuestDestruction
-    ["Destruction"] = "Destrucción",
-    ["Before this time of mortals, The Old Gods ruled this world, our empires stretching to every corner. I will bury their cities, and return Azeroth to primordial chaos."] =
-      "Antes de esta era de los mortales, los Antiguos Dioses gobernaban este mundo, nuestros imperios se extendían hasta cada rincón. Enterraré sus ciudades, y devolveré Azeroth al caos primordial.",
-    ["{capital} has fallen, but more will fall to my influence."] = "{capital} ha caído, pero más caerán ante mi influencia.",
-    ["N'zoth gain 2 skill points"] = "N'zoth gana 2 puntos de habilidad",
-
-    // BlackEmpire - QuestWorldStone
-    ["The World Stone"] = "La Piedra del Mundo",
-    ["The Horde shamans, through rituals, are preventing me from expanding through the earth. I will need to destroy the seats of their power"] =
-      "Los chamanes de la Horda, mediante rituales, me impiden expandirme a través de la tierra. Necesitaré destruir los asientos de su poder",
-    ["With the shamans obliterated, my tendrils will reach every corner of this world"] =
-      "Con los chamanes aniquilados, mis tentáculos alcanzarán cada rincón de este mundo",
-    ["N'zoth gains 2 skill points"] = "N'zoth gana 2 puntos de habilidad",
-
-    // BlackEmpire - QuestAscension
-    ["Ascension"] = "Ascensión",
-    ["I have been scheming behind the backs of the other old gods  for eons, now my time has come. I will rule the world."] =
-      "He estado conspirando a espaldas de los otros antiguos dioses durante eones, ahora ha llegado mi momento. Gobernaré el mundo.",
-    ["The World of Azeroth is mine."] = "El Mundo de Azeroth es mío.",
-    ["N'zoth learn to cast {ability}"] = "N'zoth aprende a lanzar {ability}",
-
-    // BlackEmpire - QuestAlignement
-    ["Alignement"] = "Alineación",
-    ["I am still weak, and this reality is fading. I need to send my forces to all corners of the continent."] =
-      "Aún soy débil, y esta realidad se desvanece. Necesito enviar mis fuerzas a todos los rincones del continente.",
-    ["My influence must spread further and further, bringing Nyalotha into this reality and making me ever stronger"] =
-      "Mi influencia debe extenderse cada vez más, trayendo a Ny'alotha a esta realidad y haciéndome cada vez más fuerte",
-    ["N'zoth gains 3 skill points"] = "N'zoth gana 3 puntos de habilidad",
-
     // Dalaran faction
     ["Council of Dalaran"] = "Consejo de Dalaran",
     ["You are playing the wise {faction}.\n\nYou begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran, you must capture Shadowfang Keep, which has been encircled by monsters.\n\nOnce your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.\n\nYour mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle."] =
@@ -1826,20 +1625,6 @@ internal sealed class SpanishTranslation : ITranslation
     ["Gain the Scepter of the Queen, the Athenaeum, 4 {highborne}, and the ability to train {highborne} from the {temple}"] =
       "Obtienes el Cetro de la Reina, el Athenaeum, 4 {highborne}, y la habilidad de entrenar {highborne} desde el {temple}",
 
-    // Sentinels - QuestSentinelsKillBlackEmpire
-    ["Otherwordly Invaders"] = "Invasores de Otro Mundo",
-    ["The Black Empire has poured out near Feathermoon and begun threatening the wilds. These invaders must be repelled."] =
-      "El Imperio Negro se ha derramado cerca de Feathermoon y ha comenzado a amenazar las tierras salvajes. Estos invasores deben ser repelidos.",
-    ["Allows {guildRanger}s to be trained from {bastion}s"] =
-      "Permite entrenar {guildRanger} desde {bastion}",
-
-    // Sentinels - QuestSentinelsKillCthun
-    ["Gates of Ahn'Qiraj"] = "Las Puertas de Ahn'Qiraj",
-    ["The Qiraji have bursted out of their underground city. They need to be ridden from the surface of Kalimdor."] =
-      "Los Qiraji han irrumpido desde su ciudad subterránea. Deben ser expulsados de la superficie de Kalimdor.",
-    ["Learn to train {moonRider}s from the {roost}s and research {upgrade}'s second level from the {academy}"] =
-      "Aprendes a entrenar {moonRider} desde el {roost}, e investigar el segundo nivel de {upgrade} desde el {academy}",
-
     // Sentinels - QuestVaultoftheWardens
     ["Vault of the Wardens"] = "Vault of the Wardens",
     ["In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari, but it was abandoned when the Broken Isles were shattered. In troubling times such as these, the Wardens could make great use of such a facility."] =
@@ -1870,59 +1655,6 @@ internal sealed class SpanishTranslation : ITranslation
       "Aparece un Vial del Pozo del Sol en el suelo, y el Pozo del Sol pierde permanentemente 500 de maná máximo",
     ["We have extracted a single vial of the Sunwell's energies. Though the well remains functional, its vibrancy has been visibly diminished by our theft."] =
       "Hemos extraído un único vial de las energías del Pozo del Sol. Aunque el pozo sigue siendo funcional, su vitalidad se ha visto visiblemente disminuida por nuestro robo.",
-
-    // Skywall faction
-    ["Elementals of Skywall"] = "Elementales del Trono de los Cuatro Vientos",
-    ["You are playing as the {faction}.\n\nAt the start, clear Uldum and take control of Tanaris.\n\nCoordinate with your Qiraji ally to push back the Horde before the Druids can intervene.\n\nYou have a powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and possibly attack them from behind."] =
-      "Juegas como los {faction}.\n\nAl principio, limpia Uldum y toma el control de Tanaris.\n\nCoordínate con tu aliado Qiraji para hacer retroceder a la Horda antes de que los Druidas puedan intervenir.\n\nTienes un poderoso evento en el Incendio del Árbol del Mundo. Úsalo en el momento adecuado para sorprender a los Druidas y posiblemente atacarlos por la espalda.",
-
-    // Skywall - Windforging power
-    ["Windforging"] = "Forja de Viento",
-
-    // Skywall - QuestEmissary
-    ["Emissary of the Firelands"] = "Emisario de las Tierras de Fuego",
-    ["Ragnaros and the Firelands will join the Old Gods, we need to make contact with them."] =
-      "Ragnaros y las Tierras de Fuego se unirán a los Antiguos Dioses, necesitamos contactarlos.",
-
-    // Skywall - QuestFirelandInvasion
-    ["Fireland Invasion"] = "Invasión de las Tierras de Fuego",
-    ["The elemental plane has launched a massive invasion at the world tree."] =
-      "El plano elemental ha lanzado una invasión masiva contra el árbol del mundo.",
-    ["The invasion of the World Tree has been unleashed! The forces of Kalimdor have to protect it at all cost."] =
-      "¡La invasión del Árbol del Mundo ha sido desatada! Las fuerzas de Kalimdor deben protegerlo a toda costa.",
-    ["Several small armies under your control spawn throughout Hyjal, you gain control of the Sulfuron Spire, the World Tree's Control Points reset to level 0, and you will be given a choice to instantly move your military units to Sufuron Spire"] =
-      "Varios pequeños ejércitos bajo tu control aparecen por todo Hyjal, obtienes control de la Aguja de Sulfuron, los Puntos de Control del Árbol del Mundo se reinician a nivel 0, y se te dará la opción de mover instantáneamente tus unidades militares a la Aguja de Sulfuron",
-
-    // Skywall - QuestKillDruids
-    ["Druids Demise"] = "El Fin de los Druidas",
-    ["Nordrassil, the World Tree, stands as a bastion of life and balance. By conquering it, Skywall can assert dominion and tip the scales of power."] =
-      "Nordrassil, el Árbol del Mundo, se erige como un bastión de vida y equilibrio. Al conquistarlo, el Trono de los Cuatro Vientos puede afirmar su dominio e inclinar la balanza del poder.",
-    ["With Nordrassil under your control, the druids falter, and the elemental forces of Skywall grow strengthened."] =
-      "Con Nordrassil bajo tu control, los druidas flaquean, y las fuerzas elementales del Trono de los Cuatro Vientos se fortalecen.",
-
-    // Skywall - QuestShimmering
-    ["Shimmering Flats"] = "Shimmering Flats",
-    ["With our lands secured we must establish a forward base."] =
-      "Con nuestras tierras aseguradas, debemos establecer una base avanzada.",
-    ["Gain Control all buildings in Shimmering Flats"] = "Obtienes control de todos los edificios en el Llano Reluciente",
-
-    // Skywall - QuestSubduing
-    ["Subduing Neptulon"] = "Sometiendo a Neptulon",
-    ["Neptulon is refusing to join us, we will force him to"] =
-      "Neptulon se niega a unirse a nosotros, lo obligaremos a hacerlo",
-
-    // Skywall - QuestThroneWind
-    ["The Throne of the Four Winds"] = "El Trono de los Cuatro Vientos",
-    ["We still don't have full control of Skywall. If we defeat the trolls of Zul'Farrak, we could use their power to secure dominion over the Throne of the Four Winds."] =
-      "Todavía no tenemos control total sobre el Trono de los Cuatro Vientos. Si derrotamos a los trolls de Zul'Farrak, podríamos usar su poder para asegurar el dominio sobre el Trono de los Cuatro Vientos.",
-    ["Gain Control of all buildings in the Throne of the Four Winds"] =
-      "Obtienes control de todos los edificios en el Trono de los Cuatro Vientos",
-
-    // Skywall - QuestVortexPinnacle
-    ["The Vortex Pinnacle"] = "La Cumbre del Vórtice",
-    ["We have lost contact with the Elemental Realm, conquer Uldum to access the Vortex Pinnacle."] =
-      "Hemos perdido contacto con el Reino Elemental, conquista Uldum para acceder a la Cumbre del Vórtice.",
-    ["in Uldum"] = "en Uldum",
 
     // Stormwind faction
     ["Kingdom of Stormwind"] = "Reino de Ventormenta",
@@ -2135,36 +1867,6 @@ internal sealed class SpanishTranslation : ITranslation
       "Permite a las unidades Orcas aumentar temporalmente su velocidad de ataque y de movimiento. Hermanos de Sangre ahora está disponible para los Grunts",
     ["The Fountain of Blood"] = "The Fountain of Blood",
 
-    // Warsong - QuestGarrosh
-    ["Twilight's Reckoning"] = "El Ajuste de Cuentas del Crepúsculo",
-    ["The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions."] =
-      "El monstruoso Antiguo Dios N'Zoth amenaza Kalimdor con locura y ruina. Termina su aterrador reinado para asegurar el continente y avanzar las ambiciones de la Horda.",
-    ["The nightmarish grasp of N'Zoth and the Black Empire has been shattered, allowing Garrosh and the Warsong clan to rally and press forward towards new territories."] =
-      "El pesadillesco control de N'Zoth y el Imperio Negro ha sido destrozado, permitiendo que Garrosh y el clan Warsong se reagrupen y avancen hacia nuevos territorios.",
-    ["Ny'alotha, the Waking City"] = "Ny'alotha, the Waking City",
-    ["Can now train Garrosh from the {altar} and research the Warsong expedition from the {shipyard}"] =
-      "Ahora puedes entrenar a Garrosh desde el {altar} e investigar la expedición Warsong desde el {shipyard}",
-
-    // Warsong - QuestGrom
-    ["Breaking Bad Blood"] = "Rompiendo la Mala Sangre",
-    ["Mannoroth, the Destroyer"] = "Mannoroth, el Destructor",
-    ["Tricked by Mannoroth into drinking from the corrupted fountain, Grom Hellscream has fallen into demonic fury, locked in battle with the Sentinels. To free him from this enslaving curse, you must defeat Mannoroth the Destroyer himself."] =
-      "Engañado por Mannoroth para beber de la fuente corrupta, Grom Hellscream ha caído en furia demoníaca, atrapado en batalla con las Centinelas. Para liberarlo de esta maldición esclavizante, debes derrotar al mismísimo Mannoroth el Destructor.",
-    ["With Mannoroth's death, the dark curse binding Grom Hellscream shatters like twisted iron chains. Freed from corruption and the demon's grasp, a redeemed Grom Hellscream rises once more, joining your ranks to fight for the honor of the Warsong Clan."] =
-      "Con la muerte de Mannoroth, la oscura maldición que ata a Grom Hellscream se rompe como cadenas de hierro retorcidas. Liberado de la corrupción y las garras del demonio, un Grom Hellscream redimido se alza una vez más, uniéndose a tus filas para luchar por el honor del Clan Grito de Guerra.",
-    ["Gain control of Grom Hellscream; Gargok is permanently removed."] =
-      "Obtienes control de Grom Hellscream; Gargok es eliminado permanentemente.",
-
-    // Warsong - QuestKillOldGods
-    ["Echoes of War"] = "Ecos de Guerra",
-    ["Temple of Ahn'Qiraj"] = "Temple of Ahn'Qiraj",
-    ["The Old Gods C'Thun and N'Zoth threaten to spread chaos across the land. By eliminating these ancient terrors, the Warsong may claim victory and infuse their warriors with newfound strength."] =
-      "Los Antiguos Dioses C'Thun y N'Zoth amenazan con esparcir el caos por la tierra. Al eliminar a estos terrores ancestrales, el Warsong puede reclamar la victoria e infundir a sus guerreros con nuevas fuerzas.",
-    ["With the defeat of C'Thun and N'Zoth, the Warsong champions channel the lingering echoes of the Old Gods' power. Both Kor'krons' and Blademasters' emerge reinvigorated to lead the Horde's conquests."] =
-      "Con la derrota de C'Thun y N'Zoth, los campeones Warsong canalizan los ecos persistentes del poder de los Antiguos Dioses. Tanto los Kor'kron como los Maestros de Espada emergen revitalizados para liderar las conquistas de la Horda.",
-    ["Permanently increases Kor'kron's and Blade master's attack damage by 25, hit points by 275, and total mana by 100."] =
-      "Aumenta permanentemente el daño de ataque de los Kor'kron y Maestros de Espada en 25, los puntos de vida en 275, y el maná total en 100.",
-
     // Warsong - QuestOrgrimmar (Title/Flavour reused verbatim from Frostwolf's QuestOrgrimmarFrostwolf)
     ["The city of Orgrimmar was finally constructed by the Warsong engineers, it is now a home for the new Horde and a symbol of power and innovation. The Warchief has rewarded us generously for our work!"] =
       "La ciudad de Orgrimmar fue finalmente construida por los ingenieros Warsong, ahora es un hogar para la nueva Horda y un símbolo de poder e innovación. ¡El Jefe de Guerra nos ha recompensado generosamente por nuestro trabajo!",
@@ -2334,22 +2036,6 @@ internal sealed class SpanishTranslation : ITranslation
     ["Learn to train Darius Crowley from the {altar}"] = "Aprendes a entrenar a Darius Crowley desde el {altar}",
     ["Learn to train {hero} from the {altar}, and learn to train {unit} from the {building}. If you're allied to the Druids, {hero}'s starting experience is halved"] =
       "Aprendes a entrenar a {hero} desde el {altar}, y aprendes a entrenar {unit} desde {building}. Si estás aliado con los Druidas, la experiencia inicial de {hero} se reduce a la mitad",
-
-    // Skywall
-    ["Un'Goro Crater"] = "Un'Goro Crater",
-    ["Altar of Elements"] = "Altar of Elements",
-    ["Pavilion"] = "Pavilion",
-    ["Earth Protection"] = "Earth Protection",
-    ["Elemental Lord"] = "Elemental Lord",
-    ["Water Prison"] = "Water Prison",
-    ["Learn to train Ragnaros from the {altar} and learn to build the Magma Complex"] =
-      "Aprendes a entrenar a Ragnaros desde el {altar} y aprendes a construir el Complejo de Magma",
-    ["Learn to train Neptulon from the {altar}, Tidal Lords from the {building}, and unlocks the {ability} for {unit}."] =
-      "Aprendes a entrenar a Neptulon desde el {altar}, a los Señores de las Mareas desde el {building}, y desbloqueas el {ability} para el {unit}.",
-    ["Harness the magical essence of Nordrassil to empower your forces and unlocks the {ability} for {unit}. The training limit of {djinn}'s and {efreet}'s is increased from 4 to 6"] =
-      "Aprovechas la esencia mágica de Nordrassil para fortalecer tus fuerzas y desbloqueas el {ability} para el {unit}. El límite de entrenamiento de {djinn} y {efreet} aumenta de 4 a 6",
-    ["Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {altar}"] =
-      "Obtienes control de todos los edificios en la Cumbre del Vórtice, y aprendes a entrenar a Al-Akir desde el {altar}",
 
     // Lordaeron
     ["Alterac Mountains"] = "Alterac Mountains",
