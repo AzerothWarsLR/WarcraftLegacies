@@ -1,14 +1,22 @@
 {
-  "OldId": "Aasl",
+  "OldId": "Aroa",
   "NewId": "A0E3",
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
       "Level": 1,
       "Pointer": 1,
-      "Id": "Slo1",
+      "Id": "Roa1",
       "Type": 2,
       "Value": 0
     },
@@ -34,20 +42,6 @@
       "Id": "acdn",
       "Type": 2,
       "Value": 0
-    },
-    {
-      "Level": 1,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aher",
-      "Value": 0
-    },
-    {
-      "Id": "alev",
-      "Value": 1
     },
     {
       "Id": "ansf",
