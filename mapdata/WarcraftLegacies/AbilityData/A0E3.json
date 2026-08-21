@@ -52,10 +52,6 @@
       "Value": 1
     },
     {
-      "Id": "alsk",
-      "Value": 0
-    },
-    {
       "Id": "aord",
       "Type": 3,
       "Value": ""
@@ -98,41 +94,12 @@
       "Value": 3
     },
     {
-      "Id": "abpy",
-      "Value": 2
-    },
-    {
       "Id": "ahky",
       "Type": 3,
       "Value": "C"
     },
     {
       "Id": "acat",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aaea",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aeat",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aca1",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "asat",
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "aspt",
       "Type": 3,
       "Value": ""
     },

@@ -78,10 +78,6 @@
       "Value": 0
     },
     {
-      "Id": "abpy",
-      "Value": 0
-    },
-    {
       "Id": "acat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl"
