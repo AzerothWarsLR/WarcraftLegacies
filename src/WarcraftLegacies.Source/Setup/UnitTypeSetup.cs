@@ -142,6 +142,21 @@ public static class UnitTypeSetup
     {
       NeverDelete = true
     });
+
+    UnitType.Register(new UnitType(UNIT_H005_VERTICAL_WOODEN_GATE_GATE_OPEN)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H00B_VERTICAL_WOODEN_GATE_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H009_VERTICAL_WOODEN_GATE_GATE_DEAD)
+    {
+      NeverDelete = true
+    });
   }
 
   private static void SetupFountainOfHealth()
