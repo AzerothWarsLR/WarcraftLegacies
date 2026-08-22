@@ -68,7 +68,7 @@
     "Position": {
       "X": -3136,
       "Y": -9664,
-      "Z": 8.4375
+      "Z": 34.0375
     },
     "Rotation": 2.7247987,
     "Scale": {
@@ -77,7 +77,7 @@
       "Z": 0.55
     },
     "SkinId": 1886607182,
-    "State": 2,
+    "State": 6,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
