@@ -10,6 +10,8 @@ public sealed class BonusDamageOnAttack : UnitTrait, IAppliesEffectOnDamage
 
   public float ProcChance { get; init; } = 1f;
 
+  public damagetype? DamageType { get; init; } = null;
+
   public void OnDealsDamage()
   {
     var target = @event.Unit;
@@ -36,6 +38,11 @@ public sealed class BonusDamageOnAttack : UnitTrait, IAppliesEffectOnDamage
     if (rule.Effect != null)
     {
       effect.Create(rule.Effect, target, "origin").Dispose();
+    }
+
+    if (DamageType != null)
+    {
+      @event.DamageType = DamageType;
     }
 
     @event.Damage += rule.Damage;

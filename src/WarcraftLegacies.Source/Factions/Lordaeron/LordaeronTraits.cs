@@ -34,7 +34,8 @@ public static class LordaeronTraits
     UnitTypeTraitRegistry.Register(new BonusDamageOnAttack()
     {
       Conditions = scourgeBaneConditions,
-      ProcChance = 0.4f
+      ProcChance = 0.4f,
+      DamageType = damagetype.Magic
     }, UNIT_HCTH_SILVER_HAND_SQUIRE_LORDAERON);
   }
 
