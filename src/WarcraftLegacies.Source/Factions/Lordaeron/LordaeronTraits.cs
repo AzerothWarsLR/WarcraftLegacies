@@ -41,7 +41,7 @@ public static class LordaeronTraits
 
   public static bool IsScourgeCondition(unit target)
   {
-    return target.UnitClassification == UnitClassifications.Undead
+    return (target.UnitClassification & UnitClassifications.Undead) != 0
       && target.IsABuilding == false
       && (target.Owner.Name == "Scourge" || target.Owner.Name == "Fel Horde" || target.Owner == player.NeutralAggressive);
   }

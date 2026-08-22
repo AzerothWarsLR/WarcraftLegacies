@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.Shared.UnitTraits.BonusDamageAttack;
@@ -35,16 +36,16 @@ public sealed class BonusDamageOnAttack : UnitTrait, IAppliesEffectOnDamage
       return;
     }
 
-    if (rule.Effect != null)
-    {
-      effect.Create(rule.Effect, target, "origin").Dispose();
-    }
-
     if (DamageType != null)
     {
       @event.DamageType = DamageType;
     }
 
-    @event.Damage += rule.Damage;
+    if (rule.Effect != null)
+    {
+      effect.Create(rule.Effect, target, "origin").Dispose();
+    }
+
+    target.TakeDamage(@event.DamageSource, rule.Damage, false, false, attacktype.Normal, DamageType);
   }
 }
