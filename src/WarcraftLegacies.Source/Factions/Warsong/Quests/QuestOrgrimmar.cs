@@ -6,10 +6,10 @@ using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Warsong.Quests;
-
 
 public sealed class QuestOrgrimmar : QuestData
 {
@@ -50,12 +50,21 @@ public sealed class QuestOrgrimmar : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    foreach (var unit in _rescueUnits)
+    var whichPlayer = completingFaction.Player;
+
+    OrgrimmarSetup.RevealUnits();
+    OrgrimmarSetup.RevealDoodads(Regions.Orgrimmar);
+
+    if (whichPlayer != null)
     {
-      unit.Rescue(completingFaction.Player);
+      whichPlayer.PlayMusicThematic("war3mapImported\\OrgrimmarTheme.mp3");
+
+      foreach (var unit in _rescueUnits)
+      {
+        unit.Rescue(whichPlayer);
+      }
     }
 
-    completingFaction.Player?.PlayMusicThematic("war3mapImported\\OrgrimmarTheme.mp3");
     CleanupRocks();
   }
 
@@ -67,6 +76,8 @@ public sealed class QuestOrgrimmar : QuestData
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
+    OrgrimmarSetup.RevealUnits();
+    OrgrimmarSetup.RevealDoodads(Regions.Orgrimmar);
   }
 
   /// <inheritdoc/>

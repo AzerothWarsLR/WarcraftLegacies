@@ -83,6 +83,7 @@ public static class GameSetup
     BlockerSetup.Setup();
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
+    OrgrimmarSetup.Setup();
     StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
