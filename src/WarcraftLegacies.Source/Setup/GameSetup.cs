@@ -84,6 +84,7 @@ public static class GameSetup
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
     OrgrimmarSetup.Setup();
+    SulfuronSpireSetup.Setup();
     StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
