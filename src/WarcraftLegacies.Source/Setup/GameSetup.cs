@@ -83,6 +83,7 @@ public static class GameSetup
     BlockerSetup.Setup();
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
+    SulfuronSpireSetup.Setup();
     StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
