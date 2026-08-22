@@ -11,10 +11,6 @@ public static class RockSetup
 
   public static void Setup()
   {
-
-    //south rocks
-    RockSystem.Register(new RockGroup(Regions.KaliRock12, _rockChunkId));
-
     //Northrend Rocks
     RockSystem.Register(new RockGroup(Regions.NorthrendRock1, _rockChunkId, 6));
     RockSystem.Register(new RockGroup(Regions.NorthrendRock2, _rockChunkId, 6));

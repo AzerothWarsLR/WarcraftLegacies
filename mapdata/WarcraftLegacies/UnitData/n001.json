@@ -89,7 +89,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhac,R013,Rosp,R064,Renb"
+      "Value": "Rhac,Rosp,R064,Renb"
     },
     {
       "Id": "umdl",

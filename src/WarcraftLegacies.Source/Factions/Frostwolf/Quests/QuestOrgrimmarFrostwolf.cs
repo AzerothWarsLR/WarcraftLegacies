@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -15,7 +14,6 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
 {
   private readonly List<unit> _rescueUnits;
   private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_WARSONG;
-  private readonly List<RockGroup> _rockGroups;
 
   public QuestOrgrimmarFrostwolf(Rectangle rescueRect) : base("To Tame a Land",
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
@@ -25,18 +23,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
     AddObjective(new ObjectiveExpire(13, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
-    _rockGroups = new List<RockGroup>();
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-    RegisterRockGroups();
-  }
-
-  private void RegisterRockGroups()
-  {
-    _rockGroups.Add(new RockGroup(Regions.KaliRock12, FourCC("LTrc")));
-    foreach (var rockGroup in _rockGroups)
-    {
-      RockSystem.Register(rockGroup);
-    }
   }
 
   /// <inheritdoc/>
@@ -50,7 +37,6 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    CleanupRocks();
     var whichPlayer = completingFaction.Player;
 
     OrgrimmarSetup.RevealUnits();
@@ -70,7 +56,6 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
-    CleanupRocks();
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
       ? player.NeutralAggressive
       : completingFaction.Player;
@@ -84,14 +69,5 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
   protected override void OnAdd(Faction whichFaction)
   {
     whichFaction.ModObjectLimit(RequiredResearchId, 1);
-  }
-
-  private void CleanupRocks()
-  {
-    foreach (var rockGroup in _rockGroups)
-    {
-      RockSystem.Remove(rockGroup);
-    }
-
   }
 }
