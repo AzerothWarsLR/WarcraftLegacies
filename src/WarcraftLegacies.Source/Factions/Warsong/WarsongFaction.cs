@@ -10,7 +10,6 @@ using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
-using WarcraftLegacies.Source.Factions.Warsong.Mechanics;
 using WarcraftLegacies.Source.Factions.Warsong.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
@@ -56,7 +55,6 @@ public sealed class WarsongFaction : Faction
     RegisterFlightPath();
     WarsongSpells.Setup();
     WarsongTraits.Setup();
-    BloodPactBattleSimulation.StartSimulation();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.BarrenAmbient2.CleanupHostileUnits();
     Regions.AshenvaleCreeps.CleanupHostileUnits();
@@ -76,8 +74,7 @@ public sealed class WarsongFaction : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestGrom(AllLegends.Warsong.GromHellscream, AllLegends.Warsong.Gargok));
-    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
+    StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
     AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     AddQuest(new QuestWarsongHold());
