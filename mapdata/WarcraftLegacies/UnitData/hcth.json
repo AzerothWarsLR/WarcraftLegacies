@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A13D,A07C,A020,A0MI,Aihn"
+      "Value": "A07C,A020,A0MI,Aihn"
     },
     {
       "Id": "ubld",
@@ -25,7 +25,7 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 1.2
+      "Value": 1.5
     },
     {
       "Id": "udef",
@@ -38,7 +38,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 11
+      "Value": 20
     },
     {
       "Id": "udu1",
@@ -85,12 +85,7 @@
     {
       "Id": "uhpr",
       "Type": 2,
-      "Value": 2
-    },
-    {
-      "Id": "udaa",
-      "Type": 3,
-      "Value": "A13D"
+      "Value": 3
     },
     {
       "Id": "uico",
@@ -146,7 +141,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Light-infused warrior immune to plague and undeath."
+      "Value": "Light-infused warrior adept at vanquishing undead."
     }
   ]
 }

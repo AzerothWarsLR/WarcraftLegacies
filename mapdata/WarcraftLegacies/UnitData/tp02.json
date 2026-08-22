@@ -26,7 +26,7 @@
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 32
+      "Value": 16
     },
     {
       "Id": "ua1c",
@@ -39,7 +39,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 68
+      "Value": 88
     },
     {
       "Id": "ua2b",
