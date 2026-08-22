@@ -5,6 +5,7 @@ using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
@@ -36,12 +37,20 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    foreach (var unit in _rescueUnits)
-    {
-      unit.Rescue(completingFaction.Player);
-    }
+    var whichPlayer = completingFaction.Player;
 
-    completingFaction.Player.PlayMusicThematic("war3mapImported\\OrgrimmarTheme.mp3");
+    OrgrimmarSetup.RevealUnits();
+    OrgrimmarSetup.RevealDoodads(Regions.Orgrimmar);
+
+    if (whichPlayer != null)
+    {
+      whichPlayer.PlayMusicThematic("war3mapImported\\OrgrimmarTheme.mp3");
+
+      foreach (var unit in _rescueUnits)
+      {
+        unit.Rescue(whichPlayer);
+      }
+    }
   }
 
   /// <inheritdoc/>
@@ -52,6 +61,8 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
+    OrgrimmarSetup.RevealUnits();
+    OrgrimmarSetup.RevealDoodads(Regions.Orgrimmar);
   }
 
   /// <inheritdoc/>
