@@ -19,7 +19,7 @@ public static class LordaeronTraits
 
     var scourgeBaneConditions = new List<DamageCondition>
     {
-        new() { 
+        new() {
           Damage = 100,
           Condition = target => IsScourgeCondition(target) && target.IsUnitType(unittype.Summoned),
           Effect = "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
