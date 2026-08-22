@@ -1,19 +1,19 @@
 [
   {
-    "TypeId": 825700462,
+    "TypeId": 1144139880,
     "Variation": 0,
     "Position": {
-      "X": -19072,
-      "Y": -13696,
-      "Z": 207.5
+      "X": 9096.99,
+      "Y": 4625.7407,
+      "Z": 206.25
     },
-    "Rotation": 4.712389,
+    "Rotation": 4.1706862,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 825700462,
+    "SkinId": 1144139880,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -33,23 +33,23 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1449
+    "CreationNumber": 1192
   },
   {
-    "TypeId": 825700462,
+    "TypeId": 1396977774,
     "Variation": 0,
     "Position": {
-      "X": -19200,
-      "Y": -13696,
-      "Z": 308.5
+      "X": 9216,
+      "Y": 4736,
+      "Z": 206.25
     },
-    "Rotation": 4.712389,
+    "Rotation": 3.8798797,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 825700462,
+    "SkinId": 1396977774,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -58,7 +58,7 @@
     "MP": -1,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "GoldAmount": 0,
+    "GoldAmount": 12500,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "HeroStrength": 0,
@@ -66,26 +66,30 @@
     "HeroIntelligence": 0,
     "InventoryData": [],
     "AbilityData": [],
-    "RandomDataMode": -1,
+    "RandomDataMode": 0,
+    "RandomData": {
+      "Level": 1,
+      "Class": 0
+    },
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1424
+    "CreationNumber": 1826
   },
   {
-    "TypeId": 808595573,
+    "TypeId": 1144139880,
     "Variation": 0,
     "Position": {
-      "X": -19200,
-      "Y": -13376,
-      "Z": 229.11304
+      "X": 9308.4,
+      "Y": 4641.983,
+      "Z": 206.25
     },
-    "Rotation": 4.712389,
+    "Rotation": 5.729739,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 808595573,
+    "SkinId": 1144139880,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -105,6 +109,6 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1410
+    "CreationNumber": 1093
   }
 ]
