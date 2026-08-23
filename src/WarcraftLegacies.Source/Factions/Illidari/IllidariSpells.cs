@@ -42,12 +42,13 @@ public static class IllidariSpells
     {
       ManaBurned = new LeveledAbilityField<int>
       {
-        Base = 100,
-        PerLevel = 75
+        Base = 50,
+        PerLevel = 40
       },
       MaximumBounces = 5,
       BurnReductionPerBounce = 0.15f,
-      MaximumBounceRadius = 500
+      MaximumBounceRadius = 500,
+      BurnedManaDamageMultiplier = 2f,
     });
 
     SpellRegistry.Register(new SplitHealingWave(ABILITY_YBAW_SPLIT_HEALING_WAVE_SEER)

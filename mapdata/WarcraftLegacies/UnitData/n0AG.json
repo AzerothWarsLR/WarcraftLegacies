@@ -32,6 +32,11 @@
       "Value": 0
     },
     {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.35

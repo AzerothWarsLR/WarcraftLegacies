@@ -35,7 +35,7 @@
     },
     {
       "Id": "udef",
-      "Value": 8
+      "Value": 2
     },
     {
       "Id": "udty",
@@ -68,7 +68,7 @@
     },
     {
       "Id": "umpi",
-      "Value": 500
+      "Value": 600
     },
     {
       "Id": "umpm",
@@ -90,7 +90,7 @@
     {
       "Id": "umpr",
       "Type": 2,
-      "Value": 1.67
+      "Value": 2
     },
     {
       "Id": "uhrt",
@@ -106,10 +106,6 @@
       "Value": 5
     },
     {
-      "Id": "umvs",
-      "Value": 220
-    },
-    {
       "Id": "upgr",
       "Type": 3,
       "Value": "R061,R01B,Rhme,Rhar,R00J,Rhpm,Rguv"
@@ -118,6 +114,10 @@
       "Id": "ureq",
       "Type": 3,
       "Value": "h068"
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
     },
     {
       "Id": "ubpx",

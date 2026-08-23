@@ -45,6 +45,11 @@ public sealed class ChainManaBurn : Spell
   /// </summary>
   public float MaximumTotalRadius { get; init; } = 1000f;
 
+  /// <summary>
+  /// Multiplies the amount of mana burned by this value to determine the amount of damage dealt to the target.
+  /// </summary>
+  public required float BurnedManaDamageMultiplier { get; init; }
+
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
@@ -53,10 +58,10 @@ public sealed class ChainManaBurn : Spell
       .Where(x => IsValidTarget(caster, x))
       .ToList();
     var manaBurned = ManaBurned.Base + ManaBurned.PerLevel * GetAbilityLevel(caster);
-    DoBounce(caster, caster, target, manaBurned, MaximumBounces, possibleTargets);
+    DoBounce(caster, caster, target, manaBurned, BurnedManaDamageMultiplier, MaximumBounces, possibleTargets);
   }
 
-  private void DoBounce(unit caster, unit origin, unit target, float amount, int bouncesRemaining,
+  private void DoBounce(unit caster, unit origin, unit target, float amount, float damageMultiplier, int bouncesRemaining,
     List<unit> possibleTargets)
   {
     possibleTargets.Remove(target);
@@ -66,7 +71,7 @@ public sealed class ChainManaBurn : Spell
       FadeDuration = 0.25f
     });
 
-    BurnMana(caster, target, amount);
+    BurnMana(caster, target, amount, damageMultiplier);
 
     if (bouncesRemaining == 0 || possibleTargets.Count == 0)
     {
@@ -84,17 +89,17 @@ public sealed class ChainManaBurn : Spell
     {
       PeriodicEvents.AddPeriodicEvent(() =>
       {
-        DoBounce(caster, target, nextTarget, amount * (1 - BurnReductionPerBounce), bouncesRemaining - 1, possibleTargets);
+        DoBounce(caster, target, nextTarget, amount * (1 - BurnReductionPerBounce), damageMultiplier, bouncesRemaining - 1, possibleTargets);
         return false;
       }, 0.12f);
     }
   }
 
-  private static void BurnMana(unit caster, unit target, float amount)
+  private static void BurnMana(unit caster, unit target, float amount, float damageMultiplier)
   {
     amount = Math.Min(amount, target.Mana);
     target.Mana -= amount;
-    target.Damage(caster, amount, attacktype.Normal);
+    target.Damage(caster, amount * damageMultiplier, attacktype.Normal);
   }
 
   private static bool IsValidTarget(unit caster, unit target)
