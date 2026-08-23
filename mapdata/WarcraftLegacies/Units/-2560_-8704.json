@@ -4,8 +4,8 @@
     "Variation": 0,
     "Position": {
       "X": -2730.0908,
-      "Y": -8925.436,
-      "Z": 75.31871
+      "Y": -8861.436,
+      "Z": 110.51397
     },
     "Rotation": 4.7960057,
     "Scale": {
@@ -40,8 +40,8 @@
     "Variation": 0,
     "Position": {
       "X": -2802.5566,
-      "Y": -8988.762,
-      "Z": 82.55765
+      "Y": -8924.762,
+      "Z": 80.39288
     },
     "Rotation": 4.6667333,
     "Scale": {
@@ -76,8 +76,8 @@
     "Variation": 0,
     "Position": {
       "X": -2843.8594,
-      "Y": -8853.93,
-      "Z": 81.20007
+      "Y": -8789.93,
+      "Z": 94.925545
     },
     "Rotation": 4.6742077,
     "Scale": {
@@ -112,8 +112,8 @@
     "Variation": 0,
     "Position": {
       "X": -2762.746,
-      "Y": -8849.854,
-      "Z": 76.14784
+      "Y": -8785.854,
+      "Z": 112.1679
     },
     "Rotation": 4.709706,
     "Scale": {
@@ -148,7 +148,7 @@
     "Variation": 0,
     "Position": {
       "X": -2868.3633,
-      "Y": -8928.703,
+      "Y": -8864.703,
       "Z": 84.4545
     },
     "Rotation": 4.7927723,
@@ -184,8 +184,8 @@
     "Variation": 0,
     "Position": {
       "X": -2752,
-      "Y": -8960,
-      "Z": 75.875
+      "Y": -8896,
+      "Z": 96.1875
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -218,5 +218,45 @@
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
     "CreationNumber": 15
+  },
+  {
+    "TypeId": 1261449326,
+    "Variation": 0,
+    "Position": {
+      "X": -2752,
+      "Y": -9088,
+      "Z": 92.28125
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1261449326,
+    "Flags": 2,
+    "OwnerId": 0,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 12500,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": 0,
+    "RandomData": {
+      "Level": 1,
+      "Class": 0
+    },
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 401
   }
 ]

@@ -1,19 +1,19 @@
 [
   {
-    "TypeId": 1262563438,
+    "TypeId": 1836673134,
     "Variation": 0,
     "Position": {
-      "X": 9051.828,
-      "Y": 5722.086,
-      "Z": 205.55937
+      "X": 9330.371,
+      "Y": 5585.481,
+      "Z": 206.25
     },
-    "Rotation": 3.0665433,
+    "Rotation": 4.681522,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1262563438,
+    "SkinId": 1836673134,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -33,6 +33,78 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 686
+    "CreationNumber": 1095
+  },
+  {
+    "TypeId": 1144139880,
+    "Variation": 0,
+    "Position": {
+      "X": 9214.256,
+      "Y": 5559.575,
+      "Z": 206.23077
+    },
+    "Rotation": 4.7022495,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1144139880,
+    "Flags": 2,
+    "OwnerId": 27,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": -1,
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 708
+  },
+  {
+    "TypeId": 1836673134,
+    "Variation": 0,
+    "Position": {
+      "X": 9120.501,
+      "Y": 5596.1885,
+      "Z": 204.50363
+    },
+    "Rotation": 4.5363865,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1836673134,
+    "Flags": 2,
+    "OwnerId": 27,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": -1,
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 662
   }
 ]

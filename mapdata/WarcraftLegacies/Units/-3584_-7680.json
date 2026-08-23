@@ -7,7 +7,7 @@
       "Y": -8049.591,
       "Z": 56.84143
     },
-    "Rotation": -0.74896884,
+    "Rotation": 5.534217,
     "Scale": {
       "X": 1,
       "Y": 1,
@@ -55,7 +55,7 @@
     "Unk1": 0,
     "Unk2": 0,
     "HP": -1,
-    "MP": 0,
+    "MP": -1,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "GoldAmount": 12500,
