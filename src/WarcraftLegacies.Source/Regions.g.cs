@@ -312,6 +312,7 @@ public static class Regions
   public static Rectangle Sunwell { get; set; } = new Rectangle(18144f, 21248f, 18976f, 22048f);
   public static Rectangle SunwellAmbient { get; set; } = new Rectangle(15168f, 17440f, 21376f, 23104f);
   public static Rectangle SwampofSorrowsAmbient { get; set; } = new Rectangle(14944f, -16896f, 19424f, -14784f);
+  public static Rectangle TaurenTribesStartPos { get; set; } = new Rectangle(-9920f, -12032f, -8768f, -10912f);
   public static Rectangle TeldrassilAmbient { get; set; } = new Rectangle(-20576f, 12160f, -16000f, 16544f);
   public static Rectangle TeldrassilUnlock { get; set; } = new Rectangle(-20512f, 12256f, -16352f, 16512f);
   public static Rectangle TelredorUnlock { get; set; } = new Rectangle(-3296f, -26464f, -1728f, -25376f);

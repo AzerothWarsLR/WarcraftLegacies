@@ -147,6 +147,21 @@
       "EnemyHighPriorityFlags": 0
     },
     {
+      "Id": 5,
+      "Controller": 1,
+      "Race": 2,
+      "Flags": 1,
+      "Name": "Tauren Tribes",
+      "StartPosition": {
+        "X": -9408,
+        "Y": -11520
+      },
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 0,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
+    },
+    {
       "Id": 6,
       "Controller": 1,
       "Race": 2,
