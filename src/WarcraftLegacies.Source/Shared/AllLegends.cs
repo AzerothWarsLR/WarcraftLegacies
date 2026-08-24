@@ -10,6 +10,7 @@ using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Lordaeron;
+using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -74,6 +75,11 @@ public static class AllLegends
   public static IllidariLegends Naga { get; }
 
   /// <summary>
+  /// Contains references to all Orcish Horde <see cref="Legend"/>s.
+  /// </summary>
+  public static OrcishHordeLegends OrcishHorde { get; }
+
+  /// <summary>
   /// Contains references to all Quel'thalas <see cref="Legend"/>s.
   /// </summary>
   public static QuelthalasLegends Quel { get; }
@@ -125,6 +131,7 @@ public static class AllLegends
     Kultiras = new KultirasLegends();
     Legion = new LegionLegends();
     Lordaeron = new LordaeronLegends();
+    OrcishHorde = new OrcishHordeLegends();
     Naga = new IllidariLegends();
     Quel = new QuelthalasLegends();
     Scourge = new ScourgeLegends();
@@ -152,6 +159,7 @@ public static class AllLegends
     Kultiras.RegisterLegends();
     Legion.RegisterLegends();
     Lordaeron.RegisterLegends();
+    OrcishHorde.RegisterLegends();
     Naga.RegisterLegends();
     Quel.RegisterLegends();
     Scourge.RegisterLegends();
