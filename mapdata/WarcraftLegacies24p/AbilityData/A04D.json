@@ -33,13 +33,13 @@
       "Level": 1,
       "Id": "adur",
       "Type": 2,
-      "Value": 60
+      "Value": 999999
     },
     {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 60
+      "Value": 999999
     },
     {
       "Id": "alev",

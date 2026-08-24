@@ -66,6 +66,8 @@ public static class GameSetup
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
+    InfiniteResourceSetup.Setup();
+    UnlimitedPopulationSetup.Setup();
     var gameModeManager = new GameModeManager(new IGameMode[]
     {
       new ClosedAlliance(),

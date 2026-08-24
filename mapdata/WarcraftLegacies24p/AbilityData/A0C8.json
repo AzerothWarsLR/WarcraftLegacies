@@ -7,6 +7,18 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 999999
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 999999
+    },
+    {
+      "Level": 1,
       "Id": "acdn",
       "Type": 2,
       "Value": 5
@@ -39,13 +51,13 @@
       "Level": 2,
       "Id": "adur",
       "Type": 2,
-      "Value": 85
+      "Value": 999999
     },
     {
       "Level": 2,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 85
+      "Value": 999999
     },
     {
       "Level": 1,

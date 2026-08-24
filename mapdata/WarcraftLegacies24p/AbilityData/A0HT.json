@@ -37,25 +37,25 @@
       "Level": 1,
       "Id": "adur",
       "Type": 2,
-      "Value": 10
+      "Value": 999999
     },
     {
       "Level": 2,
       "Id": "adur",
       "Type": 2,
-      "Value": 70
+      "Value": 999999
     },
     {
       "Level": 1,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 10
+      "Value": 999999
     },
     {
       "Level": 2,
       "Id": "ahdu",
       "Type": 2,
-      "Value": 70
+      "Value": 999999
     },
     {
       "Id": "alev",
