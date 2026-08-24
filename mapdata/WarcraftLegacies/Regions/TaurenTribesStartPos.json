@@ -1,0 +1,16 @@
+{
+  "Left": -9920,
+  "Bottom": -12032,
+  "Right": -8768,
+  "Top": -10912,
+  "Name": "TaurenTribesStartPos",
+  "CreationNumber": 140,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}
