@@ -17,7 +17,7 @@ public sealed class DraeneiFaction : Faction
   public DraeneiFaction()
     : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.NightElves;
     StartingGold = new StartingGold
     {
       Instant = 200,
