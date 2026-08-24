@@ -140,11 +140,6 @@
       "Value": "ancient,mechanical,townhall"
     },
     {
-      "Id": "upgr",
-      "Type": 3,
-      "Value": "Rhac,Rgfo"
-    },
-    {
       "Id": "ua1w",
       "Type": 3,
       "Value": "instant"

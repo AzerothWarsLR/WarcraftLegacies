@@ -52,12 +52,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00J,R03Q,R02I"
+      "Value": "R00J"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n08O,nogn,n08E"
+      "Value": "n08O,VP50"
     },
     {
       "Id": "ulum",
@@ -70,22 +70,22 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong Magic)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\ArcaneLodgeV1.00.mdl"
+      "Value": "buildings\\other\\GnollHut2\\GnollHut2.mdl"
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Spire"
+      "Value": "Ogre Mound"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Build Spire"
+      "Value": "Build Ogre Mound"
     },
     {
       "Id": "uubs",
@@ -95,12 +95,12 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Spellcaster production building. "
+      "Value": "Ogre production building. "
     },
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.9
+      "Value": 1.4
     }
   ]
 }
