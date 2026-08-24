@@ -10,12 +10,14 @@ using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Lordaeron;
+using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.Factions.TaurenTribes;
 using WarcraftLegacies.Source.Factions.Warsong;
 
 namespace WarcraftLegacies.Source.Shared;
@@ -73,6 +75,11 @@ public static class AllLegends
   public static IllidariLegends Naga { get; }
 
   /// <summary>
+  /// Contains references to all Orcish Horde <see cref="Legend"/>s.
+  /// </summary>
+  public static OrcishHordeLegends Orc { get; }
+
+  /// <summary>
   /// Contains references to all Quel'thalas <see cref="Legend"/>s.
   /// </summary>
   public static QuelthalasLegends Quel { get; }
@@ -104,6 +111,11 @@ public static class AllLegends
   public static SunfuryLegends Sunfury { get; }
 
   /// <summary>
+  /// Contains references to all Tauren Tribes <see cref="Legend"/>s.
+  /// </summary>
+  public static TaurenTribesLegends Tauren { get; }
+
+  /// <summary>
   /// Contains references to all Neutral <see cref="Legend"/>s.
   /// </summary>
   public static NeutralLegends Neutral { get; }
@@ -119,6 +131,7 @@ public static class AllLegends
     Kultiras = new KultirasLegends();
     Legion = new LegionLegends();
     Lordaeron = new LordaeronLegends();
+    Orc = new OrcishHordeLegends();
     Naga = new IllidariLegends();
     Quel = new QuelthalasLegends();
     Scourge = new ScourgeLegends();
@@ -129,6 +142,7 @@ public static class AllLegends
     Gilneas = new GilneasLegends();
     Scarlet = new ScarletLegends();
     Sunfury = new SunfuryLegends();
+    Tauren = new TaurenTribesLegends();
   }
 
   /// <summary>
@@ -145,6 +159,7 @@ public static class AllLegends
     Kultiras.RegisterLegends();
     Legion.RegisterLegends();
     Lordaeron.RegisterLegends();
+    Orc.RegisterLegends();
     Naga.RegisterLegends();
     Quel.RegisterLegends();
     Scourge.RegisterLegends();
@@ -155,5 +170,6 @@ public static class AllLegends
     Gilneas.RegisterLegends();
     Scarlet.RegisterLegends();
     Sunfury.RegisterLegends();
+    Tauren.RegisterLegends();
   }
 }
