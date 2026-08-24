@@ -39,6 +39,13 @@ public static class CheatSetup
     CommandManager.Register(new CheatGetUnitAbilities());
     CommandManager.Register(new CheatRemoveAllAbilities());
     CommandManager.Register(new CheatSkipTurns());
+    CommandManager.Register(new CheatNextTurn());
+    CommandManager.Register(new CheatWorldDirector(WorldDirectorCommandType.Control));
+    CommandManager.Register(new CheatWorldDirector(WorldDirectorCommandType.NextFaction));
+    CommandManager.Register(new CheatWorldDirector(WorldDirectorCommandType.PreviousFaction));
+    CommandManager.Register(new CheatWorldDirector(WorldDirectorCommandType.Factions));
+    CommandManager.Register(new CheatWorldDirector(WorldDirectorCommandType.CurrentFaction));
+    CommandManager.Register(new CheatWorldDirector(WorldDirectorCommandType.DirectorStatus));
     CommandManager.Register(new CheatPermaKill());
     CommandManager.Register(new CheatGetUnitCurrentOrder());
     CommandManager.Register(new AssembleZinrokh(new List<Artifact>

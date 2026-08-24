@@ -17,4 +17,8 @@
       <PackageReference Include="WCSharp.W3MMD" Version="3.3.9" />
     </ItemGroup>
 
+    <ItemGroup>
+      <InternalsVisibleTo Include="WarcraftLegacies.Source.Tests" />
+    </ItemGroup>
+
 </Project>

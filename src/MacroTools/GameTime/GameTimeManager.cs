@@ -19,7 +19,11 @@ public static class GameTimeManager
   private static timer? _turnTimer;
   private static readonly TurnScheduler _turnScheduler = new();
 
-  /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
+  /// <summary>Initializes the turn manager without automatically advancing turns.</summary>
+  /// <remarks>
+  /// The timer is retained for timer dialog compatibility, but is intentionally not
+  /// started. Turns are advanced explicitly through <see cref="SkipTurns"/>.
+  /// </remarks>
   public static void Start()
   {
     if (_turnTimer != null)
@@ -28,7 +32,6 @@ public static class GameTimeManager
     }
 
     _turnTimer = timer.Create();
-    _turnTimer.Start(TurnDuration, true, EndTurn);
   }
 
   /// <summary>
@@ -39,8 +42,7 @@ public static class GameTimeManager
   /// </exception>
   /// <remarks>
   /// <see cref="Start"/> must be called before invoking this method. The returned
-  /// dialog reflects the countdown of the current turn, whose duration is defined
-  /// by <see cref="TurnDuration"/>.
+  /// dialog remains attached to the inactive turn timer for UI compatibility.
   /// </remarks>
   public static timerdialog CreateDialog()
   {

@@ -29,7 +29,7 @@ public static class GameTimeDialog
     delayedDisplayTimer.Start(2, false, () =>
     {
       _timerDialog.IsDisplayed = true;
-      _timerDialog.SetTitle("Game starts in:");
+      _timerDialog.SetTitle($"Turn {GameTimeManager.Turn}");
       delayedDisplayTimer.Dispose();
     });
 
