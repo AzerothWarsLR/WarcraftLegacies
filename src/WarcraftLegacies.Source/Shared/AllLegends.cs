@@ -16,6 +16,7 @@ using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.Factions.TaurenTribes;
 using WarcraftLegacies.Source.Factions.Warsong;
 
 namespace WarcraftLegacies.Source.Shared;
@@ -104,6 +105,11 @@ public static class AllLegends
   public static SunfuryLegends Sunfury { get; }
 
   /// <summary>
+  /// Contains references to all Tauren Tribes <see cref="Legend"/>s.
+  /// </summary>
+  public static TaurenTribesLegends TaurenTribes { get; }
+
+  /// <summary>
   /// Contains references to all Neutral <see cref="Legend"/>s.
   /// </summary>
   public static NeutralLegends Neutral { get; }
@@ -129,6 +135,7 @@ public static class AllLegends
     Gilneas = new GilneasLegends();
     Scarlet = new ScarletLegends();
     Sunfury = new SunfuryLegends();
+    TaurenTribes = new TaurenTribesLegends();
   }
 
   /// <summary>
@@ -155,5 +162,6 @@ public static class AllLegends
     Gilneas.RegisterLegends();
     Scarlet.RegisterLegends();
     Sunfury.RegisterLegends();
+    TaurenTribes.RegisterLegends();
   }
 }

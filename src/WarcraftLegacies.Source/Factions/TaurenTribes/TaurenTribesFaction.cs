@@ -54,6 +54,8 @@ public sealed class TaurenTribesFaction : Faction
   {
     RegisterQuests();
     RegisterResearches();
+    TaurenTribesSpells.Setup();
+    TaurenTribesTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
