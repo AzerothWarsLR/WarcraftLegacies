@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;

@@ -1,4 +1,4 @@
-using MacroTools.Localization;
+﻿using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Shared.Data;
 
