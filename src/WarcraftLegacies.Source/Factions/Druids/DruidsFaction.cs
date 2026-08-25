@@ -25,7 +25,7 @@ public sealed class DruidsFaction : Faction
   public DruidsFaction() :
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.NightElves;
     UndefeatedResearch = UPGRADE_R06E_DRUIDS_EXISTS;
     StartingGold = new StartingGold
     {

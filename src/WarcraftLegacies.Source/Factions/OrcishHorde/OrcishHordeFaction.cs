@@ -11,7 +11,7 @@ public sealed class OrcishHordeFaction : Faction
   /// <inheritdoc />
   public OrcishHordeFaction() : base("Orcish Horde", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.Horde;
     ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
     StartingGold = new StartingGold
     {
