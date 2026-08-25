@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 
@@ -12,16 +14,10 @@ namespace WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 /// </summary>
 public sealed class StartTheLongMarch : Research
 {
-  /// <summary>
-  /// Player slot that owns the pack kodos while they march. Not the native Neutral Passive slot, because
-  /// Neutral Passive units are immune to attacks even from an explicitly targeted order - this slot is just an
-  /// otherwise-unused player, allied with Tauren Tribes so it isn't hostile to the player, but still a normal
-  /// enemy to Neutral Aggressive so ambushes can actually land hits.
-  /// </summary>
   private const int KodoControllerSlot = 8;
-
-  /// <summary>How long the "birth" (construction) animation is given to play before the building is removed.</summary>
   private const float PackUpAnimationSeconds = 1.50f;
+  private const int GuardCount = 4;
+  private const float GuardSpawnSpacing = 60f;
 
   private readonly Faction _taurenTribes;
   private readonly QuestTheLongMarch _quest;
@@ -51,31 +47,54 @@ public sealed class StartTheLongMarch : Research
       _taurenTribes.Player.SetAlliance(kodoController, alliancetype.SharedVision, true);
     }
 
-    var kodos = new List<unit>();
-    kodos.Add(SpawnKodo(kodoController, _tent));
-    _tent.Dispose();
+    var allBuildings = new List<unit> { _tent };
+    allBuildings.AddRange(_productionBuildings);
 
-    foreach (var building in _productionBuildings)
+    foreach (var building in allBuildings)
     {
-      kodos.Add(SpawnKodo(kodoController, building));
-      PlayPackUpAnimationThenRemove(building);
+      building.SetAnimation("birth");
     }
 
-    _quest.BeginMarch(kodos, Regions.StonemaulKeep, Regions.ThunderBluff);
-    new LongMarchCaravan(_taurenTribes, _quest, kodos, Regions.StonemaulKeep, Regions.ThunderBluff);
+    var packUpTimer = timer.Create();
+    packUpTimer.Start(PackUpAnimationSeconds, false, () =>
+    {
+      packUpTimer.Dispose();
+      SpawnKodosAndBeginMarch(kodoController, allBuildings);
+    });
   }
 
-  private static unit SpawnKodo(player owner, unit atBuilding) =>
-    unit.Create(owner, UNIT_OTKO_PACK_KODO_TAUREN_TRIBES, atBuilding.X, atBuilding.Y, atBuilding.Facing);
-
-  private static void PlayPackUpAnimationThenRemove(unit building)
+  private void SpawnKodosAndBeginMarch(player kodoController, List<unit> allBuildings)
   {
-    building.SetAnimation("birth");
-    var removalTimer = timer.Create();
-    removalTimer.Start(PackUpAnimationSeconds, false, () =>
+    var campX = _tent.X;
+    var campY = _tent.Y;
+    var campFacing = _tent.Facing;
+
+    var kodos = new List<unit>();
+    foreach (var building in allBuildings)
     {
+      kodos.Add(unit.Create(kodoController, UNIT_OTKO_PACK_KODO_TAUREN_TRIBES, building.X, building.Y, building.Facing));
       building.Dispose();
-      removalTimer.Dispose();
-    });
+    }
+
+    var guards = new List<unit>();
+    for (var i = 0; i < GuardCount; i++)
+    {
+      var spawnOffset = (i - (GuardCount - 1) / 2f) * GuardSpawnSpacing;
+      guards.Add(unit.Create(kodoController, UNIT_OTGD_TAUREN_GUARD_TAUREN_TRIBES, campX + spawnOffset, campY, campFacing));
+    }
+
+    var thousandNeedlesControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N026_THOUSAND_NEEDLES);
+    var thousandNeedlesTarget = new Point(thousandNeedlesControlPoint.X, thousandNeedlesControlPoint.Y);
+    var stonemaulControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N022_STONEMAUL);
+    var stonemaulTarget = new Point(stonemaulControlPoint.X, stonemaulControlPoint.Y);
+    var mulgoreControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09G_MULGORE);
+    var mulgoreTarget = new Point(mulgoreControlPoint.X, mulgoreControlPoint.Y);
+
+    thousandNeedlesControlPoint.SetOwner(player.NeutralPassive);
+    mulgoreControlPoint.SetOwner(player.NeutralPassive);
+
+    _quest.BeginMarch(kodos, thousandNeedlesTarget, Regions.StonemaulKeep, mulgoreTarget, Regions.ThunderBluff);
+    new LongMarchCaravan(_taurenTribes, _quest, kodos, guards, thousandNeedlesControlPoint, stonemaulTarget,
+      mulgoreControlPoint, Regions.StonemaulKeep, Regions.ThunderBluff);
   }
 }

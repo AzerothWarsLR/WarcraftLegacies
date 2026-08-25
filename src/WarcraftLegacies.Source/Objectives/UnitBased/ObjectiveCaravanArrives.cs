@@ -16,10 +16,20 @@ public sealed class ObjectiveCaravanArrives : Objective
   /// <param name="targetRect">Where the caravan has to arrive.</param>
   /// <param name="rectName">A user-friendly name for the area.</param>
   public ObjectiveCaravanArrives(Rectangle targetRect, string rectName)
+    : this(new Point(targetRect.Rect.CenterX, targetRect.Rect.CenterY), rectName)
+  {
+  }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ObjectiveCaravanArrives"/> class.
+  /// </summary>
+  /// <param name="targetPosition">Where the caravan has to arrive.</param>
+  /// <param name="rectName">A user-friendly name for the area.</param>
+  public ObjectiveCaravanArrives(Point targetPosition, string rectName)
   {
     SetDescription("The caravan reaches {rect}", ("{rect}", Loc.Get(rectName)));
     DisplaysPosition = true;
     PingPath = "MinimapQuestTurnIn";
-    Position = new(targetRect.Rect.CenterX, targetRect.Rect.CenterY);
+    Position = targetPosition;
   }
 }
