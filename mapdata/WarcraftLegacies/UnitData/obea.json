@@ -52,7 +52,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h0CN,h0CO,otbr"
+      "Value": "otbr,orai"
     },
     {
       "Id": "ulum",
@@ -61,7 +61,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf Specialist)"
+      "Value": "(Orc Horde Specialist)"
     },
     {
       "Id": "uhot",

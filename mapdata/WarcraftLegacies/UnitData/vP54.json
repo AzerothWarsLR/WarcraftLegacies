@@ -1,5 +1,6 @@
 {
-  "OldId": "okod",
+  "OldId": "oshm",
+  "NewId": "vP54",
   "Unk": [
     0
   ],
@@ -7,30 +8,21 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AInv,ACrk,A0VZ,Aakb,Advc,Adev,Apak"
-    },
-    {
-      "Id": "uacq",
-      "Type": 2,
-      "Value": 600
+      "Value": "Aion,Apg2"
     },
     {
       "Id": "ubld",
-      "Value": 10
+      "Value": 3
     },
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 16
+      "Value": 8
     },
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 1.7
-    },
-    {
-      "Id": "udea",
-      "Value": 0
+      "Value": 2
     },
     {
       "Id": "ua1b",
@@ -42,11 +34,11 @@
     },
     {
       "Id": "ugol",
-      "Value": 45
+      "Value": 15
     },
     {
       "Id": "ugor",
-      "Value": 25
+      "Value": 13
     },
     {
       "Id": "ulum",
@@ -57,13 +49,12 @@
       "Value": 0
     },
     {
-      "Id": "umvt",
-      "Type": 3,
-      "Value": "foot"
+      "Id": "umpi",
+      "Value": 200
     },
     {
-      "Id": "ua1r",
-      "Value": 600
+      "Id": "upri",
+      "Value": 10
     },
     {
       "Id": "urtm",
@@ -71,30 +62,20 @@
     },
     {
       "Id": "umvs",
-      "Value": 200
+      "Value": 220
     },
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rhme,Rhar,Rguv"
+      "Value": "Rhme,Rhar,Ropm,Rguv"
     },
     {
-      "Id": "ucar",
-      "Value": 1
-    },
-    {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "o02S"
+      "Id": "ua1s",
+      "Value": 3
     },
     {
       "Id": "uhpm",
-      "Value": 1100
-    },
-    {
-      "Id": "udep",
-      "Type": 3,
-      "Value": "o06Q"
+      "Value": 700
     },
     {
       "Id": "unsf",
@@ -104,7 +85,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "E"
+      "Value": "Q"
     },
     {
       "Id": "usca",
@@ -114,7 +95,27 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Kodo-mounted drummer which inspires the soldiers of the Horde."
+      "Value": "Primary spellcaster, adept at supporting frontline units."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Earthcaller"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Earthcaller"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Creeps\\EarthPandarenBrewmaster\\EarthPandarenBrewmaster.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthBrewmaster.blp"
     }
   ]
 }
