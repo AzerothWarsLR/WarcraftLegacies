@@ -1,0 +1,48 @@
+{
+  "OldId": "nmrm",
+  "NewId": "o07D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uver",
+      "Value": 1
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Darkspear Isles)"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light melee unit that poisons opponents. Can also Shadowmeld. "
+    }
+  ]
+}
