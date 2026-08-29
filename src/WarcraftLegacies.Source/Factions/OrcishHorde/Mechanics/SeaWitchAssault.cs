@@ -12,8 +12,11 @@ namespace WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 
 /// <summary>
 /// Spawns four waves of murlocs against the Orcish Horde's landing island, with an independent Sea Witch
-/// that can be killed for an early win or try to flee once at low health. Clearing the fourth wave, or
-/// killing the Sea Witch, completes <see cref="QuestCountdownToExtinction"/>. Stops if the Great Hall dies.
+/// that can be killed for an early win or flee once at low health via an invulnerable, uninterruptible
+/// teleport channel. She carries her health between waves, healing 10% of it on each respawn, and flees
+/// automatically a couple seconds after her wave's last murloc dies if she hasn't already. On the fourth
+/// wave she no longer flees at all. Clearing the fourth wave, or killing the Sea Witch, completes
+/// <see cref="QuestCountdownToExtinction"/>. Stops if the Great Hall dies.
 /// </summary>
 public sealed class SeaWitchAssault
 {
@@ -22,8 +25,10 @@ public sealed class SeaWitchAssault
   private const float TickInterval = 2f;
   private const float NextWaveDelaySeconds = 5f;
   private const float SpawnFacing = 0f;
-  private const float SeaWitchTeleportHealthPercent = 33f;
+  private const float SeaWitchTeleportHealthLossPercent = 25f;
   private const float SeaWitchTeleportCastSeconds = 5f;
+  private const float SeaWitchWaveHealPercent = 10f;
+  private const float SeaWitchForcedTeleportDelaySeconds = 2f;
   private const float SeaWitchSpawnDelayMinSeconds = 5f;
   private const float SeaWitchSpawnDelayMaxSeconds = 15f;
   private const string SeaWitchTeleportEffectPath = @"Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl";
@@ -77,9 +82,9 @@ public sealed class SeaWitchAssault
   private bool _concluded;
   private unit? _seaWitch;
   private bool _seaWitchCasting;
-  private bool _seaWitchTeleportAttempted;
+  private float? _seaWitchLifePercentCarryover;
+  private float? _seaWitchWaveStartHealth;
   private effect? _teleportEffect;
-  private trigger? _teleportEndCastTrigger;
   private timer? _waveTimer;
   private timer? _waveDialogTimer;
   private timerdialog? _waveDialog;
@@ -87,6 +92,7 @@ public sealed class SeaWitchAssault
   private timer? _seaWitchCheckTimer;
   private timer? _seaWitchSpawnTimer;
   private timer? _teleportTimer;
+  private timer? _seaWitchForceTeleportTimer;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="SeaWitchAssault"/> class and schedules the first wave.
@@ -141,6 +147,11 @@ public sealed class SeaWitchAssault
     _greatHallTargeters.Clear();
     _waveUnitCounter = 0;
     UpdateWaveDialog(waveNumber);
+
+    if (_seaWitch != null && _seaWitch.Alive)
+    {
+      _seaWitchWaveStartHealth = _seaWitch.Life;
+    }
 
     switch (waveNumber)
     {
@@ -247,9 +258,20 @@ public sealed class SeaWitchAssault
       spawnPoint.Y, SpawnFacing);
     seaWitch.IssueOrder(ORDER_ATTACK, _attackTarget.X, _attackTarget.Y);
 
+    if (_seaWitchLifePercentCarryover.HasValue)
+    {
+      var healedPercent = _seaWitchLifePercentCarryover.Value * (1f + SeaWitchWaveHealPercent / 100f);
+      if (healedPercent > 100f)
+      {
+        healedPercent = 100f;
+      }
+
+      seaWitch.SetLifePercent(healedPercent);
+    }
+
     _seaWitch = seaWitch;
     _seaWitchCasting = false;
-    _seaWitchTeleportAttempted = false;
+    _seaWitchWaveStartHealth = seaWitch.Life;
     PlayerUnitEvents.Register(UnitEvent.Dies, OnSeaWitchKilled, seaWitch);
 
     var spawnDialogue = _currentWave switch
@@ -277,29 +299,34 @@ public sealed class SeaWitchAssault
       _seaWitch.IssueOrder(ORDER_ATTACK, _attackTarget.X, _attackTarget.Y);
     }
 
-    if (_seaWitchCasting || _seaWitchTeleportAttempted || _seaWitch == null || !_seaWitch.Alive)
+    if (_currentWave >= TotalWaves || _seaWitchCasting || _seaWitch == null || !_seaWitch.Alive
+      || _seaWitchWaveStartHealth == null)
     {
       return;
     }
 
-    var seaWitch = _seaWitch;
-    var lifePercent = seaWitch.GetLifePercent();
-    if (lifePercent > SeaWitchTeleportHealthPercent)
+    var teleportHealthThreshold = _seaWitchWaveStartHealth.Value * (1f - SeaWitchTeleportHealthLossPercent / 100f);
+    if (_seaWitch.Life > teleportHealthThreshold)
     {
       return;
     }
 
+    StartSeaWitchTeleport(_seaWitch);
+  }
+
+  /// <summary>
+  /// Begins the Sea Witch's flee: an invulnerable, uninterruptible channel that always ends with her
+  /// teleporting away.
+  /// </summary>
+  private void StartSeaWitchTeleport(unit seaWitch)
+  {
     _seaWitchCasting = true;
     seaWitch.IssueOrder(ORDER_CHANNEL);
     PauseUnit(seaWitch, true);
+    seaWitch.IsInvulnerable = true;
 
     _teleportEffect?.Dispose();
     _teleportEffect = effect.Create(SeaWitchTeleportEffectPath, seaWitch, SeaWitchTeleportEffectAttachPoint);
-
-    _teleportEndCastTrigger?.Dispose();
-    _teleportEndCastTrigger = trigger.Create();
-    _teleportEndCastTrigger.RegisterUnitEvent(seaWitch, unitevent.SpellEndCast);
-    _teleportEndCastTrigger.AddAction(() => OnSeaWitchTeleportInterrupted(seaWitch));
 
     _teleportTimer?.Dispose();
     _teleportTimer = timer.Create();
@@ -316,37 +343,15 @@ public sealed class SeaWitchAssault
     CleanupTeleportTracking();
 
     _seaWitchCasting = false;
+    _seaWitchLifePercentCarryover = seaWitch.GetLifePercent();
     _orcishHorde.Player?.QueueDialogue(SeaWitchEscapesDialogue);
     seaWitch.Dispose();
-  }
-
-  private void OnSeaWitchTeleportInterrupted(unit seaWitch)
-  {
-    if (!_seaWitchCasting)
-    {
-      return;
-    }
-
-    CleanupTeleportTracking();
-
-    _seaWitchCasting = false;
-    _seaWitchTeleportAttempted = true;
-
-    if (!seaWitch.Alive)
-    {
-      return;
-    }
-
-    PauseUnit(seaWitch, false);
-    seaWitch.IssueOrder(ORDER_ATTACK, _attackTarget.X, _attackTarget.Y);
   }
 
   private void CleanupTeleportTracking()
   {
     _teleportTimer?.Dispose();
     _teleportTimer = null;
-    _teleportEndCastTrigger?.Dispose();
-    _teleportEndCastTrigger = null;
     _teleportEffect?.Dispose();
     _teleportEffect = null;
   }
@@ -383,10 +388,26 @@ public sealed class SeaWitchAssault
     _waveClearCheckTimer?.Dispose();
     _waveClearCheckTimer = null;
 
-    if (_currentWave >= 4)
+    if (_currentWave >= TotalWaves)
     {
       Conclude();
       return;
+    }
+
+    if (_seaWitch != null && _seaWitch.Alive && !_seaWitchCasting)
+    {
+      var seaWitch = _seaWitch;
+      _seaWitchForceTeleportTimer?.Dispose();
+      _seaWitchForceTeleportTimer = timer.Create();
+      _seaWitchForceTeleportTimer.Start(SeaWitchForcedTeleportDelaySeconds, false, () =>
+      {
+        _seaWitchForceTeleportTimer?.Dispose();
+        _seaWitchForceTeleportTimer = null;
+        if (!_concluded && !_seaWitchCasting && seaWitch.Alive)
+        {
+          StartSeaWitchTeleport(seaWitch);
+        }
+      });
     }
 
     var nextWave = _currentWave + 1;
@@ -426,10 +447,19 @@ public sealed class SeaWitchAssault
     _seaWitchCheckTimer = null;
     _seaWitchSpawnTimer?.Dispose();
     _seaWitchSpawnTimer = null;
+    _seaWitchForceTeleportTimer?.Dispose();
+    _seaWitchForceTeleportTimer = null;
     _waveDialog?.Dispose();
     _waveDialog = null;
     _waveDialogTimer?.Dispose();
     _waveDialogTimer = null;
+
+    if (_seaWitchCasting && _seaWitch != null && _seaWitch.Alive)
+    {
+      PauseUnit(_seaWitch, false);
+      _seaWitch.IsInvulnerable = false;
+    }
+
     CleanupTeleportTracking();
   }
 }
