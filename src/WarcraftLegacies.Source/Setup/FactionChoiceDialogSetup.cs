@@ -43,35 +43,35 @@ public static class FactionChoiceDialogSetup
     };
     new FactionChoiceDialogPresenter(dalaran, gilneas).Run(player.Create(7));
 
-    var sentinels = new FactionChoice
-    {
-      Faction = new SentinelsFaction(),
-      Difficulty = FactionLearningDifficulty.Basic,
-      StartingArea = Regions.SentDraeSharedStartPos
-    };
-    var draenei = new FactionChoice
+    //var sentinels = new FactionChoice
+    //{
+    //  Faction = new SentinelsFaction(),
+    //  Difficulty = FactionLearningDifficulty.Basic,
+    //  StartingArea = Regions.SentDraeSharedStartPos
+    //};
+    //var draenei = new FactionChoice
 
-    {
-      Faction = new DraeneiFaction(),
-      Difficulty = FactionLearningDifficulty.Advanced,
-      StartingArea = Regions.SentDraeSharedStartPos,
-      RequiresCheats = false
-    };
-    new FactionChoiceDialogPresenter(sentinels, draenei).Run(player.Create(18));
-    var frostwolf = new FactionChoice
-    {
-      Faction = new FrostwolfFaction(),
-      Difficulty = FactionLearningDifficulty.Basic,
-      StartingArea = Regions.FrostwolfStartPos
-    };
-    var warsong = new FactionChoice
+    //{
+    //  Faction = new DraeneiFaction(),
+    //  Difficulty = FactionLearningDifficulty.Advanced,
+    //  StartingArea = Regions.SentDraeSharedStartPos,
+    //  RequiresCheats = false
+    //};
+    //new FactionChoiceDialogPresenter(sentinels, draenei).Run(player.Create(18));
+    //var frostwolf = new FactionChoice
+    //{
+    //  Faction = new FrostwolfFaction(),
+    //  Difficulty = FactionLearningDifficulty.Basic,
+    //  StartingArea = Regions.FrostwolfStartPos
+    //};
+    //var warsong = new FactionChoice
 
-    {
-      Faction = new WarsongFaction(),
-      Difficulty = FactionLearningDifficulty.Advanced,
-      StartingArea = Regions.FrostwolfStartPos,
-      RequiresCheats = false
-    };
-    new FactionChoiceDialogPresenter(frostwolf, warsong).Run(player.Create(0));
+    //{
+    //  Faction = new WarsongFaction(),
+    //  Difficulty = FactionLearningDifficulty.Advanced,
+    //  StartingArea = Regions.FrostwolfStartPos,
+    //  RequiresCheats = false
+    //};
+    //new FactionChoiceDialogPresenter(frostwolf, warsong).Run(player.Create(0));
   }
 }

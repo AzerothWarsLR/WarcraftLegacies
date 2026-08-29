@@ -11,7 +11,7 @@
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 24
+      "Value": 16
     },
     {
       "Id": "ufoo",
@@ -60,6 +60,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Heavy ranged unit that hurls bolts of lightning. Has the ability to Devour opponents. Can cast Chain Lightning and Lightning Shield. "
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
     }
   ]
 }

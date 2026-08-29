@@ -25,7 +25,7 @@ public sealed class WarsongFaction : Faction
   public WarsongFaction() : base("Warsong", playercolor.Red,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.Horde;
     UndefeatedResearch = UPGRADE_R05W_WARSONG_EXISTS;
     StartingGold = new StartingGold
     {

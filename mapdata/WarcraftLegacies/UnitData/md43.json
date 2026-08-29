@@ -1,0 +1,197 @@
+{
+  "OldId": "hkni",
+  "NewId": "md43",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ugor",
+      "Value": 26
+    },
+    {
+      "Id": "uhpm",
+      "Value": 985
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme,Rhpm"
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0.55
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.55
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "ua1r",
+      "Value": 160
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Zandalar)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful Dinosaur."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Throne of War"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Throne of War"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Aihn"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ThroneOfWar.mdl"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": -30
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 270
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 160
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 160
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 390
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 390
+    }
+  ]
+}

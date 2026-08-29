@@ -19,7 +19,7 @@ public sealed class FrostwolfFaction : Faction
   /// <inheritdoc />
   public FrostwolfFaction() : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.Horde;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
     StartingGold = new StartingGold
     {

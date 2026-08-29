@@ -18,7 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Factions\Zandalar\" />
+      <Folder Include="Factions\Zandalar\Buffs\" />
+      <Folder Include="Factions\Zandalar\Spells\" />
     </ItemGroup>
 
 </Project>

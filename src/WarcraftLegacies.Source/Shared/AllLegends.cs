@@ -1,6 +1,4 @@
 ﻿using MacroTools.Legends;
-using WarcraftLegacies.Source.Factions.Ahnqiraj;
-using WarcraftLegacies.Source.Factions.BlackEmpire;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Draenei;
 using WarcraftLegacies.Source.Factions.Druids;
@@ -16,7 +14,7 @@ using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
-using WarcraftLegacies.Source.Factions.Skywall;
+using WarcraftLegacies.Source.Factions.Zandalar;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.Sunfury;
 using WarcraftLegacies.Source.Factions.Warsong;
@@ -100,11 +98,7 @@ public static class AllLegends
   /// </summary>
   public static WarsongLegends Warsong { get; }
 
-  public static AhnqirajLegends Ahnqiraj { get; }
-
-  public static BlackEmpireLegends BlackE { get; }
-
-  public static SkywallLegends Skywall { get; }
+  public static ZandalarLegends Zandalar { get; }
 
   public static GilneasLegends Gilneas { get; }
 
