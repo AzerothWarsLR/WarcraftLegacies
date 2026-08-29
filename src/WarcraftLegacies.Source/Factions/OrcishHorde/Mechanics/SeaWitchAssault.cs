@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using WCSharp.Events;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 using WCSharp.Shared.Data;
@@ -17,7 +18,7 @@ namespace WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 public sealed class SeaWitchAssault
 {
   private const int TotalWaves = 4;
-  private const float FirstWaveDelaySeconds = 90f;
+  private const float FirstWaveDelaySeconds = 75f;
   private const float TickInterval = 2f;
   private const float NextWaveDelaySeconds = 5f;
   private const float SpawnFacing = 0f;
@@ -108,15 +109,23 @@ public sealed class SeaWitchAssault
 
     PlayerUnitEvents.Register(UnitEvent.Dies, StopAssault, greatHall);
 
-    _seaWitchCheckTimer = timer.Create();
-    _seaWitchCheckTimer.Start(TickInterval, true, CheckSeaWitchTeleport);
-
-    _waveTimer = timer.Create();
-    _waveTimer.Start(FirstWaveDelaySeconds, false, () =>
+    GameTimeManager.RegisterOnTurn(1, () =>
     {
-      _waveTimer?.Dispose();
-      _waveTimer = null;
-      SpawnWave(1);
+      if (_concluded)
+      {
+        return;
+      }
+
+      _seaWitchCheckTimer = timer.Create();
+      _seaWitchCheckTimer.Start(TickInterval, true, CheckSeaWitchTeleport);
+
+      _waveTimer = timer.Create();
+      _waveTimer.Start(FirstWaveDelaySeconds, false, () =>
+      {
+        _waveTimer?.Dispose();
+        _waveTimer = null;
+        SpawnWave(1);
+      });
     });
   }
 
