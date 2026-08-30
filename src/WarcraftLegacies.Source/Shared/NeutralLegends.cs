@@ -95,14 +95,6 @@ public sealed class NeutralLegends
       Capturable = true,
       Unit = AllPreplacedWidgets.Units.Get(UNIT_O018_SHRINE_OF_ZUL_GURUB)
     };
-
-    Dazaralor = new Capital
-    {
-      Capturable = true,
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00V_DAZAR_ALOR_CREEP),
-      Essential = true
-    };
-
     Gundrak = new Capital
     {
       Capturable = true,
@@ -195,7 +187,6 @@ public sealed class NeutralLegends
     CapitalManager.Register(ShrineOfUlatek);
     CapitalManager.Register(Seradane);
     CapitalManager.Register(Zulgurub);
-    CapitalManager.Register(Dazaralor);
     CapitalManager.Register(Gundrak);
     CapitalManager.Register(DuskwoodGraveyard);
     CapitalManager.Register(GrimBatol);
