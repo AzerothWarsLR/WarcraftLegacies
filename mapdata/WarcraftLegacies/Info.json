@@ -37,8 +37,8 @@
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "Determine the fate of Azeroth as one of 20 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/4eGZnR5",
-  "LoadingScreenTitle": "Warcraft Legacies",
+  "LoadingScreenText": "TRIGSTR_16579",
+  "LoadingScreenTitle": "TRIGSTR_16578",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
   "PrologueScreenPath": "",
@@ -67,9 +67,9 @@
   "ScriptLanguage": 1,
   "SupportedModes": 1,
   "GameDataVersion": 1,
-  "ForceDefaultCameraZoom": 0,
-  "ForceMaxCameraZoom": 0,
-  "ForceMinCameraZoom": 0,
+  "ForceDefaultCameraZoom": 1250,
+  "ForceMaxCameraZoom": 1250,
+  "ForceMinCameraZoom": 1250,
   "Players": [
     {
       "Id": 0,
@@ -81,10 +81,10 @@
         "X": -9408,
         "Y": -11264
       },
-      "AllyLowPriorityFlags": 4456482,
-      "AllyHighPriorityFlags": 393216,
-      "EnemyLowPriorityFlags": 262144,
-      "EnemyHighPriorityFlags": 262144
+      "AllyLowPriorityFlags": 4194304,
+      "AllyHighPriorityFlags": 131104,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 1,
@@ -157,7 +157,7 @@
         "Y": -3200
       },
       "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 1,
+      "AllyHighPriorityFlags": 131073,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -224,7 +224,7 @@
     {
       "Id": 13,
       "Controller": 1,
-      "Race": 2,
+      "Race": 4,
       "Flags": 1,
       "Name": "Exodar",
       "StartPosition": {
@@ -258,11 +258,11 @@
       "Flags": 1,
       "Name": "Zandalar",
       "StartPosition": {
-        "X": -8768,
-        "Y": -17280
+        "X": -8640,
+        "Y": -17536
       },
       "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 1,
+      "AllyHighPriorityFlags": 33,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -276,8 +276,8 @@
         "X": -22592,
         "Y": -13632
       },
-      "AllyLowPriorityFlags": 4194353,
-      "AllyHighPriorityFlags": 393236,
+      "AllyLowPriorityFlags": 4194337,
+      "AllyHighPriorityFlags": 393220,
       "EnemyLowPriorityFlags": 4194448,
       "EnemyHighPriorityFlags": 12582912
     },
@@ -315,7 +315,7 @@
   "Forces": [
     {
       "Flags": 7,
-      "Players": -4561880,
+      "Players": -4631288,
       "Name": "Scourge, Legion"
     },
     {
@@ -325,8 +325,8 @@
     },
     {
       "Flags": 7,
-      "Players": 264193,
-      "Name": "Frostwolf, Druids, Sentinels"
+      "Players": 272384,
+      "Name": "Exodar, Druids, Sentinels"
     },
     {
       "Flags": 7,
@@ -335,8 +335,8 @@
     },
     {
       "Flags": 7,
-      "Players": 69888,
-      "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
+      "Players": 131105,
+      "Name": "FrostWolf,Warsong,Zandalar"
     },
     {
       "Flags": 7,

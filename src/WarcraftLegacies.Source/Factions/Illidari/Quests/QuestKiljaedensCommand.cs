@@ -20,22 +20,18 @@ public sealed class QuestKiljaedensCommand : QuestData
 {
   private readonly Faction _scourge;
   private readonly Faction _druids;
-  private readonly Faction _ahnQiraj;
-  private readonly LegendaryHero _cthun;
   private readonly Capital _nordrassil;
   private readonly LegendaryHero _illidan;
   private Faction? _questTarget;
   private unit? _kiljaeden;
 
-  public QuestKiljaedensCommand(Faction scourge, Faction druids, Faction ahnQiraj, LegendaryHero cthun,
+  public QuestKiljaedensCommand(Faction scourge, Faction druids,
     Capital nordrassil, LegendaryHero illidan) : base("Kil'jaeden's Command",
     "Before retreating to Outland, Illidan was visited by the demon lord Kil'jaeden, who demanded that he destroy the Legion's foes. The Deceiver has now come to claim his due, and this time he will not be denied.",
     @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
   {
     _scourge = scourge;
     _druids = druids;
-    _ahnQiraj = ahnQiraj;
-    _cthun = cthun;
     _nordrassil = nordrassil;
     _illidan = illidan;
     AddObjective(new ObjectiveExpire(60, "Kil'jaeden's Command"));
@@ -55,11 +51,6 @@ public sealed class QuestKiljaedensCommand : QuestData
       if (_questTarget == _scourge)
       {
         return "With the Frozen Throne now ruptured beyond repair, Kil'jaeden's concerns over the upstart Lich King have been put to rest. The Deceiver upholds his end of the bargain, and bestows unto the Illidari his gift.";
-      }
-
-      if (_questTarget == _ahnQiraj)
-      {
-        return "The Old God C'thun has excised from the world, ridding the Legion - and Azeroth - of an ancient threat. The Deceiver upholds his end of the bargain, and bestows unto the Illidari his gift.";
       }
 
       if (_questTarget == _druids)
@@ -115,11 +106,6 @@ public sealed class QuestKiljaedensCommand : QuestData
       eligibleFactions.Add(_scourge);
     }
 
-    if (_cthun.Unit != null && _cthun.Unit.Alive)
-    {
-      eligibleFactions.Add(_ahnQiraj);
-    }
-
     if (_nordrassil.Unit != null && _nordrassil.Unit.Alive)
     {
       eligibleFactions.Add(_druids);
@@ -152,12 +138,6 @@ public sealed class QuestKiljaedensCommand : QuestData
     {
       AddObjective(new ObjectiveControlCapital(_nordrassil, false));
       AddObjective(new ObjectiveControlPoint(UNIT_N01P_NORDRASSIL, 0));
-    }
-
-    if (faction == _ahnQiraj)
-    {
-      AddObjective(new ObjectiveLegendDead(_cthun));
-      AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 0));
     }
   }
 

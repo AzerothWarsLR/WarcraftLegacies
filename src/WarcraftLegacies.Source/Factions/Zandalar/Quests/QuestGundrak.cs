@@ -19,9 +19,9 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
 /// </summary>
 public sealed class QuestGundrak : QuestData
 {
-  private const int _gundrakResearch = UPGRADE_R02Q_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS_WARSONG;
-  private const int _warlordId = UNIT_NFTK_WARLORD_WARSONG;
-  private const int _trollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
+  private const int _gundrakResearch = UPGRADE_MD38_QUEST_COMPLETED_GUNDRAK;
+  private const int _warlordId = UNIT_MD46_WARLORD_ZANDALAR;
+  private const int _trollShrineId = UNIT_O043_SPIRIT_SPIRE_CREEP_MAGIC;
   private int goldReward { get; set; }
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestGundrak"/> class

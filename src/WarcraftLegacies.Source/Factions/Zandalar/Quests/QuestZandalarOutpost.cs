@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
       AddObjective(new ObjectiveSelfExists());
       AddObjective(new ObjectiveExpire(600, Title));
 
-    //ResearchId = UPGRADE_VQ02_QUEST_COMPLETED_ZANDALAR_OUTPOST;
+    ResearchId = UPGRADE_MD35_QUEST_COMPLETED_ZANDALAROUTPOST;
     _rescueUnits = Regions.Zandalari_Echo_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 

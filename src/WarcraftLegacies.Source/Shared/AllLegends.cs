@@ -11,7 +11,6 @@ using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.Quelthalas;
-using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Zandalar;
@@ -102,8 +101,6 @@ public static class AllLegends
 
   public static GilneasLegends Gilneas { get; }
 
-  public static ScarletLegends Scarlet { get; }
-
   public static SunfuryLegends Sunfury { get; }
 
   /// <summary>
@@ -130,11 +127,8 @@ public static class AllLegends
     Warsong = new WarsongLegends();
     Neutral = new NeutralLegends();
     Gilneas = new GilneasLegends();
-    Ahnqiraj = new AhnqirajLegends();
-    BlackE = new BlackEmpireLegends();
-    Skywall = new SkywallLegends();
-    Scarlet = new ScarletLegends();
     Sunfury = new SunfuryLegends();
+    Zandalar = new ZandalarLegends();
   }
 
   /// <summary>
@@ -157,12 +151,9 @@ public static class AllLegends
     Sentinels.RegisterLegends();
     Stormwind.RegisterLegends();
     Warsong.RegisterLegends();
-    Ahnqiraj.RegisterLegends();
-    BlackE.RegisterLegends();
-    Skywall.RegisterLegends();
     Neutral.RegisterLegends();
     Gilneas.RegisterLegends();
-    Scarlet.RegisterLegends();
     Sunfury.RegisterLegends();
+    Zandalar.RegisterLegends();
   }
 }

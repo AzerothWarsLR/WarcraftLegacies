@@ -17,8 +17,6 @@ public sealed class ObjectInfoRepository
   /// </summary>
   public ObjectInfoRepository()
   {
-    AddFactionObjectInfo(AhnqirajObjectInfo.GetAllObjectInfos());
-    AddFactionObjectInfo(BlackEmpireObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(DraeneiObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
@@ -31,10 +29,9 @@ public sealed class ObjectInfoRepository
     AddFactionObjectInfo(LegionObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(QuelthalasObjectInfo.GetAllObjectLimits());
-    AddFactionObjectInfo(ScarletCrusadeObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
-    AddFactionObjectInfo(SkywallObjectInfo.GetAllObjectLimits());
+    AddFactionObjectInfo(ZandalarObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(WarsongObjectInfo.GetAllObjectLimits());

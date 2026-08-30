@@ -17,9 +17,9 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
   /// </summary>
   public sealed class QuestJinthaAlor : QuestData
   {
-    //private const int _jinthaalorResearch = UPGRADE_R02N_QUEST_COMPLETED_THE_ANCIENT_EGG_WARSONG;
-    //private const int _bearRiderId = UNIT_O02K_BEAR_RIDER_ZANDALAR;
-    //private const int _trollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
+    private const int _jinthaalorResearch = UPGRADE_MD37_QUEST_COMPLETED_JINTHAALOR;
+    private const int _bearRiderId = UNIT_MD45_BEAR_RIDER_ZANDALAR;
+    private const int _trollShrineId = UNIT_O043_SPIRIT_SPIRE_CREEP_MAGIC;
     private int goldReward { get; set; }
 
     /// <summary>
@@ -38,8 +38,8 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
       "Jintha'Alor has fallen. The Vilebranch trolls lend their might to the Zandalari";
 
     /// <inheritdoc/>>
-    //protected override string RewardDescription =>
-      //$"Control of Jintha'Alor, {goldReward} gold tribute and the ability to train {GetObjectName(_bearRiderId)}s from the {GetObjectName(_trollShrineId)}";
+    protected override string RewardDescription =>
+      $"Control of Jintha'Alor, {goldReward} gold tribute and the ability to train {GetObjectName(_bearRiderId)}s from the {GetObjectName(_trollShrineId)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -53,6 +53,6 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
       {
-        //whichFaction.ModObjectLimit(_jinthaalorResearch, Faction.Unlimited);
+        whichFaction.ModObjectLimit(_jinthaalorResearch, Faction.Unlimited);
       }
   }

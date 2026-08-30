@@ -29,7 +29,6 @@ public static class PlayerSetup
     SetupPlayer(player.Create(4), new IronforgeFaction());
     SetupPlayer(player.Create(6), new FelHordeFaction());
     player.Create(7).GetPlayerData().SetTeam(TeamSetup.NorthAlliance);
-    player.Create(0).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
     SetupPlayer(player.Create(8), new WarsongFaction());
     SetupPlayer(player.Create(9), new LordaeronFaction());
     SetupPlayer(player.Create(11), new DruidsFaction());
@@ -37,7 +36,6 @@ public static class PlayerSetup
     SetupPlayer(player.Create(18), new SentinelsFaction());
     SetupPlayer(player.Create(0), new FrostwolfFaction());
     SetupPlayer(player.Create(17), new ZandalarFaction());
-    player.Create(18).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
     player.Create(15).GetPlayerData().SetTeam(TeamSetup.Outland);
     SetupPlayer(player.Create(22), new KultirasFaction());
     SetupPlayer(player.Create(23), new LegionFaction());

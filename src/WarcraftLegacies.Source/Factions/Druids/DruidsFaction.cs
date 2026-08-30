@@ -69,7 +69,6 @@ public sealed class DruidsFaction : Faction
     AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
     AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
     AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-    AddQuest(new QuestDruidsKillCthun());
     AddQuest(new QuestShaladrassil(AllLegends.Neutral.Shaladrassil));
     AddQuest(new QuestTortolla(AllLegends.Druids.Tortolla));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));

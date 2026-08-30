@@ -9,30 +9,26 @@ public sealed class ZandalarLegends
   public LegendaryHero Zul { get; }
   public LegendaryHero Haakar { get; }
   public LegendaryHero Gahzrilla { get; }
-  public Capital Zulfarrak { get; }
   public Capital Zandalar { get; }
 
   public ZandalarLegends()
   {
     Zul = new LegendaryHero("Zul")
     {
-      //UnitType = ,
+      UnitType = UNIT_MD39_ZANDALARI_PROPHET_ZANDALAR,
       StartingXp = 1000
     };
 
-    Gahzrilla = new LegendaryHero("Varok Gahzrilla")
+    Gahzrilla = new LegendaryHero("Gahzrilla")
     {
-      //UnitType = ,
+      UnitType = UNIT_MD40_DEMIGOD_ZANDALAR,
       StartingXp = 2800
     };
 
     Rastakhan = new LegendaryHero("Rastakhan")
     {
-      //UnitType = ,
-      PermaDies = true,
-      DeathMessage =
-        "Mannoroth the Corrupter has fallen.",
-      StartingXp = 41800
+      UnitType = UNIT_MD41_KING_OF_THE_ZANDALARI_ZANDALAR,
+      StartingXp = 3680
     };
 
     Haakar = new LegendaryHero("Haakar")
@@ -40,31 +36,20 @@ public sealed class ZandalarLegends
       //UnitType = ,
       StartingXp = 8800
     };
-
-    Zulfarrak = new Capital
-    {
-      //Unit = AllPreplacedWidgets.Units.Get(),
-      DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
-      Essential = true
-    };
-
     Zandalar = new Capital
     {
-      //Unit = AllPreplacedWidgets.Units.Get(),
-      DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00V_DAZAR_ALOR_CREEP),
+      DeathMessage = "The Capital of the Zandalari has fallen, At long last the troll empire has fallen.",
       Essential = true
     };
   }
 
   public void RegisterLegends()
   {
+    LegendaryHeroManager.Register(Zul);
+    LegendaryHeroManager.Register(Gahzrilla);
+    LegendaryHeroManager.Register(Rastakhan);
     //LegendaryHeroManager.Register();
-    //LegendaryHeroManager.Register();
-    //LegendaryHeroManager.Register();
-    //LegendaryHeroManager.Register();
-    // LegendaryHeroManager.Register();
-    //LegendaryHeroManager.Register();
-    CapitalManager.Register(Zulfarrak);
     CapitalManager.Register(Zandalar);
   }
 }

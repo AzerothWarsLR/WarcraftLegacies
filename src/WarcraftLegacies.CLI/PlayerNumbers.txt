@@ -15,7 +15,7 @@
 //  14	Exodar (turn into Exodar)
 //  15	Illidan/Sunfury
 //  16	Ahn'qiraj
-//  17  Empty
+//  17  Empty Zandalar?
 //  18	Sentinels
 //  19  Zandalar/Goblins (when done)
 //  20  Empty

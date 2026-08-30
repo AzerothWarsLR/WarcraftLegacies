@@ -43,18 +43,14 @@
       "Value": 0
     },
     {
-      "Id": "ubpx",
-      "Value": 1
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Creep)"
+      "Value": "(Zandalar)"
     },
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": "utub",
