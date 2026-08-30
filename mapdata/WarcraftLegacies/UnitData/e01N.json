@@ -225,7 +225,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "umdl",
@@ -270,12 +270,12 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train [|cffffcc00W|r] - Druid of the Claw"
+      "Value": "Build Azerite Siege Engine"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Strikes."
+      "Value": "Advanced siege weaponary"
     },
     {
       "Id": "usnd",

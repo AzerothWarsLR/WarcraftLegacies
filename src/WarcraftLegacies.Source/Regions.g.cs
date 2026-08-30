@@ -44,7 +44,7 @@ public static class Regions
   public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
   public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
   public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
-  public static Rectangle BookOfMedivhDalaran { get; set; } = new Rectangle(9312f, 4864f, 9600f, 5216f);
+  public static Rectangle BookOfMedivhDalaran { get; set; } = new Rectangle(9408f, 4768f, 9696f, 5120f);
   public static Rectangle BookOfMedivhGilneas { get; set; } = new Rectangle(7840f, 448f, 8032f, 640f);
   public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
   public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9024f, 13696f, -4640f, 19040f);
@@ -244,7 +244,7 @@ public static class Regions
   public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -5504f, -19424f, -1248f);
   public static Rectangle Ratchet_Unlock_1 { get; set; } = new Rectangle(-10624f, -4672f, -10144f, -3392f);
   public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5696f, -11072f, 7488f);
-  public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
+  public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5088f, 9312f, 5280f);
   public static Rectangle STV_Ships { get; set; } = new Rectangle(10112f, -20032f, 14048f, -17600f);
   public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
   public static Rectangle SatyrCamp { get; set; } = new Rectangle(-15456f, 4992f, -13664f, 6592f);
@@ -274,7 +274,7 @@ public static class Regions
   public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7488f, -9632f, 9568f);
   public static Rectangle SilithusAmbient { get; set; } = new Rectangle(-24832f, -20320f, -15712f, -11744f);
   public static Rectangle SilverpineForest { get; set; } = new Rectangle(6880f, 3936f, 7552f, 4544f);
-  public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8864f, 4672f, 9184f, 4928f);
+  public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8096f, 4704f, 8416f, 4960f);
   public static Rectangle SlipstreamArgusOrigin { get; set; } = new Rectangle(-23104f, 7712f, -22592f, 7872f);
   public static Rectangle SlipstreamArgusTarget { get; set; } = new Rectangle(21408f, -27200f, 22080f, -26656f);
   public static Rectangle SlipstreamTempestOrigin { get; set; } = new Rectangle(-22304f, 6816f, -22112f, 7392f);

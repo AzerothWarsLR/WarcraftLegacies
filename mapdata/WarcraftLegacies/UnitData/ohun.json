@@ -91,7 +91,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "uhot",
@@ -134,9 +134,9 @@
       "Value": "alternate"
     },
     {
-      "Id": "uico",
+      "Id": "umdl",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp"
+      "Value": "units\\orc\\HeadHunter\\HeadHunter.mdl"
     }
   ]
 }

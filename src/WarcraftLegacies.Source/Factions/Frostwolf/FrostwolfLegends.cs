@@ -18,7 +18,7 @@ public sealed class FrostwolfLegends
   {
     Cairne = new LegendaryHero("Cairne Bloodhoof")
     {
-      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF,
+      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES,
 
       DeathMessage =
         "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
@@ -31,7 +31,7 @@ public sealed class FrostwolfLegends
 
     Thrall = new LegendaryHero("Thrall")
     {
-      UnitType = UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+      UnitType = UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE,
       StartingArtifacts = new()
       {
         new(item.Create(ITEM_I004_THE_DOOMHAMMER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
@@ -55,13 +55,13 @@ public sealed class FrostwolfLegends
 
     Rexxar = new LegendaryHero("Rexxar")
     {
-      UnitType = UNIT_OREX_BEASTMASTER_FROSTWOLF,
+      UnitType = UNIT_OREX_BEASTMASTER_TAUREN_TRIBES,
       StartingXp = 1800
     };
 
     Voljin = new LegendaryHero("Vol'jin")
     {
-      UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
+      UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_ORCISH_HORDE,
       StartingXp = 2800
     };
   }

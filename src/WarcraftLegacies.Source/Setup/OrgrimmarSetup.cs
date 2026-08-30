@@ -21,13 +21,13 @@ public static class OrgrimmarSetup
   };
 
   // Maps the unit type that, once built anywhere in Orgrimmar, reveals a specific props sub-region.
-  private static readonly (int UnitTypeId, Rectangle Region)[] _doodadRevealTriggers =
-  {
-    (UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Regions.Orgrimmar_Props_1),
-    (UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Regions.Orgrimmar_Props_2),
-    (UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Regions.Orgrimmar_Props_3),
-    (UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, Regions.Orgrimmar_Props_3)
-  };
+  //private static readonly (int UnitTypeId, Rectangle Region)[] _doodadRevealTriggers =
+  //{
+  //  (UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Regions.Orgrimmar_Props_1),
+  //  (UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Regions.Orgrimmar_Props_2),
+  //  (UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Regions.Orgrimmar_Props_3),
+  //  (UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, Regions.Orgrimmar_Props_3)
+  //};
 
   private static readonly HashSet<int> _allowedProps = new()
   {
@@ -56,7 +56,7 @@ public static class OrgrimmarSetup
   {
     HideUnits();
     HideDoodads();
-    RegisterDoodadRevealTriggers();
+    //RegisterDoodadRevealTriggers();
   }
 
   /// <summary>
@@ -109,20 +109,20 @@ public static class OrgrimmarSetup
     });
   }
 
-  private static void RegisterDoodadRevealTriggers()
-  {
-    foreach (var (unitTypeId, region) in _doodadRevealTriggers)
-    {
-      Action? actionWithUnregister = null;
-      actionWithUnregister = () =>
-      {
-        if (Regions.Orgrimmar.Contains(@event.Unit.GetPosition()))
-        {
-          RevealDoodads(region);
-          PlayerUnitEvents.Unregister(UnitTypeEvent.FinishesBeingConstructed, actionWithUnregister, unitTypeId);
-        }
-      };
-      PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, actionWithUnregister, unitTypeId);
-    }
-  }
+  //private static void RegisterDoodadRevealTriggers()
+  //{
+  //  foreach (var (unitTypeId, region) in _doodadRevealTriggers)
+  //  {
+  //    Action? actionWithUnregister = null;
+  //    actionWithUnregister = () =>
+  //    {
+  //      if (Regions.Orgrimmar.Contains(@event.Unit.GetPosition()))
+  //      {
+  //        RevealDoodads(region);
+  //        PlayerUnitEvents.Unregister(UnitTypeEvent.FinishesBeingConstructed, actionWithUnregister, unitTypeId);
+  //      }
+  //    };
+  //    PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, actionWithUnregister, unitTypeId);
+  //  }
+  //}
 }

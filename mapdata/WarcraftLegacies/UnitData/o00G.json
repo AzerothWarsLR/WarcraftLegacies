@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0EF,S00G,A08P,A0PE,A0XM,A03T,A0MM,A0QG,Aion"
+      "Value": "S00G,A08P,A0PE,A0XM,A03T,A0MM,A0QG,Aion"
     },
     {
       "Id": "ua1t",
@@ -133,7 +133,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "umdl",
