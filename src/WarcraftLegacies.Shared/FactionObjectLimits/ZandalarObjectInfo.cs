@@ -22,6 +22,8 @@ public static class ZandalarObjectInfo
       yield return new(UNIT_O043_SPIRIT_SPIRE_CREEP_MAGIC, Unlimited, Magic);
       yield return new(UNIT_O044_DINOSAUR_PEN_ZANDALAR_SPECIALIST, Unlimited, Specialist);
       yield return new(UNIT_O04X_LOA_SHRINE_CREEP_SIEGE, Unlimited, Specialist);
+      yield return new(UNIT_O042_WAR_MILL_CREEP_RESEARCH, Unlimited, Research);
+      yield return new(UNIT_O049_GOLDEN_DOCK_CREEP_SHIPYARD, Unlimited, Shipyard);
       //Townhall
       yield return new(UNIT_O04A_GATHERER_CREEP_ZANDALARI_WORKER, Unlimited, Builder);
       yield return new(UNIT_O04E_BONESEER_CREEP, 6, Elite);
@@ -32,10 +34,10 @@ public static class ZandalarObjectInfo
       //Magic
       yield return new(UNIT_O04G_HARUSPEX_CREEP, Unlimited);
       yield return new(UNIT_O04F_HEX_DOCTOR_CREEP, Unlimited);
-      yield return new(UNIT_MD42_LOA_MEDIUM_CREEP, Unlimited);
+      yield return new(UNIT_MD42_LOA_MEDIUM_CREEP, 6);
       //Specialist 1
       yield return new(UNIT_NSTW_STORM_WYRM_ZANDALAR, 3);
-      
+      yield return new(UNIT_MD47_DIREHORN_ZANDALAR, 12);
       yield return new(UNIT_MD43_THRONE_OF_WAR_ZANDALAR, 3);
       //Specialist 2
       yield return new(UNIT_MD44_RAVAGER_ZANDALAR, 12);

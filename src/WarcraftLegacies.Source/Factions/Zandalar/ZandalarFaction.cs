@@ -18,7 +18,7 @@ public sealed class ZandalarFaction : Faction
 {
   /// <inheritdoc />
   public ZandalarFaction()
-    : base("Zandalar", playercolor.Wheat, @"ReplaceableTextures\CommandButtons\BTNZuljin.blp")
+    : base("Zandalar", playercolor.Peach, @"ReplaceableTextures\CommandButtons\BTNZuljin.blp")
   {
     TraditionalTeam = TeamSetup.Horde;
     UndefeatedResearch = UPGRADE_MD31_ZANDALAR_EXIST;

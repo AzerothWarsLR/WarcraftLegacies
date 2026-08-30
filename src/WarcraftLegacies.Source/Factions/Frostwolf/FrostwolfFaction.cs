@@ -46,7 +46,6 @@ public sealed class FrostwolfFaction : Faction
   public override void OnRegistered()
   {
     RegisterObjectLevels();
-    RegisterFlightPath();
     RegisterQuests();
     RegisterDialogue();
     FrostwolfSpells.Setup();
@@ -66,9 +65,7 @@ public sealed class FrostwolfFaction : Faction
   private void RegisterQuests()
   {
     StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
-    AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
-    AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
     AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
     AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
     AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
@@ -167,15 +164,5 @@ public sealed class FrostwolfFaction : Faction
         {
           new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Frostwolf.Thrall)
         }));
-  }
-
-
-
-  private void RegisterFlightPath()
-  {
-    ResearchManager.Register(new FlightPath(
-      this,
-      UPGRADE_R09N_FLIGHT_PATH_WARSONG,
-      70));
   }
 }
