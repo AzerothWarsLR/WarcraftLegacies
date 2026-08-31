@@ -45,7 +45,7 @@ public sealed class QuestCountdownToExtinction : QuestData
   public QuestCountdownToExtinction(unit greatHall, Rectangle buildZone, Rectangle retreatRegion) : base(
     "Countdown to Extinction",
     "Thrall's fleet was battered by the crossing and needs time to be made seaworthy again. Until then, the Horde must hold this island against whatever the sea sends at them.",
-    @"ReplaceableTextures\CommandButtons\BTNMurlocSlave.blp")
+    @"ReplaceableTextures\CommandButtons\BTNGhost.blp")
   {
     _buildZone = buildZone;
     _retreatDestination = retreatRegion.Center;
