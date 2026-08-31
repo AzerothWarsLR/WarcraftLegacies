@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -20,6 +21,17 @@ public sealed class QuestCountdownToExtinction : QuestData
   private const float ReinforcementLifePercent = 50f;
   private const float DefeatSurvivorLifePercent = 50f;
   private const float ReinforcementSpacing = 90f;
+
+  /// <summary>
+  /// Key Orcish Horde buildings that Thrall gets a Tiny item version of when the fleet departs cleanly,
+  /// so the buildings can be rebuilt at the new landing site.
+  /// </summary>
+  private static readonly Dictionary<int, int> KeyBuildingTinyItems = new()
+  {
+    { UNIT_O078_GREAT_HALL_ORCISH_HORDE_T1, ITEM_I01Z_TINY_GREAT_HALL_ORCISH_HORDE },
+    { UNIT_O075_WAR_CAMP_ORCISH_HORDE, ITEM_I020_TINY_WAR_CAMP_ORCISH_HORDE },
+    { UNIT_O076_ALTAR_OF_STORMS_ORCISH_HORDE, ITEM_I021_TINY_ALTAR_OF_STORMS_ORCISH_HORDE }
+  };
 
   private readonly Rectangle _buildZone;
   private readonly Point _retreatDestination;
@@ -69,8 +81,30 @@ public sealed class QuestCountdownToExtinction : QuestData
       return;
     }
 
-    DestroyBuildingsInZone(completingPlayer, showDeathEffects: false);
+    GrantTinyBuildingItems(completingPlayer);
+    DestroyBuildingsInZone(completingPlayer, showDeathEffects: false, refundCost: true);
     RelocateSurvivors(completingPlayer, 100f);
+  }
+
+  private void GrantTinyBuildingItems(player owningPlayer)
+  {
+    var thrall = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .FirstOrDefault(u => u.UnitType == UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE);
+    if (thrall == null)
+    {
+      return;
+    }
+
+    var keyBuildingTypes = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y)
+        && KeyBuildingTinyItems.ContainsKey(u.UnitType))
+      .Select(u => u.UnitType)
+      .Distinct();
+
+    foreach (var unitType in keyBuildingTypes)
+    {
+      thrall.AddItem(item.Create(KeyBuildingTinyItems[unitType], thrall.X, thrall.Y));
+    }
   }
 
   /// <inheritdoc />
@@ -82,7 +116,7 @@ public sealed class QuestCountdownToExtinction : QuestData
       return;
     }
 
-    DestroyBuildingsInZone(completingPlayer, showDeathEffects: true);
+    DestroyBuildingsInZone(completingPlayer, showDeathEffects: true, refundCost: false);
     var survivorCount = RelocateSurvivors(completingPlayer, DefeatSurvivorLifePercent);
 
     if (survivorCount == 0)
@@ -91,7 +125,7 @@ public sealed class QuestCountdownToExtinction : QuestData
     }
   }
 
-  private void DestroyBuildingsInZone(player owningPlayer, bool showDeathEffects)
+  private void DestroyBuildingsInZone(player owningPlayer, bool showDeathEffects, bool refundCost)
   {
     var buildings = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
       .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y))
@@ -99,6 +133,12 @@ public sealed class QuestCountdownToExtinction : QuestData
 
     foreach (var building in buildings)
     {
+      if (refundCost && !KeyBuildingTinyItems.ContainsKey(building.UnitType))
+      {
+        owningPlayer.Gold += unit.GoldCostOf(building.UnitType);
+        owningPlayer.Lumber += unit.WoodCostOf(building.UnitType);
+      }
+
       if (showDeathEffects)
       {
         building.Kill();
@@ -148,7 +188,7 @@ public sealed class QuestCountdownToExtinction : QuestData
       CreateReinforcement(owningPlayer, UNIT_O07A_PEON_ORCISH_HORDE, spawnIndex++);
     }
 
-    CreateReinforcement(owningPlayer, UNIT_O077_THRALL_ORCISH_HORDE, spawnIndex);
+    CreateReinforcement(owningPlayer, UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, spawnIndex);
   }
 
   private void CreateReinforcement(player owningPlayer, int unitTypeId, int spawnIndex)

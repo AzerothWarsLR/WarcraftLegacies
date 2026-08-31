@@ -17,5 +17,7 @@ public static class OrcishHordeObjectInfo
 
     yield return new(UNIT_O07A_PEON_ORCISH_HORDE, Unlimited, Builder);
     yield return new(UNIT_O074_GRUNT_ORCISH_HORDE, Unlimited, Fighter);
+
+    yield return new(UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, 1, new List<UnitCategory> { Destroyer, Summoner });
   }
 }
