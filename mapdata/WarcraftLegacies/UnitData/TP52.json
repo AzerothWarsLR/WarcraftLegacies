@@ -1,6 +1,6 @@
 {
   "OldId": "Othr",
-  "NewId": "o077",
+  "NewId": "TP52",
   "Unk": [
     0
   ],
@@ -9,16 +9,6 @@
       "Id": "uabi",
       "Type": 3,
       "Value": "A01A,AInv"
-    },
-    {
-      "Id": "ua1t",
-      "Type": 3,
-      "Value": "hero"
-    },
-    {
-      "Id": "udty",
-      "Type": 3,
-      "Value": "hero"
     },
     {
       "Id": "ubld",
@@ -83,7 +73,7 @@
     {
       "Id": "uawt",
       "Type": 3,
-      "Value": "Revive Thrall"
+      "Value": "Revive Warchief"
     },
     {
       "Id": "unsf",
@@ -103,12 +93,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Thrall"
+      "Value": "Warchief of the Horde"
     },
     {
       "Id": "utpr",
       "Type": 3,
-      "Value": "Revive Thrall"
+      "Value": "Revive Warchief"
     },
     {
       "Id": "utub",
@@ -118,7 +108,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Summon Thrall"
+      "Value": "Summon Warchief"
     },
     {
       "Id": "umdl",
