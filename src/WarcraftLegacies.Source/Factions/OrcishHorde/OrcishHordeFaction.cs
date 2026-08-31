@@ -96,6 +96,27 @@ public sealed class OrcishHordeFaction : Faction
 
     SetupShipRepairPeon(-2368f, -9600f);
     SetupShipRepairPeon(-3136f, -9664f);
+
+    SetupInitialTowerAssault();
+  }
+
+  private const float InitialTowerAssaultMurlocHealth = 200f;
+
+  private static void SetupInitialTowerAssault()
+  {
+    var tower = AllPreplacedWidgets.Units.GetClosest(UNIT_O07E_WATCH_TOWER_ORCISH_HORDE, -2488.3f, -9027.9f);
+    var murlocOne = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, -2438.3f,
+      -8977.9f);
+    var murlocTwo = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, -2538.3f,
+      -9077.9f);
+
+    GameTimeManager.RegisterOnTurn(1, () =>
+    {
+      murlocOne.Life = InitialTowerAssaultMurlocHealth;
+      murlocTwo.Life = InitialTowerAssaultMurlocHealth;
+      murlocOne.IssueOrder(ORDER_ATTACK, tower);
+      murlocTwo.IssueOrder(ORDER_ATTACK, tower);
+    });
   }
 
   private static void SetupShipRepairPeon(float shipX, float shipY)
