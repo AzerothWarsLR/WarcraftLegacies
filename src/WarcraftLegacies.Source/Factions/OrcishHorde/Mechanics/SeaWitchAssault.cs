@@ -156,25 +156,25 @@ public sealed class SeaWitchAssault
     switch (waveNumber)
     {
       case 1:
-        SpawnGroup(_spawnRegions[0], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 3);
-        SpawnGroup(_spawnRegions[0], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 2);
+        SpawnGroup(_spawnRegions[0], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 4);
+        SpawnGroup(_spawnRegions[0], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 3);
         break;
       case 2:
-        SpawnGroup(_spawnRegions[1], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 5);
-        SpawnGroup(_spawnRegions[1], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 3);
+        SpawnGroup(_spawnRegions[1], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 7);
+        SpawnGroup(_spawnRegions[1], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 4);
         SpawnGroup(_spawnRegions[1], UNIT_O07D_MURLOC_NIGHTCRAWLER_DARKSPEAR_ISLES, 1);
         _orcishHorde.Player?.QueueDialogue(_repairsWave2Dialogue);
         break;
       case 3:
-        SpawnGroup(_spawnRegions[2], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 4);
-        SpawnGroup(_spawnRegions[2], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 2);
-        SpawnGroup(_spawnRegions[2], UNIT_O07D_MURLOC_NIGHTCRAWLER_DARKSPEAR_ISLES, 2);
+        SpawnGroup(_spawnRegions[2], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 5);
+        SpawnGroup(_spawnRegions[2], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 3);
+        SpawnGroup(_spawnRegions[2], UNIT_O07D_MURLOC_NIGHTCRAWLER_DARKSPEAR_ISLES, 3);
         _orcishHorde.Player?.QueueDialogue(_repairsWave3Dialogue);
         break;
       case 4:
         foreach (var spawnRegion in _spawnRegions)
         {
-          SpawnGroup(spawnRegion, UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 3);
+          SpawnGroup(spawnRegion, UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 4);
           SpawnGroup(spawnRegion, UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 1);
           SpawnGroup(spawnRegion, UNIT_O07D_MURLOC_NIGHTCRAWLER_DARKSPEAR_ISLES, 1);
         }
