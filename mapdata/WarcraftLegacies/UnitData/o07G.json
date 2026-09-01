@@ -1,10 +1,15 @@
 {
-  "OldId": "ogre",
-  "NewId": "o078",
+  "OldId": "ofrt",
+  "NewId": "o07G",
   "Unk": [
     0
   ],
   "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aspi,A0GM"
+    },
     {
       "Id": "ubld",
       "Value": 50
@@ -15,16 +20,28 @@
       "Value": 0
     },
     {
+      "Id": "ufma",
+      "Value": 35
+    },
+    {
       "Id": "ugol",
-      "Value": 38
+      "Value": 135
     },
     {
       "Id": "ugor",
-      "Value": 20
+      "Value": 50
     },
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
     },
     {
       "Id": "upat",
@@ -37,12 +54,18 @@
       "Value": "unwalkable"
     },
     {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
       "Id": "urtm",
       "Value": 90
     },
     {
-      "Id": "ulum",
-      "Value": 0
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R05O"
     },
     {
       "Id": "utra",
@@ -50,28 +73,27 @@
       "Value": "o07A"
     },
     {
-      "Id": "uupt",
-      "Type": 3,
-      "Value": "o077"
+      "Id": "ulum",
+      "Value": 0
     },
     {
-      "Id": "ufma",
-      "Value": 15
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
     },
     {
-      "Id": "uabi",
-      "Type": 3,
-      "Value": "Aspi"
+      "Id": "ubpx",
+      "Value": 2
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Orcish Horde T1)"
+      "Value": "(Orcish Horde T3)"
     },
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "Q"
+      "Value": "C"
     },
     {
       "Id": "uubs",
@@ -82,11 +104,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Primary structure. "
-    },
-    {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 0.85
     }
   ]
 }
