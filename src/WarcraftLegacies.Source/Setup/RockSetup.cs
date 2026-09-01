@@ -28,7 +28,5 @@ public static class RockSetup
     RockSystem.Register(new RockGroup(Regions.Blockers_Feralas, _southKalimdorRockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
     RockSystem.Register(new RockGroup(Regions.Blockers_Stonetalon_Peak, _southKalimdorRockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
     RockSystem.Register(new RockGroup(Regions.Blockers_Tanaris, _southKalimdorRockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
-    RockSystem.Register(new RockGroup(Regions.SouthKalimdor2, _rockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
-    RockSystem.Register(new RockGroup(Regions.SouthKalimdor3, _rockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
   }
 }
