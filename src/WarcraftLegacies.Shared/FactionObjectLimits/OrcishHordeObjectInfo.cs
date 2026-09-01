@@ -1,4 +1,4 @@
-using MacroTools.Shared;
+﻿using MacroTools.Shared;
 using static MacroTools.Shared.UnitCategory;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;

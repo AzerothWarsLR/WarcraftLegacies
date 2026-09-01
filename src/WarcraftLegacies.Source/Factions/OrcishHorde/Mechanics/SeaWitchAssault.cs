@@ -1,11 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
-using WCSharp.Events;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
@@ -34,37 +34,37 @@ public sealed class SeaWitchAssault
   private const string SeaWitchTeleportEffectPath = @"Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl";
   private const string SeaWitchTeleportEffectAttachPoint = "origin";
 
-  private static readonly Dialogue SeaWitchAppearsDialogue = new(
+  private static readonly Dialogue _seaWitchAppearsDialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05SeaWitch16.flac",
     "Your efforts are futile, land dwellers. The darkness of the deeps is all that awaits you.",
     "Sea Witch");
 
-  private static readonly Dialogue SeaWitchWave3Dialogue = new(
+  private static readonly Dialogue _seaWitchWave3Dialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05SeaWitch18.flac",
     "Soon this land will be consumed by the tides! Prepare for the sea's cold embrace.",
     "Sea Witch");
 
-  private static readonly Dialogue SeaWitchWave4Dialogue = new(
+  private static readonly Dialogue _seaWitchWave4Dialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05SeaWitch20.flac",
     "Yes! At last, the end draws near. Your deaths are only the beginning - soon all land dwellers will be entombed in a watery grave.",
     "Sea Witch");
 
-  private static readonly Dialogue SeaWitchEscapesDialogue = new(
+  private static readonly Dialogue _seaWitchEscapesDialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo04\D04SeaWitch39.flac",
     "Make peace with your gods, land lovers. You cannot escape the currents of death so easily.",
     "Sea Witch");
 
-  private static readonly Dialogue RepairsWave2Dialogue = new(
+  private static readonly Dialogue _repairsWave2Dialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Grunt17.flac",
     "We still need more time to finish the repairs, warchief.",
     "Grunt");
 
-  private static readonly Dialogue RepairsWave3Dialogue = new(
+  private static readonly Dialogue _repairsWave3Dialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Grunt19.flac",
     "It won't be much longer now, warchief - the ships are nearly ready.",
     "Grunt");
 
-  private static readonly Dialogue RepairsWave4Dialogue = new(
+  private static readonly Dialogue _repairsWave4Dialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Thrall21.flac",
     "Hold the line, my warriors! Our freedom is at hand!",
     "Thrall");
@@ -163,13 +163,13 @@ public sealed class SeaWitchAssault
         SpawnGroup(_spawnRegions[1], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 5);
         SpawnGroup(_spawnRegions[1], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 3);
         SpawnGroup(_spawnRegions[1], UNIT_O07D_MURLOC_NIGHTCRAWLER_DARKSPEAR_ISLES, 1);
-        _orcishHorde.Player?.QueueDialogue(RepairsWave2Dialogue);
+        _orcishHorde.Player?.QueueDialogue(_repairsWave2Dialogue);
         break;
       case 3:
         SpawnGroup(_spawnRegions[2], UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, 4);
         SpawnGroup(_spawnRegions[2], UNIT_O07C_MURLOC_HUNTSMAN_DARKSPEAR_ISLES, 2);
         SpawnGroup(_spawnRegions[2], UNIT_O07D_MURLOC_NIGHTCRAWLER_DARKSPEAR_ISLES, 2);
-        _orcishHorde.Player?.QueueDialogue(RepairsWave3Dialogue);
+        _orcishHorde.Player?.QueueDialogue(_repairsWave3Dialogue);
         break;
       case 4:
         foreach (var spawnRegion in _spawnRegions)
@@ -180,7 +180,7 @@ public sealed class SeaWitchAssault
         }
 
         SpawnGroup(_spawnRegions[2], UNIT_N00R_MURLOC_SORCERER_NEUTRAL_HOSTILE_BOSS, 1);
-        _orcishHorde.Player?.QueueDialogue(RepairsWave4Dialogue);
+        _orcishHorde.Player?.QueueDialogue(_repairsWave4Dialogue);
         break;
     }
 
@@ -276,9 +276,9 @@ public sealed class SeaWitchAssault
 
     var spawnDialogue = _currentWave switch
     {
-      1 => SeaWitchAppearsDialogue,
-      3 => SeaWitchWave3Dialogue,
-      4 => SeaWitchWave4Dialogue,
+      1 => _seaWitchAppearsDialogue,
+      3 => _seaWitchWave3Dialogue,
+      4 => _seaWitchWave4Dialogue,
       _ => null
     };
     if (spawnDialogue != null)
@@ -344,7 +344,7 @@ public sealed class SeaWitchAssault
 
     _seaWitchCasting = false;
     _seaWitchLifePercentCarryover = seaWitch.GetLifePercent();
-    _orcishHorde.Player?.QueueDialogue(SeaWitchEscapesDialogue);
+    _orcishHorde.Player?.QueueDialogue(_seaWitchEscapesDialogue);
     seaWitch.Dispose();
   }
 

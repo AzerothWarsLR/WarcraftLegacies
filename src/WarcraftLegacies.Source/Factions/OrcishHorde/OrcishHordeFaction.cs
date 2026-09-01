@@ -17,22 +17,22 @@ namespace WarcraftLegacies.Source.Factions.OrcishHorde;
 
 public sealed class OrcishHordeFaction : Faction
 {
-  private static readonly Dialogue TrollDialogue09 = new(
+  private static readonly Dialogue _trollDialogue09 = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll09.flac",
     "This island be sinking quick, we come with you, man!",
     "Troll");
 
-  private static readonly Dialogue TrollDialogue10 = new(
+  private static readonly Dialogue _trollDialogue10 = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll10.flac",
     "We don't have much time.",
     "Troll");
 
-  private static readonly Dialogue TrollDialogue11 = new(
+  private static readonly Dialogue _trollDialogue11 = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll11.flac",
     "You got a way off the island?",
     "Troll");
 
-  private static readonly Dialogue TrollDialogue12 = new(
+  private static readonly Dialogue _trollDialogue12 = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll12.flac",
     "Eh, where the others go? Dey go with you?",
     "Troll");
@@ -43,7 +43,7 @@ public sealed class OrcishHordeFaction : Faction
   /// </summary>
   private readonly List<Dialogue> _unusedTrollDialogue = new()
   {
-    TrollDialogue09, TrollDialogue10, TrollDialogue11, TrollDialogue12
+    _trollDialogue09, _trollDialogue10, _trollDialogue11, _trollDialogue12
   };
 
   /// <inheritdoc />

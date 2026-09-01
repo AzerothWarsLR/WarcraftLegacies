@@ -1,4 +1,4 @@
-using MacroTools.Quests;
+﻿using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
 

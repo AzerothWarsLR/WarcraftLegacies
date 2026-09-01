@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -26,7 +26,7 @@ public sealed class QuestCountdownToExtinction : QuestData
   /// Key Orcish Horde buildings that Thrall gets a Tiny item version of when the fleet departs cleanly,
   /// so the buildings can be rebuilt at the new landing site.
   /// </summary>
-  private static readonly Dictionary<int, int> KeyBuildingTinyItems = new()
+  private static readonly Dictionary<int, int> _keyBuildingTinyItems = new()
   {
     { UNIT_O078_GREAT_HALL_ORCISH_HORDE_T1, ITEM_I01Z_TINY_GREAT_HALL_ORCISH_HORDE },
     { UNIT_O075_WAR_CAMP_ORCISH_HORDE, ITEM_I020_TINY_WAR_CAMP_ORCISH_HORDE },
@@ -97,13 +97,13 @@ public sealed class QuestCountdownToExtinction : QuestData
 
     var keyBuildingTypes = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
       .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y)
-        && KeyBuildingTinyItems.ContainsKey(u.UnitType))
+        && _keyBuildingTinyItems.ContainsKey(u.UnitType))
       .Select(u => u.UnitType)
       .Distinct();
 
     foreach (var unitType in keyBuildingTypes)
     {
-      thrall.AddItem(item.Create(KeyBuildingTinyItems[unitType], thrall.X, thrall.Y));
+      thrall.AddItem(item.Create(_keyBuildingTinyItems[unitType], thrall.X, thrall.Y));
     }
   }
 
@@ -133,7 +133,7 @@ public sealed class QuestCountdownToExtinction : QuestData
 
     foreach (var building in buildings)
     {
-      if (refundCost && !KeyBuildingTinyItems.ContainsKey(building.UnitType))
+      if (refundCost && !_keyBuildingTinyItems.ContainsKey(building.UnitType))
       {
         owningPlayer.Gold += unit.GoldCostOf(building.UnitType);
         owningPlayer.Lumber += unit.WoodCostOf(building.UnitType);
