@@ -90,6 +90,8 @@ public sealed class OrcishHordeFaction : Faction
     new SeaWitchAssault(this, quest, greatHall, Regions.Darkspear_Isles, Regions.Sea_Witch_Spawn_1,
       Regions.Sea_Witch_Spawn_2, Regions.Sea_Witch_Spawn_3);
 
+    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
+
     RegisterTrollRescue(Regions.Troll_Rescue_1);
     RegisterTrollRescue(Regions.Troll_Rescue_2);
     RegisterTrollRescue(Regions.Troll_Rescue_3);
