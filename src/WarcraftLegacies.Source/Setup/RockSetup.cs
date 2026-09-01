@@ -1,4 +1,5 @@
 ﻿using WarcraftLegacies.Source.GameLogic.Rocks;
+using WarcraftLegacies.Source.GameLogic.SouthKalimdorGuard;
 
 namespace WarcraftLegacies.Source.Setup;
 
@@ -22,5 +23,8 @@ public static class RockSetup
 
     //Bridge Rocks
     RockSystem.Register(new RockGroup(Regions.BridgeAmbient, _rockChunkId, 30));
+
+    RockSystem.Register(new RockGroup(Regions.SouthKalimdor2, _rockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
+    RockSystem.Register(new RockGroup(Regions.SouthKalimdor3, _rockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
   }
 }
