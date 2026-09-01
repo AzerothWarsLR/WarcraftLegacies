@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.GameTime;
@@ -20,7 +20,7 @@ public static class SouthKalimdorGuardSystem
   private const float PushBackDistance = 128f;
   private const float MessageCooldownSeconds = 20f;
 
-  private static readonly Rectangle[] LockedRegions =
+  private static readonly Rectangle[] _lockedRegions =
   {
     Regions.SouthKalimdor1,
     Regions.SouthKalimdor2,
@@ -31,9 +31,9 @@ public static class SouthKalimdorGuardSystem
 
   public static void Setup()
   {
-    var splitX = (LockedRegions.Min(region => region.Left) + LockedRegions.Max(region => region.Right)) / 2;
+    var splitX = (_lockedRegions.Min(region => region.Left) + _lockedRegions.Max(region => region.Right)) / 2;
 
-    foreach (var region in LockedRegions)
+    foreach (var region in _lockedRegions)
     {
       var enterTrigger = trigger.Create();
       enterTrigger.RegisterEnterRegion(region.Region);
@@ -96,7 +96,7 @@ public static class SouthKalimdorGuardSystem
   /// </summary>
   private static bool IsSafeLandingSpot(Point position) =>
     !pathingtype.Walkability.GetPathable(position.X, position.Y) &&
-    !LockedRegions.Any(region => region.Contains(position.X, position.Y));
+    !_lockedRegions.Any(region => region.Contains(position.X, position.Y));
 
   private static Point? GetNearestSafeShore(Point position)
   {
@@ -104,7 +104,7 @@ public static class SouthKalimdorGuardSystem
     var nearestDistanceSquared = float.MaxValue;
     foreach (var shore in ShoreManager.GetAllShores())
     {
-      if (LockedRegions.Any(region => region.Contains(shore.Position.X, shore.Position.Y)))
+      if (_lockedRegions.Any(region => region.Contains(shore.Position.X, shore.Position.Y)))
       {
         continue;
       }
