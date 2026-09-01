@@ -34,6 +34,14 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Purchase Tiny War Camp"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
     }
   ]
 }

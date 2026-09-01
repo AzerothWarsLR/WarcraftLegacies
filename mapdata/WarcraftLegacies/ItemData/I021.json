@@ -34,6 +34,14 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Purchase Tiny Altar of Storms"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
     }
   ]
 }
