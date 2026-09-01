@@ -51,7 +51,7 @@ public sealed class SeaWitchAssault
 
   private static readonly Dialogue _seaWitchEscapesDialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo04\D04SeaWitch39.flac",
-    "Make peace with your gods, land lovers. You cannot escape the currents of death so easily.",
+    "Make peace with your gods, land dwellers. You cannot escape the currents of death so easily.",
     "Sea Witch");
 
   private static readonly Dialogue _repairsWave2Dialogue = new(
