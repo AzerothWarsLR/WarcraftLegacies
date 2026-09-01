@@ -92,7 +92,8 @@ public sealed class QuestCountdownToExtinction : QuestData
       .FirstOrDefault(u => u.UnitType == UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE);
     if (thrall == null)
     {
-      return;
+      thrall = unit.Create(owningPlayer, UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, _retreatDestination.X,
+        _retreatDestination.Y, 0);
     }
 
     var keyBuildingTypes = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
