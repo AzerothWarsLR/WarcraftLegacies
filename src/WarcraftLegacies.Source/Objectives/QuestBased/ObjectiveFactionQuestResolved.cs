@@ -1,4 +1,4 @@
-using MacroTools.Factions;
+﻿using MacroTools.Factions;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.QuestBased;
