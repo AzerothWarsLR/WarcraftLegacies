@@ -285,7 +285,7 @@ public static class Regions
   public static Rectangle Solliden_Farmstead { get; set; } = new Rectangle(6400f, 8992f, 7808f, 10592f);
   public static Rectangle SouthKalimdor1 { get; set; } = new Rectangle(-24352f, -20704f, -7744f, -12576f);
   public static Rectangle SouthKalimdor2 { get; set; } = new Rectangle(-17408f, -12576f, -14080f, -8320f);
-  public static Rectangle SouthKalimdor3 { get; set; } = new Rectangle(-23680f, -12416f, -17408f, -5568f);
+  public static Rectangle SouthKalimdor3 { get; set; } = new Rectangle(-24000f, -12416f, -17408f, -1024f);
   public static Rectangle South_EK_Ships { get; set; } = new Rectangle(7872f, -18240f, 18880f, -12288f);
   public static Rectangle SouthshoreAmbient { get; set; } = new Rectangle(9216f, 1216f, 14176f, 3520f);
   public static Rectangle SouthshoreAmbient2 { get; set; } = new Rectangle(10336f, 3936f, 13568f, 4608f);
