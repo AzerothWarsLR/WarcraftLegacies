@@ -14,6 +14,7 @@ using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic.AssistedFollow;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameLogic.Mmd;
+using WarcraftLegacies.Source.GameLogic.SouthKalimdorGuard;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
@@ -78,6 +79,7 @@ public static class GameSetup
     };
     gameModeManager.Setup();
     RockSetup.Setup();
+    SouthKalimdorGuardSystem.Setup();
     TurnResearchSetup.Setup();
     ShipyardBanZonesSetup.Setup();
     BlockerSetup.Setup();
