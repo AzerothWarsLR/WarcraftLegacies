@@ -44,6 +44,9 @@ public static class Regions
   public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
   public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
   public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
+  public static Rectangle Blockers_Feralas { get; set; } = new Rectangle(-14752f, -9984f, -13536f, -7904f);
+  public static Rectangle Blockers_Stonetalon_Peak { get; set; } = new Rectangle(-19264f, -2176f, -17600f, -544f);
+  public static Rectangle Blockers_Tanaris { get; set; } = new Rectangle(-10496f, -13216f, -9280f, -12448f);
   public static Rectangle BookOfMedivhDalaran { get; set; } = new Rectangle(9312f, 4864f, 9600f, 5216f);
   public static Rectangle BookOfMedivhGilneas { get; set; } = new Rectangle(7840f, 448f, 8032f, 640f);
   public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);

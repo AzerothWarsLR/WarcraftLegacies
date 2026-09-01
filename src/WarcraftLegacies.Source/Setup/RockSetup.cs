@@ -8,6 +8,7 @@ namespace WarcraftLegacies.Source.Setup;
 public static class RockSetup
 {
   private static readonly int _rockChunkId = FourCC("LTrc");
+  private static readonly int _southKalimdorRockChunkId = FourCC("DTrc");
 
   public static void Setup()
   {
@@ -22,5 +23,9 @@ public static class RockSetup
 
     //Bridge Rocks
     RockSystem.Register(new RockGroup(Regions.BridgeAmbient, _rockChunkId, 30));
+
+    RockSystem.Register(new RockGroup(Regions.Blockers_Feralas, _southKalimdorRockChunkId, 15));
+    RockSystem.Register(new RockGroup(Regions.Blockers_Stonetalon_Peak, _southKalimdorRockChunkId, 15));
+    RockSystem.Register(new RockGroup(Regions.Blockers_Tanaris, _southKalimdorRockChunkId, 15));
   }
 }
