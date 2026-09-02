@@ -42,7 +42,12 @@
     {
       "Id": "areq",
       "Type": 3,
-      "Value": "RL11"
+      "Value": "MD50"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
     },
     {
       "Id": "abpx",
@@ -51,7 +56,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(cthun)"
+      "Value": "(Loa Medium)"
     },
     {
       "Id": "ahky",
@@ -73,7 +78,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Transfers mana between the Statue and a target. Drains \u003CAZ2A,DataB1\u003E mana per second from an enemy, or transfers \u003CAZ2A,DataE1\u003E mana per second to an ally.|n|nSiphon Mana can push the Satue\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+      "Value": "Transfers mana between the Medium and a target. Drains \u003CAZ2A,DataB1\u003E mana per second from an enemy, or transfers \u003CAZ2A,DataE1\u003E mana per second to an ally.|n|nSiphon Mana can push the Mediums mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
     }
   ]
 }

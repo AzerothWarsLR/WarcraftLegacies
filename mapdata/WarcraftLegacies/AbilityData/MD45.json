@@ -1,0 +1,25 @@
+{
+  "OldId": "Ahpe",
+  "NewId": "MD45",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Scouts Rider) (Icon)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Scots shoots arrows to nearby enemies, dealing \u003CA0EL,DataA1\u003E damage on impact"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Scouts Rider"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "OldId": "Awar",
+  "NewId": "MD49",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Bear Rider)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
+    }
+  ]
+}

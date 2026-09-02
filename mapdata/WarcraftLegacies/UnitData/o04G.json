@@ -79,6 +79,10 @@
       "Value": 1
     },
     {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Creep)"

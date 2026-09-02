@@ -74,7 +74,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": "usca",
@@ -119,10 +119,6 @@
       "Id": "utpr",
       "Type": 3,
       "Value": "Revive Zandalari Prophet"
-    },
-    {
-      "Id": "ubpx",
-      "Value": 1
     },
     {
       "Id": "upro",

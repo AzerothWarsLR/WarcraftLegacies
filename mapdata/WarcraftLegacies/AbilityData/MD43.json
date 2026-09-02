@@ -1,0 +1,97 @@
+{
+  "OldId": "AUcb",
+  "NewId": "MD43",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Rai3",
+      "Type": 3,
+      "Value": "n067"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ucb5",
+      "Value": 99
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "MD50"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Loa Medium)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Medium summons 2 spiders from nearby Corpses. The spiders are untargetable and uncontrollable and will attack enemies in proximity."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Inject Spiderlings"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Inject Spiderlings"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "aubx",
+      "Value": 0
+    }
+  ]
+}

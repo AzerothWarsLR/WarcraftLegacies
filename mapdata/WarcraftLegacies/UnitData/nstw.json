@@ -43,6 +43,11 @@
       "Value": 0
     },
     {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Zandalar)"

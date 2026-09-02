@@ -138,7 +138,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": "uimz",
@@ -187,7 +187,7 @@
     },
     {
       "Id": "ubpx",
-      "Value": 1
+      "Value": 2
     }
   ]
 }

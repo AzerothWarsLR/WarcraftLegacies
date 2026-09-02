@@ -140,7 +140,7 @@
     },
     {
       "Id": "ubpx",
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": "ubpy",
@@ -159,7 +159,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": "ulpz",

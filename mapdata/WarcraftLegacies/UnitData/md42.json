@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aion"
+      "Value": "MD43,MD44,AZ2A,Aion"
     },
     {
       "Id": "ubld",
@@ -71,12 +71,21 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar"
+      "Value": "MD50,Rhme,Rhar"
     },
     {
       "Id": "uhpr",
       "Type": 2,
       "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "MD43"
     },
     {
       "Id": "unsf",
@@ -86,7 +95,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "Q"
+      "Value": "E"
     },
     {
       "Id": "utub",
@@ -127,6 +136,10 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
     }
   ]
 }
