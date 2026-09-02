@@ -1,0 +1,16 @@
+{
+  "Left": -13600,
+  "Bottom": 992,
+  "Right": -12960,
+  "Top": 2464,
+  "Name": "AshenvaleBlocker",
+  "CreationNumber": 108,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

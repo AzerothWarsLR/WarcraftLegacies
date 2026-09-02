@@ -50,7 +50,6 @@ public sealed class WarsongFaction : Faction
   public override void OnRegistered()
   {
     RegisterObjectLevels();
-    ReplaceWithFactionUnits(this);
     RegisterQuests();
     RegisterDialogue();
     RegisterFlightPath();
@@ -86,19 +85,6 @@ public sealed class WarsongFaction : Faction
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
     AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
-  }
-
-  private static void ReplaceWithFactionUnits(Faction pickedFaction)
-  {
-    if (pickedFaction == null)
-    {
-      throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
-    }
-
-    FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.ThunderBluff, pickedFaction);
-    FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.EchoUnlock, pickedFaction);
-    FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Orgrimmar, pickedFaction);
-    FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Crossroads, pickedFaction);
   }
 
 

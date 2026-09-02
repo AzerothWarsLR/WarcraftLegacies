@@ -1,32 +1,11 @@
 [
   {
-    "TypeId": 1295396932,
-    "Variation": 0,
-    "Position": {
-      "X": -10838.889,
-      "Y": 935.39453,
-      "Z": 37.94915
-    },
-    "Rotation": 4.712389,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1295396932,
-    "State": 2,
-    "Life": 255,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 7932
-  },
-  {
     "TypeId": 909127746,
     "Variation": 0,
     "Position": {
       "X": -11036.248,
       "Y": 1170.4708,
-      "Z": 50.976494
+      "Z": 57.048584
     },
     "Rotation": 4.712389,
     "Scale": {
