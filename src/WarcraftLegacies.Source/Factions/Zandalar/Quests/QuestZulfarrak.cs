@@ -4,6 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.GameLogic.Rocks;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
@@ -28,6 +29,7 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
       "The Sandfury Trolls of Zul'farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.",
       @"ReplaceableTextures\CommandButtons\BTNDarkTroll.blp")
     {
+      AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
       ResearchId = UPGRADE_MD33_QUEST_COMPLETED_ZULFARRAK;
       AddObjective(new ObjectiveLegendReachRect(Zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
