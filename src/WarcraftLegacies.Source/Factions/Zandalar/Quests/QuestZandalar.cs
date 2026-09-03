@@ -30,7 +30,7 @@ public sealed class QuestZandalar : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N025_UN_GORO_CRATER));
     AddObjective(new ObjectiveUpgrade(UNIT_O03Z_FORTRESS_CREEP_T3, UNIT_O03Y_STRONGHOLD_CREEP_T2));
     AddObjective(new ObjectiveSelfExists());
-    ResearchId = UPGRADE_MD34_QUEST_COMPLETED_ZANDALAR;
+    ResearchId = UPGRADE_MD34_QUEST_COMPLETED_CITY_OF_GOLD;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
   }
 

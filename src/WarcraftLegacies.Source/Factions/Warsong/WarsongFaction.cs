@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Factions.Warsong;
 public sealed class WarsongFaction : Faction
 {
   /// <inheritdoc />
-  public WarsongFaction() : base("Warsong", playercolor.Red,
+  public WarsongFaction() : base("Warsong", playercolor.Orange,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
     TraditionalTeam = TeamSetup.Horde;
@@ -55,16 +55,7 @@ public sealed class WarsongFaction : Faction
     RegisterFlightPath();
     WarsongSpells.Setup();
     WarsongTraits.Setup();
-    BloodPactBattleSimulation.StartSimulation();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    Regions.BarrenAmbient2.CleanupHostileUnits();
-    Regions.AshenvaleCreeps.CleanupHostileUnits();
-    var thunderBluffUnit = AllPreplacedWidgets.Units.Get(UNIT_N03M_THUNDERBLUFF);
-    var whichPlayer = player.NeutralAggressive;
-    thunderBluffUnit.SetOwner(whichPlayer);
-    var echoIslesUnit = AllPreplacedWidgets.Units.Get(UNIT_N02V_ECHO_ISLES);
-    var whichPlayer1 = player.NeutralAggressive;
-    echoIslesUnit.SetOwner(whichPlayer1);
   }
 
   private void RegisterObjectLevels()
@@ -83,16 +74,8 @@ public sealed class WarsongFaction : Faction
     AddQuest(new QuestKillOldGods());
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
-    AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
-    AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
   }
 
-
-  public override void OnNotPicked()
-  {
-    Regions.StonemaulKeep.CleanupNeutralPassiveUnits();
-    base.OnNotPicked();
-  }
   private void RegisterDialogue()
   {
     TriggeredDialogueManager.Add(new TriggeredDialogue(

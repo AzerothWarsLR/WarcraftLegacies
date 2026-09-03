@@ -25,10 +25,7 @@ public sealed class QuestAstranaar : QuestData
     "Auberdin needs to be mobilized for war. Darkshore has already been attacked by wild creatures gone mad.",
     @"ReplaceableTextures\CommandButtons\BTNShandris.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N02Z_AZUREMYST_ISLE));
     AddObjective(new ObjectiveControlPoint(UNIT_N02U_DARKSHORE));
-    AddObjective(new ObjectiveControlPoint(UNIT_N064_GROVE_OF_THE_ANCIENTS));
-    AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.Invasion3 }, "in Darkshore"));
     AddObjective(new ObjectiveUpgrade(UNIT_N06P_SENTINEL_ENCLAVE_SENTINELS_T3,
       UNIT_N06J_SENTINEL_OUTPOST_SENTINELS_T1));
     AddObjective(new ObjectiveExpire(8, Title));

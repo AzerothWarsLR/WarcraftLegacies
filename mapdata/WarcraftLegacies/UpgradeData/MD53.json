@@ -1,0 +1,47 @@
+{
+  "OldId": "Rotr",
+  "NewId": "MD53",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Troll Regeneration "
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the hit point regeneration rate of your Troll based units by 150%"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Zandalar)"
+    }
+  ]
+}

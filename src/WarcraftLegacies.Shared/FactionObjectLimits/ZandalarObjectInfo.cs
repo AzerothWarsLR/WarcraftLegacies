@@ -51,6 +51,6 @@ public static class ZandalarObjectInfo
       yield return new(UPGRADE_R070_HARUSPEX_ADEPT_TRAINING_TROLL, Unlimited);
       yield return new(UPGRADE_R071_HEX_DOCTOR_ADEPT_TRAINING_TROLL, Unlimited);
       yield return new(UPGRADE_MD50_LOA_MEDIUM_ADEPT_TRAINING_TROLL, Unlimited);
-
+      yield return new(UPGRADE_MD53_TROLL_REGENERATION_ZANDALAR, Unlimited);
   }
 }

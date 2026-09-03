@@ -17,7 +17,7 @@ public sealed class DraeneiFaction : Faction
 {
   /// <inheritdoc />
   public DraeneiFaction()
-    : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
+    : base("The Exodar", playercolor.Navy, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
     TraditionalTeam = TeamSetup.NightElves;
     StartingGold = new StartingGold
@@ -52,13 +52,7 @@ public sealed class DraeneiFaction : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
   /// <inheritdoc />
-  public override void OnNotPicked()
-  {
-    Regions.ExodarBaseUnlock.CleanupNeutralPassiveUnits();
-    Regions.Darkshore.CleanupNeutralPassiveUnits();
-    base.OnNotPicked();
-  }
-
+ 
   private void RegisterQuests()
   {
     var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, AllLegends.Draenei.LegendExodar);

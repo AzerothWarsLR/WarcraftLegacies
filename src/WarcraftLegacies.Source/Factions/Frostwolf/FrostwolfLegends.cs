@@ -13,6 +13,7 @@ public sealed class FrostwolfLegends
   public LegendaryHero Voljin { get; }
   public Capital ThunderBluff { get; }
   public Capital DarkspearHold { get; }
+  public Capital StonemaulKeep {  get; }
 
   public FrostwolfLegends()
   {
@@ -53,6 +54,13 @@ public sealed class FrostwolfLegends
       Essential = true
     };
 
+    StonemaulKeep = new Capital
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O004_STONEMAUL_KEEP),
+      DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
+      Essential = true
+    };
+
     Rexxar = new LegendaryHero("Rexxar")
     {
       UnitType = UNIT_OREX_BEASTMASTER_FROSTWOLF,
@@ -74,5 +82,6 @@ public sealed class FrostwolfLegends
     LegendaryHeroManager.Register(Voljin);
     CapitalManager.Register(ThunderBluff);
     CapitalManager.Register(DarkspearHold);
+    CapitalManager.Register(StonemaulKeep);
   }
 }

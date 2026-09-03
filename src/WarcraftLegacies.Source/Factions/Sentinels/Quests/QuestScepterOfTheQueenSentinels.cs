@@ -2,10 +2,11 @@
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.QuestBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -35,15 +36,15 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.
   /// </summary>
-  public QuestScepterOfTheQueenSentinels(QuestData prerequisite, Rectangle area) : base("Return to the Fold",
+  public QuestScepterOfTheQueenSentinels(Rectangle area, Capital StonemaulKeep) : base("Return to the Fold",
     "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Stonemaul falls, it would be safe for them to come out.",
     @"ReplaceableTextures\CommandButtons\BTNNagaWeaponUp2.blp")
   {
     _highBourneArea = area;
     _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
-    AddObjective(new ObjectiveQuestComplete(prerequisite));
     AddObjective(new ObjectiveHostilesInAreaAreDead(new[] { area }, "outside the Athenaeum"));
+    AddObjective(new ObjectiveCapitalDead(StonemaulKeep));
     _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "the Athenaeum", false);
     AddObjective(_anyUnitInRect);
   }

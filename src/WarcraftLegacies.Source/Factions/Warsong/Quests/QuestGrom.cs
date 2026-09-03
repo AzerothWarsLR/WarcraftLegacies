@@ -46,13 +46,6 @@ public sealed class QuestGrom : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     base.OnComplete(completingFaction);
-
-    foreach (var unit in BloodPactBattleSimulation.BattleSimulationGroup.ToList())
-    {
-      unit.Dispose();
-    }
-    BloodPactBattleSimulation.BattleSimulationGroup.Clear();
-
     completingFaction.ModObjectLimit(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1);
     completingFaction.ModObjectLimit(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, -1);
 

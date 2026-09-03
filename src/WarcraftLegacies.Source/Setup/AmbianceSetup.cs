@@ -118,8 +118,6 @@ public static class AmbianceSetup
     Regions.BrokenIslesB.AddSound(WetlandsDay);
     Regions.WinterspringAmbient1.AddSound(IceCrownDay);
     Regions.WinterspringAmbient2.AddSound(IceCrownDay);
-    Regions.Nyalotha.AddSound(BlackCitadelOutlandDay);
-    Regions.ElementalRealm.AddSound(BlackCitadelOutlandNight);
 
   }
 }

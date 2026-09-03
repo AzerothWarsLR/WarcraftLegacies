@@ -20,7 +20,9 @@ public static class RockSetup
     RockSystem.Register(new RockGroup(Regions.NorthrendRock2, _rockChunkId, 6));
     RockSystem.Register(new RockGroup(Regions.NorthrendRock3, _rockChunkId, 6));
     RockSystem.Register(new RockGroup(Regions.NorthrendRock4, _rockChunkId, 6));
-
+    //Kalirocks
+    RockSystem.Register(new RockGroup(Regions.AshenvaleBlocker, _rockChunkId, 8));
+    RockSystem.Register(new RockGroup(Regions.FeralasBlocker, _rockChunkId, 10));
     //AQ Rocks
     RockSystem.Register(new RockGroup(Regions.AQ_Blockers, _rockChunkId));
 

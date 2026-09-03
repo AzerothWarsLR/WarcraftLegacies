@@ -6,6 +6,10 @@
   ],
   "Modifications": [
     {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Scouts Rider) (Icon)"
@@ -14,10 +18,21 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The Scots shoots arrows to nearby enemies, dealing \u003CA0EL,DataA1\u003E damage on impact"
+      "Value": "The Scots shoots arrows to nearby enemies, dealing 15 damage on impact."
     },
     {
       "Id": "anam",
+      "Type": 3,
+      "Value": "Scouts Rider"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
       "Value": "Scouts Rider"
     }

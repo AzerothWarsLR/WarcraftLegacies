@@ -6,6 +6,7 @@ using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -16,23 +17,21 @@ public sealed class QuestFeathermoon : QuestData
   private List<unit> _rescueUnits;
   private readonly Capital _feathermoon;
 
-  public QuestFeathermoon(Capital feathermoon, Rectangle rescueRect)
+  public QuestFeathermoon(Rectangle rescueRect, LegendaryHero Shandris)
     : base(
       "Shores of Feathermoon",
       "Without aid from the primary Sentinel force, Feathermoon Stronghold will undoubtedly fall to the assault of the Old Gods. We will need to restore it.",
       @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
   {
-    _feathermoon = feathermoon;
-
-    AddObjective(new ObjectiveBuildUniqueBuildingsInRect(Regions.FeathermoonUnlock, "in Feathermoon", 3));
     AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON));
+    AddObjective(new ObjectiveLegendReachRect(Shandris, rescueRect, "FeatherMoon"));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
   }
 
   public override string RewardFlavour =>
-    "The Sentinels have rebuilt Feathermoon Stronghold to its former glory. Maiev Shadowsong now joins their efforts.";
+    "The Sentinels have recaptured Feathermoon Stronghold to its former glory. Maiev Shadowsong now joins their efforts.";
 
   protected override string RewardDescription => Loc.Format(
     "Learn to train Maiev Shadowsong from the {altar} and gain control of the survivors hiding in Feathermoon.",

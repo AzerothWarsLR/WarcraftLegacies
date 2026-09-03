@@ -7,6 +7,7 @@ using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Warsong;
 using WarcraftLegacies.Source.Factions.Zandalar;
 using WarcraftLegacies.Source.Factions.Zandalar.Quests;
 using WarcraftLegacies.Source.Setup;
@@ -18,10 +19,10 @@ public sealed class ZandalarFaction : Faction
 {
   /// <inheritdoc />
   public ZandalarFaction()
-    : base("Zandalar", playercolor.Peach, @"ReplaceableTextures\CommandButtons\BTNZuljin.blp")
+    : base("Zandalar", playercolor.Peach, @"ReplaceableTextures\CommandButtons\BTNForestTrollTrapper.blp")
   {
     TraditionalTeam = TeamSetup.Horde;
-    UndefeatedResearch = UPGRADE_MD31_ZANDALAR_EXIST;
+    UndefeatedResearch = UPGRADE_MD31_ZANDALAR_EXISTS;
     StartingGold = new StartingGold
     {
       Instant = 200,
@@ -45,6 +46,7 @@ public sealed class ZandalarFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    ZandalarTraits.Setup();
     //ZandalarSpells.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }

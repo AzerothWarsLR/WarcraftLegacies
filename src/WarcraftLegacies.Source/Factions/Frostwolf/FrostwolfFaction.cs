@@ -70,13 +70,6 @@ public sealed class FrostwolfFaction : Faction
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
-  public override void OnNotPicked()
-  {
-    Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
-
-    base.OnNotPicked();
-  }
-
   private void RegisterDialogue()
   {
     TriggeredDialogueManager.Add(

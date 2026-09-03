@@ -29,7 +29,7 @@ public static class PlayerSetup
     SetupPlayer(player.Create(4), new IronforgeFaction());
     SetupPlayer(player.Create(6), new FelHordeFaction());
     player.Create(7).GetPlayerData().SetTeam(TeamSetup.NorthAlliance);
-    SetupPlayer(player.Create(8), new WarsongFaction());
+    SetupPlayer(player.Create(5), new WarsongFaction());
     SetupPlayer(player.Create(9), new LordaeronFaction());
     SetupPlayer(player.Create(11), new DruidsFaction());
     SetupPlayer(player.Create(13), new DraeneiFaction());

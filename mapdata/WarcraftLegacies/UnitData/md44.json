@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aotr,A0S4,Aihn"
+      "Value": "A0S4,Aihn"
     },
     {
       "Id": "ubld",
@@ -67,7 +67,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rotr,Rhme,Rhar"
+      "Value": "MD53,Rhme,Rhar"
     },
     {
       "Id": "ureq",

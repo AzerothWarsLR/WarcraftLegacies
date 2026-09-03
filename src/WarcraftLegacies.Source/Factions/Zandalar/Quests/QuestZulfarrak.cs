@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
       @"ReplaceableTextures\CommandButtons\BTNDarkTroll.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
-      ResearchId = UPGRADE_MD33_QUEST_COMPLETED_ZULFARRAK;
+      ResearchId = UPGRADE_MD33_QUEST_COMPLETED_FURY_OF_THE_SANDS;
       AddObjective(new ObjectiveLegendReachRect(Zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       goldReward = 150;

@@ -62,28 +62,18 @@ public sealed class SentinelsFaction : Faction
     SentinelsSpells.Setup();
     SentinelsTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    Regions.AstranaarUnlock.CleanupHostileUnits();
-    Regions.AuberdineUnlock.CleanupHostileUnits();
   }
 
   /// <inheritdoc />
-  public override void OnNotPicked()
-  {
-    Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
-    Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
-    Regions.FeathermoonUnlock.CleanupNeutralPassiveUnits();
-    Regions.TheAthenaeum.CleanupNeutralPassiveUnits();
-    base.OnNotPicked();
-  }
 
   private void RegisterQuests()
   {
-    var questAstranaar = AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
-    StartingQuest = questAstranaar;
-
-    // Register the updated QuestFeathermoon
-    var questFeathermoon = AddQuest(new QuestFeathermoon(AllLegends.Sentinels.Feathermoon, Regions.FeathermoonUnlock));
-    AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum));
+    var startquest = AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock, AllLegends.Sentinels.Shandris));
+    StartingQuest = startquest;
+    AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
+    AddQuest(new QuestKillOrgrimmar());
+    AddQuest(new QuestKillThunderBluff());
+    AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, AllLegends.Frostwolf.StonemaulKeep));
     AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }

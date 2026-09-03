@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
   /// </summary>
   public sealed class QuestJinthaAlor : QuestData
   {
-    private const int _jinthaalorResearch = UPGRADE_MD37_QUEST_COMPLETED_JINTHAALOR;
+    private const int _jinthaalorResearch = UPGRADE_MD37_QUEST_COMPLETED_THE_ANCIENT_EGG;
     private const int _bearRiderId = UNIT_MD45_BEAR_RIDER_ZANDALAR;
     private const int _trollShrineId = UNIT_O043_SPIRIT_SPIRE_CREEP_MAGIC;
     private int goldReward { get; set; }

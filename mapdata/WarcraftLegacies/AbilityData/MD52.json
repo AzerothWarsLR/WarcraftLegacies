@@ -1,0 +1,40 @@
+{
+  "OldId": "Ahri",
+  "NewId": "MD52",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "This unit spawns 2 Scoutsupon dying"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spawn Scouts"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spawn Scouts"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNVorpalBlades.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ]
+}
