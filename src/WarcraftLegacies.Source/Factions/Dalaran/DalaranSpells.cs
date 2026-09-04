@@ -66,7 +66,7 @@ public static class DalaranSpells
     {
       Center = Regions.Dalaran.Center,
       MaxRadius = 1640,
-      MaxEffectScale = 2.496f,
+      MaxEffectScale = 2.3f,
       GrowthDuration = 4,
       TotalDuration = 90,
       TickInterval = 2,
