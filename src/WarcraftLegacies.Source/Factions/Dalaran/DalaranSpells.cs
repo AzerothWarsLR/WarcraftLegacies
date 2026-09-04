@@ -76,7 +76,7 @@ public static class DalaranSpells
       GroundEffectPath = @"Doodads\Cinematic\EnergyField\EnergyField.mdl",
       GroundEffectScale = 1,
       GroundEffectSpacing = 400,
-      GroundEffectEdgeMargin = 400,
+      GroundEffectEdgeMargin = 514,
       RequiredHero = AllLegends.Dalaran.Antonidas,
       RequiredHeroRange = 200
     };
