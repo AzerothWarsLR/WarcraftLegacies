@@ -1,0 +1,50 @@
+{
+  "OldId": "DTrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": "decoration"
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "D,G,*"
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Round.tga"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "Rock Chunks (Underground)"
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "bvcb",
+      "Value": 100
+    },
+    {
+      "Id": "bvcg",
+      "Value": 150
+    }
+  ]
+}
