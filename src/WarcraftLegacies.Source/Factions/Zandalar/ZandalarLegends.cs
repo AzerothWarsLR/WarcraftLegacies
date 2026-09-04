@@ -15,8 +15,7 @@ public sealed class ZandalarLegends
   {
     Zul = new LegendaryHero("Zul")
     {
-      UnitType = UNIT_MD39_ZANDALARI_PROPHET_ZANDALAR,
-      StartingXp = 1000
+      UnitType = UNIT_MD39_ZANDALARI_PROPHET_ZANDALAR
     };
 
     Gahzrilla = new LegendaryHero("Gahzrilla")

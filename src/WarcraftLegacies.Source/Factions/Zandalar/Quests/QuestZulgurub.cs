@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using MacroTools.Researches;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -30,6 +31,7 @@ namespace WarcraftLegacies.Source.Factions.Zandalar.Quests;
         @"ReplaceableTextures\CommandButtons\BTNTrollRavager.blp")
       {
         AddObjective(new ObjectiveControlCapital(Zulgurub, false));
+        ResearchId = UPGRADE_MD36_QUEST_COMPLETED_HEART_OF_HAKKAR;
         goldReward = 250;
     }
 

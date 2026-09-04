@@ -13,21 +13,21 @@
     {
       "Id": "ua1t",
       "Type": 3,
-      "Value": "hero"
+      "Value": "siege"
     },
     {
       "Id": "ubld",
-      "Value": 10
+      "Value": 5
     },
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 16
+      "Value": 8
     },
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 1.8
+      "Value": 3.1
     },
     {
       "Id": "udea",
@@ -39,7 +39,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 62
+      "Value": 85
     },
     {
       "Id": "ufoo",
@@ -47,7 +47,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 45
+      "Value": 33
     },
     {
       "Id": "ugor",
@@ -55,7 +55,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1315
+      "Value": 1450
     },
     {
       "Id": "ulum",
@@ -85,11 +85,11 @@
     },
     {
       "Id": "ua1s",
-      "Value": 6
+      "Value": 8
     },
     {
       "Id": "umvs",
-      "Value": 280
+      "Value": 220
     },
     {
       "Id": "upgr",
@@ -104,6 +104,15 @@
     {
       "Id": "ua1r",
       "Value": 180
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ulev",
+      "Value": 7
     },
     {
       "Id": "uico",
@@ -157,7 +166,7 @@
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": "Akama"
+      "Value": "GiantSeaTurtle"
     },
     {
       "Id": "umsl",

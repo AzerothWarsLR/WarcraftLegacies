@@ -1,10 +1,10 @@
 {
   "Left": -6016,
-  "Bottom": 18176,
-  "Right": -4832,
-  "Top": 18848,
+  "Bottom": 17920,
+  "Right": -4704,
+  "Top": 18912,
   "Name": "EnKilahUnlock",
-  "CreationNumber": 191,
+  "CreationNumber": 113,
   "WeatherType": 0,
   "AmbientSound": "",
   "Color": {

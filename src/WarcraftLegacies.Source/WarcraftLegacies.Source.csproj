@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Factions\Warsong\Mechanics\" />
       <Folder Include="Factions\Zandalar\Buffs\" />
       <Folder Include="Factions\Zandalar\Spells\" />
     </ItemGroup>

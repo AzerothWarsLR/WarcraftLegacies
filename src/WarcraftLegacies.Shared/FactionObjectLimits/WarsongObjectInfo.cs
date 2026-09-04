@@ -51,8 +51,9 @@ public static class WarsongObjectInfo
     yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
 
     yield return new(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG, 1, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Support }); //Varok
-    yield return new(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, 1, UnitCategory.Fighter);
-    yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Summoner });
+    yield return new(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, 1, UnitCategory.Fighter); //garrosh?
+    yield return new(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1, UnitCategory.Fighter); //grom
+    yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Summoner }); //IDK?
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1, UnitCategory.Support); //Rokhan
     yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1, UnitCategory.Tank);
 

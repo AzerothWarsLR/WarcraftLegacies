@@ -10,7 +10,6 @@ using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
-using WarcraftLegacies.Source.Factions.Warsong.Mechanics;
 using WarcraftLegacies.Source.Factions.Warsong.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
@@ -66,12 +65,13 @@ public sealed class WarsongFaction : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestGrom(AllLegends.Warsong.GromHellscream, AllLegends.Warsong.Gargok));
+    StartingQuest = AddQuest(new QuestCrossroads(Regions.Crossroads));
     AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
-    AddQuest(new QuestCrossroads(Regions.Crossroads));
+    AddQuest(new QuestLumberCamp(Regions.LumberCamp));
     AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
+    AddQuest(new QuestBloodpact(AllLegends.Warsong.Mannoroth,AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestGarrosh());
-    AddQuest(new QuestKillOldGods());
+    AddQuest(new QuestCaptureNordrassil(AllLegends.Druids.Nordrassil,AllLegends.Warsong.GromHellscream));
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }

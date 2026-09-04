@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Absk,A0FJ,ACac,Aotr,Aihn"
+      "Value": "Absk,A0FJ,ACac,Aihn"
     },
     {
       "Id": "ubld",
@@ -29,7 +29,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 23
+      "Value": 20
     },
     {
       "Id": "ugor",
@@ -37,7 +37,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1135
+      "Value": 950
     },
     {
       "Id": "ulum",
@@ -58,16 +58,16 @@
     },
     {
       "Id": "umvs",
-      "Value": 270
+      "Value": 260
     },
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "MD53,Rhar,Rhme,Rguv"
+      "Value": "Rhar,Rhme,Rguv"
     },
     {
       "Id": "udef",
-      "Value": 7
+      "Value": 2
     },
     {
       "Id": "ua1s",
@@ -77,6 +77,16 @@
       "Id": "ureq",
       "Type": 3,
       "Value": "MD38"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
     },
     {
       "Id": "unsf",
@@ -126,7 +136,7 @@
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": "TrollBatrider"
+      "Value": "ForestTroll"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": "uagp",
       "Type": 2,
-      "Value": 1.7
+      "Value": 2.65
     },
     {
       "Id": "ubs1",
@@ -37,7 +37,7 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2
+      "Value": 1.8
     },
     {
       "Id": "udef",
@@ -45,7 +45,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 5
+      "Value": 30
     },
     {
       "Id": "udp1",
@@ -55,11 +55,11 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "Aamk"
+      "Value": "ANbf,A06U,A066,MD57,Aamk"
     },
     {
       "Id": "uhpm",
-      "Value": 200
+      "Value": 300
     },
     {
       "Id": "uinp",
@@ -82,7 +82,7 @@
     },
     {
       "Id": "umvs",
-      "Value": 220
+      "Value": 240
     },
     {
       "Id": "ustr",
@@ -91,7 +91,7 @@
     {
       "Id": "ustp",
       "Type": 2,
-      "Value": 3.8
+      "Value": 2.9
     },
     {
       "Id": "uwal",
@@ -114,6 +114,11 @@
       "Id": "ureq",
       "Type": 3,
       "Value": "MD34"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
     },
     {
       "Id": "uico",
@@ -178,7 +183,7 @@
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": "Shaman"
+      "Value": "ForestTroll"
     },
     {
       "Id": "utip",

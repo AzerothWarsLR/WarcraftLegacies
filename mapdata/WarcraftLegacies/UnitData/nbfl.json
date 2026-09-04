@@ -39,6 +39,11 @@
       "Value": 100
     },
     {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R09O"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Warsong)"

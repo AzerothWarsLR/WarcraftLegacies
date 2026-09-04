@@ -27,6 +27,7 @@ public sealed class QuestZandalar : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
     AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
+    AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
     AddObjective(new ObjectiveControlPoint(UNIT_N025_UN_GORO_CRATER));
     AddObjective(new ObjectiveUpgrade(UNIT_O03Z_FORTRESS_CREEP_T3, UNIT_O03Y_STRONGHOLD_CREEP_T2));
     AddObjective(new ObjectiveSelfExists());

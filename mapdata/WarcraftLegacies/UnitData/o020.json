@@ -35,7 +35,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "O005,O06L,Ogrh,MD25,VSWS"
+      "Value": "Ogrh,MD25,VSWS,O06L"
     },
     {
       "Id": "ulum",

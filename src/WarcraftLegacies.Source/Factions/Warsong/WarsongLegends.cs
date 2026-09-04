@@ -51,12 +51,6 @@ public sealed class WarsongLegends
       UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
       StartingXp = 8800
     };
-
-    Gargok = new LegendaryHero("Gargok")
-    {
-      UnitType = UNIT_O005_WARSONG_BATTLEMASTER_WARSONG
-    };
-
     Orgrimmar = new Capital
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
@@ -78,7 +72,6 @@ public sealed class WarsongLegends
     LegendaryHeroManager.Register(Saurfang);
     LegendaryHeroManager.Register(Garrosh);
     LegendaryHeroManager.Register(Mannoroth);
-    LegendaryHeroManager.Register(Gargok);
     CapitalManager.Register(Orgrimmar);
     CapitalManager.Register(LumberCamp);
   }

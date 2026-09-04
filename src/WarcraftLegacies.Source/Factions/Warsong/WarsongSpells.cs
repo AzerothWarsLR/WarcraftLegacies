@@ -38,7 +38,7 @@ public static class WarsongSpells
     };
     SpellRegistry.Register(stormEarthandFire);
 
-    var massAntiMagicShell = new MassAnySpell(ABILITY_A099_MASS_ANTI_MAGIC_SHIELD)
+    var massAntiMagicShell = new MassAnySpell(ABILITY_A099_MASS_ANTI_MAGIC_SHIELD_ZANDALAR)
     {
       DummyAbilityId = ABILITY_A0JN_ANTI_MAGIC_SHELL_WARSONG_DUMMY,
       DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,

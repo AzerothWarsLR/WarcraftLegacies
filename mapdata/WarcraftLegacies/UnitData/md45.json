@@ -8,11 +8,11 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "MD51,MD49,Aotr,Aihn"
+      "Value": "MD51,MD49,Aihn,A099"
     },
     {
       "Id": "ubld",
-      "Value": 2
+      "Value": 4
     },
     {
       "Id": "ucol",
@@ -21,7 +21,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 21
+      "Value": 28
     },
     {
       "Id": "ufoo",
@@ -37,7 +37,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 900
+      "Value": 985
     },
     {
       "Id": "urtm",
@@ -45,25 +45,34 @@
     },
     {
       "Id": "ua1s",
-      "Value": 3
-    },
-    {
-      "Id": "umvs",
-      "Value": 220
+      "Value": 5
     },
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "MD53,Rhme,Rhar"
+      "Value": "Rhme,Rhar"
     },
     {
       "Id": "udef",
-      "Value": 1
+      "Value": 6
     },
     {
       "Id": "ureq",
       "Type": 3,
       "Value": "MD37"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "ulev",
+      "Value": 4
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
     },
     {
       "Id": "unsf",
@@ -103,6 +112,11 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ForestTroll"
     }
   ]
 }

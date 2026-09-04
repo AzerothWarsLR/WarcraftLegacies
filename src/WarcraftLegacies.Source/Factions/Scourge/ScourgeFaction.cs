@@ -411,6 +411,6 @@ public sealed class ScourgeFaction : Faction
     };
 
     AddQuest(new QuestPlague(plagueParameters, lordaeron, legion, Regions.DeathknellUnlock,
-      Regions.StratholmeScourgeBase, Regions.CaerDarrow));
+      Regions.CaerDarrow));
   }
 }

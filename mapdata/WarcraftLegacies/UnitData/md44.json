@@ -12,7 +12,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 2
+      "Value": 10
     },
     {
       "Id": "ucam",
@@ -26,15 +26,15 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 1.35
+      "Value": 1.5
     },
     {
       "Id": "udef",
-      "Value": 2
+      "Value": 8
     },
     {
       "Id": "ua1b",
-      "Value": 22
+      "Value": 50
     },
     {
       "Id": "ufoo",
@@ -42,7 +42,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 14
+      "Value": 30
     },
     {
       "Id": "ugor",
@@ -50,11 +50,11 @@
     },
     {
       "Id": "uhpm",
-      "Value": 825
+      "Value": 1010
     },
     {
       "Id": "upri",
-      "Value": 7
+      "Value": 12
     },
     {
       "Id": "urtm",
@@ -62,12 +62,35 @@
     },
     {
       "Id": "umvs",
-      "Value": 220
+      "Value": 265
     },
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "MD53,Rhme,Rhar"
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
     },
     {
       "Id": "ureq",
@@ -107,12 +130,12 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "xxx"
+      "Value": "Executioners of the Zandalari."
     },
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": "Footman"
+      "Value": "ForestTroll"
     },
     {
       "Id": "umdl",

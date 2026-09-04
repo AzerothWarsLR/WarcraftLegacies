@@ -1,0 +1,16 @@
+{
+  "Left": 10464,
+  "Bottom": 11936,
+  "Right": 12768,
+  "Top": 15072,
+  "Name": "Stratholmeunlock2",
+  "CreationNumber": 110,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -3,7 +3,7 @@
 //  2   Quelthalas 
 //  3	Scourge
 //  4	Ironforge
-//  5	Empty
+//  5	Warsong
 //  6	Fel Horde
 //  7	Dalaran/Gilneas
 //  8	Skywall

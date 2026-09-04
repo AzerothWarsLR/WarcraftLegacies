@@ -21,7 +21,7 @@ public sealed class QuestThunderBluff : QuestData
     "The Tauren have been wandering for too long. The fertile plains of Mulgore would offer respite from this endless journey.",
     @"ReplaceableTextures\CommandButtons\BTNCentaurKhan.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N02A_SOUTHERN_BARRENS));
+    AddObjective(new ObjectiveControlPoint(UNIT_N026_THOUSAND_NEEDLES));
     AddObjective(new ObjectiveControlPoint(UNIT_N09G_MULGORE));
     AddObjective(new ObjectiveExpire(12, Title));
     AddObjective(new ObjectiveSelfExists());

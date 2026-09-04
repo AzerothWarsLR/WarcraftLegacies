@@ -15,7 +15,6 @@ namespace WarcraftLegacies.Source.Factions.Sentinels.Quests;
 public sealed class QuestFeathermoon : QuestData
 {
   private List<unit> _rescueUnits;
-  private readonly Capital _feathermoon;
 
   public QuestFeathermoon(Rectangle rescueRect, LegendaryHero Shandris)
     : base(
@@ -50,12 +49,6 @@ public sealed class QuestFeathermoon : QuestData
     {
       unit.SetPausedEx(false);
     }
-
-    if (_feathermoon.Unit != null && _feathermoon.Unit.Alive)
-    {
-      _feathermoon.Unit.SetLifePercent(100);
-      _feathermoon.Unit.Rescue(completingFaction.Player ?? player.NeutralAggressive);
-    }
   }
 
   protected override void OnFail(Faction failingFaction)
@@ -69,12 +62,6 @@ public sealed class QuestFeathermoon : QuestData
     foreach (var unit in _rescueUnits)
     {
       unit.SetPausedEx(false);
-    }
-
-    if (_feathermoon.Unit != null && _feathermoon.Unit.Alive)
-    {
-      _feathermoon.Unit.SetLifePercent(100);
-      _feathermoon.Unit.Rescue(player.NeutralAggressive);
     }
   }
 }

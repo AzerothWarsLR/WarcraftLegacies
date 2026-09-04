@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using MacroTools.Researches;
 using WarcraftLegacies.Source.GameLogic.Rocks;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -31,6 +32,7 @@ public sealed class QuestGundrak : QuestData
     @"ReplaceableTextures\CommandButtons\BTNTerrorTroll.blp")
   {
     AddObjective(new ObjectiveControlCapital(Gundrak, false));
+    ResearchId = UPGRADE_MD38_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS;
     goldReward = 250;
   }
 

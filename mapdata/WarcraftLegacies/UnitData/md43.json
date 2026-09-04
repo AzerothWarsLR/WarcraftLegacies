@@ -12,7 +12,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 4
+      "Value": 20
     },
     {
       "Id": "ucol",
@@ -21,7 +21,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 27
+      "Value": 250
     },
     {
       "Id": "ufoo",
@@ -29,7 +29,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 23
+      "Value": 120
     },
     {
       "Id": "ugor",
@@ -37,7 +37,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 985
+      "Value": 3100
     },
     {
       "Id": "ulum",
@@ -67,7 +67,7 @@
     },
     {
       "Id": "udef",
-      "Value": 6
+      "Value": 4
     },
     {
       "Id": "ureq",
@@ -114,6 +114,79 @@
       "Value": 0.6
     },
     {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ulev",
+      "Value": 10
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua2r",
+      "Value": 900
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "ua2b",
+      "Value": 48
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ua2d",
+      "Value": 2
+    },
+    {
+      "Id": "ua2s",
+      "Value": 8
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Zandalar)"
@@ -122,11 +195,6 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "E"
-    },
-    {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 0.85
     },
     {
       "Id": "utub",
@@ -192,6 +260,26 @@
       "Id": "ushw",
       "Type": 1,
       "Value": 390
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "KotoBeastNoRider"
+    },
+    {
+      "Id": "umsl",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "war3mapImported\\ThroneOfWar_Missile.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNZandalari Throne of War.blp"
     }
   ]
 }

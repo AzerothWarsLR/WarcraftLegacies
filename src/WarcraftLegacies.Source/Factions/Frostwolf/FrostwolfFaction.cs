@@ -7,6 +7,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
+using WarcraftLegacies.Source.Factions.Warsong.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -61,10 +62,12 @@ public sealed class FrostwolfFaction : Faction
   private void RegisterQuests()
   {
     StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
+    AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
     AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
     AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
+    AddQuest(new QuestDrektharsSpellbook(AllLegends.Druids.Nordrassil, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));

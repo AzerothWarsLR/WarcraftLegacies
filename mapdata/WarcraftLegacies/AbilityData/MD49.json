@@ -31,6 +31,10 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
     }
   ]
 }

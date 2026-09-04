@@ -22,7 +22,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "Aamk"
+      "Value": "AOcl,YBFS,AUls,A033,Aamk"
     },
     {
       "Id": "uint",
@@ -65,6 +65,30 @@
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 4
+    },
+    {
+      "Id": "ubdi",
+      "Value": 3
+    },
+    {
+      "Id": "ubsi",
+      "Value": 2
+    },
+    {
+      "Id": "ulev",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 28
+    },
+    {
+      "Id": "ua2b",
+      "Value": 28
     },
     {
       "Id": "unsf",

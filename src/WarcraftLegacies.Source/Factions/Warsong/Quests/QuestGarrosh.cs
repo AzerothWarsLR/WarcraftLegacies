@@ -10,7 +10,7 @@ public sealed class QuestGarrosh : QuestData
 {
   /// <inheritdoc/>
   public override string RewardFlavour =>
-    "The nightmarish grasp of N'Zoth and the Black Empire has been shattered, allowing Garrosh and the Warsong clan to rally and press forward towards new territories.";
+    "The Elven resistance has been shattered, allowing Garrosh and the Warsong clan to rally and press forward towards new territories.";
 
   /// <inheritdoc/>
   protected override string RewardDescription => Loc.Format(
@@ -19,11 +19,10 @@ public sealed class QuestGarrosh : QuestData
     ("{shipyard}", GetObjectName(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD)));
 
   public QuestGarrosh() : base("Twilight's Reckoning",
-    "The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions.",
+    "The elfs has controlled kalimdor for long enough. Destroy their last holdout and claim the continent for the Horde.",
     @"ReplaceableTextures\CommandButtons\BTNFacelessMadness.blp")
   {
-    //AddObjective(new ObjectiveLegendDead(AllLegends.BlackE.Nzoth));
-    //AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
+    AddObjective(new ObjectiveCapitalDead(AllLegends.Druids.TempleOfTheMoon));
     ResearchId = UPGRADE_R062_QUEST_COMPLETED_TWILIGHT_S_RECKONING;
   }
 
