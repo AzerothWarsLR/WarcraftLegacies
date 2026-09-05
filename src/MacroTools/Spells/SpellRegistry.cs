@@ -34,6 +34,11 @@ public static class SpellRegistry
   }
 
   /// <summary>
+  /// Returns all spells currently registered in this match.
+  /// </summary>
+  public static IEnumerable<Spell> GetAllSpells() => _spellsByAbilityId.Values;
+
+  /// <summary>
   ///   Registers the provided <see cref="Spell"/> to the <see cref="SpellRegistry"/>, causing its functionality
   /// to be invoked when a Warcraft 3 spell matching its IDs is used.
   /// </summary>
