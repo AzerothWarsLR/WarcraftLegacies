@@ -101,7 +101,7 @@ public sealed class Apocalypse : Spell
         CasterLaunchZ = 50f,
         TargetImpactZ = 50f,
         Speed = ProjectileVelocity,
-        Damage = Damage.Base + Damage.PerLevel * level,
+        Damage = Damage.GetValue(level),
         EffectOnHitModel = EffectOnHitModel,
         EffectOnHitScale = EffectOnHitScale,
         EffectOnProjectileDespawnModel = EffectOnProjectileSpawn,

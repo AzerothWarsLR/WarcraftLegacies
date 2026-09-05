@@ -77,7 +77,7 @@ public sealed class MassAnySpell : Spell
     var damage = 0f;
     if (Damage != null)
     {
-      damage = Damage.Base + Damage.PerLevel * casterAbilityLevel;
+      damage = Damage.GetValue(casterAbilityLevel);
     }
 
     var dummyCaster = DummyCasterManager.GetGlobalDummyCaster();

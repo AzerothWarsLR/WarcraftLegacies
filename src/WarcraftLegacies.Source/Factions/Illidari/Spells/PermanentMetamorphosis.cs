@@ -32,7 +32,7 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
 
     if (level == 1)
     {
-      learner.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
+      learner.MaxLife += HitPointBonus.GetValue(level);
     }
     else
     {
