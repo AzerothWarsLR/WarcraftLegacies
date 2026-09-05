@@ -31,7 +31,7 @@ public sealed class RestoreManaFromDamage : UnitTrait, IAppliesEffectOnDamage
   public void OnDealsDamage()
   {
     var damager = @event.DamageSource;
-    var manaPerDamage = @event.Damage * (ManaPerDamage.Base + ManaPerDamage.PerLevel * damager.GetAbilityLevel(_abilityTypeId));
+    var manaPerDamage = @event.Damage * ManaPerDamage.GetValue(damager.GetAbilityLevel(_abilityTypeId));
     damager.Mana += manaPerDamage;
     if (Effect != null)
     {

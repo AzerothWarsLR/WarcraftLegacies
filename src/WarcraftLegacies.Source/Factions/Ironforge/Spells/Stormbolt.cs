@@ -40,7 +40,7 @@ internal sealed class Stormbolt : Spell
 
     MissileSystem.Add(new Projectile(caster, targetX, targetY)
     {
-      Damage = Damage.Base + Damage.PerLevel * level,
+      Damage = Damage.GetValue(level),
       StunAbilityId = StunAbilityId,
       Speed = speed,
       Level = level
