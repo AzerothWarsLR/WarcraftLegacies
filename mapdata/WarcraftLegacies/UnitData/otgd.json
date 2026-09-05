@@ -1,0 +1,24 @@
+{
+  "OldId": "otau",
+  "NewId": "otgd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tauren Guard"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    }
+  ]
+}

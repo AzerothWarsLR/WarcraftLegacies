@@ -1,0 +1,113 @@
+{
+  "OldId": "Rhpt",
+  "NewId": "RTLM",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "gcls",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "glvl",
+      "Value": 1
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "gtib",
+      "Value": 1
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "glmm",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRiderlessKodo.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Start the Long March"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Start the Long March"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Pack up the camp and begin the march to Thunder Bluff."
+    }
+  ]
+}

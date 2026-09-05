@@ -65,7 +65,7 @@ public sealed class FrostwolfFaction : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
+    // StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff)); // Disabled: overlaps Tauren Tribes' Long March rescue at Thunder Bluff, Frostwolf is being removed
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
