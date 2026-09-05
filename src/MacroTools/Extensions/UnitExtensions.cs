@@ -367,9 +367,9 @@ public static class UnitExtensions
   /// <summary>
   /// Turns the unit to face a particular position.
   /// </summary>
-  public static void FacePosition(this unit whichUnit, Point targetPoint)
+  public static void FacePosition(this unit whichUnit, float targetX, float targetY)
   {
-    var facing = WCSharp.Shared.Util.AngleBetweenPoints(whichUnit.X, whichUnit.Y, targetPoint.X, targetPoint.Y);
+    var facing = WCSharp.Shared.Util.AngleBetweenPoints(whichUnit.X, whichUnit.Y, targetX, targetY);
     whichUnit.Facing = facing;
   }
 
