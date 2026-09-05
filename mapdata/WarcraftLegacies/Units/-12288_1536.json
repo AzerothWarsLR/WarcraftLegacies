@@ -144,12 +144,12 @@
     "CreationNumber": 3254
   },
   {
-    "TypeId": 825648237,
+    "TypeId": 892888173,
     "Variation": 0,
     "Position": {
       "X": -12544,
-      "Y": 1408,
-      "Z": 55.125
+      "Y": 1344,
+      "Z": 50.4375
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -157,7 +157,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 825648237,
+    "SkinId": 892888173,
     "Flags": 2,
     "OwnerId": 24,
     "Unk1": 0,
@@ -181,6 +181,6 @@
     },
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 2089
+    "CreationNumber": 1197
   }
 ]

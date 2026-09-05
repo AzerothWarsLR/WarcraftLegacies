@@ -60,6 +60,7 @@ public sealed class ZandalarFaction : Faction
       AddQuest(new QuestGundrak(AllLegends.Neutral.Gundrak));
       AddQuest(new QuestJinthaAlor(AllLegends.Neutral.Jinthaalor));
       AddQuest(new QuestZulgurub(AllLegends.Neutral.Zulgurub));
+      AddQuest(new QuestHakkar(AllLegends.Neutral.Zulgurub,AllLegends.Druids.Nordrassil));
 
     //add the quests here
   }

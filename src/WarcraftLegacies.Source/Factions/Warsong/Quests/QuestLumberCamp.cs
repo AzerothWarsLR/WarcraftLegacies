@@ -17,7 +17,7 @@ public sealed class QuestLumberCamp : QuestData
     "The Horde still needs to establish a strong strategic foothold into Kalimdor. Expand into Ashenvale and establish the Warsong Lumber Camp.",
     @"ReplaceableTextures\CommandButtons\BTNBarracks.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_MD61_CENTRAL_ASHENVALE));
+    AddObjective(new ObjectiveControlPoint(UNIT_MD85_CENTRAL_ASHENVALE));
     AddObjective(new ObjectiveExpire(8, Title));
     AddObjective(new ObjectiveSelfExists());
 

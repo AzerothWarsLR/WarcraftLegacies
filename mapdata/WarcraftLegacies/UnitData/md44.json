@@ -95,7 +95,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "MD36"
+      "Value": "MD99"
     },
     {
       "Id": "uico",
@@ -141,6 +141,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\TrollRavager.mdl"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Aiun,Adef"
     }
   ]
 }

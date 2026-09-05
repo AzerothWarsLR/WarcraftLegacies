@@ -45,7 +45,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 30
+      "Value": 10
     },
     {
       "Id": "udp1",
@@ -82,7 +82,7 @@
     },
     {
       "Id": "umvs",
-      "Value": 240
+      "Value": 220
     },
     {
       "Id": "ustr",
@@ -123,7 +123,7 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTroll.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrollConjurer.blp"
     },
     {
       "Id": "uawt",

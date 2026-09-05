@@ -47,10 +47,12 @@ public static class ZandalarObjectInfo
       yield return new(UNIT_MD39_ZANDALARI_PROPHET_ZANDALAR, 1);
       yield return new(UNIT_MD41_KING_OF_THE_ZANDALARI_ZANDALAR, 1);
       yield return new(UNIT_MD40_DEMIGOD_ZANDALAR, 1);
+      yield return new(UNIT_MD61_DEMIGOD_OF_THE_TROLLS_ZANDALAR, 1);
       //Upgrades
       yield return new(UPGRADE_R070_HARUSPEX_ADEPT_TRAINING_TROLL, Unlimited);
       yield return new(UPGRADE_R071_HEX_DOCTOR_ADEPT_TRAINING_TROLL, Unlimited);
       yield return new(UPGRADE_MD50_LOA_MEDIUM_ADEPT_TRAINING_TROLL, Unlimited);
       yield return new(UPGRADE_MD53_TROLL_REGENERATION_ZANDALAR, Unlimited);
+      yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
   }
 }

@@ -1,87 +1,240 @@
 {
-  "OldId": "ncop",
-  "NewId": "md61",
+  "OldId": "Obla",
+  "NewId": "MD61",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": "uabi",
-      "Type": 3,
-      "Value": "A0NR"
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.64
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
     },
     {
       "Id": "ucol",
       "Type": 2,
-      "Value": 0
+      "Value": 16
     },
     {
-      "Id": "uhos",
-      "Value": 1
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 3.333
     },
     {
-      "Id": "uhpm",
-      "Value": 5000
-    },
-    {
-      "Id": "uhrt",
-      "Type": 3,
-      "Value": "always"
-    },
-    {
-      "Id": "utyp",
-      "Type": 3,
-      "Value": "ancient,sapper"
+      "Id": "udef",
+      "Value": 2
     },
     {
       "Id": "ua1b",
-      "Value": -1
+      "Value": 90
     },
     {
-      "Id": "ua1d",
-      "Value": 1
+      "Id": "ufoo",
+      "Value": 0
     },
     {
-      "Id": "ua1s",
-      "Value": 1
+      "Id": "ugol",
+      "Value": 100
     },
     {
-      "Id": "uaen",
-      "Value": 1
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AUim,MD62,AUav,MD63,Aamk"
     },
     {
-      "Id": "ua1r",
-      "Value": 900
+      "Id": "uhpm",
+      "Value": 270
     },
     {
-      "Id": "uacq",
+      "Id": "uinp",
       "Type": 2,
-      "Value": 900
+      "Value": 1.2
     },
     {
-      "Id": "ua1g",
+      "Id": "upra",
       "Type": 3,
-      "Value": "bridge"
+      "Value": "STR"
     },
     {
-      "Id": "urac",
-      "Type": 3,
-      "Value": "creeps"
+      "Id": "upri",
+      "Value": 19
     },
     {
-      "Id": "upat",
+      "Id": "urq1",
       "Type": 3,
-      "Value": "PathTextures\\4x4SimpleSolid.tga"
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 5
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0UZ,AInv"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "MD60"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNWindSerpent2.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Hakkar"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Zandalar)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HakkarHero.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 60
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Central Ashenvale"
+      "Value": "Demigod of the Trolls"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Hakkar"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Hakkar"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNWindSerpent2.blp"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Hakkar"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Demigod, Specialised in frontline tanking"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Grom"
     },
     {
       "Id": "ussc",
       "Type": 1,
-      "Value": 1.5
+      "Value": 1.2
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.7
     }
   ]
 }
