@@ -32,7 +32,7 @@ public sealed class AbilitySpecificDummyCaster
 
     if (originType == DummyCastOriginType.Caster)
     {
-      _unit.FacePosition(target.GetPosition());
+      _unit.FacePosition(target.X, target.Y);
     }
 
     _unit.IssueOrder(_abilityOrderId, target);
@@ -56,7 +56,8 @@ public sealed class AbilitySpecificDummyCaster
   {
     var whichPlayer = caster.Owner;
     _unit.SetOwner(whichPlayer);
-    _unit.SetPosition(target.X, target.Y);
+    _unit.X = target.X;
+    _unit.Y = target.Y;
     _unit.AddAbility(_abilityTypeId);
     _unit.SetAbilityLevel(_abilityTypeId, level);
 
