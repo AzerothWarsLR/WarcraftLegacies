@@ -1,0 +1,69 @@
+{
+  "OldId": "opeo",
+  "NewId": "o07A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A041,Arep"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "o078,o075,o076,o07E,o07F"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Basic worker unit."
+    }
+  ]
+}

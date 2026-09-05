@@ -1,0 +1,27 @@
+{
+  "OldId": "tgrh",
+  "NewId": "I01Z",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A145"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    }
+  ]
+}

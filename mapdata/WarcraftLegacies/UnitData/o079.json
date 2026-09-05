@@ -1,6 +1,6 @@
 {
   "OldId": "nfsp",
-  "NewId": "n00Q",
+  "NewId": "o079",
   "Unk": [
     0
   ],
@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "ACba,AELE"
+      "Value": "AHab,AELE,A00Y"
     },
     {
       "Id": "ua1t",
@@ -107,7 +107,7 @@
     },
     {
       "Id": "ulev",
-      "Value": 6
+      "Value": 4
     },
     {
       "Id": "umvf",
@@ -122,17 +122,17 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.15
+      "Value": 1.4
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Flying Sea Witch"
+      "Value": "Sea Witch"
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Neutral Hostile, Boss)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "umdl",

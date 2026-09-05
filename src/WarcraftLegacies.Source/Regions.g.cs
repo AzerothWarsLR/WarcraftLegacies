@@ -255,7 +255,7 @@ public static class Regions
   public static Rectangle ScholomanceAmbient2 { get; set; } = new Rectangle(12128f, 5440f, 16224f, 7072f);
   public static Rectangle ScholomanceAmbient3 { get; set; } = new Rectangle(11200f, 7072f, 13728f, 7840f);
   public static Rectangle Sea_Witch_Spawn_1 { get; set; } = new Rectangle(-4192f, -8224f, -3744f, -7808f);
-  public static Rectangle Sea_Witch_Spawn_2 { get; set; } = new Rectangle(-1984f, -7648f, -1536f, -7232f);
+  public static Rectangle Sea_Witch_Spawn_2 { get; set; } = new Rectangle(-2016f, -8288f, -1504f, -7808f);
   public static Rectangle Sea_Witch_Spawn_3 { get; set; } = new Rectangle(-1280f, -8416f, -832f, -8000f);
   public static Rectangle Sea_Witch_Target { get; set; } = new Rectangle(-2944f, -8800f, -2496f, -8384f);
   public static Rectangle SentDraeSharedStartPos { get; set; } = new Rectangle(-21216f, 7808f, -20192f, 8416f);
