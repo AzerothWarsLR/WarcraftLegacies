@@ -19,7 +19,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
-    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_FROSTWOLF_T3));
+    //AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_FROSTWOLF_T3));
     AddObjective(new ObjectiveExpire(13, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;

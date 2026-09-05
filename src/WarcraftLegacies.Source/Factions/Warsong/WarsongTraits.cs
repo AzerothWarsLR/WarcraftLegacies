@@ -12,13 +12,13 @@ public static class WarsongTraits
     {
       DamageMultNonResistant = 4,
       DamageMultResistant = 1.5f
-    }, UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG);
+    }, UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_ORCISH_HORDE);
 
     UnitTypeTraitRegistry.Register(new ResoluteHeart(ABILITY_A0TY_RESOLUTE_HEART_ICON)
     {
       Radius = 300f,
       BaseProcChance = 0.1f,
       EffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
-    }, UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG);
+    }, UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE);
   }
 }

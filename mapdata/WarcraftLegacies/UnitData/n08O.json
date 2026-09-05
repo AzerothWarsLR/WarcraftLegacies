@@ -129,11 +129,6 @@
       "Value": 3
     },
     {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "R012"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.1
@@ -141,7 +136,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "utip",
@@ -175,7 +170,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Strong support spellcaster of the Horde."
+      "Value": "Strong support spellcaster of the Ogres."
     },
     {
       "Id": "ua1m",

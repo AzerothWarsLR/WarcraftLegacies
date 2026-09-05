@@ -205,7 +205,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R0A9,ofor,ofrt"
+      "Value": "ofor"
     },
     {
       "Id": "uico",
@@ -219,7 +219,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "umdl",
@@ -254,7 +254,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Wanderer"
+      "Value": "Tauren Hunter"
     },
     {
       "Id": "ussc",
@@ -284,7 +284,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Wanderer"
+      "Value": "Train Tauren Hunter"
     }
   ]
 }

@@ -81,7 +81,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": "umdl",
@@ -97,6 +97,11 @@
       "Id": "utip",
       "Type": 3,
       "Value": "Tauren Camp"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
     }
   ]
 }

@@ -118,7 +118,6 @@ public static class Buffs
   public const int BUFF_B078_JUST_GROW_A_TREE_BROWN_MALFURION_JUST_GROW_A_TREE = 1110456120;
   public const int BUFF_B079_JUST_GROW_A_TREE = 1110456121;
   public const int BUFF_B07G_CRUSADE_AURA_ALEXANDROS = 1110456135;
-  public const int BUFF_B07L_DESERT_STORM = 1110456140;
   public const int BUFF_B07R_CHILLING_AURA = 1110456146;
   public const int BUFF_B080_ARCANE_STRIKE = 1110456368;
   public const int BUFF_B083_PRIMAL_AURA = 1110456371;
@@ -204,7 +203,6 @@ public static class Buffs
   public const int BUFF_BHFS_FLAME_STRIKE = 1112041075;
   public const int BUFF_BHWE_SUMMON_WATER_ELEMENTAL = 1112045413;
   public const int BUFF_BIRG_REJUVENATION_ITEM = 1112109671;
-  public const int BUFF_BLSN_ICE_TRAP = 1112298318;
   public const int BUFF_BNAB_SHADOW_STRIKE = 1112432994;
   public const int BUFF_BNBF_BREATH_OF_FIRE = 1112433254;
   public const int BUFF_BNDH_DRUNKEN_HAZE = 1112433768;
@@ -213,8 +211,6 @@ public static class Buffs
   public const int BUFF_BNSO_SOUL_BURN = 1112437615;
   public const int BUFF_BOAC = 1112498531;
   public const int BUFF_BOAE_ENDURANCE_AURA = 1112498533;
-  public const int BUFF_BSLY_PLAGUE_STRIKE_NON_STACKING = 1112755289;
-  public const int BUFF_BSYL_PLAGUE_STRIKE_STACKING = 1112758604;
   public const int BUFF_BUAU_UNHOLY_AURA = 1112891765;
   public const int BUFF_BUAV_VAMPIRIC_AURA = 1112891766;
   public const int BUFF_BUDD_DEATH_AND_DECAY = 1112892516;
@@ -255,7 +251,6 @@ public static class Buffs
   public const int BUFF_X007_ARCANE_BURST_EFFECT = 1479553079;
   public const int BUFF_X00E_REVEAL_FARSEER = 1479553093;
   public const int BUFF_X00F_FIELD_OF_BLOOD_EFFECT = 1479553094;
-  public const int BUFF_X00I_DESERT_STORM_EFFECT = 1479553097;
   public const int BUFF_X00K_DARK_ENERGY_EFFECT = 1479553099;
   public const int BUFF_X00L_VOID_HAIL_EFFECT = 1479553100;
   public const int BUFF_X00M_ARCANE_ARTILLERY_EFFECT = 1479553101;
@@ -265,8 +260,6 @@ public static class Buffs
   public const int BUFF_ZB04_REAP = 1514287156;
   public const int BUFF_ZB08_APOCALYPSE = 1514287160;
   public const int BUFF_ZB09_APOCALYPSE_MINION = 1514287161;
-  public const int BUFF_ZB11_GROUND_SHACKLES = 1514287409;
   public const int BUFF_ZB3F_ICE_BLOCK = 1514287942;
   public const int BUFF_ZB45_INNERVATE = 1514288181;
-  public const int BUFF_ZBMA_MATURING_INCUBATION = 1514294593;
 }

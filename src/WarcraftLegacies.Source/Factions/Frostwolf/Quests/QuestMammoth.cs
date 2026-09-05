@@ -24,8 +24,5 @@ public sealed class QuestMammoth : QuestData
     "Rexxar ventures north into lands once thought incompatible with life, and discovers the paradise of furred megafauna that is the Borean Tundra. He tames the woolly mammoths there, and teaches the Frostwolf to ride them into battle.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    Loc.Format("Learn to train {unit}s from the {building}",
-      ("{unit}", GetObjectName(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF)), ("{building}", GetObjectName(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST)));
 
 }

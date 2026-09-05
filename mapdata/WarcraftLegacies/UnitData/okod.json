@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0DX,S00M,AInv,ACrk,A0VZ,Aakb,Advc,Adev,Apak"
+      "Value": "AInv,ACrk,A0VZ,Aakb,Advc,Adev,Apak"
     },
     {
       "Id": "uacq",
@@ -85,7 +85,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R00O,o02S"
+      "Value": "o02S"
     },
     {
       "Id": "uhpm",
@@ -99,7 +99,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "uhot",

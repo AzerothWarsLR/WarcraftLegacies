@@ -44,12 +44,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "TP17,Robs"
+      "Value": ""
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o071,o073,o02M,otbk,o00G"
+      "Value": "otau,n049"
     },
     {
       "Id": "ulum",
@@ -70,7 +70,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Warsong Barracks)"
+      "Value": "(OLD WARSONG)"
     },
     {
       "Id": "umdl",

@@ -18,7 +18,7 @@ public sealed class WarsongLegends
   {
     GromHellscream = new LegendaryHero("Grom Hellscream")
     {
-      UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
+      UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
       StartingArtifacts = new()
       {
         new(item.Create(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
@@ -48,7 +48,7 @@ public sealed class WarsongLegends
 
     Garrosh = new LegendaryHero("Garrosh Hellscream")
     {
-      UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+      UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
       StartingXp = 8800
     };
 
