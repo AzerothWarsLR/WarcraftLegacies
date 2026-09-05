@@ -1,0 +1,45 @@
+{
+  "OldId": "nmrl",
+  "NewId": "o07B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 435
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "uver",
+      "Value": 1
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\Murloc\\Murloc.mdl"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Light melee unit. "
+    }
+  ]
+}
