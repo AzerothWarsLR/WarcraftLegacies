@@ -79,13 +79,11 @@ public sealed class ElementalConvergenceChannel : Channel
       return;
     }
 
-    var casterX = Caster.X;
-    var casterY = Caster.Y;
     var impactState = new ElementalConvergenceImpactState();
 
-    LaunchMissile(EarthModel, casterX, casterY, -70f, 255, 210, 40, impactState);
-    LaunchMissile(WindModel, casterX, casterY, 70f, 60, 140, 255, impactState);
-    LaunchMissile(FireModel, casterX, casterY, 0f, 255, 50, 50, impactState);
+    LaunchMissile(EarthModel, -70f, 255, 210, 40, impactState);
+    LaunchMissile(WindModel, 70f, 60, 140, 255, impactState);
+    LaunchMissile(FireModel, 0f, 255, 50, 50, impactState);
   }
 
   private ElementalConvergenceOrb CreateOrb(string model, float startingAngle, int red, int green, int blue)
@@ -125,8 +123,8 @@ public sealed class ElementalConvergenceChannel : Channel
     orb = null;
   }
 
-  private void LaunchMissile(string model, float casterX, float casterY, float lateralOffset, int red, int green,
-    int blue, ElementalConvergenceImpactState impactState)
+  private void LaunchMissile(string model, float lateralOffset, int red, int green, int blue,
+    ElementalConvergenceImpactState impactState)
   {
     var missile = new ElementalConvergenceMissile(Caster, TargetX, TargetY, lateralOffset, impactState)
     {

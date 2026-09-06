@@ -1,12 +1,9 @@
 ﻿using System.Linq;
 using MacroTools.DummyCasters;
-using MacroTools.Extensions;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Effects;
-using WCSharp.Events;
 using WCSharp.Missiles;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Spells.ElementalConvergence;
 
