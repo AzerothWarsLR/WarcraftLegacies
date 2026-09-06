@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.Source.Factions.OrcishHorde.Spells.ElementalConvergence;
+﻿namespace WarcraftLegacies.Source.Factions.OrcishHorde.Spells.ElementalConvergence;
 
 /// <summary>
 /// Shared between the three <see cref="ElementalConvergenceMissile"/>s launched by a single cast, so that only

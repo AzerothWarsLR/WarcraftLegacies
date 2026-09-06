@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.Spells;

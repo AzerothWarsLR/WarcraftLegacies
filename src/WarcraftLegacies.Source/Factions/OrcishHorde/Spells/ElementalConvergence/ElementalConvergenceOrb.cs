@@ -1,4 +1,4 @@
-using WCSharp.Missiles;
+﻿using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Spells.ElementalConvergence;
 

@@ -1,4 +1,4 @@
-using MacroTools.Channels;
+﻿using MacroTools.Channels;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Spells.ElementalConvergence;

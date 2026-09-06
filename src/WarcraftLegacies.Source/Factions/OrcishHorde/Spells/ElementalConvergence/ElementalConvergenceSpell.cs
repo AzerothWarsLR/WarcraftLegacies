@@ -1,4 +1,4 @@
-using MacroTools.Channels;
+﻿using MacroTools.Channels;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
