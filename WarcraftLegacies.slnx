@@ -8,7 +8,7 @@
     <Project Path="src/WarcraftLegacies.CLI/WarcraftLegacies.CLI.csproj" />
     <Project Path="src/WarcraftLegacies.Shared/WarcraftLegacies.Shared.csproj" />
     <Project Path="src/WarcraftLegacies.Source/WarcraftLegacies.Source.csproj" />
-    <Project Path="WarcraftLegacies24p\WarcraftLegacies24p.csproj" Type="Classic C#" />
+    <Project Path="src/WarcraftLegacies24p.Source/WarcraftLegacies24p.Source.csproj" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="test/MacroTools.Tests/MacroTools.Tests.csproj" />
