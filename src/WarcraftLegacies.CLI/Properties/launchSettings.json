@@ -1,41 +1,61 @@
 {
   "profiles": {
-    "Test": {
+    "16p: Test": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x test WarcraftLegacies"
     },
-    "Publish": {
+    "16p: Publish": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x publish WarcraftLegacies"
     },
-    "Convert W3X to MapData": {
+    "16p: Convert W3X to MapData": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies"
     },
-    "Convert W3X to MapData (Object Data)": {
+    "16p: Convert W3X to MapData (Object Data)": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies --include ObjectData"
     },
-    "Convert MapData to W3X": {
+    "16p: Convert MapData to W3X": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies"
     },
-    "Generate Constants": {
+    "16p: Generate Constants": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI generate constants WarcraftLegacies"
     },
-    "Convert C# to Lua": {
+    "16p: Convert C# to Lua": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies -i Script -d false"
     },
 
-    "Convert W3X to MapData (24p)": {
+    "24p: Test": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x test WarcraftLegacies24p"
+    },
+    "24p: Publish": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x publish WarcraftLegacies24p"
+    },
+    "24p: Convert W3X to MapData": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies24p"
     },
-    "Convert MapData to W3X (24p)": {
+    "24p: Convert W3X to MapData (Object Data)": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI w3x-to-json serialize WarcraftLegacies24p --include ObjectData"
+    },
+    "24p: Convert MapData to W3X": {
       "commandName": "Project",
       "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies24p"
+    },
+    "24p: Generate Constants": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI generate constants WarcraftLegacies24p"
+    },
+    "24p: Convert C# to Lua": {
+      "commandName": "Project",
+      "commandLineArgs": "WarcraftLegacies.CLI json-to-w3x build WarcraftLegacies24p -i Script -d false"
     }
   }
 }
