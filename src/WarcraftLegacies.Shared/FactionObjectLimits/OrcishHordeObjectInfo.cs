@@ -52,7 +52,6 @@ public static class OrcishHordeObjectInfo
     yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_ROBS_BRUTE_STRENGTH_ORCISH_HORDE, Unlimited);
-    yield return new(1383036018, Unlimited); // Troll Regeneration
     yield return new(UPGRADE_R01J_IMPROVED_ENSNARE_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_ROVS_ENVENOMED_SPEARS_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_RZ01_BURNING_OIL_ORCISH_HORDE, Unlimited);

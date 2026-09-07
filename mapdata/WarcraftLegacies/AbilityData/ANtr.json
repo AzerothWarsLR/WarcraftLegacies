@@ -34,11 +34,15 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNRegenerate.blp"
     },
     {
       "Id": "abpx",
-      "Value": 3
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
     },
     {
       "Id": "ansf",
