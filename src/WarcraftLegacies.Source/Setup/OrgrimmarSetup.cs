@@ -17,7 +17,7 @@ public static class OrgrimmarSetup
   {
     UNIT_O01B_ORGRIMMAR_WARSONG,
     UNIT_H00L_HORIZONTAL_WOODEN_GATE_GATE_OPEN,
-    UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG
+    UNIT_N06Z_FLIGHT_PATH_ORCISH_HORDE
   };
 
   // Maps the unit type that, once built anywhere in Orgrimmar, reveals a specific props sub-region.

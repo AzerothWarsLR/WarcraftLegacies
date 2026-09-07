@@ -31,7 +31,7 @@ public static class OrcishHordeObjectInfo
 
     yield return new(UNIT_OGRU_GRUNT_ORCISH_HORDE, Unlimited, Fighter);
     yield return new(UNIT_OHUN_HEADHUNTER_ORCISH_HORDE, Unlimited, Marksman);
-    yield return new(UNIT_OCAT_CATAPULT_ORCISH_HORDE, 6, Siege);
+    yield return new(UNIT_OCAT_DEMOLISHER_ORCISH_HORDE, 6, Siege);
     yield return new(UNIT_OTBR_BATRIDER_ORCISH_HORDE, 12, Flyer);
     yield return new(UNIT_ODOC_WITCH_DOCTOR_ORCISH_HORDE, Unlimited, Support);
     yield return new(UNIT_OSHM_SHAMAN_ORCISH_HORDE, Unlimited, Support);

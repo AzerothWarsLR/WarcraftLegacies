@@ -151,7 +151,7 @@ public sealed class WarsongFaction : Faction
 
     ResearchManager.Register(new FlightPath(
       this,
-      UPGRADE_R09N_FLIGHT_PATH_WARSONG,
+      UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE,
       70));
   }
 }
