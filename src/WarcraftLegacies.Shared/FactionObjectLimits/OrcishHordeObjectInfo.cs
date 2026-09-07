@@ -60,7 +60,7 @@ public static class OrcishHordeObjectInfo
     yield return new(UPGRADE_RZ04_FAR_SEER_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROWS_IMPROVED_PULVERIZE_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROWT_SPIRIT_WALKER_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
-    //yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RZ05_AIRBORNE_TOXINS_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FEL_HORDE_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FEL_HORDE_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_ORCISH_HORDE, Unlimited);

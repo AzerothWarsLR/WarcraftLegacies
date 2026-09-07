@@ -76,7 +76,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R06B,Rhar,Rotr,Rolf,Rhme,Rguv"
+      "Value": "R06B,Rhar,RZ05,Rhme,Rguv"
     },
     {
       "Id": "ureq",
@@ -85,6 +85,10 @@
     },
     {
       "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
       "Value": 0
     },
     {

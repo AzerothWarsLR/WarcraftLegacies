@@ -31,6 +31,10 @@
       "Value": "S"
     },
     {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
       "Id": "gbpy",
       "Value": 1
     }

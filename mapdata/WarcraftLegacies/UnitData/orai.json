@@ -103,6 +103,14 @@
       "Value": "obea"
     },
     {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
       "Id": "uhot",
       "Type": 3,
       "Value": "Q"

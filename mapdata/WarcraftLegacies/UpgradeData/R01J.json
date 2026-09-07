@@ -40,6 +40,14 @@
       "Value": "obea"
     },
     {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,
