@@ -5,10 +5,8 @@ namespace WarcraftLegacies.Source.Factions.Warsong;
 
 public sealed class WarsongLegends
 {
-  public LegendaryHero GromHellscream { get; }
   public LegendaryHero Rokhan { get; }
   public LegendaryHero Saurfang { get; }
-  public LegendaryHero Garrosh { get; }
   public LegendaryHero Gargok { get; }
   public LegendaryHero Mannoroth { get; }
   public Capital StonemaulKeep { get; }
@@ -16,15 +14,6 @@ public sealed class WarsongLegends
 
   public WarsongLegends()
   {
-    GromHellscream = new LegendaryHero("Grom Hellscream")
-    {
-      UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
-      StartingArtifacts = new()
-      {
-        new(item.Create(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
-      }
-    };
-
     Rokhan = new LegendaryHero("Rokhan")
     {
       UnitType = UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG,
@@ -44,12 +33,6 @@ public sealed class WarsongLegends
       DeathMessage =
         "Mannoroth the Corrupter has fallen.",
       StartingXp = 41800
-    };
-
-    Garrosh = new LegendaryHero("Garrosh Hellscream")
-    {
-      UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
-      StartingXp = 8800
     };
 
     Gargok = new LegendaryHero("Gargok")
@@ -74,10 +57,8 @@ public sealed class WarsongLegends
 
   public void RegisterLegends()
   {
-    LegendaryHeroManager.Register(GromHellscream);
     LegendaryHeroManager.Register(Rokhan);
     LegendaryHeroManager.Register(Saurfang);
-    LegendaryHeroManager.Register(Garrosh);
     LegendaryHeroManager.Register(Mannoroth);
     LegendaryHeroManager.Register(Gargok);
     CapitalManager.Register(StonemaulKeep);

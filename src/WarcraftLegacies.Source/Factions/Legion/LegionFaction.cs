@@ -178,7 +178,7 @@ public sealed class LegionFaction : Faction
         frostwolf
       }, new List<Objective>
       {
-        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Frostwolf.Thrall)
+        new ObjectiveLegendMeetsLegend(AllLegends.Legion.Archimonde, AllLegends.Orc.Thrall)
       }
     ));
   }

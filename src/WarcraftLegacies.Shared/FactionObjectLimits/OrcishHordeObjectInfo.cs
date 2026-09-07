@@ -63,5 +63,6 @@ public static class OrcishHordeObjectInfo
     yield return new(UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_ORCISH_HORDE, 1, new List<UnitCategory> { Support });
     //yield return new(UNIT_OREX_BEASTMASTER_ORCISH_HORDE, 1, Tank);
     yield return new(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE, 1, UnitCategory.Fighter);
+    yield return new(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_ORCISH_HORDE, 1, UnitCategory.Fighter);
   }
 }

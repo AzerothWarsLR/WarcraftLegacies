@@ -72,8 +72,8 @@ public sealed class FrostwolfFaction : Faction
     AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
     AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
     AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
-    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
-    AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall));
+    AddQuest(new QuestWorldShaman(AllLegends.Orc.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
@@ -124,7 +124,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Thrall, AllLegends.Frostwolf.Rexxar)
+          new ObjectiveLegendMeetsLegend(AllLegends.Orc.Thrall, AllLegends.Frostwolf.Rexxar)
         }));
 
     TriggeredDialogueManager.Add(
@@ -145,7 +145,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Thrall, false)
+          new ObjectiveControlLegend(AllLegends.Orc.Thrall, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -165,7 +165,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Orc.Thrall)
         }));
   }
 
