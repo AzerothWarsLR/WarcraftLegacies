@@ -7,12 +7,12 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0ES,A020,A0BG,Aion"
+      "Value": "A0ES,A020,A0BG,Aion,A000"
     },
     {
       "Id": "udaa",
       "Type": 3,
-      "Value": "A0XM"
+      "Value": "A000"
     },
     {
       "Id": "ubld",
@@ -54,7 +54,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rguv,R017,Robs,Rhar,Rhme"
+      "Value": "Rguv,R017,Robs,Rhar,Rhme,R003"
     },
     {
       "Id": "uhpm",
