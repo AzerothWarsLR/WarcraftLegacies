@@ -69,14 +69,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCatapult.blp"
     },
     {
-      "Id": "ubpx",
-      "Value": 0
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Orcish Horde)"

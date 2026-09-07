@@ -48,10 +48,6 @@
       "Value": 0
     },
     {
-      "Id": "ubpx",
-      "Value": 1
-    },
-    {
       "Id": "utra",
       "Type": 3,
       "Value": "o00A,oshm,odoc"
@@ -60,6 +56,10 @@
       "Id": "ures",
       "Type": 3,
       "Value": "Rost,Rowd,R00R,RZ04"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
     },
     {
       "Id": "unsf",

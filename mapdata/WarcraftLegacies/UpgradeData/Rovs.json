@@ -29,14 +29,6 @@
       "Id": "ghk1",
       "Type": 3,
       "Value": "S"
-    },
-    {
-      "Id": "gbpx",
-      "Value": 1
-    },
-    {
-      "Id": "gbpy",
-      "Value": 1
     }
   ]
 }

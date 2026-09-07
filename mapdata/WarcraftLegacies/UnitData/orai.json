@@ -93,22 +93,14 @@
       "Value": 2.5
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "(Orcish Horde)"
-    },
-    {
       "Id": "ureq",
       "Type": 3,
       "Value": "obea"
     },
     {
-      "Id": "ubpx",
-      "Value": 0
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "uhot",

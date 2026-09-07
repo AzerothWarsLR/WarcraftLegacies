@@ -118,10 +118,6 @@
       "Value": 2
     },
     {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroFarseer.blp"

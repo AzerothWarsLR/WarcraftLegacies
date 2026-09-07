@@ -38,13 +38,13 @@
       "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "Research Kor'kron Elites"
+      "Value": "Research Kor\u0027kron Elites"
     },
     {
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "Kor'kron Elites"
+      "Value": "Kor\u0027kron Elites"
     },
     {
       "Level": 1,
@@ -62,7 +62,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Allows Kor'kron Elites to be trained from the Great Hall, Stronghold, and Fortress.|n|n|cffc864c8Can't be researched with Blademasters.|r"
+      "Value": "Allows Kor\u0027kron Elites to be trained from the Great Hall, Stronghold, and Fortress.|n|n|cffc864c8Can\u0027t be researched with Blademasters.|r"
     },
     {
       "Id": "gbpy",

@@ -80,10 +80,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNChainLightning.blp"
     },
     {
-      "Id": "gbpx",
-      "Value": 2
-    },
-    {
       "Id": "gbpy",
       "Value": 1
     },

@@ -6,12 +6,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "greq",
-      "Type": 3,
-      "Value": "ofrt"
-    },
-    {
       "Id": "glmb",
       "Value": 0
     },
