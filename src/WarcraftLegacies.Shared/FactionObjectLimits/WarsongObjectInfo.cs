@@ -29,7 +29,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_O02M_WARSONG_GRUNT_WARSONG, Unlimited, UnitCategory.Tank);
     //yield return new(UNIT_ORAI_RAIDER_WARSONG, Unlimited, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Siege });
     yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited, UnitCategory.Fighter);
-    yield return new(UNIT_N06Z_FLIGHT_PATH_ORCISH_HORDE, 1, UnitCategory.Teleport);
     yield return new(UNIT_NOGN_WARLOCK_WARSONG, Unlimited, UnitCategory.Support);
     yield return new(UNIT_N08E_SHADOWPRIEST_WARSONG, Unlimited, UnitCategory.Support);
     //yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, 6, UnitCategory.Support);
@@ -68,7 +67,6 @@ public static class WarsongObjectInfo
     yield return new(UPGRADE_R019_IMPROVED_SHOCKWAVE_WARSONG, Unlimited);
     yield return new(UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROVS_ENVENOMED_SPEARS_ORCISH_HORDE, Unlimited);
-    yield return new(UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE, 1);
     yield return new(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
     yield return new(UPGRADE_R09P_REVERT_BLOODPACT, 1);
     yield return new(UPGRADE_TP17_IMPROVED_FRENZY_WARSONG, 1);

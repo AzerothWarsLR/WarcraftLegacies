@@ -54,12 +54,14 @@ public static class OrcishHordeObjectInfo
     //yield return new(UPGRADE_ROWS_IMPROVED_PULVERIZE_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROWT_SPIRIT_WALKER_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_ORCISH_HORDE, Unlimited);
-    //yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_ORCISH_HORDE_FEL_HORDE_WARSONG, Unlimited);
-    //yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_ORCISH_HORDE_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FEL_HORDE_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FEL_HORDE_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_R00W_TOUGHENED_HIDES_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
-    //yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
+    yield return new(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE, Unlimited);
+    yield return new(UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE, Unlimited);
+    yield return new(UNIT_N06Z_FLIGHT_PATH_ORCISH_HORDE, 1, Teleport);
 
     yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, 1, new List<UnitCategory> { Destroyer, Summoner });
     //yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_ORCISH_HORDE, 1, new List<UnitCategory> { Tank, Support });
