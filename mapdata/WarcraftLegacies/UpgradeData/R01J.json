@@ -35,9 +35,15 @@
     },
     {
       "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "obea"
+    },
+    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Level": 1,

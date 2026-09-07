@@ -35,6 +35,9 @@ public static class OrcishHordeObjectInfo
     yield return new(UNIT_OTBR_BATRIDER_ORCISH_HORDE, 12, Flyer);
     yield return new(UNIT_ODOC_WITCH_DOCTOR_ORCISH_HORDE, Unlimited, Support);
     yield return new(UNIT_OSHM_SHAMAN_ORCISH_HORDE, Unlimited, Support);
+    yield return new(UNIT_VP53_WIND_RIDER_ORCISH_HORDE, 12, new List<UnitCategory> { Marksman, Flyer });
+    yield return new(UNIT_ORAI_RAIDER_ORCISH_HORDE, 12, new List<UnitCategory> { Fighter, Siege });
+    yield return new(UNIT_E01M_AZERITE_SIEGE_ENGINE_ORCISH_HORDE, 3, new List<UnitCategory> { Siege, Destroyer });
     yield return new(UNIT_O00A_FAR_SEER_ORCISH_HORDE_ELITE, 6, new List<UnitCategory> { Elite, Destroyer, Support });
     yield return new(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 0, new List<UnitCategory> { UnitCategory.Elite, UnitCategory.Fighter, UnitCategory.Destroyer, UnitCategory.Summoner }); // unlocked by RZ03
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
@@ -48,6 +51,11 @@ public static class OrcishHordeObjectInfo
 
     yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_ROBS_BRUTE_STRENGTH_ORCISH_HORDE, Unlimited);
+    yield return new(1383036018, Unlimited); // Troll Regeneration
+    yield return new(UPGRADE_R01J_IMPROVED_ENSNARE_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_ROVS_ENVENOMED_SPEARS_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RZ01_BURNING_OIL_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_RZ02_BLADEMASTERS_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_RZ03_KOR_KRON_ELITES_ORCISH_HORDE, Unlimited);
     yield return new(UPGRADE_RZ04_FAR_SEER_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);

@@ -95,7 +95,12 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Orc Horde)"
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "obea"
     },
     {
       "Id": "uhot",

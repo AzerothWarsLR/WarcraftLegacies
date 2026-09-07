@@ -6,6 +6,11 @@
   ],
   "Modifications": [
     {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adtg,Aven"
+    },
+    {
       "Id": "ubld",
       "Value": 10
     },
@@ -88,6 +93,16 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Highly mobile flying creature. Excellent at scouting."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Wind Rider"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Wind Rider"
     }
   ]
 }
