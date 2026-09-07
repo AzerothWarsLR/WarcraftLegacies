@@ -227,6 +227,22 @@ public static class UniqueEliteNames
           "Negel Fireye",
           "Warmaul"
         },
+      [UNIT_O00G_BLADEMASTER_ORCISH_HORDE] =
+        new()
+        {
+          "Kaz'rogal Bladewind",
+          "Thelgor Swiftblade",
+          "Nazgrel Bladehand",
+          "Gorka Bladeshifter",
+          "Krogar Windcutter",
+          "Zurgash the Elusive",
+          "Malgor Bladeweaver",
+          "Ragnok Steelfang",
+          "Vorka Shadowblade",
+          "Drakka Swiftwind",
+          "Kelgar Bladerunner",
+          "Ormok the Vanished"
+        },
       [UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE] =
         new()
         {
