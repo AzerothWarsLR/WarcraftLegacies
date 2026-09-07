@@ -40,7 +40,7 @@ public static class FelHordeObjectInfo
     yield return new(UNIT_NINA_INFERNAL_JUGGERNAUT_FEL, 4, new List<UnitCategory> { Siege, Marksman });
     yield return new(UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER, 6, new List<UnitCategory> { Elite, Tank, Support });
 
-    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE_ORCISH_HORDE, Unlimited);
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
     yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);

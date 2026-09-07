@@ -40,6 +40,7 @@ public static class OrcishHordeObjectInfo
     yield return new(UNIT_E01M_AZERITE_SIEGE_ENGINE_ORCISH_HORDE, 3, new List<UnitCategory> { Siege, Destroyer });
     yield return new(UNIT_O00A_FAR_SEER_ORCISH_HORDE_ELITE, 6, new List<UnitCategory> { Elite, Destroyer, Support });
     yield return new(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 0, new List<UnitCategory> { UnitCategory.Elite, UnitCategory.Fighter, UnitCategory.Destroyer, UnitCategory.Summoner });
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE_ORCISH_HORDE, Unlimited);
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
     yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);

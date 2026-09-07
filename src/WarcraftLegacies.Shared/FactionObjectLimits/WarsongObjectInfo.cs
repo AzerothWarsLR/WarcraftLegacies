@@ -40,7 +40,7 @@ public static class WarsongObjectInfo
 
     //yield return new(UNIT_OWYV_WIND_RIDER_WARSONG, 8, new List<UnitCategory> { UnitCategory.Flyer, UnitCategory.Marksman });
 
-    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE_ORCISH_HORDE, Unlimited);
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
     yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
