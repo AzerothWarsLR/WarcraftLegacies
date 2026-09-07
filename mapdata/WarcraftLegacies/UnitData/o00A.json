@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A07C,ACrk,AChx,ACcl,Aion,AChv,A0KK"
+      "Value": "AZ03,AZ04,ACcl,Aion,AChv,AZ02"
     },
     {
       "Id": "ua1t",
@@ -27,7 +27,7 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2
+      "Value": 1.9
     },
     {
       "Id": "udea",
@@ -48,7 +48,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 25
+      "Value": 20
     },
     {
       "Id": "ufoo",
@@ -64,7 +64,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 800
+      "Value": 1000
     },
     {
       "Id": "ulum",
@@ -76,11 +76,11 @@
     },
     {
       "Id": "umpi",
-      "Value": 500
+      "Value": 450
     },
     {
       "Id": "umpm",
-      "Value": 500
+      "Value": 450
     },
     {
       "Id": "upri",
@@ -105,18 +105,21 @@
       "Value": 35
     },
     {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "ofrt"
-    },
-    {
       "Id": "umvs",
       "Value": 250
     },
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R00R,Rhme,Rhar,Rguv"
+      "Value": "R00R,RZ04,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
     },
     {
       "Id": "uico",

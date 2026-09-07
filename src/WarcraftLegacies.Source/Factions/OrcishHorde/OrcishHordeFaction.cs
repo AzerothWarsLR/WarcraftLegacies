@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared.Researches;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde;
 
@@ -36,8 +39,30 @@ public sealed class OrcishHordeFaction : Faction
   /// <inheritdoc />
   public override void OnRegistered()
   {
+    RegisterResearches();
     OrcishHordeSpells.Setup();
     OrcishHordeTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
+
+  private void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RZ02_BLADEMASTERS_ORCISH_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_O00G_BLADEMASTER_ORCISH_HORDE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RZ03_KOR_KRON_ELITES_ORCISH_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 6);
+        }
+      });
   }
 }

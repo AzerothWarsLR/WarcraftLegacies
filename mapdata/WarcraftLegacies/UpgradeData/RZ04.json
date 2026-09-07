@@ -1,5 +1,6 @@
 {
-  "OldId": "Rowd",
+  "OldId": "Rost",
+  "NewId": "RZ04",
   "Unk": [
     0
   ],
@@ -34,14 +35,14 @@
       "Level": 2,
       "Id": "greq",
       "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": "glmm",
-      "Value": 0
+      "Value": "osld"
     },
     {
       "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "glmm",
       "Value": 0
     },
     {
@@ -78,37 +79,69 @@
       "Level": 1,
       "Id": "ghk1",
       "Type": 3,
-      "Value": "X"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": "ghk1",
       "Type": 3,
-      "Value": "X"
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHex.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHex.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Id": "gbpy",
+      "Value": 3
     },
     {
       "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "Research Witch Doctor Adept Training"
+      "Value": "Research Far Seer Adept Training"
     },
     {
       "Level": 2,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "Research Witch Doctor Master Training"
+      "Value": "Research Far Seer Master Training"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Far Seer Adept Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Far Seer Master Training"
     },
     {
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Witch Doctors\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Stasis Trap."
+      "Value": "Increases Far Seer mana capacity and mana regeneration rate and gives them the ability to cast Hex."
     },
     {
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Witch Doctors\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Healing Ward."
+      "Value": "Increases Far Seer mana capacity and mana regeneration rate and gives them the ability to cast Chain Lightning."
     }
   ]
 }

@@ -1,4 +1,4 @@
-﻿using MacroTools.Shared;
+using MacroTools.Shared;
 using static MacroTools.Shared.UnitCategory;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
@@ -36,7 +36,7 @@ public static class OrcishHordeObjectInfo
     yield return new(UNIT_ODOC_WITCH_DOCTOR_ORCISH_HORDE, Unlimited, Support);
     yield return new(UNIT_OSHM_SHAMAN_ORCISH_HORDE, Unlimited, Support);
     yield return new(UNIT_O00A_FAR_SEER_ORCISH_HORDE_ELITE, 6, new List<UnitCategory> { Elite, Destroyer, Support });
-    yield return new(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 6, new List<UnitCategory> { UnitCategory.Elite, UnitCategory.Fighter, UnitCategory.Destroyer, UnitCategory.Summoner });
+    yield return new(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 0, new List<UnitCategory> { UnitCategory.Elite, UnitCategory.Fighter, UnitCategory.Destroyer, UnitCategory.Summoner }); // unlocked by RZ03
     yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
     yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
     yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
@@ -44,16 +44,19 @@ public static class OrcishHordeObjectInfo
     yield return new(UNIT_H0B5_BOARDING_VESSEL_HORDE, Unlimited);
     yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
     yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
-    yield return new(UNIT_O00G_BLADEMASTER_ORCISH_HORDE, 6, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Assassin });
+    yield return new(UNIT_O00G_BLADEMASTER_ORCISH_HORDE, 0, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Assassin }); // unlocked by RZ02
 
+    yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RZ02_BLADEMASTERS_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RZ03_KOR_KRON_ELITES_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RZ04_FAR_SEER_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROWS_IMPROVED_PULVERIZE_ORCISH_HORDE, Unlimited);
-    //yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
-    //yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROWT_SPIRIT_WALKER_ADEPT_TRAINING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_ORCISH_HORDE_FEL_HORDE_WARSONG, Unlimited);
     //yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_ORCISH_HORDE_FEL_HORDE_WARSONG, Unlimited);
-    //yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_R00W_TOUGHENED_HIDES_ORCISH_HORDE, Unlimited);
     //yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
     //yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
