@@ -175,7 +175,7 @@ public sealed class FrostwolfFaction : Faction
   {
     ResearchManager.Register(new FlightPath(
       this,
-      UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE,
+      UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES,
       70));
   }
 }

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 public sealed class FlightPath : Research
 {
   private readonly Faction _frostwolf;
-  private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE;
+  private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES;
   private static unit? _flightToOrgrimmar;
   private static unit? _flightToThunderBluff;
   private static bool _researched;

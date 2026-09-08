@@ -58,8 +58,8 @@ public static class FelHordeObjectInfo
     yield return new(UPGRADE_ROBF_DEMONIC_FLUX_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R066_BURNING_OIL_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN, Unlimited);
-    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FEL_HORDE_ORCISH_HORDE, Unlimited);
-    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FEL_HORDE_ORCISH_HORDE, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FEL_HORDE_ORCISH_HORDE_TAUREN_TRIBES, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FEL_HORDE_ORCISH_HORDE_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_R024_NECROLYTE_ADEPT_TRAINING_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R00M_FEL_WARLOCK_ADEPT_TRAINING_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R03I_EREDAR_OCCULTIST_ADEPT_TRAINING_FEL_HORDE, Unlimited);
