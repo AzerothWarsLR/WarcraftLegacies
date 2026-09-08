@@ -1,4 +1,4 @@
-using MacroTools.Legends;
+﻿using MacroTools.Legends;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes;
 

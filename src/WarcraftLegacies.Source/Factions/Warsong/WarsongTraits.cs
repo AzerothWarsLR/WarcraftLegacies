@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.Source.Factions.Warsong;
+﻿namespace WarcraftLegacies.Source.Factions.Warsong;
 
 public static class WarsongTraits
 {

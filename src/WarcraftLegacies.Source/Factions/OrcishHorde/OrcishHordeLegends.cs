@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Artifacts;
 using MacroTools.Legends;
 using MacroTools.PreplacedWidgets;
