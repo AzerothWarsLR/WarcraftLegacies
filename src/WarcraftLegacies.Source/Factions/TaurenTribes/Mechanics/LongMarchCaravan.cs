@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Dialogues;
@@ -25,7 +25,7 @@ public sealed class LongMarchCaravan
     ThunderBluff
   }
 
-  private static readonly int[] AmbushUnitTypes =
+  private static readonly int[] _ambushUnitTypes =
   {
     UNIT_OTCO_CENTAUR_OUTRUNNER_TAUREN_TRIBES_AMBUSH,
     UNIT_OTCD_CENTAUR_DRUDGE_TAUREN_TRIBES_AMBUSH,
@@ -33,32 +33,32 @@ public sealed class LongMarchCaravan
     UNIT_OTCI_CENTAUR_IMPALER_TAUREN_TRIBES_AMBUSH
   };
 
-  private static readonly Dialogue FirstAmbushDialogue = new(
+  private static readonly Dialogue _firstAmbushDialogue = new(
     @"Sound\Dialogue\OrcCampaign\Orc02\O02Cairne11.flac",
     "Hold your formations, the Kodo's must be protected.",
     "Cairne Bloodhoof");
 
-  private static readonly Dialogue SecondAmbushDialogue = new(
+  private static readonly Dialogue _secondAmbushDialogue = new(
     @"Sound\Dialogue\OrcCampaign\Orc02\O02Cairne15.flac",
     "The centaur have returned, we're under attack!",
     "Cairne Bloodhoof");
 
-  private static readonly Dialogue ThirdAmbushDialogue = new(
+  private static readonly Dialogue _thirdAmbushDialogue = new(
     @"Sound\Dialogue\OrcCampaign\Orc02\O02Cairne17.flac",
     "The marauders attack again! Stand and fight, my brethren!",
     "Cairne Bloodhoof");
 
-  private static readonly Dialogue FirstAmbushDefeatedDialogue = new(
+  private static readonly Dialogue _firstAmbushDefeatedDialogue = new(
     @"Sound\Dialogue\OrcCampaign\Orc02\O02Cairne05.flac",
     "They shall not catch the Tauren unprepared.",
     "Cairne Bloodhoof");
 
-  private static readonly Dialogue SecondAmbushDefeatedDialogue = new(
+  private static readonly Dialogue _secondAmbushDefeatedDialogue = new(
     @"Sound\Dialogue\OrcCampaign\Orc02\O02Cairne25.flac",
     "Let the fury of the earth mother deal with these wretches as they deserve!",
     "Cairne Bloodhoof");
 
-  private static readonly Dialogue MulgorePassDialogue = new(
+  private static readonly Dialogue _mulgorePassDialogue = new(
     @"Sound\Dialogue\OrcCampaign\Orc02\O02Cairne23.flac",
     "This pass leads straight to Mulgore, but I fear the caravan will be overrun before it reaches the other side.",
     "Cairne Bloodhoof");
@@ -531,7 +531,7 @@ public sealed class LongMarchCaravan
     _quest.MarkStonemaulReached();
     _stage = Stage.Mulgore;
     SetCurrentTarget(_mulgoreTarget);
-    _taurenTribes.Player?.QueueDialogue(MulgorePassDialogue);
+    _taurenTribes.Player?.QueueDialogue(_mulgorePassDialogue);
   }
 
   private void OnReachMulgore()
@@ -672,7 +672,7 @@ public sealed class LongMarchCaravan
     var waveMembers = new List<unit>();
     for (var i = 0; i < AmbushWaveSize; i++)
     {
-      var unitType = AmbushUnitTypes[GetRandomInt(0, AmbushUnitTypes.Length - 1)];
+      var unitType = _ambushUnitTypes[GetRandomInt(0, _ambushUnitTypes.Length - 1)];
       var attacker = unit.Create(player.NeutralAggressive, unitType, spawnX, spawnY, GetRandomReal(0, 360));
       var prefersPlayer = GetRandomInt(0, 1) == 0;
       _ambushers.Add((attacker, prefersPlayer));
@@ -689,9 +689,9 @@ public sealed class LongMarchCaravan
   {
     var dialogue = _ambushWavesSpawned switch
     {
-      1 => FirstAmbushDialogue,
-      2 => SecondAmbushDialogue,
-      3 => ThirdAmbushDialogue,
+      1 => _firstAmbushDialogue,
+      2 => _secondAmbushDialogue,
+      3 => _thirdAmbushDialogue,
       _ => null
     };
     if (dialogue != null)
@@ -713,8 +713,8 @@ public sealed class LongMarchCaravan
       _ambushWavesDefeatedReported++;
       var dialogue = _ambushWavesDefeatedReported switch
       {
-        1 => FirstAmbushDefeatedDialogue,
-        2 => SecondAmbushDefeatedDialogue,
+        1 => _firstAmbushDefeatedDialogue,
+        2 => _secondAmbushDefeatedDialogue,
         _ => null
       };
       if (dialogue != null)
