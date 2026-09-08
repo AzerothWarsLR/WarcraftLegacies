@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Adtg"
+      "Value": "Adtg,AT03"
     },
     {
       "Id": "ubld",
@@ -62,7 +62,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv"
+      "Value": "Rhme,Rhar,Rguv,RT11"
     },
     {
       "Id": "ureq",
@@ -77,6 +77,14 @@
       "Id": "ua1t",
       "Type": 3,
       "Value": "magic"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     },
     {
       "Id": "unsf",
@@ -96,7 +104,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Spirit Wind Rider"
+      "Value": "Wyvern"
     },
     {
       "Id": "utip",

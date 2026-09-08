@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Acor,A0JA,Alit,Ault"
+      "Value": ""
     },
     {
       "Id": "uacq",
@@ -112,7 +112,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Reuv,Rguv,R018"
+      "Value": "Rhme,Rhar,Reuv,Rguv,R018,RT10"
     },
     {
       "Id": "uaen",
@@ -128,6 +128,10 @@
       "Value": 1
     },
     {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Tauren Tribes)"
@@ -140,12 +144,12 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Great Eagle"
+      "Value": "Eagle Spirit"
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Great Eagle"
+      "Value": "Eagle Spirit"
     },
     {
       "Id": "utip",
