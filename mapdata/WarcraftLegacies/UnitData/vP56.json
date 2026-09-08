@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AT04,AT05,AT06,AT07,A064,Aion,A01T,ACrk"
+      "Value": "AT04,AT05,AT15,AT07,A064,Aion,A01T,ACrk"
     },
     {
       "Id": "ua1t",
@@ -108,7 +108,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rhme,Rhar,Rguv"
+      "Value": "Ropm,Rhme,Rhar,Rguv,RT14"
     },
     {
       "Id": "ucs1",
@@ -123,7 +123,7 @@
     {
       "Id": "udaa",
       "Type": 3,
-      "Value": "AT06"
+      "Value": "AT15"
     },
     {
       "Id": "udef",
@@ -137,6 +137,24 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Holy Light|n- Resurrection,- Holy Light|n- Resurrection|n- War Stomp,- Holy Light|n- Resurrection|n- War Stomp|n- Devotion Aura"
     },
     {
       "Id": "unsf",

@@ -74,5 +74,6 @@ public static class TaurenTribesObjectInfo
     yield return new(UPGRADE_RT11_STINGING_TAIL_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_RT12_MONSTROUS_STRENGTH_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_RT13_MASS_BLOODLUST_TAUREN_TRIBES, Unlimited);
+    yield return new(UPGRADE_RT14_SUNWALKER_ADEPT_TRAINING_TAUREN_TRIBES, Unlimited);
   }
 }
