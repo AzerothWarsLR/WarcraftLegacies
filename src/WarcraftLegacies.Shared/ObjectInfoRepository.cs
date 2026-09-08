@@ -36,6 +36,7 @@ public sealed class ObjectInfoRepository
     AddFactionObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
     //AddFactionObjectInfo(WarsongObjectInfo.GetAllObjectLimits());
     AddFactionObjectInfo(OrcishHordeObjectInfo.GetAllObjectLimits());
+    AddFactionObjectInfo(TaurenTribesObjectInfo.GetAllObjectLimits());
   }
 
   /// <summary>
