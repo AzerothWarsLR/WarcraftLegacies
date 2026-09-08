@@ -1,6 +1,6 @@
 {
   "OldId": "nogl",
-  "NewId": "vP51",
+  "NewId": "vP56",
   "Unk": [
     0
   ],
@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "VP50,A0GK,AT12,Aion,A01T,AT06,ACrk"
+      "Value": "AT04,AT05,AT06,AT07,A064,Aion,A01T,ACrk"
     },
     {
       "Id": "ua1t",
@@ -44,7 +44,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 58
+      "Value": 50
     },
     {
       "Id": "ufoo",
@@ -60,7 +60,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1600
+      "Value": 1400
     },
     {
       "Id": "ulum",
@@ -69,6 +69,10 @@
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
     },
     {
       "Id": "umpm",
@@ -91,7 +95,7 @@
     {
       "Id": "umpr",
       "Type": 2,
-      "Value": 1
+      "Value": 1.5
     },
     {
       "Id": "urtm",
@@ -119,7 +123,7 @@
     {
       "Id": "udaa",
       "Type": 3,
-      "Value": "A0XM"
+      "Value": "AT06"
     },
     {
       "Id": "udef",
@@ -135,27 +139,9 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp"
     },
     {
-      "Id": "ubpx",
-      "Value": 1
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "othl"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Tauren Tribes-Elite)"
-    },
-    {
-      "Id": "umdl",
-      "Type": 3,
-      "Value": "units\\orc\\HeroTaurenChieftain\\HeroTaurenChieftain.mdl"
     },
     {
       "Id": "uhot",
@@ -165,17 +151,17 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Tauren Chieftan"
+      "Value": "Train Sunwalker Champion"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Leader of a Tauren Tribe."
+      "Value": "Holy warrior of the Sunwalkers, blessed with the light."
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Tauren Chieftain"
+      "Value": "Sunwalker Champion"
     },
     {
       "Id": "usnd",

@@ -44,7 +44,7 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanRein.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNReincarnation.blp"
     },
     {
       "Id": "abpx",
@@ -62,7 +62,7 @@
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNAnkh.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNReincarnation.blp"
     },
     {
       "Id": "aret",
