@@ -32,7 +32,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_N08E_SHADOWPRIEST_WARSONG, Unlimited, UnitCategory.Support);
     //yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, 6, UnitCategory.Support);
     yield return new(UNIT_OTBK_AXE_THROWER_WARSONG, Unlimited, UnitCategory.Marksman);
-    yield return new(UNIT_O00I_WAR_MACHINE_WARSONG, 6, UnitCategory.Siege);
     //yield return new(UNIT_OKOD_KODO_BEAST_WARSONG, 6, UnitCategory.Support);
     //yield return new(UNIT_E01M_AZERITE_SIEGE_ENGINE_WARSONG, 4, UnitCategory.Siege);
 
@@ -54,9 +53,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1, UnitCategory.Support); //Rokhan
     yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1, UnitCategory.Tank);
 
-    yield return new(UPGRADE_R00J_OGRE_MAGI_ADEPT_TRAINING_WARSONG, Unlimited);
-    yield return new(UPGRADE_R02I_WARLOCK_ADEPT_TRAINING_WARSONG, Unlimited);
-    yield return new(UPGRADE_R03Q_SHADOWPRIEST_ADEPT_TRAINING_WARSONG, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FEL_HORDE_ORCISH_HORDE_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FEL_HORDE_ORCISH_HORDE_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_R016_QUEST_COMPLETED_KEEPER_OF_THE_ETERNAL_WATCH_STORMWIND, Unlimited);
@@ -64,6 +60,5 @@ public static class WarsongObjectInfo
     yield return new(UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
     yield return new(UPGRADE_R09P_REVERT_BLOODPACT, 1);
-    yield return new(UPGRADE_TP17_IMPROVED_FRENZY_WARSONG, 1);
   }
 }

@@ -112,7 +112,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R061,R01B,Rhme,Rhar,R00J,Rhpm,Rguv"
+      "Value": "R061,R01B,Rhme,Rhar,Rhpm,Rguv"
     },
     {
       "Id": "ureq",
