@@ -47,17 +47,17 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "o02R"
+      "Value": "otwl,otwm"
     },
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R00J"
+      "Value": "RT07,RT08,RT12"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n08O,vP50"
+      "Value": "n08O,vP50,vP58"
     },
     {
       "Id": "ulum",

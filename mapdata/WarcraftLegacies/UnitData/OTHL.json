@@ -1,10 +1,15 @@
 {
-  "OldId": "ogre",
-  "NewId": "otnt",
+  "OldId": "ofrt",
+  "NewId": "othl",
   "Unk": [
     0
   ],
   "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aspi,A0GM"
+    },
     {
       "Id": "ubld",
       "Value": 50
@@ -15,16 +20,28 @@
       "Value": 0
     },
     {
+      "Id": "ufma",
+      "Value": 35
+    },
+    {
       "Id": "ugol",
-      "Value": 38
+      "Value": 135
     },
     {
       "Id": "ugor",
-      "Value": 20
+      "Value": 50
     },
     {
       "Id": "ulur",
       "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
     },
     {
       "Id": "upat",
@@ -37,12 +54,13 @@
       "Value": "unwalkable"
     },
     {
-      "Id": "urtm",
-      "Value": 90
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.2
     },
     {
-      "Id": "ulum",
-      "Value": 0
+      "Id": "urtm",
+      "Value": 90
     },
     {
       "Id": "utra",
@@ -55,28 +73,27 @@
       "Value": "RT01,RT02"
     },
     {
-      "Id": "uupt",
+      "Id": "ureq",
       "Type": 3,
-      "Value": "otwl"
+      "Value": "otal"
     },
     {
-      "Id": "ufma",
-      "Value": 15
+      "Id": "ulum",
+      "Value": 0
     },
     {
-      "Id": "uabi",
-      "Type": 3,
-      "Value": "Aspi"
+      "Id": "ubpx",
+      "Value": 2
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Tauren Tribes T1)"
+      "Value": "(Tauren Tribes T3)"
     },
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "Q"
+      "Value": "C"
     },
     {
       "Id": "uubs",
@@ -89,11 +106,6 @@
       "Value": "Primary structure. "
     },
     {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 0.75
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\tauren tent big.mdx"
@@ -101,17 +113,17 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Chief's Lodge"
+      "Value": "High Chieftain's Lodge"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Chief's Lodge"
+      "Value": "High Chieftain's Lodge"
     },
     {
-      "Id": "ussc",
+      "Id": "usca",
       "Type": 1,
-      "Value": 3
+      "Value": 0.75
     }
   ]
 }

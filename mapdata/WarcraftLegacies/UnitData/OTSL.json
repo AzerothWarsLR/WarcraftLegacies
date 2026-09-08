@@ -47,7 +47,12 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "ospw"
+      "Value": "ospw,vP54,vP56,vP57"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "otwl"
     },
     {
       "Id": "ulum",
@@ -56,7 +61,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "RT05,RT06"
     },
     {
       "Id": "ubpx",
@@ -80,12 +85,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Spirit Lodge"
+      "Value": "Hall of Elders"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Spirit Lodge"
+      "Value": "Hall of Elders"
     },
     {
       "Id": "utub",

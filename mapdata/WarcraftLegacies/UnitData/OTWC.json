@@ -44,12 +44,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "RT03,RT04,RT09,RT13"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "otau,n049"
+      "Value": "otau,n049,okod"
     },
     {
       "Id": "ulum",
@@ -85,12 +85,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "War Camp"
+      "Value": "Proving Ground"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "War Camp"
+      "Value": "Proving Ground"
     },
     {
       "Id": "uubs",
