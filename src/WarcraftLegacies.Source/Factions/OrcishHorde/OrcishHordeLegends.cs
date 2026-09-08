@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using MacroTools.Artifacts;
-using MacroTools.Legends;
-using MacroTools.PreplacedWidgets;
+﻿using MacroTools.Legends;
+
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde;
 

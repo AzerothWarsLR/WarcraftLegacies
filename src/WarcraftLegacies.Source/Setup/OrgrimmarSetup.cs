@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.PreplacedWidgets;
-using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup;
