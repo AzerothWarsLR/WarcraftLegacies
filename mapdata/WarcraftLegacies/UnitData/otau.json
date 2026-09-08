@@ -65,12 +65,12 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R00W,Rhar,Rhme,Rows,Ropm,Rguv"
+      "Value": "R00W,Rhar,Rhme,RT03,Ropm,Rguv"
     },
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R05I,ofor,ofrt"
+      "Value": "R05I"
     },
     {
       "Id": "ubpx",

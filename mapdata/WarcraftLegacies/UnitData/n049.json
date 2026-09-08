@@ -166,7 +166,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv"
+      "Value": "Rhme,Rhar,Rguv,RT04"
     },
     {
       "Id": "ua1w",
@@ -205,7 +205,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "ofor"
+      "Value": "otwm"
     },
     {
       "Id": "uico",
@@ -254,7 +254,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Tauren Hunter"
+      "Value": "Bluffwatcher"
     },
     {
       "Id": "ussc",
