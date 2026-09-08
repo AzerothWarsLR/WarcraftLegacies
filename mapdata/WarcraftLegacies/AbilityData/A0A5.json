@@ -6,12 +6,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "B0AJ"
-    },
-    {
       "Id": "achd",
       "Value": 0
     },

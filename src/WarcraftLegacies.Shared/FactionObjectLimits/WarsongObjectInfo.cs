@@ -29,7 +29,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_O02M_WARSONG_GRUNT_WARSONG, Unlimited, UnitCategory.Tank);
     //yield return new(UNIT_ORAI_RAIDER_WARSONG, Unlimited, new List<UnitCategory> { UnitCategory.Fighter, UnitCategory.Siege });
     yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited, UnitCategory.Fighter);
-    yield return new(UNIT_NOGN_WARLOCK_WARSONG, Unlimited, UnitCategory.Support);
     yield return new(UNIT_N08E_SHADOWPRIEST_WARSONG, Unlimited, UnitCategory.Support);
     //yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, 6, UnitCategory.Support);
     yield return new(UNIT_OTBK_AXE_THROWER_WARSONG, Unlimited, UnitCategory.Marksman);
