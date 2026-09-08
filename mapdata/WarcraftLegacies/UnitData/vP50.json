@@ -103,7 +103,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar"
+      "Value": "Rhme,Rhar,RT08"
     },
     {
       "Id": "uaen",
@@ -171,7 +171,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": ""
+      "Value": "A109,A127"
     },
     {
       "Id": "urac",
@@ -181,6 +181,10 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     },
     {
       "Id": "unsf",
