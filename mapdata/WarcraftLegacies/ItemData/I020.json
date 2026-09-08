@@ -1,0 +1,47 @@
+{
+  "OldId": "tbar",
+  "NewId": "I020",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A146"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tiny War Camp"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Tiny War Camp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Purchase Tiny War Camp"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    }
+  ]
+}

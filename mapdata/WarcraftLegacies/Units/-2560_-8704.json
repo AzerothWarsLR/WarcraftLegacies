@@ -1,6 +1,6 @@
 [
   {
-    "TypeId": 1868918895,
+    "TypeId": 1094135919,
     "Variation": 0,
     "Position": {
       "X": -2730.0908,
@@ -13,7 +13,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1868918895,
+    "SkinId": 1094135919,
     "Flags": 2,
     "OwnerId": 0,
     "Unk1": 0,
@@ -36,7 +36,7 @@
     "CreationNumber": 74
   },
   {
-    "TypeId": 1868918895,
+    "TypeId": 1094135919,
     "Variation": 0,
     "Position": {
       "X": -2802.5566,
@@ -49,7 +49,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1868918895,
+    "SkinId": 1094135919,
     "Flags": 2,
     "OwnerId": 0,
     "Unk1": 0,
@@ -72,7 +72,7 @@
     "CreationNumber": 73
   },
   {
-    "TypeId": 1868918895,
+    "TypeId": 1094135919,
     "Variation": 0,
     "Position": {
       "X": -2843.8594,
@@ -85,7 +85,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1868918895,
+    "SkinId": 1094135919,
     "Flags": 2,
     "OwnerId": 0,
     "Unk1": 0,
@@ -108,7 +108,7 @@
     "CreationNumber": 65
   },
   {
-    "TypeId": 1868918895,
+    "TypeId": 1094135919,
     "Variation": 0,
     "Position": {
       "X": -2762.746,
@@ -121,7 +121,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1868918895,
+    "SkinId": 1094135919,
     "Flags": 2,
     "OwnerId": 0,
     "Unk1": 0,
@@ -144,7 +144,7 @@
     "CreationNumber": 64
   },
   {
-    "TypeId": 1868918895,
+    "TypeId": 1094135919,
     "Variation": 0,
     "Position": {
       "X": -2868.3633,
@@ -157,7 +157,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1868918895,
+    "SkinId": 1094135919,
     "Flags": 2,
     "OwnerId": 0,
     "Unk1": 0,
