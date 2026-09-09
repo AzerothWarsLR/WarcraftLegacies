@@ -1,0 +1,74 @@
+{
+  "OldId": "Emoo",
+  "NewId": "TP83",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Grimtotem Matriarch"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Magatha Grimtotem"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Magatha Grimtotem"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Magatha Grimtotem"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical Hero, exceptional at empowering allies and dealing magic damage."
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Female Tauren Druid.mdl"
+    }
+  ]
+}
