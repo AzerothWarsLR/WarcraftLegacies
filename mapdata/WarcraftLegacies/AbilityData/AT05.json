@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "(Tauren Tribes)"
-    },
-    {
       "Id": "areq",
       "Type": 3,
       "Value": "RT14"
@@ -19,6 +14,11 @@
       "Id": "arqa",
       "Type": 3,
       "Value": "2"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
     }
   ]
 }

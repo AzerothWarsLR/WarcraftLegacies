@@ -29,18 +29,14 @@
       "Value": 0
     },
     {
-      "Id": "gbpx",
-      "Value": 2
-    },
-    {
-      "Id": "gbpy",
-      "Value": 2
-    },
-    {
       "Level": 1,
       "Id": "greq",
       "Type": 3,
       "Value": "o006"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
     },
     {
       "Level": 1,
@@ -70,7 +66,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Ogre Stone-heavers' attack range."
+      "Value": "Increases Ogre Stone-heavers\u0027 attack range."
     }
   ]
 }

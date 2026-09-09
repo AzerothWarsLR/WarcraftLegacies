@@ -6,6 +6,15 @@
   ],
   "Modifications": [
     {
+      "Id": "uhpm",
+      "Value": 660
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Tauren Tribes)"
@@ -14,15 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "Pack Kodo"
-    },
-    {
-      "Id": "uhpm",
-      "Value": 660
-    },
-    {
-      "Id": "ucol",
-      "Type": 2,
-      "Value": 8
     }
   ]
 }

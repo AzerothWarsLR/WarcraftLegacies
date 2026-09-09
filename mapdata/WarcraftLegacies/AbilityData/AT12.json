@@ -54,7 +54,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "When this unit attacks, <AT12,DataA1,%>% of its damage strikes through to enemies near the primary attacked unit."
+      "Value": "When this unit attacks, \u003CAT12,DataA1,%\u003E% of its damage strikes through to enemies near the primary attacked unit."
     }
   ]
 }

@@ -139,14 +139,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp"
     },
     {
-      "Id": "ubpx",
-      "Value": 0
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
       "Id": "ucun",
       "Type": 3,
       "Value": "Initiate, Adept, Master"

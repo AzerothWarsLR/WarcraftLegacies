@@ -11,6 +11,14 @@
       "Value": "A146"
     },
     {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "(Orcish Horde)"
@@ -34,14 +42,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Purchase Tiny War Camp"
-    },
-    {
-      "Id": "igol",
-      "Value": 0
-    },
-    {
-      "Id": "ilum",
-      "Value": 0
     }
   ]
 }

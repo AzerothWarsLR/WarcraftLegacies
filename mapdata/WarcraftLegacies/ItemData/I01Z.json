@@ -11,17 +11,17 @@
       "Value": "A145"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "(Orcish Horde)"
-    },
-    {
       "Id": "igol",
       "Value": 0
     },
     {
       "Id": "ilum",
       "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
     }
   ]
 }

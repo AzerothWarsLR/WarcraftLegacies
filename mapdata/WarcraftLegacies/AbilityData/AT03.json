@@ -117,13 +117,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "A poison attack that deals <AT03,DataA1> damage per second, and reduces an enemy unit's attack by <AT03,DataC1,%>% for <AT03,Dur1> seconds."
+      "Value": "A poison attack that deals \u003CAT03,DataA1\u003E damage per second, and reduces an enemy unit\u0027s attack by \u003CAT03,DataC1,%\u003E% for \u003CAT03,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "A poison attack that deals <AT03,DataA2> damage per second, and slows the target enemy's movement by <AT03,DataB2,%>% and attack by <AT03,DataC2,%>% for <AT03,Dur2> seconds."
+      "Value": "A poison attack that deals \u003CAT03,DataA2\u003E damage per second, and slows the target enemy\u0027s movement by \u003CAT03,DataB2,%\u003E% and attack by \u003CAT03,DataC2,%\u003E% for \u003CAT03,Dur2\u003E seconds."
     }
   ]
 }

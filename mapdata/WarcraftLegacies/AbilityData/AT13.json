@@ -76,7 +76,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Links <AT13,DataB1> units together, causing them to distribute <AT13,DataA1,%>% of damage taken amongst themselves. Lasts <AT13,Dur1> seconds."
+      "Value": "Links \u003CAT13,DataB1\u003E units together, causing them to distribute \u003CAT13,DataA1,%\u003E% of damage taken amongst themselves. Lasts \u003CAT13,Dur1\u003E seconds."
     }
   ]
 }
