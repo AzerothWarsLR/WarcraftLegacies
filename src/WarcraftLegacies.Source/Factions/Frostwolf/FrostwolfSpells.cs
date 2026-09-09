@@ -44,7 +44,7 @@ public static class FrostwolfSpells
         PerLevel = 6
       },
       RememberChance = 1f,
-      RememberableUnitTypeId = UNIT_OTAU_TAUREN_FROSTWOLF,
+      RememberableUnitTypeId = UNIT_OTAU_TAUREN_TAUREN_TRIBES,
       SummonEffect = @"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl",
       DeathEffect = @"Abilities\Spells\Orc\Disenchant\DisenchantSpecialArt.mdl"
     });

@@ -43,17 +43,17 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": ""
+      "Value": "othl"
     },
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "RT10,RT11"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": ""
+      "Value": "owyv,vP55"
     },
     {
       "Id": "ulum",
@@ -91,12 +91,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Beastiary"
+      "Value": "Wyvern Roost"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Beastiary"
+      "Value": "Wyvern Roost"
     },
     {
       "Id": "utub",

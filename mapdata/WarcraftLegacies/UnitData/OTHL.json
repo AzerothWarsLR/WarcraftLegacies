@@ -1,0 +1,129 @@
+{
+  "OldId": "ofrt",
+  "NewId": "othl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aspi,A0GM"
+    },
+    {
+      "Id": "ubld",
+      "Value": 50
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ufma",
+      "Value": 35
+    },
+    {
+      "Id": "ugol",
+      "Value": 135
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\10x10SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "vP51,vP52,vP59"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "RT01,RT02"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "otal"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes T3)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Primary structure. "
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\tauren tent big.mdx"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "High Chieftain's Lodge"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "High Chieftain's Lodge"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.75
+    }
+  ]
+}

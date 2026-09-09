@@ -43,12 +43,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R003,Robs"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "ogru,ohun,ocat"
+      "Value": "ogru,ohun,o00G"
     },
     {
       "Id": "ulum",
@@ -69,7 +69,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf Barracks)"
+      "Value": "(Orcish Horde Barracks)"
     },
     {
       "Id": "uhot",

@@ -17,16 +17,15 @@ public static class OrgrimmarSetup
   {
     UNIT_O01B_ORGRIMMAR_WARSONG,
     UNIT_H00L_HORIZONTAL_WOODEN_GATE_GATE_OPEN,
-    UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG
+    UNIT_N06Z_FLIGHT_PATH_ORCISH_HORDE
   };
 
   // Maps the unit type that, once built anywhere in Orgrimmar, reveals a specific props sub-region.
   private static readonly (int UnitTypeId, Rectangle Region)[] _doodadRevealTriggers =
   {
-    (UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Regions.Orgrimmar_Props_1),
-    (UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Regions.Orgrimmar_Props_2),
-    (UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Regions.Orgrimmar_Props_3),
-    (UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, Regions.Orgrimmar_Props_3)
+    (UNIT_OALT_ALTAR_OF_STORMS_ORCISH_HORDE_ALTAR, Regions.Orgrimmar_Props_1),
+    (UNIT_OFOR_WAR_MILL_ORCISH_HORDE_RESEARCH, Regions.Orgrimmar_Props_2),
+    (UNIT_OBAR_WAR_CAMP_ORCISH_HORDE_BARRACKS, Regions.Orgrimmar_Props_3)
   };
 
   private static readonly HashSet<int> _allowedProps = new()

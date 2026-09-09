@@ -211,7 +211,7 @@ public static class UniqueEliteNames
           "Rak Coldskull",
           "Ras Frostwhisper"
         },
-      [UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE] =
+      [UNIT_O00A_FAR_SEER_ORCISH_HORDE_ELITE] =
         new()
         {
           "Bale Bleakstare",
@@ -227,7 +227,23 @@ public static class UniqueEliteNames
           "Negel Fireye",
           "Warmaul"
         },
-      [UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE] =
+      [UNIT_O00G_BLADEMASTER_ORCISH_HORDE] =
+        new()
+        {
+          "Kaz'rogal Bladewind",
+          "Thelgor Swiftblade",
+          "Nazgrel Bladehand",
+          "Gorka Bladeshifter",
+          "Krogar Windcutter",
+          "Zurgash the Elusive",
+          "Malgor Bladeweaver",
+          "Ragnok Steelfang",
+          "Vorka Shadowblade",
+          "Drakka Swiftwind",
+          "Kelgar Bladerunner",
+          "Ormok the Vanished"
+        },
+      [UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE] =
         new()
         {
           "Arashicage",
@@ -310,22 +326,22 @@ public static class UniqueEliteNames
           "Rockmaw",
           "Tempesthorn"
         },
-      [UNIT_O000_ROYALTY_CTHUN_ELITES] =
-        new()
-        {
-          "Zarqith the Carapaced",
-          "Thalrix the Impaler",
-          "Qirnoth the Hiveguard",
-          "Veknar the Spined",
-          "Xylaris the Chitinous",
-          "Rexqir the Hardened",
-          "Balthor the Mandibled",
-          "Syrith the Venomous",
-          "Kranix the Armored",
-          "Vornax the Burrower",
-          "Thryxis the Shellbreaker",
-          "Zyphor the Pincered"
-        },
+      //[UNIT_O000_ROYALTY_CTHUN_ELITES] =
+      //  new()
+      //  {
+      //    "Zarqith the Carapaced",
+      //    "Thalrix the Impaler",
+      //    "Qirnoth the Hiveguard",
+      //    "Veknar the Spined",
+      //    "Xylaris the Chitinous",
+      //    "Rexqir the Hardened",
+      //    "Balthor the Mandibled",
+      //    "Syrith the Venomous",
+      //    "Kranix the Armored",
+      //    "Vornax the Burrower",
+      //    "Thryxis the Shellbreaker",
+      //    "Zyphor the Pincered"
+      //  },
       [UNIT_N0B4_REAPER_NZOTH] =
         new()
         {

@@ -44,18 +44,18 @@
       "Value": 60
     },
     {
-      "Id": "utra",
-      "Type": 3,
-      "Value": "oshm,odoc,ospw"
-    },
-    {
       "Id": "ulum",
       "Value": 0
     },
     {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o00A,oshm,odoc"
+    },
+    {
       "Id": "ures",
       "Type": 3,
-      "Value": "Rowd,Rowt,Rost"
+      "Value": "Rost,Rowd,R00R,RZ04"
     },
     {
       "Id": "ubpx",
@@ -64,7 +64,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf Magic)"
+      "Value": "(Orcish Horde Magic)"
     },
     {
       "Id": "usca",

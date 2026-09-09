@@ -8,9 +8,7 @@ namespace WarcraftLegacies.Source.Factions.Frostwolf;
 public sealed class FrostwolfLegends
 {
   public LegendaryHero Cairne { get; }
-  public LegendaryHero Thrall { get; }
   public LegendaryHero Rexxar { get; }
-  public LegendaryHero Voljin { get; }
   public Capital ThunderBluff { get; }
   public Capital DarkspearHold { get; }
 
@@ -18,7 +16,7 @@ public sealed class FrostwolfLegends
   {
     Cairne = new LegendaryHero("Cairne Bloodhoof")
     {
-      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF,
+      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES,
 
       DeathMessage =
         "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
@@ -26,15 +24,6 @@ public sealed class FrostwolfLegends
       StartingArtifacts = new List<Artifact>()
       {
         new(item.Create(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
-      }
-    };
-
-    Thrall = new LegendaryHero("Thrall")
-    {
-      UnitType = UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
-      StartingArtifacts = new()
-      {
-        new(item.Create(ITEM_I004_THE_DOOMHAMMER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 
@@ -55,23 +44,15 @@ public sealed class FrostwolfLegends
 
     Rexxar = new LegendaryHero("Rexxar")
     {
-      UnitType = UNIT_OREX_BEASTMASTER_FROSTWOLF,
+      UnitType = UNIT_OREX_BEASTMASTER_TAUREN_TRIBES,
       StartingXp = 1800
-    };
-
-    Voljin = new LegendaryHero("Vol'jin")
-    {
-      UnitType = UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
-      StartingXp = 2800
     };
   }
 
   public void RegisterLegends()
   {
     LegendaryHeroManager.Register(Cairne);
-    LegendaryHeroManager.Register(Thrall);
     LegendaryHeroManager.Register(Rexxar);
-    LegendaryHeroManager.Register(Voljin);
     CapitalManager.Register(ThunderBluff);
     CapitalManager.Register(DarkspearHold);
   }

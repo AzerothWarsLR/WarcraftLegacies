@@ -1,0 +1,22 @@
+{
+  "OldId": "ACrk",
+  "NewId": "AZ03",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Orcish Horde-Far Seer)"
+    }
+  ]
+}

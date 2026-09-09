@@ -7,7 +7,15 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0DX,S00M,AInv,ACrk,A0VZ,Aakb,Advc,Adev,Apak"
+      "Value": "AInv,ACrk,AT14,AT01,Advc,Adev,Apak"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     },
     {
       "Id": "uacq",
@@ -76,7 +84,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rhme,Rhar,Rguv"
+      "Value": "Ropm,Rhme,Rhar,Rguv,RT09"
     },
     {
       "Id": "ucar",
@@ -85,21 +93,16 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R00O,o02S"
+      "Value": ""
     },
     {
       "Id": "uhpm",
       "Value": 1100
     },
     {
-      "Id": "udep",
-      "Type": 3,
-      "Value": "o06Q"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "uhot",

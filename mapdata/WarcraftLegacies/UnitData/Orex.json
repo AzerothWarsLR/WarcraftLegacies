@@ -65,14 +65,9 @@
       "Value": 0
     },
     {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "R05R"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "uhot",
@@ -90,13 +85,13 @@
       "Value": "Summon Rexxar"
     },
     {
-      "Id": "ubpy",
-      "Value": 1
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNrexxarhd.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
     }
   ]
 }
