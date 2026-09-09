@@ -1,0 +1,68 @@
+{
+  "OldId": "Robs",
+  "NewId": "RT04",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "n049"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratr"
+    },
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "otwc"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Rite of Vision"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Rite of Vision"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases Bluffwatchers' attack range."
+    }
+  ]
+}

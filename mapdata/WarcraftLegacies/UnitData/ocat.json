@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": ""
+      "Value": "AZ01"
     },
     {
       "Id": "ubld",
@@ -49,7 +49,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhar,Rolf,Rhme,Rguv"
+      "Value": "RZ01,Rhar,Rolf,Rhme,Rguv"
     },
     {
       "Id": "ucar",
@@ -69,13 +69,9 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCatapult.blp"
     },
     {
-      "Id": "ubpx",
-      "Value": 2
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "umdl",
@@ -104,7 +100,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Catapult"
+      "Value": "Demolisher"
     },
     {
       "Id": "ussc",
@@ -114,12 +110,12 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Catapult"
+      "Value": "Train Demolisher"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Barbaric boulder tossing siege weaponry."
+      "Value": "Barbaric boulder tossing siege weaponry, doused in burning oil."
     }
   ]
 }

@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0A5,A069,Adtg,Aven"
+      "Value": "Adtg,AT03"
     },
     {
       "Id": "ubld",
@@ -62,7 +62,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rovs,Rguv"
+      "Value": "Rhme,Rhar,Rguv,RT11"
     },
     {
       "Id": "ureq",
@@ -74,9 +74,22 @@
       "Value": 650
     },
     {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Warsong)"
+      "Value": " (Tauren Tribes)"
     },
     {
       "Id": "usca",
@@ -87,6 +100,31 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Highly mobile flying creature. Excellent at scouting."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Wyvern"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Spirit Wind Rider"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWyvern.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\orc\\SpiritWyvern\\SpiritWyvern.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\DruidoftheTalonMissile\\DruidoftheTalonMissile.mdl"
     }
   ]
 }

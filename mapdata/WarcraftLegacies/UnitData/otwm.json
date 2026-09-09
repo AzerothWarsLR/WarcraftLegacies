@@ -1,0 +1,75 @@
+{
+  "OldId": "ofor",
+  "NewId": "otwm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 14
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 15
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R09X,R00C,R006,R04R,R09N,Rhme,Rhar,Rosp,Rorb"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes Research)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "War Mill"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build War Mill"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "General research building. "
+    }
+  ]
+}

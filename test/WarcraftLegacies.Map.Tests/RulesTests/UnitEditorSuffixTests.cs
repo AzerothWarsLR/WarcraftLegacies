@@ -25,6 +25,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "KulTiras",
     "Legion",
     "Lordaeron",
+    "Orcish",
     "Quelthalas",
     "Scarlet",
     "Scourge",

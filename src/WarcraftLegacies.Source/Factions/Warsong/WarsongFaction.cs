@@ -79,9 +79,9 @@ public sealed class WarsongFaction : Faction
     AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
-    // AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream)); // Disabled: overlaps Tauren Tribes' Long March rescue at Stonemaul Keep, Warsong is being removed
-    AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
-    // AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Warsong.GromHellscream)); // Disabled: overlaps Tauren Tribes' Long March rescue at Thunder Bluff, Warsong is being removed
+    //AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Stonemaul Keep
+    //AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Orc.GromHellscream));
+    //AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Thunder Bluff
   }
 
   private static void ReplaceWithFactionUnits(Faction pickedFaction)
@@ -113,7 +113,7 @@ public sealed class WarsongFaction : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveControlLegend(AllLegends.Warsong.GromHellscream, false)
+        new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
         {
           EligibleFactions = new List<Faction>
           {
@@ -139,7 +139,7 @@ public sealed class WarsongFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Warsong.GromHellscream, false)
+          new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
           {
             EligibleFactions = new List<Faction>{this}
           }
@@ -151,7 +151,7 @@ public sealed class WarsongFaction : Faction
 
     ResearchManager.Register(new FlightPath(
       this,
-      UPGRADE_R09N_FLIGHT_PATH_WARSONG,
+      UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES,
       70));
   }
 }

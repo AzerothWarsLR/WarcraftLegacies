@@ -58,7 +58,7 @@ public sealed class QuestWarsongHold : QuestData
     CreateStructureForced(completingFaction.Player, UNIT_N08E_SHADOWPRIEST_WARSONG, -8299, 16110, 1.850517f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST, -8512, 15936, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_N08E_SHADOWPRIEST_WARSONG, -8513, 16171, 1.126743f * MathEx.DegToRad, 128);
-    CreateStructureForced(completingFaction.Player, UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, -8192, 16576, 4.712389f * MathEx.DegToRad, 128);
+    //CreateStructureForced(completingFaction.Player, UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, -8192, 16576, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O02M_WARSONG_GRUNT_WARSONG, -8048, 16427, -0.7628738f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O02M_WARSONG_GRUNT_WARSONG, -8065, 15788, -0.08624744f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O028_BURROW_WARSONG_FARM, -7936, 16768, 4.712389f * MathEx.DegToRad, 128);
@@ -69,7 +69,7 @@ public sealed class QuestWarsongHold : QuestData
     CreateStructureForced(completingFaction.Player, UNIT_N03E_IRON_KEEP_WARSONG_TOWER, -8320, 16000, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O02M_WARSONG_GRUNT_WARSONG, -7086, 15749, 1.348478f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_N03E_IRON_KEEP_WARSONG_TOWER, -7808, 16128, 4.712389f * MathEx.DegToRad, 128);
-    CreateStructureForced(completingFaction.Player, UNIT_ORAI_RAIDER_WARSONG, -7319, 15134, 0.467489f * MathEx.DegToRad, 128);
+    //CreateStructureForced(completingFaction.Player, UNIT_ORAI_RAIDER_WARSONG, -7319, 15134, 0.467489f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, -8672, 15328, 4.712389f * MathEx.DegToRad, 128);
 
     completingFaction.ModObjectLimit(RequiredResearchId, -Faction.Unlimited);

@@ -88,6 +88,16 @@
       "Value": "air,ground,enemy,neutral,organic"
     },
     {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RZ04"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
       "Id": "abpx",
       "Value": 2
     },

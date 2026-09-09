@@ -6,11 +6,13 @@ using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
+using MacroTools.Researches;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared.Researches;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde;
@@ -74,6 +76,7 @@ public sealed class OrcishHordeFaction : Faction
   /// <inheritdoc />
   public override void OnRegistered()
   {
+    RegisterResearches();
     OrcishHordeSpells.Setup();
     OrcishHordeTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -82,7 +85,7 @@ public sealed class OrcishHordeFaction : Faction
 
   private void RegisterQuests()
   {
-    var greatHall = AllPreplacedWidgets.Units.GetClosest(UNIT_O078_GREAT_HALL_ORCISH_HORDE_T1, -2720f, -8544f);
+    var greatHall = AllPreplacedWidgets.Units.GetClosest(UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, -2720f, -8544f);
 
     var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar);
     StartingQuest = AddQuest(quest);
@@ -106,10 +109,10 @@ public sealed class OrcishHordeFaction : Faction
 
   private static void SetupInitialTowerAssault()
   {
-    var tower = AllPreplacedWidgets.Units.GetClosest(UNIT_O07E_WATCH_TOWER_ORCISH_HORDE, -2488.3f, -9027.9f);
-    var murlocOne = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, -2438.3f,
+    var tower = AllPreplacedWidgets.Units.GetClosest(UNIT_OWTW_WATCH_TOWER_ORCISH_HORDE_TOWER, -2488.3f, -9027.9f);
+    var murlocOne = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, -2438.3f,
       -8977.9f);
-    var murlocTwo = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_DARKSPEAR_ISLES, -2538.3f,
+    var murlocTwo = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, -2538.3f,
       -9077.9f);
 
     GameTimeManager.RegisterOnTurn(1, () =>
@@ -123,7 +126,7 @@ public sealed class OrcishHordeFaction : Faction
 
   private static void SetupShipRepairPeon(float shipX, float shipY)
   {
-    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_O07A_PEON_ORCISH_HORDE, shipX, shipY);
+    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, shipX, shipY);
     peon.IsInvulnerable = true;
     GameTimeManager.RegisterOnTurn(1, () => peon.SetAnimation("work"));
   }
@@ -170,5 +173,26 @@ public sealed class OrcishHordeFaction : Faction
     var dialogue = _unusedTrollDialogue[index];
     _unusedTrollDialogue.RemoveAt(index);
     Player?.QueueDialogue(dialogue);
+  }
+
+  private void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RZ02_BLADEMASTERS_ORCISH_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_O00G_BLADEMASTER_ORCISH_HORDE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RZ03_KOR_KRON_ELITES_ORCISH_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 6);
+        }
+      });
   }
 }

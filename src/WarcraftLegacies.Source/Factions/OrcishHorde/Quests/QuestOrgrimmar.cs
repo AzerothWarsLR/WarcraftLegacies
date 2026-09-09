@@ -20,7 +20,7 @@ public sealed class QuestOrgrimmar : QuestData
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
-    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_O07G_FORTRESS_ORCISH_HORDE_T3));
+    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_ORCISH_HORDE_T3));
     AddObjective(new ObjectiveExpire(13, Title));
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveFactionQuestResolved(countdownToExtinction, faction)

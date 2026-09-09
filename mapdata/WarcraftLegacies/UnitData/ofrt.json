@@ -64,12 +64,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R05O,R00R"
+      "Value": "R05O,RZ02,RZ03"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o00A,opeo"
+      "Value": "n03F,o00G,opeo"
     },
     {
       "Id": "ulum",
@@ -92,7 +92,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf T3)"
+      "Value": "(Orcish Horde T3)"
     },
     {
       "Id": "uhot",

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
@@ -7,6 +8,7 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared.Researches;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes;
 
@@ -39,12 +41,12 @@ public sealed class TaurenTribesFaction : Faction
       "tauren",
       "tt"
     };
-    _tent = AllPreplacedWidgets.Units.GetClosest(UNIT_OTNT_TAUREN_CAMP_TAUREN_TRIBES, CampX, CampY);
+    _tent = AllPreplacedWidgets.Units.GetClosest(UNIT_OTNT_CHIEF_S_LODGE_TAUREN_TRIBES_T1, CampX, CampY);
     _productionBuildings = new List<unit>
     {
-      AllPreplacedWidgets.Units.GetClosest(UNIT_OTWC_WAR_CAMP_TAUREN_TRIBES, CampX, CampY),
-      AllPreplacedWidgets.Units.GetClosest(UNIT_OTBE_BEASTIARY_TAUREN_TRIBES, CampX, CampY),
-      AllPreplacedWidgets.Units.GetClosest(UNIT_OTSL_SPIRIT_LODGE_TAUREN_TRIBES, CampX, CampY)
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTWC_PROVING_GROUND_TAUREN_TRIBES_BARRACKS, CampX, CampY),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTBE_WYVERN_ROOST_TAUREN_TRIBES, CampX, CampY),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTSL_HALL_OF_ELDERS_TAUREN_TRIBES, CampX, CampY)
     };
     ProcessObjectInfo(TaurenTribesObjectInfo.GetAllObjectLimits());
   }
@@ -67,6 +69,23 @@ public sealed class TaurenTribesFaction : Faction
 
   private void RegisterResearches()
   {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RT01_TAUREN_CHIEFTAINS_TAUREN_TRIBES, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_VP51_TAUREN_CHIEFTAIN_TAUREN_TRIBES_ELITE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RT02_OGRE_LORDS_TAUREN_TRIBES, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE, 6);
+        }
+      });
     ResearchManager.Register(new StartTheLongMarch(this, _theLongMarch, _tent, _productionBuildings));
   }
 }

@@ -28,9 +28,9 @@ public sealed class QuestCountdownToExtinction : QuestData
   /// </summary>
   private static readonly Dictionary<int, int> _keyBuildingTinyItems = new()
   {
-    { UNIT_O078_GREAT_HALL_ORCISH_HORDE_T1, ITEM_I01Z_TINY_GREAT_HALL_ORCISH_HORDE },
-    { UNIT_O075_WAR_CAMP_ORCISH_HORDE, ITEM_I020_TINY_WAR_CAMP_ORCISH_HORDE },
-    { UNIT_O076_ALTAR_OF_STORMS_ORCISH_HORDE, ITEM_I021_TINY_ALTAR_OF_STORMS_ORCISH_HORDE }
+    { UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, ITEM_I01Z_TINY_GREAT_HALL },
+    { UNIT_OBAR_WAR_CAMP_ORCISH_HORDE_BARRACKS, ITEM_I020_TINY_WAR_CAMP },
+    { UNIT_OALT_ALTAR_OF_STORMS_ORCISH_HORDE_ALTAR, ITEM_I021_TINY_ALTAR_OF_STORMS }
   };
 
   private readonly Rectangle _buildZone;
@@ -89,10 +89,10 @@ public sealed class QuestCountdownToExtinction : QuestData
   private void GrantTinyBuildingItems(player owningPlayer)
   {
     var thrall = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
-      .FirstOrDefault(u => u.UnitType == UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE);
+      .FirstOrDefault(u => u.UnitType == UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE);
     if (thrall == null)
     {
-      thrall = unit.Create(owningPlayer, UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, _retreatDestination.X,
+      thrall = unit.Create(owningPlayer, UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, _retreatDestination.X,
         _retreatDestination.Y, 0);
     }
 
@@ -174,22 +174,22 @@ public sealed class QuestCountdownToExtinction : QuestData
     var spawnIndex = 0;
     for (var i = 0; i < GruntCount; i++)
     {
-      CreateReinforcement(owningPlayer, UNIT_O074_GRUNT_ORCISH_HORDE, spawnIndex++);
+      CreateReinforcement(owningPlayer, UNIT_OGRU_GRUNT_ORCISH_HORDE, spawnIndex++);
     }
 
-    CreateReinforcement(owningPlayer, UNIT_OKOD_KODO_BEAST_WARSONG, spawnIndex++);
+    CreateReinforcement(owningPlayer, UNIT_OKOD_KODO_BEAST_TAUREN_TRIBES, spawnIndex++);
 
     for (var i = 0; i < ShamanCount; i++)
     {
-      CreateReinforcement(owningPlayer, UNIT_OSHM_SHAMAN_FROSTWOLF, spawnIndex++);
+      CreateReinforcement(owningPlayer, UNIT_OSHM_SHAMAN_ORCISH_HORDE, spawnIndex++);
     }
 
     for (var i = 0; i < PeonCount; i++)
     {
-      CreateReinforcement(owningPlayer, UNIT_O07A_PEON_ORCISH_HORDE, spawnIndex++);
+      CreateReinforcement(owningPlayer, UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, spawnIndex++);
     }
 
-    CreateReinforcement(owningPlayer, UNIT_TP52_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, spawnIndex);
+    CreateReinforcement(owningPlayer, UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, spawnIndex);
   }
 
   private void CreateReinforcement(player owningPlayer, int unitTypeId, int spawnIndex)
