@@ -27,12 +27,12 @@
       "Value": 0
     },
     {
-      "Id": "uver",
-      "Value": 1
-    },
-    {
       "Id": "usle",
       "Value": 0
+    },
+    {
+      "Id": "uver",
+      "Value": 1
     },
     {
       "Id": "unsf",

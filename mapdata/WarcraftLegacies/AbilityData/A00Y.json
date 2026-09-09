@@ -32,11 +32,6 @@
       "Value": "stop"
     },
     {
-      "Level": 1,
-      "Id": "amcs",
-      "Value": 0
-    },
-    {
       "Id": "aher",
       "Value": 0
     },
@@ -77,11 +72,6 @@
       "Id": "acat",
       "Type": 3,
       "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl"
-    },
-    {
-      "Id": "acap",
-      "Type": 3,
-      "Value": "origin"
     },
     {
       "Id": "ansf",
