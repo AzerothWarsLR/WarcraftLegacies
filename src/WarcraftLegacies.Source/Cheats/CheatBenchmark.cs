@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -20,8 +20,8 @@ public sealed class CheatBenchmark : Command
   private const float TargetFieldRightOffset = 400;
   private const string ReportPath = @"WarcraftLegacies-benchmark-report.pld";
 
-  private static readonly List<unit> Targets = new();
-  private static readonly List<double> Times = new();
+  private static readonly List<unit> _targets = new();
+  private static readonly List<double> _times = new();
   private static Spell? _spell;
   private static unit? _caster;
   private static player? _owner;
@@ -113,7 +113,7 @@ public sealed class CheatBenchmark : Command
     _targetCount = targets;
     _sampleCount = samples;
     _sample = 0;
-    Times.Clear();
+    _times.Clear();
     _caster = unit.Create(commandUser, DummyCasterManager.UnitTypeId, center.X, center.Y, 0);
     _caster.SetPathing(false);
     _caster.MaxLife = 10000;
@@ -198,7 +198,7 @@ public sealed class CheatBenchmark : Command
       CreateTargets();
       _caster!.EndAbilityCooldown(_spell!.Id);
       var started = Now();
-      _spell.OnCast(_caster, Targets[0], _targetCenter);
+      _spell.OnCast(_caster, _targets[0], _targetCenter);
       var elapsed = (Now() - started) * 1000;
       var sampleName = _sample == 0 ? "warmup" : _sample.ToString(CultureInfo.InvariantCulture);
       Console.WriteLine($"BENCH spell={FourCc.GetString(_spell.Id)} sample={sampleName} scope=scripted-oncast " +
@@ -206,7 +206,7 @@ public sealed class CheatBenchmark : Command
                         $"cpuMs={elapsed.ToString("0.###", CultureInfo.InvariantCulture)}");
       if (_sample > 0)
       {
-        Times.Add(elapsed);
+        _times.Add(elapsed);
       }
       After(0.75f, CompleteSample);
       return true;
@@ -269,12 +269,12 @@ public sealed class CheatBenchmark : Command
         return;
       }
 
-      var average = Times.Average();
+      var average = _times.Average();
       var spellName = FourCc.GetString(_spell!.Id);
       var result = $"BENCH_RESULT spell={spellName} scope=scripted-oncast fixture={GetFixtureName()} " +
                    $"spawnedTargets={_targetCount} samples={_sampleCount} " +
                    $"avgCpuMs={average.ToString("0.###", CultureInfo.InvariantCulture)} " +
-                   $"cpuMs=[{string.Join(",", Times.Select(x => x.ToString("0.###", CultureInfo.InvariantCulture)))}]";
+                   $"cpuMs=[{string.Join(",", _times.Select(x => x.ToString("0.###", CultureInfo.InvariantCulture)))}]";
       Console.WriteLine(result);
       WriteLocalReport(result);
       _owner!.DisplayTextTo($"{spellName} OnCast: {average.ToString("0.###", CultureInfo.InvariantCulture)}ms average. " +
@@ -307,14 +307,14 @@ public sealed class CheatBenchmark : Command
       target.MaxMana = 10000;
       target.Mana = 10000;
       target.SetPausedEx(true);
-      Targets.Add(target);
+      _targets.Add(target);
     }
   }
 
   private static void CleanupTargets()
   {
-    var targets = Targets.ToList();
-    Targets.Clear();
+    var targets = _targets.ToList();
+    _targets.Clear();
     foreach (var target in targets)
     {
       target.SetPausedEx(false);
