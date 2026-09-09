@@ -66,10 +66,10 @@ public sealed class DefensiveOrbs : UnitTrait, IEffectOnSpellEffect
     var newOrb = new DefensiveOrbMissile(caster, caster)
     {
       OrbitalPeriod = OrbitalPeriod,
-      CollisionRadius = CollisionRadius.Base + CollisionRadius.PerLevel * abilityLevel,
+      CollisionRadius = CollisionRadius.GetValue(abilityLevel),
       EffectString = OrbEffectPath,
       Range = OrbitRadius,
-      Damage = Damage.Base + Damage.PerLevel * abilityLevel,
+      Damage = Damage.GetValue(abilityLevel),
       Duration = OrbDuration
     };
     MissileSystem.Add(newOrb);

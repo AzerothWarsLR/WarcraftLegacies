@@ -49,7 +49,7 @@ public sealed class AncestralLegion : Spell, IEffectOnLearn
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
     var level = GetAbilityLevel(caster);
-    var summonCap = SummonCap.Base + SummonCap.PerLevel * level;
+    var summonCap = SummonCap.GetValue(level);
     var ancestralLegionData = _ancestralLegionDataByUnit[caster];
     var availableTauren = ancestralLegionData.RememberedUnits;
     var taurenToSummon = Math.Min(summonCap, availableTauren);
@@ -58,8 +58,8 @@ public sealed class AncestralLegion : Spell, IEffectOnLearn
       var summonedTauren = unit.Create(caster.Owner, RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.Facing);
       summonedTauren.SetVertexColor(200, 165, 50, 150);
 
-      summonedTauren.MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0);
-      summonedTauren.MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
+      summonedTauren.MultiplyBaseDamage(1 + DamageBonus.GetValue(level), 0);
+      summonedTauren.MultiplyMaxHitpoints(1 + HealthBonus.GetValue(level));
       summonedTauren.SetTimedLife(Duration);
       summonedTauren.Name = Loc.Get("Ancestor");
       summonedTauren.AddType(unittype.Summoned);
