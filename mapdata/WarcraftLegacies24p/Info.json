@@ -64,7 +64,7 @@
     "B": 128,
     "A": 255
   },
-  "ScriptLanguage": 0,
+  "ScriptLanguage": 1,
   "SupportedModes": 1,
   "GameDataVersion": 1,
   "ForceDefaultCameraZoom": 1250,
