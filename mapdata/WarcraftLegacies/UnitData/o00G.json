@@ -117,11 +117,6 @@
       "Value": "ofrt"
     },
     {
-      "Id": "udep",
-      "Type": 3,
-      "Value": "o06R"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroBlademaster.blp"
