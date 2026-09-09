@@ -1,0 +1,28 @@
+{
+  "OldId": "oosc",
+  "NewId": "otko",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Pack Kodo"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 660
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    }
+  ]
+}

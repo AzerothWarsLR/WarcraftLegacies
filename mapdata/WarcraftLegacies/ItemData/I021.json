@@ -1,0 +1,47 @@
+{
+  "OldId": "tbak",
+  "NewId": "I021",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A147"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tiny Altar of Storms"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAltarOfStorms.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Tiny Altar of Storms"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Purchase Tiny Altar of Storms"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    }
+  ]
+}

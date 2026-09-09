@@ -79,9 +79,9 @@ public sealed class WarsongFaction : Faction
     AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
-    //AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Orc.GromHellscream));
+    //AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Stonemaul Keep
     //AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Orc.GromHellscream));
-    //AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Orc.GromHellscream));
+    //AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Thunder Bluff
   }
 
   private static void ReplaceWithFactionUnits(Faction pickedFaction)

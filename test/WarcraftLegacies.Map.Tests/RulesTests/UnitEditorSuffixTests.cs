@@ -18,6 +18,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Druids",
     "Fel",
     "Frostwolf",
+    "Orcish",
     "Gilneas",
     "Illidari",
     "Ironforge",
