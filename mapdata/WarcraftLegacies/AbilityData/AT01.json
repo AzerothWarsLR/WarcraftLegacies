@@ -36,13 +36,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Increases the damage of nearby friendly units by <AT01,DataA1,%>%."
+      "Value": "Increases the damage of nearby friendly units by \u003CAT01,DataA1,%\u003E%."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Increases the damage of nearby friendly units by <AT01,DataA2,%>%."
+      "Value": "Increases the damage of nearby friendly units by \u003CAT01,DataA2,%\u003E%."
     },
     {
       "Level": 2,

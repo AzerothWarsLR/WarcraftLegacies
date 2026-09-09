@@ -43,7 +43,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "RTLM"
+      "Value": "RT01,RT02"
     },
     {
       "Id": "ulum",
@@ -53,11 +53,6 @@
       "Id": "utra",
       "Type": 3,
       "Value": "vP51,vP52,vP59"
-    },
-    {
-      "Id": "ures",
-      "Type": 3,
-      "Value": "RT01,RT02"
     },
     {
       "Id": "uupt",
@@ -101,17 +96,17 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\tauren tent big.mdx"
+      "Value": "war3mapImported\\GreatHallHumanV1.02.mdl"
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Chief's Lodge"
+      "Value": "Chief\u0027s Lodge"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Chief's Lodge"
+      "Value": "Chief\u0027s Lodge"
     },
     {
       "Id": "ussc",

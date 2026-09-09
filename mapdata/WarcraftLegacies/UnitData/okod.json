@@ -10,14 +10,6 @@
       "Value": "AInv,ACrk,AT14,AT01,Advc,Adev,Apak"
     },
     {
-      "Id": "ubpx",
-      "Value": 2
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
       "Id": "uacq",
       "Type": 2,
       "Value": 600

@@ -189,14 +189,6 @@
       "Value": "nsel"
     },
     {
-      "Id": "abpx",
-      "Value": 1
-    },
-    {
-      "Id": "abpy",
-      "Value": 2
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarStomp.blp"

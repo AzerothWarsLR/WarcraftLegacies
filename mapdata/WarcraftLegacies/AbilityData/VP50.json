@@ -60,11 +60,6 @@
       "Value": "(Tauren Tribes - Elite)"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNReincarnation.blp"
-    },
-    {
       "Id": "aret",
       "Type": 3,
       "Value": "Learn Reincarnation - [|cffffcc00Level %d|r]"

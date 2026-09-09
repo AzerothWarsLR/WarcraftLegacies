@@ -130,17 +130,13 @@
       "Value": 0
     },
     {
-      "Id": "ubpx",
-      "Value": 1
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
       "Id": "ureq",
       "Type": 3,
       "Value": "othl"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
     },
     {
       "Id": "unsf",

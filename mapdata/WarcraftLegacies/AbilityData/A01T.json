@@ -115,10 +115,6 @@
       "Value": 0
     },
     {
-      "Id": "abpy",
-      "Value": 2
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNShockWave.blp"

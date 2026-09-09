@@ -149,7 +149,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Increases the attack speed by <AT14,DataD1,%>% and move speed by <AT14,DataC1,%>% of units inside the targeted area. |nLasts <AT14,Dur1> seconds. "
+      "Value": "Increases the attack speed by \u003CAT14,DataD1,%\u003E% and move speed by \u003CAT14,DataC1,%\u003E% of units inside the targeted area. |nLasts \u003CAT14,Dur1\u003E seconds. "
     }
   ]
 }

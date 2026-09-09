@@ -130,6 +130,11 @@
       "Value": 0
     },
     {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "othl"
+    },
+    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp"
@@ -137,15 +142,6 @@
     {
       "Id": "ubpx",
       "Value": 1
-    },
-    {
-      "Id": "ubpy",
-      "Value": 0
-    },
-    {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "othl"
     },
     {
       "Id": "unsf",
