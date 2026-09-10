@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 
 /// <summary>
 /// When researched, packs the starting camp's buildings into pack kodos and starts <see cref="LongMarchCaravan"/>
-/// marching them toward Stonemaul Keep and then Thunder Bluff.
+/// marching them toward Thunder Bluff.
 /// </summary>
 public sealed class StartTheLongMarch : Research
 {
@@ -85,16 +85,14 @@ public sealed class StartTheLongMarch : Research
 
     var thousandNeedlesControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N026_THOUSAND_NEEDLES);
     var thousandNeedlesTarget = new Point(thousandNeedlesControlPoint.X, thousandNeedlesControlPoint.Y);
-    var stonemaulControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N022_STONEMAUL);
-    var stonemaulTarget = new Point(stonemaulControlPoint.X, stonemaulControlPoint.Y);
     var mulgoreControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09G_MULGORE);
     var mulgoreTarget = new Point(mulgoreControlPoint.X, mulgoreControlPoint.Y);
 
     thousandNeedlesControlPoint.SetOwner(player.NeutralPassive);
     mulgoreControlPoint.SetOwner(player.NeutralPassive);
 
-    _quest.BeginMarch(kodos, thousandNeedlesTarget, Regions.StonemaulKeep, mulgoreTarget, Regions.ThunderBluff);
-    new LongMarchCaravan(_taurenTribes, _quest, kodos, guards, thousandNeedlesControlPoint, stonemaulTarget,
-      mulgoreControlPoint, Regions.StonemaulKeep, Regions.ThunderBluff);
+    _quest.BeginMarch(kodos, thousandNeedlesTarget, mulgoreTarget, Regions.ThunderBluff);
+    new LongMarchCaravan(_taurenTribes, _quest, kodos, guards, thousandNeedlesControlPoint,
+      mulgoreControlPoint, Regions.ThunderBluff);
   }
 }

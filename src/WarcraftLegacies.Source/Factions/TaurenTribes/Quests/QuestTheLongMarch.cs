@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 
 /// <summary>
 /// The Tauren Tribes' starting quest. Their camp packs up into a caravan of pack kodos, which marches from the
-/// starting camp to Stonemaul Keep and then Thunder Bluff, handing off each base as it arrives.
+/// starting camp to Thunder Bluff, handing off each base as it arrives.
 /// </summary>
 public sealed class QuestTheLongMarch : QuestData
 {
@@ -21,7 +21,6 @@ public sealed class QuestTheLongMarch : QuestData
 
   private List<unit> _kodos = new();
   private ObjectiveCaravanArrives? _thousandNeedlesObjective;
-  private ObjectiveCaravanArrives? _stonemaulObjective;
   private ObjectiveCaravanArrives? _mulgoreObjective;
   private ObjectiveCaravanArrives? _thunderBluffObjective;
 
@@ -42,19 +41,16 @@ public sealed class QuestTheLongMarch : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Control of Stonemaul Keep and Thunder Bluff, plus gold and experience scaled by how many pack kodos survive the march";
+    "Control of Thunder Bluff, plus gold and experience scaled by how many pack kodos survive the march";
 
   /// <summary>
   /// Adds the objectives that track the caravan's journey. Called once the camp has packed up into kodos.
   /// </summary>
-  public void BeginMarch(List<unit> kodos, Point thousandNeedles, Rectangle stonemaulKeep, Point mulgore,
-    Rectangle thunderBluff)
+  public void BeginMarch(List<unit> kodos, Point thousandNeedles, Point mulgore, Rectangle thunderBluff)
   {
     _kodos = kodos;
     _thousandNeedlesObjective = new ObjectiveCaravanArrives(thousandNeedles, "Thousand Needles");
     AddObjective(_thousandNeedlesObjective);
-    _stonemaulObjective = new ObjectiveCaravanArrives(stonemaulKeep, "Stonemaul Keep");
-    AddObjective(_stonemaulObjective);
     _mulgoreObjective = new ObjectiveCaravanArrives(mulgore, "Mulgore");
     AddObjective(_mulgoreObjective);
     _thunderBluffObjective = new ObjectiveCaravanArrives(thunderBluff, "Thunder Bluff");
@@ -64,9 +60,6 @@ public sealed class QuestTheLongMarch : QuestData
 
   /// <summary>Marks the Thousand Needles waypoint reached. Called by <see cref="WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics.LongMarchCaravan"/>.</summary>
   public void MarkThousandNeedlesReached() => _thousandNeedlesObjective!.Progress = QuestProgress.Complete;
-
-  /// <summary>Marks the Stonemaul Keep waypoint reached. Called by <see cref="WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics.LongMarchCaravan"/>.</summary>
-  public void MarkStonemaulReached() => _stonemaulObjective!.Progress = QuestProgress.Complete;
 
   /// <summary>Marks the Mulgore waypoint reached. Called by <see cref="WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics.LongMarchCaravan"/>.</summary>
   public void MarkMulgoreReached() => _mulgoreObjective!.Progress = QuestProgress.Complete;
