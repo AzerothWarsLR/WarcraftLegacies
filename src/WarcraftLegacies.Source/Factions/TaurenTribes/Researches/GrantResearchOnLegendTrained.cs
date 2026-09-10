@@ -1,4 +1,4 @@
-using WCSharp.Events;
+﻿using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 
