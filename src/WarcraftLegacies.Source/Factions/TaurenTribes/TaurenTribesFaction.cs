@@ -45,8 +45,8 @@ public sealed class TaurenTribesFaction : Faction
     _productionBuildings = new List<unit>
     {
       AllPreplacedWidgets.Units.GetClosest(UNIT_OTWC_PROVING_GROUND_TAUREN_TRIBES_BARRACKS, CampX, CampY),
-      AllPreplacedWidgets.Units.GetClosest(UNIT_OTBE_WYVERN_ROOST_TAUREN_TRIBES, CampX, CampY),
-      AllPreplacedWidgets.Units.GetClosest(UNIT_OTSL_HALL_OF_ELDERS_TAUREN_TRIBES, CampX, CampY)
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTSL_HALL_OF_ELDERS_TAUREN_TRIBES, CampX, CampY),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTAL_ALTAR_OF_THE_ANCESTORS_TAUREN_TRIBES_ALTAR, CampX, CampY)
     };
     ProcessObjectInfo(TaurenTribesObjectInfo.GetAllObjectLimits());
   }
