@@ -84,5 +84,6 @@ public static class TaurenTribesObjectInfo
 
 
     yield return new(UPGRADE_RTLM_START_THE_LONG_MARCH_TAUREN_TRIBES, 1);
+    yield return new(UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES, Unlimited);
   }
 }

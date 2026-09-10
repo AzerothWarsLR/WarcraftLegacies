@@ -59,6 +59,7 @@ public sealed class TaurenTribesFaction : Faction
     TaurenTribesSpells.Setup();
     TaurenTribesTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    new GrantResearchOnLegendTrained(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES);
   }
 
   private void RegisterQuests()
