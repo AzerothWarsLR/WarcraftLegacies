@@ -13,14 +13,14 @@ namespace WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 
 /// <summary>
 /// Drives the pack kodos and Tauren guards from the starting camp to Thunder Bluff, marching through
-/// Thousand Needles, Stonemaul Keep, and Mulgore along the way.
+/// Thousand Needles and Mulgore along the way.
 /// </summary>
 public sealed class LongMarchCaravan
 {
   private enum Stage
   {
+    CampExit,
     ThousandNeedles,
-    StonemaulKeep,
     Mulgore,
     ThunderBluff
   }
@@ -93,15 +93,13 @@ public sealed class LongMarchCaravan
   private readonly List<List<unit>> _pendingAmbushWaves = new();
   private int _ambushWavesSpawned;
   private int _ambushWavesDefeatedReported;
-  private readonly List<unit> _stonemaulRescueUnits;
   private readonly List<unit> _thunderBluffRescueUnits;
   private readonly unit _thousandNeedlesControlPoint;
   private readonly unit _mulgoreControlPoint;
   private readonly Point _thousandNeedlesTarget;
-  private readonly Point _stonemaulTarget;
   private readonly Point _mulgoreTarget;
   private readonly Point _thunderBluffTarget;
-  private readonly Rectangle _stonemaulKeep;
+  private readonly Point _campExitPoint;
   private readonly Rectangle _thunderBluff;
 
   private Stage _stage;
@@ -117,25 +115,22 @@ public sealed class LongMarchCaravan
   /// Initializes a new instance of the <see cref="LongMarchCaravan"/> class.
   /// </summary>
   public LongMarchCaravan(Faction taurenTribes, QuestTheLongMarch quest, List<unit> kodos, List<unit> guards,
-    unit thousandNeedlesControlPoint, Point stonemaulTarget, unit mulgoreControlPoint, Rectangle stonemaulKeep,
-    Rectangle thunderBluff)
+    unit thousandNeedlesControlPoint, unit mulgoreControlPoint, Rectangle thunderBluff)
   {
     _taurenTribes = taurenTribes;
     _quest = quest;
     _kodos = kodos;
     _guards = guards;
-    _stonemaulKeep = stonemaulKeep;
     _thunderBluff = thunderBluff;
     _thousandNeedlesControlPoint = thousandNeedlesControlPoint;
     _mulgoreControlPoint = mulgoreControlPoint;
     _thousandNeedlesTarget = thousandNeedlesControlPoint.GetPosition();
-    _stonemaulTarget = stonemaulTarget;
     _mulgoreTarget = mulgoreControlPoint.GetPosition();
     _thunderBluffTarget = thunderBluff.Center;
+    _campExitPoint = new Point(-10499.6f, -11050.0f);
 
-    _stage = Stage.ThousandNeedles;
+    _stage = Stage.CampExit;
 
-    _stonemaulRescueUnits = stonemaulKeep.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     _thunderBluffRescueUnits = thunderBluff.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
     foreach (var kodo in kodos)
@@ -149,7 +144,7 @@ public sealed class LongMarchCaravan
       SetUnitMoveSpeed(guard, EscortMoveSpeed);
     }
 
-    SetCurrentTarget(_thousandNeedlesTarget);
+    SetCurrentTarget(_campExitPoint);
 
     var formingKodos = _kodos.Where(kodo => kodo.Alive).ToList();
     FormUpKodoLine(formingKodos);
@@ -283,7 +278,15 @@ public sealed class LongMarchCaravan
 
     if (leadDistance < ArrivalRadius)
     {
-      BeginArrivalPause();
+      if (_stage == Stage.CampExit)
+      {
+        OnReachCampExit();
+      }
+      else
+      {
+        BeginArrivalPause();
+      }
+
       return;
     }
 
@@ -495,9 +498,6 @@ public sealed class LongMarchCaravan
       case Stage.ThousandNeedles:
         OnReachThousandNeedles();
         break;
-      case Stage.StonemaulKeep:
-        OnReachStonemaulKeep();
-        break;
       case Stage.Mulgore:
         OnReachMulgore();
         break;
@@ -505,6 +505,17 @@ public sealed class LongMarchCaravan
         OnReachThunderBluff();
         break;
     }
+  }
+
+  private void OnReachCampExit()
+  {
+    if (_stage != Stage.CampExit || _concluded)
+    {
+      return;
+    }
+
+    _stage = Stage.ThousandNeedles;
+    SetCurrentTarget(_thousandNeedlesTarget);
   }
 
   private void OnReachThousandNeedles()
@@ -516,19 +527,6 @@ public sealed class LongMarchCaravan
 
     AwardControlPoint(_thousandNeedlesControlPoint);
     _quest.MarkThousandNeedlesReached();
-    _stage = Stage.StonemaulKeep;
-    SetCurrentTarget(_stonemaulTarget);
-  }
-
-  private void OnReachStonemaulKeep()
-  {
-    if (_stage != Stage.StonemaulKeep || _concluded)
-    {
-      return;
-    }
-
-    _taurenTribes.Player?.RescueGroup(_stonemaulRescueUnits);
-    _quest.MarkStonemaulReached();
     _stage = Stage.Mulgore;
     SetCurrentTarget(_mulgoreTarget);
     _taurenTribes.Player?.QueueDialogue(_mulgorePassDialogue);
@@ -575,18 +573,15 @@ public sealed class LongMarchCaravan
       return;
     }
 
+    if (_stage == Stage.CampExit)
+    {
+      _stage = Stage.ThousandNeedles;
+    }
+
     if (_stage == Stage.ThousandNeedles)
     {
       AwardControlPoint(_thousandNeedlesControlPoint);
       _quest.MarkThousandNeedlesReached();
-      _stage = Stage.StonemaulKeep;
-    }
-
-    if (_stage == Stage.StonemaulKeep)
-    {
-      InjureRescuedUnits(_stonemaulRescueUnits);
-      _taurenTribes.Player?.RescueGroup(_stonemaulRescueUnits);
-      _quest.MarkStonemaulReached();
       _stage = Stage.Mulgore;
     }
 
@@ -636,7 +631,7 @@ public sealed class LongMarchCaravan
 
   private void TryAmbush()
   {
-    if (_concluded || _ambushers.Count > 0)
+    if (_concluded || _ambushers.Count > 0 || _stage == Stage.CampExit)
     {
       return;
     }
@@ -660,11 +655,14 @@ public sealed class LongMarchCaravan
     }
 
     var origin = living[GetRandomInt(0, living.Count - 1)];
-    var angle = GetRandomReal(0, 360) * Math.PI / 180.0;
+    var averageX = living.Average(kodo => kodo.X);
+    var averageY = living.Average(kodo => kodo.Y);
+    var forwardAngle = Math.Atan2(_currentTarget.Y - averageY, _currentTarget.X - averageX);
+    var angle = forwardAngle + (GetRandomReal(-90, 90) * Math.PI / 180.0);
     var spawnX = origin.X + (float)Math.Cos(angle) * 800;
     var spawnY = origin.Y + (float)Math.Sin(angle) * 800;
 
-    if (IsInsideRect(spawnX, spawnY, _stonemaulKeep) || IsInsideRect(spawnX, spawnY, _thunderBluff))
+    if (IsInsideRect(spawnX, spawnY, _thunderBluff))
     {
       return;
     }
