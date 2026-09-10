@@ -4,7 +4,6 @@ using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 
@@ -84,14 +83,12 @@ public sealed class StartTheLongMarch : Research
     }
 
     var thousandNeedlesControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N026_THOUSAND_NEEDLES);
-    var thousandNeedlesTarget = new Point(thousandNeedlesControlPoint.X, thousandNeedlesControlPoint.Y);
     var mulgoreControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09G_MULGORE);
-    var mulgoreTarget = new Point(mulgoreControlPoint.X, mulgoreControlPoint.Y);
 
     thousandNeedlesControlPoint.SetOwner(player.NeutralPassive);
     mulgoreControlPoint.SetOwner(player.NeutralPassive);
 
-    _quest.BeginMarch(kodos, thousandNeedlesTarget, mulgoreTarget, Regions.ThunderBluff);
+    _quest.BeginMarch(kodos);
     new LongMarchCaravan(_taurenTribes, _quest, kodos, guards, thousandNeedlesControlPoint,
       mulgoreControlPoint, Regions.ThunderBluff);
   }

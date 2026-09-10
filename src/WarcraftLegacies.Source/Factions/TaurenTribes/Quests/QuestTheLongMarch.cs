@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 
@@ -20,15 +22,26 @@ public sealed class QuestTheLongMarch : QuestData
   private const int ExperiencePerSurvivingKodo = 250;
 
   private List<unit> _kodos = new();
-  private ObjectiveCaravanArrives? _thousandNeedlesObjective;
-  private ObjectiveCaravanArrives? _mulgoreObjective;
-  private ObjectiveCaravanArrives? _thunderBluffObjective;
+  private readonly ObjectiveCaravanArrives _thousandNeedlesObjective;
+  private readonly ObjectiveCaravanArrives _mulgoreObjective;
+  private readonly ObjectiveCaravanArrives _thunderBluffObjective;
 
-  public QuestTheLongMarch() : base("The Long March",
+  public QuestTheLongMarch(LegendaryHero cairneBloodhoof, Point thousandNeedles, Point mulgore,
+    Rectangle thunderBluff) : base("The Long March",
     "The Tauren tribes must abandon their ancestral camp and march east across the Barrens, escorted by a handful of guards, to build a new home at Thunder Bluff. Centaur raiders infest the plains between here and there.",
     @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
   {
     AddObjective(new ObjectiveSelfExists());
+    AddObjective(new ObjectiveControlLegend(cairneBloodhoof, false));
+    AddObjective(new ObjectiveResearch(UPGRADE_RTLM_START_THE_LONG_MARCH_TAUREN_TRIBES,
+      UNIT_OTNT_CHIEF_S_LODGE_TAUREN_TRIBES_T1));
+
+    _thousandNeedlesObjective = new ObjectiveCaravanArrives(thousandNeedles, "Thousand Needles");
+    AddObjective(_thousandNeedlesObjective);
+    _mulgoreObjective = new ObjectiveCaravanArrives(mulgore, "Mulgore");
+    AddObjective(_mulgoreObjective);
+    _thunderBluffObjective = new ObjectiveCaravanArrives(thunderBluff, "Thunder Bluff");
+    AddObjective(_thunderBluffObjective);
   }
 
   /// <inheritdoc />
@@ -44,28 +57,22 @@ public sealed class QuestTheLongMarch : QuestData
     "Control of Thunder Bluff, plus gold and experience scaled by how many pack kodos survive the march";
 
   /// <summary>
-  /// Adds the objectives that track the caravan's journey. Called once the camp has packed up into kodos.
+  /// Adds the objective tracking the caravan's survival. Called once the camp has packed up into kodos.
   /// </summary>
-  public void BeginMarch(List<unit> kodos, Point thousandNeedles, Point mulgore, Rectangle thunderBluff)
+  public void BeginMarch(List<unit> kodos)
   {
     _kodos = kodos;
-    _thousandNeedlesObjective = new ObjectiveCaravanArrives(thousandNeedles, "Thousand Needles");
-    AddObjective(_thousandNeedlesObjective);
-    _mulgoreObjective = new ObjectiveCaravanArrives(mulgore, "Mulgore");
-    AddObjective(_mulgoreObjective);
-    _thunderBluffObjective = new ObjectiveCaravanArrives(thunderBluff, "Thunder Bluff");
-    AddObjective(_thunderBluffObjective);
     AddObjective(new ObjectiveCaravanSurvives(kodos));
   }
 
   /// <summary>Marks the Thousand Needles waypoint reached. Called by <see cref="WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics.LongMarchCaravan"/>.</summary>
-  public void MarkThousandNeedlesReached() => _thousandNeedlesObjective!.Progress = QuestProgress.Complete;
+  public void MarkThousandNeedlesReached() => _thousandNeedlesObjective.Progress = QuestProgress.Complete;
 
   /// <summary>Marks the Mulgore waypoint reached. Called by <see cref="WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics.LongMarchCaravan"/>.</summary>
-  public void MarkMulgoreReached() => _mulgoreObjective!.Progress = QuestProgress.Complete;
+  public void MarkMulgoreReached() => _mulgoreObjective.Progress = QuestProgress.Complete;
 
   /// <summary>Marks the Thunder Bluff waypoint reached. Called by <see cref="WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics.LongMarchCaravan"/>.</summary>
-  public void MarkThunderBluffReached() => _thunderBluffObjective!.Progress = QuestProgress.Complete;
+  public void MarkThunderBluffReached() => _thunderBluffObjective.Progress = QuestProgress.Complete;
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

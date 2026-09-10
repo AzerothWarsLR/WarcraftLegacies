@@ -8,7 +8,9 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Researches;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes;
 
@@ -19,6 +21,8 @@ public sealed class TaurenTribesFaction : Faction
 
   private readonly unit _tent;
   private readonly List<unit> _productionBuildings;
+  private readonly Point _thousandNeedlesTarget;
+  private readonly Point _mulgoreTarget;
   private QuestTheLongMarch _theLongMarch = null!;
 
   /// <inheritdoc />
@@ -48,6 +52,10 @@ public sealed class TaurenTribesFaction : Faction
       AllPreplacedWidgets.Units.GetClosest(UNIT_OTSL_HALL_OF_ELDERS_TAUREN_TRIBES, CampX, CampY),
       AllPreplacedWidgets.Units.GetClosest(UNIT_OTAL_ALTAR_OF_THE_ANCESTORS_TAUREN_TRIBES_ALTAR, CampX, CampY)
     };
+    var thousandNeedlesControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N026_THOUSAND_NEEDLES);
+    _thousandNeedlesTarget = new Point(thousandNeedlesControlPoint.X, thousandNeedlesControlPoint.Y);
+    var mulgoreControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09G_MULGORE);
+    _mulgoreTarget = new Point(mulgoreControlPoint.X, mulgoreControlPoint.Y);
     ProcessObjectInfo(TaurenTribesObjectInfo.GetAllObjectLimits());
   }
 
@@ -64,7 +72,8 @@ public sealed class TaurenTribesFaction : Faction
 
   private void RegisterQuests()
   {
-    _theLongMarch = new QuestTheLongMarch();
+    _theLongMarch = new QuestTheLongMarch(AllLegends.Tauren.CairneBloodhoof, _thousandNeedlesTarget, _mulgoreTarget,
+      Regions.ThunderBluff);
     StartingQuest = AddQuest(_theLongMarch);
   }
 
