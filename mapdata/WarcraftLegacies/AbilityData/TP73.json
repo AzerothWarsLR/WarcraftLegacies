@@ -30,7 +30,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "This unit\u0027s attacks instantly kill units with fewer hit points than 300% of this units damage, and heroes with fewer hit points than 100% of its damage."
+      "Value": "This unit\u0027s attacks instantly kill units with fewer hit points than 300% of this units damage, and heroes with fewer hit points than 115% of its damage."
     },
     {
       "Level": 1,
