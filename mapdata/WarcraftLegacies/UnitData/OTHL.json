@@ -70,7 +70,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "RT01,RT02"
+      "Value": "RT01,RT02,RTLM"
     },
     {
       "Id": "ureq",

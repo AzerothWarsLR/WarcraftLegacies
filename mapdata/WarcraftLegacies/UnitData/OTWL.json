@@ -78,6 +78,11 @@
       "Value": "otal"
     },
     {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "RTLM"
+    },
+    {
       "Id": "ulum",
       "Value": 0
     },
