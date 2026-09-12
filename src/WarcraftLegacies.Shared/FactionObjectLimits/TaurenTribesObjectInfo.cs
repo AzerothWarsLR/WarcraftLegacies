@@ -33,9 +33,6 @@ public static class TaurenTribesObjectInfo
     yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
     yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
 
-    yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, 1, new List<UnitCategory> { Tank, Support });
-    yield return new(UNIT_OREX_BEASTMASTER_TAUREN_TRIBES, 1, Tank);
-
     yield return new(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_FEL_HORDE_ORCISH_HORDE_TAUREN_TRIBES, Unlimited);
@@ -87,5 +84,6 @@ public static class TaurenTribesObjectInfo
 
 
     yield return new(UPGRADE_RTLM_START_THE_LONG_MARCH_TAUREN_TRIBES, 1);
+    yield return new(UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES, Unlimited);
   }
 }

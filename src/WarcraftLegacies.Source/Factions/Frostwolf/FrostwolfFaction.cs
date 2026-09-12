@@ -69,9 +69,9 @@ public sealed class FrostwolfFaction : Faction
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-    AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
-    AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
-    AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
+    AddQuest(new QuestRagetotem(AllLegends.Tauren.CairneBloodhoof));
+    AddQuest(new QuestHighmountain(AllLegends.Tauren.CairneBloodhoof, Regions.Highmountain_Unlock));
+    AddQuest(new QuestMammoth(AllLegends.Tauren.Rexxar));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall));
     AddQuest(new QuestWorldShaman(AllLegends.Orc.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
@@ -104,7 +104,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Rexxar, false)
+          new ObjectiveControlLegend(AllLegends.Tauren.Rexxar, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -124,7 +124,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Orc.Thrall, AllLegends.Frostwolf.Rexxar)
+          new ObjectiveLegendMeetsLegend(AllLegends.Orc.Thrall, AllLegends.Tauren.Rexxar)
         }));
 
     TriggeredDialogueManager.Add(
@@ -165,7 +165,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Orc.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Tauren.CairneBloodhoof, AllLegends.Orc.Thrall)
         }));
   }
 
