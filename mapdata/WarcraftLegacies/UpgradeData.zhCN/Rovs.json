@@ -1,0 +1,43 @@
+{
+  "OldId": "Rovs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "毒矛"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "OldId": "nfre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,ACls,A0EO"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R05X,Reuv,R019,Rhme,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯召唤）"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的重型远程单位。可施放回春术与闪电护盾。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "熊怪萨满长者"
+    }
+  ]
+}

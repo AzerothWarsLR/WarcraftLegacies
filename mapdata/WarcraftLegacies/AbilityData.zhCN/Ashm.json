@@ -1,0 +1,18 @@
+{
+  "OldId": "Ashm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "影遁"
+    }
+  ]
+}

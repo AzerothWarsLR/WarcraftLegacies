@@ -1,0 +1,34 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "坚韧之力"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该英雄唤起了内在的力量，攻击和防御提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Voodoo\\VoodooAuraTarget.mdl"
+    }
+  ],
+  "NewId": "B015"
+}

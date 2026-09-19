@@ -1,0 +1,97 @@
+{
+  "OldId": "ANab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R07M"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AI"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（炼金术士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "酸液炸弹"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标投掷一瓶酸液。酸液瓶在撞击时碎裂，将强酸溅射到附近的敌方单位身上。|n|n护甲降低<A09D,DataC1>点；对主要目标每秒造成 20 点伤害；对附近目标造成 15 点伤害。|n|cffffcc00持续 12 秒（对英雄为 3 秒）。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "酸液炸弹"
+    }
+  ],
+  "NewId": "A0NJ"
+}

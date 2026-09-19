@@ -1,0 +1,138 @@
+{
+  "OldId": "Absk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B005"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B005"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbility_Warrior_Charge.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（多个单位）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冲锋！"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力冲锋！"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的移动速度提高<A020,DataA2,%>%，攻击速度提高<A020,DataB2,%>%，持续<A020,Dur2>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的移动速度提高<A020,DataA2,%>%，攻击速度提高<A020,DataB2,%>%，持续<A020,Dur2>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力冲锋！"
+    }
+  ],
+  "NewId": "A020"
+}

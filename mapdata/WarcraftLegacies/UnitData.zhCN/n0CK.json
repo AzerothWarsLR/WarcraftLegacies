@@ -1,0 +1,101 @@
+{
+  "OldId": "nba2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACtb,A0ZN,A0AW,ACmi,A0V6"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua2b",
+      "Value": 220
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 145
+    },
+    {
+      "Id": "udef",
+      "Value": 12
+    },
+    {
+      "Id": "uhpm",
+      "Value": 3980
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ucs2",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "葛利安索恩"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(召唤)"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNCrystalGenerator.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DragonboneGolem.mdl"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放驱散魔法、战争践踏、残废与火焰之雨的重型远程单位。"
+    }
+  ],
+  "NewId": "n0CK"
+}

@@ -1,0 +1,82 @@
+{
+  "OldId": "ACf2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ufa1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ufa2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R078"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一名目标友方单位创造一道冰霜护盾，为其增加<A0FB,DataB1>点护甲，并使攻击该单位的近战单位减速<A0FB,Dur1>秒。 |n持续<A0FB,DataA1>秒。"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "霜甲术"
+    }
+  ],
+  "NewId": "A0FB"
+}

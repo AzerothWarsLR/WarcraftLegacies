@@ -1,0 +1,62 @@
+{
+  "OldId": "nfgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 250
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 100
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恩佐斯触须"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\NzothTentacle.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自深渊的扭曲触须。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（可憎附肢 - 恩佐斯）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练恩佐斯触须"
+    }
+  ],
+  "NewId": "n098"
+}

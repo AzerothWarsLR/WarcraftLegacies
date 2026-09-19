@@ -1,0 +1,154 @@
+{
+  "OldId": "Ainf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Binf"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Inf1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Inf2",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Inf3",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,neutral,self"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Broa"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Inf2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Inf1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（风的奇想）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化心灵之火"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标友方单位的攻击力提高<Ainf,DataA2,%>%，护甲提高<Ainf,DataB2>。|n持续<Ainf,Dur1>秒。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
+    }
+  ],
+  "NewId": "WWIR"
+}

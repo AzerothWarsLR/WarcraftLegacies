@@ -1,0 +1,433 @@
+{
+  "OldId": "ANcs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "attack"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰兰德 - 纳萨诺斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "箭雨"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习箭雨"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "用箭雨轰炸一片区域，使敌方地面单位昏迷 2 秒并对其造成伤害。射程 1200。 |n|n|cffffcc001级|r - 总计 200 点伤害。|n|cffffcc002级|r - 总计 300 点伤害。|n|cffffcc003级|r - 总计 400 点伤害。|n|cffffcc004级|r - 总计 500 点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "箭雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "箭雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "箭雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "箭雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用箭雨轰炸一片区域，对周围的敌方地面单位最多造成 200 点伤害，并使其昏迷 2 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用箭雨轰炸一片区域，对周围的敌方地面单位最多造成 200 点伤害，并使其昏迷 2 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用箭雨轰炸一片区域，对周围的敌方地面单位最多造成 200 点伤害，并使其昏迷 2 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用箭雨轰炸一片区域，对周围的敌方地面单位最多造成 200 点伤害，并使其昏迷 2 秒。"
+    }
+  ],
+  "NewId": "A0DP"
+}

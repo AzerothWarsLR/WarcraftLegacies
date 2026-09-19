@@ -1,0 +1,30 @@
+{
+  "OldId": "nhar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷羽刺的轻型飞行远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鹰身人斥候"
+    }
+  ]
+}

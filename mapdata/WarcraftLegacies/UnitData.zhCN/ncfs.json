@@ -1,0 +1,60 @@
+{
+  "OldId": "ncfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Xehc"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Xehc"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 525
+    },
+    {
+      "Id": "ua1b",
+      "Value": 12
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（等级 1）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水栖奴仆"
+    }
+  ]
+}

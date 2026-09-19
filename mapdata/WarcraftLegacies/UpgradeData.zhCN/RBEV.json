@@ -1,0 +1,64 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "n0AT"
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（黑暗帝国）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究恐惧嚎叫"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使畸形奇美拉可以使用恐惧嚎叫，使附近敌方单位的攻击力降低<MD19,DataA1,%>%，持续<MD19,Dur1>秒。"
+    }
+  ],
+  "NewId": "RBEV"
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "ACnr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "控制点生命恢复"
+    }
+  ],
+  "NewId": "A0UT"
+}

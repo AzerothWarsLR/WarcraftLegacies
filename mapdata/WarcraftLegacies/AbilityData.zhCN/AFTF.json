@@ -1,0 +1,28 @@
+{
+  "OldId": "AIva",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RFTF"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩奖励 - 实体）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血攻击"
+    }
+  ],
+  "NewId": "AFTF"
+}

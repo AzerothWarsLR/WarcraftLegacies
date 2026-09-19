@@ -1,0 +1,218 @@
+{
+  "OldId": "Amfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "mfl1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "mfl3",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "mfl4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "mfl5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "mfl4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "mfl1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "mfl3",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmfl,Bmfa"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "mfl6",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "mfl2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 精灵龙）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使精灵龙引导负向魔法能量，在附近敌人施放法术时对其造成伤害。|n|n持续<Amfl,Dur1>秒。|n每点法力值造成<Amfl,DataA1,.>点伤害。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使精灵龙引导负向魔法能量，在附近敌人施放法术时对其造成伤害。|n|n持续<Amfl,Dur1>秒。|n每点法力值造成<Amfl,DataA1,.>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "停止法力闪耀"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "停止引导法力闪耀。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法力闪耀 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法力闪耀 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力闪耀"
+    }
+  ]
+}

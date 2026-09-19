@@ -1,0 +1,34 @@
+{
+  "OldId": "uloc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "先祖之魂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练先祖之魂"
+    }
+  ],
+  "NewId": "u01L"
+}

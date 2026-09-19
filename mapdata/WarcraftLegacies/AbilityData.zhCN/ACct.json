@@ -1,0 +1,29 @@
+{
+  "OldId": "ACct",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 法瑞克。粉色 - 影狼、恐狼。灰色 - 黑暗巨魔狂战士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    }
+  ]
+}

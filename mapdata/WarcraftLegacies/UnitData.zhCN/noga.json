@@ -1,0 +1,45 @@
+{
+  "OldId": "noga",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "石槌大酋长科尔戈"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔之王。这个体格强健的食人魔能徒手碾碎弱小的野兽。拥有嘲讽、猛击与坚韧光环。"
+    }
+  ]
+}

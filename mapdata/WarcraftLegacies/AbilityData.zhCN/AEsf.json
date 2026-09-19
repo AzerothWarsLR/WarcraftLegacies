@@ -1,0 +1,182 @@
+{
+  "OldId": "AEsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Esf2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Esf2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰兰德）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习星辰坠落 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。|n持续<AEsf,Dur1>秒。|n|n|cffffcc00等级 1|r - 45 点伤害。|n|cffffcc00等级 2|r - 60 点伤害。|n|cffffcc00等级 3|r - 80 点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星辰坠落 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星辰坠落 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星辰坠落 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 45 点伤害。|n持续<AEsf,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 45 点伤害。|n持续<AEsf,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 45 点伤害。|n持续<AEsf,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "星辰坠落"
+    }
+  ]
+}

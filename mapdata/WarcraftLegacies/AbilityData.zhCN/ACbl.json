@@ -1,0 +1,40 @@
+{
+  "OldId": "ACbl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0.33
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立敌对 1）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嗜血"
+    }
+  ]
+}

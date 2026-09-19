@@ -1,0 +1,65 @@
+{
+  "OldId": "Awfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneBolt.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥术师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\ArcaneMissile_Fixed.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "魔法飞弹"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔法飞弹"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位发射一枚魔法飞弹，造成 60 点伤害，并使目标昏迷<A0D1,Dur1>秒。对英雄持续 0.1 秒。"
+    }
+  ],
+  "NewId": "A0D1"
+}

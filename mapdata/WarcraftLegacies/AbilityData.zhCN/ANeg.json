@@ -1,0 +1,143 @@
+{
+  "OldId": "ANeg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Neg1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Neg3",
+      "Type": 3,
+      "Value": "ANsy,A0PT"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Neg3",
+      "Type": 3,
+      "Value": "A0PT,A0RL"
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Neg3",
+      "Type": 3,
+      "Value": "A0RL,A0RN"
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Neg3",
+      "Type": 3,
+      "Value": "A0RN,A0RM"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Neg4",
+      "Type": 3,
+      "Value": "ANcs,A0RP"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Neg4",
+      "Type": 3,
+      "Value": "A0RP,A0RQ"
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Neg4",
+      "Type": 3,
+      "Value": "A0RQ,A0RS"
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Neg4",
+      "Type": 3,
+      "Value": "A0RS,A0RV"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Neg5",
+      "Type": 3,
+      "Value": "ANrg,A0RW"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Neg5",
+      "Type": 3,
+      "Value": "A0RW,A0UO"
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Neg5",
+      "Type": 3,
+      "Value": "A0UO,A0WO"
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Neg5",
+      "Type": 3,
+      "Value": "A0WO,A0Z6"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "每学习一级都会强化加兹鲁维的其他技能：|n|n|cffffcc00集束火箭|r - 扩大范围。|n|cffffcc00口袋工厂|r - 更快速地制造发条地精。|n|n同时提供额外攻击力并提高修补匠的移动速度。|n|n|cffffcc001级|r - +<ANeg,DataB1>点攻击力，+<ANeg,DataA1,%>% 移动速度。|n|cffffcc002级|r - +<ANeg,DataB2>点攻击力，+<ANeg,DataA2,%>% 移动速度。|n|cffffcc003级|r - +<ANeg,DataB3>点攻击力，+<ANeg,DataA3,%>% 移动速度。|n|cffffcc004级|r - +9 点攻击力，+40% 移动速度。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "工程学升级 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "工程学升级"
+    }
+  ]
+}

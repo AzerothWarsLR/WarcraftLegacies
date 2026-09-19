@@ -1,0 +1,175 @@
+{
+  "OldId": "osp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": "udef",
+      "Value": 9
+    },
+    {
+      "Id": "ua1b",
+      "Value": 57
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ubdg",
+      "Value": 1
+    },
+    {
+      "Id": "umh1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 800
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,Rhme"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ua1f",
+      "Value": 25
+    },
+    {
+      "Id": "ua1h",
+      "Value": 30
+    },
+    {
+      "Id": "ua1q",
+      "Value": 90
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,structure,tree,wall"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,ward"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarfTurret.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡 工程师）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_DwarfTurret.mdl"
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "便携火炮"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造便携火炮"
+    }
+  ],
+  "NewId": "o003"
+}

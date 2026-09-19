@@ -1,0 +1,137 @@
+{
+  "OldId": "AChx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BOhx"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 17
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ply1",
+      "Value": 99
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nsea,ncrb,nrat"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ply3",
+      "Type": 3,
+      "Value": "nalb,nvul,nsno"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ply4",
+      "Type": 3,
+      "Value": "nsha,npng"
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ply5",
+      "Type": 3,
+      "Value": "nshw,npnw"
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,enemy,organic,neutral"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ply2",
+      "Type": 3,
+      "Value": "nsea,ncrb,nrat"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 70
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼 - 先知）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将一个敌方单位变成一只随机小动物，持续<AChx,Dur1>秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将一个敌方单位变成一只随机小动物，持续<AChx,Dur1>秒。对英雄持续 1 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "妖术"
+    }
+  ]
+}

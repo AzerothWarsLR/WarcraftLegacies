@@ -1,0 +1,125 @@
+{
+  "OldId": "nfoh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0OC,A0EP,A09F"
+    },
+    {
+      "Id": "ubld",
+      "Value": 120
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 4500
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 1000
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Default.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "nbee"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,neutral"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac,R013,Rosp,R064,Renb"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SunWellCorrupted2.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "被腐化的太阳之井"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "太阳之井"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "太阳之井曾是高等精灵力量与能量的灯塔，如今却因黑暗魔法与腐化而搏动，背弃了它曾经纯净的奥术精髓。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯其他）"
+    }
+  ],
+  "NewId": "n079"
+}

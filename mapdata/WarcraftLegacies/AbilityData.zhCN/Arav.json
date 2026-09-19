@@ -1,0 +1,68 @@
+{
+  "OldId": "Arav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R09V"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 猛禽德鲁伊）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "让德鲁伊变为风暴乌鸦形态，获得飞行能力。可施放轮回转生。|n|n|cffffcc00能攻击空中单位。|r"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "猛禽德鲁伊形态"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "让德鲁伊变回自然形态。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴乌鸦形态"
+    }
+  ]
+}

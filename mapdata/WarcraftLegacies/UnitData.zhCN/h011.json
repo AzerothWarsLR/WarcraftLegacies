@@ -1,0 +1,136 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0RH"
+    },
+    {
+      "Id": "ubld",
+      "Value": 45
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 350
+    },
+    {
+      "Id": "ugor",
+      "Value": 3
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07F,R04R"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
+    },
+    {
+      "Id": "umpm",
+      "Value": 28000
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2.7
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 5
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "巨型火炮。可以消耗大量原油，向地图上任意位置发射一次毁灭性的延时打击。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "洲际炮击"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为洲际炮击"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinTinkerTurret_Artillery.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarfTurret.blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowTrollBurrow"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "CannonTower"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "h011"
+}

@@ -1,0 +1,57 @@
+{
+  "OldId": "Nmsr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 1100
+    },
+    {
+      "Id": "umpi",
+      "Value": 450
+    },
+    {
+      "Id": "umpm",
+      "Value": 450
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（怪物-洛克莫丹）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘的鱼人，擅长远程攻击。可学习火焰之雨。"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活鱼人巫师"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "鱼人巫师"
+    }
+  ],
+  "NewId": "n0D1"
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BOac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacredStrike.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "为十字军而团结"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到同心十字军的影响，攻击力提高。"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "2"
+    }
+  ],
+  "NewId": "B09U"
+}

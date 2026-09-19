@@ -1,0 +1,315 @@
+{
+  "OldId": "Ulic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANMC,A10K,ACm2,ZBII"
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "ANST,A0OK,ANSL"
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 48
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1200
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "uagi",
+      "Value": 8
+    },
+    {
+      "Id": "ua1z",
+      "Value": 800
+    },
+    {
+      "Id": "uhpm",
+      "Value": 5000
+    },
+    {
+      "Id": "usin",
+      "Value": 1800
+    },
+    {
+      "Id": "ua1b",
+      "Value": 100
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "msplash"
+    },
+    {
+      "Id": "usr1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "usd1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "udl1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "uqd1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "uhd1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ua1h",
+      "Value": 75
+    },
+    {
+      "Id": "ua1q",
+      "Value": 100
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,ground,item,notself,structure,ward"
+    },
+    {
+      "Id": "uint",
+      "Value": 35
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,notself,structure,ward"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucar",
+      "Value": 12
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "divine"
+    },
+    {
+      "Id": "ubdg",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上古之神"
+    },
+    {
+      "Id": "uver",
+      "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Nzoth.mdl"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "恩佐斯"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4.2
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，尤其擅长冰霜魔法。可学习霜甲术、冰霜新星、黑暗仪式和枯萎凋零。"
+    }
+  ],
+  "NewId": "U01Z"
+}

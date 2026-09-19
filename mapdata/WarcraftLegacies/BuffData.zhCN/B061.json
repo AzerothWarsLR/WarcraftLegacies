@@ -1,0 +1,19 @@
+{
+  "OldId": "Brai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhostMage.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "灵魂复生"
+    }
+  ],
+  "NewId": "B061"
+}

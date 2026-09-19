@@ -1,0 +1,80 @@
+{
+  "OldId": "npgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CF"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1075
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "uclb",
+      "Value": 180
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "uclg",
+      "Value": 180
+    },
+    {
+      "Id": "uclr",
+      "Value": 180
+    },
+    {
+      "Id": "ushr",
+      "Value": 0
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ArcaneTower"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造能量产生器"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "能量产生器"
+    }
+  ]
+}

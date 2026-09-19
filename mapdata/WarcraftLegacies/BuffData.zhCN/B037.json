@@ -1,0 +1,34 @@
+{
+  "OldId": "BEar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "羽月光环"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "羽月光环"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFeatherMoonAura.blp"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到羽月光环的影响，远程攻击造成的伤害提高。"
+    }
+  ],
+  "NewId": "B037"
+}

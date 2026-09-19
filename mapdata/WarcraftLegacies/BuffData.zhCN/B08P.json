@@ -1,0 +1,29 @@
+{
+  "OldId": "BNht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerationAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "恐惧光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到恐惧光环的影响，护甲降低。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B08P"
+}

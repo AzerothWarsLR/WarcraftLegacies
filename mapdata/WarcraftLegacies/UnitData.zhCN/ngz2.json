@@ -1,0 +1,51 @@
+{
+  "OldId": "ngz2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ua1b",
+      "Value": 23
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练怒熊"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "怒熊"
+    }
+  ]
+}

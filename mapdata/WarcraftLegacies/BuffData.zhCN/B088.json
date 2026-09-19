@@ -1,0 +1,14 @@
+{
+  "OldId": "BHbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "奥术炮击（施法者）"
+    }
+  ],
+  "NewId": "B088"
+}

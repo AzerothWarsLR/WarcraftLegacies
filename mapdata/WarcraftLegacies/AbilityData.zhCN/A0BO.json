@@ -1,0 +1,216 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（格罗姆）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尚武精神"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化你控制的所有非英雄、非飞行战歌单位；使其攻击速度提高 60%、移动速度提高 30%。攻击有 15% 的几率造成双倍伤害。格罗姆有 75% 的几率将远程物理攻击的伤害降为 0，而库卡隆和剑圣的攻击获得 50% 的吸血效果。|n持续 10 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "尚武精神"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习尚武精神 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "强化你控制的所有非英雄、非飞行战歌单位；使其攻击速度提高 60%、移动速度提高 30%。攻击有 15% 的几率造成双倍伤害。格罗姆有 75% 的几率将远程物理攻击的伤害降为 0，而库卡隆和剑圣的攻击获得 50% 的吸血效果。|n|n|cffffcc001级|r - 持续 10 秒。|n|cffffcc002级|r - 持续 15 秒。|n|cffffcc003级|r - 持续 25 秒。|n\n"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尚武精神"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尚武精神"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化你控制的所有非英雄、非飞行战歌单位；使其攻击速度提高 60%、移动速度提高 30%。攻击有 15% 的几率造成双倍伤害。格罗姆有 75% 的几率将远程物理攻击的伤害降为 0，而库卡隆和剑圣的攻击获得 50% 的吸血效果。|n持续 10 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化你控制的所有非英雄、非飞行战歌单位；使其攻击速度提高 60%、移动速度提高 30%。攻击有 15% 的几率造成双倍伤害。格罗姆有 75% 的几率将远程物理攻击的伤害降为 0，而库卡隆和剑圣的攻击获得 50% 的吸血效果。|n持续 10 秒。"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
+    }
+  ],
+  "NewId": "A0BO"
+}

@@ -1,0 +1,46 @@
+{
+  "OldId": "Ruwb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使举腹蚁可以使用蛛网技能。蛛网以丝网束缚一名敌方空中单位，将其拉虫人至地面。被网住的单位可被视作地面单位攻击。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "蛛网"
+    }
+  ],
+  "NewId": "RHL9"
+}

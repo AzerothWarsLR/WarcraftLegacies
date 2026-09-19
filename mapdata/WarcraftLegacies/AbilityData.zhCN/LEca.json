@@ -1,0 +1,56 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\commandButtons\\PASBTNSlaughter.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（假体）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "都城"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "都城"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该建筑是你的一座都城。当你的队伍不控制任何都城且控制点少于 6 个时，你将输掉游戏。"
+    }
+  ],
+  "NewId": "LEca"
+}

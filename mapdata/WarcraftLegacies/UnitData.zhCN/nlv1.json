@@ -1,0 +1,101 @@
+{
+  "OldId": "nlv1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0JG"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "summoned"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火元素"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "火焰之地被驯服的元素。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练火元素"
+    }
+  ]
+}

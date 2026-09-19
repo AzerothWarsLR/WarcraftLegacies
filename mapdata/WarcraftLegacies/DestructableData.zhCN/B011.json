@@ -1,0 +1,19 @@
+{
+  "OldId": "YTfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "寻路阻挡物（巨型）"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Unflyable.tga"
+    }
+  ],
+  "NewId": "B011"
+}

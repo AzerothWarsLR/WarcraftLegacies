@@ -1,0 +1,26 @@
+{
+  "OldId": "nplb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 625
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "北极熊"
+    }
+  ]
+}

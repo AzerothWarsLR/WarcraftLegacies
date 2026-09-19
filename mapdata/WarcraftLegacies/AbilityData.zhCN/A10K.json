@@ -1,0 +1,64 @@
+{
+  "OldId": "AEev",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTentacles.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "骇人附肢"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "骇人附肢"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位被触须环绕，触须会攻击附近的敌方单位。"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    }
+  ],
+  "NewId": "A10K"
+}

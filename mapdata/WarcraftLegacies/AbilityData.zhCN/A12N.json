@@ -1,0 +1,202 @@
+{
+  "OldId": "AEIl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 525
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E00F"
+    },
+    {
+      "Level": 3,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E00F"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "U02V"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "U02V"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "U02V"
+    },
+    {
+      "Level": 1,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E00F"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习虚空吞噬 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将英雄变形为一个拥有远程攻击的强大虚空领主。|n|n|cffffcc00等级 1|r - 175 点额外生命值，持续 40 秒。140 秒冷却时间。|n|cffffcc00等级 2|r - 350 点额外生命值，持续 60 秒。120 秒冷却时间。|n|cffffcc00等级 3|r - 525 点额外生命值，持续 80 秒。100 秒冷却时间。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空吞噬 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空吞噬 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空吞噬 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄变形为一个拥有远程攻击的强大虚空领主。提供 175 点额外生命值，持续 40 秒。冷却时间 140 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄变形为一个拥有远程攻击的强大虚空领主。提供 175 点额外生命值，持续 40 秒。冷却时间 140 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄变形为一个拥有远程攻击的强大虚空领主。提供 175 点额外生命值，持续 40 秒。冷却时间 140 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（索拉里安）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虚空吞噬"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+    }
+  ],
+  "NewId": "A12N"
+}

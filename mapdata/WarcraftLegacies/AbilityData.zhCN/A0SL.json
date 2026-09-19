@@ -1,0 +1,93 @@
+{
+  "OldId": "AHhb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hhb1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonancient,organic,vulnerable"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R09G"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（烈焰守护者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "赤红新生"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "赤红新生"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "射出一道亮红色的光芒，能为友方生命单位恢复 100 点生命值，或者对敌方亡灵单位造成一半的伤害。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities/Spells/Human/HolyBolt/BloodBoltSpecialArt.mdx"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNRedholylight.blp"
+    }
+  ],
+  "NewId": "A0SL"
+}

@@ -1,0 +1,68 @@
+{
+  "OldId": "npgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0RB,A0SR,A0KY,A01Y"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 5000
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "ushr",
+      "Value": 0
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ArcaneTower"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "维度发生器"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造维度发生器"
+    }
+  ],
+  "NewId": "n00E"
+}

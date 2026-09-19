@@ -1,0 +1,234 @@
+{
+  "OldId": "AEfk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 2500
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 3500
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 - 洛瑟玛）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "LEAS"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "烈焰爆裂"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameBurst.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习烈焰爆裂 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄释放一道火焰波，对周围的敌方单位造成伤害。|n|n|cffffcc001级|r - 对每个目标造成 150 点伤害。 |n|cffffcc002级|r - 对每个目标造成 200 点伤害。 |n|cffffcc003级|r - 对每个目标造成 250 点伤害。|n|cffffcc004级|r - 对每个目标造成 300 点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰爆裂 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰爆裂 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰爆裂 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰爆裂 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一道火焰波，对周围的敌人造成伤害。每道火焰波造成 150 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一道火焰波，对周围的敌人造成伤害。每道火焰波造成 150 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一道火焰波，对周围的敌人造成伤害。每道火焰波造成 150 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一道火焰波，对周围的敌人造成伤害。每道火焰波造成 150 点伤害。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameBurst.blp"
+    }
+  ],
+  "NewId": "A0G4"
+}

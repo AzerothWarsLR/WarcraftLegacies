@@ -1,0 +1,108 @@
+{
+  "OldId": "ushd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucbs",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500000
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 20000
+    },
+    {
+      "Id": "umvs",
+      "Value": 1
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umis",
+      "Value": 1
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Terrain\\LOSBlocker\\IntentionallyLeftBlank.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "寒冰屏障"
+    },
+    {
+      "Id": "ushu",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "永久隐形的灵魂，可以看见其他隐形单位，但无法攻击。\\n"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（可驱散假人）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练寒冰屏障"
+    }
+  ],
+  "NewId": "zbDF"
+}

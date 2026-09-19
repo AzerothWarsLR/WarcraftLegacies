@@ -1,0 +1,101 @@
+{
+  "OldId": "Reib",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gglm",
+      "Value": 25
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "o030"
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Id": "gtim",
+      "Value": 10
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落 - 龙类）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化弓 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化弓 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使黑曜石龙类的攻击距离提高 200。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使黑曜石龙类的攻击距离提高 200。"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化吐息"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonFire.blp"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    }
+  ],
+  "NewId": "R034"
+}

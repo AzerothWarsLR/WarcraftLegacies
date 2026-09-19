@@ -1,0 +1,245 @@
+{
+  "OldId": "AIfu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0CJ"
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0CI"
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ist1",
+      "Type": 3,
+      "Value": "n0CK"
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 235
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 270
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Isn1",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Isn1",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤葛利安索恩"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNCrystalGenerator.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNCrystalGenerator.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤葛利安索恩 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤葛利安索恩作为英雄的勇士作战。|n|n|cffffcc001级|r - 拥有以下技能：法术免疫、战争践踏、粉碎、投掷巨石。持续<A0WW,Dur1>秒。|n|cffffcc002级|r - 拥有额外技能：水晶打击。持续<A0WW,Dur2>秒。|n|cffffcc003级|r - 葛利安索恩变得更难被击杀，持续时间也大幅延长。持续<A0WW,Dur3>秒。\n"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤葛利安索恩"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤葛利安索恩"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤葛利安索恩"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤葛利安索恩，一个强大的魔像，在战斗中协助英雄。|n|cfff5962d技能：|R 投掷巨石、战争践踏、法术免疫、粉碎|n|n持续<A0WW,Dur1>秒|n|cffffcc00可攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤葛利安索恩，一个强大的魔像，在战斗中协助英雄。|n|cfff5962d技能：|R 投掷巨石、战争践踏、法术免疫、粉碎|n|n持续<A0WW,Dur1>秒|n|cffffcc00可攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤葛利安索恩，一个强大的魔像，在战斗中协助英雄。|n|cfff5962d技能：|R 投掷巨石、战争践踏、法术免疫、粉碎|n|n持续<A0WW,Dur1>秒|n|cffffcc00可攻击地面和空中单位。|r\n"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（帕萨雷恩）"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNCrystalGenerator.blp"
+    }
+  ],
+  "NewId": "A0WW"
+}

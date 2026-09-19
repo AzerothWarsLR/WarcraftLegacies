@@ -1,0 +1,69 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S00A,Avul,Aloc"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（海潮贤者 - 库尔提拉斯）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Whirlpool.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.2
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "漩涡"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练漩涡"
+    }
+  ],
+  "NewId": "o019"
+}

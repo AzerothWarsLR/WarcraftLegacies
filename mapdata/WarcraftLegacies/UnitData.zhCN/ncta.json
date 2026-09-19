@@ -1,0 +1,33 @@
+{
+  "OldId": "ncta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的纪元之树"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的纪元之树"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的纪元之树"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的纪元之树"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "升级到腐化的纪元之树以解锁更多新建筑和单位。"
+    }
+  ]
+}

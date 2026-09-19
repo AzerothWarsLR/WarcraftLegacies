@@ -1,0 +1,58 @@
+{
+  "OldId": "nwiz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A009"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 530
+    },
+    {
+      "Id": "umpi",
+      "Value": 140
+    },
+    {
+      "Id": "umpm",
+      "Value": 140
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巫师学徒"
+    }
+  ]
+}

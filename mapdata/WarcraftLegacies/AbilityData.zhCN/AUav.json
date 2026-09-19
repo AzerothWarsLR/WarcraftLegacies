@@ -1,0 +1,96 @@
+{
+  "OldId": "AUav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蓝色 - 提克迪奥斯）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "周围的友方近战单位在攻击敌方单位时可以获得生命值。 |n|n|cffffcc001级|r - 获得攻击伤害<AUav,DataA1,%>% 的生命值。 |n|cffffcc002级|r - 获得攻击伤害<AUav,DataA2,%>% 的生命值。 |n|cffffcc003级|r - 获得攻击伤害<AUav,DataA3,%>% 的生命值。 |n|cffffcc004级|r - 获得攻击伤害<AUav,DataA4,%>% 的生命值。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "吸血光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "周围的友方近战单位在攻击敌方单位时，可以获得其攻击伤害<AUav,DataA4,%>% 的生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血光环"
+    }
+  ]
+}

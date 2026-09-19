@@ -1,0 +1,49 @@
+{
+  "OldId": "ACah",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eah1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B032"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "惩戒光环"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASRetriAura.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一种光环，使附近友方单位获得伤害护盾，可将敌方单位攻击伤害的 30% 反弹回去。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "惩戒光环"
+    }
+  ],
+  "NewId": "A0SS"
+}

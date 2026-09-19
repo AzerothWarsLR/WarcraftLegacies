@@ -1,0 +1,34 @@
+{
+  "OldId": "Binf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位获得救赎，护甲和生命恢复速度提高。"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "救赎"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Sacred Guard Gold.mdx"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNSphereOfDivine.blp"
+    }
+  ],
+  "NewId": "B0B8"
+}

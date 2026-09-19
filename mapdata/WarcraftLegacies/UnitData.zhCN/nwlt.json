@@ -1,0 +1,69 @@
+{
+  "OldId": "nwlt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACct,ACev"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ua1b",
+      "Value": 17
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 12
+    },
+    {
+      "Id": "ugor",
+      "Value": 12
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 50
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "森林狼"
+    }
+  ]
+}

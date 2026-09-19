@@ -1,0 +1,56 @@
+{
+  "OldId": "desc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0CN,AIa3,AIi6,AIs3"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A0CN"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhanir.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性。可施放纠缠根须。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买这是从第一棵树加尼尔上折下的一根枝条。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "允许英雄传送一小段距离。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "加尼尔，母树"
+    }
+  ],
+  "NewId": "I00C"
+}

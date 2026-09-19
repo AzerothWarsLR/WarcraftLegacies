@@ -1,0 +1,58 @@
+{
+  "OldId": "Asal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Sal1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Sal2",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,neutral"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（未使用 2）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烧杀抢掠"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每次对敌方单位或建筑造成伤害的攻击都会带来一定的资源收益。不过这一版本的掠夺对单位和建筑均有效，但收益有所降低。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "掠夺"
+    }
+  ],
+  "NewId": "A08C"
+}

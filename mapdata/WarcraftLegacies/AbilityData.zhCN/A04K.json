@@ -1,0 +1,262 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 21
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarplating.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色 - 戴林，紫色 - 加里索斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强力守护"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeThree.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习强力守护 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "这位英雄凭借出众的防御本领，降低所受攻击的伤害。|n|n|cffffcc001级|r - 格挡<A04K,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A04K,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A04K,DataC3>点伤害。|n|cffffcc004级|r - 格挡<A04K,DataC4>点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力守护 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力守护 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力守护 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力守护 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+    }
+  ],
+  "NewId": "A04K"
+}

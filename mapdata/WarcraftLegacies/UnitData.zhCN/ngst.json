@@ -1,0 +1,97 @@
+{
+  "OldId": "ngst",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 150
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 35
+    },
+    {
+      "Id": "ugor",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "urtm",
+      "Value": 150
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,R00N"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACtb"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然-石制符记）"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人投掷巨石的强力近战单位。对法术免疫。"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "ACtb"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "岩石魔像"
+    }
+  ]
+}

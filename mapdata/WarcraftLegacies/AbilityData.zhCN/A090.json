@@ -1,0 +1,113 @@
+{
+  "OldId": "ACdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndr1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndr2",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ndr4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,notself,organic,ward"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落 - 邪能死亡骑士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂虹吸"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂虹吸"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "吸取目标敌方单位的生命与灵魂精华，每秒抽取其 60 点生命值和 20 点法力值并转移给施法者；或者每秒从施法者身上转移 50 点生命值和 20 点法力值给一个友方单位。|n|cffffcc00持续 12 秒（英雄为 6 秒）。\n"
+    }
+  ],
+  "NewId": "A090"
+}

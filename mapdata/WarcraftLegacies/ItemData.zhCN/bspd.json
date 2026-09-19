@@ -1,0 +1,32 @@
+{
+  "OldId": "bspd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 75
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时提高英雄的移动速度。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "速度之靴"
+    }
+  ]
+}

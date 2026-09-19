@@ -1,0 +1,311 @@
+{
+  "OldId": "AIdb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ihp2",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ihp2",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ihp2",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ihp2",
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Imp2",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Imp2",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Imp2",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Imp2",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,hero,nonhero,player"
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,hero,nonhero,player"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,hero,nonhero,player"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,hero,nonhero,player"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "大法师议会"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaStaff.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaStaff.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大法师议会 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大法师议会 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大法师议会 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大法师议会 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "为附近属于玩家的单位恢复生命值和魔法值。|n|n|cffffcc001级|r - 恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。 |n|cffffcc002级|r - 恢复<TPWC,DataB2>点生命值和<TPWC,DataC2>点魔法值。 |n|cffffcc003级|r - 恢复<TPWC,DataB3>点生命值和<TPWC,DataB3>点魔法值。 |n|cffffcc004级|r - 恢复<TPWC,DataB4>点生命值和<TPWC,DataB4>点魔法值。\n"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习大法师议会 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    }
+  ],
+  "NewId": "TPWC"
+}

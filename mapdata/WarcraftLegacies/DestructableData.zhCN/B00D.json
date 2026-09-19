@@ -1,0 +1,71 @@
+{
+  "OldId": "LTbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Round.tga"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "ShadowDalaranBuilding"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_WyrmrestTemple_White.mdl"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_WyrmrestTemple_White.mdl"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "龙眠神殿"
+    },
+    {
+      "Id": "bvcg",
+      "Value": 200
+    },
+    {
+      "Id": "bvcb",
+      "Value": 125
+    },
+    {
+      "Id": "bdsn",
+      "Type": 3,
+      "Value": "TowerDeath"
+    }
+  ],
+  "NewId": "B00D"
+}

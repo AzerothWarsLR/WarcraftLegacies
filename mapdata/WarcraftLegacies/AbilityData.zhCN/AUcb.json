@@ -1,0 +1,99 @@
+{
+  "OldId": "AUcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ucb5",
+      "Value": 12
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 阿努巴拉克）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄从目标尸体中孵化出腐尸甲虫来攻击英雄的敌人。甲虫可以永久持续。 |n|n|cffffcc001级|r - 孵化<AUcb,DataA1>只小型腐尸甲虫。最多 6 只甲虫。 |n|cffffcc002级|r - 孵化<AUcb,DataA2>只腐尸甲虫。最多 6 只甲虫。 |n|cffffcc003级|r - 孵化<AUcb,DataA3>只恐怖腐尸甲虫。最多 6 只甲虫。 |n|cffffcc004级|r - 孵化<AUcb,DataA4>只恐怖腐尸甲虫。最多 12 只甲虫。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "腐尸甲虫 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄从目标尸体中孵化出腐尸甲虫来攻击英雄的敌人。甲虫可以永久持续。 |n|n孵化<AUcb,DataA1>只小型腐尸甲虫。最多 6 只甲虫。 |n|n甲虫具有尖刺甲壳和 -4 酸性攻击。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄从目标尸体中孵化出腐尸甲虫来攻击英雄的敌人。甲虫可以永久持续。 |n|n孵化<AUcb,DataA1>只小型腐尸甲虫。最多 6 只甲虫。 |n|n甲虫具有尖刺甲壳和 -4 酸性攻击。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄从目标尸体中孵化出腐尸甲虫来攻击英雄的敌人。甲虫可以永久持续。 |n|n孵化<AUcb,DataA1>只小型腐尸甲虫。最多 6 只甲虫。 |n|n甲虫具有尖刺甲壳和 -4 酸性攻击。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄从目标尸体中孵化出腐尸甲虫来攻击英雄的敌人。甲虫可以永久持续。 |n|n孵化<AUcb,DataA1>只小型腐尸甲虫。最多 6 只甲虫。 |n|n甲虫具有尖刺甲壳和 -4 酸性攻击。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "腐尸甲虫"
+    }
+  ]
+}

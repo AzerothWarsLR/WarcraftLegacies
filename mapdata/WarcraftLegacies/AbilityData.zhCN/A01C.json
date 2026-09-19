@@ -1,0 +1,243 @@
+{
+  "OldId": "ANav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 165
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 1350
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（雷克萨）"
+    },
+    {
+      "Id": "aefs",
+      "Type": 3,
+      "Value": "BattleRoar"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "激活莫克纳萨化身时，雷克萨会获得额外护甲、额外生命值、额外攻击力和魔法免疫。|n持续 45 秒。|n|n|cffffcc001级|r - 额外 2 点护甲，额外 450 点生命值，额外 15 点攻击力。|n|cffffcc002级|r - 额外 4 点护甲，额外 900 点生命值，额外 30 点攻击力。|n|cffffcc003级|r - 额外 6 点护甲，额外 1350 点生命值，额外 45 点攻击力\n"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活化身可使雷克萨获得<A01C,DataA1>点额外护甲、<A01C,DataB1>点额外生命值、<A01C,DataC1>点额外攻击力和魔法免疫。|n持续<A01C,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活化身可使雷克萨获得<A01C,DataA1>点额外护甲、<A01C,DataB1>点额外生命值、<A01C,DataC1>点额外攻击力和魔法免疫。|n持续<A01C,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活化身可使雷克萨获得<A01C,DataA1>点额外护甲、<A01C,DataB1>点额外生命值、<A01C,DataC1>点额外攻击力和魔法免疫。|n持续<A01C,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "解除化身"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "解除化身"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "天神下凡"
+    }
+  ],
+  "NewId": "A01C"
+}

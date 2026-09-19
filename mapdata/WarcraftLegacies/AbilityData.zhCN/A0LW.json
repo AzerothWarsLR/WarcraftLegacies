@@ -1,0 +1,72 @@
+{
+  "OldId": "AEbl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ebl2",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（淡蓝色 - 伊利丹）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪现"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄传送一小段距离，使其能够自由进出战斗。|n10 秒冷却时间。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪现"
+    }
+  ],
+  "NewId": "A0LW"
+}

@@ -1,0 +1,45 @@
+{
+  "OldId": "Apxf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "pxf1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "pxf2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（凤凰）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "凤凰烈焰"
+    }
+  ],
+  "NewId": "A0EL"
+}

@@ -1,0 +1,213 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KT,A0GC,Adts"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0GC"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 106
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 500
+    },
+    {
+      "Id": "umpm",
+      "Value": 500
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R0A7,R061"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h022,n007,hpea"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然其他）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\other\\ArcaneObservatory\\ArcaneObservatory.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 170
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "紫罗兰城堡"
+    },
+    {
+      "Id": "uclr",
+      "Value": 250
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 6
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "h002"
+}

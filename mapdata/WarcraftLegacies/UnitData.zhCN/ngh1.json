@@ -1,0 +1,35 @@
+{
+  "OldId": "ngh1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放占据的轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "幽魂"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "Arst",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,alive,ancient,bridge,dead,friend,ground,invulnerable,mechanical,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 侍僧。蓝色 - 艾瑞达召唤者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恢复"
+    }
+  ]
+}

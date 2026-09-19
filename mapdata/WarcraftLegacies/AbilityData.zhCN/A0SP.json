@@ -1,0 +1,75 @@
+{
+  "OldId": "Apts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bapl,Bplg"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "debris,enemies,ground,organic,structure,tree,wall"
+    },
+    {
+      "Level": 1,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "nfgt"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASForbidden Ritual.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（尤格-萨隆）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "孳生触须"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "生成触须"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "遗忘者攻击时不会造成伤害，而是生成一根触须。|n该触须拥有 40-45 点伤害，持续<A0SP,Dur1>秒。"
+    }
+  ],
+  "NewId": "A0SP"
+}

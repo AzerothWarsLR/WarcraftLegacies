@@ -1,0 +1,43 @@
+{
+  "OldId": "dust",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 10
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "iuse",
+      "Value": 5
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "显影之尘"
+    }
+  ]
+}

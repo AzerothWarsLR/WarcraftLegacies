@@ -1,0 +1,227 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n0B9"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n0B9"
+    },
+    {
+      "Level": 4,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nfel"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n0B9"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（加里维克斯）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "加里维克斯召唤他的私人运输工具，向敌人倾泻火焰，并使他能够飞行。可运载 1 名英雄。|n|n|cffffcc001级|r - 180 秒冷却时间|n|cffffcc002级|r - 100 秒冷却时间|n|cffffcc003级|r - 20 秒冷却时间\n"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\ToonBoom\\ToonBoom.mdl"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤加里维克斯私人运输工具 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加里维克斯召唤他的私人运输工具，向敌人倾泻火焰，并使他能够飞行。可运载 1 名英雄。180 秒冷却时间"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加里维克斯召唤他的私人运输工具，向敌人倾泻火焰，并使他能够飞行。可运载 1 名英雄。180 秒冷却时间"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加里维克斯召唤他的私人运输工具，向敌人倾泻火焰，并使他能够飞行。可运载 1 名英雄。180 秒冷却时间"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加里维克斯召唤他的私人运输工具，向敌人倾泻火焰，并使他能够飞行。可运载 1 名英雄。180 秒冷却时间"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤加里维克斯私人运输工具 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤加里维克斯私人运输工具 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤加里维克斯私人运输工具 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤加里维克斯私人运输工具 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤加里维克斯私人运输工具"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpaceOrc_AttackHelicopter_Condor.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpaceOrc_AttackHelicopter_Condor.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    }
+  ],
+  "NewId": "A0JB"
+}

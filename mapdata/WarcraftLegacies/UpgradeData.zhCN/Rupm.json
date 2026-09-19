@@ -1,0 +1,13 @@
+{
+  "OldId": "Rupm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "背包"
+    }
+  ]
+}

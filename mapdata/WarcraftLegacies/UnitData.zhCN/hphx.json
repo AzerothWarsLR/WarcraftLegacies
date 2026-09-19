@@ -1,0 +1,51 @@
+{
+  "OldId": "hphx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0IM,Aphx,ACmi,ACrk,Apxf"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 70
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1750
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯-安纳斯特里安-等级 1）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "逐日者王朝忠诚的凤凰。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练奥"
+    }
+  ]
+}

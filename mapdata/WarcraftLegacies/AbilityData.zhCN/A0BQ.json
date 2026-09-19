@@ -1,0 +1,293 @@
+{
+  "OldId": "Aroc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 550
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,ward"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,ward"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,ward"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,ward"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦迪文）"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\SpiritDragonMissile(Azure).mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "多重射击"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTripleShot.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使该英雄的攻击向附近的敌方单位发射额外的投射物。|n|n|cffffcc001级|r - 攻击最多可攻击 3 个额外单位。|n|cffffcc002级|r - 攻击最多可攻击 4 个额外单位。|n|cffffcc003级|r - 攻击最多可攻击 5 个额外单位。|n|cffffcc004级|r - 攻击最多可攻击 6 个额外单位。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该英雄的攻击向最多 3 个附近的敌方单位发射额外投射物。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该英雄的攻击向最多 3 个附近的敌方单位发射额外投射物。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该英雄的攻击向最多 3 个附近的敌方单位发射额外投射物。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该英雄的攻击向最多 3 个附近的敌方单位发射额外投射物。"
+    }
+  ],
+  "NewId": "A0BQ"
+}

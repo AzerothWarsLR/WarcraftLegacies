@@ -1,0 +1,87 @@
+{
+  "OldId": "Remk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gglb",
+      "Value": 70
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "艾泽拉斯驯养术"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormWyrmEgg.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化虚空鳐，使其生命值提高 200 点，移动速度提高 50。"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究艾泽拉斯驯养术"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "RD06"
+}

@@ -1,0 +1,99 @@
+{
+  "OldId": "ACrj",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,neutral,self,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rej1",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Rej2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（火枪手）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在<A0TX,Dur1>秒内为目标友方单位恢复<A0TX,DataA1>点生命值和<A0TX,DataB1>点魔法值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "激活"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活"
+    }
+  ],
+  "NewId": "A0TX"
+}

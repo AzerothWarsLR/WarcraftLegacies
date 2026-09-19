@@ -1,0 +1,40 @@
+{
+  "OldId": "nmgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 66
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.66
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人投掷冰霜弹的重型近战单位。对法术免疫。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "猛犸人掠夺者"
+    }
+  ]
+}

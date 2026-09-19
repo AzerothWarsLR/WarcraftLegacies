@@ -1,0 +1,24 @@
+{
+  "OldId": "Brai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "自然掩埋"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 荆棘语者）"
+    }
+  ],
+  "NewId": "B09B"
+}

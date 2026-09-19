@@ -1,0 +1,33 @@
+{
+  "OldId": "Aivs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 咒术师）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "隐形术"
+    }
+  ],
+  "NewId": "A0R8"
+}

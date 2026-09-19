@@ -1,0 +1,37 @@
+{
+  "OldId": "Abof",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R066"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "燃油"
+    }
+  ],
+  "NewId": "A08B"
+}

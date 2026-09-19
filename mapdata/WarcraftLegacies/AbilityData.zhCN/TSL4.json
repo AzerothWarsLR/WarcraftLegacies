@@ -1,0 +1,49 @@
+{
+  "OldId": "Ahan",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASCryptStalker.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "高级代谢"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "高级代谢"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位每秒恢复 10 点生命值。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（图标）"
+    }
+  ],
+  "NewId": "TSL4"
+}

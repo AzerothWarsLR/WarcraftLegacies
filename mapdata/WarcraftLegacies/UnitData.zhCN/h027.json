@@ -1,0 +1,61 @@
+{
+  "OldId": "hphx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0EM,A0EL"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "uhpm",
+      "Value": 550
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": -30
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血法师召唤）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练凤凰"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "凤凰"
+    }
+  ],
+  "NewId": "h027"
+}

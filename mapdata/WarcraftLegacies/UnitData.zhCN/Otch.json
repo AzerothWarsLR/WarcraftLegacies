@@ -1,0 +1,54 @@
+{
+  "OldId": "Otch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,AInv"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "fly"
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "牦牛"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长吸收伤害和近身战斗。可学习震荡波、战争践踏、坚韧光环和重生。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牛头人酋长"
+    }
+  ]
+}

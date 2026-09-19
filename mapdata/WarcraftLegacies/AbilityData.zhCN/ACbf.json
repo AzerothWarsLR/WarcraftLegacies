@@ -1,0 +1,27 @@
+{
+  "OldId": "ACbf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(水晶领主"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜吐息"
+    }
+  ]
+}

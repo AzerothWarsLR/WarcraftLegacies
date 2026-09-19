@@ -1,0 +1,49 @@
+{
+  "OldId": "Ahlh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位由 1 名地精操作，粉碎机被摧毁时他会跳出来。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASGoblinCommando.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "地精驾驶员"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地精驾驶员"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉碎机图标）"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "A0YG"
+}

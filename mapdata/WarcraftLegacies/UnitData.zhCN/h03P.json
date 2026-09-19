@@ -1,0 +1,89 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "ugor",
+      "Value": 5
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unbuildable,blighted"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\human\\Workshop\\Workshop.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "侏儒居所"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡其他）"
+    }
+  ],
+  "NewId": "h03P"
+}

@@ -1,0 +1,74 @@
+{
+  "OldId": "nfov",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 14
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 25
+    },
+    {
+      "Id": "ugor",
+      "Value": 25
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 30
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1175
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练霸主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有恐惧嚎叫、分裂攻击与吸血光环的重型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "主宰"
+    }
+  ]
+}

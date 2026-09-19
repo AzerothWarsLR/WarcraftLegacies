@@ -1,0 +1,70 @@
+{
+  "OldId": "ANsw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nwe3"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤战鹰"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一只具有<nwe3,realHP>点生命值的战鹰。具有真实视域技能。|n持续<A144:ANsw,Dur1>秒。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤战鹰"
+    }
+  ],
+  "NewId": "A144"
+}

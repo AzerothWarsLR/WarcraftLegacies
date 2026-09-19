@@ -1,0 +1,40 @@
+{
+  "OldId": "nmrl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 435
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "uver",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\Murloc\\Murloc.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鱼人奔潮者"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "OldId": "eshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "etrs,h0AU,h0AV,h0B1,h057,h0B4,h0BA,h0B8"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R064,Rgfo"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "卡多雷船坞"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造卡多雷船坞"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 / 哨兵船坞）"
+    }
+  ]
+}

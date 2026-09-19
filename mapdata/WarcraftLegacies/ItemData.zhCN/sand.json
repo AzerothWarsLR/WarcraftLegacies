@@ -1,0 +1,30 @@
+{
+  "OldId": "sand",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 40
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "操纵死者为你作战，仅仅 9 秒而已。由这卷卷轴召唤出的亡灵将享受短暂却无敌的第二次生命。"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    }
+  ]
+}

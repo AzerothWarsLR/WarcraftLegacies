@@ -1,0 +1,29 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSatanicAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "诅咒光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到诅咒光环的影响，护甲降低 6 点。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B08T"
+}

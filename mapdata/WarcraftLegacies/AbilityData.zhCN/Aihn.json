@@ -1,0 +1,29 @@
+{
+  "OldId": "Aihn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "inv2",
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（人类 - 黄色、橙色、紫色、绿色、深绿色）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "单位物品栏"
+    }
+  ]
+}

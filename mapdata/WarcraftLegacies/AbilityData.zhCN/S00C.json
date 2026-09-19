@@ -1,0 +1,30 @@
+{
+  "OldId": "Srtt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R045"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "n0AD"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（大地傀儡 - 水晶傀儡）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "混乱"
+    }
+  ],
+  "NewId": "S00C"
+}

@@ -1,0 +1,101 @@
+{
+  "OldId": "AHta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idet",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00E"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R042"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_EyeOfShadows.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Feedback\\ArcaneTowerAttack.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团 - 恐惧魔王）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "萨格拉斯的视野"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "萨格拉斯的视野"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "揭示地图上的一片区域。|n无法揭示隐形单位。 |n|cffffcc00持续 12 秒。"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    }
+  ],
+  "NewId": "A0WB"
+}

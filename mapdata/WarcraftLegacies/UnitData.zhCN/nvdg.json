@@ -1,0 +1,110 @@
+{
+  "OldId": "nvdg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A076"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A076"
+    },
+    {
+      "Id": "ubld",
+      "Value": 7
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 28
+    },
+    {
+      "Id": "ugor",
+      "Value": 19
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "usrg",
+      "Value": 60
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1150
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（萨格拉斯之眼）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "G"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型远程单位，可施放闪电链和霜甲术。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大型虚空行者"
+    }
+  ]
+}

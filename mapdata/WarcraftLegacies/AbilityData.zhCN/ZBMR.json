@@ -1,0 +1,57 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "ZBML"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑曜石根除者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使 500 范围内友方单位受到的魔法与法术伤害有 40% 转移到该单位身上。该伤害同时受被保护单位与该单位的抗性影响。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法术传导"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术传导"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASAbsorb.blp"
+    }
+  ],
+  "NewId": "ZBMR"
+}

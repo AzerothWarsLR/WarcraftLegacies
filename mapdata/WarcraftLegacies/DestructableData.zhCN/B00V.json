@@ -1,0 +1,41 @@
+{
+  "OldId": "XOkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bvcb",
+      "Value": 50
+    },
+    {
+      "Id": "bvcg",
+      "Value": 50
+    },
+    {
+      "Id": "bvcr",
+      "Value": 50
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "基尔加丹王座"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Default.tga"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Doodads\\Barrens\\Props\\HellscreamThrone\\HellscreamThrone.mdl"
+    }
+  ],
+  "NewId": "B00V"
+}

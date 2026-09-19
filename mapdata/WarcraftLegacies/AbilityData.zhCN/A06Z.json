@@ -1,0 +1,80 @@
+{
+  "OldId": "Apg2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Prg3",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Prg4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Prg5",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Prg1",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（食人魔法师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "移除目标单位身上的所有魔法效果。敌方单位还会在<A06Z,DataD1>秒内无法移动，其移动速度降低至原先的 1/<A06Z,DataA1>；它们会在<A06Z,Dur1>秒内逐渐恢复移动速度。 |n|cffffcc00对召唤单位造成<A06Z,DataC1>点伤害。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "净化"
+    }
+  ],
+  "NewId": "A06Z"
+}

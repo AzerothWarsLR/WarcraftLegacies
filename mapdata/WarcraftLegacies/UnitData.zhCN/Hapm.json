@@ -1,0 +1,91 @@
+{
+  "OldId": "Hapm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A04K,A0V2,A07X,ANmo,Aamk"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "库尔提拉斯海军统帅"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "戴林·普罗德摩尔"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活戴林·普罗德摩尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活戴林·普罗德摩尔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤戴林"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，坚韧的英雄，擅长杀伤敌方单位。"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "ZBHS"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑曜石根除者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使针对该单位的所有攻击降低<ZBHL,DataC1>点伤害。攻击伤害不会低于<ZBHL,DataB1>点。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "ZBHL"
+}

@@ -1,0 +1,70 @@
+{
+  "OldId": "ACnr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04E"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.02
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R02S"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 北郡修道院，圣光教堂）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "圣光振奋"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "圣光振奋"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒为周围单位恢复 1% 的生命值。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp"
+    }
+  ],
+  "NewId": "A0K7"
+}

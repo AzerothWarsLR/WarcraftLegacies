@@ -1,0 +1,28 @@
+{
+  "OldId": "Aakb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（科多兽）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的伤害提高<Aakb,DataA1,%>%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战鼓"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "OldId": "Alsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RELL"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Lsh1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（潜藏风暴）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标单位周围形成一道电盾，对其周围的单位每秒造成<AELL,DataA1>点伤害。|n持续<AELL,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电之盾"
+    }
+  ],
+  "NewId": "AELL"
+}

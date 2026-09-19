@@ -1,0 +1,24 @@
+{
+  "OldId": "XHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "鲜血领域（效果）"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Orc\\Orcblood\\OrcBloodWitchDoctor.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "FountainLoop"
+    }
+  ],
+  "NewId": "X00F"
+}

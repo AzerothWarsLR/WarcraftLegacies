@@ -1,0 +1,74 @@
+{
+  "OldId": "Arai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾 - 通灵师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者复生 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从一具尸体中召唤<Arai,DataA1>个骷髅，持续<Arai,Dur1>秒。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从一具尸体中召唤<Arai,DataA1>个骷髅，持续<Arai,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以激活自动施法。"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "亡者复生"
+    }
+  ]
+}

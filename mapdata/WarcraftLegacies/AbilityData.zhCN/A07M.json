@@ -1,0 +1,157 @@
+{
+  "OldId": "ANht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.55
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 玛瑟里顿。战歌 - 雷克萨）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "发出一声恐怖的嚎叫，使附近的敌方单位在恐惧中颤抖，降低其攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低 25%。 |n|cffffcc002级|r - 攻击力降低 40%。 |n|cffffcc003级|r - 攻击力降低 55%。 |n|cffffcc004级|r - 攻击力降低 70%。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恐惧嚎叫 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低 25%，持续<ANht,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低 25%，持续<ANht,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低 25%，持续<ANht,Dur1>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低 25%，持续<ANht,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    }
+  ],
+  "NewId": "A07M"
+}

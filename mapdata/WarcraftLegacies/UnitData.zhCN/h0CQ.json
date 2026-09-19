@@ -1,0 +1,163 @@
+{
+  "OldId": "hrif",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A3,A0AC,A0F3,Aihn"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0AC"
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 29
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.334
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 670
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1500
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R04A,R01P,R01N,Rhar,Rhpm,Rguv,Rhme"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNarbalesticon.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\arbalester.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": "ulpy",
+      "Type": 2,
+      "Value": 62
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 71
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\CrossboltMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "皇家弩车"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练皇家弩车"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦训练有素的弩手。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Footman"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ],
+  "NewId": "h0CQ"
+}

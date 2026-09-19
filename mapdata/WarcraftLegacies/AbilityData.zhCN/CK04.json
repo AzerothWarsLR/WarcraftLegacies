@@ -1,0 +1,97 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n08J"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,slam"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlue.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤森林蜘蛛"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤森林蜘蛛"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 3 只拥有蛛网和毒性攻击的蜘蛛。|n持续<ACs7,Dur1>秒。|n|n|cffffcc00能攻击地面单位。|r"
+    }
+  ],
+  "NewId": "CK04"
+}

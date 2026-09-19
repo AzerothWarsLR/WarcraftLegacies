@@ -1,0 +1,80 @@
+{
+  "OldId": "AChv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu,organic"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RBEH"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑暗帝国 - 先驱）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召出一波治疗能量，最多弹射<MD22,DataB1>次，为主要目标恢复<MD22,DataA1>点生命值。每次弹射治疗量递减。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗波"
+    }
+  ],
+  "NewId": "MD22"
+}

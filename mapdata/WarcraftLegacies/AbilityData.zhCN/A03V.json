@@ -1,0 +1,78 @@
+{
+  "OldId": "ACbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNrd,BHbz"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "X00L"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEternalCombustion.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（虚空领主）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虚空爆裂"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空爆裂"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在大范围内召唤 6 波虚空爆炸，每波对小范围内的单位造成 25 点伤害。"
+    }
+  ],
+  "NewId": "A03V"
+}

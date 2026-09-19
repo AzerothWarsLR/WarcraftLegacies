@@ -1,0 +1,240 @@
+{
+  "OldId": "ANdo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Level": 1,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nbal"
+    },
+    {
+      "Level": 2,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nbal"
+    },
+    {
+      "Level": 3,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nbal"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ndo5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团 - 玛尔加尼斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习末日降临 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "标记目标单位，使之成为恶魔的宿主。被折磨的目标无法施法，并会每秒受到伤害。其死亡时，尸体上将生出次级末日守卫。末日降临无法被驱散或取消。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "末日降临 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "末日降临 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "末日降临 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "标记目标单位，使之成为恶魔的宿主。被折磨的单位无法施法，并会每秒受到<A04A,DataA1>点伤害。其死亡时，尸体上将生出<A04A,DataB1>个末日守卫。末日降临无法被驱散或取消。|n对英雄持续 8 秒，对单位则无限期持续。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "标记目标单位，使之成为恶魔的宿主。被折磨的单位无法施法，并会每秒受到<A04A,DataA1>点伤害。其死亡时，尸体上将生出<A04A,DataB1>个末日守卫。末日降临无法被驱散或取消。|n对英雄持续 8 秒，对单位则无限期持续。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "标记目标单位，使之成为恶魔的宿主。被折磨的单位无法施法，并会每秒受到<A04A,DataA1>点伤害。其死亡时，尸体上将生出<A04A,DataB1>个末日守卫。末日降临无法被驱散或取消。|n对英雄持续 8 秒，对单位则无限期持续。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "末日降临"
+    }
+  ],
+  "NewId": "A04A"
+}

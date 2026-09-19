@@ -1,0 +1,157 @@
+{
+  "OldId": "eaom",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aro1"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 60
+    },
+    {
+      "Id": "ua2b",
+      "Value": 60
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1200
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua2r",
+      "Value": 150
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R046,R047,R048,R00A"
+    },
+    {
+      "Id": "umvs",
+      "Value": 95
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n05H,edry,e012"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,Renb,R018,Rhme,R002,Rgfo"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊兵营）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造战争古树"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战争古树"
+    }
+  ]
+}

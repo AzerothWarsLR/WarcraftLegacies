@@ -1,0 +1,27 @@
+{
+  "OldId": "ACbn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立敌对） （麦迪文）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "放逐"
+    }
+  ]
+}

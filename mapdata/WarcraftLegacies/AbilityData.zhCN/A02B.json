@@ -1,0 +1,217 @@
+{
+  "OldId": "ANrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nrc1",
+      "Type": 3,
+      "Value": "A02N"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nrc1",
+      "Type": 3,
+      "Value": "A0FF"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nrc1",
+      "Type": 3,
+      "Value": "A0LG"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nrc2",
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nrc2",
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nrc2",
+      "Value": 25
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 杰尔戈什）（基尔加丹）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "流星雨"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习流星雨"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "在<A02B,Area1>的目标半径内从天空召唤流星，对敌方单位造成伤害并使其昏迷<A02N,DataB1>秒。|n|n|cffffcc001级|r - <A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害。|n|cffffcc002级|r - <A02B,DataB2>颗流星，每颗造成<A0FF,DataA1>点伤害。|n|cffffcc003级|r - <A02B,DataB3>颗流星，每颗造成<A0LG,DataA1>点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "流星雨 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "流星雨 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "流星雨 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空召唤<A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害并使目标昏迷<A02N,DataB1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空召唤<A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害并使目标昏迷<A02N,DataB1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空召唤<A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害并使目标昏迷<A02N,DataB1>秒。"
+    }
+  ],
+  "NewId": "A02B"
+}

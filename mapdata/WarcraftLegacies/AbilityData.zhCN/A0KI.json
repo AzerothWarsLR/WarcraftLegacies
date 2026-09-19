@@ -1,0 +1,38 @@
+{
+  "OldId": "Aspt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "ucs1"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿努巴拉克甲虫）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生成甲虫"
+    }
+  ],
+  "NewId": "A0KI"
+}

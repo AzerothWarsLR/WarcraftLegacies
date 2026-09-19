@@ -1,0 +1,93 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "S01I,Adef,A0BG,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 21
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 13
+    },
+    {
+      "Id": "ugor",
+      "Value": 14
+    },
+    {
+      "Id": "uhpm",
+      "Value": 795
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,Rhme,Rhar,R00B,Rhpm,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦的全能步兵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练步兵"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "步兵"
+    }
+  ]
+}

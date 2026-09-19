@@ -1,0 +1,49 @@
+{
+  "OldId": "LTbx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
+      "Id": "bdsn",
+      "Type": 3,
+      "Value": "DeathHumanSmallBuilding"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "ShadowHouse"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "buildings\\other\\Tent\\Tent.mdl"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "buildings\\other\\Tent\\Tent.mdl"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "帐篷"
+    }
+  ],
+  "NewId": "B012"
+}

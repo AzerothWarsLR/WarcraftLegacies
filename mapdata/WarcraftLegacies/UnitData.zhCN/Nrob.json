@@ -1,0 +1,49 @@
+{
+  "OldId": "Nrob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长扰乱战局和承受伤害。可学习口袋工厂、集束火箭、工程学升级和机械地精。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "修补匠"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "加兹·斯特里波尔特"
+    }
+  ]
+}

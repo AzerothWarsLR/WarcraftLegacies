@@ -1,0 +1,390 @@
+{
+  "OldId": "ANsy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B079,B078"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nsy1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nsy2",
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nsy3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nsy5",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Level": 2,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Level": 3,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Level": 4,
+      "Id": "Nsyu",
+      "Type": 3,
+      "Value": "n039"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcorn.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 玛法里奥）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "催生大树"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcorn.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习催生大树 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "玛法里奥在目标地点种下一棵树，每 1.5 秒生成一个树人，直到它消失或被摧毁。|n|n|cffffcc001级|r - 持续 5 秒。|n|cffffcc002级|r - 持续 8 秒。|n|cffffcc003级|r - 持续 11 秒。|n|cffffcc004级|r - 持续 14 秒。|n|n树人持续 45 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "催生大树 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "催生大树 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "催生大树 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "催生大树 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "玛法里奥在目标地点种下一棵树，每 1.5 秒生成一个树人，直到它消失或被摧毁。持续 5 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "玛法里奥在目标地点种下一棵树，每 1.5 秒生成一个树人，直到它消失或被摧毁。持续 5 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "玛法里奥在目标地点种下一棵树，每 1.5 秒生成一个树人，直到它消失或被摧毁。持续 5 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "玛法里奥在目标地点种下一棵树，每 1.5 秒生成一个树人，直到它消失或被摧毁。持续 5 秒。"
+    }
+  ],
+  "NewId": "A0CE"
+}

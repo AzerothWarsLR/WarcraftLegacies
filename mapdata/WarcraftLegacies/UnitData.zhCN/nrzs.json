@@ -1,0 +1,21 @@
+{
+  "OldId": "nrzs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 280
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "钢鬃斥候"
+    }
+  ]
+}

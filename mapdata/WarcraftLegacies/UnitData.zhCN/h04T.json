@@ -1,0 +1,135 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "ufma",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\Gate2PathDeath.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp,Renb,R064,R013,Rhac"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,sapper"
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "h04S"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（大门 - 损毁）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Gate_45_RightAlternate.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "斜向木门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "斜向木门"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 0
+    }
+  ],
+  "NewId": "h04T"
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": "ntor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul,A02S,Atsp,Aasl"
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "umis",
+      "Value": 100
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奥拉基尔 - 1 级）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练龙卷风"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙卷风"
+    }
+  ],
+  "NewId": "nAT1"
+}

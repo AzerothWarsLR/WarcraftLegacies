@@ -1,0 +1,26 @@
+{
+  "OldId": "Agyd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Gyd1",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Gyd3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "产生尸体"
+    }
+  ]
+}

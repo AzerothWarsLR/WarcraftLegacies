@@ -1,0 +1,29 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholy.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "暗影迷宫"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到暗影迷宫的影响，护甲降低。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B00F"
+}

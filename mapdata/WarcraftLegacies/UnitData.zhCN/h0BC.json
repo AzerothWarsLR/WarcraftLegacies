@@ -1,0 +1,176 @@
+{
+  "OldId": "hbsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 10
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 800
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,item,mechanical,nonancient,structure,ward"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 90
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,mechanical,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00C,R006"
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "uamn",
+      "Value": 300
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1250
+    },
+    {
+      "Id": "usid",
+      "Value": 1000
+    },
+    {
+      "Id": "usin",
+      "Value": 900
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（部落）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "毁灭战舰"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造毁灭战舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "具有统治力的重型船只。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Critters\\OrcJuggernaught\\OrcJuggernaught.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNJuggernaut.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\Chain Grenade Orange.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    }
+  ],
+  "NewId": "h0BC"
+}

@@ -1,0 +1,119 @@
+{
+  "OldId": "AOcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulBurn.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 祖鲁希德终极技能）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "LEAS"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "连锁爆炸"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "连锁爆炸 (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道连锁火焰，在命中的每个单位身上爆裂，初始造成 200 点伤害，每多命中一个目标伤害降低 10%。最多命中 8 个单位。|n|n冷却时间 5 秒。"
+    }
+  ],
+  "NewId": "A0Q3"
+}

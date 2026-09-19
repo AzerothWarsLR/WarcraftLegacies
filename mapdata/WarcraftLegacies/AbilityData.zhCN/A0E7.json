@@ -1,0 +1,47 @@
+{
+  "OldId": "Adis",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00I"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 法师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "驱散魔法"
+    }
+  ],
+  "NewId": "A0E7"
+}

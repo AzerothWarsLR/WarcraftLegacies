@@ -1,0 +1,56 @@
+{
+  "OldId": "desc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A09O,AItx"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A02X"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerationAura.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "造成额外伤害，并允许你施放强大的法力燃烧技能。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买托尔贝恩家族强大无比的祖传之剑。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "允许英雄传送一小段距离。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "托尔卡拉"
+    }
+  ],
+  "NewId": "I01O"
+}

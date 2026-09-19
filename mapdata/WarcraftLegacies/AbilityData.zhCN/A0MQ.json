@@ -1,0 +1,44 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（亚历山德罗斯）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 25% 的几率使一次攻击对周围的单位造成 75 点伤害。"
+    }
+  ],
+  "NewId": "A0MQ"
+}

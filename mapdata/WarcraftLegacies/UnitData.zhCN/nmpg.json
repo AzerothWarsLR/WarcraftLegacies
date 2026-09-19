@@ -1,0 +1,31 @@
+{
+  "OldId": "nmpg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uver",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\MurlocMutant\\MurlocMutant.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人染病的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鱼人瘟疫使者"
+    }
+  ]
+}

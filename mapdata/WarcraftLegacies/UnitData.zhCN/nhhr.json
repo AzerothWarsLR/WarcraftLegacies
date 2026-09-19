@@ -1,0 +1,34 @@
+{
+  "OldId": "nhhr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 321
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷恶魔之火的中型远程单位。可施放亡者复生与腐臭蝠群。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "异教徒"
+    }
+  ]
+}

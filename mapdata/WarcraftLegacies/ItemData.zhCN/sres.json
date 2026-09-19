@@ -1,0 +1,39 @@
+{
+  "OldId": "sres",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIdb"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ista",
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "为英雄周围一定区域内的友方非机械单位恢复<AIra,DataA1>点生命值和<AIra,DataB1>点法力值。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "复原卷轴"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "OldId": "Afak",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 13
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 13
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 远行者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "碎裂箭"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "碎裂箭"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "远行者以巨大的力量与精准度射出箭矢，使远行者的攻击造成范围伤害。 |n|n在 50 半径范围内造成一半伤害，超出该范围后伤害略有降低。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    }
+  ],
+  "NewId": "A060"
+}

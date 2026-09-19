@@ -1,0 +1,275 @@
+{
+  "OldId": "AHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": 33
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hfs1",
+      "Type": 2,
+      "Value": 39
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 17
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hfs3",
+      "Type": 2,
+      "Value": 23
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Hfs6",
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一根火柱，对目标区域内的地面单位造成持续伤害。 |n|n|cffffcc001级|r - 3 秒内造成 66 点伤害，随后 6 秒内再造成 90 点伤害。 |n|cffffcc002级|r - 3 秒内造成 84 点伤害，随后 6 秒内再造成 102 点伤害。 |n|cffffcc003级|r - 3 秒内造成 99 点伤害，随后 6 秒内再造成 120 点伤害。 |n|cffffcc004级|r - 3 秒内造成 117 点伤害，随后 6 秒内再造成 138 点伤害。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰风暴 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一根烈焰之柱，在 3 秒内对地面单位造成 66 点燃烧伤害。当火柱消退后，火焰中的单位会在 6 秒内继续受到 90 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一根烈焰之柱，在 3 秒内对地面单位造成 66 点燃烧伤害。当火柱消退后，火焰中的单位会在 6 秒内继续受到 90 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一根烈焰之柱，在 3 秒内对地面单位造成 66 点燃烧伤害。当火柱消退后，火焰中的单位会在 6 秒内继续受到 90 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一根烈焰之柱，在 3 秒内对地面单位造成 66 点燃烧伤害。当火柱消退后，火焰中的单位会在 6 秒内继续受到 90 点伤害。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "烈焰风暴"
+    }
+  ]
+}

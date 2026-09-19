@@ -1,0 +1,115 @@
+{
+  "OldId": "ANdp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndp1",
+      "Type": 3,
+      "Value": "tp26"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndp2",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndp3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R09M"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvadingVines.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（收获女巫）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从地面升起锋利而多刺的藤蔓，使敌方地面单位的移动速度降低 60%，并使友方地面单位每秒的生命恢复量提高 2 点。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvadingVines.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "TP19"
+}

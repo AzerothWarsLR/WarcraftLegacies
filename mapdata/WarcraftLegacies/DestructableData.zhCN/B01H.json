@@ -1,0 +1,34 @@
+{
+  "OldId": "BTtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "湿地树木"
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\AshenvaleTree\\FelwoodTree.blp"
+    }
+  ],
+  "NewId": "B01H"
+}

@@ -1,0 +1,94 @@
+{
+  "OldId": "AUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B036"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,mechanical,self,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASNavalAura.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伯拉勒斯要塞、奥伯丁）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "海军光环"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "海军光环。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "强化<A0HN,Area1>范围内的友方舰船，使其移动速度提高<A0HN,DataA1,%>%，每秒生命恢复量提高<A0HN,DataB1>点。"
+    }
+  ],
+  "NewId": "A0HN"
+}

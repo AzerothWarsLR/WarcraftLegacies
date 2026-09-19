@@ -1,0 +1,80 @@
+{
+  "OldId": "ACmp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uim1",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Uim3",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uim2",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（遗忘者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，沿直线释放一道冲击波，造成 25 点伤害，并将沿途的敌方地面单位掀至空中，将其击晕 2 秒（英雄为 0.5 秒）。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "穿刺"
+    }
+  ],
+  "NewId": "ABIM"
+}

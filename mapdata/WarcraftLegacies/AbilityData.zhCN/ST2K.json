@@ -1,0 +1,89 @@
+{
+  "OldId": "Aliq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "liq1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "liq3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "liq4",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "S060"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,nonancient,structure"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧弓箭手）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "投掷一支燃烧的箭矢，使目标地面单位每秒额外受到<ST2K,DataA1>点伤害。正在受到燃烧箭矢伤害的单位无法被修理，其攻击速度降低<ST2K,DataC1,%>%。持续<ST2K,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "燃烧箭矢"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "燃烧箭矢"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFlameArrowShower.blp"
+    }
+  ],
+  "NewId": "ST2K"
+}

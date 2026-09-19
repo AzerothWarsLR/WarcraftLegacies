@@ -1,0 +1,57 @@
+{
+  "OldId": "nftt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACev,ACen"
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 650
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可诱捕敌人的中型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "森林巨魔诱捕者"
+    }
+  ]
+}

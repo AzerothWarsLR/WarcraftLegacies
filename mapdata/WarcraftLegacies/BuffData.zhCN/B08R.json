@@ -1,0 +1,29 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElements.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "能量涌动"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于能量涌动状态，攻击速度大幅提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl,Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    }
+  ],
+  "NewId": "B08R"
+}

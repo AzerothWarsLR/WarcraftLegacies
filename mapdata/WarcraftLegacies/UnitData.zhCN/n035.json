@@ -1,0 +1,129 @@
+{
+  "OldId": "nheb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 75
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 300
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o04C,o00X"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\ArcaneObservatoryPath.tga"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 10000
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02A"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色特殊）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SalvationSpire.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "神圣堡垒"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造神圣堡垒"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "至高圣光生产建筑。"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 6
+    }
+  ],
+  "NewId": "n035"
+}

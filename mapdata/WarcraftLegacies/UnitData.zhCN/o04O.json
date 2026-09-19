@@ -1,0 +1,179 @@
+{
+  "OldId": "odoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11S,A0NJ,A07A,A0QL,Aion"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 16
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 11
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R07M,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Acrs"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 490
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 80
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 80
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "地精的癫狂科学家。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "炼金术士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练炼金术士"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Goblin_Alchemist.mdl"
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinSlasher.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroGoblinAlchemist"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Explosive Potion,- Explosive Potion|n- Dispel Magic,- Explosive Potion|n- Dispel Magic|n- Acid Bomb,- Explosive Potion|n- Dispel Magic|n- Acid Bomb|n- Napalm"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master, Grandmaster"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\StrongDrink\\BrewmasterMissile.mdl"
+    }
+  ],
+  "NewId": "o04O"
+}

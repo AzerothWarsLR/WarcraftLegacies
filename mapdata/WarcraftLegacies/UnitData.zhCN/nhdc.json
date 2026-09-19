@@ -1,0 +1,31 @@
+{
+  "OldId": "nhdc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷恶魔之火的轻型远程单位。可施放诅咒。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "欺诈者"
+    }
+  ]
+}

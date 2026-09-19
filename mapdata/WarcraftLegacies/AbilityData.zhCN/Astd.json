@@ -1,0 +1,24 @@
+{
+  "OldId": "Astd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放驻扎的单位，并让它们返回之前的任务。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "解除戒备"
+    }
+  ]
+}

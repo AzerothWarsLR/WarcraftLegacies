@@ -1,0 +1,19 @@
+{
+  "OldId": "Blsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "烈焰护盾（施法者）"
+    }
+  ],
+  "NewId": "B01J"
+}

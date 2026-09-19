@@ -1,0 +1,34 @@
+{
+  "OldId": "BOac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGruntWarcry.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "战歌攻势"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到战歌攻势的影响，攻击力提高。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "战歌攻势"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B094"
+}

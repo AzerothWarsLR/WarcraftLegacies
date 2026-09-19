@@ -1,0 +1,36 @@
+{
+  "OldId": "nwzd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型远程单位，具有辉煌光环。还可施放亡者复生和变形术。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗巫师"
+    }
+  ]
+}

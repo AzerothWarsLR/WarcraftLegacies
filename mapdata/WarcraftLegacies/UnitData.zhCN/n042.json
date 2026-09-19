@@ -1,0 +1,103 @@
+{
+  "OldId": "ninf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACmi,A06W,ACrk"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "ua1b",
+      "Value": 65
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1400
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 60
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团-阿克蒙德-等级 3）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "笼罩着恶魔烈焰的重型近战单位，会伤害附近的敌方地面单位。对魔法免疫。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地狱火"
+    }
+  ],
+  "NewId": "n042"
+}

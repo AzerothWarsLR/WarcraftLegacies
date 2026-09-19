@@ -1,0 +1,171 @@
+{
+  "OldId": "Obla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,A0EH"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.65
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0M2,A0FK,AEar"
+    },
+    {
+      "Id": "uhos",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1150
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 14
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rotr"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "umpi",
+      "Value": 450
+    },
+    {
+      "Id": "umpm",
+      "Value": 450
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活|cffffcc00A|r阿曼尼督军"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 - 祖阿曼）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Zuljin_OneArmed.mdl"
+    },
+    {
+      "Id": "uhas",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "祖尔金"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "祖尔金"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活阿曼尼督军"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤|cffffcc00A|r阿曼尼督军"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ForestTroll"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长快速消灭单体目标和迷惑敌人。可学习镜像、疾风步、致命一击和剑刃风暴。"
+    }
+  ],
+  "NewId": "o06Z"
+}

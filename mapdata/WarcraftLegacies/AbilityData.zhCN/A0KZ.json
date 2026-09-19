@@ -1,0 +1,22 @@
+{
+  "OldId": "Amim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团召唤物）"
+    }
+  ],
+  "NewId": "A0KZ"
+}

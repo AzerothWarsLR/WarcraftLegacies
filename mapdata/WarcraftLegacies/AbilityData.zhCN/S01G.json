@@ -1,0 +1,24 @@
+{
+  "OldId": "Sdro",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蒸汽坦克）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "卸载"
+    }
+  ],
+  "NewId": "S01G"
+}

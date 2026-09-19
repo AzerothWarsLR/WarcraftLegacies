@@ -1,0 +1,131 @@
+{
+  "OldId": "ACfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BPSE"
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "alsk",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "arlv",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,neutral,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "attack"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（公会游侠）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "瞄准射击"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习瞄准射击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "射出一支箭矢，昏迷目标并造成大量伤害。|n|n|cffffcc001级|r - 造成 150 点伤害，昏迷目标 4 秒。对英雄持续 1 秒。|n|cffffcc002级|r - 造成 225 点伤害，昏迷目标 5 秒。对英雄持续 1 秒。|n|cffffcc003级|r - 造成 300 点伤害，昏迷目标 6 秒。对英雄持续 1 秒。|n|cffffcc004级|r - 造成 375 点伤害，昏迷目标 7 秒。对英雄持续 2 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "瞄准射击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个敌方目标射出一支附魔箭矢，造成<A0QQ,DataA1>点伤害，并昏迷目标<A0QQ,Dur1>(<A0QQ,HeroDur1,.>) 秒。 |n需要<A0QQ,Cast1>秒施法时间。"
+    }
+  ],
+  "NewId": "A0QQ"
+}

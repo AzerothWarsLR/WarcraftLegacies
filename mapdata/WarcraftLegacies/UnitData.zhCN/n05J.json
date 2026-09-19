@@ -1,0 +1,28 @@
+{
+  "OldId": "ngob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗之门光环控制枢纽"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黑暗之门光环控制枢纽"
+    }
+  ],
+  "NewId": "n05J"
+}

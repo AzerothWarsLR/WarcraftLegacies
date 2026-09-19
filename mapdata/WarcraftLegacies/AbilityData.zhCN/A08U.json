@@ -1,0 +1,75 @@
+{
+  "OldId": "ACac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03U"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArmor.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 元帅）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "防御阵型"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "防御阵型"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "元帅周围的单位会结成防御阵型，使附近敌方单位的攻击力降低 10%。"
+    }
+  ],
+  "NewId": "A08U"
+}

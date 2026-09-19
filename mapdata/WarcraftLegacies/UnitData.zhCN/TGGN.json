@@ -1,0 +1,228 @@
+{
+  "OldId": "Ewar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AEsh,A026,ST26,Aamk,ST9J"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "YBPW,AInv"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "usin",
+      "Value": 1600
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 275
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "ua2r",
+      "Value": 650
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "苔丝·格雷迈恩"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "吉尔尼斯公主"
+    },
+    {
+      "Id": "upru",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HumanAssassine.mdl"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 60
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活苔丝"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活苔丝"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤苔丝"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长与敌人交战和脱离。"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdl"
+    },
+    {
+      "Id": "uhas",
+      "Type": 3,
+      "Value": "ACsa,AOsf,ACat,AEsf"
+    }
+  ],
+  "NewId": "TGGN"
+}

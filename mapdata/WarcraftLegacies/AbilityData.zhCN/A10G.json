@@ -1,0 +1,56 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击会立即击杀生命值低于其攻击伤害 400% 的单位，以及生命值低于其攻击伤害 150% 的英雄。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "斩杀"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "斩杀"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASOrcishAxe.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    }
+  ],
+  "NewId": "A10G"
+}

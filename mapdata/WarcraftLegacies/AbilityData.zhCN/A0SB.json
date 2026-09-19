@@ -1,0 +1,36 @@
+{
+  "OldId": "Ahri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位死亡时会生成 2 只飞行恐魔。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生成飞行恐魔"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "生成飞行恐魔"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFlyer.blp"
+    }
+  ],
+  "NewId": "A0SB"
+}

@@ -1,0 +1,207 @@
+{
+  "OldId": "ANto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0D0"
+    },
+    {
+      "Level": 2,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n03R"
+    },
+    {
+      "Level": 3,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0EA"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（安东尼达斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "引导堡垒护盾。护盾会每秒对 600 效果范围内的敌人造成 20 点伤害，并使友方单位和建筑的护甲提高 4 点，最长持续 30 秒。|n|n|cffffcc001级|r - 每秒 20 点伤害|n|cffffcc002级|r - 每秒 40 点伤害 |n|cffffcc003级|r - 每秒 60 点伤害\n"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "堡垒护盾 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "堡垒护盾 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "引导堡垒护盾，最长持续 30 秒。它将每秒对 600 效果范围造成 20 点伤害，还会强化区域内的友方单位和建筑，使其获得 4 点额外护甲。冷却时间 120 秒，施法时间 2 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "引导堡垒护盾，最长持续 30 秒。它将每秒对 600 效果范围造成 20 点伤害，还会强化区域内的友方单位和建筑，使其获得 4 点额外护甲。冷却时间 120 秒，施法时间 2 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "引导堡垒护盾，最长持续 30 秒。它将每秒对 600 效果范围造成 20 点伤害，还会强化区域内的友方单位和建筑，使其获得 4 点额外护甲。冷却时间 120 秒，施法时间 2 秒。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "堡垒护盾"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习堡垒护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "堡垒护盾 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "stand,channel"
+    }
+  ],
+  "NewId": "A0N8"
+}

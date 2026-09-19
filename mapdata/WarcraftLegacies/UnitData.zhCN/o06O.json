@@ -1,0 +1,68 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A12Z"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A12Z"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "summoned"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "集结战旗"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanCaptureFlag.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\StormwindBanner.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练集结战旗"
+    }
+  ],
+  "NewId": "o06O"
+}

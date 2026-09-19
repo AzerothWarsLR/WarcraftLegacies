@@ -1,0 +1,48 @@
+{
+  "OldId": "Afbb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "fbk1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "fbk3",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蓝色 - 恐惧魔王）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击每次命中会燃烧<A06N,DataA1>（英雄为<A06N,DataC1>）点法力值，并造成等同于所燃烧法力值的伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反噬"
+    }
+  ],
+  "NewId": "A06N"
+}

@@ -1,0 +1,89 @@
+{
+  "OldId": "ANic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nic1",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nic2",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nic3",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nic4",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nic5",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达格兰的火元素）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "焚身化骨"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用活体烈焰强化每次攻击，这些火焰会附着在目标身上。受此效果影响的单位在死亡时会被焚烧，对周围的所有敌方单位最多造成<A0JG,DataB1>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "焚身化骨"
+    }
+  ],
+  "NewId": "A0JG"
+}

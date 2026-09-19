@@ -1,0 +1,91 @@
+{
+  "OldId": "nbee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A041,Ahrp"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "h033,h03J,n0A2,h034,h01H,h02Y,h04V,nefm,h077,nheb,h073"
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 190
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯，工人）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "建筑师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练建筑师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奎尔萨拉斯建筑的聪慧建造者。"
+    }
+  ]
+}

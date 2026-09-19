@@ -1,0 +1,93 @@
+{
+  "OldId": "nbee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A041,Ahrp"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ubui",
+      "Type": 3,
+      "Value": "h02P,h0C7,h0C8,h0C9,h0C6,h0CB,h0CA,h0CI,tp04,h0CC,h0CD"
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 190
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒工人）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "技师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练技师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奎尔萨拉斯建筑的聪慧建造者。"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\WorkerBloodElfV1.01.mdl"
+    }
+  ],
+  "NewId": "n0E2"
+}

@@ -1,0 +1,47 @@
+{
+  "OldId": "hpxe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uhpm",
+      "Value": 150
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯-安纳斯特里安）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奥的脆弱之卵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练凤凰蛋"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "凤凰蛋"
+    }
+  ]
+}

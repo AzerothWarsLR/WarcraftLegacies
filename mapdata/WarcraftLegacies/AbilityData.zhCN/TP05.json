@@ -1,0 +1,175 @@
+{
+  "OldId": "ANdh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03I"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03I"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03I"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nsi3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nsi3",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nsi3",
+      "Type": 2,
+      "Value": 0.55
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "符文祭司)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低，并且攻击有几率未命中。 |n|cffffcc00持续<ANdh,Dur1>秒（英雄为 5 秒）。 |n|n|cffffcc001级|r - 移动速度降低 40%，未命中率 30%。 |n|cffffcc002级|r - 移动速度降低 45%，未命中率 40%。 |n|cffffcc003级|r - 移动速度降低 50%，未命中率 50%。 |n|cffffcc004级|r - 移动速度降低 55%，未命中率 60%。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "酩酊酒雾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<TP05,DataC1,%>，并且攻击有<TP05,DataB1,%>的未命中率。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<TP05,DataC1,%>，并且攻击有<TP05,DataB1,%>的未命中率。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<TP05,DataC1,%>，并且攻击有<TP05,DataB1,%>的未命中率。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<TP05,DataC1,%>，并且攻击有<TP05,DataB1,%>的未命中率。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "酩酊酒雾"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "酩酊酒雾"
+    }
+  ],
+  "NewId": "TP05"
+}

@@ -1,0 +1,99 @@
+{
+  "OldId": "Apts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "debris,enemies,ground,organic,structure,tree,wall"
+    },
+    {
+      "Level": 1,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "o04Z"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bapl,Bplg"
+    },
+    {
+      "Level": 2,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "rt4E"
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "debris,enemies,ground,organic,structure,tree,wall"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFacelessOneWidow.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（图标 - 冥河巨兽）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "创世攻击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "冥河巨兽的攻击以致命寄生虫感染一名敌方单位，每秒造成<ABEG,DataA1>点伤害，持续<ABEG,Dur1>秒。若受影响单位在创世攻击效果下死亡，其尸体会生成一只飞行恐魔。|n持续<ABEG,Cast1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "创世攻击"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "冥河巨兽的攻击以致命寄生虫感染一名敌方单位，每秒造成<ABEG,DataA1>点伤害，持续<ABEG,Dur1>秒。若受影响单位在创世攻击效果下死亡，其尸体会生成一只飞行恐魔。|n持续<ABEG,Cast1>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "创世攻击"
+    }
+  ],
+  "NewId": "ABES"
+}

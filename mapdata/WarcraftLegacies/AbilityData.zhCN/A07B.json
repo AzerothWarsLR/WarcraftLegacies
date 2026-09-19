@@ -1,0 +1,123 @@
+{
+  "OldId": "AImt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "demon"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R054"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "invulnerable,nonsapper,structure,vulnerable"
+    },
+    {
+      "Id": "aaea",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Nature_AstralRecal.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（所有恐惧魔王）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "星界行走"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习星界行走 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将巴纳扎尔传送至目标友方地面单位或建筑。  |n|n|cffffcc001级|r - 冷却时间 45 秒，消耗 75 点法力值。 |n|cffffcc002级|r - 冷却时间 30 秒，消耗 50 点法力值。 |n|cffffcc003级|r - 冷却时间 15 秒，消耗 25 点法力值。|n|cffffcc004级|r - 无冷却时间，施放不消耗法力值。\n"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星界行走"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "施法 3 秒后，将恐惧魔王传送至目标友方建筑。"
+    }
+  ],
+  "NewId": "A07B"
+}

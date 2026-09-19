@@ -1,0 +1,24 @@
+{
+  "OldId": "Amin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 地精地雷）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "地雷 - 爆炸"
+    }
+  ]
+}

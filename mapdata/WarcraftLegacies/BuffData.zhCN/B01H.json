@@ -1,0 +1,29 @@
+{
+  "OldId": "Bdef",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHelmutPurple.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "王冠治疗"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到王冠的影响，护甲暂时提高，生命值和法力值已恢复。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_ShieldBuff_Small.mdx"
+    }
+  ],
+  "NewId": "B01H"
+}

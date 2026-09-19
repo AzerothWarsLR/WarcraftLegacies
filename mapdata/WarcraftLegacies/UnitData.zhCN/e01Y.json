@@ -1,0 +1,214 @@
+{
+  "OldId": "etrp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 54
+    },
+    {
+      "Id": "ua2b",
+      "Value": 54
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "e000"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "e010"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "ground,structure,debris,air,item,ward"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ua2p",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua2r",
+      "Value": 600
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "ua2z",
+      "Value": 750
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure"
+    },
+    {
+      "Id": "ubdg",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0ZK,A0E2"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1z",
+      "Value": 770
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造守护古树"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "卡多雷森林的防御型古树，会向敌人投掷巨石。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    }
+  ],
+  "NewId": "e01Y"
+}

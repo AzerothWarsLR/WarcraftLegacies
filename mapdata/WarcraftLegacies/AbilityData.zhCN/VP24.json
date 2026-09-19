@@ -1,0 +1,456 @@
+{
+  "OldId": "ANcs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ncs2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1600
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 2400
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncs5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Ncs6",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 1800
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThorsRage.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 弗斯塔德）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\StormBolt\\StormBoltMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "锤击时刻！"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThorsRage.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习锤击时刻！ - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "用战锤轰击一片区域，对敌方地面单位造成伤害并使其短暂昏迷。施法距离 1200。 |n|n|cffffcc001级|r - 总计<VP24,DataA1>点伤害。|n|cffffcc002级|r - 总计<VP24,DataA2>点伤害。|n|cffffcc003级|r - 总计<VP24,DataA3>点伤害。|n|cffffcc004级|r - 总计<VP24,DataA4>点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "锤击时刻！ - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "锤击时刻！ - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "锤击时刻！ - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "锤击时刻！ - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用战锤轰击一片区域，对附近的敌方地面单位最多造成<VP24,DataA1>点伤害，并使其短暂昏迷。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用战锤轰击一片区域，对附近的敌方地面单位最多造成<VP24,DataA1>点伤害，并使其短暂昏迷。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用战锤轰击一片区域，对附近的敌方地面单位最多造成<VP24,DataA1>点伤害，并使其短暂昏迷。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用战锤轰击一片区域，对附近的敌方地面单位最多造成<VP24,DataA1>点伤害，并使其短暂昏迷。"
+    }
+  ],
+  "NewId": "VP24"
+}

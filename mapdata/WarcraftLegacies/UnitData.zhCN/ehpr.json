@@ -1,0 +1,112 @@
+{
+  "OldId": "ehpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANwk,A0HZ,Ault"
+    },
+    {
+      "Id": "ubld",
+      "Value": 10
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 650
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 280
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R002,R03J,Rhme,Rhar,Reib,Remk,Reuv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R09X"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练角鹰兽骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "哨兵的空中弓箭手，可以打击多个敌人。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "角鹰兽骑士"
+    }
+  ]
+}

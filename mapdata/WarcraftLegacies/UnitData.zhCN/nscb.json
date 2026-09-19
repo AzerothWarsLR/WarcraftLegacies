@@ -1,0 +1,22 @@
+{
+  "OldId": "nscb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蜘蛛蟹岸行者"
+    }
+  ]
+}

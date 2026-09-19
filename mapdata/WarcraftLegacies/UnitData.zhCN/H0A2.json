@@ -1,0 +1,134 @@
+{
+  "OldId": "Hpb1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0NC,Aamk,A05E,A06S,A0XO"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "uagi",
+      "Value": 15
+    },
+    {
+      "Id": "uint",
+      "Value": 12
+    },
+    {
+      "Id": "ustr",
+      "Value": 21
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血色指挥官"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "雷诺·莫格莱尼"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\RenaultMograine.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长近身战斗和复仇。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤雷诺"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinRenault.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPaladinRenault.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.97
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "H0A2"
+}

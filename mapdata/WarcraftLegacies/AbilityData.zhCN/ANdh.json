@@ -1,0 +1,138 @@
+{
+  "OldId": "ANdh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nsi2",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nsi3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nsi3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 麦格尼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有一定几率未命中。|n|cffffcc00带有 |cff99ccff酩酊酒雾|r|cffffcc00 效果的单位被 |cff99ccff火焰之息|r|cffffcc00 击中时会被点燃，持续受到燃烧伤害。|r |n|cffffcc00持续<ANdh,Dur1>秒（英雄为<ANdh,HeroDur1>秒）。 |n|n|cffffcc001级|r - <ANdh,DataB1,%>% 未命中几率。 |n|cffffcc002级|r - <ANdh,DataB2,%>% 未命中几率。 |n|cffffcc003级|r - <ANdh,DataB3,%>% 未命中几率。 |n|cffffcc004级|r - <ANdh,DataB4,%>% 未命中几率。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "酩酊酒雾 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>% 的几率未命中。带有酩酊酒雾效果的单位被火焰之息击中时会被点燃，持续受到燃烧伤害。 |n|cffffcc00持续<ANdh,Dur1>秒（英雄为<ANdh,HeroDur1>秒）。\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>% 的几率未命中。带有酩酊酒雾效果的单位被火焰之息击中时会被点燃，持续受到燃烧伤害。 |n|cffffcc00持续<ANdh,Dur1>秒（英雄为<ANdh,HeroDur1>秒）。\n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>% 的几率未命中。带有酩酊酒雾效果的单位被火焰之息击中时会被点燃，持续受到燃烧伤害。 |n|cffffcc00持续<ANdh,Dur1>秒（英雄为<ANdh,HeroDur1>秒）。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用酒精浸透敌方单位，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>% 的几率未命中。带有酩酊酒雾效果的单位被火焰之息击中时会被点燃，持续受到燃烧伤害。 |n|cffffcc00持续<ANdh,Dur1>秒（英雄为<ANdh,HeroDur1>秒）。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "酩酊酒雾"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "OldId": "Asdg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咔嘣！"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "召唤苦痛女王"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp"
+    }
+  ],
+  "NewId": "B0AK"
+}

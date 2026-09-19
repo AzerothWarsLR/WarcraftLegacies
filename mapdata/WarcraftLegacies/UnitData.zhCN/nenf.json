@@ -1,0 +1,49 @@
+{
+  "OldId": "nenf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A020,ACct,ACev"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有影遁与闪避的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "打手"
+    }
+  ]
+}

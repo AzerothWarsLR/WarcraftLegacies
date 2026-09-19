@@ -1,0 +1,29 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlurryOfKnives.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "飞刀乱舞"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于飞刀连击状态，攻击速度大幅提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdl,war3mapImported\\BoneDaggerMissile.mdl"
+    }
+  ],
+  "NewId": "B060"
+}

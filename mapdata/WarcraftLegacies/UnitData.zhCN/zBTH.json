@@ -1,0 +1,80 @@
+{
+  "OldId": "nfgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "ua1r",
+      "Value": 250
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\CthunTentacle.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自深渊的扭曲触须。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（生成触须 - 克苏恩）"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练触须"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "触须"
+    }
+  ],
+  "NewId": "zBTH"
+}

@@ -1,0 +1,35 @@
+{
+  "OldId": "ACct",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 恶魔卫士。蓝色 - 恶魔卫士。深绿色 - 神射手）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    }
+  ],
+  "NewId": "A070"
+}

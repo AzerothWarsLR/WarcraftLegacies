@@ -1,0 +1,59 @@
+{
+  "OldId": "Aegr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "commoner"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellResistance.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（破法者 - 黑暗仆从）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术抗性"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法术抗性"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "受到的魔法攻击和法术伤害降低 55%。"
+    }
+  ],
+  "NewId": "A0T2"
+}

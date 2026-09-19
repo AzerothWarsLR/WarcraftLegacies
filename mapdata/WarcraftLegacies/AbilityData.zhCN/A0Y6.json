@@ -1,0 +1,57 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RSW3"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（元素领主）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每次攻击有 20% 的几率将目标困在束缚水牢中 20 秒（英雄为 3 秒），并每秒造成 30 点伤害。一个单位每 10 秒只能受到一次水牢影响。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "水牢"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "水牢"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNSphereOfWater.blp"
+    }
+  ],
+  "NewId": "A0Y6"
+}

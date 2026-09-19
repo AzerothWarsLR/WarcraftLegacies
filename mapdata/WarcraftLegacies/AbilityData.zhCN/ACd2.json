@@ -1,0 +1,39 @@
+{
+  "OldId": "ACd2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（灰色 - 德拉兹尔布）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffe8e800W|r) - 驱除魔法"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "驱除魔法"
+    }
+  ]
+}

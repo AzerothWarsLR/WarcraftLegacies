@@ -1,0 +1,46 @@
+{
+  "OldId": "nrog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACct,Ashm"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A02D"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有影遁的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "流寇"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "OldId": "modt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 80
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备这副面具时，英雄可以将对敌人造成伤害的<AIva,DataA1,%>%转化为自己的生命值。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "死亡面具"
+    }
+  ]
+}

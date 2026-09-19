@@ -1,0 +1,73 @@
+{
+  "OldId": "AChv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R029"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 - 高等精灵法师）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道最多可跳跃 5 次的治疗能量波，为主目标恢复 85 点生命值，之后每次跳跃的治疗效果会逐渐衰减。"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗波"
+    }
+  ],
+  "NewId": "A00B"
+}

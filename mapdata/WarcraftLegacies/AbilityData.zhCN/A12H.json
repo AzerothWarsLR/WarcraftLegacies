@@ -1,0 +1,43 @@
+{
+  "OldId": "Afbb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "fbk3",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "fbk1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血誓守卫）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击每次命中销毁 60 点魔法值（对英雄为 35 点）。这些魔法值将会燃烧，对被攻击单位造成伤害。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反噬"
+    }
+  ],
+  "NewId": "A12H"
+}

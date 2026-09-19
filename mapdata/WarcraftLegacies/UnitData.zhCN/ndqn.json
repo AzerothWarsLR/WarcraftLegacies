@@ -1,0 +1,33 @@
+{
+  "OldId": "ndqn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "魅魔"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "魅魔"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "魅魔"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "魅魔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    }
+  ]
+}

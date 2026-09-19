@@ -1,0 +1,109 @@
+{
+  "OldId": "AOws",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 325
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Wrs1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "未使用"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOws,DataA1>点伤害，昏迷<AOws,Dur1>秒。 |n|cffffcc002级|r - <AOws,DataA2>点伤害，昏迷<AOws,Dur2>秒。 |n|cffffcc003级|r - <AOws,DataA3>点伤害，昏迷<AOws,Dur3>秒。|n|cffffcc004级|r - <AOws,DataA4>点伤害，昏迷<AOws,Dur4>秒。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战争践|cffffcc00踏|r - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成<AOws,DataA4>点伤害并使其昏迷<AOws,Dur4>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争践踏"
+    }
+  ]
+}

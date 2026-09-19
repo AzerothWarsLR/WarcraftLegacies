@@ -1,0 +1,27 @@
+{
+  "OldId": "nhfp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "堕落牧师"
+    }
+  ]
+}

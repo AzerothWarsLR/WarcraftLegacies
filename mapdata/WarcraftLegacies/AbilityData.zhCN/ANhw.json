@@ -1,0 +1,150 @@
+{
+  "OldId": "ANhw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 230
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 320
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 410
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 沃金）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一道能量波治疗一个目标，并在附近的友方单位之间弹跳。每次弹跳的治疗效果都会降低。 |n|n|cffffcc001级|r - 恢复<ANhw,DataA1>点生命值，弹跳<ANhw,DataB1>次，每次弹跳治疗效果降低 25%。|n|cffffcc002级|r - 恢复<ANhw,DataA2>点生命值，弹跳<ANhw,DataB2>次，每次弹跳治疗效果降低 20%。|n|cffffcc003级|r - 恢复<ANhw,DataA3>点生命值，弹跳<ANhw,DataB3>次，每次弹跳治疗效果降低 15%。|n|cffffcc004级|r - 恢复<ANhw,DataA4>点生命值，弹跳<ANhw,DataB4>次，每次弹跳治疗效果降低 10%。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗波"
+    }
+  ]
+}

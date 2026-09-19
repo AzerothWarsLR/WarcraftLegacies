@@ -1,0 +1,58 @@
+{
+  "OldId": "ofir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0MC"
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "攻击还会造成神圣伤害。"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买购买光明宝珠"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "携带时英雄的攻击附加<AIfb,DataA1>点额外火焰伤害。英雄在攻击空中单位时会变成远程攻击，并对周围的敌方单位造成溅射伤害。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "光明宝珠"
+    }
+  ],
+  "NewId": "I00S"
+}

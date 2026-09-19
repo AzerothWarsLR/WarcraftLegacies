@@ -1,0 +1,288 @@
+{
+  "OldId": "AEsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Esh2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BBEV"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BBEV"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BBEV"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BBEV"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（虚空毒素 - 实体）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空毒素 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE1>点初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE1>点初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE1>点初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE1>点初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空毒素 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空毒素 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空毒素 - [|cffffcc004 级|r]"
+    }
+  ],
+  "NewId": "ABSS"
+}

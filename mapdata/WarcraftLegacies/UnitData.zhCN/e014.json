@@ -1,0 +1,152 @@
+{
+  "OldId": "etoe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0PL"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 15
+    },
+    {
+      "Id": "ugol",
+      "Value": 24
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 12
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,Rhac,R064,R013,Rgfo"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported/WorldTree.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "瑟拉丹巨树"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Waygate"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "升级为永恒之树，以解锁更多类型的建筑和单位。"
+    }
+  ],
+  "NewId": "e014"
+}

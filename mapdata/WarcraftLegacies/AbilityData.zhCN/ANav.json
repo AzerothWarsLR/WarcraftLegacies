@@ -1,0 +1,276 @@
+{
+  "OldId": "ANav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AU"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AU"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AU"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellscreamBerserk.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（格罗姆，萨鲁法尔）"
+    },
+    {
+      "Id": "aefs",
+      "Type": 3,
+      "Value": "BattleRoar"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellscreamBerserk.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "激活战斗恍惚后，英雄将获得额外护甲、额外生命值、额外攻击力和法术免疫。|n持续 15 秒。|n|n|cffffcc001级|r - 5 点额外护甲，15 点额外攻击力。|n|cffffcc002级|r - 10 点额外护甲，30 点额外攻击力。|n|cffffcc003级|r - 15 点额外护甲，45 点额外攻击力。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活战斗恍惚 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活战斗恍惚 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活战斗恍惚 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA1>点额外护甲、<AHav,DataC1>点额外攻击力和法术免疫。 |n持续 15 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA1>点额外护甲、<AHav,DataC1>点额外攻击力和法术免疫。 |n持续 15 秒。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellscreamBerserk.blp"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA1>点额外护甲、<AHav,DataC1>点额外攻击力和法术免疫。 |n持续 15 秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消战斗恍惚"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消战斗恍惚"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消战斗恍惚"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习战斗恍惚"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗恍惚"
+    }
+  ]
+}

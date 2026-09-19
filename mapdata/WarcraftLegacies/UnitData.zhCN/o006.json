@@ -1,0 +1,106 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o02R"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R00J,R03Q,R02I"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n08O,nogn,n08E"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ArcaneLodgeV1.00.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔洞穴"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造食人魔洞穴"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    }
+  ],
+  "NewId": "o006"
+}

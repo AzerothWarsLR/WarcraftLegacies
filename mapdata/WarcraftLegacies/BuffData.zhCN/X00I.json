@@ -1,0 +1,24 @@
+{
+  "OldId": "XHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "沙漠风暴（效果）"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "TornadoLoop"
+    }
+  ],
+  "NewId": "X00I"
+}

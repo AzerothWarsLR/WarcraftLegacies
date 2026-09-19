@@ -1,0 +1,140 @@
+{
+  "OldId": "eshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0C9,A0GN,A0HN,A0HO"
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 20
+    },
+    {
+      "Id": "udup",
+      "Value": 5
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "etoe"
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 500
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "umpi",
+      "Value": 300
+    },
+    {
+      "Id": "umpm",
+      "Value": 300
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usin",
+      "Value": 1200
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "urtm",
+      "Value": 120
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "useu",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usid",
+      "Value": 1200
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R064,Rgfo"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h04L,ewsp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵其他）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.55
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥伯丁"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥伯丁"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗夜精灵在黑海岸的主要文明中心。"
+    }
+  ],
+  "NewId": "e00J"
+}

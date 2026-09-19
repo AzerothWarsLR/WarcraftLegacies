@@ -1,0 +1,35 @@
+{
+  "OldId": "Sca2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R03D"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 元帅 防御）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "混乱"
+    }
+  ],
+  "NewId": "S00W"
+}

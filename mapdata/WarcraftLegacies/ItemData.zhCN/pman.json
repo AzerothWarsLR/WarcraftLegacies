@@ -1,0 +1,40 @@
+{
+  "OldId": "pman",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 16
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "isto",
+      "Value": 3
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "使用后恢复<AIm1,DataA1>点法力值。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "法力药水"
+    }
+  ]
+}

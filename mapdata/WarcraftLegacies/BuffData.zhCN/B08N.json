@@ -1,0 +1,29 @@
+{
+  "OldId": "BHab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAnkh.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "重生"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到重生效果的影响，死亡后会复活。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B08N"
+}

@@ -1,0 +1,79 @@
+{
+  "OldId": "Aclf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RELW"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,enemies,invulnerable,vulnerable"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（鞭风者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标区域生成一片迷雾。引导期间，远程单位无法攻击。持续<A0FU,Dur1>秒。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迷雾"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "迷雾"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNSmoke.blp"
+    }
+  ],
+  "NewId": "A0FU"
+}

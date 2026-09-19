@@ -1,0 +1,47 @@
+{
+  "OldId": "ACpv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（末日领主）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "普通攻击有 25% 的几率对周围单位造成 50 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎"
+    }
+  ],
+  "NewId": "A10H"
+}

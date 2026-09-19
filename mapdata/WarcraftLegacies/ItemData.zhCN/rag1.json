@@ -1,0 +1,56 @@
+{
+  "OldId": "rag1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIa4"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIa4"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "使敏捷提高 4 点。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买敏捷便鞋+3"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的敏捷提高3点。"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "敏捷便鞋+4"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "OldId": "rde3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0GF,AI2m,AIrm"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "isst",
+      "Value": 800
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSightBreak.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "|cffffcc00传说|r|n|cffffdead异界元素摩摩尔的精华。其中附有强大的防御法术。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买购买狂怒护手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的护甲提高4点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "摩摩尔的精华"
+    }
+  ],
+  "NewId": "I00K"
+}

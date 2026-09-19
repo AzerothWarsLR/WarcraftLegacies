@@ -1,0 +1,124 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "VP06"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "usin",
+      "Value": 1800
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "float"
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": -50
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Building_TradingPost.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "贸易站"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3.2
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usew",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（海上）"
+    }
+  ],
+  "NewId": "h014"
+}

@@ -1,0 +1,124 @@
+{
+  "OldId": "nchp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A008,A07U,Aihn,A0JQ"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 12
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01Q,R01N,R02E,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEmissary.blp"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSearingArrows.blp"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Cleanse,- Cleanse|n- Renewal,- Cleanse|n- Renewal|n- Rain of Light"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牧师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练牧师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "圣光纯洁性的虔诚信徒。"
+    }
+  ],
+  "NewId": "n03K"
+}

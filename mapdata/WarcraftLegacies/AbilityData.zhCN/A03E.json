@@ -1,0 +1,120 @@
+{
+  "OldId": "Asta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bstt"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Sta1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Sta2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Sta3",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Sta4",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "Stau",
+      "Type": 3,
+      "Value": "otot"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 艾瑞达术士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个隐形且无法移动的结界，当周围的敌方地面单位靠近时会将其昏迷。激活该陷阱会摧毁其范围内的所有其他静滞陷阱。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个隐形且无法移动的结界，当周围的敌方地面单位靠近时会将其昏迷。激活该陷阱会摧毁其范围内的所有其他静滞陷阱。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "静滞陷阱"
+    }
+  ],
+  "NewId": "A03E"
+}

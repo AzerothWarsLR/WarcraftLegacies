@@ -1,0 +1,36 @@
+{
+  "OldId": "LTr5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bvcb",
+      "Value": 75
+    },
+    {
+      "Id": "bvcg",
+      "Value": 50
+    },
+    {
+      "Id": "bvcr",
+      "Value": 50
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "祖尔石制坡道"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    }
+  ],
+  "NewId": "B015"
+}

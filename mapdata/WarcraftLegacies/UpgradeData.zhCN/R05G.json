@@ -1,0 +1,119 @@
+{
+  "OldId": "Redc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "glmm",
+      "Value": 0
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtib",
+      "Value": 45
+    },
+    {
+      "Id": "gtim",
+      "Value": 60
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gglm",
+      "Value": 25
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高棘语者的法力值上限和法力恢复速度，并使其获得驱散魔法技能。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高棘语者的法力值上限和法力恢复速度，并使其获得驱散魔法技能。"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究棘语者大师级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究棘语者大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "棘语者专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "棘语者专家级训练"
+    }
+  ],
+  "NewId": "R05G"
+}

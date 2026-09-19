@@ -1,0 +1,91 @@
+{
+  "OldId": "ACfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,organic"
+    },
+    {
+      "Id": "amsp",
+      "Value": 600
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLiquidFire.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地精炼金术士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BatTrollMissile\\BatTrollMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "爆炸药水"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸药水"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位发射一枚火焰飞弹，造成 60 点伤害，并使目标昏迷<A006,Dur1>秒。对英雄持续 0.1 秒。"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.3
+    }
+  ],
+  "NewId": "A0QL"
+}

@@ -1,0 +1,104 @@
+{
+  "OldId": "Ablo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B09G"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Blo1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Blo2",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "YB01"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCDruidSpeed.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 丛林守护者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "急速"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "急速"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个友方单位的攻击速度提高 20%，移动速度提高 20%。 |n持续 60 秒。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCDruidSpeed.blp"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    }
+  ],
+  "NewId": "A0FP"
+}

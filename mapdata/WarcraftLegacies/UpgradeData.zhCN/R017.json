@@ -1,0 +1,77 @@
+{
+  "OldId": "Remk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "法力虹吸"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaDrain.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使斯库拉能够使用汲取魔法，从敌人身上吸取法力并转移给友军。"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究汲取魔法"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "R017"
+}

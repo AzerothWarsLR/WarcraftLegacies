@@ -1,0 +1,75 @@
+{
+  "OldId": "Aegr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 0.85
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Def6",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,invulnerable,neutral,structure,vulnerable,ward"
+    },
+    {
+      "Level": 1,
+      "Pointer": 7,
+      "Id": "Def7",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASRondache2.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 老兵步兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "完美防御"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "完美防御"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位有 30% 的几率将穿刺攻击反弹给攻击者，对未反弹的攻击也只承受 35% 的伤害。魔法和法术伤害降低 15%。"
+    }
+  ],
+  "NewId": "A0YO"
+}

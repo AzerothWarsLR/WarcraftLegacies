@@ -1,0 +1,24 @@
+{
+  "OldId": "BOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLavaSpawn.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "烈焰仪式"
+    }
+  ],
+  "NewId": "B046"
+}

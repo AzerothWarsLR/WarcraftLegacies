@@ -1,0 +1,144 @@
+{
+  "OldId": "Uear",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0LR,A10C,A08V,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 28
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "ZB06,ZB02,A0SC,A10N,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "uint",
+      "Value": 21
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R01K"
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "ustr",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "天灾的勇士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿尔萨斯·米奈希尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长支援军队并造成魔法伤害。"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArthasV1.blp"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "瓦罗克·萨鲁法尔"
+    }
+  ]
+}

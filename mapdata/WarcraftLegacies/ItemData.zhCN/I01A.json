@@ -1,0 +1,67 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0HF,AIx5,AIl2,AI2m"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIwm"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBrokenAmulet.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提供属性加成以及攻击速度与移动速度加成。可使用后重置持有者的所有冷却时间。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恶魔之魂"
+    }
+  ],
+  "NewId": "I01A"
+}

@@ -1,0 +1,68 @@
+{
+  "OldId": "ofir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A02X,AItx,AIi4,AIlf"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 50
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNobleDagger.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买烈焰之击"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "携带时英雄的攻击附加<AIfb,DataA1>点额外火焰伤害。英雄在攻击空中单位时会变成远程攻击，并对周围的敌方单位造成溅射伤害。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "烈焰之击"
+    }
+  ],
+  "NewId": "I00J"
+}

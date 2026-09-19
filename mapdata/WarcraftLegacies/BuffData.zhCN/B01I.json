@@ -1,0 +1,44 @@
+{
+  "OldId": "Blsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameWall.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "烈焰护盾"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有烈焰护盾，邻近的友方和敌方单位都会受到伤害。"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    }
+  ],
+  "NewId": "B01I"
+}

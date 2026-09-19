@@ -1,0 +1,160 @@
+{
+  "OldId": "ANhs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncs1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 1600
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Nhs6",
+      "Value": 6
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦格尼-尤格）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "大地恩泽"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "喷洒一波波治疗迷雾，为一片目标区域内的友方单位恢复生命值。|n|n|cffffcc001级|r - <A0KN,DataF1>波，每波恢复<A0KN,DataA1>点生命值。|n|cffffcc002级|r - <A0KN,DataF2>波，每波恢复<A0KN,DataA2>点生命值。|n|cffffcc003级|r - <A0KN,DataF3>波，每波恢复<A0KN,DataA3>点生命值。|n|cffffcc004级|r - <A0KN,DataF4>波，每波恢复<A0KN,DataA4>点生命值。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地恩泽 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地恩泽 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地恩泽 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地恩泽 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+    }
+  ],
+  "NewId": "A0KN"
+}

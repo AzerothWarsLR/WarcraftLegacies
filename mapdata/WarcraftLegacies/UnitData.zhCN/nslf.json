@@ -1,0 +1,53 @@
+{
+  "OldId": "nslf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0KF,ACsw"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0KF"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 725
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可使敌人减速的轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "淤泥怪抛掷者"
+    }
+  ]
+}

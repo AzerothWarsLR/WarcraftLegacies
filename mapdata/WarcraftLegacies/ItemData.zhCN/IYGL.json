@@ -1,0 +1,84 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AYGS,A03X"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "isst",
+      "Value": 800
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AGYN"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNatureHammer.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性，并赋予多个法术。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买瓦兰奈尔，远古王者之锤"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "瓦兰奈尔，远古王者之锤"
+    }
+  ],
+  "NewId": "IYGL"
+}

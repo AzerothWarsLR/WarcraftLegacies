@@ -1,0 +1,42 @@
+{
+  "OldId": "Apig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（焦黑古树）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方单位，每秒造成 15 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "永久献祭"
+    }
+  ],
+  "NewId": "A09W"
+}

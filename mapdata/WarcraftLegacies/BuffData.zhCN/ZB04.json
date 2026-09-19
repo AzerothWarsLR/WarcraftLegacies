@@ -1,0 +1,39 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00收割|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位的力量提高。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "收割"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
+    }
+  ],
+  "NewId": "ZB04"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Binf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "护盾符文"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有护盾符文，护甲大幅提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_ShieldBuff_Blue.mdx"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRuneOfShielding.blp"
+    }
+  ],
+  "NewId": "B0AO"
+}

@@ -1,0 +1,254 @@
+{
+  "OldId": "AEsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Esh5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Esh3",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esh1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团英雄）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "投掷一把淬毒匕首，造成大量初始伤害，随后持续造成伤害。中毒单位在持续时间内移动速度和攻击速度降低 25%。对单位和英雄均持续 8 秒。毒素共触发 12 次。|n|n|cffffcc001级|r - <VP04,DataE1>点直接伤害，<VP04,DataA1>点持续伤害。 |n|cffffcc002级|r - <VP04,DataE2>点直接伤害，<VP04,DataA2>点持续伤害。 |n|cffffcc003级|r - <VP04,DataE3>点直接伤害，<VP04,DataA3>点持续伤害。|n|cffffcc004级|r - <VP04,DataE4>点直接伤害，<VP04,DataA4>点持续伤害。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影突袭 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE1>点初始伤害，并每<VP04,Cast1,.>秒造成<VP04,DataA1>点伤害，持续<VP04,Dur1>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB1,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE1>点初始伤害，并每<VP04,Cast1,.>秒造成<VP04,DataA1>点伤害，持续<VP04,Dur1>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB1,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE1>点初始伤害，并每<VP04,Cast1,.>秒造成<VP04,DataA1>点伤害，持续<VP04,Dur1>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB1,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE1>点初始伤害，并每<VP04,Cast1,.>秒造成<VP04,DataA1>点伤害，持续<VP04,Dur1>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB1,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暗影突袭"
+    }
+  ],
+  "NewId": "VP04"
+}

@@ -1,0 +1,35 @@
+{
+  "OldId": "nthl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Alit"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的重型远程单位。可猛击敌人。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "雷霆蜥蜴"
+    }
+  ]
+}

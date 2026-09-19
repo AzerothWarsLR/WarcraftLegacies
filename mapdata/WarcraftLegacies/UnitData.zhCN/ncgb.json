@@ -1,0 +1,50 @@
+{
+  "OldId": "ncgb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "ua1b",
+      "Value": 21
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "upri",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（等级 1）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "工艺拙劣的机械地精近战战士。经过一段时间后自爆。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "发条地精"
+    }
+  ]
+}

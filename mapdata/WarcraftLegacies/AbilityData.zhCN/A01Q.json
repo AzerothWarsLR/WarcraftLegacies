@@ -1,0 +1,253 @@
+{
+  "OldId": "ACac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04G"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04G"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04G"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04G"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Cac1",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ear2",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ear2",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ear2",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ear3",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ear3",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ear3",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,vulnerable"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASShadowDance.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿卡玛）"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShadowDance.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习暗影光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "降低周围敌方单位的攻击力，并使该单位有一定几率闪避攻击。|n|n|cffffcc001级|r - 攻击力降低 20%，并有<A0Z1,DataA1,%>%的几率闪避攻击。|n|cffffcc002级|r - 攻击力降低 30%，并有<A0Z1,DataA2,%>%的几率闪避攻击。|n|cffffcc003级|r - 攻击力降低 40%，并有<A0Z1,DataA3,%>%的几率闪避攻击。|n|cffffcc004级|r - 攻击力降低 50%，并有<A0Z1,DataA4,%>%的几率闪避攻击。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\VoidSkullAura_v5.mdx"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暗影光环"
+    }
+  ],
+  "NewId": "A01Q"
+}

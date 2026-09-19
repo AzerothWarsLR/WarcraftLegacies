@@ -1,0 +1,38 @@
+{
+  "OldId": "ntrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 10
+    },
+    {
+      "Id": "ua1b",
+      "Value": 45
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1350
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "超巨型海龟"
+    }
+  ]
+}

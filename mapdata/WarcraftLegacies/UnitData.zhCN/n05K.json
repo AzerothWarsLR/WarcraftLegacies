@@ -1,0 +1,80 @@
+{
+  "OldId": "ndmu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "util",
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 660
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "枯法者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 腐化的太阳之井）"
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练枯法者"
+    }
+  ],
+  "NewId": "n05K"
+}

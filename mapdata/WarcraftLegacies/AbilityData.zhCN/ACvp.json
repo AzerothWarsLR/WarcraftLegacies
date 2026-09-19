@@ -1,0 +1,25 @@
+{
+  "OldId": "ACvp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立敌对。青色？）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血光环"
+    }
+  ]
+}

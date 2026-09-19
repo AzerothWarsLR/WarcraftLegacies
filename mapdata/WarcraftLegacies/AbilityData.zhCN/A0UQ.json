@@ -1,0 +1,132 @@
+{
+  "OldId": "ANdo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "n06L"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNWorgenMoon.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狼人诅咒"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习末日降临 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "标记一个目标单位，使之成为恶魔降临的宿主。受影响的单位无法施放法术，并会每秒受到<ANdo,DataA1>点伤害，直至死亡。其死亡时，尸体会诞生出一只强大的恶魔。末日降临无法被驱散或取消。 |n|cffffcc001级|r - 每秒 40 点伤害，并召唤 1 名精英末日守卫。|n|cffffcc002级|r - 每秒 70 点伤害，并召唤 2 名精英末日守卫。 |n|cffffcc003级|r - 每秒 100 点伤害，并召唤 4 名精英末日守卫。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人诅咒"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以狼人的撕咬诅咒一个目标。受诅咒的单位无法施放法术，并在 20 秒内每秒受到 30 点伤害（英雄为 2 秒）。若该单位在诅咒期间死亡，将变成一头狼。此诅咒无法被驱散。"
+    }
+  ],
+  "NewId": "A0UQ"
+}

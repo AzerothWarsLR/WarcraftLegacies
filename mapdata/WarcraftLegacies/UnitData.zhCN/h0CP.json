@@ -1,0 +1,117 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ahsb,A02Y,A020,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 29
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ugor",
+      "Value": 26
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1135
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "urtm",
+      "Value": 5
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,R00B,Rhar,Rhme,Rhan,Rhpm,Rguv"
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的骑乘战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "英勇骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练英勇骑士"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "LordearonKnight.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnightReClassic.blp"
+    }
+  ],
+  "NewId": "h0CP"
+}

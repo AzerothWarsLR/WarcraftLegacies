@@ -1,0 +1,142 @@
+{
+  "OldId": "Harf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A137,ACds,A0C1,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 31
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A056,A01F,Aamk,A05E,A06S"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavyBash"
+    },
+    {
+      "Id": "uint",
+      "Value": 30
+    },
+    {
+      "Id": "uagi",
+      "Value": 19
+    },
+    {
+      "Id": "ustr",
+      "Value": 33
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活至高国王"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 至高王）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_KingArthas.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "至高王"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活至高国王"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长摧毁敌人并持久作战。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤国王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "阿尔萨斯·米奈希尔"
+    }
+  ]
+}

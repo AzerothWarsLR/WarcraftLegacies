@@ -1,0 +1,44 @@
+{
+  "OldId": "BUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritCrusader.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000十字军光环|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到十字军光环的影响，移动速度降低。"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（亚历山德罗斯）"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "十字军光环"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B07G"
+}

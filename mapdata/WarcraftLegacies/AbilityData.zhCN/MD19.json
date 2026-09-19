@@ -1,0 +1,52 @@
+{
+  "OldId": "Acht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RBEV"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（畸形奇美拉）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低<MD19,DataA1,%>%，持续<MD19,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    }
+  ],
+  "NewId": "MD19"
+}

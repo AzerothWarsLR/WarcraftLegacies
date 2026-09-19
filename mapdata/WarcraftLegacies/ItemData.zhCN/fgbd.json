@@ -1,0 +1,49 @@
+{
+  "OldId": "fgbd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "igol",
+      "Value": 35
+    },
+    {
+      "Id": "istr",
+      "Value": 180
+    },
+    {
+      "Id": "isst",
+      "Value": 300
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R09X"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤一头蓝色幼龙为你而战。|n持续<AIbd,Dur1>秒。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蓝色幼龙蛋"
+    }
+  ]
+}

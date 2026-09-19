@@ -1,0 +1,198 @@
+{
+  "OldId": "AEfk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 玛维）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "守望者掷出一阵飞刀，伤害附近的敌人。|n|n|cffffcc00等级 1|r - 每个目标<AEfk,DataA1>点伤害。 |n|cffffcc00等级 2|r - 每个目标<AEfk,DataA2>点伤害。 |n|cffffcc00等级 3|r - 每个目标<AEfk,DataA3>点伤害。 |n|cffffcc00等级 4|r - 每个目标<AEfk,DataA4>点伤害。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刀扇 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "守望者掷出一阵飞刀，伤害附近的敌人。每把飞刀造成<AEfk,DataA3>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "守望者掷出一阵飞刀，伤害附近的敌人。每把飞刀造成<AEfk,DataA3>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "刀扇"
+    }
+  ]
+}

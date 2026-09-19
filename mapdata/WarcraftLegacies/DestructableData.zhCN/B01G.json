@@ -1,0 +1,29 @@
+{
+  "OldId": "BTtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "btil",
+      "Type": 3,
+      "Value": "O"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "泰罗卡树木墙"
+    },
+    {
+      "Id": "btxf",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\AshenvaleTree\\AshenTree"
+    }
+  ],
+  "NewId": "B01G"
+}

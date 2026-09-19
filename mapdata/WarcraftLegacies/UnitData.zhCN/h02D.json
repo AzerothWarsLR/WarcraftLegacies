@@ -1,0 +1,144 @@
+{
+  "OldId": "hmpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A02R,A0K6,A0FW,Aihn,A0ZU"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A02R"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00J,R01V,Rhme,Rhar,Rhpm,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h066"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Raise Earth,- Raise Earth|n- Summon Mud Golem,- Raise Earth|n- Summon Mud Golem|n- Healing Shield,- Raise Earth|n- Summon Mud Golem|n- Healing Shield|n- Stone Armor"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MageDalaranV1.01.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地卜师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练地卜师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "擅长御土之术的法师。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master, Grandmaster"
+    }
+  ],
+  "NewId": "h02D"
+}

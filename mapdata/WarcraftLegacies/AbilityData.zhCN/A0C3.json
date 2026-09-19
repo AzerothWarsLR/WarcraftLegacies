@@ -1,0 +1,63 @@
+{
+  "OldId": "ANms",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 战斗法师 - 肯瑞托）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活一道护盾，每点法力值可吸收<A0C3,DataA1>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活一道护盾，每点法力值可吸收<A0C3,DataA1>点伤害。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力护盾"
+    }
+  ],
+  "NewId": "A0C3"
+}

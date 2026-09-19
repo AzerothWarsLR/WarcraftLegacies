@@ -1,0 +1,48 @@
+{
+  "OldId": "ACsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落 - 死亡骑士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "阻止目标区域内的所有敌人施放法术，持续 10(2)秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "沉默"
+    }
+  ],
+  "NewId": "A0JK"
+}

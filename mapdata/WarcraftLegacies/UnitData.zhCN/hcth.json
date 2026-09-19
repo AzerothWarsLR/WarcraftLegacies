@@ -1,0 +1,152 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A13D,A07C,A020,A0MI,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 11
+    },
+    {
+      "Id": "udu1",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 21
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 225
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01N,R04D,Rhar,Rhme,Rhpm,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "halt"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 875
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A13D"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrusader.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 200
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Royal Captain.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "白银之手侍从"
+    },
+    {
+      "Id": "uclr",
+      "Value": 175
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练白银之手侍从"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注圣光的战士，对瘟疫与亡灵化免疫。"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "OldId": "ANsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "阻止目标区域内的所有敌人施放法术。  |n|n|cffffcc001级|r - 影响目标点<A0XS,Area1>半径内的单位。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。 |n|cffffcc002级|r - 影响目标点<A0XS,Area2>半径内的单位。对单位持续<A0XS,Dur2>秒，对英雄持续<A0XS,HeroDur2>秒。|n|cffffcc003级|r - 影响目标点<A0XS,Area3>半径内的单位。对单位持续<A0XS,Dur3>秒，对英雄持续<A0XS,HeroDur3>秒。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "沉默 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "沉默"
+    }
+  ],
+  "NewId": "A0XS"
+}

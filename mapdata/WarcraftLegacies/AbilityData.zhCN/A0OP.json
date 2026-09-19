@@ -1,0 +1,32 @@
+{
+  "OldId": "Aspd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "o04T"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Sod1",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生成图腾"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（巨魔）"
+    }
+  ],
+  "NewId": "A0OP"
+}

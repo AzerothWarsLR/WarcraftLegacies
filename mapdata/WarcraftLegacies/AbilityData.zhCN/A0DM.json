@@ -1,0 +1,186 @@
+{
+  "OldId": "AUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B016"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B016"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B016"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B016"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.03
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.06
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.09
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.12
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASDivineClarity2.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（维伦）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDivineClarity2.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "提高周围友方单位的生命恢复速度和移动速度。 |n|n|cffffcc001级|r - 移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。|n|cffffcc002级|r - 移动速度提高<A0DM,DataA2,%>%，生命恢复速度提高<A0DM,DataB2,.>。|n|cffffcc003级|r - 移动速度提高<A0DM,DataA3,%>%，生命恢复速度提高<A0DM,DataB3,.>。|n|cffffcc004级|r - 移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。\n"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    }
+  ],
+  "NewId": "A0DM"
+}

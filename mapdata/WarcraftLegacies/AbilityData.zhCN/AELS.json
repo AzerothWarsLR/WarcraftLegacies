@@ -1,0 +1,45 @@
+{
+  "OldId": "Ahan",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBreatheFire.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灼热撕咬"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灼热撕咬"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时，该单位使目标护甲降低 3 点，持续 5 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（图标）"
+    }
+  ],
+  "NewId": "AELS"
+}

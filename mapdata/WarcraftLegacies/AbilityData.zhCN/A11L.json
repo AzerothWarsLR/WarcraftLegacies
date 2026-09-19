@@ -1,0 +1,45 @@
+{
+  "OldId": "Atdg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Tdg2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Tdg1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑洞）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "建筑伤害光环"
+    }
+  ],
+  "NewId": "A11L"
+}

@@ -1,0 +1,94 @@
+{
+  "OldId": "nfgb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0ER,A0GZ,A070,A020"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 925
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "usma",
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 20
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪部落-传送门）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "B"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "愤怒卫士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤愤怒卫士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "燃烧远征军队的精锐战士。"
+    }
+  ]
+}

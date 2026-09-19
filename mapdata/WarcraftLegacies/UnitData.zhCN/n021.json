@@ -1,0 +1,68 @@
+{
+  "OldId": "ngnb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aihn"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "霍格"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "uclr",
+      "Value": 155
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位，用于壮大你的部队。"
+    }
+  ],
+  "NewId": "n021"
+}

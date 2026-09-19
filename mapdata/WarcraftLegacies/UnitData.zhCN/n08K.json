@@ -1,0 +1,67 @@
+{
+  "OldId": "nwld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,ANbh,ACct,ACro"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Reuv,R019,Rhme,Rhar"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯召唤）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\TimberWolf\\TimberWolf.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "野狼"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有致命一击的中型近战单位。可施放咆哮。"
+    }
+  ],
+  "NewId": "n08K"
+}

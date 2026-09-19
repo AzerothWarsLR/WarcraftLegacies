@@ -1,0 +1,60 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A049,A048"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "Ashs"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性。可用于施放隐形术、火焰之雨、吞噬魔法和恶魔召唤。"
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Doodads\\Cinematic\\EyeOfSargeras\\EyeOfSargeras.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨格拉斯之眼"
+    }
+  ],
+  "NewId": "I003"
+}

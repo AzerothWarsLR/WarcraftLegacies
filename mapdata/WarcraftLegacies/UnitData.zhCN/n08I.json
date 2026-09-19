@@ -1,0 +1,63 @@
+{
+  "OldId": "nbld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2375
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "法库雷斯特公爵"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\Knight\\Knight.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 190
+    },
+    {
+      "Id": "uclb",
+      "Value": 170
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有影遁与虔诚光环的重型近战单位。可施放圣盾。"
+    }
+  ],
+  "NewId": "n08I"
+}

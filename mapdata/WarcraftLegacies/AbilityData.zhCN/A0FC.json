@@ -1,0 +1,214 @@
+{
+  "OldId": "AEer",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Beng"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eer1",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.75
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4.25
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（娜萨）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "倒刺网"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习倒刺网 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄用倒刺网诱捕一个敌人，暂时使其无法移动、无法攻击并持续受到伤害。 |n|n|cffffcc001级|r - 每秒<AEer,DataA1>点伤害，持续<AEer,Dur1>秒。对英雄持续 2.5 秒。|n|cffffcc002级|r - 每秒<AEer,DataA2>点伤害，持续<AEer,Dur2>秒。对英雄持续 3 秒。|n|cffffcc003级|r - 每秒<AEer,DataA3>点伤害，持续<AEer,Dur3>秒。对英雄持续 3.5 秒。|n|cffffcc004级|r - 每秒<AEer,DataA4>点伤害，持续<AEer,Dur4>秒。对英雄持续 4 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "倒刺网 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "倒刺网 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "倒刺网 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "倒刺网 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+    }
+  ],
+  "NewId": "A0FC"
+}

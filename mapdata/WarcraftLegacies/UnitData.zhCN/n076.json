@@ -1,0 +1,87 @@
+{
+  "OldId": "nfgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.35
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "uhpm",
+      "Value": 750
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "uclb",
+      "Value": 50
+    },
+    {
+      "Id": "uclg",
+      "Value": 221
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "小型触须"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自深渊的强大触须。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练小型触须"
+    }
+  ],
+  "NewId": "n076"
+}

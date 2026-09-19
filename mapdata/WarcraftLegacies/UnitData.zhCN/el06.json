@@ -1,0 +1,69 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "EL0X,Avul,Aloc"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（潮汐领主）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Whirlpool.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强效漩涡"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练强效漩涡"
+    }
+  ],
+  "NewId": "el06"
+}

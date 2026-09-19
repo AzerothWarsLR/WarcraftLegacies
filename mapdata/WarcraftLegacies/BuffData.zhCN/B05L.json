@@ -1,0 +1,24 @@
+{
+  "OldId": "BHab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "魔枢强化"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到能量核心强化的影响，法力恢复速度提高每秒 0.5 点。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B05L"
+}

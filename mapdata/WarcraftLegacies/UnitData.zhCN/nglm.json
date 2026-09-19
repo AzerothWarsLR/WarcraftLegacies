@@ -1,0 +1,27 @@
+{
+  "OldId": "nglm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "divine"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练地精地雷"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地精地雷"
+    }
+  ]
+}

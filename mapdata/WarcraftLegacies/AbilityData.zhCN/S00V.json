@@ -1,0 +1,61 @@
+{
+  "OldId": "SCae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0.075
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争韵律"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战争韵律"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的攻击速度提高 7.5%。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASTribal Drum of War.blp"
+    }
+  ],
+  "NewId": "S00V"
+}

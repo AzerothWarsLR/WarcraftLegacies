@@ -1,0 +1,59 @@
+{
+  "OldId": "nahy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1800
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 145
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 145
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有吞噬、战争践踏与慢性毒药的重型两栖远程单位。被击杀时，较小的多头蛇会从其尸体中爬出。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "远古多头蛇"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "OldId": "Ansk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ssk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 21
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ssk3",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Ssk4",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ssk5",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemy,ally"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（雷克萨，佐诺兹）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "降低所有受到的攻击伤害。攻击伤害无法降低至<A066,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A066,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A066,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A066,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A066,DataC4>点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A066,DataC1>点。攻击伤害无法降低至<A066,DataB1>点以下。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A066,DataC1>点。攻击伤害无法降低至<A066,DataB1>点以下。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A066,DataC1>点。攻击伤害无法降低至<A066,DataB1>点以下。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的所有攻击伤害降低<A066,DataC1>点。攻击伤害无法降低至<A066,DataB1>点以下。"
+    }
+  ],
+  "NewId": "A066"
+}

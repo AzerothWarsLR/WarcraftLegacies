@@ -1,0 +1,19 @@
+{
+  "OldId": "Brai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "灵魂仪式"
+    }
+  ],
+  "NewId": "B08A"
+}

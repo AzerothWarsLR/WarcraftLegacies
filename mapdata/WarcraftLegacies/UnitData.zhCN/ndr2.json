@@ -1,0 +1,60 @@
+{
+  "OldId": "ndr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uhpm",
+      "Value": 690
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rusl,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0T2,A07F"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 44
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 死亡骑士）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SkeletonBerserker.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗奴仆"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": "AIx5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iagi",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Iint",
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Istr",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨格拉斯之眼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 英雄属性加成"
+    }
+  ],
+  "NewId": "A048"
+}

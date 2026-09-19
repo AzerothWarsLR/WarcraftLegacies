@@ -1,0 +1,65 @@
+{
+  "OldId": "ACcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocl2",
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 狮鹫骑士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道闪电，最多弹射 5 次，对主要目标造成 75 点伤害。每次弹射的伤害递减 5%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电链"
+    }
+  ],
+  "NewId": "A0CL"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "ACua",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（野怪 - 女王纳扎雷特）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪恶光环"
+    }
+  ],
+  "NewId": "A0J3"
+}

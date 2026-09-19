@@ -1,0 +1,199 @@
+{
+  "OldId": "Nfir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A01Y,ACrk,Apig,Amim,A0I2,A04S,A0HW"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": "uagi",
+      "Value": 45
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.45
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua1d",
+      "Value": 10
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "ANav"
+    },
+    {
+      "Id": "uhos",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 9000
+    },
+    {
+      "Id": "uint",
+      "Value": 32
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "umpi",
+      "Value": 5000
+    },
+    {
+      "Id": "umpm",
+      "Value": 5000
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "demon"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1200
+    },
+    {
+      "Id": "ua2r",
+      "Value": 1200
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 10
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,ground,notself,structure"
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "utc1",
+      "Value": 6
+    },
+    {
+      "Id": "utco",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "首席炎魔领主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "拉格纳罗斯"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Ragnaros.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长干扰法术并造成大量火焰伤害。可学习灵魂燃烧、召唤熔岩爪牙、焚身化骨和火山爆发。"
+    }
+  ],
+  "NewId": "N00D"
+}

@@ -1,0 +1,80 @@
+{
+  "OldId": "Aroc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "debris,enemies,ground,item,structure"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（防守方奥术之塔投射物）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该防御塔会额外发射最多 9 枚投射物，每枚对附近的敌人造成 10 点伤害"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "多重射击"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASTripleShot.blp"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\OrbOfDeathMissile.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击"
+    }
+  ],
+  "NewId": "A0ZV"
+}

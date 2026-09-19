@@ -1,0 +1,34 @@
+{
+  "OldId": "BOvd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Sacred Guard Blue.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "时光护盾"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到时光护盾的影响，处于无敌状态。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_LunarShield.blp"
+    }
+  ],
+  "NewId": "B0B1"
+}

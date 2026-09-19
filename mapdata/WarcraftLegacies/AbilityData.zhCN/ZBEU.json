@@ -1,0 +1,87 @@
+{
+  "OldId": "ANeg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Neg1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Neg2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Neg6",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Neg5",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Neg4",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Neg3",
+      "Type": 3,
+      "Value": "AEvi,ZBPA"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伊利丹）"
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    }
+  ],
+  "NewId": "ZBEU"
+}

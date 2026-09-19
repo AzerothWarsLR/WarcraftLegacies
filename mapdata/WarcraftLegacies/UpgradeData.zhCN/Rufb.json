@@ -1,0 +1,43 @@
+{
+  "OldId": "Rufb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使冰霜巨龙的攻击暂时中止生产。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "冰冻吐息"
+    }
+  ]
+}

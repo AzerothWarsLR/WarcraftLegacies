@@ -1,0 +1,43 @@
+{
+  "OldId": "nmrm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uver",
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人中毒的轻型近战单位。也可影遁。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鱼人夜行者"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "OldId": "Hant",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Z9X3,A0DK,A078,ANhw,Aamk"
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "urqc",
+      "Value": 0
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Z3X2,AInv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R026"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大检察官"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "萨莉·怀特迈恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长治疗和辅助魔法。"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大检察官"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大检察官"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Sally Whitemane.mdl"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤萨莉"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhitemane.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhitemane.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Sylvanus"
+    }
+  ],
+  "NewId": "H08H"
+}

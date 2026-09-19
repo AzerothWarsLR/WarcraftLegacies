@@ -1,0 +1,48 @@
+{
+  "OldId": "npig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Avul"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dragozer - 8v8 第一赛季冠军"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Props\\City_Statue\\City_Statue.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroPaladin"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（赞助者）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "呼唤野猪之灵来拯救你。"
+    }
+  ],
+  "NewId": "n0DY"
+}

@@ -1,0 +1,67 @@
+{
+  "OldId": "ACbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbh1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbh3",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHeadshot.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色 库尔提拉斯陆战队员）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "爆头"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆头"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使攻击有 5% 的几率昏迷目标 0.5 秒（对英雄 0.1 秒）。"
+    }
+  ],
+  "NewId": "A0TJ"
+}

@@ -1,0 +1,42 @@
+{
+  "OldId": "BOvc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "时光护盾（施法者）"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Bondage Blue SD.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "ftac",
+      "Value": 1
+    },
+    {
+      "Id": "fspd",
+      "Value": 2
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "war3mapImported\\Bondage Blue SD.mdx"
+    },
+    {
+      "Id": "feft",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ],
+  "NewId": "B0B2"
+}

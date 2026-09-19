@@ -1,0 +1,306 @@
+{
+  "OldId": "Absk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "MD18"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "MD18"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "MD18"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "MD18"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWorgenHunger.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\BattleRoar\\RoarCaster.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（戈德林）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "白狼之怒"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWorgenHunger.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习白狼之怒 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使该单位的攻击速度大幅提高，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。 |n持续 7 秒。|n|n|cffffcc001级|r - 攻击速度提高<A0SV,DataB1,%>%。|n|cffffcc002级|r - 攻击速度提高<A0SV,DataB2,%>%。|n|cffffcc003级|r - 攻击速度提高<A0SV,DataB3,%>%。 |n|cffffcc004级|r - 攻击速度提高<A0SV,DataB4,%>%。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "白狼之怒 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "白狼之怒 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "白狼之怒 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "白狼之怒 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0SV,DataB1,%>%，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0SV,DataB1,%>%，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0SV,DataB1,%>%，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0SV,DataB1,%>%，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。"
+    }
+  ],
+  "NewId": "A0SV"
+}

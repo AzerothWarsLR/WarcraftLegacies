@@ -1,0 +1,23 @@
+{
+  "OldId": "ntor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练龙卷风"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙卷风"
+    }
+  ]
+}

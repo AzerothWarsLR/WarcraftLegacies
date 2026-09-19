@@ -1,0 +1,77 @@
+{
+  "OldId": "AHdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R029"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 - 高等精灵法师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "汲取法力"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在魔导师和目标之间转移混乱能量。每秒从敌人身上吸取 15 点法力值，或者每秒向友方单位转移 10 点法力值。|n|n法力虹吸能让魔导师的法力值超过上限，但如果不及时使用，过量的法力值会迅速耗尽。|n持续 6 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力虹吸"
+    }
+  ],
+  "NewId": "A0FO"
+}

@@ -1,0 +1,165 @@
+{
+  "OldId": "nmsc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "uhos",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0O3,Aien,Acrs,AChw"
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,R02V,Rguv"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.72
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "深海鱼人暗法师"
+    },
+    {
+      "Id": "ushh",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushw",
+      "Type": 1,
+      "Value": 140
+    },
+    {
+      "Id": "ushx",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ushy",
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Curse,- Curse|n- Dispel,- Curse|n- Dispel|n- Healing Ward"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "war3mapImported\\UPGClericMastery.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗法师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "次级施法者，擅长削弱敌军与群体治疗。"
+    }
+  ]
+}

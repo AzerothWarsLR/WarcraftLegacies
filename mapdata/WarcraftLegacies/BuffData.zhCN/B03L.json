@@ -1,0 +1,44 @@
+{
+  "OldId": "Brej",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWrench.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "机械工具包"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该建筑正由修补匠修理，生命值持续恢复。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "机械工具包"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\mechkit.mdx"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ],
+  "NewId": "B03L"
+}

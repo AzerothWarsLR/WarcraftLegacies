@@ -1,0 +1,136 @@
+{
+  "OldId": "Ocbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AOr3,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A01R,A0WM,A0YX,AOae"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 16
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 32
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.8
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R05I"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血蹄部族的酋长"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长吸收伤害和近身战斗。"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "凯恩·血蹄"
+    }
+  ]
+}

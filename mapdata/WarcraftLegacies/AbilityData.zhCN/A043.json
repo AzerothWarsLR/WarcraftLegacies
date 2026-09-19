@@ -1,0 +1,102 @@
+{
+  "OldId": "AHhb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hhb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonancient,notself,organic,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,nonancient,notself,organic,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（圣骑士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "圣洁之光 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一个友方活体单位恢复 200 点生命值并给予<A00G,DataA1>点额外护甲；或使一个敌方亡灵单位的护甲降低<A00K,DataA1>点，并造成一半的伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一个友方活体单位恢复 200 点生命值并给予<A00G,DataA1>点额外护甲；或使一个敌方亡灵单位的护甲降低<A00K,DataA1>点，并造成一半的伤害。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly_Light.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "圣洁之光 - [|cffffcc002级|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "圣洁之光"
+    }
+  ],
+  "NewId": "A043"
+}

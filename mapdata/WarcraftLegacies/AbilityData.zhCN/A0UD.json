@@ -1,0 +1,212 @@
+{
+  "OldId": "Aspb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "A0KC"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "A0KC,A0MQ"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "A0KC,A0MQ,A0DL"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "A0KC,A0MQ,A0DL,A01I"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spb2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（莫格莱尼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "武器强化"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevineBlessing.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习武器强化 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "每级都会为灰烬使者解锁一项新技能。 |n|n|cffffcc001级|r - 解锁焚身化骨。 |n|cffffcc002级|r - 解锁粉碎。 |n|cffffcc003级|r - 解锁圣餐。 |n|cffffcc004级|r - 解锁十字军光环。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "武器强化 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "武器强化 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "武器强化 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "武器强化 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每级都会为灰烬使者解锁一项新技能。 |n|n|cffffcc001级|r - 解锁焚身化骨。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每级都会为灰烬使者解锁一项新技能。 |n|n|cffffcc001级|r - 解锁焚身化骨。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每级都会为灰烬使者解锁一项新技能。 |n|n|cffffcc001级|r - 解锁焚身化骨。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每级都会为灰烬使者解锁一项新技能。 |n|n|cffffcc001级|r - 解锁焚身化骨。"
+    }
+  ],
+  "NewId": "A0UD"
+}

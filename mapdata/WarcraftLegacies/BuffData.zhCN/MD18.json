@@ -1,0 +1,29 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "白狼之怒"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "白狼之怒"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到白狼之怒的影响，造成的伤害提高，但受到的攻击伤害也增加。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWorgenHunger.blp"
+    }
+  ],
+  "NewId": "MD18"
+}

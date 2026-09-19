@@ -1,0 +1,76 @@
+{
+  "OldId": "ACrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05E"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 暴掠术士）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Demon\\DemonDissipate\\DemonDissipate.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤虚空行者"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00R|r) - 召唤虚空行者"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使用一个死亡单位的灵魂召唤一个强力虚空行者。|n|n该虚空行者具有 825 点生命值，持续 40 秒。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    }
+  ]
+}

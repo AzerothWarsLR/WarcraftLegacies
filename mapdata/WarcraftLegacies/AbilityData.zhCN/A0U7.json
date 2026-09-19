@@ -1,0 +1,124 @@
+{
+  "OldId": "ACfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BPSE"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "aite",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 1200
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "commoner"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 950
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,hero,nonhero,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（物品 灵魂宝石）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂捕获"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumRanged.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习瞄准射击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "射出一支箭矢，使目标昏迷并造成可观的伤害。|n|n|cffffcc001级|r - 造成<A0CJ:ACfb,DataA1>点伤害，使目标昏迷<A0CJ:ACfb,Dur1>秒。对英雄持续<A0CJ:ACfb,HeroDur1>秒。|n|cffffcc002级|r - 造成<A0CJ:ACfb,DataA2>点伤害，使目标昏迷<A0CJ:ACfb,Dur2>秒。对英雄持续<A0CJ:ACfb,HeroDur2>秒。|n|cffffcc003级|r - 造成<A0CJ:ACfb,DataA3>点伤害，使目标昏迷<A0CJ:ACfb,Dur3>秒。对英雄持续<A0CJ:ACfb,HeroDur3>秒。|n|cffffcc004级|r - 造成<A0CJ:ACfb,DataA4>点伤害，使目标昏迷<A0CJ:ACfb,Dur4>秒。对英雄持续<A0CJ:ACfb,HeroDur4>秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "加重长矛 (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个敌方目标投掷加重长矛，造成 50 点伤害并昏迷目标 3 秒。对英雄持续 1 秒。冷却时间 1 分钟"
+    }
+  ],
+  "NewId": "A0U7"
+}

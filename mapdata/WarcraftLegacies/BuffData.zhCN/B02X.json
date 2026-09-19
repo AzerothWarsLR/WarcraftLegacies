@@ -1,0 +1,39 @@
+{
+  "OldId": "Blsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "治疗护盾"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有治疗护盾，站在其附近的友方单位会得到治疗。"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl"
+    }
+  ],
+  "NewId": "B02X"
+}

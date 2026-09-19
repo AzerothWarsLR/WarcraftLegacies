@@ -1,0 +1,82 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RELP"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（活化护甲）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 20% 的几率对目标施放净化，驱散其增益并降低其移动速度。召唤单位会受到 200 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "电击之刃"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASPhaseBlade.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "电击之刃"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "AELP"
+}

@@ -1,0 +1,94 @@
+{
+  "OldId": "AUls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Uls3",
+      "Value": 8
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Ulsu",
+      "Type": 3,
+      "Value": "u01L"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "e00L"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 主基地建筑）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "先祖之魂"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习虫群风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "创造一群愤怒的蝗虫，撕咬周围的敌方单位。它们在啃食敌人血肉的同时会将其转化为一种物质，在返回时为主宰恢复生命值。效果随等级提升。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "先祖之魂"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤先祖之魂，窃取敌方单位的生命值并将其返还给建筑。持续 30 秒。"
+    }
+  ],
+  "NewId": "A0GN"
+}

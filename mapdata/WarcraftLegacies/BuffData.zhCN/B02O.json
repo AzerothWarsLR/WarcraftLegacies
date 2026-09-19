@@ -1,0 +1,24 @@
+{
+  "OldId": "BOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageInitiate.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "见习法师"
+    }
+  ],
+  "NewId": "B02O"
+}

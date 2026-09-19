@@ -1,0 +1,95 @@
+{
+  "OldId": "nef4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udup",
+      "Value": 2
+    },
+    {
+      "Id": "ufma",
+      "Value": 6
+    },
+    {
+      "Id": "ugor",
+      "Value": 5
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhac"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 8
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.65
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造高等精灵农场"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "高等精灵农场"
+    }
+  ]
+}

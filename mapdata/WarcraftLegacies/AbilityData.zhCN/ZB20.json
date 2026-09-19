@@ -1,0 +1,30 @@
+{
+  "OldId": "ACce",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "ZB12"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（巨像）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击力道十足，<ZB20,DataA1,%>%的伤害会穿透至主要攻击目标附近的敌人。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "顺劈斩"
+    }
+  ],
+  "NewId": "ZB20"
+}

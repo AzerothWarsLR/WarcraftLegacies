@@ -1,0 +1,43 @@
+{
+  "OldId": "narg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 21
+    },
+    {
+      "Id": "uhpm",
+      "Value": 655
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位。对法术免疫。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战斗魔像"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "OldId": "ACce",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（15%）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击力道极大，其 15% 的伤害会波及主要攻击目标附近的敌人。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "顺劈斩"
+    }
+  ],
+  "NewId": "A0CH"
+}

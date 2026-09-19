@@ -1,0 +1,212 @@
+{
+  "OldId": "Aspb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "CK04"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "CK04,YBFW"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "CK04,YBFW,A0U3"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "spb1",
+      "Type": 3,
+      "Value": "CK04,YBFW,A0U3,YBSY"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "spb2",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "spb3",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "spb4",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 塞纳留斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "自然之主"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习自然之主 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|cffffcc001级|r - 解锁森林蜘蛛。|n|cffffcc002级|r - 解锁野性之狼。|n|cffffcc003级|r - 解锁熊怪萨满长者。|n|cffffcc004级|r - 解锁伊森德雷。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然之主 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然之主 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然之主 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然之主 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛"
+    }
+  ],
+  "NewId": "A0U0"
+}

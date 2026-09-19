@@ -1,0 +1,144 @@
+{
+  "OldId": "uzg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0ZO"
+    },
+    {
+      "Id": "ubld",
+      "Value": 25
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "ufma",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "ugor",
+      "Value": 20
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "upar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper,undead"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "u002"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "在通幽魂之塔上方悬浮着一颗噼啪作响、蕴含致命魔法的不洁水晶。"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.4
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowTrollBurrow"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    }
+  ],
+  "NewId": "u028"
+}

@@ -1,0 +1,394 @@
+{
+  "OldId": "ANab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B00Z"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 65
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 95
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Nab1",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Nab2",
+      "Type": 2,
+      "Value": -0.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "amsp",
+      "Value": 1000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "Attack,two"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 乌索克、加洛德、扎伊拉）"
+    },
+    {
+      "Id": "aefs",
+      "Type": 3,
+      "Value": "WoodHeavyBashFlesh"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致残打击"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNXOverkill.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习致残打击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄以巨大的力量发起打击，重创目标乃至附近的其他敌人。造成持续伤害，并降低目标敌人的移动速度、攻击速度和护甲。持续 5 秒。|n|n|cffffcc001级|r - 250 点持续伤害，攻击速度降低 20%，移动速度降低 10%，护甲降低 3。|n|cffffcc002级|r - 300 点伤害，攻击速度降低 30%，移动速度降低 15%，护甲降低 4。|n|cffffcc003级|r - 350 点伤害，攻击速度降低 40%，移动速度降低 20%，护甲降低 5。|n|cffffcc004级|r - 400 点伤害，攻击速度降低 50%，移动速度降低 25%，护甲降低 6。\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "致残打击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "致残打击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "致残打击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "致残打击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以巨大的力量发起打击，重创目标乃至附近的其他敌人。造成 250 点持续伤害，护甲降低<A07N,DataC1>，同时使目标敌人的移动速度和攻击速度降低 20%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以巨大的力量发起打击，重创目标乃至附近的其他敌人。造成 250 点持续伤害，护甲降低<A07N,DataC1>，同时使目标敌人的移动速度和攻击速度降低 20%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以巨大的力量发起打击，重创目标乃至附近的其他敌人。造成 250 点持续伤害，护甲降低<A07N,DataC1>，同时使目标敌人的移动速度和攻击速度降低 20%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以巨大的力量发起打击，重创目标乃至附近的其他敌人。造成 250 点持续伤害，护甲降低<A07N,DataC1>，同时使目标敌人的移动速度和攻击速度降低 20%。"
+    }
+  ],
+  "NewId": "A07N"
+}

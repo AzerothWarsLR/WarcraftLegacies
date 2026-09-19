@@ -1,0 +1,213 @@
+{
+  "OldId": "AHtb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 375
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（诺格弗格）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\AcidBomb\\BottleMissile.mdl"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "向一个敌方单位投掷爆炸鸡尾酒，造成伤害并昏迷目标。 |n|n|cffffcc001级|r - 150 点伤害，昏迷 4 秒。对英雄 1 秒。|n|cffffcc002级|r - 200 点伤害，昏迷 5 秒。对英雄 1.5 秒。|n|cffffcc003级|r - 300 点伤害，昏迷 6 秒。对英雄 2 秒。|n|cffffcc004级|r - 375 点伤害，昏迷 7 秒。对英雄 2.5 秒\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸鸡尾酒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷爆炸鸡尾酒，造成 150 点伤害并昏迷目标 4 秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷爆炸鸡尾酒，造成 150 点伤害并昏迷目标 4 秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷爆炸鸡尾酒，造成 150 点伤害并昏迷目标 4 秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷爆炸鸡尾酒，造成 150 点伤害并昏迷目标 4 秒。对英雄持续 1 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "爆炸鸡尾酒"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习爆炸鸡尾酒 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸鸡尾酒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸鸡尾酒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸鸡尾酒 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyWater.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyWater.blp"
+    },
+    {
+      "Id": "amac",
+      "Type": 2,
+      "Value": 0.1
+    }
+  ],
+  "NewId": "A0RJ"
+}

@@ -1,0 +1,152 @@
+{
+  "OldId": "ANtm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ntm1",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ntm3",
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ntm3",
+      "Value": 9
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral,nonhero"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,enemy,neutral,nonhero"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ntm1",
+      "Type": 2,
+      "Value": 0.12
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ntm3",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "立刻消灭目标单位，并将其变成黄金加入你的金库！|n点金术不能对英雄和 7 级以上的中立生物使用。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "立刻消灭目标单位，并将其变成黄金加入你的金库！|n点金术不能对英雄和 7 级以上的中立生物使用。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（诺格弗格）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "立刻消灭目标单位，并将其变成黄金加入你的金库！|n点金术不能对英雄和<VP01,DataC1>级以上的中立生物使用。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "立刻消灭目标单位，并将其变成黄金加入你的金库！|n点金术不能对英雄和 7 级以上的中立生物使用。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "点金术"
+    }
+  ],
+  "NewId": "VP01"
+}

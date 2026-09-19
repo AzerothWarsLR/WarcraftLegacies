@@ -1,0 +1,107 @@
+{
+  "OldId": "Rhde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h03U"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A094"
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Id": "gtib",
+      "Value": 20
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratr"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "n055"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNObsidianBoulder.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "重型巨石"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究重型巨石"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化龙龟，使其攻击距离提高 200，攻击伤害提高 15。"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    }
+  ],
+  "NewId": "RYDT"
+}

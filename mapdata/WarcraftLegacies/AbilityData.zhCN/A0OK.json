@@ -1,0 +1,236 @@
+{
+  "OldId": "ANdo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ndo1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ndo2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ndo3",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nfod"
+    },
+    {
+      "Level": 2,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nfod"
+    },
+    {
+      "Level": 3,
+      "Id": "Ndou",
+      "Type": 3,
+      "Value": "nfod"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ndo4",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ndo4",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暮锤氏族）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习腐蚀之血 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以上古之神的力量腐蚀目标的血液。被折磨的目标无法施放法术，并会每秒受到伤害。其死亡时，尸体上将生成一名无面死亡使者。腐蚀之血无法被驱散或取消。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "腐蚀之血 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "腐蚀之血 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "腐蚀之血 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以上古之神的力量腐蚀一个目标单位的血液。被折磨的单位无法施放法术，并会每秒受到<A0OK,DataA1>点伤害。其死亡时，尸体上将生成<A0OK,DataB1>名无面死亡使者。腐蚀之血无法被驱散或取消。|n对英雄持续 8 秒，对单位则无限持续。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以上古之神的力量腐蚀一个目标单位的血液。被折磨的单位无法施放法术，并会每秒受到<A0OK,DataA1>点伤害。其死亡时，尸体上将生成<A0OK,DataB1>名无面死亡使者。腐蚀之血无法被驱散或取消。|n对英雄持续 8 秒，对单位则无限持续。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以上古之神的力量腐蚀一个目标单位的血液。被折磨的单位无法施放法术，并会每秒受到<A0OK,DataA1>点伤害。其死亡时，尸体上将生成<A0OK,DataB1>名无面死亡使者。腐蚀之血无法被驱散或取消。|n对英雄持续 8 秒，对单位则无限持续。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "腐蚀之血"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    }
+  ],
+  "NewId": "A0OK"
+}

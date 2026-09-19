@@ -1,0 +1,24 @@
+{
+  "OldId": "Bspe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAnimalWarTraining.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "集结"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位获得集结效果，移动速度高于正常水平。"
+    }
+  ],
+  "NewId": "B007"
+}

@@ -1,0 +1,26 @@
+{
+  "OldId": "ACrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（1/1 位置）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "抗性体肤"
+    }
+  ]
+}

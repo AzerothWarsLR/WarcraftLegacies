@@ -1,0 +1,50 @@
+{
+  "OldId": "Robs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "o02R"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化兽人步兵和食人魔，使其生命值提高 225 点，攻击伤害提高 3 点。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "野蛮之力"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11P,A0GK,AInv"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A0WM,A08N,A08O,A0Q4"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R01M"
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumSlice"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活斯托姆加德王储"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.98
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "斯托姆加德王储"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "加林·托尔贝恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活斯托姆加德王储"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加林·托尔贝恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "王者战士英雄，擅长支援军队。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroPaladin"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDanathRed.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-arthas.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "GalenTrollbaneCWV2.04.mdl"
+    }
+  ],
+  "NewId": "H00Z"
+}

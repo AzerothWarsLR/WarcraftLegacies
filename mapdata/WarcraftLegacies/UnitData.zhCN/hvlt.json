@@ -1,0 +1,97 @@
+{
+  "OldId": "hvlt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aall,Apit"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 13
+    },
+    {
+      "Id": "ugor",
+      "Value": 10
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umki",
+      "Type": 3,
+      "Value": "sreg,phea,pman,stwp,hslv,olig,ciri,spsh"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然商店）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥秘宝库"
+    }
+  ]
+}

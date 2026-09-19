@@ -1,0 +1,76 @@
+{
+  "OldId": "AIbg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "Ibl1",
+      "Type": 3,
+      "Value": "o04R"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOilStation.blp"
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地精 - 原油钻机建造者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "建造原油钻机"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "建造原油钻机"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标位置建造一座原油钻机。|n|n|cff99b4d1必须建在海上的原油矿脉附近，且每处矿脉只能建造一座原油钻机。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    }
+  ],
+  "NewId": "A0MU"
+}

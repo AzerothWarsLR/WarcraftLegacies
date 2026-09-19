@@ -1,0 +1,47 @@
+{
+  "OldId": "Apg2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Prg3",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 45
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 黑暗萨满，粉色 - 萨满祭司）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "净化"
+    }
+  ]
+}

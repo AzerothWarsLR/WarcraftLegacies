@@ -1,0 +1,73 @@
+{
+  "OldId": "ANpi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNpi"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,enemy,neutral,organic"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地狱火 3级）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方单位，每秒造成 25 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方单位，每秒造成 25 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "永久献祭"
+    }
+  ],
+  "NewId": "A06W"
+}

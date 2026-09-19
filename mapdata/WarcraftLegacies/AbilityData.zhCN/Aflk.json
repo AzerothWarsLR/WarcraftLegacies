@@ -1,0 +1,23 @@
+{
+  "OldId": "Aflk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡兹莫丹 - 直升机 - 战歌 - 飞艇）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "对空机炮"
+    }
+  ]
+}

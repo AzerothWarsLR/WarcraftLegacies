@@ -1,0 +1,27 @@
+{
+  "OldId": "nsel",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 625
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可猛击敌人的中型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海元素"
+    }
+  ]
+}

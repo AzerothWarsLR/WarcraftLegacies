@@ -1,0 +1,58 @@
+{
+  "OldId": "nhyd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aspo,Aspt"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "uhpm",
+      "Value": 625
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有慢性毒药的轻型两栖远程单位。被击杀时，较小的多头蛇会从其尸体中爬出。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "多头蛇"
+    }
+  ]
+}

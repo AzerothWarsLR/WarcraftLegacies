@@ -1,0 +1,71 @@
+{
+  "OldId": "ATtr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "bonc",
+      "Value": 1
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "失事船只"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "doodads\\northrend\\water\\Battleship\\Battleship.mdl"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "doodads\\northrend\\water\\Battleship\\Battleship.mdl"
+    },
+    {
+      "Id": "bvar",
+      "Value": 1
+    },
+    {
+      "Id": "bgsc",
+      "Type": 1,
+      "Value": 300
+    },
+    {
+      "Id": "bsel",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "ShadowMercenaryCamp"
+    },
+    {
+      "Id": "blit",
+      "Value": 0
+    }
+  ],
+  "NewId": "B00E"
+}

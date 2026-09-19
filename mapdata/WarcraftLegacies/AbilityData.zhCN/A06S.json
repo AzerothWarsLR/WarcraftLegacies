@@ -1,0 +1,279 @@
+{
+  "OldId": "AUfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 220
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScepterOfMastery.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿尔萨斯，阿尔萨斯国王）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "war3mapImported\\Holy Nova.mdx"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣新星"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNScepterOfMastery.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣新星 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以一道具有伤害性的圣光波轰击目标敌方单位周围的敌方单位。 |n|n|cffffcc001级|r - 对目标造成<A06S,DataB1>点伤害，<A06S,DataA1>点新星伤害。 |n|cffffcc002级|r - 对目标造成<A06S,DataB2>点伤害，<A06S,DataA2>点新星伤害。 |n|cffffcc003级|r - 对目标造成<A06S,DataB3>点伤害，<A06S,DataA3>点新星伤害。 |n|cffffcc004级|r - 对目标造成<A06S,DataB4>点伤害，<A06S,DataA4>点新星伤害。\n"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\HolyNova_Fixed.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+    }
+  ],
+  "NewId": "A06S"
+}

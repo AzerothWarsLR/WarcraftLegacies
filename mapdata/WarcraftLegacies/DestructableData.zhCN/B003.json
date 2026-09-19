@@ -1,0 +1,46 @@
+{
+  "OldId": "XTvt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bcat",
+      "Type": 3,
+      "Value": "P"
+    },
+    {
+      "Id": "btar",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bvcb",
+      "Value": 25
+    },
+    {
+      "Id": "bvcg",
+      "Value": 5
+    },
+    {
+      "Id": "bvcr",
+      "Value": 25
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding1.mdl"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "卡拉赞"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\8x8Unflyable.tga"
+    }
+  ],
+  "NewId": "B003"
+}

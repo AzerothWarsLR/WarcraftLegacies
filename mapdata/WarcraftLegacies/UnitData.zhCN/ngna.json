@@ -1,0 +1,34 @@
+{
+  "OldId": "ngna",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 485
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "豺狼人偷猎者"
+    }
+  ]
+}

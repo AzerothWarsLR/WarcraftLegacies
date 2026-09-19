@@ -1,0 +1,107 @@
+{
+  "OldId": "ANso",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nso1",
+      "Type": 2,
+      "Value": 7.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nso4",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nso5",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R02I"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 法师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂燃烧"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用魔法烈焰缠绕敌方单位，每秒造成 7.5 点伤害，使其无法施放法术，移动速度降低 75%，攻击力与攻击速度降低 50%。|n持续 45 秒（英雄为 3 秒）。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂燃烧"
+    }
+  ],
+  "NewId": "A0W6"
+}

@@ -1,0 +1,102 @@
+{
+  "OldId": "nerd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACpa,ACfb"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1f",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 19
+    },
+    {
+      "Id": "ugor",
+      "Value": 19
+    },
+    {
+      "Id": "ua1h",
+      "Value": 0
+    },
+    {
+      "Id": "ua1q",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 45
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（萨格拉斯之眼）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾瑞达巫师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练艾瑞达|cffffcc00恶|r魔学者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施放火球术与寄生术的重型远程单位。"
+    }
+  ]
+}

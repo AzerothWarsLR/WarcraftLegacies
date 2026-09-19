@@ -1,0 +1,29 @@
+{
+  "OldId": "BUim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "邪能裂隙"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UDeathSmall\\UDeathSmall.mdl"
+    },
+    {
+      "Id": "feft",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\StormBolt\\StormBoltTarget.mdl"
+    }
+  ],
+  "NewId": "B06K"
+}

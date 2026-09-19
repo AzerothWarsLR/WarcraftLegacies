@@ -1,0 +1,221 @@
+{
+  "OldId": "SNin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4.5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "n041"
+    },
+    {
+      "Level": 2,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "n091"
+    },
+    {
+      "Level": 3,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "n042"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团 - 玛尔加尼斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习地狱火 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "从天空中召唤一个地狱火，对一定区域内的敌方地面单位造成伤害并使其昏迷。地狱火持续 180 秒。|n|n|cffffcc00级别 1|r - 对半径 250 范围内的单位造成 90 点伤害。冲击使敌方单位昏迷 2 秒。|n|cffffcc00级别 2|r - 对半径 300 范围内的单位造成 180 点伤害。冲击使敌方单位昏迷 2.5 秒。|n|cffffcc00级别 3|r - 对半径 350 范围内的单位造成 270 点伤害。冲击使敌方单位昏迷 3 秒。\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空中召唤一个地狱火，对一定区域内的敌方地面单位造成<SNin,DataA2>点伤害，并使其昏迷<SNin,Dur2>秒。地狱火持续<SNin,DataB2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空中召唤一个地狱火，对一定区域内的敌方地面单位造成<SNin,DataA2>点伤害，并使其昏迷<SNin,Dur2>秒。地狱火持续<SNin,DataB2>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地狱火"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地狱火"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "地狱火"
+    }
+  ]
+}

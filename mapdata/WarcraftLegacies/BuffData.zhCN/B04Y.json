@@ -1,0 +1,34 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "坚韧箴言"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfProtection.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_ShieldBuff_Small.mdx"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有坚韧真言，护甲提高。"
+    }
+  ],
+  "NewId": "B04Y"
+}

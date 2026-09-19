@@ -1,0 +1,46 @@
+{
+  "OldId": "ANde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（狼骑兵，游骑）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使攻击对建筑造成双倍伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "拆毁"
+    }
+  ],
+  "NewId": "A0LQ"
+}

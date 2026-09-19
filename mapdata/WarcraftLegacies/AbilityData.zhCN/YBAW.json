@@ -1,0 +1,87 @@
+{
+  "OldId": "AChv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocl1",
+      "Type": 2,
+      "Value": 155
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ocl3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vuln,invu,organic"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "YBAA"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（先知）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤两道治疗能量波，每道最多可跳跃<YBAW,DataB1>次。第一道为主目标恢复<YBAW,DataA1>点生命值，第二道恢复<YBWW,DataA1>点生命值。每次跳跃的治疗效果降低<YBAW,DataC1,%>%。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "分裂治疗波"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "分裂治疗波"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFieryWave.blp"
+    }
+  ],
+  "NewId": "YBAW"
+}

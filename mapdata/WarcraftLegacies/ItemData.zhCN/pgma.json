@@ -1,0 +1,43 @@
+{
+  "OldId": "pgma",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 30
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "isto",
+      "Value": 3
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强效法力药水"
+    }
+  ]
+}

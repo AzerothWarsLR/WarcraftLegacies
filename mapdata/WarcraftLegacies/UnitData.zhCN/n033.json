@@ -1,0 +1,66 @@
+{
+  "OldId": "ncfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 370
+    },
+    {
+      "Id": "ua1b",
+      "Value": 7
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.65
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（寄生体）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水元素幼体"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    }
+  ],
+  "NewId": "n033"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "Bcrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于致盲状态，攻击会落空。"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "致盲"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B06V"
+}

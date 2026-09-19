@@ -1,0 +1,54 @@
+{
+  "OldId": "Ahsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hsb2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hsb3",
+      "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00Z"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASRiflemanBurningShot.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "穿甲弹"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "对拥有重型护甲的敌方目标造成的伤害提高<A0F4,DataB1,%>%。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "穿甲弹"
+    }
+  ],
+  "NewId": "A0F4"
+}

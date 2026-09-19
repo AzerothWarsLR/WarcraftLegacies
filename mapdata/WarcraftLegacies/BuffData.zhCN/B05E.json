@@ -1,0 +1,19 @@
+{
+  "OldId": "Brai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "召唤的虚空行者"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（粉色 - 暴掠术士）"
+    }
+  ],
+  "NewId": "B05E"
+}

@@ -1,0 +1,40 @@
+{
+  "OldId": "nsrn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有嗜血与连环闪电的重型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暴掠通灵侍僧"
+    }
+  ]
+}

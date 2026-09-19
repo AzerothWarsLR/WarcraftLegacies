@@ -1,0 +1,39 @@
+{
+  "OldId": "Bpig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "静电云"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldBuff.mdl"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "sprite"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（风暴之云）"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "sprite"
+    }
+  ],
+  "NewId": "B05X"
+}

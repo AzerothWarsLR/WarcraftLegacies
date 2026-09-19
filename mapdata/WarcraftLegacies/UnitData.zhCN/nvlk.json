@@ -1,0 +1,36 @@
+{
+  "OldId": "nvlk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "uhpm",
+      "Value": 120
+    },
+    {
+      "Id": "ufoo",
+      "Value": 10
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "小孩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "瘦小的村民。"
+    }
+  ]
+}

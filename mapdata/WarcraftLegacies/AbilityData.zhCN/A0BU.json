@@ -1,0 +1,29 @@
+{
+  "OldId": "Atru",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蓝色 - 恶魔猎犬）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "敏锐感知"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "敏锐感知"
+    }
+  ],
+  "NewId": "A0BU"
+}

@@ -1,0 +1,79 @@
+{
+  "OldId": "nnwq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 39
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1d",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1500
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhme,Rhar,Rugf,R00Q,R00P"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uclb",
+      "Value": 150
+    },
+    {
+      "Id": "uclg",
+      "Value": 135
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.75
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "女王妮萨阿兹雷"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有邪恶光环的重型近战单位。施放亡者复生与腐臭蝠群。"
+    }
+  ],
+  "NewId": "n074"
+}

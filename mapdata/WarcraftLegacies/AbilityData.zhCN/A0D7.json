@@ -1,0 +1,115 @@
+{
+  "OldId": "AEvi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "E021"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "U026"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B04B"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习恶魔变形 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将伊利丹变成一个拥有远程攻击的强大恶魔。|n|n|cffffcc001级|r - 400 点生命值，持续 60 秒。冷却时间 180 秒。|n|cffffcc002级|r - 800 点生命值，持续 70 秒。冷却时间 160 秒。|n|cffffcc003级|r - 1200 点生命值，持续 80 秒。冷却时间 140 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将梅雷迪斯变成一个拥有远程攻击的强大怨灵。拥有 1000 点额外生命值、60 点额外伤害、每秒 10 点生命恢复和 40 点护甲。持续 15 秒。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（梅雷迪斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "怨灵形态"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "怨灵形态"
+    }
+  ],
+  "NewId": "A0D7"
+}

@@ -1,0 +1,184 @@
+{
+  "OldId": "Umal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0FL,A07B,AInv,VP02"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucpt",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "VP05,SNin,Aamk,AUcs,AHab"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 15
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "utco",
+      "Value": 6
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R04B,R054,R01Y"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 15
+    },
+    {
+      "Id": "ua1r",
+      "Value": 250
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uint",
+      "Value": 26
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ustr",
+      "Value": 25
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNZombieDread.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狡诈者"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长渗透和扰乱敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤玛尔加尼斯"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\NecromancerMissile\\NecromancerMissile.mdl"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "玛尔加尼斯"
+    }
+  ]
+}

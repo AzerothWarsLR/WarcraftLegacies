@@ -1,0 +1,67 @@
+{
+  "OldId": "AIil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iild",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,alive,allies,ancient,enemies,friend,ground,hero,invulnerable,item,neutral,nonancient,nonhero,organic,player,self,vulnerable"
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Iilw",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "幻影步"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（假单位）"
+    }
+  ],
+  "NewId": "TPY4"
+}

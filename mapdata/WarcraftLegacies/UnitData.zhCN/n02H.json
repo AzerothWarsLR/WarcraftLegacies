@@ -1,0 +1,48 @@
+{
+  "OldId": "ngrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "uhpm",
+      "Value": 450
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uclg",
+      "Value": 100
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "小型水晶魔像"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可使敌人减速的轻型近战单位。对法术免疫。"
+    }
+  ],
+  "NewId": "n02H"
+}

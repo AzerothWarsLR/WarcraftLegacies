@@ -1,0 +1,72 @@
+{
+  "OldId": "Rhri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gglb",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h07G"
+    },
+    {
+      "Id": "gtib",
+      "Value": 45
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡 蒸汽坦克）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "超频"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究超频"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使蒸汽坦克能够超频，攻击速度提高<A0F5,DataB1,%>%，但在<A0F5,Dur1>秒内受到的伤害提高<A0F5,DataC1,%>%。"
+    }
+  ],
+  "NewId": "R00T"
+}

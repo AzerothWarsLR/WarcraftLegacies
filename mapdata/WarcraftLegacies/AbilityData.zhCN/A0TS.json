@@ -1,0 +1,40 @@
+{
+  "OldId": "Amgl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（图腾）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "白骨图腾的攻击会弹射到 3 个额外单位。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "弹射攻击"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "弹射攻击"
+    }
+  ],
+  "NewId": "A0TS"
+}

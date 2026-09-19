@@ -1,0 +1,179 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11P,A0W3,A0GK,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 32
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A12C,A0W4,Aamk,A01R,A0FK"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 125
+    },
+    {
+      "Id": "uint",
+      "Value": 15
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "ua1r",
+      "Value": 120
+    },
+    {
+      "Id": "ua1s",
+      "Value": 12
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R02S"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroKingVarian.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活瓦里安·乌瑞恩"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暴风城国王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "瓦里安·乌瑞恩国王"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活瓦里安·乌瑞恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长近身战斗并增强附近的部队。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤瓦里安·乌瑞恩"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "King Varian Wrynn.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    }
+  ],
+  "NewId": "H00R"
+}

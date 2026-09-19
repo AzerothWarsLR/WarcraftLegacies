@@ -1,0 +1,84 @@
+{
+  "OldId": "nvde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Adtg,ACfl,ACde"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 37
+    },
+    {
+      "Id": "ugor",
+      "Value": 37
+    },
+    {
+      "Id": "usrg",
+      "Value": 110
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练古老虚空行者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型远程单位，可施放吞噬魔法和叉状闪电。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "古老虚空行者"
+    }
+  ]
+}

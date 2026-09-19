@@ -1,0 +1,29 @@
+{
+  "OldId": "XHbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "奥术爆裂（效果）"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\MarkOfChaos\\MarkOfChaosTarget.mdl"
+    },
+    {
+      "Id": "fefs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "X007"
+}

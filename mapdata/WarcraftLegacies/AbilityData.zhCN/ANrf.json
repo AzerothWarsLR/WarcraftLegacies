@@ -1,0 +1,177 @@
+{
+  "OldId": "ANrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（古加尔，瓦里玛萨斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成初始伤害，随后灼烧敌人<ANrf,Dur1>秒。 |n|n|cffffcc001级|r - 每波<ANrf,DataB1>点伤害，<ANrf,DataA1>波，每秒<ANrf,DataE1>点伤害。 |n|cffffcc002级|r - 每波<ANrf,DataB2>点伤害，<ANrf,DataA2>波，每秒<ANrf,DataE2>点伤害。 |n|cffffcc003级|r - 每波<ANrf,DataB3>点伤害，<ANrf,DataA3>波，每秒<ANrf,DataE3>点伤害。 |n|cffffcc004级|r - 每波<ANrf,DataB4>点伤害，<ANrf,DataA4>波，每秒<ANrf,DataE4>点伤害。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰之雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之雨"
+    }
+  ]
+}

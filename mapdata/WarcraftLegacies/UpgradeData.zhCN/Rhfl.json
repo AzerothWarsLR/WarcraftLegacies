@@ -1,0 +1,47 @@
+{
+  "OldId": "Rhfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h07F"
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "照明弹"
+    }
+  ]
+}

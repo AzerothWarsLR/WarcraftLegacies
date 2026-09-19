@@ -1,0 +1,29 @@
+{
+  "OldId": "Aiun",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "inv2",
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（亡灵 - 红色、蓝色）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "单位物品栏"
+    }
+  ]
+}

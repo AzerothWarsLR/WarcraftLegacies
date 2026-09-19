@@ -1,0 +1,165 @@
+{
+  "OldId": "AHmt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hmt1",
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hmt1",
+      "Value": 72
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hmt1",
+      "Value": 84
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,ground,invulnerable,neutral,nonsapper,player,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,ground,invulnerable,neutral,nonsapper,player,structure,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,ground,invulnerable,neutral,nonsapper,player,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉安娜）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体传送 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将包括施法者在内的单位传送到一个友方建筑或单位旁边。 |n|cffffcc001级|r - 传送 60 个单位。|n|cffffcc002级|r - 传送 72 个单位。|n|cffffcc003级|r - 传送 84 个单位。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体传送 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体传送 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体传送 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将周围包括吉安娜在内的 60 个玩家单位传送到一个友方地面单位或建筑旁边。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将周围包括吉安娜在内的 60 个玩家单位传送到一个友方地面单位或建筑旁边。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将周围包括吉安娜在内的 60 个玩家单位传送到一个友方地面单位或建筑旁边。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群体传送"
+    }
+  ]
+}

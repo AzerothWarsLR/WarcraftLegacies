@@ -1,0 +1,107 @@
+{
+  "OldId": "AUan",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 4000
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uan1",
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 7000
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R04V"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（冰封王座）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习亡者再临 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使一片区域内的阵亡单位复活，为阿尔萨斯而战。被复活的单位继承其原有的升级，且处于易受伤害状态。|n|n|cffffcc001级|r - 复活 6 个单位，持续 40 秒。|n|cffffcc002级|r - 复活 12 个单位，持续 60 秒。|n|cffffcc003级|r -  复活 18 个单位，持续 80 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一片区域内的 15 个单位复活，为耐奥祖而战 40 秒。被复活的单位保留升级，且处于易受伤害状态。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "亡者再临"
+    }
+  ],
+  "NewId": "A0L3"
+}

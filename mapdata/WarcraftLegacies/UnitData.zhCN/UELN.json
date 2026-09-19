@@ -1,0 +1,168 @@
+{
+  "OldId": "Uktl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A118,A00Y,A13G,Aamk,MD09"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 210
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "ustr",
+      "Value": 15
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A00Y"
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1000
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RSW3"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天空之墙）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "猎潮者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长减缓周围敌人的速度。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "耐普图隆"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TidalLord.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTidelord.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTidelord.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活耐普图隆"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤耐普图隆"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活耐普图隆"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 250
+    }
+  ],
+  "NewId": "UELN"
+}

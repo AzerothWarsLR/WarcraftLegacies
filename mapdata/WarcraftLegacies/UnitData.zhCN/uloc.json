@@ -1,0 +1,23 @@
+{
+  "OldId": "uloc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练蝗虫"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蝗虫"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "OldId": "Rupc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Aap1"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "Apts"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Id": "gglb",
+      "Value": 150
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "瘟疫蔓延"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究瘟疫蔓延"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化憎恶、绞肉车、瘟疫泰坦和瘟疫爬虫，使其移动速度提高 35，并使疾病之云的持续时间延长 30 秒。|n|n"
+    }
+  ],
+  "NewId": "R01X"
+}

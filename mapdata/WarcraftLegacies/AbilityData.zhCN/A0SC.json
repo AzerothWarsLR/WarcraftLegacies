@@ -1,0 +1,119 @@
+{
+  "OldId": "AUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.04
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.08
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.12
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0.16
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 死亡骑士阿尔萨斯） （古加尔）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "提高附近友方单位的移动速度和生命恢复速度。 |n|n|cffffcc001级|r - 移动速度 4%，生命恢复加成 0.80。 |n|cffffcc002级|r - 移动速度<AUau,DataA2,%>%，生命恢复加成 1.30。 |n|cffffcc003级|r - 移动速度<AUau,DataA3,%>%，生命恢复加成 1.80。 |n|cffffcc004级|r - 移动速度<AUau,DataA4,%>%，生命恢复加成 2.30。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪恶光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高 4%，生命恢复速度提高 0.80。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高 4%，生命恢复速度提高 0.80。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高 4%，生命恢复速度提高 0.80。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高 4%，生命恢复速度提高 0.80。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪恶光环"
+    }
+  ],
+  "NewId": "A0SC"
+}

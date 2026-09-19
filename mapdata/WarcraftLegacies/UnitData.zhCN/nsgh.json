@@ -1,0 +1,43 @@
+{
+  "OldId": "nsgh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有诱捕与粉碎的重型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海巨人猎手"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "OldId": "AEmb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 420
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然，尤格-萨隆）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "发射一道负能量波来燃烧目标敌方单位的法力，并对目标造成等同于所燃烧法力值的伤害。|n|n|cffffcc001级|r - 最多燃烧<AEmb,DataA1>点法力值。|n|cffffcc002级|r - 最多燃烧<AEmb,DataA2>点法力值。|n|cffffcc003级|r - 最多燃烧<AEmb,DataA3>点法力值。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法力燃烧 - [|cffffcc00等级 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "射出一枚负能量弹，燃烧目标敌方单位至多<A10U,DataA4>点魔法值。被燃烧的魔法值会爆燃，造成等同燃烧量的伤害。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "射出一枚负能量弹，燃烧目标敌方单位至多<A10U,DataA4>点魔法值。被燃烧的魔法值会爆燃，造成等同燃烧量的伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "射出一枚负能量弹，燃烧目标敌方单位至多<A10U,DataA4>点魔法值。被燃烧的魔法值会爆燃，造成等同燃烧量的伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "射出一枚负能量弹，燃烧目标敌方单位至多<A10U,DataA4>点魔法值。被燃烧的魔法值会爆燃，造成等同燃烧量的伤害。"
+    }
+  ],
+  "NewId": "A10U"
+}

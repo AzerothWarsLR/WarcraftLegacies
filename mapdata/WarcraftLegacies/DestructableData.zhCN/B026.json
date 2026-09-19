@@ -1,0 +1,43 @@
+{
+  "OldId": "BTsc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bgse",
+      "Value": 0
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "#暗影_大型"
+    },
+    {
+      "Id": "bshd",
+      "Type": 3,
+      "Value": "ShadowTombOfRelics"
+    },
+    {
+      "Id": "bgpm",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": 0
+    }
+  ],
+  "NewId": "B026"
+}

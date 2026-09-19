@@ -1,0 +1,100 @@
+{
+  "OldId": "AUcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Rai3",
+      "Type": 3,
+      "Value": "n067"
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ucb5",
+      "Value": 99
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 3
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R04P"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯之镰）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "德鲁伊从附近召唤 3 只蜘蛛。这些蜘蛛无法被选为目标，也无法被控制，会自动攻击附近的敌人。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤蜘蛛"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤蜘蛛"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
+    }
+  ],
+  "NewId": "A08Z"
+}

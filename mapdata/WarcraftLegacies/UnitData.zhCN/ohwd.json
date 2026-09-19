@@ -1,0 +1,37 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aoar"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 - 巫医）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练治疗结界"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "治疗结界"
+    }
+  ]
+}

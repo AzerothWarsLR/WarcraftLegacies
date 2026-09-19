@@ -1,0 +1,30 @@
+{
+  "OldId": "ncer",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "半人马苦工"
+    }
+  ]
+}

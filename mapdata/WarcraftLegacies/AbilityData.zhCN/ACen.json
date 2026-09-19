@@ -1,0 +1,67 @@
+{
+  "OldId": "ACen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵、十字军）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标单位被束缚于地面，无法移动。|n持续<ACen,Dur1>秒，对英雄持续<ACen,HeroDur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "\"诱捕\""
+    }
+  ]
+}

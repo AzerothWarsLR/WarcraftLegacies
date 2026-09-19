@@ -1,0 +1,22 @@
+{
+  "OldId": "nmrv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有统御光环的重型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "深海鱼人掠夺者"
+    }
+  ]
+}

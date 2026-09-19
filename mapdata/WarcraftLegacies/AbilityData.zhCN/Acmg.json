@@ -1,0 +1,30 @@
+{
+  "OldId": "Acmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Cmg2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（破法者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "控制魔法"
+    }
+  ]
+}

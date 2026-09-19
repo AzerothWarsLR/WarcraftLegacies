@@ -1,0 +1,66 @@
+{
+  "OldId": "Aens",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ens3",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01P"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 550
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 猎手）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将目标敌方单位束缚在地面上，使其在<A0F3,Dur1>秒内无法移动。被诱捕的空中单位可被视作地面单位进行攻击。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "诱捕"
+    }
+  ],
+  "NewId": "A0F3"
+}

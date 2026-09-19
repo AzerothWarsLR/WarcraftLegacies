@@ -1,0 +1,36 @@
+{
+  "OldId": "nban",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 440
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有影遁的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强盗"
+    }
+  ]
+}

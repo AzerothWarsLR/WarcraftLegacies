@@ -1,0 +1,186 @@
+{
+  "OldId": "AOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.04
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.12
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.08
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.16
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLeadershipAura.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 加伦、扎伊拉、拉格纳罗斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLeadershipAura.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习迅捷光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "这位英雄是一位娴熟的指挥官，他的才能令麾下军队的机动性大为提升。提高周围所有友方单位的移动速度。|n|n|cffffcc001级|r - 移动速度提高<A08N,DataA1,%>%。|n|cffffcc002级|r - 移动速度提高<A08N,DataA2,%>%。|n|cffffcc003级|r - 移动速度提高<A08N,DataA3,%>%。|n|cffffcc004级|r - 移动速度提高<A08N,DataA4,%>%。|n\n"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA1,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA1,%>%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA1,%>%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA1,%>%。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNLeadershipAura.blp"
+    }
+  ],
+  "NewId": "A08N"
+}

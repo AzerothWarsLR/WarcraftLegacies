@@ -1,0 +1,70 @@
+{
+  "OldId": "ACua",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uau1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uau2",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0AW"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑色城堡）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荒芜光环"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荒芜光环"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBlightHorn.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使<A0CA,Area1>范围内的友方单位生命恢复速度提高<A0CA,DataB1>。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    }
+  ],
+  "NewId": "A0CA"
+}

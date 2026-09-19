@@ -1,0 +1,163 @@
+{
+  "OldId": "nbot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 34
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usin",
+      "Value": 1100
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R006"
+    },
+    {
+      "Id": "usst",
+      "Value": 1200
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 54
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 15
+    },
+    {
+      "Id": "utc1",
+      "Value": 1
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1200
+    },
+    {
+      "Id": "ua1r",
+      "Value": 450
+    },
+    {
+      "Id": "urb1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0ZF,Sch5,Slo3,Sdro"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地精私掠船"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinSteamboat_FinalV3.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShipHull.blp"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "地精私掠船。可运输单位并能自卫。每分钟需 2 黄金维护费。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "雇佣雇用 地精私掠船"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立地精）"
+    }
+  ]
+}

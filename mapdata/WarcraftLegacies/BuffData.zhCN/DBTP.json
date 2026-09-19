@@ -1,0 +1,14 @@
+{
+  "OldId": "Binf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "占位增益"
+    }
+  ],
+  "NewId": "DBTP"
+}

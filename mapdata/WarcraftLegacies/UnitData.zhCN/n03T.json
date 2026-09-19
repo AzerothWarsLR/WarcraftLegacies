@@ -1,0 +1,169 @@
+{
+  "OldId": "nelb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A01Y,A06B,ACsi,A06P,A112"
+    },
+    {
+      "Id": "udef",
+      "Value": 11
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 69
+    },
+    {
+      "Id": "ua1f",
+      "Value": 300
+    },
+    {
+      "Id": "ua1h",
+      "Value": 75
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2400
+    },
+    {
+      "Id": "umpi",
+      "Value": 4500
+    },
+    {
+      "Id": "umpm",
+      "Value": 4500
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": -100
+    },
+    {
+      "Id": "ua1q",
+      "Value": 125
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "usr1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utc1",
+      "Value": 5
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 21
+    },
+    {
+      "Id": "util",
+      "Type": 3,
+      "Value": "O"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "mbounce"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\VoidWalker\\VoidWalker.mdl"
+    },
+    {
+      "Id": "ulpx",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "摩摩尔"
+    },
+    {
+      "Id": "uclr",
+      "Value": 10
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放霜冻新星的重型近战单位。对法术免疫。"
+    }
+  ],
+  "NewId": "n03T"
+}

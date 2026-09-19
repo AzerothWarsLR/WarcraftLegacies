@@ -1,0 +1,24 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanArmorUpOne.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "鼓舞"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位获得鼓舞，护甲提高。"
+    }
+  ],
+  "NewId": "B05T"
+}

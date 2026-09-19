@@ -1,0 +1,51 @@
+{
+  "OldId": "ngnv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ANbh,ACac"
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 45
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1250
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有统御光环的重型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "豺狼人督察"
+    }
+  ]
+}

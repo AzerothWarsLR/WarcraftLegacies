@@ -1,0 +1,44 @@
+{
+  "OldId": "nehy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有精灵之火的重型两栖远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "古老多头蛇"
+    }
+  ]
+}

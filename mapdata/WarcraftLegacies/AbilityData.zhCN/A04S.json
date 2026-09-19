@@ -1,0 +1,50 @@
+{
+  "OldId": "ACbc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ucs1",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nbf5",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "Xbof"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立生物 - 拉格纳罗斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之息"
+    }
+  ],
+  "NewId": "A04S"
+}

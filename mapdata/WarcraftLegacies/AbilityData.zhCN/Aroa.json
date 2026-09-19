@@ -1,0 +1,65 @@
+{
+  "OldId": "Aroa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 利爪德鲁伊）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的攻击力提高 15%，护甲提高 3 点。|n|cffffcc00持续 30 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
+    }
+  ]
+}

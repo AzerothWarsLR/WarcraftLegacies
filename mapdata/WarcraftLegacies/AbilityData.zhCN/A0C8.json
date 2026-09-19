@@ -1,0 +1,115 @@
+{
+  "OldId": "Arai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Rai1",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Rai2",
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑色城堡）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者复生 (|cffffcc00X|r) - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者复生 (|cffffcc00X|r) - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从一具尸体中复活 6 个骷髅，持续 45 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从一具尸体中复活 6 个骷髅，持续 45 秒。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "亡者复生"
+    }
+  ],
+  "NewId": "A0C8"
+}

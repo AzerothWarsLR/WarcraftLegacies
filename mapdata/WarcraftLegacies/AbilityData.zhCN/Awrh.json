@@ -1,0 +1,37 @@
+{
+  "OldId": "Awrh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Wrs2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Wrs3",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（熊怪战士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争践踏"
+    }
+  ]
+}

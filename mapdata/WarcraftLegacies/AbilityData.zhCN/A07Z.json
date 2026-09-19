@@ -1,0 +1,371 @@
+{
+  "OldId": "Aroa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B015"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 55
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 13
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Roa3",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Roa3",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Roa3",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Roa3",
+      "Type": 2,
+      "Value": 28
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "invulnerable,self,vulnerable"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 乌瑟尔）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "坚韧之力"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习坚韧之力 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "在限定时间内提高该单位的攻击力、护甲和生命恢复速度。|n|cffffcc00|n1级|r - 获得<A07Z,DataA1,%>% 攻击力、<A07Z,DataB1>点护甲和<A07Z,DataC1>点生命恢复速度，持续<A07Z,HeroDur1>秒。|n|cffffcc002级|r - 获得<A07Z,DataA2,%>% 攻击力、<A07Z,DataB2>点护甲和<A07Z,DataC2>点生命恢复速度，持续<A07Z,HeroDur2>秒。|n|cffffcc003级|r - 获得<A07Z,DataA3,%>% 攻击力、<A07Z,DataB3>点护甲和<A07Z,DataC3>点生命恢复速度，持续<A07Z,HeroDur3>秒。|n|cffffcc004级|r - 获得<A07Z,DataA4,%>% 攻击力、<A07Z,DataB4>点护甲和<A07Z,DataC4>点生命恢复速度，持续<A07Z,HeroDur4>秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚韧之力 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚韧之力 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚韧之力 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚韧之力 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+    }
+  ],
+  "NewId": "A07Z"
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNANA_HealingButterfliesFixed.BLP"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "未染之地"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到未染荒野的影响，移动速度提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B0B5"
+}

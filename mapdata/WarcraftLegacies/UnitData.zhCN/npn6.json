@@ -1,0 +1,43 @@
+{
+  "OldId": "npn6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACmi,ACpv,ACrk"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（陈）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "坚实的大地熊猫人战士。拥有抗性皮肤与法术免疫。可施放粉碎与嘲讽。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大地之灵"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "OldId": "Asps",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01I"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "3"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 55
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥术师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术窃取"
+    }
+  ],
+  "NewId": "A139"
+}

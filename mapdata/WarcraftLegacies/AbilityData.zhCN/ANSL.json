@@ -1,0 +1,157 @@
+{
+  "OldId": "AUsl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（恩佐斯）"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "睡眠 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标敌方单位进入睡眠，持续 300 秒。被攻击会惊醒睡眠中的单位。对英雄持续 60 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标敌方单位进入睡眠，持续 300 秒。被攻击会惊醒睡眠中的单位。对英雄持续 60 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标敌方单位进入睡眠，持续 300 秒。被攻击会惊醒睡眠中的单位。对英雄持续 60 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标敌方单位进入睡眠，持续 300 秒。被攻击会惊醒睡眠中的单位。对英雄持续 60 秒。"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使目标敌方单位进入睡眠。被攻击会惊醒睡眠中的单位。 |n|n|cffffcc001级|r - 睡眠<ANSL,Dur1>秒，消耗<ANSL,Cost1>点魔法值。 |n|cffffcc002级|r - 睡眠<ANSL,Dur2>秒，消耗<ANSL,Cost2>点魔法值。 |n|cffffcc003级|r - 睡眠<ANSL,Dur3>秒，消耗<ANSL,Cost3>点魔法值。\n"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "沉睡"
+    }
+  ],
+  "NewId": "ANSL"
+}

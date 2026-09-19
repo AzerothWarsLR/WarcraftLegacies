@@ -1,0 +1,13 @@
+{
+  "OldId": "Argl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "返送黄金和木材"
+    }
+  ]
+}

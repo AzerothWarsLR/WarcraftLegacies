@@ -1,0 +1,51 @@
+{
+  "OldId": "AHta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTelescope.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑暗之门飞艇）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "望远镜"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "望远镜"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "暴露地图上的一片区域。|n可侦测隐形单位。|n持续<A0IZ,Dur1>秒。"
+    }
+  ],
+  "NewId": "A0IZ"
+}

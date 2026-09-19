@@ -1,0 +1,49 @@
+{
+  "OldId": "Ahlh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "施法者每次施放法术时，向 2 个随机目标发射 2 枚虚空箭，每枚造成<AXK1,DataA1>点伤害。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASVoidRift_12.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虚空裂隙"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空裂隙"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（图标 - 兹科尔）"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "AXK2"
+}

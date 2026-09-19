@@ -1,0 +1,189 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 70
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "udup",
+      "Value": 4
+    },
+    {
+      "Id": "ua2d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 125
+    },
+    {
+      "Id": "ua2b",
+      "Value": 136
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2000
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usin",
+      "Value": 1400
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 900
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "urtm",
+      "Value": 50
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1s",
+      "Value": 20
+    },
+    {
+      "Id": "ua2s",
+      "Value": 26
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,nonancient,notself,structure,tree,wall"
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,tree,wall,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,R013,Rhac,Rgfo"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,sapper"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormwindCannonTower.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 175
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\StormwindTower.mdl"
+    },
+    {
+      "Id": "uclg",
+      "Value": 175
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暴风城火炮"
+    },
+    {
+      "Id": "uclr",
+      "Value": 175
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化|cffffcc00炮|r塔"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型防御建筑。对成群的部队尤其有效。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城塔）"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Abds,Afsh"
+    }
+  ],
+  "NewId": "h025"
+}

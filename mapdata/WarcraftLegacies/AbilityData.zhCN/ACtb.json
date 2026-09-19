@@ -1,0 +1,60 @@
+{
+  "OldId": "ACtb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ctb1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色 - 大地魔像）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一块被掷向敌方单位的魔法巨石，造成 40 点伤害并使目标昏迷 5(1) 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "投掷巨石"
+    }
+  ]
+}

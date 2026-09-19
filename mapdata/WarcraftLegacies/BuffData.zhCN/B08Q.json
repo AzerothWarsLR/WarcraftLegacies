@@ -1,0 +1,39 @@
+{
+  "OldId": "Babr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASPurify.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "圣餐"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到圣餐的影响，生命恢复速度获得加成。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（亚历山德罗斯）"
+    }
+  ],
+  "NewId": "B08Q"
+}

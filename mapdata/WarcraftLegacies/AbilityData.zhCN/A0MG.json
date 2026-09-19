@@ -1,0 +1,260 @@
+{
+  "OldId": "AEfk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Efk1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Efk2",
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Efk3",
+      "Value": 10
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Id": "amsp",
+      "Value": 500
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（娜萨）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄掷出一连串飞刀，对附近的敌人造成伤害。冷却时间 8 秒。|n|n|cffffcc001级|r - 每个目标 50 点伤害。5 个目标|n|cffffcc002级|r - 每个目标 75 点伤害。6 个目标|n|cffffcc003级|r - 每个目标 100 点伤害。7 个目标\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刀扇 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄掷出一连串飞刀，对附近的敌人造成伤害。每把飞刀造成 100 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄掷出一连串飞刀，对附近的敌人造成伤害。每把飞刀造成 100 点伤害。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄掷出一连串飞刀，对附近的敌人造成伤害。每把飞刀造成 100 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄掷出一连串飞刀，对附近的敌人造成伤害。每把飞刀造成 100 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "飞刀速掷"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习飞刀速掷 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刀扇 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刀扇 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刀扇 - [|cffffcc004级|r]"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdx"
+    }
+  ],
+  "NewId": "A0MG"
+}

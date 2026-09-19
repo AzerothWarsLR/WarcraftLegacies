@@ -1,0 +1,33 @@
+{
+  "OldId": "ANss",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（安东尼达斯）（功能）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术护盾"
+    }
+  ],
+  "NewId": "A0WC"
+}

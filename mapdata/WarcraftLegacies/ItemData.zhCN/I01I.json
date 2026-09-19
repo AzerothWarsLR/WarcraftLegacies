@@ -1,0 +1,56 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0F6,AIi1"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIfu"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShard.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "恶魔之魂的碎片，提供智力加成。"
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\tome\\tome.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蓝色碎片"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    }
+  ],
+  "NewId": "I01I"
+}

@@ -1,0 +1,51 @@
+{
+  "OldId": "ANsq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nqb4"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（雷克萨）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤豪猪"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一只具有<nqb4,realHP>点生命值的豪猪，向施法者的敌人投掷脊刺。 |n持续<YBSQ,Dur1>秒。"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    }
+  ],
+  "NewId": "YBSQ"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BIcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "灼热撕咬"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到灼热撕咬的打击，护甲暂时降低。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreatheFire.blp"
+    }
+  ],
+  "NewId": "B0AD"
+}

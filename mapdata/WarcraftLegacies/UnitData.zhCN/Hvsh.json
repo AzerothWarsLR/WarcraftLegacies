@@ -1,0 +1,126 @@
+{
+  "OldId": "Hvsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,ANfl,A083,A033,A0H7"
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uint",
+      "Value": 28
+    },
+    {
+      "Id": "ustr",
+      "Value": 20
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A12Q,AInv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R09Y"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长远程作战并造成魔法伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤瓦丝琪女士"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海巫"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "瓦丝琪女士"
+    }
+  ]
+}

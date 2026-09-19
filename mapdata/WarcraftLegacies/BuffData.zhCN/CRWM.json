@@ -1,0 +1,14 @@
+{
+  "OldId": "Bcrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "占位减益"
+    }
+  ],
+  "NewId": "CRWM"
+}

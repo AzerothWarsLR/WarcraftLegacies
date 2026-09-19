@@ -1,0 +1,41 @@
+{
+  "OldId": "nwzg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型远程单位，可施放净化和闪电护盾。"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "变节巫师"
+    }
+  ]
+}

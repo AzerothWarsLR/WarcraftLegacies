@@ -1,0 +1,80 @@
+{
+  "OldId": "ANdh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B03F"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireBolt.blp"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰攻击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰攻击(|cffffcc00Q|r) - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰攻击(|cffffcc00Q|r) - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "火元素的攻击会点燃它的敌人，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>%的未命中率。带有火焰攻击效果的单位如果被火焰之息击中，会被点燃并受到更高的燃烧伤害。 |n持续<ANdh,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "火元素的攻击会点燃它的敌人，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>%的未命中率。带有火焰攻击效果的单位如果被火焰之息击中，会被点燃并受到更高的燃烧伤害。 |n持续<ANdh,Dur1>秒。"
+    }
+  ],
+  "NewId": "A0HU"
+}

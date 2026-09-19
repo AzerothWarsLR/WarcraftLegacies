@@ -1,0 +1,133 @@
+{
+  "OldId": "nwwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A07F,A0GX"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0GX"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "装甲狼"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练装甲狼"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ArmoredDireWolfFeet3_Portrait.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArmoredBlackWolf.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "脆弱但迅捷而强大的近战单位。拥有致命一击技能。"
+    },
+    {
+      "Id": "uclg",
+      "Value": 255
+    },
+    {
+      "Id": "uclr",
+      "Value": 255
+    }
+  ],
+  "NewId": "n06L"
+}

@@ -1,0 +1,50 @@
+{
+  "OldId": "ACf2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ufa2",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青 - 艾瑞达巫师，元素领主）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一名目标友方单位创造一道冰霜护盾。护盾增加 7 点护甲，并使攻击该单位的近战单位减速<ACfa,Dur1>秒。|n持续<ACfa,DataA1>秒。"
+    },
+    {
+      "Id": "aubx",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "霜甲术"
+    }
+  ],
+  "NewId": "A0AU"
+}

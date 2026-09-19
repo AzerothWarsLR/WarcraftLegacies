@@ -1,0 +1,67 @@
+{
+  "OldId": "Ahwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "o06O"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个无法移动的结界，每<A12Z,Cool1>秒复活 1 个单位。 |n持续<A0H5,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "集结战旗"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "集结战旗"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanCaptureFlag.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    }
+  ],
+  "NewId": "A0H5"
+}

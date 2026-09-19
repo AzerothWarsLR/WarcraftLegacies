@@ -1,0 +1,34 @@
+{
+  "OldId": "Buhf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosiveShot.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "强化弹药"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该建筑受到强化弹药的影响，伤害提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_MechanicGears.mdx"
+    }
+  ],
+  "NewId": "B091"
+}

@@ -1,0 +1,245 @@
+{
+  "OldId": "AEme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Q"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Q"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05Q"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "O00Y"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "O00Y"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "O00Y"
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Eme5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "O027"
+    },
+    {
+      "Level": 2,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "O027"
+    },
+    {
+      "Level": 3,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "O027"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationREDTarget.mdl,Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 祖鲁希德）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "升腾"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习升腾 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。为他提供 1000 点额外生命值和每秒 15 点生命恢复速度。同时为施法者周围 600 范围内的盟友恢复 150/250/300 点生命值。|n|n具有焚身化骨、献祭、烈焰风暴、陨石和连锁爆炸。|n|n|cffcece00等级 1|r - 持续 30 秒|n|cffcece00等级 2|r - 持续 45 秒|n|cffcece00等级 3|r - 持续 60 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "升腾 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "升腾 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "升腾 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。为他提供 1000 点额外生命值和每秒 15 点生命恢复速度。同时为施法者周围 600 范围内的盟友恢复 150 点生命值。|n|n具有焚身化骨、献祭、烈焰风暴、火山爆发和连锁爆炸。|n|n持续 30 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。为他提供 1000 点额外生命值和每秒 15 点生命恢复速度。同时为施法者周围 600 范围内的盟友恢复 150 点生命值。|n|n具有焚身化骨、献祭、烈焰风暴、火山爆发和连锁爆炸。|n|n持续 30 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。为他提供 1000 点额外生命值和每秒 15 点生命恢复速度。同时为施法者周围 600 范围内的盟友恢复 150 点生命值。|n|n具有焚身化骨、献祭、烈焰风暴、火山爆发和连锁爆炸。|n|n持续 30 秒。"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "升腾 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "升腾 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "升腾 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。|n|n具有焚身化骨、献祭、烈焰风暴、火山爆发和连锁爆炸。|n|n持续 30 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。|n|n具有焚身化骨、献祭、烈焰风暴、火山爆发和连锁爆炸。|n|n持续 45 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "将萨满祭司变形为一个拥有强大元素能力的烈焰升腾者。|n|n具有焚身化骨、献祭、烈焰风暴、火山爆发和连锁爆炸。|n|n持续 60 秒。"
+    }
+  ]
+}

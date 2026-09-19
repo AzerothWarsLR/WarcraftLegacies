@@ -1,0 +1,29 @@
+{
+  "OldId": "Bakb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位听到战歌节拍，攻击速度提高。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTribal Drum of War.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "战争韵律"
+    }
+  ],
+  "NewId": "B04W"
+}

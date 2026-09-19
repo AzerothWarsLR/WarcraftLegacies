@@ -1,0 +1,141 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0QI,A020,Aihn,A0QD,A0PC"
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 3.1
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 73
+    },
+    {
+      "Id": "udu1",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 38
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhar,R09U,Rhme,Rguv"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1100
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "horse"
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ScarletMarshalPaladinFaceBlack.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "绯红指挥官"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练绯红指挥官"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "血色指挥官。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Garithos"
+    }
+  ],
+  "NewId": "h09Q"
+}

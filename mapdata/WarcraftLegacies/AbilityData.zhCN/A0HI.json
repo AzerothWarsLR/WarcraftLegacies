@@ -1,0 +1,44 @@
+{
+  "OldId": "Atau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionHorn.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 领主）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "最近的<A0HI,DataA1>个敌人将被强制攻击该单位。"
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嘲讽"
+    }
+  ],
+  "NewId": "A0HI"
+}

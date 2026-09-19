@@ -1,0 +1,25 @@
+{
+  "OldId": "AItx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 80
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（+80）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 攻击力加成"
+    }
+  ],
+  "NewId": "A0U9"
+}

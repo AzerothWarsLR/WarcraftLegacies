@@ -1,0 +1,371 @@
+{
+  "OldId": "Afak",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "fak1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "fak4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "fak5",
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "fak2",
+      "Type": 2,
+      "Value": 0.45
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "fak3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（莫阿姆）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff|cffc3dbff右键点击以开启自动施放。|r|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff|cffc3dbff右键点击以开启自动施放。|r|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff|cffc3dbff右键点击以开启自动施放。|r|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff右键点击以关闭自动施放。|r"
+    },
+    {
+      "Level": 3,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff右键点击以关闭自动施放。|r"
+    },
+    {
+      "Level": 4,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff右键点击以关闭自动施放。|r"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习湮灭之球 - [|cffffcc00%d 级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使英雄的攻击提高额外伤害，并使其攻击造成范围伤害。|n|n|cffffcc001 级|r - 额外伤害<CT01,DataA1>点。|n|cffffcc002 级|r - 额外伤害<CT01,DataA2>点。|n|cffffcc003 级|r - 额外伤害<CT01,DataA3>点。|n|cffffcc004 级|r - 额外伤害<CT01,DataA4>点。\n"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOn.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "毁灭宝珠"
+    }
+  ],
+  "NewId": "CT01"
+}

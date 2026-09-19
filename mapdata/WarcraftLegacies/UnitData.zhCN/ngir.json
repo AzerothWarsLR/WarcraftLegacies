@@ -1,0 +1,33 @@
+{
+  "OldId": "ngir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伐木机"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伐木机"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伐木机"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伐木机"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型近战单位，由钢铁制成。擅长采集大量的木材资源。"
+    }
+  ]
+}

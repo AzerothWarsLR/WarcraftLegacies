@@ -1,0 +1,24 @@
+{
+  "OldId": "Bliq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "燃烧之箭"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire1.mdl"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFlameArrowShower.blp"
+    }
+  ],
+  "NewId": "S060"
+}

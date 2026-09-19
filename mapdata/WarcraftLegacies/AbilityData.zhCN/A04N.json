@@ -1,0 +1,307 @@
+{
+  "OldId": "AUfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BHfs"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BHfs"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BHfs"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BHfs"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "XHfs"
+    },
+    {
+      "Level": 2,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "XHfs"
+    },
+    {
+      "Level": 3,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "XHfs"
+    },
+    {
+      "Level": 4,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": "XHfs"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aord",
+      "Type": 3,
+      "Value": "flamestrike"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 玛瑟里顿）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "爆炸"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习爆炸 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击目标敌方单位周围的敌方单位。 |n|n|cffffcc001级|r - 对目标造成 190 点伤害。40 点溅射伤害。|n|cffffcc002级|r - 对目标造成 280 点伤害。80 点溅射伤害。|n|cffffcc003级|r - 对目标造成 370 点伤害。120 点溅射伤害。|n|cffffcc004级|r - 对目标造成 460 点伤害。160 点溅射伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+    }
+  ],
+  "NewId": "A04N"
+}

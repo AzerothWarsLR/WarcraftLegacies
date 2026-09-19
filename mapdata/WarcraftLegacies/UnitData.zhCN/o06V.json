@@ -1,0 +1,122 @@
+{
+  "OldId": "owyv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0TJ,Adtg,A0QE,A0PG"
+    },
+    {
+      "Id": "ubld",
+      "Value": 10
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 38
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 27
+    },
+    {
+      "Id": "uhpm",
+      "Value": 865
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 300
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R03P,Rhme,Rhar,Rovs,Rguv"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R09X"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 650
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "udef",
+      "Value": -2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "机动性极强的飞行生物。极擅长侦察。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鹰骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练鹰骑士"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\BTNScarletEagleKnight.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ScarletEagleKnight.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\EagleKnightSpearMissile.mdl"
+    }
+  ],
+  "NewId": "o06V"
+}

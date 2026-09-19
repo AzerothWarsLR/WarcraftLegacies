@@ -1,0 +1,44 @@
+{
+  "OldId": "Astd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnLoad.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 要塞塔楼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使要塞内的火枪手离开。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "解除戒备"
+    }
+  ],
+  "NewId": "A00U"
+}

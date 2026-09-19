@@ -1,0 +1,144 @@
+{
+  "OldId": "Hlgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11P,ACds,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 14
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A08M,A085,Aamk,AHhb,A03C"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uint",
+      "Value": 20
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "utco",
+      "Value": 10
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMorgraineBlue.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Bolvar.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "联盟大领主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长强化附近的部队。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Uther"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    }
+  ],
+  "NewId": "H017"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BNpm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHarvest.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "天启"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "ZB09"
+}

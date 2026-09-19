@@ -1,0 +1,30 @@
+{
+  "OldId": "ndqt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 224
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪恶女妖"
+    }
+  ]
+}

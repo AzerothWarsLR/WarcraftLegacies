@@ -1,0 +1,119 @@
+{
+  "OldId": "AUls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uls1",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uls2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Uls3",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Uls4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Uls5",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩 - 巨像）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习虫群风暴"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "创造出一群愤怒的蝗虫，撕咬周围的敌方单位。它们会啃食敌人的血肉并将其转变为精华，在返回地穴领主身边时为其恢复生命值。|n持续<AUls,HeroDur1>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "生成一群<A0Y2,DataA1>只愤怒的蝗虫，啃咬<A0Y2,Area1>范围内的敌方单位。它们啃食敌人血肉后会将其转化为一种物质，返回时为该单位恢复生命值。持续<A0Y2,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虫群风暴"
+    }
+  ],
+  "NewId": "A0Y2"
+}

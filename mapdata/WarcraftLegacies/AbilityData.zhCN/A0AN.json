@@ -1,0 +1,69 @@
+{
+  "OldId": "Acht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06P"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_MoonSight.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 阿玛拉）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "女神之惧"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "女神之惧"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使敌方单位对艾露恩心生恐惧，从而使其攻击力降低<Acht,DataA1,%>%，持续<Acht,Dur1>秒。"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\UnholyFrenzyAOE\\UnholyFrenzyAOETarget.mdl"
+    }
+  ],
+  "NewId": "A0AN"
+}

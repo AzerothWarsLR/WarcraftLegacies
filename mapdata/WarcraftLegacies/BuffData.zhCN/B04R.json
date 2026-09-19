@@ -1,0 +1,34 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "先祖坚韧"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有先祖坚韧，攻击力和护甲提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Duel.mdx"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNTaurenBerserk.blp"
+    }
+  ],
+  "NewId": "B04R"
+}

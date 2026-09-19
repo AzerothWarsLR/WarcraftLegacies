@@ -1,0 +1,67 @@
+{
+  "OldId": "Eevm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 105
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0LW,AInv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（变形 - 等级 2 - 伊利达雷）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "恶魔猎手"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活伊利丹"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤恶魔猎手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "致命英雄，擅长冲入战团并斩杀关键目标。"
+    }
+  ],
+  "NewId": "ZF4B"
+}

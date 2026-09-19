@@ -1,0 +1,218 @@
+{
+  "OldId": "Emfr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ZB15,A0GK,AInv,Ault"
+    },
+    {
+      "Id": "uagi",
+      "Value": 13
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A07N,A109,AOae,A06E,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "uint",
+      "Value": 15
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1z",
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "STR"
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "ua1r",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R002"
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "ustr",
+      "Value": 30
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgTracker.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活远古守护者"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BlackBear.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上古守护者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活远古守护者"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgTracker.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤乌索克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远古熊灵英雄，擅长前线近身战斗。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Furbolg"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "乌索克"
+    }
+  ],
+  "NewId": "E00A"
+}

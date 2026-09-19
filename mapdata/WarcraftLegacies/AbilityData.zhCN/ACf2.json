@@ -1,0 +1,35 @@
+{
+  "OldId": "ACf2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ufa2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 冰雪亡魂狮鹫 死亡骑士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "霜甲术"
+    }
+  ]
+}

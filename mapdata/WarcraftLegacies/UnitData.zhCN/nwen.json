@@ -1,0 +1,39 @@
+{
+  "OldId": "nwen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 650
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "雪怪"
+    }
+  ]
+}

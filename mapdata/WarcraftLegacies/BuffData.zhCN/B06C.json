@@ -1,0 +1,19 @@
+{
+  "OldId": "Binv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于隐形状态，敌方单位无法看到它。若其攻击，"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（吉安娜）"
+    }
+  ],
+  "NewId": "B06C"
+}

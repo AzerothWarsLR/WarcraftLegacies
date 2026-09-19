@@ -1,0 +1,59 @@
+{
+  "OldId": "nsrw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A01Y,ACad,ACmo,ACdc"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhme,Rhar,Rugf,R00Q,R00P"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "达克苏尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有季风与操纵死尸的重型远程单位。"
+    }
+  ],
+  "NewId": "n03Y"
+}

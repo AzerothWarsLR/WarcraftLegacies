@@ -1,0 +1,34 @@
+{
+  "OldId": "nitp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通治疗魔法的牧师。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "冰巨魔牧师"
+    }
+  ]
+}

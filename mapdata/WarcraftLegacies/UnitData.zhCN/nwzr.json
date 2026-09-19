@@ -1,0 +1,68 @@
+{
+  "OldId": "nwzr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "small"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 29
+    },
+    {
+      "Id": "uhpm",
+      "Value": 680
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位，可施放霜甲术。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "流寇巫师"
+    }
+  ]
+}

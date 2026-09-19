@@ -1,0 +1,34 @@
+{
+  "OldId": "ncim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 37
+    },
+    {
+      "Id": "uhpm",
+      "Value": 550
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有灼热之箭的中型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "半人马穿刺者"
+    }
+  ]
+}

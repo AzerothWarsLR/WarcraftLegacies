@@ -1,0 +1,106 @@
+{
+  "OldId": "nsbm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,ACvs,ACwb"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "ACwb"
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "uhpm",
+      "Value": 600
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,enemies,ground,item,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Reuv,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯召唤）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\SpiderGreen\\SpiderGreen.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑寡妇"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "黑寡妇"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人中毒并携带幼蛛参战的重型近战单位。可施放蛛网。"
+    }
+  ],
+  "NewId": "n08J"
+}

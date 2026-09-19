@@ -1,0 +1,220 @@
+{
+  "OldId": "ANto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n03J"
+    },
+    {
+      "Level": 2,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0CY"
+    },
+    {
+      "Level": 3,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0CY"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1400
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00E"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（水术师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一个黑洞，使敌方单位的移动速度降低 90%，并每秒对敌方单位造成 15 点伤害。若敌方单位处于黑洞 200 范围内，则每秒受到 100 点伤害。 |n|n|cffffcc001级|r - 冷却时间 240 秒。持续 6 秒。 |n|cffffcc002级|r - 冷却时间 160 秒。持续 9 秒。 |n|cffffcc003级|r - 冷却时间 120 秒。持续 12 秒。\n"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴之云"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴之云"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "施法<A04L,Cast1>秒后，在目标地点引导一片风暴之云。风暴之云会攻击附近的敌方单位，每次攻击造成 50 点混乱伤害。此外，风暴之云还会每秒对附近的敌方空中单位造成<A0CZ,DataA1>点伤害。|n持续<A04L,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "施法<A04L,Cast1>秒后，在目标地点引导一片风暴之云。风暴之云会攻击附近的敌方单位，每次攻击造成 50 点混乱伤害。此外，风暴之云还会每秒对附近的敌方空中单位造成<A0CZ,DataA1>点伤害。|n持续<A04L,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "施法<A04L,Cast1>秒后，在目标地点引导一片风暴之云。风暴之云会攻击附近的敌方单位，每次攻击造成 50 点混乱伤害。此外，风暴之云还会每秒对附近的敌方空中单位造成<A0CZ,DataA1>点伤害。|n持续<A04L,Dur1>秒。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShockStorm3.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴之云"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习黑洞"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴之云"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    }
+  ],
+  "NewId": "A04L"
+}

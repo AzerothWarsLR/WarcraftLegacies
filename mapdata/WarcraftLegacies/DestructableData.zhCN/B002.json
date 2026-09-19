@@ -1,0 +1,56 @@
+{
+  "OldId": "ZTr0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "bvcb",
+      "Value": 135
+    },
+    {
+      "Id": "bvcg",
+      "Value": 130
+    },
+    {
+      "Id": "bvcr",
+      "Value": 135
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "提尔之手阶梯"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bptd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "bfxr",
+      "Type": 2,
+      "Value": -1
+    }
+  ],
+  "NewId": "B002"
+}

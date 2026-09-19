@@ -1,0 +1,59 @@
+{
+  "OldId": "nrvi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACf2,ACvp"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "ACf2"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Id": "umpi",
+      "Value": 250
+    },
+    {
+      "Id": "umpm",
+      "Value": 250
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,R008,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有吸血光环的重型近战单位。可施放霜冻新星。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "冰雪亡魂"
+    }
+  ]
+}

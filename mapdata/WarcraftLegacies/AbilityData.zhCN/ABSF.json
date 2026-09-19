@@ -1,0 +1,174 @@
+{
+  "OldId": "Aslo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bslo"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Slo1",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Slo1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Slo2",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Slo2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 9999
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,enemy"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "amho",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 10000
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BBEP"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RBEP"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麻痹恐惧）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化减速术"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标敌方单位的攻击速度降低<Aslo,DataB1,%>%，移动速度降低<Aslo,DataA1,%>%。|n|cffffcc00持续<Aslo,Dur1>（英雄为<Aslo,HeroDur1>）秒。\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标敌方单位的攻击速度降低<Aslo,DataB1,%>%，移动速度降低<Aslo,DataA1,%>%。|n|cffffcc00持续<Aslo,Dur1>（英雄为<Aslo,HeroDur1>）秒。\n"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl"
+    }
+  ],
+  "NewId": "ABSF"
+}

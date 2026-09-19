@@ -1,0 +1,286 @@
+{
+  "OldId": "Absk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "bsk2",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "bsk1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B05K"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "bsk3",
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（加尔鲁什）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "血与雷霆"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血与雷霆 - [|cffffcc004级|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderBurst.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0TF,DataB1,%>%。格挡所有物理伤害，同时吸收法术伤害并将其按同等比例转化为生命值。|n持续<A0TF,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血与雷霆 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血与雷霆 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血与雷霆 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0TF,DataB1,%>%。格挡所有物理伤害，同时吸收法术伤害并将其按同等比例转化为生命值。|n持续<A0TF,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0TF,DataB1,%>%。格挡所有物理伤害，同时吸收法术伤害并将其按同等比例转化为生命值。|n持续<A0TF,Dur1>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0TF,DataB1,%>%。格挡所有物理伤害，同时吸收法术伤害并将其按同等比例转化为生命值。|n持续<A0TF,Dur1>秒。"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThunderBurst.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高，并格挡所有物理伤害，同时吸收法术伤害并将其按同等比例转化为生命值。|n持续<A0TF,Dur1>秒。|n|n|cffffcc001级|r - 攻击速度提高 50%。 |n|cffffcc002级|r - 攻击速度提高 60%。 |n|cffffcc003级|r - 攻击速度提高 70%。|n|cffffcc004级|r - 攻击速度提高 80%。\n"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习血与雷霆 - [|cffffcc00等级 %d|r]"
+    }
+  ],
+  "NewId": "A0TF"
+}

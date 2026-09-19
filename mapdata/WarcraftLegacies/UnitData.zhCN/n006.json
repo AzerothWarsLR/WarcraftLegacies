@@ -1,0 +1,272 @@
+{
+  "OldId": "nba2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A12X,A12Q,A030,A034,ACsk"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua2d",
+      "Value": 2
+    },
+    {
+      "Id": "ua2b",
+      "Value": 75
+    },
+    {
+      "Id": "ua1f",
+      "Value": 100
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 110
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uwu1",
+      "Value": 0
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,ground,structure"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Reuv,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 2
+    },
+    {
+      "Id": "ucs2",
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "ubs1",
+      "Type": 2,
+      "Value": 0.81
+    },
+    {
+      "Id": "udp1",
+      "Type": 2,
+      "Value": 0.59
+    },
+    {
+      "Id": "umvs",
+      "Value": 235
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua2z",
+      "Value": 10000
+    },
+    {
+      "Id": "umh2",
+      "Value": 1
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.81
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.59
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R09I"
+    },
+    {
+      "Id": "ugol",
+      "Value": 30
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "umpi",
+      "Value": 1500
+    },
+    {
+      "Id": "umpm",
+      "Value": 1500
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCorruptedAncientOfWar.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "buildings\\demon\\CorruptedAncientofWar\\CorruptedAncientofWar.mdl"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥术上古守护者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练奥术上古守护者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "被奥术转化扭曲了形态的上古守护者。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "TreeOfLife"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "uble",
+      "Type": 1,
+      "Value": 0.4
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "uclr",
+      "Value": 100
+    },
+    {
+      "Id": "uclg",
+      "Value": 200
+    }
+  ],
+  "NewId": "n006"
+}

@@ -1,0 +1,52 @@
+{
+  "OldId": "Acht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R01D"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（石像鬼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发出恐怖的嚎叫，使周围敌方单位的攻击力降低<A022,DataA1,%>%，持续<A022,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    }
+  ],
+  "NewId": "A022"
+}

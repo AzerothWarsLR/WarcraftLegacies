@@ -1,0 +1,74 @@
+{
+  "OldId": "nwld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0CR,A07F,A07E"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "ua1b",
+      "Value": 40
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 27
+    },
+    {
+      "Id": "ugor",
+      "Value": 27
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1025
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 200
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有致命一击的中型近战单位。可施放咆哮。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恐狼"
+    }
+  ]
+}

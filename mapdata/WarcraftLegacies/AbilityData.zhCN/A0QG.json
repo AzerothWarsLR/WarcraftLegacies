@@ -1,0 +1,110 @@
+{
+  "OldId": "AOww",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oww1",
+      "Type": 2,
+      "Value": 160
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Oww1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 剑圣）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化剑刃风暴"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在剑圣周围掀起一场毁灭性的剑刃风暴，使其免疫魔法，并对附近敌方地面单位每秒造成<A0QG,DataA1>点伤害。|n持续<A0QG,Dur1,.>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在剑圣周围掀起一场毁灭性的剑刃风暴，使其免疫魔法，并对附近敌方地面单位每秒造成<A0QG,DataA1>点伤害。|n持续<A0QG,Dur1,.>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "剑刃风暴"
+    }
+  ],
+  "NewId": "A0QG"
+}

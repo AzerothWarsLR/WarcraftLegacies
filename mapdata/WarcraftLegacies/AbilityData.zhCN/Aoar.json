@@ -1,0 +1,20 @@
+{
+  "OldId": "Aoar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.013
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗结界光环"
+    }
+  ]
+}

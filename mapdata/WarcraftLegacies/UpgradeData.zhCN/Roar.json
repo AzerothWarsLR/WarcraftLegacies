@@ -1,0 +1,164 @@
+{
+  "OldId": "Roar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 75
+    },
+    {
+      "Id": "gglm",
+      "Value": 100
+    },
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "glmb",
+      "Value": 50
+    },
+    {
+      "Id": "glvl",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "greq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "gtim",
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（未使用）"
+    },
+    {
+      "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（青/粉/灰 - 研发）"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 4,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 5,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 6,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 7,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 8,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "[|cffffcc00A|r] - 升级奥金单位护甲"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高所有单位的护甲。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "进一步提高所有单位的护甲。"
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "进一步提高所有单位的护甲。"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    },
+    {
+      "Level": 4,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    },
+    {
+      "Level": 5,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    },
+    {
+      "Level": 6,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    },
+    {
+      "Level": 7,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    },
+    {
+      "Level": 8,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔铁护甲"
+    }
+  ]
+}

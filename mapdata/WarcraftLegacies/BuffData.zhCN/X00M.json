@@ -1,0 +1,19 @@
+{
+  "OldId": "XHbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "奥术炮击（效果）"
+    },
+    {
+      "Id": "fefl",
+      "Type": 3,
+      "Value": "AcolyteUnsummonLoop"
+    }
+  ],
+  "NewId": "X00M"
+}

@@ -1,0 +1,80 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A03X"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R01W"
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "isst",
+      "Value": 800
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSulfuras.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买萨弗拉斯，炎魔拉格纳罗斯之手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨弗拉斯，炎魔拉格纳罗斯之手"
+    }
+  ],
+  "NewId": "I00H"
+}

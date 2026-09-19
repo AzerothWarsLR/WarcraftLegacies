@@ -1,0 +1,119 @@
+{
+  "OldId": "ntrv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 26
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "util",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aiun,A05L"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1375
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "亡魂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练亡魂"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注了不灭灵魂的重型近战单位。"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\Revenant\\Revenant.mdl"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "Aiun"
+    }
+  ],
+  "NewId": "n009"
+}

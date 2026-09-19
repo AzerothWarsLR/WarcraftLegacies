@@ -1,0 +1,133 @@
+{
+  "OldId": "nfoh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A03P,Adtg,A00H,A019"
+    },
+    {
+      "Id": "ubld",
+      "Value": 60
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ufma",
+      "Value": 30
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ugor",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 7000
+    },
+    {
+      "Id": "usin",
+      "Value": 1800
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "urtm",
+      "Value": 120
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R04E,R05X"
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "usid",
+      "Value": 1800
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h04L,e00N,ewsp"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo,Renb,R064"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported/WorldTree.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "安达希尔"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造安达希尔"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊其他）"
+    }
+  ],
+  "NewId": "n04F"
+}

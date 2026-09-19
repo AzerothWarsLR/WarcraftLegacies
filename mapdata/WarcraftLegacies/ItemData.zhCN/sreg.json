@@ -1,0 +1,34 @@
+{
+  "OldId": "sreg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 10
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恢复卷轴"
+    }
+  ]
+}

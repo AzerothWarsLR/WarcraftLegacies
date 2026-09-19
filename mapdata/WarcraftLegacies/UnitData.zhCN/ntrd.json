@@ -1,0 +1,40 @@
+{
+  "OldId": "ntrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACdv,ANt2"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有吞噬与尖刺外壳的重型两栖近战单位。可施放粉碎之波。"
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "ACc2,ANt2"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙龟"
+    }
+  ]
+}

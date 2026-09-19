@@ -1,0 +1,44 @@
+{
+  "OldId": "ANpi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eim1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "nonancient,notself,structure"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（射程 1000）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反传送门阻挡"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方建筑，每秒造成 75 点伤害。"
+    }
+  ],
+  "NewId": "A023"
+}

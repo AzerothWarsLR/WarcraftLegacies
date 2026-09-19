@@ -1,0 +1,44 @@
+{
+  "OldId": "Assp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Sod2",
+      "Type": 3,
+      "Value": "yl01"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Sod1",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩 - 增殖体 3 - 实体）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "增殖腺体"
+    }
+  ],
+  "NewId": "YlS2"
+}

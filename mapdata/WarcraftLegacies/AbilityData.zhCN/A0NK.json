@@ -1,0 +1,317 @@
+{
+  "OldId": "Aspo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,nonhero,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,nonhero,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,nonhero,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,nonhero,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BSLY,BSYL"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BSLY,BSYL"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BSLY,BSYL"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BSLY,BSYL"
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（普特雷斯 - 斯克拉姆）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "瘟疫打击"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoisonRain.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习瘟疫打击 - [|cffffcc00%d 级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄的攻击会使敌方单位深度中毒，攻击速度降低 250%，移动速度降低 10%。|n|n|cffffcc001 级|r - 对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒，每秒造成<A0NK,DataA1>点伤害。|n|cffffcc002 级|r - 对单位持续<A0NK,Dur2>秒，对英雄持续<A0NK,HeroDur2,.>秒，每秒造成<A0NK,DataA2>点伤害。|n|cffffcc003 级|r - 对单位持续<A0NK,Dur3>秒，对英雄持续<A0NK,HeroDur3,.>秒，每秒造成<A0NK,DataA3>点伤害。|n|cffffcc004 级|r - 对单位持续<A0NK,Dur4>秒，对英雄持续<A0NK,HeroDur4,.>秒，每秒造成<A0NK,DataA4>点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "瘟疫打击 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "瘟疫打击 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "瘟疫打击 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "瘟疫打击 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄的攻击使单位的攻击速度降低 250%、移动速度降低 10%，持续 1 秒，每秒造成<A0NK,DataA1>点伤害。对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄的攻击使单位的攻击速度降低 250%、移动速度降低 10%，持续 1 秒，每秒造成<A0NK,DataA1>点伤害。对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄的攻击使单位的攻击速度降低 250%、移动速度降低 10%，持续 1 秒，每秒造成<A0NK,DataA1>点伤害。对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄的攻击使单位的攻击速度降低 250%、移动速度降低 10%，持续 1 秒，每秒造成<A0NK,DataA1>点伤害。对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASPoisonRain.blp"
+    }
+  ],
+  "NewId": "A0NK"
+}

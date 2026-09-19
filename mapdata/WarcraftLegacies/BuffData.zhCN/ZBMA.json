@@ -1,0 +1,34 @@
+{
+  "OldId": "Brai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "成熟中"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "这枚卵正在缓慢成熟。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEgg.blp"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（孵化）"
+    }
+  ],
+  "NewId": "ZBMA"
+}

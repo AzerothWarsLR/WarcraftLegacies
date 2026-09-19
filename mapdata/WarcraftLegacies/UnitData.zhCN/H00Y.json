@@ -1,0 +1,148 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0TC,AHfs,A0WE,Aamk,ST0X"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "uint",
+      "Value": 22
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.4
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumSlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0UE,AInv"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBRIGITTE.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Brigitte_Abbendis.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大将军"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "布丽奇特·阿比迪斯"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBRIGITTE.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Archer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤布丽奇特"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长近身战斗和激进进攻。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    }
+  ],
+  "NewId": "H00Y"
+}

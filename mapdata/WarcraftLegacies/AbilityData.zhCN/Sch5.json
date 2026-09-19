@@ -1,0 +1,31 @@
+{
+  "OldId": "Sch5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "货舱"
+    }
+  ]
+}

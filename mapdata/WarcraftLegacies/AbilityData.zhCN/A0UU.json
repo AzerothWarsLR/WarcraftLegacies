@@ -1,0 +1,84 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "War4",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（大天使）"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "war3mapImported\\Judgment of Light.mdx"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "war3mapImported\\Judgment of Light.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "正义之怒"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "普通攻击有 25% 的几率对较大范围内的周围单位造成 60 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "正义之怒"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyHammerOn.blp"
+    }
+  ],
+  "NewId": "A0UU"
+}

@@ -1,0 +1,56 @@
+{
+  "OldId": "nqb1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A05H"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 9
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼-猎头者）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗矛部族的伙伴。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练豪猪"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "豪猪"
+    }
+  ]
+}

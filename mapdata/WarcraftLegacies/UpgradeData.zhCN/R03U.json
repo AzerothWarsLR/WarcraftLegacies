@@ -1,0 +1,65 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ginh",
+      "Value": 1
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gtib",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlare.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（阿拉索 - T1）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "太阳耀斑仪式"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究太阳耀斑仪式"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使法师塔能够在地图上的任意位置使用 |cffcece00太阳耀斑 |r技能。其冷却时间为 90 秒|n|n|cffffff00太阳耀斑是一种范围效果，造成 100% 致盲和沉默。|r\n"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    }
+  ],
+  "NewId": "R03U"
+}

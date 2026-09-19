@@ -1,0 +1,104 @@
+{
+  "OldId": "uske",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0PI"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 7
+    },
+    {
+      "Id": "ugor",
+      "Value": 7
+    },
+    {
+      "Id": "uhpm",
+      "Value": 625
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "summoned,undead"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhar,Rhme,Rusl,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 通灵师）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练骷髅战士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "弱小的骷髅战士，在大规模亡灵军队中可作为有效的炮灰。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "骷髅战士"
+    }
+  ]
+}

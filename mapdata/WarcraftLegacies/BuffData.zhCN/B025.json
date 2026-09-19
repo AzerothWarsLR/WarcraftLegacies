@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChestOfGold.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "指挥点每分钟 10 黄金"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位是每 10 黄金/分钟的控制点，为你的收入增加 10 黄金。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "指挥点每分钟 10 黄金"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B025"
+}

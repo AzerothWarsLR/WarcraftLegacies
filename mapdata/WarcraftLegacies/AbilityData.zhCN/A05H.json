@@ -1,0 +1,117 @@
+{
+  "OldId": "Aspo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bspo,Bssd"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 巨魔猎头者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一种毒药攻击，每秒造成<Aspo,DataA1>点伤害，并使目标敌人的移动速度降低<Aspo,DataB1,%>%，攻击速度降低<Aspo,DataC1,%>%，持续 2 秒。对英雄持续 1.5 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一种毒药攻击，每秒造成<Aspo,DataA1>点伤害，并使目标敌人的移动速度降低<Aspo,DataB1,%>%，攻击速度降低<Aspo,DataC1,%>%，持续 2 秒。对英雄持续 1.5 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速毒药"
+    }
+  ],
+  "NewId": "A05H"
+}

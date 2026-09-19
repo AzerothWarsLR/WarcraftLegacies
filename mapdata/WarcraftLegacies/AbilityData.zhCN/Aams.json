@@ -1,0 +1,52 @@
+{
+  "OldId": "Aams",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "Rnsw"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,invulnerable,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ams3",
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暮光、伊利达雷、恩佐斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "创造一道屏障，为目标单位阻挡 600 点法术伤害。|n持续 90 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反魔法护罩"
+    }
+  ]
+}

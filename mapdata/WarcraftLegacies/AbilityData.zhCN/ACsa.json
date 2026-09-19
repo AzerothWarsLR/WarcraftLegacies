@@ -1,0 +1,49 @@
+{
+  "OldId": "ACsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 2
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立敌对 - 月之女祭司）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "aubx",
+      "Value": 3
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灼热之箭"
+    }
+  ]
+}

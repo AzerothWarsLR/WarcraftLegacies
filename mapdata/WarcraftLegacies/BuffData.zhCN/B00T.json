@@ -1,0 +1,29 @@
+{
+  "OldId": "BNab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_ShadowWordPain.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "亵渎"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位被施以亵渎，防御降低，并会持续受到伤害。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    }
+  ],
+  "NewId": "B00T"
+}

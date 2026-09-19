@@ -1,0 +1,77 @@
+{
+  "OldId": "Ekgg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Amim,AInv,Ault"
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "AEer,AEah,AEtq"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "usin",
+      "Value": 600
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "usid",
+      "Value": 600
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "丛林守护者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长使用自然法术。可学习纠缠根须、自然之力、荆棘光环和宁静。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤丛林守护者"
+    }
+  ],
+  "NewId": "E00P"
+}

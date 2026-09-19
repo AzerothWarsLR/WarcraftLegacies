@@ -1,0 +1,211 @@
+{
+  "OldId": "ANto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0CY"
+    },
+    {
+      "Level": 2,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0CY"
+    },
+    {
+      "Level": 3,
+      "Id": "Ntou",
+      "Type": 3,
+      "Value": "n0CY"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡德加）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一个黑洞，使敌方单位的移动速度降低 90%，并每秒对敌方单位造成 15 点伤害。若敌方单位处于黑洞 200 范围内，则每秒受到 100 点伤害。|n|n|cffffcc00等级 1|r - 240 秒冷却时间。持续 6 秒。 |n|cffffcc00等级 2|r - 160 秒冷却时间。持续 9 秒。 |n|cffffcc00等级 3|r - 120 秒冷却时间。持续 12 秒。\n"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "黑洞 - [|cffffcc00等级 1|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "黑洞 - [|cffffcc00等级 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个黑洞，使敌方单位的移动速度降低 90%，并每秒对敌方单位造成 15 点伤害。若敌方单位处于黑洞 200 范围内，则每秒受到 100 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个黑洞，使敌方单位的移动速度降低 90%，并每秒对敌方单位造成 15 点伤害。若敌方单位处于黑洞 200 范围内，则每秒受到 100 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个黑洞，使敌方单位的移动速度降低 90%，并每秒对敌方单位造成 15 点伤害。若敌方单位处于黑洞 200 范围内，则每秒受到 100 点伤害。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "黑洞"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习黑洞"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "黑洞 - [|cffffcc00等级 1|r]"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\2BlackHole.mdx"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "war3mapImported\\2BlackHole.mdx"
+    },
+    {
+      "Id": "aaea",
+      "Type": 3,
+      "Value": "war3mapImported\\2BlackHole.mdx"
+    }
+  ],
+  "NewId": "A11O"
+}

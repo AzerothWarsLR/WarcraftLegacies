@@ -1,0 +1,58 @@
+{
+  "OldId": "nbrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0P0,Ashm"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0P0"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Id": "ua1b",
+      "Value": 25
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 475
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有影遁的轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "土匪"
+    }
+  ]
+}

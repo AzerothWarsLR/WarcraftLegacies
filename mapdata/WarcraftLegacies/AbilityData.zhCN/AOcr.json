@@ -1,0 +1,104 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ocr2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（露西尔）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "攻击有一定几率造成双倍伤害。 |n|n|cffffcc001级|r - <AOcr,DataA1>% 几率。 |n|cffffcc002级|r - <AOcr,DataA2>% 几率。 |n|cffffcc003级|r - <AOcr,DataA3>% 几率。|n|cffffcc004级|r - <AOcr,DataA4>% 几率。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "致命一击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<AOcr,DataA1>% 的几率造成双倍伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<AOcr,DataA1>% 的几率造成双倍伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<AOcr,DataA1>% 的几率造成双倍伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<AOcr,DataA1>% 的几率造成双倍伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    }
+  ]
+}

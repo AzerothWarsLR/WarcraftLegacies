@@ -1,0 +1,82 @@
+{
+  "OldId": "ACdc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Udc1",
+      "Type": 2,
+      "Value": 280
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Udc1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,organic,notself,invu,vuln"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（野怪 - 达克苏尔。红色 - 死亡骑士）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道凋零缠绕，可为一个友方亡灵单位恢复 280 点生命值，或对敌方活体单位造成一半的伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道凋零缠绕，可为一个友方亡灵单位恢复 280 点生命值，或对敌方活体单位造成一半的伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "凋零缠绕"
+    }
+  ]
+}

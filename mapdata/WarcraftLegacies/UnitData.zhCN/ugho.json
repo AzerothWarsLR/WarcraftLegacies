@@ -1,0 +1,141 @@
+{
+  "OldId": "ugho",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0SU,YBRC,A020,Aiun"
+    },
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 13
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 11
+    },
+    {
+      "Id": "ugor",
+      "Value": 12
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01D,Rhme,Rhar,Rugf,Rupm,Rguv"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R008"
+    },
+    {
+      "Id": "urqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua2r",
+      "Value": 0
+    },
+    {
+      "Id": "ua2s",
+      "Value": 0
+    },
+    {
+      "Id": "ua2d",
+      "Value": 0
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "从死亡中重塑的恐怖复生尸骸。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食尸鬼"
+    }
+  ]
+}

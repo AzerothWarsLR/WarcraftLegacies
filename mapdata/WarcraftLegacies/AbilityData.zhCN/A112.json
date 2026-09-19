@@ -1,0 +1,34 @@
+{
+  "OldId": "Amgl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（女猎手指挥官）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使女猎手指挥官能够以弹射战刃攻击额外命中 3 个单位。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "月刃"
+    }
+  ],
+  "NewId": "A112"
+}

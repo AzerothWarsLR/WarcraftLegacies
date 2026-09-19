@@ -1,0 +1,161 @@
+{
+  "OldId": "AUfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克尔苏加德 - 通灵师）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以一波动荡的瘟疫冲击目标敌方单位周围的敌方单位，使其移动速度降低，持续 4 秒。|n|n|cffffcc001级|r - 目标受到 100 点伤害，新星伤害 100 点。|n|cffffcc002级|r - 目标受到 125 点伤害，新星伤害 125 点。|n|cffffcc003级|r - 目标受到 150 点伤害，新星伤害 150 点。|n|cffffcc004级|r - 目标受到 175 点伤害，新星伤害 200 点。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "冰霜新星 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB4>点伤害，并造成<A0LP,DataA4>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur4>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB4>点伤害，并造成<A0LP,DataA4>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur4>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB4>点伤害，并造成<A0LP,DataA4>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur4>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB4>点伤害，并造成<A0LP,DataA4>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur4>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜新星"
+    }
+  ],
+  "NewId": "A0LP"
+}

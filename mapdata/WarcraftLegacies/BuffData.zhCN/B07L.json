@@ -1,0 +1,29 @@
+{
+  "OldId": "BHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "沙漠风暴"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于沙漠风暴之中。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl"
+    }
+  ],
+  "NewId": "B07L"
+}

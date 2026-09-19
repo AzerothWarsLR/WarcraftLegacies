@@ -1,0 +1,21 @@
+{
+  "OldId": "nslh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火蜥蜴幼崽"
+    }
+  ]
+}

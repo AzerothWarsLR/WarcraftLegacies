@@ -1,0 +1,190 @@
+{
+  "OldId": "Adef",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08G"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08G"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08G"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Def1",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Def2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Def2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Def3",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Def3",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 0.85
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Def5",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Def6",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Def6",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 8,
+      "Id": "Def8",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 8,
+      "Id": "Def8",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（通用技能）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活后有<Adef,DataF1>% 的几率将穿刺攻击反射给攻击者，且未被反射的攻击只受到 35% 的伤害。|n防御激活期间，移动速度降低 30%，受到的魔法伤害降低 15%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活后有<Adef,DataF2>% 的几率将穿刺攻击反射给攻击者，且未被反射的攻击只受到 50% 的伤害。|n防御激活期间，移动速度降低 30%，受到的魔法伤害降低 20%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活后有<Adef,DataF1>% 的几率将穿刺攻击反射给攻击者，且未被反射的攻击只受到 35% 的伤害。|n防御激活期间，移动速度降低 30%，受到的魔法伤害降低 15%。"
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "取消激活后以正常速度移动，但会受到穿刺攻击和魔法伤害的正常伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "防御"
+    }
+  ]
+}

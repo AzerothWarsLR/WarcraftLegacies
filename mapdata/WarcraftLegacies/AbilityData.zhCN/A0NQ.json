@@ -1,0 +1,61 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "War2",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "War3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（灰色 食人魔领主）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 25% 的几率使一次攻击对周围的单位造成 35 点伤害。"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎"
+    }
+  ],
+  "NewId": "A0NQ"
+}

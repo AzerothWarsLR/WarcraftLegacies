@@ -1,0 +1,123 @@
+{
+  "OldId": "AEbl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛瑟玛）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "短距离传送，使英雄能够进出战斗。|n|n|cffffcc00等级 1|r - <AEbl,Cool1>秒冷却时间，<AEbl,Cost1>点魔法值。 |n|cffffcc00等级 2|r - <AEbl,Cool2>秒冷却时间，<AEbl,Cost2>点魔法值。 |n|cffffcc00等级 3|r - <AEbl,Cool3>秒冷却时间，<AEbl,Cost3>点魔法值。  |n|cffffcc00等级 4|r - <AEbl,Cool4>秒冷却时间，<AEbl,Cost4>点魔法值。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪现 - [|cffffcc00等级 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄短距离传送，使其能够进出战斗。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄短距离传送，使其能够进出战斗。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄短距离传送，使其能够进出战斗。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将英雄短距离传送，使其能够进出战斗。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪现"
+    }
+  ]
+}

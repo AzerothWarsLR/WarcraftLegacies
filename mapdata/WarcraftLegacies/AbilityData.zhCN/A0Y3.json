@@ -1,0 +1,78 @@
+{
+  "OldId": "Aven",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Poi1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Poi2",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Poi3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNPoisonSting.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩 - 异种巨像）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "毒液飞镖"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒液飞镖"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒造成<A0Y3,DataA1>点毒素伤害，并使移动速度与攻击速度降低<A0Y3,DataC1,%>%。毒素伤害可叠加。|n持续<A0Y3,Dur1>秒（英雄为 0.1 秒）。"
+    }
+  ],
+  "NewId": "A0Y3"
+}

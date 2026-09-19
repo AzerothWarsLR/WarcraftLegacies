@@ -1,0 +1,67 @@
+{
+  "OldId": "AEev",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0.22
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0.28
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0.16
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0.34
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（英雄技能） （绿色 / 浅蓝色 - 伊利丹）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "有几率闪避攻击。|n|n|cffffcc00等级 1|r - 有<AEev,DataA1,%>% 的几率使对手攻击落空。 |n|cffffcc00等级 2|r - 有<AEev,DataA2,%>% 的几率使对手攻击落空。 |n|cffffcc00等级 3|r - 有<AEev,DataA3,%>% 的几率使对手攻击落空。 |n|cffffcc00等级 3|r - 有 35% 的几率使对手攻击落空。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪避 - [|cffffcc00等级 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有<AEev,DataA4,%>% 的几率闪避攻击。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪避"
+    }
+  ]
+}

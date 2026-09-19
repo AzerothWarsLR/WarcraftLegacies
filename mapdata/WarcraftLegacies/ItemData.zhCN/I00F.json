@@ -1,0 +1,84 @@
+{
+  "OldId": "rde3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0I7,AIa6"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "isst",
+      "Value": 800
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGauntletsOfOgrePower.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高佩戴者的敏捷。可用于进入狂暴状态。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买购买狂怒护手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的护甲提高4点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "安其拉护手"
+    }
+  ],
+  "NewId": "I00F"
+}

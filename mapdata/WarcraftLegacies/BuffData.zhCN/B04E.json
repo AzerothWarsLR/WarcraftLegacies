@@ -1,0 +1,34 @@
+{
+  "OldId": "BIpv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLight.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "振奋"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "每秒恢复 1% 的生命值。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "振奋"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（暴风城-大教堂）"
+    }
+  ],
+  "NewId": "B04E"
+}

@@ -1,0 +1,97 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 5
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h07G"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": -3
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRepair2.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化底盘"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化底盘"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化无畏舰，使其生命值提高 350 点，移动速度提高 50。"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "TP38"
+}

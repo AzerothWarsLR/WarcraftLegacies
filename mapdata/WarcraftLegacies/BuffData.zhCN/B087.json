@@ -1,0 +1,24 @@
+{
+  "OldId": "BHbd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSparkFlare.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "奥术炮击"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位正遭到奥术炮火的轰击。"
+    }
+  ],
+  "NewId": "B087"
+}

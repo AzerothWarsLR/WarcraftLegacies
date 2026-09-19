@@ -1,0 +1,37 @@
+{
+  "OldId": "ACbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbh3",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（灰色 - 石槌士兵） （邪能狼骑兵）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 15% 的几率使一次攻击造成 60 点额外伤害并使对手昏迷 2 秒。（对英雄为 0.2 秒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "猛击"
+    }
+  ]
+}

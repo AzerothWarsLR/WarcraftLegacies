@@ -1,0 +1,54 @@
+{
+  "OldId": "Atdg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Tdg1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Tdg2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Tdg3",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Tdg4",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Tdg5",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（龙卷风）（2 级）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "龙卷风单位伤害"
+    }
+  ],
+  "NewId": "A0H8"
+}

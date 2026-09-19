@@ -1,0 +1,34 @@
+{
+  "OldId": "BHav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于战斗恍惚状态，生命值、攻击力和护甲提高，并免疫法术。"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "战斗恍惚"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " （战歌-格罗姆，萨鲁法尔）"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellscreamBerserk.blp"
+    }
+  ],
+  "NewId": "B0AU"
+}

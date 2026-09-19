@@ -1,0 +1,31 @@
+{
+  "OldId": "nfpu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACac"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有统御光环与战争践踏的重型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "北极巨熊怪战士"
+    }
+  ]
+}

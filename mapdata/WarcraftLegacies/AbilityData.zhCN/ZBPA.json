@@ -1,0 +1,119 @@
+{
+  "OldId": "AIev",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伊利丹）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恶魔变形（永久）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习恶魔变形 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并提高其基础伤害。 |n|n|cffffcc001级|r - 增加 500 点生命值和 60 点伤害。|n|cffffcc002级|r - 增加 750 点生命值和 90 点伤害。 |n|cffffcc003级|r - 增加 1000 点生命值和 120 点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE1>点额外生命值和 60 点额外伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE1>点额外生命值和 60 点额外伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE1>点额外生命值和 60 点额外伤害。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASMetamorphosis.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恶魔变形 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恶魔变形 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恶魔变形 - [|cffffcc003 级|r]"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    }
+  ],
+  "NewId": "ZBPA"
+}

@@ -1,0 +1,154 @@
+{
+  "OldId": "AUfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 135
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（耐普图隆 - 天空之墙）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "释放一波寒冰冲击，攻击目标敌方单位及其周围的敌人，并降低他们的移动速度和攻击速度。|n|n|cffffcc001级|r - 造成<AUfn,DataB1>点目标伤害，<AUfn,DataA1>点新星伤害。|n|cffffcc002级|r - 造成<AUfn,DataB2>点目标伤害，<AUfn,DataA2>点新星伤害。|n|cffffcc003级|r - 造成<AUfn,DataB3>点目标伤害，<AUfn,DataA3>点新星伤害。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "冰霜新星 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB4>点伤害，并造成<A0LP,DataA4>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur4>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB1>点伤害，并造成<A0LP,DataA1>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB2>点伤害，并造成<A0LP,DataA2>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一波动荡的冰霜冲击敌方单位，对目标造成<A0LP,DataB4>点伤害，并造成<A0LP,DataA4>点新星伤害。冰冻伤害会使单位的移动速度和攻击速度降低，持续<A0LP,Dur4>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜新星"
+    }
+  ],
+  "NewId": "MD09"
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "Bcri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCdemonicritual.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "邪恶护甲"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有邪恶护甲，免疫伤害。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "units\\nightelf\\Wisp\\Wisp.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ],
+  "NewId": "B02P"
+}

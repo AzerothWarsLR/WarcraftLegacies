@@ -1,0 +1,65 @@
+{
+  "OldId": "ssil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A082,A03X,Atru"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIrr"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性。提供真视能力，并可使用视界术。"
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "阻止目标区域内的所有敌人施放法术，持续<AIse,Dur1>秒。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "统御之盔"
+    }
+  ],
+  "NewId": "I01Y"
+}

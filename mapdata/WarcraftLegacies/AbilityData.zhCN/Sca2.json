@@ -1,0 +1,29 @@
+{
+  "OldId": "Sca2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R09O"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "o00S"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌-血契狼骑兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "甲壳护盾"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "OldId": "AEev",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（穆拉丁）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "在数秒内未受到伤害时恢复生命值。|n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复苏之风 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 7 秒内未受到伤害后，每秒恢复最大生命值的 8%，生命值低于 40% 时提高至 16%。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复苏之风 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复苏之风 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复苏之风 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/PassiveButtons/PASSecondWind.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSecondWind.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "复苏之风"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 7 秒内未受到伤害后，每秒恢复最大生命值的 8%，生命值低于 40% 时提高至 16%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 7 秒内未受到伤害后，每秒恢复最大生命值的 8%，生命值低于 40% 时提高至 16%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 7 秒内未受到伤害后，每秒恢复最大生命值的 8%，生命值低于 40% 时提高至 16%。"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习复苏之风 - [|cffffcc00等级 %d|r]"
+    }
+  ],
+  "NewId": "TP46"
+}

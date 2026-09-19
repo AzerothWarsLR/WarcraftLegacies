@@ -1,0 +1,34 @@
+{
+  "OldId": "Brej",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "灵魂指引"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有灵魂指引，法力值持续恢复。"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+    }
+  ],
+  "NewId": "B0B7"
+}

@@ -1,0 +1,48 @@
+{
+  "OldId": "Bpoi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWallOfFire.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "燃烧"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位正在燃烧。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "火焰之箭"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " （精灵）"
+    },
+    {
+      "Id": "fspt",
+      "Type": 3,
+      "Value": "head"
+    },
+    {
+      "Id": "fspd",
+      "Value": 0
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B04F"
+}

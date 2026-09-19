@@ -1,0 +1,226 @@
+{
+  "OldId": "AHmt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hmt1",
+      "Value": 72
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hmt1",
+      "Value": 84
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hmt2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1250
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hmt1",
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体传送"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "流沙 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "流沙 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "流沙 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "1 秒后，将该玩家附近的<A000,DataA3>个单位（含施法者）传送至<A000,Rng3>范围内的一名友方地面单位或建筑。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "1 秒后，将该玩家附近的<A000,DataA3>个单位（含施法者）传送至<A000,Rng3>范围内的一名友方地面单位或建筑。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_SandAvenger.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_SandAvenger.blp"
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
+    },
+    {
+      "Id": "aaea",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "流沙"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "1 秒后，将该玩家附近的<A000,DataA3>个单位（含施法者）传送至<A000,Rng3>范围内的一名友方地面单位或建筑。"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将周围包括大法师在内的<AHmt,DataA1>个玩家单位传送到一个友方地面单位或建筑旁边。"
+    }
+  ],
+  "NewId": "A000"
+}

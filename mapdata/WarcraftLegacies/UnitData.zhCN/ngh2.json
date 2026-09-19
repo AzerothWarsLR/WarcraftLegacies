@@ -1,0 +1,35 @@
+{
+  "OldId": "ngh2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "uabs",
+      "Type": 3,
+      "Value": "ACcs"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放诅咒与占据的重型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "怨灵"
+    }
+  ]
+}

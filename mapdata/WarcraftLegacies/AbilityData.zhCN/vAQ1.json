@@ -1,0 +1,59 @@
+{
+  "OldId": "Acht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Roa1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Roa2",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（物品 - 克苏恩之锣）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发出一声骇人的嚎叫，使附近敌方单位的攻击伤害降低<vAQ1,DataA1,%>%，护甲降低<vAQ1,DataB1>，持续<vAQ1,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    }
+  ],
+  "NewId": "vAQ1"
+}

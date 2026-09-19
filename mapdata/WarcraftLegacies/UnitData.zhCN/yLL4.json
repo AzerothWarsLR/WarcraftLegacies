@@ -1,0 +1,57 @@
+{
+  "OldId": "nbsm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "LLLN"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical,neutral,sapper"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "尤格-萨隆的监狱"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BlackEmpireSiphoningCrystal.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackEmpireSiphoningCrystal.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造尤格-萨隆的监狱"
+    }
+  ],
+  "NewId": "yLL4"
+}

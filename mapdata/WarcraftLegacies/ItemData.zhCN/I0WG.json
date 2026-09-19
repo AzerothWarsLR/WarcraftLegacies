@@ -1,0 +1,63 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarglaive_of_Azzinoth.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "攻击时造成范围伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买埃辛诺斯战刃"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "埃辛诺斯战刃"
+    }
+  ],
+  "NewId": "I0WG"
+}

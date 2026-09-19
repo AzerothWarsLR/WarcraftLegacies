@@ -1,0 +1,84 @@
+{
+  "OldId": "AHdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ndr5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ndr2",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RL11"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法力虹吸"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在雕像与目标之间转移魔法值。每秒从敌人身上汲取<AZ2A,DataB1>点魔法值，或每秒向盟友输送<AZ2A,DataE1>点魔法值。|n|n汲取法力可将雕像的魔法值推高至上限以上，但多余的魔法值若不使用会迅速流失。|n持续 6 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力虹吸"
+    }
+  ],
+  "NewId": "AZ2A"
+}

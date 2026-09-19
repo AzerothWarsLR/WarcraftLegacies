@@ -1,0 +1,79 @@
+{
+  "OldId": "AOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B01A"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASLeadershipAura.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血色炽天使）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\SpiralAura.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高 5%。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNLeadershipAura.blp"
+    }
+  ],
+  "NewId": "A0QH"
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "nwwg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 650
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型近战单位，具有致命一击"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巨型霜狼"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": "otot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Aeth"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练静滞陷阱"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "静滞陷阱"
+    }
+  ]
+}

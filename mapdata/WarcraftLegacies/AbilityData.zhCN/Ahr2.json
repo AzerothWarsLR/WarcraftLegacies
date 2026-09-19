@@ -1,0 +1,13 @@
+{
+  "OldId": "Ahr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "采集"
+    }
+  ]
+}

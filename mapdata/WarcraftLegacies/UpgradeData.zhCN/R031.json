@@ -1,0 +1,112 @@
+{
+  "OldId": "Rhde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h04C"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0P3"
+    },
+    {
+      "Id": "gglb",
+      "Value": 200
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R039"
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRanger.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（阿拉索 - T3）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "远征军幸存者"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究远征军幸存者"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "深入德拉诺的联盟远征军的幸存者，重新拿起武器，再次保卫艾泽拉斯。|n|n可用|cffcece00神射手 |r取代|cffcece00长矛手|r进行训练，并获得以下变化：|n|n- 伤害提高 12。|n- 距离提高 150。|n- 移动速度提高 20。|n- 生命值提高 100。|n|n神射手拥有以下技能：|n|n|cffcece00致命一击|r - 有 15% 的几率在攻击中造成 2 倍于正常值的伤害。|n|cffcece00|n毒箭|r - 造成<AEpa,DataA1>点额外伤害，并使目标中毒，在 4 秒内每秒造成<AEpa,DataB1>点额外伤害。\n"
+    }
+  ],
+  "NewId": "R031"
+}

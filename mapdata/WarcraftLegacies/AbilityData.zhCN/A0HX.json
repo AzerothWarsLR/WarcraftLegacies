@@ -1,0 +1,39 @@
+{
+  "OldId": "Asd3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Dda2",
+      "Type": 2,
+      "Value": 180
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Dda4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（发条地精 - 4 级）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "对小范围内的单位造成 180 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咔嘣！"
+    }
+  ],
+  "NewId": "A0HX"
+}

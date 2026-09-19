@@ -1,0 +1,36 @@
+{
+  "OldId": "ACav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 - 高阶督军纳因图斯）深绿 - 雷金"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位额外获得 3 点护甲。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虔诚光环"
+    }
+  ],
+  "NewId": "A0EG"
+}

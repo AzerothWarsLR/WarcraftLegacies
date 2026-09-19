@@ -1,0 +1,121 @@
+{
+  "OldId": "Hmbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 20
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "TP49,TP51,TP46,MD07"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "uint",
+      "Value": 18
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活山丘王子"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "铜须部族的至高领主"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活山丘王子"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长进攻作战并扰乱敌方部队。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤穆拉丁"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "穆拉丁·铜须"
+    }
+  ]
+}

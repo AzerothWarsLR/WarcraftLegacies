@@ -1,0 +1,72 @@
+{
+  "OldId": "SCae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.15
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强效漩涡光环"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（潮汐领主）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强效漩涡光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近敌方单位的移动速度降低 40%，攻击速度降低 25%。"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\commandButtons\\PASWhirlpool.blp"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "EL0X"
+}

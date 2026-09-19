@@ -1,0 +1,30 @@
+{
+  "OldId": "Sca1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R012"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "o073"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 兽人步兵升级为莫克纳萨战士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "混乱"
+    }
+  ],
+  "NewId": "S00Y"
+}

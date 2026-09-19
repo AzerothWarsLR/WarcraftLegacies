@@ -1,0 +1,34 @@
+{
+  "OldId": "BHds",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNMagocracy.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "守护神盾"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位在有限时间内防御提高。"
+    }
+  ],
+  "NewId": "B06O"
+}

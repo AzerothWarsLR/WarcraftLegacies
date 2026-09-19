@@ -1,0 +1,111 @@
+{
+  "OldId": "nnsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 18
+    },
+    {
+      "Id": "unbm",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "RELS,RELD"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "n0CG,n0CF"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RSW2,n06R"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天空之墙 - 特种生产）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "火焰生产建筑。"
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DarkIronLair2.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNAlAkirLair.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "熔岩洞穴群"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造熔岩洞穴群"
+    }
+  ],
+  "NewId": "sELF"
+}

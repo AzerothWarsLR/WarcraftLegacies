@@ -1,0 +1,70 @@
+{
+  "OldId": "nstw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 24
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ucar",
+      "Value": 1
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的重型远程单位。拥有吞噬敌人的能力。可施放连环闪电与闪电护盾。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "风暴巨蜥"
+    }
+  ]
+}

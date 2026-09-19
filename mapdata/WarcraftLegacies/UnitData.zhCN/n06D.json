@@ -1,0 +1,133 @@
+{
+  "OldId": "nfv4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ufma",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 40
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2500
+    },
+    {
+      "Id": "usin",
+      "Value": 600
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "urtm",
+      "Value": 90
+    },
+    {
+      "Id": "urev",
+      "Value": 1
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "ewsp,e00N"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R064,Rgfo"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRockTower.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 80
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵其他）"
+    },
+    {
+      "Id": "uclg",
+      "Value": 125
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "塞纳里奥要塞"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "卡利姆多南部重要的暗夜精灵基地，监视着安其拉。可训练小精灵并复活英雄。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "WarMill"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造塞纳里奥要塞"
+    }
+  ],
+  "NewId": "n06D"
+}

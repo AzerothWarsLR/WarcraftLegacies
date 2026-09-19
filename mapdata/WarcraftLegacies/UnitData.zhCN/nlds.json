@@ -1,0 +1,34 @@
+{
+  "OldId": "nlds",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 555
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放纠缠根须并召唤对虾的中型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙虾人先知"
+    }
+  ]
+}

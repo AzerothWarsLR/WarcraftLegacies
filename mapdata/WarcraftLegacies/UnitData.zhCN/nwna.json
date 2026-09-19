@@ -1,0 +1,35 @@
+{
+  "OldId": "nwna",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACbh,ACrn"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1400
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位，具有猛击、战争践踏和重生。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "远古雪怪"
+    }
+  ]
+}

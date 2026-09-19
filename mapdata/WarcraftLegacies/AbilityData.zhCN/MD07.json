@@ -1,0 +1,215 @@
+{
+  "OldId": "AHav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（穆拉丁）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习山岭之王的化身 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "当山岭之王的化身被激活时，穆拉丁将获得额外护甲、额外生命值、额外攻击力、法术免疫和顺劈斩攻击。穆拉丁还会周期性地嘲讽附近的敌人，迫使他们攻击自己。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活山岭之王的化身 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活山岭之王的化身 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活山岭之王的化身 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活山岭之王的化身，使山丘之王获得<MD07,DataA1>点额外护甲、<MD07,DataB1>点额外生命值、<MD07,DataC1>点额外攻击力、法术免疫、顺劈斩攻击，以及周期性的嘲讽，迫使附近的敌人攻击他。|n持续<MD07,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活山岭之王的化身，使山丘之王获得<MD07,DataA1>点额外护甲、<MD07,DataB1>点额外生命值、<MD07,DataC1>点额外攻击力、法术免疫、顺劈斩攻击，以及周期性的嘲讽，迫使附近的敌人攻击他。|n持续<MD07,Dur1>秒。"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活山岭之王的化身，使山丘之王获得<MD07,DataA1>点额外护甲、<MD07,DataB1>点额外生命值、<MD07,DataC1>点额外攻击力、法术免疫、顺劈斩攻击，以及周期性的嘲讽，迫使附近的敌人攻击他。|n持续<MD07,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "山岭之王的化身"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatar.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatar.blp"
+    }
+  ],
+  "NewId": "MD07"
+}

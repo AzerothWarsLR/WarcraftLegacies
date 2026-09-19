@@ -1,0 +1,39 @@
+{
+  "OldId": "Aweb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00Q"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地穴恶魔）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用网将目标敌方单位束缚到地面。被网住的单位可被视作地面单位进行攻击。|n持续<Aweb,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "蛛网"
+    }
+  ]
+}

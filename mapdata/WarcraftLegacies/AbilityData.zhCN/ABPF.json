@@ -1,0 +1,40 @@
+{
+  "OldId": "Ahri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RBEP"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 20% 的几率使敌方单位的攻击速度降低<ABSF,DataB1,%>%，移动速度降低<ABSF,DataA1,%>%。|n|cffffcc00持续<ABSF,Dur1>秒（英雄为 0.6 秒）。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "麻痹恐惧"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "麻痹恐惧"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PAS_CR_Faceless_OLDGODS.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "ABPF"
+}

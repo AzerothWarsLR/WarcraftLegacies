@@ -1,0 +1,18 @@
+{
+  "OldId": "nskg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "大型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巨型骷髅战士"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "堡垒之盾光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该建筑受到堡垒护盾的影响，护甲提高。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B0B4"
+}

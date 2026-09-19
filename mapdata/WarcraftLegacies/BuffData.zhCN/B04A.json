@@ -1,0 +1,29 @@
+{
+  "OldId": "BNso",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOverload.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "闪电震击"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于震慑状态，无法施法。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "闪电震击"
+    }
+  ],
+  "NewId": "B04A"
+}

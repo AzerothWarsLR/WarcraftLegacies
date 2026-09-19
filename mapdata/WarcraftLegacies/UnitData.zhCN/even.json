@@ -1,0 +1,23 @@
+{
+  "OldId": "even",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练复仇之魂"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "复仇之魂"
+    }
+  ]
+}

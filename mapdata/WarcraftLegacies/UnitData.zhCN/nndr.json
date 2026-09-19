@@ -1,0 +1,33 @@
+{
+  "OldId": "nndr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空龙"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空龙"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空龙"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空龙"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型远程飞行单位，可施放残废术，并对魔法免疫。"
+    }
+  ]
+}

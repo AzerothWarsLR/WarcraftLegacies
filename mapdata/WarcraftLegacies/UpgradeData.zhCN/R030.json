@@ -1,0 +1,108 @@
+{
+  "OldId": "Rhde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A02Y"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h04C"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0P3"
+    },
+    {
+      "Id": "gglb",
+      "Value": 200
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "R039"
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（阿拉索 - T3）"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "骑士准则"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究骑士准则"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "资源被投入到暴风城职业骑士的训练中，可用|cffcece00暴风城骑士 |r取代|cffcece00游骑兵|r进行训练，并获得以下提升：|n|n- 生命值提高 200。|n|n- 护甲类型由中型变为重型。|n|n- 护甲提高 2。|n|n- 伤害提高 5。|n|n- 获得|cffcece00鼓舞|r技能，可使骑士在 10 秒内获得 10 点护甲。|n|n- 强化|cffcece00战争装甲 |r，额外获得 10% 的几率吸收一次攻击。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLionEmblem.blp"
+    }
+  ],
+  "NewId": "R030"
+}

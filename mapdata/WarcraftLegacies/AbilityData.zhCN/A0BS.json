@@ -1,0 +1,215 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08S"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08S"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08S"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08S"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 7
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "e00C"
+    },
+    {
+      "Level": 2,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "e00C"
+    },
+    {
+      "Level": 3,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "e00C"
+    },
+    {
+      "Level": 4,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "e00C"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRavenForm.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦迪文）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群鸦突袭"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRavenForm.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 1
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群鸦突袭 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0BS,DataB2>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg2> - <e00C,maxdmg2>点伤害。|n持续<A0BS,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0BS,DataB2>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg2> - <e00C,maxdmg2>点伤害。|n持续<A0BS,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0BS,DataB2>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg2> - <e00C,maxdmg2>点伤害。|n持续<A0BS,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0BS,DataB2>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg2> - <e00C,maxdmg2>点伤害。|n持续<A0BS,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一群乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg1> - <e00C,maxdmg1>点伤害。|n持续<A0BS,Dur1>秒。|n|n|cffffcc001级|r - 召唤<A0BS,DataB1>只乌鸦。|n|cffffcc002级|r - 召唤<A0BS,DataB2>只乌鸦。|n|cffffcc003级|r - 召唤<A0BS,DataB3>只乌鸦。|n|cffffcc004级|r - 召唤<A0BS,DataB4>只乌鸦。\n"
+    }
+  ],
+  "NewId": "A0BS"
+}

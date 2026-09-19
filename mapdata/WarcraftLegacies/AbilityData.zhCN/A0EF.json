@@ -1,0 +1,65 @@
+{
+  "OldId": "ACvp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uav1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（尚武之魂）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "周围的友方近战单位攻击敌方单位时，会获得相当于其攻击力 50% 的生命值。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血光环"
+    }
+  ],
+  "NewId": "A0EF"
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "nbdo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACev,Arsk,ACav,ACbf"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 60
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1400
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙人监工"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有霜冻吐息、虔诚光环与闪避的重型近战单位。"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "OldId": "nvdl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "ugor",
+      "Value": 10
+    },
+    {
+      "Id": "uhpm",
+      "Value": 640
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 650
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "usma",
+      "Value": 3
+    },
+    {
+      "Id": "usrg",
+      "Value": 15
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-传送门）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空行者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤虚空行者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "源自虚空的虚灵恶魔。|"
+    }
+  ]
+}

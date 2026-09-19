@@ -1,0 +1,29 @@
+{
+  "OldId": "BNsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "压制"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位被压制，在短时间内无法攻击。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_Weaken_Red.mdx"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMage 03.blp"
+    }
+  ],
+  "NewId": "B0AV"
+}

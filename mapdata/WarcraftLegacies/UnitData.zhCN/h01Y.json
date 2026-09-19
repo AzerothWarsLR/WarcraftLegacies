@@ -1,0 +1,139 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 5
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "udea",
+      "Value": 0
+    },
+    {
+      "Id": "ufma",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ugor",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\Gate1PathDeath.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "unknown"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": "h01W"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rosp,Renb,R064,R013,Rhac"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,sapper"
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（大门 - 损毁）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Terrain\\ElfGate\\ElfGate.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "精灵大门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "横向木门"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "修复破损的大门。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 0
+    }
+  ],
+  "NewId": "h01Y"
+}

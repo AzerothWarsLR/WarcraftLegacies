@@ -1,0 +1,69 @@
+{
+  "OldId": "stwp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A00M"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIsp"
+    },
+    {
+      "Id": "igol",
+      "Value": 200
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ista",
+      "Value": 3
+    },
+    {
+      "Id": "isst",
+      "Value": 1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "将部队运送至一个友方单位或建筑。"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买购买陈旧的传送卷轴"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "将英雄和其周围的部队传送到目标友方城镇大厅。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "陈旧的传送卷轴"
+    }
+  ],
+  "NewId": "I019"
+}

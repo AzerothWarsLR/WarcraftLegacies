@@ -1,0 +1,129 @@
+{
+  "OldId": "Aspo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,organic"
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bspo,Bssd"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Spo4",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Spo3",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Spo2",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Spo1",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（毒鳍龙）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次带毒的攻击，每秒造成<YBSP,DataA1>点伤害，并使目标敌人的移动速度降低<YBSP,DataB1,%>%，攻击速度降低<YBSP,DataC1,%>%，持续<YBSP,Dur1>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减缓毒药 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减速毒药 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次带毒的攻击，每秒造成<YBSP,DataA1>点伤害，并使目标敌人的移动速度降低<YBSP,DataB1,%>%，攻击速度降低<YBSP,DataC1,%>%，持续<YBSP,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速毒药"
+    }
+  ],
+  "NewId": "YBSP"
+}

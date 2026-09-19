@@ -1,0 +1,29 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "黑洞"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位被困在黑洞之中，移动速度暂时降低。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\VioletPulse.mdx"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    }
+  ],
+  "NewId": "B0B3"
+}

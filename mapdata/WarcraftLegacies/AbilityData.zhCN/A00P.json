@@ -1,0 +1,57 @@
+{
+  "OldId": "Abtl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": "Btl1",
+      "Type": 3,
+      "Value": "hrif"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLoadDwarf.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 要塞塔楼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战斗岗位(|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "让周围的火枪手跑入要塞。"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnloadDwarf.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗戒备"
+    }
+  ],
+  "NewId": "A00P"
+}

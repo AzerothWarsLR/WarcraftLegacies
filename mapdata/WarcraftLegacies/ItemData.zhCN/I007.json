@@ -1,0 +1,70 @@
+{
+  "OldId": "desc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "ANdo,A0W0"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高智力。可用于施放末日降临。"
+    },
+    {
+      "Id": "ifil",
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\CrystalShard\\CrystalShard.mdl"
+    },
+    {
+      "Id": "isca",
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": "issc",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "允许英雄传送一小段距离。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "古尔丹之颅"
+    }
+  ],
+  "NewId": "I007"
+}

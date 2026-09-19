@@ -1,0 +1,36 @@
+{
+  "OldId": "ncaw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主攻部队的守护者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的战争古树"
+    }
+  ]
+}

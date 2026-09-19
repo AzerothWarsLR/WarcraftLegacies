@@ -1,0 +1,49 @@
+{
+  "OldId": "nfod",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,enemies,ground,hero,structure"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的重型远程单位。可施放沉默与操纵死尸。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "无面死亡使者"
+    }
+  ]
+}

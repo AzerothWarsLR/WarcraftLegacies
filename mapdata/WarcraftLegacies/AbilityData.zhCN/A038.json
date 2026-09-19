@@ -1,0 +1,227 @@
+{
+  "OldId": "Arsp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 140
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnight.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 加里瑟斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "units\\human\\Knight\\Knight.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "骑兵冲锋"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKnight.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习骑兵冲锋 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤数波勇敢的骑士冲入敌阵。|n|n|cffffcc001级|r - 每名冲锋的骑士造成 40 点伤害。|n|cffffcc002级|r - 每名冲锋的骑士造成 70 点伤害。|n|cffffcc003级|r - 每名冲锋的骑士造成 100 点伤害。|n|n持续 30 秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "骑兵冲锋 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "骑兵冲锋 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "骑兵冲锋 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波冲锋的骑士。每名骑士造成 40 点伤害。|n持续 30 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波冲锋的骑士。每名骑士造成 40 点伤害。|n持续 30 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波冲锋的骑士。每名骑士造成 40 点伤害。|n持续 30 秒。"
+    }
+  ],
+  "NewId": "A038"
+}

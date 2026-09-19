@@ -1,0 +1,173 @@
+{
+  "OldId": "AUin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uin1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uin2",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "n041"
+    },
+    {
+      "Level": 2,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "n091"
+    },
+    {
+      "Level": 3,
+      "Id": "Uin4",
+      "Type": 3,
+      "Value": "n042"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团 - 阿克蒙德）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "混乱之雨的地狱火"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习地狱火 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA1>点伤害，并使其昏迷<AUin,Dur1>秒。地狱火持续<AUin,DataB1>秒。|n|cffffcc001级|r - <AUin,DataA1>点伤害，持续<AUin,DataB1>秒。|n|cffffcc002级|r - <AUin,DataA2>点伤害，持续<AUin,DataB2>秒。|n|cffffcc003级|r - <AUin,DataA3>点伤害，持续<AUin,DataB3>秒。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地狱火 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地狱火 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地狱火 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA2>点伤害，并使其昏迷<AUin,Dur2>秒。地狱火持续<AUin,DataB2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA2>点伤害，并使其昏迷<AUin,Dur2>秒。地狱火持续<AUin,DataB2>秒。"
+    }
+  ]
+}

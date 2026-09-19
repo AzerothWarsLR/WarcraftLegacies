@@ -1,0 +1,35 @@
+{
+  "OldId": "Ansk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ssk2",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R033"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡兹莫丹 - 未使用？）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化体肤"
+    }
+  ]
+}

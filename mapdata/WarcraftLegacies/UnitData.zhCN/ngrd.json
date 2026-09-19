@@ -1,0 +1,91 @@
+{
+  "OldId": "ngrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Ault,Adtg"
+    },
+    {
+      "Id": "udef",
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 50
+    },
+    {
+      "Id": "ua1h",
+      "Value": 100
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1300
+    },
+    {
+      "Id": "umpi",
+      "Value": 500
+    },
+    {
+      "Id": "umpm",
+      "Value": 500
+    },
+    {
+      "Id": "ua1q",
+      "Value": 200
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 8
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,hero,item,mechanical,nonancient,nonhero,organic,structure,vulnerable,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Reuv,R019,Rhme,Rhar"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯召唤）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伊森德雷"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可吞噬敌人并对魔法免疫的重型远程飞行单位。"
+    }
+  ]
+}

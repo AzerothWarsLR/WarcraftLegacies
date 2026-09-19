@@ -1,0 +1,60 @@
+{
+  "OldId": "desc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0I7,AItf,AIsx,AIa6"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A02X"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWalkerMasterTraining.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高攻击力与攻击速度。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买格罗姆·地狱咆哮的战斧曾让数百个战场为之胆寒。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "允许英雄传送一小段距离。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血吼"
+    }
+  ],
+  "NewId": "I01V"
+}

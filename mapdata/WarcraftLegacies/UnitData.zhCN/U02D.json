@@ -1,0 +1,211 @@
+{
+  "OldId": "Uear",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 21
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 28
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "ZB06,HWP4,AHab,A0PA,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "uint",
+      "Value": 28
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "ustr",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "ua1z",
+      "Value": 950
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "utco",
+      "Value": 12
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R05Z"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能部落）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "死亡骑士领主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "塔隆·血魔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤塔隆·血魔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长支援军队并造成魔法伤害。"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TeronGorefiendWC2V1.02.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathKnightTeron.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathKnightTeron.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbCorruption\\OrbCorruptionMissile.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    }
+  ],
+  "NewId": "U02D"
+}

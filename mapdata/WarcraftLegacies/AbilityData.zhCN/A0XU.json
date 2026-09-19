@@ -1,0 +1,312 @@
+{
+  "OldId": "Amls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmlc,B009"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmlc,B009"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmlc,B009"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmlc,B009"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 4.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,organic"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "mls1",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（莫阿姆）"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "SPLK"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "万能枷锁"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习万能镣铐 - [|cffffcc00%d 级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以魔法束缚一名敌方单位，使其无法移动或攻击，并每秒受到伤害。|n|n|cffffcc001 级|r - 每秒<A0XU,DataA1>点伤害，持续<A0XU,Dur1>秒（英雄为<A0XU,HeroDur1,.>秒）。|n|cffffcc002 级|r - 每秒<A0XU,DataA2>点伤害，持续<A0XU,Dur2>秒（英雄为<A0XU,HeroDur2,.>秒）。|n|cffffcc003 级|r - 每秒<A0XU,DataA3>点伤害，持续<A0XU,Dur3>秒（英雄为<A0XU,HeroDur3,.>秒）。|n|cffffcc004 级|r - 每秒<A0XU,DataA4>点伤害，持续<A0XU,Dur4>秒（英雄为<A0XU,HeroDur4,.>秒）。\n"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "万能枷锁 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以魔法束缚一名敌方单位，使其无法移动或攻击，并每秒受到<A0XU,DataA1>点伤害。|n对单位持续<A0XU,Dur1>秒，对英雄持续<A0XU,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以魔法束缚一名敌方单位，使其无法移动或攻击，并每秒受到<A0XU,DataA1>点伤害。|n对单位持续<A0XU,Dur1>秒，对英雄持续<A0XU,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以魔法束缚一名敌方单位，使其无法移动或攻击，并每秒受到<A0XU,DataA1>点伤害。|n对单位持续<A0XU,Dur1>秒，对英雄持续<A0XU,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以魔法束缚一名敌方单位，使其无法移动或攻击，并每秒受到<A0XU,DataA1>点伤害。|n对单位持续<A0XU,Dur1>秒，对英雄持续<A0XU,HeroDur1,.>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "万能枷锁 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "万能枷锁 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "万能枷锁 - [|cffffcc004级|r]"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    }
+  ],
+  "NewId": "A0XU"
+}

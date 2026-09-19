@@ -1,0 +1,36 @@
+{
+  "OldId": "cnhn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n提高生命值与生命恢复速度。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "这是暗夜精灵的远古圣物，据说能召唤所有暗夜精灵的灵魂。它能赋予英雄<AIl1,DataA1>点生命值和每秒<Arel,DataA1>点的生命恢复速度。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "塞纳留斯之角"
+    }
+  ]
+}

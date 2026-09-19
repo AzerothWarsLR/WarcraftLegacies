@@ -1,0 +1,71 @@
+{
+  "OldId": "nfsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 23
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 29
+    },
+    {
+      "Id": "uhpm",
+      "Value": 650
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通治疗魔法的高阶祭司。投掷火焰弹。可施放驱散魔法与心灵之火。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "森林巨魔高阶祭司"
+    }
+  ]
+}

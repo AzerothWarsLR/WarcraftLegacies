@@ -1,0 +1,64 @@
+{
+  "OldId": "osw3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACct"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "霜狼 - 萨尔）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "萨尔所化、代表部落的野性化身。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练影狼"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "影狼"
+    }
+  ]
+}

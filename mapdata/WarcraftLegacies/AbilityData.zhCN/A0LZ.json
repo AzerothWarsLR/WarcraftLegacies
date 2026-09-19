@@ -1,0 +1,48 @@
+{
+  "OldId": "Alit",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Lit1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Lit2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（潮汐巨蛇）"
+    },
+    {
+      "Id": "alig",
+      "Type": 3,
+      "Value": "LEAS"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电攻击"
+    }
+  ],
+  "NewId": "A0LZ"
+}

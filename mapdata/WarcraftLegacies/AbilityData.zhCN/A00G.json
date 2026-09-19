@@ -1,0 +1,19 @@
+{
+  "OldId": "AId7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "圣洁之光增益"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（圣骑士）"
+    }
+  ],
+  "NewId": "A00G"
+}

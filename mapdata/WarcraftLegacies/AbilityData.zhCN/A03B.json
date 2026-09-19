@@ -1,0 +1,223 @@
+{
+  "OldId": "AOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B08K"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.03
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.06
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.09
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": -0.12
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": -0.05
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": -0.1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": -0.15
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,mechanical,neutral,organic"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASCenariusHand.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "自然光环"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCenariusHand.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习自然光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "降低周围敌方单位的移动速度和攻击速度。|n|n|cffffcc001级|r - 使敌方移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。|n|cffffcc002级|r - 使敌方移动速度降低<A03B,DataA2,%>%，攻击速度降低<A03B,DataB2,%>%。|n|cffffcc003级|r - 使敌方移动速度降低<A03B,DataA3,%>%，攻击速度降低<A03B,DataB3,%>%。|n|cffffcc004级|r - 使敌方移动速度降低<A03B,DataA4,%>%，攻击速度降低<A03B,DataB4,%>%。\n"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+    }
+  ],
+  "NewId": "A03B"
+}

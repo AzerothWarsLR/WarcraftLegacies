@@ -1,0 +1,196 @@
+{
+  "OldId": "odkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A135,A133,ACrk,Aion,A0UQ"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 25
+    },
+    {
+      "Id": "uhpm",
+      "Value": 900
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 750
+    },
+    {
+      "Id": "umpm",
+      "Value": 750
+    },
+    {
+      "Id": "upri",
+      "Value": 15
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R09L,Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A135"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R07U"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 7
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNWorgen-Werewolf.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-witchdoctor.blp"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Wolf Companion,- Wolf Companion|n- Curse of the Worgen,- Wolf Companion|n- Curse of the Worgen|n- Bloodlust"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\WorgenDruid3.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狼人萨满祭司"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狼人萨满祭司"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "效力于吉尔尼斯的强大狼人萨满祭司。"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroFarSeer"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    }
+  ],
+  "NewId": "o06P"
+}

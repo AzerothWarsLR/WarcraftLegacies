@@ -1,0 +1,205 @@
+{
+  "OldId": "ANsg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nAT1"
+    },
+    {
+      "Level": 2,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nAT2"
+    },
+    {
+      "Level": 3,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "nAt3"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNto"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNto"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BNto"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 105
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "龙卷风"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤巨熊 - [|cffffcc00%d级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一头强大的巨熊为你而战。|n持续<ANsg,Dur1>秒。|n|n|cffffcc001级|r - <ngz1,realHP>点生命值，<ngz1,mindmg1>-<ngz1,maxdmg1>点攻击力。|n|cffffcc002级|r - <ngz2,realHP>点生命值，<ngz2,mindmg1>-<ngz2,maxdmg1>点攻击力，具有猛击技能。|n|cffffcc003级|r - <ngz3,realHP>点生命值，<ngz3,mindmg1>-<ngz3,maxdmg1>点攻击力，具有猛击和闪现技能。\n"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTornado.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTornado.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥拉基尔）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤龙卷风 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤龙卷风 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤龙卷风 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A02S,DataA1>点伤害。|n持续<ANsg,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A02S,DataA1>点伤害。|n持续<ANsg,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A02S,DataA1>点伤害。|n持续<ANsg,Dur1>秒。"
+    }
+  ]
+}

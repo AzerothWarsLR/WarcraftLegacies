@@ -1,0 +1,24 @@
+{
+  "OldId": "BEme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "怨灵形态"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "将梅瑞迪斯转化为拥有高护甲的强大怨灵。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    }
+  ],
+  "NewId": "B04B"
+}

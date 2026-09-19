@@ -1,0 +1,49 @@
+{
+  "OldId": "will",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 45
+    },
+    {
+      "Id": "iper",
+      "Value": 0
+    },
+    {
+      "Id": "iuse",
+      "Value": 0
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "制造一个单位的幻影复制体。"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "使用后创造一个目标单位的幻象复制品。幻象复制品无法对敌方单位造成伤害，并会从敌人的攻击中承受<AIil,DataB1>倍的伤害。幻象复制品会在<AIil,Dur1>秒后或在生命值归零时消失。|n可使用<will,uses>次。"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "幻象魔杖"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "OldId": "njg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 24
+    },
+    {
+      "Id": "uhpm",
+      "Value": 525
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "丛林捕猎者"
+    }
+  ]
+}

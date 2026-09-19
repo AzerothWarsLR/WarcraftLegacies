@@ -1,0 +1,43 @@
+{
+  "OldId": "nitw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACct,ACat"
+    },
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有强击光环的重型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "冰巨魔督军"
+    }
+  ]
+}

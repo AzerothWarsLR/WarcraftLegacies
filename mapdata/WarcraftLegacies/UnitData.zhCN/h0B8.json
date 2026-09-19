@@ -1,0 +1,284 @@
+{
+  "OldId": "hbsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 15
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "fort"
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ugol",
+      "Value": 50
+    },
+    {
+      "Id": "ugor",
+      "Value": 50
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua1r",
+      "Value": 1150
+    },
+    {
+      "Id": "umvs",
+      "Value": 240
+    },
+    {
+      "Id": "ua1p",
+      "Type": 3,
+      "Value": "debris,enemies,ground,neutral,structure,tree,wall"
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "usrg",
+      "Value": 90
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00C,R006"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R04R"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1200
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 4.2
+    },
+    {
+      "Id": "ua1z",
+      "Value": 700
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "uamn",
+      "Value": 350
+    },
+    {
+      "Id": "ua1b",
+      "Value": 71
+    },
+    {
+      "Id": "ua1q",
+      "Value": 200
+    },
+    {
+      "Id": "usin",
+      "Value": 900
+    },
+    {
+      "Id": "usid",
+      "Value": 1000
+    },
+    {
+      "Id": "ua1s",
+      "Value": 6
+    },
+    {
+      "Id": "ua2p",
+      "Type": 3,
+      "Value": "debris,enemies,ground,neutral,structure,tree,wall"
+    },
+    {
+      "Id": "ua2g",
+      "Type": 3,
+      "Value": "sapper"
+    },
+    {
+      "Id": "ubs2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "udp2",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Id": "ua2f",
+      "Value": 50
+    },
+    {
+      "Id": "ua2h",
+      "Value": 150
+    },
+    {
+      "Id": "ua2q",
+      "Value": 200
+    },
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "siege"
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 4.2
+    },
+    {
+      "Id": "ua2b",
+      "Value": 130
+    },
+    {
+      "Id": "ua2d",
+      "Value": 4
+    },
+    {
+      "Id": "ua2s",
+      "Value": 15
+    },
+    {
+      "Id": "uhd2",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "uqd2",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ua2z",
+      "Value": 700
+    },
+    {
+      "Id": "ua2r",
+      "Value": 1150
+    },
+    {
+      "Id": "urb2",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "artillery"
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暗夜精灵）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "C"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "炮舰"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造炮舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远程攻城重型船只。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ubpy",
+      "Value": 2
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBombardShip2.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_NightElfBombard.mdl"
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdl"
+    }
+  ],
+  "NewId": "h0B8"
+}

@@ -1,0 +1,122 @@
+{
+  "OldId": "hprt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A012,Awrp,Avul"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "Awrp"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "uhom",
+      "Value": 1
+    },
+    {
+      "Id": "uhpm",
+      "Value": 15000
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "usid",
+      "Value": 800
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "Mechanical,neutral,standon"
+    },
+    {
+      "Id": "uspe",
+      "Value": 0
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ubdg",
+      "Value": 1
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unamph"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（传送门）"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_Gateway_White.mdl"
+    },
+    {
+      "Id": "uimz",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ulpz",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umxp",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "umxr",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "入口"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Waygate"
+    },
+    {
+      "Id": "uuch",
+      "Value": 1
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.5
+    }
+  ],
+  "NewId": "h03V"
+}

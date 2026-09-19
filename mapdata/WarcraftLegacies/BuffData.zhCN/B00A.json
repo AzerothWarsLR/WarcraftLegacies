@@ -1,0 +1,29 @@
+{
+  "OldId": "Binf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "石甲术"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有岩石护甲，护甲提高。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskinOn.blp"
+    }
+  ],
+  "NewId": "B00A"
+}

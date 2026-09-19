@@ -1,0 +1,127 @@
+{
+  "OldId": "Uanb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.3
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,AUim,AUts,AUcb,AUls"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 19
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.75
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 28
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R01D"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾卓-尼鲁布国王"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长召唤昆虫爪牙并碾压敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿努巴拉克"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNanubarakhd.blp"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "阿努巴拉克"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "OldId": "ACcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,neutral,nonancient,organic,structure"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色皇家卫队）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力寒冰箭"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷一支魔法冰晶，造成 70 点伤害并使目标昏迷 4 秒。（对英雄为 1 秒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强力寒冰箭"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "OldId": "Arpl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Rpb6",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rej1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Rpb5",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 黑曜石雕像）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荒芜精华(|cffffcc00Q|r)"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为大量附近友方单位恢复<Arpl,DataA1>点生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荒芜精华"
+    }
+  ]
+}

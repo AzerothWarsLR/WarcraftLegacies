@@ -1,0 +1,83 @@
+{
+  "OldId": "hwat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": "umvs",
+      "Value": 200
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R020,Rhme,Rhar"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A138"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A138"
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然 - 水术师召唤）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练水元素"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水元素"
+    }
+  ],
+  "NewId": "h00U"
+}

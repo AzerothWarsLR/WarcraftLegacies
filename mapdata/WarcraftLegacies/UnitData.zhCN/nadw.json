@@ -1,0 +1,73 @@
+{
+  "OldId": "nadw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R00N,Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 980
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0LI,A0LS,Afrc,A07C"
+    },
+    {
+      "Id": "ua2b",
+      "Value": 30
+    },
+    {
+      "Id": "ua1b",
+      "Value": 45
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "微型远程飞行单位，造成冰霜伤害并减缓敌方单位。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蓝色雏龙"
+    }
+  ]
+}

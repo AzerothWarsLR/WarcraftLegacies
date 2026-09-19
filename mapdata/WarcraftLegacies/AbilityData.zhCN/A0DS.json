@@ -1,0 +1,102 @@
+{
+  "OldId": "AOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oae2",
+      "Type": 2,
+      "Value": 0.6
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "h02W"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oae1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B011"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（假单位）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尚武精神"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高 60%，攻击速度提高 30%。"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Spells\\Orc\\Bloodlust\\BloodlustSpecial.mdl"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": "atac",
+      "Value": 2
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": "ata1",
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "尚武精神"
+    }
+  ],
+  "NewId": "A0DS"
+}

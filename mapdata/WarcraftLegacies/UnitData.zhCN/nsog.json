@@ -1,0 +1,22 @@
+{
+  "OldId": "nsog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ugol",
+      "Value": 333
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "骷髅兽人步兵"
+    }
+  ]
+}

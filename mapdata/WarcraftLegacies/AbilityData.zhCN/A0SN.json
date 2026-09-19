@@ -1,0 +1,88 @@
+{
+  "OldId": "Aam2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bam2,Bams"
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ams3",
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ams3",
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,self,vulnerable"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RBEF"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（尤格-萨隆）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化反魔法护罩"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "创造一道屏障，使目标单位免受 800 点法术伤害。|n持续<Aam2,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反魔法护罩"
+    }
+  ],
+  "NewId": "A0SN"
+}

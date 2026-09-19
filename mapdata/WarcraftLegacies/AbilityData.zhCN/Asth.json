@@ -1,0 +1,27 @@
+{
+  "OldId": "Asth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡兹莫丹 - 狮鹫骑士）"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNStormHammer.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴战锤"
+    }
+  ]
+}

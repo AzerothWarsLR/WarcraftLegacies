@@ -1,0 +1,165 @@
+{
+  "OldId": "AOsw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 105
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hwe2",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "o04T"
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（赞达拉）"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤无法移动的毒蛇结界攻击施法者的敌人。这些守卫对魔法免疫。 |n持续<Arsw,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r |n|n|cffffcc001级|r - <Arsw,DataA1>个守卫，<osp1,realHP>点生命值，<osp1,mindmg1> - <osp1,maxdmg1>点攻击力。 |n|cffffcc002级|r - <Arsw,DataA2>个守卫，<osp2,realHP>点生命值，<osp2,mindmg1> - <osp2,maxdmg1>点攻击力。 |n|cffffcc003级|r - <Arsw,DataA3>个守卫，<osp3,realHP>点生命值，<osp3,mindmg1> - <osp3,maxdmg1>点攻击力。 |n|cffffcc004级|r - <Arsw,DataA4>个守卫，<osp4,realHP>点生命值，<osp4,mindmg1> - <osp4,maxdmg1>点攻击力。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 1 个无法移动的图腾攻击你的敌人。该守卫拥有 1400 点生命值，造成 61-63 点伤害，并具有弹射攻击技能。 |n持续 30 秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 1 个无法移动的图腾攻击你的敌人。该守卫拥有 1400 点生命值，造成 61-63 点伤害，并具有弹射攻击技能。 |n持续 30 秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 1 个无法移动的图腾攻击你的敌人。该守卫拥有 1400 点生命值，造成 61-63 点伤害，并具有弹射攻击技能。 |n持续 30 秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 1 个无法移动的图腾攻击你的敌人。该守卫拥有 1400 点生命值，造成 61-63 点伤害，并具有弹射攻击技能。 |n持续 30 秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "白骨图腾"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBigBadTotem.blp"
+    }
+  ],
+  "NewId": "A0OQ"
+}

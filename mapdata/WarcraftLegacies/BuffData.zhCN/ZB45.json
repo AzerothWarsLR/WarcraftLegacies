@@ -1,0 +1,24 @@
+{
+  "OldId": "Brej",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "激活"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有激活，生命值和法力值持续恢复。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
+    }
+  ],
+  "NewId": "ZB45"
+}

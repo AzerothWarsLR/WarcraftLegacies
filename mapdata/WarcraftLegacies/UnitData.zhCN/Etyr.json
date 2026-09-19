@@ -1,0 +1,169 @@
+{
+  "OldId": "Etyr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A053,AInv,Ault,S003"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A0DP,Aamk,A01D,AEar,AEsf"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 27
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.9
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua1r",
+      "Value": 750
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R002,R007"
+    },
+    {
+      "Id": "utco",
+      "Value": 2
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.15
+    },
+    {
+      "Id": "ustr",
+      "Value": 22
+    },
+    {
+      "Id": "uagi",
+      "Value": 25
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R03N"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大祭司"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾露恩的大祭司"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大祭司"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长强化你的后排并持续造成魔法伤害。"
+    },
+    {
+      "Id": "utcc",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TyrandeWhisperwind.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤泰兰德"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "泰兰德·语风"
+    }
+  ]
+}

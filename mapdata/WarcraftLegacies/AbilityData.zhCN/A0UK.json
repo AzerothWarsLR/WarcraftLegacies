@@ -1,0 +1,289 @@
+{
+  "OldId": "AUim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06K"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06K"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B06K"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uim1",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Uim1",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Uim1",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Uim2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Uim2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Uim2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Uim3",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Uim3",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Uim3",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Uim4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Uim4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Uim4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "amho",
+      "Value": 1
+    },
+    {
+      "Id": "amsp",
+      "Value": 1000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 麦迪文）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\ManaBurn\\ManaBurnTarget.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪能裂隙"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习邪能裂隙 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "释放一道邪能波，对一条直线上的单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <A0UK,DataC1>点伤害，昏迷<A0UK,Dur1>秒。 |n|cffffcc002级|r - <A0UK,DataC2>点伤害，昏迷<A0UK,Dur2>秒。 |n|cffffcc003级|r - <A0UK,DataC3>点伤害，昏迷<A0UK,Dur3>秒。\n"
+    },
+    {
+      "Id": "asat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Demon\\DarkConversion\\ZombifyTarget.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能裂隙 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能裂隙 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能裂隙 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC1>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur1>秒，昏迷英雄<A0UK,HeroDur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC1>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur1>秒，昏迷英雄<A0UK,HeroDur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC1>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur1>秒，昏迷英雄<A0UK,HeroDur1>秒。"
+    }
+  ],
+  "NewId": "A0UK"
+}

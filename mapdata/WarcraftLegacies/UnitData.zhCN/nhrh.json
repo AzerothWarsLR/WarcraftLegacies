@@ -1,0 +1,34 @@
+{
+  "OldId": "nhrh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 37
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的中型飞行远程单位。可诅咒敌人并施放睡眠。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鹰身人风暴巫婆"
+    }
+  ]
+}

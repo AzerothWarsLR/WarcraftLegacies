@@ -1,0 +1,125 @@
+{
+  "OldId": "AEmb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 360
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Emb1",
+      "Type": 2,
+      "Value": 420
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 / 浅蓝色 - 伊利丹）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "发射一道负能量波来燃烧目标敌方单位的法力，并对目标造成等同于所燃烧法力值的伤害。|n|n|cffffcc001级|r - 最多燃烧<AEmb,DataA1>点法力值。|n|cffffcc002级|r - 最多燃烧<AEmb,DataA2>点法力值。|n|cffffcc003级|r - 最多燃烧<AEmb,DataA3>点法力值。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法力燃烧 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "放出一道负能量箭矢，燃烧一个目标敌方单位至多<AEmb,DataA4>点魔法值。这些魔法值将会爆炸，造成等同于所燃烧魔法值的伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力燃烧"
+    }
+  ]
+}

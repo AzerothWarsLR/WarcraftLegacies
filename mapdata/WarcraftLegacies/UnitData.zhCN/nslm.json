@@ -1,0 +1,22 @@
+{
+  "OldId": "nslm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可使敌人减速的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "淤泥怪奴仆"
+    }
+  ]
+}

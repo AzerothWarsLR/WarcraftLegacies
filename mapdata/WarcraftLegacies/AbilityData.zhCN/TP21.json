@@ -1,0 +1,37 @@
+{
+  "OldId": "Aasl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP23"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（荆棘藤蔓）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速光环"
+    }
+  ],
+  "NewId": "TP21"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "YTpc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "大型路径阻挡物"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Default.tga"
+    }
+  ],
+  "NewId": "B009"
+}

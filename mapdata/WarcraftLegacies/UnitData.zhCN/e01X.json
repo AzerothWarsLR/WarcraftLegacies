@@ -1,0 +1,291 @@
+{
+  "OldId": "etol",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 180
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 38
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1b",
+      "Value": 0
+    },
+    {
+      "Id": "ua2b",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 400
+    },
+    {
+      "Id": "ugor",
+      "Value": 400
+    },
+    {
+      "Id": "uhpm",
+      "Value": 8000
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\12x12Default.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unamph"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "ua2r",
+      "Value": 200
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 180
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1s",
+      "Value": 0
+    },
+    {
+      "Id": "ua2s",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "ancient,mechanical,sapper,townhall"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rgfo"
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h09R,o05A"
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1050
+    },
+    {
+      "Id": "umh1",
+      "Value": 1
+    },
+    {
+      "Id": "uwu1",
+      "Value": 1
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uarm",
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 0
+    },
+    {
+      "Id": "ua2d",
+      "Value": 0
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "umvr",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼飞船）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造生命之树"
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑，用于训练工人和采集资源。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "埃索达皇家号"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_Exodar.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ChimaeraRoost"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp"
+    },
+    {
+      "Id": "uept",
+      "Value": 0
+    },
+    {
+      "Id": "uerd",
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratMissile\\ZigguratMissile.mdl"
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowNecropolis"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 10
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": "alternate"
+    }
+  ],
+  "NewId": "e01X"
+}

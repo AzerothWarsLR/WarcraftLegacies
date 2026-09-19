@@ -1,0 +1,184 @@
+{
+  "OldId": "Uwar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0A0,ACm2,AInv"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "ua1b",
+      "Value": 34
+    },
+    {
+      "Id": "ua1f",
+      "Value": 35
+    },
+    {
+      "Id": "ua1h",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A0EN,ANrc,A00X,A06X"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 2100
+    },
+    {
+      "Id": "uint",
+      "Value": 29
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3.25
+    },
+    {
+      "Id": "umpi",
+      "Value": 250
+    },
+    {
+      "Id": "umpm",
+      "Value": 250
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "ua1q",
+      "Value": 200
+    },
+    {
+      "Id": "ua1r",
+      "Value": 700
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 32
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.25
+    },
+    {
+      "Id": "utco",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R061"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uagi",
+      "Value": 27
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活污染者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "污染者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活污染者"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Archimonde.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿克蒙德"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "阿克蒙德"
+    }
+  ]
+}

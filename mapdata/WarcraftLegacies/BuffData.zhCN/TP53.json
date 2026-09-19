@@ -1,0 +1,44 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000雷霆轰鸣|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到雷霆炸裂的打击，移动速度、攻击速度和护甲降低。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "雷霆爆裂"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHeroThunderclap.blp"
+    }
+  ],
+  "NewId": "TP53"
+}

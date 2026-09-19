@@ -1,0 +1,68 @@
+{
+  "OldId": "ucs2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GY,A0KF"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ua1b",
+      "Value": 18
+    },
+    {
+      "Id": "uhpm",
+      "Value": 950
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R008,Rhar,Rhme,Rguv"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（红色 - 阿努巴拉克）（等级 2）"
+    },
+    {
+      "Id": "uclg",
+      "Value": 150
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "uclr",
+      "Value": 150
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练腐尸甲虫"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐尸甲虫"
+    }
+  ]
+}

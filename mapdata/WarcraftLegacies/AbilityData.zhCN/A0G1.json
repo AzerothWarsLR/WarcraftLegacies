@@ -1,0 +1,47 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "War1",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNSeaGiantPulverize.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 海巨人）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<A0G1,DataA1>%的几率对周围的单位造成<A0G1,DataB1>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎"
+    }
+  ],
+  "NewId": "A0G1"
+}

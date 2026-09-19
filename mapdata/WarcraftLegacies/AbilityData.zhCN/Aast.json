@@ -1,0 +1,53 @@
+{
+  "OldId": "Aast",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "ast1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 灵魂行者）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "复活一名阵亡的非英雄牛头人。拥有其总生命值的 70%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "先祖之魂"
+    }
+  ]
+}

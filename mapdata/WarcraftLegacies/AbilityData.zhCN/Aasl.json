@@ -1,0 +1,19 @@
+{
+  "OldId": "Aasl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 725
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速光环"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "OldId": "AHab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.1
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hab1",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（祖鲁赫德 - 吉安娜 - 玛法里奥 - 沃金 - 杰尔戈什）"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使附近友方单位获得额外的魔法值恢复速度。|n|n|cffffcc00等级 1|r - 每秒提供 0.8 点。|n|cffffcc00等级 2|r - 每秒提供 1.10 点魔法值。 |n|cffffcc00等级 3|r - 每秒提供 1.40 点魔法值。 |n|cffffcc00等级 4|r - 每秒提供 1.70 点魔法值。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "辉煌光环 - [|cffffcc00等级 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为附近单位每秒额外提供 0.8 点魔法值恢复速度。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为附近单位每秒额外提供 0.8 点魔法值恢复速度。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为附近单位每秒额外提供 0.8 点魔法值恢复速度。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为附近单位每秒额外提供 0.8 点魔法值恢复速度。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "辉煌光环"
+    }
+  ]
+}

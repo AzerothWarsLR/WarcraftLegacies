@@ -1,0 +1,48 @@
+{
+  "OldId": "LTrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bhps",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "bmas",
+      "Type": 2,
+      "Value": 1.2
+    },
+    {
+      "Id": "bmis",
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "(Tree Blockade)"
+    },
+    {
+      "Id": "bfil",
+      "Type": 3,
+      "Value": "war3mapImported\\Forest_Ashenvale.mdl"
+    },
+    {
+      "Id": "bvar",
+      "Value": 1
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "灰谷阻挡物"
+    },
+    {
+      "Id": "bptx",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    }
+  ],
+  "NewId": "B008"
+}

@@ -1,0 +1,79 @@
+{
+  "OldId": "ACfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ufn2",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ufn1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ufn5",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（潮汐领主）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一记冰霜冲击轰击敌方单位，对目标造成<AEFN,DataB1>点伤害，并造成<AEFN,DataA1>点新星伤害。冰霜伤害会降低单位的移动速度与攻击速度，持续<AEFN,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜新星"
+    }
+  ],
+  "NewId": "AEFN"
+}

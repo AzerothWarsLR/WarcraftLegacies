@@ -1,0 +1,35 @@
+{
+  "OldId": "Afla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1550
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡兹莫丹 - 迫击炮小队）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "朝目标点发射一枚矮人照明弹，在<Afla,Dur1>秒内暴露该区域。|n暴露隐形单位。|n|n|cffffcc00120 秒冷却时间。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "照明弹"
+    }
+  ]
+}

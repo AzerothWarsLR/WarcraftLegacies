@@ -1,0 +1,124 @@
+{
+  "OldId": "AEev",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使该英雄每次施放法术后都会召唤黑暗爪牙。这些爪牙持续 45 秒。|n|n|cffffcc00级别 1|r - 召唤 1 个爪牙。|n|cffffcc00级别 2|r - 召唤 2 个爪牙。|n|cffffcc00级别 3|r - 召唤 3 个爪牙。|n|cffffcc00级别 4|r - 召唤 4 个爪牙。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者大军 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNWC1RaiseDeadRemastered.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWC1RaiseDeadRemastered.blp"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习亡者大军 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者大军 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者大军 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "亡者大军 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄每次施放法术时召唤 1 个黑暗仆从。该仆从持续 45 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄每次施放法术时召唤 1 个黑暗仆从。该仆从持续 45 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄每次施放法术时召唤 1 个黑暗仆从。该仆从持续 45 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "亡者大军"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄每次施放法术时召唤 1 个黑暗仆从。该仆从持续 45 秒。"
+    }
+  ],
+  "NewId": "ST52"
+}

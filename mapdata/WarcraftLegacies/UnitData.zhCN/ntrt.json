@@ -1,0 +1,74 @@
+{
+  "OldId": "ntrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.35
+    },
+    {
+      "Id": "udef",
+      "Value": 7
+    },
+    {
+      "Id": "ua1b",
+      "Value": 35
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "uhpm",
+      "Value": 850
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤巨型海龟 |cffffcc00F|r"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型远程两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巨型海龟"
+    }
+  ]
+}

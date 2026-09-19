@@ -1,0 +1,74 @@
+{
+  "OldId": "nsbm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACvs,A07A,Aspd"
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 60
+    },
+    {
+      "Id": "ugor",
+      "Value": 30
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usrg",
+      "Value": 150
+    },
+    {
+      "Id": "usst",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1000
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人中毒并携带幼蛛参战的重型近战单位。可施放诱捕。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虫母"
+    }
+  ]
+}

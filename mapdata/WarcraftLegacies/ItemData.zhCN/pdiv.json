@@ -1,0 +1,45 @@
+{
+  "OldId": "pdiv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 25
+    },
+    {
+      "Id": "ista",
+      "Value": 5
+    },
+    {
+      "Id": "istr",
+      "Value": 240
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Purchasable"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买神圣药水"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "使英雄获得一道圣盾，使其在<AIdv,Dur1>秒内对所有攻击和法术免疫。"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "神圣佳酿"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BUim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "昏迷"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位已被击晕，无法移动、攻击或施法。"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStun.blp"
+    },
+    {
+      "Id": "feat",
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl"
+    }
+  ],
+  "NewId": "B04H"
+}

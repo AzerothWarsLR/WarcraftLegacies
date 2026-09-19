@@ -1,0 +1,49 @@
+{
+  "OldId": "Ahri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（巨魔图标）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生成图腾"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "生成图腾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "死亡时，骨卜者会在其尸体所在的位置生成一个永久图腾"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASPortal2.blp"
+    }
+  ],
+  "NewId": "A0OU"
+}

@@ -1,0 +1,30 @@
+{
+  "OldId": "ncks",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷火焰弹的中型远程单位。施放驱散魔法与嗜血。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "半人马巫师"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "OldId": "AHtb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Htb1",
+      "Type": 2,
+      "Value": 375
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 7
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦格尼）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Hammer Missile.mdx"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "向敌方单位投掷一把魔法战锤，造成伤害并使其昏迷。 |n|n|cffffcc001级|r - 造成<AHtb,DataA1>点伤害，昏迷<AHtb,Dur1>秒。对英雄持续 1 秒。|n|cffffcc002级|r - 造成<AHtb,DataA2>点伤害，昏迷<AHtb,Dur2>秒。对英雄持续 1.5 秒。|n|cffffcc003级|r - 造成<AHtb,DataA3>点伤害，昏迷<AHtb,Dur3>秒。对英雄持续 2 秒。|n|cffffcc004级|r - 造成<AHtb,DataA4>点伤害，昏迷<AHtb,Dur4>秒。对英雄持续 2.5 秒。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴之锤 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把魔法战锤，造成<AHtb,DataA1>点伤害并使其昏迷<AHtb,Dur1>秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把魔法战锤，造成<AHtb,DataA1>点伤害并使其昏迷<AHtb,Dur1>秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把魔法战锤，造成<AHtb,DataA1>点伤害并使其昏迷<AHtb,Dur1>秒。对英雄持续 1 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把魔法战锤，造成<AHtb,DataA1>点伤害并使其昏迷<AHtb,Dur1>秒。对英雄持续 1 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴之锤"
+    }
+  ]
+}

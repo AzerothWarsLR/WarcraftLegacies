@@ -1,0 +1,41 @@
+{
+  "OldId": "AChw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R02V"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暗影施法者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗结界"
+    }
+  ]
+}

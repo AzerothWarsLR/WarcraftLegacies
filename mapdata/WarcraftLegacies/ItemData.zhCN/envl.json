@@ -1,0 +1,27 @@
+{
+  "OldId": "envl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "igol",
+      "Value": 180
+    },
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIp6"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "在<AIp3,Dur1>秒内恢复<AIp3,DataA1>点生命值和<AIp3,DataB1>点法力值。|n可使用<envl,uses>次。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "附魔小瓶"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": "Aap2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,neutral,organic"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Apl1",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（瘟疫结界 2 级）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾病之云"
+    }
+  ],
+  "NewId": "A09A"
+}

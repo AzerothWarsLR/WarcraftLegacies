@@ -1,0 +1,70 @@
+{
+  "OldId": "nftb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ACev,Absk"
+    },
+    {
+      "Id": "usle",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 23
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "udup",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "uhpm",
+      "Value": 835
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2.1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "狂乱的掷斧者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "森林巨魔狂战士"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "OldId": "Ahan",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASScarabClamp.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "增殖腺体"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "增殖腺体"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该异种死亡时会生成 3 只虫群甲虫。它们持续 15 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（图标 - 3）"
+    }
+  ],
+  "NewId": "YTL2"
+}

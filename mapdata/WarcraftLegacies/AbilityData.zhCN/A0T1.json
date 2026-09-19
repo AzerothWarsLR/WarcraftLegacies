@@ -1,0 +1,61 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R040"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（主教）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使血色主教在死亡时变为暗影执政官，使其能够继续战斗 30 秒。暗影执政官拥有强大的混乱攻击，但没有技能。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暗影执政官"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影执政官"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASVampire.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    }
+  ],
+  "NewId": "A0T1"
+}

@@ -1,0 +1,56 @@
+{
+  "OldId": "ssil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "YBRO,AIi4,AIs4"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "AIrr"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTheDoomhammer.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高力量和智力。可用于施放咆哮。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "阻止目标区域内的所有敌人施放法术，持续<AIse,Dur1>秒。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "毁灭之锤"
+    }
+  ],
+  "NewId": "I004"
+}

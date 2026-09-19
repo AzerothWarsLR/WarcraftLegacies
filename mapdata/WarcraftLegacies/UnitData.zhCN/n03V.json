@@ -1,0 +1,57 @@
+{
+  "OldId": "nrel",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhpm",
+      "Value": 630
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R001,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 潮汐贤者）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海元素"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练海元素"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位。"
+    }
+  ],
+  "NewId": "n03V"
+}

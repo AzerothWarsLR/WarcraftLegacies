@@ -1,0 +1,66 @@
+{
+  "OldId": "ACmp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Uim1",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Uim4",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（异种巨像）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，沿直线释放一道冲击波，造成 50 点伤害，并将单位击晕 2 秒（英雄为 0.5 秒）。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "穿刺"
+    }
+  ]
+}

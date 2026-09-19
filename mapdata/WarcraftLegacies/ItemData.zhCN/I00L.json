@@ -1,0 +1,65 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0N9,AIx5"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A0N9"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提供坚韧光环，并提高力量、敏捷与智力。可施放群体加速。"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShamanTotem.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血蹄图腾"
+    }
+  ],
+  "NewId": "I00L"
+}

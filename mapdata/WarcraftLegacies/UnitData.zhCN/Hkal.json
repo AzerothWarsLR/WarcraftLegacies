@@ -1,0 +1,157 @@
+{
+  "OldId": "Hkal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A04H,A0FD,A0WH,A0FA"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua2r",
+      "Value": 600
+    },
+    {
+      "Id": "uwu2",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "uint",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A12Q,AInv,Asph"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活奎尔萨拉斯王子"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SerpentWardMissile\\SerpentWardMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奎尔萨拉斯王子"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活奎尔萨拉斯王子"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤凯尔萨斯·逐日者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长造成魔法伤害。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "凯尔萨斯·逐日者"
+    }
+  ]
+}

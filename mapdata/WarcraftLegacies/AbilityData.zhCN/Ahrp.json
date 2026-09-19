@@ -1,0 +1,37 @@
+{
+  "OldId": "Ahrp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Rep5",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,alive,ancient,bridge,dead,friend,ground,invulnerable,mechanical,nonancient,self,structure,vulnerable"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（工人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "修理"
+    }
+  ]
+}

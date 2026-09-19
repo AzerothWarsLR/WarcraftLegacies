@@ -1,0 +1,174 @@
+{
+  "OldId": "AEsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 260
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 250
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Esf1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Esf2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Esf2",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Esf3",
+      "Type": 2,
+      "Value": 0.35
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛瑟玛）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血精灵之怒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血精灵之怒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血精灵之怒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波星光从天而降，对周围的敌方单位造成伤害。每波造成<A007,DataA2>点伤害。|n持续<A007,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波星光从天而降，对周围的敌方单位造成伤害。每波造成<A007,DataA2>点伤害。|n持续<A007,Dur2>秒。"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤数波流星从天而降，对周围的敌方单位造成伤害。|n持续 30 秒。|n|n|cffffcc001级|r - 每波造成<AEsf,DataA1>点伤害。|n|cffffcc002级|r - 每波造成<AEsf,DataA2>点伤害。|n|cffffcc003级|r - 每波造成<AEsf,DataA3>点伤害。|n|n持续<AEsf,Dur1>秒。|n\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波星光从天而降，对周围的敌方单位造成伤害。每波造成<A007,DataA2>点伤害。|n持续<A007,Dur2>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "星辰坠落"
+    }
+  ],
+  "NewId": "A007"
+}

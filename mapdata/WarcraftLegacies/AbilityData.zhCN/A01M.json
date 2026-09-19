@@ -1,0 +1,44 @@
+{
+  "OldId": "ANpi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Eim2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground,nonancient,ward"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（射程 1000）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反传送门阻挡（单位）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方单位，每秒造成 5 点伤害并燃烧 1 点魔法值。"
+    }
+  ],
+  "NewId": "A01M"
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BEah",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRetriAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "惩戒光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到惩戒光环的影响，攻击它的近战单位会受到伤害。"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ],
+  "NewId": "B032"
+}

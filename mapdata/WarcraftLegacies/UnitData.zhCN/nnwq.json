@@ -1,0 +1,39 @@
+{
+  "OldId": "nnwq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1100
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有邪恶光环的重型近战单位。施放亡者复生与腐臭蝠群。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蛛魔女王"
+    }
+  ]
+}

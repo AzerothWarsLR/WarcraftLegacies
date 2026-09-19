@@ -1,0 +1,28 @@
+{
+  "OldId": "nvlw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "村民"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "睿智的村民。"
+    }
+  ]
+}

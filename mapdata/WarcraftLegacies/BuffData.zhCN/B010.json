@@ -1,0 +1,19 @@
+{
+  "OldId": "Bprg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（电击之刃）"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位已被净化，所有增益被移除，并在短时间内移动速度降低。"
+    }
+  ],
+  "NewId": "B010"
+}

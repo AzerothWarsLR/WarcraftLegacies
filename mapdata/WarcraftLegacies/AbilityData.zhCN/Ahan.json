@@ -1,0 +1,43 @@
+{
+  "OldId": "Ahan",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "achd",
+      "Value": 0
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASArthasLifeDrain.blp"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "第二条命"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "第二条命"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "维库人因效忠巫妖王而被许诺获得第二条命。|n|n当该单位死亡时，它会以一副强大的永久骷髅的形态重返战场。"
+    }
+  ]
+}

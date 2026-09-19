@@ -1,0 +1,65 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A0JJ,A0F6"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A0JJ"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoTN_Sanctity_Potion.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高智力"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "太阳之井水瓶"
+    }
+  ],
+  "NewId": "I018"
+}

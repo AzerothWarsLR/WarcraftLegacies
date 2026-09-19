@@ -1,0 +1,85 @@
+{
+  "OldId": "ubdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "umvf",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "utco",
+      "Value": 13
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1q",
+      "Value": 0
+    },
+    {
+      "Id": "ua1h",
+      "Value": 0
+    },
+    {
+      "Id": "ua1f",
+      "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A08P"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练萨菲隆"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨菲隆"
+    }
+  ]
+}

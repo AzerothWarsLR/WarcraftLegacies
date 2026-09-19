@@ -1,0 +1,229 @@
+{
+  "OldId": "ANst",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 175
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 225
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "amsp",
+      "Value": 400
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTidalWave.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（托尔托拉、纳兹亚女士、纳迦）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "amat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\CrushingWave\\CrushingWaveMissile.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "潮汐风暴"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTidalWave.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习潮汐风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤滔天巨浪，命中敌人后炸裂。|n持续<A11B,Dur1>秒。|n|n|cffffcc00等级 1|r - 每秒<A11B,DataA1>道巨浪，每道造成<A11B,DataC1>点伤害。 |n|cffffcc00等级 2|r - 每秒<A11B,DataA2>道巨浪，每道造成<A11B,DataC2>点伤害。 |n|cffffcc00等级 3|r - 每秒<A11B,DataA3>道巨浪，每道造成<A11B,DataC3>点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "潮汐风暴 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "潮汐风暴 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "潮汐风暴 - [|cffffcc00等级 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒召唤<A11B,DataA1>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC1>点伤害。|n持续<A11B,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒召唤<A11B,DataA1>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC1>点伤害。|n持续<A11B,Dur1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒召唤<A11B,DataA1>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC1>点伤害。|n持续<A11B,Dur1>秒。"
+    }
+  ],
+  "NewId": "A11B"
+}

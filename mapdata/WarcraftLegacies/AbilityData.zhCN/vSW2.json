@@ -1,0 +1,355 @@
+{
+  "OldId": "ANrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 3500
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 5000
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 7500
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 18
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 22
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Level": 3,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 0.75
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（拉格纳罗斯）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_RainOfFire.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤 2 波迅猛的火焰，对区域内的单位造成伤害。每波火焰都会造成初始伤害，然后灼烧敌人<vSW2,Dur1>秒。 |n|n|cffffcc001级|r - <vSW2,DataB1>点波次伤害，每秒<vSW2f,DataE1>点伤害。 |n|cffffcc002级|r - <vSW2,DataB2>点波次伤害，每秒<vSW2,DataE2>点伤害。 |n|cffffcc003级|r - <vSW2,DataB3>点波次伤害，每秒<vSW2,DataE3>点伤害。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰之雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之雨"
+    }
+  ],
+  "NewId": "vSW2"
+}

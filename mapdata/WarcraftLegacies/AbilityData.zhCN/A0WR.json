@@ -1,0 +1,106 @@
+{
+  "OldId": "Ahwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "o02A"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 80
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 650
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天空之墙）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个附魔守卫，为附近的盟友提供增益，每 1.5 秒使一个友方单位的移动速度提高 10%、攻击速度提高 20%。守卫存在期间，所有元素领主获得 40% 的闪避。守卫自身拥有 30% 的闪避。|n持续 45 秒。|n|n|n|cffffcc00可攻击地面和空中单位。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾风守卫"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "疾风守卫"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": "Wind Blast.mdx"
+    }
+  ],
+  "NewId": "A0WR"
+}

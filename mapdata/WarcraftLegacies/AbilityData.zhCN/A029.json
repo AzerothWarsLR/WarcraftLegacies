@@ -1,0 +1,73 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R00E"
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "h00U"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（水术师）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤水元素"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个水元素，它具有<h00U,realHP>点生命值，造成<h00U,mindmg1>-<h00U,maxdmg1>点伤害，并可学习冰霜射击技能。|n持续<A029,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤水元素"
+    }
+  ],
+  "NewId": "A029"
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|c00FF0000圣洁之光|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位护甲降低。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "圣洁之光"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly_Light.blp"
+    }
+  ],
+  "NewId": "B003"
+}

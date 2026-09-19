@@ -1,0 +1,74 @@
+{
+  "OldId": "ACrj",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Rej1",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RZ02"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 10 秒内为一名友方单位恢复 600 点生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "回春术"
+    }
+  ],
+  "NewId": "A039"
+}

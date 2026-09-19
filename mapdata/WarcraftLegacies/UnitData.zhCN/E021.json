@@ -1,0 +1,174 @@
+{
+  "OldId": "Eevm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0D7,Alit,AInv,Ault"
+    },
+    {
+      "Id": "uagi",
+      "Value": 8
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 60
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A003,ANms,A0X6,A0LP,Aamk"
+    },
+    {
+      "Id": "uint",
+      "Value": 33
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    },
+    {
+      "Id": "ustr",
+      "Value": 16
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.9
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
+    },
+    {
+      "Id": "udef",
+      "Value": 40
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（女妖形态）"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "梅瑞狄斯"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "维克雷斯家族女族长"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MeredithWaycrestUndeadV1.02.mdl"
+    },
+    {
+      "Id": "uaap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uani",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ualp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Banshee"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长在战斗中灵活机动。可学习献祭、闪避、法力燃烧和恶魔变形。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤梅瑞狄斯"
+    }
+  ],
+  "NewId": "E021"
+}

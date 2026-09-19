@@ -1,0 +1,33 @@
+{
+  "OldId": "nrzb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "钢鬃蛮兵"
+    }
+  ]
+}
