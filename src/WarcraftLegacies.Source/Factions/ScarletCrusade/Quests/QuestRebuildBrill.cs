@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -44,5 +45,5 @@ public sealed class QuestRebuildBrill : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Renault gains {ExperienceReward} experience";
+    Loc.Format("Renault gains {xp} experience", ("{xp}", ExperienceReward.ToString()));
 }

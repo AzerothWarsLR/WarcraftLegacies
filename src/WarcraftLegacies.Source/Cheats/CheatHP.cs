@@ -1,4 +1,5 @@
-﻿using MacroTools.Commands;
+﻿using MacroTools.Localization;
+using MacroTools.Commands;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -33,6 +34,6 @@ public sealed class CheatHp : Command
 
       return "Setting hitpoints of selected units to " + parameters[0] + ".";
     }
-    return "Failed setting hitpoints of selected units to " + parameters[0] + "(input was not a number).";
+    return Loc.Format("Failed setting hitpoints of selected units to {value}(input was not a number).", ("{value}", parameters[0]));
   }
 }

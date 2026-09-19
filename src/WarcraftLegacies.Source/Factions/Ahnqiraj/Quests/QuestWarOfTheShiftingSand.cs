@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -16,7 +17,7 @@ public sealed class QuestWarOfTheShiftingSand : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"C'thun gains {SkillPoints} skill points";
+    Loc.Format("{hero} gains {points} skill points", ("{hero}", "C'thun"), ("{points}", SkillPoints.ToString()));
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestWarOfTheShiftingSand"/> class.

@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 
@@ -18,7 +19,8 @@ public sealed class QuestFreshMeat : QuestData
     "My Qiraji have ripped, torn, and consumed scores of fallen prey, satiating their hunger and lifting a bloody haze from my mind.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"C'thun gains {SkillPoints} skill points";
+  protected override string RewardDescription =>
+    Loc.Format("{hero} gains {points} skill points", ("{hero}", "C'thun"), ("{points}", SkillPoints.ToString()));
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestFreshMeat"/> class.

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MacroTools.Localization;
+using System;
 using MacroTools.Extensions;
 using MacroTools.UnitTypes;
 
@@ -29,13 +30,13 @@ public static class UnitExtensions
 
     if (unitType.Categories.Count == 0)
     {
-      throw new InvalidOperationException($"{whichUnit.Name} doesn't have any categories.");
+      throw new InvalidOperationException(Loc.Format("{unit} doesn't have any categories.", ("{unit}", whichUnit.Name)));
     }
 
     var firstCategory = unitType.Categories[0];
     if (!newFaction.TryGetObjectByCategory(firstCategory, out var newUnitTypes))
     {
-      throw new InvalidOperationException($"{whichUnit.Name} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {firstCategory}.");
+      throw new InvalidOperationException(Loc.Format("{unit} can't be replaced because {faction} doesn't have a registered unit type of category {category}.", ("{unit}", whichUnit.Name), ("{faction}", newFaction.Name), ("{category}", firstCategory.ToString())));
     }
 
     var newUnitType = newUnitTypes[0];

@@ -1,6 +1,7 @@
 ﻿using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Testing;
@@ -34,7 +35,7 @@ public static class RuntimeIntegrityChecker
     {
       if (controlPoint.Owner == player.NeutralPassive && !controlPoint.Unit.IsInvulnerable)
       {
-        Logger.LogWarning($"{controlPoint.Name} is owned by Neutral Passive and is not invulnerable.");
+        Logger.LogWarning(Loc.Format("{name} is owned by Neutral Passive and is not invulnerable.", ("{name}", controlPoint.Name)));
       }
     }
   }
@@ -48,11 +49,16 @@ public static class RuntimeIntegrityChecker
         continue;
       }
 
-      var intendedName = $"{faction.Name} exists";
+      // The research is named after the faction, and GetObjectName returns the localised object data, so the
+      // expected name has to be built in the same language. The faction's name is resolved the same way for the
+      // same reason, and the suffix is a template rather than a literal, because a translation may put it on
+      // either side of the name.
+      var language = Loc.GetSystemLanguage();
+      var intendedName = Loc.Format("{name} exists", language, ("{name}", Loc.Get(faction.Name, language)));
       var actualName = GetObjectName(faction.UndefeatedResearch);
       if (actualName != intendedName)
       {
-        Logger.LogWarning($"{faction.Name}'s {nameof(faction.UndefeatedResearch)} should be named {intendedName} but it is instead named {actualName}.");
+        Logger.LogWarning($"{Loc.Get(faction.Name, language)}'s {nameof(faction.UndefeatedResearch)} should be named {intendedName} but it is instead named {actualName}.");
       }
     }
   }
@@ -68,12 +74,20 @@ public static class RuntimeIntegrityChecker
           continue;
         }
 
-        var intendedName = $"Quest Completed: {quest.Title}";
+        // The research is named after the quest. QuestData keeps the title as the source states it and localises
+        // only the quest object it creates, so the title has to be resolved here; GetObjectName already returns the
+        // localised object data. Both sides are then in the same language.
+        //
+        // What the check can insist on is that the research's name contains the quest's: a research may carry a
+        // prefix, such as the "Quest Completed: " one this map's quests use, or a suffix naming the faction that
+        // gets it, and either leaves the title itself intact. Demanding an exact match would mean the map cannot
+        // be translated, because a title that is a fragment of a longer name has nothing to match against.
+        var title = Loc.Get(quest.Title, Loc.GetSystemLanguage());
         var actualName = GetObjectName(quest.ResearchId);
-        if (!actualName.Equals(intendedName))
+        if (!actualName.Contains(title, StringComparison.Ordinal))
         {
           Logger.LogWarning(
-            $"{quest.Title}'s {nameof(quest.ResearchId)} should be named {intendedName} but it is instead named {actualName}.");
+            $"{title}'s {nameof(quest.ResearchId)} should be named {title} but it is instead named {actualName}.");
         }
       }
     }

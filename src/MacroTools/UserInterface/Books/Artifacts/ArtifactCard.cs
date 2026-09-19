@@ -5,6 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.UserInterface.Books.Core;
 using MacroTools.UserInterface.Frames;
+using MacroTools.Localization;
 
 namespace MacroTools.UserInterface.Books.Artifacts;
 
@@ -96,7 +97,7 @@ public sealed class ArtifactCard : Card<Artifact>
     {
       Width = 0.062f,
       Height = 0.027f,
-      Text = "Ping",
+      Text = Loc.Get("Ping", Loc.GetSystemLanguage()),
       Visible = false
     };
     _pingButton.SetPoint(framepointtype.Left, this, framepointtype.Left, 0.057f, -0.009f);
@@ -118,7 +119,7 @@ public sealed class ArtifactCard : Card<Artifact>
         {
           _text.Visible = true;
           _pingButton.Visible = false;
-          _text.Text = $"Owned by {owningFaction.ColoredName}";
+          _text.Text = Loc.Format("Owned by {faction}", ("{faction}", owningFaction.ColoredName));
         }
         else
         {

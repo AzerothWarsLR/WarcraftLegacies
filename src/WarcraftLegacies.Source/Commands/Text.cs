@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -34,6 +35,6 @@ public sealed class Text : Command
     data.UpdatePlayerSetting("PlayDialogue", parsed.Value);
     data.UpdatePlayerSetting("ShowCaptions", parsed.Value);
 
-    return $"All text settings set to {parsed.Value}.";
+    return Loc.Format("All text settings set to {value}.", ("{value}", parsed.Value.ToString()));
   }
 }

@@ -9,6 +9,7 @@ using MacroTools.Quests;
 using MacroTools.Shared;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
+using MacroTools.Localization;
 
 namespace MacroTools.Factions;
 
@@ -110,7 +111,14 @@ public abstract class Faction
   /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
   public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
-  public string ColoredName => $"{PrefixCol}{_name}|r";
+  /// <summary>
+  /// The faction's name in the local player's language, coloured with the faction's player colour.
+  /// <para>
+  /// <see cref="Name"/> stays in English because it doubles as a command key, so every place a player reads the
+  /// name goes through here instead.
+  /// </para>
+  /// </summary>
+  public string ColoredName => $"{PrefixCol}{Loc.Get(_name)}|r";
 
   public string PrefixCol { get; }
 

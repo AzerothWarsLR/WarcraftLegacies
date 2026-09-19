@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Chat;
+using MacroTools.Localization;
 
 namespace MacroTools.Commands;
 
@@ -64,7 +65,8 @@ public abstract class CompositeCommand : Command
 
   /// <inheritdoc />
   public sealed override string Description =>
-    $"{_baseDescription} Verbs: {string.Join(", ", _verbs.Select(v => v.Name))}.";
+    Loc.Get(_baseDescription)
+    + Loc.Format(" Verbs: {verbs}.", string.Join(", ", _verbs.Select(v => Loc.Get(v.Name))));
 
   /// <inheritdoc />
   public sealed override string Execute(player whichPlayer, params string[] parameters)
@@ -89,7 +91,10 @@ public abstract class CompositeCommand : Command
       return Paginate(message, verbArgs.Skip(entry.ArgsCount).ToArray());
     }
 
-    return $"Unknown {_commandText} verb '{verb}'. Valid verbs: {string.Join(", ", _verbs.Select(v => v.Name))}.";
+    return Loc.Format("Unknown {command} verb '{verb}'. Valid verbs: {verbs}.",
+      ("{command}", _commandText),
+      ("{verb}", verb),
+      ("{verbs}", string.Join(", ", _verbs.Select(v => Loc.Get(v.Name)))));
   }
 
   private static string Paginate(string message, string[] pageArgs)
@@ -119,13 +124,17 @@ public abstract class CompositeCommand : Command
     var rows = new List<ColumnFormatter.Row>();
     foreach (var verb in _verbs)
     {
+      // The verb's own name and hint are shown in the command list, so both are resolved through the table: a list
+      // that states what each verb does in one language and names the verb in another is no use to a reader.
+      var name = Loc.Get(verb.Name);
       rows.Add(new ColumnFormatter.Row(
         verb.ArgsHint.Length > 0
-          ? $"{verb.Name} {verb.ArgsHint}"
-          : verb.Name,
-        verb.Description));
+          ? $"{name} {Loc.Get(verb.ArgsHint)}"
+          : name,
+        Loc.Get(verb.Description)));
     }
 
-    return _cachedUsage = ColumnFormatter.BuildUsage($"Usage: -{_commandText} <verb> [args]", rows);
+    return _cachedUsage = ColumnFormatter.BuildUsage(Loc.Format("Usage: -{command} <verb> [args]",
+      ("{command}", _commandText)), rows);
   }
 }

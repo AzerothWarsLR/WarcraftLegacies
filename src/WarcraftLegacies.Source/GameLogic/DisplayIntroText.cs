@@ -41,7 +41,7 @@ public static class DisplayIntroText
     {
       foreach (var player in Util.EnumeratePlayers())
       {
-        player.DisplayTimedTextTo(displayTime - 1, $@"|cffffcc00Warcraft Legacies|r
+        player.DisplayTimedTextTo(displayTime - 1, $@"|cffffcc00{Loc.Get("Warcraft Legacies")}|r
   |cffaaaaaa{Loc.Get("Join our Discord:")}|r discord.gg/pnWZs69
 
   {Loc.Get("If you are a new player, look at the Quest (F9) tab to see your objectives.")}

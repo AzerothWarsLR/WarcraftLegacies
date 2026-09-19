@@ -1,4 +1,5 @@
-﻿using MacroTools.Commands;
+﻿using MacroTools.Localization;
+using MacroTools.Commands;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -32,10 +33,10 @@ public sealed class CheatGetWaygateDestination : Command
 
     if (!firstUnit.WaygateActive)
     {
-      return $"{firstUnit.Name} is not an active Waygate.";
+      return Loc.Format("{unit} is not an active Waygate.", ("{unit}", firstUnit.Name));
     }
 
     PingMinimap(x, y, 10);
-    return $"Pinging {firstUnit.Name} Waygate destination.";
+    return Loc.Format("Pinging {unit} Waygate destination.", ("{unit}", firstUnit.Name));
   }
 }
