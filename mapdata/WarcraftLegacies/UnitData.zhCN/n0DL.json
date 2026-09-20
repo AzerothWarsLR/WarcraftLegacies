@@ -44,7 +44,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "毒云"
+      "Value": "毒云术"
     },
     {
       "Id": "uico",
@@ -69,7 +69,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "训练毒云"
+      "Value": "训练毒云术"
     }
   ],
   "NewId": "n0DL"
