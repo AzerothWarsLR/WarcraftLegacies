@@ -1,5 +1,5 @@
 {
-  "OldId": "AIda",
+  "OldId": "ANcl",
   "NewId": "A01D",
   "Unk": [
     0
@@ -28,28 +28,6 @@
       "Id": "aare",
       "Type": 2,
       "Value": 350
-    },
-    {
-      "Level": 2,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "Bdef"
-    },
-    {
-      "Level": 3,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "Bdef"
-    },
-    {
-      "Level": 4,
-      "Id": "abuf",
-      "Type": 3,
-      "Value": "Bdef"
-    },
-    {
-      "Id": "achd",
-      "Value": 1
     },
     {
       "Level": 1,
@@ -97,103 +75,163 @@
     },
     {
       "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
       "Pointer": 1,
-      "Id": "Idef",
-      "Value": 4
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.6
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": "Idef",
-      "Value": 6
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.6
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": "Idef",
-      "Value": 8
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.6
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": "Idef",
-      "Value": 10
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.6
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": "Ihp2",
-      "Value": 60
+      "Id": "Ncl2",
+      "Value": 2
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": "Ihp2",
-      "Value": 90
+      "Id": "Ncl2",
+      "Value": 2
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": "Ihp2",
-      "Value": 120
+      "Id": "Ncl2",
+      "Value": 2
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": "Ihp2",
-      "Value": 150
+      "Id": "Ncl2",
+      "Value": 2
     },
     {
       "Level": 1,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 25
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 3
     },
     {
       "Level": 2,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 25
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 3
     },
     {
       "Level": 3,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 25
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 3
     },
     {
       "Level": 4,
-      "Id": "adur",
-      "Type": 2,
-      "Value": 25
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "tranquility"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "tranquility"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "tranquility"
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "tranquility"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
     },
     {
       "Id": "aher",
       "Value": 1
-    },
-    {
-      "Level": 1,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 25
-    },
-    {
-      "Level": 2,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 25
-    },
-    {
-      "Level": 3,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 25
-    },
-    {
-      "Level": 4,
-      "Id": "ahdu",
-      "Type": 2,
-      "Value": 25
     },
     {
       "Id": "aite",
@@ -202,6 +240,10 @@
     {
       "Id": "alev",
       "Value": 4
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
     },
     {
       "Id": "arac",
@@ -213,49 +255,14 @@
       "Value": 1
     },
     {
-      "Level": 2,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 250
-    },
-    {
-      "Level": 3,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 250
-    },
-    {
-      "Level": 4,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 250
-    },
-    {
-      "Level": 2,
-      "Id": "atar",
+      "Id": "aani",
       "Type": 3,
-      "Value": "ground,air,friend,self,invu,vuln"
-    },
-    {
-      "Level": 3,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "ground,air,friend,self,invu,vuln"
-    },
-    {
-      "Level": 4,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "ground,air,friend,self,invu,vuln"
-    },
-    {
-      "Id": "alsk",
-      "Value": 2
+      "Value": "spell"
     },
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
     },
     {
       "Id": "abpx",
@@ -266,9 +273,24 @@
       "Value": 2
     },
     {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "acap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(Light Blue - Tyrande)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": "ahky",
@@ -278,12 +300,12 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Words of Protection"
+      "Value": "Lunar Sanctuary"
     },
     {
       "Id": "arar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
     },
     {
       "Id": "arpx",
@@ -297,65 +319,65 @@
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "Learn Words of Protection - [|cffffcc00Level %d|r]"
+      "Value": "Learn Lunar Sanctuary - [|cffffcc00Level %d|r]"
     },
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "The hero heals and gives additional armor to nearby friendly units for 25 seconds. 350 AOE.|n|cffffcc00Level 1|r - Heals for 60 and gives 4 armor.|n|cffffcc00Level 2|r - Heals for 90 and gives 6 armor.|n|cffffcc00Level 3|r - Heals for 120 and gives 8 armor.|n|cffffcc00Level 4|r - Heals for 150 and gives 10 armor."
+      "Value": "Calls down Elune\u0027s light on a target area for 10 seconds. Friendly units inside recover health and mana every second, and enemies inside are slowed and revealed, even if invisible. 350 AOE.|n|cffffcc00Level 1|r - Heals 10 and restores 2 mana per second. Slows enemies by 15%.|n|cffffcc00Level 2|r - Heals 15 and restores 3 mana per second. Slows enemies by 20%.|n|cffffcc00Level 3|r - Heals 20 and restores 4 mana per second. Slows enemies by 25%.|n|cffffcc00Level 4|r - Heals 25 and restores 5 mana per second. Slows enemies by 30%."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Words of Protection - [|cffffcc00Level 1|r]"
+      "Value": "Lunar Sanctuary - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Words of Protection - [|cffffcc00Level 2|r]"
+      "Value": "Lunar Sanctuary - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Words of Protection - [|cffffcc00Level 3|r]"
+      "Value": "Lunar Sanctuary - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Words of Protection - [|cffffcc00Level 4|r]"
+      "Value": "Lunar Sanctuary - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals for 60 and gives 4 armor to nearby units for 25 seconds. 350 AOE."
+      "Value": "Friendly units in the area recover 10 health and 2 mana per second for 10 seconds. Enemies are slowed by 15% and revealed. 350 AOE."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals for 90 and gives 6 armor to nearby units for 25 seconds. 350 AOE.\r\n"
+      "Value": "Friendly units in the area recover 15 health and 3 mana per second for 10 seconds. Enemies are slowed by 20% and revealed. 350 AOE."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals for 120 and gives 8 armor to nearby units for 25 seconds. 350 AOE."
+      "Value": "Friendly units in the area recover 20 health and 4 mana per second for 10 seconds. Enemies are slowed by 25% and revealed. 350 AOE."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Heals for 150 and gives 10 armor to nearby units for 25 seconds. 350 AOE."
-    },
-    {
-      "Id": "auar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+      "Value": "Friendly units in the area recover 25 health and 5 mana per second for 10 seconds. Enemies are slowed by 30% and revealed. 350 AOE."
     }
   ]
 }
