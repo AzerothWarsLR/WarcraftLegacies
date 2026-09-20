@@ -197,13 +197,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "腐臭蝠群 - [|cffffcc00等级 1|r]"
+      "Value": "腐臭蝠群 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "腐臭蝠群 - [|cffffcc00等级 2|r]"
+      "Value": "腐臭蝠群 - [|cffffcc002 级|r]"
     },
     {
       "Level": 1,
@@ -221,7 +221,7 @@
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "腐臭蝠群 - [|cffffcc00等级 3|r]"
+      "Value": "腐臭蝠群 - [|cffffcc003 级|r]"
     },
     {
       "Level": 3,

@@ -241,7 +241,7 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "屠戮"
+      "Value": "杀戮"
     },
     {
       "Id": "arar",
@@ -267,25 +267,25 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "屠戮 - [|cffffcc001级|r]"
+      "Value": "杀戮 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "屠戮 - [|cffffcc002级|r]"
+      "Value": "杀戮 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "屠戮 - [|cffffcc003级|r]"
+      "Value": "杀戮 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "屠戮 - [|cffffcc004级|r]"
+      "Value": "杀戮 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,

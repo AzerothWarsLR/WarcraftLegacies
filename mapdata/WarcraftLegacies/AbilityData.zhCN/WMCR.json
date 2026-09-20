@@ -90,7 +90,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "诅咒目标敌方单位，使其有<Acrs,DataA2,%>%的未命中率。 |n持续<Acrs,Dur2>秒。"
+      "Value": "诅咒一名敌方单位，使其攻击有<Acrs,DataA2,%>%的几率落空。|n持续<Acrs,Dur2>秒。"
     },
     {
       "Id": "auhk",

@@ -199,19 +199,19 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc002级|r]"
+      "Value": "粉碎 - [|cffffcc00级别 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc003级|r]"
+      "Value": "粉碎 - [|cffffcc00级别 3|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc004级|r]"
+      "Value": "粉碎 - [|cffffcc00级别 4|r]"
     },
     {
       "Id": "arut",
@@ -227,7 +227,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc001级|r]"
+      "Value": "粉碎 - [|cffffcc00级别 1|r]"
     },
     {
       "Id": "anam",

@@ -135,13 +135,13 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强化减速"
+      "Value": "强化减速术"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使一个目标敌方单位的攻击速度降低<ABSF,DataB1,%>%，移动速度降低<ABSF,DataA1,%>%。|n|cffffcc00持续<ABSF,Dur1>（英雄为<ABSF,HeroDur1>）秒。\n"
+      "Value": "使一名敌方单位的攻击速度降低<ABSF,DataB1,%>%，移动速度降低<ABSF,DataA1,%>%。|n|cffffcc00持续<ABSF,Dur1>秒（英雄为<ABSF,HeroDur1>秒）。\n"
     },
     {
       "Level": 2,
