@@ -123,11 +123,6 @@
       "Value": "强化炮塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化炮塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -141,6 +136,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTowerCannon.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化炮塔"
     }
   ],
   "NewId": "h04N"

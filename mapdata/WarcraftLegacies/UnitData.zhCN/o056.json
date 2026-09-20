@@ -151,14 +151,14 @@
       "Value": "奥术之泉"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造奥术之泉"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "CoralBed"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥术之泉"
     }
   ],
   "NewId": "o056"

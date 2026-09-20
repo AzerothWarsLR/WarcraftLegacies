@@ -74,11 +74,6 @@
       "Value": "技师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练技师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "奎尔萨拉斯建筑的聪慧建造者。"
@@ -87,6 +82,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\WorkerBloodElfV1.01.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练技师"
     }
   ],
   "NewId": "n0E2"

@@ -183,11 +183,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练猛犸骑兵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "维库人的驯兽师。"
@@ -196,6 +191,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Mammoth"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练猛犸骑兵"
     }
   ],
   "NewId": "h00P"

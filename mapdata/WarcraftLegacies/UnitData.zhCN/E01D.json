@@ -204,11 +204,6 @@
       "Value": "large"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -253,11 +248,6 @@
       "Value": "尼奥罗萨先驱"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSMythrax.blp"
@@ -297,11 +287,6 @@
       "Value": 0
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤扎库尔"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（恩佐斯）"
@@ -314,6 +299,21 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤扎库尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
     },
     {
       "Id": "upro",

@@ -93,11 +93,6 @@
       "Value": "尖峰"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "尖峰"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -116,6 +111,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "尖峰"
     }
   ],
   "NewId": "h042"

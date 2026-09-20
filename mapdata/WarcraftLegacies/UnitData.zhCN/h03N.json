@@ -182,11 +182,6 @@
       "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化猎手塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -200,6 +195,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "ChimaeraRoost"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化猎手塔"
     }
   ],
   "NewId": "h03N"

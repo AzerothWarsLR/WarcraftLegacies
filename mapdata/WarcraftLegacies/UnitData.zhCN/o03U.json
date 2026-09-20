@@ -138,11 +138,6 @@
       "Value": "火箭塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造火箭塔"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl"
@@ -151,6 +146,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCannonTower.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造火箭塔"
     }
   ],
   "NewId": "o03U"

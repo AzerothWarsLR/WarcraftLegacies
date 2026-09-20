@@ -94,11 +94,6 @@
       "Value": 3.6
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤毁灭祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -107,6 +102,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤毁灭祭坛"
     }
   ],
   "NewId": "u01N"

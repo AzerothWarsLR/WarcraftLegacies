@@ -133,11 +133,6 @@
       "Value": "审判官"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练审判官"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "血色的探求施法者。"
@@ -156,6 +151,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练审判官"
     }
   ],
   "NewId": "n068"

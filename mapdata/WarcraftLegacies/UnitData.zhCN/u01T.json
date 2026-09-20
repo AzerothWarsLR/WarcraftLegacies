@@ -141,11 +141,6 @@
       "Value": "先驱"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练传令官"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "暮光之锤的支援型施法者。"
@@ -159,6 +154,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练传令官"
     }
   ],
   "NewId": "u01T"

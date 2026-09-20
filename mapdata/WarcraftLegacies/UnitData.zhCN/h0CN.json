@@ -118,11 +118,6 @@
       "Value": "族群领袖"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练族群领袖"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "霜狼的指挥官。"
@@ -150,6 +145,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNOrcWarrior.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练族群领袖"
     }
   ],
   "NewId": "h0CN"

@@ -185,16 +185,6 @@
       "Value": "NagaRoyalGuard"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活督军"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活督军"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -240,6 +230,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤纳因图斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活督军"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活督军"
     }
   ],
   "NewId": "U00S"

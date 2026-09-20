@@ -66,11 +66,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造船坞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -99,6 +94,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneShipyard.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造船坞"
     }
   ],
   "NewId": "h07X"

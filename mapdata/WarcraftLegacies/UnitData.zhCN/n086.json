@@ -286,11 +286,6 @@
       "Value": 200
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练邪能死亡骑士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "暗影议会的邪能死亡骑士是强大而狡诈的巫师。"
@@ -299,6 +294,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroLich"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能死亡骑士"
     }
   ],
   "NewId": "n086"

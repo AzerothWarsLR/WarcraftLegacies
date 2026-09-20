@@ -126,11 +126,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosBerserk.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活火焰晋升者"
-    },
-    {
       "Id": "ubpy",
       "Value": 0
     },
@@ -165,19 +160,9 @@
       "Value": "伊格纳休斯"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活火焰晋升者"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosBerserk.blp"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤火焰升腾者"
     },
     {
       "Id": "utub",
@@ -198,6 +183,21 @@
       "Id": "uma1",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤火焰升腾者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活火焰晋升者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活火焰晋升者"
     }
   ],
   "NewId": "O06M"

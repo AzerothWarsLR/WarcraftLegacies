@@ -91,11 +91,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造蒸汽工坊"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -109,6 +104,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "BuildingShadowLarge"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造蒸汽工坊"
     }
   ],
   "NewId": "h06S"

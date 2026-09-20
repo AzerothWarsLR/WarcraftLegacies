@@ -159,11 +159,6 @@
       "Value": 1.2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练纳斯雷兹姆术士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "暗影系的纳斯雷兹姆支援单位。"
@@ -177,6 +172,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练纳斯雷兹姆术士"
     }
   ],
   "NewId": "o04P"

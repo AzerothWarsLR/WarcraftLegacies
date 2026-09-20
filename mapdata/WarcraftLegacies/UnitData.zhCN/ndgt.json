@@ -124,11 +124,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为肯瑞托塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -137,6 +132,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "达拉然的防御塔。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为肯瑞托塔"
     }
   ]
 }

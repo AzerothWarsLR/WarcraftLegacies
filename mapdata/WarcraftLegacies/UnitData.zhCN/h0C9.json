@@ -102,11 +102,6 @@
       "Value": 4
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造区"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -120,6 +115,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造区"
     }
   ],
   "NewId": "h0C9"

@@ -155,11 +155,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造吉安娜的圣所"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -168,6 +163,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "ArcaneTower"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造吉安娜的圣所"
     }
   ],
   "NewId": "h010"

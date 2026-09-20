@@ -48,11 +48,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活王储"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦）"
@@ -78,11 +73,6 @@
       "Value": "阿尔萨斯·米奈希尔"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活王储"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长治疗盟友并杀伤敌人。"
@@ -91,6 +81,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤阿尔萨斯·米奈希尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活王储"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活王储"
     }
   ]
 }

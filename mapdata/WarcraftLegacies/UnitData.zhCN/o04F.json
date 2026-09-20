@@ -104,11 +104,6 @@
       "Value": "巫医"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练巫医"
-    },
-    {
       "Id": "ucut",
       "Type": 3,
       "Value": "- Heal,- Heal|n- Stasis Trap,- Heal|n- Stasis Trap|n- Hex"
@@ -117,6 +112,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\ZandalariWitchDoctor.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练巫医"
     }
   ],
   "NewId": "o04F"

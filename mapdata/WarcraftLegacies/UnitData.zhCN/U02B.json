@@ -161,11 +161,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNNerubianSmasher.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活维扎克斯将军"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -198,11 +193,6 @@
       "Value": "不眠的约萨希"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活维扎克斯将军"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 2
@@ -216,11 +206,6 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "FacelessOne"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤不眠的约萨希"
     },
     {
       "Id": "usca",
@@ -254,6 +239,21 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤不眠的约萨希"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活维扎克斯将军"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活维扎克斯将军"
     }
   ],
   "NewId": "U02B"

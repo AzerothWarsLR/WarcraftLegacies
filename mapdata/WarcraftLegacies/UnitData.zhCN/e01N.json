@@ -267,11 +267,6 @@
       "Value": 1.9
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练[|cffffcc00W|r] - 利爪德鲁伊"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型近战单位，拥有咆哮、野性狂怒和强力猛击。可学习凶猛打击。"
@@ -284,6 +279,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练[|cffffcc00W|r] - 利爪德鲁伊"
     }
   ],
   "NewId": "e01N"

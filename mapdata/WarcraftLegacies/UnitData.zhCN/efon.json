@@ -72,11 +72,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练树人"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "基本的木质战士"
@@ -88,6 +83,11 @@
     {
       "Id": "uclb",
       "Value": 100
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练树人"
     },
     {
       "Id": "unam",

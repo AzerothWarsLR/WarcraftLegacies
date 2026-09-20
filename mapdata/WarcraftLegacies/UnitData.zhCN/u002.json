@@ -123,11 +123,6 @@
       "Value": 2.2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化幽魂之塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -136,6 +131,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化幽魂之塔"
     }
   ],
   "NewId": "u002"

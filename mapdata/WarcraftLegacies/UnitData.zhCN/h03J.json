@@ -94,11 +94,6 @@
       "Value": "学院"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造学院"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -107,6 +102,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造学院"
     }
   ],
   "NewId": "h03J"

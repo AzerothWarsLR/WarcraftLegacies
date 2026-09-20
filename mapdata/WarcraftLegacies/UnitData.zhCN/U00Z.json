@@ -182,11 +182,6 @@
       "Value": ""
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -216,11 +211,6 @@
     {
       "Id": "uclr",
       "Value": 150
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
     },
     {
       "Id": "ussi",
@@ -256,14 +246,24 @@
       "Value": 1
     },
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "魔法型英雄，是坚固耐打的伤害型施法者。"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤莫阿姆"
     },
     {
-      "Id": "utub",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "魔法型英雄，是坚固耐打的伤害型施法者。"
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
     }
   ],
   "NewId": "U00Z"

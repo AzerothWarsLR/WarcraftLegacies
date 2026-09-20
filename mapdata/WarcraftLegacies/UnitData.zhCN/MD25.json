@@ -86,11 +86,6 @@
       "Value": 0.9
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤洛坎"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长破坏性和扰乱性魔法。"
@@ -115,9 +110,13 @@
       "Value": "暗矛勇士"
     },
     {
-      "Id": "uawt",
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "utip",
       "Type": 3,
-      "Value": "复活洛坎"
+      "Value": "召唤洛坎"
     },
     {
       "Id": "utpr",
@@ -125,8 +124,9 @@
       "Value": "复活洛坎"
     },
     {
-      "Id": "ubpx",
-      "Value": 1
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活洛坎"
     },
     {
       "Id": "upro",

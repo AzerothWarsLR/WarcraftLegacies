@@ -95,11 +95,6 @@
       "Value": "守望者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练守望者"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTrollWatcher.blp"
@@ -113,6 +108,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "ForestTroll"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守望者"
     }
   ],
   "NewId": "h021"

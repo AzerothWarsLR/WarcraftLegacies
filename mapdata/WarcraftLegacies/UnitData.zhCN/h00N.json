@@ -248,14 +248,14 @@
       "Value": 4.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造闪金镇"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造闪金镇"
     }
   ],
   "NewId": "h00N"

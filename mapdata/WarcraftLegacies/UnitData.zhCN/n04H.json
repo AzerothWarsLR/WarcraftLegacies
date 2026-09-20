@@ -103,11 +103,6 @@
       "Value": "恶魔卫士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤恶魔卫士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "燃烧军团的中坚士兵。"
@@ -121,6 +116,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\demon\\FelgaurdBlue\\FelgaurdBlue.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤恶魔卫士"
     }
   ],
   "NewId": "n04H"

@@ -101,11 +101,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活梅雷迪斯"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -135,11 +130,6 @@
       "Value": "维克雷斯家族女族长"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活梅雷迪斯"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.4
@@ -160,11 +150,6 @@
       "Value": "Sorceress"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤梅瑞狄斯"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
@@ -173,6 +158,21 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤梅瑞狄斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活梅雷迪斯"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活梅雷迪斯"
     }
   ],
   "NewId": "U026"

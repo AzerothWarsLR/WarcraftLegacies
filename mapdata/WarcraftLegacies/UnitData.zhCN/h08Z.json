@@ -215,11 +215,6 @@
       "Value": "突击坦克"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造突击坦克"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装甲厚重的载具，擅长击落空中单位。"
@@ -243,6 +238,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造突击坦克"
     }
   ],
   "NewId": "h08Z"

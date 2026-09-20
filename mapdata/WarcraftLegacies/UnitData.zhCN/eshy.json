@@ -75,11 +75,6 @@
       "Value": "卡多雷船坞"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造卡多雷船坞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -93,6 +88,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（德鲁伊 / 哨兵船坞）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造卡多雷船坞"
     }
   ]
 }

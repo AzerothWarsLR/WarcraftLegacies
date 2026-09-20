@@ -167,11 +167,6 @@
       "Value": ""
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活堕落的守护者"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然）"
@@ -217,11 +212,6 @@
       "Value": "麦迪文"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活堕落的守护者"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp"
@@ -247,11 +237,6 @@
       "Value": 50
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤麦迪文"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长通过攻击造成魔法伤害。"
@@ -267,6 +252,21 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤麦迪文"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活堕落的守护者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活堕落的守护者"
     }
   ]
 }

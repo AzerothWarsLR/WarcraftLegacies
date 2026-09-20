@@ -147,11 +147,6 @@
       "Value": "工兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练工兵"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\creeps\\GoblinSapper\\GoblinSapper.mdl"
@@ -165,6 +160,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "GoblinSapper"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练工兵"
     }
   ],
   "NewId": "h08X"

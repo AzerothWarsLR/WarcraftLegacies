@@ -98,11 +98,6 @@
       "Value": "鹰骑士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练鹰骑士"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtonsDisabled\\BTNScarletEagleKnight.blp"
@@ -116,6 +111,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "war3mapImported\\EagleKnightSpearMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练鹰骑士"
     }
   ],
   "NewId": "o06V"

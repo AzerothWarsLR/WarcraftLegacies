@@ -79,11 +79,6 @@
       "Value": "宝石工匠"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练宝石工匠"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\DraeneiGemcrafter2V.mdl"
@@ -97,6 +92,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Draenei"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练宝石工匠"
     }
   ],
   "NewId": "o05A"

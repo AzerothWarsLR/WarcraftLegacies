@@ -225,11 +225,6 @@
       "Value": "沙塔斯"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造沙塔斯"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -256,6 +251,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 6.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造沙塔斯"
     }
   ],
   "NewId": "h0AH"

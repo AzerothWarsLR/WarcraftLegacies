@@ -105,11 +105,6 @@
       "Value": "斜向木门"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "斜向木门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -133,6 +128,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "alternate"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "斜向木门"
     }
   ],
   "NewId": "h04R"

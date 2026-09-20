@@ -203,11 +203,6 @@
       "Value": "火焰坦克"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造火焰坦克"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装甲极其厚重的载具。"
@@ -216,6 +211,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造火焰坦克"
     }
   ],
   "NewId": "tp01"

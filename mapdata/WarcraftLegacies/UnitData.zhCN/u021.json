@@ -123,11 +123,6 @@
       "Value": "废墟神殿"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为废墟神殿"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（克苏恩 - 二级）"
@@ -174,6 +169,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为废墟神殿"
     }
   ],
   "NewId": "u021"

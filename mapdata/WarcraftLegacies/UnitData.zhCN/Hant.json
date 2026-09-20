@@ -91,11 +91,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大法师"
-    },
-    {
       "Id": "ubpx",
       "Value": 1
     },
@@ -120,19 +115,9 @@
       "Value": "肯瑞托大法师"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活大法师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长召唤和远程伤害法术。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤安东尼达斯"
     },
     {
       "Id": "ubpy",
@@ -142,6 +127,21 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNantonidashd.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤安东尼达斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大法师"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大法师"
     },
     {
       "Id": "upro",

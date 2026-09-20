@@ -227,11 +227,6 @@
       "Value": "Objects\\Spawnmodels\\Demon\\DemonLargeDeathExplode\\DemonLargeDeathExplode.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练织影者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "治疗型施法者。"
@@ -265,6 +260,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练织影者"
     }
   ],
   "NewId": "n05V"

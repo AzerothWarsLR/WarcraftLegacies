@@ -122,14 +122,14 @@
       "Value": "战斗型英雄，出色的前线支援者。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤乌瑟尔"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\UtherV2.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤乌瑟尔"
     },
     {
       "Id": "upro",

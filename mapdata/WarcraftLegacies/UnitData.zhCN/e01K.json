@@ -145,14 +145,14 @@
       "Value": 0
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练连发弩炮"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba攻城 单位|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练连发弩炮"
     }
   ],
   "NewId": "e01K"

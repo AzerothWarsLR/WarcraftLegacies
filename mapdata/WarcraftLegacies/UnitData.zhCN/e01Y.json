@@ -185,11 +185,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造守护古树"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -208,6 +203,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "alternate"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造守护古树"
     }
   ],
   "NewId": "e01Y"

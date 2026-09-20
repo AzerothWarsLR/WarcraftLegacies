@@ -86,11 +86,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活地狱咆哮"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌）"
@@ -106,14 +101,14 @@
       "Value": "战歌氏族的酋长"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活地狱咆哮"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "灵巧型英雄，极其擅长击杀关键单位和造成伤害。"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.05
     },
     {
       "Id": "utip",
@@ -121,9 +116,14 @@
       "Value": "召唤地狱咆哮"
     },
     {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 1.05
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活地狱咆哮"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活地狱咆哮"
     },
     {
       "Id": "upro",

@@ -94,11 +94,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活至高国王"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦 - 至高王）"
@@ -119,11 +114,6 @@
       "Value": "至高王"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活至高国王"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长摧毁敌人并持久作战。"
@@ -132,6 +122,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤国王"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活至高国王"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活至高国王"
     },
     {
       "Id": "upro",

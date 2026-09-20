@@ -84,14 +84,14 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinWorker.blp"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练者"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "GoblinSapper"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练者"
     }
   ],
   "NewId": "o02I"

@@ -166,11 +166,6 @@
       "Value": "掷矛手"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练掷矛手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "协助快速防卫暴风城的西部荒野神射手。"
@@ -179,6 +174,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Bandit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掷矛手"
     }
   ],
   "NewId": "h00A"

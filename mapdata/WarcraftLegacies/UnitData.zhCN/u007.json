@@ -193,11 +193,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练恐惧魔王"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "由提克迪奥斯亲自挑选的精英纳斯雷兹姆。"
@@ -206,6 +201,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Varimathras"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练恐惧魔王"
     }
   ],
   "NewId": "u007"

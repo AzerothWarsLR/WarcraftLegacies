@@ -71,14 +71,14 @@
       "Value": "废料场"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造废料场"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinWarmill.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造废料场"
     }
   ],
   "NewId": "o03Q"

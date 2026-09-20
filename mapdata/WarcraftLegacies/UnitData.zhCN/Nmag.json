@@ -134,13 +134,13 @@
       "Value": "HeroPitLord"
     },
     {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤玛瑟里顿"
-    },
-    {
-      "Id": "ubpx",
-      "Value": 1
     },
     {
       "Id": "upro",

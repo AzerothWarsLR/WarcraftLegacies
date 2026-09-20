@@ -81,14 +81,14 @@
       "Value": "光铸熔炉"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造光铸熔炉"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Blacksmith"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造光铸熔炉"
     }
   ],
   "NewId": "o053"

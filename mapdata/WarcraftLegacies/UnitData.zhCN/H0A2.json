@@ -101,11 +101,6 @@
       "Value": "（血色）"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤雷诺"
-    },
-    {
       "Id": "uhot",
       "Type": 3,
       "Value": "W"
@@ -128,6 +123,11 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤雷诺"
     }
   ],
   "NewId": "H0A2"

@@ -107,21 +107,6 @@
       "Value": "HighElfSwordsman"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤罗曼斯"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大法师"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活大法师"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -138,6 +123,21 @@
     {
       "Id": "ubpy",
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤罗曼斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大法师"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大法师"
     }
   ],
   "NewId": "H04F"

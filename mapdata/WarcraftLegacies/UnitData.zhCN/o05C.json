@@ -122,11 +122,6 @@
       "Value": "光耀执政官"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练光耀执政官"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Priest"
@@ -145,6 +140,11 @@
       "Id": "ucut",
       "Type": 3,
       "Value": "- Renewal,- Renewal|n- Dispel Magic,- Renewal|n- Dispel Magic|n- Inner Fire"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练光耀执政官"
     }
   ],
   "NewId": "o05C"

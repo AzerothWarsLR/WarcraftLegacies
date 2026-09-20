@@ -99,14 +99,14 @@
       "Value": 0.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造黑曜石雕像"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "古老设计的造物。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黑曜石雕像"
     },
     {
       "Id": "unam",

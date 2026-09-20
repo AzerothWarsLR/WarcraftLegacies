@@ -116,11 +116,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBaronRivendare.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活天灾指挥官"
-    },
-    {
       "Id": "uclb",
       "Value": 222
     },
@@ -165,19 +160,9 @@
       "Value": 222
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活天灾指挥官"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.25
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤瑞文戴尔男爵"
     },
     {
       "Id": "utub",
@@ -188,6 +173,21 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤瑞文戴尔男爵"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活天灾指挥官"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活天灾指挥官"
     },
     {
       "Id": "upro",

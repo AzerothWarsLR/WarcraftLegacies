@@ -107,11 +107,6 @@
       "Value": "战士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练战士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "丹莫罗的坚强守卫。"
@@ -120,6 +115,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroMountainKing"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战士"
     }
   ],
   "NewId": "h018"

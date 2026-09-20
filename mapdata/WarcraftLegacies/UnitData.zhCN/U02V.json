@@ -110,11 +110,6 @@
       "Value": "ReplaceableTextures/CommandButtons/BTNBloodElfSorceress.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活索兰莉安"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -144,11 +139,6 @@
       "Value": "大星术师"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活索兰莉安"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.4
@@ -169,14 +159,24 @@
       "Value": "Sorceress"
     },
     {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNBloodElfSorceress.blp"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤索兰莉安"
     },
     {
-      "Id": "ussi",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNBloodElfSorceress.blp"
+      "Value": "复活索兰莉安"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活索兰莉安"
     }
   ],
   "NewId": "U02V"

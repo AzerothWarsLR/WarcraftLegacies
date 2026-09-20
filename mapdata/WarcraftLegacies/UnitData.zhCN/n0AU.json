@@ -81,11 +81,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造搏动传送门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -109,6 +104,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "提供 8 点人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造搏动传送门"
     }
   ],
   "NewId": "n0AU"

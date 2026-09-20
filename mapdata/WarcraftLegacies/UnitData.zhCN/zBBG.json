@@ -116,11 +116,6 @@
       "Value": "茧"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练茧"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "野蛮的兽人战士，浸染了恶魔之血。\\n"
@@ -134,6 +129,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 2.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练茧"
     }
   ],
   "NewId": "zBBG"

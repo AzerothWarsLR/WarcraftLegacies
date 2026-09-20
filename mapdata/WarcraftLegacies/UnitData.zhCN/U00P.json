@@ -185,11 +185,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -222,11 +217,6 @@
       "Value": "督军佐诺兹"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 2.5
@@ -240,11 +230,6 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "DoomGuard"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤督军佐诺兹"
     },
     {
       "Id": "uhot",
@@ -269,6 +254,21 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤督军佐诺兹"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
     }
   ],
   "NewId": "U00P"

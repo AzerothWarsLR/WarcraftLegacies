@@ -134,21 +134,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostRevenant2.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活奥拉基尔"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤奥拉基尔"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活奥拉基尔"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
@@ -167,6 +152,21 @@
       "Id": "ulpz",
       "Type": 2,
       "Value": 250
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤奥拉基尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活奥拉基尔"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活奥拉基尔"
     }
   ],
   "NewId": "U01S"

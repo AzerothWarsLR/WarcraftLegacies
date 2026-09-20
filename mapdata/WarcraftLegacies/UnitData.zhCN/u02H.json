@@ -128,11 +128,6 @@
       "Value": "虚空鳐"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练虚空鳐"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\NetherRayTC v2.mdl"
@@ -150,6 +145,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空鳐"
     }
   ],
   "NewId": "u02H"

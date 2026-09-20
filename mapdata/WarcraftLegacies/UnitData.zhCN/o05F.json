@@ -180,11 +180,6 @@
       "Value": "海军炮台"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造海军炮台"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -227,6 +222,11 @@
       "Id": "uma1",
       "Type": 2,
       "Value": 0.15
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造海军炮台"
     }
   ],
   "NewId": "o05F"

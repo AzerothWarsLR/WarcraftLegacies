@@ -104,11 +104,6 @@
       "Value": "黑瘴林蜘蛛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤黑瘴林蜘蛛"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\creeps\\SpiderBlack\\SpiderBlack.mdl"
@@ -138,6 +133,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤黑瘴林蜘蛛"
     }
   ]
 }

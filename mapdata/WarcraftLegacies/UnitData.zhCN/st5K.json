@@ -82,11 +82,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造折磨之坑"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -110,6 +105,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "折磨之坑"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造折磨之坑"
     }
   ],
   "NewId": "st5K"

@@ -161,11 +161,6 @@
       "Value": 200
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练守望者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "哨兵精英战士，专精于扰乱敌人。"
@@ -174,6 +169,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroWarden"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守望者"
     }
   ],
   "NewId": "h045"

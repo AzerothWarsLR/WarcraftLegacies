@@ -116,11 +116,6 @@
       "Value": "牧师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练牧师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "治疗型施法单位。"
@@ -134,6 +129,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练牧师"
     }
   ],
   "NewId": "h04M"

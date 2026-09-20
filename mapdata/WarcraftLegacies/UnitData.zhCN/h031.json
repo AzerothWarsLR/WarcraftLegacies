@@ -96,11 +96,6 @@
       "Value": "王室禁卫"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练王室禁卫"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "洛丹伦王室的精锐护卫。"
@@ -119,6 +114,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "CaptainLucValonforthV2.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练王室禁卫"
     }
   ],
   "NewId": "h031"

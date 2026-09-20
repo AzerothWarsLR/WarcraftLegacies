@@ -102,11 +102,6 @@
       "Value": "锻造厂"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造锻造厂"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -115,6 +110,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造锻造厂"
     }
   ],
   "NewId": "h048"

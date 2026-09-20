@@ -89,11 +89,6 @@
       "Value": 0.75
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练地狱火"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "笼罩邪能烈焰的锻造恶魔。"
@@ -101,6 +96,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练地狱火"
     },
     {
       "Id": "unam",

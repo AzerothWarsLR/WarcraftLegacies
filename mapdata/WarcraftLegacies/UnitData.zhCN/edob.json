@@ -74,11 +74,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造猎手大厅"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -92,6 +87,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵研究）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造猎手大厅"
     },
     {
       "Id": "unam",

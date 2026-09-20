@@ -112,11 +112,6 @@
       "Value": "余烬牧师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练余烬牧师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的忠实而坚定的信徒。"
@@ -125,6 +120,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练余烬牧师"
     }
   ],
   "NewId": "n09A"

@@ -123,11 +123,6 @@
       "Value": "永恒之井"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造无限之泉"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -146,6 +141,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造无限之泉"
     }
   ],
   "NewId": "n0DZ"

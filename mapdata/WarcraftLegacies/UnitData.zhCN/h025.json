@@ -160,11 +160,6 @@
       "Value": 175
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化|cffffcc00炮|r塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -183,6 +178,11 @@
       "Id": "uabs",
       "Type": 3,
       "Value": "Abds,Afsh"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化|cffffcc00炮|r塔"
     }
   ],
   "NewId": "h025"

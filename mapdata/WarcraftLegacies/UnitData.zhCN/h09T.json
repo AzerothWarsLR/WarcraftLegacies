@@ -125,11 +125,6 @@
       "Value": "敏捷的神射手。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练游侠斥候"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiHuntress.blp"
@@ -148,6 +143,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "游侠斥候"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练游侠斥候"
     }
   ],
   "NewId": "h09T"

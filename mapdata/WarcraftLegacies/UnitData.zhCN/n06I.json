@@ -109,11 +109,6 @@
       "Value": "士兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练士兵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "虫巢的前线士兵。"
@@ -127,6 +122,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练士兵"
     }
   ],
   "NewId": "n06I"

@@ -94,11 +94,6 @@
       "Value": "欢腾者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练欢腾者"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDuneCrawler.blp"
@@ -122,6 +117,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练欢腾者"
     }
   ],
   "NewId": "o02N"

@@ -252,11 +252,6 @@
       "Value": 1.9
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练攻城古树"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型近战单位，拥有咆哮、野性狂怒和强力猛击。可学习凶猛打击。"
@@ -265,6 +260,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "AncientProtector"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练攻城古树"
     }
   ],
   "NewId": "e018"

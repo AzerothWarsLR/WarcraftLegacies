@@ -87,11 +87,6 @@
       "Value": "光铸之门"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造光铸之门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -120,6 +115,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造光铸之门"
     }
   ],
   "NewId": "o05U"

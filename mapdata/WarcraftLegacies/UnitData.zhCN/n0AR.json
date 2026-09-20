@@ -77,11 +77,6 @@
       "Value": "Q"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造扭曲殿堂"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -115,6 +110,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造扭曲殿堂"
     }
   ],
   "NewId": "n0AR"

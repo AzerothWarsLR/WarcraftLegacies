@@ -119,14 +119,14 @@
       "Value": 160
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤天降地狱火"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "被烈焰吞没的恶魔。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤天降地狱火"
     }
   ],
   "NewId": "n082"

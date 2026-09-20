@@ -139,11 +139,6 @@
       "Value": 1.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造接舷战船"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "特种中型船只。"
@@ -175,6 +170,11 @@
     {
       "Id": "ubpy",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造接舷战船"
     }
   ],
   "NewId": "h0B6"

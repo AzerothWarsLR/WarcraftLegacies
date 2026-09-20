@@ -126,11 +126,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgTracker.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活远古守护者"
-    },
-    {
       "Id": "ubpy",
       "Value": 2
     },
@@ -170,11 +165,6 @@
       "Value": "上古守护者"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活远古守护者"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 2
@@ -183,11 +173,6 @@
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFurbolgTracker.blp"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤乌索克"
     },
     {
       "Id": "utub",
@@ -207,6 +192,21 @@
       "Id": "uani",
       "Type": 3,
       "Value": "alternate"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤乌索克"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活远古守护者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活远古守护者"
     },
     {
       "Id": "upro",

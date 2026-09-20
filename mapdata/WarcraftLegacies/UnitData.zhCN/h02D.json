@@ -120,11 +120,6 @@
       "Value": "地卜师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练地卜师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "擅长御土之术的法师。"
@@ -138,6 +133,11 @@
       "Id": "ucun",
       "Type": 3,
       "Value": "Initiate, Adept, Master, Grandmaster"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练地卜师"
     }
   ],
   "NewId": "h02D"

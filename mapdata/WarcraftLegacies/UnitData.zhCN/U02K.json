@@ -174,21 +174,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活拉格纳罗斯"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤拉格纳罗斯"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活拉格纳罗斯"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.6
@@ -212,6 +197,21 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroFireLord"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤拉格纳罗斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活拉格纳罗斯"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活拉格纳罗斯"
     }
   ],
   "NewId": "U02K"

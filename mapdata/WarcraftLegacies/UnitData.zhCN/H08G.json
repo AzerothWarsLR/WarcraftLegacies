@@ -84,11 +84,6 @@
       "Value": "（血色）"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤赛丹"
-    },
-    {
       "Id": "uhot",
       "Type": 3,
       "Value": "Q"
@@ -107,6 +102,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.97
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤赛丹"
     }
   ],
   "NewId": "H08G"

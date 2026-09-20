@@ -112,11 +112,6 @@
       "Value": 175
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为虚空行者恶魔之门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -130,6 +125,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为虚空行者恶魔之门"
     }
   ],
   "NewId": "n05F"

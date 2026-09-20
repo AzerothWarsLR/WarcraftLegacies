@@ -112,11 +112,6 @@
       "Value": 200
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为(|cffffcc00Z|r)强化奥术塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -125,6 +120,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "强化魔法防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为(|cffffcc00Z|r)强化奥术塔"
     }
   ],
   "NewId": "h075"

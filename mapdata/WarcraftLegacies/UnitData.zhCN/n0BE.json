@@ -114,11 +114,6 @@
       "Value": 175
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤军团枢纽"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -132,6 +127,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Waygate"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤军团枢纽"
     }
   ],
   "NewId": "n0BE"

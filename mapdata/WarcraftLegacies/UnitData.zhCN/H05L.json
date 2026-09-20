@@ -125,21 +125,6 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤凯瑟琳·普罗德摩尔"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活普罗德摩尔家族的女主人"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活普罗德摩尔家族的女主人"
-    },
-    {
       "Id": "ubpx",
       "Value": 1
     },
@@ -167,6 +152,21 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤凯瑟琳·普罗德摩尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活普罗德摩尔家族的女主人"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活普罗德摩尔家族的女主人"
     }
   ],
   "NewId": "H05L"

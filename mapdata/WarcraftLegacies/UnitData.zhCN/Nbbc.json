@@ -103,11 +103,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活雷德"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -137,11 +132,6 @@
       "Value": "黑石氏族的大酋长"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活雷德"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-blademaster.blp"
@@ -155,6 +145,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤雷德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活雷德"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活雷德"
     },
     {
       "Id": "upro",

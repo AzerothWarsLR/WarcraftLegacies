@@ -127,11 +127,6 @@
       "Value": "Q"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练风灵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "治疗型施法者。"
@@ -174,6 +169,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "PandarenBrewmaster"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练风灵"
     }
   ],
   "NewId": "u02P"

@@ -158,11 +158,6 @@
       "Value": 1.2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练王室禁卫"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "海洋的强大保卫者。"
@@ -176,6 +171,11 @@
       "Id": "uabs",
       "Type": 3,
       "Value": "ACcv,ACcb,ACwe,ACsk"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练王室禁卫"
     }
   ]
 }

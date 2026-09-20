@@ -124,11 +124,6 @@
       "Value": "奥格瑞玛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为奥格瑞玛"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Building_Orgrimmar.mdl"
@@ -137,6 +132,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,third"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为奥格瑞玛"
     }
   ],
   "NewId": "o01B"

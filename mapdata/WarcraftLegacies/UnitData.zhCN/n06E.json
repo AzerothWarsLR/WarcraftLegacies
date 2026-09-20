@@ -175,11 +175,6 @@
       "Value": "影叶"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练影叶"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "由珊蒂斯·羽月训练的优秀弓箭手。"
@@ -188,6 +183,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroWarden"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练影叶"
     }
   ],
   "NewId": "n06E"

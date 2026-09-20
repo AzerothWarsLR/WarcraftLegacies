@@ -107,11 +107,6 @@
       "Value": 100
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为恐惧卫士恶魔之门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -129,6 +124,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为恐惧卫士恶魔之门"
     }
   ],
   "NewId": "n07O"

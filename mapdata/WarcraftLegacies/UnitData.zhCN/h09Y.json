@@ -136,11 +136,6 @@
       "Value": "王座卫兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练王座卫兵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "洛丹伦最强壮的士兵，国王的护卫。"
@@ -159,6 +154,11 @@
       "Id": "umsl",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练王座卫兵"
     }
   ],
   "NewId": "h09Y"

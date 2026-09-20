@@ -83,14 +83,14 @@
       "Value": "石匠"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练石匠"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "技艺娴熟的工匠，矮人奇迹的设计者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练石匠"
     }
   ],
   "NewId": "h019"

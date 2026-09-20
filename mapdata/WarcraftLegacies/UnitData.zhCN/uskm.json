@@ -91,14 +91,14 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练骷髅法|cffffcc00g|r师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "弱小的远程骷髅战士。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练骷髅法|cffffcc00g|r师"
     },
     {
       "Id": "unam",

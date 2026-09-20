@@ -195,11 +195,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造护卫舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "部落海军的支柱，海洋的征服者。"
@@ -208,6 +203,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造护卫舰"
     }
   ]
 }

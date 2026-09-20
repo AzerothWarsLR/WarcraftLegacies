@@ -166,14 +166,14 @@
       "Value": "神秘型英雄，擅长渗透和扰乱敌人。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤玛尔加尼斯"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\NecromancerMissile\\NecromancerMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤玛尔加尼斯"
     },
     {
       "Id": "upro",

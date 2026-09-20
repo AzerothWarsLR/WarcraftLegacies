@@ -89,14 +89,14 @@
       "Value": "工业祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造工业祭坛"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinAltar.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造工业祭坛"
     }
   ],
   "NewId": "o03O"

@@ -90,14 +90,14 @@
       "Value": "十字军"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练十字军"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNScarletSquire.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练十字军"
     }
   ],
   "NewId": "h08I"

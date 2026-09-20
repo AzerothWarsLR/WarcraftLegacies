@@ -84,11 +84,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活凯恩"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼）"
@@ -109,16 +104,6 @@
       "Value": "血蹄部族的酋长"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活凯恩"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "复活凯恩"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长吸收伤害和近身战斗。"
@@ -126,6 +111,21 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活凯恩"
     },
     {
       "Id": "upro",

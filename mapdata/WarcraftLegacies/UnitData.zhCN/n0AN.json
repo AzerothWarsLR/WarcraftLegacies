@@ -122,11 +122,6 @@
       "Value": "强化烈焰之柱"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化烈焰之柱"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -140,6 +135,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能塔 2）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化烈焰之柱"
     }
   ],
   "NewId": "n0AN"

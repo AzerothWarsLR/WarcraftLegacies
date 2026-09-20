@@ -115,11 +115,6 @@
       "Value": "科赞原油补给"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造科赞原油补给站"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAdvancedSpikedBarricades.blp"
@@ -155,6 +150,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "PocketFactory"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造科赞原油补给站"
     }
   ],
   "NewId": "h04Z"

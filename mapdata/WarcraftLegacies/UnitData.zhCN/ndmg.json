@@ -92,11 +92,6 @@
       "Value": 0.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤恶魔之门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -114,6 +109,11 @@
     {
       "Id": "ubpx",
       "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤恶魔之门"
     },
     {
       "Id": "unam",

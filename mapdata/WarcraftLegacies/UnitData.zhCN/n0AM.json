@@ -132,11 +132,6 @@
       "Value": "烈焰之柱"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为烈焰之柱"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -145,6 +140,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为烈焰之柱"
     }
   ],
   "NewId": "n0AM"

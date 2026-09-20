@@ -103,11 +103,6 @@
       "Value": "飞行恐魔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练飞行恐魔"
-    },
-    {
       "Id": "uhot",
       "Type": 3,
       "Value": "Q"
@@ -150,6 +145,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练飞行恐魔"
     }
   ],
   "NewId": "o04Z"

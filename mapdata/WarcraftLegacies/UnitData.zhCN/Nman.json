@@ -95,11 +95,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活玛诺洛斯"
-    },
-    {
       "Id": "ubpy",
       "Value": 1
     },
@@ -124,9 +119,9 @@
       "Value": "玛诺洛斯，毁灭者"
     },
     {
-      "Id": "utpr",
+      "Id": "usnd",
       "Type": 3,
-      "Value": "复活玛诺洛斯"
+      "Value": "HeroPitLord"
     },
     {
       "Id": "utip",
@@ -134,9 +129,14 @@
       "Value": "复活玛诺洛斯"
     },
     {
-      "Id": "usnd",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "HeroPitLord"
+      "Value": "复活玛诺洛斯"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活玛诺洛斯"
     },
     {
       "Id": "upro",

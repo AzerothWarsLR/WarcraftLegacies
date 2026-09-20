@@ -106,14 +106,14 @@
       "Value": "黑暗集会"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造黑暗集会"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黑暗集会"
     }
   ],
   "NewId": "o069"

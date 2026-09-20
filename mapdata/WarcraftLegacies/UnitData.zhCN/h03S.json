@@ -222,11 +222,6 @@
       "Value": 4.3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为圣所"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -235,6 +230,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为圣所"
     }
   ],
   "NewId": "h03S"

@@ -245,11 +245,6 @@
       "Value": "Objects\\Spawnmodels\\Undead\\UndeadLargeDeathExplode\\UndeadLargeDeathExplode.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练王族"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "最强的异种蝎。"
@@ -275,6 +270,11 @@
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练王族"
     }
   ],
   "NewId": "o000"

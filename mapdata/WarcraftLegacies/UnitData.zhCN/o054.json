@@ -116,11 +116,6 @@
       "Value": "星界圣殿"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造星界圣殿"
-    },
-    {
       "Id": "uabs",
       "Type": 3,
       "Value": ""
@@ -129,6 +124,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "ArcaneSanctum"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造星界圣殿"
     }
   ],
   "NewId": "o054"

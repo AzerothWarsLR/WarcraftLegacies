@@ -115,14 +115,14 @@
       "Value": "土魔像"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练土魔像"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "由活石构成的强韧召唤物。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练土魔像"
     }
   ],
   "NewId": "n096"

@@ -140,11 +140,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为勇士大厅"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -163,6 +158,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "Z"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为勇士大厅"
     }
   ],
   "NewId": "h05J"

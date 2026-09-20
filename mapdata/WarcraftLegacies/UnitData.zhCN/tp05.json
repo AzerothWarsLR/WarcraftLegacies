@@ -140,11 +140,6 @@
       "Value": "符文铁匠"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练符文铁匠"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "博学的战地牧师与符文匠。"
@@ -153,6 +148,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroMountainKing"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练符文铁匠"
     }
   ],
   "NewId": "tp05"

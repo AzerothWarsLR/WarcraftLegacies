@@ -134,14 +134,14 @@
       "Value": 1.1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤艾瑞达巫师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "燃烧远征的神秘法师。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤艾瑞达巫师"
     },
     {
       "Id": "unam",

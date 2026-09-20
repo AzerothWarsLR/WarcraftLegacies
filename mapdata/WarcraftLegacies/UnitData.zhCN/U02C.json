@@ -248,11 +248,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -285,11 +280,6 @@
       "Value": "尤格-萨隆"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 7
@@ -313,6 +303,16 @@
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，尤其擅长冰霜魔法。可学习霜甲术、冰霜新星、黑暗仪式和枯萎凋零。"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活尤格-萨隆"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活尤格-萨隆"
     }
   ],
   "NewId": "U02C"

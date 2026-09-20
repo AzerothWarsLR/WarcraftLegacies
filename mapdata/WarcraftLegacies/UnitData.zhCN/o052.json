@@ -87,11 +87,6 @@
       "Value": "仪式祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造仪式祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -115,6 +110,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "SacrificialPit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造仪式祭坛"
     }
   ],
   "NewId": "o052"

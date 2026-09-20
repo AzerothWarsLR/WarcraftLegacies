@@ -216,11 +216,6 @@
       "Value": 100
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "焚木村"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -229,6 +224,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "影牙城堡"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "焚木村"
     }
   ],
   "NewId": "h058"

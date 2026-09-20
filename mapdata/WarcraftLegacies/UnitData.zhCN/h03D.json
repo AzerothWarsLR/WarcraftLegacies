@@ -117,11 +117,6 @@
       "Value": "诅咒神殿"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造诅咒神殿"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.1
@@ -135,6 +130,11 @@
       "Id": "umxp",
       "Type": 1,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造诅咒神殿"
     }
   ],
   "NewId": "h03D"

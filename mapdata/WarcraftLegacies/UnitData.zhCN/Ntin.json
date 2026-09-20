@@ -129,11 +129,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活加兹鲁维"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
@@ -146,16 +141,6 @@
     {
       "Id": "upru",
       "Value": 0
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活加兹鲁维"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤加兹鲁维"
     },
     {
       "Id": "utub",
@@ -180,6 +165,21 @@
     {
       "Id": "ubpy",
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加兹鲁维"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活加兹鲁维"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活加兹鲁维"
     },
     {
       "Id": "upro",

@@ -103,11 +103,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练狮鹫射手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "技艺娴熟的狮鹫骑士。"
@@ -140,6 +135,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Knight"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狮鹫射手"
     }
   ],
   "NewId": "e01L"

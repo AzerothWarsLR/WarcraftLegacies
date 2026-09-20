@@ -94,11 +94,6 @@
       "Value": "食人魔佣兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练食人魔佣兵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "受雇于地精卡特尔的有力佣兵。"
@@ -117,6 +112,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔佣兵"
     }
   ],
   "NewId": "n099"

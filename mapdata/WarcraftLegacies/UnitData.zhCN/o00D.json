@@ -151,11 +151,6 @@
       "Value": "Objects\\Spawnmodels\\Undead\\UCancelDeath\\UCancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤金字塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -169,6 +164,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "TempleOfTheDamned"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤金字塔"
     }
   ],
   "NewId": "o00D"

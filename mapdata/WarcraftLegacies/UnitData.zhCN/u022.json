@@ -132,11 +132,6 @@
       "Value": "魔枢"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为魔枢"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（克苏恩 - 三级）"
@@ -178,6 +173,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 4.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为魔枢"
     }
   ],
   "NewId": "u022"

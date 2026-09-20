@@ -144,11 +144,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGarrosh Hellscream.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活加尔鲁什"
-    },
-    {
       "Id": "ubpx",
       "Value": 3
     },
@@ -191,11 +186,6 @@
       "Value": "加尔鲁什·地狱咆哮"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活加尔鲁什"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGarrosh Hellscream.blp"
@@ -211,11 +201,6 @@
       "Value": 140
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤加尔鲁什"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，专精于强化他的前线。"
@@ -229,6 +214,21 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加尔鲁什"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活加尔鲁什"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活加尔鲁什"
     }
   ],
   "NewId": "O06L"

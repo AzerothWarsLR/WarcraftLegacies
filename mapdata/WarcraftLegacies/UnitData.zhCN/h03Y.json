@@ -252,14 +252,14 @@
       "Value": 4.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造夜色镇"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造夜色镇"
     }
   ],
   "NewId": "h03Y"

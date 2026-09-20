@@ -89,11 +89,6 @@
       "Value": "塑造者大厅"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造塑造者大厅"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 3
@@ -102,6 +97,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Lumbermill"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造塑造者大厅"
     }
   ],
   "NewId": "h0CC"

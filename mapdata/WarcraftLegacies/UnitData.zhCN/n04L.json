@@ -226,14 +226,14 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造地狱火毁灭战舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "地狱锻造的毁灭引擎。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造地狱火毁灭战舰"
     },
     {
       "Id": "unam",

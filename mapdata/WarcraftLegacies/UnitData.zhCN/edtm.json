@@ -161,11 +161,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练猛禽德鲁伊"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "机动灵活的施法单位。可施放精灵之火和暗夜精灵形态。"
@@ -184,6 +179,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\ProcMissile\\ProcMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练猛禽德鲁伊"
     },
     {
       "Id": "unam",

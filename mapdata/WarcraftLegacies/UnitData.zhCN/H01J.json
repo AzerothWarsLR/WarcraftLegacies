@@ -174,11 +174,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活灰烬使者"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -213,14 +208,14 @@
       "Value": "大领主亚历山德罗斯·莫格莱尼"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活灰烬使者"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKnight.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神圣战士英雄，擅长在近身战斗中造成高额伤害。"
     },
     {
       "Id": "utip",
@@ -228,9 +223,14 @@
       "Value": "召唤亚历山德罗斯·莫格莱尼"
     },
     {
-      "Id": "utub",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "神圣战士英雄，擅长在近身战斗中造成高额伤害。"
+      "Value": "复活灰烬使者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活灰烬使者"
     }
   ],
   "NewId": "H01J"

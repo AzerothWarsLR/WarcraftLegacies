@@ -81,11 +81,6 @@
       "Value": "装甲狼"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练装甲狼"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\ArmoredDireWolfFeet3_Portrait.mdl"
@@ -127,6 +122,11 @@
     {
       "Id": "uclr",
       "Value": 255
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练装甲狼"
     }
   ],
   "NewId": "n06L"

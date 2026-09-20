@@ -147,11 +147,6 @@
       "Value": "军团传令官"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练军团传令官"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "基础工人。可召唤和修复建筑。"
@@ -165,6 +160,11 @@
       "Id": "uabs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练军团传令官"
     }
   ],
   "NewId": "u00D"

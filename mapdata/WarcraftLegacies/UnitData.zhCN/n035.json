@@ -105,11 +105,6 @@
       "Value": "神圣堡垒"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造神圣堡垒"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -123,6 +118,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 6
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造神圣堡垒"
     }
   ],
   "NewId": "n035"

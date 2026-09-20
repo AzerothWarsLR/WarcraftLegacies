@@ -126,14 +126,14 @@
       "Value": "神圣堡垒"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为神圣堡垒"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ChimaeraRoost"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为神圣堡垒"
     }
   ],
   "NewId": "o051"

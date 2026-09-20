@@ -119,11 +119,6 @@
       "Value": "熔火恶犬"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤熔火恶犬"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "来自火焰之地的双头嚼石兽。"
@@ -162,6 +157,11 @@
       "Id": "ushx",
       "Type": 1,
       "Value": 120
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤熔火恶犬"
     }
   ],
   "NewId": "n0CG"

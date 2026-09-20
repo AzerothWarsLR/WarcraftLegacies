@@ -176,11 +176,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练月猎手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "效命于哨兵的狡黠猎物陷阱师。"
@@ -189,6 +184,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "MaievLater"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练月猎手"
     }
   ],
   "NewId": "n06C"

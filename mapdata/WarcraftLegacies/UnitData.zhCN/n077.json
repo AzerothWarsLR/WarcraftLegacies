@@ -186,11 +186,6 @@
       "Value": 1.1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练鞭心者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "来自尼奥罗萨的黑暗巫师。"
@@ -209,6 +204,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Necromancer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练鞭心者"
     }
   ],
   "NewId": "n077"

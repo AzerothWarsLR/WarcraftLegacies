@@ -121,11 +121,6 @@
       "Value": 200
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练先锋"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Footman"
@@ -134,6 +129,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "stormwindfootman.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练先锋"
     }
   ],
   "NewId": "h04C"

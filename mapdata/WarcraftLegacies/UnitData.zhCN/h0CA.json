@@ -89,11 +89,6 @@
       "Value": "上古之池"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造上古之池"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -102,6 +97,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造上古之池"
     }
   ],
   "NewId": "h0CA"

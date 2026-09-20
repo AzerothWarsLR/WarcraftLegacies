@@ -144,11 +144,6 @@
       "Value": 1.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造火船"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "短程中型船只。"
@@ -181,6 +176,11 @@
       "Id": "uma1",
       "Type": 2,
       "Value": 0.15
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造火船"
     }
   ],
   "NewId": "h0B3"

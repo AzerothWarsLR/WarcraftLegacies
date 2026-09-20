@@ -337,11 +337,6 @@
       "Value": 4.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为观星台"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -350,6 +345,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为观星台"
     }
   ],
   "NewId": "h068"

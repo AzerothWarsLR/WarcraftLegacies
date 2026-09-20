@@ -161,11 +161,6 @@
       "Value": 1.1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练魔导师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "银月城统治精英的一员，精通奥术技艺。"
@@ -174,6 +169,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Priest"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练魔导师"
     }
   ],
   "NewId": "n063"

@@ -116,11 +116,6 @@
       "Value": "潮汐贤者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练潮汐贤者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "进攻型施法者。"
@@ -134,6 +129,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练潮汐贤者"
     }
   ],
   "NewId": "h05K"

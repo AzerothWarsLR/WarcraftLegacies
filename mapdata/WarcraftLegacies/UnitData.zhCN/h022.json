@@ -84,11 +84,6 @@
       "Value": "war3mapImported\\PeasantBanditV1.02.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤农夫"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNVillagerMan1.blp"
@@ -97,6 +92,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤农夫"
     }
   ],
   "NewId": "h022"

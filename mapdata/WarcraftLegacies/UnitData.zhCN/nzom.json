@@ -80,11 +80,6 @@
       "Value": "E"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练僵尸"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "沦为亡者的可怜灵魂。"
@@ -92,6 +87,11 @@
     {
       "Id": "ubpx",
       "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练僵尸"
     },
     {
       "Id": "unam",

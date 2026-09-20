@@ -112,11 +112,6 @@
       "Value": "灵魂尖塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造灵魂尖塔"
-    },
-    {
       "Id": "uabs",
       "Type": 3,
       "Value": ""
@@ -128,6 +123,11 @@
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造灵魂尖塔"
     }
   ],
   "NewId": "o043"

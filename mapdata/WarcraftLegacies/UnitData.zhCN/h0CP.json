@@ -98,11 +98,6 @@
       "Value": "英勇骑士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练英勇骑士"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "LordearonKnight.mdl"
@@ -111,6 +106,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKnightReClassic.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练英勇骑士"
     }
   ],
   "NewId": "h0CP"

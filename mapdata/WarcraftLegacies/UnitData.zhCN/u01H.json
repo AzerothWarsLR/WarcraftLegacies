@@ -132,11 +132,6 @@
       "Value": "古代地穴"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤古代地穴"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -155,6 +150,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤古代地穴"
     }
   ],
   "NewId": "u01H"

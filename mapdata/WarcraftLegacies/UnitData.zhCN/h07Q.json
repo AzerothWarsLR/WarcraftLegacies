@@ -107,14 +107,14 @@
       "Value": "潮汐学院"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造潮汐学院"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKultirasArcaneSanctum.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造潮汐学院"
     }
   ],
   "NewId": "h07Q"

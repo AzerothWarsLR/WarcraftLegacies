@@ -113,11 +113,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造邪兽人地洞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -126,6 +121,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "供苦工保卫领地的防御性棚屋。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造邪兽人地洞"
     },
     {
       "Id": "unam",

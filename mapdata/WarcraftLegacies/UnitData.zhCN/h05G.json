@@ -237,14 +237,14 @@
       "Value": 140
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造湖畔镇"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造湖畔镇"
     }
   ],
   "NewId": "h05G"

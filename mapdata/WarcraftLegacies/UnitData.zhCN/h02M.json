@@ -109,11 +109,6 @@
       "Value": "格雷迈恩之门"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "格雷迈恩之门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -132,6 +127,11 @@
       "Id": "umxp",
       "Type": 1,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "格雷迈恩之门"
     }
   ],
   "NewId": "h02M"

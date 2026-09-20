@@ -158,11 +158,6 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练库卡隆精英"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战歌氏族的精英卫兵。"
@@ -181,6 +176,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练库卡隆精英"
     }
   ],
   "NewId": "n03F"

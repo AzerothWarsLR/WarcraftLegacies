@@ -105,14 +105,14 @@
       "Value": 0.75
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造绞肉车"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "改装后的车辆，用于运送和抛射尸体。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造绞肉车"
     },
     {
       "Id": "unam",

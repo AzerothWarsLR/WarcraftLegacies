@@ -186,11 +186,6 @@
       "Value": "火焰浮龙"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤火焰浮龙"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFireDragonElemental.blp"
@@ -219,6 +214,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤火焰浮龙"
     }
   ],
   "NewId": "n0CF"

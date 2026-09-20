@@ -121,14 +121,14 @@
       "Value": "碎骨者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练碎骨者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "外域的强壮骑兵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练碎骨者"
     }
   ]
 }

@@ -174,14 +174,14 @@
       "Value": 0.9
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练魅魔"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "虚空中善于操控的恶魔。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练魅魔"
     },
     {
       "Id": "unam",

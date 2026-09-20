@@ -112,11 +112,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造工匠大厅"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -125,6 +120,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造工匠大厅"
     }
   ],
   "NewId": "h02Y"

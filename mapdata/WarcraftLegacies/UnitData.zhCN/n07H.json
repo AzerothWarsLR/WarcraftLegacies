@@ -128,11 +128,6 @@
       "Value": "贸易站"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造贸易站"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\KultirasTradeHouseV1.mdl"
@@ -141,6 +136,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKultirasTradeHouse.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造贸易站"
     }
   ],
   "NewId": "n07H"

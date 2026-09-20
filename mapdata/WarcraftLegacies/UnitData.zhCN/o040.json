@@ -94,17 +94,17 @@
       "Value": "洛阿祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造洛阿祭坛"
-    },
-    {
       "Id": "uclg",
       "Value": 200
     },
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造洛阿祭坛"
     }
   ],
   "NewId": "o040"

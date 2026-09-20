@@ -135,11 +135,6 @@
       "Value": "小鬼"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤小鬼"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "恶魔猛兽，法师与一切魔法的猎杀者。"
@@ -158,6 +153,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Ghoul"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤小鬼"
     }
   ],
   "NewId": "n04J"

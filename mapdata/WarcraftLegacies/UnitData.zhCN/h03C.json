@@ -215,11 +215,6 @@
       "Value": 100
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "黑鸦堡"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -248,6 +243,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\FoundryIronHordeV1.01.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "黑鸦堡"
     }
   ],
   "NewId": "h03C"

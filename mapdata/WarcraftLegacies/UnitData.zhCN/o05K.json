@@ -106,11 +106,6 @@
       "Value": "war3mapImported\\BlackrockRaiderV2.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练掠夺者"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ChaosGrunt"
@@ -119,6 +114,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBonechewerGrunt.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掠夺者"
     }
   ],
   "NewId": "o05K"

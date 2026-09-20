@@ -100,11 +100,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "军团据点"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -128,6 +123,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团 其他）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "军团据点"
     }
   ],
   "NewId": "u00G"

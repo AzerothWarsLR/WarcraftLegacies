@@ -143,11 +143,6 @@
       "Value": "（战歌）"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练食人魔法师"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Ogre Mage.mdl"
@@ -190,6 +185,11 @@
       "Id": "uabs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔法师"
     },
     {
       "Id": "unam",

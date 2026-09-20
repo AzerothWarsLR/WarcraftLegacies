@@ -147,11 +147,6 @@
       "Value": "亚基"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练亚基"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_SiegeAqir_Attack1Only.mdl"
@@ -180,6 +175,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroCryptLord"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练亚基"
     }
   ],
   "NewId": "shz5"

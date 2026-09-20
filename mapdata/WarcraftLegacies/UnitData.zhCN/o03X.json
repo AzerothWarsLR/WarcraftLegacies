@@ -98,14 +98,14 @@
       "Value": "拍卖行"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造拍卖行"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinShop2.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造拍卖行"
     }
   ],
   "NewId": "o03X"

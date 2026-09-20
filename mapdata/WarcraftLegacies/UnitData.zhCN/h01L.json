@@ -151,11 +151,6 @@
       "Value": 230
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练领主"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "近战单位，矮人氏族的首领。"
@@ -164,6 +159,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroMountainKing"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练领主"
     }
   ],
   "NewId": "h01L"

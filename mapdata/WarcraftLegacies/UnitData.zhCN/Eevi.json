@@ -172,14 +172,14 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNillidanhd.blp"
     },
     {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤伊利丹"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活伊利丹"
     },
     {
       "Id": "utpr",
@@ -187,9 +187,9 @@
       "Value": "复活伊利丹"
     },
     {
-      "Id": "uhot",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "Q"
+      "Value": "复活伊利丹"
     },
     {
       "Id": "unam",

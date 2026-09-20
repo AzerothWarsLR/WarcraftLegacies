@@ -103,11 +103,6 @@
       "Value": "洲际炮击"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为洲际炮击"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\GoblinTinkerTurret_Artillery.mdl"
@@ -130,6 +125,11 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为洲际炮击"
     }
   ],
   "NewId": "h011"

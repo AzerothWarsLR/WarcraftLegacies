@@ -166,11 +166,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活贸易亲王"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
@@ -206,19 +201,9 @@
       "Value": "加斯特·加里维克斯"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活贸易亲王"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤加斯特·加里维克斯"
     },
     {
       "Id": "utub",
@@ -247,6 +232,21 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加斯特·加里维克斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活贸易亲王"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活贸易亲王"
     }
   ],
   "NewId": "O04N"

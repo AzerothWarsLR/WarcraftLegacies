@@ -209,14 +209,14 @@
       "Value": 1.05
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造地狱火毁灭战舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "地狱锻造的末日装置。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造地狱火毁灭战舰"
     },
     {
       "Id": "unam",

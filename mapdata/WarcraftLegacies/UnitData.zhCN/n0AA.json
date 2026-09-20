@@ -156,11 +156,6 @@
       "Value": "控制点防卫者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为烈焰之柱"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -169,6 +164,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "向敌人投掷巨石。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为烈焰之柱"
     }
   ],
   "NewId": "n0AA"

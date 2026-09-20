@@ -121,11 +121,6 @@
       "Value": "镰刀德鲁伊"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练镰刀德鲁伊"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "进攻型施法者。"
@@ -164,6 +159,11 @@
       "Id": "ucun",
       "Type": 3,
       "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练镰刀德鲁伊"
     }
   ],
   "NewId": "n06K"

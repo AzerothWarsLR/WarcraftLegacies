@@ -135,11 +135,6 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练炎灵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "进攻型施法者。"
@@ -182,6 +177,11 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练炎灵"
     }
   ],
   "NewId": "ls06"

@@ -85,11 +85,6 @@
       "Value": "卡多雷船坞"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造卡多雷船坞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -98,6 +93,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "船只建造设施。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造卡多雷船坞"
     }
   ],
   "NewId": "e011"

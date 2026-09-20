@@ -141,11 +141,6 @@
       "Value": 1.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练潮汐领主"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "耐普图隆最强大的追随者。"
@@ -168,6 +163,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练潮汐领主"
     }
   ],
   "NewId": "oETL"

@@ -212,11 +212,6 @@
       "Value": 50
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练黑曜石根除者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型近战单位。"
@@ -225,6 +220,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "KotoBeast"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练黑曜石根除者"
     }
   ],
   "NewId": "sl2O"

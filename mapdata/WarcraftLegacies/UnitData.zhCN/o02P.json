@@ -104,14 +104,14 @@
       "Value": "水晶大厅"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造水晶大厅"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ChimaeraRoost"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造水晶大厅"
     }
   ],
   "NewId": "o02P"

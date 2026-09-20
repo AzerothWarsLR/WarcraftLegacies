@@ -175,11 +175,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMindWorm.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活奥罗"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -212,11 +207,6 @@
       "Value": "奥罗"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活奥罗"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 2
@@ -230,11 +220,6 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "FacelessOne"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤奥罗"
     },
     {
       "Id": "uaap",
@@ -259,6 +244,21 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤奥罗"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活奥罗"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活奥罗"
     }
   ],
   "NewId": "U02S"

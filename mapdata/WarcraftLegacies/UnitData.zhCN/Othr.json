@@ -70,11 +70,6 @@
       "Value": 21
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大酋长"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼）"
@@ -95,19 +90,9 @@
       "Value": "部落的大酋长"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活大酋长"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长强化盟友并造成魔法伤害。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤大酋长"
     },
     {
       "Id": "umdl",
@@ -118,6 +103,21 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNThrallhd.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤大酋长"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大酋长"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大酋长"
     },
     {
       "Id": "upro",

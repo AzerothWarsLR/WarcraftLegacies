@@ -75,11 +75,6 @@
       "Value": "黄金码头"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造黄金码头"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -98,6 +93,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNRuinsShipyard.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黄金码头"
     }
   ],
   "NewId": "o049"

@@ -265,11 +265,6 @@
       "Value": 200
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练兽人死亡骑士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "第二次大战中的旧死亡骑士。"
@@ -278,6 +273,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroLich"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练兽人死亡骑士"
     }
   ],
   "NewId": "n09O"

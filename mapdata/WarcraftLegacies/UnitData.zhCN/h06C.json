@@ -103,11 +103,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造高塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -116,6 +111,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造高塔"
     }
   ],
   "NewId": "h06C"

@@ -109,11 +109,6 @@
       "Value": "上古之神祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤上古之神祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -142,6 +137,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 3.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤上古之神祭坛"
     }
   ],
   "NewId": "u01F"

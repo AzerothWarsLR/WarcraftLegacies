@@ -154,24 +154,9 @@
       "Value": "神秘型英雄，擅长圣光魔法并援助盟友。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤维伦"
-    },
-    {
       "Id": "upro",
       "Type": 3,
       "Value": "先知维伦"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活维伦"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活维伦"
     },
     {
       "Id": "ussi",
@@ -212,6 +197,21 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤维伦"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活维伦"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活维伦"
     }
   ],
   "NewId": "E01I"

@@ -127,11 +127,6 @@
       "Value": "掌焰者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练掌焰者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "精通火焰法术的巫师。"
@@ -145,6 +140,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNBloodhuntress.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掌焰者"
     }
   ],
   "NewId": "h0CG"

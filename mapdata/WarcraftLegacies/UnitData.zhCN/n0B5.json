@@ -76,11 +76,6 @@
       "Value": "食腐者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练食腐者"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Shade"
@@ -89,6 +84,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "基础工人单位。可以采集黄金、建造建筑并进行修理。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食腐者"
     }
   ],
   "NewId": "n0B5"

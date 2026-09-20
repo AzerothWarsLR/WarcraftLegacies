@@ -238,11 +238,6 @@
       "Value": 1.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练光铸神射手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "受纳鲁赐予圣光之力的德莱尼精英射手。"
@@ -256,6 +251,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "war3mapImported\\Maiz con Arrow.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练光铸神射手"
     }
   ],
   "NewId": "n0BJ"

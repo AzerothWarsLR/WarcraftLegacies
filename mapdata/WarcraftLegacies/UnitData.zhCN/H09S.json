@@ -132,14 +132,14 @@
       "Value": "战斗型英雄，出色的前线支援者。"
     },
     {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Vindicator Maraad.mdl"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤玛尔拉德"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活玛尔拉德"
     },
     {
       "Id": "utpr",
@@ -147,9 +147,9 @@
       "Value": "复活玛尔拉德"
     },
     {
-      "Id": "umdl",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "war3mapImported\\Vindicator Maraad.mdl"
+      "Value": "复活玛尔拉德"
     }
   ],
   "NewId": "H09S"

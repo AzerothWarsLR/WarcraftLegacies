@@ -193,11 +193,6 @@
       "Value": "large"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -240,11 +235,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "先知"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
     },
     {
       "Id": "ussc",
@@ -300,14 +290,24 @@
       "Value": 0
     },
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "扰乱型英雄，擅长使敌人陷入混乱。"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤斯克拉姆"
     },
     {
-      "Id": "utub",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "扰乱型英雄，擅长使敌人陷入混乱。"
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
     },
     {
       "Id": "upro",

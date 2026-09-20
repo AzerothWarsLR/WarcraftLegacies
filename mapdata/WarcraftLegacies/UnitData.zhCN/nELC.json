@@ -114,11 +114,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为旋云之巅"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
@@ -137,6 +132,11 @@
       "Id": "upor",
       "Type": 3,
       "Value": "war3mapImported/Building_WyrmrestTemple_White.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为旋云之巅"
     }
   ],
   "NewId": "nELC"

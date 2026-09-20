@@ -143,11 +143,6 @@
       "Value": "肯瑞托"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练肯瑞托"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "达拉然的强大法师。"
@@ -171,6 +166,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练肯瑞托"
     }
   ],
   "NewId": "n007"

@@ -82,11 +82,6 @@
       "Value": "食人魔洞穴"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造食人魔洞穴"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -100,6 +95,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造食人魔洞穴"
     }
   ],
   "NewId": "o006"

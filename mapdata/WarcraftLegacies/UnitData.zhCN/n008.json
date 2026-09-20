@@ -128,14 +128,14 @@
       "Value": "创建一个可购买物品的商店。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造贸易站"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "贸易站"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造贸易站"
     }
   ],
   "NewId": "n008"

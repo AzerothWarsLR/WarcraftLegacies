@@ -167,11 +167,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSentry or Huntress.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活娜萨"
-    },
-    {
       "Id": "ubpx",
       "Value": 3
     },
@@ -214,19 +209,9 @@
       "Value": "娜萨"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活娜萨"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.6
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤娜萨"
     },
     {
       "Id": "utub",
@@ -247,6 +232,21 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\SentinelMissile\\SentinelMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤娜萨"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活娜萨"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活娜萨"
     }
   ],
   "NewId": "E025"

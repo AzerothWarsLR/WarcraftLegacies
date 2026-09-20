@@ -163,11 +163,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练占骨者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "掌控灵魂与巫毒之术的巨魔大师。"
@@ -176,6 +171,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroShadowHunter"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练占骨者"
     }
   ],
   "NewId": "o04E"

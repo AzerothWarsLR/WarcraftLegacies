@@ -235,11 +235,6 @@
       "Value": 50
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练冥河巨兽"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型远程单位。"
@@ -258,6 +253,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "war3mapImported\\NightFlyerPurpleSmall.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练冥河巨兽"
     }
   ],
   "NewId": "u029"

@@ -144,11 +144,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造风之古树"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -157,6 +152,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "空中单位生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造风之古树"
     },
     {
       "Id": "unam",

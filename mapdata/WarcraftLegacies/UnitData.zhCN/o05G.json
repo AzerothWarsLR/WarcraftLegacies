@@ -89,14 +89,14 @@
       "Value": "攻城车间"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造攻城车间"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcBlacksmith.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造攻城车间"
     }
   ],
   "NewId": "o05G"

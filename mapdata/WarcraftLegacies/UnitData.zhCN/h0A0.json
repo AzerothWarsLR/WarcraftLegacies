@@ -122,11 +122,6 @@
       "Value": "远程骑射手。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练燧发枪手"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -139,6 +134,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNConquistador.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练燧发枪手"
     }
   ],
   "NewId": "h0A0"

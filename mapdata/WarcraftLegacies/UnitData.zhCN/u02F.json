@@ -163,11 +163,6 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造被忘却者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "上古之神的邪恶憎恶。"
@@ -210,6 +205,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造被忘却者"
     }
   ],
   "NewId": "u02F"

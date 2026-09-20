@@ -263,11 +263,6 @@
       "Value": 0
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练赎罪的上层精灵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "远程施法单位。"
@@ -276,6 +271,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Sorceress"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练赎罪的上层精灵"
     }
   ]
 }

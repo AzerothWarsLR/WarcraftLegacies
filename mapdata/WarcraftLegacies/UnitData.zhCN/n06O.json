@@ -181,11 +181,6 @@
       "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "哨兵使馆"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -194,6 +189,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "哨兵使馆"
     }
   ],
   "NewId": "n06O"

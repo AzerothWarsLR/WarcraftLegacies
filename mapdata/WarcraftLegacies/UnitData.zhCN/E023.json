@@ -199,11 +199,6 @@
       "Value": "large"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -253,11 +248,6 @@
       "Value": "埃尔坦"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNRoyalGuardGolem.blp"
@@ -302,11 +292,6 @@
       "Value": 0
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤大宰相埃尔坦"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天空之墙）"
@@ -325,6 +310,21 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.6
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤大宰相埃尔坦"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
     }
   ],
   "NewId": "E023"

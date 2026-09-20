@@ -101,11 +101,6 @@
       "Value": "财团"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造财团"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -114,6 +109,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "高级施法者生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造财团"
     }
   ],
   "NewId": "n0A2"

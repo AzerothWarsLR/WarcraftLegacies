@@ -153,14 +153,14 @@
       "Value": 150
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造羽月要塞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造羽月要塞"
     }
   ],
   "NewId": "e00M"

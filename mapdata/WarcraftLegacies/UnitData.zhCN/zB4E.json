@@ -104,11 +104,6 @@
       "Value": "成熟的卵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练成熟的卵"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": ""
@@ -132,6 +127,11 @@
       "Id": "ushw",
       "Type": 1,
       "Value": 100
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练成熟的卵"
     }
   ],
   "NewId": "zB4E"

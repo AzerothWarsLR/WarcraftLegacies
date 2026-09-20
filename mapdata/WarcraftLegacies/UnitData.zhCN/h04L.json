@@ -196,11 +196,6 @@
       "Value": "月亮女祭司"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练月之女祭司"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "艾露恩的战斗女祭司。"
@@ -214,6 +209,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\nightelf\\HeroMoonPriestess\\HeroMoonPriestess.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练月之女祭司"
     }
   ],
   "NewId": "h04L"

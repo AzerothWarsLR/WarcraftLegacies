@@ -242,11 +242,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练狼人"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "凶猛的近战单位，能对敌人发动毁灭性打击。"
@@ -255,6 +250,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Shaman"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狼人"
     }
   ],
   "NewId": "o02J"

@@ -208,11 +208,6 @@
       "Value": "蒸汽坦克"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造蒸汽坦克"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装甲极其厚重的载具。"
@@ -221,6 +216,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造蒸汽坦克"
     }
   ],
   "NewId": "h01P"

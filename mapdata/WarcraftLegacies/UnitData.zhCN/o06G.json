@@ -91,11 +91,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练钻井平台建造船"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "一艘坚固的船只，可以建造原油钻机。"
@@ -109,6 +104,11 @@
       "Id": "uabs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练钻井平台建造船"
     }
   ],
   "NewId": "o06G"

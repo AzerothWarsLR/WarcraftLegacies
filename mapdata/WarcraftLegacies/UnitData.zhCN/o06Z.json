@@ -117,11 +117,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活|cffffcc00A|r阿曼尼督军"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（中立生物 - 祖阿曼）"
@@ -147,16 +142,6 @@
       "Value": "祖尔金"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活阿曼尼督军"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤|cffffcc00A|r阿曼尼督军"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ForestTroll"
@@ -165,6 +150,21 @@
       "Id": "utub",
       "Type": 3,
       "Value": "灵巧型英雄，擅长快速消灭单体目标和迷惑敌人。可学习镜像、疾风步、致命一击和剑刃风暴。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤|cffffcc00A|r阿曼尼督军"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活阿曼尼督军"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活|cffffcc00A|r阿曼尼督军"
     }
   ],
   "NewId": "o06Z"

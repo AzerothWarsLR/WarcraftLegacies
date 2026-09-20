@@ -109,11 +109,6 @@
       "Value": "未成熟的卵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练未成熟的卵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "野蛮的兽人战士，浸染了恶魔之血。\\n"
@@ -154,6 +149,11 @@
     {
       "Id": "uclb",
       "Value": 100
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练未成熟的卵"
     }
   ],
   "NewId": "zBIE"

@@ -153,11 +153,6 @@
       "Value": 1.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练艾瑞达秘术师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "效力于玛瑟里顿的强大艾瑞达术士。"
@@ -166,6 +161,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "PitLord"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练艾瑞达秘术师"
     }
   ]
 }

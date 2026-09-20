@@ -139,11 +139,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为巫师圣殿"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -167,6 +162,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.95
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为巫师圣殿"
     }
   ],
   "NewId": "h05A"

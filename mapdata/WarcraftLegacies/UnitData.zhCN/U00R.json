@@ -248,11 +248,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "utcc",
       "Value": 1
     },
@@ -290,11 +285,6 @@
       "Value": "克苏恩"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 7
@@ -318,6 +308,16 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（克苏恩）"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
     }
   ],
   "NewId": "U00R"

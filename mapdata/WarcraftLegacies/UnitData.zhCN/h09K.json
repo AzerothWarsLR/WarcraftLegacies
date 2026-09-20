@@ -229,11 +229,6 @@
       "Value": "嚎叫橡树"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造嚎叫橡树"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -259,6 +254,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "AncientOfWar"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造嚎叫橡树"
     }
   ],
   "NewId": "h09K"

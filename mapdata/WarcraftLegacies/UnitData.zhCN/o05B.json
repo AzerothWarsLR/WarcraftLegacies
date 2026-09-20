@@ -119,14 +119,14 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNdraeneigem.blp"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练防御者"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Captain"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练防御者"
     }
   ],
   "NewId": "o05B"

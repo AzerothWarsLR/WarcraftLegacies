@@ -144,11 +144,6 @@
       "Value": 1.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化无眠守望者"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -182,6 +177,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "Z"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化无眠守望者"
     }
   ],
   "NewId": "n0B1"

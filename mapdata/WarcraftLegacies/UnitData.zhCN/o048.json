@@ -121,11 +121,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化了望塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -152,6 +147,11 @@
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化了望塔"
     }
   ],
   "NewId": "o048"

@@ -174,11 +174,6 @@
       "Value": 4
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造奎尔丹尼小屋"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -187,6 +182,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.25
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奎尔丹尼小屋"
     }
   ],
   "NewId": "h05C"

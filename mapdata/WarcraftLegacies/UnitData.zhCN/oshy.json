@@ -80,11 +80,6 @@
       "Value": "部落码头"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造部落码头"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -93,6 +88,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "船只建造设施。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造部落码头"
     }
   ]
 }

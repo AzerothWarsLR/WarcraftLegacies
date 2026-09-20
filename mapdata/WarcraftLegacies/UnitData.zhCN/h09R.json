@@ -172,11 +172,6 @@
       "Value": "守备官"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练守备官"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的圣洁战士。"
@@ -190,6 +185,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守备官"
     }
   ],
   "NewId": "h09R"

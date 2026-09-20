@@ -119,13 +119,13 @@
       "Value": "灵巧型英雄，擅长渗透和刺杀关键目标。"
     },
     {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤阿卡玛"
-    },
-    {
-      "Id": "ubpx",
-      "Value": 2
     },
     {
       "Id": "unam",

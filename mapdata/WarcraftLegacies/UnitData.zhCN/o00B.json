@@ -155,14 +155,14 @@
       "Value": "十兵卫索斯"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "复活十兵卫索斯"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroBladeMaster"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活十兵卫索斯"
     }
   ],
   "NewId": "o00B"

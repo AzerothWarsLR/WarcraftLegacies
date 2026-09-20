@@ -112,11 +112,6 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练先知"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "支援型施法者，擅长区域封锁与治疗。"
@@ -125,6 +120,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "先知"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练先知"
     }
   ]
 }

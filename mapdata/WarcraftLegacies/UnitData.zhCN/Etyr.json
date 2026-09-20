@@ -103,11 +103,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大祭司"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵）"
@@ -126,11 +121,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "艾露恩的大祭司"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活大祭司"
     },
     {
       "Id": "ussi",
@@ -152,13 +142,23 @@
       "Value": "war3mapImported\\TyrandeWhisperwind.mdl"
     },
     {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤泰兰德"
     },
     {
-      "Id": "ubpx",
-      "Value": 1
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大祭司"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大祭司"
     },
     {
       "Id": "upro",

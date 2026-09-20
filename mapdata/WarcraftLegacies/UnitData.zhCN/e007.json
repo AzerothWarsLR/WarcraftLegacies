@@ -180,14 +180,14 @@
       "Value": "支援型施法单位。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练棘语者"
-    },
-    {
       "Id": "ucut",
       "Type": 3,
       "Value": "- Healing Surge,- Healing Surge|n- Dispel,- Healing Surge|n- Dispel|n- Natural Burial"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练棘语者"
     }
   ],
   "NewId": "e007"

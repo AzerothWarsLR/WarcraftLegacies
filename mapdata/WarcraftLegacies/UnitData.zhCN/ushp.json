@@ -78,11 +78,6 @@
       "Value": "被诅咒的港口"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤被诅咒的港口"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -96,6 +91,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 船坞）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤被诅咒的港口"
     }
   ]
 }

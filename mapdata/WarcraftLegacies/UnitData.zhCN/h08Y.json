@@ -129,11 +129,6 @@
       "Value": "枪手"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练枪手"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "GoblinSapper"
@@ -147,6 +142,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinMiner.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练枪手"
     }
   ],
   "NewId": "h08Y"

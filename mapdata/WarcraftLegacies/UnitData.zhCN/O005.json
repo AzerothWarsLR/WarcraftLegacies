@@ -81,11 +81,6 @@
       "Value": 14
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活加尔戈克"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌）"
@@ -106,19 +101,9 @@
       "Value": "战歌战斗大师"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活加尔戈克"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长强化部队和近身战斗。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤加尔戈克"
     },
     {
       "Id": "uico",
@@ -144,6 +129,21 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加尔戈克"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活加尔戈克"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活加尔戈克"
     },
     {
       "Id": "upro",

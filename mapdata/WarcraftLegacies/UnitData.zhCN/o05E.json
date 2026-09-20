@@ -116,11 +116,6 @@
       "Value": "war3mapImported\\StormElemental.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练潜藏风暴"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "潜藏风暴"
@@ -134,6 +129,11 @@
       "Id": "ucut",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练潜藏风暴"
     }
   ],
   "NewId": "o05E"

@@ -92,14 +92,14 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练花岗岩魔像"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "以魔法建造并灌注力量的极其强大的构造体。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练花岗岩魔像"
     },
     {
       "Id": "unam",

@@ -125,11 +125,6 @@
       "Value": 1.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造护卫舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "标准中型船只。"
@@ -156,6 +151,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\creeps\\UndeadDestroyerShip\\UndeadDestroyerShip.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造护卫舰"
     }
   ],
   "NewId": "h0AW"

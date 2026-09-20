@@ -139,11 +139,6 @@
       "Value": 1.25
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练战争魔像"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型抗魔法近战单位。"
@@ -157,6 +152,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarfGolem.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战争魔像"
     },
     {
       "Id": "unam",

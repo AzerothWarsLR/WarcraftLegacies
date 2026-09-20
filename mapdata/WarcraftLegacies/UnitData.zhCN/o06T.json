@@ -126,11 +126,6 @@
       "Value": "牛头人角斗士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练牛头人角斗士"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\bourrin.mdl"
@@ -139,6 +134,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGreatTaurenThieftain.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练牛头人角斗士"
     }
   ],
   "NewId": "o06T"

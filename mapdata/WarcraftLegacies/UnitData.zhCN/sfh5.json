@@ -140,11 +140,6 @@
       "Value": "空气亡魂"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练空气亡魂"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
@@ -173,6 +168,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Revenant"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练空气亡魂"
     }
   ],
   "NewId": "sfh5"

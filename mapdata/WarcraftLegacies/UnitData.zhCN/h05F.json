@@ -143,11 +143,6 @@
       "Value": "暴风城冠军"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练暴风城冠军"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "暴风城军队的精英近战勇士。"
@@ -161,6 +156,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKnightIcon.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暴风城冠军"
     }
   ],
   "NewId": "h05F"

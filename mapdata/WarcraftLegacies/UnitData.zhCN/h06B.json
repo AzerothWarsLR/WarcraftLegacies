@@ -173,11 +173,6 @@
       "Value": "圣殿骑士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练圣殿骑士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "血色十字军的正义战士。"
@@ -186,6 +181,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroPaladin"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练圣殿骑士"
     }
   ],
   "NewId": "h06B"

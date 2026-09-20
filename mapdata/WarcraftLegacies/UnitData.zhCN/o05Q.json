@@ -144,11 +144,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化|cffffcc00W|r了望塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -192,6 +187,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "防御建筑。可学习强化防御升级。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化|cffffcc00W|r了望塔"
     }
   ],
   "NewId": "o05Q"

@@ -193,11 +193,6 @@
       "Value": "私人坦克"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练私人坦克"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "GoblinSapper"
@@ -225,6 +220,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练私人坦克"
     }
   ],
   "NewId": "h09I"

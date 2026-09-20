@@ -101,11 +101,6 @@
       "Value": "被腐化的太阳之井"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "太阳之井"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -119,6 +114,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯其他）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "太阳之井"
     }
   ],
   "NewId": "n079"

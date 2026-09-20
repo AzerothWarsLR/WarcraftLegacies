@@ -150,11 +150,6 @@
       "Value": "虚空幼龙"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练虚空幼龙"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "自虚空召唤而来的迅捷虚空幼龙。"
@@ -163,6 +158,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "NetherDragon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空幼龙"
     }
   ],
   "NewId": "n070"

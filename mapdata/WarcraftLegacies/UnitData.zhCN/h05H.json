@@ -225,17 +225,17 @@
       "Value": 180
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "塞尔萨玛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
     },
     {
       "Id": "utub",
+      "Type": 3,
+      "Value": "塞尔萨玛"
+    },
+    {
+      "Id": "utip",
       "Type": 3,
       "Value": "塞尔萨玛"
     }

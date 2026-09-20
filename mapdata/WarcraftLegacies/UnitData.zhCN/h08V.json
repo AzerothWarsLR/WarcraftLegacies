@@ -99,11 +99,6 @@
       "Value": "刃轮女战士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练刃轮女战士"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Huntress"
@@ -136,6 +131,11 @@
       "Id": "umsl",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练刃轮女战士"
     }
   ],
   "NewId": "h08V"

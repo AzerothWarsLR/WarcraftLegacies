@@ -161,11 +161,6 @@
       "Value": "掷弹兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练掷弹兵"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Grenadier.mdl"
@@ -209,6 +204,11 @@
       "Id": "ulpy",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掷弹兵"
     }
   ],
   "NewId": "h09J"

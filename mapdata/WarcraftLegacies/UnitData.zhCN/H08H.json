@@ -88,16 +88,6 @@
       "Value": "神秘型英雄，擅长治疗和辅助魔法。"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大检察官"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活大检察官"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（血色）"
@@ -121,11 +111,6 @@
       "Value": "R"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤萨莉"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWhitemane.blp"
@@ -139,6 +124,21 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Sylvanus"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤萨莉"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大检察官"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大检察官"
     }
   ],
   "NewId": "H08H"

@@ -87,11 +87,6 @@
       "Value": "训练场"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造场"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -118,6 +113,11 @@
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造场"
     }
   ],
   "NewId": "o041"

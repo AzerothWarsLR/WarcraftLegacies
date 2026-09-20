@@ -104,14 +104,14 @@
       "Value": "灵巧型英雄，擅长近身战斗并在战斗中进退自如。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤玛维"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNmaievhd.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤玛维"
     },
     {
       "Id": "upro",

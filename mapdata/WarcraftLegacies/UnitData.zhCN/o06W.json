@@ -155,11 +155,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDruidoftheClawIceTrollIconV1.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活巫医"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（中立生物 - 祖达克）"
@@ -203,9 +198,9 @@
       "Value": 180
     },
     {
-      "Id": "utpr",
+      "Id": "usnd",
       "Type": 3,
-      "Value": "复活巫医"
+      "Value": "ForestTroll"
     },
     {
       "Id": "utip",
@@ -213,9 +208,14 @@
       "Value": "召唤迦尔达拉"
     },
     {
-      "Id": "usnd",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "ForestTroll"
+      "Value": "复活巫医"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫医"
     }
   ],
   "NewId": "o06W"

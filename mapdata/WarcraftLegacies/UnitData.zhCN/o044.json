@@ -103,11 +103,6 @@
       "Value": "恐龙围栏"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造恐龙围栏"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
@@ -119,6 +114,11 @@
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造恐龙围栏"
     }
   ],
   "NewId": "o044"

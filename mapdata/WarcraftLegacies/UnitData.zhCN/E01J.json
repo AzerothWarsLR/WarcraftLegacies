@@ -87,11 +87,6 @@
       "Value": "R099"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活努波顿"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德鲁伊）"
@@ -112,19 +107,9 @@
       "Value": "先知努波顿"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活努波顿"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长治疗盟友并扰乱敌人。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤努波顿"
     },
     {
       "Id": "uico",
@@ -144,6 +129,21 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤努波顿"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活努波顿"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活努波顿"
     }
   ],
   "NewId": "E01J"

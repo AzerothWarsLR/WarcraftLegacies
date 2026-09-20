@@ -133,11 +133,6 @@
       "Value": 3.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "(|cffffff00Z|r)升级到强化灵魂之塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -156,6 +151,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "(|cffffff00Z|r)升级到强化灵魂之塔"
     }
   ],
   "NewId": "u00I"

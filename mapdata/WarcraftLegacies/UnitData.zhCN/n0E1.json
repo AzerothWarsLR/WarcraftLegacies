@@ -98,11 +98,6 @@
       "Value": "强化天怒之塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化天怒之塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -121,6 +116,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,third"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化天怒之塔"
     }
   ],
   "NewId": "n0E1"

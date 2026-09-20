@@ -163,11 +163,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练修补匠"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "精通科技的地精。"
@@ -176,6 +171,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroTinker"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练修补匠"
     }
   ],
   "NewId": "o04Q"

@@ -191,11 +191,6 @@
       "Value": 1.1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练术士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "部落的暗影法术师。"
@@ -214,6 +209,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "ShamanX"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练术士"
     }
   ]
 }

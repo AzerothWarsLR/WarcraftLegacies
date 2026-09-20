@@ -76,11 +76,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造暗夜精灵运输船 |cffffcc00Q|r"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTransportShip2.blp"
@@ -89,6 +84,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_NightElfTransportShip.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造暗夜精灵运输船 |cffffcc00Q|r"
     },
     {
       "Id": "unam",

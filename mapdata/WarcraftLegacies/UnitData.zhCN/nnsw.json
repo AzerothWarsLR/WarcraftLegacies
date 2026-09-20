@@ -96,14 +96,14 @@
       "Value": "（伊利达雷）"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练海妖"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "海妖"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练海妖"
     }
   ]
 }

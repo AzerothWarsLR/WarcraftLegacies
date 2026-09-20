@@ -80,11 +80,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMorgraineBlue.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活伯瓦尔·弗塔根"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（暴风城）"
@@ -110,11 +105,6 @@
       "Value": "伯瓦尔·弗塔根"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活伯瓦尔·弗塔根"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.2
@@ -130,14 +120,24 @@
       "Value": "Uther"
     },
     {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤伯瓦尔·弗塔根"
     },
     {
-      "Id": "usca",
-      "Type": 1,
-      "Value": 1.25
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活伯瓦尔·弗塔根"
     }
   ],
   "NewId": "H017"

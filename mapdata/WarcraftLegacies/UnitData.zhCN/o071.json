@@ -125,11 +125,6 @@
       "Value": "暗矛狂战士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练暗矛狂战士"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Axe\\AxeMissile.mdl"
@@ -153,6 +148,11 @@
       "Id": "ualp",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暗矛狂战士"
     }
   ],
   "NewId": "o071"

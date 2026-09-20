@@ -101,11 +101,6 @@
       "Value": 200
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤邪能守卫"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "前线恶魔战士。"
@@ -114,6 +109,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "恶魔卫士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤邪能守卫"
     }
   ],
   "NewId": "n05B"

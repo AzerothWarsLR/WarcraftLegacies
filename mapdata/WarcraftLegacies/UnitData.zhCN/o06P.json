@@ -167,11 +167,6 @@
       "Value": 1.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练狼人萨满祭司"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "效力于吉尔尼斯的强大狼人萨满祭司。"
@@ -190,6 +185,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狼人萨满祭司"
     }
   ],
   "NewId": "o06P"

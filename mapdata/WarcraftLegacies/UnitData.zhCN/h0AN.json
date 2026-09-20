@@ -124,11 +124,6 @@
       "Value": "毁灭战舰"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造毁灭战舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "具有统治力的重型船只。"
@@ -170,6 +165,11 @@
     {
       "Id": "ubpy",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造毁灭战舰"
     }
   ],
   "NewId": "h0AN"

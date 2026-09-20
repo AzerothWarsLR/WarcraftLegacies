@@ -105,11 +105,6 @@
       "Value": "Q"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练棕色雷象"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\WildElekkBrown.mdl"
@@ -133,6 +128,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "重型近战单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练棕色雷象"
     }
   ]
 }

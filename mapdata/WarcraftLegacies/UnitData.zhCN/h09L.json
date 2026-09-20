@@ -230,11 +230,6 @@
       "Value": "绯红大教堂"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造绯红大教堂"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -243,6 +238,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,second"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造绯红大教堂"
     }
   ],
   "NewId": "h09L"

@@ -97,11 +97,6 @@
       "Value": 4
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造攻城车间"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -130,6 +125,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "ShadowArmory"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造攻城车间"
     }
   ],
   "NewId": "h094"

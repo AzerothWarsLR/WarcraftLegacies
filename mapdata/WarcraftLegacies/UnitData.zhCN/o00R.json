@@ -142,11 +142,6 @@
       "Value": "孵化场"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤孵化场"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -170,6 +165,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 3.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤孵化场"
     }
   ],
   "NewId": "o00R"

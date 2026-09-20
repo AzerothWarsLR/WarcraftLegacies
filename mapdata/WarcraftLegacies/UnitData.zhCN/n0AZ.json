@@ -154,11 +154,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为无眠守望者"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -192,6 +187,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为无眠守望者"
     }
   ],
   "NewId": "n0AZ"

@@ -116,11 +116,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroKingVarian.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活瓦里安·乌瑞恩"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（暴风城）"
@@ -141,19 +136,9 @@
       "Value": "瓦里安·乌瑞恩国王"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活瓦里安·乌瑞恩"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长近身战斗并增强附近的部队。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤瓦里安·乌瑞恩"
     },
     {
       "Id": "ubpx",
@@ -173,6 +158,21 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤瓦里安·乌瑞恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活瓦里安·乌瑞恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活瓦里安·乌瑞恩"
     }
   ],
   "NewId": "H00R"

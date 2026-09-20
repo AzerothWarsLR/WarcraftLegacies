@@ -240,11 +240,6 @@
       "Value": 0.95
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练女巫猎人"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "余烬骑士团的游侠。"
@@ -253,6 +248,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Bandit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练女巫猎人"
     }
   ],
   "NewId": "n09B"

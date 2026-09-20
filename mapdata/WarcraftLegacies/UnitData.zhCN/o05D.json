@@ -122,11 +122,6 @@
       "Value": "元素师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练元素师"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\VillagerDraenei.mdl"
@@ -155,6 +150,11 @@
       "Id": "ucut",
       "Type": 3,
       "Value": "- Frost Bolt,- Frost Bolt|n- Summon Earth Elemental,- Frost Bolt|n- Summon Earth Elemental|n- Frost Armor"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练元素师"
     }
   ],
   "NewId": "o05D"

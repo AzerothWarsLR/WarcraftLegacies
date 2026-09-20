@@ -128,11 +128,6 @@
       "Value": "末日领主"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤末日领主"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "受命守卫大恶魔的精锐防御者。"
@@ -150,6 +145,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKazzakIon.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤末日领主"
     }
   ],
   "NewId": "n04O"

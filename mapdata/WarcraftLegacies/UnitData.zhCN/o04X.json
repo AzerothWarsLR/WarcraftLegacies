@@ -94,11 +94,6 @@
       "Value": "洛阿神龛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造洛阿神龛"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.75
@@ -110,6 +105,11 @@
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造洛阿神龛"
     }
   ],
   "NewId": "o04X"

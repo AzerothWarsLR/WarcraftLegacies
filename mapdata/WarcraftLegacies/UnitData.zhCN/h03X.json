@@ -138,11 +138,6 @@
       "Value": 150
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造哨兵塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -156,6 +151,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.05
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造哨兵塔"
     }
   ],
   "NewId": "h03X"

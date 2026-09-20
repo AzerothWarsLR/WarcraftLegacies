@@ -108,11 +108,6 @@
       "Value": "Q"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练伐木机"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "地精伐木机。"
@@ -121,6 +116,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练伐木机"
     },
     {
       "Id": "unam",

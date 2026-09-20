@@ -110,11 +110,6 @@
       "Value": "树苗"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练树苗"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "基础近战单位，可反弹所受的近战伤害。"
@@ -123,6 +118,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Ent"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练树苗"
     }
   ],
   "NewId": "n05H"

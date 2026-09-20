@@ -181,9 +181,9 @@
       "Value": "炼金术士英雄，擅长防御和进攻作战。"
     },
     {
-      "Id": "uawt",
+      "Id": "ua1m",
       "Type": 3,
-      "Value": "复活诺格弗格"
+      "Value": "Abilities\\Spells\\Other\\AcidBomb\\BottleMissile.mdl"
     },
     {
       "Id": "utip",
@@ -196,9 +196,9 @@
       "Value": "复活诺格弗格"
     },
     {
-      "Id": "ua1m",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "Abilities\\Spells\\Other\\AcidBomb\\BottleMissile.mdl"
+      "Value": "复活诺格弗格"
     }
   ],
   "NewId": "VH01"

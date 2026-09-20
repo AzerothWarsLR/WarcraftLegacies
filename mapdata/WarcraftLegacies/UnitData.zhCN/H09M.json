@@ -134,11 +134,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMagicalCrystal.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活阿达尔"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德莱尼）"
@@ -174,19 +169,9 @@
       "Value": "阿达尔"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活阿达尔"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMagicalCrystal.blp"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤阿达尔"
     },
     {
       "Id": "utub",
@@ -215,6 +200,21 @@
     {
       "Id": "uclg",
       "Value": 222
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿达尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活阿达尔"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活阿达尔"
     }
   ],
   "NewId": "H09M"

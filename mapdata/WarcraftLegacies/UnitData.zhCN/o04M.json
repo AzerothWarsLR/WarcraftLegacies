@@ -171,11 +171,6 @@
       "Value": "科赞贸易中心"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造科赞贸易中心"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -213,6 +208,11 @@
       "Id": "ulpz",
       "Type": 2,
       "Value": 400
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造科赞贸易中心"
     }
   ],
   "NewId": "o04M"

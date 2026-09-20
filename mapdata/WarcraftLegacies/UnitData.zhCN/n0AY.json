@@ -104,11 +104,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为酸液喷吐者"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -142,6 +137,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为酸液喷吐者"
     }
   ],
   "NewId": "n0AY"

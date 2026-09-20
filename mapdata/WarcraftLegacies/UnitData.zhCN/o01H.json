@@ -109,14 +109,14 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBonechewerGrunt.blp"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练暮光之锤执行者"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ChaosGrunt"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暮光之锤执行者"
     }
   ],
   "NewId": "o01H"

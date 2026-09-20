@@ -105,11 +105,6 @@
       "Value": "骷髅兽人步兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练骷髅兽人步兵"
-    },
-    {
       "Id": "ucua",
       "Type": 3,
       "Value": "NONE"
@@ -128,6 +123,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Skeleton"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练骷髅兽人步兵"
     }
   ],
   "NewId": "n00O"

@@ -112,14 +112,14 @@
       "Value": "大都会"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为大都会"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ChimaeraRoost"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为大都会"
     }
   ],
   "NewId": "o050"

@@ -132,14 +132,14 @@
       "Value": "游侠"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练游侠"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "基础远程攻击者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练游侠"
     }
   ]
 }

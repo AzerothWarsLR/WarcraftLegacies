@@ -115,11 +115,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造不祥宝库"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -143,6 +138,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造不祥宝库"
     }
   ],
   "NewId": "n0B2"

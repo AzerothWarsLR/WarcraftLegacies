@@ -226,11 +226,6 @@
       "Value": "步行机甲"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造步行机甲"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "远程攻城载具，擅长击落空中单位。"
@@ -278,6 +273,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.7
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造步行机甲"
     }
   ],
   "NewId": "h09H"

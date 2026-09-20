@@ -158,11 +158,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练先知"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "年迈而睿智的萨满祭司。"
@@ -171,6 +166,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroFarseer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练先知"
     }
   ],
   "NewId": "o00A"

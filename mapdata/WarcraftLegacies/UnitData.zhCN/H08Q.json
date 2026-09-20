@@ -107,11 +107,6 @@
       "Value": "W"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤艾苏尔"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Demoness"
@@ -122,12 +117,17 @@
       "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
     },
     {
-      "Id": "uawt",
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤艾苏尔"
+    },
+    {
+      "Id": "utpr",
       "Type": 3,
       "Value": "复活艾苏尔"
     },
     {
-      "Id": "utpr",
+      "Id": "uawt",
       "Type": 3,
       "Value": "复活艾苏尔"
     }

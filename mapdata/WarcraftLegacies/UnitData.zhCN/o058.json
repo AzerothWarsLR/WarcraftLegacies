@@ -94,11 +94,6 @@
       "Value": "圣光祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造圣光祭坛"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 3.5
@@ -107,6 +102,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "AltarOfElders"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造圣光祭坛"
     }
   ],
   "NewId": "o058"

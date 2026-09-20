@@ -212,11 +212,6 @@
       "Value": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练贸易飞艇"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "飞行木材贸易船。训练完成后无法控制，会自动在贸易中心与随机一处地精贸易点之间往返贸易。会随时间收集木材。"
@@ -240,6 +235,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpaceOrc_AttackHelicopter_Condor.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练贸易飞艇"
     }
   ],
   "NewId": "n0B9"

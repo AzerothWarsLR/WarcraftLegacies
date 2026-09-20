@@ -120,11 +120,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrc_Warlord.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活邪能大酋长"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能）"
@@ -160,11 +155,6 @@
       "Value": "卡加斯·刃拳"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活邪能大酋长"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.35
@@ -183,6 +173,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤卡加斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活邪能大酋长"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活邪能大酋长"
     }
   ],
   "NewId": "N03D"

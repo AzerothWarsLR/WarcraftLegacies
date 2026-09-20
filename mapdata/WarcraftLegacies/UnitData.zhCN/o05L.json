@@ -188,11 +188,6 @@
       "Value": "巨龙猎手"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练巨龙猎手"
-    },
-    {
       "Id": "uver",
       "Value": 0
     },
@@ -215,6 +210,11 @@
       "Id": "uma2",
       "Type": 2,
       "Value": 0.15
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练巨龙猎手"
     }
   ],
   "NewId": "o05L"

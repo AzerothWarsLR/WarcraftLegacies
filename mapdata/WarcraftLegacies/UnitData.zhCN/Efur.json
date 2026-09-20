@@ -53,11 +53,6 @@
       "Value": "SLS0,AInv,Ault"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活导师"
-    },
-    {
       "Id": "ubpy",
       "Value": 1
     },
@@ -82,14 +77,14 @@
       "Value": "大德鲁伊"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活导师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长治疗盟友并扰乱敌人。"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMalfurionhd.blp"
     },
     {
       "Id": "utip",
@@ -97,9 +92,14 @@
       "Value": "召唤玛法里奥"
     },
     {
-      "Id": "uico",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMalfurionhd.blp"
+      "Value": "复活导师"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活导师"
     },
     {
       "Id": "upro",

@@ -77,11 +77,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造孵化场"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -110,6 +105,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "ShadowCrypt"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造孵化场"
     }
   ]
 }

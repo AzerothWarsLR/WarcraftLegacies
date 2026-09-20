@@ -87,11 +87,6 @@
       "Value": "坦克工厂"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造坦克工厂"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -115,6 +110,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造坦克工厂"
     }
   ],
   "NewId": "o05T"

@@ -77,11 +77,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGhostOfKelThuzad.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活通灵师"
-    },
-    {
       "Id": "ubpx",
       "Value": 1
     },
@@ -120,11 +115,6 @@
       "Value": "诅咒教派的主人"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活通灵师"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.4
@@ -133,6 +123,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤克尔苏加德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活通灵师"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活通灵师"
     },
     {
       "Id": "upro",

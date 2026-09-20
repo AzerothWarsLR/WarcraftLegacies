@@ -127,11 +127,6 @@
       "Value": "强化水晶守护者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化水晶守护者"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDraeneiSpiritTower.blp"
@@ -160,6 +155,11 @@
       "Id": "umxp",
       "Type": 1,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化水晶守护者"
     }
   ],
   "NewId": "u01Q"

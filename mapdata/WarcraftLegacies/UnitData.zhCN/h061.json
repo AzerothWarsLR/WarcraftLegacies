@@ -139,11 +139,6 @@
       "Value": "维库狂战士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练维库狂战士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "维库人的精锐战士。"
@@ -162,6 +157,11 @@
       "Id": "umsl",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练维库狂战士"
     }
   ],
   "NewId": "h061"

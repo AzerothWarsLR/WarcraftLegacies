@@ -129,11 +129,6 @@
       "Value": 1.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造桨帆船"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "远程中型船只。"
@@ -165,6 +160,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造桨帆船"
     }
   ],
   "NewId": "h0AZ"

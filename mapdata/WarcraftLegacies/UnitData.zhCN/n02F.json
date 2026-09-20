@@ -148,11 +148,6 @@
       "Value": "术士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练术士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "研习黑暗魔法的精灵奥术师。"
@@ -161,6 +156,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练术士"
     }
   ],
   "NewId": "n02F"

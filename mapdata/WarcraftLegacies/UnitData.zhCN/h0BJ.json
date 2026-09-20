@@ -131,11 +131,6 @@
       "Value": "强化火炮塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化火炮塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -154,6 +149,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化火炮塔"
     }
   ],
   "NewId": "h0BJ"

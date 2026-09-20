@@ -119,11 +119,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为宏伟城堡"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.95
@@ -132,6 +127,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "宏伟城堡"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为宏伟城堡"
     }
   ],
   "NewId": "n06R"

@@ -98,11 +98,6 @@
       "Value": "ReplaceableTextures/CommandButtons/BTNHigh Elf Spell Breaker.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活太阳王"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯）"
@@ -126,11 +121,6 @@
       "Id": "upro",
       "Type": 3,
       "Value": "安纳斯特里亚·逐日者"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活太阳王"
     },
     {
       "Id": "ussi",
@@ -164,6 +154,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤安纳斯特里亚"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活太阳王"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活太阳王"
     }
   ],
   "NewId": "H00Q"

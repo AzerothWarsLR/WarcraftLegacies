@@ -244,11 +244,6 @@
       "Value": 1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造蝎子"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "风暴锻造的战争机械。"
@@ -276,6 +271,11 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造蝎子"
     }
   ],
   "NewId": "n0E4"

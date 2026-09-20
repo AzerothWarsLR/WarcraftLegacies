@@ -170,16 +170,6 @@
       "Value": "（吉尔尼斯）"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活苔丝"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活苔丝"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTess.blp"
@@ -204,11 +194,6 @@
       "Value": "Q"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤苔丝"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "灵巧型英雄，擅长与敌人交战和脱离。"
@@ -222,6 +207,21 @@
       "Id": "uhas",
       "Type": 3,
       "Value": "ACsa,AOsf,ACat,AEsf"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤苔丝"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活苔丝"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活苔丝"
     }
   ],
   "NewId": "TGGN"

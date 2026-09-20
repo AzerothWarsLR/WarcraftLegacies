@@ -109,11 +109,6 @@
       "Value": "迅猛龙骑士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练迅猛龙骑士"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\EliteHeadhunterScoutAWRV2.mdl"
@@ -127,6 +122,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "TrollBatrider"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练迅猛龙骑士"
     }
   ],
   "NewId": "h05D"

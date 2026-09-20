@@ -129,21 +129,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTidelord.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活耐普图隆"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤耐普图隆"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活耐普图隆"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl"
@@ -162,6 +147,21 @@
       "Id": "ulpz",
       "Type": 2,
       "Value": 250
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤耐普图隆"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活耐普图隆"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活耐普图隆"
     }
   ],
   "NewId": "UELN"

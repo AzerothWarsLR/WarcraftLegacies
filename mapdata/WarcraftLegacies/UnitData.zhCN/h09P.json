@@ -149,11 +149,6 @@
       "Value": "长弓手"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练长弓手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "提瑞斯法技艺高超的猎人。"
@@ -162,6 +157,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Footman"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练长弓手"
     }
   ],
   "NewId": "h09P"

@@ -219,11 +219,6 @@
       "Value": 150
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练炮艇"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "矮人工程学落入了天真的人类手中。"
@@ -236,6 +231,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练炮艇"
     }
   ],
   "NewId": "n06N"

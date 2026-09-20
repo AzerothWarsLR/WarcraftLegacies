@@ -147,14 +147,14 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤克苏恩之柱"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤克苏恩之柱"
     }
   ],
   "NewId": "n071"

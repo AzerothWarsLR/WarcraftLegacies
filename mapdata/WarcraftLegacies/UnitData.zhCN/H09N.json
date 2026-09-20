@@ -120,11 +120,6 @@
       "Value": "R"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤艾格文"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Aegwynn.mdl"
@@ -149,16 +144,6 @@
       "Value": "war3mapImported\\VeryShinyMagicOrb.mdl"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活艾格文"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活艾格文"
-    },
-    {
       "Id": "uani",
       "Type": 3,
       "Value": "large"
@@ -167,6 +152,21 @@
       "Id": "uaap",
       "Type": 3,
       "Value": "large"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤艾格文"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活艾格文"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活艾格文"
     }
   ],
   "NewId": "H09N"

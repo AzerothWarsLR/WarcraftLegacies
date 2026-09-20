@@ -131,11 +131,6 @@
       "Value": 1.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造侦察船"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "小型侦察船。"
@@ -159,6 +154,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNScoutShip3.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造侦察船"
     }
   ],
   "NewId": "h0AS"

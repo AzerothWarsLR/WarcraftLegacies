@@ -91,11 +91,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造潮汐守望者"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -129,6 +124,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造潮汐守望者"
     }
   ]
 }

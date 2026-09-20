@@ -115,11 +115,6 @@
       "Value": 1.2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤苦痛女王"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "残酷欢愉之母。"
@@ -128,6 +123,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\demon\\Demoness\\Demoness.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤苦痛女王"
     },
     {
       "Id": "unam",

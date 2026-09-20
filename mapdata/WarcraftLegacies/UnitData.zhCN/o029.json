@@ -134,14 +134,14 @@
       "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造月神殿"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造月神殿"
     }
   ],
   "NewId": "o029"

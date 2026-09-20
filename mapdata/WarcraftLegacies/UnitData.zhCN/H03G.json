@@ -141,11 +141,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNThaurissan.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活黑石皇帝"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（铁炉堡）"
@@ -181,16 +176,6 @@
       "Value": "达格兰·索瑞森大帝"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活黑石皇帝"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤达格兰·索瑞森"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "压迫型神秘英雄，擅长造成魔法伤害。"
@@ -203,6 +188,21 @@
     {
       "Id": "ubpx",
       "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤达格兰·索瑞森"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活黑石皇帝"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活黑石皇帝"
     }
   ],
   "NewId": "H03G"

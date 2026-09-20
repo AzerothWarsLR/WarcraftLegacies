@@ -89,11 +89,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造知识祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -102,6 +97,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造知识祭坛"
     }
   ],
   "NewId": "h044"

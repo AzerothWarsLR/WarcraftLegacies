@@ -101,11 +101,6 @@
       "Value": "蛮兵"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练蛮兵"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "Units\\Creeps\\FacelessOne\\FacelessOne.mdl"
@@ -119,6 +114,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "NagaMyrmidon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练蛮兵"
     }
   ],
   "NewId": "o01G"

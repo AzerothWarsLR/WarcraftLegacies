@@ -121,11 +121,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造疯狂金字塔"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
@@ -144,6 +139,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,second"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造疯狂金字塔"
     }
   ],
   "NewId": "n0DU"

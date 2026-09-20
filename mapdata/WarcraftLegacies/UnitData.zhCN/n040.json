@@ -124,11 +124,6 @@
       "Value": 3.2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤灵魂熔炉"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -142,6 +137,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Graveyard"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤灵魂熔炉"
     }
   ],
   "NewId": "n040"

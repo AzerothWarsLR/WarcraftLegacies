@@ -76,14 +76,14 @@
       "Value": "采石场"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造采石场"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.95
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造采石场"
     }
   ],
   "NewId": "o068"

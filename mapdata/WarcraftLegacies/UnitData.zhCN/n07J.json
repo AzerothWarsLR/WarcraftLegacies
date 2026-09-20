@@ -114,11 +114,6 @@
       "Value": 4
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造愿望熔炉"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -147,6 +142,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造愿望熔炉"
     }
   ],
   "NewId": "n07J"

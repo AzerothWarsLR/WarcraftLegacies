@@ -166,11 +166,6 @@
       "Value": "守望者堡垒"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造守望者堡垒"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -198,6 +193,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造守望者堡垒"
     }
   ],
   "NewId": "e00T"

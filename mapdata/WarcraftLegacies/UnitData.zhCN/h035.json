@@ -98,14 +98,14 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLordaeronMageTower.blp"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造奥术研习所"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "奥术研习所"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥术研习所"
     }
   ],
   "NewId": "h035"

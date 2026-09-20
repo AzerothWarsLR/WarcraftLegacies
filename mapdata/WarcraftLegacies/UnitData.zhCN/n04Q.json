@@ -78,11 +78,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤虚空深渊"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "主要部队生产建筑。|r"
@@ -125,6 +120,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "SacrificialPit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤虚空深渊"
     }
   ],
   "NewId": "n04Q"

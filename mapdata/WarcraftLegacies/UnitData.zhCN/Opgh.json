@@ -82,11 +82,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活腐化者"
-    },
-    {
       "Id": "ubpx",
       "Value": 1
     },
@@ -115,14 +110,19 @@
       "Value": "战歌氏族的腐化者"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤格罗玛什·地狱咆哮"
+    },
+    {
       "Id": "utpr",
       "Type": 3,
       "Value": "复活腐化者"
     },
     {
-      "Id": "utip",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "召唤格罗玛什·地狱咆哮"
+      "Value": "复活腐化者"
     },
     {
       "Id": "upro",

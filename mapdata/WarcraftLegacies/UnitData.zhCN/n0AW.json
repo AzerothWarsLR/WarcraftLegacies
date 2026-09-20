@@ -86,11 +86,6 @@
       "Value": 0.85
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造孵化池"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -119,6 +114,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "ShadowSacrificialPit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造孵化池"
     }
   ],
   "NewId": "n0AW"

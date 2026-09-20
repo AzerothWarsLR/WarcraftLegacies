@@ -143,14 +143,14 @@
       "Value": 35
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练堕落灵魂"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Ghost"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练堕落灵魂"
     }
   ],
   "NewId": "u01C"

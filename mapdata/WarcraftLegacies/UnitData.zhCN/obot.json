@@ -81,11 +81,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造部落运输船"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.65
@@ -94,6 +89,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNUndeadTransport.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造部落运输船"
     }
   ]
 }

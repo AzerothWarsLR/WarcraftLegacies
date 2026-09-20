@@ -116,11 +116,6 @@
       "Value": "炼金术士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练炼金术士"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Goblin_Alchemist.mdl"
@@ -173,6 +168,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\StrongDrink\\BrewmasterMissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练炼金术士"
     }
   ],
   "NewId": "o04O"

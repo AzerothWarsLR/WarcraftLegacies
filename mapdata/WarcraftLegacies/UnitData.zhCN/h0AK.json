@@ -74,11 +74,6 @@
       "Value": "米奈希尔港"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造船坞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -110,6 +105,11 @@
       "Id": "uspa",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造船坞"
     }
   ],
   "NewId": "h0AK"

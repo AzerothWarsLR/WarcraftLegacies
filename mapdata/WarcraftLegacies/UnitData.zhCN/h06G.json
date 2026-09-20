@@ -186,11 +186,6 @@
       "Value": "断裂的萨多尔大桥"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "断裂的萨多尔大桥"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -224,6 +219,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 18
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "断裂的萨多尔大桥"
     }
   ],
   "NewId": "h06G"

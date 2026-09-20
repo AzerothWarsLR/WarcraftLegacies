@@ -76,11 +76,6 @@
       "Value": "C"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为加固城镇"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -127,6 +122,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.85
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为加固城镇"
     }
   ],
   "NewId": "n05W"

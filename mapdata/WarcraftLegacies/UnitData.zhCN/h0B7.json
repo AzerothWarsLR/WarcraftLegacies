@@ -226,11 +226,6 @@
       "Value": "炮舰"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造炮舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "远程攻城重型船只。"
@@ -268,6 +263,11 @@
       "Id": "ua2m",
       "Type": 3,
       "Value": "war3mapImported\\LowQualityCannonball.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造炮舰"
     }
   ],
   "NewId": "h0B7"

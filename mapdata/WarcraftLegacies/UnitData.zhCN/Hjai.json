@@ -88,11 +88,6 @@
       "Value": "Q"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤吉安娜"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Hero_Jaina.mdl"
@@ -101,6 +96,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNjainahd.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤吉安娜"
     },
     {
       "Id": "upro",

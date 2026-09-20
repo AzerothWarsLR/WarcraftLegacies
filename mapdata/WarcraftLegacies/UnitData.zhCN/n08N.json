@@ -98,11 +98,6 @@
       "Value": 2.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化晶格尖塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -131,6 +126,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化晶格尖塔"
     }
   ],
   "NewId": "n08N"

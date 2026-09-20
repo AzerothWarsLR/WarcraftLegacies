@@ -109,11 +109,6 @@
       "Value": 3.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造工程师公会"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -136,6 +131,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造工程师公会"
     }
   ],
   "NewId": "o01M"

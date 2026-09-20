@@ -177,11 +177,6 @@
       "Value": "斯库拉"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练斯库拉"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSkyHydra.blp"
@@ -190,6 +185,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\SkyHydra.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练斯库拉"
     }
   ],
   "NewId": "e00Y"

@@ -194,11 +194,6 @@
       "Value": "强化钢铁要塞"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化钢铁要塞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -212,6 +207,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌塔 2）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化钢铁要塞"
     }
   ],
   "NewId": "n0AL"

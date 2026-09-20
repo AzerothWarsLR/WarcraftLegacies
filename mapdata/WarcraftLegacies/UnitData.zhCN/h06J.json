@@ -121,14 +121,14 @@
       "Value": "短射程的强大神射手。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练海军狙击手"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoldenArcherB.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练海军狙击手"
     }
   ],
   "NewId": "h06J"

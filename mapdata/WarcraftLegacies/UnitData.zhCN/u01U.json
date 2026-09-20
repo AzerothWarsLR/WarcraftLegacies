@@ -150,11 +150,6 @@
       "Value": 3.25
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为灵魂之塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -163,6 +158,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "升级为升级以建造防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为灵魂之塔"
     }
   ],
   "NewId": "u01U"

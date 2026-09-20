@@ -177,11 +177,6 @@
       "Value": "收割女巫"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练收割女巫"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "吉尔尼斯的女巫。"
@@ -215,6 +210,11 @@
       "Id": "ucut",
       "Type": 3,
       "Value": "- Slow Poison,- Slow Poison|n- Thorned Vines,- Slow Poison|n- Thorned Vines|n- Far Sight"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练收割女巫"
     }
   ],
   "NewId": "h04X"

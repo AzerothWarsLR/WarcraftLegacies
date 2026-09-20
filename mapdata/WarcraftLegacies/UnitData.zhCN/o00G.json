@@ -155,11 +155,6 @@
       "Value": "剑圣"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练剑圣"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "依照燃刃氏族教义训练的精英战士。"
@@ -168,6 +163,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroBladeMaster"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练剑圣"
     }
   ],
   "NewId": "o00G"

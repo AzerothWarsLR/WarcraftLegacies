@@ -86,11 +86,6 @@
       "Value": 3.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造尼加拉"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -114,6 +109,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造尼加拉"
     }
   ],
   "NewId": "h03I"

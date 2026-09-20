@@ -164,11 +164,6 @@
       "Value": "攻城古树"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练攻城古树"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "近战攻城单位，可以变形成无法移动的远程攻城单位。"
@@ -177,6 +172,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "AncientProtector"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练攻城古树"
     }
   ],
   "NewId": "e012"

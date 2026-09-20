@@ -90,14 +90,14 @@
       "Value": "雷鹰"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练雷鹰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "洛丹伦的迅捷守护之鹰。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练雷鹰"
     }
   ]
 }

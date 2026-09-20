@@ -93,11 +93,6 @@
       "Value": "实验室"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造实验室"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinLab.blp"
@@ -106,6 +101,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.75
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造实验室"
     }
   ],
   "NewId": "o03S"

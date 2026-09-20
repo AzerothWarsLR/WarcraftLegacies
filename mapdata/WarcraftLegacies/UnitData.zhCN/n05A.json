@@ -121,11 +121,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造安其拉神庙"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.4
@@ -152,6 +147,11 @@
     {
       "Id": "uclb",
       "Value": 150
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造安其拉神庙"
     }
   ],
   "NewId": "n05A"

@@ -88,11 +88,6 @@
       "Value": "档案馆"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造档案馆"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -111,6 +106,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "ShadowArcaneSanctum"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造档案馆"
     }
   ],
   "NewId": "n0A3"

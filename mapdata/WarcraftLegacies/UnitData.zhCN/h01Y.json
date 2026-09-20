@@ -105,11 +105,6 @@
       "Value": "精灵大门"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "横向木门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -133,6 +128,11 @@
       "Id": "umxp",
       "Type": 1,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "横向木门"
     }
   ],
   "NewId": "h01Y"

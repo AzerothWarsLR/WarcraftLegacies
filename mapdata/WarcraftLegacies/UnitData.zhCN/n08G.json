@@ -124,14 +124,14 @@
       "Value": 100
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "滋生瘟疫幼虫"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "疾病涌动的僵尸，随时准备爆裂。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "滋生瘟疫幼虫"
     }
   ],
   "NewId": "n08G"

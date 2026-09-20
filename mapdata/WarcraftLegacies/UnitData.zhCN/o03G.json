@@ -138,14 +138,14 @@
       "Value": "哨兵塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造哨兵塔"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Banditmissile\\Banditmissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造哨兵塔"
     }
   ],
   "NewId": "o03G"

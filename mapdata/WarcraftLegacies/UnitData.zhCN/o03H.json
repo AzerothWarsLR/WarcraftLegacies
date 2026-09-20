@@ -131,11 +131,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化暮光之锤了望塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -149,6 +144,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\Banditmissile\\Banditmissile.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化暮光之锤了望塔"
     }
   ],
   "NewId": "o03H"

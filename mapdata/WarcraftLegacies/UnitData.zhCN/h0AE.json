@@ -234,11 +234,6 @@
       "Value": 100
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造哈拉尔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -252,6 +247,11 @@
       "Id": "uma1",
       "Type": 2,
       "Value": 0.3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造哈拉尔"
     }
   ],
   "NewId": "h0AE"

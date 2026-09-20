@@ -139,11 +139,6 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练柳魔犬"
-    },
-    {
       "Id": "ucut",
       "Type": 3,
       "Value": ""
@@ -152,6 +147,11 @@
       "Id": "ucun",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练柳魔犬"
     }
   ],
   "NewId": "e00B"

@@ -109,14 +109,14 @@
       "Value": "统帅祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造统帅祭坛"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKultirasAltar.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造统帅祭坛"
     }
   ],
   "NewId": "h07M"

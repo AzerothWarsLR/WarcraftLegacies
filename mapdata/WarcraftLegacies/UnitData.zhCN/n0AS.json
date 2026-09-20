@@ -85,11 +85,6 @@
       "Value": "C"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为低语迷宫"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -136,6 +131,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.55
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为低语迷宫"
     }
   ],
   "NewId": "n0AS"

@@ -78,11 +78,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造宝藏堆"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -96,6 +91,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌 商店）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造宝藏堆"
     }
   ],
   "NewId": "o01T"

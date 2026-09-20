@@ -134,11 +134,6 @@
       "Value": "法师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练法师"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSorceress.blp"
@@ -152,6 +147,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "造成伤害的施法者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练法师"
     }
   ]
 }

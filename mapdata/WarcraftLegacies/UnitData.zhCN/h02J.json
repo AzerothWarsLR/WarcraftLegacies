@@ -109,11 +109,6 @@
       "Value": "暴风城港口大门"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "横向木门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -122,6 +117,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "横向木门"
     }
   ],
   "NewId": "h02J"

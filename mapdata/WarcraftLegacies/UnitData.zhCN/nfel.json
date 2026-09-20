@@ -122,14 +122,14 @@
       "Value": 0.9
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练恶魔猎犬"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "被召唤的猎犬。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练恶魔猎犬"
     },
     {
       "Id": "unam",

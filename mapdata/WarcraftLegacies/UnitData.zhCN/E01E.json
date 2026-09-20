@@ -160,11 +160,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWolf.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活远古守护者"
-    },
-    {
       "Id": "ubpy",
       "Value": 1
     },
@@ -204,11 +199,6 @@
       "Value": "上古守护者"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活远古守护者"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 3
@@ -219,11 +209,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWolf.blp"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤戈德林"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长近身战斗并增强附近的友军。"
@@ -232,6 +217,21 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Wolf"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤戈德林"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活远古守护者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活远古守护者"
     },
     {
       "Id": "upro",

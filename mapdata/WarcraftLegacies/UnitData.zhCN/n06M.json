@@ -112,11 +112,6 @@
       "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造住宅"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -130,6 +125,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "MoonWell"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造住宅"
     }
   ],
   "NewId": "n06M"

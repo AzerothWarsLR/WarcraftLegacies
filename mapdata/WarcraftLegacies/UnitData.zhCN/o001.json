@@ -228,11 +228,6 @@
       "Value": 0
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练托维尔雕像"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "操纵法力的施法者。"
@@ -241,6 +236,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "ObsidianStatue"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练托维尔雕像"
     }
   ],
   "NewId": "o001"

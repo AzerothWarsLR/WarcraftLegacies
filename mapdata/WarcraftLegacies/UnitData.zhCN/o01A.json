@@ -241,11 +241,6 @@
       "Value": 60
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练加农炮"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba攻城 单位|r"
@@ -254,6 +249,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "投刃车"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练加农炮"
     }
   ],
   "NewId": "o01A"

@@ -108,11 +108,6 @@
       "Value": "地狱犬恶魔之门"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为地狱犬恶魔之门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -126,6 +121,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "Q"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为地狱犬恶魔之门"
     }
   ],
   "NewId": "n000"

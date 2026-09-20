@@ -125,11 +125,6 @@
       "Value": "Archer"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤布丽奇特"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -142,6 +137,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤布丽奇特"
     }
   ],
   "NewId": "H00Y"

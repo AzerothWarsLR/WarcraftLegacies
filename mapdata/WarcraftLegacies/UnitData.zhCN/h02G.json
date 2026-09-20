@@ -97,11 +97,6 @@
       "Value": "维库战士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练维库战士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "维库人的强悍战士。"
@@ -125,6 +120,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.4
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练维库战士"
     }
   ],
   "NewId": "h02G"

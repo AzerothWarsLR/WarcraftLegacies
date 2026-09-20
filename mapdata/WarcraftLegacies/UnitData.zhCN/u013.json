@@ -225,11 +225,6 @@
       "Value": 50
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练超级少校"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "虫巢中笨重的巨兽。"
@@ -238,6 +233,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Scarab"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练超级少校"
     }
   ],
   "NewId": "u013"

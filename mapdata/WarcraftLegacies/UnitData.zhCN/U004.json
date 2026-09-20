@@ -182,14 +182,14 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤基尔加丹"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "施法型英雄，擅长范围伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤基尔加丹"
     }
   ],
   "NewId": "U004"

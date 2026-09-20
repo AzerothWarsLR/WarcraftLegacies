@@ -95,11 +95,6 @@
       "Value": "C"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为疯狂大教堂"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -146,6 +141,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "疯狂大教堂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为疯狂大教堂"
     }
   ],
   "NewId": "n0AT"

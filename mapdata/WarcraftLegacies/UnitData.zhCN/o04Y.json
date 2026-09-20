@@ -116,11 +116,6 @@
       "Value": "war3mapImported\\FacelessOne_Sorcerer.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练织命者"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "织命者"
@@ -134,6 +129,11 @@
       "Id": "ucut",
       "Type": 3,
       "Value": "- Heal,- Heal|n- Anti-magic Shell,- Heal|n- Anti-magic Shell|n- Suppression"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练织命者"
     }
   ],
   "NewId": "o04Y"

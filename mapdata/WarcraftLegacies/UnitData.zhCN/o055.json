@@ -112,11 +112,6 @@
       "Value": "水晶尖塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造水晶尖塔"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "Boneyard"
@@ -125,6 +120,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造水晶尖塔"
     }
   ],
   "NewId": "o055"

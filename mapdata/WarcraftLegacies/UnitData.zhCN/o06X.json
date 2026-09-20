@@ -160,11 +160,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活巫医"
-    },
-    {
       "Id": "uclb",
       "Value": 50
     },
@@ -212,9 +207,9 @@
       "Value": 150
     },
     {
-      "Id": "utpr",
+      "Id": "usnd",
       "Type": 3,
-      "Value": "复活巫医"
+      "Value": "ForestTroll"
     },
     {
       "Id": "utip",
@@ -222,9 +217,14 @@
       "Value": "召唤金度"
     },
     {
-      "Id": "usnd",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "ForestTroll"
+      "Value": "复活巫医"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫医"
     }
   ],
   "NewId": "o06X"

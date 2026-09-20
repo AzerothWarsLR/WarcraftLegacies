@@ -122,11 +122,6 @@
       "Value": "潜伏者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练潜伏者"
-    },
-    {
       "Id": "ua1m",
       "Type": 3,
       "Value": "war3mapImported\\TuskMissile.mdl"
@@ -155,6 +150,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Gargoyle"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练潜伏者"
     }
   ],
   "NewId": "o04V"

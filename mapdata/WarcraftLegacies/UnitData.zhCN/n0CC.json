@@ -140,11 +140,6 @@
       "Value": 2.7
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练暗炉泰坦"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "黑铁王国无可阻挡的魔像巨像。"
@@ -175,6 +170,11 @@
     {
       "Id": "uclr",
       "Value": 55
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暗炉泰坦"
     }
   ],
   "NewId": "n0CC"

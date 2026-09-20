@@ -88,11 +88,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活巫师领主"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（暴风城）"
@@ -118,11 +113,6 @@
       "Value": "卡德加"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活巫师领主"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "奥术英雄，擅长造成魔法伤害和操控法力。"
@@ -131,11 +121,6 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroArchMage"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤卡德加"
     },
     {
       "Id": "uhot",
@@ -165,6 +150,21 @@
       "Id": "ussi",
       "Type": 3,
       "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-archmage.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤卡德加"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫师领主"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫师领主"
     }
   ],
   "NewId": "H05Y"

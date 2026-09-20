@@ -126,14 +126,14 @@
       "Value": 2
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练投石机"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba攻城 单位|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练投石机"
     }
   ],
   "NewId": "o02F"

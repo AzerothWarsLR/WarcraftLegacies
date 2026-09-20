@@ -94,11 +94,6 @@
       "Value": "匠师庭院"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造匠师庭院"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -111,6 +106,11 @@
     {
       "Id": "ubpx",
       "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造匠师庭院"
     }
   ],
   "NewId": "h0CI"

@@ -79,11 +79,6 @@
       "Value": "幻象祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造癫狂祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -92,6 +87,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造癫狂祭坛"
     }
   ],
   "NewId": "o03C"

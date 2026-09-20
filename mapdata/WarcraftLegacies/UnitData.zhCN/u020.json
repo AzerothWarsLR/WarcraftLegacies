@@ -94,11 +94,6 @@
       "Value": "纪念碑"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤纪念碑"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（克苏恩 - 一级）"
@@ -135,6 +130,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 3.5
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤纪念碑"
     }
   ],
   "NewId": "u020"

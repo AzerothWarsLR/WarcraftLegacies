@@ -250,11 +250,6 @@
       "Value": "无畏舰"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练无畏舰"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba坦克 单位|r"
@@ -307,6 +302,11 @@
       "Id": "ulpx",
       "Type": 2,
       "Value": -80
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练无畏舰"
     }
   ],
   "NewId": "n0CZ"

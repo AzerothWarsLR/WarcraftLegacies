@@ -136,11 +136,6 @@
       "Value": 27
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活污染者"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团）"
@@ -156,11 +151,6 @@
       "Value": "污染者"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活污染者"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 3
@@ -174,6 +164,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "召唤阿克蒙德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活污染者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活污染者"
     },
     {
       "Id": "upro",

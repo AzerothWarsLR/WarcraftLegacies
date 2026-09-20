@@ -79,11 +79,6 @@
       "Value": "统御祭坛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造统御祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -92,6 +87,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造统御祭坛"
     }
   ],
   "NewId": "o02V"

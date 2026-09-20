@@ -97,11 +97,6 @@
       "Value": "元帅"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练元帅"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "南方人类军队的指挥官。"
@@ -129,6 +124,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1.1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练元帅"
     }
   ],
   "NewId": "h03K"

@@ -108,14 +108,14 @@
       "Value": "战争机器"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造战争机器"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba攻城 单位|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造战争机器"
     }
   ],
   "NewId": "o00I"

@@ -112,14 +112,14 @@
       "Value": "奥术讲学所"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造奥术讲学所"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Sanctum.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥术讲学所"
     }
   ],
   "NewId": "h0CB"

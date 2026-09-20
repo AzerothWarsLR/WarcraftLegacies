@@ -81,11 +81,6 @@
       "Value": 1.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造运输船"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 0.7
@@ -94,6 +89,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_HumanTransportShip.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造运输船"
     }
   ]
 }

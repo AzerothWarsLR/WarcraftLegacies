@@ -43,14 +43,14 @@
       "Value": "海元素"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练海元素"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "轻型远程单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练海元素"
     }
   ],
   "NewId": "n03V"

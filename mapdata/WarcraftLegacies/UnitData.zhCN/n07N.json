@@ -88,11 +88,6 @@
       "Value": "亭阁"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造亭阁"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -121,6 +116,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造亭阁"
     }
   ],
   "NewId": "n07N"

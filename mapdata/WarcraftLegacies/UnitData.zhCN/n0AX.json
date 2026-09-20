@@ -86,11 +86,6 @@
       "Value": 0.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造变异法阵"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -119,6 +114,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "ShadowSacrificialPit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造变异法阵"
     }
   ],
   "NewId": "n0AX"

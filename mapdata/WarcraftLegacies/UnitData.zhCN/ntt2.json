@@ -90,11 +90,6 @@
       "Value": "Objects\\Spawnmodels\\Human\\HCancelDeath\\HCancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造|cffffcc00r|r牛头人帐篷"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -108,6 +103,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼 其他）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造|cffffcc00r|r牛头人帐篷"
     },
     {
       "Id": "unam",

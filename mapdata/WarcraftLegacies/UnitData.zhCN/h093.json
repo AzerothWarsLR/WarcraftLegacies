@@ -97,11 +97,6 @@
       "Value": 4
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造骑士团分会所"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -115,6 +110,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造骑士团分会所"
     }
   ],
   "NewId": "h093"

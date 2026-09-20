@@ -114,11 +114,6 @@
       "Value": 1.5
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "横向木门"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -142,6 +137,11 @@
       "Id": "umxr",
       "Type": 1,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "横向木门"
     }
   ],
   "NewId": "h00K"

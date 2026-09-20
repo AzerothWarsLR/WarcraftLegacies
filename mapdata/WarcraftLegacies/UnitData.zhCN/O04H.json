@@ -126,11 +126,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFireMetalRevenant.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活烬痕"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -169,19 +164,9 @@
       "Value": "吞噬者余烬之痕"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活烬痕"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFireMetalRevenant.blp"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤烬痕"
     },
     {
       "Id": "utub",
@@ -202,6 +187,21 @@
       "Id": "uma1",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤烬痕"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活烬痕"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活烬痕"
     }
   ],
   "NewId": "O04H"

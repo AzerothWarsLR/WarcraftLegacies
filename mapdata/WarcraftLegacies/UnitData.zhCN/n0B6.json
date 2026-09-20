@@ -112,11 +112,6 @@
       "Value": "X"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为巨石塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -135,6 +130,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "控制点防卫者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为巨石塔"
     }
   ],
   "NewId": "n0B6"

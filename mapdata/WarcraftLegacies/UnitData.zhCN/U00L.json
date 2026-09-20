@@ -157,14 +157,8 @@
       "Value": "灵巧型英雄，擅长造成魔法伤害和支援军队。"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活阿克蒙德的使者"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活阿克蒙德的使者"
+      "Id": "ubpx",
+      "Value": 2
     },
     {
       "Id": "utip",
@@ -172,8 +166,14 @@
       "Value": "召唤安纳塞隆"
     },
     {
-      "Id": "ubpx",
-      "Value": 2
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活阿克蒙德的使者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活阿克蒙德的使者"
     }
   ],
   "NewId": "U00L"

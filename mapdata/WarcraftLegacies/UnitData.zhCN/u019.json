@@ -102,11 +102,6 @@
       "Value": "工人"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练工人"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "克苏恩的膜拜者与建筑召唤者。"
@@ -120,6 +115,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Arachnathid"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练工人"
     }
   ],
   "NewId": "u019"

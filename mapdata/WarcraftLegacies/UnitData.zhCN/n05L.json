@@ -129,11 +129,6 @@
       "Value": "咒术师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练咒术师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "技艺精湛的施法者。"
@@ -147,6 +142,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 1.1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练咒术师"
     }
   ],
   "NewId": "n05L"

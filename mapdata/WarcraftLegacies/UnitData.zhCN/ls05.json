@@ -85,11 +85,6 @@
       "Value": "塑形者"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练塑形者"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Unit_Shaper.mdl"
@@ -98,6 +93,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNShaper.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练塑形者"
     }
   ],
   "NewId": "ls05"

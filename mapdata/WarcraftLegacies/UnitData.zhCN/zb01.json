@@ -116,11 +116,6 @@
       "Value": "太阳井塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化太阳塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -139,6 +134,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化太阳塔"
     }
   ],
   "NewId": "zb01"

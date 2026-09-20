@@ -97,11 +97,6 @@
       "Value": "暗影巢穴"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造暗影巢穴"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -120,6 +115,11 @@
       "Id": "ushb",
       "Type": 3,
       "Value": "ShadowSacrificialPit"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造暗影巢穴"
     }
   ],
   "NewId": "n0B3"

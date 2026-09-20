@@ -138,11 +138,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNVarokSaurfang.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活萨鲁法尔"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -190,11 +185,6 @@
       "Value": "瓦罗克·萨鲁法尔"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活霸主"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNVarokSaurfang.blp"
@@ -210,11 +200,6 @@
       "Value": 140
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤瓦罗克"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，专精于持久作战和强化部队。"
@@ -223,6 +208,21 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Grom"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤瓦罗克"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活霸主"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活萨鲁法尔"
     }
   ],
   "NewId": "VSWS"

@@ -81,11 +81,6 @@
       "Value": "C"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为背叛者堡垒"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -132,6 +127,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "背叛者堡垒"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为背叛者堡垒"
     }
   ],
   "NewId": "n055"

@@ -181,11 +181,6 @@
       "Value": 50
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练相位掷弹兵"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "孤注一掷的邪教法师。"
@@ -207,6 +202,11 @@
     {
       "Id": "uclb",
       "Value": 255
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练相位掷弹兵"
     }
   ],
   "NewId": "n087"

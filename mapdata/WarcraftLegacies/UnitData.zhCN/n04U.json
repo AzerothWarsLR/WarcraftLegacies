@@ -157,11 +157,6 @@
       "Value": 1.3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练虚空龙"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "来自外域的被奴役巨龙。"
@@ -169,6 +164,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空龙"
     },
     {
       "Id": "unam",

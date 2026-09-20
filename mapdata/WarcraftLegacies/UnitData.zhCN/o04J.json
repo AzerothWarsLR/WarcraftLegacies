@@ -85,14 +85,14 @@
       "Value": "虚空骑士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练虚空骑士"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\NetherDragonRiderV1.02.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空骑士"
     }
   ],
   "NewId": "o04J"

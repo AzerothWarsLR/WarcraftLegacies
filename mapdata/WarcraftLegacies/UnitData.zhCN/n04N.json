@@ -73,11 +73,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤地狱火攻城工坊"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "攻城武器生产建筑。"
@@ -124,6 +119,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "SlaughterHouse"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤地狱火攻城工坊"
     }
   ],
   "NewId": "n04N"

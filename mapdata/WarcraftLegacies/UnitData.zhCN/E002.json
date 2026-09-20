@@ -150,11 +150,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNShandris.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活哨兵将军"
-    },
-    {
       "Id": "ubpx",
       "Value": 0
     },
@@ -197,19 +192,9 @@
       "Value": 1
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活哨兵将军"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.2
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤珊蒂斯"
     },
     {
       "Id": "utub",
@@ -220,6 +205,21 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Shandris"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤珊蒂斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活哨兵将军"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活哨兵将军"
     },
     {
       "Id": "upro",

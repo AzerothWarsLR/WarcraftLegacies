@@ -94,11 +94,6 @@
       "Value": "剑士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练剑士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "阿拉索的士兵，随时准备保卫他的国家。"
@@ -112,6 +107,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "StormwindSergeant.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练剑士"
     }
   ],
   "NewId": "h02O"

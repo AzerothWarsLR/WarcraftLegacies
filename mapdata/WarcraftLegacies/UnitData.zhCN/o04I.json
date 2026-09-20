@@ -225,11 +225,6 @@
       "Value": ""
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练战斗大师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "追随龙喉氏族的强大食人魔。"
@@ -238,6 +233,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "OgreOneHead"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战斗大师"
     }
   ],
   "NewId": "o04I"

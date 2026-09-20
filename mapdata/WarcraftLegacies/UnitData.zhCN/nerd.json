@@ -89,14 +89,14 @@
       "Value": "艾瑞达巫师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练艾瑞达|cffffcc00恶|r魔学者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "施放火球术与寄生术的重型远程单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练艾瑞达|cffffcc00恶|r魔学者"
     }
   ]
 }

@@ -137,11 +137,6 @@
       "Value": 155
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "复活卡扎克"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型近战抗魔法准英雄。"
@@ -153,6 +148,11 @@
     {
       "Id": "ubpy",
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活卡扎克"
     }
   ],
   "NewId": "n05T"

@@ -94,11 +94,6 @@
       "Value": "强化奥术塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为(|cffffcc00Z|r)强化奥术塔"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -112,6 +107,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦塔）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为(|cffffcc00Z|r)强化奥术塔"
     }
   ],
   "NewId": "h008"

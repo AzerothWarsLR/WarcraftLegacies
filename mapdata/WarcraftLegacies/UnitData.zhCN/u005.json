@@ -146,11 +146,6 @@
       "Value": "恐惧神龛"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤恐惧神龛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -169,6 +164,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 3
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤恐惧神龛"
     }
   ],
   "NewId": "u005"

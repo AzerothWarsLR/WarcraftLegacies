@@ -105,11 +105,6 @@
       "Value": "战斗型英雄，擅长召唤昆虫爪牙并碾压敌人。"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤阿努巴拉克"
-    },
-    {
       "Id": "ubpy",
       "Value": 0
     },
@@ -117,6 +112,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNanubarakhd.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿努巴拉克"
     },
     {
       "Id": "upro",

@@ -163,11 +163,6 @@
       "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "|cffffcc00(Z)|r - 升级为哨兵飞地"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -176,6 +171,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑，用于训练小精灵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "|cffffcc00(Z)|r - 升级为哨兵飞地"
     }
   ],
   "NewId": "n085"

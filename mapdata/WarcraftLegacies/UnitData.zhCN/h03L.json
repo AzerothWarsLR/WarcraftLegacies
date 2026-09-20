@@ -148,14 +148,14 @@
       "Value": "|cff2fc6ba射手 单位|r"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练散弹枪手"
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoldenArcherB.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练散弹枪手"
     }
   ],
   "NewId": "h03L"

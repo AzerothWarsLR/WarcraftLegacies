@@ -104,11 +104,6 @@
       "Value": "帝国营房"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造帝国营房"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -117,6 +112,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Castle"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造帝国营房"
     }
   ],
   "NewId": "h040"

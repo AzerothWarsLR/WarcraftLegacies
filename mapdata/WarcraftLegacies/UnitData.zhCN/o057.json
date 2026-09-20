@@ -103,14 +103,14 @@
       "Value": "圣物地窟"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造圣物地窟"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "ArcaneVault"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造圣物地窟"
     }
   ],
   "NewId": "o057"

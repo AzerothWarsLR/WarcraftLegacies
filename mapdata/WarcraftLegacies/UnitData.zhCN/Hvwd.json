@@ -100,11 +100,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSylvanas_by67chrome.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活游侠将军"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯）"
@@ -120,14 +115,14 @@
       "Value": "银月城游侠将军"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活游侠将军"
-    },
-    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1.1
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长支援军队和刺杀英雄。"
     },
     {
       "Id": "utip",
@@ -135,9 +130,14 @@
       "Value": "召唤希尔瓦娜斯"
     },
     {
-      "Id": "utub",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "灵巧型英雄，擅长支援军队和刺杀英雄。"
+      "Value": "复活游侠将军"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活游侠将军"
     },
     {
       "Id": "upro",

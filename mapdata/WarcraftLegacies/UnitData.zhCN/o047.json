@@ -98,17 +98,17 @@
       "Value": "集市"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造集市"
-    },
-    {
       "Id": "uclg",
       "Value": 200
     },
     {
       "Id": "uclb",
       "Value": 200
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造集市"
     }
   ],
   "NewId": "o047"

@@ -82,11 +82,6 @@
       "Value": 0
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活斯托姆加德王储"
-    },
-    {
       "Id": "ubpx",
       "Value": 2
     },
@@ -116,16 +111,6 @@
       "Value": "加林·托尔贝恩"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活斯托姆加德王储"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤加林·托尔贝恩"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "王者战士英雄，擅长支援军队。"
@@ -149,6 +134,21 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "GalenTrollbaneCWV2.04.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加林·托尔贝恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活斯托姆加德王储"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活斯托姆加德王储"
     }
   ],
   "NewId": "H00Z"

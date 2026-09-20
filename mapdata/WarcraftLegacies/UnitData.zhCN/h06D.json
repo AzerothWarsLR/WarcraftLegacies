@@ -70,11 +70,6 @@
       "Value": 3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造皇家港口"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -88,6 +83,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造皇家港口"
     }
   ],
   "NewId": "h06D"

@@ -137,11 +137,6 @@
       "Value": "见习法师"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练见习法师"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "轻型远程单位。"
@@ -160,6 +155,11 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Priest"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练见习法师"
     }
   ],
   "NewId": "n0AK"

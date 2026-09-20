@@ -177,11 +177,6 @@
       "Value": 1.1
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练鞭风者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "来自四风的施法者。"
@@ -204,6 +199,11 @@
     {
       "Id": "uclb",
       "Value": 255
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练鞭风者"
     }
   ],
   "NewId": "n08Z"

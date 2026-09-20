@@ -72,11 +72,6 @@
       "Value": 0.8
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造背叛者祭坛"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -105,6 +100,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造背叛者祭坛"
     }
   ]
 }

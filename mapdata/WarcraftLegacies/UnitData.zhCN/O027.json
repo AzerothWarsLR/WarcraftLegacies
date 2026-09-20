@@ -98,11 +98,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活祖鲁希德"
-    },
-    {
       "Id": "uclb",
       "Value": 50
     },
@@ -154,19 +149,9 @@
       "Value": "疲惫的祖鲁希德"
     },
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活祖鲁希德"
-    },
-    {
       "Id": "ussi",
       "Type": 3,
       "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-guldan.blp"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "复活疲惫者|cffffcc00祖|r鲁希德"
     },
     {
       "Id": "utub",
@@ -177,6 +162,21 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroFireLord"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活疲惫者|cffffcc00祖|r鲁希德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活祖鲁希德"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活祖鲁希德"
     }
   ],
   "NewId": "O027"

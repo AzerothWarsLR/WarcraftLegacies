@@ -176,11 +176,6 @@
       "Value": 1.3
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练畸形奇美拉"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "来自尼奥罗萨的扭曲生物。"
@@ -220,6 +215,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "war3mapImported\\ShadowOrbMissile v1.2.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练畸形奇美拉"
     }
   ],
   "NewId": "n0AH"

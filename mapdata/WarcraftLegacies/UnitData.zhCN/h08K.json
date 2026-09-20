@@ -92,11 +92,6 @@
       "Value": "修士"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练修士"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的平和信徒。"
@@ -115,6 +110,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练修士"
     }
   ],
   "NewId": "h08K"

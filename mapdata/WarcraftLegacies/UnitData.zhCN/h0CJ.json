@@ -113,11 +113,6 @@
       "Value": "战豹"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练战豹"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\WatcherBloodElfV1.02.mdl"
@@ -141,6 +136,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战豹"
     }
   ],
   "NewId": "h0CJ"

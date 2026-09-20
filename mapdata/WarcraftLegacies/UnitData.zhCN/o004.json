@@ -116,11 +116,6 @@
       "Value": 6
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "石槌要塞"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -129,6 +124,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMercenaryCamp.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "石槌要塞"
     }
   ],
   "NewId": "o004"

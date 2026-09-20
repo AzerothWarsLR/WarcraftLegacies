@@ -139,11 +139,6 @@
       "Value": "皇家弩车"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练皇家弩车"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "洛丹伦训练有素的弩手。"
@@ -157,6 +152,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.9
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练皇家弩车"
     }
   ],
   "NewId": "h0CQ"

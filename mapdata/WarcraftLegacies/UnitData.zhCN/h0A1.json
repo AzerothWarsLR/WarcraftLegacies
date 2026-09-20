@@ -96,11 +96,6 @@
       "Value": "上将卫队"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练上将卫队"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "洛丹伦王室的精锐护卫。"
@@ -119,6 +114,11 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\AdmiralsEliteGuard.mdl"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练上将卫队"
     }
   ],
   "NewId": "h0A1"

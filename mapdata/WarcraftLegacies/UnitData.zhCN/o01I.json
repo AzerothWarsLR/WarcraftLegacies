@@ -100,11 +100,6 @@
       "Value": "活化护甲"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练活化护甲"
-    },
-    {
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\NightElfMoonProtectorV2.mdl"
@@ -123,6 +118,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.6
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练活化护甲"
     }
   ],
   "NewId": "o01I"

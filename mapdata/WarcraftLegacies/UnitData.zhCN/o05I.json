@@ -180,11 +180,6 @@
       "Value": "飞弹炮台"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造导弹炮台"
-    },
-    {
       "Id": "uubs",
       "Type": 3,
       "Value": ""
@@ -232,6 +227,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,third"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造导弹炮台"
     }
   ],
   "NewId": "o05I"
