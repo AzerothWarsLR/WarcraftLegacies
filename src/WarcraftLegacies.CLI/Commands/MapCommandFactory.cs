@@ -117,8 +117,8 @@ internal static class MapCommandFactory
     command.SetAction(parseResult =>
     {
       var untagged = parseResult.GetValue(untaggedOption);
-      string[] plain = string.IsNullOrWhiteSpace(untagged)
-        ? []
+      var plain = string.IsNullOrWhiteSpace(untagged)
+        ? System.Array.Empty<string>()
         : untagged.Split(',', System.StringSplitOptions.RemoveEmptyEntries
           | System.StringSplitOptions.TrimEntries);
 
