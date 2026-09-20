@@ -22,13 +22,23 @@ public static class SentinelsSpells
     {
       Radius = 350,
       Duration = 10,
-      Period = 1,
-      HealPerPeriod = new LeveledAbilityField<float> { Base = 5, PerLevel = 5 },
-      ManaPerPeriod = new LeveledAbilityField<float> { Base = 1, PerLevel = 1 },
+      PulsePeriod = 1,
+      HealPerPulse = new LeveledAbilityField<float> { Base = 5, PerLevel = 5 },
+      ManaPerPulse = new LeveledAbilityField<float> { Base = 1, PerLevel = 1 },
       SlowAuraAbilityId = ABILITY_A14C_SLOW_AURA_LUNAR_SANCTUARY,
       TrueSightAbilityId = ABILITY_A14D_TRUE_SIGHT_LUNAR_SANCTUARY,
-      SanctuaryEffectPath = @"Abilities\Spells\NightElf\Tranquility\TranquilityTarget.mdl",
-      HealEffectPath = @"Abilities\Spells\NightElf\Rejuvenation\RejuvenationTarget.mdl"
+      Effects = new LunarSanctuaryEffectSettings
+      {
+        BurstPath = @"war3mapImported\HolyNova_Fixed.mdx",
+        BurstScale = 3,
+        GlowPath = @"war3mapImported\StarfallCaster.mdx",
+        GlowScale = 1.5f,
+        RingPath = @"war3mapImported\Point Target.mdx",
+        RingScale = 4.8f,
+        RingColor = (150, 200, 255),
+        RingAlpha = 200,
+        HealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      }
     };
     SpellRegistry.Register(lunarSanctuary);
   }
