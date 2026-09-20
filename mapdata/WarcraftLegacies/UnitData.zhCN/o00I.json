@@ -110,7 +110,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "|cff2fc6ba攻城 单位|r"
+      "Value": "|cff2fc6ba远程攻城武器。对建筑有效，但行动缓慢且脆弱。|r"
     },
     {
       "Id": "utip",
