@@ -319,7 +319,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Malfurion pulls a friendly unit into the Emerald Dream. While there it cannot be harmed and cannot act, and it recovers health and mana before returning.|n|cffffcc00Level 1|r - 2 seconds, restores 20% health and 10% mana.|n|cffffcc00Level 2|r - 2.5 seconds, restores 30% health and 15% mana.|n|cffffcc00Level 3|r - 3 seconds, restores 40% health and 20% mana.|n|cffffcc00Level 4|r - 3.5 seconds, restores 50% health and 25% mana."
+      "Value": "Pulls a target friendly unit into the Emerald Dream. While there it cannot be harmed and cannot act, and it recovers health and mana before returning.|n|n|cffffcc00Level 1|r - 2 seconds. Restores 20% health and 10% mana.|n|cffffcc00Level 2|r - 2.5 seconds. Restores 30% health and 15% mana.|n|cffffcc00Level 3|r - 3 seconds. Restores 40% health and 20% mana.|n|cffffcc00Level 4|r - 3.5 seconds. Restores 50% health and 25% mana."
     },
     {
       "Id": "atat",
@@ -354,25 +354,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Pulls a friendly unit into the Emerald Dream for 2 seconds. It cannot be harmed or act, and recovers 20% of its health and 10% of its mana."
+      "Value": "Pulls a target friendly unit into the Emerald Dream for 2 seconds, restoring 20% of its health and 10% of its mana."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Pulls a friendly unit into the Emerald Dream for 2.5 seconds. It cannot be harmed or act, and recovers 30% of its health and 15% of its mana."
+      "Value": "Pulls a target friendly unit into the Emerald Dream for 2.5 seconds, restoring 30% of its health and 15% of its mana."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Pulls a friendly unit into the Emerald Dream for 3 seconds. It cannot be harmed or act, and recovers 40% of its health and 20% of its mana."
+      "Value": "Pulls a target friendly unit into the Emerald Dream for 3 seconds, restoring 40% of its health and 20% of its mana."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Pulls a friendly unit into the Emerald Dream for 3.5 seconds. It cannot be harmed or act, and recovers 50% of its health and 25% of its mana."
+      "Value": "Pulls a target friendly unit into the Emerald Dream for 3.5 seconds, restoring 50% of its health and 25% of its mana."
     }
   ]
 }
