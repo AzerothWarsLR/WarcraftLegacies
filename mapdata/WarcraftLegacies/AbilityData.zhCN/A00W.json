@@ -340,7 +340,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "从天空召唤一颗彗星，对区域内的敌方地面单位造成伤害并使其昏迷 2 秒。|n|cffffcc001级|r - <A00W,DataA1>点伤害。|n|cffffcc002级|r - <A00W,DataA2>点伤害。|n|cffffcc003级|r - <A00W,DataA3>点伤害。|n|cffffcc004级|r - <A00W,DataA4>点伤害。\n"
+      "Value": "从天空召唤一颗彗星，对区域内的敌方地面单位造成伤害并使其昏迷 2 秒。|n|cffffcc001级|r - <A00W,DataA1>点伤害。|n|cffffcc002级|r - <A00W,DataA2>点伤害。|n|cffffcc003级|r - <A00W,DataA3>点伤害。|n|cffffcc004级|r - <A00W,DataA4>点伤害。"
     },
     {
       "Level": 1,

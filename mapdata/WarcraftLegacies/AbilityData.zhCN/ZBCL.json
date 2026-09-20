@@ -51,7 +51,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "向目标敌方单位投出一道伤害性闪电，闪电会跳跃至附近的敌人身上。每次跳跃造成的伤害都会降低。 |n|n|cffffcc001级|r - <ZBCL,DataA1>点伤害，跳跃<ZBCL,DataB1>次。 |n|cffffcc002级|r - <ZBCL,DataA2>点伤害，跳跃<ZBCL,DataB2>次。 |n|cffffcc003级|r - <ZBCL,DataA3>点伤害，跳跃<ZBCL,DataB3>次。  |n|cffffcc004级|r - <ZBCL,DataA4>点伤害，跳跃<ZBCL,DataB4>次。\n"
+      "Value": "向目标敌方单位投出一道伤害性闪电，闪电会跳跃至附近的敌人身上。每次跳跃造成的伤害都会降低。 |n|n|cffffcc001级|r - <ZBCL,DataA1>点伤害，跳跃<ZBCL,DataB1>次。 |n|cffffcc002级|r - <ZBCL,DataA2>点伤害，跳跃<ZBCL,DataB2>次。 |n|cffffcc003级|r - <ZBCL,DataA3>点伤害，跳跃<ZBCL,DataB3>次。  |n|cffffcc004级|r - <ZBCL,DataA4>点伤害，跳跃<ZBCL,DataB4>次。"
     },
     {
       "Level": 4,

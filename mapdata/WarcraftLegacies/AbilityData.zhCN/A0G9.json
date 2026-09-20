@@ -51,7 +51,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "提高周围友方单位的移动速度和攻击速度。 |n|n|cffffcc001级|r - 移动速度提高<AOae,DataA1,%>%，攻击速度提高<AOae,DataB1,%>%。 |n|cffffcc002级|r - 移动速度提高<AOae,DataA2,%>%，攻击速度提高<AOae,DataB2,%>%。 |n|cffffcc003级|r - 移动速度提高<AOae,DataA3,%>%，攻击速度提高<AOae,DataB3,%>%。|n|cffffcc004级|r - 移动速度提高<AOae,DataA4,%>%，攻击速度提高<AOae,DataB4,%>%。\n"
+      "Value": "提高周围友方单位的移动速度和攻击速度。 |n|n|cffffcc001级|r - 移动速度提高<AOae,DataA1,%>%，攻击速度提高<AOae,DataB1,%>%。 |n|cffffcc002级|r - 移动速度提高<AOae,DataA2,%>%，攻击速度提高<AOae,DataB2,%>%。 |n|cffffcc003级|r - 移动速度提高<AOae,DataA3,%>%，攻击速度提高<AOae,DataB3,%>%。|n|cffffcc004级|r - 移动速度提高<AOae,DataA4,%>%，攻击速度提高<AOae,DataB4,%>%。"
     },
     {
       "Level": 1,

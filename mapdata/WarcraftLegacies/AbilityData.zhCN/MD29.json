@@ -303,7 +303,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "将目标区域内所有非机械单位变为虚无状态，并使其移动速度降低<A0FE,DataA1,%>%。虚无状态的生物无法攻击，但可以施放法术，且某些法术对其施放时效果更强。|n|n|cffffcc001 级|r - 对单位持续<A0FE,Dur1>秒，对英雄持续<A0FE,HeroDur1>秒。|n|cffffcc002 级|r - 对单位持续<A0FE,Dur2>秒，对英雄持续<A0FE,HeroDur2>秒。|n|cffffcc003 级|r - 对单位持续<A0FE,Dur3>秒，对英雄持续<A0FE,HeroDur3>秒。|n|cffffcc004 级|r - 对单位持续<A0FE,Dur4>秒，对英雄持续<A0FE,HeroDur4>秒。\n"
+      "Value": "将目标区域内所有非机械单位变为虚无状态，并使其移动速度降低<A0FE,DataA1,%>%。虚无状态的生物无法攻击，但可以施放法术，且某些法术对其施放时效果更强。|n|n|cffffcc001 级|r - 对单位持续<A0FE,Dur1>秒，对英雄持续<A0FE,HeroDur1>秒。|n|cffffcc002 级|r - 对单位持续<A0FE,Dur2>秒，对英雄持续<A0FE,HeroDur2>秒。|n|cffffcc003 级|r - 对单位持续<A0FE,Dur3>秒，对英雄持续<A0FE,HeroDur3>秒。|n|cffffcc004 级|r - 对单位持续<A0FE,Dur4>秒，对英雄持续<A0FE,HeroDur4>秒。"
     },
     {
       "Id": "atat",

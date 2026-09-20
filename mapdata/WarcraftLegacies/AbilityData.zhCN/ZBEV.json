@@ -44,7 +44,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "有一定几率躲避攻击。 |n|n|cffffcc001级|r - 敌人有<ZBEV,DataA1,%>% 的几率攻击落空。 |n|cffffcc002级|r - 敌人有<ZBEV,DataA2,%>% 的几率攻击落空。 |n|cffffcc003级|r - 敌人有<ZBEV,DataA3,%>% 的几率攻击落空。 |n|cffffcc004级|r - 敌人有<ZBEV,DataA4,%>% 的几率攻击落空。\n"
+      "Value": "有一定几率躲避攻击。 |n|n|cffffcc001级|r - 敌人有<ZBEV,DataA1,%>% 的几率攻击落空。 |n|cffffcc002级|r - 敌人有<ZBEV,DataA2,%>% 的几率攻击落空。 |n|cffffcc003级|r - 敌人有<ZBEV,DataA3,%>% 的几率攻击落空。 |n|cffffcc004级|r - 敌人有<ZBEV,DataA4,%>% 的几率攻击落空。"
     },
     {
       "Level": 4,

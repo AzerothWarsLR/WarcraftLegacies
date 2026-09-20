@@ -345,7 +345,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "使英雄的攻击提高额外伤害，并使其攻击造成范围伤害。|n|n|cffffcc001 级|r - 额外伤害<CT01,DataA1>点。|n|cffffcc002 级|r - 额外伤害<CT01,DataA2>点。|n|cffffcc003 级|r - 额外伤害<CT01,DataA3>点。|n|cffffcc004 级|r - 额外伤害<CT01,DataA4>点。\n"
+      "Value": "使英雄的攻击提高额外伤害，并使其攻击造成范围伤害。|n|n|cffffcc001 级|r - 额外伤害<CT01,DataA1>点。|n|cffffcc002 级|r - 额外伤害<CT01,DataA2>点。|n|cffffcc003 级|r - 额外伤害<CT01,DataA3>点。|n|cffffcc004 级|r - 额外伤害<CT01,DataA4>点。"
     },
     {
       "Id": "arhk",

@@ -78,7 +78,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "周围的友方近战单位在攻击敌方单位时可以获得生命值。|n|n|cffffcc001级|r - 获得攻击伤害的<A0DB,DataA1,%>%。|n|cffffcc002级|r - 获得攻击伤害的<A0DB,DataA2,%>%。|n|cffffcc003级|r - 获得攻击伤害的<A0DB,DataA3,%>%。|n|cffffcc004级|r - 获得攻击伤害的<A0DB,DataA4,%>%。\n"
+      "Value": "周围的友方近战单位在攻击敌方单位时可以获得生命值。|n|n|cffffcc001级|r - 获得攻击伤害的<A0DB,DataA1,%>%。|n|cffffcc002级|r - 获得攻击伤害的<A0DB,DataA2,%>%。|n|cffffcc003级|r - 获得攻击伤害的<A0DB,DataA3,%>%。|n|cffffcc004级|r - 获得攻击伤害的<A0DB,DataA4,%>%。"
     },
     {
       "Level": 4,

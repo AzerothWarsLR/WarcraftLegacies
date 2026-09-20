@@ -63,7 +63,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "攻击有一定几率造成双倍伤害。 |n|n|cffffcc001级|r - <AOcr,DataA1>% 几率。 |n|cffffcc002级|r - <AOcr,DataA2>% 几率。 |n|cffffcc003级|r - <AOcr,DataA3>% 几率。|n|cffffcc004级|r - <AOcr,DataA4>% 几率。\n"
+      "Value": "攻击有一定几率造成双倍伤害。 |n|n|cffffcc001级|r - <AOcr,DataA1>% 几率。 |n|cffffcc002级|r - <AOcr,DataA2>% 几率。 |n|cffffcc003级|r - <AOcr,DataA3>% 几率。|n|cffffcc004级|r - <AOcr,DataA4>% 几率。"
     },
     {
       "Level": 4,

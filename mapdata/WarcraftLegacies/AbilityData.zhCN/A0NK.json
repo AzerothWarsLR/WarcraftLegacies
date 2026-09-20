@@ -257,7 +257,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄的攻击会使敌方单位深度中毒，攻击速度降低 250%，移动速度降低 10%。|n|n|cffffcc001 级|r - 对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒，每秒造成<A0NK,DataA1>点伤害。|n|cffffcc002 级|r - 对单位持续<A0NK,Dur2>秒，对英雄持续<A0NK,HeroDur2,.>秒，每秒造成<A0NK,DataA2>点伤害。|n|cffffcc003 级|r - 对单位持续<A0NK,Dur3>秒，对英雄持续<A0NK,HeroDur3,.>秒，每秒造成<A0NK,DataA3>点伤害。|n|cffffcc004 级|r - 对单位持续<A0NK,Dur4>秒，对英雄持续<A0NK,HeroDur4,.>秒，每秒造成<A0NK,DataA4>点伤害。\n"
+      "Value": "英雄的攻击会使敌方单位深度中毒，攻击速度降低 250%，移动速度降低 10%。|n|n|cffffcc001 级|r - 对单位持续<A0NK,Dur1>秒，对英雄持续<A0NK,HeroDur1,.>秒，每秒造成<A0NK,DataA1>点伤害。|n|cffffcc002 级|r - 对单位持续<A0NK,Dur2>秒，对英雄持续<A0NK,HeroDur2,.>秒，每秒造成<A0NK,DataA2>点伤害。|n|cffffcc003 级|r - 对单位持续<A0NK,Dur3>秒，对英雄持续<A0NK,HeroDur3,.>秒，每秒造成<A0NK,DataA3>点伤害。|n|cffffcc004 级|r - 对单位持续<A0NK,Dur4>秒，对英雄持续<A0NK,HeroDur4,.>秒，每秒造成<A0NK,DataA4>点伤害。"
     },
     {
       "Level": 1,

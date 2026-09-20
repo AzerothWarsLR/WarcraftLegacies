@@ -111,7 +111,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一道锥形闪电，对敌人造成伤害。 |n|n|cffffcc001级|r - 对每个单位造成<A0X6,DataA1>点伤害。 |n|cffffcc002级|r - 对每个单位造成<A0X6,DataA2>点伤害。 |n|cffffcc003级|r - 对每个单位造成<A0X6,DataA3>点伤害。 |n|cffffcc004级|r - 对每个单位造成<A0X6,DataA4>点伤害。\n"
+      "Value": "召唤一道锥形闪电，对敌人造成伤害。 |n|n|cffffcc001级|r - 对每个单位造成<A0X6,DataA1>点伤害。 |n|cffffcc002级|r - 对每个单位造成<A0X6,DataA2>点伤害。 |n|cffffcc003级|r - 对每个单位造成<A0X6,DataA3>点伤害。 |n|cffffcc004级|r - 对每个单位造成<A0X6,DataA4>点伤害。"
     },
     {
       "Level": 1,

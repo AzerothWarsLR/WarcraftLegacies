@@ -203,7 +203,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一道死亡之锥伤害敌人。 |n|n|cffffcc001级|r - 对每个单位造成<VP03,DataA1>点伤害，最多影响<VP03,DataB1>个单位。 |n|cffffcc002级|r - 对每个单位造成<VP03,DataA2>点伤害，最多影响<VP03,DataB2>个单位。 |n|cffffcc003级|r - 对每个单位造成<VP03l,DataA3>点伤害，最多影响<VP03,DataB3>个单位。 |n|cffffcc004级|r - 对每个单位造成<VP03,DataA4>点伤害，最多影响<VP03,DataB4>个单位。\n"
+      "Value": "召唤一道死亡之锥伤害敌人。 |n|n|cffffcc001级|r - 对每个单位造成<VP03,DataA1>点伤害，最多影响<VP03,DataB1>个单位。 |n|cffffcc002级|r - 对每个单位造成<VP03,DataA2>点伤害，最多影响<VP03,DataB2>个单位。 |n|cffffcc003级|r - 对每个单位造成<VP03l,DataA3>点伤害，最多影响<VP03,DataB3>个单位。 |n|cffffcc004级|r - 对每个单位造成<VP03,DataA4>点伤害，最多影响<VP03,DataB4>个单位。"
     },
     {
       "Level": 1,

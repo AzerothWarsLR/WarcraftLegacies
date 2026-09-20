@@ -193,7 +193,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "降低所有受到的攻击伤害。攻击伤害无法降低至<A066,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A066,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A066,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A066,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A066,DataC4>点伤害。\n"
+      "Value": "降低所有受到的攻击伤害。攻击伤害无法降低至<A066,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A066,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A066,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A066,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A066,DataC4>点伤害。"
     },
     {
       "Level": 1,

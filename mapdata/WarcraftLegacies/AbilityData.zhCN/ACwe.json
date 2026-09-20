@@ -69,7 +69,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一群<ACwe,DataA1>只具有淬毒武器的蝎子。每只蝎子具有<n05M:nanw,realhp>点生命值，造成<n05M:nanw,mindmg1> - <n05M:nanw,maxdmg1>点伤害。|n|cffffcc00持续<ACwe,Dur1>秒。\n"
+      "Value": "召唤一群<ACwe,DataA1>只具有淬毒武器的蝎子。每只蝎子具有<n05M:nanw,realhp>点生命值，造成<n05M:nanw,mindmg1> - <n05M:nanw,maxdmg1>点伤害。|n|cffffcc00持续<ACwe,Dur1>秒。"
     }
   ]
 }

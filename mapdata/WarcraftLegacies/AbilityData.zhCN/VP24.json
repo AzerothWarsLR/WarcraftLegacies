@@ -401,7 +401,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "用战锤轰击一片区域，对敌方地面单位造成伤害并使其短暂昏迷。施法距离 1200。 |n|n|cffffcc001级|r - 总计<VP24,DataA1>点伤害。|n|cffffcc002级|r - 总计<VP24,DataA2>点伤害。|n|cffffcc003级|r - 总计<VP24,DataA3>点伤害。|n|cffffcc004级|r - 总计<VP24,DataA4>点伤害。\n"
+      "Value": "用战锤轰击一片区域，对敌方地面单位造成伤害并使其短暂昏迷。施法距离 1200。 |n|n|cffffcc001级|r - 总计<VP24,DataA1>点伤害。|n|cffffcc002级|r - 总计<VP24,DataA2>点伤害。|n|cffffcc003级|r - 总计<VP24,DataA3>点伤害。|n|cffffcc004级|r - 总计<VP24,DataA4>点伤害。"
     },
     {
       "Level": 1,

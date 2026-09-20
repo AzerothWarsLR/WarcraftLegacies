@@ -264,7 +264,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到伤害。 |n|n|cffffcc001级|r - 每秒受到<A0WL,DataA1>点伤害，持续<A0WL,Dur1>秒（英雄为<A0WL,HeroDur1,.>秒）。 |n|cffffcc002级|r - 每秒受到<A0WL,DataA2>点伤害，持续<A0WL,Dur2>秒（英雄为<A0WL,HeroDur2,.>秒）。 |n|cffffcc003级|r - 每秒受到<A0WL,DataA3>点伤害，持续<A0WL,Dur3>秒（英雄为<A0WL,HeroDur3,.>秒）。 |n|cffffcc004级|r - 每秒受到<A0WL,DataA4>点伤害，持续<A0WL,Dur4>秒（英雄为<A0WL,HeroDur4,.>秒）。\n"
+      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到伤害。 |n|n|cffffcc001级|r - 每秒受到<A0WL,DataA1>点伤害，持续<A0WL,Dur1>秒（英雄为<A0WL,HeroDur1,.>秒）。 |n|cffffcc002级|r - 每秒受到<A0WL,DataA2>点伤害，持续<A0WL,Dur2>秒（英雄为<A0WL,HeroDur2,.>秒）。 |n|cffffcc003级|r - 每秒受到<A0WL,DataA3>点伤害，持续<A0WL,Dur3>秒（英雄为<A0WL,HeroDur3,.>秒）。 |n|cffffcc004级|r - 每秒受到<A0WL,DataA4>点伤害，持续<A0WL,Dur4>秒（英雄为<A0WL,HeroDur4,.>秒）。"
     },
     {
       "Id": "atat",

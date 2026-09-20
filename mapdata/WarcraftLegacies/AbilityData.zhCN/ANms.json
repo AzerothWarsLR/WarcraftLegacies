@@ -74,7 +74,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "创造一个护盾，消耗英雄的魔法值来吸收伤害。 |n|n|cffffcc001级|r - 每点魔法值吸收<ANms,DataA1>点伤害。 |n|cffffcc002级|r - 每点魔法值吸收<ANms,DataA2>点伤害。 |n|cffffcc003级|r - 每点魔法值吸收<ANms,DataA3>点伤害。 |n|cffffcc003级|r - 每点魔法值吸收<ANms,DataA4>点伤害。\n"
+      "Value": "创造一个护盾，消耗英雄的魔法值来吸收伤害。 |n|n|cffffcc001级|r - 每点魔法值吸收<ANms,DataA1>点伤害。 |n|cffffcc002级|r - 每点魔法值吸收<ANms,DataA2>点伤害。 |n|cffffcc003级|r - 每点魔法值吸收<ANms,DataA3>点伤害。 |n|cffffcc003级|r - 每点魔法值吸收<ANms,DataA4>点伤害。"
     },
     {
       "Level": 2,

@@ -186,7 +186,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤滔天巨浪，命中敌人后炸裂。|n持续<A11B,Dur1>秒。|n|n|cffffcc00等级 1|r - 每秒<A11B,DataA1>道巨浪，每道造成<A11B,DataC1>点伤害。 |n|cffffcc00等级 2|r - 每秒<A11B,DataA2>道巨浪，每道造成<A11B,DataC2>点伤害。 |n|cffffcc00等级 3|r - 每秒<A11B,DataA3>道巨浪，每道造成<A11B,DataC3>点伤害。\n"
+      "Value": "召唤滔天巨浪，命中敌人后炸裂。|n持续<A11B,Dur1>秒。|n|n|cffffcc00等级 1|r - 每秒<A11B,DataA1>道巨浪，每道造成<A11B,DataC1>点伤害。 |n|cffffcc00等级 2|r - 每秒<A11B,DataA2>道巨浪，每道造成<A11B,DataC2>点伤害。 |n|cffffcc00等级 3|r - 每秒<A11B,DataA3>道巨浪，每道造成<A11B,DataC3>点伤害。"
     },
     {
       "Level": 1,

@@ -96,7 +96,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一波波辛特兰魔法，每波对附近的敌方单位造成<AEsb,DataA1>点伤害。|n|cffffcc00持续<AEsb,Dur1>秒。\n"
+      "Value": "召唤一波波辛特兰魔法，每波对附近的敌方单位造成<AEsb,DataA1>点伤害。|n|cffffcc00持续<AEsb,Dur1>秒。"
     }
   ]
 }

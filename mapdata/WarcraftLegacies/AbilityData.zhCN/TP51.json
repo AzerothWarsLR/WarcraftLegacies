@@ -77,7 +77,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "猛击地面，对附近的敌方地面单位造成伤害，并降低其移动速度和攻击速度。还会在短时间内降低其护甲。|n|n|cffffcc001级|r - <AHtc,DataA1>点伤害，移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%，护甲降低 3 点，持续<TP51,Dur1,.>（英雄为<TP51,HeroDur1,.>）秒。|n|cffffcc002级|r - <AHtc,DataA2>点伤害，移动速度降低<AHtc,DataC2,%>%，攻击速度降低<AHtc,DataD2,%>%，护甲降低 5 点，持续<TP51,Dur2,.>（英雄为<TP51,HeroDur2,.>）秒。|n|cffffcc003级|r - <AHtc,DataA3>点伤害，移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%，护甲降低 7 点，持续<TP51,Dur3,.>（英雄为<TP51,HeroDur3,.>）秒。|n|cffffcc004级|r - <AHtc,DataA4>点伤害，移动速度降低<AHtc,DataC4,%>%，攻击速度降低<AHtc,DataD4,%>%，护甲降低 9 点，持续<TP51,Dur4,.>（英雄为<TP51,HeroDur4,.>）秒。\n"
+      "Value": "猛击地面，对附近的敌方地面单位造成伤害，并降低其移动速度和攻击速度。还会在短时间内降低其护甲。|n|n|cffffcc001级|r - <AHtc,DataA1>点伤害，移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%，护甲降低 3 点，持续<TP51,Dur1,.>（英雄为<TP51,HeroDur1,.>）秒。|n|cffffcc002级|r - <AHtc,DataA2>点伤害，移动速度降低<AHtc,DataC2,%>%，攻击速度降低<AHtc,DataD2,%>%，护甲降低 5 点，持续<TP51,Dur2,.>（英雄为<TP51,HeroDur2,.>）秒。|n|cffffcc003级|r - <AHtc,DataA3>点伤害，移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%，护甲降低 7 点，持续<TP51,Dur3,.>（英雄为<TP51,HeroDur3,.>）秒。|n|cffffcc004级|r - <AHtc,DataA4>点伤害，移动速度降低<AHtc,DataC4,%>%，攻击速度降低<AHtc,DataD4,%>%，护甲降低 9 点，持续<TP51,Dur4,.>（英雄为<TP51,HeroDur4,.>）秒。"
     },
     {
       "Level": 1,

@@ -294,7 +294,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "向目标区域内的每一个敌方单位发射一批冰枪，造成伤害并使每个目标昏迷<A0IK,Dur1>秒（英雄减半）。|n|n|cffffcc001级|r - 造成<A0IK,DataA1>点伤害。|n|cffffcc002级|r - 造成<A0IK,DataA2>点伤害。|n|cffffcc003级|r - 造成<A0IK,DataA3>点伤害。|n|cffffcc004级|r - 造成<A0IKL,DataA4>点伤害。\n"
+      "Value": "向目标区域内的每一个敌方单位发射一批冰枪，造成伤害并使每个目标昏迷<A0IK,Dur1>秒（英雄减半）。|n|n|cffffcc001级|r - 造成<A0IK,DataA1>点伤害。|n|cffffcc002级|r - 造成<A0IK,DataA2>点伤害。|n|cffffcc003级|r - 造成<A0IK,DataA3>点伤害。|n|cffffcc004级|r - 造成<A0IKL,DataA4>点伤害。"
     },
     {
       "Id": "atat",

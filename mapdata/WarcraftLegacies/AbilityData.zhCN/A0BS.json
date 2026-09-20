@@ -185,30 +185,30 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0BS,DataB2>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg2> - <e00C,maxdmg2>点伤害。|n持续<A0BS,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<A0BS,DataB2>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg2> - <e00C,maxdmg2>点伤害。|n持续<A0BS,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0BS,DataB3>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg3> - <e00C,maxdmg3>点伤害。|n持续<A0BS,Dur3>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<A0BS,DataB3>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg3> - <e00C,maxdmg3>点伤害。|n持续<A0BS,Dur3>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0BS,DataB4>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg4> - <e00C,maxdmg4>点伤害。|n持续<A0BS,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<A0BS,DataB4>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg4> - <e00C,maxdmg4>点伤害。|n持续<A0BS,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0BS,DataB1>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg1> - <e00C,maxdmg1>点伤害。|n持续<A0BS,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<A0BS,DataB1>只乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg1> - <e00C,maxdmg1>点伤害。|n持续<A0BS,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一群乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg1> - <e00C,maxdmg1>点伤害。|n持续<A0BS,Dur1>秒。|n|n|cffffcc001级|r - 召唤<A0BS,DataB1>只乌鸦。|n|cffffcc002级|r - 召唤<A0BS,DataB2>只乌鸦。|n|cffffcc003级|r - 召唤<A0BS,DataB3>只乌鸦。|n|cffffcc004级|r - 召唤<A0BS,DataB4>只乌鸦。\n"
+      "Value": "召唤一群乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg1> - <e00C,maxdmg1>点伤害。|n持续<A0BS,Dur1>秒。|n|n|cffffcc001级|r - 召唤<A0BS,DataB1>只乌鸦。|n|cffffcc002级|r - 召唤<A0BS,DataB2>只乌鸦。|n|cffffcc003级|r - 召唤<A0BS,DataB3>只乌鸦。|n|cffffcc004级|r - 召唤<A0BS,DataB4>只乌鸦。"
     }
   ],
   "NewId": "A0BS"

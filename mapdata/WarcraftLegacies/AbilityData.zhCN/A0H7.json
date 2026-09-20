@@ -139,7 +139,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一股可控制的龙卷风，可以减慢敌方单位的速度、随机将它们抛到空中，并对敌方建筑造成伤害。|n|cffffcc001级|r - 持续<A0H7,Dur1>秒，每秒对建筑造成<A02S,DataA1>点伤害。|n|cffffcc002级|r - 持续<A0H7,Dur2>秒，每秒对建筑造成<A0H8,DataA1>点伤害。|n|cffffcc003级|r - 持续<A0H7,Dur3>秒，每秒对建筑造成<A0H9,DataA1>点伤害。\n"
+      "Value": "召唤一股可控制的龙卷风，可以减慢敌方单位的速度、随机将它们抛到空中，并对敌方建筑造成伤害。|n|cffffcc001级|r - 持续<A0H7,Dur1>秒，每秒对建筑造成<A02S,DataA1>点伤害。|n|cffffcc002级|r - 持续<A0H7,Dur2>秒，每秒对建筑造成<A0H8,DataA1>点伤害。|n|cffffcc003级|r - 持续<A0H7,Dur3>秒，每秒对建筑造成<A0H9,DataA1>点伤害。"
     },
     {
       "Id": "anam",

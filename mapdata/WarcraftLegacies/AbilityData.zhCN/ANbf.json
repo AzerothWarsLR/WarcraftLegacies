@@ -177,7 +177,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "对敌方单位喷出一股锥形烈焰，造成大量伤害并使敌人着火。 |n持续<ANbf,Dur1>秒。 |n|n|cffffcc001级|r - 105 点伤害。|n|cffffcc002级|r - 155 点伤害。|n|cffffcc003级|r - 205 点伤害。|n|cffffcc004级|r - 255 点伤害。|n|cffffcc005级|r - 305 点伤害。\n"
+      "Value": "对敌方单位喷出一股锥形烈焰，造成大量伤害并使敌人着火。 |n持续<ANbf,Dur1>秒。 |n|n|cffffcc001级|r - 105 点伤害。|n|cffffcc002级|r - 155 点伤害。|n|cffffcc003级|r - 205 点伤害。|n|cffffcc004级|r - 255 点伤害。|n|cffffcc005级|r - 305 点伤害。"
     },
     {
       "Level": 1,

@@ -53,7 +53,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "被消灭时，英雄会原地复活。|n |n|cffffcc001级|r - <AOre,Cool1>秒冷却时间。 |n|cffffcc002级|r - <AOre,Cool2>秒冷却时间。 |n|cffffcc003级|r - <AOre,Cool3>秒冷却时间。\n"
+      "Value": "被消灭时，英雄会原地复活。|n |n|cffffcc001级|r - <AOre,Cool1>秒冷却时间。 |n|cffffcc002级|r - <AOre,Cool2>秒冷却时间。 |n|cffffcc003级|r - <AOre,Cool3>秒冷却时间。"
     },
     {
       "Level": 1,

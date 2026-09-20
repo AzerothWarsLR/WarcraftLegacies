@@ -260,7 +260,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄化身毁灭之魂，获得额外护甲、生命值、伤害与法术免疫。|n|n|cffffcc001 级|r - 获得<A0WF,DataA1>点额外护甲、<A0WF,DataB1>点额外生命值、<A0WF,DataC1>点额外伤害与法术免疫。|n持续<A0WF,Dur1>秒。|n|cffffcc002 级|r - 获得<A0WF,DataA2>点额外护甲、<A0WF,DataB2>点额外生命值、<A0WF,DataC2>点额外伤害与法术免疫。|n持续<A0WF,Dur2>秒。|n|cffffcc003 级|r - 获得<A0WF,DataA3>点额外护甲、<A0WF,DataB3>点额外生命值、<A0WF,DataC3>点额外伤害与法术免疫。|n持续<A0WF,Dur3>秒。|n|cffffcc004 级|r - 获得<A0WF,DataA4>点额外护甲、<A0WF,DataB4>点额外生命值、<A0WF,DataC4>点额外伤害与法术免疫。|n持续<A0WF,Dur4>秒。\n"
+      "Value": "英雄化身毁灭之魂，获得额外护甲、生命值、伤害与法术免疫。|n|n|cffffcc001 级|r - 获得<A0WF,DataA1>点额外护甲、<A0WF,DataB1>点额外生命值、<A0WF,DataC1>点额外伤害与法术免疫。|n持续<A0WF,Dur1>秒。|n|cffffcc002 级|r - 获得<A0WF,DataA2>点额外护甲、<A0WF,DataB2>点额外生命值、<A0WF,DataC2>点额外伤害与法术免疫。|n持续<A0WF,Dur2>秒。|n|cffffcc003 级|r - 获得<A0WF,DataA3>点额外护甲、<A0WF,DataB3>点额外生命值、<A0WF,DataC3>点额外伤害与法术免疫。|n持续<A0WF,Dur3>秒。|n|cffffcc004 级|r - 获得<A0WF,DataA4>点额外护甲、<A0WF,DataB4>点额外生命值、<A0WF,DataC4>点额外伤害与法术免疫。|n持续<A0WF,Dur4>秒。"
     },
     {
       "Level": 1,

@@ -161,7 +161,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "使英雄进入隐形状态，并在一段设定的时间内提高移动速度。当英雄攻击某个单位、打破隐形状态时，会造成额外伤害。 |n|n|cffffcc001级|r - 移动速度提高<TPY1,DataB1,%>%，额外伤害<TPY1,DataC1>点，持续<TPY1,Dur1>秒。 |n|cffffcc002级|r - 移动速度提高<TPY1,DataB2,%>%，额外伤害<TPY1,DataC2>点，持续<TPY1,Dur2>秒。 |n|cffffcc003级|r - 移动速度提高<TPY1,DataB3,%>%，额外伤害<TPY1,DataC3>点，持续<TPY1,Dur3>秒。|n|cffffcc004级|r - 移动速度提高<TPY1,DataB4,%>%，额外伤害<TPY1,DataC4>点，持续<TPY1,Dur4>秒。\n"
+      "Value": "使英雄进入隐形状态，并在一段设定的时间内提高移动速度。当英雄攻击某个单位、打破隐形状态时，会造成额外伤害。 |n|n|cffffcc001级|r - 移动速度提高<TPY1,DataB1,%>%，额外伤害<TPY1,DataC1>点，持续<TPY1,Dur1>秒。 |n|cffffcc002级|r - 移动速度提高<TPY1,DataB2,%>%，额外伤害<TPY1,DataC2>点，持续<TPY1,Dur2>秒。 |n|cffffcc003级|r - 移动速度提高<TPY1,DataB3,%>%，额外伤害<TPY1,DataC3>点，持续<TPY1,Dur3>秒。|n|cffffcc004级|r - 移动速度提高<TPY1,DataB4,%>%，额外伤害<TPY1,DataC4>点，持续<TPY1,Dur4>秒。"
     },
     {
       "Level": 4,

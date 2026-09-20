@@ -299,7 +299,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "向目标区域内的单位发射数道凋零缠绕，治疗友方亡灵单位，并对敌方活体单位造成一半伤害。|n|n|cffffcc001级|r - 恢复<ZB05,DataA1>点生命值。|n|cffffcc002级|r - 恢复<ZB05,DataA2>点生命值。|n|cffffcc003级|r - 恢复<ZB05,DataA3>点生命值。|n|cffffcc004级|r - 恢复<ZB05,DataA4>点生命值。\n"
+      "Value": "向目标区域内的单位发射数道凋零缠绕，治疗友方亡灵单位，并对敌方活体单位造成一半伤害。|n|n|cffffcc001级|r - 恢复<ZB05,DataA1>点生命值。|n|cffffcc002级|r - 恢复<ZB05,DataA2>点生命值。|n|cffffcc003级|r - 恢复<ZB05,DataA3>点生命值。|n|cffffcc004级|r - 恢复<ZB05,DataA4>点生命值。"
     },
     {
       "Id": "atat",

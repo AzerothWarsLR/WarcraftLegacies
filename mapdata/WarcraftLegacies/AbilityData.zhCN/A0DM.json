@@ -126,7 +126,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "提高周围友方单位的生命恢复速度和移动速度。 |n|n|cffffcc001级|r - 移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。|n|cffffcc002级|r - 移动速度提高<A0DM,DataA2,%>%，生命恢复速度提高<A0DM,DataB2,.>。|n|cffffcc003级|r - 移动速度提高<A0DM,DataA3,%>%，生命恢复速度提高<A0DM,DataB3,.>。|n|cffffcc004级|r - 移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。\n"
+      "Value": "提高周围友方单位的生命恢复速度和移动速度。 |n|n|cffffcc001级|r - 移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。|n|cffffcc002级|r - 移动速度提高<A0DM,DataA2,%>%，生命恢复速度提高<A0DM,DataB2,.>。|n|cffffcc003级|r - 移动速度提高<A0DM,DataA3,%>%，生命恢复速度提高<A0DM,DataB3,.>。|n|cffffcc004级|r - 移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。"
     },
     {
       "Id": "atat",

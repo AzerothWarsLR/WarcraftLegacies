@@ -299,7 +299,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "为目标区域内的所有友方单位施加霜甲术，持续<A13S,DataA1>秒。|n|n|cffffcc00等级 1|r - 提供<A13S,DataB1>点护甲，冷却时间<A13R,Cool1>秒。|n|cffffcc00等级 2|r - 提供<A13S,DataB2>点护甲，冷却时间<A13R,Cool2>秒。|n|cffffcc00等级 3|r - 提供<A13S,DataB3>点护甲，冷却时间<A13R,Cool3>秒。|n|cffffcc00等级 4|r - 提供<A13S,DataB4>点护甲，冷却时间<A13R,Cool4>秒。\n"
+      "Value": "为目标区域内的所有友方单位施加霜甲术，持续<A13S,DataA1>秒。|n|n|cffffcc00等级 1|r - 提供<A13S,DataB1>点护甲，冷却时间<A13R,Cool1>秒。|n|cffffcc00等级 2|r - 提供<A13S,DataB2>点护甲，冷却时间<A13R,Cool2>秒。|n|cffffcc00等级 3|r - 提供<A13S,DataB3>点护甲，冷却时间<A13R,Cool3>秒。|n|cffffcc00等级 4|r - 提供<A13S,DataB4>点护甲，冷却时间<A13R,Cool4>秒。"
     },
     {
       "Id": "atat",

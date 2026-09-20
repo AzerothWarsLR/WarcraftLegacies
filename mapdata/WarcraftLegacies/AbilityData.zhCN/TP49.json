@@ -255,7 +255,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "投掷一把充满风暴之力的战锤，它会穿透一条直线上的敌人并返回穆拉丁身边，对击中的所有敌人造成伤害并使其昏迷。|n|n|cffffcc001级|r - 75 点伤害，昏迷<TP50,Dur1,.>（英雄为<TP50,HeroDur1,.>）秒。|n|cffffcc002级|r - 125 点伤害，昏迷<TP50,Dur2,.>（英雄为<TP50,HeroDur2,.>）秒。|n|cffffcc003级|r - 175 点伤害，昏迷<TP50,Dur3,.>（英雄为<TP50,HeroDur3,.>）秒。|n|cffffcc004级|r - 225 点伤害，昏迷<TP50,Dur4,.>（英雄为<TP50,HeroDur4,.>）秒。\n"
+      "Value": "投掷一把充满风暴之力的战锤，它会穿透一条直线上的敌人并返回穆拉丁身边，对击中的所有敌人造成伤害并使其昏迷。|n|n|cffffcc001级|r - 75 点伤害，昏迷<TP50,Dur1,.>（英雄为<TP50,HeroDur1,.>）秒。|n|cffffcc002级|r - 125 点伤害，昏迷<TP50,Dur2,.>（英雄为<TP50,HeroDur2,.>）秒。|n|cffffcc003级|r - 175 点伤害，昏迷<TP50,Dur3,.>（英雄为<TP50,HeroDur3,.>）秒。|n|cffffcc004级|r - 225 点伤害，昏迷<TP50,Dur4,.>（英雄为<TP50,HeroDur4,.>）秒。"
     },
     {
       "Id": "aret",

@@ -192,7 +192,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤数波寒冰碎片从天而降，对目标区域内的单位造成伤害。 |n|n|cffffcc001级|r - <AHbz,DataA1>波碎片，每波造成<AHbz,DataB1>点伤害。 |n|cffffcc002级|r - <AHbz,DataA2>波碎片，每波造成<AHbz,DataB2>点伤害。 |n|cffffcc003级|r - <AHbz,DataA3>波碎片，每波造成<AHbz,DataB3>点伤害。 |n|cffffcc004级|r - <AHbz,DataA4>波碎片，每波造成<AHbz,DataB4>点伤害。\n"
+      "Value": "召唤数波寒冰碎片从天而降，对目标区域内的单位造成伤害。 |n|n|cffffcc001级|r - <AHbz,DataA1>波碎片，每波造成<AHbz,DataB1>点伤害。 |n|cffffcc002级|r - <AHbz,DataA2>波碎片，每波造成<AHbz,DataB2>点伤害。 |n|cffffcc003级|r - <AHbz,DataA3>波碎片，每波造成<AHbz,DataB3>点伤害。 |n|cffffcc004级|r - <AHbz,DataA4>波碎片，每波造成<AHbz,DataB4>点伤害。"
     },
     {
       "Level": 4,

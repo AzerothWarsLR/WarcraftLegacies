@@ -163,7 +163,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "降低周围敌方单位的移动速度和攻击速度。|n|n|cffffcc001级|r - 使敌方移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。|n|cffffcc002级|r - 使敌方移动速度降低<A03B,DataA2,%>%，攻击速度降低<A03B,DataB2,%>%。|n|cffffcc003级|r - 使敌方移动速度降低<A03B,DataA3,%>%，攻击速度降低<A03B,DataB3,%>%。|n|cffffcc004级|r - 使敌方移动速度降低<A03B,DataA4,%>%，攻击速度降低<A03B,DataB4,%>%。\n"
+      "Value": "降低周围敌方单位的移动速度和攻击速度。|n|n|cffffcc001级|r - 使敌方移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。|n|cffffcc002级|r - 使敌方移动速度降低<A03B,DataA2,%>%，攻击速度降低<A03B,DataB2,%>%。|n|cffffcc003级|r - 使敌方移动速度降低<A03B,DataA3,%>%，攻击速度降低<A03B,DataB3,%>%。|n|cffffcc004级|r - 使敌方移动速度降低<A03B,DataA4,%>%，攻击速度降低<A03B,DataB4,%>%。"
     },
     {
       "Id": "atat",

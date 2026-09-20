@@ -185,7 +185,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "移除目标区域内单位身上的所有魔法效果。 |n|cffffcc00对召唤单位造成<A0DK,DataB1>点伤害。|r|r |n|n|cffffcc001级|r - 14 秒冷却时间。|n|cffffcc002级|r - 10 秒冷却时间。 |n|cffffcc003级|r - 6 秒冷却时间。|n|cffffcc003级|r - 2 秒冷却时间。\n"
+      "Value": "移除目标区域内单位身上的所有魔法效果。 |n|cffffcc00对召唤单位造成<A0DK,DataB1>点伤害。|r|r |n|n|cffffcc001级|r - 14 秒冷却时间。|n|cffffcc002级|r - 10 秒冷却时间。 |n|cffffcc003级|r - 6 秒冷却时间。|n|cffffcc003级|r - 2 秒冷却时间。"
     },
     {
       "Id": "arpx",

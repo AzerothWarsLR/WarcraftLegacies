@@ -13,7 +13,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "该单位攻击时有 40% 的几率使敌方单位的攻击速度降低<ABSG,DataB1,%>%，移动速度降低<ABSG,DataA1,%>%。|n|cffffcc00持续<ABSG,Dur1>秒（英雄为 1.5 秒）。\n"
+      "Value": "该单位攻击时有 40% 的几率使敌方单位的攻击速度降低<ABSG,DataB1,%>%，移动速度降低<ABSG,DataA1,%>%。|n|cffffcc00持续<ABSG,Dur1>秒（英雄为 1.5 秒）。"
     },
     {
       "Id": "anam",

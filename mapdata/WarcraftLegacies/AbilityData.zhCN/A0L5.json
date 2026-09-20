@@ -338,7 +338,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤神圣光束，对一片目标区域内的单位造成伤害。|n|n|cffffcc001级|r - <ANhs,DataF1>波，每波<ANhs,DataA1>点伤害。|n|cffffcc002级|r - <ANhs,DataF2>波，每波<ANhs,DataA2>点伤害。|n|cffffcc003级|r - <ANhs,DataF3>波，每波<ANhs,DataA3>点伤害。\n"
+      "Value": "召唤神圣光束，对一片目标区域内的单位造成伤害。|n|n|cffffcc001级|r - <ANhs,DataF1>波，每波<ANhs,DataA1>点伤害。|n|cffffcc002级|r - <ANhs,DataF2>波，每波<ANhs,DataA2>点伤害。|n|cffffcc003级|r - <ANhs,DataF3>波，每波<ANhs,DataA3>点伤害。"
     },
     {
       "Id": "amac",

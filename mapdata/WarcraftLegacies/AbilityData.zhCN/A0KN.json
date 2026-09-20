@@ -105,7 +105,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "喷洒一波波治疗迷雾，为一片目标区域内的友方单位恢复生命值。|n|n|cffffcc001级|r - <A0KN,DataF1>波，每波恢复<A0KN,DataA1>点生命值。|n|cffffcc002级|r - <A0KN,DataF2>波，每波恢复<A0KN,DataA2>点生命值。|n|cffffcc003级|r - <A0KN,DataF3>波，每波恢复<A0KN,DataA3>点生命值。|n|cffffcc004级|r - <A0KN,DataF4>波，每波恢复<A0KN,DataA4>点生命值。\n"
+      "Value": "喷洒一波波治疗迷雾，为一片目标区域内的友方单位恢复生命值。|n|n|cffffcc001级|r - <A0KN,DataF1>波，每波恢复<A0KN,DataA1>点生命值。|n|cffffcc002级|r - <A0KN,DataF2>波，每波恢复<A0KN,DataA2>点生命值。|n|cffffcc003级|r - <A0KN,DataF3>波，每波恢复<A0KN,DataA3>点生命值。|n|cffffcc004级|r - <A0KN,DataF4>波，每波恢复<A0KN,DataA4>点生命值。"
     },
     {
       "Level": 1,

@@ -216,7 +216,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "有几率对附近的敌人造成伤害。 |n|n|cffffcc001级|r - <VP07,DataA1>% 的几率，<VP07,DataB1>点伤害。 |n|cffffcc002级|r - <VP07,DataA2>% 的几率，<VP07,DataB2>点伤害。 |n|cffffcc003级|r - <VP07,DataA3>% 的几率，<VP07,DataB3>点伤害。 |n|cffffcc004级|r - <VP07,DataA4>% 的几率，<VP07,DataB4>点伤害。\n"
+      "Value": "有几率对附近的敌人造成伤害。 |n|n|cffffcc001级|r - <VP07,DataA1>% 的几率，<VP07,DataB1>点伤害。 |n|cffffcc002级|r - <VP07,DataA2>% 的几率，<VP07,DataB2>点伤害。 |n|cffffcc003级|r - <VP07,DataA3>% 的几率，<VP07,DataB3>点伤害。 |n|cffffcc004级|r - <VP07,DataA4>% 的几率，<VP07,DataB4>点伤害。"
     },
     {
       "Id": "aret",

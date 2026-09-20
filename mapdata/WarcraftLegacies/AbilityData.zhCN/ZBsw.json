@@ -97,18 +97,18 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<ZBsw,DataA3>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp3,realHP>点生命值，免疫魔法和法术，并造成中等伤害。 |n持续<ZBsw,Dur3>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<ZBsw,DataA3>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp3,realHP>点生命值，免疫魔法和法术，并造成中等伤害。 |n持续<ZBsw,Dur3>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<ZBsw,DataA4>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp4,realHP>点生命值，免疫魔法和法术，并造成高额伤害。 |n持续<ZBsw,Dur4>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<ZBsw,DataA4>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp4,realHP>点生命值，免疫魔法和法术，并造成高额伤害。 |n持续<ZBsw,Dur4>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤无法移动的毒蛇结界攻击施法者的敌人。该结界对魔法免疫。 |n持续<ZBsw,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r |n|n|cffffcc001级|r - <ZBsw,DataA1>个结界，<osp2,realHP>点生命值，轻微伤害。 |n|cffffcc002级|r - <ZBsw,DataA2>个结界，<osp2,realHP>点生命值，轻微伤害。 |n|cffffcc003级|r - <ZBsw,DataA3>个结界，<osp3,realHP>点生命值，中等伤害。 |n|cffffcc004级|r - <ZBsw,DataA4>个结界，<osp4,realHP>点生命值，高额伤害。\n"
+      "Value": "召唤无法移动的毒蛇结界攻击施法者的敌人。该结界对魔法免疫。 |n持续<ZBsw,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r |n|n|cffffcc001级|r - <ZBsw,DataA1>个结界，<osp2,realHP>点生命值，轻微伤害。 |n|cffffcc002级|r - <ZBsw,DataA2>个结界，<osp2,realHP>点生命值，轻微伤害。 |n|cffffcc003级|r - <ZBsw,DataA3>个结界，<osp3,realHP>点生命值，中等伤害。 |n|cffffcc004级|r - <ZBsw,DataA4>个结界，<osp4,realHP>点生命值，高额伤害。"
     },
     {
       "Id": "abpx",
@@ -132,13 +132,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<ZBsw,DataA1>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp2,realHP>点生命值，免疫魔法和法术，并造成轻微伤害。 |n持续<ZBsw,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<ZBsw,DataA1>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp2,realHP>点生命值，免疫魔法和法术，并造成轻微伤害。 |n持续<ZBsw,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<ZBsw,DataA2>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp2,realHP>点生命值，免疫魔法和法术，并造成中等伤害。 |n持续<ZBsw,Dur2>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<ZBsw,DataA2>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp2,realHP>点生命值，免疫魔法和法术，并造成中等伤害。 |n持续<ZBsw,Dur2>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Id": "anam",

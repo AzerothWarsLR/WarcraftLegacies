@@ -359,7 +359,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一个隐形且无法移动的结界，可昏迷周围的敌方地面单位。当敌方地面单位靠近时，该陷阱会自动激活，并摧毁其效果范围内的所有其他寒冰陷阱。|n陷阱永久持续。|n|n|cffffcc001 级|r - 昏迷<ALS9,DataD1>秒（英雄为<ALS9,HeroDur1,.>秒），激活延迟<ALS9,DataA1>秒。|n|cffffcc002 级|r - 昏迷<ALS9,DataD2>秒（英雄为<ALS9,HeroDur2,.>秒），激活延迟<ALS9,DataA2>秒。|n|cffffcc003 级|r - 昏迷<ALS9,DataD3>秒（英雄为<ALS9,HeroDur3,.>秒），激活延迟<ALS9,DataA3>秒。|n|cffffcc004 级|r - 昏迷<ALS9,DataD4>秒（英雄为<ALS9,HeroDur4,.>秒），激活延迟<ALS9,DataA4>秒。\n"
+      "Value": "召唤一个隐形且无法移动的结界，可昏迷周围的敌方地面单位。当敌方地面单位靠近时，该陷阱会自动激活，并摧毁其效果范围内的所有其他寒冰陷阱。|n陷阱永久持续。|n|n|cffffcc001 级|r - 昏迷<ALS9,DataD1>秒（英雄为<ALS9,HeroDur1,.>秒），激活延迟<ALS9,DataA1>秒。|n|cffffcc002 级|r - 昏迷<ALS9,DataD2>秒（英雄为<ALS9,HeroDur2,.>秒），激活延迟<ALS9,DataA2>秒。|n|cffffcc003 级|r - 昏迷<ALS9,DataD3>秒（英雄为<ALS9,HeroDur3,.>秒），激活延迟<ALS9,DataA3>秒。|n|cffffcc004 级|r - 昏迷<ALS9,DataD4>秒（英雄为<ALS9,HeroDur4,.>秒），激活延迟<ALS9,DataA4>秒。"
     },
     {
       "Id": "aret",
