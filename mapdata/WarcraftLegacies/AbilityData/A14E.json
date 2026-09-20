@@ -1,0 +1,378 @@
+{
+  "OldId": "ANcl",
+  "NewId": "A14E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 110
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "rejuvenation"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "rejuvenation"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "rejuvenation"
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "rejuvenation"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vulnerable"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vulnerable"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vulnerable"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vulnerable"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarpPortalGreen.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "acap",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Malfurion)"
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Emerald Dream"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarpPortalGreen.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Emerald Dream - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Malfurion pulls a friendly unit into the Emerald Dream. While there it cannot be harmed and cannot act, and it recovers health and mana before returning.|n|cffffcc00Level 1|r - 2 seconds, restores 20% health and 10% mana.|n|cffffcc00Level 2|r - 2.5 seconds, restores 30% health and 15% mana.|n|cffffcc00Level 3|r - 3 seconds, restores 40% health and 20% mana.|n|cffffcc00Level 4|r - 3.5 seconds, restores 50% health and 25% mana."
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Emerald Dream - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Emerald Dream - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Emerald Dream - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Emerald Dream - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Pulls a friendly unit into the Emerald Dream for 2 seconds. It cannot be harmed or act, and recovers 20% of its health and 10% of its mana."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Pulls a friendly unit into the Emerald Dream for 2.5 seconds. It cannot be harmed or act, and recovers 30% of its health and 15% of its mana."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Pulls a friendly unit into the Emerald Dream for 3 seconds. It cannot be harmed or act, and recovers 40% of its health and 20% of its mana."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Pulls a friendly unit into the Emerald Dream for 3.5 seconds. It cannot be harmed or act, and recovers 50% of its health and 25% of its mana."
+    }
+  ]
+}
