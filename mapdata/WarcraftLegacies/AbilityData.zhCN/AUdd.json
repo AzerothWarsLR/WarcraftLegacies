@@ -191,7 +191,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "使效果范围内所有单位和建筑每秒受到相当于其基础生命值<AUdd,DataA1,%>%的伤害。也能摧毁树木。"
+      "Value": "使效果范围内的所有单位每秒受到相当于其基础生命值一定百分比的伤害。|n持续 15 秒。|n|n|cffffcc00等级 1|r - 每秒流失 4% 生命值。|n|cffffcc00等级 2|r - 每秒流失 5% 生命值。|n|cffffcc00等级 3|r - 每秒流失 6% 生命值。\n"
     },
     {
       "Level": 1,
@@ -203,13 +203,13 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "枯萎凋零 - [|cffffcc00级别 1|r]"
+      "Value": "枯萎凋零 - [|cffffcc00级别 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "枯萎凋零 - [|cffffcc00级别 1|r]"
+      "Value": "枯萎凋零 - [|cffffcc00级别 3|r]"
     },
     {
       "Level": 2,
@@ -221,13 +221,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "每秒对作用范围内的所有单位造成相当于其基础生命值<AUdd,DataA2,%>% 的伤害。|n持续<AUdd,Dur2>秒。"
+      "Value": "每秒对作用范围内的所有单位造成相当于其基础生命值<AUdd,DataA3,%>% 的伤害。|n持续<AUdd,Dur3>秒。"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "每秒对作用范围内的所有单位造成相当于其基础生命值<AUdd,DataA2,%>% 的伤害。|n持续<AUdd,Dur2>秒。"
+      "Value": "每秒对作用范围内的所有单位造成相当于其基础生命值<AUdd,DataA1,%>% 的伤害。|n持续<AUdd,Dur1>秒。"
     },
     {
       "Id": "anam",

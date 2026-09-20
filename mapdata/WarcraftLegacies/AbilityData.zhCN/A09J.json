@@ -142,7 +142,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "痛饮 - [|cffffcc002级|r]"
+      "Value": "痛饮 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -160,7 +160,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "借助酒精的振奋之力，为周围的友方单位恢复<A09J,DataA1>点生命值。"
+      "Value": "借助酒精的振奋之力，为周围的友方单位恢复<A09J,DataA2>点生命值。"
     },
     {
       "Id": "auar",

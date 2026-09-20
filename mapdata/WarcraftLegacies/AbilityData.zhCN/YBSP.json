@@ -105,7 +105,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "减缓毒药 - [|cffffcc001 级|r]"
+      "Value": "减速毒药 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -117,7 +117,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "一次带毒的攻击，每秒造成<YBSP,DataA1>点伤害，并使目标敌人的移动速度降低<YBSP,DataB1,%>%，攻击速度降低<YBSP,DataC1,%>%，持续<YBSP,Dur1>秒。"
+      "Value": "一次带毒的攻击，每秒造成<YBSP,DataA2>点伤害，并使目标敌人的移动速度降低<YBSP,DataB2,%>%，攻击速度降低<YBSP,DataC2,%>%，持续<YBSP,Dur2>秒。"
     },
     {
       "Id": "anam",

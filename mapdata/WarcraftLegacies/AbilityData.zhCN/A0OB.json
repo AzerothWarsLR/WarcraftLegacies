@@ -159,19 +159,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "呼叫贸易亲王卫兵 - [|cffffcc004级|r]"
+      "Value": "呼叫贸易亲王卫兵 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "呼叫贸易亲王卫兵 - [|cffffcc004级|r]"
+      "Value": "呼叫贸易亲王卫兵 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "呼叫贸易亲王卫兵 - [|cffffcc004级|r]"
+      "Value": "呼叫贸易亲王卫兵 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -189,19 +189,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0OB,DataA1>名贸易亲王卫兵，持续<A0OB,Dur1>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
+      "Value": "召唤<A0OB,DataA2>名贸易亲王卫兵，持续<A0OB,Dur2>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0OB,DataA1>名贸易亲王卫兵，持续<A0OB,Dur1>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
+      "Value": "召唤<A0OB,DataA3>名贸易亲王卫兵，持续<A0OB,Dur3>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<A0OB,DataA1>名贸易亲王卫兵，持续<A0OB,Dur1>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
+      "Value": "召唤<A0OB,DataA4>名贸易亲王卫兵，持续<A0OB,Dur4>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
     }
   ],
   "NewId": "A0OB"

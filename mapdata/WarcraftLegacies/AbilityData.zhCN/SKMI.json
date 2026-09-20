@@ -147,7 +147,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "创造出剑圣的幻象来迷惑敌人，并驱散剑圣身上的所有魔法效果。|n|n|cffffcc001级|r - 制造<AOmi,DataA1>个镜像。|n|cffffcc002级|r - 制造<AOmi,DataA2>个镜像。|n|cffffcc003级|r - 制造<AOmi,DataA3>个镜像。\n"
+      "Value": "创造出施法者的幻象来对敌作战，并驱散施法者身上的所有魔法效果。|n|n|cffffcc00等级 1|r - 制造<SKMI,DataA1>个幻象，其造成 <SKMI,DataB1,%>% 的伤害，并承受 <SKMI,DataC1,%>% 的伤害。 |n|cffffcc00等级 2|r - 制造<SKMI,DataA2>个幻象，其造成 <SKMI,DataB2,%>% 的伤害，并承受 <SKMI,DataC2,%>% 的伤害。 |n|cffffcc00等级 3|r - 制造<SKMI,DataA3>个幻象，其造成 <SKMI,DataB3,%>% 的伤害，并承受 <SKMI,DataC3,%>% 的伤害。\n"
     },
     {
       "Level": 2,
@@ -159,13 +159,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "创造<SKMI,DataA2>个施法者的镜像，每个造成<SKMI,DataB2,%>%的伤害，承受<SKMI,DataC2,%>%的伤害。驱散施法者身上的所有魔法。|n持续<SKMI,Dur2>秒。"
+      "Value": "创造<SKMI,DataA3>个施法者的镜像，每个造成<SKMI,DataB3,%>%的伤害，承受<SKMI,DataC3,%>%的伤害。驱散施法者身上的所有魔法。|n持续<SKMI,Dur3>秒。"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "创造<SKMI,DataA2>个施法者的镜像，每个造成<SKMI,DataB2,%>%的伤害，承受<SKMI,DataC2,%>%的伤害。驱散施法者身上的所有魔法。|n持续<SKMI,Dur2>秒。"
+      "Value": "创造<SKMI,DataA1>个施法者的镜像，每个造成<SKMI,DataB1,%>%的伤害，承受<SKMI,DataC1,%>%的伤害。驱散施法者身上的所有魔法。|n持续<SKMI,Dur1>秒。"
     },
     {
       "Id": "anam",

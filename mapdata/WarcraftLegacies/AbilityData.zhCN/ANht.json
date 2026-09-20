@@ -95,13 +95,13 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恐惧|cffffcc00嚎|r叫 - [|cffffcc006级|r]"
+      "Value": "恐惧|cffffcc00嚎|r叫 - [|cffffcc004级|r]"
     },
     {
       "Level": 5,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恐惧|cffffcc00嚎|r叫 - [|cffffcc006级|r]"
+      "Value": "恐惧|cffffcc00嚎|r叫 - [|cffffcc005级|r]"
     },
     {
       "Level": 6,
@@ -119,13 +119,13 @@
       "Level": 5,
       "Id": "aub1",
       "Type": 3,
-      "Value": "深渊领主发出令人胆寒的嚎叫，使周围敌方单位的攻击力降低<ANht,DataA4,%>%，持续<ANht,Dur4>秒。"
+      "Value": "深渊领主发出令人胆寒的嚎叫，使周围敌方单位的攻击力降低<ANht,DataA5,%>%，持续<ANht,Dur5>秒。"
     },
     {
       "Level": 6,
       "Id": "aub1",
       "Type": 3,
-      "Value": "深渊领主发出令人胆寒的嚎叫，使周围敌方单位的攻击力降低<ANht,DataA4,%>%，持续<ANht,Dur4>秒。"
+      "Value": "深渊领主发出令人胆寒的嚎叫，使周围敌方单位的攻击力降低<ANht,DataA6,%>%，持续<ANht,Dur6>秒。"
     },
     {
       "Id": "anam",

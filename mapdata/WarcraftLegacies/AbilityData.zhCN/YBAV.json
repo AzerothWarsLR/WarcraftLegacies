@@ -170,19 +170,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "复仇之魂 - [|cffffcc004级|r]"
+      "Value": "复仇之魂 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "复仇之魂 - [|cffffcc004级|r]"
+      "Value": "复仇之魂 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "复仇之魂 - [|cffffcc004级|r]"
+      "Value": "复仇之魂 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -200,19 +200,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<YBAV,DataB1>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
+      "Value": "召唤<YBAV,DataB2>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<YBAV,DataB1>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
+      "Value": "召唤<YBAV,DataB3>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<YBAV,DataB1>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
+      "Value": "召唤<YBAV,DataB4>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
     }
   ],
   "NewId": "YBAV"

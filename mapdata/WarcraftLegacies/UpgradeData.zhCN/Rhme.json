@@ -174,13 +174,13 @@
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "进一步提高大多数单位的攻击伤害。"
+      "Value": "提高大多数单位的攻击伤害。"
     },
     {
       "Level": 3,
       "Id": "gub1",
       "Type": 3,
-      "Value": "进一步提高大多数单位的攻击伤害。"
+      "Value": "提高大多数单位的攻击伤害。"
     },
     {
       "Level": 4,
@@ -228,55 +228,55 @@
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "铜制武器"
     },
     {
       "Level": 2,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "青铜制武器"
     },
     {
       "Level": 3,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "铁制武器"
     },
     {
       "Level": 4,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "钢制武器"
     },
     {
       "Level": 5,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "秘银制武器"
     },
     {
       "Level": 6,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "瑟银制武器"
     },
     {
       "Level": 7,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "源质制武器"
     },
     {
       "Level": 8,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "精金制武器"
     },
     {
       "Level": 9,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "钛制武器"
     },
     {
       "Level": 10,

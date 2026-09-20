@@ -180,19 +180,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "时间之盾 - [|cffffcc001 级|r]"
+      "Value": "时光护盾 - [|cffffcc00等级 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "时间之盾 - [|cffffcc002 级|r]"
+      "Value": "时光护盾 - [|cffffcc00等级 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "时间之盾 - [|cffffcc003 级|r]"
+      "Value": "时光护盾 - [|cffffcc00等级 3|r]"
     },
     {
       "Id": "abpx",
@@ -206,7 +206,7 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "时间之盾 - [|cffffcc004 级|r]"
+      "Value": "时光护盾 - [|cffffcc00等级 4|r]"
     },
     {
       "Level": 1,
@@ -218,19 +218,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 1 秒。"
+      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 2 秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 1 秒。"
+      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 3 秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 1 秒。"
+      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 4 秒。"
     },
     {
       "Id": "anam",

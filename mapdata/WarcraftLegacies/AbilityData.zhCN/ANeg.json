@@ -120,19 +120,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB1>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA1,%>%。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB2>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA2,%>%。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB4>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA4,%>%。"
+      "Value": "强化加兹鲁维的其他技能，提供<ANeg,DataB3>点攻击力，并使加兹鲁维的移动速度提高<ANeg,DataA3,%>%。"
     },
     {
       "Id": "anam",

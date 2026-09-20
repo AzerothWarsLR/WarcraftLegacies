@@ -144,19 +144,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "哨兵战旗 |cffffcc00(E)|r - [|cffffcc004级|r]"
+      "Value": "哨兵战旗 |cffffcc00(E)|r - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "哨兵战旗 |cffffcc00(E)|r - [|cffffcc004级|r]"
+      "Value": "哨兵战旗 |cffffcc00(E)|r - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "哨兵战旗 |cffffcc00(E)|r - [|cffffcc004级|r]"
+      "Value": "哨兵战旗 |cffffcc00(E)|r - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -174,19 +174,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "放置一面战旗，为战旗旁的友方单位提供 7.5% 额外伤害。影响范围为 300。|n持续<AOsw,Dur1>秒"
+      "Value": "放置一面战旗，为战旗旁的友方单位提供 15% 额外伤害。影响范围为 300。|n持续<AOsw,Dur2>秒"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "放置一面战旗，为战旗旁的友方单位提供 7.5% 额外伤害。影响范围为 300。|n持续<AOsw,Dur1>秒"
+      "Value": "放置一面战旗，为战旗旁的友方单位提供 22.5% 额外伤害。影响范围为 300。|n持续<AOsw,Dur3>秒"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "放置一面战旗，为战旗旁的友方单位提供 7.5% 额外伤害。影响范围为 300。|n持续<AOsw,Dur1>秒"
+      "Value": "放置一面战旗，为战旗旁的友方单位提供 30% 额外伤害。影响范围为 300。|n持续<AOsw,Dur4>秒"
     }
   ],
   "NewId": "A0L9"

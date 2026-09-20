@@ -331,19 +331,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<vSW2,DataB1>点初始伤害，并在<vSW2,Dur1>秒内每秒造成<vSW2,DataE1>点伤害。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<vSW2,DataB2>点初始伤害，并在<vSW2,Dur2>秒内每秒造成<vSW2,DataE2>点伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<vSW2,DataB3>点初始伤害，并在<vSW2,Dur3>秒内每秒造成<vSW2,DataE3>点伤害。"
     },
     {
       "Id": "anam",

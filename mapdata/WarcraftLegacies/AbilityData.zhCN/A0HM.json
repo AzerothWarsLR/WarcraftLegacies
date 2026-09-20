@@ -247,19 +247,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "风暴、大地与火焰 - [|cffffcc004级|r]"
+      "Value": "风暴、大地与火焰 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "风暴、大地与火焰 - [|cffffcc004级|r]"
+      "Value": "风暴、大地与火焰 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "风暴、大地与火焰 - [|cffffcc004级|r]"
+      "Value": "风暴、大地与火焰 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -285,13 +285,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤三个强壮的灵魂来协助熊猫酒仙。45 秒冷却时间"
+      "Value": "召唤三个强大的灵魂来协助熊猫酒仙。30 秒冷却时间"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤三个强壮的灵魂来协助熊猫酒仙。45 秒冷却时间"
+      "Value": "召唤三个强壮的灵魂来协助熊猫酒仙。15 秒冷却时间"
     },
     {
       "Id": "arut",

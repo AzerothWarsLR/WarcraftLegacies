@@ -135,7 +135,7 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "溢流"
+      "Value": "溢流 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,
@@ -147,7 +147,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使攻城行者驾驶员突然向引擎中注入大量燃油，移动速度提高 100%，持续 3 秒。"
+      "Value": "使该单位的攻击速度提高<A0EH,DataA2,%>%，移动速度提高<A0EH,DataB2,%>%，持续<A0EH,Dur2>秒。"
     },
     {
       "Id": "auhk",

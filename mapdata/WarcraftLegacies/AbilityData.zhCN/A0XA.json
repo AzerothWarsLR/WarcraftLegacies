@@ -114,7 +114,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激怒 - [|cffffcc002级|r]"
+      "Value": "激怒"
     },
     {
       "Level": 2,
@@ -132,7 +132,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击速度提高<A0XA,DataA1,%>%，移动速度提高<A0XA,DataB1,%>%，持续<A0XA,Dur1>秒。"
+      "Value": "使该单位的攻击速度提高<A0XA,DataA2,%>%，移动速度提高<A0XA,DataB2,%>%，持续<A0XA,Dur2>秒。"
     },
     {
       "Id": "aubx",

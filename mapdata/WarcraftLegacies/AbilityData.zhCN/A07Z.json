@@ -322,19 +322,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "坚韧之力 - [|cffffcc004级|r]"
+      "Value": "坚韧之力 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "坚韧之力 - [|cffffcc004级|r]"
+      "Value": "坚韧之力 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "坚韧之力 - [|cffffcc004级|r]"
+      "Value": "坚韧之力 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -352,19 +352,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+      "Value": "使该单位的攻击力提高<A07Z,DataA2,%>%，护甲提高<A07Z,DataB2>点，生命恢复速度提高<A07Z,DataC2>，持续<A07Z,HeroDur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+      "Value": "使该单位的攻击力提高<A07Z,DataA3,%>%，护甲提高<A07Z,DataB3>点，生命恢复速度提高<A07Z,DataC3>，持续<A07Z,HeroDur3>秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击力提高<A07Z,DataA1,%>%，护甲提高<A07Z,DataB1>点，生命恢复速度提高<A07Z,DataC1>，持续<A07Z,HeroDur1>秒。"
+      "Value": "使该单位的攻击力提高<A07Z,DataA4,%>%，护甲提高<A07Z,DataB4>点，生命恢复速度提高<A07Z,DataC4>，持续<A07Z,HeroDur4>秒。"
     }
   ],
   "NewId": "A07Z"

@@ -117,7 +117,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤虫群甲虫 - [|cffffcc002 级|r]"
+      "Value": "召唤虫群甲虫 - [|cffffcc001 级|r]"
     },
     {
       "Level": 1,
@@ -135,7 +135,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "该单位生成<ASWB,DataB1>只无法控制的虫群甲虫攻击施法者的敌人。甲虫持续<ASWB,Dur1>秒。"
+      "Value": "该单位生成<ASWB,DataB2>只无法控制的虫群甲虫攻击施法者的敌人。甲虫持续<ASWB,Dur2>秒。"
     }
   ],
   "NewId": "ASWB"

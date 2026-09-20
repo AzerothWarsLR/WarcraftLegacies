@@ -252,13 +252,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+      "Value": "湮灭之球 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+      "Value": "湮灭之球 - [|cffffcc002 级|r]"
     },
     {
       "Level": 1,
@@ -270,7 +270,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+      "Value": "使该单位的攻击提高<CT01,DataA2>点额外伤害，并使其攻击造成范围伤害。"
     },
     {
       "Id": "auhk",
@@ -281,7 +281,7 @@
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "湮灭之球 - [|cffffcc004 级|r]"
+      "Value": "湮灭之球 - [|cffffcc003 级|r]"
     },
     {
       "Level": 4,
@@ -293,13 +293,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+      "Value": "使该单位的攻击提高<CT01,DataA3>点额外伤害，并使其攻击造成范围伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位的攻击提高<CT01,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+      "Value": "使该单位的攻击提高<CT01,DataA4>点额外伤害，并使其攻击造成范围伤害。"
     },
     {
       "Level": 2,

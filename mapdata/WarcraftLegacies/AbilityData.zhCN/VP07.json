@@ -181,31 +181,31 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使攻击有<VP07,DataA1>% 的几率对附近的敌人造成<VP07,DataB1>点伤害。"
+      "Value": "使攻击有<VP07,DataA2>% 的几率对附近的敌人造成<VP07,DataB2>点伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使攻击有<VP07,DataA1>% 的几率对附近的敌人造成<VP07,DataB1>点伤害。"
+      "Value": "使攻击有<VP07,DataA3>% 的几率对附近的敌人造成<VP07,DataB3>点伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使攻击有<VP07,DataA1>% 的几率对附近的敌人造成<VP07,DataB1>点伤害。"
+      "Value": "使攻击有<VP07,DataA4>% 的几率对附近的敌人造成<VP07,DataB4>点伤害。"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc004级|r]"
+      "Value": "粉碎 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc004级|r]"
+      "Value": "粉碎 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -227,7 +227,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎 - [|cffffcc004级|r]"
+      "Value": "粉碎 - [|cffffcc001级|r]"
     },
     {
       "Id": "anam",

@@ -269,19 +269,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "财富之诺 - [|cffffcc004级|r]"
+      "Value": "财富之诺 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "财富之诺 - [|cffffcc004级|r]"
+      "Value": "财富之诺 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "财富之诺 - [|cffffcc004级|r]"
+      "Value": "财富之诺 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -299,19 +299,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA1,%>%、护甲提高<A0M2,DataB1>点，持续<A0M2,Dur1>秒。"
+      "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA2,%>%、护甲提高<A0M2,DataB2>点，持续<A0M2,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA1,%>%、护甲提高<A0M2,DataB1>点，持续<A0M2,Dur1>秒。"
+      "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA3,%>%、护甲提高<A0M2,DataB3>点，持续<A0M2,Dur3>秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA1,%>%、护甲提高<A0M2,DataB1>点，持续<A0M2,Dur1>秒。"
+      "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA4,%>%、护甲提高<A0M2,DataB4>点，持续<A0M2,Dur4>秒。"
     },
     {
       "Id": "aart",

@@ -246,7 +246,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "请大家喝一轮 - [|cffffcc002级|r]"
+      "Value": "神圣干涉"
     },
     {
       "Level": 2,
@@ -258,13 +258,13 @@
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "请大家喝一轮 - [|cffffcc002级|r]"
+      "Value": "请大家喝一轮 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "请大家喝一轮 - [|cffffcc002级|r]"
+      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -276,19 +276,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "将大范围内的所有友方单位治疗至满生命值。"
+      "Value": "为大范围内的友方单位恢复 225 点生命值。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "将大范围内的所有友方单位治疗至满生命值。"
+      "Value": "为大范围内的友方单位恢复 300 点生命值。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "将大范围内的所有友方单位治疗至满生命值。"
+      "Value": "为大范围内的友方单位恢复 375 点生命值。"
     },
     {
       "Id": "ahky",

@@ -310,19 +310,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "震地碎片 - [|cffffcc004级|r]"
+      "Value": "震地碎片 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "震地碎片 - [|cffffcc004级|r]"
+      "Value": "震地碎片 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "震地碎片 - [|cffffcc004级|r]"
+      "Value": "震地碎片 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -340,19 +340,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA1>点伤害并使每个目标昏迷<A0GL,Dur1>秒。"
+      "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA2>点伤害并使每个目标昏迷<A0GL,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA1>点伤害并使每个目标昏迷<A0GL,Dur1>秒。"
+      "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA3>点伤害并使每个目标昏迷<A0GL,Dur3>秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA1>点伤害并使每个目标昏迷<A0GL,Dur1>秒。"
+      "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA4>点伤害并使每个目标昏迷<A0GL,Dur4>秒。"
     },
     {
       "Id": "arpx",

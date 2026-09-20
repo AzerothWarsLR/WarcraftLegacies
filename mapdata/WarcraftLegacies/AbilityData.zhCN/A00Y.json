@@ -266,49 +266,49 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "霜咬 - [|cffffcc004 级|r]"
+      "Value": "传送 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "霜咬 - [|cffffcc004 级|r]"
+      "Value": "传送 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "霜咬 - [|cffffcc004 级|r]"
+      "Value": "传送 - [|cffffcc003 级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "霜咬 - [|cffffcc004 级|r]"
+      "Value": "传送 - [|cffffcc004 级|r]"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "海巫引导一道传送法术，为逃脱做好准备。"
+      "Value": "英雄的攻击使单位的攻击速度降低<A00Y,DataC1,%>%，移动速度降低至原来的<A00Y,DataB1>分之一，持续<A00Y,Dur1>秒。目标每秒受到<A00Y,DataA1>点伤害。对英雄持续 0.4 秒。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "海巫引导一道传送法术，为逃脱做好准备。"
+      "Value": "英雄的攻击使单位的攻击速度降低<A00Y,DataC2,%>%，移动速度降低至原来的<A00Y,DataB2>分之一，持续<A00Y,Dur2>秒。目标每秒受到<A00Y,DataA2>点伤害。对英雄持续 0.4 秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "海巫引导一道传送法术，为逃脱做好准备。"
+      "Value": "英雄的攻击使单位的攻击速度降低<A00Y,DataC3,%>%，移动速度降低至原来的<A00Y,DataB3>分之一，持续<A00Y,Dur3>秒。目标每秒受到<A00Y,DataA3>点伤害。对英雄持续 0.4 秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "海巫引导一道传送法术，为逃脱做好准备。"
+      "Value": "英雄的攻击使单位的攻击速度降低<A00Y,DataC4,%>%，移动速度降低至原来的<A00Y,DataB4>分之一，持续<A00Y,Dur4>秒。目标每秒受到<A00Y,DataA4>点伤害。对英雄持续 0.4 秒。"
     },
     {
       "Id": "abpx",

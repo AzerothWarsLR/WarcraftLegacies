@@ -161,19 +161,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+      "Value": "阻止目标点<A0XS,Area2>半径内的所有敌人施放法术。对单位持续<A0XS,Dur2>秒，对英雄持续<A0XS,HeroDur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+      "Value": "阻止目标点<A0XS,Area3>半径内的所有敌人施放法术。对单位持续<A0XS,Dur3>秒，对英雄持续<A0XS,HeroDur3>秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "阻止目标点<A0XS,Area1>半径内的所有敌人施放法术。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。"
+      "Value": "阻止目标点<A0XS,Area4>半径内的所有敌人施放法术。对单位持续<A0XS,Dur4>秒，对英雄持续<A0XS,HeroDur4>秒。"
     },
     {
       "Id": "abpx",

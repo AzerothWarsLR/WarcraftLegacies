@@ -125,7 +125,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "叉状闪电 - [|cffffcc002级|r]"
+      "Value": "叉状闪电 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -143,7 +143,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A00I,DataB1>个敌方单位，造成<A00I,DataA1>点伤害。"
+      "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A00I,DataB2>个敌方单位，造成<A00I,DataA2>点伤害。"
     },
     {
       "Id": "anam",

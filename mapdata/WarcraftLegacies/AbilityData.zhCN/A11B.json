@@ -192,13 +192,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "潮汐风暴 - [|cffffcc00等级 3|r]"
+      "Value": "潮汐风暴 - [|cffffcc00等级 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "潮汐风暴 - [|cffffcc00等级 3|r]"
+      "Value": "潮汐风暴 - [|cffffcc00等级 2|r]"
     },
     {
       "Level": 3,
@@ -216,13 +216,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "每秒召唤<A11B,DataA1>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC1>点伤害。|n持续<A11B,Dur1>秒。"
+      "Value": "每秒召唤<A11B,DataA2>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC2>点伤害。|n持续<A11B,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "每秒召唤<A11B,DataA1>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC1>点伤害。|n持续<A11B,Dur1>秒。"
+      "Value": "每秒召唤<A11B,DataA3>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC3>点伤害。|n持续<A11B,Dur3>秒。"
     }
   ],
   "NewId": "A11B"

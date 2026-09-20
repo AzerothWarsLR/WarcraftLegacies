@@ -206,7 +206,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "神圣打击 - [|cffffcc00级别 3|r]"
+      "Value": "神圣打击 - [|cffffcc00级别 1|r]"
     },
     {
       "Level": 2,
@@ -218,13 +218,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA2>点伤害，并使其昏迷<ST0X,Dur2>秒。"
+      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA3>点伤害，并使其昏迷<ST0X,Dur3>秒。"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "神圣打击 - [|cffffcc00级别 3|r]"
+      "Value": "神圣打击 - [|cffffcc00级别 2|r]"
     },
     {
       "Level": 3,
@@ -251,7 +251,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA2>点伤害，并使其昏迷<ST0X,Dur2>秒。"
+      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA1>点伤害，并使其昏迷<ST0X,Dur1>秒。"
     }
   ],
   "NewId": "ST0X"

@@ -68,55 +68,55 @@
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "铜护甲板"
     },
     {
       "Level": 2,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "青铜护甲板"
     },
     {
       "Level": 3,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "铁护甲板"
     },
     {
       "Level": 4,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "钢护甲板"
     },
     {
       "Level": 5,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "秘银护甲板"
     },
     {
       "Level": 6,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "瑟银护甲板"
     },
     {
       "Level": 7,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "源质护甲板"
     },
     {
       "Level": 8,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "精金护甲板"
     },
     {
       "Level": 9,
       "Id": "gnam",
       "Type": 3,
-      "Value": "钢铁装甲"
+      "Value": "钛护甲板"
     },
     {
       "Level": 10,
@@ -194,13 +194,13 @@
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "进一步提高所有单位的护甲。"
+      "Value": "提高所有单位的护甲。"
     },
     {
       "Level": 3,
       "Id": "gub1",
       "Type": 3,
-      "Value": "进一步提高所有单位的护甲。"
+      "Value": "提高所有单位的护甲。"
     },
     {
       "Level": 4,

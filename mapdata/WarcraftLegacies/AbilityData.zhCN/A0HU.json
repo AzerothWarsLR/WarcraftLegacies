@@ -55,7 +55,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "火焰攻击(|cffffcc00Q|r) - [|cffffcc002级|r]"
+      "Value": "火焰攻击(|cffffcc00Q|r) - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -73,7 +73,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "火元素的攻击会点燃它的敌人，使其移动速度降低<ANdh,DataC1,%>%，并且攻击有<ANdh,DataB1,%>%的未命中率。带有火焰攻击效果的单位如果被火焰之息击中，会被点燃并受到更高的燃烧伤害。 |n持续<ANdh,Dur1>秒。"
+      "Value": "火元素的攻击会点燃它的敌人，使其移动速度降低<ANdh,DataC2,%>%，并且攻击有<ANdh,DataB2,%>%的未命中率。带有火焰攻击效果的单位如果被火焰之息击中，会被点燃并受到更高的燃烧伤害。 |n持续<ANdh,Dur2>秒。"
     }
   ],
   "NewId": "A0HU"

@@ -55,7 +55,7 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "防御法球 - [|cffffcc003级|r]"
+      "Value": "防御法球 - [|cffffcc004级|r]"
     },
     {
       "Id": "aart",
@@ -76,13 +76,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "防御法球 - [|cffffcc003级|r]"
+      "Value": "防御法球 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "防御法球 - [|cffffcc003级|r]"
+      "Value": "防御法球 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
@@ -100,13 +100,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "防御法球每次撞击会对每个单位造成 30 点伤害。"
+      "Value": "防御法球每次撞击会对每个单位造成 40 点伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "防御法球每次撞击会对每个单位造成 30 点伤害。"
+      "Value": "防御法球每次撞击会对每个单位造成 50 点伤害。"
     },
     {
       "Id": "anam",
@@ -117,7 +117,7 @@
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "防御法球每次撞击会对每个单位造成 30 点伤害。"
+      "Value": "防御法球每次撞击会对每个单位造成 60 点伤害。"
     }
   ],
   "NewId": "A055"

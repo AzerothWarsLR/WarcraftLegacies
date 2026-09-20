@@ -168,13 +168,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "混乱之雨 - [|cffffcc003级|r]"
+      "Value": "混乱之雨 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "混乱之雨 - [|cffffcc003级|r]"
+      "Value": "混乱之雨 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
@@ -192,13 +192,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 4 个地狱火从天而降。"
+      "Value": "召唤 5 个更强大的地狱火从天而降。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 4 个地狱火从天而降。"
+      "Value": "召唤 6 个地狱火从天而降。"
     },
     {
       "Id": "anam",

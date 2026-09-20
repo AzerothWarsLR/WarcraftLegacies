@@ -101,19 +101,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤野性狼群 - [|cffffcc004级|r]"
+      "Value": "召唤野性狼群 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤野性狼群 - [|cffffcc004级|r]"
+      "Value": "召唤野性狼群 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤野性狼群 - [|cffffcc004级|r]"
+      "Value": "召唤野性狼群 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -131,19 +131,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<YBFS,DataB1>头暗影狼。"
+      "Value": "召唤<YBFS,DataB2>头暗影狼。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<YBFS,DataB1>头暗影狼。"
+      "Value": "召唤<YBFS,DataB3>头暗影狼。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<YBFS,DataB1>头暗影狼。"
+      "Value": "召唤<YBFS,DataB4>头暗影狼。"
     },
     {
       "Id": "abpx",

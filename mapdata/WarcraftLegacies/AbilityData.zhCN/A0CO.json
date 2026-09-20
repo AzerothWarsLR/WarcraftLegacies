@@ -137,13 +137,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "自然之怒 - [|cffffcc002级|r]"
+      "Value": "自然之怒 - [|cffffcc001级|r]"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用一道德鲁伊能量波冲击敌方单位，对目标造成<A0CO,DataB2>点伤害，并造成<A0CO,DataA2>点溅射伤害。"
+      "Value": "用一道德鲁伊能量波冲击敌方单位，对目标造成<A0CO,DataB1>点伤害，并造成<A0CO,DataA1>点溅射伤害。"
     },
     {
       "Level": 2,

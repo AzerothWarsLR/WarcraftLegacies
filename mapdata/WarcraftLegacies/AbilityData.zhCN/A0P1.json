@@ -137,7 +137,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "将一个敌方单位变成一只随机的小动物，持续<AChx,Dur1>秒。对英雄持续<AChx,HeroDur1>秒。"
+      "Value": "将一个敌方单位变成一只随机的小动物，持续<AChx,Dur2>秒。对英雄持续 2 秒。"
     },
     {
       "Id": "abpx",

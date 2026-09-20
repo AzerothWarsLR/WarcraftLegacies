@@ -202,13 +202,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激活战斗恍惚 - [|cffffcc003级|r]"
+      "Value": "激活战斗恍惚 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激活战斗恍惚 - [|cffffcc003级|r]"
+      "Value": "激活战斗恍惚 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
@@ -226,7 +226,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA1>点额外护甲、<AHav,DataC1>点额外攻击力和法术免疫。 |n持续 15 秒。"
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA2>点额外护甲、<AHav,DataC2>点额外攻击力和法术免疫。 |n持续 15 秒。"
     },
     {
       "Id": "auar",
@@ -242,7 +242,7 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA1>点额外护甲、<AHav,DataC1>点额外攻击力和法术免疫。 |n持续 15 秒。"
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA3>点额外护甲、<AHav,DataC3>点额外攻击力和法术免疫。 |n持续 15 秒。"
     },
     {
       "Level": 1,

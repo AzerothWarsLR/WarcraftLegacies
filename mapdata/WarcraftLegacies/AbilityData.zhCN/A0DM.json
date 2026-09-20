@@ -161,19 +161,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA2,%>%，生命恢复速度提高<A0DM,DataB2,.>。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA3,%>%，生命恢复速度提高<A0DM,DataB3,.>。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。"
     },
     {
       "Level": 4,

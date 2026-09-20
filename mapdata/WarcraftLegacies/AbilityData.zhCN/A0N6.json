@@ -209,13 +209,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "戈德林之力 - [|cffffcc003级|r]"
+      "Value": "戈德林之力 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "戈德林之力 - [|cffffcc003级|r]"
+      "Value": "戈德林之力 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
@@ -233,13 +233,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "激活戈德林之力，使吉恩获得<A01C,DataA1>点额外护甲、<A01C,DataB1>点额外生命值、<A01C,DataC1>点额外伤害和法术免疫。|n持续<A01C,Dur1>秒。"
+      "Value": "激活戈德林之力，使吉恩获得<A02C,DataA2>点额外护甲、<A02C,DataB2>点额外生命值、<A02C,DataC2>点额外伤害和法术免疫。|n持续<A02C,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "激活戈德林之力，使吉恩获得<A01C,DataA1>点额外护甲、<A01C,DataB1>点额外生命值、<A01C,DataC1>点额外伤害和法术免疫。|n持续<A01C,Dur1>秒。"
+      "Value": "激活戈德林之力，使吉恩获得<A03C,DataA3>点额外护甲、<A03C,DataB3>点额外生命值、<A03C,DataC3>点额外伤害和法术免疫。|n持续<A03C,Dur3>秒。"
     },
     {
       "Id": "auar",

@@ -167,7 +167,7 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA2>点伤害，并使其昏迷<AUin,Dur2>秒。地狱火持续<AUin,DataB2>秒。"
+      "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA3>点伤害，并使其昏迷<AUin,Dur3>秒。地狱火持续<AUin,DataB3>秒。"
     }
   ]
 }

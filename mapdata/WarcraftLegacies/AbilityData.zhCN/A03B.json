@@ -174,19 +174,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "自然光环 - [|cffffcc004级|r]"
+      "Value": "自然光环 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "自然光环 - [|cffffcc004级|r]"
+      "Value": "自然光环 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "自然光环 - [|cffffcc004级|r]"
+      "Value": "自然光环 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -204,19 +204,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA2,%>%，攻击速度降低<A03B,DataB2,%>%。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA3,%>%，攻击速度降低<A03B,DataB3,%>%。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA4,%>%，攻击速度降低<A03B,DataB4,%>%。"
     }
   ],
   "NewId": "A03B"

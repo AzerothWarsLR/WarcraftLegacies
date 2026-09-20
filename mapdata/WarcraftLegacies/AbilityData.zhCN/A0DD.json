@@ -287,25 +287,25 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激活"
+      "Value": "激活 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激活"
+      "Value": "激活 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激活"
+      "Value": "激活 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "激活"
+      "Value": "激活 - [|cffffcc004级|r]"
     },
     {
       "Level": 2,
@@ -317,13 +317,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "在<A0DD,Dur2>秒内为目标友方单位恢复<A0DD,DataA2>点生命值和<A0DD,DataB2>点法力值。"
+      "Value": "在<A0DD,Dur3>秒内为目标友方单位恢复<A0DD,DataA3>点生命值和<A0DD,DataB3>点法力值。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "在<A0DD,Dur2>秒内为目标友方单位恢复<A0DD,DataA2>点生命值和<A0DD,DataB2>点法力值。"
+      "Value": "在<A0DD,Dur4>秒内为目标友方单位恢复<A0DD,DataA4>点生命值和<A0DD,DataB4>点法力值。"
     },
     {
       "Id": "aart",
@@ -334,7 +334,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "在<A0DD,Dur2>秒内为目标友方单位恢复<A0DD,DataA2>点生命值和<A0DD,DataB2>点法力值。"
+      "Value": "在<A0DD,Dur1>秒内为目标友方单位恢复<A0DD,DataA1>点生命值和<A0DD,DataB1>点法力值。"
     },
     {
       "Id": "anam",

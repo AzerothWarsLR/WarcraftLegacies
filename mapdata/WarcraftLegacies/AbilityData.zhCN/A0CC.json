@@ -91,7 +91,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "法术抗性 - [|cffffcc002级|r]"
+      "Value": "法术抗性 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -109,7 +109,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使受到的法术与魔法攻击伤害降低 60%。"
+      "Value": "使受到的法术与魔法攻击伤害降低 90%。"
     }
   ],
   "NewId": "A0CC"

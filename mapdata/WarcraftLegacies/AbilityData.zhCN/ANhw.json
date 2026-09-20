@@ -122,19 +122,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB2>次，为主目标恢复<ANhw,DataA2>点生命值。每次弹跳的治疗效果降低 20%。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB3>次，为主目标恢复<ANhw,DataA3>点生命值。每次弹跳的治疗效果降低 15%。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB1>次，为主目标恢复<ANhw,DataA1>点生命值。每次弹跳的治疗效果降低 25%。"
+      "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB4>次，为主目标恢复<ANhw,DataA4>点生命值。每次弹跳的治疗效果降低 10%。"
     },
     {
       "Id": "atat",

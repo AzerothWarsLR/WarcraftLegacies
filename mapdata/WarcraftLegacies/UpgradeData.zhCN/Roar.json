@@ -62,31 +62,31 @@
       "Level": 3,
       "Id": "gnam",
       "Type": 3,
-      "Value": "魔铁护甲"
+      "Value": "瑟银护甲"
     },
     {
       "Level": 4,
       "Id": "gnam",
       "Type": 3,
-      "Value": "魔铁护甲"
+      "Value": "精金护甲"
     },
     {
       "Level": 5,
       "Id": "gnam",
       "Type": 3,
-      "Value": "魔铁护甲"
+      "Value": "恒金护甲"
     },
     {
       "Level": 6,
       "Id": "gnam",
       "Type": 3,
-      "Value": "魔铁护甲"
+      "Value": "魔钢护甲"
     },
     {
       "Level": 7,
       "Id": "gnam",
       "Type": 3,
-      "Value": "魔铁护甲"
+      "Value": "氪金护甲"
     },
     {
       "Level": 8,
@@ -152,13 +152,13 @@
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "进一步提高所有单位的护甲。"
+      "Value": "提高所有单位的护甲。"
     },
     {
       "Level": 3,
       "Id": "gub1",
       "Type": 3,
-      "Value": "进一步提高所有单位的护甲。"
+      "Value": "提高所有单位的护甲。"
     }
   ]
 }

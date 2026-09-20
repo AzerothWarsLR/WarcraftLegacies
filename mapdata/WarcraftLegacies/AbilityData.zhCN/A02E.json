@@ -88,7 +88,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "移除目标区域内单位身上的所有魔法效果。|n|cffffcc00对召唤单位造成<A02E,DataB1>点伤害。|r"
+      "Value": "移除目标区域内单位身上的所有魔法效果。|n|cffffcc00对召唤单位造成<A02E,DataB2>点伤害。|r"
     },
     {
       "Id": "anam",

@@ -312,13 +312,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "邪能之火 - [|cffffcc003级|r]"
+      "Value": "邪能之火 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "邪能之火 - [|cffffcc003级|r]"
+      "Value": "邪能之火 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
@@ -330,13 +330,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从天空召唤<TP33:ACrf,DataA1>波邪能之火，点燃并伤害区域内的所有敌方单位，每波造成<TP33:ACrf,DataB1>点伤害；受邪能之火影响的单位每秒受到<TP33:ACrf,DataE1>点伤害，持续<TP33:ACrf,Dur1>秒。"
+      "Value": "从天空召唤<TP33:ACrf,DataA2>波邪能之火，点燃并伤害区域内的所有敌方单位，每波造成<TP33:ACrf,DataB2>点伤害；受邪能之火影响的单位每秒受到<TP33:ACrf,DataE2>点伤害，持续<TP33:ACrf,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从天空召唤<TP33:ACrf,DataA1>波邪能之火，点燃并伤害区域内的所有敌方单位，每波造成<TP33:ACrf,DataB1>点伤害；受邪能之火影响的单位每秒受到<TP33:ACrf,DataE1>点伤害，持续<TP33:ACrf,Dur1>秒。"
+      "Value": "从天空召唤<TP33:ACrf,DataA3>波邪能之火，点燃并伤害区域内的所有敌方单位，每波造成<TP33:ACrf,DataB3>点伤害；受邪能之火影响的单位每秒受到<TP33:ACrf,DataE3>点伤害，持续<TP33:ACrf,Dur3>秒。"
     },
     {
       "Id": "arar",

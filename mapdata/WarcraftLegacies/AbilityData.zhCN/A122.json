@@ -92,7 +92,7 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆之拳 - [|cffffcc00等级 4|r]"
+      "Value": "灰烬使者之志 - [|cffffcc00等级 4|r]"
     },
     {
       "Level": 1,
@@ -104,19 +104,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "当该英雄攻击时，有 20% 的几率复活附近的 3 个友方单位。"
+      "Value": "当该英雄攻击时，有 20% 的几率复活附近的 6 个友方单位。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "当该英雄攻击时，有 20% 的几率复活附近的 3 个友方单位。"
+      "Value": "当该英雄攻击时，有 20% 的几率复活附近的 9 个友方单位。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "当该英雄攻击时，有 20% 的几率复活附近的 3 个友方单位。"
+      "Value": "当该英雄攻击时，有 15% 的几率向<A024,DataB4>个目标掷出闪电，对每个目标造成<A024,DataA4>点伤害。"
     },
     {
       "Id": "anam",
@@ -142,19 +142,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆之拳 - [|cffffcc00等级 4|r]"
+      "Value": "灰烬使者之志 - [|cffffcc00等级 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆之拳 - [|cffffcc00等级 4|r]"
+      "Value": "灰烬使者之志 - [|cffffcc00等级 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆之拳 - [|cffffcc00等级 4|r]"
+      "Value": "灰烬使者之志 - [|cffffcc00等级 3|r]"
     },
     {
       "Id": "abpx",

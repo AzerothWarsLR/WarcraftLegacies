@@ -209,19 +209,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "死亡之触 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "死亡之触 (|cffffcc00Q|r) - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "死亡之触 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "死亡之触 (|cffffcc00Q|r) - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "死亡之触 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "死亡之触 (|cffffcc00Q|r) - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -239,19 +239,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB1>个敌方单位，造成<VP03,DataA1>点伤害。"
+      "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB2>个敌方单位，造成<VP03,DataA2>点伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB1>个敌方单位，造成<VP03,DataA1>点伤害。"
+      "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB3>个敌方单位，造成<VP03,DataA3>点伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB1>个敌方单位，造成<VP03,DataA1>点伤害。"
+      "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB4>个敌方单位，造成<VP03,DataA4>点伤害。"
     },
     {
       "Id": "anam",

@@ -175,7 +175,7 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "刀扇 - [|cffffcc004级|r]"
+      "Value": "飞刀速掷 - [|cffffcc004级|r]"
     },
     {
       "Level": 3,
@@ -187,7 +187,7 @@
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "守望者掷出一阵飞刀，伤害附近的敌人。每把飞刀造成<AEfk,DataA3>点伤害。"
+      "Value": "守望者掷出一连串飞刀，对附近的敌人造成伤害。每把飞刀造成<AEfk,DataA4>点伤害。"
     },
     {
       "Id": "anam",

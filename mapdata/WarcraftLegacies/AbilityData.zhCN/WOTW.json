@@ -118,7 +118,7 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "风的奇想"
+      "Value": "强化心灵之火"
     },
     {
       "Level": 2,
@@ -134,7 +134,7 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "风的奇想"
+      "Value": "强化心灵之火"
     },
     {
       "Id": "aart",
@@ -150,13 +150,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使一个目标友方单位的攻击力提高<Ainf,DataA2,%>%，护甲提高<Ainf,DataB2>。|n持续<Ainf,Dur1>秒。"
+      "Value": "为一个目标友方单位施加一个随机的增益效果。持续 30 秒。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "风的奇想"
+      "Value": "强化心灵之火"
     }
   ],
   "NewId": "WOTW"

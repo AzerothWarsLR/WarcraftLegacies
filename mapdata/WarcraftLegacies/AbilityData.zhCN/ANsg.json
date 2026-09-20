@@ -130,7 +130,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一头强大的巨熊为你而战。|n持续<ANsg,Dur1>秒。|n|n|cffffcc001级|r - <ngz1,realHP>点生命值，<ngz1,mindmg1>-<ngz1,maxdmg1>点攻击力。|n|cffffcc002级|r - <ngz2,realHP>点生命值，<ngz2,mindmg1>-<ngz2,maxdmg1>点攻击力，具有猛击技能。|n|cffffcc003级|r - <ngz3,realHP>点生命值，<ngz3,mindmg1>-<ngz3,maxdmg1>点攻击力，具有猛击和闪现技能。\n"
+      "Value": "召唤一个可控的龙卷风，它会使敌方单位减速，并随机将它们抛向空中，同时对敌方建筑造成伤害。|n|cffffcc00等级 1|r - 持续<ANsg,Dur1>秒，每秒对建筑造成<A02S,DataA1>点伤害。|n|cffffcc00等级 2|r - 持续<ANsg,Dur2>秒，每秒对建筑造成<A0H9,DataA1>点伤害。|n|cffffcc00等级 3|r - 持续<ANsg,Dur3>秒，每秒对建筑造成<A0H9,DataA1>点伤害。\n"
     },
     {
       "Id": "arhk",
@@ -169,13 +169,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤龙卷风 - [|cffffcc003 级|r]"
+      "Value": "召唤龙卷风 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤龙卷风 - [|cffffcc003 级|r]"
+      "Value": "召唤龙卷风 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
@@ -193,13 +193,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A02S,DataA1>点伤害。|n持续<ANsg,Dur1>秒。"
+      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A0H8,DataA1>点伤害。|n持续<ANsg,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A02S,DataA1>点伤害。|n持续<ANsg,Dur1>秒。"
+      "Value": "召唤一道可控的龙卷风，降低敌方单位的移动速度，随机将敌方地面单位掀至空中，并对敌方建筑每秒造成至多<A0H9,DataA1>点伤害。|n持续<ANsg,Dur3>秒。"
     }
   ]
 }

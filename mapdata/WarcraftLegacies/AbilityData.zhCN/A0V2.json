@@ -164,19 +164,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤海军上将卫兵 - [|cffffcc004级|r]"
+      "Value": "召唤海军上将卫兵 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤海军上将卫兵 - [|cffffcc004级|r]"
+      "Value": "召唤海军上将卫兵 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤海军上将卫兵 - [|cffffcc004级|r]"
+      "Value": "召唤海军上将卫兵 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -194,19 +194,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 2 名海军上将卫兵。"
+      "Value": "召唤 3 名海军上将卫兵。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 2 名海军上将卫兵。"
+      "Value": "召唤 4 名海军上将卫兵。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 2 名海军上将卫兵。"
+      "Value": "召唤 5 名海军上将卫兵。"
     }
   ],
   "NewId": "A0V2"

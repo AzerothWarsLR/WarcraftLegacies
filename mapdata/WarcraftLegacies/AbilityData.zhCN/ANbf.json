@@ -183,19 +183,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "烈焰冲击 - [|cffffcc004级|r]"
+      "Value": "烈焰冲击 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "烈焰冲击 - [|cffffcc004级|r]"
+      "Value": "烈焰冲击 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "烈焰冲击 - [|cffffcc004级|r]"
+      "Value": "烈焰冲击 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -213,19 +213,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "对敌方单位喷出一股锥形烈焰，造成 105 点伤害。"
+      "Value": "对敌方单位喷出一股锥形烈焰，造成 155 点伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "对敌方单位喷出一股锥形烈焰，造成 105 点伤害。"
+      "Value": "对敌方单位喷出一股锥形烈焰，造成 205 点伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "对敌方单位喷出一股锥形烈焰，造成 105 点伤害。"
+      "Value": "对敌方单位喷出一股锥形烈焰，造成 255 点伤害。"
     },
     {
       "Id": "ansf",

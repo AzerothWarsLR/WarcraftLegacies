@@ -153,31 +153,31 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "暗影突袭 - [|cffffcc00等级 4|r]"
+      "Value": "暗影突袭 - [|cffffcc004 级|r]"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE1>点初始伤害，并每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害，持续<AEsh,Dur1>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE1>点初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE2>点初始伤害，并每<AEsh,Cast2>秒造成<AEsh,DataA2>点伤害，持续<AEsh,Dur2>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE2>点初始伤害，并在<AEsh,Dur2>秒内每<AEsh,Cast2>秒造成<AEsh,DataA2>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE3>点初始伤害，并每<AEsh,Cast3>秒造成<AEsh,DataA3>点伤害，持续<AEsh,Dur3>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
+      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE3>点初始伤害，并在<AEsh,Dur3>秒内每<AEsh,Cast3>秒造成<AEsh,DataA3>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向一个目标敌方单位投掷一把淬毒匕首，造成<AEsh,DataE1>点初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>点伤害。毒素使目标单位在其持续时间内移动速度降低 75%。"
+      "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE4>点初始伤害，并每<AEsh,Cast4>秒造成<AEsh,DataA4>点伤害，持续<AEsh,Dur4>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
     },
     {
       "Id": "abpx",

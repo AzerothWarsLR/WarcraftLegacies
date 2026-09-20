@@ -171,7 +171,7 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "激活天神下凡，使山丘之王获得<AHav,DataA2>点额外护甲、<AHav,DataB2>点额外生命值、<AHav,DataC2>点额外伤害和法术免疫。|n持续<AHav,Dur2>秒。"
+      "Value": "激活天神下凡，使山丘之王获得<AHav,DataA3>点额外护甲、<AHav,DataB3>点额外生命值、<AHav,DataC3>点额外伤害和法术免疫。|n持续<AHav,Dur3>秒。"
     },
     {
       "Id": "auhk",
@@ -182,7 +182,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "激活天神下凡，使山丘之王获得<AHav,DataA2>点额外护甲、<AHav,DataB2>点额外生命值、<AHav,DataC2>点额外伤害和法术免疫。|n持续<AHav,Dur2>秒。"
+      "Value": "激活天神下凡，使战斗大师获得 20 点额外护甲、500 点额外生命值、45 点额外伤害和法术免疫。|n持续 15 秒。"
     },
     {
       "Id": "abpx",

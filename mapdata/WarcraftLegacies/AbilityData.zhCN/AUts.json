@@ -116,19 +116,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用带刺器官强化英雄的角质护甲，给予其<AUts,DataC1>点额外护甲，并能反弹敌人<AUts,DataA1,%>% 的近战攻击伤害。"
+      "Value": "用带刺器官强化英雄的角质护甲，给予其<AUts,DataC2>点额外护甲，受到的所有伤害降低至<AUts,DataB2,%>%，并能反弹敌人<AUts,DataA2,%>% 的近战攻击伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用带刺器官强化英雄的角质护甲，给予其<AUts,DataC1>点额外护甲，并能反弹敌人<AUts,DataA1,%>% 的近战攻击伤害。"
+      "Value": "用带刺器官强化英雄的角质护甲，给予其<AUts,DataC3>点额外护甲，受到的所有伤害降低至<AUts,DataB3,%>%，并能反弹敌人<AUts,DataA3,%>% 的近战攻击伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用带刺器官强化英雄的角质护甲，给予其<AUts,DataC1>点额外护甲，并能反弹敌人<AUts,DataA1,%>% 的近战攻击伤害。"
+      "Value": "用带刺器官强化英雄的角质护甲，给予其<AUts,DataC4>点额外护甲，受到的所有伤害降低至<AUts,DataB4,%>%，并能反弹敌人<AUts,DataA4,%>% 的近战攻击伤害。"
     },
     {
       "Id": "anam",

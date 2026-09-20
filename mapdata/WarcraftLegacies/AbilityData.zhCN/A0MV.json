@@ -138,13 +138,13 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "治疗术 - [|cffffcc004级|r]"
+      "Value": "治疗术 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "治疗术 - [|cffffcc004级|r]"
+      "Value": "治疗术 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -162,13 +162,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为一个受伤的目标友方非机械单位恢复<Ahea,DataA2>点生命值。"
+      "Value": "为一个受伤的目标友方非机械单位恢复<Ahea,DataA3>点生命值。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为一个受伤的目标友方非机械单位恢复<Ahea,DataA2>点生命值。"
+      "Value": "为一个受伤的目标友方非机械单位恢复<Ahea,DataA4>点生命值。"
     },
     {
       "Id": "auhk",
@@ -179,7 +179,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为一个受伤的目标友方非机械单位恢复<Ahea,DataA2>点生命值。"
+      "Value": "为一个受伤的目标友方非机械单位恢复 20 点生命值。"
     },
     {
       "Id": "anam",

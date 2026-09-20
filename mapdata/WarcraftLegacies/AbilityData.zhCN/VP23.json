@@ -249,19 +249,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "顺风 - [|cffffcc004级|r]"
+      "Value": "顺风 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "顺风 - [|cffffcc004级|r]"
+      "Value": "顺风 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "顺风 - [|cffffcc004级|r]"
+      "Value": "顺风 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -279,19 +279,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄凝聚全部力量，在 5 秒内获得<VP23,DataB1,%>% 的攻击速度和<VP23,DataA1,%>% 的移动速度。"
+      "Value": "英雄凝聚全部力量，在 5 秒内获得<VP23,DataB2,%>% 的攻击速度和<VP23,DataA2,%>% 的移动速度。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄凝聚全部力量，在 5 秒内获得<VP23,DataB1,%>% 的攻击速度和<VP23,DataA1,%>% 的移动速度。"
+      "Value": "英雄凝聚全部力量，在 5 秒内获得<VP23,DataB3,%>% 的攻击速度和<VP23,DataA3,%>% 的移动速度。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄凝聚全部力量，在 5 秒内获得<VP23,DataB1,%>% 的攻击速度和<VP23,DataA1,%>% 的移动速度。"
+      "Value": "英雄凝聚全部力量，在 5 秒内获得<VP23,DataB4,%>% 的攻击速度和<VP23,DataA4,%>% 的移动速度。"
     },
     {
       "Id": "abpx",

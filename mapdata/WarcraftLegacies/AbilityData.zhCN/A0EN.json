@@ -200,19 +200,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恐惧光环 - [|cffffcc004级|r]"
+      "Value": "恐惧光环 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恐惧光环 - [|cffffcc004级|r]"
+      "Value": "恐惧光环 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恐惧光环 - [|cffffcc004级|r]"
+      "Value": "恐惧光环 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -230,19 +230,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的攻击力降低 10%。"
+      "Value": "使周围敌方单位的攻击力降低 15%。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的攻击力降低 10%。"
+      "Value": "使周围敌方单位的攻击力降低 20%。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的攻击力降低 10%。"
+      "Value": "使周围敌方单位的攻击力降低 25%。"
     }
   ],
   "NewId": "A0EN"

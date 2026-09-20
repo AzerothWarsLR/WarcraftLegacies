@@ -230,19 +230,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "神圣新星 - [|cffffcc004级|r]"
+      "Value": "神圣新星 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "神圣新星 - [|cffffcc004级|r]"
+      "Value": "神圣新星 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "神圣新星 - [|cffffcc004级|r]"
+      "Value": "神圣新星 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -254,19 +254,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB1>点伤害，并对周围造成<A06S,DataA1>点新星伤害。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB2>点伤害，并对周围造成<A06S,DataA2>点新星伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB3>点伤害，并对周围造成<A06S,DataA3>点新星伤害。"
     },
     {
       "Level": 4,

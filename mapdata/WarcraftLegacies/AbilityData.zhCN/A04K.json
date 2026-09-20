@@ -213,19 +213,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强力守护 - [|cffffcc004级|r]"
+      "Value": "强力守护 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强力守护 - [|cffffcc004级|r]"
+      "Value": "强力守护 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强力守护 - [|cffffcc004级|r]"
+      "Value": "强力守护 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -243,19 +243,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC2>点。攻击伤害无法降低至<A04K,DataB2>点以下。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC3>点。攻击伤害无法降低至<A04K,DataB3>点以下。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使受到的所有攻击伤害降低<A04K,DataC1>点。攻击伤害无法降低至<A04K,DataB1>点以下。"
+      "Value": "使受到的所有攻击伤害降低<A04K,DataC4>点。攻击伤害无法降低至<A04K,DataB4>点以下。"
     }
   ],
   "NewId": "A04K"

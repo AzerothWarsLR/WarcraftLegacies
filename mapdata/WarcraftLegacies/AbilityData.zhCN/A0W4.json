@@ -255,19 +255,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "洛戈什之怒 - [|cffffcc004级|r]"
+      "Value": "洛戈什之怒 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "洛戈什之怒 - [|cffffcc004级|r]"
+      "Value": "洛戈什之怒 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "洛戈什之怒 - [|cffffcc004级|r]"
+      "Value": "洛戈什之怒 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -285,19 +285,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB1,%>%，移动速度提高<A0W4,DataA1,%>%，持续<A0W4,Dur1>秒。"
+      "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB2,%>%，移动速度提高<A0W4,DataA2,%>%，持续<A0W4,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB1,%>%，移动速度提高<A0W4,DataA1,%>%，持续<A0W4,Dur1>秒。"
+      "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB3,%>%，移动速度提高<A0W4,DataA3,%>%，持续<A0W4,Dur3>秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB1,%>%，移动速度提高<A0W4,DataA1,%>%，持续<A0W4,Dur1>秒。"
+      "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB4,%>%，移动速度提高<A0W4,DataA4,%>%，持续<A0W4,Dur4>秒。"
     }
   ],
   "NewId": "A0W4"

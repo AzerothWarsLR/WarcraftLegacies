@@ -162,7 +162,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "一种毒素攻击，每秒造成<A13W,DataA1>点伤害，并使目标敌人的移动速度降低<A13W,DataB1,%>%、攻击速度降低<A13W,DataC1,%>%，持续<A13W,Dur1>秒。"
+      "Value": "一种毒素攻击，每秒造成<A13W,DataA2>点伤害，并使目标敌人的移动速度降低<A13W,DataB2,%>%、攻击速度降低<A13W,DataC2,%>%，持续<A13W,Dur2>秒。"
     },
     {
       "Level": 2,
@@ -174,19 +174,19 @@
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "减速毒药 - [|cffffcc002级|r]"
+      "Value": "减速毒药 - [|cffffcc003级|r]"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "一种毒素攻击，每秒造成<A13W,DataA1>点伤害，并使目标敌人的移动速度降低<A13W,DataB1,%>%、攻击速度降低<A13W,DataC1,%>%，持续<A13W,Dur1>秒。"
+      "Value": "一种毒素攻击，每秒造成<A13W,DataA3>点伤害，并使目标敌人的移动速度降低<A13W,DataB3,%>%、攻击速度降低<A13W,DataC3,%>%，持续<A13W,Dur3>秒。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "减速毒药 - [|cffffcc002级|r]"
+      "Value": "减速毒药 - [|cffffcc001级|r]"
     },
     {
       "Id": "anam",

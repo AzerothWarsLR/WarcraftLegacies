@@ -251,19 +251,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
+      "Value": "风暴佳酿"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
+      "Value": "风暴佳酿"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
+      "Value": "请大家喝一轮 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -275,13 +275,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为大范围内的友方单位恢复 300 点生命值。"
+      "Value": "喝下一大桶麦酒，恢复<A0H1,DataB1>点生命值。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为大范围内的友方单位恢复 300 点生命值。"
+      "Value": "喝下一大桶麦酒，恢复<A0H1,DataB2>点生命值。"
     },
     {
       "Level": 3,
@@ -293,7 +293,7 @@
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为大范围内的友方单位恢复 300 点生命值。"
+      "Value": "为大范围内的友方单位恢复 375 点生命值。"
     },
     {
       "Id": "ahky",

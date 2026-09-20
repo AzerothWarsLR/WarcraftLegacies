@@ -95,25 +95,25 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒蛇结界(|cffffcc00Q|r) - [|cffffcc00级别 1|r]"
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc00级别 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒蛇结界(|cffffcc00Q|r) - [|cffffcc00级别 1|r]"
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc00级别 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒蛇结界(|cffffcc00Q|r) - [|cffffcc00级别 1|r]"
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc00级别 3|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒蛇结界(|cffffcc00Q|r) - [|cffffcc00级别 1|r]"
+      "Value": "毒蛇结界 (|cffffcc00Q|r) - [|cffffcc00级别 4|r]"
     },
     {
       "Level": 1,
@@ -125,19 +125,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<MD27,DataA1>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp2,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<MD27,DataA2>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp2,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur2>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<MD27,DataA1>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp2,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<MD27,DataA3>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp3,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur3>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<MD27,DataA1>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp2,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤<MD27,DataA4>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp4,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
     },
     {
       "Id": "ansf",

@@ -115,7 +115,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "减速术 - [|cffffcc002级|r]"
+      "Value": "减速术 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -133,7 +133,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使目标敌方空中单位的攻击速度降低<A0E9,DataB1,%>%，移动速度降低<A0E9,DataA1,%>%。 |n持续<A0E9,Dur1>秒。"
+      "Value": "使目标敌方空中单位的攻击速度降低<A0E9,DataB2,%>%，移动速度降低<A0E9,DataA2,%>%。 |n持续<A0E9,Dur2>秒。"
     },
     {
       "Id": "auhk",

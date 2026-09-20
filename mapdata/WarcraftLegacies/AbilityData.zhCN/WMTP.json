@@ -134,7 +134,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "诅咒目标敌方单位，使其有<Acrs,DataA2,%>%的未命中率。 |n持续<Acrs,Dur2>秒。"
+      "Value": "对一个目标敌方单位施加一个随机的负面效果。持续 30 秒。"
     }
   ],
   "NewId": "WMTP"

@@ -61,13 +61,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE1>点额外生命值和 60 点额外伤害。"
+      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE2>点额外生命值和 90 点额外伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE1>点额外生命值和 60 点额外伤害。"
+      "Value": "将伊利丹永久变形为一个拥有远程攻击的强大恶魔，并获得<AEvi,DataE3>点额外生命值和 120 点额外伤害。"
     },
     {
       "Id": "aart",
@@ -95,19 +95,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恶魔变形 - [|cffffcc001 级|r]"
+      "Value": "恶魔变形 - [|cffffcc00等级 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恶魔变形 - [|cffffcc002 级|r]"
+      "Value": "恶魔变形 - [|cffffcc00等级 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "恶魔变形 - [|cffffcc003 级|r]"
+      "Value": "恶魔变形 - [|cffffcc00等级 3|r]"
     },
     {
       "Id": "arhk",

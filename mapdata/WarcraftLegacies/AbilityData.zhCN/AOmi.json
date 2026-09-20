@@ -159,13 +159,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "制造<AOmi,DataA2>个施法者的幻象，每个幻象造成<AOmi,DataB2,%>% 的伤害并承受<AOmi,DataC2,%>% 的伤害。驱散施法者身上的所有魔法效果。 |n持续<AOmi,Dur2>秒。"
+      "Value": "制造<AOmi,DataA3>个施法者的幻象，每个幻象造成<AOmi,DataB3,%>% 的伤害并承受<AOmi,DataC3,%>% 的伤害。驱散施法者身上的所有魔法效果。 |n持续<AOmi,Dur3>秒。"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "制造<AOmi,DataA2>个施法者的幻象，每个幻象造成<AOmi,DataB2,%>% 的伤害并承受<AOmi,DataC2,%>% 的伤害。驱散施法者身上的所有魔法效果。 |n持续<AOmi,Dur2>秒。"
+      "Value": "制造<AOmi,DataA1>个施法者的幻象，每个幻象造成<AOmi,DataB1,%>% 的伤害并承受<AOmi,DataC1,%>% 的伤害。驱散施法者身上的所有魔法效果。 |n持续<AOmi,Dur1>秒。"
     },
     {
       "Id": "anam",

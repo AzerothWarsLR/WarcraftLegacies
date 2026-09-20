@@ -80,7 +80,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "摧毁施法者，驱散所有魔法增益效果，并抽取施法者周围区域内每个单位<Adtn,DataA2>点法力值。|n|cffffcc00对召唤单位造成<Adtn,DataB2>点伤害。|r\n"
+      "Value": "摧毁施法者，驱散所有魔法增益效果，并抽取施法者周围区域内每个单位<Adtn,DataA1>点法力值。|n|cffffcc00对召唤单位造成<Adtn,DataB1>点伤害。|r\n"
     },
     {
       "Id": "anam",

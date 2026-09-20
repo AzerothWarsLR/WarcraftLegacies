@@ -87,7 +87,7 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "治疗 - [|cffffcc001级|r]"
+      "Value": "治疗 - [|cffffcc002级|r]"
     },
     {
       "Level": 2,
@@ -105,7 +105,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA2>点生命值。"
+      "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA1>点生命值。"
     },
     {
       "Id": "anam",

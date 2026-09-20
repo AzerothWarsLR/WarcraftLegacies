@@ -165,19 +165,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "倒刺网 - [|cffffcc004级|r]"
+      "Value": "倒刺网 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "倒刺网 - [|cffffcc004级|r]"
+      "Value": "倒刺网 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "倒刺网 - [|cffffcc004级|r]"
+      "Value": "倒刺网 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -195,19 +195,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur2>秒内无法移动且无法攻击，并每秒造成<AEer,DataA2>点伤害。对英雄持续 3 秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur3>秒内无法移动且无法攻击，并每秒造成<AEer,DataA3>点伤害。对英雄持续 3.5 秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur1>秒内无法移动且无法攻击，并每秒造成<AEer,DataA1>点伤害。对英雄持续 2.5 秒。"
+      "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur4>秒内无法移动且无法攻击，并每秒造成<AEer,DataA4>点伤害。对英雄持续 4 秒。"
     }
   ],
   "NewId": "A0FC"

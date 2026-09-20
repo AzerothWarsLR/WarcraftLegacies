@@ -289,25 +289,25 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能镣铐 - [|cffffcc004 级|r]"
+      "Value": "万能枷锁 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能镣铐 - [|cffffcc004 级|r]"
+      "Value": "万能枷锁 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能镣铐 - [|cffffcc004 级|r]"
+      "Value": "万能枷锁 - [|cffffcc003 级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能镣铐 - [|cffffcc004 级|r]"
+      "Value": "万能枷锁 - [|cffffcc004 级|r]"
     },
     {
       "Level": 2,
@@ -319,19 +319,19 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A07R,DataA2>点伤害。 |n对单位持续<A07R,Dur2>秒，对英雄持续<A07R,HeroDur2,.>秒。"
+      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A07R,DataA3>点伤害。 |n对单位持续<A07R,Dur3>秒，对英雄持续<A07R,HeroDur3,.>秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A07R,DataA2>点伤害。 |n对单位持续<A07R,Dur2>秒，对英雄持续<A07R,HeroDur2,.>秒。"
+      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A07R,DataA4>点伤害。 |n对单位持续<A07R,Dur4>秒，对英雄持续<A07R,HeroDur4,.>秒。"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A07R,DataA2>点伤害。 |n对单位持续<A07R,Dur2>秒，对英雄持续<A07R,HeroDur2,.>秒。"
+      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A07R,DataA1>点伤害。 |n对单位持续<A07R,Dur1>秒，对英雄持续<A07R,HeroDur1,.>秒。"
     }
   ],
   "NewId": "A07R"

@@ -87,7 +87,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "驱散魔法 - [|cffffcc002级|r]"
+      "Value": "驱散魔法 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -105,7 +105,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "移除目标区域内单位身上的所有增益。|n|cffffcc00对召唤单位造成<A0D2,DataB1>点伤害。|r"
+      "Value": "移除目标区域内单位身上的所有增益。|n|cffffcc00对召唤单位造成<A0D2,DataB2>点伤害。|r"
     },
     {
       "Id": "anam",

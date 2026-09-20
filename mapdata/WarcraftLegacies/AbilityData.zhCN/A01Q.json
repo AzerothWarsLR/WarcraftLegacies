@@ -194,19 +194,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "暗影光环 - [|cffffcc004级|r]"
+      "Value": "暗影光环 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "暗影光环 - [|cffffcc004级|r]"
+      "Value": "暗影光环 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "暗影光环 - [|cffffcc004级|r]"
+      "Value": "暗影光环 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -224,19 +224,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+      "Value": "使周围敌方单位的攻击力降低 30%，并使该单位获得<A0Z1,DataA2,%>%的几率闪避攻击。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+      "Value": "使周围敌方单位的攻击力降低 40%，并使该单位获得<A0Z1,DataA3,%>%的几率闪避攻击。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使周围敌方单位的攻击力降低 20%，并使该单位获得<A0Z1,DataA1,%>%的几率闪避攻击。"
+      "Value": "使周围敌方单位的攻击力降低 50%，并使该单位获得<A0Z1,DataA4,%>%的几率闪避攻击。"
     },
     {
       "Id": "atat",

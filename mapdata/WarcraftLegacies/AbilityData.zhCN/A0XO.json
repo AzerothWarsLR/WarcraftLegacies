@@ -178,25 +178,25 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强化风暴之锤 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "强化风暴之锤 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强化风暴之锤 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "强化风暴之锤 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强化风暴之锤 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "强化风暴之锤 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "强化风暴之锤 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "强化风暴之锤 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -208,19 +208,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标敌方单位投掷一柄魔法锤，造成 400 点伤害，并使目标昏迷 4 秒。"
+      "Value": "向目标敌方单位投掷一柄魔法锤，造成 500 点伤害，并使目标昏迷 5 秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标敌方单位投掷一柄魔法锤，造成 400 点伤害，并使目标昏迷 4 秒。"
+      "Value": "向目标敌方单位投掷一柄魔法锤，造成 600 点伤害，并使目标昏迷 6 秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向目标敌方单位投掷一柄魔法锤，造成 400 点伤害，并使目标昏迷 4 秒。"
+      "Value": "向目标敌方单位投掷一柄魔法锤，造成 400 点伤害，并使目标昏迷 7 秒。对英雄持续 3.5 秒。"
     },
     {
       "Id": "abpx",

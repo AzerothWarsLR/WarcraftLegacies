@@ -111,19 +111,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大地恩泽 - [|cffffcc004级|r]"
+      "Value": "大地恩泽 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大地恩泽 - [|cffffcc004级|r]"
+      "Value": "大地恩泽 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大地恩泽 - [|cffffcc004级|r]"
+      "Value": "大地恩泽 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -141,19 +141,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+      "Value": "喷洒<A0KN,DataF2>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA2>点生命值。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+      "Value": "喷洒<A0KN,DataF3>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA3>点生命值。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "喷洒<A0KN,DataF1>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA1>点生命值。"
+      "Value": "喷洒<A0KN,DataF4>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA4>点生命值。"
     }
   ],
   "NewId": "A0KN"

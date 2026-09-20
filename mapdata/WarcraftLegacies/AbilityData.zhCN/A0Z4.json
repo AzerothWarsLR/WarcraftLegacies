@@ -257,25 +257,25 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "对敌方单位吐出一股会造成伤害的锥形火焰。带有酩酊酒雾效果的单位会被点燃，并持续受到燃烧伤害。|n持续<ANcf,Dur1>秒。|n|n|cffffcc001级|r - <ANcf,DataA1>点初始伤害，每秒<ANcf,DataE1>点燃烧伤害。|n|cffffcc002级|r - <ANcf,DataA2>点初始伤害，每秒<ANcf,DataE2>点燃烧伤害。|n|cffffcc003级|r - <ANcf,DataA3>点初始伤害，每秒<ANcf,DataE3>点燃烧伤害。|n|cffffcc004级|r - <ANcf,DataA4>点初始伤害，每秒<ANcf,DataE4>点燃烧伤害。\n"
+      "Value": "对敌方单位吐出一股会造成伤害的锥形寒冰。|n|n|cffffcc00等级 1|r - <A0Z4,DataA1> 点伤害。 |n|cffffcc00等级 2|r - <A0Z4,DataA2> 点伤害。 |n|cffffcc00等级 3|r - <A0Z4,DataA3> 点伤害。 |n|cffffcc00等级 4|r - <A0Z4,DataA4> 点伤害。\n"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "冰霜吐息 - [|cffffcc004 级|r]"
+      "Value": "冰霜吐息 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "冰霜吐息 - [|cffffcc004 级|r]"
+      "Value": "冰霜吐息 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "冰霜吐息 - [|cffffcc004 级|r]"
+      "Value": "冰霜吐息 - [|cffffcc003 级|r]"
     },
     {
       "Level": 4,
@@ -293,19 +293,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向敌方单位喷出一股锥形寒气，造成<A0Z4,DataA1>点伤害。"
+      "Value": "向敌方单位喷出一股锥形寒气，造成<A0Z4,DataA2>点伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向敌方单位喷出一股锥形寒气，造成<A0Z4,DataA1>点伤害。"
+      "Value": "向敌方单位喷出一股锥形寒气，造成<A0Z4,DataA3>点伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "向敌方单位喷出一股锥形寒气，造成<A0Z4,DataA1>点伤害。"
+      "Value": "向敌方单位喷出一股锥形寒气，造成<A0Z4,DataA4>点伤害。"
     },
     {
       "Id": "abpx",

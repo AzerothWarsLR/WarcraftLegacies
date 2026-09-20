@@ -121,19 +121,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "亡者再临 - [|cffffcc004级|r]"
+      "Value": "亡者再临 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "亡者再临 - [|cffffcc004级|r]"
+      "Value": "亡者再临 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "亡者再临 - [|cffffcc004级|r]"
+      "Value": "亡者再临 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -151,19 +151,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战。"
+      "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战，并额外提高它们 20% 的生命值和攻击力。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战。"
+      "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战，并额外提高它们 40% 的生命值和攻击力。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战。"
+      "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战，并使它们的生命值和攻击伤害额外提高 60%。"
     },
     {
       "Id": "anam",

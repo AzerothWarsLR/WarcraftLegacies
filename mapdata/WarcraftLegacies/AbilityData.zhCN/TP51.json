@@ -83,19 +83,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆爆裂 - [|cffffcc004级|r]"
+      "Value": "雷霆爆裂 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆爆裂 - [|cffffcc004级|r]"
+      "Value": "雷霆爆裂 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "雷霆爆裂 - [|cffffcc004级|r]"
+      "Value": "雷霆爆裂 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -113,19 +113,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "猛击地面，对附近的敌方地面单位造成<AHtc,DataA1>点伤害，并使其移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%。同时使其护甲降低 3 点，持续<TP51,Dur1,.>（英雄为<TP51,HeroDur1,.>）秒。"
+      "Value": "猛击地面，对附近的敌方地面单位造成<AHtc,DataA2>点伤害，并使其移动速度降低<AHtc,DataC2,%>%，攻击速度降低<AHtc,DataD2,%>%。同时使其护甲降低 5 点，持续<TP51,Dur2,.>（英雄为<TP51,HeroDur2,.>）秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "猛击地面，对附近的敌方地面单位造成<AHtc,DataA1>点伤害，并使其移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%。同时使其护甲降低 3 点，持续<TP51,Dur1,.>（英雄为<TP51,HeroDur1,.>）秒。"
+      "Value": "猛击地面，对附近的敌方地面单位造成<AHtc,DataA3>点伤害，并使其移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%。同时使其护甲降低 7 点，持续<TP51,Dur3,.>（英雄为<TP51,HeroDur3,.>）秒。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "猛击地面，对附近的敌方地面单位造成<AHtc,DataA1>点伤害，并使其移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%。同时使其护甲降低 3 点，持续<TP51,Dur1,.>（英雄为<TP51,HeroDur1,.>）秒。"
+      "Value": "猛击地面，对附近的敌方地面单位造成<AHtc,DataA4>点伤害，并使其移动速度降低<AHtc,DataC4,%>%，攻击速度降低<AHtc,DataD4,%>%。同时使其护甲降低 9 点，持续<TP51,Dur4,.>（英雄为<TP51,HeroDur4,.>）秒。"
     },
     {
       "Id": "anam",

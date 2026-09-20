@@ -105,7 +105,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "一种毒药攻击，每秒造成<Aspo,DataA1>点伤害，并使目标敌人的移动速度降低<Aspo,DataB1,%>%，攻击速度降低<Aspo,DataC1,%>%，持续 2 秒。对英雄持续 1.5 秒。"
+      "Value": "一种毒药攻击，每秒造成<Aspo,DataA2>点伤害，并使目标敌人的移动速度降低<Aspo,DataB2,%>%，攻击速度降低<Aspo,DataC2,%>%，持续 3 秒。对英雄持续 2 秒。"
     },
     {
       "Id": "anam",

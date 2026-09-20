@@ -84,19 +84,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道最多可跳跃<ZBCL,DataB4>次的闪电箭，对主要目标造成<ZBCL,DataA4>点伤害。每次跳跃造成的伤害都会降低。"
+      "Value": "召唤一道最多可跳跃<ZBCL,DataB1>次的闪电箭，对主要目标造成<ZBCL,DataA1>点伤害。每次跳跃造成的伤害都会降低。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道最多可跳跃<ZBCL,DataB4>次的闪电箭，对主要目标造成<ZBCL,DataA4>点伤害。每次跳跃造成的伤害都会降低。"
+      "Value": "召唤一道最多可跳跃<ZBCL,DataB2>次的闪电箭，对主要目标造成<ZBCL,DataA2>点伤害。每次跳跃造成的伤害都会降低。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一道最多可跳跃<ZBCL,DataB4>次的闪电箭，对主要目标造成<ZBCL,DataA4>点伤害。每次跳跃造成的伤害都会降低。"
+      "Value": "召唤一道最多可跳跃<ZBCL,DataB3>次的闪电箭，对主要目标造成<ZBCL,DataA3>点伤害。每次跳跃造成的伤害都会降低。"
     },
     {
       "Id": "anam",

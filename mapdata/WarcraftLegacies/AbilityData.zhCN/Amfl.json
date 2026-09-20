@@ -183,7 +183,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使精灵龙引导负向魔法能量，在附近敌人施放法术时对其造成伤害。|n|n持续<Amfl,Dur1>秒。|n每点法力值造成<Amfl,DataA1,.>点伤害。"
+      "Value": "使精灵龙引导负向魔法能量，在附近敌人施放法术时对其造成伤害。|n|n持续<Amfl,Dur2>秒。|n每点法力值造成<Amfl,DataA2,.>点伤害。"
     },
     {
       "Level": 2,
@@ -201,7 +201,7 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "法力闪耀 - [|cffffcc00级别 1|r]"
+      "Value": "法力闪耀 - [|cffffcc00级别 2|r]"
     },
     {
       "Level": 1,

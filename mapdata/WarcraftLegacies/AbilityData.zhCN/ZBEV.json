@@ -62,19 +62,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "有<ZBEV,DataA4,%>% 的几率躲避一次攻击。"
+      "Value": "有<ZBEV,DataA1,%>% 的几率躲避一次攻击。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "有<ZBEV,DataA4,%>% 的几率躲避一次攻击。"
+      "Value": "有<ZBEV,DataA2,%>% 的几率躲避一次攻击。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "有<ZBEV,DataA4,%>% 的几率躲避一次攻击。"
+      "Value": "有<ZBEV,DataA3,%>% 的几率躲避一次攻击。"
     },
     {
       "Id": "anam",

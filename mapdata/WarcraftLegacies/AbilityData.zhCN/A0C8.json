@@ -72,7 +72,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "亡者复生 (|cffffcc00X|r) - [|cffffcc002级|r]"
+      "Value": "亡者复生 (|cffffcc00X|r) - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -90,7 +90,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从一具尸体中复活 6 个骷髅，持续 45 秒。"
+      "Value": "从一具尸体中复活 6 个骷髅，持续 85 秒。"
     },
     {
       "Id": "auhk",

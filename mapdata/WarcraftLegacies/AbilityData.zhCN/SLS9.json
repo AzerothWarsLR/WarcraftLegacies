@@ -224,31 +224,31 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤树人 - [|cffffcc00级别 4|r]"
+      "Value": "召唤树人 - [|cffffcc00级别 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤树人 - [|cffffcc00级别 4|r]"
+      "Value": "召唤树人 - [|cffffcc00级别 3|r]"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤树人 - [|cffffcc00级别 4|r]"
+      "Value": "召唤树人 - [|cffffcc00级别 1|r]"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<SLS9,DataB1>个树人，持续<SLS9,Dur1>秒。"
+      "Value": "召唤<SLS9,DataB2>个树人，持续<SLS9,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<SLS9,DataB1>个树人，持续<SLS9,Dur1>秒。"
+      "Value": "召唤<SLS9,DataB3>个树人，持续<SLS9,Dur3>秒。"
     },
     {
       "Id": "aani",
@@ -265,7 +265,7 @@
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<SLS9,DataB1>个树人，持续<SLS9,Dur1>秒。"
+      "Value": "召唤<SLS9,DataB4>个树人，持续<SLS9,Dur4>秒。"
     }
   ],
   "NewId": "SLS9"

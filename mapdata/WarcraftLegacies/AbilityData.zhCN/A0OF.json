@@ -234,19 +234,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为周围的友方单位恢复<A0OF,DataA1>点法力值。"
+      "Value": "为周围的友方单位恢复<A0OF,DataA2>点法力值。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为周围的友方单位恢复<A0OF,DataA1>点法力值。"
+      "Value": "为周围的友方单位恢复<A0OF,DataA3>点法力值。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为周围的友方单位恢复<A0OF,DataA1>点法力值。"
+      "Value": "为周围的友方单位恢复<A0OF,DataA4>点法力值。"
     }
   ],
   "NewId": "A0OF"

@@ -168,25 +168,25 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤<AOsf,DataB1>头幽灵狼为先知而战。|n持续<AOsf,Dur1>秒。|n|n|cffffcc001级|r - <osw1,realHP>点生命值，<osw1,mindmg1>-<osw1,maxdmg1>点攻击力。|n|cffffcc002级|r - <osw2,realHP>点生命值，<osw2,mindmg1>-<osw2,maxdmg1>点攻击力，且具有致命一击技能。|n|cffffcc003级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击和隐形技能。\n"
+      "Value": "召唤强力空气元素来攻击英雄的敌人。 |n持续 60 秒。|r |n|n|cffffcc00等级 1|r - 召唤 2 只强力空气元素|n|cffffcc00等级 2|r - 召唤 3 只强力空气元素|n|cffffcc00等级 3|r - 召唤 4 只强力空气元素\n"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤空气元素 - [|cffffcc004 级|r]"
+      "Value": "召唤空气元素 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤空气元素 - [|cffffcc004 级|r]"
+      "Value": "召唤空气元素 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤空气元素 - [|cffffcc004 级|r]"
+      "Value": "召唤空气元素 - [|cffffcc003 级|r]"
     },
     {
       "Level": 4,
@@ -204,19 +204,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 2 个带闪避的空气元素攻击英雄的敌人。|n|n|cffffcc00能攻击地面和空中单位。|r"
+      "Value": "召唤 3 个带闪避的空气元素攻击英雄的敌人。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 2 个带闪避的空气元素攻击英雄的敌人。|n|n|cffffcc00能攻击地面和空中单位。|r"
+      "Value": "召唤 4 个带闪避的空气元素攻击英雄的敌人。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤 2 个带闪避的空气元素攻击英雄的敌人。|n|n|cffffcc00能攻击地面和空中单位。|r"
+      "Value": "召唤 5 个带闪避的空气元素攻击英雄的敌人。|n|n|cffffcc00能攻击地面和空中单位。|r"
     }
   ],
   "NewId": "AESA"

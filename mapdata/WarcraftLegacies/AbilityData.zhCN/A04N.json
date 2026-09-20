@@ -258,19 +258,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -288,19 +288,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+      "Value": "以一场巨大的爆炸轰击敌人，造成 280 点伤害和 80 点溅射伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+      "Value": "以一场巨大的爆炸轰击敌人，造成 370 点伤害和 120 点溅射伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+      "Value": "以一场巨大的爆炸轰击敌人，造成 460 点伤害和 160 点溅射伤害。"
     }
   ],
   "NewId": "A04N"

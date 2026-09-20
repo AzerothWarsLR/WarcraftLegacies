@@ -86,19 +86,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "有<A0Z1,DataA1,%>%的几率闪避攻击。"
+      "Value": "有<A0Z1,DataA2,%>%的几率闪避攻击。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "有<A0Z1,DataA1,%>%的几率闪避攻击。"
+      "Value": "有<A0Z1,DataA4,%>%的几率闪避攻击。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "有<A0Z1,DataA1,%>%的几率闪避攻击。"
+      "Value": "有<A0Z1,DataA3,%>%的几率闪避攻击。"
     }
   ],
   "NewId": "A0Z1"

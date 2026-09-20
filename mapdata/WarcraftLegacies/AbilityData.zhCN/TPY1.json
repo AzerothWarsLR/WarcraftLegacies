@@ -167,7 +167,7 @@
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "幻影步 - [|cffffcc003级|r]"
+      "Value": "幻影步 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -179,19 +179,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使英雄进入隐形状态，并在<TPY1,Dur1>秒内移动速度提高<TPY1,DataB1,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC1>点额外伤害。"
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur2>秒内移动速度提高<TPY1,DataB2,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC2>点额外伤害。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使英雄进入隐形状态，并在<TPY1,Dur1>秒内移动速度提高<TPY1,DataB1,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC1>点额外伤害。"
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur3>秒内移动速度提高<TPY1,DataB3,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC3>点额外伤害。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使英雄进入隐形状态，并在<TPY1,Dur1>秒内移动速度提高<TPY1,DataB1,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC1>点额外伤害。"
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur4>秒内移动速度提高<TPY1,DataB4,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC4>点额外伤害。"
     },
     {
       "Id": "ansf",
@@ -210,13 +210,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "幻影步 - [|cffffcc003级|r]"
+      "Value": "幻影步 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "幻影步 - [|cffffcc003级|r]"
+      "Value": "幻影步 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,

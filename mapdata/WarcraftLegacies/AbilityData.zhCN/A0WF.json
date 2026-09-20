@@ -266,19 +266,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毁灭先驱 - [|cffffcc004 级|r]"
+      "Value": "毁灭先驱 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毁灭先驱 - [|cffffcc004 级|r]"
+      "Value": "毁灭先驱 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毁灭先驱 - [|cffffcc004 级|r]"
+      "Value": "毁灭先驱 - [|cffffcc003 级|r]"
     },
     {
       "Level": 1,
@@ -290,13 +290,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位获得<A0WF,DataA1>点额外护甲、<A0WF,DataB1>点额外生命值、<A0WF,DataC1>点额外伤害与法术免疫。|n持续<A0WF,Dur1>秒。"
+      "Value": "使该单位获得<A0WF,DataA2>点额外护甲、<A0WF,DataB2>点额外生命值、<A0WF,DataC2>点额外伤害与法术免疫。|n持续<A0WF,Dur2>秒。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位获得<A0WF,DataA1>点额外护甲、<A0WF,DataB1>点额外生命值、<A0WF,DataC1>点额外伤害与法术免疫。|n持续<A0WF,Dur1>秒。"
+      "Value": "使该单位获得<A0WF,DataA3>点额外护甲、<A0WF,DataB3>点额外生命值、<A0WF,DataC3>点额外伤害与法术免疫。|n持续<A0WF,Dur3>秒。"
     },
     {
       "Id": "auar",
@@ -339,7 +339,7 @@
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该单位获得<A0WF,DataA1>点额外护甲、<A0WF,DataB1>点额外生命值、<A0WF,DataC1>点额外伤害与法术免疫。|n持续<A0WF,Dur1>秒。"
+      "Value": "使该单位获得<A0WF,DataA4>点额外护甲、<A0WF,DataB4>点额外生命值、<A0WF,DataC4>点额外伤害与法术免疫。|n持续<A0WF,Dur4>秒。"
     },
     {
       "Level": 4,

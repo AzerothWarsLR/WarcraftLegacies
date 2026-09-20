@@ -180,13 +180,13 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "圣光军团 - [|cffffcc003级|r]"
+      "Value": "圣光军团 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "圣光军团 - [|cffffcc003级|r]"
+      "Value": "圣光军团 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
@@ -204,13 +204,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从虚空中召唤 6 个光铸战争机甲。"
+      "Value": "从虚空中召唤 10 个光铸战争机甲。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "从虚空中召唤 6 个光铸战争机甲。"
+      "Value": "从虚空中召唤 14 个光铸战争机甲。"
     },
     {
       "Id": "anam",

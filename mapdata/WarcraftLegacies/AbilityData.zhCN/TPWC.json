@@ -220,19 +220,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大法师议会 - [|cffffcc004级|r]"
+      "Value": "大法师议会 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大法师议会 - [|cffffcc004级|r]"
+      "Value": "大法师议会 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大法师议会 - [|cffffcc004级|r]"
+      "Value": "大法师议会 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -260,19 +260,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+      "Value": "恢复<TPWC,DataB2>点生命值和<TPWC,DataC2>点魔法值。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+      "Value": "恢复<TPWC,DataB3>点生命值和<TPWC,DataC3>点魔法值。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
+      "Value": "恢复<TPWC,DataB3>点生命值和<TPWC,DataC3>点魔法值。"
     },
     {
       "Id": "atat",

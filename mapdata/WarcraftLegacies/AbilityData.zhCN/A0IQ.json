@@ -129,7 +129,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "该单位的攻击使目标移动速度降低<A0IQ,DataB1,%>%，持续<A0IQ,Dur1>秒。"
+      "Value": "该单位的攻击使目标移动速度降低<A0IQ,DataB2,%>%，持续<A0IQ,Dur2>秒。"
     }
   ],
   "NewId": "A0IQ"

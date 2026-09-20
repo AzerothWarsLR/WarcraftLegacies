@@ -229,19 +229,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "烈焰仪式 - [|cffffcc004级|r]"
+      "Value": "烈焰仪式 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "烈焰仪式 - [|cffffcc004级|r]"
+      "Value": "烈焰仪式 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "烈焰仪式 - [|cffffcc004级|r]"
+      "Value": "烈焰仪式 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
@@ -259,19 +259,19 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄召唤<A0JF,DataB1>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
+      "Value": "英雄召唤<A0JF,DataB2>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄召唤<A0JF,DataB1>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
+      "Value": "英雄召唤<A0JF,DataB3>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "英雄召唤<A0JF,DataB1>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
+      "Value": "英雄召唤<A0JF,DataB4>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
     }
   ],
   "NewId": "A0JF"
