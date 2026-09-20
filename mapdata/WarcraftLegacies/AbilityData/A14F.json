@@ -248,7 +248,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Naisha hurls three Sentinel glaives into a target area, where they bury themselves in the ground. After 2 seconds they turn invisible to enemies. When an enemy ground unit gets close to a glaive, it erupts, damaging and stunning every enemy near it. The glaives last 60 seconds. 400 AOE.|n|cffffcc00Level 1|r - 100 damage and a 2 second stun (1 on heroes) per glaive.|n|cffffcc00Level 2|r - 150 damage and a 2.5 second stun (1.25 on heroes) per glaive.|n|cffffcc00Level 3|r - 200 damage and a 3 second stun (1.5 on heroes) per glaive."
+      "Value": "Hurls three Sentinel glaives into a target area, where they bury themselves in the ground and turn invisible to enemies after 2 seconds. When an enemy ground unit gets close to a glaive it erupts, damaging and stunning nearby enemies. The glaives last 60 seconds.|n|n|cffffcc00Level 1|r - 100 damage and a 2 second stun (1 second on heroes) per glaive.|n|cffffcc00Level 2|r - 150 damage and a 2.5 second stun (1.25 seconds on heroes) per glaive.|n|cffffcc00Level 3|r - 200 damage and a 3 second stun (1.5 seconds on heroes) per glaive."
     },
     {
       "Id": "atat",
@@ -277,19 +277,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Throws three glaives into the area that turn invisible and erupt when an enemy ground unit gets close, each dealing 100 damage and stunning enemies for 2 seconds (1 on heroes). They last 60 seconds."
+      "Value": "Hurls three glaives into the area that turn invisible and erupt when an enemy ground unit gets close, each dealing 100 damage and stunning enemies for 2 seconds (1 second on heroes). Lasts 60 seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Throws three glaives into the area that turn invisible and erupt when an enemy ground unit gets close, each dealing 150 damage and stunning enemies for 2.5 seconds (1.25 on heroes). They last 60 seconds."
+      "Value": "Hurls three glaives into the area that turn invisible and erupt when an enemy ground unit gets close, each dealing 150 damage and stunning enemies for 2.5 seconds (1.25 seconds on heroes). Lasts 60 seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Throws three glaives into the area that turn invisible and erupt when an enemy ground unit gets close, each dealing 200 damage and stunning enemies for 3 seconds (1.5 on heroes). They last 60 seconds."
+      "Value": "Hurls three glaives into the area that turn invisible and erupt when an enemy ground unit gets close, each dealing 200 damage and stunning enemies for 3 seconds (1.5 seconds on heroes). Lasts 60 seconds."
     },
     {
       "Id": "abpy",

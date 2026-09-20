@@ -296,7 +296,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Naisha sharpens the aim of nearby friendly units. Their attacks have a chance to strike critically for double damage. Enemy dispels can remove the effect. 500 AOE.|n|cffffcc00Level 1|r - 15% critical chance for 10 seconds.|n|cffffcc00Level 2|r - 20% critical chance for 12 seconds.|n|cffffcc00Level 3|r - 25% critical chance for 14 seconds.|n|cffffcc00Level 4|r - 30% critical chance for 16 seconds."
+      "Value": "Sharpens the aim of nearby friendly units, giving their attacks a chance to strike critically for double damage. Can be dispelled.|n|n|cffffcc00Level 1|r - 15% critical strike chance for 10 seconds.|n|cffffcc00Level 2|r - 20% critical strike chance for 12 seconds.|n|cffffcc00Level 3|r - 25% critical strike chance for 14 seconds.|n|cffffcc00Level 4|r - 30% critical strike chance for 16 seconds."
     },
     {
       "Id": "atat",
@@ -331,25 +331,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area have a 15% chance to strike critically for double damage for 10 seconds. Can be dispelled."
+      "Value": "Gives nearby friendly units a 15% chance to strike critically for double damage for 10 seconds. Can be dispelled."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area have a 20% chance to strike critically for double damage for 12 seconds. Can be dispelled."
+      "Value": "Gives nearby friendly units a 20% chance to strike critically for double damage for 12 seconds. Can be dispelled."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area have a 25% chance to strike critically for double damage for 14 seconds. Can be dispelled."
+      "Value": "Gives nearby friendly units a 25% chance to strike critically for double damage for 14 seconds. Can be dispelled."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area have a 30% chance to strike critically for double damage for 16 seconds. Can be dispelled."
+      "Value": "Gives nearby friendly units a 30% chance to strike critically for double damage for 16 seconds. Can be dispelled."
     },
     {
       "Id": "abpy",
