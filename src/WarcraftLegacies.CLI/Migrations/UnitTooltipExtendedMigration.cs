@@ -49,13 +49,6 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     var units = objectDatabase.GetUnits();
     var copiedUnits = units.ToList();
 
-    // A localised build ships its tooltips as translated map data, so composing them here would
-    // overwrite that text with "Trains:" / "Attacks land units." built from the English names.
-    if (!MapMigrationProvider.ShouldGenerateTooltips)
-    {
-      return;
-    }
-
     foreach (var unit in copiedUnits)
     {
       try
@@ -83,12 +76,21 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     if (hasObjectInfo && objectInfo.Categories.Count != 0)
     {
       AppendRoles(tooltipBuilder, unit, objectInfo);
-    }
 
-    // A unit's own description belongs in every tooltip, whether or not the map gives the unit a category: it is the
-    // line that says what the unit is for, and a tooltip that opens on the category and then lists skills leaves it
-    // out. The category is a heading, so the description follows it.
-    AppendObjectEditorTooltip(tooltipBuilder, unit);
+      // A localised build ships the unit's description as translated map data, and it belongs in the tooltip
+      // whether or not the map gives the unit a category: it is the line that says what the unit is for, and a
+      // tooltip that opens on the category and then lists skills leaves it out. The category is a heading, so the
+      // description follows it. A build from the base map data keeps the base behaviour, where the category
+      // heading stands in for the description and only an uncategorised unit gets one.
+      if (MapMigrationProvider.IsLocalized)
+      {
+        AppendObjectEditorTooltip(tooltipBuilder, unit);
+      }
+    }
+    else
+    {
+      AppendObjectEditorTooltip(tooltipBuilder, unit);
+    }
 
     AppendInnateUnitsTrained(tooltipBuilder, unit);
     AppendUnlockableUnitsTrained(tooltipBuilder, unit);
@@ -140,9 +142,17 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
   private static void AppendObjectEditorTooltip(StringBuilder tooltipBuilder, Unit unit)
   {
+    // The base build takes the description straight from the object database and states the line even when it is
+    // empty, so that a build from the base map data composes exactly what it always has.
+    if (!MapMigrationProvider.IsLocalized)
+    {
+      tooltipBuilder.AppendLine(unit.TextTooltipExtended);
+      return;
+    }
+
     // The description the map data states for the unit. The object database does not carry it into this migration,
     // so the locale's build text supplies it, keyed on the unit's own id; the value the database does carry is used
-    // when nothing is stated, so an English build is unaffected.
+    // when nothing is stated, so a build with no locale is unaffected.
     //
     // The id is the new one when the map gives the unit a record and the old one when it does not: a unit the map
     // leaves alone carries the stock id in OldId and a zero NewId.

@@ -1,4 +1,4 @@
-using System.CommandLine;
+﻿using System.CommandLine;
 using System.IO;
 using WarcraftLegacies.CLI.Contexts;
 using WarcraftLegacies.CLI.Settings;

@@ -1,4 +1,4 @@
-using System.CommandLine;
+﻿using System.CommandLine;
 using WarcraftLegacies.CLI.Commands;
 
 namespace WarcraftLegacies.CLI;

@@ -66,8 +66,12 @@ internal static class LocaleMergeCommand
   /// reads its own.
   /// </para>
   /// </param>
+  /// <remarks>
+  /// The type of <paramref name="unlocalized"/> is written without a nullable annotation because this project does
+  /// not enable nullable reference types; a null argument means the same thing either way.
+  /// </remarks>
   public static int Run(string basePath, string localizedPath, string outputPath, string localeName,
-    bool useLocaleFolder = false, IReadOnlyCollection<string>? unlocalized = null)
+    bool useLocaleFolder = false, IReadOnlyCollection<string> unlocalized = null)
   {
     basePath = Path.GetFullPath(basePath);
     localizedPath = Path.GetFullPath(localizedPath);

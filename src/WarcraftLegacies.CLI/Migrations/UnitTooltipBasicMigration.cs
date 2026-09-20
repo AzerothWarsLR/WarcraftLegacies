@@ -16,25 +16,35 @@ public sealed class UnitTooltipBasicMigration : IMapMigration
   public void Migrate(Map map, ObjectDatabase objectDatabase)
   {
     var units = objectDatabase.GetUnits();
-
-    // A localised build ships its tooltips as translated map data, so composing "Summon X" / "Train X"
-    // here would replace them with the English unit name behind a translated verb.
-    if (!MapMigrationProvider.ShouldGenerateTooltips)
-    {
-      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
-      map.UnitSkinObjectData = map.UnitObjectData;
-      return;
-    }
+    var localized = MapMigrationProvider.IsLocalized;
 
     foreach (var unit in units)
     {
       try
       {
+        // A build from the base map data composes every entry from the object database, which is what it has always
+        // done; a localised build is handled below.
+        if (!localized)
+        {
+          if (unit.AbilitiesHero.Any())
+          {
+            unit.TextTooltipBasic = $"Summon {unit.TextProperNames.First()}";
+            unit.TextTooltipAwaken = $"Revive {unit.TextName}";
+            unit.TextTooltipRevive = $"Revive {unit.TextName}";
+          }
+          else
+          {
+            unit.TextTooltipBasic = $"{(unit.StatsIsABuilding ? "Build" : "Train")} {unit.TextName}";
+          }
+
+          continue;
+        }
+
         var name = unit.TextName;
 
-        // A build whose map data already says what the entry should read ships that text: the map data is the
-        // translation, and composing an entry here would put an English name behind a translated verb, or an
-        // English verb in front of a translated name.
+        // A localised build ships its tooltips as translated map data, so an entry the map data already states is
+        // left as it is: composing one here would put an English name behind a translated verb, or an English verb
+        // in front of a translated name.
         var hasBasic = !string.IsNullOrEmpty(unit.TextTooltipBasic);
         var hasAwaken = !string.IsNullOrEmpty(unit.TextTooltipAwaken);
         var hasRevive = !string.IsNullOrEmpty(unit.TextTooltipRevive);

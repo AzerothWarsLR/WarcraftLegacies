@@ -15,9 +15,7 @@ public sealed class HeroPriorityMigration : IMapMigration
   /// <inheritdoc />
   public void Migrate(Map map, ObjectDatabase objectDatabase)
   {
-    // Materialised first: setting StatsPriority adds a modification to the unit, which mutates the very
-    // collection being walked.
-    var units = objectDatabase.GetUnits().ToList();
+    var units = objectDatabase.GetUnits();
 
     foreach (var unit in units)
     {
