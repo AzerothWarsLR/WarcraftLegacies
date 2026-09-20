@@ -324,7 +324,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Calls down Elune\u0027s light on a target area for 10 seconds. Friendly units inside recover health and mana every second, and enemies inside are slowed and revealed, even if invisible. 350 AOE.|n|cffffcc00Level 1|r - Heals 10 and restores 2 mana per second. Slows enemies by 15%.|n|cffffcc00Level 2|r - Heals 15 and restores 3 mana per second. Slows enemies by 20%.|n|cffffcc00Level 3|r - Heals 20 and restores 4 mana per second. Slows enemies by 25%.|n|cffffcc00Level 4|r - Heals 25 and restores 5 mana per second. Slows enemies by 30%."
+      "Value": "Calls down Elune\u0027s light on a target area for 10 seconds. Nearby friendly units recover health and mana every second, while nearby enemy units are slowed and revealed, even if invisible.|n|n|cffffcc00Level 1|r - Heals for 10 and restores 2 mana per second. Slows enemies by 15%.|n|cffffcc00Level 2|r - Heals for 15 and restores 3 mana per second. Slows enemies by 20%.|n|cffffcc00Level 3|r - Heals for 20 and restores 4 mana per second. Slows enemies by 25%.|n|cffffcc00Level 4|r - Heals for 25 and restores 5 mana per second. Slows enemies by 30%."
     },
     {
       "Id": "atat",
@@ -359,25 +359,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area recover 10 health and 2 mana per second for 10 seconds. Enemies are slowed by 15% and revealed. 350 AOE."
+      "Value": "Calls down Elune\u0027s light for 10 seconds. Heals nearby allies for 10 and restores 2 mana per second, while slowing nearby enemies by 15% and revealing them."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area recover 15 health and 3 mana per second for 10 seconds. Enemies are slowed by 20% and revealed. 350 AOE."
+      "Value": "Calls down Elune\u0027s light for 10 seconds. Heals nearby allies for 15 and restores 3 mana per second, while slowing nearby enemies by 20% and revealing them."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area recover 20 health and 4 mana per second for 10 seconds. Enemies are slowed by 25% and revealed. 350 AOE."
+      "Value": "Calls down Elune\u0027s light for 10 seconds. Heals nearby allies for 20 and restores 4 mana per second, while slowing nearby enemies by 25% and revealing them."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Friendly units in the area recover 25 health and 5 mana per second for 10 seconds. Enemies are slowed by 30% and revealed. 350 AOE."
+      "Value": "Calls down Elune\u0027s light for 10 seconds. Heals nearby allies for 25 and restores 5 mana per second, while slowing nearby enemies by 30% and revealing them."
     }
   ]
 }
