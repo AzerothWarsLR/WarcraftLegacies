@@ -274,30 +274,30 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "毒云术"
+      "Value": "毒云"
     },
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "学习毒云术 - [|cffffcc00等级 %d|r]"
+      "Value": "学习毒云 - [|cffffcc00等级 %d|r]"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒云术 - [|cffffcc001 级|r]"
+      "Value": "毒云 - [|cffffcc001 级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒云术 - [|cffffcc002 级|r]"
+      "Value": "毒云 - [|cffffcc002 级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "毒云术 - [|cffffcc003 级|r]"
+      "Value": "毒云 - [|cffffcc003 级|r]"
     },
     {
       "Id": "abpx",

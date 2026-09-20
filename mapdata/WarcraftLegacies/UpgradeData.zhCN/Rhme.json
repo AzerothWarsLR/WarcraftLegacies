@@ -114,55 +114,55 @@
       "Level": 2,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级青铜制武器"
     },
     {
       "Level": 3,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级铁制武器"
     },
     {
       "Level": 4,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级钢制武器"
     },
     {
       "Level": 5,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级秘银制武器"
     },
     {
       "Level": 6,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级瑟银制武器"
     },
     {
       "Level": 7,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级源质制武器"
     },
     {
       "Level": 8,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级精金制武器"
     },
     {
       "Level": 9,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级泰坦神铁制武器"
     },
     {
       "Level": 10,
       "Id": "gtp1",
       "Type": 3,
-      "Value": "升级铜制武器"
+      "Value": "升级黄铁矿制武器"
     },
     {
       "Level": 1,
@@ -174,13 +174,13 @@
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "提高大多数单位的攻击伤害。"
+      "Value": "进一步提高大多数单位的攻击伤害。"
     },
     {
       "Level": 3,
       "Id": "gub1",
       "Type": 3,
-      "Value": "提高大多数单位的攻击伤害。"
+      "Value": "进一步提高大多数单位的攻击伤害。"
     },
     {
       "Level": 4,

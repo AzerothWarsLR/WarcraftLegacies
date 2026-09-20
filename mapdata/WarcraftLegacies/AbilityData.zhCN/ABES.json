@@ -68,7 +68,7 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "疯狂之种"
+      "Value": "创世攻击"
     },
     {
       "Level": 1,
@@ -92,7 +92,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "疯狂之种"
+      "Value": "创世攻击"
     }
   ],
   "NewId": "ABES"
