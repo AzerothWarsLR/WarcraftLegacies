@@ -1,9 +1,9 @@
-﻿using MacroTools.Localization;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace MacroTools.Commands;

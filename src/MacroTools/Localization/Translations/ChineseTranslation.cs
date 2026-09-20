@@ -5,9 +5,8 @@ namespace MacroTools.Localization.Translations;
 /// <summary>
 /// The map's Simplified Chinese text.
 /// <para>
-/// The entries are added one at a time in the constructor rather than stated as a collection initialiser.
-/// CSharp.lua compiles a large initialiser into one table plus a perfect-hash lookup, and past a few hundred
-/// entries that lookup collides and the map refuses to start with "key already exists".
+/// The entries are added one at a time in the constructor rather than stated as a collection initialiser: CSharp.lua
+/// compiles an initialiser into a perfect-hash lookup, and a collision there stops the map from starting.
 /// </para>
 /// </summary>
 internal sealed class ChineseTranslation : ITranslation

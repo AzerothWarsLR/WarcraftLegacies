@@ -4,11 +4,10 @@ using System.Linq;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
-
-using MacroTools.Localization;
 
 namespace MacroTools.ControlPoints;
 

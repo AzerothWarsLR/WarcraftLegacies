@@ -66,16 +66,24 @@ public static class Loc
 
   /// <summary>
   /// Gets the local player's currently selected language, falling back to <see cref="GetSystemLanguage"/> if no
-  /// language has been explicitly selected.
+  /// language has been explicitly selected. Returns <c>"en"</c> when there is no local player to ask, which is the
+  /// case outside the game.
   /// </summary>
   public static string GetLanguage()
   {
-    return player.LocalPlayer.GetPlayerData().PlayerSettings.Language ?? GetSystemLanguage();
+    try
+    {
+      return player.LocalPlayer.GetPlayerData().PlayerSettings.Language ?? GetSystemLanguage();
+    }
+    catch (Exception)
+    {
+      return "en";
+    }
   }
 
   /// <summary>
-  /// Gets the language inferred from the game client's locale, defaulting to <c>"en"</c> if the locale has no
-  /// matching translation.
+  /// Gets the language inferred from the game client's locale, defaulting to <c>"en"</c> if the client reports no
+  /// locale or the locale has no matching translation.
   /// <para>
   /// The reported locale is matched loosely, on its language subtag: the same Simplified Chinese install may
   /// report <c>zhCN</c>, <c>zh-Hans</c> or <c>zh_CN</c>, and demanding an exact match silently leaves the map in
@@ -84,7 +92,21 @@ public static class Loc
   /// </summary>
   public static string GetSystemLanguage()
   {
-    var locale = BlzGetLocale();
+    string? locale;
+    try
+    {
+      locale = BlzGetLocale();
+    }
+    catch (Exception)
+    {
+      return "en";
+    }
+
+    if (locale == null)
+    {
+      return "en";
+    }
+
     foreach (var translation in _translations)
     {
       foreach (var systemLocale in translation.SystemLocales)

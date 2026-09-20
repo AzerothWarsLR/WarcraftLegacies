@@ -5,11 +5,11 @@ using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Shared;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using MacroTools.Localization;
 
 namespace MacroTools.Factions;
 

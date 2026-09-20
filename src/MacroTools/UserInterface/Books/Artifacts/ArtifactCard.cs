@@ -3,9 +3,9 @@ using System.ComponentModel;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.UserInterface.Books.Core;
 using MacroTools.UserInterface.Frames;
-using MacroTools.Localization;
 
 namespace MacroTools.UserInterface.Books.Artifacts;
 

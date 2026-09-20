@@ -1,6 +1,6 @@
-﻿using MacroTools.Localization;
-using System;
+﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.UnitTypes;
 
 namespace MacroTools.Factions;

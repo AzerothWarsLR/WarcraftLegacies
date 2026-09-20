@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPoints;
+﻿using System;
+using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Localization;
