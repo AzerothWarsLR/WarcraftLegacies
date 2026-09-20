@@ -29,7 +29,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "使用后恢复<AIm1,DataA1>点法力值。"
+      "Value": "使用时恢复 175 点魔法值。"
     },
     {
       "Id": "unam",

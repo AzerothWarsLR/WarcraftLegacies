@@ -21,7 +21,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "装备时提高英雄的移动速度。"
+      "Value": "装备时使英雄的移动速度提高<AIms,DataA1>。"
     },
     {
       "Id": "unam",

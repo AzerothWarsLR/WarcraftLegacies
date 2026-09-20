@@ -25,7 +25,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "使用后恢复<AIh1,DataA1>点生命值。"
+      "Value": "使用时恢复 400 点生命值。"
     },
     {
       "Id": "unam",
