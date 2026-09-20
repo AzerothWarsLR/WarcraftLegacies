@@ -1793,7 +1793,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Sca2", "甲壳护盾");
     Add("Sca5", "甲壳护盾");
     Add("Scarlet Monastery", "血色修道院");
-    Add("Scepter of the Queen", "虫群女王的权杖");
+    Add("Scepter of the Queen", "女王权杖");
     Add("Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.", "通灵学院中藏有种类繁多的亵渎神器。带吉安娜前往那里，看看能有何发现。");
     Add("Scout", "侦察");
     Add("Scouts report sighting of the Highmountain totem, thought lost long ago when the Broken Isles were shattered. As a gesture of renewed welcome, Cairne might offer them an invitation to a feast in Thunderbluff.", "斥候报告发现了至高岭图腾，它被认为早在破碎群岛碎裂时就已遗失。为表重新接纳之意，凯恩或许可以邀请他们前往雷霆崖赴宴。");
