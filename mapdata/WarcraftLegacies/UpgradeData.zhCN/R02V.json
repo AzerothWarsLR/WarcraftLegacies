@@ -86,6 +86,18 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "暗影施法者专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "暗影施法者专家级训练"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究暗影施法者大师级训练"
@@ -111,18 +123,6 @@
     {
       "Id": "gbpx",
       "Value": 1
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "暗影施法者专家级训练"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "暗影施法者专家级训练"
     }
   ],
   "NewId": "R02V"

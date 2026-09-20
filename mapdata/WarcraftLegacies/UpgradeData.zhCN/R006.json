@@ -102,6 +102,24 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化船体"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化船体"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化船体"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究强化船体"
@@ -141,24 +159,6 @@
       "Id": "ghk1",
       "Type": 3,
       "Value": "C"
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强化船体"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强化船体"
-    },
-    {
-      "Level": 3,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强化船体"
     }
   ],
   "NewId": "R006"

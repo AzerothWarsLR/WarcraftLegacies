@@ -98,6 +98,18 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "潜藏风暴专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "潜藏风暴专家级训练"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究潜藏风暴大师级训练"
@@ -119,18 +131,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高潜藏风暴的魔法值上限与魔法恢复速度，并使其获得闪电护盾技能。"
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "潜藏风暴专家级训练"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "潜藏风暴专家级训练"
     }
   ],
   "NewId": "RELL"

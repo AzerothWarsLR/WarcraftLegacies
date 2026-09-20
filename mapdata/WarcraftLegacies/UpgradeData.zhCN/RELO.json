@@ -97,6 +97,18 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "潮汐领主专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "潮汐领主专家级训练"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究潮汐领主大师级训练"
@@ -130,18 +142,6 @@
       "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWaterBurst.blp"
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "潮汐领主专家级训练"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "潮汐领主专家级训练"
     }
   ],
   "NewId": "RELO"

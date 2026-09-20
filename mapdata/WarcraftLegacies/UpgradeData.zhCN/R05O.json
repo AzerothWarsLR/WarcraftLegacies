@@ -109,6 +109,24 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "建造奥格瑞玛"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "建造奥格瑞玛"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "建造奥格瑞玛"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究强化船体"
@@ -148,24 +166,6 @@
       "Id": "ghk1",
       "Type": 3,
       "Value": "C"
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "建造奥格瑞玛"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "建造奥格瑞玛"
-    },
-    {
-      "Level": 3,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "建造奥格瑞玛"
     }
   ],
   "NewId": "R05O"

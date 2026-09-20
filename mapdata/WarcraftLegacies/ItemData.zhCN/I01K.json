@@ -42,14 +42,14 @@
       "Value": "Objects\\InventoryItems\\tome\\tome.mdl"
     },
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "绿色碎片"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装备时英雄的力量、智力和敏捷各提高5点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "翡翠碎片"
     }
   ],
   "NewId": "I01K"

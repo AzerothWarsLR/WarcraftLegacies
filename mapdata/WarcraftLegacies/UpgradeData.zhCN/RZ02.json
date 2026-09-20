@@ -98,6 +98,18 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "剑圣"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "剑圣"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究剑圣"
@@ -119,18 +131,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "允许在大厅、据点和堡垒中训练剑圣。|n|n|cffc864c8无法与库卡隆精英同时研究。|r"
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "剑圣"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "剑圣"
     }
   ],
   "NewId": "RZ02"

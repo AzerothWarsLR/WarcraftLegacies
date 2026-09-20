@@ -108,6 +108,12 @@
     },
     {
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化腐臭蝠群"
+    },
+    {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究超级腐臭蝠群"
@@ -123,6 +129,12 @@
       "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionSwarm.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化腐臭蝠群"
     },
     {
       "Level": 2,
@@ -147,18 +159,6 @@
       "Id": "gnsf",
       "Type": 3,
       "Value": "（燃烧军团）"
-    },
-    {
-      "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强化腐臭蝠群"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强化腐臭蝠群"
     }
   ],
   "NewId": "R04G"
