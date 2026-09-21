@@ -10,7 +10,7 @@
       "Pointer": 2,
       "Id": "Hsb2",
       "Type": 2,
-      "Value": 0.5
+      "Value": 1
     },
     {
       "Level": 1,
@@ -56,6 +56,18 @@
     {
       "Id": "abpy",
       "Value": -11
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Increases damage dealt to enemy targets with Medium armor by \u003CA0SU,DataB1,%\u003E%."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Ripping Claws"
     }
   ]
 }

@@ -18,7 +18,8 @@ public static class RefundZeroLimitUnits
       return;
     }
 
-    player.Gold += whichUnit.IsUnitType(unittype.Hero) ? PlayerDistributor.HeroCost : unit.GoldCostOf(unitType);
+    var refundAmount = whichUnit.IsUnitType(unittype.Hero) ? PlayerDistributor.HeroCost : unit.GoldCostOf(unitType);
+    player.Gold += refundAmount;
 
     whichUnit.Dispose();
   }

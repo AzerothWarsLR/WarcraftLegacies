@@ -31,15 +31,15 @@ public static class JoinCommand
       {
         var triggerPlayerData = triggerPlayer.GetPlayerData();
         triggerPlayerData.SetTeam(targetTeam);
-        triggerPlayer.DisplayTextTo(Loc.Format("You have joined {team}.", ("{team}", targetTeam.Name)));
+        triggerPlayer.DisplayTextTo(Loc.Format("You have joined {team}.", ("{team}", targetTeam.LocalizedName)));
         targetTeam.DisplayText(Loc.Format(
           "{faction} has joined the {team}.",
           ("{faction}", triggerPlayerData.Faction?.ColoredName ?? ""),
-          ("{team}", targetTeam.Name)));
+          ("{team}", targetTeam.LocalizedName)));
       }
       else
       {
-        triggerPlayer.DisplayTextTo(Loc.Format("You have not been invited to join {team}.", ("{team}", targetTeam.Name)));
+        triggerPlayer.DisplayTextTo(Loc.Format("You have not been invited to join {team}.", ("{team}", targetTeam.LocalizedName)));
       }
     }
     else

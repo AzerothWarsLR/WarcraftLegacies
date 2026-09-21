@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -37,6 +38,6 @@ public sealed class Captions : Command
     }
 
     PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowCaptions", parsed.Value);
-    return $"Setting show captions option to {parsed.Value}.";
+    return Loc.Format("Setting show captions option to {value}.", ("{value}", parsed.Value.ToString()));
   }
 }

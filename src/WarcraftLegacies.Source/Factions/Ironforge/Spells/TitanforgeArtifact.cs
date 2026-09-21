@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
@@ -61,8 +62,11 @@ public sealed class TitanForgeArtifact : Spell
     }
 
     artifact.Item.AddAbility(titanforgedAbility);
-    artifact.Item.ExtendedDescription = $"{artifact.Item.ExtendedDescription}|n|n|cff800000Titanforged|r|n{BlzGetAbilityExtendedTooltip(titanforgedAbility, 0)}";
-    artifact.Item.Description = $"{artifact.Item.Description}|n|cff800000Titanforged|r";
+    // The word the tooltip gains is looked up rather than written into the sentence: an interpolated string is
+    // compiled into a concatenation, so the label beside the localised description stayed English on every client.
+    var titanforged = "|cff800000" + Loc.Get("Titanforged") + "|r";
+    artifact.Item.ExtendedDescription = $"{artifact.Item.ExtendedDescription}|n|n{titanforged}|n{BlzGetAbilityExtendedTooltip(titanforgedAbility, 0)}";
+    artifact.Item.Description = $"{artifact.Item.Description}|n{titanforged}";
     return true;
   }
 }

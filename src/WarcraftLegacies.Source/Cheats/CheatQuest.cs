@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -29,7 +30,7 @@ public sealed class CheatQuest : CompositeCommand
   {
     if (args.Length < 1)
     {
-      return "Usage: -quest list <faction>";
+      return Loc.Get("Usage: -quest list <faction>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -37,7 +38,7 @@ public sealed class CheatQuest : CompositeCommand
       return error;
     }
 
-    return $"Quests for {faction.Name}:\n" + string.Join("\n", faction.GetAllQuests()
+    return Loc.Format("Quests for {faction}:", ("{faction}", faction.Name)) + "\n" + string.Join("\n", faction.GetAllQuests()
       .Select((quest, i) => $"[{i + 1}] [{CommandTargets.GetQuestKey(quest)}] {quest.Title} - {quest.Progress}")
       .ToList());
   }
@@ -46,7 +47,7 @@ public sealed class CheatQuest : CompositeCommand
   {
     if (args.Length < 2)
     {
-      return "Usage: -quest <complete|fail|uncomplete|undiscover> <faction> <key>";
+      return Loc.Get("Usage: -quest <complete|fail|uncomplete|undiscover> <faction> <key>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -60,6 +61,7 @@ public sealed class CheatQuest : CompositeCommand
     }
 
     quest.Progress = progress;
-    return $"Set quest progress of {quest.Title} to {progress} for Faction {faction.Name}.";
+    return Loc.Format("Set quest progress of {quest} to {progress} for Faction {faction}.",
+      ("{quest}", quest.Title), ("{progress}", progress.ToString()), ("{faction}", faction.Name));
   }
 }

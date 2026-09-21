@@ -34,8 +34,13 @@ public sealed class ShaladrassilsBlessing : Power
     _duration = duration;
     _summonedUnitCount = summonedUnitCount;
     _manaCost = manaCost;
-    Description =
-      $"When an undamaged Control Point you control takes damage and you control {shaladrassil.Name}, consume {_manaCost} mana from {shaladrassil.Name} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
+    Description = Loc.Format(
+      "When an undamaged Control Point you control takes damage and you control {hero}, consume {mana} mana from {hero} to summon {count} {unit}s to defend the Control Point for {duration} seconds.",
+      ("{hero}", shaladrassil.Name),
+      ("{mana}", _manaCost.ToString()),
+      ("{count}", _summonedUnitCount.ToString()),
+      ("{unit}", GetObjectName(summonedUnitTypeId)),
+      ("{duration}", _duration.ToString()));
     Name = Loc.Format("{hero}'s Blessing", ("{hero}", shaladrassil.Name));
   }
 

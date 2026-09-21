@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using MacroTools.Localization;
 using WCSharp.Shared;
 
 namespace MacroTools.Commands;
@@ -25,9 +26,11 @@ public static class TestMode
   private static void CreateInfoQuests()
   {
     var newQuest = quest.Create();
-    newQuest.SetTitle("Cheats");
+    // The quest title and every command's description are English source text, so both are resolved through the
+    // localisation table rather than printed as written.
+    newQuest.SetTitle(Loc.Get("Cheats"));
     var description = CommandManager.GetAllCommands().Aggregate("",
-      (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
+      (current, command) => $"{current} -{command.CommandText}: {Loc.Get(command.Description)}\n");
     newQuest.SetDescription(description);
     newQuest.IsDiscovered = true;
     newQuest.IsRequired = false;

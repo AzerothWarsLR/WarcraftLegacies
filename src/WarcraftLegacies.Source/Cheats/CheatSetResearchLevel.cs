@@ -1,6 +1,7 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -42,10 +43,11 @@ public sealed class CheatSetResearchLevel : Command
     var faction = cheater.GetPlayerData().Faction;
     if (faction == null)
     {
-      return $"You need to have a valid {nameof(Faction)} to use this Command.";
+      return Loc.Get("You need to have a valid Faction to use this Command.");
     }
 
     faction.SetObjectLevel(researchId, level);
-    return $"Setting research {objectName} to level {level}.";
+    return Loc.Format("Setting research {research} to level {level}.",
+      ("{research}", objectName), ("{level}", level.ToString()));
   }
 }

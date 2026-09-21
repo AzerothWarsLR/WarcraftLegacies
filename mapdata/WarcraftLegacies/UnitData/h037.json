@@ -18,7 +18,7 @@
     {
       "Id": "ua1t",
       "Type": 3,
-      "Value": "magic"
+      "Value": "hero"
     },
     {
       "Id": "ubld",
@@ -52,7 +52,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 850
+      "Value": 900
     },
     {
       "Id": "ulum",
@@ -85,7 +85,7 @@
     {
       "Id": "umpr",
       "Type": 2,
-      "Value": 1.75
+      "Value": 1.5
     },
     {
       "Id": "urtm",
@@ -102,7 +102,7 @@
     },
     {
       "Id": "umvs",
-      "Value": 220
+      "Value": 230
     },
     {
       "Id": "uspe",
@@ -120,7 +120,7 @@
     },
     {
       "Id": "udef",
-      "Value": 8
+      "Value": 2
     },
     {
       "Id": "uico",

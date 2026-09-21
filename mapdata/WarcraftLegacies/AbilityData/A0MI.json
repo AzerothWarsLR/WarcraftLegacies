@@ -33,24 +33,24 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Purple - Silver Hand Squire)"
+      "Value": "(Lordaeron - Silver Hand Squire)"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Pure Soul"
+      "Value": "Scourgebane"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Pure Soul"
+      "Value": "Scourgebane"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "This unit is immune to Disease and Death Coil, and it cannot be raised from the dead."
+      "Value": "This unit has a 40% chance on attack to deal 25 additional damage to undead, increased to 100 additional damage to summoned undead."
     }
   ]
 }
