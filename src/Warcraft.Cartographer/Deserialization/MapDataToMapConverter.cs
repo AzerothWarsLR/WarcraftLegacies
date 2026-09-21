@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Linq;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
