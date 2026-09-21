@@ -54,5 +54,17 @@ public static class TaurenTribesSpells
       }
     };
     SpellRegistry.Register(bestialWrathRexxar);
+
+    var wildThrowRexxar = new Stormbolt(ABILITY_A14Q_WILD_THROW_REXXAR)
+    {
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 25f,
+        PerLevel = 50f
+      },
+      StunAbilityId = ABILITY_A14R_WILD_THROW_DUMMY_STUN_REXXAR,
+      EffectModel = @"Abilities\Weapons\RexxarMissile\RexxarMissile"
+    };
+    SpellRegistry.Register(wildThrowRexxar);
   }
 }
