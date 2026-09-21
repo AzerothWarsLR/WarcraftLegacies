@@ -63,7 +63,8 @@ public static class TaurenTribesSpells
         PerLevel = 50f
       },
       StunAbilityId = ABILITY_A14R_WILD_THROW_DUMMY_STUN_REXXAR,
-      EffectModel = @"Abilities\Weapons\RexxarMissile\RexxarMissile"
+      EffectModel = @"Abilities\Weapons\RexxarMissile\RexxarMissile",
+      EffectScale = 1.8f
     };
     SpellRegistry.Register(wildThrowRexxar);
   }

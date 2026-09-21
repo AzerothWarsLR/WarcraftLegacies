@@ -21,6 +21,9 @@ public sealed class Stormbolt : Spell
   /// <summary>Model shown for the flying projectile.</summary>
   public required string EffectModel { get; init; }
 
+  /// <summary>Scale of the flying projectile's model.</summary>
+  public float EffectScale { get; init; } = 1f;
+
   public Stormbolt(int id) : base(id)
   {
   }
@@ -41,7 +44,7 @@ public sealed class Stormbolt : Spell
     var targetX = casterX + range * Cos(angle);
     var targetY = casterY + range * Sin(angle);
 
-    MissileSystem.Add(new Projectile(caster, targetX, targetY, EffectModel)
+    MissileSystem.Add(new Projectile(caster, targetX, targetY, EffectModel, EffectScale)
     {
       Damage = Damage.GetValue(level),
       StunAbilityId = StunAbilityId,
@@ -61,9 +64,10 @@ public sealed class Stormbolt : Spell
 
     private readonly float _teleportThresholdSq;
 
-    internal Projectile(unit caster, float targetX, float targetY, string effectModel) : base(caster, targetX, targetY)
+    internal Projectile(unit caster, float targetX, float targetY, string effectModel, float effectScale) : base(caster, targetX, targetY)
     {
       EffectString = effectModel;
+      EffectScale = effectScale;
       CollisionRadius = ProjectileCollisionSize;
       Mode = FlightMode.FollowTerrain;
 
