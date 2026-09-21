@@ -2,6 +2,7 @@
 using MacroTools.Hazards;
 using MacroTools.Spells;
 using MacroTools.Utils;
+using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Spells;
@@ -14,6 +15,10 @@ public sealed class CorruptionMineSpell : Spell
   public required float ArmTime { get; init; }
   public required float Lifetime { get; init; }
   public required int StunAbilityId { get; init; }
+  public required int CorruptionAbilityId { get; init; }
+  public required int CorruptionBuffApplicatorId { get; init; }
+  public required int CorruptionBuffId { get; init; }
+  public required float CorruptionDuration { get; init; }
   public required string MinePath { get; init; }
   public float MineScale { get; init; } = 1;
   public required string EruptionPath { get; init; }
@@ -36,6 +41,10 @@ public sealed class CorruptionMineSpell : Spell
       TriggerRadius = TriggerRadius,
       ArmTime = ArmTime,
       StunAbilityId = StunAbilityId,
+      CorruptionAbilityId = CorruptionAbilityId,
+      CorruptionBuffApplicatorId = CorruptionBuffApplicatorId,
+      CorruptionBuffId = CorruptionBuffId,
+      CorruptionDuration = CorruptionDuration,
       MinePath = MinePath,
       MineScale = MineScale,
       EruptionPath = EruptionPath,
@@ -63,6 +72,10 @@ public sealed class CorruptionMineHazard : Hazard
   public float TriggerRadius { get; init; }
   public float ArmTime { get; init; }
   public int StunAbilityId { get; init; }
+  public int CorruptionAbilityId { get; init; }
+  public int CorruptionBuffApplicatorId { get; init; }
+  public int CorruptionBuffId { get; init; }
+  public float CorruptionDuration { get; init; }
   public required string MinePath { get; init; }
   public float MineScale { get; init; } = 1;
   public required string EruptionPath { get; init; }
@@ -161,6 +174,11 @@ public sealed class CorruptionMineHazard : Hazard
       _caster.DealDamage(unit, Damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
       dummyCaster.CastUnit(_caster, StunAbilityId, ORDER_THUNDERBOLT, AbilityLevel, unit,
         DummyCastOriginType.Target);
+      BuffSystem.Add(new CorruptionMineDebuff(_caster, unit, CorruptionBuffApplicatorId, CorruptionBuffId,
+        CorruptionAbilityId)
+      {
+        Duration = CorruptionDuration
+      }, StackBehaviour.Stack);
     }
   }
 
@@ -171,5 +189,40 @@ public sealed class CorruptionMineHazard : Hazard
            && target.IsEnemyTo(_caster.Owner)
            && !target.IsUnitType(unittype.Structure)
            && target.UnitType != DummyCasterManager.UnitTypeId;
+  }
+}
+
+public sealed class CorruptionMineDebuff : BoundBuff
+{
+  private readonly int _corruptionAbilityId;
+  private bool _applied;
+
+  public CorruptionMineDebuff(unit caster, unit target, int buffApplicatorId, int buffId, int corruptionAbilityId) :
+    base(caster, target)
+  {
+    _corruptionAbilityId = corruptionAbilityId;
+    BindAura(buffApplicatorId, buffId);
+  }
+
+  public override void OnApply()
+  {
+    _applied = true;
+    Target.AddAbility(_corruptionAbilityId);
+  }
+
+  public override StackResult OnStack(Buff newStack)
+  {
+    Duration = newStack.Duration;
+    return StackResult.Stack;
+  }
+
+  public override void OnDispose()
+  {
+    if (_applied)
+    {
+      Target.RemoveAbility(_corruptionAbilityId);
+    }
+
+    base.OnDispose();
   }
 }
