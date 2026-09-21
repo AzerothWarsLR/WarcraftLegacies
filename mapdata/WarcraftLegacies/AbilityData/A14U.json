@@ -1,0 +1,37 @@
+{
+  "OldId": "AId1",
+  "NewId": "A14U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": -6
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Rivendare)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Corruption Mine (Armor Penalty)"
+    }
+  ]
+}
