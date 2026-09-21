@@ -228,19 +228,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA01C,DataA1\u003E bonus armor, \u003CA01C,DataB1\u003E bonus hit points, \u003CA01C,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA01C,Dur1\u003E seconds."
+      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA0N6,DataA1\u003E bonus armor, \u003CA0N6,DataB1\u003E bonus hit points, \u003CA0N6,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA0N6,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA02C,DataA2\u003E bonus armor, \u003CA02C,DataB2\u003E bonus hit points, \u003CA02C,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CA02C,Dur2\u003E seconds."
+      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA0N6,DataA2\u003E bonus armor, \u003CA0N6,DataB2\u003E bonus hit points, \u003CA0N6,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CA0N6,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA03C,DataA3\u003E bonus armor, \u003CA03C,DataB3\u003E bonus hit points, \u003CA03C,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CA03C,Dur3\u003E seconds."
+      "Value": "Activate Goldrinn\u0027s Might to give Genn \u003CA0N6,DataA3\u003E bonus armor, \u003CA0N6,DataB3\u003E bonus hit points, \u003CA0N6,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CA0N6,Dur3\u003E seconds."
     },
     {
       "Id": "auar",
