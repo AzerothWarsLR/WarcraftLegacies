@@ -190,6 +190,7 @@ public static class Buffs
   public const int BUFF_B0B8_SALVATION = 1110458936;
   public const int BUFF_B0B9_C0000FF00BLESSED_GROUND = 1110458937;
   public const int BUFF_B0DS_DALARAN_SHIELD = 1110459475;
+  public const int BUFF_B0DW_CORRUPTION = 1110459479;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
   public const int BUFF_BEAR_TRUESHOT_AURA = 1111843186;
