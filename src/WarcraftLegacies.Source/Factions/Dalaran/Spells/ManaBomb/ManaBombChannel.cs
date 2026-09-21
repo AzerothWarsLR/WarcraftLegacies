@@ -3,11 +3,6 @@ using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ManaBomb;
 
-/// <summary>
-/// Handles the channel phase of <see cref="ManaBombSpell"/>: growing the ball of arcane energy above the
-/// caster, then launching it at the target point at whatever size it reached, whether the channel completed
-/// naturally or was cut short by an interruption.
-/// </summary>
 public sealed class ManaBombChannel : Channel
 {
   private const string BallModel = @"war3mapImported\BlueBall.mdx";
@@ -38,7 +33,6 @@ public sealed class ManaBombChannel : Channel
   {
     Duration = GrowDuration;
 
-    // Attached to the caster's own "overhead" bone, so it hovers above his head without orbiting him.
     _orbEffect = effect.Create(BallModel, Caster, "overhead");
     _orbEffect.Scale = MinScale;
   }
@@ -64,7 +58,6 @@ public sealed class ManaBombChannel : Channel
     _orbEffect?.Dispose();
     _orbEffect = null;
 
-    // The channel's own cast animation doesn't always clear itself once the missile fires.
     Caster.IssueOrder(ORDER_STOP);
 
     var progress = _elapsed / GrowDuration;

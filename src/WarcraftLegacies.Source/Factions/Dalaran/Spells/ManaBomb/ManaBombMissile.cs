@@ -6,10 +6,6 @@ using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ManaBomb;
 
-/// <summary>
-/// The ball of arcane energy launched by <see cref="ManaBombChannel"/> once it stops growing, whether that's
-/// because it reached full size or because Antonidas was interrupted early.
-/// </summary>
 public sealed class ManaBombMissile : BasicMissile
 {
   public float Damage { get; init; }
