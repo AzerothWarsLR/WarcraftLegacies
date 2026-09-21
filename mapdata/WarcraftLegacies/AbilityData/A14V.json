@@ -47,12 +47,12 @@
     {
       "Id": "atat",
       "Type": 3,
-      "Value": "Abilities\\Spells\\Orc\\Voodoo\\VoodooAuraTarget.mdl"
+      "Value": ""
     },
     {
       "Id": "ata0",
       "Type": 3,
-      "Value": "overhead"
+      "Value": ""
     }
   ]
 }
