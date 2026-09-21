@@ -15,7 +15,7 @@ namespace MacroTools.UserInterface;
 public sealed class FactionMultiboard
 {
   private const int ColumnCount = 3;
-  private static readonly string Title = Loc.Get("Scoreboard");
+  private static readonly string _title = Loc.Get("Scoreboard");
   private const int ColumnFaction = 0;
   private const int ColumnCp = 1;
   private const int ColumnIncome = 2;
@@ -57,7 +57,7 @@ public sealed class FactionMultiboard
     timer timer = timer.Create();
     timer.Start(2, false, () =>
     {
-      Instance = new FactionMultiboard(ColumnCount, 3, Title);
+      Instance = new FactionMultiboard(ColumnCount, 3, _title);
       @event.ExpiredTimer.Dispose();
     });
 
@@ -157,7 +157,7 @@ public sealed class FactionMultiboard
     _multiboard = multiboard.Create();
     _multiboard.Columns = ColumnCount;
     _multiboard.Rows = 3;
-    _multiboard.Title = Title;
+    _multiboard.Title = _title;
     _multiboard.IsDisplayed = true;
     _multiboard.Rows = 30;
     UpdateHeaderRow();

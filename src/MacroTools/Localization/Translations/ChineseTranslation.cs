@@ -1500,7 +1500,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Long ago, Fandral Staghelm cut a sapling from Nordrassil and used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old Gods' corruption. If Northrend were to be reclaimed, Andrassil's growth could begin anew.", "很久以前，范达尔·鹿盔从诺达希尔上切下一株幼苗，用以在诺森德种下安达希尔。由于缺少守护巨龙的祝福，它最终沦陷于上古之神的腐蚀。若能收复诺森德，安达希尔便有可能重新生长。");
     Add("Long ago, the Night Elves' hubris led them to forge a second Well of Eternity following the destruction of the first. Nordrassil was planted atop it as a means of protection, but this measly act of defiance shall not prevent Lord Archimonde from seizing the Well's energies for himself.", "很久以前，暗夜精灵的狂妄驱使他们在第一口永恒之井被毁后，又造就了第二口。诺达希尔被种于其上作为守护，但这微不足道的反抗之举，绝无法阻止阿克蒙德领主将井中的能量据为己有。");
     Add("Long ago, the orcs drank the blood of Mannoroth and were infused with demonic fury. A mere taste of his blood would reignite those powers.", "很久以前，兽人饮下了玛诺洛斯之血，被注入了恶魔的狂怒。只需尝到一口他的鲜血，那股力量便会再度燃起。");
-    Add("Long-range siege weaponry. Effective against buildings but slow and vulnerable.", "|cff2fc6ba攻城 单位|r");
+    Add("Long-range siege weaponry. Effective against buildings but slow and vulnerable.", "远程攻城武器。对建筑有效，但行动缓慢且脆弱。");
     Add("Look, mistress--more of Gul'dan's glyphs.", "瞧，女主人——还是古尔丹的符文。");
     Add("Looks like you haven't lost your touch. It's good to see you again, Jaina.", "看来你的身手还是不减当年啊。真高兴与你重逢，吉安娜。");
     Add("Lorandis Faithhammer", "罗兰迪斯·信仰之锤");
@@ -1715,7 +1715,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Powers for", "力量列表：");
     Add("Priestess Tyrande. I'm surprised you came in person. Are you here to absolve your guilty conscience?", "泰兰德女祭司，你居然亲自过来了，真让我惊讶。你是来为自己赎罪的吗？");
     Add("Primary defensive structure. Has a splash attack", "主要防御建筑。具有溅射攻击。");
-    Add("Primary defensive structure. Has a splash attack.", "|cff2fc6ba防御塔|r");
+    Add("Primary defensive structure. Has a splash attack.", "主要防御建筑。拥有溅射攻击。");
     Add("Pull your troops back, or we will be forced to unleash our full powers against you! Make your choice, death knight.", "立刻撤军，不要逼我们用全部法力来对付你！做出选择吧，死亡骑士！");
     Add("Purchase Brew of Divinity", "购买神圣佳酿");
     Add("Purchase Gloves of Fury", "购买狂怒护手");

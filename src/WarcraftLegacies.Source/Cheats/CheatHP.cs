@@ -1,5 +1,5 @@
-﻿using MacroTools.Localization;
-using MacroTools.Commands;
+﻿using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
