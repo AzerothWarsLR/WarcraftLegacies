@@ -79,6 +79,20 @@ public static class ScourgeSpells
       BuffTypeId = BUFF_ZB3F_ICE_BLOCK
     });
 
+    SpellRegistry.Register(new CorruptionMineSpell(ABILITY_A14S_CORRUPTION_MINE_RIVENDARE)
+    {
+      Damage = new LeveledAbilityField<float> { Base = 125, PerLevel = 125 },
+      BlastRadius = 300,
+      TriggerRadius = 150,
+      ArmTime = 2,
+      Lifetime = 60,
+      StunAbilityId = ABILITY_A14T_CORRUPTION_MINE_STUN_CORRUPTION_MINE,
+      MinePath = @"war3mapImported\OrbOfCorruption.mdx",
+      EruptionPath = @"Abilities\Spells\Undead\DeathandDecay\DeathandDecayTarget.mdl",
+      EruptionScale = 1.5f,
+      EruptionDuration = 1
+    });
+
     RegisterArthasSpells();
   }
 
