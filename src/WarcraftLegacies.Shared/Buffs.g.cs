@@ -131,7 +131,6 @@ public static class Buffs
   public const int BUFF_B08G_DEFENDING = 1110456391;
   public const int BUFF_B08K_NATURE_AURA_CENARIUS = 1110456395;
   public const int BUFF_B08L_CARNAGE = 1110456396;
-  public const int BUFF_B08M_DEATH_S_ADVANCE = 1110456397;
   public const int BUFF_B08N_REINCARNATION = 1110456398;
   public const int BUFF_B08P_AURA_OF_DREAD = 1110456400;
   public const int BUFF_B08Q_COMMUNION_ALEXANDROS = 1110456401;
